@@ -1,0 +1,1222 @@
+{
+  "creation_time": "2025-09-11T22:02:34.792437",
+  "golden_dataset_source": "golden_dataset/golden_dataset_20250911_220234.json",
+  "test_scenarios": [
+    {
+      "scenario_name": "普通推文文本完整性测试",
+      "description": "测试普通推文的文本是否完整提取",
+      "sample_count": 10,
+      "samples": [
+        {
+          "tweet_id": "1965973122521116984",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "小道消息：Gemini 3 Flash 能力超过 Gemini 2.5 Pro，本月不会发布 Gemini 3，但是很快了。",
+          "expected_created_at": "Thu Sep 11 02:58:13 +0000 2025",
+          "expected_lang": "zh",
+          "expected_user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 132730,
+            "friends_count": 1382,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 18,
+            "favorite_count": 137,
+            "reply_count": 12,
+            "quote_count": 0
+          },
+          "is_retweet": false,
+          "is_quoted": true,
+          "expected_quoted_text": "just talked. gemini 3 not this month but soon. 3.0 flash will be &gt;2.5 pro. can't say more. buckle up!",
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1966056312598667517",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "He was murdered",
+          "expected_created_at": "Thu Sep 11 08:28:47 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 9864,
+            "favorite_count": 133830,
+            "reply_count": 5738,
+            "quote_count": 321
+          },
+          "is_retweet": false,
+          "is_quoted": true,
+          "expected_quoted_text": "",
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965973587812380716",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "They are celebrating cold-blooded murder",
+          "expected_created_at": "Thu Sep 11 03:00:04 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 41300,
+            "favorite_count": 345400,
+            "reply_count": 17710,
+            "quote_count": 1563
+          },
+          "is_retweet": false,
+          "is_quoted": true,
+          "expected_quoted_text": "Every post on Bluesky is celebrating the assassination. Such unbelievably sick people.",
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965868647098073457",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "Exactly",
+          "expected_created_at": "Wed Sep 10 20:03:04 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 26111,
+            "favorite_count": 227625,
+            "reply_count": 7650,
+            "quote_count": 486
+          },
+          "is_retweet": false,
+          "is_quoted": true,
+          "expected_quoted_text": "The left-wing mainstream media, as well as figures like Gavin Newson claiming Trump plans to be dictator, has created a climate of hysteria against right-wing figures that could radicalize any number of unstable people to engage in political violence. Pray Charlie Kirk is ok.",
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965860002545152203",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "The shot looked real bad, but I sure hope Charlie makes it somehow",
+          "expected_created_at": "Wed Sep 10 19:28:43 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 28221,
+            "favorite_count": 607886,
+            "reply_count": 19376,
+            "quote_count": 1945
+          },
+          "is_retweet": false,
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965859343351558352",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "The Left is the party of murder",
+          "expected_created_at": "Wed Sep 10 19:26:06 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 123594,
+            "favorite_count": 719653,
+            "reply_count": 31427,
+            "quote_count": 6149
+          },
+          "is_retweet": false,
+          "is_quoted": true,
+          "expected_quoted_text": "The Left lectured us for the last decade about the dangers of violence from the Right\n\nFrom the assassination attempts of President Trump\n\nTo Brian Thompson, the United Healthcare CEO, being murdered\n\nNow to Charlie Kirk\n\nThe danger was actually on the Left",
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965855885236027800",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "帮转找人信息：ML Engineer，ML Data/Full Stack/Backend/Marketing",
+          "expected_created_at": "Wed Sep 10 19:12:21 +0000 2025",
+          "expected_lang": "ja",
+          "expected_user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 132730,
+            "friends_count": 1382,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 1,
+            "favorite_count": 2,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "is_retweet": false,
+          "is_quoted": true,
+          "expected_quoted_text": "深夜说一个最近的感想\n其实也不算新，还是老生常谈的一个话题“做 infra 的人必须要去贴近业务，否则一切都是空中楼阁”\n我介绍过很多次鄙司是 AIGC 头部玩家，主攻二次元赛道。\n我们最近面临的一个问题是 Elasticsearch 带来的。\n我们用户公开发布的 Artwork 和生成任务都是可以搜索的。\n最近",
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965802258794525051",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "😂💯",
+          "expected_created_at": "Wed Sep 10 15:39:15 +0000 2025",
+          "expected_lang": "art",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 4003,
+            "favorite_count": 44867,
+            "reply_count": 2587,
+            "quote_count": 98
+          },
+          "is_retweet": false,
+          "is_quoted": true,
+          "expected_quoted_text": "“Look, I think I can handle making humans a multi-planetary civilisation, but getting politicians to stop spending too much money is just not feasible”",
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965800039995093501",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "Legacy news like AP is super racist against Whites (and Asians). \n\nEither capitalize all races or none. That would be fair and equal treatment, but only lowercase for Whites is racist by definition!",
+          "expected_created_at": "Wed Sep 10 15:30:26 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 31188,
+            "favorite_count": 187818,
+            "reply_count": 8410,
+            "quote_count": 1241
+          },
+          "is_retweet": false,
+          "is_quoted": true,
+          "expected_quoted_text": "AP’s style guidelines literally says to lowercase White and capitalize Black\n\nAnti-White racist trash outlet https://t.co/uaAS9WKvD0",
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965791706814841220",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "A more accurate legacy news line would be that “instances of voter fraud are rarely caught, especially where showing your ID to vote is made illegal, like California and New York” 😂😢",
+          "expected_created_at": "Wed Sep 10 14:57:20 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 22987,
+            "favorite_count": 92794,
+            "reply_count": 2607,
+            "quote_count": 359
+          },
+          "is_retweet": false,
+          "is_quoted": true,
+          "expected_quoted_text": "ELECTION INTEGRITY: Prior to Elon Musk's purchase of X we weren't allowed to share stories of election fraud. The drive-by media routinely suppressed coverage of stories like Milwaukee Election Director Kimberly Zapata's conviction for fake military ballots. When the stories are https://t.co/96Amvyq8u6",
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        }
+      ],
+      "key_validations": [
+        "expected_text",
+        "expected_user",
+        "expected_created_at"
+      ]
+    },
+    {
+      "scenario_name": "转推数据完整性测试",
+      "description": "测试转推推文的原文和用户信息提取",
+      "sample_count": 10,
+      "samples": [
+        {
+          "tweet_id": "1966070060327514345",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "RT @DavidSacks: My friend Charlie Kirk was the best of America. A self-made man, a young husband and father, and a patriot, he was relentle…",
+          "expected_created_at": "Thu Sep 11 09:23:24 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 5172,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "is_retweet": true,
+          "expected_retweet_text": "My friend Charlie Kirk was the best of America. A self-made man, a young husband and father, and a patriot, he was relentlessly positive about the future. He dedicated his life to making a difference with young people, drawing huge crowds everywhere he went. He was open to ideas",
+          "expected_retweet_user": {
+            "name": null,
+            "screen_name": null
+          },
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1966063724197990676",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "RT @thatsKAIZEN: Charlie was shot because he was honest.\n\nAmerica, we can’t keep doing this. https://t.co/tYAIaTfV5N",
+          "expected_created_at": "Thu Sep 11 08:58:14 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 33268,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "expected_media": [
+            {
+              "type": "video",
+              "id": "1965872720274747392",
+              "expected_url": "https://video.twimg.com/amplify_video/1965872720274747392/vid/avc1/1080x1920/E9ItTGQp5PhIpoYm.mp4?tag=21",
+              "expected_bitrate": 10368000
+            }
+          ],
+          "is_retweet": true,
+          "expected_retweet_text": "Charlie was shot because he was honest.\n\nAmerica, we can’t keep doing this. https://t.co/tYAIaTfV5N",
+          "expected_retweet_user": {
+            "name": null,
+            "screen_name": null
+          },
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1966056454827422210",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "RT @blader: my entire life i voted democrat\n\ndonated the max to obama, got a photo and had him talk about my toe-shoes on the stump\n\npulled…",
+          "expected_created_at": "Thu Sep 11 08:29:21 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 15291,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "is_retweet": true,
+          "expected_retweet_text": "my entire life i voted democrat\n\ndonated the max to obama, got a photo and had him talk about my toe-shoes on the stump\n\npulled my kid out of preschool in 2016 after trump won because their teacher was maga\n\nvoted kamala last year\n\ntoday i registered republican. https://t.co/WLxPnX1wdu",
+          "expected_retweet_user": {
+            "name": null,
+            "screen_name": null
+          },
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965977670312976417",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "RT @nathan_covey: My friend was at the shooting.\n\nHe said there were protestors chanting \"kill Charlie Kirk\" throughout the event.\n\nIf you…",
+          "expected_created_at": "Thu Sep 11 03:16:17 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 11201,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "is_retweet": true,
+          "expected_retweet_text": "My friend was at the shooting.\n\nHe said there were protestors chanting \"kill Charlie Kirk\" throughout the event.\n\nIf you think killing people you disagree with is okay, you are literally sick.",
+          "expected_retweet_user": {
+            "name": null,
+            "screen_name": null
+          },
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1966072523533251035",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "RT @libsoftiktok: America will never be the same. https://t.co/XFsSJLkB2j",
+          "expected_created_at": "Thu Sep 11 09:33:12 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 4475,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "expected_media": [
+            {
+              "type": "photo",
+              "id": "1965895323005456384",
+              "expected_url": "https://pbs.twimg.com/media/G0hDYWlXkAAj1Vj.jpg"
+            }
+          ],
+          "is_retweet": true,
+          "expected_retweet_text": "America will never be the same. https://t.co/XFsSJLkB2j",
+          "expected_retweet_user": {
+            "name": null,
+            "screen_name": null
+          },
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1966071185046950378",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "RT @FBI: The FBI is working alongside our local and state law enforcement partners in Utah to fully investigate and seek justice in the fat…",
+          "expected_created_at": "Thu Sep 11 09:27:53 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 9096,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "is_retweet": true,
+          "expected_retweet_text": "The FBI is working alongside our local and state law enforcement partners in Utah to fully investigate and seek justice in the fatal shooting of Charlie Kirk at Utah Valley University. Anyone with information, photos, and video from the incident can help the FBI identity more https://t.co/JEQ22lIwfv",
+          "expected_retweet_user": {
+            "name": null,
+            "screen_name": null
+          },
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965960524241449048",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "RT @realDonaldTrump: TO MY GREAT FELLOW AMERICANS… https://t.co/oRsrE5TTHr",
+          "expected_created_at": "Thu Sep 11 02:08:09 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 156188,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "expected_media": [
+            {
+              "type": "video",
+              "id": "1965947142658232320",
+              "expected_url": "https://video.twimg.com/amplify_video/1965947142658232320/vid/avc1/1920x1012/Hv7rMAU22bOdXIjP.mp4?tag=21",
+              "expected_bitrate": 10368000
+            }
+          ],
+          "is_retweet": true,
+          "expected_retweet_text": "TO MY GREAT FELLOW AMERICANS… https://t.co/oRsrE5TTHr",
+          "expected_retweet_user": {
+            "name": null,
+            "screen_name": null
+          },
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965938560823136423",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "RT @manateelazycat: 网络调试的系列小故事，你会获得复杂系统调试的认知提升\n\n在讲故事之前，我先普及一下微服的系统和背景，请大家耐心看完，因为这是非常有意义的。\n\n然后我们在这个有意义的基础之上，我们再通过微服开发过程中的真实故事来传授给你们超复杂软件工程正确…",
+          "expected_created_at": "Thu Sep 11 00:40:52 +0000 2025",
+          "expected_lang": "zh",
+          "expected_user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 132730,
+            "friends_count": 1382,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 10,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "is_retweet": true,
+          "expected_retweet_text": "网络调试的系列小故事，你会获得复杂系统调试的认知提升\n\n在讲故事之前，我先普及一下微服的系统和背景，请大家耐心看完，因为这是非常有意义的。\n\n然后我们在这个有意义的基础之上，我们再通过微服开发过程中的真实故事来传授给你们超复杂软件工程正确的调试技巧。 https://t.co/RIgWlHQdAM",
+          "expected_retweet_user": {
+            "name": null,
+            "screen_name": null
+          },
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965910441357619459",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "RT @JDVance: This is such a good point. If you actually watch Charlie’s events—as opposed to the fake summaries—they are one of the few pla…",
+          "expected_created_at": "Wed Sep 10 22:49:08 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 41017,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "is_retweet": true,
+          "expected_retweet_text": "This is such a good point. If you actually watch Charlie’s events—as opposed to the fake summaries—they are one of the few places with open and honest dialogue between left and right.  He would answer any question and talk to everyone.",
+          "expected_retweet_user": {
+            "name": null,
+            "screen_name": null
+          },
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965908050893815888",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "RT @TheCriticalDri2: Whether you agreed with him or not, Charlie Kirk is dead purely because some people didn't like what he had to say. Th…",
+          "expected_created_at": "Wed Sep 10 22:39:38 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 30326,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "is_retweet": true,
+          "expected_retweet_text": "Whether you agreed with him or not, Charlie Kirk is dead purely because some people didn't like what he had to say. That should outrage every single one of us.",
+          "expected_retweet_user": {
+            "name": null,
+            "screen_name": null
+          },
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        }
+      ],
+      "key_validations": [
+        "expected_retweet_text",
+        "expected_retweet_user"
+      ]
+    },
+    {
+      "scenario_name": "媒体文件URL测试",
+      "description": "测试图片和视频URL的提取",
+      "sample_count": 10,
+      "samples": [
+        {
+          "tweet_id": "1966063724197990676",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "RT @thatsKAIZEN: Charlie was shot because he was honest.\n\nAmerica, we can’t keep doing this. https://t.co/tYAIaTfV5N",
+          "expected_created_at": "Thu Sep 11 08:58:14 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 33268,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "expected_media": [
+            {
+              "type": "video",
+              "id": "1965872720274747392",
+              "expected_url": "https://video.twimg.com/amplify_video/1965872720274747392/vid/avc1/1080x1920/E9ItTGQp5PhIpoYm.mp4?tag=21",
+              "expected_bitrate": 10368000
+            }
+          ],
+          "is_retweet": true,
+          "expected_retweet_text": "Charlie was shot because he was honest.\n\nAmerica, we can’t keep doing this. https://t.co/tYAIaTfV5N",
+          "expected_retweet_user": {
+            "name": null,
+            "screen_name": null
+          },
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1966072523533251035",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "RT @libsoftiktok: America will never be the same. https://t.co/XFsSJLkB2j",
+          "expected_created_at": "Thu Sep 11 09:33:12 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 4475,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "expected_media": [
+            {
+              "type": "photo",
+              "id": "1965895323005456384",
+              "expected_url": "https://pbs.twimg.com/media/G0hDYWlXkAAj1Vj.jpg"
+            }
+          ],
+          "is_retweet": true,
+          "expected_retweet_text": "America will never be the same. https://t.co/XFsSJLkB2j",
+          "expected_retweet_user": {
+            "name": null,
+            "screen_name": null
+          },
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965969467122270253",
+          "source_data_path": "note_tweet.note_tweet_results.result.text",
+          "expected_text": "https://t.co/LKqiAme8X7 知名主持人塔克·卡尔森（Tucker Carlson）近日在对 OpenAI 首席执行官山姆·奥特曼（Sam Altman）的访谈节目中，当面追问 Sam Altman，就去年 OpenAI 前工程师苏奇尔·巴拉吉（Suchir Balaji）的离奇死亡事件提出质疑，引发了舆论关注。\n\n苏奇尔·巴拉吉曾是 OpenAI 重要的研究人员，2024年曾公开讨论过大语言模型（LLM）训练的版权法律风险问题，并被《纽约时报》等媒体报道为可能出庭作证、参与针对 OpenAI 的诉讼。然而，2024 年 11 月，他被发现死于旧金山的家中，警方初步调查结论为**疑似自杀**。旧金山市法医部门于2025年2月发布官方报告，结论确认巴拉吉死于单一枪伤，现场未发现他杀证据，警方随后结案。\n\n然而，巴拉吉的家属一直质疑官方的“自杀”结论，认为此事仍存诸多疑点，比如：\n\n- 为什么案发现场的监控摄像头线路被切断？\n- 为什么警方未解释他为何在两个不同房间均留下血迹？\n- 现场为何有不属于死者的假发？\n- 一名刚刚下单 DoorDash 外卖的年轻人，为何会在数分钟后突然开枪自杀？\n- 由第三方尸检指出死者可能存在第二处枪伤、搏斗痕迹及头部外伤等情况，却未被官方报告提及。\n\n卡尔森在节目中表示，这些家属提出的疑点“令人极度不安”，并当场追问奥特曼，要求他对外界的质疑作出解释。从奥特曼的反应来看，他明显感到不适与紧张，视频随即引发了公众对于此案的再次热议。\n\n目前，旧金山市官方仍坚持原先的调查结论，即巴拉吉属于自杀事件。但面对这些尚未完全解释的疑点，家属与部分公众人士仍在推动更深入的调查。\n\n---\n视频文稿\n---\n塔克·卡尔森（Tucker Carlson）：\n之前有一名程序员指责你们公司窃取别人的成果，还不给报酬，后来这名程序员就被谋杀了。这到底怎么回事？\n\n山姆·奥特曼（Sam Altman）：\n那也是一场悲剧。他是自杀的。\n\n塔克·卡尔森：\n你真的相信他是自杀的吗？\n\n山姆·奥特曼：\n我真的这么认为。\n\n塔克·卡尔森：\n你看过相关的证据吗？\n\n山姆·奥特曼：\n他算是我的朋友吧。可能不是最亲密的朋友，但也是在OpenAI工作很久的人。他去世的消息让我很震惊。我花了很多时间去了解整件事，看了所有我能找到的资料，我觉得确实是自杀。\n\n塔克·卡尔森：\n你为什么这么肯定？\n\n山姆·奥特曼：\n现场找到的枪是他自己购买的。我知道说起来很残酷，但我确实看了完整的法医报告。\n\n塔克·卡尔森：\n你不觉得这看起来根本不像自杀吗？我个人认为他显然是被谋杀的。你看，现场明显有搏斗的痕迹，监控摄像头的线也被人剪断了。而且他刚点了外卖，刚从加州的卡塔利娜岛和朋友们度假回来。没有任何迹象表明他有自杀倾向，既没留遗书，也没有表现出任何异常。他刚跟家人通了电话，之后就发现他死了，而且房子里多个房间都有血迹。这种情况根本不可能是自杀，很明显是谋杀。你跟警方谈过这件事吗？\n\n山姆·奥特曼：\n我没有和警方交流过。\n\n塔克·卡尔森：\n他的母亲认为是你下令谋杀了他。\n\n山姆·奥特曼：\n你也相信这是真的吗？\n\n塔克·卡尔森：\n我只是提出家属的说法……\n\n山姆·奥特曼：\n但你刚刚说了，你自己相信吗？\n\n塔克·卡尔森：\n我觉得这件事值得深入调查。我不是说你一定牵涉其中，但当有人指控你们公司犯罪之后却突然被发现死亡，并且现场有明显的搏斗痕迹，这种情况我们不能轻易就说“啊，这是自杀”。尤其当这个人毫无抑郁症状时，就更不能忽视。我想如果你真的把他当朋友，或许应该去和他母亲谈谈。\n\n山姆·奥特曼：\n我提出过见面，但她不愿意见我。\n\n塔克·卡尔森：\n你能理解外界对这件事的担忧吗？大家会觉得，“会不会真的发生了这种事情？”\n\n山姆·奥特曼：\n我还从来没有经历过这样的采访，被暗示涉嫌……\n\n塔克·卡尔森：\n我绝对没有指控你的意思。我只是转达了他母亲的说法。我客观地看了所有证据，真的看不出有任何明显的自杀迹象。我不明白，旧金山市的警方为何能无视现场的可疑之处，直接将其定性为自杀？这太奇怪了。\n\n山姆·奥特曼：\n你应该能理解，这听起来像是在指控我。\n\n塔克·卡尔森：\n我再澄清一下，我绝对没有指控你做了什么坏事。但我觉得这件事值得搞清楚。我无法理解旧金山警方为何草草下了结论，不进一步调查。\n\n山姆·奥特曼：\n据我所知，警方调查了不止一次。说实话，我一开始也觉得挺可疑的。\n\n塔克·卡尔森：\n没错。\n\n山姆·奥特曼：\n后来又出了一份新的调查报告，更多细节出来后，我才觉得，“哦，也许真的是自杀”。\n\n塔克·卡尔森：\n是什么改变了你的想法？\n\n山姆·奥特曼：\n是第二份报告里提到的子弹进入的角度，还有现场推断的子弹轨迹和事发经过。\n\n塔克·卡尔森：\n这些我也看过，但完全没能说服我。你看，为什么监控摄像头线被剪断了？为什么开枪自杀的人会在两个房间里都有血迹？为什么现场还有一顶不是他的假发？你听过谁在没有任何自杀倾向时刚点了外卖，然后突然就自杀了吗？我做了很多年的警察新闻记者，从未听过这么离谱的情况。\n\n山姆·奥特曼：\n这种讨论真的让我觉得很难过，我希望能对逝者表现出更多尊重。\n\n塔克·卡尔森：\n我完全理解你的感受。但我是受他家人所托在询问这个问题。他们也只是想要答案。\n\n山姆·奥特曼：\n很多人自杀前不会留下遗书，这并不罕见。有些人甚至还会点自己喜欢的外卖再结束生命。这是一起悲剧。\n\n塔克·卡尔森：\n但他的家人坚定地认为他是被谋杀的。这就是我问这些问题的原因。\n\n山姆·奥特曼：\n如果我是他的家人，我也一定会想要真相，而且可能任何解释都无法真正让我感到安慰。\n\n塔克·卡尔森：\n没错。\n\n山姆·奥特曼：\n所以我能理解这种心情。但同时我也非常希望能给予他和他的家人应有的尊重。\n\n塔克·卡尔森：\n我理解，也非常尊重他的家人。这次采访本身就是他们的意愿。我强调，我并没有指控你参与此事，但我确实觉得所有的证据都指向谋杀。我无法理解旧金山市当局对这么多疑点视而不见，这件事确实让人对整个调查程序失去了信心。\n\n山姆·奥特曼：\n我只是想说，当初第一次看到这些信息时，我也觉得可疑。\n\n塔克·卡尔森：\n没错，所以并不是我故意挑刺吧？\n\n山姆·奥特曼：\n只是后来看到更多细节之后，我才接受了自杀的说法。\n\n塔克·卡尔森：\n而这些新的细节，我看了却依旧无法接受。我真的很困惑。\n\n山姆·奥特曼：\n说到这里，我真的很难受。这种讨论方式让我感到有些不尊重。\n\n塔克·卡尔森：\n我完全能理解你的感受。我只是代表他的家人提出这些疑问，希望能弄清楚到底发生了什么。",
+          "expected_created_at": "Thu Sep 11 02:43:41 +0000 2025",
+          "expected_lang": "zh",
+          "expected_user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 132730,
+            "friends_count": 1382,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 7,
+            "favorite_count": 30,
+            "reply_count": 1,
+            "quote_count": 0
+          },
+          "expected_media": [
+            {
+              "type": "video",
+              "id": "1965844740081127424",
+              "expected_url": "https://video.twimg.com/amplify_video/1965844740081127424/vid/avc1/916x508/gz-9gTh2EXbEE6DZ.mp4?tag=21",
+              "expected_bitrate": 2176000
+            }
+          ],
+          "is_retweet": false,
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965960524241449048",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "RT @realDonaldTrump: TO MY GREAT FELLOW AMERICANS… https://t.co/oRsrE5TTHr",
+          "expected_created_at": "Thu Sep 11 02:08:09 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 156188,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "expected_media": [
+            {
+              "type": "video",
+              "id": "1965947142658232320",
+              "expected_url": "https://video.twimg.com/amplify_video/1965947142658232320/vid/avc1/1920x1012/Hv7rMAU22bOdXIjP.mp4?tag=21",
+              "expected_bitrate": 10368000
+            }
+          ],
+          "is_retweet": true,
+          "expected_retweet_text": "TO MY GREAT FELLOW AMERICANS… https://t.co/oRsrE5TTHr",
+          "expected_retweet_user": {
+            "name": null,
+            "screen_name": null
+          },
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1719910513491234956",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "🥳Stay tuned with Asteroid X and be part of the mining industry revolution! https://t.co/J9RfGhXH0w",
+          "expected_created_at": "Thu Nov 02 02:53:15 +0000 2023",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "1441359402469003271",
+            "name": "Asteroid X",
+            "screen_name": "Asteroid_AU",
+            "description": "Empowering Mines, Enriching Futures!\nhttps://t.co/0D295Xfz8u",
+            "followers_count": 14146,
+            "friends_count": 160,
+            "verified": false,
+            "is_blue_verified": false
+          },
+          "expected_stats": {
+            "retweet_count": 3093,
+            "favorite_count": 4834,
+            "reply_count": 115,
+            "quote_count": 34
+          },
+          "expected_media": [
+            {
+              "type": "video",
+              "id": "1719907798346289152",
+              "expected_url": "https://video.twimg.com/ext_tw_video/1719907798346289152/pu/vid/avc1/1280x720/EcvHqPaBrS1dxWV_.mp4?tag=12",
+              "expected_bitrate": 2176000
+            }
+          ],
+          "is_retweet": false,
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965681592011264327",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "RT @Rothmus: https://t.co/Vk6rH0OoCF",
+          "expected_created_at": "Wed Sep 10 07:39:46 +0000 2025",
+          "expected_lang": "zxx",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 16974,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "expected_media": [
+            {
+              "type": "photo",
+              "id": "1965494022895521792",
+              "expected_url": "https://pbs.twimg.com/media/G0bWZnLXUAAHxsf.jpg"
+            }
+          ],
+          "is_retweet": true,
+          "expected_retweet_text": "https://t.co/Vk6rH0OoCF",
+          "expected_retweet_user": {
+            "name": null,
+            "screen_name": null
+          },
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965679784169751004",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "Time for MASSIVE change in America \n https://t.co/IyUpNRHB2e",
+          "expected_created_at": "Wed Sep 10 07:32:35 +0000 2025",
+          "expected_lang": "en",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 44057,
+            "favorite_count": 301093,
+            "reply_count": 7233,
+            "quote_count": 1524
+          },
+          "expected_media": [
+            {
+              "type": "video",
+              "id": "1965519174534320128",
+              "expected_url": "https://video.twimg.com/amplify_video/1965519174534320128/vid/avc1/1920x1080/SJDcLNQ5X769E9qw.mp4?tag=21",
+              "expected_bitrate": 10368000
+            }
+          ],
+          "is_retweet": false,
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965677217964552444",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "RT @HazeDoran: @MrAndyNgo https://t.co/rhgqdNg69S",
+          "expected_created_at": "Wed Sep 10 07:22:23 +0000 2025",
+          "expected_lang": "qme",
+          "expected_user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 225767579,
+            "friends_count": 1204,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 1214,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "expected_media": [
+            {
+              "type": "photo",
+              "id": "1965500280440758272",
+              "expected_url": "https://pbs.twimg.com/media/G0bcF2WaIAACuVA.png"
+            }
+          ],
+          "is_retweet": true,
+          "expected_retweet_text": "@MrAndyNgo https://t.co/rhgqdNg69S",
+          "expected_retweet_user": {
+            "name": null,
+            "screen_name": null
+          },
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965535696288186544",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "RT @Tz_2022: Airpods Pro 实时翻译功能演示\n（中英双语字幕版）\n\n有多少人看过《银河系漫游指南》的？这就是书里的“巴别鱼了”。。。🐟\n\n啊，《机器猫 多啦A梦》总看过吧？这就是那个“翻译魔芋（蒟蒻）”。。。🐶 https://t.co/s8FPfRzmec",
+          "expected_created_at": "Tue Sep 09 22:00:02 +0000 2025",
+          "expected_lang": "zh",
+          "expected_user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 132730,
+            "friends_count": 1382,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 12,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "expected_media": [
+            {
+              "type": "video",
+              "id": "1965530923945938944",
+              "expected_url": "https://video.twimg.com/amplify_video/1965530923945938944/vid/avc1/1280x714/LmKBO77UmEFj57Oh.mp4?tag=21",
+              "expected_bitrate": 2176000
+            }
+          ],
+          "is_retweet": true,
+          "expected_retweet_text": "Airpods Pro 实时翻译功能演示\n（中英双语字幕版）\n\n有多少人看过《银河系漫游指南》的？这就是书里的“巴别鱼了”。。。🐟\n\n啊，《机器猫 多啦A梦》总看过吧？这就是那个“翻译魔芋（蒟蒻）”。。。🐶 https://t.co/s8FPfRzmec",
+          "expected_retweet_user": {
+            "name": null,
+            "screen_name": null
+          },
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        },
+        {
+          "tweet_id": "1965505590077390877",
+          "source_data_path": "legacy.full_text",
+          "expected_text": "RT @manateelazycat: 一条FPC排线的故事，让你知道软件和硬件的差别\n\n微服是2024年8月份公开销售的，其实2023年10月份就可以卖了，但是当时卖之前晴天霹雳，硬件制造给我们软件团队好好的上了一课。… https://t.co/zoQUUx0FuH",
+          "expected_created_at": "Tue Sep 09 20:00:24 +0000 2025",
+          "expected_lang": "zh",
+          "expected_user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 132730,
+            "friends_count": 1382,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "expected_stats": {
+            "retweet_count": 39,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          },
+          "expected_media": [
+            {
+              "type": "photo",
+              "id": "1965214319597285376",
+              "expected_url": "https://pbs.twimg.com/media/G0XYAvMbcAAgM59.jpg"
+            }
+          ],
+          "is_retweet": true,
+          "expected_retweet_text": "一条FPC排线的故事，让你知道软件和硬件的差别\n\n微服是2024年8月份公开销售的，其实2023年10月份就可以卖了，但是当时卖之前晴天霹雳，硬件制造给我们软件团队好好的上了一课。 https://t.co/zoQUUx0FuH",
+          "expected_retweet_user": {
+            "name": null,
+            "screen_name": null
+          },
+          "is_quoted": false,
+          "validation_checkpoints": {
+            "text_not_empty": true,
+            "has_user_info": true,
+            "timestamp_valid": true,
+            "media_urls_valid": true,
+            "retweet_data_complete": true
+          },
+          "source_file": "response_213433_687388.json"
+        }
+      ],
+      "key_validations": [
+        "expected_media"
+      ]
+    }
+  ]
+}

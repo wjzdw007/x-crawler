@@ -1,0 +1,49 @@
+{
+  "creation_time": "2025-09-11T21:52:08.751467",
+  "description": "基于API响应数据自动生成的黄金数据集",
+  "source_files": [
+    "response_213435_617981.json",
+    "response_213433_687388.json",
+    "response_213444_133140.json",
+    "response_213336_058562.json",
+    "response_213335_358357.json"
+  ],
+  "total_tweets": 0,
+  "baseline_tweets": [],
+  "validation_rules": {
+    "text_completeness": {
+      "description": "验证推文文本完整性",
+      "critical_fields": [
+        "expected_text",
+        "expected_created_at"
+      ]
+    },
+    "user_data_integrity": {
+      "description": "验证用户信息完整性",
+      "critical_fields": [
+        "expected_user.name",
+        "expected_user.screen_name"
+      ]
+    },
+    "media_accessibility": {
+      "description": "验证媒体文件URL有效性",
+      "critical_fields": [
+        "expected_media[].expected_url"
+      ]
+    },
+    "retweet_completeness": {
+      "description": "验证转推数据完整性",
+      "critical_fields": [
+        "expected_retweet_text",
+        "expected_retweet_user"
+      ]
+    }
+  },
+  "statistics": {
+    "total_tweets": 0,
+    "retweets": 0,
+    "quoted_tweets": 0,
+    "media_tweets": 0,
+    "valid_checkpoints": 0
+  }
+}

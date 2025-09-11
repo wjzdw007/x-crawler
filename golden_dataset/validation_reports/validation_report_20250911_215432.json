@@ -1,0 +1,97 @@
+{
+  "validation_time": "2025-09-11T21:54:32.089197",
+  "tweet_count": 10,
+  "overall_score": 70.0,
+  "overall_status": "FAIL",
+  "category_results": {
+    "text_completeness": {
+      "score": 100,
+      "is_valid": true,
+      "issues": [],
+      "details": {
+        "total_tweets": 10,
+        "avg_text_length": 360.1,
+        "empty_text_count": 0,
+        "empty_text_ratio": 0.0,
+        "truncated_count": 0,
+        "truncated_ratio": 0.0,
+        "min_length": 15,
+        "max_length": 2736
+      }
+    },
+    "retweet_integrity": {
+      "score": 100,
+      "is_valid": true,
+      "issues": [],
+      "details": {
+        "total_retweets": 6,
+        "retweet_ratio": 0.6,
+        "missing_original_text": 0,
+        "missing_original_user": 0,
+        "nested_retweets": 0
+      }
+    },
+    "media_accessibility": {
+      "score": 40.0,
+      "is_valid": false,
+      "issues": [
+        "无效媒体URL: 3 个 (100.00%)"
+      ],
+      "details": {
+        "total_media_files": 3,
+        "media_tweets": 3,
+        "valid_urls": 0,
+        "invalid_urls": 3,
+        "accessible_urls": 0,
+        "video_files": 2,
+        "image_files": 1
+      }
+    },
+    "data_structure": {
+      "score": 60.0,
+      "is_valid": false,
+      "issues": [
+        "缺失用户name字段: 10 条 (100.00%)",
+        "缺失用户screen_name字段: 10 条 (100.00%)"
+      ],
+      "details": {
+        "total_tweets": 10,
+        "missing_fields": {
+          "id": 0,
+          "text": 0,
+          "created_at": 0,
+          "user": 0
+        },
+        "missing_user_fields": {
+          "name": 10,
+          "screen_name": 10
+        },
+        "valid_timestamps": 10,
+        "timestamp_validity_ratio": 1.0
+      }
+    },
+    "golden_comparison": {
+      "score": 50,
+      "is_valid": false,
+      "issues": [
+        "文本匹配率过低: 0.00%"
+      ],
+      "details": {
+        "golden_posts_count": 0,
+        "current_posts_count": 10,
+        "sample_text_match_ratio": 0,
+        "sample_size": 0
+      }
+    }
+  },
+  "all_issues": [
+    "[media_accessibility] 无效媒体URL: 3 个 (100.00%)",
+    "[data_structure] 缺失用户name字段: 10 条 (100.00%)",
+    "[data_structure] 缺失用户screen_name字段: 10 条 (100.00%)",
+    "[golden_comparison] 文本匹配率过低: 0.00%"
+  ],
+  "recommendations": [
+    "检查媒体URL提取路径，确保从 extended_entities.media 获取",
+    "检查必需字段的提取逻辑，确保数据结构完整"
+  ]
+}

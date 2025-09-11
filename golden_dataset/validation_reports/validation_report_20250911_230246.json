@@ -1,0 +1,88 @@
+{
+  "validation_time": "2025-09-11T23:02:46.972826",
+  "tweet_count": 33,
+  "overall_score": 90.0,
+  "overall_status": "PASS",
+  "category_results": {
+    "text_completeness": {
+      "score": 100,
+      "is_valid": true,
+      "issues": [],
+      "details": {
+        "total_tweets": 33,
+        "avg_text_length": 227.15151515151516,
+        "empty_text_count": 0,
+        "empty_text_ratio": 0.0,
+        "truncated_count": 0,
+        "truncated_ratio": 0.0,
+        "min_length": 45,
+        "max_length": 781
+      }
+    },
+    "retweet_integrity": {
+      "score": 100,
+      "is_valid": true,
+      "issues": [],
+      "details": {
+        "total_retweets": 1,
+        "retweet_ratio": 0.030303030303030304,
+        "missing_original_text": 0,
+        "missing_original_user": 0,
+        "nested_retweets": 0
+      }
+    },
+    "media_accessibility": {
+      "score": 100,
+      "is_valid": true,
+      "issues": [],
+      "details": {
+        "total_media_files": 27,
+        "media_tweets": 24,
+        "valid_urls": 27,
+        "invalid_urls": 0,
+        "accessible_urls": 3,
+        "video_files": 13,
+        "image_files": 14
+      }
+    },
+    "data_structure": {
+      "score": 100,
+      "is_valid": true,
+      "issues": [],
+      "details": {
+        "total_tweets": 33,
+        "missing_fields": {
+          "id": 0,
+          "text": 0,
+          "created_at": 0,
+          "user": 0
+        },
+        "missing_user_fields": {
+          "name": 0,
+          "screen_name": 0
+        },
+        "valid_timestamps": 33,
+        "timestamp_validity_ratio": 1.0
+      }
+    },
+    "golden_comparison": {
+      "score": 50.0,
+      "is_valid": false,
+      "issues": [
+        "推文数量显著减少: 33 vs 104",
+        "文本匹配率过低: 0.00%"
+      ],
+      "details": {
+        "golden_posts_count": 104,
+        "current_posts_count": 33,
+        "sample_text_match_ratio": 0.0,
+        "sample_size": 10
+      }
+    }
+  },
+  "all_issues": [
+    "[golden_comparison] 推文数量显著减少: 33 vs 104",
+    "[golden_comparison] 文本匹配率过低: 0.00%"
+  ],
+  "recommendations": []
+}

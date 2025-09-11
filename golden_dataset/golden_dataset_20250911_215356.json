@@ -1,0 +1,3652 @@
+{
+  "creation_time": "2025-09-11T21:53:56.301334",
+  "description": "基于API响应数据自动生成的黄金数据集",
+  "source_files": [
+    "response_213435_617981.json",
+    "response_213433_687388.json",
+    "response_213444_133140.json",
+    "response_213336_058562.json",
+    "response_213335_358357.json"
+  ],
+  "total_tweets": 104,
+  "baseline_tweets": [
+    {
+      "tweet_id": "1965973122521116984",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "小道消息：Gemini 3 Flash 能力超过 Gemini 2.5 Pro，本月不会发布 Gemini 3，但是很快了。",
+      "expected_created_at": "Thu Sep 11 02:58:13 +0000 2025",
+      "expected_lang": "zh",
+      "expected_user": {
+        "id": "3178231",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 132730,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 18,
+        "favorite_count": 137,
+        "reply_count": 12,
+        "quote_count": 0
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "just talked. gemini 3 not this month but soon. 3.0 flash will be &gt;2.5 pro. can't say more. buckle up!",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1966070060327514345",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @DavidSacks: My friend Charlie Kirk was the best of America. A self-made man, a young husband and father, and a patriot, he was relentle…",
+      "expected_created_at": "Thu Sep 11 09:23:24 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 5172,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "My friend Charlie Kirk was the best of America. A self-made man, a young husband and father, and a patriot, he was relentlessly positive about the future. He dedicated his life to making a difference with young people, drawing huge crowds everywhere he went. He was open to ideas",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1966063724197990676",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @thatsKAIZEN: Charlie was shot because he was honest.\n\nAmerica, we can’t keep doing this. https://t.co/tYAIaTfV5N",
+      "expected_created_at": "Thu Sep 11 08:58:14 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 33268,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1965872720274747392",
+          "expected_url": "https://video.twimg.com/amplify_video/1965872720274747392/vid/avc1/1080x1920/E9ItTGQp5PhIpoYm.mp4?tag=21",
+          "expected_bitrate": 10368000
+        }
+      ],
+      "is_retweet": true,
+      "expected_retweet_text": "Charlie was shot because he was honest.\n\nAmerica, we can’t keep doing this. https://t.co/tYAIaTfV5N",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1966056454827422210",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @blader: my entire life i voted democrat\n\ndonated the max to obama, got a photo and had him talk about my toe-shoes on the stump\n\npulled…",
+      "expected_created_at": "Thu Sep 11 08:29:21 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 15291,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "my entire life i voted democrat\n\ndonated the max to obama, got a photo and had him talk about my toe-shoes on the stump\n\npulled my kid out of preschool in 2016 after trump won because their teacher was maga\n\nvoted kamala last year\n\ntoday i registered republican. https://t.co/WLxPnX1wdu",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1966056312598667517",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "He was murdered",
+      "expected_created_at": "Thu Sep 11 08:28:47 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 9864,
+        "favorite_count": 133830,
+        "reply_count": 5738,
+        "quote_count": 321
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965977670312976417",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @nathan_covey: My friend was at the shooting.\n\nHe said there were protestors chanting \"kill Charlie Kirk\" throughout the event.\n\nIf you…",
+      "expected_created_at": "Thu Sep 11 03:16:17 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 11201,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "My friend was at the shooting.\n\nHe said there were protestors chanting \"kill Charlie Kirk\" throughout the event.\n\nIf you think killing people you disagree with is okay, you are literally sick.",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965973587812380716",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "They are celebrating cold-blooded murder",
+      "expected_created_at": "Thu Sep 11 03:00:04 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 41300,
+        "favorite_count": 345400,
+        "reply_count": 17710,
+        "quote_count": 1563
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "Every post on Bluesky is celebrating the assassination. Such unbelievably sick people.",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1966072523533251035",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @libsoftiktok: America will never be the same. https://t.co/XFsSJLkB2j",
+      "expected_created_at": "Thu Sep 11 09:33:12 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 4475,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "expected_media": [
+        {
+          "type": "photo",
+          "id": "1965895323005456384",
+          "expected_url": "https://pbs.twimg.com/media/G0hDYWlXkAAj1Vj.jpg"
+        }
+      ],
+      "is_retweet": true,
+      "expected_retweet_text": "America will never be the same. https://t.co/XFsSJLkB2j",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965969467122270253",
+      "source_data_path": "note_tweet.note_tweet_results.result.text",
+      "expected_text": "https://t.co/LKqiAme8X7 知名主持人塔克·卡尔森（Tucker Carlson）近日在对 OpenAI 首席执行官山姆·奥特曼（Sam Altman）的访谈节目中，当面追问 Sam Altman，就去年 OpenAI 前工程师苏奇尔·巴拉吉（Suchir Balaji）的离奇死亡事件提出质疑，引发了舆论关注。\n\n苏奇尔·巴拉吉曾是 OpenAI 重要的研究人员，2024年曾公开讨论过大语言模型（LLM）训练的版权法律风险问题，并被《纽约时报》等媒体报道为可能出庭作证、参与针对 OpenAI 的诉讼。然而，2024 年 11 月，他被发现死于旧金山的家中，警方初步调查结论为**疑似自杀**。旧金山市法医部门于2025年2月发布官方报告，结论确认巴拉吉死于单一枪伤，现场未发现他杀证据，警方随后结案。\n\n然而，巴拉吉的家属一直质疑官方的“自杀”结论，认为此事仍存诸多疑点，比如：\n\n- 为什么案发现场的监控摄像头线路被切断？\n- 为什么警方未解释他为何在两个不同房间均留下血迹？\n- 现场为何有不属于死者的假发？\n- 一名刚刚下单 DoorDash 外卖的年轻人，为何会在数分钟后突然开枪自杀？\n- 由第三方尸检指出死者可能存在第二处枪伤、搏斗痕迹及头部外伤等情况，却未被官方报告提及。\n\n卡尔森在节目中表示，这些家属提出的疑点“令人极度不安”，并当场追问奥特曼，要求他对外界的质疑作出解释。从奥特曼的反应来看，他明显感到不适与紧张，视频随即引发了公众对于此案的再次热议。\n\n目前，旧金山市官方仍坚持原先的调查结论，即巴拉吉属于自杀事件。但面对这些尚未完全解释的疑点，家属与部分公众人士仍在推动更深入的调查。\n\n---\n视频文稿\n---\n塔克·卡尔森（Tucker Carlson）：\n之前有一名程序员指责你们公司窃取别人的成果，还不给报酬，后来这名程序员就被谋杀了。这到底怎么回事？\n\n山姆·奥特曼（Sam Altman）：\n那也是一场悲剧。他是自杀的。\n\n塔克·卡尔森：\n你真的相信他是自杀的吗？\n\n山姆·奥特曼：\n我真的这么认为。\n\n塔克·卡尔森：\n你看过相关的证据吗？\n\n山姆·奥特曼：\n他算是我的朋友吧。可能不是最亲密的朋友，但也是在OpenAI工作很久的人。他去世的消息让我很震惊。我花了很多时间去了解整件事，看了所有我能找到的资料，我觉得确实是自杀。\n\n塔克·卡尔森：\n你为什么这么肯定？\n\n山姆·奥特曼：\n现场找到的枪是他自己购买的。我知道说起来很残酷，但我确实看了完整的法医报告。\n\n塔克·卡尔森：\n你不觉得这看起来根本不像自杀吗？我个人认为他显然是被谋杀的。你看，现场明显有搏斗的痕迹，监控摄像头的线也被人剪断了。而且他刚点了外卖，刚从加州的卡塔利娜岛和朋友们度假回来。没有任何迹象表明他有自杀倾向，既没留遗书，也没有表现出任何异常。他刚跟家人通了电话，之后就发现他死了，而且房子里多个房间都有血迹。这种情况根本不可能是自杀，很明显是谋杀。你跟警方谈过这件事吗？\n\n山姆·奥特曼：\n我没有和警方交流过。\n\n塔克·卡尔森：\n他的母亲认为是你下令谋杀了他。\n\n山姆·奥特曼：\n你也相信这是真的吗？\n\n塔克·卡尔森：\n我只是提出家属的说法……\n\n山姆·奥特曼：\n但你刚刚说了，你自己相信吗？\n\n塔克·卡尔森：\n我觉得这件事值得深入调查。我不是说你一定牵涉其中，但当有人指控你们公司犯罪之后却突然被发现死亡，并且现场有明显的搏斗痕迹，这种情况我们不能轻易就说“啊，这是自杀”。尤其当这个人毫无抑郁症状时，就更不能忽视。我想如果你真的把他当朋友，或许应该去和他母亲谈谈。\n\n山姆·奥特曼：\n我提出过见面，但她不愿意见我。\n\n塔克·卡尔森：\n你能理解外界对这件事的担忧吗？大家会觉得，“会不会真的发生了这种事情？”\n\n山姆·奥特曼：\n我还从来没有经历过这样的采访，被暗示涉嫌……\n\n塔克·卡尔森：\n我绝对没有指控你的意思。我只是转达了他母亲的说法。我客观地看了所有证据，真的看不出有任何明显的自杀迹象。我不明白，旧金山市的警方为何能无视现场的可疑之处，直接将其定性为自杀？这太奇怪了。\n\n山姆·奥特曼：\n你应该能理解，这听起来像是在指控我。\n\n塔克·卡尔森：\n我再澄清一下，我绝对没有指控你做了什么坏事。但我觉得这件事值得搞清楚。我无法理解旧金山警方为何草草下了结论，不进一步调查。\n\n山姆·奥特曼：\n据我所知，警方调查了不止一次。说实话，我一开始也觉得挺可疑的。\n\n塔克·卡尔森：\n没错。\n\n山姆·奥特曼：\n后来又出了一份新的调查报告，更多细节出来后，我才觉得，“哦，也许真的是自杀”。\n\n塔克·卡尔森：\n是什么改变了你的想法？\n\n山姆·奥特曼：\n是第二份报告里提到的子弹进入的角度，还有现场推断的子弹轨迹和事发经过。\n\n塔克·卡尔森：\n这些我也看过，但完全没能说服我。你看，为什么监控摄像头线被剪断了？为什么开枪自杀的人会在两个房间里都有血迹？为什么现场还有一顶不是他的假发？你听过谁在没有任何自杀倾向时刚点了外卖，然后突然就自杀了吗？我做了很多年的警察新闻记者，从未听过这么离谱的情况。\n\n山姆·奥特曼：\n这种讨论真的让我觉得很难过，我希望能对逝者表现出更多尊重。\n\n塔克·卡尔森：\n我完全理解你的感受。但我是受他家人所托在询问这个问题。他们也只是想要答案。\n\n山姆·奥特曼：\n很多人自杀前不会留下遗书，这并不罕见。有些人甚至还会点自己喜欢的外卖再结束生命。这是一起悲剧。\n\n塔克·卡尔森：\n但他的家人坚定地认为他是被谋杀的。这就是我问这些问题的原因。\n\n山姆·奥特曼：\n如果我是他的家人，我也一定会想要真相，而且可能任何解释都无法真正让我感到安慰。\n\n塔克·卡尔森：\n没错。\n\n山姆·奥特曼：\n所以我能理解这种心情。但同时我也非常希望能给予他和他的家人应有的尊重。\n\n塔克·卡尔森：\n我理解，也非常尊重他的家人。这次采访本身就是他们的意愿。我强调，我并没有指控你参与此事，但我确实觉得所有的证据都指向谋杀。我无法理解旧金山市当局对这么多疑点视而不见，这件事确实让人对整个调查程序失去了信心。\n\n山姆·奥特曼：\n我只是想说，当初第一次看到这些信息时，我也觉得可疑。\n\n塔克·卡尔森：\n没错，所以并不是我故意挑刺吧？\n\n山姆·奥特曼：\n只是后来看到更多细节之后，我才接受了自杀的说法。\n\n塔克·卡尔森：\n而这些新的细节，我看了却依旧无法接受。我真的很困惑。\n\n山姆·奥特曼：\n说到这里，我真的很难受。这种讨论方式让我感到有些不尊重。\n\n塔克·卡尔森：\n我完全能理解你的感受。我只是代表他的家人提出这些疑问，希望能弄清楚到底发生了什么。",
+      "expected_created_at": "Thu Sep 11 02:43:41 +0000 2025",
+      "expected_lang": "zh",
+      "expected_user": {
+        "id": "3178231",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 132730,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 7,
+        "favorite_count": 30,
+        "reply_count": 1,
+        "quote_count": 0
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1965844740081127424",
+          "expected_url": "https://video.twimg.com/amplify_video/1965844740081127424/vid/avc1/916x508/gz-9gTh2EXbEE6DZ.mp4?tag=21",
+          "expected_bitrate": 2176000
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1966071185046950378",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @FBI: The FBI is working alongside our local and state law enforcement partners in Utah to fully investigate and seek justice in the fat…",
+      "expected_created_at": "Thu Sep 11 09:27:53 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 9096,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "The FBI is working alongside our local and state law enforcement partners in Utah to fully investigate and seek justice in the fatal shooting of Charlie Kirk at Utah Valley University. Anyone with information, photos, and video from the incident can help the FBI identity more https://t.co/JEQ22lIwfv",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965960524241449048",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @realDonaldTrump: TO MY GREAT FELLOW AMERICANS… https://t.co/oRsrE5TTHr",
+      "expected_created_at": "Thu Sep 11 02:08:09 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 156188,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1965947142658232320",
+          "expected_url": "https://video.twimg.com/amplify_video/1965947142658232320/vid/avc1/1920x1012/Hv7rMAU22bOdXIjP.mp4?tag=21",
+          "expected_bitrate": 10368000
+        }
+      ],
+      "is_retweet": true,
+      "expected_retweet_text": "TO MY GREAT FELLOW AMERICANS… https://t.co/oRsrE5TTHr",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965938560823136423",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @manateelazycat: 网络调试的系列小故事，你会获得复杂系统调试的认知提升\n\n在讲故事之前，我先普及一下微服的系统和背景，请大家耐心看完，因为这是非常有意义的。\n\n然后我们在这个有意义的基础之上，我们再通过微服开发过程中的真实故事来传授给你们超复杂软件工程正确…",
+      "expected_created_at": "Thu Sep 11 00:40:52 +0000 2025",
+      "expected_lang": "zh",
+      "expected_user": {
+        "id": "3178231",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 132730,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 10,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "网络调试的系列小故事，你会获得复杂系统调试的认知提升\n\n在讲故事之前，我先普及一下微服的系统和背景，请大家耐心看完，因为这是非常有意义的。\n\n然后我们在这个有意义的基础之上，我们再通过微服开发过程中的真实故事来传授给你们超复杂软件工程正确的调试技巧。 https://t.co/RIgWlHQdAM",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965910441357619459",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @JDVance: This is such a good point. If you actually watch Charlie’s events—as opposed to the fake summaries—they are one of the few pla…",
+      "expected_created_at": "Wed Sep 10 22:49:08 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 41017,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "This is such a good point. If you actually watch Charlie’s events—as opposed to the fake summaries—they are one of the few places with open and honest dialogue between left and right.  He would answer any question and talk to everyone.",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1719910513491234956",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "🥳Stay tuned with Asteroid X and be part of the mining industry revolution! https://t.co/J9RfGhXH0w",
+      "expected_created_at": "Thu Nov 02 02:53:15 +0000 2023",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1441359402469003271",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 14146,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 3093,
+        "favorite_count": 4834,
+        "reply_count": 115,
+        "quote_count": 34
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1719907798346289152",
+          "expected_url": "https://video.twimg.com/ext_tw_video/1719907798346289152/pu/vid/avc1/1280x720/EcvHqPaBrS1dxWV_.mp4?tag=12",
+          "expected_bitrate": 2176000
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965908050893815888",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @TheCriticalDri2: Whether you agreed with him or not, Charlie Kirk is dead purely because some people didn't like what he had to say. Th…",
+      "expected_created_at": "Wed Sep 10 22:39:38 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 30326,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "Whether you agreed with him or not, Charlie Kirk is dead purely because some people didn't like what he had to say. That should outrage every single one of us.",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965868647098073457",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "Exactly",
+      "expected_created_at": "Wed Sep 10 20:03:04 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 26111,
+        "favorite_count": 227625,
+        "reply_count": 7650,
+        "quote_count": 486
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "The left-wing mainstream media, as well as figures like Gavin Newson claiming Trump plans to be dictator, has created a climate of hysteria against right-wing figures that could radicalize any number of unstable people to engage in political violence. Pray Charlie Kirk is ok.",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965860002545152203",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "The shot looked real bad, but I sure hope Charlie makes it somehow",
+      "expected_created_at": "Wed Sep 10 19:28:43 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 28221,
+        "favorite_count": 607886,
+        "reply_count": 19376,
+        "quote_count": 1945
+      },
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965859343351558352",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "The Left is the party of murder",
+      "expected_created_at": "Wed Sep 10 19:26:06 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 123594,
+        "favorite_count": 719653,
+        "reply_count": 31427,
+        "quote_count": 6149
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "The Left lectured us for the last decade about the dangers of violence from the Right\n\nFrom the assassination attempts of President Trump\n\nTo Brian Thompson, the United Healthcare CEO, being murdered\n\nNow to Charlie Kirk\n\nThe danger was actually on the Left",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965855885236027800",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "帮转找人信息：ML Engineer，ML Data/Full Stack/Backend/Marketing",
+      "expected_created_at": "Wed Sep 10 19:12:21 +0000 2025",
+      "expected_lang": "ja",
+      "expected_user": {
+        "id": "3178231",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 132730,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 1,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "深夜说一个最近的感想\n其实也不算新，还是老生常谈的一个话题“做 infra 的人必须要去贴近业务，否则一切都是空中楼阁”\n我介绍过很多次鄙司是 AIGC 头部玩家，主攻二次元赛道。\n我们最近面临的一个问题是 Elasticsearch 带来的。\n我们用户公开发布的 Artwork 和生成任务都是可以搜索的。\n最近",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965853670526058943",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @sujingshen: notebooklm的API开放了。是个机会。\nNotebookLM api\n- Create a notebook\n- Retrieve a notebook\n- List recently viewed notebooks\n- Delete…",
+      "expected_created_at": "Wed Sep 10 19:03:33 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "3178231",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 132730,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 34,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "notebooklm的API开放了。是个机会。\nNotebookLM api\n- Create a notebook\n- Retrieve a notebook\n- List recently viewed notebooks\n- Delete notebooks in batch\n- Share a notebook\n- Add data sources to a notebook\n- Delete data sources from a notebook\n信息源：👇",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965802258794525051",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "😂💯",
+      "expected_created_at": "Wed Sep 10 15:39:15 +0000 2025",
+      "expected_lang": "art",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 4003,
+        "favorite_count": 44867,
+        "reply_count": 2587,
+        "quote_count": 98
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "“Look, I think I can handle making humans a multi-planetary civilisation, but getting politicians to stop spending too much money is just not feasible”",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965800039995093501",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "Legacy news like AP is super racist against Whites (and Asians). \n\nEither capitalize all races or none. That would be fair and equal treatment, but only lowercase for Whites is racist by definition!",
+      "expected_created_at": "Wed Sep 10 15:30:26 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 31188,
+        "favorite_count": 187818,
+        "reply_count": 8410,
+        "quote_count": 1241
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "AP’s style guidelines literally says to lowercase White and capitalize Black\n\nAnti-White racist trash outlet https://t.co/uaAS9WKvD0",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965797993275437103",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @RepTimMooreNC: Iryna Zarutska should still be alive. Her blood is on the hands of everyone who enabled this 14x career criminal to walk…",
+      "expected_created_at": "Wed Sep 10 15:22:19 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 18024,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "Iryna Zarutska should still be alive. Her blood is on the hands of everyone who enabled this 14x career criminal to walk free.\n\nToday, I was proud to colead @RepStefanik's \"Keep Violent Criminals Off Our Streets Act\" to end cashless bail. https://t.co/qHZpV6YxOe",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965791706814841220",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "A more accurate legacy news line would be that “instances of voter fraud are rarely caught, especially where showing your ID to vote is made illegal, like California and New York” 😂😢",
+      "expected_created_at": "Wed Sep 10 14:57:20 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 22987,
+        "favorite_count": 92794,
+        "reply_count": 2607,
+        "quote_count": 359
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "ELECTION INTEGRITY: Prior to Elon Musk's purchase of X we weren't allowed to share stories of election fraud. The drive-by media routinely suppressed coverage of stories like Milwaukee Election Director Kimberly Zapata's conviction for fake military ballots. When the stories are https://t.co/96Amvyq8u6",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965789720308502571",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "Designing dexterous hands for robots is a very hard problem. \n\nThen figuring out how to manufacture them at scale is 100 times harder.",
+      "expected_created_at": "Wed Sep 10 14:49:26 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 6273,
+        "favorite_count": 43286,
+        "reply_count": 3755,
+        "quote_count": 332
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "This is the chaos produced by a triple pendulum with just 3 degrees of freedom.\n\nYour hand has 27: 4 per finger + 5 for the thumb + 6 for the wrist\n\nBuilding a robot to conduct this orchestra of joints and tendons to pick up a coin is ... non-trivial. https://t.co/PGOUeYTOZd",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965788643597156538",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "It should not be vastly easier to become licensed as a judge than licensed as a barber",
+      "expected_created_at": "Wed Sep 10 14:45:09 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 26479,
+        "favorite_count": 164169,
+        "reply_count": 5031,
+        "quote_count": 697
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "DEI: To make it easier to recruit black judges multiple states don't require magistrate to have college degrees much less law degrees. Those same states require barbers to have thousands of hours of training and licensing - regardless of skin color. \nhttps://t.co/Fg3JcmS9kF",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965788222967230907",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @niccruzpatane: Summary of @elonmusk’s 44 minute interview at the @allinsummit:\n\nGovernment: \n• Elon hasn’t been back to DC since May, “…",
+      "expected_created_at": "Wed Sep 10 14:43:29 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 1854,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "Summary of @elonmusk’s 44 minute interview at the @allinsummit:\n\nGovernment: \n• Elon hasn’t been back to DC since May, “The Government is basically unfixable.”\n• “If AI &amp; Robots don’t solve the National Debt, we’re toast.”\n\nOptimus:\n• Tesla is finalizing the design of Optimus https://t.co/Uq9hcCZOeB",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965785001280332156",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "Lovart 又有 0 积分使用nano banana和即梦4.0画图活动了，截止9/20",
+      "expected_created_at": "Wed Sep 10 14:30:41 +0000 2025",
+      "expected_lang": "zh",
+      "expected_user": {
+        "id": "3178231",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 132730,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 2,
+        "favorite_count": 18,
+        "reply_count": 2,
+        "quote_count": 0
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "Rocket-powered product placement: Lovart × Seedream 4.0 FREE UNLIMITED usage until Sep 20.\nZero credits consumption = endless creative runway. Try today:\n- 2K / 4K output\n- Up to 6 image refs\n- Any aspect ratio\n- Automated layouts\n#Lovart #CreateWithLovart #Seedream4 https://t.co/zwJrUdnSU2",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965781504883356099",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @KonstantinKisin: This is genuinely unreal. BLM tore the world apart over a police interaction in which there was literally zero evidenc…",
+      "expected_created_at": "Wed Sep 10 14:16:47 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 13285,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "This is genuinely unreal. BLM tore the world apart over a police interaction in which there was literally zero evidence of racism. \n\nBut when a man kills this poor girl and walks around saying \"I got the white girl\" what we get is \"we don't know why he did it\"?\n\nIf you're trying https://t.co/eOAvcFdSXB",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965781379721085021",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @JDVance: Daniel Penny prevented this from happening on a NYC subway. Instead of thanking him, many hated him for it. https://t.co/aJQQo…",
+      "expected_created_at": "Wed Sep 10 14:16:18 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 37592,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "Daniel Penny prevented this from happening on a NYC subway. Instead of thanking him, many hated him for it. https://t.co/aJQQok1awy",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965775510396715430",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @amuse: ELECTION INTEGRITY: States like Maryland don't want to catch non-citizens voting illegally. They refuse to cross-reference their…",
+      "expected_created_at": "Wed Sep 10 13:52:58 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 1743,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "ELECTION INTEGRITY: States like Maryland don't want to catch non-citizens voting illegally. They refuse to cross-reference their voter rolls with citizenship databases. Take for example, Francis Bagnall has been illegally voting in Maryland for 30 years. He was caught by https://t.co/pbPY3KQaEH",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965768106703466800",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "如何写好 AI 画图提示词的一点经验分享",
+      "expected_created_at": "Wed Sep 10 13:23:33 +0000 2025",
+      "expected_lang": "zh",
+      "expected_user": {
+        "id": "3178231",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 132730,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 0,
+        "favorite_count": 21,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "如何写好 AI 画图提示词？\n\n我在 GPT-4o 画图时期，花了不少时间研究画图提示词，将近 30 条提示词被收录在各种 Awesome 的画图提示词 Repo 中，我的经验总结下来就是这么几条：\n\n1. 大白话先行",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965768028936974633",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "如何发掘 AI 应用场景的一点经验分享",
+      "expected_created_at": "Wed Sep 10 13:23:14 +0000 2025",
+      "expected_lang": "zh",
+      "expected_user": {
+        "id": "3178231",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 132730,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 5,
+        "favorite_count": 19,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "如何发掘 AI 应用场景\n\n相对来说，我还比较善于发掘一些日常工作生活中能应用到 AI 的场景，比如上面这些场景，对我自己来说都是蛮实用蛮有价值的，相信很多人看到我的应用和提示词，也能照葫芦画瓢应用起来，说不定也能提升效率。\n\n我经常会想这三个问题：\n1.",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965685447314866331",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @jawwwn_: Palantir CEO Alex Karp:\n\n“If we don’t want this country to be what Europe is now… you have to close the border…\n\n“Both sides h…",
+      "expected_created_at": "Wed Sep 10 07:55:05 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 2217,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "Palantir CEO Alex Karp:\n\n“If we don’t want this country to be what Europe is now… you have to close the border…\n\n“Both sides have to step up.\n\n“Everybody who’s criminal… I [would] make it so they self-deport, because I’m going to come tomorrow in a way you don’t like.”\n\nVia https://t.co/uvDuOXfTXI",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965684043741384989",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @Philosophi_Cat: I’m now seeing boomers on Facebook sharing the Iryna Zarutska story. That’s how you know it’s broken containment.",
+      "expected_created_at": "Wed Sep 10 07:49:31 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 2886,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "I’m now seeing boomers on Facebook sharing the Iryna Zarutska story. That’s how you know it’s broken containment.",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965683791529410833",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "A second conviction for aggravated violent crime should get life imprisonment",
+      "expected_created_at": "Wed Sep 10 07:48:31 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 13439,
+        "favorite_count": 92964,
+        "reply_count": 5497,
+        "quote_count": 593
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "A ten strike law preventing people from leaving prison after that many violent crime convictions would reduce period violent crime by 20%\n\nFive strikes would cut violent crime by 40%\n\nThree strikes would halve violent crime\n\nTwo strikes would remove ~two-thirds of violent crime https://t.co/mwaUNeQhZQ",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965682488514338819",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @GuntherEagleman: 🚨BREAKING: Karoline Leavitt just spoke for over 5-minutes about the horrific murder of Iryna Zarutska:\n\nShe finished i…",
+      "expected_created_at": "Wed Sep 10 07:43:20 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 27178,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "🚨BREAKING: Karoline Leavitt just spoke for over 5-minutes about the horrific murder of Iryna Zarutska:\n\nShe finished it off by DECIMATING legacy media.\n\n\"Perhaps most shamefully of all is the media, many outlets in this room, decided that her murder was not worth reporting on https://t.co/duR0ZB1GUm",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965682206137090544",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @AlexBerenson: Until the left admits the truth about race and crime, its efforts to shout the right down over cases like this will only…",
+      "expected_created_at": "Wed Sep 10 07:42:13 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 2137,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "Until the left admits the truth about race and crime, its efforts to shout the right down over cases like this will only provoke more anger.\n\nAnd this is the truth about race and crime: https://t.co/gSzj8nrnZK",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965681592011264327",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @Rothmus: https://t.co/Vk6rH0OoCF",
+      "expected_created_at": "Wed Sep 10 07:39:46 +0000 2025",
+      "expected_lang": "zxx",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 16974,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "expected_media": [
+        {
+          "type": "photo",
+          "id": "1965494022895521792",
+          "expected_url": "https://pbs.twimg.com/media/G0bWZnLXUAAHxsf.jpg"
+        }
+      ],
+      "is_retweet": true,
+      "expected_retweet_text": "https://t.co/Vk6rH0OoCF",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965681129404703206",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "These NGOs should be sued into oblivion and their boards of directors ostracized from society",
+      "expected_created_at": "Wed Sep 10 07:37:56 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 56436,
+        "favorite_count": 276306,
+        "reply_count": 6049,
+        "quote_count": 1152
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "And there you have it. \n\n$3.3 MILLION from left-wing NGO The MacArthur Foundation went to Mecklenburg County to “reduce the jail population”, the very county that released career criminal DeCarlos Brown 14 times.\n\nInsane. Follow the money. Democrats want criminals on the loose. https://t.co/XWRrY9hsiQ",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965680466767536140",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "💯",
+      "expected_created_at": "Wed Sep 10 07:35:18 +0000 2025",
+      "expected_lang": "art",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 12480,
+        "favorite_count": 141620,
+        "reply_count": 1541,
+        "quote_count": 95
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "Law enforcement arrested this thug 14 times. It wasn’t law enforcement that failed. It was weak politicians like you who kept letting him out of prison.",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965680325042024635",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @unlimited_ls: 🚨BREAKING UPDATE: Man accused of st*bbing an elderly couple and setting their bodies on fire is a level 3 s*x offender wi…",
+      "expected_created_at": "Wed Sep 10 07:34:44 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 13732,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "🚨BREAKING UPDATE: Man accused of st*bbing an elderly couple and setting their bodies on fire is a level 3 s*x offender with a 30-year violent criminal history and was out on parole for first-degree robbery\n\n42-year-old Jamel McGriff is armed and dangerous\n\nInvestigators believe https://t.co/IlLozlQkiR",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965680036100669503",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "Only gets better from here",
+      "expected_created_at": "Wed Sep 10 07:33:35 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 3709,
+        "favorite_count": 25194,
+        "reply_count": 1598,
+        "quote_count": 92
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "Grok Code just literally cloned the entire Netflix UI with a one shot prompt\n\nFrom the iconic Hero section to the interactive Carousel, all with a single prompt and a few web-sourced image links\n\nIt’s not just fast, it's the most cost-effective SOTA model out there\n➝ Input: Grok https://t.co/WxxUHCKw9X",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965679848325812251",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @FBIDirectorKash: The brutal attack on Iryna Zarutska was a disgraceful act that should never happen in America. \n\nThe @FBI immediately…",
+      "expected_created_at": "Wed Sep 10 07:32:51 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 9165,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "The brutal attack on Iryna Zarutska was a disgraceful act that should never happen in America. \n\nThe @FBI immediately surged into action to ensure justice is served and to make clear that violent criminals will never be allowed to walk free again. \n\nPresident Trump is committed https://t.co/0mq30pD0xS",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965679784169751004",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "Time for MASSIVE change in America \n https://t.co/IyUpNRHB2e",
+      "expected_created_at": "Wed Sep 10 07:32:35 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 44057,
+        "favorite_count": 301093,
+        "reply_count": 7233,
+        "quote_count": 1524
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1965519174534320128",
+          "expected_url": "https://video.twimg.com/amplify_video/1965519174534320128/vid/avc1/1920x1080/SJDcLNQ5X769E9qw.mp4?tag=21",
+          "expected_bitrate": 10368000
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965678199821795482",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "Release the video",
+      "expected_created_at": "Wed Sep 10 07:26:18 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 51250,
+        "favorite_count": 330907,
+        "reply_count": 4655,
+        "quote_count": 864
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "IMPORTANT: Four months after Karmelo Anthony killed Austin Mecalf at a track meet, authorities still refuse to release the video — and remember, over $500K was reportedly raised for Anthony’s family via GiveSendGo https://t.co/v2uCbR0uql",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965677976177320301",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "💯",
+      "expected_created_at": "Wed Sep 10 07:25:24 +0000 2025",
+      "expected_lang": "art",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 17128,
+        "favorite_count": 134089,
+        "reply_count": 4422,
+        "quote_count": 452
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "We need more police, more prisons, and more asylums. And yes, we can arrest our way out of the psychotic-criminals-murdering-people-in-the-streets problem.",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965677846283911373",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "F NYT",
+      "expected_created_at": "Wed Sep 10 07:24:53 +0000 2025",
+      "expected_lang": "da",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 16811,
+        "favorite_count": 111148,
+        "reply_count": 3741,
+        "quote_count": 564
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "The Jenga tower of mental bullshit they built to justify permanent racial discrimination against white people in news reporting. https://t.co/cWPuzEEfuu",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965677217964552444",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @HazeDoran: @MrAndyNgo https://t.co/rhgqdNg69S",
+      "expected_created_at": "Wed Sep 10 07:22:23 +0000 2025",
+      "expected_lang": "qme",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 1214,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "expected_media": [
+        {
+          "type": "photo",
+          "id": "1965500280440758272",
+          "expected_url": "https://pbs.twimg.com/media/G0bcF2WaIAACuVA.png"
+        }
+      ],
+      "is_retweet": true,
+      "expected_retweet_text": "@MrAndyNgo https://t.co/rhgqdNg69S",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965676894478893514",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @TheNotoriousMMA: I cannot escape the images circulating of the innocent, harmless, Ukrainian woman on public transport. \n\nBrutally murd…",
+      "expected_created_at": "Wed Sep 10 07:21:06 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 11721,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "I cannot escape the images circulating of the innocent, harmless, Ukrainian woman on public transport. \n\nBrutally murdered from behind. For nothing! \n\nI wish the absolute worst for her killer and I am neither shy nor sorry in saying this. \n\nThe absolute WORST IS DESERVED! \n\nSlava",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965676807761592345",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @TheLaurenChen: Poverty does not cause crime.\n\nPoverty does not make you stab an innocent bystander multiple times in the neck.\n\nThere a…",
+      "expected_created_at": "Wed Sep 10 07:20:46 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 6396,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "Poverty does not cause crime.\n\nPoverty does not make you stab an innocent bystander multiple times in the neck.\n\nThere are Asian countries where people live on dollars a day and they are still safer than any American city.\n\nJust stop with the excuses.",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965676717680521538",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @Not_the_Bee: I am the father of three girls. This sickens me more than anything else I could possibly witness, and it’s a wake up call.…",
+      "expected_created_at": "Wed Sep 10 07:20:24 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 9082,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "I am the father of three girls. This sickens me more than anything else I could possibly witness, and it’s a wake up call. Fighting the woke mind virus is the destiny of the men of our generation. It must be done to protect our women and save our country. https://t.co/XPS2kmPcsm",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965676411878027519",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @AutismCapital: 🚨ELON MUSK: \"If you take away religion, I think you get something in its place which is worse than what was there before…",
+      "expected_created_at": "Wed Sep 10 07:19:11 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 8649,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "🚨ELON MUSK: \"If you take away religion, I think you get something in its place which is worse than what was there before. You get something destructive like the woke mind virus taking the place of religion. You get dystopian de facto religions that are self destructive.\n\nWe need https://t.co/PZQfrgqOg6",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965675821345263699",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @Glinner: What. The. Fuck.",
+      "expected_created_at": "Wed Sep 10 07:16:50 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 2476,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "What. The. Fuck.",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965673356235358499",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "Toast",
+      "expected_created_at": "Wed Sep 10 07:07:03 +0000 2025",
+      "expected_lang": "et",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 6416,
+        "favorite_count": 57355,
+        "reply_count": 3544,
+        "quote_count": 292
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "🚨ELON MUSK: \"I haven't been to DC since May. The government is basically unfixable. I applaud David (Sacks') noble efforts...but at the end of the day if you look at our national debt...if AI and robots don't solve our national debt, we're toast.\" https://t.co/XKSes4fBfq",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965672406615556329",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @stillgray: This is the full, unedited and uncensored video of Iryna Zarutska's murder. No one cared. She died alone. You need to watch…",
+      "expected_created_at": "Wed Sep 10 07:03:16 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 7092,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "",
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": false
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965668250731381175",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "The murder rate spikes up dramatically around 2020",
+      "expected_created_at": "Wed Sep 10 06:46:45 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 15366,
+        "favorite_count": 100325,
+        "reply_count": 5429,
+        "quote_count": 697
+      },
+      "is_retweet": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965659794536370639",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @PM_ViktorOrban: ⚠️ The Brusselian elite are pushing joint indebtedness to strip nations of their sovereignty and drag us toward a Unite…",
+      "expected_created_at": "Wed Sep 10 06:13:09 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 3984,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "⚠️ The Brusselian elite are pushing joint indebtedness to strip nations of their sovereignty and drag us toward a United States of Europe. They want to use the war in Ukraine as the pretext to shackle us all financially. We must look beyond the battlefield to the future of the https://t.co/RCVzKKu5LM",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965659393908936981",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "💯",
+      "expected_created_at": "Wed Sep 10 06:11:34 +0000 2025",
+      "expected_lang": "art",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 67943,
+        "favorite_count": 475284,
+        "reply_count": 9053,
+        "quote_count": 1309
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "This image will define the new civil rights movement. We have a right to use public accommodations without being butchered in our seats. We have a right to safe communities where violent animals are rounded up and caged. This is not just a local crime. It’s a civil rights issue. https://t.co/3VuADE6thr",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965657334837117338",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @neuralink: There are now 12 people around the world with Neuralink implants. Collectively, they’ve had their devices for 2,000 days and…",
+      "expected_created_at": "Wed Sep 10 06:03:23 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 1369,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "There are now 12 people around the world with Neuralink implants. Collectively, they’ve had their devices for 2,000 days and accumulated over 15,000 hours of use.\n\nWe look forward to continuing to explore the possibilities of neural interfaces with all of our participants! https://t.co/OCuDN40abx",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965626233116655676",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "微软正在与Anthropic展开合作，把Claude模型引入Office 365。\n\n未来，Word、Excel和PowerPoint中的某些Copilot功能，将逐步采用Claude模型，尤其是在内部测试显示Claude表现更好的领域——比如Excel电子表格的函数计算，以及PowerPoint制作更有吸引力的幻灯片时。",
+      "expected_created_at": "Wed Sep 10 03:59:48 +0000 2025",
+      "expected_lang": "zh",
+      "expected_user": {
+        "id": "3178231",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 132730,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 5,
+        "favorite_count": 47,
+        "reply_count": 7,
+        "quote_count": 2
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "Microsoft is moving away from OpenAI for Office 365 and bringing Anthropic on board. \n\nClaude models will be used for certain Copilot features in Word, Excel, and PowerPoint in the future—especially where they perform better according to internal tests, such as in spreadsheet https://t.co/1sHfriF5T8",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965608255025275189",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "支持，帮转",
+      "expected_created_at": "Wed Sep 10 02:48:21 +0000 2025",
+      "expected_lang": "zh",
+      "expected_user": {
+        "id": "3178231",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 132730,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "☘️ YouMind 0.4 发布\n\nYouMind 是一个专门为内容学习者、内容创作者打造的 AI Creation Studio，助力你把每一个灵感想法转变成“让自己满意的作品”。\n\n今天同时在 Product Hunt 上线啦 🚀\n\n现在非常需要你和团队宝贵的 up/comment 👇\nhttps://t.co/kDTGIkGTdH\n\n我们团队有 20+",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965585498203980039",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @TheRabbitHole84: All Lives Matter",
+      "expected_created_at": "Wed Sep 10 01:17:56 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 2218,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "All Lives Matter",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965549911325425716",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "Why is “white” always in lowercase, but Black is uppercase, @nytimes? \n\nThe NY Times is deliberate, precise and comprehensive in its anti-White racism.",
+      "expected_created_at": "Tue Sep 09 22:56:31 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 75200,
+        "favorite_count": 435951,
+        "reply_count": 19487,
+        "quote_count": 3008
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "NEW YORK TIMES RACIAL HIERARCHY: Crime against Iryna Zarutska was committed by a capital \"B\" Black man against a lowercase \"w\" white woman.\n\nYou are a second-class citizen. https://t.co/FfviZd3uzW",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965535696288186544",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @Tz_2022: Airpods Pro 实时翻译功能演示\n（中英双语字幕版）\n\n有多少人看过《银河系漫游指南》的？这就是书里的“巴别鱼了”。。。🐟\n\n啊，《机器猫 多啦A梦》总看过吧？这就是那个“翻译魔芋（蒟蒻）”。。。🐶 https://t.co/s8FPfRzmec",
+      "expected_created_at": "Tue Sep 09 22:00:02 +0000 2025",
+      "expected_lang": "zh",
+      "expected_user": {
+        "id": "3178231",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 132730,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 12,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1965530923945938944",
+          "expected_url": "https://video.twimg.com/amplify_video/1965530923945938944/vid/avc1/1280x714/LmKBO77UmEFj57Oh.mp4?tag=21",
+          "expected_bitrate": 2176000
+        }
+      ],
+      "is_retweet": true,
+      "expected_retweet_text": "Airpods Pro 实时翻译功能演示\n（中英双语字幕版）\n\n有多少人看过《银河系漫游指南》的？这就是书里的“巴别鱼了”。。。🐟\n\n啊，《机器猫 多啦A梦》总看过吧？这就是那个“翻译魔芋（蒟蒻）”。。。🐶 https://t.co/s8FPfRzmec",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965505590077390877",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @manateelazycat: 一条FPC排线的故事，让你知道软件和硬件的差别\n\n微服是2024年8月份公开销售的，其实2023年10月份就可以卖了，但是当时卖之前晴天霹雳，硬件制造给我们软件团队好好的上了一课。… https://t.co/zoQUUx0FuH",
+      "expected_created_at": "Tue Sep 09 20:00:24 +0000 2025",
+      "expected_lang": "zh",
+      "expected_user": {
+        "id": "3178231",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 132730,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 39,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "expected_media": [
+        {
+          "type": "photo",
+          "id": "1965214319597285376",
+          "expected_url": "https://pbs.twimg.com/media/G0XYAvMbcAAgM59.jpg"
+        }
+      ],
+      "is_retweet": true,
+      "expected_retweet_text": "一条FPC排线的故事，让你知道软件和硬件的差别\n\n微服是2024年8月份公开销售的，其实2023年10月份就可以卖了，但是当时卖之前晴天霹雳，硬件制造给我们软件团队好好的上了一课。 https://t.co/zoQUUx0FuH",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965503985441542288",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "Yes. \n\nWhat it comes down to is this:\n\nDo you have more sympathy for those highly likely to commit murder or more for those at risk of being murdered?\n\nIf the former, you are a disgusting human being and yet so many on the radical left choose this!",
+      "expected_created_at": "Tue Sep 09 19:54:02 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 28286,
+        "favorite_count": 192542,
+        "reply_count": 5915,
+        "quote_count": 742
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "The big lie the Democrats told about violent crime is that it's \"systemic\" and therefore no one's really responsible. If the \"system\" is to blame then you fund a bunch of nonprofits that don't do anything besides give jobs to underqualified radicals. \n\nThe reality is that the",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965503128465539309",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @ScottAdamsSays: All data is fake",
+      "expected_created_at": "Tue Sep 09 19:50:37 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 2060,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "All data is fake",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965502943643468227",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "💯 hate crime",
+      "expected_created_at": "Tue Sep 09 19:49:53 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 42141,
+        "favorite_count": 259753,
+        "reply_count": 11676,
+        "quote_count": 1981
+      },
+      "is_retweet": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965502675816251558",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "This is insane @jaredpolis",
+      "expected_created_at": "Tue Sep 09 19:48:49 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 26989,
+        "favorite_count": 117720,
+        "reply_count": 4717,
+        "quote_count": 659
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "🚨BREAKING: Colorado Sheriff admits he was forced to release a ‘very dangerous’ inmate from jail because of state law that requires criminals found incompetent to stand trial to be released\n\n'He is a very dangerous person, and his actions, from what we can tell, were unprovoked.' https://t.co/FE17uoZb22",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965482696219787363",
+      "source_data_path": "note_tweet.note_tweet_results.result.text",
+      "expected_text": "We’ve open sourced the 𝕏 algorithm not because we think it’s smart, but to show it’s MANY flaws!\n\nEvery week, we try to make it better, not always succeeding, but to be as transparent we are with @CommunityNotes. \n\nLike democracy, it’s the worst algorithm, except for all the others.",
+      "expected_created_at": "Tue Sep 09 18:29:26 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "44196397",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 225767579,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 9891,
+        "favorite_count": 101125,
+        "reply_count": 5798,
+        "quote_count": 699
+      },
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213433_687388.json"
+    },
+    {
+      "tweet_id": "1965542705922277865",
+      "source_data_path": "note_tweet.note_tweet_results.result.text",
+      "expected_text": "Palantir CEO Alex Karp on if China:\n\n“It’s their job to destabilize us, it’s our job to be stable.\n\n“If you’re strong, there is no fight. If you’re in a fight, you’re not a martial artist.\n\nSame in business: if “you’re competing with someone, you’ve really fucked something up.”\n\nVia @theallinpod",
+      "expected_created_at": "Tue Sep 09 22:27:53 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "615786753",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 9639,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 326,
+        "favorite_count": 2923,
+        "reply_count": 76,
+        "quote_count": 40
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1965542638758604800",
+          "expected_url": "https://video.twimg.com/amplify_video/1965542638758604800/vid/avc1/886x492/4-dQupxN6nRpWoU4.mp4?tag=21",
+          "expected_bitrate": 2176000
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965877089011421215",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "BRC2.0 opens the door to decentralized apps and DeFi on Bitcoin.\n\n@DecryptMedia  covers the upgrade and what it means for the ecosystem 👇\n\nhttps://t.co/OL2c6TREQp",
+      "expected_created_at": "Wed Sep 10 20:36:36 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1106837919191445504",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 37146,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 14,
+        "favorite_count": 70,
+        "reply_count": 8,
+        "quote_count": 3
+      },
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965411900419891288",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "RT @lijigang_com: 伴随着AI coding，我认为会有两个群体受益：\n\n1.  35+的「老程序员」们。他们有多年手动Coding的「手感」（sense and taste），能进入真正的vibe coding状态，高手变成高高手。\n\n2. 新毕业的「小白」们…",
+      "expected_created_at": "Tue Sep 09 13:48:07 +0000 2025",
+      "expected_lang": "zh",
+      "expected_user": {
+        "id": "3178231",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 132730,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 33,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      },
+      "is_retweet": true,
+      "expected_retweet_text": "伴随着AI coding，我认为会有两个群体受益：\n\n1.  35+的「老程序员」们。他们有多年手动Coding的「手感」（sense and taste），能进入真正的vibe coding状态，高手变成高高手。\n\n2. 新毕业的「小白」们。他们是没被「污染」过的白纸，丢给他们任务和AI，且看年轻原生一代怎么趟出新的编程范式。",
+      "expected_retweet_user": {
+        "name": null,
+        "screen_name": null
+      },
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965973321117556949",
+      "source_data_path": "note_tweet.note_tweet_results.result.text",
+      "expected_text": "Elon posted 79 times today on X\n\n*breakdown*\n0:16 Charlie Kirk (12 posts)\n4:05 Tesla (3 posts)\n7:44 SpaceX\n9:27 Neuralink (1 post)\n9:44 xAI (2 posts)\n10:22 Working w Elon (1 post)\n10:44 Iryna Zarutska (32 posts)\n19:29 Politics (21 posts)\n29:39 Legacy Media (7 posts)\n\nIt's especially worth noting today that I create these videos in 24 hour windows, and so this one was from 3:30pm Sep 9th-4:10pm Sep 10th PST. Which means Charlie Kirk's life was taken only a few hours before I made this video. So do not interpret Elon's # of posts about that subject to be indicative of how much he cares about it. As there was only a few hours after it happened before I made this video.\n\nMy thoughts and prayers are with the Kirk family",
+      "expected_created_at": "Thu Sep 11 02:59:00 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "865059309570412544",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 10567,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 67,
+        "favorite_count": 848,
+        "reply_count": 46,
+        "quote_count": 5
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1965967931982086144",
+          "expected_url": "https://video.twimg.com/amplify_video/1965967931982086144/vid/avc1/1920x1080/Pr3dMdrURyc3AB2G.mp4?tag=21",
+          "expected_bitrate": 10368000
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965879163270869309",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "If you are praying for Charlie Kirk right now, \n\nJust type “Amen” https://t.co/vUKQJrvWyc",
+      "expected_created_at": "Wed Sep 10 20:44:51 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1546870999207010304",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 531590,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 5184,
+        "favorite_count": 47238,
+        "reply_count": 12242,
+        "quote_count": 516
+      },
+      "expected_media": [
+        {
+          "type": "photo",
+          "id": "1965879153342734336",
+          "expected_url": "https://pbs.twimg.com/media/G0g0rJ5W4AAV4H7.jpg"
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965810378534973889",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "Wall Street guy, with 3 PhD’s in finance, shorting Oracle watching it surge 40% on a double earnings miss https://t.co/AJnPp7FLlO",
+      "expected_created_at": "Wed Sep 10 16:11:31 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "105852422",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 664524,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 928,
+        "favorite_count": 14321,
+        "reply_count": 166,
+        "quote_count": 78
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1965810322586873859",
+          "expected_url": "https://video.twimg.com/amplify_video/1965810322586873859/vid/avc1/888x474/eNmwlPUyTPhzVbPp.mp4?tag=21",
+          "expected_bitrate": 832000
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1916221514455699680",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "Chargebacks Crushing Your Business? Crush Them Back.",
+      "expected_created_at": "Sat Apr 26 20:03:05 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1671883199151214592",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 3890,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 31,
+        "favorite_count": 375,
+        "reply_count": 11,
+        "quote_count": 3
+      },
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965924103203991903",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "Elon Musk, please upgrade your security to the highest level, build an Iron Man-style suit of armor to keep yourself safe\n\nThe future of Humanity depends on you and only you. https://t.co/FCoc7Olip1",
+      "expected_created_at": "Wed Sep 10 23:43:25 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1614879930885574656",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 132886,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 434,
+        "favorite_count": 9865,
+        "reply_count": 212,
+        "quote_count": 27
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1965924021159002112",
+          "expected_url": "https://video.twimg.com/ext_tw_video/1965924021159002112/pu/vid/avc1/786x720/qg-O1oLwFwAKprwx.mp4?tag=12",
+          "expected_bitrate": 2176000
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965869221549944916",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "If Charlie Kirk can get shot for speaking his mind, then Elon Musk could be shot at too. Tesla should also dedicate serious resources for his safety. For now, I hope he avoids public appearances. The U.S. MUST protect @elonmusk at all cost!\n\n https://t.co/ukMgc7ihF4",
+      "expected_created_at": "Wed Sep 10 20:05:21 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "985243593538338816",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 444433,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 6771,
+        "favorite_count": 89131,
+        "reply_count": 2013,
+        "quote_count": 334
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1907911642924347392",
+          "expected_url": "https://video.twimg.com/ext_tw_video/1907911642924347392/pu/vid/avc1/480x852/1J-lF1COJCbWs9JJ.mp4?tag=12",
+          "expected_bitrate": 950000
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1966002924469039264",
+      "source_data_path": "note_tweet.note_tweet_results.result.text",
+      "expected_text": "Elon Musk: The biggest magazine in Germany says I'm Enemy Number Two. I'm definitely upgrading my security.\n\n“I was just on the cover of the biggest magazine in Germany called Der Spiegel, which is like their Time Magazine, saying that I'm Enemy Number Two. I'm like, enemy number two of what? Democracy? I mean, I'm pro-democracy! All I'm literally trying to do is uphold the Constitution and ensure we have a free and fair election. I'm definitely upgrading my security.”\n\nTown Hall meeting in Pittsburgh, October 20, 2024",
+      "expected_created_at": "Thu Sep 11 04:56:38 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1591001290846388225",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 180650,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 464,
+        "favorite_count": 5688,
+        "reply_count": 129,
+        "quote_count": 17
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1966002703403761664",
+          "expected_url": "https://video.twimg.com/amplify_video/1966002703403761664/vid/avc1/1920x1080/_QRkO88Bf3laE88C.mp4?tag=21",
+          "expected_bitrate": 10368000
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965889591090753651",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "We don’t yet know what motivated the person who shot and killed Charlie Kirk, but this kind of despicable violence has no place in our democracy. Michelle and I will be praying for Charlie’s family tonight, especially his wife Erika and their two young children.",
+      "expected_created_at": "Wed Sep 10 21:26:17 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "813286",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 130653554,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 57306,
+        "favorite_count": 893334,
+        "reply_count": 64494,
+        "quote_count": 11447
+      },
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965914419369558495",
+      "source_data_path": "note_tweet.note_tweet_results.result.text",
+      "expected_text": "PAUSE.\n\nWho is the person behind Charlie Kirk and why is he making what appears to be a “signal” immediately preceding Charlie being shot. This is NOT a normal gesture any person would ever make. \n\nNote the first person tips their hat. But then pay attention to the individual in the black shirt directly behind him - crosses one arm and does some type of finger signal. \n\nThis could have been his security detail.\n\nWTH is going on here.",
+      "expected_created_at": "Wed Sep 10 23:04:57 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1113263772855091201",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 34489,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 8613,
+        "favorite_count": 46823,
+        "reply_count": 3490,
+        "quote_count": 797
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1965914342177546240",
+          "expected_url": "https://video.twimg.com/amplify_video/1965914342177546240/vid/avc1/886x1430/nJoxZnmdXMKOyucY.mp4?tag=21",
+          "expected_bitrate": 10368000
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965916664853315586",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "The first TikToker has over 800K followers. These people are beyond evil.\n\nMake them famous so the rest can see what POS looks like! https://t.co/oufLqCUw33",
+      "expected_created_at": "Wed Sep 10 23:13:52 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1511074777708085258",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 792932,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 8839,
+        "favorite_count": 25932,
+        "reply_count": 1338,
+        "quote_count": 470
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1965916591217930240",
+          "expected_url": "https://video.twimg.com/amplify_video/1965916591217930240/vid/avc1/720x1280/VBDg89RYuVf5nQVT.mp4?tag=21",
+          "expected_bitrate": 2176000
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "PURE EVIL: Moments after Charlie Kirk was assassinated in broad daylight, radical leftists on TikTok began celebrating.\n\nCharlie was a son, a husband, and a father. His life was taken—and they’re cheering.\n\nThese are the same people who preach “love and tolerance.”\n\nThey live https://t.co/xYqLAgIb4N",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965996091003797637",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "After they removed Charlie Kirk from the scene in Utah, some guy walked over to the crime scene and stole some hats. Some other guys asked him to get hats for them too.\n\nLaw enforcement/security was furious.\n\n(issuezqt on TT) https://t.co/Apeaoh28Wh",
+      "expected_created_at": "Thu Sep 11 04:29:29 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "32804484",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 347359,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 4203,
+        "favorite_count": 47117,
+        "reply_count": 3685,
+        "quote_count": 1003
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1965996040315650049",
+          "expected_url": "https://video.twimg.com/amplify_video/1965996040315650049/vid/avc1/782x1100/4OBWCsmWRnutbKax.mp4?tag=21",
+          "expected_bitrate": 10368000
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1966044672775561330",
+      "source_data_path": "note_tweet.note_tweet_results.result.text",
+      "expected_text": "The last 24 hours were quite devastating to my mental state, with the cold-blooded murders of Iryna and Charlie. Where are we heading? Why is violence increasingly the only way for so many people to “solve” problems? Something is broken in humanity and if we don't fix it, we'll soon find ourselves back in the Middle Ages, if not further back in history.",
+      "expected_created_at": "Thu Sep 11 07:42:31 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "959471389282578432",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 315929,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 105,
+        "favorite_count": 876,
+        "reply_count": 117,
+        "quote_count": 8
+      },
+      "expected_media": [
+        {
+          "type": "photo",
+          "id": "1966044667792809984",
+          "expected_url": "https://pbs.twimg.com/media/G0jLNXRXYAAQrRf.jpg"
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965882971917050332",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "America will never be the same. https://t.co/qByXlDji7i",
+      "expected_created_at": "Wed Sep 10 20:59:59 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1389913567671975937",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 1745486,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 1473,
+        "favorite_count": 12771,
+        "reply_count": 817,
+        "quote_count": 135
+      },
+      "expected_media": [
+        {
+          "type": "photo",
+          "id": "1965882957979127808",
+          "expected_url": "https://pbs.twimg.com/media/G0g4InRXEAAgXdY.jpg"
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965753630033899818",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "Coming Soon to Netflix https://t.co/jLORR2fXkg",
+      "expected_created_at": "Wed Sep 10 12:26:01 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1224185690713460736",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 1115486,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 29775,
+        "favorite_count": 343061,
+        "reply_count": 2424,
+        "quote_count": 896
+      },
+      "expected_media": [
+        {
+          "type": "photo",
+          "id": "1965753622009872384",
+          "expected_url": "https://pbs.twimg.com/media/G0fCgRPWAAAkiQK.jpg"
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965883488827253154",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "what we do next is very important https://t.co/i2t90ZOgv3",
+      "expected_created_at": "Wed Sep 10 21:02:02 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1711150832912347136",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 118526,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 23963,
+        "favorite_count": 290729,
+        "reply_count": 5621,
+        "quote_count": 896
+      },
+      "expected_media": [
+        {
+          "type": "photo",
+          "id": "1965883484540669952",
+          "expected_url": "https://pbs.twimg.com/media/G0g4nQ3akAABese.png"
+        },
+        {
+          "type": "photo",
+          "id": "1965883345549799424",
+          "expected_url": "https://pbs.twimg.com/media/G0g4fLFaMAAHNny.png"
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965974007238533411",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "Grateful to be named in this year's MIT TR35 at 33. Fourteen years ago, I was fortunate to be on Forbes 30 Under 30 at 19. The past 14 years have been about learning, failing, and striving. Innovation is a journey, not a moment.",
+      "expected_created_at": "Thu Sep 11 03:01:44 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "113822619",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 24684,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 5,
+        "favorite_count": 54,
+        "reply_count": 5,
+        "quote_count": 0
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "Yichao “Peak” Ji  developed Manus, one of the buzziest AI apps of the year, in the latest project that blends his technical prowess with killer consumer instincts. We named him as one of this year’s 35 Innovators Under 35.  https://t.co/2TJlDq6u4l",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965695938112127418",
+      "source_data_path": "note_tweet.note_tweet_results.result.text",
+      "expected_text": "Iryna Zarutska’s killer has a half-brother named Stacey Dejon Brown who shot and killed a White 65-year-old man in the face while he was walking home from work in 2012. He then used the Charlotte light rail system to flee the scene.\n\nTheir father, Decarlos Brown Sr., is also a criminal, with prior arrests for breaking and entering, felony conspiracy, larceny, and possession of a weapon on the University of North Carolina-Charlotte campus. \n\nFollow: @AFpost",
+      "expected_created_at": "Wed Sep 10 08:36:47 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1622588070246641666",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 271508,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 17542,
+        "favorite_count": 83752,
+        "reply_count": 4148,
+        "quote_count": 1796
+      },
+      "expected_media": [
+        {
+          "type": "photo",
+          "id": "1965695931468468224",
+          "expected_url": "https://pbs.twimg.com/media/G0eOCPOb0AAR0bZ.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1965695931464179712",
+          "expected_url": "https://pbs.twimg.com/media/G0eOCPNaYAAc_NP.jpg"
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965942904704348263",
+      "source_data_path": "note_tweet.note_tweet_results.result.text",
+      "expected_text": "Today was an inflection point. The assassination of Charlie Kirk, coming on the heels of Iryna Zarutska's murder, is the perfect storm.\n\nThere is no turning back from what happens now.\n\nThe Left gloats because they don't understand what is happening.\n\nToday will be shock.\n\nIn the coming days, people will realize that they must act, that they have been pushed and pushed and forced to act. The coming debate will be over HOW to act.\n\nBut it will happen. The paths are not good. One leads to violence, retaliation. The other? Nobody knows, but everyone is searching for a better answer and none of them are easy going. I hope we find one, but at the same time, this madness must end.\n\nThings will change forever. And it's going to sadly get worse before it gets better. Dark times.",
+      "expected_created_at": "Thu Sep 11 00:58:08 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "16906660",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 257701,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 393,
+        "favorite_count": 4231,
+        "reply_count": 129,
+        "quote_count": 9
+      },
+      "expected_media": [
+        {
+          "type": "photo",
+          "id": "1965942337789636608",
+          "expected_url": "https://pbs.twimg.com/media/G0huI-TaMAA2MRt.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1965942342223015941",
+          "expected_url": "https://pbs.twimg.com/media/G0huJO0aMAUWacP.jpg"
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965933882060259405",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "This photo says everything you will EVER NEED TO KNOW about the Democrat Party’s vision for America. Ironically this photo will actually be what will save the American dream. Because this is what Americans who are armed and ready will NO LONGER TOLERATE. https://t.co/UefBZZmjcs",
+      "expected_created_at": "Thu Sep 11 00:22:17 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "78523300",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 5019736,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 4514,
+        "favorite_count": 24057,
+        "reply_count": 707,
+        "quote_count": 112
+      },
+      "expected_media": [
+        {
+          "type": "photo",
+          "id": "1965933878633496576",
+          "expected_url": "https://pbs.twimg.com/media/G0hmclfbAAA5cKq.jpg"
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965974865204146225",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "A group of students began cheering after Charlie Kirk was shot. Their initial reaction wasn't fear or confusion, it was celebration after he got shot and bled to death.\n\nIt's indescribable how deep the spiritual rot in this country runs.\n\n https://t.co/pilQmMf5ha",
+      "expected_created_at": "Thu Sep 11 03:05:08 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1317012311262089216",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 167704,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 2270,
+        "favorite_count": 22555,
+        "reply_count": 225,
+        "quote_count": 65
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1965957684362133504",
+          "expected_url": "https://video.twimg.com/amplify_video/1965957684362133504/vid/avc1/1920x1440/qR8imlso6Gptlbna.mp4?tag=21",
+          "expected_bitrate": 10368000
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1966005226210562512",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "This is the kind of guy Charlie Kirk was https://t.co/W6F4CieHOP",
+      "expected_created_at": "Thu Sep 11 05:05:47 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1559650033686953990",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 135560,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 3934,
+        "favorite_count": 36421,
+        "reply_count": 415,
+        "quote_count": 338
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1966005199861944320",
+          "expected_url": "https://video.twimg.com/ext_tw_video/1966005199861944320/pu/vid/avc1/720x1280/a5mRSPYz4tSmYmAy.mp4?tag=12",
+          "expected_bitrate": 2176000
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965873259750240504",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "Charlie Kirk is dead. https://t.co/ygOglkJpGM",
+      "expected_created_at": "Wed Sep 10 20:21:23 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "2579571584",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 318356,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 37004,
+        "favorite_count": 333816,
+        "reply_count": 4858,
+        "quote_count": 2857
+      },
+      "expected_media": [
+        {
+          "type": "photo",
+          "id": "1965873256960860160",
+          "expected_url": "https://pbs.twimg.com/media/G0gvT8KXoAAnnFi.jpg"
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965883465641152937",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "How is Charlie Kirk pro life when he just died",
+      "expected_created_at": "Wed Sep 10 21:01:57 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1650022233916448768",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 293733,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 46377,
+        "favorite_count": 483597,
+        "reply_count": 1598,
+        "quote_count": 1827
+      },
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965891715119939701",
+      "source_data_path": "note_tweet.note_tweet_results.result.text",
+      "expected_text": "Once again, a bullet has silenced the most eloquent truth teller of an era. My dear friend Charlie Kirk was our country's relentless and courageous crusader for free speech. We pray for Erika and the children. Charlie is already in paradise with the angels. We ask his prayers for our country.",
+      "expected_created_at": "Wed Sep 10 21:34:44 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "337808606",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 5679181,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 76840,
+        "favorite_count": 591409,
+        "reply_count": 9452,
+        "quote_count": 1554
+      },
+      "expected_media": [
+        {
+          "type": "photo",
+          "id": "1965891709331533824",
+          "expected_url": "https://pbs.twimg.com/media/G0hAGAmXcAAAchg.jpg"
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965897930625396827",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "These people are sick.\n\nMake her famous: https://t.co/Yn1e3uuOiT",
+      "expected_created_at": "Wed Sep 10 21:59:25 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1849134537827037184",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 824367,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 47961,
+        "favorite_count": 197611,
+        "reply_count": 13583,
+        "quote_count": 3540
+      },
+      "expected_media": [
+        {
+          "type": "photo",
+          "id": "1965897924941950976",
+          "expected_url": "https://pbs.twimg.com/media/G0hFvzjXsAAvUnP.jpg"
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965992432107241635",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "What’s your dream LLM? 🥝  Qwen3-Next is coming soon 👀. Hope you like it!",
+      "expected_created_at": "Thu Sep 11 04:14:56 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1753339277386342400",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 109506,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 53,
+        "favorite_count": 981,
+        "reply_count": 66,
+        "quote_count": 12
+      },
+      "is_retweet": false,
+      "is_quoted": true,
+      "expected_quoted_text": "https://t.co/HbDdaZOO5L https://t.co/MtS1N60nqR",
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1966000232401088943",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "\"SpaceX Will Probably Do 90% of All Mass Launches to Orbit This Year — Elon Musk\" https://t.co/MdqieYyMte",
+      "expected_created_at": "Thu Sep 11 04:45:56 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1016059981907386368",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 1317285,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 24,
+        "favorite_count": 155,
+        "reply_count": 12,
+        "quote_count": 1
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1966000059809665024",
+          "expected_url": "https://video.twimg.com/amplify_video/1966000059809665024/vid/avc1/1280x720/PTDliWz-6XzaqqMN.mp4?tag=21",
+          "expected_bitrate": 2176000
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1965859975538028945",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "Charlie Kirk recently said to a Palestinian that there’s no such thing as Palestinians. Well now look… there’s no longer such a thing called Charlie Kirk.",
+      "expected_created_at": "Wed Sep 10 19:28:36 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "36511308",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 39821,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 66759,
+        "favorite_count": 479518,
+        "reply_count": 3850,
+        "quote_count": 2514
+      },
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1966021875261436236",
+      "source_data_path": "legacy.full_text",
+      "expected_text": "China’s robot dog just hauled 250kg up shaky stairs.  \n\nOne small step for the robot dog, but one giant leap for the robotic community. https://t.co/zKJM7WFoI4",
+      "expected_created_at": "Thu Sep 11 06:11:56 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1886969144031240192",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 138706,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 62,
+        "favorite_count": 377,
+        "reply_count": 29,
+        "quote_count": 9
+      },
+      "expected_media": [
+        {
+          "type": "video",
+          "id": "1966021813080829955",
+          "expected_url": "https://video.twimg.com/ext_tw_video/1966021813080829955/pu/vid/avc1/720x1280/fRzG-vSrvIM0YvPr.mp4?tag=12",
+          "expected_bitrate": 2176000
+        }
+      ],
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    },
+    {
+      "tweet_id": "1966002876930732178",
+      "source_data_path": "note_tweet.note_tweet_results.result.text",
+      "expected_text": "Before I left for San Francisco this time, a few friends told me not to stay in the center of the city at night, and not to leave valuables in the car to prevent the windows from being smashed, and to avoid homeless people when I encountered them, etc.\nThis America is getting weird.....",
+      "expected_created_at": "Thu Sep 11 04:56:27 +0000 2025",
+      "expected_lang": "en",
+      "expected_user": {
+        "id": "1158663850662813696",
+        "name": null,
+        "screen_name": null,
+        "followers_count": 13227,
+        "verified": false
+      },
+      "expected_stats": {
+        "retweet_count": 3,
+        "favorite_count": 54,
+        "reply_count": 7,
+        "quote_count": 0
+      },
+      "is_retweet": false,
+      "is_quoted": false,
+      "validation_checkpoints": {
+        "text_not_empty": true,
+        "has_user_info": true,
+        "timestamp_valid": true,
+        "media_urls_valid": true,
+        "retweet_data_complete": true
+      },
+      "source_file": "response_213337_350313.json"
+    }
+  ],
+  "validation_rules": {
+    "text_completeness": {
+      "description": "验证推文文本完整性",
+      "critical_fields": [
+        "expected_text",
+        "expected_created_at"
+      ]
+    },
+    "user_data_integrity": {
+      "description": "验证用户信息完整性",
+      "critical_fields": [
+        "expected_user.name",
+        "expected_user.screen_name"
+      ]
+    },
+    "media_accessibility": {
+      "description": "验证媒体文件URL有效性",
+      "critical_fields": [
+        "expected_media[].expected_url"
+      ]
+    },
+    "retweet_completeness": {
+      "description": "验证转推数据完整性",
+      "critical_fields": [
+        "expected_retweet_text",
+        "expected_retweet_user"
+      ]
+    }
+  },
+  "statistics": {
+    "total_tweets": 104,
+    "retweets": 37,
+    "quoted_tweets": 31,
+    "media_tweets": 34,
+    "valid_checkpoints": 103
+  }
+}

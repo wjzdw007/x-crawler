@@ -1,0 +1,22 @@
+{
+  "authentication": {
+    "cookies": {
+      "auth_token": "YOUR_AUTH_TOKEN_HERE",
+      "ct0": "YOUR_CT0_TOKEN_HERE"
+    },
+    "headers": {
+      "Authorization": "Bearer YOUR_BEARER_TOKEN_HERE",
+      "X-Csrf-Token": "YOUR_CSRF_TOKEN_HERE"
+    }
+  },
+  "settings": {
+    "requests_per_hour": 400,
+    "retry_attempts": 3,
+    "retry_delay": 5,
+    "timeout": 30
+  },
+  "targets": {
+    "daily_tweet_count": 100,
+    "timeline_types": ["recommended", "following"]
+  }
+}

@@ -36,31 +36,16 @@ jobs:
           python-version: '3.11'
           cache: 'pip'  # 缓存依赖加速构建
 
-      # 3. 安装系统依赖 (Playwright需要)
-      - name: 📦 Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y \
-            libnss3 \
-            libnspr4 \
-            libatk1.0-0 \
-            libatk-bridge2.0-0 \
-            libcups2 \
-            libdrm2 \
-            libxkbcommon0 \
-            libxcomposite1 \
-            libxdamage1 \
-            libxfixes3 \
-            libxrandr2 \
-            libgbm1 \
-            libasound2
-
-      # 4. 安装 Python 依赖
+      # 3. 安装 Python 依赖
       - name: 📚 Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          playwright install chromium
+
+      # 4. 安装 Playwright 和系统依赖
+      - name: 🎭 Install Playwright with dependencies
+        run: |
+          playwright install --with-deps chromium
 
       # 5. 配置环境变量 (从 GitHub Secrets)
       - name: ⚙️ Configure environment

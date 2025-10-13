@@ -182,7 +182,7 @@ jobs:
 
       # 方案 2: Telegram 通知 (推荐)
       - name: 📱 Send Telegram notification
-        if: failure() && secrets.TELEGRAM_BOT_TOKEN != ''
+        if: ${{ failure() && secrets.TELEGRAM_BOT_TOKEN != '' }}
         run: |
           MESSAGE="❌ *X Crawler 运行失败*
 
@@ -199,7 +199,7 @@ jobs:
 
       # 方案 3: 企业微信/钉钉/Bark (根据需要选择)
       - name: 📢 Send WeChat Work notification
-        if: failure() && secrets.WECHAT_WEBHOOK != ''
+        if: ${{ failure() && secrets.WECHAT_WEBHOOK != '' }}
         run: |
           curl -s -X POST "${{ secrets.WECHAT_WEBHOOK }}" \
             -H "Content-Type: application/json" \

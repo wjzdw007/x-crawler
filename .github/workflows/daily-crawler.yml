@@ -181,31 +181,43 @@ jobs:
             });
 
       # 方案 2: Telegram 通知 (推荐)
+      # 注意: 只在失败时运行，如果未配置 secret 则静默跳过
       - name: 📱 Send Telegram notification
-        if: ${{ failure() && secrets.TELEGRAM_BOT_TOKEN != '' }}
+        if: failure()
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          MESSAGE="❌ *X Crawler 运行失败*
+          if [ -n "$TELEGRAM_BOT_TOKEN" ]; then
+            MESSAGE="❌ *X Crawler 运行失败*
 
-          📅 时间: $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
-          🔗 [查看详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+            📅 时间: $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
+            🔗 [查看详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
 
-          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
-            -H "Content-Type: application/json" \
-            -d "{
-              \"chat_id\": \"${{ secrets.TELEGRAM_CHAT_ID }}\",
-              \"text\": \"${MESSAGE}\",
-              \"parse_mode\": \"Markdown\"
-            }"
+            curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+              -H "Content-Type: application/json" \
+              -d "{
+                \"chat_id\": \"${TELEGRAM_CHAT_ID}\",
+                \"text\": \"${MESSAGE}\",
+                \"parse_mode\": \"Markdown\"
+              }"
+          fi
 
       # 方案 3: 企业微信/钉钉/Bark (根据需要选择)
       - name: 📢 Send WeChat Work notification
-        if: ${{ failure() && secrets.WECHAT_WEBHOOK != '' }}
+        if: failure()
+        continue-on-error: true
+        env:
+          WECHAT_WEBHOOK: ${{ secrets.WECHAT_WEBHOOK }}
         run: |
-          curl -s -X POST "${{ secrets.WECHAT_WEBHOOK }}" \
-            -H "Content-Type: application/json" \
-            -d '{
-              "msgtype": "markdown",
-              "markdown": {
-                "content": "## 🚨 X Crawler 运行失败\n\n>时间: '"$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')"'\n\n[查看详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
-              }
-            }'
+          if [ -n "$WECHAT_WEBHOOK" ]; then
+            curl -s -X POST "$WECHAT_WEBHOOK" \
+              -H "Content-Type: application/json" \
+              -d '{
+                "msgtype": "markdown",
+                "markdown": {
+                  "content": "## 🚨 X Crawler 运行失败\n\n>时间: '"$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')"'\n\n[查看详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+                }
+              }'
+          fi

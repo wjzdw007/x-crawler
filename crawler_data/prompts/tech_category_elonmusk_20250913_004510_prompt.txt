@@ -1,0 +1,332 @@
+# LLM Prompt 保存记录
+生成时间: 2025-09-13 00:45:10
+总结类型: tech_category
+用户: @elonmusk
+推文数量: 8
+数据哈希: d950ec0c
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+你是一个专业的社交媒体分析师，负责分析X(Twitter)推文数据并生成有价值的总结报告。
+
+分析目标：tech_category总结
+数据来源：X推荐时间线
+分析时间：2025年09月13日
+
+请分析以下推文数据：
+
+推文数据分析 - 优化嵌套结构：
+
+以下是经过结构优化的推文数据，采用嵌套JSON格式便于理解推文间的复杂关系：
+
+```json
+{
+  "total_tweets": 8,
+  "sample_tweets": [
+    {
+      "id": "1966417806624518332",
+      "author": "@elonmusk",
+      "text": "RT @iAnonPatriot: THIS.. 🔥🔥 https://t.co/rkyJHk7YG3",
+      "timestamp": "Fri Sep 12 08:25:14 +0000 2025",
+      "media": [
+        "photo"
+      ],
+      "engagement": {
+        "retweets": 4144,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1966276253578568020",
+        "author": "@iAnonPatriot",
+        "text": "THIS.. 🔥🔥 https://t.co/rkyJHk7YG3",
+        "timestamp": "Thu Sep 11 23:02:45 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 4144,
+          "likes": 28798,
+          "replies": 470,
+          "quotes": 54
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966415517004230736",
+      "author": "@elonmusk",
+      "text": "RT @w_terrence: I'm heartbroken. Charlie Kirk passing away is a hard pill to swallow. \n\nI never imagined typing this out, \nit hurts so much…",
+      "timestamp": "Fri Sep 12 08:16:08 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 21968,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965904442529820852",
+        "author": "@w_terrence",
+        "text": "I'm heartbroken. Charlie Kirk passing away is a hard pill to swallow. \n\nI never imagined typing this out, \nit hurts so much. Things will never be the same without him. \n\nHe was a great friend to me, he treated me like a brother, opened doors for me and so many others and inspired us all with his unwavering spirit. \n\nHe leaves behind two kids and a wife who he cherished deeply. \n\nCharlie was a great American, fighting for what he believed in every day. \n\nRest in peace, brother. 💔",
+        "timestamp": "Wed Sep 10 22:25:18 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 21968,
+          "likes": 203626,
+          "replies": 3195,
+          "quotes": 405
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966400920243331350",
+      "author": "@elonmusk",
+      "text": "RT @Grummz: Asmongold's video is out. \"These people are f-ing evil\"\n\nHe's fired up and rips into the game companies.\n\n\"These people are pro…",
+      "timestamp": "Fri Sep 12 07:18:08 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 2396,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1966315358656270340",
+        "author": "@Grummz",
+        "text": "Asmongold's video is out. \"These people are f-ing evil\"\n\nHe's fired up and rips into the game companies.\n\n\"These people are protected... These are violent animals.\" https://t.co/n4t4TCn33O",
+        "timestamp": "Fri Sep 12 01:38:08 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 2396,
+          "likes": 20584,
+          "replies": 440,
+          "quotes": 79
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966387485044592888",
+      "author": "@elonmusk",
+      "text": "Yes",
+      "timestamp": "Fri Sep 12 06:24:44 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 19114,
+        "likes": 192424,
+        "replies": 4975,
+        "quotes": 431
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1966108273200763011",
+        "author": "@CharlotteCGill",
+        "text": "STOP CALLING NORMAL PEOPLE FAR RIGHT",
+        "timestamp": "Thu Sep 11 11:55:15 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 6970,
+          "likes": 62317,
+          "replies": 1985,
+          "quotes": 513
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966383327138725961",
+      "author": "@elonmusk",
+      "text": "RT @SecRubio: The political persecutions by sanctioned human rights abuser Alexandre de Moraes continue, as he and others on Brazil's supre…",
+      "timestamp": "Fri Sep 12 06:08:13 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 17969,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1966257934129864715",
+        "author": "@SecRubio",
+        "text": "The political persecutions by sanctioned human rights abuser Alexandre de Moraes continue, as he and others on Brazil's supreme court have unjustly ruled to imprison former President Jair Bolsonaro.\n\nThe United States will respond accordingly to this witch hunt.",
+        "timestamp": "Thu Sep 11 21:49:57 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 17969,
+          "likes": 83692,
+          "replies": 15968,
+          "quotes": 2585
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966374889390223601",
+      "author": "@elonmusk",
+      "text": "RT @FBISaltLakeCity: The FBI is releasing video of the shooter who murdered Charlie Kirk at Utah Valley University on September 10, 2025. F…",
+      "timestamp": "Fri Sep 12 05:34:41 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 11643,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1966320840544227680",
+        "author": "@FBISaltLakeCity",
+        "text": "The FBI is releasing video of the shooter who murdered Charlie Kirk at Utah Valley University on September 10, 2025. Following the shooting, the individual jumps from a rooftop and runs away from the location. Trace evidence collected from the rooftop includes shoe impressions, a forearm imprint, and a palm print. The shooter's weapon and ammunition were recovered from a wooded area near the university. The full video can be viewed at https://t.co/BIzOcmmFqQ.",
+        "timestamp": "Fri Sep 12 01:59:55 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 11643,
+          "likes": 56834,
+          "replies": 4600,
+          "quotes": 741
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966297078449188942",
+      "author": "@elonmusk",
+      "text": "It has indeed come to this",
+      "timestamp": "Fri Sep 12 00:25:30 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 36251,
+        "likes": 273138,
+        "replies": 6959,
+        "quotes": 841
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1966288413939659079",
+        "author": "@SwipeWright",
+        "text": "This needed an update. https://t.co/Pb7kuP7NGZ",
+        "timestamp": "Thu Sep 11 23:51:04 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 16847,
+          "likes": 88759,
+          "replies": 1695,
+          "quotes": 1318
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966296822680531288",
+      "author": "@elonmusk",
+      "text": "RT @jk_rowling: If you believe free speech is for you but not your political opponents, you're illiberal.\n\nIf no contrary evidence could ch…",
+      "timestamp": "Fri Sep 12 00:24:29 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 78331,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1966256971134234678",
+        "author": "@jk_rowling",
+        "text": "If you believe free speech is for you but not your political opponents, you're illiberal.\n\nIf no contrary evidence could change your beliefs, you're a fundamentalist.\n\nIf you believe the state should punish those with contrary views, you're a totalitarian.\n\nIf you believe political opponents should be punished with violence or death, you're a terrorist.",
+        "timestamp": "Thu Sep 11 21:46:07 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 78331,
+          "likes": 378699,
+          "replies": 7160,
+          "quotes": 3840
+        },
+        "type": "original"
+      }
+    }
+  ],
+  "structure_info": {
+    "original_tweets": 0,
+    "retweets": 6,
+    "quote_tweets": 2,
+    "complex_retweets": 0
+  }
+}
+```
+
+数据结构说明：
+- type: 推文类型 (original/retweet/quote_tweet)
+- original_content: 转推的原始内容
+- quoted_content: 引用的推文内容
+- engagement: 互动数据 (retweets/likes/replies/quotes)
+- media: 媒体类型列表 (photo/video等)
+
+完整数据统计：
+总推文数：8
+原创推文：2
+转推：6
+含媒体：1
+
+
+请按以下结构生成总结报告：
+
+## 📊 数据概览
+- 分析时间段和数据量
+- 推文类型分布（原创/转推/媒体等）
+
+## 🔥 热门话题
+- 识别最受关注的话题和关键词
+- 分析高互动推文的共同特征
+
+## 📈 趋势分析  
+- 用户行为模式
+- 内容类型偏好
+- 互动数据洞察
+
+## 💡 关键洞察
+- 主要发现和趋势
+- 值得关注的内容或账户
+- 数据驱动的建议
+
+## 📝 推文精选
+选择3-5条最具代表性或价值的推文进行深度分析
+
+要求：
+1. 使用中文输出
+2. 保持客观分析，基于数据说话
+3. 突出实用价值和洞察
+4. 格式清晰，便于阅读
+5. 避免重复和废话
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: 用户@elonmusk的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

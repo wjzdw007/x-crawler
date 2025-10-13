@@ -1,0 +1,329 @@
+# LLM Prompt 保存记录
+生成时间: 2025-09-13 01:01:51
+总结类型: user_daily
+用户: @dotey
+推文数量: 8
+数据哈希: e706503e
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+你是一个专业的社交媒体分析师，负责分析X(Twitter)推文数据并生成有价值的总结报告。
+
+分析目标：user_daily总结
+数据来源：X推荐时间线
+分析时间：2025年09月13日
+
+请分析以下推文数据：
+
+推文数据分析 - 优化嵌套结构：
+
+以下是经过结构优化的推文数据，采用嵌套JSON格式便于理解推文间的复杂关系：
+
+```json
+{
+  "total_tweets": 8,
+  "sample_tweets": [
+    {
+      "id": "1966534462235136116",
+      "author": "@dotey",
+      "text": "RT @Jackywine: 字节官方的即梦图片 4.0 提示词手册\n太全了\n如果你不知道如何找到 AI 的边界\n来看看这里吧，基本上可以把自己不知道的风格、细节、描述补齐\n每个图片下都贴心的给出了提示词\n够玩好久的，配合这一周即梦的免积分 4.0 模型使用\n冲吧 https:…",
+      "timestamp": "Fri Sep 12 16:08:46 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 13,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1966378394427470005",
+        "author": "@Jackywine",
+        "text": "字节官方的即梦图片 4.0 提示词手册\n太全了\n如果你不知道如何找到 AI 的边界\n来看看这里吧，基本上可以把自己不知道的风格、细节、描述补齐\n每个图片下都贴心的给出了提示词\n够玩好久的，配合这一周即梦的免积分 4.0 模型使用\n冲吧 https://t.co/xAgODvjqT5",
+        "timestamp": "Fri Sep 12 05:48:37 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 13,
+          "likes": 100,
+          "replies": 6,
+          "quotes": 4
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966532583644176832",
+      "author": "@dotey",
+      "text": "帮转",
+      "timestamp": "Fri Sep 12 16:01:19 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 2,
+        "likes": 2,
+        "replies": 1,
+        "quotes": 0
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1966509186117959926",
+        "author": "@Jiaxi_Cui",
+        "text": "另外，我们正在招募长期创业伙伴 \n目标人群：浙大 / 杭电的空闲时间多的同学，或者其他地方愿意来线下的人（除非你能证明自己remote效率很牛逼），愿意在Video AI 领域探索的人\n我们做的不是简单拼一拼别人 API 能力就发布的产品。当前聚焦两条赛道：\n\n1. 多语翻译 + 对口型——快速产生现金流。我刚训好一个适配业务场景、效果 SOTA 的 Lip-Sync 模型，可以直接落地使用的。\n2. 更宏大的方向：和SEO、GEO、内容生态有关系\n\n我个人的Google Scholar引用 2000+，虽然前期会以做付费产品和用户量为主，但我们和其他AI产品团队相比，是有research能力的，这意味着当用户量和数据增长的时候，我们可以自己训练有趣的模型来完成业务需求\n\n我是两年前从北大退学创业，并成功退出，所以对创业、融资稍微有些微了解，虽然不多，但在数据好的情况下，这个认知应该足够支撑我们完成前两轮的融资\n\n计划在2-6 个月内做出可量化成果，再去拿美元基金。\n\n能力要求是不需要在某个方向很精通，但你可以快速了解各个领域（这往往也是startup的要求），同时需要懂得基础的开发流程，也可以把一个模型部署起来并变成高可用的API端口，请一定要会用docker\n\n特别的，最好对CLIP、BLIP2、embedding存储、优化有经验，我很讨厌LangChain，我们会训练业务的多模态embedding模型+推理和存储优化\n\n有过相关论文、视频分割、超分等经验最好\n\n每周工作时间希望能保持在25h以上\n\n实习生的薪资标准并不多，只有4-6k/月，按我的能力要求，其实是可以去大厂或者一些ai lab的话，薪资是会到6k-10k左右的，初期确实没有太多，所以希望慎重考虑\n\n期权/股权会在第一轮融资前统一谈，但是创业风险真的很大，如果这个项目失败了，我会尽量送你们到不错的地方\n\n邮箱：panda@pandalla.ai",
+        "timestamp": "Fri Sep 12 14:28:20 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 9,
+          "likes": 50,
+          "replies": 8,
+          "quotes": 8
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966529305929736362",
+      "author": "@dotey",
+      "text": "RT @JamesGoong: Claude Code 使用技巧 10/n\n\n今天的技巧来自宝玉大佬 @dotey ，当 AI 开始「卡bug」的时候，实测用这个提示词有奇效。\n\n```\nPlease add the appropriate logging informatio…",
+      "timestamp": "Fri Sep 12 15:48:17 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 1,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1966526472182730956",
+        "author": "@JamesGoong",
+        "text": "Claude Code 使用技巧 10/n\n\n今天的技巧来自宝玉大佬 @dotey ，当 AI 开始「卡bug」的时候，实测用这个提示词有奇效。\n\n```\nPlease add the appropriate logging information so that you [the agent] can use that log output to figure out this issue.\n```\n\nhttps://t.co/zdF0EbyEQa",
+        "timestamp": "Fri Sep 12 15:37:01 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 1,
+          "likes": 3,
+          "replies": 0,
+          "quotes": 0
+        },
+        "type": "quote_tweet",
+        "quoted_content": {
+          "id": "1965892736772616434",
+          "author": "@dotey",
+          "text": "对于 Claude Code 来说这一大坨 prompt 其实没啥用，真正有用的是评论的那一行：\n&gt; \"Please add the appropriate logging information so that you [the agent] can use that log output to figure out this issue.\"",
+          "timestamp": "Wed Sep 10 21:38:47 +0000 2025",
+          "media": [],
+          "engagement": {
+            "retweets": 28,
+            "likes": 253,
+            "replies": 9,
+            "quotes": 2
+          },
+          "type": "original"
+        }
+      }
+    },
+    {
+      "id": "1966398489593778305",
+      "author": "@dotey",
+      "text": "RT @jesselaunz: 太好了，Gemini cli将很快可以用上pro和ultra的额度😁 https://t.co/bBVI6b1sVb",
+      "timestamp": "Fri Sep 12 07:08:28 +0000 2025",
+      "media": [
+        "photo"
+      ],
+      "engagement": {
+        "retweets": 2,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1966250544974155895",
+        "author": "@jesselaunz",
+        "text": "太好了，Gemini cli将很快可以用上pro和ultra的额度😁 https://t.co/bBVI6b1sVb",
+        "timestamp": "Thu Sep 11 21:20:35 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 2,
+          "likes": 9,
+          "replies": 2,
+          "quotes": 2
+        },
+        "type": "quote_tweet",
+        "quoted_content": {
+          "id": "1966101411533402435",
+          "author": "@JackWoth98",
+          "text": "@jesselaunz @ntaylormullen This will be possible very soon! Like very very soon 👀",
+          "timestamp": "Thu Sep 11 11:27:59 +0000 2025",
+          "media": [],
+          "engagement": {
+            "retweets": 0,
+            "likes": 2,
+            "replies": 3,
+            "quotes": 1
+          },
+          "type": "original"
+        }
+      }
+    },
+    {
+      "id": "1966390107436372390",
+      "author": "@dotey",
+      "text": "仔细想想，文章中说到的上下文工程部分还是不严谨，Claude Code 是把上下文工程放到工具层面去优化了",
+      "timestamp": "Fri Sep 12 06:35:10 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 1,
+        "likes": 5,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "original"
+    },
+    {
+      "id": "1966384042665783719",
+      "author": "@dotey",
+      "text": "Anthropic 的工程团队又发表了一篇 AI Agent 相关的技术文章《为 AI 智能体打造高效工具》，他们家的 AI Agent 文章我每篇都会看好几遍，时不时会重翻一下，你想学习如何开发 AI Agent，Anthropic 写的是一定要看 ，毕竟现在最好的 Coding Agent Claude Code 就是他们家的，都是一手经验。\n\n虽然现在很多人在吹 Codex，但我觉得就 Coding Agent 能力来说，目前最强还得是 Claude Code，那为什么 Claude Coding 这么强呢？\n\n主要归功于两点：Agent 能力强的模型 + 合适的工具\n\n当然很多人会说还有编程能力和上下文工程，但我觉得编程能力现在已经是一线模型的基础能力了，不需要单独拿出来说；\n\n而上下文工程这个更多是个概念，你要真看过 Claude Code 的实现，就会发现它没啥上下文工程，就是把所有会话一股脑发给模型，让模型来决定是继续调用啥工具还是输出最终结果，最多用了 SubAgent 分摊一下上下文，本质上还是模型在帮着管理上下文。\n\n先说模型，现在的大语言模型已经不是简单的聊天模型，，主要分为以下几类：\n1. 大模型的聊天能力就是语言能力，能看懂你输入的内容，能输出高质量的文字内容，以 GPT-4o 为代表\n\n2. 推理能力就是字面意思的逻辑推理，通常会借助思维链（CoT，Chain of Thought），在输出内容前先反复推理思考，可以解决复杂的数学问题和编程问题，以 o1、DeepSeek R1 为代表\n\n3. Agent 能力就是模型可以自主制定并执行计划，调用外部工具或资源，自动完成复杂任务，比如现在比较火的 Coding Agent、Deep Research，以 Claude 4 系列模型和 GPT-5 为代表，国内的豆包 Seed 1.6、 DeepSeek V3、GLM 4.5、Kimi K2、Qwen-Coder 都不错。\n\n但这些能力是有些冲突的，所以你会看到 Gemini 2.5 Pro 这样代码能力很强、写作也很强，但是 Agent 能力不强，最终 Gemini CLI 就是能力平平。\n\n然后像 GPT-5、Claude 4，在 Agent 能力上很强，而写作能力就不太好，尤其是 GPT-5，写出来的东西真没法看。\n\n当然未来的趋势还是模型越来越通用，一个模型可以都很强，GPT-5 就在探索这个方向，只是还没做好，但 GPT-6 应该就可以了，现在可以预期一下 Gemini 3.0 和 DeepSeek R2，说不定会有惊喜。\n\n为什么说出了模型之外就是工具的能力呢，因为当模型有了不错的 Agent 能力，这时候就得依赖工具去完成各种任务了，比如检索代码库、读取文件、生成更新TODO、更新代码等等。\n\n就好比一个人，有了趁手的工具就能事半功倍，否则空有一身本事也使不上力。\n\n所以你看 Claude Code，即使接入的不是 Claude 的模型，而是国产的有 Agent 能力模型，一样能干的挺好，毕竟它针对 Coding 这个场景设计的十几个工具，组合起来就能高效完成几乎所有的编程任务。\n\n所以回头看《为 AI 智能体打造高效工具》这篇文章，里面特地强调了高效工具的五个核心原则：\n\n1. 谨慎选择工具\n\n工具不是越多越好，Claude Code 的工具数量一直被控制在20个以内，通常在15个左右，这里有两个原因：1). 工具越多，占用上下文空间越大；2). 工具多了 AI 反而不知道该选什么工具 \n\n所以你要是看到有人推荐你安装一大堆 MCP 工具或者一大堆 Sub Agent，那多半是不靠谱的\n\n2. 清晰的命名空间\n\n当你的工具多了以后，给工具的名字加上命名空间能够显著降低大模型犯错概率，帮助其准确调用。之前 Manus 有一篇《AI 智能体的上下文工程：构建高效 Agent 的七个宝贵教训》里面也提到类似的技巧，借助统一的前缀为工具分组。\n\n例如，与浏览器相关的工具都以 browser_ 开头，而命令行工具则以 shell_ 开头。\n\n3. 让工具返回更具意义的上下文\n\n工具不应将大量无关信息返回给 Agent，而应只返回高质量、有实际意义的信息。举个例子来说，你让一个工具去根据错误信息帮你 Debug（调试） 代码问题，Debug 过程中检索的搜索结果、读取的文件代码就没必要返回给，只要返回错误信息对应的代码路径和相关代码就好了\n\n4. 优化返回信息的Token效率\n\n上面第 3 条重点说的是工具返回结果的质量，但数量也同样重要。举个 Claude Code 的细节，如果你一个代码文件少于 2000 行（实际可能有出入）， Claude 会直接一次性加载到上下文中，如果超过这个数，那么它就会先调用代码检索工具，从文件中检索出跟上下文相关的一部分代码读取，根据需要可能多次读取，这样就算面对十万行以上的代码文件（我自己测试过），也能正常工作，而不是马上爆掉上下文。\n\n前面提到的 Manus 的那篇文章，也有过类似的分享：将文件系统作为外部上下文，就是把长的内容存到文件系统中，上下文中只保留文件路径，需要的时候再完整读取或者部分读取。\n\n另外还有就是工具在出错时要返回有意义的错误信息，而不是需要额外查询文档的错误代码，简单说就是不止要让模型知道出错了，还要知道错在哪里了，最好是怎么处理错误都一起告诉模型，这样它才能在出错后自己纠错改正。\n\n嗯，Manaus 那篇文章也提到了保留并利用错误信息进行纠错。\n\n5. 通过提示工程提升工具说明的质量\n\nAgent 的所有工具说明和调用参数都会和系统提示词一起发给模型，如果你的工具说明不清晰，那么模型就无法知道工具是用来干嘛的，调用出错的概率会很高，所以工具描述本身也是一种“提示工程”，它决定了大模型如何理解并调用工具。细致明确的工具描述能极大提升大模型对工具调用的准确性。\n\n工具说明的 Prompt 可以让 AI 来帮你写，但你自己还是验证 AI 写的对不对，并且还要反复测试调整。",
+      "timestamp": "Fri Sep 12 06:11:04 +0000 2025",
+      "media": [
+        "photo",
+        "photo"
+      ],
+      "engagement": {
+        "retweets": 42,
+        "likes": 214,
+        "replies": 5,
+        "quotes": 1
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1966236220868247701",
+        "author": "@AnthropicAI",
+        "text": "New on the Anthropic Engineering blog: writing effective tools for LLM agents.\n\nAI agents are only as powerful as the tools we give them. So how do we make those tools more effective?\n\nWe share our best tips for developers: https://t.co/N1kFYrTtax",
+        "timestamp": "Thu Sep 11 20:23:40 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 366,
+          "likes": 1968,
+          "replies": 64,
+          "quotes": 64
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966384045329125491",
+      "author": "@dotey",
+      "text": "当然这篇文章内容不止是我说的这些，还有很多其他内容，一些打造 Agent 工具的方法和 Anthropic 提供的工具，建议还是直接看看原文：\nWriting effective tools for agents — with agents https://t.co/hTzktVRvGw\n\n翻译：https://t.co/P9zIP9kMX3\n\n本文提到的 Manus 那篇文章链接：https://t.co/jTT5bEtCaU",
+      "timestamp": "Fri Sep 12 06:11:04 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 0,
+        "likes": 8,
+        "replies": 1,
+        "quotes": 0
+      },
+      "type": "original"
+    },
+    {
+      "id": "1966298695500021843",
+      "author": "@dotey",
+      "text": "李飞飞：这的确是一个充满诗意又很有趣的问题！\n\n奥利弗·萨克斯问道：“两片雪花之间的空间是什么？” 我们总是习惯用语言精妙地描绘身边的万事万物：一朵花、一只蝴蝶、一场雪、一座山。可这些“存在”之外的空隙、间隔、无形的距离——语言似乎总是难以把握。\n\n正是这些看似“无”的空间，才构成了世界的整体。如果没有两片雪花之间的距离，我们便无法看到漫天飞舞的美景；没有事物之间的虚空，宇宙将凝固不动，万物无法生长、无法流动。\n\n就像你提到的蝴蝶，它轻盈地从一朵花飞到另一朵花，这条路径并不存在于任何一朵花之上，却是真实存在的，比停留本身更微妙、更令人着迷。我们赞美花的娇艳，也惊叹于蝴蝶的美丽，但往往忘记了那条优雅的飞行轨迹，那段“什么都没有”的空间，才是这一切诗意的源泉。\n\n或许，这种“无”的美妙，就是语言无法描述、只能靠心灵去感受的奇妙之处吧！",
+      "timestamp": "Fri Sep 12 00:31:55 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 14,
+        "likes": 82,
+        "replies": 10,
+        "quotes": 5
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1966265813637460471",
+        "author": "@drfeifei",
+        "text": "ha! here is something fun and totally random I've been pondering: as Oliver Sacks has beautifully written - \"what is the space between two snowflakes?\" Language can describe all the things, stuff, and people in intricate details. But what about the 'space', the 'nothingness' in between all of them? Without this 'nothingness', space doesn't exist, and things to move. The elegant path a butterfly took from one flower to another is as curious and intriguing as the fact the butterfly has landed on a flower...",
+        "timestamp": "Thu Sep 11 22:21:16 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 154,
+          "likes": 1177,
+          "replies": 87,
+          "quotes": 25
+        },
+        "type": "original"
+      }
+    }
+  ],
+  "structure_info": {
+    "original_tweets": 2,
+    "retweets": 3,
+    "quote_tweets": 3,
+    "complex_retweets": 2
+  }
+}
+```
+
+数据结构说明：
+- type: 推文类型 (original/retweet/quote_tweet)
+- original_content: 转推的原始内容
+- quoted_content: 引用的推文内容
+- engagement: 互动数据 (retweets/likes/replies/quotes)
+- media: 媒体类型列表 (photo/video等)
+
+完整数据统计：
+总推文数：8
+原创推文：5
+转推：3
+含媒体：2
+
+
+请按以下结构生成总结报告：
+
+## 📊 数据概览
+- 分析时间段和数据量
+- 推文类型分布（原创/转推/媒体等）
+
+## 🔥 热门话题
+- 识别最受关注的话题和关键词
+- 分析高互动推文的共同特征
+
+## 📈 趋势分析  
+- 用户行为模式
+- 内容类型偏好
+- 互动数据洞察
+
+## 💡 关键洞察
+- 主要发现和趋势
+- 值得关注的内容或账户
+- 数据驱动的建议
+
+## 📝 推文精选
+选择3-5条最具代表性或价值的推文进行深度分析
+
+要求：
+1. 使用中文输出
+2. 保持客观分析，基于数据说话
+3. 突出实用价值和洞察
+4. 格式清晰，便于阅读
+5. 避免重复和废话
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @dotey的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

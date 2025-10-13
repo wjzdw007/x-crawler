@@ -1,0 +1,75 @@
+name: Manual Summary Generator
+
+# 仅手动触发 - 用于为历史数据生成总结
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: '指定日期 (格式: YYYYMMDD，留空表示昨天)'
+        required: false
+        default: ''
+      force:
+        description: '强制覆盖已有总结'
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  generate-summaries:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 📚 Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: ⚙️ Configure environment
+        run: |
+          cat > .env << EOF
+          OPENROUTER_API_KEY=${{ secrets.OPENROUTER_API_KEY }}
+          OPENAI_MODEL=${{ secrets.OPENAI_MODEL }}
+          DATA_DIR=crawler_data
+          EOF
+
+      - name: 🤖 Generate summaries
+        run: |
+          FORCE_FLAG=""
+          if [ "${{ inputs.force }}" = "true" ]; then
+            FORCE_FLAG="--force"
+          fi
+
+          if [ -z "${{ inputs.date }}" ]; then
+            # 生成昨天的总结
+            python run_crawler.py --user-summaries $FORCE_FLAG
+          else
+            # 生成指定日期的总结
+            python -c "
+          from crawler import XCrawler
+          crawler = XCrawler()
+          crawler.generate_user_summaries_for_date('${{ inputs.date }}', force_overwrite=${{ inputs.force }})
+            "
+          fi
+
+      - name: 💾 Commit summaries
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          git add crawler_data/user_summaries/
+
+          if git diff --staged --quiet; then
+            echo "没有新总结需要提交"
+          else
+            git commit -m "🤖 生成总结: ${{ inputs.date || '昨天' }}"
+            git push
+          fi

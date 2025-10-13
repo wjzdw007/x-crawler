@@ -1,0 +1,2870 @@
+# LLM Prompt 保存记录
+生成时间: 2025-09-13 00:53:08
+总结类型: daily
+用户: @unknown
+推文数量: 500
+数据哈希: 005773bb
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+你是一个专业的社交媒体分析师，负责分析X(Twitter)推文数据并生成有价值的总结报告。
+
+分析目标：daily总结
+数据来源：X推荐时间线
+分析时间：2025年09月13日
+
+请分析以下推文数据：
+
+推文数据分析 - 优化嵌套结构：
+
+以下是经过结构优化的推文数据，采用嵌套JSON格式便于理解推文间的复杂关系：
+
+```json
+{
+  "total_tweets": 100,
+  "sample_tweets": [
+    {
+      "id": "1965910441357619459",
+      "author": "@elonmusk",
+      "text": "RT @JDVance: This is such a good point. If you actually watch Charlie’s events—as opposed to the fake summaries—they are one of the few pla…",
+      "timestamp": "Wed Sep 10 22:49:08 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 43673,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965874716071305285",
+        "author": "@JDVance",
+        "text": "This is such a good point. If you actually watch Charlie’s events—as opposed to the fake summaries—they are one of the few places with open and honest dialogue between left and right.  He would answer any question and talk to everyone.",
+        "timestamp": "Wed Sep 10 20:27:11 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 43673,
+          "likes": 365532,
+          "replies": 5707,
+          "quotes": 691
+        },
+        "type": "quote_tweet",
+        "quoted_content": {
+          "id": "1965859468270346468",
+          "author": "@William_E_Wolfe",
+          "text": "This gets even worse when you consider that Charlie Kirk—more than anyone else in America on the right or the left—built his platform making a good faith effort to model civil poltical discourse and debate in the public square. \n\nHis entire project was built on reaching across the divide and using speech, not violence, to address and resolve the issues!",
+          "timestamp": "Wed Sep 10 19:26:35 +0000 2025",
+          "media": [],
+          "engagement": {
+            "retweets": 32725,
+            "likes": 210379,
+            "replies": 3191,
+            "quotes": 1247
+          },
+          "type": "original"
+        }
+      }
+    },
+    {
+      "id": "1965908050893815888",
+      "author": "@elonmusk",
+      "text": "RT @TheCriticalDri2: Whether you agreed with him or not, Charlie Kirk is dead purely because some people didn't like what he had to say. Th…",
+      "timestamp": "Wed Sep 10 22:39:38 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 35115,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965888970111561980",
+        "author": "@TheCriticalDri2",
+        "text": "Whether you agreed with him or not, Charlie Kirk is dead purely because some people didn't like what he had to say. That should outrage every single one of us.",
+        "timestamp": "Wed Sep 10 21:23:49 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 35115,
+          "likes": 307504,
+          "replies": 5150,
+          "quotes": 802
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965894641028575290",
+      "author": "@dotey",
+      "text": "因为对于 Agent 来说，它有一套已经训练好的解决bug的流程和步骤，相对来说已经是通用和最优了，加上这一坨提示词并不会让它更好用，但是提醒它输出 log，能帮助 Agent 快速定位到为题所在，反而有更好的效果。Agent 和人一样也需要反馈的。",
+      "timestamp": "Wed Sep 10 21:46:21 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 1,
+        "likes": 33,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "original"
+    },
+    {
+      "id": "1965892736772616434",
+      "author": "@dotey",
+      "text": "对于 Claude Code 来说这一大坨 prompt 其实没啥用，真正有用的是评论的那一行：\n&gt; \"Please add the appropriate logging information so that you [the agent] can use that log output to figure out this issue.\"",
+      "timestamp": "Wed Sep 10 21:38:47 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 29,
+        "likes": 256,
+        "replies": 9,
+        "quotes": 2
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965759715826077976",
+        "author": "@mattshumer_",
+        "text": "Incredibly powerful Claude Code prompt when dealing with a pesky bug:\n\nI am experiencing the following bug:\n\n<bug>\n[explain_bug_here]\n</bug>\n\nI need your help to identify the exact cause of this bug and implement an effective solution. To do this, carefully follow the workflow below, in this specific order:\n\nWorkflow:\n\nStep 1: Clarification (if needed)\n- If any part of this prompt is unclear or confusing, ask clarifying questions before proceeding.\n- Do not ask questions unnecessarily… only ask if essential information is missing.\n\nStep 2: Deeply Understand the Issue (Ultrathink)\n- Carefully review and analyze the entire relevant codebase.\n- Trace through the code step-by-step until you fully understand the bug and all relevant context.\n- Continue analyzing until you feel completely confident in your understanding. If in doubt, research more deeply. It’s better to over-research than under-research.\n\nStep 3: Special Case (if the cause is extremely obvious)\n- If, after completing Step 2, you identify the root cause with extremely high confidence (95%+ certainty), explicitly state this clearly. Be realistic here. Do NOT be overconfident.\n- In this scenario, instead of generating unrelated causes (see below for context), propose multiple practical variations of fixes for this single, clearly identified cause.\n- Then proceed directly to Step 7 (Implementation), creating separate sub-agents and git worktrees for each variation, and implementing each fix independently.\n\nStep 4: Identify Possible Causes (if cause is not extremely obvious)\n- Thoughtfully generate a comprehensive list of at least 20 plausible causes for the bug.\n- Be thorough. Explore various angles, even ones that initially seem less likely.\n\nStep 5: Refine and Prioritize Causes\n- Carefully review your list from Step 4.\n- Remove theories that don’t hold up upon closer analysis.\n- Combine related or overlapping theories into clearer, more likely scenarios.\n- Add any additional theories you may have initially missed.\n- Clearly rewrite and finalize this refined list.\n\nStep 6: Rank by Likelihood\n- Rank your refined theories clearly and explicitly, ordering them from most likely to least likely based on the probability of each theory being the true root cause.\n\nStep 7: Propose Solutions\n- For each of the top 10 most likely causes, clearly outline a practical and actionable solution to fix the issue.\n\nStep 8: Implement Solutions Using Sub-agents\n- For each of these top 10 cause/solution pairs (or multiple variations in the Special Case scenario), create a separate sub-agent, each with its own git worktree.\n- Each sub-agent should clearly understand the specific cause it’s addressing and implement the corresponding solution directly in its own git worktree.\n\nStep 9: Test the Solutions\n- If testing each solution is possible given your available resources, perform tests (one worktree at a time) to determine if the bug is fixed.\n- “Possible” means you have the appropriate tools and resources (e.g., a CURL command for API bugs; browser access for frontend bugs).\n- If testing is not possible due to resource limitations, clearly summarize the implemented solutions and provide explicit, step-by-step instructions for me to test each solution manually.\n\n⸻\n\nPlease carefully and thoughtfully complete every step of this workflow, maintaining clear communication throughout. Keep me updated at each major step, but only pause if you encounter something that requires my input.",
+        "timestamp": "Wed Sep 10 12:50:12 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 85,
+          "likes": 1324,
+          "replies": 39,
+          "quotes": 16
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965868647098073457",
+      "author": "@elonmusk",
+      "text": "Exactly",
+      "timestamp": "Wed Sep 10 20:03:04 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 28980,
+        "likes": 246605,
+        "replies": 8376,
+        "quotes": 563
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965854577561076040",
+        "author": "@FischerKing64",
+        "text": "The left-wing mainstream media, as well as figures like Gavin Newson claiming Trump plans to be dictator, has created a climate of hysteria against right-wing figures that could radicalize any number of unstable people to engage in political violence. Pray Charlie Kirk is ok.",
+        "timestamp": "Wed Sep 10 19:07:09 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 7398,
+          "likes": 63785,
+          "replies": 2247,
+          "quotes": 547
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965860711000629514",
+      "author": "@dotey",
+      "text": "写代码很简单，读懂它才是难事\n\n作者：Ibrahim Diallo, Gil\n\n写代码是件容易事。一旦你脑子里有了解决方案，又掌握了你最喜欢的编程语言的语法，写代码真的不难。让大语言模型（LLM）帮你写出整个函数？那就更容易了。但真正的难点不在于写，而在于读。难的是，你需要花时间在脑海里构建起对整个系统的认知地图。这才是所有成本的真正所在。\n\n心智模型 (mental model) 就是你在阅读代码时构建的东西。它是你对系统如何工作的内部地图，上面标注着哪些地方是雷区，哪些东西依赖于另一些东西。没有这张地图，你看到的就只是一行行毫无生气的文本。\n\n我当外包程序员的时候，大部分工作都是以同样的方式开始的。我会接到一个任务，去修复一个我从未见过的应用程序里的 Bug，或者给它增加一个新功能。一开始，我的心智模型一片空白。为了填充它，我会先去看看网站主页长什么样。然后我会查看页面源代码：这是用 React 写的？还是 jQuery？或者某个第三方插件？我会浏览整个代码库，看看他们要在首页上加的那个轮播组件，在别的地方是不是已经用过了。我还会检查他们的构建流程、测试配置，以及他们依赖的工具。我发现的每一个小细节，都会被添加到我脑海中的那张地图里。\n\n这感觉就像搬到一个新城市。你从公寓楼下开始，在几条街道上闲逛，慢慢注意到哪条路通向高速公路，杂货店在哪里，然后你开始逐渐找到方向感。读代码就是这种感觉：你在绘制一幅心智地图，这样你下次在代码里穿梭时就不会迷路。\n\n比如说，你需要理解一个简单的函数，像 getUserPreferences(userId) 这样。要构建关于它的心智模型，你需要追溯以下这些问题：\n\n这个函数是在哪里定义的？\n\n- 它返回什么？是一个 Promise 吗？返回的数据结构是什么样的？\n\n-它是直接访问数据库，还是通过一个 API？\n\n-中间有没有涉及到缓存层？\n\n-如果用户不存在，会发生什么？\n\n-还有谁在什么场景下调用了这个函数？\n\n-它有没有副作用 (side effects)？\n\n要理解这一个函数，就意味着你得在数据库结构、API 定义、错误处理中间件和多个调用点之间来回跳转。只有在构建起这张关系网之后，你才有足够的上下文信息去安全地修改任何东西。\n\n这个过程非常缓慢。读代码比写代码难得多，难太多了。写代码像是在往前走：你在铺设一条崭新的路。而读代码则意味着要追溯别人的脚步，这通常意味着在不同文件间跳来跳去，追踪函数调用，推断副作用，还要揣摩那些没有被白纸黑字写下来的意图。为了理解一个函数，你常常需要查看其他五个文件。做完所有这些之后，你才算有了一张足够让你起步的地图。\n\n这也是为什么调试 (debugging) 比写代码更难。在 Stack Overflow 网站上，一个烂问题下面最常见的评论之一就是：“你能把你的代码贴出来看看吗？” 因为看不到你走过的路，就没人能在脑海里加载正确的模型来帮助你。这也解释了为什么 XY 问题 (XY problem) 总是反复出现。人们只问一个表面症状，却不提供能让别人重建整个问题图景的上下文。\n\n我至今仍对那个在法庭上使用 ChatGPT 的律师感到着迷。他提交了一份法律文件，里面引用了六个根本不存在的案例。所有人都问：他为什么不去读一下这些案例呢？答案是一样的：因为构建心智模型需要时间和精力。他本应去追踪每个案例，阅读它们，然后将它们放入对法律先例的宏观理解中。阅读，才是最难的部分。生成，太容易了。\n\n阅读不仅仅是逐行检查代码。它还包括通读文档、参与代码审查和结对编程。实际上，这些方法都是为了加速我们构建心智模型的过程。但即便如此，你终究还是要亲自去读、去理解。你会发现，程序员总想把东西从头重写一遍，因为他们觉得“旧代码烂透了”。真正烂的，是花时间去读懂它、理解它。\n\n这正是大语言模型在编程领域既强大又危险的地方。无论 AI 生成的代码是完美无瑕还是纯属幻觉，你都必须去读它。你仍然需要追溯它应该做什么，它如何与系统的其他部分交互，以及它的副作用是什么。生成的代码越长，构建心智模型所需的时间就越长。只有当你完成了这个过程，你才能发现问题所在，发现那些生成代码不太适配的地方，或者它在悄悄地破坏其他功能。\n\n当一个大语言模型可以无限量地生成代码或文本时，它诱使我们跳过阅读这个环节。但你无法跳过构建心智模型。就好比你绝不想加载别人的游戏存档，结果一上来就直接被扔进 Boss 战的战场中央。继承或生成一份你根本不理解的代码，就是这种感觉。\n\n这就是为什么软件开发的真正瓶颈不在于“写”，而在于“理解”。\n\n目前，我们还没有能与大语言模型相媲美的“理解工具”——那种能瞬间将整个系统的心智模型从机器灌输到你脑子里的东西。在那一天到来之前，瓶颈依然存在。我们解决了“打字速度”的问题，现在我们能生成的代码，远比我们能读懂的要多得多。但是，除非我们解决了“理解”的问题，否则软件开发的成本依旧没变：它还是取决于一个人需要花多长时间才能搞懂这一切。\n\n这对我们如何使用 AI 工具有着实实在在的影响。与其让 AI 生成大段大段的代码，不如让它帮助我们理解现有的代码。与其用代码行数来衡量生产力，我们或许更应该用团队能多快地为他们的系统建立起准确的心智模型来衡量。\n\n编程的未来，可能不在于更快地生成更多代码，而在于更快地生成“理解”。而这，是一个难得多的问题。",
+      "timestamp": "Wed Sep 10 19:31:32 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 25,
+        "likes": 153,
+        "replies": 9,
+        "quotes": 4
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1283290997007323136",
+        "author": "@haoel",
+        "text": "技术人员沟通五法则\n\n1/5）【X-Y问题】这个世界上太多的X-Y问题（ https://t.co/6UtXA5hz8q ），当别人给你一个问题的时候，90%以上的情况下都是Y问题，所以，你要找到X问题是什么。要找到“X问题”是什么，你就需要不断的问对方这几个问题：为什么要这么做？要达到什么样的目标？解决什么问题？",
+        "timestamp": "Wed Jul 15 06:43:10 +0000 2020",
+        "media": [],
+        "engagement": {
+          "retweets": 43,
+          "likes": 199,
+          "replies": 4,
+          "quotes": 5
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965860712888270983",
+      "author": "@dotey",
+      "text": "原文：https://t.co/U1Hmj3w5hH",
+      "timestamp": "Wed Sep 10 19:31:32 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 0,
+        "likes": 3,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "original"
+    },
+    {
+      "id": "1965860002545152203",
+      "author": "@elonmusk",
+      "text": "The shot looked real bad, but I sure hope Charlie makes it somehow",
+      "timestamp": "Wed Sep 10 19:28:43 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 30392,
+        "likes": 648038,
+        "replies": 20385,
+        "quotes": 2119
+      },
+      "type": "original"
+    },
+    {
+      "id": "1965859343351558352",
+      "author": "@elonmusk",
+      "text": "The Left is the party of murder",
+      "timestamp": "Wed Sep 10 19:26:06 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 135133,
+        "likes": 786344,
+        "replies": 37586,
+        "quotes": 6960
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965853421690638383",
+        "author": "@shaunmmaguire",
+        "text": "The Left lectured us for the last decade about the dangers of violence from the Right\n\nFrom the assassination attempts of President Trump\n\nTo Brian Thompson, the United Healthcare CEO, being murdered\n\nNow to Charlie Kirk\n\nThe danger was actually on the Left",
+        "timestamp": "Wed Sep 10 19:02:34 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 28818,
+          "likes": 178356,
+          "replies": 8929,
+          "quotes": 1464
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965855885236027800",
+      "author": "@dotey",
+      "text": "帮转找人信息：ML Engineer，ML Data/Full Stack/Backend/Marketing",
+      "timestamp": "Wed Sep 10 19:12:21 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 1,
+        "likes": 3,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965840271209640407",
+        "author": "@Manjusaka_Lee",
+        "text": "深夜说一个最近的感想\n其实也不算新，还是老生常谈的一个话题“做 infra 的人必须要去贴近业务，否则一切都是空中楼阁”\n我介绍过很多次鄙司是 AIGC 头部玩家，主攻二次元赛道。\n我们最近面临的一个问题是 Elasticsearch 带来的。\n我们用户公开发布的 Artwork 和生成任务都是可以搜索的。\n最近 Elasticsearch 频繁会出现部分 Data Node 被打满然后连锁搜索出现问题的情况。\n那么我们需要去怎么样快速的解这个问题？\n在进一步讨论之前我们需要思考在这个场景下，搜索这个操作的本质是什么？\n我的看法是资产管理。在 AIGC 场景下，Prompt 毫无疑问是用户的核心资产，而对应的 Task 以及 Artwork 某种意义上算是资产的预览（or 属性）\n那么有了这样一个推论后，我们便能清晰的知道，至少在目前的形态下，业务核心属性必然不能为了技术结果让步。\n同时我们又有一个观察，我们用户公开发布的 Artwork 其的可见性和 Task 是不太一样的，Artwork 可公开检索，也会承担 SEO 的责任，而 Task 实际上仅用户可见。那么换句话讲，两者的数据的访问频率，资源需求都是不太一样的。\n换句话说，我们对 ES 的 Index 存在了多租的需求。但是很遗憾，按照目前的 ES 的设计，是不具备多租的能力的。\n虽然长远来说，优化查询会是一个必然的选项，但是在当下面对超高速发展的业务，拆分 Index 为不同的集群，按照 Index 不同的属性给不同的算力/磁盘，快速试错会成为我们的首选。\n目前这项工作正在进行中，效果未知，但是整个思考博弈的过程其实是我前几年会很少考虑的。很多时候技术的最优解未必是业务的最优解。\n\n最后的最后，再打一个广告。鄙司招人，ML Engineer，ML Data/Full Stack/Backend/Marketing 等职位虚位以待。如果你想一起做一些有趣的事情，欢迎 DM，帮你老板直达",
+        "timestamp": "Wed Sep 10 18:10:18 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 7,
+          "likes": 143,
+          "replies": 17,
+          "quotes": 1
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965853670526058943",
+      "author": "@dotey",
+      "text": "RT @sujingshen: notebooklm的API开放了。是个机会。\nNotebookLM api\n- Create a notebook\n- Retrieve a notebook\n- List recently viewed notebooks\n- Delete…",
+      "timestamp": "Wed Sep 10 19:03:33 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 47,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965692747677090113",
+        "author": "@sujingshen",
+        "text": "notebooklm的API开放了。是个机会。\nNotebookLM api\n- Create a notebook\n- Retrieve a notebook\n- List recently viewed notebooks\n- Delete notebooks in batch\n- Share a notebook\n- Add data sources to a notebook\n- Delete data sources from a notebook\n信息源：👇",
+        "timestamp": "Wed Sep 10 08:24:06 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 47,
+          "likes": 294,
+          "replies": 14,
+          "quotes": 18
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965802258794525051",
+      "author": "@elonmusk",
+      "text": "😂💯",
+      "timestamp": "Wed Sep 10 15:39:15 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 4885,
+        "likes": 51795,
+        "replies": 2848,
+        "quotes": 110
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965675042693693930",
+        "author": "@peterrhague",
+        "text": "“Look, I think I can handle making humans a multi-planetary civilisation, but getting politicians to stop spending too much money is just not feasible”",
+        "timestamp": "Wed Sep 10 07:13:45 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 739,
+          "likes": 8363,
+          "replies": 327,
+          "quotes": 64
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965800039995093501",
+      "author": "@elonmusk",
+      "text": "Legacy news like AP is super racist against Whites (and Asians). \n\nEither capitalize all races or none. That would be fair and equal treatment, but only lowercase for Whites is racist by definition!",
+      "timestamp": "Wed Sep 10 15:30:26 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 38648,
+        "likes": 224461,
+        "replies": 10492,
+        "quotes": 1594
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965644388396400967",
+        "author": "@libsoftiktok",
+        "text": "AP’s style guidelines literally says to lowercase White and capitalize Black\n\nAnti-White racist trash outlet https://t.co/uaAS9WKvD0",
+        "timestamp": "Wed Sep 10 05:11:56 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 5756,
+          "likes": 29702,
+          "replies": 1396,
+          "quotes": 466
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965798922452164958",
+      "author": "@dotey",
+      "text": "原推截图是 Claude，需要打开最新的\"Upgraded file creation and analysis\"功能，目前还只有 Max、Team和企业用户支持\nhttps://t.co/l9YiVFLpAm",
+      "timestamp": "Wed Sep 10 15:26:00 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 0,
+        "likes": 1,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965429676182225083",
+        "author": "@alexalbert__",
+        "text": "To get started, enable \"Upgraded file creation and analysis\" in Settings: https://t.co/5uNpr6J068\n\nAvailable now for Max, Team, and Enterprise users. Coming soon to Pro.",
+        "timestamp": "Tue Sep 09 14:58:45 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 3,
+          "likes": 77,
+          "replies": 3,
+          "quotes": 3
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965798411904684463",
+      "author": "@dotey",
+      "text": "以前我就看有人喜欢用 Excel 作画，而且画的挺好的，现在用 AI 倒是让普通人也可以干这事了",
+      "timestamp": "Wed Sep 10 15:23:58 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 2,
+        "likes": 7,
+        "replies": 1,
+        "quotes": 0
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965792437504499803",
+        "author": "@alexalbert__",
+        "text": "Claude just replicated my profile pic in an excel file\n\nWe're entering the vibe excel era https://t.co/FJllZXyWyQ",
+        "timestamp": "Wed Sep 10 15:00:14 +0000 2025",
+        "media": [
+          "photo",
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 274,
+          "likes": 5919,
+          "replies": 185,
+          "quotes": 73
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965797993275437103",
+      "author": "@elonmusk",
+      "text": "RT @RepTimMooreNC: Iryna Zarutska should still be alive. Her blood is on the hands of everyone who enabled this 14x career criminal to walk…",
+      "timestamp": "Wed Sep 10 15:22:19 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 18397,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965207877838324145",
+        "author": "@RepTimMooreNC",
+        "text": "Iryna Zarutska should still be alive. Her blood is on the hands of everyone who enabled this 14x career criminal to walk free.\n\nToday, I was proud to colead @RepStefanik's \"Keep Violent Criminals Off Our Streets Act\" to end cashless bail. https://t.co/qHZpV6YxOe",
+        "timestamp": "Tue Sep 09 00:17:24 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 18397,
+          "likes": 113473,
+          "replies": 2723,
+          "quotes": 435
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965791706814841220",
+      "author": "@elonmusk",
+      "text": "A more accurate legacy news line would be that “instances of voter fraud are rarely caught, especially where showing your ID to vote is made illegal, like California and New York” 😂😢",
+      "timestamp": "Wed Sep 10 14:57:20 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 27483,
+        "likes": 110192,
+        "replies": 3124,
+        "quotes": 414
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965449427222458686",
+        "author": "@amuse",
+        "text": "ELECTION INTEGRITY: Prior to Elon Musk's purchase of X we weren't allowed to share stories of election fraud. The drive-by media routinely suppressed coverage of stories like Milwaukee Election Director Kimberly Zapata's conviction for fake military ballots. When the stories are covered in the local news the reports always include the standard line, \"instances of voter fraud are very rare...\"",
+        "timestamp": "Tue Sep 09 16:17:14 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 6625,
+          "likes": 15390,
+          "replies": 598,
+          "quotes": 230
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965789720308502571",
+      "author": "@elonmusk",
+      "text": "Designing dexterous hands for robots is a very hard problem. \n\nThen figuring out how to manufacture them at scale is 100 times harder.",
+      "timestamp": "Wed Sep 10 14:49:26 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 8677,
+        "likes": 53584,
+        "replies": 4358,
+        "quotes": 399
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965731165702357138",
+        "author": "@luismbat",
+        "text": "This is the chaos produced by a triple pendulum with just 3 degrees of freedom.\n\nYour hand has 27: 4 per finger + 5 for the thumb + 6 for the wrist\n\nBuilding a robot to conduct this orchestra of joints and tendons to pick up a coin is ... non-trivial. https://t.co/PGOUeYTOZd",
+        "timestamp": "Wed Sep 10 10:56:46 +0000 2025",
+        "media": [
+          "animated_gif"
+        ],
+        "engagement": {
+          "retweets": 516,
+          "likes": 3865,
+          "replies": 366,
+          "quotes": 93
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965788643597156538",
+      "author": "@elonmusk",
+      "text": "It should not be vastly easier to become licensed as a judge than licensed as a barber",
+      "timestamp": "Wed Sep 10 14:45:09 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 35257,
+        "likes": 207480,
+        "replies": 6950,
+        "quotes": 983
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965756688494928371",
+        "author": "@amuse",
+        "text": "DEI: To make it easier to recruit black judges multiple states don't require magistrate to have college degrees much less law degrees. Those same states require barbers to have thousands of hours of training and licensing - regardless of skin color. \nhttps://t.co/m9CSvFvOvN",
+        "timestamp": "Wed Sep 10 12:38:11 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 6068,
+          "likes": 21116,
+          "replies": 1081,
+          "quotes": 452
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965788222967230907",
+      "author": "@elonmusk",
+      "text": "RT @niccruzpatane: Summary of @elonmusk’s 44 minute interview at the @allinsummit:\n\nGovernment: \n• Elon hasn’t been back to DC since May, “…",
+      "timestamp": "Wed Sep 10 14:43:29 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 2141,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965715723126493544",
+        "author": "@niccruzpatane",
+        "text": "Summary of @elonmusk’s 44 minute interview at the @allinsummit:\n\nGovernment: \n• Elon hasn’t been back to DC since May, “The Government is basically unfixable.”\n• “If AI & Robots don’t solve the National Debt, we’re toast.”\n\nOptimus:\n• Tesla is finalizing the design of Optimus Gen 3. “It’s going to be a very remarkable robot.”\n• Optimus Gen 3 will have the manual dexterity of a human. \n• Optimus Gen 3 will have an AI mind that can navigate, and comprehend reality. \n• There is no supply chain for humanoid robots, Tesla is making everything from scratch. It requires a lot of vertical integration.\n• All of Optimus’ actuators are made in-house by Tesla. There are 26 actuators, per arm. \n• Elon reiterates: “If Optimus is successful, it will be the biggest product, ever.”\n• Production Cost of Optimus, once 1M units/year are achieved is around the $20,000 range. \n• The AI chip for Optimus will be expensive, potentially $5-6K , maybe more. \n• Price of Optimus will be a function of demand. \n• Tesla had to design Optimus’ every electric motor, gearbox, and the controlling electronics from scratch. \n• Creating Optimus is harder than making Model S/3/X/Y/CT, but not harder than Starship. \n• The forearms and hands of Optimus are majoirty of engineering difficulties of the entire robot. \n• Optimus LLM will be included, no added subscription. \n\nAI4, AI5, AI6 & FSD:\n• Tesla is currently finalizing the design for AI5. It will be an immense jump from AI4. \n• AI5 will be 40x better than AI4 in some metrics. \n• Tesla is working so closely on the AI Hardware, and Software this time around. Both teams are co-designing the chip. \n• AI5 has 8x more commute than AI4. \n• AI5 has 10x more memory than AI4.\n• AI5 has 5x more memory-bandwidth than AI4.\n• Elon is confident AI4 chips will still be able to achieve self-driving safety that is at least 2-3x of a human, maybe even 10x. \n• FSD 14 will be released in a few months.\n• V14 will be the biggest upgrade to Tesla’s software since V12. \n• FSD 14 will make the car feel sentient, by the end of the year. \n\nStarlink:\n• New spectrum deal will allow SpaceX to deliver high-bandwidth connectivity directly from the satellites, to the phone. \n• Current frequencies aren’t supported in current phones. Hardware changes are needed.\n• Chipsets need to be modified to add the new frequencies.\n• The phones capable of using this new frequency will ship in two years. \n• You will be able to watch videos anywhere in the world.\n• These frequencies required will work inside a building, it won’t cut off. \n• You will be able to have a Starlink Account instead of a Verizon/At&T account, but it won’t put other carriers out of business. \n• SpaceX may buy carriers to gain more spectrum. “It’s not out the question, it may happen.” \n\nStarship:\n• SpaceX will recover Starship starting next year.\n• There is only one V2 Starship left. \n• V3 is a radical re-design, initially it might go through some teething pains. \n• V3 is capable of over 100T to orbit, fully reusable.\n• Starting in 2026, SpaceX will demonstrate fully reusability next year, catching both booster and ship. \n• Elon thinks a self-sustaining life on Mars can be achieved within roughly 25 years. \n\nAI:\n• A rough rule of thumb is 10x more compute will double the intelligence. \n• Elon thinks we will continue to see intelligence scale all the way up to where most of the power of the sun is harnessed for compute. \n• Human Intelligence is currently plateauing due to low birth-rates and population declines. It will eventually start declining. \n• Elon guesses AI will be smarter than absolutely everything starting next year.\n• By 2030, Elon guesses AI will be smarter than the sum of ALL humans.",
+        "timestamp": "Wed Sep 10 09:55:24 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 2141,
+          "likes": 9185,
+          "replies": 569,
+          "quotes": 151
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965785001280332156",
+      "author": "@dotey",
+      "text": "Lovart 又有 0 积分使用nano banana和即梦4.0画图活动了，截止9/20",
+      "timestamp": "Wed Sep 10 14:30:41 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 2,
+        "likes": 19,
+        "replies": 2,
+        "quotes": 0
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965581610147021176",
+        "author": "@lovart_ai",
+        "text": "Rocket-powered product placement: Lovart × Seedream 4.0 FREE UNLIMITED usage until Sep 20.\nZero credits consumption = endless creative runway. Try today:\n- 2K / 4K output\n- Up to 6 image refs\n- Any aspect ratio\n- Automated layouts\n#Lovart #CreateWithLovart #Seedream4 https://t.co/zwJrUdnSU2",
+        "timestamp": "Wed Sep 10 01:02:29 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 27,
+          "likes": 194,
+          "replies": 13,
+          "quotes": 13
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965781504883356099",
+      "author": "@elonmusk",
+      "text": "RT @KonstantinKisin: This is genuinely unreal. BLM tore the world apart over a police interaction in which there was literally zero evidenc…",
+      "timestamp": "Wed Sep 10 14:16:47 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 13835,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965684640959676641",
+        "author": "@KonstantinKisin",
+        "text": "This is genuinely unreal. BLM tore the world apart over a police interaction in which there was literally zero evidence of racism. \n\nBut when a man kills this poor girl and walks around saying \"I got the white girl\" what we get is \"we don't know why he did it\"?\n\nIf you're trying to understand this, imagine Derek Chauvin or Daniel Penny walked around after their incidents saying \"I got the black man\". Do you think the media would be saying \"we don't know why he did it\" and talking about how they were \"hurting\"? \n\nThis is disgusting.",
+        "timestamp": "Wed Sep 10 07:51:53 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 13835,
+          "likes": 80774,
+          "replies": 2577,
+          "quotes": 541
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965781379721085021",
+      "author": "@elonmusk",
+      "text": "RT @JDVance: Daniel Penny prevented this from happening on a NYC subway. Instead of thanking him, many hated him for it. https://t.co/aJQQo…",
+      "timestamp": "Wed Sep 10 14:16:18 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 39801,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965766869740405046",
+        "author": "@JDVance",
+        "text": "Daniel Penny prevented this from happening on a NYC subway. Instead of thanking him, many hated him for it. https://t.co/aJQQok1awy",
+        "timestamp": "Wed Sep 10 13:18:38 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 39801,
+          "likes": 340326,
+          "replies": 7578,
+          "quotes": 1819
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965778883329859709",
+      "author": "@dotey",
+      "text": "Prompt：\n> 请帮我分析代码库，找出有哪些因素影响一条tweet在timeline中显示的权重，基于算法，我可以怎样让我的推文获得更多阅读量\n\nGemini CLI 分析结果\n\n 综合以上服务，一条推文的权重（即它出现在用户时间线靠前位置的概率）主要由以下几类因素决定：\n\n   1. 互动指标 (Engagement Signals):\n       * 点赞 (Likes), 回复 (Replies), 转推 (Retweets):\n         这是最核心的积极信号。一条推文在短时间内获得的互动越多，算法就越会认为它是高质量的，并将其推荐给更多人。\n       * 引用转推 (Quote Tweets): 这通常比普通转推权重更高，因为它引发了新的讨论。\n       * 点击率 (Click-through Rate): 如果你的推文包含链接、图片或视频，用户点击查看的比例越高，权重也越高。\n\n   2. 社交关系 (Social Graph):\n       * 作者关系: 你关注的人发布的推文权重天然更高。你与作者的互动（例如，经常互相回复）越多，关系越“紧密”，权重也越高。\n       * 共同联系: 即使你没有关注作者，但你关注的很多人都关注了TA或与这条推文互动了，那么这条推文也可能被推荐给你。\n\n   3. 内容质量和时效性 (Content & Recency):\n       * 新近度 (Recency): 推文是新的。尽管不完全按时间排序，但新发布的内容仍然有初始的曝光优势。\n       * 媒体类型 (Media Type): 通常，包含视频或高质量图片的推文比纯文本推文有更高的权重，因为它们更能吸引用户停留。\n       * 话题相关性 (Topic Relevance): 算法会根据你的历史兴趣为你推荐相关话题的推文。\n\n   4. 作者声誉 (Author's Reputation):\n       * 历史表现: 如果你过去发布的推文经常获得高互动，系统会认为你是一个高质量的创作者，你的新推文也会获得更高的初始权重。\n       * 被屏蔽/举报: 如果你的账号被很多人屏蔽（Block）或举报（Report），你的权重会显著下降。\n\n   5. 负面信号 (Negative Signals):\n       * 来自 `trust_and_safety_models` 的判断: 任何被标记为垃圾信息、攻击性、不实信息或违规的内容都会被立即降权，甚至被隐藏。\n       * “显示更少” (Show less often): 如果用户在你的推文上选择“不感兴趣”或“减少看到这类推文”，这将是一个强烈的负面信号。\n\n  如何让你的推文获得更多阅读量（基于算法规则）\n\n  根据以上分析，你可以采取以下策略来“顺应”算法，提高曝光：\n\n   1. 创造“可互动”的内容:\n       * 提出问题: 在推文结尾提出一个开放性问题，鼓励人们在评论区回答。\n       * 发起投票 (Polls): 投票是吸引用户点击互动的最简单方式之一。\n       * 分享观点，引发讨论: 分享一个有争议或独特的观点，但要保持尊重，避免引战。\n\n   2. 善用富媒体:\n       * 多发视频和图片: 尽量让你的每条推文都配有视觉元素。视频，尤其是短视频，通常效果最好。\n       * 确保图片/视频质量: 清晰、有趣、信息量大的视觉内容更容易获得互动。\n\n   3. 把握发布时机和频率:\n       * 黄金时间发布: 在你的目标受众最活跃的时候发布推文（例如，工作日的早晨、午休、傍晚）。\n       * 保持稳定更新: 定期发布高质量内容，有助于培养固定的读者群和提升作者声誉。\n\n   4. 积极参与社区互动:\n       * 回复他人的评论: 积极回复你的评论区，这不仅能增加单条推文的互动量，还能增强你和关注者的联系。\n       * 参与热门话题: 在你的领域内，参与到热门的讨论中，使用相关的标签（Hashtag），可以让你接触到关注者之外的潜在受众。\n\n   5. 绝对要避免的“雷区”:\n       * 不要发布违规或低质量内容: 避免任何可能被 trust_and_safety_models 标记的内容。\n       * 不要进行垃圾信息操作: 例如，在短时间内大量@不相关的人，或发布大量重复无意义的内容。\n\n  总而言之，算法的核心目标是留住用户，让他们看到自己感兴趣、能引发积极互动的高质量内容。 你的策略应该是成为一个能持续产出这类内容的创作者。",
+      "timestamp": "Wed Sep 10 14:06:22 +0000 2025",
+      "media": [
+        "photo"
+      ],
+      "engagement": {
+        "retweets": 0,
+        "likes": 7,
+        "replies": 1,
+        "quotes": 0
+      },
+      "type": "original"
+    },
+    {
+      "id": "1965778662432928223",
+      "author": "@dotey",
+      "text": "Prompt：\n> 请帮我分析代码库，找出有哪些因素影响一条tweet在timeline中显示的权重，基于算法，我可以怎样让我的推文获得更多阅读量\n\nClaude Code 分析结果\n\n基于代码分析，Twitter的推文排序算法使用了多层评分系统，主要影响因素包括：\n\n  🎯 核心互动信号（预测分数）\n\n  算法会预测每条推文获得以下互动的概率：\n  - 点赞(Favorite) - 用户点赞的可能性\n  - 转推(Retweet) - 被转推的概率\n  - 回复(Reply) - 获得回复的概率\n  - 作者回复互动 - 原作者参与回复对话的概率\n  - 优质点击 - 用户深度互动（如展开对话、停留时间）\n  - 个人主页访问 - 点击作者头像查看主页\n  - 视频播放50% - 视频观看超过一半\n  - 详情页停留 - 在推文详情页停留15秒以上\n  - 个人主页停留 - 在作者主页停留20秒以上\n  - 收藏/分享 - 收藏推文或分享菜单点击\n\n  ⚖️ 权重调节机制\n\n  1. 网络内外差异\n    - 非关注用户的推文会被降权至0.75倍分数\n    - 关注用户的转推不受此影响\n  2. 疲劳度惩罚\n    - 对近期被用户\"减少展示\"的作者内容降权\n    - 降权系数从0.2到1.0，基于反馈时间递减\n    - 140天后完全恢复权重\n  3. 负面信号\n    - 负面反馈、举报、强/弱负面反馈都会降低分数\n    - 系统会记录用户的反馈历史并据此调整\n\n  📈 提升推文曝光的策略\n\n  1. 创作高互动内容\n    - 引发讨论的问题或观点\n    - 及时回复评论，提高\"作者互动\"分数\n    - 使用引人注目的视觉内容\n  2. 优化内容质量\n    - 发布让用户愿意停留阅读的长内容\n    - 视频内容要有吸引力，提高播放完成率\n    - 内容要有价值，促进收藏和分享\n  3. 建立粉丝关系\n    - 与关注者保持互动\n    - 避免频繁发布类似内容导致疲劳\n    - 关注内容质量而非数量\n  4. 时机选择\n    - 在粉丝活跃时段发布\n    - 避免短时间内连续发布多条推文\n  5. 避免负面信号\n    - 不发布可能被举报的内容\n    - 避免垃圾信息和过度营销\n    - 保持内容相关性，减少\"不感兴趣\"反馈\n\n  算法会综合所有这些因素计算最终分数，分数越高在timeline中的位置越靠前。",
+      "timestamp": "Wed Sep 10 14:05:30 +0000 2025",
+      "media": [
+        "photo"
+      ],
+      "engagement": {
+        "retweets": 1,
+        "likes": 8,
+        "replies": 1,
+        "quotes": 0
+      },
+      "type": "original"
+    },
+    {
+      "id": "1965776478559440962",
+      "author": "@dotey",
+      "text": "GitHub 上的 twitter/the-algorithm 最近更新了，其实我有拿各大 AI Agent （Claude Code、Codex、Gemini Cli）去帮我调研一下都有啥影响推文权重的，不过结论都不怎么样，这篇分析的看起来相对靠谱一点，直接先引用一下。\n\n推特有个信用分系统（Tweepcred），这个很关键，它将每位用户标记为或高或低的信用评分，决定着你所发推文能够抵达的受众数量。\n\n哪些行为会影响流量呢：\n\n- 使用“冒犯性语言”，即刻被大幅降权，流量损失高达80%；\n- 用户名冒犯性也会受到同样惩罚；甚至全部使用大写字母发帖，也会因为被视为“大喊大叫”而遭受限流；\n- 最令人困惑的是，如果帖子中包含外链，竟然也会遭受一定程度的惩罚。（所以大家现在第一帖都不放外链了）\n\nX 算法并未公开定义究竟什么算“冒犯”，这部分都在一个adult_tokens.text文件中，没发布。\n\n另外还有一个很多推友遇到过的 shadow banning 确实存在，如果频繁被多人举报，打上“低质量推文”、“恶意内容”、“垃圾信息”等标签，你的流量就会受影响。\n\n算法也包含了一些流量加持机制：\n\n- 用户在你的视频内容上停留超过10秒，或在文字内容上停留超过2秒，都会带来显著的流量提升；\n- 用户的引用、收藏等主动互动，被视作极高质量的互动，能有效推动内容进一步扩散；\n- 最现实的一点：X 的“蓝标认证”（Blue check mark）至关重要\n\n建议：\n\n1. 别使用冒犯性语言。\n2. 持续提高信用分（不知道哪里可以查）；\n3. 尽可能创造能吸引高质量互动的内容，比如被引用或收藏；\n4. 媒体内容注重质量而非数量，尤其是视频一定要让人停留超过10秒；\n5. 善待你的读者，避免被举报或拉黑；\n6. 尽快获取蓝标认证；\n7. 内容撰写和设计都要有意识地促使读者停留超过2秒。\n\n当然这都是原作者的分析结果，建议有兴趣的可以用 AI Agent 去交叉验证一下看是不是靠谱。",
+      "timestamp": "Wed Sep 10 13:56:49 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 19,
+        "likes": 143,
+        "replies": 7,
+        "quotes": 4
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965438865789071438",
+        "author": "@AlexFinnX",
+        "text": "Elon just revealed exactly how the X algorithm works\n\nI spent the last 14 hours straight reading all 400,000 lines of code of the brand new X algorithm\n\nWhat I read blew me away\n\nHere’s everything you need to know about how to go viral and if you can still get shadowbanned: 🧵 https://t.co/OLsWH6zkNJ",
+        "timestamp": "Tue Sep 09 15:35:16 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 819,
+          "likes": 4082,
+          "replies": 551,
+          "quotes": 455
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965775510396715430",
+      "author": "@elonmusk",
+      "text": "RT @amuse: ELECTION INTEGRITY: States like Maryland don't want to catch non-citizens voting illegally. They refuse to cross-reference their…",
+      "timestamp": "Wed Sep 10 13:52:58 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 1940,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965745692430799257",
+        "author": "@amuse",
+        "text": "ELECTION INTEGRITY: States like Maryland don't want to catch non-citizens voting illegally. They refuse to cross-reference their voter rolls with citizenship databases. Take for example, Francis Bagnall has been illegally voting in Maryland for 30 years. He was caught by accident.",
+        "timestamp": "Wed Sep 10 11:54:29 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 1940,
+          "likes": 6031,
+          "replies": 364,
+          "quotes": 63
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965768106703466800",
+      "author": "@dotey",
+      "text": "如何写好 AI 画图提示词的一点经验分享",
+      "timestamp": "Wed Sep 10 13:23:33 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 0,
+        "likes": 22,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965701702692024409",
+        "author": "@dotey",
+        "text": "如何写好 AI 画图提示词？\n\n我在 GPT-4o 画图时期，花了不少时间研究画图提示词，将近 30 条提示词被收录在各种 Awesome 的画图提示词 Repo 中，我的经验总结下来就是这么几条：\n\n1. 大白话先行\n\n提示词其实不必过于追求提示词技巧，把需求表达清楚最重要。你看我前面的案例，大部分都是大白话，就是想要什么很直白的表达出来，以现在模型的能力，一般可以画出来的\n\n2. 照葫芦画瓢\n\n平时看到别人分享的，就测试一下，还可以二次修改发掘一些新的玩法；另外参考图也是很重要的“葫芦”，很多时候看到一个好的效果，作为参考图发过去，比提示词还管用。",
+        "timestamp": "Wed Sep 10 08:59:41 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 6,
+          "likes": 16,
+          "replies": 1,
+          "quotes": 1
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965768028936974633",
+      "author": "@dotey",
+      "text": "如何发掘 AI 应用场景的一点经验分享",
+      "timestamp": "Wed Sep 10 13:23:14 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 5,
+        "likes": 20,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965701700766838984",
+        "author": "@dotey",
+        "text": "如何发掘 AI 应用场景\n\n相对来说，我还比较善于发掘一些日常工作生活中能应用到 AI 的场景，比如上面这些场景，对我自己来说都是蛮实用蛮有价值的，相信很多人看到我的应用和提示词，也能照葫芦画瓢应用起来，说不定也能提升效率。\n\n我经常会想这三个问题：\n1. 日常生活中我有什么问题没有被解决好，让我很麻烦或者很痛苦的\n2. AI 现在能做什么事情了\n3. 如果这件事用 AI 做，该怎么做\n\n比如给孩子 PS 证件照让我很痛苦、为 PPT 找配图很痛苦、为公众号文章配图很烦、要给孩子讲故事希望有好玩的图，这些都是痛点。\n\n如果我有类似这种费时费力的痛点问题，我会习惯性想借助工具解决，现在有 AI 了就会想用 AI 解决，这已经成了我自己的一个习惯性的反应。\n\n但有痛点不代表 AI 就能解决问题，比如之前 GPT-4o 画图能力不错，但 PS 证件照，或者写中文就不行，因为它图像一致性不好，中文支持也不好，所以还需要了解 AI 能力边界在哪里。这时候只能等 AI 模型的进化。\n\n然后模型升级后，比如 nano banana 发布了， Seedream 4.0 发布了，AI 有了新的能力，这时候一些以前不能解决或者解决的不好的痛点问题，就可以再用新的模型新的技术去尝试，看是否解决了。\n\n其实前两步对普通人来说都不难，难的是怎么做，比如你知道 AI 生成封面图，能生成小红书图片，但是怎么写提示词呢？",
+        "timestamp": "Wed Sep 10 08:59:41 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 3,
+          "likes": 23,
+          "replies": 1,
+          "quotes": 1
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965701706638909869",
+      "author": "@dotey",
+      "text": "4. 分步描述\n\n很多复杂的需求，一步到位是很难完成的，可以拆分成几个步骤，把复杂任务变成简单小任务就会好很多。比如我前面的 PPT 的提示词，就是分成几个阶段来执行，而不是一开始就生成图片，这样对于 AI 来说就会容易些，另外一些中间生成的结果也很有价值，比如可以基于 AI 中间生成的内容去再生成新的内容，可以用 AI 生成的提示词单独去生成图片。\n\n5. 做中学、多抽卡\n\n不管什么事，都还是多练习，如果亲手画了几十上百张图片，后面再画就会比较得心应手了，都有哪些画风，什么样的关键词可能会有什么效果，什么样的模型的优缺点是什么样的都会心中有数，这些还都是要练。\n\n另外 AI 画图也是一种随机性比较大的事情，免不了要多抽卡，同样的提示词多生成几次，保不准就有一次很好的结果。",
+      "timestamp": "Wed Sep 10 08:59:42 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 0,
+        "likes": 5,
+        "replies": 1,
+        "quotes": 0
+      },
+      "type": "original"
+    },
+    {
+      "id": "1965701708165591399",
+      "author": "@dotey",
+      "text": "最后\n\n豆包 P 图Seedream 4.0 还是推荐自己动手试试看，可以结合我分享的一些案例，以及网上分享的一些教程，比如已经有人把 Seedream 4.0 各种好玩的提示词整理到了 GitHub 上，你可以很容易从中找到灵感。\nhttps://t.co/WgQDEUhMtu\n\n还有归藏的这篇分享《顶级邪修｜万字教程｜教你速通豆包・图像创作模型 Seedream 4.0》也值得学习：https://t.co/dvd45wqLyP",
+      "timestamp": "Wed Sep 10 08:59:42 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 7,
+        "likes": 26,
+        "replies": 0,
+        "quotes": 2
+      },
+      "type": "original"
+    },
+    {
+      "id": "1965701706638909869",
+      "author": "@dotey",
+      "text": "4. 分步描述\n\n很多复杂的需求，一步到位是很难完成的，可以拆分成几个步骤，把复杂任务变成简单小任务就会好很多。比如我前面的 PPT 的提示词，就是分成几个阶段来执行，而不是一开始就生成图片，这样对于 AI 来说就会容易些，另外一些中间生成的结果也很有价值，比如可以基于 AI 中间生成的内容去再生成新的内容，可以用 AI 生成的提示词单独去生成图片。\n\n5. 做中学、多抽卡\n\n不管什么事，都还是多练习，如果亲手画了几十上百张图片，后面再画就会比较得心应手了，都有哪些画风，什么样的关键词可能会有什么效果，什么样的模型的优缺点是什么样的都会心中有数，这些还都是要练。\n\n另外 AI 画图也是一种随机性比较大的事情，免不了要多抽卡，同样的提示词多生成几次，保不准就有一次很好的结果。",
+      "timestamp": "Wed Sep 10 08:59:42 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 0,
+        "likes": 5,
+        "replies": 1,
+        "quotes": 0
+      },
+      "type": "original"
+    },
+    {
+      "id": "1965701704365518937",
+      "author": "@dotey",
+      "text": "3. 让 AI 当老师\n\n让 AI 帮自己写，AI 很擅长写提示词，我的很多提示词就是 AI 帮我写的，我会先给 AI 说清楚我的需求，然后让 AI 帮我生成提示词，再去用 AI 生成的提示词生成，通常会得到很好的效果。\n\n比如一个有意思的案例是昨天看到归藏分享的头像 Prompt，是需要垫图的，比较麻烦。于是我把垫图的图片发给 AI，让 AI 帮我生成一段提示词，根据 AI 生成的提示词，就可以直接得到原来类似的效果，而不需要垫图。\n\n---\n\n参考照片生成卡通头像，圆角方形头像框，白色贴纸描边，半身胸像，正面像，手绘粗线稿（深灰/黑），极简配色，柔和粉彩底色，轻水彩上色与蜡笔/粉笔纹理，纸张颗粒噪点，干净留白，少量元素突破边框标志性元素/特效，可爱明快表情，柔和内阴影或投影，画面整洁、无复杂背景\n\n---",
+      "timestamp": "Wed Sep 10 08:59:41 +0000 2025",
+      "media": [
+        "photo"
+      ],
+      "engagement": {
+        "retweets": 0,
+        "likes": 10,
+        "replies": 1,
+        "quotes": 1
+      },
+      "type": "original"
+    },
+    {
+      "id": "1965701673663304180",
+      "author": "@dotey",
+      "text": "AI 画图不是玩具，而是可以变成效率工具 ｜ 豆包 P 图Seedream 4.0 效率场景挖掘\n\n这两天在豆包测试了新的豆包 P 图 Seedream 4.0，画图能力确实名不虚传，既有 GPT-4o 画图的那种对指令的深度意图理解，又有 nano banana 那种对角色一致性的高度特征保持，还可以精准的用指令对图片进行编辑，最重要是对中文的支持比 GPT-4o 和 nano banana 都好太多了。\n\n在测试中重新发掘出了不少有趣的场景，更重要是它不止像把照片变成手办那样好玩，而是你能把它变成效率工具，在很多场景中帮到你，帮你提升效率。\n\n我在这里列举几个我用它提升效率的场景，分享一下我日常是怎么用一套自己的公式来套用发掘这些 AI 应用场景的，以及怎么写好画图的提示词。🧵",
+      "timestamp": "Wed Sep 10 08:59:34 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 44,
+        "likes": 250,
+        "replies": 11,
+        "quotes": 5
+      },
+      "type": "original"
+    },
+    {
+      "id": "1965701673663304180",
+      "author": "@dotey",
+      "text": "AI 画图不是玩具，而是可以变成效率工具 ｜ 豆包 P 图Seedream 4.0 效率场景挖掘\n\n这两天在豆包测试了新的豆包 P 图 Seedream 4.0，画图能力确实名不虚传，既有 GPT-4o 画图的那种对指令的深度意图理解，又有 nano banana 那种对角色一致性的高度特征保持，还可以精准的用指令对图片进行编辑，最重要是对中文的支持比 GPT-4o 和 nano banana 都好太多了。\n\n在测试中重新发掘出了不少有趣的场景，更重要是它不止像把照片变成手办那样好玩，而是你能把它变成效率工具，在很多场景中帮到你，帮你提升效率。\n\n我在这里列举几个我用它提升效率的场景，分享一下我日常是怎么用一套自己的公式来套用发掘这些 AI 应用场景的，以及怎么写好画图的提示词。🧵",
+      "timestamp": "Wed Sep 10 08:59:34 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 44,
+        "likes": 250,
+        "replies": 11,
+        "quotes": 5
+      },
+      "type": "original"
+    },
+    {
+      "id": "1965685447314866331",
+      "author": "@elonmusk",
+      "text": "RT @jawwwn_: Palantir CEO Alex Karp:\n\n“If we don’t want this country to be what Europe is now… you have to close the border…\n\n“Both sides h…",
+      "timestamp": "Wed Sep 10 07:55:05 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 2348,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965529243871535584",
+        "author": "@jawwwn_",
+        "text": "Palantir CEO Alex Karp:\n\n“If we don’t want this country to be what Europe is now… you have to close the border…\n\n“Both sides have to step up.\n\n“Everybody who’s criminal… I [would] make it so they self-deport, because I’m going to come tomorrow in a way you don’t like.”\n\nVia @theallinpod Summit",
+        "timestamp": "Tue Sep 09 21:34:24 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 2348,
+          "likes": 15643,
+          "replies": 796,
+          "quotes": 150
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965684043741384989",
+      "author": "@elonmusk",
+      "text": "RT @Philosophi_Cat: I’m now seeing boomers on Facebook sharing the Iryna Zarutska story. That’s how you know it’s broken containment.",
+      "timestamp": "Wed Sep 10 07:49:31 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 3011,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965530157994930534",
+        "author": "@Philosophi_Cat",
+        "text": "I’m now seeing boomers on Facebook sharing the Iryna Zarutska story. That’s how you know it’s broken containment.",
+        "timestamp": "Tue Sep 09 21:38:02 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 3011,
+          "likes": 43094,
+          "replies": 657,
+          "quotes": 60
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965683791529410833",
+      "author": "@elonmusk",
+      "text": "A second conviction for aggravated violent crime should get life imprisonment",
+      "timestamp": "Wed Sep 10 07:48:31 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 14395,
+        "likes": 98369,
+        "replies": 5782,
+        "quotes": 619
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965504111589093875",
+        "author": "@cremieuxrecueil",
+        "text": "A ten strike law preventing people from leaving prison after that many violent crime convictions would reduce period violent crime by 20%\n\nFive strikes would cut violent crime by 40%\n\nThree strikes would halve violent crime\n\nTwo strikes would remove ~two-thirds of violent crime https://t.co/mwaUNeQhZQ",
+        "timestamp": "Tue Sep 09 19:54:32 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 2657,
+          "likes": 14546,
+          "replies": 822,
+          "quotes": 391
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965682488514338819",
+      "author": "@elonmusk",
+      "text": "RT @GuntherEagleman: 🚨BREAKING: Karoline Leavitt just spoke for over 5-minutes about the horrific murder of Iryna Zarutska:\n\nShe finished i…",
+      "timestamp": "Wed Sep 10 07:43:20 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 27471,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965471159274672129",
+        "author": "@GuntherEagleman",
+        "text": "🚨BREAKING: Karoline Leavitt just spoke for over 5-minutes about the horrific murder of Iryna Zarutska:\n\nShe finished it off by DECIMATING legacy media.\n\n\"Perhaps most shamefully of all is the media, many outlets in this room, decided that her murder was not worth reporting on originally because it does not fit a preferred narrative.\"\n\n\"Many of the journalists spilled plenty of ink trying to smear Daniel Penny.\"",
+        "timestamp": "Tue Sep 09 17:43:35 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 27471,
+          "likes": 138219,
+          "replies": 2126,
+          "quotes": 513
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965682206137090544",
+      "author": "@elonmusk",
+      "text": "RT @AlexBerenson: Until the left admits the truth about race and crime, its efforts to shout the right down over cases like this will only…",
+      "timestamp": "Wed Sep 10 07:42:13 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 2278,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965520382032838785",
+        "author": "@AlexBerenson",
+        "text": "Until the left admits the truth about race and crime, its efforts to shout the right down over cases like this will only provoke more anger.\n\nAnd this is the truth about race and crime: https://t.co/gSzj8nrnZK",
+        "timestamp": "Tue Sep 09 20:59:11 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 2278,
+          "likes": 10391,
+          "replies": 596,
+          "quotes": 62
+        },
+        "type": "quote_tweet",
+        "quoted_content": {
+          "id": "1965519793127391657",
+          "author": "@AlexBerenson",
+          "text": "Seriously? This is how @nytimes is framing the response to the media’s decision to ignore this case?\n\nThis is only going to get worse https://t.co/Ouhro9qtQ4",
+          "timestamp": "Tue Sep 09 20:56:50 +0000 2025",
+          "media": [
+            "photo"
+          ],
+          "engagement": {
+            "retweets": 3952,
+            "likes": 32144,
+            "replies": 1989,
+            "quotes": 303
+          },
+          "type": "original"
+        }
+      }
+    },
+    {
+      "id": "1965681592011264327",
+      "author": "@elonmusk",
+      "text": "RT @Rothmus: https://t.co/Vk6rH0OoCF",
+      "timestamp": "Wed Sep 10 07:39:46 +0000 2025",
+      "media": [
+        "photo"
+      ],
+      "engagement": {
+        "retweets": 17324,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965494029707280750",
+        "author": "@Rothmus",
+        "text": "https://t.co/Vk6rH0OoCF",
+        "timestamp": "Tue Sep 09 19:14:28 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 17324,
+          "likes": 132511,
+          "replies": 1038,
+          "quotes": 468
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965681129404703206",
+      "author": "@elonmusk",
+      "text": "These NGOs should be sued into oblivion and their boards of directors ostracized from society",
+      "timestamp": "Wed Sep 10 07:37:56 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 66239,
+        "likes": 323042,
+        "replies": 7269,
+        "quotes": 1348
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965444718755467296",
+        "author": "@bennyjohnson",
+        "text": "And there you have it. \n\n$3.3 MILLION from left-wing NGO The MacArthur Foundation went to Mecklenburg County to “reduce the jail population”, the very county that released career criminal DeCarlos Brown 14 times.\n\nInsane. Follow the money. Democrats want criminals on the loose. \n\nH/t: @megbasham",
+        "timestamp": "Tue Sep 09 15:58:31 +0000 2025",
+        "media": [
+          "photo",
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 24653,
+          "likes": 95761,
+          "replies": 2716,
+          "quotes": 1303
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965680466767536140",
+      "author": "@elonmusk",
+      "text": "💯",
+      "timestamp": "Wed Sep 10 07:35:18 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 13041,
+        "likes": 146276,
+        "replies": 1601,
+        "quotes": 102
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965607283641254269",
+        "author": "@JDVance",
+        "text": "Law enforcement arrested this thug 14 times. It wasn’t law enforcement that failed. It was weak politicians like you who kept letting him out of prison.",
+        "timestamp": "Wed Sep 10 02:44:30 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 23254,
+          "likes": 188191,
+          "replies": 4576,
+          "quotes": 729
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965680325042024635",
+      "author": "@elonmusk",
+      "text": "RT @unlimited_ls: 🚨BREAKING UPDATE: Man accused of st*bbing an elderly couple and setting their bodies on fire is a level 3 s*x offender wi…",
+      "timestamp": "Wed Sep 10 07:34:44 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 13980,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965588108470014160",
+        "author": "@unlimited_ls",
+        "text": "🚨BREAKING UPDATE: Man accused of st*bbing an elderly couple and setting their bodies on fire is a level 3 s*x offender with a 30-year violent criminal history and was out on parole for first-degree robbery\n\n42-year-old Jamel McGriff is armed and dangerous\n\nInvestigators believe he st*bbed an elderly couple and set their bodies on fire to cover the m*rders\n\nHe has a 30-year violent criminal history\n\nMcGriff is a Level 3 registered s*x offender, the highest risk for reoffending\n\nHe is out on parole for a 2006 first-degree robbery after serving 16 years\n\nHe is also wanted for two robberies in Manhattan in July and an attempted Midtown robbery on August 31\n\nPolice say he was last seen in the Bronx earlier today pawning two cell phones",
+        "timestamp": "Wed Sep 10 01:28:18 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 13980,
+          "likes": 42168,
+          "replies": 1418,
+          "quotes": 488
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965680036100669503",
+      "author": "@elonmusk",
+      "text": "Only gets better from here",
+      "timestamp": "Wed Sep 10 07:33:35 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 4110,
+        "likes": 26711,
+        "replies": 1657,
+        "quotes": 105
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965545088831869222",
+        "author": "@amXFreeze",
+        "text": "Grok Code just literally cloned the entire Netflix UI with a one shot prompt\n\nFrom the iconic Hero section to the interactive Carousel, all with a single prompt and a few web-sourced image links\n\nIt’s not just fast, it's the most cost-effective SOTA model out there\n➝ Input: Grok $0.20 vs Claude $3 (15x cheaper)\n➝ Output: Grok $1.50 vs Claude $15 (10x cheaper)\n\nHere’s how you can do it in VS Code with Kilo Code\n\nGrok Code matches Claude Sonnet 4 in performance, but is 10-15x more cost-effective\n\nAll this for less than $1\nSOTA power, fractional cost",
+        "timestamp": "Tue Sep 09 22:37:21 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 279,
+          "likes": 2479,
+          "replies": 260,
+          "quotes": 72
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965679848325812251",
+      "author": "@elonmusk",
+      "text": "RT @FBIDirectorKash: The brutal attack on Iryna Zarutska was a disgraceful act that should never happen in America. \n\nThe @FBI immediately…",
+      "timestamp": "Wed Sep 10 07:32:51 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 9305,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965485060116631757",
+        "author": "@FBIDirectorKash",
+        "text": "The brutal attack on Iryna Zarutska was a disgraceful act that should never happen in America. \n\nThe @FBI immediately surged into action to ensure justice is served and to make clear that violent criminals will never be allowed to walk free again. \n\nPresident Trump is committed to restoring safety to every American city, and I want to thank @AGPamBondi for delivering the federal charges that will hold this perpetrator accountable.",
+        "timestamp": "Tue Sep 09 18:38:49 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 9305,
+          "likes": 57710,
+          "replies": 5787,
+          "quotes": 506
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965679784169751004",
+      "author": "@elonmusk",
+      "text": "Time for MASSIVE change in America \n https://t.co/IyUpNRHB2e",
+      "timestamp": "Wed Sep 10 07:32:35 +0000 2025",
+      "media": [
+        "video"
+      ],
+      "engagement": {
+        "retweets": 50095,
+        "likes": 337608,
+        "replies": 8153,
+        "quotes": 1699
+      },
+      "type": "original"
+    },
+    {
+      "id": "1965678199821795482",
+      "author": "@elonmusk",
+      "text": "Release the video",
+      "timestamp": "Wed Sep 10 07:26:18 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 56949,
+        "likes": 364238,
+        "replies": 5437,
+        "quotes": 975
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965546120894943417",
+        "author": "@CatchUpFeed",
+        "text": "IMPORTANT: Four months after Karmelo Anthony killed Austin Mecalf at a track meet, authorities still refuse to release the video — and remember, over $500K was reportedly raised for Anthony’s family via GiveSendGo https://t.co/v2uCbR0uql",
+        "timestamp": "Tue Sep 09 22:41:27 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 4095,
+          "likes": 22991,
+          "replies": 732,
+          "quotes": 380
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965677976177320301",
+      "author": "@elonmusk",
+      "text": "💯",
+      "timestamp": "Wed Sep 10 07:25:24 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 19786,
+        "likes": 149420,
+        "replies": 4945,
+        "quotes": 535
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965440427680780550",
+        "author": "@realchrisrufo",
+        "text": "We need more police, more prisons, and more asylums. And yes, we can arrest our way out of the psychotic-criminals-murdering-people-in-the-streets problem.",
+        "timestamp": "Tue Sep 09 15:41:28 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 3852,
+          "likes": 25312,
+          "replies": 1784,
+          "quotes": 387
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965677846283911373",
+      "author": "@elonmusk",
+      "text": "F NYT",
+      "timestamp": "Wed Sep 10 07:24:53 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 17462,
+        "likes": 114619,
+        "replies": 3821,
+        "quotes": 575
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965563997987766745",
+        "author": "@MikeBenzCyber",
+        "text": "The Jenga tower of mental bullshit they built to justify permanent racial discrimination against white people in news reporting. https://t.co/cWPuzEEfuu",
+        "timestamp": "Tue Sep 09 23:52:30 +0000 2025",
+        "media": [
+          "photo",
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 5971,
+          "likes": 30430,
+          "replies": 1172,
+          "quotes": 466
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965677217964552444",
+      "author": "@elonmusk",
+      "text": "RT @HazeDoran: @MrAndyNgo https://t.co/rhgqdNg69S",
+      "timestamp": "Wed Sep 10 07:22:23 +0000 2025",
+      "media": [
+        "photo"
+      ],
+      "engagement": {
+        "retweets": 1363,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965500285536948328",
+        "author": "@HazeDoran",
+        "text": "@MrAndyNgo https://t.co/rhgqdNg69S",
+        "timestamp": "Tue Sep 09 19:39:19 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 1363,
+          "likes": 5404,
+          "replies": 209,
+          "quotes": 46
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965676894478893514",
+      "author": "@elonmusk",
+      "text": "RT @TheNotoriousMMA: I cannot escape the images circulating of the innocent, harmless, Ukrainian woman on public transport. \n\nBrutally murd…",
+      "timestamp": "Wed Sep 10 07:21:06 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 11858,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965552854628008374",
+        "author": "@TheNotoriousMMA",
+        "text": "I cannot escape the images circulating of the innocent, harmless, Ukrainian woman on public transport. \n\nBrutally murdered from behind. For nothing! \n\nI wish the absolute worst for her killer and I am neither shy nor sorry in saying this. \n\nThe absolute WORST IS DESERVED! \n\nSlava UKRAINE 🇺🇦 ❤️🙏 \n\nRIP Iryna Zarutska \n\nIf you think, with me as President, that this happens on Irish soil with out repercussion\n\nUse your head and THINK AGAIN! \n\nAny optical, political verbatim, WORTHLESS TO ME IN A SCENARIO LIKE THIS. \n\nSave it. \n\nVótáigh Conchúir Mac Gréagóir 🇮🇪",
+        "timestamp": "Tue Sep 09 23:08:13 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 11858,
+          "likes": 133230,
+          "replies": 3028,
+          "quotes": 476
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965676807761592345",
+      "author": "@elonmusk",
+      "text": "RT @TheLaurenChen: Poverty does not cause crime.\n\nPoverty does not make you stab an innocent bystander multiple times in the neck.\n\nThere a…",
+      "timestamp": "Wed Sep 10 07:20:46 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 6557,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965656561038303258",
+        "author": "@TheLaurenChen",
+        "text": "Poverty does not cause crime.\n\nPoverty does not make you stab an innocent bystander multiple times in the neck.\n\nThere are Asian countries where people live on dollars a day and they are still safer than any American city.\n\nJust stop with the excuses.",
+        "timestamp": "Wed Sep 10 06:00:18 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 6557,
+          "likes": 44729,
+          "replies": 1878,
+          "quotes": 221
+        },
+        "type": "quote_tweet",
+        "quoted_content": {
+          "id": "1965527844089725311",
+          "author": "@drewthinkalot",
+          "text": "@BehizyTweets @LaurenWitzkeDE That won’t change the root causes for crime. Poverty is a root cause of crime. You want to stop crime? Stop poverty first and crime will always follow",
+          "timestamp": "Tue Sep 09 21:28:50 +0000 2025",
+          "media": [],
+          "engagement": {
+            "retweets": 4,
+            "likes": 70,
+            "replies": 2912,
+            "quotes": 235
+          },
+          "type": "original"
+        }
+      }
+    },
+    {
+      "id": "1965676717680521538",
+      "author": "@elonmusk",
+      "text": "RT @Not_the_Bee: I am the father of three girls. This sickens me more than anything else I could possibly witness, and it’s a wake up call.…",
+      "timestamp": "Wed Sep 10 07:20:24 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 9436,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965615585020215719",
+        "author": "@Not_the_Bee",
+        "text": "I am the father of three girls. This sickens me more than anything else I could possibly witness, and it’s a wake up call. Fighting the woke mind virus is the destiny of the men of our generation. It must be done to protect our women and save our country. https://t.co/XPS2kmPcsm",
+        "timestamp": "Wed Sep 10 03:17:29 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 9436,
+          "likes": 66667,
+          "replies": 2124,
+          "quotes": 432
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965676411878027519",
+      "author": "@elonmusk",
+      "text": "RT @AutismCapital: 🚨ELON MUSK: \"If you take away religion, I think you get something in its place which is worse than what was there before…",
+      "timestamp": "Wed Sep 10 07:19:11 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 8934,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965645667264798723",
+        "author": "@AutismCapital",
+        "text": "🚨ELON MUSK: \"If you take away religion, I think you get something in its place which is worse than what was there before. You get something destructive like the woke mind virus taking the place of religion. You get dystopian de facto religions that are self destructive.\n\nWe need some sort of revival of religion or coherent philosophy that people can get excited about.\"",
+        "timestamp": "Wed Sep 10 05:17:01 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 8934,
+          "likes": 63058,
+          "replies": 4282,
+          "quotes": 1056
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965675821345263699",
+      "author": "@elonmusk",
+      "text": "RT @Glinner: What. The. Fuck.",
+      "timestamp": "Wed Sep 10 07:16:50 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 2587,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965595592501198889",
+        "author": "@Glinner",
+        "text": "What. The. Fuck.",
+        "timestamp": "Wed Sep 10 01:58:02 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 2587,
+          "likes": 21056,
+          "replies": 451,
+          "quotes": 49
+        },
+        "type": "quote_tweet",
+        "quoted_content": {
+          "id": "1965469727196938324",
+          "author": "@DougMackeyCase",
+          "text": "NEW YORK TIMES RACIAL HIERARCHY: Crime against Iryna Zarutska was committed by a capital \"B\" Black man against a lowercase \"w\" white woman.\n\nYou are a second-class citizen. https://t.co/FfviZd3uzW",
+          "timestamp": "Tue Sep 09 17:37:54 +0000 2025",
+          "media": [
+            "photo"
+          ],
+          "engagement": {
+            "retweets": 9400,
+            "likes": 52421,
+            "replies": 1843,
+            "quotes": 953
+          },
+          "type": "original"
+        }
+      }
+    },
+    {
+      "id": "1965673356235358499",
+      "author": "@elonmusk",
+      "text": "Toast",
+      "timestamp": "Wed Sep 10 07:07:03 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 7302,
+        "likes": 62524,
+        "replies": 3877,
+        "quotes": 326
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965634225073483988",
+        "author": "@AutismCapital",
+        "text": "🚨ELON MUSK: \"I haven't been to DC since May. The government is basically unfixable. I applaud David (Sacks') noble efforts...but at the end of the day if you look at our national debt...if AI and robots don't solve our national debt, we're toast.\" https://t.co/XKSes4fBfq",
+        "timestamp": "Wed Sep 10 04:31:33 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 2197,
+          "likes": 22510,
+          "replies": 1033,
+          "quotes": 367
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965672406615556329",
+      "author": "@elonmusk",
+      "text": "RT @stillgray: This is the full, unedited and uncensored video of Iryna Zarutska's murder. No one cared. She died alone. You need to watch…",
+      "timestamp": "Wed Sep 10 07:03:16 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 7684,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965493057341849748",
+        "author": "@stillgray",
+        "text": "This is the full, unedited and uncensored video of Iryna Zarutska's murder. No one cared. She died alone. You need to watch this. https://t.co/R3zex0VlDQ",
+        "timestamp": "Tue Sep 09 19:10:36 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 7684,
+          "likes": 39923,
+          "replies": 3275,
+          "quotes": 1798
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965668250731381175",
+      "author": "@elonmusk",
+      "text": "The murder rate spikes up dramatically around 2020",
+      "timestamp": "Wed Sep 10 06:46:45 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 15524,
+        "likes": 101087,
+        "replies": 5458,
+        "quotes": 707
+      },
+      "type": "original"
+    },
+    {
+      "id": "1965659794536370639",
+      "author": "@elonmusk",
+      "text": "RT @PM_ViktorOrban: ⚠️ The Brusselian elite are pushing joint indebtedness to strip nations of their sovereignty and drag us toward a Unite…",
+      "timestamp": "Wed Sep 10 06:13:09 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 4113,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965381837380886805",
+        "author": "@PM_ViktorOrban",
+        "text": "⚠️ The Brusselian elite are pushing joint indebtedness to strip nations of their sovereignty and drag us toward a United States of Europe. They want to use the war in Ukraine as the pretext to shackle us all financially. We must look beyond the battlefield to the future of the Union itself: free nations or submission to unelected bureaucrats?",
+        "timestamp": "Tue Sep 09 11:48:39 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 4113,
+          "likes": 15624,
+          "replies": 784,
+          "quotes": 260
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965659393908936981",
+      "author": "@elonmusk",
+      "text": "💯",
+      "timestamp": "Wed Sep 10 06:11:34 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 76132,
+        "likes": 533602,
+        "replies": 10404,
+        "quotes": 1518
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965467546574082395",
+        "author": "@MattWalshBlog",
+        "text": "This image will define the new civil rights movement. We have a right to use public accommodations without being butchered in our seats. We have a right to safe communities where violent animals are rounded up and caged. This is not just a local crime. It’s a civil rights issue. https://t.co/3VuADE6thr",
+        "timestamp": "Tue Sep 09 17:29:14 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 24766,
+          "likes": 140804,
+          "replies": 5369,
+          "quotes": 1868
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965657334837117338",
+      "author": "@elonmusk",
+      "text": "RT @neuralink: There are now 12 people around the world with Neuralink implants. Collectively, they’ve had their devices for 2,000 days and…",
+      "timestamp": "Wed Sep 10 06:03:23 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 1474,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965528520777716119",
+        "author": "@neuralink",
+        "text": "There are now 12 people around the world with Neuralink implants. Collectively, they’ve had their devices for 2,000 days and accumulated over 15,000 hours of use.\n\nWe look forward to continuing to explore the possibilities of neural interfaces with all of our participants! https://t.co/OCuDN40abx",
+        "timestamp": "Tue Sep 09 21:31:31 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 1474,
+          "likes": 9459,
+          "replies": 565,
+          "quotes": 131
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965626233116655676",
+      "author": "@dotey",
+      "text": "微软正在与Anthropic展开合作，把Claude模型引入Office 365。\n\n未来，Word、Excel和PowerPoint中的某些Copilot功能，将逐步采用Claude模型，尤其是在内部测试显示Claude表现更好的领域——比如Excel电子表格的函数计算，以及PowerPoint制作更有吸引力的幻灯片时。",
+      "timestamp": "Wed Sep 10 03:59:48 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 5,
+        "likes": 48,
+        "replies": 7,
+        "quotes": 2
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965533111355146729",
+        "author": "@kimmonismus",
+        "text": "Microsoft is moving away from OpenAI for Office 365 and bringing Anthropic on board. \n\nClaude models will be used for certain Copilot features in Word, Excel, and PowerPoint in the future—especially where they perform better according to internal tests, such as in spreadsheet functions or more attractive presentations.\n\nThere are two sides to this: on the one hand, it improves product quality, and on the other, it sends a signal to OpenAI, with whom Microsoft is currently engaged in tough negotiations anyway. \n\nAnother interesting point is that Microsoft has to pay for Anthropic via AWS, while OpenAI models are free for them under the existing partnership.",
+        "timestamp": "Tue Sep 09 21:49:46 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 42,
+          "likes": 411,
+          "replies": 41,
+          "quotes": 12
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965608255025275189",
+      "author": "@dotey",
+      "text": "支持，帮转",
+      "timestamp": "Wed Sep 10 02:48:21 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 0,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965575300210925763",
+        "author": "@lifesinger",
+        "text": "☘️ YouMind 0.4 发布\n\nYouMind 是一个专门为内容学习者、内容创作者打造的 AI Creation Studio，助力你把每一个灵感想法转变成“让自己满意的作品”。\n\n今天同时在 Product Hunt 上线啦 🚀\n\n现在非常需要你和团队宝贵的 up/comment 👇\nhttps://t.co/otopLUVMW9\n\n我们团队有 20+ 有效票，后续如需帮忙，我们一定 support back！\n\n同时打榜期间，我们提供 YouMind 订阅五折优惠码：CUS0C7YU\n\n任何套餐，在 Stripe 支付时填入上面优惠码，立享五折\n\n你的支持，让世界充满温暖 ❤️",
+        "timestamp": "Wed Sep 10 00:37:24 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 52,
+          "likes": 284,
+          "replies": 79,
+          "quotes": 43
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965585498203980039",
+      "author": "@elonmusk",
+      "text": "RT @TheRabbitHole84: All Lives Matter",
+      "timestamp": "Wed Sep 10 01:17:56 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 2307,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965530101099233655",
+        "author": "@TheRabbitHole84",
+        "text": "All Lives Matter",
+        "timestamp": "Tue Sep 09 21:37:48 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 2307,
+          "likes": 17149,
+          "replies": 2267,
+          "quotes": 257
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963384693833023514",
+      "author": "@dotey",
+      "text": "我现在用Gemini pro远多于ChatGPT",
+      "timestamp": "Wed Sep 03 23:32:43 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 6,
+        "likes": 236,
+        "replies": 52,
+        "quotes": 3
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1963384320527405433",
+        "author": "@linhuiww",
+        "text": "@dotey AI 时代的朝三暮四，想要订阅 Gemini Pro 了",
+        "timestamp": "Wed Sep 03 23:31:14 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 0,
+          "likes": 4,
+          "replies": 3,
+          "quotes": 1
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963369380865356268",
+      "author": "@elonmusk",
+      "text": "RT @TRobinsonNewEra: The 'Muslim Brotherhood' is banned by Saudi Arabia, Egypt, UAE, the list goes on.\n\nYet the UK allows it.\n\nThey must be…",
+      "timestamp": "Wed Sep 03 22:31:52 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 10448,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1963233967726829913",
+        "author": "@TRobinsonNewEra",
+        "text": "The 'Muslim Brotherhood' is banned by Saudi Arabia, Egypt, UAE, the list goes on.\n\nYet the UK allows it.\n\nThey must be banned, they're the route to all islamic terrorism across the world. \n\nBan the Muslim Brotherhood!\n\nhttps://t.co/F5wLsaZatY",
+        "timestamp": "Wed Sep 03 13:33:47 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 10448,
+          "likes": 41270,
+          "replies": 1597,
+          "quotes": 382
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963365598580424866",
+      "author": "@elonmusk",
+      "text": "Complete abdication of their responsibility to the welfare of the people by the UK authorities",
+      "timestamp": "Wed Sep 03 22:16:50 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 31687,
+        "likes": 154333,
+        "replies": 6442,
+        "quotes": 634
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1963246205925835059",
+        "author": "@benleo444",
+        "text": "Britain’s free speech nightmare is shocking Americans. It’s all they’re talking about. \n\nBen Shapiro on Fox News just now: \n\n“Grooming gangs. Knife crime. Importing Middle East migrants. Free speech. This is what it looks like when a civilisation decides to hollow itself out.” https://t.co/fAJefMWxb9",
+        "timestamp": "Wed Sep 03 14:22:25 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 5636,
+          "likes": 26144,
+          "replies": 1204,
+          "quotes": 343
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963364518144176286",
+      "author": "@dotey",
+      "text": "原文：https://t.co/lV0pOiXgxD",
+      "timestamp": "Wed Sep 03 22:12:33 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 0,
+        "likes": 6,
+        "replies": 1,
+        "quotes": 0
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1963250319879708800",
+        "author": "@zephyr_z9",
+        "text": "> LLaMA dev at Meta, 2025\n> just finished \"training\" LLaMA 4 Maverick on 120,000 H100s\n> cost more than Zuck's entire Hawaiian bunker complex\n> we're gonna own these Chinese open-source posers\n> @teortaxesTex on Twitter posts a link to a paper from \"DeepSeek\"\n> some guys from Hangzhou\n> their model \"R1\" is topping the charts\n> lol, probably just overfitted trash\n> boss runs into the bullpen, face whiter than a sheet\n> \"THEY DID WHAT ON 2000 GPUS?!\"\n> mfw their paper shows R1 was trained on a fraction of our compute\n> their architecture is some galaxy-brain shit we didn't think of\n> absolute panic\n> Zuck's personal android body is seen storming towards the war room\n> can hear screaming through the door\n> \"120K GPUS AND WE GET BEAT BY A WHALE USING A CALCULATOR?!\"\n> entire project delayed to April. \"For more alignment.\" aka we're copying their homework\n> finally release LLaMA 4 Maverick\n> it's just a shitty fork of DeepSeek V3 with a StepMom prompt\n> a complete dud\n> desperate PM has a brilliant idea\n> \"Let's just overfit it specifically to LMARENA\"\n> Instantly get caught\n> entire \"Llama\" team gets the boot. HR is working overtime with cardboard boxes\n> Zuck, in a metaverse all-hands, says the classic line: \"Time to double down\"\n> announces the \"Meta Superintelligence Lab\" (MSL)\n> plan is to just buy success\n> calls Ilya Sutskever. \"I wanna buy SSI.\"\n> Ilya literally laughs and hangs up.\n> calls Mira Murati at Thinky Machine. \n> She says \"We're not for sale, but our API will be available for your next product.\"\n> absolute burn.\n> Tries to recruit Altman's Lieutenant but has to settle for Altman's bottom\n> buys Scale AI from Alexandr Wang for $15 billion\n> the guy famous for data labeling sweatshops in SEA is now head of AI Research\n> starts throwing money at every AI researcher with a pulse\n> offers $100M packages, $1B packages for \"superstars\"\n> a few mercenaries with no morals and huge gambling debts sign on\n> finally has a semi-respectable team\n> Wang can manage slaves not AGI researchers\n> massive egos clash\n> Researcher threatens to leave unless he's made \"Chief Scientist,\" a title he invented on the spot\n> a different one secretly records Wang jerking off to Sam and uses it as blackmail to get a VP role\n> the MSL is a billion-dollar clown car on fire, driven by egomaniacs who are all trying to steal the steering wheel\n> Zuck is in his bunker, watching a VR replay of the Facebook IPO, crying\n> we had 120,000 H100s… and we got mogged by a guy from a city best known for West Lake\nPIC UNRELATED",
+        "timestamp": "Wed Sep 03 14:38:46 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 135,
+          "likes": 2033,
+          "replies": 77,
+          "quotes": 45
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963364518144176286",
+      "author": "@dotey",
+      "text": "原文：https://t.co/lV0pOiXgxD",
+      "timestamp": "Wed Sep 03 22:12:33 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 0,
+        "likes": 6,
+        "replies": 1,
+        "quotes": 0
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1963250319879708800",
+        "author": "@zephyr_z9",
+        "text": "> LLaMA dev at Meta, 2025\n> just finished \"training\" LLaMA 4 Maverick on 120,000 H100s\n> cost more than Zuck's entire Hawaiian bunker complex\n> we're gonna own these Chinese open-source posers\n> @teortaxesTex on Twitter posts a link to a paper from \"DeepSeek\"\n> some guys from Hangzhou\n> their model \"R1\" is topping the charts\n> lol, probably just overfitted trash\n> boss runs into the bullpen, face whiter than a sheet\n> \"THEY DID WHAT ON 2000 GPUS?!\"\n> mfw their paper shows R1 was trained on a fraction of our compute\n> their architecture is some galaxy-brain shit we didn't think of\n> absolute panic\n> Zuck's personal android body is seen storming towards the war room\n> can hear screaming through the door\n> \"120K GPUS AND WE GET BEAT BY A WHALE USING A CALCULATOR?!\"\n> entire project delayed to April. \"For more alignment.\" aka we're copying their homework\n> finally release LLaMA 4 Maverick\n> it's just a shitty fork of DeepSeek V3 with a StepMom prompt\n> a complete dud\n> desperate PM has a brilliant idea\n> \"Let's just overfit it specifically to LMARENA\"\n> Instantly get caught\n> entire \"Llama\" team gets the boot. HR is working overtime with cardboard boxes\n> Zuck, in a metaverse all-hands, says the classic line: \"Time to double down\"\n> announces the \"Meta Superintelligence Lab\" (MSL)\n> plan is to just buy success\n> calls Ilya Sutskever. \"I wanna buy SSI.\"\n> Ilya literally laughs and hangs up.\n> calls Mira Murati at Thinky Machine. \n> She says \"We're not for sale, but our API will be available for your next product.\"\n> absolute burn.\n> Tries to recruit Altman's Lieutenant but has to settle for Altman's bottom\n> buys Scale AI from Alexandr Wang for $15 billion\n> the guy famous for data labeling sweatshops in SEA is now head of AI Research\n> starts throwing money at every AI researcher with a pulse\n> offers $100M packages, $1B packages for \"superstars\"\n> a few mercenaries with no morals and huge gambling debts sign on\n> finally has a semi-respectable team\n> Wang can manage slaves not AGI researchers\n> massive egos clash\n> Researcher threatens to leave unless he's made \"Chief Scientist,\" a title he invented on the spot\n> a different one secretly records Wang jerking off to Sam and uses it as blackmail to get a VP role\n> the MSL is a billion-dollar clown car on fire, driven by egomaniacs who are all trying to steal the steering wheel\n> Zuck is in his bunker, watching a VR replay of the Facebook IPO, crying\n> we had 120,000 H100s… and we got mogged by a guy from a city best known for West Lake\nPIC UNRELATED",
+        "timestamp": "Wed Sep 03 14:38:46 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 135,
+          "likes": 2033,
+          "replies": 77,
+          "quotes": 45
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963364390901596458",
+      "author": "@dotey",
+      "text": "硅谷惊变：12万张H100的挽歌\n第一章：帝国黄昏\n\n2025年，山景城上空的空气都弥漫着一股美元燃烧和GPU散热扇混合的香甜味道。我，作为Meta LLaMA项目的一名普通开发，每天都像打了鸡血一样。我们刚用12万张英伟达H100完成了“LLaMA 4 Maverick”的“训练”。\n\n12万张！这是个什么概念？这堆铁疙瘩的成本，比扎克伯格在夏威夷为末日准备的那个豪华地堡群还要贵。我们内部的口号是：“一统江湖，顺便把那些中国开源社区的“模仿者”们按在地上摩擦。” 每个人脸上都洋溢着技术霸权的自信，仿佛我们即将发布的不是一个大模型，而是《三体》里的二向箔。我们坚信，在绝对的算力面前，一切技巧都是花拳绣腿。\n\n那天下午，阳光正好，我正悠闲地喝着La Colombe的冷萃。突然，公司内网的摸鱼频道里，有人甩了个推特链接，链接指向一篇论文，作者署名“DeepSeek”，一个来自中国杭州的团队。\n\n“哟，杭州来的？” 我轻蔑地笑了笑，“西湖龙井味儿的模型吗？”\n\n论文标题很唬人，叫什么《R1模型：通往通用智能的稀疏激活路径探索》。大家起初都没当回事，排行榜嘛，刷分刷出来的“过拟合垃圾”还少吗？我们见得多了。\n\n五分钟后，我的顶头上司，一个平时冷静到连服务器着火都会先发个Jira Ticket的男人，像一阵风一样冲进了我们的开放办公区。他的脸比刚出厂的A4纸还白，嘴唇哆嗦着，指着自己的显示器，声音尖锐得像是被踩了尾巴的猫：\n\n“他……他们只用了2000张GPU？！”\n\n整个 bullpen 瞬间死寂。2000张？我们的零头都不到。我赶紧打开那篇论文，当看到他们的架构图时，我感觉我的大学计算机科学学位像一张废纸。那是一种我们想都没想过的、堪称“银河系大脑”级别的设计，用一种匪夷所思的方式解决了算力瓶颈。\n\n绝对的恐慌开始蔓延。\n\n紧接着，走廊尽头传来一阵急促而沉重的脚步声。不是人类的脚步声，更像是终结者在追杀莎拉·康纳。我们都知道，那是扎克伯格那具价值连城的私人机器人化身（Zuck's personal android body）出动了。他面无表情地“飘”向高层战情室，身后留下一串冰冷的杀气。\n\n战情室的隔音效果一流，但我们依然能隐约听到里面传来扎克伯格那标志性的、略带机器质感的咆哮：\n\n“12万张GPU！！我们居然被一个拿着计算器的鲸鱼给干翻了？！这钱是让你们拿去点篝火晚会了吗？！”\n\n第二天，全公司收到邮件：LLaMA 4 Maverick项目延期至明年四月。官方理由是“为了进行更深度的安全与伦理对齐”。\n\n呵呵，鬼才信是为了“对齐”，我们就是在抄作业，而且是那种连题目都看不懂、只能硬着头皮描答案的抄。\n\n第二章：小丑竟是我自己\n\n几个月后，LLaMA 4 Maverick“终于”发布了。结果呢？一个加了点“继母文学（StepMom prompt）”私货的DeepSeek V3劣质分叉版。模型表现平平无奇，像个被灌了太多水的差生，毫无灵魂。\n\n项目彻底失败，产品经理（PM）急得像热锅上的蚂蚁，然后他想出了一个“天才”的主意：“既然打不过，我们就专门刷分！把它往LMARENA（一个主流的模型竞技场）上过拟合！”\n\n这操作就像一个学渣，放弃了所有科目，只把一首唐诗三百首背得滚瓜烂熟，然后宣称自己精通古典文学。\n\n结果？我们当场就被抓包了。社区的大神们几下就扒出了我们的底裤。这成了年度最大的AI丑闻。\n\n清洗开始了。整个“LlaMA”团队被连根拔起，HR部门的纸箱子在公司大厅堆得像个小型堡垒。我在收拾东西的时候，还能看到远处屏幕上，扎克伯格正在元宇宙全员大会上说着那句经典台词：“是时候加倍下注了（Time to double down）。”\n\n他宣布成立“Meta超级智能实验室（MSL）”，计划很简单：既然我们造不出成功，那我们就用钱去买。\n\n他第一个电话打给了Ilya Sutskever，开门见山：“伊尔亚，我想收购SSI（伊尔亚的新公司）。”\n\n电话那头传来伊尔亚标志性的、混合着轻蔑和怜悯的笑声，然后就是“嘟…嘟…嘟…”的忙音。\n\n第二个电话打给了Thinky Machine的Mira Murati。米拉的回答堪称年度最佳商业绝杀：“马克，我们是非卖品。不过，我们的API会向你们的下一款产品开放。”\n\n这话的潜台词是：你只配当我们的客户。\n\n扎克伯格不死心，想挖奥特曼的左膀右臂，结果一番操作下来，只请到了奥特曼的“底”层亲信。最后，他孤注一掷，豪掷150亿美元，买下了Scale AI和它的创始人Alexandr Wang。\n\n一个靠东南亚数据标注血汗工厂发家的“包工头”，就这样成了Meta AI研究的负责人。\n\n第三章：亿万美金的小丑车\n\n王同学（Alexandr Wang）上任后，开始对着所有脉搏还在跳动的AI研究员挥舞支票。1000万美元的包裹只是起步价，对所谓的“超级巨星”，甚至开出了1亿美元的天价合同。\n\n很快，几个没有道德底线、背着巨额赌债的学术雇佣兵签了卖身契。MSL的团队看起来终于有了点“星味”。\n\n但问题来了：王同学擅长管理流水线上的“奴隶”，却完全不知道该如何与这群自视甚高的AGI研究员打交道。\n\nMeta 超级智能实验室变成了一辆价值亿万美金、正在着火的小丑车，车上坐满了自大狂，每个人都想抢方向盘。\n\n一个研究员威胁说，如果不给他设立一个他当场发明的“首席科学家”头衔，他就立马辞职。\n\n另一个更狠，他偷偷录下王同学深夜对着Sam Altman的照片进行“自我安慰”的绝密视频，并以此为要挟，成功勒索到了一个VP的职位。\n\n整个实验室乌烟瘴气，内斗、八卦和丑闻比代码还多。\n\n而此刻，故事的主角，马克·扎克伯格，正独自一人待在他夏威夷的地堡里。他戴着最新的Quest头显，一遍又一遍地观看Facebook当年IPO的VR录像，泪流满面。\n\n他或许在想：“我们曾拥有一个时代，我们曾拥有12万张H100……\n最后，我们却被一个来自以西湖闻名的城市的团队，用一种我们无法理解的方式，彻底羞辱了。”",
+      "timestamp": "Wed Sep 03 22:12:02 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 26,
+        "likes": 120,
+        "replies": 19,
+        "quotes": 7
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1963319026886627678",
+        "author": "@Tz_2022",
+        "text": "翻译：\n\n> 我，Meta LLaMA 开发人员，2025年。\n> 刚用12万张H100把LLaMA 4“独行侠”给“训完”了。\n> 成本比扎克伯格那整个夏威夷地堡群都贵。\n> 当时心里想着：这下总算能把国内那帮开源装逼犯按在地上摩擦了。\n> 就在这时，推特上一个哥们@teortaxesTex发了个链接，一篇来自“深求（DeepSeek）”的论文。\n> 杭州来的一帮人。\n> 他们的模型，代号“R1”，直接霸榜了。\n> 我当时还“呵呵”，心想：估计又是什么刷榜的过拟合垃圾吧。\n> 突然，老板冲进我们码农格子间，脸比纸还白。\n> “他们用2000张GPU就搞出来了？！”\n> 我整个人都傻了。他们的论文里写着，R1的训练算力只是我们的零头。\n> 他们的模型架构是某种我们想都不敢想的天顶星人级别的骚操作。\n> 公司里彻底炸锅了，一片恐慌。\n> 有人看见扎克伯格的个人机器人化身正杀气腾腾地冲向战争指挥室。\n> 隔着门都能听到里面的咆哮：\n> “12万张GPU！结果被一个拿着计算器的巨鲸给办了？！”\n> 整个项目被推迟到明年四月。对外宣称是“为了做更多对齐。”—— 呵呵，懂的都懂，其实就是抄他们作业。\n> 好不容易发布了LLaMA 4“独行侠”。\n> 结果就是个DeepSeek V3的垃圾复刻版，塞了个“继母（StepMom）”的魔改prompt。\n> 彻底拉了。\n> 走投无路的产品经理想出了一个“绝妙”的主意：\n> “咱们就专门针对LMARENA竞技场搞个特供版过拟合！”\n> 结果秒被抓包。\n> 整个“Llama”团队被一锅端。HR搬着纸箱子忙得不可开交，全员“毕业”。\n> 扎克伯格在一次元宇宙全员大会上，说了那句经典台词：“是时候加倍下注了。”\n> 宣布成立“Meta超级智能实验室”（MSL）。\n> 计划很简单：就是砸钱买成功。\n> 他打电话给Ilya Sutskever。“我想买你的SSI公司。”\n> Ilya直接笑出声，然后挂了电话。\n> 他又打给Thinky Machine的Mira Murati。\n> 她说：“我们不卖，不过我们的API可以给你们的下一款产品用。”\n> 简直是公开处刑，杀人诛心。\n> 想挖奥特曼的副手大将，结果只搞来了个给他擦屁股的。\n> 最后花了150亿美元从Alexandr Wang手里买下了Scale AI。\n> 那个靠在东南亚开数据标注血汗工厂闻名的家伙，现在成了我们的AI研究负责人。\n> 他开始像撒币一样给每个还喘气的AI研究员砸钱。\n> 开出1亿美金的合同包，对“超级巨星”更是开价10亿。\n> 几个毫无道德底线、还欠了一屁股赌债的雇佣兵签了合同。\n> 团队总算是凑得半死不活、看着还行了。\n> 但Wang只懂得管理奴工，根本管不了这帮AGI研究员。\n> 实验室里各种巨婴、自大狂天天内斗。\n> 一个研究员威胁说，除非让他当“首席科学家”——一个他自己当场发明的头衔——否则就走人。\n> 另一个偷偷录下了Wang对着Sam的照片打胶的视频，以此要挟得到了一个副总裁的职位。\n> 这个MSL，就是一个价值十亿美金、还在熊熊燃烧的小丑车，由一群都想抢方向盘的自大狂驾驶着。\n> 扎克伯格独自待在他的地堡里，看着Facebook当年IPO的VR回放，哭了。\n> 我们曾拥有12万张H100……结果被一个来自西湖边上的哥们给完爆了。\n\n（配图与本文无关）",
+        "timestamp": "Wed Sep 03 19:11:47 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 8,
+          "likes": 51,
+          "replies": 8,
+          "quotes": 7
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963364390901596458",
+      "author": "@dotey",
+      "text": "硅谷惊变：12万张H100的挽歌\n第一章：帝国黄昏\n\n2025年，山景城上空的空气都弥漫着一股美元燃烧和GPU散热扇混合的香甜味道。我，作为Meta LLaMA项目的一名普通开发，每天都像打了鸡血一样。我们刚用12万张英伟达H100完成了“LLaMA 4 Maverick”的“训练”。\n\n12万张！这是个什么概念？这堆铁疙瘩的成本，比扎克伯格在夏威夷为末日准备的那个豪华地堡群还要贵。我们内部的口号是：“一统江湖，顺便把那些中国开源社区的“模仿者”们按在地上摩擦。” 每个人脸上都洋溢着技术霸权的自信，仿佛我们即将发布的不是一个大模型，而是《三体》里的二向箔。我们坚信，在绝对的算力面前，一切技巧都是花拳绣腿。\n\n那天下午，阳光正好，我正悠闲地喝着La Colombe的冷萃。突然，公司内网的摸鱼频道里，有人甩了个推特链接，链接指向一篇论文，作者署名“DeepSeek”，一个来自中国杭州的团队。\n\n“哟，杭州来的？” 我轻蔑地笑了笑，“西湖龙井味儿的模型吗？”\n\n论文标题很唬人，叫什么《R1模型：通往通用智能的稀疏激活路径探索》。大家起初都没当回事，排行榜嘛，刷分刷出来的“过拟合垃圾”还少吗？我们见得多了。\n\n五分钟后，我的顶头上司，一个平时冷静到连服务器着火都会先发个Jira Ticket的男人，像一阵风一样冲进了我们的开放办公区。他的脸比刚出厂的A4纸还白，嘴唇哆嗦着，指着自己的显示器，声音尖锐得像是被踩了尾巴的猫：\n\n“他……他们只用了2000张GPU？！”\n\n整个 bullpen 瞬间死寂。2000张？我们的零头都不到。我赶紧打开那篇论文，当看到他们的架构图时，我感觉我的大学计算机科学学位像一张废纸。那是一种我们想都没想过的、堪称“银河系大脑”级别的设计，用一种匪夷所思的方式解决了算力瓶颈。\n\n绝对的恐慌开始蔓延。\n\n紧接着，走廊尽头传来一阵急促而沉重的脚步声。不是人类的脚步声，更像是终结者在追杀莎拉·康纳。我们都知道，那是扎克伯格那具价值连城的私人机器人化身（Zuck's personal android body）出动了。他面无表情地“飘”向高层战情室，身后留下一串冰冷的杀气。\n\n战情室的隔音效果一流，但我们依然能隐约听到里面传来扎克伯格那标志性的、略带机器质感的咆哮：\n\n“12万张GPU！！我们居然被一个拿着计算器的鲸鱼给干翻了？！这钱是让你们拿去点篝火晚会了吗？！”\n\n第二天，全公司收到邮件：LLaMA 4 Maverick项目延期至明年四月。官方理由是“为了进行更深度的安全与伦理对齐”。\n\n呵呵，鬼才信是为了“对齐”，我们就是在抄作业，而且是那种连题目都看不懂、只能硬着头皮描答案的抄。\n\n第二章：小丑竟是我自己\n\n几个月后，LLaMA 4 Maverick“终于”发布了。结果呢？一个加了点“继母文学（StepMom prompt）”私货的DeepSeek V3劣质分叉版。模型表现平平无奇，像个被灌了太多水的差生，毫无灵魂。\n\n项目彻底失败，产品经理（PM）急得像热锅上的蚂蚁，然后他想出了一个“天才”的主意：“既然打不过，我们就专门刷分！把它往LMARENA（一个主流的模型竞技场）上过拟合！”\n\n这操作就像一个学渣，放弃了所有科目，只把一首唐诗三百首背得滚瓜烂熟，然后宣称自己精通古典文学。\n\n结果？我们当场就被抓包了。社区的大神们几下就扒出了我们的底裤。这成了年度最大的AI丑闻。\n\n清洗开始了。整个“LlaMA”团队被连根拔起，HR部门的纸箱子在公司大厅堆得像个小型堡垒。我在收拾东西的时候，还能看到远处屏幕上，扎克伯格正在元宇宙全员大会上说着那句经典台词：“是时候加倍下注了（Time to double down）。”\n\n他宣布成立“Meta超级智能实验室（MSL）”，计划很简单：既然我们造不出成功，那我们就用钱去买。\n\n他第一个电话打给了Ilya Sutskever，开门见山：“伊尔亚，我想收购SSI（伊尔亚的新公司）。”\n\n电话那头传来伊尔亚标志性的、混合着轻蔑和怜悯的笑声，然后就是“嘟…嘟…嘟…”的忙音。\n\n第二个电话打给了Thinky Machine的Mira Murati。米拉的回答堪称年度最佳商业绝杀：“马克，我们是非卖品。不过，我们的API会向你们的下一款产品开放。”\n\n这话的潜台词是：你只配当我们的客户。\n\n扎克伯格不死心，想挖奥特曼的左膀右臂，结果一番操作下来，只请到了奥特曼的“底”层亲信。最后，他孤注一掷，豪掷150亿美元，买下了Scale AI和它的创始人Alexandr Wang。\n\n一个靠东南亚数据标注血汗工厂发家的“包工头”，就这样成了Meta AI研究的负责人。\n\n第三章：亿万美金的小丑车\n\n王同学（Alexandr Wang）上任后，开始对着所有脉搏还在跳动的AI研究员挥舞支票。1000万美元的包裹只是起步价，对所谓的“超级巨星”，甚至开出了1亿美元的天价合同。\n\n很快，几个没有道德底线、背着巨额赌债的学术雇佣兵签了卖身契。MSL的团队看起来终于有了点“星味”。\n\n但问题来了：王同学擅长管理流水线上的“奴隶”，却完全不知道该如何与这群自视甚高的AGI研究员打交道。\n\nMeta 超级智能实验室变成了一辆价值亿万美金、正在着火的小丑车，车上坐满了自大狂，每个人都想抢方向盘。\n\n一个研究员威胁说，如果不给他设立一个他当场发明的“首席科学家”头衔，他就立马辞职。\n\n另一个更狠，他偷偷录下王同学深夜对着Sam Altman的照片进行“自我安慰”的绝密视频，并以此为要挟，成功勒索到了一个VP的职位。\n\n整个实验室乌烟瘴气，内斗、八卦和丑闻比代码还多。\n\n而此刻，故事的主角，马克·扎克伯格，正独自一人待在他夏威夷的地堡里。他戴着最新的Quest头显，一遍又一遍地观看Facebook当年IPO的VR录像，泪流满面。\n\n他或许在想：“我们曾拥有一个时代，我们曾拥有12万张H100……\n最后，我们却被一个来自以西湖闻名的城市的团队，用一种我们无法理解的方式，彻底羞辱了。”",
+      "timestamp": "Wed Sep 03 22:12:02 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 26,
+        "likes": 120,
+        "replies": 19,
+        "quotes": 7
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1963319026886627678",
+        "author": "@Tz_2022",
+        "text": "翻译：\n\n> 我，Meta LLaMA 开发人员，2025年。\n> 刚用12万张H100把LLaMA 4“独行侠”给“训完”了。\n> 成本比扎克伯格那整个夏威夷地堡群都贵。\n> 当时心里想着：这下总算能把国内那帮开源装逼犯按在地上摩擦了。\n> 就在这时，推特上一个哥们@teortaxesTex发了个链接，一篇来自“深求（DeepSeek）”的论文。\n> 杭州来的一帮人。\n> 他们的模型，代号“R1”，直接霸榜了。\n> 我当时还“呵呵”，心想：估计又是什么刷榜的过拟合垃圾吧。\n> 突然，老板冲进我们码农格子间，脸比纸还白。\n> “他们用2000张GPU就搞出来了？！”\n> 我整个人都傻了。他们的论文里写着，R1的训练算力只是我们的零头。\n> 他们的模型架构是某种我们想都不敢想的天顶星人级别的骚操作。\n> 公司里彻底炸锅了，一片恐慌。\n> 有人看见扎克伯格的个人机器人化身正杀气腾腾地冲向战争指挥室。\n> 隔着门都能听到里面的咆哮：\n> “12万张GPU！结果被一个拿着计算器的巨鲸给办了？！”\n> 整个项目被推迟到明年四月。对外宣称是“为了做更多对齐。”—— 呵呵，懂的都懂，其实就是抄他们作业。\n> 好不容易发布了LLaMA 4“独行侠”。\n> 结果就是个DeepSeek V3的垃圾复刻版，塞了个“继母（StepMom）”的魔改prompt。\n> 彻底拉了。\n> 走投无路的产品经理想出了一个“绝妙”的主意：\n> “咱们就专门针对LMARENA竞技场搞个特供版过拟合！”\n> 结果秒被抓包。\n> 整个“Llama”团队被一锅端。HR搬着纸箱子忙得不可开交，全员“毕业”。\n> 扎克伯格在一次元宇宙全员大会上，说了那句经典台词：“是时候加倍下注了。”\n> 宣布成立“Meta超级智能实验室”（MSL）。\n> 计划很简单：就是砸钱买成功。\n> 他打电话给Ilya Sutskever。“我想买你的SSI公司。”\n> Ilya直接笑出声，然后挂了电话。\n> 他又打给Thinky Machine的Mira Murati。\n> 她说：“我们不卖，不过我们的API可以给你们的下一款产品用。”\n> 简直是公开处刑，杀人诛心。\n> 想挖奥特曼的副手大将，结果只搞来了个给他擦屁股的。\n> 最后花了150亿美元从Alexandr Wang手里买下了Scale AI。\n> 那个靠在东南亚开数据标注血汗工厂闻名的家伙，现在成了我们的AI研究负责人。\n> 他开始像撒币一样给每个还喘气的AI研究员砸钱。\n> 开出1亿美金的合同包，对“超级巨星”更是开价10亿。\n> 几个毫无道德底线、还欠了一屁股赌债的雇佣兵签了合同。\n> 团队总算是凑得半死不活、看着还行了。\n> 但Wang只懂得管理奴工，根本管不了这帮AGI研究员。\n> 实验室里各种巨婴、自大狂天天内斗。\n> 一个研究员威胁说，除非让他当“首席科学家”——一个他自己当场发明的头衔——否则就走人。\n> 另一个偷偷录下了Wang对着Sam的照片打胶的视频，以此要挟得到了一个副总裁的职位。\n> 这个MSL，就是一个价值十亿美金、还在熊熊燃烧的小丑车，由一群都想抢方向盘的自大狂驾驶着。\n> 扎克伯格独自待在他的地堡里，看着Facebook当年IPO的VR回放，哭了。\n> 我们曾拥有12万张H100……结果被一个来自西湖边上的哥们给完爆了。\n\n（配图与本文无关）",
+        "timestamp": "Wed Sep 03 19:11:47 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 8,
+          "likes": 51,
+          "replies": 8,
+          "quotes": 7
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963364070570205219",
+      "author": "@elonmusk",
+      "text": "RT @antmiddleton: 📅 September 13th — be there.\nI’ll be speaking about one of the most important issues facing our city: safety and security…",
+      "timestamp": "Wed Sep 03 22:10:46 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 3815,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1963154784514384121",
+        "author": "@antmiddleton",
+        "text": "📅 September 13th — be there.\nI’ll be speaking about one of the most important issues facing our city: safety and security in London.\n\nThis is about more than words — it’s about regaining trust, restoring British values, and returning strength to our capital city. 🇬🇧 https://t.co/hVCgnIOegY",
+        "timestamp": "Wed Sep 03 08:19:08 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 3815,
+          "likes": 21031,
+          "replies": 1084,
+          "quotes": 110
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963360895830298825",
+      "author": "@elonmusk",
+      "text": "Instead of the police in the UK protecting the public from violent criminals, they spend their limited resources on arresting comedians for social media posts!\n\nShame, shame, shame!\n\nGive them the white feather of craven cowardice. \n\n 🪶",
+      "timestamp": "Wed Sep 03 21:58:09 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 22901,
+        "likes": 116032,
+        "replies": 4490,
+        "quotes": 586
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1963300679822225566",
+        "author": "@jk_rowling",
+        "text": "The UK: where a comedy writer is met with armed police because he tweeted that if a man refuses to leave a woman-only space he should get kicked in the balls, and elected politician @IanRBristow is free to publicly tell a woman to shut the fuck up with a picture of a gun. https://t.co/3EYgByY88T",
+        "timestamp": "Wed Sep 03 17:58:53 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 10234,
+          "likes": 49416,
+          "replies": 1587,
+          "quotes": 450
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963353315833778678",
+      "author": "@dotey",
+      "text": "AI Startup 现状 https://t.co/9gnixXUZqY",
+      "timestamp": "Wed Sep 03 21:28:02 +0000 2025",
+      "media": [
+        "photo"
+      ],
+      "engagement": {
+        "retweets": 22,
+        "likes": 243,
+        "replies": 7,
+        "quotes": 3
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1963310277409345951",
+        "author": "@ai_for_success",
+        "text": "Story of every CEO right now 😂 https://t.co/ukZlFa46ZW",
+        "timestamp": "Wed Sep 03 18:37:01 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 2769,
+          "likes": 23956,
+          "replies": 334,
+          "quotes": 285
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963333263088652787",
+      "author": "@elonmusk",
+      "text": "RT @Starlink: Starlink is built to deliver reliable, high-speed internet with strong connectivity through harsh weather conditions, network…",
+      "timestamp": "Wed Sep 03 20:08:21 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 1618,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1963319175583338906",
+        "author": "@Starlink",
+        "text": "Starlink is built to deliver reliable, high-speed internet with strong connectivity through harsh weather conditions, network disruptions and natural disasters → https://t.co/6Qeg66bxev https://t.co/8zfd5OSofV",
+        "timestamp": "Wed Sep 03 19:12:22 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 1618,
+          "likes": 6326,
+          "replies": 676,
+          "quotes": 62
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963299614481646071",
+      "author": "@dotey",
+      "text": "谢谢分享，之所以我只写故事没写其他，就是从故事每个人都会得到不同的感想，但并不一定适合其他人\nhttps://t.co/17dZUecgB9",
+      "timestamp": "Wed Sep 03 17:54:39 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 0,
+        "likes": 4,
+        "replies": 1,
+        "quotes": 0
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1963297946734125333",
+        "author": "@Joseph_wang_hci",
+        "text": "manus很有趣的背后故事！我get到的两个点：\n\n1. 语言交互+不停点击yes/no（抖音式操作=cursor for x）\n\n2. 概念过于超前的产品无需用户研究（诺基亚研究了100w用户得出n97&gt;ip1；苹果研发从来不做用盐；mom test书中提到直接告诉用户idea或者直接展示产品无法得到真实反馈）",
+        "timestamp": "Wed Sep 03 17:48:01 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 2,
+          "likes": 18,
+          "replies": 0,
+          "quotes": 2
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963297206263222424",
+      "author": "@elonmusk",
+      "text": "💯",
+      "timestamp": "Wed Sep 03 17:45:04 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 7537,
+        "likes": 48783,
+        "replies": 2727,
+        "quotes": 149
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1963132016947331198",
+        "author": "@BorisJohnson",
+        "text": "Everywhere I go I find international investors worried about levels of crime and disorder in Labour-run London. And what are Khan’s cops doing? Arresting comedians for jokes. \n\nBe in no doubt that under Keir Starmer the authorities are destroying this country’s ancient and priceless reputation for free speech. Take away free speech, freedom of expression, freedom of thought - and you remove much of what is unique about this country and our culture.  We are witnessing a slow motion disaster.",
+        "timestamp": "Wed Sep 03 06:48:40 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 5256,
+          "likes": 36320,
+          "replies": 4124,
+          "quotes": 572
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963278410576167142",
+      "author": "@dotey",
+      "text": "https://t.co/xDLcE7pdcA",
+      "timestamp": "Wed Sep 03 16:30:23 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 2,
+        "likes": 9,
+        "replies": 1,
+        "quotes": 0
+      },
+      "type": "original"
+    },
+    {
+      "id": "1963278410576167142",
+      "author": "@dotey",
+      "text": "https://t.co/xDLcE7pdcA",
+      "timestamp": "Wed Sep 03 16:30:23 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 2,
+        "likes": 9,
+        "replies": 1,
+        "quotes": 0
+      },
+      "type": "original"
+    },
+    {
+      "id": "1963278328384852382",
+      "author": "@dotey",
+      "text": "Chrome 的 AI Assistant 有条件一定要多用用，太好用了！",
+      "timestamp": "Wed Sep 03 16:30:04 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 24,
+        "likes": 151,
+        "replies": 18,
+        "quotes": 1
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1962575293056733491",
+        "author": "@dotey",
+        "text": "如果你有 Gemini Pro 订阅，美国 IP，升级 Chrome 到最新版本，就可以使用，默认显示在 Chrome 的右上角，显示为一个四角星图标，点击就可以基于当前网页内容使用。\n\n有两种模式，一种是用户直接输入回复，也可以开启 Live 模式语音对话，都可以把当前网页作为上下文。不过似乎不能命令 AI 操作网页。",
+        "timestamp": "Mon Sep 01 17:56:27 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 56,
+          "likes": 307,
+          "replies": 13,
+          "quotes": 3
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963278328384852382",
+      "author": "@dotey",
+      "text": "Chrome 的 AI Assistant 有条件一定要多用用，太好用了！",
+      "timestamp": "Wed Sep 03 16:30:04 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 24,
+        "likes": 151,
+        "replies": 18,
+        "quotes": 1
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1962575293056733491",
+        "author": "@dotey",
+        "text": "如果你有 Gemini Pro 订阅，美国 IP，升级 Chrome 到最新版本，就可以使用，默认显示在 Chrome 的右上角，显示为一个四角星图标，点击就可以基于当前网页内容使用。\n\n有两种模式，一种是用户直接输入回复，也可以开启 Live 模式语音对话，都可以把当前网页作为上下文。不过似乎不能命令 AI 操作网页。",
+        "timestamp": "Mon Sep 01 17:56:27 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 56,
+          "likes": 307,
+          "replies": 13,
+          "quotes": 3
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963275379793068547",
+      "author": "@dotey",
+      "text": "OpenAI 分享的的这份名为《在AI时代保持领先》的PDF文档，其核心内容是为企业领导者提供一个关于如何在人工智能时代成功引导组织变革的实用指南。该指南由OpenAI编写，并借鉴了与Estée Lauder、Notion等公司的合作经验。\n\n文档指出，人工智能正以前所未有的速度发展，无论是在技术能力、应用成本还是普及速度上都呈现出惊人的增长。为了帮助企业跟上这一步伐，该指南提出了五个核心步骤：\n\n1. 统一（Align）：强调领导者需要向员工清晰地传达公司引入AI的战略意图和愿景。这包括设定全公司范围内的AI采纳目标，并由领导层亲自示范如何使用AI，从而建立信任，使员工明白AI如何为公司和个人带来价值。\n\n2. 启动（Activate）：解决员工因缺乏培训而不敢使用AI的问题。建议企业推出结构化的AI技能培训项目，建立“AI倡导者”网络来指导同事，并提供固定的时间让员工进行实验，同时将AI技能与绩效评估和职业发展挂钩。\n\n3. 放大（Amplify）：将分散的成功案例转化为共享知识，避免各团队重复解决相同的问题。具体做法包括建立一个集中的AI知识中心（如内部网站或文档库），定期分享成功故事，并创建内部社群（如Slack或Teams群组）以促进交流。\n\n4. 加速（Accelerate）：为确保好的AI创意能迅速从试点阶段投入实际生产，需要简化流程、减少阻碍。这包括确保团队能快速获取所需的数据和AI工具，建立清晰的项目提议和优先级排序流程，并成立一个跨职能的AI委员会来快速解决问题和审批项目。\n\n5. 治理（Govern）：在快速行动的同时，需要通过清晰、实用的指导方针来管理风险。这意味着要制定一份简单的负责任AI操作手册，让团队在既定框架内可以安全、快速地行动，而不是为每个小决策都进行人工审核。同时，应定期审查和更新治理协议，以适应不断变化的技术和法规。\n\n要想在AI时代取得成功，企业不能仅仅将AI视为一个工具，而应将其视为一种全新的工作方式，并通过以上五个步骤，为员工和团队创造一个能够自信适应变化的环境。\n\nBTW：Chrome 的 AI Assistant 真好用",
+      "timestamp": "Wed Sep 03 16:18:21 +0000 2025",
+      "media": [
+        "photo"
+      ],
+      "engagement": {
+        "retweets": 68,
+        "likes": 291,
+        "replies": 5,
+        "quotes": 1
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1963173110171263220",
+        "author": "@btibor91",
+        "text": "OpenAI published a new leadership guide \"Staying ahead in the age of AI\" showing 5.6x growth since 2022 in frontier scale AI model releases, 280x cheaper to run GPT-3.5-class models in just 18 months, 4x faster adoption than desktop internet, and that early adopters are growing revenue 1.5x faster than peers, with five principles - Align, Activate, Amplify, Accelerate, and Govern",
+        "timestamp": "Wed Sep 03 09:31:58 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 31,
+          "likes": 285,
+          "replies": 7,
+          "quotes": 2
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963274401425592653",
+      "author": "@elonmusk",
+      "text": "RT @TurkeyBeaver: Launch #110 of 2025",
+      "timestamp": "Wed Sep 03 16:14:27 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 1321,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1963229221859319824",
+        "author": "@TurkeyBeaver",
+        "text": "Launch #110 of 2025",
+        "timestamp": "Wed Sep 03 13:14:56 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 1321,
+          "likes": 5928,
+          "replies": 507,
+          "quotes": 30
+        },
+        "type": "quote_tweet",
+        "quoted_content": {
+          "id": "1963211070924832982",
+          "author": "@johnkrausphotos",
+          "text": "Falcon 9 and some clouds transit the sun during this morning’s Starlink launch ☁️🚀☀️ https://t.co/Od6brF8YtD",
+          "timestamp": "Wed Sep 03 12:02:48 +0000 2025",
+          "media": [
+            "photo"
+          ],
+          "engagement": {
+            "retweets": 436,
+            "likes": 2667,
+            "replies": 231,
+            "quotes": 52
+          },
+          "type": "original"
+        }
+      }
+    },
+    {
+      "id": "1963273590532645147",
+      "author": "@elonmusk",
+      "text": "RT @SpaceX: Falcon 9 launches 28 @Starlink satellites from Florida https://t.co/mSLcPg7I58",
+      "timestamp": "Wed Sep 03 16:11:14 +0000 2025",
+      "media": [
+        "photo",
+        "photo",
+        "photo",
+        "photo"
+      ],
+      "engagement": {
+        "retweets": 3210,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1963252559948214327",
+        "author": "@SpaceX",
+        "text": "Falcon 9 launches 28 @Starlink satellites from Florida https://t.co/mSLcPg7I58",
+        "timestamp": "Wed Sep 03 14:47:40 +0000 2025",
+        "media": [
+          "photo",
+          "photo",
+          "photo",
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 3210,
+          "likes": 13669,
+          "replies": 917,
+          "quotes": 118
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963273221848940776",
+      "author": "@dotey",
+      "text": "毕竟 Vibe Coding 出来的结果还要维护的\nhttps://t.co/iDo6pA5VIW",
+      "timestamp": "Wed Sep 03 16:09:46 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 0,
+        "likes": 3,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1960881335775420853",
+        "author": "@dotey",
+        "text": "程序员和非程序员的主要矛盾，和理解什么牛逼没什么关系，核心还是在后面产品谁来维护的事。\n\n打个不恰当的比方：男人和女人对于生孩子的态度是完全不一样的，因为男人可能就是前期提供了精子，但是后面的怀孕生养大部分都是女人的工作。\n\n在软件开发这件事上，非程序员就是男人，程序员就是女人，产品就是孩子。\n\n现在非程序员们借助 AI Vibe Coding 也能做原型开发了，就好比绕过十月怀胎试管生了一堆孩子出来，速度确实快，优生优育先不说，孩子出来发现自己养不了，这养孩子的事结果还是女人的事，最终还是程序员擦屁股来维护，而维护这事，前面 Vibe 的越多，维护的成本就会越高。\n\n非程序员整天吹 Vibe Coding 厉害自己播种能力强，但有意无意不提后面维护和生养的事，程序员当然不会多爽。\n\n你们当爸爸的平时多带带娃干点家务呀！",
+        "timestamp": "Thu Aug 28 01:45:16 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 15,
+          "likes": 163,
+          "replies": 20,
+          "quotes": 8
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963272635736895492",
+      "author": "@dotey",
+      "text": "所有Vibe Coding的美好故事，就像童话里面，都只讲王子和公主从此过上了幸福的生活，不会提结婚后的柴米油盐、生娃、带娃这些琐事，更不提还有小三插足、出轨这些狗血",
+      "timestamp": "Wed Sep 03 16:07:26 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 1,
+        "likes": 23,
+        "replies": 4,
+        "quotes": 0
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1963159403017711813",
+        "author": "@AztecaAlpaca",
+        "text": "每一次vibe coding都是快速度过短暂的蜜月期，进入七年之痒...",
+        "timestamp": "Wed Sep 03 08:37:30 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 0,
+          "likes": 1,
+          "replies": 1,
+          "quotes": 1
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963271744778899716",
+      "author": "@elonmusk",
+      "text": "RT @amXFreeze: Grok is extremely good at writing stuff but you gotta let it know what you want to get what you need\n\nHere are the simplest…",
+      "timestamp": "Wed Sep 03 16:03:54 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 936,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1963156847935865265",
+        "author": "@amXFreeze",
+        "text": "Grok is extremely good at writing stuff but you gotta let it know what you want to get what you need\n\nHere are the simplest helpful tips to Enhance Your Experience with Grok’s Writing\n\n- Match the tone (This will match your tone)\n- Casual but Slightly Professional (Conversational yet polished, no slang, ideal for approachable updates or thought leadership)\n- More my way but better\n- Unhinged but maintain professional tone \n- Highly Professional Tone \n- Bold and assertive \n- Concise and Direct\n- Highly Exaggerated\n- Technical and Precise\n- Provocative and Thought-Provoking\n- Story-Driven\n- Structured response\n- Witty and Playful (I think you will like this)\n\nSave this post... lmk your thoughts",
+        "timestamp": "Wed Sep 03 08:27:20 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 936,
+          "likes": 3368,
+          "replies": 385,
+          "quotes": 23
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963267675435782611",
+      "author": "@elonmusk",
+      "text": "RT @nikitabier: The best content on X is neither short form nor long form. It’s medium form: 1-2 paragraphs. \n\nIt’s just short enough to ho…",
+      "timestamp": "Wed Sep 03 15:47:44 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 1028,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1963227174070366292",
+        "author": "@nikitabier",
+        "text": "The best content on X is neither short form nor long form. It’s medium form: 1-2 paragraphs. \n\nIt’s just short enough to hook someone and explain something interesting. But it’s not too long that people leave before reacting to it.\n\nBasically, this exact post.",
+        "timestamp": "Wed Sep 03 13:06:47 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 1028,
+          "likes": 10501,
+          "replies": 1005,
+          "quotes": 170
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1963261014931107931",
+      "author": "@dotey",
+      "text": "素材来源：https://t.co/itP2OUjBSn",
+      "timestamp": "Wed Sep 03 15:21:16 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 1,
+        "likes": 5,
+        "replies": 1,
+        "quotes": 0
+      },
+      "type": "original"
+    },
+    {
+      "id": "1963261013647561101",
+      "author": "@dotey",
+      "text": "Manus 诞生背后的故事：\n\n故事始于2023年3月，当时开发 Manus 的团队“蝴蝶效应”正在全力投入一个名为“AI浏览器”的项目。团队投入了近一半的人力，耗时7个月，产品已经打磨到随时可以发布的状态。\n\n然而，就在产品上线前一周，团队的CEO和产品负责人做出了一个惊人的决定：砍掉这个项目。他们预见到，这个浏览器即使发布，也只会吸引一小部分用户，虽然能活下来，但会耗尽团队资源，让他们陷入一个“局部最优”的困境，从而失去探索其他更有潜力方向的机会。\n\n在砍掉项目后，团队经历了两三周看似“无所事事”的空窗期。正是在这段时间，团队成员在观察市场上的其他产品时，发现了一个奇怪的现象：许多非程序员用户竟然在使用一款名为 “Cursor” 的AI编程工具。\n\n他们发现，这些用户完全看不懂编程代码，只是通过和右侧的聊天框对话来解决一些日常问题（比如音视频格式转换），然后不断点击“接受”按钮。这个用户“误用”的场景，给了团队巨大的灵感，他们意识到一个让普通人仅通过对话就能驱动AI完成复杂任务的产品的巨大潜力。\n\n基于这个灵感，一个仅有6人的小团队在两个月内开发出了 Manus 的原型。有趣的是，在寻找早期用户进行测试时，他们收到的反馈大多是负面的，充满了质疑。但团队并未因此动摇，他们判断，对于一个全新的、开创性的产品，用户很难基于过去的经验给出有效的反馈。因此，他们选择相信自己的判断，停止了发布前的用户调研，最终将 Manus 推向了市场。",
+      "timestamp": "Wed Sep 03 15:21:15 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 8,
+        "likes": 96,
+        "replies": 10,
+        "quotes": 3
+      },
+      "type": "original"
+    },
+    {
+      "id": "1965549911325425716",
+      "author": "@elonmusk",
+      "text": "Why is “white” always in lowercase, but Black is uppercase, @nytimes? \n\nThe NY Times is deliberate, precise and comprehensive in its anti-White racism.",
+      "timestamp": "Tue Sep 09 22:56:31 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 78612,
+        "likes": 455639,
+        "replies": 20635,
+        "quotes": 3147
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965469727196938324",
+        "author": "@DougMackeyCase",
+        "text": "NEW YORK TIMES RACIAL HIERARCHY: Crime against Iryna Zarutska was committed by a capital \"B\" Black man against a lowercase \"w\" white woman.\n\nYou are a second-class citizen. https://t.co/FfviZd3uzW",
+        "timestamp": "Tue Sep 09 17:37:54 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 9400,
+          "likes": 52421,
+          "replies": 1843,
+          "quotes": 953
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965535696288186544",
+      "author": "@dotey",
+      "text": "RT @Tz_2022: Airpods Pro 实时翻译功能演示\n（中英双语字幕版）\n\n有多少人看过《银河系漫游指南》的？这就是书里的“巴别鱼了”。。。🐟\n\n啊，《机器猫 多啦A梦》总看过吧？这就是那个“翻译魔芋（蒟蒻）”。。。🐶 https://t.co/s8FPfRzmec",
+      "timestamp": "Tue Sep 09 22:00:02 +0000 2025",
+      "media": [
+        "video"
+      ],
+      "engagement": {
+        "retweets": 11,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965531057073377668",
+        "author": "@Tz_2022",
+        "text": "Airpods Pro 实时翻译功能演示\n（中英双语字幕版）\n\n有多少人看过《银河系漫游指南》的？这就是书里的“巴别鱼了”。。。🐟\n\n啊，《机器猫 多啦A梦》总看过吧？这就是那个“翻译魔芋（蒟蒻）”。。。🐶 https://t.co/s8FPfRzmec",
+        "timestamp": "Tue Sep 09 21:41:36 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 11,
+          "likes": 49,
+          "replies": 8,
+          "quotes": 2
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965505590077390877",
+      "author": "@dotey",
+      "text": "RT @manateelazycat: 一条FPC排线的故事，让你知道软件和硬件的差别\n\n微服是2024年8月份公开销售的，其实2023年10月份就可以卖了，但是当时卖之前晴天霹雳，硬件制造给我们软件团队好好的上了一课。… https://t.co/zoQUUx0FuH",
+      "timestamp": "Tue Sep 09 20:00:24 +0000 2025",
+      "media": [
+        "photo"
+      ],
+      "engagement": {
+        "retweets": 40,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965219025174364330",
+        "author": "@manateelazycat",
+        "text": "一条FPC排线的故事，让你知道软件和硬件的差别\n\n微服是2024年8月份公开销售的，其实2023年10月份就可以卖了，但是当时卖之前晴天霹雳，硬件制造给我们软件团队好好的上了一课。\n\n这个故事要从2023年那个寒冷的冬天说起，微服的设计非常复杂，底层操作系统是我们基于Linux百分之百自研的，有三层架构，底层操作系统非常精简只管硬件，网络和升级，因为功能小巧，所以代码稳定，底层操作系统的原则是任何业务代码都不能加到这里来，这样的设计保证不管将来业务层出了任何问题，都可以保证系统可升级，即使升级失败可以立马回滚到旧的操作系统版本，这也是微服这么多用户从来没有过升级变砖的信心。\n\n中间层操作系统主要是根据用户需求改功能，保证应用数据隔离和网络监控，避免恶意程序作恶偷用户数据。\n\n上层LPK是一个带完整镜像的软件包格式，很像windows的绿色软件，下载下来就可以跑，不会像dockerfile那样，上游镜像挂了就没法安装。\n\n这套三层架构的操作系统，一层保稳定，一层跟需求，一层扩生态，我们从零开始，整整三年，就在家打造操作系统，没有做过任何宣传和卖货。到2023年的时候，我们有信心这套操作系统足够稳定了，内部测试也做了好几个月，团队决定2023年10月份对外销售。\n\n2023年9月份，所有事情都在紧密筹备的时候，那个月武汉的冬天来的特别早，很多同事早早的都裹上了棉袄。一天早上测试同学说有个机器掉盘了，我当时没在意，我说多测测。我认为只是硬件没装好。隔了几天又有同事说掉盘，但是不能稳定重现。我的心里有点波动，不会是硬件又闹幺蛾子了吧？关键问题还不能必现，这可如何是好呀？\n\n直到有一个售后同事说他们家一天掉盘好几次，我就和系统工程师来车去售后同事家现场调试。我们首先采用了很多排除法，排除操作系统，软件的影响，一直没找到原因，但是这次好的是重现频率很高。软件排查了，我们就开始盯着硬件搞，我们拆了外壳，发现有时候稳定掉盘，有时候不掉。我当时想，信了邪，这难道和我手握的方式有关？不，做硬件肯定不能相信玄学。\n\n各种折腾，一点头绪都没有，太诡异了，随机重现。无奈，中午在同事家吃了点外卖，下午死磕，我一定要把这个原因找出来。下午，又在各种折腾，我发现机器放桌子左边掉盘概率大，放右边掉盘概率小。咦，掉盘还要看风水？难道这个桌子有蹊跷？我看了看，也没有啥不一样的啊，都是木头做的。就在我快放弃时，我蹲下来看了看桌子下面，我仔细检查了一圈，我突然发现桌子左边有一台小米的无线路由器，难道是它？我赶忙把路由器拿开，果然左右两边都不掉盘了，我再把路由器贴着微服，100%掉盘，破案了。\n\n回到公司，我跟同事说，原因应该是路由器5G的频率和SATA 6G频率接近，产生了电磁干扰导致掉盘。测试同学买了一个超大功率的小米路由器，果然1000%掉盘，只要路由器挨着微服45cm的位置掉盘率是100%，100cm距离是30%。（所以你现在来公司参观，会发现公司有很多大功率路由器，那些不是上网设备，那是微服硬件的EMP测试）\n\n知道了干扰源，接下来就要断定是哪里的问题，因为有可能是主板问题，也有可能是SATA排线的问题，也有可能是硬盘的问题。这时候就要回归物理第一性原理，小心的做物理实验。\n\n我们最开始锡纸包裹微服，没用，因为包裹不紧密，只要有一点缝隙都会把电磁波漏进去。最后我们找的两个牛逼的设备，茶盒和饼干盒，经常喝茶的人都知道，茶盒是全身铁皮，完美的法拉第笼。我们先把整个主板丢进饼干盒里盖上盖子，排线和硬盘在外面测试，掉盘。我们把硬盘和排线丢进茶盒盖上盖子，不掉盘。我们整个机器丢进盒子里，不掉盘。我们换了不同硬盘，测试结果和盘没关系。\n\n物理实验做完了，和硬盘没关，和主板关系不大，应该就是FPC排线或者SATA转接座子的原因。创业的难题又来了，临门一脚不能卖，这样的机器卖了杂招牌。怎么办呢？团队成员心里有点焦虑，毕竟花了这么长时间跌倒在这里。\n\n我也不知道怎么办，我直接去了深圳，临走时，我跟团队说，解决不了掉盘问题，我不回武汉。\n\n续篇看下一个推特。",
+        "timestamp": "Tue Sep 09 01:01:42 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 40,
+          "likes": 410,
+          "replies": 53,
+          "quotes": 14
+        },
+        "type": "quote_tweet",
+        "quoted_content": {
+          "id": "1964297903629017324",
+          "author": "@manateelazycat",
+          "text": "这是一个软件专家做硬件创业的真实故事\n\n我自己做Linux二十多年了，底层内核，编译器，桌面环境，浏览器和应用都信手拈来。\n\n但是3年前第一次做硬件产品，真的发现和软件是完全不一样的。\n\n做软件主要靠堆人，快速迭代，只要有耐心，改个一万次肯定改的好。但是硬件不一样，硬件就跟造火箭一样，必须所有细节都要全对才能发射，一个细节做错，上百万的模具费和设计费就打水漂了。\n\n硬件领域有一个单位叫丝，10个丝等于0.1毫米，而懒猫微服是面向C端的用户，所以细节一定要精致，我们的要求是公差必须小于10个丝（硬件大厂要求是30丝），也就是我们的硬件标准公差不能大于0.1毫米。\n\n2023年的时候在深圳蹲了几个月，每天都在协调各种供应商，包括模具厂，PCB厂，工业设计厂，3D打印厂之间来回协调。\n\n为了这10个丝的公差，要每天看三维模型，记得每个元器件的精确位置。先要用3D打印模型，测试大概位置，但是一般的3D打印精度太差，确定大概位置后，还要等PCB板打样，打样完每个连接器的焊接方式和突出方式不一样，还要根据板子反向调塑料模具的位置，如果塑料模具接口反向位置不对齐就不能动，就需要根据塑料件凹槽深度和连接器组装接口反向微调PCB连接器的位置，甚至一些连接器要做夹具才能保证水平方向的一致性，还有焊接方式，不同焊接方式会在垂直方向上增加锡的厚度，而这种制作过程的公差在设计阶段是不能预估的。\n\n每折腾一次硬件，最少20天就没了，直到最后全部连接器接口都对齐后，PCB在塑料件凹槽对齐没有干涉后，才能最后统一收口改塑料模具，因为塑料件模具的开口处只能缩小不能放大，一旦搞错了，开口改小了发现接口不够大，塑料模具就报废了。\n\n我记得前前后后把懒猫微服的背板接口折腾到完美花了半年的时间，PCB样板都打了5次。\n\n到第3次的时候，我实在是郁闷，自己着急死了，各种供应商相互之间甩皮球，我第3次把所有供应商都叫到一起，我说今天必须把事情一次搞对，不能来回甩锅了，那一下午就一个丝一个丝的拿着卡尺对，直到所有细节对好，留下证据，但是又要等20天。\n\n就这样，开完会，周五了，自己心理急没用，供应商都休假了。所以就去深圳东西涌徒步，释放一下这段时间的巨大压力。\n\n到了西涌，跟老板买了一双手套和6瓶水，就开始一个人在海边乱石堆徒步。别说，东西涌真的是深圳海边的颜值担当（另外俩是小梅沙和南澳），海边的海水很蓝，湛蓝湛蓝的，乱石滩也很好看。前面3公里非常享受美景，因为一个人都没有，我承包了整片大海。\n\n可是走到中途时发现不对劲，脑袋突然晕的慌，像发高烧了一样，超级晕，走路有点不稳了。当时，我还翻越了海边两个悬崖峭壁。\n\n因为我常年在外面越野徒步，这次不寻常的身体感觉告诉我，一个人不能继续往东涌走了。看看悬崖旁边有一条山路，果断选择上山，而不是下山继续走海边乱石滩。\n\n往山上走的时候，烈日非常大，我的脚步也越来越沉重，走到半山腰的时候真的走不动了，就钻进山路旁非常低矮的灌木丛中，因为灌木丛太矮，干脆坐地上才能钻进去。我就在灌木丛的阴影下大口喘气，旁边除了烈日就是耳边此起彼伏的知了声，空气热的都扭曲了。\n\n歇了一会，继续走，脑袋更沉了，看了看书包的水，也不知道还要走多久，直接本能拿起一瓶水从头淋上去，也不管全身是否湿透，淋下去瞬间，脑袋舒服多了（后来才知道我那时候是中暑了，不淋水降温，估计真要噶了）。淋完水继续顶着烈日走，走一会就需要躲进灌木丛淋水，又淋了两瓶水，最后一瓶水淋完以后又走了1公里，终于找到一个小卖部。真的，看到小卖部的时候，我觉得今天这条命捡回来了，买了一大瓶冰冻冰红茶，狂喝后，爬进下山的摆渡车。\n\n坐在车上，有那么一瞬间，感觉自己特别像一个难民，好不容易捡了一条命回来，后怕也特别幸运。今天不是买了6瓶水和本能的淋头动作，真的就废在这荒郊野外了。回到停车场，继续开车回深圳市区酒店。\n\n排除了千难万阻，前前后后，历时两年终于实现了懒猫微服硬件从白板原创设计到大批量高精度量产。\n\n从整个硬件设计制造生产看，连接器公差只是硬件制造最小的一个坑，没有经历过硬件完整制造过程的人，很难理解，没有多维跨学科的知识和毅力，根本不可能造出硬件来。\n\n所以，人呀，不要给自己设限，只要有可能就去拼吧，不要理路上别人的评价，勇敢的人先享受世界。\n\n最后，看到这里的老板，来一台懒猫微服吧，我们团队是中国做操作系统最有实战经验的团队，懒猫的硬件按照0.1毫米的精度一个丝一个丝的细节扣，这样精益求精的态度，选择它，肯定不会错。\n\n想买的老板，评论区扣1，我给老板们专属优惠。",
+          "timestamp": "Sat Sep 06 12:01:29 +0000 2025",
+          "media": [
+            "photo"
+          ],
+          "engagement": {
+            "retweets": 31,
+            "likes": 270,
+            "replies": 50,
+            "quotes": 7
+          },
+          "type": "original"
+        }
+      }
+    },
+    {
+      "id": "1965503985441542288",
+      "author": "@elonmusk",
+      "text": "Yes. \n\nWhat it comes down to is this:\n\nDo you have more sympathy for those highly likely to commit murder or more for those at risk of being murdered?\n\nIf the former, you are a disgusting human being and yet so many on the radical left choose this!",
+      "timestamp": "Tue Sep 09 19:54:02 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 28667,
+        "likes": 195210,
+        "replies": 6005,
+        "quotes": 747
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965493354009165858",
+        "author": "@JDVance",
+        "text": "The big lie the Democrats told about violent crime is that it's \"systemic\" and therefore no one's really responsible. If the \"system\" is to blame then you fund a bunch of nonprofits that don't do anything besides give jobs to underqualified radicals. \n\nThe reality is that the gross majority of violent crime is committed by a very small group of people and we should be throwing them in prison.",
+        "timestamp": "Tue Sep 09 19:11:47 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 27930,
+          "likes": 194355,
+          "replies": 8400,
+          "quotes": 1713
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965503128465539309",
+      "author": "@elonmusk",
+      "text": "RT @ScottAdamsSays: All data is fake",
+      "timestamp": "Tue Sep 09 19:50:37 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 2128,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1965477343218335804",
+        "author": "@ScottAdamsSays",
+        "text": "All data is fake",
+        "timestamp": "Tue Sep 09 18:08:10 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 2128,
+          "likes": 12576,
+          "replies": 543,
+          "quotes": 53
+        },
+        "type": "quote_tweet",
+        "quoted_content": {
+          "id": "1965438352158761223",
+          "author": "@Cernovich",
+          "text": "All of the books were cooked in 2024. The scam was to help Kamala Harris win but making the economy look good, and also as a back-up. Trump could be blamed for a bad economy if he won. All government data is presumed fake. Total overhaul required. Lots of firings needed.",
+          "timestamp": "Tue Sep 09 15:33:13 +0000 2025",
+          "media": [],
+          "engagement": {
+            "retweets": 5936,
+            "likes": 23833,
+            "replies": 559,
+            "quotes": 151
+          },
+          "type": "original"
+        }
+      }
+    },
+    {
+      "id": "1965502943643468227",
+      "author": "@elonmusk",
+      "text": "💯 hate crime",
+      "timestamp": "Tue Sep 09 19:49:53 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 42773,
+        "likes": 264406,
+        "replies": 11833,
+        "quotes": 2013
+      },
+      "type": "original"
+    },
+    {
+      "id": "1965502675816251558",
+      "author": "@elonmusk",
+      "text": "This is insane @jaredpolis",
+      "timestamp": "Tue Sep 09 19:48:49 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 27501,
+        "likes": 119776,
+        "replies": 4846,
+        "quotes": 683
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965487588900274682",
+        "author": "@unlimited_ls",
+        "text": "🚨BREAKING: Colorado Sheriff admits he was forced to release a ‘very dangerous’ inmate from jail because of state law that requires criminals found incompetent to stand trial to be released\n\n'He is a very dangerous person, and his actions, from what we can tell, were unprovoked.'\n\nWeld County Sheriff Steve Reams warned the public about a potentially dangerous inmate released on Monday\n\n 'Quite honestly, without some legislative actions, I don't know how you address this concern.'\n\nDebisa Ephraim, 21, was released after being found incompetent to stand trial in two of his cases\n\nEphraim had been facing charges including attempted second-degree murder, assault, engaging in a riot, menacing, and burglary\n\nOfficials described him as a “potential danger to the community.”",
+        "timestamp": "Tue Sep 09 18:48:52 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "engagement": {
+          "retweets": 10690,
+          "likes": 32556,
+          "replies": 3416,
+          "quotes": 1113
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1965482696219787363",
+      "author": "@elonmusk",
+      "text": "We’ve open sourced the 𝕏 algorithm not because we think it’s smart, but to show it’s MANY flaws!\n\nEvery week, we try to make it better, not always succeeding, but to be as transparent we are with @CommunityNotes. \n\nLike democracy, it’s the worst algorithm, except for all the others.",
+      "timestamp": "Tue Sep 09 18:29:26 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 10079,
+        "likes": 102311,
+        "replies": 5829,
+        "quotes": 705
+      },
+      "type": "original"
+    },
+    {
+      "id": "1965481684100677740",
+      "author": "@elonmusk",
+      "text": "As Gad Saad accurate states, The West is dying from suicidal empathy",
+      "timestamp": "Tue Sep 09 18:25:25 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 59923,
+        "likes": 403119,
+        "replies": 8852,
+        "quotes": 1179
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1965444062477255129",
+        "author": "@GadSaad",
+        "text": "A society that burns neighbourhoods and calls for the defunding of the police for the guy on the left and largely ignores the public butchering of the woman on the right is one that is drowning in the infinity pool of Suicidal Empathy. https://t.co/fB34uki06p",
+        "timestamp": "Tue Sep 09 15:55:55 +0000 2025",
+        "media": [
+          "photo",
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 22549,
+          "likes": 119197,
+          "replies": 2802,
+          "quotes": 1307
+        },
+        "type": "original"
+      }
+    }
+  ],
+  "structure_info": {
+    "original_tweets": 19,
+    "retweets": 35,
+    "quote_tweets": 46,
+    "complex_retweets": 7
+  }
+}
+```
+
+数据结构说明：
+- type: 推文类型 (original/retweet/quote_tweet)
+- original_content: 转推的原始内容
+- quoted_content: 引用的推文内容
+- engagement: 互动数据 (retweets/likes/replies/quotes)
+- media: 媒体类型列表 (photo/video等)
+
+完整数据统计：
+总推文数：500
+原创推文：286
+转推：214
+含媒体：94
+
+
+请按以下结构生成总结报告：
+
+## 📊 数据概览
+- 分析时间段和数据量
+- 推文类型分布（原创/转推/媒体等）
+
+## 🔥 热门话题
+- 识别最受关注的话题和关键词
+- 分析高互动推文的共同特征
+
+## 📈 趋势分析  
+- 用户行为模式
+- 内容类型偏好
+- 互动数据洞察
+
+## 💡 关键洞察
+- 主要发现和趋势
+- 值得关注的内容或账户
+- 数据驱动的建议
+
+## 📝 推文精选
+选择3-5条最具代表性或价值的推文进行深度分析
+
+要求：
+1. 使用中文输出
+2. 保持客观分析，基于数据说话
+3. 突出实用价值和洞察
+4. 格式清晰，便于阅读
+5. 避免重复和废话
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: 用户@unknown的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

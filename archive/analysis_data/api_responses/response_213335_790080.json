@@ -1,0 +1,53 @@
+{
+  "url": "https://x.com/i/api/1.1/dm/inbox_initial_state.json?nsfw_filtering_enabled=false&include_profile_interstitial_type=1&include_blocking=1&include_blocked_by=1&include_followed_by=1&include_want_retweets=1&include_mute_edge=1&include_can_dm=1&include_can_media_tag=1&include_ext_is_blue_verified=1&include_ext_verified_type=1&include_ext_profile_image_shape=1&skip_status=1&dm_secret_conversations_enabled=false&krs_registration_enabled=false&cards_platform=Web-12&include_cards=1&include_ext_alt_text=true&include_ext_limited_action_results=true&include_quote_count=true&include_reply_count=1&tweet_mode=extended&include_ext_views=true&dm_users=true&include_groups=true&include_inbox_timelines=true&include_ext_media_color=true&supports_reactions=true&supports_edit=true&include_ext_edit_control=true&include_ext_business_affiliations_label=true&include_ext_parody_commentary_fan_label=true&ext=mediaColor%2CaltText%2CmediaStats%2ChighlightedLabel%2CparodyCommentaryFanLabel%2CvoiceInfo%2CbirdwatchPivot%2CsuperFollowMetadata%2CunmentionInfo%2CeditControl%2Carticle",
+  "timestamp": "2025-09-11T21:33:35.790099",
+  "status": 200,
+  "headers": {
+    "x-transaction-id": "91dfbf2b462624af",
+    "x-connection-hash": "0ab344e30dfb303caeb98136ed4cda3deaf7dad813186f7d0f786e9564a0c417",
+    "content-encoding": "gzip",
+    "x-client-event-enabled": "true",
+    "x-rate-limit-limit": "450",
+    "cf-cache-status": "DYNAMIC",
+    "x-content-type-options": "nosniff",
+    "expires": "Tue, 31 Mar 1981 05:00:00 GMT",
+    "status": "200 OK",
+    "x-response-time": "22",
+    "date": "Thu, 11 Sep 2025 13:33:35 GMT",
+    "content-type": "application/json;charset=utf-8",
+    "perf": "7402827104",
+    "vary": "accept-encoding",
+    "last-modified": "Thu, 11 Sep 2025 13:33:35 GMT",
+    "x-frame-options": "SAMEORIGIN",
+    "x-twitter-response-tags": "BouncerCompliant",
+    "content-disposition": "attachment; filename=json.json",
+    "strict-transport-security": "max-age=631138519; includeSubdomains",
+    "cache-control": "no-cache, no-store, must-revalidate, pre-check=0, post-check=0",
+    "origin-cf-ray": "97d789a99c50e2e4-SEA",
+    "pragma": "no-cache",
+    "x-rate-limit-reset": "1757598515",
+    "x-rate-limit-remaining": "449",
+    "cf-ray": "97d789a99c50e2e4-HKG",
+    "x-access-level": "read-write-directmessages",
+    "content-length": "140",
+    "x-xss-protection": "0",
+    "x-transaction": "91dfbf2b462624af",
+    "server": "cloudflare tsa_p"
+  },
+  "data": {
+    "inbox_initial_state": {
+      "last_seen_event_id": "0",
+      "trusted_last_seen_event_id": "0",
+      "untrusted_last_seen_event_id": "0",
+      "cursor": "GQwA",
+      "inbox_timelines": {
+        "trusted": {
+          "status": "AT_END"
+        },
+        "untrusted": {
+          "status": "AT_END"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,515 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 137079,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20251008",
+  "last_updated": "2025-10-10T16:03:50.578773",
+  "tweet_count": 11,
+  "tweets": [
+    {
+      "id": "1975715488371003599",
+      "text": "我个人是不喜欢用 spec-kit，不是好的上下文工程：\n- 小项目没必要\n- 大项目描述不清楚\n- 一大坨文档反而占用上下文影响生成\n- 文档不保持及时更新反而会误导 Agent\n\n好的上下文管理是针对当前上下文引导 Agent 找到合适的刚刚好的上下文，而不是不管三七二十一塞给它十几个文档！",
+      "created_at": "Wed Oct 08 00:10:54 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1975708964563394841",
+        "text": "@dotey 其实把spec-kit和coderabbit用好，是不是就可以把engineering的基因放到vibe-coding里了？",
+        "created_at": "Tue Oct 07 23:44:58 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1697596025773678592",
+          "name": "蔡荔谈AI (公众号）",
+          "screen_name": "JonathanCaiSG",
+          "description": "新加坡DataRaccoon创始人 | TGO新加坡分会会员 | 微信公众号：蔡荔谈AI\n\n曾经的硅谷AI从业者，IBM高级经理，国内十年创业\n\n教育背景：清华大学 | 新加坡国立大学",
+          "followers_count": 891,
+          "friends_count": 892,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 3,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 105,
+        "reply_count": 24,
+        "quote_count": 5
+      }
+    },
+    {
+      "id": "1975722908535431561",
+      "text": "更正一下：\n如果是自己用，和 AI 一起结对帮助自己梳理清楚思路，有价值\n如果只是给 AI 用，价值没那么大\nhttps://t.co/D5ufrYIoSM",
+      "created_at": "Wed Oct 08 00:40:23 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1975718930137424288",
+        "text": "@dotey 算是个雏形\n先做加法再做减法\n最简单的策略永远是堆文本来token代偿\n\n现在这些框架基本都是这样\n想进一步总结到关键信息一步到位做好优化的 还是太少了",
+        "created_at": "Wed Oct 08 00:24:34 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3122661542",
+          "name": "Yangyi",
+          "screen_name": "Yangyixxxx",
+          "description": "Believing is seeing",
+          "followers_count": 107201,
+          "friends_count": 479,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 3,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 11,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1975733374552842537",
+      "text": "是的，Spec 很容易被形式化而落不到实处，反而给人一种“写了文档=做了设计”的幻觉\nhttps://t.co/KrQbq9o8uE",
+      "created_at": "Wed Oct 08 01:21:58 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1975725094053048396",
+        "text": "@dotey 其实我觉得这个跟《大教堂与集市》里边讨论的差不多，spec更多是最佳实践，但是很多项目是否有必要按照最佳实践的方式来进行（人力，时间等因素）。\n另外讨论这个问题的时候，其实我们都带有太多的上下文来进行的，既要还要的问题。\n\nspec当前的问题是划分不清晰，project级别的话确实描述不清楚。",
+        "created_at": "Wed Oct 08 00:49:04 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "461784701",
+          "name": "北落",
+          "screen_name": "zx377359832",
+          "description": "自媒体内容创作者 | 聚焦生活方式 & 科技趋势 | 读书笔记控📚 | 分享交易策略 & 编程思维 | 一起进化思维，构建个人品牌",
+          "followers_count": 38,
+          "friends_count": 342,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 6,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 11,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1975749469292450096",
+      "text": "RT @daluoseo: 🔥AI Mode和AI Overview的时代怎么做SEO?🖖\n\n最近大家应该都感受到了AI OVERVIEW截流的效果：网站曝光和点击持续下跌。\n\n截止2025年10月份，AI Overview已经覆盖了几乎所有的信息类的关键词（How To /…",
+      "created_at": "Wed Oct 08 02:25:55 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1975748498684616782",
+        "text": "🔥AI Mode和AI Overview的时代怎么做SEO?🖖\n\n最近大家应该都感受到了AI OVERVIEW截流的效果：网站曝光和点击持续下跌。\n\n截止2025年10月份，AI Overview已经覆盖了几乎所有的信息类的关键词（How To / What is 等等），接近60%的谷歌搜索都被AI Overview覆盖了，这个数字在今年3月份还不到30%。而更加颠覆传统搜索体验的AI Mode也悄悄来了，越来越多的国家已经可以使用。\n\n这给传统的Organic蓝链接留下的空间越来越小，大量的关键词变成了“0点击”关键词。\n\n那我们广大的靠排名拿流量的普通民众是不是就嗝屁了呢？SEO是不是又死了呢？答案肯定是否定的。今天我就给大家分享一些我在过去几个月里还能拿到不错的流量表现的方法：\n\n1⃣ 常规的SEO方法仍然有效\n不管有没有谷歌的AI Overview，如果你的结果能够排到比较靠前，那么都能够比排在后面的结果拿到更多的流量。那些网上到处说的SEO已死都是吓唬人的，千万不要信。\n\n想要拿到好的排名，你最起码的基础SEO优化，一定还是要做到位。比如说做好Technical SEO的优化，确保你的网站能够被谷歌读取正常的渲染，获取你站点里面的信息成本不会太高，加载的速度不要太慢。页面的结构、页面之间的关系、整个网站的路径规划是否合理、当前页面的相关性是否足够高？这些都是老生常谈，但是你仍然还是要做好。不然，永远不会有好的流量和排名。\n\n2⃣ 用更加简洁、结构清晰、易懂的主谓宾结构去准确地描述要表达的意思。尽量采用更简单的语句结构，用Semantic Triple的方式表达出来。这样能够更容易让各大语言模型以较低成本理解你页面的内容。\n\n3⃣ 以主题而不是关键词为单位去覆盖内容。尽可能够深够广地去更加详细地去把当前所谈到的这个主题去覆盖清楚这样更容易在Query Fan-Out的时候，拿到更多的曝光机会\n\n4⃣ 从用户的角度去深刻地理解他们的诉求和潜在的问题，并且把他们可能会问的问题放在FAQ这样的地方。你甚至可以把整个页面内容的 headings 变成用户可能会提问的问题，这样的结构更容易拿到曝光。\n\n5⃣ 侧重在第三方平台去建设品牌权重，多腾出来一些预算和资源，放在高权重网站上去做外链建设，或者寻找寄生SEO的机会。尽可能在更多的网站上把自己的品牌做出去，不要忽略了其他的社媒平台，包括Reddit、Quora、TikTok、YouTube、Instagram、Pinterest上面的Brand Mention。\n\n6⃣ 把核心资源全部放在Commercial和Transactional Intent的词组和主题上，不要在信息类的关键词和话题上耗费太大的精力。\n\n7⃣ 适当的在页面上添加所需要的schema data ：这点的话，一般有资源在做。如果没有资源的话，不需要花太多的精力在这个事情上面。目前并没有特别明确的结论说，页面包含了schema data就会比没有包含的schema data能够排得更高。但是一般我都会放进去，主要的目的是为了能够在谷歌的SERP页面增加一些能够提高点击率的这种snippet的机会。",
+        "created_at": "Wed Oct 08 02:22:04 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1975729723306348544",
+            "url": "https://pbs.twimg.com/media/G2sztynbEAArQg-.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1464631743831547911",
+          "name": "大罗SEO",
+          "screen_name": "daluoseo",
+          "description": "SEO专家 | 提供SEO咨询，优化服务以及高权重外链 |  油管: 大罗SEO\nPartner @ HashMatrix",
+          "followers_count": 8330,
+          "friends_count": 1202,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 8,
+          "favorite_count": 47,
+          "reply_count": 0,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1975754391538815269",
+      "text": "RT @imxiaohu: OpenAI 万亿大客户名单",
+      "created_at": "Wed Oct 08 02:45:29 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1975751584848965967",
+        "text": "OpenAI 万亿大客户名单",
+        "created_at": "Wed Oct 08 02:34:20 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "1975582169126019223",
+          "text": "OpenAI just dropped the top 30 customers who've used 1T+ of their tokens. https://t.co/hoAIzrfOSZ",
+          "created_at": "Tue Oct 07 15:21:08 +0000 2025",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "1975582166789857285",
+              "url": "https://pbs.twimg.com/media/G2qtg3wbIAUiwKt.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "361044311",
+            "name": "Deedy",
+            "screen_name": "deedydas",
+            "description": "Partner @MenloVentures. Formerly founding team @glean, @Google Search. @Cornell CS. Tweets about tech, immigration, India, fitness and search.",
+            "followers_count": 210179,
+            "friends_count": 5250,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 418,
+            "favorite_count": 4303,
+            "reply_count": 242,
+            "quote_count": 153
+          }
+        },
+        "user": {
+          "id": "1764818331822182400",
+          "name": "小互",
+          "screen_name": "imxiaohu",
+          "description": "学AI找小互，找小互，上 https://t.co/4PVaHEr5r3 ...",
+          "followers_count": 72078,
+          "friends_count": 1460,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5,
+          "favorite_count": 19,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1975756354582163693",
+      "text": "使用超过1万亿Token的OpenAI大客户名单\n\nOpenAI最近首次公开了一份重磅名单：列出了30位使用OpenAI服务超过1万亿（1T）个Token的顶级客户代表。\n\n需要注意的是，名单中的顺序是按照姓氏字母排序的，而并非根据使用量排名。此外，名单上列出的个人与所在公司的匹配尽力确保准确，但仍可能存在误差。\n\n更正说明：第8位 Mahesh Kumar 应为Uber公司，而非Tiger Analytics。\n\n下面是详细名单（标黄色的是初创公司，紫色为规模化公司）：\n\n序号, 姓名, 公司, 职位\n1, Isaac Andersen, Duolingo, 高级软件工程师\n2, Alex Atallah, OpenRouter, CEO及联合创始人\n3, Chris Colon, Indeed, AI平台总监\n4, John Emmons, Salesforce, AI领导团队\n5, Harjot Gill, CodeRabbit, CEO及联合创始人\n6, Cris Ippolite, iSolutionsAI, CEO及AI总监\n7, Jiahui Jiang, Outtake, 工程师\n8, Mahesh Kumar, Uber, CEO及联合创始人（更正）\n9, Calvin Lee, Ramp, 创始工程师\n10, Zachary Lipton, Abridge, 联合创始人及CTO\n11, Joel Liu, Sider AI, 创始人\n12, Zach Lloyd, Warp\\.dev, CEO及创始人\n13, Dani Passos, Shopify, 开发者关系\n14, Sarah Sachs, Notion, AI负责人 / AI工程主管\n15, Douglas Schonholtz, WHOOP, 高级AI工程师\n16, Praty Sharma, HubSpot / Dashworks, AI负责人 / 联合创始人\n17, Denis Shiryaev, JetBrains, 集团产品经理\n18, Sam Spelsberg, Delphi, 联合创始人及CTO\n19, Ashwin Sreenivas, Decagon, 联合创始人\n20, Shriram Sridharan, Rox, 联合创始人\n21, Nandan Thor, T-Mobile, AI、产品及工程副总裁\n22, Shashi Upadhyay, Zendesk, 产品、工程及AI总裁\n23, Aaron Weldy, Harvey, 软件工程师\n24, Luke Woloszyn, Read AI, 高级数据科学家\n25, Danny Wu, Canva, 产品总负责人\n26, Scott Wu, Cognition, 联合创始人及CEO\n27, Kai Xin Tai, Datadog, 产品经理\n28, Denis Yarats, Perplexity, 联合创始人及CTO\n29, Pablo Zamudio, Mercado Libre, AI与数据/机器学习专家\n30, Kay Zhu, Genspark AI, 联合创始人及CTO\n\n名单中既有知名的规模化公司，也不乏崭露头角的AI创业公司。",
+      "created_at": "Wed Oct 08 02:53:17 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1975582169126019223",
+        "text": "OpenAI just dropped the top 30 customers who've used 1T+ of their tokens. https://t.co/hoAIzrfOSZ",
+        "created_at": "Tue Oct 07 15:21:08 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1975582166789857285",
+            "url": "https://pbs.twimg.com/media/G2qtg3wbIAUiwKt.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "361044311",
+          "name": "Deedy",
+          "screen_name": "deedydas",
+          "description": "Partner @MenloVentures. Formerly founding team @glean, @Google Search. @Cornell CS. Tweets about tech, immigration, India, fitness and search.",
+          "followers_count": 210179,
+          "friends_count": 5250,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 418,
+          "favorite_count": 4303,
+          "reply_count": 242,
+          "quote_count": 153
+        }
+      },
+      "stats": {
+        "retweet_count": 65,
+        "favorite_count": 238,
+        "reply_count": 20,
+        "quote_count": 5
+      }
+    },
+    {
+      "id": "1975764049179590835",
+      "text": "吴老师的新课免费只是不能做最后的测试，前面一样可以看的，吴老师很良心了 https://t.co/HIrf0fGbXf",
+      "created_at": "Wed Oct 08 03:23:51 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1975763910901833728",
+          "url": "https://pbs.twimg.com/media/G2tSzxVXIAA3zC8.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1975750259927314829",
+        "text": "好消息：吴恩达推出了 agentic AI课程。\n\n坏消息：but 30美金/月。🤣\n\ndeeplearning-ai 和coursera的模式类似：大部分课程免费，部分课程需要开会员才能学习；\n\n之前的课程都是免费的。这次的agentic ai课，到了需要开会员的阶段了。\n\n现在的问题是：你会不会开会员学这门课？我在评论区加个投票，看看大家怎么选，哈哈",
+        "created_at": "Wed Oct 08 02:29:04 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1975749472924897280",
+            "url": "https://pbs.twimg.com/media/G2tFrXrakAAZ5UG.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1975749472920784896",
+            "url": "https://pbs.twimg.com/media/G2tFrXqb0AADecv.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "709787332254117888",
+          "name": "howie.serious",
+          "screen_name": "howie_serious",
+          "description": "purity of thought. be exactly who you are : just a serious man. 思想纯净，做好自己：严肃对待自己的兴趣，不要浮皮潦草。\n\n公众号：howie和小能熊\nyoutube：https://t.co/J1aSMKnUFo",
+          "followers_count": 45375,
+          "friends_count": 318,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 30,
+          "favorite_count": 169,
+          "reply_count": 18,
+          "quote_count": 5
+        }
+      },
+      "stats": {
+        "retweet_count": 70,
+        "favorite_count": 460,
+        "reply_count": 13,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "1975790241605669304",
+      "text": "以这个提示词为例，大部分时候不需要用 JSON 格式提示词：\n\n---- 版本1 （图1）----\n画一幅东亚年轻女性的高调工作室肖像照。她穿着白色吊带背心、白色短裤和敞开的灰色连帽衫，随意地坐在黑色皮沙发上。她的深棕色长发扎成凌乱的高丸子头，留着法式刘海。她的右眼直视镜头，左眼俏皮地眨着。右手托着下巴，指尖轻触脸颊，脸上是俏皮又迷人的表情。她的肤色非常白皙，妆容是流行的K-Beauty/抖音风格，脸颊有明显的粉色腮红，嘴唇是粉色渐变，眉毛清晰，眼线清淡，卧蚕突出，左眼下方还有一颗小痣。\n\n画面采用直射闪光灯照明，营造出高调明亮、高对比度的效果，在白色墙壁上投下清晰的阴影，皮肤和沙发上有明显的高光。旁边放着一台银色MacBook笔记本电脑。照片经过高度后期处理，皮肤光滑无瑕，没有毛孔或瑕疵，眼睛和睫毛部分锐化，整体色调明亮、干净，略带冷色，粉色调突出。构图是垂直的，主体居中，从大腿中部到头部。\n\n---- 版本2 （图2）----\n\n一张高调工作室肖像照，采用直射闪光灯美学，具有东亚社交媒体风格（如Ulzzang、抖音），并经过风格化的美颜修饰。\n\n色彩配置：sRGB\n渲染意图：照片\n\n主体：\n类别：人类\n性别呈现：女性\n种族：东亚（如韩国、中国）\n年龄段：青年\n身材：苗条，自然人体比例\n姿势：慵懒地坐在沙发上，双腿交叉并收拢靠近身体\n手势：右手抬起，手指松散地卷曲，手背/指关节轻轻托住下巴和下脸颊。\n头部倾斜：5度\n\n脸部：\n表情：俏皮、迷人\n凝视：右眼直视镜头\n眼睛动作：左眼眨眼\n肤色：非常苍白的瓷器（美白效果）\n妆容：风格化的K-Beauty/抖音妆容：无瑕哑光底妆，颧骨处涂抹浓郁的粉色腮红，粉色渐变唇妆，眉毛清晰，眼线清淡，卧蚕突出。\n特征：左眼下方有小颗美人痣/痣。\n\n发型：\n长度：长发\n风格：凌乱的高发髻/丸子头，带有一些散落的发丝和法式刘海。\n颜色：深棕色。\n\n服饰：\n上衣：白色修身短款吊带背心\n外套：浅灰色拉链连帽衫，敞开穿着，略微滑落双肩。\n下装：白色抽绳家居短裤\n鞋子：赤脚。\n\n环境：\n地点：工作室或极简主义室内\n布景：黑色皮革沙发靠着一面纯白或浅灰色的墙壁\n道具：银色笔记本电脑（苹果MacBook，logo可见）放置在主体右侧（相机左侧）的垫子上。\n\n灯光：\n主光：\n光源：频闪灯/闪光灯\n柔光罩：裸露的反光罩或直射闪光灯（硬光源）\n位置：靠近相机轴线，略微偏向相机右侧并高于视线。\n效果：主体正后方的墙壁上投下清晰、深暗、明确的阴影；皮肤和沙发皮革上有强烈的镜面高光。\n补光：极少/无\n环境光：抑制\n白平衡：5800K。\n\n相机：\n系统：数码相机\n传感器：全画幅等效\n镜头：\n类型：定焦\n焦距：50毫米\n曝光：\nISO：100\n光圈：F4.0\n测光：明亮曝光，高调美学。\n对焦：\n目标：靠近眼睛（右眼）\n景深：适中。\n构图：\n方向：垂直\n裁剪：从大腿中部到头部，头发上方留有空间。\n角度：平视\n构图：主体居中。\n\n色彩分级：\n色调：明亮、干净、略带冷色调\n对比度：高对比度\n饱和度：适中，强调粉色。\n\n后期处理：\n降噪：高\n纹理：皮肤高度平滑，无毛孔（“瓷娃娃”或“美颜滤镜”效果）\n锐化：选择性地对眼睛/睫毛进行锐化\n瑕疵控制：完全去除所有瑕疵和纹理。\n\n质量目标：\n准确的肢体长度和关节角度\n正确的手指数量和关节活动\n逼真的织物张力和褶皱\n准确的眨眼表情。\n\n负面提示：\n无改变或夸张的身体比例\n无额外或融合的手指\n无逼真的皮肤纹理、毛孔或瑕疵\n无文字或水印（除非指定logo）\n无极端广角畸变\n无不适宜内容\n无黑暗/阴郁的灯光\n无暖色调。",
+      "created_at": "Wed Oct 08 05:07:56 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1975790188874887169",
+          "url": "https://pbs.twimg.com/media/G2tqtWaW8AEud_U.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1975790219568775168",
+          "url": "https://pbs.twimg.com/media/G2tqvIwWgAA2y83.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1975554358495654236",
+        "text": "Google Gemini 2.5 Nano banana \n{\n  \"style\": \"High-key studio portrait, direct flash aesthetic, East Asian social media style (e.g., Ulzzang, Douyin), stylized beauty retouching.\",\n  \"output\": {\n    \"color_profile\": \"sRGB\",\n    \"render_intent\": \"photo\"\n  },\n  \"subject\": {\n    \"category\": \"human\",\n    \"gender_presentation\": \"female\",\n    \"ethnicity\": \"East Asian (e.g., Korean, Chinese)\",\n    \"age_bracket\": \"young_adult\",\n    \"body\": {\n      \"build\": \"slim\",\n      \"proportions\": \"natural human anatomy\",\n      \"posture\": \"relaxed on sofa, seated casually\",\n      \"pose\": \"seated, legs crossed and tucked close to body\",\n      \"gesture\": \"Right hand raised, fingers loosely curled, back of fingers/knuckles gently supporting the chin and lower cheek.\",\n      \"head_tilt_deg\": 5\n    },\n    \"face\": {\n      \"expression\": \"Playful, alluring\",\n      \"gaze\": \"right eye direct to camera\",\n      \"eye_action\": \"winking with the left eye\",\n      \"skin_tone\": \"Very pale porcelain (lightened aesthetic)\",\n      \"makeup\": \"Stylized K-Beauty/Douyin look: flawless matte base, strong pink blush high on cheeks, pink gradient lips, defined brows, light eyeliner, emphasized Aegyo-sal\",\n      \"features\": \"small beauty mark/mole under the left eye\"\n    },\n    \"hair\": {\n      \"length\": \"long\",\n      \"style\": \"messy high updo/bun with loose strands and curtain bangs\",\n      \"color\": \"dark brown\"\n    },\n    \"wardrobe\": {\n      \"top\": \"white fitted cropped camisole\",\n      \"outerwear\": \"light gray zip hoodie, worn open and slightly slipping off both shoulders\",\n      \"bottom\": \"white lounge shorts with drawstring\",\n      \"footwear\": \"barefoot\"\n    }\n  },\n  \"environment\": {\n    \"location\": \"studio or minimalist interior\",\n    \"set\": \"black leather sofa against a plain white or light gray wall\",\n    \"props\": \"Silver laptop (Apple MacBook, logo visible) placed on the cushion to the subject's right (camera left)\"\n  },\n  \"lighting\": {\n    \"key\": {\n      \"source\": \"strobe/flash\",\n      \"modifier\": \"Bare reflector or direct flash (hard source)\",\n      \"position\": \"Near camera axis, slightly camera-right and above eye line\",\n      \"effect\": \"Crisp, dark, well-defined cast shadows on the wall directly behind subject; strong specular highlights on skin and sofa leather.\"\n    },\n    \"fill\": {\n      \"type\": \"minimal/none\"\n    },\n    \"ambient\": \"suppressed\",\n    \"white_balance_K\": 5800\n  },\n  \"camera\": {\n    \"system\": \"Digital Camera\",\n    \"sensor\": \"full-frame equivalent\",\n    \"lens\": {\n      \"type\": \"prime\",\n      \"focal_length_mm\": 50\n    },\n    \"exposure\": {\n      \"iso\": 100,\n      \"aperture_f\": 4.0,\n      \"metering\": \"Bright exposure, high-key aesthetic\"\n    },\n    \"focus\": {\n      \"target\": \"near eye (right eye)\",\n      \"depth_of_field\": \"moderate\"\n    },\n    \"framing\": {\n      \"orientation\": \"vertical\",\n      \"crop\": \"mid-thigh to head with room above hair\",\n      \"angle\": \"eye-level\",\n      \"composition\": \"subject centrally framed\"\n    }\n  },\n  \"color_grade\": {\n    \"look\": \"Bright, clean, slightly cool tone\",\n    \"contrast\": \"High contrast\",\n    \"saturation\": \"moderate, emphasized pinks\"\n  },\n  \"postprocess\": {\n    \"noise_reduction\": \"high\",\n    \"texture\": \"Highly smoothed skin, poreless appearance ('porcelain doll' or 'beauty filter' effect)\",\n    \"sharpen\": \"selective on eyes/lashes\",\n    \"blemish_control\": \"Complete removal of all blemishes and texture.\"\n  },\n  \"quality_targets\": [\n    \"accurate limb lengths and joint angles\",\n    \"correct finger count and articulation\",\n    \"realistic fabric tension and folds\",\n    \"accurate winking expression\"\n  ],\n  \"negative_prompt\": [\n    \"no altered or exaggerated body proportions\",\n    \"no extra or fused fingers\",\n    \"no realistic skin texture, pores, or blemishes\",\n    \"no text or watermarks (excluding specified logos)\",\n    \"no extreme wide-angle distortion\",\n    \"no NSFW content\",\n    \"no dark/moody lighting\",\n    \"no warm tones\"\n  ]\n}",
+        "created_at": "Tue Oct 07 13:30:37 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1975554350278950912",
+            "url": "https://pbs.twimg.com/media/G2qUNvLawAAmZ5O.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2872720562",
+          "name": "Emily",
+          "screen_name": "IamEmily2050",
+          "description": "Any sufficiently advanced technology is indistinguishable from magic.  Arthur C. Clarke.",
+          "followers_count": 28260,
+          "friends_count": 560,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 327,
+          "favorite_count": 3191,
+          "reply_count": 115,
+          "quote_count": 29
+        }
+      },
+      "stats": {
+        "retweet_count": 128,
+        "favorite_count": 782,
+        "reply_count": 23,
+        "quote_count": 7
+      }
+    },
+    {
+      "id": "1975790938275602765",
+      "text": "当然 JSON 和版本2 有个好处就是你可以自由变换填空，结构化的数据更方便修改",
+      "created_at": "Wed Oct 08 05:10:42 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 20,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1975940176749940740",
+      "text": "RT @hongming731: 正如设计模式曾是软件工程的圣经，这本由谷歌资深工程主管免费分享的《智能体设计模式》，正为火热的 AI Agent 领域带来首套系统性的设计原则与最佳实践。🔽 https://t.co/TXqTcs4TkX",
+      "created_at": "Wed Oct 08 15:03:43 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1975928640371412992",
+          "url": "https://pbs.twimg.com/media/G2vooSbb0AA4cjH.png"
+        }
+      ],
+      "retweet": {
+        "id": "1975930066833175037",
+        "text": "正如设计模式曾是软件工程的圣经，这本由谷歌资深工程主管免费分享的《智能体设计模式》，正为火热的 AI Agent 领域带来首套系统性的设计原则与最佳实践。🔽 https://t.co/TXqTcs4TkX",
+        "created_at": "Wed Oct 08 14:23:33 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1975928640371412992",
+            "url": "https://pbs.twimg.com/media/G2vooSbb0AA4cjH.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1061781458107326464",
+          "name": "ginobefun",
+          "screen_name": "hongming731",
+          "description": "👨‍💻 拥有十多年开发与架构经验  \n🌐 努力打造 https://t.co/1TEy9PIP1u，为开发者筛选优质内容  \n🛠 全力开发 https://t.co/HxuhervLoL，提供专业文本润色服务  \n📱 正在构建 https://t.co/vaP78R1eWo，让社交媒体使用更智能、更有目的  \n✨ 致力于成为有趣的人，做有趣的事",
+          "followers_count": 7588,
+          "friends_count": 1430,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 247,
+          "favorite_count": 878,
+          "reply_count": 5,
+          "quote_count": 6
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 247,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1976007190755319944",
+      "text": "吴恩达老师最新的课程《Agentic AI》（智能体AI）正式上线！这门课程专门教你如何构建当前最前沿的AI智能体工作流，现已在 DeepLearning .AI 平台开放。\n\n学习这门课程，只需具备基本的 Python 知识即可。当然，如果你对大语言模型（LLM）已有一定了解，会更好上手一些。\n\n与其他课程不同的是，这门课不绑定特定的框架，直接使用最原始的 Python 编程方式，让你能彻底掌握AI智能体背后的核心思想。一旦掌握这些基本概念，你就能灵活地使用任何流行的AI智能体框架，甚至完全不用框架也能实现自己的创意。\n\n具体来说，你会学到四种关键的智能体设计模式：\n1. 反思（Reflection）：智能体会自动审视自己的输出，并主动寻找改进方法。\n2. 工具调用（Tool use）：大语言模型决定调用哪些工具来完成任务，比如进行网络搜索、访问日历、发送邮件，或生成代码。\n3. 规划（Planning）：用大语言模型将复杂任务分解为一系列清晰明确的子任务，再逐步执行。\n4. 多智能体协作（Multi-agent collaboration）：构建多个专门化的智能体（类似公司聘请多名不同技能的员工），相互合作，共同完成更复杂的任务。\n\n更重要的是，这门课程还会教你如何打造高效、稳定的AI智能体：\n\n过去，吴恩达老师曾与许多团队合作，开发各类智能体。他们发现，决定一个团队是否能高效构建AI智能体的最关键因素，就是团队能否严格落实评测（evals）和错误分析（error analysis）流程。许多团队因为没有掌握这种方法，花费数月不断调整智能体，却始终无法突破性能瓶颈。不少团队花费数月精调提示词、开发各种工具，最终却发现智能体的表现再也难以提高。\n\n但如果你掌握了如何正确地进行评测，以及如何通过跟踪智能体每一步行动的详细日志（traces），快速找到问题所在，就能准确地聚焦到真正需要优化的部分上。不再靠猜测，而是用扎实的数据引导优化方向。\n\n你还将学到如何把复杂的应用，系统化地拆解成多个具体任务，再用这些设计模式逐步实现。一旦掌握了这种拆解方法，你也能更容易地发现适合AI智能体发挥作用的新场景。\n\n课程提供了丰富的实战案例，包括代码生成、客服智能助手、自动化营销流程等。甚至还会一起开发一个高级的研究型智能体，让它自动搜索信息、总结归纳，并生成深入的研究报告。\n\n学完本课程后，你不仅能掌握AI智能体的核心构件，还会彻底理解如何合理地组合并优化这些构件。这将让你远远领先于目前绝大部分构建AI智能体的团队。\n\n推荐看看这门课程，而且前面教学部分都是免费，只有最后动手实验部分是付费，很良心了。",
+      "created_at": "Wed Oct 08 19:30:01 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1975614372799283423",
+        "text": "Announcing my new course: Agentic AI!\n\nBuilding AI agents is one of the most in-demand skills in the job market. This course, available now at https://t.co/zGHUh1loPO, teaches you how.\n\nYou'll learn to implement four key agentic design patterns:\n- Reflection, in which an agent examines its own output and figures out how to improve it\n- Tool use, in which an LLM-driven application decides which functions to call to carry out web search, access calendars, send email, write code, etc.\n- Planning, where you'll use an LLM to decide how to break down a task into sub-tasks for execution, and\n- Multi-agent collaboration, in which you build multiple specialized agents — much like how a company might hire multiple employees — to perform a complex task\n\nYou'll also learn to take a complex application and systematically decompose it into a sequence of tasks to implement using these design patterns.\n\nBut here's what I think is the most important part of this course: Having worked with many teams on AI agents, I've found that the single biggest predictor of whether someone executes well is their ability to drive a disciplined process for evals and error analysis. In this course, you'll learn how to do this, so you can efficiently home in on which components to improve in a complex agentic workflow. Instead of guessing what to work on, you'll let evals data guide you. This will put you significantly ahead of the game compared to the vast majority of teams building agents.\n\nTogether, we'll build a deep research agent that searches, synthesizes, and reports, using all of these agentic design patterns and best practices.\n\nThis self-paced course is taught in a vendor neutral way, using raw Python - without hiding details in a framework. You'll see how each step works, and learn the core concepts that you can then implement using any popular agentic AI framework, or using no framework. The only prerequisite is familiarity with Python, though knowing a bit about LLMs helps.\n\nCome join me, and let's build some agentic AI systems!\n\nSign up to get started: https://t.co/FX35dloqw4",
+        "created_at": "Tue Oct 07 17:29:06 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "1975612300506898436",
+            "url": "https://video.twimg.com/amplify_video/1975612300506898436/vid/avc1/1920x1080/6vBwBxZLhTYCvEYX.mp4?tag=21",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "216939636",
+          "name": "Andrew Ng",
+          "screen_name": "AndrewYNg",
+          "description": "Co-Founder of Coursera; Stanford CS adjunct faculty. Former head of Baidu AI Group/Google Brain. #ai #machinelearning, #deeplearning #MOOCs",
+          "followers_count": 1276054,
+          "friends_count": 1037,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1049,
+          "favorite_count": 6376,
+          "reply_count": 135,
+          "quote_count": 75
+        }
+      },
+      "stats": {
+        "retweet_count": 98,
+        "favorite_count": 371,
+        "reply_count": 4,
+        "quote_count": 2
+      }
+    }
+  ]
+}

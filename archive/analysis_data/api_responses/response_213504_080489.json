@@ -1,0 +1,2325 @@
+{
+  "url": "https://x.com/i/api/graphql/ikU9DgZwhNIWqqFheO2NWA/TweetDetail?variables=%7B%22focalTweetId%22%3A%221965963719546138723%22%2C%22referrer%22%3A%22home%22%2C%22controller_data%22%3A%22DAACDAABDAABCgABAUAABFoCAAEKAAIAAAAAAAEBAAoACYVEXn%2Fh26qCCgAKAAABmTj8IpYIAAsAAAABDwAMAwAAACABAAJaBABAAQABAQAAAAAAAAAAAAAAAAAAAAAAAID%2FAQoADhsl8dHHV0PBAAAAAA%3D%3D%22%2C%22with_rux_injections%22%3Afalse%2C%22rankingMode%22%3A%22Relevance%22%2C%22includePromotedContent%22%3Atrue%2C%22withCommunity%22%3Atrue%2C%22withQuickPromoteEligibilityTweetFields%22%3Atrue%2C%22withBirdwatchNotes%22%3Atrue%2C%22withVoice%22%3Atrue%7D&features=%7B%22rweb_video_screen_enabled%22%3Afalse%2C%22payments_enabled%22%3Afalse%2C%22profile_label_improvements_pcf_label_in_post_enabled%22%3Atrue%2C%22rweb_tipjar_consumption_enabled%22%3Atrue%2C%22verified_phone_label_enabled%22%3Afalse%2C%22creator_subscriptions_tweet_preview_api_enabled%22%3Atrue%2C%22responsive_web_graphql_timeline_navigation_enabled%22%3Atrue%2C%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3Afalse%2C%22premium_content_api_read_enabled%22%3Afalse%2C%22communities_web_enable_tweet_community_results_fetch%22%3Atrue%2C%22c9s_tweet_anatomy_moderator_badge_enabled%22%3Atrue%2C%22responsive_web_grok_analyze_button_fetch_trends_enabled%22%3Afalse%2C%22responsive_web_grok_analyze_post_followups_enabled%22%3Atrue%2C%22responsive_web_jetfuel_frame%22%3Atrue%2C%22responsive_web_grok_share_attachment_enabled%22%3Atrue%2C%22articles_preview_enabled%22%3Atrue%2C%22responsive_web_edit_tweet_api_enabled%22%3Atrue%2C%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3Atrue%2C%22view_counts_everywhere_api_enabled%22%3Atrue%2C%22longform_notetweets_consumption_enabled%22%3Atrue%2C%22responsive_web_twitter_article_tweet_consumption_enabled%22%3Atrue%2C%22tweet_awards_web_tipping_enabled%22%3Afalse%2C%22responsive_web_grok_show_grok_translated_post%22%3Afalse%2C%22responsive_web_grok_analysis_button_from_backend%22%3Atrue%2C%22creator_subscriptions_quote_tweet_preview_enabled%22%3Afalse%2C%22freedom_of_speech_not_reach_fetch_enabled%22%3Atrue%2C%22standardized_nudges_misinfo%22%3Atrue%2C%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3Atrue%2C%22longform_notetweets_rich_text_read_enabled%22%3Atrue%2C%22longform_notetweets_inline_media_enabled%22%3Atrue%2C%22responsive_web_grok_image_annotation_enabled%22%3Atrue%2C%22responsive_web_grok_imagine_annotation_enabled%22%3Atrue%2C%22responsive_web_grok_community_note_auto_translation_is_enabled%22%3Afalse%2C%22responsive_web_enhance_cards_enabled%22%3Afalse%7D&fieldToggles=%7B%22withArticleRichContentState%22%3Atrue%2C%22withArticlePlainText%22%3Afalse%2C%22withGrokAnalyze%22%3Afalse%2C%22withDisallowedReplyControls%22%3Afalse%7D",
+  "timestamp": "2025-09-11T21:35:04.080517",
+  "status": 200,
+  "headers": {
+    "x-transaction-id": "aa0737e7840f3d20",
+    "x-connection-hash": "c40867ff5ac9f2e6b3d64c406de9cd4ea41992835cfff021e447417540d369ed",
+    "content-encoding": "gzip",
+    "cf-cache-status": "DYNAMIC",
+    "x-rate-limit-limit": "150",
+    "x-content-type-options": "nosniff",
+    "expires": "Tue, 31 Mar 1981 05:00:00 GMT",
+    "x-response-time": "526",
+    "date": "Thu, 11 Sep 2025 13:35:04 GMT",
+    "content-disposition": "attachment; filename=json.json",
+    "content-type": "application/json; charset=utf-8",
+    "vary": "Origin, accept-encoding",
+    "perf": "7402827104",
+    "x-frame-options": "SAMEORIGIN",
+    "x-twitter-response-tags": "BouncerCompliant",
+    "last-modified": "Thu, 11 Sep 2025 13:35:03 GMT",
+    "strict-transport-security": "max-age=631138519; includeSubdomains",
+    "cache-control": "no-cache, no-store, must-revalidate, pre-check=0, post-check=0",
+    "origin-cf-ray": "97d78bcdd8cae2e4-SEA",
+    "pragma": "no-cache",
+    "x-rate-limit-reset": "1757598580",
+    "x-tfe-preserve-body": "true",
+    "x-rate-limit-remaining": "147",
+    "cf-ray": "97d78bcdd8cae2e4-HKG",
+    "x-xss-protection": "0",
+    "server": "cloudflare tsa_p"
+  },
+  "data": {
+    "data": {
+      "threaded_conversation_with_injections_v2": {
+        "instructions": [
+          {
+            "type": "TimelineClearCache"
+          },
+          {
+            "type": "TimelineAddEntries",
+            "entries": [
+              {
+                "entryId": "tweet-1965963719546138723",
+                "sortIndex": "1966133389647937536",
+                "content": {
+                  "entryType": "TimelineTimelineItem",
+                  "__typename": "TimelineTimelineItem",
+                  "itemContent": {
+                    "itemType": "TimelineTweet",
+                    "__typename": "TimelineTweet",
+                    "tweet_results": {
+                      "result": {
+                        "__typename": "Tweet",
+                        "rest_id": "1965963719546138723",
+                        "has_birdwatch_notes": false,
+                        "core": {
+                          "user_results": {
+                            "result": {
+                              "__typename": "User",
+                              "id": "VXNlcjozMTc4MjMx",
+                              "rest_id": "3178231",
+                              "affiliates_highlighted_label": {},
+                              "avatar": {
+                                "image_url": "https://pbs.twimg.com/profile_images/561086911561736192/6_g58vEs_normal.jpeg"
+                              },
+                              "core": {
+                                "created_at": "Mon Apr 02 03:42:14 +0000 2007",
+                                "name": "宝玉",
+                                "screen_name": "dotey"
+                              },
+                              "dm_permissions": {
+                                "can_dm": true,
+                                "can_dm_on_xchat": false
+                              },
+                              "has_graduated_access": true,
+                              "is_blue_verified": true,
+                              "legacy": {
+                                "default_profile": false,
+                                "default_profile_image": false,
+                                "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+                                "entities": {
+                                  "description": {
+                                    "urls": []
+                                  },
+                                  "url": {
+                                    "urls": [
+                                      {
+                                        "display_url": "baoyu.io",
+                                        "expanded_url": "https://baoyu.io",
+                                        "url": "https://t.co/icobX4A3Ae",
+                                        "indices": [
+                                          0,
+                                          23
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                },
+                                "fast_followers_count": 0,
+                                "favourites_count": 32316,
+                                "followers_count": 132730,
+                                "friends_count": 1382,
+                                "has_custom_timelines": true,
+                                "is_translator": false,
+                                "listed_count": 2260,
+                                "media_count": 4346,
+                                "normal_followers_count": 132730,
+                                "pinned_tweet_ids_str": [],
+                                "possibly_sensitive": false,
+                                "profile_interstitial_type": "",
+                                "statuses_count": 24884,
+                                "translator_type": "none",
+                                "url": "https://t.co/icobX4A3Ae",
+                                "want_retweets": true,
+                                "withheld_in_countries": []
+                              },
+                              "location": {
+                                "location": "Chicago, IL"
+                              },
+                              "media_permissions": {
+                                "can_media_tag": true
+                              },
+                              "parody_commentary_fan_label": "None",
+                              "profile_image_shape": "Circle",
+                              "privacy": {
+                                "protected": false
+                              },
+                              "relationship_perspectives": {
+                                "following": true
+                              },
+                              "tipjar_settings": {},
+                              "verification": {
+                                "verified": false
+                              }
+                            }
+                          }
+                        },
+                        "unmention_data": {},
+                        "edit_control": {
+                          "edit_tweet_ids": [
+                            "1965963719546138723"
+                          ],
+                          "editable_until_msecs": "1757560851000",
+                          "is_edit_eligible": false,
+                          "edits_remaining": "5"
+                        },
+                        "is_translatable": true,
+                        "views": {
+                          "count": "23306",
+                          "state": "EnabledWithCount"
+                        },
+                        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+                        "note_tweet": {
+                          "is_expandable": true,
+                          "note_tweet_results": {
+                            "result": {
+                              "id": "Tm90ZVR3ZWV0OjE5NjU5NjM3MTk0ODMyMDc2ODI=",
+                              "text": "所有“凭感觉编程”（Vibe Coding）工具都在兜售快速致富的骗局\n\n作者：Varun Raghu\n\n我之前写过一篇文章，聊到为什么我不再做“凭感觉编程”。（见评论）\n\n现在想想，我甚至不太想用“凭感觉编程”这个词。它听起来像是不费力的活儿。但事实完全相反：这事儿非常费力，绝不是靠“感觉”就能搞定。\n\n那些工具打着“只需几句提示词就能做出属于你的十亿美元公司”的梦想在卖——真的，全部都是在忽悠人。相信我，我试过大多数。\n\n你很难把人忽悠到相信“随便摆弄就能造出手机或汽车”。可不知怎么的，很多人却会被“几乎不费力就能做出世界级、能赚上百万的软件产品”这种说法骗倒。这就是骗局。\n\n一开始我满怀希望：凭我有限的技术背景，终于也能“动手做”了。几个月时间，我试了不同的平台，写了无数条提示词，花了几百美元——最后得出的结论是：根本行不通。这些工具只是给了你一个“你会写代码”的幻觉。\n\n现在我用 Cursor 只干一件事：给我的落地页做些外观上的调整。原因很简单——前端和设计本来就是我的强项。我只是用 AI 来加速已有的技能，而不是凭空获得不会的本事。\n\n这些 AI 编程工具会不会变得更好？我以后能不能真的靠“凭感觉”把产品做出来？也许吧。但至少此刻，这个行业整体都在搞一场大骗局，把我们所有人都耍了。",
+                              "entity_set": {
+                                "hashtags": [],
+                                "symbols": [],
+                                "urls": [],
+                                "user_mentions": []
+                              },
+                              "richtext": {
+                                "richtext_tags": []
+                              },
+                              "media": {
+                                "inline_media": []
+                              }
+                            }
+                          }
+                        },
+                        "grok_analysis_button": true,
+                        "quoted_status_result": {
+                          "result": {
+                            "__typename": "Tweet",
+                            "rest_id": "1965812445475401987",
+                            "has_birdwatch_notes": false,
+                            "core": {
+                              "user_results": {
+                                "result": {
+                                  "__typename": "User",
+                                  "id": "VXNlcjoxMTYzNTU3NDA=",
+                                  "rest_id": "116355740",
+                                  "affiliates_highlighted_label": {},
+                                  "avatar": {
+                                    "image_url": "https://pbs.twimg.com/profile_images/1509120377816969223/qzJBlcuS_normal.jpg"
+                                  },
+                                  "core": {
+                                    "created_at": "Mon Feb 22 04:48:14 +0000 2010",
+                                    "name": "九原客",
+                                    "screen_name": "9hills"
+                                  },
+                                  "dm_permissions": {
+                                    "can_dm": true,
+                                    "can_dm_on_xchat": false
+                                  },
+                                  "has_graduated_access": true,
+                                  "is_blue_verified": true,
+                                  "legacy": {
+                                    "default_profile": false,
+                                    "default_profile_image": false,
+                                    "description": "喜欢一切美好的事物。目前聚焦在大模型领域。",
+                                    "entities": {
+                                      "description": {
+                                        "urls": []
+                                      },
+                                      "url": {
+                                        "urls": [
+                                          {
+                                            "display_url": "ninehills.tech",
+                                            "expanded_url": "https://ninehills.tech/",
+                                            "url": "https://t.co/tSd6HULcAF",
+                                            "indices": [
+                                              0,
+                                              23
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "fast_followers_count": 0,
+                                    "favourites_count": 3136,
+                                    "followers_count": 21097,
+                                    "friends_count": 971,
+                                    "has_custom_timelines": true,
+                                    "is_translator": false,
+                                    "listed_count": 353,
+                                    "media_count": 316,
+                                    "normal_followers_count": 21097,
+                                    "pinned_tweet_ids_str": [],
+                                    "possibly_sensitive": false,
+                                    "profile_interstitial_type": "",
+                                    "statuses_count": 4894,
+                                    "translator_type": "none",
+                                    "url": "https://t.co/tSd6HULcAF",
+                                    "want_retweets": false,
+                                    "withheld_in_countries": []
+                                  },
+                                  "location": {
+                                    "location": "北京, 中华人民共和国"
+                                  },
+                                  "media_permissions": {
+                                    "can_media_tag": true
+                                  },
+                                  "parody_commentary_fan_label": "None",
+                                  "profile_image_shape": "Circle",
+                                  "professional": {
+                                    "rest_id": "1591097441687724033",
+                                    "professional_type": "Creator",
+                                    "category": [
+                                      {
+                                        "id": 986,
+                                        "name": "Software Application",
+                                        "icon_name": "IconBriefcaseStroke"
+                                      }
+                                    ]
+                                  },
+                                  "privacy": {
+                                    "protected": false
+                                  },
+                                  "relationship_perspectives": {
+                                    "following": false
+                                  },
+                                  "tipjar_settings": {},
+                                  "verification": {
+                                    "verified": false
+                                  }
+                                }
+                              }
+                            },
+                            "unmention_data": {},
+                            "edit_control": {
+                              "edit_tweet_ids": [
+                                "1965812445475401987"
+                              ],
+                              "editable_until_msecs": "1757524784000",
+                              "is_edit_eligible": true,
+                              "edits_remaining": "5"
+                            },
+                            "is_translatable": true,
+                            "views": {
+                              "count": "35827",
+                              "state": "EnabledWithCount"
+                            },
+                            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                            "grok_analysis_button": true,
+                            "quotedRefResult": {
+                              "result": {
+                                "__typename": "Tweet",
+                                "rest_id": "1965679127622775099"
+                              }
+                            },
+                            "legacy": {
+                              "bookmark_count": 32,
+                              "bookmarked": false,
+                              "created_at": "Wed Sep 10 16:19:44 +0000 2025",
+                              "conversation_id_str": "1965812445475401987",
+                              "display_text_range": [
+                                0,
+                                135
+                              ],
+                              "entities": {
+                                "hashtags": [],
+                                "symbols": [],
+                                "timestamps": [],
+                                "urls": [],
+                                "user_mentions": []
+                              },
+                              "favorite_count": 103,
+                              "favorited": false,
+                              "full_text": "只能打信息差，死道友不死贫道。\n\n别看vibe coding 仿佛满大街都是，真正去公司看，用的人真的不多，愿意花20刀买好模型的，更是少之又少。\n\n最终比同事性价比高就行，也别给周围人做什么分享，闷声低头做。\n\n看到有人给同组和 leader 分享提效方法，我都想笑。",
+                              "is_quote_status": true,
+                              "lang": "zh",
+                              "quote_count": 1,
+                              "quoted_status_id_str": "1965679127622775099",
+                              "quoted_status_permalink": {
+                                "url": "https://t.co/riFGWKzgT4",
+                                "expanded": "https://twitter.com/yukiricc/status/1965679127622775099",
+                                "display": "x.com/yukiricc/statu…"
+                              },
+                              "reply_count": 13,
+                              "retweet_count": 12,
+                              "retweeted": false,
+                              "user_id_str": "116355740",
+                              "id_str": "1965812445475401987"
+                            }
+                          }
+                        },
+                        "legacy": {
+                          "bookmark_count": 41,
+                          "bookmarked": false,
+                          "created_at": "Thu Sep 11 02:20:51 +0000 2025",
+                          "conversation_id_str": "1965963719546138723",
+                          "display_text_range": [
+                            0,
+                            152
+                          ],
+                          "entities": {
+                            "hashtags": [],
+                            "symbols": [],
+                            "timestamps": [],
+                            "urls": [],
+                            "user_mentions": []
+                          },
+                          "favorite_count": 40,
+                          "favorited": false,
+                          "full_text": "所有“凭感觉编程”（Vibe Coding）工具都在兜售快速致富的骗局\n\n作者：Varun Raghu\n\n我之前写过一篇文章，聊到为什么我不再做“凭感觉编程”。（见评论）\n\n现在想想，我甚至不太想用“凭感觉编程”这个词。它听起来像是不费力的活儿。但事实完全相反：这事儿非常费力，绝不是靠“感觉”就能搞定。",
+                          "is_quote_status": true,
+                          "lang": "zh",
+                          "quote_count": 2,
+                          "quoted_status_id_str": "1965812445475401987",
+                          "quoted_status_permalink": {
+                            "url": "https://t.co/YoB6zNhNv8",
+                            "expanded": "https://twitter.com/9hills/status/1965812445475401987",
+                            "display": "x.com/9hills/status/…"
+                          },
+                          "reply_count": 10,
+                          "retweet_count": 6,
+                          "retweeted": false,
+                          "user_id_str": "3178231",
+                          "id_str": "1965963719546138723"
+                        },
+                        "quick_promote_eligibility": {
+                          "eligibility": "IneligibleNotProfessional"
+                        }
+                      }
+                    },
+                    "tweetDisplayType": "SelfThread"
+                  },
+                  "clientEventInfo": {
+                    "component": "tweet",
+                    "element": "tweet"
+                  }
+                }
+              },
+              {
+                "entryId": "conversationthread-1965963722062705153",
+                "sortIndex": "1966133389647937526",
+                "content": {
+                  "entryType": "TimelineTimelineModule",
+                  "__typename": "TimelineTimelineModule",
+                  "items": [
+                    {
+                      "entryId": "conversationthread-1965963722062705153-tweet-1965963722062705153",
+                      "item": {
+                        "itemContent": {
+                          "itemType": "TimelineTweet",
+                          "__typename": "TimelineTweet",
+                          "tweet_results": {
+                            "result": {
+                              "__typename": "Tweet",
+                              "rest_id": "1965963722062705153",
+                              "has_birdwatch_notes": false,
+                              "core": {
+                                "user_results": {
+                                  "result": {
+                                    "__typename": "User",
+                                    "id": "VXNlcjozMTc4MjMx",
+                                    "rest_id": "3178231",
+                                    "affiliates_highlighted_label": {},
+                                    "avatar": {
+                                      "image_url": "https://pbs.twimg.com/profile_images/561086911561736192/6_g58vEs_normal.jpeg"
+                                    },
+                                    "core": {
+                                      "created_at": "Mon Apr 02 03:42:14 +0000 2007",
+                                      "name": "宝玉",
+                                      "screen_name": "dotey"
+                                    },
+                                    "dm_permissions": {
+                                      "can_dm": true,
+                                      "can_dm_on_xchat": false
+                                    },
+                                    "has_graduated_access": true,
+                                    "is_blue_verified": true,
+                                    "legacy": {
+                                      "default_profile": false,
+                                      "default_profile_image": false,
+                                      "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+                                      "entities": {
+                                        "description": {
+                                          "urls": []
+                                        },
+                                        "url": {
+                                          "urls": [
+                                            {
+                                              "display_url": "baoyu.io",
+                                              "expanded_url": "https://baoyu.io",
+                                              "url": "https://t.co/icobX4A3Ae",
+                                              "indices": [
+                                                0,
+                                                23
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "fast_followers_count": 0,
+                                      "favourites_count": 32316,
+                                      "followers_count": 132730,
+                                      "friends_count": 1382,
+                                      "has_custom_timelines": true,
+                                      "is_translator": false,
+                                      "listed_count": 2260,
+                                      "media_count": 4346,
+                                      "normal_followers_count": 132730,
+                                      "pinned_tweet_ids_str": [],
+                                      "possibly_sensitive": false,
+                                      "profile_interstitial_type": "",
+                                      "statuses_count": 24884,
+                                      "translator_type": "none",
+                                      "url": "https://t.co/icobX4A3Ae",
+                                      "want_retweets": true,
+                                      "withheld_in_countries": []
+                                    },
+                                    "location": {
+                                      "location": "Chicago, IL"
+                                    },
+                                    "media_permissions": {
+                                      "can_media_tag": true
+                                    },
+                                    "parody_commentary_fan_label": "None",
+                                    "profile_image_shape": "Circle",
+                                    "privacy": {
+                                      "protected": false
+                                    },
+                                    "relationship_perspectives": {
+                                      "following": true
+                                    },
+                                    "tipjar_settings": {},
+                                    "verification": {
+                                      "verified": false
+                                    }
+                                  }
+                                }
+                              },
+                              "card": {
+                                "rest_id": "https://t.co/iHPyughUFl",
+                                "legacy": {
+                                  "binding_values": [
+                                    {
+                                      "key": "thumbnail_image",
+                                      "value": {
+                                        "image_value": {
+                                          "height": 120,
+                                          "width": 120,
+                                          "url": "https://pbs.twimg.com/card_img/1964368736108105733/Cl8SkVAJ?format=png&name=120x120"
+                                        },
+                                        "type": "IMAGE"
+                                      }
+                                    },
+                                    {
+                                      "key": "description",
+                                      "value": {
+                                        "string_value": "i wrote a piece earlier about . i think of it less as vibe coding now, i kinda hate the term because it makes it seem like its not an involved process. it...",
+                                        "type": "STRING"
+                                      }
+                                    },
+                                    {
+                                      "key": "domain",
+                                      "value": {
+                                        "string_value": "varunraghu.com",
+                                        "type": "STRING"
+                                      }
+                                    },
+                                    {
+                                      "key": "thumbnail_image_large",
+                                      "value": {
+                                        "image_value": {
+                                          "height": 120,
+                                          "width": 120,
+                                          "url": "https://pbs.twimg.com/card_img/1964368736108105733/Cl8SkVAJ?format=png&name=120x120"
+                                        },
+                                        "type": "IMAGE"
+                                      }
+                                    },
+                                    {
+                                      "key": "thumbnail_image_original",
+                                      "value": {
+                                        "image_value": {
+                                          "height": 120,
+                                          "width": 124,
+                                          "url": "https://pbs.twimg.com/card_img/1964368736108105733/Cl8SkVAJ?format=png&name=orig"
+                                        },
+                                        "type": "IMAGE"
+                                      }
+                                    },
+                                    {
+                                      "key": "thumbnail_image_small",
+                                      "value": {
+                                        "image_value": {
+                                          "height": 100,
+                                          "width": 100,
+                                          "url": "https://pbs.twimg.com/card_img/1964368736108105733/Cl8SkVAJ?format=png&name=100x100_2"
+                                        },
+                                        "type": "IMAGE"
+                                      }
+                                    },
+                                    {
+                                      "key": "thumbnail_image_x_large",
+                                      "value": {
+                                        "image_value": {
+                                          "height": 120,
+                                          "width": 124,
+                                          "url": "https://pbs.twimg.com/card_img/1964368736108105733/Cl8SkVAJ?format=png&name=2048x2048_2_exp"
+                                        },
+                                        "type": "IMAGE"
+                                      }
+                                    },
+                                    {
+                                      "key": "vanity_url",
+                                      "value": {
+                                        "scribe_key": "vanity_url",
+                                        "string_value": "varunraghu.com",
+                                        "type": "STRING"
+                                      }
+                                    },
+                                    {
+                                      "key": "thumbnail_image_color",
+                                      "value": {
+                                        "image_color_value": {
+                                          "palette": [
+                                            {
+                                              "rgb": {
+                                                "blue": 255,
+                                                "green": 255,
+                                                "red": 255
+                                              },
+                                              "percentage": 91.87
+                                            },
+                                            {
+                                              "rgb": {
+                                                "blue": 0,
+                                                "green": 0,
+                                                "red": 0
+                                              },
+                                              "percentage": 7.45
+                                            }
+                                          ]
+                                        },
+                                        "type": "IMAGE_COLOR"
+                                      }
+                                    },
+                                    {
+                                      "key": "title",
+                                      "value": {
+                                        "string_value": "all vibe coding tools are selling a get rich quick scheme",
+                                        "type": "STRING"
+                                      }
+                                    },
+                                    {
+                                      "key": "card_url",
+                                      "value": {
+                                        "scribe_key": "card_url",
+                                        "string_value": "https://t.co/iHPyughUFl",
+                                        "type": "STRING"
+                                      }
+                                    }
+                                  ],
+                                  "card_platform": {
+                                    "platform": {
+                                      "audience": {
+                                        "name": "production"
+                                      },
+                                      "device": {
+                                        "name": "Swift",
+                                        "version": "12"
+                                      }
+                                    }
+                                  },
+                                  "name": "summary",
+                                  "url": "https://t.co/iHPyughUFl",
+                                  "user_refs_results": []
+                                }
+                              },
+                              "unmention_data": {},
+                              "edit_control": {
+                                "edit_tweet_ids": [
+                                  "1965963722062705153"
+                                ],
+                                "editable_until_msecs": "1757560851000",
+                                "is_edit_eligible": false,
+                                "edits_remaining": "5"
+                              },
+                              "is_translatable": false,
+                              "views": {
+                                "count": "3995",
+                                "state": "EnabledWithCount"
+                              },
+                              "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+                              "grok_analysis_button": true,
+                              "legacy": {
+                                "bookmark_count": 1,
+                                "bookmarked": false,
+                                "created_at": "Thu Sep 11 02:20:51 +0000 2025",
+                                "conversation_id_str": "1965963719546138723",
+                                "display_text_range": [
+                                  0,
+                                  26
+                                ],
+                                "entities": {
+                                  "hashtags": [],
+                                  "symbols": [],
+                                  "timestamps": [],
+                                  "urls": [
+                                    {
+                                      "display_url": "varunraghu.com/all-vibe-codin…",
+                                      "expanded_url": "https://varunraghu.com/all-vibe-coding-tools-are-selling-a-get-rich-quick-scheme/",
+                                      "url": "https://t.co/iHPyughUFl",
+                                      "indices": [
+                                        3,
+                                        26
+                                      ]
+                                    }
+                                  ],
+                                  "user_mentions": []
+                                },
+                                "favorite_count": 4,
+                                "favorited": false,
+                                "full_text": "来源：https://t.co/iHPyughUFl",
+                                "in_reply_to_screen_name": "dotey",
+                                "in_reply_to_status_id_str": "1965963719546138723",
+                                "in_reply_to_user_id_str": "3178231",
+                                "is_quote_status": false,
+                                "lang": "ja",
+                                "possibly_sensitive": false,
+                                "possibly_sensitive_editable": true,
+                                "quote_count": 0,
+                                "reply_count": 1,
+                                "retweet_count": 0,
+                                "retweeted": false,
+                                "user_id_str": "3178231",
+                                "id_str": "1965963722062705153"
+                              },
+                              "quick_promote_eligibility": {
+                                "eligibility": "IneligibleNotProfessional"
+                              }
+                            }
+                          },
+                          "tweetDisplayType": "SelfThread"
+                        },
+                        "clientEventInfo": {
+                          "component": "tweet",
+                          "element": "tweet",
+                          "details": {
+                            "conversationDetails": {
+                              "conversationSection": "HighQuality"
+                            },
+                            "timelinesDetails": {
+                              "controllerData": "DAACDAAEDAABCgABAAAAAAAAAAEKAAIAAAAAAAAAAAoAAwAAAZk4/J48AAAAAA=="
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "entryId": "conversationthread-1965963722062705153-tweet-1965963724319260712",
+                      "item": {
+                        "itemContent": {
+                          "itemType": "TimelineTweet",
+                          "__typename": "TimelineTweet",
+                          "tweet_results": {
+                            "result": {
+                              "__typename": "Tweet",
+                              "rest_id": "1965963724319260712",
+                              "has_birdwatch_notes": false,
+                              "core": {
+                                "user_results": {
+                                  "result": {
+                                    "__typename": "User",
+                                    "id": "VXNlcjozMTc4MjMx",
+                                    "rest_id": "3178231",
+                                    "affiliates_highlighted_label": {},
+                                    "avatar": {
+                                      "image_url": "https://pbs.twimg.com/profile_images/561086911561736192/6_g58vEs_normal.jpeg"
+                                    },
+                                    "core": {
+                                      "created_at": "Mon Apr 02 03:42:14 +0000 2007",
+                                      "name": "宝玉",
+                                      "screen_name": "dotey"
+                                    },
+                                    "dm_permissions": {
+                                      "can_dm": true,
+                                      "can_dm_on_xchat": false
+                                    },
+                                    "has_graduated_access": true,
+                                    "is_blue_verified": true,
+                                    "legacy": {
+                                      "default_profile": false,
+                                      "default_profile_image": false,
+                                      "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+                                      "entities": {
+                                        "description": {
+                                          "urls": []
+                                        },
+                                        "url": {
+                                          "urls": [
+                                            {
+                                              "display_url": "baoyu.io",
+                                              "expanded_url": "https://baoyu.io",
+                                              "url": "https://t.co/icobX4A3Ae",
+                                              "indices": [
+                                                0,
+                                                23
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "fast_followers_count": 0,
+                                      "favourites_count": 32316,
+                                      "followers_count": 132730,
+                                      "friends_count": 1382,
+                                      "has_custom_timelines": true,
+                                      "is_translator": false,
+                                      "listed_count": 2260,
+                                      "media_count": 4346,
+                                      "normal_followers_count": 132730,
+                                      "pinned_tweet_ids_str": [],
+                                      "possibly_sensitive": false,
+                                      "profile_interstitial_type": "",
+                                      "statuses_count": 24884,
+                                      "translator_type": "none",
+                                      "url": "https://t.co/icobX4A3Ae",
+                                      "want_retweets": true,
+                                      "withheld_in_countries": []
+                                    },
+                                    "location": {
+                                      "location": "Chicago, IL"
+                                    },
+                                    "media_permissions": {
+                                      "can_media_tag": true
+                                    },
+                                    "parody_commentary_fan_label": "None",
+                                    "profile_image_shape": "Circle",
+                                    "privacy": {
+                                      "protected": false
+                                    },
+                                    "relationship_perspectives": {
+                                      "following": true
+                                    },
+                                    "tipjar_settings": {},
+                                    "verification": {
+                                      "verified": false
+                                    }
+                                  }
+                                }
+                              },
+                              "unmention_data": {},
+                              "edit_control": {
+                                "edit_tweet_ids": [
+                                  "1965963724319260712"
+                                ],
+                                "editable_until_msecs": "1757560852000",
+                                "is_edit_eligible": false,
+                                "edits_remaining": "5"
+                              },
+                              "is_translatable": true,
+                              "views": {
+                                "count": "3872",
+                                "state": "EnabledWithCount"
+                              },
+                              "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+                              "note_tweet": {
+                                "is_expandable": true,
+                                "note_tweet_results": {
+                                  "result": {
+                                    "id": "Tm90ZVR3ZWV0OjE5NjU5NjM3MjQyNjA2MDE4NTY=",
+                                    "text": "为什么我决定不再玩「凭感觉编程」\n\n作者：Varun Raghu\n\n我和「凭感觉编程」（Vibe Coding）彻底分手了，今天想跟大家聊聊我的理由。\n\n最初学编程的时候，我做的网站和应用，用传统眼光来看简直差得没法看。甚至搞明白一些基础的东西，都要花上令人尴尬的大把时间。整个过程让我非常痛苦，成果也非常粗糙。\n\n但是，至少这些东西是我亲手写出来的。我没有去求着AI智能体（AI Agent）帮我修bug。不管写得多差，这些代码里都有我的血汗和泪水。这种成就感，没有人能够从我手里抢走。\n\n有一天晚上，我辗转反侧睡不着觉，忽然意识到自己已经好几个星期没学到任何新东西了。虽然靠着AI的帮助，我确实做了几个看起来还不错的应用。但一个挥之不去的问题折磨着我：\n\n如果我什么都没学到，那这一切到底有什么意义？\n\n就在那一刻，我终于想明白了：写代码的真正意义，根本不在于那个最后的成品。这和写作非常像，它最重要的是过程中不断去思考问题、解决难题的过程。这种过程教会你如何去思考，如何去发现问题、分析问题。\n\n而我发现，我还没有准备好让AI把这种锻炼思考能力的机会从我手里夺走。所以，我决定重新回到原点——重新去写那些缓慢、笨拙，却完全属于自己的代码。",
+                                    "entity_set": {
+                                      "hashtags": [],
+                                      "symbols": [],
+                                      "urls": [],
+                                      "user_mentions": []
+                                    },
+                                    "richtext": {
+                                      "richtext_tags": []
+                                    },
+                                    "media": {
+                                      "inline_media": []
+                                    }
+                                  }
+                                }
+                              },
+                              "grok_analysis_button": true,
+                              "legacy": {
+                                "bookmark_count": 1,
+                                "bookmarked": false,
+                                "created_at": "Thu Sep 11 02:20:52 +0000 2025",
+                                "conversation_id_str": "1965963719546138723",
+                                "display_text_range": [
+                                  0,
+                                  75
+                                ],
+                                "entities": {
+                                  "hashtags": [],
+                                  "symbols": [],
+                                  "timestamps": [],
+                                  "urls": [],
+                                  "user_mentions": []
+                                },
+                                "favorite_count": 3,
+                                "favorited": false,
+                                "full_text": "为什么我决定不再玩「凭感觉编程」\n\n作者：Varun Raghu\n\n我和「凭感觉编程」（Vibe Coding）彻底分手了，今天想跟大家聊聊我的理由。",
+                                "in_reply_to_screen_name": "dotey",
+                                "in_reply_to_status_id_str": "1965963722062705153",
+                                "in_reply_to_user_id_str": "3178231",
+                                "is_quote_status": false,
+                                "lang": "zh",
+                                "quote_count": 0,
+                                "reply_count": 5,
+                                "retweet_count": 1,
+                                "retweeted": false,
+                                "user_id_str": "3178231",
+                                "id_str": "1965963724319260712"
+                              },
+                              "quick_promote_eligibility": {
+                                "eligibility": "IneligibleNotProfessional"
+                              }
+                            }
+                          },
+                          "tweetDisplayType": "SelfThread"
+                        },
+                        "clientEventInfo": {
+                          "component": "tweet",
+                          "element": "tweet",
+                          "details": {
+                            "conversationDetails": {
+                              "conversationSection": "HighQuality"
+                            },
+                            "timelinesDetails": {
+                              "controllerData": "DAACDAAEDAABCgABAAAAAAAAAAEKAAIAAAAAAAAAAAoAAwAAAZk4/J48AAAAAA=="
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "metadata": {
+                    "conversationMetadata": {
+                      "allTweetIds": [
+                        "1965963724319260712"
+                      ],
+                      "enableDeduplication": true
+                    }
+                  },
+                  "displayType": "VerticalConversation",
+                  "clientEventInfo": {
+                    "component": "tweet",
+                    "details": {
+                      "conversationDetails": {
+                        "conversationSection": "HighQuality"
+                      },
+                      "timelinesDetails": {
+                        "controllerData": "DAACDAAEDAABCgABAAAAAAAAAAEKAAIAAAAAAAAAAAoAAwAAAZk4/J48AAAAAA=="
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "entryId": "conversationthread-1966067543703208220",
+                "sortIndex": "1966133389647937516",
+                "content": {
+                  "entryType": "TimelineTimelineModule",
+                  "__typename": "TimelineTimelineModule",
+                  "items": [
+                    {
+                      "entryId": "conversationthread-1966067543703208220-tweet-1966067543703208220",
+                      "item": {
+                        "itemContent": {
+                          "itemType": "TimelineTweet",
+                          "__typename": "TimelineTweet",
+                          "tweet_results": {
+                            "result": {
+                              "__typename": "Tweet",
+                              "rest_id": "1966067543703208220",
+                              "has_birdwatch_notes": false,
+                              "core": {
+                                "user_results": {
+                                  "result": {
+                                    "__typename": "User",
+                                    "id": "VXNlcjoxNTU0Njk4ODg1MzM0ODMxMTA0",
+                                    "rest_id": "1554698885334831104",
+                                    "affiliates_highlighted_label": {},
+                                    "avatar": {
+                                      "image_url": "https://pbs.twimg.com/profile_images/1783712057491427329/8USHRxby_normal.jpg"
+                                    },
+                                    "core": {
+                                      "created_at": "Wed Aug 03 05:21:32 +0000 2022",
+                                      "name": "Abruzzi1",
+                                      "screen_name": "Abruzz1z"
+                                    },
+                                    "dm_permissions": {
+                                      "can_dm": true,
+                                      "can_dm_on_xchat": false
+                                    },
+                                    "has_graduated_access": true,
+                                    "is_blue_verified": false,
+                                    "legacy": {
+                                      "default_profile": true,
+                                      "default_profile_image": false,
+                                      "description": "Hello my global frans！一级市场把把梭把把亏！",
+                                      "entities": {
+                                        "description": {
+                                          "urls": []
+                                        }
+                                      },
+                                      "fast_followers_count": 0,
+                                      "favourites_count": 743,
+                                      "followers_count": 184,
+                                      "friends_count": 1019,
+                                      "has_custom_timelines": false,
+                                      "is_translator": false,
+                                      "listed_count": 2,
+                                      "media_count": 15,
+                                      "normal_followers_count": 184,
+                                      "pinned_tweet_ids_str": [],
+                                      "possibly_sensitive": false,
+                                      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1554698885334831104/1711420536",
+                                      "profile_interstitial_type": "",
+                                      "statuses_count": 1181,
+                                      "translator_type": "none",
+                                      "want_retweets": false,
+                                      "withheld_in_countries": []
+                                    },
+                                    "location": {
+                                      "location": ""
+                                    },
+                                    "media_permissions": {
+                                      "can_media_tag": true
+                                    },
+                                    "parody_commentary_fan_label": "None",
+                                    "profile_image_shape": "Circle",
+                                    "privacy": {
+                                      "protected": false
+                                    },
+                                    "relationship_perspectives": {
+                                      "following": false
+                                    },
+                                    "tipjar_settings": {},
+                                    "verification": {
+                                      "verified": false
+                                    }
+                                  }
+                                }
+                              },
+                              "unmention_data": {},
+                              "edit_control": {
+                                "edit_tweet_ids": [
+                                  "1966067543703208220"
+                                ],
+                                "editable_until_msecs": "1757585604000",
+                                "is_edit_eligible": false,
+                                "edits_remaining": "5"
+                              },
+                              "is_translatable": true,
+                              "views": {
+                                "count": "67",
+                                "state": "EnabledWithCount"
+                              },
+                              "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+                              "grok_analysis_button": true,
+                              "legacy": {
+                                "bookmark_count": 0,
+                                "bookmarked": false,
+                                "created_at": "Thu Sep 11 09:13:24 +0000 2025",
+                                "conversation_id_str": "1965963719546138723",
+                                "display_text_range": [
+                                  7,
+                                  100
+                                ],
+                                "entities": {
+                                  "hashtags": [],
+                                  "symbols": [],
+                                  "timestamps": [],
+                                  "urls": [],
+                                  "user_mentions": [
+                                    {
+                                      "id_str": "3178231",
+                                      "name": "宝玉",
+                                      "screen_name": "dotey",
+                                      "indices": [
+                                        0,
+                                        6
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "favorite_count": 0,
+                                "favorited": false,
+                                "full_text": "@dotey 我觉得瓶颈可能仍然在上下文长度的问题上。当后期发展到大模型的上下文长度达到一个量级（或者更好的上下文工程）保证在几十万行代码的项目中保持注意力不涣散，或许vibecoding才能真正实现",
+                                "in_reply_to_screen_name": "dotey",
+                                "in_reply_to_status_id_str": "1965963719546138723",
+                                "in_reply_to_user_id_str": "3178231",
+                                "is_quote_status": false,
+                                "lang": "zh",
+                                "quote_count": 0,
+                                "reply_count": 0,
+                                "retweet_count": 0,
+                                "retweeted": false,
+                                "user_id_str": "1554698885334831104",
+                                "id_str": "1966067543703208220"
+                              },
+                              "quick_promote_eligibility": {
+                                "eligibility": "IneligibleNotProfessional"
+                              }
+                            }
+                          },
+                          "tweetDisplayType": "Tweet"
+                        },
+                        "clientEventInfo": {
+                          "component": "tweet",
+                          "element": "tweet",
+                          "details": {
+                            "conversationDetails": {
+                              "conversationSection": "HighQuality"
+                            },
+                            "timelinesDetails": {
+                              "controllerData": "DAACDAAEDAABCgABAAAAAAAAAAEKAAIAAAAAAAAAAAoAAwAAAZk4/J48AAAAAA=="
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "metadata": {
+                    "conversationMetadata": {
+                      "allTweetIds": [
+                        "1966067543703208220"
+                      ],
+                      "enableDeduplication": true
+                    }
+                  },
+                  "displayType": "VerticalConversation",
+                  "clientEventInfo": {
+                    "component": "tweet",
+                    "details": {
+                      "conversationDetails": {
+                        "conversationSection": "HighQuality"
+                      },
+                      "timelinesDetails": {
+                        "controllerData": "DAACDAAEDAABCgABAAAAAAAAAAEKAAIAAAAAAAAAAAoAAwAAAZk4/J48AAAAAA=="
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "entryId": "conversationthread-1966040947046969544",
+                "sortIndex": "1966133389647937506",
+                "content": {
+                  "entryType": "TimelineTimelineModule",
+                  "__typename": "TimelineTimelineModule",
+                  "items": [
+                    {
+                      "entryId": "conversationthread-1966040947046969544-tweet-1966040947046969544",
+                      "item": {
+                        "itemContent": {
+                          "itemType": "TimelineTweet",
+                          "__typename": "TimelineTweet",
+                          "tweet_results": {
+                            "result": {
+                              "__typename": "Tweet",
+                              "rest_id": "1966040947046969544",
+                              "has_birdwatch_notes": false,
+                              "core": {
+                                "user_results": {
+                                  "result": {
+                                    "__typename": "User",
+                                    "id": "VXNlcjoxNjk3NTk2MDI1NzczNjc4NTky",
+                                    "rest_id": "1697596025773678592",
+                                    "affiliates_highlighted_label": {},
+                                    "avatar": {
+                                      "image_url": "https://pbs.twimg.com/profile_images/1821859467212025856/143i2qpi_normal.jpg"
+                                    },
+                                    "core": {
+                                      "created_at": "Fri Sep 01 13:03:39 +0000 2023",
+                                      "name": "蔡荔谈AI (公众号）",
+                                      "screen_name": "JonathanCaiSG"
+                                    },
+                                    "dm_permissions": {
+                                      "can_dm": false,
+                                      "can_dm_on_xchat": false
+                                    },
+                                    "has_graduated_access": true,
+                                    "is_blue_verified": true,
+                                    "legacy": {
+                                      "default_profile": true,
+                                      "default_profile_image": false,
+                                      "description": "新加坡DataRaccoon创始人 | TGO新加坡分会会员 | 微信公众号：蔡荔谈AI\n\n曾经的硅谷AI从业者，IBM高级经理，国内十年创业\n\n教育背景：清华大学 | 新加坡国立大学",
+                                      "entities": {
+                                        "description": {
+                                          "urls": []
+                                        }
+                                      },
+                                      "fast_followers_count": 0,
+                                      "favourites_count": 4684,
+                                      "followers_count": 635,
+                                      "friends_count": 874,
+                                      "has_custom_timelines": false,
+                                      "is_translator": false,
+                                      "listed_count": 10,
+                                      "media_count": 815,
+                                      "normal_followers_count": 635,
+                                      "pinned_tweet_ids_str": [],
+                                      "possibly_sensitive": false,
+                                      "profile_interstitial_type": "",
+                                      "statuses_count": 6160,
+                                      "translator_type": "none",
+                                      "want_retweets": false,
+                                      "withheld_in_countries": []
+                                    },
+                                    "location": {
+                                      "location": "Singapore"
+                                    },
+                                    "media_permissions": {
+                                      "can_media_tag": true
+                                    },
+                                    "parody_commentary_fan_label": "None",
+                                    "profile_image_shape": "Circle",
+                                    "privacy": {
+                                      "protected": false
+                                    },
+                                    "relationship_perspectives": {
+                                      "following": false
+                                    },
+                                    "tipjar_settings": {},
+                                    "verification": {
+                                      "verified": false
+                                    }
+                                  }
+                                }
+                              },
+                              "unmention_data": {},
+                              "edit_control": {
+                                "edit_tweet_ids": [
+                                  "1966040947046969544"
+                                ],
+                                "editable_until_msecs": "1757579263000",
+                                "is_edit_eligible": false,
+                                "edits_remaining": "5"
+                              },
+                              "is_translatable": true,
+                              "views": {
+                                "count": "132",
+                                "state": "EnabledWithCount"
+                              },
+                              "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+                              "note_tweet": {
+                                "is_expandable": true,
+                                "note_tweet_results": {
+                                  "result": {
+                                    "id": "Tm90ZVR3ZWV0OjE5NjYwNDA5NDcwMDQ5NDQzODU=",
+                                    "text": "vibe coding，我在想怎么在快速迭代的过程中还能够保持代码的质量或者提升代码的质量，比如code review，原先一个team，每个人每天check in 的代码行数就几百行，team lead或senior在做code review的时候，需要花的时间在5分钟到半个小时之间。现在vibe coding，一天可以写几千行代码，code review的工作量太大，没法执行",
+                                    "entity_set": {
+                                      "hashtags": [],
+                                      "symbols": [],
+                                      "urls": [],
+                                      "user_mentions": []
+                                    },
+                                    "richtext": {
+                                      "richtext_tags": []
+                                    }
+                                  }
+                                }
+                              },
+                              "grok_analysis_button": true,
+                              "legacy": {
+                                "bookmark_count": 0,
+                                "bookmarked": false,
+                                "created_at": "Thu Sep 11 07:27:43 +0000 2025",
+                                "conversation_id_str": "1965963719546138723",
+                                "display_text_range": [
+                                  7,
+                                  180
+                                ],
+                                "entities": {
+                                  "hashtags": [],
+                                  "symbols": [],
+                                  "timestamps": [],
+                                  "urls": [],
+                                  "user_mentions": [
+                                    {
+                                      "id_str": "3178231",
+                                      "name": "宝玉",
+                                      "screen_name": "dotey",
+                                      "indices": [
+                                        0,
+                                        6
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "favorite_count": 0,
+                                "favorited": false,
+                                "full_text": "@dotey vibe coding，我在想怎么在快速迭代的过程中还能够保持代码的质量或者提升代码的质量，比如code review，原先一个team，每个人每天check in 的代码行数就几百行，team lead或senior在做code review的时候，需要花的时间在5分钟到半个小时之间。现在vibe coding，一天可以写几千行代码，code",
+                                "in_reply_to_screen_name": "dotey",
+                                "in_reply_to_status_id_str": "1965963719546138723",
+                                "in_reply_to_user_id_str": "3178231",
+                                "is_quote_status": false,
+                                "lang": "zh",
+                                "quote_count": 0,
+                                "reply_count": 0,
+                                "retweet_count": 0,
+                                "retweeted": false,
+                                "user_id_str": "1697596025773678592",
+                                "id_str": "1966040947046969544"
+                              },
+                              "quick_promote_eligibility": {
+                                "eligibility": "IneligibleNotProfessional"
+                              }
+                            }
+                          },
+                          "tweetDisplayType": "Tweet"
+                        },
+                        "clientEventInfo": {
+                          "component": "tweet",
+                          "element": "tweet",
+                          "details": {
+                            "conversationDetails": {
+                              "conversationSection": "HighQuality"
+                            },
+                            "timelinesDetails": {
+                              "controllerData": "DAACDAAEDAABCgABAAAAAAAAAAEKAAIAAAAAAAAAAAoAAwAAAZk4/J48AAAAAA=="
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "metadata": {
+                    "conversationMetadata": {
+                      "allTweetIds": [
+                        "1966040947046969544"
+                      ],
+                      "enableDeduplication": true
+                    }
+                  },
+                  "displayType": "VerticalConversation",
+                  "clientEventInfo": {
+                    "component": "tweet",
+                    "details": {
+                      "conversationDetails": {
+                        "conversationSection": "HighQuality"
+                      },
+                      "timelinesDetails": {
+                        "controllerData": "DAACDAAEDAABCgABAAAAAAAAAAEKAAIAAAAAAAAAAAoAAwAAAZk4/J48AAAAAA=="
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "entryId": "conversationthread-1965977759626440712",
+                "sortIndex": "1966133389647937496",
+                "content": {
+                  "entryType": "TimelineTimelineModule",
+                  "__typename": "TimelineTimelineModule",
+                  "items": [
+                    {
+                      "entryId": "conversationthread-1965977759626440712-tweet-1965977759626440712",
+                      "item": {
+                        "itemContent": {
+                          "itemType": "TimelineTweet",
+                          "__typename": "TimelineTweet",
+                          "tweet_results": {
+                            "result": {
+                              "__typename": "Tweet",
+                              "rest_id": "1965977759626440712",
+                              "has_birdwatch_notes": false,
+                              "core": {
+                                "user_results": {
+                                  "result": {
+                                    "__typename": "User",
+                                    "id": "VXNlcjo4NzMzODA0MDY=",
+                                    "rest_id": "873380406",
+                                    "affiliates_highlighted_label": {},
+                                    "avatar": {
+                                      "image_url": "https://pbs.twimg.com/profile_images/1722533197211152384/-OhthsmQ_normal.jpg"
+                                    },
+                                    "core": {
+                                      "created_at": "Thu Oct 11 10:37:27 +0000 2012",
+                                      "name": "Liuxinxin",
+                                      "screen_name": "cliuxinxin"
+                                    },
+                                    "dm_permissions": {
+                                      "can_dm": false,
+                                      "can_dm_on_xchat": false
+                                    },
+                                    "has_graduated_access": true,
+                                    "is_blue_verified": false,
+                                    "legacy": {
+                                      "default_profile": true,
+                                      "default_profile_image": false,
+                                      "description": "我没什么好介绍的，而你，我的朋友，你才是真正的英雄。只要我开始进攻，一切都会好起来的，没有调查就没有发言权，去码头搞点薯条。政治笑话集锦编写者",
+                                      "entities": {
+                                        "description": {
+                                          "urls": []
+                                        }
+                                      },
+                                      "fast_followers_count": 0,
+                                      "favourites_count": 68,
+                                      "followers_count": 1019,
+                                      "friends_count": 65,
+                                      "has_custom_timelines": false,
+                                      "is_translator": false,
+                                      "listed_count": 16,
+                                      "media_count": 1953,
+                                      "normal_followers_count": 1019,
+                                      "pinned_tweet_ids_str": [],
+                                      "possibly_sensitive": false,
+                                      "profile_banner_url": "https://pbs.twimg.com/profile_banners/873380406/1697101261",
+                                      "profile_interstitial_type": "",
+                                      "statuses_count": 10764,
+                                      "translator_type": "none",
+                                      "want_retweets": false,
+                                      "withheld_in_countries": []
+                                    },
+                                    "location": {
+                                      "location": ""
+                                    },
+                                    "media_permissions": {
+                                      "can_media_tag": true
+                                    },
+                                    "parody_commentary_fan_label": "None",
+                                    "profile_image_shape": "Circle",
+                                    "privacy": {
+                                      "protected": false
+                                    },
+                                    "relationship_perspectives": {
+                                      "following": false
+                                    },
+                                    "tipjar_settings": {},
+                                    "verification": {
+                                      "verified": false
+                                    }
+                                  }
+                                }
+                              },
+                              "unmention_data": {},
+                              "edit_control": {
+                                "edit_tweet_ids": [
+                                  "1965977759626440712"
+                                ],
+                                "editable_until_msecs": "1757564198000",
+                                "is_edit_eligible": false,
+                                "edits_remaining": "5"
+                              },
+                              "is_translatable": true,
+                              "views": {
+                                "count": "236",
+                                "state": "EnabledWithCount"
+                              },
+                              "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+                              "grok_analysis_button": true,
+                              "legacy": {
+                                "bookmark_count": 0,
+                                "bookmarked": false,
+                                "created_at": "Thu Sep 11 03:16:38 +0000 2025",
+                                "conversation_id_str": "1965963719546138723",
+                                "display_text_range": [
+                                  7,
+                                  107
+                                ],
+                                "entities": {
+                                  "hashtags": [],
+                                  "symbols": [],
+                                  "timestamps": [],
+                                  "urls": [],
+                                  "user_mentions": [
+                                    {
+                                      "id_str": "3178231",
+                                      "name": "宝玉",
+                                      "screen_name": "dotey",
+                                      "indices": [
+                                        0,
+                                        6
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "favorite_count": 2,
+                                "favorited": false,
+                                "full_text": "@dotey 正确和错误的。\n\n正确就是现在是正确的。\n\n错误是因为，ai发展太快了，从聊天到补全到agent，还不到2年。2年后，5年后，10年后呢。\n\n毕竟“我认为，全世界只需要5台计算机。” ——IBM创始人",
+                                "in_reply_to_screen_name": "dotey",
+                                "in_reply_to_status_id_str": "1965963719546138723",
+                                "in_reply_to_user_id_str": "3178231",
+                                "is_quote_status": false,
+                                "lang": "zh",
+                                "quote_count": 0,
+                                "reply_count": 0,
+                                "retweet_count": 0,
+                                "retweeted": false,
+                                "user_id_str": "873380406",
+                                "id_str": "1965977759626440712"
+                              },
+                              "quick_promote_eligibility": {
+                                "eligibility": "IneligibleNotProfessional"
+                              }
+                            }
+                          },
+                          "tweetDisplayType": "Tweet"
+                        },
+                        "clientEventInfo": {
+                          "component": "tweet",
+                          "element": "tweet",
+                          "details": {
+                            "conversationDetails": {
+                              "conversationSection": "HighQuality"
+                            },
+                            "timelinesDetails": {
+                              "controllerData": "DAACDAAEDAABCgABAAAAAAAAAAEKAAIAAAAAAAAAAAoAAwAAAZk4/J48AAAAAA=="
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "metadata": {
+                    "conversationMetadata": {
+                      "allTweetIds": [
+                        "1965977759626440712"
+                      ],
+                      "enableDeduplication": true
+                    }
+                  },
+                  "displayType": "VerticalConversation",
+                  "clientEventInfo": {
+                    "component": "tweet",
+                    "details": {
+                      "conversationDetails": {
+                        "conversationSection": "HighQuality"
+                      },
+                      "timelinesDetails": {
+                        "controllerData": "DAACDAAEDAABCgABAAAAAAAAAAEKAAIAAAAAAAAAAAoAAwAAAZk4/J48AAAAAA=="
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "entryId": "conversationthread-1966081892018716817",
+                "sortIndex": "1966133389647937486",
+                "content": {
+                  "entryType": "TimelineTimelineModule",
+                  "__typename": "TimelineTimelineModule",
+                  "items": [
+                    {
+                      "entryId": "conversationthread-1966081892018716817-tweet-1966081892018716817",
+                      "item": {
+                        "itemContent": {
+                          "itemType": "TimelineTweet",
+                          "__typename": "TimelineTweet",
+                          "tweet_results": {
+                            "result": {
+                              "__typename": "Tweet",
+                              "rest_id": "1966081892018716817",
+                              "has_birdwatch_notes": false,
+                              "core": {
+                                "user_results": {
+                                  "result": {
+                                    "__typename": "User",
+                                    "id": "VXNlcjo5MTAxODc5MA==",
+                                    "rest_id": "91018790",
+                                    "affiliates_highlighted_label": {},
+                                    "avatar": {
+                                      "image_url": "https://pbs.twimg.com/profile_images/1864152598057504768/7NwFsaf__normal.jpg"
+                                    },
+                                    "core": {
+                                      "created_at": "Thu Nov 19 02:34:30 +0000 2009",
+                                      "name": "双面人",
+                                      "screen_name": "liuzhikun"
+                                    },
+                                    "dm_permissions": {
+                                      "can_dm": false,
+                                      "can_dm_on_xchat": false
+                                    },
+                                    "has_graduated_access": true,
+                                    "is_blue_verified": false,
+                                    "legacy": {
+                                      "default_profile": true,
+                                      "default_profile_image": false,
+                                      "description": "",
+                                      "entities": {
+                                        "description": {
+                                          "urls": []
+                                        }
+                                      },
+                                      "fast_followers_count": 0,
+                                      "favourites_count": 4108,
+                                      "followers_count": 111,
+                                      "friends_count": 223,
+                                      "has_custom_timelines": true,
+                                      "is_translator": false,
+                                      "listed_count": 2,
+                                      "media_count": 18,
+                                      "normal_followers_count": 111,
+                                      "pinned_tweet_ids_str": [],
+                                      "possibly_sensitive": false,
+                                      "profile_interstitial_type": "",
+                                      "statuses_count": 3408,
+                                      "translator_type": "none",
+                                      "want_retweets": false,
+                                      "withheld_in_countries": []
+                                    },
+                                    "location": {
+                                      "location": "Luanda Angola"
+                                    },
+                                    "media_permissions": {
+                                      "can_media_tag": false
+                                    },
+                                    "parody_commentary_fan_label": "None",
+                                    "profile_image_shape": "Circle",
+                                    "privacy": {
+                                      "protected": false
+                                    },
+                                    "relationship_perspectives": {
+                                      "following": false
+                                    },
+                                    "tipjar_settings": {},
+                                    "verification": {
+                                      "verified": false
+                                    }
+                                  }
+                                }
+                              },
+                              "unmention_data": {},
+                              "edit_control": {
+                                "edit_tweet_ids": [
+                                  "1966081892018716817"
+                                ],
+                                "editable_until_msecs": "1757589025000",
+                                "is_edit_eligible": false,
+                                "edits_remaining": "5"
+                              },
+                              "is_translatable": true,
+                              "views": {
+                                "count": "64",
+                                "state": "EnabledWithCount"
+                              },
+                              "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                              "grok_analysis_button": true,
+                              "legacy": {
+                                "bookmark_count": 0,
+                                "bookmarked": false,
+                                "created_at": "Thu Sep 11 10:10:25 +0000 2025",
+                                "conversation_id_str": "1965963719546138723",
+                                "display_text_range": [
+                                  7,
+                                  174
+                                ],
+                                "entities": {
+                                  "hashtags": [],
+                                  "symbols": [],
+                                  "timestamps": [],
+                                  "urls": [],
+                                  "user_mentions": [
+                                    {
+                                      "id_str": "3178231",
+                                      "name": "宝玉",
+                                      "screen_name": "dotey",
+                                      "indices": [
+                                        0,
+                                        6
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "favorite_count": 0,
+                                "favorited": false,
+                                "full_text": "@dotey 我一个半小白，刚申请了一个Google 的API key，在Gemini 2.5flash 的指导下安装了python，装了Gemini ai，运行第一个测试文件，一个问题，花了一晚上。2.5flash告诉我的和api文档不一样，执行出错。这是我熟悉电脑基本操作、有现成的VPN和谷歌账号，有看文档装server的经验。大概我太弱了😭",
+                                "in_reply_to_screen_name": "dotey",
+                                "in_reply_to_status_id_str": "1965963719546138723",
+                                "in_reply_to_user_id_str": "3178231",
+                                "is_quote_status": false,
+                                "lang": "zh",
+                                "quote_count": 0,
+                                "reply_count": 0,
+                                "retweet_count": 0,
+                                "retweeted": false,
+                                "user_id_str": "91018790",
+                                "id_str": "1966081892018716817"
+                              },
+                              "quick_promote_eligibility": {
+                                "eligibility": "IneligibleNotProfessional"
+                              }
+                            }
+                          },
+                          "tweetDisplayType": "Tweet"
+                        },
+                        "clientEventInfo": {
+                          "component": "tweet",
+                          "element": "tweet",
+                          "details": {
+                            "conversationDetails": {
+                              "conversationSection": "HighQuality"
+                            },
+                            "timelinesDetails": {
+                              "controllerData": "DAACDAAEDAABCgABAAAAAAAAAAEKAAIAAAAAAAAAAAoAAwAAAZk4/J48AAAAAA=="
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "metadata": {
+                    "conversationMetadata": {
+                      "allTweetIds": [
+                        "1966081892018716817"
+                      ],
+                      "enableDeduplication": true
+                    }
+                  },
+                  "displayType": "VerticalConversation",
+                  "clientEventInfo": {
+                    "component": "tweet",
+                    "details": {
+                      "conversationDetails": {
+                        "conversationSection": "HighQuality"
+                      },
+                      "timelinesDetails": {
+                        "controllerData": "DAACDAAEDAABCgABAAAAAAAAAAEKAAIAAAAAAAAAAAoAAwAAAZk4/J48AAAAAA=="
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "entryId": "conversationthread-1965965403919888708",
+                "sortIndex": "1966133389647937476",
+                "content": {
+                  "entryType": "TimelineTimelineModule",
+                  "__typename": "TimelineTimelineModule",
+                  "items": [
+                    {
+                      "entryId": "conversationthread-1965965403919888708-tweet-1965965403919888708",
+                      "item": {
+                        "itemContent": {
+                          "itemType": "TimelineTweet",
+                          "__typename": "TimelineTweet",
+                          "tweet_results": {
+                            "result": {
+                              "__typename": "Tweet",
+                              "rest_id": "1965965403919888708",
+                              "has_birdwatch_notes": false,
+                              "core": {
+                                "user_results": {
+                                  "result": {
+                                    "__typename": "User",
+                                    "id": "VXNlcjoxMTYzNTU3NDA=",
+                                    "rest_id": "116355740",
+                                    "affiliates_highlighted_label": {},
+                                    "avatar": {
+                                      "image_url": "https://pbs.twimg.com/profile_images/1509120377816969223/qzJBlcuS_normal.jpg"
+                                    },
+                                    "core": {
+                                      "created_at": "Mon Feb 22 04:48:14 +0000 2010",
+                                      "name": "九原客",
+                                      "screen_name": "9hills"
+                                    },
+                                    "dm_permissions": {
+                                      "can_dm": true,
+                                      "can_dm_on_xchat": false
+                                    },
+                                    "has_graduated_access": true,
+                                    "is_blue_verified": true,
+                                    "legacy": {
+                                      "default_profile": false,
+                                      "default_profile_image": false,
+                                      "description": "喜欢一切美好的事物。目前聚焦在大模型领域。",
+                                      "entities": {
+                                        "description": {
+                                          "urls": []
+                                        },
+                                        "url": {
+                                          "urls": [
+                                            {
+                                              "display_url": "ninehills.tech",
+                                              "expanded_url": "https://ninehills.tech/",
+                                              "url": "https://t.co/tSd6HULcAF",
+                                              "indices": [
+                                                0,
+                                                23
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "fast_followers_count": 0,
+                                      "favourites_count": 3136,
+                                      "followers_count": 21097,
+                                      "friends_count": 971,
+                                      "has_custom_timelines": true,
+                                      "is_translator": false,
+                                      "listed_count": 353,
+                                      "media_count": 316,
+                                      "normal_followers_count": 21097,
+                                      "pinned_tweet_ids_str": [],
+                                      "possibly_sensitive": false,
+                                      "profile_interstitial_type": "",
+                                      "statuses_count": 4894,
+                                      "translator_type": "none",
+                                      "url": "https://t.co/tSd6HULcAF",
+                                      "want_retweets": false,
+                                      "withheld_in_countries": []
+                                    },
+                                    "location": {
+                                      "location": "北京, 中华人民共和国"
+                                    },
+                                    "media_permissions": {
+                                      "can_media_tag": true
+                                    },
+                                    "parody_commentary_fan_label": "None",
+                                    "profile_image_shape": "Circle",
+                                    "professional": {
+                                      "rest_id": "1591097441687724033",
+                                      "professional_type": "Creator",
+                                      "category": [
+                                        {
+                                          "id": 986,
+                                          "name": "Software Application",
+                                          "icon_name": "IconBriefcaseStroke"
+                                        }
+                                      ]
+                                    },
+                                    "privacy": {
+                                      "protected": false
+                                    },
+                                    "relationship_perspectives": {
+                                      "following": false
+                                    },
+                                    "tipjar_settings": {},
+                                    "verification": {
+                                      "verified": false
+                                    }
+                                  }
+                                }
+                              },
+                              "unmention_data": {},
+                              "edit_control": {
+                                "edit_tweet_ids": [
+                                  "1965965403919888708"
+                                ],
+                                "editable_until_msecs": "1757561252000",
+                                "is_edit_eligible": false,
+                                "edits_remaining": "5"
+                              },
+                              "is_translatable": true,
+                              "views": {
+                                "count": "966",
+                                "state": "EnabledWithCount"
+                              },
+                              "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                              "grok_analysis_button": true,
+                              "legacy": {
+                                "bookmark_count": 0,
+                                "bookmarked": false,
+                                "created_at": "Thu Sep 11 02:27:32 +0000 2025",
+                                "conversation_id_str": "1965963719546138723",
+                                "display_text_range": [
+                                  7,
+                                  28
+                                ],
+                                "entities": {
+                                  "hashtags": [],
+                                  "symbols": [],
+                                  "timestamps": [],
+                                  "urls": [],
+                                  "user_mentions": [
+                                    {
+                                      "id_str": "3178231",
+                                      "name": "宝玉",
+                                      "screen_name": "dotey",
+                                      "indices": [
+                                        0,
+                                        6
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "favorite_count": 4,
+                                "favorited": false,
+                                "full_text": "@dotey 也没那么夸张，80%代码ai编写还是有的。",
+                                "in_reply_to_screen_name": "dotey",
+                                "in_reply_to_status_id_str": "1965963719546138723",
+                                "in_reply_to_user_id_str": "3178231",
+                                "is_quote_status": false,
+                                "lang": "zh",
+                                "quote_count": 0,
+                                "reply_count": 0,
+                                "retweet_count": 0,
+                                "retweeted": false,
+                                "user_id_str": "116355740",
+                                "id_str": "1965965403919888708"
+                              },
+                              "quick_promote_eligibility": {
+                                "eligibility": "IneligibleNotProfessional"
+                              }
+                            }
+                          },
+                          "tweetDisplayType": "Tweet"
+                        },
+                        "clientEventInfo": {
+                          "component": "tweet",
+                          "element": "tweet",
+                          "details": {
+                            "conversationDetails": {
+                              "conversationSection": "HighQuality"
+                            },
+                            "timelinesDetails": {
+                              "controllerData": "DAACDAAEDAABCgABAAAAAAAAAAEKAAIAAAAAAAAAAAoAAwAAAZk4/J48AAAAAA=="
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "metadata": {
+                    "conversationMetadata": {
+                      "allTweetIds": [
+                        "1965965403919888708"
+                      ],
+                      "enableDeduplication": true
+                    }
+                  },
+                  "displayType": "VerticalConversation",
+                  "clientEventInfo": {
+                    "component": "tweet",
+                    "details": {
+                      "conversationDetails": {
+                        "conversationSection": "HighQuality"
+                      },
+                      "timelinesDetails": {
+                        "controllerData": "DAACDAAEDAABCgABAAAAAAAAAAEKAAIAAAAAAAAAAAoAAwAAAZk4/J48AAAAAA=="
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "entryId": "conversationthread-1966126199576604695",
+                "sortIndex": "1966133389647937466",
+                "content": {
+                  "entryType": "TimelineTimelineModule",
+                  "__typename": "TimelineTimelineModule",
+                  "items": [
+                    {
+                      "entryId": "conversationthread-1966126199576604695-tweet-1966126199576604695",
+                      "item": {
+                        "itemContent": {
+                          "itemType": "TimelineTweet",
+                          "__typename": "TimelineTweet",
+                          "tweet_results": {
+                            "result": {
+                              "__typename": "Tweet",
+                              "rest_id": "1966126199576604695",
+                              "has_birdwatch_notes": false,
+                              "core": {
+                                "user_results": {
+                                  "result": {
+                                    "__typename": "User",
+                                    "id": "VXNlcjoxMDM4ODY5MjY=",
+                                    "rest_id": "103886926",
+                                    "affiliates_highlighted_label": {},
+                                    "avatar": {
+                                      "image_url": "https://pbs.twimg.com/profile_images/1374481164/20060611142439558_normal.gif"
+                                    },
+                                    "core": {
+                                      "created_at": "Mon Jan 11 15:41:44 +0000 2010",
+                                      "name": "randy",
+                                      "screen_name": "randymjones"
+                                    },
+                                    "dm_permissions": {
+                                      "can_dm": false,
+                                      "can_dm_on_xchat": false
+                                    },
+                                    "has_graduated_access": true,
+                                    "is_blue_verified": true,
+                                    "legacy": {
+                                      "default_profile": true,
+                                      "default_profile_image": false,
+                                      "description": "https://t.co/YDrDxgQd1N 微可智能",
+                                      "entities": {
+                                        "description": {
+                                          "urls": [
+                                            {
+                                              "display_url": "VCorp.AI",
+                                              "expanded_url": "http://VCorp.AI",
+                                              "url": "https://t.co/YDrDxgQd1N",
+                                              "indices": [
+                                                0,
+                                                23
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        "url": {
+                                          "urls": [
+                                            {
+                                              "display_url": "vcorp.ai",
+                                              "expanded_url": "https://vcorp.ai/",
+                                              "url": "https://t.co/woWUaCCKbF",
+                                              "indices": [
+                                                0,
+                                                23
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "fast_followers_count": 0,
+                                      "favourites_count": 7455,
+                                      "followers_count": 335,
+                                      "friends_count": 474,
+                                      "has_custom_timelines": true,
+                                      "is_translator": false,
+                                      "listed_count": 4,
+                                      "media_count": 146,
+                                      "normal_followers_count": 335,
+                                      "pinned_tweet_ids_str": [],
+                                      "possibly_sensitive": false,
+                                      "profile_interstitial_type": "",
+                                      "statuses_count": 2576,
+                                      "translator_type": "none",
+                                      "url": "https://t.co/woWUaCCKbF",
+                                      "want_retweets": false,
+                                      "withheld_in_countries": []
+                                    },
+                                    "location": {
+                                      "location": "杭州"
+                                    },
+                                    "media_permissions": {
+                                      "can_media_tag": false
+                                    },
+                                    "parody_commentary_fan_label": "None",
+                                    "profile_image_shape": "Circle",
+                                    "privacy": {
+                                      "protected": false
+                                    },
+                                    "relationship_perspectives": {
+                                      "following": false
+                                    },
+                                    "tipjar_settings": {},
+                                    "verification": {
+                                      "verified": false
+                                    }
+                                  }
+                                }
+                              },
+                              "unmention_data": {},
+                              "edit_control": {
+                                "edit_tweet_ids": [
+                                  "1966126199576604695"
+                                ],
+                                "editable_until_msecs": "1757599589000",
+                                "is_edit_eligible": false,
+                                "edits_remaining": "5"
+                              },
+                              "is_translatable": true,
+                              "views": {
+                                "count": "15",
+                                "state": "EnabledWithCount"
+                              },
+                              "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+                              "grok_analysis_button": true,
+                              "legacy": {
+                                "bookmark_count": 0,
+                                "bookmarked": false,
+                                "created_at": "Thu Sep 11 13:06:29 +0000 2025",
+                                "conversation_id_str": "1965963719546138723",
+                                "display_text_range": [
+                                  7,
+                                  34
+                                ],
+                                "entities": {
+                                  "hashtags": [],
+                                  "symbols": [],
+                                  "timestamps": [],
+                                  "urls": [],
+                                  "user_mentions": [
+                                    {
+                                      "id_str": "3178231",
+                                      "name": "宝玉",
+                                      "screen_name": "dotey",
+                                      "indices": [
+                                        0,
+                                        6
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "favorite_count": 0,
+                                "favorited": false,
+                                "full_text": "@dotey 检验是否适合Vibe Coding标准是一天骂几次AI",
+                                "in_reply_to_screen_name": "dotey",
+                                "in_reply_to_status_id_str": "1965963719546138723",
+                                "in_reply_to_user_id_str": "3178231",
+                                "is_quote_status": false,
+                                "lang": "zh",
+                                "quote_count": 0,
+                                "reply_count": 0,
+                                "retweet_count": 0,
+                                "retweeted": false,
+                                "user_id_str": "103886926",
+                                "id_str": "1966126199576604695"
+                              },
+                              "quick_promote_eligibility": {
+                                "eligibility": "IneligibleNotProfessional"
+                              }
+                            }
+                          },
+                          "tweetDisplayType": "Tweet"
+                        },
+                        "clientEventInfo": {
+                          "component": "tweet",
+                          "element": "tweet",
+                          "details": {
+                            "conversationDetails": {
+                              "conversationSection": "HighQuality"
+                            },
+                            "timelinesDetails": {
+                              "controllerData": "DAACDAAEDAABCgABAAAAAAAAAAEKAAIAAAAAAAAAAAoAAwAAAZk4/J48AAAAAA=="
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "metadata": {
+                    "conversationMetadata": {
+                      "allTweetIds": [
+                        "1966126199576604695"
+                      ],
+                      "enableDeduplication": true
+                    }
+                  },
+                  "displayType": "VerticalConversation",
+                  "clientEventInfo": {
+                    "component": "tweet",
+                    "details": {
+                      "conversationDetails": {
+                        "conversationSection": "HighQuality"
+                      },
+                      "timelinesDetails": {
+                        "controllerData": "DAACDAAEDAABCgABAAAAAAAAAAEKAAIAAAAAAAAAAAoAAwAAAZk4/J48AAAAAA=="
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "entryId": "conversationthread-1966005106639585509",
+                "sortIndex": "1966133389647937456",
+                "content": {
+                  "entryType": "TimelineTimelineModule",
+                  "__typename": "TimelineTimelineModule",
+                  "items": [
+                    {
+                      "entryId": "conversationthread-1966005106639585509-tweet-1966005106639585509",
+                      "item": {
+                        "itemContent": {
+                          "itemType": "TimelineTweet",
+                          "__typename": "TimelineTweet",
+                          "tweet_results": {
+                            "result": {
+                              "__typename": "Tweet",
+                              "rest_id": "1966005106639585509",
+                              "has_birdwatch_notes": false,
+                              "core": {
+                                "user_results": {
+                                  "result": {
+                                    "__typename": "User",
+                                    "id": "VXNlcjozMDMzMzkyMzI4",
+                                    "rest_id": "3033392328",
+                                    "affiliates_highlighted_label": {},
+                                    "avatar": {
+                                      "image_url": "https://pbs.twimg.com/profile_images/1904378179688787968/R37-EFeu_normal.jpg"
+                                    },
+                                    "core": {
+                                      "created_at": "Fri Feb 20 22:55:18 +0000 2015",
+                                      "name": "Eric|蓝鲸会🐋｜AgentBuilder",
+                                      "screen_name": "EricBlock2100"
+                                    },
+                                    "dm_permissions": {
+                                      "can_dm": true,
+                                      "can_dm_on_xchat": false
+                                    },
+                                    "has_graduated_access": true,
+                                    "is_blue_verified": false,
+                                    "legacy": {
+                                      "default_profile": true,
+                                      "default_profile_image": false,
+                                      "description": "BitWealth | Founder of 比特财商 | Nxt Venture Capital\nCryptocurrency information website:\nhttps://t.co/6kXQKdyDFJ\nBlue Whale Club community: https://",
+                                      "entities": {
+                                        "description": {
+                                          "urls": [
+                                            {
+                                              "display_url": "smartwallex.com",
+                                              "expanded_url": "https://www.smartwallex.com",
+                                              "url": "https://t.co/6kXQKdyDFJ",
+                                              "indices": [
+                                                86,
+                                                109
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "fast_followers_count": 0,
+                                      "favourites_count": 709,
+                                      "followers_count": 746,
+                                      "friends_count": 3711,
+                                      "has_custom_timelines": false,
+                                      "is_translator": false,
+                                      "listed_count": 4,
+                                      "media_count": 318,
+                                      "normal_followers_count": 746,
+                                      "pinned_tweet_ids_str": [
+                                        "1926091414716243995"
+                                      ],
+                                      "possibly_sensitive": false,
+                                      "profile_banner_url": "https://pbs.twimg.com/profile_banners/3033392328/1747743464",
+                                      "profile_interstitial_type": "",
+                                      "statuses_count": 2203,
+                                      "translator_type": "none",
+                                      "want_retweets": false,
+                                      "withheld_in_countries": []
+                                    },
+                                    "location": {
+                                      "location": ""
+                                    },
+                                    "media_permissions": {
+                                      "can_media_tag": true
+                                    },
+                                    "parody_commentary_fan_label": "None",
+                                    "profile_image_shape": "Circle",
+                                    "privacy": {
+                                      "protected": false
+                                    },
+                                    "relationship_perspectives": {
+                                      "following": false
+                                    },
+                                    "tipjar_settings": {},
+                                    "verification": {
+                                      "verified": false
+                                    }
+                                  }
+                                }
+                              },
+                              "unmention_data": {},
+                              "edit_control": {
+                                "edit_tweet_ids": [
+                                  "1966005106639585509"
+                                ],
+                                "editable_until_msecs": "1757570718000",
+                                "is_edit_eligible": false,
+                                "edits_remaining": "5"
+                              },
+                              "is_translatable": true,
+                              "views": {
+                                "count": "117",
+                                "state": "EnabledWithCount"
+                              },
+                              "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+                              "grok_analysis_button": true,
+                              "legacy": {
+                                "bookmark_count": 0,
+                                "bookmarked": false,
+                                "created_at": "Thu Sep 11 05:05:18 +0000 2025",
+                                "conversation_id_str": "1965963719546138723",
+                                "display_text_range": [
+                                  7,
+                                  40
+                                ],
+                                "entities": {
+                                  "hashtags": [],
+                                  "symbols": [],
+                                  "timestamps": [],
+                                  "urls": [],
+                                  "user_mentions": [
+                                    {
+                                      "id_str": "3178231",
+                                      "name": "宝玉",
+                                      "screen_name": "dotey",
+                                      "indices": [
+                                        0,
+                                        6
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "favorite_count": 0,
+                                "favorited": false,
+                                "full_text": "@dotey 专业的事交给专业的人去办。工程化的AI编程还是可以有很大的前途的。",
+                                "in_reply_to_screen_name": "dotey",
+                                "in_reply_to_status_id_str": "1965963719546138723",
+                                "in_reply_to_user_id_str": "3178231",
+                                "is_quote_status": false,
+                                "lang": "zh",
+                                "quote_count": 0,
+                                "reply_count": 0,
+                                "retweet_count": 0,
+                                "retweeted": false,
+                                "user_id_str": "3033392328",
+                                "id_str": "1966005106639585509"
+                              },
+                              "quick_promote_eligibility": {
+                                "eligibility": "IneligibleNotProfessional"
+                              }
+                            }
+                          },
+                          "tweetDisplayType": "Tweet"
+                        },
+                        "clientEventInfo": {
+                          "component": "tweet",
+                          "element": "tweet",
+                          "details": {
+                            "conversationDetails": {
+                              "conversationSection": "HighQuality"
+                            },
+                            "timelinesDetails": {
+                              "controllerData": "DAACDAAEDAABCgABAAAAAAAAAAEKAAIAAAAAAAAAAAoAAwAAAZk4/J48AAAAAA=="
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "metadata": {
+                    "conversationMetadata": {
+                      "allTweetIds": [
+                        "1966005106639585509"
+                      ],
+                      "enableDeduplication": true
+                    }
+                  },
+                  "displayType": "VerticalConversation",
+                  "clientEventInfo": {
+                    "component": "tweet",
+                    "details": {
+                      "conversationDetails": {
+                        "conversationSection": "HighQuality"
+                      },
+                      "timelinesDetails": {
+                        "controllerData": "DAACDAAEDAABCgABAAAAAAAAAAEKAAIAAAAAAAAAAAoAAwAAAZk4/J48AAAAAA=="
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "entryId": "cursor-showmorethreads-1966133389647937455",
+                "sortIndex": "1966133389647937455",
+                "content": {
+                  "entryType": "TimelineTimelineCursor",
+                  "__typename": "TimelineTimelineCursor",
+                  "value": "DAAFCgABG0kb5p7__60LAAIAAACIRW1QQzZ3QUFBZlEvZ0dKTjB2R3AvQUFBQUFvYlNSVmNqVm93Rnh0SWd4NWxXakZFRzBpQmxqamFjR01iU01mVEpwdHd5QnRJN1JCbEdvQ1JHMGluT21mYlFPVWJTSTViTHRvd0NCdEk0QU9xMnNFY0cwaUJsczdhTWdFYlNJR1hWVnFBS0E9PQgAAwAAAAcAAA",
+                  "cursorType": "ShowMoreThreads",
+                  "displayTreatment": {
+                    "actionText": "Show probable spam"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "TimelineTerminateTimeline",
+            "direction": "Top"
+          }
+        ],
+        "metadata": {
+          "reader_mode_config": {
+            "is_reader_mode_available": true
+          },
+          "scribeConfig": {
+            "page": "ranked_replies"
+          }
+        }
+      }
+    }
+  }
+}

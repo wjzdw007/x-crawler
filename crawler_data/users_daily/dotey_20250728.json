@@ -1,0 +1,93 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "",
+    "description": "",
+    "followers_count": 0,
+    "verified": false,
+    "is_blue_verified": false
+  },
+  "date": "20250728",
+  "last_updated": "2025-09-15T01:15:20.176002",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "1949852823891431839",
+      "text": "最近我也在思考 Workflow 和 Agent 到底什么关系，我的一个初步想法：\n\nWorkflow 本质上是工具，只是工具中用到了 AI 能力，所有能被定义成 Work Flow 的就应该能被做成工具。\n\nAgent 更像是 AI，它能主动规划、去调用工具，Workflow 应该是 Agent 的一个可以被调用的工具。\n\n你怎么看？",
+      "created_at": "Mon Jul 28 15:21:54 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1942782582065881461",
+        "text": "@wwwgoubuli 之前在团队内讨论时写的一段话：Agentic 和 Workflow 不是非黑即白的开关，而是一个连续的光谱。我们的架构要提供可持续的迭代能力，从而在 LLM 能力足够的地方更自主化，在 LLM 还不太擅长的地方通过固定编排把专家经验固定下来，随着模型的进化可以低成本的替换节点实现逻辑。",
+        "created_at": "Wed Jul 09 03:07:17 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "300629449",
+          "name": "天猪 TZ",
+          "screen_name": "atian25",
+          "description": "- Currently focused on @Trae_ai IDE. \n- Used to be a core developer of open source projects EggJS/CNPM. \n- ByteDance Engineer / ex-Alipay.",
+          "followers_count": 5886,
+          "friends_count": 278,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 86,
+          "reply_count": 6,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 42,
+        "favorite_count": 253,
+        "reply_count": 73,
+        "quote_count": 20
+      }
+    },
+    {
+      "id": "1949941176443732383",
+      "text": "@frxiaobei @wwwgoubuli @cryptonerdcn @eraera @TaNGSoFT: 随着llm的生成能力的提升，完全可以由agent来生成workflow。类似flowreasoner的方向。\nhttps://t.co/1sBZH60Tqr",
+      "created_at": "Mon Jul 28 21:12:59 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1949930863816323436",
+        "text": "非常棒的讨论。必须要mark。\n\nagent和workflow并不互斥，可以并存，我倾向于是嵌套的关系，agent>workflow，确定性的、经常重复的过程可以固化下来成为workflow，为agent解决问题所用。\n\n我觉得随着llm的生成能力的提升，完全可以由agent来生成workflow。类似flowreasoner的方向。\n\n本质上有点类似现在LLM的混合走向，在自然语言预训练的LLM中通过RL发展形式规则语言能力如coding、math。\n\n这和人类使用语言的演化过程一样。",
+        "created_at": "Mon Jul 28 20:32:00 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "23062740",
+          "name": "𝙩𝙮≃𝙛{𝕩}^A𝕀²·ℙarad𝕚g𝕞",
+          "screen_name": "TaNGSoFT",
+          "description": "ai4x交互范式-元认知+本体投射与反投射｜vibe pretraining of 𝕀²·ℙarad𝕚g𝕞｜关于神经网络学习•智能•秩序^造物主意志或其代理现象观察与解构｜ Paradigm^Vibe 𝕚sᵃˡˡ ᵁ ᴺᵉᵉᵈ^智能平方范式智库^特大号范式｜再AI十年之三：a vibe builder...",
+          "followers_count": 13024,
+          "friends_count": 3288,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 27,
+          "reply_count": 2,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 5,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    }
+  ]
+}

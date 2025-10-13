@@ -12,22 +12,26 @@ import json
 import requests
 import time
 import os
+import hashlib
 from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Optional, Any
 import random
+from config_loader import ConfigLoader
 
 class XCrawler:
     def __init__(self, data_dir="crawler_data", config_file="config.json"):
-        self.data_dir = Path(data_dir)
+        # 使用环境变量或默认值
+        self.data_dir = Path(os.getenv('DATA_DIR', data_dir))
         self.data_dir.mkdir(exist_ok=True)
-        
+
         # 创建数据存储目录
-        for subdir in ["daily_posts", "media", "summaries", "logs"]:
+        for subdir in ["daily_posts", "users_daily", "raw_responses", "user_summaries", "prompts"]:
             (self.data_dir / subdir).mkdir(exist_ok=True)
-        
-        self.config_file = Path(config_file)
-        self.config = self.load_config()
+
+        # 使用新的配置加载器
+        self.config_loader = ConfigLoader(config_file)
+        self.config = self.config_loader.config
         self.session = requests.Session()
         self.setup_session()
         
@@ -45,20 +49,6 @@ class XCrawler:
         self.last_request_time = 0
         self.rate_limit = self.config.get('settings', {}).get('requests_per_hour', 400)
     
-    def load_config(self) -> Dict:
-        """加载配置文件"""
-        if self.config_file.exists():
-            try:
-                with open(self.config_file, 'r', encoding='utf-8') as f:
-                    return json.load(f)
-            except Exception as e:
-                print(f"⚠️ 配置文件加载失败: {e}")
-        
-        # 返回默认配置
-        return {
-            "authentication": {"cookies": {}, "headers": {}},
-            "settings": {"requests_per_hour": 400, "retry_attempts": 3, "timeout": 30}
-        }
         
     def setup_session(self):
         """设置HTTP会话"""
@@ -75,7 +65,16 @@ class XCrawler:
             'Sec-Fetch-Mode': 'cors',
             'Sec-Fetch-Site': 'same-origin',
         })
-        
+
+        # 确保requests会自动处理gzip解压
+        self.session.trust_env = False
+
+        # 设置代理（如果配置了）
+        proxy_settings = self.config_loader.get_proxy_settings()
+        if proxy_settings:
+            self.session.proxies = proxy_settings
+            print(f"🌐 使用代理: {proxy_settings}")
+
         # 从配置文件加载认证信息
         self.load_authentication()
     
@@ -194,9 +193,62 @@ class XCrawler:
         try:
             print(f"🔄 请求 {timeline_type} 时间线...")
             response = self.session.get(url, params=params, timeout=30)
-            
+
             if response.status_code == 200:
-                return response.json()
+                # 检查响应内容类型和编码
+                content_type = response.headers.get('Content-Type', '')
+                print(f"📄 响应类型: {content_type}")
+
+                # 尝试解码响应内容
+                try:
+                    response_data = response.json()
+                except json.JSONDecodeError as e:
+                    print(f"❌ JSON解析失败: {e}")
+                    print(f"📝 响应长度: {len(response.text)} 字符")
+                    print(f"📝 Content-Encoding: {response.headers.get('Content-Encoding', 'None')}")
+
+                    # 检查响应是否为二进制内容（可能是gzip压缩的）
+                    content_sample = response.content[:100]
+                    is_binary = any(b < 32 or b > 126 for b in content_sample if b not in [9, 10, 13])
+
+                    if is_binary:
+                        print("🔧 检测到二进制内容，尝试解压...")
+                        content_encoding = response.headers.get('Content-Encoding', '').lower()
+
+                        try:
+                            if 'br' in content_encoding:
+                                print("🔧 使用Brotli解压...")
+                                import brotli
+                                decompressed = brotli.decompress(response.content)
+                            elif 'gzip' in content_encoding:
+                                print("🔧 使用Gzip解压...")
+                                import gzip
+                                decompressed = gzip.decompress(response.content)
+                            else:
+                                print("🔧 尝试自动解压...")
+                                # 尝试多种解压方式
+                                try:
+                                    import brotli
+                                    decompressed = brotli.decompress(response.content)
+                                    print("✅ Brotli解压成功")
+                                except:
+                                    import gzip
+                                    decompressed = gzip.decompress(response.content)
+                                    print("✅ Gzip解压成功")
+
+                            response_data = json.loads(decompressed.decode('utf-8'))
+                            print("✅ 成功解压并解析JSON")
+                        except Exception as decomp_e:
+                            print(f"❌ 解压失败: {decomp_e}")
+                            return None
+                    else:
+                        print(f"📝 响应前100字符: {repr(response.text[:100])}")
+                        return None
+
+                # 保存原始API响应用于分析
+                self.save_raw_response(response, url, params, timeline_type)
+
+                return response_data
             elif response.status_code == 429:
                 print("⚠️ 触发限流，等待后重试...")
                 time.sleep(60)
@@ -208,6 +260,33 @@ class XCrawler:
         except Exception as e:
             print(f"❌ 请求异常: {e}")
             return None
+    
+    def save_raw_response(self, response, url: str, params: dict, timeline_type: str):
+        """保存原始API响应用于分析"""
+        try:
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S_%f')[:-3]
+            raw_dir = self.data_dir / "raw_responses"
+            raw_dir.mkdir(exist_ok=True)
+            
+            filename = f"{timestamp}_{timeline_type}_response.json"
+            filepath = raw_dir / filename
+            
+            raw_data = {
+                "url": url,
+                "timestamp": datetime.now().isoformat(),
+                "status": response.status_code,
+                "headers": dict(response.headers),
+                "params": params,
+                "data": response.json() if response.status_code == 200 else {"error": response.text}
+            }
+            
+            with open(filepath, 'w', encoding='utf-8') as f:
+                json.dump(raw_data, f, ensure_ascii=False, indent=2)
+            
+            print(f"💾 原始响应已保存: {filename}")
+            
+        except Exception as e:
+            print(f"⚠️ 保存原始响应失败: {e}")
     
     def parse_tweet(self, tweet_data: Dict) -> Optional[Dict]:
         """解析推文数据 - 基于分析结果的完整实现"""
@@ -331,8 +410,8 @@ class XCrawler:
                     for entry in entries:
                         entry_id = entry.get('entryId', '')
                         
-                        # 推文条目
-                        if 'tweet-' in entry_id:
+                        # 推文条目 - 排除promoted-tweet广告
+                        if entry_id.startswith('tweet-'):
                             content = entry.get('content', {})
                             item_content = content.get('itemContent', {})
                             tweet_results = item_content.get('tweet_results', {})
@@ -342,6 +421,22 @@ class XCrawler:
                                 parsed_tweet = self.parse_tweet(tweet_data)
                                 if parsed_tweet:
                                     tweets.append(parsed_tweet)
+                        
+                        # 对话模块 - 包含多条相关推文
+                        elif entry_id.startswith('home-conversation-'):
+                            content = entry.get('content', {})
+                            if content.get('entryType') == 'TimelineTimelineModule':
+                                items = content.get('items', [])
+                                for item in items:
+                                    item_content = item.get('item', {}).get('itemContent', {})
+                                    if item_content.get('itemType') == 'TimelineTweet':
+                                        tweet_results = item_content.get('tweet_results', {})
+                                        tweet_data = tweet_results.get('result', {})
+                                        
+                                        if tweet_data.get('__typename') == 'Tweet':
+                                            parsed_tweet = self.parse_tweet(tweet_data)
+                                            if parsed_tweet:
+                                                tweets.append(parsed_tweet)
                         
                         # 游标处理 - 用于分页
                         elif 'cursor-' in entry_id:
@@ -357,7 +452,7 @@ class XCrawler:
         
         return tweets
     
-    def crawl_daily_posts(self, timeline_type: str = "recommended", max_pages: int = 5, target_count: Optional[int] = None) -> List[Dict]:
+    def crawl_daily_posts(self, timeline_type: str = "recommended", max_pages: int = None, target_count: Optional[int] = None) -> List[Dict]:
         """爬取日推文 - 支持精确数量控制"""
         if target_count is None:
             target_count = self.config.get("targets", {}).get("daily_tweet_count", 100)
@@ -367,9 +462,12 @@ class XCrawler:
         
         all_tweets = []
         cursor = None
+        page = 0
         
-        for page in range(max_pages):
-            print(f"📄 爬取第 {page + 1} 页...")
+        # 如果指定了max_pages就使用，否则无限制直到达到target_count或无更多数据
+        while max_pages is None or page < max_pages:
+            page += 1
+            print(f"📄 爬取第 {page} 页...")
             
             response_data = self.make_timeline_request(timeline_type, cursor)
             if not response_data:
@@ -399,6 +497,8 @@ class XCrawler:
         # 保存数据
         if all_tweets:
             self.save_daily_data(all_tweets, timeline_type)
+            # 按用户分组保存当天数据
+            self.save_by_user_daily(all_tweets)
         
         print(f"🎉 总共爬取 {len(all_tweets)} 条推文")
         return all_tweets
@@ -439,6 +539,342 @@ class XCrawler:
         print(f"\n📊 {timeline_type} 时间线统计:")
         for key, value in stats.items():
             print(f"  {key}: {value}")
+    
+    def save_by_user_daily(self, tweets: List[Dict]):
+        """按用户和日期分组保存所有推文数据"""
+        from dateutil.parser import parse as parse_date
+        import os
+        
+        users_dir = self.data_dir / "users_daily"
+        
+        print(f"\n👥 按用户和日期分组保存推文...")
+        
+        # 按用户和日期双重分组 {user: {date: [tweets]}}
+        user_date_tweets = {}
+        total_processed = 0
+        
+        for tweet in tweets:
+            try:
+                tweet_date = parse_date(tweet.get('created_at', ''))
+                tweet_date_str = tweet_date.strftime('%Y%m%d')
+                
+                # 获取用户信息
+                user = tweet.get('user', {})
+                screen_name = user.get('screen_name', 'unknown')
+                
+                # 初始化嵌套字典结构
+                if screen_name not in user_date_tweets:
+                    user_date_tweets[screen_name] = {}
+                if tweet_date_str not in user_date_tweets[screen_name]:
+                    user_date_tweets[screen_name][tweet_date_str] = []
+                
+                user_date_tweets[screen_name][tweet_date_str].append(tweet)
+                total_processed += 1
+                
+            except Exception as e:
+                print(f"⚠️ 解析推文时间失败: {e}")
+                continue
+        
+        print(f"📅 处理推文: {total_processed}/{len(tweets)} 条")
+        
+        # 统计信息
+        total_users = len(user_date_tweets)
+        total_files = sum(len(date_tweets) for date_tweets in user_date_tweets.values())
+        print(f"👤 涉及用户数: {total_users} 个")
+        print(f"📂 将生成文件数: {total_files} 个")
+        
+        # 为每个用户的每个日期保存数据
+        for screen_name, date_tweets in user_date_tweets.items():
+            for date_str, user_tweet_list in date_tweets.items():
+                self._save_user_tweets_by_date(screen_name, date_str, user_tweet_list, users_dir)
+        
+        print(f"✅ 用户分组保存完成")
+    
+    def _save_user_tweets(self, screen_name: str, new_tweets: List[Dict], users_dir: Path):
+        """保存或合并用户的推文数据"""
+        import os
+        from dateutil.parser import parse as parse_date
+        
+        today = datetime.now().strftime('%Y%m%d')
+        filename = f"{screen_name}_{today}.json"
+        filepath = users_dir / filename
+        
+        # 如果文件已存在，加载现有数据
+        existing_tweets = []
+        if filepath.exists():
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    existing_data = json.load(f)
+                    existing_tweets = existing_data.get('tweets', [])
+            except Exception as e:
+                print(f"⚠️ 读取现有文件失败 {filepath}: {e}")
+        
+        # 合并推文并去重（基于推文ID）
+        all_tweets = existing_tweets + new_tweets
+        unique_tweets = {}
+        
+        # 先保存用户信息，再移除冗余字段
+        user_info = {}
+        for tweet in all_tweets:
+            tweet_id = tweet.get('id')
+            if tweet_id and tweet_id not in unique_tweets:
+                # 保存最新的用户信息
+                if tweet.get('user'):
+                    user_info = tweet['user']
+                
+                # 移除冗余的用户信息，因为文件已经按用户分组
+                clean_tweet = tweet.copy()
+                clean_tweet.pop('user', None)  # 移除顶层user字段
+                unique_tweets[tweet_id] = clean_tweet
+        
+        # 按时间正序排序
+        sorted_tweets = sorted(
+            unique_tweets.values(),
+            key=lambda t: parse_date(t.get('created_at', '1970-01-01'))
+        )
+        
+        # 构建保存数据
+        save_data = {
+            "user": {
+                "screen_name": screen_name,
+                "name": user_info.get('name', ''),
+                "description": user_info.get('description', ''),
+                "followers_count": user_info.get('followers_count', 0),
+                "verified": user_info.get('verified', False),
+                "is_blue_verified": user_info.get('is_blue_verified', False)
+            },
+            "date": today,
+            "last_updated": datetime.now().isoformat(),
+            "tweet_count": len(sorted_tweets),
+            "tweets": sorted_tweets
+        }
+        
+        # 保存文件
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump(save_data, f, ensure_ascii=False, indent=2)
+        
+        action = "更新" if existing_tweets else "创建"
+        print(f"  📄 {action} @{screen_name}: {len(sorted_tweets)} 条推文 -> {filename}")
+    
+    def _save_user_tweets_by_date(self, screen_name: str, date_str: str, new_tweets: List[Dict], users_dir: Path):
+        """按日期保存或合并用户的推文数据"""
+        import os
+        from dateutil.parser import parse as parse_date
+        
+        filename = f"{screen_name}_{date_str}.json"
+        filepath = users_dir / filename
+        
+        # 如果文件已存在，加载现有数据
+        existing_tweets = []
+        if filepath.exists():
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    existing_data = json.load(f)
+                    existing_tweets = existing_data.get('tweets', [])
+            except Exception as e:
+                print(f"⚠️ 读取现有文件失败 {filepath}: {e}")
+        
+        # 合并推文并去重（基于推文ID）
+        all_tweets = existing_tweets + new_tweets
+        unique_tweets = {}
+        
+        # 先保存用户信息，再移除冗余字段
+        user_info = {}
+        for tweet in all_tweets:
+            tweet_id = tweet.get('id')
+            if tweet_id and tweet_id not in unique_tweets:
+                # 保存最新的用户信息
+                if tweet.get('user'):
+                    user_info = tweet['user']
+                
+                # 移除冗余的用户信息，因为文件已经按用户分组
+                clean_tweet = tweet.copy()
+                clean_tweet.pop('user', None)  # 移除顶层user字段
+                unique_tweets[tweet_id] = clean_tweet
+        
+        # 按时间正序排序
+        sorted_tweets = sorted(
+            unique_tweets.values(),
+            key=lambda t: parse_date(t.get('created_at', '1970-01-01'))
+        )
+        
+        # 构建保存数据
+        save_data = {
+            "user": {
+                "screen_name": screen_name,
+                "name": user_info.get('name', ''),
+                "description": user_info.get('description', ''),
+                "followers_count": user_info.get('followers_count', 0),
+                "verified": user_info.get('verified', False),
+                "is_blue_verified": user_info.get('is_blue_verified', False)
+            },
+            "date": date_str,
+            "last_updated": datetime.now().isoformat(),
+            "tweet_count": len(sorted_tweets),
+            "tweets": sorted_tweets
+        }
+        
+        # 保存文件
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump(save_data, f, ensure_ascii=False, indent=2)
+        
+        action = "更新" if existing_tweets else "创建"
+        print(f"  📄 {action} @{screen_name}[{date_str}]: {len(sorted_tweets)} 条推文 -> {filename}")
+    
+    def generate_user_summaries_for_yesterday(self, force_overwrite: bool = False):
+        """生成昨天所有用户的个人推文总结"""
+        from datetime import datetime, timedelta
+        from summarizer import TwitterSummarizer
+        
+        # 计算昨天日期
+        yesterday = datetime.now() - timedelta(days=1)
+        yesterday_str = yesterday.strftime('%Y%m%d')
+        
+        print(f"\n🤖 开始生成昨天({yesterday_str})的用户总结...")
+        
+        users_dir = self.data_dir / "users_daily"
+        summaries_dir = self.data_dir / "user_summaries"
+        summaries_dir.mkdir(exist_ok=True)
+        
+        # 查找昨天的所有用户文件
+        yesterday_files = list(users_dir.glob(f"*_{yesterday_str}.json"))
+        
+        if not yesterday_files:
+            print(f"📭 未找到昨天({yesterday_str})的用户数据文件")
+            return
+        
+        print(f"📂 发现 {len(yesterday_files)} 个用户文件")
+        
+        # 初始化总结器
+        summarizer = TwitterSummarizer()
+        summarized_count = 0
+        skipped_count = 0
+        
+        for user_file in yesterday_files:
+            try:
+                # 解析文件名获取用户名
+                username = user_file.stem.replace(f"_{yesterday_str}", "")
+                summary_filename = f"{username}_{yesterday_str}_summary.json"
+                summary_filepath = summaries_dir / summary_filename
+                
+                # 检查总结文件是否已存在
+                if summary_filepath.exists() and not force_overwrite:
+                    print(f"  ⏭️  跳过 @{username}: 总结已存在")
+                    skipped_count += 1
+                    continue
+                # 读取用户推文数据
+                with open(user_file, 'r', encoding='utf-8') as f:
+                    user_data = json.load(f)
+                
+                tweets = user_data.get('tweets', [])
+                user_info = user_data.get('user', {})
+                
+                if summary_filepath.exists() and force_overwrite:
+                    print(f"  🔄 强制覆盖 @{username} 总结 ({len(tweets)}条推文)...")
+                else:
+                    print(f"  🔄 生成 @{username} 总结 ({len(tweets)}条推文)...")
+                
+                if not tweets:
+                    print(f"  ⚠️  跳过 @{username}: 无推文数据")
+                    continue
+                
+                # 生成个人总结
+                summary_result = summarizer.generate_summary(tweets, f"user_daily", user_info)
+                
+                # 直接保存大模型的回复为markdown文件
+                md_filename = f"{username}_{yesterday_str}_summary.md"
+                md_filepath = summaries_dir / md_filename
+
+                # 判断是覆盖还是创建
+                was_existing = md_filepath.exists()
+
+                # 直接保存大模型的总结内容
+                with open(md_filepath, 'w', encoding='utf-8') as f:
+                    f.write(summary_result.get('summary', '暂无总结内容'))
+                
+                action = "覆盖" if (was_existing and force_overwrite) else "创建"
+                print(f"  ✅ {action}完成 @{username}: {md_filename}")
+                summarized_count += 1
+                
+            except Exception as e:
+                print(f"  ❌ 处理 {user_file.name} 失败: {e}")
+        
+        print(f"\n📊 用户总结完成:")
+        print(f"  ✅ 新生成: {summarized_count} 个")
+        print(f"  ⏭️  已跳过: {skipped_count} 个")
+        print(f"  📁 总结目录: {summaries_dir}")
+    
+    def generate_user_summaries_for_date(self, date_str: str, force_overwrite: bool = False):
+        """为指定日期的用户数据生成总结"""
+        from summarizer import TwitterSummarizer
+        
+        print(f"\n🤖 开始生成指定日期({date_str})的用户总结...")
+        
+        users_dir = self.data_dir / "users_daily"
+        summaries_dir = self.data_dir / "user_summaries"
+        summaries_dir.mkdir(exist_ok=True)
+        
+        # 查找指定日期的所有用户文件
+        date_files = list(users_dir.glob(f"*_{date_str}.json"))
+        
+        if not date_files:
+            print(f"📭 未找到指定日期({date_str})的用户数据文件")
+            print(f"🔍 检查目录: {users_dir}")
+            return
+        
+        print(f"📁 找到 {len(date_files)} 个用户数据文件")
+        
+        # 创建总结器
+        summarizer = TwitterSummarizer()
+        
+        processed_count = 0
+        skipped_count = 0
+        
+        for user_file in date_files:
+            try:
+                # 提取用户名
+                user_name = user_file.stem.split('_')[0]  # filename: username_YYYYMMDD.json
+                
+                # 生成总结文件路径（改为markdown格式）
+                summary_filename = f"{user_name}_{date_str}_summary.md"
+                summary_path = summaries_dir / summary_filename
+                
+                # 检查是否已存在且不强制覆盖
+                if summary_path.exists() and not force_overwrite:
+                    print(f"  ⏭️  跳过 @{user_name} - 总结已存在")
+                    skipped_count += 1
+                    continue
+                
+                # 加载用户数据
+                with open(user_file, 'r', encoding='utf-8') as f:
+                    user_data = json.load(f)
+                
+                tweets = user_data.get('tweets', [])
+                user_info = user_data.get('user', {})
+                
+                if not tweets:
+                    print(f"  ⚠️   @{user_name} - 无推文数据")
+                    continue
+                
+                # 生成总结
+                print(f"  🔄 处理 @{user_name} ({len(tweets)} 条推文)")
+                summary_result = summarizer.generate_summary(tweets, 'user_daily', user_info)
+                
+                # 直接保存大模型的总结内容
+                with open(summary_path, 'w', encoding='utf-8') as f:
+                    f.write(summary_result.get('summary', '暂无总结内容'))
+                
+                print(f"  ✅ @{user_name} 总结完成")
+                processed_count += 1
+                
+            except Exception as e:
+                print(f"  ❌ @{user_name} 处理失败: {e}")
+                continue
+        
+        print(f"\n📊 用户总结生成完成:")
+        print(f"  ✅ 已处理: {processed_count} 个")
+        print(f"  ⏭️  已跳过: {skipped_count} 个")
+        print(f"  📁 总结目录: {summaries_dir}")
 
 def main():
     """主函数"""

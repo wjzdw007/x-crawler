@@ -1,0 +1,118 @@
+推文数据分析 - 优化嵌套结构：
+
+以下是经过结构优化的推文数据，采用嵌套JSON格式便于理解推文间的复杂关系：
+
+```json
+{
+  "total_tweets": 3,
+  "sample_tweets": [
+    {
+      "id": "1966374889390223601",
+      "author": "@elonmusk",
+      "text": "RT @FBISaltLakeCity: The FBI is releasing video of the shooter who murdered Charlie Kirk at Utah Valley University on September 10, 2025. F…",
+      "timestamp": "Fri Sep 12 05:34:41 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 11643,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1966320840544227680",
+        "author": "@FBISaltLakeCity",
+        "text": "The FBI is releasing video of the shooter who murdered Charlie Kirk at Utah Valley University on September 10, 2025. Following the shooting, the individual jumps from a rooftop and runs away from the location. Trace evidence collected from the rooftop includes shoe impressions, a forearm imprint, and a palm print. The shooter's weapon and ammunition were recovered from a wooded area near the university. The full video can be viewed at https://t.co/BIzOcmmFqQ.",
+        "timestamp": "Fri Sep 12 01:59:55 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 11643,
+          "likes": 56834,
+          "replies": 4600,
+          "quotes": 741
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966297078449188942",
+      "author": "@elonmusk",
+      "text": "It has indeed come to this",
+      "timestamp": "Fri Sep 12 00:25:30 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 36251,
+        "likes": 273138,
+        "replies": 6959,
+        "quotes": 841
+      },
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1966288413939659079",
+        "author": "@SwipeWright",
+        "text": "This needed an update. https://t.co/Pb7kuP7NGZ",
+        "timestamp": "Thu Sep 11 23:51:04 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "engagement": {
+          "retweets": 16847,
+          "likes": 88759,
+          "replies": 1695,
+          "quotes": 1318
+        },
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966296822680531288",
+      "author": "@elonmusk",
+      "text": "RT @jk_rowling: If you believe free speech is for you but not your political opponents, you're illiberal.\n\nIf no contrary evidence could ch…",
+      "timestamp": "Fri Sep 12 00:24:29 +0000 2025",
+      "media": [],
+      "engagement": {
+        "retweets": 78331,
+        "likes": 0,
+        "replies": 0,
+        "quotes": 0
+      },
+      "type": "retweet",
+      "original_content": {
+        "id": "1966256971134234678",
+        "author": "@jk_rowling",
+        "text": "If you believe free speech is for you but not your political opponents, you're illiberal.\n\nIf no contrary evidence could change your beliefs, you're a fundamentalist.\n\nIf you believe the state should punish those with contrary views, you're a totalitarian.\n\nIf you believe political opponents should be punished with violence or death, you're a terrorist.",
+        "timestamp": "Thu Sep 11 21:46:07 +0000 2025",
+        "media": [],
+        "engagement": {
+          "retweets": 78331,
+          "likes": 378699,
+          "replies": 7160,
+          "quotes": 3840
+        },
+        "type": "original"
+      }
+    }
+  ],
+  "structure_info": {
+    "original_tweets": 0,
+    "retweets": 2,
+    "quote_tweets": 1,
+    "complex_retweets": 0
+  }
+}
+```
+
+数据结构说明：
+- type: 推文类型 (original/retweet/quote_tweet)
+- original_content: 转推的原始内容
+- quoted_content: 引用的推文内容
+- engagement: 互动数据 (retweets/likes/replies/quotes)
+- media: 媒体类型列表 (photo/video等)
+
+完整数据统计：
+总推文数：3
+原创推文：1
+转推：2
+含媒体：0

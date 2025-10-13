@@ -1,0 +1,97 @@
+# LLM Prompt 保存记录
+生成时间: 2025-09-14 22:40:49
+总结类型: user_daily
+用户: @elonmusk
+推文数量: 3
+数据哈希: e7228895
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+请根据自定义要求分析以下推文：
+
+## 基础信息
+- **用户**: @elonmusk
+- **用户类型**: entrepreneur_investor  
+- **关注领域**: 商业投资机会
+- **分析日期**: 2025年09月14日
+- **推文数量**: 3 条
+
+## 推文数据
+推文数据分析 - 优化嵌套结构：
+
+以下是经过结构优化的推文数据，采用嵌套JSON格式便于理解推文间的复杂关系：
+
+```json
+{
+  "total_tweets": 3,
+  "sample_tweets": [
+    {
+      "id": "3",
+      "author": "@elonmusk",
+      "text": "Tesla的自动驾驶技术又有了新的突破。Full Self-Driving v12.0现在可以处理更复杂的城市道路场景，包括施工区域和紧急车辆。",
+      "timestamp": "2025-09-14 12:00:00",
+      "media": [],
+      "type": "original"
+    },
+    {
+      "id": "2",
+      "author": "@elonmusk",
+      "text": "RT @openai: We're excited to announce our latest breakthrough in large language models. The new architecture shows 40% improvement in reasoning tasks.",
+      "timestamp": "2025-09-14 11:00:00",
+      "media": [],
+      "type": "original"
+    },
+    {
+      "id": "1",
+      "author": "@elonmusk",
+      "text": "刚刚看了一个关于AI技术发展的演讲，非常有启发。人工智能正在改变我们的工作方式和生活方式。",
+      "timestamp": "2025-09-14 10:00:00",
+      "media": [],
+      "type": "original"
+    }
+  ],
+  "structure_info": {
+    "original_tweets": 3,
+    "retweets": 0,
+    "quote_tweets": 0,
+    "complex_retweets": 0
+  }
+}
+```
+
+数据结构说明：
+- type: 推文类型 (original/retweet/quote_tweet)
+- original_content: 转推的原始内容
+- quoted_content: 引用的推文内容
+- media: 媒体类型列表 (photo/video等)
+- 为节省空间，已省略详细的互动数据
+
+完整数据统计：
+总推文数：3
+原创推文：3
+转推：0
+含媒体：0
+
+
+## 自定义要求
+重点关注AI和自动驾驶相关内容
+
+请按照上述要求生成分析报告。
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @elonmusk的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

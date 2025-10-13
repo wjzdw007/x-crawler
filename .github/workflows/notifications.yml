@@ -1,0 +1,239 @@
+name: Notification Examples
+
+# 这个文件展示了多种通知方式，可以集成到 daily-crawler.yml 中
+
+on:
+  workflow_dispatch:
+
+jobs:
+  # ==========================================
+  # 方案 1: GitHub Issues (最简单，无需额外配置)
+  # ==========================================
+  github-issue-notification:
+    runs-on: ubuntu-latest
+    if: failure()
+    steps:
+      - name: 🐛 Create GitHub Issue on failure
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🚨 Crawler Failed - ${new Date().toISOString().split('T')[0]}`,
+              body: `
+              ## 运行失败报告
+
+              **时间**: ${new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}
+              **工作流**: ${context.workflow}
+              **运行ID**: ${context.runId}
+
+              ### 详细信息
+              - **仓库**: ${context.repo.owner}/${context.repo.repo}
+              - **分支**: ${context.ref}
+              - **提交**: ${context.sha.substring(0, 7)}
+              - **触发者**: ${context.actor}
+
+              ### 快速链接
+              🔗 [查看运行日志](${context.payload.repository.html_url}/actions/runs/${context.runId})
+
+              ### 可能原因
+              - [ ] X 认证 token 过期
+              - [ ] OpenRouter API 配额不足
+              - [ ] 网络连接问题
+              - [ ] 代码逻辑错误
+
+              ---
+              *此 Issue 由 GitHub Actions 自动创建*
+              `,
+              labels: ['bot', 'crawler-failure', 'urgent']
+            });
+            console.log(`Created issue #${issue.data.number}`);
+
+  # ==========================================
+  # 方案 2: Email 通知 (GitHub 内置，无需配置)
+  # ==========================================
+  # 说明: GitHub 默认会向你的注册邮箱发送失败通知
+  # 可以在 Settings → Notifications → Actions 中配置
+
+
+  # ==========================================
+  # 方案 3: Telegram Bot (推荐 ⭐)
+  # ==========================================
+  telegram-notification:
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: 📱 Send Telegram notification
+        if: always()
+        run: |
+          STATUS="${{ job.status }}"
+          EMOJI="✅"
+
+          if [ "$STATUS" = "failure" ]; then
+            EMOJI="❌"
+          elif [ "$STATUS" = "cancelled" ]; then
+            EMOJI="⚠️"
+          fi
+
+          MESSAGE="${EMOJI} *X Crawler 运行${STATUS}*
+
+          📅 时间: $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
+          🔗 [查看详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+          📊 仓库: \`${{ github.repository }}\`
+          🌿 分支: \`${{ github.ref_name }}\`
+          👤 触发: ${{ github.actor }}"
+
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"chat_id\": \"${{ secrets.TELEGRAM_CHAT_ID }}\",
+              \"text\": \"${MESSAGE}\",
+              \"parse_mode\": \"Markdown\",
+              \"disable_web_page_preview\": true
+            }"
+
+  # ==========================================
+  # 方案 4: 企业微信群机器人
+  # ==========================================
+  wechat-work-notification:
+    runs-on: ubuntu-latest
+    if: failure()
+    steps:
+      - name: 📢 Send WeChat Work notification
+        run: |
+          curl -s -X POST "${{ secrets.WECHAT_WEBHOOK }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "msgtype": "markdown",
+              "markdown": {
+                "content": "## 🚨 X Crawler 运行失败\n\n>时间: <font color=\"warning\">'"$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')"'</font>\n>仓库: `${{ github.repository }}`\n>分支: `${{ github.ref_name }}`\n\n[点击查看详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+              }
+            }'
+
+  # ==========================================
+  # 方案 5: 钉钉群机器人
+  # ==========================================
+  dingtalk-notification:
+    runs-on: ubuntu-latest
+    if: failure()
+    steps:
+      - name: 📢 Send DingTalk notification
+        run: |
+          curl -s -X POST "${{ secrets.DINGTALK_WEBHOOK }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "msgtype": "markdown",
+              "markdown": {
+                "title": "X Crawler 运行失败",
+                "text": "## 🚨 X Crawler 运行失败\n\n- 时间: '"$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')"'\n- 仓库: ${{ github.repository }}\n- 分支: ${{ github.ref_name }}\n\n[查看详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+              }
+            }'
+
+  # ==========================================
+  # 方案 6: Discord Webhook
+  # ==========================================
+  discord-notification:
+    runs-on: ubuntu-latest
+    if: failure()
+    steps:
+      - name: 🎮 Send Discord notification
+        run: |
+          curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "embeds": [{
+                "title": "🚨 X Crawler 运行失败",
+                "description": "工作流执行失败，需要检查",
+                "color": 15158332,
+                "fields": [
+                  {
+                    "name": "📅 时间",
+                    "value": "'"$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')"'",
+                    "inline": true
+                  },
+                  {
+                    "name": "📊 仓库",
+                    "value": "`${{ github.repository }}`",
+                    "inline": true
+                  },
+                  {
+                    "name": "🌿 分支",
+                    "value": "`${{ github.ref_name }}`",
+                    "inline": true
+                  }
+                ],
+                "url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+                "timestamp": "'"$(date -u +%Y-%m-%dT%H:%M:%S.000Z)"'"
+              }]
+            }'
+
+  # ==========================================
+  # 方案 7: Slack (企业用户)
+  # ==========================================
+  slack-notification:
+    runs-on: ubuntu-latest
+    if: failure()
+    steps:
+      - name: 💬 Send Slack notification
+        run: |
+          curl -s -X POST "${{ secrets.SLACK_WEBHOOK }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "blocks": [
+                {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "🚨 X Crawler 运行失败"
+                  }
+                },
+                {
+                  "type": "section",
+                  "fields": [
+                    {
+                      "type": "mrkdwn",
+                      "text": "*时间:*\n'"$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')"'"
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*仓库:*\n`${{ github.repository }}`"
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*分支:*\n`${{ github.ref_name }}`"
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*触发者:*\n${{ github.actor }}"
+                    }
+                  ]
+                },
+                {
+                  "type": "actions",
+                  "elements": [
+                    {
+                      "type": "button",
+                      "text": {
+                        "type": "plain_text",
+                        "text": "查看详情"
+                      },
+                      "url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+                      "style": "danger"
+                    }
+                  ]
+                }
+              ]
+            }'
+
+  # ==========================================
+  # 方案 8: Bark (iOS 推送，最简单)
+  # ==========================================
+  bark-notification:
+    runs-on: ubuntu-latest
+    if: failure()
+    steps:
+      - name: 📱 Send Bark notification
+        run: |
+          curl -s "https://api.day.app/${{ secrets.BARK_KEY }}/X%20Crawler%20失败/$(TZ='Asia/Shanghai' date '+%Y-%m-%d %20%H:%M:%S')?group=crawler&url=${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

@@ -1,0 +1,211 @@
+name: Daily X Crawler
+
+on:
+  # 定时任务 - 每天北京时间早上9点运行 (UTC+8 = 01:00 UTC)
+  schedule:
+    - cron: '0 1 * * *'  # 每天 UTC 01:00 (北京时间 09:00)
+
+  # 手动触发
+  workflow_dispatch:
+    inputs:
+      tweet_count:
+        description: '要爬取的推文数量'
+        required: false
+        default: '500'
+      force_summary:
+        description: '强制重新生成总结 (true/false)'
+        required: false
+        default: 'false'
+
+jobs:
+  crawl-and-summarize:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 检出代码
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # 保留完整提交历史，支持后续提交
+          fetch-depth: 0
+
+      # 2. 设置 Python 环境
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'  # 缓存依赖加速构建
+
+      # 3. 安装系统依赖 (Playwright需要)
+      - name: 📦 Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libnss3 \
+            libnspr4 \
+            libatk1.0-0 \
+            libatk-bridge2.0-0 \
+            libcups2 \
+            libdrm2 \
+            libxkbcommon0 \
+            libxcomposite1 \
+            libxdamage1 \
+            libxfixes3 \
+            libxrandr2 \
+            libgbm1 \
+            libasound2
+
+      # 4. 安装 Python 依赖
+      - name: 📚 Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          playwright install chromium
+
+      # 5. 配置环境变量 (从 GitHub Secrets)
+      - name: ⚙️ Configure environment
+        run: |
+          cat > .env << EOF
+          # X平台认证
+          X_AUTH_TOKEN=${{ secrets.X_AUTH_TOKEN }}
+          X_CT0_TOKEN=${{ secrets.X_CT0_TOKEN }}
+          X_CSRF_TOKEN=${{ secrets.X_CSRF_TOKEN }}
+          X_BEARER_TOKEN=${{ secrets.X_BEARER_TOKEN }}
+
+          # LLM配置
+          OPENROUTER_API_KEY=${{ secrets.OPENROUTER_API_KEY }}
+          OPENAI_MODEL=${{ secrets.OPENAI_MODEL }}
+
+          # 代理配置 (可选)
+          HTTP_PROXY=${{ secrets.HTTP_PROXY }}
+          HTTPS_PROXY=${{ secrets.HTTPS_PROXY }}
+
+          # 爬虫配置
+          REQUESTS_PER_HOUR=400
+          DAILY_TWEET_COUNT=100
+          DATA_DIR=crawler_data
+          EOF
+
+      # 6. 运行爬虫
+      - name: 🕷️ Run crawler
+        run: |
+          TWEET_COUNT="${{ github.event.inputs.tweet_count || '500' }}"
+          FORCE_FLAG=""
+
+          if [ "${{ github.event.inputs.force_summary }}" = "true" ]; then
+            FORCE_FLAG="--force"
+          fi
+
+          python run_crawler.py --count $TWEET_COUNT --user-summaries $FORCE_FLAG
+        continue-on-error: true
+
+      # 7. 生成运行报告
+      - name: 📊 Generate report
+        if: always()
+        run: |
+          echo "## 🤖 爬虫运行报告" > report.md
+          echo "" >> report.md
+          echo "- 🕐 运行时间: $(date +'%Y-%m-%d %H:%M:%S')" >> report.md
+          echo "- 🎯 目标数量: ${{ github.event.inputs.tweet_count || '500' }} 条" >> report.md
+          echo "" >> report.md
+
+          # 统计生成的文件
+          if [ -d "crawler_data/users_daily" ]; then
+            USER_COUNT=$(ls -1 crawler_data/users_daily/*.json 2>/dev/null | wc -l)
+            echo "- 👥 用户数据文件: $USER_COUNT 个" >> report.md
+          fi
+
+          if [ -d "crawler_data/user_summaries" ]; then
+            SUMMARY_COUNT=$(ls -1 crawler_data/user_summaries/*.md 2>/dev/null | wc -l)
+            echo "- 📝 总结文件: $SUMMARY_COUNT 个" >> report.md
+          fi
+
+          cat report.md
+
+      # 8. 提交数据到仓库
+      - name: 💾 Commit and push data
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          # 添加数据文件
+          git add crawler_data/
+          git add report.md
+
+          # 检查是否有变更
+          if git diff --staged --quiet; then
+            echo "没有新数据需要提交"
+          else
+            git commit -m "🤖 自动更新: $(date +'%Y-%m-%d') 爬虫数据"
+            git push
+          fi
+
+      # 9. 上传运行报告为 Artifact (保留30天)
+      - name: 📤 Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: crawler-report-${{ github.run_number }}
+          path: |
+            report.md
+            crawler_data/daily_posts/*.json
+          retention-days: 30
+
+      # 10. 失败通知 (多种方案可选)
+
+      # 方案 1: GitHub Issue (自动创建 Issue，无需额外配置)
+      - name: 🐛 Create Issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🚨 Crawler Failed - ${new Date().toISOString().split('T')[0]}`,
+              body: `## 运行失败报告
+
+              **时间**: ${new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}
+              **工作流**: ${context.workflow}
+
+              🔗 [查看运行日志](${context.payload.repository.html_url}/actions/runs/${context.runId})
+
+              ### 可能原因
+              - [ ] X 认证 token 过期
+              - [ ] OpenRouter API 配额不足
+              - [ ] 网络连接问题
+
+              ---
+              *此 Issue 由 GitHub Actions 自动创建*`,
+              labels: ['bot', 'crawler-failure']
+            });
+
+      # 方案 2: Telegram 通知 (推荐)
+      - name: 📱 Send Telegram notification
+        if: failure() && secrets.TELEGRAM_BOT_TOKEN != ''
+        run: |
+          MESSAGE="❌ *X Crawler 运行失败*
+
+          📅 时间: $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
+          🔗 [查看详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"chat_id\": \"${{ secrets.TELEGRAM_CHAT_ID }}\",
+              \"text\": \"${MESSAGE}\",
+              \"parse_mode\": \"Markdown\"
+            }"
+
+      # 方案 3: 企业微信/钉钉/Bark (根据需要选择)
+      - name: 📢 Send WeChat Work notification
+        if: failure() && secrets.WECHAT_WEBHOOK != ''
+        run: |
+          curl -s -X POST "${{ secrets.WECHAT_WEBHOOK }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "msgtype": "markdown",
+              "markdown": {
+                "content": "## 🚨 X Crawler 运行失败\n\n>时间: '"$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')"'\n\n[查看详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+              }
+            }'

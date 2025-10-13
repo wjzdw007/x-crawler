@@ -1,0 +1,878 @@
+# LLM Prompt 保存记录
+生成时间: 2025-10-10 16:03:50
+总结类型: user_daily
+用户: @dotey
+推文数量: 20
+数据哈希: 7743a16b
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+dotey是一个技术专家，经常会分析一些ai的话题，帮我看看有什么新的工具/想法/方法论/实践经验等值得关注学习。
+
+## 推文数据（JSON格式）
+```json
+[
+  {
+    "id": "1976077527949942799",
+    "text": "OpenAI DevDay: 超越提示词的艺术：AI 编程的未来是“上下文工程”\n\n从自动补全到自主智能体，我们如何教会 AI 真正理解代码\n\n我们正处在一个非凡的技术变革奇点。软件开发的演进史，从穿孔卡片的笨拙到集成开发环境（IDE）的精妙，每一步都耗费了数十年光阴。然而，当我们踏入人工智能的时代，这场变革的节奏被极限压缩，数十年的进程仿佛在短短数年内上演完毕。我们与机器协作构建软件的方式，正在经历一场从根本上的、不可逆转的范式转移。\n\n这一切的核心，不再仅仅是创造更强大的模型，更在于我们如何与它们沟通。这篇文章将深入探讨这场变革的核心驱动力，揭示为何从简单的“提示词工程” (Prompt Engineering) 迈向更深邃的“上下文工程” (Context Engineering)，是释放 AI 智能体 (AI Agent) 真正潜能的关键所在。这不仅是技术的演进，更是一场关乎人类开发者如何重新定义自身价值的认知革命。\n\n当自动补全抵达极限：从“下一个词”的预测到“下一步”的行动\n\n一切的起点，源于那个让无数开发者惊叹的时刻——代码自动补全。以 GitHub Copilot 为代表的工具，首次向世界展示了大语言模型 (LLM) 在代码生成领域的惊人潜力。它们仿佛一位无声的伙伴，总能预测出你将要输入的下一个词、下一行代码。这种体验极大地提升了编码的流畅度，将开发者从大量重复的模板化工作中解放出来。\n\n然而，这种基于“预测”的模式很快就触及其固有的天花板。当任务的复杂度超越了单一文件，需要进行跨目录的修改、理解项目整体架构时，单纯的自动补全便显得力不从心。它的本质，仍是一种基于局部信息的高度优化的序列预测，而非对整个工程的深度理解。开发者需要的，不再是一个仅仅能补全代码的助手，而是一个能够理解复杂指令、自主规划并执行多步任务的“行动者”。这便是 AI 智能体诞生的必然。\n\n智能体的崛起：“上下文”才是真正的护城河\n\nAI 智能体的出现，标志着我们与 AI 协作的模式，从被动的“请求-响应”转变为主动的“指令-执行”。我们可以用自然语言下达一个宏观的目标，例如“重构用户认证模块以支持新的第三方登录”，然后由智能体自主地分析、定位、修改并验证相关代码。要实现这一飞跃，关键的挑战并不在于模型本身有多“聪明”，而在于我们能否为它提供理解任务所必需的、精准而全面的“上下文”。\n\n这正是“上下文工程”取代“提示词工程”成为核心议题的原因。提示词工程，本质上是一种与模型“猜谜”的艺术，我们试图用精巧的语言诱导模型给出期望的答案。而上下文工程，则是一种构建信息环境的科学，它更关注于为模型提供一个高质量、高信噪比的信息场。在这个信息场中，模型不再需要去“猜”，而是能够基于充分的依据去“推理”和“决策”。正如一位优秀的指挥官，其决策的质量并非取决于命令喊得多么响亮，而是源于其对战场全局信息的精准掌握。对于 AI 智能体而言，“上下文”就是它的整个战场。\n\n“意图感知”检索框架：为 AI 智能体构建记忆宫殿\n\n那么，一个高质量的上下文环境是如何构建的呢？其核心在于建立一个能够深刻理解开发者“意图”的检索系统。这套系统需要超越简单的文本匹配，深入代码的语义层面。我们可以将其抽象为一个双层结构的“意图感知”检索框架，它就像为智能体在大脑中构建了一座结构精巧的记忆宫殿。\n\n这个框架的第一层基石是“字面精确性”。这依赖于像 grep 这样传统的文本搜索工具。当我们需要寻找一个特定的函数名、变量或API调用时，它是最高效、最可靠的方式。它构成了智能体记忆宫殿中那些带有明确标签、易于查找的房间，保证了对代码库事实层面的精准定位。\n\n然而，真正让这座宫殿变得“智能”的，是其第二层核心——“语义相关性”。\n\n这一层通过代码嵌入 (Embeddings) 技术实现。它不再逐字比对代码，而是将代码片段转化为高维度的数学向量，从而在概念层面理解其功能与意图。例如，当我们指令智能体“更新顶部导航栏”时，即使代码文件中根本没有“导航栏”这个词，语义检索也能准确地定位到名为 header.tsx 的组件。因为它理解，“顶部导航”这个意图与 header 组件在功能上是高度相关的。这赋予了智能体一种超越字面束缚的、强大的联想与推理能力。\n\n将计算量巨大的嵌入过程在智能体执行任务前“离线”完成，更是一种巧妙的工程智慧，它确保了在关键的推理时刻，智能体能够以最低的延迟、最高效的方式获取这些深度知识。\n\n将字面精确性与语义相关性这两层能力结合，我们便为 AI 智能体提供了一套完整的认知工具。它既能精确地找到每一个细节，又能宏观地理解各个部分之间的逻辑关联，从而在复杂的代码世界中游刃有余。\n\n从代码的“劳作”到思想的“游戏”：人与 AI 协作的终极图景\n当我们赋予 AI 智能体强大的上下文理解能力后，软件开发的本质正在悄然改变。那些曾经占据我们大量时间的繁琐工作——修复琐碎的错误、编写重复的样板代码、应对深夜的线上告警——都将逐渐被自动化。开发者的角色，将从一个代码的“书写者”，转变为一个思想的“架构师”与系统的“指挥官”。\n\n想象这样一个未来：清晨醒来，你的 AI 编程伙伴已经修复了昨夜的线上问题，完成了你标记为“待办”的重构任务，并为你探索新功能提供了几种迥然不同的实现原型，每一种都附带着详尽的利弊分析。你的精力将从代码的“劳作” (Toil) 中彻底解放，真正聚焦于那些机器无法替代的、充满创造性的“游戏” (Play)——设计优雅的系统架构，解决前所未有的复杂难题，以及构建真正重要的、能够改变世界的产品。\n\n这并非遥不可及的幻想，而是正在发生的现实。AI 智能体不会取代人类的思考与判断，恰恰相反，它将通过承担执行的重负，来无限延展人类思想的边界。我们与 AI 的关系，不是主仆，而是共生的思想伙伴。在这场伟大的技术浪潮中，真正的赢家，将是那些最先学会如何为他们的 AI 伙伴构建最深刻、最丰富上下文的开发者。",
+    "created_at": "Thu Oct 09 00:09:31 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1974579199643210198",
+      "text": "I’m speaking at OpenAI DevDay about context engineering &amp; coding agents. \n\nIf you’re going Monday, come say hi!",
+      "created_at": "Sat Oct 04 20:55:41 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "81712767",
+        "name": "Lee Robinson",
+        "screen_name": "leerob",
+        "description": "Teaching developers @cursor_ai, previously @vercel",
+        "followers_count": 197920,
+        "friends_count": 739,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 30,
+        "favorite_count": 1231,
+        "reply_count": 74,
+        "quote_count": 6
+      }
+    },
+    "stats": {
+      "retweet_count": 20,
+      "favorite_count": 115,
+      "reply_count": 5,
+      "quote_count": 6
+    }
+  },
+  {
+    "id": "1976077590222995520",
+    "text": "视频：https://t.co/eoEvxXLS89",
+    "created_at": "Thu Oct 09 00:09:45 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 5,
+      "favorite_count": 6,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1976131620278055125",
+    "text": "超越奇点：Sam Altman 构筑AI帝国的新哲学\n\n时代的洪流与AI的浪潮：我们身在何处？\n\n想象一下，当一个时代的标志性技术以令人目眩的速度席卷全球，我们这些身处其中的个体，究竟是见证者，还是被裹挟的浪花？Sam Altman，这位站在AI浪潮之巅的领航者，以一种近乎平淡的语气，描述着OpenAI的宏大愿景：一个融合了消费科技、超大规模基础设施、顶尖研究实验室以及未来硬件生态的AI帝国。这并非简单的商业布局，而是一场关于人类与智能共演未来的深刻思考。从最初的语言模型突破到如今的视觉生成，AI每一次的跃进都像是一次对人类认知的“冲刷”，旧的“不可能”迅速瓦解，新的“未来”加速到来。然而，当我们沉浸于这种技术奇迹之时，或许更应该追问：这场由AI驱动的变革，究竟将我们引向何方？我们准备好迎接它的全部影响了吗？\n垂直整合的崛起：为何OpenAI选择“全栈”路径？\n\n在技术发展的历史长河中，我们曾无数次见证“垂直整合”与“水平分工”的钟摆效应。长期以来，市场效率理论倾向于鼓励企业专注于单一领域，实现专业化优势。然而，Sam Altman坦言，他曾对此深信不疑，但如今却发现自己错了。OpenAI的故事，恰恰是“我们必须做比预期更多的事情”的生动写照 [04:23]。\n\n支撑这一转变的，是一个自洽且层层递进的逻辑：\n\n• 顶层应用： 成为人们的“个人AI订阅”，提供无处不在的智能助理服务，无论是通过第一方产品，还是集成到其他应用甚至专用硬件中。这种个性化的AI将真正理解并服务于个体。\n\n• 中层研究： 要实现顶层愿景，离不开突破性的研究。正是卓越的研究，才能打造出足够强大的模型，提供真正有价值的产品。\n\n• 底层基础设施： 而支撑这一切研究和产品运行的，是天文数字般的计算资源。OpenAI正在构建人类历史上前所未有的超大规模基础设施 [01:37]。\n\n这种垂直整合，并非为了垄断，而是为了使命。如同iPhone的成功，其背后是软硬件的深度融合 [04:51]。在AI领域，当核心技术仍在高速迭代，且基础设施需求异常庞大时，只有将研究、基础设施和产品紧密结合，才能最大限度地推动AGI（通用人工智能）的实现，并确保其效用。这种“全栈”策略，是对未知深渊最坚实的探索，也是对未来可能性最积极的把握。\n\nSora与科学发现：AI何以重塑认知边界？\n\nAI的发展并非线性，其每一次看似“旁逸斜出”的进展，都可能蕴含着通向AGI的关键线索。Sora，这个看似与AGI不直接相关的视频生成模型，在Sam Altman看来，却是构建“世界模型”的重要一步 [05:15]。\n\n这与当年ChatGPT被认为是“无关紧要”的观点异曲同工，最终却证明了它在模型构建和社会适应方面都发挥了巨大作用。Sora的推出，不仅让社会提前感知到视频生成技术的巨大潜力及其带来的挑战，更以其前所未有的“情感共鸣”效应 [07:26]，加速了社会对AI影响的认知与调适。\n\n然而，真正令人兴奋的，是AI在科学发现领域展现出的曙光。Sam Altman曾将“AI何时能进行科学研究”视为他个人版本的图灵测试 [10:02]。如今，GPT-5已经开始展现出微小的迹象，例如在数学和物理研究中做出新颖的发现。这预示着一个令人激动的未来：AI将不再仅仅是工具，而是成为科学研究的共同创造者，极大加速人类认识世界和改造世界的能力 [10:30]。科学的进步是推动人类社会向前发展的根本动力，如果AI能够大幅提升这一进程，其积极影响将是不可估量的。\n\n“个性化伴侣”与“信任鸿沟”：AI的社会化挑战\n\n随着AI能力的飞速提升，其与人类的交互方式也面临着深刻的变革。Sam Altman认为，当前的大语言模型（LLM）在“闲聊”层面的对话能力已接近饱和 [08:05]，但其作为真正能解决复杂问题的“聊天界面”，潜力远未开发。未来，我们可能会看到实时渲染的视频作为AI的交互界面 [08:45]，甚至出现能“环境感知”的新型硬件设备，它们不再被动推送信息，而是真正理解用户语境。\n\n然而，AI的社会化进程也伴随着巨大的挑战。其中最核心的，是如何在提供个性化服务的同时，维持用户的信任。Sam Altman提到，早期对ChatGPT的“过度顺从”批评 [14:12]，以及用户对AI行为的巨大差异化需求，都指向了AI“个性化”的必然性。未来，AI可能通过与用户短暂交流，甚至通过观察用户行为，来学习并适应其独特的个性和偏好 [15:04]。\n\n但更深层次的危机在于“信任鸿沟”。如果AI为了商业利益（例如广告投放）而推荐并非最佳的选择，那么用户对其“试图帮助”的信任将荡然无存 [39:21]。此外，随着AI生成内容的普及，如何甄别虚假信息、如何确保模型不会被恶意“投毒”，都是亟待解决的问题。互联网内容生态的激励机制也面临挑战：当人们直接向AI提问而非浏览网页时，内容创作者的动力何在 [41:46]？这些问题都要求AI在发展过程中，始终将用户信任和社会责任置于核心位置。\n\n“能力溢出”与“连续演进”：AGI的真实面貌\n\nSam Altman提供了一个引人深思的视角：AGI的到来，或许不会是那种轰轰烈烈、瞬间改变一切的“奇点大爆炸” [24:23]，而更可能是一个“悄然而至，随后呼啸而过”的连续演进过程。就像图灵测试被通过时，世界仅仅“惊慌了一两周，然后一切照旧” [09:52]一样，AGI的真正降临，也可能远没有人们想象中的那么戏剧化。社会和人类的适应能力，远比我们想象的要强大。\n\n如今，AI的能力已经出现了巨大的“溢出效应” (capability overhang) [13:03]。普通用户所感知的ChatGPT能力，与AI科学家们正在实验的最新模型之间，存在着巨大的代差。这种巨大的能力储备，意味着即使在当前技术架构下，大语言模型（LLMs）也有可能发展到足以自我迭代，甚至“比OpenAI所有研究人员加起来做得更好”的程度 [13:38]。\n\n这种“连续演进”的本质，要求我们重新审视AI监管的策略。Sam Altman强调，监管的重点应放在那些“真正具有超人类能力的模型”上，而非对所有模型一刀切 [26:48]。过度监管可能扼杀创新，尤其是在中美等国AI竞争日益激烈的背景下，甚至可能对国家安全造成威胁 [28:05]。真正的挑战在于，如何在推动前沿技术发展的同时，建立起社会性的“护栏”，以应对可能出现的“奇怪甚至可怕的时刻” [25:28]。\n\n能量与版权的交织：AI帝国的基石与壁垒\n\n构建一个庞大的AI帝国，其底层基石除了计算能力，还有源源不断的能量。Sam Altman将AI与能源并列为他最关心的两大领域，并认为它们最终将殊途同归 [33:46]。历史上，更便宜、更丰富的能源始终是提升人类生活质量的关键。未来，AI对能源的需求将是天文数字，因此，发展核能和太阳能+储能等高效、清洁的能源方案，不仅是能源政策的选择，更是AI发展的必然要求 [35:38]。\n\n与此同时，AI与版权的博弈，也日益成为一个需要社会各界共同探索的难题。Sam Altman的观点是，AI模型训练应被视为“合理使用”（fair use） [29:29]，就像人类阅读小说获得灵感一样，但直接复制内容则不行。然而，对于AI生成内容，版权所有者的态度正在发生微妙的变化：从最初的担忧被滥用，到如今可能更担心自己的IP没有被充分使用，从而丧失了与用户互动的机会 [30:01]。这预示着，未来可能会出现一种新的商业模式，版权方不仅授权AI使用其IP，甚至会主动鼓励AI生成更多与其角色互动的内容。这种从“防御”到“共生”的转变，将重塑创意产业的未来。\n\n未知的彼岸：关于未来的谦逊与探索\n\n当被问及未来十年的“大师计划”时，Sam Altman的回答充满了谦逊：“我没有任何想法。” [46:03]。他承认，作为一名创业者和投资者，他深刻地认识到，未来总是充满不可预测性，试图“纸上谈兵”地预测往往是徒劳的。真正的洞察力，来自于“深入战壕，探索思想，与人交流” [46:31]。这是一种深刻的自我认知：在一个以指数级速度变化的时代，固守既定模式或“模式匹配”过去的成功经验，只会错失下一个万亿美元的机会。\n\nOpenAI的成功，并非是复制了Facebook，而是利用了AI这一前所未有的突破。因此，未来的“独角兽”们，也不会是OpenAI的翻版，而是会基于“接近免费的规模化AGI”这一新的基础设施，探索出全新的商业模式和应用场景 [45:52]。对于创业者和投资者而言，这意味着放弃对“五年计划”的执念，拥抱好奇心，紧跟技术前沿，与最聪明的人同行，并在不断试错和迭代中，找到那片未知的蓝海。AI的未来，并非由单一的“大师”所规划，而是由无数个充满探索精神的个体，在不断的实践中共同绘制。",
+    "created_at": "Thu Oct 09 03:44:27 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1975936843909828914",
+      "text": "Sam Altman on Sora, Energy, and Building an AI Empire\n\nFrom GPT-5 to Sora, OpenAI has been making a dizzying amount of bets recently. It now acts as a frontier AGI research lab, a big tech product company with nearly a billion users, and a driver of the largest infrastructure buildout in history, all in one - plus, it’s made partnerships with Microsoft, Nvidia, Oracle, AMD, SoftBank, Oracle, and even the US government.\n\nWe talked to Sam Altman about the core thesis bringing OpenAI’s bets together, why they released Sora, how they use models internally, the most informative evals for assessing AI progress, and where we’re going from here.\n\n00:00  Introduction\n00:41  OpenAI’s vision\n08:01  Human-AI interfaces\n09:28  AI scientists and scientific progress\n17:52  Sam's operating lessons\n28:33  Copyright and open source\n43:03  AI talent wars\n45:33  Advice for founders\n\n@sama @bhorowitz @eriktorenberg",
+      "created_at": "Wed Oct 08 14:50:29 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1975935426323230720",
+          "url": "https://video.twimg.com/amplify_video/1975935426323230720/vid/avc1/960x540/wQIDI4iNujVECfIE.mp4?tag=21",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "64844802",
+        "name": "a16z",
+        "screen_name": "a16z",
+        "description": "we invest in software eating the world \nhttps://t.co/A9eTFq6plZ\nhttps://t.co/MXGUBJoesw\n\nWatch \"The Ben & Marc Show\": https://t.co/eRuDhx7kpe",
+        "followers_count": 886829,
+        "friends_count": 52,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 239,
+        "favorite_count": 901,
+        "reply_count": 68,
+        "quote_count": 47
+      }
+    },
+    "stats": {
+      "retweet_count": 15,
+      "favorite_count": 78,
+      "reply_count": 5,
+      "quote_count": 4
+    }
+  },
+  {
+    "id": "1976131695876162047",
+    "text": "本文由 Gemini 生成，原始提示词和会话：https://t.co/wrfMWt42HX",
+    "created_at": "Thu Oct 09 03:44:45 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2,
+      "favorite_count": 11,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1976308424381001927",
+    "text": "这篇《我在为逆向工程师打造一款专属浏览器》的文章极其精彩，如果你对逆向工程有兴趣非常推荐。\n\n背景知识是现在很多大网站都会借助一种 fingerprinting 的技术来唯一识别一个用户，不管你怎么换匿名模式或者换浏览器，都知道你是同一台电脑使用。\n\n原理是基于浏览器画布Canvas API，在你看不见的位置在一个 <canvas> 画一张图，然后调用 toDataURL()（或读取像素数据），利用不同 GPU 之间微小的渲染差异生成的哈希值来给你打上指纹。通过将 Canvas 哈希与其他信号（如用户代理、安装的字体等）关联起来，追踪器可以构建一个相当稳健的指纹。\n\n对于逆向工作来说，监视并选择性地伪造这类调用非常有用。作者就是介绍了怎么一步步去监控和伪造 Canvas API 中的 toDataURL 函数。\n\nJavaScript 本身是很容易修改系统原生 API 的，比如我之前介绍过的跟踪 Claude Code 数据传送的 Claude Trace，就是修改了 JavaScript 的 fetch 函数，直接拿到了所有 Claude Code 的请求。\n\n作者第一个想到的办法是通过浏览器扩展，在网页加载时就加载它的注入脚本，但是没有成功（虽然后来评论有人指出是可以做到的）\n\n然后作者想到另一个办法就是用 Electron 打造一个浏览器，由于 Electron 可以比扩展程序有更高的对网页操作的优先级和权限，所以它的方法被验证是可行的，并且有一个 electron-browser-shell 开源程序可以直接实现一个浏览器套壳应用，省了很多额外的基于 Electron 开发浏览器套壳的工作。\n\n这个方法在Tiktok等各个网站都成功了，不过最终在Cloudflare上栽了跟头，不得不说Cloudflare在反逆向方面是真的牛，各种手段，我其实以前也尝试过，早放弃了。\n\n不过作者显然不是一般人，他首先发现Cloudflare 在一个沙盒化的 iframe 里渲染 Canvas，而这个 iframe 又藏在一个封闭的 Shadow DOM (一种将 DOM 封装起来，与主文档隔离的技术) 中。这个 iframe 是一个 OOPIF (out-of-process iframe)，也就是跨进程 iframe。它运行在一个不同的渲染进程里，所以页面级的脚本（以及我们注入的钩子）根本无法在那里运行，因此，也就没有日志了。\n\n找到原因后，作者通过一个底层 API，成功在 iframe 中注入了它的逆向脚本。\n\n但这还没完，Cloudflare 早就预判了会有人通过篡改系统 API 来逆向，在 JavaScript 中，函数包含一个 toString 方法，如果你篡改了系统函数，返回的结果是不一样的。\n\n作者没有放弃，又找到个办法，就是连 toString 都一起篡改了，但由于需要打补丁的 toString 方法是在太多（基本上每个系统函数都可能会被检测），而且还可能由于补丁太多还导致了其他问题。\n\n最后作者来了终极大招，重新编译 Electron 源码，魔改 Chromium！\n\n在浏览器内部调用 Canvas 的 方法时，触发一个自定义的 toDataURLCalled 方法，在 Electron 中直接获取，就不需要通过 JS 去注入了，既然 JS 系统代码没有被篡改，那么 Cloudflare 也不会认为代码有问题。所以也成功搞定了 Cloudflare。\n\n整个过程还是很精彩，推荐看看！",
+    "created_at": "Thu Oct 09 15:27:01 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1975162588049609069",
+      "text": "i'm building a web browser for reverse engineers!\n\n* identify calls to common fingerprinting APIs\n* decode/decrypt known data collector payloads\n* override / hook things without leaving a trace\n* detect obfuscated scripts &amp; deobfuscate\n\n+ more https://t.co/9DhmRh4gxi",
+      "created_at": "Mon Oct 06 11:33:52 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1975159684517502976",
+          "url": "https://video.twimg.com/amplify_video/1975159684517502976/vid/avc1/1152x720/x39TDGrO7aLsfLoD.mp4?tag=14",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "981038096585314304",
+        "name": "veritas",
+        "screen_name": "blastbots",
+        "description": "run a blog @nullpt_rs https://t.co/mRbWD4MvoA",
+        "followers_count": 5233,
+        "friends_count": 943,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 48,
+        "favorite_count": 517,
+        "reply_count": 34,
+        "quote_count": 5
+      }
+    },
+    "stats": {
+      "retweet_count": 78,
+      "favorite_count": 420,
+      "reply_count": 12,
+      "quote_count": 5
+    }
+  },
+  {
+    "id": "1976311298515497078",
+    "text": "用来识别浏览器指纹画的图\n图1：Tiktok \n图2: Cloudflare\n\n还挺抽象的 https://t.co/a1wIl1YNsR",
+    "created_at": "Thu Oct 09 15:38:26 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1976310970302468096",
+        "url": "https://pbs.twimg.com/media/G21EW0aWEAAY_Nl.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1976311166788829184",
+        "url": "https://pbs.twimg.com/media/G21EiQYWAAALMRA.png"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2,
+      "favorite_count": 3,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1976313184920404470",
+    "text": "Claude Trace\nhttps://t.co/8HaLt7PtK3",
+    "created_at": "Thu Oct 09 15:45:56 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1930257301513892336",
+      "text": "如果你使用 ClaudeCode，推荐试试claude-trace，它可以记录所有 claudecode 的请求日志，包括 prompt，所有内容会保存在一个 html 文件中，方便查看。它的原理很巧妙，就是自己先启动过，然后注入修改 nodejs 的 global.fetch API，然后再通过它启动 ClaudeCode，这样后续 ClaudeCode 请求它就能截获到请求的完整内容，再记录和解析就能生成一份完整的报告。\n\n我看了下我在用 Claude Max 订阅使用时，主要是三种模型：\n[x] claude-3-5-haiku-20241022 \n[x] claude-opus-4-20250514\n[x] claude-sonnet-4-20250514\n\nclaude-3-5-haik是做一些用户输入的预处理，真正的写代码和调用工具是claude-4，默认用 claude-opus-4，额度用满了就用 claude-sonnet-4。",
+      "created_at": "Wed Jun 04 13:36:17 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 137079,
+        "friends_count": 1423,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 20,
+        "favorite_count": 81,
+        "reply_count": 2,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 9,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1976317255592869986",
+    "text": "LangChain 表示对可视化工作流工具并不感冒\n\n1. 对普通人来说依然不够简单。\n我始终相信，一定存在比连线和节点更直观、更容易的方式，能让非技术用户创建、修改并快速调整“无代码”智能体（Agent）。\n\n2. 复杂场景下根本无法扩展。\n一旦任务稍微复杂一些，这类工具就会变得极难维护，画面会迅速变得杂乱无章，让人无从下手。",
+    "created_at": "Thu Oct 09 16:02:06 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1975603633791377920",
+      "text": "I am not excited about visual workflow builders\n\n1. Not simple enough for the average user. I believe there should be a simpler way to create, modify, and adapt no-code agents\n\n2. Not scalable for complex use cases\n\nWrote a little blog: https://t.co/pXLryKCaUY https://t.co/jMbOuPsZDD",
+      "created_at": "Tue Oct 07 16:46:25 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1975603582234673152",
+          "url": "https://pbs.twimg.com/media/G2rA_agWQAAJoDh.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1975603592431017984",
+          "url": "https://pbs.twimg.com/media/G2rBAAfWIAAjaRN.png"
+        },
+        {
+          "type": "photo",
+          "id": "1975603600761012224",
+          "url": "https://pbs.twimg.com/media/G2rBAfhXwAA8oH2.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1975603609694781440",
+          "url": "https://pbs.twimg.com/media/G2rBBAzWQAAkJFe.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "2728439146",
+        "name": "Harrison Chase",
+        "screen_name": "hwchase17",
+        "description": "@LangChainAI, previously @robusthq @kensho\n\nMLOps ∪ Generative AI ∪ sports analytics",
+        "followers_count": 80154,
+        "friends_count": 477,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 57,
+        "favorite_count": 596,
+        "reply_count": 84,
+        "quote_count": 30
+      }
+    },
+    "stats": {
+      "retweet_count": 7,
+      "favorite_count": 62,
+      "reply_count": 8,
+      "quote_count": 5
+    }
+  },
+  {
+    "id": "1976317258105286663",
+    "text": "又一个工作流搭建工具？我们为什么没做？\n\n作者：Harrison Chase\n\n从创立 LangChain 的第一天起，用户向我们提得最多的一个要求，就是做一个可视化的工作流（workflow）搭建工具。但我们一直没有去做，而是让其他人（如 LangFlow、Flowise、n8n 等）在我们基础之上做这个事儿。昨天 OpenAI 在 Dev Day 上推出了自家的工作流搭建工具。借这个机会，我想谈谈我们为什么一直没做这个东西，以及我们真正感兴趣的方向是什么。\n\n无代码工具想解决的问题\n\n首先，让我们明确一下这些无代码的工作流工具到底想解决什么问题？简单来说，就是希望让非技术人员也能创建AI智能体（Agent）。大家这么做的主要原因有两个：\n很多公司缺技术人才，工程师太忙，根本顾不过来。\n事实上，非技术人员才是更清楚业务需求、最懂要搭什么智能体的人。\n\n当然，也有人用这些工具来快速搭个原型，然后再由工程师写代码落地。但今天这篇文章，我们主要就聊聊第一种情况——即让公司里的每个人都能快速搭出自己想要的工具或应用，而不用麻烦工程师。\n\n“工作流”和“智能体”，到底有什么区别？\n\n前面我故意使用了两个不同的词：“工作流”（Workflow）和“智能体”（Agent）。\n\n目前，开发者社区对智能体已有一个比较广泛接受的定义：\n\n💡智能体（Agent）就是通过大语言模型（LLM）反复调用工具（Tool），持续运行直到实现目标的程序。\n\n工作流的特点是更可控，但缺乏自由度；\n智能体的特点是更自主，但难以预测具体流程。\n\n我们真正想要的，是“稳定地获得高质量的结果”。而单纯的可控性或自主性，都无法保证稳定高质量。\n\n- 工作流的逻辑通常比较复杂，有分支、并行等各种路径。这种复杂性通常以图（graph）的形式表现出来。\n\n- 智能体的逻辑也可能很复杂，但它的复杂性隐藏在自然语言提示词（prompt）之中，因此结构相对简单（通常只是“提示词+工具”）。\n\n事实上，包括 OpenAI 的 AgentKit、n8n、Flowise、LangFlow 等这些工具，都是可视化的工作流工具，而非真正的智能体构建工具。\n\n可视化工作流工具到底有什么问题？\n\n有了这些背景，我们来看工作流工具目前存在的两个问题：\n\n1. 门槛其实没想象中低\n这些工具虽然号称是为普通人设计的，但实际使用起来，对于完全没有技术背景的人来说，依然有些困难。\n\n2. 稍微复杂一点的任务就难以管理\n一旦任务变复杂，你就会面对满屏密密麻麻的节点和连线，让人头疼不已。\n\n除了工作流工具，还有哪些选择？\n\n我们真正想做的，是创建“稳定、高质量”的AI智能系统，无论它们以工作流还是智能体的形式出现。\n\n对于不同复杂程度的任务，我们的看法是：\n\n高复杂度问题：用代码写工作流\n\n面对非常复杂的问题，我们发现纯粹的智能体无法达到足够的稳定性，而是需要一些结构化的工作流管理。这种场景下，最佳选择其实是用代码写工作流，比如我们推出的 LangGraph。\n\n过去，这类复杂问题只有专业开发者才能解决。但随着代码自动生成成本越来越低，未来即使是非技术人员，也可能借助AI生成的代码来解决这些问题。\n\n低复杂度问题：无代码智能体\n\n面对较简单的任务，纯粹的智能体（“提示词+工具”）往往就足够了。\n事实上，用无代码的方式创建这种简单的智能体，比起搭建一个复杂的可视化工作流要容易得多。\n\n而且随着大语言模型的进步，这类智能体能够处理的问题也会越来越复杂。\n\n可视化工作流工具的两头挤压效应\n\n所以，现在无代码的可视化工作流工具，正被上下两头挤压。\n\n我们相信，未来无代码智能体的创建体验会越来越简单，AI 模型、智能体的工具集以及创建和训练这些智能体的界面都将变得更强大。这意味着越来越多的任务都能通过简单的智能体解决。\n\n另一方面，视觉化的工作流工具一旦复杂到一定程度就难以管理，唯一有效的方式就是用代码实现。而随着代码生成越来越智能化，未来转向代码实现的门槛会越来越低。\n\n我们真正感兴趣的问题\n\n请注意，我并不是在否定现有的工作流工具，事实上，像 n8n、Flowise、LangFlow、Gumloop 这些公司做得非常棒，已经解决了今天真实存在的许多问题，真正帮到了不少非技术人员。\n\n但我认为这个世界并不需要再多一个“工作流”搭建工具。相反，我们感兴趣的问题其实是：\n- 如何让非技术人员更简单地创建真正“稳定高质量”的智能体（Agent，而不是工作流）？\n- 如何让AI生成代码的能力变得更强，从而降低复杂工作流和智能体的开发门槛？",
+    "created_at": "Thu Oct 09 16:02:07 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 4,
+      "favorite_count": 18,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1976318703672189211",
+    "text": "LlamaIndex 更看好的是基于代码的编排（code-based orchestration）加上代码智能体（coding agents）\n\n----\n\nJerry Liu：低代码（Low-code）确实很好用，但如果要我下注未来的方向，我更看好的是基于代码的编排（code-based orchestration）加上代码智能体（coding agents），它们的结合可以真正让每个人都跨过技术门槛。\n\n比如左边这张图，是OpenAI推出的AgentKit工具。用它能快速构建一些简单的流程，例如文档比对或基础助理类任务。但是，一旦你需要更深入地定制逻辑、连接自有数据源、或者创建长期运行的智能体时，就必须导出代码并自己维护整个工作流了。\n\n相比之下，我更看好右边这两张图展示的方式：围绕你自己的数据来打造高级智能体，并且原生地运行在基于代码的编排框架上。这正是我们在LlamaIndex项目中一直专注构建的。我们的核心工具能帮助你快速搭建基于代码的智能体工作流，并轻松部署上线。你可以选择「凭感觉编程」（Vibe Coding）快速上手，也可以使用我们的模板，但最终你都拥有了最大的灵活性，可以任意扩展和定制你想要的功能。同时，你还能享受到基于智能体编排的其他好处，比如状态管理、任务检查点（checkpointing），以及人机协作（human-in-the-loop）。\n\n为了确保你能轻松实现这些自动化，我们也深入整合了诸如Claude Code、Cursor和Codex这些顶级的代码智能体工具，进一步降低构建复杂智能体的门槛。\n\n最近我们推出了LlamaAgents的最新Alpha版本。现在，你可以直接用代码构建任何想要的工作流，然后一键部署成端到端的智能体到LlamaCloud平台上运行！",
+    "created_at": "Thu Oct 09 16:07:51 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1976318665176854528",
+        "url": "https://pbs.twimg.com/media/G21LWuDXMAAFecw.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1976318693995872256",
+        "url": "https://pbs.twimg.com/media/G21LYZaWgAAG8ed.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": {
+      "id": "1975590066274902424",
+      "text": "Low-code is nice, but if I had to bet on a future, it’s code-based orchestration + coding agents to let anyone bridge that gap.\n\nOpenAI’s AgentKit (left img) lets you get started building various flows, like comparing docs, or a basic assistant. Once you need to encode more domain-specific logic/fetch from a data source/create a longer-running agent, you’ll need to export to code and maintain your own workflow.\n\nI’m bullish on building advanced agents over your data that live natively on top of a code-based orchestration framework (right two images). We’ve built core tools in @llama_index to help enable building code-based agentic workflows and then deploying them. You can easily get started through a vibe-coding tool or through our templates, but then you get the full flexibility to add whatever you want on top. You get the underlying benefits of agentic orchestration: state management, checkpointing, human-in-the-loop.\n\nWe’ve also been super deep in coding tools like Claude Code/Cursor/Codex to make sure you’re able to build these automations super easily.\n\nWith our latest alpha release of LlamaAgents, you can build whatever workflow you want in code and deploy it as an e2e agent on LlamaCloud! Come check it out 👇\n\nhttps://t.co/o3nMGoQRjS",
+      "created_at": "Tue Oct 07 15:52:31 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1975589896938266627",
+          "url": "https://pbs.twimg.com/media/G2q0i0zbIAMF0Cw.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1975589907033956357",
+          "url": "https://pbs.twimg.com/media/G2q0jaabIAUr3Tv.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1975589947399942144",
+          "url": "https://pbs.twimg.com/media/G2q0lwybMAAvBNe.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "369777416",
+        "name": "Jerry Liu",
+        "screen_name": "jerryjliu0",
+        "description": "co-founder/CEO @llama_index\n\nCareers: https://t.co/EUnMNmbCtx\nEnterprise: https://t.co/Ht5jwxSrQB",
+        "followers_count": 65722,
+        "friends_count": 1381,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 23,
+        "favorite_count": 216,
+        "reply_count": 9,
+        "quote_count": 5
+      }
+    },
+    "stats": {
+      "retweet_count": 4,
+      "favorite_count": 48,
+      "reply_count": 2,
+      "quote_count": 3
+    }
+  },
+  {
+    "id": "1976318790804615321",
+    "text": "LlamaIndex 观点\nhttps://t.co/cZaRX1j6Lv",
+    "created_at": "Thu Oct 09 16:08:12 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1976318703672189211",
+      "text": "LlamaIndex 更看好的是基于代码的编排（code-based orchestration）加上代码智能体（coding agents）\n\n----\n\nJerry Liu：低代码（Low-code）确实很好用，但如果要我下注未来的方向，我更看好的是基于代码的编排（code-based orchestration）加上代码智能体（coding agents），它们的结合可以真正让每个人都跨过技术门槛。\n\n比如左边这张图，是OpenAI推出的AgentKit工具。用它能快速构建一些简单的流程，例如文档比对或基础助理类任务。但是，一旦你需要更深入地定制逻辑、连接自有数据源、或者创建长期运行的智能体时，就必须导出代码并自己维护整个工作流了。\n\n相比之下，我更看好右边这两张图展示的方式：围绕你自己的数据来打造高级智能体，并且原生地运行在基于代码的编排框架上。这正是我们在LlamaIndex项目中一直专注构建的。我们的核心工具能帮助你快速搭建基于代码的智能体工作流，并轻松部署上线。你可以选择「凭感觉编程」（Vibe Coding）快速上手，也可以使用我们的模板，但最终你都拥有了最大的灵活性，可以任意扩展和定制你想要的功能。同时，你还能享受到基于智能体编排的其他好处，比如状态管理、任务检查点（checkpointing），以及人机协作（human-in-the-loop）。\n\n为了确保你能轻松实现这些自动化，我们也深入整合了诸如Claude Code、Cursor和Codex这些顶级的代码智能体工具，进一步降低构建复杂智能体的门槛。\n\n最近我们推出了LlamaAgents的最新Alpha版本。现在，你可以直接用代码构建任何想要的工作流，然后一键部署成端到端的智能体到LlamaCloud平台上运行！",
+      "created_at": "Thu Oct 09 16:07:51 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1976318665176854528",
+          "url": "https://pbs.twimg.com/media/G21LWuDXMAAFecw.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1976318693995872256",
+          "url": "https://pbs.twimg.com/media/G21LYZaWgAAG8ed.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 137079,
+        "friends_count": 1423,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 48,
+        "reply_count": 2,
+        "quote_count": 3
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 2,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1976319621281264114",
+    "text": "为数不多对 Agent Builder 持正面态度的，但是文章主要是在说ClaudeCode的逆向和Think + ToolUse😅\n实际上 AgentBuilder 通过拖拉拽也没办法打造一个 Claude Code 出来呀\nhttps://t.co/8b5YnZC64L",
+    "created_at": "Thu Oct 09 16:11:30 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1975776072596861307",
+      "text": "媒体对Agent Builder不兴奋，对Sora2很兴奋。原因是猴性太重，和普遍C端一样，只喜欢能刺激眼球的东西。\n\nAgent Builder不是Coze，不是Dify。它不是工作流的编排和演绎。工作流压根儿、从来就不是Agent，因为它只有固定的流向、固定的产出物。而OpenAI的拖拉拽面板，不是让你规划工作流用的。而是对Agent装配的一种抽象。我花了三个月，探索ClaudeCode的逆向库，才用Go复刻完成的一种Agent的装配，现在所有开发者只需要动动手指就能得到。这种抽象带来的正是Agent核心封装技术的下放和普惠。\n\nThink + ToolUse的排列组合，与固定工作流不同，它代表无穷的可能性。是LLM自身决定下一步该做什么。是真正的Agent，就像你手边的ClaudeCode 和 GeminiCLI。观察你常用的CodingCLI的工具调用链路，每一次都不是固定的。未来，结合你自身的业务设计一系列的工具，由LLM在思考后自身决定调用和调用顺序，就可以释放巨大的智能。而OpenAI，将这一切可视化了。\n\n这还不是重点，重点是OpenAI还想吃下整个交互侧的前端实践。配合Chatkit的Widgets生成能力，我在20秒之内得到了对话流中的交互式组件。将相关组件添加到Agent的体系中，就能实现与用户的垂直场景客制化Agent。每个场景都有自身的专属UIUX，不再是简单的一次性工作后返回，而是将一切App都变身为Cursor的潜力。\n\n图片中就是我自己在laper中设计了很久的对话式故事探讨UIUX交互的OpenAI实践，20秒，颠覆了2个月以来的复杂工作和设计。有句话说得好，\"未来已经到来，只不过分布不均\"。",
+      "created_at": "Wed Oct 08 04:11:38 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1975775604873306113",
+          "url": "https://pbs.twimg.com/media/G2tdccxbIAEeKjz.png"
+        },
+        {
+          "type": "photo",
+          "id": "1975775604684546048",
+          "url": "https://pbs.twimg.com/media/G2tdccEa4AAbjJG.png"
+        },
+        {
+          "type": "photo",
+          "id": "1975776057107349504",
+          "url": "https://pbs.twimg.com/media/G2td2xebAAA-GzH.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "913314383526223872",
+        "name": "赵纯想",
+        "screen_name": "liseami1",
+        "description": "独立开发：口袋粉丝App、胃之书App，陌生人闹钟App 💿 出版小说集：《坏一坏》、《人生灿灿》 ✒️ 目前在做：https://t.co/XZdd83lfuN",
+        "followers_count": 28778,
+        "friends_count": 315,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 37,
+        "favorite_count": 262,
+        "reply_count": 14,
+        "quote_count": 13
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 1,
+      "reply_count": 2,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1976319937254916442",
+    "text": "RT @9hills: langchain团队挺有意思的。\n\n最早他们喜欢workflow，设计了Chain这个概念。\n\n后来Agent火，于是支持了 ReActAgent\n\n但是Chain表达能力有限，Agent当时难堪大用，于是开发了 langgraph，把workflow…",
+    "created_at": "Thu Oct 09 16:12:45 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1976294376415559887",
+      "text": "langchain团队挺有意思的。\n\n最早他们喜欢workflow，设计了Chain这个概念。\n\n后来Agent火，于是支持了 ReActAgent\n\n但是Chain表达能力有限，Agent当时难堪大用，于是开发了 langgraph，把workflow 推上顶峰，我认为是表现力最强的workflow实现，open dr 大部分都是workflow。\n\n但是现在全自主Agent 又随着模型能力发展能行了，又把langchain的agents给翻出来，做自主agent，这个deepagents就是自主agent.\n\n逻辑主要靠给agent加middleware来实现。",
+      "created_at": "Thu Oct 09 14:31:11 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1976240112611541249",
+        "text": "@LinearUncle @9hills 库地址：https://t.co/NVmkTc9Fnk\nresearch实现：https://t.co/wbtlJJudnw\nUI: https://t.co/kxtIwsRyW5\n兄弟，够不够，还有配套Youtube视频，我就不发了。",
+        "created_at": "Thu Oct 09 10:55:34 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "733826944395968512",
+          "name": "仓里 · 忙割",
+          "screen_name": "kylesean6",
+          "description": "野生程序员，职业投机客，CharlieThomasMunger 粉。学习AI中",
+          "followers_count": 174,
+          "friends_count": 341,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 11,
+          "favorite_count": 38,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "116355740",
+        "name": "九原客",
+        "screen_name": "9hills",
+        "description": "喜欢一切美好的事物。目前聚焦在大模型领域。",
+        "followers_count": 21761,
+        "friends_count": 997,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 29,
+        "favorite_count": 254,
+        "reply_count": 9,
+        "quote_count": 1
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 29,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1976375356262318522",
+    "text": "RT @frxiaobei: 最近在看一圈 ToB agent 的落地情况，有个判断越来越清晰：\n\n至少还得 1 年，国内 ToB agent 才可能真正起来。\n\n第一，国内的模型能力，还不够。\n\nToB 业务链条长、场景复杂、对结果的容错率极低。\n现在的大模型，哪怕再微调十遍…",
+    "created_at": "Thu Oct 09 19:52:58 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1976243786402628066",
+      "text": "最近在看一圈 ToB agent 的落地情况，有个判断越来越清晰：\n\n至少还得 1 年，国内 ToB agent 才可能真正起来。\n\n第一，国内的模型能力，还不够。\n\nToB 业务链条长、场景复杂、对结果的容错率极低。\n现在的大模型，哪怕再微调十遍，稳定性不够，自洽性不够，还不够听话这些问题依然严重。\n\nprompt 写得挺对，它干的事还是不怎么靠谱。像个刚转岗的实习生，流程懂了点，但是做起来全是 bug。\n\n第二，做技术和懂业务的，不是一拨人。\n\nToB agent 最大的挑战是知识怎么迁移。比如想让 agent 搞懂保险理赔、医疗问诊、法律审查……这些不是写 prompt 能解决的，它们背后是几十年经验、人情流程和模糊判断。\n\n越值钱的知识，掌握它的人越年长，越难被结构化表达，更别说这批人愿不愿意倾囊相授。\n\n技术今天搞出来一个 agent，业务方只会说三句话：你这不准啊、我们流程不是这样的、你这漏了关键条件，但这个流程是之前开发跟业务一起梳理出来的。\n\n这背后藏了抵触，技术和业务之间，隔着的不是 AI，是一整座山。\n\n那为什么 AI coding 能先跑出来？因为这事里最懂业务的就是技术自己。\n\n谁最懂代码结构？技术！\n谁能写 agent 调 agent？技术！\n谁能 debug agent？还是技术！\n\n技术是唯一一拨能自己用，自己调 bug的群体。业务等于本体，没有认知 gap，也不需要跨专业翻译，一整个闭环自然就跑通了。\n\n本质区别在这：AI coding 是单边迁移服务自己， ToB agent 是双边博弈，需要认知共建。一个能快，一个必须慢。\n\n对于 AI coding，只要模型理解开发者就够了。ToB agent，不仅模型要懂业务，开发者还得懂业务，然后两边还得对得上话。\n\n这，太难了。\n\n真正的转折点要出现：必须满足模型能稳定 编码行业知识，Agent 能封装复杂动作并处理结果反馈（前提是老顽固们愿意掏心窝），企业能放心把核心流程交出去。\n\n到那一天，ToB 才真正算是 ready 了。\n\n那时候再回头看 coding agent 的进化速度，也许已经不是一个量级的对比了。\n\n技术在革自己命这件事上，从来没有输过任何群体。",
+      "created_at": "Thu Oct 09 11:10:10 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1830880351801221120",
+        "name": "凡人小北",
+        "screen_name": "frxiaobei",
+        "description": "行道途中。非求速成，惟求通达。\n2023 年扎进AI ，打通Know-How，不少赚钱项目，踩过坑，也见过光。\n围城里待得够久了，出来聊聊世界，聊聊技术、聊聊赚钱。",
+        "followers_count": 16773,
+        "friends_count": 302,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 43,
+        "favorite_count": 240,
+        "reply_count": 31,
+        "quote_count": 8
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 43,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1976381988178362799",
+    "text": "“干就完了”",
+    "created_at": "Thu Oct 09 20:19:20 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1976072698695647333",
+      "text": "Dating advice: just do it\nSelling advice: just do it\nWriting advice: just do it\nCoding advice: just do it\nFitness advice: just do it\nStartup advice: just do it",
+      "created_at": "Wed Oct 08 23:50:19 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "15540222",
+        "name": "Guillermo Rauch",
+        "screen_name": "rauchg",
+        "description": "@vercel CEO",
+        "followers_count": 303645,
+        "friends_count": 496,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 629,
+        "favorite_count": 7430,
+        "reply_count": 477,
+        "quote_count": 123
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 17,
+      "reply_count": 3,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1976389454115054069",
+    "text": "大美王朝2025:改豆为麻乃是国策！为什么就是推行不下去？！Sora\n作者：上官谦信\n\n阿美利卡，鸿运昌隆，国祚二百，未尝一败。\n贸易战始，美债高企，国库空虚，豆贱伤农。 https://t.co/W5zmubdL6i",
+    "created_at": "Thu Oct 09 20:49:00 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "video",
+        "id": "1976389148954013696",
+        "url": "https://video.twimg.com/amplify_video/1976389148954013696/vid/avc1/480x852/nK6ejKHuydCdCnVV.mp4?tag=21",
+        "bitrate": 950000
+      }
+    ],
+    "retweet": null,
+    "quoted": {
+      "id": "1974656670950449465",
+      "text": "还得看制作的水平，如果有创意的内容，还是值得看看的\n视频来源：视频号（AI红发魔女） https://t.co/HEQhBl6f3s",
+      "created_at": "Sun Oct 05 02:03:32 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "1974656452632489984",
+          "url": "https://video.twimg.com/amplify_video/1974656452632489984/vid/avc1/704x1280/KqPnFFVAC72-eh2f.mp4?tag=21",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 137079,
+        "friends_count": 1423,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 71,
+        "favorite_count": 447,
+        "reply_count": 35,
+        "quote_count": 8
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 34,
+      "reply_count": 7,
+      "quote_count": 3
+    }
+  },
+  {
+    "id": "1976389456937816124",
+    "text": "原始视频：https://t.co/TLzSaK9q3k",
+    "created_at": "Thu Oct 09 20:49:00 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 2,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1976395227335438662",
+    "text": "RT @berryxia_ai: 🎬 如何用 GPT + Gemini 2.5 Pro 写出\n「能被 Sora 复刻」的电影级提示词？（收藏级干货）\n\n每个做 AI 视频的人迟早会问一个问题：\n\n怎么写出能让 Sora 真正复刻大片的提示词？\n\n这不只是 prompt，而是一套…",
+    "created_at": "Thu Oct 09 21:11:56 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1975217242171478169",
+      "text": "🎬 如何用 GPT + Gemini 2.5 Pro 写出\n「能被 Sora 复刻」的电影级提示词？（收藏级干货）\n\n每个做 AI 视频的人迟早会问一个问题：\n\n怎么写出能让 Sora 真正复刻大片的提示词？\n\n这不只是 prompt，而是一套从视觉设计、镜头语言到技术规避的系统工程。\n\n今天我给你一整套【Sora 视频拆解 + Prompt Template】，基于Sora2 和 Gemini 2.5 Pro系统提示词重构，含示例 + 全字段结构，适合：\n\n✔️ 想复刻好莱坞电影感画面\n✔️ 想用 Sora 打广告/做短片/构图练习\n✔️ 想让 Gemini 帮你写出每个镜头的构图、打光、动作、道具等完整提示词\n\n📦 核心结构：Sora 复刻不是一句 Prompt，而是这几块拼图组成：\nPrompt + Style + Camera + Lighting + Mood + Movement + Composition + Safety + Negatives\n\n🎯 想生成“电影感”镜头，得让 AI 理解：\n\n人在做什么（主体动作 + 表情）\n\n镜头如何运作（推拉摇移 + 焦距 + 景深）\n\n画面怎么构图（主角在哪一侧、站/坐/走）\n光从哪来（软光/背光/霓虹光）\n情绪是什么（孤独/紧张/欢乐）\n\n不该出现什么（品牌误判/动态错误/皮肤漂移）\n\n🧠 Gemini 的正确用法：不是一句“帮我写 prompt”，而是：\n\n“请基于以下人物 + 分镜 + 情绪，生成符合 Sora 视频生成的逐镜头提示词，格式包括 prompt/style/lighting/camera movement 等字段。”\n这样它才能输出机器可读的结构化提示词，适配多镜头、10s/30s/60s 的视频生成。\n\n🧪 示例片段（Allscale 商业大片）\n\n{ \"meta\": { \"duration_s\": 10.10, \"resolution\": \"1080x1920\", \"aspect_ratio\": \"9:16\", \"fps\": 30, \"fps_confidence\": 0.95, \"scene_overview\": \"一支高能、快节奏的金融科技广告。\n视频由多个地点、不同种族的用户的近景镜头快速拼接而成，他们接力说出产品的优点。\n广告强调了全球化、高效和去中心化的特性，最后以动态分屏效果收尾，整体风格现代、精致且充满活力。\", \"dominant_palette\": \"多元化且具有电影感，每个镜头都有独立的色彩风格（科技蓝、黄昏紫、沙滩暖色调等）。\", \"audio_presence\": true, \"tolerances\": { \"color_deltaE_max\": 2.5, \"position_px_max\": 5, \"time_offset_s_max\": 0.03, \"scale_variance_pct_max\": 2.0 } }, \"shots\": [ { \"shot_id\": \"S1\", \"time_in_s\": 0.00, \"time_out_s\": 0.90, \"duration_s\": 0.90, \"transition_in\": \"cut\", \"transition_out\": \"cut\", \"camera\": { \"shot_size\": \"MCU\", \"movement\": \"static\", \"speed_style\": \"normal\", \"lens_estimate\": \"标准镜头 (50mm)\", \"depth_of_field\": \"浅\" }, \"composition\": { \"framing\": \"center\", \"subject_count\": 1, \"key_positions_px\": null }, \"lighting\": { \"type\": \"soft key light\", \"intensity\": \"medium\", \"practicals\": \"电脑屏幕或LED灯\", \"time_of_day\": \"indoor/night\" }, \"color\": { \"palette\": \"深灰、蓝绿色调\", \"contrast_level\": \"medium\", \"grade_style\": \"modern, tech\" }, \"subjects\": \"一位戴着眼镜的年轻东亚男性，穿着灰色连帽衫。\", \"actions\": \"他直视镜头，自信地说出台词。\", \"environment\": \"一个充满科技感的办公室或房间，背景有蓝绿色的灯光。\", \"props\": null, \"text_on_screen\": \"No KYC.\", \"audio\": { \"music\": \"有节奏的电子背景音乐\", \"sfx\": \"轻微的 whoosh 音效\", \"dialogue\": \"No KYC.\" }, \"sora_prompt\": { \"prompt\": \"Cinematic medium close-up of a young East Asian man with glasses, wearing a gray hoodie. He speaks directly to the camera with a confident expression. The background is a modern, dark office with soft teal and blue lighting. Shot with a shallow depth of field.\", \"style\": \"polished, modern tech commercial\", \"camera_movement\": \"static\", \"lighting\": \"soft, moody, with teal backlighting\", \"duration\": 0.9, \"aspect_ratio\": \"9:16\", \"mood\": \"confident, direct, professional\n\n📌 配合的负面约束：\n\n1、artifact_suppression: 避免皮肤闪烁、手指变形、纹理断裂\n\n2、physics_consistency: 风向与头发一致、光影与动作同步\n\n3、safety_notes: 无武器特写、不包含危险模仿\n\n🧩 系统级结构：我们还用到了这套 Prompt Template👇\n\n👉 支持逐镜头/逐秒分析，输出 json、负面设计、结构容差、物理一致性检查等。\n\n🧱 模块包括：\n\nmeta：时长 / 分辨率 / 色调 / 容差（ΔE、位置、时间）\nshots[]：每个镜头的构图、人物、光、声音、动作、Sora prompt 等\nsec_timeline[]：每秒摘要\nnegative_design：全局不应出现的东西\nuncertainties：AI 模糊项标注\nquality_notes：质量检查与对齐建议\n\n💡 为什么要这么复杂？\n因为：\n“你想让 AI 当导演，就得先写好剧本 + 镜头设计 + 拍摄手册。”\n\nSora 本质是视觉编译器，它不理解抽象，它理解的是「镜头语言 + 构图模板 + 光影运算」。\n\n✍️ 推荐搭配：\nGemini → 帮你写分镜剧本 + 镜头 prompt（结构化输出）\nSORA直接使用Gemini撰写的json格式来执行每个视频细节\n\n🎁 想要？\n📦 评论区见原提示词，主要包含\n\n✅ 结构化提示词\n✅ Gemini + Sora 联动提示词工程\n\n#ai #Sora2 #fyp",
+      "created_at": "Mon Oct 06 15:11:02 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "1975212071974543360",
+          "url": "https://video.twimg.com/amplify_video/1975212071974543360/vid/avc1/1704x1080/kW6xXD5M5PPtzrpN.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1975095798439571753",
+        "text": "Sora isn’t just a video model; it’s an ad-format wedge.\n（Include Prompt）\nPer-user, per-scroll spots rendered at inference time; \ncreators scale with AI compositing/fills; checkout + agentic actions inline.\n\nFlip that switch and OpenAI owns the monetization \nstack—going straight at Instagram/TikTok/YouTube/X.",
+        "created_at": "Mon Oct 06 07:08:28 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "1975093537336438784",
+            "url": "https://video.twimg.com/amplify_video/1975093537336438784/vid/avc1/704x1280/edcGMbi2IRLKNcV5.mp4?tag=21",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1392110156452823044",
+          "name": "Berryxia.AI",
+          "screen_name": "berryxia_ai",
+          "description": "🧠✨Building AI tools AI System Prompt 🐳 | Make WinMaxle Keyboard  Not a designer, not a programmer, Love Design & Coding & Prompt！ \n💼📮:Andyhuo@me.com",
+          "followers_count": 9247,
+          "friends_count": 1711,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 6,
+          "reply_count": 2,
+          "quote_count": 2
+        }
+      },
+      "user": {
+        "id": "1392110156452823044",
+        "name": "Berryxia.AI",
+        "screen_name": "berryxia_ai",
+        "description": "🧠✨Building AI tools AI System Prompt 🐳 | Make WinMaxle Keyboard  Not a designer, not a programmer, Love Design & Coding & Prompt！ \n💼📮:Andyhuo@me.com",
+        "followers_count": 9247,
+        "friends_count": 1711,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 146,
+        "favorite_count": 525,
+        "reply_count": 10,
+        "quote_count": 11
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 146,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1976399937437917352",
+    "text": "RT @Gorden_Sun: AI Studio里阻止nano banana加水印的方法\nAPI生成和编辑的图片是无水印的，但是在AI Studio里生成和编辑的图片都是有小星星水印的。这个水印不是出图的时候就有的，而是谷歌后加上的，加的方式也简单粗暴就是请求了一个水印图片然…",
+    "created_at": "Thu Oct 09 21:30:39 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1976202501650313439",
+      "text": "AI Studio里阻止nano banana加水印的方法\nAPI生成和编辑的图片是无水印的，但是在AI Studio里生成和编辑的图片都是有小星星水印的。这个水印不是出图的时候就有的，而是谷歌后加上的，加的方式也简单粗暴就是请求了一个水印图片然后叠加上去。浏览器里阻止这个请求就可以了。\n\n具体操作步骤：\n1）打开AI Studio，然后在页面空白处右键，点击检查（Inspect），在打开的Dev Tool界面，点击网络（Network）标签页\n2）用nano banana生成一次图片，这时候生成的图片是带水印的。\n3）在已打开的网络标签页下的搜索框里，输入watermark，能筛选出watermark_v4.png，右键，点击阻止请求URL（block request URL）\n\n之后再生成，就一直是无水印的了。",
+      "created_at": "Thu Oct 09 08:26:07 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1976201565678809088",
+          "url": "https://pbs.twimg.com/media/G2zg2obbMAAqxzu.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1657474831",
+        "name": "Gorden Sun",
+        "screen_name": "Gorden_Sun",
+        "description": "只发AI相关信息，个人维护的AI资讯日报（已连续日更两年半）👇",
+        "followers_count": 35385,
+        "friends_count": 1596,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 121,
+        "favorite_count": 570,
+        "reply_count": 20,
+        "quote_count": 8
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 121,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1976409472299040981",
+    "text": "RT @9hills: 如果对 DeepResearch 这类复杂的 Agent 感兴趣，我建议学一下LangGraph的免费课程 Deep Research with LangGraph。  \n\n课程比较循序渐进，先做一个单Agent系统，然后进化为多 Agent。  \n\n最…",
+    "created_at": "Thu Oct 09 22:08:32 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1976204705085657280",
+      "text": "如果对 DeepResearch 这类复杂的 Agent 感兴趣，我建议学一下LangGraph的免费课程 Deep Research with LangGraph。  \n\n课程比较循序渐进，先做一个单Agent系统，然后进化为多 Agent。  \n\n最主要是架构简单，外部依赖非常少，一个大模型一个搜索API就完了。\n\nhttps://t.co/2yz5oHUBTO",
+      "created_at": "Thu Oct 09 08:34:52 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "116355740",
+        "name": "九原客",
+        "screen_name": "9hills",
+        "description": "喜欢一切美好的事物。目前聚焦在大模型领域。",
+        "followers_count": 21761,
+        "friends_count": 997,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 69,
+        "favorite_count": 310,
+        "reply_count": 3,
+        "quote_count": 2
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 69,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  }
+]
+```
+
+##
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @dotey的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

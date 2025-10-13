@@ -46,12 +46,13 @@ class DailyReportGenerator:
                 }
             }
     
-    def generate_daily_report(self, tweet_count: int = None) -> dict:
+    def generate_daily_report(self, tweet_count: int = None, max_pages: int = None) -> dict:
         """
         生成每日报告
         
         Args:
             tweet_count: 目标推文数量，默认使用配置文件设置
+            max_pages: 最大页数限制，可选安全上限
         
         Returns:
             包含所有结果的字典
@@ -63,11 +64,15 @@ class DailyReportGenerator:
         
         # 步骤1: 数据采集
         print(f"\n🔍 步骤1: 采集 {target_count} 条推文...")
-        tweets = self.crawler.crawl_daily_posts(
-            timeline_type="recommended", 
-            max_pages=10,  # 增加页数以确保能抓到足够数量
-            target_count=target_count
-        )
+        crawler_kwargs = {
+            "timeline_type": "recommended", 
+            "target_count": target_count
+        }
+        if max_pages is not None:
+            crawler_kwargs["max_pages"] = max_pages
+            print(f"⚠️ 设置最大页数限制: {max_pages} 页")
+        
+        tweets = self.crawler.crawl_daily_posts(**crawler_kwargs)
         
         if not tweets:
             print("❌ 数据采集失败，无法生成报告")
@@ -81,7 +86,8 @@ class DailyReportGenerator:
         
         # 步骤3: 生成智能总结
         print(f"\n🤖 步骤3: 生成智能总结...")
-        summary_result = self.summarizer.generate_summary(tweets, "daily")
+        # 对于混合推文的全局总结，不传递特定用户信息
+        summary_result = self.summarizer.generate_summary(tweets, "daily_mixed", user_info=None)
         
         # 步骤4: 生成多种格式的报告
         print(f"\n📄 步骤4: 生成完整报告...")

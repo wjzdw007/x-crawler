@@ -1,0 +1,332 @@
+# LLM Prompt 保存记录
+生成时间: 2025-09-15 00:02:42
+总结类型: user_daily
+用户: @dotey
+推文数量: 8
+数据哈希: 0ce54e52
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+分析技术专家的推文分享：
+
+## 用户信息
+用户名: @dotey
+
+## 推文数据（JSON格式）
+```json
+[
+  {
+    "id": "1967071879493202273",
+    "text": "RT @dongxi_nlp: 三个小时的播客听完了，太好了！\n\n2023年读到ReAct，被这篇paper正面影响了学术轨迹和工作内容，并开始关注 Shunyu 的工作， ReAct, SWE agent,  r-bench 每篇都是过一段时间就拿出来读一下，Shunyu是我…",
+    "created_at": "Sun Sep 14 03:44:17 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1967007088640410052",
+      "text": "三个小时的播客听完了，太好了！\n\n2023年读到ReAct，被这篇paper正面影响了学术轨迹和工作内容，并开始关注 Shunyu 的工作， ReAct, SWE agent,  r-bench 每篇都是过一段时间就拿出来读一下，Shunyu是我最喜欢的 Agent 研究员。\n\n2023年，用中文介绍了ReAct，也开启了我在推上做技术分享的开端，居然发现当时有跟 Shunyu 互动。\n\n这个播客，随手记了很多笔记，很有收获：\n\n1. 简单和通用的方法，更贴合 AI 的泛化能力特征。\n2. 验证方法的好坏，在于找到合适的任务和好的环境。\n3. 在research中，传统上在已知任务中创造新方法，而先想到方法然后找合适任务验证是比较挑战的。\n4. 新的交互方式以及新的环境，可能会带来 super app。\n5. Agent 的创业者应该问自己，创造的价值是什么。\n6. Agent/ LLM 解决问题的内在激励，是一个疑问，但也是机会。",
+      "created_at": "Sat Sep 13 23:26:49 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1967002016594468865",
+          "url": "https://pbs.twimg.com/media/G0wx6ZeXIAEjhdy.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1966825663102607399",
+        "text": "大家听这期有什么新的收获和感受？https://t.co/9kOJbzXqmb",
+        "created_at": "Sat Sep 13 11:25:54 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1231772373323411456",
+          "name": "張小珺 Xiaojùn",
+          "screen_name": "zhang_benita",
+          "description": "财经作者，写作中国商业深度报道，包括AI/科技巨头/风险投资/人物，也是播客《张小珺商业访谈录》主持人、制作人。Financial writer covering China business world, also the producer and host of \"Zhang Xiaojun Podcast.\"",
+          "followers_count": 17190,
+          "friends_count": 78,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 14,
+          "favorite_count": 110,
+          "reply_count": 15,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "1477948736156454913",
+        "name": "马东锡 NLP",
+        "screen_name": "dongxi_nlp",
+        "description": "Prev. PhD @Stockholm_Uni | Alumni @KTHuniversity @uppsalauni Sharing insights on AI, autonomous agents, and large language & reasoning models",
+        "followers_count": 14619,
+        "friends_count": 767,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 32,
+        "favorite_count": 209,
+        "reply_count": 4,
+        "quote_count": 0
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 32,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1967075859803820123",
+    "text": "@frxiaobei @wwwgoubuli @cryptonerdcn @eraera @TaNGSoFT &gt; Turn each into a step-based workflow that works reliably. Then give this workflow as a tool to your Agent.\n这不就是我 7 月份提的吗？\n&gt; Workflow 应该是 Agent 的一个可以被调用的工具。\nhttps://t.co/JG4y8Qnk1x",
+    "created_at": "Sun Sep 14 04:00:06 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1966895937126801410",
+      "text": "Easy (well not easy, but its doable).\n\nIdentify long-running tasks you want to solve:\n- Deep research\n- Run SQL + generate a report\n- Do market research before a call\n\nTurn each into a step-based workflow that works reliably. Then give this workflow as a tool to your Agent.",
+      "created_at": "Sat Sep 13 16:05:09 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "10350082",
+        "name": "Ashpreet Bedi",
+        "screen_name": "ashpreetbedi",
+        "description": "founder @agnoagi • prev @airbnb @facebook",
+        "followers_count": 13676,
+        "friends_count": 1236,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 7,
+        "reply_count": 1,
+        "quote_count": 2
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 7,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1967089500473225597",
+    "text": "RT @Yangyixxxx: 中推你不知道的Benchmark：\n\n1、在一条推文跑到10万展示前，如果单纯靠算法自然流，大部分情况下展示:点赞约在8-10，这就是优质内容的一个标志\n\n2、能快速破圈（1天至少20w）的推文，1-2个小时就要跑过万展示\n\n3、推特的流量展示区…",
+    "created_at": "Sun Sep 14 04:54:18 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1967085720260235654",
+      "text": "中推你不知道的Benchmark：\n\n1、在一条推文跑到10万展示前，如果单纯靠算法自然流，大部分情况下展示:点赞约在8-10，这就是优质内容的一个标志\n\n2、能快速破圈（1天至少20w）的推文，1-2个小时就要跑过万展示\n\n3、推特的流量展示区是20-30w，一般能过30w的很容易会到50w，过了50w区间的就容易到80-100w\n\n4、纯简中推文，展示量天花板大概是1500万\n\n5、如果你在推文中构建CTA，那么CTR大概是万2到千3不等\n\n6、最快涨粉的策略不是发内容，而是让自己成为工具人\n\n7、所有巨量爆发增长，都是由于一种模式互动带来的，绝不是靠内容营销\n\n8、正常来说，好的内容一天可以带1000+粉丝\n\n9、靠内容涨粉，一天大几千粉丝是比较极限的\n\n10、推文的生命周期往往只有1-3天",
+      "created_at": "Sun Sep 14 04:39:17 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3122661542",
+        "name": "Yangyi",
+        "screen_name": "Yangyixxxx",
+        "description": "人机协同内容架构师\n分享AI Agents实践，Vibe Marketing和AI产品增长见闻\n商机信息请点击订阅查看付费内容",
+        "followers_count": 106734,
+        "friends_count": 459,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 67,
+        "reply_count": 10,
+        "quote_count": 2
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 5,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1967098637986537874",
+    "text": "推荐阅读：《中美 Agent 创业者闭门：一线创业者的教训、抉择与机会》（链接见评论）\n\n2025 年，在 AI 业内，Agent 无疑是最热的话题。模型侧，新一代 Agent Model 的能力大幅提升，支持更强大的长时规划和工具调用。同样，产品侧，Agent 也正在从简单的聊天助手进化为真实环境中持续交付的数字员工。\n\n但真正实际好用的 Agent 产品屈指可数，其实这也说明了 Agent 的实际落地远远比我们预期中的更复杂。\n\n做 Agent 的真正卡点在哪？是技术还没到位吗？在 Agent 创业中，有哪些真实的教训和经验？现在做通用 Agent 产品，还有价值吗？......\n\nTLDR：\n\nThe Bitter lesson 依然生效，新一代Agent Model的\"规划\"和\"工具调用\"能力的提升，取代了过去大量基于规则的工作流编排等外围工程。\n\n隐性知识的获取是一个Agent的核心挑战，尤其在2B领域。\n\nContext，即隐性知识和业务逻辑的好坏决定了大模型如何能够在实际落地中完成任务，是否真正实现\"可生产可交付\"的价值。\n\nWorkflow跟自主编排Agent各有用武之地，会长期并行。但价值重心很明显正在逐步向后者迁移。\n\n通用Agent的留存与付费转化偏弱，新客多、留存低成为常态，更务实的做法是从\"通用\"转向\"垂直深耕\"。即便在\"通用\"赛道，也先聚焦特定场景。\n\n长期来看，真正的护城河在于几个核心能力：深度的环境理解与操作能力、持续的学习记忆闭环、针对特定场景的模型优化，以及多Agent间的协作标准。",
+    "created_at": "Sun Sep 14 05:30:36 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1966689857863913597",
+      "text": "如果你的 Agent 还要用 ReAct 框架写 Prompt，那么要么说明你在用没有 Agent 能力的模型（比如 GPT-4o、Gemini 2.5 Pro），要么就是用错了。\n\n因为有 Agent 能力的模型，比如 Claude 4 系列（包括前面的 Claude 3.7 和 GPT-5），是不需要通过 ReAct 提示词来激发 Agent 能力，只要提供正确的工具和合适的工具描述，就会自动的去规划、调用工具和完成任务。",
+      "created_at": "Sat Sep 13 02:26:16 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 132920,
+        "friends_count": 1382,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 32,
+        "favorite_count": 264,
+        "reply_count": 21,
+        "quote_count": 6
+      }
+    },
+    "stats": {
+      "retweet_count": 8,
+      "favorite_count": 53,
+      "reply_count": 2,
+      "quote_count": 2
+    }
+  },
+  {
+    "id": "1967098639723139566",
+    "text": "https://t.co/ToTvNEUdbs",
+    "created_at": "Sun Sep 14 05:30:37 +0000 2025",
+    "lang": "zxx",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 3,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1967115532081197367",
+    "text": "Demis Hassabis: 传统学科如数学、科学和人文知识依然重要，但人们更应该掌握的是“元技能”（meta-skills）——比如学会如何快速学习新知识，掌握最有效的学习方法，以适应不断变化的环境。\n\n“未来有一点可以确定，就是在你的整个职业生涯中，你必须不断地学习新东西。” https://t.co/TMIlbFhjbR",
+    "created_at": "Sun Sep 14 06:37:44 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1967115436249554944",
+        "url": "https://pbs.twimg.com/media/G0yZESnXoAAfI38.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 11,
+      "favorite_count": 39,
+      "reply_count": 6,
+      "quote_count": 1
+    }
+  },
+  {
+    "id": "1967115535168270519",
+    "text": "来源：https://t.co/Ap4mPN4VJ5",
+    "created_at": "Sun Sep 14 06:37:45 +0000 2025",
+    "lang": "ja",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 2,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1967121570645615005",
+    "text": "即梦 4 提示词：\n\n生成一幅超写实风格、4K画质的夜间全身人像摄影作品，主角是一位23岁的中国年轻美丽女性，肤色白皙细腻，长直的黑发柔顺地别在一侧耳后。她站在寒夜中布满霜冻的城市公交车站，双臂交叉抱紧以抵御寒冷。她的神情包含70%的轻微烦躁与30%的无奈而自嘲，仿佛正在重读一条令她后悔发送的消息。\n\n人物服饰：\n-上半身依次穿着黑色西装外套、深蓝色运动卫衣、整洁笔挺的白色衬衫与一条细长的黑色领带；\n-下半身穿着极短的黑色百褶裙；\n-腿部穿着全新的白色及膝袜；\n-脚上穿着擦拭得光亮如镜的黑色皮鞋。\n\n场景环境：\n-夜晚城市的公交站台，地面铺满冰霜，远处车灯的倒影映射于冰冷潮湿的路面；\n-上方三分之一的画面笼罩着浓厚的雾气；\n-公交候车亭的玻璃上覆盖着蒸汽，有人用手指随意画了一个笑脸图案，这个笑脸的痕迹明显比周围的水汽消退得更快；\n-场景灯光呈现电影级别的冷调蓝白色，明暗对比鲜明。\n\n隐藏细节：\n-女孩左脚鞋面上的倒影中，隐约可见一辆模糊的红色双层巴士，但无法确定它是否即将到达。\n\n拍摄视角及风格：\n- 镜头采用低眼平视角，将人物完整呈现于画面之中；\n-使用模拟PhaseOne中画幅相机的真实质感；\n-景深效果：清晰聚焦在人物主体上，远处的灯光呈现柔和唯美的散景虚化效果；\n-整体视觉风格呈现电影般的高级冷色调，极致逼真且富有戏剧感。",
+    "created_at": "Sun Sep 14 07:01:44 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1967121385269981184",
+        "url": "https://pbs.twimg.com/media/G0yeekcXcAA4oHm.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": {
+      "id": "1966758558483272144",
+      "text": "Gemini Flash 2.5 Nano banana\n\nFog hides everything, except your thoughts\n\n{\n    \"description\": \"A hyper-realistic, 4K, full-body night-time portrait of a 23-year-old Korean woman with clear pale skin and long straight black hair tucked behind one ear.\",\n    \"subject\": {\n      \"age\": 23,\n      \"ethnicity\": \"Korean\",\n      \"skin_tone\": \"pale\",\n      \"hair\": {\n        \"colour\": \"black\",\n        \"style\": \"long, straight, tucked behind one ear\"\n      },\n      \"pose\": \"standing at a frost-covered bus stop, arms folded against the cold\",\n      \"expression\": \"70 % quiet annoyance, 30 % amused resignation, as if re-reading a text she regrets sending\"\n    },\n    \"outfit\": {\n      \"top_layers\": [\n        \"black blazer\",\n        \"navy sweatshirt\",\n        \"crisp white dress shirt\",\n        \"thin black tie\"\n      ],\n      \"bottom\": \"ultra-short black pleated skirt\",\n      \"legwear\": \"brand-new white knee-length pelerine socks\",\n      \"footwear\": \"polished black shoes\"\n    },\n    \"environment\": {\n      \"location\": \"night-time city bus stop\",\n      \"ground\": \"icy pavement reflecting distant headlights\",\n      \"fog\": \"dense, occupying the top third of the frame\",\n      \"bus_shelter\": {\n        \"glass\": \"steamed-up with one finger-drawn smiley that melts faster than the surrounding condensation\"\n      },\n      \"lighting\": \"cool blue-white, high contrast, cinematic\"\n    },\n    \"hidden_detail\": \"reflection in her left shoe: a blurred red double-decker bus that may or may not be arriving\",\n    \"camera\": {\n      \"angle\": \"low eye-level, full body in frame\",\n      \"lens_simulation\": \"Phase-One medium-format realism\",\n      \"depth_of_field\": \"sharp focus on subject, soft bokeh on distant lights\"\n    },\n    \"output\": {\n      \"style\": \"hyper-realistic, cinematic, cool colour grading\"\n    }\n  }\n}",
+      "created_at": "Sat Sep 13 06:59:15 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1966758525717352448",
+          "url": "https://pbs.twimg.com/media/G0tUdXRakAAt7Jc.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "2872720562",
+        "name": "Emily",
+        "screen_name": "IamEmily2050",
+        "description": "Any sufficiently advanced technology is indistinguishable from magic.  Arthur C. Clarke.",
+        "followers_count": 23953,
+        "friends_count": 393,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 134,
+        "favorite_count": 1260,
+        "reply_count": 75,
+        "quote_count": 9
+      }
+    },
+    "stats": {
+      "retweet_count": 28,
+      "favorite_count": 202,
+      "reply_count": 16,
+      "quote_count": 2
+    }
+  }
+]
+```
+
+## 输出要求
+请整理出：
+- 🔧 技术要点
+- 🛠️ 工具推荐
+- 📚 学习资源
+- 💡 实践建议
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @dotey的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

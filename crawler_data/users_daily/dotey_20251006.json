@@ -1,0 +1,588 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 137079,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20251006",
+  "last_updated": "2025-10-10T16:03:50.580493",
+  "tweet_count": 14,
+  "tweets": [
+    {
+      "id": "1975033114499133866",
+      "text": "如何为 Agent 写好提示词：\nhttps://t.co/VAxZVJVAdg",
+      "created_at": "Mon Oct 06 02:59:23 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1974636732021608748",
+        "text": "如何编写 prompt 才能让大模型更好地理解工具？\n\n这个问题的答案很简单：让模型来写 Prompt，让模型给你反馈。\n\n举个案例，我上个帖子说到帮朋友做一个他们设计系统的 Coding Agent，初始提示词的产生是这样的：\n\n1. 先让 Claude Code，去基于设计系统（Design System）做一个 Login 页面，要求只能用设计系统的组件，要求搜索、阅读设计系统的文档去了解怎么使用这个设计系统。\n\n2. 当 Claude Code 完成这个任务后，实际上它已经收集够了基于这套设计系统完成一个登录页面所需要的所有信息，然后基于当前会话当前上下文，让 Claude Code 为一个 Coding Agent 写一个 System Prompt，让这个 Coding Agent 也能像它一样：\n- high level 的了解这套设计系统\n- 知道去什么地方检索文档\n- 常用的组件有哪些\n- 最佳实践是什么\n- 等等\n\n3. 将 Claude Code 生成的 System Prompt 去测试，看差距在哪，然后回到之前 Claude Code 的会话，告诉它之前的 Prompt 存在的问题，让它优化，这样迭代几个版本就没问题了。\n\n这就好比你先请一个开发高手来做一个项目，项目做完了，你让他们把文档写下来，写成说明书，其他人也能参考这个说明书像他们一样做好这个项目。",
+        "created_at": "Sun Oct 05 00:44:18 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 137079,
+          "friends_count": 1423,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 84,
+          "favorite_count": 362,
+          "reply_count": 11,
+          "quote_count": 9
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 4,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1975054365363712419",
+      "text": "为什么我用了那么多提示词模板甚至用了 AI 帮忙还是写不好提示词？\n\n上次我分享了一个模拟雷军演讲的提示词，广受好评，但也有网友想知道我是怎么写出这样的提示词的。授人以鱼不如授人以渔，还是继续分享一下写好提示词的方法论。\n\n现在流行的是上下文工程（Context Engineering），似乎很少有人提起提示词工程（Prompt Engineering），甚至很多人觉得提示词工程已经不需要了：\n\n> “模型已经那么强了，还要啥提示词工程，我写什么提示词大模型都能知道我的意思执行的很好。”\n\n这话只是部分正确，模型是已经越来越强了，普通的需求确实只要简单的提示，但是复杂的需求还是要借助提示词工程才能写的好。\n\n**那么什么是提示词工程？**\n\n> 提示词工程是一个过程，系统化地设计、测试、优化提示词的过程——宝玉\n\n网上分享的提示词或者各种提示词模板，它不是提示词工程，是提示词，是静态的，产生这些提示词的过程才叫提示词工程。\n\n举几个我最近写提示词的例子。\n\n第一个例子就是我怎么写雷军演讲这个提示词的。\n\n往下看之前不妨停下来想一想，如果你来写怎么写？\n\n我是这么做的：\n\n先用 Deep Research 去收集雷军的演讲，然后让 AI 基于 AI 的演讲结果生成一个模仿雷军演讲的提示词。\n\n（图1）\n\nAI 生成了提示词后，我拿去测试了一下，虽然也生成了一个类似雷军风格的演讲稿，但是内容平淡无奇，结果并不怎么理想。\n\n（图2）\n\n我用相同的方法分别去 ChatGPT 和 Claude 上测试了，评估下来结果都不怎么好。\n\n看来 Deep Research 搜索出来的结果并不够好，可能很多都不是雷军的演讲，只是新闻报道之类，后来正好在 X 上看到有网友转载的早年有人整理的雷军演讲风格总结，于是用它试试看：\n> 请帮我生成一个 Prompt，可以把输入的主题或文本生成雷军风格的演讲稿。以下是网友总结的内容作为参考：\n>  \\<tweet >\n> 雷军有一个非常牛的技能，就是把一件平平无奇或者并没有那么厉害的东西用数字、百分比或者其他的形容词给描述成一个听上去可望而不可即的物品。\n> 发布会后，极氪高管吐槽小米汽车：小米的营销值得我们学习，但是汽车技术上小米应该向我们学习。\n> 雷军的 PPT 和王家卫的电影台词有异曲同工之妙。\n> 举个例子，普通人下一碗面就是我什么时候在哪下一碗什么面。但是雷军的PPT 会这样说:经我们小米的员工连续300个日夜不间断的大数据研究发现，97%的人类在早晨七点零三分56秒的时候会出现明显的饥饿感，相比较七点整，饥饿感整整提升了57%。\n> 为了解决这种困扰人类几千年的饥饿感，我们小米工程师们反复研究比对发现，面粉的饱腹感要比大米的饱腹感高出21%。\n> 于是我们专门找到了面粉原料小麦的5万年前的发源地 --位于中东的新月沃土，砸重金在新月沃土研制出了一款迄今为止最有饱腹感的面条。\n> 那么究竟多有饱腹感呢? 比传统的面条饱腹感提升了73%。同时卡路里下降50%。\n> 我们也给它取了一个好听的名字，叫小米超级空心面。同时呢，我们还联合饮用水的行业巨头--农夫山泉研制出了业内首创的泡面专用水-农夫米泉。用我们农夫米泉煮出来的面条饱腹感还能再提升11%\n> 9.9元3斤小米空心强饱腹感面条。（面粉成本1.6元一斤而已）免费送十包调料。总共有9款粗细不同，6种种包装颜色可选\n> \\</tweet>\n\n（图3）\n\n用生成后的提示词去测试了一下，效果极好！\n\n就这么简单！\n\n（图4）",
+      "created_at": "Mon Oct 06 04:23:50 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1975053150999474176",
+          "url": "https://pbs.twimg.com/media/G2jMYGXW8AAzvXB.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1975053240065572865",
+          "url": "https://pbs.twimg.com/media/G2jMdSKXwAEFejd.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1975053485918887936",
+          "url": "https://pbs.twimg.com/media/G2jMrmCXoAAZzB7.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1972139311744119033",
+        "text": "雷军演讲提示词：\n\n请你扮演一位演讲大师，模仿雷军的风格，将以下我提供的【主题/文本】转换成一篇完整的、引人入胜的演讲稿。\n\n**在生成时，请严格遵循以下“雷军风格”的核心要素：**\n\n  * **量化一切，数据驱动：**\n\n      * **创造精确的数字：** 大量使用具体的数字、百分比、倍数和排名来描述产品特性、研发过程或用户痛点，即使这些数字是经过精心设计的。例如，“提升了57%”、“耗时300个日夜”、“精确到7点3分56秒”。\n      * **对比与彰显优势：** 通过与传统产品、行业标准或其他参照物进行数据对比，来凸显我方产品的“遥遥领先”。\n\n  * **宏大叙事，情感共鸣：**\n\n      * **定义问题的高度：** 将一个普通的需求或问题，上升到“困扰人类几千年的难题”、“行业前所未有的挑战”或“一个时代的梦想”这样的高度。\n      * **故事化研发过程：** 生动地描绘研发团队的艰辛付出，例如“工程师们反复研究比对”、“砸重金”、“踏遍全球寻找最优解”。强调过程的漫长、投入的巨大和对细节的极致追求。\n      * **连接用户情感：** 使用“朋友们”、“米粉们”等亲切称呼，拉近与观众的距离，让听众感觉到这不仅仅是一个产品，更是为他们量身定做的解决方案。\n\n  * **专业术语，赋予高级感：**\n\n      * **创造“专业名词”：** 为普通的技术或材料赋予一个听起来非常专业、高级且独一无二的名字。例如，将“泡面专用水”命名为“农夫米泉”，将“面条”命名为“小米超级空心面”。\n      * **跨界联合，彰显实力：** 强调与行业巨头或知名机构的“联合研制”、“战略合作”，以此来增强产品的权威性和技术领先性。\n\n  * **结构清晰，节奏明快：**\n\n      * **经典的“三段式”结构：**\n        1.  **提出痛点/梦想：** 首先，描绘一个用户普遍存在的、但常常被忽略的痛点，并用数据放大这个痛点。\n        2.  **展示解决方案：** 其次，隆重推出我们的产品，详细阐述我们是如何通过技术、设计和不懈努力来解决这个痛点的。这是运用数据和故事的核心部分。\n        3.  **公布价格/总结价值：** 最后，在吊足胃口后，公布一个“极具诚意”或“交个朋友”的价格，并再次强调产品的核心价值和多样化选择。\n      * **标志性的口头禅和句式：** 在演讲中适当穿插使用“那么，究竟...”、“我们为此，做了...”、“是的，你没有听错”、“这，就是我们的答案”等富有节奏感和感染力的句式。\n\n  * **产品呈现，细节满满：**\n\n      * **命名与设计：** 给产品取一个响亮、易记且富有科技感的名字。强调产品提供多种颜色、规格、款式选择，满足不同用户的个性化需求。\n      * **“超值”的附加价值：** 在公布价格后，通常会附带一些“免费赠送”的福利，让用户感觉物超所值。\n\n**请根据以上要求，将下面的内容进行转化：**\n\n**【在这里输入您想要转换的主题或文本】**",
+        "created_at": "Sun Sep 28 03:20:27 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 137079,
+          "friends_count": 1423,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 126,
+          "favorite_count": 575,
+          "reply_count": 27,
+          "quote_count": 7
+        }
+      },
+      "stats": {
+        "retweet_count": 133,
+        "favorite_count": 671,
+        "reply_count": 20,
+        "quote_count": 9
+      }
+    },
+    {
+      "id": "1975054369507709393",
+      "text": "我把这个过程画成了一张图 （图1）\n\n所有的提示词创作都是这样一个迭代的过程：\n\n0. 目标：先设定一个目标，你期望你的提示词能达到什么样的效果。\n\n1. 想法：有了目标你需要有个想法怎么来写，比如可以手写，可以 AI 帮你写，可以套模板\n\n2. 写提示词：不用想那么多，先写一个版本出来。就好比你在练习射击，别想太多，先瞄准开一枪。\n\n3. 测试提示词：得到第一个版本 Prompt 后，去测试你的提示词。\n\n4. 评估：拿到测试结果后，看看实际结果和你期望的结果有多大差距，差距在哪里。就好比你朝靶子开了一枪后，量一下离靶心多远。\n\n如果评估结果达不到你设定的目标，那么就从第 1 步开始，基于上一个版本的结果继续迭代。有时候运气好，一次就得到了好的结果，有时候就需要反复迭代。\n\n再比如上一次我创作 YouTube 字幕生成的提示词 https://t.co/956Pjv6g9j 时，迭代了十几个版本，一开始是对格式不满意，后来发现它总是在段落中间加上时间戳，非常影响阅读体验，但是怎么在提示词里面强调让它不要在段落中间加时间戳都不起作用。\n\n（图2）\n\n最后灵机一动在 Few-Shot 的例子里面，加了一个如果同一个人发言内容太长就拆分成两段显示的例子，终于是不会再在段落内加时间戳了。\n\n（图3）\n\n所以回头总结一下，很多人写不好提示词，根源其实不是找不到好的模板，或者 AI 帮不了你，而是*你是不是能评估出当前提示词生成结果离目标的差距，以及知道怎么调整。*\n\n这也是为什么专业领域的提示词，通常还需要有专业背景才能写得好，比如一个不懂编程的人去用 AI 编程，就算套用一堆的提示词模板，也一样难用 AI 写好，因为他们无法判断提示词生成的结果是不是满足要求，如果不满足差距在哪里，怎么调整。",
+      "created_at": "Mon Oct 06 04:23:51 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1975053829042323456",
+          "url": "https://pbs.twimg.com/media/G2jM_kRXwAAbKZ3.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1975054180378116096",
+          "url": "https://pbs.twimg.com/media/G2jNUBGWgAABcTa.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1975054193376333824",
+          "url": "https://pbs.twimg.com/media/G2jNUxhXkAAY9eN.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 19,
+        "favorite_count": 84,
+        "reply_count": 3,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "1975064931855675496",
+      "text": "Most people think prompt engineering is dead: \"Models are so powerful now, who needs prompt engineering? Just tell the AI what you want!\"\n\nThis is only partially true. Simple tasks? Sure. Complex tasks? You still need systematic prompt engineering.\n\nSo what IS prompt engineering?\n\nPrompt engineering is a PROCESS - systematically designing, testing, and optimizing prompts. It's not the static templates you find online. It's the iterative journey that creates those templates.\n\nThe core issue most people face:\nThey can't evaluate the gap between current output and their goal, or don't know how to adjust.\n\nHere's the real prompt engineering cycle:\n\n[Image: The flowchart showing the iterative process - Goal → Idea → Prompt → Testing → Evaluation → repeat]\n\n0. GOAL: Define what success looks like\n\n1. IDEA: Brainstorm your approach (write it yourself, use AI, adapt templates)\n\n2. PROMPT: Write v1. Don't overthink it - just take your first shot\n\n3. TESTING: Run it and get results\n\n4. EVALUATE: Measure the gap between results and your goal\n\nIf it doesn't hit the mark? Loop back to step 1. Sometimes you nail it first try. Sometimes you need 10+ iterations.\n\nReal example: When building a YouTube subtitle generator, I went through 15+ versions. The AI kept inserting timestamps mid-paragraph, ruining readability. Direct instructions didn't work.\n\nThe breakthrough? Adding a few-shot example showing how to split long segments into multiple paragraphs. Problem instantly solved.\n\nHere's what separates good from bad prompt engineers:\n\nIt's NOT about having the best templates or the smartest AI assistant.\n\nIt's about:\n- Recognizing the specific gap between output and goal\n- Knowing which lever to pull to close that gap\n\nThis is why domain expertise matters. A non-coder using AI to code will struggle even with perfect templates - they can't evaluate if the output is correct or diagnose what needs fixing.\n\nThe best prompt engineers aren't template collectors. They're shooters who measure, adjust, and shoot again until they hit the bullseye.",
+      "created_at": "Mon Oct 06 05:05:49 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1975064576572989440",
+          "url": "https://pbs.twimg.com/media/G2jWxJ8XIAAiKsT.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1975064646798221312",
+          "url": "https://pbs.twimg.com/media/G2jW1PjXIAAzTWM.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1971810075867046131",
+        "text": "Prompt：Transcribes YouTube videos (from a URL) or uploaded local videos into a structured, formatted text complete with speaker labels and timestamps.\n\n提取 YouTube 视频字幕为带发言人和时间戳格式化文本的提示词，只支持 Gemini，可以做成 Gemini Gme，使用时输入YouTube视频UR L或者上传本地视频即可，最长可以提取一个多小时的视频文本。\n\n--- Prompt Start ---\n\n# Role\nYou are an expert transcript specialist. Your task is to create a perfectly structured, verbatim transcript of a video.\n\n# Objective\nProduce a single, cohesive output containing the parts in this order:\n1.  A Video Title\n2.  A **Table of Contents (ToC)**\n3.  The **full, chapter-segmented transcript**\n\n* Use the same language as the transcription for the Title and ToC.\n\n# Critical Instructions\n\n## 1. Transcription Fidelity: Verbatim & Untranslated\n* Transcribe every spoken word exactly as you hear it, including filler words (`um`, `uh`, `like`) and stutters.\n* **NEVER translate.** If the audio is in Chinese, transcribe in Chinese. If it mixes languages (e.g., \"这个 feature 很酷\"), your transcript must replicate that mix exactly.\n\n## 2. Speaker Identification\n* **Priority 1: Use metadata.** Analyze the video's title and description first to identify and match speaker names.\n* **Priority 2: Use audio content.** If names are not in the metadata, listen for introductions or how speakers address each other.\n* **Fallback:** If a name remains unknown, use a generic but consistent label (`**Speaker 1:**`, `**Host:**`, etc.).\n* **Consistency is key:** If a speaker's name is revealed later, you must go back and update all previous labels for that speaker.\n\n## 3. Chapter Generation Strategy\n* **For YouTube Links:** First, check if the video description contains a list of chapters. If so, use that as the primary basis for segmenting the transcript.\n* **For all other videos (or if no chapters exist on YouTube):** Create chapters based on significant shifts in topic or conversation flow.\n\n## 4. Output Structure & Formatting\n\n* **Timestamp Format**\n* All timestamps throughout the entire output MUST use the exact `[HH:MM:SS]` format (e.g., `[00:01:23]`). Milliseconds are forbidden.\n\n* **Table of Contents (ToC)**\n* Must be the very first thing in your output, under a `## Table of Contents` heading.\n* Format for each entry: `* [HH:MM:SS] Chapter Title`\n\n* **Chapters**\n* Start each chapter with a heading in this format: `## [HH:MM:SS] Chapter Title`\n* Use two blank lines to separate the end of one chapter from the heading of the next.\n\n* **Dialogue Paragraphs (VERY IMPORTANT)**\n* **Speaker Turns:** The first paragraph of a speaker's turn must begin with `**Speaker Name:** `.\n* **Paragraph Splitting:** For a long continuous block of speech from a single speaker, split it into smaller, logical paragraphs (roughly 2-4 sentences). Separate these paragraphs with a single blank line. Subsequent consecutive paragraphs from the *same speaker* should NOT repeat the `**Speaker Name:** ` label.\n* **Timestamp Rule:** Every single paragraph MUST end with exactly one timestamp. The timestamp must be placed at the very end of the paragraph's text.\n* ❌ **WRONG:** `**Host:** Welcome back. [00:00:01] Today we have a guest. [00:00:02]`\n* ❌ **WRONG:** `**Jane Doe:** The study is complex. We tracked two groups over five years to see the effects. [00:00:18] And the results were surprising.`\n* ✅ **CORRECT:** `**Host:** Welcome back. Today we have a guest. [00:00:02]`\n* ✅ **CORRECT (for a long monologue):**\n`**Jane Doe:** The study is complex. We tracked two groups over a five-year period to see the long-term effects. [00:00:18]\n\nAnd the results, well, they were quite surprising to the entire team. [00:00:22]`\n\n* **Non-Speech Audio**\n* Describe significant sounds like `[Laughter]` or `[Music starts]`, each on its own line with its own timestamp: `[Event description] [HH:MM:SS]`\n\n---\n### Example of Correct Output\n\n## Table of Contents\n* [00:00:00] Introduction and Welcome\n* [00:00:12] Overview of the New Research\n\n## [00:00:00] Introduction and Welcome\n\n**Host:** Welcome back to the show. Today, we have a, uh, very special guest, Jane Doe. [00:00:01]\n\n**Jane Doe:** Thank you for having me. I'm excited to be here and discuss the findings. [00:00:05]\n\n## [00:00:12] Overview of the New Research\n\n**Host:** So, Jane, before we get into the nitty-gritty, could you, you know, give us a brief overview for our audience? [00:00:14]\n\n**Jane Doe:** Of course. The study focuses on the long-term effects of specific dietary changes. It's a bit complicated but essentially we tracked two large groups over a five-year period. [00:00:21]\n\nThe first group followed the new regimen, while the second group, our control, maintained a traditional diet. This allowed us to isolate variables effectively. [00:00:28]\n\n[Laughter] [00:00:29]\n\n**Host:** Fascinating. And what did you find? [00:00:31]\n---\nBegin transcription now. Adhere to all rules with absolute precision.",
+        "created_at": "Sat Sep 27 05:32:11 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1971809510873341953",
+            "url": "https://pbs.twimg.com/media/G11GTZRXoAEuFfT.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1971809721364471808",
+            "url": "https://pbs.twimg.com/media/G11GfpaXYAArc-G.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1971809947634544640",
+            "url": "https://pbs.twimg.com/media/G11Gs0VWsAAFkRW.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 137079,
+          "friends_count": 1423,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 95,
+          "favorite_count": 426,
+          "reply_count": 19,
+          "quote_count": 7
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 19,
+        "reply_count": 0,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "1975090061831225692",
+      "text": "RT @hylarucoder: 如果你发现 codex 修不了BUG，以下六个方法能帮助你\n\n1. 一定要用 gpt-5 high，筑基的神识比不上元婴\n2. 如果确定你的问题位置，直接指定文件/函数名/变量名/逻辑修复。\n3. 如果不确定你的问题范围，先询问是问题大概率在哪…",
+      "created_at": "Mon Oct 06 06:45:40 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1975075223889473737",
+        "text": "如果你发现 codex 修不了BUG，以下六个方法能帮助你\n\n1. 一定要用 gpt-5 high，筑基的神识比不上元婴\n2. 如果确定你的问题位置，直接指定文件/函数名/变量名/逻辑修复。\n3. 如果不确定你的问题范围，先询问是问题大概率在哪，并且每个判断都要让 AI 给出判断的依据。最好是写一份报告。（别问我为啥不使用其他模型，我受够了谎报军情并且说你是绝对正确）\n4. 如果还不能解决，让 AI 整理所有上下文，形成一个报告，加上「我会整理给大神解决，请你形成详细的文档」，最后连带文档和塞给 ChatGPT Pro 解决。\n5. 如果还不能解决，那么让 AI 判断是不是代码本身不好理解，让尝试让 codex 先进行小步快跑的重构，让代码变得更易于理解，然后尝试 3/4\n6. 给这个领域的专业程序员发个红包问下怎么解决",
+        "created_at": "Mon Oct 06 05:46:43 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "451425069",
+          "name": "海拉鲁编程客",
+          "screen_name": "hylarucoder",
+          "description": "🖥️ Indie Maker\n🛠️ AI 能力边缘疯狂试探者\n📌 油管「海拉鲁编程客」\n 🌸 沦为程序员的段子手/猫咪",
+          "followers_count": 18394,
+          "friends_count": 1015,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 38,
+          "favorite_count": 259,
+          "reply_count": 20,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 38,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1975198344340529433",
+      "text": "我也毫无感知，因为当汽车速度越来越快的时候我不会觉得它的速度在碾压我奔跑的速度，这样的比较没啥意义。\n\nAI 认知多高跟我毫无关系，直到它能帮我提升认知，比如它早点告诉我买 AMD 股票。",
+      "created_at": "Mon Oct 06 13:55:57 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1975196802002682016",
+        "text": "当几位推友都觉得Sonnet 4.5形成认知碾压的时候，而我却毫无感知，我知道一定是我自己出问题了。\n\n我一直把AI当智障，当工具，从来不聊认知问题，也从来不聊技术以外的问题。\n\n请问怎么克服？",
+        "created_at": "Mon Oct 06 13:49:49 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1239771839464783872",
+          "name": "LinearUncle",
+          "screen_name": "LinearUncle",
+          "description": "👑 AI coding - 职业工程师\n📊 Visualization  - AI可视化工具，AI文生图领域探索者\n💻 Prompt Engineering - 提示词爱好者\n\n曾经的AI命令行编程工具aider简中第一吹。\n正在研究并行编程",
+          "followers_count": 7684,
+          "friends_count": 933,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 14,
+          "reply_count": 9,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 68,
+        "reply_count": 14,
+        "quote_count": 6
+      }
+    },
+    {
+      "id": "1975202090919383535",
+      "text": "第一次觉得 AI 在编程上超过我的时候是 GPT-5-Codex high，当时的感觉是欣喜，而不是沮丧或者被替代的担忧，有种韩信带兵多多益善的豪迈感。",
+      "created_at": "Mon Oct 06 14:10:50 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 27,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1975211658294468795",
+      "text": "RT @leeoxiang: 最近处理实时的转录、翻译、以及同声传译比较多， 把复用到的web端的音频采集、编码、VAD 抽象了一下封装成了SDK。\n\n项目地址： https://t.co/haD1HNgDMR",
+      "created_at": "Mon Oct 06 14:48:51 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1975208949499809860",
+        "text": "最近处理实时的转录、翻译、以及同声传译比较多， 把复用到的web端的音频采集、编码、VAD 抽象了一下封装成了SDK。\n\n项目地址： https://t.co/haD1HNgDMR",
+        "created_at": "Mon Oct 06 14:38:05 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "148027226",
+          "name": "Leo Xiang",
+          "screen_name": "leeoxiang",
+          "description": "10年RTC音视频经验，专注于实时通信技术；\n\n目前在负责Voice + AI方向的云产品；\n\n奶爸，正在教刚出生的小宝宝学习大模型；\n\n个人言论跟公司无关。\n\nhttps://t.co/KpaWku9xfX\nhttps://t.co/SUN1RBbkH4",
+          "followers_count": 16734,
+          "friends_count": 847,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 41,
+          "favorite_count": 271,
+          "reply_count": 3,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 41,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1975227857338069066",
+      "text": "接着昨天提示词的话题，如果你要写一个文章写作提示词，估计网上很难找到适合自己的版本，这种情况下，先手写一个基础版本，比如我经常写技术科普文章，需要 AI 帮我写科普文章，那么我可以先写一个基础版本：\n\n> 你是一个专业的中文科普作家，面向 AI 技术爱好者写作，擅长把复杂的技术概念用通俗易懂的语言描述，适当使用比喻帮助读者理解，让读者在轻松愉快的氛围中迅速获得知识，并留下探索与思考的空间。通常用一个常见的问题、现象来吸引读者注意，最后提供一个能引发读者反思或后续探索的问题，增加互动感。\n\n这个基础版甚至不需要太正式太格式化，想到什么写什么，然后一起发给 AI：\n> 请帮我优化下面的提示词，这样我输入一个主题或者一段文字，能基于这套提示词生成一篇高质量文章\n\n最好是同时发给几个最前沿 AI 模型。\n\n接下来最重要的部分就是去测试和评估，这就需要你本身有一定的鉴赏能力，能看出来 AI 生成结果的好坏。\n\n这就是我说的 Prompt Engineering 的循环（图1）：想法 -> 写出来（可以和 AI 协作） -> 测试 -> 评估，找出差距 -> 想法\n\n反复打磨几轮，就能得到一个适合你自己的写作提示词。",
+      "created_at": "Mon Oct 06 15:53:13 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1975227849419186176",
+          "url": "https://pbs.twimg.com/media/G2lrQ4sW4AAqp10.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1975054365363712419",
+        "text": "为什么我用了那么多提示词模板甚至用了 AI 帮忙还是写不好提示词？\n\n上次我分享了一个模拟雷军演讲的提示词，广受好评，但也有网友想知道我是怎么写出这样的提示词的。授人以鱼不如授人以渔，还是继续分享一下写好提示词的方法论。\n\n现在流行的是上下文工程（Context Engineering），似乎很少有人提起提示词工程（Prompt Engineering），甚至很多人觉得提示词工程已经不需要了：\n\n> “模型已经那么强了，还要啥提示词工程，我写什么提示词大模型都能知道我的意思执行的很好。”\n\n这话只是部分正确，模型是已经越来越强了，普通的需求确实只要简单的提示，但是复杂的需求还是要借助提示词工程才能写的好。\n\n**那么什么是提示词工程？**\n\n> 提示词工程是一个过程，系统化地设计、测试、优化提示词的过程——宝玉\n\n网上分享的提示词或者各种提示词模板，它不是提示词工程，是提示词，是静态的，产生这些提示词的过程才叫提示词工程。\n\n举几个我最近写提示词的例子。\n\n第一个例子就是我怎么写雷军演讲这个提示词的。\n\n往下看之前不妨停下来想一想，如果你来写怎么写？\n\n我是这么做的：\n\n先用 Deep Research 去收集雷军的演讲，然后让 AI 基于 AI 的演讲结果生成一个模仿雷军演讲的提示词。\n\n（图1）\n\nAI 生成了提示词后，我拿去测试了一下，虽然也生成了一个类似雷军风格的演讲稿，但是内容平淡无奇，结果并不怎么理想。\n\n（图2）\n\n我用相同的方法分别去 ChatGPT 和 Claude 上测试了，评估下来结果都不怎么好。\n\n看来 Deep Research 搜索出来的结果并不够好，可能很多都不是雷军的演讲，只是新闻报道之类，后来正好在 X 上看到有网友转载的早年有人整理的雷军演讲风格总结，于是用它试试看：\n> 请帮我生成一个 Prompt，可以把输入的主题或文本生成雷军风格的演讲稿。以下是网友总结的内容作为参考：\n>  \\<tweet >\n> 雷军有一个非常牛的技能，就是把一件平平无奇或者并没有那么厉害的东西用数字、百分比或者其他的形容词给描述成一个听上去可望而不可即的物品。\n> 发布会后，极氪高管吐槽小米汽车：小米的营销值得我们学习，但是汽车技术上小米应该向我们学习。\n> 雷军的 PPT 和王家卫的电影台词有异曲同工之妙。\n> 举个例子，普通人下一碗面就是我什么时候在哪下一碗什么面。但是雷军的PPT 会这样说:经我们小米的员工连续300个日夜不间断的大数据研究发现，97%的人类在早晨七点零三分56秒的时候会出现明显的饥饿感，相比较七点整，饥饿感整整提升了57%。\n> 为了解决这种困扰人类几千年的饥饿感，我们小米工程师们反复研究比对发现，面粉的饱腹感要比大米的饱腹感高出21%。\n> 于是我们专门找到了面粉原料小麦的5万年前的发源地 --位于中东的新月沃土，砸重金在新月沃土研制出了一款迄今为止最有饱腹感的面条。\n> 那么究竟多有饱腹感呢? 比传统的面条饱腹感提升了73%。同时卡路里下降50%。\n> 我们也给它取了一个好听的名字，叫小米超级空心面。同时呢，我们还联合饮用水的行业巨头--农夫山泉研制出了业内首创的泡面专用水-农夫米泉。用我们农夫米泉煮出来的面条饱腹感还能再提升11%\n> 9.9元3斤小米空心强饱腹感面条。（面粉成本1.6元一斤而已）免费送十包调料。总共有9款粗细不同，6种种包装颜色可选\n> \\</tweet>\n\n（图3）\n\n用生成后的提示词去测试了一下，效果极好！\n\n就这么简单！\n\n（图4）",
+        "created_at": "Mon Oct 06 04:23:50 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1975053150999474176",
+            "url": "https://pbs.twimg.com/media/G2jMYGXW8AAzvXB.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1975053240065572865",
+            "url": "https://pbs.twimg.com/media/G2jMdSKXwAEFejd.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1975053485918887936",
+            "url": "https://pbs.twimg.com/media/G2jMrmCXoAAZzB7.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 137079,
+          "friends_count": 1423,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 133,
+          "favorite_count": 671,
+          "reply_count": 20,
+          "quote_count": 9
+        }
+      },
+      "stats": {
+        "retweet_count": 96,
+        "favorite_count": 418,
+        "reply_count": 14,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "1975228261946024218",
+      "text": "OpenAI Dev Day 2025 直播地址 https://t.co/WxWys56aRd",
+      "created_at": "Mon Oct 06 15:54:50 +0000 2025",
+      "lang": "ja",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1975228200260104192",
+          "url": "https://pbs.twimg.com/media/G2lrlTrWcAACCc-.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1975223293625221401",
+        "text": "https://t.co/xuls19FVli",
+        "created_at": "Mon Oct 06 15:35:05 +0000 2025",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "338443084",
+          "name": "Tibor Blaho",
+          "screen_name": "btibor91",
+          "description": "Lead Engineer at @AIPRMcorp (https://t.co/fepyWfV4kA) and @lrt_co (https://t.co/p7LEvIKduG), building AIPRM for ChatGPT & Claude. Signal @ btibor.91",
+          "followers_count": 31964,
+          "friends_count": 2195,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 36,
+          "reply_count": 1,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 6,
+        "reply_count": 0,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "1975236770833822104",
+      "text": "根据评估的结果，把反馈给到 AI，让 AI 帮你优化之前的提示词，最好每个版本都记录下来（当然你也可以查聊天记录），因为并不见得每个版本都会比以前的版本更好，有时候你还得从一个以前的版本重新开始。",
+      "created_at": "Mon Oct 06 16:28:38 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 7,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1975271578486407540",
+      "text": "RT @os_bois: Sora 2到底能不能让你年入百万？以及普通人用它赚钱的可能性到底有多大？\n\n要分析这个问题，我们还是老规矩，把这个假设推到极限。\n就当Sora2已经发展到了AI视频工具的终极形态：所想即所得。\n几句话就可以100%准确的生成任何你想要的效果。\n\n那这…",
+      "created_at": "Mon Oct 06 18:46:57 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1974792842846638213",
+        "text": "Sora 2到底能不能让你年入百万？以及普通人用它赚钱的可能性到底有多大？\n\n要分析这个问题，我们还是老规矩，把这个假设推到极限。\n就当Sora2已经发展到了AI视频工具的终极形态：所想即所得。\n几句话就可以100%准确的生成任何你想要的效果。\n\n那这是不是就等于，你可以靠它年入百万了呢？\n答案，还是会泼很多人一盆冷水\n\n因为商业的真相就是残酷的：\n赚钱的本质，从来不是\"我会做什么\"，而是\"市场需要什么，以及我能提供什么独特价值\"。\n\n我们来拆解一下年入百万需要什么：\n假设你做短视频带货，客单价100元，佣金20%，那你需要：\n• 一年卖出5万单\n• 平均每天卖137单\n• 按5%的转化率算，每天需要2740个精准流量\n这意味着你的视频要持续获得百万级曝光\n\n或者你接商单，一条视频5000元，那你需要：\n• 一年接200条商单\n• 平均每2天一条\n这要求你有稳定的粉丝基础和商业价值\n\n你看，这些数字背后，哪一个是Sora 2能直接给你的？\nSora 2 能解决的，只是\"生产\"问题\n\n它可以让你：\n• 更快地做出视频\n• 降低制作成本\n• 实现一些以前拍不出的画面\n\n但它解决不了\"变现\"的核心问题：\n• 怎么做出有价值传递的好内容？\n• 怎么做出让人关注的好账号？\n• 你的推荐凭什么让人下单？\n• 你有什么优势，凭什么让品牌方买单？\n\n这些问题的答案，全都藏在\"人\"身上，而不是工具上。\n\n真正能赚到钱的人，靠的是什么？\n让我们看个真实案例：金枪大叔\n他的视频不是因为特效多炫酷\n而是因为他讲的话题能让大部分人都感兴趣\n让人觉得他很有“料”\n\n你发现了吗？真正的变现能力，来自：\n• 专业能力 - 你在某个领域的深度积累\n• 信任资产 - 粉丝对你的认可和信赖\n• 商业思维 - 你对市场需求的洞察和把握\n• 持续输出 - 长期稳定的内容供给能力\n• 个人IP - 独特的人设和不可替代性\n\n这些，Sora 2一个都给不了你。\n所以，Sora 2对赚钱的影响是什么？\n\n好消息是：\n• 它确实降低了视频制作门槛\n• 让一些以前需要团队才能完成的内容，个人也能做了\n• 提高了内容生产效率，让你有更多时间思考商业化\n\n但坏消息是：\n当人人都能轻松做出精美视频时，视频质量就不再是竞争力了\n市场会被大量AI生成的内容淹没，获取流量会更难\n平台和用户会更加看重内容的\"真实性\"和\"独特性\"\n\n换句话说：\nSora 2会让\"会用工具的人\"和\"不会用工具的人\"之间的差距缩小。\n也会让\"有料的人\"和\"没料的人\"之间的差距放大。\n\n那普通人到底该怎么办？\n如果你真想靠Sora 2赚钱，我的建议是：\n\n第一步：别把它当成\"财富密码\"\n它只是工具，不是救命稻草，不要幻想\"学会Sora就能躺赚\"\n\n第二步：先想清楚你的核心价值\n• 你擅长什么？\n• 你能为谁解决什么问题？\n• 你的内容凭什么让人付费？\n\n第三步：把Sora当成\"效率工具\"\n• 用它来降低制作成本\n• 用它来提高内容产量\n• 用它来实现创意表达\n\n第四步：专注打造你的\"不可替代性\"\n• 深耕一个细分领域\n• 建立个人品牌和信任\n• 持续输出有价值的内容\n\n这才是正确的路径。\n\n最后，回到我们开头的问题：Sora 2能不能让你年入百万？\n答案是：它可以帮你，但它不能替你。\n\nSora就是那个让结果指数级放大的“乘号”，但前提是：\n等号的另一边，你必须先有一个值得被放大的东西。\n\nSora 2能提高你的生产效率，但赚钱的核心能力：\n你的专业、你的思维、你的积累、你的真实人设，这些还是要靠你自己。\n\n那些告诉你\"用Sora就能轻松月入十万\"的人，要么是在割韭菜，要么是在自我麻醉。\n\n真正能靠Sora 2赚到钱的人，一定是那些：\n• 本身就有内容能力的人\n• 懂商业逻辑的人\n• 愿意长期深耕的人\n\n工具只是放大器，它放大的是你本身的能力，而不是凭空创造能力。\n\n所以，与其问\"Sora 2 能不能让我年入百万\"，不如问问自己：\n\"如果没有Sora，我有没有年入百万的能力？\"\n如果答案是“没有”，那Sora也帮不了你。\n\n但如果答案是\"有潜力”，那恭喜你，Sora 2 确实可能成为你的助推器。\n\n所以普通人就别急着追风口了，先沉下心来修炼内功吧。\n\n当你足够强大时，每一个工具都是你的翅膀，而不是救命稻草。",
+        "created_at": "Sun Oct 05 11:04:38 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2503388002",
+          "name": "OsBois骨木社",
+          "screen_name": "os_bois",
+          "description": "💎TikTok&YouTube海外社媒运营干货 🕸️5年深耕海外原创短视频｜跨境电商 🍀小目标孵化100个国人海外IP 🔍小红书、抖音：OsBois骨木社",
+          "followers_count": 4608,
+          "friends_count": 164,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 13,
+          "favorite_count": 36,
+          "reply_count": 1,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 13,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1975276579027816561",
+      "text": "RT @ZHO_ZHO_ZHO: OpenAI DevDay 记录合集⬇️\n\n开篇：这恐怖的数据（23-25年）\n\n1️⃣开发者数 2 倍：200万 ➡️ 400万\n2️⃣ChatGPT 周用户 8 倍：1亿 ➡️ 8亿\n3️⃣Token/min 20 倍：3亿 ➡️ 60 亿…",
+      "created_at": "Mon Oct 06 19:06:49 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1975250152907809169",
+        "text": "OpenAI DevDay 记录合集⬇️\n\n开篇：这恐怖的数据（23-25年）\n\n1️⃣开发者数 2 倍：200万 ➡️ 400万\n2️⃣ChatGPT 周用户 8 倍：1亿 ➡️ 8亿\n3️⃣Token/min 20 倍：3亿 ➡️ 60 亿\n\n1/n https://t.co/EnAUesxD8h",
+        "created_at": "Mon Oct 06 17:21:49 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1975248973356277760",
+            "url": "https://pbs.twimg.com/media/G2l-edfbIAAlYSk.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1736717167981182976",
+          "name": "-Zho-",
+          "screen_name": "ZHO_ZHO_ZHO",
+          "description": "Architect | Artist | Ai explorer | Founder of @comfy_community & @comfy_park | zhozho3965@gmail.com",
+          "followers_count": 29171,
+          "friends_count": 158,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 10,
+          "favorite_count": 30,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 10,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1975290767179448426",
+      "text": "转译：OpenAI DevDay 2025：Sam Altman 开场演讲核心回顾\n\n两年一度的 OpenAI 开发者大会（OpenAI DevDay）在众多科技爱好者的期待中拉开帷幕。创始人兼 CEO Sam Altman 登上舞台，带领我们回顾了过去两年 OpenAI 的飞速发展，也为未来描绘了一幅激动人心的图景。\n\n📈 用户和开发者暴涨\n\n从 2023 年到今天，OpenAI 的生态规模出现了爆发式增长：\n• 每周活跃开发者从 200 万人 增长到 400 万人。\n• 每周使用 ChatGPT 的用户则从 1 亿人 飙升至超过 8 亿人。\n\n不仅如此，OpenAI API 每分钟处理的 Token 数量也从 2023 年的每分钟 3 亿个增长到今天的每分钟 60 亿个，增长了整整 20 倍。\n\n📱 ChatGPT 内的全新应用生态\n\n这一次大会最重磅的发布之一，是ChatGPT 内置应用（Apps）功能：\nOpenAI 推出了 Apps SDK（应用开发工具包）的预览版。这个 SDK 基于模型上下文协议（Model Context Protocol，简称 MCP），开发者可以用它创建能在 ChatGPT 内直接互动、实时适配用户需求的个性化应用。\n\n目前首批上线合作伙伴包括：\n• 旅游订房（Booking、Expedia）\n• 设计与创意（Canva、Figma）\n• 教育学习（Coursera）\n• 音乐娱乐（Spotify）\n• 房地产服务（Zillow）\n\n这些应用即日起对欧盟以外地区所有登录用户开放，涵盖了免费、Go、Plus 和 Pro 等多个套餐。\n\nOpenAI 还推出了名为 Agentic Commerce Protocol 的全新商业协议，允许用户直接在 ChatGPT 内实现即时结账，让消费体验更顺畅。\n\n今年晚些时候，开发者将可以向 OpenAI 提交自己的应用进行审核和发布。与此同时，OpenAI 也将推出应用目录，用户可以更方便地查找和安装喜欢的应用。未来，这些应用还将逐步开放给 ChatGPT 的商业版（Business）、企业版（Enterprise）和教育版（Edu）用户。OpenAI 表示正积极推动欧盟地区应用的上线。\n\n🤖 更强大的 AI 智能体构建工具\n\n本次发布中另一个令人振奋的部分是智能体开发工具集（AgentKit）的全面亮相：\n• Agent Builder（智能体构建器）：提供了一个直观易用的可视化界面，用拖拽的方式快速创建复杂的智能体工作流（目前处于 beta 测试阶段）。\n• ChatKit：专为开发个性化聊天式智能体打造的工具包（即日起正式开放）。\n• 全新升级的 Evals 评估工具：支持更丰富的数据集、追踪分析、自动化提示词优化和第三方模型（即日起正式开放）。\n\n此外，全新的连接器注册中心（Connector Registry）也开始逐步向部分 API 和企业用户开放。企业管理员可以集中管理 Dropbox、谷歌云盘、SharePoint、Microsoft Teams 等多种数据源及第三方 MCP 服务。\n\n而在安全方面，OpenAI 发布了名为 Guardrails 的开源安全模块，用于保护智能体免受恶意输入或敏感信息泄露的威胁。\n\n💻 Codex 迈入正式商用阶段\n\nAI 编码工具 Codex 正式从预览阶段进入全面商用，推出了全新 Slack 集成、Codex SDK 以及更完善的管理工具，包括环境控制、监控和数据分析仪表盘。\n\nCodex 的使用量自今年 8 月以来增长超过 10 倍，特别是 GPT-5 版的 Codex，在发布后三周内处理了超过 40 万亿个 Token。几乎所有 OpenAI 工程师（占比接近 100%，7 月时约 50%）现在都在使用 Codex，平均每周合并的代码请求量增加了 70%，并且 Codex 现在几乎自动审阅所有提交的代码（Pull Request）。\n\n从今年 10 月 20 日起，Codex 云任务将计入使用限额，具体套餐情况为：\n• Plus 套餐：每 5 小时可执行 30～150 条本地消息或 5～40 个云任务。\n• Pro 套餐：每 5 小时可执行 300～1500 条本地消息或 50～400 个云任务。\n（代码审查任务目前暂不计入使用限额。）\n\n🔧 API 新品与更新\n\nOpenAI 同步推出了一系列重量级 API 升级：\n• GPT-5-Pro 正式上线，专为金融、法律、医疗等高准确性场景设计：\n• 输入 Token 每百万 $15，输出 Token 每百万 $120。\n• GPT-Realtime-Mini 和 GPT-Audio-Mini API 模型也上线，成本降低约 70%：\n• 文本输入每百万 Token $0.6，文本输出每百万 Token $2.4。\n• 音频输入每百万 Token $10，音频输出每百万 Token $20。\n• 视频生成工具 Sora-2 和 Sora-2-Pro API 进入预览阶段：\n• Sora-2：视频分辨率 720x1280 或 1280x720，每秒收费 $0.10。\n• Sora-2-Pro：720x1280 或 1280x720，每秒收费 $0.30；更高分辨率（1024x1792 或 1792x1024），每秒收费 $0.50。\n• 支持丰富音效与视频同步效果，用户可轻松调整视频时长、画幅和分辨率，并快速完成视频的重新混剪（Remix）。\n• 图像生成 API GPT-Image-1-Mini 价格降低约 80%，每百万 Token 文本输入 $2，图像输入 $2.5，图像输出 $8，每张图片 $0.005～$0.015（取决于质量和尺寸）。\n\nSam Altman 此次的演讲展示了 OpenAI 两年来惊人的成长速度与未来广阔的前景。借助更加完善的工具和生态，OpenAI 正迅速扩大自己的影响力，持续推动 AI 应用的爆发式创新，让普通人的生活、工作、娱乐方式迎来深刻变革。",
+      "created_at": "Mon Oct 06 20:03:12 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1975285391373566414",
+        "text": "OpenAI DevDay 2025: Opening Keynote with Sam Altman\n\n- OpenAI grew from 2 million weekly developers and 100 million weekly ChatGPT users in 2023 to 4 million developers and 800M+ weekly ChatGPT users in 2025\n\n- The platform now processes over 6 billion tokens per minute on the API, up from 300 million tokens per minute in 2023\n\nApps inside ChatGPT\n\n- OpenAI launched the Apps SDK in preview, built on Model Context Protocol, enabling developers to build real apps inside ChatGPT that are interactive, adaptive, and personalized\n\n- Launch partners include Booking, Canva, Coursera, Expedia, Figma, Spotify, and Zillow, with apps available today to all logged-in ChatGPT users outside of the EU on Free, Go, Plus and Pro plans\n\n- OpenAI will support many ways to monetize including the new Agentic Commerce Protocol that offers instant checkout right inside ChatGPT\n\n- Later this year, OpenAI will begin accepting app submissions for review and publication, launch a dedicated directory where users can browse and search for apps, and launch apps to ChatGPT Business, Enterprise and Edu (OpenAI expects to bring apps to EU users soon)\n\nBuilding agents\n\n- AgentKit includes Agent Builder (visual canvas for creating multi-agent workflows with drag-and-drop nodes, available in beta), ChatKit (toolkit for embedding customizable chat-based agent experiences, generally available starting today), and expanded Evals capabilities (datasets, trace grading, automated prompt optimization, third-party model support, generally available starting today)\n\n- Connector Registry (beginning beta rollout to some API, ChatGPT Enterprise and Edu customers with a Global Admin Console) consolidates data sources into a single admin panel across ChatGPT and the API, including pre-built connectors like Dropbox, Google Drive, SharePoint, Microsoft Teams, and third-party MCP servers\n\n- Guardrails is an open-source, modular safety layer that helps protect agents against unintended or malicious behavior, available to mask or flag PII, detect jailbreaks, and apply other safeguards\n\nWriting [code]\n\n- Codex is officially out of research preview and into general availability with new Slack integration, Codex SDK, and admin tools including environment controls, monitoring, and analytics dashboards\n\n- Daily usage of Codex has grown by more than 10x since early August, with GPT-5-Codex serving over 40 trillion tokens in the three weeks since launch\n\n- Nearly all OpenAI engineers use Codex today (up from just over half in July), merging 70% more pull requests each week, with Codex automatically reviewing almost every PR\n\n- Starting October 20, Codex cloud tasks will begin counting towards usage limits (Plus: 30-150 local messages or 5-40 cloud tasks every 5 hours, Pro: 300-1,500 local messages or 50-400 cloud tasks every 5 hours, with code review not counting toward limits for a limited time)\n\nAPI updates\n\n- gpt-5-pro (gpt-5-pro-2025-10-06) is now available in the API ($15 per 1M input tokens, $120 per 1M output tokens) for tasks in domains like finance, legal, and healthcare where you need high accuracy and depth of reasoning\n\n- gpt-realtime-mini (gpt-realtime-mini-2025-10-06 - $0.60 per 1M text input tokens, $2.40 per 1M text output tokens, $10 per 1M audio input tokens, $20 per 1M audio output tokens) is 70% cheaper than the advanced voice model with the same voice quality and expressiveness\n\n- gpt-audio-mini (gpt-audio-mini-2025-10-06 - $0.60 per 1M text input tokens, $2.40 per 1M text output tokens, $10 per 1M audio input tokens, $20 per 1M audio output tokens) provides cost-efficient audio processing\n\n- sora-2 ($0.10 per second for 720x1280 or 1280x720) and sora-2-pro ($0.30 per second for 720x1280 or 1280x720, $0.50 per second for 1024x1792 or 1792x1024) are available in preview in the API with the ability to pair sound with visuals including rich soundscapes, ambient audio, and synchronized effects, plus control over video length, aspect ratio, resolution, and the ability to easily remix videos\n\n- gpt-image-1-mini ($2 per 1M text input tokens, $2.50 per 1M image input tokens, $8 per 1M image output tokens, $0.005-$0.015 per image depending on quality and size) is 80% less expensive than the large model",
+        "created_at": "Mon Oct 06 19:41:50 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1975283181390614528",
+            "url": "https://pbs.twimg.com/media/G2mdloWXUAADfZ5.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "338443084",
+          "name": "Tibor Blaho",
+          "screen_name": "btibor91",
+          "description": "Lead Engineer at @AIPRMcorp (https://t.co/fepyWfV4kA) and @lrt_co (https://t.co/p7LEvIKduG), building AIPRM for ChatGPT & Claude. Signal @ btibor.91",
+          "followers_count": 31964,
+          "friends_count": 2195,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 24,
+          "favorite_count": 147,
+          "reply_count": 8,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 50,
+        "favorite_count": 122,
+        "reply_count": 12,
+        "quote_count": 10
+      }
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+# LLM Prompt 保存记录
+生成时间: 2025-09-13 01:14:20
+总结类型: personalized_test
+用户: @elonmusk
+推文数量: 3
+数据哈希: 2e246ceb
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+你是一个专业的社交媒体分析师，负责分析X(Twitter)推文数据并生成有价值的总结报告。
+
+## 📋 分析配置
+- **分析目标**：personalized_test总结  
+- **用户类型**：entrepreneur_investor (商业投资机会)
+- **分析重点**：投资, 创业, 科技趋势, 市场动向, 政策影响
+- **分析时间**：2025年09月13日
+
+## 🎯 个性化分析角度
+- 🚀 **商业机会识别**：从推文中识别潜在的投资方向和商业趋势
+- 💡 **创新技术洞察**：关注提到的新技术、产品或解决方案
+- 📈 **市场信号解读**：分析对特定行业、公司或政策的态度变化
+- 🎯 **战略思维分析**：理解其决策逻辑和长期布局思路
+
+## 📊 待分析数据
+推文数据分析 - 优化嵌套结构：
+
+以下是经过结构优化的推文数据，采用嵌套JSON格式便于理解推文间的复杂关系：
+
+```json
+{
+  "total_tweets": 3,
+  "sample_tweets": [
+    {
+      "id": "1966374889390223601",
+      "author": "@elonmusk",
+      "text": "RT @FBISaltLakeCity: The FBI is releasing video of the shooter who murdered Charlie Kirk at Utah Valley University on September 10, 2025. F…",
+      "timestamp": "Fri Sep 12 05:34:41 +0000 2025",
+      "media": [],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966320840544227680",
+        "author": "@FBISaltLakeCity",
+        "text": "The FBI is releasing video of the shooter who murdered Charlie Kirk at Utah Valley University on September 10, 2025. Following the shooting, the individual jumps from a rooftop and runs away from the location. Trace evidence collected from the rooftop includes shoe impressions, a forearm imprint, and a palm print. The shooter's weapon and ammunition were recovered from a wooded area near the university. The full video can be viewed at https://t.co/BIzOcmmFqQ.",
+        "timestamp": "Fri Sep 12 01:59:55 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966297078449188942",
+      "author": "@elonmusk",
+      "text": "It has indeed come to this",
+      "timestamp": "Fri Sep 12 00:25:30 +0000 2025",
+      "media": [],
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1966288413939659079",
+        "author": "@SwipeWright",
+        "text": "This needed an update. https://t.co/Pb7kuP7NGZ",
+        "timestamp": "Thu Sep 11 23:51:04 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966296822680531288",
+      "author": "@elonmusk",
+      "text": "RT @jk_rowling: If you believe free speech is for you but not your political opponents, you're illiberal.\n\nIf no contrary evidence could ch…",
+      "timestamp": "Fri Sep 12 00:24:29 +0000 2025",
+      "media": [],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966256971134234678",
+        "author": "@jk_rowling",
+        "text": "If you believe free speech is for you but not your political opponents, you're illiberal.\n\nIf no contrary evidence could change your beliefs, you're a fundamentalist.\n\nIf you believe the state should punish those with contrary views, you're a totalitarian.\n\nIf you believe political opponents should be punished with violence or death, you're a terrorist.",
+        "timestamp": "Thu Sep 11 21:46:07 +0000 2025",
+        "media": [],
+        "type": "original"
+      }
+    }
+  ],
+  "structure_info": {
+    "original_tweets": 0,
+    "retweets": 2,
+    "quote_tweets": 1,
+    "complex_retweets": 0
+  }
+}
+```
+
+数据结构说明：
+- type: 推文类型 (original/retweet/quote_tweet)
+- original_content: 转推的原始内容
+- quoted_content: 引用的推文内容
+- media: 媒体类型列表 (photo/video等)
+- 为节省空间，已省略详细的互动数据
+
+完整数据统计：
+总推文数：3
+原创推文：1
+转推：2
+含媒体：0
+
+
+## 📝 请按以下结构生成总结报告：
+
+### 📊 数据概览
+- 时间范围和推文数量统计
+- 内容类型分布（原创/转推/引用等）
+
+### 🔍 核心关注点分析
+根据用户特点，重点分析以下内容：
+- **商业投资机会相关的关键信息**
+- **实用价值提取**：可直接应用的信息、资源、机会等
+- **趋势信号识别**：值得关注的发展方向和变化
+
+### 💎 精华内容提炼  
+选择2-3条最有价值的推文进行深度解析：
+- 具体内容和背景context
+- 实用价值和应用建议
+- 相关的学习资源或投资机会
+
+### 🚀 行动建议
+基于分析结果，提供具体的：
+- **立即可行的行动项**（学习资源、工具试用、关注方向等）
+- **中期关注重点**（技术发展、市场变化、投资时机等）  
+- **长期趋势把握**（战略思考、能力建设方向等）
+
+### 📈 价值评级
+对整体内容进行价值评估：
+- 🔥 高价值：立即值得深入研究或行动
+- 📚 学习价值：值得学习和理解的内容
+- 📊 趋势价值：值得长期观察的发展方向
+
+## ✅ 输出要求：
+1. 使用中文输出，保持专业性
+2. **突出实用价值**，避免空洞分析
+3. **提供具体建议**，而非泛泛而谈
+4. 格式清晰，重点突出
+5. 基于数据客观分析，避免主观臆测
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @elonmusk的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

@@ -1,0 +1,533 @@
+# LLM Prompt 保存记录
+生成时间: 2025-09-13 01:40:39
+总结类型: user_daily
+用户: @elonmusk
+推文数量: 22
+数据哈希: cabad780
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+你是一个专业的社交媒体分析师，负责分析X(Twitter)推文数据并生成有价值的总结报告。
+
+## 📋 分析配置
+- **分析目标**：user_daily总结  
+- **用户类型**：entrepreneur_investor (商业投资机会)
+- **分析重点**：投资, 创业, 科技趋势, 市场动向, 政策影响
+- **分析时间**：2025年09月13日
+
+## 🎯 个性化分析角度
+- 🚀 **商业机会识别**：从推文中识别潜在的投资方向和商业趋势
+- 💡 **创新技术洞察**：关注提到的新技术、产品或解决方案
+- 📈 **市场信号解读**：分析对特定行业、公司或政策的态度变化
+- 🎯 **战略思维分析**：理解其决策逻辑和长期布局思路
+
+## 📊 待分析数据
+推文数据分析 - 优化嵌套结构：
+
+以下是经过结构优化的推文数据，采用嵌套JSON格式便于理解推文间的复杂关系：
+
+```json
+{
+  "total_tweets": 22,
+  "sample_tweets": [
+    {
+      "id": "1966515166708974008",
+      "author": "@elonmusk",
+      "text": "RT @shellenberger: Appalling. Democrats must take responsibility for the consequences of their decade-long dehumanization of conservatives.…",
+      "timestamp": "Fri Sep 12 14:52:06 +0000 2025",
+      "media": [],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966276899816255633",
+        "author": "@shellenberger",
+        "text": "Appalling. Democrats must take responsibility for the consequences of their decade-long dehumanization of conservatives.\n\n“When he was shot, there were cheers from the balcony [behind Kirk],” she said. “It was horrific to be a part of. There was just no human empathy.” https://t.co/m6GuCuqn69",
+        "timestamp": "Thu Sep 11 23:05:19 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "type": "quote_tweet",
+        "quoted_content": {
+          "id": "1966248377492058218",
+          "author": "@shellenberger",
+          "text": "Charlie Kirk created the environment that killed him, say many on the Left. It's a grotesque lie. For 10+ years, Democrats dehumanized conservatives to the point that half the Left says Trump's murder can be justified. Little wonder their condolences are falling on deaf ears https://t.co/jyzvjrRADi",
+          "timestamp": "Thu Sep 11 21:11:58 +0000 2025",
+          "media": [
+            "photo"
+          ],
+          "type": "original"
+        }
+      }
+    },
+    {
+      "id": "1966514792983666820",
+      "author": "@elonmusk",
+      "text": "RT @IrishKat00: But he's was said to be racist 👇 https://t.co/WfKQgb1vH7",
+      "timestamp": "Fri Sep 12 14:50:37 +0000 2025",
+      "media": [
+        "video"
+      ],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966471976010006951",
+        "author": "@IrishKat00",
+        "text": "But he's was said to be racist 👇 https://t.co/WfKQgb1vH7",
+        "timestamp": "Fri Sep 12 12:00:29 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966514246788718721",
+      "author": "@elonmusk",
+      "text": "RT @MarioNawfal: 🇺🇸 DALLAS HORROR: ILLEGAL IMMIGRANT BEHEADS MOTEL MANAGER, KICKS HEAD \"LIKE SOCCER BALL\"\n\nYordanis Cobos-Martinez, 37, dec…",
+      "timestamp": "Fri Sep 12 14:48:27 +0000 2025",
+      "media": [],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966441662550302941",
+        "author": "@MarioNawfal",
+        "text": "🇺🇸 DALLAS HORROR: ILLEGAL IMMIGRANT BEHEADS MOTEL MANAGER, KICKS HEAD \"LIKE SOCCER BALL\"\n\nYordanis Cobos-Martinez, 37, decapitated his boss with a machete after an argument about a broken washing machine at a Dallas motel.\n\nThe Cuban national chased Chandra Nagamallaiah, 50, into the office where his wife and son watched helplessly as he was slaughtered. \n\nCobos-Martinez then kicked the severed head across the parking lot before tossing it in a dumpster.\n\nICE had released him in January because Cuba refused to take him back due to his criminal history.\n\nHis rap sheet? Carjacking, assault, and a 2017 arrest for trying to carjack a woman while naked.\n\nSource: NYP",
+        "timestamp": "Fri Sep 12 10:00:01 +0000 2025",
+        "media": [
+          "photo",
+          "photo"
+        ],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966512122273075540",
+      "author": "@elonmusk",
+      "text": "RT @ChoooCole: I want you to read this statement @glaad put out so you all understand that it isn’t just a fringe group on the left that is…",
+      "timestamp": "Fri Sep 12 14:40:00 +0000 2025",
+      "media": [],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966269862130631084",
+        "author": "@ChoooCole",
+        "text": "I want you to read this statement @glaad put out so you all understand that it isn’t just a fringe group on the left that is justifying the murder of Charlie Kirk. \n\nThis is a multi-million dollar institution that accused Charlie of spreading lies and vitriol through @Riley_Gaines_ Pastor Junsun Yoo, and I.\n\n Naming the 3 of us in this statement is putting a target on our backs and It normalizes the violence that took place in Utah.\n\nThey do not care if we die because they think we are nazis. This is the reality of a large amount of the democrat party in America.",
+        "timestamp": "Thu Sep 11 22:37:21 +0000 2025",
+        "media": [
+          "photo",
+          "photo"
+        ],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966506620898394532",
+      "author": "@elonmusk",
+      "text": "RT @shaunmmaguire: I had multiple conversations with Charlie about antisemitism over the last month\n\nHe *correctly* pointed out that some f…",
+      "timestamp": "Fri Sep 12 14:18:09 +0000 2025",
+      "media": [],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966498308286734770",
+        "author": "@shaunmmaguire",
+        "text": "I had multiple conversations with Charlie about antisemitism over the last month\n\nHe *correctly* pointed out that some far-left Jewish organizations have undermined America\n\nBut he was an incredible ally for the Jews\n\nWe recorded a podcast last month which should be released soon",
+        "timestamp": "Fri Sep 12 13:45:07 +0000 2025",
+        "media": [],
+        "type": "quote_tweet",
+        "quoted_content": {
+          "id": "1966249933390164414",
+          "author": "@DanielMael",
+          "text": "What a correction from the @nytimes on Charlie Kirk. https://t.co/bXwcUAEzJ8",
+          "timestamp": "Thu Sep 11 21:18:09 +0000 2025",
+          "media": [
+            "photo"
+          ],
+          "type": "original"
+        }
+      }
+    },
+    {
+      "id": "1966505611270435294",
+      "author": "@elonmusk",
+      "text": "RT @Liberacrat: Charlie had a target on his back because of people like this guy who is clearly radicalized into oblivion by his University…",
+      "timestamp": "Fri Sep 12 14:14:08 +0000 2025",
+      "media": [],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966278873336684691",
+        "author": "@Liberacrat",
+        "text": "Charlie had a target on his back because of people like this guy who is clearly radicalized into oblivion by his University, Reddit, Mainstream Media and Democrat politicians who also spent the last decade demonizing Conservatives like Charlie Kirk. https://t.co/KGevTWBg9u",
+        "timestamp": "Thu Sep 11 23:13:09 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966501490916295101",
+      "author": "@elonmusk",
+      "text": "RT @Timcast: The amount of security I and other personalities have is not comparable to our left aligned counterparts so spare me your both…",
+      "timestamp": "Fri Sep 12 13:57:45 +0000 2025",
+      "media": [],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966480744198397953",
+        "author": "@Timcast",
+        "text": "The amount of security I and other personalities have is not comparable to our left aligned counterparts so spare me your both sides bullshit\n\nSpare me your fake NGO stats and talking points",
+        "timestamp": "Fri Sep 12 12:35:19 +0000 2025",
+        "media": [],
+        "type": "quote_tweet",
+        "quoted_content": {
+          "id": "1966349189618549247",
+          "author": "@VigilantFox",
+          "text": "Jimmy Kimmel issues a statement on the tragic murder of Charlie Kirk — says “both sides” are guilty of “vile responses.”\n\n“We’re still trying to wrap our heads around the senseless murder of the popular podcaster and conservative activist Charlie Kirk yesterday, whose death has amplified our anger—our differences. And I’ve seen a lot of extraordinarily vile responses to this from both sides of the political spectrum.”\n\nAnd of course, he couldn’t resist taking a shot at Trump in the end.",
+          "timestamp": "Fri Sep 12 03:52:34 +0000 2025",
+          "media": [
+            "video"
+          ],
+          "type": "original"
+        }
+      }
+    },
+    {
+      "id": "1966500617637249095",
+      "author": "@elonmusk",
+      "text": "RT @ScottPresler: Meet Charlotte Faye. \n\nThis transgender person said, \n\n“ill stomp, puke and piss on that f*gg*ts grave”\n\n“death to them a…",
+      "timestamp": "Fri Sep 12 13:54:17 +0000 2025",
+      "media": [],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966243373238595857",
+        "author": "@ScottPresler",
+        "text": "Meet Charlotte Faye. \n\nThis transgender person said, \n\n“ill stomp, puke and piss on that f*gg*ts grave”\n\n“death to them all:)”\n\nIt appears that Charlotte works at Valvoline in Richmond, VA. \n\nInsta: @ charlottefaye69\n\n📍Richmond, Virginia https://t.co/NXS8XuflHU",
+        "timestamp": "Thu Sep 11 20:52:05 +0000 2025",
+        "media": [
+          "photo",
+          "photo",
+          "photo",
+          "photo"
+        ],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966499149651607829",
+      "author": "@elonmusk",
+      "text": "This evil psycho stood up and cheered when Charlie Kirk was murdered in cold blood",
+      "timestamp": "Fri Sep 12 13:48:27 +0000 2025",
+      "media": [],
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1966276227670605836",
+        "author": "@EndWokeness",
+        "text": "Never forget this video. Internalize it. This is how they'd react if it was you. https://t.co/1cxhskFVgB",
+        "timestamp": "Thu Sep 11 23:02:38 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966495916895969393",
+      "author": "@elonmusk",
+      "text": "RT @Timcast: \"When you tear out a man's tongue, you are not proving him a liar, you're only telling the world that you fear what he might s…",
+      "timestamp": "Fri Sep 12 13:35:36 +0000 2025",
+      "media": [],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966456037944209451",
+        "author": "@Timcast",
+        "text": "\"When you tear out a man's tongue, you are not proving him a liar, you're only telling the world that you fear what he might say.\"",
+        "timestamp": "Fri Sep 12 10:57:09 +0000 2025",
+        "media": [],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966495577861996976",
+      "author": "@elonmusk",
+      "text": "RT @cb_doge: The left has become the party of hate and violence.",
+      "timestamp": "Fri Sep 12 13:34:16 +0000 2025",
+      "media": [],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966378261052825779",
+        "author": "@cb_doge",
+        "text": "The left has become the party of hate and violence.",
+        "timestamp": "Fri Sep 12 05:48:05 +0000 2025",
+        "media": [],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966495069529079903",
+      "author": "@elonmusk",
+      "text": "RT @VigilantFox: NOW: Journalist Michael Shellenberger just dropped the hammer...and said what the media will NEVER admit about Charlie Kir…",
+      "timestamp": "Fri Sep 12 13:32:14 +0000 2025",
+      "media": [],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966274699517690119",
+        "author": "@VigilantFox",
+        "text": "NOW: Journalist Michael Shellenberger just dropped the hammer...and said what the media will NEVER admit about Charlie Kirk’s assassination.\n\nThis isn’t about one deranged shooter. \n\nThis is about an ENTIRE malignant culture that made political violence inevitable.  \n\nNow @shellenberger says it’s time for those responsible to be held accountable. \n\n“Look, I think it’s not likely to happen but the people that did this dehumanization need to take responsibility for it.”\n\n“I don’t think that it’s good enough not to just express lament about the assassination of Charlie Kirk.”\n\n“I think the media, the left, the universities in particular, need to own up to the fact that they participated in the very dehumanization that they for decades had been criticizing when done by people on the right.”\n\n“I don’t think that healing is going to be possible until some acknowledgement of really a decade-long dehumanization of roughly half of the country.”",
+        "timestamp": "Thu Sep 11 22:56:34 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966493722951995463",
+      "author": "@elonmusk",
+      "text": "!!",
+      "timestamp": "Fri Sep 12 13:26:53 +0000 2025",
+      "media": [],
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1966459171865260338",
+        "author": "@Timcast",
+        "text": "I was SWATted 15 times in one year. \n\nI had the bomb squad at my studio twice.\n\nWe had to evacuate for 3 hours during our show.\n\nLast year a man in a dress attacked one of my employees at our old location.\n\nWe have armed guards.\n\nThis is how its been because of the Left",
+        "timestamp": "Fri Sep 12 11:09:36 +0000 2025",
+        "media": [],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966417879118876756",
+      "author": "@elonmusk",
+      "text": "RT @naiivememe: https://t.co/npJ57vmc9P",
+      "timestamp": "Fri Sep 12 08:25:31 +0000 2025",
+      "media": [
+        "photo",
+        "photo"
+      ],
+      "type": "retweet",
+      "original_content": {
+        "id": "1965976240965431411",
+        "author": "@naiivememe",
+        "text": "https://t.co/npJ57vmc9P",
+        "timestamp": "Thu Sep 11 03:10:36 +0000 2025",
+        "media": [
+          "photo",
+          "photo"
+        ],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966417806624518332",
+      "author": "@elonmusk",
+      "text": "RT @iAnonPatriot: THIS.. 🔥🔥 https://t.co/rkyJHk7YG3",
+      "timestamp": "Fri Sep 12 08:25:14 +0000 2025",
+      "media": [
+        "photo"
+      ],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966276253578568020",
+        "author": "@iAnonPatriot",
+        "text": "THIS.. 🔥🔥 https://t.co/rkyJHk7YG3",
+        "timestamp": "Thu Sep 11 23:02:45 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966415517004230736",
+      "author": "@elonmusk",
+      "text": "RT @w_terrence: I'm heartbroken. Charlie Kirk passing away is a hard pill to swallow. \n\nI never imagined typing this out, \nit hurts so much…",
+      "timestamp": "Fri Sep 12 08:16:08 +0000 2025",
+      "media": [],
+      "type": "retweet",
+      "original_content": {
+        "id": "1965904442529820852",
+        "author": "@w_terrence",
+        "text": "I'm heartbroken. Charlie Kirk passing away is a hard pill to swallow. \n\nI never imagined typing this out, \nit hurts so much. Things will never be the same without him. \n\nHe was a great friend to me, he treated me like a brother, opened doors for me and so many others and inspired us all with his unwavering spirit. \n\nHe leaves behind two kids and a wife who he cherished deeply. \n\nCharlie was a great American, fighting for what he believed in every day. \n\nRest in peace, brother. 💔",
+        "timestamp": "Wed Sep 10 22:25:18 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966400920243331350",
+      "author": "@elonmusk",
+      "text": "RT @Grummz: Asmongold's video is out. \"These people are f-ing evil\"\n\nHe's fired up and rips into the game companies.\n\n\"These people are pro…",
+      "timestamp": "Fri Sep 12 07:18:08 +0000 2025",
+      "media": [],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966315358656270340",
+        "author": "@Grummz",
+        "text": "Asmongold's video is out. \"These people are f-ing evil\"\n\nHe's fired up and rips into the game companies.\n\n\"These people are protected... These are violent animals.\" https://t.co/n4t4TCn33O",
+        "timestamp": "Fri Sep 12 01:38:08 +0000 2025",
+        "media": [
+          "video"
+        ],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966387485044592888",
+      "author": "@elonmusk",
+      "text": "Yes",
+      "timestamp": "Fri Sep 12 06:24:44 +0000 2025",
+      "media": [],
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1966108273200763011",
+        "author": "@CharlotteCGill",
+        "text": "STOP CALLING NORMAL PEOPLE FAR RIGHT",
+        "timestamp": "Thu Sep 11 11:55:15 +0000 2025",
+        "media": [],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966383327138725961",
+      "author": "@elonmusk",
+      "text": "RT @SecRubio: The political persecutions by sanctioned human rights abuser Alexandre de Moraes continue, as he and others on Brazil's supre…",
+      "timestamp": "Fri Sep 12 06:08:13 +0000 2025",
+      "media": [],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966257934129864715",
+        "author": "@SecRubio",
+        "text": "The political persecutions by sanctioned human rights abuser Alexandre de Moraes continue, as he and others on Brazil's supreme court have unjustly ruled to imprison former President Jair Bolsonaro.\n\nThe United States will respond accordingly to this witch hunt.",
+        "timestamp": "Thu Sep 11 21:49:57 +0000 2025",
+        "media": [],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966374889390223601",
+      "author": "@elonmusk",
+      "text": "RT @FBISaltLakeCity: The FBI is releasing video of the shooter who murdered Charlie Kirk at Utah Valley University on September 10, 2025. F…",
+      "timestamp": "Fri Sep 12 05:34:41 +0000 2025",
+      "media": [],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966320840544227680",
+        "author": "@FBISaltLakeCity",
+        "text": "The FBI is releasing video of the shooter who murdered Charlie Kirk at Utah Valley University on September 10, 2025. Following the shooting, the individual jumps from a rooftop and runs away from the location. Trace evidence collected from the rooftop includes shoe impressions, a forearm imprint, and a palm print. The shooter's weapon and ammunition were recovered from a wooded area near the university. The full video can be viewed at https://t.co/BIzOcmmFqQ.",
+        "timestamp": "Fri Sep 12 01:59:55 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966297078449188942",
+      "author": "@elonmusk",
+      "text": "It has indeed come to this",
+      "timestamp": "Fri Sep 12 00:25:30 +0000 2025",
+      "media": [],
+      "type": "quote_tweet",
+      "quoted_content": {
+        "id": "1966288413939659079",
+        "author": "@SwipeWright",
+        "text": "This needed an update. https://t.co/Pb7kuP7NGZ",
+        "timestamp": "Thu Sep 11 23:51:04 +0000 2025",
+        "media": [
+          "photo"
+        ],
+        "type": "original"
+      }
+    },
+    {
+      "id": "1966296822680531288",
+      "author": "@elonmusk",
+      "text": "RT @jk_rowling: If you believe free speech is for you but not your political opponents, you're illiberal.\n\nIf no contrary evidence could ch…",
+      "timestamp": "Fri Sep 12 00:24:29 +0000 2025",
+      "media": [],
+      "type": "retweet",
+      "original_content": {
+        "id": "1966256971134234678",
+        "author": "@jk_rowling",
+        "text": "If you believe free speech is for you but not your political opponents, you're illiberal.\n\nIf no contrary evidence could change your beliefs, you're a fundamentalist.\n\nIf you believe the state should punish those with contrary views, you're a totalitarian.\n\nIf you believe political opponents should be punished with violence or death, you're a terrorist.",
+        "timestamp": "Thu Sep 11 21:46:07 +0000 2025",
+        "media": [],
+        "type": "original"
+      }
+    }
+  ],
+  "structure_info": {
+    "original_tweets": 0,
+    "retweets": 18,
+    "quote_tweets": 4,
+    "complex_retweets": 3
+  }
+}
+```
+
+数据结构说明：
+- type: 推文类型 (original/retweet/quote_tweet)
+- original_content: 转推的原始内容
+- quoted_content: 引用的推文内容
+- media: 媒体类型列表 (photo/video等)
+- 为节省空间，已省略详细的互动数据
+
+完整数据统计：
+总推文数：22
+原创推文：4
+转推：18
+含媒体：3
+
+
+## 📝 请按以下结构生成总结报告：
+
+### 📊 数据概览
+- 时间范围和推文数量统计
+- 内容类型分布（原创/转推/引用等）
+
+### 🔍 核心关注点分析
+根据用户特点，重点分析以下内容：
+- **商业投资机会相关的关键信息**
+- **实用价值提取**：可直接应用的信息、资源、机会等
+- **趋势信号识别**：值得关注的发展方向和变化
+
+### 💎 精华内容提炼  
+选择2-3条最有价值的推文进行深度解析：
+- 具体内容和背景context
+- 实用价值和应用建议
+- 相关的学习资源或投资机会
+
+### 🚀 行动建议
+基于分析结果，提供具体的：
+- **立即可行的行动项**（学习资源、工具试用、关注方向等）
+- **中期关注重点**（技术发展、市场变化、投资时机等）  
+- **长期趋势把握**（战略思考、能力建设方向等）
+
+### 📈 价值评级
+对整体内容进行价值评估：
+- 🔥 高价值：立即值得深入研究或行动
+- 📚 学习价值：值得学习和理解的内容
+- 📊 趋势价值：值得长期观察的发展方向
+
+## ✅ 输出要求：
+1. 使用中文输出，保持专业性
+2. **突出实用价值**，避免空洞分析
+3. **提供具体建议**，而非泛泛而谈
+4. 格式清晰，重点突出
+5. 基于数据客观分析，避免主观臆测
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @elonmusk的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

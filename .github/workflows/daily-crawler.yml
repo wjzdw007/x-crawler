@@ -113,9 +113,8 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-          # 添加数据文件
+          # 只添加爬虫数据文件（report.md 只保存在 Artifacts 中）
           git add crawler_data/
-          git add report.md
 
           # 检查是否有变更
           if git diff --staged --quiet; then

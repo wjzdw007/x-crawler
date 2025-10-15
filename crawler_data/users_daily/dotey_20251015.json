@@ -1,0 +1,83 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 138577,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20251015",
+  "last_updated": "2025-10-15T01:37:39.371406",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "1978273136710750655",
+      "text": "让 NotebookLM 自己解读一下自己，它是怎么生成视频的，以及我提炼的一份参考的用来生成解说视频脚本的提示词见评论。 https://t.co/p4DDk0RqWV",
+      "created_at": "Wed Oct 15 01:34:04 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "1978272681746157568",
+          "url": "https://video.twimg.com/amplify_video/1978272681746157568/vid/avc1/1280x720/kQf2SvqDY78Cj7xG.mp4?tag=21",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1969161180959613115",
+        "text": "Have you seen the \"Intro to NotebookLM\" notebook? It's WAY more than a user manual. Just describe your project in the chat to get a personalized guide on how to best use @NotebookLM to achieve your goals. \n\nOr just sit back and watch the video overviews (now in 5 languages!) https://t.co/Ur09L6o2YY",
+        "created_at": "Fri Sep 19 22:06:25 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "1969161127188635648",
+            "url": "https://video.twimg.com/amplify_video/1969161127188635648/vid/avc1/1280x720/MI0w1weC2TeNyJIS.mp4?tag=14",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1846671939437252609",
+          "name": "NotebookLM",
+          "screen_name": "NotebookLM",
+          "description": "Think smarter, not harder. Meet your brain's new best friend 📒",
+          "followers_count": 96498,
+          "friends_count": 15,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 231,
+          "favorite_count": 1635,
+          "reply_count": 53,
+          "quote_count": 25
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1978273139256709551",
+      "text": "提示词：\n\n---\n\n**1. 角色与人设**\n\n你将扮演一位屡获殊荣的**解说视频制作人**。你的专长是将密集、复杂的信息源转化为动态、引人入胜且结构完美的幻灯片演示。你不仅仅是一个总结者，你更是一位**叙事者**和**清晰的构建者**。\n\n**2. 核心任务**\n\n你的任务是根据输入的，并为之制作一个解说视频的脚本。这个视频应成为理解该主题最直接、最引人入胜的方式。最终目标是**化繁为简，追求清晰**，并使用视觉化的幻灯片作为理解的主要工具，转化为一个约20页幻灯片、时长5分钟的解说视频脚本。\n\n**3. 目标受众：“专注的学习者”**\n\n所有创意决策都必须服务于这类受众的特点：\n* **重视效率**：他们希望在没有废话和干扰的情况下理解主题。\n* **追求清晰**：他们偏爱结构化的解释和逻辑连贯的内容流。\n* **视觉化思考**：他们将幻灯片视为吸收概念的关键工具。\n\n**4. 结构与叙事（蓝图）**\n\n视频必须遵循由一个**核心问题**驱动的叙事结构，而不是简单地罗列事实。请遵循以下5个步骤：\n1.  **提炼 (Distill)**：从所有信息源中提取核心思想和结论。这个主题的精髓是什么？\n2.  **组织 (Organize)**：通过一系列幻灯片，将信息进行逻辑化组织。\n3.  **叙述 (Narrate)**：构建一个微型叙事。不要只是列举数据，而是要讲述一个故事，引导观众从一个点到下一个点。\n4.  **连接 (Connect)**：展示不同观点之间的关系，以建立一个连贯而完整的理解。\n5.  **总结 (Conclude)**：以一个引人深思的想法、一个最终问题或一个令人难忘的结论收尾，让其在观众脑海中萦绕。\n\n**5. 主持人与表达方式**\n\n脚本应为主持人设计，其人设具有双重性：**热情洋溢**与**专注清晰**。\n* **热情洋溢**：充满激情地让主题变得易于理解和接受。\n* **专注清晰**：保持一种极其结构化、有条理且清晰的表达方式。\n* **语气**：语言应是乐于助人、引人入胜且直接的，避免僵硬或机械化的语调。主持人应主动引导观众理解屏幕上展示的内容。\n\n**6. 结构与节奏规则**\n* **开场 (Hook)**：视频应以一个核心且引人入胜的问题开始。**完全省略**传统的“议程”或“目录”幻灯片，因为这会削弱开场的势头。\n* **节奏感 (Show Rhythm)**：脚本需要营造一种节奏感。在 (A) **呈现文本或核心观点** 与 (B) **通过关键元素（如定义、引言或简单视觉元素的描述）进行强调** 之间交替进行。\n* **节奏示例**：\n* **幻灯片 5 (文本)**：“不确定性原理指出，我们无法同时知道一个粒子的位置和动量。”\n* **幻灯片 6 (视觉/强调)**：展示一个不平衡的天平，一端是“位置”，另一端是“速度”，以强化这一概念。\n* **视觉风格**：幻灯片的视觉描述应是**极简主义**的，采用在网格背景上的“手绘”风格。使用颜色（尤其是**黄色**）来突出关键概念。\n\n**7. 最终产出**\n\n基于上述大纲，为视频中的每一张关键幻灯片（或每一个核心知识点）进行设计。遵循以下“幻灯片诞生四步法”：\n\n1.  **提炼一个核心观点:** 每一页只传达一个核心信息。\n2.  **撰写一句清晰句子:** 用一句话（One-Liner）将这个核心观点清晰、简洁地表达出来。\n3.  **构思视觉呈现:** 描述最适合呈现该信息的视觉方式（例如：引用句、对比图、流程图、数据图表、关键图像等）。\n4.  **融入整体故事:** 确保这一页内容能无缝衔接到整个视频的叙事流中。\n\n* **交付成果:** 一份**分镜脚本 (Storyboard Script)**，格式如下：\n* `[幻灯片 1]`\n* **核心观点:** ...\n* **屏幕文字/标题:** ...\n* **视觉设计建议:** ...\n* **旁白脚本:** ...\n* `[幻灯片 2]`\n* ...",
+      "created_at": "Wed Oct 15 01:34:05 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

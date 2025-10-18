@@ -1,0 +1,693 @@
+# LLM Prompt 保存记录
+生成时间: 2025-10-18 01:37:51
+总结类型: user_daily
+用户: @dotey
+推文数量: 14
+数据哈希: 745b30fd
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+dotey是一个技术专家，经常会分析一些ai的话题，帮我看看有什么新的工具/想法/方法论/实践经验等值得关注学习。
+
+## 推文数据（JSON格式）
+```json
+[
+  {
+    "id": "1978988411940688022",
+    "text": "CNBC记者透露：GPT-6将在今年年底前发布！\n\n这位记者表示，他的消息源是布拉德·格斯特纳（Brad Gerstner）。布拉德是公开的OpenAI投资人，并且经常与OpenAI的高层交流。\nhttps://t.co/4KSl51lvi7",
+    "created_at": "Fri Oct 17 00:56:19 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "video",
+        "id": "1978933544555552768",
+        "url": "https://video.twimg.com/amplify_video/1978933544555552768/vid/avc1/3744x2160/4Np6IPKA4rWWhpii.mp4?tag=21",
+        "bitrate": 25128000
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 7,
+      "reply_count": 2,
+      "quote_count": 1
+    }
+  },
+  {
+    "id": "1979009783408558246",
+    "text": "之前谈 Subagent 的推文\nhttps://t.co/lPMAG7Dio2",
+    "created_at": "Fri Oct 17 02:21:15 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1935794151293083803",
+      "text": "我看到有人在让“Claude Code”自己开新进程 `claude -p `实现多任务，其实没必要，有更简单的办法。这个简单办法就是让它自己开子 Agent。Claude Code 现在有 18 个工具，最特殊的一个工具叫 Task，它本质就是一个 Claude Code 的克隆工具，只不过是作为 Claude Code 的一个工具。\n\n如果你懂递归的话就很好理解。如果你不懂递归，可以这么理解：Claude Code 是个 AI 程序员，它可以用一堆工具，其中最神奇的一个工具叫 Task，就是克隆一个自己的分身去干活！\n\n这样做有什么好处呢？就是可以并行多任务，还可以控制上下文，让子任务更专注。\n\n举例来说，你粘贴一段错误代码让 Claude Code 去 Debug，并且还让它写测试代码覆盖这个错误。Claude Code 会先调用 TodoWrite 这个工具写一个 TODO List。把任务分成 3 步：\n\n- [ ] 根据错误信息收集相关代码\n- [ ] 根据错误信息和相关代码解决 Bug\n- [ ] 写新的测试覆盖\n\n这一步完了后它会起一个 Task，这个 Task 就是专门根据错误信息去找到相关代码的位置，那么这个子任务只需要接受错误信息找上下文，它不管怎么解决 Bug，也不管怎么写测试覆盖。\n\n主任务就会等这个子任务完成，子任务完成后，主任务就调用 TODO Write 更新 TODO List。\n\n- [x] 根据错误信息收集相关代码\n- [ ] 根据错误信息和相关代码解决 Bug\n- [ ] 写新的测试覆盖\n\n然后调用 TodoRead 工具看下一步要干嘛，现在有充足上下文了，它可以再起一个子任务去根据错误信息和代码修复 Bug，等修复 Bug 的子任务完成了，再回到主任务，继续更新 TODO List，继续读取下一个 Item\n\n最后再启动一个子任务去写测试，测试子任务也完成了，返回结果到主任务，这时候调用 TodoRead 一看任务都处理完了，最后根据前面的任务情况给你一个总结摘要，表示任务都完成了。\n\nClaude Code 真的没有做什么工程上的优化，什么上下文压缩、临时存储，都没有的！就是简单粗暴：\n1. 把用户问题、系统提示词、能用到的工具一股脑发给 Claude，问下一步该干嘛\n2. Claude 就返回说现在你要到 TodoWriter 工具\n3. Claude Code 就去调用 TodoWriter 工具，本质上也是一个 AI 请求，最后返回生成的 Todo List\n4. 然后 Claude Code 把工具返回结果和前面的所有消息继续发给 Claude，Claude 返回说你现在要去起一个新的 Task 去收集代码了\n5. 然后 Claude Code 就起一个新的 Task，把错误信息和要求收集相关代码的任务说明、系统提示词、环境说明、能用到的工具一股脑发给 Claude，问下一步该干嘛\n  - 在新的 Task 里面，就是不停的问 Claude 该用啥工具，然后发送工具结果和前面所有历史消息\n  - 任务完成后，返回任务结果\n6. 然后 Claude Code 把子 Task 的结果和前面历史信息一起发给 Claude 问下一步干嘛\n7. 就这样循环直到 Claude 认为任务完成了\n\n所以你经常看到 Claude Code 在那几十分钟上下文也没爆掉，因为它会启动子任务，这样上下文就分摊到子任务中了，主任务中只是保留子任务完成后的内容。",
+      "created_at": "Thu Jun 19 20:17:45 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1935786622198386688",
+          "url": "https://pbs.twimg.com/media/Gt1LrTkWkAAINrA.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1935789373322104834",
+          "url": "https://pbs.twimg.com/media/Gt1OLcTXEAIP9Cp.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1935790199973224448",
+          "url": "https://pbs.twimg.com/media/Gt1O7j0WIAAf2kW.jpg"
+        },
+        {
+          "type": "video",
+          "id": "1935790834911215616",
+          "url": "https://video.twimg.com/amplify_video/1935790834911215616/vid/avc1/1440x1080/vUKTS8G2kQTMoPVn.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 139239,
+        "friends_count": 1430,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 28,
+        "favorite_count": 223,
+        "reply_count": 8,
+        "quote_count": 7
+      }
+    },
+    "stats": {
+      "retweet_count": 2,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979021154485469486",
+    "text": "RT @AztecaAlpaca: 吴恩达的课程，使用NotebookLM，已经整理完毕。一共五个模块，在本帖下评论区将依次附上其笔记链接。\n\n这些材料适合作为原课程的补充材料，而非主菜。原课程中除了免费的视频可供学习之外，还提供了若干Jupyter Notebook的练习！…",
+    "created_at": "Fri Oct 17 03:06:26 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1978845245975445828",
+      "text": "吴恩达的课程，使用NotebookLM，已经整理完毕。一共五个模块，在本帖下评论区将依次附上其笔记链接。\n\n这些材料适合作为原课程的补充材料，而非主菜。原课程中除了免费的视频可供学习之外，还提供了若干Jupyter Notebook的练习！ https://t.co/KXiqKCHnOY",
+      "created_at": "Thu Oct 16 15:27:26 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1978841475153555456",
+          "url": "https://pbs.twimg.com/media/G3ZB1llWcAAdkd3.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1725169104963657728",
+        "name": "阿兹特克小羊驼🦙",
+        "screen_name": "AztecaAlpaca",
+        "description": "热爱阅读，热衷原创与深度思考，致力于开放地观察一切，喜欢解构虚无的价值。聊技术、社会和八卦，偶尔幽默吐槽，探索知识的火花！\n\n欢迎访问我的博客网站 https://t.co/w2N0PXsp8K。立志做内容消费的Costco，让您获得苹果般的阅读体验！\n\n⚽ AztecaAlpaca 🦙 \n🇨🇳👊🔥",
+        "followers_count": 627,
+        "friends_count": 446,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 163,
+        "favorite_count": 573,
+        "reply_count": 11,
+        "quote_count": 5
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 163,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979025319110553673",
+    "text": "RT @shao__meng: [开源推荐] Open Agent Builder: @firecrawl_dev 团队真的把「OpenAI Agent Builder」开源了！结合 Firecrawl 本身的网络抓取和数据提取解析能力，通过 n8n、Agent Builder…",
+    "created_at": "Fri Oct 17 03:22:59 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1978988534603378982",
+      "text": "[开源推荐] Open Agent Builder: @firecrawl_dev 团队真的把「OpenAI Agent Builder」开源了！结合 Firecrawl 本身的网络抓取和数据提取解析能力，通过 n8n、Agent Builder 类的拖拽式界面，快速创建 AI 智能体管道！\n\n项目目的\n简化 AI 智能体工作流的构建过程，避免传统代码编写的高复杂性。通过集成 Firecrawl 的网络抓取能力，它支持从简单数据提取到多步骤自动化任务的管道设计，适用于网络抓取、内容生成、数据分析和带人工干预的 web 自动化等场景。该工具强调可靠的状态管理和「human-in-the-loop」支持，确保工作流在生产环境中稳定运行。\n\n关键特性\n· 视觉化构建：拖拽式界面，支持 8 种核心节点类型（如起始节点、智能体节点、工具调用节点），并提供预置模板库。\n· 实时执行：工作流运行时提供流式更新，支持条件路由、循环和人工审批中断。\n· 集成支持：原生集成 Firecrawl 用于抓取和搜索；兼容多种 LLM（如 Claude、GPT-5、 @GroqInc）；通过 MCP 协议扩展外部工具。\n· 企业级功能：使用 LangGraph 引擎管理状态，@ClerkDev 处理认证，@convex_dev 数据库持久化数据；提供 API 接口以实现程序化调用。\n· 可扩展性：支持自定义 MCP 工具注册和沙箱代码执行（via @e2b）。\n\n架构概述\n· 前端（Next.js + React + Tailwind，用于 UI 构建和实时显示）\n· 后端（Next.js API 路由 + LangGraph 执行器，处理工作流编排和流式响应）\n· 集成层（Firecrawl、LLM 和 MCP 服务器）\n\n所有组件共享 Convex 数据库，用于存储工作流、执行历史和用户配置。前端通过后端 API 与集成层交互，确保数据实时同步和安全认证。\n\n工作原理\n构建和执行工作流的过程简化为以下步骤：\n1. 设计阶段：在画布上拖拽节点并连接（如起始节点 → 智能体节点 → 工具节点 → 结束节点），配置输入（如 URL 或指令）。\n2. 启动执行：通过 UI 点击“运行”或 API 调用，提供初始输入。\n3. 处理阶段：LangGraph 在服务器端协调执行，支持条件分支（If/Else）、循环（While Loop）和工具调用（MCP Tools，如 Firecrawl 的 scrape/search）。实时通过 SSE 流传输更新。\n4. 交互与输出：智能体节点使用 LLM 进行推理；人工审批节点暂停等待用户确认；结束节点返回最终结果，并持久化到数据库。\n\n整个过程强调模块化和可中断性，确保复杂管道（如多页研究）高效运行。\n\n示例与用例\n· 简单网络抓取：起始 → Firecrawl 抓取 → 智能体总结 → 结束。输入 URL，输出 AI 生成的摘要。\n· 多页研究：起始 → Firecrawl 搜索 → 循环抓取 → 智能体合成 → 结束。适用于自动化市场分析。\n· 竞争情报：解析公司列表 → 循环研究与提取 → 人工审批 → 导出报告。结合条件路由和循环，生成结构化输出。\n· 价格监控：循环抓取价格 → 比较 → 通知 → 结束。支持定时触发（未来功能）。",
+      "created_at": "Fri Oct 17 00:56:49 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1978988390361001984",
+          "url": "https://pbs.twimg.com/media/G3bHdLYW8AAj_Il.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1978852506286571737",
+        "text": "Announcing Open Agent Builder - A @firecrawl_dev powered n8n-style workflow builder example app\n\nBuild AI agent workflows with a visual canvas by connecting Firecrawl, LLMs, logic nodes, and MCPs, then deploy as an API.\n\nFork the repo and build your own workflow app today 👇 https://t.co/d16yW9XA7D",
+        "created_at": "Thu Oct 16 15:56:17 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "1978852448010948608",
+            "url": "https://video.twimg.com/amplify_video/1978852448010948608/vid/avc1/1280x720/OPJHRf6diZvmOoWN.mp4?tag=14",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1339681268263432192",
+          "name": "Caleb Peffer (Hiring!)",
+          "screen_name": "CalebPeffer",
+          "description": "Co-founder and CEO @firecrawl_dev ️‍🔥",
+          "followers_count": 5871,
+          "friends_count": 368,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 31,
+          "favorite_count": 354,
+          "reply_count": 22,
+          "quote_count": 12
+        }
+      },
+      "user": {
+        "id": "1727548535816724480",
+        "name": "meng shao",
+        "screen_name": "shao__meng",
+        "description": "专注 - Context Engineering, AI(Coding)Agents.\n分享 - AI papers, apps and OSS.\n\nex Microsoft MVP\n\n合作 - 私信/邮箱：shaomeng@outlook.com\n\n📢 公众号/小红书: AI 启蒙小伙伴\n\n🔗 信息卡提示词 🔽",
+        "followers_count": 18779,
+        "friends_count": 1079,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 42,
+        "favorite_count": 130,
+        "reply_count": 3,
+        "quote_count": 1
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 42,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979041449892004117",
+    "text": "确实，Manus 很聪明，他们把工具分成了 3 层：\n\n第 1 层：函数调用 (Function Calling)\n\n这是最基础的一层，只保留一小组固定的、原子化的函数，比如：读写文件、执行 Shell 命令、搜索文件等。在 LLM 的系统提示词中就只有这一层的工具定义，相对比较少，15 个以内，输入格式和输出格式都很清晰，不容易出错，但这里面有两个工具很特殊，一个是 Shell， 一个是 File。\n\n第 2 层：沙箱工具 (Sandbox Utilities)\n\n每个 Manus 会话都运行在一个完整的虚拟机沙箱里。就是原推文提到的，虚机预装了很多命令行工具，比如格式转换器、语音识别工具，甚至一个 mcp 命令行客户端。\n\n然后这些工具都通过第 1 层中定义的 Shell 来调用，就是命令行工具，命令行调用。\n\n但是这么多工具模型怎么知道呢？\n\nManus 在系统提示词里会直接告诉 LLM，在一个特定的文件夹里有很多预装的命令行工具。对于最常用的工具，直接列出它们的名字。不常用的，LLM 可以直接通过原推提到的命令列出所有命令行工具，通过 --help 参数来查看任何一个工具的用法，因为所有这些工具都是他们自己开发的，格式统一。\n\n第 3 层：代码包与 API (Packages and APIs)\n\n这一层其实就是 LLM 实时编写 Python 代码，通过代码实现更复杂的功能。比如用户想查询某个 API 的数据，可以直接用 Python 写一个函数，fetch API 的数据，并解析成需要的格式。\n\n其实在 Codex 中，用 Python 代码当工具已经用的很多了。\n\n由于复杂的运算都是代码完成的，返回给 主 Agent 的知识计算后的结果，所以并不会占用主 Agent 的上下文。\n\n这样 3 层设计的好处是，从模型的角度看，它需要调用的工具就固定是第 1 层的十几个，而借助命令行和代码，它又可以衍生出无数的工具组合。\n\n还有一点就是我在之前推文提到的子智能体，Manus 也是大量采用“智能体即工具 (agent as tool)”的模式。把子智能体当工具用，比如负责检索是一个子智能体，但是这个子智能体在主 Agent 看来就是一个工具。同时也可以很好的起到减少上下文的效果。",
+    "created_at": "Fri Oct 17 04:27:05 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1979038453019865088",
+        "url": "https://pbs.twimg.com/media/G3b0_NUWcAAl8y9.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": {
+      "id": "1979030811656573183",
+      "text": "Claude 的 Agent Skills 本质上是一种“上下文卸载”，把冗长的技能信息移出上下文，按需加载。巧的是最近 Manus 的 Peak 也分享一些“上下文卸载”的技巧。Manus 有很多工具，但是并不会把这些工具的完整定义告诉模型。那它怎么知道有哪些工具，又怎么调用它们呢？想象一下，给你一台新电脑，你怎么知道有哪些工具能用？普通用户会打开应用程序的列表，程序员会 `ls /usr/bin` 看一下有哪些命令可以用。\n\n同样的，Manus 的解法是在系统提示词中，告诉模型在某个特定文件夹里，有许多预装的命令行实用工具。那些最常用的工具（ls、grep、cat、less、more等），就默认内置在系统提示里面的。不需要告诉模型如何使用这些工具，只需要列出工具名，然后告诉它可以使用 --help 参数来了解如何使用工具。最妙的是这些 shell 操作模型都是学过的，所以它的泛化能力很强，要加新的工具只需要往文件夹里面放一个命令就行。\n\n我发现 Manus 真的是把 Unix 哲学贯彻到底了：KISS（Keep It Simple, Stupid）。",
+      "created_at": "Fri Oct 17 03:44:48 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1979026665301774336",
+          "url": "https://pbs.twimg.com/media/G3bqREpWkAAE-Qx.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "420282584",
+        "name": "汉松",
+        "screen_name": "Yonah_x",
+        "description": "大厂大模型应用开发 | AI 降临派 | 终身学习者 | Taste is all you need",
+        "followers_count": 6761,
+        "friends_count": 440,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 32,
+        "favorite_count": 189,
+        "reply_count": 6,
+        "quote_count": 5
+      }
+    },
+    "stats": {
+      "retweet_count": 121,
+      "favorite_count": 581,
+      "reply_count": 13,
+      "quote_count": 7
+    }
+  },
+  {
+    "id": "1979041865967042592",
+    "text": "PDF Skill\nhttps://t.co/l5i3LIYDY9",
+    "created_at": "Fri Oct 17 04:28:44 +0000 2025",
+    "lang": "es",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1979040149129371752",
+      "text": "@dotey 这个pdf的skill 已经在claude code 中了。看之前有人hack了一下prompt，输出了目前支持的skills。\n\nhttps://t.co/EiEzRrlv5j",
+      "created_at": "Fri Oct 17 04:21:54 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "148027226",
+        "name": "Leo Xiang",
+        "screen_name": "leeoxiang",
+        "description": "10年RTC音视频经验，专注于实时通信技术；\n\n目前在负责Voice + AI方向的云产品；\n\n奶爸，正在教刚出生的小宝宝学习大模型；\n\n个人言论跟公司无关。\n\nhttps://t.co/KpaWku9xfX\nhttps://t.co/SUN1RBbkH4",
+        "followers_count": 16733,
+        "friends_count": 848,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 10,
+        "reply_count": 0,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 3,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979082046203945420",
+    "text": "RT @frxiaobei: 这段时间，大家对 AI agent 的期待开始从幻想全能走向建设系统，稳稳干活这件事越来越被关注。\n\n这其实是个合理回调。幻想太多实践太少带来的就是泡沫狂欢。预期回落之后，才开始看到一些工程视角更完整、运行机制更清晰的架构设计跑出来。\n\n先抛个共识…",
+    "created_at": "Fri Oct 17 07:08:24 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1979080334156402805",
+      "text": "这段时间，大家对 AI agent 的期待开始从幻想全能走向建设系统，稳稳干活这件事越来越被关注。\n\n这其实是个合理回调。幻想太多实践太少带来的就是泡沫狂欢。预期回落之后，才开始看到一些工程视角更完整、运行机制更清晰的架构设计跑出来。\n\n先抛个共识出来：语言模型能调用工具 ≠ 能完成任务。\n\n大家的目标很一致：agent 想完成复杂任务，靠 prompt 编程是走不远的。LLM 要在什么边界内学会控制组合，有点类似于 agent+workflow 逻辑之上的进一步验证。\n\nManus 这个也非常典型，继上一次的上下文工程六大法则之后，Manus 又往前迈了一步，他们没再幻想让 LLM 一口气接所有工具，而是老老实实把拆成模块化的结构。\n\n我个人非常认同这个方向，甚至可以说它定义了下一阶段 AgentOps 的底层参考结构。\n\n在我看来，这种设计方向至少明确了一件事：\nagent 在成为能干一切的通才之前，先稳扎稳打做一个可以调度不同专业能力的系统协调器。\n\n特别是 agent as tool 的机制，用子智能体模拟模块化外包，智能体之间可以互为工具，封装调用并且相互之间不污染上下文。这就是我之前说的上下文线程隔离和调度系统组件化这套逻辑，开始慢慢有了样子。\n\n这套逻辑可能是拆对工具、隔离好上下文、控制好调用深度、规划好执行流程，然后让智能体像微服务一样协作，而不是共享一个 prompt 狂堆 token。\n\n这次从自然语言调用工具到结构化调度能力的范式转移，Manus 提供的思路，值得每个人深度研究。\n\n接下来的方向我只想说一句：\n下一波 Agent 竞争，一定不会是 prompt 层的比拼，这是半年前的叙事逻辑。一步是 AgentOps + 系统架构层的总成效能的比拼。",
+      "created_at": "Fri Oct 17 07:01:35 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1979041449892004117",
+        "text": "确实，Manus 很聪明，他们把工具分成了 3 层：\n\n第 1 层：函数调用 (Function Calling)\n\n这是最基础的一层，只保留一小组固定的、原子化的函数，比如：读写文件、执行 Shell 命令、搜索文件等。在 LLM 的系统提示词中就只有这一层的工具定义，相对比较少，15 个以内，输入格式和输出格式都很清晰，不容易出错，但这里面有两个工具很特殊，一个是 Shell， 一个是 File。\n\n第 2 层：沙箱工具 (Sandbox Utilities)\n\n每个 Manus 会话都运行在一个完整的虚拟机沙箱里。就是原推文提到的，虚机预装了很多命令行工具，比如格式转换器、语音识别工具，甚至一个 mcp 命令行客户端。\n\n然后这些工具都通过第 1 层中定义的 Shell 来调用，就是命令行工具，命令行调用。\n\n但是这么多工具模型怎么知道呢？\n\nManus 在系统提示词里会直接告诉 LLM，在一个特定的文件夹里有很多预装的命令行工具。对于最常用的工具，直接列出它们的名字。不常用的，LLM 可以直接通过原推提到的命令列出所有命令行工具，通过 --help 参数来查看任何一个工具的用法，因为所有这些工具都是他们自己开发的，格式统一。\n\n第 3 层：代码包与 API (Packages and APIs)\n\n这一层其实就是 LLM 实时编写 Python 代码，通过代码实现更复杂的功能。比如用户想查询某个 API 的数据，可以直接用 Python 写一个函数，fetch API 的数据，并解析成需要的格式。\n\n其实在 Codex 中，用 Python 代码当工具已经用的很多了。\n\n由于复杂的运算都是代码完成的，返回给 主 Agent 的知识计算后的结果，所以并不会占用主 Agent 的上下文。\n\n这样 3 层设计的好处是，从模型的角度看，它需要调用的工具就固定是第 1 层的十几个，而借助命令行和代码，它又可以衍生出无数的工具组合。\n\n还有一点就是我在之前推文提到的子智能体，Manus 也是大量采用“智能体即工具 (agent as tool)”的模式。把子智能体当工具用，比如负责检索是一个子智能体，但是这个子智能体在主 Agent 看来就是一个工具。同时也可以很好的起到减少上下文的效果。",
+        "created_at": "Fri Oct 17 04:27:05 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1979038453019865088",
+            "url": "https://pbs.twimg.com/media/G3b0_NUWcAAl8y9.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 139239,
+          "friends_count": 1430,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 121,
+          "favorite_count": 581,
+          "reply_count": 13,
+          "quote_count": 7
+        }
+      },
+      "user": {
+        "id": "1830880351801221120",
+        "name": "凡人小北",
+        "screen_name": "frxiaobei",
+        "description": "行道途中。非求速成，惟求通达。\n2023 年扎进AI ，打通Know-How，不少赚钱项目，踩过坑，也见过光。\n围城里待得够久了，出来聊聊世界，聊聊技术、聊聊赚钱。",
+        "followers_count": 17545,
+        "friends_count": 313,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 22,
+        "favorite_count": 155,
+        "reply_count": 11,
+        "quote_count": 1
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 22,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979220598623555628",
+    "text": "若干年后，有人问响马，你一个程序员怎么落草为寇当了响马？\n响马喃喃的说：vibe ops！vibe ops！",
+    "created_at": "Fri Oct 17 16:18:57 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1979074744398774571",
+      "text": "我不用 claude code。但是在 vs code 下，直接告诉 copilot 想要安装什么就行了。我现在连 k8s 配置和查错都让它干。\n都 vibe coding 了，为什么不 vibe ops 呢？",
+      "created_at": "Fri Oct 17 06:39:23 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "364478145",
+        "name": "响马",
+        "screen_name": "xicilion",
+        "description": "。。。。。。",
+        "followers_count": 60402,
+        "friends_count": 3440,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 19,
+        "reply_count": 4,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 23,
+      "reply_count": 0,
+      "quote_count": 1
+    }
+  },
+  {
+    "id": "1979223835137265791",
+    "text": "RT @yisibl: 起来，开发同志们，行动起来！只需添加一行 CSS，就可以让你的用户看到更舒服的中英文混合排版。\n\n:root { text-autospace: normal; }",
+    "created_at": "Fri Oct 17 16:31:49 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1979209449794605324",
+      "text": "起来，开发同志们，行动起来！只需添加一行 CSS，就可以让你的用户看到更舒服的中英文混合排版。\n\n:root { text-autospace: normal; }",
+      "created_at": "Fri Oct 17 15:34:39 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1979196374156743060",
+        "text": "@yisibl 有用，连夜给我司项目也加上了。",
+        "created_at": "Fri Oct 17 14:42:41 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1912384123030880256",
+          "name": "Zuckjetcn",
+          "screen_name": "zuckjetcn",
+          "description": "独立开发者，擅长前端/跨端开发。",
+          "followers_count": 26,
+          "friends_count": 325,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 5,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "389346253",
+        "name": "一丝不go",
+        "screen_name": "yisibl",
+        "description": "resvg-js 作者、https://t.co/aP2AR3vaKn 核心开发者，字体排印与开发，CSS",
+        "followers_count": 4126,
+        "friends_count": 693,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 34,
+        "favorite_count": 198,
+        "reply_count": 9,
+        "quote_count": 1
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 34,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979228816431083929",
+    "text": "RT @0xshawnpang: HeyGen的Founder分享了他们团队内部的管理和产品方法论，摘取部分我最受益的六个观点：\n\n1. AI产品要适配底层AI模型平均每两月一次的迭代周期，所以核心的产品功能向前规划两个月，但是也要时刻思考着接下来6-12个月的大突破可能会是在…",
+    "created_at": "Fri Oct 17 16:51:36 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1979219800812380220",
+      "text": "HeyGen的Founder分享了他们团队内部的管理和产品方法论，摘取部分我最受益的六个观点：\n\n1. AI产品要适配底层AI模型平均每两月一次的迭代周期，所以核心的产品功能向前规划两个月，但是也要时刻思考着接下来6-12个月的大突破可能会是在哪个方向。产品要和模型突破一起向前，不要被模型突破覆盖掉。\n\n2. AI时代创业团队最大的错误就是速度太慢。不要怕犯错，要怕学习太慢。速度不仅仅是执行力，也是一个mindset - 如果任何时候你想到 - 周一再发这个功能而非现在，都意味着你不重视速度。\n\n3. 团队每个角色最重要的责任：\n- PM要每天使用市面上所有的常用AI工具和竞品产品，理解为什么做某个功能和划分其优先级；\n- Engineer要给出PM可能会miss的技术视角同时用最快的速度把功能做出来；\n- Designer要把所有的复杂功能和用户需求简化成老奶奶都可以用的简单操作；\n- Data Scientist要能够配合PM找到最核心的数据和构建核心看板和分析工具，通过数据做出决策。\n- Growth 对业务指标负责，同时要确保构建每一个功能和阶段的用户行为与喜好学习循环。\n\n4. Everyone agrees = no one cares 每一个人都同意常常意味着大家其实不在乎。Disagree and commit。避免Decision Paralysis，即使有不同意见，选择一个之后就commit，通过用户反馈再来学习和调整。\n\n5. 别憋大招。攒了六个月的重大更新发出来之后发现竞品其实早就发了这个功能且获客了，又或者构建了一个可以服务巨大用户量的框架但是事实上只来了100个用户。\n\n6. 什么时候必须要慢下来：\n- 最重要的事情是学习用户需求，任何影响我们学习用户反馈的数据和功能缺陷都必须要修复；\n- 影响到用户核心体验、安全的bug。",
+      "created_at": "Fri Oct 17 16:15:47 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1978837985039888388",
+        "text": "HeyGen just hit $100M ARR this month, 29 months after we first reached $1M in April 2023.\n\nNone of this happens without our incredible team, customers, partners, and community. Thank you 💜\n\nWhen we shared our first $1M milestone, it was to give back to the build-in-public community. The AI landscape has changed completely since then, but one thing hasn’t: how we build.\n\nInternally, we’ve called it our “bible,” the system that’s guided us from $1M to $100M. It’s built from countless team discussions, experiments, and lessons learned along the way. After much reflection, I wanted to document what’s worked for us — for our team and for everyone building in AI.\n\nWe’re sharing it not because it’s perfect, but because it’s working. It’s how we deliver customer value, learn faster than the world changes, and keep riding the wave.\n\nThis is The HeyGen Way.",
+        "created_at": "Thu Oct 16 14:58:35 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1549669426399629312",
+          "name": "Joshua Xu",
+          "screen_name": "joshua_xu_",
+          "description": "Co-Founder and CEO @HeyGen_Official | Make visual storytelling accessible to all",
+          "followers_count": 23987,
+          "friends_count": 585,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 46,
+          "favorite_count": 588,
+          "reply_count": 58,
+          "quote_count": 26
+        }
+      },
+      "user": {
+        "id": "1556765267211993097",
+        "name": "Shawn Pang",
+        "screen_name": "0xshawnpang",
+        "description": "Cooking the self-custodial stablecoins neobank @allscaleio",
+        "followers_count": 23969,
+        "friends_count": 1540,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 32,
+        "reply_count": 1,
+        "quote_count": 1
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 5,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979247848911684061",
+    "text": "RT @Yangyixxxx: 翻译了一下manus最近和Langchain的一个线上分享\n关于上下文工程的实践，还是有很多细节的\n\n虽然这些细节在执行过程中是容易理解找到方法去处理的\n但是也从侧面看到不论是制作垂类agents还是构建通用agents，在细节层面都需要经历各种…",
+    "created_at": "Fri Oct 17 18:07:14 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1979017643974889835",
+      "text": "翻译了一下manus最近和Langchain的一个线上分享\n关于上下文工程的实践，还是有很多细节的\n\n虽然这些细节在执行过程中是容易理解找到方法去处理的\n但是也从侧面看到不论是制作垂类agents还是构建通用agents，在细节层面都需要经历各种各样的困难\n\n我们更应该怀揣敬畏的心去看待每一个在Agents Building路途上前进的人\n\n产品背后都是磨难https://t.co/bPeJhvmDz6",
+      "created_at": "Fri Oct 17 02:52:29 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3122661542",
+        "name": "Yangyi",
+        "screen_name": "Yangyixxxx",
+        "description": "Believing is seeing",
+        "followers_count": 107482,
+        "friends_count": 482,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 50,
+        "reply_count": 2,
+        "quote_count": 1
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 7,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979275491505774752",
+    "text": "RT @lovevfp: FEDAY 2025 计划于 12 月 20 日在长沙举办，目前已经确定 4-5 位演讲嘉宾了，主题主要还是围绕着 AI 与前端展开。😄 你想听什么？你想见到谁？快告诉我！",
+    "created_at": "Fri Oct 17 19:57:04 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1979170210134253846",
+      "text": "FEDAY 2025 计划于 12 月 20 日在长沙举办，目前已经确定 4-5 位演讲嘉宾了，主题主要还是围绕着 AI 与前端展开。😄 你想听什么？你想见到谁？快告诉我！",
+      "created_at": "Fri Oct 17 12:58:43 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "17436746",
+        "name": "裕波",
+        "screen_name": "lovevfp",
+        "description": "https://t.co/AkHrFDvNZI发起人",
+        "followers_count": 3370,
+        "friends_count": 1353,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 12,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979282311779951027",
+    "text": "特别认同陶哲轩的观点：现阶段 AI 最合适的用法不是直接把最强大的 AI 模型用来攻克最难的数学难题，更广泛、更实用的用法，或许是利用那些性能适中的 AI 工具，来帮数学家们加速完成那些日常繁琐但又必不可少的基础研究任务。\n\n前些天听个 CVS 的人分享，说 CVS 药房很忙，但是大部分时间是浪费一些繁琐的事情上，比如说数药片，因为每个病人的药片数量都不一样，需要两个专业的药剂师，一个负责将指定数量的药片装到药瓶，一个负责将瓶子的药片数一遍验证对不对，一群高学历受过专业训练的药剂师每天要花很多时间在这些事情上。所以他们最近用 AI + 机器人的方式，将这个过程自动化，让药剂师们解放出来去做更重要的事情。\n\n我自己日常用 AI 也是类似的，它不一定能帮我解决很多技术难题，但是我可以借助 AI 开发一些小工具，或者直接借助特定的提示词，就能帮我做很多繁琐的工作，这样已经可以极大的提升我的整体效率了。\n\n---\n\n原文翻译见评论",
+    "created_at": "Fri Oct 17 20:24:11 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1979282224055746560",
+        "url": "https://pbs.twimg.com/media/G3fSsjMWgAADY8E.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1979282241759985664",
+        "url": "https://pbs.twimg.com/media/G3fStlJXwAAQnXW.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1979282264325341184",
+        "url": "https://pbs.twimg.com/media/G3fSu5NXwAA9b0V.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1979282288337707009",
+        "url": "https://pbs.twimg.com/media/G3fSwSqXYAEU4Pv.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 9,
+      "favorite_count": 74,
+      "reply_count": 7,
+      "quote_count": 5
+    }
+  },
+  {
+    "id": "1979282315479048338",
+    "text": "陶哲轩（https://t.co/cMatrCTfha）：\n\n最近我越来越觉得，人工智能（AI）在数学领域内短期内最有效的应用，并不一定是直接把最强大的AI模型用来攻克最难的数学难题。当然，我们偶尔也会看到一些特别成功的案例，但那些往往都是投入了大量的计算资源和顶尖专家的精力才实现的。真正更广泛、更实用的用法，或许恰恰是利用那些性能适中的AI工具，来帮数学家们加速完成那些日常繁琐但又必不可少的基础研究任务。\n\n这些看似平凡的任务，本来就能由人类专家完成，只不过花费的时间和精力会多一些。但这其实是AI应用的一大优势，而不是缺陷。因为人类专家已经积累了丰富的经验和直觉，能够快速准确地判断AI的输出是否可靠，并将其安全地整合进自己的研究流程里。\n\n举个简单的例子：文献检索。数学家在研究一个问题之前，通常需要大量查阅已有的研究文献。如果这个问题已经有了公认的名字，并且有一个活跃的研究群体，那么现有的搜索引擎和学术数据库早就足够好了。数学家只需要从某篇重要的论文开始，沿着引用链向前、向后搜索，很快就能掌握问题的研究进展。\n\n然而，还有很多时候，一个研究问题并没有统一的名称，不同领域的学者可能各自为政。相关文献分散在不同的杂志、会议和书籍里，引用关系又杂乱无章。有时候一篇文章只提到了问题的一小部分，混在大量不相关的内容里。要想在这种情况下找到真正有价值的文献，就特别麻烦：可能要四处找文章、反复筛选，很可能看了半天才发现跟自己的问题一点关系都没有。\n\n但一旦真的找到了相关的文章，一个专家只需要快速浏览一下，就能立刻判断这篇文章对当前问题有没有贡献。这种快速验证能力恰恰使得AI特别适合用来进行文献检索（前提当然是研究者本身具备相关的专业知识，能够独立判断文献质量）。尤其当研究者需要同时关注多个研究问题时，使用AI的优势就体现得更加明显了。这种场景下，AI并不需要做到百分之百准确，只要成功率足够高，整体效率就会比传统方法高得多。而且研究者花费一些时间去学习如何有效使用AI工具，也可以在反复使用中逐渐摊薄成本。\n\n最近，就有一个非常典型的例子发生在数学圈子里：\n\n著名的数学家保罗·埃尔德什（Paul Erdős）生前提出过许多有意思的数学问题。目前，专门收集和整理这些问题的网站 [Erdős Problems](https://t.co/RfTHTLOvKs) 上有超过一千道问题，其中大约600个被标记为“未解决”（open）。虽然一些问题已经被广泛研究，但也有不少相对冷门的问题，仅凭简单的人工检索很难判断到底有没有解决方案。\n\n最近几天，一些研究者开始尝试系统性地利用AI工具帮助检索相关文献。他们并不会直接把AI的输出结果发布到网站上，而是先人工核实，确认有效后再进行评论或备注。在短短几天内，通过这种“AI辅助文献检索+人工确认”的方法，已经成功发现了至少6个问题的解决方案。这些问题原本都被标记为“未解决”，现在的状态已经改为“已解决”（solved）。例如：[问题339](https://t.co/ItIWCpyJ7a)、[问题1043](https://t.co/EhWmaztfld)、[问题494](https://t.co/KM2ZY7j4uA)、[问题621](https://t.co/ydgcV094Tx)、[问题822](https://t.co/HKPezEcavL)、[问题903](https://t.co/N0Uk3oQ3MV)。还有十几个问题虽然仍未解决，但相关文献已经被成功检索出来，人工确认后也加入了问题页面上的评论中。虽然并非每条评论都明确说明用了AI，但短期内这些评论数量的显著增加，暗示了AI的贡献。\n\n这种AI工具的另一个潜在优势，是可以更自然地报告那些“负面结果”（**negative results**，即“未找到任何相关文献”的情况）。一般来说，如果研究者进行文献检索却什么都没找到，通常不会特意报告出来，可能是担心漏掉了某篇重要文章后会比较尴尬。这种沉默其实导致了不少冗余的重复劳动——不同的研究者可能都曾经花费大量时间寻找并不存在的文献，或者错误地以为某个问题尚未解决，实际上只是从未做过认真地文献检索。\n\n而用AI工具系统性地处理大规模的文献检索任务时，研究者自然会更愿意公开报告这种“负面结果”。比如：“AI工具共检查了36个问题，其中24个（66%）找到了新的有效文献，另外12个（33%）只返回了已知或无关的结果”。这种公开透明的方式，能让整个学术圈更清楚地知道某个问题的研究现状到底如何，也避免了许多无谓的重复劳动。\n\n总而言之，在数学研究领域，短期内利用AI的最有效方式，可能正是这种对人类专家来说有些“平凡”、但对研究工作又至关重要的基础性任务。AI在这里扮演的不是超级天才，而是效率加速器。它能帮助研究者把更多宝贵的精力，从繁琐的基础事务中解放出来，更好地投入到真正需要创新和深度思考的领域中去。",
+    "created_at": "Fri Oct 17 20:24:11 +0000 2025",
+    "lang": "ja",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 9,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  }
+]
+```
+
+##
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @dotey的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

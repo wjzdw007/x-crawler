@@ -1,0 +1,882 @@
+# LLM Prompt 保存记录
+生成时间: 2025-10-19 01:37:33
+总结类型: user_daily
+用户: @dotey
+推文数量: 22
+数据哈希: cfb9c543
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+dotey是一个技术专家，经常会分析一些ai的话题，帮我看看有什么新的工具/想法/方法论/实践经验等值得关注学习。
+
+## 推文数据（JSON格式）
+```json
+[
+  {
+    "id": "1979341540028715202",
+    "text": "陶哲轩: 我对AI在数学领域近期应用的一些思考\n\n最近我越来越觉得，人工智能（AI）在数学领域内短期内最有效的应用，并不一定是直接把最强大的AI模型用来攻克最难的数学难题。当然，我们偶尔也会看到一些特别成功的案例，但那些往往都是投入了大量的计算资源和顶尖专家的精力才实现的。真正更广泛、更实用的用法，或许恰恰是利用那些性能适中的AI工具，来帮数学家们加速完成那些日常繁琐但又必不可少的基础研究任务。\n\n这些看似平凡的任务，本来就能由人类专家完成，只不过花费的时间和精力会多一些。但这其实是AI应用的一大优势，而不是缺陷。因为人类专家已经积累了丰富的经验和直觉，能够快速准确地判断AI的输出是否可靠，并将其安全地整合进自己的研究流程里。\n\n举个简单的例子：文献检索。数学家在研究一个问题之前，通常需要大量查阅已有的研究文献。如果这个问题已经有了公认的名字，并且有一个活跃的研究群体，那么现有的搜索引擎和学术数据库早就足够好了。数学家只需要从某篇重要的论文开始，沿着引用链向前、向后搜索，很快就能掌握问题的研究进展。\n\n然而，还有很多时候，一个研究问题并没有统一的名称，不同领域的学者可能各自为政。相关文献分散在不同的杂志、会议和书籍里，引用关系又杂乱无章。有时候一篇文章只提到了问题的一小部分，混在大量不相关的内容里。要想在这种情况下找到真正有价值的文献，就特别麻烦：可能要四处找文章、反复筛选，很可能看了半天才发现跟自己的问题一点关系都没有。\n\n但一旦真的找到了相关的文章，一个专家只需要快速浏览一下，就能立刻判断这篇文章对当前问题有没有贡献。这种快速验证能力恰恰使得AI特别适合用来进行文献检索（前提当然是研究者本身具备相关的专业知识，能够独立判断文献质量）。尤其当研究者需要同时关注多个研究问题时，使用AI的优势就体现得更加明显了。这种场景下，AI并不需要做到百分之百准确，只要成功率足够高，整体效率就会比传统方法高得多。而且研究者花费一些时间去学习如何有效使用AI工具，也可以在反复使用中逐渐摊薄成本。\n\n最近，就有一个非常典型的例子发生在数学圈子里：\n\n著名的数学家保罗·埃尔德什（Paul Erdős）生前提出过许多有意思的数学问题。目前，专门收集和整理这些问题的网站 Erdős Problems 上有超过一千道问题，其中大约600个被标记为“未解决”（open）。虽然一些问题已经被广泛研究，但也有不少相对冷门的问题，仅凭简单的人工检索很难判断到底有没有解决方案。\n\n最近几天，一些研究者开始尝试系统性地利用AI工具帮助检索相关文献。他们并不会直接把AI的输出结果发布到网站上，而是先人工核实，确认有效后再进行评论或备注。在短短几天内，通过这种“AI辅助文献检索+人工确认”的方法，已经成功发现了至少6个问题的解决方案。这些问题原本都被标记为“未解决”，现在的状态已经改为“已解决”（solved）。例如：问题339、问题1043、问题494、问题621、问题822、问题903。还有十几个问题虽然仍未解决，但相关文献已经被成功检索出来，人工确认后也加入了问题页面上的评论中。虽然并非每条评论都明确说明用了AI，但短期内这些评论数量的显著增加，暗示了AI的贡献。\n\n这种AI工具的另一个潜在优势，是可以更自然地报告那些“负面结果”（negative results，即“未找到任何相关文献”的情况）。一般来说，如果研究者进行文献检索却什么都没找到，通常不会特意报告出来，可能是担心漏掉了某篇重要文章后会比较尴尬。这种沉默其实导致了不少冗余的重复劳动——不同的研究者可能都曾经花费大量时间寻找并不存在的文献，或者错误地以为某个问题尚未解决，实际上只是从未做过认真地文献检索。\n\n而用AI工具系统性地处理大规模的文献检索任务时，研究者自然会更愿意公开报告这种“负面结果”。比如：“AI工具共检查了36个问题，其中24个（66%）找到了新的有效文献，另外12个（33%）只返回了已知或无关的结果”。这种公开透明的方式，能让整个学术圈更清楚地知道某个问题的研究现状到底如何，也避免了许多无谓的重复劳动。\n\n总而言之，在数学研究领域，短期内利用AI的最有效方式，可能正是这种对人类专家来说有些“平凡”、但对研究工作又至关重要的基础性任务。AI在这里扮演的不是超级天才，而是效率加速器。它能帮助研究者把更多宝贵的精力，从繁琐的基础事务中解放出来，更好地投入到真正需要创新和深度思考的领域中去。",
+    "created_at": "Sat Oct 18 00:19:32 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 3,
+      "favorite_count": 8,
+      "reply_count": 1,
+      "quote_count": 1
+    }
+  },
+  {
+    "id": "1979347434586402977",
+    "text": "可以看的出很紧张，但结果还不错😂\nhttps://t.co/7GGCqYEqfr",
+    "created_at": "Sat Oct 18 00:42:57 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "video",
+        "id": "1979203073957343232",
+        "url": "https://video.twimg.com/amplify_video/1979203073957343232/vid/avc1/1920x1080/S45YtahkULc7qqpL.mp4?tag=21",
+        "bitrate": 10368000
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 10,
+      "reply_count": 8,
+      "quote_count": 1
+    }
+  },
+  {
+    "id": "1979357988591931857",
+    "text": "Top K 的内容是完整的文本内容，Tokens 占用较大\nTop K 的向量编码只是这段文本的一个缩略相似值，Token 占用很少\nhttps://t.co/779aEBg2Dr",
+    "created_at": "Sat Oct 18 01:24:53 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1979356460728619284",
+      "text": "确实没看懂 返回 top K 的内容，跟返回 top K 的向量数据，有区别吗？等大佬来解释一下",
+      "created_at": "Sat Oct 18 01:18:49 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1487021",
+        "name": "Avenger",
+        "screen_name": "avenger",
+        "description": "处女座理想主义者｜Founder of @Nanrenwa｜PHP coder｜爱猫 爱美食 爱自由",
+        "followers_count": 1227,
+        "friends_count": 1180,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979382737220845637",
+    "text": "这稿子让 AI 写说不定效果还好一点 https://t.co/G9tzCEtjVT",
+    "created_at": "Sat Oct 18 03:03:14 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "video",
+        "id": "1979382677108109313",
+        "url": "https://video.twimg.com/amplify_video/1979382677108109313/vid/avc1/540x960/1DE2Qcb8dVYF8SGb.mp4?tag=21",
+        "bitrate": 2176000
+      }
+    ],
+    "retweet": null,
+    "quoted": {
+      "id": "1972138761275216216",
+      "text": "还是让雷军来改造一下微信公众号吧！下面有请雷军：\n\n好的，朋友们！请坐。\n\n（音乐渐弱，灯光聚焦）\n\n（雷军式微笑，环顾全场）\n\n大家下午好！\n\n（停顿，掌声）\n\n谢谢，谢谢大家！每次站在这里，看到这么多熟悉的面孔，这么多支持我们的朋友们，我的内心都无比激动。\n\n今天，我想先问大家一个问题。在座的有多少是内容创作者？有多少人，每天都在用微信公众号，记录自己的思考，分享自己的热爱？请举一下手我看看。\n\n（环顾四周，点头）\n\n哇，非常多！谢谢，请放下。\n\n那么，第二个问题来了。朋友们，在你们创作的路上，有没有遇到过一个让你抓狂、让你崩溃、让你想砸电脑的瞬间？\n\n（现场发出会心的笑声）\n\n我看到大家都在笑。是的，我相信我们想的是同一件事。那个折磨了中国至少2000万内容创ators，每天浪费掉我们无数宝贵灵感的“头号敌人”——微信公众号，那个后台编辑器。\n\n（PPT上出现一个巨大且丑陋的编辑器截图，上面布满了各种吐槽弹幕）\n\n我们做过一个调查，一个触目惊心的数据。一个熟练的公众号运营者，平均每排版一篇3000字的文章，需要花费多长时间？45分钟！其中，有超过 57.3% 的时间，也就是25分钟，是在干什么？是在调整字号、行间距、寻找一张没有版权风险的配图，是在跟那个编辑器“搏斗”！\n\n更可怕的是什么？是闪退！我们的数据显示，平均每位创作者，每年会因为编辑器突然的、毫无征兆的崩溃，丢失掉 4.7 次，将近5次快要完成的稿件！朋友们，这是什么概念？这意味着，每年有将近 1亿篇 本该诞生的精彩文章，就这样消失在了那个无情的404页面里！\n\n这，是这个内容时代最大的“生产力黑洞”！是一个困扰了行业长达十年之久的难题！我们真的要忍受这一切吗？我们的创造力，就应该被这么一个简陋的工具所束缚吗？\n\n不！我们绝不接受！\n\n所以，我们决定，要为全中国的2000万创作者，打造一款真正属于这个时代的、强大的、智慧的创作工具！\n\n（停顿，深吸一口气）\n\n我们为此，做了整整 三年 的努力。\n\n我们的团队，150名顶尖的软件工程师，用了 1095个日夜，分析了全网 TOP 100万篇 爆款文章的排版范式。我们飞遍全球，与 Adobe、方正字库等7家全球顶级视觉机构进行深度技术交流。我们推倒了 9 版完全不同的产品架构，写下了超过 200万行 的核心代码。\n\n我们只有一个目标：把创作的权利，完完整整地，还给创作者！\n\n今天，这，就是我们的答案！\n\n（转身，身后大屏幕上出现产品logo和名称，极具科技感）\n\n「米创 HyperWriter」智能创作引擎！\n\n（掌声雷动）\n\n（PPT展示产品界面，极致简洁、充满设计感）\n\n首先，我们解决了最基础，也是最致命的“稳定”问题。我们自研了 「宙斯盾」防崩溃守护系统（Aegis Guard System）。它能做到什么？它能让你的编辑器在任何复杂操作下，稳定性提升 300%！我们做了一个极限测试，同时插入100张高清图片和3个视频，反复拖拽缩放1000次，崩溃率，是 0！是的，朋友们，你没有听错，是 0！\n\n（现场惊叹声）\n\n但仅仅稳定，是远远不够的。创作，应该是流畅的，是优雅的。\n\n为此，我们推出了革命性的 「灵感布局AI引擎」（Inspiration AI Layout Engine）。你只需要把文字放进去，它就能在 0.1秒 内，智能分析你的文章脉络，并为你推荐 83套 由金牌设计师和算法联合打造的顶级排版方案！从“科技未来风”到“国风雅致”，一键应用，全文瞬间脱胎换骨！\n\n（PPT上快速演示文字进去，多种精美排版瞬间切换的效果）\n\n过去调整格式需要30分钟，现在，只需要 1秒！这，就是科技的力量！\n\n我们还解决了那个世界性难题——找图。我们投入巨资，与全球最大的视觉中国、Getty Images等5家图库达成战略合作，为所有用户打造了一个 「全球灵感素材库」。里面包含了 3000万 张高清正版图片、500万 个GIF动图和 100万 个矢量插图！你只需要输入关键词，比如“激动的雷军”，0.2秒，图就来了！\n\n（PPT上演示搜索“激动的雷军”，瞬间出现各种相关图片，引发现场大笑）\n\n每一张，都是正版授权，可以直接使用！让你彻底告别版权焦虑！\n\n当然，我们还准备了更多。我们联合“中国传媒大学新媒体实验室”，共同研发了 「热点追踪系统」，实时分析全网热点，为你的选题提供数据支持。我们还内置了 「AI智能校对」，错别字检出率高达 99.8%，比行业平均水平高出整整 12个百分点！\n\n这，就是「米创 HyperWriter」，它不是一个简单的编辑器，它是你的首席排版师、是你的创意素材库、是你的数据分析师、更是你最可靠的创作伙伴！\n\n（停顿，喝一口水）\n\n那么，这样一个集众多黑科技于一身的创作引擎，一定很贵吧？\n\n（现场安静，充满期待）\n\n市面上，稍微好用一点的第三方编辑器，一年的会员费，至少是199元，功能还不到我们的一半。那些国外的顶级写作软件，更是高达上千元一年。\n\n我们的「米创 HyperWriter」，如果定价，我们觉得999元一年，都非常超值。\n\n但是！我今天来，不是为了赚钱的。我是来，交个朋友的！\n\n（全场欢呼）\n\n「米创 HyperWriter」所有基础功能，包括「宙斯盾」守护系统和每月3次「灵感布局AI」使用权，永久免费！\n\n（掌声，欢呼声达到高潮）\n\n而对于需要更高阶功能的朋友们，我们推出了「米创 HyperWriter Pro」版本。包含了无限次的AI布局、3000万正版图库的无限使用、AI校对等等我们刚刚提到的所有功能！\n\n价格是多少呢？\n\n不是999，不是499，也不是199！\n\n（节奏放慢，一字一顿）\n\n一年，只需要…… 99元！\n\n（PPT上打出巨大的“￥99/年”）\n\n（掌声经久不息）\n\n还不够！\n\n今天，就在发布会现场，所有下单Pro版本的朋友们，我们再免费赠送一套与“汉仪字库”联合定制的 价值1999元的「米创品牌字体包」！内含5款专属可商用字体！\n\n（现场再次沸腾）\n\n朋友们，我们想做的，从来都不只是一款冰冷的产品。我们想传递的，是一种信念。\n\n我们相信，在这个伟大的时代，每一个人的创造力，都值得被尊重，都值得被最好的工具所激发。\n\n从今天起，忘掉那个卡顿、丑陋、低效的过去吧！\n\n让灵感，再无束缚！\n\n「米创 HyperWriter」，献给所有还在坚持创作的你！\n\n谢谢大家！\n\n（鞠躬，灯光亮起，音乐响起，发布会结束）",
+      "created_at": "Sun Sep 28 03:18:15 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 139564,
+        "friends_count": 1429,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 33,
+        "favorite_count": 348,
+        "reply_count": 70,
+        "quote_count": 29
+      }
+    },
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 16,
+      "reply_count": 13,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979386963011526749",
+    "text": "帮转",
+    "created_at": "Sat Oct 18 03:20:01 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1979340203082027402",
+      "text": "探头，还有大佬招人不\n\nAI app、Agents、 前端、RL/SFT 合成数据，我都可以，kk 主打活全",
+      "created_at": "Sat Oct 18 00:14:13 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1102444843140182016",
+        "name": "Kai",
+        "screen_name": "real_kai42",
+        "description": "独立开发者，20k stars 开源项目 Qwerty Learner 作者，《Web Worker 播客》主播，数码爱好者\n\n仅聊技术和生活，仅代表个人观点，不太擅长文字，但话痨∠(｀ω´*) \n\n个人主页/咨询服务/内推 : https://t.co/ZCsVg4sr1t\n\nex @BytedanceTalk @hulu",
+        "followers_count": 26021,
+        "friends_count": 1119,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 85,
+        "reply_count": 17,
+        "quote_count": 6
+      }
+    },
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 5,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979389446580568163",
+    "text": "这一看就真的是产品经验为0 https://t.co/rw78Ra1ERu",
+    "created_at": "Sat Oct 18 03:29:53 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "video",
+        "id": "1979389358093307904",
+        "url": "https://video.twimg.com/amplify_video/1979389358093307904/vid/avc1/720x1280/rgeKRjCcLy7tFkR1.mp4?tag=21",
+        "bitrate": 2176000
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 103,
+      "favorite_count": 804,
+      "reply_count": 135,
+      "quote_count": 27
+    }
+  },
+  {
+    "id": "1979395346762506551",
+    "text": "温江菜花小院\nhttps://t.co/g56XksHB8x\n\nhttps://t.co/D1tbYUAEzu\n\nhttps://t.co/CS83afQR84",
+    "created_at": "Sat Oct 18 03:53:20 +0000 2025",
+    "lang": "ja",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1979391266745127280",
+      "text": "@dotey 求个账号名，关注下",
+      "created_at": "Sat Oct 18 03:37:07 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "884245466006904832",
+        "name": "海棠依旧",
+        "screen_name": "PnxjxMPcCEC1x2G",
+        "description": "大厂泥瓦匠、精通各种糊糊糊、FE、LLM、",
+        "followers_count": 14,
+        "friends_count": 185,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 3,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 15,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979433808295272817",
+    "text": "👍这个思路不错，不是简单总结，而是从几个方向来写，可以有效避免内容过于分散",
+    "created_at": "Sat Oct 18 06:26:10 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1979410164005638658",
+      "text": "最近打磨出一套提示词\n原本是想用来提炼高质量长内容的\n结果发现每次我都会仔细阅读\n\n核心思路还是\n每条长内容通常会有多个主线\n单纯的总结会大量遗漏\n所以让AI总结三条不同的线\n就可以更好的覆盖全文核心内容\n\n如果内容质量好了\n再去完整看一遍 https://t.co/ZgCBsOqLBX",
+      "created_at": "Sat Oct 18 04:52:13 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1979410137023483904",
+          "url": "https://pbs.twimg.com/media/G3hHCEIXkAAyIZ2.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1979410136968904704",
+          "url": "https://pbs.twimg.com/media/G3hHCD7WwAAviDM.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1979410136939606016",
+          "url": "https://pbs.twimg.com/media/G3hHCD0XsAA_M2o.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1979410136947982336",
+          "url": "https://pbs.twimg.com/media/G3hHCD2XgAAxy_z.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1717728951123025920",
+        "name": "AI产品黄叔",
+        "screen_name": "PMbackttfuture",
+        "description": "两家大厂AI产品顾问 AI编程蓝皮书",
+        "followers_count": 8411,
+        "friends_count": 202,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 37,
+        "favorite_count": 178,
+        "reply_count": 6,
+        "quote_count": 3
+      }
+    },
+    "stats": {
+      "retweet_count": 27,
+      "favorite_count": 127,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979570648595792172",
+    "text": "“尽兴分享 自成影响” https://t.co/v1HCmkaQOQ",
+    "created_at": "Sat Oct 18 15:29:55 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1979569042751909888",
+        "url": "https://pbs.twimg.com/media/G3jXjmGWcAAYO_M.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 5,
+      "favorite_count": 166,
+      "reply_count": 25,
+      "quote_count": 1
+    }
+  },
+  {
+    "id": "1979570748693127573",
+    "text": "RT @wangyuanzju: Claude Skills可能走对路了\n\n前天Anthropic发布了Claude Skills，这是一种让AI获取新能力的全新机制。很不错的设计，包含了软件两个最主要的组成部分：程序和资源，还没有什么别的复杂性。架构看起来很合理，虽然要实际用…",
+    "created_at": "Sat Oct 18 15:30:19 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1979539828082626593",
+      "text": "Claude Skills可能走对路了\n\n前天Anthropic发布了Claude Skills，这是一种让AI获取新能力的全新机制。很不错的设计，包含了软件两个最主要的组成部分：程序和资源，还没有什么别的复杂性。架构看起来很合理，虽然要实际用用才能感觉出来是不是真的好用，但初步从架构设计看，感觉Claude Skills在方向上可能走对路了，整个AI行业可能走对路了。\n\n简洁的力量：程序+资源就够了\n\nSkills的核心概念非常简单：一个Skill就是一个文件夹，包含指令、脚本与资源。具体来说，每个Skill包含三样东西：指令(Instructions)告诉Claude该做什么、脚本(Scripts)执行具体任务、资源(Resources)提供模板和辅助内容。因为自然语言也是代码，指令和脚本其实是分不清的，都属于程序。\n\n这种设计的合理之处在于它抓住了软件的本质。软件不就是程序和资源吗？程序负责逻辑，资源负责数据和素材。Skills把这两者有机结合，又没有引入什么别的复杂性。\n\n更重要的是Skills的按需加载机制。Claude只会在Skill与当前任务相关时才会调用，并且采用渐进式披露：先加载元数据(约100词)，再加载https://t.co/8CjlRMvOgF主体(也比较小)，最后才是具体的资源文件。这种设计既高效又节省token，体现了对成本和性能的深度考量。\n\nAI能力扩展的演进：从Plugin到Skills\n\n要理解Skills的价值，需要回顾OpenAI和Anthropic在AI能力扩展上的探索历程。\n\nOpenAI的Plugin是第一次尝试，但看起来是不成功的尝试。Plugin主要依赖API调用，虽然概念不错，但实际体验并不理想，很快就被弱化了。后来推出的GPTs允许用户定制AI的知识和行为，但本质上仍然是基于提示词工程的定制，缺乏真正的能力扩展。\n\n最新的Apps则希望把第三方的界面直接嵌进来，感觉步子迈得有点大。让AI直接操作第三方应用的界面，这种computer use式的方案虽然听起来很酷，但实际可控性和可靠性都面临巨大挑战，而且第三方应用也不愿意被嵌入的这么深。百度很多年前想做框计算，目的是类似的，并没有成功。\n\nAnthropic自己推出的MCP(Model Context Protocol)走的是另一条路，主要通过API调用已有服务的能力，和Skills的定位不同。MCP更多是为了连接外部系统和服务，而Skills则是为Claude赋予新的原生能力。\n\n相比之下，Skills找到了一个更优雅的平衡点。它用Markdown这种人人都能理解的格式来描述能力，可以包含详细的使用说明和示例。开发者创建一个Skill，就像是\"给Claude写一份入职手册\"。而且Skills可以打包分享，形成开放的生态系统，这大大降低了开发门槛。\n\nAnthropic一口气开源了20多个Skills，涵盖创意设计、开发技术、企业应用等各个领域。这种开放的姿态，很可能会推动一个繁荣的Skills生态的形成。资源的例子很好理解：Canvas-fonts包含很多字体文件，这样Claude在生成设计时就能直接调用。\n\n仍需改进的地方\n\n当然，任何新技术都不可能完美。Skills目前也存在一些明显的不足。\n\n首先是技术门槛问题。虽然Skills用Markdown编写降低了理解难度，但官方的一些Skills仍然依赖于apt-get这样不够亲民的指令，至少对大多数Windows的用户这一步就直接挂了。普通用户希望的是一个软件包一装就灵，而不是还要装一大堆依赖。如何让Skills的创建和使用更加大众化，是Anthropic需要继续优化的方向。\n\n其次，Skills看起来不容易拥有自己的存储和数据库。这在处理需要持久化状态的任务时可能会成为限制。比如，如果我想创建一个帮我跟踪工作进展的Skill，它需要记住之前的任务状态和历史数据，但现在的Skills架构似乎不太支持这种场景。不过或许可以在Skill里调用sqlite这样的数据库命令来实现这一点？\n\n结语\n\nClaude Skills的发布，为AI能力扩展提供了一个简洁而优雅的解决方案。相比OpenAI的Plugin、GPTs和Apps等尝试，以及Anthropic自己的MCP，Skills在易用性、可控性和生态开放性之间找到了更好的平衡。它避免了过度工程化的陷阱，用最小的复杂度实现了核心价值。\n\n在AI原生应用的探索中，我们都在寻找那个平衡点：既要充分发挥AI的能力，又要保持用户体验的简洁流畅；既要提供强大的功能，又要避免不必要的复杂性。Skills在这个平衡上做出了有价值的尝试，值得我们这些AI产品从业者认真研究和借鉴。",
+      "created_at": "Sat Oct 18 13:27:27 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "25466242",
+        "name": "WY",
+        "screen_name": "wangyuanzju",
+        "description": "创始人 @remio_ai | 前网易集团副总裁/杭州研究院执行院长，孵化云音乐、严选、云课堂、数帆、易盾 | 摇滚青年🎸",
+        "followers_count": 6813,
+        "friends_count": 416,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 34,
+        "favorite_count": 199,
+        "reply_count": 12,
+        "quote_count": 3
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 34,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979596440952549882",
+    "text": "RT @tig88411109: 这功能升级Gemini一定要推荐，切实解决搞科研老师和学生痛点啊\n\n手写公式模糊，复制粘贴全乱码，align对齐一换设备就崩？PDF导不出公式、截图糊成渣？\n\n现在Gemini终于修好LaTeX渲染bug：高清公式统一显示、Canvas内联编辑…",
+    "created_at": "Sat Oct 18 17:12:25 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1979566243729572277",
+      "text": "这功能升级Gemini一定要推荐，切实解决搞科研老师和学生痛点啊\n\n手写公式模糊，复制粘贴全乱码，align对齐一换设备就崩？PDF导不出公式、截图糊成渣？\n\n现在Gemini终于修好LaTeX渲染bug：高清公式统一显示、Canvas内联编辑、一键复制 / 直接导PDF。\n\n试试输入“薛定谔方程”，打开画板几秒出清晰可编辑版本。AI第一次真正懂了公式的语言。写论文、备课、做题，从此不再是折磨。",
+      "created_at": "Sat Oct 18 15:12:25 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "1979566192307138560",
+          "url": "https://video.twimg.com/amplify_video/1979566192307138560/vid/avc1/1318x720/0-EE2Az0IQfbIkJZ.mp4?tag=21",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "809013582",
+        "name": "Tigris 会讲课教授是好老师",
+        "screen_name": "tig88411109",
+        "description": "📈PE Partner | 🎓Prof, CFA | 30+ years ～📖 写书科技与投资/AI 孵化/教书匠🔥 原创置顶财务自由底层逻辑 ～推特首发预测：【15年🇨🇳拐点 🇺🇸去工业化/ 23年 AI➕ / 24.9 中国股市博弈/ 美总统胜选 / 25年AI革命】",
+        "followers_count": 34142,
+        "friends_count": 765,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 19,
+        "favorite_count": 62,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 19,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979612613098049935",
+    "text": "Agent 的好文章，强烈推荐阅读👍\n\n要说对 Agent 的理解，Manus 团队无疑是业界顶尖的，每次他们的分享都能有所收获，作者作为前 Manus 团队成员，对 Agent 的经验是丰富的，最难得的是能把概念解释的深入浅出通俗易懂。\n\nOpenAI 提出了一个五级人工智能分级标准来衡量其通用人工智能（AGI）的进展：第一级是“ChatBot（聊天机器人）”，能够进行对话；第二级是“Reasoners（推理者）”，可以解决人类水平的问题；第三级是“Agent（智能体）”，能够代表用户采取行动；第四级是“创新者（Innovators）”，可以帮助发明创造；第五级是“组织者（Organizations）”，能够完成组织管理工作。\n\nAI 现在现在已经发展到了第 3 级 Agent，但很多人还搞不清楚它和第 1 级 ChatBot 的差别，这就是一篇很好的科普让你搞清楚它的差别。\n\nChatbot：\n- 一次性输出\n- 只能依赖自身知识库\n\nReasoners：\n- 先思考再输出\n\nAgent：\n- 动态循环过程，Think → Act → Observe，先制定明确计划（Think），再查询实时信息（Act），最后基于真实结果调整方案（Observe），通过持续反馈和修正，稳定逼近目标。\n- 使用工具，与真实世界互动，弥补自己知识库的不足，主动补齐上下文\n\n原文较长，推荐仔细看看，链接在原推2楼",
+    "created_at": "Sat Oct 18 18:16:41 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1979451118876057669",
+      "text": "最近两个月和非常多团队交流之后有一个强烈感受。很多人因为 agentic 循环过程的体感缺失和理解，这里存在非常大的认知差距。\n有人认为存在某种神迹让 Agent 有超越模型智力的表现；有人觉得无非多调用几次 API，哪有那么神奇；\n这种差距导致大家很多时候说话都不在一个频道。\n所以有了这篇长文，希望能够帮大家构成一个统一的上下文，“当我们在聊 agentic 的时候，我们在说什么”",
+      "created_at": "Sat Oct 18 07:34:57 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "115897222",
+        "name": "yan5xu",
+        "screen_name": "yan5xu",
+        "description": "🤖 AI 野生研究员 | ex @ManusAI_HQ & @hey_im_monica\n推特内容仅代表个人观点，和公司无关",
+        "followers_count": 6091,
+        "friends_count": 346,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 20,
+        "favorite_count": 95,
+        "reply_count": 6,
+        "quote_count": 4
+      }
+    },
+    "stats": {
+      "retweet_count": 42,
+      "favorite_count": 177,
+      "reply_count": 9,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979621318854365641",
+    "text": "做中学 https://t.co/vNkYTrd33L",
+    "created_at": "Sat Oct 18 18:51:16 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1979621306158010368",
+        "url": "https://pbs.twimg.com/media/G3kHFudX0AA-dbG.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 13,
+      "favorite_count": 75,
+      "reply_count": 7,
+      "quote_count": 2
+    }
+  },
+  {
+    "id": "1979624320893673594",
+    "text": "知名播客博主 Dwarkesh Patel 最近对 AK 有过一次访谈，这是他的描述：\n\n对我来说，最有意思的部分，是 Andrej Karpathy（常被粉丝称为“卡神”的AI大牛）解释为什么大语言模型（LLM）没法像人一样学习。\n\n果不其然，卡神又造出了一个特别生动的词儿来形容强化学习（Reinforcement Learning, 简称RL）：“用吸管吸取监督数据”。\n\n这话啥意思呢？就是说，在一次成功的尝试里，（比如AI下棋赢了），这个“赢了”的最终奖励，会平摊到它走过的每一步、生成的每个词上。哪怕中间有些步骤是错的、或是无关紧要的，只要最后结果是对的，这些步骤也统统会被算法“加分”。\n\n> “我以前就说过，人类不使用强化学习。我认为人类的学习方式完全不同。强化学习比普通人想的要糟糕得多。强化学习很烂。只不过，我们以前有的其他算法比它还要烂得多罢了。”\n\n那么，人类到底是怎么学习的呢？\n\n> “我读一本书，这本书对我来说就是一套‘提示词’（prompts），好让我在脑子里‘合成数据’（synthetic data generation）。你必须通过主动地处理这些信息，才能真正获得知识。但大语言模型（LLM）没有对应的机制；它们真的不会这么干。”\n\n> “我很希望在模型的预训练（pretraining）阶段看到这么一个环节：模型能‘琢磨’一下它读到的材料，并试着把它和自己已经知道的知识‘对上号’（也就是融会贯通）。现在根本没有这种机制。这都还停留在研究阶段。”\n\n那我们为什么不能现在就把这种“思考”训练加到大语言模型里呢？\n\n> “这里面有非常微妙、难以理解的原因，导致这事儿没那么简单。如果我让模型对一本书进行‘思考’，并生成一些合成数据，你乍一看会觉得：‘这看起来很棒啊！为什么不能用它来训练呢？’ 你是可以试试，但如果你坚持这么做，模型的性能实际上会变得更糟。”\n\n> “比方说，我们拿一本书的某一章，我让一个大语言模型来‘思考’一下。它会给你一段看起来非常合理的回答。但如果我让它回答 10 次，你会发现，这 10 次的回答几乎一模一样。”\n\n> “你从这些模型里，得不到人类思考时那种丰富性、多样性和‘熵’（在这里指思考的混乱度和创造性）。你无法像人一样得到各种天马行空的想法。所以，如何在模型趋向于‘坍塌’（collapse）（指回答变得单一、缺乏多样性）的情况下，还能让合成数据起作用，并且保持住这份‘熵’？这还是个研究难题。”\n\n那么，人类是如何避免这种“思维坍塌”的呢？\n\n> “（把人和模型类比）这个点子好得出奇。人类在自己的一生中，其实也会‘坍塌’。小孩子还没有‘过拟合’（overfitting）（指思维僵化，只适应特定模式）。他们会说出一些让你震惊的话。那是因为他们还没‘坍塌’。但我们成年人已经‘坍塌’了。我们最终会反复琢磨同样的想法，我们说的话也越来越趋同，我们的学习率下降，‘坍塌’的情况越来越糟，最后一切都退化了。”\n\n事实上，有篇很有意思的论文（Erik Hoel 的《过拟合的大脑》(The Overfitted Brain)）就提出，人类做梦这个功能的进化，就是为了帮助我们提升‘泛化能力’（generalization）（指举一反三的能力），抵抗日常学习带来的‘过拟合’。\n\n于是我问卡神：这事儿是不是特有意思？—— 人类在学习能力最强的时期（童年），却会把学到的具体细节忘得一干二净；成年人虽然也能学得不错，但对读过或看过的东西，记忆力也烂得不行；而大语言模型呢，它们能记住人类根本记不住的海量文本细节，但在‘泛化能力’上却表现得很差。\n\n> “（人类健忘的记忆力）这恰恰是一个‘特性’（feature），而不是一个‘缺陷’（bug）。因为它逼着你只能去学习那些真正具有‘泛化能力’的东西。而大语言模型呢，它们被自己记在（预训练）文档里的海量细节给‘分心’了。这就是为什么我谈到‘认知核心’时，我其实是想把（模型的）记忆力拿掉。我倒希望它们记性差一点，这样它们就必须去（主动）查资料，而只保留那些‘思考的算法’、‘做实验的想法’，以及所有这些用于行动的‘认知粘合剂’。”",
+    "created_at": "Sat Oct 18 19:03:12 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1979259041013731752",
+      "text": "The most interesting part for me is where @karpathy  describes why LLMs aren't able to learn like humans.\n\nAs you would expect, he comes up with a wonderfully evocative phrase to describe RL: “sucking supervision bits through a straw.”\n\nA single end reward gets broadcast across every token in a successful trajectory, upweighting even wrong or irrelevant turns that lead to the right answer.\n\n> “Humans don't use reinforcement learning, as I've said before. I think they do something different. Reinforcement learning is a lot worse than the average person thinks. Reinforcement learning is terrible. It just so happens that everything that we had before is much worse.”\n\nSo what do humans do instead?\n\n> “The book I’m reading is a set of prompts for me to do synthetic data generation. It's by manipulating that information that you actually gain that knowledge. We have no equivalent of that with LLMs; they don't really do that.”\n\n> “I'd love to see during pretraining some kind of a stage where the model thinks through the material and tries to reconcile it with what it already knows. There's no equivalent of any of this. This is all research.”\n\nWhy can’t we just add this training to LLMs today?\n\n> “There are very subtle, hard to understand reasons why it's not trivial. If I just give synthetic generation of the model thinking about a book, you look at it and you're like, 'This looks great. Why can't I train on it?' You could try, but the model will actually get much worse if you continue trying.”\n\n> “Say we have a chapter of a book and I ask an LLM to think about it. It will give you something that looks very reasonable. But if I ask it 10 times, you'll notice that all of them are the same.”\n\n> “You're not getting the richness and the diversity and the entropy from these models as you would get from humans. How do you get synthetic data generation to work despite the collapse and while maintaining the entropy? It is a research problem.”\n\nHow do humans get around model collapse?\n\n>  “These analogies are surprisingly good. Humans collapse during the course of their lives. Children haven't overfit yet. They will say stuff that will shock you. Because they're not yet collapsed. But we [adults] are collapsed. We end up revisiting the same thoughts, we end up saying more and more of the same stuff, the learning rates go down, the collapse continues to get worse, and then everything deteriorates.”\n\nIn fact, there’s an interesting paper arguing that dreaming evolved to assist generalization, and resist overfitting to daily learning - look up The Overfitted Brain by @erikphoel.\n\nI asked Karpathy: Isn’t it interesting that humans learn best at a part of their lives (childhood) whose actual details they completely forget, adults still learn really well but have terrible memory about the particulars of the things they read or watch, and LLMs can memorize arbitrary details about text that no human could but are currently pretty bad at generalization?\n\n> “[Fallible human memory] is a feature, not a bug, because it forces you to only learn the generalizable components. LLMs are distracted by all the memory that they have of the pre-trained documents. That's why when I talk about the cognitive core, I actually want to remove the memory. I'd love to have them have less memory so that they have to look things up and they only maintain the algorithms for thought, and the idea of an experiment, and all this cognitive glue for acting.”",
+      "created_at": "Fri Oct 17 18:51:42 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1979257571786543104",
+          "url": "https://video.twimg.com/amplify_video/1979257571786543104/vid/avc1/1080x1080/wl-xW9zcHuD0Ohz8.mp4?tag=21",
+          "bitrate": 8768000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1209960539390201864",
+        "name": "Dwarkesh Patel",
+        "screen_name": "dwarkesh_sp",
+        "description": "Host of @dwarkeshpodcast\n\nhttps://t.co/3SXlu7fy6N\nhttps://t.co/4DPAxODFYi\nhttps://t.co/hQfIWdM1Un",
+        "followers_count": 141347,
+        "friends_count": 942,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 908,
+        "favorite_count": 5041,
+        "reply_count": 204,
+        "quote_count": 137
+      }
+    },
+    "stats": {
+      "retweet_count": 27,
+      "favorite_count": 152,
+      "reply_count": 9,
+      "quote_count": 1
+    }
+  },
+  {
+    "id": "1979632710693093769",
+    "text": "我只是引导一下，不是总结，是希望大家去阅读原文\n\nhttps://t.co/TSEvDQ6sVI",
+    "created_at": "Sat Oct 18 19:36:32 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1979630540430217260",
+      "text": "@dotey 啊哈，宝玉老师这么一解读，把原推的那些闪光点全给说没了😢\n\n按我的习惯再抽象到接近本质的话：\n\n是基于ICL的交互范式编程，主要是本体和符号接地",
+      "created_at": "Sat Oct 18 19:27:55 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "23062740",
+        "name": "𝙩𝙮≃𝙛{𝕩}^A𝕀²·ℙarad𝕚g𝕞",
+        "screen_name": "TaNGSoFT",
+        "description": "ai4x交互范式-Agentic Cognition OS｜vibe pretraining of 𝕀²·ℙarad𝕚g𝕞｜关于神经化学的不可能三角的语言二元性与动力学理论｜ Paradigm^Vibe 𝕚sᵃˡˡ ᵁ ᴺᵉᵉᵈ^智能平方范式智库^特大号范式｜再AI十年之三：a vibe builder...",
+        "followers_count": 13412,
+        "friends_count": 3302,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 1,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979640848041071097",
+    "text": "周末吃瓜：这条推文宣布 GPT-5 “解出” 10个Erdős数学难题，大众以为是 GPT-5 数学能力有了突破，事后发现不过是检索现有文献得出来的结果\n\n事情起因是 OpenAI 旗下研究员 Mark Sellke 在社交平台 X 上高调宣布：他们借助 GPT-5 成功「找到」了10个著名的厄尔多斯数学难题（Erdős problems）的解法。Mark 兴奋地写道：「经过数千次GPT-5的查询，我们发现了10个原本还处于『未解状态』的厄尔多斯难题的解答，分别是223、339、494、515、621、822、883（第二部分）、903、1043、1079。此外，还有11个难题取得了重要的部分进展，并更新到了官网上。甚至在第827题上，我们还发现厄尔多斯本人原始论文里存在错误，这个错误由Martínez和Roldán-Pensado两位学者后来进行了修正。看来，未来的科学研究真的要变得有趣了！」\n\nOpenAI 高管 Kevin Weil 在 X 平台上惊呼：“GPT-5 找到了 10 个 (!) 此前未解决的 Erdős 问题的解答，并在另外 11 个问题上取得进展”\n\n随后，OpenAI 另一名知名研究员 Sebastien Bubeck 也兴奋地转发并补充道：「AI驱动的科学加速时代正式开启了！两位研究员仅靠一个周末、借助GPT-5成功解开10个厄尔多斯难题……顺便一提，正好宣布一下：Mark Sellke 已经正式加入了OpenAI！」\n\n消息一出，全网震动，一时间不少人误以为GPT-5独立破解了这些困扰数学界数十年的难题。\n\n不过，这场欢呼很快被谷歌 DeepMind CEO Demis Hassabis狠狠泼了一盆冷水。\n\nDemis 直接在布贝克的推文下回复道：「这真是尴尬啊（this is embarrassing）！」\n\n这句话瞬间引爆舆论。不少网友追问 Demis 究竟为什么如此评论时，他冷静地引导大家去查看 Thomas Bloom 发布的一则关键说明。而 Thomas 正是OpenAI引用的那个 ErdosProblems .com 网站的创始人兼维护人。\n\nThomas 随后公开澄清：\n「作为erdosproblems .com网站的拥有者和维护者，我得声明：OpenAI的说法明显夸大了事实。GPT-5只是通过网络搜索，找到了早已存在的论文，这些论文中早就解答了这些问题，只是我个人不知道而已。网站上的『未解』状态只是说明我尚未发现相关的论文，而不代表全世界数学界没有解决方案。」\n\n换句话说，GPT-5实际上并没有独立地破解任何厄尔多斯难题。它所做的仅仅是比人类网站管理员更迅速地在互联网上「检索到了」已知的答案，而这些答案其实早已存在。\n\n事后 Sebastien Bubeck 删除了之前的推文：\n> 我删除了之前的推文，我显然不是有意误导任何人，我原本以为自己的表达很清楚，对此感到抱歉。我们仅仅是发现了已经发表在文献中的解法，仅此而已。我认为这依然是一种巨大的进步，因为我知道检索文献有多么困难。\n\nYann LeCun 在下面回复：\n> 这次他们被自己吹嘘GPT的言论坑惨了（Hoisted by their own GPTards）。\n（注：原文为“Hoisted by their own GPTards”，源自英文俗语 \"hoisted by their own petard\"，意指“搬起石头砸自己的脚”，这里被Yann LeCun改为GPTards，以讽刺那些盲目吹捧GPT的人。）\n\nGPT-5 能够快速、精准地从浩如烟海的学术文献中挖掘出被忽略的答案，这一点当然非常有价值。但问题在于，OpenAI研究员的发言模棱两可，很容易让公众误以为 GPT-5 已经突破了AI的极限，真正自主解决了艰深的数学难题。\n\n更糟糕的是，这种误导性的说法还被自家人进一步放大，甚至上升到「AI正在颠覆传统科学研究」的高度，无疑加剧了公众的误解。",
+    "created_at": "Sat Oct 18 20:08:52 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1979637753353584640",
+        "url": "https://pbs.twimg.com/media/G3kWDFCXwAADr2Y.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1979640273048072192",
+        "url": "https://pbs.twimg.com/media/G3kYVvoWcAA_THM.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1979640458180427776",
+        "url": "https://pbs.twimg.com/media/G3kYghTWAAAt_nd.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1979640526291808257",
+        "url": "https://pbs.twimg.com/media/G3kYkfCXMAEdrW9.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": {
+      "id": "1979226538059931886",
+      "text": "Update: Mehtaab and I pushed further on this. Using thousands of GPT5 queries, we found solutions to 10 Erdős problems that were listed as open: 223, 339, 494, 515, 621, 822, 883 (part 2/2), 903, 1043, 1079.\n\nAdditionally for 11 other problems, GPT5 found significant partial progress that we added to the official website: 32, 167, 188, 750, 788, 811, 827, 829, 1017, 1011, 1041. For 827, Erdős's original paper actually contained an error, and the work of Martínez and Roldán-Pensado explains this and fixes the argument.\n\nThe future of scientific research is going to be fun.",
+      "created_at": "Fri Oct 17 16:42:33 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "803652792187400192",
+        "name": "Mark Sellke",
+        "screen_name": "MarkSellke",
+        "description": "I like math",
+        "followers_count": 1765,
+        "friends_count": 295,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 94,
+        "favorite_count": 912,
+        "reply_count": 40,
+        "quote_count": 66
+      }
+    },
+    "stats": {
+      "retweet_count": 6,
+      "favorite_count": 32,
+      "reply_count": 5,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979643108599194046",
+    "text": "当然这条吃瓜文也主要是 ChatGPT + Deep Research 完成，这个任务还是 ChatGPT 完成的最好 https://t.co/zje6KrHCbH",
+    "created_at": "Sat Oct 18 20:17:51 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1979643016324255744",
+        "url": "https://pbs.twimg.com/media/G3ka1bIXEAAaYCb.png"
+      },
+      {
+        "type": "photo",
+        "id": "1979643100030029824",
+        "url": "https://pbs.twimg.com/media/G3ka6S9X0AAw7VQ.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 5,
+      "reply_count": 1,
+      "quote_count": 1
+    }
+  },
+  {
+    "id": "1979644898799431943",
+    "text": "OpenAI 推出 AgenKit 不代表就铁定走这个方向，如果skills是更好的，他们马上就可以跟进，最多换个名字包装。看看 ChatGPT Project、codex，哪个不都是别人先做的，他们连MCP都支持的挺好😜",
+    "created_at": "Sat Oct 18 20:24:58 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1979423658356674922",
+      "text": "Anthropic Skills vs. OpenAI AgentKit\n\nSkills 是为 Claude 定制的技能包，用户通过对话定义，Claude 会在需要时自动调用，无需手动编辑。\n\nAgentKit 期望通过开发者构建和管理多步骤工作流，人工编排逻辑，成为企业 AI “自动化”的操作系统。\n\n这背后的两条路线：\n1️⃣ 用户使用视角出发，服务并强化模型即务 (MaaS)\n2️⃣ 服务平台即服务 (PaaS) 的商业叙述和投资人逻辑\n\n两个产品的未来还需要想象吗？为 OpenAI 的产品创新捏两把汗",
+      "created_at": "Sat Oct 18 05:45:50 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "1979415610657247232",
+          "url": "https://video.twimg.com/amplify_video/1979415610657247232/vid/avc1/1920x1080/Ctr813mB7OYuH2N3.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1673471589109882881",
+        "name": "少濬",
+        "screen_name": "tydezhang",
+        "description": "观机于智 · 见体于行：关注GenAI技术的产品化落地 & 模型应用评估与产品质量提升",
+        "followers_count": 589,
+        "friends_count": 5,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 14,
+        "reply_count": 0,
+        "quote_count": 3
+      }
+    },
+    "stats": {
+      "retweet_count": 2,
+      "favorite_count": 4,
+      "reply_count": 2,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979650438275494253",
+    "text": "https://t.co/i3PdBo6nZJ  AK回应：上周我去了 Dwarkesh 的播客，聊得非常开心。我觉得他们提的问题和整个对话质量都很高。\n\n我刚又把这期节目看了一遍。首先，我得承认，我说话实在是太快了，抱歉啦 :)。这对我自己其实没好处，因为有时候我“说话的线程”跑得比“思考的线程”还快（也就是嘴比脑子快）。我觉得有好几个地方我就因为这个没解释清楚。而且我当时还有点紧张，生怕自己扯得太远，或者在一些鸡毛蒜皮的小问题上钻得太深。总之，我在这儿补充几点说明和索引：\n\nAGI（通用人工智能）的时间表。\n\n大家好像对我关于 AGI 时间表的评论最感兴趣。我之前发过一条推文 https://t.co/eTrHzvCYIy 说这将是“智能体的十年（decade of agents）”，我指的就是这个。基本上，我对 AI 时间表的预测，比你在旧金山（SF）AI 圈的派对上、或在推特上刷到的那些预测要“悲观”5到10倍（即需要的时间更长）。但比起那些日益高涨的 AI 否认者和怀疑论调，我这又算是相当乐观的。\n\n这事儿其实不矛盾：在我看来，我们正同时处于两种状态：1) 近几年我们确实见证了大语言模型（LLM）带来的巨大进步；2) 但同时，我们还有如山的工作没做完。这包括很多“脏活累活”（grunt work）、系统集成的工作、连接物理世界的传感器和执行器、社会层面的工作、安全和保障工作（比如‘越狱’（jailbreaks）、‘投毒’（poisoning）攻击等），此外还有很多研究要搞定。在这些都完成之前，我们还造不出一个“在任何工作上都比真人更值得雇佣”的实体。\n\n总的来说，我认为（我预测的）10 年时间表对于 AGI 来说已经是一个非常“激进乐观”（bullish）的预测了。只是因为和现在满天飞的“炒作”（hype）一比，才显得不那么起眼。\n\n动物 vs 幽灵。\n\n我之前写过一篇关于 Sutton 播客的帖子 https://t.co/X2fMCBVshN 。我一直很怀疑，是否存在一个单一、简单的算法，你把它扔到世界上，它就能从零开始学会一切。如果真有人造出了这种东西，那我就是错的，而那也将是 AI 领域最不可思议的突破。\n\n在我看来，动物完全不是这种“从零学习”的例子——它们通过进化，被“预装”（prepackaged）了海量的智能，它们（后天）所做的学习总体上是很少的（比如刚出生的斑马）。戴上我们“工程师的帽子”（意思是从工程实现的角度出发），我们不可能去重新模拟一遍（缓慢的）进化。但是，通过大语言模型（LLM），我们偶然发现了一种替代方案，也能在神经网络里“预装”海量的智能——不是靠进化，而是靠在互联网上“预测下一个词”（predicting the next token）。\n\n这种方法在智能领域催生了一种完全不同的实体。它跟“动物”不一样，它更像是“幽灵”或“灵魂”。但是，随着时间的推移，我们能够（也应该）让它们变得更像“动物”，从某些方面来说，这正是许多前沿工作的意义所在。\n\n关于强化学习（RL）。我已经吐槽过强化学习（Reinforcement Learning, 简称RL）好几次了，比如这条 https://t.co/n6Wi9B8nRm 。首先，你这是在“用吸管吸取监督信号”（sucking supervision through a straw），所以我认为它的“信号/算力”比（signal/flop）（即效率）非常糟糕。强化学习的“噪声”也很大。因为模型完成一次任务（completion）的过程中可能包含很多错误，但只要你（瞎猫碰死耗子）碰巧得到了正确答案，这些错误也会被“鼓励”。\n\n反过来说，（过程中）一些极具洞见的词（tokens）反而可能会被“打击”，就因为你碰巧在后面搞砸了。“过程监督”（Process supervision）和“大语言模型裁判”（LLM judges）这些（替代）方案也有问题。\n\n我认为我们会看到替代性的学习范式。我“长期看好”（long）“智能体式互动”（agentic interaction），但“短期看空”（short）“强化学习” https://t.co/BsQjrukTeZ 。最近我看到好几篇新论文，在我看来，它们正朝着我所说的“系统提示词学习”（system prompt learning） https://t.co/g5x73tuORD 的正确方向发展。\n\n但我认为，从 Arxiv（预印本论文网站）上的点子，到真正在顶尖大语言模型实验室里、能规模化、通用化地落地实现，这中间还有一道鸿沟。总的来说，我非常乐观地认为，我们很快就会在这些“遗留工作”上看到良好进展。举个例子，我甚至会说，像 ChatGPT 的记忆功能等等，就是这种“新学习范式”的、已经被部署了的“原始形态”（primordial examples）。\n\n认知核心（Cognitive core）。\n\n我之前关于“认知核心”的帖子：https://t.co/QPLVzndfV3 ，这个想法是说，我们要给大语言模型“瘦身”（stripping down），让它们更难“背诵”（memorize），甚至主动剥离它们的记忆力，以此让它们更擅长“泛化”（generalization）（即举一反三）。\n\n否则，它们会过度依赖自己背下来的东西。相比之下，人类没法那么轻易地（像电脑一样）背诵，这现在看起来更像是一个“特性”（feature），而不是一个“缺陷”（bug）。也许，“记不住”本身就是一种“正则化”（regularization）（一种防止过拟合（overfitting）的技术）。\n\n另外，我前段时间也发过一个帖子 https://t.co/bd1LT4rT5s ，讨论为什么模型大小的趋势是“倒退的”，以及为什么“模型必须先变大，然后才能变小”。\n\n时空穿越回 1989 年的 Yann LeCun（杨立昆）。这就是我在播客里描述得非常仓促/糟糕的那个帖子：https://t.co/A01VKn5mzF 。\n\n核心思想是——如果你带着（今天）33 年的算法进步知识（穿越回去），你能把 Yann LeCun（深度学习先驱之一）当年的成果提升多少？当年的成果到底是被算法、数据还是算力中的哪一个给限制住了？这就是一个案例研究。\n\nnanochat。我自己从头到尾（end-to-end）实现的 ChatGPT 训练/推理流程（只保留了最核心的要素）https://t.co/ejmKC3G9HM\n\n关于大语言模型智能体（LLM agents）。我对业界的批评，更多在于（他们）“过度设计”了工具（tooling），超出了（模型）现有的能力。\n\n我生活在一个我称之为“中间世界”的状态：我希望与大语言模型“协作”，让我们的优缺点正好互补。而业界（的想象）则活在一个“未来世界”：在那里，完全自主的实体并行协作，写完所有的代码，人类变得毫无用处。\n\n举个例子，我不想要一个 AI 智能体（AI Agent）自己跑去“工作”20分钟，然后甩给我 1000 行代码。我也绝对没准备好去“管理”一个由 10 个这种智能体组成的团队。\n\n我希望（的工作模式是）把任务拆分成我能理解的小块，让大语言模型一边写代码，一边向我解释它在写什么。\n\n我希望它能向我“证明”它做的是对的；我希望它去扒一下 API 文档，然后展示给我看，它用得没错。\n\n我希望它少做点（自以为是的）假设，在不确定的时候主动问我、跟我协作。\n\n我希望在这个过程中我自己也能学习，成为一个更好的程序员，而不是只被（AI）甩一堆“据说能跑”的代码。\n\n我只是觉得，（AI）工具应该对自己的能力、以及如何融入当今行业，有一个更现实的定位。我担心如果这事儿没做好，我们最终会在软件（行业）里堆积如山的“烂代码”（slop），导致漏洞、安全*等等激增 https://t.co/YqWBnHq6w0 。\n\n工作自动化。放射科医生的例子，他们现在（不但没失业）反而过得很好 https://t.co/IFpkQn0qpU ，以及哪些工作更容易被自动化，以及为什么。\n\n物理学。孩子们应该在早期教育中学物理，不是因为他们以后要搞物理，而是因为物理是“启动大脑”（boots up a brain）的最好学科。物理学家是“智力界的胚胎干细胞”（intellectual embryonic stem cell） https://t.co/FKAVlB1pME （指他们可以分化到任何智力领域）。\n\n我有一篇更长的帖子，在我草稿箱里躺了快一年了，希望能尽快写完。\n\n再次感谢 Dwarkesh 邀请我！",
+    "created_at": "Sat Oct 18 20:46:59 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1979644538185752935",
+      "text": "My pleasure to come on Dwarkesh last week, I thought the questions and conversation were really good.\n\nI re-watched the pod just now too. First of all, yes I know, and I'm sorry that I speak so fast :). It's to my detriment because sometimes my speaking thread out-executes my thinking thread, so I think I botched a few explanations due to that, and sometimes I was also nervous that I'm going too much on a tangent or too deep into something relatively spurious. Anyway, a few notes/pointers:\n\nAGI timelines. My comments on AGI timelines looks to be the most trending part of the early response. This is the \"decade of agents\" is a reference to this earlier tweet https://t.co/NiSn6jftqq Basically my AI timelines are about 5-10X pessimistic w.r.t. what you'll find in your neighborhood SF AI house party or on your twitter timeline, but still quite optimistic w.r.t. a rising tide of AI deniers and skeptics. The apparent conflict is not: imo we simultaneously 1) saw a huge amount of progress in recent years with LLMs while 2) there is still a lot of work remaining (grunt work, integration work, sensors and actuators to the physical world, societal work, safety and security work (jailbreaks, poisoning, etc.)) and also research to get done before we have an entity that you'd prefer to hire over a person for an arbitrary job in the world. I think that overall, 10 years should otherwise be a very bullish timeline for AGI, it's only in contrast to present hype that it doesn't feel that way.\n\nAnimals vs Ghosts. My earlier writeup on Sutton's podcast https://t.co/rSp1noyGBr . I am suspicious that there is a single simple algorithm you can let loose on the world and it learns everything from scratch. If someone builds such a thing, I will be wrong and it will be the most incredible breakthrough in AI. In my mind, animals are not an example of this at all - they are prepackaged with a ton of intelligence by evolution and the learning they do is quite minimal overall (example: Zebra at birth). Putting our engineering hats on, we're not going to redo evolution. But with LLMs we have stumbled by an alternative approach to \"prepackage\" a ton of intelligence in a neural network - not by evolution, but by predicting the next token over the internet. This approach leads to a different kind of entity in the intelligence space. Distinct from animals, more like ghosts or spirits. But we can (and should) make them more animal like over time and in some ways that's what a lot of frontier work is about.\n\nOn RL. I've critiqued RL a few times already, e.g. https://t.co/mYrMFVdVDW . First, you're \"sucking supervision through a straw\", so I think the signal/flop is very bad. RL is also very noisy because a completion might have lots of errors that might get encourages (if you happen to stumble to the right answer), and conversely brilliant insight tokens that might get discouraged (if you happen to screw up later). Process supervision and LLM judges have issues too. I think we'll see alternative learning paradigms. I am long \"agentic interaction\" but short \"reinforcement learning\" https://t.co/2L7FiaoKsw. I've seen a number of papers pop up recently that are imo barking up the right tree along the lines of what I called \"system prompt learning\" https://t.co/df5mJDdN3C , but I think there is also a gap between ideas on arxiv and actual, at scale implementation at an LLM frontier lab that works in a general way. I am overall quite optimistic that we'll see good progress on this dimension of remaining work quite soon, and e.g. I'd even say ChatGPT memory and so on are primordial deployed examples of new learning paradigms.\n\nCognitive core. My earlier post on \"cognitive core\": https://t.co/q2s1ihGy0T , the idea of stripping down LLMs, of making it harder for them to memorize, or actively stripping away their memory, to make them better at generalization. Otherwise they lean too hard on what they've memorized. Humans can't memorize so easily, which now looks more like a feature than a bug by contrast. Maybe the inability to memorize is a kind of regularization. Also my post from a while back on how the trend in model size is \"backwards\" and why \"the models have to first get larger before they can get smaller\" https://t.co/6k0FZRGXsb\n\nTime travel to Yann LeCun 1989. This is the post that I did a very hasty/bad job of describing on the pod: https://t.co/fQgqaXPyp6 . Basically - how much could you improve Yann LeCun's results with the knowledge of 33 years of algorithmic progress? How constrained were the results by each of algorithms, data, and compute? Case study there of.\n\nnanochat. My end-to-end implementation of the ChatGPT training/inference pipeline (the bare essentials) https://t.co/SIetgyoKWN\n\nOn LLM agents. My critique of the industry is more in overshooting the tooling w.r.t. present capability. I live in what I view as an intermediate world where I want to collaborate with LLMs and where our pros/cons are matched up. The industry lives in a future where fully autonomous entities collaborate in parallel to write all the code and humans are useless. For example, I don't want an Agent that goes off for 20 minutes and comes back with 1,000 lines of code. I certainly don't feel ready to supervise a team of 10 of them. I'd like to go in chunks that I can keep in my head, where an LLM explains the code that it is writing. I'd like it to prove to me that what it did is correct, I want it to pull the API docs and show me that it used things correctly. I want it to make fewer assumptions and ask/collaborate with me when not sure about something. I want to learn along the way and become better as a programmer, not just get served mountains of code that I'm told works. I just think the tools should be more realistic w.r.t. their capability and how they fit into the industry today, and I fear that if this isn't done well we might end up with mountains of slop accumulating across software, and an increase in vulnerabilities, security breaches and etc. https://t.co/8556ESSpyY\n\nJob automation. How the radiologists are doing great https://t.co/FVUI872dkD and what jobs are more susceptible to automation and why.\n\nPhysics. Children should learn physics in early education not because they go on to do physics, but because it is the subject that best boots up a brain. Physicists are the intellectual embryonic stem cell https://t.co/p72Elk8lPV I have a longer post that has been half-written in my drafts for ~year, which I hope to finish soon.\n\nThanks again Dwarkesh for having me over!",
+      "created_at": "Sat Oct 18 20:23:32 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "33836629",
+        "name": "Andrej Karpathy",
+        "screen_name": "karpathy",
+        "description": "Building @EurekaLabsAI. Previously Director of AI @ Tesla, founding team @ OpenAI, CS231n/PhD @ Stanford. I like to train large deep neural nets.",
+        "followers_count": 1422230,
+        "friends_count": 1018,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 591,
+        "favorite_count": 5333,
+        "reply_count": 259,
+        "quote_count": 130
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 10,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979684614949007460",
+    "text": "分享一点 AI Coding/Codex 实践技巧：告诉 AI 如何验证\n\n这个方法其实我提到多次，只不过再随手贡献一个案例罢了。\n\nCoding Agent 能力挺强的，能自己写代码自己调用工具，但是它有时候并不知道该如何验证数据。\n\n如果说你只是告诉它哪里错了，它并不一定能通过阅读代码找出问题所在，但如果你告诉它如何验证，那么它就能在修改完后自行验证，验证时如果发现问题就会继续修复，直到完全修复为止。\n\n比如我在调试一个 API 发现返回结果不对，那么我就告诉它输入是什么，实际输出是什么，期望结果是什么（甚至于我没说它也猜得到），然后让它自行写测试代码验证。\n\n那么它就不仅阅读代码修改问题，还会写测试程序去验证，直到解决问题。",
+    "created_at": "Sat Oct 18 23:02:47 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1979684367828983808",
+        "url": "https://pbs.twimg.com/media/G3lAcZfXIAAYmOl.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1979684602722611200",
+        "url": "https://pbs.twimg.com/media/G3lAqEiXcAAIhgI.png"
+      }
+    ],
+    "retweet": null,
+    "quoted": {
+      "id": "1976845420199375054",
+      "text": "分享一点 Codex 实践经验：照葫芦画瓢法\n\n需求是这样的，我要重构一个基于 Claude Agent SDK 写的 Agent UI 的消息发送功能，让它能支持发送图片（当前只支持发送文本，图1）\n\n我不会说：帮我把输入框改造一下，支持图片上传🙅\n\n因为上下文信息太少，你这么说它肯定做不了。\n\n要实现这个功能，如果手动做的话：\n1. 要改造 UI，让它能支持上传图片\n2. 要改造 API 接口，让图片能从前端传到后端\n3. 要改造服务端处理，让后端程序将图片传给 Claude Agent SDK\n\n所以我首先要把任务拆分，当然理论上来说这些任务最好分成三个小任务依次做，但实际上 GPT-5-Codex High 已经可以一次性完成这样复杂的任务了，前提是你提示得当，给足上下文。\n\n看我是怎么提示的（图2）：\n\n> 1. 替换现在的发送消息组件为  {参考代码文件1}\n> 2. 参考 {参考代码文件2} 的async send(\n>      prompt: string,\n>      attachments?: AttachmentData[],\n>      includeSelection?: boolean,\n>    ) 和 {参考代码文件3} 的\n>  export const composeUserContent = (\n>    text: string,\n>    attachments?: AttachmentData[],\n>    selection?: SelectionSnapshot | null,\n>  ) 实现对附件的处理\n>  3. 点击发送后，将附件转成base64字符串后发送给websocket\n>  4. 参考下面的代码，重写 ccsdk/ai-client.ts 的消息处理部分代码，让它支持发送附件\n{官方文档示例代码docs.claude .com/en/api/agent-sdk/streaming-vs-single-mode}\n> 请仔细思考后执行\n\n总结一下就是：\n1. 清楚的告诉它怎么做\n2. 把参考代码一次性都给到它\n参考代码是我事先找到的开源的相关的代码，或者是官方文档，反正东拼西凑，跟我平时要实现系统找资料类似的\n\n就这么简单，执行了 9m52s 完成任务，测试一下有 Bug，描述一下 Bug，让它自己修复（图3），再测试就成了！（图4）",
+      "created_at": "Sat Oct 11 03:00:50 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1976841889388097536",
+          "url": "https://pbs.twimg.com/media/G28nOYIW8AA2JwW.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1976843666258821120",
+          "url": "https://pbs.twimg.com/media/G28o1zfWgAAVeKe.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1976845057933066240",
+          "url": "https://pbs.twimg.com/media/G28qGz4WQAAIBJO.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1976845348858388480",
+          "url": "https://pbs.twimg.com/media/G28qXvqWYAAUeCF.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 139564,
+        "friends_count": 1429,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 50,
+        "favorite_count": 274,
+        "reply_count": 11,
+        "quote_count": 3
+      }
+    },
+    "stats": {
+      "retweet_count": 4,
+      "favorite_count": 56,
+      "reply_count": 3,
+      "quote_count": 1
+    }
+  },
+  {
+    "id": "1979688852718752144",
+    "text": "这个翻译的提示词我后来加了一句话，在翻译一些晦涩难懂的技术文章时效果很好，能帮助解释一些专业术语：\n&gt; - 适当解读：如果是普通人难懂的专业术语或因为文化差异导致的难以理解，做出更多的注释以更好的理解，注释部分用括号包裹并加粗\n\n完整提示词见评论：",
+    "created_at": "Sat Oct 18 23:19:37 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1957870534235955705",
+      "text": "大神的提示词太神叨了，作为普通理工男我来写的话，提示词风格就是这样的：\n\n---\n请将以下英文文章，重写成通俗流畅、引人入胜的简体中文。\n\n核心要求：\n- 读者与风格： 面向对AI感兴趣的普通读者。风格要像讲故事，清晰易懂，而不是写学术论文。\n- 准确第一： 核心事实、数据和逻辑必须与原文完全一致。\n- 行文流畅： 优先使用地道的中文语序。将英文长句拆解为更自然的中文短句。\n- 术语标准： 专业术语使用行业公认的标准翻译（如 `LLM` -> `大语言模型`）。第一次出现时，在译文后用括号加注英文原文。\n- 保留格式： 保持原文的标题、粗体、斜体等Markdown格式。",
+      "created_at": "Tue Aug 19 18:21:25 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1957870329050562561",
+          "url": "https://pbs.twimg.com/media/GyvAsOdWAAEtrBO.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1957870506868150272",
+          "url": "https://pbs.twimg.com/media/GyvA2k4XEAATQAM.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 139564,
+        "friends_count": 1429,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 177,
+        "favorite_count": 882,
+        "reply_count": 51,
+        "quote_count": 17
+      }
+    },
+    "stats": {
+      "retweet_count": 2,
+      "favorite_count": 19,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1979688855134429367",
+    "text": "请将以下英文文章，重写成通俗流畅、引人入胜的简体中文。\n\n核心要求：\n\n- 读者与风格： 面向对AI感兴趣的普通读者。风格要像讲故事，清晰易懂，而不是写学术论文。\n- 准确第一： 核心事实、数据和逻辑必须与原文完全一致。\n- 行文流畅： 优先使用地道的中文语序。将英文长句拆解为更自然的中文短句。\n- 术语标准： 专业术语使用行业公认的标准翻译（如 `overfitting` -> `过拟合`）。第一次出现时，在译文后用括号加注英文原文。\n- 保留格式： 保持原文的标题、粗体、斜体、图片等Markdown格式。\n- 适当解读：如果是普通人难懂的专业术语或因为文化差异导致的难以理解，做出更多的注释以更好的理解，注释部分用括号包裹并加粗\n\n常用词汇：\n- AI Agent -> AI 智能体\n- LLM -> 大语言模型\n- Vibe Coding -> 凭感觉编程\n- the Bitter Lesson -> 苦涩的教训\n-  Context Engineering -> 上下文工程\n\n现在请重写下面的内容：",
+    "created_at": "Sat Oct 18 23:19:38 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1979688841213517824",
+        "url": "https://pbs.twimg.com/media/G3lEgyJWIAATprj.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 8,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  }
+]
+```
+
+##
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @dotey的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

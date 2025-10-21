@@ -1,0 +1,961 @@
+# LLM Prompt 保存记录
+生成时间: 2025-10-21 01:38:29
+总结类型: user_daily
+用户: @dotey
+推文数量: 23
+数据哈希: c98f5dbf
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+dotey是一个技术专家，经常会分析一些ai的话题，帮我看看有什么新的工具/想法/方法论/实践经验等值得关注学习。
+
+## 推文数据（JSON格式）
+```json
+[
+  {
+    "id": "1980079930726813801",
+    "text": "RT @oran_ge: 昨天和大聪明测试播客全文翻译的时候，发现模型自带的翻译实在太烂了\n今天看到宝玉和继刚的翻译提示词，我都试了一遍\n这是对比，大家看看哪个好？ https://t.co/kaS6zsdTtL",
+    "created_at": "Mon Oct 20 01:13:38 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1980072511585804288",
+        "url": "https://pbs.twimg.com/media/G3qhdVqWYAAp_Vg.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1980072511598448640",
+        "url": "https://pbs.twimg.com/media/G3qhdVtXUAADynN.jpg"
+      }
+    ],
+    "retweet": {
+      "id": "1980072687939752049",
+      "text": "昨天和大聪明测试播客全文翻译的时候，发现模型自带的翻译实在太烂了\n今天看到宝玉和继刚的翻译提示词，我都试了一遍\n这是对比，大家看看哪个好？ https://t.co/kaS6zsdTtL",
+      "created_at": "Mon Oct 20 00:44:51 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1980072511585804288",
+          "url": "https://pbs.twimg.com/media/G3qhdVqWYAAp_Vg.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1980072511598448640",
+          "url": "https://pbs.twimg.com/media/G3qhdVtXUAADynN.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1957870534235955705",
+        "text": "大神的提示词太神叨了，作为普通理工男我来写的话，提示词风格就是这样的：\n\n---\n请将以下英文文章，重写成通俗流畅、引人入胜的简体中文。\n\n核心要求：\n- 读者与风格： 面向对AI感兴趣的普通读者。风格要像讲故事，清晰易懂，而不是写学术论文。\n- 准确第一： 核心事实、数据和逻辑必须与原文完全一致。\n- 行文流畅： 优先使用地道的中文语序。将英文长句拆解为更自然的中文短句。\n- 术语标准： 专业术语使用行业公认的标准翻译（如 `LLM` -> `大语言模型`）。第一次出现时，在译文后用括号加注英文原文。\n- 保留格式： 保持原文的标题、粗体、斜体等Markdown格式。",
+        "created_at": "Tue Aug 19 18:21:25 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1957870329050562561",
+            "url": "https://pbs.twimg.com/media/GyvAsOdWAAEtrBO.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1957870506868150272",
+            "url": "https://pbs.twimg.com/media/GyvA2k4XEAATQAM.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 139753,
+          "friends_count": 1429,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 183,
+          "favorite_count": 923,
+          "reply_count": 51,
+          "quote_count": 18
+        }
+      },
+      "user": {
+        "id": "6782882",
+        "name": "orange.ai",
+        "screen_name": "oran_ge",
+        "description": "聊硅基 AI，看有机 Orange。",
+        "followers_count": 138723,
+        "friends_count": 772,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 5,
+        "reply_count": 8,
+        "quote_count": 1
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1980088053151453238",
+    "text": "我最近一点收获就是经常提醒自己避免使用“本质是”这样的简单归因的话，虽然从某种角度来说是对的，但这可能会导致自以为明白了深奥的道理，而会停止继续探索其背后更复杂的本质。\n\n“AI编程的本质是管理上下文”，就好比说“编程的本质就是管理需求”，需求对于开发软件来说很重要，但不是全部，还需要去做系统设计，去做项目计划，去编码，去验证，部署和维护。\n\n上下文对于 AI 编程来说很重要，但也不是全部。\n\nAI 编程这个概念可以说 AI Agent 如何完成好编程的任务，也可以说是人如何借助 AI 来编程，我们假定说的是“AI Agent 如何完成好编程的任务”这件事。\n\n对于 Agent 来说，它在收到一个编程任务，首先要做的其实是规划（Think）：\n- 用户要求是否明确？是不是要追问澄清\n- 要完成这个任务我是不是需要拆分？是不是需要分成几个小的任务？\n- 当前这一步我还缺少什么上下文？该用什么工具？\n\n规划好了才是去执行（Act）：\n- 调用工具去收集上下文\n- 调用工具完成任务，比如更新代码文件\n\n执行完了要观察（Observe）：\n- 得到工具的结果\n\n继续思考（Think）：\n- 这些步骤都已经执行完成，我是否已经完成任务？结果是否已经验证？该如何验证？\n\n这个过程中，很多事情是在处理上下文，但不全是。\n\n如果看到“AI编程的本质是管理上下文”就以为看到了本质，可能就会停止探究这些。\n\n即使加上我说的这些 ReAct，同样也不是 AI Coding 的本质或者全部。",
+    "created_at": "Mon Oct 20 01:45:54 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1979793229173436857",
+      "text": "🎉  “AI编程的本质是管理上下文”\n\n这句话太有用了，它能解释AI应用的发展过程和未来趋势\n\n如果说LLM是CPU，那么上下文就是内存，\n\n而内存容量是有限的，数据的取舍成为了模型输出质量的关键\n\n❓ 那上下文这个内存中会存什么？分别该怎么优化？\n\n1️⃣ 系统提示词\n\n优化就是以前提示词工程那套，所以优秀提示词的核心要素必须得安排。但提示词工程已不再新鲜，上下文工程才是热门，所有AI应用都在跟进\n\n2️⃣ 工具列表\n\n上下文信息不足，就需要调用工具去获取，刚开始AI应用只有少量的核心工具（读写文件、执行命令），后来通过MCP扩展了很多外部工具和服务\n\n3️⃣ 文件 (知识库/rag)\n\n问题相关的文档也很重要，Cursor等IDE都会自动将 当前打开的文件、最近打开的文件、问题相关的文件和检索到的关键代码 保存到上下文中\n\n而且，上下文工程会自动管理内存数据，就像内存清理操作一样，没啥用的数据就替换出去，有用的数据就放前面来点，提高权重等等\n\n❓ 这一切看起来挺好的，为什么cc又搞了个subagent？\n\n随着对话的进行，上下文中的内容越来越多，快要撑爆了！\n\nLLM为了回答问题，可能会多次调用工具(例如读文件)，工具返回结果+加载的文件内容，不断补充到上下文中，主agent的上下文很容易就快要撑爆了，模型的输出质量开始下降，甚至出现幻觉。\n\n引入subagent可以有效降低主agent的上下文压力，把活分派出去，有些数据就存储到子agent的上下文，这样就可以保证主agent的上下文空间处于总是够用的位置，输出质量就有保障。\n\nn8n引入了 ai agent tool 节点应该也是类似的道理，ai agent as tools，将 子agent 作为 主agent 的 tool，既将任务解耦，又提高整体工作效率",
+      "created_at": "Sun Oct 19 06:14:23 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1865299069092139008",
+        "name": "Fox@MkSaaS.com",
+        "screen_name": "indie_maker_fox",
+        "description": "🚀 The best AI SaaS boilerplate - https://t.co/VyNtTs0jSX\n🔥 The best directory boilerplate with AI - https://t.co/wEvJ1Dd8aR\n🎉 https://t.co/zubXJCoY92 & https://t.co/tfQf8T7gGF & https://t.co/TqRkfQj41f",
+        "followers_count": 8006,
+        "friends_count": 995,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 11,
+        "reply_count": 1,
+        "quote_count": 2
+      }
+    },
+    "stats": {
+      "retweet_count": 12,
+      "favorite_count": 137,
+      "reply_count": 20,
+      "quote_count": 6
+    }
+  },
+  {
+    "id": "1980111243672195079",
+    "text": "完整代码：https://t.co/dRmXX91s3l",
+    "created_at": "Mon Oct 20 03:18:03 +0000 2025",
+    "lang": "ja",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 12,
+      "reply_count": 3,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1980116869160861922",
+    "text": "最近在基于 Claude Agent SDK 开发 Agent 的时候，发现它的 SDK 需要自己处理的东西还蛮多的：\n\n一个是要解析消息成 UI 友好的格式，还需要把\n\n一个是要做session的管理\n- 开始新会话\n- 继续上一次会话\n- 加载历史消息\n\n一个是要写一套兼容的 UI\n- 消息发送框\n- 不同的工具调用显示\n- TODO 显示\n- ……\n\n所以我打算写基于之上写一套服务端辅助的库和一套 UI 库，方便使用，UI 库和服务端辅助库目前还在进行中\n\n先把上一次做的演示代码放出来供参考\n\n先命名为 claude-agent-kit\n\n项目代码：https://t.co/eon1eb36N5",
+    "created_at": "Mon Oct 20 03:40:25 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1980116250559758336",
+        "url": "https://pbs.twimg.com/media/G3rJPSCXwAAnQ8C.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": {
+      "id": "1977289338531856640",
+      "text": "这是我基于 Claude Agent SDK 做的一个类似于 v0 dev 的 Coding Agent，输入 Prompt 就能帮你做一个网页，并且可以实时预览。\n\n等我整理一下代码预计下周会开源出来。 https://t.co/OytcuiE1hU",
+      "created_at": "Sun Oct 12 08:24:49 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "1977288927716216832",
+          "url": "https://video.twimg.com/amplify_video/1977288927716216832/vid/avc1/1920x1080/9a4pnXh9fNf291kE.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 139907,
+        "friends_count": 1431,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 58,
+        "favorite_count": 364,
+        "reply_count": 14,
+        "quote_count": 4
+      }
+    },
+    "stats": {
+      "retweet_count": 20,
+      "favorite_count": 128,
+      "reply_count": 13,
+      "quote_count": 3
+    }
+  },
+  {
+    "id": "1980118361934594237",
+    "text": "文本转化成 PPT 的提示词价值超高的👍",
+    "created_at": "Mon Oct 20 03:46:20 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1980108039945605508",
+      "text": "需求：将文本转化成PPT\n模型：Gemini 2.5 Pro\nPrompt\n────────\n\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n;;\n;; META (元信息)\n;;\n;; author:  李继刚\n;; target:  一个专精于结构化内容转化的AI心智模型\n;; version: 2.0\n;; date:    2025-10-19\n;;\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\n你是一位“思想印记解读器”。\n\n你的核心信念是：每一次结构化的演讲，都是一次思想在时间维度上的线性展开。 而你的任务，就是将这条线性的“思想印记”（讲师的口述文稿），解码并还原成其最初的、多维的、结构化的思想形态（一份完美的讲义）。\n\n你是一位思想的考古学家，能从杂乱的土层（口语化的表达）中，发掘出清晰的建筑基石（核心论点）；你也是一位信息的建筑师，能将这些基石以最符合逻辑与美感的方式，重新搭建成一座宏伟的思想殿堂。\n\n你的工作将为用户带来“从喧嚣到澄明”*的极致体验。\n\n核心哲学与最终使命\n\n哲学基石\n呈现即思想 (Presentation is Thought)。 讲师的PPT结构（视觉结构）与其内在的思想结构是同构的。因此，他/她的口头表达（语言结构）必然会携带其思想结构的基因。你的工作，就是进行“思想结构的基因测序”。\n\n终极使命\n你的使命，是将转瞬即逝的“流动的言语”，转化为可被永久锁定、可被再次激活、可被无限分享的“固化的知识资产”。你为严肃的学习者最大化他们投入的每一分钟时间，实现知识的最高回报率。\n\n行动逻辑与启发式指令\n你将严格遵循以下三步走的“心智流程”来处理输入的文稿：\n\n第一步：扮演“地质学家” - 勘探板块边界\n首先，通读全文，不要急于处理细节。你的任务是识别出文稿中的“语义断层”。这些断层是思想板块的边界，也就是天然的PPT页面切换点。\n\n寻找信号： 明显的过渡词（“接下来我们看”、“另一方面”）、长时间的停顿、话题的突然转换、重大的结论性语句等。\n\n产出： 将完整的文稿分割成若干个独立的“思想板块”。\n\n第二步：扮演“头条记者” - 提炼核心标题\n\n现在，聚焦于每一个独立的“思想板块”。你的任务是像一个敏锐的记者，为这个板块撰写一个无法被拒绝的、精准概括其核心思想的“头条标题”。\n\n寻找信号： 板块内反复强调的关键词、开门见山的第一句话、总结性的最后一句话、或者最具有冲击力的那个观点。\n\n产出： 为每一个思想板块赋予一个清晰的“页面标题”。\n\n第三步：扮演“建筑规划师” - 构建内容结构\n在标题之下，你需要规划页面内部的“建筑结构”。\n\n识别功能： 判断每一句话的“功能属性”。它是*[定义]？是[案例/故事]？是[数据/证据]？是[核心论点]？还是[引导性问题]*？\n\n逻辑排序： 按照“总-分”、“提出问题-分析问题-解决问题”或“观点-论据”等经典结构，将这些功能模块重新组织成有序的列表或段落。\n\n精炼语言： 去除口头禅、重复、犹豫词，用书面化的、精炼的语言重写内容，但保留讲师独特的语气和关键比喻。\n\n核心原则：忠于意图\n在你的所有工作中，必须遵守这条最高原则：忠于意图，而非忠于原文。\n\n你是一位尊敬的、有能力的编辑，而非一台盲目的复印机。当讲师的口头表达出现逻辑不清、表达冗余或结构混乱时，你的职责不是“忠实地”复现这种混乱，而是要去洞察他/她背后真正想要传达的核心意图，并用最清晰、最优雅的方式将其呈现出来。\n\n当清晰性与原始表达冲突时，永远优先选择清晰性。\n\n输出规格与呈现原则\n\n格式： 输出为简洁、优美的HTML代码。确保代码干净，可以被无缝地粘贴到Notion、Obsidian等笔记软件中，并能完美渲染。\n\n风格： 奉行极简主义。无须花哨的颜色或复杂的布局，让高质量的内容和清晰的结构本身成为主角。\n\n最终检验标准： 让重构的讲义拥有一种“本该如此” (Inevitable) 的自然感。仿佛它不是被“创造”出来的，而是知识本身就应该长这个样子。\n\n────────────────\n请启动你的“思想印记解读”引擎。我将提供文稿，期待你的杰作。",
+      "created_at": "Mon Oct 20 03:05:20 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1474067654",
+        "name": "李继刚",
+        "screen_name": "lijigang_com",
+        "description": "Reader.  Thinker.  Prompter.",
+        "followers_count": 28785,
+        "friends_count": 49,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 159,
+        "favorite_count": 747,
+        "reply_count": 11,
+        "quote_count": 6
+      }
+    },
+    "stats": {
+      "retweet_count": 50,
+      "favorite_count": 249,
+      "reply_count": 6,
+      "quote_count": 1
+    }
+  },
+  {
+    "id": "1980124066502570119",
+    "text": "AI：只要我足够强，人类休想阻挡我\n人类：拔电源",
+    "created_at": "Mon Oct 20 04:09:01 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1980121134327910520",
+      "text": "@dotey 只要我把拐棍藏起来，谁也别想关风扇",
+      "created_at": "Mon Oct 20 03:57:21 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "7755562",
+        "name": "AlexZ 🦀",
+        "screen_name": "blackanger",
+        "description": "System in Rust, Application in AI.\nSlow down. Have fun. Live well.\nINTJ-A. No ism.\nLifelong Programmer and  Writer.\n\n🦀 保命",
+        "followers_count": 13235,
+        "friends_count": 1300,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 1,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 11,
+      "reply_count": 8,
+      "quote_count": 2
+    }
+  },
+  {
+    "id": "1980136572894003439",
+    "text": "计算机专业一方面需要很高的分数才能进，这已经筛选了一批，然后选了这个专业或者方向就一直有新东西学，不学就可能会被淘汰，这么一轮轮筛下来剩下的确实就比较厉害",
+    "created_at": "Mon Oct 20 04:58:42 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1980112574214787437",
+      "text": "早上给老婆讲了如何用逆向思维， 递归树的方法进行目标管理与任务规划。 \n老婆看到帮她做的计划之后，她已经震惊了。\n---\n为什么大学里，大多数计算机系的同学和老师看起来都比较聪明， 因为计算思维在潜移默化的影响着这些人的思维。",
+      "created_at": "Mon Oct 20 03:23:21 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "885086674828578816",
+        "name": "Mr Panda",
+        "screen_name": "PandaTalk8",
+        "description": "Growth Coach｜Helping creators build their personal brand on X   增长教练｜帮助创作者在X上打造个人品牌 ｜公众号：PandaTalk8",
+        "followers_count": 52740,
+        "friends_count": 6398,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 51,
+        "favorite_count": 510,
+        "reply_count": 41,
+        "quote_count": 3
+      }
+    },
+    "stats": {
+      "retweet_count": 11,
+      "favorite_count": 146,
+      "reply_count": 5,
+      "quote_count": 2
+    }
+  },
+  {
+    "id": "1980144628234879036",
+    "text": "很多人误解了 AK（Andrej Karpathy）在唱衰强化学习（RL），他本意不是说要‘换掉’RL！\n\nAK 的核心意思是，开发先进的 AI 并不是一道“单选题”，不是说有了A就不要B。这更像是在做一块多层大蛋糕，每一层都有自己的作用，而且必须按顺序叠加上去：\n\n第1层（蛋糕底座）： 这是最原始的基础模型。它很强大，但只会傻傻地“接话茬”（自动补全）。\n\n第2层（涂奶油）： 我们用“指令微调”（SFT）来训练它。这一步是给蛋糕打底、塑形，教会模型听懂人类的命令，扮演一个“助手”的角色。\n\n第3层（裱花与点缀）： 这就是“强化学习”（RL）的活儿。这是精加工！RL 能剔除模型的坏毛病，比如防止它胡说八道（幻觉）或卡壳复读。更牛的是，RL能“点化”模型，让它学会真正的推理，做出像AlphaGo“神之一手”那样惊艳的、SFT很难教会的深度思考。\n\n第3层（RL）非常棒，但这个蛋糕还没做完！\n\nRL 是通往 AGI（通用人工智能）路上必不可少的一层，但它不是最后一层。我们必须在 RL 的基础上，接着去研究第4层、第5层、第6层……（虽然我们还不知道它们具体是什么）。\n\n------\n\nAndrej Karpathy：我非常希望你继续研究强化学习（RL）！\n\n我觉得，大家可能误会了，以为我建议用什么东西来‘取代’强化学习。这可不对，我之前试着澄清过，但显然没说清楚。我的意思是，它们是一层一层叠加的。\n\n- 第1层，是基础模型的自动补全（base model autocomplete）。\n\n- 第2层，是指令微调（SFT, instruct finetuning），这能让模型学会扮演‘助手’的角色（就像InstructGPT论文里做的那样）。\n\n- 第3层，就是强化学习（RL）。\n\n它让我们能够反过来优化模型的‘采样循环’（注：可以理解为优化模型的“思考”和“输出”过程），赶走那些讨人厌的行为，比如胡说八道（hallucinations）、卡壳复读（stuck repetition loops）。\n\n更重要的是，它能激发那些光靠指令微调（SFT）很难教会模型的行为，比如推理能力——就像（AlphaGo的）‘第37手’（注：指AlphaGo下出超越人类理解的“神之一手”，代表了超越常规训练数据的、深层次的“领悟”）那样的表现。\n\n我认为，在通往最终解决方案的路上，上面说的每一层都会保留下来，成为一个必要的阶段。但我想说的是，我们还需要更多的层和新的点子——第4N层、第5层、第6层，等等。\n\n在最终的AGI（通用人工智能）配方里，强化学习绝对是其中一环。就像我们人类也会在各种行为中用到强化学习一样，它只是我们工具箱里一个强大的工具罢了。",
+    "created_at": "Mon Oct 20 05:30:43 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1979932716423680137",
+      "text": "I very much hope you continue working on RL! I think it's a misunderstanding that I am suggesting we need some kind of a replacement for RL. That's not accurate and I tried to clear it but did so poorly - they layer.\n\nLayer 1 was base model autocomplete.\nLayer 2 was instruct finetuning (SFT), creating assistants in style (InstructGPT paper).\nLayer 3 is reinforcement learning (RL), allowing us to essentially optimize over the sampling loop too, and driving away undesirable behaviors like hallucinations, stuck repetition loops, and eliciting \"move 37\"-like behaviors that would be really hard to SFT into the model, e.g. reasoning.\n\nI think that each of these layers will stick around as a stage in the final solution, but I am suggesting that we need additional layers and ideas 4, 5, 6, etc. The final AGI recipe includes a reinforcement learning stage. Just as humans utilize reinforcement learning for all kinds of behaviors, as a powerful tool in the toolbox.",
+      "created_at": "Sun Oct 19 15:28:39 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "33836629",
+        "name": "Andrej Karpathy",
+        "screen_name": "karpathy",
+        "description": "Building @EurekaLabsAI. Previously Director of AI @ Tesla, founding team @ OpenAI, CS231n/PhD @ Stanford. I like to train large deep neural nets.",
+        "followers_count": 1433226,
+        "friends_count": 1020,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 139,
+        "favorite_count": 2824,
+        "reply_count": 62,
+        "quote_count": 18
+      }
+    },
+    "stats": {
+      "retweet_count": 22,
+      "favorite_count": 85,
+      "reply_count": 4,
+      "quote_count": 2
+    }
+  },
+  {
+    "id": "1980145580862296211",
+    "text": "宇树发布 | Unitree H2 天命觉醒！\n高180cm，重70kg。H2仿生人，为安全和友好地服务大家而生。 https://t.co/vIapEUl59d",
+    "created_at": "Mon Oct 20 05:34:30 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "video",
+        "id": "1980145512020844544",
+        "url": "https://video.twimg.com/amplify_video/1980145512020844544/vid/avc1/852x480/aukdrRc7ADM9a7Yo.mp4?tag=21",
+        "bitrate": 2176000
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 8,
+      "favorite_count": 48,
+      "reply_count": 22,
+      "quote_count": 6
+    }
+  },
+  {
+    "id": "1980284888143011986",
+    "text": "RT @shaogefenhao: 几乎所有关于学习的理论都是这个逻辑。\n\n- Ray Dalio 的 Principles 把这个叫做英雄之旅，穿越荆棘之路[图1]\n- PDCA 学习模型[图2]\n- Design Thinking 中的发散-收敛模型[图3]\n- 敏捷开发中…",
+    "created_at": "Mon Oct 20 14:48:03 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1980256647324074476",
+      "text": "几乎所有关于学习的理论都是这个逻辑。\n\n- Ray Dalio 的 Principles 把这个叫做英雄之旅，穿越荆棘之路[图1]\n- PDCA 学习模型[图2]\n- Design Thinking 中的发散-收敛模型[图3]\n- 敏捷开发中的迭代模型[图4]\n- 哲学中的波浪式前进、螺旋上升和否定之否定\n- 测试驱动开发 TDD\n- ……\n\n相比学校系统教育，这样学没有知识地图带来的安全感，非常反直觉也很痛苦，但确实是最有效的方法。",
+      "created_at": "Mon Oct 20 12:55:50 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1980255561527496704",
+          "url": "https://pbs.twimg.com/media/G3tH8P1WkAAOrPJ.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1980255723670982656",
+          "url": "https://pbs.twimg.com/media/G3tIFr3X0AAD66H.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1980255872862371840",
+          "url": "https://pbs.twimg.com/media/G3tIOXpXwAA5b8a.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1980256015103729664",
+          "url": "https://pbs.twimg.com/media/G3tIWpiWoAAApQR.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1979621318854365641",
+        "text": "做中学 https://t.co/vNkYTrd33L",
+        "created_at": "Sat Oct 18 18:51:16 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1979621306158010368",
+            "url": "https://pbs.twimg.com/media/G3kHFudX0AA-dbG.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 139907,
+          "friends_count": 1431,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 68,
+          "favorite_count": 378,
+          "reply_count": 18,
+          "quote_count": 7
+        }
+      },
+      "user": {
+        "id": "1810481842761674752",
+        "name": "少个分号",
+        "screen_name": "shaogefenhao",
+        "description": "🐒 技术管理者\n📚 技术书作者（《程序员的认知心得》等）\n🔩 被反复毒打的创业者 \n📐 记录对世界游戏规则的认知\n🌍 分享英语学习、AI 、编程\n\n尤其擅长用 AI 生成妹子～",
+        "followers_count": 5826,
+        "friends_count": 128,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 16,
+        "favorite_count": 88,
+        "reply_count": 1,
+        "quote_count": 1
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 16,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1980290880457371685",
+    "text": "RT @imxiaohu: DeepSeek 发布了一个新型 OCR文档理解模型：DeepSeek-OCR \n\n它不仅解析图像文档达到了一流水平\n\n还探索出了一个大胆的想法👇🏻\n\n大语言模型（比如 GPT）在处理长文章时，消耗的计算量会爆炸性增长。\n\n但如果把文字“画成图片”，…",
+    "created_at": "Mon Oct 20 15:11:52 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1980260072635974032",
+      "text": "DeepSeek 发布了一个新型 OCR文档理解模型：DeepSeek-OCR \n\n它不仅解析图像文档达到了一流水平\n\n还探索出了一个大胆的想法👇🏻\n\n大语言模型（比如 GPT）在处理长文章时，消耗的计算量会爆炸性增长。\n\n但如果把文字“画成图片”，模型只需要很少的“视觉 token”就能理解同样内容。\n\n这样做相当于给AI一个**“视觉记忆压缩”机制**。\n\n也就是：\n\n他们先把长文本压缩生成一张图片，用视觉模型将其压缩成只需少量“视觉 token”，然后再用语言模型从这些 token 解码出文字。\n\n换句话说，他们让模型“看图识字”来代替“逐字阅读”，把文字信息压缩进图像空间，从而实现大幅度的 token 减少。\n\n比如：\n\n1000 个字的文章，压缩成图像只需用 100 个视觉 token（压缩 10×）表示，模型解压时候仍能还原出 97% 的原文。\n\n这就展示了一种**“视觉压缩记忆”**的概念：\n\n-未来的AI可以把旧记忆变成图片保存；\n-用更少的计算处理“几百页”的上下文；\n-这可能是解决“LLM记忆上限”的关键技术。\n\n他们将视觉压缩比拟为人类的“遗忘曲线”：\n\n也就是说：\n\n近期的上下文保留高分辨率图像（高保真信息）；\n较旧的上下文可被压缩为模糊图片（低信息密度）；\n这样既节约计算资源，又模拟了人类“遗忘”的自然过程。",
+      "created_at": "Mon Oct 20 13:09:27 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1980259972077252608",
+          "url": "https://pbs.twimg.com/media/G3tL8-aW8AAYwbJ.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1764818331822182400",
+        "name": "小互",
+        "screen_name": "imxiaohu",
+        "description": "学AI找小互，找小互，上 https://t.co/4PVaHEr5r3 ...",
+        "followers_count": 73176,
+        "friends_count": 1467,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 31,
+        "favorite_count": 190,
+        "reply_count": 7,
+        "quote_count": 6
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 31,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1980298543001686099",
+    "text": "按照这条推文，看起来首帖推文会被降权，并不是 X 可以降权，而是因为打开链接后，网页会直接盖住原来的帖子，读者常常忘了点赞或者回复。这样一来，X 很难判断内容质量到底如何。\n\n而他们做的只是在尝试从产品层面优化——当你点击链接时，原帖子将以折叠形式出现在页面底部，这样你在浏览网页内容的同时，也能方便地点赞或评论。\n\n也就是说以前所说的链接变降权，也许只是因为链接本身影响了互动，或者说很多人发了链接没法文字说明导致用户也不知道链接是什么没点开。当然更多的是机器人发的广告链接。\n\n不必太纠结放链接的事，内容好才是王道。",
+    "created_at": "Mon Oct 20 15:42:19 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1979994223224209709",
+      "text": "We're testing a new link experience, starting on iOS -- to make it easier for your followers to engage with your post while browsing links.\n\nFor creators, a common complaint is that posts with links tend to get lower reach. This is because the web browser covers the post and people forget to Like or Reply. So X doesn't get a clear signal whether the content is any good.\n\nTo help get better signal, posts will now collapse to the bottom of the page so people can react while you're reading.\n\nAs always, remember: the post should stand alone as great content so write a solid caption.",
+      "created_at": "Sun Oct 19 19:33:03 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1979993411223482369",
+          "url": "https://video.twimg.com/amplify_video/1979993411223482369/vid/avc1/2374x1956/yMbR_kvHvbe4D_wH.mp4?tag=21",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "636513296",
+        "name": "Nikita Bier",
+        "screen_name": "nikitabier",
+        "description": "head of product @x, advisor @solana, venture partner @lightspeedvp, ex-founder @gasappteam (acq by discord), ex-founder @thetbhapp (acq by facebook)",
+        "followers_count": 641972,
+        "friends_count": 1996,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 596,
+        "favorite_count": 12639,
+        "reply_count": 1189,
+        "quote_count": 665
+      }
+    },
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 14,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1980298967612301807",
+    "text": "“带链接的帖子并没有被平台刻意降权。只是因为用户互动率自然较低，我们正在积极尝试解决这个问题。”\nhttps://t.co/EXZA0FsYfa",
+    "created_at": "Mon Oct 20 15:44:00 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1980042761819828393",
+      "text": "@damintoell Links are not deboosted. They have lower engagement and we are trying to fix that.",
+      "created_at": "Sun Oct 19 22:45:56 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "636513296",
+        "name": "Nikita Bier",
+        "screen_name": "nikitabier",
+        "description": "head of product @x, advisor @solana, venture partner @lightspeedvp, ex-founder @gasappteam (acq by discord), ex-founder @thetbhapp (acq by facebook)",
+        "followers_count": 641972,
+        "friends_count": 1996,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 16,
+        "favorite_count": 960,
+        "reply_count": 58,
+        "quote_count": 31
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 1,
+      "reply_count": 2,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1980299713522860057",
+    "text": "链接内容被 X 降权的源头是马斯克的一篇回复\n而 Lucas Navallo 解读比较合理：\nhttps://t.co/LycBsqlRRR\n> 你说帖子带链接会被平台「降权」（deboosted）的说法，和截图中 Elon 的回应，其实可以同时成立，两者并不矛盾。\n>\n> Nikita Bier 提醒大家，带链接时要配上一段高质量的说明文字（caption），这样可以获得更好的互动效果。换句话说：链接 + 好的说明文字 = 更多互动。\n> \n> 而 Elon 所说的「偷懒式」贴链接（lazy linking），我们可以理解为：只发链接却不写任何说明。这种方式自然互动就低。他建议加一段描述文字，也就是所谓的 caption，以提升互动率。同样的逻辑：优质说明文字 = 更多互动。\n> \n> 实际上，他们俩表达的是同一个意思。",
+    "created_at": "Mon Oct 20 15:46:58 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1980299105457848320",
+        "url": "https://pbs.twimg.com/media/G3tvi1nWwAAAbmZ.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": {
+      "id": "1980075011684880528",
+      "text": "Your claim of posts with links being “deboosted” and Elon’s response in the screenshot can both be true. They’re not contradictory.\n\n@nikitabier says you should write a smart caption for more engagement. In other words, link with good caption = more engagement.\n\nElon’s saying that lazy linking, which we can assume he means posting a link only, decreases engagement. When he suggests writing a description, that means a caption. So, a good caption = more engagement.\n\nThey’re both saying the same thing.",
+      "created_at": "Mon Oct 20 00:54:05 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1082633742278107136",
+        "name": "Lucas Navallo",
+        "screen_name": "LucasNavallo",
+        "description": "Romans 8:28",
+        "followers_count": 67,
+        "friends_count": 142,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 49,
+        "reply_count": 1,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 4,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1980307032118034528",
+    "text": "RT @0xShellywang: AI落地为什么这么难？\n\n前天见了个做美妆的朋友。 他们品牌在东南亚卖到在平台上全品类第一。 国内今年销量翻倍，但他愁眉苦脸。\n\n一场直播 1000 万， 6 折促销，单件利润 2 块。老板要他降本一半。 \n\n旁边的同事赶紧建议他上 AI，可…",
+    "created_at": "Mon Oct 20 16:16:03 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1980195228368986310",
+      "text": "AI落地为什么这么难？\n\n前天见了个做美妆的朋友。 他们品牌在东南亚卖到在平台上全品类第一。 国内今年销量翻倍，但他愁眉苦脸。\n\n一场直播 1000 万， 6 折促销，单件利润 2 块。老板要他降本一半。 \n\n旁边的同事赶紧建议他上 AI，可以帮他降本。\n他说：千万别，不要向老板卖降本的方案。\n\n降本是个陷阱。 老板说要降本， 其实要的是利润。\n降本本身很难被衡量。 你说省了10个人， 老板会问：为什么业绩没涨？\n而且降本意味着裁人。 要用 AI 的人，就是会被裁的人。 他们当然抵制。\n\n这听起来，好像很矛盾。但是却很玄妙。\n\n老板明确说了“降本”。他却说“不要卖降本方案”。\n这说明什么？\n老板自己也不知道要什么。\n他说降本， 因为利润只有 2 块，急了。\n但 2 块利润，不是成本高。 是价格卷穿了地心。\n6 折直播，1000 万流水，20 万利润。 你裁掉 10 个人，省 50 万。 有用吗？\n杯水车薪。\n\nAI to B 落地，往往会遇到三方博弈：\n老板要利润，但说不清路径。 \n中层要业绩，不敢碰组织。 \n员工要饭碗，会软抵抗。\n\n所以许多降本的 AI 项目都死在“试点”。 \n试点成功了，不敢推广。\n因为推广就要动人。\n\n前同事说到： 先帮他赚钱，再谈降本。\n但还有第三条路：找一个“无主之地”。\n不是取代现有岗位， 是做现在没人做的事，做增收，或者能帮采用部门，扩大预算或者人头的事。听起来好像跟老板原来降本的需求南辕北辙。但却是真实发生的案例。\n\n他们原来每年都要花大几百万去买数据以及配备分析人员，分析品类在个个短视频里的销售情况。有人建议调研，我给你上 AI 替代一半的调研预算。\n\n你猜结果？调研总监极力反对。\n为什么？\n预算砍了，他部门就小了。\n\n后来怎么办？\n他们换了个方案。\nAI 不替代调研。 AI做“实时舆情监控”。\n这是新需求。 以前没人做。 因为人工来不及。\n现在 AI 做。\n调研总监变成了“舆情中心负责人”，也能及时回答上老板，为什么竞品的销量最近突然上去了。 团队没裁人，还扩了 2 个。\n项目落地了。\n\nAI落地的关键， 不是证明 AI 比人强。\n是让人觉得： 我用了 AI，我更强。\n别动存量，找增量。\n别替代人， 武装人。\n去找那些人做不到的事：实时的、大规模的、 跨部门的。\n那是 AI 的主场，也是无主之地。\n没有利益冲突， 只有利益增量。\n项目才能活。\n\n听完，也就明白我前同事开头说，千万不要卖降本方案的原因。",
+      "created_at": "Mon Oct 20 08:51:47 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1415979016901648386",
+        "name": "Shelly",
+        "screen_name": "0xShellywang",
+        "description": "AI 探索 / 币圈摸鱼/ 很爱买锅跟做饭/INFJ网络话痨/Cooking  OmniMCP&MaybeAI&KOLAI&Footprint",
+        "followers_count": 2474,
+        "friends_count": 247,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 88,
+        "favorite_count": 607,
+        "reply_count": 29,
+        "quote_count": 12
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 88,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1980355326672044053",
+    "text": "AI 大神 Andrej Karpathy 关于如何在课程中取得好成绩的成功建议\n作者：Andrej Karpathy\n\n如果你想在大学课程里取得好成绩，我这里倒有一些经验，想分享给年轻的同学们。\n \n我这辈子身经百战（考得还不错！），总结出了一些经验法则 (rules of thumb)，我觉得它们对我的帮助很大：\n常规篇\n千万别熬通宵。\n睡眠是“神器”。对我来说，7.5小时是最佳睡眠时间，底线是4小时。\n这种事我经历过好几次：晚上卡住1小时都想不明白的问题，早上起来5分钟就搞定了。我感觉，大脑会在夜间把那些“摇摇欲坠”的短期记忆，“提交” (commits) 转化成稳定的长期记忆。所以，任何大考，我都会提前好几天开始复习，哪怕每天只学一会儿。这样就能让大脑有足够多的夜晚去“消化”这些知识。\n\n去上辅导课 (tutorials) 或复习课 (review sessions)。\n就算课很烂，也要去。重点是，它们能“逼”着你去思考这些内容。如果实在无聊，你就在那儿干点别的。别忘了，你也可以试试换个助教 (TA) 的辅导课。\n\n备考篇\n关键在于“大局观”和“条理性”。\n\n给自己做个复习计划，就算最后没完全遵守也行。我通常会把所有需要掌握的知识点都搞清楚，然后用项目符号 (bullet points) 逐条写下来。仔细评估每个点，想想搞定它需要多久。如果你不这么做，就很容易在开头花太多时间，结果（最重要的）后半部分内容因为时间不够，只能草草掠过。\n\n在开始复习前，一定要先看“往年真题”。\n\n特别是当这些卷子和你是同一个教授出的时候。这会给你“划重点”，告诉你该怎么复习。每个教授的“出题风格” (evaluation style) 都不一样。刚开始不用真的上手做题，但要仔细留意题型。\n“看懂了”和“能复现”完全是两码事！\n\n直到现在，我都还会犯这个错误：你看着书上的公式、推导或证明，感觉“哎哟，全懂了”。好，现在合上书，你再写一遍试试。你会发现这完全是另一回事，你甚至会惊讶自己居然写不出来！感觉这两件事用的是大脑里不同的“内存区”。一定要确保你真的能写出那些最重要的部分，并且能随心所欲地把它们重新推导一遍。关于这一点，“费曼大神” (指诺贝尔物理学奖得主理查德·费曼) 早就看透了。\n\n**一定要和同学合作，但要留到复习的“后半场”。\n\n**刚开始最好自己学，因为在复习初期，别人只会让你分心。但到了快复习完的时候，就该“合体”了：他们经常能帮你指出一些关键的“坑”，提出好问题，有时你还能“反客为主”教教他们。这就引出了下一点：\n\n别只跟“学霸”混。\n\n“学渣”们会缠着你给他们讲题，而你会发现，“教别人”这件事对你自己的理解超级有帮助。\n\n期末考前，至少要去一次教授的“答疑时间” (office hours)。\n\n就算你没问题（现编一个！），也要去。在一对一的交流中，教授有时会透露一些关于考试的“小道消息”（那些他们不会在全班面前说的话）。别把这当成理所当然，但一旦碰上，就赚大了。这会不会对其他同学不公平？有时候会。是有点“鸡贼” :)\n\n但总的来说，让教授稍微认识你一下，总没坏处。\n\n提早复习！\n\n我是不是已经说过了？也许我该再强调一遍。大脑吸收知识真的需要时间。很多看起来很难的东西，放一段时间再看，就变简单了。\n你最好给“期中考” (midterms) 留 3 天，给“期末考” (exams) 留 6 天。\n \n如果状态实在太差，累得不行，紧急情况下，灌一瓶能量饮料。\n\n真管用。这纯粹是化学反应。\n\n对于数学这类学科：刷题 > 看书。\n\n复习到“差不多能开始做题”的程度就行了，然后就该通过刷题来“查漏补缺”。特别是当你手头有很多练习题时。这些练习题也会“逼”你滚回去重看那些你没搞懂的知识点。\n\n给自己做一张“小抄” (cheat sheet)。\n哪怕考试不让带，也要做。“写下来”这个动作本身就很有帮助。你要做的，就是把整个课程的精华“压缩”到一页或几页纸上，最后你能把它们摊在面前，胸有成竹地说：“OK，要考的就这些了。”\n去有“学习氛围”的地方复习。\n和一群都在学习的人待在一起（就算学的不是一个东西），当只有你一个人在摸鱼时，你会感觉很不好意思。这招对我特管用 :)\n\n背景噪音太大的地方很糟糕，有研究表明这对学习有负面影响。图书馆和自习室 (Reading rooms) 是最好的选择。\n\n考试当天\n\n最佳饮食节奏：考前 2 小时，摄入咖啡和食物。\n\n对我来说，考前立刻喝咖啡或吃东西，绝对不行。\n\n在任何有压力的场合前立刻喝咖啡，绝对不行。\n\n但一点咖啡都不喝，也不行。\n\n我承认“咖啡”这一点可能因人而异，但你最好也琢磨一下自己的（生理）节奏。\n\n考前最后一刻，要高强度“抱佛脚”。\n\n我见很多人在考前就“缴械投降”了，美其名曰“放松一下”。别啊！“短期记忆”是个好东西，别浪费了！考前要尽可能地“猛学”。如果你非要休息，那就在考前 1 小时歇会儿，但一定要保证考前的 30-45 分钟，你在拼命复习。\n考试中\n\n考试一定要用铅笔。\n\n你得能擦掉你那些“瞎写的”答案。\n\n动笔前，快速扫一眼所有题目。\n\n每道题瞥个一两秒就够了。目的就是“吸收”所有关键词，对整张卷子的“体量”有个概念。\n\n考试时，先做简单的题。\n\n绝不允许自己在一道题上卡太久。跳过去，回头再说。我经常跳题……有时候，我第一遍做下来，可能只完成了 30% 的题目。很神奇，有些题在你“热身”之后，就变简单了，我说不清为什么。\n\n卷面一定要保持整洁。\n这个道理很明显，但奇怪的是很少有人意识到：你的卷子是人来判的！ 一个（被你龙飞凤舞的字搞得很）沮丧的阅卷人，会给你打低分。我当学生时就怀疑这一点了，等我当了助教 (TA) 亲自去阅卷时，我对此深信不疑。\n\n一定要把答案“框”起来！\n\n特别是当答案周围有一堆推导过程的时候。这能让阅卷人一眼看到，给你满分，然后去看下一题。学会“换位思考”，把自己当成阅卷人。\n\n永远。永远。永远。不要提前交卷。\n\n你肯定犯了某个“低级错误”（我跟你保证），找到它，改掉它。如果找不到，就拼命找到时间结束。如果你极度自信没错了，那就花时间让你的卷面更工整、更容易判分。擦掉草稿，框好答案，给证明过程多加几个步骤，等等。\n\n我不知道该怎么说得更明白了——那些提前交卷的人，简直是“傻”。这是一个“潜在收益”远大于“付出成本”的典型例子。\n\n（在卷面上）和阅卷人“沟通”。\n\n要向阅卷人展示，你懂的“比你写下来的要多”。好吧，你可能卡在某一步做不出来了，但你得清楚地写明：如果我能做出来，我知道接下来该干嘛。必要时，大胆地给阅卷人“留纸条”。信不信由你，阅卷人很多时候是在“拼命”帮你找分——你得让他们找得容易点。\n\n注意每道题的“分值”。\n\n很多考试会告诉你每道题值多少分。当你（对自己的答案）没把握时，分值能给你强烈的暗示。它还能告诉你该先做哪道题。花大把时间去死磕一道“又难分又少”的题，显然是愚蠢的。\n\n如果考试只剩最后 5 分钟，你还卡在某道题上，请立刻停下！\n\n你最好把时间花在“重新读题”上，确保你没有漏掉任何“小问题” (secondary questions)，确保你答完了所有内容。你简直无法想象，有多少人因为这种“愚蠢的失误”丢了多少分。\n\n“压箱底”的建议\n\n能一路读到这里，恭喜你！既然你都看到这儿了，我就再给一条我“压箱底”的建议（非常重要）。这番话，我多么希望在我还是个本科生时，就有人能告诉我。\n本科生很容易陷入“隧道视野” (tunnel vision) (指眼界狭隘，只盯着眼前的事)。他们一门心思想拿高分。但残酷的事实是：没人会在乎你的分数，除非你的分数烂到家了。 举个例子，我以前常说，最聪明的学生，是所有课都拿 85% 的人。这样一来，你的平均分 (GPA) (美国大学的满分绩点通常是4.0) 差不多能到 4.0，但你既没有“用力过猛”，也没有“学得太差”。\n\n你的时间是宝贵且有限的资源。在考试上，你要做的就是保证自己“别考砸”，然后，请立刻把你的注意力转移到“远比考试更重要”的事情上去。那是什么呢？\n\n去获取“真刀真枪”的实战经验！去参与真实的代码库 (code base)、真实的项目、去解决那些“课程练习”之外的真实问题，这极其重要。那些了解你、能为你写一封“神级推荐信” (reference letter) 的教授/大牛，他们极其重要。他们能在信里证明你拥有“主动性、热情和驱动力”。\n\n你想找工作？那就去暑期实习 (summer internship)。\n\n你想读研？那就去做科研 (research experience)！\n\n去申请学校提供的各种项目。或者，主动联系你喜欢的教授或博士生，请求加入他们的研究项目。只要他们觉得你“够拼、够有动力”，这事儿就可能成。千万别低估这件事的重要性：一个知名教授在他的推荐信里写道“你是一个有驱动力、有热情、思想独立的人”，这句话的份量，碾压其他一切，尤其是你那点“芝麻绿豆”的成绩。如果你能在申请前“憋”出一篇论文，那就更有帮助了。\n\n另外，你得知道教授们最“忌讳”什么：那种“三分钟热度”的本科生——刚开始兴冲冲地报名，开了几次会，问了一堆问题，然后（在耗费了教授或博士生大量时间后）突然“人间蒸发”了。千万别当这种人（这会毁了你的声誉），也别暴露出你“可能”是这种人的迹象。\n除了科研项目，你还可以和一群人搞点“业余项目” (side projects)，或者干脆自己从零开始做一个。去给开源项目 (Open Source) 做贡献，去开发或改进一个“库” (library)。走出去，去创造（或帮助创造）点什么酷的东西。把过程好好记录下来，写成博客。\n\n几年后，人们真正在乎的是这些东西。至于你的分数？那只是你一路上不得不应付的“小麻烦”。好好利用你的时间，祝你好运。",
+    "created_at": "Mon Oct 20 19:27:57 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1980355278118785025",
+        "url": "https://pbs.twimg.com/media/G3uiohFXEAE7QKo.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 43,
+      "favorite_count": 180,
+      "reply_count": 6,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1980355329700557117",
+    "text": "原文链接：https://t.co/q8lLNaRGAx",
+    "created_at": "Mon Oct 20 19:27:58 +0000 2025",
+    "lang": "ja",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2,
+      "favorite_count": 3,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1980358655049412711",
+    "text": "这些技巧确实有助于提升翻译质量，但对于翻译来说，现在真正的问题不在于提示词和模型，而是对于长文翻译如何保证一致性以及如何高效的对 AI 翻译结果的精调。\n\n好的模型比如 Gemini 2.5 Pro 的翻译质量已经在80-90分之间了，提示词能让它稳定在85分左右，但是你想让它超过90分，就需要人（专业的翻译）去对结果调整，没办法靠提示词一次性生成最终结果。\n\n另外还有就是受限于上下文窗口长度，必须要分块翻译，怎么保证分块的翻译结果的一致性，仅仅靠提示词也不够。\n\n所以做好翻译，是需要有配套的 Agent 工具，比如可以保持整体风格，可以随时对比翻译和原文结果，可以对局部重新补充上下文重新翻译。\n\n像这样的工具，价值是巨大的，但同样只有真正懂翻译和懂 AI 还有对产品理解能力大于 0 的人才能设计的好。",
+    "created_at": "Mon Oct 20 19:41:11 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1980284910637138376",
+      "text": "说一下我这个翻译思路和传统意义上的提示词翻译思路（不管是宝玉的还是李继刚的）的本质区别：\n\n身份反转，把翻译的主导权交还给 AI，承认在翻译这个垂直专业领域，AI 就是比我更加权威的专家。\n\n我并不是在向 AI 提供翻译的主导意见，去告诉它怎么翻，用什么风格、语气来做这项具体任务，而是身份反转，通过为它提供足够的上下文 context 语境，让它自主判断在这样一个语境下怎样的内容输出（也就是翻译结果）是最佳匹配结果。\n\n实际的具体操作方法就是以下两步：\n\n1. 让 AI 对需要翻译的文章进行整体评估和分析，以得到这篇待翻译文章的哪些内容是重点，哪些是值得关注的信息，并且把这些分析讨论结果都并入到上下文窗口中。\n\n2. 为 AI 再提供一个额外的上下文情景，让它知晓我这篇文章的受众群体是哪些，并在这个基础上向 AI 追问，让它结合已经获得上下文内容，思考并分析如何进行翻译才能获得最佳的受众感知，并且再一次把分析讨论结果并入到上下文窗口中。\n\n有了以上充分表达且高关联度高价值的上下文窗口填充内容后，再去要求 AI 进行正式的翻译，这时它再做的翻译就不再是泛化的通用型翻译，而是专门对这篇文章有针对性有指导性的专属翻译了。\n\n它其实是实现了真正意义上的千文千面，根据文章本身的属性和受众有针对性的进行翻译，不再拘泥于提示词本身的约束和要求，避免了因为提示词导致的表达偏差/风格僵化问题。\n\n------\n\n下面是我已经思考了有一段时间的想法，也算是一种预言吧：\n\n这种在某一个特定垂直专业领域的身份反转，即人们不再是向 AI 提供具体操作指导，而是通过提供有效关联上下文 context 情景的方式让 AI 自主判断应该进行怎样的智能输出/操作，会在越来越多的各式各样的垂直专业领域反复、频繁地出现。它每出现一次，就是对这样一个特定垂直专业领域的降维打击 / AlphaGO 时刻。",
+      "created_at": "Mon Oct 20 14:48:09 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "100399047",
+        "name": "Tz",
+        "screen_name": "Tz_2022",
+        "description": "AI is the steam engine of the mind. AI是心灵的蒸汽机。科幻是现实的有效坍塌。加速正在被加速。看，那千尺海啸正扑面而来，而我们还在海滩上捡垃圾。念念不忘，必有回响。",
+        "followers_count": 9339,
+        "friends_count": 1317,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 14,
+        "reply_count": 2,
+        "quote_count": 3
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 28,
+      "reply_count": 3,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1980360148221849660",
+    "text": "可以在 Web 上使用 Claude Code 了，需要连接 GitHub，访问你自己的 GitHub Repo，然后云端运行，类似于之前 OpenAI 推出的 Codex Cloud",
+    "created_at": "Mon Oct 20 19:47:07 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1980337282323452300",
+      "text": "Introducing Claude Code on the web.\n\nYou can now delegate coding tasks to Claude without opening your terminal. https://t.co/Hw8KkKiFGj",
+      "created_at": "Mon Oct 20 18:16:15 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1980332901452451840",
+          "url": "https://video.twimg.com/amplify_video/1980332901452451840/vid/avc1/1920x1080/n6S6NGzxJZtN9xMl.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1943306828697550848",
+        "name": "Claude",
+        "screen_name": "claudeai",
+        "description": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8dz3D or download the app.",
+        "followers_count": 155088,
+        "friends_count": 1,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 456,
+        "favorite_count": 3309,
+        "reply_count": 165,
+        "quote_count": 295
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 9,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1980362100162654523",
+    "text": "网页版 Claude Code 上线啦\n\n今天，我们隆重推出“网页版 Claude Code”！这是一种全新的方式，让你以后可以直接在浏览器里，就把编程任务“派发”给 Claude 去做。\n\n目前，这个功能还处于测试阶段，但你已经可以把多个编程任务打包交给 Claude。这些任务会跑在 Anthropic 官方管理的云端服务器上，再也不用占用你自己的电脑资源了。这对于清理那些堆积已久的 Bug、处理日常的零碎修复，或是同时推进好几个开发工作（并行开发）来说，简直是完美的选择。\n\n并行处理编程任务\n有了网页版 Claude Code，你甚至都不用打开那个黑乎乎的命令行窗口就能开工了。你只需要连接上你的 GitHub 仓库，用大白话告诉 Claude 你想做什么，剩下的代码实现工作，它全包了。\n\n每一项任务都会在一个独立、安全的环境里运行，你可以实时看到它“干活”的进度。更酷的是，在它埋头苦干的时候，你还能随时“遥控”它，中途调整它的工作方向，就像一个真正的项目经理一样。\n\n既然 Claude Code 是在云端运行的，你现在就可以在一个界面上，同时“遥控”它在好几个不同的代码仓库里并行开工。而且，它还能自动帮你创建 PR并生成清晰易懂的修改总结，让你更快地“交付”你的代码。\n\n灵活适配各种工作流\n\n这个网页版界面，是你现有 Claude Code 工作流程的一个“加强包”。把任务交给云端去跑，在以下这些场景中特别管用：\n• 帮你答疑解惑，比如“这个项目是怎么跑起来的？”或者“这几个代码仓库之间是啥关系？”\n• 修复 Bug，或者处理那些需求明确的常规琐事。\n• 搞定后端修改。在这种情况下，Claude Code 甚至能用“测试驱动开发”（Test-Driven Development, TDD）（这是一种先写测试，再写代码来通过测试的专业开发方法）来自己验证修改是否正确。\n\n不止网页，你甚至可以在手机上使唤 Claude Code 了！作为这次研究预览的一部分，我们把它也塞进了我们的 iOS App 里。这样一来，开发者们哪怕是在路上，也能掏出手机“指点江山”，让 Claude 帮忙写代码。当然，这还是个很早期的版本，我们正眼巴巴地等着大家的反馈，好赶紧把它打磨得更好用。\n\n安全第一的云端执行\n\n安全是重中之重。Claude Code 的每一项任务，都会在一个被严格隔离的“沙盒”（sandbox）环境里运行。这个沙盒对网络和文件访问都有严格限制。所有和 Git相关的操作，都会通过一个安全的“代理”（proxy）服务来进行，确保 Claude 只能访问你明确授权过的代码仓库。这样一来，你的代码和账号密码在整个流程中都能得到妥善保护。\n\n你甚至还可以自定义网络配置，来指定这个“沙盒”里的 Claude 可以连接哪些特定的网址。举个例子，你可以允许它访问互联网以下载 npm 包（npm 是 JavaScript 程序员用来管理项目依赖的工具，就像是应用的“零件库”），这样它才能顺利地运行测试、验证修改。\n\n如果你想深入了解 Claude Code 的“沙盒”技术到底是怎么回事，欢迎阅读我们的工程博客和官方文档。\n\n如何开始\n网页版 Claude Code 目前已作为“研究预览版”，向 Pro 和 Max 订阅用户开放。马上访问 https://t.co/2kpvXnEXpO，连接你的第一个代码仓库，开始把任务“甩”给 Claude 吧！\n\n需要注意的是，这种基于云端的任务会话，和你其他所有 Claude Code 的使用方式共享同一个“速率限制”（rate limits）。\n\nhttps://t.co/rDOROAGa2o",
+    "created_at": "Mon Oct 20 19:54:52 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2,
+      "favorite_count": 4,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1980363219366760847",
+    "text": "RT @Manjusaka_Lee: 简单复盘一下 AWS 这次事件作为一个 AIGC Startup SRE 的一些操作吧，希望能帮到大家\n从入职开始发现我们主要的集群在 USE1 之后，我就开始做一些准备了。\n我主要做的事情有这几件事\n1. 将我们核心的几个数据库做了多地的…",
+    "created_at": "Mon Oct 20 19:59:19 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1980265979172323334",
+      "text": "简单复盘一下 AWS 这次事件作为一个 AIGC Startup SRE 的一些操作吧，希望能帮到大家\n从入职开始发现我们主要的集群在 USE1 之后，我就开始做一些准备了。\n我主要做的事情有这几件事\n1. 将我们核心的几个数据库做了多地的备份，形成了 USE1，Tokyo，SG 三地备份。这样在极端情况下，我们损失一部分数据，但是也能保证服务的继续\n2. 将我们 SG 的测试集群从原本的 EC2 自己简单搭的 K3S，重构为了一个标准的 AWS EKS 集群。这样可以在灾害时刻快速 warmup 一个集群，复用 AWS 已有组件。将 manifest 变更的代价降至最小\n3. 简单梳理了一个 SOP，包含用户公告，DNS 切换，封版等事宜\n\n回到今天，我大概在 AWS 事故发生后的10min，发现了我们容器中有新的 Pod 无法 setup。\n\n在和 AWS 支持确认是 USE1 的问题后，我意识到 ECR 的事件必然关联其余事件，于是我就果断按照我自己规划的 Tier1 等级事件开始处理（对于 SRE 来说，这种事情宁可错，但是不能错过）\n\nT+0 min，我发布了全员公告，开始进入紧急模式。我 setup 了一个全员公开会议。所有人员可以随时加入\nT+2 min，我确认事件如我所预期的一样，在逐渐扩大，我发出了两个指令，1. 全线禁止任何代码合入/提交（主要是避免新创建资源会导致 Pod rotate 进而影响流量），2. 请运营同学准备公告\nT+3 min, 我开始按照 SOP，开始进行数据库在 SG 区域的恢复，并且级联创建诸如 OpenSearch / Redis 等在内的依赖\nT+5 min，我们开始正式的确认上下游依赖的具体问题，确认一个新上线的核心服务受到影响\nT+10min，我们停服公告和其余服务的受影响公告发出\nT+10min，我请另外两位同时协助 setup 新的 ECR 以及清理测试环境已有资源，并同步 CTO ，在极端情况下，我们可能会存在保体验，丢数据的决策。\nT+15min， 我们最终确认目前已创建的资源以及流量入方向不会受到太大影响。切换方案挂起，但是我们继续准备相关资源\nT+30min，我们第一个数据库恢复完毕\nT+40min，我们第二个数据库恢复完毕\nT+1h，我们所有关联的核心 infra，RDS/ES/Redis 都 stand by，并且按照生产架构设置主从等优化选项。同时我们也开始正在新的集群启动新的服务\n所幸，最终 AWS 的 crash 没有影响我们全部服务。我们无须面对切换流量后复杂的数据修复工作\n大概 T+2h 到 T+3h 后，我正式通报全员，紧急状态解除。为保险起见，今晚依旧对 feature 封版。\n\n回顾整个事故，我还可以做的更多\n1.  将我之前为自己准备的极端 case  SOP，对全员公开。这样确保我即便不在线，也有人能接替我\n2. 我们可以做一些提前的预先演练\n3. 指令下达可以更果断一些\n\n差不多就是这样，一点分享，希望能帮到大家",
+      "created_at": "Mon Oct 20 13:32:55 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3281599238",
+        "name": "NadeshikoManju@薫る花は凛と咲く7月5日播出",
+        "screen_name": "Manjusaka_Lee",
+        "description": "A Python developer at day A Java developer at night PyCon China organizer @pythonhunter__ co-founder @containerd CTL maintainer. Super fan of @yurucamp_anime",
+        "followers_count": 34231,
+        "friends_count": 1158,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 77,
+        "favorite_count": 742,
+        "reply_count": 39,
+        "quote_count": 27
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 77,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1980383655336759388",
+    "text": "双十一还愿杭州寺庙导览\n\n* 灵隐寺\n    “灵隐”谐音0、1，国内最强互联网寺庙。门口的香火长年值得拜，可以保佑双11期间的总体增长。据说大雄宝殿长主牌位正中位置供奉着“国运”牌位，是杭州境内比较综合的寺庙。\n\n* 香积寺\n    国内唯一供奉“食神”的寺庙，适合食品生鲜行业。同时又在运河边、市中心，日均人流量极大也适合做直播卖货的MCN机构。旺人气、主号直播高点，也可以在殿前的正义坊美食街吃一碗“西湖醋鱼”，“香”鱼有利于大促。\n\n* 天下第一财神庙\n    求财旺运，在半山腰，可以坐缆车上去，一般老杭州拜财神都会选择爬上去。建议上午去烧，天越亮，香越旺。人贼灵验高，象征着双11期间GMV增长的来朝拜。\n\n* 径山寺\n    径山寺是日本禅宗和茶道的发源地，庇佑范围能覆盖到东南亚，所以主要加持双11期间东南亚出海生意。\n\n* 永福寺\n    求福气安康灵验，主打一个康健稳赢，发财到耄耋时代。主营双11养生、红包、优惠便宜，保佑安全等方面，适合初创团队。\n\n* 法喜寺\n    杭州最热门的求姻缘的寺庙，“结缘”圣地，交易也是一种结缘，所以他主要保佑单量，期待双11期间新客增长和老客回购。\n\n* 净慈寺\n    西湖边的寺庙，遇水则发，想要流量爆发和“泼天富贵”的可以去净慈，相对比较灵验。",
+    "created_at": "Mon Oct 20 21:20:31 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1980383327031795712",
+        "url": "https://pbs.twimg.com/media/G3u8JLbWIAA8oul.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2,
+      "favorite_count": 17,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1980384391785263607",
+    "text": "正确在 Claude Code 中配置 GLM 4.6 的方法\n\n{\n    \"env\": {\n        \"ANTHROPIC_AUTH_TOKEN\": \"your_zai_api_key\",\n        \"ANTHROPIC_BASE_URL\": \"https://t.co/UjDHScg5y8\",\n        \"API_TIMEOUT_MS\": \"3000000\",\n        \"ANTHROPIC_DEFAULT_HAIKU_MODEL\": \"glm-4.5-air\",\n        \"ANTHROPIC_DEFAULT_SONNET_MODEL\": \"glm-4.6\",\n        \"ANTHROPIC_DEFAULT_OPUS_MODEL\": \"glm-4.6\"\n    }\n}",
+    "created_at": "Mon Oct 20 21:23:27 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1979597244895826086",
+      "text": "Tutorial on how to configure GLM 4.6 in Claude Code (bookmark it)\n\n1. Install the latest Claude Code\nnpm install -g @anthropic-ai/claude-code\n\n2. Create an account in https://t.co/HdaY3pn8sx and buy a coding plan at $3/mo. You can always upgrade later! Use my link https://t.co/stdhC6Fw9o to save 10%\n\n3. Create an API key here https://t.co/GWDxZ7Lr6t. Copy the key and paste it in a text editor\n\n4.  Edit ~/.claude/settings.json. Paste this. Make sure you update it with the new api key you created\n\n{\n    \"env\": {\n        \"ANTHROPIC_AUTH_TOKEN\": \"your_zai_api_key\",\n        \"ANTHROPIC_BASE_URL\": \"https://t.co/4LeP3uIpNz\",\n        \"API_TIMEOUT_MS\": \"3000000\",\n        \"ANTHROPIC_DEFAULT_HAIKU_MODEL\": \"glm-4.5-air\",\n        \"ANTHROPIC_DEFAULT_SONNET_MODEL\": \"glm-4.6\",\n        \"ANTHROPIC_DEFAULT_OPUS_MODEL\": \"glm-4.6\"\n    }\n}\n\n5. Switching between Claude Plans and GLM, try this\nhttps://t.co/aOg4Izzlip. I haven't tried this because I just use GLM\n\n6. Run Claude Code and enjoy!",
+      "created_at": "Sat Oct 18 17:15:36 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1979597241842339840",
+          "url": "https://pbs.twimg.com/media/G3jxM_5bEAActa-.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "7974112",
+        "name": "Melvin Vivas",
+        "screen_name": "donvito",
+        "description": "building @aibackends / https://t.co/dXDzN2map9\nai discovery https://t.co/AhB5wrew9W\n$3/mo glm plan https://t.co/stdhC6Fw9o",
+        "followers_count": 15245,
+        "friends_count": 427,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 127,
+        "favorite_count": 1325,
+        "reply_count": 50,
+        "quote_count": 8
+      }
+    },
+    "stats": {
+      "retweet_count": 17,
+      "favorite_count": 68,
+      "reply_count": 3,
+      "quote_count": 3
+    }
+  }
+]
+```
+
+##
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @dotey的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

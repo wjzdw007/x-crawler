@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 139907,
+    "followers_count": 140031,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251021",
-  "last_updated": "2025-10-21T01:38:27.547118",
-  "tweet_count": 1,
+  "last_updated": "2025-10-22T01:39:34.045497",
+  "tweet_count": 6,
   "tweets": [
     {
       "id": "1980445340726882483",
@@ -54,6 +54,155 @@
         "retweet_count": 1,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1980454171695288676",
+      "text": "OpenAI 发表了一篇《怎样才算好文档》的指南，很值得学习，最核心的一点：写文档是一种同理心的体现\n\n很多开发者在写文档的时候估计都没有站在阅读这些文档的开发者的角度去思考这个问题，比如大家吐槽良多的支付宝的文档、微信的开发文档😂\n\n里面有几个要点：\n- 让文档易于“扫读” → 标题要清晰、段落要简短、多用项目符号和粗体\n- 写得简单点 → 少用行话、避免缩写、即便是“显而易见”的步骤也要解释清楚\n- 提供“通俗易懂面向普通人”的帮助 → 文档不只是给专家看的，而是给所有人看的\n- 按价值排优先级 → 优先解决常见问题，避免教人坏习惯\n\n完整文档：https://t.co/EHAPRU2Cnc\n翻译：https://t.co/Yz141lnp7p",
+      "created_at": "Tue Oct 21 02:00:44 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1980441154325016811",
+        "text": "优秀文档的核心原则 —— 来自 OpenAI 团队 Cookbook\n\n文档的核心目标是将有用信息高效注入读者的头脑中，避免读者在信息海洋中迷失。优秀文档不是长篇大论，而是通过结构化、清晰和共情的设计，帮助读者快速解决问题。\n\n1. 让文档易于浏览（Make docs easy to skim）\n   读者很少从头到尾线性阅读文档，他们更倾向于跳跃式浏览，寻找直接解决问题的部分。因此，文档应像一张高效的“信息地图”，降低搜索成本，提高成功率。\n\n· 使用描述性标题：标题应是信息完整的句子，而非抽象名词。例如，用“流式处理将首 token 响应时间缩短50%”代替“结果”，让读者无需深入阅读即可获知要点。\n· 添加目录：目录如哈希表般加速定位，同时提供文档整体线索，帮助读者判断是否值得阅读。\n· 保持段落简短：短段落易于扫描；关键点可独立成一句单句段落，避免被长文淹没。\n· 以独立主题句开头：段落和节的首句应自成一体，不依赖前文。例如，“向量数据库可加速嵌入搜索”优于“基于此，让我们讨论更快的方法”，便于跳读者快速理解。\n· 主题词置于句首：如“向量数据库加速嵌入搜索”比“嵌入搜索可由向量数据库加速”更高效，因为读者只需读前两词即可把握主题。\n· 要点前置：将最重要的信息置于文档或节的顶部，避免司马式渐进式展开，先结果后过程。\n· 多用 bullet 列表和表格：这些格式天然支持扫描，提高可读性。\n· 加粗关键文本：大胆突出重要内容，帮助读者快速锁定。\n\n这些技巧的核心是“读者优先”：设计时假设读者时间有限、注意力分散。\n\n2. 写出高质量文本（Write well）\n   糟糕的文风会消耗读者的认知资源，导致疲劳。优秀文档应追求简洁、流畅，减少解析负担。\n\n· 句子简洁：拆分长句、去除副词和冗余词，使用祈使语气（如写作书籍建议）。\n· 确保无歧义解析：避免词性模糊的句子。例如，“用句子标题节”（Title sections with sentences）易混淆词性；改为“将节标题写成句子”（Write section titles as sentences）更易解析，即使稍长。\n· 避免左分支句子：这类句子要求读者短期记忆过多，如“你需要面粉、鸡蛋、牛奶、黄油和少许盐来做煎饼”。改为右分支：“做煎饼需要面粉、鸡蛋、牛奶、黄油和少许盐”，更符合大脑处理习惯（类似于深度优先搜索）。\n· 少用指示代词：如“this”跨句使用易造成回溯负担。改为具体名词：“基于消息格式，让我们讨论函数调用”优于“基于此讨论”。\n· 保持一致性：统一标题大小写、标点（如尾随逗号）和命名规范（如 Cookbook 中的下划线+句首小写），避免读者分心。\n· 不假设读者心态：避免“你现在可能想了解函数调用”这类推测；改为“To call a function, ...”，保持中立。\n\n写作原则源于认知科学：减少大脑负载，让内容自然流动。\n\n3. 广泛有益于读者（Be broadly helpful）\n   文档用户背景多样（从新手到专家、多语言使用者），优秀文档应包容性强，覆盖潜在痛点，而非仅针对“理想读者”。\n\n· 用简单语言：比预期更简化解释（但不低估）。考虑非母语者和术语生疏者，优先清晰而非炫技。\n· 避免缩写：全写出，如“instruction following”而非“IF”；“retrieval-augmented generation”（或“搜索-询问流程”）而非 “RAG”。专家成本低，新手收益高。\n· 预解常见问题：即使 95% 读者知晓 Python 包安装，也值得说明——专家可略过，新手避免卡壳。记住，跨语言专家（如 JavaScript 开发者）可能 Python 是新手。\n· 选用具体准确术语：避开行话，如用 “input” 代替 “prompt”，“max token limit” 代替 “context limit”，更自明且贴合实际。\n· 代码示例通用自洽：最小化依赖，避免额外库或跨页引用，确保可直接复制运行。\n· 优先高价值主题：聚焦常见问题（如 token 计数），而非罕见场景（如表情符号数据库优化）。\n· 避免不良习惯：如 API 密钥勿硬编码示例。\n· 以广义开场引入主题：如解释推荐系统时，先提及 YouTube、Amazon 等应用场景，增强读者安全感。\n\n这些建议体现共情：文档是为“所有人”服务的工具，过多假设会疏离部分用户。\n\n4. 必要时打破规则（Break these rules when you have a good reason）\n   这些是指导而非铁律。文档写作是移情练习：代入读者视角，选择最有帮助的方式。最终，灵活应用才能适应具体情境。\n\nOpenAI Cookbook 地址：\nhttps://t.co/YomDsdTZTs",
+        "created_at": "Tue Oct 21 01:09:00 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1980441137941803008",
+            "url": "https://pbs.twimg.com/media/G3vwuN2XcAAt-1I.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1727548535816724480",
+          "name": "meng shao",
+          "screen_name": "shao__meng",
+          "description": "专注 - Context Engineering, AI(Coding)Agents.\n分享 - AI papers, apps and OSS.\n\nex Microsoft MVP\n\n合作 - 私信/邮箱：shaomeng@outlook.com\n\n📢 公众号/小红书: AI 启蒙小伙伴\n\n🔗 信息卡提示词 🔽",
+          "followers_count": 18922,
+          "friends_count": 1080,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 43,
+          "favorite_count": 156,
+          "reply_count": 2,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 121,
+        "favorite_count": 511,
+        "reply_count": 9,
+        "quote_count": 7
+      }
+    },
+    {
+      "id": "1980464240734376426",
+      "text": "💻 黑 话 王 朝——阿哥们的黑话 Battle\n来源：https://t.co/GUtHKDQMjE\n作者 Lemon_Knight 太有才了，这视频都能拆成好多期 Sora 视频了！\n\n---\n\n九阿哥: 十三同学，我今天聚焦核心，就为压压你的势能。\n\n别以为阿哥中你的技术栈最全面，论单点突破我不怵你，论战略布局我更比你强。\n\n十三阿哥: 好啊！赶明儿出现新增量赛道，咱俩各拉齐一个团队，看谁价值闭环，看谁数据崩盘。\n\n八阿哥: 凭你也配？\n\n你的职级不过是一条狗。\n\n十三阿哥: 混账！那你又是谁的嫡系？\n\n皇阿玛驾到\n众阿哥: 儿臣叩见皇阿玛。\n\n康熙: 胤礽。\n\n你权限解锁。\n\n太子: 谢皇阿玛赋能。\n\n康熙: 刚才是谁引爆舆论？\n\n二阿哥上了优化名单，没有资格获得晋升提名。\n\n四阿哥: 谁说的？\n\n对齐认知\n康熙: 怎么？\n\n敢匿名发言，不敢实名认证？\n\n八阿哥: 回皇阿玛，是儿臣在对齐认知。\n\n康熙: 好。\n\n你会向上管理，朕问你，你又有什么核心价值？\n\n八阿哥: 是皇阿玛孵化的天使轮。\n\n康熙: 朕没你这个负资产。\n\n八阿哥: 以皇阿玛为核心抓手。\n\n康熙: 什么八大王？\n\n八王大。\n\n还什么王上加白，\n\n朕还没毕业呢。\n\n把胤禩、\n\n胤禟、\n\n都给我弄去封闭开发。\n\n十四阿哥紧急插入\n十四阿哥: 紧急插入！\n\n八哥到底触犯了哪条价值观红线？\n\n事故定级依据是什么？\n\n康熙: 朕刚才信息同步，你没触达？\n\n十四阿哥: 听见了。\n\n儿臣复盘，这是职场 PUA。\n\n康熙: 你这是要跟朕 One One？\n\n十四阿哥: 儿臣岂敢。\n\n打破信息茧房，决策才能基于事实。\n\n鼓励反向输入，业务才能避免脱轨！\n\n打出一套组合拳\n十三阿哥: 好！\n\n康熙: 嘿，不听你的，大清就要亡国咯？\n\n十四阿哥: 十四弟圣明。\n\n康熙: 你这个畜生我 TM！\n\n宰了你，宰了你！\n\n九阿哥: 好！好功夫！\n\n十三阿哥: 打出一套组合拳！\n\n侍卫: 对，使劲！\n\n康熙: [大喊]\n\n十三阿哥: 好！",
+      "created_at": "Tue Oct 21 02:40:44 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "1980463935833747456",
+          "url": "https://video.twimg.com/amplify_video/1980463935833747456/vid/avc1/640x480/4PFiN_D_Am8Z8zL0.mp4?tag=21",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 13,
+        "favorite_count": 81,
+        "reply_count": 6,
+        "quote_count": 5
+      }
+    },
+    {
+      "id": "1980765483143164181",
+      "text": "注意力是一种奢侈品\n\n奢侈品很特别：它们稀缺、昂贵。当我们拥有它时，会赢得一些人的羡慕，因为这代表我们花的钱超过了实际需求。\n\n奢侈品的本质不在于质量、实用性或性能。一只奢华的手表未必更准时，一颗昂贵的芯片未必运行更快。奢侈品其实是一种标记，表明我们有能力去做那些在别人看来可能是“浪费”的事情。\n\n比如，一只铂金包（Birkin bag）是一种奢侈品。同样，完整读一本非虚构类书籍、静静收听一场广播节目、甚至专程到现场欣赏一场音乐会——这些也都是奢侈品。毕竟我们本可以选择呆在家里，免费听到类似的内容。\n\n当我们刻意将注意力“浪费”在微妙的细节、生动的故事、真实的体验，而不是急于获得那些简单直接的“要点”时，其实就是在向自己、向外界传递一种信息：\n\n我们的时间分配，超越了简单的效率追求和生存需要。\n\n所以，如果你决定提供一种以“注意力”为基础的奢侈品，就别再想着如何让它更快、更方便了——那只会削弱它真正的价值。",
+      "created_at": "Tue Oct 21 22:37:46 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1980764606373953536",
+          "url": "https://pbs.twimg.com/media/G30W6jqWAAACzJL.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 14,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1980765506157297694",
+      "text": "来源：https://t.co/5IQDlYICmG",
+      "created_at": "Tue Oct 21 22:37:52 +0000 2025",
+      "lang": "ja",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1980773150955614710",
+      "text": "OpenAI 发布了新的浏览器应用——ChatGPT Atlas \n\n试了一下，没什么特别，主要是打开 ChatGPT 更方便。它有个侧边栏，可以随时就网页内容向 ChatGPT 提问，把网页内容当成上下文，在网页上打字时，也能根据上下文提供建议。\n\n下面是官方介绍\n---\n\n今天起，在macOS正式上线：https://t.co/od8tZB3rBD https://t.co/od8tZB3rBD\n\n想象一下：浏览网页时遇到问题，不用再跳转页面搜索答案了。只要打开Atlas浏览器，点击侧边栏的“向ChatGPT提问”，你就能直接在当前网页获得AI助手的解答。\n\n不仅如此，当你在网页上打字时，ChatGPT还能实时提供贴心的建议。\n\n想打开新标签页、关闭页面，或者稍后再回来看看？一句话告诉ChatGPT就能搞定，它会帮你管理你的标签页。\n\nAtlas的智能体模式（Agent mode）还能自动帮你完成各种任务，让你浏览网页的过程更加省时省力。\n\n从今天起，Atlas的预览版率先向Plus、Pro和Business用户开放。\n\nAtlas刚刚启程，我们期待听到你的反馈，帮助我们一起决定下一步该做什么。\n\nmacOS用户今天就能开始体验。Windows、iOS和Android版本也即将到来。\n\n详细介绍请点击：https://t.co/0aNiPiAuok",
+      "created_at": "Tue Oct 21 23:08:14 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1980685602384441368",
+        "text": "Meet our new browser—ChatGPT Atlas.\n\nAvailable today on macOS: https://t.co/UFKSQXvwHT https://t.co/AakZyUk2BV",
+        "created_at": "Tue Oct 21 17:20:21 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "1980680190637289472",
+            "url": "https://video.twimg.com/amplify_video/1980680190637289472/vid/avc1/1920x1080/DmcQv23UUmvby-aS.mp4?tag=21",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6Lg202",
+          "followers_count": 4423349,
+          "friends_count": 3,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2963,
+          "favorite_count": 21182,
+          "reply_count": 1513,
+          "quote_count": 3080
+        }
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 29,
+        "reply_count": 9,
         "quote_count": 0
       }
     }

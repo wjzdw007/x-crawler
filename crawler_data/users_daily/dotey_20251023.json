@@ -1,0 +1,262 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 140146,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20251023",
+  "last_updated": "2025-10-23T01:38:25.599291",
+  "tweet_count": 6,
+  "tweets": [
+    {
+      "id": "1981156753191403606",
+      "text": "AI 大神Andrej Karpathy 对 DeepSeek 那篇 DeepSeek-OCR 的论文评价很高，你可能以为他会说：“哇，这个OCR模型真厉害，识别率又提升了！”\n\n但他没有。\n\n相反，他几乎是挥了挥手说：“它是个不错的OCR模型，但这不重要。”\n\n真正让他兴奋的，是这篇论文引出的一个更具颠覆性的想法：我们是不是从一开始就喂错“语料”给AI了？\n\nKarpathy的核心观点是：也许，大型语言模型（LLM）的输入端，根本就不应该是“文本”（Text），而应该永远是“像素”（Pixels）。\n\n这个想法听起来有点绕。我们明明有纯文本，为什么非要先把它“渲染”成一张图片，再喂给AI去看呢？\n\nKarpathy给出的理由是这样的：\n\n1. 首先，这是个效率问题。\n\n我们现在用“文本”喂AI，是通过一个叫“Tokenizer”（分词器）的东西，把句子切成一个个“词元”（Token）。比如“Hello, world!”可能被切成 [\"Hello\", \",\", \" world\", \"!\"]。\n\n问题是，这种方式可能很“浪费”。\n\n而DeepSeek-OCR这篇论文无意中提供了一个佐证：它证明了，AI可以只用100个“视觉词元”（Vision Tokens），就高精度地“解压缩”出包含1000个“文本词元”的原文内容。\n\n这就像，你给AI的不是一长串啰嗦的文字，而是一小块高密度的“信息压缩饼干”（图片）。AI“吃”下去（处理）的上下文窗口更短，效率自然更高。\n\n2. 信息更“保真”，不再丢失细节\n\n想象一下，你让AI帮你阅读一个网页。\n\n现在的“文本”输入方式，就像是你通过电话把网页内容念给AI听。所有加粗、颜色、字体大小、排版布局……这些视觉信息全都丢失了。\n\n而“像素”输入方式，就像是你直接截了一张图发给AI。\n\n哪个信息更全？不言而喻。\n\nKarpathy认为，像素是一个“信息流更广”的输入方式。它不仅能处理纯文本，还能自然地理解文本的样式（粗体、颜色），甚至页面上任意的图表和图像。\n\n3. 绕开AI 分词器\n\n前面两点只是铺垫，Karpathy真正的“怨念”在于：他想彻底干掉“分词器”（Tokenizer）。\n\n他直言不讳地“炮轰”：\n\n> “我必须再说一次我有多讨厌分词器。分词器是丑陋的、分离的、非端到端的。它‘进口’了所有Unicode编码、字节编码的丑陋之处，继承了大量历史包袱，还带来了安全/越狱风险……它必须被淘汰。”\n\n为什么他这么恨分词器？\n\n分词器就像是AI的“嘴替”和“眼替”，它强行介入在“原始文本”和“AI大脑”之间。这个“中间商”不仅笨拙，而且会扭曲信息。\n\nKarpathy举了个绝妙的例子：一个笑脸表情符号“😀”。\n\n- 通过“分词器”，AI看到的不是一张“笑脸”，而是一个奇特的内部代码，比如 [tok482]。AI无法利用它在看图时学到的关于“人脸”和“微笑”的知识（迁移学习）来理解这个符号。\n- 但如果输入的是一张包含“😀”的图片，AI的“视觉”部分会立刻认出：哦，这是一张微笑的脸。\n\n哪个更符合直觉？哪个更智能？\n\n像素输入，让AI得以“眼见为实”。\n\n4. 重新定义AI的“输入”与“输出”\n\nKarpathy的设想是，未来的AI模型，其“输入端”（用户提问）应该只接收图像（像素），而“输出端”（AI回答）则可以保持为文本。\n\n为什么？因为“看懂一张图”（视觉到文本）的任务，远比“画出一张逼真的图”（文本到视觉）要容易得多，也实用得多。\n\n这种“输入用眼（像素），输出用嘴（文本）”的架构，也天然契合了AI处理信息的两种模式：\n- 输入（Encoding）：像人一样，一口气看完整个页面（图片），全盘理解（即双向注意力）。\n- 输出（Decoding）：像人一样，一个词一个词地往外说（即自回归）。\n\n所以，DeepSeek-OCR这篇论文的真正价值，不在于它提供了一个多好的OCR工具，而在于它充当了一次“概念验证”（Proof-of-Concept）。\n\n它用实验数据证明了：用“看图”的方式来“读书”，是完全可行的，而且可能效率更高。\n\n这不仅仅是“文本到文本”（Text-to-Text）任务变成了“视觉到文本”（Vision-to-Text）任务，它暗示了一个更根本的转变——AI的主要信息入口，正在从“语言”转向“视觉”。\n\n难怪 Karpathy 最后会说，他现在“手很痒”，很想去搞一个“纯图像输入”的聊天机器人了。这个小小的OCR研究，可能真的撬动了一个大大的未来。",
+      "created_at": "Thu Oct 23 00:32:32 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1981156741669662720",
+          "url": "https://pbs.twimg.com/media/G357j1eXMAAyFJ0.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1980397031542989305",
+        "text": "I quite like the new DeepSeek-OCR paper. It's a good OCR model (maybe a bit worse than dots), and yes data collection etc., but anyway it doesn't matter.\n\nThe more interesting part for me (esp as a computer vision at heart who is temporarily masquerading as a natural language person) is whether pixels are better inputs to LLMs than text. Whether text tokens are wasteful and just terrible, at the input.\n\nMaybe it makes more sense that all inputs to LLMs should only ever be images. Even if you happen to have pure text input, maybe you'd prefer to render it and then feed that in:\n- more information compression (see paper) => shorter context windows, more efficiency\n- significantly more general information stream => not just text, but e.g. bold text, colored text, arbitrary images. \n- input can now be processed with bidirectional attention easily and as default, not autoregressive attention - a lot more powerful.\n- delete the tokenizer (at the input)!! I already ranted about how much I dislike the tokenizer. Tokenizers are ugly, separate, not end-to-end stage. It \"imports\" all the ugliness of Unicode, byte encodings, it inherits a lot of historical baggage, security/jailbreak risk (e.g. continuation bytes). It makes two characters that look identical to the eye look as two completely different tokens internally in the network. A smiling emoji looks like a weird token, not an... actual smiling face, pixels and all, and all the transfer learning that brings along. The tokenizer must go.\n\nOCR is just one of many useful vision -> text tasks. And text -> text tasks can be made to be vision ->text tasks. Not vice versa.\n\nSo many the User message is images, but the decoder (the Assistant response) remains  text. It's a lot less obvious how to output pixels realistically... or if you'd want to.\n\nNow I have to also fight the urge to side quest an image-input-only version of nanochat...",
+        "created_at": "Mon Oct 20 22:13:40 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "33836629",
+          "name": "Andrej Karpathy",
+          "screen_name": "karpathy",
+          "description": "Building @EurekaLabsAI. Previously Director of AI @ Tesla, founding team @ OpenAI, CS231n/PhD @ Stanford. I like to train large deep neural nets.",
+          "followers_count": 1440249,
+          "friends_count": 1020,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1441,
+          "favorite_count": 12438,
+          "reply_count": 532,
+          "quote_count": 332
+        }
+      },
+      "stats": {
+        "retweet_count": 17,
+        "favorite_count": 80,
+        "reply_count": 13,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "1981162230952710634",
+      "text": "RT @Stephen4171127: Deepseek-OCR 的 Issues 都是中文了，看到一个巴基斯坦小哥，也用中文问问题了。。。我觉得还是用英文好，至少你发出问题去还能看看对不对\n—— https://t.co/Y7Qte6S9KU",
+      "created_at": "Thu Oct 23 00:54:18 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1981035307177738240",
+          "url": "https://pbs.twimg.com/media/G34NHavWAAAq-RL.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "1981035404359848337",
+        "text": "Deepseek-OCR 的 Issues 都是中文了，看到一个巴基斯坦小哥，也用中文问问题了。。。我觉得还是用英文好，至少你发出问题去还能看看对不对\n—— https://t.co/Y7Qte6S9KU",
+        "created_at": "Wed Oct 22 16:30:20 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1981035307177738240",
+            "url": "https://pbs.twimg.com/media/G34NHavWAAAq-RL.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1729475448378208256",
+          "name": "熊布朗",
+          "screen_name": "Stephen4171127",
+          "description": "INTP / AIGC 产品经理 超过2000 小时AI 学习实践\n沉迷于 Vibe Coding，每个月产出 1 个有用的项目\n🤖业务重点在 AI Agent 和 Character AI\n📋积极分享 AI 特种兵小团队作战经验\n24年法国人才签证定居巴黎，可提供免费咨询",
+          "followers_count": 8013,
+          "friends_count": 755,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 7,
+          "reply_count": 2,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1981167614182228368",
+      "text": "维基百科：AI 搜索和社交视频正在“偷走”我们的流量\n作者：Anthony Ha\n\n在这个充斥着有毒社交媒体和 AI 垃圾 （AI slop，指由人工智能生成的大量低质量、甚至是垃圾的内容） 的互联网上，维基百科（Wikipedia）常常被誉为【“最后一个好网站”】。但现在看来，这家在线百科全书似乎也无法完全幸免于大趋势的影响。根据维基媒体基金会（Wikimedia Foundation）的 Marshall Miller 发表的【一篇最新博文】，维基百科的人类页面浏览量同比下降了 8%。\n\n该基金会一直在努力区分人类访客和机器人（bots） （指自动执行任务的程序） 所带来的流量。Miller 写道，这次“过去几个月”的流量下降，是在维基百科更新了其机器人检测系统后才被发现的。更新后的系统显示，“五月和六月期间的异常高流量中，有很大一部分其实来自那些试图规避检测的机器人。”\n\n那流量为什么会下降呢？Miller 将矛头指向了“生成式 AI 和社交媒体对人们获取信息方式的影响”。他特别提到，“搜索引擎正越来越多地使用生成式 AI (generative AI) 直接向搜索者提供答案，而不是链接到像我们这样的网站”；与此同时，“年轻一代更倾向于在社交视频平台上寻找信息，而不是在开放的互联网上。”（不过，谷歌【否认了】 AI 摘要会减少搜索流量的说法。）\n\nMiller 表示，基金会欢迎“人们获取知识的新方式”，并认为这并不会降低维基百科的重要性。因为即使人们不访问网站，源自维基百科的知识仍然在触达他们。维基百科自己甚至也尝试过 AI 摘要功能，不过在【编辑们抱怨之后，这个项目被暂停了】。\n\n但这种转变确实带来了风险，尤其是当人们越来越不清楚他们获取的信息到底来自哪里时。正如 Miller 所说：“访问维基百科的人少了，可能意味着更少的志愿者来扩充和丰富内容，也意味着更少的个人捐赠者来支持这项工作。”（顺便一提，这些志愿者中不乏真正的“牛人”，【据报道，就在上周五，几位志愿者在一场维基百科编辑大会上制服了一名持枪歹徒】。）\n\n因此，他呼吁那些使用了维基百科内容的 AI、搜索和社交公司，“必须想办法为”维基百科网站本身“带来更多的访问者”。\n\n他还表示，维基百科自己也在采取行动——例如，正在开发一个新的框架来标明（attributing） （指明确认内容的来源和作者） 那些源自百科全书的内容。该组织还成立了两个团队，专门负责帮助维基百科触达新读者，并且目前也正在招募志愿者。\n\n新闻来源 TechCrunch ：https://t.co/iqmv49EzWU",
+      "created_at": "Thu Oct 23 01:15:42 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1981171736604295195",
+      "text": "RT @imxiaohu: Sora 团队发布了一个新的更新预告\n\nSora APP即将推出的几项重大更新：\n\n- 角色客串功能\n- 视频编辑功能\n- 社交体验增强\n- 使用体验优化\n- Android 版即将上线\n\n🙋角色客串（Character Cameos） 功能将在未来…",
+      "created_at": "Thu Oct 23 01:32:05 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1981168607620190318",
+        "text": "Sora 团队发布了一个新的更新预告\n\nSora APP即将推出的几项重大更新：\n\n- 角色客串功能\n- 视频编辑功能\n- 社交体验增强\n- 使用体验优化\n- Android 版即将上线\n\n🙋角色客串（Character Cameos） 功能将在未来几天上线：\n\n你可以把任何对象加入视频中作为“客串角色”：\n\n 你的狗、豚鼠、毛绒玩具、或任何你喜欢的东西。\n\n你还可以从自己之前生成的 Sora 视频中，把角色提取出来作为 cameo 使用。\n\n🔝Trending Cameos（实时热门客串）\n\n预计大家会疯狂创造各种 cameo（比如宠物、虚拟人物、玩偶等）。\n\n为了方便大家发现这些创作，Sora 将更新生成界面（UI）：\n→ 实时显示热门 cameo 趋势榜（trending cameos）。\n\n📺视频编辑功能\n\nSora 将引入基础的视频编辑功能，首先支持：\n拼接多个短片（stitching clips）\n\n未来还会陆续添加更强大的编辑功能。\n\n👩‍👩‍👧社交体验改进\n\nSora 不再只是“全局动态流（global feed）”。\n团队正在探索更多朋友与社群场景下的使用方式。\n他们的目标是：\n\n让你能和朋友、同学、同事一起玩 Sora，而不仅仅是对着全球用户发作品。\n\n例如：\n\n你的大学有一个 Sora 频道；\n你的公司、运动俱乐部或兴趣群也有专属频道；\n用户可以在不同社群中分享、讨论、创作 AI 视频。\n\n⚡ 使用体验优化\n\n1. 信息流（Feed）改进\n优化推荐质量，让内容更相关、更有趣。\n\n 2. 降低过度审核（Moderation）\n\n用户抱怨“生成内容被过度审核”很烦，\n正在努力减少不必要的内容封锁。\n\n3. 性能提升\n“让整个 App 使用起来更流畅、更快速。”\n\n4. Android 版本即将发布",
+        "created_at": "Thu Oct 23 01:19:39 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "1981168072028278784",
+            "url": "https://video.twimg.com/amplify_video/1981168072028278784/vid/avc1/896x512/KoIiVsQQ66tGTnJQ.mp4?tag=21",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1764818331822182400",
+          "name": "小互",
+          "screen_name": "imxiaohu",
+          "description": "学AI找小互，找小互，上 https://t.co/4PVaHEr5r3 ...",
+          "followers_count": 73524,
+          "friends_count": 1471,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 6,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1981171865709363382",
+      "text": "RT @Yangyixxxx: 将用户抱怨转化为商机的三个验证步骤：\n\n1、收集抱怨，但那是真需求吗\n从评论区或生活中可以收集到抱怨反馈\n很多人都习惯抱怨与幻想，识别是否是真需求的信号是：\n- 对方当下有较差的解决方案吗\n- 如果没有，对方有搜索过解决方案吗，怎么搜的…",
+      "created_at": "Thu Oct 23 01:32:35 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1981169700924248548",
+        "text": "将用户抱怨转化为商机的三个验证步骤：\n\n1、收集抱怨，但那是真需求吗\n从评论区或生活中可以收集到抱怨反馈\n很多人都习惯抱怨与幻想，识别是否是真需求的信号是：\n- 对方当下有较差的解决方案吗\n- 如果没有，对方有搜索过解决方案吗，怎么搜的\n-如果也没搜过，那说明这事儿只是抱怨，因为对方没尝试过任何措施想去解决它\n\n对方一定要为这个事情付出过成本，可以是实际的也可以是未达成目标的沉没成本\n\n2、这个需求有利润空间吗\n问下对方能付多少钱\n比如原来他用人工 那人工费用20-40%能不能付给你？\n你需要衡量边际成本与对方可支付费用的差值，这是毛利润\n\n有大量的需求，但可能对方能负担的钱不够\n这时候两个解决策略\n\n- 转换人群：相同需求，另外的人群角色有更强支付能力和意愿\n- 找到巧妙的方案：比如这个东西免费引流，换商业模式，或者找到了更便宜的成本方案得到利润空间\n\n3、需求是普遍的吗？\n这个事情如果有3个人都需要，那就值得投入，如果你能找到10买家，那绝对是非常有机会的了\n\n找人的方式可以从你发现的第一个客户去寻找\n\n- 你觉得还有谁会买这个服务？\n- 你会怎么向需要的人介绍这个服务？\n- 你觉得和你一样的人，会在哪些地方交流？或者你平时会逛哪些社区，有和你类似的人？\n- 你有相似的交流群吗？能拉我进去吗？\n\n—— \n通过这三个步骤，你就可以把抱怨，转化为一个真正的商机",
+        "created_at": "Thu Oct 23 01:23:59 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3122661542",
+          "name": "Yangyi",
+          "screen_name": "Yangyixxxx",
+          "description": "Believing is seeing",
+          "followers_count": 107756,
+          "friends_count": 488,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 0,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1981172061444985094",
+      "text": "RT @AztecaAlpaca: “\n创作的本质不是“创造”，而是“剥离”，显露出事物的核心。\n”\n\n喜欢这句话（来自于油管） https://t.co/7xHuHGPMjW",
+      "created_at": "Thu Oct 23 01:33:22 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1981036077776334848",
+          "url": "https://pbs.twimg.com/media/G34N0RcXcAAc7GM.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "1981036107749085197",
+        "text": "“\n创作的本质不是“创造”，而是“剥离”，显露出事物的核心。\n”\n\n喜欢这句话（来自于油管） https://t.co/7xHuHGPMjW",
+        "created_at": "Wed Oct 22 16:33:08 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1981036077776334848",
+            "url": "https://pbs.twimg.com/media/G34N0RcXcAAc7GM.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1725169104963657728",
+          "name": "阿兹特克小羊驼🦙",
+          "screen_name": "AztecaAlpaca",
+          "description": "热爱阅读与深度思考，开放地观察一切，解构虚无的价值。聊技术、社会和八卦，偶尔幽默吐槽，探索知识的火花！\n\n欢迎访问我的博客网站 https://t.co/w2N0PXsp8K。立志做内容消费的Costco，让您获得苹果般的阅读体验！\n\n⚽ AztecaAlpaca 🦙 \n🇨🇳👊🔥",
+          "followers_count": 824,
+          "friends_count": 472,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 7,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

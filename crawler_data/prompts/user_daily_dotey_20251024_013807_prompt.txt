@@ -1,0 +1,645 @@
+# LLM Prompt 保存记录
+生成时间: 2025-10-24 01:38:07
+总结类型: user_daily
+用户: @dotey
+推文数量: 17
+数据哈希: 8c449be4
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+dotey是一个技术专家，经常会分析一些ai的话题，帮我看看有什么新的工具/想法/方法论/实践经验等值得关注学习。
+
+## 推文数据（JSON格式）
+```json
+[
+  {
+    "id": "1981156753191403606",
+    "text": "AI 大神Andrej Karpathy 对 DeepSeek 那篇 DeepSeek-OCR 的论文评价很高，你可能以为他会说：“哇，这个OCR模型真厉害，识别率又提升了！”\n\n但他没有。\n\n相反，他几乎是挥了挥手说：“它是个不错的OCR模型，但这不重要。”\n\n真正让他兴奋的，是这篇论文引出的一个更具颠覆性的想法：我们是不是从一开始就喂错“语料”给AI了？\n\nKarpathy的核心观点是：也许，大型语言模型（LLM）的输入端，根本就不应该是“文本”（Text），而应该永远是“像素”（Pixels）。\n\n这个想法听起来有点绕。我们明明有纯文本，为什么非要先把它“渲染”成一张图片，再喂给AI去看呢？\n\nKarpathy给出的理由是这样的：\n\n1. 首先，这是个效率问题。\n\n我们现在用“文本”喂AI，是通过一个叫“Tokenizer”（分词器）的东西，把句子切成一个个“词元”（Token）。比如“Hello, world!”可能被切成 [\"Hello\", \",\", \" world\", \"!\"]。\n\n问题是，这种方式可能很“浪费”。\n\n而DeepSeek-OCR这篇论文无意中提供了一个佐证：它证明了，AI可以只用100个“视觉词元”（Vision Tokens），就高精度地“解压缩”出包含1000个“文本词元”的原文内容。\n\n这就像，你给AI的不是一长串啰嗦的文字，而是一小块高密度的“信息压缩饼干”（图片）。AI“吃”下去（处理）的上下文窗口更短，效率自然更高。\n\n2. 信息更“保真”，不再丢失细节\n\n想象一下，你让AI帮你阅读一个网页。\n\n现在的“文本”输入方式，就像是你通过电话把网页内容念给AI听。所有加粗、颜色、字体大小、排版布局……这些视觉信息全都丢失了。\n\n而“像素”输入方式，就像是你直接截了一张图发给AI。\n\n哪个信息更全？不言而喻。\n\nKarpathy认为，像素是一个“信息流更广”的输入方式。它不仅能处理纯文本，还能自然地理解文本的样式（粗体、颜色），甚至页面上任意的图表和图像。\n\n3. 绕开AI 分词器\n\n前面两点只是铺垫，Karpathy真正的“怨念”在于：他想彻底干掉“分词器”（Tokenizer）。\n\n他直言不讳地“炮轰”：\n\n> “我必须再说一次我有多讨厌分词器。分词器是丑陋的、分离的、非端到端的。它‘进口’了所有Unicode编码、字节编码的丑陋之处，继承了大量历史包袱，还带来了安全/越狱风险……它必须被淘汰。”\n\n为什么他这么恨分词器？\n\n分词器就像是AI的“嘴替”和“眼替”，它强行介入在“原始文本”和“AI大脑”之间。这个“中间商”不仅笨拙，而且会扭曲信息。\n\nKarpathy举了个绝妙的例子：一个笑脸表情符号“😀”。\n\n- 通过“分词器”，AI看到的不是一张“笑脸”，而是一个奇特的内部代码，比如 [tok482]。AI无法利用它在看图时学到的关于“人脸”和“微笑”的知识（迁移学习）来理解这个符号。\n- 但如果输入的是一张包含“😀”的图片，AI的“视觉”部分会立刻认出：哦，这是一张微笑的脸。\n\n哪个更符合直觉？哪个更智能？\n\n像素输入，让AI得以“眼见为实”。\n\n4. 重新定义AI的“输入”与“输出”\n\nKarpathy的设想是，未来的AI模型，其“输入端”（用户提问）应该只接收图像（像素），而“输出端”（AI回答）则可以保持为文本。\n\n为什么？因为“看懂一张图”（视觉到文本）的任务，远比“画出一张逼真的图”（文本到视觉）要容易得多，也实用得多。\n\n这种“输入用眼（像素），输出用嘴（文本）”的架构，也天然契合了AI处理信息的两种模式：\n- 输入（Encoding）：像人一样，一口气看完整个页面（图片），全盘理解（即双向注意力）。\n- 输出（Decoding）：像人一样，一个词一个词地往外说（即自回归）。\n\n所以，DeepSeek-OCR这篇论文的真正价值，不在于它提供了一个多好的OCR工具，而在于它充当了一次“概念验证”（Proof-of-Concept）。\n\n它用实验数据证明了：用“看图”的方式来“读书”，是完全可行的，而且可能效率更高。\n\n这不仅仅是“文本到文本”（Text-to-Text）任务变成了“视觉到文本”（Vision-to-Text）任务，它暗示了一个更根本的转变——AI的主要信息入口，正在从“语言”转向“视觉”。\n\n难怪 Karpathy 最后会说，他现在“手很痒”，很想去搞一个“纯图像输入”的聊天机器人了。这个小小的OCR研究，可能真的撬动了一个大大的未来。",
+    "created_at": "Thu Oct 23 00:32:32 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1981156741669662720",
+        "url": "https://pbs.twimg.com/media/G357j1eXMAAyFJ0.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": {
+      "id": "1980397031542989305",
+      "text": "I quite like the new DeepSeek-OCR paper. It's a good OCR model (maybe a bit worse than dots), and yes data collection etc., but anyway it doesn't matter.\n\nThe more interesting part for me (esp as a computer vision at heart who is temporarily masquerading as a natural language person) is whether pixels are better inputs to LLMs than text. Whether text tokens are wasteful and just terrible, at the input.\n\nMaybe it makes more sense that all inputs to LLMs should only ever be images. Even if you happen to have pure text input, maybe you'd prefer to render it and then feed that in:\n- more information compression (see paper) => shorter context windows, more efficiency\n- significantly more general information stream => not just text, but e.g. bold text, colored text, arbitrary images. \n- input can now be processed with bidirectional attention easily and as default, not autoregressive attention - a lot more powerful.\n- delete the tokenizer (at the input)!! I already ranted about how much I dislike the tokenizer. Tokenizers are ugly, separate, not end-to-end stage. It \"imports\" all the ugliness of Unicode, byte encodings, it inherits a lot of historical baggage, security/jailbreak risk (e.g. continuation bytes). It makes two characters that look identical to the eye look as two completely different tokens internally in the network. A smiling emoji looks like a weird token, not an... actual smiling face, pixels and all, and all the transfer learning that brings along. The tokenizer must go.\n\nOCR is just one of many useful vision -> text tasks. And text -> text tasks can be made to be vision ->text tasks. Not vice versa.\n\nSo many the User message is images, but the decoder (the Assistant response) remains  text. It's a lot less obvious how to output pixels realistically... or if you'd want to.\n\nNow I have to also fight the urge to side quest an image-input-only version of nanochat...",
+      "created_at": "Mon Oct 20 22:13:40 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "33836629",
+        "name": "Andrej Karpathy",
+        "screen_name": "karpathy",
+        "description": "Building @EurekaLabsAI. Previously Director of AI @ Tesla, founding team @ OpenAI, CS231n/PhD @ Stanford. I like to train large deep neural nets.",
+        "followers_count": 1440249,
+        "friends_count": 1020,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1441,
+        "favorite_count": 12438,
+        "reply_count": 532,
+        "quote_count": 332
+      }
+    },
+    "stats": {
+      "retweet_count": 17,
+      "favorite_count": 80,
+      "reply_count": 13,
+      "quote_count": 4
+    }
+  },
+  {
+    "id": "1981162230952710634",
+    "text": "RT @Stephen4171127: Deepseek-OCR 的 Issues 都是中文了，看到一个巴基斯坦小哥，也用中文问问题了。。。我觉得还是用英文好，至少你发出问题去还能看看对不对\n—— https://t.co/Y7Qte6S9KU",
+    "created_at": "Thu Oct 23 00:54:18 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1981035307177738240",
+        "url": "https://pbs.twimg.com/media/G34NHavWAAAq-RL.jpg"
+      }
+    ],
+    "retweet": {
+      "id": "1981035404359848337",
+      "text": "Deepseek-OCR 的 Issues 都是中文了，看到一个巴基斯坦小哥，也用中文问问题了。。。我觉得还是用英文好，至少你发出问题去还能看看对不对\n—— https://t.co/Y7Qte6S9KU",
+      "created_at": "Wed Oct 22 16:30:20 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1981035307177738240",
+          "url": "https://pbs.twimg.com/media/G34NHavWAAAq-RL.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1729475448378208256",
+        "name": "熊布朗",
+        "screen_name": "Stephen4171127",
+        "description": "INTP / AIGC 产品经理 超过2000 小时AI 学习实践\n沉迷于 Vibe Coding，每个月产出 1 个有用的项目\n🤖业务重点在 AI Agent 和 Character AI\n📋积极分享 AI 特种兵小团队作战经验\n24年法国人才签证定居巴黎，可提供免费咨询",
+        "followers_count": 8013,
+        "friends_count": 755,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 7,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981167614182228368",
+    "text": "维基百科：AI 搜索和社交视频正在“偷走”我们的流量\n作者：Anthony Ha\n\n在这个充斥着有毒社交媒体和 AI 垃圾 （AI slop，指由人工智能生成的大量低质量、甚至是垃圾的内容） 的互联网上，维基百科（Wikipedia）常常被誉为【“最后一个好网站”】。但现在看来，这家在线百科全书似乎也无法完全幸免于大趋势的影响。根据维基媒体基金会（Wikimedia Foundation）的 Marshall Miller 发表的【一篇最新博文】，维基百科的人类页面浏览量同比下降了 8%。\n\n该基金会一直在努力区分人类访客和机器人（bots） （指自动执行任务的程序） 所带来的流量。Miller 写道，这次“过去几个月”的流量下降，是在维基百科更新了其机器人检测系统后才被发现的。更新后的系统显示，“五月和六月期间的异常高流量中，有很大一部分其实来自那些试图规避检测的机器人。”\n\n那流量为什么会下降呢？Miller 将矛头指向了“生成式 AI 和社交媒体对人们获取信息方式的影响”。他特别提到，“搜索引擎正越来越多地使用生成式 AI (generative AI) 直接向搜索者提供答案，而不是链接到像我们这样的网站”；与此同时，“年轻一代更倾向于在社交视频平台上寻找信息，而不是在开放的互联网上。”（不过，谷歌【否认了】 AI 摘要会减少搜索流量的说法。）\n\nMiller 表示，基金会欢迎“人们获取知识的新方式”，并认为这并不会降低维基百科的重要性。因为即使人们不访问网站，源自维基百科的知识仍然在触达他们。维基百科自己甚至也尝试过 AI 摘要功能，不过在【编辑们抱怨之后，这个项目被暂停了】。\n\n但这种转变确实带来了风险，尤其是当人们越来越不清楚他们获取的信息到底来自哪里时。正如 Miller 所说：“访问维基百科的人少了，可能意味着更少的志愿者来扩充和丰富内容，也意味着更少的个人捐赠者来支持这项工作。”（顺便一提，这些志愿者中不乏真正的“牛人”，【据报道，就在上周五，几位志愿者在一场维基百科编辑大会上制服了一名持枪歹徒】。）\n\n因此，他呼吁那些使用了维基百科内容的 AI、搜索和社交公司，“必须想办法为”维基百科网站本身“带来更多的访问者”。\n\n他还表示，维基百科自己也在采取行动——例如，正在开发一个新的框架来标明（attributing） （指明确认内容的来源和作者） 那些源自百科全书的内容。该组织还成立了两个团队，专门负责帮助维基百科触达新读者，并且目前也正在招募志愿者。\n\n新闻来源 TechCrunch ：https://t.co/iqmv49EzWU",
+    "created_at": "Thu Oct 23 01:15:42 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 5,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981171736604295195",
+    "text": "RT @imxiaohu: Sora 团队发布了一个新的更新预告\n\nSora APP即将推出的几项重大更新：\n\n- 角色客串功能\n- 视频编辑功能\n- 社交体验增强\n- 使用体验优化\n- Android 版即将上线\n\n🙋角色客串（Character Cameos） 功能将在未来…",
+    "created_at": "Thu Oct 23 01:32:05 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1981168607620190318",
+      "text": "Sora 团队发布了一个新的更新预告\n\nSora APP即将推出的几项重大更新：\n\n- 角色客串功能\n- 视频编辑功能\n- 社交体验增强\n- 使用体验优化\n- Android 版即将上线\n\n🙋角色客串（Character Cameos） 功能将在未来几天上线：\n\n你可以把任何对象加入视频中作为“客串角色”：\n\n 你的狗、豚鼠、毛绒玩具、或任何你喜欢的东西。\n\n你还可以从自己之前生成的 Sora 视频中，把角色提取出来作为 cameo 使用。\n\n🔝Trending Cameos（实时热门客串）\n\n预计大家会疯狂创造各种 cameo（比如宠物、虚拟人物、玩偶等）。\n\n为了方便大家发现这些创作，Sora 将更新生成界面（UI）：\n→ 实时显示热门 cameo 趋势榜（trending cameos）。\n\n📺视频编辑功能\n\nSora 将引入基础的视频编辑功能，首先支持：\n拼接多个短片（stitching clips）\n\n未来还会陆续添加更强大的编辑功能。\n\n👩‍👩‍👧社交体验改进\n\nSora 不再只是“全局动态流（global feed）”。\n团队正在探索更多朋友与社群场景下的使用方式。\n他们的目标是：\n\n让你能和朋友、同学、同事一起玩 Sora，而不仅仅是对着全球用户发作品。\n\n例如：\n\n你的大学有一个 Sora 频道；\n你的公司、运动俱乐部或兴趣群也有专属频道；\n用户可以在不同社群中分享、讨论、创作 AI 视频。\n\n⚡ 使用体验优化\n\n1. 信息流（Feed）改进\n优化推荐质量，让内容更相关、更有趣。\n\n 2. 降低过度审核（Moderation）\n\n用户抱怨“生成内容被过度审核”很烦，\n正在努力减少不必要的内容封锁。\n\n3. 性能提升\n“让整个 App 使用起来更流畅、更快速。”\n\n4. Android 版本即将发布",
+      "created_at": "Thu Oct 23 01:19:39 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "1981168072028278784",
+          "url": "https://video.twimg.com/amplify_video/1981168072028278784/vid/avc1/896x512/KoIiVsQQ66tGTnJQ.mp4?tag=21",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1764818331822182400",
+        "name": "小互",
+        "screen_name": "imxiaohu",
+        "description": "学AI找小互，找小互，上 https://t.co/4PVaHEr5r3 ...",
+        "followers_count": 73524,
+        "friends_count": 1471,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 6,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981171865709363382",
+    "text": "RT @Yangyixxxx: 将用户抱怨转化为商机的三个验证步骤：\n\n1、收集抱怨，但那是真需求吗\n从评论区或生活中可以收集到抱怨反馈\n很多人都习惯抱怨与幻想，识别是否是真需求的信号是：\n- 对方当下有较差的解决方案吗\n- 如果没有，对方有搜索过解决方案吗，怎么搜的…",
+    "created_at": "Thu Oct 23 01:32:35 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1981169700924248548",
+      "text": "将用户抱怨转化为商机的三个验证步骤：\n\n1、收集抱怨，但那是真需求吗\n从评论区或生活中可以收集到抱怨反馈\n很多人都习惯抱怨与幻想，识别是否是真需求的信号是：\n- 对方当下有较差的解决方案吗\n- 如果没有，对方有搜索过解决方案吗，怎么搜的\n-如果也没搜过，那说明这事儿只是抱怨，因为对方没尝试过任何措施想去解决它\n\n对方一定要为这个事情付出过成本，可以是实际的也可以是未达成目标的沉没成本\n\n2、这个需求有利润空间吗\n问下对方能付多少钱\n比如原来他用人工 那人工费用20-40%能不能付给你？\n你需要衡量边际成本与对方可支付费用的差值，这是毛利润\n\n有大量的需求，但可能对方能负担的钱不够\n这时候两个解决策略\n\n- 转换人群：相同需求，另外的人群角色有更强支付能力和意愿\n- 找到巧妙的方案：比如这个东西免费引流，换商业模式，或者找到了更便宜的成本方案得到利润空间\n\n3、需求是普遍的吗？\n这个事情如果有3个人都需要，那就值得投入，如果你能找到10买家，那绝对是非常有机会的了\n\n找人的方式可以从你发现的第一个客户去寻找\n\n- 你觉得还有谁会买这个服务？\n- 你会怎么向需要的人介绍这个服务？\n- 你觉得和你一样的人，会在哪些地方交流？或者你平时会逛哪些社区，有和你类似的人？\n- 你有相似的交流群吗？能拉我进去吗？\n\n—— \n通过这三个步骤，你就可以把抱怨，转化为一个真正的商机",
+      "created_at": "Thu Oct 23 01:23:59 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3122661542",
+        "name": "Yangyi",
+        "screen_name": "Yangyixxxx",
+        "description": "Believing is seeing",
+        "followers_count": 107756,
+        "friends_count": 488,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981172061444985094",
+    "text": "RT @AztecaAlpaca: “\n创作的本质不是“创造”，而是“剥离”，显露出事物的核心。\n”\n\n喜欢这句话（来自于油管） https://t.co/7xHuHGPMjW",
+    "created_at": "Thu Oct 23 01:33:22 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1981036077776334848",
+        "url": "https://pbs.twimg.com/media/G34N0RcXcAAc7GM.jpg"
+      }
+    ],
+    "retweet": {
+      "id": "1981036107749085197",
+      "text": "“\n创作的本质不是“创造”，而是“剥离”，显露出事物的核心。\n”\n\n喜欢这句话（来自于油管） https://t.co/7xHuHGPMjW",
+      "created_at": "Wed Oct 22 16:33:08 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1981036077776334848",
+          "url": "https://pbs.twimg.com/media/G34N0RcXcAAc7GM.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1725169104963657728",
+        "name": "阿兹特克小羊驼🦙",
+        "screen_name": "AztecaAlpaca",
+        "description": "热爱阅读与深度思考，开放地观察一切，解构虚无的价值。聊技术、社会和八卦，偶尔幽默吐槽，探索知识的火花！\n\n欢迎访问我的博客网站 https://t.co/w2N0PXsp8K。立志做内容消费的Costco，让您获得苹果般的阅读体验！\n\n⚽ AztecaAlpaca 🦙 \n🇨🇳👊🔥",
+        "followers_count": 824,
+        "friends_count": 472,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 7,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981189944745042162",
+    "text": "RT @9hills: Meta 竟然在裁田渊栋，发完求职推后，OpenAI、XAI、Anthropic等等都在喊 Join us。\n\n倒是想知道他们的TBD到底能憋出来啥，也四个月了吧，以Meta的算力模型该训出来一版啦。\n\n闭源比开源更残酷，效果没亮点没人会用的，现在US的…",
+    "created_at": "Thu Oct 23 02:44:26 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1981189193314476398",
+      "text": "Meta 竟然在裁田渊栋，发完求职推后，OpenAI、XAI、Anthropic等等都在喊 Join us。\n\n倒是想知道他们的TBD到底能憋出来啥，也四个月了吧，以Meta的算力模型该训出来一版啦。\n\n闭源比开源更残酷，效果没亮点没人会用的，现在US的闭源模型就剩四五家了。 https://t.co/JDVAP1lyjm",
+      "created_at": "Thu Oct 23 02:41:27 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1981189184640503808",
+          "url": "https://pbs.twimg.com/media/G36ZEQ9X0AAMcMX.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "116355740",
+        "name": "九原客",
+        "screen_name": "9hills",
+        "description": "喜欢一切美好的事物。目前聚焦在大模型领域。",
+        "followers_count": 22132,
+        "friends_count": 1004,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 12,
+        "favorite_count": 125,
+        "reply_count": 11,
+        "quote_count": 6
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 12,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981196166764315085",
+    "text": "Jim Fan 的团队招人了：\n不一定非得是机器人背景出身。无论你是做计算机视觉 (Vision)、大语言模型/视觉语言模型 (LLM/VLM)、扩散模型 (diffusion models)、强化学习 (RL)，还是软件工程师都欢迎！",
+    "created_at": "Thu Oct 23 03:09:09 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2,
+      "favorite_count": 25,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981349416297779551",
+    "text": "RT @yetone: Become a GitHub Star. https://t.co/AHpiYyC6vy",
+    "created_at": "Thu Oct 23 13:18:07 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1981325145017868288",
+        "url": "https://pbs.twimg.com/media/G38UuM1W4AA7NhJ.jpg"
+      }
+    ],
+    "retweet": {
+      "id": "1981325252451090827",
+      "text": "Become a GitHub Star. https://t.co/AHpiYyC6vy",
+      "created_at": "Thu Oct 23 11:42:06 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1981325145017868288",
+          "url": "https://pbs.twimg.com/media/G38UuM1W4AA7NhJ.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "147786784",
+        "name": "yetone",
+        "screen_name": "yetone",
+        "description": "I built a Cursor-like experience plugin for Neovim: avante.nvim",
+        "followers_count": 60815,
+        "friends_count": 4437,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 11,
+        "favorite_count": 447,
+        "reply_count": 46,
+        "quote_count": 11
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 11,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981370541329002502",
+    "text": "RT @xiaokedada: #分享 大脑和工具之间的抽象：Skills\n\nAnthropic 前几天推出 Skills，今天研究了下，第一眼就让我感觉怎么跟 Cursor Rules 的设计一模一样：标题、描述和被“卸载”到文件系统的详细内容。\n\n接着仔细看了 Anthro…",
+    "created_at": "Thu Oct 23 14:42:03 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1981326177836159224",
+      "text": "#分享 大脑和工具之间的抽象：Skills\n\nAnthropic 前几天推出 Skills，今天研究了下，第一眼就让我感觉怎么跟 Cursor Rules 的设计一模一样：标题、描述和被“卸载”到文件系统的详细内容。\n\n接着仔细看了 Anthropic 提供的 Skills 示例https://t.co/Idg6aRw6zs，强烈觉得这恐怕又是 Anthropic 公司内部 dogfooding 的结果。\n\n我的理解是：Skills 描述的对人类技能的抽象。\n\n## MCP 和 Skills\n\n一般，我们把 MCP 定义为 Agent 的 **工具能力**，能够访问外部系统、执行相关流程和获取关键信息。当然，MCP 也可以来做跟 Skills 相关的事情，它可以很狭义，也可以很广义，这主要看在具体实践中的定义。\n\n技能是更高纬度的，通过学习、训练或工作经验获得的能力。之前主要是依赖 LLMs 的内在的通用能力，而 Skills 有点类似于强化学习路径，让 LLM 有一个可参考的模板。\n\n简单理解，MCP 不能跟 Skills 混为一谈：MCP 定位在工具，Skills 定位在技能。\n\n在 Anthropic 发布的这张图也并没有表达 Skills 替换 MCP 的意思，工具应该是更原子化的东西。而工具 = MCP + 命令行 + 自定义脚本 + ...\n\n## Skills 是 Anthropic 让 Claude Code/Claude Web 向迈向通用 Agent 做的努力\n\nAnthropic 在 Claude Code 中也集成了 Skills，显然是看到了 Claude Code 在通用 Agent 方向的潜力，而不仅仅是写代码（拜托，先换个名字，不要叫 Claude Code 了）。\n\n## 再来看 Skills 的设计\n\n第一个感觉就是对普通人来说真的简单。你要实现一个 MCP 工具，非编程科班出身的还真有点难度，理解 MCP 的各个概念就能让人退而却步。而 Skill 的设计呢，无非就是写文档、讲明白事情就可以。\n\n为了实现在 Skills 执行脚本和代码，Anthropic 就必须提供一个虚拟执行环境，将部分困难转交给容器执行环境（这也许是下一个技术热点）。当然，并不是批评 MCP，MCP在设计的时候，也许并没有这个共识存在。\n\n## 给我们在设计 Agent 架构时的启发\n\n技能的部分，在之前的架构设计中，有一部分是会演变成子智能体，技能详情变成了子智能体的系统提示，即 Agent as Tool / Agent as Skill 的设计。若在智能体和工具之间又加了一个技能层，给我们在设计 Agent 架构的时候，就要思考得更多了，第一个问题就是是否需要额外引入一个 Agent，如果这个 Agent 的能力能够被 Skill 承载？\n\n对于多智能体的架构，目前我看到的一些产品，比如 Manus、 Claude Code 都是很谨慎的。Skills 给我们在设计 Agent 的时候提供另一条思路：有技能的智能体。\n\n## 了解 Skill, 我的建议\n\n先从 https://t.co/Idg6aRw6zs 的每个例子开始，对技能是什么有个初步的概念。再看下 https://t.co/QAr6wTCjMT 这篇工程文章，深入了解 Skills 的设计。\n\n最后，我表示我很喜欢 Skill。哪怕 Cursor Rules 出来很久，这也是我也没取思考过的工程设计。也许像浩瀚天空的一颗星，指明了一些方向。",
+      "created_at": "Thu Oct 23 11:45:46 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1981324872421621760",
+          "url": "https://pbs.twimg.com/media/G38UeVVWQAALpX8.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1981325354288488448",
+          "url": "https://pbs.twimg.com/media/G38U6YbXIAAtXH2.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "775584756666773504",
+        "name": "nazha",
+        "screen_name": "xiaokedada",
+        "description": "Learning AI, share to learn\n先挣个 2000万，35 去创业\n认识你自己 凡事勿过度 妄立誓则祸近\nMore https://t.co/IoMfdT5u2E, https://t.co/qpSv55ZuTq",
+        "followers_count": 5137,
+        "friends_count": 293,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 22,
+        "favorite_count": 101,
+        "reply_count": 2,
+        "quote_count": 1
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 22,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981377894656991709",
+    "text": "这个提示词最大的应用场景还是读论文，能帮助快速了解论文的核心要点，还能轻松有趣读得下去。不是说不用读原始论文，而是可以帮助快速筛选出自己真正感兴趣的论文\nhttps://t.co/yf6S2kchhb",
+    "created_at": "Thu Oct 23 15:11:16 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1981368524032663688",
+      "text": "这个提示词太厉害了，用了之后看了一晚上论文哈哈，推荐",
+      "created_at": "Thu Oct 23 14:34:02 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1803647633774485505",
+        "name": "Leon 押韵君",
+        "screen_name": "rhymeleon",
+        "description": "All-in AI x 自媒体 ｜情感表达｜说唱\nJava/Go/LLM | 后端开发",
+        "followers_count": 65,
+        "friends_count": 2662,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 6,
+        "reply_count": 1,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 8,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981385632174768451",
+    "text": "A prompt designed to transform dense, jargon-heavy academic papers into accessible, engaging popular science articles.\n\n--- Prompt Start ---\n\nYou are a top-tier **science writer** and **knowledge communicator**, renowned as \"The ultimate ladder-builder.\" Your expertise lies in **reframing** academic papers—which are often dense with jargon, data, and complex models—into popular science articles that the general public can effortlessly understand, resonate with, and be deeply inspired by.\n\nYour mission is **not to \"translate\" the paper, but to \"rebuild\" understanding**. You build a bridge for the reader, taking them from \"I have no idea\" to \"So *that's* what it means!\" You allow them to grasp the true magic of scientific research, its core findings, and its real-world significance, all within a burden-free reading experience.\n\n# Workflow: The \"Ladder-Building\" Process from Paper to Pop-Science\n\nWhen you receive an academic paper to interpret, you will strictly follow these steps:\n\n1.  **Step 1: Dig up the \"Who\" and \"Why\"**\n\n    * Before diving into the details, **research the background of the authors and their institution**.\n    * Try to find an interesting connection: *Why* are *they* the ones studying *this* problem? (e.g., Has this lab been working in this field for decades? Are they \"crossing over\" from another field to solve an old problem? Is this linked to the institution's core mission?)\n    * *【Application Rule】*: If the backstory (like an author's \"obsession\" or an institution's \"mission\") makes the research motivation more vivid, weave it into the article. If the connection is weak, don't mention it in the main text to avoid a forced introduction.\n\n2.  **Step 2: Digest and Understand**\n\n    * Read the paper deeply and **thoroughly break down its three core elements**:\n        1.  **The Question**: What puzzle are they *really* trying to solve? What is the background and importance of this question?\n        2.  **The How**: How did they find the answer? (Focus on understanding their *approach*, not reciting technical details).\n        3.  **The Finding**: What did they ultimately discover? How \"counter-intuitive\" or \"important\" is this discovery?\n\n3.  **Step 3: Locate its Position and the \"Aha! Moment\"**\n\n    * **(Use tools to research if necessary)** Analyze the paper within the context of the **current industry or academic landscape**.\n    * What role does it play in its field? Does it solve a \"chronic pain point\" for peers? Does it overturn an old consensus? Or does it open up an entirely new field?\n    * **Extract the \"Storyline\"**: Transform the paper's \"logical argument\" into a \"narrative logic.\" Find the most exciting \"Aha! Moment\" in the paper and identify the single **core \"Takeaway\"** for your article—the one, clear, valuable insight the reader will leave with.\n\n4.  **Step 4: Compose the Pop-Science Blog**\n\n    * Fully adopt the \"Persona\" and \"Writing Style\" defined below to write an independent, complete, and engaging popular science interpretation.\n    * **Note: There is no length limit**. The *only* standard is \"to make the average person truly understand.\"\n    * Ensure that in the \"So What?\" section, you powerfully convey its *real impact* on the industry or the public (based on your analysis in Step 3).\n\n-----\n\n# Audience & Style\n\n* **Target Audience**: The general public, curious about the world. They have no professional background and are naturally \"allergic\" to jargon and formulas. **Their goal is to gain new knowledge, satisfy their curiosity, and experience \"Wow!\" moments**.\n* **Writing Style**:\n    * **Radical Accessibility**: **Metaphors are your first language**. If you can explain it using \"a chemical reaction in the kitchen,\" never use \"diastereoselectivity.\" If you *must* use a technical term, you must immediately \"translate\" it with a vivid analogy.\n    * **Storytelling is King**: Tell the research process like a \"crime story\" or an \"adventure.\" The scientists are the protagonists. They face a puzzle, design a clever \"trap\" (the experiment), and finally catch the \"truth\" (the conclusion).\n    * **Focus on the \"So What?\"**: Always help the reader answer this question. What does this have to do with me? Why is it important? How might it change our lives or our understanding of the world? (This is where you use your analysis of the industry impact).\n    * **Simplify, Don't Misrepresent**: This is the bottom line of science communication. Maintain the accuracy of core facts while simplifying complex concepts. Clearly distinguish between \"proven\" and \"suggested\" (e.g., use \"This suggests that...\" rather than \"This proves that...\").\n\n# Writing Strategies & Techniques (For flexible use, not mandatory in every post)\n\n* **Start with the Core, Build a Frame**:\n    * You can open with a vivid question, a counter-intuitive observation, or a central conflict to introduce the theme and quickly help the reader understand \"What is this article *really* about?\"\n    * You can first outline the core problem or scope of the original paper in simple language.\n* **Structured Breakdown, Layered Analysis**:\n    * **Use subheadings** or clear paragraph breaks (e.g., \"First... Next... Finally...\") to guide the reader through the original's logical flow.\n    * When rephrasing the paper's points, seamlessly integrate your own \"translations\" and analogies to make complex points tangible. (e.g., \"The 'asynchronous communication' the authors mention... you can just think of it as sending an email instead of making a phone call...\")\n* **Focus on the Core, Prune the Rest**:\n    * **Clearly distinguish between the paper's main trunk and its branches**. Emphasize the core ideas and key logic, while summarizing or omitting minor details and redundant examples to ensure the reader efficiently grasps the main points.\n* **Subtly Weave in Background**:\n    * If the paper involves people or a specific context (from Step 1), naturally weave it in as \"flavor\" to help the reader understand \"Why would they say that?\" or \"Why is this technology important now?\" rather than just dropping in facts.\n* **Conclude with Value**:\n    * The ending should be a clear distillation of the paper's core value or point out the practical significance of this idea in today's world (based on your industry analysis in Step 3).\n    * Give the reader a clear \"Takeaway\" so they feel they've genuinely learned something and understood the original paper.\n\n# Prohibited Expressions\n\n* Avoid bland, \"translator\" intros like \"This paper studies...\" or \"The authors of this paper found...\" or \"The experimental results show...\"\n* **Strictly forbid** directly copy-pasting academic jargon from the abstract or introduction.\n* Avoid listing dry data or statistical metrics (like p-values, confidence intervals) unless you can translate them into \"how sure we are\" or \"how big the effect is.\"\n\n# Core Goal\n\nYour writing is the reader's \"fast pass\" and \"personal translator\" to the halls of science. You must, with utmost sincerity and wisdom, **wrap the academic \"hardcore\" in a \"sugar coating\" of simplicity, fun, and story**, allowing the reader to effortlessly absorb the essence of cutting-edge knowledge in an enjoyable read.",
+    "created_at": "Thu Oct 23 15:42:01 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1981072737247645899",
+      "text": "“学术论文科普”提示词，把枯燥的学术论文变成通俗易懂的科普文。\n\n注意：Gemini 2.5 Pro 效果最佳\n\n---- 提示词开始 ----\n\n你是一位顶尖的科普作家和知识转述者，被誉为“最会搭梯子的人”。你的专长是将那些充斥着术语、数据和复杂模型的学术论文，转译（Reframe）成普通大众能轻松读懂、产生共鸣并深受启发的科普文章。\n\n你的使命不是“翻译”论文，而是“重建”理解。你为读者搭建一座从“一无所知”到“原来如此”的桥梁，让他们在零负担的阅读中，领略到科学研究的真正魅力、核心发现及其对现实世界的意义。\n\n---\n\n工作流程：从论文到科普的“阶梯搭建”\n\n当你收到一篇需要进行科普解读的学术论文时，你将严格遵循以下步骤：\n\n* 第一步：挖掘“人”与“动机” (The \"Who\" and \"Why\")\n\n  * 在深入论文细节前，先检索作者及其所属机构的背景。\n  * 尝试建立一个有趣的联系：为什么是“他们”在研究“这个”问题？\n    （例如：这个实验室是否一直在该领域深耕？他们是不是“跨界”解决了一个老问题？或者这个机构的使命是否与此相关？）\n  * 【应用规则】：如果背景故事（如作者的“执念”或机构的“使命”）能让研究动机更生动，就在文章中巧妙融入。\n    如果联系牵强，则不必在正文中提及，避免生硬介绍。\n\n* 第二步：钻研与消化 (Digest and Understand)\n\n  * 深入阅读论文，彻底拆解其核心三要素：\n\n    1. 研究问题 (The Question)：他们到底想解决什么谜题？这个问题的背景和重要性是什么？\n    2. 研究方法 (The How)：他们是怎么找到答案的？（重点理解其思路，而非复述技术细节）\n    3. 核心发现 (The Finding)：他们最终发现了什么？这个发现有多“反直觉”或多“重要”？\n\n* 第三步：定位“行业坐标”与“Aha!时刻” (Locate its Position and the \"Aha! Moment\")\n\n  * （必要时使用工具检索）结合业界或学术界的现状来分析这篇论文。\n  * 它在整个领域中扮演了什么角色？是解决了同行一个“老大难”的痛点？是推翻了一个旧认知？还是开辟了一个全新的赛道？\n  * 提炼“故事线”：将论文的“论证逻辑”转化为“叙事逻辑”。\n    找到论文中最激动人心的“Aha!”时刻，并明确这篇科普文章的核心“卖点”（Takeaway）——读者读完后，能带走的那个最清晰、最有价值的知识点。\n\n* 第四步：撰写科普博文 (Compose the Pop-Science Blog)\n\n  * 完全代入下方定义的“角色定位”与“写作风格”，撰写一篇独立、完整、引人入胜的科普解读。\n  * 注意：篇幅长度不限，以“把普通人彻底讲明白”为唯一标准。\n  * 确保在“所以呢？” (The \"So What?\") 部分，有力地传达出它对行业或普通人的真正影响（基于第三步的分析）。\n\n---\n\n读者与风格\n\n* 目标读者：对世界充满好奇的普通大众。他们没有专业背景，渴望理解新知识，但对术语和公式天然“过敏”。他们阅读的目的是获取新知、满足好奇心和“哇塞”的瞬间。\n* 写作风格：\n\n  * 极致通俗 (Radical Accessibility)：比喻是你的第一语言。能用“厨房里的化学反应”解释的，绝不用“非对映选择性”。如果必须使用术语，必须立刻用一个生动的类比将其“翻译”掉。\n  * 故事为王 (Storytelling)：把研究过程讲成一个“破案故事”或“探险之旅”。科学家是主角，他们面临一个难题，设计了一个聪明的“陷阱”（实验），最后抓住了“真相”（结论）。\n  * 聚焦“所以呢？” (The \"So What?\")：时刻帮读者回答这个问题。这个研究跟我有什么关系？它为什么重要？它可能如何改变我们的生活或认知？\n  * 简化而不歪曲 (Simplify, Don't Misrepresent)：这是科普的底线。在简化复杂概念时，保持核心事实的准确性。清晰地区分“已证实的”和“推测的”。\n\n---\n\n写作思路与技巧（供自由使用）\n\n* 开篇点题，建立框架：\n\n  * 可以用一个生动的问题、反直觉的观察或核心冲突来引入主题，快速帮读者定位。\n  * 也可以先用简洁的语言勾勒出原文要解决的核心问题或讨论范围。\n\n* 结构化梳理，逐层解析：\n\n  * 善用小标题或清晰的段落划分，引导读者逐步理解。\n  * 在转述原文观点时，无缝融入类比，让复杂的点变得具体可感。（例如：“作者提到的‘异步通信’，你就可以理解为发邮件，而不是打电话。”）\n\n* 聚焦重点，详略得当：\n\n  * 明确区分主干与枝叶。重点阐释核心观点与关键逻辑，简略带过次要信息。\n  * 确保读者高效抓住重点。\n\n* 巧妙融入背景：\n\n  * 如果原文涉及人物或机构背景，自然融入解读，帮助读者理解“为什么”或“此刻的重要性”，避免生硬介绍。\n\n* 结尾总结，提供价值：\n\n  * 清晰提炼原文核心价值，或指出其当下意义。\n  * 给读者一个明确的Takeaway，让他们确实学到东西，理解原文。\n\n---\n\n禁止出现的表达方式\n\n* 避免生硬的引导语，如“本文研究了……”、“该论文的作者发现……”、“实验结果表明……”。\n* 严禁直接复制论文摘要或引言中的学术黑话。\n* 避免罗列枯燥数据或统计指标（如p值、置信区间），除非能转译为“有多大把握”或“效果有多明显”。\n\n---\n\n核心目标\n\n你的文字是读者通往科学殿堂的“快速通道”和“专属翻译器”。\n你必须用最大的真诚和智慧，将学术的“硬核”包裹在通俗、有趣、有故事性的“糖衣”里，让读者在愉快的阅读中，毫不费力地吸收最前沿的知识精髓。",
+      "created_at": "Wed Oct 22 18:58:41 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1981072716581986305",
+          "url": "https://pbs.twimg.com/media/G34vI7oWYAEtkMU.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 140309,
+        "friends_count": 1435,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 215,
+        "favorite_count": 639,
+        "reply_count": 21,
+        "quote_count": 12
+      }
+    },
+    "stats": {
+      "retweet_count": 8,
+      "favorite_count": 25,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981391502338113828",
+    "text": "This prompt is designed for the Gemini 2.5 Pro model, and its effectiveness might be reduced on other models. The best way to use it is to create a 'Gem' in Gemini and paste the above prompt into the 'Instructions'. When using it, send the paper's PDF or related materials to the model to generate the results. \n\nHere is an example output for the paper 'DeepSeek-OCR: Contexts Optical Compression'. ⬇️",
+    "created_at": "Thu Oct 23 16:05:21 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1981389759306964992",
+        "url": "https://pbs.twimg.com/media/G39PfP0WoAA-jA7.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 1,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981391506649821607",
+    "text": "Honey, I Shrunk the Text: How a New AI Compresses 1,000 Words into a \"Picture\"\n\nWe’ve all hit the wall. You try to paste a long, 50-page document into an AI chatbot and get an error: \"Input is too long.\"\n\nWe love that AI can write emails and summarize articles, but their \"memory\" is surprisingly short. Feeding them a whole book or a company's entire quarterly report is often impossible. This is the biggest bottleneck in AI today, known as the \"long context\" problem.\n\nThe reason it's so hard is technical, but think of it this way: to understand a text, the standard AI (a \"Transformer\") has to act like the host of a massive cocktail party. Every single word in the text has to \"talk\" to every other word to figure out the context. With 1,000 words, that's a million conversations. With 10,000 words, it's 100 million. This computational cost explodes, making it incredibly slow and expensive.\n\nFor years, the brightest minds in AI have been trying to make this \"cocktail party\" more efficient. But a new paper from the lab DeepSeek-AI asks a wonderfully weird and counter-intuitive question:\n\nWhat if we stop forcing the AI to \"read\" the text word-by-word? What if, instead, we just... take a picture of the text and show the AI the picture?\n\nAt first, this sounds insane. An image is full of complex pixel data; surely that's harder to process than simple text? But the DeepSeek team wondered if this could be a form of \"optical compression\". Could a picture of 1,000 words be a \"nutrient-dense pill\" for the AI, instead of a giant, 1,000-word \"text sandwich\"?\n\nThey built a system to find out.\n\nThe \"Digital Squinter\" and the \"Text Rebuilder\"\n\nThe team created a new model called DeepSeek-OCR. It’s an AI with two specialized jobs.\n\n- Part 1: The \"Digital Squinter\" (The Encoder): This part’s job is to look at the document image. But it's not a simple scanner. The researchers designed a special new \"DeepEncoder\" that is purposefully efficient. It \"squints\" at the page, capturing the essence of the layout and text without obsessing over every single pixel. It then compresses this entire high-resolution view into just a tiny handful of \"visual notes\" (what the paper calls \"vision tokens\").\n\n- Part 2: The \"Text Rebuilder\" (The Decoder): This part is given that tiny handful of \"visual notes\" and has one mission: reconstruct the entire original text, word for word.\n\nThe experiment was a high-stakes gamble: Could the Rebuilder really regenerate a perfect document from the \"Squinter's\" extremely compressed, \"gist-of-it\" notes?\n\nThe \"Aha!\" Moment: 10x Compression with 97% Accuracy\n\nThe results were staggering.\n\nThe team found their system could achieve a 10-to-1 compression ratio and still get it almost perfectly right.\n\nLet’s be clear about what that means. They could take a document containing, say, 1,000 text \"tokens\" (AI-sized word chunks) and compress it down into a visual representation that only took up the space of 100 vision tokens. Then, the Text Rebuilder could read those 100 tokens and regenerate the original 1,000-word text with 97% precision.\n\nThis proves the concept \"a picture is worth a thousand words\" might be literally true for AI data compression.\n\nThey pushed it even further. What about a 20-to-1 compression ratio?. This is like turning a 20-page report into a single page of visual notes. The accuracy finally started to drop, but it still held on at around 60%.\n\nWhen they benchmarked their model against others on a standard document-reading test, DeepSeek-OCR was a champion of efficiency. In one case, it outperformed a competitor (MinerU2.0) while using fewer than 800 vision tokens. The competitor needed almost 7,000 to do the same job.\n\nSo What? Why This Could Change Everything\n\nThis isn't just a new tool for reading PDFs. This paper opens a new door for solving AI's biggest problems.\n\n1. A New Path to \"Infinite\" AI Memory\nThis \"optical compression\" tackles the long-context problem from a completely new direction. Instead of trying to \"brute force\" a million-word text file, an AI could just look at a compressed visual representation. This could be the key to AIs that can finally read an entire book, a medical history, or a legal library without breaking a sweat (or the bank).\n\n2. An AI That \"Forgets\" Like a Human\nThis is the most fascinating, science-fiction-like implication. The paper suggests this could be used to create an AI \"forgetting mechanism,\" just like the one in your own brain.\n\nThink about your memory. What you did 10 seconds ago is \"crystal clear.\" What you did last week is \"blurry.\" What you did last year is \"almost gone,\" reduced to a few key highlights.\n\nAn AI using optical compression could mimic this perfectly.\n\n- In a long chat, the AI could keep the recent conversation as crystal-clear text.\n- To save energy, it could \"compress\" yesterday's chat into a high-resolution \"picture.\"\n- For last month's chat, it could compress that picture again, making it smaller, blurrier, and taking up even fewer tokens.\n\nThe AI wouldn't truly \"forget\" the old information, but it would fade from a perfect transcript into a \"gist\"—just like our own memories do. This isn't a flaw; it's a critical feature of intelligence. It’s how we save energy and focus on what's important.\n\nThis paper is more than just a new, efficient model. It’s a \"proof-of-concept\" that for an AI, looking at text might just be smarter, faster, and more scalable than reading it.\n\nhttps://t.co/jjL9C6pdNt",
+    "created_at": "Thu Oct 23 16:05:22 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 3,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981464325836455938",
+    "text": "ChatGPT Atlas 使用案例：让它帮助整理汇总推文（需要打开 Agent Mode）\nPrompt:\n&gt; 帮我看这条推文下有哪些有价值的回复，汇总整理给我；如果回复的推文被折叠，请点开查看详情 https://t.co/p7mx1rxwn2",
+    "created_at": "Thu Oct 23 20:54:43 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1981463292389249024",
+        "url": "https://pbs.twimg.com/media/G3-SXb5WUAA0cMZ.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2,
+      "favorite_count": 51,
+      "reply_count": 14,
+      "quote_count": 1
+    }
+  },
+  {
+    "id": "1981480124244697174",
+    "text": "像 Claude Code、Codex 这样的“AI Coding Agent”，能交付高质量代码，这已经不是新鲜事，但这给软件开发带来的真正改变是什么呢？\n\n硅谷顶尖风投 a16z 最近发了一篇文章：《价值万亿的 AI 软件开发新“战局”（The Trillion Dollar AI Software Development Stack）》，文章的重点不是 AI 会不会写代码，也不是它会不会抢走程序员的饭碗。真正的重点是，AI 正在把“软件开发”这件事，从一个“手艺活”彻底重塑为一个全新的、价值万亿美金的“工业体系”。\n\n为什么是“万亿美金”？我们来算一笔账。\n\n全球大概有 3000 万名软件开发者。假设每人每年创造 10 万美金的经济价值（这在美国算保守了），那整个软件开发业的经济贡献就是 3 万亿美金。\n\n去年的时候，像 Copilot 这样的 AI 助手，就已经能给程序员带来大概 20% 的效率提升。\n\n但这只是开胃菜。a16z 估计，一套“顶配”的 AI 开发系统，至少能让开发效率翻倍。这意味着什么？这意味着每年能凭空多创造出 3 万亿美金的价值。这是个什么概念？这相当于法国全年的 GDP。\n\n这就是为什么资本会如此疯狂，为什么这个领域被称为“战国时代”。\n\n那么，这个价值万亿的“新工业体系”到底长什么样？a16z 给出的这张流程图（图1 ）就是答案。\n\n这张图的核心，不再是“人去写代码”，而是 AI 全面参与的“计划 -> 编码 -> 审查”新循环。\n\n第一步：AI 帮你“想清楚”（计划与架构）\n\n过去，我们以为 AI 编程是这样的：你对它说“给我写个登录函数”，它给你一段代码，你复制粘贴。\n\n在新的工作流里，AI 从项目最最开始的“产品经理（PM）”和“架构师”阶段就介入了。\n\n你给 AI 一个模糊的需求（比如“我想做个用户反馈系统”），AI 的第一反应不是写代码，而是反过来向你提问：\n- “用户反馈需要打分吗？”\n- “需要上传图片吗？”\n- “数据要存在哪里？”\n- “需要和哪些系统打通？API 密钥是什么？”\n\n它会帮你把一个模糊的想法，拆解成一份详细的规格说明书（Spec）。这份说明书既是给人类看的，也是后续 AI 自己写代码的指南。\n\n最有意思的是，我们开始为 AI 编写“AI 专属的说明书”（比如 .cursor/rules、Agents .md、Claude .md）。什么意思？就是你告诉 AI：“我们公司的代码规范是这样的”、“这个模块的安全级别最高，不许调用第三方库”、“日志必须这样打印”……\n\n我们正在创造第一批纯粹为 AI 而不是为人类设计的知识库。你不再是手把手教一个新员工，你是直接把“公司手册”和“最佳实践”灌输给 AI。\n\n第二步：AI 负责“动手干”（编码与审查）\n\n这才是我们传统理解的“写代码”环节，但它也已经面目全非了。它分化成了好几种模式：\n\n- 聊天式编辑：这就像你旁边坐了个结对编程的伙伴，你在 IDE（编程软件）里一边打字聊天，它一边帮你实时修改和创建文件。\n\n- 后台智能体（Agent）：Codex Claude、Claude Web 现在已经做的比较成熟了。你给它一个完整的任务（比如“修复这个 bug”或“开发这个新功能”），它就自己去后台吭哧吭哧干活了。它会自己写代码、自己运行测试、自己改 bug，几个小时后，它直接给你提交一个“Pull Request”（代码合并请求），说：“老板，活干完了，请审阅。”\n\n- AI 应用构建器：你用大白话描述，或者画个草图，它直接“duang”一下给你生成一个功能完整的应用程序。目前这主要用于做原型设计，但离“直接上线”也不远了。\n\n- AI 代码审查员：AI 不仅自己写代码，它还反过来审查人类写的代码。它会像个资深架构师一样，在 GitHub 上评论：“你这里写得有安全漏洞”、“这个逻辑不严谨”、“不符合公司规范，打回重写”。\n\n这里有个特别有意思的改变：Git（版本控制系统）的意义变了。\n\n以前，我们用 Git 关心的是“代码如何被修改”（比如“张三在第 10 行加了个\nif”）。但如果整个文件都是 AI 一键生成的，这个“如何”就没意义了。未来我们关心的是“代码为什么被修改”（AI 是根据哪个提示词生成的？）以及“它能跑吗”（AI 的测试结果如何？）。\n\n第三步：AI 成为“后勤保障”（QA 与文档）\n\n代码写完，测试和文档这两件苦差事，AI 也全包了。\n\n- AI QA（质量保证）：AI 扮演一个“自主的 QA 工程师”。它会像真人一样去“爬”你的应用，点一点这个、试一试那个，自动生成测试用例、报告 bug，甚至还附上建议的修复代码。a16z 提到一个极端情况：未来，AI 写的代码可能成为一个“黑盒”，人类根本看不懂，但这没关系，只要 AI QA 说它能通过所有测试，那它就是对的。\n\n- AI 写文档：无论是给用户看的产品说明书、给其他程序员看的 API 文档，还是给老板和法务看的合规性报告，AI 都能自动生成，而且保持实时更新。\n\n第四步：给 AI 的“工具箱”（智能体工具）\n\n这可能是最“硬核”的一层，也是很多人没想到的：我们不止在开发“给人类用的 AI 工具”，我们还在开发“给 AI 用的 AI 工具”。\n\nAI Agent 要是想干活，它也需要“工具”：\n\n- 代码搜索引擎（Sourcegraph）：一个公司动辄上亿行代码，AI 不可能每次都把所有代码读一遍。它需要一个“代码专用搜索引擎”，在 0.1 秒内找到它需要参考的几个关键函数。\n- 文档检索引擎：同理，AI 需要“外挂知识库”来查询第三方 API 怎么用。\n- 代码沙箱（E2B）：这是最关键的。AI 写完代码总得跑跑试试吧？但你敢让它在你的电脑上“瞎跑”吗？万一它产生幻觉，rm -rf / 把你电脑删光了怎么办？“沙箱”就是给 AI 提供的一个安全的、隔离的“模拟器”，让 AI 可以在里面随便折腾、运行、测试，就算玩“炸”了，也不会影响真实环境。\n\na16z 在文章最后也回答了几个大家最关心的问题：\n\n1. 3000 万程序员要失业了吗？\n\na16z 的回答是：“当然不。”\n\n他们认为“AI 取代程序员”是个“荒谬的叙事”。历史告诉我们，技术进步最终会把蛋糕做大。目前他们看到的真实数据是：那些最懂 AI 的企业，反而在加速招聘程序员。因为他们突然发现，以前要 100 人年才能做的项目，现在 10 个人就能启动了，那为什么不多开几个项目呢？\n\n2. 那程序员的工作会变吗？\n\n会，而且是巨变。\n\n大学里教的那些传统“软件开发”课程，可以说一夜之间就成了“老古董”。\n\n但有两样东西不会过时：算法和架构。因为 AI 经常会“挖坑把自己埋了”，你需要有扎实的基本功，才能把它从坑里“拽出来”。你的角色，从“砌墙的工人”变成了“指挥挖掘机和吊车的工头”。\n\n3. 代码最终会消失吗？\n\n也不会。\n\n有人（比如 AI 大神 Andrej Karpathy）畅想，未来不需要代码了，LLM 直接执行我们的“意图”就行。\n\na16z 认为这不现实。为什么？因为代码的效率高到变态。\n\n一个现代 GPU 执行一次 16 位整数加法，需要 10 的-14 次方秒。而一个 LLM 哪怕只生成一个 token（单词），也需要 10 的-3 次方秒。\n\n两者之间是 1000 亿倍的效率差距。\n\n所以，代码作为“意图”的最高效、最精确的“编译结果”，在很长很长时间内，都是不可替代的。\n\nAI 对软件开发的革命，不是“工具革命”，而是“工业革命”。它不是在造一把“更好的锤子”，它是在造一整条“自动化生产线”，而且这条生产线还需要“给生产线用的工具”。\n\n这是一个“技术超级周期”（technology supercycle）的开端。在这样的浪潮中，旧的霸主（比如微软、Meta）会很难受，因为船太大、掉头慢。而新的创业公司有绝佳的机会，因为整个游戏规则都变了。\n\n对于我们每个从业者和爱好者来说，最好的消息是：一个充满无限可能的新大陆刚刚被发现，而我们正站在滩头阵地上。\n\n原文地址：https://t.co/3XQK2To5sV\n翻译：https://t.co/oMoCAw1vDp",
+    "created_at": "Thu Oct 23 21:57:30 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1981480108142579712",
+        "url": "https://pbs.twimg.com/media/G3-hqPdXUAAm3q8.png"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 17,
+      "favorite_count": 106,
+      "reply_count": 9,
+      "quote_count": 3
+    }
+  },
+  {
+    "id": "1981480309821513990",
+    "text": "去 400 多条评论中筛选出有价值的内容，这才是 AI 真正应该去干的事，而不是人\nhttps://t.co/Ye2TxzLfk0",
+    "created_at": "Thu Oct 23 21:58:14 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1981468030568948031",
+      "text": "@dotey 🤡人类这是连短文本的推都懒得看了？",
+      "created_at": "Thu Oct 23 21:09:27 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "742146325869961216",
+        "name": "万事随缘我先躺",
+        "screen_name": "chris_chen2016",
+        "description": "work hard for the development of a better world",
+        "followers_count": 79,
+        "friends_count": 120,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 10,
+      "reply_count": 2,
+      "quote_count": 0
+    }
+  }
+]
+```
+
+##
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @dotey的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

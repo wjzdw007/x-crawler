@@ -1,0 +1,592 @@
+# LLM Prompt 保存记录
+生成时间: 2025-10-26 01:37:01
+总结类型: user_daily
+用户: @dotey
+推文数量: 15
+数据哈希: 5a3c73f4
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+dotey是一个技术专家，经常会分析一些ai的话题，帮我看看有什么新的工具/想法/方法论/实践经验等值得关注学习。
+
+## 推文数据（JSON格式）
+```json
+[
+  {
+    "id": "1981905747186258419",
+    "text": "Gemini 可以用它的 Canvas 功能，支持自动导出到 Google Docs，相当于 Markdown 变 Word",
+    "created_at": "Sat Oct 25 02:08:46 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1981903626491842668",
+      "text": "@dotey 这个是刚需，不过还得自行优化下。\n\n包括LLM生成的内容，贴到word里，有一些markdown编辑器可以导出为word文档，但大多要收费。\n\n如果可以通过提示词，保留格式输出为word文档，那就太好了！",
+      "created_at": "Sat Oct 25 02:00:21 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "140918915",
+        "name": "苕皮豆干",
+        "screen_name": "bxdeng",
+        "description": "Access twitter across GFW O(∩_∩)O哈哈~",
+        "followers_count": 35,
+        "friends_count": 391,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 5,
+      "favorite_count": 30,
+      "reply_count": 3,
+      "quote_count": 1
+    }
+  },
+  {
+    "id": "1981909194069696585",
+    "text": "&gt; 大规模培养优秀人才很难的。\nhttps://t.co/53aJ9mHPFc",
+    "created_at": "Sat Oct 25 02:22:28 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1981899215463960724",
+      "text": "我的理解是方向不一样，因为CS面对的是整个计算机产业链上的各个方向。 软件工程只是其中的一个方向。\n提供最多就业岗位的也是软件工程相关的知识。\n国内的计算机教育，偏教学。面向实际的解决问题的方面比较弱。\n大作业，好的大作业可以模拟现实工程中遇到的大量实际问题。非常考验一个人的综合能力，团队协作能力。\n但是高难度的大作业，要求有非常优秀的师资才能搞的定。 而且要求学生大量投入精力在上面。\n能做到这种的学校都是非常非常优秀的学校。\n另外一种是进实验室，跟科研项目。\n这也要看该校的科研水平如何，师资力量是不是足够。即便是好的学校，优秀的导师能带的学生数量非常有限。\n导致优秀的学生非常优秀，差的就放羊。\n还有一种就是社会大学。\n就是出去兼职。接活。 但是这种又非常难推广。 \n所以很多学校CS毕业出来的学生，只知道概念，完全没有经验。\n当然也有优秀的学生，大三就能发顶刊顶会。或者靠外面接活，买房买车。\n\n大规模培养优秀人才很难的。",
+      "created_at": "Sat Oct 25 01:42:49 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1141738094485315584",
+        "name": "Rainier",
+        "screen_name": "mtrainier2020",
+        "description": "Cogito, ergo sum",
+        "followers_count": 137742,
+        "friends_count": 999,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 16,
+        "favorite_count": 119,
+        "reply_count": 5,
+        "quote_count": 3
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 7,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981909692537278792",
+    "text": "&gt; 現代的學科缺少的是思考的方法，即科學的科學方法。提供這個方法的正是黑格爾、馬克思的方法論，特別是馬克思的方法論。\nhttps://t.co/TX31hLZNwa",
+    "created_at": "Sat Oct 25 02:24:27 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1981899048765567256",
+      "text": "@dotey 因為多數人不懂的是，創新繼續來自於過去古老事物中的新發現（尼采）。現代社會的教育，不僅僅是CS，都是壟斷的產物。爾對於新的發現站在「巨人的肩膀」。每個人看事物的角度完全不同，他們處於不同的時代，借助前人的方法，在現代社會關係下開發新的產品。",
+      "created_at": "Sat Oct 25 01:42:09 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1692458346459308032",
+        "name": "Atticus",
+        "screen_name": "Atticus5159",
+        "description": "",
+        "followers_count": 23,
+        "friends_count": 236,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 1,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 2,
+      "favorite_count": 7,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981917726881841646",
+    "text": "RT @Yangyixxxx: 验证一个生意，并不一定要把它构建出来\n\n比如你要卖一个文档库，如果你去写100份文档，再把它上架去卖，你就可能面临很多问题：\n- 找不到客户\n- 找到客户了，但客户不买账\n\n这都会浪费掉你构建文档的时间\n\n事情应该反过来做，你应该先写100份文档…",
+    "created_at": "Sat Oct 25 02:56:22 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1981911807741800554",
+      "text": "验证一个生意，并不一定要把它构建出来\n\n比如你要卖一个文档库，如果你去写100份文档，再把它上架去卖，你就可能面临很多问题：\n- 找不到客户\n- 找到客户了，但客户不买账\n\n这都会浪费掉你构建文档的时间\n\n事情应该反过来做，你应该先写100份文档标题，甚至给文档配上图，让别人感觉到有很多内容\n\n然后就去卖，这时候你写清楚，加入社群，每天早中晚分享3篇干货阅读\n\n美其名曰：你不读，就随着时间线丢失了，要有损失厌恶\n然后100篇文档都ok后，你再给这些客户交付个文档库\n\n后面再来买的客户，就会直接拿到文档库\n\n-----------\n人们在购买时，是通过商品文案，图片内容的丰富度来决策购买的\n当那个心智命中了，就会成交，而不是依靠你文档真正的细节内容\n\n卖的是个感觉，而不是实体\n\n当你开始这样转变思维之后，做生意的成功率就会显著提高，因为你会发现：\n\n- 很多想法只是主观臆断，没人买单\n- 试了好几种表达，终于找到了人们有心智愿意付费的包装\n- 我先回收了钱，然后文档不需要自己写了，雇个人来完成\n\n预售会带来很多有价值的洞察，并带来时间杠杆\n相反，如果你去写100篇文档，但最后卖不掉，你就会面临巨大的负反馈了\n\n-----------\n做生意的路子有很多，怎么找到这些洞察？\n- 多看，看书，看信息，看别人的分享\n- 多干多失败，错的越多，懂的越多，别人说100次都不如自己去撞1次南墙\n- 多干总会成功，当你成功一次，就会加深这个方法",
+      "created_at": "Sat Oct 25 02:32:51 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3122661542",
+        "name": "Yangyi",
+        "screen_name": "Yangyixxxx",
+        "description": "Believing is seeing",
+        "followers_count": 107813,
+        "friends_count": 488,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 52,
+        "favorite_count": 323,
+        "reply_count": 11,
+        "quote_count": 7
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 52,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981917988887388622",
+    "text": "对，Claude Skill 是个好办法：https://t.co/ka1whLgzLV\n\nhttps://t.co/8hI4cZXZRf",
+    "created_at": "Sat Oct 25 02:57:25 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1981916680151240778",
+      "text": "现在让 Claude 将 md 格式的文件生成标准的 word 文档已经非常可行了。加了 skills 效果会更好。",
+      "created_at": "Sat Oct 25 02:52:13 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1680051962451218433",
+        "name": "Shawn",
+        "screen_name": "0115hippo",
+        "description": "茶饮从业十年/连锁品牌区域负责人/狂热投身AI中",
+        "followers_count": 52,
+        "friends_count": 820,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 22,
+        "reply_count": 1,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 3,
+      "favorite_count": 10,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981932204763590964",
+    "text": "这篇文章确实是指出了当前 LLM 存在的问题，但解决方案并不见得可行，另外这文章实在太长了点。\n\n如果几句话总结一下，这篇文章主要就是想讲清楚：强化学习（RL）的教父、图灵奖得主 Richard Sutton 到底在担心什么？为什么我们现在的 Agent 这么“笨”？以及，我们该如何跨过这道鸿沟？\n\nSutton 就是“AI 圣经”《苦涩的教训》(The Bitter Lesson) 的作者，他的理念就是：\n> 在人工智能领域，长远来看，依赖大规模计算的通用方法（如搜索和学习）最终将胜过依赖人类专家知识的复杂方法。\n\n按理说，他应该对 GPT-5、Claude 这样的大模型拍案叫绝才对。\n\n但他没有。相反，他直言不讳：今天所有的 LLM（大语言模型）都是一条死路。\n\n为什么？Sutton 的原话：LLM 只是在模仿人会“说什么”，而不是在理解世界是“如何运转”的。\n\n这个观点引发了很多讨论，AI 大神 Andrej Karpathy 前几天在播客中也对此有回应和深入探讨（参见：https://t.co/GbNyI7PZxl ）。\n> “我以前就说过，人类不使用强化学习。我认为人类的学习方式完全不同。强化学习比普通人想的要糟糕得多。强化学习很烂。只不过，我们以前有的其他算法比它还要烂得多罢了。”\n\n两位大神都在揭露一个真相：\n我们今天津津乐道的“推理器”（Reasoner），离一个真正的“智能体”（Agent）还差得远。而这个鸿沟，就叫“持续学习”。\n\n1. 为什么 Sutton 说 LLM 是“死路”？\n\nSutton 的批评主要集中在两点。\n\n批评一：LLM 是“鹦鹉”，不是“物理学家”\n\nSutton 说，LLM 根本不是真正的“世界模型”。\n\n- 真正的世界模型：能预测“如果我做了A，世界会发生B”。比如，我松开手（动作A），杯子会掉地上摔碎（结果B）。这是对因果和物理规律的理解。\n\n- LLM 在做什么：它在预测“如果我问了A，人类会回答B”。比如，我问“杯子掉了会怎样？”，它会回答“会摔碎”。\n\n看到区别了吗？LLM 是在模仿一个“观察者”会如何描述这个世界，而不是作为“参与者”去理解这个世界的规律。它学的是“人会说什么”，而不是“世界会怎样”。\n\n批评二：现在的强化学习“笨得可以”\n\nSutton 的另一个批评是，我们现在主流的 RL 算法（比如 PPO）样本效率低到发指，而且它们只从“奖励”中学习，不从“观察”中学习。\n\n这话说得有点绕，用原文里的一个例子，你一下就懂了：\n\n> 假设我们开发一个 AI Agent，帮用户打电话给 Xfinity（一家运营商）客服。\n>\n> 第一次尝试：Agent 打过去，客服说：“我需要您的信用卡后四位来验证身份。” Agent 没有这个信息，任务失败，挂断。\n>\n> 好了，问题来了：\n>\n> - 传统 RL Agent (PPO)：它只知道这次尝试失败了（Reward = 0）。它不知道为什么失败。客服明明已经告诉它答案了（“需要信用卡后四位”），但这个信息是“观察”（Observation），不是“奖励”（Reward）。所以，这个笨蛋 Agent 只能下次再试，再失败……可能要试几百次，某一次瞎猫碰上死耗子，它碰巧提供了信用卡信息，成功了（Reward = 1），它这才“学会”了。\n>\n> - 人类：第一次被告知需要信用卡信息，立刻就记住了。下次打电话前就会主动要这个信息。\n\n这就是差距。人类能从环境的丰富反馈（观察）中学习，而现在的 RL 算法大多是“无模型”的，它们只关心“我这么做能不能拿分”，而无视了环境给出的所有其他宝贵信息。\n\n2. “无限上下文”的陷阱：为什么 RAG （检索增强生成）不是学习？\n\n很多人可能会反驳：“没关系，我们现在有超长上下文（Long Context）了！我把 Agent 第一次失败的经验（“客服要信用卡后四位”）直接放进下一次任务的提示词里不就行了？”\n\n这就是目前大多数 Agent 的做法，包括 In-Context Learning（上下文学习）或者 RAG。\n\n但这是对“学习”最大的误解。\n\n把历史记录塞进上下文，不叫“学习”，这叫“开卷考试”。\n\n原文中打个比方：\n\n> 让你计算 100 个案例中黑猫和白猫的比例。\n>\n> - 真正的学习（压缩）：你看完一遍，在脑子里总结出一个结论：“90只黑猫，10只白猫”。下次再问你，你直接给出答案。\n> - 长上下文（RAG）：你把 100 个案例的原始记录全堆在桌上。每次有人问你，你就重新把这 100 个案例再数一遍，然后得出结论。\n\n这种方式极其低效，因为知识没有被提炼和压缩。你只是在进行一次又一次的重复检索，而不是把经验内化成了“规律”或“知识”。\n\nAK 在前几天播客里面有一个引起很多人共鸣的结论：人类记性差，这不是 Bug，反而是 Feature（特性）。\n\n正因为我们记不住所有原始细节，才被迫去提炼、总结、压缩知识，找出事物背后的规律。而这个“压缩”和“提炼”的过程，才是学习的本质。\n\n3. “新员工”的困境：为什么 Agent 没法“上班”？\n\n这就引出了一个核心问题：为什么现在的 Agent 解数学题比99%的人都强，但你让它去你公司干个具体工作，它却一塌糊涂？\n\n你可以这么想：你找一个再聪明的天才，不培训就让他来你公司上班，他能干好吗？\n\n大概率不能。因为他不知道：\n- 公司的代码规范 (Coding Style)\n- 公司的业务逻辑和黑话\n- 团队的协作流程\n- 哪些是不能碰的隐形红线\n\n这些知识，绝大部分是非公开的、特定的、隐性的，你没法用一个简短的 prompt 教会它。\n\n人类是怎么做的？在工作中持续学习。\n\n这就带出了 Sutton 坚信的“大世界假设”（Big World Hypothesis）：世界上的信息是无限的，模型不可能在预训练阶段就学完所有东西。你必须在与具体环境的交互中不断学习新知识。\n\n而很多 LLM 派持有的是“小世界假设”：世界是复杂的，但规律是简洁的。只要模型足够大（比如 GPT-5），就能掌握绝大部分重要知识，不需要再学了。\n\n显然，现实世界更符合“大世界”假设。\n\n4. 怎样才算“真学习”？从“奖励”到“预测”\n\n既然必须持续学习，而传统 RL 又那么笨（只认 Reward），那该怎么办？\n\n原文作者结合实践，提出了一个非常有启发的改进思路，我把它称为“双 LoRA”策略。（LoRA 是一种高效微调技术，你可以理解为给大模型打上一个小小的“能力补丁”）\n\n这个策略的核心是：在学习“怎么做对”（Policy）的同时，也要学习“世界会怎样”（World Model）。\n\n回到那个 Xfinity 客服的例子：\n1. LoRA 1 (策略补丁)：它还是从 Reward 学习。任务失败，Reward = 0，它学不到东西。\n2. LoRA 2 (世界模型补丁)：它不关心 Reward，它的唯一任务是预测环境的下一个反馈。当客服说“我需要信用卡后四位”时，这个补丁会因为“预测失败”（它没料到客服会说这个）而产生一个 loss，然后它就会更新自己，学会“哦，原来打电话给 Xfinity，对方会要信用卡信息”。\n\n看，这就是一种时序差分学习（TD-Learning）。Agent 不再是只看重“得分”的偏科生，还成了能“理解”环境反馈的好学生。\n\n效果是天差地别的：\n- 传统 RL：要试几百次才能学会。\n- 双 LoRA：只要 1、2 个 step 就能学会。\n\n这，才开始有点“持续学习”的样子了。\n\n5. 另一个“致命”瓶颈：AI 为什么反应这么慢？\n\n解决了学习效率，还有一个大问题：现在的 Agent 交互起来为什么那么“卡”？\n\n明明模型的输入输出速度（token/s）都比人类快得多，为什么我们总觉得它反应迟钝？\n\n作者认为根源在于一个僵化的“ReAct 循环”：观察 → 思考 → 行动。\n\n现在的 Agent 都是这个死循环：\n1. 观察（听）：必须等你把话说完，看到句号了，它才开始下一步。\n2. 思考：开始处理你的话，进行推理。\n3. 行动（说）：把思考完的结果一口气说出来。\n\n但人类根本不是这样工作的！\n\n人类是“事件驱动”的，我们的“听、想、说”是交错进行的 (interleaved)：\n- 边听边想：你刚说开头，我就开始思考和预测你后面要说什么了。等你把话说完，我可能已经想好答案了。\n- 边想边说：如果我没想好，我会先说点“嗯……”、“让我想想啊……”这样的“填充词”，在说这些话的同时，我的大脑在高速进行下一步思考。\n\n人类充分利用了所有“间隙”在思考，所以交互体验才如此流畅。\n\n未来的 Agent 必须抛弃僵化的 ReAct 循环，转向这种“边听边想边说”的事件驱动架构。这对于语音助手、机器人、甚至 AI 帮你打游戏都至关重要。\n\n对于这点我觉得虽然“ReAct 循环”，但是实现起来是最简单直接的，作者所说的那种思路看起来很好，但真要实施当前技术未必做的到。\n\n当然很多事情还是得要加上时间维度，有时候并不能用现在的眼光来看这些问题。\n\n至少当前 AI Agent 存在的问题是客观存在的：\n\n- 一个真正的 Agent，其核心价值不在于它“知道多少”，而在于它“能学多快”。\n- Agent 必须要有持续学习的能力，能从丰富的“观察”中学习世界模型\n- “ReAct 循环”很慢，Agent 也应该想人一样能具有“边听边想边说”的实时架构",
+    "created_at": "Sat Oct 25 03:53:54 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1981932192419766272",
+        "url": "https://pbs.twimg.com/media/G4E81AoXYAAFqGP.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": {
+      "id": "1981892553537712463",
+      "text": "推荐阅读这篇Agent持续学习的困境\n\n很多时候我们光去看各种ai顶级大佬说什么 但可能很难通过实践去践行他们的思维\n\n这篇文章写的非常清晰 容易理解 逐步通过问题引出实践结论 并例证了相关方法 将思想得以发挥\n\n如果你在做agent 肯定会有很多启发\nhttps://t.co/fQZGXgxmp2",
+      "created_at": "Sat Oct 25 01:16:21 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3122661542",
+        "name": "Yangyi",
+        "screen_name": "Yangyixxxx",
+        "description": "Believing is seeing",
+        "followers_count": 107813,
+        "friends_count": 488,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 38,
+        "favorite_count": 132,
+        "reply_count": 0,
+        "quote_count": 3
+      }
+    },
+    "stats": {
+      "retweet_count": 38,
+      "favorite_count": 129,
+      "reply_count": 16,
+      "quote_count": 6
+    }
+  },
+  {
+    "id": "1981934988112052251",
+    "text": "我现在是 Agent 信徒 + 手搓，Tab 反而最少\n1. 先用 Agent 快速实现完整功能，不必在意质量，但核心是完整实现需求，走通各个流程，了解各种边界条件\n2. 然后基于需求和完整的流程，重新思考设计架构，再手搓+Agent\n\n这样既可以兼顾速度，又可以保证质量",
+    "created_at": "Sat Oct 25 04:04:58 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1981933334541582741",
+      "text": "看AK访谈。他说现在的编程有三类，手搓、tab补全和agent，他是第二类的信徒，因为这样软件的架构才是自己的。\n\n希望接下来能够将tab补全作为我的主力工具，提高对软件开发的掌控力。\n\n我现在可以用agent快速生成原型，但在后面修bug的时候，单靠agent还远远不够，很多bug就藏在AI的盲区玩灯下黑😂",
+      "created_at": "Sat Oct 25 03:58:24 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1725169104963657728",
+        "name": "阿兹特克小羊驼🦙",
+        "screen_name": "AztecaAlpaca",
+        "description": "热爱阅读与深度思考，开放地观察一切，解构虚无的价值。聊技术、社会和八卦，偶尔幽默吐槽，探索知识的火花！\n\n欢迎访问我的博客网站 https://t.co/w2N0PXsp8K。立志做内容消费的Costco，让您获得苹果般的阅读体验！\n\n⚽ AztecaAlpaca 🦙 \n🇨🇳👊🔥",
+        "followers_count": 856,
+        "friends_count": 476,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 9,
+        "reply_count": 1,
+        "quote_count": 2
+      }
+    },
+    "stats": {
+      "retweet_count": 11,
+      "favorite_count": 97,
+      "reply_count": 10,
+      "quote_count": 2
+    }
+  },
+  {
+    "id": "1981945218791313915",
+    "text": "Sora 去水印简单方案，打开浏览器，查看网络请求，下载视频，就没水印了，比如这个视频 https://t.co/Hl1hoaZ6yn",
+    "created_at": "Sat Oct 25 04:45:37 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "video",
+        "id": "1981941976678162432",
+        "url": "https://video.twimg.com/amplify_video/1981941976678162432/vid/avc1/704x1280/Kgnnhp6L3b0c768N.mp4?tag=21",
+        "bitrate": 2176000
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 30,
+      "favorite_count": 197,
+      "reply_count": 14,
+      "quote_count": 3
+    }
+  },
+  {
+    "id": "1981950991386763756",
+    "text": "嗯，腾讯有了 50% 的 AI 代码，微信公众号编辑器还是一如既往的难用\n\n代码行数 不等于 代码质量好\n\n代码行数多不等于功能就又多又好\n\nAI 编程很好，但是最好说的清楚具体，哪些地方好，适用于哪些场景，哪些地方还不够好，而不是简单的：\n腾讯都 50% 新增代码由 AI 辅助生成 -> AI 写代码靠谱\n\n这个逻辑是不对的",
+    "created_at": "Sat Oct 25 05:08:33 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1981947089342087254",
+      "text": "腾讯内部人士透露：腾讯50%新增代码由AI辅助生成！你还觉得AI写代码不靠谱吗？ https://t.co/6g96Ud1Rye",
+      "created_at": "Sat Oct 25 04:53:03 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1981947082991685632",
+          "url": "https://pbs.twimg.com/media/G4FKXwVXUAA1y3V.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1858777028688039936",
+        "name": "傅盛 Fu Sheng",
+        "screen_name": "FuSheng_0306",
+        "description": "Techno-optimist builder. Building an open-source coding agent in public. \nCEO @ Cheetah Mobile | Chair @orionstar2016",
+        "followers_count": 6394,
+        "friends_count": 255,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 27,
+        "favorite_count": 206,
+        "reply_count": 62,
+        "quote_count": 5
+      }
+    },
+    "stats": {
+      "retweet_count": 12,
+      "favorite_count": 111,
+      "reply_count": 33,
+      "quote_count": 3
+    }
+  },
+  {
+    "id": "1981952696509767860",
+    "text": "这种魔术揭秘挺好\nhttps://t.co/BLFSuYNtEQ",
+    "created_at": "Sat Oct 25 05:15:20 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "video",
+        "id": "1981688574090133504",
+        "url": "https://video.twimg.com/ext_tw_video/1981688574090133504/pu/vid/avc1/540x676/VKHW67F1CEE9C_LR.mp4?tag=12",
+        "bitrate": 2176000
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 42,
+      "favorite_count": 393,
+      "reply_count": 4,
+      "quote_count": 3
+    }
+  },
+  {
+    "id": "1981953680388534321",
+    "text": "看到吹代码行数就有点应激反应😮‍💨\nhttps://t.co/bRSgSo48nk",
+    "created_at": "Sat Oct 25 05:19:14 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1960689250929709333",
+      "text": "我一看到 Vibe Coding 的吹代码行数就觉得不专业，Vibe Coding 的代码是负债不是资产那",
+      "created_at": "Wed Aug 27 13:01:59 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 140737,
+        "friends_count": 1438,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 92,
+        "reply_count": 17,
+        "quote_count": 9
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 15,
+      "reply_count": 4,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981962498170302705",
+    "text": "抱歉可能只是他们对我的账户权限设置有问题，我看自己视频都是没水印的，但是可能其他人并不是这样的😓\nhttps://t.co/ALJPzMDrqe https://t.co/rGZN8MQRJT",
+    "created_at": "Sat Oct 25 05:54:17 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1981962317207130112",
+        "url": "https://pbs.twimg.com/media/G4FYOgNXUAAz1Sw.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": {
+      "id": "1981956482477568508",
+      "text": "@dotey 大佬我跟着做了一遍，但是发现还是有水印的。流程是把生成的视频post一下，在post列表页面点击F12,点击network里的media, 找到视频的链接。在新建标签页打开链接，然后下载视频吗？",
+      "created_at": "Sat Oct 25 05:30:23 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1625100378311397377",
+        "name": "Anny",
+        "screen_name": "Anny34585",
+        "description": "Stay focused",
+        "followers_count": 0,
+        "friends_count": 34,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "reply_count": 3,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1981966252328526335",
+    "text": "iOS 上如果你有 Charles 这样的代理 App 确实是可以下载无水印视频 https://t.co/nvEqY86bT3",
+    "created_at": "Sat Oct 25 06:09:12 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1981966119758925824",
+        "url": "https://pbs.twimg.com/media/G4Fbr10XEAAMlyO.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1981966213858185216",
+        "url": "https://pbs.twimg.com/media/G4FbxUXX0AA3nee.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 5,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1982133672431047065",
+    "text": "MCP 也不会过时，MCP 是偏工具，Skill 是偏技能，互为补充，举个例子，Chrome Dev Tool，它是一个工具，适合发布为 MCP，既可以控制版本，又可以适用于所有不同的支持 MCP 的场景（比如 Copilot、Claude Code、Codex、你自己的应用。\n\n作为 Chrome 官方不适合发布它为 Skill，因为：\n1. Skill 版本不那么好控制，需要配合 Git，但使用方和发布方的 Git 源是不一样的\n2. Skill 的发布和使用也不那么方便，目前支持 Skill 的并不多，而且是以目录形式存在，分发、安装、版本控制都要稍微麻烦一些\n\n但它和 Skill 又可以配合使用，比如我可以有一个 Debug 的 Skill，它用到了 Chrome Dev Tool MCP；还可以有一个前端性能优化的 Skill，也可以用到 Chrome Dev Tool MCP。",
+    "created_at": "Sat Oct 25 17:14:28 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1982013721045328097",
+      "text": "这么看， MCP将很快过时。\n\nSkill里内置一段脚本调用工具，这个方案让工具可以按需加载（MCP必须预加载）\n\n同时可以让agent可以调用（理论上）无限多的工具而占用零上下文！\n\n巨大进步",
+      "created_at": "Sat Oct 25 09:17:49 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "38167656",
+        "name": "Jeffery Kaneda　金田達也",
+        "screen_name": "JefferyTatsuya",
+        "description": "https://t.co/XMkEfLzyoK\n\n- https://t.co/TAbYHGeBnW (AI搜索引擎）\n- https://t.co/OZfPxx93LH （企业知识引擎）\n\n- https://t.co/eRORaOHar0 Felo字幕会议纪要",
+        "followers_count": 18242,
+        "friends_count": 1399,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 84,
+        "reply_count": 9,
+        "quote_count": 2
+      }
+    },
+    "stats": {
+      "retweet_count": 5,
+      "favorite_count": 51,
+      "reply_count": 6,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1982143756846719291",
+    "text": "> AI写代码如果不靠谱，那会被采用吗？\n 这个逻辑也是不严谨的，只要用 AI 的人不靠谱，不靠谱的代码也会被采用。  \nhttps://t.co/u6M8inw4cY\n\n我一直很支持 AI 编程，但特别不喜欢一味的吹捧或者拉踩，尤其是像傅老板这样有影响力的人，是很容易误导其他人对 AI 有不切实际的想象和幻想，这不是什么好事  \n\n傅老板要真自己借助 AI 写出来一些靠谱的程序，我会是真心佩服的",
+    "created_at": "Sat Oct 25 17:54:32 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1982117179970724274",
+      "text": "AI写代码如果不靠谱，那会被采用吗？其实问题的关键就是在这个“靠谱”上。如果把“靠谱”定义为永远不出问题，那可能AI写代码永远不会“靠谱”。但如果把“靠谱”定义为“可用”，那AI写代码已经“靠谱”了。永远不要用完美的眼光苛求新生事物，这样你会看不到它蕴含的颠覆性力量。以前人类要花十年以上学习才能干到的事，现在已经开始逐步被AI做到，哪怕开始就是“边角料”，这本身不是很震撼吗？更何况，所有的替代都是从“边角料”开始的。",
+      "created_at": "Sat Oct 25 16:08:56 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1858777028688039936",
+        "name": "傅盛 Fu Sheng",
+        "screen_name": "FuSheng_0306",
+        "description": "Techno-optimist builder. Building an open-source coding agent in public. \nCEO @ Cheetah Mobile | Chair @orionstar2016",
+        "followers_count": 6394,
+        "friends_count": 255,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 2,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 4,
+      "reply_count": 2,
+      "quote_count": 0
+    }
+  }
+]
+```
+
+##
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @dotey的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

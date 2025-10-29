@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 141252,
+    "followers_count": 141447,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251028",
-  "last_updated": "2025-10-28T01:37:21.664597",
-  "tweet_count": 2,
+  "last_updated": "2025-10-29T01:37:55.079456",
+  "tweet_count": 11,
   "tweets": [
     {
       "id": "1982970087200940385",
@@ -86,6 +86,381 @@
         "retweet_count": 0,
         "favorite_count": 0,
         "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1982992034685137003",
+      "text": "Every 的一篇博文，记录了他们内部 6 位工程师日常是怎么使用 AI 的，可以学习借鉴一下。这 6 个人都很厉害，撑起了 4 款 AI 产品、一个咨询业务，还有一个 10 万多读者的订阅每日更新。\n\n第 1 位 —— 走在实验前沿：Yash Poojary, Sparkle 总经理\n\nYash 是 Sparkle 产品的负责人，他同时开两台电脑，一台跑 Claude Code，一台跑 Codex，然后给它们下达同一个任务，看它俩谁干得又快又好。\n\nYash 说，在五个月前，他得先把设计图（Figma）截图，再粘贴到 Claude 里，让它“看图写代码”。现在用上了 Figma MCP 集成，Claude 可以直接读取 Figma 的设计源文件——包括颜色、间距、组件这些。\n\nYash 不仅在用AI，他还在优化和AI的配合。比如，他把一天切成两半：\n- 上午：专注执行。 这时候只用自己最熟的AI工具（Claude 和 Codex），绝不玩新东西，保证产出。\n- 下午：自由探索。 这时候才开始测试各种新出的AI应用和功能。\n\n他很清楚 AI 既是生产力工具，也是个“时间黑洞”。他用严格的时间管理，给自己建立了“防护栏”，防止自己沉迷于“调教AI”而忘了真正的工作。\n\n第 2 位 —— 编排闭环：Kieran Klaassen, Cora 总经理\n\nKieran 负责 Cora 产品，他的风格是““谋定而后动””。\n\n他的工作流核心就两个字：计划。\n\n他会根据功能的大小，制定三种不同级别的编程计划。他会用一个叫 “Context 7 MCP” 的工具，先把最新的、最准确的官方文档和代码喂给AI，确保AI不是在“凭空想象”或用过时的知识来制定计划。\n\n等Claude Code 交出一个完美的计划后，他再把计划发到 GitHub，然后在云端让 Coding Agent（主要是Claude Code）去执行这个计划。AI写完代码后，他会再启动一个““审查””命令，让AI自己先检查一遍，然后他再上手。\n\n对 Kieran 来说，AI 不是一个“黑匣子”，而是一个必须在他制定的蓝图内严格执行的“施工队”\n\n第 3 位 —— 化繁为简，拆解里程碑：Danny Aziz, Spiral 总经理\n\nDanny 负责 Spiral 产品，他可能是这群人里最硬核的一位。\n\n他的主战场不在花哨的图形界面，而是在一个叫 “Droid” 的命令行工具里。这个工具能让他同时调用 OpenAI 和 Anthropic 的模型。\n\n他的工作流是：\n1. 用 GPT-5 Codex 做大的任务：搭建复杂功能的框架。\n2. 用 Claude 做小的任务：优化和打磨代码细节。\n\nDanny 最有价值的一个做法是，他会在““规划阶段””花大量时间跟AI对话，让AI帮他推演一个决策可能带来的第二层、第三层后果”。\n\n举个例子：“我要加这个新功能，但你帮我分析一下，它会不会因为从数据库拿数据的方式，导致整个App变慢？”\n\n他用AI来辅助自己做更高维度的“架构思考”，而不仅仅是写几行代码。\n\n> “我不再用 Cursor 了，”他说，“我已经好几个月没打开过它了。”取而代之的是，他的主界面是 Warp，可以在上面分割屏幕、快速切换任务。在它背后，他用 Zed ——一个轻量、快速的代码编辑器——来审阅计划文件和特定的代码片段。\n\n第 4 位 —— 让流程成为唯一的“事实来源”：Naveen Naidu, Monologue 总经理\n\nNaveen 负责 Monologue 产品，他是个“程控”。他的信条是：“如果一个任务没录入 Linear (项目管理工具)，那它就不存在。”\n\n他把所有需求和Bug都先在 Linear 里归档，然后再启动AI。他也有两套流程：\n- 小Bug：直接从 Linear 复制粘贴问题描述，扔进 Codex Cloud 让AI去跑。\n- 大功能：在本地写一个详细的 https://t.co/1aLAUFxX5j (计划文档)，把它作为和AI沟通的“唯一事实蓝图”，在命令行里一步步推进。\n\n最有意思的是，他深度使用自己开发的产品 Monologue (一个语音转文字工具) 来口述需求、写文档、给AI下指令。这简直是““用自己造的锤子，来修自己的房子””。\n\n他还有一套严格的审查标准：AI 自动审查 -> 自己人工对比代码 -> 查看Sentry（错误监控工具）的日志，确保Bug真的被修复了。\n\n第 5 位 —— 钻研打磨，精益求精：Andrey Galko, 工程主管\n\nAndrey 是工程主管，他代表了另一种工程师：不爱折腾。\n\n他不喜欢追逐“闪亮的新玩具”。他之前一直用 Cursor (一个AI代码编辑器)，觉得体验最好。但后来因为 Cursor 改了定价，他一周就把免费额度用完了，这才“被迫”换工具。\n\n他换到了 Codex。他认为以前的 OpenAI 模型写的代码很“懒”，经常跳步骤，不如 Claude 好用。但现在的 GPT-5 Codex 已经进化得非常强，连以前 Claude 的强项——用户界面(UI)——都能搞定了。\n\n第 6 位 —— 极致的专注：Nityesh Agarwal, Cora 工程师\n\nNityesh 是 Cora 的工程师，他的风格和第一位 Yash 截然相反。他追求极致的专注。他的装备极简（一台MacBook Air），他的工具也极简：只用 Claude Code。\n\n但他用 Claude Code 的方式很特别：\n1. 他会花好几个小时，先和 Claude 一起研究、制定一个巨详细的计划。\n2. 一旦开始编码，他就待在一个终端窗口里，“像老鹰一样””盯着 Claude 输出的每一行代码，手指就悬在 Escape 键上，一旦发现不对，立刻中断它。\n\n最近，他甚至故意频繁地打断AI，强迫AI向他解释“你为什么要这么写？”。\n\n他承认，这样做效率变低了，但带来了两个巨大的好处：\n1. AI 胡说八道（hallucinate）的次数变少了。\n2. 他感觉自己的开发技能也在这个盘问 AI 的过程中变强了。\n\n他意识到，自己已经对 Claude 产生了依赖，这让他很脆弱。前阵子 Claude 宕机了两天，他试了别的工具，都感觉不顺手。所以，他现在逼着自己和AI一起思考，而不是纯粹依赖AI。\n\n---\n\n看来每个人用 AI 的方式都不一样，但也有一些共同点：\n\n1. 重点不在“写代码”，而在“做规划”\n\n没有人真正的是在“Vibe Coding”，没有说写个提示词就完事了的，都是在 AI 干活前反复的讨论，直到清楚了再动手\n\n2. 上下文很重要\n\nYash 用 Context 7 MCP 的工具，确保 AI 在写代码时，能自动去查阅最新、最官方的“技术文档”。这就避免了 AI 用过时的知识（比如一个老版本的函数）来写新代码。还会用 Figma MCP，读取 Figma 的原始设计数据，让 AI 可以直接拿到准确的颜色、间距等信息\n\n3. 工程师的角色在进化\n\n工程师已经不再是单纯写代码，还要做计划、写提示词、审查 AI 生成的代码\n\n4. 专注\n\n这个问题其实我也有感触，AI 让人更难专注了，在等 AI 结果的时候去做点其他事，很快就把任务忘记了；或者 AI 工具太多，每个新 AI 工具都去试试太费时间了。像 Yash 那样，一半时间专注交付，一半时间探索。\n\n原文：Inside the AI Workflows of Every’s Six Engineers\nhttps://t.co/xqTMIAxTVj",
+      "created_at": "Tue Oct 28 02:05:17 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1982991971929993216",
+          "url": "https://pbs.twimg.com/media/G4UAsS9WsAAEDBW.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 168,
+        "favorite_count": 795,
+        "reply_count": 29,
+        "quote_count": 20
+      }
+    },
+    {
+      "id": "1983030954345050611",
+      "text": "AI 会“写代码”，但它不会“做软件” \n作者：Matias Heikkilä\n\n你有没有发现，最近有相当多的人在到处寻找技术合伙人或者 CTO？\n\n反正我吧，收到了多得惊人的这类咨询；他们的话术大同小异：“嘿，我这儿有个‘凭感觉编程 (Vibe Coding)’搞出来的 App，你愿意帮我把它做成‘生产就绪’（也就是能正式上线、稳定运行）的版本吗？”\n\n我大概能给这些人画个像。想象一下：他们非常懂自己的业务，但一直以来都缺乏技术能力，没法把好点子变成现实——他们可能是个法律顾问，或者客户经理。\n\n这些人干嘛要找我呢？\n\n我也琢磨了一下，我觉得这释放了一个重要信号：到底有什么事是他们靠生成式 AI (GenAI) 没法独立完成的？\n\n这不正是现在人人都想搞明白的问题吗？大家都想知道这些模型的能力边界。或者，说得再直白点：大家都想知道哪些工作很快要被淘汰了。\n\n我收到这些求助，这个事实本身就说明了“软件工程”这个行业的一些问题。我的意思是，如果软件工程真的已经被 AI 自动化了，那根本不会有人来找技术合伙人。\n\n嗯，我想我明白为什么我们会收到这些请求了。关键在于：AI 会写代码，但它不会构建软件。\n\n这是我在花了大量时间用 AI 辅助编程、并且看了无数别人的演示之后，得出的结论。\n\n圈内有句老话：写代码容易，软件工程难。\n\n现在看来，说大语言模型 (LLM) 已经能自动化“大量写代码”的工作，这挺公允的。像 GPT-5 这样的模型（这里作者指代的是未来更强的模型），在解决那些定义清晰、孤立的小问题时，成功率相当高。\n\n但是，“写代码”本身并不是大多数程序员拿工资的真正原因。构建一个能正式上线的 App，那不叫“写代码”，那叫“软件工程”。\n\n在我看来，当你试图把一个“演示版 (demo)”变成一个“真正的产品”时，“写代码”就升级成了“软件工程”——而这，恰恰就是前面提到的那些人带着他们的项目来找你的时候。\n\n我其实也不太清楚为什么 AI 至少目前还无法“构建软件”。\n\n也许这和工作的本质有关。当你以写软件为生时，你的核心任务是处理“复杂性”。一个普通的线上产品，它做的可能只是一堆简单的事情。真正的挑战是，如何让“成百上千件”简单的事情同时不出错地运行，并且让整个系统保持“可维护性”。\n\n换到我们今天讨论的 AI 话题下，这句话可以这么说：演示一个“功能”是一回事；而用一种支持“集成、扩展和长期可维护性”的方式来“构建”这个功能，则完全是另一回事，难度天差地别。\n\n当你点开那些人发来的代码时，你会发现，所谓的“让 App 生产就绪”，真正的意思其实是“把这些代码全删了，从头重写”。\n\n我觉得，这非常清楚地说明了我们在 AI 发展上目前所处的阶段。\n\n来源 https://t.co/cRu13vpg6y",
+      "created_at": "Tue Oct 28 04:39:57 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 29,
+        "favorite_count": 132,
+        "reply_count": 16,
+        "quote_count": 15
+      }
+    },
+    {
+      "id": "1983162811036709035",
+      "text": "RT @fi56622380: 今天Amazon裁员3万人，比2022年行业收缩期裁的还厉害，原因很简单\n\n买GPU的钱capex不够，导致AWS增速下降，被市场严厉的惩罚了，只能砍工资来省钱买GPU，让财报好看一点，营造一个AWS增速触底的故事\n\n每一个互联网公司的SDE打工…",
+      "created_at": "Tue Oct 28 13:23:54 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1983083061043692015",
+        "text": "今天Amazon裁员3万人，比2022年行业收缩期裁的还厉害，原因很简单\n\n买GPU的钱capex不够，导致AWS增速下降，被市场严厉的惩罚了，只能砍工资来省钱买GPU，让财报好看一点，营造一个AWS增速触底的故事\n\n每一个互联网公司的SDE打工人，都应该买入Nvidia/amd作为风险对冲，弥补自己被GPU挤出价值链的风险\n\n-------------------------\n进入2024~2025年，美国SDE们就业差的主要因素已经不再是21年的大幅过度扩张，也不再是薪资更低的海外技术中心抢饭碗，暂时还不是AI提效造成需求降低，而是来了一个新的大boss：GPU capex\n\nGPU capex在互联网公司正在创造一种诡异的繁荣性萧条：\n\n公司业绩增速很好看，股价也节节高升，但是员工的工资开支成了管理层腾挪不开的问题，每个人都要担心自己的工作，同时因为持续性裁人，留守的员工的工作压力越来越大，人心惶惶，和大萧条时代无异\n\n这不是传统的行业萧条，而是资本在人力与算力之间的激进再分配\n\nAmazon这次裁员3万人，大概从两个月前就有风声了，年中perf review往年都是7月，这次到8月中下才开始，RTO的政策，也是裁员的重要考虑因素(借口)。AGI组肯定是一个都不动，PXT, device and service, 运营，都会是重灾区，按惯例AWS应该会晚一点再裁，等到AWS reinvent之后再裁，人尽其用\n\n而在故事的另一端，AWS Q2的未完成订单（backlog）达到1950亿美元，同比增长25%。 这说明客户想买但AWS交付不了，需求持续火爆，GPU买的不够快不够多\n\n在AI服务器供应跟不上需求爆炸性增长的时代，opex(工资)换capex就能带来公司的业绩提升，资本会毫不留情的惩罚一切不把这条路线贯彻到底的CSP/Hyperscaler\n\nMeta开启每半年5%悄悄裁员模式基础之上，刚刚裁掉AI org的600人，而且还悄悄裁掉了很多部门的director，也是同一个逻辑：AI data center不够用，一年之内对未来18个月的capacity计划上修了三次，每次以为高估了需求，都会在几个月之后才痛苦的发现原来是低估了\n\n互联网公司内部真的不需要人了吗？当然不是，招人的budget砍掉之后，只能倒逼公司内部增效来弥补\n\n目前最激进的互联网大公司各种手段都用上了，内部tool耗费大量人力做各种agent功能，一键部署鼓励vibe，定了KPI每个部门AI使用率要达标，各级汇报AI使用进度和案例，还规定互相定期交流学习\n\n一顿操作猛如虎，目标仅仅只是希望把大家的工作效率提升~20%，而已\n\n接下来可能会发生什么？\n\n为了增速，为了竞争，当公司提效遇到瓶颈，裁员也裁到只剩大动脉了，opex已经榨不出油水了，公司下一步只会继续牺牲现金流，甚至像ORCL一样，开始为了增速而不惜冒风险举债\n\nNvidia/AMD也会继续用手里的巨额现金推动投资，支持合作伙伴投入AI capex，就像openAI做的那样\n\n这一切最大的受益者都会是半导体全产业链公司，未来可能会出现一个新常态：半导体公司的利润率会反超互联网公司\n\n但他们也承担了最大的风险：当VC/Hyperscaler的前期投资看到token需求减缓时，甚至只是需求增长速度减缓(不再是一年数倍)，一定也会毫不留情的砍单，这个传导的速度会非常快，会比半导体公司的投产周期要快的多\n\n这一步什么时候会出现，一个参考指标是，企业渗透率接近50%的时候。\n\n2000年3月互联网泡沫破灭时候，美国互联网渗透率大概在52%左右(另有一组数据时43%)\n\n目前互联网大厂的genAI daily user渗透率正在从50%向90%迈进，而广大行业公司的AI采用率不到10%，增速暂时是有保障的，每一代科技革命增速最快的时候就是全社会公司采用率10%迈向50%的阶段\n\nCisco泡沫的历史不会简单重现，我相信这一轮信息比上一轮要充足太多太多，一直会有足够多的泡沫怀疑论者警醒，至少会让泡沫破灭的时候不会那么惨烈",
+        "created_at": "Tue Oct 28 08:07:00 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1983081794003185668",
+            "url": "https://pbs.twimg.com/media/G4VSYoQasAQajxn.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "1873144135064142058",
+          "text": "反H1B的这群MAGA从论据到论点都不靠谱，难怪musk会发飙\n\n伯克利CS满GPA毕业生找不到工作，主要原因还是21~22年各公司对线上业务增长需求误判导致疯狂扩招，两年招人超过之前十年，Meta4万变8万，Google也接近翻倍，非常惊人\n\n之后发现业务需求没那么大，就算裁员15%也还有大量冗余，没那么多业务增长\n\n另外的主要原因，除了经济周期+高息环境，还有印度和欧洲的薪资更低的技术中心崛起，以及CS毕业生十年增长了三倍造成供给端过剩\n\n-----------------------------------------------------\n\n和大半年前写这篇引文的时候相比，伯克利CS毕业生找工作难度目前并没有任何好转，几个就业曲线仍然躺在地板上连动都不带动一下\n\n我的感受是现在应该又多加了两个不利因素：\n\n1.买GPU军备竞赛capex花销并不是之前预期的是短期一次性而是会持续\n\n各家对LLM的潜力评估比一年前更好，capex持续增长，对招人预算是很大的压力，花钱招人不如花钱买GPU，这个趋势在2024全年非常明显，比如Meta在去年底今年年初的时候巨量吃进H100，招人名额砍的狠，到后面才开始分部门分业务priority慢慢恢复\n\n2.各个科技公司都在战略上招更多LLM/AI skillset的人，因为这是唯一确定的增长点，AI部门headcount数量和包裹都给的非常慷慨(AI offer比一般offer高20~40%)，总招人预算增长不多的情况下，其他领域基本上会战略上收缩或者减缓扩张，凑headcount给AI部门，所以结构性部门调整的特征也很明显\n\n今年互联网大厂新招的员工不多，据我的不完全统计10个里怕是6~7个跟LLM/AI项目组是相关的\n\n半导体公司作为比互联网公司预算更紧张的领域，这个趋势今年非常明显，高通和AMD都是整体裁员3~4%，把有限的预算放进AI这样的确定性增长机会进行扩招\n\n----------------------------------------------------\nAI/LLM的辅助coding对程序员效率的提升会不会对当前大厂CS 就业有严重影响？\n\n至少目前的情况下这不是主要因素\n\n现在各个互联网大厂只要是跟genai相关的sde组都非常累，从上到下timeline压力非常大，肯定不会愿意开发速度减慢，如果有AI工具产生的效率提升，也不愿因此裁员\n\n因为各个VP/SVP的压力都巨大，巴不得多要资源多要人减少项目上线的时间线risk，在这上面卡人卡资源风险太大\n\n-----------------------------------\n那么长期来看以后的CS就业会不会因为LLM效率提升而降低需求呢\n\n大厂CS工作和startup/小项目在LLM的辅助提升效果上可能并不一样\n\n大厂的业务项目复杂度和规模普遍来说要高几个数量级，稳定性鲁棒性严格，design review/CR流程严格，一口气提升巨大不现实。小型项目在快速试错，原型搭建上效率提升会非常显著，效率翻倍甚至翻数倍也是可能的\n\n虽然大厂内部LLM工具链做的完整，但整体来说效率提升（和完全不用相比）并不高，太多的debug和coding都是业务逻辑相关\n\n以我的感受，一般大厂高级程序员(L5/E5/SDE3为例)平均50%工作时间在coding上，coding部分能提升10~40%效率，一个熟练使用目前GPT/Claude工具链的大厂高级程序员来说，在现有熟练业务~15%整体效率提升是一个比较合理的估计(新业务新领域上手效率提升多一些)\n\n至于某些公司宣称的啥“特定场景”提升55%效率，PR宣传而已，笑笑就好\n\nLLM在closed domain上的效果要好得多，因为有明确的reward函数，这次的o3数学上惊艳在reward函数上也是有秘密的  但open ended question上，目前的这种reasoning模式效果要差很多\n\n即便是software engineering这样看起来LLM已经进度巨大的部分，也有太多的open ended task，task在各个维度上直接和间接需求以及legacy都是什么，从各个其他team和上下level的resource，priority，dependencies，bottleneck都是什么，这些看似close loop的问题实际上是open ended的，每一个决策看似close loop，实际上在这个“看似封闭”的问题中往往暗含大量“开放式”不确定性，用close loop思维和open ended思维做出的结果差异是很明显的\n\n人的介入，本质上就是把open ended questions简化成closed loop question，或者在出现open ended scenario的时候介入，把搜索空间收敛起来\n\nagentic flow也就是在模拟把open ended question简化成closed domian的过程，随着算力的进步效果会慢慢变好，这个过程也会和人一起协同进化，但本质上是人把更高抽象层的开放问题简化分拆给AI\n\n可预见的未来内，人+AI一定比AI要强，不管AI进化到何种程度\n\n这一代的genAI/LLM效果有多好，完全取决于使用的人，因为需要依赖人把open ended task变成closed loop tasks，从这一点来说，和过去的自动化工具没有任何差别。LLM在可预见未来内对于大厂程序员的整体效率平均提升20~30%应该是没有什么问题的，LLM用的最熟练的程序员肯定远不止这个效率提升，但程序员们对genAI使用的平均水平还要再打折扣\n\n所以说LLM在大厂规模化取代程序员，在可预见未来范围内不太现实，20% headcount扩张对于互联网公司长期平均来说就是两年的招聘扩张额度\n\n这是开源节流中的节流部分影响(降本增效)，但开源可能才是影响就业更重要的因素\n\nCS就业的好坏更本质上还是取决于创造的疆域(价值)，现在还处于llm实际应用没有深耕的初级阶段，等到了深耕阶段，需要海量相关开发人员scale up，在各个领域降低成本和创造价值，就像互联网革命里Google和Facebook在15年前还是小公司一样，需要的sde大量扩张都是业务开始scale up/深耕的阶段\n\n疆域的拓展一般是指数型，也就是初期增量看起来很弱，像是存量表现，经过长时间累积增量才会显著\n\n刻舟求剑的说，2000至2004年互联网企业都刚创立不久，不需要那么多sde（互联网的玩法摸索也花了二十年），所以sde也经历了寒冬，大家都在转行画电路板layout，sde的北美就业直到近十年之后的2013年才开始彻底爆发，会写bubble sort就有offer，到2022才戛然而止",
+          "created_at": "Sat Dec 28 23:08:57 +0000 2024",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "1873106908498018305",
+              "url": "https://pbs.twimg.com/media/Gf6czyNawAEULdq.png"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1503621835136462849",
+            "name": "fin",
+            "screen_name": "fi56622380",
+            "description": "立场不重要，事物的运行逻辑和内在规律才是更值得关注的部分 | \n\n读过三个不同专业的学位，体验过两个大洲的尘世生活，设计过一次火星车芯片，还没有去看过心心念念的冰川",
+            "followers_count": 38361,
+            "friends_count": 427,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 200,
+            "favorite_count": 824,
+            "reply_count": 43,
+            "quote_count": 23
+          }
+        },
+        "user": {
+          "id": "1503621835136462849",
+          "name": "fin",
+          "screen_name": "fi56622380",
+          "description": "立场不重要，事物的运行逻辑和内在规律才是更值得关注的部分 | \n\n读过三个不同专业的学位，体验过两个大洲的尘世生活，设计过一次火星车芯片，还没有去看过心心念念的冰川",
+          "followers_count": 38361,
+          "friends_count": 427,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 216,
+          "favorite_count": 1042,
+          "reply_count": 50,
+          "quote_count": 35
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 216,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1983179125356671223",
+      "text": "昨天也让 AI 对了一个，GPT-5 Thinking 最好\n\n上联：关羽观雨，下联：周瑜舟渔\n\n我觉得对的还可以，检索了一下没找到网上有现成答案，应该是自己对出来的 https://t.co/YiHy2b8vCF",
+      "created_at": "Tue Oct 28 14:28:43 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1983178827036532736",
+          "url": "https://pbs.twimg.com/media/G4WqoseWoAA2ZtC.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1983099095389757676",
+        "text": "x上看到一个上联：夜雨轻敲窗外瓦\n用各个模型都试着对下联，感觉就gemini 2.5 pro是那么个意思。\n\n下联：晓风徐拂岸边花",
+        "created_at": "Tue Oct 28 09:10:43 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "52014015",
+          "name": "S Li",
+          "screen_name": "YanyuRensheng",
+          "description": "@aivron_ai 多模型接入、团队记忆、共享上下文",
+          "followers_count": 1450,
+          "friends_count": 1276,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 4,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 29,
+        "reply_count": 18,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "1983248430836101360",
+      "text": "很多人好奇这图怎么画的，其实用 @tldraw 就可以，稍微麻烦一点就是单元格和不规则的圆点\n前者只要先画一个框，然后中间画一条竖线\n后者先画一个椭圆，复制一份缩小一点点，叠加在一起就好了 https://t.co/IVAu03dJYd",
+      "created_at": "Tue Oct 28 19:04:07 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1983247970687393792",
+          "url": "https://pbs.twimg.com/media/G4XphYpWIAAgLIK.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1982748110595236022",
+        "text": "LLM's are just big language models.\n\nAnd language models are pretty easy to understand: https://t.co/nZJLntbg6b",
+        "created_at": "Mon Oct 27 09:56:01 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1982748100486696960",
+            "url": "https://pbs.twimg.com/media/G4Qi5HCXEAAM1by.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "346640777",
+          "name": "Matt Pocock",
+          "screen_name": "mattpocockuk",
+          "description": "I teach devs for a living. Author of Total TypeScript and AI Hero. Ex-@vercel. Used to be a voice coach.",
+          "followers_count": 211591,
+          "friends_count": 749,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 218,
+          "favorite_count": 1964,
+          "reply_count": 68,
+          "quote_count": 7
+        }
+      },
+      "stats": {
+        "retweet_count": 12,
+        "favorite_count": 69,
+        "reply_count": 2,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "1983248434296418356",
+      "text": "源文件：https://t.co/9xjy5gZzC1",
+      "created_at": "Tue Oct 28 19:04:08 +0000 2025",
+      "lang": "ja",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 3,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1983256740222099513",
+      "text": "RT @Yangyixxxx: 自从学了脑科学后，我发现这个世界根本不存在执行力差。\n\n每一次拖延，本质都不是懒惰，而是大脑在抵抗模糊。\n\n大脑只会自动执行一件事：已经被压缩成可预测动作序列的任务。\n\n可预测代表它能想象出第一步，它知道下一秒发生什么，它确信自己能收尾。…",
+      "created_at": "Tue Oct 28 19:37:08 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1983189526081343567",
+        "text": "自从学了脑科学后，我发现这个世界根本不存在执行力差。\n\n每一次拖延，本质都不是懒惰，而是大脑在抵抗模糊。\n\n大脑只会自动执行一件事：已经被压缩成可预测动作序列的任务。\n\n可预测代表它能想象出第一步，它知道下一秒发生什么，它确信自己能收尾。\n\n只要满足这个条件，行动就不是需要意志力的选择，而是神经系统自动开跑。\n\n问题在于，大多数人面对的目标，都是抽象的，概念化的，甚至没有入口点。\n\n比如改进工作效率，开始做一个项目，整理房间。\n\n这些语句给大脑的信息是空的，没有动作模型，没有场景，没有起点，没有感知信号。\n\n对神经系统来说，这类任务没有可执行结构，它无法模拟下一秒，于是它停住。\n\n这不是拒绝行动，而是节能原则。人脑会优先执行能立即算出路径的事情。\n\n哪怕是刷手机，也比一个模糊的目标更安全，因为“点开→滑动→获取刺激”是一条确定路径。\n\n确定性永远优先于重要性。不是价值判断，是神经算法。\n\n拖延是风险规避，不是性格缺陷。当任务是模糊的，大脑激活的是不确定带来能量损耗的防御机制，而不是我不想做的情绪。\n\n所有抗拒，都不是对行动本身，而是对没有入口点的混沌。\n\n所以改变不是强迫自己去做，而是把目标结构化成大脑能立刻执行的程序。\n\n一旦任务变成一条明确的动作路径，大脑会自动启动，甚至不会产生拖延的机会。\n\n而这，只是消除了模糊。",
+        "created_at": "Tue Oct 28 15:10:03 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3122661542",
+          "name": "Yangyi",
+          "screen_name": "Yangyixxxx",
+          "description": "Believing is seeing",
+          "followers_count": 108253,
+          "friends_count": 490,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 276,
+          "favorite_count": 1182,
+          "reply_count": 35,
+          "quote_count": 16
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 276,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1983269633206493276",
+      "text": "TechCrunch: OpenAI 完成其营利性资本重组\n作者：Russell Brandom\n\nOpenAI 在本周二宣布了一件大事：他们终于完成了公司的资本重组 (recapitalization)。简单来说，这家 AI 实验室进行了一次“分身”，拆分成了一个非营利基金会，以及一个“嵌套”在该基金会内部的营利性公司。这个过程堪称一波三折，充满了复杂的法律拉锯，尤其是公司那位“闹掰了”的联合创始人——埃隆·马斯克 (Elon Musk)——一直在使劲儿地反对。\n\n在这个新架构下，非营利性质的 OpenAI 基金会 (OpenAI Foundation) 将在法律上控制一个名叫 OpenAI Group 的“公益公司” (public benefit corporation，这是一种特殊的公司形式，虽然是营利性的，但法律要求它必须兼顾公共利益)。这个 OpenAI Group 现在可以放开手脚去融资或收购公司，不再有法律束缚。同时，基金会手握 OpenAI Group 的大量股份，并负责任命其董事会。\n\n“我们坚信，世界上最强大的技术，必须以一种能反映全球集体利益的方式去发展。”OpenAI 董事长布雷特·泰勒 (Bret Taylor) 在一篇博客文章中写道。“这次资本重组的收官，让我们有能力继续冲刺 AI 的前沿，同时这个新架构也能确保我们的进步是在为所有人服务。”\n\n根据这个新架构，OpenAI 基金会将拥有这家营利性公司 26% 的股份，并持有一份认股权证 (warrant，即在未来特定条件下以特定价格购买更多股票的权利)，如果公司继续发展壮大，基金会还能获得额外股份。作为 OpenAI 的早期投资者，微软 (Microsoft) 将持有约 27% 的股份，目前估值约 1350 亿美元。剩下的 47% 则由其他投资者和员工共同持有。\n\n根据微软发布的另一篇博客文章，这笔交易还将把微软对 OpenAI 模型的知识产权 (IP) 权益延长至 2032 年。此外，如果 OpenAI 某天宣布它实现了其梦寐以求的“通用人工智能” (artificial general intelligence, AGI)，这笔交易还规定，它必须将这一成果提交给一个独立的专家小组进行核查验证。\n\n在这次资本重组之前，OpenAI 一直是作为一个非营利组织运营的，受到严格的股权限制。然而，随着公司在融资上的野心越来越大，这个身份变得越来越难以为继。今年 4 月，软银 (SoftBank) 宣布了一笔高达 300 亿美元的史无前例的投资，但这笔钱有个附加条件：OpenAI 必须成功转变为一家营利性公司。就在上周六，据 The Information 报道，这笔巨额投资的最后一笔款项已经到账，这预示着公司重组取得了重大突破。\n\n此前，曾有过多方试图通过法律途径阻止或影响此次重组，其中最引人注目的当属埃隆·马斯克 (Elon Musk)。他甚至一度开出了 974 亿美元的天价，试图直接收购这家公司。\n\n来自加利福尼亚州和特拉华州的总检察长 (相当于州的最高司法长官) 此前曾对这次转型表示过担忧。现在，他们都同意放行，允许这个过程继续，但也附加了双方 各自办公室公布的进一步条件。值得注意的是，加州达成的协议要求 OpenAI 必须“在开发和部署 AI 和 AGI（通用人工智能）的过程中，继续采取措施减轻对青少年及其他群体的风险”。\n\n在那篇公告博文中，泰勒称与这些州监管办公室的讨论对整个过程产生了积极影响。“我们根据这些讨论做出了一些调整，”泰勒写道，“我们相信，OpenAI——以及我们所服务的公众——都将因此受益。”",
+      "created_at": "Tue Oct 28 20:28:22 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1983269625014927360",
+          "url": "https://pbs.twimg.com/media/G4X9N1TWQAAaD-G.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1983157159853777086",
+        "text": "We completed our recapitalization.\n\nThe non-profit, the OpenAI Foundation, is now one of the best resourced philanthropies ever, with equity valued at ~$130B. It continues to control the OpenAI for-profit, which is now a public benefit corporation.\n\nhttps://t.co/TevJDA3QwB",
+        "created_at": "Tue Oct 28 13:01:26 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6Lg202",
+          "followers_count": 4449477,
+          "friends_count": 3,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 317,
+          "favorite_count": 3301,
+          "reply_count": 588,
+          "quote_count": 385
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 20,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1983287681040650257",
+      "text": "RT @yuyy614893671: 【扯白】【写在Open AI组织架构调整结果出台的今天】\n这个文章是我最早之前对Open…",
+      "created_at": "Tue Oct 28 21:40:05 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1983217364780073127",
+        "text": "【扯白】【写在Open AI组织架构调整结果出台的今天】\n这个文章是我最早之前对Open AI组织架构的分析，我想我是全网极少存在的，会去仔细分析一家组织的架构设计与利益分配机制的人，这跟我此前的职业经历息息相关；因为参与复杂的商业谈判，并购交易，出了预测商业前景和对价，最难的就是进行组织架构的调整和设计。\n\n除此之外，从投资的角度来看，无数的坑都告诉我们，组织架构捋不顺，再好的商业模式，市场容量，最后都会被自己带坑里去。无法实现投资者（真正承担了资本风险的人）的目标。\n\n回到今天，Open AI的组织架构调整，在历时一年多的和加州和特拉华州总检察长的对话（谈判后）完成的。此前Sam Altman想直接改变OpenAI的组织架构，由控股层面的“非赢利”组织，运营主体的“有赢利上限”的商业组织架构彻底改编为赢利组织；但受到了马斯克为代表的前资助者，以及微软这样的大金主（大股东）的阻挠。 所以， Sam Altman不得不和Open AI运营实体所在司法辖区内的总检察长办公室讨论修改相关方案。今天，OpenAI官网公布了三条重磅消息：\n\n第一条是有关OpenAI整个架构的变化，简言之，就是非赢利实体OpenAI基金会，从此前统领全部运营载体，变成了 Open AI集团这个运营实体的股东之一，持股26%，但它拥有认股权证，在Open AI集团的各个里程碑实现后具有优先认股权（Open AI基金会依然是非赢利组织）。\n\n Open AI集团的另外两个大股东分别是持股27%的微软，和持股47%的员工与前任投资者；  这个架构基本捋顺了结构，Open AI集团成为赢利实体，彻底按照商业化运作，虽然它的使命依然和基金会保持一致，但整体上还是解决了此前的组织架构上最大的Bug（就是OpenAI股东赢利有上限，是第一轮投资人投资本金的100倍）。\n\n第二条是Open AI基金会董事会主席Bret Taylor公布的有关Open AI的使命，近期的关注领域，以及Open AI整个组织架构调整的背景。 \n\nOpenAI 的使命：确保通用人工智能造福全人类； Open AI基金会持股26%，估值1300亿美金；基金会宣布首期 250 亿投资，聚焦两大方向：健康与治愈疾病（开放前沿健康数据集、资助科学家等）+AI 韧性技术（建设类似网络安全的“AI 韧性层”以最大化收益、最小化风险）。\n\n第三条是有关Open AI和微软之间的关系的。 微软目前在Open AI的持股27%，估值为1350亿美金； OpenAI 仍然是微软的前沿模型合作伙伴，而微软在通用人工智能 (AGI) 出现之前将继续拥有独家知识产权和 Azure API 独家经营权。具体的条款，我就不在这里列明了，可以参见https://t.co/4EvLkksfOH\n\n总之，今天公布的Open AI组织架构的调整，是Open AI发展历史上的里程碑；对Open AI留住最顶级的技术人才大有裨益，也安抚了马斯克等早期投资人，将其利益纳入了Open AI集团整个商业化扩张的版图；同时Open AI和微软的合作条款特别是涉及到知识产权和分别与第三方合作的障碍也得到了相对合理的解决（大家都不会非常痛快，但这才是最好的均衡）。\n\n...............\n附注：以上文字均为我手工打字，一个一个键盘敲出来的；并不是我反对AI，我试用了多个AI工具之后发现：AI在这样复杂的交易架构的解读上面始终无法做到形成一个简洁的系统分析，做到直击核心，并成功捕获要点，反而废话太多，让人消耗在细节里。\n\n因为，我的能力已经内化集成到了我的大脑，人类的大脑具有的总结和推理能力，如果每天使用，并思考，目前，还是强于AI。",
+        "created_at": "Tue Oct 28 17:00:40 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "1726003555621052870",
+          "text": "我们从下往上看：\n\n1. 业务运营实体与盈利实体：Open AI Global\n\n Open AI Global ,LLC（ OpenAI全球有限责任公司）就是现在负责运营OpenAI各项业务的经营实体，也是微软花了10亿美金投资的具有盈利性的实体。\n\n这个实体在2019年被赋予了盈利实体的特性，但也同时设置了盈利的上限：为第一轮投资人投资的 100 倍。\n\n简单来说，如果投资者投入 1 美元，即使 OpenAI 赚取了数十亿美元的利润，该投资者的直接利润总额也将被限制在 100 美元。超过这一金额上限的利润将回到经营实体继续用于非盈利目标。这仍然是一个可观的回报，但不是无限的。\n\n大家都知道，OpenAI在2015年创立之初是一个非盈利机构，直到2019年才设立了新的子公司OpenAI Gobal，并以此作为盈利实体，为什么做这样的一个转变？在Open AI的网站上是这么说的：\n\n“仅靠捐款无法与推动核心研究前进所需的计算能力和人才成本相匹配，从而危及我们的使命。因此，我们设计了一种结构来保留非营利组织的核心使命、治理和监督，同时使我们能够为我们的使命筹集资金”\n\n“营利性组织的股权结构将设置上限，限制投资者和员工的最大财务回报，以激励他们以平衡商业性与安全性和可持续性的方式研究、开发和部署通用人工智能，而不是专注于纯粹的利润最大化。”\n\n2. OpenAI的经营实体——Open AI Global 具有两个使命\n（1）“能够发行股票以筹集资金并聘请世界一流的人才”\n\n（2）Open AI \"有法律义务追求非营利性组织的使命，并通过从事研究、开发、商业化和其他核心业务来履行该使命。\"\"自始至终，OpenAI 的安全和广泛利益指导原则将是其核心\"\n\n3. Open AI Gobal受谁控制，由谁经营呢？\n\n从股权上来看，是由Open AI Nonprofit这个实体（包括非盈利慈善机构+投资者+员工持股实体)来直接控制；而由Open Al  GP LLC（Open AI 普通合伙人有限责任公司）来具体控制/执行与管理。\n\n而再往上穿透，我们可以看到，Open AI Nonprofit 受501(c)(3) 慈善机构 OpenAI Inc控制，而该慈善机构是非营利组织。它的成立是为了“确保安全的通用人工智能的发展并造福全人类”。\n\n而OpenAI Inc 之上则是Open AI的最核心权力机构“董事会”；这个董事会是Open AI的最高权力机构和核心决策机构，也是负责把Sam Altman“驱逐”的机构。\n\n4.OpenAI的整体结构和经验理念：\n \n所以，Open AI的整个公司结构从上到下是一个“瀑布型”结构；虽然经营实体OpenAI Global具有盈利的性质，但盈利有上限，所有外部投资人，内部员工持股计划，都需要通过对这个实体的投资来实现。\n\n但盈利不是这个实体的唯一目标，这个盈利实体的最高目标，甚至法律目标是为了实现Open AI董事会和非盈利组织机构的目标“推进AI的安全发展，并造福全人类”。\n\n而OpenAI的 非营利组织一直没变，其董事会继续作为所有 OpenAI 活动的总体管理机构，履行其最高管理职责。\n\n5. 董事会权力划分\n\n此前， 董事会中的6个董事为：OpenAI首席科学家Ilya Sutskever、Quora首席执行官Adam D'Angelo、技术企业家Tasha McCauley和乔治敦安全和新兴技术中心的Helen Toner，Open AI董事会主席Grey Brockman和 CEO Sam Altman。\n\n三名独立董事不持有OpenAI的股权，就连创始人兼CEO Sam Altman都不持有公司股权。而大金主微软，投了数十亿美金给OpenAI也没有董事会席位和控制权。\n\n因而，从数学上来讲，首席科学家llya联合了三名外部董事就把CEO和董事会主席给“炒了”。\n\n基本可以完全排除，此次解职，与“资本”没有什么牵扯和瓜葛。\n\n6. Sam 对OpenAI控制权的“脆弱性”\n \nSam Altman作为联合创始人和CEO，常常站在镁光灯下的科学家/投资人和商人，在以“非盈利”为组织核心的机构中，因为“在与董事会的沟通中并不一贯坦诚，阻碍了其履行职责的能力。”而被解职，充分体现了，人最终要为自己的情怀买单。\n\nSame Altman 在 5 月份的参议院人工智能听证会上表示“我在 Open AI 中没有股权”。参议员约翰·肯尼迪说“你需要一名律师或代理人”，肯尼迪的话现在看上去就像是一个“预言”\n\nSam被赶走这事又一次给我们启示——要做成一些事情，仅有“情怀”是不够的；而通过一开始的共同理念，创建的看似牢不可破的运营实体，随着时间、环境、技术、理念......的发展，会出现动荡和犹疑。\n\n而事实上，一般科技公司的CEO和创始人常常双层股权结构来保护自己免于失去对公司的控制权。分配给这些股东的权利各不相同，但它们通常包括巨大的投票权、有保证的董事会席位或其他治理条款，这些条款使得即使公司上市，董事会也很难把他们赶走。\n\nSam对AI和GPT的梦想折翼途中，下一程要怎么开启，拭目以待。\n\n这是一个开始的结束，后面一定还有更多精彩。",
+          "created_at": "Sat Nov 18 22:24:49 +0000 2023",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "1726001136413609984",
+              "url": "https://pbs.twimg.com/media/F_P844nakAApXwy.png"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1597654998971604992",
+            "name": "金融汪",
+            "screen_name": "yuyy614893671",
+            "description": "油管频道：金融汪 ，网址：https://t.co/mE0zmyZHPv\n\n金融市场老兵. Former Investment manager. 观察和理解这个世界每天在发生着什么，是我的兴趣也是工作。X上的内容只是分享，不是投资建议。",
+            "followers_count": 60340,
+            "friends_count": 433,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 7,
+            "favorite_count": 22,
+            "reply_count": 1,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "1597654998971604992",
+          "name": "金融汪",
+          "screen_name": "yuyy614893671",
+          "description": "油管频道：金融汪 ，网址：https://t.co/mE0zmyZHPv\n\n金融市场老兵. Former Investment manager. 观察和理解这个世界每天在发生着什么，是我的兴趣也是工作。X上的内容只是分享，不是投资建议。",
+          "followers_count": 60340,
+          "friends_count": 433,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 16,
+          "favorite_count": 53,
+          "reply_count": 7,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 16,
+        "favorite_count": 0,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

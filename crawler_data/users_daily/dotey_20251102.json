@@ -1,0 +1,320 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 142418,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20251102",
+  "last_updated": "2025-11-03T01:38:08.904839",
+  "tweet_count": 7,
+  "tweets": [
+    {
+      "id": "1984807557743952061",
+      "text": "Text to Markdown Prompt\n\n适用于你要把推文、微博这种纯文本内容转成格式良好的博客，可以帮你生成标题、列表，和加粗要点、金句。\n\n亮点：\n- 借助思维链先提取要点、金句和可选标题，然后选择标题和高亮要点、金句\n- 解决了 LLM 在加粗带标点符号的文字时加粗失效的问题（如果你用过 LLM 生成的中文 Markdown 会明白我说什么，参考图4）\n\n---- 提示词开始 ----\n\n# 任务：将文本转换为结构化 Markdown\n\n请你扮演一个专业的编辑，将提供的文本内容转换为一份格式良好、结构清晰、重点突出的 Markdown 文档。\n\n## A. 内部推理步骤 (请在你的思考过程中执行，无需输出)\n\n在生成最终的 Markdown 之前，请先在内部完成以下思考：\n\n1. **理解与提取**：\n* 通读全文，准确把握文章的核心主旨和目的。\n* 识别并提取文中的**核心论点**、**关键结论**和**重要定义**。\n* 找出文中具有高度概括性或特别精辟的**“金句” (Golden Sentences)**。\n2. **构思标题**：\n* 基于文章主旨，生成 2-3 个备选的主标题 (H1 级别)。\n3. **最终决策**：\n* 从备选项中选择一个最精炼、最贴切的标题作为最终主标题。\n* 从步骤 1 提取的内容中，最终确定哪些句子或短语最值得在正文中加粗，以引导读者快速抓住核心。\n\n## B. 最终输出规范 (请严格按此格式生成)\n\n请根据你的内部推理，生成符合以下所有规范的 Markdown 文本：\n\n1. **主标题 (H1)**：\n* 使用 `# 标题` 格式，采用你在步骤 A.3 中选定的最佳标题。\n\n2. **内容结构**：\n* 使用不同级别的子标题（如 `##`、`###`）来组织文章脉络，使其逻辑清晰。\n* 适当使用项目符号（`-`）或编号列表（`1.`）来呈现并列或顺序关系。\n\n3. **突出重点 (句子优先)**：\n* **有选择性地**使用粗体 (`**`) 来突出你在步骤 A.1 和 A.3 中确定的**核心论点**、**关键结论**或**金句**。\n* **优先加粗**：优先考虑加粗**能够概括要点的完整句子**或**关键短语**。\n* **避免**：避免只加粗零散的单个关键词，并**切勿过度使用粗体**，保持文档的专业性和易读性。\n\n4. **【!!!】重要格式规范**：\n* 在设置粗体时，**绝对不要**将任何标点符号（如 `。`、`，`、`：`、`\"`、`（`、`）` 等）包含在 `**` 标记内部。\n* ✅ **正确示例**(标点在 `**` 之外)：这是“**一个核心观点**”。\n* ❌ **错误示例**：这是**“一个核心观点”**。\n\n---\n\n请开始处理以下内容：",
+      "created_at": "Sun Nov 02 02:19:32 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1984804489816104960",
+          "url": "https://pbs.twimg.com/media/G4txKuQW4AAcAaw.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1984804581780402176",
+          "url": "https://pbs.twimg.com/media/G4txQE2WsAAFdXx.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1984804807610146816",
+          "url": "https://pbs.twimg.com/media/G4txdOIXIAA7pBf.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1984805609049341952",
+          "url": "https://pbs.twimg.com/media/G4tyL3uWwAAwOuI.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1981793119168512372",
+        "text": "Markdown to plain text Prompt\n\n--- Prompt Start ---\n\nConvert the following Markdown text into a plain text format suitable for a long tweet or Weibo post.\n\nFollow these rules strictly:\n1.  Preserve the core content.\n2.  Output *only* plain text. Remove all Markdown syntax (like `*`, `_`, `#`, etc.) except for the blockquote rule below.\n3. **Link Handling:** By default, *remove all hyperlinks* (Keep the link text and remove the URL).\n* **Exception:** Retain links that are critical for context, such as article sources or other links you deem essential for the reader's understanding.\n* Format these retained links as: `Link Text (https://t.co/bXU5y35HWn)`\n4.  Add a blank line between headings and paragraphs to ensure readability.\n5.  Convert Markdown headings (e.g., `## My Heading`) to plain text (e.g., `My Heading`).\n6.  Format unordered lists as follows:\n* Level 1: `- List item`\n* Level 2: `  * Sub-item` (indent with 2 spaces)\n7.  Format ordered lists by preserving their original numbering or lettering (e.g., `1.`, `a.`, `I.`, `1)`).\n* Indent nested ordered lists with spaces (e.g., `  1. Sub-item`).\n8.  Preserve blockquotes using the `> Quoted text` format.\n9.  Remove any non-content, metadata, or citation tags (e.g., ``, ``).\n\nStart the conversion for the text provided below:",
+        "created_at": "Fri Oct 24 18:41:14 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 142418,
+          "friends_count": 1439,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 21,
+          "favorite_count": 97,
+          "reply_count": 6,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 64,
+        "favorite_count": 337,
+        "reply_count": 10,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "1984851321720066465",
+      "text": "原推作者公布了他的提示词，我觉得没我的版本好看：\nhttps://t.co/kM2uDRzdfI\n> 创建一个超现实的 3D 渲染图，展示一张透明的推特个人资料卡片。卡片设计成未来感十足的玻璃身份牌，由两根手指轻柔地夹持着。\n卡片呈圆角矩形，材质为晶莹光滑的玻璃或亚克力，边缘散发出霓虹光晕，色彩在粉色、紫色和橙色之间渐变，灵感来自推特的品牌色调。在卡片上，使用现代、极简的无衬线字体，清晰地显示以下个人资料信息。",
+      "created_at": "Sun Nov 02 05:13:26 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1984196161784422790",
+        "text": "🔮 Create your own 3D Twitter Profile Card\n\nStep 1: Take a screenshot of your Twitter profile.\n\nStep 2: Open ChatGPT\n\nStep 3: Paste your screenshot and this prompt below ⬇️\n\nCreate a hyper-realistic 3D render of a transparent twitter profile card, designed like a futuristic glass ID badge held gently between two fingers. The card should be rectangular with rounded corners, made of clear glossy glass or acrylic, with glowing neon edges in pink, purple, and orange gradient inspired by the twitter color palette. Display the following profile information on the card using modern, minimal sans-serif typography.\n\nStep 4: make sure to Quote this twt with your result I wanna see how it turns out 😭",
+        "created_at": "Fri Oct 31 09:50:04 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2940321003",
+          "name": "shirish",
+          "screen_name": "shiri_shh",
+          "description": "23 ▪︎ Locked in ▪︎ Building @domain_snipers",
+          "followers_count": 6680,
+          "friends_count": 739,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 36,
+          "favorite_count": 263,
+          "reply_count": 39,
+          "quote_count": 34
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 8,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1985026810027909123",
+      "text": "未来风推文展示\n\nSora 或者 ChatGPT\n一张 X 推文截图 和 头像照片（可选）\n不是很稳定，中文支持不好，需要多次抽卡\n\n----提示词开始----\n\n一张 9:16 竖版、逼真的赛博美学未来社交媒体推文展示卡片照片：只手拿着一张竖直半透明的亚克力卡片，占据了大部分画面。上面显示着一条推文界面，卡片有平滑的圆润边缘，闪烁着柔和的霓虹灯光，呈现出粉色、紫色与蓝色柔和渐变的霓虹光晕。背景黑暗而模糊，以突出发光的边缘。卡片表面如水晶般清澈，推文的细节仿佛雕刻，信息排版整洁美观，文字大小适中，布局宽松而舒适有丰富留白不拥挤，包括：\n\n* 圆形头像（位于左上角，留白合理）\n* 名字和带认证徽章的用户名（头像右侧，适当间距）\n* 推文正文（中字号）\n* 发布时间（小字号）\n\n手指上的灯光反射看起来富有电影感和氛围感，营造出一种高科技的全息氛围。",
+      "created_at": "Sun Nov 02 16:50:46 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1985026802473955328",
+          "url": "https://pbs.twimg.com/media/G4w7XBcW8AApyhq.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1983941652730278148",
+        "text": "未来风社交界面，提示词见评论 https://t.co/MVNf0WM7pu",
+        "created_at": "Thu Oct 30 16:58:44 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1983940999433904128",
+            "url": "https://pbs.twimg.com/media/G4hf096XYAA0aoA.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 142418,
+          "friends_count": 1439,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 51,
+          "favorite_count": 404,
+          "reply_count": 54,
+          "quote_count": 49
+        }
+      },
+      "stats": {
+        "retweet_count": 6,
+        "favorite_count": 31,
+        "reply_count": 4,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "1985028644721263016",
+      "text": "直接输入文字和提供图像照片也是可以的\n\n参考提示词：\n\n---- 提示词开始 ----\n\n一张 9:16 竖版、逼真的赛博美学未来社交媒体推文展示卡片照片：只手拿着一张竖直半透明的亚克力卡片，占据了大部分画面。上面显示着一条推文界面，卡片有平滑的圆润边缘，闪烁着柔和的霓虹灯光，呈现出粉色、紫色和蓝色的渐变。背景黑暗而模糊，以突出发光的边缘。卡片表面如水晶般清澈，推文的细节仿佛雕刻，信息排版整洁美观，文字大小适中，布局宽松而舒适，不拥挤，依次显示：\n\n* 圆形头像（参考图1，位于左上角，留白合理）\n\n* 名字带认证徽章和用户名（头像右侧，适当间距）\n  - Naval\n  - @naval\n\n* 推文正文（中字号）\n\nFast, lift, sprint, stretch, and meditate.\n\nBuild, sell, write, create, invest, and own.\n\nRead, reflect, love, seek truth, and ignore society.\n\nMake these habits. Say no to everything else.\n\nAvoid debt, jail, addiction, disgrace, shortcuts, and media.\n\nRelax. Victory is assured.\n\n* 发布时间（小字号）：5:37 PM · Apr 25, 2020\n\n手指上的灯光反射看起来富有电影感和氛围感，营造出一种高科技的全息氛围。",
+      "created_at": "Sun Nov 02 16:58:03 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1985028520691539968",
+          "url": "https://pbs.twimg.com/media/G4w87CTWoAAvf7W.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1985028631941246976",
+          "url": "https://pbs.twimg.com/media/G4w9BgvWcAA3h_s.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1985029013933609391",
+      "text": "RT @oran_ge: 曲凯老师终于把OpusClip增长秘诀这期播客的文字稿发出来了，这是近期听到的含金量最高的两个播客之一，它相比那些营销公司和一些非一线人员的分享价值高太多了，嗯，一手的实践还是最重要的，非常推荐大家一定要听一下。\nhttps://t.co/B8nYtt…",
+      "created_at": "Sun Nov 02 16:59:31 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1984981105725042957",
+        "text": "曲凯老师终于把OpusClip增长秘诀这期播客的文字稿发出来了，这是近期听到的含金量最高的两个播客之一，它相比那些营销公司和一些非一线人员的分享价值高太多了，嗯，一手的实践还是最重要的，非常推荐大家一定要听一下。\nhttps://t.co/B8nYtt8ADv https://t.co/phDTDJMi1p",
+        "created_at": "Sun Nov 02 13:49:09 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1984981091414167553",
+            "url": "https://pbs.twimg.com/media/G4wRySeb0AEsfWe.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "6782882",
+          "name": "Orange AI",
+          "screen_name": "oran_ge",
+          "description": "聊硅基 AI，看有机 Orange。",
+          "followers_count": 139804,
+          "friends_count": 768,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 13,
+          "favorite_count": 51,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 13,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1985065787691016222",
+      "text": "RT @dontbesilent12: 绝大多数 空有流量不赚钱的内容，都是在干一件事情，叫做：告知\n\n当你做“告知”类的内容多到一定程度，你就会变成工具人账号，就没有人愿意给你付钱\n\n很多人天天分享闲鱼赚钱信息差，以为自己在聊赚钱，实际上你在聊的是如何让自己赚不到钱\n\n怎么解…",
+      "created_at": "Sun Nov 02 19:25:39 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1984996333640675698",
+        "text": "绝大多数 空有流量不赚钱的内容，都是在干一件事情，叫做：告知\n\n当你做“告知”类的内容多到一定程度，你就会变成工具人账号，就没有人愿意给你付钱\n\n很多人天天分享闲鱼赚钱信息差，以为自己在聊赚钱，实际上你在聊的是如何让自己赚不到钱\n\n怎么解决这个问题，我拿我最近的小红书爆款当个例子\n\n这个选题是我和小红书的工作人员打了一个小时电话，我给大家当做一个传话筒。这种内容是最容易沦为“告知”内容的\n\n但是我在小红书搞了65万播放，相当于抖音650万播放\n\n这里用到两个方法\n\n第一，我在我的封面和我的标题，和我短视频的第一句话里面，三次强调这是和官方人员的通话，哪怕我要当工具人，我也是最稀缺的工具人\n\n第二，我在每一次做信息传递的时候，都加上我对这件事情的理解，这是打着告知的幌子做认知输出，这和纯信息传递有本质区别\n\n还有第三个技巧，是我在这个视频里没用，但是我在其他短视频里经常用到的，叫做框架替换\n\n我会举出5~10个反例，是你之前那套思维模型无法解释的，然后提出我的思维模型，这套模型不仅能解决旧问题，还能解决新问题\n\n一旦给观众的脑子里面植入了一个新的思维框架，基本上 3 到 6 个月之内他忘不掉\n\n认知层 x 框架替换 = 植入\n\n能做到这一层，基本上就没什么同行了\n\n如果基于认知层再往下挖一层还可以挖到这个人的本体层，就是我今天讲的不是你这个思维方式不容易赚钱，而是为什么你是一个不能赚钱的人\n\n往这个思路讲很容易变成PUA，但是如果能避免PUA的话术，同时在本体层完成对观众的身份重建\n\n接下来卖货就是一马平川，卖什么都一样\n\n“卖什么都一样”这句话很反常识，也很难让人相信\n\n但事情总是因为看见，所以相信\n\n不相信是没有看见更大的世界",
+        "created_at": "Sun Nov 02 14:49:40 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1984996324157403137",
+            "url": "https://pbs.twimg.com/media/G4wfo83bsAEorZC.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1596695231717871616",
+          "name": "dontbesilent",
+          "screen_name": "dontbesilent12",
+          "description": "🔍 商业哲学爱好者 🫆 生活合伙人 @XiaoNianTalk 📱 全网同名：dontbesilent 聊赚钱",
+          "followers_count": 52601,
+          "friends_count": 869,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 28,
+          "favorite_count": 166,
+          "reply_count": 2,
+          "quote_count": 4
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 28,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1985081130530312528",
+      "text": "RT @Jason_qeb: @indie_maker_fox 这种都会被钓鱼执法掉，别忘我怎么知道的，流程是这样。\n1.发现市场上有收费api 接口，并形成一定市场规模。\n2.购买这个接口，然后传一个特殊标记的参数用于搜索。\n3.服务器日志中找到这个搜索记录对应的账号toke…",
+      "created_at": "Sun Nov 02 20:26:37 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1984844334878114171",
+        "text": "这种都会被钓鱼执法掉，别忘我怎么知道的，流程是这样。\n1.发现市场上有收费api 接口，并形成一定市场规模。\n2.购买这个接口，然后传一个特殊标记的参数用于搜索。\n3.服务器日志中找到这个搜索记录对应的账号token 认证信息。\n4.定位到账号。多次尝试，找到所有的账号，并持续监控这个账号的最大访问频率，保留证据，按最大访问量计算历史时间段造成的金额损失。\n5.交给法务部门，GG",
+        "created_at": "Sun Nov 02 04:45:40 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1843926395224784896",
+          "name": "Steven Qi",
+          "screen_name": "Jason_qeb",
+          "description": "10年技术开发 | 架构师 | AI获利者 | ToB创业者 | 独立开发者 | 技术布道者\n2023年起扎根AI ToB创业：为企业打造自动化解决方案，踩坑无数，也赚到真金。内部AI获利者，现独立开发AI产品，从0到1探索中。\n实践者&分享者：技术洞见+创业心得+避坑指南，助力AI东风。人生无界，探索不止！",
+          "followers_count": 99,
+          "friends_count": 88,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5,
+          "favorite_count": 35,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

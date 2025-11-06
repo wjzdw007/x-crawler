@@ -1,0 +1,475 @@
+# LLM Prompt 保存记录
+生成时间: 2025-11-06 01:37:55
+总结类型: user_daily
+用户: @elonmusk
+推文数量: 10
+数据哈希: 03ce0620
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+分析以下推文数据，看看今天马斯克都说了啥，有什么比较特别值得关注的点？
+用户名: @elonmusk
+显示名: Elon Musk
+关注者: 228739409
+
+## 推文数据（JSON格式）
+```json
+[
+  {
+    "id": "1985933424558031224",
+    "text": "RT @Tesla: 😀 https://t.co/0bH2N3T0AU",
+    "created_at": "Wed Nov 05 04:53:19 +0000 2025",
+    "lang": "qme",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1985834969605029891",
+        "url": "https://pbs.twimg.com/media/G48aYinbQAMHR7s.jpg"
+      }
+    ],
+    "retweet": {
+      "id": "1985835060013219963",
+      "text": "😀 https://t.co/0bH2N3T0AU",
+      "created_at": "Tue Nov 04 22:22:27 +0000 2025",
+      "lang": "qme",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1985834969605029891",
+          "url": "https://pbs.twimg.com/media/G48aYinbQAMHR7s.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "13298072",
+        "name": "Tesla",
+        "screen_name": "Tesla",
+        "description": "Electric vehicles, giant batteries & solar, AI & robotics / https://t.co/WbcKtqUxSs",
+        "followers_count": 24563572,
+        "friends_count": 77,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2256,
+        "favorite_count": 15592,
+        "reply_count": 1146,
+        "quote_count": 200
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2256,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1985934999028437392",
+    "text": "RT @tesla_na: Cybear at Tesla Engineering HQ in Palo Alto https://t.co/oXVCzxO2RU",
+    "created_at": "Wed Nov 05 04:59:35 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1985900508943695876",
+        "url": "https://pbs.twimg.com/media/G49V_brbQAQDTlv.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1985900509522509827",
+        "url": "https://pbs.twimg.com/media/G49V_d1bQAMTvVo.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1985900596348796930",
+        "url": "https://pbs.twimg.com/media/G49WEhSbQAIh4Pq.jpg"
+      }
+    ],
+    "retweet": {
+      "id": "1985900624605823325",
+      "text": "Cybear at Tesla Engineering HQ in Palo Alto",
+      "created_at": "Wed Nov 05 02:42:59 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1985900508943695876",
+          "url": "https://pbs.twimg.com/media/G49V_brbQAQDTlv.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1985900509522509827",
+          "url": "https://pbs.twimg.com/media/G49V_d1bQAMTvVo.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1985900596348796930",
+          "url": "https://pbs.twimg.com/media/G49WEhSbQAIh4Pq.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1679769205938311169",
+        "name": "Tesla North America",
+        "screen_name": "tesla_na",
+        "description": "Accelerating the world’s transition to sustainable energy",
+        "followers_count": 90456,
+        "friends_count": 21,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1982,
+        "favorite_count": 11784,
+        "reply_count": 853,
+        "quote_count": 136
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1982,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1985943290181796155",
+    "text": "RT @XFreeze: SpaceX Launches More Rockets Than the Rest of Earth Combined\n\nIn 2025 (to date):\nSpaceX launched: 144 (139 Falcon 9 + 5 Starsh…",
+    "created_at": "Wed Nov 05 05:32:32 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1985903747726496021",
+      "text": "SpaceX Launches More Rockets Than the Rest of Earth Combined\n\nIn 2025 (to date):\nSpaceX launched: 144 (139 Falcon 9 + 5 Starship)\nRest of the world combined: 114 launches https://t.co/OGieUxLgIs",
+      "created_at": "Wed Nov 05 02:55:24 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1985885219153686528",
+          "url": "https://pbs.twimg.com/media/G49IFcxasAAiODx.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1818311005698678784",
+        "name": "X Freeze",
+        "screen_name": "XFreeze",
+        "description": "Tech updates, strategy, and bold takes. I am the coolest villain, don't forget",
+        "followers_count": 63630,
+        "friends_count": 1282,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1566,
+        "favorite_count": 7022,
+        "reply_count": 914,
+        "quote_count": 77
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1566,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986102027760607448",
+    "text": "RT @xAIMemphis: Today on site we have over 2000 workers building the world’s most powerful computer. Thank you to the amazing, hard working…",
+    "created_at": "Wed Nov 05 16:03:18 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986080532208189617",
+      "text": "Today on site we have over 2000 workers building the world’s most powerful computer. Thank you to the amazing, hard working men and women of Memphis for all you do! https://t.co/U5707uVFW3",
+      "created_at": "Wed Nov 05 14:37:53 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986080514134994944",
+          "url": "https://pbs.twimg.com/media/G4_5tHRXcAAOF4A.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1937236128010240001",
+        "name": "xAI Memphis",
+        "screen_name": "xAIMemphis",
+        "description": "",
+        "followers_count": 12365,
+        "friends_count": 49,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1173,
+        "favorite_count": 7327,
+        "reply_count": 492,
+        "quote_count": 57
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1173,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986103240187064654",
+    "text": "Western Civilization is doomed, unless the core weakness of suicidal empathy is recognized and actions are taken that are hard, but necessary for survival",
+    "created_at": "Wed Nov 05 16:08:07 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1986073601770992037",
+      "text": "A civilization is built on a set of internalized values.  Numerous civilizations have developed radically different visions of how to organize societies, and these have competed in process akin to Darwinian selection in establishing which civilizational ethos permits for maximal flourishing.  American exceptionalism is one such system and it has yielded the greatest society that the world has ever known.  Suicidal empathy is going to destroy it because Western tolerance is its fatal Achilles tendon. Remember my words.",
+      "created_at": "Wed Nov 05 14:10:20 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "116579971",
+        "name": "Gad Saad",
+        "screen_name": "GadSaad",
+        "description": "Professor, Evolutionary Behavioral Scientist, Author. Opinions are mine alone. Retweets do not necessarily imply an endorsement.",
+        "followers_count": 1206647,
+        "friends_count": 441,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5683,
+        "favorite_count": 30596,
+        "reply_count": 1834,
+        "quote_count": 438
+      }
+    },
+    "stats": {
+      "retweet_count": 24869,
+      "favorite_count": 150206,
+      "reply_count": 11915,
+      "quote_count": 1463
+    }
+  },
+  {
+    "id": "1986104967229509992",
+    "text": "RT @ArthurMacwaters: @elonmusk Empathy is good. \n\nEmpathy that allows for destruction is suicidal. \n\nWe must learn to know and articulate t…",
+    "created_at": "Wed Nov 05 16:14:58 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986104782260720065",
+      "text": "@elonmusk Empathy is good. \n\nEmpathy that allows for destruction is suicidal. \n\nWe must learn to know and articulate the difference",
+      "created_at": "Wed Nov 05 16:14:14 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1317327383628705793",
+        "name": "Arthur MacWaters",
+        "screen_name": "ArthurMacwaters",
+        "description": "America maximalist 🇺🇸 | co-founder of Legion Health - the last healthcare company | prev @princeton @mckinsey @ycombinator",
+        "followers_count": 29912,
+        "friends_count": 998,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1111,
+        "favorite_count": 7480,
+        "reply_count": 528,
+        "quote_count": 46
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1111,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986105471452008610",
+    "text": "🎯",
+    "created_at": "Wed Nov 05 16:16:59 +0000 2025",
+    "lang": "art",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1986079763958579701",
+      "text": "Cultures are neither equal nor indistinguishable.  Cultural relativism (a parasitic idea) coupled with suicidal empathy eradicates this obvious reality.  It is a form of lobotomy that immobilizes people from stating that they do not wish to host people who hail from cultures that are antithetical to their foundational values.  This simple reality is destroying the West.",
+      "created_at": "Wed Nov 05 14:34:49 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "116579971",
+        "name": "Gad Saad",
+        "screen_name": "GadSaad",
+        "description": "Professor, Evolutionary Behavioral Scientist, Author. Opinions are mine alone. Retweets do not necessarily imply an endorsement.",
+        "followers_count": 1206647,
+        "friends_count": 441,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5212,
+        "favorite_count": 28558,
+        "reply_count": 1284,
+        "quote_count": 315
+      }
+    },
+    "stats": {
+      "retweet_count": 11507,
+      "favorite_count": 61687,
+      "reply_count": 7120,
+      "quote_count": 144
+    }
+  },
+  {
+    "id": "1986106192603791480",
+    "text": "And there is a clear path to a doubling of performance on all metrics for AI6 within 10 to 12 months of AI5 shipping",
+    "created_at": "Wed Nov 05 16:19:51 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1986081837911863799",
+      "text": "Elon Musk: At Tesla, we basically had two different chip programs: one Dojo and one. Dojo on the training side, and then what we call AI4, it's just our inference chip\n\nThe AI4 is what's currently shipping in all vehicles, and we're finalizing the design of AI5, which will be an immense jump from AI4. By some metrics, the improvement in AI5 will be 40 times better than AI4. So not 40%, 40 times\n\nThis is because we work so closely at a very fine-grained level on the AI software and the AI hardware. So we know exactly where the limiting factors are. And so effectively the AI hardware and software teams are co-designing the chip\n\nCompared to the worst limitation on AI4, which is running the SoftMax operation, we currently have to run SoftMax in around 40 steps in emulation mode, whereas that'll just be done in a few steps natively in AI5\n\nAI5 will also be able to easily handle mixed precision models, so you don't have it, it'll dynamically handle mixed precision. There's a bunch of sort of technical stuff that AI5 will do a lot better\n\nIn terms of nominal raw compute, it's eight times more compute, about nine times more memory, and roughly five times more memory bandwidth\n\nBut because we're addressing some core limitations in AI4, you multiply that 8x compute improvement by another 5x improvement because of optimization at a very fine-grained silicon level of things that are currently suboptimal in AI4, that's where you get the 40x improvement",
+      "created_at": "Wed Nov 05 14:43:04 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1986078994404409344",
+          "url": "https://video.twimg.com/amplify_video/1986078994404409344/vid/avc1/2560x1440/TjFHzP8LS7z4A-z5.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1818311005698678784",
+        "name": "X Freeze",
+        "screen_name": "XFreeze",
+        "description": "Tech updates, strategy, and bold takes. I am the coolest villain, don't forget",
+        "followers_count": 63630,
+        "friends_count": 1282,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 778,
+        "favorite_count": 4814,
+        "reply_count": 432,
+        "quote_count": 100
+      }
+    },
+    "stats": {
+      "retweet_count": 11128,
+      "favorite_count": 49493,
+      "reply_count": 8286,
+      "quote_count": 237
+    }
+  },
+  {
+    "id": "1986150705317749007",
+    "text": "Wow\n https://t.co/9HQ4HWyCB0",
+    "created_at": "Wed Nov 05 19:16:43 +0000 2025",
+    "lang": "und",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 5203,
+      "favorite_count": 24334,
+      "reply_count": 5422,
+      "quote_count": 147
+    }
+  },
+  {
+    "id": "1986207120891781636",
+    "text": "RT @SawyerMerritt: BREAKING: SpaceX has announced that @Starlink now has over 8 million customers, up from 7M in August and 6M in June 2025…",
+    "created_at": "Wed Nov 05 23:00:54 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986170355535286529",
+      "text": "BREAKING: SpaceX has announced that @Starlink now has over 8 million customers, up from 7M in August and 6M in June 2025.\n\nStarlink added a record 14,250 new customers on average per day since they hit 7M, beating their previous record of 12,200. That growth rate is 17% higher than it was just 2 months ago.",
+      "created_at": "Wed Nov 05 20:34:48 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986169856018837504",
+          "url": "https://pbs.twimg.com/media/G5BK9fuXcAAXZ5Y.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "243013409",
+        "name": "Sawyer Merritt",
+        "screen_name": "SawyerMerritt",
+        "description": "EV/space/tech news. Bringing you the latest news in a single, easy-to-read feed. $TSLA investor & Model Y owner.",
+        "followers_count": 987677,
+        "friends_count": 410,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 835,
+        "favorite_count": 7065,
+        "reply_count": 511,
+        "quote_count": 67
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 835,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  }
+]
+```
+
+## 分析要求
+请用中文生成分析报告
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @elonmusk的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

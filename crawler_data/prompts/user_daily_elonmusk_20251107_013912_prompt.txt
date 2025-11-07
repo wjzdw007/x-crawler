@@ -1,0 +1,721 @@
+# LLM Prompt 保存记录
+生成时间: 2025-11-07 01:39:12
+总结类型: user_daily
+用户: @elonmusk
+推文数量: 14
+数据哈希: 6c0a1095
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+分析以下推文数据，看看今天马斯克都说了啥，有什么比较特别值得关注的点？
+用户名: @elonmusk
+显示名: Elon Musk
+关注者: 228687204
+
+## 推文数据（JSON格式）
+```json
+[
+  {
+    "id": "1986230712836759872",
+    "text": "RT @KalenaKBrown: Living in a rural area, Starlink is an absolute game changer.\n\n1. Don't have to worry about not having LTE connectivity -…",
+    "created_at": "Thu Nov 06 00:34:38 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986211134719074515",
+      "text": "Living in a rural area, Starlink is an absolute game changer.\n\n1. Don't have to worry about not having LTE connectivity - can still make calls, send texts, etc\n\n2. Other internet services are connected to the power lines. If the power goes out, unlike other providers, you can simply plug your Starlink modem into your generator and you're back online\n\n3. More affordable, for better service \n\n4. No data cap",
+      "created_at": "Wed Nov 05 23:16:51 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1986170355535286529",
+        "text": "BREAKING: SpaceX has announced that @Starlink now has over 8 million customers, up from 7M in August and 6M in June 2025.\n\nStarlink added a record 14,250 new customers on average per day since they hit 7M, beating their previous record of 12,200. That growth rate is 17% higher than it was just 2 months ago.",
+        "created_at": "Wed Nov 05 20:34:48 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1986169856018837504",
+            "url": "https://pbs.twimg.com/media/G5BK9fuXcAAXZ5Y.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EV/space/tech news. Bringing you the latest news in a single, easy-to-read feed. $TSLA investor & Model Y owner.",
+          "followers_count": 987677,
+          "friends_count": 410,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 835,
+          "favorite_count": 7065,
+          "reply_count": 511,
+          "quote_count": 67
+        }
+      },
+      "user": {
+        "id": "1710746772438708224",
+        "name": "Kalena Brown",
+        "screen_name": "KalenaKBrown",
+        "description": "Tesla AI Branch Queen",
+        "followers_count": 5966,
+        "friends_count": 259,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 231,
+        "favorite_count": 1876,
+        "reply_count": 163,
+        "quote_count": 18
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 231,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986231663798722773",
+    "text": "RT @MarioNawfal: 🚨 WHEN FEELINGS KILL COMMON SENSE\n\nBeing nice isn’t bad... until it breaks your country.\n\nSome people care so much about e…",
+    "created_at": "Thu Nov 06 00:38:25 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986181729166762374",
+      "text": "🚨 WHEN FEELINGS KILL COMMON SENSE\n\nBeing nice isn’t bad... until it breaks your country.\n\nSome people care so much about everyone’s feelings, they forget about facts, safety, and their own neighbors. \n\nThis is called suicidal empathy. Basically, being so compassionate it turns self-destructive. Sounds wild, but it’s real.\n\nGad Saad says we’re overloaded with emotion, treating every stranger like family, even criminals or enemies, because it feels good. \n\nBut feelings aren’t policies, and this kind of kindness is backfiring hard.\n\nTake U.S. borders: in 2023, a record 2.5 million illegal crossings swamped the system. \n\nIt’s not just overcrowding. Over 15,000 non-citizens were arrested for serious crimes in one year. \n\nFentanyl smuggling? Also up. And guess what? Those costs hit taxpayers: $150 billion a year, enough to help veterans or disaster victims. \n\nBut sure, let's keep pretending open borders are just \"nice.\"\n\nThen there's the “defund the police” mess. Meant to help communities, it led to fewer arrests and way more murders. A 70% jump in Minneapolis alone. \n\nThe people hurt most? The same communities it claimed to protect. \n\nBonus chaos: in the UK, people got arrested for tweets. That’s where feelings-over-facts leads.\n\nDEI programs? Started with good intentions. Now they’re breaking schools and jobs. \n\nA Forbes study said they mostly help rich elites, not everyday people. Harvard’s diversity policies even lowered team performance by 12%. \n\nIn companies, DEI training actually made bias worse. All because we’re scared to say, “Let’s hire the best person.”\n\nIt gets worse. All this empathy-for-everyone has made people stop trusting each other... down 20% since 2000. \n\nThis isn’t about being heartless. It’s about using your brain with your heart. \n\nIt's called “reasoned empathy,” where compassion meets common sense. \n\nHelp people, yes... but stop lighting your own house on fire to keep others warm.\n\nSource: @GadSaad, @elonmusk, Gonsalves, G, Kiskin K, Heritage, RAND, NYP, @Grok Imagine",
+      "created_at": "Wed Nov 05 21:20:00 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986167870661722112",
+          "url": "https://pbs.twimg.com/media/G5BJJ7sWAAALeWv.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1986105471452008610",
+        "text": "🎯",
+        "created_at": "Wed Nov 05 16:16:59 +0000 2025",
+        "lang": "art",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "44196397",
+          "name": "Elon Musk",
+          "screen_name": "elonmusk",
+          "description": "",
+          "followers_count": 228739409,
+          "friends_count": 1223,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 11507,
+          "favorite_count": 61687,
+          "reply_count": 7120,
+          "quote_count": 144
+        }
+      },
+      "user": {
+        "id": "1319287761048723458",
+        "name": "Mario Nawfal",
+        "screen_name": "MarioNawfal",
+        "description": "Largest Show on X | Investor 700+ Startups | Founder @ibcgroupio , https://t.co/sw7OQ5KgAW",
+        "followers_count": 2674679,
+        "friends_count": 49889,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 942,
+        "favorite_count": 4036,
+        "reply_count": 349,
+        "quote_count": 46
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 942,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986233687269421219",
+    "text": "RT @XFreeze: I've been through my last 6 months of Grok chat history, I couldn’t find a single day where I didn’t use it..... \n\nIt's incred…",
+    "created_at": "Thu Nov 06 00:46:28 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986218610512306629",
+      "text": "I've been through my last 6 months of Grok chat history, I couldn’t find a single day where I didn’t use it..... \n\nIt's incredibly helpful in everything..... What about you?? https://t.co/2jEOAZ9uQ8",
+      "created_at": "Wed Nov 05 23:46:33 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986218607047565312",
+          "url": "https://pbs.twimg.com/media/G5B3TLdXYAAv5mA.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1818311005698678784",
+        "name": "X Freeze",
+        "screen_name": "XFreeze",
+        "description": "Tech updates, strategy, and bold takes. I am the coolest villain, don't forget",
+        "followers_count": 63630,
+        "friends_count": 1282,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 143,
+        "favorite_count": 1117,
+        "reply_count": 333,
+        "quote_count": 18
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 143,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986233988479172635",
+    "text": "RT @cb_doge: This picture was taken on Mars yesterday. https://t.co/auyKZUlikd",
+    "created_at": "Thu Nov 06 00:47:39 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1986105199321096193",
+        "url": "https://pbs.twimg.com/media/G5AQJ-wXIAEn66N.jpg"
+      }
+    ],
+    "retweet": {
+      "id": "1986105203423076653",
+      "text": "This picture was taken on Mars yesterday. https://t.co/auyKZUlikd",
+      "created_at": "Wed Nov 05 16:15:55 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986105199321096193",
+          "url": "https://pbs.twimg.com/media/G5AQJ-wXIAEn66N.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1389913567671975937",
+        "name": "DogeDesigner",
+        "screen_name": "cb_doge",
+        "description": "",
+        "followers_count": 1764102,
+        "friends_count": 997,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 677,
+        "favorite_count": 6055,
+        "reply_count": 1341,
+        "quote_count": 97
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 676,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986332034407776402",
+    "text": "RT @LimitingThe: It looks like xAI is about 6 months ahead in terms of building the most powerful AI data center. \n\nAs the rest of the thre…",
+    "created_at": "Thu Nov 06 07:17:15 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986055208737050684",
+      "text": "It looks like xAI is about 6 months ahead in terms of building the most powerful AI data center. \n\nAs the rest of the thread shows, there's a lot of competition though, and it will be interesting to see if their lead approves to be durable over time.\n\nIt's great to finally have some well researched tracking information:\n\n\"We mapped their construction using satellite imagery, permits & public sources — releasing everything for free, including commissioned satellite images.\"",
+      "created_at": "Wed Nov 05 12:57:15 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1985788200997306781",
+        "text": "Several data centers will soon demand 1 GW of power, starting early next year:\n\n- Anthropic–Amazon New Carlisle (January)\n- xAI Colossus 2 (February)\n- Microsoft Fayetteville (March, borderline 1GW)\n- Meta Prometheus (May)\n- OpenAI Stargate Abilene (July) https://t.co/Oaeww5Iysb",
+        "created_at": "Tue Nov 04 19:16:15 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1985788197293735936",
+            "url": "https://pbs.twimg.com/media/G47v2CLbQAAozz-.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1529761561170124800",
+          "name": "Epoch AI",
+          "screen_name": "EpochAIResearch",
+          "description": "Investigating the trajectory of AI for the benefit of society.",
+          "followers_count": 30259,
+          "friends_count": 0,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 65,
+          "favorite_count": 325,
+          "reply_count": 14,
+          "quote_count": 10
+        }
+      },
+      "user": {
+        "id": "1215825810214383617",
+        "name": "The Limiting Factor",
+        "screen_name": "LimitingThe",
+        "description": "A mustache on a mission:  What's next in battery and manufacturing technology? \n\nhttps://t.co/hN3JngjtC6",
+        "followers_count": 55804,
+        "friends_count": 1138,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1911,
+        "favorite_count": 4746,
+        "reply_count": 1376,
+        "quote_count": 17
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1911,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986332486738325735",
+    "text": "Try https://t.co/op5s4ZiSwh",
+    "created_at": "Thu Nov 06 07:19:03 +0000 2025",
+    "lang": "und",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1985998018399670311",
+      "text": "ELON: GROKIPEDIA CALLS BULL ON “TECHNICALLY TRUE” FACTS\n\n“We used the latest version of Grok to create Grokipedia, which I think is just more neutral and more accurate than Wikipedia.\n\nWe trained Grok on a lot of critical thinking. We took that version of Grok and said:\n\n‘Cycle through the million most popular articles in Wikipedia and add, modify, and delete.\nCorrect the Wikipedia articles to fix mistakes, but also add a lot more context.’\n\nThis is version 0.1. By the time we get to version 1.0, it’ll be 10 times better.\n\nIt’s not just correcting errors, but creating a more accurate, realistic, and fleshed-out description of people and events.”\n\nSource: @theallinpod, @elonmusk, 31 October 2025",
+      "created_at": "Wed Nov 05 09:10:00 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1985990058344689664",
+          "url": "https://video.twimg.com/amplify_video/1985990058344689664/vid/avc1/1920x1080/mmb1a1qIrA6iDYzh.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1319287761048723458",
+        "name": "Mario Nawfal",
+        "screen_name": "MarioNawfal",
+        "description": "Largest Show on X | Investor 700+ Startups | Founder @ibcgroupio , https://t.co/sw7OQ5KgAW",
+        "followers_count": 2674523,
+        "friends_count": 49903,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1283,
+        "favorite_count": 7667,
+        "reply_count": 499,
+        "quote_count": 124
+      }
+    },
+    "stats": {
+      "retweet_count": 12003,
+      "favorite_count": 68456,
+      "reply_count": 8830,
+      "quote_count": 382
+    }
+  },
+  {
+    "id": "1986333833017630909",
+    "text": "RT @MarioNawfal: 🚨🇺🇸 XAI: TODAY, ON SITE, WE HAVE OVER 2,000 WORKERS BUILDING THE WORLD’S MOST POWERFUL COMPUTER\n\n“Today, on site, we have…",
+    "created_at": "Thu Nov 06 07:24:24 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986224703128646125",
+      "text": "🚨🇺🇸 XAI: TODAY, ON SITE, WE HAVE OVER 2,000 WORKERS BUILDING THE WORLD’S MOST POWERFUL COMPUTER\n\n“Today, on site, we have over 2,000 workers building the world’s most powerful computer.\n \nThank you to the amazing, hard-working men and women of Memphis for all you do!”\n\nSource: xAI",
+      "created_at": "Thu Nov 06 00:10:46 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986224653023469568",
+          "url": "https://pbs.twimg.com/media/G5B8zGeWYAAUV-e.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1985785525429850463",
+        "text": "Slightly different versions of the Tesla AI5 chip will be made at TSMC and Samsung simply because they translate designs to physical form differently, but the goal is that our AI software works identically.\n\nWe will have samples and maybe a small number of units in 2026, but high volume production is only possible in 2027. \n\nAI6 will use the same fabs, but achieve roughly 2X performance. Aiming for a fast follow to AI5, so hopefully mid 2028 for volume production of AI6.\n\nAI7 will need different fabs, as it is more adventurous.",
+        "created_at": "Tue Nov 04 19:05:38 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "44196397",
+          "name": "Elon Musk",
+          "screen_name": "elonmusk",
+          "description": "",
+          "followers_count": 228687204,
+          "friends_count": 1223,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 543,
+          "favorite_count": 5002,
+          "reply_count": 348,
+          "quote_count": 150
+        }
+      },
+      "user": {
+        "id": "1319287761048723458",
+        "name": "Mario Nawfal",
+        "screen_name": "MarioNawfal",
+        "description": "Largest Show on X | Investor 700+ Startups | Founder @ibcgroupio , https://t.co/sw7OQ5KgAW",
+        "followers_count": 2674523,
+        "friends_count": 49903,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2921,
+        "favorite_count": 8275,
+        "reply_count": 2030,
+        "quote_count": 45
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2921,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986333945542431036",
+    "text": "RT @EvaFoxU: Elon Musk explains why government efficiency matters:\n\n“I mean, North Korea, they're starving. South Korea, it's like amazing.…",
+    "created_at": "Thu Nov 06 07:24:51 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1985999573442056642",
+      "text": "Elon Musk explains why government efficiency matters:\n\n“I mean, North Korea, they're starving. South Korea, it's like amazing. And so in North Korea, you've got 100% government. In South Korea, you've got probably, I don't know, 40% government. It's not zero. And yet you've got a standard of living that is probably 10 times higher in South Korea. At least. \n\nAnd then East and West Germany, in West Germany, you had, just thinking in terms of cars, I mean, you had BMW, Porsche, Audi, Mercedes. And East Germany, which is a random line on a map, the only car you could get was a Trabant, which is basically a lawnmower with a shell on it. And it was extremely unsafe. There was a 20-year wait. So you put your kid on the list as soon as they're conceived. Even then, only, I think, a quarter of people maybe got this lousy car. \n\nSo that's just an interesting example of basically the same people, different operating system.”",
+      "created_at": "Wed Nov 05 09:16:11 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1985999468014010368",
+          "url": "https://video.twimg.com/amplify_video/1985999468014010368/vid/avc1/360x640/ssSXXj8EAXIbCsca.mp4?tag=21",
+          "bitrate": 950000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "959471389282578432",
+        "name": "Eva Fo𝕏 🦊 Claudius Nero's Legion",
+        "screen_name": "EvaFoxU",
+        "description": "Blogger covering SpaceX, Tesla, environment & space exploration 🖖🏼 ◉ My blog @onlyVerumNews ◉ Occasionally post memes",
+        "followers_count": 329220,
+        "friends_count": 1275,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4055,
+        "favorite_count": 13150,
+        "reply_count": 2376,
+        "quote_count": 181
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 4055,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986474620971851939",
+    "text": "RT @SawyerMerritt: NEWS: British Airways has signed a deal with @SpaceX to make Starlink internet available at no cost to every passenger s…",
+    "created_at": "Thu Nov 06 16:43:51 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986437130986340356",
+      "text": "NEWS: British Airways has signed a deal with @SpaceX to make Starlink internet available at no cost to every passenger starting in 2026.\n\nThe airline has about 300 aircraft in its fleet.\n\n“With our new Wi-Fi powered by Starlink, our customers will be able to enjoy lightning-fast, low-lag internet from the moment they board to the moment they land - even over oceans and remote regions. It’s Wi-Fi that feels like home, even at 38,000 feet.”",
+      "created_at": "Thu Nov 06 14:14:52 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986436356738781184",
+          "url": "https://pbs.twimg.com/media/G5E9V4RWEAAugu4.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "243013409",
+        "name": "Sawyer Merritt",
+        "screen_name": "SawyerMerritt",
+        "description": "EV/space/tech news. Bringing you the latest news in a single, easy-to-read feed. $TSLA investor & Model Y owner.",
+        "followers_count": 988529,
+        "friends_count": 410,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2043,
+        "favorite_count": 14393,
+        "reply_count": 1723,
+        "quote_count": 128
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2043,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986540720816288197",
+    "text": "Tesla Annual meeting starting now\n https://t.co/j1KHf3k6ch",
+    "created_at": "Thu Nov 06 21:06:30 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 5733,
+      "favorite_count": 26236,
+      "reply_count": 5077,
+      "quote_count": 293
+    }
+  },
+  {
+    "id": "1986544343919043012",
+    "text": "https://t.co/RB5Yqwc6nO",
+    "created_at": "Thu Nov 06 21:20:54 +0000 2025",
+    "lang": "zxx",
+    "media": [
+      {
+        "type": "video",
+        "id": "1986541819027406849",
+        "url": "https://video.twimg.com/amplify_video/1986541819027406849/vid/avc1/802x802/FxodJmDl_PygUfPF.mp4?tag=21",
+        "bitrate": 8768000
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 5830,
+      "favorite_count": 44797,
+      "reply_count": 5219,
+      "quote_count": 313
+    }
+  },
+  {
+    "id": "1986548022097158665",
+    "text": "RT @YunTaTsai1: I cannot think of any company hold the shareholder meeting at the factory.\n\nFor most companies, they bring people to the de…",
+    "created_at": "Thu Nov 06 21:35:31 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986517497206702571",
+      "text": "I cannot think of any company hold the shareholder meeting at the factory.\n\nFor most companies, they bring people to the design house offices while the factories fade into the background. \n\nBut for Tesla, factories are the heart of our stories. https://t.co/2dmTqkWBDT",
+      "created_at": "Thu Nov 06 19:34:13 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986517489975762947",
+          "url": "https://pbs.twimg.com/media/G5GHIdIbIAMv5B7.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1577705091737432070",
+        "name": "Yun-Ta Tsai",
+        "screen_name": "YunTaTsai1",
+        "description": "Sr. Staff Engineer  @Tesla_AI",
+        "followers_count": 49724,
+        "friends_count": 214,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 717,
+        "favorite_count": 6407,
+        "reply_count": 608,
+        "quote_count": 22
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 717,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986549450517717327",
+    "text": "RT @iam_smx: Two big tech bros casually chatting about the future. Only on X https://t.co/MTKsQMzOky",
+    "created_at": "Thu Nov 06 21:41:11 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1986341734280749056",
+        "url": "https://pbs.twimg.com/media/G5DnSIJWYAAHBhF.jpg"
+      }
+    ],
+    "retweet": {
+      "id": "1986341741893497223",
+      "text": "Two big tech bros casually chatting about the future. Only on X https://t.co/MTKsQMzOky",
+      "created_at": "Thu Nov 06 07:55:50 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986341734280749056",
+          "url": "https://pbs.twimg.com/media/G5DnSIJWYAAHBhF.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1614879930885574656",
+        "name": "SMX 🇺🇸",
+        "screen_name": "iam_smx",
+        "description": "Innovation, Technology, Rockets & Tesla ignite my passion. Sharing updates & info 24/7. Breaking World News! Motivation, Fun & Amazing AI Videos Guaranteed.",
+        "followers_count": 141682,
+        "friends_count": 600,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 610,
+        "favorite_count": 5002,
+        "reply_count": 632,
+        "quote_count": 14
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 610,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986549512350146664",
+    "text": "RT @elonmusk: @xdNiBoR If civilization drops below the tech level needed for interplanetary spaceflight before making life multiplanetary,…",
+    "created_at": "Thu Nov 06 21:41:26 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986549257277755874",
+      "text": "@xdNiBoR If civilization drops below the tech level needed for interplanetary spaceflight before making life multiplanetary, that could be the end of consciousness",
+      "created_at": "Thu Nov 06 21:40:25 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 228687204,
+        "friends_count": 1223,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 874,
+        "favorite_count": 4730,
+        "reply_count": 1632,
+        "quote_count": 93
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 874,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  }
+]
+```
+
+## 分析要求
+请用中文生成分析报告
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @elonmusk的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

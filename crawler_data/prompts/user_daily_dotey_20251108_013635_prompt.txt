@@ -1,0 +1,998 @@
+# LLM Prompt 保存记录
+生成时间: 2025-11-08 01:36:35
+总结类型: user_daily
+用户: @dotey
+推文数量: 20
+数据哈希: 4d634696
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+dotey是一个技术专家，经常会分析一些ai的话题，帮我看看有什么新的工具/想法/方法论/实践经验等值得关注学习。
+
+## 推文数据（JSON格式）
+```json
+[
+  {
+    "id": "1986627799352782948",
+    "text": "这也是为什么 Chrome、VSCode、Windows 这些软件的早期测试版本叫 canary，意思就是矿井的金丝雀\n&gt; 矿井中的金丝雀，指危险的先兆。 金丝雀对有害气体的敏感度超过人体，所以金丝雀就成了矿工们的警报器，矿工下井带着金丝雀，如果金丝雀暴毙，就说明井下有危险气体，需要立即逃生。",
+    "created_at": "Fri Nov 07 02:52:31 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1986625048061616456",
+      "text": "@dotey 歪个楼——矿井里的金丝雀，好新鲜的比喻",
+      "created_at": "Fri Nov 07 02:41:35 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3901487855",
+        "name": "sunxiayi",
+        "screen_name": "Sherry83044277",
+        "description": "Ex-Meta. Solo-founder. Product + Engineering.\n📰 𝑵𝒆𝒘𝒔𝒍𝒆𝒕𝒕𝒆𝒓 ➨ https://t.co/yqYCD3oTBu \n📱 𝑨𝒑𝒑𝒔 ➨ Sleep Early",
+        "followers_count": 11,
+        "friends_count": 105,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 3,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 9,
+      "favorite_count": 189,
+      "reply_count": 6,
+      "quote_count": 2
+    }
+  },
+  {
+    "id": "1986638850408534195",
+    "text": "最近 X 上关于写作的话题比较火，正好看到一篇《写作建议》，作者收集了大量关于写作的经典建议，还分门别类整理到了一起。\n\n所有这些五花八门的技巧，背后其实贯穿着几条非常清晰的底层逻辑。如果你也想让自己的文字更抓人、更清晰，也许看完能让你有“原来如此”的感觉。\n\n底层逻辑1️⃣：写作的本质，是“读者体验设计”\n\n这是所有建议中最核心的一条。\n\n很多写作者，包括以前我也这样，在写作时，想的都是“我想表达什么”。但这份笔记里的高手们点出了一个更高级的视角：写作，是关于“读者要吸收什么”。\n\nSteven Pinker 总结得最到位：作者的目标，是在最大化阅读乐趣的同时，最小化读者理解所需的脑力。\n\n别让你的读者“费劲”。\n\n你的工作不是“倾倒”信息，而是设计一条“体验路径”，让读者感觉自己是在毫不费力地“滑滑梯”，而不是满头大汗地“爬山”。\n\n一旦你接受了这个设定，剩下的所有技巧，都是在为这个“最佳体验”服务。\n\n底层逻辑2️⃣：动笔前，先排空你的“污水管”\n\n我们都有过“写作卡壳”的经历：打开空白文档，枯坐半天，一个字都憋不出来。\n\n这份笔记里提到了一个我见过最生动的比喻，来自 Julian Shapiro 的“创意水龙头”：\n\n> 把你的创造力想象成一个堵塞的水管。水管的最前端一英里，塞满的全是“污水”——也就是你脑子里那些最陈词滥调、最平庸、最不过脑子的“烂点子”。你的水管只有一个水龙头。想得到后面的“清水”，唯一的办法就是：先把这些“污水”全都放干净。\n\n为什么在写作时会卡壳？因为我们总想一上来就写出金句。我们写下第一句“污水”（比如“这是一个值得思考的问题……”），然后立刻自我批判：“天啊，这写的是什么垃圾！”——于是我们删掉，试图等待“灵感”。\n\n结果，我们永远卡在“污水”这一层。\n\n而职业写作者的秘诀是：他们坦然接受“污水”的存在。他们会在写作初期，把脑子里所有能想到的烂点子、烂句子全都写下来。不评判、不删除，只是为了“排空管道”。\n\n当你把这些平庸的想法都倒空之后，那些真正的好创意、好句子，才会“哗啦啦”地流淌出来。\n\n所以，别再等灵感了。下次卡壳时，允许自己先写个垃圾出来。这是通往好内容的必经之路。\n\n底层逻辑3️⃣：用“节奏感”黏住读者的大脑\n\n好了，现在“清水”来了，你开始写作了。如何让读者不跳过、不走神，一字一句读下去？\n\n答案是：制造“音乐”。\n\n我们的大脑天生厌恶单调。如果所有句子的长度都差不多，大脑就会进入“无人机”般的嗡嗡声模式，很快就会感到无聊并“宕机”。\n\n笔记里引用了 Gary Provost 的一段经典演示，我转述一下：\n> 这个句子有五个词。这里又是五个词。五个词的句子很好。但是一连串的五个词。读起来就很单调了。听听发生了什么。写作变得很无聊。它的声音在持续。就像一张卡住的唱片。耳朵需要一些变化。\n> \n> 现在听好。 我改变了句子的长度，我就创造了音乐。音乐。文字在歌唱。它有了宜人的节奏，一种韵律，一种和谐。我使用短句。我也使用中等长度的句子。\n>\n> 而有时候，当我很确定读者已经休息好了，我就会用一个相当长的句子来吸引他，一个充满能量、不断积蓄动力的句子，就像渐强音，就像鼓点，就像铙钹的撞击——这些声音在说：听着，这很重要。\n\n这就是写作的“节奏感”。它通过长短句的交错，不断“唤醒”读者的大脑，引导他们的注意力。\n\n除了句子长短，还有一些“读者大脑管理”的小技巧：\n\n避免“开头词”重复：Scott Alexander 提醒，如果连续两三个句子都用同一个词开头（比如“我……”“我……”“我……”），读者会立刻感到“不适”，觉得你很笨拙。\n\n控制“聚光灯”：Steven Pinker 提到，主动语态和被动语态不是语法问题，而是“焦点控制”问题。\n\n- 主动（“那个女士用西葫芦砸了一个哑剧演员”）——聚光灯打在女士身上。\n\n- 被动（“那个哑剧演员被女士用西葫芦砸了”）——聚光灯打在哑剧演员身上。\n\n你想让读者先看谁，就让谁做句子的主语。\n\n底层逻辑4️⃣：写作是“沟通”，不是“炫耀”\n\n这部分主要针对非虚构写作，但同样适用于所有人。\n\n1. 给读者“多巴胺小奖励”\n\n斯科特·亚历山大说，读者的大脑很容易累。你必须不断给他们“小奖励”来维持动力。\n\n- 微幽默 (Microhumor)：这不等于讲笑话。它是在严肃的行文中，插入一个能让读者“嘴角微不可察地上扬一下”的词或比喻。这就像给读者喂了一颗小糖果。\n\n- 清晰的结构：短段落、小标题、“首先/其次/最后”这样的“路标”（当然也有被误认为 AI 写作的嫌疑）。这能给读者“微小的成就感”（好的，我又读完了一部分”），帮他们“存档”信息。\n\n2. 多使用“比如”和“举个例子”\nSteven Pinker：一个没有例子的解释，几乎等于没有解释。\n\n我们作为作者，常常高估了读者对“术语”和“抽象概念”的理解力。因为我们自己已经把这些概念“打包”成了知识块。\n\n当你写“定量宽松”、“熵增”、“熵减”时，大部分读者已经懵了。\n\n当你写“中央银行购买私有资产”时，大家就开始懂了。\n\n当你写“这就好比央行直接下场‘买买买’，往市场里撒钱”时，所有人就都懂了。\n\n永远不要害怕解释你以为人尽皆知的术语。你多花 5 个字，比如一种开花芥菜，去解释“拟南芥”，就能把成千上万的读者留在你的文章里。\n\n写作不是魔法，而是手艺。\n\n它无关灵感爆发，而关乎对读者体验的极致共情。\n\n它要求我们放下作者的自我，去扮演一个体验设计师：思考读者的大脑如何工作，如何让他们在阅读中感到轻松、愉悦并有所收获。\n\n无论是排空污水管、制造节奏感，还是挖掘“第三层情感”，所有技巧最终都指向一件事：\n\n尊重你的读者，尊重他们的时间，以及他们那颗容易疲倦的大脑。\n\n原文：https://t.co/Orh9lPSigK\n翻译：https://t.co/6HrkLB3pY6",
+    "created_at": "Fri Nov 07 03:36:26 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1986636511400316928",
+        "url": "https://pbs.twimg.com/media/G5HzYafWUAAw5Fn.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 101,
+      "favorite_count": 426,
+      "reply_count": 15,
+      "quote_count": 9
+    }
+  },
+  {
+    "id": "1986642898138636619",
+    "text": "RT @servasyy: 一下冲到了Github第一\n在这个信息茧房的时代，这个东西确实非常好用\n\n我也试了一下\n能抓9个平台的信息，小红书，抖音，知乎，快手，贴吧等\n\n推特和Reddit的话要自己写代码\n\nReport出来的东西，最好换换模型。试下来国内模型比较容易产生幻觉…",
+    "created_at": "Fri Nov 07 03:52:31 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1986586625141579987",
+      "text": "一下冲到了Github第一\n在这个信息茧房的时代，这个东西确实非常好用\n\n我也试了一下\n能抓9个平台的信息，小红书，抖音，知乎，快手，贴吧等\n\n推特和Reddit的话要自己写代码\n\nReport出来的东西，最好换换模型。试下来国内模型比较容易产生幻觉\n\n总之，自己改一下，\n绝壁是一个超级优秀的产品，对自己学习或者内容输出各方面超级有用\n\n开源地址:\nhttps://t.co/sZDNkFKMbr",
+      "created_at": "Fri Nov 07 00:08:55 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986586378680074240",
+          "url": "https://pbs.twimg.com/media/G5HFyTjbAAA6Iem.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1986583720661557250",
+          "url": "https://pbs.twimg.com/media/G5HDXlqbIAIUg-q.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1986583720716083202",
+          "url": "https://pbs.twimg.com/media/G5HDXl3bIAI9daG.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1985966437249491034",
+        "text": "昨晚看到就部署运行了一下，太好玩了，像一群AI特工给我干活 https://t.co/QIZubVXhzt",
+        "created_at": "Wed Nov 05 07:04:30 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "1985966390348546049",
+            "url": "https://video.twimg.com/amplify_video/1985966390348546049/vid/avc1/720x1280/NeZPsb9Lfp9lX2ID.mp4?tag=14",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1925520843125481472",
+          "name": "大熊思考",
+          "screen_name": "xiongshuhong",
+          "description": "一个计算机专业的新媒体运营，9月份辞职创业，All in 自媒体 + AI。\n在短视频时代 + AI时代，「个人IP + 社区运营」是我认定和已验证的方向。\n目前已有160成员的「一块钱周末挑战」社群，全网4000粉丝。\n每天在X上分享一些收获和想法。",
+          "followers_count": 254,
+          "friends_count": 20,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 236,
+          "favorite_count": 1296,
+          "reply_count": 14,
+          "quote_count": 4
+        }
+      },
+      "user": {
+        "id": "1892802325586333699",
+        "name": "serva huang",
+        "screen_name": "servasyy",
+        "description": "古早程序员 | AI出海 | 自由职业\n机车游侠&机速购&骑享租创始人\n15年前 freelance 起步 → 连续创业者 → 亏过1个亿，逆风翻盘中\n分享创业，AI，生活，读书，健身，中医",
+        "followers_count": 6646,
+        "friends_count": 505,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 295,
+        "favorite_count": 1524,
+        "reply_count": 53,
+        "quote_count": 7
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 295,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986652141486768385",
+    "text": "RT @Yangyixxxx: 这期访谈Chris Lattner的视频还是很有趣的，我们可以看到一个富有创造力的人，在一个没能获得全面授权的大厂中，是如何一步一步塑造传奇的。…",
+    "created_at": "Fri Nov 07 04:29:15 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1986619379304571259",
+      "text": "这期访谈Chris Lattner的视频还是很有趣的，我们可以看到一个富有创造力的人，在一个没能获得全面授权的大厂中，是如何一步一步塑造传奇的。\n\n这最重要的，是Chris聊到的：他通过识别并解决现有生态的根本性缺陷，渐进式交付价值来获取支持，并始终以赋能开发者、统一割裂的技术栈为最终目标，从而在没有任何资源支持的情况下，最终持续塑造了LLVM，Swift和Mojo\n\n-----------\nSwift 的秘密起源：在巨头内部孵化“下一代”语言的艺术\n\nSwift 的故事展示了如何在一家成功的巨型企业内部，以“非官方”的方式启动一个可能颠覆其核心业务的“激情项目”，并最终推动其成为主流。\n\n1、首先，Chris识别到了核心问题：Objective-C 的“两个世界”困境\n\n>现状： Objective-C 是 Smalltalk 风格的动态对象模型与 C 语言底层性能的结合体。\n\n>痛点：\n- 开发体验分裂： 开发者需要在两种截然不同的思维模式间切换。\n- 不安全： 手动内存管理是噩梦的来源，极易出错。\n- 学习曲线陡峭： 复杂的语法和底层概念（如指针）阻碍了大量新开发者（尤其是Web开发者）进入App开发领域。\n\n>洞察： “高性能”和“高层次抽象”不必是两种独立的语言，它们可以被统一。\n\n2、渐进式推进\n\n>从“sideproject”开始\n- 在长达一年半的时间里，Swift只是Chris在“夜晚和周末”的个人项目，他“没有寻求许可，只是开始自己尝试”。\n\n>用“改进现有”来“铺垫未来”。\n当管理层质疑创造新语言的必要性，并要求他“去改进Objective-C”时，他并未直接对抗。\n相反，他领导团队为Objective-C添加了ARC（自动引用计数）、Modules、Literals等新特性。这些改进表面上是在优化现有语言，实际上是在将Objective-C的开发体验逐步拉向Swift的设计理念，为最终的迁移铺平了道路。\n\n>全面投入，完成闭环。\n在获得高层支持后，团队用最后一年时间，完成了语言的最终设计、与Xcode、调试器等工具链的深度集成，并打造了Playgrounds等降低学习门槛的工具，最终在2014年正式发布。",
+      "created_at": "Fri Nov 07 02:19:04 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1986194226237850049",
+        "text": "Chris Lattner (@clattner_llvm) is one of the most influential engineers of the past two decades. He created LLVM, Swift, contributed to TensorFlow, and created the Mojo programming language.\n\nWhat was the story about creating Swift - and why did he face resistance inside Apple when wanting to replace Objective C? What did he learn at Tesla, Google and CPU maker SiFive, that led him to working on Mojo at Modular? We cover these and many more in today's episode.\n\nWatch or listen:\n\n• YouTube: https://t.co/uoyvoD040A\n\n• Spotify: https://t.co/JonnnEnpV4\n\n• Apple: https://t.co/H9vzpWm9bS\n\nBrought to you by:\n\n•⁠ @statsig  ⁠ — ⁠ The unified platform for flags, analytics, experiments, and more. https://t.co/ZCSOIcWv31\n\n•⁠ @linear  – The system for modern product development. https://t.co/si9FpjGgvH\n\nMy favorite quote from Chris in this episode:\n\n“I believe in the power of programmers. I believe in the human potential of people that want to create things. And that’s fundamentally why I love software is that you can create anything that you can imagine.”",
+        "created_at": "Wed Nov 05 22:09:39 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "1986193818161414144",
+            "url": "https://video.twimg.com/amplify_video/1986193818161414144/vid/avc1/1920x1080/bU0O4cF7nRcGucw8.mp4?tag=21",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "30192824",
+          "name": "Gergely Orosz",
+          "screen_name": "GergelyOrosz",
+          "description": "Writing @Pragmatic_Eng, the #1 technology newsletter on Substack. Author of @EngGuidebook. Formerly Uber & Skype.",
+          "followers_count": 296518,
+          "friends_count": 2722,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 76,
+          "favorite_count": 887,
+          "reply_count": 14,
+          "quote_count": 11
+        }
+      },
+      "user": {
+        "id": "3122661542",
+        "name": "Yangyi",
+        "screen_name": "Yangyixxxx",
+        "description": "Believing is seeing",
+        "followers_count": 109005,
+        "friends_count": 495,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 9,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986652765095907620",
+    "text": "RT @vista8: 为什么多模态模型训练都会保留色情图片？\n\n前几天听播客才知道。\n\n如果模型训练时去掉对裸体色情图片，AI 就会失去对人体结构的理解能力。\n\n就像一个好的画家需要研究解剖学才能知道人的结构一样，模型也需要这些数据。\n\n所以，只会标记NSFW（Not Saf…",
+    "created_at": "Fri Nov 07 04:31:44 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1986636433797620147",
+      "text": "为什么多模态模型训练都会保留色情图片？\n\n前几天听播客才知道。\n\n如果模型训练时去掉对裸体色情图片，AI 就会失去对人体结构的理解能力。\n\n就像一个好的画家需要研究解剖学才能知道人的结构一样，模型也需要这些数据。\n\n所以，只会标记NSFW（Not Safe For Work）\n\n模型输出再去掉这类图片。",
+      "created_at": "Fri Nov 07 03:26:50 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "6690032",
+        "name": "向阳乔木",
+        "screen_name": "vista8",
+        "description": "喜欢摇滚乐、爱钓鱼的PM\n网站：https://t.co/vnUpLt752o",
+        "followers_count": 66782,
+        "friends_count": 1367,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 23,
+        "favorite_count": 287,
+        "reply_count": 16,
+        "quote_count": 1
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 23,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986661026935324952",
+    "text": "是对所有初级开发人员都有影响，前端主要是量大，所以显得多。\n\n以前有个很大的需求量就是帮产品经理或者客户做原型开发，这部分要求不高，正好是初级前端开发能掌控的，现在这部分产品经理借助 AI 工具就能做了。\n\n还有一些体力活中高级程序员不想干，俗称脏活累活，就都是初级的干，一边干一边学习成长。现在中高端程序员借助 AI，把这部分活干了。\n\n再有就是以前经济形势好，企业愿意花一些钱培养新人，新人培养起来了有一定比例会留下来承担主要责任，忠诚度也比较高，现在经济形势没以前好，企业就不愿意花这部分钱了。\n\n现在初级程序员要成长，不能再寄希望于企业培养，只能是自己多花时间自学了，其实有 AI 辅助比以前更容易些，但是缺少有老板逼着有前辈带着的环境，这就需要自我驱动力比较强才能坚持下去。",
+    "created_at": "Fri Nov 07 05:04:33 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1986638664714363004",
+      "text": "AI对初级前端人员的摧毁是很大的，AI的前端代码生成速度快，而且代码规整还带文档\n\n前端开发要花更多时间去超越AI的初级能力才能找到工作\n\n我对前端人员的建议：\n\n1. 把CSS/SVG的基础打好：AI擅长做组件，但是复杂布局的样式冲突和精巧的动画还是不如人类\n\n2. 学学架构设计：AI的代码能工作，但是废代码也很多，架构能力强了，能更好的驾驭复杂软件，真正商业软件都是复杂的，而不是AI生成的那些Demo\n\n3. 多运动：你多运动就会开朗很多，这样沟通能力就增强了，AI再强了，他也不能去和普通人沟通需求\n\nAI来了是新人杀手，也是机会，就看怎么转变了",
+      "created_at": "Fri Nov 07 03:35:42 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986638402713001985",
+          "url": "https://pbs.twimg.com/media/G5H1GgLboAEkblu.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "28530405",
+        "name": "Andy Stewart",
+        "screen_name": "manateelazycat",
+        "description": "懒猫微服CEO、前Deepin CTO、不端不装 仗剑走天涯\n\n懒猫微服购买链接 https://t.co/KVqgWHDvJj \n\n懒猫微服有啥用？https://t.co/SF9p24BuTk",
+        "followers_count": 42913,
+        "friends_count": 227,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 20,
+        "favorite_count": 179,
+        "reply_count": 30,
+        "quote_count": 9
+      }
+    },
+    "stats": {
+      "retweet_count": 13,
+      "favorite_count": 129,
+      "reply_count": 18,
+      "quote_count": 7
+    }
+  },
+  {
+    "id": "1986661151938343315",
+    "text": "RT @aigclink: 阿里刚刚发了一个智能简历解析系统：SmartResume，直接把PDF/图片/Office文档简历变成结构化数据\n\nHR部门的手动录入工作可以直接秒级完成了\n\n系统融合了OCR与PDF元数据完成文本提取，结合版面检测重建阅读顺序，通过LLM将内容转换…",
+    "created_at": "Fri Nov 07 05:05:03 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1986371065422180634",
+      "text": "阿里刚刚发了一个智能简历解析系统：SmartResume，直接把PDF/图片/Office文档简历变成结构化数据\n\nHR部门的手动录入工作可以直接秒级完成了\n\n系统融合了OCR与PDF元数据完成文本提取，结合版面检测重建阅读顺序，通过LLM将内容转换为结构化字段\n\n能够提取基本信息、工作经历、教育背景等结构化信息\n\n模型用的微调版Qwen3-0.6B，版面检测模型用的YOLOv10\n\n可API及本地模型部署\n\n#简历提取工具 #SmartResume",
+      "created_at": "Thu Nov 06 09:52:21 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986368768642326536",
+          "url": "https://pbs.twimg.com/media/G5D_3u_bIAgGcFA.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1535166019978768384",
+        "name": "AIGCLINK",
+        "screen_name": "aigclink",
+        "description": "致力于让每个想拥抱AI的人都能找到适合自己的AI产品，助力企业定制AIGC应用",
+        "followers_count": 30815,
+        "friends_count": 1113,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 120,
+        "favorite_count": 515,
+        "reply_count": 8,
+        "quote_count": 3
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 120,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986663525796774181",
+    "text": "阮一峰老师写过一篇文章：《技术写作的首要诀窍》https://t.co/jsyZ1WRxUO\n\n我自己写技术文章常用的有两个简单的结构：\n1. 是什么？为什么？怎么办？\n2. 提出问题；分析问题；解决问题。\n\n写技术文章的时候，写完看看有没有漏，比如常犯的错误就是通篇在讲是什么和为什么，没有怎么办，读者没有收获；或者直接上来贴代码，只有解决方案，没有让读者知道要解决的问题或者分析过程\n\n不过所有的技巧都抵不过多写！",
+    "created_at": "Fri Nov 07 05:14:29 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1986661729259168254",
+      "text": "有点长，我分享一下我的写作技巧：\n\n1. 金字塔结构：写作的之前先想好要表达哪几点，最好的方法是3个点，不要整多了，读者看不完\n\n2. 总分总：先把结论写前面，这样读者有一个 “总 -> 分 -> 总” 的认知过程，第一个总就是结论，先让读者有一个预期，有了预期他就会好奇，分是详细的过程，主要作用是引发读者思考，最后再是总，最后这个总的目的是让用户思考过程后可以再回忆一下结论，方便加深认知\n\n3. 真实动人的故事：前两点是术，而真正引起传播的是读者对你内容的认同，而真实动人的经历比辞藻华丽的假故事更能打动人。人这一辈子不就是赚钱获得情绪价值的嘛？\n\n很多同学问，套路我会了，但是还写不出东西来怎么办？\n\n多读书、多经历、多被毒打后还选择善良去帮助那些淋过雨的人！",
+      "created_at": "Fri Nov 07 05:07:21 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986661548862177280",
+          "url": "https://pbs.twimg.com/media/G5IKJyTbgAAYvk2.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "28530405",
+        "name": "Andy Stewart",
+        "screen_name": "manateelazycat",
+        "description": "懒猫微服CEO、前Deepin CTO、不端不装 仗剑走天涯\n\n懒猫微服购买链接 https://t.co/KVqgWHDvJj \n\n懒猫微服有啥用？https://t.co/SF9p24BuTk",
+        "followers_count": 42913,
+        "friends_count": 227,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 21,
+        "favorite_count": 134,
+        "reply_count": 3,
+        "quote_count": 5
+      }
+    },
+    "stats": {
+      "retweet_count": 34,
+      "favorite_count": 185,
+      "reply_count": 2,
+      "quote_count": 2
+    }
+  },
+  {
+    "id": "1986663572407996649",
+    "text": "https://t.co/YlsZCOAAeG",
+    "created_at": "Fri Nov 07 05:14:40 +0000 2025",
+    "lang": "zxx",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1986661729259168254",
+      "text": "有点长，我分享一下我的写作技巧：\n\n1. 金字塔结构：写作的之前先想好要表达哪几点，最好的方法是3个点，不要整多了，读者看不完\n\n2. 总分总：先把结论写前面，这样读者有一个 “总 -> 分 -> 总” 的认知过程，第一个总就是结论，先让读者有一个预期，有了预期他就会好奇，分是详细的过程，主要作用是引发读者思考，最后再是总，最后这个总的目的是让用户思考过程后可以再回忆一下结论，方便加深认知\n\n3. 真实动人的故事：前两点是术，而真正引起传播的是读者对你内容的认同，而真实动人的经历比辞藻华丽的假故事更能打动人。人这一辈子不就是赚钱获得情绪价值的嘛？\n\n很多同学问，套路我会了，但是还写不出东西来怎么办？\n\n多读书、多经历、多被毒打后还选择善良去帮助那些淋过雨的人！",
+      "created_at": "Fri Nov 07 05:07:21 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986661548862177280",
+          "url": "https://pbs.twimg.com/media/G5IKJyTbgAAYvk2.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "28530405",
+        "name": "Andy Stewart",
+        "screen_name": "manateelazycat",
+        "description": "懒猫微服CEO、前Deepin CTO、不端不装 仗剑走天涯\n\n懒猫微服购买链接 https://t.co/KVqgWHDvJj \n\n懒猫微服有啥用？https://t.co/SF9p24BuTk",
+        "followers_count": 42913,
+        "friends_count": 227,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 21,
+        "favorite_count": 134,
+        "reply_count": 3,
+        "quote_count": 5
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 3,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986663713739579434",
+    "text": "https://t.co/NL95YJBuVN",
+    "created_at": "Fri Nov 07 05:15:14 +0000 2025",
+    "lang": "zxx",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1986663525796774181",
+      "text": "阮一峰老师写过一篇文章：《技术写作的首要诀窍》https://t.co/jsyZ1WRxUO\n\n我自己写技术文章常用的有两个简单的结构：\n1. 是什么？为什么？怎么办？\n2. 提出问题；分析问题；解决问题。\n\n写技术文章的时候，写完看看有没有漏，比如常犯的错误就是通篇在讲是什么和为什么，没有怎么办，读者没有收获；或者直接上来贴代码，只有解决方案，没有让读者知道要解决的问题或者分析过程\n\n不过所有的技巧都抵不过多写！",
+      "created_at": "Fri Nov 07 05:14:29 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 143587,
+        "friends_count": 1443,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 34,
+        "favorite_count": 185,
+        "reply_count": 2,
+        "quote_count": 2
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 7,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986663898225778992",
+    "text": "RT @bxe20508: @dotey 补充一个tips\n\n裁员的那一刻，企业现金花销会远高于日常，因为足额补偿的支付。\n\n所以，传统做法的最佳裁员时刻，是在预测到饥荒年即将到来的丰年，此时有钱，否则待到孱弱时，（现金流）流血容易gg。\n\n更何况，人力资源正处在大幅贬值的下降…",
+    "created_at": "Fri Nov 07 05:15:58 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1986663754298499541",
+      "text": "@dotey 补充一个tips\n\n裁员的那一刻，企业现金花销会远高于日常，因为足额补偿的支付。\n\n所以，传统做法的最佳裁员时刻，是在预测到饥荒年即将到来的丰年，此时有钱，否则待到孱弱时，（现金流）流血容易gg。\n\n更何况，人力资源正处在大幅贬值的下降通道。",
+      "created_at": "Fri Nov 07 05:15:24 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1778410045337677824",
+        "name": "BXE",
+        "screen_name": "bxe20508",
+        "description": "",
+        "followers_count": 80,
+        "friends_count": 283,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 32,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 4,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986688741822349578",
+    "text": "RT @mtrainier2020: 真正的agenda：这是OpenAI CFO Sarah Friar在WSJ tech conference的vision。\n所以并不是Sam洗地的政府兜底监管。\n而且前段时间质疑他们的折旧，他们现在自己认为的折旧是2年，但是对外声称的是7…",
+    "created_at": "Fri Nov 07 06:54:41 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1986534096378732644",
+      "text": "真正的agenda：这是OpenAI CFO Sarah Friar在WSJ tech conference的vision。\n所以并不是Sam洗地的政府兜底监管。\n而且前段时间质疑他们的折旧，他们现在自己认为的折旧是2年，但是对外声称的是7年。如果是两年，很难融到钱。\n\n最根本的问题，就是Sam 认为他们要保证在前沿，2年内算力需要达到现在的20倍。\n20倍。大概万亿级别的资金。\n先不说电力这些硬约束，资金方面的约束就超过了想象。\n他们根本没有这么多钱，也很难融到这么多钱，只能靠各种金融工具与金融创新。\n比如跟AMD这种创新玩法。\n\n如果follow the money， 其实就是从股市圈钱。\n但是股市圈钱已经差不多了，美股已经到历史最高了。\n那么下面一个可以圈钱的地方是，bond 和vc。\nbond这块，meta，goog都已经进去圈钱了。但是万亿这种规模，到哪都是大数字。\n\n私人资金，VC都不傻，不愿意这么借给他，所以他需要政府类似于跟他做cosigner，aka 美国政府的信用借给他来用。\n但是，美国政府也不傻啊。美国政府自己就手头很紧，今年搞了万税，费劲千辛万苦也就搞到了2000亿不到。\n所以，这两天，老黄出来说美国的AI要输给中国啦，出来吓唬人，然后Sam出来洗地，说我们不需要政府救援，blabla。\n\n但是，无论他们怎么忽悠，2年内增加20倍的算力大概率是达不到的。",
+      "created_at": "Thu Nov 06 20:40:11 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986534093430136833",
+          "url": "https://pbs.twimg.com/media/G5GWO50bIAEIaae.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1986526507175674227",
+        "text": "这家伙是个诡辩天才啊。\n1. 只讲了AI的需求，但是没有讲它的需求如何匹配他的债务。\n抬个杠来讲；uber说我从明天开始只要5块钱，随便打车。是的打车需求巨大，你可以去融资让大家几乎免费打车，但是这个不make sense。\n\n2. 转移了对政府兜底的解释。\n把economic 方面，财务方面的问题，转移到了，社会责任，AI安全方面去了。\n\n我不相信这种解释会让市场买账。",
+        "created_at": "Thu Nov 06 20:10:01 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1141738094485315584",
+          "name": "Rainier",
+          "screen_name": "mtrainier2020",
+          "description": "Cogito, ergo sum",
+          "followers_count": 138354,
+          "friends_count": 996,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 43,
+          "favorite_count": 349,
+          "reply_count": 40,
+          "quote_count": 2
+        }
+      },
+      "user": {
+        "id": "1141738094485315584",
+        "name": "Rainier",
+        "screen_name": "mtrainier2020",
+        "description": "Cogito, ergo sum",
+        "followers_count": 138354,
+        "friends_count": 996,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 30,
+        "favorite_count": 202,
+        "reply_count": 15,
+        "quote_count": 3
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 30,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986807294844080437",
+    "text": "RT @Yangyixxxx: 个人觉得写作分几个阶段\n\n第一个阶段，是写给自己，用来整理自己的思绪，沉淀自己的学习，记录一些生活或方法。这个过程无关于他人，就纯粹的写，简单的写，漫无目的，仅仅只是一种自我思想的浓缩过程\n\n第二个阶段，是写给他人，想传递一些信息，或者技能，但可…",
+    "created_at": "Fri Nov 07 14:45:46 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1986722716829864400",
+      "text": "个人觉得写作分几个阶段\n\n第一个阶段，是写给自己，用来整理自己的思绪，沉淀自己的学习，记录一些生活或方法。这个过程无关于他人，就纯粹的写，简单的写，漫无目的，仅仅只是一种自我思想的浓缩过程\n\n第二个阶段，是写给他人，想传递一些信息，或者技能，但可能仍然在关注自己的输出，而非他人的输入\n\n第三个阶段，也是写给他人，但会更关注他人的输入\n会去思考如果我是一个普适读者，我会怎么来看这些内容\n我会如何理解里面的名词，是什么激发我看下去\n我要不要使用故事叙述，该如何设计矛盾冲突，激发读者的多巴胺\n\n我想传达的究竟是什么，该以哪种润物细无声的表达结合到我的文字当中\n\n我觉得到达第三个阶段的过程是一场修炼\n就像很多高手可以非常简单的施展招数，但却无法传递给别人\n我之前说，100分的东西很难教会40分的人，因为其中有60分的Gap要填\n\n但真正的传奇大师，是可以把100分的东西浓缩成40分的表达，让30分的人也能获得「太牛了」的收获的\n\n为学日益，为道日损。大道本应至简，做不了减法的，是道行不够，仍需修炼",
+      "created_at": "Fri Nov 07 09:09:41 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1986638850408534195",
+        "text": "最近 X 上关于写作的话题比较火，正好看到一篇《写作建议》，作者收集了大量关于写作的经典建议，还分门别类整理到了一起。\n\n所有这些五花八门的技巧，背后其实贯穿着几条非常清晰的底层逻辑。如果你也想让自己的文字更抓人、更清晰，也许看完能让你有“原来如此”的感觉。\n\n底层逻辑1️⃣：写作的本质，是“读者体验设计”\n\n这是所有建议中最核心的一条。\n\n很多写作者，包括以前我也这样，在写作时，想的都是“我想表达什么”。但这份笔记里的高手们点出了一个更高级的视角：写作，是关于“读者要吸收什么”。\n\nSteven Pinker 总结得最到位：作者的目标，是在最大化阅读乐趣的同时，最小化读者理解所需的脑力。\n\n别让你的读者“费劲”。\n\n你的工作不是“倾倒”信息，而是设计一条“体验路径”，让读者感觉自己是在毫不费力地“滑滑梯”，而不是满头大汗地“爬山”。\n\n一旦你接受了这个设定，剩下的所有技巧，都是在为这个“最佳体验”服务。\n\n底层逻辑2️⃣：动笔前，先排空你的“污水管”\n\n我们都有过“写作卡壳”的经历：打开空白文档，枯坐半天，一个字都憋不出来。\n\n这份笔记里提到了一个我见过最生动的比喻，来自 Julian Shapiro 的“创意水龙头”：\n\n> 把你的创造力想象成一个堵塞的水管。水管的最前端一英里，塞满的全是“污水”——也就是你脑子里那些最陈词滥调、最平庸、最不过脑子的“烂点子”。你的水管只有一个水龙头。想得到后面的“清水”，唯一的办法就是：先把这些“污水”全都放干净。\n\n为什么在写作时会卡壳？因为我们总想一上来就写出金句。我们写下第一句“污水”（比如“这是一个值得思考的问题……”），然后立刻自我批判：“天啊，这写的是什么垃圾！”——于是我们删掉，试图等待“灵感”。\n\n结果，我们永远卡在“污水”这一层。\n\n而职业写作者的秘诀是：他们坦然接受“污水”的存在。他们会在写作初期，把脑子里所有能想到的烂点子、烂句子全都写下来。不评判、不删除，只是为了“排空管道”。\n\n当你把这些平庸的想法都倒空之后，那些真正的好创意、好句子，才会“哗啦啦”地流淌出来。\n\n所以，别再等灵感了。下次卡壳时，允许自己先写个垃圾出来。这是通往好内容的必经之路。\n\n底层逻辑3️⃣：用“节奏感”黏住读者的大脑\n\n好了，现在“清水”来了，你开始写作了。如何让读者不跳过、不走神，一字一句读下去？\n\n答案是：制造“音乐”。\n\n我们的大脑天生厌恶单调。如果所有句子的长度都差不多，大脑就会进入“无人机”般的嗡嗡声模式，很快就会感到无聊并“宕机”。\n\n笔记里引用了 Gary Provost 的一段经典演示，我转述一下：\n> 这个句子有五个词。这里又是五个词。五个词的句子很好。但是一连串的五个词。读起来就很单调了。听听发生了什么。写作变得很无聊。它的声音在持续。就像一张卡住的唱片。耳朵需要一些变化。\n> \n> 现在听好。 我改变了句子的长度，我就创造了音乐。音乐。文字在歌唱。它有了宜人的节奏，一种韵律，一种和谐。我使用短句。我也使用中等长度的句子。\n>\n> 而有时候，当我很确定读者已经休息好了，我就会用一个相当长的句子来吸引他，一个充满能量、不断积蓄动力的句子，就像渐强音，就像鼓点，就像铙钹的撞击——这些声音在说：听着，这很重要。\n\n这就是写作的“节奏感”。它通过长短句的交错，不断“唤醒”读者的大脑，引导他们的注意力。\n\n除了句子长短，还有一些“读者大脑管理”的小技巧：\n\n避免“开头词”重复：Scott Alexander 提醒，如果连续两三个句子都用同一个词开头（比如“我……”“我……”“我……”），读者会立刻感到“不适”，觉得你很笨拙。\n\n控制“聚光灯”：Steven Pinker 提到，主动语态和被动语态不是语法问题，而是“焦点控制”问题。\n\n- 主动（“那个女士用西葫芦砸了一个哑剧演员”）——聚光灯打在女士身上。\n\n- 被动（“那个哑剧演员被女士用西葫芦砸了”）——聚光灯打在哑剧演员身上。\n\n你想让读者先看谁，就让谁做句子的主语。\n\n底层逻辑4️⃣：写作是“沟通”，不是“炫耀”\n\n这部分主要针对非虚构写作，但同样适用于所有人。\n\n1. 给读者“多巴胺小奖励”\n\n斯科特·亚历山大说，读者的大脑很容易累。你必须不断给他们“小奖励”来维持动力。\n\n- 微幽默 (Microhumor)：这不等于讲笑话。它是在严肃的行文中，插入一个能让读者“嘴角微不可察地上扬一下”的词或比喻。这就像给读者喂了一颗小糖果。\n\n- 清晰的结构：短段落、小标题、“首先/其次/最后”这样的“路标”（当然也有被误认为 AI 写作的嫌疑）。这能给读者“微小的成就感”（好的，我又读完了一部分”），帮他们“存档”信息。\n\n2. 多使用“比如”和“举个例子”\nSteven Pinker：一个没有例子的解释，几乎等于没有解释。\n\n我们作为作者，常常高估了读者对“术语”和“抽象概念”的理解力。因为我们自己已经把这些概念“打包”成了知识块。\n\n当你写“定量宽松”、“熵增”、“熵减”时，大部分读者已经懵了。\n\n当你写“中央银行购买私有资产”时，大家就开始懂了。\n\n当你写“这就好比央行直接下场‘买买买’，往市场里撒钱”时，所有人就都懂了。\n\n永远不要害怕解释你以为人尽皆知的术语。你多花 5 个字，比如一种开花芥菜，去解释“拟南芥”，就能把成千上万的读者留在你的文章里。\n\n写作不是魔法，而是手艺。\n\n它无关灵感爆发，而关乎对读者体验的极致共情。\n\n它要求我们放下作者的自我，去扮演一个体验设计师：思考读者的大脑如何工作，如何让他们在阅读中感到轻松、愉悦并有所收获。\n\n无论是排空污水管、制造节奏感，还是挖掘“第三层情感”，所有技巧最终都指向一件事：\n\n尊重你的读者，尊重他们的时间，以及他们那颗容易疲倦的大脑。\n\n原文：https://t.co/Orh9lPSigK\n翻译：https://t.co/6HrkLB3pY6",
+        "created_at": "Fri Nov 07 03:36:26 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1986636511400316928",
+            "url": "https://pbs.twimg.com/media/G5HzYafWUAAw5Fn.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 143587,
+          "friends_count": 1443,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 101,
+          "favorite_count": 426,
+          "reply_count": 15,
+          "quote_count": 9
+        }
+      },
+      "user": {
+        "id": "3122661542",
+        "name": "Yangyi",
+        "screen_name": "Yangyixxxx",
+        "description": "Believing is seeing",
+        "followers_count": 109005,
+        "friends_count": 495,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 20,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986866359540617400",
+    "text": "这篇文章倒是提到了一个现在 ChatGPT 这类 AI 聊天工具的一个明显问题：就是聊天历史在侧边栏很重要的位置，但又很鸡肋，真需要找个啥又找不到。\n（图1 左侧就是当前的聊天历史检索功能，右侧是作者建议的设计）\n\n作者把 AI 聊天历史和当年 Chrome 设计浏览历史的事联系在一起了，早在 2008 年的时候，Chrome 就为每个用户的浏览历史建立索引了，还基于之上做了很多炫酷设计，让用户可以更好的看到自己的浏览历史。\n（图2，这设计我还有点印象）\n\n但实际上这个功能结果没什么人用。\n\n因为用户需要什么，不是从自己的浏览历史里面找，而是继续通过搜索引擎查找。\n\n举个例子：当用户想找“去年秋天做过的那个南瓜派食谱”时，他们脑子里只有一件事：找到它。\n\n现在摆在面前有两条路：\n1. 费劲的路：点开“历史记录”，面对一个可能很复杂（即便设计得很酷）的界面，回忆“我大概是去年10月还是11月看的？”、“我是在哪个网站上看的来着？”，然后在一长串列表里翻找。\n\n2. 简单的路：打开 Google，重新输入“南瓜派 食谱 好吃”。\n\n结果绝大部分人会选第二条。\n\n用户永远会选择阻力最小的路径。\n\n但这不代表浏览历史没用，实际上 Chrome 团队把浏览历史放到了地址栏，每次你输入几个字母，就能猜到你想上哪个网站（我真的超爱这个功能）。\n\n并且浏览历史也是有用的（比如这条推文我就是从浏览历史找出来的），只是不用在太显眼的位置。\n\n浏览器历史记录的真正价值，是让你的核心体验（比如搜索和访问）变得更智能、更快捷。它应该是一个隐形的助手，而不是一个需要你费心管理的新功能。\n\n再回来看 AI 聊天。聊天历史在显眼的位置，但是实际用到的并不多，当用户需要什么时，更多还是新开一个会话，毕竟新开会话也是“阻力最小的路径”，而且因为上下文内容少生成质量会更高。\n\n当然聊天记录也确实重要，它能为用户提供个性化的上下文信息，让 AI 真的能懂你。\n\n作者的建议就是： \n> 与其花大力气设计一个华而不实的“聊天记录管理器”，不如把这些“历史数据”当成后台的燃料，用来提升那 1% 的核心聊天体验——让它更懂你、更快响应、更准确。\n\n话说回来，我不觉得这些问题 AI 厂商们不知道这个问题，但做好可也不容易，可比浏览器地址栏的智能提示复杂多了。\n\n就目前来说，真正把历史记录变成个性化记忆的并且做的还可以的也就是 ChatGPT，也是 ChatGPT 让用户有粘性的一个“秘籍”。\n\n但另一方面，这个记忆功能也很困扰，在不需要的时候反而添乱。",
+    "created_at": "Fri Nov 07 18:40:28 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1986855626014650368",
+        "url": "https://pbs.twimg.com/media/G5K6qkCW8AAz0kc.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1986859569570553865",
+        "url": "https://pbs.twimg.com/media/G5K-QG7WoAkko-I.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": {
+      "id": "1986476904648716556",
+      "text": "We’re overthinking AI chat history — just like Chrome did with web history.\n\n20 years ago, Chrome indexed every page users visited and designed detailed UIs for them to explore it.\n\nBut users didn’t care.\nThey just searched again.\n\nHere's what AI tools can learn from this 👇\n\nChrome’s web history dataset was rich, personal, and full of possibility.\n\nDesigners explored everything from subway-map visualizations, to timeline UIs, to GoogleReader-style feeds — imagining people would want to explore their own browsing history.\n\nWhen they realized it was just easier, faster, and more intuitive for users to search again, Chrome shifted course. \n\nWeb history became infrastructure — powering suggestions, surfacing shortcuts, and tucked behind “Command + Y.”\n\nToday, AI teams are replaying this same debate and trying to “solve” chat history.\n\nBut people don’t want to manage their chat history. They just want models to remember intelligently so that every conversation feels smoother, smarter, and more personal.\n\nHistory should live in the background, supercharging personalization, context, and recall across the core product. \n\nThe best designed products weave history in when it makes sense, but focus on propelling users forward.\n\nFull post in comments.",
+      "created_at": "Thu Nov 06 16:52:55 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986476862676377600",
+          "url": "https://pbs.twimg.com/media/G5FiLopboAAiM70.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "24401279",
+        "name": "Elizabeth Laraki",
+        "screen_name": "elizlaraki",
+        "description": "Design AI + Fundamentals. \nEarly designer on @GoogleMaps, @YouTube, @Facebook. \nNow Design Partner @ElectricCapital. \nRunner, cyclist, design nerd. \nViews mine.",
+        "followers_count": 23461,
+        "friends_count": 999,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 11,
+        "favorite_count": 84,
+        "reply_count": 12,
+        "quote_count": 3
+      }
+    },
+    "stats": {
+      "retweet_count": 3,
+      "favorite_count": 35,
+      "reply_count": 10,
+      "quote_count": 1
+    }
+  },
+  {
+    "id": "1986866362715939146",
+    "text": "历史经验能借鉴，但未必能直接套用，不过我很喜欢那句话：\n&gt; 用户永远会选择阻力最小的路径。 https://t.co/EZzyZqf566",
+    "created_at": "Fri Nov 07 18:40:29 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "video",
+        "id": "1986866295875260416",
+        "url": "https://video.twimg.com/amplify_video/1986866295875260416/vid/avc1/810x720/O7DFMA7LDLqt45-A.mp4?tag=21",
+        "bitrate": 2176000
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 5,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986866572825141366",
+    "text": "这篇文章是从 @shao__meng 那里看到的，他经常能发现一些不错的文章👍\nhttps://t.co/fJv2ZkrQP5",
+    "created_at": "Fri Nov 07 18:41:19 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1986748902566191556",
+      "text": "我们可能把 AI 聊天历史记录想得太复杂了 —— 就像当年 Chrome 对网页历史记录想得太复杂一样！\n\nChrome 的历史教训\n\n当年的雄心壮志\n2008年 Chrome 团队构建了一个功能强大的系统：\n· 完整索引：记录用户访问过的每一个网页的全文\n· 设计师的愿景：用户可以重新发现网络、洞察自己、可视化数字旅程\n· 各种创意界面：个性化 Subway Maps、数据摘要、类似 Google Reader 的信息流等\n\n现实的打击\nChrome 首位设计师 Glen Murphy 的反思：\n\"我们保存了用户访问过的每个网页，建立了完全的文本索引。历史记录本该是个了不起的功能……但最终，没人用。用户直接回到 Google 重新搜索他们要找的内容。\"\n\n原因很简单：人们不想要华丽的界面来梳理历史、洞察自己。他们只是想找到前几天读的那篇文章，或者去年秋天做的南瓜派食谱。重新搜索反而更简单。\n\n最终的解决方案\nChrome 发布时采用了极简设计：\n· 个性化起始页：显示最常访问的网页、最近搜索、书签、最近关闭的标签\n· 完整历史记录：隐藏在简洁的快捷键\"Command + Y\"后面\n· 幕后运作：历史记录默默驱动搜索建议、快捷方式等功能\n\n这套基础产品逻辑从一开始就是正确的，近20年来只进行了轻微的美学更新。\n\n对 AI 产品的启示\n\n核心原则\n用户历史记录应该是强大的基础设施，而非面向用户的显性功能。它是背景数据集，用于增强个性化、上下文理解和召回能力。\n\n具体设计建议\n1. 让聊天变得可抛弃\n· 鼓励用户随时开启新对话\n· 不要让用户背负理解模型如何处理历史的认知负担\n2. 突出真正被重复使用的内容\n· 如果用户反复访问某些对话，让它们在界面中更显眼\n· 类似 Chrome 的\"最常访问页面\"\n3. 添加轻量级记忆功能\n· 允许用户收藏整个对话或对话片段\n· 方便日后重访\n4. 让搜索更有意义\n· 直接定位到答案，而不是把用户扔到包含关键词的对话末尾\n· 高亮显示相关短语或段落，便于快速浏览\n· 借鉴现有的成熟交互模式\n\nLLM 记忆的复杂性\n多层记忆架构\n虽然我们希望用户体验简单，但背后隐藏着复杂的记忆架构：\n· 短期\"工作记忆\"：单次对话内\n· 长期记忆：跨会话\n· 持久个人记忆：长期保存\n· 检索系统：从存储知识中提取\n\n不同模型的差异\n· Claude：单次对话内记忆强大，但每次新对话重新开始\n· ChatGPT：单次对话记忆较弱，但跨会话记住\"关键事实\"和偏好\n· Gemini：可处理超大提示词，整合其他 Google 产品的上下文，但尚未构建持久个人记忆\n\n这些差异让设计一致的心智模型变得困难。产品应该尽可能将复杂性从用户身上转移，呈现简单连贯的历史记录模型。\n\nChrome 的简单模型（值得借鉴）\n✅ 透明历史：按时间倒序显示访问过的每个页面\n✅ 增值服务：利用数据推荐最常访问的网站\n✅ 书签功能：保存重要内容，可在搜索结果中找到\n✅ 退出选项：隐私模式一键开启\n\n用户从不需要理解 Chrome 在幕后如何处理历史记录。它就是能用。\n\n关键语句\nGlen Murphy 的总结最能体现这篇文章的精髓：\n\"归根结底，我们意识到把 UI 基础做好超级重要。如果你有一个月时间，与其把没人用的产品功能改进100%，不如把核心 UI 改进1%。\"\n\n历史记录的使命不是被记住，而是让其他一切更流畅。最好的设计让历史记录活在背景中，在合适的时候融入体验，推动用户前进。\n\nhttps://t.co/QjSiIxFkGv",
+      "created_at": "Fri Nov 07 10:53:45 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986748883398197248",
+          "url": "https://pbs.twimg.com/media/G5JZlUzagAAO4zt.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1727548535816724480",
+        "name": "meng shao",
+        "screen_name": "shao__meng",
+        "description": "专注 - Context Engineering, AI(Coding)Agents.\n分享 - AI papers, apps and OSS.\n\nex Microsoft MVP\n\n合作 - 私信/邮箱：shaomeng@outlook.com\n\n📢 公众号/小红书: AI 启蒙小伙伴\n\n🔗 信息卡提示词 🔽",
+        "followers_count": 19364,
+        "friends_count": 1085,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 35,
+        "reply_count": 1,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 3,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986872257939902735",
+    "text": "RT @LiXiang1947: 其实倒也不是大厂出来的人弱，而是被institutionalized了\n\n大厂做个项目，有人给你写需求文档，有人帮你写产品原型图，有人帮你跟项目催项目。每个人都是原子化的。\n\n你给这个人说让这个人做A，做B，大厂里这是有不同的分工的。因为这样才…",
+    "created_at": "Fri Nov 07 19:03:55 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1986847338032504836",
+      "text": "其实倒也不是大厂出来的人弱，而是被institutionalized了\n\n大厂做个项目，有人给你写需求文档，有人帮你写产品原型图，有人帮你跟项目催项目。每个人都是原子化的。\n\n你给这个人说让这个人做A，做B，大厂里这是有不同的分工的。因为这样才能足够高效。\n\n而创业公司，跑来的单，那就要完成，就这么几号人，谁给你服务嘞？\n\n那么一个大学毕业生懵懵懂懂，毕业进了当年的BAT，他绝对不会有这种高度去思考这个问题的。而是就沉浸在P6、P7、P8的打怪升级游戏里去了。\n\n换句话说，这套玩法就是被别人定好的。并不是因为你比几年前长进了多少。\n时间久了，就会被institutionalized。\n去了小公司，绝对习惯不了的",
+      "created_at": "Fri Nov 07 17:24:53 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1986285975165894842",
+        "text": "大厂出来的很多人其实很弱\n\n我给大家讲一个故事吧\n\n4年前我们招了一个大厂出来的人，说句实话，我第一天就觉得这个人不行，面相太凶了，感觉全世界都欠他钱一样，一脸愤怒\n\n果不其然，试用期几件事情把我搞烦了\n\n真正干活的时候，我们都会白板讨论一下架构，他基本上所有问题都在杠，我最开始还以为他是有真实的思想，就想，只要他10句话有1句话是对的，就有价值。慢慢的时间久了，我们都明白了，他抬杠纯粹是为了显得自己技术牛逼，不为别的。但其实他们在我们这些扫地僧面前，他的计算机基础只能算小学\n\n但是实际一干活呢？几周过去没有进度，一问确实就在写代码，但他只写核心demo，一遇到产品细节完善，每天都抱怨这里好麻烦那里细节太多，甚至说，我觉得的用户不会这样用。我当时反问他，现实中产品除了核心原理，90%都是细节，只有细节做好了，软件才稳定，用户才舒服。软件工程很多是体力活，你只写个demo，要让别人来给你擦屁股吗？\n\n最后一件事情才是大无语，我们公司有健全的CI，但是针对一些新的项目需要先研发趟坑，稳定后再上CI。有一周又没有进度了，我问他咋样了，他说没CI，我说没CI先自己本地编译下啊，你自己写代码不测试的吗？顺手的事情。他来了一句大无语，我在大厂的时候，都是基础设施搭建好，我们才写代码的\n\n我当时直接怒了，我说，你回你的大厂去吧，我们这里不欢迎你\n\n大厂有没有厉害的人？当然有，但是真正厉害的人不会出来。出来的这些都是爷，中午吃饭高谈阔论，每天只会装逼，一到业务代码时就嫌麻烦，动不动就飙我在大厂时怎么怎么样.....\n\n创业者们，招人一定要招那些踏实肯干的年轻人，本本分分的将来必有大才。\n\n那些大厂出来的毒瘤看到一个就要清理一个，他们都是纸上谈兵的烂人，不清除就会把组织感染的乌七八糟。\n\n大厂出来的人为什么普遍弱？因为平台帮他磨平了太多事情，他只用当螺丝钉就好了，出来混，面对小厂全栈，南郭先生一般活不过半集",
+        "created_at": "Thu Nov 06 04:14:14 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1986285972695490562",
+            "url": "https://pbs.twimg.com/media/G5C0kYDbIAIYvKn.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "28530405",
+          "name": "Andy Stewart",
+          "screen_name": "manateelazycat",
+          "description": "懒猫微服CEO、前Deepin CTO、不端不装 仗剑走天涯\n\n懒猫微服购买链接 https://t.co/KVqgWHDvJj \n\n懒猫微服有啥用？https://t.co/SF9p24BuTk",
+          "followers_count": 42913,
+          "friends_count": 227,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 77,
+          "favorite_count": 847,
+          "reply_count": 175,
+          "quote_count": 21
+        }
+      },
+      "user": {
+        "id": "1567179325551812609",
+        "name": "Li Xiangyu 香鱼🐬",
+        "screen_name": "LiXiang1947",
+        "description": "Neuroscience PhD diving deep into AI | Going all-in on global product adventures | English vibes: @lixiangyu9710 | Email to xiangyuli997@gmail.com",
+        "followers_count": 15966,
+        "friends_count": 1542,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 41,
+        "reply_count": 11,
+        "quote_count": 2
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 4,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986912382828883996",
+    "text": "看到这条留言有感而发随手写了一点：为什么依赖“自驱”的学习这么难坚持？\n\n答案很简单：你没有获得持续的正反馈。\n\n所有依赖自驱的学习，想要有效果，都离不开两个核心引擎：正反馈和学习循环。\n\n🆙 引擎一：正反馈（提供动力的“燃料”）\n\n正反馈，就是那些能让你“爽”到的点，是你坚持下去的核心动力。\n\n比如说：\n- 你写下 \"Hello World\"，代码真的运行输出了。\n- 你写的一个小脚本，真的帮你节省了半小时的重复劳动。\n- 你做的小软件，真的帮朋友解决了一个棘手的问题。\n\n这些，都是价值千金的正反馈。\n\n相反，什么是负反馈？\n\n比如说：\n- 花了一整天搭环境，最后还是跑不起来。\n- 花了一个通宵调试，Bug 还是没找到。\n- 精心写了很久的软件，压根没人用。\n\n人是无法靠意志力对抗持续的负反馈的。 一直得不到正反馈，放弃才是最符合人性的选择。\n\n♻️ 引擎二：学习循环（内化技能的“发动机”）\n\n光有“爽感”还不够，那可能只是短暂的兴奋。想真正“学会”，你需要一个能不断运转的发动机，一个把知识内化为自己真正技能的完整闭环。\n\n拿学习编程来说，这个循环至少包含这三步：\n\n1. 学习理论知识（学）\n\n这是基础。通过看书、视频、课程，学习算法、数据结构、设计模式等。这是你的“弹药库”。\n\n2. 动手实践（练）\n\n这是最最最重要的部分。你必须去写代码、编译、运行、调试、修复错误，才能把抽象的概念具体化。\n\n为什么现在都强调“干中学”？因为你看再多游泳视频，不下水，你永远学不会游泳。\n\n很多人学不好编程，不是因为理论不懂，而是因为练得太少。\n\n3. 解决真实问题（思）\n\n“练”一定会遇到问题。新手和高手的区别，就在于此。\n\n你必须经历分析问题 -> 尝试解决 -> 撞墙 -> 查资料 -> 解决问题的完整过程。人，只有在解决问题的挣扎中，才能真正积累经验，掌握知识。\n\n请注意：这一步，是 AI 无法替代的。\n\nAI 可以帮你写出代码，但它无法帮你体验那个“从卡住到豁然开朗”的完整思考过程。这个经验，必须你自己去赚取。\n\n那些所谓的高手，不过就是这个循环跑得多了，积累了海量的“问题-解决方案”范式，仅此而已。\n\n关键：让“循环”产生“反馈”\n\n现在我们把两个引擎连起来：\n\n> “学习循环”是产生“正反馈”的最佳途径。\n\n当你完整地跑完一次循环（比如，学了一个新框架，动手做出了个小功能，并解决了所有Bug），你获得的正反馈是巨大的！\n\n这种“我能行”的成就感，会给你充足的“燃料”，让你兴奋地开启下一次循环。\n\n如何打造你自己的“正反馈学习循环”？\n\n场景一：“简单模式”（在企业中）\n\n在企业里有个巨大的好处：你不需要自己找循环，公司会“喂”给你。\n\n- 接任务（识别问题）\n- 了解需求（学习理论）\n- 动手开发（动手实践）\n- 联调测试（解决问题）\n- 上线发布（获得正反馈：任务完成/用户使用）\n\n而且，你身边有同事和导师。遇到问题，总有人帮你。如果你的 Leader 水平很高，能“刚刚好”给你安排那些“跳一跳才够得着”的活，你的成长会快到飞起。\n\n场景二：“困难模式”（独自摸索）\n\n如果你是一个人学习，情况会难很多，你必须刻意为自己设计这个循环。这里有几个关键建议：\n\n1. 从 Side Project 开始，而且必须“小”\n不要一上来就想做“一个 ChatGPT”。你的目标是快速获得正反馈。\n- 一个自动签到的脚本。\n- 一个批量处理图片的小工具。\n- 一个帮你管理书单的简单网站。\n\n谨记：先去发现你或朋友身边的“真实需求”再动手，成功率最高。\n\n2. 把 AI 当“领航员”，别当“代驾”\n\nAI 是革命性的工具，但它很容易中断你的学习循环。\n\n❌错误用法（代驾）： “帮我写一个xxx功能的代码。” -> 你只是复制粘贴，错过了“实践”和“解决问题”的环节。\n\n✅正确用法（领航员）： “我遇到了xx错误，可能是什么原因？” “我想实现xx功能，有哪几种方案对比？”\n\n如果你只是让 AI 帮你完成，你永远无法真正掌握知识，循环没有跑通。\n\n3. 用“费曼学习法”倒逼理论输入\n\n很多人“干中学”久了，会变成“野路子”，只知其然不知其所以然，很快会遇到瓶颈。\n\n怎么办？用“教”来倒逼“学”。\n\n把你项目中的思考、遇到的坑、解决方案，记录下来，尝试分享出去（写博客、做分享）。为了能给别人“讲明白”，你就必须去补习那些背后的理论知识，确保自己真的懂了。\n\n这，就是最高效的理论学习方式之一。\n\n4. 别闷头造车，去社区“求助”和“帮助”\n\n一个人学习，最怕卡在一个问题上几天都出不来，负反馈爆棚。\n\nAI 能解决一部分，但很多复杂或特定领域的问题，还得靠人。\n\n我们这一代程序员成长时，都泡在 CSDN 论坛、Stack Overflow、知乎里。当你在社区里提问，得到解答，是正反馈；当你用你的经验去解答别人的问题，更是强烈的正反馈。\n\n真正的成长，从来不发生在看视频或者让 AI 写代码的舒适区里，而是来自“学习 -> 实践 -> 解决问题”这个完整、甚至有些痛苦的循环。\n\n可以从一个身边的小问题开始：动手去解决它，积累经验，获取正反馈！",
+    "created_at": "Fri Nov 07 21:43:21 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1986911656501239808",
+        "url": "https://pbs.twimg.com/media/G5Ltn93W4AA5rxj.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": {
+      "id": "1986874131292258807",
+      "text": "@dotey “但是缺少有老板逼着有前辈带着的环境，这就需要自我驱动力比较强才能坚持下去”\n\n这个太难了，我在英国基本都是一个人自学，去到的企业都没有人能带我成长，全靠自己摸…",
+      "created_at": "Fri Nov 07 19:11:21 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1730594110287806464",
+        "name": "奇特飞古",
+        "screen_name": "laofeiguUK",
+        "description": "英国8年，全栈工程师，主攻C/C++，曾为数据分析员，后为五斗米在厨房工作，创业不成功，独立开发不成功，一直沙发流浪，现渐渐走出深度贫困期。",
+        "followers_count": 2054,
+        "friends_count": 145,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 6,
+      "favorite_count": 50,
+      "reply_count": 4,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986914114216526131",
+    "text": "RT @imxiaohu: Chrome 浏览器现在支持分屏了\n\n可以在一个界面，打开两个标签，这样你就不用来回切换了\n\n比如我经常在GPT和我的网站之间来回复制粘贴\n\n切换很麻烦\n\n现在很方便了...🥲\n\n教程见2楼 https://t.co/47W5dAcgU4",
+    "created_at": "Fri Nov 07 21:50:14 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "video",
+        "id": "1986760284250468352",
+        "url": "https://video.twimg.com/amplify_video/1986760284250468352/vid/avc1/1736x1080/XKvE0AvRh-QxxKqJ.mp4?tag=21",
+        "bitrate": 10368000
+      }
+    ],
+    "retweet": {
+      "id": "1986762208945344701",
+      "text": "Chrome 浏览器现在支持分屏了\n\n可以在一个界面，打开两个标签，这样你就不用来回切换了\n\n比如我经常在GPT和我的网站之间来回复制粘贴\n\n切换很麻烦\n\n现在很方便了...🥲\n\n教程见2楼 https://t.co/47W5dAcgU4",
+      "created_at": "Fri Nov 07 11:46:37 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "1986760284250468352",
+          "url": "https://video.twimg.com/amplify_video/1986760284250468352/vid/avc1/1736x1080/XKvE0AvRh-QxxKqJ.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1764818331822182400",
+        "name": "小互",
+        "screen_name": "imxiaohu",
+        "description": "学AI找小互，找小互，上 https://t.co/4PVaHEr5r3 ...",
+        "followers_count": 74900,
+        "friends_count": 1493,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 46,
+        "favorite_count": 332,
+        "reply_count": 20,
+        "quote_count": 6
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 46,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986917368442855477",
+    "text": "转译：AI 与社交媒体是如何导致我们“脑子生锈”的？——《纽约时报》...\n\n科技行业总在告诉我们，聊天机器人和新的人工智能（AI）搜索工具将极大地提升我们的学习和发展效率，谁要是忽视了这项技术，谁就有被时代抛弃的风险。\n\n但是，梅勒马德（Melumad）博士的实验，以及迄今为止其他已发表的关于 AI 对大脑影响的学术研究，却得出了一个令人不安的结论：那些严重依赖聊天机器人和 AI 搜索工具来完成写论文、做研究等任务的人，他们的学习表现普遍不如那些不使用这些工具的人。\n\n“坦白说，我非常害怕，”梅勒马德博士说。“我担心现在的年轻人以后都不知道该怎么用传统方式上谷歌搜索了。”\n\n“技术是不是让人类变笨了？”这个问题几乎和技术本身一样古老。遥想当年，哲学家苏格拉底就曾指责“文字”的发明削弱了人类的记忆力。近一点看，就在 2008 年——那时候可还没有什么 AI 自动生成网页摘要呢——《大西洋月刊》（The Atlantic）就发表过一篇著名的文章，标题是 “谷歌在让我们变笨吗？” 事实证明，当时的那些担心有点杞人忧天了。\n\n然而今年，美国儿童的阅读成绩，包括八年级学生和高中毕业生，双双创下了新低。这些数据来自“全国教育进展评估”（National Assessment of Educational Progress，（注释：简称NAEP，被公认为美国衡量学生学业水平最可靠的“黄金标准”考试）），这是自新冠疫情（Covid-19）扰乱了正常的教学秩序、并导致青少年刷屏幕时间猛增以来，首次发布的同类成绩报告。\n\n下面，我们来总结一下目前已有的研究，看看怎样使用 AI 才能真正地“补脑”，而不是让“脑袋秀逗”。\n\n当我们用 ChatGPT 写作时，我们到底还在“写作”吗？\n\n今年，要说 AI 对大脑影响方面最引人注目的研究，非麻省理工学院（MIT）莫属。研究人员试图搞清楚，像 OpenAI 的 ChatGPT 这样的工具，到底会怎样影响人们的写作方式。\n\n这项研究只找了 54 名大学生，（样本量很小），但研究结果却引出了一个至关重要的问题：AI 会不会扼杀我们的学习能力？\n\n在研究中，学生们被要求写一篇 500 到 1000 字的论文。他们被分成了三组：\n1.  第一组：可以用 ChatGPT 帮忙写作。\n2.  第二组：只能用传统的谷歌搜索来查资料。\n3.  第三组：啥也不能用，只能靠自己的大脑来完成作业。\n\n所有学生都戴着传感器，用来实时测量他们的大脑电活动。结果显示，使用 ChatGPT 的那一组学生，大脑活动水平是最低的。这倒也不奇怪，毕竟他们让 AI 聊天机器人包揽了大部分的思考和写作工作。\n\n但最让人震惊的发现，发生在写作练习结束之后。\n\n在学生们交卷一分钟后，研究人员要求他们背诵自己刚刚写完的论文中的任何内容。结果，绝大多数（高达 83%）使用 ChatGPT 的学生，竟然连一个完整的句子都回忆不起来。\n\n相比之下，那些使用谷歌搜索的学生还能背出一些片段；而那些完全不用科技、全靠自己大脑写作的学生，则能复述出大量内容，有些人甚至能一字不差地背诵几乎整篇文章。\n\n“这才过去一分钟，你就真的一点都想不起来了？” 领导这项研究的麻省理工学院媒体实验室（M.I.T. Media Lab）科学家娜塔莉亚·科斯米纳（Nataliya Kosmyna）在谈到 ChatGPT 用户时，难掩惊讶之情。“如果你压根不记得自己写了什么，你（对这篇文章）就不会有‘主人翁’的感觉。你真的会在乎你写的东西吗？”\n\n科斯米纳博士说，虽然这项研究关注的是写论文，但她真正担心的是，这对于那些在“记忆力”至关重要的领域使用 AI 聊天机器人的人意味着什么——比如，一个正在备考飞行执照的飞行员。\n\n她强调，我们迫切需要进行更多研究，搞清楚 AI 到底如何影响人们“记住”信息的能力。\n\n社交媒体可能与阅读成绩下降有关\n\n上个月，《美国医学会杂志》（JAMA）发表了加州大学旧金山分校（UCSF）的一项研究。领导这项研究的儿科医生杰森·长田（Jason Nagata）博士和他的同事们，分析了来自“青少年大脑认知发展”（ABCD）项目的数据。\n\n这是一个在 2016 年至 2018 年间，跟踪了超过 6500 名 9 至 13 岁青少年发展状况的大型研究项目。\n\n怎样使用社交媒体和 AI 才更“健康”？\n\n（长田博士）建议，父母应该在家里强制执行“无屏幕区”，比如严禁在卧室和餐桌上使用手机，这样孩子们才能在学习、睡眠和吃饭时保持专注。\n\nMeta 公司 没有回应媒体的置评请求。TikTok 的一位女发言人则 指向了一个网页 ，上面有设置“休息一下”（Time Away）功能的说明，这个工具可以帮助父母设定青少年允许使用 TikTok 的时间表。\n\n至于 AI 聊天机器人，麻省理工学院的那项研究里其实还暗藏了一个有趣的“转折点”，它为人们如何更好地利用聊天机器人来学习和写作，提供了一个可能的解决方案。\n\n在研究的后续阶段，研究小组交换了角色：\n- 之前只能靠大脑写作的人，现在可以用 ChatGPT 了。\n- 之前依赖 ChatGPT 的人，现在只能靠自己的大脑了。\n\n所有学生都就他们之前选定的相同主题，再写一篇论文。\n\n科斯米纳博士说，结果出现了戏剧性的一幕：那些起初只靠自己大脑写作的学生，在获准使用 ChatGPT 后，他们的大脑活动反而达到了峰值（注释：这意味着他们在使用AI时也在积极思考如何优化和协作，而不是完全“躺平”让AI代劳）。\n\n相反，那些一开始就用 ChatGPT 的学生，当他们反过来被限制只能用脑子写时，他们的大脑活跃度始终没能达到第一组人的水平。\n\n这就给出了一个非常重要的启示：\n> 那些想用聊天机器人来写作和学习的人，应该考虑先自己动手（比如构思、打草稿），到后期修改润色的阶段再求助于 AI 工具。\n>\n> 这就好比学数学的学生，总得先用纸和笔亲手学会了公式和方程，才能在之后用计算器去辅助解题。\n\n对于这些研究发现，Google 和 OpenAI 均拒绝发表评论。\n\n前面提到过那位研究 AI 搜索工具的沃顿商学院教授梅勒马德博士，她也表达了类似的观点。她说，那些 AI 搜索工具最大的问题在于：它们把一个本该由你大脑“主动”完成的过程——比如浏览一堆搜索链接、判断哪个来源更可信、然后点进去批判性地阅读——变成了一个完全“被动”的自动化过程（AI直接给你一个“标准答案”）。\n\n因此，她说，要想更“健康”地使用 AI，关键可能在于我们用它们的时候要“更走心”一点。\n\n梅勒马德博士建议，不要让聊天机器人帮你完成一个宽泛主题的全部研究，而是把它当作研究过程中的一个“小助手”，用它来回答一些零碎的小问题，比如“帮我查一下某个历史年份”。\n\n但如果你想深入地学习某个学科，那还是老老实实去读一本书吧。\n\n来源：https://t.co/LuZGHqDoZl",
+    "created_at": "Fri Nov 07 22:03:10 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1986917348477988864",
+        "url": "https://pbs.twimg.com/media/G5LyzSIXcAAFBWl.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 6,
+      "favorite_count": 25,
+      "reply_count": 6,
+      "quote_count": 1
+    }
+  }
+]
+```
+
+##
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @dotey的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

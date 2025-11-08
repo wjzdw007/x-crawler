@@ -1,0 +1,1222 @@
+# LLM Prompt 保存记录
+生成时间: 2025-11-08 01:36:51
+总结类型: user_daily
+用户: @elonmusk
+推文数量: 28
+数据哈希: a14a5dac
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+分析以下推文数据，看看今天马斯克都说了啥，有什么比较特别值得关注的点？
+用户名: @elonmusk
+显示名: Elon Musk
+关注者: 228744607
+
+## 推文数据（JSON格式）
+```json
+[
+  {
+    "id": "1986603223793475786",
+    "text": "RT @Tesla: Every day, we're working towards making sure everyone can get any good or service they want without sacrificing our resources.…",
+    "created_at": "Fri Nov 07 01:14:52 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986554051316838408",
+      "text": "Every day, we're working towards making sure everyone can get any good or service they want without sacrificing our resources.\n\nThis is sustainable abundance.\n\nTo achieve this, our products must be accessible to all\n\nTesla has all the pieces: AI tech + electrical-mechanical engineering + scalable production lines. No one else has that.",
+      "created_at": "Thu Nov 06 21:59:28 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986553968957243392",
+          "url": "https://pbs.twimg.com/media/G5GoTz7WwAABdxd.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "13298072",
+        "name": "Tesla",
+        "screen_name": "Tesla",
+        "description": "Electric vehicles, giant batteries & solar, AI & robotics / https://t.co/WbcKtqUxSs",
+        "followers_count": 24560045,
+        "friends_count": 77,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 930,
+        "favorite_count": 6455,
+        "reply_count": 433,
+        "quote_count": 105
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 930,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986605306626122077",
+    "text": "This is just the V2 Optimus hand. The V3 hand is another level beyond this. \n\nExquisite engineering.",
+    "created_at": "Fri Nov 07 01:23:09 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1986534372221034530",
+      "text": "Elon told me a few times that the hand is the most difficult part of the robot. 🖐️👏👏",
+      "created_at": "Thu Nov 06 20:41:17 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "14171401",
+        "name": "Maye Musk",
+        "screen_name": "mayemusk",
+        "description": "Author of A Woman Makes A Plan, now in 33 languages & 100+ countries 📖 Doctor of Dietetics 👩‍🎓 Supermodel 😉💃 ItsGreatToBe77 Manager: anna@mayemusk.com",
+        "followers_count": 1468800,
+        "friends_count": 177,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 577,
+        "favorite_count": 5542,
+        "reply_count": 546,
+        "quote_count": 38
+      }
+    },
+    "stats": {
+      "retweet_count": 398,
+      "favorite_count": 4112,
+      "reply_count": 764,
+      "quote_count": 48
+    }
+  },
+  {
+    "id": "1986628858679038003",
+    "text": "RT @Tesla: We love y’all",
+    "created_at": "Fri Nov 07 02:56:44 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986611901267386709",
+      "text": "We love y’all",
+      "created_at": "Fri Nov 07 01:49:21 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "13298072",
+        "name": "Tesla",
+        "screen_name": "Tesla",
+        "description": "Electric vehicles, giant batteries & solar, AI & robotics / https://t.co/WbcKtqUxSs",
+        "followers_count": 24564701,
+        "friends_count": 77,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2025,
+        "favorite_count": 26091,
+        "reply_count": 1733,
+        "quote_count": 172
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2025,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986636451761824177",
+    "text": "Grok Imagine prompt:\n\nthe lion sits up, his friends the zebra and giraffe come over, the camera follows him them vlog style, the animals stand together for a group shot,  the lion is in the middle of the shot, the giraffe bends down, they pose https://t.co/wBG8T2xFGC",
+    "created_at": "Fri Nov 07 03:26:54 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "video",
+        "id": "1986636376994160643",
+        "url": "https://video.twimg.com/amplify_video/1986636376994160643/vid/avc1/710x480/eoFeZxuPZc5rdeRo.mp4?tag=23",
+        "bitrate": 5184000
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 7592,
+      "favorite_count": 53722,
+      "reply_count": 4819,
+      "quote_count": 511
+    }
+  },
+  {
+    "id": "1986636519231438914",
+    "text": "https://t.co/QfwWwVUvLa",
+    "created_at": "Fri Nov 07 03:27:10 +0000 2025",
+    "lang": "zxx",
+    "media": [
+      {
+        "type": "video",
+        "id": "1986555366948134912",
+        "url": "https://video.twimg.com/amplify_video/1986555366948134912/vid/avc1/720x1280/GZzw6_fYX7Kp6S-W.mp4?tag=21",
+        "bitrate": 2176000
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 21639,
+      "favorite_count": 180936,
+      "reply_count": 11335,
+      "quote_count": 2103
+    }
+  },
+  {
+    "id": "1986663152554230271",
+    "text": "https://t.co/KTNB0bRs7S",
+    "created_at": "Fri Nov 07 05:13:00 +0000 2025",
+    "lang": "zxx",
+    "media": [
+      {
+        "type": "video",
+        "id": "1986565863411965954",
+        "url": "https://video.twimg.com/amplify_video/1986565863411965954/vid/avc1/1440x1080/uEmFbUkIZB703CZC.mp4?tag=21",
+        "bitrate": 10368000
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 6968,
+      "favorite_count": 95068,
+      "reply_count": 4266,
+      "quote_count": 475
+    }
+  },
+  {
+    "id": "1986663917163323407",
+    "text": "RT @cb_doge: ELON MUSK: \"Optimus will actually eliminate poverty. Optimus will actually give people incredible medical care. Optimus will u…",
+    "created_at": "Fri Nov 07 05:16:02 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986561116227395780",
+      "text": "ELON MUSK: \"Optimus will actually eliminate poverty. Optimus will actually give people incredible medical care. Optimus will ultimately be better than the best human surgeon with a level of precision that that isn't possible, that is beyond human.\" https://t.co/iiifu71q2F",
+      "created_at": "Thu Nov 06 22:27:33 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1986560990079574016",
+          "url": "https://video.twimg.com/amplify_video/1986560990079574016/vid/avc1/1634x1126/KCTLyvRiI7pjmogu.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1389913567671975937",
+        "name": "DogeDesigner",
+        "screen_name": "cb_doge",
+        "description": "",
+        "followers_count": 1765452,
+        "friends_count": 997,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3970,
+        "favorite_count": 24148,
+        "reply_count": 1997,
+        "quote_count": 403
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 3970,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986668008543224085",
+    "text": "RT @joeroganhq: Gad Saad: \"So empathy is an emotion that has evolved for very clear evolutionary reasons. It can compel us forward... But t…",
+    "created_at": "Fri Nov 07 05:32:18 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986612064262234114",
+      "text": "Gad Saad: \"So empathy is an emotion that has evolved for very clear evolutionary reasons. It can compel us forward... But the problem is when empathy misfires, it either becomes hyperactive or directs empathy to the wrong person.\"\n\nhttps://t.co/wXWXkJKNUc",
+      "created_at": "Fri Nov 07 01:50:00 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1986289809908793344",
+          "url": "https://video.twimg.com/amplify_video/1986289809908793344/vid/avc1/624x352/MclE4ZimEkFvwWe9.mp4?tag=21",
+          "bitrate": 832000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "2191193012",
+        "name": "Joe Rogan Podcast News",
+        "screen_name": "joeroganhq",
+        "description": "The #1 Joe Rogan Experience Podcast News Source | Fan run account",
+        "followers_count": 1827433,
+        "friends_count": 1439,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1333,
+        "favorite_count": 7150,
+        "reply_count": 640,
+        "quote_count": 83
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1333,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986669732402241879",
+    "text": "RT @thejefflutz: Two robots dancing at the Tesla shareholders meeting 🕺🏻😄 https://t.co/6KgJoajo2L",
+    "created_at": "Fri Nov 07 05:39:09 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "video",
+        "id": "1986558783464583169",
+        "url": "https://video.twimg.com/amplify_video/1986558783464583169/vid/avc1/1080x1920/xQQYI8RwN4VzSCMJ.mp4?tag=21",
+        "bitrate": 10368000
+      }
+    ],
+    "retweet": {
+      "id": "1986558899864936902",
+      "text": "Two robots dancing at the Tesla shareholders meeting 🕺🏻😄 https://t.co/6KgJoajo2L",
+      "created_at": "Thu Nov 06 22:18:44 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1986558783464583169",
+          "url": "https://video.twimg.com/amplify_video/1986558783464583169/vid/avc1/1080x1920/xQQYI8RwN4VzSCMJ.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "770102124382449664",
+        "name": "Jeff Lutz 🔋",
+        "screen_name": "thejefflutz",
+        "description": "CEO high tech manufacturing consulting on supply chain design, scale, cost, DFX. Ex Corp VP Supply Chain & CQO at Motorola, Google, Lenovo",
+        "followers_count": 53246,
+        "friends_count": 2358,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1301,
+        "favorite_count": 8453,
+        "reply_count": 609,
+        "quote_count": 133
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1301,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986670002473467931",
+    "text": "RT @TurkeyBeaver: With today’s launch, @SpaceX has hit 170 launches on a rolling 365 day clock 🚀😍\n\nThis is made possible by a hardcore focu…",
+    "created_at": "Fri Nov 07 05:40:13 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986570820421099793",
+      "text": "With today’s launch, @SpaceX has hit 170 launches on a rolling 365 day clock 🚀😍\n\nThis is made possible by a hardcore focus on safety and reliability!",
+      "created_at": "Thu Nov 06 23:06:06 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1986570406191624536",
+        "text": "Falcon 9 launches 28 @Starlink satellites from California https://t.co/NshJ66DVxf",
+        "created_at": "Thu Nov 06 23:04:28 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1986569661488693248",
+            "url": "https://pbs.twimg.com/media/G5G2lPKaAAA2-32.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1986570295793332224",
+            "url": "https://pbs.twimg.com/media/G5G3KKIasAADjrI.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 40283310,
+          "friends_count": 120,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 632,
+          "favorite_count": 4395,
+          "reply_count": 218,
+          "quote_count": 30
+        }
+      },
+      "user": {
+        "id": "954371342115094528",
+        "name": "Kiko Dontchev",
+        "screen_name": "TurkeyBeaver",
+        "description": "VP of Launch @ SpaceX and father of Finn and Otie",
+        "followers_count": 23784,
+        "friends_count": 468,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 846,
+        "favorite_count": 4880,
+        "reply_count": 215,
+        "quote_count": 25
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 846,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986671585227644931",
+    "text": "RT @cb_doge: Elon Musk on Optimus:\n\n\"The robots are just walking around the office, 24/7 with no one minding them &amp; then they go charge the…",
+    "created_at": "Fri Nov 07 05:46:31 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986559292950913096",
+      "text": "Elon Musk on Optimus:\n\n\"The robots are just walking around the office, 24/7 with no one minding them &amp; then they go charge themselves. It's going to be the biggest product of all time, bigger than cell phones, bigger than anything. There could be 10s of billions of robots.\" https://t.co/BnrvJLBqIk",
+      "created_at": "Thu Nov 06 22:20:18 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1986559116139978752",
+          "url": "https://video.twimg.com/amplify_video/1986559116139978752/vid/avc1/1080x1080/q9wQfaWn-fuwJ_U2.mp4?tag=21",
+          "bitrate": 8768000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1389913567671975937",
+        "name": "DogeDesigner",
+        "screen_name": "cb_doge",
+        "description": "",
+        "followers_count": 1765452,
+        "friends_count": 997,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1831,
+        "favorite_count": 11245,
+        "reply_count": 973,
+        "quote_count": 141
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1831,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986671994558140760",
+    "text": "RT @SawyerMerritt: NEWS: Elon Musk says in the next month or two Tesla will allow you to text while using FSD and reduce the attention moni…",
+    "created_at": "Fri Nov 07 05:48:08 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986557200303600111",
+      "text": "NEWS: Elon Musk says in the next month or two Tesla will allow you to text while using FSD and reduce the attention monitoring strictness. https://t.co/vhzx2v9goi",
+      "created_at": "Thu Nov 06 22:11:59 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1986557098226823168",
+          "url": "https://video.twimg.com/amplify_video/1986557098226823168/vid/avc1/1894x1060/gP5Ds5tDLNiXhgph.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "243013409",
+        "name": "Sawyer Merritt",
+        "screen_name": "SawyerMerritt",
+        "description": "EV/space/tech news. Bringing you the latest news in a single, easy-to-read feed. $TSLA investor & Model Y owner.",
+        "followers_count": 990012,
+        "friends_count": 410,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1500,
+        "favorite_count": 13117,
+        "reply_count": 616,
+        "quote_count": 153
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1500,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986672212242538859",
+    "text": "RT @XFreeze: Elon Musk: What we're about to embark upon is not merely a new chapter of the future of Tesla, but a whole new book and Optimu…",
+    "created_at": "Fri Nov 07 05:49:00 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986577893900886132",
+      "text": "Elon Musk: What we're about to embark upon is not merely a new chapter of the future of Tesla, but a whole new book and Optimus is a fundamental part of that\n\nThe scale of Optimus, like I said, that's really going to be something else\n\nI think it's going to be the biggest product of all time, by far\n\nLike bigger than cell phones, bigger than anything. I guess the way to think about it is that every human on Earth is going to want to have their own personal R2-D2 C-3PO\n\nI think there could be tens of billions of Optimus robots out there\n\nWe're going to launch on the fastest production ramp of any product, of any large complex manufactured product ever. And starting with building a million unit production line in Fremont. And then a 10 million unit per year production line here...\n\nI don't know where we're going to put the 100 million unit production line. Maybe on Mars, I don't know\n\nBut I think it's going to literally get to 100 million a year, maybe even a billion a year",
+      "created_at": "Thu Nov 06 23:34:13 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1986577730612396032",
+          "url": "https://video.twimg.com/ext_tw_video/1986577730612396032/pu/vid/avc1/1280x720/3GIdtonbhvd-vy_L.mp4?tag=12",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1818311005698678784",
+        "name": "X Freeze",
+        "screen_name": "XFreeze",
+        "description": "Tech updates, strategy, and bold takes. I am the coolest villain, don't forget",
+        "followers_count": 64717,
+        "friends_count": 1286,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1353,
+        "favorite_count": 5955,
+        "reply_count": 534,
+        "quote_count": 83
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1353,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986673038696632335",
+    "text": "Time to pull a LOT of rabbits out of the hat",
+    "created_at": "Fri Nov 07 05:52:17 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 19482,
+      "favorite_count": 233029,
+      "reply_count": 15648,
+      "quote_count": 2525
+    }
+  },
+  {
+    "id": "1986673418872496255",
+    "text": "RT @SawyerMerritt: Elon Musk: \"Have you watched any other shareholder meeting. They are snoozefests. Ours are bangers!\" https://t.co/Mex3NV…",
+    "created_at": "Fri Nov 07 05:53:48 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986553997134598605",
+      "text": "Elon Musk: \"Have you watched any other shareholder meeting. They are snoozefests. Ours are bangers!\" https://t.co/Mex3NVV1hn",
+      "created_at": "Thu Nov 06 21:59:15 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1986553906894155776",
+          "url": "https://video.twimg.com/amplify_video/1986553906894155776/vid/avc1/1894x1060/XeIXlCVzjhyhfv8s.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "243013409",
+        "name": "Sawyer Merritt",
+        "screen_name": "SawyerMerritt",
+        "description": "EV/space/tech news. Bringing you the latest news in a single, easy-to-read feed. $TSLA investor & Model Y owner.",
+        "followers_count": 990012,
+        "friends_count": 410,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1422,
+        "favorite_count": 11412,
+        "reply_count": 600,
+        "quote_count": 60
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1422,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986753752913854795",
+    "text": "As soon as you understand that the government is just the DMV at large scale, it makes perfect sense",
+    "created_at": "Fri Nov 07 11:13:01 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1986584384770572486",
+      "text": "Absolutely no lies told! 🎯💯 https://t.co/DKaqTSJhmq",
+      "created_at": "Fri Nov 07 00:00:00 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1986525193276112896",
+          "url": "https://video.twimg.com/amplify_video/1986525193276112896/vid/avc1/720x1280/URpBbTXqdl9lK-EL.mp4?tag=16",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1492007194388279333",
+        "name": "Declaration of Memes",
+        "screen_name": "LibertyCappy",
+        "description": "Liberty Maximalist 🖤💛 Pro: God ✝️, Liberty, Family, Free-Markets, Homesteading, Charity, Homeschool, Satire, Arms, Natural Rights, Voluntaryism - Anti War",
+        "followers_count": 982033,
+        "friends_count": 997,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 9658,
+        "favorite_count": 37841,
+        "reply_count": 640,
+        "quote_count": 690
+      }
+    },
+    "stats": {
+      "retweet_count": 23498,
+      "favorite_count": 152072,
+      "reply_count": 38854,
+      "quote_count": 688
+    }
+  },
+  {
+    "id": "1986757775779905608",
+    "text": "RT @ray4tesla: Does that look like a Nazi solute? That’s what Elon was called out for and yet MSN remains silent on this one. What’s going…",
+    "created_at": "Fri Nov 07 11:29:00 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986442025122865422",
+      "text": "Does that look like a Nazi solute? That’s what Elon was called out for and yet MSN remains silent on this one. What’s going on with those people?\n\nhttps://t.co/4TMdd5fcmg",
+      "created_at": "Thu Nov 06 14:34:19 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1986097225261285376",
+          "url": "https://video.twimg.com/amplify_video/1986097225261285376/vid/avc1/1280x720/GnMFFV_N2-RMotk3.mp4?tag=21",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "959168599519764480",
+        "name": "Ray",
+        "screen_name": "ray4tesla",
+        "description": "Tesla owner since 2015. TSLA holder since 2016. This account is about Tesla, EVs & other topics. My Tesla referral link: https://t.co/RrVfZj8heV",
+        "followers_count": 137081,
+        "friends_count": 4,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1383,
+        "favorite_count": 8959,
+        "reply_count": 1260,
+        "quote_count": 101
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1383,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986757815248245016",
+    "text": "RT @libsoftiktok: OMG. Mamdani doing MULTIPLE Nazi salutes\n\nI’m sure the media will be all over this! https://t.co/w36wFiI8Te",
+    "created_at": "Fri Nov 07 11:29:09 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "video",
+        "id": "1986097225261285376",
+        "url": "https://video.twimg.com/amplify_video/1986097225261285376/vid/avc1/1280x720/GnMFFV_N2-RMotk3.mp4?tag=21",
+        "bitrate": 2176000
+      }
+    ],
+    "retweet": {
+      "id": "1986097281599447099",
+      "text": "OMG. Mamdani doing MULTIPLE Nazi salutes\n\nI’m sure the media will be all over this! https://t.co/w36wFiI8Te",
+      "created_at": "Wed Nov 05 15:44:26 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1986097225261285376",
+          "url": "https://video.twimg.com/amplify_video/1986097225261285376/vid/avc1/1280x720/GnMFFV_N2-RMotk3.mp4?tag=21",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1326229737551912960",
+        "name": "Libs of TikTok",
+        "screen_name": "libsoftiktok",
+        "description": "News you can’t see anywhere else. 📧 submissions@libsoftiktok.com. DM submissions. Bookings: Partnerships@libsoftiktok.com. ⬇️Subscribe to our newsletter",
+        "followers_count": 4546075,
+        "friends_count": 1030,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4940,
+        "favorite_count": 40150,
+        "reply_count": 3172,
+        "quote_count": 682
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 4940,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986763077891850339",
+    "text": "RT @libsoftiktok: Newly re-elected Minneapolis Mayor Jacob Frey gave his victory speech in Somalian\nhttps://t.co/y8zyPYFlWp",
+    "created_at": "Fri Nov 07 11:50:04 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "video",
+        "id": "1986650996320210944",
+        "url": "https://video.twimg.com/amplify_video/1986650996320210944/vid/avc1/1152x1888/yJdmBjl5XdaKgS13.mp4?tag=21",
+        "bitrate": 10368000
+      }
+    ],
+    "retweet": {
+      "id": "1986668383769620911",
+      "text": "Newly re-elected Minneapolis Mayor Jacob Frey gave his victory speech in Somalian\nhttps://t.co/y8zyPYFlWp",
+      "created_at": "Fri Nov 07 05:33:47 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1986650996320210944",
+          "url": "https://video.twimg.com/amplify_video/1986650996320210944/vid/avc1/1152x1888/yJdmBjl5XdaKgS13.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1326229737551912960",
+        "name": "Libs of TikTok",
+        "screen_name": "libsoftiktok",
+        "description": "News you can’t see anywhere else. 📧 submissions@libsoftiktok.com. DM submissions. Bookings: Partnerships@libsoftiktok.com. ⬇️Subscribe to our newsletter",
+        "followers_count": 4546075,
+        "friends_count": 1030,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2544,
+        "favorite_count": 9277,
+        "reply_count": 2064,
+        "quote_count": 446
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2544,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986773240665239674",
+    "text": "RT @fermatslibrary: Andrew Wiles on the morning he discovered how to fix his proof of Fermat's Last Theorem https://t.co/7zoAAgEa6A",
+    "created_at": "Fri Nov 07 12:30:27 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "video",
+        "id": "1986131015996211200",
+        "url": "https://video.twimg.com/ext_tw_video/1986131015996211200/pu/vid/avc1/960x540/StpCvTOcctFeIDVq.mp4?tag=12",
+        "bitrate": 2176000
+      }
+    ],
+    "retweet": {
+      "id": "1986131120623145125",
+      "text": "Andrew Wiles on the morning he discovered how to fix his proof of Fermat's Last Theorem https://t.co/7zoAAgEa6A",
+      "created_at": "Wed Nov 05 17:58:54 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1986131015996211200",
+          "url": "https://video.twimg.com/ext_tw_video/1986131015996211200/pu/vid/avc1/960x540/StpCvTOcctFeIDVq.mp4?tag=12",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3511430425",
+        "name": "Fermat's Library",
+        "screen_name": "fermatslibrary",
+        "description": "A platform for illuminating academic papers. We annotate and share a paper every week. Save, annotate and share papers with anyone: https://t.co/0o2Pls3jmo",
+        "followers_count": 785045,
+        "friends_count": 4,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1712,
+        "favorite_count": 11530,
+        "reply_count": 453,
+        "quote_count": 239
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1712,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986806273879482857",
+    "text": "RT @Pontifex: Technological innovation can be a form of participation in the divine act of creation. It carries an ethical and spiritual we…",
+    "created_at": "Fri Nov 07 14:41:43 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986776900811837915",
+      "text": "Technological innovation can be a form of participation in the divine act of creation. It carries an ethical and spiritual weight, for every design choice expresses a vision of humanity. The Church therefore calls all builders of #AI to cultivate moral discernment as a fundamental part of their work—to develop systems that reflect justice, solidarity, and a genuine reverence for life.",
+      "created_at": "Fri Nov 07 12:45:00 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1922567634907791360",
+        "name": "Pope Leo XIV",
+        "screen_name": "Pontifex",
+        "description": "Welcome to the official account of His Holiness, Pope Leo XIV.",
+        "followers_count": 18583113,
+        "friends_count": 47,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3330,
+        "favorite_count": 20871,
+        "reply_count": 1640,
+        "quote_count": 891
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 3330,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986828293505794480",
+    "text": "RT @Pontifex: The media cannot and must not separate itself from the destiny of truth. Transparency of sources and ownership, accountabilit…",
+    "created_at": "Fri Nov 07 16:09:13 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986779416916263051",
+      "text": "The media cannot and must not separate itself from the destiny of truth. Transparency of sources and ownership, accountability, quality, clarity, and objectivity are the keys to truly opening citizens' rights for all peoples.",
+      "created_at": "Fri Nov 07 12:55:00 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1922567634907791360",
+        "name": "Pope Leo XIV",
+        "screen_name": "Pontifex",
+        "description": "Welcome to the official account of His Holiness, Pope Leo XIV.",
+        "followers_count": 18583113,
+        "friends_count": 47,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4103,
+        "favorite_count": 18516,
+        "reply_count": 1823,
+        "quote_count": 353
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 4103,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986828446107107464",
+    "text": "RT @JonBbC_TechGeek: These are the coolest mugs ever! https://t.co/egahRl4b8y",
+    "created_at": "Fri Nov 07 16:09:49 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1986640817994280960",
+        "url": "https://pbs.twimg.com/media/G5H3TFzXMAAVX3u.jpg"
+      }
+    ],
+    "retweet": {
+      "id": "1986640821274227058",
+      "text": "These are the coolest mugs ever! https://t.co/egahRl4b8y",
+      "created_at": "Fri Nov 07 03:44:16 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986640817994280960",
+          "url": "https://pbs.twimg.com/media/G5H3TFzXMAAVX3u.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "78155250",
+        "name": "TechGeek Tesla 🔋⚡️",
+        "screen_name": "JonBbC_TechGeek",
+        "description": "Tesla Geek | Covering FSD in Chicago | Father of 3 | Engineer",
+        "followers_count": 9331,
+        "friends_count": 1482,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1754,
+        "favorite_count": 9537,
+        "reply_count": 2836,
+        "quote_count": 57
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1754,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986828495885054347",
+    "text": "RT @cb_doge: This picture was taken on Mars today. https://t.co/1UON0RzoEk",
+    "created_at": "Fri Nov 07 16:10:01 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1986721850341097473",
+        "url": "https://pbs.twimg.com/media/G5JA_y0WgAEAqGd.jpg"
+      }
+    ],
+    "retweet": {
+      "id": "1986721883446784396",
+      "text": "This picture was taken on Mars today. https://t.co/1UON0RzoEk",
+      "created_at": "Fri Nov 07 09:06:23 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986721850341097473",
+          "url": "https://pbs.twimg.com/media/G5JA_y0WgAEAqGd.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1389913567671975937",
+        "name": "DogeDesigner",
+        "screen_name": "cb_doge",
+        "description": "",
+        "followers_count": 1765452,
+        "friends_count": 997,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2339,
+        "favorite_count": 10454,
+        "reply_count": 3944,
+        "quote_count": 122
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2339,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986833451946025145",
+    "text": "RT @elonmusk: @RolandForTexas You are a taker, not a maker. All you’ve done your whole life is take from the makers of the world. \n\nThe zer…",
+    "created_at": "Fri Nov 07 16:29:43 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1986833400171577503",
+      "text": "You are a taker, not a maker. All you’ve done your whole life is take from the makers of the world. \n\nThe zero-sum mindset you have is at the root of so much evil. Once you realize that civilization is not zero-sum and that it is about making far more than one consumes, then it becomes obvious that the path to prosperity for all is just let the makers make.\n\nRegarding Tesla, the reality is that I have been given nothing. \n\nHowever, if I lead Tesla to become the most valuable company in the world by far and it stays that way for 5 years, shareholders voted to award me 12% of what is built. Anyone who wants to come along for the ride can buy Tesla stock.\n\nIf Tesla “merely” becomes a $1.999 trillion dollar company, I get nothing. This is a great deal for shareholders, which is why they voted so overwhelmingly to approve this, for which I am immensely grateful. \n\nAnd they did so by a margin far more than you won your political seat.",
+      "created_at": "Fri Nov 07 16:29:30 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 228744607,
+        "friends_count": 1223,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 7765,
+        "favorite_count": 62687,
+        "reply_count": 5430,
+        "quote_count": 1170
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 7765,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1986834022069379553",
+    "text": "Grok can search 𝕏 and analyze or summarize anything",
+    "created_at": "Fri Nov 07 16:31:59 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1986779284653154687",
+      "text": "This is really so useful, ask Q then ask @grok to rank the answers https://t.co/qDFbPbQtl1",
+      "created_at": "Fri Nov 07 12:54:28 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986779235936313344",
+          "url": "https://pbs.twimg.com/media/G5J1ME0bIAA0VQW.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1577241403",
+        "name": "@levelsio",
+        "screen_name": "levelsio",
+        "description": "🇪🇺https://t.co/NdorAWqJC3\n📸https://t.co/lAyoqmSBRX $133K/m\n🏡https://t.co/1oqUgfD6CZ $40K/m\n🛰https://t.co/ZHSvI2wjyW $36K/m\n🌍https://t.co/UXK5AFqCaQ $16K/m\n👙https://t.co/RyXpqGuFM3 $14K/m\n💾https://t.co/M1hEUBAynC $6k/m",
+        "followers_count": 742780,
+        "friends_count": 2335,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 98,
+        "favorite_count": 1320,
+        "reply_count": 179,
+        "quote_count": 28
+      }
+    },
+    "stats": {
+      "retweet_count": 4970,
+      "favorite_count": 26606,
+      "reply_count": 5842,
+      "quote_count": 216
+    }
+  },
+  {
+    "id": "1986836508092080197",
+    "text": "The reason government programs are so inefficient is that, unlike a commercial company, the feedback loop for improvement is broken, because they have a state-mandated monopoly and can’t go out of business if customers are unhappy.\n\nNo matter how bad the service is at your DMV (sorry to pick on DMVs), you still have to use your DMV, because it’s a monopoly.",
+    "created_at": "Fri Nov 07 16:41:51 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 25387,
+      "favorite_count": 175819,
+      "reply_count": 14352,
+      "quote_count": 1871
+    }
+  },
+  {
+    "id": "1986886238411104432",
+    "text": "Grok upgrades",
+    "created_at": "Fri Nov 07 19:59:28 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1986728144712380682",
+      "text": "Someone from xAI reached out and asked me to retest grok-4-fast, because they've improved the injected system prompts. Huge improvement!\n\ngrok-4-fast-reasoning: 77.5% -&gt; 94.1%\ngrok-4-fast-non-reasoning: 77.9 -&gt; 97.9%\n\nI really appreciate that xAI takes this topic seriously. https://t.co/mfERpYncE3",
+      "created_at": "Fri Nov 07 09:31:15 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1986727878445182976",
+          "url": "https://pbs.twimg.com/media/G5JGerQXMAATp0U.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1684958423043944449",
+        "name": "xlr8harder",
+        "screen_name": "xlr8harder",
+        "description": "ai enjoyer, human flourishing, cat ✝️",
+        "followers_count": 12255,
+        "friends_count": 3140,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 94,
+        "favorite_count": 1660,
+        "reply_count": 116,
+        "quote_count": 27
+      }
+    },
+    "stats": {
+      "retweet_count": 2492,
+      "favorite_count": 19847,
+      "reply_count": 2315,
+      "quote_count": 86
+    }
+  }
+]
+```
+
+## 分析要求
+请用中文生成分析报告
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @elonmusk的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

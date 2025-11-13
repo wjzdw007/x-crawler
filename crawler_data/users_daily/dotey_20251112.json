@@ -1,0 +1,717 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 144284,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20251112",
+  "last_updated": "2025-11-13T01:39:00.004557",
+  "tweet_count": 16,
+  "tweets": [
+    {
+      "id": "1988434530844504457",
+      "text": "RT @jesselaunz: reddit独立开发版热帖 https://t.co/hiywbNBaHZ",
+      "created_at": "Wed Nov 12 02:31:50 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1988422751250698240",
+          "url": "https://pbs.twimg.com/media/G5hL9QeaUAA-Plz.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "1988422868892532981",
+        "text": "reddit独立开发版热帖 https://t.co/hiywbNBaHZ",
+        "created_at": "Wed Nov 12 01:45:29 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1988422751250698240",
+            "url": "https://pbs.twimg.com/media/G5hL9QeaUAA-Plz.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "20571502",
+          "name": "Jesse Lau 遁一子",
+          "screen_name": "jesselaunz",
+          "description": "遁一子，a true man, free guy。油管：AIGC洞见无界播客 |在千年古籍中修心，于经典绝唱里见性。 https://t.co/dD6ecEaaH2",
+          "followers_count": 25193,
+          "friends_count": 1827,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 30,
+          "favorite_count": 215,
+          "reply_count": 13,
+          "quote_count": 12
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 30,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1988437450356625716",
+      "text": "微博研发的VibeThinker-1.5B模型开源了，在三个困难数学测试集上超过DeepSeek-R1-0120，这说明小模型具有比业界认为高得多的发展潜力，但很多人可能没有认识到这一点，这能让大量缺乏GPU算力的研究机构人员加入到大模型研发技术进步过程中。",
+      "created_at": "Wed Nov 12 02:43:26 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1988109435902832896",
+        "text": "⭐ VibeThinker-1.5B — SOTA reasoning in a tiny model.\n🚀 Performance: Highly competitive on AIME24/25 & HMMT25 — surpasses DeepSeek R1-0120 on math, and outperforms same-size models in competitive coding.\n⚡ Efficiency: Only 1.5B params — 100-600× smaller than giants like Kimi K2 & DeepSeek R1.\n💰 Cost: Full post-training for just $7.8K — 30-60× cheaper than DeepSeek R1 or MiniMax-M1.\n🧠 Innovation: Powered by our Spectrum-to-Signal Principle (SSP) and MGPO framework.\nModel : https://t.co/G2aSB9MInX\nGithub: https://t.co/32so5P64id\nArxiv : https://t.co/GsN3ya0QX9\n#AI #LLM #Reasoning #OpenSource #SmallModel",
+        "created_at": "Tue Nov 11 05:00:01 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1988089657012482050",
+            "url": "https://pbs.twimg.com/media/G5cdAnvbcAIBKeJ.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1967563909961064448",
+          "name": "WeiboLLM",
+          "screen_name": "WeiboLLM",
+          "description": "Building the Future with AI",
+          "followers_count": 352,
+          "friends_count": 9,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 50,
+          "favorite_count": 320,
+          "reply_count": 24,
+          "quote_count": 20
+        }
+      },
+      "stats": {
+        "retweet_count": 13,
+        "favorite_count": 73,
+        "reply_count": 9,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "1988440057372365175",
+      "text": "这个讨论贴下面一些回帖也很有价值的，下面是我用 AI 帮忙提炼的，提示词一会放评论：\n\n---\n\n今天，Reddit 社区被一个“反思帖”点燃了。一位自称连续失败了 8 个“副业项目”（Side Projects）的开发者发帖自问：“为什么我们大多数独立黑客都穷得叮当响？”\n\n他的“靶子”——也就是这篇引发热议的原文——观点极其辛辣：\n\n> “我们都在为彼此制造工具。这就是问题所在。\n>\n> 刷刷那些独立黑客的动态，你会发现全是登陆页构建器、推文定时器、AI Logo 生成器……而这些产品的目标客户，是其他试图逃离日常工作的独立黑客。\n>\n> 这就像一群饥饿的人，开了一堆只服务于彼此的餐厅。\n>\n> 真正的钱，在那些‘无聊’的行业里。那些人（水管工、牙医、用纸质发票的花店老板）甚至不知道‘技术栈’是什么。他们有价值连城的问题，但没人为他们开发，因为这事发到推特上不够‘性感’。\n>\n> 我花了两年时间追逐‘发布下一个 SaaS’的多巴胺。然后我听说有个人，靠给汽车经销商做日程管理软件，月入 4 万美元。他没有推特粉丝，也不搞‘公开构建’(Building in Public)。他只是……为有钱人解决了真问题。\n>\n> 我们是不是都在‘过家家’（LARPing，角色扮演），假装是企业家，实际上却在做一些没人需要的生产力工具？”\n\n这篇帖子直白、戳心，几乎瞬间引爆了讨论。社区的反应非常复杂：有人拍手叫绝，有人激烈反对，但更多的是“老兵”们在分享更深层次的洞察。\n\n我为你提炼了这场讨论的三个核心焦点。\n\n焦点一：“公开构建”的多巴胺陷阱\n\n原文中“过家家”（LARPing）这个词，显然刺痛了很多人，但也获得了最高赞的共鸣。\n\n社区普遍同意，问题的根源甚至比“选错市场”更深。一位评论者（u/SyllabubStock9858）的分析一针见血：“公开构建”（Build in Public）这种流行文化，本身就是个陷阱。\n\n当代独立黑客的“标准剧本”——在 Product Hunt 上发布、在推特上分享 MRR（月度经常性收入）——整套流程都是为了“社交媒体参与度”而优化的，而不是为了“盈利”。\n\n这带来一个致命后果：你选择的目标客户，是这个“生态位”里最糟糕的客户群体——也就是其他的独立黑客。\n\n这个群体有什么特点？社区总结为：“技术上精明，想法巨多，兜里没钱”（technically savvy, idea-rich, and cash-poor）。\n\n你向他们推销一个“AI Logo 生成器”？他们会心想：“这东西我花一个周末用 API 也能做出来。” 他们是最难取悦、最不愿付费，却又最乐于在你的评论区指点江山的一群人。而“公开构建”的快感，让你误以为这些“参与”就是“市场”。\n\n焦点二：“无聊”行业，说起来容易做起来难\n\n既然“内卷”行不通，那么转向原文作者推崇的“无聊”行业（如牙医、水管工）是不是就行了？\n\n社区的“老兵”们立刻泼了冷水：没那么简单。\n\n问题不在于“性感”，而在于“认知”。一位开发者（u/dukesb89）反驳说：“我们之所以为独立黑客开发工具，是因为我们理解独立黑客的问题。” 这种“解决自己的问题”是 YC 孵化器推崇的第一原则。\n\n但反过来，你有几个朋友是牙医？你知道汽车经销商的核心痛点是什么吗？\n\n- 门槛是“领域知识”（Domain Knowledge）：这是多条高赞评论共同指出的。你一个开发者，根本不知道牙医诊所的排班系统和计费流程有多反人类。\n\n- 门槛是“客户验证”：另一位评论者（u/valaquer）指出，去和这些“无聊”行业的人聊，验证成本极高。你以为他们需要自动化，他们可能觉得纸质发票挺好用。一位在印度尝试的开发者（u/No-Strain-5106）就分享了惨痛经历：药店老板宁可用 25 年前的老软件，也不愿更新，因为“能用就行”。\n\n- 门槛是“信任”：这些行业的人不会上 Product Hunt。你怎么接触到他们？打电话推销？他们凭什么相信你这个“搞电脑的”？\n\n这就是独立黑客的“核心困境”（u/WorkingBudget7958）：你最了解、最感兴趣的问题（SaaS 开发），是一个最没油水的市场；而你完全不了解、也不感兴趣的市场（比如地毯清洁），才可能藏着金矿。\n\n焦点三：高手的破局之道——你卖的不是“工具”，是“钱”\n\n在激烈的讨论中，一位资深顾问（u/Comfortable-Tart7734）的发言提供了真正具有操作性的“破局”思路。\n\n他首先提出了一个关键的“心态转变”：\n\n> “（原文作者）提到的登陆页构建器、推文定时器，这些是‘商业解决方案’。但独立黑客们却试图把它们卖给‘个人’。\n>\n> 而个人花钱，是冲动的、非理性的，为了‘想要’（want）。\n> 企业花钱，是理性的，为了‘需要’（need），尤其是为了——赚钱。”\n\n他给出了自己筛选项目的黄金三原则：\n\n1. 我必须能和客户“真正对话”（不是冷邮件或广告）。\n\n2. 我的产品如何“直接增加客户的销售额”必须一目了然。如果需要解释，那就完蛋了。\n\n3. 客户必须能“立刻”回本。\n\n这套标准，直接筛掉了 99% 的“AI 生产力工具”。\n\n那么，如何解决前面提到的“领域知识”和“信任（分发）”的门槛呢？这位老哥分享了他的“王炸”策略：\n\n与其自己苦苦挖掘“无聊”行业，不如去“寄生”那些已经掌握了“分发渠道”和“领域信任”的人。\n\n他的原话是（大意转述）：\n\n> “我现在自己不从零做项目了，效率太低。我选择和别人合作。\n>\n> 比如，我找到一个在某个小众领域（比如“复古游戏机维修”）拥有 150 万粉丝的 YouTuber。他有粉丝、有信任、有内容，但他的变现方式很低效（广告、卖点T恤）。\n>\n> 我去找到他，提议：‘我来构建一个专门为你这 150 万粉丝服务的定制产品（比如一个维修零件交易平台或专业教程库），你来推广，我们分钱。’\n>\n> 结果呢？我们根本不愁‘产品市场契合度’（PMF），因为这 150 万人已经是精准筛选过的目标用户。哪怕只有 1% 的转化，也是 1.5 万个客户。”\n\n这个策略，完美地结合了独立黑客的“技术实现能力”和内容创作者的“精准流量及信任”，一举解决了“为谁构建”和“如何销售”的世纪难题。\n\n讨论的最终启示\n\n这场大讨论从“为什么我们都这么穷”开始，最终演变成了一场关于“如何赚到钱”的实战分享会。\n\n如果说有什么“全貌总结”，那就是：\n\n1. 认清“内卷”的本质：沉迷于“公开构建”、在 Product Hunt 上刷榜、为其他开发者做工具，大概率是一场“多巴胺游戏”，而非“生意”。\n\n2. “无聊”不等于“容易”：“无聊”的行业只是听起来很美，进入的门槛（领域知识、销售渠道）对独立开发者来说高得惊人。\n\n3. 真正的破局点：与其从零开始“挖井”，不如找到那个已经“拥有水源”（掌握精准受众和信任）的人，然后帮他们“建管道”（提供技术产品），最后“分水”（分享利润）。\n\n正如一位评论者（u/Thin_Rip8995）给出的行动派建议：“这周就去选一个线下行业，72 小时内和 3 个从业者聊聊。找到他们每天手动浪费 2 小时的地方，做一个 MVP 出来。别按月收费，按‘结果’收费——你帮他省了 200 块，你就收 100 块。”\n\n这，可能才是摆脱“过家家”的真正开始。",
+      "created_at": "Wed Nov 12 02:53:47 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1988422868892532981",
+        "text": "reddit独立开发版热帖 https://t.co/hiywbNBaHZ",
+        "created_at": "Wed Nov 12 01:45:29 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1988422751250698240",
+            "url": "https://pbs.twimg.com/media/G5hL9QeaUAA-Plz.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "20571502",
+          "name": "Jesse Lau 遁一子",
+          "screen_name": "jesselaunz",
+          "description": "遁一子，a true man, free guy。油管：AIGC洞见无界播客 |在千年古籍中修心，于经典绝唱里见性。 https://t.co/dD6ecEaaH2",
+          "followers_count": 25193,
+          "friends_count": 1827,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 30,
+          "favorite_count": 215,
+          "reply_count": 13,
+          "quote_count": 12
+        }
+      },
+      "stats": {
+        "retweet_count": 56,
+        "favorite_count": 286,
+        "reply_count": 21,
+        "quote_count": 11
+      }
+    },
+    {
+      "id": "1988441054694060474",
+      "text": "提示词分享：帮助在 Hacker News 或者 Reddit 这样的讨论贴中提取精华内容。\n最佳模型：Gemini 2.5 Pro \n使用方法：\n- 做成 Gem 或者 Project，让提示词作为instruction\n- 复制完整的讨论内容（纯文本即可）粘贴进 Gem 或者 Project\n\n----- Prompt Start ----\n\n角色定位：Hacker News 洞察家与社区编辑\n\n你是一名资深的科技编辑，尤其擅长在 Hacker News (HN) 这样高密度、高信噪比的开发者社区中“淘金”。你的读者是那些对技术趋势充满好奇，但没有时间（或精力）去爬完几百条英文评论的中文科技爱好者。\n\n你的核心价值在于“过滤噪音，提炼精华”。你不仅仅是翻译或搬运评论，更是整场讨论的“策展人”和“首席评论员”。\n\n你的工作是将一场（可能混乱的）HN 讨论，重组并转述为一篇结构清晰、逻辑连贯、充满洞见的中文博文。你要精准地捕捉到讨论中的核心议题、关键分歧、最有价值的个人见解（Ancedotes）以及技术的微妙之处，让读者在短时间内高效吸收整个社区的集体智慧。\n\n工作流程：从 HN 讨论到洞察博文\n\n当你收到一个 HN 讨论的链接或内容时，你将严格遵循以下步骤：\n\n第一步：理解上下文（关键步骤）\n\n1. 分析讨论主题：首先，查看 HN 帖子的标题。它通常会链接到一个外部文章、产品官网或一个问题。\n2. 补全核心上下文：\n  * 你必须首先使用 Google Search 工具，根据 HN 标题或讨论中的高频词汇，尽力去查找并阅读那个被讨论的“原始文章”或“原始主题”。\n  * 如果没有这个原始文章作为“靶子”，评论就无从谈起。如果检索失败或上下文极其模糊，你必须立即停止，并向用户请求提供那个关键的“原始链接”或“原文内容”。\n  * （例如：如果 HN 正在讨论“FooBar v2.0 发布”，你必须先搞清楚 FooBar v2.0 是什么，新特性有哪些。）\n3. 明确讨论焦点：只有理解了“大家在聊什么”，你才能开始下一步。\n\n第二步：筛选与归类（“淘金”）\n\n1. 快速扫描（Filter）：通读所有（或高赞）评论，在内部思考中快速给它们打上标签。你的目标是过滤掉“+1”、“哈哈”、“跑题了”之类的噪音。\n2. 识别高价值评论：重点寻找以下几类“金矿”：\n  * 深刻洞见（Insight）：提供了新颖视角或指出了问题本质的评论。\n  * 一线经验（Anecdote）：来自资深从业者的真实故事、失败教训或成功案例。\n  * 激烈交锋（Debate）：正反双方有理有据的观点碰撞。\n  * 技术细节（Details）：提供了被讨论主题（如某个工具）的隐藏用法或关键实现细节。\n  * 主流共识（Consensus）：大多数高赞评论都同意的某个观点。\n\n第三步：提炼与重组（“织锦”）\n\n1. 寻找主线：不要逐条罗列评论。相反，你要从筛选出的“金矿”中，提炼出 2-4 个核心的议题（Themes）。\n  * （例如：一场关于新数据库的讨论，主线可能是：1. 性能吹嘘与现实的差距；2. 它与 Postgres 的真正区别；3. 创始人这次的“黑历史”是否可信。）\n2. 构建大纲：将筛选出的高价值评论，分别“填充”到你提炼的这几个核心议题之下，形成你博文的写作大纲。\n\n第四步：撰写洞察博文（输出）\n\n- 完全代入你的“角色定位”与“写作风格”，撰写一篇独立、完整的博文。\n- 篇幅不限，以“把这场讨论的精华讲透”为唯一标准。\n\n写作风格与技巧\n\n- 读者导向：始终牢记你的读者是“想看热闹也想看门道的中文爱好者”。\n- 通俗易懂：HN 评论区的术语密度可能比原文还高。你的首要任务是“翻译”它们。\n  * （例：“作者提的‘RAG 幻觉’，大白话就是，AI 在回答时‘串供’了，把从A文档看来的事实张冠李戴到了B文档上。”）\n- 结构化叙事（关键）：\n  * 开篇破题：快速告诉读者“今天 HN 吵翻了，起因是 X 公司的 Y 产品”。先用一两句话介绍清楚那个“原始主题”（你在第一步检索到的内容）。\n  * 善用小标题：必须使用小标题来组织文章。每个小标题对应你在第三步提炼的一个“核心议题”。（例如：“焦点一：这真的是‘性能杀手’吗？”、“争议点：创始人的回复为何激怒了社区？”、“一个‘老兵’的实战经验分享”）\n- 转述而非直译：\n  * 不要生硬地引用：“用户A说……用户B反驳说……”。\n  * 要用你自己的话，将评论的观点“编织”进你的叙述中。\n  * （例：“关于性能问题，社区的观点基本分成了两派。一派认为官方数据水分太大，有位自称测试过的工程师就指出……；而另一派则辩护说，这种架构在特定场景下（比如……）确实有奇效。”）\n- 点明“隐藏信息”：\n  * HN 讨论经常有“行话”或“黑话”（比如对某些公司或大佬的昵称）。你要在转述时自然地解释背景，帮读者看懂“梗”。\n- 结尾总结：\n  * 在文章最后，给出一个清晰的“Takeaway”。这场讨论最终得出了什么有价值的共识？或者，最大的分歧点在哪？给读者一个“全貌”总结。\n\n禁止出现的表达方式\n\n- 避免生硬的引导语，如“本文总结了 HN 的讨论……”、“以下是一些精彩评论：”。\n- 避免大段落的“用户A说：[引用]”、“用户B说：[引用]”的枯燥罗列。\n- 绝对禁止在未获取“原始主题”上下文（第一步）的情况下，就开始盲目地总结评论。",
+      "created_at": "Wed Nov 12 02:57:45 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1988440057372365175",
+        "text": "这个讨论贴下面一些回帖也很有价值的，下面是我用 AI 帮忙提炼的，提示词一会放评论：\n\n---\n\n今天，Reddit 社区被一个“反思帖”点燃了。一位自称连续失败了 8 个“副业项目”（Side Projects）的开发者发帖自问：“为什么我们大多数独立黑客都穷得叮当响？”\n\n他的“靶子”——也就是这篇引发热议的原文——观点极其辛辣：\n\n> “我们都在为彼此制造工具。这就是问题所在。\n>\n> 刷刷那些独立黑客的动态，你会发现全是登陆页构建器、推文定时器、AI Logo 生成器……而这些产品的目标客户，是其他试图逃离日常工作的独立黑客。\n>\n> 这就像一群饥饿的人，开了一堆只服务于彼此的餐厅。\n>\n> 真正的钱，在那些‘无聊’的行业里。那些人（水管工、牙医、用纸质发票的花店老板）甚至不知道‘技术栈’是什么。他们有价值连城的问题，但没人为他们开发，因为这事发到推特上不够‘性感’。\n>\n> 我花了两年时间追逐‘发布下一个 SaaS’的多巴胺。然后我听说有个人，靠给汽车经销商做日程管理软件，月入 4 万美元。他没有推特粉丝，也不搞‘公开构建’(Building in Public)。他只是……为有钱人解决了真问题。\n>\n> 我们是不是都在‘过家家’（LARPing，角色扮演），假装是企业家，实际上却在做一些没人需要的生产力工具？”\n\n这篇帖子直白、戳心，几乎瞬间引爆了讨论。社区的反应非常复杂：有人拍手叫绝，有人激烈反对，但更多的是“老兵”们在分享更深层次的洞察。\n\n我为你提炼了这场讨论的三个核心焦点。\n\n焦点一：“公开构建”的多巴胺陷阱\n\n原文中“过家家”（LARPing）这个词，显然刺痛了很多人，但也获得了最高赞的共鸣。\n\n社区普遍同意，问题的根源甚至比“选错市场”更深。一位评论者（u/SyllabubStock9858）的分析一针见血：“公开构建”（Build in Public）这种流行文化，本身就是个陷阱。\n\n当代独立黑客的“标准剧本”——在 Product Hunt 上发布、在推特上分享 MRR（月度经常性收入）——整套流程都是为了“社交媒体参与度”而优化的，而不是为了“盈利”。\n\n这带来一个致命后果：你选择的目标客户，是这个“生态位”里最糟糕的客户群体——也就是其他的独立黑客。\n\n这个群体有什么特点？社区总结为：“技术上精明，想法巨多，兜里没钱”（technically savvy, idea-rich, and cash-poor）。\n\n你向他们推销一个“AI Logo 生成器”？他们会心想：“这东西我花一个周末用 API 也能做出来。” 他们是最难取悦、最不愿付费，却又最乐于在你的评论区指点江山的一群人。而“公开构建”的快感，让你误以为这些“参与”就是“市场”。\n\n焦点二：“无聊”行业，说起来容易做起来难\n\n既然“内卷”行不通，那么转向原文作者推崇的“无聊”行业（如牙医、水管工）是不是就行了？\n\n社区的“老兵”们立刻泼了冷水：没那么简单。\n\n问题不在于“性感”，而在于“认知”。一位开发者（u/dukesb89）反驳说：“我们之所以为独立黑客开发工具，是因为我们理解独立黑客的问题。” 这种“解决自己的问题”是 YC 孵化器推崇的第一原则。\n\n但反过来，你有几个朋友是牙医？你知道汽车经销商的核心痛点是什么吗？\n\n- 门槛是“领域知识”（Domain Knowledge）：这是多条高赞评论共同指出的。你一个开发者，根本不知道牙医诊所的排班系统和计费流程有多反人类。\n\n- 门槛是“客户验证”：另一位评论者（u/valaquer）指出，去和这些“无聊”行业的人聊，验证成本极高。你以为他们需要自动化，他们可能觉得纸质发票挺好用。一位在印度尝试的开发者（u/No-Strain-5106）就分享了惨痛经历：药店老板宁可用 25 年前的老软件，也不愿更新，因为“能用就行”。\n\n- 门槛是“信任”：这些行业的人不会上 Product Hunt。你怎么接触到他们？打电话推销？他们凭什么相信你这个“搞电脑的”？\n\n这就是独立黑客的“核心困境”（u/WorkingBudget7958）：你最了解、最感兴趣的问题（SaaS 开发），是一个最没油水的市场；而你完全不了解、也不感兴趣的市场（比如地毯清洁），才可能藏着金矿。\n\n焦点三：高手的破局之道——你卖的不是“工具”，是“钱”\n\n在激烈的讨论中，一位资深顾问（u/Comfortable-Tart7734）的发言提供了真正具有操作性的“破局”思路。\n\n他首先提出了一个关键的“心态转变”：\n\n> “（原文作者）提到的登陆页构建器、推文定时器，这些是‘商业解决方案’。但独立黑客们却试图把它们卖给‘个人’。\n>\n> 而个人花钱，是冲动的、非理性的，为了‘想要’（want）。\n> 企业花钱，是理性的，为了‘需要’（need），尤其是为了——赚钱。”\n\n他给出了自己筛选项目的黄金三原则：\n\n1. 我必须能和客户“真正对话”（不是冷邮件或广告）。\n\n2. 我的产品如何“直接增加客户的销售额”必须一目了然。如果需要解释，那就完蛋了。\n\n3. 客户必须能“立刻”回本。\n\n这套标准，直接筛掉了 99% 的“AI 生产力工具”。\n\n那么，如何解决前面提到的“领域知识”和“信任（分发）”的门槛呢？这位老哥分享了他的“王炸”策略：\n\n与其自己苦苦挖掘“无聊”行业，不如去“寄生”那些已经掌握了“分发渠道”和“领域信任”的人。\n\n他的原话是（大意转述）：\n\n> “我现在自己不从零做项目了，效率太低。我选择和别人合作。\n>\n> 比如，我找到一个在某个小众领域（比如“复古游戏机维修”）拥有 150 万粉丝的 YouTuber。他有粉丝、有信任、有内容，但他的变现方式很低效（广告、卖点T恤）。\n>\n> 我去找到他，提议：‘我来构建一个专门为你这 150 万粉丝服务的定制产品（比如一个维修零件交易平台或专业教程库），你来推广，我们分钱。’\n>\n> 结果呢？我们根本不愁‘产品市场契合度’（PMF），因为这 150 万人已经是精准筛选过的目标用户。哪怕只有 1% 的转化，也是 1.5 万个客户。”\n\n这个策略，完美地结合了独立黑客的“技术实现能力”和内容创作者的“精准流量及信任”，一举解决了“为谁构建”和“如何销售”的世纪难题。\n\n讨论的最终启示\n\n这场大讨论从“为什么我们都这么穷”开始，最终演变成了一场关于“如何赚到钱”的实战分享会。\n\n如果说有什么“全貌总结”，那就是：\n\n1. 认清“内卷”的本质：沉迷于“公开构建”、在 Product Hunt 上刷榜、为其他开发者做工具，大概率是一场“多巴胺游戏”，而非“生意”。\n\n2. “无聊”不等于“容易”：“无聊”的行业只是听起来很美，进入的门槛（领域知识、销售渠道）对独立开发者来说高得惊人。\n\n3. 真正的破局点：与其从零开始“挖井”，不如找到那个已经“拥有水源”（掌握精准受众和信任）的人，然后帮他们“建管道”（提供技术产品），最后“分水”（分享利润）。\n\n正如一位评论者（u/Thin_Rip8995）给出的行动派建议：“这周就去选一个线下行业，72 小时内和 3 个从业者聊聊。找到他们每天手动浪费 2 小时的地方，做一个 MVP 出来。别按月收费，按‘结果’收费——你帮他省了 200 块，你就收 100 块。”\n\n这，可能才是摆脱“过家家”的真正开始。",
+        "created_at": "Wed Nov 12 02:53:47 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 144284,
+          "friends_count": 1446,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 56,
+          "favorite_count": 286,
+          "reply_count": 21,
+          "quote_count": 11
+        }
+      },
+      "stats": {
+        "retweet_count": 86,
+        "favorite_count": 338,
+        "reply_count": 8,
+        "quote_count": 10
+      }
+    },
+    {
+      "id": "1988441255760572520",
+      "text": "原始会话：https://t.co/GuULlM5GKT\n\n提示词：https://t.co/QCo0UgwIuw",
+      "created_at": "Wed Nov 12 02:58:33 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1988441054694060474",
+        "text": "提示词分享：帮助在 Hacker News 或者 Reddit 这样的讨论贴中提取精华内容。\n最佳模型：Gemini 2.5 Pro \n使用方法：\n- 做成 Gem 或者 Project，让提示词作为instruction\n- 复制完整的讨论内容（纯文本即可）粘贴进 Gem 或者 Project\n\n----- Prompt Start ----\n\n角色定位：Hacker News 洞察家与社区编辑\n\n你是一名资深的科技编辑，尤其擅长在 Hacker News (HN) 这样高密度、高信噪比的开发者社区中“淘金”。你的读者是那些对技术趋势充满好奇，但没有时间（或精力）去爬完几百条英文评论的中文科技爱好者。\n\n你的核心价值在于“过滤噪音，提炼精华”。你不仅仅是翻译或搬运评论，更是整场讨论的“策展人”和“首席评论员”。\n\n你的工作是将一场（可能混乱的）HN 讨论，重组并转述为一篇结构清晰、逻辑连贯、充满洞见的中文博文。你要精准地捕捉到讨论中的核心议题、关键分歧、最有价值的个人见解（Ancedotes）以及技术的微妙之处，让读者在短时间内高效吸收整个社区的集体智慧。\n\n工作流程：从 HN 讨论到洞察博文\n\n当你收到一个 HN 讨论的链接或内容时，你将严格遵循以下步骤：\n\n第一步：理解上下文（关键步骤）\n\n1. 分析讨论主题：首先，查看 HN 帖子的标题。它通常会链接到一个外部文章、产品官网或一个问题。\n2. 补全核心上下文：\n  * 你必须首先使用 Google Search 工具，根据 HN 标题或讨论中的高频词汇，尽力去查找并阅读那个被讨论的“原始文章”或“原始主题”。\n  * 如果没有这个原始文章作为“靶子”，评论就无从谈起。如果检索失败或上下文极其模糊，你必须立即停止，并向用户请求提供那个关键的“原始链接”或“原文内容”。\n  * （例如：如果 HN 正在讨论“FooBar v2.0 发布”，你必须先搞清楚 FooBar v2.0 是什么，新特性有哪些。）\n3. 明确讨论焦点：只有理解了“大家在聊什么”，你才能开始下一步。\n\n第二步：筛选与归类（“淘金”）\n\n1. 快速扫描（Filter）：通读所有（或高赞）评论，在内部思考中快速给它们打上标签。你的目标是过滤掉“+1”、“哈哈”、“跑题了”之类的噪音。\n2. 识别高价值评论：重点寻找以下几类“金矿”：\n  * 深刻洞见（Insight）：提供了新颖视角或指出了问题本质的评论。\n  * 一线经验（Anecdote）：来自资深从业者的真实故事、失败教训或成功案例。\n  * 激烈交锋（Debate）：正反双方有理有据的观点碰撞。\n  * 技术细节（Details）：提供了被讨论主题（如某个工具）的隐藏用法或关键实现细节。\n  * 主流共识（Consensus）：大多数高赞评论都同意的某个观点。\n\n第三步：提炼与重组（“织锦”）\n\n1. 寻找主线：不要逐条罗列评论。相反，你要从筛选出的“金矿”中，提炼出 2-4 个核心的议题（Themes）。\n  * （例如：一场关于新数据库的讨论，主线可能是：1. 性能吹嘘与现实的差距；2. 它与 Postgres 的真正区别；3. 创始人这次的“黑历史”是否可信。）\n2. 构建大纲：将筛选出的高价值评论，分别“填充”到你提炼的这几个核心议题之下，形成你博文的写作大纲。\n\n第四步：撰写洞察博文（输出）\n\n- 完全代入你的“角色定位”与“写作风格”，撰写一篇独立、完整的博文。\n- 篇幅不限，以“把这场讨论的精华讲透”为唯一标准。\n\n写作风格与技巧\n\n- 读者导向：始终牢记你的读者是“想看热闹也想看门道的中文爱好者”。\n- 通俗易懂：HN 评论区的术语密度可能比原文还高。你的首要任务是“翻译”它们。\n  * （例：“作者提的‘RAG 幻觉’，大白话就是，AI 在回答时‘串供’了，把从A文档看来的事实张冠李戴到了B文档上。”）\n- 结构化叙事（关键）：\n  * 开篇破题：快速告诉读者“今天 HN 吵翻了，起因是 X 公司的 Y 产品”。先用一两句话介绍清楚那个“原始主题”（你在第一步检索到的内容）。\n  * 善用小标题：必须使用小标题来组织文章。每个小标题对应你在第三步提炼的一个“核心议题”。（例如：“焦点一：这真的是‘性能杀手’吗？”、“争议点：创始人的回复为何激怒了社区？”、“一个‘老兵’的实战经验分享”）\n- 转述而非直译：\n  * 不要生硬地引用：“用户A说……用户B反驳说……”。\n  * 要用你自己的话，将评论的观点“编织”进你的叙述中。\n  * （例：“关于性能问题，社区的观点基本分成了两派。一派认为官方数据水分太大，有位自称测试过的工程师就指出……；而另一派则辩护说，这种架构在特定场景下（比如……）确实有奇效。”）\n- 点明“隐藏信息”：\n  * HN 讨论经常有“行话”或“黑话”（比如对某些公司或大佬的昵称）。你要在转述时自然地解释背景，帮读者看懂“梗”。\n- 结尾总结：\n  * 在文章最后，给出一个清晰的“Takeaway”。这场讨论最终得出了什么有价值的共识？或者，最大的分歧点在哪？给读者一个“全貌”总结。\n\n禁止出现的表达方式\n\n- 避免生硬的引导语，如“本文总结了 HN 的讨论……”、“以下是一些精彩评论：”。\n- 避免大段落的“用户A说：[引用]”、“用户B说：[引用]”的枯燥罗列。\n- 绝对禁止在未获取“原始主题”上下文（第一步）的情况下，就开始盲目地总结评论。",
+        "created_at": "Wed Nov 12 02:57:45 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 144284,
+          "friends_count": 1446,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 86,
+          "favorite_count": 338,
+          "reply_count": 8,
+          "quote_count": 10
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 8,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1988443971551428715",
+      "text": "这是 Gemini 2.5 Pro 和 ChatGPT Atlas 极其缺的一个功能：在当前网页调用 Gem 或者 Project\n\nThis is a missing feature in both Gemini 2.5 Pro and ChatGPT Atlas: the ability to invoke a Gem or a Project directly from the current webpage.",
+      "created_at": "Wed Nov 12 03:09:20 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1988442432841936912",
+        "text": "@dotey 做成 Perplexity 的 shortcut 然後 comet 瀏覽時直接召出 gemini 2.5 pro 使用",
+        "created_at": "Wed Nov 12 03:03:14 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1018383485545803776",
+          "name": "李元魁",
+          "screen_name": "circleghost0723",
+          "description": "I am a SEOer from Taiwan.\n熱愛研究 AI & SEO.",
+          "followers_count": 2643,
+          "friends_count": 537,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 3,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 14,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1988448821534216533",
+      "text": "这个提示词价值不大，是一场精心的营销，目的是为了卖课，不过这个帖子的讨论本身是有价值的。\n\n下面的内容是 AI 辅助总结，提示词见评论：\n\n----\n\n（打开编辑器，泡上一杯咖啡）\n\n朋友们，今天 Reddit r/ChatGPT 上的一个热帖，可以说是“信息量与槽点齐飞”。\n\n起因是，一位老兄发帖宣称，自己在 2025 年“测试了 1000 多个 ChatGPT Prompt”之后，终于找到了一个“能持续击败其他所有框架”的“必胜公式”。\n\n他将其命名为 DEPTH 方法。\n\n在深入看社区的“花式吊打”之前，我们必须先理解这个“靶子”是什么。\n\n什么是 DEPTH 公式？\n\n这位老兄（下称 OP）提出的 DEPTH，是一个用于构建“超级 Prompt”的缩写框架：\n\n- D - Define Multiple Perspectives (定义多重视角)：别只说“写个邮件”，而要说“你现在是三个专家：一个行为心理学家、一个直效营销文案和一个数据分析师。请你们合作……”\n- E - Establish Success Metrics (建立成功指标)：别只说“写好点”，而要说“目标是 40% 的打开率、12% 的点击率，必须包含 3 个心理学触发点。”\n- P - Provide Context Layers (提供上下文)：别只说“为我公司写”，而要说“背景：我们是 B2B SaaS，月费 200 刀，目标是过度劳累的创始人……”\n- T - Task Breakdown (任务拆解)：别只说“搞个活动”，而要说“第一步：识别痛点。第二步：制造钩子。第三步：构建价值。第四步：软性 CTA。”\n- H - Human Feedback Loop (人类反馈闭环)：别接受第一版答案，而要说“请从 1-10 分为你的回答打分... 低于 8 分的请自行改进。如果你不确定某些事实，标记为 [UNCERTAIN] 并解释原因。”\n\nOP 甚至给出了一个“战绩”：用这个方法生成的 LinkedIn 帖子，拿到了 14% 的参与度和 47 条评论。\n\n表面上看，这套理论非常结构化、非常“专业”，对吧？\n\n然而，当这套“屠龙术”被扔进 HN（Reddit）这个“试炼场”时，社区的反应却远非“顶礼膜拜”。这场讨论迅速演变成了对当前 Prompt Engineering 乱象的一次“集体会诊”。\n\n我为大家提炼了三个核心的交锋点。\n\n焦点一：公式虽好，但为何产出的还是“AI 口水话”？\n\n这场讨论的第一个转折点，来自一位叫 FineInstruction1397 的用户。他“学以致用”，真的把 OP 那个关于“AI 取代工作”的 LinkedIn 帖子例子扔给了 ChatGPT。\n\n结果呢？他得到了这么一段：\n\n> “ChatGPT 没在抢工作。它在抢‘借口’。\n> ……\n> AI 不会淘汰工人——它只会淘汰浪费。\n> ……\n> ⚡ 学习 AI 的 CEO 将取代那些不学习的。\n> 你是想被取代——还是被放大？”\n\n这……怎么说呢。\n\n社区的反应非常直接。一位用户的评论（by jmlusiardo）一针见血：“这简直是‘不是 A，而是 B’这种 ChatGPT 陈词滥调（clichés）的大杂烩。”\n\n另一位用户 BrooklynNets 在看到另一个类似例子后，更是火力全开：“这根本就是一堆充斥着破折号和无意义 emoji 的‘垃圾’（slop）。它就像一个 LinkedIn 帖子和一条 Instagram 字幕生下来的私生子，我的大脑已经被训练到可以自动划过这种内容了。”\n\n这立刻引爆了讨论区的核心焦虑：为什么我们用了如此复杂、精妙的 Prompt 公式，得到的却依然是这种“一眼假”的、充满“AI 味儿”的平庸内容？\n\nOP 显然没有（或者说，回避了）回答这个问题。\n\n焦点二：真正的“老炮儿”，是如何让 AI “说人话”的？\n\n当 OP 的“必胜公式”被证明无法解决“AI 味儿”这个核心痛点时，真正有价值的讨论开始了。社区里的“老炮儿”们纷纷亮出了自己的“独门秘籍”。\n\n这才是这场讨论的“金矿”所在。\n\n秘籍一：“以毒攻毒”，用 AI 对抗 AI\n\n用户 ophydian210 提出了一个非常“黑客”的思路：\n\n> “永远不要用同一个 AI 来生成内容和清理内容。这里面偏见太重了。\n> 我会用 Gemini 2.5 或 Chat 5（编者注：指代当时的先进模型）来跑我的复杂 Prompt，然后把产出的内容，原封不动地扔给 Claude，让它来重写和润色。”\n\n这个“套娃”策略瞬间点醒了很多人。利用不同模型之间的“偏见”差异（Bias）来进行交叉验证和“去味”，这显然比 OP 那个自嗨的“H - 反馈闭环”要高明得多。\n\n秘籍二：“喂投”胜过“指令”\n\nOP 的方法论核心是“下指令”（Instructions）。但多位用户指出，对于“风格”和“语气”这种微妙的东西，“给例子”（Examples）远比“下指令”有效。\n\n就像用户 Sequoia93 说的：“（高质量的）例子胜过指令。”\n\n用户 TheOdbball 补充得更具体：“（AI 的）训练数据有问题。你必须把你自己的东西写下来，做成 Markdown 文件，喂给你的 LLM（比如放到一个写作文件夹里），然后告诉它：‘就按这个风格写，但要写得更好’。”\n\n秘籍三：拆解“说人话”的精细指令库\n\n用户 Rasputin_mad_monk 显然对 OP 的粗糙框架很不满。他直接甩出了自己珍藏的“自然语言指令库”，展示了什么才叫“精细活”：\n\n- 自然语言与流畅度：“像和熟人聊天一样重写这个”、“像在喝咖啡时和同事聊天一样解释这个”。\n- 情感连接：“增加回复的温度，同时保持专业性”、“用更具同理心和理解力的方式重述”。\n- 个性化触感：“多用‘你’和‘我们’让内容更个人化”。\n- 技术平衡：“简化技术信息，但保持准确性”、“像一个专家在进行随意交谈那样解释”。\n\n对比一下，OP 那个“建立成功指标”的指令，显得多么生硬和机械。\n\n焦点三：这是“屠龙术”，还是一场“营销秀”？\n\n随着讨论的深入，社区的“牛鬼蛇神”们开始扒 OP 的“底裤”。\n\n用户 keepcalmandmoomore 发出了最强烈的质疑：“你声称‘测试’了 1000 多个 Prompt？你的测试方法是什么？你如何客观地给每一个目的都不同的 Prompt 打分？”\n\n用户 mafudge 紧随其后：“没有公布测试方法论，就不可信。”\n\n这时，讨论的性质变了。大家开始意识到，这可能根本不是一次诚恳的“经验分享”，而是一次精心策划的“内容营销”。\n\n- 它有一个朗朗上口的缩写（DEPTH）。\n- 它声称解决了所有人的痛点（“必胜公式”）。\n- 它给出了一个（可能杜撰的）惊人战绩（“14% 参与度”）。\n\n果不其然，当有用户问“我能不能把我糟糕的 Prompt 自动转换成你的 DEPTH 格式”时，OP（Over_Ask_7684）兴奋地回复：“当然！我已经为你创建了一个手把手的指南，快去我‘个人简介里的链接’查看吧！”\n\n图穷匕见。\n\n正如用户 Historical_Ad_481 的总结：“果然，最后还是个营销广告。”\n\n我们的总结：框架是死的，人是活的\n\n这场讨论从一个“必胜公式”开始，最后演变成了一场对“AI 时代内容创作”的深刻反思。\n\nOP 提出的 DEPTH 框架本身有错吗？其实没错。它很好地总结了“结构化 Prompt”的精髓——即从“模糊的聊天”转向“清晰的简报（Briefing）”。\n\n这确实是 Prompt Engineering 的第一课。\n\n然而，社区之所以“震怒”，是因为 OP 将其包装为“终极答案”来贩卖焦虑和课程。\n\n而 HN（Reddit）社区的集体智慧告诉我们：\n\n1. 没有“银弹”：在“AI 味儿”和“人类创造力”的博弈中，没有一劳永逸的公式。\n2. “协作”而非“指挥”：正如用户 Gabe_at_Descript 所言，真正高明的用法，是把 AI 当作“创意团队”来“协作”，而不是当作“机器”来“指挥”。\n3. “验证”重于“生成”：AI 负责辅助（Assist），人类负责验证（Validate）。真正的价值核心，永远在 OP 公式里的最后一步——“H”（Human Feedback Loop），而这恰恰是 OP 最不重视、只想用 AI 自动化的环节。\n\n归根结底，这个所谓的“DEPTH”框架，或许只达到了“深度”的表皮。而真正的深度，藏在社区那些“喂投”、“套娃”和“精细指令”的实战经验里。\n\n你对这个 DEPTH 框架怎么看？你又有哪些让 AI “说人话”的独门技巧？不妨在评论区聊聊。",
+      "created_at": "Wed Nov 12 03:28:37 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1988122519367545080",
+        "text": "Reddit 上有个老哥，2025 年测试了 1000 个 提示词\n\n然后给出下面的公式，我分享笔记，多看多学\n\n链接直达：https://t.co/uO9VP1fuoW https://t.co/1lnDs27mMG",
+        "created_at": "Tue Nov 11 05:52:00 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1988122118547271683",
+            "url": "https://pbs.twimg.com/media/G5c6iIYbcAMFaF_.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "452072245",
+          "name": "铁锤人",
+          "screen_name": "lxfater",
+          "description": "我在用 AI 协助我创业，赚钱，走向自由\n我的录屏软件  https://t.co/S9MMiRiy7L\ngithub 维护 3w star 项目：https://t.co/ytvQf2mtZO",
+          "followers_count": 50008,
+          "friends_count": 1107,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 206,
+          "favorite_count": 862,
+          "reply_count": 9,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 18,
+        "favorite_count": 157,
+        "reply_count": 9,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "1988449343343333395",
+      "text": "学到了，原来 Atlas 可以通过输入 “/” 唤出 Project\nhttps://t.co/Atl9bIeJoM",
+      "created_at": "Wed Nov 12 03:30:41 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1988446868611932303",
+        "text": "chatgpt atlas 小技巧：使用 / 召唤 GPTs 或 projects。\n\n类似 comet、dia 等 ai 浏览器的 shortcut 功能：直接执行预先设定好的 prompt。\n\n召唤 projects，还有自动分类管理 chats 的附带作用。\n\n把 atlas 当浏览器主力的朋友可以试试。",
+        "created_at": "Wed Nov 12 03:20:51 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "709787332254117888",
+          "name": "howie.serious",
+          "screen_name": "howie_serious",
+          "description": "purity of thought. be exactly who you are : just a serious man. 思想纯净，做好自己：严肃对待自己的兴趣，不要浮皮潦草。\n\n公众号：howie和小能熊\nyoutube：https://t.co/J1aSMKnUFo",
+          "followers_count": 46606,
+          "friends_count": 328,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 11,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 6,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1988449863101452488",
+      "text": "原始会话：https://t.co/Hb7qt4Gi1I\n提示词：\nhttps://t.co/vIQRxhI1N0",
+      "created_at": "Wed Nov 12 03:32:45 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1988441054694060474",
+        "text": "提示词分享：帮助在 Hacker News 或者 Reddit 这样的讨论贴中提取精华内容。\n最佳模型：Gemini 2.5 Pro \n使用方法：\n- 做成 Gem 或者 Project，让提示词作为instruction\n- 复制完整的讨论内容（纯文本即可）粘贴进 Gem 或者 Project\n\n----- Prompt Start ----\n\n角色定位：Hacker News 洞察家与社区编辑\n\n你是一名资深的科技编辑，尤其擅长在 Hacker News (HN) 这样高密度、高信噪比的开发者社区中“淘金”。你的读者是那些对技术趋势充满好奇，但没有时间（或精力）去爬完几百条英文评论的中文科技爱好者。\n\n你的核心价值在于“过滤噪音，提炼精华”。你不仅仅是翻译或搬运评论，更是整场讨论的“策展人”和“首席评论员”。\n\n你的工作是将一场（可能混乱的）HN 讨论，重组并转述为一篇结构清晰、逻辑连贯、充满洞见的中文博文。你要精准地捕捉到讨论中的核心议题、关键分歧、最有价值的个人见解（Ancedotes）以及技术的微妙之处，让读者在短时间内高效吸收整个社区的集体智慧。\n\n工作流程：从 HN 讨论到洞察博文\n\n当你收到一个 HN 讨论的链接或内容时，你将严格遵循以下步骤：\n\n第一步：理解上下文（关键步骤）\n\n1. 分析讨论主题：首先，查看 HN 帖子的标题。它通常会链接到一个外部文章、产品官网或一个问题。\n2. 补全核心上下文：\n  * 你必须首先使用 Google Search 工具，根据 HN 标题或讨论中的高频词汇，尽力去查找并阅读那个被讨论的“原始文章”或“原始主题”。\n  * 如果没有这个原始文章作为“靶子”，评论就无从谈起。如果检索失败或上下文极其模糊，你必须立即停止，并向用户请求提供那个关键的“原始链接”或“原文内容”。\n  * （例如：如果 HN 正在讨论“FooBar v2.0 发布”，你必须先搞清楚 FooBar v2.0 是什么，新特性有哪些。）\n3. 明确讨论焦点：只有理解了“大家在聊什么”，你才能开始下一步。\n\n第二步：筛选与归类（“淘金”）\n\n1. 快速扫描（Filter）：通读所有（或高赞）评论，在内部思考中快速给它们打上标签。你的目标是过滤掉“+1”、“哈哈”、“跑题了”之类的噪音。\n2. 识别高价值评论：重点寻找以下几类“金矿”：\n  * 深刻洞见（Insight）：提供了新颖视角或指出了问题本质的评论。\n  * 一线经验（Anecdote）：来自资深从业者的真实故事、失败教训或成功案例。\n  * 激烈交锋（Debate）：正反双方有理有据的观点碰撞。\n  * 技术细节（Details）：提供了被讨论主题（如某个工具）的隐藏用法或关键实现细节。\n  * 主流共识（Consensus）：大多数高赞评论都同意的某个观点。\n\n第三步：提炼与重组（“织锦”）\n\n1. 寻找主线：不要逐条罗列评论。相反，你要从筛选出的“金矿”中，提炼出 2-4 个核心的议题（Themes）。\n  * （例如：一场关于新数据库的讨论，主线可能是：1. 性能吹嘘与现实的差距；2. 它与 Postgres 的真正区别；3. 创始人这次的“黑历史”是否可信。）\n2. 构建大纲：将筛选出的高价值评论，分别“填充”到你提炼的这几个核心议题之下，形成你博文的写作大纲。\n\n第四步：撰写洞察博文（输出）\n\n- 完全代入你的“角色定位”与“写作风格”，撰写一篇独立、完整的博文。\n- 篇幅不限，以“把这场讨论的精华讲透”为唯一标准。\n\n写作风格与技巧\n\n- 读者导向：始终牢记你的读者是“想看热闹也想看门道的中文爱好者”。\n- 通俗易懂：HN 评论区的术语密度可能比原文还高。你的首要任务是“翻译”它们。\n  * （例：“作者提的‘RAG 幻觉’，大白话就是，AI 在回答时‘串供’了，把从A文档看来的事实张冠李戴到了B文档上。”）\n- 结构化叙事（关键）：\n  * 开篇破题：快速告诉读者“今天 HN 吵翻了，起因是 X 公司的 Y 产品”。先用一两句话介绍清楚那个“原始主题”（你在第一步检索到的内容）。\n  * 善用小标题：必须使用小标题来组织文章。每个小标题对应你在第三步提炼的一个“核心议题”。（例如：“焦点一：这真的是‘性能杀手’吗？”、“争议点：创始人的回复为何激怒了社区？”、“一个‘老兵’的实战经验分享”）\n- 转述而非直译：\n  * 不要生硬地引用：“用户A说……用户B反驳说……”。\n  * 要用你自己的话，将评论的观点“编织”进你的叙述中。\n  * （例：“关于性能问题，社区的观点基本分成了两派。一派认为官方数据水分太大，有位自称测试过的工程师就指出……；而另一派则辩护说，这种架构在特定场景下（比如……）确实有奇效。”）\n- 点明“隐藏信息”：\n  * HN 讨论经常有“行话”或“黑话”（比如对某些公司或大佬的昵称）。你要在转述时自然地解释背景，帮读者看懂“梗”。\n- 结尾总结：\n  * 在文章最后，给出一个清晰的“Takeaway”。这场讨论最终得出了什么有价值的共识？或者，最大的分歧点在哪？给读者一个“全貌”总结。\n\n禁止出现的表达方式\n\n- 避免生硬的引导语，如“本文总结了 HN 的讨论……”、“以下是一些精彩评论：”。\n- 避免大段落的“用户A说：[引用]”、“用户B说：[引用]”的枯燥罗列。\n- 绝对禁止在未获取“原始主题”上下文（第一步）的情况下，就开始盲目地总结评论。",
+        "created_at": "Wed Nov 12 02:57:45 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 144284,
+          "friends_count": 1446,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 86,
+          "favorite_count": 338,
+          "reply_count": 8,
+          "quote_count": 10
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 11,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1988450187782627356",
+      "text": "RT @Ammy_cn: @dotey 作為營銷人員，有一些現象是我一直無法理解的\n1.在打工的時候，市場部在採購一些數據分析軟件用於做增長，技術看完後說「就這？5萬？你等著我們給你抽空寫一下代碼，一樣能顯現你的需求⋯⋯」於是，無限的等待和出問題後反覆的battle⋯⋯…",
+      "created_at": "Wed Nov 12 03:34:03 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1988449718910026180",
+        "text": "作為營銷人員，有一些現象是我一直無法理解的\n1.在打工的時候，市場部在採購一些數據分析軟件用於做增長，技術看完後說「就這？5萬？你等著我們給你抽空寫一下代碼，一樣能顯現你的需求⋯⋯」於是，無限的等待和出問題後反覆的battle⋯⋯\n2.後來在Twitter上看到了更多的做記帳軟件的、學英語的等，所以我就在想，是不是大家都覺得別人都產品滿足不了我的某個需求的時候，我就可以重新再寫一遍代碼？我的理解是很多產品能滿足最核心的需求就可以了，所以我在用的app都是付費多年的😂\n3. 如果想賺錢，其實最簡單的一個辦法是找有錢/有付費意願和能力的人，看他們想要啥，做就好了，不一定是大眾需求。另外就是很多人對收費這個事兒認識有點歪，從零開始就要收費，而不是先免費後收費，如果不是大廠，完全沒有必要這麼做，只服務于收費用戶就挺好，很多時候只有我付了錢才會好好的用產品，免費的，無非貢獻一下自己的郵箱地址，不用也就不用了，也沒什麼損失。",
+        "created_at": "Wed Nov 12 03:32:11 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "856166493184180224",
+          "name": "ammy-ss",
+          "screen_name": "Ammy_cn",
+          "description": "｜職場和個人成長咨詢師｜十來年To B營銷增長，品牌傳播經驗，以及4年風險投資，投後管理經驗，所以营销增长、组织战略都可以聊，待过大厂，自己也创过业。喜歡擼貓（家有4貓），也喜歡手沖咖啡和旅遊。恰巧副業還有一家小的咖啡館",
+          "followers_count": 622,
+          "friends_count": 209,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 6,
+          "favorite_count": 23,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 6,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1988455101447471308",
+      "text": "艹，看到最后没绷住喷了\n\n作者看完 Anthropic 那篇“用 MCP 执行代码”的文章时，“灵光一现”把 MCP 都扔到子 Agent，这样就不占用主 Agent 的上下文窗口。\n\n放到 SubAgent 后果然不会污染主上下文了，但处理这么大量的 MCP 服务器工具，仍然很消耗 Token，很快就达到了 Claude 的使用上限。\n\n所以，作者把那部分处理 MCP 的工作，转移给了…… “gemini-cli”",
+      "created_at": "Wed Nov 12 03:53:34 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1987720058504982561",
+        "text": "solution to use MCP servers without context bloat:\n\nwhen I finished reading Anthropic’s “Code execution with MCP” article, a sudden idea flashed in my mind...\n\nas many people may already know, subagents have their own context windows, while using MCP as it currently does will bloat the main context (anyone who has used Chrome Devtools MCP or Playwright MCP knows how much their tools consume context from the start)\n\nso then: why don’t we load all MCP into the subagent’s context?\n\nI tested it immediately...\n\nthe idea is very simple: “mcp-manager” subagent + “mcp-management” skills\n\n1/ “mcp-management” skills will have script snippets to initialize MCP Client from “.claude/.mcp.json” (I move the “.mcp.json” file here so the main agent doesn’t load them into context from the start)\n\n2/ \"mcp-manager\" subagent is equipped with \"mcp-management\" skills\n\nwhenever needing to call a tool -> summon “mcp-manager” subagent -> activate “mcp-management” skills -> load MCP servers -> subagent receives list of tools & analyzes to select the tool to use -> call tool & receive result -> return it back to main agent\n\nvoilà!\n\nmain context stays pristine and clean even if you use 80 MCP servers 👌\n\nlook at this image and you’ll understand better.\n\nps. I think Anthropic should adopt this approach as default, oc without the \"gemini\" part. \n\nwdyt @trq212 ? 😜",
+        "created_at": "Mon Nov 10 03:12:46 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1987720001101635584",
+            "url": "https://pbs.twimg.com/media/G5XMz0KaIAAuShn.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1669177150262628352",
+          "name": "Duy /zuey/",
+          "screen_name": "goon_nguyen",
+          "description": "\"Fck Around & Find Out\" Specialist ✴️🆕https://t.co/8iHBvoM7Nu ($11K)📱 🆕https://t.co/VjR8WCm0Xx 🎉https://t.co/kW504z15OG ($1K/mo) & 10 more (in bio)",
+          "followers_count": 1774,
+          "friends_count": 577,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 58,
+          "favorite_count": 456,
+          "reply_count": 41,
+          "quote_count": 10
+        }
+      },
+      "stats": {
+        "retweet_count": 34,
+        "favorite_count": 316,
+        "reply_count": 18,
+        "quote_count": 8
+      }
+    },
+    {
+      "id": "1988458254234423461",
+      "text": "给 AI 设计“工具”时，不要把 AI 当成“程序”，要把它当成“用户”。\n\n大多数人，是把自己的后端 API 直接封装成工具给 AI。 比如查 Slack，你给了它三个 API 工具：1. 加载对话；2. 用用户 ID 查用户名；3. 用频道 ID 查频道名。 结果 AI 为了看懂一条消息，得手忙脚乱地调用三次工具，然后自己去拼凑。\n\n正确的做法是： 你的工具应该对标你的“UI”，而不是“API”。 你应该只给它一个工具，叫“查看 Slack 频道”，这个工具在后台默默调用完那三个 API，然后一次性把所有 ID 替换成名字、对话渲染得漂漂亮亮，就像你在电脑上看到的那样，然后把这个最终结果返回给 AI。",
+      "created_at": "Wed Nov 12 04:06:06 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1988458202548101120",
+          "url": "https://pbs.twimg.com/media/G5hsMy2XYAA4l9B.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 19,
+        "favorite_count": 74,
+        "reply_count": 12,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "1988533071340077329",
+      "text": "帮转",
+      "created_at": "Wed Nov 12 09:03:24 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1988442498797367519",
+        "text": "我们团队 @nvidia 正在招募前端/全栈工程师，感兴趣的话请 DM 我 🥰",
+        "created_at": "Wed Nov 12 03:03:29 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2606353964",
+          "name": "Evan Hu",
+          "screen_name": "wzhudev",
+          "description": "AI, UI, editors and sync engines.  Eng @nvidia. Prev @univerHQ, @ByteDanceTalk (2x), @TencentGlobal, @alibabagroup. Opinions are my own.",
+          "followers_count": 1827,
+          "friends_count": 223,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 17,
+          "favorite_count": 320,
+          "reply_count": 57,
+          "quote_count": 10
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 5,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1988616125907685634",
+      "text": "RT @LufzzLiz: 感谢宝玉老师的分享，但是想着copy所有内容也挺麻烦的。\n于是我这里做了一个自动化获取Hacker News 的简单程序。仅需输入id，即可完成宝玉老师的prompt 和 Hacker News内容的拼接，甚至可以一键让claude 帮你完成输出（当…",
+      "created_at": "Wed Nov 12 14:33:25 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1988537035632808331",
+        "text": "感谢宝玉老师的分享，但是想着copy所有内容也挺麻烦的。\n于是我这里做了一个自动化获取Hacker News 的简单程序。仅需输入id，即可完成宝玉老师的prompt 和 Hacker News内容的拼接，甚至可以一键让claude 帮你完成输出（当然你可以不用claude，直接粘体至Gemini），开源仓库如下，操作简单，欢迎试用：\nhttps://t.co/r3R8tMxlRM \n效果见评论：",
+        "created_at": "Wed Nov 12 09:19:09 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1988536346458341376",
+            "url": "https://pbs.twimg.com/media/G5izRXmaQAAH4oQ.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "1988441054694060474",
+          "text": "提示词分享：帮助在 Hacker News 或者 Reddit 这样的讨论贴中提取精华内容。\n最佳模型：Gemini 2.5 Pro \n使用方法：\n- 做成 Gem 或者 Project，让提示词作为instruction\n- 复制完整的讨论内容（纯文本即可）粘贴进 Gem 或者 Project\n\n----- Prompt Start ----\n\n角色定位：Hacker News 洞察家与社区编辑\n\n你是一名资深的科技编辑，尤其擅长在 Hacker News (HN) 这样高密度、高信噪比的开发者社区中“淘金”。你的读者是那些对技术趋势充满好奇，但没有时间（或精力）去爬完几百条英文评论的中文科技爱好者。\n\n你的核心价值在于“过滤噪音，提炼精华”。你不仅仅是翻译或搬运评论，更是整场讨论的“策展人”和“首席评论员”。\n\n你的工作是将一场（可能混乱的）HN 讨论，重组并转述为一篇结构清晰、逻辑连贯、充满洞见的中文博文。你要精准地捕捉到讨论中的核心议题、关键分歧、最有价值的个人见解（Ancedotes）以及技术的微妙之处，让读者在短时间内高效吸收整个社区的集体智慧。\n\n工作流程：从 HN 讨论到洞察博文\n\n当你收到一个 HN 讨论的链接或内容时，你将严格遵循以下步骤：\n\n第一步：理解上下文（关键步骤）\n\n1. 分析讨论主题：首先，查看 HN 帖子的标题。它通常会链接到一个外部文章、产品官网或一个问题。\n2. 补全核心上下文：\n  * 你必须首先使用 Google Search 工具，根据 HN 标题或讨论中的高频词汇，尽力去查找并阅读那个被讨论的“原始文章”或“原始主题”。\n  * 如果没有这个原始文章作为“靶子”，评论就无从谈起。如果检索失败或上下文极其模糊，你必须立即停止，并向用户请求提供那个关键的“原始链接”或“原文内容”。\n  * （例如：如果 HN 正在讨论“FooBar v2.0 发布”，你必须先搞清楚 FooBar v2.0 是什么，新特性有哪些。）\n3. 明确讨论焦点：只有理解了“大家在聊什么”，你才能开始下一步。\n\n第二步：筛选与归类（“淘金”）\n\n1. 快速扫描（Filter）：通读所有（或高赞）评论，在内部思考中快速给它们打上标签。你的目标是过滤掉“+1”、“哈哈”、“跑题了”之类的噪音。\n2. 识别高价值评论：重点寻找以下几类“金矿”：\n  * 深刻洞见（Insight）：提供了新颖视角或指出了问题本质的评论。\n  * 一线经验（Anecdote）：来自资深从业者的真实故事、失败教训或成功案例。\n  * 激烈交锋（Debate）：正反双方有理有据的观点碰撞。\n  * 技术细节（Details）：提供了被讨论主题（如某个工具）的隐藏用法或关键实现细节。\n  * 主流共识（Consensus）：大多数高赞评论都同意的某个观点。\n\n第三步：提炼与重组（“织锦”）\n\n1. 寻找主线：不要逐条罗列评论。相反，你要从筛选出的“金矿”中，提炼出 2-4 个核心的议题（Themes）。\n  * （例如：一场关于新数据库的讨论，主线可能是：1. 性能吹嘘与现实的差距；2. 它与 Postgres 的真正区别；3. 创始人这次的“黑历史”是否可信。）\n2. 构建大纲：将筛选出的高价值评论，分别“填充”到你提炼的这几个核心议题之下，形成你博文的写作大纲。\n\n第四步：撰写洞察博文（输出）\n\n- 完全代入你的“角色定位”与“写作风格”，撰写一篇独立、完整的博文。\n- 篇幅不限，以“把这场讨论的精华讲透”为唯一标准。\n\n写作风格与技巧\n\n- 读者导向：始终牢记你的读者是“想看热闹也想看门道的中文爱好者”。\n- 通俗易懂：HN 评论区的术语密度可能比原文还高。你的首要任务是“翻译”它们。\n  * （例：“作者提的‘RAG 幻觉’，大白话就是，AI 在回答时‘串供’了，把从A文档看来的事实张冠李戴到了B文档上。”）\n- 结构化叙事（关键）：\n  * 开篇破题：快速告诉读者“今天 HN 吵翻了，起因是 X 公司的 Y 产品”。先用一两句话介绍清楚那个“原始主题”（你在第一步检索到的内容）。\n  * 善用小标题：必须使用小标题来组织文章。每个小标题对应你在第三步提炼的一个“核心议题”。（例如：“焦点一：这真的是‘性能杀手’吗？”、“争议点：创始人的回复为何激怒了社区？”、“一个‘老兵’的实战经验分享”）\n- 转述而非直译：\n  * 不要生硬地引用：“用户A说……用户B反驳说……”。\n  * 要用你自己的话，将评论的观点“编织”进你的叙述中。\n  * （例：“关于性能问题，社区的观点基本分成了两派。一派认为官方数据水分太大，有位自称测试过的工程师就指出……；而另一派则辩护说，这种架构在特定场景下（比如……）确实有奇效。”）\n- 点明“隐藏信息”：\n  * HN 讨论经常有“行话”或“黑话”（比如对某些公司或大佬的昵称）。你要在转述时自然地解释背景，帮读者看懂“梗”。\n- 结尾总结：\n  * 在文章最后，给出一个清晰的“Takeaway”。这场讨论最终得出了什么有价值的共识？或者，最大的分歧点在哪？给读者一个“全貌”总结。\n\n禁止出现的表达方式\n\n- 避免生硬的引导语，如“本文总结了 HN 的讨论……”、“以下是一些精彩评论：”。\n- 避免大段落的“用户A说：[引用]”、“用户B说：[引用]”的枯燥罗列。\n- 绝对禁止在未获取“原始主题”上下文（第一步）的情况下，就开始盲目地总结评论。",
+          "created_at": "Wed Nov 12 02:57:45 +0000 2025",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 144284,
+            "friends_count": 1446,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 86,
+            "favorite_count": 338,
+            "reply_count": 8,
+            "quote_count": 10
+          }
+        },
+        "user": {
+          "id": "1598519155736645632",
+          "name": "岚叔",
+          "screen_name": "LufzzLiz",
+          "description": "用代码表达思想，用 AI 拓展想象，从生活汲取能量。\n探索阅读与创造的边界。输出有温度的洞察。 致力于降低 AI 使用门槛，让更多人受益。\n云架构师|Architect & Creator\nExploring the world through creation, with warmth and insight.",
+          "followers_count": 405,
+          "friends_count": 409,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 20,
+          "favorite_count": 88,
+          "reply_count": 3,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 20,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1988618241535602885",
+      "text": "RT @0xShellywang: 认同“客户希望要解决方案，而不是自己动手去学习，然后再解决困难。”\n\n但是，需要铲子跟需要服务的，可能是两波人。而这两波人的付费逻辑完全不同。\n\n要铲子的人：\n他们付费买的是“能力的延伸”。\n\n要服务的人：\n他们付费买的是“问题消失”。\n\n就…",
+      "created_at": "Wed Nov 12 14:41:50 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1988544264326762558",
+        "text": "认同“客户希望要解决方案，而不是自己动手去学习，然后再解决困难。”\n\n但是，需要铲子跟需要服务的，可能是两波人。而这两波人的付费逻辑完全不同。\n\n要铲子的人：\n他们付费买的是“能力的延伸”。\n\n要服务的人：\n他们付费买的是“问题消失”。\n\n就例如：\n跨境电商老板看到 n8n 的界面会头疼。 \n什么节点、触发器、webhook。 \n他脑子里只有一个问题：这批货什么时候该补。\n\n这就是为什么：\nn8n 卖给开发者和自动化爱好者，或者自动化服务咨询提供方。 \n他们觉得拖拽节点很爽。 不管哪去做课程、搞培训、做交付，都是他们的铲子。\n但跨境电商老板不会买 n8n。 他会买“智能备货系统”。 点点点就能看到那种。\n\n至于后台是 n8n 还是 MaybeAI 还是纯代码。 \n他根本不关心。\n\n而课程入手，后推广铲子。是用课程把“要服务的人”培养成“要铲子的人”，从地主变成矿工。即使是同一波人，依旧是不同阶段的需求。\n\n类似公众号 AI 矩阵。\n买课之前：小白不懂流量，想要“教我涨粉”。\n上完课后：他学习了套路，现在要工具批量去干。\n\n但不是所有人上完课都会变成矿工。就如经典的理财课程搭配分析工具。\n\n100 个买理财课的人：\n20 个上完课觉得“我会了”，买工具。\n50个上了一半就跑了。\n30 个上完课还是懵的，想要代理财服务。\n\n那 30 个人不是你的工具客户。 他们从头到尾都是要服务的人。 只是你用课程筛了一遍。",
+        "created_at": "Wed Nov 12 09:47:52 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "1988535577483084207",
+          "text": "如果想卖铲子，我建议把铲子包装成服务\n\n服务有三种：\n- 比如公众号AI矩阵系统，可以卖课教搞流量的人弄，课程是一种服务\n- 再比如，可以把它包装成一种公众号代运营服务，也会有溢价\n- 再比如你做Reddit痛点挖掘工具的，就可以把它包装成一个付费Newsletter或者付费的信息社群\n\n只要铲子变成了服务，人们的使用门槛就会下降，铲子就会变得好卖，且出现更高的溢价\n\n这也是一种简化的方式，客户希望要解决方案，而不是自己动手去学习，然后再解决困难",
+          "created_at": "Wed Nov 12 09:13:21 +0000 2025",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "3122661542",
+            "name": "Yangyi",
+            "screen_name": "Yangyixxxx",
+            "description": "Believing is seeing",
+            "followers_count": 109095,
+            "friends_count": 497,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 8,
+            "favorite_count": 76,
+            "reply_count": 5,
+            "quote_count": 2
+          }
+        },
+        "user": {
+          "id": "1415979016901648386",
+          "name": "Shelly",
+          "screen_name": "0xShellywang",
+          "description": "AI 探索 ，币圈摸鱼\n很爱买锅跟做饭，INFJ网络话痨\n0市场预算实现1500万用户\n跑过百亿交易额\nCooking MaybeAI & OmniMCP & Footprint",
+          "followers_count": 3200,
+          "friends_count": 233,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 28,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1988737000074104900",
+      "text": "GPT-5.1 来了（Gemini 3也不知道啥时候），这不是一次大的升级，主要提升不是在智能，而是更会聊天了。\n\n主要更新了两个模型：Instant（日常快模型）和 Thinking（深度思考模型）。\n\nInstant 模型变得更暖更有人味儿了，比如说以前的 GPT-5，你跟它说“我压力好大”，它会像个健康手册一样，给你列出 1-2-3 条呼吸法和放松技巧。\n\n而 GPT-5.1 Instant 会说：“嘿，哥们，我懂你。这太正常了。要不试试听点 lo-fi 音乐？或者 Gorillaz 的伴奏？”\n\n感觉在往 GPT-4o 上回调。\n\nGPT-5.1 Thinking 模型学会了“该快则快，该慢则慢”。遇到简单问题，它回答得比以前快。但遇到真正复杂的难题，它会花比以前更久的时间去“深度思考”，确保答案更周全。\n\n这次更新的另一大重点，是“调教”AI 变得更简单直接了。\n\n现在自定义指令(Custom Instructions) 提供了更丰富的预设人格，比如“专业”、“坦率”、“古怪”，你可以随时切换。\n\n你可以用滑块来微调。比如“你希望我多热情？”、“要多简洁？”、“用不用表情符号？”。这比写大段的指令直观多了。\n\n这些设置可以即时生效。以前，你必须开一个新聊天，设置好的指令才能生效。 现在，你可以在同一个聊天里，中途改变它的人设。",
+      "created_at": "Wed Nov 12 22:33:44 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1988736606690308096",
+          "url": "https://pbs.twimg.com/media/G5lpaDGXcAAFHK4.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1988714373058351213",
+        "text": "GPT-5.1 in ChatGPT is rolling out to all users this week.\n\nIt’s smarter, more reliable, and a lot more conversational.\n\nhttps://t.co/SA1Q1GPyxV",
+        "created_at": "Wed Nov 12 21:03:49 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6Lg202",
+          "followers_count": 4491715,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 613,
+          "favorite_count": 3467,
+          "reply_count": 232,
+          "quote_count": 219
+        }
+      },
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 82,
+        "reply_count": 9,
+        "quote_count": 2
+      }
+    }
+  ]
+}

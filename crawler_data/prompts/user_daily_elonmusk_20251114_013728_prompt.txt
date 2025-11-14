@@ -1,0 +1,2620 @@
+# LLM Prompt 保存记录
+生成时间: 2025-11-14 01:37:28
+总结类型: user_daily
+用户: @elonmusk
+推文数量: 54
+数据哈希: cef06a4d
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+分析以下推文数据，看看今天马斯克都说了啥，有什么比较特别值得关注的点？
+用户名: @elonmusk
+显示名: Elon Musk
+关注者: 229072440
+
+## 推文数据（JSON格式）
+```json
+[
+  {
+    "id": "1988800025431101702",
+    "text": "RT @DirtyTesLa: Karpathy gives a glowing review of FSD 13 on his brand new HW4 Model X\n\nQuite a big upgrade from HW3!",
+    "created_at": "Thu Nov 13 02:44:10 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1988717955019157659",
+      "text": "Karpathy gives a glowing review of FSD 13 on his brand new HW4 Model X\n\nQuite a big upgrade from HW3!",
+      "created_at": "Wed Nov 12 21:18:03 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1988705360723763242",
+        "text": "I took delivery of a beautiful new shiny HW4 Tesla Model X today, so I immediately took it out for an FSD test drive, a bit like I used to do almost daily for 5 years. Basically... I'm amazed - it drives really, really well, smooth, confident, noticeably better than what I'm used to on HW3 (my previous car) and eons ahead of the version I remember driving up highway 280 on my first day at Tesla ~9 years ago, where I had to intervene every time the road mildly curved or sloped. (note this is v13, my car hasn't been offered the latest v14 yet)\n\nOn the highway, I felt like a passenger in some super high tech Maglev train pod - the car is locked in the center of the lane while I'm looking out from Model X's higher vantage point and its panoramic front window, listening to the (incredible) sound system, or chatting with Grok. On city streets, the car casually handled a number of tricky scenarios that I remember losing sleep over just a few years ago. It negotiated incoming cars in tight lanes, it gracefully went around construction and temporarily in-lane stationary cars, it correctly timed tricky left turns with incoming traffic from both sides, it gracefully gave way to the car that went out of order in the 4-way stop sign, it found a way to squeeze into a bumper to bumper traffic to make its turn, it overtook the bus that was loading passengers but still stopped for the stop sign that was blocked by the bus, and at the end of the route it circled around a parking lot, found a spot and... parked. Basically a flawless drive.\n\nFor context, I'm used to going out for a brief test drive around the neighborhood to return with 20 clips of things that could be improved. It's new for me to do just that and exactly like I used to, but come back with nothing. Perfect drive, no notes. I expect there's still more work for the team in the long march of 9s, but it's just so cool to see that we're beyond finding issues on any individual ~1 hour drive around the neighborhood, you actually have to go to the fleet and mine them. Back then, I processed the incredible promise of vehicle autonomy at scale (in the fully scaleable, vision only, end-to-end Tesla way) only intellectually, but now it is possible to feel it intuitively too if you just go out for a drive. Wait, of course surround video stream at 60Hz processed by a fully dedicated \"driving brain\" neural net will work, and it will be so much better and safer than a human driver. Did anyone else think otherwise?\n\nI also watched @aelluswamy 's new ICCV25 talk last week (https://t.co/RdaM23kvez) that hints at some of the recent under the hood technical components driving this progress. Sensor streams (videos, maps, kinematics, audio, ...) over long contexts (e.g. ~30 seconds) go into a big neural net, steering/acceleration comes out, optionally with visualization auxiliary data. This is the dream of the complete Software 1.0 -> Software 2.0 re-write that scales fully with data streaming from millions of cars in the fleet and the compute capacity of your chip, not some engineer's clever new DoubleParkedCarHandler C++ abstraction with undefined test-time characteristics of memory and runtime. There's a lot more hints in the video on where things are going with the emerging \"robotics+AI at scale stack\". World reconstructors, world simulators \"dreaming\" dynamics, RL, all of these components general, foundational, neural net based, how the car is really just one kind of robot... are people getting this yet?\n\nHuge congrats to the team - you're building magic objects of the future, you rock! And I love my car <3.",
+        "created_at": "Wed Nov 12 20:28:01 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "33836629",
+          "name": "Andrej Karpathy",
+          "screen_name": "karpathy",
+          "description": "Building @EurekaLabsAI. Previously Director of AI @ Tesla, founding team @ OpenAI, CS231n/PhD @ Stanford. I like to train large deep neural nets.",
+          "followers_count": 1469403,
+          "friends_count": 1025,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2800,
+          "favorite_count": 26416,
+          "reply_count": 933,
+          "quote_count": 527
+        }
+      },
+      "user": {
+        "id": "1118594454515003393",
+        "name": "Dirty Tesla",
+        "screen_name": "DirtyTesLa",
+        "description": "YouTube and Links: https://t.co/xDxdMQtRrJ",
+        "followers_count": 138174,
+        "friends_count": 1391,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 403,
+        "favorite_count": 2481,
+        "reply_count": 143,
+        "quote_count": 11
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 403,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988800419364237767",
+    "text": "RT @TeslaCharging: First highway sign with Superchargers, more to come https://t.co/k6VWcEJDyZ",
+    "created_at": "Thu Nov 13 02:45:44 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1970987414668873729",
+        "url": "https://pbs.twimg.com/media/G1panGQakAECnoR.jpg"
+      }
+    ],
+    "retweet": {
+      "id": "1970987475951903142",
+      "text": "First highway sign with Superchargers, more to come https://t.co/k6VWcEJDyZ",
+      "created_at": "Wed Sep 24 23:03:28 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1970987414668873729",
+          "url": "https://pbs.twimg.com/media/G1panGQakAECnoR.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1346535293449428992",
+        "name": "Tesla Charging",
+        "screen_name": "TeslaCharging",
+        "description": "New Superchargers and all things charging",
+        "followers_count": 268477,
+        "friends_count": 89,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1798,
+        "favorite_count": 16355,
+        "reply_count": 862,
+        "quote_count": 245
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1798,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988817100723614087",
+    "text": "RT @XFreeze: Make Grok your go-to AI assistant and get instant responses with just your voice on iOS\n\nIt’s incredibly helpful, makes your d…",
+    "created_at": "Thu Nov 13 03:52:01 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1988803291497582615",
+      "text": "Make Grok your go-to AI assistant and get instant responses with just your voice on iOS\n\nIt’s incredibly helpful, makes your daily experience smoother and smarter\n\nHow to set it up:\n➝ Open Settings\n➝ Tap Action Button\n➝ Swipe to Shortcut\n➝ Choose a shortcut\n➝ Search for Grok App\n➝ Select “Talk to Grok”\n\n✅ Done!\n\nNow, just press & hold the Action Button for instant Grok access",
+      "created_at": "Thu Nov 13 02:57:09 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988802070720258048",
+          "url": "https://video.twimg.com/amplify_video/1988802070720258048/vid/avc1/1080x1080/22o1sMIzYYJ6ATIi.mp4?tag=21",
+          "bitrate": 8768000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1818311005698678784",
+        "name": "X Freeze",
+        "screen_name": "XFreeze",
+        "description": "tour guide for Grok",
+        "followers_count": 66452,
+        "friends_count": 1244,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 530,
+        "favorite_count": 2301,
+        "reply_count": 321,
+        "quote_count": 22
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 530,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988819766166057407",
+    "text": "RT @DirtyTesLa: Just drove FSD 14.1.7 over 30 minutes and it was 100% smooth. \n\nNO brake stabbing. Great job @Tesla_AI 👍 https://t.co/Qqje3…",
+    "created_at": "Thu Nov 13 04:02:37 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1988789049495302411",
+      "text": "Just drove FSD 14.1.7 over 30 minutes and it was 100% smooth. \n\nNO brake stabbing. Great job @Tesla_AI 👍 https://t.co/Qqje34Ooe0",
+      "created_at": "Thu Nov 13 02:00:33 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1988789047154679808",
+          "url": "https://pbs.twimg.com/media/G5mZGfDXoAAK5hz.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1118594454515003393",
+        "name": "Dirty Tesla",
+        "screen_name": "DirtyTesLa",
+        "description": "YouTube and Links: https://t.co/xDxdMQtRrJ",
+        "followers_count": 138174,
+        "friends_count": 1391,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 700,
+        "favorite_count": 5392,
+        "reply_count": 358,
+        "quote_count": 40
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 700,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988838420433518972",
+    "text": "RT @EthanHe_42: Grok Imagine is insanely fast. Generate images in real time as you scroll. https://t.co/PNC3Cz6YB8",
+    "created_at": "Thu Nov 13 05:16:44 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "video",
+        "id": "1988832518473121792",
+        "url": "https://video.twimg.com/amplify_video/1988832518473121792/vid/avc1/1452x1200/63CWwvhIwInA8TTJ.mp4?tag=21",
+        "bitrate": 10368000
+      }
+    ],
+    "retweet": {
+      "id": "1988832707200045349",
+      "text": "Grok Imagine is insanely fast. Generate images in real time as you scroll. https://t.co/PNC3Cz6YB8",
+      "created_at": "Thu Nov 13 04:54:02 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988832518473121792",
+          "url": "https://video.twimg.com/amplify_video/1988832518473121792/vid/avc1/1452x1200/63CWwvhIwInA8TTJ.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3086182267",
+        "name": "Ethan He",
+        "screen_name": "EthanHe_42",
+        "description": "AI @xai | @grok Imagine, Multimodal | prev @nvidia @AIatMeta @CarnegieMellon | 8k citations 5k GitHub stars | views are my own",
+        "followers_count": 23356,
+        "friends_count": 698,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 562,
+        "favorite_count": 2414,
+        "reply_count": 383,
+        "quote_count": 21
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 562,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988862499353952342",
+    "text": "RT @MarioNawfal: GROK GOT A FILING BRAIN – AND IT NEVER FORGETS\n\nxAI update gives Grok something wild – the ability to actually read your f…",
+    "created_at": "Thu Nov 13 06:52:25 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1988839440790290471",
+      "text": "GROK GOT A FILING BRAIN – AND IT NEVER FORGETS\n\nxAI update gives Grok something wild – the ability to actually read your files and think through them!\n\nFile Mode:\n\n• Upload PDFs, code, CSVs, or full docs for instant analysis\n\n• Handles multiple files at once – blends info into one smart answer\n\n• Searches, summarizes, and explains in seconds\n\n• Basically a research assistant with zero burnout\n\nYou bring the data – Grok brings the file brain!\n\nSource: @techdevnotes",
+      "created_at": "Thu Nov 13 05:20:48 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988839237769179136",
+          "url": "https://video.twimg.com/amplify_video/1988839237769179136/vid/avc1/1920x1080/2HwRwYtg_99JGw9k.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": null,
+        "text": "",
+        "created_at": null,
+        "lang": null,
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": null,
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "user": {
+        "id": "1319287761048723458",
+        "name": "Mario Nawfal",
+        "screen_name": "MarioNawfal",
+        "description": "Largest Show on X | Investor 700+ Startups | Founder @ibcgroupio , https://t.co/sw7OQ5KgAW",
+        "followers_count": 2673602,
+        "friends_count": 49930,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 644,
+        "favorite_count": 2864,
+        "reply_count": 407,
+        "quote_count": 24
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 644,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988862686994506238",
+    "text": "RT @Artedeingenio: Tip for Grok Imagine:\n\nUse this prompt to simulate the pencil drawing effect:\n\na hand draws and colors the sketch\n\nHere,…",
+    "created_at": "Thu Nov 13 06:53:10 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1988551983574237218",
+      "text": "Tip for Grok Imagine:\n\nUse this prompt to simulate the pencil drawing effect:\n\na hand draws and colors the sketch\n\nHere, I used a sketch-style image as the base.\n\nAs you can see, the effect looks really beautiful ✏️✨",
+      "created_at": "Wed Nov 12 10:18:33 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988551784332197889",
+          "url": "https://video.twimg.com/amplify_video/1988551784332197889/vid/avc1/540x540/jw-aqmWxDdpbvpos.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1702568876",
+        "name": "OscarAI",
+        "screen_name": "Artedeingenio",
+        "description": "👨‍🎨 AI artist\n🤖 Expert in generative AI\n\n💥 Every day I share amazing srefs and tutorials with my subscribers.\n\n🤯 DomoAI Creator - Link below",
+        "followers_count": 42968,
+        "friends_count": 914,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 478,
+        "favorite_count": 2451,
+        "reply_count": 283,
+        "quote_count": 31
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 478,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988864075443409096",
+    "text": "RT @Jason: Agreed! \n\nAwesome people, immaculate vibes, insightful podcasters, hilarious comedians, fantastic founders and talented chefs..…",
+    "created_at": "Thu Nov 13 06:58:41 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1988841792876204109",
+      "text": "Agreed! \n\nAwesome people, immaculate vibes, insightful podcasters, hilarious comedians, fantastic founders and talented chefs.. Austin has it all!",
+      "created_at": "Thu Nov 13 05:30:08 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1988693851226406988",
+        "text": "Move to Austin! It gets better very year. \n\nSo many cool, world-class people are moving to Austin from SF, LA, NY, London and many other parts of the world!\n\nAustin++",
+        "created_at": "Wed Nov 12 19:42:16 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "44196397",
+          "name": "Elon Musk",
+          "screen_name": "elonmusk",
+          "description": "",
+          "followers_count": 229072440,
+          "friends_count": 1226,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5634,
+          "favorite_count": 65972,
+          "reply_count": 9128,
+          "quote_count": 942
+        }
+      },
+      "user": {
+        "id": "3840",
+        "name": "@jason",
+        "screen_name": "Jason",
+        "description": "first investor in https://t.co/M6cblbFld9 Host: @twistartups @theallinpod; I also invest in 100 startups a year @launch & @founderuni jason@calacanis.com for life",
+        "followers_count": 1034032,
+        "friends_count": 5725,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 424,
+        "favorite_count": 2517,
+        "reply_count": 260,
+        "quote_count": 22
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 424,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988864207530373273",
+    "text": "RT @arrakis_ai: Grok Imagine is insane.. https://t.co/T5Rn9rf4bz",
+    "created_at": "Thu Nov 13 06:59:13 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1988397068944371712",
+        "url": "https://pbs.twimg.com/media/G5g0mWbbcAAyJDJ.jpg"
+      }
+    ],
+    "retweet": {
+      "id": "1988397130365698247",
+      "text": "Grok Imagine is insane.. https://t.co/T5Rn9rf4bz",
+      "created_at": "Wed Nov 12 00:03:13 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1988397068944371712",
+          "url": "https://pbs.twimg.com/media/G5g0mWbbcAAyJDJ.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1707588370795515904",
+        "name": "CHOI",
+        "screen_name": "arrakis_ai",
+        "description": "Founder of Korea’s most trusted AI channel @GenexisAI. Sharing the latest global AI trends, tools, and AGI insights.",
+        "followers_count": 8586,
+        "friends_count": 1124,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 478,
+        "favorite_count": 2897,
+        "reply_count": 199,
+        "quote_count": 34
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 478,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988865720982118479",
+    "text": "RT @EvaFoxU: Elon Musk on XChat:\n\n“There are just some things that are less insecure than others. So, you know, on X, we just rebuilt the e…",
+    "created_at": "Thu Nov 13 07:05:13 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1988548071735664827",
+      "text": "Elon Musk on XChat:\n\n“There are just some things that are less insecure than others. So, you know, on X, we just rebuilt the entire messaging stack into what's called XChat. \n\nIt's using a sort of a peer-to-peer based encryption system. It's kind of similar to Bitcoin. I think it's very good encryption. We're testing it thoroughly. \n\nThere are no hooks in the X system for advertising. So if you look at something like WhatsApp or really any of the others, they've got hooks in there for advertising. [Hook is] like WhatsApp knows enough about what you're texting to know what ads to show you. That's a massive security vulnerability.”",
+      "created_at": "Wed Nov 12 10:03:00 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988538187988254721",
+          "url": "https://video.twimg.com/amplify_video/1988538187988254721/vid/avc1/360x640/3HuNygrCf_a4jdmo.mp4?tag=21",
+          "bitrate": 950000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "959471389282578432",
+        "name": "Eva Fo𝕏 🦊 Claudius Nero's Legion",
+        "screen_name": "EvaFoxU",
+        "description": "Blogger covering SpaceX, Tesla, environment & space exploration 🖖🏼 ◉ My blog @onlyVerumNews ◉ Occasionally post memes",
+        "followers_count": 331212,
+        "friends_count": 1281,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 809,
+        "favorite_count": 3286,
+        "reply_count": 261,
+        "quote_count": 31
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 809,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988866379718541759",
+    "text": "RT @muskonomy: 🚨NEWS: Andrej Karpathy just reviewed Tesla FSD on his new Model X and he’s blown away.\n\nHe called it “basically a flawless d…",
+    "created_at": "Thu Nov 13 07:07:50 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1988750590281937411",
+      "text": "🚨NEWS: Andrej Karpathy just reviewed Tesla FSD on his new Model X and he’s blown away.\n\nHe called it “basically a flawless drive,” saying the car handled complex city scenarios perfectly and that FSD now feels “smooth, confident and far ahead of anything before.” https://t.co/lGSDwL7P4C",
+      "created_at": "Wed Nov 12 23:27:44 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1988750581729751043",
+          "url": "https://pbs.twimg.com/media/G5l2HgLacAM7i68.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1988750581729751040",
+          "url": "https://pbs.twimg.com/media/G5l2HgLacAA1Y9Z.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1683336596488327168",
+        "name": "Muskonomy",
+        "screen_name": "muskonomy",
+        "description": "#1 News Brand on X | Free Speech \n\nX | Tesla | SpaceX | Starlink |  xAI | Neuralink | Musk Economy",
+        "followers_count": 44038,
+        "friends_count": 1072,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 618,
+        "favorite_count": 3273,
+        "reply_count": 160,
+        "quote_count": 23
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 618,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988866447511072965",
+    "text": "RT @SkyNews: BREAKING: Seven men charged with more than 40 offences as police investigate child sexual exploitation in Bristol\nhttps://t.co…",
+    "created_at": "Thu Nov 13 07:08:07 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1988543252740317475",
+      "text": "BREAKING: Seven men charged with more than 40 offences as police investigate child sexual exploitation in Bristol\nhttps://t.co/wSR4I4af2L",
+      "created_at": "Wed Nov 12 09:43:51 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "7587032",
+        "name": "Sky News",
+        "screen_name": "SkyNews",
+        "description": "The full story, first. Free, wherever you get your news @skynewsbreak for breaking news. Live on the Sky News app - download here: https://t.co/B2AP8GvitH",
+        "followers_count": 8612736,
+        "friends_count": 100,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1376,
+        "favorite_count": 4564,
+        "reply_count": 0,
+        "quote_count": 786
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1376,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988871730975109483",
+    "text": "Wait until he downloads V14",
+    "created_at": "Thu Nov 13 07:29:06 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1988715636059418656",
+      "text": "Former Director of AI at Tesla Andrej Karpathy picked up his new Model X and reviews Tesla V13.2.9 with HW4: \n\n“Basically... I'm amazed - it drives really, really well, smooth, confident, noticeably better than what I'm used to on HW3 (my previous car) and eons ahead of the version I remember driving up highway 280 on my first day at Tesla ~9 years ago, where I had to intervene every time the road mildly curved or sloped. (note this is v13, my car hasn't been offered the latest v14 yet)\n\nOn the highway, I felt like a passenger in some super high tech Maglev train pod - the car is locked in the center of the lane while I'm looking out from Model X's higher vantage point and its panoramic front window, listening to the (incredible) sound system, or chatting with Grok. On city streets, the car casually handled a number of tricky scenarios that I remember losing sleep over just a few years ago. It negotiated incoming cars in tight lanes, it gracefully went around construction and temporarily in-lane stationary cars, it correctly timed tricky left turns with incoming traffic from both sides, it gracefully gave way to the car that went out of order in the 4-way stop sign, it found a way to squeeze into a bumper to bumper traffic to make its turn, it overtook the bus that was loading passengers but still stopped for the stop sign that was blocked by the bus, and at the end of the route it circled around a parking lot, found a spot and... parked. Basically a flawless drive.”",
+      "created_at": "Wed Nov 12 21:08:50 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1988715630866894848",
+          "url": "https://pbs.twimg.com/media/G5lWVGEWkAAPKR4.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1988715630862761984",
+          "url": "https://pbs.twimg.com/media/G5lWVGDXgAAusEJ.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1494873435863977985",
+        "name": "Nic Cruz Patane",
+        "screen_name": "niccruzpatane",
+        "description": "Deep dive into everything Tesla",
+        "followers_count": 82119,
+        "friends_count": 184,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 365,
+        "favorite_count": 3884,
+        "reply_count": 118,
+        "quote_count": 25
+      }
+    },
+    "stats": {
+      "retweet_count": 4131,
+      "favorite_count": 48702,
+      "reply_count": 2045,
+      "quote_count": 92
+    }
+  },
+  {
+    "id": "1988873986558636534",
+    "text": "RT @rovvmut_: Explorers on Europa (Jupiter's Icy Moon). https://t.co/UPhxHvSX7g",
+    "created_at": "Thu Nov 13 07:38:04 +0000 2025",
+    "lang": "fr",
+    "media": [
+      {
+        "type": "video",
+        "id": "1988646708511928320",
+        "url": "https://video.twimg.com/amplify_video/1988646708511928320/vid/avc1/576x856/GTUPhatt2TnkKDO6.mp4?tag=23",
+        "bitrate": 5184000
+      }
+    ],
+    "retweet": {
+      "id": "1988646794021220511",
+      "text": "Explorers on Europa (Jupiter's Icy Moon). https://t.co/UPhxHvSX7g",
+      "created_at": "Wed Nov 12 16:35:17 +0000 2025",
+      "lang": "fr",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988646708511928320",
+          "url": "https://video.twimg.com/amplify_video/1988646708511928320/vid/avc1/576x856/GTUPhatt2TnkKDO6.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1547623016238002179",
+        "name": "Heisenberg",
+        "screen_name": "rovvmut_",
+        "description": "I'm vengeance. I post about Tech, AI and drop memes along the way. DM for collaborations.",
+        "followers_count": 23061,
+        "friends_count": 1502,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 520,
+        "favorite_count": 2451,
+        "reply_count": 216,
+        "quote_count": 20
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 520,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988874154720850425",
+    "text": "RT @abuzaki1978: QT angel 👼\nGrace wrapped in golden fire. https://t.co/H41patn82T",
+    "created_at": "Thu Nov 13 07:38:44 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "video",
+        "id": "1988267429361778688",
+        "url": "https://video.twimg.com/amplify_video/1988267429361778688/vid/avc1/540x540/Oumdcggw7rINeE9p.mp4?tag=23",
+        "bitrate": 5184000
+      }
+    ],
+    "retweet": {
+      "id": "1988532720314847310",
+      "text": "QT angel 👼\nGrace wrapped in golden fire. https://t.co/H41patn82T",
+      "created_at": "Wed Nov 12 09:02:00 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988267429361778688",
+          "url": "https://video.twimg.com/amplify_video/1988267429361778688/vid/avc1/540x540/Oumdcggw7rINeE9p.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "2946559086",
+        "name": "Mutaz Ghunaim",
+        "screen_name": "abuzaki1978",
+        "description": "🎶 Music Maker | AI Creator | Quote Wizard | 📸 Photographer\nTransforming ideas into art, words into powerful stories, beats into vibes.\nHop in and hit follow",
+        "followers_count": 16063,
+        "friends_count": 4895,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 454,
+        "favorite_count": 2244,
+        "reply_count": 205,
+        "quote_count": 24
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 454,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988874253140193384",
+    "text": "RT @Artedeingenio: Tomorrow I’ll share with you this incredible anime style.\n\nHere, Grok Imagine did a fabulous job. https://t.co/MEWbAFc5z7",
+    "created_at": "Thu Nov 13 07:39:08 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "video",
+        "id": "1988658498196955136",
+        "url": "https://video.twimg.com/amplify_video/1988658498196955136/vid/avc1/540x540/kkXWUzoRInr6QHsU.mp4?tag=23",
+        "bitrate": 5184000
+      }
+    ],
+    "retweet": {
+      "id": "1988658773993648304",
+      "text": "Tomorrow I’ll share with you this incredible anime style.\n\nHere, Grok Imagine did a fabulous job. https://t.co/MEWbAFc5z7",
+      "created_at": "Wed Nov 12 17:22:53 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988658498196955136",
+          "url": "https://video.twimg.com/amplify_video/1988658498196955136/vid/avc1/540x540/kkXWUzoRInr6QHsU.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1702568876",
+        "name": "OscarAI",
+        "screen_name": "Artedeingenio",
+        "description": "👨‍🎨 AI artist\n🤖 Expert in generative AI\n\n💥 Every day I share amazing srefs and tutorials with my subscribers.\n\n🤯 DomoAI Creator - Link below",
+        "followers_count": 42968,
+        "friends_count": 914,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 513,
+        "favorite_count": 2202,
+        "reply_count": 205,
+        "quote_count": 14
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 513,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988875054352879866",
+    "text": "15 second Grok Imagine videos &amp; much improved sound coming by next week",
+    "created_at": "Thu Nov 13 07:42:19 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1988761981437055330",
+      "text": "🎉 On the 1⃣0⃣0⃣th day of experiments, the machine left the lab… and stepped into legend.\n\n⚡️ @xai just rolled out a powerful new update for the @grok app, bringing major improvements to both Imagine and Chat.\n\n💡 Update to version 1.3.8 to unlock all the newest features and enhancements. ⚡️📲\n\n🚨 Prompt Drop ⤵️\n\n{\n  \"title\": \"Day 100: The Alchemist Ascends\",\n  \"description\": \"A cinematic third-person epic portrait of the steampunk mage, now ascending beyond science — levitating on a fractured stone platform above the clouds, surrounded by gravity-defying relics, glowing vials, and celestial energy. A majestic white dragon glides in the background sky as the mage completes his final awakening.\",\n  \"scene\": {\n    \"setting\": \"High above a shattered sky realm — floating stone slabs drift through golden clouds as far as the eye can see. On the central platform, carved runes glow faintly as steam-powered glyphs pulse beneath the mage’s feet. A vortex of swirling clouds glows with radiant light far below.\",\n    \"main_subject\": \"The steampunk mage stands tall on the floating rock, arms outstretched, long metallic coat flaring in the wind. His robes shimmer with woven circuitry, trailing steam at the hems. His silver beard flows as if underwater. Around him orbit alchemical tools — glowing vials, brass instruments, bubbling flasks — suspended in midair like planets.\",\n    \"motion\": \"The camera begins with a low upward shot, rotating 180° as it rises, revealing the epic scale of the sky. At second 3, a massive white eastern dragon with translucent wings glides behind the mage in slow motion, its long body weaving through clouds. At second 5, the mage raises one hand, and the orbiting objects emit synchronized pulses of energy.\",\n    \"lighting\": \"Sunset magic hour light — orange and pink volumetric rays cut through the mist. Reflective metals catch golden highlights. The dragon glows faintly, casting ambient light through its wings. Arcane sparks illuminate the floating relics in cool blue and green contrast.\",\n    \"textures\": \"Polished brass, cracked obsidian rock, embroidered velvet, crystal-glass vials, dragon scales with mother-of-pearl shimmer. Soft haze on distant floating islands.\",\n    \"color_palette\": \"Sunset palette: golden amber, violet, aqua, silver-white, with pops of neon alchemical blue and emerald\",\n    \"camera\": {\n      \"angle\": \"Low-to-high tracking orbit\",\n      \"movement\": \"180° parallax dolly with slow rise and mild sway, foreground flasks passing in frame\",\n      \"focus\": \"Soft depth of field — mage and relics sharp, dragon and clouds dreamlike\"\n    },\n    \"audio_visual_effects\": {\n      \"particles\": \"Floating motes of light, steam trails, arc sparks, swirling mist\",\n      \"motion\": \"Cloak flutter, rotating tools, dragon flight turbulence\",\n      \"sound\": \"Ambient wind, subtle hum of magic, deep whoosh as dragon passes, faint ticking from suspended relics\"\n    },\n    \"text_overlay\": {\n      \"content\": \"100 Experiments Later... He Ascended.\",\n      \"style\": \"Elegant serif font in glowing silver, curved along the top of the floating stone platform\",\n      \"timing\": \"Fades in during final second\"\n    },\n    \"format\": {\n      \"aspect_ratio\": \"9:16\",\n      \"resolution\": \"Ultra HDR 4K\",\n      \"render_style\": \"Cinematic high-fantasy realism\",\n      \"grain\": \"Fine artistic grain with soft lens flare and atmospheric bloom\"\n    }\n  },\n  \"engine\": {\n    \"model\": \"Grok Imagine 4 Expert\",\n    \"mode\": \"Puppetmaster\",\n    \"intensity\": \"maximum\",\n    \"keywords\": \"floating alchemist, steampunk sorcerer, dragon skies, gravity magic, cinematic sky island, anime fantasy, photoreal sky realm, epic transformation\"\n  }\n}",
+      "created_at": "Thu Nov 13 00:13:00 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988739287463129088",
+          "url": "https://video.twimg.com/amplify_video/1988739287463129088/vid/avc1/576x856/SYUASknvVwsmKkrh.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "19331948",
+        "name": "Marcio Lima 利真 マルシオ 💎",
+        "screen_name": "Preda2005",
+        "description": "🚀 Shaping AI’s future from Tokyo 🇯🇵 🎮 50 yrs of life, play & invention 🤖 Adobe Firefly Ambassador | CPP: Hailuo, Kling, DOMO 🧠 Creator˖Builder˖Dreamer.",
+        "followers_count": 63770,
+        "friends_count": 10134,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 125,
+        "favorite_count": 798,
+        "reply_count": 160,
+        "quote_count": 57
+      }
+    },
+    "stats": {
+      "retweet_count": 3023,
+      "favorite_count": 19451,
+      "reply_count": 2804,
+      "quote_count": 264
+    }
+  },
+  {
+    "id": "1988878965428154399",
+    "text": "RT @teslaownersSV: I no longer use Google Search\n\nGrok is the ultimate resource and companion. https://t.co/lLkDSq6kQ2",
+    "created_at": "Thu Nov 13 07:57:51 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "video",
+        "id": "1988843105383247873",
+        "url": "https://video.twimg.com/amplify_video/1988843105383247873/vid/avc1/752x416/YsuP08YMa0RxOs_w.mp4?tag=23",
+        "bitrate": 5184000
+      }
+    ],
+    "retweet": {
+      "id": "1988843120629547210",
+      "text": "I no longer use Google Search\n\nGrok is the ultimate resource and companion. https://t.co/lLkDSq6kQ2",
+      "created_at": "Thu Nov 13 05:35:25 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988843105383247873",
+          "url": "https://video.twimg.com/amplify_video/1988843105383247873/vid/avc1/752x416/YsuP08YMa0RxOs_w.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1016059981907386368",
+        "name": "Tesla Owners Silicon Valley",
+        "screen_name": "teslaownersSV",
+        "description": "The most notorious Tesla Club in the world. Creator of @thextakeover and taking the Takeover global. We amplify sustainability and philanthropy.",
+        "followers_count": 1330291,
+        "friends_count": 779,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 626,
+        "favorite_count": 3596,
+        "reply_count": 391,
+        "quote_count": 38
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 626,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988880797978243477",
+    "text": "RT @MarioNawfal: ELON: IF EARTH SUCKS, SPACEX IS EXPANDING THE MAP TO \"MOON BASE ALPHA\"\n\n“You can think of space as being concentric shells…",
+    "created_at": "Thu Nov 13 08:05:08 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1988864409922597372",
+      "text": "ELON: IF EARTH SUCKS, SPACEX IS EXPANDING THE MAP TO \"MOON BASE ALPHA\"\n\n“You can think of space as being concentric shells of the surface of the Earth. It’s the surface of the Earth, but it’s a series of concentric shells.\n\nImagine if there were just a few thousand airstreams on Earth. What are the odds that they’d hit each other?\n\nSo the goal of SpaceX is to get rocket technology to a point where we can extend life beyond Earth, and establish a self-sustaining city on Mars.\n\nImagine if we had a Moon Base Alpha, where there’s a permanent science base on the Moon.”\n\nSource: @elonmusk, @joerogan, 31 October 2025",
+      "created_at": "Thu Nov 13 07:00:01 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988859850693001216",
+          "url": "https://video.twimg.com/amplify_video/1988859850693001216/vid/avc1/1920x1080/SxJF7uig0c6bJFTD.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1985207645901570078",
+        "text": "@cb_doge SpaceX will lean in big on the Moon",
+        "created_at": "Mon Nov 03 04:49:20 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "44196397",
+          "name": "Elon Musk",
+          "screen_name": "elonmusk",
+          "description": "",
+          "followers_count": 229072440,
+          "friends_count": 1226,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 426,
+          "favorite_count": 5486,
+          "reply_count": 538,
+          "quote_count": 134
+        }
+      },
+      "user": {
+        "id": "1319287761048723458",
+        "name": "Mario Nawfal",
+        "screen_name": "MarioNawfal",
+        "description": "Largest Show on X | Investor 700+ Startups | Founder @ibcgroupio , https://t.co/sw7OQ5KgAW",
+        "followers_count": 2673602,
+        "friends_count": 49930,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 898,
+        "favorite_count": 4174,
+        "reply_count": 458,
+        "quote_count": 45
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 898,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988881272710537569",
+    "text": "Grok Imagine only gets better from here",
+    "created_at": "Thu Nov 13 08:07:01 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1988601971503501461",
+      "text": "Next Level\n\nGrok Imagine 👁️ https://t.co/ndo1H3VLeM",
+      "created_at": "Wed Nov 12 13:37:11 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988601494199783424",
+          "url": "https://video.twimg.com/ext_tw_video/1988601494199783424/pu/vid/avc1/720x1068/FHwd7k3WGCl2xuBX.mp4?tag=12",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1708559437005279232",
+        "name": "𝐋.𝐘.𝐍",
+        "screen_name": "lyn_beatz",
+        "description": "𝕷𝖎𝖌𝖍𝖙 𝖚𝖕 𝖙𝖍𝖊 𝕯𝖆𝖗𝖐𝖓𝖊𝖘𝖘",
+        "followers_count": 24807,
+        "friends_count": 640,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 164,
+        "favorite_count": 1016,
+        "reply_count": 102,
+        "quote_count": 33
+      }
+    },
+    "stats": {
+      "retweet_count": 3319,
+      "favorite_count": 22184,
+      "reply_count": 1978,
+      "quote_count": 107
+    }
+  },
+  {
+    "id": "1988883193278161074",
+    "text": "Grok is going to make incredible games",
+    "created_at": "Thu Nov 13 08:14:39 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1988672625493831904",
+      "text": "𝕴𝖒𝖆𝖌𝖎𝖓𝖊\n\nGrok Imagine &gt; It's magic https://t.co/lkXxXM0G0H",
+      "created_at": "Wed Nov 12 18:17:56 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988672309834444800",
+          "url": "https://video.twimg.com/ext_tw_video/1988672309834444800/pu/vid/avc1/720x1068/LLcPpm5I3kLLHMMw.mp4?tag=12",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1708559437005279232",
+        "name": "𝐋.𝐘.𝐍",
+        "screen_name": "lyn_beatz",
+        "description": "𝕷𝖎𝖌𝖍𝖙 𝖚𝖕 𝖙𝖍𝖊 𝕯𝖆𝖗𝖐𝖓𝖊𝖘𝖘",
+        "followers_count": 24807,
+        "friends_count": 640,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 175,
+        "favorite_count": 1031,
+        "reply_count": 137,
+        "quote_count": 40
+      }
+    },
+    "stats": {
+      "retweet_count": 3201,
+      "favorite_count": 20804,
+      "reply_count": 3143,
+      "quote_count": 223
+    }
+  },
+  {
+    "id": "1988883804635779214",
+    "text": "That’s my Heinlein sword",
+    "created_at": "Thu Nov 13 08:17:05 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1988843279731834910",
+      "text": "&gt; be founder \n&gt; do media interview\n&gt; show the interviewer your sword \n&gt; ??\n&gt; profit??\n\ncan someone please explain this\nhttps://t.co/O52vWiiG3G",
+      "created_at": "Thu Nov 13 05:36:03 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988641381708169216",
+          "url": "https://video.twimg.com/amplify_video/1988641381708169216/vid/avc1/2328x1320/u0WhOZfTMvpeOLjn.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1317327383628705793",
+        "name": "Arthur MacWaters",
+        "screen_name": "ArthurMacwaters",
+        "description": "America maximalist 🇺🇸 | co-founder of @legionhealth | prev @princeton @mckinsey @ycombinator",
+        "followers_count": 30471,
+        "friends_count": 997,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 409,
+        "favorite_count": 5695,
+        "reply_count": 400,
+        "quote_count": 143
+      }
+    },
+    "stats": {
+      "retweet_count": 5866,
+      "favorite_count": 70800,
+      "reply_count": 4070,
+      "quote_count": 281
+    }
+  },
+  {
+    "id": "1988884734743568762",
+    "text": "It’s a start",
+    "created_at": "Thu Nov 13 08:20:47 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1988773125400719722",
+      "text": "BREAKING: Grok Rankings Update November 12\nGrok is dominating every leaderboard:\n\n#1 BlackBox AI \n#1 Terminal-Bench Hard \n#1 GPQA Diamond \n#1 SciCode \n#1 AAII Token Usage \n#1 Roo Code \n#1 KiloCode \n#1 Cline\n\nAnd on OpenRouter:\n\n#1 Most popular LLM (English) \n#1 Token usage (Top Today, Week, Month) \n#1 Programming use case (Python, JS, Java, C++, SQL…) \n#1 Market share for xAI\n\nGrok is cooking.",
+      "created_at": "Thu Nov 13 00:57:17 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988772999206719488",
+          "url": "https://video.twimg.com/amplify_video/1988772999206719488/vid/avc1/1080x1080/xUgoP8kKtY8O5frh.mp4?tag=21",
+          "bitrate": 8768000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1016059981907386368",
+        "name": "Tesla Owners Silicon Valley",
+        "screen_name": "teslaownersSV",
+        "description": "The most notorious Tesla Club in the world. Creator of @thextakeover and taking the Takeover global. We amplify sustainability and philanthropy.",
+        "followers_count": 1330291,
+        "friends_count": 779,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 148,
+        "favorite_count": 916,
+        "reply_count": 217,
+        "quote_count": 27
+      }
+    },
+    "stats": {
+      "retweet_count": 2853,
+      "favorite_count": 15310,
+      "reply_count": 2125,
+      "quote_count": 93
+    }
+  },
+  {
+    "id": "1988985052005560792",
+    "text": "Clearly, I have not “studied the blade” 😂",
+    "created_at": "Thu Nov 13 14:59:24 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 300,
+      "favorite_count": 2684,
+      "reply_count": 318,
+      "quote_count": 18
+    }
+  },
+  {
+    "id": "1988985364346962129",
+    "text": "RT @zerohedge: Elon Musk Is Building The Backbone of America's High-Tech 2030s Economy - And The Numbers Prove It https://t.co/miTiKGBQtR",
+    "created_at": "Thu Nov 13 15:00:39 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1988944975267053721",
+      "text": "Elon Musk Is Building The Backbone of America's High-Tech 2030s Economy - And The Numbers Prove It https://t.co/miTiKGBQtR",
+      "created_at": "Thu Nov 13 12:20:09 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "18856867",
+        "name": "zerohedge",
+        "screen_name": "zerohedge",
+        "description": "",
+        "followers_count": 2279261,
+        "friends_count": 925,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 585,
+        "favorite_count": 3521,
+        "reply_count": 225,
+        "quote_count": 24
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 585,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988986113047031956",
+    "text": "Grok is improving extremely fast. \n\nUpdate your Grok app daily.",
+    "created_at": "Thu Nov 13 15:03:37 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1988886238674448863",
+      "text": "Grok Imagine improved so quickly that it's hard to believe how good it is\n\n- Image generator improved \n- Video generation improved \n- Images come with the best of esthetics, matches Midjourney\n- Upscale to HD in less than 10 seconds\n- Audio gen improved\n- Grok Imagine now understands the world much better than before \n- Fastest video generator\n\nIf you haven’t tried it lately, now’s the perfect time\n\nThe pace of progress is absolutely wild....give it a spin and see for yourself what Grok Imagine can do",
+      "created_at": "Thu Nov 13 08:26:45 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988886196018442240",
+          "url": "https://video.twimg.com/ext_tw_video/1988886196018442240/pu/vid/avc1/576x856/tHpzPRnarqQite7h.mp4?tag=21",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1818311005698678784",
+        "name": "X Freeze",
+        "screen_name": "XFreeze",
+        "description": "tour guide for Grok",
+        "followers_count": 66452,
+        "friends_count": 1244,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 89,
+        "favorite_count": 591,
+        "reply_count": 128,
+        "quote_count": 14
+      }
+    },
+    "stats": {
+      "retweet_count": 1819,
+      "favorite_count": 9747,
+      "reply_count": 1884,
+      "quote_count": 86
+    }
+  },
+  {
+    "id": "1988986311752253769",
+    "text": "Michael Dell agrees!",
+    "created_at": "Thu Nov 13 15:04:24 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1988950163474510039",
+      "text": "X2!",
+      "created_at": "Thu Nov 13 12:40:46 +0000 2025",
+      "lang": "qst",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "58560480",
+        "name": "Michael Dell 🇺🇸",
+        "screen_name": "MichaelDell",
+        "description": "Husband, Father, Grandfather, Brother, Founder, Chairman and CEO Dell Technologies Grateful 🇺🇸 #PlayNiceButWin https://t.co/3JiGiLPSc4",
+        "followers_count": 795465,
+        "friends_count": 4000,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 144,
+        "favorite_count": 3721,
+        "reply_count": 121,
+        "quote_count": 13
+      }
+    },
+    "stats": {
+      "retweet_count": 1020,
+      "favorite_count": 14263,
+      "reply_count": 923,
+      "quote_count": 36
+    }
+  },
+  {
+    "id": "1988987125891756349",
+    "text": "The first compelling Grok Imagine 30 min show is probably ~3 months away",
+    "created_at": "Thu Nov 13 15:07:39 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1988913525142573101",
+      "text": "The cinematic quality Grok Imagine is pushing right now is wild. https://t.co/fv2PwzK4sn",
+      "created_at": "Thu Nov 13 10:15:11 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988913476303978496",
+          "url": "https://video.twimg.com/amplify_video/1988913476303978496/vid/avc1/472x856/ZV-L994tuo1YI9EO.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1389913567671975937",
+        "name": "DogeDesigner",
+        "screen_name": "cb_doge",
+        "description": "",
+        "followers_count": 1770140,
+        "friends_count": 996,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 185,
+        "favorite_count": 1102,
+        "reply_count": 322,
+        "quote_count": 37
+      }
+    },
+    "stats": {
+      "retweet_count": 2754,
+      "favorite_count": 19917,
+      "reply_count": 2633,
+      "quote_count": 200
+    }
+  },
+  {
+    "id": "1988987810599305565",
+    "text": "RT @DavidDeutschOxf: Regardless of whether the 'experts' think there's a 'democratic deficit' in the EU, its institutions are very far from…",
+    "created_at": "Thu Nov 13 15:10:22 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1988922062908297400",
+      "text": "Regardless of whether the 'experts' think there's a 'democratic deficit' in the EU, its institutions are very far from meeting Popper's criterion for democracy.",
+      "created_at": "Thu Nov 13 10:49:06 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1988750042887278685",
+        "text": "This👇 is how MEPs get to elect the President of the EU Commission. \n\nOne name on the ballot. No other candidates included. \n\nNot what most of us consider democratic.\n\nThe EU Parliament is gossamer cloak of supposed democracy on a bureaucratic behemoth. https://t.co/YrRuppfRP0",
+        "created_at": "Wed Nov 12 23:25:34 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1988750028626649089",
+            "url": "https://pbs.twimg.com/media/G5l1nTtW4AEqhAc.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "39102609",
+          "name": "Annunziata Rees-Mogg",
+          "screen_name": "zatzi",
+          "description": "Former MEP for East Midlands, Head of Comms at Popular Conservatism, and TV/radio political commentator. All comments are my own.",
+          "followers_count": 67562,
+          "friends_count": 1568,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1581,
+          "favorite_count": 4404,
+          "reply_count": 183,
+          "quote_count": 95
+        }
+      },
+      "user": {
+        "id": "841709695",
+        "name": "David Deutsch",
+        "screen_name": "DavidDeutschOxf",
+        "description": "Physicist. Author of The Fabric of Reality and The Beginning of Infinity",
+        "followers_count": 161709,
+        "friends_count": 73,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 641,
+        "favorite_count": 2613,
+        "reply_count": 211,
+        "quote_count": 24
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 641,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988989628951695448",
+    "text": "When Grokipedia is good enough (long way to go), we will change the name to Encyclopedia Galactica. \n\nIt will be an open source distillation of all knowledge, including audio, images and video.\n\nJoin @xAI to help build the sci-fi version of the Library of Alexandria!",
+    "created_at": "Thu Nov 13 15:17:35 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 12281,
+      "favorite_count": 117274,
+      "reply_count": 7281,
+      "quote_count": 1078
+    }
+  },
+  {
+    "id": "1988989988802064702",
+    "text": "Copies will be etched in stone and sent to the Moon, Mars and beyond. This time, it will not be lost.",
+    "created_at": "Thu Nov 13 15:19:01 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 938,
+      "favorite_count": 10119,
+      "reply_count": 990,
+      "quote_count": 108
+    }
+  },
+  {
+    "id": "1988990359809171922",
+    "text": "RT @amplemarket: The number of app updates is an interesting proxy for the speed of progress in AI chatbots. https://t.co/3GBnWKpz5q",
+    "created_at": "Thu Nov 13 15:20:30 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1988947659558658048",
+        "url": "https://pbs.twimg.com/media/G5opW8TWoAAOcmi.jpg"
+      }
+    ],
+    "retweet": {
+      "id": "1988948290440950192",
+      "text": "The number of app updates is an interesting proxy for the speed of progress in AI chatbots. https://t.co/3GBnWKpz5q",
+      "created_at": "Thu Nov 13 12:33:19 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1988947659558658048",
+          "url": "https://pbs.twimg.com/media/G5opW8TWoAAOcmi.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "818717341085147136",
+        "name": "Amplemarket",
+        "screen_name": "amplemarket",
+        "description": "AI Sales Platform to accelerate growth. Amplemarket AI finds intent signals, enriches leads, writes personalized outreach, and helps reps close more deals.",
+        "followers_count": 2353,
+        "friends_count": 90,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 361,
+        "favorite_count": 1880,
+        "reply_count": 189,
+        "quote_count": 20
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 361,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988990868297248872",
+    "text": "RT @trussliz: How many innocent lives have been destroyed because people fear being called racist?\n\nBritain needs a reset of its moral comp…",
+    "created_at": "Thu Nov 13 15:22:31 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1988958224528339040",
+      "text": "How many innocent lives have been destroyed because people fear being called racist?\n\nBritain needs a reset of its moral compass. https://t.co/tTkRXVnsEP",
+      "created_at": "Thu Nov 13 13:12:48 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1988958212087791616",
+          "url": "https://pbs.twimg.com/media/G5oy9LiWwAATx2Z.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "65357102",
+        "name": "Liz Truss",
+        "screen_name": "trussliz",
+        "description": "Sunday Times bestselling writer. Former Prime Minister of the United Kingdom https://t.co/hI4TsvHwGZ",
+        "followers_count": 710938,
+        "friends_count": 2406,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2471,
+        "favorite_count": 12563,
+        "reply_count": 905,
+        "quote_count": 105
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2471,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988992700675420579",
+    "text": "You can also now do audio and video calls with 𝕏 Chat",
+    "created_at": "Thu Nov 13 15:29:48 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1988988537849671951",
+      "text": "🚨 𝕏 Chat Update 🚨\n\n𝕏 has merged DMs into its encrypted chats system. All your messages now live in one place and are fully encrypted. https://t.co/XqYRVMp1hD",
+      "created_at": "Thu Nov 13 15:13:15 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988988486607593472",
+          "url": "https://video.twimg.com/amplify_video/1988988486607593472/vid/avc1/1080x1080/kNZ_Ej7rmQ58gd0o.mp4?tag=21",
+          "bitrate": 8768000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1389913567671975937",
+        "name": "DogeDesigner",
+        "screen_name": "cb_doge",
+        "description": "",
+        "followers_count": 1770140,
+        "friends_count": 996,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 185,
+        "favorite_count": 780,
+        "reply_count": 261,
+        "quote_count": 35
+      }
+    },
+    "stats": {
+      "retweet_count": 2383,
+      "favorite_count": 12329,
+      "reply_count": 2189,
+      "quote_count": 209
+    }
+  },
+  {
+    "id": "1988994872267939998",
+    "text": "RT @timburchett: USAID was funding the BBC.",
+    "created_at": "Thu Nov 13 15:38:25 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1988937283219910713",
+      "text": "USAID was funding the BBC.",
+      "created_at": "Thu Nov 13 11:49:35 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1988786873138077892",
+        "text": "USAID is BBC Media Action’s single biggest donor, other than the British government itself. BBC Media Action is the BBC’s giant pool of free money to pay hundreds of other media outlets to produce slop and amplify stories aligned with the BBC. https://t.co/hh1DGxXmHG",
+        "created_at": "Thu Nov 13 01:51:55 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1988786868742242304",
+            "url": "https://pbs.twimg.com/media/G5mXHr1XwAA4bvl.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1599510806680535042",
+          "name": "Mike Benz",
+          "screen_name": "MikeBenzCyber",
+          "description": "Executive Director, @FFO_Freedom. Former State Dept Cyber. Author of the unpublishable monstrosity, Weapons Of Mass Deletion.",
+          "followers_count": 1110626,
+          "friends_count": 715,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3570,
+          "favorite_count": 10044,
+          "reply_count": 466,
+          "quote_count": 381
+        }
+      },
+      "user": {
+        "id": "353890966",
+        "name": "Tim Burchett",
+        "screen_name": "timburchett",
+        "description": "Married to Kelly. Father to Isabel. Congressman representing #TN02 Former @KnoxGov Mayor. Former state legislator. Fiscally conservative Republican.",
+        "followers_count": 380662,
+        "friends_count": 2851,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 10131,
+        "favorite_count": 31916,
+        "reply_count": 1819,
+        "quote_count": 444
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 10131,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988996460323696984",
+    "text": "https://t.co/si0AnndcGY",
+    "created_at": "Thu Nov 13 15:44:44 +0000 2025",
+    "lang": "zxx",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1988996456796286983",
+        "url": "https://pbs.twimg.com/media/G5pVvULacAcgbXb.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 27809,
+      "favorite_count": 319951,
+      "reply_count": 9312,
+      "quote_count": 1569
+    }
+  },
+  {
+    "id": "1988998774136754388",
+    "text": "Try it!",
+    "created_at": "Thu Nov 13 15:53:56 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1988996213845401975",
+      "text": "You can now make encrypted audio and video calls on 𝕏 Chat.\n\nThe best part is that you can do it without ever sharing your phone number.\n\nTotal privacy. Total freedom.\n\nSwitch to 𝕏 Chat. https://t.co/DSsYGvKzq5",
+      "created_at": "Thu Nov 13 15:43:45 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988996164755087360",
+          "url": "https://video.twimg.com/amplify_video/1988996164755087360/vid/avc1/1080x1080/40N_Nr94t4jyVwR0.mp4?tag=21",
+          "bitrate": 8768000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1389913567671975937",
+        "name": "DogeDesigner",
+        "screen_name": "cb_doge",
+        "description": "",
+        "followers_count": 1770140,
+        "friends_count": 996,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 176,
+        "favorite_count": 717,
+        "reply_count": 233,
+        "quote_count": 51
+      }
+    },
+    "stats": {
+      "retweet_count": 1525,
+      "favorite_count": 6920,
+      "reply_count": 1444,
+      "quote_count": 87
+    }
+  },
+  {
+    "id": "1988999264702505135",
+    "text": "RT @karatademada: I threw a crazy-complex prompt at Grok Imagine, mixing: water physics, cinematic lighting, reflections, slow motion, and…",
+    "created_at": "Thu Nov 13 15:55:53 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1988900805559091379",
+      "text": "I threw a crazy-complex prompt at Grok Imagine, mixing: water physics, cinematic lighting, reflections, slow motion, and emotional close-ups all in one continuous shot.\n\nAnd honestly, it handled it way better than I expected for a 6-second video. https://t.co/ft2mwk85zQ",
+      "created_at": "Thu Nov 13 09:24:38 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988900751427399680",
+          "url": "https://video.twimg.com/amplify_video/1988900751427399680/vid/avc1/642x856/SDveuG1dnk0bTj93.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1988880953981219285",
+        "text": "BREAKING: \n\nElon Musk just announced that “15 second Grok Imagine videos &amp; much improved sound coming by next week”. 🔥 \n\nWho else is excited?",
+        "created_at": "Thu Nov 13 08:05:45 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1398565994042376195",
+          "name": "Karata",
+          "screen_name": "karatademada",
+          "description": "Photography & AI Enthusiast | Writer ✍️ If you enjoy my content and my positive vibes on this space, subscribe. 💙 https://t.co/SATbQ8UILx",
+          "followers_count": 18088,
+          "friends_count": 2834,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 20,
+          "favorite_count": 457,
+          "reply_count": 146,
+          "quote_count": 6
+        }
+      },
+      "user": {
+        "id": "1398565994042376195",
+        "name": "Karata",
+        "screen_name": "karatademada",
+        "description": "Photography & AI Enthusiast | Writer ✍️ If you enjoy my content and my positive vibes on this space, subscribe. 💙 https://t.co/SATbQ8UILx",
+        "followers_count": 18088,
+        "friends_count": 2834,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 343,
+        "favorite_count": 1729,
+        "reply_count": 201,
+        "quote_count": 15
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 343,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988999582748143956",
+    "text": "RT @iamyesyouareno: What a lovely human being. https://t.co/44yi8MLsz2",
+    "created_at": "Thu Nov 13 15:57:09 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1988940885581500416",
+        "url": "https://pbs.twimg.com/media/G5ojMpRWEAAnjyQ.jpg"
+      }
+    ],
+    "retweet": {
+      "id": "1988940891286040693",
+      "text": "What a lovely human being. https://t.co/44yi8MLsz2",
+      "created_at": "Thu Nov 13 12:03:55 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1988940885581500416",
+          "url": "https://pbs.twimg.com/media/G5ojMpRWEAAnjyQ.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1342174584594960384",
+        "name": "iamyesyouareno",
+        "screen_name": "iamyesyouareno",
+        "description": "everything you need to know.",
+        "followers_count": 475868,
+        "friends_count": 842,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2154,
+        "favorite_count": 16389,
+        "reply_count": 3047,
+        "quote_count": 238
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2154,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1989000139047072127",
+    "text": "Good suggestions",
+    "created_at": "Thu Nov 13 15:59:21 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1988886733296226523",
+      "text": "🚀 Loving Grok? Level up your chats with these 3 pro tips:\n1.  Be specific AF: Instead of “Tell me about space,” say “Explain black holes like I’m 5, with a sci-fi twist.” Get tailored gold every time!\n2.  Chain your asks: Build on responses—follow up with “Expand on that” or “Code it in Python.” Context is king for deeper dives.\n3.  Unleash tools: Need real-time X buzz? Say “Search X for [topic].” Or crunch data? “Run code to plot [stats].” Grok’s got the toolkit!\nWhat’s your fave Grok hack?",
+      "created_at": "Thu Nov 13 08:28:43 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988886679369940992",
+          "url": "https://video.twimg.com/amplify_video/1988886679369940992/vid/avc1/464x688/EnF9qWb-aZWaskOa.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1016059981907386368",
+        "name": "Tesla Owners Silicon Valley",
+        "screen_name": "teslaownersSV",
+        "description": "The most notorious Tesla Club in the world. Creator of @thextakeover and taking the Takeover global. We amplify sustainability and philanthropy.",
+        "followers_count": 1330291,
+        "friends_count": 779,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 124,
+        "favorite_count": 655,
+        "reply_count": 145,
+        "quote_count": 17
+      }
+    },
+    "stats": {
+      "retweet_count": 1683,
+      "favorite_count": 6693,
+      "reply_count": 1262,
+      "quote_count": 36
+    }
+  },
+  {
+    "id": "1989000300267729150",
+    "text": "RT @doganuraldesign: Grok Imagine is improving fast\n\nLonger videos and better audio are coming https://t.co/bhkf1vakIE",
+    "created_at": "Thu Nov 13 16:00:00 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "video",
+        "id": "1988891274934444032",
+        "url": "https://video.twimg.com/amplify_video/1988891274934444032/vid/avc1/576x856/nXUjms1TqzlavWul.mp4?tag=23",
+        "bitrate": 5184000
+      }
+    ],
+    "retweet": {
+      "id": "1988891336720662914",
+      "text": "Grok Imagine is improving fast\n\nLonger videos and better audio are coming https://t.co/bhkf1vakIE",
+      "created_at": "Thu Nov 13 08:47:01 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988891274934444032",
+          "url": "https://video.twimg.com/amplify_video/1988891274934444032/vid/avc1/576x856/nXUjms1TqzlavWul.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1553043003496960000",
+        "name": "Dogan Ural",
+        "screen_name": "doganuraldesign",
+        "description": "Designer / Official Creative Ambassador @xAI / Creative Director / Latent Space Explorer / Dad / Only on X",
+        "followers_count": 105524,
+        "friends_count": 646,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 492,
+        "favorite_count": 2404,
+        "reply_count": 232,
+        "quote_count": 17
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 492,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1989000814044795265",
+    "text": "Good suggestions",
+    "created_at": "Thu Nov 13 16:02:02 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1988966242980397339",
+      "text": "Grok Imagine, right now is in my opinion best and fastest ai video generator for the masses. sure, is not perfect, but Rome wasn't built in a day.\n\nMaybe ppl from xai or Elon Musk would look on our posts and suggestions for future improvements.\n\nWhat is a must (for advanced users into ai video generation, been doing this game since 2022) ..\n1. for longer movies , we need an option to organize like a project style, and to be able to add main prompts like the niche of the current movie, the character description and to be able to select a custom seed so we can have consistency of the characters.\n2. we have now 6 seconds generation ( saw Elon promised 15 seconds soon).. BUT when we generate long movies, we end up with lots of scenes... what grok needs for the same project of the movie, would be a First Frame -Last frame scene interpolation between the scenes (take last frame from scene one, and first frame from scene 2 and generate a mid scene that would merge scene 1 with scene 2 .. and continue for the other scenes (this could be very easy implemented with some python lines of code , like before spitting final video, select all scenes.. extract frames etc etc etc etc.. simple af, when u have all scenes + the interpolation scenes combine evrything with ffmpeg ).\n\n3.. list is long... and i dind't finished my coffee yet, so here is a grok TEXT to video short movie (coz lol u hit the limit for today).\n\nPrompts i used for each scene are a little more advanced, so i can see what grok is able to do ..\nthe prompts used are like this (can;t post all due to X limits ) :  { \"scene_1\": { \"global_cinematography\": \"Ultra-realistic Hollywood cyberpunk thriller in the vein of The Matrix (1999) and Blade Runner 2049 (2017), shot on Arri Alexa LF with anamorphic lenses for widescreen 2.39:1 aspect ratio, 24fps for fluid motion, desaturated palette dominated by cool blues, greens, and high-contrast neon reds piercing perpetual smog-choked night. Consistent VFX pipeline: Procedural green code cascades, photorealistic cybernetic augmentations with subsurface scattering, physics-based rain and particle simulations. Lighting paradigm: Volumetric god rays through haze, practical lens flares from holograms, rim lighting on metallic surfaces for depth. Sound integration: Pulsing industrial synth score with digital glitches, rain patter syncing to code interference, metallic echoes underscoring dialogue. Transitions: Seamless glitch wipes or matrix symbol dissolves ensuring narrative continuity, each scene's final beat priming the next for unbroken tension flow. Continuity directive: Scenes chain via lingering elements—rain droplets from prior shots persisting, Nova's silhouette echoing across cuts, HUD overlays threading flashbacks to present, escalating glitch distortions building to climax rupture—maintaining spatial and temporal cohesion in Neo-Tokyo's underbelly.\", \"shot\": { \"composition\": \"Wide aerial drone shot with 35mm wide-angle anamorphic lens on Arri Alexa LF, high dynamic range capturing smog gradients and rain refraction for immersive dystopian establishment, foreground skyscraper edges framing the descent path\", \"camera_motion\": \"Controlled descending tilt-push through layered haze, subtle forward momentum building velocity into street-level convergence, priming alley reveal for Scene 2 silhouette emergence\" }, \"subject\": { \"description\": \"Neo-Tokyo's jagged circuit-board skyscrapers thrusting into smog-veiled void, rain-lashed surfaces mirroring erratic neon pulses; faint pedestrian phantoms below as harbingers of oblivious simulation\", \"wardrobe\": \"null\" }, \"scene\": { \"location\": \"Shadowed aerial vantage over Neo-Tokyo underbelly, continuity hook from global haze motif\", \"time_of_day\": \"Perpetual neon-twilight under storm overcast, syncing with all scenes' eternal dusk\", \"environment\": \"Thick smog banks parting reluctantly, acid rain sheets cascading in synchronized sheets with volumetric depth, holographic billboards stuttering in the distance to echo Scene 7 flicker\" }, \"visual_details\": { \"action\": \"Drone pierces urban canopy, unveiling rain-assaulted sprawl where neon bleeds into puddles like corrupted signals, distant alley haze teasing Nova's imminent step-forward in Scene 2\", \"props\": \"Circuit-etched tower facades with embedded LED veins flickering erratically, overflowing industrial gutters spewing iridescent chemical runoff, wind-scattered debris hinting at skirmish aftermath\", \"action_sequence\": [ {\"0-1s\": \"High hover frames smog-piercing spires, rain droplets streak lens in slow-mo refraction\"}, {\"1-2s\": \"Descent accelerates, haze thins to reveal neon-veined edges glowing faintly blue\"}, {\"2-3s\": \"Tilt reveals grid below, rooftops hammered in static-burst impacts syncing to score pulse\"}, {\"3-4s\": \"Forward push threads alley corridors, Mandarin signs initial flicker priming Scene 7\"}, {\"4-5s\": \"Pedestrians sharpen as wireframe ghosts, AR visors glinting obliviously\"}, {\"5-6s\": \"Level to ground haze, Nova's trench silhouette materializes at frame's vanishing point, coat billow lingering into Scene 2 track\"} ] }, \"cinematography\": { \"lighting\": \"Desaturated neon primaries with volumetric god rays slicing haze for ethereal isolation, rain speculars adding dynamic highlights consistent across wet surfaces\", \"tone\": \"Oppressive immersion yielding to rebellious spark—global cyber-noir dread laced with glitch anticipation, flowing seamlessly to Nova's personal emergence\" } }, \"scene_2\": { \"global_cinematography\": \"Ultra-realistic Hollywood cyberpunk thriller in the vein of The Matrix (1999) and Blade Runner 2049 (2017), shot on Arri Alexa LF with anamorphic lenses for widescreen 2.39:1 aspect ratio, 24fps for fluid motion, desaturated palette dominated by cool blues, greens, and high-contrast neon reds piercing perpetual smog-choked night. Consistent VFX pipeline: Procedural green code cascades, photorealistic cybernetic augmentations with subsurface scattering, physics-based rain and particle simulations. Lighting paradigm: Volumetric god rays through haze, practical lens flares from holograms, rim lighting on metallic surfaces for depth. Sound integration: Pulsing industrial synth score with digital glitches, rain patter syncing to code interference, metallic echoes underscoring dialogue. Transitions: Seamless glitch wipes or matrix symbol dissolves ensuring narrative continuity, each scene's final beat priming the next for unbroken tension flow. Continuity directive: Scenes chain via lingering elements—rain droplets from prior shots persisting, Nova's silhouette echoing across cuts, HUD overlays threading flashbacks to present, escalating glitch distortions building to climax rupture—maintaining spatial and temporal cohesion in Neo-Tokyo's underbelly.\", \"shot\": { \"composition\": \"Low-angle tracking push with 50mm anamorphic prime on Arri Alexa LF, heroic distortion compressing background alley into claustrophobic funnel, foreground rain blur veiling initial fog for continuity from Scene 1 descent\", \"camera_motion\": \"Fluid forward Steadicam arc from lingering Scene 1 haze, subtle left profile tilt to frame Nova against graffiti wall, pulling back slightly to hold environmental depth into Scene 3 orbit\" }, \"subject\": { \"description\": \"Nova, 30s hybrid rebel with scarred synthetic pallor, cropped black hair rain-matted, holographic irises scanning with latent data flickers; sleek titanium limbs rune-etched in dormant blue\", \"wardrobe\": \"Sodden black trench coat with frayed hems from Scene 1 debris scatter, high collar shadowing jawline for motif continuity\" }, \"scene\": { \"location\": \"Graffiti-choked alley continuation from Scene 1 street convergence, Neo-Tokyo underbelly\", \"time_of_day\": \"Eternal neon-dusk syncing global palette\", \"environment\": \"Fog banks rolling from industrial vents as Scene 1 smog extension, wet cobblestones rippling with residual aerial rain patterns\" }, \"visual_details\": { \"action\": \"Nova materializes from Scene 1's terminal haze, striding assertively into sodium glow with metallic glint, coat hem dragging puddles to splash forward—teasing Scene 3 facial trace\", \"props\": \"Luminescent 'GLITCH THE SYSTEM' graffiti echoing from Scene 1 signs, overhead hover-traffic hum persisting from aerial hum\", \"action_sequence\": [ {\"0-1s\": \"Fog swirl from Scene 1 yields Nova's silhouette, boot first impacting puddle\"}, {\"1-2s\": \"Full stride forward, coat hem trails iridescent wake linking to blood drip in Scene 9\"}, {\"2-3s\": \"Titanium forearm catches neon, runes sequential-pulse awakening blue continuity\"}, {\"3-4s\": \"Holographic eyes iris-scan, reflecting alley code fragments priming Scene 4 overlay\"}, {\"4-5s\": \"Rain beads contour synthetic skin, parting at seams for Scene 3 macro journey\"}, {\"5-6s\": \"Profile lean against wall, vapor breath hangs, posture straightening into Scene 5 OTS\"} ] }, \"cinematography\": { \"lighting\": \"Harsh sodium sidelight rimming form per global motif, cool rune fill softening human remnants, prismatic rain refractions tying to Scene 1 aerial streaks\", \"tone\": \"Defiant grace in simulated decay—cyber-noir intimacy building personal stakes, camera arc ensuring spatial flow to close-up revelation\" } }, etc etc etc up to scene 16. you got the point",
+      "created_at": "Thu Nov 13 13:44:40 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988965923911344128",
+          "url": "https://video.twimg.com/amplify_video/1988965923911344128/vid/avc1/3202x2160/qG57wd6Y0RpAuPJg.mp4?tag=21",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "2810735678",
+        "name": "NFK",
+        "screen_name": "nfkmobile",
+        "description": "🤖In AI we trust, in simulations we live!\n🤖 Are gods the original AIs? \n 👽tip for eGod upgrades (doge): D5AkB621jmy4XLnEESY3aTPps8vaA6K4Dm",
+        "followers_count": 2855,
+        "friends_count": 454,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 77,
+        "favorite_count": 745,
+        "reply_count": 164,
+        "quote_count": 18
+      }
+    },
+    "stats": {
+      "retweet_count": 1247,
+      "favorite_count": 7208,
+      "reply_count": 1026,
+      "quote_count": 42
+    }
+  },
+  {
+    "id": "1989001709096693896",
+    "text": "RT @JTLonsdale: Flying home to Austin, TX.\n\nAmerican Renaissance city.\n\nGreat food &amp; music; and lots of my favorite people live in town. Ma…",
+    "created_at": "Thu Nov 13 16:05:35 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1988989297924428027",
+      "text": "Flying home to Austin, TX.\n\nAmerican Renaissance city.\n\nGreat food &amp; music; and lots of my favorite people live in town. Many are building stadiums, clubs or other fun places.\n\n@uaustinorg, @Saronic, @neuralink, @basepowerco, @MeritFirstUS, and dozens of others bringing in stars.",
+      "created_at": "Thu Nov 13 15:16:16 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1988693851226406988",
+        "text": "Move to Austin! It gets better very year. \n\nSo many cool, world-class people are moving to Austin from SF, LA, NY, London and many other parts of the world!\n\nAustin++",
+        "created_at": "Wed Nov 12 19:42:16 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "44196397",
+          "name": "Elon Musk",
+          "screen_name": "elonmusk",
+          "description": "",
+          "followers_count": 229072440,
+          "friends_count": 1226,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5634,
+          "favorite_count": 65972,
+          "reply_count": 9128,
+          "quote_count": 942
+        }
+      },
+      "user": {
+        "id": "134321104",
+        "name": "Joe Lonsdale",
+        "screen_name": "JTLonsdale",
+        "description": "I'm an entrepreneur, investor, & philanthropist. I founded @PalantirTech @Addepar @UAustinOrg @8VC & other mission-driven orgs. Bold policy @InstituteCicero",
+        "followers_count": 241169,
+        "friends_count": 492,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 484,
+        "favorite_count": 3320,
+        "reply_count": 452,
+        "quote_count": 38
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 484,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1989003739831865805",
+    "text": "𝕏 just rolled out an entire new communications stack with encrypted messages, audio/video calls and file transfer. \n\n𝕏 Money comes out soon. \n\nJoin us if you want to build cool products. \n\n𝕏 will be the everything app.",
+    "created_at": "Thu Nov 13 16:13:40 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1988952487873614235",
+      "text": "🚨 X ROLLS OUT “XCHAT” - UNIFIED DMs + ENCRYPTED CHATS IN ONE PLACE\n\nX just pushed its biggest messaging upgrade yet:\nXChat, a single inbox that blends your regular DMs with fully encrypted chats.\n\nNo more scattered menus.\nNo more hunting for the “encrypted” tab.\n\nEverything lives in one clean feed - exactly how Elon’s been teasing the all-in-one X app to work.\n\nEncrypted chats now support E2E messages, media, files, and even audio/video calls - Elon calls it “Bitcoin-style encryption,” built for real privacy without breaking functionality.\n\nOld messages simply get labeled as unencrypted.\n\nTurn on encryption, set your PIN, and you’re in. Simple, not cryptic.\n\nIt’s a quiet but major step toward X becoming a universal communications hub - part messenger, part phone, part file-share, part everything.\n\nWhat comes next? Maybe smoother cross-device syncing, more super-app features, and tighter integration as XChat becomes the backbone of the platform.\n\nAnd expect critics to complain while users quietly adopt it - because convenience always wins.\n\nX just made messaging feel modern again.\n\nSource: @X, @cb_doge, TechCrunch, Business Insider",
+      "created_at": "Thu Nov 13 12:50:00 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1988950605738708992",
+          "url": "https://pbs.twimg.com/media/G5osCbrakAAq8NV.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1319287761048723458",
+        "name": "Mario Nawfal",
+        "screen_name": "MarioNawfal",
+        "description": "Largest Show on X | Investor 700+ Startups | Founder @ibcgroupio , https://t.co/sw7OQ5KgAW",
+        "followers_count": 2673602,
+        "friends_count": 49930,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 241,
+        "favorite_count": 1004,
+        "reply_count": 178,
+        "quote_count": 60
+      }
+    },
+    "stats": {
+      "retweet_count": 6043,
+      "favorite_count": 36285,
+      "reply_count": 4249,
+      "quote_count": 671
+    }
+  },
+  {
+    "id": "1989003929108267159",
+    "text": "RT @WholeMarsBlog: Tesla Self-Driving 14 is finally smooth! \n\nHere's my first drive with the latest build, 14.1.7. https://t.co/kk7TSqiZ5e",
+    "created_at": "Thu Nov 13 16:14:25 +0000 2025",
+    "lang": "en",
+    "media": [
+      {
+        "type": "video",
+        "id": "1988914162333040640",
+        "url": "https://video.twimg.com/amplify_video/1988914162333040640/vid/avc1/3840x2160/F1PsS4GmiTpSFQDk.mp4?tag=21",
+        "bitrate": 25128000
+      }
+    ],
+    "retweet": {
+      "id": "1988915667366740117",
+      "text": "Tesla Self-Driving 14 is finally smooth! \n\nHere's my first drive with the latest build, 14.1.7. https://t.co/kk7TSqiZ5e",
+      "created_at": "Thu Nov 13 10:23:42 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988914162333040640",
+          "url": "https://video.twimg.com/amplify_video/1988914162333040640/vid/avc1/3840x2160/F1PsS4GmiTpSFQDk.mp4?tag=21",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1263491240336769026",
+        "name": "Whole Mars Catalog",
+        "screen_name": "WholeMarsBlog",
+        "description": "Covering tech, markets, AI, new energy, and autonomous electric vehicles 24/7",
+        "followers_count": 683618,
+        "friends_count": 28486,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 676,
+        "favorite_count": 3830,
+        "reply_count": 298,
+        "quote_count": 25
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 676,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1989006220376871289",
+    "text": "How to filter low quality messages",
+    "created_at": "Thu Nov 13 16:23:31 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1989005140255453645",
+      "text": "🚨 𝕏 Chat Feature 🚨\n\nTurn on this option to stop getting spam or unwanted DMs. This automatically hides low-quality messages and keeps your inbox clean.\n\nSettings → Privacy &amp; Safety → Direct Messages → Filter low quality messages. https://t.co/0Xn5J7Rt2A",
+      "created_at": "Thu Nov 13 16:19:14 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1989005090825326592",
+          "url": "https://video.twimg.com/amplify_video/1989005090825326592/vid/avc1/1080x1080/C2jRqCgldQdii2D0.mp4?tag=21",
+          "bitrate": 8768000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1389913567671975937",
+        "name": "DogeDesigner",
+        "screen_name": "cb_doge",
+        "description": "",
+        "followers_count": 1770140,
+        "friends_count": 996,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 195,
+        "favorite_count": 711,
+        "reply_count": 269,
+        "quote_count": 35
+      }
+    },
+    "stats": {
+      "retweet_count": 1850,
+      "favorite_count": 7306,
+      "reply_count": 1832,
+      "quote_count": 90
+    }
+  },
+  {
+    "id": "1989006678390419881",
+    "text": "RT @EvaFoxU: Elon Musk on the importance of establishing the right values ​​in AGI:\n\n“I don't think anyone's ultimately going to have contr…",
+    "created_at": "Thu Nov 13 16:25:20 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1988893194323398895",
+      "text": "Elon Musk on the importance of establishing the right values ​​in AGI:\n\n“I don't think anyone's ultimately going to have control over digital superintelligence any more than, say, a chimp would have control over humans. Like chimps don't have control over humans. There's nothing they could do. \n\nBut I do think that it matters how you build the AI and what kind of values you instill in the AI. And my opinion on AI safety is, the most important thing is that it be maximally truth-seeking, like that you don't force the AI to believe things that are false.”",
+      "created_at": "Thu Nov 13 08:54:24 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988893088350101504",
+          "url": "https://video.twimg.com/amplify_video/1988893088350101504/vid/avc1/360x640/QNMIfIk7oyVs1BKY.mp4?tag=21",
+          "bitrate": 950000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "959471389282578432",
+        "name": "Eva Fo𝕏 🦊 Claudius Nero's Legion",
+        "screen_name": "EvaFoxU",
+        "description": "Blogger covering SpaceX, Tesla, environment & space exploration 🖖🏼 ◉ My blog @onlyVerumNews ◉ Occasionally post memes",
+        "followers_count": 331212,
+        "friends_count": 1281,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 777,
+        "favorite_count": 3644,
+        "reply_count": 509,
+        "quote_count": 51
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 777,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1989037562816799205",
+    "text": "RT @jgebbia: Moved to ATX five years ago and found boomtown energy with bright people. Only gotten better since. Long on Austin.",
+    "created_at": "Thu Nov 13 18:28:04 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1989021430512578631",
+      "text": "Moved to ATX five years ago and found boomtown energy with bright people. Only gotten better since. Long on Austin.",
+      "created_at": "Thu Nov 13 17:23:57 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1988693851226406988",
+        "text": "Move to Austin! It gets better very year. \n\nSo many cool, world-class people are moving to Austin from SF, LA, NY, London and many other parts of the world!\n\nAustin++",
+        "created_at": "Wed Nov 12 19:42:16 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "44196397",
+          "name": "Elon Musk",
+          "screen_name": "elonmusk",
+          "description": "",
+          "followers_count": 229072440,
+          "friends_count": 1226,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5634,
+          "favorite_count": 65972,
+          "reply_count": 9128,
+          "quote_count": 942
+        }
+      },
+      "user": {
+        "id": "11417802",
+        "name": "Joe Gebbia",
+        "screen_name": "jgebbia",
+        "description": "CDO 🇺🇸 Views are my own",
+        "followers_count": 206299,
+        "friends_count": 1145,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 470,
+        "favorite_count": 3330,
+        "reply_count": 354,
+        "quote_count": 29
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 470,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1989055576253559172",
+    "text": "Solar electricity will become by far the biggest source of power for civilization",
+    "created_at": "Thu Nov 13 19:39:38 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1989006026520080519",
+      "text": "China is the majority of electricity growth on Earth.\n\n3/4 of new supply is solar.\n\nThat's the case globally, in China, in the U.S. — basically everywhere.",
+      "created_at": "Thu Nov 13 16:22:45 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1989000545290317825",
+          "url": "https://pbs.twimg.com/media/G5pZdTAWcAEwUjO.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1123808797556920325",
+        "name": "Jesse Peltan",
+        "screen_name": "JessePeltan",
+        "description": "On a mission to build Type 1 Civilization and restore the biosphere",
+        "followers_count": 58606,
+        "friends_count": 575,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 269,
+        "favorite_count": 1070,
+        "reply_count": 295,
+        "quote_count": 104
+      }
+    },
+    "stats": {
+      "retweet_count": 5492,
+      "favorite_count": 39566,
+      "reply_count": 8753,
+      "quote_count": 774
+    }
+  },
+  {
+    "id": "1989063230107582624",
+    "text": "Send files via the new encrypted 𝕏 Chat",
+    "created_at": "Thu Nov 13 20:10:03 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1989041396964290688",
+      "text": "🚨 𝕏 Chat Feature 🚨\n\n𝕏 Chat lets you send attachments like documents, files, videos, GIFs, and photos with full encryption for safer conversations.\n\nJust hit the ‘+’ icon located at the bottom left of your conversation. https://t.co/sku7e5m8D2",
+      "created_at": "Thu Nov 13 18:43:18 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1989041314013294593",
+          "url": "https://video.twimg.com/amplify_video/1989041314013294593/vid/avc1/640x640/OetHncab6DaET-No.mp4?tag=21",
+          "bitrate": 1280000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1389913567671975937",
+        "name": "DogeDesigner",
+        "screen_name": "cb_doge",
+        "description": "",
+        "followers_count": 1770140,
+        "friends_count": 996,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 144,
+        "favorite_count": 631,
+        "reply_count": 190,
+        "quote_count": 26
+      }
+    },
+    "stats": {
+      "retweet_count": 1695,
+      "favorite_count": 8891,
+      "reply_count": 1906,
+      "quote_count": 99
+    }
+  },
+  {
+    "id": "1989096465898303600",
+    "text": "Congratulations @JeffBezos and the\n@BlueOrigin team!",
+    "created_at": "Thu Nov 13 22:22:07 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1989076977245122908",
+      "text": "BOOSTER TOUCHDOWN! New Glenn returns to its blue origin.",
+      "created_at": "Thu Nov 13 21:04:41 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "235348644",
+        "name": "Blue Origin",
+        "screen_name": "blueorigin",
+        "description": "For the Benefit of Earth",
+        "followers_count": 754900,
+        "friends_count": 379,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 1552,
+        "favorite_count": 13460,
+        "reply_count": 939,
+        "quote_count": 515
+      }
+    },
+    "stats": {
+      "retweet_count": 3256,
+      "favorite_count": 65099,
+      "reply_count": 1960,
+      "quote_count": 202
+    }
+  },
+  {
+    "id": "1989099318079549586",
+    "text": "Please reply to this post if you’re not receiving 𝕏 notifications or if the notifications are delayed more than a few minutes",
+    "created_at": "Thu Nov 13 22:33:27 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 3146,
+      "favorite_count": 30584,
+      "reply_count": 16390,
+      "quote_count": 486
+    }
+  },
+  {
+    "id": "1989099351894028639",
+    "text": "RT @MarioNawfal: ELON: GROK IS THE BEST ASSISTANT TO FIGHT PROPAGANDA\n\n“You just press the Grok icon on any 𝕏 post and it will analyze it f…",
+    "created_at": "Thu Nov 13 22:33:35 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": {
+      "id": "1989065114385842491",
+      "text": "ELON: GROK IS THE BEST ASSISTANT TO FIGHT PROPAGANDA\n\n“You just press the Grok icon on any 𝕏 post and it will analyze it for you and research it as much as you want.\n\nSo, just by tapping the Grok icon, you can assess whether that post is the truth, nothing but the truth, or whether there's something supplemental that needs to be explained.\n\nSo, I think we've made a lot of progress towards freedom of speech and people being able to tell whether something is false or not false, or propaganda.\n\nThe recent update to Grok is actually, I think, very good at piercing through propaganda.\n\nAnd then, we used that latest version of Grok to create Grokipedia.\n\nIt's not just, I think, more neutral and more accurate than Wikipedia, but it actually has a lot more information than a Wikipedia page.”\n\nSource: All-In Podcast @theallinpod, October 31, 2025",
+      "created_at": "Thu Nov 13 20:17:32 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1989065035537076224",
+          "url": "https://video.twimg.com/amplify_video/1989065035537076224/vid/avc1/1920x1080/o2qZOpHXDgLlNoJb.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1988986113047031956",
+        "text": "Grok is improving extremely fast. \n\nUpdate your Grok app daily.",
+        "created_at": "Thu Nov 13 15:03:37 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "44196397",
+          "name": "Elon Musk",
+          "screen_name": "elonmusk",
+          "description": "",
+          "followers_count": 229072440,
+          "friends_count": 1226,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1819,
+          "favorite_count": 9747,
+          "reply_count": 1884,
+          "quote_count": 86
+        }
+      },
+      "user": {
+        "id": "1319287761048723458",
+        "name": "Mario Nawfal",
+        "screen_name": "MarioNawfal",
+        "description": "Largest Show on X | Investor 700+ Startups | Founder @ibcgroupio , https://t.co/sw7OQ5KgAW",
+        "followers_count": 2673602,
+        "friends_count": 49930,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 649,
+        "favorite_count": 3475,
+        "reply_count": 482,
+        "quote_count": 43
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 649,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1989108609268215920",
+    "text": "📖",
+    "created_at": "Thu Nov 13 23:10:22 +0000 2025",
+    "lang": "art",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1989083932697018604",
+      "text": "ELON TO RENAME GROKIPEDIA TO ENCYCLOPEDIA GALACTICA, AND THAT'S A BIG DEAL\n\nElon’s taking notes from a 1940s book series where humans build a galaxy-sized library to stop their empire from crashing. \n\nYep, nerd stuff, but Elon is dead serious about it.\n\nThe new name comes from Isaac Asimov’s Foundation, where the “Encyclopedia Galactica” is like the entire internet and your smartest teachers rolled into one, but for an entire galaxy. \n\nElon wants Grokipedia to be that, but real. With audio, images, videos, and maybe even fewer weird donation banners.\n\nLaunched in 2025, Grokipedia started with over 885,000 articles and a mission: delete the drama. \n\nThis isn’t just about facts, not narratives. \n\nRenaming it Encyclopedia Galactica isn’t just a nerdy flex, it’s a mic drop. \n\nHe’s turning a search tool into a symbol, daring people to think bigger. \n\nIt's Elon’s way of saying: if humanity’s going down, at least we’ll go down informed.\n\nSource: @elonmusk",
+      "created_at": "Thu Nov 13 21:32:19 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1989082872523767808",
+          "url": "https://pbs.twimg.com/media/G5qkVX2XwAALWkh.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1319287761048723458",
+        "name": "Mario Nawfal",
+        "screen_name": "MarioNawfal",
+        "description": "Largest Show on X | Investor 700+ Startups | Founder @ibcgroupio , https://t.co/sw7OQ5KgAW",
+        "followers_count": 2673602,
+        "friends_count": 49930,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 425,
+        "favorite_count": 2552,
+        "reply_count": 398,
+        "quote_count": 75
+      }
+    },
+    "stats": {
+      "retweet_count": 2492,
+      "favorite_count": 21135,
+      "reply_count": 2387,
+      "quote_count": 161
+    }
+  }
+]
+```
+
+## 分析要求
+请用中文生成分析报告
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @elonmusk的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

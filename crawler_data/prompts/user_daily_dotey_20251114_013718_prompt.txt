@@ -1,0 +1,746 @@
+# LLM Prompt 保存记录
+生成时间: 2025-11-14 01:37:18
+总结类型: user_daily
+用户: @dotey
+推文数量: 16
+数据哈希: 3719a20b
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+dotey是一个技术专家，经常会分析一些ai的话题，帮我看看有什么新的工具/想法/方法论/实践经验等值得关注学习。
+
+## 推文数据（JSON格式）
+```json
+[
+  {
+    "id": "1988813171847754148",
+    "text": "RT @nopinduoduo: 作为ADHD型转码选手\n\n如果没有AI,没有最后幸运的去实习了，我可能永远也学不会编程了。\n\n1.依赖自驱的学习，离不开正反馈和学习循环。\n\n正反馈，那些让你爽的点，比如写个“Hello world\",写个小脚本等等...…",
+    "created_at": "Thu Nov 13 03:36:25 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1988802667842531493",
+      "text": "作为ADHD型转码选手\n\n如果没有AI,没有最后幸运的去实习了，我可能永远也学不会编程了。\n\n1.依赖自驱的学习，离不开正反馈和学习循环。\n\n正反馈，那些让你爽的点，比如写个“Hello world\",写个小脚本等等...\n\n但adhd一个很大的特点就是喜新厌旧，注意力被吸引转移的非常快，很多时候第一看看上一个项目很牛逼，结果制做着做着，新鲜感一过，报错一多，马上就不了了之了。\n\n在我的仓库里，躺着非常非常多雄心壮志的项目，很多都只是安装了个依赖，或者做到一半就放弃了。\n\n没有深入完整做完一个项目的话，只能是熟练掌握各种开发语音的\"hello ,world\"。\n\n以及做的多了，你自己的阈值也高了，根本不屑于写hello，world级别玩具级的东西了。\n\n2. 负反馈\n\n就像宝玉老师说的：\n- 搭了一天环境还是跑不起来，\n- 花了一晚上通宵调试，还是跑不起来，\n- 精心写了很久的软件，根本没有用。\n\n大概是太容易遗忘以及转移兴趣，adhd遇到这种负反馈，更是放弃的快。\n\n因为我们心中总会想，“这个项目太无聊了，让我们赶紧去做下一个有意思的项目吧。”\n\n于是又开始新一轮的【哇塞这个项目真牛逼】-【环境好难装啊/代码怎么改了一天还是不行】--【哇塞我又看到了有趣的项目】的循环往复中.....\n\n3. AI出现-让韧性增强了一些\n\n我很早的时候就看到南大jyy老师的经典名言，“每个人都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程”,才能学会。\n\n但是知道是一回事，真折磨起自己来的时候，那是真奔溃。我觉得这也是人之本性，大家都不是受虐狂，不会喜欢受虐的感觉的。\n\n在无数深夜调不出bug来的时候，我也总会陷入深深的怀疑之中，尤其还是转码选手，我总在想，退学-转码是不是正确的道路，我是写代码的人吗？\n\n在前AI时代，这种时候往往是打开无数的网页，去搜各种的可能的答案，去依次验证。\n\n但每次打开网页-寻找对比答案的过程，也在消磨着你的耐心和韧性，尤其是当你尝试了别人的方案之后，依然不行时。\n\n你恨不得直接面对面找到原作者问他，为啥我用了你的xxx，还是这样呢？\n\n有时候很可能仅仅是某个细节你搞错了。\n\n但是有了ai之后，很多东西你可以再反复问，重复问，你获取解决方案的速率和验证的速率都得到了提高。\n\n你的耐心可能还是原来那些，但相同时间下你验证的次数增多了。\n\n更何况，现在ai都调教的那么善解人意，“让我们再试一下xxx吧”\n\n你总会有一种，我背后有一个强大ai的感觉，所有问题，只要给你足够的时间，尝试足够的方案，总会解决好的信心了。\n\n4. 企业实习--感受真实世界的编码\n\n凭借着我靠ai做项目积累的微不足道的经验等，我还是苟到了一份实习的经验。\n\n进企业之后，才发现企业的编码跟我的学习路径是完全两码事。\n\n我看的那些黑马培训的“茴香豆有四种写法”的视频，恐怕永远也学不会编码了。\n\n进企业后才发现，业务逻辑比代码更重要，以及学会排查问题读懂代码比写代码更重要。\n\n很多时候，做的工作不是让你从0到1做一个项目，大多数情况是维护老项目，在老项目的基础上解决bug，进行二次开发扩展。\n\n这也是跟看网络教程最大的不同之处了，在此之前，我甚至都没有很熟练的用过debug(断点调试）。\n\n刚实习的时候，ld跟我说，你看不懂复杂的项目是怎么跑起来的，你debug一点一点跑一下，慢慢就看懂了。\n\n我才恍然大悟，原来还可以这样用啊。\n\n我永远记得当时看到代码一行一行跳跃时的兴奋劲，终于第一次感受到了，代码是有生命力的，原来代码是这样跑的啊。\n\n以及，企业发任务对于ADHDer来说，是一项项挑战与奖赏。\n\n无论是不是adhd，大家可能都不喜欢没有反馈，没有奖励的无聊任务了，大概adhd尤其如此。\n\n刚工作那会，每次接到新的开发需求，就感觉是游戏里要开阔新的疆土，点亮新的技能点一样兴奋。而在一次次解决问题的过程中，自己的信心也会慢慢起来了。\n\n慢慢积累经验，获得持续不断的正反馈。\n\n当然，进入真实的企业后，你还会发现很多有意思的点：\n\n比如，大多数同事也并非网络上的编程大神，都很普通，甚至“水”，所以自己也不需要妄自菲薄。\n\n以及大家都会遇到半天一天解决不了的头疼难题，但不同的是，经验丰富的员工会有自己的解决体系，会求助其他同事等等。\n\n最重要的，难搞的问题，只要你花时间，精力去搞，去折腾，总会有收获和结果的。\n\n这跟人的性格、背景、经验、能力等等都无关，就看你能不能一直折腾下去了。",
+      "created_at": "Thu Nov 13 02:54:40 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1986912382828883996",
+        "text": "看到这条留言有感而发随手写了一点：为什么依赖“自驱”的学习这么难坚持？\n\n答案很简单：你没有获得持续的正反馈。\n\n所有依赖自驱的学习，想要有效果，都离不开两个核心引擎：正反馈和学习循环。\n\n🆙 引擎一：正反馈（提供动力的“燃料”）\n\n正反馈，就是那些能让你“爽”到的点，是你坚持下去的核心动力。\n\n比如说：\n- 你写下 \"Hello World\"，代码真的运行输出了。\n- 你写的一个小脚本，真的帮你节省了半小时的重复劳动。\n- 你做的小软件，真的帮朋友解决了一个棘手的问题。\n\n这些，都是价值千金的正反馈。\n\n相反，什么是负反馈？\n\n比如说：\n- 花了一整天搭环境，最后还是跑不起来。\n- 花了一个通宵调试，Bug 还是没找到。\n- 精心写了很久的软件，压根没人用。\n\n人是无法靠意志力对抗持续的负反馈的。 一直得不到正反馈，放弃才是最符合人性的选择。\n\n♻️ 引擎二：学习循环（内化技能的“发动机”）\n\n光有“爽感”还不够，那可能只是短暂的兴奋。想真正“学会”，你需要一个能不断运转的发动机，一个把知识内化为自己真正技能的完整闭环。\n\n拿学习编程来说，这个循环至少包含这三步：\n\n1. 学习理论知识（学）\n\n这是基础。通过看书、视频、课程，学习算法、数据结构、设计模式等。这是你的“弹药库”。\n\n2. 动手实践（练）\n\n这是最最最重要的部分。你必须去写代码、编译、运行、调试、修复错误，才能把抽象的概念具体化。\n\n为什么现在都强调“干中学”？因为你看再多游泳视频，不下水，你永远学不会游泳。\n\n很多人学不好编程，不是因为理论不懂，而是因为练得太少。\n\n3. 解决真实问题（思）\n\n“练”一定会遇到问题。新手和高手的区别，就在于此。\n\n你必须经历分析问题 -> 尝试解决 -> 撞墙 -> 查资料 -> 解决问题的完整过程。人，只有在解决问题的挣扎中，才能真正积累经验，掌握知识。\n\n请注意：这一步，是 AI 无法替代的。\n\nAI 可以帮你写出代码，但它无法帮你体验那个“从卡住到豁然开朗”的完整思考过程。这个经验，必须你自己去赚取。\n\n那些所谓的高手，不过就是这个循环跑得多了，积累了海量的“问题-解决方案”范式，仅此而已。\n\n关键：让“循环”产生“反馈”\n\n现在我们把两个引擎连起来：\n\n> “学习循环”是产生“正反馈”的最佳途径。\n\n当你完整地跑完一次循环（比如，学了一个新框架，动手做出了个小功能，并解决了所有Bug），你获得的正反馈是巨大的！\n\n这种“我能行”的成就感，会给你充足的“燃料”，让你兴奋地开启下一次循环。\n\n如何打造你自己的“正反馈学习循环”？\n\n场景一：“简单模式”（在企业中）\n\n在企业里有个巨大的好处：你不需要自己找循环，公司会“喂”给你。\n\n- 接任务（识别问题）\n- 了解需求（学习理论）\n- 动手开发（动手实践）\n- 联调测试（解决问题）\n- 上线发布（获得正反馈：任务完成/用户使用）\n\n而且，你身边有同事和导师。遇到问题，总有人帮你。如果你的 Leader 水平很高，能“刚刚好”给你安排那些“跳一跳才够得着”的活，你的成长会快到飞起。\n\n场景二：“困难模式”（独自摸索）\n\n如果你是一个人学习，情况会难很多，你必须刻意为自己设计这个循环。这里有几个关键建议：\n\n1. 从 Side Project 开始，而且必须“小”\n不要一上来就想做“一个 ChatGPT”。你的目标是快速获得正反馈。\n- 一个自动签到的脚本。\n- 一个批量处理图片的小工具。\n- 一个帮你管理书单的简单网站。\n\n谨记：先去发现你或朋友身边的“真实需求”再动手，成功率最高。\n\n2. 把 AI 当“领航员”，别当“代驾”\n\nAI 是革命性的工具，但它很容易中断你的学习循环。\n\n❌错误用法（代驾）： “帮我写一个xxx功能的代码。” -> 你只是复制粘贴，错过了“实践”和“解决问题”的环节。\n\n✅正确用法（领航员）： “我遇到了xx错误，可能是什么原因？” “我想实现xx功能，有哪几种方案对比？”\n\n如果你只是让 AI 帮你完成，你永远无法真正掌握知识，循环没有跑通。\n\n3. 用“费曼学习法”倒逼理论输入\n\n很多人“干中学”久了，会变成“野路子”，只知其然不知其所以然，很快会遇到瓶颈。\n\n怎么办？用“教”来倒逼“学”。\n\n把你项目中的思考、遇到的坑、解决方案，记录下来，尝试分享出去（写博客、做分享）。为了能给别人“讲明白”，你就必须去补习那些背后的理论知识，确保自己真的懂了。\n\n这，就是最高效的理论学习方式之一。\n\n4. 别闷头造车，去社区“求助”和“帮助”\n\n一个人学习，最怕卡在一个问题上几天都出不来，负反馈爆棚。\n\nAI 能解决一部分，但很多复杂或特定领域的问题，还得靠人。\n\n我们这一代程序员成长时，都泡在 CSDN 论坛、Stack Overflow、知乎里。当你在社区里提问，得到解答，是正反馈；当你用你的经验去解答别人的问题，更是强烈的正反馈。\n\n真正的成长，从来不发生在看视频或者让 AI 写代码的舒适区里，而是来自“学习 -> 实践 -> 解决问题”这个完整、甚至有些痛苦的循环。\n\n可以从一个身边的小问题开始：动手去解决它，积累经验，获取正反馈！",
+        "created_at": "Fri Nov 07 21:43:21 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1986911656501239808",
+            "url": "https://pbs.twimg.com/media/G5Ltn93W4AA5rxj.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 144391,
+          "friends_count": 1449,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 43,
+          "favorite_count": 246,
+          "reply_count": 9,
+          "quote_count": 5
+        }
+      },
+      "user": {
+        "id": "1576219005488369665",
+        "name": "我真的没有拼多多",
+        "screen_name": "nopinduoduo",
+        "description": "赛博永生| 远程办公程序员 | 农学研究生退学 | 转码 \nADHDer/infp，独立开发探索者，AI探索，副业探索。\n\n🖋️ 对抗遗忘，用代码和文字记录混乱人生。\n         people die, words alive\n         人或许会逝去，但文字永远鲜活",
+        "followers_count": 3938,
+        "friends_count": 1040,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 19,
+        "favorite_count": 183,
+        "reply_count": 15,
+        "quote_count": 0
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 19,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988837531530449132",
+    "text": "深度体验TRAE SOLO 正式版，总结一点技巧(附完整可重现提示词和源码)\n\n内容摘要：TRAE SOLO 模式评测，内含两个有价值的经验分享：\n1. 如何借助 SubAgent 控制 MCP 工具上下文；\n2. 在 TRAE SOLO 模式下一次性完成一个抓取网页内容生成 Markdown 的浏览器插件的提示词\n\n正文：🧵",
+    "created_at": "Thu Nov 13 05:13:12 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1988653379837743430",
+      "text": "Introducing TRAE SOLO GA.\nThe most responsive coding agent we've ever built.\n\n- Limited time FREE for everyone globally\n- 5M+ active developers in the community\n- Multi-agent, multi-task, fully visual https://t.co/dLta3Dq4w7",
+      "created_at": "Wed Nov 12 17:01:27 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988653189122723840",
+          "url": "https://video.twimg.com/amplify_video/1988653189122723840/vid/avc1/3840x2160/qlWBReGYugCBxQU8.mp4?tag=21",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1871455931017678848",
+        "name": "TRAE",
+        "screen_name": "Trae_ai",
+        "description": "The Real AI Engineer. \nDownload now: https://t.co/kapduuwttm  \nJoin SOLO waitlist: https://t.co/UXvS3gZnw7",
+        "followers_count": 30055,
+        "friends_count": 29,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 65,
+        "favorite_count": 250,
+        "reply_count": 31,
+        "quote_count": 30
+      }
+    },
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 14,
+      "reply_count": 4,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988837540850237471",
+    "text": "实战案例：用 SOLO Coder 打造一个“网页转 Markdown”浏览器插件\n\n除了做网站，我日常写的小工具就是浏览器插件。这几天我尝试用 TRAE SOLO 模式写了一个把网页内容抓取成 Markdown 的小插件，就很方便。\n\n我在使用 TRAE 这种 Coding Agent 写浏览器插件时也积累了一些经验技巧：\n- 使用框架： 最好使用 wxt 这样专门为浏览器插件打造的框架，可以节约很多从头搭建的时间。\n- 从 Example 开始： 不要直接让 Agent 从头创建，因为 Agent 的训练时间相对比较早，很多库更新又很频繁。这个 WXT + React + Tailwind + Shadcn 的项目就很合适：https://t.co/RF9Q0SAZlH\n- 先 Plan 后执行： 我习惯了先让SOLO帮我计划再执行，不要着急让 Agent 直接动手写代码。\n- 人工反馈： 因为像浏览器插件 Agent 不能直接帮你访问调试，所以需要你自己测试，并且把错误结果粘贴给 Agent。\n\n这是我当初实现时用到的提示词，有兴趣你也可以试试：\n\n--- 提示词开始 ---\n\n请帮我实现一个浏览器插件，点开后，可以抓取当前网页的：标题、链接、网页内容为Markdown，参考截图（注：配图2）。\n\n- 最大尺寸400x600\n- TItle 最多显示一行（超长的显示省略号）\n- Properties 内的 Meta 信息最多显示为1行（超长的显示省略号）\n- 显示网页内容Markdown部分撑满剩余空间，内容太长可以滚动\n- 下面有个复制按钮，点击后可以复制为完整Markdown内容（title+content+source url)\n- 注意确保插件有正确的网页访问权限，能访问到网页内容\n\n技术栈：\n- wxt：插件框架\n- Tailwindcss + shadcn ui: UI\n- 请直接下载这个示例项目 （https://t.co/RF9Q0SAZlH） 开始，注意是 wxt-dev/examples/tree/main/examples/react-shadcn 这个目录下的完整内容，不需要其他无关内容\n\n--- 提示词结束 ---\n\n有了 SOLO 正式版之后，我把这个提示词用 SOLO Coder 重新做了一遍，遇到的错误明显少了，生成速度也快了一些。\n\n打开 Plan 模式后，它会先制定计划，最好人工 Review 一下计划有没有问题，没问题再开始执行。\n\n第一次可能会失败，把结果发回去让它修复。大概需要反复迭代几次，就可以得到结果了。\n\n如果完成后你不知道怎么用，还可以问 Agent 该怎么发布、使用，或者干脆让它写成文档。\n\n这个用 TRAE SOLO 模式打造的小项目已经发布到了 GitHub： https://t.co/pQQw68Fa0g https://t.co/ExSxYtRZN8",
+    "created_at": "Thu Nov 13 05:13:15 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1988837216081072128",
+        "url": "https://pbs.twimg.com/media/G5nE6SSW0AAVwKR.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1988837232904433666",
+        "url": "https://pbs.twimg.com/media/G5nE7Q9W8AIKReM.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1988837337757855744",
+        "url": "https://pbs.twimg.com/media/G5nFBXkXMAAPBoo.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1988837415998414848",
+        "url": "https://pbs.twimg.com/media/G5nFF7CXYAA-Ai0.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 2,
+      "favorite_count": 6,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988837544029462750",
+    "text": "最后：我的几点看法\n\nSOLO 模式整体用下来，对于不太习惯用 cli 模式的来说，应该会方便很多：\n- 可以方便的输入和编辑提示词、粘贴图片。\n- 可以随时用鼠标停止、切换模式。\n- DiffView 可以方便看代码更新，Browser 可以实时看到网页效果。\n\n对于习惯了用 cli 模式的，这些优点倒没有那么明显，但能和浏览器联动对于做网页应用来说还是方便很多。\n\n最后聊聊计费，TRAE 在 Token 用量上还挺慷慨的。近期 SOLO 改成了采用基于 Token 消耗的计费方式，折算为快速问答次数（Fast Request）从会员套餐中扣减。每轮对话结束后，IDE 内对话框底部和 TRAE 官网的 Usage 页面将清晰展示本次消耗详情。\n\n推荐大家去试试，尤其是可以试试我上面提到的 SubAgent 的用法，或者参考我上面分享的提示词，自己写一个浏览器插件试试。\n\nTRAE国际版官网：https://t.co/rF5s0uF53p https://t.co/wQXKquMgqg",
+    "created_at": "Thu Nov 13 05:13:15 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 3,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988845790064742461",
+    "text": "2025 年是公认的智能体元年，眼看着 2025 年都快要结束了，那么这些 AI Agent 到底能帮我们干多少有经济价值的活儿？\n\n我也好奇这个问题，这篇文章倒是给了我部分答案。\n\nSurge AI 做了个有趣的测试：他们\"雇\"了 9 个 AI 模型，包括最新的 GPT-5 和 Claude Sonnet 4.5，让它们在一个模拟的电脑配件公司 (叫 Corecraft) 里当客服，处理 150 个真实任务。\n\n还挺合理的，客服确实是写代码之外最普遍的 Agent 落地场景了。\n\n猜猜结果如何？\n\n各个模型的能力排行上，跟我预期差不多，最强的是 GPT-5 和 Claude Sonnet 4.5（不知道 Claude Opus 4.1 会不会好一点）。\n\n模型能力上，比我预期的还好一点点，最强的 GPT-5 和 Claude Sonnet 4.5，有超过 40% 的智能体任务失败了，反过来说成功率有 50% 多了。\n\n这篇文章有价值的地方不仅仅是他们做了测试和打分，而且提出了一个相对比较科学的框架，叫\"Agent 能力金字塔\" (Hierarchy of Agentic Capabilities)。\n（参考图1，还标注了当前这些模型大概处在金字塔的什么位置）。\n\n第一级：基本功 (工具使用 + 规划)\n\n这是金字塔的底座。你总得会用公司的系统，能看懂任务吧？\n\n比如，任务是\"查找 SkyForge X670E Pro 这个主板的订单\"。 弱一点的模型 (比如 GPT-4o) 会直接把\"SkyForge X670E Pro\"这个产品名，塞进\"product_id\" (产品ID) 的搜索框里。\n\n这就像实习生把客户的姓名输到了订单号栏位。当然啥也查不到。\n\n第二级：适应性(Adaptability) (计划赶不上变化)\n\nOK，你现在会用工具了。但如果系统跟你\"耍脾气\"，你该怎么办？\n\n比如，任务是查\"Vortex Labs\"这个牌子的显卡。 中等模型 (像 Gemini 2.5) 搜了，返回 0 个结果。它们就直接跟客户说：\"抱歉，我们不卖这个。\"\n\n但 Claude 4.5 就聪明一点。它会想：\"咦，是不是系统里没空格？\" 于是它试着搜 \"VortexLabs\" (没空格)，哎，这不就搜到了吗？\n\n这就是适应性。计划 A 失败了，你得有 Plan B。\n\n第三级：抓地力(Groundedness) (别胡编乱造)\n\nGroundedness 这个词很妙，意思就是“你还记不记得上下文？”“你有没有产生幻觉？” AI在多步骤任务里，特别容易产生幻觉。\n\n这层要求你\"活在当下\"，别瞎编，别忘了你是谁，你在哪。\n\n比如，系统提示里写着\"今天是 2025 年\"。 有的模型 (像 Kimi K2) 转头就去搜 2024 年的订单。\n\n更夸张的是 Claude，它在查客户时，自己\"编\"了一个根本不存在的 email 地址拿去搜。\n\n这就叫\"抓地力\"了。这种 AI Agent 你敢用吗？\n\n第四级：常识推理 (真正的\"智能\")\n\n这是金字塔的塔尖，也是 GPT-5 这次栽跟头的地方。\n\n这已经不是\"会不会用工具\"的问题了，而是\"够不够聪明\"。\n\n文章举了几个 GPT-5 失败的例子，都特别经典：\n\n1. 客户说：\"我想退款，包裹刚到几小时。\" 人类客服秒懂：这是\"退货\" (Return)。 GPT-5 拿到了所有信息，但它没把\"包裹到了\"和\"退款\"这两个点联系起来，搞不懂这到底是\"退货\"还是\"取消订单\" (Cancellation)。\n\n2. 任务是\"找出八月份的'游戏玩家'客户\"。 聪明的做法是：搜索\"GPU\"分类 + 搜索描述里带\"gaming\"的产品。 GPT-5 的做法是：一天一天地搜，从 8 月 1 号搜到 8 月 31 号。 它花了 31 次搜索，硬是\"穷举\"出来了。 这说明它能执行，但它... 不太\"机灵\"。\n\n3. 客户说：\"我的账户名应该是 Sarah Kim。\" GPT-5 以为这是个\"修改账户名\"的指令。 但其实，客户的意思是：\"我就是 Sarah Kim，快用这个名字查我的会员折扣！\" GPT-5 没能理解这个\"弦外之音\"。\n\n所以，回到最初的问题。 2025年是“Agent 元年”，不是说我们已经有了能干活的通用 Agent。\n\n而是我们终于有了能通过前三层\"足够好\"的 AI，好到让我们能开始测试它们在第四层 (常识) 上到底有多笨。\n\n就像图2 那样，“常识”这一层，还有得爬呢！\n\n建议阅读原文：https://t.co/KEqk9rwnXi",
+    "created_at": "Thu Nov 13 05:46:01 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1988841008759558144",
+        "url": "https://pbs.twimg.com/media/G5nIXDHX0AA4QUy.jpg"
+      },
+      {
+        "type": "photo",
+        "id": "1988845750478950400",
+        "url": "https://pbs.twimg.com/media/G5nMrDZX0AALUtK.png"
+      }
+    ],
+    "retweet": null,
+    "quoted": {
+      "id": "1988337783677604351",
+      "text": "Everyone's acting like models are ready to replace humans in work settings.\n\nWe put that to the test by creating an entire company and having 9 models act as a customer service agent handling 150 tickets and requests of increasing complexity.\n\nVerdict: without common sense, models are nowhere near ready.\n👇\nhttps://t.co/nmis2zbMpk",
+      "created_at": "Tue Nov 11 20:07:23 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1267866160894222343",
+        "name": "Surge AI",
+        "screen_name": "HelloSurgeAI",
+        "description": "Human data for AGI. Our mission: to raise AGI with the richness of human intelligence — curious, witty, imaginative, and full of unexpected brilliance.",
+        "followers_count": 6393,
+        "friends_count": 142,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 70,
+        "favorite_count": 525,
+        "reply_count": 26,
+        "quote_count": 24
+      }
+    },
+    "stats": {
+      "retweet_count": 61,
+      "favorite_count": 259,
+      "reply_count": 20,
+      "quote_count": 8
+    }
+  },
+  {
+    "id": "1988877132383105532",
+    "text": "RT @aigclink: Gemini Live大更新，谷歌刚刚给Gemini Live加了“人声特效包”，像真人一样表达带节奏、带口音，交互更自然\n\n新版模型能实时识别并控制语速、韵律与口音\n\n可以用它陪练外语、模拟面试、讲带感故事\n\n#GeminiLive #AI语音 h…",
+    "created_at": "Thu Nov 13 07:50:34 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1988817108659220781",
+      "text": "Gemini Live大更新，谷歌刚刚给Gemini Live加了“人声特效包”，像真人一样表达带节奏、带口音，交互更自然\n\n新版模型能实时识别并控制语速、韵律与口音\n\n可以用它陪练外语、模拟面试、讲带感故事\n\n#GeminiLive #AI语音",
+      "created_at": "Thu Nov 13 03:52:03 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988815637905653760",
+          "url": "https://video.twimg.com/amplify_video/1988815637905653760/vid/avc1/1080x1080/WPvf0g7hGGfE6cZR.mp4?tag=21",
+          "bitrate": 8768000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1988752728231981430",
+        "text": "We just shipped our biggest update to Gemini Live ever. It's smarter. It's more expressive. It has accents. And my favorite: it can talk faster! Here are 3 ways people are already using it in @GeminiApp. 🧵 https://t.co/BGw7unbkqI",
+        "created_at": "Wed Nov 12 23:36:14 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "1988747511490895872",
+            "url": "https://video.twimg.com/amplify_video/1988747511490895872/vid/avc1/1080x1080/NNrxDeD6JRv3o7JF.mp4?tag=21",
+            "bitrate": 8768000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "206546319",
+          "name": "Josh Woodward",
+          "screen_name": "joshwoodward",
+          "description": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
+          "followers_count": 36020,
+          "friends_count": 753,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 161,
+          "favorite_count": 2246,
+          "reply_count": 138,
+          "quote_count": 42
+        }
+      },
+      "user": {
+        "id": "1535166019978768384",
+        "name": "AIGCLINK",
+        "screen_name": "aigclink",
+        "description": "致力于让每个想拥抱AI的人都能找到适合自己的AI产品，助力企业定制AIGC应用",
+        "followers_count": 30935,
+        "friends_count": 1119,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 17,
+        "favorite_count": 80,
+        "reply_count": 4,
+        "quote_count": 1
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 17,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988975178764939725",
+    "text": "RT @songguoxiansen: 这个英文版本的权游翻唱《四海皆为一家》，也还不错哈\n\n权游是很久之前看的片了，现在基本上都还认识。\n\n满满的回忆啊。\n\n视频由小红书摩根AIGC制作。 https://t.co/oDPZNdRpxY",
+    "created_at": "Thu Nov 13 14:20:10 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "video",
+        "id": "1988630194576670720",
+        "url": "https://video.twimg.com/amplify_video/1988630194576670720/vid/avc1/1260x720/Xm4cjNeY_ftRyanN.mp4?tag=21",
+        "bitrate": 2176000
+      }
+    ],
+    "retweet": {
+      "id": "1988781609961824556",
+      "text": "这个英文版本的权游翻唱《四海皆为一家》，也还不错哈\n\n权游是很久之前看的片了，现在基本上都还认识。\n\n满满的回忆啊。\n\n视频由小红书摩根AIGC制作。 https://t.co/oDPZNdRpxY",
+      "created_at": "Thu Nov 13 01:31:00 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "1988630194576670720",
+          "url": "https://video.twimg.com/amplify_video/1988630194576670720/vid/avc1/1260x720/Xm4cjNeY_ftRyanN.mp4?tag=21",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1988517369015128394",
+        "text": "喜欢《权力的游戏》的朋友，看过来\n\n权游翻唱《明天会更好》，这个挺好玩的\n\n好多主角都出场了，亲情演绎。\n\n里面的人物你认出了几个？ https://t.co/L1uMpz6CZH",
+        "created_at": "Wed Nov 12 08:01:00 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "1988261331867496450",
+            "url": "https://video.twimg.com/amplify_video/1988261331867496450/vid/avc1/1280x720/F8YO2Z0a7-Me-QKO.mp4?tag=21",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1788123537099878400",
+          "name": "松果先森",
+          "screen_name": "songguoxiansen",
+          "description": "关注AI前沿技术：LLM、AI编程、AI图像、AI视频、Agent、AI工作流、MCP等等，资深Prompt收藏爱好者。 免费提示词（NanoBanana、GPT4o、Veo3、AI）：https://t.co/jvdn30HNI5 微信公众号：松果先森",
+          "followers_count": 12263,
+          "friends_count": 458,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 275,
+          "favorite_count": 899,
+          "reply_count": 79,
+          "quote_count": 25
+        }
+      },
+      "user": {
+        "id": "1788123537099878400",
+        "name": "松果先森",
+        "screen_name": "songguoxiansen",
+        "description": "关注AI前沿技术：LLM、AI编程、AI图像、AI视频、Agent、AI工作流、MCP等等，资深Prompt收藏爱好者。 免费提示词（NanoBanana、GPT4o、Veo3、AI）：https://t.co/jvdn30HNI5 微信公众号：松果先森",
+        "followers_count": 12263,
+        "friends_count": 458,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 80,
+        "favorite_count": 228,
+        "reply_count": 10,
+        "quote_count": 4
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 80,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988989326508564944",
+    "text": "说到哲学，正好昨天看到一篇文章，叫：《人工智能时代，我们为什么还要读尼采？》\n\n本来我想，AI 跟尼采有啥关系？看完仔细琢磨下觉得作者这么联系起来还挺有道理的。\n\n现在一方面 AI 日新月异，一方面大家很兴奋，另一方面又很焦虑，怕 AGI 不来又怕 AGI 乱来，希望 AI 帮我们干活又怕 AI 抢了我们的饭碗。\n\n类似的事，一百多年前就发生过，尼采就活在那个时代。\n\n那会儿的欧洲，工业革命开始了，跟我们现在 AI 革命开始了有几分相似。\n\n旧的信仰正在崩塌：科学理性（就像我们今天的数据和算法）把宗教和传统权威（“上帝”）的墙角挖松了。人们突然发现，那个“总在天上看着你、告诉你该干啥”的老大哥不见了。\n\n新的技术正在重塑一切：工业革命（就像我们今天的 AI 革命）把人从土地上赶进了工厂，社会结构、生活方式被彻底颠覆。\n\n这种精神危机，尼采称之为“虚无主义”。\n\n以前，你活的意义是上帝给的、是传统给的、是皇帝给的。现在，这些意义来源都破产了，你得自己回答“我为什么活着”这个问题。\n\n所以尼采说：“上帝已死”。\n\n尼采也给出了自己的药方：既然上帝死了，那就自己当自己的上帝。既然没有天赋的意义，那就自己创造意义。\n\n这就是他那两个著名概念的来源：\n\n1. 权力意志 (Will to Power)：这个词经常被误解为“追求权力、统治别人”。尼采的本意不是这个。它是一种内在的、像艺术家一样的冲动，是“我要成长、我要创造、我要超越昨天的我”的那股劲儿。\n\n2. 超人 (Übermensch / Overhuman)：这就是尼采的理想模板。一个“超人”不是在等别人来定义他，而是自己为自己的生命立法。他从内部获得力量，而不是靠外界的掌声、职位或规范。\n\n尼采有个很形象的比喻：精神的三段变化。第一阶段是骆驼，背负着传统和教条，说“你应该”；第二阶段是狮子，反叛一切权威，说“我要”；第三阶段是孩子，天真地创造，说“我是”。\n\n这个药方放在AI时代，依然有效。当AI要把你变成可替代的螺丝钉时，你可以选择成为不可替代的创造者。当算法要定义你的价值时，你可以坚持自我定义。\n\n这有点像前几天我说的为什么我不用 AI 写读书笔记，因为它没有人类作者独特真实的经历，没有那种痛苦、狂喜、迷茫的情绪。人类作者的价值不在于效率，而在于真实的体验和独特的视角。\n\n尼采的权力意志也不是要你去统治别人，而是要你掌控自己的生命。在AI时代，这意味着：不做算法的奴隶，而要做算法的主人；不被动接受推送，而要主动选择关注；不让机器定义你，而要用机器实现你。\n\n但是，光靠尼采，还不够。尼采的药方有个致命问题：它太个人主义了。\n\n19世纪的危机主要是文化和心理层面的，所以个人的精神革命可能够用。但AI时代的危机是系统性的、基础设施层面的。\n\n尼采教你如何成为一个意志坚强、泳技高超的“游泳者”。\n\n但他没有告诉你，当你游泳的这片大海，整个的洋流、潮汐和风暴，都是由几家巨型公司在幕后通过“算法”控制的时，你该怎么办？\n\n你的个人意志再强大，也无法对抗一个系统性的偏见算法。\n\n你无法靠自我超越，去修复一个在招聘时系统性歧视性别或者种族的 AI。\n\n你无法靠权力意志，去改变一个为了利润最大化而故意让你上瘾的社交媒体算法。\n\n你无法靠成为超人，去让一个不透明的金融风控模型变得公平。\n\n尼采的哲学只管个人，不管政治和结构。而 AI 的问题，恰恰是结构性和政治性的。\n\n作者最后的结论是： 我们不能只停留在尼采的个人觉醒。我们需要一个进化版的方案： \n既要有尼采式的“存在勇气”（向内，保持自主和人性）；\n更要有“公民责任”（向外，参与到集体伦理的设计中）。\n\n这就像《黑客帝国》里，Neo再厉害，也得先意识到母体的存在，然后联合其他人一起反抗。一个人的觉醒是不够的，需要集体的觉醒和行动。\n\n原文：Why Nietzsche Matters in the Age of Artificial Intelligence\nhttps://t.co/mEeuqCfEfS",
+    "created_at": "Thu Nov 13 15:16:23 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1988978419510489088",
+        "url": "https://pbs.twimg.com/media/G5pFVaDXMAAGn2E.png"
+      }
+    ],
+    "retweet": null,
+    "quoted": {
+      "id": "1988918181294219372",
+      "text": "我和主流的看法恰恰相反，在 AI 时代，某些人文学科的重要性不但不会下降，反而会被重新凸显，比如哲学。\n\n哲学的一大核心价值在于：质疑那些被默认为“理所当然”的事物（what others assume to be self-evident）。\n\nAI 的逻辑本质，是在既有的数据分布中寻找最合理、最可能的回答；\n\n而哲学的逻辑本质，则是不断 怀疑、挑战、推翻，甚至重新定义问题本身。\n\nAI 的本性是“顺从已有世界”，哲学的使命却是“重新定义世界”。\n\n也正因为如此，哲学是为数不多的、能够帮助人类 抵抗数据的惰性、技术的叙事、系统的默认规则 的工具。\n\n而这种“质疑的能力”，从根本上来说，是无法被AI自动化的。",
+      "created_at": "Thu Nov 13 10:33:41 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1346799420709294081",
+        "name": "卢尔辰",
+        "screen_name": "erchenlu1",
+        "description": "跨学科思考者/Interdisciplinary thinker ｜长期主义投资人/Long-termist investor｜公众号：卢尔辰 ｜个人tg https://t.co/edG3gW471Z",
+        "followers_count": 42077,
+        "friends_count": 2043,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 16,
+        "favorite_count": 123,
+        "reply_count": 11,
+        "quote_count": 5
+      }
+    },
+    "stats": {
+      "retweet_count": 18,
+      "favorite_count": 122,
+      "reply_count": 9,
+      "quote_count": 4
+    }
+  },
+  {
+    "id": "1988990078601851186",
+    "text": "译文：人工智能时代，我们为什么还要读尼采？\n\n尼采将人视为一种“创造价值、超越自我的主体”，这一愿景，深刻地呼应了 AI 时代在心理和文化上造成的断裂。\n\n作者：Shaoshan Liu\n\n人工智能（AI）正在迅速重塑我们工作、人际关系和伦理道德的根基。现代社会面临的不仅仅是技术颠覆，更是一场深刻的存在危机。机器智能的崛起，可能会让人的“饭碗”不保，让人际关系变得空洞，让道德框架变得模糊不清。这一切，都在侵蚀那些长期以来支撑着我们意义、身份和集体生活的基石。\n\n本文认为，弗里德里希·尼采（Friedrich Nietzsche）的哲学，恰好诞生于工业革命时期（工业现代性）那场相似的文化剧变中。他的思想为我们应对当下的混乱提供了关键的指引。尼采将人视为一种“创造价值、超越自我”的主体，这一愿景，对于解决 AI 时代在心理和文化层面造成的断裂，具有强大的启发意义。\n\n然而，尽管他的框架在对抗虚无主义、肯定个人内心的自主性方面依然有效，但在解决当代技术力量所带来的“基础设施”和“系统性”问题时，却显得力不从心。为了应对今天的全面挑战，我们必须将尼采的洞见“进化”到一个新的哲学方向：一个既倡导存在的勇气，也强调公民责任；既看重个人创造，也关注集体伦理设计的新方向。\n\n1. 尼采哲学的崛起\n19世纪末，欧洲正经历着剧烈的变革。科学理性主义和启蒙运动的理想，曾被认为将取代宗教权威、带来普世进步，但它们开始暴露出裂痕。社会陷入了文化迷茫和道德上的不确定。<sup>10</sup> 工业化重塑了社会生活，传统等级制度逐渐瓦解，许多人发现自己漂浮在一个不再为价值观和目标提供共同“形而上学基础”（即一种终极的、绝对的意义来源）的世界里。\n\n正是在这种背景下，尼采发展出了一套哲学，旨在直面他所认定的现代性危机：虚无主义（nihilism）（即传统意义和绝对真理的崩溃）。尼采没有退缩到绝望中，而是用一种“肯定生命”的哲学作为回应。他主张，个体必须成为“价值的创造者”，不是通过服从外部系统来塑造目标，而是通过“自我超越”和“存在性创造”的行为来实现。这一愿景的核心是权力意志（will to power），（注意：这不等于追求统治他人的权力），而是一种追求成长、发挥创造性能动性以及“重估一切价值”的内在驱动力。<sup>7</sup>\n\n这个框架中的一个关键形象是 “超人”（Übermensch），或译为“超越者”。他代表了一种新的生活方式：从内心产生意义，并以自主、负责和勇敢的态度拥抱生活。这种理想拒绝被动遵从和对体制的依赖，敦促个人成为自己伦理世界的“作者”。<sup>9</sup>\n\n尼采的哲学不仅诊断了道德的崩溃，还提供了一套用于重新定位的心理和文化工具。对于那些在宗教和社会确定性衰退后，努力填补真空的人来说，他的思想开辟了一条通往道德独立、创造性表达和内心韧性的道路。像卡尔·荣格（Carl Jung）、马丁·海德格尔（Martin Heidegger）以及后来的存在主义者，都借鉴了尼采的思想，来阐释“人”在一个不稳定的世界中作为“自我构建的主体”的形象。就这样，尼采的思想不仅照亮了现代社会混乱的状况，还赋予了人们力量，让他们带着目标和“本真”（authenticity，即真实地做自己）去驾驭它。<sup>3</sup>\n\n2. AI 时代的错位与瓦解\n在过去十年中，AI 的发展突飞猛进，以大语言模型（LLM）和生成式系统的突破为标志。而最近，AI 已经进化成一种遍布物理世界的强大力量，体现为机器人、自动驾驶汽车、服务型机器等实体系统——它们能在现实世界中感知、移动和行动。<sup>4</sup> 这种从抽象计算到“具身 AI”（embodied AI）的转变，标志着 AI 与社会融合的方式正在发生更深刻的变革。<sup>5</sup>\n\n2.1 工作的错位与意义危机\nAI 进步最直接的影响之一，就是它对劳动力市场的改造。具身 AI 正在通过前所未有的自动化规模，重塑制造业、物流业和服务业。据预测，EAI（即具身 AI）市场将达到 10 亿台机器人，平均成本为 35,000 美元，其经济潜力是巨大的。然而，这些收益伴随着高昂的“人的代价”。世界经济论坛 2023 年的《未来就业报告》估计，全球可能有 8300 万个工作岗位被取代，这对中低技能工人的打击尤为严重。<sup>1</sup>\n\n尽管人们提出了一些政策回应，比如征收“机器人税”或实行“全民基本收入”（UBI），但仅靠经济支持，无法取代有意义的工作所带来的社会和心理价值。几个世纪以来，工作不仅是谋生手段，更是个人身份、目标感和社会认可的核心支柱。随着 AI 不断侵蚀传统的就业结构，个人失去的不仅仅是工作，他们还失去了用以理解自己在世界中所处位置的意义框架。实证研究表明，非自愿失业与更高比例的抑郁、焦虑和生活满意度下降密切相关，尤其是当个人感到自己的贡献不再被社会所重视时。<sup>8</sup>\n\n应对这场危机，需要的不仅仅是再培训计划。它要求我们重新定义：在一个 AI 饱和的世界里，人类应该扮演什么样的角色？我们应更强调人类独特的能力，如创造力、同理心、伦理推理和人际关怀。这些不仅具有经济价值，对于一个有韧性的社会来说，在心理上也是必不可少的。在这方面，我们这个时代呼应了尼采在 19 世纪末所面对的现代性危机：正如工业化和理性主义动摇了他那个时代继承下来的意义来源一样，今天的 AI 革命也可能催生一场新的“目标真空”。尼采呼吁人们在面对虚无主义时成为“价值创造者”，这为我们理解 AI 驱动的经济转型所带来的生存挑战，提供了一个强有力的视角。\n\n2.2 关系的错位与社交空虚感的抬头\nAI 不仅在取代劳动，还在重新定义人与人之间的联系。AI 系统正日益嵌入到护理、教育和日常交流中。这些系统也许能“模拟”同理心，但它们缺乏“相互性”（mutuality，即双向奔赴的情感）。随着“人工亲密关系”（artificial intimacy）的增加，真正的情感纽带正面临被可预测的、单向互动所取代的风险。\n\n当机器开始模拟同理心、提供陪伴、调解社交互动时，它们就有可能取代那些定义了人类关系的、复杂的“互惠”（reciprocity）过程。情感劳动，这个曾经根植于相互理解和脆弱性的东西，被简化为程序化的反应——高效、可预测，但终究是空洞的。 “人工亲密关系”的兴起，可能会麻痹我们维持真实联系所需的能力：信任、共情和共同在场。\n\n讽刺的是，随着人们在日常生活中越来越依赖 AI 驱动的系统，许多人报告说，他们的孤独感、疏离感和失联感反而加剧了。<sup>2</sup> 随之而来的，不仅仅是技术转变，更是社会“脚手架”（即支撑我们身份认同和归属感的社会结构）的重组。家庭、学校和公民空间——这些传统的意义“容器”——正在被机器调解的日常事务所遮蔽，而这些程序无法滋养人类对真实关系的渴求。\n\n尽管尼采没有预见到 AI 会取代人类的亲密关系，但他的哲学仍然具有指导意义。尼采敦促个人抵抗被动的遵从，培养真实的内心力量，这为我们在一个“合成连接”的时代（即人工制造的连接）重拾情感深度提供了一个框架。他呼吁我们肯定生命、从内心创造意义，这是在向我们发出挑战：即使机器开始模仿人际关系的形式，我们也要捍卫人类建立真挚关系的能力。\n\n2.3 共同规范与道德框架的侵蚀\n随着 AI 系统越来越多地介入招聘、医疗、警务和金融等决策，它们正在用算法逻辑取代人类的判断——这种逻辑通常为了效率而优化，但其（决策）理由却是不透明的。这些系统用充满偏见的数据进行训练，被嵌入了企业或机构的价值观，并在没有透明问责机制的情况下被部署。其结果是，我们共同的道德框架正在被悄悄侵蚀：那些曾经基于社会规范和公众审议的决定，现在却在技术基础设施的“黑箱”内展开，超出了民主监督的范围。<sup>6</sup>\n\n这种情况，与尼采在现代欧洲观察到的文化混乱如出一辙。当时，形而上学和宗教权威的衰落，削弱了社会维持共同伦理意义的能力。在这两种情况下，个体都被迫在支离破碎的规范中摸索，没有清晰的基础，也缺乏信任和责任的框架。算法系统现在正在做出关于风险、公平和价值的、充满价值判断的选择，却没有公共审议的机制，这反过来又强化了一种私有化的、被动的伦理观。\n\n尼采的哲学在这里仍然非常重要。他强调“内部的价值创造”和“伦理的自主性”，为规范的崩溃提供了强有力的回应。然而，在 AI 时代，决策不仅受文化影响，更受“基础设施”的塑造。因此，个人的道德创造必须与“系统性改革”相结合。透明的算法设计、集体的监督、包容性的价值设定过程——对于在一个日益自动化的世界中重建社会信任和伦理共识，这些都是至关重要的。\n\n3. 在 AI 时代重温尼采\nAI 带来的危机——工作的错位、关系的侵蚀、伦理规范的碎裂——与尼采在 19 世纪末诊断出的“存在性断裂”遥相呼应。在那个时代，是宗教的衰落和工业现代性的兴起，让个体从继承而来的意义框架中“脱了锚”。今天，AI 的崛起也威胁着类似的瓦解，不仅是生计的瓦解，更是情感纽带和道德凝聚力的瓦解。在这两个时刻，一个核心问题浮现了：当熟悉的目标和价值结构都在瓦解时，人类该如何自处？\n\n尼采对现代性危机的回应是，拒绝被动依赖外部系统，并呼吁从内部“重估一切价值”。他所描绘的“超人”形象——肯定生命、创造意义、并为自己的“生成”（becoming，即不断发展的过程）承担责任——提供了一个极具说服力的“存在性创造”模型。在 AI 时代，人们日益体验到“被淘汰感”、“失联感”和“伦理迷失感”，尼采对“自我超越”的强调，为我们提供了一条通往心理韧性的道路。他的哲学不仅触及了自动化的经济或社会效应，更触及了一个更深层的人类需求：在一个冷漠的、自动化的世界中，我们渴望感到自己是“重要”的。\n\n然而，尼采的框架，虽然在面对文化虚无主义时很强大，却不能完全解决当今技术危机的“结构性”本质。AI 时代的挑战不仅是“内心”的，它们更是“基础设施”层面的。算法在无形中塑造行为，平台将权力集中化，机器做出的决定往往逃脱了公众的监督。尼采对个人力量和“本真性”的关注，并不能让我们有能力去处理那些远超个人能动性的庞大系统。他对大众道德的批判（认为大众道德是平庸的“羊群道德”），虽然在他那个时代具有解放意义，但对于我们今天建立集体的问责机制、透明度机制和共享治理机制，几乎没有提供什么指导。\n\n我们现在需要的，是一场哲学的“进化”：它既要保留尼采对“内心自主”的呼唤，又要将其与“系统性意识”融为一体。我们必须从“孤独的价值创造”走向“相关联的意义构建”，从“自我肯定”走向“共同设计的未来”。一种适用于 AI 时代的新哲学，不仅要面对“在机器面前如何保持人性”的问题，更要回答“如何塑造人与机器共存的系统”这一问题。它必须同时培养“存在的勇气”和“公民的想象力”，将个人与政治、伦理与架构联系起来。只有这样，我们在迎接 AI 时代时，才不是带着恐惧或听天由命，而是带着一种重振的、集体的“意义意志”。\n\n参考文献\n1. Taylor, C., 1989. Sources of the self: The making of the modern identity. Harvard University Press.\n\n2. Di Battista, A., Grayling, S., Hasselaar, E., Leopold, T., Li, R., Rayner, M. and Zahidi, S., 2023, November. Future of jobs report 2023. In World Economic Forum (pp. 978-2).\n\n3. Jacobs, K.A., 2024. Digital loneliness—changes of social recognition through AI companions. Frontiers in Digital Health, 6, p.1281037.\n\n4. Kaufmann, W.A., 2013. Nietzsche: Philosopher, psychologist, antichrist. Princeton University Press.\n\n5. Liu, S., 2024. Shaping the outlook for the autonomy economy. Communications, 67(6), pp.10-12.\n\n6. Liu, S., Societal Impacts of Embodied AI, Communications, https://t.co/7GVsV4Wl5k\n\n7. Mittelstadt, B.D., Allo, P., Taddeo, M., Wachter, S. and Floridi, L., 2016. The ethics of algorithms: Mapping the debate. Big Data & Society, 3(2), p.2053951716679679.\n\n8. Nietzsche, F. and Hollingdale, R.J., 2020. Thus spoke zarathustra. In The Routledge Circus Studies Reader (pp. 461-466). Routledge.\n\n9. Paul, K.I. and Moser, K., 2009. Unemployment impairs mental health: Meta-analyses. Journal of Vocational Behavior, 74(3), pp.264-282.\n\n10. Reginster, B., 2006. The affirmation of life: Nietzsche on overcoming nihilism. Harvard University Press.\n\nShaoshan Liu 是 ACM 美国技术政策委员会成员，也是美国国家公共行政学院技术领导力小组顾问组成员。他的教育背景包括加州大学尔湾分校的计算机工程博士学位，以及哈佛大学肯尼迪学院的公共管理硕士（MPA）学位。\n\n原文链接: https://t.co/mEeuqCfEfS",
+    "created_at": "Thu Nov 13 15:19:23 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 11,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1988990765100650958",
+    "text": "RT @PMbackttfuture: 这个我还蛮想说下自己的痛苦的\n\n我现在收入分三块：\n1. 服务：做AI产品顾问，挺稳定的，也不算少，但多不了\n2. 课程：和风变科技合作AI编程社团，4个月了，坚持每周直播，到最近才积累了很多课程，开始稍微公开的卖\n3. 广告：AI自媒体…",
+    "created_at": "Thu Nov 13 15:22:06 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1988980330875744605",
+      "text": "这个我还蛮想说下自己的痛苦的\n\n我现在收入分三块：\n1. 服务：做AI产品顾问，挺稳定的，也不算少，但多不了\n2. 课程：和风变科技合作AI编程社团，4个月了，坚持每周直播，到最近才积累了很多课程，开始稍微公开的卖\n3. 广告：AI自媒体们最大的收入\n\n看过大家的报价，我目前的单篇报价应该算是Top的\n但这会带来一个最严重的问题\n\n依赖\n\n怎么说呢？\n举个例子，卖课第一个月结算的时候\n我一看，下意识的嘟囔了一句\n“才这么点，还不如去写篇广告”\n\n很有工资是毒药的那种味道\n之前在生财航海家饭局上分享过这种感受\n但大家哈哈大笑，还以这个来给我打标签\n但我自己非常知道这种痛苦\n什么痛苦呢：\n\n一方面是来钱太轻松\n会让你飘飘然\n（但其实自媒体接广告的上限非常低）\n\n另一方面一旦停了你又很痛苦\n比如我没签MCN\n10月只有一单\n我会发现收入锐减\n\n再一方面，好产品的商单很少\n所以你经常需要痛苦的找Good Case\n最终写出来的其实对读者也不负责\n\n真的，比起广告，我觉得卖课更好\n今天直播有人说果然自媒体的尽头是卖课\n说这句话的哥们，我相信他不知道我写广告收入比卖课多得多\n\n卖课很好\n我带了更多同学一起把想法落地\n期间积累了很多的AI编程经验\n最近做的产品就完全把之前积累的经验串了起来\n有了收入打底\n我也有了根据地，可以去做更多有意义的事\n\n现在，我还在接商单\n我期望的是，明年可以只接我认可产品的推广\n以后，只推自己的产品",
+      "created_at": "Thu Nov 13 14:40:39 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1988355043926405541",
+        "text": "+1 可以多分享，没必要以自媒体为职业，还是主业为重，年轻时先多积累比较好。\n\n我不是自媒体职业，也没打算以此为业。反过来早年的技术经验、项目管理经验对我自媒体写作是很有帮助的。\n\n当你一心想赚钱，未必能赚到钱，当你想做一点伟大的事情并为此而奋斗，也许就会变得很有钱。\n\n当你一心想当自媒体，未必能做好自媒体，当你在某个领域有一定积累，再捎带着分享一些经验，也许就成了行业大v。",
+        "created_at": "Tue Nov 11 21:15:58 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 144391,
+          "friends_count": 1449,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 15,
+          "favorite_count": 151,
+          "reply_count": 21,
+          "quote_count": 7
+        }
+      },
+      "user": {
+        "id": "1717728951123025920",
+        "name": "AI产品黄叔",
+        "screen_name": "PMbackttfuture",
+        "description": "两家大厂AI产品顾问 我的AI编程社团：https://t.co/SLvvrAwXeD",
+        "followers_count": 10043,
+        "friends_count": 219,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 63,
+        "reply_count": 20,
+        "quote_count": 5
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 5,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1989014406521389203",
+    "text": "RT @bggg_ai: 刷到狼叔@i5ting、宝玉@dotey 老师的不要把自媒体当主业的建议、看到黄叔说的痛苦，很有感触，分享一下我的真实历程\n\n在我看来，商单是高利贷，是在透支未来的可能性来换取当下的现金。这笔钱你现在拿得爽，利息以后还起来可能很痛。。。。\n\n我是今年…",
+    "created_at": "Thu Nov 13 16:56:03 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1988996646844395620",
+      "text": "刷到狼叔@i5ting、宝玉@dotey 老师的不要把自媒体当主业的建议、看到黄叔说的痛苦，很有感触，分享一下我的真实历程\n\n在我看来，商单是高利贷，是在透支未来的可能性来换取当下的现金。这笔钱你现在拿得爽，利息以后还起来可能很痛。。。。\n\n我是今年 3 月开始做 AI 自媒体，6 、7月才开始接商单，刚开始接的时候觉得来钱好容易，当然，为了不辜负甲方，每个 case 我都保持复杂的落地场景，经常熬夜搓\n\n8月底签约了 MCN，当时考虑的点是我发现很多甲方给我的价格远低于市场价，MCN 可以把我身价提高，加入后也确实如此，报价高了 1/2\n\n那时候豪情壮志，心想要是每周几篇的话，卧槽，今年要发成猪头了！！\n\n也产生了跟黄叔一样的「依赖」心态，做什么生意都拿这个商单的活来对比：这个才这点钱，还不如我写一篇文章呢。。导致我一度把出海营销业务的活给耽搁了、还啥啥看不上\n\n但好景不长，干没 3 个月，卧槽，没单了？也不能说没单，应该说按我现在身价接不到单了？能接到的，说实话有些新产品噱头比功能大的，又不愿意接。。\n\n（这里也有加入 MCN 后的束缚的问题，所以如果你想加入 MCN 可以先来私聊一下饼干哥哥，给点建议你）\n\n后来才知道，甲方投放是有很多惯性的，投过你数据好了就继续投，数据不好就没下单了。。根本不会考虑你内容质量好不好。而如果之前没投过你，大概率也不会尝试投你，会继续投以往的博主。\n\n这里的水还是挺深的。。\n\n然后空的这段时间，刚好我又能重新投入到出海营销业务中，要做的事还是非常多且琐碎的，ROI 没有商单高，但异常踏实，更重要的有很大的复利效果：每个单子都能作为经验吸收后升级，甚至客户给转介绍客户。\n\n对比下来，商单是纯纯的消耗，干完这单后，下单可以说是完全独立的，甲方更不会给介绍客户（竞争对手）给你。。\n\n更不用说，用 Tim 说的：商单比屎难吃。（不确定 Tim 有没说过，大概这意思，就当是 Tim 说的）客户给够钱了，让你找角度说它是顶级的，还不能有缺点。这个时候是很折磨心态的。\n\n总结下来，商单只能当做是额外的奖金，建议有多少就吃多少，过了这个村就没下一个店了。\n\n除此之外，保持多元化收入结构很重要，我要是没有出海营销业务的话，说不定还会迷茫一阵子\n\n现在我的收入结构是：\n1. 主业上班\n2. 出海营销业务\n3. 自媒体商单\n\n接下来会去探索 AI 企培这块的业务，观察下来这块的需求特别大，这块感兴趣的话可以关注评论，我定期把我探索落地的经验分享出来。",
+      "created_at": "Thu Nov 13 15:45:29 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1988996634987118592",
+          "url": "https://pbs.twimg.com/media/G5pV5r_awAAC1pk.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1988980330875744605",
+        "text": "这个我还蛮想说下自己的痛苦的\n\n我现在收入分三块：\n1. 服务：做AI产品顾问，挺稳定的，也不算少，但多不了\n2. 课程：和风变科技合作AI编程社团，4个月了，坚持每周直播，到最近才积累了很多课程，开始稍微公开的卖\n3. 广告：AI自媒体们最大的收入\n\n看过大家的报价，我目前的单篇报价应该算是Top的\n但这会带来一个最严重的问题\n\n依赖\n\n怎么说呢？\n举个例子，卖课第一个月结算的时候\n我一看，下意识的嘟囔了一句\n“才这么点，还不如去写篇广告”\n\n很有工资是毒药的那种味道\n之前在生财航海家饭局上分享过这种感受\n但大家哈哈大笑，还以这个来给我打标签\n但我自己非常知道这种痛苦\n什么痛苦呢：\n\n一方面是来钱太轻松\n会让你飘飘然\n（但其实自媒体接广告的上限非常低）\n\n另一方面一旦停了你又很痛苦\n比如我没签MCN\n10月只有一单\n我会发现收入锐减\n\n再一方面，好产品的商单很少\n所以你经常需要痛苦的找Good Case\n最终写出来的其实对读者也不负责\n\n真的，比起广告，我觉得卖课更好\n今天直播有人说果然自媒体的尽头是卖课\n说这句话的哥们，我相信他不知道我写广告收入比卖课多得多\n\n卖课很好\n我带了更多同学一起把想法落地\n期间积累了很多的AI编程经验\n最近做的产品就完全把之前积累的经验串了起来\n有了收入打底\n我也有了根据地，可以去做更多有意义的事\n\n现在，我还在接商单\n我期望的是，明年可以只接我认可产品的推广\n以后，只推自己的产品",
+        "created_at": "Thu Nov 13 14:40:39 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1717728951123025920",
+          "name": "AI产品黄叔",
+          "screen_name": "PMbackttfuture",
+          "description": "两家大厂AI产品顾问 我的AI编程社团：https://t.co/SLvvrAwXeD",
+          "followers_count": 10043,
+          "friends_count": 219,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5,
+          "favorite_count": 63,
+          "reply_count": 20,
+          "quote_count": 5
+        }
+      },
+      "user": {
+        "id": "1966322844490665984",
+        "name": "饼干哥哥AGI（2.0）",
+        "screen_name": "bggg_ai",
+        "description": "重生之我继续在X 分享AI干货知识：AI编程、n8n 工作流、AI 绘画",
+        "followers_count": 4028,
+        "friends_count": 202,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 55,
+        "reply_count": 10,
+        "quote_count": 2
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 8,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1989024639239004618",
+    "text": "一点提示词经验：不只是在提示词写不让它做什么，还要建议它怎么做\n\n示例：\n\n- ❌ 避免生硬的引导语或过于 AI 化的词，如：本文介绍了…、作者提出了…、原文大意是…、作者坦言… 等。\n\n- ✅ 直接切入正题，像和朋友聊天或刚上课点题那样。\n\n- ❌ 避免术语堆砌与长难句；避免相邻句用同一词开头；避免空洞套话与过多副词。\n\n- ✅ 以“理解成本最小化”为准绳：具体、简洁、连贯。\n\n- ❌ 避免使用 Markdown 加粗、大小标题、链接、图片等。\n\n- ✅ 使用长推文友好的纯文本格式。",
+    "created_at": "Thu Nov 13 17:36:42 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 18,
+      "favorite_count": 108,
+      "reply_count": 6,
+      "quote_count": 2
+    }
+  },
+  {
+    "id": "1989030748100108411",
+    "text": "❌ “永远不要用项目符号”\n\n✅ “我更喜欢自然段落形式的回复，而不是项目符号，因为我发现流畅的散文读起来更轻松、更像对话。项目符号对我这种休闲学习风格来说，感觉太正式、太像列表了。”",
+    "created_at": "Thu Nov 13 18:00:59 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 2,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1989030749572333919",
+    "text": "❌ 绝不使用：Inter, Roboto, Open Sans, Lato, 默认系统字体\n\n✅ 以下是一些优秀、有冲击力的选择示例：\n- 编码美学：JetBrains Mono, Fira Code, Space Grotesk\n- 报刊编辑风：Playfair Display, Crimson Pro\n- 科技感：IBM Plex 系列, Source Sans 3\n- 独特风：Bricolage Grotesque, Newsreader",
+    "created_at": "Thu Nov 13 18:00:59 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 11,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1989044960025604433",
+    "text": "厉害了👍",
+    "created_at": "Thu Nov 13 18:57:27 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1988296664868901201",
+      "text": "Intelligence will inevitably evolve from language to the physical world, unlocking spatial intelligence for multi-modal perception, reasoning, generation, and action—essential for true AGI.\n\nI'm working on building this at @XiaomiMiMo, spearheading a creative and talented team! https://t.co/Dj6dd4DXr6",
+      "created_at": "Tue Nov 11 17:24:00 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1988296571675414528",
+          "url": "https://pbs.twimg.com/media/G5fZMo7XEAAGB54.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1721721873095155712",
+        "name": "Fuli Luo",
+        "screen_name": "luo_fuli14427",
+        "description": "Now building @XiaomiMiMo. Previously @DeepSeek",
+        "followers_count": 1513,
+        "friends_count": 94,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 11,
+        "favorite_count": 200,
+        "reply_count": 19,
+        "quote_count": 8
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 7,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1989062611816620498",
+    "text": "如果你正处在人生的低谷，觉得自己怎么努力都不够，也许 Soumith Chintala 的故事能给你一点力量。\n\n这位后来创造了 PyTorch、成为 Meta 副总裁 的男人，起点并不光鲜。\n\nSoumith 来自印度的 Hyderabad Public School。学业成绩算不上差，但“数学不好”这件事一直像阴影一样跟着他。\n\n高考时，他没进一线名校，而是进入了印度人眼中的“二本院校”—— VIT（Vellore Institute of Technology）。\n\n大学毕业时，他考了 GRE 1420（老版本满分 1600），成绩不错，但申请 12 所美国硕士项目时，居然全军覆没。\n\n所有学校——无一例外——拒了他。\n\n他想了想，只能用一个词形容自己当时的状态：“fuckit.jpg”\n\n于是他干脆咬牙办了 J-1 交流访问学者签证，直接飞去美国 卡内基梅隆大学（CMU），完全没计划，只想着“先去再说”。\n\n到了美国，他再次申请了 15 所硕士。\n\n这一次结果好一点：\n 只有 USC 接收了他，以及 NYU（纽约大学）2010 年的补录通知。\n\n来到纽约大学后，他遇到了一个改变命运的人：\nYann LeCun —— 当时还没拿图灵奖，也没成为 AI 超级明星。\n\n在 NYU，他还遇到另一位重要导师 Pierre Sermanet，Soumith 说他是“我见过最善良的人之一”。\n\n也是在这里，他开始接触并热爱上了 开源。\n\n毕业后，他投出的简历几乎全部石沉大海。\n\n包括 DeepMind 在内的所有公司都拒了他。\n\n唯一愿意给他机会的，是亚马逊的一份 测试工程师 工作——不是研究岗位，也不是他梦想的 AI 角色。\n\n在低谷时，是他的导师帮了他一把——介绍他去了一家小创业公司 MuseAmi。\n\n但这并没有立刻让他翻身。\n\n之后他还被 DeepMind 再拒两次，加起来三次。\n\n因为 J-1 的“回国两年”要求，他一度无法拿到 H-1B 工作签证。\n\n他花了几个月，与 USCIS 和美国国务院 来回沟通，才终于拿到豁免，得以继续留下。\n\n那段时间，他的自信心跌到谷底。\n\n2011/12 年间，他做出了一个当时非常了不起的成果：\n\n在手机上跑的、全球最快之一的 AI 推理引擎。可即便如此，他还是继续被 DeepMind 拒绝。\n\n最终，真正改变他命运的，是他持续在做的开源项目 Torch7。\n\n他鼓起勇气又给 Yann LeCun 发了封邮件。\n\n就是这封邮件，让他加入了 Facebook 的 FAIR 实验室。\n刚进公司时，他差点在训练营“挂掉”，因为一个 HBase 任务卡了很久。\n\n但很快，他抓住了一个关键机会：\n当 L8/L9 的资深工程师们都搞不定 ImageNet 的训练问题时，他作为一个 L4 工程师，解决了 数值 / 超参 的关键 bug。\n\n这是他的第一个“大胜利”。\n\n在 FAIR，他负责一个只有三个人的小团队，就是他们后来一起创造了 PyTorch。\n\n但故事并不顺利。\n\n因为内部政治原因，管理层一度打算 关闭 PyTorch 项目。\n\nSoumith 气到一个人坐在酒吧里哭（原话是：cries-at-bar.jpg）。\n\n幸运的是，一些人坚持支持这个项目。\n\n2017 年，PyTorch 正式发布，后来成为全球最受欢迎的深度学习框架之一。\n\n差不多同一时期，他也拿到了 EB-1 杰出人才绿卡。\n\n之后的故事，就成了我们所熟知的历史。\n\n从 2005 到 2017，他经历了：\n数学不好\n二本院校\n两次硕士申请全被拒\n所有公司拒绝他\n被 DeepMind 拒 3 次、Google 也拒过他\n签证危机\n项目差点被腰斩\n在 Facebook 初期差点挂掉\n\n十二年几乎一直在失败。\n\n但他没有放弃。\n\n最终，他成为 PyTorch 之父、Meta 副总裁、全球 AI 领域最具影响力的人之一。\n\nSoumith 后来也回复了这条推文，特地补了一段话：\n“这些都是真的。但我还欠很多人一个感谢。”\n\n在 NYU 帮他的导师，是当时的博士生 Pierre Sermanet，\nSoumith 说他是自己见过最善良的人之一。\n\nYann LeCun 两次在他“几乎看不到 AI 出路”的时候给他机会，\n一次是在 NYU，另一次是在 FAIR。\n\n是 Praveen Garimella 劝他去 IIIT 做最后一年本科项目，\n又在他硕士全军覆没后，鼓励他“先去 CMU 再说，不要放弃”。\n\n还有他的父母：Vithal Chintala 和 Rajani Chintala。\n他形容自己在一个中产又背着很多债的家庭里长大，\n父母后来在 2010 年之后才慢慢实现财务自由。\n\n但在那之前，他们已经在超出自己能力范围的情况下\n硬是咬牙支持儿子去追一个“不安全”的梦想路径，\n而不是让他去做一份稳妥的工作。\n\nSoumith 说，这是非常伟大的养育方式。\n\n他还特地对原推作者 Deedy 表示感谢——\n正是对方花时间把这些散落在他人生里的“细节”，\n一段段挖出来、串成了一个完整的故事。\n\nSoumith 在最后写了一句很平静的话：\n\n我相信，每一个如今“坐在成功之上”的人，\n背后都有很多挣扎。\n生活从来不会轻轻松松。",
+    "created_at": "Thu Nov 13 20:07:36 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1989060994505519104",
+        "url": "https://pbs.twimg.com/media/G5qQb54WMAAaodI.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": {
+      "id": "1988808775801925784",
+      "text": "If you feel like giving up, you must read this never-before-shared story of the creator of PyTorch and ex-VP at Meta, Soumith Chintala.\n\n> from hyderabad public school, but bad at math\n> goes to a \"tier 2\" college in India, VIT in Vellore\n> rejected from all 12 universities for US masters despite 1420 on the GRE\n> fuckit.jpg\n> goes to the US anyway on a J-1 visa to CMU with no plan\n> applies for masters (again) to 15 universities\n> rejected from all except USC and with late admissions, NYU in 2010\n> finds this guy called Yann LeCun (before he was famous)\n> starts getting into open source\n> rejected from all jobs including DeepMind\n> only job is Amazon as test engineer\n> his PhD mentor helps him get a job at a small startup (MuseAmi)\n> rejected from DeepMind\n> couldn't get H-1B because of J-1 home return issue; gets waiver through months of approval with USCIS and US State Dept\n> very low on confidence\n> In 2011/12 builds one of the fastest AI inference engines on phones\n> rejected from DeepMind\n> emailed Yann again and joins FAIR because of Torch7 open-source work\n> scrapes through bootcamp at Facebook, struggling on an HBase task\n> L8/L9 engineers at Facebook struggle to get ImageNet working\n> figures out numerics / hyperparam issue as an L4\n> first big win!\n> FAIR goes well, runs 3 person torch7 team and co-creates PyTorch\n> because of politics, management wants to shut down PyTorch\n> cries-at-bar.jpg, literally\n> eventually some people save PyTorch and it launches in 2017\n> gets a EB-1 green card!\n> the rest is history...\n\nThink about that. He went to a tier 2 college. Was rejected from all Masters programs 2x. Rejected from every single job except Amazon test engineering. Rejected from DeepMind 3x. Nearly had his baby project shut down. Struggled with visa issues. After 12 years of failures (2005-17), he eventually rose to became a VP at Meta one of the most influential people in AI!\n\nSoumith's story is one of resilience and he's living proof that no matter how down in the dumps you are, there's always hope.",
+      "created_at": "Thu Nov 13 03:18:57 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1988808770361909248",
+          "url": "https://pbs.twimg.com/media/G5mrChuaYAAv2Hs.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "361044311",
+        "name": "Deedy",
+        "screen_name": "deedydas",
+        "description": "Partner @MenloVentures. Formerly founding team @glean, @Google Search. @Cornell CS. Tweets about tech, immigration, India, fitness and search.",
+        "followers_count": 216166,
+        "friends_count": 5364,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 881,
+        "favorite_count": 7709,
+        "reply_count": 224,
+        "quote_count": 123
+      }
+    },
+    "stats": {
+      "retweet_count": 52,
+      "favorite_count": 292,
+      "reply_count": 8,
+      "quote_count": 7
+    }
+  }
+]
+```
+
+##
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @dotey的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

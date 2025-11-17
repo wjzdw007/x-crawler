@@ -1,0 +1,430 @@
+# LLM Prompt 保存记录
+生成时间: 2025-11-17 01:37:43
+总结类型: user_daily
+用户: @dotey
+推文数量: 12
+数据哈希: dc68e38e
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+dotey是一个技术专家，经常会分析一些ai的话题，帮我看看有什么新的工具/想法/方法论/实践经验等值得关注学习。
+
+## 推文数据（JSON格式）
+```json
+[
+  {
+    "id": "1989897347271156085",
+    "text": "这可能是我写的最“接地气”的 AI 科普：从家政阿姨看懂 Agent 和 MCP\n\n我家请了个家政阿姨打扫卫生，这位阿姨高中毕业，但是经过了家政公司专业训练，学会了该怎么针对不同家庭去打扫卫生，使用各种不同的清洁工具。\n\n当然她不可能记住所有工具的用法，所以额外的，家政公司还给她了一本《家政技能手册》，这个手册有两部分，一部分是目录，不同技能的简要介绍，字数不长，阿姨每次来干活之前都会读一遍目录，以便需要时能想起来；\n\n《家政技能手册》的另一部分是技能的详细介绍，详细介绍里面不仅说明了各种技能的详细做法，有的还有配套的手册，有的还需要借助一些工具。\n\n家政公司还给阿姨配备了一款定制的平板电脑，这个平板电脑支持一种智能家居协议，所有支持这种智能家居协议的家电她都可以用这个平板电脑连上操作。\n\n为了提升效率，家政公司还给她配备了便携式扫地机器人，每次她都开车带上，一些扫地的任务就直接使用扫地机器人。\n\n为了我经常需要阿姨来家里打扫，为了避免麻烦，所以我把我家的一些基本情况写成了说明书，好让阿姨知道该怎么更好的清扫我们家，并且阿姨很专业，每次工作完都写了一份详细的工作记录，这样她下次来还可以看一下以前都做了啥。\n\n虽然有这个说明书，当然每次过来我还是要交代一下：“阿姨，明天我家要开了个 party，客厅一定要弄干净整洁点。”\n\n---\n\n说了这么多我当然不是为了炫耀我家请了个阿姨干活或者帮这家家政公司打广告，而是借这个来“辅助解释”一些常见的 AI 名词。\n\n- 家政阿姨：AI Agent，有基础知识（类似于大语言模型），经过训练，会规划会使用工具\n\n- 扫地机器人：SubAgent，专业的、自主的执行者。 主AI（阿姨）负责委托和监督，机器人（SubAgent）负责具体执行。这大大解放了主AI的精力（上下文窗口），让她可以去干更重要的活。\n\n- 智能家居协议：MCP(模型上下文协议)，智能家居协议就是那个家电的统一标准： 支持智能家居协议（MCP 协议）的家电工具阿姨都可以使用。\n\n- 《家政技能手册》：Skills，家政技能手册可以帮助阿姨（Agent）学会她没有被训练过的技能，而且这些技能是“动态加载”和“渐进式披露”的。\n\n“动态加载”的意思是：阿姨只有在需要用特定技能的时候，才会去《家政技能手册》翻该技能的详细内容。\n\n“渐进式披露”的意思更进一步：阿姨不会一开始就把整本手册都读完，她干活前先看一眼目录（元数据，大约 100 个词），“哦，这个技能跟我现在的任务有关”。然后它再打开读具体章节（完整的指令，小于 5000 词）。\n\n这有什么好处？省脑子（省上下文窗口）。 确保阿姨总是在最需要的时候，用最少的“脑力”获取最关键的专业知识。\n\n- 我家：Project，存放了与我家相关的说明书、历史信息。\n\n希望上面这个比喻能帮助你更好的理解这些概念。\n\n⚠️ 需要注意的是，这些比喻只是帮助你理解这些概念，并不能代替你深入的去学习和理解这些知识。",
+    "created_at": "Sun Nov 16 03:24:32 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1989894514882887680",
+        "url": "https://pbs.twimg.com/media/G52GhLQXwAAxY0-.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 41,
+      "favorite_count": 160,
+      "reply_count": 10,
+      "quote_count": 9
+    }
+  },
+  {
+    "id": "1989900888350118309",
+    "text": "RT @hongming731: Lenny Rachitsky 与 AI 初创公司 Gamma 创始人 Grant Lee 的深度对话总结。\n\nGamma 以 50 人团队服务 5000 万用户并实现盈利，这份推文提炼出 8 条经过实战验证的产品和增长经验：\n\n- 优先打磨最…",
+    "created_at": "Sun Nov 16 03:38:37 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1989861543488754092",
+      "text": "Lenny Rachitsky 与 AI 初创公司 Gamma 创始人 Grant Lee 的深度对话总结。\n\nGamma 以 50 人团队服务 5000 万用户并实现盈利，这份推文提炼出 8 条经过实战验证的产品和增长经验：\n\n- 优先打磨最初 30 秒的产品体验\n- 专注单一核心价值\n- 等到自然口碑增长超过 50% 再投广告\n- 与数百位微型网红合作而非少数大 V\n- 亲自指导每位早期创作者\n- 极其缓慢地招聘顶尖人才\n- 通过快速原型测试验证想法\n- 选择愿意投入 10 年的问题",
+      "created_at": "Sun Nov 16 01:02:16 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1989440354110898654",
+        "text": "Top takeaways from my chat with @thisisgrantlee:\n\n1. The first 30 seconds of using your product should be so good it earns the next 30 seconds. When Gamma wasn’t growing, they stopped everything and spent three months perfecting just the first 30 seconds of using their product. They made it so compelling that new users would immediately tell their friends. This single change transformed their growth trajectory.\n\n2. Focus on one simple promise, not many features. Think of it like throwing eggs to someone: they can catch one, but if you throw five at once, they’ll drop them all. Your users are selfish, vain, and lazy—you have 30 seconds to show value before they leave. Gamma focused on “create a slide in seconds” rather than listing 10 features.\n\n3. Don’t spend on ads until over half your growth comes from word of mouth. If you try to buy growth before your product spreads organically, you’re wasting money filling a leaky bucket. Gamma didn’t invest heavily in advertising until more than 50% of new users came from people sharing organically.\n\n4. Work with hundreds of small creators instead of a few big influencers. Rather than blowing your budget on five or six well-known influencers who treat it like just another ad read, find thousands of micro-influencers whose audiences genuinely care about tools like yours. Teachers sharing with teachers, consultants with consultants—these tight communities create authentic word of mouth that spreads fast.\n\n5. Spend time personally onboarding each early creator like they’re joining your team. Don’t just send influencers a script. Jump on calls, walk them through the product, help them understand what makes it special, and let them tell your story in their own voice. This investment turns them into genuine advocates who post about you repeatedly instead of treating it like any other sponsorship.\n\n6. Hire painfully slowly and only exceptional people. Gamma serves 50 million users with just 50 people and makes a profit. All 10 original employees are still there five years later. They never set headcount goals because that makes you hire to hit a number instead of hiring only when you find someone exceptional. When someone is exceptional, give them more responsibility, not less—top performers want harder challenges.\n\n7. Test prototypes with 20 people on UserTesting before investing in a big project. Use platforms like Voicepanel or UserTesting to watch real people try your prototype. They’ll show you problems you never see because you’re too close to your product. Gamma goes from idea to results in a single day—morning idea, afternoon testing, evening results. This saves months of building things nobody wants.\n\n8. Choose problems you’ll care about for 10 years. Before worrying about technology or tactics, ask if this problem matters enough to you personally that you’d dedicate a decade to solving it. Founders who are missionaries rather than mercenaries build better products because their authentic commitment shows through to customers and attracts people who want to build alongside you for the long term.",
+        "created_at": "Fri Nov 14 21:08:37 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "7958322",
+          "name": "Lenny Rachitsky",
+          "screen_name": "lennysan",
+          "description": "Deeply researched product, growth, and career advice",
+          "followers_count": 276383,
+          "friends_count": 2613,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 29,
+          "favorite_count": 268,
+          "reply_count": 22,
+          "quote_count": 5
+        }
+      },
+      "user": {
+        "id": "1061781458107326464",
+        "name": "ginobefun",
+        "screen_name": "hongming731",
+        "description": "👨‍💻 拥有十多年开发与架构经验  \n🌐 努力打造 https://t.co/1TEy9PIP1u，为开发者筛选优质内容  \n🛠 全力开发 https://t.co/HxuhervLoL，提供专业文本润色服务  \n📱 正在构建 https://t.co/vaP78R1eWo，让社交媒体使用更智能、更有目的  \n✨ 致力于成为有趣的人，做有趣的事",
+        "followers_count": 9717,
+        "friends_count": 1463,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 12,
+        "reply_count": 2,
+        "quote_count": 1
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 3,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1989906776129466695",
+    "text": "如果洗碗这个技能没训练过，取决于两点：\n1. 家政公司给她的指南（系统提示词）有没有给她洗碗这个工具可以用？如果有提供这个工具，那么她优先直接使用这个工具\n2. 家政公司给的《家政技能手册》目录里面有没有洗碗这个技能？如果没有工具有技能，就会去阅读技能\nhttps://t.co/IATtvR0hPe",
+    "created_at": "Sun Nov 16 04:02:00 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1989905696683339940",
+      "text": "@dotey 很好。有一点还没弄明白：假设这个阿姨没学过洗碗，那么她应该去看手册用技能呢，还是去用洗碗机器人呢？",
+      "created_at": "Sun Nov 16 03:57:43 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "903532594687381504",
+        "name": "zhuganglie",
+        "screen_name": "zhugangliet",
+        "description": "政治的逻辑",
+        "followers_count": 284,
+        "friends_count": 371,
+        "verified": false,
+        "is_blue_verified": false
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 4,
+      "reply_count": 2,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1989907649198961012",
+    "text": "3. 如果都没有，那她可能会用网络搜索工具去搜索洗碗指南，搜到了就现学，搜不到也许还会自己做一个工具（写代码编工具），或者她甚至可能会用洗衣机去洗碗（会尝试其他类似工具），Agent 总会采用各种方法去尝试完成任务",
+    "created_at": "Sun Nov 16 04:05:28 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 2,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1989966277008359626",
+    "text": "报告：蒂姆·库克最早或于明年卸任苹果CEO \n\n据《金融时报》报道，苹果公司已经加快了现任首席执行官 (CEO) 蒂姆·库克 (Tim Cook) 的交接准备工作。以下是详细信息。\n\n根据《金融时报》的消息来源，苹果董事会和高层管理人员“最近加强了”公司最高职位的继任规划。\n\n《金融时报》补充说，尽管苹果的硬件工程高级副总裁约翰·特努斯 (John Ternus) 是最有可能接管公司的人选，但“尚未做出最终决定”。\n\n虽然该报告没有提及苹果为何要加快继任步伐，但指出此举与公司业绩无关：\n\n“接近苹果的人士称，这个筹备已久的过渡计划与公司当前的业绩无关，预计iPhone在年底的销售季将迎来重磅表现。\n\n公司不太可能在明年1月下旬（这个时间点将公布关键的圣诞假期销售业绩）发布最新财报前任命新的CEO。”\n\n史蒂夫·乔布斯 (Steve Jobs) 去世后，人们曾对蒂姆·库克——或者说任何人——能否成功接过帅印持极大的怀疑。但库克证明了批评者是错的。在他的领导下，这家曾经的“挑战者”蜕变成了一个商业巨无霸，并扩大了其忠实的用户基础。在我看来，他最大的成就之一就是推动了 苹果自研芯片 (Apple Silicon) 。\n\n他将留给继任者的最大挑战，是苹果对中国的深度依赖。至于在AI方面，目前还胜负未分。但从甲骨文 (Oracle)  等所谓“AI领导者”本周股价的下滑来看，蒂姆·库克的谨慎策略，回过头看，也许并不是什么坏事。\n\n他们的消息来源还警告说，“尽管准备工作已经加强，但任何公告发布的时间都可能会发生变化”。\n\n就在这份报告发布的几小时前，前任首席运营官 (COO) 杰夫·威廉姆斯 (Jeff Williams) 刚刚度过了他在苹果的最后一天，他于今年7月宣布了退休计划。\n\n威廉姆斯已于今年早些时候将运营领导权交给了萨比·汗 (Sabih Khan)，而他剩余的职责最近被重新分配给了其他高管，特努斯也是其中之一。\n\n苹果最近还经历了一次首席财务官 (CFO) 的交接，任职多年的财务主管卢卡·马埃斯特里 (Luca Maestri) 卸任，将职位交给了凯文·帕雷克 (Kevan Parekh)，后者此前担任公司的财务规划与分析副总裁。\n\n来源：https://t.co/HbvKQVPmUl",
+    "created_at": "Sun Nov 16 07:58:26 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1989966125434556416",
+        "url": "https://pbs.twimg.com/media/G53HpdWWUAACxKm.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 5,
+      "favorite_count": 50,
+      "reply_count": 5,
+      "quote_count": 2
+    }
+  },
+  {
+    "id": "1989970293528342765",
+    "text": "转译：那些不算真正「在做这件事」的事\n\n准备去做这件事，不等于在做这件事。\n\n把做这件事的时间写进日程表，不等于在做这件事。\n\n为这件事列一份待办清单，不等于在做这件事。\n\n跟别人说你打算做这件事，不等于在做这件事。\n\n给那些可能在做、也可能没在做这件事的朋友发消息，不等于在做这件事。\n\n写一条超级精彩的推文宣告你要做这件事，不等于在做这件事。\n\n因为自己没做这件事而讨厌自己，不等于在做这件事。\n因为别人已经做成这件事而讨厌他们，不等于在做这件事。\n因为路上的种种障碍而怨天尤人，也不等于在做这件事。\n\n幻想等你做成这件事之后会得到多少赞美，不等于在做这件事。\n\n阅读「如何去做这件事」的内容，不等于在做这件事。\n阅读别人是如何做成这件事的，不等于在做这件事。\n读完这篇文章，也不等于在做这件事。\n\n唯一真正算是「在做这件事」的，就是——去做这件事。\n\n来源：https://t.co/Xx3gNkNFyd",
+    "created_at": "Sun Nov 16 08:14:24 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1989970158987673600",
+        "url": "https://pbs.twimg.com/media/G53LUPgWgAAzRRH.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 30,
+      "favorite_count": 143,
+      "reply_count": 4,
+      "quote_count": 3
+    }
+  },
+  {
+    "id": "1990129066003861732",
+    "text": "前几天 Anthropic 发布的那份报告《挫败首例由 AI 策划的网络间谍活动（Disrupting the first reported AI-orchestrated cyber espionage campaign）》 已经被很多人骂过了，这几天在 Hacker News (HN)  上也是被群嘲。\n\n报告的核心指控是：他们发现并阻止了一个“复杂的”网络间谍行动，该行动由一个他们定性为“中国政府资助”的组织（代号 GTG-1002）发起。而最关键的一点是，这个组织使用 AI（特别是 Claude）来“编排和执行”其 80-90% 的战术行动。\n\n社区的开发者和安全专家们非但没有感到震惊，反而将这份报告扒了个底朝天。结论几乎一边倒：这与其说是一份威胁情报，不如说是一份精心包装的营销噱头。\n\n首先是一位安全行业的专业人士 djnn .sh\n 发表了一篇博文 “Anthropic 的报告闻起来就像狗屁” (Anthropic's paper smells like bullshit) 成为了 HN 上的热门讨论帖。\n\n1. 文章中一个观点大家都很认同：“PoC || GTFO” (要么拿出证据，要么滚蛋)。\n\n一份严肃的网络安全威胁情报报告，是有行业标准的。你必须提供 IoCs（入侵指标）——比如攻击者使用的域名、IP、文件哈希值；以及 TTPs（战术、技术和程序）——他们具体是怎么做的。\n\n而 Anthropic 的报告里几乎都没有什么证据。\n\nHN 社区对此的共识是：这份报告“技术含量为零”。\n\n用户 rfoo：\n> 别说和现代报告比，“就连卡巴斯基十年前一份关于 Duqu 2.0 的报告，都包含了扎实的技术链接和归因理由。” Anthropic 这份报告简直是“slop”（残羹剩饭）。\n\n用户 padolsey：\n> 这似乎成了一种新常态。“AI 实验室（点名了 GPT-5 的系统卡和微软的红队测试）都喜欢‘pro-research’（自称支持研究），但发布白皮书时却从不附带代码和数据。”\n\n一份没有技术细节、无法验证、无法让其他安全团队据此设防的“报告”，根本不配被称为“威胁情报”。\n\n2. 如果说缺少 IoC（入侵指标）只是“不专业”，那么 HN 网友 gpi 则发现这份报告在“有意夸大”。\n\n网友 gpi 发现，Anthropic 在发布报告后，悄悄地将从“每秒数千次请求”改为了“数千次请求，经常每秒多次”。\n> Edited November 14 2025:\n> Corrected an error about the speed of the attack: not \"thousands of requests per second\" but \"thousands of requests, often multiple per second\"\n\n任何一个技术人员，都绝不可能把这两个概念搞混，大概率是营销部门在撰写报告时，为了戏剧效果而添油加醋，结果被技术社区抓包。\n\n3. 牵强的归因和逻辑，一切都是为了营销\n\n报告中最具煽动性、也最受诟病的，就是将攻击“归因”于“中国政府资助的组织”。\n\n网友 snowwrestler 给出了一个非常专业的分析：将攻击归因于“国家行为体”有三种途径：\n(1) 纯粹假设： 默认来自某国的坏事都是政府干的（这显然不靠谱）。\n(2) 技术签名： 攻击手段与已知的、公开的 APT（高级持续性威胁）组织的特征库相匹配。\n(3) 情报工作： 来自 NSA、FBI 等真正情报机构的内部信息。\nAnthropic 不太可能有（3），如果他们有（2），就应该像其他安全公司一样，公布这些技术签名证据。但他们没有。\n\n那么，他们为什么要这么做？\n\n用户 woooooo 提出了一个经典的“职场政治”洞察：\n“归咎于‘国家级超级间谍’是最好的免责声明。‘我们被超级间谍黑了’听起来，可比‘我们被一个随便的家伙(rando)给黑了’要体面得多。”\n\n用户 prinny_ 则看得更深：“在缺乏证据的情况下，这种归因看起来更像是一种政治游说，目的是让美国政府介入，并成为那个让资金（投资）不断流动的‘大投资者’。”\n\nhttps://t.co/aFPIlcOHQD 在原文中就已点明，报告的结尾赫然写着：\n“网络安全社区需要……试验将 AI 用于防御……”\n\nHN 用户 DarkmSparks 做了个总结：\n “Anthropic 提出了一堆未经证实的指控，关于一个他们没具体说明的新问题。然后在最后，Anthropic 提出了解决这个未说明问题的方案——给 Anthropic 钱。”\n\n“这根本就是伪装成威胁报告的宣传材料，”用户 cmiles74 评论道，他还发现 Anthropic 在八月份也发过类似的“营销式”报告。\n\n4. APT 真的会用 Claude 吗？\n\n抛开营销和政治不谈，HN 社区对这个攻击场景本身也提出了一个巨大的“黑人问号”：一个“高度复杂”的 APT 组织，真的会选择用 Claude 这种公开的、需要绑银行卡的商业 API 来执行核心任务吗？\n\n网友 KaiserPro 分享了他的一线经验：他曾在一家 FAANG 担任 SRE，也参与过对内部安全 AI 的“红队测试”。他的结论是：“AI 有点用，但对于‘协调’（coordination）任务来说，帮助不大。” 他最尖锐的质疑是：“你的 API 是绑定了银行账户的。在一个非常公开的系统上‘Vibe Code’一个指挥控制系统（C&C），这似乎是个非常糟糕的选择。”\n\n网友 neuroelectron 则提出了一个充满讽刺的悖论：\n“我的 Claude 拒绝了我 10 个提示中的 9 个，并对我进行‘安全教育’，但它却被用于真正恶意的间谍活动？谁来让这个逻辑自洽一下。”\n\n社区普遍认为，一个真正的 APT 组织，更有可能使用自己私有的、离线的、不受审查的本地模型，而不是一个处处受限、日志完备的美国公司产品。\n\n5. 当 AI 泡沫遇上安全 FUD(恐惧、不确定和怀疑)\n\n用户 EMM_386 提出了一个“洗地”角度：\n“我们都搞错了。Anthropic 不是一家安全厂商……这份报告的受众不是 SOC（安全运营中心）的工程师，而是政策制定者和 AI 安全研究者。它警告的是一种新的攻击模式。”\n\n这个观点试图将这份报告从“技术文档”的失败，挽救为“政策白皮书”的成功。\n\n但这个观点立刻遭到了反驳。用户 padolsey 回应道：“就算如此，他们也完全可以分享脱敏的 Prompts、攻击的编排模式。他们这种刻意的模糊，根本不是安全行业的运作方式。”\n\n也许 Anthropic 根本就没有一个能写出合格威胁报告的安全团队。他们只是在自己最擅长的 AI 领域上，看到了一个他们认为或者希望存在的问题，然后用他们最不擅长的方式（写安全报告）把它包装起来，其核心目的，依然是 AI 圈的老套路：制造 FUD (恐惧、不确定和怀疑)，然后销售解药。\n\n这就像当年索尼 PS2 刚发布时，有传闻说“伊拉克在购买数千台 PS2 来制造超级计算机”一样，听起来很酷，但本质上都是营销。",
+    "created_at": "Sun Nov 16 18:45:18 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1990128990489649152",
+        "url": "https://pbs.twimg.com/media/G55bxc9XoAAKzC5.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 13,
+      "favorite_count": 70,
+      "reply_count": 7,
+      "quote_count": 8
+    }
+  },
+  {
+    "id": "1990129068176511227",
+    "text": "《anthropic’s paper smells like bullshit》https://t.co/DR1ZR4N2h1\nHN 讨论：https://t.co/UMg6EfNRPJ",
+    "created_at": "Sun Nov 16 18:45:19 +0000 2025",
+    "lang": "en",
+    "media": [],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 5,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1990130464678449493",
+    "text": "看 Token 消耗和把代码行数当 KPI 差不多，这种简单无脑的 KPI 就是管理者自己不懂，只会用这种简单粗暴的方法\n\n为了 KPI 可以有很多对策，最终是双输",
+    "created_at": "Sun Nov 16 18:50:52 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1989945698654294274",
+      "text": "@oran_ge 前同所在的软件公司 丫是创始人之一， team 考核看 token 计费.  现在每人每周token 消耗是 7000-1万（人民币）。 \n他说大裁员有2次， 第一次是用上 ai coding 后，一个人可以干3-4个人的活儿， 第二次是把用token 最少的 20% 开了。 准备第三次裁员。 \n他们公司效益很好 过年红包20万起",
+      "created_at": "Sun Nov 16 06:36:40 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1831329395425902592",
+        "name": "Dave",
+        "screen_name": "Dave3Mush",
+        "description": "",
+        "followers_count": 156,
+        "friends_count": 211,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 0,
+        "reply_count": 3,
+        "quote_count": 2
+      }
+    },
+    "stats": {
+      "retweet_count": 1,
+      "favorite_count": 17,
+      "reply_count": 2,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1990131830108930347",
+    "text": "RT @daluoseo: 3种页面,让SaaS产品9个月天流量提升50万+,月入增加3X\n\n大家好,我是大罗。\n今天要分享一个非常牛逼的SaaS SEO打法。\n\n先看数据,用结果说话\n\n这是我们一个SaaS产品的真实数据:\n📊 月自然流量: 从0到50万\n💰 月经常性收入:…",
+    "created_at": "Sun Nov 16 18:56:17 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1984288360425468316",
+      "text": "3种页面,让SaaS产品9个月天流量提升50万+,月入增加3X\n\n大家好,我是大罗。\n今天要分享一个非常牛逼的SaaS SEO打法。\n\n先看数据,用结果说话\n\n这是我们一个SaaS产品的真实数据:\n📊 月自然流量: 从0到50万\n💰 月经常性收入: 增长300%\n⏰ 时间周期: 9个月\n💸 广告费: 0元\n\n核心认知:流量是虚荣指标\n\n📷\n很多人一上来就问我:\n\"大罗,我怎么能把流量做到一个月100万?\"\n我直接告诉你:流量是个虚荣指标。\n你就算一个月10亿流量,如果这些人不买你的产品,有个屁用?\n反过来,你可能只有25万月流量,但是因为这些流量都是高购买意图的,你反而能赚更多钱。\n\n举个例子:\n假设你开了个iPhone维修店:\n\n❌ 低购买意图关键词: \"how to repair iphone\"(如何修iPhone)\n月搜索量: 10,000\n\n但是,搜这个词的人想自己修\n\n✅ 高购买意图关键词: \"where to repair iphone\"(哪里修iPhone)\n月搜索量: 1,000\n\n但是,搜这个词的人想找人修\n\n虽然第一个词搜索量是第二个的10倍,但是第二个词的转化率可能是第一个的100倍!\n\n这就是为什么我们要专注于高购买意图的关键词\n\n什么是高购买意图关键词?\n简单说,就是那些搜索的人已经准备掏钱的关键词。\n\n以Webflow(一个建站工具)为例:\n\n🔥 高购买意图关键词:\n\"webflow alternative cheaper\"(Webflow便宜替代品)\n\"webflow vs wordpress\"(Webflow对比WordPress)\n\"webflow pricing\"(Webflow价格)\n\n❄️ 低购买意图关键词:\n\"what is webflow\"(什么是Webflow)\n\"how to use webflow\"(如何使用Webflow)\n\n看出区别了吗?\n\n搜索\"alternative\"的人,大概率已经用过Webflow,但是不满意,正在积极寻找替代品。\n\n这种人的购买意图极高,可能今天搜索,明天就下单。\n\n整个策略其实就3步:\n\n1 - 首先找关键词: 低竞争 + 高购买意图 + 用户已有品牌认知\n2 - 其次制作内容: 创建三种类型的页面\n3 - 最后提高转化: CTA + 互动工具\n\n听起来简单,但魔鬼在细节里。\n\n三种页面类型详解\n\n📄 类型1: 信息类页面 - 写得比竞争对手还好\n\n这个策略太牛逼了,我必须详细讲讲。\n\n案例: Wise如何偷走PayPal的流量\n\n如果你在Google搜索\"PayPal fees Calculator us\"(PayPal美国费用),你猜谁排第一?\n\n不是PayPal自己,是Wise!\n\n为什么?\n\n因为Wise写的关于PayPal费用的内容比PayPal自己写的还要详细、还要好用。\n\n他们甚至做了个费用计算器,用户体验吊打PayPal官方文档。\n\n你再搜\"PayPal conversion rate\",Wise又排在前面。\n\n他们就这样偷走了大量本该属于PayPal的流量。\n\n💡 你要做的:\n\n找到竞争对手的文档和帮助中心\n看看用户在搜索什么问题\n写得比他们更详细、更清楚\n加上计算器、图表、视频等互动元素\n核心思路: 写关于竞争对手的内容,但是写得比他们自己还好。\n\n🆚 类型2: 对比页面 - 截胡底部漏斗流量\n\n对比页面就是\"A vs B\"这种。\n\n为什么这么有效?\n\n因为搜索这类关键词的人,购买意图极高。\n\n他们已经:\n\n✅ 知道自己的问题\n\n✅ 知道有哪些解决方案\n\n✅ 现在就是要做决策\n\n举个例子:\n搜索\"Slack vs Microsoft Teams\"的人,大概率是公司要买协作工具,老板让他对比一下。\n这种人可能今天搜索,明天就下单。\n\n📝 页面结构:\n\n产品A是什么(详细介绍)\n产品B是什么(详细介绍)\n两者的深度对比(用表格、图表)\n最好加上视频演示\n关键: 不要只是简单对比,要深度分析。\n\n比如:\n\n价格对比(不同套餐)\n功能对比(哪个更适合小团队)\n用户体验对比(哪个更容易上手)\n集成能力对比(能接入哪些工具)\n🔄 类型3: 替代品页面 - 我最喜欢的策略\n\n这是我最喜欢的策略,效果最好,竞争最小。\n\n目标关键词:\n\n\"Slack alternative\"\n\n\"cheaper alternative to Slack\"\n\n\"Slack for small business\"\n\n\"alternative to Slack that allows XYZ\"\n\n为什么这么有效?\n\n搜索\"竞争对手 + alternative\"的人,说明他们正在积极寻找替代品。\n\n可能是:\n\n💸 价格太贵\n🔧 功能不满意\n👎 用户体验不好\n\n总之,他们已经准备换了。\n\n📋 页面结构:\n\n介绍竞争对手是什么\n列出10个最佳替代品(包括你自己)\n\n每个替代品的详细介绍:\n价格\n核心功能\n优缺点\n适合人群\n\n关键: 不要只推荐自己,要客观公正。\n这样用户才会信任你,最后选择你。\n\n为什么这个策略这么有效?\n\n原因1: 点击率(CTR)是核心排名因素\n\n虽然Google一直否认,但是从泄露的API文档来看,用户互动信号是主要排名因素之一。\n\n什么意思?\n\n假设用户搜索一个词:\n\n❌ 第一个结果: 点进去,看了3秒就退出\n✅ 第二个结果: 点进去,停留了5分钟,还互动了,然后关闭浏览器\n\nGoogle会怎么想?\n\n第二个结果更好,应该排到第一。\n\n所以,优化你的Title和Meta Description,让人愿意点。\n\n原因2: 品牌权重很重要\n\n根据最新研究,域名权重(DA)和品牌权重(BA)的比例是Google判断网站质量的关键指标。\n\n如果你的:\n\n外链很强(DA高)\n但是品牌搜索很少(BA低)\n\n你更容易被HCU算法打击。\n\n安全比例是DA:BA在1.4以内。\n\n原因3: 这些页面自然就能排名\n\n为什么?\n\n✅ 竞争对手的品牌词,竞争度低\n✅ 搜索量不高,但是购买意图高\n✅ 你不需要做太多外链就能排上去\n\n当然,做一些基础的技术SEO和外链建设会更好,但是光靠内容质量,这些页面就能排到首页。\n\n总结: 记住这3个核心\n\n1️⃣ 流量是虚荣指标,转化才是王道\n与其追求100万垃圾流量,不如专注于1万高质量流量。\n\n2️⃣ 创建三种页面\n\n信息类页面: 写得比竞争对手还好\n对比页面: 截胡底部漏斗流量\n替代品页面: 最容易排名,转化率最高\n\n3️⃣ 优化转化\n到处放CTA\n嵌入互动工具\n优化用户体验\n\nSEO没有秘密,所有方法都可以免费获得。\n区别在于执行的细节和节奏的把控。\n\n好了,今天就分享到这里。\n如果你觉得有用,点赞、在看、转发三连。\n有问题随时来撩。\n我是大罗,世界最帅SEO,我们下期见!",
+      "created_at": "Fri Oct 31 15:56:26 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1984287384675262464",
+          "url": "https://pbs.twimg.com/media/G4ma3PfboAA9KOG.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1464631743831547911",
+        "name": "大罗SEO",
+        "screen_name": "daluoseo",
+        "description": "出海 Growth Marketing / SEO专家 | 提供SEO咨询，优化服务以及高权重外链 |  油管: 大罗SEO\nPartner @ HashMatrix",
+        "followers_count": 8653,
+        "friends_count": 1241,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 34,
+        "favorite_count": 147,
+        "reply_count": 10,
+        "quote_count": 4
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 34,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1990174919506940169",
+    "text": "RT @MoonAtCloud: 一个老程序员看到喉返神经后的感慨\n\n第一次看到喉返神经（recurrent laryngeal nerve，RLN）的解剖图，我怔住了整整半分钟。\n\n那条从脑干发出的神经，本应直抵喉部，却偏要绕道下行，深入胸腔一圈，再折返向上。… https:…",
+    "created_at": "Sun Nov 16 21:47:31 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1990148046903255401",
+      "text": "一个老程序员看到喉返神经后的感慨\n\n第一次看到喉返神经（recurrent laryngeal nerve，RLN）的解剖图，我怔住了整整半分钟。\n\n那条从脑干发出的神经，本应直抵喉部，却偏要绕道下行，深入胸腔一圈，再折返向上。\n\n在鱼类身上，这路径顺理成章；到了哺乳动物，却成了一个死结；而到了长颈鹿体内，它竟要绕行五米之远。\n\n脖子越长，绕路越显荒唐，却无法更改。\n\n生物没有“重构子系统”的权力，它只能在旧线路上修修补补。\n\n那一刻，我想到的不是生物学，而是 CS:IP = F000:FFF0。\n\n这是所有Intel电脑永远的“喉返神经”。\n\n今天回顾历史，8086 的设计团队确实非常聪明。他们创造性地重新设计了通用寄存器、真正的堆栈指针、丰富的寻址模式、微码翻译、16 位算术和内部时钟，这是第一次将“现代 CPU”塞进一颗芯片。\n\n只不过，由于当年寻址寄存器只有 16 位，电脑内存地址又想突破 64K，于是他们搞出了一个临时方案：“段左移 4 位 + 偏移”的假扩展。\n\n没人想到，这个错位的 20 位怪胎设计，会将整整一代计算机文明锁死，成为个人电脑的“喉返神经”。\n\n特别是当 IBM PC 采用 8088 之后，一切都被封印了。\n\n1MB 地址空间被切割得支离破碎：0–640K 留给程序，640K–1MB 塞满显存、BIOS、扩展卡和通信端口。\n\n装上 1MB 内存，一半被设备占用；装上 4MB，也得靠 EMS/XMS 驱动像撑大的气球一样勉强塞入。\n\n整个电脑的寻址方式，就像那条喉返神经，被硬塞进早已不合身的躯壳中，却无法重新布线。\n\n一个大程序被拆解成几十个 64K 的小盒子，链接器像搬砖一样辛苦。near/far 指针、C语言的五种编译模式（S、C、M、L、H）折腾得死去活来。\n\n指针多算一步就跨段，call 和 return 仿佛不在一个宇宙；数组超过 64K 就会崩溃；中断向量表卡死在 0x0000；显存固定在 A0000。\n\n我们当年写程序时，还“聪明”地利用这个“寻址魔法”，操纵段寄存器防拷贝、反调试、在ROM 区假写入、改CS偷系统中断向量表，这些“技巧”都依赖对段寄存器的操作，全是沿着那条畸形的“段:偏移”神经做文章。\n\n当年我们依赖结构漏洞生存，而非凭借结构优雅编程。\n\n8086 那套段寄存器本来只是权宜之计，到了 80286 却被推成了彻底的疯狂。\n\n英特尔试图把分段模型扩展成一个庞大的保护体系：整个内存结构被迫围着“分段”这一原始补丁转圈。\n\n最可怕的是，一旦进入 80286 的保护模式就无法返回实模式，整个系统像被封在铁盒里，只有重启电脑才能脱身。\n\n直到80386 出来，强行引入平展寻址和分页机制，“寻址要分段”这条史前时代的畸形定律终于被压到架构底层，程序员第一次获得真正的32位寻址自由。\n\n指针不再区分 near/far，返回地址不再错位，数组不会在 64K 边界自杀。段寄存器从主角沦为透明的影子。\n\n这时，我们以为终于摆脱了祖先的那段绕路，以为 80386 的平展寻址把那条祖先绕路的“喉返神经”终于剪掉了，可事实不是这样。\n\n你二舅还是你二舅，386 仍然是 x86。后来的 80486 还是 x86，哪怕英特尔改名成 Pentium，可它依旧是 x86 的延长线。\n\n哪怕是后来变成 i3、i5、i7、i9，本质还是那一套祖传血统。名字怎么换都行，微架构翻了几十次代也行，但那条最深的印记永远在。\n\n你当然可以把整颗芯片全部现代化，把页表、MMU、总线协议、缓存层级全换一遍，但只要它叫 x86，哪怕做到百核、做到 TB 级内存，启动的第一口气仍然必须像 1978 年的 8086 一样去跑那段古老的实模式流程。\n\n电脑永远逃不掉那个噩梦：上电后，从 F000:FFF0 开始那个1978年的时刻醒来，假装自己还活在 1MB 的史前时代。\n\nBIOS 再怎么换皮，UEFI 再怎么现代，都得先演一遍“古代仪式”：跑过 8086 的实模式，走过那套段模型、1MB 内存地图和 A0000 显存区，然后才缓缓进入保护模式、长模式，最终装载 Windows 11。\n\n那条线路永远无法删除。抽象层越厚，它越像胚胎发育中必须重演的一段祖先结构。\n\n那天，我看着喉返神经的图，再翻翻启动流程，忽然明白：\n\n我们写代码写了这么多年，其实从未走出那个史前时代的影子。\n\n文明再先进，外壳再光鲜，底下总有一条古老的线路，是你永远无法摆脱的。",
+      "created_at": "Sun Nov 16 20:00:44 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1990145468547121152",
+          "url": "https://pbs.twimg.com/media/G55qwmgawAAgEcy.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1990145468542930944",
+          "url": "https://pbs.twimg.com/media/G55qwmfa0AAPT5d.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1990145468559663104",
+          "url": "https://pbs.twimg.com/media/G55qwmjaIAADihI.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1545502277946880000",
+        "name": "云中月",
+        "screen_name": "MoonAtCloud",
+        "description": "",
+        "followers_count": 25960,
+        "friends_count": 952,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 84,
+        "favorite_count": 553,
+        "reply_count": 52,
+        "quote_count": 5
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 84,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1990184111395258719",
+    "text": "Skill 这个不一定是完全从 Manus 借鉴，不过 Manus 很多 Agent 上的工程实践确实是业界顶尖的，而且他们也没藏着掖着，经常分享出来。\n\n上次 Anthropic 的用脚本/代码操作 MCP 节约上下文的分享 Manus 之前也分享过。",
+    "created_at": "Sun Nov 16 22:24:02 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1990169873176310131",
+      "text": "大凌晨说个暴论，其实 Claude 的 Skills 是在借鉴 Manus 的一些工程经验，所以我真的不明白为什么那么多人看不惯 Manus",
+      "created_at": "Sun Nov 16 21:27:27 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "147786784",
+        "name": "yetone",
+        "screen_name": "yetone",
+        "description": "I built a Cursor-like experience plugin for Neovim: avante.nvim",
+        "followers_count": 62184,
+        "friends_count": 4448,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 62,
+        "reply_count": 13,
+        "quote_count": 2
+      }
+    },
+    "stats": {
+      "retweet_count": 2,
+      "favorite_count": 16,
+      "reply_count": 2,
+      "quote_count": 0
+    }
+  }
+]
+```
+
+##
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @dotey的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

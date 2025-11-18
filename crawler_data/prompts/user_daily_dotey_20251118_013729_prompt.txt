@@ -1,0 +1,321 @@
+# LLM Prompt 保存记录
+生成时间: 2025-11-18 01:37:29
+总结类型: user_daily
+用户: @dotey
+推文数量: 7
+数据哈希: 99a2c36d
+
+================================================================================
+完整Prompt内容:
+================================================================================
+
+dotey是一个技术专家，经常会分析一些ai的话题，帮我看看有什么新的工具/想法/方法论/实践经验等值得关注学习。
+
+## 推文数据（JSON格式）
+```json
+[
+  {
+    "id": "1990222792457924722",
+    "text": "这提示词效果不错👍\n但如果你不想被 AI 当作一名智力低下的博士生，你可以这么写：\n&gt; 请帮我向高中生通俗易懂的解释这篇论文",
+    "created_at": "Mon Nov 17 00:57:44 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1989900511529873539",
+      "text": "该提示词适用于一切新领域研究😎 https://t.co/FZmMLPL4U5",
+      "created_at": "Sun Nov 16 03:37:07 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1989900497546084352",
+          "url": "https://pbs.twimg.com/media/G52L9aabgAAL4i3.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1338075202798809089",
+        "name": "qinbafrank",
+        "screen_name": "qinbafrank",
+        "description": "Investor in Crypto、TMT、AI ，跟踪最前沿科技趋势、野生宏观政经观察、研究全球资本流动性、周期趋势投资。记录个人学习和思考，经常出错常态掉坑爬坑。Runner🏃",
+        "followers_count": 100836,
+        "friends_count": 1309,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 191,
+        "favorite_count": 1717,
+        "reply_count": 60,
+        "quote_count": 22
+      }
+    },
+    "stats": {
+      "retweet_count": 2,
+      "favorite_count": 21,
+      "reply_count": 9,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1990231135272739310",
+    "text": "我可不想在 AI 的记忆里面被 AI 标记为弱智，那也可以这么写吧：\n&gt; 我是费曼教授，我在带一名智力低下的博士生，我想教他学习一下这篇论文，请用傻子都能懂的语言详细给他讲一下这篇文章怎么做的，特别是模型和实证方面。\nhttps://t.co/GUnBmuOGYo",
+    "created_at": "Mon Nov 17 01:30:54 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1990224792654614818",
+      "text": "不太一样，这种智力低下与PhD之间的冲突会激发模型的生成能力，好像有一种自黑的幽默在里面，你可以比较一下，我也写了个码农版：\n\n看贴神器！最后一句换成你想获得的推文启发方向：特别是“xxxxxx”关联\n\n“我是一名文字理解力低下的码农，我想看懂这篇推文，请用傻子都能懂的语言详细给我讲一下这个推友在讲什么，特别是LLM交互范式方面的关联”",
+      "created_at": "Mon Nov 17 01:05:41 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "23062740",
+        "name": "𝙩𝙮≃𝙛{𝕩}^A𝕀²·ℙarad𝕚g𝕞",
+        "screen_name": "TaNGSoFT",
+        "description": "ai4x交互范式- EEOIP｜vibe pretraining of 𝕀²·ℙarad𝕚g𝕞｜Cognitive AI｜ Paradigm^Vibe 𝕚sᵃˡˡ ᵁ ᴺᵉᵉᵈ^智能平方范式智库^特大号范式｜再AI十年之三：a vibe builder...",
+        "followers_count": 14656,
+        "friends_count": 3389,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 1
+      }
+    },
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 3,
+      "reply_count": 1,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1990449781697884287",
+    "text": "RT @changli71829684: 我们来聊聊AI味儿：\n\n第一种：先反差描述，然后急于解释。\n因为模型的三观没有清洗好，所以大模型一直在扭转这种反常识 ，模型默认为是被迫要这样说。\n然后就会接着说：老实说、本质上、其实等等词来进行转折。最后再补一个模型能够想到的案例，试…",
+    "created_at": "Mon Nov 17 15:59:43 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1990419003374977458",
+      "text": "我们来聊聊AI味儿：\n\n第一种：先反差描述，然后急于解释。\n因为模型的三观没有清洗好，所以大模型一直在扭转这种反常识 ，模型默认为是被迫要这样说。\n然后就会接着说：老实说、本质上、其实等等词来进行转折。最后再补一个模型能够想到的案例，试图验证。\n这个逻辑是非常缜密的。一定要符合：有效性与真理性。\n把形式逻辑做到结果上，这些形式逻辑有很多种，还包括自问自答、定义阐述、案例说明。\n\n第二种：表层示例\n模型在组织过程中需要写出具体场景，还原它构思的完美的象，这个象又不能完全具象到刘阿姨、李大妈等等，智能通过比较大的门类层级。\n看似都在推理中，实际与落地经验完全不是一回事，与执行差之千里，大体可以叫纸上谈兵。\n\n第三种：虚空对比\n在名词和动词的运用上，因为特别严谨，模型往往只能使用常用词，这在推理过程中，属于是进入了词的窄效应。\n比如我们谈论哲学家，最优先选中的可能是亚里士多德和弗洛伊德，并不一定能落到维特根斯坦头上。\n当你看到一篇文章经常出现你看到上一个词和下一个词在相关性上极高，属于有点文化就能想到的关联词时候，就很可能发现了模型的局限性。\n\n第四种：语义与语用的连接。\n模型的严禁程度不允许语义产生歧义，所以在语用上，一定会跟着进行约束，以达到表达的准确。\n一旦进入一个需要解释的内容，必定会跟进解释，这两者中出现的连接词，往往包含了我们经常看到的：不是、是、而是、不止是、重要的是、本质上上、说白了。\n语义是阐明这件事，语用是约束这件事所处的环境条件。\n\n第五种：过度完美\n模型的过度完美表现在，他要把一句话讲清楚，是非常有机器语言规律的，并非人性表达规律。\n人的表达，往往拆开来这句话，是不容易形成完整语法的。即使符合语法，也会用词语规避掉完美，来符合自己的语言习惯。\n未经雕琢的文字，可以是短句。比如“未经雕琢的文字”和“可以是短句”，就都是短句。\n如果连起来写就会很别扭，这是我的习惯。\n如果AI的习惯，会写：没有经过雕琢的文字也可以是由短句组成。\n因为拆开，对于模型没有设定风格的时候，就不算一句话。\n即使设定了风格，在推理过程中，也会偶然选中了必须选中的那个选项，也就偶尔还会冒出来AI味儿。\n\n当然还有一些比如AI认为“讲”、“说”和“写”拥有不同的习惯。\n当他识别文本为讲，那就是生活聊天风格，会比较多儿化音或者排比句或者很别扭的地方也放一个“了”做结尾；\n识别为说，那就是单人叙述风格，带有大量说教的口吻，连词就会变多，解释也变多；\n识别为写，那就是严谨到不能更严谨，长句不断。",
+      "created_at": "Mon Nov 17 13:57:25 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1597294270226092042",
+        "name": "素人极客-Amateur Geek",
+        "screen_name": "changli71829684",
+        "description": "360集团-纳米AI提示词工程顾问。\n文科人，原创500+提示词工程。\n独家20条黄金AI交互法则，\n用AI对传统任务，狂抽猛送三千下。\n我正在做的事：复刻那些底层内核强大的人。\nAI课：AI捏人大法，重塑灵魂底价。",
+        "followers_count": 5154,
+        "friends_count": 560,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 44,
+        "reply_count": 4,
+        "quote_count": 4
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 8,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1990475846021493049",
+    "text": "RT @0xShellywang: 智联招聘发布《2025 年人工智能产业人才发展报告》，核心数据：\n三季度人工智能行业招聘同比增长 11%\n\n算法、数据、产品三类岗位增速显著，AI 产品经理需求增长 178%\n\n中小微企业构成AI行业招聘“主力军”，占比超过 80%\n\n招聘数…",
+    "created_at": "Mon Nov 17 17:43:17 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": {
+      "id": "1990357971369627895",
+      "text": "智联招聘发布《2025 年人工智能产业人才发展报告》，核心数据：\n三季度人工智能行业招聘同比增长 11%\n\n算法、数据、产品三类岗位增速显著，AI 产品经理需求增长 178%\n\n中小微企业构成AI行业招聘“主力军”，占比超过 80%\n\n招聘数据跟最近访谈的电商行业趋势极近\n\n大多数电商企业（特别是中型业务量）都对 AI 都有明显的焦虑感，想要尝试的企业也越来越多。驱动因素：\n\n早期拥抱 AI 的企业，已经有跑出效果\n\n过去 2 年有赚到钱，业务也在增长（特别是出海电商，这两年有明显业务增速）\n\n系统、技术不是企业核心，希望引进 AI 专家梳理企业内部可自动化业务流程\n\n2 B 的 AI 服务，或许会做 2016 年，迎来一个新的机会",
+      "created_at": "Mon Nov 17 09:54:54 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1990352290033840128",
+          "url": "https://pbs.twimg.com/media/G58m3MlaMAAGUJ0.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1415979016901648386",
+        "name": "Shelly",
+        "screen_name": "0xShellywang",
+        "description": "AI 探索 ，币圈摸鱼\n很爱买锅跟做饭，INFJ网络话痨\n0市场预算实现1500万用户\n跑过百亿交易额\nCooking MaybeAI & OmniMCP & Footprint",
+        "followers_count": 3271,
+        "friends_count": 237,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 15,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 5,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1990504102003159550",
+    "text": "RT @sujingshen: 最近我观察到一个有趣的现象：创业者们总喜欢走极端。\n\n一类人信奉\"憋大招\"，觉得产品不完美不能见人。花半年时间闭门造车，把每个细节打磨到极致，结果上线后发现根本没人用。… https://t.co/a54yJ0Lx7Z",
+    "created_at": "Mon Nov 17 19:35:34 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1990265080660066305",
+        "url": "https://pbs.twimg.com/media/G57Xi8WbgAEl9Ez.jpg"
+      }
+    ],
+    "retweet": {
+      "id": "1990265124280848634",
+      "text": "最近我观察到一个有趣的现象：创业者们总喜欢走极端。\n\n一类人信奉\"憋大招\"，觉得产品不完美不能见人。花半年时间闭门造车，把每个细节打磨到极致，结果上线后发现根本没人用。\n\n另一类人陷入\"空想循环\"，天天开会讨论产品该做成什么样。今天觉得应该做社交，明天觉得要加游戏化，后天又想做AI。几个月过去了，PPT做了几十版，代码一行没写。\n\n看起来是两个极端，但本质上是同一个问题：都在逃避验证。\nhttps://t.co/rHCCiD3wnb",
+      "created_at": "Mon Nov 17 03:45:57 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1990265080660066305",
+          "url": "https://pbs.twimg.com/media/G57Xi8WbgAEl9Ez.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "1745332167218196480",
+        "name": "SagaSu",
+        "screen_name": "sujingshen",
+        "description": "AI Entrepreneur | Bootstrapped to $1M+ Revenue | AI Tools & Marketing Guru |\nhttps://t.co/wZlo4aRUoC",
+        "followers_count": 3009,
+        "friends_count": 140,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 19,
+        "reply_count": 2,
+        "quote_count": 1
+      }
+    },
+    "quoted": null,
+    "stats": {
+      "retweet_count": 8,
+      "favorite_count": 0,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  },
+  {
+    "id": "1990511327501025536",
+    "text": "Peter Yang 对 Cursor 设计负责人 Ryo Lu 的访谈中，其中两点尤其认同：\n\n1. 在 AI 原生（AI-native）公司里，角色边界会变得很模糊。\n\n在 Cursor，设计师、产品经理、工程师之间的分工并不是传统那种各管一摊。\n\nRyo 的说法是：大家会根据自己的长处来做事，谁更擅长就多承担那一块，然后用 AI Agent 把这些工作串起来，形成一个完整的产品体验。\n\n2. 模型越强，规格说明（spec）就越重要，而不是越不重要。\n\nRyo 的预测是：随着大语言模型能力越来越强，它们会变得非常擅长“严格按规格实现需求”。\n\n这意味着：你的 spec 写得有多清晰、具体、准确，很大程度上就决定了 AI 帮你做出来的东西质量有多高。\n\n3. 分批发布，每一轮都会根据反馈打磨调整\n\nRyo 讲了 Cursor 内部发布的节奏：\n\n第一步，先发给公司内部员工用；\n\n第二步，再把最新的 nightly build 发给 Cursor 的忠实用户；\n\n第三步，才逐步推给普通用户；\n\n最后，才是企业用户（enterprise）。\n\n每一批用户都是一次打磨机会，让他们在小范围发现问题、修细节，再扩大范围。",
+    "created_at": "Mon Nov 17 20:04:17 +0000 2025",
+    "lang": "zh",
+    "media": [],
+    "retweet": null,
+    "quoted": {
+      "id": "1990461877328228516",
+      "text": "My top 5 takeaways from @ryolu_, Head of Design at Cursor:\n\n1. At AI-native companies, roles are muddy. At Cursor, “roles between designers, PMs, engineers are muddy. We just do what it takes based each person’s unique strengths and use the AI agent to tie everything together.”\n\n2. Start small and let one app evolve into a complete OS. Ryo started ryOS with just a soundboard. “I asked the agent, can you give a more retro Mac OS look? And it did.” He then added more features over time. P.S. You can fork ryOS on Github and modify it to be your personal OS.\n\n3. Prototype directly in Cursor to interact with live app states. Ryo uses Figma mostly for initial exploration. “We prototype in Cursor because that lets us interact with live states. It feels a lot more real than pictures.” All the back-and-forth of “50 pixels off” handoffs goes away.\n\n4. Release to different sets of users in stages to polish features. From Ryo: “First, we ship to staff. Then we ship new nightly builds to our Cursor ambassadors. Next we ship to consumers and finally to enterprise.” Each stage gives the Cursor team an opportunity to polish the product.\n\n5. Specs become more important as AI models improve, not less. Ryo predicts: “As models get better, they’ll be really good at implementing exact specifications. So the quality of your spec will determine the quality of output.",
+      "created_at": "Mon Nov 17 16:47:47 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1990461873289113603",
+          "url": "https://pbs.twimg.com/media/G5-KhyBbMAMF-WR.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "84490044",
+        "name": "Peter Yang",
+        "screen_name": "petergyang",
+        "description": "I share extremely practical AI tutorials and interviews | Join 140K+ readers at https://t.co/XYKTmGVH14 | Product at Roblox",
+        "followers_count": 152205,
+        "friends_count": 1977,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 89,
+        "reply_count": 10,
+        "quote_count": 2
+      }
+    },
+    "stats": {
+      "retweet_count": 7,
+      "favorite_count": 49,
+      "reply_count": 3,
+      "quote_count": 3
+    }
+  },
+  {
+    "id": "1990566753689112871",
+    "text": "根据Replicate官方博客11月17日发布的消息，AI模型部署平台Replicate宣布将加入Cloudflare。\n\nReplicate是一家致力于构建“AI原生工具”的公司，旨在让软件开发者能更轻松地使用AI，而无需深入了解其底层的复杂技术。他们开发了开源工具Cog（一种标准化的模型格式）以及Replicate平台，允许开发者分享AI模型并通过API运行它们。\n\n公告将这些AI工具比作在云端运行的“分布式操作系统”。因为运行AI模型需要专业的GPU和庞大的集群，所以“网络就是计算机”。\n\n而Cloudflare拥有全球领先的网络，并且已经构建了这个“操作系统”的许多其他部分，例如用于运行代码的Workers、用于管理状态的Durable Objects以及用于存储的R2。\n\n为什么合并？\n\nReplicate认为，通过将其底层的AI抽象（如模型运行、数据输入输出）与Cloudflare强大的开发者平台相结合，双方可以构建更高级别的AI工具，例如用于编排模型、构建AI代理（Agents）以及在边缘运行实时模型。\n\n对用户有何影响？\n\n公告明确表示，Replicate将继续作为一个独立的品牌运营，并且会变得“更好”——速度更快、资源更充足。\n\n对于现有用户最关键的信息是：\n- API不会改变。\n- 用户当前使用的模型将继续工作。\n- 所有构建在Replicate上的应用将继续照常运行。\n\nReplicate的联合创始人表示，Cloudflare是构建Web应用的默认选择，而通过这次联手，他们的共同目标是成为“构建AI应用的默认选择”。\n\nhttps://t.co/K0QFpA9j0l",
+    "created_at": "Mon Nov 17 23:44:31 +0000 2025",
+    "lang": "zh",
+    "media": [
+      {
+        "type": "photo",
+        "id": "1990566743991803904",
+        "url": "https://pbs.twimg.com/media/G5_p6D1WYAA8q7J.jpg"
+      }
+    ],
+    "retweet": null,
+    "quoted": null,
+    "stats": {
+      "retweet_count": 0,
+      "favorite_count": 6,
+      "reply_count": 0,
+      "quote_count": 0
+    }
+  }
+]
+```
+
+##
+
+================================================================================
+Prompt结束
+================================================================================
+
+# 使用说明
+这个文件包含了发送给LLM的完整prompt内容，你可以：
+1. 直接复制到其他LLM服务（Claude、ChatGPT等）
+2. 调试和优化prompt结构
+3. 作为训练数据或示例使用
+4. 分析LLM输入输出的对应关系
+
+# 数据来源信息
+- 原始推文数据来源: @dotey的推文时间线
+- 数据处理: 经过优化嵌套结构转换，便于LLM理解
+- 结构特点: 支持复杂的转推、引用、多层嵌套关系分析

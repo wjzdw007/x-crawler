@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 144778,
+    "followers_count": 144774,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251118",
-  "last_updated": "2025-11-18T14:05:24.887402",
-  "tweet_count": 10,
+  "last_updated": "2025-11-18T16:05:48.525433",
+  "tweet_count": 14,
   "tweets": [
     {
       "id": "1990580371147444609",
@@ -484,6 +484,202 @@
       "quoted": null,
       "stats": {
         "retweet_count": 7,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1990803200816132379",
+      "text": "RT @gantrols: Gemini 3 Pro模型卡文档泄露。看文档是本月发布，跑分的王。除了Agent能力，全面超越Claude 4.5（详见图二） https://t.co/bA5rH6OC2u",
+      "created_at": "Tue Nov 18 15:24:05 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1990754887890788352",
+          "url": "https://pbs.twimg.com/media/G6CVBeeaYAAruA7.png"
+        },
+        {
+          "type": "photo",
+          "id": "1990755290044911616",
+          "url": "https://pbs.twimg.com/media/G6CVY4nbUAA1n7q.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "1990755804962787371",
+        "text": "Gemini 3 Pro模型卡文档泄露。看文档是本月发布，跑分的王。除了Agent能力，全面超越Claude 4.5（详见图二） https://t.co/bA5rH6OC2u",
+        "created_at": "Tue Nov 18 12:15:45 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1990754887890788352",
+            "url": "https://pbs.twimg.com/media/G6CVBeeaYAAruA7.png"
+          },
+          {
+            "type": "photo",
+            "id": "1990755290044911616",
+            "url": "https://pbs.twimg.com/media/G6CVY4nbUAA1n7q.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1553753362633719808",
+          "name": "Gantrol",
+          "screen_name": "gantrols",
+          "description": "全干工程师，计算机心理学家",
+          "followers_count": 1277,
+          "friends_count": 94,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 7,
+          "reply_count": 3,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1990808117957812473",
+      "text": "Gemini 3 Pro 已经可以在 AIStudio 使用了，模型卡也泄漏了，各方面都很强，除了软件工程基准（SWE Bench）方面略低于 Sonnet 4.5 和 GPT-5.1 ​​​\n\n直接转译下下面 Deepy 的总结：\n\n---\n\n谷歌最新一代AI大模型Gemini 3的性能数据，居然在官方发布前数小时提前泄露！从泄露的数据看，这款模型简直强大到离谱，让人忍不住想深入挖掘一下，它的发布究竟意味着什么？\n\n1. 成本不再是障碍：普通人也能用得起的强大AI\n\n谷歌这次从零开始，在自家的TPU芯片上训练了Gemini 3模型。它采用了专家混合网络（Mixture of Experts，简称MoE）架构，可以处理超长输入（高达100万token）和输出（64k token），而MoE设计的精妙之处就在于：即便性能爆炸提升，成本也并不会疯涨。也就是说，普通用户未来用上这么强大的AI，花费也不会太高！\n\n2. 电脑操作能力大跃升：真正实现自动化的知识工作\n\nGemini 3在一项鲜为人知却非常实用的测试ScreenSpot Pro中表现惊艳。这个测试考验AI理解各种软件截图的能力，包括AutoCAD、PhotoShop等专业工具界面。结果Gemini 3以73%的得分一举超过之前最好的模型足足两倍，遥遥领先！这意味着Gemini 3真正能够在复杂的工作场景下，帮助人们高效自动化完成专业的知识型工作。\n\n3. 数学能力“一骑绝尘”：其他模型望尘莫及\n\nGemini 3这次特别经过大量数学定理证明的强化学习，数学能力超凡。在美国数学邀请赛（AIME）中几乎达到了“完美表现”，而在难度超高的**MathArena**数学基准测试中也达到了惊人的23%（其他主流模型几乎都只有1%左右）。此外，它在体现真正“通用推理能力”的ARC AGI 2测试中，也创造了30%的领先记录，这显示Gemini 3不仅在数学上是顶尖的，通用推理能力也同样拔群。\n\n4. 编程能力惊人，但还有成长空间\n\nGemini 3在编程测试中展现了惊人的实力，比如在LiveCodeBench的国际象棋等级分（Elo）评分超过了2400，非常优秀。但也有一点小插曲：它在软件工程基准（SWE Bench）中并未拿下第一，反而输给了竞争对手。但在“工具调用”和“终端使用”等测试上，它依然稳居第一。这说明Gemini 3在互动编程、实时问题解决方面非常强悍，但在复杂、长期的代码维护方面，还有提升的空间。\n\n---\n\n谷歌这次几乎动用了所有的“压箱底绝招”：完善的训练方法、大量私有数据、全新的模型架构，然后在几乎所有重要的基准测试中都实现了碾压式领先。这次升级，明确告诉我们：AI领域的发展速度不仅没有放缓，甚至还在加速向前。\n\n目前来看，谷歌在大模型领域已经形成了相当明显的领先优势。为什么这么说？\n\n- 成本优势：谷歌拥有自家芯片TPU，训练成本明显更低；\n- 数据优势：谷歌掌握远超其他公司的海量专有数据；\n- 资金优势：拥有雄厚财力投入更多训练和数据资源；\n- 人才优势：谷歌的人才储备也丝毫不输其他顶级公司。\n\n这种全面碾压的格局，接下来6个月恐怕都难以撼动。谷歌已经用Gemini 3向全世界展示了自己在AI领域的绝对主导地位，而其他公司能否追上，现在还是一个未知数。\n\n无论如何，Gemini 3的发布注定将再次掀起一场AI界的大地震！",
+      "created_at": "Tue Nov 18 15:43:37 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1990807335216816128",
+          "url": "https://pbs.twimg.com/media/G6DEuT_XIAA8aR1.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1990790371434250464",
+        "text": "🚨The Gemini 3 launched leaked hours before the official launch!! The model is INSANELY good, but let's dig deep and see what it means for the AI future.\n\n1. It's not going to be super expensive!\nGoogle trained this from scratch on TPUs as an MoE with 1M input and 64k token output. MoE means they can afford to make this cheap.\n\n2. This is next level for Computer Use and automating real knowledge work.\nScreenSpot Pro is a very low-key benchmark which tests understanding screenshots in apps including AutoCAD, PhotoShop and many more. Gemini 3 is 2x SOTA on this with 73%.\n\n3.  Best AI for Math by far.\nGemini 3 is RLd on a ton of theorem proving data and is flawless on AIME and 23% on MathArena. Other models barely scrape 1%. There are clearly some generalized reasoning benefits given the sota 30% on ARC AGI 2 as well!\n\n4. Insanely good at coding but unclear if best.\nLive Code Bench elo of 2400+ is fantastic yet the one benchmark it doesn't get SOTA at SWE Bench. It's #1 on tool calling and terminal bench too.\n\nGoogle pulled out everything they had on this one. They perfected their training recipe, trained on all the proprietary data they had and crushed every benchmark they could. This is a meaningful step up in model quality and clear proof that AI progress isn't slowing down.\n\nI just don't know how any other company but Google wins on model quality here: they have a) cost advantage due to owning hardware b) ooms more proprietary data c) more disposal cash to spend on training and new data d) as good talent as anyone else. Flaunting their total dominance.\n\nI suspect it will be hard to beat these results in the next 6 months.",
+        "created_at": "Tue Nov 18 14:33:06 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1990790368254963716",
+            "url": "https://pbs.twimg.com/media/G6C1StIbMAQkPwW.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "361044311",
+          "name": "Deedy",
+          "screen_name": "deedydas",
+          "description": "Partner @MenloVentures. Formerly founding team @glean, @Google Search. @Cornell CS. Tweets about tech, immigration, India, fitness and search.",
+          "followers_count": 217337,
+          "friends_count": 5376,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 69,
+          "favorite_count": 816,
+          "reply_count": 37,
+          "quote_count": 21
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 12,
+        "reply_count": 3,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "1990808824265965944",
+      "text": "Model Card 下载\nhttps://t.co/2PKMWe2kQc",
+      "created_at": "Tue Nov 18 15:46:25 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1990743841977348156",
+        "text": "Gemini 3的Model Card已经泄露了，基本全部评分都是第一，而且大幅领先。\nPDF文件：https://t.co/pxWi99cLbR https://t.co/4Cqq6VWslF",
+        "created_at": "Tue Nov 18 11:28:12 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1990743824436772864",
+            "url": "https://pbs.twimg.com/media/G6CK9f5bQAAeWSc.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1657474831",
+          "name": "Gorden Sun",
+          "screen_name": "Gorden_Sun",
+          "description": "只发AI相关信息，个人维护的AI资讯日报（已连续日更两年半）👇",
+          "followers_count": 38391,
+          "friends_count": 1610,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5,
+          "favorite_count": 23,
+          "reply_count": 3,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1990809883780813145",
+      "text": "RT @changli71829684: prompt如何不变成玄学？\n让生成结果螺旋起飞的妙计！\n\n第一误区：简短提示词…",
+      "created_at": "Tue Nov 18 15:50:38 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1990793400594149719",
+        "text": "prompt如何不变成玄学？\n让生成结果螺旋起飞的妙计！\n\n第一误区：简短提示词\n简短的提示词缺失的是前因后果。没有合理的因，结不出准确的果。我们想创作一个选题，就不能只让他创作选题，这件事是在什么人物身上发生的，是一件具体什么样的事，他有着什么样的社会认知，在这个切面下有什么现象背后的观点？\n所有的内容都是一步步铺陈出来的，不是一句话就无因无果创作出来的，提示词工程的基本盘，是给到结果之前合理的推理铺垫。\n妙计：做一个内容写几个步骤，每个步骤校对一次结果，在不断的校对中，切中你想要的那个最准确的判断。\n\n第二误区：逻辑是复杂的\nAI生成的内容逻辑一点都不复杂，我们的眼光总容易盯着复杂的逻辑觉得模型可能不擅长什么。但逻辑本身是可以通过交叉组合的方式，实现复杂的推导，如果我们让他看见逻辑可以拆成简单的推导过程，模型就会被带到你的轨道上。\n妙计：挖掘出所有的可能性，让模型的推理变成堆积木，积木最顶上的内容就是结果，下面的内容全是阶梯。\n\n第三误区：专有名词很好用\n专有名词的确能让模型快速进入到某个词库，比如扮演XX专家，但实际上帮助是有限了，结果只能用来做参考。一个人是立体且复杂的，某个专家一定会有失偏颇。\n妙计：干脆不要用专有名词，如果你能把这个专有名词，拆成很多标签，然后把标签组合成文字逻辑的文本，你的提示词就会变得更准确。\n\n第四误区：两个极端词交汇\n昨天有看到大家用弱智的博士生，或者高素质导师的智力低下学生。这很有趣，而且也只是很有趣。真实的有作用拆解，是给出符合金字塔原理的逻辑和符合由浅入深的语言规律。让我们兴奋的，是进入愿意学习状态的提示词，并不完全是那个结果。\n妙计：拆解知识找到最擅长讲知识的那个人，利用他讲知识的逻辑，完成一次更加符合人理解的知识生成。\n\n第五误区：严禁之后为什么还有？\n因为模型有自己的程序要求，那个函数被锁定在了大词库中，用严禁是无法规避那个权重较高的大词库的。\n妙计：让没有这些内容的文本成为参考，简单易用。减少多轮对话。或者直接上手能累着你啊？\n\n下面给一个我修改后的“背单词”的提示词吧！\n在回复中自取.....",
+        "created_at": "Tue Nov 18 14:45:08 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1597294270226092042",
+          "name": "素人极客-Amateur Geek",
+          "screen_name": "changli71829684",
+          "description": "360集团-纳米AI提示词工程顾问。\n文科人，原创500+提示词工程。\n独家20条黄金AI交互法则，\n用AI对传统任务，狂抽猛送三千下。\n我正在做的事：复刻那些底层内核强大的人。\nAI课：AI捏人大法，重塑灵魂底价。",
+          "followers_count": 5311,
+          "friends_count": 561,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 9,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

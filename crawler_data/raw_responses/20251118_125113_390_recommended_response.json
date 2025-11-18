@@ -1,0 +1,82 @@
+{
+  "url": "https://x.com/i/api/graphql/xNGIIoXaz9DyeBXBfn3AjA/HomeLatestTimeline",
+  "timestamp": "2025-11-18T12:51:13.390292",
+  "status": 200,
+  "headers": {
+    "Date": "Tue, 18 Nov 2025 12:51:13 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "281",
+    "Connection": "keep-alive",
+    "perf": "7402827104",
+    "vary": "Origin, accept-encoding",
+    "pragma": "no-cache",
+    "Server": "cloudflare envoy",
+    "expires": "Tue, 31 Mar 1981 05:00:00 GMT",
+    "Cache-Control": "no-cache, no-store, must-revalidate, pre-check=0, post-check=0",
+    "last-modified": "Tue, 18 Nov 2025 12:51:13 GMT",
+    "x-frame-options": "SAMEORIGIN",
+    "Content-Encoding": "gzip",
+    "x-transaction-id": "c22803e9dc78f524",
+    "x-xss-protection": "0",
+    "x-rate-limit-limit": "500",
+    "x-rate-limit-reset": "1763471173",
+    "content-disposition": "attachment; filename=json.json",
+    "x-tfe-preserve-body": "true",
+    "x-content-type-options": "nosniff",
+    "x-rate-limit-remaining": "499",
+    "x-twitter-response-tags": "BouncerCompliant",
+    "X-Response-Time": "341",
+    "origin-cf-ray": "9a0799165a171216-IAD",
+    "strict-transport-security": "max-age=631138519; includeSubdomains",
+    "x-served-by": "t4_a",
+    "access-control-allow-origin": "https://x.com",
+    "access-control-expose-headers": "X-Acted-As-User-Id,X-Rate-Limit-Limit,X-Rate-Limit-Remaining,X-Rate-Limit-Reset,X-TD-Mtime",
+    "cf-cache-status": "DYNAMIC",
+    "Set-Cookie": "lang=en; Path=/, guest_id=v1%3A176347027304140915; SameSite=None; Secure; Path=/; Domain=.x.com; Max-Age=34214400; Expires=Sat, 19 Dec 2026 12:51:13 GMT, __cf_bm=nVgocGxpn0gSjLxDl5yU97qIYAQr87vyqc8wGg3_Hw0-1763470273.0138233-1.0.1.1-.FsyZuKt2mD89yjgq0C77G3Qc9pXRos7mr0erYpPjEGZfvY5ceRT9zsUKAYqGiM6yUtQB3YLf87o73BORI5993D8u9Pj.9hmRcMNVGyFPjJCrnFiJrnrxrKMBIIzpZ4B; HttpOnly; Secure; Path=/; Domain=x.com; Expires=Tue, 18 Nov 2025 13:21:13 GMT",
+    "CF-RAY": "9a0799165a171216-IAD"
+  },
+  "params": {
+    "variables": "{\"count\": 20, \"includePromotedContent\": true, \"latestControlAvailable\": true, \"requestContext\": \"launch\", \"withCommunity\": true}",
+    "features": "{\"rweb_video_screen_enabled\": false, \"payments_enabled\": false, \"profile_label_improvements_pcf_label_in_post_enabled\": true, \"rweb_tipjar_consumption_enabled\": true, \"verified_phone_label_enabled\": false, \"creator_subscriptions_tweet_preview_api_enabled\": true, \"responsive_web_graphql_timeline_navigation_enabled\": true, \"responsive_web_graphql_skip_user_profile_image_extensions_enabled\": false, \"premium_content_api_read_enabled\": false, \"communities_web_enable_tweet_community_results_fetch\": true, \"c9s_tweet_anatomy_moderator_badge_enabled\": true, \"responsive_web_grok_analyze_button_fetch_trends_enabled\": false, \"responsive_web_grok_analyze_post_followups_enabled\": true, \"responsive_web_jetfuel_frame\": true, \"responsive_web_grok_share_attachment_enabled\": true, \"articles_preview_enabled\": true, \"responsive_web_edit_tweet_api_enabled\": true, \"graphql_is_translatable_rweb_tweet_is_translatable_enabled\": true, \"view_counts_everywhere_api_enabled\": true, \"longform_notetweets_consumption_enabled\": true, \"responsive_web_twitter_article_tweet_consumption_enabled\": true, \"tweet_awards_web_tipping_enabled\": false, \"responsive_web_grok_show_grok_translated_post\": false, \"responsive_web_grok_analysis_button_from_backend\": true, \"creator_subscriptions_quote_tweet_preview_enabled\": false, \"freedom_of_speech_not_reach_fetch_enabled\": true, \"standardized_nudges_misinfo\": true, \"tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled\": true, \"longform_notetweets_rich_text_read_enabled\": true, \"longform_notetweets_inline_media_enabled\": true, \"responsive_web_grok_image_annotation_enabled\": true, \"responsive_web_grok_imagine_annotation_enabled\": true, \"responsive_web_grok_community_note_auto_translation_is_enabled\": false, \"responsive_web_enhance_cards_enabled\": false}"
+  },
+  "data": {
+    "data": {
+      "home": {
+        "home_timeline_urt": {
+          "instructions": [
+            {
+              "type": "TimelineAddEntries",
+              "entries": [
+                {
+                  "entryId": "cursor-top-1990764731777941505",
+                  "sortIndex": "1990764731777941505",
+                  "content": {
+                    "entryType": "TimelineTimelineCursor",
+                    "__typename": "TimelineTimelineCursor",
+                    "value": "DAABCgABG6Cd-d0AJxEIAAMAAAABAAA",
+                    "cursorType": "Top"
+                  }
+                },
+                {
+                  "entryId": "cursor-bottom-1990764731777941504",
+                  "sortIndex": "1990764731777941504",
+                  "content": {
+                    "entryType": "TimelineTimelineCursor",
+                    "__typename": "TimelineTimelineCursor",
+                    "value": "DAABCgABG6Cd-dz___4IAAMAAAACAAA",
+                    "cursorType": "Bottom"
+                  }
+                }
+              ]
+            }
+          ],
+          "metadata": {
+            "scribeConfig": {
+              "page": "following"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -681,27 +681,31 @@ class XCrawler:
         """保存或合并用户的推文数据"""
         import os
         from dateutil.parser import parse as parse_date
-        
+
         today = datetime.now().strftime('%Y%m%d')
         filename = f"{screen_name}_{today}.json"
         filepath = users_dir / filename
-        
+
         # 如果文件已存在，加载现有数据
         existing_tweets = []
+        existing_user_info = {}
         if filepath.exists():
             try:
                 with open(filepath, 'r', encoding='utf-8') as f:
                     existing_data = json.load(f)
                     existing_tweets = existing_data.get('tweets', [])
+                    # 加载现有的用户信息作为后备
+                    existing_user_info = existing_data.get('user', {})
             except Exception as e:
                 print(f"⚠️ 读取现有文件失败 {filepath}: {e}")
-        
+
         # 合并推文并去重（基于推文ID）
         all_tweets = existing_tweets + new_tweets
         unique_tweets = {}
-        
+
         # 先保存用户信息，再移除冗余字段
-        user_info = {}
+        # 使用现有的用户信息作为默认值
+        user_info = existing_user_info.copy() if existing_user_info else {}
         for tweet in all_tweets:
             tweet_id = tweet.get('id')
             if tweet_id and tweet_id not in unique_tweets:
@@ -747,26 +751,30 @@ class XCrawler:
         """按日期保存或合并用户的推文数据"""
         import os
         from dateutil.parser import parse as parse_date
-        
+
         filename = f"{screen_name}_{date_str}.json"
         filepath = users_dir / filename
-        
+
         # 如果文件已存在，加载现有数据
         existing_tweets = []
+        existing_user_info = {}
         if filepath.exists():
             try:
                 with open(filepath, 'r', encoding='utf-8') as f:
                     existing_data = json.load(f)
                     existing_tweets = existing_data.get('tweets', [])
+                    # 加载现有的用户信息作为后备
+                    existing_user_info = existing_data.get('user', {})
             except Exception as e:
                 print(f"⚠️ 读取现有文件失败 {filepath}: {e}")
-        
+
         # 合并推文并去重（基于推文ID）
         all_tweets = existing_tweets + new_tweets
         unique_tweets = {}
-        
+
         # 先保存用户信息，再移除冗余字段
-        user_info = {}
+        # 使用现有的用户信息作为默认值
+        user_info = existing_user_info.copy() if existing_user_info else {}
         for tweet in all_tweets:
             tweet_id = tweet.get('id')
             if tweet_id and tweet_id not in unique_tweets:

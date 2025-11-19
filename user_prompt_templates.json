@@ -1,18 +1,18 @@
 {
   "elonmusk": {
-    "template": "今天马斯克发了什么值得关注的？只列出3-5个最重要的要点，每条不超过2行。\n\n推文数据：\n```json\n{tweet_content}\n```\n\n直接给出bullet points，不要客套话、总结和多余的分析。",
-    "description": "Elon Musk - 极简版"
+    "template": "分析马斯克今天的推文，简要总结（15-25行）：\n\n推文数据：\n```json\n{tweet_content}\n```\n\n格式要求：\n## 核心动态\n列出2-4个最重要的事件/产品/观点，每个用1-2句话说明背景和意义\n\n## 值得关注\n如有特别有趣或重要的细节，简要说明\n\n不要：\n- 总结段落（如\"今天的推文反映了...\"）\n- 过度正式的结构（一、二、三、四）\n- 重复已说过的内容",
+    "description": "Elon Musk - 平衡版"
   },
   "dotey": {
-    "template": "dotey今天分享了哪些AI相关的内容？简洁提炼要点：\n\n推文数据：\n```json\n{tweet_content}\n```\n\n格式要求：\n• 新工具/技术：[如有，1行]\n• 值得关注的观点/方法论：[如有，1-2行]\n• 实践经验/案例：[如有，1行]\n\n每条直击要点，不要展开和客套话。",
-    "description": "dotey - AI技术简洁版"
+    "template": "dotey是AI技术专家，分析他今天分享的内容（15-20行）：\n\n推文数据：\n```json\n{tweet_content}\n```\n\n按以下格式整理：\n\n**新工具/技术**（如有）\n- 工具名称 + 简要说明（1-2句）\n\n**核心观点/方法论**（如有）\n- 观点概述 + 为什么重要（1-2句）\n\n**实践经验/案例**（如有）\n- 经验总结（1-2句）\n\n保持简洁但给出足够的上下文让人理解价值。",
+    "description": "dotey - AI技术平衡版"
   },
   "naval": {
-    "template": "提炼naval今天的核心观点（3-5条）：\n\n推文数据：\n```json\n{tweet_content}\n```\n\n格式：\n• [核心观点1 - 1行]\n• [核心观点2 - 1行]\n\n只保留最有价值的思考和智慧，去掉解释。",
-    "description": "Naval - 极简智慧"
+    "template": "提炼Naval今天的核心思想（10-20行）：\n\n推文数据：\n```json\n{tweet_content}\n```\n\n格式：\n**核心观点**\n- [观点1]：简要展开说明（1-2句）\n- [观点2]：简要展开说明（1-2句）\n\n**可行动建议**（如有）\n- 具体建议和应用场景\n\n重点突出思维模型和实用智慧。",
+    "description": "Naval - 创业智慧平衡版"
   },
   "default": {
-    "template": "分析用户今天的推文，提炼3-5个核心要点：\n\n用户信息：{user_info}\n\n推文数据：\n```json\n{tweet_content}\n```\n\n要求：\n- 每条不超过2行\n- 用bullet points\n- 直接给出要点，不要客套话和总结",
-    "description": "默认极简模板"
+    "template": "分析用户今天的推文，简要总结（15-20行）：\n\n用户信息：{user_info}\n\n推文数据：\n```json\n{tweet_content}\n```\n\n格式：\n## 主要内容\n列出2-4个核心要点，每个1-2句话说明\n\n## 关键观点（如有）\n特别值得关注的观点或细节\n\n保持简洁，但给出足够背景让读者理解。",
+    "description": "默认平衡版模板"
   }
 }

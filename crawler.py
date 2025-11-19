@@ -267,10 +267,10 @@ class XCrawler:
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S_%f')[:-3]
             raw_dir = self.data_dir / "raw_responses"
             raw_dir.mkdir(exist_ok=True)
-            
+
             filename = f"{timestamp}_{timeline_type}_response.json"
             filepath = raw_dir / filename
-            
+
             raw_data = {
                 "url": url,
                 "timestamp": datetime.now().isoformat(),
@@ -279,14 +279,52 @@ class XCrawler:
                 "params": params,
                 "data": response.json() if response.status_code == 200 else {"error": response.text}
             }
-            
+
             with open(filepath, 'w', encoding='utf-8') as f:
                 json.dump(raw_data, f, ensure_ascii=False, indent=2)
-            
+
             print(f"💾 原始响应已保存: {filename}")
-            
+
+            # 保存后自动清理旧文件
+            self.cleanup_old_raw_responses(days_to_keep=3)
+
         except Exception as e:
             print(f"⚠️ 保存原始响应失败: {e}")
+
+    def cleanup_old_raw_responses(self, days_to_keep: int = 3):
+        """清理旧的raw_responses文件，只保留最近N天的"""
+        try:
+            raw_dir = self.data_dir / "raw_responses"
+            if not raw_dir.exists():
+                return
+
+            from datetime import timedelta
+            cutoff_time = datetime.now() - timedelta(days=days_to_keep)
+
+            deleted_count = 0
+            total_size = 0
+
+            for filepath in raw_dir.glob("*.json"):
+                # 从文件名提取时间戳（格式：YYYYMMDD_HHMMSS_mmm）
+                try:
+                    filename = filepath.stem
+                    date_part = filename.split('_')[0]  # YYYYMMDD
+                    file_date = datetime.strptime(date_part, '%Y%m%d')
+
+                    if file_date < cutoff_time:
+                        file_size = filepath.stat().st_size
+                        filepath.unlink()
+                        deleted_count += 1
+                        total_size += file_size
+                except (ValueError, IndexError):
+                    # 文件名格式不符，跳过
+                    continue
+
+            if deleted_count > 0:
+                print(f"🗑️  清理旧响应文件: {deleted_count} 个 ({total_size / 1024 / 1024:.1f} MB)")
+
+        except Exception as e:
+            print(f"⚠️ 清理raw_responses失败: {e}")
     
     def parse_tweet(self, tweet_data: Dict) -> Optional[Dict]:
         """解析推文数据 - 基于分析结果的完整实现"""
@@ -453,77 +491,126 @@ class XCrawler:
         return tweets
     
     def crawl_daily_posts(self, timeline_type: str = "recommended", max_pages: int = None, target_count: Optional[int] = None) -> List[Dict]:
-        """爬取日推文 - 支持精确数量控制"""
+        """爬取日推文 - 支持精确数量控制，实时去重"""
         if target_count is None:
             target_count = self.config.get("targets", {}).get("daily_tweet_count", 100)
-        
+
         print(f"🚀 开始爬取 {timeline_type} 时间线...")
         print(f"🎯 目标推文数: {target_count} 条")
-        
-        all_tweets = []
+
+        # 使用字典存储推文，自动去重
+        unique_tweets = {}
         cursor = None
         page = 0
-        
+
         # 如果指定了max_pages就使用，否则无限制直到达到target_count或无更多数据
         while max_pages is None or page < max_pages:
             page += 1
             print(f"📄 爬取第 {page} 页...")
-            
+
             response_data = self.make_timeline_request(timeline_type, cursor)
             if not response_data:
                 print("❌ 请求失败，停止爬取")
                 break
-            
+
             tweets = self.extract_tweets_from_response(response_data)
             if not tweets:
                 print("⚠️ 未找到推文数据，可能需要检查认证状态")
                 break
-            
-            all_tweets.extend(tweets)
-            print(f"✅ 本页获取 {len(tweets)} 条推文 (累计: {len(all_tweets)} 条)")
-            
+
+            # 实时去重：只添加新推文
+            new_count = 0
+            for tweet in tweets:
+                tweet_id = tweet.get('id')
+                if tweet_id and tweet_id not in unique_tweets:
+                    unique_tweets[tweet_id] = tweet
+                    new_count += 1
+
+            print(f"✅ 本页获取 {len(tweets)} 条推文 (新增: {new_count} 条, 重复: {len(tweets) - new_count} 条, 累计: {len(unique_tweets)} 条)")
+
             # 检查是否达到目标数量
-            if len(all_tweets) >= target_count:
+            if len(unique_tweets) >= target_count:
                 print(f"🎯 已达到目标数量 {target_count} 条，结束爬取")
-                all_tweets = all_tweets[:target_count]  # 精确截取
                 break
-            
+
             # 更新cursor用于下一页
             cursor = getattr(self, 'last_cursor', None)
             if not cursor:
                 print("📝 未找到下一页cursor，结束爬取")
                 break
-        
+
+        # 转换为列表，按时间倒序排序，然后精确截取
+        from dateutil.parser import parse as parse_date
+        all_tweets = sorted(
+            unique_tweets.values(),
+            key=lambda t: parse_date(t.get('created_at', '1970-01-01')),
+            reverse=True
+        )[:target_count]
+
         # 保存数据
         if all_tweets:
             self.save_daily_data(all_tweets, timeline_type)
             # 按用户分组保存当天数据
             self.save_by_user_daily(all_tweets)
-        
-        print(f"🎉 总共爬取 {len(all_tweets)} 条推文")
+
+        print(f"🎉 总共爬取 {len(all_tweets)} 条唯一推文")
         return all_tweets
     
     def save_daily_data(self, tweets: List[Dict], timeline_type: str):
-        """保存日数据"""
+        """保存日数据 - 支持多次抓取合并去重"""
         today = datetime.now().strftime('%Y%m%d')
         filename = f"{today}_{timeline_type}_posts.json"
         filepath = self.data_dir / "daily_posts" / filename
-        
+
+        # 如果文件已存在，加载现有数据
+        existing_tweets = []
+        if filepath.exists():
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    existing_data = json.load(f)
+                    existing_tweets = existing_data.get('tweets', [])
+                print(f"📂 加载现有数据: {len(existing_tweets)} 条推文")
+            except Exception as e:
+                print(f"⚠️ 读取现有文件失败: {e}")
+
+        # 合并推文并去重（基于推文ID）
+        all_tweets = existing_tweets + tweets
+        unique_tweets = {}
+
+        for tweet in all_tweets:
+            tweet_id = tweet.get('id')
+            if tweet_id and tweet_id not in unique_tweets:
+                unique_tweets[tweet_id] = tweet
+
+        # 按时间倒序排序（最新的在前）
+        from dateutil.parser import parse as parse_date
+        sorted_tweets = sorted(
+            unique_tweets.values(),
+            key=lambda t: parse_date(t.get('created_at', '1970-01-01')),
+            reverse=True
+        )
+
+        # 保存合并后的数据
         data = {
             "date": today,
             "timeline_type": timeline_type,
-            "crawl_time": datetime.now().isoformat(),
-            "tweet_count": len(tweets),
-            "tweets": tweets
+            "last_crawl_time": datetime.now().isoformat(),
+            "tweet_count": len(sorted_tweets),
+            "unique_tweet_count": len(sorted_tweets),
+            "total_crawled": len(all_tweets),
+            "duplicates_removed": len(all_tweets) - len(sorted_tweets),
+            "tweets": sorted_tweets
         }
-        
+
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-        
-        print(f"💾 数据已保存: {filepath}")
-        
+
+        action = "更新" if existing_tweets else "创建"
+        print(f"💾 数据已{action}: {filepath}")
+        print(f"   本次抓取: {len(tweets)} 条, 累计: {len(sorted_tweets)} 条 (去重: {len(all_tweets) - len(sorted_tweets)} 条)")
+
         # 生成简要统计
-        self.generate_stats(tweets, timeline_type)
+        self.generate_stats(sorted_tweets, timeline_type)
     
     def generate_stats(self, tweets: List[Dict], timeline_type: str):
         """生成统计信息"""

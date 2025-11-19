@@ -699,20 +699,22 @@ class XCrawler:
             except Exception as e:
                 print(f"⚠️ 读取现有文件失败 {filepath}: {e}")
 
-        # 合并推文并去重（基于推文ID）
+        # 合并推文
         all_tweets = existing_tweets + new_tweets
-        unique_tweets = {}
 
-        # 先保存用户信息，再移除冗余字段
+        # 第一步：从所有推文中收集最新的用户信息（包括重复的）
         # 使用现有的用户信息作为默认值
         user_info = existing_user_info.copy() if existing_user_info else {}
         for tweet in all_tweets:
+            # 不管是否重复，只要有user信息就更新
+            if tweet.get('user'):
+                user_info = tweet['user']
+
+        # 第二步：去重并移除冗余的user字段
+        unique_tweets = {}
+        for tweet in all_tweets:
             tweet_id = tweet.get('id')
             if tweet_id and tweet_id not in unique_tweets:
-                # 保存最新的用户信息
-                if tweet.get('user'):
-                    user_info = tweet['user']
-                
                 # 移除冗余的用户信息，因为文件已经按用户分组
                 clean_tweet = tweet.copy()
                 clean_tweet.pop('user', None)  # 移除顶层user字段
@@ -768,20 +770,22 @@ class XCrawler:
             except Exception as e:
                 print(f"⚠️ 读取现有文件失败 {filepath}: {e}")
 
-        # 合并推文并去重（基于推文ID）
+        # 合并推文
         all_tweets = existing_tweets + new_tweets
-        unique_tweets = {}
 
-        # 先保存用户信息，再移除冗余字段
+        # 第一步：从所有推文中收集最新的用户信息（包括重复的）
         # 使用现有的用户信息作为默认值
         user_info = existing_user_info.copy() if existing_user_info else {}
         for tweet in all_tweets:
+            # 不管是否重复，只要有user信息就更新
+            if tweet.get('user'):
+                user_info = tweet['user']
+
+        # 第二步：去重并移除冗余的user字段
+        unique_tweets = {}
+        for tweet in all_tweets:
             tweet_id = tweet.get('id')
             if tweet_id and tweet_id not in unique_tweets:
-                # 保存最新的用户信息
-                if tweet.get('user'):
-                    user_info = tweet['user']
-                
                 # 移除冗余的用户信息，因为文件已经按用户分组
                 clean_tweet = tweet.copy()
                 clean_tweet.pop('user', None)  # 移除顶层user字段

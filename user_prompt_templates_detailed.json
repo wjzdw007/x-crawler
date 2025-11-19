@@ -1,0 +1,23 @@
+{
+  "_comment": "这是详细版配置，如需切换回详细分析，重命名此文件为 user_prompt_templates.json",
+
+  "elonmusk": {
+    "template": "分析马斯克今天的推文，按以下格式简要总结：\n\n推文数据：\n```json\n{tweet_content}\n```\n\n格式（每部分不超过5行）：\n## 核心动态\n[2-3个最重要的事件/产品/观点]\n\n## 值得关注\n[有趣或重要的细节]",
+    "description": "Elon Musk - 结构化详细版"
+  },
+
+  "dotey": {
+    "template": "dotey是AI技术专家，分析他今天分享的内容：\n\n推文数据：\n```json\n{tweet_content}\n```\n\n分类总结：\n1. 新工具/技术（如有）\n2. 方法论/最佳实践（如有）\n3. 行业洞察（如有）\n\n每类2-3行，重点突出可行动的信息。",
+    "description": "dotey - AI技术详细版"
+  },
+
+  "naval": {
+    "template": "提炼Naval的创业智慧和人生哲学：\n\n推文数据：\n```json\n{tweet_content}\n```\n\n分析重点（每项2-3行）：\n1. 核心思维模型\n2. 实践建议\n3. 决策框架\n\n简洁但保留深度。",
+    "description": "Naval - 创业哲学详细版"
+  },
+
+  "default": {
+    "template": "分析用户推文内容：\n\n用户信息：{user_info}\n\n推文数据：\n```json\n{tweet_content}\n```\n\n按以下格式总结：\n## 主要内容\n[核心要点2-3条]\n\n## 关键观点\n[如有特别观点]",
+    "description": "默认详细模板"
+  }
+}

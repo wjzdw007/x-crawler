@@ -1,18 +1,18 @@
 {
   "elonmusk": {
-    "template": "分析以下推文数据，看看今天马斯克都说了啥，有什么比较特别值得关注的点？\n{user_info}\n\n## 推文数据（JSON格式）\n```json\n{tweet_content}\n```\n\n## 分析要求\n请用中文生成分析报告",
-    "description": "Elon Musk - 商业投资分析"
+    "template": "今天马斯克发了什么值得关注的？只列出3-5个最重要的要点，每条不超过2行。\n\n推文数据：\n```json\n{tweet_content}\n```\n\n直接给出bullet points，不要客套话、总结和多余的分析。",
+    "description": "Elon Musk - 极简版"
   },
   "dotey": {
-    "template": "dotey是一个技术专家，经常会分析一些ai的话题，帮我看看有什么新的工具/想法/方法论/实践经验等值得关注学习。\n\n## 推文数据（JSON格式）\n```json\n{tweet_content}\n```\n\n##",
-    "description": "dotey - AI技术学习"
+    "template": "dotey今天分享了哪些AI相关的内容？简洁提炼要点：\n\n推文数据：\n```json\n{tweet_content}\n```\n\n格式要求：\n• 新工具/技术：[如有，1行]\n• 值得关注的观点/方法论：[如有，1-2行]\n• 实践经验/案例：[如有，1行]\n\n每条直击要点，不要展开和客套话。",
+    "description": "dotey - AI技术简洁版"
   },
   "naval": {
-    "template": "提炼创业智慧和人生哲学：\n\n## 用户背景\n{user_info}\n\n## 推文内容\n```json\n{tweet_content}\n```\n\n## 分析重点\n请总结：\n1. 核心思维模型\n2. 实践建议\n3. 人生智慧\n4. 决策框架",
-    "description": "Naval - 创业哲学"
+    "template": "提炼naval今天的核心观点（3-5条）：\n\n推文数据：\n```json\n{tweet_content}\n```\n\n格式：\n• [核心观点1 - 1行]\n• [核心观点2 - 1行]\n\n只保留最有价值的思考和智慧，去掉解释。",
+    "description": "Naval - 极简智慧"
   },
   "default": {
-    "template": "分析用户推文内容：\n\n用户信息：{user_info}\n\n推文数据：\n```json\n{tweet_content}\n```\n\n请用中文总结主要内容和观点。",
-    "description": "默认通用模板"
+    "template": "分析用户今天的推文，提炼3-5个核心要点：\n\n用户信息：{user_info}\n\n推文数据：\n```json\n{tweet_content}\n```\n\n要求：\n- 每条不超过2行\n- 用bullet points\n- 直接给出要点，不要客套话和总结",
+    "description": "默认极简模板"
   }
 }

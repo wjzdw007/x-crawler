@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 144909,
+    "followers_count": 144928,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251119",
-  "last_updated": "2025-11-19T16:06:18.118088",
-  "tweet_count": 2,
+  "last_updated": "2025-11-19T18:06:54.140508",
+  "tweet_count": 6,
   "tweets": [
     {
       "id": "1991035341889769753",
@@ -86,6 +86,198 @@
         "retweet_count": 0,
         "favorite_count": 8,
         "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1991180473016435193",
+      "text": "RT @farmostwood: 一些关于即生成即用（create-as-you-go）的时代的想法。\n\nEnglish version: https://t.co/rrsHmLkHA6\n\nGemini 3 发布的第一天，社交媒体上所有的反馈都集中在同一个方向：这东西会颠覆用户…",
+      "created_at": "Wed Nov 19 16:23:13 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1991083337491124474",
+        "text": "一些关于即生成即用（create-as-you-go）的时代的想法。\n\nEnglish version: https://t.co/lSdxO15K77\n\nGemini 3 发布的第一天，社交媒体上所有的反馈都集中在同一个方向：这东西会颠覆用户交互界面。这并不是说 Gemini 3 本身发明了一种更好的交互界面，而是说，它让生成完全依赖于具体问题和具体用户需求的即生成即用的交互成为可能。\n\n在传统的用户体验里，工具负责生成一系列标准化组件，人脑负责把这些组件融合在脑海里生成更深入的理解。比如你要理解 DNA 的构造或者 Tesla 的设计或者房产税的施行细节，工具能给你的是各种文本表格图片文档，任何比它们更高阶的交互都因为依赖用户个性化的需求而无法标准化，因此从这些非常原始的数据中组装信息就成了一种不平凡的智力活动。整整一个中介行业（前端设计/编辑/视频制作/etc.）的工作本质上就是把这些细粒度的标准化低阶信息包装成终端用户能接受的状态。\n\n这个中介行业有两个从本质上就没法绕过去的缺点：1. 贵。2. 它永远无法真正切合每个实际用户的需求。这种工作的交付是静态的，用户只能被动接受。出色的中介能尽可能精确地猜测到用户想要什么，但也仅限于此。\n\nGemini 3 发布之后，任何终端用户都可以直接对它说：给我一个关于 DNA 构造的动画教程，然后 Gemini 就能生成一个酷炫的交互式 3D 界面，允许你自己探索 DNA 的一切。这不是一个静态的交付，你随时可以根据个人体验而不断要求它更改：讲得更细致一些，展开解释某个背景知识，给渲染出的图像换个角度，对某个难点提出疑问……最终得到的是一个完全私人定制的东西，而且基本上只有一次性的使用寿命。——当然，Gemini 允许你把生成出来的结果分享给他人，但从实际效率角度来说，别人直接从零开始制作一份自己的版本往往更省事也更有针对性。\n\n这带来了一些关于信息流通的根本上的新工程哲学。\n\n人类所有工程领域一直都共享着一些不言自明的原则：标准、坚固、可复用。在这一点上，软件工程师和桥梁工程师没有什么不同。如果你是个桥梁工程师，标准意味着你可以大规模生产工程预制件，坚固意味着你希望你造的桥能用很久，可复用意味着你希望你造这座桥工具和经验能够尽可能直接被拿去用来造另一座桥。这些原则如此显而易见，以至于人们不会意识到它们的存在，也不会深思它们的代价。\n\n如果你实际上既不需要标准化，也不需要坚固，也不需要可复用，你能省下多少资源和能量用来解锁别的 feature？你能做到多少本来因为需要满足标准、坚固、可复用而无法想象的事？\n\n这有点像是从物资匮乏时代到物资丰裕时代的观念代沟。我们都遇到过长辈对旧物的执念——他们会坚持说：好好的东西扔了干嘛？万一哪天你还用得着呢。事实上你知道，首先很难遇到这个万一，其次就算真的要用，弄明白一个旧东西怎么用的功夫你已经从淘宝上下单了一个新的并且送到了门口。你不得不痛苦地给长辈解释说，为了存放那些破烂「以备万一」所占用掉的家居面积乘以单位面积房价，足够你每天买一个新的了。\n\n从这个视角往回看，你会发现我们曾经为了这些古代的神圣原则付出过多少代价。传统的办公软件（比如 powerpoint）异常臃肿笨重，因为各种你可能永远也用不着但也许对某个人某天有用的功能都必须一出厂就准备好，而今天的你完全可以为了你现在要做的 presentation 直接生成一个成品，包含任何当下的你需要的 feature，不用关心它能否被另一个 presentation 用上。传统的代码库里包含着精雕细琢的注释文档和复杂的引用依赖，因为模块会被层层复用，你需要大费周章地解释意图和注意事项，既不能过于简略别人无法理解，也不能过于冗长让人没耐心阅读。你需要隐藏复杂性，提供简洁接口，一旦软件出错，你需要非常精确的错误信息才能帮助人定位问题。——所有这些对 AI 都属于过度设计，杞人忧天。有连篇累牍解释怎么复用高阶接口的功夫，AI 已经读完了几千行底层代码和几百行报错信息，然后另起炉灶写了一个全新的模块出来。你甚至不太关心生成的东西有没有 bug，只要你用的过程中不要遇到 bug 就行，或者就算有，你再生成一个新的就是了。\n\n这当然不是说软件工程不存在了，只是成本和注意力都需要颠覆式地重新分配。底层的元件和设施也许需要更坚固更有效率——大模型基础设施供应商仍然需要千方百计从石头里榨出油来最大化每片GPU的使用，AI 本身也仍然需要调用有效的渲染引擎来支持各种定制化的高级界面——但你在链条上越靠近终端用户，就越需要提醒自己用户仅仅生活在当下，你和他们每一次长尾的、浮光掠影的、昙花一现的交互本身才是你真正要交付的产品。如果你是斯科塞斯，你关心的是你的电影是否永垂不朽。如果你想制作的是霸道总裁爱上清洁工的短剧，按照斯科塞斯的方式来执行就成了自寻死路。\n\n设想一下，如果你能够每天根据你当下的心情和需求以几乎零成本生成一套新的家具并随时无痛扔掉所有旧家具，你会怎么理解家具这个概念本身？用黄花梨木来生产日抛型家具是没有意义的。",
+        "created_at": "Wed Nov 19 09:57:14 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "6374912",
+          "name": "木遥",
+          "screen_name": "farmostwood",
+          "description": "https://t.co/pP51YHjSxc",
+          "followers_count": 14901,
+          "friends_count": 373,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 23,
+          "reply_count": 3,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1991182838964609103",
+      "text": "😂 Gemini 3.0 生成前端演示挺强，做成生产级产品是不足的，仍然需要专业前端去调整它做不好的部分，以及修复生成的代码的问题。\n\nGemini 的实时生成 UI 是相当有前景和想象的，但仍然不是替代前端，而是创造了新的交互方式，诞生了更多可能，就像当年从命令行交互到了图形界面交互。",
+      "created_at": "Wed Nov 19 16:32:37 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1991164343510339970",
+        "text": "一个 AI 应用创业公司\n如果没有前端\n千万别去\n\n很多创始人口头不认\n但内心愁死了\n招不到好前端 https://t.co/yZvIR5Hj5F",
+        "created_at": "Wed Nov 19 15:19:08 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1991164308609511424",
+            "url": "https://pbs.twimg.com/media/G6IJY5gbMAAkDTr.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "16681326",
+          "name": "Frank Wang 玉伯",
+          "screen_name": "lifesinger",
+          "description": "I am curious and honest",
+          "followers_count": 15481,
+          "friends_count": 895,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 29,
+          "reply_count": 10,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 13,
+        "reply_count": 5,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "1991198723758539032",
+      "text": "RT @AztecaAlpaca: 技术的进步会解放人们对某项工作的理解力和想象力。相反，技术的长期停滞反而会让我们误以为某项工作本该如此...\n\n试想一下，八十年代玩初代马里奥画质的人是否能想象到现在3A大作的体验？…",
+      "created_at": "Wed Nov 19 17:35:45 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1991193846957613168",
+        "text": "技术的进步会解放人们对某项工作的理解力和想象力。相反，技术的长期停滞反而会让我们误以为某项工作本该如此...\n\n试想一下，八十年代玩初代马里奥画质的人是否能想象到现在3A大作的体验？\n\n后来游戏引擎的发展可以让80年代的画质几乎不需要费劲就能轻松做出来，但这是否说明游戏画面的设计师就此完蛋了呢？\n\n以为游戏画质本该如此而拒绝创新的人确实完蛋了，但是宫本茂没有止步于此; 在那个电子游戏萌芽的年代，很多年轻人也涌进来，贡献自己的创意，逐渐形成了当前的游戏生态。我们再回望当年，单从画质上看，现在的3A大作似乎已经成了另一类事物。\n\n游戏行业的发展表明，通常随着技术的进步，对游戏的画质、美术、交互的要求总是更高、更细，对应的从业者也越来越多。\n\n前端与游戏画质是比较接近的东西。人对视觉、交互体验方面的追求是无止境的，体验的提高会把人们的品味养刁，进一步提高对该行业的要求，相应地也就有了更多的工作需求。通常有了新技术之后只是开启了一个新世界。\n\n我们无法根据现有的行业状态以及从业经验来认定未来会是什么样子。现在我们总是以技术停滞时代的思维惯性来看待正在迅速变革的行业。\n\n“前端已死”就是这样一个例子。当然，我们刻板印象中的前端肯定要死了，但是服务于交互体验的前端会永远存在，而且正在进入全新的时代。\n\n或许过几年再回头看，我们目前认为先进炫酷的前端设计就像习惯了3A大作之后的人们回看80年代的史前2D马赛克画质的游戏一样。",
+        "created_at": "Wed Nov 19 17:16:22 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "1991182838964609103",
+          "text": "😂 Gemini 3.0 生成前端演示挺强，做成生产级产品是不足的，仍然需要专业前端去调整它做不好的部分，以及修复生成的代码的问题。\n\nGemini 的实时生成 UI 是相当有前景和想象的，但仍然不是替代前端，而是创造了新的交互方式，诞生了更多可能，就像当年从命令行交互到了图形界面交互。",
+          "created_at": "Wed Nov 19 16:32:37 +0000 2025",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 144928,
+            "friends_count": 1457,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 2,
+            "favorite_count": 13,
+            "reply_count": 5,
+            "quote_count": 2
+          }
+        },
+        "user": {
+          "id": "1725169104963657728",
+          "name": "阿兹特克小羊驼🦙",
+          "screen_name": "AztecaAlpaca",
+          "description": "躺平在科技与人文的十字路口，不思进取，不求进步，随手解构虚无价值。",
+          "followers_count": 1021,
+          "friends_count": 573,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 2,
+          "reply_count": 1,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1991200613011468419",
+      "text": "惭愧，claude-agent-kit 我这几天没更新了😂\n但对于开发Claude agent sdk还是有用的\n\nhttps://t.co/BuAFJtOtwn",
+      "created_at": "Wed Nov 19 17:43:15 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1991190858075414821",
+        "text": "碉堡了。\n我今天又开始玩 Claude Agent SDK 了，就想找个支持它的前端试试看。结果搜到了宝玉的开源 Claude-agent-Kit，有一种简简单单的优雅，我稍微优化了下让他支持 glm4.6（我冲会员了）\n——\nhttps://t.co/zWedxS1ekN\n——\n有了它，再配合上我的 Skills，这能做的事情就老多了。\n——\n等我部署到 vps 上，大家来体验下。\n——\n大佬太低调了 @dotey",
+        "created_at": "Wed Nov 19 17:04:29 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1991189109985951745",
+            "url": "https://pbs.twimg.com/media/G6If8h1WwAEJS0L.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1729475448378208256",
+          "name": "熊布朗",
+          "screen_name": "Stephen4171127",
+          "description": "INTP / AIGC 产品经理 超过2000 小时AI 学习实践\n沉迷于 Vibe Coding，每个月产出 1 个有用的项目\n🤖业务重点在 AI Agent 和 Character AI\n📋积极分享 AI 特种兵小团队作战经验\n24年法国人才签证定居巴黎，可提供免费咨询",
+          "followers_count": 8403,
+          "friends_count": 782,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 2,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

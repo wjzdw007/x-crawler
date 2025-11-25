@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 146100,
+    "followers_count": 146116,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251125",
-  "last_updated": "2025-11-25T06:06:53.720776",
-  "tweet_count": 5,
+  "last_updated": "2025-11-25T08:06:53.382133",
+  "tweet_count": 12,
   "tweets": [
     {
       "id": "1993179578567942650",
@@ -224,6 +224,346 @@
       "stats": {
         "retweet_count": 2,
         "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1993201818068042043",
+      "text": "RT @yan5xu: 和我的开发感受非常接近\n1. LLM 本质还是一个API，除了做一层抽象把各家接口进行统一（openrouter），没有其他任何抽象的需要；\n2. 缓存不太认同，隐式缓存无脑，也很好用；\n3. think tool 是所有做 agent 都会用的高阶技巧…",
+      "created_at": "Tue Nov 25 06:15:19 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1993133689673596948",
+        "text": "和我的开发感受非常接近\n1. LLM 本质还是一个API，除了做一层抽象把各家接口进行统一（openrouter），没有其他任何抽象的需要；\n2. 缓存不太认同，隐式缓存无脑，也很好用；\n3. think tool 是所有做 agent 都会用的高阶技巧，可以看看 anthropic 的 think tool 博客。我打算专门写一篇文章来讨论；\n4. agent 搭配沙盒，用文件系统做上下文是一个非常好的偷懒办法；\n还有 hacker news 的一些讨论\n1. 不应该是 sub-agent 而是 agent as a tool; sub-agent太容易误导人了；\n2. 很多团队都没有 eval 上的基建，或者大家都没有意识到 ，Prompt 工程最重要的一部分就可以可观测，可验证，并且要快。",
+        "created_at": "Tue Nov 25 01:44:36 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "1992566241031299539",
+          "text": "Hacker News 上大家都在聊这篇关于构建 AI Agent 的深度实践文章，这么看，Agent 设计确实还很难。​​​​​​​​​​​​​​​​\n\n作者的核心发现：直接用原生 SDK 比高层抽象更灵活；显式缓存管理虽麻烦但更可控；强化学习在循环中作用巨大；需要文件系统般的共享层避免工具死胡同；输出工具的语气控制出乎意料地难。最头疼的是测试评估，目前无完美方案。\n\nhttps://t.co/BvTecFqfTm",
+          "created_at": "Sun Nov 23 12:09:46 +0000 2025",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "145593492",
+            "name": "Glowin",
+            "screen_name": "glow1n",
+            "description": "focusing on Generative AI ｜Former Co-founder of https://t.co/PJL8ze16fj with @kalasoo , acquired by ByteDance in 2019",
+            "followers_count": 7763,
+            "friends_count": 3635,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 96,
+            "favorite_count": 539,
+            "reply_count": 7,
+            "quote_count": 2
+          }
+        },
+        "user": {
+          "id": "115897222",
+          "name": "yan5xu",
+          "screen_name": "yan5xu",
+          "description": "🤖 AI 野生研究员 | ex @ManusAI_HQ & @hey_im_monica\n推特内容仅代表个人观点，和公司无关",
+          "followers_count": 7275,
+          "friends_count": 356,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 14,
+          "favorite_count": 88,
+          "reply_count": 6,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 14,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1993202671696953373",
+      "text": "RT @songguoxiansen: 早朝了，开个视频会议先。\n\nNano Banana Pro提示词：… https://t.co/ai18fxGuyK",
+      "created_at": "Tue Nov 25 06:18:43 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1993021196158615558",
+          "url": "https://pbs.twimg.com/media/G6iiN-rbwAY9yQf.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "1993126993135902996",
+        "text": "早朝了，开个视频会议先。\n\nNano Banana Pro提示词：\n传统的清代宫廷画风格。画面描绘了皇帝庄严肃穆地端坐在太和殿的龙椅上。然而，他面对的不是跪拜的大臣，而是盯着放在御案上的一块巨大的笔记本电脑屏幕。屏幕上显示着与大臣们进行“腾讯会议”的网格视图，大臣们都在各自的府邸中，有的看起来很无聊，有一个在偷偷吃面条。皇帝在朝冠外面戴着一副头戴式耳机。一名太监站在后边举着环形补光灯，以确保皇帝在镜头前看起来气色很好。屏幕上的文字写着“早朝”。",
+        "created_at": "Tue Nov 25 01:18:00 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1993021196158615558",
+            "url": "https://pbs.twimg.com/media/G6iiN-rbwAY9yQf.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1788123537099878400",
+          "name": "松果先森",
+          "screen_name": "songguoxiansen",
+          "description": "关注AI技术：LLM、AI编程、AI图像、AI视频等。 \n免费提示词：https://t.co/jvdn30IlxD\n微信公众号：松果先森，扣666进AI群\nAI交流TG群：https://t.co/sw1SKkjcUq",
+          "followers_count": 14395,
+          "friends_count": 477,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 39,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1993220667324399845",
+      "text": "🍌 Extract an image into a JSON-formatted prompt.\n\n--- Prompt Start ---\n\nProvide a detailed and comprehensive JSON prompt describing all aspects necessary for accurately replicating the original image. \nInclude specifics about objects, clothing, hairstyles, intricate details, accessories, photographic equipment, environment, lighting, style, body poses, and any other relevant elements, ensuring that every detail of the original image can be precisely recreated.",
+      "created_at": "Tue Nov 25 07:30:13 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1993220398280753152",
+          "url": "https://pbs.twimg.com/media/G6lXZEaWQAAujGy.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1993220496758878208",
+          "url": "https://pbs.twimg.com/media/G6lXezRXMAAS_C3.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1993220642296971264",
+          "url": "https://pbs.twimg.com/media/G6lXnRcWQAAMxdN.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 25,
+        "reply_count": 4,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1993223344318300362",
+      "text": "credit to @threeaus https://t.co/otM2TabMgd",
+      "created_at": "Tue Nov 25 07:40:52 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1993223196099645440",
+          "url": "https://pbs.twimg.com/media/G6lZ77GWkAAYhfh.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1993226647638548962",
+      "text": "RT @bggg_ai: 再分享一个压箱底的好 prompt 每次写新东西都会加到提示词里：\n---\n我准备写一篇关于【xx 主题】的文章，现在需要你到推特 x、Reddit 、YouTube 等论坛查找大家在【xx 主题】的遇到的最大的痛点、难点是什么？ 【或者找不同的观点】…",
+      "created_at": "Tue Nov 25 07:53:59 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1992901226879742370",
+        "text": "再分享一个压箱底的好 prompt 每次写新东西都会加到提示词里：\n---\n我准备写一篇关于【xx 主题】的文章，现在需要你到推特 x、Reddit 、YouTube 等论坛查找大家在【xx 主题】的遇到的最大的痛点、难点是什么？ 【或者找不同的观点】列 30 个 每个都要有原链接地址确保真实\n---\n\n指定渠道可以确保找到的内容非常具有观点性，而不是千篇一律的文章。再加上要求原地址链接，确保内容真实可靠。\n\n跟 ChatGPT 5.1 thinking 搭配效果最佳",
+        "created_at": "Mon Nov 24 10:20:53 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "1992758509285585191",
+          "text": "一句话Prompt收集\n\n有没有哪句话是每次调整prompt的时候你一定要加进去的？\n\n我先来，AI 写作加这句话，有奇效：\n```\n不要比喻、不要双引号，逻辑层层递进，不断有阅读钩子吸引读者读下去。注意语言保持干练，能用一句话说清楚的，不用两句话；但要确保讲清楚、逻辑通畅。控制在1000字以内。\n```",
+          "created_at": "Mon Nov 24 00:53:46 +0000 2025",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1966322844490665984",
+            "name": "饼干哥哥AGI（2.0）",
+            "screen_name": "bggg_ai",
+            "description": "重生之我继续在X 分享AI干货知识：AI编程、n8n 工作流、AI 绘画",
+            "followers_count": 5443,
+            "friends_count": 230,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 64,
+            "favorite_count": 467,
+            "reply_count": 25,
+            "quote_count": 2
+          }
+        },
+        "user": {
+          "id": "1966322844490665984",
+          "name": "饼干哥哥AGI（2.0）",
+          "screen_name": "bggg_ai",
+          "description": "重生之我继续在X 分享AI干货知识：AI编程、n8n 工作流、AI 绘画",
+          "followers_count": 5443,
+          "friends_count": 230,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 43,
+          "favorite_count": 238,
+          "reply_count": 7,
+          "quote_count": 4
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 43,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1993226828404998629",
+      "text": "RT @Jackywine: 教你一招，AI 绘图顶级方法\n\n任何图片，对我说的是任何，输出结构化 JSON 提示词： https://t.co/SJQLqmiiiW",
+      "created_at": "Tue Nov 25 07:54:42 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1993110805525807106",
+          "url": "https://pbs.twimg.com/media/G6jzt7lbwAIVU_9.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1993110830389641220",
+          "url": "https://pbs.twimg.com/media/G6jzvYNbwAQ5gpI.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "1993110891404116143",
+        "text": "教你一招，AI 绘图顶级方法\n\n任何图片，对我说的是任何，输出结构化 JSON 提示词： https://t.co/SJQLqmiiiW",
+        "created_at": "Tue Nov 25 00:14:01 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1993110805525807106",
+            "url": "https://pbs.twimg.com/media/G6jzt7lbwAIVU_9.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1993110830389641220",
+            "url": "https://pbs.twimg.com/media/G6jzvYNbwAQ5gpI.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1404738934043602947",
+          "name": "Jackywine",
+          "screen_name": "Jackywine",
+          "description": "年终复盘 ing",
+          "followers_count": 26108,
+          "friends_count": 2827,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 18,
+          "favorite_count": 146,
+          "reply_count": 6,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 18,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1993229521504399449",
+      "text": "@threeaus and @Jackywine",
+      "created_at": "Tue Nov 25 08:05:24 +0000 2025",
+      "lang": "und",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1993110891404116143",
+        "text": "教你一招，AI 绘图顶级方法\n\n任何图片，对我说的是任何，输出结构化 JSON 提示词： https://t.co/SJQLqmiiiW",
+        "created_at": "Tue Nov 25 00:14:01 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1993110805525807106",
+            "url": "https://pbs.twimg.com/media/G6jzt7lbwAIVU_9.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1993110830389641220",
+            "url": "https://pbs.twimg.com/media/G6jzvYNbwAQ5gpI.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1404738934043602947",
+          "name": "Jackywine",
+          "screen_name": "Jackywine",
+          "description": "年终复盘 ing",
+          "followers_count": 26108,
+          "friends_count": 2827,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 18,
+          "favorite_count": 146,
+          "reply_count": 6,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
       }

@@ -1,0 +1,14 @@
+**新工具/技术**
+- nano banana pro：卡通手绘风格图像生成prompt模板，支持文章转信息图、动态天气卡、个性化日历插画；强调留白、元素融合，避免写实，提升视觉记忆与实用性。
+- 表情包切割开源工具：用于切割AI生成的大图（如nano banana pro表情包），高效拆分成1:1网格，提升分享效率。
+- Claude Code Prompt Tracker：开源项目跟踪Claude Code每个版本的prompt变化，便于开发者理解迭代逻辑与优化。
+- Claude Agent SDK：构建企业级设计系统agent（如v0/lovable风格），支持远程开发落地，dotey将在FEDAY分享经验。
+
+**核心观点/方法论**
+- Ilya访谈核心：扩展时代结束，进入研究时代，重点解决泛化能力（人类学快数据少、稳健）；AI应从“成品”转向“快速学习者”，强调价值函数如人类情绪驱动高效决策。
+- 前端/AI时代转型：死的不是技术而是旧模式，AI接管原型搭建/体力活（如脚手架、npm），开发者聚焦部署、安全、性能，并拓展全栈能力，避免“已死”恐慌。
+- Prompt工程最佳实践：动态变量（如日期）放最后user message，避免system中破坏context caching，降低token成本；vibe coding用伪代码沟通AI，高效粒度适中。
+
+**实践经验/案例**
+- Anthropic工具优化：Prompt分层加载/复用+代码执行串联API，Tool Search懒加载工具，Programmatic Tool Calling实现代码工具，减少token浪费，可能取代OpenAI协议。
+- 苏绣表情包生成：精细prompt控制4x6网格、乱针绣技法、表情meme+手写中文，单人肖像效果优于群像，展示风格一致性与文化融合prompt技巧。

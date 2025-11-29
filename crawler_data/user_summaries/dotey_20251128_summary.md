@@ -1,0 +1,13 @@
+**新工具/技术**
+- 双文档法：用任务文档（需求规划）和进度文档（追踪完成）管理Code Agent多轮对话，避免上下文污染和token爆炸；Anthropic Agent coding博客的规范版，提升大项目成功率。
+- Out the Window Prompt：四格漫画prompt模板，幽默讽刺场景（如AI自媒体流量、开发效率），卡通风格易传播；支持图片参考衍生，生成竖版meme。
+- nano banana prompt：Pixar式3D群自拍prompt，自定义人物个性、文化背景和姿势，营造活力心温暖场景；用于个性化图像生成。
+
+**核心观点/方法论**
+- Scaling法继续有效但缺关键：Ilya澄清堆算力/数据会持续改进模型，但无法获真正泛化（如人类高效学习），需新范式；避免误读为“撞墙”，强调渐进进步 vs. 质变飞跃。
+- AI企业采用趋平：Apollo报告显示美企AI使用率停滞（大企下滑），非指数增长；揭示炒作后落地痛点，推动实用工具开发而非盲目追热点。
+- Code Agent工作流优化：RT强调“双文档”契合行业标准，刷新对话减错误/费用；适用于Cline/Cursor等工具，简单实践驱动大规模项目。
+
+**实践经验/案例**
+- Meme生成实践：用Out the Window prompt讽刺“标题党”（“炸裂了兄弟们”） vs. 干货，及“Vibe Coding” vs. 真实AI开发；视觉幽默提升传播，信息图非最佳（易滑过、失真）。
+- Robotics前沿洞察（RT DeepMind谭捷）：bet on scalable data+仿真补真实数据缺口；Gemini Robotics加thinking/跨具身迁移，世界模型=VL-Vision；触觉硬件限制造成忽略。

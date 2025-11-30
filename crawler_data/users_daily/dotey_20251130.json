@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 147641,
+    "followers_count": 147651,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251130",
-  "last_updated": "2025-11-30T06:06:43.909618",
-  "tweet_count": 1,
+  "last_updated": "2025-11-30T08:06:13.989113",
+  "tweet_count": 3,
   "tweets": [
     {
       "id": "1994981774758195442",
@@ -58,6 +58,117 @@
       "stats": {
         "retweet_count": 1,
         "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1995020224257556821",
+      "text": "如何把提示词变成提示词模板\n\n有时候我有一段针对特定场景、人物、地点的提示词，但是我希望它变成通用的适用于不同场景、人物、地点的提示词。\n\n比如我有一个提示词是手绘风格的北京旅游手账插画，那么我可以让 AI 帮我把它变成提示词模板，只要动态的输入地名和天数，就可以动态生成这样的旅游手账插画，毕竟现在大语言模型很擅长做这种事情，画图前先根据要画的内容推理，生成画图提示词再画图。\n\n具体生成提示词模板的提示词是这样的：\n\n----\n<draft>\n{手绘风格的北京旅游手账插画Prompt，来自我以前为GPT-4o 写的}\n</draft>\n帮我把上面的提示词变成通用的提示词模板，我输入地名和天数（可选），就可以根据根据地名生成推荐攻略\n----",
+      "created_at": "Sun Nov 30 06:41:01 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1995020082024419328",
+          "url": "https://pbs.twimg.com/media/G6-8MczWEAAvf89.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1907819985533071462",
+        "text": "绘制一张色彩鲜艳、手绘风格的北京旅游手账插画，仿佛由一位充满好奇心的孩子用蜡笔精心创作。画面整体用柔和温暖的黄色背景，搭配鲜明的红色、蓝色、绿色等亮丽颜色，营造温馨而充满童趣的氛围。\n\n插画中间绘制一条蜿蜒曲折的旅行路线，用箭头和虚线标记出各个经典地点，沿途包括：\n- “第一站：吃碗老北京炸酱面！”\n- “第二站：登顶景山，看紫禁城全景！”\n- “第三站：逛逛神秘的故宫，注意：人超多！”\n- “第四站：吃个冰糖葫芦，逛进胡同！”\n- “第五站：去天坛，和爷爷奶奶一起晨练！”\n- “第六站：到北海公园划船赏白塔！”\n- “第七站：天安门前自拍打卡！”\n- “第八站：去长城爬一爬，做个小勇士！”\n- “最终站：尝一口地道的北京烤鸭，再买点纪念品回家！”\n\n插画周围布满趣味元素：\n- 拿着冰糖葫芦、吃着冰淇淋的开心小朋友；\n- 指示牌：“小心迷路！”，“注意人流！”；\n- 天安门、故宫、长城等经典地标用简单童趣风格画出；\n- 贴纸式标语：“北京旅行记忆已解锁！”、“北京美食大冒险！”；\n- 可爱的北京特色美食小图标（炸酱面、冰糖葫芦、烤鸭）；\n- 欢乐的感叹：“原来北京这么好玩！”、“我还要再来一次！”\n\n整体风格可爱而有趣，构图饱满生动，文字采用简洁可爱的手写体，仿佛带人进入一段童真又难忘的北京旅行回忆！",
+        "created_at": "Thu Apr 03 15:38:24 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1907819934115102720",
+            "url": "https://pbs.twimg.com/media/GnnwHzxXAAAbHYN.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 147651,
+          "friends_count": 1466,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 116,
+          "favorite_count": 615,
+          "reply_count": 24,
+          "quote_count": 13
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 31,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1995020367556218949",
+      "text": "生成后效果：\nhttps://t.co/UAJ0vNFKXp",
+      "created_at": "Sun Nov 30 06:41:35 +0000 2025",
+      "lang": "ja",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1994908289813880915",
+        "text": "🍌 nano banana prompt\nKids’ Crayon Travel Journal Illustration Prompt\n\nThis prompt generates a vibrant, child-like crayon-style vertical (9:16) travel-journal illustration for a {City Name} trip, automatically creating a winding route with daily recommended attractions, cute doodles, local landmarks, foods, and playful handwritten notes. The tone is warm, fun, and full of childlike curiosity.\n\n--- Prompt ---\n\nPlease create a vibrant, child-like crayon-style vertical (9:16) illustration titled “{City Name} Travel Journal.”  \nThe artwork should look as if it were drawn by a curious child using colorful crayons, featuring a soft, warm light-toned background (such as pale yellow), combined with bright reds, blues, greens, and other cheerful colors to create a cozy, playful travel atmosphere.\n\nI. Main Scene: Travel-Journal Style Route Map\n\nIn the center of the illustration, draw a “winding, zigzagging travel route” with arrows and dotted lines connecting multiple locations.  \nThe route should automatically generate recommended attractions based on {Number of Days}:\n\nExample structure (auto-filled with {City Name}-related content):\n\n- “Stop 1: {Attraction 1 + short fun description}”\n- “Stop 2: {Attraction 2 + short fun description}”\n- “Stop 3: {Attraction 3 + short fun description}”\n- …\n- “Final Stop: {Local signature food or souvenir + warm closing remark}”\n\nRules:\n- If no number of days is provided, default to a 1-day highlight itinerary.\n\nII. Surrounding Playful Elements (Auto-adapt to the City)\n\nAdd many cute doodles and child-like decorative elements around the route, such as:\n\n1. Adorable travel characters\n   - A child holding a local snack  \n   - A little adventurer with a backpack\n\n2. Q-style hand-drawn iconic landmarks\n   - “{City Landmark 1}”\n   - “{City Landmark 2}”\n   - “{City Landmark 3}”\n\n3. Funny signboards\n   - “Don’t get lost!”\n   - “Crowds ahead!”\n   - “Yummy food this way!”  \n   (Auto-adjust contextually for the city)\n\n4. Sticker-style short phrases\n   - “{City Name} travel memories unlocked!”\n   - “{City Name} food adventure!”\n   - “Where to next?”\n\n5. Cute icons of local foods\n   - “{Local Food 1}”\n   - “{Local Food 2}”\n   - “{Local Food 3}”\n\n6. Childlike exclamations\n   - “I didn’t know {City Name} was so fun!”\n   - “I want to come again!”\n\nIII. Overall Art Style Requirements\n\n- Crayon / children’s hand-drawn travel diary style  \n- Bright, warm, colorful palette  \n- Cozy but full and lively composition  \n- Emphasize the joy of exploring  \n- All text should be in a cute handwritten font  \n- Make the entire page feel like a young child’s fun travel-journal entry  \n\n---\n\nInput :\nChicago 7-Day Trip, English",
+        "created_at": "Sat Nov 29 23:16:14 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1994907839563751424",
+            "url": "https://pbs.twimg.com/media/G69WHFDW4AAv0TK.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1994907882379194368",
+            "url": "https://pbs.twimg.com/media/G69WJkjWsAApkIu.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1994907881926201344",
+            "url": "https://pbs.twimg.com/media/G69WJi3WkAAhV31.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1994907882085564416",
+            "url": "https://pbs.twimg.com/media/G69WJjdWQAAxQFg.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 147651,
+          "friends_count": 1466,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 26,
+          "favorite_count": 166,
+          "reply_count": 8,
+          "quote_count": 9
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
       }

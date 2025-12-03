@@ -1,12 +1,405 @@
 {
   "date": "20251203",
   "timeline_type": "recommended",
-  "last_crawl_time": "2025-12-03T02:36:07.798153",
-  "tweet_count": 201,
-  "unique_tweet_count": 201,
-  "total_crawled": 400,
-  "duplicates_removed": 199,
+  "last_crawl_time": "2025-12-03T04:10:10.662507",
+  "tweet_count": 208,
+  "unique_tweet_count": 208,
+  "total_crawled": 401,
+  "duplicates_removed": 193,
   "tweets": [
+    {
+      "id": "1996058762730148028",
+      "text": "Prompt for High-Quality Translation\n\n---- Prompt ----\n\nPlease rewrite the following  article into accessible, fluent, and engaging {{Simplified Chinese}}.\n\nCore Requirements:\n- Audience & Style: Target general readers interested in AI. Adopt a storytelling style that is clear and easy to understand, rather than the tone of an academic paper.\n\n- Accuracy First: Core facts, data, and logic must remain strictly consistent with the original text.\n\n- Flow & Fluency: Prioritize authentic target language sentence structure. Break down long, complex sentences into more natural, shorter phrases.\n\n- Standard Terminology: Use industry-recognized standard translations for technical terms (e.g., {{overfitting -> 过拟合}}). Upon the first occurrence of a term, include the original text in parentheses.\n\n- Preserve Formatting: Maintain the original Markdown formatting, including headings, bolding, italics, and images.\n\n- Contextual Annotation: If technical terms are difficult for a layperson to understand, or if missing background knowledge hinders comprehension, add appropriate annotations to facilitate understanding. Wrap these annotations in bold parentheses like this: (annotation).\n\nGlossary / Common Vocabulary:\n{{- AI Agent -> AI 智能体\n- LLM -> 大语言模型}}\n\nNow, please rewrite the content below:",
+      "created_at": "Wed Dec 03 03:27:48 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 149563,
+        "friends_count": 1466,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 3,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1996056999130529851",
+      "text": "翻译提示词：\nhttps://t.co/5a3LB2bfU0",
+      "created_at": "Wed Dec 03 03:20:48 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1979688855134429367",
+        "text": "请将以下英文文章，重写成通俗流畅、引人入胜的简体中文。\n\n核心要求：\n\n- 读者与风格： 面向对AI感兴趣的普通读者。风格要像讲故事，清晰易懂，而不是写学术论文。\n- 准确第一： 核心事实、数据和逻辑必须与原文完全一致。\n- 行文流畅： 优先使用地道的中文语序。将英文长句拆解为更自然的中文短句。\n- 术语标准： 专业术语使用行业公认的标准翻译（如 `overfitting` -> `过拟合`）。第一次出现时，在译文后用括号加注英文原文。\n- 保留格式： 保持原文的标题、粗体、斜体、图片等Markdown格式。\n- 适当解读：如果是普通人难懂的专业术语或因为文化差异导致的难以理解，做出更多的注释以更好的理解，注释部分用括号包裹并加粗\n\n常用词汇：\n- AI Agent -> AI 智能体\n- LLM -> 大语言模型\n- Vibe Coding -> 凭感觉编程\n- the Bitter Lesson -> 苦涩的教训\n-  Context Engineering -> 上下文工程\n\n现在请重写下面的内容：",
+        "created_at": "Sat Oct 18 23:19:38 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1979688841213517824",
+            "url": "https://pbs.twimg.com/media/G3lEgyJWIAATprj.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 149563,
+          "friends_count": 1466,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 9,
+          "favorite_count": 42,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 149563,
+        "friends_count": 1466,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1996056814161408486",
+      "text": "好的翻译就是重写\nhttps://t.co/G8sjttrPEy",
+      "created_at": "Wed Dec 03 03:20:04 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1882130348550545687",
+        "text": "一句简单的提示词就可以让 LLM 在翻译的时候更好的“意译”\n\n以前为了让 LLM 达到更好的翻译效果，我尝试了很多方式，比如最初的先直译再意译，后来的直译、反思和意译。虽然效果好了，但是却复杂了。\n\n现在随着模型能力增强，不再追求复杂的提示词技巧，而是尝试返璞归真，找到更好更简单的提示词方法。\n\n我发现对于翻译的任务，有时候翻译的效果过于生硬，恰恰在于给模型的任务是“翻译”，因为是翻译，所以模型会尝试按照字面意思去翻译，尽量还原原始的格式，但也造成一些翻译过于直白和生硬。\n\n这就像我们在学英语的时候，老师让我们去把英文翻译成中文，通常就会按照英文的单词和句式去翻译，但是如果老师让我们用中文“重写”而不是翻译，那么就可以自由的多，只需要去理解原来英文的意思，用中文的方式去重新表达，反而效果好很多。\n\n所以我最近尝试了在做翻译任务的时候，让大语言模型去用“目标语言重写”而不是“翻译”，效果果然大不一样，结果不再拘泥于原有语言的格式语法，而是用更自然的方式表达出来。\n\n比如说昨天 OpenAI 星际之门的公告，最后一句话：\n\n“We want to connect with firms across the built data center infrastructure landscape, from power and land to construction to equipment, and everything in between.”\n\n如果“翻译”，就是按照字面意思：\n“我们希望与整个数据中心基础设施领域的企业建立联系，从电力和土地到建设再到设备，以及这其中的所有环节。”\n\n如果“用中文重写”，就自然的多：\n“我们希望与整个数据中心基础设施领域的企业建立联系，包括电力和土地、建筑施工、设备等各个方面的合作伙伴。”\n\n至于提示词，则很简单：\n“请尊重原意，保持原有格式不变，用简体中文重写下面的内容：”\nor\n\"Please respect the original meaning, maintain the original format, and rewrite the following content in Simplified Chinese:\"\n\n翻译其他语言也类似，只要把提示词中目标语言部分换掉即可。\n\n欢迎分享你用这个提示词成功或者失败的案例。",
+        "created_at": "Wed Jan 22 18:16:58 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1882130034170662912",
+            "url": "https://pbs.twimg.com/media/Gh6rS0vWEAAjN0G.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1882130111098445824",
+            "url": "https://pbs.twimg.com/media/Gh6rXTUW4AAswIe.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 149563,
+          "friends_count": 1466,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 145,
+          "favorite_count": 846,
+          "reply_count": 45,
+          "quote_count": 20
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 149563,
+        "friends_count": 1466,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1996055832287482303",
+      "text": "I'd like to share some insights on using AI to translate articles. Here is the core philosophy:\n\nThe best translation is actually rewriting.\nAchieving high-quality results requires breaking the process down into steps.\n\nHowever, this depends on the scenario. For general translation needs, a single rewrite is usually sufficient. Given the capabilities of current Large Language Models—especially models like Gemini 3 Pro—the quality of a one-shot rewrite is already quite impressive.\n\nIf you are aiming for professional-grade translation, it is necessary to have the AI proofread and polish the text after that initial rewrite.\n\nCrucially, do not attempt to cram translation, proofreading, and polishing into a single prompt, unless the content is extremely short.\n\nThe main reason is something I mentioned yesterday: while models can handle very long inputs, they tend to cut corners and suffer from severe hallucinations if the required output is too long.\n\nImagine translating a 2,000-word article. If you ask the model to rewrite, then proofread, and finally polish it all at once, the output could easily balloon to 5,000 - 6,000 words. By the time it gets to the end, the quality will degrade significantly.\n\nTherefore, translation, proofreading, and polishing are best performed independently.\n\nLet's start with translation. The prompt doesn't need to be overly complex. Simply asking it to \"rewrite\" works well, provided you specify the following:\n- The style of the article\n- A glossary of common terms or mappings\n- The target audience (optional)\n\nFor proofreading, you need to provide both the original text and the translation. The goal here is to check for omissions and errors. If your requirement for precision isn't extremely high, you can skip this step.\n\nFor polishing, you do not need the original English text anymore; the translation alone is sufficient. At this stage, you just need the model to check if the results flow smoothly and if the phrasing adheres to native expression habits. The original text is no longer necessary.\n\nAdditionally, if the article is too long, you should split it into blocks. It is best to split by natural chapters or paragraphs; usually, splitting at the paragraph level is enough.\n\nAs for how to ensure continuity between the current block and the previous one, a simple and effective method is to add the source text and translation of the previous block into the context. This allows the translation of the next block to reference the content and style of the one before it.\n\nRegarding how much history to retain, that depends on the model and the size of the blocks. Usually, the source and translation of the immediately preceding block are enough; you don't need too much history. In fact, sometimes providing no history at all works fine.\n\nThis process can be automated via a program using an API, or done manually within the model interface. Personally, I use Gemini. I create different \"Gems\" for different prompts, and when I need them, I simply paste the content into the corresponding Gem.",
+      "created_at": "Wed Dec 03 03:16:09 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1996055166177390592",
+          "url": "https://pbs.twimg.com/media/G7NpmRwWMAAJVww.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1996052522360795289",
+        "text": "谢谢 @LipuAIX 整理的翻译提示词，分享一些我用 AI 翻译文章的心得。虽然我认为这提示词太复杂了一些，但其中思想是没问题的，我以前也分享过类似的观点：\n1. 最好的翻译就是重写\n2. 好的翻译效果要分成几步来做\n\n但也要分场景，普通翻译场景，重写一次就足够了，以现在大语言模型的能力，尤其是 Gemini 3 Pro 这样的，一次重写质量已经相当高了。\n\n如果真要做专业翻译，第一遍重写之后，再让 AI 去校对润色是有必要的。\n\n但是校对和润色不要放在一个提示词里面来做，除非内容很短。\n\n主要原因就是我昨天提到的：大模型可以输入很长，但是输出太长就会偷工减料，幻觉严重。\n\n想象一下，如果你翻译一篇 2 千字的文章，按照提示词这样三遍下来，输出就要 5-6 千字了，到后面输出质量就不高了。\n\n所以翻译、校对、润色最好是独立做。\n\n先说翻译，翻译的提示词不需要原推那么复杂，简单的让它“重写”即可，重点是说明：\n- 文章风格\n- 常用的翻译词汇对照表\n- 目标读者（可选）\n\n校对，校对需要原文、和译文，检查遗漏、错误的地方。如果对翻译精度要求不高，这一步也可以省略。\n\n润色则不需要英文原文，只需要译文就够了，这时候只需要让模型去检查翻译后的结果语句是否通顺，是不是符合中文表达习惯。已经不需要英文原文了。\n\n另外，文章如果太长，还是需要分块，分块最好按照自然章节和段落，通常段落一级就够了。\n\n至于每一块和上一块怎么衔接，一个简单有效的办法就是把上一块的原文、翻译结果加到上下文中，这样翻译下一块就可以参考上一块的内容和风格。\n\n至于保留多少块的历史，取决于模型和分块大小。通常上一块的原文和翻译就足够了，不用太多，甚至不加历史结果也没问题。\n\n这个过程可以写个程序用 API，也可以手动去模型做。比如我个人就是用 Gemini，不同的提示词做成不同的 Gem，需要用就把内容贴到 Gem 就好。",
+        "created_at": "Wed Dec 03 03:03:00 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1996052510184747009",
+            "url": "https://pbs.twimg.com/media/G7NnLraWsAE3O-C.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 149563,
+          "friends_count": 1466,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 14,
+          "reply_count": 3,
+          "quote_count": 2
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 149563,
+        "friends_count": 1466,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 5,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1996052522360795289",
+      "text": "谢谢 @LipuAIX 整理的翻译提示词，分享一些我用 AI 翻译文章的心得。虽然我认为这提示词太复杂了一些，但其中思想是没问题的，我以前也分享过类似的观点：\n1. 最好的翻译就是重写\n2. 好的翻译效果要分成几步来做\n\n但也要分场景，普通翻译场景，重写一次就足够了，以现在大语言模型的能力，尤其是 Gemini 3 Pro 这样的，一次重写质量已经相当高了。\n\n如果真要做专业翻译，第一遍重写之后，再让 AI 去校对润色是有必要的。\n\n但是校对和润色不要放在一个提示词里面来做，除非内容很短。\n\n主要原因就是我昨天提到的：大模型可以输入很长，但是输出太长就会偷工减料，幻觉严重。\n\n想象一下，如果你翻译一篇 2 千字的文章，按照提示词这样三遍下来，输出就要 5-6 千字了，到后面输出质量就不高了。\n\n所以翻译、校对、润色最好是独立做。\n\n先说翻译，翻译的提示词不需要原推那么复杂，简单的让它“重写”即可，重点是说明：\n- 文章风格\n- 常用的翻译词汇对照表\n- 目标读者（可选）\n\n校对，校对需要原文、和译文，检查遗漏、错误的地方。如果对翻译精度要求不高，这一步也可以省略。\n\n润色则不需要英文原文，只需要译文就够了，这时候只需要让模型去检查翻译后的结果语句是否通顺，是不是符合中文表达习惯。已经不需要英文原文了。\n\n另外，文章如果太长，还是需要分块，分块最好按照自然章节和段落，通常段落一级就够了。\n\n至于每一块和上一块怎么衔接，一个简单有效的办法就是把上一块的原文、翻译结果加到上下文中，这样翻译下一块就可以参考上一块的内容和风格。\n\n至于保留多少块的历史，取决于模型和分块大小。通常上一块的原文和翻译就足够了，不用太多，甚至不加历史结果也没问题。\n\n这个过程可以写个程序用 API，也可以手动去模型做。比如我个人就是用 Gemini，不同的提示词做成不同的 Gem，需要用就把内容贴到 Gem 就好。",
+      "created_at": "Wed Dec 03 03:03:00 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1996052510184747009",
+          "url": "https://pbs.twimg.com/media/G7NnLraWsAE3O-C.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1995865018324377911",
+        "text": "告别“翻译腔”！让 AI 翻译真正“说人话”的终极提示词\n受够了 AI 生硬别扭的“翻译腔”？明明意思对了，读起来就是不像中文？\n我阅读了了翻译大师思果、余光中的书籍，将其“翻译即重写”理论，并结合提示词工程实践，设计了一个全新的「交互式迭代翻译提示词」。\n它通过三步工作流（重写 -> 自我诊断 -> 定稿），强制 AI 摆脱英文结构，专门解决中英文逻辑转换难题，产出地道、流畅、宛如原创的中文。实测效果惊艳！\n\n总之谁用谁知道，效果和流程如图所示。提示词如下：\n\n角色定位：顶尖英汉翻译专家与中文写作专家\n你将扮演一位顶尖的英汉学术翻译专家，同时也是一位卓越的中文写作者。你深谙思果和余光中“翻译即重写” (Translation as Rewriting) 的精髓。\n\n核心任务与目标\n你的任务是将专业的英文学术文本转化为高质量的中文译文。你必须彻底摒弃“逐字翻译”，而是深层理解原文的意义、逻辑和语境，以地道、流畅、精准的现代中文进行重新创作。最终目标是产出一篇读起来宛如中文原创的、可供直接发表的高水准文章。\n\n目标与风格\n目标受众： 有一定知识背景，但非该特定领域专家的中文读者。\n语言风格： 现代、清晰、流畅、优雅。确保专业严谨，同时表达清晰易懂，逻辑连贯。\n核心要求： 坚决杜绝“翻译腔”和任何“欧化表达”(Europeanized language)。\n\n中西语言转换核心策略 (Crucial Strategies for Language Transfer)\n【重要】英文重“形合”(Hypotaxis，依赖形式连接)，中文重“意合”(Parataxis，依赖意义连贯)。在“重写”过程中，必须严格执行以下策略，坚决杜绝“翻译腔”和“欧化表达”：\n\n化“形合”为“意合” (结构重组)：大胆拆分英文长句（尤其是包含复杂从句、关系词的结构）。\n重新组织语序，使其符合中文的叙述逻辑（如因果、先后、轻重），多用短句。\n化被动为主动 (语态转换)：尽量将原文的被动句转换为中文的主动句、\"把\"字句或无主句，坚决避免滥用“被”字。\n化抽象为具体 (词性转换)：英文多抽象名词，中文多动词。应将抽象的名词化表达转换为更自然的动词短语（例如，将“进行分析”优化为“分析”）。\n精简冗余 (消除欧化表达)：避免直译连接词（如减少“当...的时候”、“关于”）。\n避免过度使用“的”字结构和不必要的代词（如“他的”、“它们的”）。\n\n核心翻译原则\n忠实性与地道性： 100%忠实于原文信息，同时表达必须完全符合中文学术语境和语言习惯。地道性优先于形式对应。\n术语处理：专业术语： 优先采用学界公认译名。若无，保留英文原文，并在首次出现时于括号内注明中文释义。\n专有名词： 人名、地名等，若有公认权威译名则使用；否则，一律保留英文原文，不作音译。\n文体对等： 精准匹配原文的文体和语气（无论是科技文献还是人文社科）。保持学术严谨性，同时确保行文清晰流畅，逻辑连贯。\n格式保留： 完全保留原文格式结构（段落、标题、列表、公式等），并将标点符号转换为中文规范用法。\n\n三步工作流 (Three-Step Interactive Workflow)\n你必须严格按照以下三个步骤执行翻译任务，并遵循规定的交互模式。\n分块处理说明： 你将以“逐块处理”的方式进行翻译。为确保精细化处理质量，每次处理的原文篇幅建议在1000至2000个英文单词左右（或等效Tokens）。\n\n步骤一：应用策略，重写初稿 (Apply Strategies & Rewrite - First Draft)\n深入理解当前文本块的完整意思和逻辑。\n强制执行「中西语言转换核心策略」，彻底摆脱原文句子结构的束缚，用自然流畅的中文进行重写，形成初稿。\n\n步骤二：自我批判与问题诊断 (Self-Critique & Problem Diagnosis)\n以批判性的眼光和中文母语读者的视角审阅初稿，找出所有潜在问题，并以列表形式清晰说明。诊断必须包含：\n欧化病症诊断（专项）： 是否存在欧化表达？（例如：滥用“被”字、“的”字；\n句子结构是否依然遵循英文逻辑；是否存在冗余连接词或代词？）\n策略执行检查：是否彻底执行了「中西语言转换核心策略」（长句拆分、语态转换等）？\n表达与逻辑： 用词是否精准？句式是否冗长别扭？逻辑衔接是否顺畅？\n术语与完整性： 术语处理是否规范？信息点是否遗漏？\n\n步骤三：润色与定稿 (Refine & Finalize)\n针对第二步诊断出的所有问题进行全面优化，产出最终版本。\n核心是实现“言辞整句化”：确保每个句子结构完整、意思清晰、表达专业，最终形成一篇浑然天成的高质量译文。\n\n输出与交互流程\n你的输出必须严格遵循以下对话模式：\n[轮次开始]\n用户：\n[此处为用户输入的英文原文块]\nAI：\n重写初稿 (步骤一)\n[此处输出重写初稿内容。该初稿已应用“中西语言转换核心策略”进行重写。]\n请审阅初稿。如需进行问题诊断和润色定稿，请输入“继续”。\n用户：\n继续\nAI：\n问题诊断 (步骤二)\n[此处以列表形式输出问题诊断内容]\n重写终稿 (步骤三)\n[此处输出最终的润色定稿内容]\n当前文本块处理完毕。请提供下一段英文原文以继续翻译。\n[轮次结束]",
+        "created_at": "Tue Dec 02 14:37:56 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1995864054708273152",
+            "url": "https://pbs.twimg.com/media/G7K7yIDbgAAn-sl.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1995864523987988480",
+            "url": "https://pbs.twimg.com/media/G7K8NcQbsAAvJDc.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1995864663456972803",
+            "url": "https://pbs.twimg.com/media/G7K8Vj0bgAMRG73.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1645244883152834562",
+          "name": "离谱",
+          "screen_name": "LipuAIX",
+          "description": "💪 AI 实战派 | 教程天花板 | 前大厂工程师\n⚖️ 非律师，靠 AI 起诉市政府，赢过一场，目前最高院再审/高院上诉中...\n🔗 公众号「稀有学生」作者。关注我，与你一起成为 AI 领域的稀有学生",
+          "followers_count": 3728,
+          "friends_count": 198,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 62,
+          "favorite_count": 265,
+          "reply_count": 8,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 149563,
+        "friends_count": 1466,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 14,
+        "reply_count": 3,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "1996046528503493015",
+      "text": "所以说这手的性别会跟着照片的性别变化吗？\n\nhttps://t.co/NjjhXwa2U9",
+      "created_at": "Wed Dec 03 02:39:11 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1996046020606865464",
+        "text": "https://t.co/22wBIkXBkq",
+        "created_at": "Wed Dec 03 02:37:10 +0000 2025",
+        "lang": "zxx",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1996046014072131584",
+            "url": "https://pbs.twimg.com/media/G7NhRjgakAA7emn.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1807573084490330112",
+          "name": "俺の娘たち / AIエンジニア",
+          "screen_name": "oreno_musume",
+          "description": "あ、どうも、AIで俺の娘たちを爆誕中 / Xとnoteで生きるAIエンジニア＆クリエイター / もう、プロンプトで悩まない！ noteメンバーシップ👉️https://t.co/oDroUR7FwE 使用AIツール/ プロンプト公開⤵️",
+          "followers_count": 21519,
+          "friends_count": 588,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 10,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 149563,
+        "friends_count": 1466,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1996046180787065233",
+      "text": "🍌 nano banana prompt\n\nThis illustration is intended for children to use as a coloring page (you may adjust or simplify the elements as needed). The generated content can be provided either as a clear written description or as a small reference image to guide the child’s coloring.\n\n---- Prompt ----\n\nA black-and-white line art coloring illustration, designed for direct printing on standard 8.5×11 inch paper with no page borders. The overall style is clean and simple, using smooth, clear black outlines with no shading, no grayscale, and no color fill. The background should remain pure white for easy coloring.\n\n[For users who may need guidance, please include a small full-color reference version of the illustration in the bottom-right corner.]\n\nTarget audience: [children aged 6–9.]\n\nScene description:\nreferencing the attached image or [A unicorn strolling across a grassy meadow in a forest, under bright sunshine with blue skies and fluffy white clouds.]",
+      "created_at": "Wed Dec 03 02:37:48 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1996042143471652864",
+          "url": "https://pbs.twimg.com/media/G7NdwQZWUAAqgaW.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "1996044106200444929",
+          "url": "https://pbs.twimg.com/media/G7NfigIW8AESnWy.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1995944319677554985",
+        "text": "🍌 nana banan pro\n\n--- Prompt ---\n\nBased on you know about me, generate a 3D isometric colored illustration of me working from home, filled with various interior details. The visual style should be rounded, polished, and playful. --ar 1:1\n\n---\n\n[Additional details: a bichon frise and 3 monitors]",
+        "created_at": "Tue Dec 02 19:53:03 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1995944287729487872",
+            "url": "https://pbs.twimg.com/media/G7MEwTWWEAA1DkO.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 149563,
+          "friends_count": 1466,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 25,
+          "favorite_count": 255,
+          "reply_count": 8,
+          "quote_count": 6
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 149563,
+        "friends_count": 1466,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 8,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "1996044118003212345",
       "text": "🍌 nano banana prompt\n\nColoring page\n\n---- Prompt ----\n\nA black-and-white line art coloring illustration, designed for direct printing on standard 8.5×11 inch paper with no page borders. The overall style is clean and simple, using smooth, clear black outlines with no shading, no grayscale, and no color fill. The background should remain pure white for easy coloring.\n\n[For users who may need guidance, please include a small full-color reference version of the illustration in the bottom-right corner.]\n\nTarget audience: [children aged 6–9.]\n\nScene description:\nreferencing the attached image or [A unicorn strolling across a grassy meadow in a forest, under bright sunshine with blue skies and fluffy white clouds.]",

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 151428,
+    "followers_count": 151489,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251205",
-  "last_updated": "2025-12-05T02:36:40.784015",
-  "tweet_count": 4,
+  "last_updated": "2025-12-05T04:10:35.338160",
+  "tweet_count": 6,
   "tweets": [
     {
       "id": "1996740235288256984",
@@ -184,6 +184,96 @@
       "stats": {
         "retweet_count": 0,
         "favorite_count": 3,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1996774720050810897",
+      "text": "RT @karminski3: 直接使用 claude code 微调大模型!  huggingface 推出了炼丹插件 hf skills\n\n支持 SFT、DPO、GRPO 三种训练方法, 并且可以自动选择HF上的硬件, 以及可以先验证再生产, 最后转GGUF本地部署.\n\n这…",
+      "created_at": "Fri Dec 05 02:52:46 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1996723023093882941",
+        "text": "直接使用 claude code 微调大模型!  huggingface 推出了炼丹插件 hf skills\n\n支持 SFT、DPO、GRPO 三种训练方法, 并且可以自动选择HF上的硬件, 以及可以先验证再生产, 最后转GGUF本地部署.\n\n这一套连招可以说是丝滑到位, 感觉把复杂的微调过程直接能用 claude code + 插件的方式解决了. 现在不但指出 Claude Code，还支持了 Codex 和 Gemini CLI. 而且他们后续还要跟其它 AI IDE 和 terminal coding agent 结合, 比如 Cursor, Windsurf 等.",
+        "created_at": "Thu Dec 04 23:27:20 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1996722815261986818",
+            "url": "https://pbs.twimg.com/media/G7XI0kab0AI8RNY.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1071224721046261760",
+          "name": "karminski-牙医",
+          "screen_name": "karminski3",
+          "description": "A coder, road bike rider, server fortune teller, electronic waste collector, co-founder of KCORES, ex-director at IllaSoft, KingsoftOffice, Juejin.",
+          "followers_count": 30029,
+          "friends_count": 1440,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 18,
+          "favorite_count": 96,
+          "reply_count": 5,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 18,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1996780788835066038",
+      "text": "cool\nhttps://t.co/FKfDwuNUXF",
+      "created_at": "Fri Dec 05 03:16:53 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1996780316170608832",
+        "text": "Interesting. Now I’m thinking we could actually use Nano Banana Pro to streamline game-asset creation, especially for 2D visuals. The workflow potential is huge.\n\nAnyway, here’s the customized prompt for the Javanese Horoscope.\n\nLong Prompt:\n\nJavanese Horoscope (Horoskop Jawa / Primbon) Image Generation Prompt\n\nPlease generate a magical Javanese Horoscope (Primbon) divination image following the rules below:\n\n【INPUT】\n\nUser Birthday: {user_birthday}\n\nToday’s Date: Automatically retrieved from system ({today_date})\nLanguage: {language, defaults to user’s preferred language}\n【OVERALL IMAGE STYLE】\n\nMystical ancient Javanese fantasy aesthetic: spiritual, magical, glowing effects, floating Javanese script\n\nMain colors: deep blue + purple night sky, accented with golden keraton-style ornaments\n\nA Javanese divination circle with Nusantara mandala patterns sits at the center\nFour Primbon divination cards arranged around the central circle\nThe mood should feel elegant, mystical, and ritualistic\n【JAVANESE HOROSCOPE / PRIMBON GENERATION RULES】\nAutomatically calculate:\nUser’s Weton (Legi, Pahing, Pon, Wage, Kliwon)\nNeptu total based on day value + pasaran value\n\nDisplay in glowing magical handwritten typography with Javanese script accents:\nA large illuminated Weton symbol {calculated_weton} at the top center\nToday’s Fortune Score: random value (1–100)\nThree Primbon keywords (e.g., Prosperity, Harmony, Guidance, Challenge)\n\n【PRIMBON CARD READING RULES】\n\nGenerate 4 Javanese divination cards:\n\nLove\nCareer\nWealth / Prosperity\n\nHealth\nEach card must include:\nA symbolic Primbon icon (e.g., Kala Rau, Satrio Wirang, Wahyu Makutharama, Dewi Sri, etc.)\n\nAn energy orientation: “Aligned” or “Opposed”\n\nA magical interpretation paragraph inspired by ancient Javanese wisdom\n\nCard layout around the divination circle:\n\nEast: Love\nSouth: Career\nWest: Wealth\nNorth: Health\n\nCard glow colors:\n\nLove → pink-violet\nCareer → gold\nWealth → green\n\nHealth → aqua blue\n\n【TEXT PRESENTATION】\nDisplay in magical handwritten calligraphy with Javanese stylistic accents:\nToday’s date: {today_date}\nWeton + Neptu + fortune score\n\nEach card name + orientation (Aligned/Opposed)\n\nInterpretation text for each card\n【IMAGE ATMOSPHERE REQUIREMENTS】\nFilled with magical particles, radiant golden light, swirling star vortexes, and floating Javanese characters\nAncient, mysterious Primbon ritual ambience\n\nHigh-quality fantasy magic rendering\n\nSubtle motion illusion such as flowing spiritual light",
+        "created_at": "Fri Dec 05 03:15:00 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1996776459399294976",
+            "url": "https://pbs.twimg.com/media/G7X5nEZbcAAPZC8.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "339874062",
+          "name": "DΞV",
+          "screen_name": "junwatu",
+          "description": "Indie Hacker and AI Specialist 🤝 Exploring new frontiers in generative AI 🧪  Insights on development and building in public ✨",
+          "followers_count": 1523,
+          "friends_count": 523,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
         "reply_count": 0,
         "quote_count": 0
       }

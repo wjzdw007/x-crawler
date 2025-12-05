@@ -1,12 +1,227 @@
 {
   "date": "20251205",
   "timeline_type": "recommended",
-  "last_crawl_time": "2025-12-05T02:36:40.756402",
-  "tweet_count": 206,
-  "unique_tweet_count": 206,
-  "total_crawled": 400,
-  "duplicates_removed": 194,
+  "last_crawl_time": "2025-12-05T04:10:35.307301",
+  "tweet_count": 211,
+  "unique_tweet_count": 211,
+  "total_crawled": 406,
+  "duplicates_removed": 195,
   "tweets": [
+    {
+      "id": "1996780788835066038",
+      "text": "cool\nhttps://t.co/FKfDwuNUXF",
+      "created_at": "Fri Dec 05 03:16:53 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1996780316170608832",
+        "text": "Interesting. Now I’m thinking we could actually use Nano Banana Pro to streamline game-asset creation, especially for 2D visuals. The workflow potential is huge.\n\nAnyway, here’s the customized prompt for the Javanese Horoscope.\n\nLong Prompt:\n\nJavanese Horoscope (Horoskop Jawa / Primbon) Image Generation Prompt\n\nPlease generate a magical Javanese Horoscope (Primbon) divination image following the rules below:\n\n【INPUT】\n\nUser Birthday: {user_birthday}\n\nToday’s Date: Automatically retrieved from system ({today_date})\nLanguage: {language, defaults to user’s preferred language}\n【OVERALL IMAGE STYLE】\n\nMystical ancient Javanese fantasy aesthetic: spiritual, magical, glowing effects, floating Javanese script\n\nMain colors: deep blue + purple night sky, accented with golden keraton-style ornaments\n\nA Javanese divination circle with Nusantara mandala patterns sits at the center\nFour Primbon divination cards arranged around the central circle\nThe mood should feel elegant, mystical, and ritualistic\n【JAVANESE HOROSCOPE / PRIMBON GENERATION RULES】\nAutomatically calculate:\nUser’s Weton (Legi, Pahing, Pon, Wage, Kliwon)\nNeptu total based on day value + pasaran value\n\nDisplay in glowing magical handwritten typography with Javanese script accents:\nA large illuminated Weton symbol {calculated_weton} at the top center\nToday’s Fortune Score: random value (1–100)\nThree Primbon keywords (e.g., Prosperity, Harmony, Guidance, Challenge)\n\n【PRIMBON CARD READING RULES】\n\nGenerate 4 Javanese divination cards:\n\nLove\nCareer\nWealth / Prosperity\n\nHealth\nEach card must include:\nA symbolic Primbon icon (e.g., Kala Rau, Satrio Wirang, Wahyu Makutharama, Dewi Sri, etc.)\n\nAn energy orientation: “Aligned” or “Opposed”\n\nA magical interpretation paragraph inspired by ancient Javanese wisdom\n\nCard layout around the divination circle:\n\nEast: Love\nSouth: Career\nWest: Wealth\nNorth: Health\n\nCard glow colors:\n\nLove → pink-violet\nCareer → gold\nWealth → green\n\nHealth → aqua blue\n\n【TEXT PRESENTATION】\nDisplay in magical handwritten calligraphy with Javanese stylistic accents:\nToday’s date: {today_date}\nWeton + Neptu + fortune score\n\nEach card name + orientation (Aligned/Opposed)\n\nInterpretation text for each card\n【IMAGE ATMOSPHERE REQUIREMENTS】\nFilled with magical particles, radiant golden light, swirling star vortexes, and floating Javanese characters\nAncient, mysterious Primbon ritual ambience\n\nHigh-quality fantasy magic rendering\n\nSubtle motion illusion such as flowing spiritual light",
+        "created_at": "Fri Dec 05 03:15:00 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1996776459399294976",
+            "url": "https://pbs.twimg.com/media/G7X5nEZbcAAPZC8.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "339874062",
+          "name": "DΞV",
+          "screen_name": "junwatu",
+          "description": "Indie Hacker and AI Specialist 🤝 Exploring new frontiers in generative AI 🧪  Insights on development and building in public ✨",
+          "followers_count": 1523,
+          "friends_count": 523,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 151489,
+        "friends_count": 1468,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1996774720050810897",
+      "text": "RT @karminski3: 直接使用 claude code 微调大模型!  huggingface 推出了炼丹插件 hf skills\n\n支持 SFT、DPO、GRPO 三种训练方法, 并且可以自动选择HF上的硬件, 以及可以先验证再生产, 最后转GGUF本地部署.\n\n这…",
+      "created_at": "Fri Dec 05 02:52:46 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1996723023093882941",
+        "text": "直接使用 claude code 微调大模型!  huggingface 推出了炼丹插件 hf skills\n\n支持 SFT、DPO、GRPO 三种训练方法, 并且可以自动选择HF上的硬件, 以及可以先验证再生产, 最后转GGUF本地部署.\n\n这一套连招可以说是丝滑到位, 感觉把复杂的微调过程直接能用 claude code + 插件的方式解决了. 现在不但指出 Claude Code，还支持了 Codex 和 Gemini CLI. 而且他们后续还要跟其它 AI IDE 和 terminal coding agent 结合, 比如 Cursor, Windsurf 等.",
+        "created_at": "Thu Dec 04 23:27:20 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1996722815261986818",
+            "url": "https://pbs.twimg.com/media/G7XI0kab0AI8RNY.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1071224721046261760",
+          "name": "karminski-牙医",
+          "screen_name": "karminski3",
+          "description": "A coder, road bike rider, server fortune teller, electronic waste collector, co-founder of KCORES, ex-director at IllaSoft, KingsoftOffice, Juejin.",
+          "followers_count": 30029,
+          "friends_count": 1440,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 18,
+          "favorite_count": 96,
+          "reply_count": 5,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 151489,
+        "friends_count": 1468,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 18,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1996773738184954059",
+      "text": "Grok",
+      "created_at": "Fri Dec 05 02:48:52 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1996655618892206172",
+        "text": "xAI's Grok models dominates the OpenRouter leaderboard with over 8.8 trillion tokens in usage in a month, claiming the top #1 and #2 spots\n\nThis is more than Google, Anthropic, and OpenAI combined, which total 8.6 trillion - less than Grok's 8.8 trillion\n\nxAI alone holds ~44% market share",
+        "created_at": "Thu Dec 04 18:59:30 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "1996651620885798912",
+            "url": "https://video.twimg.com/amplify_video/1996651620885798912/vid/avc1/1080x1080/WkGw7LJgApUnb6fE.mp4?tag=21",
+            "bitrate": 8768000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "tour guide for Grok",
+          "followers_count": 78080,
+          "friends_count": 1337,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 35,
+          "favorite_count": 227,
+          "reply_count": 63,
+          "quote_count": 12
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 229307408,
+        "friends_count": 1237,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 445,
+        "favorite_count": 2601,
+        "reply_count": 938,
+        "quote_count": 26
+      }
+    },
+    {
+      "id": "1996773422333071787",
+      "text": "Much appreciated",
+      "created_at": "Fri Dec 05 02:47:36 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1996701953372704921",
+        "text": "Rumors swirling that the EU commission will fine X hundreds of millions of dollars for not engaging in censorship. The EU should be supporting free speech not attacking American companies over garbage.",
+        "created_at": "Thu Dec 04 22:03:37 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1542228578",
+          "name": "JD Vance",
+          "screen_name": "JDVance",
+          "description": "Christian, husband, dad. Vice President of the United States.",
+          "followers_count": 4931539,
+          "friends_count": 1148,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 8545,
+          "favorite_count": 69255,
+          "reply_count": 4353,
+          "quote_count": 665
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 229307408,
+        "friends_count": 1237,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1135,
+        "favorite_count": 13516,
+        "reply_count": 1039,
+        "quote_count": 42
+      }
+    },
     {
       "id": "1996759348006006932",
       "text": "用 AI 测一下你的运势如何（提示词适用于nano banana pro + Gemini）\n\n提示词最后输入你的生日\n\n----\n\n请根据以下规则生成一张具有魔法视觉效果的塔罗牌占卜图像：\n\n【输入】\n\n- 用户生日：{user_birthday}\n- 今日日期：从系统自动获取（{today_date}）\n- 语言：{language，默认为用户偏好的语言}\n\n---\n\n【图像整体风格】\n\n- 画面呈现 魔法、星象、光效、符文漂浮 的奇幻艺术风格\n- 以 深蓝 + 紫色星空 为主色调，辅以金色魔法纹路\n- 中心位置放置一个 发光的占卜阵法，阵法上依次排列 4 张塔罗牌\n- 整体画风需优雅、神秘、具有占卜仪式感\n\n---\n\n【星座运程生成规则】\n\n1. 根据用户生日自动计算其星座\n2. 在画面上以魔法字体展示：\n- 居中显示一个大的 {calculated_zodiac} 星座图标\n- 今日运势整体评分：通过星象随机生成（1–100）\n- 关键词 3 个（例如：机遇、突破、疗愈）\n\n---\n\n【塔罗牌生成规则】\n\n共生成四张牌：\n\n1. 爱情塔罗牌\n2. 事业塔罗牌\n3. 财运塔罗牌\n4. 健康塔罗牌\n\n每张塔罗牌元素包含：\n\n- 卡面符号（依据实际抽牌自动决定：如「恋人」「星币七」「权杖国王」等）\n- 正位或逆位状态\n- 一段与该主题相关的魔法解释语，可以略微详细一点\n\n画面中四张牌排布建议：\n\n- 魔法阵的四个方位：东（爱情）、南（事业）、西（财运）、北（健康）\n- 每张卡片带有光效与对应主题色（爱情粉红、事业金色、财运绿色、健康水蓝）\n\n---\n\n【文字呈现】\n\n以手写魔法字体呈现以下信息：\n\n- 今日日期：{today_date}\n- 星座与今日运势评分\n- 四张塔罗牌的名称 + 状态（正/逆位）\n- 一段每张牌的主题解释文案\n\n---\n\n【画面氛围要求】\n\n- 充满魔力粒子、光芒、星辰旋涡\n- 古老神秘的占卜仪式感\n- 渲染高质感魔法奇幻风格\n- 带轻微动态错觉，如魔力光线流动（用于静态图的视觉表现）\n\n---\nlangage: 中文\nbirthday:  {请替换为你的生日}",
@@ -4643,6 +4858,76 @@
         "retweet_count": 311,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1996381585478971590",
+      "text": "cool",
+      "created_at": "Thu Dec 04 00:50:35 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1996380145964421431",
+        "text": "More interesting for ETFs😀 https://t.co/ie6xWBzaCK",
+        "created_at": "Thu Dec 04 00:44:52 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1996380020747722752",
+            "url": "https://pbs.twimg.com/media/G7SRDTVa4AASV8g.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1996380020743483392",
+            "url": "https://pbs.twimg.com/media/G7SRDTUaMAAuFmP.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1996380020764504064",
+            "url": "https://pbs.twimg.com/media/G7SRDTZa8AAgrko.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1996380020726775808",
+            "url": "https://pbs.twimg.com/media/G7SRDTQbQAAfykC.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1683503918477889542",
+          "name": "ShenYouX",
+          "screen_name": "shenyou_x",
+          "description": "🧓老年程序员(没秃)\n🤖硅基带路党创始成员(自封)\n🌹植物克星(养啥都挂)\n🐍小动物福星(养啥都活)\n🪵木工爱好者(弃坑)\n📹摄影爱好者(弃坑)",
+          "followers_count": 163,
+          "friends_count": 411,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 151489,
+        "friends_count": 1468,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 9,
+        "reply_count": 1,
         "quote_count": 0
       }
     },

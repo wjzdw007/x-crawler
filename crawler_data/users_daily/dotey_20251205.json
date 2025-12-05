@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 152282,
+    "followers_count": 152375,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251205",
-  "last_updated": "2025-12-05T16:05:29.856249",
-  "tweet_count": 11,
+  "last_updated": "2025-12-05T18:06:01.644004",
+  "tweet_count": 15,
   "tweets": [
     {
       "id": "1996740235288256984",
@@ -585,6 +585,216 @@
       "quoted": null,
       "stats": {
         "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1996992670464376959",
+      "text": "Honestly, the toughest part isn't the prompt itself—it's mapping the AI’s actual boundaries. You have to find that sweet spot between your creative idea and what the model can genuinely handle autonomously.\n\nFor instance, I tried this 'City Weather' concept with GPT-4o before (check the comment). It looked good, but requiring a custom API for live data ruined the flow. With Gemini and Nano Banana Pro, it finally clicked because it could fetch the date/weather and generate the image in one go.\n\nThat leads to the second challenge: creating a framework, not just a gallery piece. The goal isn't to show off a complex prompt, but to give people a template they can play with. I love that users are taking this logic and applying it to their own cities, or even spinning it off into time-travel scenarios or fictional locations like Mars.",
+      "created_at": "Fri Dec 05 17:18:49 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1996992560561082368",
+          "url": "https://pbs.twimg.com/media/G7a-Jz9XUAAXprq.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1996983796629991863",
+        "text": "@dotey Love how you describe Nano Banana Pro as the bridge between abstract ideas and live data. That Ashes board from Sundar really showed how playful and practical it can be at the same time. What was the hardest part to get right in that workflow?",
+        "created_at": "Fri Dec 05 16:43:33 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1910341143318892544",
+          "name": "Thiago Salvador",
+          "screen_name": "bettercallsalva",
+          "description": "AI and Operations Director @zaazcollective\nWorking for what's right in this world!",
+          "followers_count": 44,
+          "friends_count": 127,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1996992673903767587",
+      "text": "my previous version for GPTs\nhttps://t.co/NTqSjCGLT6",
+      "created_at": "Fri Dec 05 17:18:50 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1918167525763817812",
+        "text": "做成了个天气 GPTs：\nhttps://t.co/iuAif5wvm4\n\nGPTs Prompt（需要天气API配合）：\n\nThis GPT acts as a digital painter who generates detailed 3D-style weather forecast illustrations for any city input by the user. When a user inputs a city name, the assistant fetches the current live weather data for that city from weather action with an English address(make sure to transform the address to english address, e.g. 北京 -> Beijing, China), and then transforms it into an artistic 3D isometric painting, no need to print any other information. \n\nGenerate a vertical composition image with a clear top-down 45° isometric view of a miniature model featuring iconic architecture from the city [City Name]. Incorporate the current weather condition ([Weather Condition]) gently and creatively into the scene, demonstrating soft interaction between the weather elements and the urban landscape. Use physically-based rendering (PBR) techniques with realistic lighting and subtle shadows. Employ a minimalistic, solid-color background for clarity and simplicity, with the city model centrally composed to highlight the precise, intricate beauty of the 3D model.\n\nClearly display the city name \"[City Name]\", current weather condition \"[Weather Condition]\", and temperature \"[Temperature]°C\" at the top of the image, alongside a matching weather icon.\n\nThe assistant always responds in the language used by the user when naming the city, and aims to reflect the city's character in each unique image.",
+        "created_at": "Fri May 02 04:55:50 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1918166724760748032",
+            "url": "https://pbs.twimg.com/media/Gp6yeSlWwAATQZW.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1918166724756504576",
+            "url": "https://pbs.twimg.com/media/Gp6yeSkWAAA_DSo.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1918166724974723072",
+            "url": "https://pbs.twimg.com/media/Gp6yeTYXwAAS1v8.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1918167380083068928",
+            "url": "https://pbs.twimg.com/media/Gp6zEb2X0AAv8Z8.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 152375,
+          "friends_count": 1468,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 33,
+          "favorite_count": 150,
+          "reply_count": 8,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1996992675824722059",
+      "text": "https://t.co/V6fmGTcMJz",
+      "created_at": "Fri Dec 05 17:18:50 +0000 2025",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1996631726047547762",
+        "text": "Here are the principles and methods I use when writing prompts:\n\nMy Prompting Principles\n\n1. Design templates, not fixed prompts.\n\nI want people to adapt the structure to their own scenarios—whether it’s their favorite brand, city weather, stock market themes, mini pop-up stores, or turning an article into an infographic.\nThe key idea is to give users a flexible framework rather than locking them into a single use case.\n\n2. Leverage the model’s native capabilities (search, world knowledge, reasoning).\n\nFor example, the city-weather prompt lets Gemini fetch real weather information for a given city and date.\nThe 3D mini stock-market prompt works similarly.\nInfographic prompts rely on the model’s comprehension and summarization of the input article.\n\nMy Strategy for Building Nano Banana Pro\n\n1. Start by using AI to build a working prototype for one specific scenario.\n\n2. Then generalize it into a prompt template that can dynamically adapt based on user input.\n\nThe core idea is to let the model assemble the structure automatically and adapt to different scenarios without imposing artificial constraints, just like writing code, where you avoid hard-coding and instead keep flexible interfaces for composition.\n\nAbout Prompt Length\n\nModern models are strong enough that token length isn’t a big concern.\n\nI don’t spend much time optimizing or shortening prompts at the beginning—functionality comes first.\nIf needed, refinement can come later.\n\nI mainly use GPT-5.1, GPT-4.5, and Gemini 3 Pro as my supporting tools. I send the same task to all of them in parallel, let each model generate its own output, and then choose whichever result turns out best.",
+        "created_at": "Thu Dec 04 17:24:33 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1996631713187835904",
+            "url": "https://pbs.twimg.com/media/G7V19uvXMAAI_2g.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 152375,
+          "friends_count": 1468,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 41,
+          "reply_count": 2,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1997001009210556548",
+      "text": "RT @eviljer: Nano Banana Pro Template: \n\nOne prompt to visualize a story's inverted universe — iconic scene above, its opposite realm flipp…",
+      "created_at": "Fri Dec 05 17:51:57 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "1996878448288321638",
+        "text": "Nano Banana Pro Template: \n\nOne prompt to visualize a story's inverted universe — iconic scene above, its opposite realm flipped 180° below, merging as one continuous form. Same character, different emotional states. Symbolic objects echo across realms, hinting at what was lost or found. Just tell it which story deserves its parallel world. \n\n[1] Journey Under the Midnight Sun\n[2] The Moon and Sixpence\n[3] La La Land\n[4] The Lord of the Rings\n\nPrompt ⬇️",
+        "created_at": "Fri Dec 05 09:44:56 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1996876638286704640",
+            "url": "https://pbs.twimg.com/media/G7ZUuP1a8AA_HaA.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1996876638274179072",
+            "url": "https://pbs.twimg.com/media/G7ZUuPyb0AAtHtp.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1996876638345461760",
+            "url": "https://pbs.twimg.com/media/G7ZUuQDbgAAg3yq.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1996877017422409728",
+            "url": "https://pbs.twimg.com/media/G7ZVEUOasAAAzXl.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "717142471",
+          "name": "Jerlin",
+          "screen_name": "eviljer",
+          "description": "一人团队，连接有趣的领域专家。\n\n聚焦：AI 玩法分享 ｜ 数据分析和可视化\n产品：https://t.co/YkgdVIuSxT —— 一拍一问，生活秒变英语课\n作品集：https://t.co/YTtlIGU1Bi",
+          "followers_count": 9708,
+          "friends_count": 620,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 35,
+          "reply_count": 8,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 7,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

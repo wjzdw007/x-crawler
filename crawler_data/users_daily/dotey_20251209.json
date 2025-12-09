@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 154780,
+    "followers_count": 154803,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251209",
-  "last_updated": "2025-12-09T02:36:26.522779",
-  "tweet_count": 2,
+  "last_updated": "2025-12-09T04:10:43.777266",
+  "tweet_count": 8,
   "tweets": [
     {
       "id": "1998217864390779061",
@@ -67,6 +67,247 @@
           "retweet_count": 0,
           "favorite_count": 1,
           "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1998221754997624867",
+      "text": "AK 建议你跟LLM（大语言模型）对话时，少用“你”怎么看，而是先问问这个领域的专家都是谁，然后让 AI 模拟这个领域的专家回答问题，这样能得到更好的效果。\n\n2年多前Andrej Karpathy在State of GPT也说过类似的话。（见评论）\n\nAndrej Karpathy：\n千万别把 大语言模型 (LLMs) 当作是一个个活生生的“实体”，要把它们看作是超级强大的“模拟器”。\n\n举个例子，当你想要深入探索某个话题时，千万别问：\n\n“关于 xyz，你怎么看？”\n\n因为根本就不存在什么“你”。\n\n下次试试换个问法：\n\n“如果要探讨 xyz 这个话题，最合适的一群人（比如专家或利益相关者）会是谁？他们会说些什么？”\n\n大语言模型可以信手拈来地引导和模拟各种各样的视角。但它并不像我们人类那样，是经过长时间对 xyz 的“思考”和沉淀，才形成自己的观点的。\n\n如果你非要用“你”这个词去强行提问，模型就会被迫根据它 微调 (finetuning) 数据的统计规律，调用一种隐含的“人格嵌入向量 (personality embedding vector)”，然后扮演这种人格来给你模拟一个答案。 (注释：简单来说，当你问“你”时，AI 只是根据训练数据中最常见的回答模式，戴上了一个“大众脸”的面具来配合你，而不是它真的产生了一个拥有自我意识的人格。)\n\n这样做当然没问题，你也能得到答案。但我发现很多人天真地把这归结为“去问问 AI 怎么想”，觉得这事儿特玄乎。其实一旦你明白了它是如何模拟的，这层神秘的面纱也就被揭开了。",
+      "created_at": "Tue Dec 09 02:42:46 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1997731268969304070",
+        "text": "Don't think of LLMs as entities but as simulators. For example, when exploring a topic, don't ask:\n\n\"What do you think about xyz\"?\n\nThere is no \"you\". Next time try:\n\n\"What would be a good group of people to explore xyz? What would they say?\"\n\nThe LLM can channel/simulate many perspectives but it hasn't \"thought about\" xyz for a while and over time and formed its own opinions in the way we're used to. If you force it via the use of \"you\", it will give you something by adopting a personality embedding vector implied by the statistics of its finetuning data and then simulate that. It's fine to do, but there is a lot less mystique to it than I find people naively attribute to \"asking an AI\".",
+        "created_at": "Sun Dec 07 18:13:45 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "33836629",
+          "name": "Andrej Karpathy",
+          "screen_name": "karpathy",
+          "description": "Building @EurekaLabsAI. Previously Director of AI @ Tesla, founding team @ OpenAI, CS231n/PhD @ Stanford. I like to train large deep neural nets.",
+          "followers_count": 1508169,
+          "friends_count": 1032,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2357,
+          "favorite_count": 24461,
+          "reply_count": 1050,
+          "quote_count": 562
+        }
+      },
+      "stats": {
+        "retweet_count": 13,
+        "favorite_count": 56,
+        "reply_count": 8,
+        "quote_count": 5
+      }
+    },
+    {
+      "id": "1998221788753572157",
+      "text": "https://t.co/Mgvzo6oVit",
+      "created_at": "Tue Dec 09 02:42:54 +0000 2025",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1671316445093933057",
+        "text": "熟悉Prompt的同学们应该都知道，通常在写Prompt的时候要先设定角色：“你是XX方面的专家”，这并非玄学，而是有科学根据的。\n\nGPT在训练的时候，有各种训练数据，有的质量高有的质量低，而默认情况下，生成高质量数据和低质量数据的概率差不多，但是当你给它设定XX专家的角色时，它会尽可能把概率分布在高质量的解决方案上。\n\n详细内容建议看下面这段Andrej Karpathy在State of GPT中的一段演讲。\n\n以下是这段视频的文字文字内容：\n----------\n下面我要讲的这点对LLM的理解非常有趣，我觉得这算是LLM的一种心理特性：LLM并不追求成功，而是追求模仿。你希望它成功，那就需要向它明确要求。这里的意思是，在训练Transformer的过程中，它们有各种训练集，而这些训练数据中可能涵盖了各种不同质量的表现。比如，可能有一个关于物理问题的提示，然后可能有学生的解答完全错误，但也可能有专家的答案完全正确。尽管Transformer可以识别出低质量的解决方案和高质量的解决方案，但默认情况下，它们只会模仿所有的数据，因为它们仅仅是基于语言模型进行训练的。\n\n在实际测试中，你其实需要明确要求它表现得好。在这篇论文的实验中，他们尝试了各种提示。例如，“让我们逐步思考”这种提示就很有效，因为它把推理过程分散到了许多记号上。但效果更好的是这样的提示：“让我们以一步一步的方式解决问题，以确保我们得到正确的答案。” 这就好像是在引导Transformer去得出正确的答案，这会使Transformer的表现更好，因为此时Transformer不再需要把它的概率质量分散到低质量的解决方案上，尽管这听起来很荒谬。\n\n基本上，你可以自由地要求一个高质量的解决方案。比如，你可以告诉它，“你是这个话题的领先专家。假装你的智商是120。” 但不要尝试要求太高的智商，因为如果你要求智商400，可能就超出了数据分布的范围，更糟糕的是，你可能落入了类似科幻内容的数据分布，它可能会开始展现一些科幻的，或者说角色扮演类的东西。所以，你需要找到适合的智商要求。我想这可能是一个U型曲线的关系。",
+        "created_at": "Wed Jun 21 00:37:46 +0000 2023",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "1671311551502876674",
+            "url": "https://video.twimg.com/ext_tw_video/1671311551502876674/pu/vid/1280x720/2FZgegDsEoPB5v9L.mp4?tag=12",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 154803,
+          "friends_count": 1468,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 357,
+          "favorite_count": 1200,
+          "reply_count": 43,
+          "quote_count": 26
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1998223150275051549",
+      "text": "网友 itsliupeng：200年前的圆明园 https://t.co/UCERzoSjNB",
+      "created_at": "Tue Dec 09 02:48:18 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "1998223030460301312",
+          "url": "https://pbs.twimg.com/media/G7sdQliXQAAeoVU.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 6,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1998230897796247873",
+      "text": "好看\nhttps://t.co/cRFeVhom1c",
+      "created_at": "Tue Dec 09 03:19:06 +0000 2025",
+      "lang": "ja",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1998228564706259453",
+        "text": "把老家的风景用宝玉哥的提示词做出来简直太漂亮了！各地文旅赶快行动起来吧！ https://t.co/MHwTro66Ru",
+        "created_at": "Tue Dec 09 03:09:49 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1998228540207345665",
+            "url": "https://pbs.twimg.com/media/G7siRS8bMAEsmXR.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1861697168861810688",
+          "name": "zhihua qi",
+          "screen_name": "QiZhihua81487",
+          "description": "",
+          "followers_count": 9,
+          "friends_count": 116,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 2,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1998233977568821464",
+      "text": "https://t.co/DAggrJLKxL",
+      "created_at": "Tue Dec 09 03:31:20 +0000 2025",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1998232914132410555",
+        "text": "年代搞久远一点哈哈 https://t.co/NbYdB1zK9G",
+        "created_at": "Tue Dec 09 03:27:06 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1998232787338620928",
+            "url": "https://pbs.twimg.com/media/G7smIgvbcAAhBOm.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1683503918477889542",
+          "name": "ShenYouX",
+          "screen_name": "shenyou_x",
+          "description": "🧓老年程序员(没秃)\n🤖硅基带路党创始成员(自封)\n🌹植物克星(养啥都挂)\n🐍小动物福星(养啥都活)\n🪵木工爱好者(弃坑)\n📹摄影爱好者(弃坑)",
+          "followers_count": 181,
+          "friends_count": 419,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1998238150322225301",
+      "text": "上海徐汇\nhttps://t.co/EfQWcQkCdn",
+      "created_at": "Tue Dec 09 03:47:55 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1998236268359208988",
+        "text": "West Bund Through the Seasons ❄️🌸🌿🍂\nThe last three shots are all Xuhui, and the first one is…\nour dreamy idea of winter — because snow in Shanghai is basically a limited-edition drop.  Thanks @dotey for the idea! https://t.co/AVGijmhaWu",
+        "created_at": "Tue Dec 09 03:40:26 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1998235751910387712",
+            "url": "https://pbs.twimg.com/media/G7so1EoasAAdyjJ.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1891341837274578944",
+          "name": "Xuhui Shanghai",
+          "screen_name": "XuhuiShanghai",
+          "description": "Discover Xuhui: Shanghai’s history, culture, and city vibes—iconic spots and endless energy!",
+          "followers_count": 115,
+          "friends_count": 10,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 0,
           "quote_count": 1
         }
       },

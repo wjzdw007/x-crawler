@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 156029,
+    "followers_count": 156066,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251212",
-  "last_updated": "2025-12-12T14:05:24.551653",
-  "tweet_count": 25,
+  "last_updated": "2025-12-12T16:05:39.786990",
+  "tweet_count": 27,
   "tweets": [
     {
       "id": "1999279438765453719",
@@ -1119,6 +1119,100 @@
         "retweet_count": 2,
         "favorite_count": 11,
         "reply_count": 4,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1999500038788292693",
+      "text": "FYI\nhttps://t.co/Is9NXBkTyg",
+      "created_at": "Fri Dec 12 15:22:12 +0000 2025",
+      "lang": "und",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1999434021416440022",
+        "text": "@dotey 这个问题之前遇到过、chatgpt建议的方法是：\n上传3张图片用来提供同一位人物的多角度参考照片，帮助AI准确锁定他的脸、五官比例、肤色、发型与身材，让生成的画面不会换脸或变成别的人物。https://t.co/6KQZlVIbmA",
+        "created_at": "Fri Dec 12 10:59:53 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1510982030",
+          "name": "小卡",
+          "screen_name": "NemoZhuge",
+          "description": "In Tokyo for 8 years🤘🏼 Programmer：Python、React、C#🐒Hobbies：Snowboard🏂、Hiking⛰️",
+          "followers_count": 687,
+          "friends_count": 3184,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 3,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1999505052981927973",
+      "text": "RT @eviljer: 🍌 Nano Banana Pro 模版快速设计方法\n\n我用 Cursor + CC（Claude Code）来设计 Nano Banana Pro 的 image prompt 模版。核心思路是把通用的视觉设计原则写入 /CLAUDE.md 作为全局…",
+      "created_at": "Fri Dec 12 15:42:08 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1999428719510016329",
+        "text": "🍌 Nano Banana Pro 模版快速设计方法\n\n我用 Cursor + CC（Claude Code）来设计 Nano Banana Pro 的 image prompt 模版。核心思路是把通用的视觉设计原则写入 /CLAUDE.md 作为全局指引，这样在迭代时就不需要反复说明那些共通的方法论——比如「让视觉效果服务于叙事」、「原则优于枚举」等底层逻辑。\n\n💡 从概念到模版的迭代流程\n\n以图 1 的「记忆碎片模版」为例：\n有一个初步想法（或者参考图）后，我会直接扔给 CC：「基于这个概念构建新模版」。它会根据全局指引快速生成首版 prompt，然后在 Cursor 里直接跑 API 看效果。 [图 2]\n\n接下来就是视觉校准的循环：看到生成结果后，针对具体问题给反馈——「玻璃平面角度不对，应该始终平行于画布」、「碎片太小了，叙事残缺」。CC 会立即更新 prompt，我确认改进后继续测试。因为全局指引已经覆盖了大量通用原则，这个过程非常高效，不需要每次都重复解释「什么是好的 prompt」。[图 3]\n\n多跑几轮对照测试，验证表现稳定后，就进入最后的精简阶段：检查 prompt 里有没有防御性的冗余描述，仅保留必要的复杂度和设计偏好。\n\n最终归档的模版就是简洁、可迁移的：填充 [Subject] 变量就能复用，AI 会根据语境自动设计。",
+        "created_at": "Fri Dec 12 10:38:48 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1999424743498481667",
+            "url": "https://pbs.twimg.com/media/G79iNfdagAMowgy.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1999424825761386496",
+            "url": "https://pbs.twimg.com/media/G79iSR6a0AArZOb.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1999424879544926212",
+            "url": "https://pbs.twimg.com/media/G79iVaRagAQ9ouM.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "717142471",
+          "name": "Jerlin",
+          "screen_name": "eviljer",
+          "description": "一人团队，连接有趣的领域专家。\n\n聚焦：AI 玩法分享 ｜ 数据分析和可视化\n产品：https://t.co/YkgdVIuSxT —— 一拍一问，生活秒变英语课\n作品集：https://t.co/YTtlIGU1Bi",
+          "followers_count": 9972,
+          "friends_count": 617,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5,
+          "favorite_count": 29,
+          "reply_count": 3,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 0,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

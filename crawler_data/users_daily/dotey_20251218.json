@@ -8,8 +8,8 @@
     "is_blue_verified": true
   },
   "date": "20251218",
-  "last_updated": "2025-12-18T20:05:41.675455",
-  "tweet_count": 9,
+  "last_updated": "2025-12-18T22:05:10.127337",
+  "tweet_count": 10,
   "tweets": [
     {
       "id": "2001463168296456330",
@@ -368,6 +368,51 @@
       "quoted": null,
       "stats": {
         "retweet_count": 4,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2001774586598506754",
+      "text": "Simon Willison（Django 框架的联合创始人）。他一边陪家人装饰圣诞树、看电影，一边用 Codex CLI + GPT-5.2，把 Emil Stenström 的 JustHTML（纯 Python、通过 html5lib-tests）端口成了一个纯 JS、零依赖的库，跑过了 9200+ 个 html5lib-tests 用例，最终产出大约 9000 行代码、43 次提交。\n\n整个过程他自己只发了 8 条左右的提示词。\n\n当然我不是来吹 Coding Agent 或者说 GPT-5.2 多牛逼的，只是正好我发现这案例本身完美命中了 Coding Agent 的舒适区。\n\n什么是 Coding Agent 的舒适区呢？\n\n1. 从一种语言“翻译”到另一种语言\n\n大语言模型最擅长的事情之一就是“照葫芦画瓢”，或者说“翻译”，无论是自然语言还是编程语言，都能做到又快又好。\n所以像这个案例中从 Python 翻译成 JS，相对就很轻松了\n\n2. 有完整的测试集合\n\n想想我们日常写代码，写完都需要测试一遍，如果不对再修改，如果这个过程需要人工介入，比如一些 UI 测试，就会很低效，但是如果 Agent 能自己测试，那么它可以从测试中收集反馈不断调整不断修复，直到把问题解决。\n\n这个 HTML5 标准有一套名为 html5lib-tests 的测试集。这是一套与语言无关的测试数据（输入是 HTML，输出是正确的解析树结构）。\n\n这就好比你让 AI 做数学题，你虽然不懂解法，但你手里有一本带标准答案的习题册。你不需要盯着 AI 写的每一行代码（过程），你只需要看它算出的结果对不对（结果）。\n\n3. 已经设计好了架构，Agent 只需要“填空”\n\nAgent 由于受上下文窗口长度限制，每次任务是没办法太长的上下文，复杂一点的项目你没法整个代码库扔过去，所以我们通常要基于架构设计将 Agent 的任务拆分成小一点的任务让它刚好在上下文窗口内完成。\n\n所以架构设计无论对于真人的项目还是 Coding 的项目都非常重要。\n\nSimon 这个项目他不需要凭空设计，直接让 Agent 参考那个 Python 项目的 API 设计。这意味着架构是现成的，AI 只需要基于现有架构去“翻译”。\n\n4. 高手来操作\n\n武侠小说里面，同样一把剑，在高手手里能发出更大的威力，毫无疑问 Simon 是高手中的高手。\n\n看 Simon 的操作流程：\n1). 制定规范 (Spec First)： 第一条提示词不是求代码，而是扔给 AI 现有的 Python 代码，让它写一份 JavaScript 版本的设计文档（Spec）。\n\n2) 冒烟测试 (Smoke Test)： 让 AI 先跑通一个最简单的“Hello World”级别的 HTML 解析，确保链路是通的。\n\n3. 死循环测试 (The Loop)：Simon 配置好 GitHub Actions，每提交一次代码就自动运行那 9000 多个测试用例。\n- AI 写代码 -> 跑测试 -> 报错 -> AI 读错误日志 -> 修正代码 -> 再跑测试。\n- 结果：AI 像个不知疲倦的程序员，用了 140 万个 Token，提交了 43 次，直到所有绿灯亮起。\n\nSimon 把这个过程称为 “设计智能体闭环” (Designing the Agentic Loop)。\n\n这就是为什么这项目对于 Agent 来说做起来很成功。\n\n---\n\n既然我们知道 Coding Agent 的舒适区或者说强项在哪里，其实我们在开发时也可以充分发挥它的强项，比如说：\n\n1. 不要着急实现，先看看有没有“葫芦”可以照着画“瓢”\n\n2. 尽量让 Agent 自己去验证需求，为 Agent 提供验证必须的工具，比如Chrome Dev Tool MCP、Lint、自动化测试等等\n\n3. 先设计好再去实现",
+      "created_at": "Thu Dec 18 22:00:27 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2001774579669139456",
+          "url": "https://pbs.twimg.com/media/G8e7X9WWAAAxkzP.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2000726866429403425",
+        "text": "I ported a Python library implementing a full HTML5 parser to JavaScript using GPT-5.2 and Codex CLI in 4.5 hours, and decorated for Christmas and watched Knives Out while I was doing it https://t.co/5BEgRO2sSf",
+        "created_at": "Tue Dec 16 00:37:11 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "12497",
+          "name": "Simon Willison",
+          "screen_name": "simonw",
+          "description": "Creator @datasetteproj, co-creator Django. PSF board. Hangs out with @natbat. He/Him. Mastodon: https://t.co/t0MrmnJW0K Bsky: https://t.co/OnWIyhX4CH",
+          "followers_count": 125608,
+          "friends_count": 5599,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 29,
+          "favorite_count": 348,
+          "reply_count": 19,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

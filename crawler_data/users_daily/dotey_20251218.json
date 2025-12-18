@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 157382,
+    "followers_count": 157412,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251218",
-  "last_updated": "2025-12-18T06:07:05.494999",
-  "tweet_count": 4,
+  "last_updated": "2025-12-18T08:07:06.390574",
+  "tweet_count": 5,
   "tweets": [
     {
       "id": "2001463168296456330",
@@ -200,6 +200,58 @@
         "favorite_count": 4,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2001537096964571640",
+      "text": "Greptile 刚发布了一份《2025 年 AI 编程现状报告》，这家公司是做 AI 代码审查的，客户从 PostHog、Brex 这样的明星创业公司到财富 500 强都有。每月大约有十亿行代码经过他们的系统，所以他们手上有不少一手数据。\n\n摘录报告中的一组数字：开发者每月产出的代码行数从 4,450 行涨到了 7,839 行，涨幅 76%。PR 的体积也在膨胀，中位数从 57 行涨到 76 行。中型团队的增幅更夸张，达到 89%。\n\n其实我以前就吐槽过很多人喜欢用代码行数去衡量生产力，因为代码不是资产是负债，代码越多意味着越难维护，AI 生成的代码多，也意味着更难维护 Bug 更多了。\n\nAI 编程工具的收益分布极不均匀。在已经有良好测试覆盖、模块边界清晰的项目里，AI 如虎添翼。但在复杂的遗留系统、需要深度领域知识的场景下，它的帮助有限甚至可能帮倒忙。\n\n但不管怎么说，现在 AI 让代码通货膨胀已经是事实。\n\nAI 让代码行数增加了，那么质量有变好吗？\n\n很遗憾报告没有提这事，毕竟代码行好统计，代码质量可不好衡量。\n\n报告里的数据还是可以看看。\n\n工具生态那部分，向量数据库市场目前群雄逐鹿，Weaviate 以 25% 份额领先，但后面跟着六七家都在 10%-25% 之间，还没分出胜负。AI 记忆包里 mem0 占了 59%，遥遥领先。规则文件方面，CLAUDE .md 以 67% 的采用率登顶，说明用 Claude 做编程智能体的开发者确实不少。\n\nSDK 下载量的变化趋势更有意思。OpenAI 还是绝对领先，月下载 1.3 亿次。但 Anthropic 的增速惊人，从 2023 年 4 月到现在增长了 1547 倍，现在稳定在 4300 万。OpenAI 与 Anthropic 的下载比例从 2024 年初的 47:1 缩小到了现在的 4.2:1。Google 的 GenAI SDK 还在 1360 万，落后明显。\n\n模型性能对比那部分，测试了 GPT-5.1、GPT-5-Codex、Claude Sonnet 4.5、Claude Opus 4.5 和 Gemini 3 Pro。几个发现值得注意。\n\n首 token 响应时间，Anthropic 的两款模型都在 2.5 秒以内，其他三个要两倍以上。别小看这几秒——在交互式编程场景下，等待时间长了你的思路就断了，得重新进入状态。\n\n吞吐量方面，OpenAI 的两款模型最快，中位数能到 60-70 tokens/秒。Anthropic 在 17-20 之间，Gemini 只有 4-5。但吞吐量高不代表一切，还得看你的使用场景是不是真需要那么快。\n\n成本对比以 GPT-5 Codex 为基准设为 1x，GPT-5.1 也是 1x，Gemini 3 Pro 是 1.4x，Claude Sonnet 4.5 是 2x，Claude Opus 4.5 是 3.3x。Anthropic 的模型明显更贵，但很多用户觉得代码质量更好，愿意为此付费。\n\n报告最后介绍了一批最新研究，包括 DeepSeek-V3 的 MoE 架构、长上下文 vs RAG 的取舍、MEM1 的恒定内存智能体框架等等。这部分更像是给专业开发者的阅读清单，不展开了。",
+      "created_at": "Thu Dec 18 06:16:45 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2001537086336167936",
+          "url": "https://pbs.twimg.com/media/G8bjYBvWcAAKeT8.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2001320807994404986",
+        "text": "Today we're releasing the first annual \"State of AI Coding\" report.\n\nAt @greptile we review a billion lines of code a month written by every coding agent imaginable.\n\nThis means we have a lot of data.\n\nIn this report, we compiled some of the most interesting trends we observed this year.\n\nLink below:",
+        "created_at": "Wed Dec 17 15:57:18 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2001320746484957184",
+            "url": "https://video.twimg.com/amplify_video/2001320746484957184/vid/avc1/1278x720/ApYjA60FCfi0BiSV.mp4?tag=14",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1564302974217687041",
+          "name": "Daksh Gupta",
+          "screen_name": "dakshgup",
+          "description": "ceo @greptile",
+          "followers_count": 14018,
+          "friends_count": 829,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 35,
+          "favorite_count": 322,
+          "reply_count": 18,
+          "quote_count": 9
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 32,
+        "reply_count": 2,
+        "quote_count": 2
       }
     }
   ]

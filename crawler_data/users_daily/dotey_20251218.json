@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 157354,
+    "followers_count": 157363,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251218",
-  "last_updated": "2025-12-18T02:36:37.938550",
-  "tweet_count": 1,
+  "last_updated": "2025-12-18T04:13:31.566345",
+  "tweet_count": 2,
   "tweets": [
     {
       "id": "2001463168296456330",
@@ -80,6 +80,51 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2001483409315516899",
+      "text": "刚看了 OpenAI 发的那篇《How we used Codex to build Sora for Android in 28 days》的凡尔赛文章，整个Sora 的安卓客户端 App大约85%的代码是AI写的。发布首日，用户24小时内生成了超过100万条视频，并且质量很稳定，无崩溃率99.9%。\n\n对于这样的结果肯定有人质疑有人觉得程序员要完。说说我看完的感觉，如果打个比方，就是几个特种兵配上了最先进的武器，自然所向披靡。所以先不用神化这个结果，然后就算我们不是特种兵，一样可以从这个结果中去学习借鉴到有价值的结果。\n\n《人月神话》作者 Fred Brooks 说过一句软件工程中被反复验证的名言：“向一个延期的软件项目增加人力，只会让它延期得更厉害”。因为增加更多的工程师往往会因为增加了沟通成本、任务碎片化和整合成本，反而降低效率。\n\n那往团队中加 AI 呢？\n\n取决于团队成员驾驭 AI 的能力。我们有句古话叫：“韩信带兵多多益善”，如果团队成员是韩信，那么 AI Agents 越多越好。OpenAI 安卓团队显然是精锐，只有 4 个人，就像一队特种兵，每个人配备了各种机器人辅助。\n\n那么他们怎么做的呢？\n\n1. 架构先行：人先搭好架子，再让AI来填空。\n\n这个架子怎么搭？\n\n团队先自己定义了App的整体架构：模块化方案、依赖注入、导航结构、认证流程、基础网络层。然后手写了几个有代表性的功能，作为范本。\n\n关键一步：他们写了大量的https://t.co/9M2TJcCBVQ文件，相当于给AI写的新人手册。比如里面会写：每次提交前必须跑detektFix检查格式，CI会卡这个。\n\n这样一来，每次启动新的Codex session，它都能快速读到这些规范。就像给新员工发一本内部wiki，减少重复解释的成本。\n\n团队总结了一句话：我们不需要告诉Codex怎么写代码，我们需要告诉它在我们团队什么才算正确。这是微妙但重要的区别。\n\n2. 先规划再写代码\n\n一开始他们也试过偷懒，直接扔一句\"这是功能需求，这是相关文件，你去实现\"。结果代码能跑，但歪得厉害，完全不符合架构预期。\n\n后来他们改了流程。任何复杂功能，第一步不是让AI写代码，而是让AI先理解系统。比如让它读一组相关文件，总结数据是怎么从API流到Repository再到ViewModel最后到UI的。然后人来纠正它的理解。\n\n理解对了，再让AI出一份实现计划，像个迷你设计文档。哪些文件要改，要引入什么新状态，逻辑怎么流转。人确认计划没问题，AI才开始动手。\n\n这个规划环节看起来慢了，其实省了大量返工。更重要的是，当你知道AI的计划是什么，review它的代码就容易多了。你是在检查执行是否符合计划，而不是对着一堆diff发呆。\n\n他们还有一个小技巧：对于特别长的任务，让AI把计划保存到文件里。这样换一个session也能继续。\n\n当多个Codex 任务同时跑起来，整个开发体验发生了质变。感觉不像在用工具，更像在管理一个团队。\n\n一个任务在做播放器优化，另一个在写搜索功能，第三个在处理错误逻辑，第四个在补测试。它们各自推进，隔一段时间就来汇报：我这个模块规划好了，你看看行不行？或者直接甩过来一个大diff。\n\n工程师的工作从写代码变成了做决策和给反馈。瓶颈不再是敲代码多快，而是大脑审查验证代码的速度多快。\n\n再次应验了《人月神话》的话，你不仅不能无限增加人力，也不能无限增加 Agent。\n\n3. 最好的跨平台框架是 AI Agent\n\n还有一个有趣的实践：跨平台开发的新范式。\n\nSora已经有iOS版本了。团队做Android时，直接把iOS代码库也挂进Codex的环境里。然后告诉Codex：参考 iOS 的代码实现，再看看我们Android的架构，你来生成相应的Kotlin代码。\n\n这就是为什么文章中开玩笑说：忘掉React Native和Flutter吧，未来的跨平台框架就是Codex。\n\n这句话半认真半玩笑。因为应用逻辑是可移植的。数据模型、网络请求、校验规则，用Swift写和用Kotlin写，本质是同一套东西。AI擅长的恰恰是这种翻译工作，给它足够的上下文，它就能在语言之间无损转换。\n\n所以回过头来看，为什么说不能过度神化呢？\n\n因为他们虽然只 4 个人，但每个人都是“韩信”那样善于带团队的角色，用起 Agent 来得心应手。但即使如此，也做不到“多多益善”，毕竟还是需要人去分配任务验证结果，人是平静。另外他们已经有了 iOS 代码，所以很多逻辑可以共用，只需要 AI 去“翻译”。\n\n但还是有很多可以学习的地方。\n\n先设计架构再去让 AI 填空，这样代码更容易维护，也更好的保证质量。\n\n先规划再写代码，让 AI 充分理解上下文再动手。很多人吐槽 Codex 太慢，但我有时候就怕 Agent 太快乱来，宁可多等会，让它多了解上下文，这样一次成功，否则返工起来时间成本更高。\n\n给 AI 好的参考，让它能照葫芦画瓢。开始的时候先花点时间把最佳实践沉淀下来，后续让 AI 去参考这些最佳实践，生成结果就会好很多。如果有其他语言的实现，让它去“翻译”也会事半功倍。\n\n能做好这些才能用好 AI 辅助开发。 AI辅助开发不是让开发的标准降低了，反而是提高了标准。\n\nAgent 擅长完成一个小的具体任务，但软件工程不是一个小的任务，它是由无数动态变化的小任务组成的。需要人去分解去验证。\n\n所以未来软件工程师的核心能力，不是写代码快，而是两件事：对系统的深度理解，以及和AI长期协作的能力。\n\n代码在变得廉价，但品味在变得昂贵。那些能定义什么是正确、什么是优雅、什么是面向未来的人，会越来越稀缺。\n\nAI把搬砖的活儿接走了，但画图纸的活儿还是你的。",
+      "created_at": "Thu Dec 18 02:43:25 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2001483400742395904",
+          "url": "https://pbs.twimg.com/media/G8ayjHUXYAAV7VK.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1999637658973405426",
+        "text": "Every startup building an app has to face the question of \"should I build my app for iOS or Android first?\" \n\nThey often end up making the painful decision of only choosing one (i.e. iOS). But thanks to Codex, we're now getting closer and closer to a world where you can _just do both_.\n\nWe're seeing this trend start internally already: where our team used Codex to ship the Android Sora app in record time (as a fast follow after the iOS app): https://t.co/DwFu9tl2HW",
+        "created_at": "Sat Dec 13 00:29:04 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "11767912",
+          "name": "Sherwin Wu",
+          "screen_name": "sherwinwu",
+          "description": "Building the @OpenAI API – gpt-5, reinforcement fine-tuning, agents SDK, responses API, and more",
+          "followers_count": 23858,
+          "friends_count": 651,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5,
+          "favorite_count": 44,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 10,
+        "favorite_count": 64,
+        "reply_count": 8,
+        "quote_count": 3
       }
     }
   ]

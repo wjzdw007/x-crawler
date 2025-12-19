@@ -1,0 +1,13 @@
+## 核心动态
+- xAI 正式推出 Grok Voice Agent API，并且相关评测显示其在语音推理/语音到语音（S2S）基准上取得领先（Big Bench Audio），标志着 xAI 在语音原生 AI 领域的实用化竞争力迅速上升。  
+- Grok 系列模型在多个榜单上频频亮相：Grok 4.1 Thinking 在 Text Arena 排名靠前，Grok 4.1 Fast 登顶 GeoMetrics 与 Agent Zero，显示模型家族在多项基准上环比提升并对抗 Claude、GPT、Gemini 等对手。  
+- 推广与生态建设同步推进：发布 Grok Imagine（图像生成）样例、鼓励用户“下载最新 Grok 应用”，并宣布 2026‑01‑17 在伦敦举行 12 小时 Grokathon（3 个获胜名额），旨在激活开发者与社区创新。  
+- SpaceX 运行里程碑被强调：转发并称赞 Falcon 9 从加州发射 27 颗 Starlink 的消息，同时为团队在 2025 年的高发射节奏（提到约 165 次发射）给予肯定，继续为向 Falcon Heavy/Starship 集中资源的过渡背书。  
+
+## 值得关注
+- Grok Voice Agent 的亮点包括：Big Bench Audio 得分 ~92.3%（新 S2S 纪录）、平均首字时间 ~0.78s（榜单上靠前）、定价公开（约 $0.05/分钟 或 $3/小时）、支持工具调用、SIP 电信接入与 100+ 语言与多种语音选择。  
+- 多条关于模型排行榜、语音/图像/代理功能的推文来自或被 xAI 相关推广账号（如 XFreeze、cb_doge、Artificial Analysis）大量转发，显示社区传播与市场营销同步发力。  
+- Grokathon（伦敦，1 月 17 日，12 小时、3 名获胜者）和“下载最新 Grok 应用”的呼吁，说明产品侧重于吸引开发者快速产出可用案例。  
+- Grok 系列不仅在文本基准表现突出（Text Arena、Agent Zero、GeoMetrics），也在多媒体基准（Big Bench Audio）取得竞争优势，表明 xAI 正在构建覆盖文本/语音/图像的全栈能力。  
+- 除技术与航天外，马斯克当天也转发并评论多条政治/文化相关内容（如对 DEI 的批评、关于 NGO 资产与“lawfare”的指摘、Blank Slate 的批评），并发表乐观论调（“未来将因 AI 与机器人带来可持续富足”）及关于建立“第二行星”以保存文明的观点。  
+- 轻量但频繁的单词推文（多次只发“Grok”）以及转发大量社区热帖，体现出集中推广 Grok 品牌的明确意图，同时通过短句保持高可见度。

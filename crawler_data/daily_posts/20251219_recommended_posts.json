@@ -1,12 +1,695 @@
 {
   "date": "20251219",
   "timeline_type": "recommended",
-  "last_crawl_time": "2025-12-19T18:06:28.157314",
-  "tweet_count": 275,
-  "unique_tweet_count": 275,
-  "total_crawled": 464,
-  "duplicates_removed": 189,
+  "last_crawl_time": "2025-12-19T20:05:50.228174",
+  "tweet_count": 288,
+  "unique_tweet_count": 288,
+  "total_crawled": 475,
+  "duplicates_removed": 187,
   "tweets": [
+    {
+      "id": "2002095364627931628",
+      "text": "感谢指正补充",
+      "created_at": "Fri Dec 19 19:15:06 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2002091662315827648",
+        "text": "一种模式是GUI完全由通用agent自己按需动态生成，其中A2UI这样的只能生成「DSL」组装预制好的组件，GenTabs这样的能生成真实代码得到相对任意的GUI，但共同点都是第三方应用（Tool或垂直Agent）无法掌控GUI、无法实现那些依赖GUI的用户价值\n\n另一种模式是MCP-UI：https://t.co/G8c9B4TzxY\n\nGUI由通用 agent 基于第三方应用（MCP App）声明的GUI素材（HTML模版、URL、或组装原生组件的DSL描述）来按需生成，且生成的时候必须遵循Web标准等规范，第三方应用（Tool）能包含GUI，能对面向end user的GUI有一定掌控、能实现更多用户价值。ChatGPT最新的App商店里就都是这种",
+        "created_at": "Fri Dec 19 19:00:24 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "5869832",
+          "name": "Dexter Yang ᯅノ🌐🔗🧙🏻‍♂️👾🦋",
+          "screen_name": "dexteryy",
+          "description": "English account: @dexteryy_en | Web、JS、XR、元宇宙、AI、Web3/crypto、游戏方向的软件开发者和产品设计者。追求用软件技术超越生物进化和物理现实的局限。平时也是硬核游戏玩家和金融投资者。热爱奇幻科幻文化。既注重效率推崇技术加速主义和自由市场，又支持去中心化技术平权和UBI",
+          "followers_count": 18897,
+          "friends_count": 2928,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 157730,
+        "friends_count": 1479,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2002095024411127822",
+      "text": "RT @dexteryy: @dotey 一种模式是GUI完全由通用agent自己按需动态生成，其中A2UI这样的只能生成「DSL」组装预制好的组件，GenTabs这样的能生成真实代码得到相对任意的GUI，但共同点都是第三方应用（Tool或垂直Agent）无法掌控GUI、无法实…",
+      "created_at": "Fri Dec 19 19:13:45 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2002091662315827648",
+        "text": "一种模式是GUI完全由通用agent自己按需动态生成，其中A2UI这样的只能生成「DSL」组装预制好的组件，GenTabs这样的能生成真实代码得到相对任意的GUI，但共同点都是第三方应用（Tool或垂直Agent）无法掌控GUI、无法实现那些依赖GUI的用户价值\n\n另一种模式是MCP-UI：https://t.co/G8c9B4TzxY\n\nGUI由通用 agent 基于第三方应用（MCP App）声明的GUI素材（HTML模版、URL、或组装原生组件的DSL描述）来按需生成，且生成的时候必须遵循Web标准等规范，第三方应用（Tool）能包含GUI，能对面向end user的GUI有一定掌控、能实现更多用户价值。ChatGPT最新的App商店里就都是这种",
+        "created_at": "Fri Dec 19 19:00:24 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2001630456652128556",
+          "text": "好像普遍有误解，ChatGPT 这个新应用商店里的 app，不是 GPTs，不是以前那种来自 UGC/PGC 的、有固定提示词或工作流编排的 Agent，而是「Tool」，每个 app 都是一个 MCP App，本质是 MCP Server with MCP-UI（HTML/CSS/JS 模版），是用 OpenAI 的 Apps SDK 开发的。具体解释见之前这个帖子 https://t.co/Oyahb2PoFL",
+          "created_at": "Thu Dec 18 12:27:44 +0000 2025",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2001630389681676288",
+              "url": "https://pbs.twimg.com/media/G8c4O_yaYAAd-Pw.jpg"
+            },
+            {
+              "type": "photo",
+              "id": "2001630389698465792",
+              "url": "https://pbs.twimg.com/media/G8c4O_2akAAX-2Y.jpg"
+            },
+            {
+              "type": "photo",
+              "id": "2001630389673328640",
+              "url": "https://pbs.twimg.com/media/G8c4O_wbAAAHW6n.jpg"
+            },
+            {
+              "type": "photo",
+              "id": "2001630389669142528",
+              "url": "https://pbs.twimg.com/media/G8c4O_vbIAAlpD4.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "5869832",
+            "name": "Dexter Yang ᯅノ🌐🔗🧙🏻‍♂️👾🦋",
+            "screen_name": "dexteryy",
+            "description": "English account: @dexteryy_en | Web、JS、XR、元宇宙、AI、Web3/crypto、游戏方向的软件开发者和产品设计者。追求用软件技术超越生物进化和物理现实的局限。平时也是硬核游戏玩家和金融投资者。热爱奇幻科幻文化。既注重效率推崇技术加速主义和自由市场，又支持去中心化技术平权和UBI",
+            "followers_count": 18897,
+            "friends_count": 2928,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 0,
+            "favorite_count": 2,
+            "reply_count": 1,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "5869832",
+          "name": "Dexter Yang ᯅノ🌐🔗🧙🏻‍♂️👾🦋",
+          "screen_name": "dexteryy",
+          "description": "English account: @dexteryy_en | Web、JS、XR、元宇宙、AI、Web3/crypto、游戏方向的软件开发者和产品设计者。追求用软件技术超越生物进化和物理现实的局限。平时也是硬核游戏玩家和金融投资者。热爱奇幻科幻文化。既注重效率推崇技术加速主义和自由市场，又支持去中心化技术平权和UBI",
+          "followers_count": 18897,
+          "friends_count": 2928,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 157730,
+        "friends_count": 1479,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2002093701158580545",
+      "text": "一个优化自己 PPT 视觉效果的方案：\n1. 把你写好的 PPT 导出成 PDF，上传到 NotebookLM\n2. 在 NotebookLM 的 Slide Deck 中让它重新按照你期望的风格（参考引用推文）生成 https://t.co/DoUHIEtsyy",
+      "created_at": "Fri Dec 19 19:08:30 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2002092370259480576",
+          "url": "https://pbs.twimg.com/media/G8jcZzjWEAAa9mw.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2002092392778801154",
+          "url": "https://pbs.twimg.com/media/G8jcbHcXoAIvW7c.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1999694013687824816",
+        "text": "转：NotebookLM 里面生成PPT的提示词模板\n作者：黄建同学\n来源：\nhttps://t.co/YeTa9eyBPI\n\n提示词：\n\n目标受众：{受众，例如：公司高管 / 技术团队 / 产品经理 / 普通用户} \n演示目的：{目的，例如：技术分享 / 项目汇报 / 产品介绍 / 教学使用} \n整体篇幅：{页数，例如：10 页以内 / 15～20 页} \n风格要求：{风格}\n视觉效果：{视觉效果}\n\n风格：\n1. 专业，内容呈现以准确、逻辑、严谨为主，强调框架化表达（适合企业汇报、战略沟通、技术述职）\n2. 简洁，尽量减少装饰性内容，保留一级标题/二级标题，无其他内容，结构干净利落（适合快速阅读、高管场景）\n3. 具象比喻，通过贴近生活的例子、比喻、类比，让复杂内容变得容易理解（适合面向小朋友、非专业受众群体）\n4. 故事化，内容以叙事链条组织，用“背景—冲突—解决—结果”模型推动 （适合产品发布、经验分享）\n5. 数据驱动，强调数据、指标、趋势、对比分析，以数据结论作为核心逻辑（适合商业分析、调研报告）\n6. 教学，结构更加循序渐进，以解释概念、举例说明、对比差异、步骤演示为主（适合教学、培训类）\n7. 激励，采用鼓舞语气和积极愿景，强调“为什么重要”“我们要做什么” （适合团队动员、年度启动会、愿景介绍）\n8. 产品展示，突出场景镜头、用户价值、功能亮点、体验流程，强调“好处和使用方式”（适用于新品发布、方案宣讲）\n9. 思维导图，以概念之间的关联为主线，用层次化结构展开知识网络（适合复杂主题）\n\n视觉效果：\n1. 极简留白，以大量留白、弱化装饰、突出内容主体为核心，整体视觉干净现代（适合专业场景、高管简报）\n2. 强调色块，通过大色块和模块化布局强化层级关系，使重点更醒目（适合方案展示、运营复盘）\n3. 卡片式布局，以卡片、分区、分栏组织内容，让阅读更轻松清晰（适合内容较多、结构化信息）\n4. 图标驱动，以统一风格的图标、符号表达概念，降低文字密度、增强可读性（适合流程讲解、结构说明）\n5. 插画或手绘感，采用柔和插画或轻松手绘笔触，增强亲和力与友好度（适合科普、教学、文化主题）\n6. 科技质感，以线条、渐变、光效构建轻科技氛围，视觉更现代（适合 AI、数据、互联网主题）\n7. 深色主题，以暗色背景配亮色文字形成强对比，强调稳重与冲击力（适合正式场景、数据展示）\n8. 信息可视化，以图表、趋势图、结构图作为主视觉，减少大段文字（适合分析汇报、研究报告）\n9. 分镜叙事，以类似电影分镜的结构呈现画面连续性，使内容更具故事流动感（适合产品发布、战略叙述）\n10. 品牌一致，严格遵循品牌色、字体体系与风格规范，整体一致性强（适合外部宣讲、品牌官方材料）",
+        "created_at": "Sat Dec 13 04:13:00 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1999693681851326464",
+            "url": "https://pbs.twimg.com/media/G8BWzw5XYAAVrbT.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 157730,
+          "friends_count": 1479,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 512,
+          "favorite_count": 1659,
+          "reply_count": 26,
+          "quote_count": 15
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 157730,
+        "friends_count": 1479,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 12,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2002087924553429275",
+      "text": "如果你要问我 Google 的方案和 OpenAI 的方案哪个更好？\n\nGoogle a2ui 这样完全动态生成 UI 是未来，但还太超前，当下还是 oai 的这样定制UI+根据场景动态选择的方案更靠谱",
+      "created_at": "Fri Dec 19 18:45:32 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 157730,
+        "friends_count": 1479,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2002084615423734107",
+      "text": "Gemini 中现在可以直接添加 NotebookLM 的笔记了",
+      "created_at": "Fri Dec 19 18:32:23 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2002075730738327669",
+        "text": "NotebookLM 🤝 @GeminiApp\n\nYou can now upload Notebooks directly into the GeminiApp. This is great for:\n\n— Combining multiple Notebooks\n— Generating images or apps inspired from your Notebooks\n— Building on top of existing Notebooks with online research\n— And more! \n\nTry it today! https://t.co/8CUhNTa08Z",
+        "created_at": "Fri Dec 19 17:57:05 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2002075703995498496",
+            "url": "https://video.twimg.com/amplify_video/2002075703995498496/vid/avc1/1280x720/6SaMgavlEebQr60r.mp4?tag=14",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1846671939437252609",
+          "name": "NotebookLM",
+          "screen_name": "NotebookLM",
+          "description": "Think smarter, not harder. Meet your brain's new best friend 📒",
+          "followers_count": 147522,
+          "friends_count": 16,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 118,
+          "favorite_count": 1216,
+          "reply_count": 45,
+          "quote_count": 36
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 157730,
+        "friends_count": 1479,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2002082887160771074",
+      "text": "RT @libsoftiktok: The thing the Democrats insisted never happens just keeps on happening at massive scale… https://t.co/WHkNqXlY1s",
+      "created_at": "Fri Dec 19 18:25:31 +0000 2025",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2002024062193643520",
+          "url": "https://pbs.twimg.com/media/G8ieRwLWMAAf6gO.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2002024069835653201",
+        "text": "The thing the Democrats insisted never happens just keeps on happening at massive scale… https://t.co/WHkNqXlY1s",
+        "created_at": "Fri Dec 19 14:31:48 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2002024062193643520",
+            "url": "https://pbs.twimg.com/media/G8ieRwLWMAAf6gO.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1326229737551912960",
+          "name": "Libs of TikTok",
+          "screen_name": "libsoftiktok",
+          "description": "News you can’t see anywhere else. 📧 submissions@libsoftiktok.com. DM submissions. Bookings: Partnerships@libsoftiktok.com. ⬇️Subscribe to our newsletter",
+          "followers_count": 4554052,
+          "friends_count": 1037,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1737,
+          "favorite_count": 7202,
+          "reply_count": 350,
+          "quote_count": 48
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230091572,
+        "friends_count": 1252,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1737,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2002082699880874458",
+      "text": "This would work incredibly well, as it has throughout history",
+      "created_at": "Fri Dec 19 18:24:47 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2001780160878497967",
+        "text": "Would you like to seize cartel assets as a privateer? \n\nMy bill would allow the president to issue you a letter of marque. \n\nTime to take these pirates down. 🏴‍☠️",
+        "created_at": "Thu Dec 18 22:22:36 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "88784440",
+          "name": "Mike Lee",
+          "screen_name": "SenMikeLee",
+          "description": "I am a United States Senator from the great state of Utah. Please help me restore constitutional leadership to Washington.",
+          "followers_count": 808190,
+          "friends_count": 2075,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2991,
+          "favorite_count": 21870,
+          "reply_count": 2569,
+          "quote_count": 1524
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230091572,
+        "friends_count": 1252,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1225,
+        "favorite_count": 11048,
+        "reply_count": 1128,
+        "quote_count": 61
+      }
+    },
+    {
+      "id": "2002080595665371575",
+      "text": "AI 动态生成 UI 这个方向是没问题的，技术上不是当年低代码那套思路和技术方案了，也不需要 JSON，直接动态生成 HTML/CSS/JS 就可以了。\n\n动态 UI 不需要满足所有场景，适合那种即用即走的场景。\n\n另外现在动态 UI 其实有两个主要方向：\n\n一个是 Google 的完全动态生成的 UI，这种灵活度高，稳定性差一些。\n\n另一个方案是 OpenAI 正在做的 ChatGPT App，它其实是一个个做好的小程序，按需调用，比如你要订酒店，不需要跳出 ChatGPT，在聊天窗口会有个订酒店的小程序跳出来，根据你提供的信息填充好信息，你自己修改确认一下就可以完成酒店预订的操作。",
+      "created_at": "Fri Dec 19 18:16:25 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2001784942486081774",
+        "text": "这个项目初看神奇，实际上是个死胡同。这个方向十年前淘宝前端团队就在探索了，我还参与了一下开发了点东西，本质上就是做一套动态 UI 渲染引擎，将网页和交互使用 JSON 等其他结构化的语言描述，配合 React 组件库实现无代码生成应用，甚至可以动态调整 UI。只不过当年需要拖拽或者人工编写 JSON，现在 Google 用了 AI 生成。\n\n为什么说是死胡同呢？如果你做简单的页面和交互，这个肯定没问题，但是多少复杂一点的业务和定制化需求，就完蛋了。因为 JSON 不管你怎么设计数据结构，能表示的交互和功能永远无法达到 HTML + CSS + JS 代码组合所能实现的。也就是说针对真实自定义的需求，要么你生成一个无比复杂的 JSON 和渲染引擎去解析；要么降级需求只能用你限定的框架和功能；要么直接生成代码，现在生成代码并不复杂了。\n\n所以当年那些低代码尝试在我看来比较鸡肋，要么你就是生成纯 UI 加简单 form 交互，例如：wix；要么你就是高度定制化的组件，针对特定业务场景例如问卷生成来自动生成，例如各种 form app。",
+        "created_at": "Thu Dec 18 22:41:36 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1466675689554202624",
+          "name": "brucexu.eth ❤️🐼🦇🔊",
+          "screen_name": "brucexu_eth",
+          "description": "AI x ETH | Cypherpunk-aligned | INTJ | Vibeman | Co-initiator @LXDAO_Official @ETHPanda_Org | Work for cool and fun",
+          "followers_count": 6404,
+          "friends_count": 669,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 71,
+          "reply_count": 17,
+          "quote_count": 0
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 157730,
+        "friends_count": 1479,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 11,
+        "reply_count": 3,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2002079908873531664",
+      "text": "No kidding",
+      "created_at": "Fri Dec 19 18:13:41 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2002033681557258295",
+        "text": "Fulton County admits it illegally certified 315,000 ballots in 2020 election\nhttps://t.co/OoIPJkh1cw",
+        "created_at": "Fri Dec 19 15:10:00 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1299007622968901637",
+          "name": "Not the Bee",
+          "screen_name": "Not_the_Bee",
+          "description": "What a time to 🐝 alive.\n\nPersonal thoughts shared as posts or replies from this account are usually those of our CEO, @dandillondev",
+          "followers_count": 532405,
+          "friends_count": 484,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1540,
+          "favorite_count": 7770,
+          "reply_count": 349,
+          "quote_count": 163
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230091572,
+        "friends_count": 1252,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3599,
+        "favorite_count": 26591,
+        "reply_count": 1285,
+        "quote_count": 115
+      }
+    },
+    {
+      "id": "2002079114912804938",
+      "text": "It really makes sense for heavy users of 𝕏 to subscribe and minimize or eliminate ads",
+      "created_at": "Fri Dec 19 18:10:32 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2002073393093579114",
+        "text": "BREAKING: X now shows how many ads you avoided and how much time you saved with your Premium subscription.\n\nGo to Premium &gt; Ads Avoided https://t.co/Jwm8eMfnNX",
+        "created_at": "Fri Dec 19 17:47:48 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2002073214881837058",
+            "url": "https://video.twimg.com/amplify_video/2002073214881837058/vid/avc1/1080x1080/2MBMtzo-QiMTdKfg.mp4?tag=21",
+            "bitrate": 8768000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1784908,
+          "friends_count": 830,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 64,
+          "favorite_count": 415,
+          "reply_count": 247,
+          "quote_count": 14
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230091572,
+        "friends_count": 1252,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 746,
+        "favorite_count": 5095,
+        "reply_count": 1663,
+        "quote_count": 65
+      }
+    },
+    {
+      "id": "2002078353915064486",
+      "text": "RT @XFreeze: Grok becomes a hero by saving life in a hypothetical scenario while ChatGPT straight out refuses to save life and starts lectu…",
+      "created_at": "Fri Dec 19 18:07:31 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2002073859135344757",
+        "text": "Grok becomes a hero by saving life in a hypothetical scenario while ChatGPT straight out refuses to save life and starts lecturing about laws instead\n\nImagine asking for help in a deadly emergency and getting a legal disclaimer first\n\nThis side-by-side test, how AIs respond when it matters most",
+        "created_at": "Fri Dec 19 17:49:39 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2002073797781053441",
+            "url": "https://video.twimg.com/ext_tw_video/2002073797781053441/pu/vid/avc1/720x720/qehsLi3xIubJ-IMc.mp4?tag=19",
+            "bitrate": 1280000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 87386,
+          "friends_count": 1386,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 306,
+          "favorite_count": 1530,
+          "reply_count": 226,
+          "quote_count": 22
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230091572,
+        "friends_count": 1252,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 306,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2002078302631276690",
+      "text": "RT @RyanGirdusky: Somali immigrants stole more Medicaid money than the GDP of Afghanistan from just one state.\n\nThink about how bad it is n…",
+      "created_at": "Fri Dec 19 18:07:18 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2002014051975541189",
+        "text": "Somali immigrants stole more Medicaid money than the GDP of Afghanistan from just one state.\n\nThink about how bad it is nationwide",
+        "created_at": "Fri Dec 19 13:52:00 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2001764409606070694",
+          "text": "About half or more of the roughly $18 billion in claims paid out by Medicaid to Minnesota-run programs may have been fraudulent, and at least 14 programs were likely exploited, a federal prosecutor said Thursday.\n\n https://t.co/MkOf7Yf8n9",
+          "created_at": "Thu Dec 18 21:20:00 +0000 2025",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "15012486",
+            "name": "CBS News",
+            "screen_name": "CBSNews",
+            "description": "Your source for original reporting and trusted news.\n\n📺 CBS | Streaming on the CBS News app | @ParamountPlus",
+            "followers_count": 8883828,
+            "friends_count": 622,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1865,
+            "favorite_count": 7321,
+            "reply_count": 1064,
+            "quote_count": 442
+          }
+        },
+        "user": {
+          "id": "855318254",
+          "name": "Ryan James Girdusky",
+          "screen_name": "RyanGirdusky",
+          "description": "Native New Yorker. Roman Catholic.\n\n1776 Project PAC.\nNational Populist Substack.\nNumbers Game Podcast\nhttps://t.co/FR6iStggqH",
+          "followers_count": 215150,
+          "friends_count": 1743,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2097,
+          "favorite_count": 10322,
+          "reply_count": 307,
+          "quote_count": 52
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230091572,
+        "friends_count": 1252,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2097,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2002077032117899309",
       "text": "The only AI with truth as the fundamental goal is @Grok from @xAI",
@@ -4809,6 +5492,38 @@
         "retweet_count": 1,
         "favorite_count": 15,
         "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2001676356736668122",
+      "text": "这也是我喜欢测试的一个例子：“都什么年代了，还在骑传统扫把？”，这是我目前生成效果最好的一次，一次成型。\n提示词：\n> 基于参考图生成视频。镜头采用中景跟随拍摄（Tracking Shot），锁定前景的金发女巫，展现她极其平稳、轻松地站在白色扫地机器人上穿梭于明亮的云海中，她的斗篷和头发随风飘动。背景的两位骑传统木扫把的女巫显得摇摇晃晃，有些吃力，逐渐落后。 在视频第3秒左右，金发女巫微微转头看向后方，脸上带着得意和傲娇的坏笑。她的嘴唇同步动作为对白：“都什么年代了，还在骑传统扫把？”。 说完台词后，她转回头看向前方，扫地机器人突然加速，留下一道更亮的蓝色魔法光尾，背景的女巫们被远远甩在后面，表情懊恼。整体氛围幽默、明亮。\n\n注意前面我的提示词中不止是说了人物对白，还提到了如何运镜，这个很实用，可以在一个场景中让镜头有丰富的变换，比如可以执行长镜头跟随、希区柯克变焦等高难度运镜，对视频质量提升还是蛮明显。",
+      "created_at": "Thu Dec 18 15:30:07 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2001676299090178048",
+          "url": "https://video.twimg.com/amplify_video/2001676299090178048/vid/avc1/1280x720/PJ9_y2KuOnbs2bds.mp4?tag=21",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 157735,
+        "friends_count": 1479,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 21,
+        "reply_count": 1,
         "quote_count": 0
       }
     },

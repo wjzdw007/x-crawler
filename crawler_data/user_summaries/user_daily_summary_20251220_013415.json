@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2025-12-20T01:34:15.313284",
+  "tweet_count": 15,
+  "summary": "**新工具/技术**（如有）\n- Gem — 在对话中作为可调用的小程序/插件，可以直接输入内容并默认使用画图工具，方便生成图像或交互组件。\n- New Gem — Gem 的更简化入口，使用体验更简单（create new gem 有时会引导到 Opal mini app）。\n- NanoBanana Pro — 图像生成模型版本，效果优于旧版 NanoBanana，需在提示词或图片菜单里明确指定以确保质量。\n- NotebookLM ↔ Gemini 集成 — 可以在 Gemini 中直接添加/上传 NotebookLM 的笔记本，用于合并笔记、生成图片或基于笔记扩展应用。\n- Qwen-Image-Layered — 阿里开源的原生图像分层模型，支持物理隔离的RGBA层、可控层数与无限深度分解（便于编辑）。\n- MCP-UI / ChatGPT Apps SDK — 用于第三方 App 声明 GUI（HTML/CSS/JS 模板），使第三方工具能在通用 agent 中保有界面控制权。\n\n**核心观点/方法论**（如有）\n- 动态生成 UI 有两种路线 — Google 的完全动态生成（灵活性高但稳定性差）与 OpenAI 的小程序式（预制组件按需调用，更稳健、实用）。\n- 直接生成 HTML/CSS/JS 更优于用 JSON/DSL 描述 UI — 因为代码组合的表达力更强，能覆盖更复杂的定制化需求。\n- ChatGPT/通用大模型正在演化为一种新的“Agentic 浏览器” — 它不是单纯的聊天或搜索界面，而是新的交互平台和渲染引擎。\n- 分块迁移 + checklist 的迭代方法 — 先做 plan 再用 markdown checklist 分步执行，适合多文件项目但要控制迭代次数以免质量退化。\n- 明确模型与版本在提示词中至关重要 — 指定使用 pro 版本或在客户端查看模型元信息，能减少“偷懒”或幻觉的结果。\n- 图像分层能力将改变创作与编辑流程 — 从自动素材拆分到细粒度编辑，能催生多种新应用（素材市场、自动抠图、交互编辑器）。\n\n**实践经验/案例**（如有）\n- 迁移任务实践：先列 plan，再生成 checklist.md，逐项勾选并多次执行，可把大项目拆成可控子任务，但过多重复会导致后期执行质量下降。\n- PPT 视觉优化：把现有 PPT 导出成 PDF 上传到 NotebookLM，在 Slide Deck 中按目标风格重新生成，能快速得到多套视觉改版方案。\n- 提升图像生成质量：当感觉画质下降时，在提示词中写“使用 nano banana pro”并在图片右上菜单查看模型；若非 pro 可用 pro 重画（需额度）。\n- Gem 流程说明：把功能做成 Gem 可以一键输入并调用画图工具；create new gem 可能跳到 Opal mini app，New Gem 则提供更直接的入口。\n- 图像分层落地：Qwen-Image-Layered 的 Photoshop 级分层可用于构建本地编辑器、素材分发和自动化图像处理流水线，具备产业化潜力。",
+  "metadata": {
+    "original_tweets": 10,
+    "retweets": 5,
+    "media_tweets": 4,
+    "data_hash": "aabb688a",
+    "user": "dotey"
+  }
+}

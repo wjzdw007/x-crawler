@@ -1,12 +1,458 @@
 {
   "date": "20251220",
   "timeline_type": "recommended",
-  "last_crawl_time": "2025-12-20T18:06:11.486897",
-  "tweet_count": 216,
-  "unique_tweet_count": 216,
-  "total_crawled": 412,
-  "duplicates_removed": 196,
+  "last_crawl_time": "2025-12-20T20:05:03.141815",
+  "tweet_count": 224,
+  "unique_tweet_count": 224,
+  "total_crawled": 416,
+  "duplicates_removed": 192,
   "tweets": [
+    {
+      "id": "2002465295047479548",
+      "text": "Redis 之父 Salvatore Sanfilippo 最近发了一篇年终 AI 反思，一共 8 条观点。\n\n先说个背景：Salvatore 不是 AI 圈的人，他是程序员圈的传奇。2009 年创造了 Redis，这个数据库如今是全球最流行的缓存系统之一。2020 年他从 Redis 退休，去做自己的事。2024 年底回归 Redis，同时成了 AI 工具的深度用户，Claude 是他的编码伙伴。\n\n这种身份很有意思——他既是技术大牛，又是 AI 的普通使用者，视角比纯 AI 研究者更接地气。\n\n一、随机鹦鹉的说法，终于没人信了\n\n2021 年，Google 的研究员 Timnit Gebru 等人发了篇论文，给大语言模型起了个外号叫随机鹦鹉。意思是这些模型只是在概率性地拼凑文字，既不理解问题是什么意思，也不知道自己在说什么。\n\n这个比喻很形象，传播很广。但 Salvatore 说，到 2025 年，几乎没人再这么说了。\n\n为什么？因为证据太多了。LLM 在律师资格考试、医学考试、数学竞赛上的表现超过了绝大多数人类。更关键的是，研究者通过逆向工程这些模型，发现里面确实形成了对概念的内部表征，不是简单的词语拼贴。\n\nGeoffrey Hinton 的说法最直接：要准确预测下一个词，你必须理解这个句子。理解不是预测的替代品，而是做好预测的必要条件。\n\n当然，LLM 是不是真的理解，哲学上还可以争论。但实用层面，这个争论已经结束了。\n\n二、思维链是个被低估的突破\n\n思维链，就是让模型在回答之前先把思考过程写出来。看起来简单，背后的机制却很深。\n\nSalvatore 认为它做了两件事：\n\n第一，它让模型在回答前先采样自己的内部表征。说人话就是，先把和问题相关的概念、信息调动到上下文里，再基于这些信息回答。这有点像人考试前先在草稿纸上列提纲。\n\n第二，结合强化学习，模型学会了如何一步步把思考推向正确答案。每一个 token 的输出都会改变模型的状态，强化学习帮它找到那条能收敛到好答案的路径。\n\n这不是什么神秘的东西，但效果惊人。\n\n三、算力扩张的瓶颈被打破了\n\n以前 AI 圈有个共识：模型能力的提升取决于训练数据量，而人类产出的文本是有限的，所以扩张迟早会撞墙。\n\n但现在有了可验证奖励的强化学习，情况变了。\n\n什么是可验证奖励？就是有些任务，比如优化程序速度、证明数学定理，模型可以自己判断结果好不好。程序跑得更快就是更好，证明对了就是对了，不需要人来标注。\n\n这意味着模型可以在这类任务上持续自我提升，产生几乎无限的训练信号。Salvatore 认为，这将是 AI 下一个大突破的方向。\n\n还记得 AlphaGo 第 37 手吗？那步棋当时没人看懂，后来证明是神之一手。Salvatore 觉得，LLM 在某些领域也可能走出这样的路径。\n\n四、程序员的态度转变了\n\n一年前，程序员圈子还分成两派：一派觉得 AI 辅助编程是神器，一派觉得是玩具。现在，怀疑派大规模倒戈了。\n\n原因很简单：投入产出比过了临界点。模型确实会犯错，但它节省的时间已经远超你修正错误的成本。\n\n有趣的是，程序员使用 AI 的方式分成了两派：一派把 LLM 当\"同事\"，主要通过网页界面对话式地用。Salvatore 自己就是这派，用 Gemini、Claude 这些的网页版，像跟一个懂行的人聊天一样协作。\n\n另一派把 LLM 当\"独立自主的编码智能体\"，让它自己去写代码、跑测试、修 bug，人类主要负责审核。\n\n这两种用法背后是不同的哲学：你是把 AI 当助手，还是当执行者？\n\n五、Transformer 可能就是那条路\n\n一些知名 AI 科学家开始探索 Transformer 之外的架构，成立公司研究显式符号表征或世界模型。\n\nSalvatore 对此持开放但谨慎的态度。他认为 LLM 本质上是在一个可微分的空间里近似离散推理，不是不可能在没有根本性新范式的情况下就达到 AGI。而且，AGI 可能通过多种完全不同的架构独立实现。\n\n换句话说，条条大路通罗马。Transformer 可能不是唯一的路，但也不一定是死路。\n\n六、思维链没有改变 LLM 的本质\n\n有人改口了。以前说 LLM 是随机鹦鹉，现在承认 LLM 有能力了，但又说思维链从根本上改变了 LLM 的本质，所以以前的批评仍然对。\n\nSalvatore 直接说：他们在撒谎。\n\n架构没变，还是 Transformer。训练目标没变，还是预测下一个 token。CoT 也是一个 token 一个 token 生成的，跟生成别的内容没有本质区别。你不能因为模型变强了就说它\"变成了另一个东西\"，来给自己的错误判断找台阶下。\n\n这话说得挺不客气，但逻辑上确实站得住。科学判断应该基于机制，不能因为结果变了就改定义。\n\n还有一个案例很能说明问题：ARC 测试。\n\n七、ARC 测试从反 LLM 变成了亲 LLM\n\nARC 是 François Chollet 在 2019 年设计的测试，专门用来衡量抽象推理能力。它的设计初衷就是抗记忆、抗暴力穷举，只能靠真正的推理来解。\n\n当时很多人认为，LLM 永远过不了这个测试。因为它需要的是从极少样本中归纳规则、应用到新情况的能力，这恰恰是随机鹦鹉做不到的。\n\n结果呢？2024 年底，OpenAI 的 o3 在 ARC-AGI-1 上达到了 75.7% 的准确率。2025 年，即使是更难的 ARC-AGI-2，顶尖模型也能达到 50% 以上。\n\n这个逆转挺讽刺的。当初设计这个测试，就是为了证明 LLM 不行。结果它反而成了证明 LLM 可以的证据。\n\n八、未来 20 年的根本挑战\n\n最后一条只有一句话：未来 20 年 AI 的根本挑战是避免灭绝。\n\n没有展开，就这么一句。但你知道他在说什么。当 AI 真的变得足够强大，\"怎么确保它不会出大问题\"就不再是科幻话题了。\n\nSalvatore 不是 AI 的狂热信徒，也不是怀疑论者。他是一个既懂技术又在实际用 AI 的人。不是纯学术的视角，也不是纯商业的吹捧，而是一个资深工程师的冷静观察。\n\n他的核心判断是：LLM 比很多人愿意承认的要强大得多，强化学习正在打开新的可能性，而我们对这些系统的理解还远远不够。\n\n这大概就是 2025 年 AI 发展的真实状态：能力在加速，争议在减少，但不确定性仍然巨大。",
+      "created_at": "Sat Dec 20 19:45:05 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2002465148296970240",
+          "url": "https://pbs.twimg.com/media/G8ovcV9XQAAVmkF.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2002302727376773280",
+        "text": "Reflections on AI at the end of 2025:\n\nhttps://t.co/ZVdLU0Tcy4",
+        "created_at": "Sat Dec 20 08:59:05 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "5813712",
+          "name": "antirez bsky social",
+          "screen_name": "antirez",
+          "description": "Reproducible bugs are candies.",
+          "followers_count": 44210,
+          "friends_count": 752,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 86,
+          "reply_count": 3,
+          "quote_count": 0
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 158107,
+        "friends_count": 1485,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 4,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2002464787712893283",
+      "text": "RT @tetsuoai: entropy reversal engine\n\nprompt one: generation. prompt two: animation. \n\ngrok image prompt: \n\nA photorealistic digital rende…",
+      "created_at": "Sat Dec 20 19:43:04 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2002205814678073594",
+        "text": "entropy reversal engine\n\nprompt one: generation. prompt two: animation. \n\ngrok image prompt: \n\nA photorealistic digital rendering of a heavily modified Tesla Roadster on a rain-slicked street in a cyberpunk Tokyo night scene, captured from a low-angle rear three-quarter view emphasizing the car's aggressive stance and dramatic lighting. The Tesla features a glossy black and vibrant yellow geometric camouflage wrap with sharp angular patterns, a massive fixed rear wing labeled \"Tesla\" in white and red lettering, \"GROK IMAGINE\" branding on the trunk in bold yellow, glowing circular red-orange taillights fully illuminated, dual center-exit exhaust pipes, wide matte black wheels with low-profile tires, red brake calipers, and a Japanese license plate reading \"69-420\" in white on black.\n\nThe wet asphalt road reflects intense neon glows in pink, purple, blue, and yellow, with scattered rain droplets and puddles creating mirror-like surfaces capturing the car's taillights and surrounding lights. Background: dense urban alley lined with tall buildings covered in vibrant multicolored neon signs featuring large Japanese kanji and katakana characters (prominent yellow vertical sign with red kanji on the left, various pink, blue, and orange billboards), blurred bokeh light orbs from distant traffic and signage, hazy atmospheric fog from rain, high contrast moody lighting with strong neon reflections and subtle volumetric glow, cyberpunk aesthetic, ultra-detailed textures on wet surfaces, sharp focus on the car fading to soft depth-of-field blur in the distance.\n\ngrok video prompt: \n\ncrane shot in, fast motion, zoom in, text: 'grok'",
+        "created_at": "Sat Dec 20 02:34:00 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2002204599466536961",
+            "url": "https://video.twimg.com/amplify_video/2002204599466536961/vid/avc1/710x480/Ekh3BVE2r3dw62Ng.mp4?tag=23",
+            "bitrate": 5184000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1587601034339561472",
+          "name": "tetsuo",
+          "screen_name": "tetsuoai",
+          "description": "ℭ & 𝔄𝔰𝔰𝔢𝔪𝔟𝔩𝔶 𝔰𝔦𝔫𝔠𝔢 ’94",
+          "followers_count": 218414,
+          "friends_count": 676,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 120,
+          "favorite_count": 819,
+          "reply_count": 157,
+          "quote_count": 18
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230159266,
+        "friends_count": 1252,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 120,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2002462887013724177",
+      "text": "RT @SawyerMerritt: Review of @Tesla’s FSD (Supervised) from local media in Australia:\n\n\"Driving in Australia will never be the same. Once y…",
+      "created_at": "Sat Dec 20 19:35:30 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2002176414280306725",
+        "text": "Review of @Tesla’s FSD (Supervised) from local media in Australia:\n\n\"Driving in Australia will never be the same. Once you’ve driven with FSD for any length of time, it’s hard to imagine life without it. There’s no looking back. Tesla don’t want us to say this but is close to a robot car as you can get.\"",
+        "created_at": "Sat Dec 20 00:37:10 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2002175971625984000",
+            "url": "https://pbs.twimg.com/media/G8kocC6W4AAErCt.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2002176151213543425",
+            "url": "https://pbs.twimg.com/media/G8komf7XkAEQR1Z.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EV/space/tech news. Bringing you the latest news in a single, easy-to-read feed. $TSLA investor & Model Y owner.",
+          "followers_count": 1012574,
+          "friends_count": 417,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 228,
+          "favorite_count": 2008,
+          "reply_count": 132,
+          "quote_count": 17
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230159266,
+        "friends_count": 1252,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 228,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2002462442367201589",
+      "text": "True",
+      "created_at": "Sat Dec 20 19:33:44 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2002181479120711759",
+        "text": "I bet you California fraud is 10 times worse than Minnesota.",
+        "created_at": "Sat Dec 20 00:57:18 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1421446810149822465",
+          "name": "Mark Mitchell, Rasmussen Reports",
+          "screen_name": "honestpollster",
+          "description": "Professional question asker.  The pollster Fox News needs, but doesn't want - https://t.co/wYnjBjR1nv - @rasmussen_poll",
+          "followers_count": 136453,
+          "friends_count": 1935,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2625,
+          "favorite_count": 30963,
+          "reply_count": 1107,
+          "quote_count": 185
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230159266,
+        "friends_count": 1252,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 995,
+        "favorite_count": 10799,
+        "reply_count": 1111,
+        "quote_count": 40
+      }
+    },
+    {
+      "id": "2002460050980548915",
+      "text": "RT @buitengebieden: Positivity is the key on 𝕏..",
+      "created_at": "Sat Dec 20 19:24:14 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "1986333515990876253",
+        "text": "Positivity is the key on 𝕏..",
+        "created_at": "Thu Nov 06 07:23:09 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1130021685351079938",
+          "name": "Buitengebieden",
+          "screen_name": "buitengebieden",
+          "description": "The official positive side of 𝕏. I’m Sander from the Netherlands. All copyrights belong to their respective owners! DM for credits/removal/submission!",
+          "followers_count": 2920474,
+          "friends_count": 76,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 193,
+          "favorite_count": 2465,
+          "reply_count": 292,
+          "quote_count": 25
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230159266,
+        "friends_count": 1252,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 193,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2002446879234437575",
+      "text": "RT @XCreators: Creator Studio has arrived in your sidebar \n\nthe new home for monetization, analytics and support, with much more coming soo…",
+      "created_at": "Sat Dec 20 18:31:54 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2002196265078304946",
+        "text": "Creator Studio has arrived in your sidebar \n\nthe new home for monetization, analytics and support, with much more coming soon 🧵 https://t.co/S1H0Df5oDj",
+        "created_at": "Sat Dec 20 01:56:03 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2002196262695911424",
+            "url": "https://pbs.twimg.com/media/G8k65JCawAADkjR.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3282859598",
+          "name": "Creators",
+          "screen_name": "XCreators",
+          "description": "X is for creators.",
+          "followers_count": 10869033,
+          "friends_count": 41,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 245,
+          "favorite_count": 1564,
+          "reply_count": 292,
+          "quote_count": 19
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230159266,
+        "friends_count": 1252,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 245,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2002446567014645877",
+      "text": "RT @SpaceX: We’re excited to train @NASA’s Crew-12 and look forward to Falcon 9 launching the crew aboard Dragon to the @Space_Station in F…",
+      "created_at": "Sat Dec 20 18:30:39 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2002437269748396461",
+        "text": "We’re excited to train @NASA’s Crew-12 and look forward to Falcon 9 launching the crew aboard Dragon to the @Space_Station in February 2026!",
+        "created_at": "Sat Dec 20 17:53:43 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2002139946262614124",
+          "text": "Just announced: NASA’s @SpaceX Crew-12 mission assignments are in!\n\nGet to know the four crewmates who will journey to the @Space_Station for a long-duration science expedition.",
+          "created_at": "Fri Dec 19 22:12:15 +0000 2025",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "11348282",
+            "name": "NASA",
+            "screen_name": "NASA",
+            "description": "Official NASA account. Exploring the universe, advancing science, and inspiring the next generation of explorers.\n\nVerification: https://t.co/8nok3NP4PW",
+            "followers_count": 87576612,
+            "friends_count": 159,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 223,
+            "favorite_count": 1652,
+            "reply_count": 81,
+            "quote_count": 14
+          }
+        },
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 40477078,
+          "friends_count": 120,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 349,
+          "favorite_count": 2678,
+          "reply_count": 272,
+          "quote_count": 18
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230159266,
+        "friends_count": 1252,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 349,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2002441930698076353",
+      "text": "Join us!",
+      "created_at": "Sat Dec 20 18:12:14 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2002247938412826641",
+        "text": "If you are Android engineer with more than 10 years of experience:\n\n1. We will pay you an extraordinary amount of money\n\n2. You will have more fun here than any role in your life\n\nWhat are you waiting for?",
+        "created_at": "Sat Dec 20 05:21:23 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "636513296",
+          "name": "Nikita Bier",
+          "screen_name": "nikitabier",
+          "description": "head of product @x, advisor @solana, venture partner @lightspeedvp, ex-founder @gasappteam (acq by discord), ex-founder @thetbhapp (acq by facebook)",
+          "followers_count": 712934,
+          "friends_count": 2012,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 361,
+          "favorite_count": 4882,
+          "reply_count": 736,
+          "quote_count": 101
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230159266,
+        "friends_count": 1252,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1248,
+        "favorite_count": 11216,
+        "reply_count": 1882,
+        "quote_count": 96
+      }
+    },
     {
       "id": "2002420578528219306",
       "text": "RT @twsxtd: Codex 不支持 Plan 模式的长期痛点，终于通过 Skills 机制解决了！\n\n现在只需在 Prompt 中加上 $plan 即可调用内置的 Plan Skill；如果需要更复杂的规划，还可以使用 execplan（参考：https://t.co/…",

@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2025-12-21T01:35:22.409175",
+  "tweet_count": 19,
+  "summary": "**新工具/技术**  \n- Gemini（含 Nano Banana）：Google 的多模态/图像生成线索，Nano Banana 是能把对话即时“画”出来的早期 GUI 化示例，适合信息图与视觉化输出。  \n- Gemini Nano Banana Pro prompt：一套针对卡通/信息图风格的高质量提示词模板，已被广泛复用并需抽卡与微调以稳定输出。  \n- Claude Code：能本地运行、支持工具调用和循环执行的编码智能体，强调把智能体“放到你电脑上”以利用本地上下文。  \n- Codex + Skills/Plan：通过 Skill 机制把长期规划（Plan）能力模块化，能在 prompt 中直接调用内置 plan，实现更可控的自动化流程。  \n- Cursor 与 LLM 应用层：证明“把模型包装成领域应用”的范式可行，负责上下文工程、多模型编排与用户介入点。  \n- RLVR（Reinforcement Learning from Verifiable Rewards）：一种把可验证答案作为强化信号的训练方法，能在有标准答案的任务上显著提升推理与自我改进能力。  \n\n**核心观点/方法论**  \n- Technical Success != Product Success：工程上可行不等于用户愿意用，产品价值最终由用户流畅度与问题解决度决定。  \n- 设计“AI-Centric”工作流：不要让 AI 被动模仿人类流程，应为 AI 重新设计工作流以发挥其优势，再把人类置于关键判断点。  \n- Skill > Agent（可组合性优先）：独立 Agent 推广难度高，把能力封装成可插拔的 Skill 更符合现有生态与用户采纳路径。  \n- 去构建（Just Build It）：失败比无为更有价值，实操带来的认知升级是理论无法替代的。  \n- RLVR 与思维链的重要性：用可验证奖励与链式思考让模型学会分步自我修正，从而出现类似“推理”的策略性行为。  \n- AI 的“参差不齐”聪明（jagged intelligence）：模型在有可验证奖励的领域表现极好，但在常识/社交等难以定义“对错”的领域仍薄弱。  \n- GUI 化与 Vibe Coding：交互从纯文字向图形/动画/滑杆等富媒体演进；vibe coding 让非程序员也能用自然语言快速产出代码，降低编码门槛。  \n\n**实践经验/案例**  \n- Frontend Agent 的失败与复盘：作者在 FEDay 分享了一个从“技术成功”到“产品失败”的案例，核心收益是认知升级——学会把人机工作流重构为 AI 能高效运作的模式。  \n- 信息图生成技巧：优先用 Gemini 来先做推理与提示词优化，接受模型输出的随机性（抽卡），选出好结果后再微调以稳定风格。  \n- Prompt 工程的现实：公开的高质量 prompt（如 nano banana pro）能复用，但通常背后伴随大量试错与微调才能达到展示品质。  \n- 使用 Skills 解决 Plan 问题：Codex 的 Skill 机制是把长期规划能力模块化的实务路径，对比沙箱只读更灵活但要求模型遵指令能力更强。  \n- 产品决策的日常反思：在项目推进中要持续判断“是随水平面上涨的小船还是会被淹没的小山头”，及时放弃沉没成本减少资源浪费。",
+  "metadata": {
+    "original_tweets": 14,
+    "retweets": 5,
+    "media_tweets": 9,
+    "data_hash": "de484dfe",
+    "user": "dotey"
+  }
+}

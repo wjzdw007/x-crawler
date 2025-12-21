@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 158578,
+    "followers_count": 158612,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251221",
-  "last_updated": "2025-12-21T16:05:18.231098",
-  "tweet_count": 13,
+  "last_updated": "2025-12-21T18:06:36.693506",
+  "tweet_count": 14,
   "tweets": [
     {
       "id": "2002561113842495805",
@@ -562,6 +562,51 @@
       "stats": {
         "retweet_count": 1,
         "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2002793498345640192",
+      "text": "RT @linexjlin: 为什么现在 AI 写前端一下子这么强了，小米的 MiMo 论文的这段介绍了他们如何训练模型写前端的，关键是这句：\n\n我们的基于视觉的验证器通过对录制的视频片段执行情况进行评分，综合评估视觉质量、功能准确性和可执行性，从而确保奖励机制能够同时兼顾外观…",
+      "created_at": "Sun Dec 21 17:29:14 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2002383307414409514",
+        "text": "为什么现在 AI 写前端一下子这么强了，小米的 MiMo 论文的这段介绍了他们如何训练模型写前端的，关键是这句：\n\n我们的基于视觉的验证器通过对录制的视频片段执行情况进行评分，综合评估视觉质量、功能准确性和可执行性，从而确保奖励机制能够同时兼顾外观表现与行为效果。\n\n原理上就是模型根据 prompt 写好代码后再用 Playwright 操作录制成视频，然后，交给一个视觉验证器（应该是一个专门训练的视频理解模型） 进行打分，以提供奖励信号。",
+        "created_at": "Sat Dec 20 14:19:17 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2002380015607144448",
+            "url": "https://pbs.twimg.com/media/G8niA9-a4AAzgmF.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1156074140",
+          "name": "Line",
+          "screen_name": "linexjlin",
+          "description": "AGI, Scaling Law, MOE, RL, Parallel Thinking ...",
+          "followers_count": 1649,
+          "friends_count": 1713,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 16,
+          "favorite_count": 129,
+          "reply_count": 6,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 16,
+        "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
       }

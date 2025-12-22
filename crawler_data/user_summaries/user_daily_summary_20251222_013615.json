@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2025-12-22T01:36:15.866605",
+  "tweet_count": 15,
+  "summary": "**新工具/技术**\n- 可编辑的 NotebookLM Slides 工作流 + 提示模板 — 把 NotebookLM 那种美观但不可改的静态幻灯片，改为逐页可生成、可修改的流程，保留风格同时能编辑文字/图像。  \n- nano banana pro（prompt）+ image→video 流程 — 用简单 prompt 生成高质量首帧（例如 \"A high-quality 3D medical illustration ...\"），再用视频工具（示例：Kling 2.5）做帧到动画，极大缩短制作周期并降本。  \n- Laper — 面向编剧的协同剧本编辑器（CRDT、本地优先、目标成为“编剧界的 Figma”），强调精细化编辑容器与万物转剧本的能力。  \n- ClaudeCode / Claude Opus 4.5 — 用生成式模型大量写代码（作者宣称大量代码由 ClaudeCode 生成），Opus 4.5 提升了工具稳定性与效率。  \n- loro（CRDT 框架） — 在 Laper 中用于把 JSON 数据转换为协作类型，实现无冲突同步与离线编辑。\n\n**核心观点/方法论**\n- 逐页生成以换取可编辑性和精细控制 — 与直接产出整套静态图不同，逐页/按元素迭代能随时微调（文字、图标、字号、配色），适合需要多次打磨的展示材料。重要性：将“美观+不可改”转为“美观+可控”。  \n- 把风格说明独立出来以节省 Token 并保证一致性 — 将统一的 style instruction 放外部引用而非每页重复嵌入，既降低成本又保证每页风格一致。  \n- 本地优先 + CRDT 是协同文本/剧本类产品的关键设计 — 离线可写、自动同步、零冲突合并对编剧协作流程与上机拍摄准备尤为重要。  \n- VibeCoding（用语音/本地模型驱动编码）能极大提高产出速度，但同时削弱开发者刻意练习的动力；建议工程师主动学习架构以抵消“被代劳”的技能流失。  \n- 用视觉-验证器训练前端代码模型（MiMo 思路）——通过 Playwright 录视频并由视觉模型评分，能同时评估外观与功能，从而给出更有力的奖励信号。\n\n**实践经验/案例**\n- NotebookLM Slides 的可编辑化已形成完整方案（帖子/幻灯片/提示词），作者分享了工作流、微调步骤和示例图，社区反馈积极并有中/英双语推广。  \n- 关于 style instruction 的问答实践：不把风格直接融入每个 slide 是为节省 Token；在不同模型/平台（如 Gemini vs YouMind）上的效果会不同，需按目标平台微调提示词。  \n- Laper 开发经验：三人远程团队、采用 CRDT（loro）、大量迭代重构，MVP 之前经历多次断臂式重构；部分代码据称由 ClaudeCode 自动生成（约 11.9 万行），Opus 4.5 提升了稳定性。  \n- 动画快速成品案例：用 nano banana pro 生成首帧再交给视频工具做动画，实践证明能在数分钟内产出演示动画，节省成本与时间。  \n- 实操建议：制作 PPT/Slide 时可先统一风格说明、按页生成并逐页微调；复杂协作产品则优先考虑本地优先与 CRDT 设计以保证协同与离线体验。",
+  "metadata": {
+    "original_tweets": 12,
+    "retweets": 3,
+    "media_tweets": 6,
+    "data_hash": "33b8780c",
+    "user": "dotey"
+  }
+}

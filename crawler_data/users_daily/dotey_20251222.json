@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 159058,
+    "followers_count": 159079,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251222",
-  "last_updated": "2025-12-22T18:06:57.804892",
-  "tweet_count": 9,
+  "last_updated": "2025-12-22T20:05:26.706758",
+  "tweet_count": 11,
   "tweets": [
     {
       "id": "2002972069256888617",
@@ -484,6 +484,90 @@
         "favorite_count": 13,
         "reply_count": 14,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2003176742857691603",
+      "text": "刚看到一篇《A Year Of Vibes》，算是一篇很有代表性的过去一年对 Vibe Coding 的总结了。\n\n作者 Armin Ronacher 很多人可能不熟悉，但如果你接触过 Python，大概率用过他写的东西——Flask 框架，就是他十几年前的作品。\n\n文档开头第一句话就让我很有共鸣：2025 年，我不再像以前那样写代码了。\n\n跟他的经历很类似，一个写了快二十年代码的人，现在打开电脑，主要的工作变成了——指挥 AI 写代码。他把这比作从“亲自敲键盘的程序员”变成了“虚拟实习生的技术领导”。\n\n我自己对 Vibe Coding 的转变来自于 Claude Code，他也一样，今年四五月份，开始沉迷使用 Claude Code。几个月下来，他在自己博客上发了 36 篇文章，占了这个博客 2007 年至今全部文章的 18%。不是因为他闲了，而是因为 AI 把他从繁琐的实现工作里解放了出来。\n\n他现在同时用三个 AI 编程工具：Amp、Claude Code 和 Pi。他给这三个工具打了个比方——Amp 是保时捷，精致讲究；Claude Code 是大众汽车，实惠能打；Pi 是黑客们的开源玩具。三个工具，三种调性，但他没法告诉你哪个更好。我自己倒是以 Codex 为主，辅助 GitHub Copilot 和 Claude Code。\n\n我估计如果做个调查，每个人使用 AI 编程工具的选择都不一样，因为大家都在“vibes”。\n\nVibes 这个词贯穿了整篇文章，也是标题的由来。直译是“氛围”或“感觉”，但在这里它指的是一种无法量化、只能凭直觉感受的评判标准。\n\n这可能是 2025 年 AI 编程最诡异的地方：一个行业干了五十年积累下来的工程经验，突然有点不太管用了。什么代码规范、什么最佳实践，在面对 AI 生成的代码时，你最后靠的居然是一种玄学——这个模型“感觉”更顺手，那个工具“用起来”更舒服。\n\n最理性的程序员群体，现在正在用最感性的方式选择技术栈。\n\nArmin 自己一整年都在和 MCP（模型上下文协议）较劲，觉得它不好使。但他拿不出数据，只能说“反正对我没用”。而另一边，有人用得热火朝天。他的朋友 Peter 年初拉他入坑 Claude，现在 Peter 自己跑去用 Codex 了，觉得很香。Armin 试了试，觉得没那么香。\n\n谁对谁错？没有答案。大家都在摸黑走路。\n\n更深层的不适感，来自人与机器的关系。\n\n他开始对这些工具产生了一种“parasocial bond”——中文可以理解为单向的亲密感。就是那种你对某个主播、某个偶像产生的情感投射，对方其实并不认识你，但你总觉得跟对方很熟。\n\n一个 AI 工具，凭什么让人产生这种感觉？\n\n因为现在的 AI 可以有记忆了。你跟它聊过的东西，下次它还记得。它开始有了“人格”的影子。Armin 说他过去两年一直训练自己，把这些模型当成“token 搅拌机”——一个纯粹的概率机器。但这种简化论的视角已经对他失效了。\n\n这些系统表现出人类的倾向，但把它们抬到人的高度又是错的。它们到底是什么？没人能给出一个好的定义。Armin 甚至开始纠结“agent”（智能体/代理）这个词——因为 agency 意味着自主性和责任，而这两样东西应该留在人类手里。\n\n这种“不知道该怎么称呼它”的困惑，本身就说明了问题。\n\n文章最后，他列了几个希望行业能去解决的痛点。\n\n第一个是版本控制。Git 和 GitHub 是程序员吃饭的家伙，但现在它们缺了一块关键信息：prompt。当代码是 AI 生成的，你光看最终的改动，没法判断这个改动好不好。你需要看到是什么指令催生了这段代码，中间走过哪些弯路。\n\n更有趣的是他的一个发现：失败的尝试对 AI 来说是宝贵的。如果你把 AI 引回一个早期状态，你希望它记得之前哪条路走不通。但我们现有的工具压根没设计这个功能。你删掉一段对话历史，AI 就会重蹈覆辙。\n\n第二个是代码审查。现在的 GitHub 审查界面有个滑稽的设计：你没法正式地 review 自己的代码，只能留评论。但在 AI 编程的场景下，程序员经常需要在自己的 PR 里给 AI 留指示。现有的流程根本没考虑这种人机协作。\n\n第三个是可观测性。这是个稍微技术一点的话题，但核心意思是：过去很多监控、调试工具因为太复杂而没人用，但 AI 恰好擅长处理复杂的东西。那些被束之高阁的方案可能要重新翻出来了。\n\n最后他聊了一个略微敏感的话题：有些人已经完全“放手”了，不再审查 AI 生成的代码，直接让它上。这种做法疯狂吗？疯狂。但 Armin 见过有人这么干还挺成功的。他自己还做不到，他还是会仔细检查每一行。\n\n存在的即是合理的，这种“放手派”的存在，说明一种全新的工作方式正在成型。这种方式和他熟悉的那套软件工程完全是两码事。\n\n这让开源社区头疼。越来越多的 PR 是 AI 一把梭生成的，没经过人脑过滤就扔了上来。对于还在坚守传统流程的维护者来说，这种 PR 简直是一种冒犯。Armin 自己的办法是写详细的贡献指南和 PR 模板，但他也知道这有点像堂吉诃德战风车。\n\n也许问题的解法不是让别人改，而是让那些认可 AI 编程的大声量玩家站出来，示范什么叫“负责任地用 AI 写代码”。\n\n这篇文章对我来说是有共鸣的，你能感受到一个资深工程师的真诚困惑。他不是那种对 AI 大唱赞歌的布道者，也不是捂着耳朵拒绝变化的遗老。他夹在中间，一边深度使用，一边深度怀疑。\n\n2025 年已经接近尾声，但他提出的问题一个都没解决：怎么审查 AI 的代码？怎么保存 AI 的失败记忆？怎么跟一个让你产生情感的工具保持健康距离？\n\n这些问题的答案，可能就是下一批成功产品的方向。",
+      "created_at": "Mon Dec 22 18:52:07 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2003176670199484416",
+          "url": "https://pbs.twimg.com/media/G8y2kXmXEAALk_o.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2003044872841019698",
+        "text": "A personal recap of 2025. It was a year of a new style of engineering. Left some ideas for what might come next. https://t.co/EqlSqF5c4c",
+        "created_at": "Mon Dec 22 10:08:07 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "12963432",
+          "name": "Armin Ronacher ⇌",
+          "screen_name": "mitsuhiko",
+          "description": "Creator of Flask; Building at https://t.co/uGuzfu0dVl — love API design & AI. Bypassing Permissions. Husband and father of 3 — “more nuanced in person”",
+          "followers_count": 62722,
+          "friends_count": 866,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 16,
+          "favorite_count": 159,
+          "reply_count": 12,
+          "quote_count": 12
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 17,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2003180702293196987",
+      "text": "vibe coding 教程难点：你要做好Vibe Coding，前提是你懂coding和软件工程，最终培训的是 coding 而不是 AI。\n\n你不懂 Coding 还想做好 Vibe Coding 这其实很难，因为不知道如何合理拆分任务，不知道如何验证结果，出了问题不知道如何debug，这些都是传统软件工程知识。相反写提示词是最简单的部分。",
+      "created_at": "Mon Dec 22 19:07:51 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2003069401432817919",
+        "text": "vibe coding 这个方向目前还没看到像样的高价值课程，更没有大家达成共识的 kol\n\n我个人认为这是非常大的新机会，这个 Kol 最适合从中推诞生。\n\n之前跟几个朋友交流且推荐过，不知道为何没有人去做去试。",
+        "created_at": "Mon Dec 22 11:45:35 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1452169962286637059",
+          "name": "DinoDeer",
+          "screen_name": "xDinoDeer",
+          "description": "古典互联网从业者，广告爱好者，接地气的生意人。 Less code more money.",
+          "followers_count": 23774,
+          "friends_count": 1168,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 4,
+          "reply_count": 5,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 12,
+        "reply_count": 1,
+        "quote_count": 0
       }
     }
   ]

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 159534,
+    "followers_count": 159548,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251223",
-  "last_updated": "2025-12-23T18:06:59.887266",
-  "tweet_count": 14,
+  "last_updated": "2025-12-23T20:05:26.756007",
+  "tweet_count": 17,
   "tweets": [
     {
       "id": "2003285858544418824",
@@ -524,6 +524,135 @@
       },
       "stats": {
         "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2003530767574687854",
+      "text": "skill、subagent这些概念最后都是用prompt来组织，就像工具的说明书\n\n而大模型有一个所拥有的工具的清单，自己可以根据场景来决定什么时候触发skill、agent、MCP的prompt\n\n除此之外，还有上下文管理，MCP太臃肿，一次性把工具的详细说明都加载到上下文，而skill则是渐进式加载，先加载歌工具名字和简介，需要时才加载完整的说明。\n\nSubAgent解决的是上下文污染和过载的问题，把子任务委托出去，子任务的中间结果不会污染、占用主agent的上下文。比如chrome dev tool mcp很强大，但是太占用上下文，把它封装成subagent，就只需要给它任务去查日志、截图、分析，最终返回主agent的只有分析的结果",
+      "created_at": "Tue Dec 23 18:18:53 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2003481860555571356",
+        "text": "@simon_he1995 做工具的人沒想明白\n大部分 Agent 概念最後都被搓到 prompt\n只是如何觸發的區別",
+        "created_at": "Tue Dec 23 15:04:33 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "18233920",
+          "name": "Ryo Lu",
+          "screen_name": "ryolu_",
+          "description": "Head of Design @Cursor_ai. Early @NotionHQ, @Stripe, built startups. I make a world where anyone can make software. Aspiring k-pop idol.",
+          "followers_count": 73767,
+          "friends_count": 1628,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 78,
+          "reply_count": 8,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 14,
+        "reply_count": 2,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2003535224232390752",
+      "text": "🎆 Level up your fireworks display! Introducing a new ultra-realistic fireworks prompt template: just enter numbers, letters, or symbols, and watch them seamlessly emerge as dazzling fireworks—cinematic realism guaranteed! 📷✨\nhttps://t.co/jezLRVdCqi",
+      "created_at": "Tue Dec 23 18:36:35 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2003522391654146544",
+        "text": "🎆 Level up your fireworks display! Introducing a new ultra-realistic fireworks prompt template: just enter numbers, letters, or symbols, and watch them seamlessly emerge as dazzling fireworks—cinematic realism guaranteed! ✨\n\nExamples:\nSubject: I 💗 U\nSubject: 🎄\nSubject: 🧑‍🎄\nSubject: \n2026\nHappy New Year\n\n--- Prompt ---\n\nAn ultra-realistic, professional nighttime fireworks display, clearly featuring the shape \"{Subject}\" formed entirely from fireworks at the center of the sky. The \"{Subject}\" seamlessly emerges from dense spark trails, glowing embers, and dazzling radiant bursts, with smooth, precise contours and vivid clarity. It blends naturally into the surrounding firework display, appearing as an integral part of the overall spectacle, visually vibrant and photorealistic.\nBehind and around the central \"{Subject}\", an expansive, celebratory firework show fills the night sky with layered radial explosions, cascading spark showers, and multi-stage bursts, creating impressive depth and dimension. Background fireworks maintain a slightly lower brightness to emphasize the central \"{Subject}\" sharply and distinctly.\nThe night sky is pure and deep navy-to-black, clear and cloudless with minimal haze or smoke. Firework colors include a sophisticated palette of gold, silver, white, red, and blue, demonstrating physically accurate light bloom, subtle glow effects, realistic particle dynamics, and natural variation in intensity and timing.\nFirework bursts softly illuminate the surrounding sky, producing gentle, cinematic-quality light falloff, capturing a realistic and immersive celebratory atmosphere.\nThe image is ultra-high-resolution, sharply detailed with photographic realism, and contains no additional text or extra visual elements—only the \"{Subject}\" displayed distinctly through fireworks.\n\nSubject: I 💗 U",
+        "created_at": "Tue Dec 23 17:45:36 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2003521352569913344",
+            "url": "https://pbs.twimg.com/media/G83wDhfXAAA5Pbh.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 159548,
+          "friends_count": 1491,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2003544366582022421",
+      "text": "RT @MrZhang1984: @dotey 1、跟AI的对话，就像发征婚启事。\n\n不要提示词的征婚启事，是这样：\n“找个姑娘”\n可能对于你来说，是个姑娘就行，高矮胖瘦，黑白无所谓。要么不停试，只要样本够大，总是有机会随机到一个你喜欢的。\n\n 加了提示词的征婚启事，是这样的：…",
+      "created_at": "Tue Dec 23 19:12:55 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2003518419363348846",
+        "text": "1、跟AI的对话，就像发征婚启事。\n\n不要提示词的征婚启事，是这样：\n“找个姑娘”\n可能对于你来说，是个姑娘就行，高矮胖瘦，黑白无所谓。要么不停试，只要样本够大，总是有机会随机到一个你喜欢的。\n\n 加了提示词的征婚启事，是这样的：\n本人男，33岁，程序员，身高175cm，性格开朗，爱写程序和旅行。求20岁左右、有稳定工作、肤白貌美、有责任心、爱好小动物的女士，离异也可以，共创温馨家庭。\n\n所以，要不要提示词取决于你的需求。\n\n2、说到需求，对于用户来说，最大的问题在于，不知道自己的需求是什么，或者说不知道需要的叫什么。\n\n可能有人会说，正常人怎么可能不知道自己想要的叫什么。\n\n借用驴得水里铜匠老婆的话。\n\n“俺两结婚这么多年，我还不知道他，这么多年了，他换过姿势吗？啊！从这儿回去，姿势也变了，花样也多了，一开始还真拿不准，直到昨天晚上，他他妈居然咬我耳朵，我问你，你办事就办事儿吧，你咬我耳朵干啥啊？那人耳朵是吃的啊？是不是你教的？”\n\n你真的知道咬耳朵是什么吗？如果你不知道，你怎么让AI给你咬耳朵呢？\n\n这就是大家都用的一样的AI工具，\n有的人生成的美女格外好看、景色就是很美、创意惊奇、还会咬耳朵。\n有的人只能跟AI说。，给我来个美女，给我做个网站，给我写个代码。\n\n你说呢？",
+        "created_at": "Tue Dec 23 17:29:49 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2003516067243786244",
+            "url": "https://pbs.twimg.com/media/G83rP4HagAQ6nSU.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1708486892357033984",
+          "name": "Mr_Zhang",
+          "screen_name": "MrZhang1984",
+          "description": "Make money ,Build system, Ask why,All in AI, Make friends/交个朋友",
+          "followers_count": 3614,
+          "friends_count": 2261,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 1,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

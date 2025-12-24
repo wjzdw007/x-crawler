@@ -1,0 +1,60 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 159567,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20251224",
+  "last_updated": "2025-12-24T00:17:05.826838",
+  "tweet_count": 1,
+  "tweets": [
+    {
+      "id": "2003618903176675400",
+      "text": "RT @yan5xu: @dotey skills 重点在Prompt 发现&amp;懒加载，改变当前 agent 能力，有当前完整上下文，我觉得适合的场景是当前任务复合程度不高的情况（载入多个 skills 就会出现性能下降问题），比如主 Agent 是入口当做路由，然后通过 ski…",
+      "created_at": "Wed Dec 24 00:09:06 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2003618544735649947",
+        "text": "skills 重点在Prompt 发现&懒加载，改变当前 agent 能力，有当前完整上下文，我觉得适合的场景是当前任务复合程度不高的情况（载入多个 skills 就会出现性能下降问题），比如主 Agent 是入口当做路由，然后通过 skills 载入场景能力，进入到 YouTube-summary，写 ppt 模式；\nsub-agent 也有发现过程，但重点是过程压缩，执行过程在当前 agent 之外，他对于当前 agent 就是一个 tool（function call），只有 req/res；\n\n还有一个把两种结合在一起的方式，在一个节点发现需要 skills，载入执行拿到 skills 的结果后，把需要 skills 的节点到结果的节点的 tool use 过程进行压缩，也是一种方式。",
+        "created_at": "Wed Dec 24 00:07:41 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2003618442872782848",
+            "url": "https://pbs.twimg.com/media/G85IW7DagAAbkUL.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "115897222",
+          "name": "yan5xu",
+          "screen_name": "yan5xu",
+          "description": "🤖 AI 野生研究员 | ex @ManusAI_HQ & @hey_im_monica\n推特内容仅代表个人观点，和公司无关",
+          "followers_count": 7948,
+          "friends_count": 368,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 3,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

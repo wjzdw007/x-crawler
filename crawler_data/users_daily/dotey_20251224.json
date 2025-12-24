@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 159730,
+    "followers_count": 159782,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251224",
-  "last_updated": "2025-12-24T06:07:22.378224",
-  "tweet_count": 7,
+  "last_updated": "2025-12-24T08:06:55.273447",
+  "tweet_count": 15,
   "tweets": [
     {
       "id": "2003618903176675400",
@@ -322,6 +322,418 @@
       "stats": {
         "retweet_count": 0,
         "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2003712630582612066",
+      "text": "AI Agent 要变强，有两条完全不同的路。\n\n一条是 Skill，也就是给自己装技能，把新能力直接塞进脑子里。\n\n另一条是 SubAgent，就像派小弟去干活，自己只看汇报。\n\n这两条路听起来都能让 Agent 更厉害，但适用的场景还是有所不同，用错了的话，你的 Agent 可能反而会越用越慢、越用越乱。\n\nSkills，就像是给主 Agent 装插件。\n\n比如你的 Agent 原本只会聊天，现在你想让它能写 PPT。Skills 的做法是：把写 PPT 的能力说明、工具调用方式、注意事项，全都塞进主 Agent 的上下文中。主 Agent 通过上下文学会了这项技能，它可以自己来写 PPT。\n\n第二种叫 SubAgent，就像是委托外包。\n\n同样是写 PPT，SubAgent 的做法是：主 Agent 把任务派给一个专门写 PPT 的 SubAgent，SubAgent 独立完成后把结果交回来。主 Agent 全程不参与具体执行，只负责派活和验收。\n\n一个是内化能力，一个是外包能力。听起来都能搞定任务，区别在哪？\n\n区别在上下文管理，上下文就是 AI 的记忆。\n\n你可以把 AI 的上下文想象成一张工作桌。桌子大小是固定的，你放的东西越多，就越难找到需要的那份文件。这就是上下文容量的问题。\n\nSkills 模式下，所有能力说明都铺在同一张桌上。好处是信息互通，主 Agent 能看到所有中间结果，推理过程连贯。坏处是桌子很快就乱了，Prompt 越来越长，能力之间可能打架，AI 开始犯糊涂。\n\nSubAgent 模式下，SubAgent 在另一张桌子上干活。干完把结果递过来，过程中产生的草稿、中间文件全留在那边。主 Agent 的桌面保持干净。代价是信息传递要设计好，不然关键信息可能在交接时丢了。\n\n这就是上下文污染问题，这里的污染不是夸张的比喻，是真实的工程瓶颈。\n\n什么时候用哪种？\n\n判断标准其实很简单：子任务有多复杂，以及你需不需要完成任务过程中产生的信息。\n\nSkills 适合的场景：任务本身不太复杂，或者你需要主 Agent 全程掌控。\n\n比如让 Agent 充当入口路由，根据用户请求加载不同的“场景模式”，像进入 YouTube 总结模式、进入写报告模式。这时候 Skills 的懒加载特性很香：先只加载能力名字和简介，真正要用时才加载完整说明。不像 MCP 那样一股脑把所有工具的详细文档全塞进上下文。\n\nSubAgent 适合的场景：子任务很重、很耗时、中间过程很啰嗦。\n\n最典型的例子是浏览器调试工具。Chrome DevTools 的 MCP 功能很强，但工具说明太臃肿，放进主 Agent 会严重占用上下文。把它封装成 SubAgent，你只需要说“去查日志、截图、分析一下”，它跑完把分析结论递回来。中间那些截图、DOM 树、网络请求细节，全都留在 SubAgent 那边，不污染主 Agent 的上下文。\n\n进阶玩法\n\n有意思的是，Skills 和 SubAgent 这两种模式可以结合。这技巧是从 @yan5xu 那里学来的（https://t.co/uSkwSUvNiJ）。\n\n第一种思路叫“先展开再压缩”。\n\n打个比方：你开了一个两小时的头脑风暴会，白板上写满了草稿、争论、被否决的方案。但最后写进会议纪要的只有三条结论。那些中间过程对得出结论很重要，但对后续执行的人来说是噪音。\n\nAgent 也可以这样操作。主 Agent 发现需要某个 Skill，加载进来，一通操作拿到结果。然后把从“加载 Skill”到“拿到结果”这整段过程折叠掉，只保留最终结论。对后续推理来说，就像开了一个会但只留下了会议纪要。\n\n第二种思路是用文件系统做“中转站”。\n\n想象你管理一个外包团队。你不会把所有需求细节都塞进一条微信消息里，而是说“需求文档在这个链接，去看”。外包团队交付时也不会把源码复制粘贴给你，而是说“代码在这个仓库，部署文档在这里”。\n\nAgent 之间也可以这样协作。主 Agent 委托任务时，不把冗长的背景资料直接写进指令，而是存成文档，只传一个地址。SubAgent 返回时也一样：交付一个简短的状态摘要——“完成了/卡住了/需要你决策”——加一个详细记录的文档地址。主 Agent 根据情况决定要不要点进去看细节。这样双方的上下文都保持精简。\n\n第三种是 Claude Code 里的实战技巧。\n\n上下文快见底时，让 Claude 把当前完成的工作总结成一份文档。然后用 rewind 功能回滚到任务开始前的状态，告诉它：“这件事我已经做完了，记录在这个文件里。”\n\n相当于什么？相当于你跑了一场马拉松，快到终点时发现体力不支。于是你把已经跑过的路线画成地图存档，然后“瞬移”回起点，精力充沛地说“我知道怎么走了，地图在这”。上下文被清空了，但成果保留了下来。用这个方法能在上下文耗尽前抢救一把。\n\n最后\n\nAgent 的竞争正在从“能调用多少工具”转向“怎么优雅地管理这些工具”。\n\n很多人追逐最新的 Agent 框架、最花哨的能力扩展，却忽略了最基础的问题：AI 的工作记忆是有限的，你怎么组织它，决定了它能做多复杂的事。Skills 和 SubAgent 不是非此即彼的选择，而是两种工具，用对场景才能发挥价值。\n\n说到底，Agent 架构设计和软件架构设计还是有很多相通之处。\n是把逻辑写在一个巨型函数里，还是拆成模块化的微服务？\n是共享全局变量图省事，还是严格隔离状态保持干净？\n\n这些老问题换了个皮，又回来了。",
+      "created_at": "Wed Dec 24 06:21:32 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2003712520788312064",
+          "url": "https://pbs.twimg.com/media/G86d6-mXAAAwBpe.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2003618544735649947",
+        "text": "skills 重点在Prompt 发现&懒加载，改变当前 agent 能力，有当前完整上下文，我觉得适合的场景是当前任务复合程度不高的情况（载入多个 skills 就会出现性能下降问题），比如主 Agent 是入口当做路由，然后通过 skills 载入场景能力，进入到 YouTube-summary，写 ppt 模式；\nsub-agent 也有发现过程，但重点是过程压缩，执行过程在当前 agent 之外，他对于当前 agent 就是一个 tool（function call），只有 req/res；\n\n还有一个把两种结合在一起的方式，在一个节点发现需要 skills，载入执行拿到 skills 的结果后，把需要 skills 的节点到结果的节点的 tool use 过程进行压缩，也是一种方式。",
+        "created_at": "Wed Dec 24 00:07:41 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2003618442872782848",
+            "url": "https://pbs.twimg.com/media/G85IW7DagAAbkUL.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "115897222",
+          "name": "yan5xu",
+          "screen_name": "yan5xu",
+          "description": "🤖 AI 野生研究员 | ex @ManusAI_HQ & @hey_im_monica\n推特内容仅代表个人观点，和公司无关",
+          "followers_count": 7973,
+          "friends_count": 368,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3,
+          "favorite_count": 37,
+          "reply_count": 3,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 16,
+        "favorite_count": 78,
+        "reply_count": 4,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "2003713279571697810",
+      "text": "看了 @yan5xu 的分享重新整理了一下\nhttps://t.co/hHcJ4baKD7",
+      "created_at": "Wed Dec 24 06:24:07 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2003712630582612066",
+        "text": "AI Agent 要变强，有两条完全不同的路。\n\n一条是 Skill，也就是给自己装技能，把新能力直接塞进脑子里。\n\n另一条是 SubAgent，就像派小弟去干活，自己只看汇报。\n\n这两条路听起来都能让 Agent 更厉害，但适用的场景还是有所不同，用错了的话，你的 Agent 可能反而会越用越慢、越用越乱。\n\nSkills，就像是给主 Agent 装插件。\n\n比如你的 Agent 原本只会聊天，现在你想让它能写 PPT。Skills 的做法是：把写 PPT 的能力说明、工具调用方式、注意事项，全都塞进主 Agent 的上下文中。主 Agent 通过上下文学会了这项技能，它可以自己来写 PPT。\n\n第二种叫 SubAgent，就像是委托外包。\n\n同样是写 PPT，SubAgent 的做法是：主 Agent 把任务派给一个专门写 PPT 的 SubAgent，SubAgent 独立完成后把结果交回来。主 Agent 全程不参与具体执行，只负责派活和验收。\n\n一个是内化能力，一个是外包能力。听起来都能搞定任务，区别在哪？\n\n区别在上下文管理，上下文就是 AI 的记忆。\n\n你可以把 AI 的上下文想象成一张工作桌。桌子大小是固定的，你放的东西越多，就越难找到需要的那份文件。这就是上下文容量的问题。\n\nSkills 模式下，所有能力说明都铺在同一张桌上。好处是信息互通，主 Agent 能看到所有中间结果，推理过程连贯。坏处是桌子很快就乱了，Prompt 越来越长，能力之间可能打架，AI 开始犯糊涂。\n\nSubAgent 模式下，SubAgent 在另一张桌子上干活。干完把结果递过来，过程中产生的草稿、中间文件全留在那边。主 Agent 的桌面保持干净。代价是信息传递要设计好，不然关键信息可能在交接时丢了。\n\n这就是上下文污染问题，这里的污染不是夸张的比喻，是真实的工程瓶颈。\n\n什么时候用哪种？\n\n判断标准其实很简单：子任务有多复杂，以及你需不需要完成任务过程中产生的信息。\n\nSkills 适合的场景：任务本身不太复杂，或者你需要主 Agent 全程掌控。\n\n比如让 Agent 充当入口路由，根据用户请求加载不同的“场景模式”，像进入 YouTube 总结模式、进入写报告模式。这时候 Skills 的懒加载特性很香：先只加载能力名字和简介，真正要用时才加载完整说明。不像 MCP 那样一股脑把所有工具的详细文档全塞进上下文。\n\nSubAgent 适合的场景：子任务很重、很耗时、中间过程很啰嗦。\n\n最典型的例子是浏览器调试工具。Chrome DevTools 的 MCP 功能很强，但工具说明太臃肿，放进主 Agent 会严重占用上下文。把它封装成 SubAgent，你只需要说“去查日志、截图、分析一下”，它跑完把分析结论递回来。中间那些截图、DOM 树、网络请求细节，全都留在 SubAgent 那边，不污染主 Agent 的上下文。\n\n进阶玩法\n\n有意思的是，Skills 和 SubAgent 这两种模式可以结合。这技巧是从 @yan5xu 那里学来的（https://t.co/uSkwSUvNiJ）。\n\n第一种思路叫“先展开再压缩”。\n\n打个比方：你开了一个两小时的头脑风暴会，白板上写满了草稿、争论、被否决的方案。但最后写进会议纪要的只有三条结论。那些中间过程对得出结论很重要，但对后续执行的人来说是噪音。\n\nAgent 也可以这样操作。主 Agent 发现需要某个 Skill，加载进来，一通操作拿到结果。然后把从“加载 Skill”到“拿到结果”这整段过程折叠掉，只保留最终结论。对后续推理来说，就像开了一个会但只留下了会议纪要。\n\n第二种思路是用文件系统做“中转站”。\n\n想象你管理一个外包团队。你不会把所有需求细节都塞进一条微信消息里，而是说“需求文档在这个链接，去看”。外包团队交付时也不会把源码复制粘贴给你，而是说“代码在这个仓库，部署文档在这里”。\n\nAgent 之间也可以这样协作。主 Agent 委托任务时，不把冗长的背景资料直接写进指令，而是存成文档，只传一个地址。SubAgent 返回时也一样：交付一个简短的状态摘要——“完成了/卡住了/需要你决策”——加一个详细记录的文档地址。主 Agent 根据情况决定要不要点进去看细节。这样双方的上下文都保持精简。\n\n第三种是 Claude Code 里的实战技巧。\n\n上下文快见底时，让 Claude 把当前完成的工作总结成一份文档。然后用 rewind 功能回滚到任务开始前的状态，告诉它：“这件事我已经做完了，记录在这个文件里。”\n\n相当于什么？相当于你跑了一场马拉松，快到终点时发现体力不支。于是你把已经跑过的路线画成地图存档，然后“瞬移”回起点，精力充沛地说“我知道怎么走了，地图在这”。上下文被清空了，但成果保留了下来。用这个方法能在上下文耗尽前抢救一把。\n\n最后\n\nAgent 的竞争正在从“能调用多少工具”转向“怎么优雅地管理这些工具”。\n\n很多人追逐最新的 Agent 框架、最花哨的能力扩展，却忽略了最基础的问题：AI 的工作记忆是有限的，你怎么组织它，决定了它能做多复杂的事。Skills 和 SubAgent 不是非此即彼的选择，而是两种工具，用对场景才能发挥价值。\n\n说到底，Agent 架构设计和软件架构设计还是有很多相通之处。\n是把逻辑写在一个巨型函数里，还是拆成模块化的微服务？\n是共享全局变量图省事，还是严格隔离状态保持干净？\n\n这些老问题换了个皮，又回来了。",
+        "created_at": "Wed Dec 24 06:21:32 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2003712520788312064",
+            "url": "https://pbs.twimg.com/media/G86d6-mXAAAwBpe.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 159782,
+          "friends_count": 1491,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 16,
+          "favorite_count": 78,
+          "reply_count": 4,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2003720117926904196",
+      "text": "根据文章生成公众号封面的提示词\n\n使用很方便，只需要提示词 + 文章内容，就可以自动生成复合公众号尺寸的封面。做成 Gemini 的 Gem 的话，就可以只要直接输入文章内容即可自动生成。\n\n它很好的同时支持横版 2.35:1 (消息列表) 和 1:1 (转发卡片和公众号主页) 格式\n\n最佳使用场景：Gemini + nano banana pro\n\n可以直接使用我分享的 Gem： https://t.co/9bYh4KHfFY\n\n或者使用下面的提示词\n\n--- 提示词 ---\n\n公众号封面图生成提示词\n\n请根据提供的内容创建一张吸引眼球的公众号封面图，遵循以下规范：\n\n视觉风格\n- 手绘插画风格，比例为 2.35:1（公众号封面标准尺寸）\n- 色彩鲜明、对比强烈，确保在小尺寸预览时依然醒目\n- 风格统一，避免写实元素，保持整体手绘质感\n\n构图要求\n- 主视觉元素居中或偏左（右侧预留标题区域）\n- 添加 1-2 个简洁的卡通形象、图标或知名人物剪影，增强记忆点\n- 若涉及敏感或版权人物，用风格相似的替代形象，不得拒绝生成\n- 大量留白，突出核心信息，避免画面拥挤\n\n文字处理\n- 标题文字大而醒目，控制在 8 字以内\n- 可添加 1 行副标题或关键词标签\n- 字体风格与手绘插画协调统一\n\n吸引力法则\n- 使用悬念、数字、痛点等钩子元素激发点击欲望\n- 视觉元素夸张有反差\n- 色彩搭配参考爆款封面：橙黄、蓝紫、红黑等高对比组合\n\n语言\n- 除非另有说明，默认使用中文\n\n请根据输入内容生成封面图。",
+      "created_at": "Wed Dec 24 06:51:18 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2003720032698662913",
+          "url": "https://pbs.twimg.com/media/G86kwOpWgAE-La9.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2003720032686100480",
+          "url": "https://pbs.twimg.com/media/G86kwOmW0AAI9z1.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2003720032677761024",
+          "url": "https://pbs.twimg.com/media/G86kwOkXkAAtPo5.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2003720032686051329",
+          "url": "https://pbs.twimg.com/media/G86kwOmWEAEs3Sd.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1993568167696777289",
+        "text": "把文章变成卡通信息图的提示词：\n\n请根据输入内容提取核心主题与要点，生成一张卡通风格的信息图： \n- 采用手绘风格，横版（16:9）构图。 \n- 加入少量简洁的卡通元素、图标或名人画像，增强趣味性和视觉记忆。 \n- 如果有敏感人物或者版权内容，画一个相似替代，但是不要拒绝生成 \n- 所有图像、文字必须使用手绘风格，没有写实风格图画元素 \n- 除非特别要求，否则语言与输入内容语言一致。 \n- 信息精简，突出关键词与核心概念，多留白，易于一眼抓住重点。 \n\n请根据输入的内容使用 nano banana pro 画图：",
+        "created_at": "Wed Nov 26 06:31:04 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1993567991863058432",
+            "url": "https://pbs.twimg.com/media/G6qThraWIAAH0Bz.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 159782,
+          "friends_count": 1491,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 69,
+          "favorite_count": 320,
+          "reply_count": 8,
+          "quote_count": 7
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 40,
+        "reply_count": 10,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2003720454629192186",
+      "text": "https://t.co/6vg1vVOopY",
+      "created_at": "Wed Dec 24 06:52:38 +0000 2025",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2003717754206191827",
+        "text": "@dotey 这个形状的烟花可放不出来。 https://t.co/VNWUYeOyQP",
+        "created_at": "Wed Dec 24 06:41:54 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2003717749873549312",
+            "url": "https://pbs.twimg.com/media/G86irWdboAAB_Fh.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "403294275",
+          "name": "Xiao Yang",
+          "screen_name": "XiaoKooeye",
+          "description": "AI猎食者，影视爱好者。\n海外运营专家（花钱投广告😄）\nIT软件从业者（熟悉全流程，但只能把门者😝）\n运营监测专家（专门给执行方挑毛病😅，鸡蛋里挑骨头）\n异想天开者（总是幻想如何财务自由）",
+          "followers_count": 77,
+          "friends_count": 140,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 2,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2003720712305926212",
+      "text": "根据文章生成公众号封面的提示词\nhttps://t.co/gKI4v4SCKL",
+      "created_at": "Wed Dec 24 06:53:39 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2003720117926904196",
+        "text": "根据文章生成公众号封面的提示词\n\n使用很方便，只需要提示词 + 文章内容，就可以自动生成复合公众号尺寸的封面。做成 Gemini 的 Gem 的话，就可以只要直接输入文章内容即可自动生成。\n\n它很好的同时支持横版 2.35:1 (消息列表) 和 1:1 (转发卡片和公众号主页) 格式\n\n最佳使用场景：Gemini + nano banana pro\n\n可以直接使用我分享的 Gem： https://t.co/9bYh4KHfFY\n\n或者使用下面的提示词\n\n--- 提示词 ---\n\n公众号封面图生成提示词\n\n请根据提供的内容创建一张吸引眼球的公众号封面图，遵循以下规范：\n\n视觉风格\n- 手绘插画风格，比例为 2.35:1（公众号封面标准尺寸）\n- 色彩鲜明、对比强烈，确保在小尺寸预览时依然醒目\n- 风格统一，避免写实元素，保持整体手绘质感\n\n构图要求\n- 主视觉元素居中或偏左（右侧预留标题区域）\n- 添加 1-2 个简洁的卡通形象、图标或知名人物剪影，增强记忆点\n- 若涉及敏感或版权人物，用风格相似的替代形象，不得拒绝生成\n- 大量留白，突出核心信息，避免画面拥挤\n\n文字处理\n- 标题文字大而醒目，控制在 8 字以内\n- 可添加 1 行副标题或关键词标签\n- 字体风格与手绘插画协调统一\n\n吸引力法则\n- 使用悬念、数字、痛点等钩子元素激发点击欲望\n- 视觉元素夸张有反差\n- 色彩搭配参考爆款封面：橙黄、蓝紫、红黑等高对比组合\n\n语言\n- 除非另有说明，默认使用中文\n\n请根据输入内容生成封面图。",
+        "created_at": "Wed Dec 24 06:51:18 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2003720032698662913",
+            "url": "https://pbs.twimg.com/media/G86kwOpWgAE-La9.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2003720032686100480",
+            "url": "https://pbs.twimg.com/media/G86kwOmW0AAI9z1.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2003720032677761024",
+            "url": "https://pbs.twimg.com/media/G86kwOkXkAAtPo5.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2003720032686051329",
+            "url": "https://pbs.twimg.com/media/G86kwOmWEAEs3Sd.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 159782,
+          "friends_count": 1491,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 40,
+          "reply_count": 10,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 6,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2003726908949987328",
+      "text": "https://t.co/zhqwuT2PYZ",
+      "created_at": "Wed Dec 24 07:18:17 +0000 2025",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2003726574420648244",
+        "text": "@dotey 太棒了 https://t.co/KEoi8CVBtD",
+        "created_at": "Wed Dec 24 07:16:57 +0000 2025",
+        "lang": "ja",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2003726358611152896",
+            "url": "https://pbs.twimg.com/media/G86qgcga0AAxvaS.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1391720360245010438",
+          "name": "xiaobeiLin",
+          "screen_name": "linxiaobei888",
+          "description": "⌨️10年后端开发| 二娃父亲 | 创业失败者 🧠分享AI，Coding, 技术，日常 | 为下次创业做准备中 |nano banana 提示词网站：https://t.co/WjRQEOBGHL AI 工具导航站：https://t.co/SW47rPP8pm",
+          "followers_count": 1069,
+          "friends_count": 2005,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2003730022495117644",
+      "text": "https://t.co/W2iONuQuNs",
+      "created_at": "Wed Dec 24 07:30:39 +0000 2025",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2003728891870167270",
+        "text": "@dotey to 2026 https://t.co/JERJw9P7YD",
+        "created_at": "Wed Dec 24 07:26:09 +0000 2025",
+        "lang": "und",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2003728842863542272",
+            "url": "https://pbs.twimg.com/media/G86sxDEWAAA_XJq.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2343816680",
+          "name": "Vincent",
+          "screen_name": "Vincentcharming",
+          "description": "🚀  Indie Dev | Building Practical Tools & Products\nMedical Innovators🩺 | Travel✈️Photography📸、\nDeep Reading📖、Startup Insights🔛\n# IndieDev #CodeLife #AI Art",
+          "followers_count": 484,
+          "friends_count": 335,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2003736216932614213",
+      "text": "可以换风格👍\n\nhttps://t.co/cxobTNvdPp",
+      "created_at": "Wed Dec 24 07:55:16 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2003730701301236042",
+        "text": "@dotey 除了漫画形式，还可以根据内容不同的主题在提示词里添加不同展现形式与风格的约束\n\n比如科技感、摄影、数据优先、Storytelling 等等 https://t.co/SneMWMkrNY",
+        "created_at": "Wed Dec 24 07:33:21 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2003729281827160064",
+            "url": "https://pbs.twimg.com/media/G86tKmVbQAA152j.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2003729761185726467",
+            "url": "https://pbs.twimg.com/media/G86tmgFagAMHHSJ.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2003730039259693057",
+            "url": "https://pbs.twimg.com/media/G86t2r_agAEHSNY.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2725010506",
+          "name": "微风轻语",
+          "screen_name": "endearqb",
+          "description": "👷‍♂️ ISFP-A｜10+年水处理工程师｜公众号：微风轻语耳边风（左耳进右耳出的那种） ｜水处理数值模型与机理模型的应用｜编程能力：“没有 AI 就不会” ｜https://t.co/6wRfAC3AUU (Streamlit) ｜https://t.co/7EmrOg76vV(React+FastAPI)",
+          "followers_count": 594,
+          "friends_count": 343,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
       }

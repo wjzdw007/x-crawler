@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 160445,
+    "followers_count": 160500,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251225",
-  "last_updated": "2025-12-25T08:06:37.400936",
-  "tweet_count": 6,
+  "last_updated": "2025-12-25T10:05:17.502310",
+  "tweet_count": 7,
   "tweets": [
     {
       "id": "2004025068498657334",
@@ -273,6 +273,69 @@
       "quoted": null,
       "stats": {
         "retweet_count": 26,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2004110005180813606",
+      "text": "RT @yan5xu: 强烈推荐读一下这篇文章 我自己做了些整理\n\n作者是北大 Linian Wang。文章讲的是把 Kimi K2 适配到 vLLM 的过程中，遇到一个很反直觉的现象：同一个模型，在官方 API 上 tool calling 几乎不出错，但换到 vLLM 上就…",
+      "created_at": "Thu Dec 25 08:40:34 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2004093011903631825",
+        "text": "强烈推荐读一下这篇文章 我自己做了些整理\n\n作者是北大 Linian Wang。文章讲的是把 Kimi K2 适配到 vLLM 的过程中，遇到一个很反直觉的现象：同一个模型，在官方 API 上 tool calling 几乎不出错，但换到 vLLM 上就一塌糊涂。然后作者一步步定位原因、推动修复。\n\n我觉得它最值得看的点，其实不是“Kimi/K2/vLLM”上，而是通过这个过程可以把大模型 API 的底层逻辑理解清楚：\n\n大模型 API 的本质：把请求“展开成 Prompt（Token 序列）”，然后做补全（completion）。\n所谓 chatbot、tool calling / function calling，本质都是在这个过程上做工程封装。\n\n一切都可以拆回成：Render → Completion → Parse\n\n现在 Chat Completions（以及 function call / tool calling）看起来是这种“结构化请求”：\n- messages：system/user/assistant 多轮（也包含 tool_calls 与 tool 的返回）\n- tools / functions：工具定义\n- tool calling 的模式/约束：tool_choice、parallel tool calls 等\n- 采样/停止参数：temperature、stop、max_tokens…\n\n但在模型真正开始预测下一个 token 之前，这些东西都会被系统按照下面的过程处理：\n\n(A) 展开（render）→ 得到最终 Prompt（文本/Token 序列）\n(B) 补全（completion）→ 模型续写下一段 Token\n(C) 解析（parse）→ 把续写还原成 assistant 文本 / tool_calls 等结构化结果\n\n所以其实可以这么理解：\n- Chat Completions ≈ Completions +（A：自动把 messages 渲染成 prompt）+（C：把输出再解释回消息结构）\n- Chat + tool calling ≈ Chat +（C：把“特定格式的补全”解析成 tool_calls，并做 schema 校验/护栏）\n\n重点：Chat / Function Call 不是模型多了一种全新能力，而是服务端把 prompt 构造与输出解析自动化了；模型层面依旧是在做下一段 token 的补全。\n\n文章里出现的 bug 基本都发生在 A（render）或 C（parse），而不是“模型本身能力不行”。\n\n文章里一个非常实用的排障方法：\n- 不直接用 /v1/chat/completions\n- 而是在外部手动 apply_chat_template 得到最终 prompt\n- 再把这个 prompt 丢给更底层的 /v1/completions\n\n这么做的好处是：你能“看到真相”：\n- 你能检查最终 Prompt 到底长什么样（当然也可以用 echo 回显出来）\n- 你还能看到模型最原始的补全文本（协议 token 没被上层 parser 二次加工/丢弃）\n\n后面很多结论，都靠这一步才定位出来：问题不在“模型不会调工具”，而在 prompt 展开和输出解析存在不兼容或边界问题。\n\n三个问题，用更直白的话讲清楚就是展开和解析上出了问题\n\n1) Prompt 末尾少了“现在轮到 assistant 开始输出”的自动补全后缀\n\n本来应该用户问一句 → 模型应该立刻按 tool call 的格式进行补全。\n但因为一个参数没有传递到位，导致实际喂给模型的 prompt 末尾缺了关键的 assistant 回合起始标记 / generation prompt（可以理解为少了一个重要的协议尾巴，相当于没明确告诉模型“轮到你回答了”）。\n结果就是模型仍然会补全 token，但完全不知道“接下来该干嘛”\n- 有时像在续写历史对话（没进入回答态）\n- 有时输出自然语言闲聊\n- 有时输出半截结构化但不成形\n\n1) 空内容被错误渲染成，直接把 prompt 污染成噪声\n\n某条历史消息 content: '' 就是“空”，本来在 Prompt 也应该就是🈚️啥也不出现。\n结果实际渲染链路，框架内部为了统一数据结构，把 '' 标准化成类似 [{type: \"text\", text: \"\"}] 这样的 list（多模态/富文本体系里很常见）塞到 Prompt 里面。\n结果就是模型是在对“被污染的上下文”做补全。导致 tool calling 的效果劣化。\n\n3) 模型其实已经“写出了工具调用”，但解析器太严格，把它当异常丢掉了\n\n模型已经生成了“看起来就是工具调用”的片段，但是解析器太严格了，当做异常处理掉了。\n（这里面还有上下文污染导致模型生成格式不对的原因）\n\n读完这篇文章最大的收获\n\n1) 一切要还原到“Prompt 补全”这个本质上来理解。\n虽然这篇文章，是围绕 tool calling 展开的，但它的结论其实适用于所有大模型 API 场景（chat、completion、structured generation……）。\n不管你是用 chat 还是 function call，本质上都是在做“Prompt 补全”。\n所以当遇到问题，第一步都要还原到“最终 prompt 是什么样子？”要拿到实际喂给模型的 prompt，甚至不用像文章中这样，拿到协议层的，只用看到你的 API 请求就能判断对不对。\n另外很多 API 的报错，也可以从“Prompt 补全”这个角度去分析。\n\n2) Tool calling 本质是“强约束 Schema 输出”（甚至可以当 JSON 限定器/结构化生成器用）。\n从工程角度看，tool calling 更像：\n让模型按一个强约束的输出协议（schema）去生成结构化片段，然后由服务端解析并执行。\n\n一旦你把它理解其本质是“强 schema 生成”，你会发现 tool calling 还能干一件很实用的事：\n- 你不一定真的要“调用工具”，也可以把它当作 JSON/DSL 的限定器，让模型稳定地产出符合 schema 的结构化结果，再交给下游系统处理。\n\n对“强约束生成 / constrained decoding”这个方向感兴趣的话，也推荐顺手看：\n- XGrammar：偏“把语法/约束编译成高效的 token 级约束”，让解码阶段就不可能走出非法分支\n- LLGuidance：偏“用 guidance/约束驱动生成”，把结构化正确性前置到解码过程，而不是生成完再靠 parser 猜测。",
+        "created_at": "Thu Dec 25 07:33:02 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2004060369170702461",
+          "text": "@yan5xu https://t.co/EV14MswEdr",
+          "created_at": "Thu Dec 25 05:23:20 +0000 2025",
+          "lang": "qme",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "116355740",
+            "name": "九原客",
+            "screen_name": "9hills",
+            "description": "喜欢一切美好的事物。目前聚焦在大模型领域。",
+            "followers_count": 23210,
+            "friends_count": 1034,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 6,
+            "favorite_count": 18,
+            "reply_count": 0,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "115897222",
+          "name": "yan5xu",
+          "screen_name": "yan5xu",
+          "description": "🤖 AI 野生研究员 | ex @ManusAI_HQ & @hey_im_monica\n推特内容仅代表个人观点，和公司无关",
+          "followers_count": 8103,
+          "friends_count": 370,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 18,
+          "favorite_count": 112,
+          "reply_count": 3,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 18,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

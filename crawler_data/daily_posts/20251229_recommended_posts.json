@@ -1,12 +1,582 @@
 {
   "date": "20251229",
   "timeline_type": "recommended",
-  "last_crawl_time": "2025-12-29T08:07:18.915915",
-  "tweet_count": 242,
-  "unique_tweet_count": 242,
-  "total_crawled": 415,
-  "duplicates_removed": 173,
+  "last_crawl_time": "2025-12-29T10:05:44.262220",
+  "tweet_count": 253,
+  "unique_tweet_count": 253,
+  "total_crawled": 442,
+  "duplicates_removed": 189,
   "tweets": [
+    {
+      "id": "2005579554346385571",
+      "text": "年底了，问几个问题，欢迎一起留言讨论：\n\n1. 2025年，将AI推入下一个阶段的关键技术突破是什么？\n\n2. 2025年有哪些AI产品让您眼前一亮？\n\n3. 展望2026，哪个趋势是不可忽视的必然路径？",
+      "created_at": "Mon Dec 29 10:00:02 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 162714,
+        "friends_count": 1500,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2005572164762866061",
+      "text": "MCP/Skill 都是用来弥补 Agent 自身工具能力有限而创造出来的，最开始是给专业人士用的，所以没有太多考虑权限、安全性这些，反正开发者自己懂，而且是运行在虚拟机沙箱里面相对安全。\n\n但是当你把 MCP/Skill 直接给不懂的小白、普通人用，那就是要打开潘多拉魔盒了",
+      "created_at": "Mon Dec 29 09:30:40 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 162714,
+        "friends_count": 1500,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2005570669421961288",
+      "text": "Skill 有价值的部分不是提示词，是提示词一起配套的脚本和工具，否则做不了太多事，而问题在于这些脚本或者工具如果不是靠谱的提供方，那么就会成为恶意脚本的温床，所以不要轻易使用别人提供的带可执行脚本/程序的 Skill。\n也不要太信的过自己 Vibe 写出来的，一不小心删除了些重要文件也是可能的。",
+      "created_at": "Mon Dec 29 09:24:43 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2005568587566862382",
+        "text": "@dotey 这类东西应该还是根据自己的习惯搞几个就差不多了。\n\n感觉有点像宏，又有点像类似于notion模板之类的...估计会有人挂出来卖，但这一类东西，别人搞的我都没用顺手过。\n\n我还听说有人直接使用别人的，结果被植入了恶意指令，怪惊悚的😅",
+        "created_at": "Mon Dec 29 09:16:27 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1725169104963657728",
+          "name": "阿兹特克小羊驼",
+          "screen_name": "AztecaAlpaca",
+          "description": "AI时代的搬砖工（Prompt Kiddie)、球迷（勇士&马刺@ NBA，利物浦@英超）\n休憩于科技与人文的十字路口 \n 探寻科学、思想与生活的张力",
+          "followers_count": 1877,
+          "friends_count": 712,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 162714,
+        "friends_count": 1500,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 6,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2005560211072049506",
+      "text": "如果都在“吹”/“科普” Skill，那说明现在 Agent 遇到瓶颈没啥成果了😂",
+      "created_at": "Mon Dec 29 08:43:10 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2005111612311761358",
+        "text": "Skill 很好，但也没必要拔太高和神话它，Skill 只是一种技术手段，是 Agent 的重要工具，本身都没有自主性。现在 Agent 离靠谱都还早，更不要说 Skill 了。",
+        "created_at": "Sun Dec 28 03:00:36 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 162714,
+          "friends_count": 1500,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5,
+          "favorite_count": 107,
+          "reply_count": 33,
+          "quote_count": 11
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 162714,
+        "friends_count": 1500,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 27,
+        "reply_count": 10,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2005553203484803294",
+      "text": "RT @JTLonsdale: @RoKhanna Just realized you co-sponsored this bill too, you’re not only lying to downplay that this is 5% (not 1-2 as you s…",
+      "created_at": "Mon Dec 29 08:15:19 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2005429090711695603",
+        "text": "Just realized you co-sponsored this bill too, you’re not only lying to downplay that this is 5% (not 1-2 as you say), your bill here was 8% over 50M !!\n\nTotally insane. It’s not only unethical, unconstitutional and unAmerican to seize assets.\n\nBut this sort of bill would break everything, halt tons of hiring and investment, and lead to mass poverty for the middle and working class, and you know it - you’re just grandstanding for low-IQ or angry leftists.\n\nWe do need to fix things in our country but the way we do that is competence and cutting waste and actually using the money on education and healthcare more effectively to lift up lives.  We can do this by allying with all of our most competent builders to get where we want to go, harnessing their talent, not by scapegoating them.",
+        "created_at": "Mon Dec 29 00:02:08 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2005429083484864512",
+            "url": "https://pbs.twimg.com/media/G9S3IE9aQAA1Gv8.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "134321104",
+          "name": "Joe Lonsdale",
+          "screen_name": "JTLonsdale",
+          "description": "I'm an entrepreneur, investor, & philanthropist. I founded @PalantirTech @Addepar @UAustinOrg @8VC & other mission-driven orgs. Bold policy @InstituteCicero",
+          "followers_count": 246948,
+          "friends_count": 499,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 317,
+          "favorite_count": 2070,
+          "reply_count": 233,
+          "quote_count": 27
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230601270,
+        "friends_count": 1258,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 317,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2005552522883403908",
+      "text": "Yes",
+      "created_at": "Mon Dec 29 08:12:37 +0000 2025",
+      "lang": "qst",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2005027382919659707",
+        "text": "I will die on the hill that space colonization is the only way to protect earth long term.",
+        "created_at": "Sat Dec 27 21:25:54 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1839268922463498240",
+          "name": "Luke Leisher",
+          "screen_name": "luke_leisher_",
+          "description": "Self described idiot.",
+          "followers_count": 7989,
+          "friends_count": 333,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 73,
+          "favorite_count": 1142,
+          "reply_count": 133,
+          "quote_count": 16
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230601270,
+        "friends_count": 1258,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 334,
+        "favorite_count": 3476,
+        "reply_count": 792,
+        "quote_count": 28
+      }
+    },
+    {
+      "id": "2005552152819691666",
+      "text": "RT @Will_Tanner_1: As Elon and Bukele have repeatedly articulated, destroying the corrupt judiciary is the necessary first step to tackling…",
+      "created_at": "Mon Dec 29 08:11:09 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2005469576776089799",
+        "text": "As Elon and Bukele have repeatedly articulated, destroying the corrupt judiciary is the necessary first step to tackling the corruption and criminality \n\nLeaving the corrupt, pro-crime judiciary intact in its present state will undo every other potential accomplishment of the administration",
+        "created_at": "Mon Dec 29 02:43:01 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2005469574368485376",
+            "url": "https://pbs.twimg.com/media/G9Tb89QWYAAQDbs.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2005343284093473007",
+          "text": "Yes. A jury found a a Somalian guilty and the judge threw out the verdict. https://t.co/JeB7j8pg9X",
+          "created_at": "Sun Dec 28 18:21:11 +0000 2025",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2005343279077019648",
+              "url": "https://pbs.twimg.com/media/G9RpFmoaUAA1CLs.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1788983924024307718",
+            "name": "bumbadum",
+            "screen_name": "bumbadum14",
+            "description": "Heritage American. Schizophrenic journal posting. Anti-Fat Nationalist. Musings of a White man",
+            "followers_count": 40541,
+            "friends_count": 882,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 3276,
+            "favorite_count": 24032,
+            "reply_count": 245,
+            "quote_count": 99
+          }
+        },
+        "user": {
+          "id": "1504181287468339208",
+          "name": "Will Tanner",
+          "screen_name": "Will_Tanner_1",
+          "description": "Tradition is not the worship of ashes, but the preservation of fire | Co-Founder of @TAmTrib | WASP",
+          "followers_count": 154326,
+          "friends_count": 1303,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 533,
+          "favorite_count": 2603,
+          "reply_count": 158,
+          "quote_count": 29
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230601270,
+        "friends_count": 1258,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 533,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2005551845679493142",
+      "text": "RT @NickJFreitas: Where in the world did they get the idea for such a stupid looking....oooohhhhh.",
+      "created_at": "Mon Dec 29 08:09:56 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2005294139752239106",
+        "text": "Where in the world did they get the idea for such a stupid looking....oooohhhhh.",
+        "created_at": "Sun Dec 28 15:05:54 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2005155863074669028",
+          "text": "What are the odds…\n\nMinnesota has been conquered https://t.co/HBrrhnDtm4",
+          "created_at": "Sun Dec 28 05:56:26 +0000 2025",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2005155855872716800",
+              "url": "https://pbs.twimg.com/media/G9O-oIyWcAAUml1.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1326229737551912960",
+            "name": "Libs of TikTok",
+            "screen_name": "libsoftiktok",
+            "description": "News you can’t see anywhere else. 📧 submissions@libsoftiktok.com. DM submissions. Bookings: Partnerships@libsoftiktok.com. ⬇️Subscribe to our newsletter",
+            "followers_count": 4556751,
+            "friends_count": 1040,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 3046,
+            "favorite_count": 17596,
+            "reply_count": 943,
+            "quote_count": 371
+          }
+        },
+        "user": {
+          "id": "2720054437",
+          "name": "Nick Freitas",
+          "screen_name": "NickJFreitas",
+          "description": "Husband | Father | Green Beret Combat Veteran | Representing James Madison's district in the VA House of Delegates | I defend #Liberty🇺🇸",
+          "followers_count": 396136,
+          "friends_count": 1272,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 823,
+          "favorite_count": 5056,
+          "reply_count": 169,
+          "quote_count": 19
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230601270,
+        "friends_count": 1258,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 823,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2005551683905204397",
+      "text": "This is clear as day",
+      "created_at": "Mon Dec 29 08:09:17 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2005461749341036570",
+        "text": "Elon Musk says Democrats use our welfare system to turn illegals into voters\n\n“That is also a mechanism by which the Democrats attract and retain illegal immigrants by essentially paying them to come here and then turning them into voters”\n\n“Entitlement spending, most of the federal spending is entitlements. So that's like the big one to eliminate is that's the sort of half trillion, maybe $700 billion a year.”\n\n“This is why the Democrats are so upset about the situation because they're losing—you know if, if we turn off this gigantic money magnet for illegal immigrants, then they will leave and they'll lose voters.”",
+        "created_at": "Mon Dec 29 02:11:55 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2005461667950243840",
+            "url": "https://video.twimg.com/amplify_video/2005461667950243840/vid/avc1/854x474/zW3RUmv7LdSkEMB0.mp4?tag=21",
+            "bitrate": 832000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1099579684981944320",
+          "name": "Wall Street Apes",
+          "screen_name": "WallStreetApes",
+          "description": "We Are The Resistance. Unfiltered Breaking News | Followed By @elonmusk 𝕏 @joerogan 🎙️ @DonaldjTrumpJr 🇺🇸 @dbongino ⚖️ @RealAlexJones 🪬 @JamesOKeefeIII 🗞️",
+          "followers_count": 1254089,
+          "friends_count": 32082,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 646,
+          "favorite_count": 2307,
+          "reply_count": 182,
+          "quote_count": 37
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230601270,
+        "friends_count": 1258,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1166,
+        "favorite_count": 6160,
+        "reply_count": 672,
+        "quote_count": 42
+      }
+    },
+    {
+      "id": "2005551410331668813",
+      "text": "RT @NASAAdmin: @mmealling @rookisaacman We are going to build a Moon base",
+      "created_at": "Mon Dec 29 08:08:12 +0000 2025",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2005017621746590205",
+        "text": "@mmealling @rookisaacman We are going to build a Moon base",
+        "created_at": "Sat Dec 27 20:47:07 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2000593641480605696",
+          "name": "NASA Administrator Jared Isaacman",
+          "screen_name": "NASAAdmin",
+          "description": "Serving President Donald J. Trump as the 15th @NASA Administrator | Leading the next Golden Age of space discovery 🚀",
+          "followers_count": 52497,
+          "friends_count": 3,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2011,
+          "favorite_count": 19569,
+          "reply_count": 1448,
+          "quote_count": 648
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230601270,
+        "friends_count": 1258,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2011,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2005551134874935429",
+      "text": "Hmm",
+      "created_at": "Mon Dec 29 08:07:06 +0000 2025",
+      "lang": "qst",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2005503109293093321",
+        "text": "\"Her interests aren't of Minnesota\" is a wild thing to say at a political rally in Minnesota \n\nAnd the crowd cheered",
+        "created_at": "Mon Dec 29 04:56:16 +0000 2025",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1552795969959636992",
+          "name": "End Wokeness",
+          "screen_name": "EndWokeness",
+          "description": "Fighting, exposing, and mocking wokeness. DM for submissions",
+          "followers_count": 3909231,
+          "friends_count": 1335,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 108,
+          "favorite_count": 1582,
+          "reply_count": 59,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230601270,
+        "friends_count": 1258,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 342,
+        "favorite_count": 2651,
+        "reply_count": 353,
+        "quote_count": 14
+      }
+    },
     {
       "id": "2005550595370070516",
       "text": "Bingo",

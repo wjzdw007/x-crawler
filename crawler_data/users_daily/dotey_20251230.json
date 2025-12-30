@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 163056,
+    "followers_count": 163074,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251230",
-  "last_updated": "2025-12-30T18:07:13.335636",
-  "tweet_count": 9,
+  "last_updated": "2025-12-30T20:05:38.699421",
+  "tweet_count": 13,
   "tweets": [
     {
       "id": "2005791165153697845",
@@ -403,6 +403,168 @@
         "retweet_count": 0,
         "favorite_count": 11,
         "reply_count": 5,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2006065780253655070",
+      "text": "这篇访谈挺值得听听的。\n\n里面有一句话给我印象挺深刻：“做对一千件小事，比做对三件大事更重要”。\n\n熟悉苦涩的教训《The Bitter Lesson》的应该能理解这句话的含义。\n> AI 研究的历史反复证明，那些依赖人类精心设计的规则和知识的方法，最终都会被更简单粗暴能更好利用算力进行通用学习的方法打败。\n\n换句话说，与其让人类专家花大力气设计聪明的规则，不如让机器自己去学。\n\nPeak 把这个道理翻译成一句话：做对一千件小事，比做对三件大事更重要。\n\n《The Bitter Lesson》应该也深刻影响了 Manus 团队在 Agent 设计上做出的选择。\n\n现在市面上的 Agent 产品，大致可以分成两类。\n\n一类是“规则主导”的 Agent。开发者提前设计好工作流程：第一步做什么，第二步做什么，遇到什么情况走哪个分支。这种 Agent 的好处是可控、可预测，坏处是只能处理设计者预见到的情况。\n\n另一类是“智能主导”的 Agent。不预设具体流程，让模型自己判断每一步该怎么走。这种 Agent 的好处是灵活、能处理意外情况，坏处是不够稳定，有时候会犯蠢。\n\nManus 选择的是后者。\n\nPeak 在播客中解释这个选择时说，规则主导的 Agent Workflow 在可复现性上确实表现更好。同样的输入，每次都能得到差不多的输出。但他认为这个问题是可以解决的，而规则主导的天花板问题是解决不了的——你永远没办法提前预见用户会遇到的所有情况。\n\nManus 怎么做到“不设规则”的？\n\nPeak 举了一个例子。大部分互联网服务并没有接入 MCP。如果 Manus 只能用 MCP，那能干的事情就很有限。\n\nManus 的策略是做降级处理。如果有 MCP 接入，直接用。如果没有 MCP 但有 API 文档，Manus 会自己去读文档，学会怎么调用这个 API。如果连 API 都没有，只要这个服务有网页界面，Manus 就用浏览器模拟人类的操作方式来使用它。\n\n这意味着，开发者不需要专门为 Manus 做任何适配。只要一个服务是给人用的，Manus 就能想办法用上。\n\n“它没有人为设定的约束，完成任务的所有过程和方式，都由智能本身决定。”\n\n这就是“做对一千件小事”的含义。不是提前设计三条聪明的规则，而是让系统在面对一千种不同情况时，每次都能做出还算合理的判断。单看每一次判断，可能都不完美；但整体叠加起来，能处理的问题范围就远超任何规则系统。\n\n这个选择背后是相信模型能力会持续变强。\n\n如果模型能力停滞不前，那“智能主导”的路线就很危险。模型犯蠢的概率不会下降，用户体验永远不稳定。\n\n但如果模型能力持续提升，这条路线的天花板就会不断抬高。今天模型可能在某些任务上判断失误，明天换一个更强的模型，同样的代码就能做对更多事情。\n\nPeak 说，对 Manus 这样的应用公司来说，所有外部的模型创新都是养料和供给。他们不需要参与“模型大乐透”，不用押注哪家模型公司会赢。谁进步了，他们就受益。\n\n这也是为什么 Manus 选择不自己训模型。他们把精力花在“怎么更好地使用模型”上，而不是“怎么训出更好的模型”。后者需要巨大的资源投入，而且有可能押错方向；前者的风险小得多，只要整个行业在进步，他们就能跟着进步。\n\n另外 Manus 团队在 Agent 上的摸索，确实是业界顶级的，而且他们会选择将摸索出来的经验分享出来。比如那篇《AI 智能体的上下文工程：构建 Manus 的经验教训》我就看了很多遍，还有后来那篇和 LangChain 一起做的《Context Engineering for AI Agents with LangChain and Manus》分享，也特别好。\n\n所以 Peak 说当他们读到一些模型公司发布的研究博客时，心情是“既开心又无奈”。开心是因为这些博客验证了他们的方向，无奈是因为博客里写的东西，基本都是他们早就在做的。\n\n比如 Anthropic 提出的“thinking tool”概念，是在 Manus 上线一个月后才发布的。还有用代码方式调用 MCP、渐进式披露信息这些做法，Manus 也早就在用了。\n\n这些 Agent 上摸索出来的经验，你要说创新也算不上多大，更多是一个个具体的工程细节。单拎出来看，每一个都不起眼，但叠加在一起，就构成了产品的核心竞争力。\n\nPeak 把这种方法论总结为：做对一千件小事，比做对三件大事更重要。\n\n三件大事可能是：设计一个天才的架构，发明一个突破性的算法，或者抢先拿到某个独家资源。这些事情如果能做成，当然很厉害，但风险也很高，而且往往不可复制。\n\n一千件小事是：在每一个具体场景里做出合理的判断，处理好每一个边界情况，让每一次用户交互都顺畅一点点。这些事情每一件都不难，但需要耐心和积累，而且门槛会随着积累越来越高。\n\n很多人觉得 Manus 不过是“套壳”，但你要真去做一个 Manus 出来，就会发现这个壳里藏着一千个细节：怎么让模型长时间保持注意力、怎么压缩和恢复记忆、怎么在没有 API 的时候优雅降级、怎么节约 Token 成本、怎么处理各种意想不到的边界情况。每一个细节都不算什么大发明，但每一个都要做对。\n\n这可能就是“套壳”的门槛所在，不在于壳本身，在于壳里那一千件小事。",
+      "created_at": "Tue Dec 30 18:12:07 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2006065721982291968",
+          "url": "https://pbs.twimg.com/media/G9b6JULXkAAnNKF.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2005870072863047880",
+        "text": "也是2025年的最后一集，给2025年画一个句号。https://t.co/IArMseVTBT",
+        "created_at": "Tue Dec 30 05:14:27 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1231772373323411456",
+          "name": "張小珺 Xiaojùn",
+          "screen_name": "zhang_benita",
+          "description": "Financial writer covering China business world, also the producer and host of Zhang Xiaojun Podcast.   财经媒体人，写作中国商业深度报道，包括AI/科技巨头/风险投资/人物，也是播客《张小珺商业访谈录》主持人、制作人。",
+          "followers_count": 21218,
+          "friends_count": 99,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 17,
+          "favorite_count": 129,
+          "reply_count": 7,
+          "quote_count": 9
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 17,
+        "reply_count": 4,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2006074924868440120",
+      "text": "帮转",
+      "created_at": "Tue Dec 30 18:48:27 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2006067594315325649",
+        "text": "今天，Meta 以超过 20 亿美元收购 Manus，这再次证明了“中国起源 + 海外化运营”模式的巨大成功——从中国起步，快速移植到全球市场，实现爆发式增长。\n\nDify 正是这样一家“移植独角兽”：我们在旧金山湾区和东京都有办公室，团队分布全球。2025 年，我们实现了全年盈利，海外收入占比达到 2/3，同时保持健康的工作节奏和文化（拒绝 996，注重可持续增长）。我们正在大力扩张，尤其在湾区和东京办公室，开放多个岗位：\n\n- 产品经理（Product Manager）：定义下一代 AI 应用平台功能，面向全球用户。\n- 研发工程师（Engineering）：前端、后端、全栈、AI 基础设施等方向，参与开源核心贡献。\n- 市场/增长/销售（Marketing/Growth/Sales）：推动全球用户获取和企业合作。\n\n特别欢迎有意去海外工作（湾区或东京）、希望获得工作签证/身份支持的优秀人才加入。我们提供完整的 relocation 支持和 visa sponsorship（H-1B、O-1、日本工程师签等）。如果你对构建全球领先的开源 AI 平台感兴趣，欢迎 DM 或投递简历。",
+        "created_at": "Tue Dec 30 18:19:20 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "14046502",
+          "name": "Luyu Zhang",
+          "screen_name": "goocarlos",
+          "description": "CEO&Founder of @dify_ai",
+          "followers_count": 21283,
+          "friends_count": 889,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 8,
+          "reply_count": 2,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 3,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2006085655227687377",
+      "text": "首先 X 一定是最新最前沿的信息获取方式，但算法不一定精准推送\n\n有个简单有效的办法就是养一个 X 账号，这个账号只看 AI 英文资讯相关的，只互动 X 相关的内容，然后通过这个账号的时间线看到的相对会比较新比较全。\n\n我自己没这么做，不过我收藏、点赞比较多的也是 AI 资讯，所以推送还比较靠谱",
+      "created_at": "Tue Dec 30 19:31:06 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2006080158344917240",
+        "text": "有一个疑问，想问问各位是如何管理自己对 AI 前沿信息的获取的。当然，推特上看 @dotey 老师肯定是一条大路，还有没有什么好的办法。我感觉刷推是必须的但也比较费劲，newsletter是不是好点，或者有没有推荐的聚合方式",
+        "created_at": "Tue Dec 30 19:09:15 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "371296701",
+          "name": "马天翼",
+          "screen_name": "fkysly",
+          "description": "Indie hacker & AI. Just-for-Instagram app on Apple Vision Pro.",
+          "followers_count": 6691,
+          "friends_count": 393,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2006087115537575997",
+      "text": "一个是看内容对目标受众提供的价值，情绪价值或者知识价值\n一个是看发布内容的人",
+      "created_at": "Tue Dec 30 19:36:54 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2006083442078015941",
+        "text": "从内容创作者的角度来思考，在AI 支持下内容生产越来越容易的未来，什么样的内容真正能够得到目标受众的注意？",
+        "created_at": "Tue Dec 30 19:22:18 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1464631743831547911",
+          "name": "大罗SEO",
+          "screen_name": "daluoseo",
+          "description": "出海 Growth Marketing / SEO专家 | 提供SEO咨询，优化服务以及高权重外链 |  油管: 大罗SEO\nPartner @ HashMatrix",
+          "followers_count": 9197,
+          "friends_count": 1246,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 2,
         "quote_count": 0
       }
     }

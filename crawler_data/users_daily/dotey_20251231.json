@@ -1,0 +1,260 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 163147,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20251231",
+  "last_updated": "2025-12-31T02:39:58.095059",
+  "tweet_count": 5,
+  "tweets": [
+    {
+      "id": "2006165594459045928",
+      "text": "这份年终众包调研来自我在 X 上的随手一问，问了三个问题：2025 年 AI 最关键的技术突破是什么？哪些产品让你眼前一亮？2026 年什么趋势不可忽视？\n\n没想到收到了这么多认真的回复。我花了一两个小时时间，把这些留言和答案汇总整理了一下。\n\n127 条留言，95 个人回答了同样的三个问题。\n\n看完所有答案，我发现大家虽然各有侧重，但在某些判断上出奇一致。答案五花八门，但有些词频繁出现：推理 (Reasoning)、Agent (智能体)、Claude Code、Manus、Nano Banana Pro、NotebookLM、具身智能 (Embodied AI)。\n\n这组词频里有个共同点：“聊天”这个词几乎没人提起了，“干活”这个词开始更多被提起了。\n\n【1】推理革命：AI 学会了慢下来\n\n如果要选 2025 年最重要的技术突破，答案几乎没有悬念——推理能力的工程化落地。\n\n三疯 (@ 3fenglife) 的表述最精准：从“预测下一个词”到“预测下一步行动”。以前的 AI 像个反应快但不过脑子的人，张口就来，经常胡说八道。2025 年的突破在于，AI 学会了在回答之前先想一想——做内部推演、自我检查、发现错误就纠正。\n\n技术上这叫 System 2 Thinking，或者叫 test-time scaling。AI 从“快思考”进化到了“慢思考”。o1、o3、DeepSeek R1 这些模型，都是这条路线的产物。\n\nRay Zhai(@ Cryptoxorz) 还补充了一个视角——当 AI 开始像人类一样拥有“慢思考”的逻辑链，并能理解真实世界的因果律时，AI 才算真正拿到了进入物理世界的入场券。\n\n岚叔 (@ LufzzLiz) 和 Xin(@ Xin_Jin1018) 点名了一个关键技术：RLVR，基于可验证奖励的强化学习。\n\n以前训练模型需要大量人工标注的数据，告诉模型“这个回答好，那个回答不好”。这很贵，也很慢。而 RLVR 换了个思路：对于数学题和代码这类问题，答案对不对是可以自动验证的。答案对了就给奖励，错了就扣分。不需要人来一条条看。\n\n另一个高频共识是成本拐点。Rainman(@ 0xdeusyu) 和 Robinson(@ python_xxt) 都提到了 MoE 稀疏化架构，DeepSeek R1 证明了一件事：前沿 AI 不再需要前沿预算。意味着推理成本在下降，成为可以普及的基础设施。\n\n还有一类突破被反复提及：Agent 系统化成熟。SLiangD(@ SLiangD) 说得很到位，关键突破不是参数变大，而是三件套终于配合默契了——工具调用、上下文工程、多步推理。AI 能理解“帮我扫描亚马逊眼罩类目，找出评分低但销量高的产品，总结用户抱怨最多的三个痛点”这种复杂任务链了。\n\n【2】年度产品：对话框退场，进度条登台\n\n问到 2025 年哪些产品让人眼前一亮，有一个名字被提到了二十多次：Claude Code。\n\nG_Z(@ GZhan57) 的评价很有画面感：“第一个 work 的 general agent，除了不能生孩子啥都可以。”阿绎 YiOS(@ WangYiNotes) 说得更细腻：“不是因为它写代码有多快，而是它第一次让人感觉是在跟队友协作，而不是在调教工具。”\n\nClaude Code 代表的是一类新物种：能把复杂工作流跑通的 AI。它不只是补全代码，还可以自己检索文档、改 Bug、跑测试、完成部署。你扔给它一个需求，它真的能把事办完。\n\n第二名是 NotebookLM。Rocky(@ Rockybnbtrade) 说它让知识输入效率提升了很多，王是子路 (@ atm13999) 说它把枯燥的文档变成极其自然的播客对话。这个产品的价值不在于生成内容，而在于帮你消化和内化已有的知识。\n\n第三名是个意外：Nano Banana Pro，谷歌 Gemini 的生图功能。defyong(@ defyong) 的评价很有意思：“结合 Gemini 的感知与知识库，图片生成不再是凭感觉。第一次让我觉得，这个生图工具，她活起来了。”Steven Qi(@ Jason_qeb) 补充说中文支持是个大突破，文生图、图生视频、图生 PPT 都变得可行了。\n\n视频生成虽然没有 Claude Code 和 Nano Banana Pro 那么高频，但也收获了一批提名。Roland(@ Roland_WayneOZ) 和小镇记录家 (@ liangde_li40657) 都提到了 Sora、可灵、即梦等产品的突破，cicada(@ thebestsetup) 直接把 Veo/Sora 列为年度最惊艳。JCat(@ JackyisThinking) 的判断更进一步：视频生成会在 2026 年更加成熟，影视行业尤其是低成本特效和动画行业将全面 AI 化。这条赛道的特点是\"看得见摸得着\"，普通人也能直观感受到 AI 的进步，所以虽然技术门槛高、商业化慢，但对大众认知的影响可能比编程工具更大。\n\n空间智能是另一个被多人点名的方向。JCat(@ JackyisThinking) 说得最清楚：机器人产业要落地，AI 就必须具备更高阶的 3D 空间识别、理解和推理能力，这是绕不过去的坎。Ray Zhai(@ Cryptoxorz) 和 suwakopro(@ suwakopro) 都提到了\"世界模型\"这个概念——AI 不能只在文字和图片的世界里打转，它得理解真实世界的因果律和物理规则。小洲洲的 AI 日常 (@ LZhou15365) 观察到具身智能已经在快速进化：\"从走姿、行动都越来越像人类。\"当 AI 学会了\"慢思考\"，下一步就是让它学会\"动手做事\"，空间智能是连接数字世界和物理世界的那座桥。\n\n还有一批产品被多人提及：Cursor 和 Windsurf 这类 AI IDE，Deep Research 深度研究，Manus 和 Youmind 这类通用 Agent，可灵和 Sora 的视频生成。\n\n但最让我印象深刻的是三疯 (@ 3fenglife) 的一句总结：让人惊艳的不再是对话框，而是进度条——它在后台默默把事办完了。Ray Zhai(@ Cryptoxorz) 把这种体验叫做“感知消失，效率倍增”，这才是技术真正闭环的瞬间。\n\n这才是 2025 年产品形态的本质变化。\n\n【3】2026 路线图：从“教 AI 怎么做”到“告诉 AI 我要什么”\n\n关于 2026 年的趋势，答案的集中度比我想象的高。\n\n第一个共识是 Agent 大规模落地。\n\n超过三分之一的人提到了这个方向。什么是 Agent？简单说，就是 AI 不再只是回答问题，还能自己拆解任务、调用工具、一步步执行，最后交付结果。\n\nRay Zhai(@ Cryptoxorz) 的描述很有画面感：未来不再是你一个人对着一个 AI，而是你拥有一个 AI 舰队。它们会自动分工、自我纠错、自发存储数据。我们将从“教 AI 怎么做”转向“告诉 AI 我要什么”。\n\nSLiangD(@ SLiangD) 用黄金圈法则做了一个漂亮的框架切分：Why（为什么做）和 What（做什么）仍然是人的领地，AI 无法替代；但 How（怎么做）将彻底交给机器，趋近于零成本瞬间完成。\n\n这意味着什么？未来的竞争力不是“会用 AI”，而是“会定义问题”。\n\n第二个共识是具身智能。\n\n码上盈 (@ InnaLyceyum) 预测 Agent 将不再只存在于浏览器中，而会深度集成到智能硬件——从智能眼镜到桌面机器人，AI 将获得空间感知与物理交互能力。阿绎 YiOS(@ WangYiNotes) 说得更极端：2026 年我们可能不再讨论哪个 AI 产品好用，因为 AI 已经内嵌在 OS 和硬件的每一寸肌理里了。\n\n第三个共识是 AI 的“私人化”和“记忆化”。\n\nCunningham Card(@ Card198454) 强调 Memory 方向的突破会让 Agent 更像人，拥有社会属性。AI 将从千篇一律的工具，演变成极度个性化、具备连续记忆的数字助手。\n\n三疯 (@ 3fenglife) 还提出了一个颠覆性预测：SaaS 的消亡，Service 的崛起。你不再订阅“写作软件”，你订阅的是“文案产出服务”；你不再订阅“CRM 系统”，你订阅的是“销售线索清洗服务”。软件会员变成结果订阅，这是商业模式的根本重构。\n\n当然也有清醒的声音。\n\nMichael Guo(@ Michaelzsguo) 认为 2025 年 AI 基本没有关键技术突破，都是沿用 2024 年的路线做性能提升。Tony Lee(@ lee810860) 预测 AI 厂商加速倒闭。熊布朗 (@ Stephen4171127) 直接说“没有什么是不可忽视的必然路径”。\n\n也不能说这些声音是悲观，更像是提醒我们：共识不等于正确，热情不能代替验证。\n\n【4】最后\n\nAI 的演进已经进入新阶段。2024 年大家还在争论哪个模型更聪明，2025 年这个问题变得不那么重要了，重要的是谁能把活干完。从“会说”到“会做”，从“输出文本”到“交付结果”，这是范式级的转变。\n\n来自 Roland(@ Roland_WayneOZ) 和 SLiangD(@ SLiangD) 的一句话适合用来作为结尾：\n2025 年是 AI 学会干活的元年。2026 年的赢家，不是最会用 AI 的人，而是最会定义问题的人。\n\n我把整理后的结果放到 Google Sheet 上了：https://t.co/hTGAIUWfJe",
+      "created_at": "Wed Dec 31 00:48:45 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2006165473600122881",
+          "url": "https://pbs.twimg.com/media/G9dU3n6WsAEwDW3.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2005579554346385571",
+        "text": "年底了，问几个问题，欢迎一起留言讨论：\n\n1. 2025年，将AI推入下一个阶段的关键技术突破是什么？\n\n2. 2025年有哪些AI产品让您眼前一亮？\n\n3. 展望2026，哪个趋势是不可忽视的必然路径？",
+        "created_at": "Mon Dec 29 10:00:02 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 163147,
+          "friends_count": 1501,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 42,
+          "favorite_count": 266,
+          "reply_count": 117,
+          "quote_count": 19
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 35,
+        "reply_count": 7,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2006167013014589628",
+      "text": "谢谢大家认真的回复，把大家的答案整理了一下，很抱歉没办法把每一个人的名字都放到推文里面，真心感谢大家的参与。\nhttps://t.co/KWpI74JVsS",
+      "created_at": "Wed Dec 31 00:54:23 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2006165594459045928",
+        "text": "这份年终众包调研来自我在 X 上的随手一问，问了三个问题：2025 年 AI 最关键的技术突破是什么？哪些产品让你眼前一亮？2026 年什么趋势不可忽视？\n\n没想到收到了这么多认真的回复。我花了一两个小时时间，把这些留言和答案汇总整理了一下。\n\n127 条留言，95 个人回答了同样的三个问题。\n\n看完所有答案，我发现大家虽然各有侧重，但在某些判断上出奇一致。答案五花八门，但有些词频繁出现：推理 (Reasoning)、Agent (智能体)、Claude Code、Manus、Nano Banana Pro、NotebookLM、具身智能 (Embodied AI)。\n\n这组词频里有个共同点：“聊天”这个词几乎没人提起了，“干活”这个词开始更多被提起了。\n\n【1】推理革命：AI 学会了慢下来\n\n如果要选 2025 年最重要的技术突破，答案几乎没有悬念——推理能力的工程化落地。\n\n三疯 (@ 3fenglife) 的表述最精准：从“预测下一个词”到“预测下一步行动”。以前的 AI 像个反应快但不过脑子的人，张口就来，经常胡说八道。2025 年的突破在于，AI 学会了在回答之前先想一想——做内部推演、自我检查、发现错误就纠正。\n\n技术上这叫 System 2 Thinking，或者叫 test-time scaling。AI 从“快思考”进化到了“慢思考”。o1、o3、DeepSeek R1 这些模型，都是这条路线的产物。\n\nRay Zhai(@ Cryptoxorz) 还补充了一个视角——当 AI 开始像人类一样拥有“慢思考”的逻辑链，并能理解真实世界的因果律时，AI 才算真正拿到了进入物理世界的入场券。\n\n岚叔 (@ LufzzLiz) 和 Xin(@ Xin_Jin1018) 点名了一个关键技术：RLVR，基于可验证奖励的强化学习。\n\n以前训练模型需要大量人工标注的数据，告诉模型“这个回答好，那个回答不好”。这很贵，也很慢。而 RLVR 换了个思路：对于数学题和代码这类问题，答案对不对是可以自动验证的。答案对了就给奖励，错了就扣分。不需要人来一条条看。\n\n另一个高频共识是成本拐点。Rainman(@ 0xdeusyu) 和 Robinson(@ python_xxt) 都提到了 MoE 稀疏化架构，DeepSeek R1 证明了一件事：前沿 AI 不再需要前沿预算。意味着推理成本在下降，成为可以普及的基础设施。\n\n还有一类突破被反复提及：Agent 系统化成熟。SLiangD(@ SLiangD) 说得很到位，关键突破不是参数变大，而是三件套终于配合默契了——工具调用、上下文工程、多步推理。AI 能理解“帮我扫描亚马逊眼罩类目，找出评分低但销量高的产品，总结用户抱怨最多的三个痛点”这种复杂任务链了。\n\n【2】年度产品：对话框退场，进度条登台\n\n问到 2025 年哪些产品让人眼前一亮，有一个名字被提到了二十多次：Claude Code。\n\nG_Z(@ GZhan57) 的评价很有画面感：“第一个 work 的 general agent，除了不能生孩子啥都可以。”阿绎 YiOS(@ WangYiNotes) 说得更细腻：“不是因为它写代码有多快，而是它第一次让人感觉是在跟队友协作，而不是在调教工具。”\n\nClaude Code 代表的是一类新物种：能把复杂工作流跑通的 AI。它不只是补全代码，还可以自己检索文档、改 Bug、跑测试、完成部署。你扔给它一个需求，它真的能把事办完。\n\n第二名是 NotebookLM。Rocky(@ Rockybnbtrade) 说它让知识输入效率提升了很多，王是子路 (@ atm13999) 说它把枯燥的文档变成极其自然的播客对话。这个产品的价值不在于生成内容，而在于帮你消化和内化已有的知识。\n\n第三名是个意外：Nano Banana Pro，谷歌 Gemini 的生图功能。defyong(@ defyong) 的评价很有意思：“结合 Gemini 的感知与知识库，图片生成不再是凭感觉。第一次让我觉得，这个生图工具，她活起来了。”Steven Qi(@ Jason_qeb) 补充说中文支持是个大突破，文生图、图生视频、图生 PPT 都变得可行了。\n\n视频生成虽然没有 Claude Code 和 Nano Banana Pro 那么高频，但也收获了一批提名。Roland(@ Roland_WayneOZ) 和小镇记录家 (@ liangde_li40657) 都提到了 Sora、可灵、即梦等产品的突破，cicada(@ thebestsetup) 直接把 Veo/Sora 列为年度最惊艳。JCat(@ JackyisThinking) 的判断更进一步：视频生成会在 2026 年更加成熟，影视行业尤其是低成本特效和动画行业将全面 AI 化。这条赛道的特点是\"看得见摸得着\"，普通人也能直观感受到 AI 的进步，所以虽然技术门槛高、商业化慢，但对大众认知的影响可能比编程工具更大。\n\n空间智能是另一个被多人点名的方向。JCat(@ JackyisThinking) 说得最清楚：机器人产业要落地，AI 就必须具备更高阶的 3D 空间识别、理解和推理能力，这是绕不过去的坎。Ray Zhai(@ Cryptoxorz) 和 suwakopro(@ suwakopro) 都提到了\"世界模型\"这个概念——AI 不能只在文字和图片的世界里打转，它得理解真实世界的因果律和物理规则。小洲洲的 AI 日常 (@ LZhou15365) 观察到具身智能已经在快速进化：\"从走姿、行动都越来越像人类。\"当 AI 学会了\"慢思考\"，下一步就是让它学会\"动手做事\"，空间智能是连接数字世界和物理世界的那座桥。\n\n还有一批产品被多人提及：Cursor 和 Windsurf 这类 AI IDE，Deep Research 深度研究，Manus 和 Youmind 这类通用 Agent，可灵和 Sora 的视频生成。\n\n但最让我印象深刻的是三疯 (@ 3fenglife) 的一句总结：让人惊艳的不再是对话框，而是进度条——它在后台默默把事办完了。Ray Zhai(@ Cryptoxorz) 把这种体验叫做“感知消失，效率倍增”，这才是技术真正闭环的瞬间。\n\n这才是 2025 年产品形态的本质变化。\n\n【3】2026 路线图：从“教 AI 怎么做”到“告诉 AI 我要什么”\n\n关于 2026 年的趋势，答案的集中度比我想象的高。\n\n第一个共识是 Agent 大规模落地。\n\n超过三分之一的人提到了这个方向。什么是 Agent？简单说，就是 AI 不再只是回答问题，还能自己拆解任务、调用工具、一步步执行，最后交付结果。\n\nRay Zhai(@ Cryptoxorz) 的描述很有画面感：未来不再是你一个人对着一个 AI，而是你拥有一个 AI 舰队。它们会自动分工、自我纠错、自发存储数据。我们将从“教 AI 怎么做”转向“告诉 AI 我要什么”。\n\nSLiangD(@ SLiangD) 用黄金圈法则做了一个漂亮的框架切分：Why（为什么做）和 What（做什么）仍然是人的领地，AI 无法替代；但 How（怎么做）将彻底交给机器，趋近于零成本瞬间完成。\n\n这意味着什么？未来的竞争力不是“会用 AI”，而是“会定义问题”。\n\n第二个共识是具身智能。\n\n码上盈 (@ InnaLyceyum) 预测 Agent 将不再只存在于浏览器中，而会深度集成到智能硬件——从智能眼镜到桌面机器人，AI 将获得空间感知与物理交互能力。阿绎 YiOS(@ WangYiNotes) 说得更极端：2026 年我们可能不再讨论哪个 AI 产品好用，因为 AI 已经内嵌在 OS 和硬件的每一寸肌理里了。\n\n第三个共识是 AI 的“私人化”和“记忆化”。\n\nCunningham Card(@ Card198454) 强调 Memory 方向的突破会让 Agent 更像人，拥有社会属性。AI 将从千篇一律的工具，演变成极度个性化、具备连续记忆的数字助手。\n\n三疯 (@ 3fenglife) 还提出了一个颠覆性预测：SaaS 的消亡，Service 的崛起。你不再订阅“写作软件”，你订阅的是“文案产出服务”；你不再订阅“CRM 系统”，你订阅的是“销售线索清洗服务”。软件会员变成结果订阅，这是商业模式的根本重构。\n\n当然也有清醒的声音。\n\nMichael Guo(@ Michaelzsguo) 认为 2025 年 AI 基本没有关键技术突破，都是沿用 2024 年的路线做性能提升。Tony Lee(@ lee810860) 预测 AI 厂商加速倒闭。熊布朗 (@ Stephen4171127) 直接说“没有什么是不可忽视的必然路径”。\n\n也不能说这些声音是悲观，更像是提醒我们：共识不等于正确，热情不能代替验证。\n\n【4】最后\n\nAI 的演进已经进入新阶段。2024 年大家还在争论哪个模型更聪明，2025 年这个问题变得不那么重要了，重要的是谁能把活干完。从“会说”到“会做”，从“输出文本”到“交付结果”，这是范式级的转变。\n\n来自 Roland(@ Roland_WayneOZ) 和 SLiangD(@ SLiangD) 的一句话适合用来作为结尾：\n2025 年是 AI 学会干活的元年。2026 年的赢家，不是最会用 AI 的人，而是最会定义问题的人。\n\n我把整理后的结果放到 Google Sheet 上了：https://t.co/hTGAIUWfJe",
+        "created_at": "Wed Dec 31 00:48:45 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2006165473600122881",
+            "url": "https://pbs.twimg.com/media/G9dU3n6WsAEwDW3.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 163147,
+          "friends_count": 1501,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3,
+          "favorite_count": 35,
+          "reply_count": 7,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2006176530343313452",
+      "text": "为了整理这100多条留言（还有些是转发），我先后试了多种 Agent，比如 ChatGPT Atlas、Claude 的 Chrome Extension ，但都不靠谱。Manus 没试，因为要登录我账号不确认是否可行，主要是没开会员😅\n\n后来我找到一个半手工半自动化的办法：\n1. 把所有 Twitter API 返回结果抓下来，保存成 json 文件放到个目录\n\n2. 然后让 codex cli 去解析内容，当然我贴心的把 API 相关字段给找出来了。\n\n- 先解析所有留言内容出来，保存到 csv 文件\n- 然后基于留言内容，去筛选出回答了问题的，保存到 csv 文件\n\ncodex 很敬业，一条条帮我整理出来的\n\n---\n\n参考提示词 1：\n\n---\n\n请帮我从目录下的 json 文件中解析出来所有推文信息，包括：\n\nentities:\n\ndata.threaded_conversation_with_injections_v2.instructions[1].entries\n\nor\n\nhttps://t.co/fa82fIeupQ_by_raw_query.search_timeline.timeline.instructions[0].entries\n\n3. id\n\nentries[{index}].content.items[0].item.itemContent.tweet_results.result.legacy.id_str\n\n2. name:\nentries[{index}].content.itemContent.tweet_results.result.core.user_results.result.core.name\n\n3. screen_name:\nentries[{index}].content.itemContent.tweet_results.result.core.user_results.result.core.screen_name\n\n4. content:\n\nentries[{index}].content.items[0].item.itemContent.tweet_results.result.note_tweet.note_tweet_results.result.text\n\nor\n\nentries[{index}].content.items[0].item.itemContent.tweet_results.result.legacy.full_text\n\n保存为 .csv 文件\n\n----\n\n参考提示词 2:\n\n----\n\ntweets.csv 文件中是对3个问题的回复评论\n1. 2025年，将AI推入下一个阶段的关键技术突破是什么？\n2. 2025年有哪些AI产品让您眼前一亮？\n3. 展望2026，哪个趋势是不可忽视的必然路径？\n\n请你：\n- 把相同作者的内容合并，多个id用逗号隔开\n- 找出回答了至少一个问题的作者按照3个问题筛选出作者对每个问题的答案：\n- 保存成新的csv\n* id\n* name\n* screen_name\n* answer1(2025年，将AI推入下一个阶段的关键技术突破是什么？)\n* answer2(2025年有哪些AI产品让您眼前一亮？)\n* answer3(展望2026，哪个趋势是不可忽视的必然路径？)",
+      "created_at": "Wed Dec 31 01:32:12 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2006175358173806592",
+          "url": "https://pbs.twimg.com/media/G9dd2-0XgAA7ts6.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2006176518658011136",
+          "url": "https://pbs.twimg.com/media/G9de6h9XMAAExmf.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2006165594459045928",
+        "text": "这份年终众包调研来自我在 X 上的随手一问，问了三个问题：2025 年 AI 最关键的技术突破是什么？哪些产品让你眼前一亮？2026 年什么趋势不可忽视？\n\n没想到收到了这么多认真的回复。我花了一两个小时时间，把这些留言和答案汇总整理了一下。\n\n127 条留言，95 个人回答了同样的三个问题。\n\n看完所有答案，我发现大家虽然各有侧重，但在某些判断上出奇一致。答案五花八门，但有些词频繁出现：推理 (Reasoning)、Agent (智能体)、Claude Code、Manus、Nano Banana Pro、NotebookLM、具身智能 (Embodied AI)。\n\n这组词频里有个共同点：“聊天”这个词几乎没人提起了，“干活”这个词开始更多被提起了。\n\n【1】推理革命：AI 学会了慢下来\n\n如果要选 2025 年最重要的技术突破，答案几乎没有悬念——推理能力的工程化落地。\n\n三疯 (@ 3fenglife) 的表述最精准：从“预测下一个词”到“预测下一步行动”。以前的 AI 像个反应快但不过脑子的人，张口就来，经常胡说八道。2025 年的突破在于，AI 学会了在回答之前先想一想——做内部推演、自我检查、发现错误就纠正。\n\n技术上这叫 System 2 Thinking，或者叫 test-time scaling。AI 从“快思考”进化到了“慢思考”。o1、o3、DeepSeek R1 这些模型，都是这条路线的产物。\n\nRay Zhai(@ Cryptoxorz) 还补充了一个视角——当 AI 开始像人类一样拥有“慢思考”的逻辑链，并能理解真实世界的因果律时，AI 才算真正拿到了进入物理世界的入场券。\n\n岚叔 (@ LufzzLiz) 和 Xin(@ Xin_Jin1018) 点名了一个关键技术：RLVR，基于可验证奖励的强化学习。\n\n以前训练模型需要大量人工标注的数据，告诉模型“这个回答好，那个回答不好”。这很贵，也很慢。而 RLVR 换了个思路：对于数学题和代码这类问题，答案对不对是可以自动验证的。答案对了就给奖励，错了就扣分。不需要人来一条条看。\n\n另一个高频共识是成本拐点。Rainman(@ 0xdeusyu) 和 Robinson(@ python_xxt) 都提到了 MoE 稀疏化架构，DeepSeek R1 证明了一件事：前沿 AI 不再需要前沿预算。意味着推理成本在下降，成为可以普及的基础设施。\n\n还有一类突破被反复提及：Agent 系统化成熟。SLiangD(@ SLiangD) 说得很到位，关键突破不是参数变大，而是三件套终于配合默契了——工具调用、上下文工程、多步推理。AI 能理解“帮我扫描亚马逊眼罩类目，找出评分低但销量高的产品，总结用户抱怨最多的三个痛点”这种复杂任务链了。\n\n【2】年度产品：对话框退场，进度条登台\n\n问到 2025 年哪些产品让人眼前一亮，有一个名字被提到了二十多次：Claude Code。\n\nG_Z(@ GZhan57) 的评价很有画面感：“第一个 work 的 general agent，除了不能生孩子啥都可以。”阿绎 YiOS(@ WangYiNotes) 说得更细腻：“不是因为它写代码有多快，而是它第一次让人感觉是在跟队友协作，而不是在调教工具。”\n\nClaude Code 代表的是一类新物种：能把复杂工作流跑通的 AI。它不只是补全代码，还可以自己检索文档、改 Bug、跑测试、完成部署。你扔给它一个需求，它真的能把事办完。\n\n第二名是 NotebookLM。Rocky(@ Rockybnbtrade) 说它让知识输入效率提升了很多，王是子路 (@ atm13999) 说它把枯燥的文档变成极其自然的播客对话。这个产品的价值不在于生成内容，而在于帮你消化和内化已有的知识。\n\n第三名是个意外：Nano Banana Pro，谷歌 Gemini 的生图功能。defyong(@ defyong) 的评价很有意思：“结合 Gemini 的感知与知识库，图片生成不再是凭感觉。第一次让我觉得，这个生图工具，她活起来了。”Steven Qi(@ Jason_qeb) 补充说中文支持是个大突破，文生图、图生视频、图生 PPT 都变得可行了。\n\n视频生成虽然没有 Claude Code 和 Nano Banana Pro 那么高频，但也收获了一批提名。Roland(@ Roland_WayneOZ) 和小镇记录家 (@ liangde_li40657) 都提到了 Sora、可灵、即梦等产品的突破，cicada(@ thebestsetup) 直接把 Veo/Sora 列为年度最惊艳。JCat(@ JackyisThinking) 的判断更进一步：视频生成会在 2026 年更加成熟，影视行业尤其是低成本特效和动画行业将全面 AI 化。这条赛道的特点是\"看得见摸得着\"，普通人也能直观感受到 AI 的进步，所以虽然技术门槛高、商业化慢，但对大众认知的影响可能比编程工具更大。\n\n空间智能是另一个被多人点名的方向。JCat(@ JackyisThinking) 说得最清楚：机器人产业要落地，AI 就必须具备更高阶的 3D 空间识别、理解和推理能力，这是绕不过去的坎。Ray Zhai(@ Cryptoxorz) 和 suwakopro(@ suwakopro) 都提到了\"世界模型\"这个概念——AI 不能只在文字和图片的世界里打转，它得理解真实世界的因果律和物理规则。小洲洲的 AI 日常 (@ LZhou15365) 观察到具身智能已经在快速进化：\"从走姿、行动都越来越像人类。\"当 AI 学会了\"慢思考\"，下一步就是让它学会\"动手做事\"，空间智能是连接数字世界和物理世界的那座桥。\n\n还有一批产品被多人提及：Cursor 和 Windsurf 这类 AI IDE，Deep Research 深度研究，Manus 和 Youmind 这类通用 Agent，可灵和 Sora 的视频生成。\n\n但最让我印象深刻的是三疯 (@ 3fenglife) 的一句总结：让人惊艳的不再是对话框，而是进度条——它在后台默默把事办完了。Ray Zhai(@ Cryptoxorz) 把这种体验叫做“感知消失，效率倍增”，这才是技术真正闭环的瞬间。\n\n这才是 2025 年产品形态的本质变化。\n\n【3】2026 路线图：从“教 AI 怎么做”到“告诉 AI 我要什么”\n\n关于 2026 年的趋势，答案的集中度比我想象的高。\n\n第一个共识是 Agent 大规模落地。\n\n超过三分之一的人提到了这个方向。什么是 Agent？简单说，就是 AI 不再只是回答问题，还能自己拆解任务、调用工具、一步步执行，最后交付结果。\n\nRay Zhai(@ Cryptoxorz) 的描述很有画面感：未来不再是你一个人对着一个 AI，而是你拥有一个 AI 舰队。它们会自动分工、自我纠错、自发存储数据。我们将从“教 AI 怎么做”转向“告诉 AI 我要什么”。\n\nSLiangD(@ SLiangD) 用黄金圈法则做了一个漂亮的框架切分：Why（为什么做）和 What（做什么）仍然是人的领地，AI 无法替代；但 How（怎么做）将彻底交给机器，趋近于零成本瞬间完成。\n\n这意味着什么？未来的竞争力不是“会用 AI”，而是“会定义问题”。\n\n第二个共识是具身智能。\n\n码上盈 (@ InnaLyceyum) 预测 Agent 将不再只存在于浏览器中，而会深度集成到智能硬件——从智能眼镜到桌面机器人，AI 将获得空间感知与物理交互能力。阿绎 YiOS(@ WangYiNotes) 说得更极端：2026 年我们可能不再讨论哪个 AI 产品好用，因为 AI 已经内嵌在 OS 和硬件的每一寸肌理里了。\n\n第三个共识是 AI 的“私人化”和“记忆化”。\n\nCunningham Card(@ Card198454) 强调 Memory 方向的突破会让 Agent 更像人，拥有社会属性。AI 将从千篇一律的工具，演变成极度个性化、具备连续记忆的数字助手。\n\n三疯 (@ 3fenglife) 还提出了一个颠覆性预测：SaaS 的消亡，Service 的崛起。你不再订阅“写作软件”，你订阅的是“文案产出服务”；你不再订阅“CRM 系统”，你订阅的是“销售线索清洗服务”。软件会员变成结果订阅，这是商业模式的根本重构。\n\n当然也有清醒的声音。\n\nMichael Guo(@ Michaelzsguo) 认为 2025 年 AI 基本没有关键技术突破，都是沿用 2024 年的路线做性能提升。Tony Lee(@ lee810860) 预测 AI 厂商加速倒闭。熊布朗 (@ Stephen4171127) 直接说“没有什么是不可忽视的必然路径”。\n\n也不能说这些声音是悲观，更像是提醒我们：共识不等于正确，热情不能代替验证。\n\n【4】最后\n\nAI 的演进已经进入新阶段。2024 年大家还在争论哪个模型更聪明，2025 年这个问题变得不那么重要了，重要的是谁能把活干完。从“会说”到“会做”，从“输出文本”到“交付结果”，这是范式级的转变。\n\n来自 Roland(@ Roland_WayneOZ) 和 SLiangD(@ SLiangD) 的一句话适合用来作为结尾：\n2025 年是 AI 学会干活的元年。2026 年的赢家，不是最会用 AI 的人，而是最会定义问题的人。\n\n我把整理后的结果放到 Google Sheet 上了：https://t.co/hTGAIUWfJe",
+        "created_at": "Wed Dec 31 00:48:45 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2006165473600122881",
+            "url": "https://pbs.twimg.com/media/G9dU3n6WsAEwDW3.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 163147,
+          "friends_count": 1501,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3,
+          "favorite_count": 35,
+          "reply_count": 7,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 21,
+        "reply_count": 8,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2006183905481683182",
+      "text": "案例",
+      "created_at": "Wed Dec 31 02:01:30 +0000 2025",
+      "lang": "ja",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2006182485067981244",
+        "text": "我来交作业了p1-4 https://t.co/h6F34AKWSq",
+        "created_at": "Wed Dec 31 01:55:52 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2006182475303649281",
+            "url": "https://pbs.twimg.com/media/G9dkVQMWgAEttqn.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2006182475307905024",
+            "url": "https://pbs.twimg.com/media/G9dkVQNXcAA5Abt.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2006182475299422208",
+            "url": "https://pbs.twimg.com/media/G9dkVQLWAAABODn.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2006182475295297538",
+            "url": "https://pbs.twimg.com/media/G9dkVQKXEAIDSme.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "961899316695654400",
+          "name": "Nikola",
+          "screen_name": "Nikola314359",
+          "description": "睁眼看世界。",
+          "followers_count": 21,
+          "friends_count": 302,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 1,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2006188132618641602",
+      "text": "是我低估grok了",
+      "created_at": "Wed Dec 31 02:18:18 +0000 2025",
+      "lang": "ja",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2006187074492506221",
+        "text": "@dotey 我先让 grok 整理成 csv，然后做了一下综述\nhttps://t.co/sGb6KJUNtZ",
+        "created_at": "Wed Dec 31 02:14:06 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1816869228336812032",
+          "name": "青云",
+          "screen_name": "anata_404",
+          "description": "Valar Morghulis",
+          "followers_count": 109,
+          "friends_count": 54,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 0,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 1
+      }
+    }
+  ]
+}

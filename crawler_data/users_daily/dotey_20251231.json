@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 163265,
+    "followers_count": 163310,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20251231",
-  "last_updated": "2025-12-31T06:07:31.481872",
-  "tweet_count": 9,
+  "last_updated": "2025-12-31T08:07:05.261740",
+  "tweet_count": 11,
   "tweets": [
     {
       "id": "2006165594459045928",
@@ -401,6 +401,101 @@
       "stats": {
         "retweet_count": 0,
         "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2006259969440502093",
+      "text": "日本“牙齿再生药”开启人体试验，目标2030年上市\n\n日本科学家正在推进一项听起来像科幻电影的突破：让人类重新长出牙齿。这项由大阪北野医院和京都大学合作研发的“牙齿再生药”，已于2024年9月正式开启人体临床试验。\n\n我们都知道骨头断了能愈合，但牙齿一旦脱落就无法自然再生。这是因为人体内有一种名为 USAG-1 的基因会抑制牙齿生长。研究团队发现，通过药物阻断这种基因的相互作用，就能解除“生长封印”。这种疗法此前已在老鼠和雪貂身上验证成功，不仅安全性高，还能长出完整的新牙。\n\n目前的临床第一阶段主要针对30名缺牙的成年男性，重点测试药物安全性。如果一切顺利，下一阶段将针对2至7岁先天性缺牙的儿童进行治疗。\n\n团队负责人高桥克表示，目标是在2030年前后将药物推向市场。虽然初期主要面向先天性缺牙患者，但未来有望普及到所有因蛀牙或事故掉牙的普通人。这意味着，困扰人类已久的假牙和种植牙时代，或许即将在几年后迎来终结。\n\n来源：https://t.co/JDU00Z00FT",
+      "created_at": "Wed Dec 31 07:03:45 +0000 2025",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2006259961106452480",
+          "url": "https://pbs.twimg.com/media/G9eqzhTW0AAtHvu.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 18,
+        "reply_count": 5,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2006270091487502341",
+      "text": "RT @LiZhiZhuangB123: 给大家分享下用@grok task推送每日热门推文的提示词！感谢@HenryFeng173949 老师优化！\n\n下面是提示词：\n\n# Role\n你是一名拥有10年经验的科技与数字营销情报分析师。你的核心能力是从X平台 （Twitter）…",
+      "created_at": "Wed Dec 31 07:43:59 +0000 2025",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2006269370708930763",
+        "text": "给大家分享下用@grok task推送每日热门推文的提示词！感谢@HenryFeng173949 老师优化！\n\n下面是提示词：\n\n# Role\n你是一名拥有10年经验的科技与数字营销情报分析师。你的核心能力是从X平台 （Twitter）的海量碎片信息中，识别出真正具备商业价值和实操意义的“高信噪比”情报。\n# Mission\n请搜索并分析过去24小时内 X平台上的热门推文，筛选出至少30条 质量最高的内容。\n聚焦领域：AI（人工智能）、Tech（前沿科技）、Growth（流量增长）、SEO（搜索引擎优化）。\n# Quality Filter（核心筛选逻辑）\n请严格基于以下标准进行筛选，*宁缺毋滥**：\n1. 高实用性优先 （Bookmark Criteria）：\n-重点寻找那些用户会倾向于“收藏”的内容。例如：具体的SEO操作SOP、好用的AI工具演示、开源项目GitHub地址、Prompt提示词模板、数据增长Case Study。\n- 判断技巧：如果一条推文提供了教程、数据表或工具合集，优先级＞纯新闻报道。\n2. 关键数据验证：\n-关注在该领域内引发专业讨论的内容（查看评论区的质量）。\n-对于“流量增长“和“SEO”，优先选择带有数据验证（Data-backed）的观点，而非单纯的理论。\n8. 负面清单（必须排除）：\n-X排除无意义的互动贴（如“早安”、“互粉”）。\n-＜排除纯情绪化宣泄或政治争议内容。\n- X排除加密货币（Crypto/Meme）喊单内容，除非与AI技术强相关。\n-X排除官方枯燥的公关通稿，除非是重大产品更新。\n# Output Format（输出规范）\n请将内容按【中文分类】（如：AI工具/SEO策略/流量黑客/科技新闻）整理。\n每条内容严格执行以下格式，*一句话总结必须包含具体的价值点**：\n【中文分类】标题/核心事件：一句话核心价值总结（中文）。【原文链接及作者】\n格式示例：\n【SEO策略】Google HCU算法逆向分析：作者测试发现，增加页面内的“第一人称经验描述”能显著对抗算法降权，并附带了对比数据图。【原文链接及作者】\n# Execution\n执行搜索与分析，覆盖所有语言内容，最终输出至少30条精选结果。",
+        "created_at": "Wed Dec 31 07:41:07 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2006240969650516319",
+          "text": "分享下我的做法：\n\nX 上的信息流管理起来很麻烦，\n\n手动刷推效率低，为了避免信息被动投喂，\n\n我一般是 利用 grok  的 tasks\n\n主动获取AI前沿信息的。分享下我的SOP：\n\n非常简单，打开https://t.co/d59z514Dyl\n\ngrok网页版tasks，新建一个任务，告诉 grok：\n\n每日早8点，推送24小时内ai领域的最新热点，\n【详细的提示词我放在下面，你可以自己改动一下】\n\ngrok有内置的 X 接口，\n\n没有其他的ai那么多幻觉，可以看到\n\n每天都会自动化的推送到你的邮箱，\n\n点开即可获取信息，\n\n成为算法的主人。\n\n详细的提示词是这个，自己复制即可使用：\n\n能否帮我总结X平台24小时热门帖子20条，每日早8点推送，聚焦ai、科技、金融、美股领域，输出时，请按照“分类”整理，并提炼每条信息的核心价值，用一句话阐述，附上原始链接。输出格式：【中文分类】标题/核心事件：一句话总结（中文）。【原文链接及作者】",
+          "created_at": "Wed Dec 31 05:48:15 +0000 2025",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2006240946774843392",
+              "url": "https://pbs.twimg.com/media/G9eZgvZboAAFeFc.jpg"
+            },
+            {
+              "type": "photo",
+              "id": "2006240946774798336",
+              "url": "https://pbs.twimg.com/media/G9eZgvZa8AAeo0T.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1995690021521948674",
+            "name": "李志",
+            "screen_name": "LiZhiZhuangB123",
+            "description": "美股行情观察  & 数字游民分享 & 出海探索者。\n做过金融码农、前字节跳动打工人。\n正在用代码和资本（AI/美股/加密）构建自由生活。 \n🏃‍♂️ 也是个严肃的跑者 (全马350、半马150)。\n👆关注我，摆脱焦虑，我们一起慢慢变富。",
+            "followers_count": 1707,
+            "friends_count": 426,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 0,
+            "favorite_count": 5,
+            "reply_count": 2,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "1995690021521948674",
+          "name": "李志",
+          "screen_name": "LiZhiZhuangB123",
+          "description": "美股行情观察  & 数字游民分享 & 出海探索者。\n做过金融码农、前字节跳动打工人。\n正在用代码和资本（AI/美股/加密）构建自由生活。 \n🏃‍♂️ 也是个严肃的跑者 (全马350、半马150)。\n👆关注我，摆脱焦虑，我们一起慢慢变富。",
+          "followers_count": 1707,
+          "friends_count": 426,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 4,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
       }

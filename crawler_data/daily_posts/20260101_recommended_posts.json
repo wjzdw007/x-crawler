@@ -1,12 +1,233 @@
 {
   "date": "20260101",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-01-01T04:23:40.983071",
-  "tweet_count": 217,
-  "unique_tweet_count": 217,
-  "total_crawled": 415,
-  "duplicates_removed": 198,
+  "last_crawl_time": "2026-01-01T06:07:14.542601",
+  "tweet_count": 222,
+  "unique_tweet_count": 222,
+  "total_crawled": 417,
+  "duplicates_removed": 195,
   "tweets": [
+    {
+      "id": "2006599889585909780",
+      "text": "如果说 Claude 模型和 Claude Code 啥关系，就好比 Claude 是个剑客高手，Claude Code 就是它最趁手的武器；GPT 也是个高手，但习惯用刀，Codex CLI 就是 GPT 最趁手的宝刀，你让 GPT 模型去用 Claude Code，就好比让刀客去用剑，也能耍，但效果要打折扣。\n\nGLM、Kimi、DeepSeek V3，也是用剑高手，它们没有自己趁手的宝剑，但借了 Claude 的剑练了好久，上手就能用，用起来也威力不俗。",
+      "created_at": "Thu Jan 01 05:34:29 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2006599846027767808",
+          "url": "https://pbs.twimg.com/media/G9jf7bTWsAAEL1I.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 163640,
+        "friends_count": 1503,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2006595084134084853",
+      "text": "RT @teslaownersSV: \"I will fight to my last drop of blood to ensure that 🇺🇸 remains the land of freedom and opportunity”\n\nElon Musk https:/…",
+      "created_at": "Thu Jan 01 05:15:23 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2006404718315123190",
+        "text": "\"I will fight to my last drop of blood to ensure that 🇺🇸 remains the land of freedom and opportunity”\n\nElon Musk https://t.co/84orQZ9BLq",
+        "created_at": "Wed Dec 31 16:38:56 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2006404714796298240",
+            "url": "https://pbs.twimg.com/media/G9gudS0aMAA0qJ2.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1016059981907386368",
+          "name": "Tesla Owners Silicon Valley",
+          "screen_name": "teslaownersSV",
+          "description": "The most notorious Tesla Club in the world. Creator of @thextakeover and taking the Takeover global. We amplify sustainability and philanthropy.",
+          "followers_count": 1366172,
+          "friends_count": 815,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 555,
+          "favorite_count": 5035,
+          "reply_count": 567,
+          "quote_count": 49
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230754748,
+        "friends_count": 1260,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 555,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2006594743757640183",
+      "text": "Simon Willison 这位 Django 框架的核心开发者、LLM 领域最勤奋的独立博主，每年年底都会写一篇万字长文回顾 AI 这一年。今年是第三年。\n\n原文 https://t.co/WN0ufxZGGM 很长，我从他的年度总结中围绕\n1. 2025 年 AI 最关键的技术突破是什么？\n2. 哪些产品让你眼前一亮？\n3. 2026 年什么趋势不可忽视？\n这三个问题整理了部分内容。\n\n【1】2025 最关键的突破：推理模型让 Agent 真正能干活了\n\n年初 Simon 还在博客里预言“Agent 不会成功”——因为 LLM 太容易被骗了，你让它帮你干活，它可能被恶意指令带偏。\n\n结果年底他的总结推翻了自己的语言，转折点是“推理模型”。OpenAI 的 o1、DeepSeek R1、后来各家跟进的各种“thinking”模型，让 AI 学会了“慢思考”。传统模型是看到问题就直接输出答案，推理模型会先在内部进行一连串的思考——分解问题、尝试方案、检查结果、调整方向，然后才给出答案。\n\n通过让模型在数学和编程这类“可以自动验证对错”的任务上训练，模型自己学会了分步骤解决问题的策略。这看起来像“推理”，但本质上是训练出来的解题套路。\n\n一个能推理的模型，配上能执行代码的沙盒，就变成了一个真正能干活的 Agent——它可以写代码、跑代码、看报错、再改代码，循环往复直到搞定。Simon 说，哪怕是最棘手的 bug，只要给一个好的推理模型足够的代码访问权限，它通常都能一路追溯到问题根源。\n\nAI 搜索也因此从“玩具”变成了“真能用”。以前让 LLM 搜东西，结果经常驴唇不对马嘴。现在的 GPT-5 Thinking 或者 Google 的 AI Mode，可以像一个靠谱的研究助理一样帮你搜集资料、整理要点。\n\n【2】眼前一亮的产品：编程 Agent 和消费级图片编辑\n\n今年最炸裂的产品发布，发生在二月，而且低调到没有独立公告——Anthropic 把 Claude Code 的发布塞在了 Claude 3.7 Sonnet 的新闻稿第二段。\n\n结果呢？到年底，这个命令行工具创造了 10 亿美元的年化收入。一个 CLI 工具，十亿美金。Simon 自己都感叹：早知道当初应该把自己的 LLM 命令行工具当主业搞。\n\n各大厂随后疯狂跟进：OpenAI 出了 Codex CLI，Google 出了 Gemini CLI，Qwen 和 Mistral 也都下场。还有一类“异步编程 Agent”——Claude Code for Web、Codex Cloud、Google Jules——你扔个任务给它，它在云端默默干活，干完了给你提个 PR。Simon 说他现在经常在手机上随手发几个任务，几分钟后收 PR，很爽。\n\n消费级的爆款是 ChatGPT 的图片编辑。三月上线，一周涨了一亿用户，峰值时一小时一百万注册。“吉卜力化”之类的玩法病毒式传播。图片编辑可能是目前 AI 触达普通人最成功的形态。\n\nGoogle 的 Nano Banana 系列则走专业路线——它能生成带复杂文字的信息图、图表、演示材料，而且文字渲染准确。这对做内容、做汇报的人来说是真正的生产力。\n\n【3】2026 不可忽视的趋势\n\n第一个：中国开源模型已经占据榜首。\n\n年底的开放权重模型排行榜，前五名全是中国公司——GLM、Kimi K2、MiMo、DeepSeek V3.2、MiniMax。DeepSeek R1 发布那天，NVIDIA 市值一天蒸发 6000 亿美元。投资人突然意识到：AI 可能不是美国独占的游戏。\n\n第二个：安全问题的“挑战者号时刻”在逼近。\n\n很多人用 YOLO 模式跑 Agent——不审核每一步操作，让它放飞自我。目前还没出大事，但安全研究者 Johann Rehberger 警告：这正是危险所在。1986 年挑战者号爆炸前，NASA 的工程师早就知道 O 型圈有问题，但成功发射太多次，大家都麻了。AI 安全领域正在经历同样的“风险正常化”。\n\n第三个：Conformance suite 可能是下一个基础设施。\n\nSimon 发现，现在的编程 Agent 在有测试套件可跑的情况下效果惊人——给它一套现成的规范测试，它能自动迭代直到全部通过。他建议：如果你明年要推新协议、新语言、新框架，一定要配一套语言无关的测试集。这可能是 AI 时代新技术获得采用的关键。\n\n【最后】\n\nSimon 在文章里提了一句：他今年用手机写的代码比电脑还多。在 Claude Opus 4.5 和异步 Agent 的加持下，他在 iPhone 上完成了一个 C 到 Python 的库移植项目。\n\n特别认同 Simon 的一句话：\n“你的工作是交付经过验证可用的代码”。不管是你自己敲的，还是 AI 帮你生成的。",
+      "created_at": "Thu Jan 01 05:14:02 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2006594447899774977",
+          "url": "https://pbs.twimg.com/media/G9jbBNtWUAEitte.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2005579554346385571",
+        "text": "年底了，问几个问题，欢迎一起留言讨论：\n\n1. 2025年，将AI推入下一个阶段的关键技术突破是什么？\n\n2. 2025年有哪些AI产品让您眼前一亮？\n\n3. 展望2026，哪个趋势是不可忽视的必然路径？",
+        "created_at": "Mon Dec 29 10:00:02 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 163640,
+          "friends_count": 1503,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 44,
+          "favorite_count": 280,
+          "reply_count": 118,
+          "quote_count": 20
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 163640,
+        "friends_count": 1503,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 14,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2006594708861235529",
+      "text": "RT @veggie_eric: Back in January, nobody had heard of Grok. We basically just had Grok 2 and an image gen model. To put it bluntly, we were…",
+      "created_at": "Thu Jan 01 05:13:53 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2006587457748529651",
+        "text": "Back in January, nobody had heard of Grok. We basically just had Grok 2 and an image gen model. To put it bluntly, we were playing catchup.\n\n1 year later, our team has built the world's largest GPU cluster, benchmark-topping reasoning models, Grok Voice, Grok Imagine, beautiful mobile apps, X/web apps, a robust API, and more.\n\nAnd we're only just getting started. Thank you all for being a part of our journey so far, and buckle up. 2026 is going to be a massive year for xAI 🚀",
+        "created_at": "Thu Jan 01 04:45:05 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1219282049070063617",
+          "name": "Eric Jiang",
+          "screen_name": "veggie_eric",
+          "description": "Eat your veggies",
+          "followers_count": 34977,
+          "friends_count": 676,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 184,
+          "favorite_count": 2109,
+          "reply_count": 260,
+          "quote_count": 20
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 230754748,
+        "friends_count": 1260,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 184,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2006584517352370180",
+      "text": "如果你是不是还记得，2024 年夏天马斯克只用了四个月时间，从零建成了一个 10 万块 GPU 的超级计算集群。\n\n正常流程下，光是向电网申请接入、等审批、等施工，就要三到五年。一个 400MW 的数据中心，走正规路子可能要等到 2028 年才能通电。\n\n今天看了 SemiAnalysis 的报道，《AI 实验室如何解决电力危机》（How AI Labs Are Solving the Power Crisis: The Onsite Gas Deep Dive）https://t.co/RgFWJnvtVO，才知道马斯克的做法很简单粗暴：租了一堆燃气轮机，自己发电。\n\n他租了一堆卡车载的燃气轮机，直接拉到工地，接上天然气管道，几周内就开始供电。xAI 的孟菲斯园区现在已经部署了超过 500MW 的自建发电设备。\n\n这不是什么黑科技，但需要勇气和执行力。因为自建发电的成本比用电网贵得多，而且要自己搞定一大堆运维问题。但马斯克算了一笔账：每 GW 的 AI 云服务，一年能产生 100 到 120 亿美元收入。早上线六个月，就是十几亿美元。这笔账算下来，电费贵一点根本不是事。\n\n于是，一场“自带发电机”的运动在 AI 行业迅速蔓延。OpenAI 和 Oracle 在德州下了一笔史上最大的自建电厂订单，2.3GW。Meta 在俄亥俄州的项目，因为设备紧缺，干脆用了五种不同的发电机拼凑，能用就行，先跑起来再说。\n\n【1】电网为什么成了 AI 的绊脚石\n\n要理解这场“自建电厂”运动，得先明白电网为什么跟不上。\n\n美国的电网并不差。到今天为止，绝大多数 AI 集群还是用电网供电的，包括微软给 OpenAI 建的集群、谷歌在俄亥俄和爱荷华的超算、亚马逊给 Anthropic 建的 Trainium 集群。问题是，这些项目都是 2022 年之前拿到电力批文的，那时候还没有“AI 淘金热”。\n\nChatGPT 爆火之后，情况完全变了。德州电网运营商 ERCOT 的数据显示，每个月涌进来的数据中心用电申请高达几十 GW，但过去一年实际批准的，加起来刚过 1GW。\n\n为什么批不下来？\n\n首先，电网是一个需要精密平衡的系统。供电和用电必须每秒钟都匹配，差一点就可能导致大面积停电，今年 4 月伊比利亚半岛的大停电就是例子。每接入一个大型用户，都要做复杂的工程评估，确保不会把系统搞崩。\n\n其次，审批陷入了一个恶性循环。所有人都知道拿电很难，所以开发商们同时向多个电网运营商提交申请，先占坑再说。有的申请连地都没买，纯粹是投机。俄亥俄有一个电网，积压了 35GW 的申请，其中 68% 连地都还没拿到。投机申请越多，队伍越长，正经项目等得越久，于是大家更要提前占坑……\n\n从提交申请到真正通电，现在平均要五年。\n\n五年？AI 公司等不起五个月。\n\n【2】“自带发电机”的逻辑\n\nBYOG 的核心逻辑很简单：不等电网了，我自己发电。\n\n但这不是一锤子买卖。更聪明的做法是“桥接电力”：先用自建发电把数据中心跑起来，同时继续排队等电网接入。等电网通了，这些发电设备就转成备用电源。\n\n这样做有两个好处。\n\n第一，时间价值太大了。一个 200MW 的 AI 数据中心，早上线六个月，可能就是十亿美元级别的收入差距。在 AI 军备竞赛里，第一个跑出来的才能吃到最大的蛋糕。用 SemiAnalysis 那篇文章的原话：“Speed is the moat”，速度本身就是护城河。\n\n第二，省掉了柴油发电机备用电源的钱。传统数据中心都要配柴油发电机做备用，现在这些燃气设备可以兼职。\n\n当然，这条路不是谁都能走。自建电厂的成本比电网贵不少，还要自己搞定许可证、天然气供应、运维一堆事。但对于资金充裕、时间敏感的大厂来说，这是当前最务实的选择。\n\n【3】发电设备的“菜单”：从喷气发动机到船用引擎\n\n自建电厂用什么设备？选择比你想象的多。\n\n第一类是航空衍生燃气轮机，简单说就是把喷气发动机从飞机上拆下来，装到地面发电。GE 的 LM2500 就是这么来的，原型是波音 747 和 F-18 战斗机上的发动机。这类设备体积小，一台 30MW 的机组可以用普通卡车运输，几周内就能装好发电。启动也快，从冷启动到满功率只要 5 到 10 分钟。缺点是贵，目前全包成本在每千瓦 1700 到 2000 美元，交货期 18 到 36 个月。\n\n有意思的是，超音速飞机公司 Boom Supersonic 也杀进来了。他们发现自己的喷气发动机设计稍微改改就能发电，于是推出了 Superpower 燃气轮机，已经拿到了 Crusoe 公司 1.2GW 的订单。飞机公司干脆把发电当副业，用赚来的钱贴补造飞机。\n\n第二类是工业燃气轮机，专门为地面发电设计，不是从飞机改的。成本略低，但启动慢一些，需要 20 分钟左右。\n\n第三类是往复式内燃机，本质上是放大了几十倍的汽车发动机。一台 11MW 的机组可能有 14 米长。这类设备单台功率小，但维护简单，对燃料杂质和高温环境的耐受性更好。VoltaGrid 公司就是用这类设备做“能源即服务”，把一堆发电机装在卡车上，哪里需要拉到哪里。xAI 最早的 Colossus 1 集群就用了 VoltaGrid 的 34 台卡车载机组。\n\n第四类是燃料电池，主要是 Bloom Energy 的产品。这东西不烧天然气，通过电化学反应发电，完全没有燃烧过程，所以不产生除了二氧化碳之外的空气污染物。这在环保审批上有巨大优势，部署也最快，几周就能搞定。缺点是最贵，每千瓦 3000 到 4000 美元，而且电池芯片五六年就要换一批。\n\n最后还有重型燃气轮机，就是传统电厂用的那种 GW 级大家伙，配上废热回收的联合循环系统，效率可以超过 60%。但这种设备交货要等两三年，安装调试又要两年，总共五年起步。所以现在更多是作为“终极方案”，先用小设备跑起来，大设备慢慢建。\n\n【4】跑起来才知道的坑\n\n自建电厂不是买几台设备那么简单。真正跑起来之后，有一堆问题等着你。\n\n第一个坑是冗余。电网的平均可用率是 99.93%，也就是“三个 9”。要自己达到这个水平，发电设备必须“超配”。一个 200MW 的数据中心，如果用 11MW 的往复式发电机，大概需要 26 台，其中 23 台工作，3 台备用。如果一台坏了，其他机组稍微加点负荷就能顶上。VoltaGrid 在德州的一个项目，1.4GW 的数据中心配了 2.3GW 的发电设备，超配了 64%。\n\nMeta 在俄亥俄州的 Socrates South 项目更有意思。他们用了 5 种不同的发电设备：3 台 Solar Titan 250、9 台 Solar Titan 130、3 台西门子 SGT-400、15 台卡特彼勒高速发动机。总装机 306MW，给 200MW 的负载供电。设备型号都不统一，明显是“能抢到什么用什么”的拼凑方案。\n\n第二个坑是负载波动。AI 训练的用电负荷变化很快，几毫秒内就可能出现几十兆瓦的波动。如果发电系统的惯性不够，频率会跳，严重的会触发保护跳闸。解决方案包括同步调相机、飞轮储能、电池储能系统。xAI 的做法是配大量特斯拉 Megapack 电池，既能平滑负载波动，又能在发电机启动时顶一会儿。\n\n第三个坑是许可证。虽然自建电厂绑过了电网审批，但还要过环保部门这一关。燃气发电有空气污染物排放，需要拿空气许可证。即使在德州这种审批友好的地方，这个流程也可能要一年以上。Oracle 和 Stargate 的一个 GW 级项目就因为许可证问题延期了，SemiAnalysis 在彭博报道之前三周就通过追踪许可审批流程预测到了这个问题。\n\nxAI 的应对方式很“马斯克”：把项目选址放在田纳西和密西西比两个州的交界处，同时向两边申请，谁先批就在谁那边建。结果田纳西没批下来，密西西比批了，项目就在密西西比落地。\n\n【5】供应链的老伤疤\n\n即使你有钱、有地、有许可证，也不一定能买到设备。\n\n燃气轮机的交货期现在是历史最长。GE Vernova、西门子能源、三菱重工这三大厂商的订单已经排到 2028 年甚至 2029 年。\n他们为什么不扩产？\n\n这要追溯到燃气轮机行业的两次“大崩盘”。\n\n第一次是 2001 年前后。互联网泡沫时代，大家相信数据中心会消耗天量电力，电力公司疯狂下单。GE 一年出货超过 60GW。然后互联网泡沫破了，安然崩了，订单一夜之间消失。\n\n第二次是 2017 年到 2022 年，清洁能源转型叠加全球经济放缓，燃气轮机市场跌到谷底。GE 和西门子的年出货量都跌到 10GW 以下。\n\n这两轮周期给制造商留下了深刻的心理阴影。现在 AI 带来的需求暴涨，他们的第一反应不是“赶紧扩产”，而是“别又是一个泡沫”。所以 GE 承诺把产能提到每年 24GW，但这只是回到 2007 到 2016 年的平均水平，根本不是大扩张。西门子也差不多，“不增加厂房面积”是明确说法。\n\n更深层的瓶颈在供应链。燃气轮机的核心部件：涡轮叶片，需要用到稀土金属、单晶镍合金等高端材料，铸造工艺极其复杂。全球能做的供应商就那么几家，而且他们要同时供应民航发动机、军用航空发动机和工业燃气轮机。这些供应商刚经历过 COVID 期间的订单崩盘，现在也不敢贸然扩产。\n\n另外，重型燃气轮机的核心部件重达三四百吨，需要专用的驳船、铁路车厢和拖车来运输。这种重型物流本身也是瓶颈。\n\n相比之下，小型航空衍生燃气轮机和往复式发动机的供应情况好一些，因为它们可以用普通卡车运输，也不那么依赖稀土材料。\n\n【6】新玩家入局\n\n供应紧张的时候，总有人会找到变通办法。\n\nProEnergy 是先行者。他们把波音 747 退役发动机的核心机翻新改造，做成和 GE LM6000 性能相当的发电机组。用别人不要的东西，解决眼前的燃眉之急。\n\n更有意思的是 Boom Supersonic。这家公司本来是做超音速客机的，结果发现自己的发动机设计稍微改改就能发电。他们推出了 Superpower 燃气轮机，单机 42MW，可以装在一个集装箱里运输。已经拿到了 Crusoe 公司 1.2GW 的订单，计划 2027 年出货 200MW，2028 年 1GW，2029 年 2GW。\n\n一家造飞机的公司来做发电设备，听起来很跨界，但细想又合理，航空衍生燃气轮机本来就是喷气发动机改的，Boom 只是从源头入场。他们甚至可以把发电业务当成飞机业务的“融资渠道”。\n\n往复式发动机领域，船用发动机制造商 Wärtsilä早就入场了。他们发现，驱动游轮的发动机和给数据中心发电的发动机，本质上是同一种东西。已经签了 800MW 的美国数据中心合同。\n\n【7】对 AI 产业意味着什么\n\n如果说总结一下这篇报告的内容：\n\n第一，电力已经成为 AI 发展最主要的瓶颈。不是芯片，不是数据，是电。一个算力集群再牛，没电就是一堆金属。\n\n第二，“速度就是护城河”正在重塑整个基础设施行业。AI 公司为了早几个月上线，愿意承担更高的成本、更复杂的运维、更大的不确定性。这种“时间价值优先”的思维，和传统数据中心“成本效率优先”的逻辑完全不同。\n\n第三，AI 公司正在变成“准电力公司”。它们不再满足于做电网的用户，更想要自己掌控能源供给。这种垂直整合的冲动，和当年互联网公司自建光纤网络是一个路数。\n\n最后必须得再重复一下马斯克那句话：“Speed is the moat”，速度本身就是护城河。\n\n在 AI 这场竞赛里，快，比什么都重要。",
+      "created_at": "Thu Jan 01 04:33:24 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2006584503007883264",
+          "url": "https://pbs.twimg.com/media/G9jR-WGWsAAkh0x.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 163640,
+        "friends_count": 1503,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 13,
+        "favorite_count": 57,
+        "reply_count": 4,
+        "quote_count": 2
+      }
+    },
     {
       "id": "2006572159364395319",
       "text": "RT @howie_serious: 2026，完全可以用notebooklm 的fast reasearch或 deep research 来自动收集资料，取代多年来手工google，一条条慢慢收集的过程。\n\n主题研究 80% 的资料，可以 deep research 搞定；…",

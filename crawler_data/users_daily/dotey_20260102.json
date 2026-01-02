@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 164126,
+    "followers_count": 164128,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260102",
-  "last_updated": "2026-01-02T20:07:03.486863",
-  "tweet_count": 6,
+  "last_updated": "2026-01-02T22:05:21.402291",
+  "tweet_count": 7,
   "tweets": [
     {
       "id": "2006887867197354351",
@@ -212,6 +212,51 @@
         "retweet_count": 42,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2007197068394164613",
+      "text": "Ralph Wiggum 插件：让 Claude Code “通宵干活”\n\nRalph 就是一个让 Claude 自己跟自己对话的循环——你下班回家，它替你加班，醒来代码写好了。\n\n核心原理\n\n传统用法：你给 Claude 一个任务 → Claude 完成 → 退出 → 你再手动启动下一轮。\n\nRalph 用法：\n```bash\n/ralph-loop \"你的任务描述\" --completion-promise \"DONE\" --max-iterations 50\n```\n\nClaude 会：\n1. 执行任务\n2. 尝试退出时被 Stop hook 拦截\n3. 自动重新读取同一个 prompt\n4. 看到自己之前写的代码/测试结果\n5. 继续改进，直到输出 “DONE” 或达到迭代上限\n\n每次迭代 prompt 不变，但文件和 git 历史在变——Claude 通过读取自己的“作品”实现自我进化。\n\n最适合的场景\n\n✅ TDD 开发：写测试 → 跑失败 → 改代码 → 重复直到全绿\n✅ Greenfield 项目：定义好需求，过夜执行\n✅ 有自动验证的任务：测试、Lint、类型检查能告诉它对不对\n\n❌ 需要人类判断的设计决策\n❌ 没有明确成功标准的任务\n\nPrompt 写法要点：\n必须有：明确的完成条件 + 完成信号词\n\n示例：\n```markdown\n构建一个 Todo REST API\n\n完成标准：\n- CRUD 全部可用\n- 输入校验完备\n- 测试覆盖率 > 80%\n\n完成后输出：<promise>COMPLETE</promise>\n```\n\n真实战绩\n\n- Y Combinator Hackathon：一夜生成 6 个仓库\n- 某项目：$50k 合同，API 成本仅 $297\n\n安全机制\n\n始终设置 `--max-iterations` 防止无限循环：\n```bash\n/ralph-loop “任务” --max-iterations 30 --completion-promise “DONE”\n```\n\n📎 插件地址：https://t.co/4MJUGB01Pf",
+      "created_at": "Fri Jan 02 21:07:27 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2007196992661749760",
+          "url": "https://pbs.twimg.com/media/G9r_B73WAAALV7D.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2005061204121972748",
+        "text": "如果你想实现的需求相对确定/可验证，并且你不在意 token 消耗或是订阅制，那么可以在 Claude Code 中使用这个官方插件 Ralph Wiggum。\n\n它通过 Stop hook，在每次 Claude 要停下的时候，再次驱动它干活&amp;验证，直到你的需求被解决\n\nhttps://t.co/gv6rlcR1ag",
+        "created_at": "Sat Dec 27 23:40:17 +0000 2025",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2580421885",
+          "name": "Jintao Zhang 张晋涛",
+          "screen_name": "zhangjintao9020",
+          "description": "@kubernetesio @IngressNGINX maintainer, #Microsoft MVP, CNCF Ambassador, open source, 🥑,  PyCon China & KCD Beijing organizer 公众号：MoeLove",
+          "followers_count": 11843,
+          "friends_count": 1365,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 13,
+          "favorite_count": 108,
+          "reply_count": 2,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 11,
+        "reply_count": 3,
         "quote_count": 0
       }
     }

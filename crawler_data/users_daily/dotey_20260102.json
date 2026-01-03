@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 164128,
+    "followers_count": 164138,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260102",
-  "last_updated": "2026-01-02T22:05:21.402291",
-  "tweet_count": 7,
+  "last_updated": "2026-01-03T00:16:51.166821",
+  "tweet_count": 10,
   "tweets": [
     {
       "id": "2006887867197354351",
@@ -257,6 +257,120 @@
         "retweet_count": 1,
         "favorite_count": 11,
         "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2007217136176148737",
+      "text": "Boris 的 9 条 Claude Code 实战技巧：原来高手的配置这么“朴素”\n\nBoris Cherny 在 Anthropic 内部有个绰号：Claude Code 之父。他最近在 X 上很活跃，于是很多人问 Boris：你自己到底怎么用 Claude Code？他刚在 X 上分享了 9 条实战技巧。\n\n没有你想象的那么多技巧，每一条都朴实无华。\n\n【1】核心理念：Claude Code 的最佳实践并没有标准答案\n\nBoris 开场就说：\n> My setup might be surprisingly vanilla! Claude Code works great out of the box, so I personally don't customize it much.\n> 我的配置可能出乎你意料地“原装”。Claude Code 开箱即用效果就很好，我个人没做太多定制。\n\n也能理解，那些最佳实践，比如 Skills、Plugins，作为 Claude Code 开发者，他们早就把这些最佳实践作为功能内置了。\n\n使用 Claude Code 没有唯一正确的方式。团队故意把它设计成可以随便折腾的样子，你想怎么用、怎么改、怎么魔改都行。Claude Code 团队内部每个人的用法都完全不同。\n\n所以没必要去费力找“最佳实践”，适合自己的节奏最重要。\n\n【2】多 Agent 任务并行：同时开十几个 Claude\n\nBoris 的日常是这样的：终端里开 5 个 Claude Code 实例，标签页编号 1 到 5，开着系统通知，哪个需要输入就跳过去处理。\n\n同时，他还在 https://t.co/sbZmtUzjRY 网页版上跑 5 到 10 个任务。终端和网页可以互相“交接”：用&符号把本地会话转到网页，或者用--teleport 在两边来回切换。\n\n他每天早上和白天会从手机 Claude 应用上启动几个任务，晚点再回来看结果。\n\n这种“多线程”工作方式的核心逻辑是：Claude Code 擅长自主执行，很多任务不需要你盯着。你启动任务、给个方向，让它跑着，自己去忙别的。等它需要你确认的时候再切回来。\n\n这跟传统的“人敲一行代码、AI 补几行”完全是两种节奏。但这也对使用者有更高的要求，你需要擅长给 Agent 分配任务，并且能随时在多个任务之间切换。对于习惯了自己开发，同时只有一个任务进行的传统开发模式来说，是个很大挑战。\n\n惭愧的说，虽然我也常用 Coding Agent，还是不习惯太多任务同时运行，今年要加强这方面的练习。\n\n【3】模型选择：为什么用 Opus 而不是更快的 Sonnet\n\nBoris 说他所有任务都用 Opus 4.5 加上 thinking 模式。这是他用过最好的编程模型。\n\n有人会问：Opus 不是比 Sonnet 更大、更慢吗？Boris 的回答是：虽然单次响应慢一点，但你需要纠正它的次数少得多，工具调用也更准确，最终算下来反而更快。\n\n这点其实我一直很认同，写代码这种事不能求快，还是得质量高，如果一个快模型需要你来回纠正三次，不如用个慢模型一次搞定。时间不只是模型响应时间，还有你的注意力和精力成本。\n\n唯一的问题就是 Opus 成本更高。\n\n【4】https://t.co/k5gfrsJiDu：团队共享的“项目记忆”\n\nhttps://t.co/k5gfrsJiDu 是 Claude Code 的一个特殊配置文件，放在项目根目录。每次启动 Claude Code，它会自动读取这个文件，把里面的内容当作“背景知识”。你可以理解为：这是你给 AI 写的项目说明书，告诉它这个项目的架构、规范、注意事项。\n\nBoris 团队的做法是：整个 Claude Code 仓库共用一个 https://t.co/k5gfrsJiDu，提交到 Git 里，所有人一起维护。每周都有人往里加东西。规则很简单：每次看到 Claude 做错了什么，就把“别这样做”写进去，下次它就知道了。\n\n更有意思的是，他们在代码审查时也会用到这个机制。Boris 会在同事的 PR 里@.claude，让 Claude 把某条新规则加到 https://t.co/k5gfrsJiDu 里。这是通过 Claude Code 的 GitHub Action 实现的。\n\nDan Shipper 管这种做法叫“复利工程”：每一次纠错都变成团队资产，让 AI 越来越懂你们的项目。\n\n如果你还没用过 https://t.co/k5gfrsJiDu，或者没像他们这样频繁更新规则，强烈建议试试。最简单的起步方式是运行/init 命令，Claude 会自动分析项目结构，生成一个初始版本。然后你边用边补充，看到不对的地方就加进去。\n\n【5】Plan 模式：先想清楚再动手\n\nBoris 说，他大多数会话都从 Plan 模式开始。在 Claude Code 中按两下 Shift+Tab 就能切换。\n\nPlan 模式下，Claude 不会直接改代码，而是先给你一个执行计划。你可以来回讨论、修改计划，直到满意为止。然后切到自动接受模式，Claude 通常能一次性完成。\n\n“好的计划真的很重要”，这个习惯其实是把软件开发的经典智慧搬到了 AI 协作里：先设计再编码。很多人用 AI 写代码的问题是直接开干，结果方向错了返工成本很高。花几分钟对齐计划，能省几小时的返工。\n\n【6】自动化重复工作：斜杠命令和子 Agent\n\nBoris 有几个每天要用几十次的操作，他把它们做成了斜杠命令。比如\"/commit-push-pr\"，一键完成提交、推送、创建 PR。\n\n斜杠命令本质上是 Markdown 文件，放在.claude/commands/目录下。你可以用自然语言写指令，还能嵌入 bash 脚本预先获取一些信息，减少模型来回调用的次数。这些命令可以提交到 Git，整个团队共享。\n\n除了斜杠命令，他还用子 Agent（https://t.co/bQLePyyqmQ）。子 Agent 是独立的 Claude 实例，专门干某类活。比如他有个 code-simplifier 子 Agent，在主 Claude 完成工作后自动简化代码；还有个 verify-app 子 Agent，专门负责端到端测试。\n\n这两个功能的共同点是：把你反复做的事情固化下来，让 Claude 自己调用。你不用每次都重复解释，也不用记住各种命令细节。\n\n使用 PostToolUse Hook 来格式化 Claude 生成的代码。Claude 通常能自动生成格式良好的代码，而这个 Hook 会处理最后 10% 的代码，以避免后续在持续集成 (CI) 过程中出现格式错误。\n\n【7】安全与集成：权限配置和外部工具\n\nBoris 不用--dangerously-skip-permissions 这个“危险”选项。相反，他用/permissions 命令预先批准一些常用的安全命令，避免每次都弹确认框。这些配置保存在.claude/settings.json 里，团队共享。\n\n更强大的是 MCP 服务器集成。MCP 是 Model Context Protocol 的缩写，是 Anthropic 推出的让 AI 连接外部工具的标准协议。通过 MCP，Claude Code 可以直接：\n\n- 搜索和发送 Slack 消息\n- 跑 BigQuery 查询回答数据问题\n- 从 Sentry 拉错误日志\n\nBoris 团队把 Slack 的 MCP 配置也提交到了仓库，所有人开箱即用。\n\n这意味着 Claude Code 不只是个编程工具，而是能调用你整个工具链的“全能助手”。\n\n【8】长任务处理：让 Claude 自己验证\n\n对于跑很久的任务，Boris 有几个策略：\n\n一是让 Claude 完成后自动用后台 Agent 验证结果。你可以在提示词里要求，也可以用 Stop Hook 更确定性地触发。\n\n> 注：Hooks 是 Claude Code 的\"钩子\"机制，让你在 Claude 执行操作的特定时刻插入自定义逻辑。你可以把它理解为\"触发器\"：当某个事件发生时，自动执行你预设的命令或脚本。\n> Stop Hook 就是在 Claude 完成响应、准备交还控制权时。\n> 相关文档：https://t.co/jPf1XgjoUV\n\n二是用 ralph-wiggum 插件 https://t.co/4MJUGB0zEN。这是一个有趣的设计：“Ralph 本质上就是一个 Bash 循环”：想象一个简单的死循环（while true），它不停地把同一个任务说明书（提示词文件）喂给 AI 智能体，让它一遍又一遍地改进工作，直到彻底完成。\n\n三是在沙箱环境里用--permission-mode=dontAsk 或--dangerously-skip-permissions，让 Claude 不被权限确认打断，自己跑到底。\n\n核心思路是：既然是长任务，就别让它等你。给它足够的自主权和自我纠错能力。\n\n【9】最重要的一条：给 Claude 验证能力\n\nBoris 把这条放在最后，说这可能是获得好结果最重要的因素。\n\n如果 Claude 能验证自己的工作，最终产出质量能提升 2 到 3 倍。\n\n他举了个例子：他们提交到 https://t.co/sbZmtUzjRY 的每一个改动，Claude 都会用 Chrome 扩展自己测试：打开浏览器、测试 UI、发现问题就迭代，直到功能正常、体验合理。\n\n验证方式因场景而异。可能是跑一个 bash 命令，可能是跑测试套件，可能是在浏览器或手机模拟器里测试应用。形式不重要，重要的是：让 AI 有反馈闘环。\n\n这个道理其实很朴素。人类工程师也是靠“写代码—测试—看结果—修改”这个循环来保证质量的。AI 也一样。如果它只能写不能测，就像闭着眼睛做事，质量全靠运气。\n\nBoris 的建议是：投入精力把验证机制做扎实。这是回报率最高的投资。\n\n【10】高手用剑无招胜有招\n\n武侠小说里面，高手用剑没有那么多花里胡哨的招式，无招胜有招。Boris 没有炫耀复杂的定制配置，没有神秘的私藏提示词，用的就是官方功能。区别在于：他真正理解这些功能背后的逻辑，然后把它们组合成高效的工作流。\n\n并行工作是因为 Claude 能自主执行；用 Opus 是因为综合效率更高；https://t.co/k5gfrsJiDu 是把纠错变成资产；Plan 模式是先想清楚再动手；斜杠命令和子 Agent 是自动化重复劳动；验证机制是给 AI 反馈闭环。\n\n如果你刚开始用 Claude Code，不必急着研究各种高级配置。先把基础用好：学会并行，学会规划，学会积累 https://t.co/k5gfrsJiDu，学会给 AI 验证手段。\n\n等你真正遇到瓶颈了，再去折腾那些花活不迟。",
+      "created_at": "Fri Jan 02 22:27:12 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2007216751696662529",
+          "url": "https://pbs.twimg.com/media/G9sRAEAX0AEW7_z.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2007216787792785408",
+          "url": "https://pbs.twimg.com/media/G9sRCKeW8AAHdTB.png"
+        },
+        {
+          "type": "photo",
+          "id": "2007216815856885760",
+          "url": "https://pbs.twimg.com/media/G9sRDzBXIAAZgTu.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2007216929551925248",
+          "url": "https://pbs.twimg.com/media/G9sRKakXwAA9Zu-.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2007179832300581177",
+        "text": "I'm Boris and I created Claude Code. Lots of people have asked how I use Claude Code, so I wanted to show off my setup a bit.\n\nMy setup might be surprisingly vanilla! Claude Code works great out of the box, so I personally don't customize it much. There is no one correct way to use Claude Code: we intentionally build it in a way that you can use it, customize it, and hack it however you like. Each person on the Claude Code team uses it very differently.\n\nSo, here goes.",
+        "created_at": "Fri Jan 02 19:58:58 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "159337660",
+          "name": "Boris Cherny",
+          "screen_name": "bcherny",
+          "description": "Claude Code @anthropicai",
+          "followers_count": 74536,
+          "friends_count": 125,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1162,
+          "favorite_count": 12413,
+          "reply_count": 385,
+          "quote_count": 236
+        }
+      },
+      "stats": {
+        "retweet_count": 28,
+        "favorite_count": 111,
+        "reply_count": 6,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2007236487637807476",
+      "text": "一个成熟项目，会有很多小bug要修，这些任务开一堆 agent 后台慢慢修是最好的\n\n另外每个agent可以单独的git worktree，完成后提pr，并不会相互影响\n\n新功能开发小一点的也可以，大的还是得先花时间设计，这个省不了\nhttps://t.co/Pnx5ZGkxrr",
+      "created_at": "Fri Jan 02 23:44:05 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2007230803466703304",
+        "text": "并发开很多agent还是不太习惯，尤其是改同一个项目。很容易搞乱",
+        "created_at": "Fri Jan 02 23:21:30 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1820835081659035648",
+          "name": "CallMeYC",
+          "screen_name": "SGodofa425",
+          "description": "LLM gluing specialist / Pre-Rich Software Engineer / AI Artist / \nShipping dumb ideas, Shitposting & Writing",
+          "followers_count": 201,
+          "friends_count": 375,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2007238271827329116",
+      "text": "【10】 那些你看不见的东西\n\nBoris 有一点没提的就是基础的 源代码管理/ CI（持续集成） / 代码审查 workflow，这些事情可能对他们大厂做习惯了的来说是平常，默认就应该有的事情\n\n比如说当他用 Claude Code 完成一个任务，不会说直接合并到主分支，而是提交一个 PR。\n\n提交 PR 后，在 CI 服务器上会自动跑所有的 lint 和自动化测试，如果测试失败 PR 是无法合并的。\n\n一个 PR 通过了所有的自动化测试，还需要有人去做代码审查（当然可以 AI 辅助，但还是需要人确认），如果代码审查发现问题，是需要继续修改的。\n\n这些也是他们能多任务并行的基础，如果没有做好这些基础工作流，就无法做到多任务并行。\n\n对于很多个人开发者并没有习惯去搭建一个 CI/代码审查的 工作流，甚至连 Git 代码管理都没有做，出问题都没法回滚。",
+      "created_at": "Fri Jan 02 23:51:11 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

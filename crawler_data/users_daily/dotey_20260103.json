@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 164558,
+    "followers_count": 164597,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260103",
-  "last_updated": "2026-01-03T18:06:43.781318",
-  "tweet_count": 2,
+  "last_updated": "2026-01-03T20:05:31.389640",
+  "tweet_count": 6,
   "tweets": [
     {
       "id": "2007292663532531874",
@@ -69,6 +69,156 @@
         "retweet_count": 0,
         "favorite_count": 1,
         "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2007514902819467505",
+      "text": "Code Review in the AI Era: Why Writing It Twice Is Actually Faster\n\nIf you've been coding for a few years, you've probably lived through this nightmare: you finish the first version, finally get it running, and then realize you misunderstood half the requirements, hit three technical dead ends, and the architecture won't survive the next iteration. Want to rewrite from scratch? The deadline says no. So you keep piling on patches, and three years later, that codebase has become the legacy monster no one dares to touch.\n\nThis problem has existed for decades. But AI coding tools have accidentally given us a new solution.\n\nMy Approach: Two Versions, Two Standards\n\nThis idea isn't new. Software engineering textbooks call it \"prototyping\", build a rough version to validate your ideas, then do the real development. But nobody actually did this, because it was too expensive. Building a working prototype could take half the time of the real implementation. Who has that kind of runway?\n\nThings have changed. AI writes code at a speed that still catches me off guard. A feature that used to take three days might now have a working version in three hours. This shift in velocity turns prototyping from \"theoretically nice\" into \"practically worth it.\"\n\nHere's how it works: you build two separate versions.\n\nVersion One: The Prototype, Let AI Run Wild\n\nThe first version has a clear purpose: it's a prototype, not a product. Two goals only: confirm the requirements and solve the hard technical problems.\n\nThe principle here is \"no constraints\", don't think about architecture, don't worry about code quality, ignore security and performance. Focus on one thing: make it work. Merge AI-generated code without review. Let the AI iterate until your product manager nods and says, \"Yes, that's what I wanted.\"\n\nThis code is meant to be thrown away, so put it on a separate branch or even in a standalone repo. Its value isn't in the code itself, it's in two things: figuring out what the requirements actually are, and stepping on all the technical landmines first.\n\nNo matter how detailed your requirements doc is, you often can't think clearly until you build something. Technical challenges are the same, theory and reality are different beasts. The first version exists to step on every landmine at the lowest possible cost.\n\nThink of it like an architect's sketch. Sketches don't need precise lines or perfect proportions. They help you externalize your thinking quickly, experiment, adjust, confirm direction. Nobody builds from a sketch.\n\nVersion Two: Production, Back to Traditional Engineering\n\nOnce the first version has cleared the path, you build the second. This is what actually ships.\n\nNow you return to traditional software engineering: design first, then break it into modules, run CI pipelines, do proper code reviews. Keep commits small so humans can actually review them. Consider design, maintainability, security, all the things that matter.\n\nAI still does the heavy lifting in this phase, but humans lead. Design before implementation. Use plan mode to have AI generate code according to your thinking.\n\nThe first version's code isn't completely wasted, some modules can be reused, especially algorithm implementations and core business logic.\n\nIt's like extracting the valuable parts from a sketch and putting them into proper construction drawings.\n\nWhy This Actually Works\n\nWhy go through the trouble of two versions?\n\nThe core reason: before the first version is done, your understanding of the requirements is almost certainly incomplete.\n\nThe problem with traditional development is that it invests too much effort in the first version. You start architecting before the requirements are fully understood. You consider scalability and maintainability before you've figured out the technical challenges. The result? Massive over-engineering for scenarios that \"might happen someday\" but never will. Time gets spent on edge cases while the real problems get ignored.\n\nThe two-version approach lets you clear the path at minimum cost first. After the first version, requirements are confirmed, technical problems are solved, and then you design—knowing exactly what to design and what to skip. Far fewer wrong turns.\n\nThere's a hidden benefit too. Many senior developers resist AI coding because they can't accept the quality of AI-generated code. But if you tell them this code is meant to be thrown away, it's just for validating ideas, the psychological resistance drops significantly. It's an out: use AI, but don't be responsible for that code.\n\nUltimately, AI hasn't just changed how fast we write code, it's changed the economics of the entire development process. Two passes used to be too expensive. Now two passes is actually cheaper. Accepting that the first version is disposable lets you build a much better second version.",
+      "created_at": "Sat Jan 03 18:10:25 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2007513932408164352",
+          "url": "https://pbs.twimg.com/media/G9wfSQbWEAAVJkN.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2007179832300581177",
+        "text": "I'm Boris and I created Claude Code. Lots of people have asked how I use Claude Code, so I wanted to show off my setup a bit.\n\nMy setup might be surprisingly vanilla! Claude Code works great out of the box, so I personally don't customize it much. There is no one correct way to use Claude Code: we intentionally build it in a way that you can use it, customize it, and hack it however you like. Each person on the Claude Code team uses it very differently.\n\nSo, here goes.",
+        "created_at": "Fri Jan 02 19:58:58 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "159337660",
+          "name": "Boris Cherny",
+          "screen_name": "bcherny",
+          "description": "Claude Code @anthropicai",
+          "followers_count": 100966,
+          "friends_count": 126,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4363,
+          "favorite_count": 37684,
+          "reply_count": 891,
+          "quote_count": 822
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 10,
+        "reply_count": 2,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2007515334350086153",
+      "text": "AI 时代的代码审核：写两遍，反而更快\n\n做过几年开发的人，大概都有过这种痛苦记忆：第一版代码写完，功能好不容易跑通了，然后发现需求理解错了一半，技术方案踩了三个坑，架构设计根本撑不住后续迭代。\n\n想推翻重写？老板说deadline不等人。只好硬着头皮往上堆，三年后回头看，那坨代码已经成了没人敢动的屎山。\n\n这个问题存在了几十年，但现在 AI 编程工具的出现，意外地给了一个新解法。\n\n【1】我的解法：两个版本，两套标准\n\n这个解法其实不新，软件工程教科书里叫“原型开发法”：先做个粗糙版本验证想法，再正式开发。但以前没人这么干，因为成本太高。写一个能跑的原型，可能要花正式开发一半的时间，谁等得起？\n\n现在情况变了。AI 写代码的速度，快到让人不适应。以前一个功能要写三天，现在可能三小时就能出个能跑的版本。这个速度变化，让原型开发法从“理论上可行”变成了“实践中划算”。\n\n具体怎么做？分两个版本开发。\n\n【2】第一版：原型版，让AI撒欢跑\n\n第一个版本的定位很明确：原型，不是产品。目标只有两个：确认需求，解决技术难点。\n\n这个阶段的原则是“不管不顾”：不考虑架构设计，不考虑代码质量，不考虑安全性能。\n\n只考虑一件事：把功能实现出来。代码生成出来直接合并，不做 review，让 AI 反复迭代，直到产品经理点头说“对，这就是我要的”。\n\n这个版本的代码是准备扔掉的，所以要单独开个分支，或者干脆放在独立的仓库里。它的价值不在于代码本身，而在于两件事：确认需求到底是什么，以及把技术上的坑先踩一遍。\n\n很多时候，需求文档写得再详细，你不做出来就是想不清楚。技术难点也是，纸上谈兵和真刀真枪完全两回事。第一版的意义就在于此：用最低的成本，把该踩的坑踩完。\n\n就像建筑师画草图。草图不讲究线条精准、比例完美，它的作用是帮你把想法快速具象化，试错、调整、确认方向。没人会拿草图去施工。\n\n【3】第二版：生产版，回归传统工程\n\n等第一版把路探清楚了，再来做第二版。第二个版本才是真正要交付的东西。\n\n这个阶段回归传统软件工程的套路：先做设计，再拆模块，走 CI 流程，做 Code Review。每次提交的代码量要小，方便人工审核。设计、维护、安全，该考虑的都要考虑。\n\n在这个阶段，AI仍然是主力干活的，但人来主导。先设计后实现，配合plan模式，让AI按你的思路来生成代码。\n\n第一版的代码也不是完全白写，有些模块是可以复用的，尤其是算法实现和业务逻辑这些核心部分。\n\n相当于从草图里把有价值的部分提炼出来，放进正式的施工图。\n\n【4】这套方法有效的底层逻辑\n\n为什么要这么麻烦，搞两个版本？\n\n核心原因是：在第一版做完之前，你对需求的理解大概率是不完整的。\n\n传统开发模式的问题，恰恰在于它在第一版上花了太多精力。需求还没完全想清楚，就开始做架构设计；技术难点还没摸透，就开始考虑扩展性、可维护性。结果呢？大量过度设计，考虑了很多“未来可能会有但其实永远不会出现”的情况。时间花在了细枝末节上，真正重要的问题反而被忽略了。\n\n两版本开发法的好处是，让你先用最低成本把路趟一遍。第一版跑完，需求确认了，技术难点解决了，再来做设计，这时候你知道该设计什么、不该设计什么。少走很多弯路。\n\n还有一个隐藏好处。很多资深开发者不愿意用 AI 编程，核心原因是接受不了 AI 生成代码的质量。但如果你告诉他，这些代码就是用来扔的，只是为了验证想法，心理上的抵触就会小很多。这等于给了一个台阶：用 AI，但不用对那些代码负责。\n\n说到底，AI 改变的不只是写代码的速度，更是整个开发流程的经济学。以前做两遍太贵，现在做两遍反而更划算。承认第一版是用来扔的，反而能做出更好的第二版。",
+      "created_at": "Sat Jan 03 18:12:08 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2007515284890902528",
+          "url": "https://pbs.twimg.com/media/G9wgg-0W4AAfAdu.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 12,
+        "reply_count": 1,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2007516557254197562",
+      "text": "Best practice for reviewing AI code\nhttps://t.co/xU2R7mArF7",
+      "created_at": "Sat Jan 03 18:16:59 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2007514902819467505",
+        "text": "Code Review in the AI Era: Why Writing It Twice Is Actually Faster\n\nIf you've been coding for a few years, you've probably lived through this nightmare: you finish the first version, finally get it running, and then realize you misunderstood half the requirements, hit three technical dead ends, and the architecture won't survive the next iteration. Want to rewrite from scratch? The deadline says no. So you keep piling on patches, and three years later, that codebase has become the legacy monster no one dares to touch.\n\nThis problem has existed for decades. But AI coding tools have accidentally given us a new solution.\n\nMy Approach: Two Versions, Two Standards\n\nThis idea isn't new. Software engineering textbooks call it \"prototyping\", build a rough version to validate your ideas, then do the real development. But nobody actually did this, because it was too expensive. Building a working prototype could take half the time of the real implementation. Who has that kind of runway?\n\nThings have changed. AI writes code at a speed that still catches me off guard. A feature that used to take three days might now have a working version in three hours. This shift in velocity turns prototyping from \"theoretically nice\" into \"practically worth it.\"\n\nHere's how it works: you build two separate versions.\n\nVersion One: The Prototype, Let AI Run Wild\n\nThe first version has a clear purpose: it's a prototype, not a product. Two goals only: confirm the requirements and solve the hard technical problems.\n\nThe principle here is \"no constraints\", don't think about architecture, don't worry about code quality, ignore security and performance. Focus on one thing: make it work. Merge AI-generated code without review. Let the AI iterate until your product manager nods and says, \"Yes, that's what I wanted.\"\n\nThis code is meant to be thrown away, so put it on a separate branch or even in a standalone repo. Its value isn't in the code itself, it's in two things: figuring out what the requirements actually are, and stepping on all the technical landmines first.\n\nNo matter how detailed your requirements doc is, you often can't think clearly until you build something. Technical challenges are the same, theory and reality are different beasts. The first version exists to step on every landmine at the lowest possible cost.\n\nThink of it like an architect's sketch. Sketches don't need precise lines or perfect proportions. They help you externalize your thinking quickly, experiment, adjust, confirm direction. Nobody builds from a sketch.\n\nVersion Two: Production, Back to Traditional Engineering\n\nOnce the first version has cleared the path, you build the second. This is what actually ships.\n\nNow you return to traditional software engineering: design first, then break it into modules, run CI pipelines, do proper code reviews. Keep commits small so humans can actually review them. Consider design, maintainability, security, all the things that matter.\n\nAI still does the heavy lifting in this phase, but humans lead. Design before implementation. Use plan mode to have AI generate code according to your thinking.\n\nThe first version's code isn't completely wasted, some modules can be reused, especially algorithm implementations and core business logic.\n\nIt's like extracting the valuable parts from a sketch and putting them into proper construction drawings.\n\nWhy This Actually Works\n\nWhy go through the trouble of two versions?\n\nThe core reason: before the first version is done, your understanding of the requirements is almost certainly incomplete.\n\nThe problem with traditional development is that it invests too much effort in the first version. You start architecting before the requirements are fully understood. You consider scalability and maintainability before you've figured out the technical challenges. The result? Massive over-engineering for scenarios that \"might happen someday\" but never will. Time gets spent on edge cases while the real problems get ignored.\n\nThe two-version approach lets you clear the path at minimum cost first. After the first version, requirements are confirmed, technical problems are solved, and then you design—knowing exactly what to design and what to skip. Far fewer wrong turns.\n\nThere's a hidden benefit too. Many senior developers resist AI coding because they can't accept the quality of AI-generated code. But if you tell them this code is meant to be thrown away, it's just for validating ideas, the psychological resistance drops significantly. It's an out: use AI, but don't be responsible for that code.\n\nUltimately, AI hasn't just changed how fast we write code, it's changed the economics of the entire development process. Two passes used to be too expensive. Now two passes is actually cheaper. Accepting that the first version is disposable lets you build a much better second version.",
+        "created_at": "Sat Jan 03 18:10:25 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2007513932408164352",
+            "url": "https://pbs.twimg.com/media/G9wfSQbWEAAVJkN.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 164597,
+          "friends_count": 1507,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 10,
+          "reply_count": 2,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2007524872629387382",
+      "text": "Context Engineering 面试题：在 XX 业务场景下面，read_file, write_file 如何设计？\n\n面试中遇到这题我估计临场发挥不会太好😅\n\n你答得好吗？",
+      "created_at": "Sat Jan 03 18:50:02 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2007394716976026097",
+        "text": "关于 context engineering。有两个问题，我觉得特别能看出人的水平，问他在 XX 业务场景下面，read_file, write_file 如何设计。如果真的只有读，写具体文件，就可以到此结束。",
+        "created_at": "Sat Jan 03 10:12:50 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "115897222",
+          "name": "yan5xu",
+          "screen_name": "yan5xu",
+          "description": "🤖 AI 野生研究员 | ex @ManusAI_HQ & @hey_im_monica\n推特内容仅代表个人观点，和公司无关",
+          "followers_count": 8471,
+          "friends_count": 380,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 57,
+          "reply_count": 2,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

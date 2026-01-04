@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 164707,
+    "followers_count": 164738,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260104",
-  "last_updated": "2026-01-04T04:24:35.238843",
-  "tweet_count": 9,
+  "last_updated": "2026-01-04T06:07:08.148042",
+  "tweet_count": 10,
   "tweets": [
     {
       "id": "2007611058475966523",
@@ -321,6 +321,80 @@
       "stats": {
         "retweet_count": 2,
         "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2007683323792109869",
+      "text": "RT @paulwalker99318: 深入调研和实践过SDD（规格驱动开发），我的结论是「下限较高，上限较低」。\n所谓的SDD，实际上是一套系统化的prompt，可以很方便地以模版形式将瀑布式开发固化为自动化的工作流。使用时，快捷指令触发自动化瀑布式工作流，得到敏捷的效果。…",
+      "created_at": "Sun Jan 04 05:19:40 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2007678776528826680",
+        "text": "深入调研和实践过SDD（规格驱动开发），我的结论是「下限较高，上限较低」。\n所谓的SDD，实际上是一套系统化的prompt，可以很方便地以模版形式将瀑布式开发固化为自动化的工作流。使用时，快捷指令触发自动化瀑布式工作流，得到敏捷的效果。\n→也就是能提升开发的下限。\n\n近期的模型+Agent迭代，已经不只是基础推理能力提升，同时提升的还有工程能力，可以称之为「工程能力内化」，这是一直发生且必将继续的趋势。模型+Agent的能力跃迁速度和上限都远远高于prompt技巧。\n→SDD的上限低\n\nSDD构想的很美好，但是也有很多坑。最大的问题是：1）你需要时刻确保SPEC文档（多个层级、多份）到代码实现的一致性，这和没有SPEC的情况并无区别。2）你需要在代码之外，多维护一套文档。矛盾之处在于，如果代码需要人深度参与，那么并不适合vibe coding；如果代码不需要人深度参与，那么维护额外的、过多文档就是新的认知负担。\n\nSDD在Claude Code + Claude 4之前是一定优势的，可以将。在此之后，尤其是Claude 4.5之后就完全没有优势了。",
+        "created_at": "Sun Jan 04 05:01:35 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2007678760099950595",
+            "url": "https://pbs.twimg.com/media/G9y1MfbasAMjpqU.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2007678759915401219",
+            "url": "https://pbs.twimg.com/media/G9y1MevasAMgl-p.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2007625140566118731",
+          "text": "我个人不喜欢 Spec-Driven Development，有点像瀑布模型写系统设计文档，理论上看起来很牛，但是并不好操作，另外容易想的太多。\n\n我比较推崇小版本迭代，不需要写详细的 spec，几句简单的 prompt 就可以开始生成，每次写一个可以跑起来的版本，然后一点点迭代，每次迭代完都是可以运行的版本\n\n另外大多数时候，Claude Code 的 Plan Mode 就足够好用了，根据你当前想实现的，会写一个 plan 文档，可以反复沟通确认。",
+          "created_at": "Sun Jan 04 01:28:28 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 164738,
+            "friends_count": 1509,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 10,
+            "favorite_count": 72,
+            "reply_count": 31,
+            "quote_count": 6
+          }
+        },
+        "user": {
+          "id": "1693270225104572416",
+          "name": "Bruce🐼",
+          "screen_name": "paulwalker99318",
+          "description": "Vibe Builder | 关注软件工程与 AI Agent | 实践 & 分享。",
+          "followers_count": 1116,
+          "friends_count": 777,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 11,
+          "reply_count": 3,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
       }

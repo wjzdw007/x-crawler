@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 164738,
+    "followers_count": 164787,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260104",
-  "last_updated": "2026-01-04T06:07:08.148042",
-  "tweet_count": 10,
+  "last_updated": "2026-01-04T08:06:51.869254",
+  "tweet_count": 11,
   "tweets": [
     {
       "id": "2007611058475966523",
@@ -396,6 +396,51 @@
         "retweet_count": 4,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2007695958801559891",
+      "text": "好复杂的自定义提示词",
+      "created_at": "Sun Jan 04 06:09:52 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2007692320716796234",
+        "text": "宝玉老师 @dotey 分享的 VSCode「Generate Commit Message」 一直在用，但如何让 AI 生成的 commit 严格遵循 Conventional Commits 规范（必须以 feat:、fix:、chore: 等开头）呢？\n\n原帖：https://t.co/HoFiUxDmwP\n\n我亲自试了下：加一条提示词，就能让 AI 生成的 commit 严格遵循 Conventional Commits 规范（feat:, fix:, chore: 等）。\n\n测试 12 次，全都完美合规！零失败！\n\n配置超简单，可通过两种方式：\n\n1. Text 方式：直接在 Settings → Commit Message Generation: Instructions 粘贴提示词  \n2. File 方式：项目根目录新建 `.copilot-commit-message-instructions.md`，写入相同提示词（多项目复用更方便）\n\n推荐提示词：\n```md\n<!-- Text 方式 -->\n严格遵循 Conventional Commits 规范。格式：<type>(<scope>): <subject>。type 必须是：feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert 之一。subject 简洁明了，不超过50字符，首字母小写，不加句号。如有破坏性变更，必须在 body 中以 BREAKING CHANGE: 开头说明\n\n<!-- File 方式 -->\n# Git 提交消息规范\n\n本项目遵循 [Conventional Commits](https://t.co/8XYSWznVDk) 规范。\n\n## 提交消息格式\n\n```\n<type>(<scope>): <subject>\n\n<body>\n\n<footer>\n```\n\n### 必需部分\n\n#### Type (类型)\n\n提交的类型必须是以下之一：\n\n- **feat**: 新功能 (feature)\n- **fix**: 修复 bug\n- **docs**: 仅文档更改\n- **style**: 不影响代码含义的更改（空格、格式化、缺少分号等）\n- **refactor**: 既不修复 bug 也不添加功能的代码更改\n- **perf**: 提高性能的代码更改\n- **test**: 添加缺失的测试或更正现有测试\n- **build**: 影响构建系统或外部依赖的更改（示例范围：webpack, npm, vite）\n- **ci**: 对 CI 配置文件和脚本的更改（示例范围：GitHub Actions, GitLab CI）\n- **chore**: 其他不修改 src 或测试文件的更改\n- **revert**: 回退之前的提交\n\n#### Subject (主题)\n\n- 使用简洁的语言描述本次提交的更改\n- 不超过 50 个字符\n- 使用中文或英文（保持项目一致）\n- 首字母小写\n- 结尾不加句号\n\n### 可选部分\n\n#### Scope (范围)\n\n用于说明提交影响的范围，例如：\n\n- **component**: 组件相关\n- **api**: API 相关\n- **router**: 路由相关\n- **store**: 状态管理相关\n- **utils**: 工具函数相关\n- **styles**: 样式相关\n- **deps**: 依赖项相关\n\n#### Body (正文)\n\n- 详细描述本次提交的动机和更改内容\n- 可以分多行\n- 应该说明\"是什么\"和\"为什么\"，而不是\"怎么做\"\n\n#### Footer (页脚)\n\n- 用于关闭 Issue 或描述破坏性变更\n- Breaking Changes 必须在页脚中以 `BREAKING CHANGE:` 开头\n- 关闭 Issue 使用 `Closes #issue号`\n\n## 示例\n\n### 简单的功能添加\n\n```\nfeat(article): 添加文章搜索功能\n```\n\n### 修复 bug\n\n```\nfix(login): 修复登录状态未持久化的问题\n```\n\n### 包含详细描述\n\n```\nfeat(editor): 支持 Markdown 实时预览\n\n添加了一个新的编辑器组件，支持 Markdown 的实时预览功能。\n用户在编辑时可以同时看到渲染后的效果，提升编辑体验。\n\nCloses #123\n```\n\n### 破坏性变更\n\n```\nfeat(api): 重构用户认证 API\n\nBREAKING CHANGE: 用户认证接口从 /api/auth 迁移到 /api/v2/auth，\n旧接口将在下一个版本中移除。客户端需要更新 API 端点。\n```\n\n### 多个类型的示例\n\n```\nrefactor(utils): 优化文件上传工具函数\n```\n\n```\nperf(article): 优化文章列表渲染性能\n```\n\n```\ndocs(readme): 更新项目安装文档\n```\n\n```\nstyle(component): 统一组件代码格式\n```\n\n```\ntest(api): 添加文章 API 单元测试\n```\n\n```\nbuild(deps): 升级 Vue 到 3.4.0\n```\n\n```\nci: 添加自动部署流程\n```\n\n```\nchore: 更新 .gitignore 配置\n```\n\n## 注意事项\n\n1. **每次提交只做一件事**：如果一次更改涉及多个不相关的修改，应该拆分成多个提交\n2. **提交信息要清晰**：让其他开发者能够快速理解这次提交的目的\n3. **遵循团队约定**：如果团队有特殊的提交规范，以团队约定为准\n4. **及时提交**：完成一个功能点或修复一个问题后立即提交，不要积累太多更改\n5. **使用中文或英文**：保持项目提交消息语言的一致性\n\n## 工具支持\n\n推荐使用以下工具来辅助编写符合规范的提交消息：\n\n- **Commitizen**: 交互式提交工具\n- **commitlint**: 提交消息校验工具\n- **husky**: Git hooks 工具，配合 commitlint 使用\n\n## 参考资源\n\n- [Conventional Commits 官方文档](https://t.co/8XYSWznVDk)\n- [Angular 提交规范](https://t.co/Ubx0gDqMBw)\n```\n\n效率起飞，强烈安利！",
+        "created_at": "Sun Jan 04 05:55:25 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2007690710871678976",
+            "url": "https://pbs.twimg.com/media/G9zAEHhboAAFkTs.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1723174856504569856",
+          "name": "Immerse",
+          "screen_name": "Immerse_code",
+          "description": "Wild AI tinkerer 🚀 / Indie dev sharing fun AI toys, Global launches & coding hacks / Exploring AI overseas — DM for coffee chats!\n\nMore: https://t.co/9Oraovnk7K",
+          "followers_count": 521,
+          "friends_count": 1685,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 8,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 1,
         "quote_count": 0
       }
     }

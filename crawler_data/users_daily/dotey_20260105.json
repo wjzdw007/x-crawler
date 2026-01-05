@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 164971,
+    "followers_count": 164989,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260105",
-  "last_updated": "2026-01-05T02:49:49.870120",
-  "tweet_count": 6,
+  "last_updated": "2026-01-05T04:28:12.757787",
+  "tweet_count": 8,
   "tweets": [
     {
       "id": "2007981424562114586",
@@ -229,6 +229,95 @@
       "stats": {
         "retweet_count": 0,
         "favorite_count": 0,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2008023683013779932",
+      "text": "对于AI来说，代码就是很好的spec\nhttps://t.co/egfu5KYbv4",
+      "created_at": "Mon Jan 05 03:52:07 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2008023160583856602",
+        "text": "@dotey 瀑布模型的文档是给甲方看的，敏捷文档是给自己团队看的，但是最好的文档就是没有文档，代码即文档。\n所以很多时候你去看团队文档的时候基本都是几个月半年不更新了，问老人都会直接给你说：直接看代码吧。",
+        "created_at": "Mon Jan 05 03:50:03 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1976565466249428992",
+          "name": "YangGuang丨AI创业",
+          "screen_name": "YangGuangAI",
+          "description": "AI创业者，从高中创业到AI硬件/知识付费。\n前AI PM，做过数据/辅助驾驶/AI商业化产品。\n分享0-1实战+个人视角。脑暴idea？DM！\nAI Entrepreneur: 0-1 insights",
+          "followers_count": 47,
+          "friends_count": 31,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2008023974719160401",
+      "text": "Spec 的一致性很难保证\nhttps://t.co/hwdWyemaEL",
+      "created_at": "Mon Jan 05 03:53:17 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2007678776528826680",
+        "text": "深入调研和实践过SDD（规格驱动开发），我的结论是「下限较高，上限较低」。\n所谓的SDD，实际上是一套系统化的prompt，可以很方便地以模版形式将瀑布式开发固化为自动化的工作流。使用时，快捷指令触发自动化瀑布式工作流，得到敏捷的效果。\n→也就是能提升开发的下限。\n\n近期的模型+Agent迭代，已经不只是基础推理能力提升，同时提升的还有工程能力，可以称之为「工程能力内化」，这是一直发生且必将继续的趋势。模型+Agent的能力跃迁速度和上限都远远高于prompt技巧。\n→SDD的上限低\n\nSDD构想的很美好，但是也有很多坑。最大的问题是：1）你需要时刻确保SPEC文档（多个层级、多份）到代码实现的一致性，这和没有SPEC的情况并无区别。2）你需要在代码之外，多维护一套文档。矛盾之处在于，如果代码需要人深度参与，那么并不适合vibe coding；如果代码不需要人深度参与，那么维护额外的、过多文档就是新的认知负担。\n\nSDD在Claude Code + Claude 4之前是一定优势的，可以将。在此之后，尤其是Claude 4.5之后就完全没有优势了。",
+        "created_at": "Sun Jan 04 05:01:35 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2007678760099950595",
+            "url": "https://pbs.twimg.com/media/G9y1MfbasAMjpqU.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2007678759915401219",
+            "url": "https://pbs.twimg.com/media/G9y1MevasAMgl-p.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1693270225104572416",
+          "name": "Bruce🐼",
+          "screen_name": "paulwalker99318",
+          "description": "Vibe Builder | 关注软件工程与 AI Agent | 实践 & 分享。",
+          "followers_count": 1126,
+          "friends_count": 777,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 24,
+          "reply_count": 7,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
         "reply_count": 1,
         "quote_count": 0
       }

@@ -1,12 +1,294 @@
 {
   "date": "20260105",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-01-05T00:19:08.615861",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-01-05T02:49:49.841037",
+  "tweet_count": 206,
+  "unique_tweet_count": 206,
+  "total_crawled": 400,
+  "duplicates_removed": 194,
   "tweets": [
+    {
+      "id": "2008007501107884487",
+      "text": "不同模型更好\nhttps://t.co/ToJ0ZOJ5wy",
+      "created_at": "Mon Jan 05 02:47:49 +0000 2026",
+      "lang": "ja",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2008007240549380447",
+        "text": "@dotey 可以用来对比四种模型，同一个模型做几次性价比不高。两次都做不好基本可以换/放弃了",
+        "created_at": "Mon Jan 05 02:46:47 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1553753362633719808",
+          "name": "Gantrol",
+          "screen_name": "gantrols",
+          "description": "全干工程师，计算机心理学家",
+          "followers_count": 1300,
+          "friends_count": 96,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 164971,
+        "friends_count": 1509,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2007991923689082898",
+      "text": "这个同时几个版本偶尔我也用过，主要在我自己不确定哪种方法更好但是我能甄别好坏的情况下使用，不建议作为一种常规手段：\n1. 如果你自己不懂，无论 AI 生成多少版本，AI 选出来的不一定是好的\n2. 如果你是在 Vibe Coding 原型阶段，功能实现就好，不用太关心实现\n3. 如果你是在生产环境版本，整体项目的设计是要统一的，最好是你自己懂自己能掌控\n4. 费 token 和时间",
+      "created_at": "Mon Jan 05 01:45:55 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2007990413240758519",
+        "text": "最近社区里面天生推荐过一个办法。\n让AI在四个不同的分支写四个不同的思路，然后让他自己比较自己反思，哪个最好，是不是可以借鉴多家之长。\n当然你如果资源充沛，甚至可以四个分支都部署了，让AI自己先做下冒烟测试。",
+        "created_at": "Mon Jan 05 01:39:55 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1891723277816803328",
+          "name": "不辣的皮皮",
+          "screen_name": "zhyue1985",
+          "description": "一支烟花AI社区主理人\n微信虚拟人框架luoyun_project的作者\nAI cosplay爱好者\n还有...一个奶爸...",
+          "followers_count": 25,
+          "friends_count": 23,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 164971,
+        "friends_count": 1509,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2007989488035967340",
+      "text": "问：如果是在第二版本开发，那如何让它践行双版本策略，新迭代的功能如果保持原来的编码架构？\n\n答：如果是开发后续版本，第一遍原型版本不一定要基于原有的架构，起一个新项目vibe更快效率更高；但第二遍生产环境版本就需要考虑如何从第一版迁移了，需要充分考虑trade off：成本、收益和风险",
+      "created_at": "Mon Jan 05 01:36:15 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 164971,
+        "friends_count": 1509,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2007986733472940302",
+      "text": "澄清贴\nhttps://t.co/Rs8L3pFcnn",
+      "created_at": "Mon Jan 05 01:25:18 +0000 2026",
+      "lang": "ja",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2007659740126761033",
+        "text": "To cut through the noise on this topic, it’s helpful to provide more more context:\n\n- We have built several versions of this system last year. - There are tradeoffs and there hasn't been a clear winner.\n- When prompted with the best ideas that survived, coding agents are able to go very far and generate a good decent toy version in an hour or so.",
+        "created_at": "Sun Jan 04 03:45:57 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "10809412",
+          "name": "Jaana Dogan ヤナ ドガン",
+          "screen_name": "rakyll",
+          "description": "Principal Engineer at Google. Gemini API. Simplicity and optimism. Personal opinions.",
+          "followers_count": 159078,
+          "friends_count": 1407,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 75,
+          "favorite_count": 1283,
+          "reply_count": 71,
+          "quote_count": 33
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 164971,
+        "friends_count": 1509,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2007986633530884406",
+      "text": "前几天 Google 首席工程师（Principal Engineer）Jaana Dogan 发了一条推文：\n“我们团队去年一整年都在做分布式 Agent 编排系统，各种方案，各种分歧，始终没有定论。我把问题描述给 Claude Code，它一个小时就生成了我们去年做的东西。”\n\n这条推文在我的 Timeline 上刷屏好几天。有意思的是，几乎每个人都能从中找到自己想要的证据。\n\n有人说这是大公司病的铁证：一年的活儿一小时干完，可见组织效率有多低。\n有人说这是 Claude Code 封神时刻：Google 自己的首席工程师都在用竞品。\n还有人说程序员要失业了：AI 已经能替代整个团队。\n\n这些解读都抓住了部分事实，但都漏掉了关键信息。\n\n【1】故事的另一半\n\nJaana Dogan 后来发了一段很长的澄清。\n\n首先，团队这一年建了好几个版本的系统，各有优劣，一直没达成共识。\n\n其次，她给 Claude 的 Prompt 浓缩了“存活下来的最佳想法”：一年的探索、试错、淘汰，精华被压缩进了三段话。\n\n最后，Claude 生成的是“玩具版本”，不是生产级代码，但作为起点相当不错。\n\n换句话说，这不是 AI 凭空创造，而是专家带着一年积累的研究成果，用 AI 快速把想法变成代码。\n\n【2】一年的时间到底花在哪了\n\n我们习惯用“产出”来衡量工作：代码行数、功能数量、版本迭代。但如果产出可以被一小时复现，那之前一年的“工作”到底是什么？\n\n团队一年其实在做三件事：\n\n首先是探索。分布式 Agent 编排这个问题，没有标准答案。要试不同的架构、不同的通信机制、不同的容错策略。大部分尝试会失败，但失败本身是必要的学费。\n\n然后是验证。想法要落地，得跑起来看效果。有些问题只有在真实负载下才会暴露。这个过程漫长、枯燥、充满意外。\n\n最后是对齐。Jaana 说\"not everyone is aligned\"。大厂呆过的朋友都知道，在大公司，让不同团队、不同利益方、不同技术偏好的人达成共识，往往比写代码难十倍。开会、写文档、说服、妥协、再开会，这些不产生代码，但消耗大量时间和精力。\n\nClaude 复现的是最后那个“建造”的动作。前面那些认知劳动，探索、验证、对齐其实都是人来完成的。\n\n这就像一个软件项目，我们不能只盯着写代码的那部分时间，前面的需求分析、产品设计、系统设计，后期的测试都是占时间的，只是由于以前写代码成本高，大家容易忽略那部分的成本付出，现在 AI 生成代码太快，才凸显出其他部分工作的价值。\n\n【3】瓶颈转移\n\nJaana 还说了一段话，我认为这才是整个故事最有价值的部分：\n\n“需要好几年时间去学习、在真实产品中验证想法、找到能长期使用的模式。一旦你有了这些洞察和知识，构建本身就不难了。因为可以从零开始建，最终产物反而没有历史包袱。”\n\n过去，瓶颈在“怎么实现”。你想清楚要什么了，但从想法到代码之间隔着漫长的工程工作。需要招人、分工、排期、开发、测试、联调。\n\n现在，这个瓶颈正在消失。新的瓶颈是“想清楚要什么”。你的 prompt 能不能精准描述问题？能不能包含正确的约束条件？能不能体现你对 tradeoff 的判断？\n\n有人把这叫做从“实现”到“表达”的转移。以前会干活的人值钱，现在会说清楚要干什么的人更值钱。\n\nJaana 的 prompt 之所以有效，是因为她确实懂这个领域。换一个不懂的人，给 Claude 同样三段话的篇幅，大概率出不来能用的东西。AI 放大的是你已有的认知，不是凭空给你认知。\n\n【4】什么变贵了\n\n执行变便宜了，什么变贵了？\n\n判断力。面对十个可行方案，选哪个？AI 能帮你生成方案，但决定需要对业务的理解、对用户的洞察、对技术趋势的预判，这些仍然高度依赖人。\n\n品味。同样是能跑的代码，好代码和烂代码的差距是巨大的。可维护性、可扩展性、优雅程度，AI 能写代码，但“什么是好代码”这个标准，需要人来定义和坚持。\n\n对问题的深刻理解。表面上是技术问题，底下往往是业务问题、组织问题、甚至政治问题。能穿透表象看到本质的人，永远稀缺。\n\n【5】个体和小团队在 AI 时代的机会\n\n这个故事还有一个潜台词：大公司的对齐成本被 AI 无情放大了。\n\n以前，大公司用人海战术堆执行力，用流程保证质量。小团队资源有限，很难在复杂项目上竞争。\n\n前 Google 和 Meta 杰出工程师（Distinguished Engineer）、Gemini 大模型的联合作者 Rohan Anil 留言说：\n“如果我当年能拥有 Coding Agent，特别是像 Opus 这种级别的模型，我不仅能省下职业生涯前 6 年的时间，甚至能把这些工作量压缩到短短几个月内完成。”\n\n现在，执行力可以靠 AI 补齐。小团队的优势：决策快、包袱轻、方向调整灵活，反而变成了真正的护城河。一个人想清楚了，一小时就能出原型；一百个人没想清楚，开一年会也对不齐。\n\n这对个体是好消息，你的判断力、学习能力、对问题的理解深度，正在成为 AI 时代的竞争力。\n\nAI 没有让工程师贬值，但 AI 时代的工程师要求也不一样了。",
+      "created_at": "Mon Jan 05 01:24:54 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2007986471899201536",
+          "url": "https://pbs.twimg.com/media/G93NDrNXgAADliP.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2007239758158975130",
+        "text": "I'm not joking and this isn't funny. We have been trying to build distributed agent orchestrators at Google since last year. There are various options, not everyone is aligned... I gave Claude Code a description of the problem, it generated what we built last year in an hour.",
+        "created_at": "Fri Jan 02 23:57:05 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "10809412",
+          "name": "Jaana Dogan ヤナ ドガン",
+          "screen_name": "rakyll",
+          "description": "Principal Engineer at Google. Gemini API. Simplicity and optimism. Personal opinions.",
+          "followers_count": 159078,
+          "friends_count": 1407,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2435,
+          "favorite_count": 24188,
+          "reply_count": 761,
+          "quote_count": 989
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 164971,
+        "friends_count": 1509,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 40,
+        "reply_count": 7,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2007981424562114586",
+      "text": "自己要做Agent就一个建议：第一个版本用 claude agent sdk 搭，先跑起来再说",
+      "created_at": "Mon Jan 05 01:04:12 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2007850859330519414",
+        "text": "讨个请教！类似YouMind、Lovart、Cursor 这类产品，Agent部分的逻辑有什么框架或者学习资料推荐吗？ https://t.co/yYwUnqqOeu",
+        "created_at": "Sun Jan 04 16:25:23 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2007849407782481921",
+            "url": "https://pbs.twimg.com/media/G91QZflacAEiteR.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1718896922277314560",
+          "name": "熠辉 Indie",
+          "screen_name": "yihui_indie",
+          "description": "我的AI编程课(https://t.co/HVZn3ItASW) |B站up主 | 分享创造 + 无限迭代ing",
+          "followers_count": 40947,
+          "friends_count": 748,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 62,
+          "reply_count": 25,
+          "quote_count": 2
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 164971,
+        "friends_count": 1509,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 45,
+        "reply_count": 9,
+        "quote_count": 1
+      }
+    },
     {
       "id": "2007910921914769832",
       "text": "Had a lovely dinner last night with @POTUS and @FLOTUS.\n\n2026 is going to be amazing! https://t.co/1Oq35b1PEC",

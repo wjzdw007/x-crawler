@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 165184,
+    "followers_count": 165192,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260105",
-  "last_updated": "2026-01-05T22:05:53.607083",
-  "tweet_count": 10,
+  "last_updated": "2026-01-06T00:17:55.907297",
+  "tweet_count": 12,
   "tweets": [
     {
       "id": "2007981424562114586",
@@ -367,6 +367,90 @@
         "favorite_count": 32,
         "reply_count": 11,
         "quote_count": 3
+      }
+    },
+    {
+      "id": "2008316063143129200",
+      "text": "如果说代码已经便宜到了白菜价，但我们可能只用了不到 10% 的潜力。那剩下的 90% 是什么？2026 年的 AI 应用会往哪走？\n\n推荐看看这篇《Notes on AI Apps in 2026》，AI 应用生态正在成熟，2026 年的关键变化是工具将从执行转向探索，重点不再是“怎么建”，而是“建什么”。同时，企业每个部门都应该成为软件团队，而 AI 应用层不会被模型层吞噬。\n\n作者 Anish Acharya 是 a16z 合伙人，AI 投资领域活跃人物。他之前提出过“Narrow Startups”框架，长期关注 AI 应用层投资机会。\n\n他的这篇文章给了几个很有意思的判断。\n\n【1】难题换了：从“怎么做”到“做什么”\n\n现在日常用的工具，都是在解决帮你“做”的问题，但几乎没有帮你“想”的工具。\n\nIDE 是帮你写代码的，Figma 是帮你画设计的，Excel 是帮你算数的。全是执行工具。但帮你想清楚“我到底该做什么”的工具呢？几乎没有。唯一算得上的，可能就是 LLM 本身，它某种程度上成了你的思考伙伴。\n\nAnish 认为，这个局面在 2026 年会变。当 AI 写代码的能力越来越强、能处理的任务时间线越来越长，真正的难题就不再是“怎么实现”，而是“做什么”。\n\n举个例子：想象一个产品经理，每天早上起来，发现 AI 已经根据他设定的大方向，自己想出了 2-3 个新功能、写好了代码、还跑完了 A/B 测试。PM 要做的只是 review 和拍板。\n\n听起来很美，但问题在于：现在的模型在“想该做什么”这件事上还不太行。它想出来的点子往往平淡无奇，缺乏那种好产品思维的灵光一现。\n\n所以下一代工具的机会在哪？不是更好的执行工具，而是真正的“思考工具”——帮你探索、发散、找到该做什么的工具。Cursor 已经在往这个方向走了。\n\n【2】每个团队都得变成“软件团队”\n\n企业里有两类职能：\n一类是“权力职能”：工程、产品、效果营销——这些天生离软件近。\n另一类是“服务职能”：法务、财务、HR——传统上靠人力运转，流程重、软件轻。\n\nAI coding agents 会彻底改变这个格局。\n\n第一层影响：服务职能的领导们需要转换思维。以前遇到问题，第一反应是“加人”或者“改流程”。以后第一反应得是“能不能用软件解决”。有的会用垂直产品（比如法律领域的 Harvey），有的会直接用通用的 coding agent（比如 Claude Code），每个团队都得学会用软件思维工作。\n\n第二层影响：产品野心得大幅提升。以前做产品功能要排优先级，因为工程资源有限。以后可以假设能想到的功能都可以做出来。这不只是技术问题，而是观念问题，大多数企业还没准备好接受“什么都能做”这个现实。\n\n文章中有句话：“Every feature that can be built will be built.”（能做的功能都会被做出来），也就是说：如果你不做，别人会做。\n\n他认为，文化转变的难度不亚于组织转变。这可能是最被低估的挑战。\n\n【3】AI 应用不会被模型公司吃掉\n\n有一种担忧：OpenAI、Anthropic、Google 这些大模型公司会不会把应用层也吃掉？毕竟它们有最强的模型，做应用岂不是降维打击？\n\nAnish 认为不用担心：大模型公司的能力“参差不齐”，就像它们做的模型一样，某些地方很强，某些地方有明显短板。而且它们各有各的包袱：Google 要应付监管承诺，OpenAI 同时在消费者、企业、模型、硬件四条战线上作战。\n\n以编程工具为例，这个赛道是模型公司最重视的领域之一。结果 2025 年光是创业公司就创造了超过 10 亿美元的新收入。\n\n他之前提过一个框架，说 AI 应用在这些领域有优势：需要多模型协作的、有独家数据的、有网络效应的、功能面很广的。结合 Karpathy 说的“厚”AI 应用（多模型编排、自主程度可调、上下文工程），你大概能看出成熟的 AI 应用长什么样。\n\n或者说，应用层和模型层正在分化，而不是合并。\n\n【4】普通人正在发现 AI 的“隐藏关卡”\n\n这里 Anish 引用了 Replika 创始人 Eugenia 的观察：命令行式的交互界面，把很多普通消费者挡在了 AI 最强能力的门外。\n\n但这正在改变。Wabi 让普通人也能生成小应用，ChatGPT 和 Grok 的图片 tab 让图像生成变得触手可及。如果 Apps Directory 和 Skills 能普及开，MCP 和 prompt 插件也会飞入寻常百姓家。\n\nAnish 提了一个很有意思的点：2025 年生成一个小应用的快乐，其实和 2023 年生成一首诗的快乐是一样的。但大多数消费者还不知道这件事存在。\n\n让更多人能“做东西”，某种程度上也回应了硅谷可能对 AI 社会影响有点“文化盲区”的批评。\n\n【5】给大公司 CEO 的三点建议\n\n对于已经到一定规模、正在思考 AI 转型的 CEO，Anish 的三点建议：\n第一，看看最好的案例是怎么用 AI 把所有客户面向的角色（销售、客服、催收）整合成一个统一功能的。\n第二，推动每个职能都“软件优先”——非技术部门拥抱 AI，才是企业获得真正运营杠杆的方式。\n第三，对产品和定价都要更有野心。他的原话是：如果 Tesla 的 FSD 能实现跨海岸自动驾驶，Claude Code 能用 Claude Code 自己写出来，那对大多数企业任务而言，AGI 已经到了。\n\nAGI 是句夸张的玩笑，重点其实是：很多企业对“AI 能做什么”的想象力还是太保守了。\n\n【6】享受这个黄金时代\n\n文章结尾，Anish 说了一句话：\n“没人会告诉你正在经历黄金年代，直到它结束。所以我现在告诉你。”\n\n他的感受是，这一轮产品周期比以往更去中心化、更软件驱动、对技术人来说也更好玩。比起移动互联网时代巨头林立的格局，这一轮的机会分布更分散，创业者的空间更大。\n\n当然不要忘记作者是个投资人，a16z 投了很多 AI 公司，所以他们是乐观的，也没怎么谈 AI 的可靠性问题、监管风险、就业冲击。\n\n但他的一些观点我是认同的：\n当“怎么做”不再是问题，“做什么”就成了最稀缺的能力。\n借助 AI，企业每个部门都应该成为软件团队。",
+      "created_at": "Mon Jan 05 23:13:56 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2008314540467879936",
+          "url": "https://pbs.twimg.com/media/G973bx3XAAAy2km.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2007855098513240255",
+        "text": "https://t.co/0Wj540KLcU",
+        "created_at": "Sun Jan 04 16:42:14 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "24181760",
+          "name": "Anish Acharya",
+          "screen_name": "illscience",
+          "description": "AI Apps investing @ A16Z; A1111; Boards of Krea, Deel, Clutch, Titan, Arc Boats, Untitled, Happy Robot + more; If you’re not at the table, you’re on the menu",
+          "followers_count": 24744,
+          "friends_count": 2478,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 72,
+          "favorite_count": 870,
+          "reply_count": 33,
+          "quote_count": 21
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 36,
+        "reply_count": 3,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2008316585472151699",
+      "text": "RT @virushuo: https://t.co/V5HgfLfGfw “如何做 AI Agent 喜欢的基础软” 今天才读到这篇，有点晚了。但不妨碍我认为这篇是2025看过的最好的中文技术相关的文章。“最好”毫不夸张。 来自 @dxhuang",
+      "created_at": "Mon Jan 05 23:16:01 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2008301483691831458",
+        "text": "https://t.co/V5HgfLfGfw “如何做 AI Agent 喜欢的基础软” 今天才读到这篇，有点晚了。但不妨碍我认为这篇是2025看过的最好的中文技术相关的文章。“最好”毫不夸张。 来自 @dxhuang",
+        "created_at": "Mon Jan 05 22:16:00 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "49913",
+          "name": "virushuo",
+          "screen_name": "virushuo",
+          "description": "Back to the 2006.  Screeching voices of the minority.\n\nAuthor «Illustrated History of Programming»",
+          "followers_count": 61446,
+          "friends_count": 2762,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 11,
+          "favorite_count": 80,
+          "reply_count": 2,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 11,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
       }
     }
   ]

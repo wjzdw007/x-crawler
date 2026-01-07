@@ -1,0 +1,75 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 165430,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260107",
+  "last_updated": "2026-01-07T02:41:59.516723",
+  "tweet_count": 1,
+  "tweets": [
+    {
+      "id": "2008709530654216567",
+      "text": "吴恩达老师新年第一条推文没有预测“今年 AI 会有多厉害”，反而问：“我们到底怎么判断 AGI 来没来？” 甚至还提出了一个新的检验标准叫“图灵-AGI 测试”。\n\n规则很简单。给 AI（或者一个人类）一台能上网的电脑，可以用浏览器、可以开 Zoom。然后由评委设计一个连续多天的工作任务，比如先接受客服培训，然后真的去接客户电话，中间还有人给反馈。这就是一个远程员工日常会经历的事情。\n\n如果 AI 能做得和一个熟练的人类员工一样好，那就算通过了。\n\n经典的图灵测试要求是让 AI 通过文字聊天骗过人类评委，让评委分不清对面是人还是机器。听起来很有道理，但实际操作下来，Loebner Prize 竞赛发现了一个尴尬的结果：想骗过评委，最有效的不是展示智能，而是模拟人类的打字错误。你故意打几个错别字、犹豫一下再回复，评委反而觉得你更像人。\n\n现在流行的其他各种 benchmark，什么 GPQA、AIME、SWE-bench，这些测试的问题在于，测试集是公开的。AI 团队会针对这些测试集做优化，或者说刷题。刷高分不代表真的有通用能力，只能说明在这一小块领域做得不错。就像一个学生每年都刷同一套模拟题，考试成绩很好，但换个题型可能就不行了。\n\n“图灵-AGI 测试”至少抓住了一个关键：普通人心目中的 AGI 是什么样的？不就是能替我干活的 AI吗？一个真正的通用人工智能，总不能连一份远程工作都干不了吧？\n\n问题是 AI 真要能通过这测试了，感觉我可以去申请远程岗位让 AI 帮我干活我自己领工资了😂",
+      "created_at": "Wed Jan 07 01:17:26 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2008709440459984896",
+          "url": "https://pbs.twimg.com/media/G-Bel--XUAAEDvq.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2008709466372325376",
+          "url": "https://pbs.twimg.com/media/G-BenfgWQAAg8C5.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2008709497435439105",
+          "url": "https://pbs.twimg.com/media/G-BepTOXwAELAiV.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2008709520315342848",
+          "url": "https://pbs.twimg.com/media/G-BeqodXYAAvaIs.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2008578741312836009",
+        "text": "Happy 2026! Will this be the year we finally achieve AGI? I’d like to propose a new version of the Turing Test, which I’ll call the Turing-AGI Test, to see if we’ve achieved this. I’ll explain in a moment why having a new test is important.\n\nThe public thinks achieving AGI means computers will be as intelligent as people and be able to do most or all knowledge work. I’d like to propose a new test. The test subject — either a computer or a skilled professional human — is given access to a computer that has internet access and software such as a web browser and Zoom. The judge will design a multi-day experience for the test subject, mediated through the computer, to carry out work tasks. For example, an experience might consist of a period of training (say, as a call center operator), followed by being asked to carry out the task (taking calls), with ongoing feedback. This mirrors what a remote worker with a fully working computer (but no webcam) might be expected to do.\n\nA computer passes the Turing-AGI Test if it can carry out the work task as well as a skilled human.\n\nMost members of the public likely believe a real AGI system will pass this test. Surely, if computers are as intelligent as humans, they should be able to perform work tasks as well as a human one might hire. Thus, the Turing-AGI Test aligns with the popular notion of what AGI means.\n\nHere’s why we need a new test: “AGI” has turned into a term of hype rather than a term with a precise meaning. A reasonable definition of AGI is AI that can do any intellectual task that a human can. When businesses hype up that they might achieve AGI within a few quarters, they usually try to justify these statements by setting a much lower bar. This mismatch in definitions is harmful because it makes people think AI is becoming more powerful than it actually is. I’m seeing this mislead everyone from high-school students (who avoid certain fields of study because they think it’s pointless with AGI’s imminent arrival) to CEOs (who are deciding what projects to invest in, sometimes assuming AI will be more capable in 1-2 years than any likely reality).\n\nThe original Turing Test, which required a computer to fool a human judge, via text chat, into being unable to distinguish it from a human, has been insufficient to indicate human-level intelligence. The Loebner Prize competition actually ran the Turing Test and found that being able to simulate human typing errors — perhaps even more than actually demonstrating intelligence — was needed to fool judges. A main goal of AI development today is to build systems that can do economically useful work, not fool judges. Thus a modified test that measures ability to do work would be more useful than a test that measures the ability to fool humans.\n\nFor almost all AI benchmarks today (such as GPQA, AIME, SWE-bench, etc.), a test set is determined in advance. This means AI teams end up at least indirectly tuning their models to the published test sets. Further, any fixed test set measures only one narrow sliver of intelligence. In contrast, in the Turing Test, judges are free to ask any question to probe the model as they please. This lets a judge test how “general” the knowledge of the computer or human really is. Similarly, in the Turing-AGI Test, the judge can design any experience — which is not revealed in advance to the AI (or human subject) being tested. This is a better way to measure generality of AI than a predetermined test set.\n\nAI is on an amazing trajectory of progress. In previous decades, overhyped expectations led to AI winters, when disappointment about AI capabilities caused reductions in interest and funding, which picked up again when the field made more progress. One of the few things that could get in the way of AI’s tremendous momentum is unrealistic hype that creates an investment bubble, risking disappointment and a collapse of interest. To avoid this, we need to recalibrate society’s expectations on AI. A test will help.\n\nIf we run a Turing-AGI Test competition and every AI system falls short, that will be a good thing! By defusing hype around AGI and reducing the chance of a bubble, we will create a more reliable path to continued investment in AI. This will let us keep on driving forward real technological progress and building valuable applications — even ones that fall well short of AGI. And if this test sets a clear target that teams can aim toward to claim the mantle of achieving AGI, that would be wonderful, too. And we can be confident that if a company passes this test, they will have created more than just a marketing release — it will be something incredibly valuable.\n\n[Original text: https://t.co/mGAmoOGga7 ]",
+        "created_at": "Tue Jan 06 16:37:44 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "216939636",
+          "name": "Andrew Ng",
+          "screen_name": "AndrewYNg",
+          "description": "Co-Founder of Coursera; Stanford CS adjunct faculty. Former head of Baidu AI Group/Google Brain. #ai #machinelearning, #deeplearning #MOOCs",
+          "followers_count": 1319955,
+          "friends_count": 1055,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 139,
+          "favorite_count": 875,
+          "reply_count": 119,
+          "quote_count": 33
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 29,
+        "reply_count": 8,
+        "quote_count": 0
+      }
+    }
+  ]
+}

@@ -1,12 +1,982 @@
 {
   "date": "20260108",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-01-08T18:07:09.008462",
-  "tweet_count": 297,
-  "unique_tweet_count": 297,
-  "total_crawled": 469,
-  "duplicates_removed": 172,
+  "last_crawl_time": "2026-01-08T20:06:09.194641",
+  "tweet_count": 314,
+  "unique_tweet_count": 314,
+  "total_crawled": 497,
+  "duplicates_removed": 183,
   "tweets": [
+    {
+      "id": "2009355375775240701",
+      "text": "帮转",
+      "created_at": "Thu Jan 08 20:03:48 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2009301769528963243",
+        "text": "最近有用户反馈 OpenCode 有点卡，主要集中在中文用户这边。有遇到的麻烦发个录屏，谢啦",
+        "created_at": "Thu Jan 08 16:30:47 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "29528254",
+          "name": "Frank Wang",
+          "screen_name": "fanjiewang",
+          "description": "https://t.co/LnjHaDikZK 创始人",
+          "followers_count": 4039,
+          "friends_count": 476,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 25,
+          "reply_count": 8,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 165882,
+        "friends_count": 1520,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009352478798590139",
+      "text": "华尔街日报最新发了一篇长文《How Google Got Its Groove Back and Edged Ahead of OpenAI》，讲的是 Google 在 AI 竞赛中如何从落后到反超的故事。\n\n2025 年 8 月的一个凌晨两点半，Google 的一位 AI 项目经理 Naina Raisinghani 正在上传 DeepMind 实验室的最新成果，一个超快的图像生成器。她需要给它取个名字才能提交到 LM Arena 排名平台，但这个点没人在线。\n\n于是她随手用朋友给她起的两个外号拼了一个：Nano Banana🍌。\n\n几天后，Nano Banana 冲上排名榜首，在 X 上成为热门话题，用量远超 Google 预期。到 9 月，Gemini App 成了苹果应用商店下载量第一。11 月，Google 发布了迄今最强的 Gemini 模型，在多项指标上超越 ChatGPT，股价大涨。\n\nOpenAI 内部随即发出 Code Red。\n\n时间拨回 2015 年，Pichai 刚接任 Google CEO，那时候 AI 还只是学术圈的事。2016 年他发了一篇博客，说过去十年是智能手机的时代，未来十年将是 AI 优先的时代。\n\n其实 Google 早就在布局。2011 年成立了 Google Brain，联合创始人 Jeff Dean 参与开发了神经网络技术，这是今天大语言模型的基础。后来又收购了伦敦的 DeepMind，创始人 Demis Hassabis 是个国际象棋神童，后来因为 AlphaFold 拿了诺贝尔奖。\n\n还有一步棋当时不太引人注目：Google 开始自研 AI 芯片。他们认为语音识别这类应用会需要大量算力，于是设计了 TPU（张量处理单元），比传统 CPU 和 GPU 更省电。这步棋后来被证明是关键。\n\n不过 Google 一开始对聊天机器人很谨慎。一些高管和研究员担心安全问题，早期模型很容易被诱导出种族歧视或性别歧视的回答。前 Google Brain 员工 Julia Winn 说，Google 对这类风险看得比她待过的任何公司都重。\n\n这种谨慎让一些研究员很沮丧，有的选择了离开。\n\n2022 年 8 月，Google 发布了一个叫 LaMDA 的聊天模型，只开放给少数人测试。测试 App 叫 AI Test Kitchen，有三个功能：想象它、列出它、聊狗。对，第三个功能只能聊狗。\n\n三个月后，OpenAI 发布了 ChatGPT。五天内，一百万人注册。用户没有太多限制，想聊什么聊什么。\n\nGoogle 内部一些在 AI 上耕耘多年的员工气坏了。分析师和投资者开始质疑：Google 是不是要错过科技史上的下一波大浪？\n\n2023 年 1 月，Jeff Dean、Demis Hassabis 和新加入的机器人专家 James Manyika 向董事会汇报了打造最强模型的计划。\n\n但 Google 等不及了，需要先推一个产品出来。2 月，他们匆忙发布了基于 LaMDA 的 Bard。\n\n发布会翻车了。宣传视频里，Bard 被问到韦伯望远镜的问题，回答说它拍了第一张系外行星照片。这是错的。Alphabet 股价当天跌了 8%。\n\n差不多同一时间，已经退休的联合创始人 Sergey Brin 在一个派对上碰到了 OpenAI 的研究员 Daniel Selsam。Selsam 问他：ChatGPT 这么厉害，作为计算机科学家你不心动吗？怎么不回来全职搞 AI？\n\nBrin 觉得他说得有道理，于是回归了。\n\n2023 年大部分时间，Google 都在努力整合内部的 AI 力量。Google Brain 偏研究，DeepMind 偏产品，两边文化不同，合并后产生了不少摩擦。\n\n不过 Google 有一个巨大优势：OpenAI 需要融资，Google 可以从自己几百亿的利润里拿钱做研发。\n\n但 Google 还有一个难题：怎么在拥抱生成式 AI 的同时，不把自己的摇钱树给弄死？Google 占了网页搜索市场 90% 的份额，这是广告业务的根基。\n\n为了弄清楚 AI 搜索应该长什么样，Google 启动了一个叫 Project Magi 的多团队项目，由后来成为搜索副总裁的 Liz Reid 牵头。\n\nReid 说，难点在于当答案不在单个网页上时，怎么让搜索快速给出清晰的回答。人们不只是在用搜索，而是在依赖搜索。搞砸了的话，你妈、你朋友、你孩子都会来找你算账。\n\n2023 年底，Google 发布了第一版 Gemini。OpenAI 的 ChatGPT 主要用文本训练，Google 的 Gemini 从一开始就用文本、代码、音频、图像和视频一起训练。这是技术野心更大的方案，虽然开发时间更长，但后来证明是值得的。\n\n2024 年 5 月，Google 推出了 AI Overviews，在搜索结果顶部显示 AI 生成的摘要。用户开始进行更复杂的搜索。随后 Google 开发了 AI Mode，一种聊天机器人式的搜索选项。\n\nReid 说，经过无数次迭代，团队开始发现自己不再只是为了测试而用它，而是真的想用它。\n\nBrin 回来后做的很多工作是帮 Gemini 挑毛病。他还促成了一笔 27 亿美元的收购，把两位离开 Google 创业的 AI 研究员 Daniel De Freitas 和 Noam Shazeer 带了回来。这两人后来参与领导 Gemini 的开发。\n\n2024 年 8 月，Nano Banana 爆火。负责 Gemini App 和 Google Labs 的 Josh Woodward 把这次发布称为成功的灾难：全球用户生成了数十亿张图片，Google 一度找不到足够的算力，只能紧急借用服务器。\n\n到 10 月，Gemini 月活用户从 7 月的 4.5 亿涨到了 6.5 亿。\n\n11 月 Gemini 3 发布又造成算力瓶颈。但 Google 十多年前就在准备这一天了。他们自研的 AI 芯片成了竞争优势，最新的 Ironwood 芯片大幅降低了 AI 模型的运行成本。\n\n11 月底传出消息，Google 正在和 Meta 谈判，要卖给他们价值数十亿美元的芯片。这个消息让 Nvidia 股价当天跌了 7%。\n\nPichai 在 12 月的内部备忘录里写道：我们以很棒的姿态结束了 2025 年。想想一年前我们在什么位置，这个进步令人难以置信。\n\nGoogle 用了十多年的积累，经历了 ChatGPT 的冲击和 Bard 的翻车，整合了内部资源，最终在 2025 年底完成逆袭。当然，OpenAI 后来也发布了更强的 ChatGPT，用户量仍然远超 Gemini。这场 AI 竞赛远没有结束。\n\nhttps://t.co/W3yXCBmv8g",
+      "created_at": "Thu Jan 08 19:52:17 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2009339593565351936",
+          "url": "https://pbs.twimg.com/media/G-KbtuOXMAAZ88a.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 165882,
+        "friends_count": 1520,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009347460876128358",
+      "text": "vercel 这点还不错，要赞助 tailwindcss 了，我觉得 AI 模型公司也更应该支持，像 Gemini、GPT、Claude 都受益于 Tailwindcss",
+      "created_at": "Thu Jan 08 19:32:21 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2009336725043335338",
+        "text": "Vercel will be officially sponsoring https://t.co/QF7eOed81b. That's a given. We as a community and industry owe @adamwathan and team a lot. Tailwind is foundational web infrastructure at this point (it fixed CSS 😉). I've also reached out to Adam to explore how we can make this a longer-term commitment.",
+        "created_at": "Thu Jan 08 18:49:41 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "15540222",
+          "name": "Guillermo Rauch",
+          "screen_name": "rauchg",
+          "description": "@vercel CEO",
+          "followers_count": 330429,
+          "friends_count": 586,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 132,
+          "favorite_count": 1853,
+          "reply_count": 183,
+          "quote_count": 64
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 165882,
+        "friends_count": 1520,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009347142306156726",
+      "text": "Bravo",
+      "created_at": "Thu Jan 08 19:31:05 +0000 2026",
+      "lang": "pt",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2009327899891859471",
+        "text": ".@SecScottBessent: \"Under Governor Tim Walz, billions of dollars intended for families in need, housing for disabled seniors, and services for children were diverted to benefit fraudsters. I am here this week to single the @USTreasury's unwavering commitment to recovering stolen funds, prosecuting fraudulent criminals, preventing scandals like this from ever happening again.\"",
+        "created_at": "Thu Jan 08 18:14:37 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2009326915690102784",
+            "url": "https://video.twimg.com/amplify_video/2009326915690102784/vid/avc1/1280x720/0KHVvKsBWAFEv_P2.mp4?tag=21",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1881451105454002176",
+          "name": "Rapid Response 47",
+          "screen_name": "RapidResponse47",
+          "description": "Official White House Rapid Response account. Supporting @POTUS's America First agenda and holding the Fake News accountable. MAGA!",
+          "followers_count": 1349385,
+          "friends_count": 60,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2403,
+          "favorite_count": 10412,
+          "reply_count": 388,
+          "quote_count": 94
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231668514,
+        "friends_count": 1264,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1938,
+        "favorite_count": 13776,
+        "reply_count": 933,
+        "quote_count": 38
+      }
+    },
+    {
+      "id": "2009343891519230030",
+      "text": "Secretary Bessent is right",
+      "created_at": "Thu Jan 08 19:18:10 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2009330892133589347",
+        "text": "🚨 HOLY CRAP. Sec. Scott Bessent just confirmed up to $600 BILLION of annual fraud with taxpayer dollars, nearly 10% of spending\n\nElon Musk called it!\n\nEND ALL FRAUD.\n\n\"We are going to hold people accountable. We're going to press this to the full extent possible...American taxpayers, for American families, the GAO, the General Accounting Office, believes that there is somewhere between $300B- $600B of annual fraud, roughly 10% of government spending, that disappears due to fraud.\"\n\n\"If we can recapture that, that is 1% to 2% of GDP!\" @RapidResponse47",
+        "created_at": "Thu Jan 08 18:26:30 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2009330674084311040",
+            "url": "https://video.twimg.com/amplify_video/2009330674084311040/vid/avc1/1280x720/CfMPbP3Fs4k4C08X.mp4?tag=21",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "763094579491008512",
+          "name": "Eric Daugherty",
+          "screen_name": "EricLDaugh",
+          "description": "Chief Content Officer @RightLineNews @FLVoiceNews | Marylander-turned-Floridian | Politics & breaking news alerts | “Men must vote” - Charlie Kirk",
+          "followers_count": 835741,
+          "friends_count": 2424,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1830,
+          "favorite_count": 6712,
+          "reply_count": 377,
+          "quote_count": 121
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231668514,
+        "friends_count": 1264,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3474,
+        "favorite_count": 18477,
+        "reply_count": 1344,
+        "quote_count": 93
+      }
+    },
+    {
+      "id": "2009343178663719006",
+      "text": "RT @Yangyixxxx: 朋友们大于10万展示的推文数量占比👇🏻\n\nYangyi: 446/13690 = 3.26%\n宝玉: 680/15526 = 4.38%\n藏师傅: 380/16401 = 2.32%\n向阳乔木: 191/6137 = 3.11%\n\n这些数据有什么…",
+      "created_at": "Thu Jan 08 19:15:20 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2009236690620305779",
+        "text": "朋友们大于10万展示的推文数量占比👇🏻\n\nYangyi: 446/13690 = 3.26%\n宝玉: 680/15526 = 4.38%\n藏师傅: 380/16401 = 2.32%\n向阳乔木: 191/6137 = 3.11%\n\n这些数据有什么用？\n它证明不了任何问题\n因为只要你开始选择放飞自我的发推\n占比就会下降\n同样的10万展示，人群不一样，价值也不一样\n\n但它能证明一件事\n就是不论是谁，都需要对内容的持续输出\n\n我见过很多想试图在各种社交媒体分享的人\n做了两天就做不下去了，说没有正反馈\n\n这些数字你看看，就算是高产如宝玉，也只有4%的爆款率\n4%什么水平？发25条可能才能爆一条\n但你知道吗，这个爆款率，他是需要寻找pattern的\n\n很多人发了40条，可能都一事无成\n直到发到第50条时，运气不错，爆了一条\n然后又继续发，发到第80条时，出了第二条\n第95条时，出了第三条\n\n然后他意识到了一个Pattern\n可能是选题\n可能是结构\n开始越来越有感觉\n在剩下的5条，又做出了1条\n\n于是爆款率=4%\n\n这些数字说明不了任何问题，也无法指导你获得你的自媒体增长密码\n\n但它证明了创作是一种约束满足问题\n是要你在坚持发了100条之后\n才会看到机会的\n\n量变引起质变\n很多情况下 我们不是天生的幸运儿\n没有那一条就火的实力\n更多靠的是无它 唯手熟尔",
+        "created_at": "Thu Jan 08 12:12:11 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2009230220058820608",
+            "url": "https://pbs.twimg.com/media/G-I4PWKWAAAhQt-.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2009230220067323904",
+            "url": "https://pbs.twimg.com/media/G-I4PWMXwAAs_dr.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2009231827102285825",
+            "url": "https://pbs.twimg.com/media/G-I5s43XQAEmYfP.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2009234451071684612",
+            "url": "https://pbs.twimg.com/media/G-I8Fn6a0AQLuor.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3122661542",
+          "name": "Yangyi",
+          "screen_name": "Yangyixxxx",
+          "description": "Believing is seeing\nVoice Marketing Evangelist",
+          "followers_count": 110614,
+          "friends_count": 538,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 24,
+          "reply_count": 11,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 165882,
+        "friends_count": 1520,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009339500481401040",
+      "text": "RT @america: “The Department of Homeland Security will continue to operate on the ground in Minnesota — not only to remove criminal illegal…",
+      "created_at": "Thu Jan 08 19:00:43 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2009333187856748901",
+        "text": "“The Department of Homeland Security will continue to operate on the ground in Minnesota — not only to remove criminal illegal aliens, but also to continue conducting door-to-door investigations of the rampant fraud that has taken place in the state...”\n\n https://t.co/agZTA0nChU",
+        "created_at": "Thu Jan 08 18:35:38 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2009332983711285248",
+            "url": "https://video.twimg.com/amplify_video/2009332983711285248/vid/avc1/1280x720/D_XqVJHIxMcX9wHv.mp4?tag=21",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1841988608825466880",
+          "name": "America",
+          "screen_name": "america",
+          "description": "PAC Founded by @ElonMusk to support candidates who champion Secure Borders, Sensible Spending, Safe Cities, Fair Justice System, Free Speech and Self-Protection",
+          "followers_count": 1163523,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 758,
+          "favorite_count": 4672,
+          "reply_count": 381,
+          "quote_count": 34
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231668514,
+        "friends_count": 1264,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 758,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009335343242465422",
+      "text": "Wow, Frey is super deep in the fraud",
+      "created_at": "Thu Jan 08 18:44:12 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2009025727661003218",
+        "text": "Sarah Clarke, Mayor Jacob Frey’s wife, worked for Hylden Advocacy & Law. Hylden Advocacy & Law provided legal and lobbying representation to Feeding Our Future ($250 million food aid fraud). Hylden is also listed as a paid lobbyist on a Somali Museum founded by Osman Ali (museum received $4.5 million months after the owner plead guilty to fraud)\n\nClarke left Hylden’s firm in January when the investigation took off. Clarke’s exit was abrupt and without explanation, leaving many unanswered questions...\n\nAt least eight people named in the indictment donated $1,000, the maximum allowable contribution, to Frey’s 2021 mayoral campaign.\n\nThree of Mayor Frey’s appointees were federally indicted. \n\nAbdi Nur Salah, a former senior policy aide to then-Council Member Abdi Warsame, moved up the City Hall ranks into the role of Frey’s senior policy aide in 2018\n\nSharmarke Issa was appointed by Frey to chair the housing authority in 2019 and reappointed in 2021.\n\nAbdikadir Ainanshe Mohamud was appointed by Frey to the newly created Minneapolis Community Safety Workgroup.",
+        "created_at": "Wed Jan 07 22:13:54 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1449556875213684740",
+          "name": "Apple Lamps",
+          "screen_name": "lamps_apple",
+          "description": "🇺🇸 🇺🇸 🇺🇸",
+          "followers_count": 34001,
+          "friends_count": 4003,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1228,
+          "favorite_count": 4374,
+          "reply_count": 256,
+          "quote_count": 125
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231668514,
+        "friends_count": 1264,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3940,
+        "favorite_count": 19252,
+        "reply_count": 1196,
+        "quote_count": 110
+      }
+    },
+    {
+      "id": "2009335064405135813",
+      "text": "This is great",
+      "created_at": "Thu Jan 08 18:43:05 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2009334017250996436",
+        "text": "🚨 @VP announces the Trump Administration will create a new Assistant Attorney General position who will have nationwide jurisdiction over the issue of fraud — focusing first primarily in Minnesota, then expanding nationwide. https://t.co/QnU1pti7kM",
+        "created_at": "Thu Jan 08 18:38:55 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2009333856181133312",
+            "url": "https://video.twimg.com/amplify_video/2009333856181133312/vid/avc1/1280x720/tW88G3HlAw8WP2Yr.mp4?tag=21",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1881451105454002176",
+          "name": "Rapid Response 47",
+          "screen_name": "RapidResponse47",
+          "description": "Official White House Rapid Response account. Supporting @POTUS's America First agenda and holding the Fake News accountable. MAGA!",
+          "followers_count": 1349385,
+          "friends_count": 60,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3789,
+          "favorite_count": 21673,
+          "reply_count": 1325,
+          "quote_count": 448
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231668514,
+        "friends_count": 1264,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 9150,
+        "favorite_count": 71424,
+        "reply_count": 2704,
+        "quote_count": 284
+      }
+    },
+    {
+      "id": "2009332654773293235",
+      "text": "RT @Kalshi: The judge said there’s \"plenty of evidence\" OpenAI broke its promise to stay non-profit",
+      "created_at": "Thu Jan 08 18:33:31 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2009272409937924443",
+        "text": "The judge said there’s \"plenty of evidence\" OpenAI broke its promise to stay non-profit",
+        "created_at": "Thu Jan 08 14:34:07 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2009270988295356593",
+          "text": "JUST IN: US judge clears Elon Musk's lawsuit against OpenAI for trial",
+          "created_at": "Thu Jan 08 14:28:28 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1071484733543079936",
+            "name": "Kalshi",
+            "screen_name": "Kalshi",
+            "description": "Trade on anything in all 50 states: politics, sports, entertainment, crypto, weather, and so much more. For sports: @KalshiSports For culture: @Kalshi_Culture",
+            "followers_count": 286620,
+            "friends_count": 1660,
+            "verified": false,
+            "is_blue_verified": false
+          },
+          "stats": {
+            "retweet_count": 94,
+            "favorite_count": 2073,
+            "reply_count": 107,
+            "quote_count": 9
+          }
+        },
+        "user": {
+          "id": "1071484733543079936",
+          "name": "Kalshi",
+          "screen_name": "Kalshi",
+          "description": "Trade on anything in all 50 states: politics, sports, entertainment, crypto, weather, and so much more. For sports: @KalshiSports For culture: @Kalshi_Culture",
+          "followers_count": 286620,
+          "friends_count": 1660,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 327,
+          "favorite_count": 3516,
+          "reply_count": 194,
+          "quote_count": 19
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231668514,
+        "friends_count": 1264,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 327,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009329505203368430",
+      "text": "RT @ElonClipsX: Elon Musk. People just don't understand that solar is everything. \n\n“People just don't understand that solar is everything.…",
+      "created_at": "Thu Jan 08 18:21:00 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2009209410388627846",
+        "text": "Elon Musk. People just don't understand that solar is everything. \n\n“People just don't understand that solar is everything. Compared to the sun, all other energy sources are like cavemen throwing some twigs into a fire. \n\nThe sun is over 99.8% of all mass in the solar system. Jupiter is around 0.1% of the mass. So, even if you burnt Jupiter, the energy produced by the sun would still round up to 100%. And then if you teleported three more Jupiters into our solar system and burnt them too, the sun still rounds up to 100% of energy.”\n\nFrom: Discussion with Peter Diamandis and Dave Blundin, January 6, 2026",
+        "created_at": "Thu Jan 08 10:23:47 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2009209391707201536",
+            "url": "https://video.twimg.com/ext_tw_video/2009209391707201536/pu/vid/avc1/1280x720/h4leoyGpgA5LSzhj.mp4?tag=12",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1591001290846388225",
+          "name": "ELON CLIPS",
+          "screen_name": "ElonClipsX",
+          "description": "🎬 Documenting Elon Musk through original video clips. | By @lismont",
+          "followers_count": 189528,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 386,
+          "favorite_count": 2296,
+          "reply_count": 336,
+          "quote_count": 31
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231668514,
+        "friends_count": 1264,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 386,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009328260853977559",
+      "text": "RT @Savsays: Today would be a good day to start listening to Charlie Kirk. https://t.co/XAXw71TYa1",
+      "created_at": "Thu Jan 08 18:16:03 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2009298968363085824",
+          "url": "https://pbs.twimg.com/media/G-J2xBjXMAAHa4K.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2009298970925744528",
+        "text": "Today would be a good day to start listening to Charlie Kirk. https://t.co/XAXw71TYa1",
+        "created_at": "Thu Jan 08 16:19:40 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2009298968363085824",
+            "url": "https://pbs.twimg.com/media/G-J2xBjXMAAHa4K.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "971841850695979010",
+          "name": "Savanah Hernandez",
+          "screen_name": "Savsays",
+          "description": "Sav with one “n” - Reporter - Commentator - Contributor w/ @TPUSA - Formerly 3x Banned On Twitter \nStory lead? Send here: savtipline@gmail.com",
+          "followers_count": 725215,
+          "friends_count": 1014,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2183,
+          "favorite_count": 14335,
+          "reply_count": 398,
+          "quote_count": 52
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231668514,
+        "friends_count": 1264,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2183,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009328205250138314",
+      "text": "RT @XFreeze: Elon Musk :\"Whenever there’s some sort of natural disaster somewhere, we always provide people with free Starlink internet con…",
+      "created_at": "Thu Jan 08 18:15:50 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2009326883650076960",
+        "text": "Elon Musk :\"Whenever there’s some sort of natural disaster somewhere, we always provide people with free Starlink internet connectivity\n\nWe don’t want to take advantage of a tragic situation\n\n \"If there’s a natural disaster, it’s free during the disaster\"\n\nWe don’t want to put a paywall up while somebody is trying to get help. That would be wrong\"",
+        "created_at": "Thu Jan 08 18:10:35 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2009326592107892736",
+            "url": "https://video.twimg.com/amplify_video/2009326592107892736/vid/avc1/2560x1440/eRLpm9fhZaFmtSGh.mp4?tag=21",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 103442,
+          "friends_count": 1471,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 276,
+          "favorite_count": 2102,
+          "reply_count": 210,
+          "quote_count": 23
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231668514,
+        "friends_count": 1264,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 276,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009328157082738999",
+      "text": "RT @iam_smx: South Africa is blocking Starlink solely because Elon Musk is not Black. This is not regulation, it is discrimination, and it…",
+      "created_at": "Thu Jan 08 18:15:38 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2009327363864289387",
+        "text": "South Africa is blocking Starlink solely because Elon Musk is not Black. This is not regulation, it is discrimination, and it is shameful https://t.co/7TC3cXdzoZ",
+        "created_at": "Thu Jan 08 18:12:29 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2009327275783716864",
+            "url": "https://pbs.twimg.com/media/G-KQgu6XgAAVpb3.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1614879930885574656",
+          "name": "SMX 🇺🇸",
+          "screen_name": "iam_smx",
+          "description": "Innovation, Technology, Rockets & Tesla ignite my passion. Sharing updates & info 24/7. Breaking World News! Motivation, Fun & Amazing AI Videos Guaranteed.",
+          "followers_count": 158033,
+          "friends_count": 634,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 518,
+          "favorite_count": 3261,
+          "reply_count": 889,
+          "quote_count": 60
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231668514,
+        "friends_count": 1264,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 518,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009327661492084955",
+      "text": "RT @teslaownersSV: Elon Musk was right \n\nHe BLASTS Dems: 'Biggest voter fraud in history!' Illegals on Social Security DOUBLING yearly. Dem…",
+      "created_at": "Thu Jan 08 18:13:40 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2009118465416958410",
+        "text": "Elon Musk was right \n\nHe BLASTS Dems: 'Biggest voter fraud in history!' Illegals on Social Security DOUBLING yearly. Dem operatives 'farm votes' with fake IDs — utility bills, school IDs — get SSNs, hit voter rolls. \n\nThis is why we need Voter ID!” https://t.co/herE76xnEO",
+        "created_at": "Thu Jan 08 04:22:24 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2009118387381915649",
+            "url": "https://video.twimg.com/amplify_video/2009118387381915649/vid/avc1/884x488/U8XAsqy4xGVKLSe5.mp4?tag=21",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2006869422682812624",
+          "text": "Paying for voters to come illegally to America and enabling them to vote",
+          "created_at": "Thu Jan 01 23:25:30 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 231668514,
+            "friends_count": 1264,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1976,
+            "favorite_count": 19360,
+            "reply_count": 1266,
+            "quote_count": 78
+          }
+        },
+        "user": {
+          "id": "1016059981907386368",
+          "name": "Tesla Owners Silicon Valley",
+          "screen_name": "teslaownersSV",
+          "description": "The most notorious Tesla Club in the world. Creator of @thextakeover and taking the Takeover global. We amplify sustainability and philanthropy.",
+          "followers_count": 1374757,
+          "friends_count": 819,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 390,
+          "favorite_count": 2012,
+          "reply_count": 145,
+          "quote_count": 11
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231668514,
+        "friends_count": 1264,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 390,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009327303365677174",
+      "text": "RT @EvaFox: Elon Musk @elonmusk, who co-founded and invested in an open source, non-profit OpenAI ~$50 million: I AM THE REASON OpenAI EXIS…",
+      "created_at": "Thu Jan 08 18:12:15 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2009270114546503981",
+        "text": "Elon Musk @elonmusk, who co-founded and invested in an open source, non-profit OpenAI ~$50 million: I AM THE REASON OpenAI EXISTS\n\n“I am the reason OpenAI exists... \n\nI used to be a close friend with Larry Page, and I was staying at his house, and we'd have these conversations long into the evening about AI, and I would be constantly urging him to be careful about the danger of AI. And he was really not concerned about the danger of AI and was quite cavalier about it. And at the time, Google, especially after the acquisition of DeepMind, had three-quarters of the world's AI talent; they had a lot of computers, a lot of money, so it was a unipolar world for AI. And we got a unipolar world, but the person who controls that does not, or at least did not seem to be concerned about AI safety. That sounded like a real problem.\n\nThe final straw was Larry calling me a speciest for being a pro-human consciousness instead of machine consciousness, and I like, 'Well, yes, I guess I am a speciest.'\n\nI came up with the name [OpenAI], which refers to open source. The intent was to what is the opposite of Google, would be an open source non-profit, because Google is closed source profit, and that profit motivation could be dangerous...\n\nIt does seem weird that something can be a nonprofit, open source, and somehow transform itself into a for-profit, closed source. I mean, this would be like, let's say you founded the organization to save the Amazon rainforest, but instead, they became a lumber company and chopped down the forest and sold it for money. And you'd be, therefore, like, 'Wait a second, that's the exact opposite of what I gave the money for. Is that legal?' That doesn't seem legal. And if, in general,  it is legal to start a company as a non-profit and then take the IP and transfer it to a for-profit that then makes tons of money, shouldn't everyone start? Shouldn't that be the default?\n\nAnd I also think it is important to understand, like when push comes to shove, let's say they do create some digital super intelligence, almost Godlike intelligence, well, who is in control, and what is exactly the relationship between OpenAI and Microsoft? And I do worry that Microsoft actually may be more in control than the leadership team at OpenAI realizes. I mean, Microsoft, as part of Microsoft Investment, has rights to all of the software, all of the model weights, and everything necessary to run the inference system. At any point, Microsoft could cut off OpenAI.”",
+        "created_at": "Thu Jan 08 14:25:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2009266401115086848",
+            "url": "https://video.twimg.com/amplify_video/2009266401115086848/vid/avc1/640x360/GAi0erLHhTtuBVqI.mp4?tag=21",
+            "bitrate": 832000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "959471389282578432",
+          "name": "Eva Fo𝕏 🦊 Claudius Nero's Legion",
+          "screen_name": "EvaFox",
+          "description": "Blogger covering SpaceX, Tesla, environment & space exploration 🖖🏼 ◉ My blog @onlyVerumNews ◉ Occasionally post memes",
+          "followers_count": 342901,
+          "friends_count": 1271,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 243,
+          "favorite_count": 1321,
+          "reply_count": 114,
+          "quote_count": 4
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231668514,
+        "friends_count": 1264,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 243,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009326748513808867",
+      "text": "RT @teslaownersSV: Engineering is magic \n\nStarship is the first ever rocket designed to take us to Mars. https://t.co/SZ8GG6g9xK",
+      "created_at": "Thu Jan 08 18:10:02 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2009325270935785473",
+          "url": "https://pbs.twimg.com/media/G-KOsCRX0AEvkD1.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2009325275260309913",
+        "text": "Engineering is magic \n\nStarship is the first ever rocket designed to take us to Mars. https://t.co/SZ8GG6g9xK",
+        "created_at": "Thu Jan 08 18:04:11 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2009325270935785473",
+            "url": "https://pbs.twimg.com/media/G-KOsCRX0AEvkD1.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1016059981907386368",
+          "name": "Tesla Owners Silicon Valley",
+          "screen_name": "teslaownersSV",
+          "description": "The most notorious Tesla Club in the world. Creator of @thextakeover and taking the Takeover global. We amplify sustainability and philanthropy.",
+          "followers_count": 1374757,
+          "friends_count": 819,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 286,
+          "favorite_count": 2249,
+          "reply_count": 279,
+          "quote_count": 20
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231668514,
+        "friends_count": 1264,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 286,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2009324760594084282",
       "text": "RT @cb_doge: 🚨DOGE BREAKING: DOGE has updated its website, estimated savings are now $215 billion. https://t.co/6MxdxFF920",

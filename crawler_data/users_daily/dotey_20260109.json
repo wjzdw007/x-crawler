@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 165904,
+    "followers_count": 165933,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260109",
-  "last_updated": "2026-01-09T02:41:44.447293",
-  "tweet_count": 1,
+  "last_updated": "2026-01-09T04:19:30.966815",
+  "tweet_count": 9,
   "tweets": [
     {
       "id": "2009453880698933589",
@@ -47,6 +47,398 @@
         "retweet_count": 0,
         "favorite_count": 3,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009458172915056800",
+      "text": "https://t.co/E6c83xYUyJ",
+      "created_at": "Fri Jan 09 02:52:17 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2009392387399745601",
+        "text": "你要问为什么 OpenAI 用 Rust 重写，我只能说大厂有一群人热衷于用 Rust 重写凸显自身价值而不是产品需要。说到这就必须要推荐看一篇文章：《Why Engineers Can't Be Rational About Programming Languages》https://t.co/QGrVXaNeNH\n\n核心主题是：\n“你以为程序员讨论编程语言是在比较技术？不是。他们其实在保护自己的身份。”\n\n作者 Steve Francia 是 Go 语言的产品负责人，Hugo、Cobra 的作者，在 Google、MongoDB、Docker 都当过高管。\n\nSteve Francia 在 Google 工作时，一位 VP 向高层展示为什么下一个系统必须用 Rust 开发。理由之一是 Rust 易于构建和部署。\n\n这话没错。但 Steve 认为 Go 在这方面更强——几乎秒级的交叉编译，单个静态二进制文件，而 Rust 的编译时间长得出名。如果真的是在做技术对比，怎么会漏掉这个？\n\nSteve 会后把这位 VP 拉到一边：\"你们是怎么评估其他语言候选的？\"\n\n对方愣了一下：\"我们……其实没怎么看其他的。大家都在聊 Rust。\"\n\n一个 5000 万美元的决策，靠的是大家都在聊。\n\n二十年前，Steve 经历过一模一样的事。他在一家叫 Takkle 的创业公司，一位新来的 CTO 宣布要把整个系统从 PHP 换成 Perl。理由？PHP 是\"错误的选择\"。\n\n结果：团队要重新学语言、从零开始重建系统，产品延迟了九个月。月烧钱率从 20 万美元飙升到 50 万美元，runway 直接砍半。等系统终于上线，Facebook 已经从校园扩展到了全世界。市场机会没了，钱也烧完了。\n\n有意思的是，Facebook 用的就是 PHP。\n\n两个案例，相隔二十年，模式惊人地相似：决策者从来没有认真评估过其他选项。\n\n每场技术讨论，其实有两个对话在同时进行\n\n第一个是你以为在进行的对话——可见对话。\n\n“Rust 有内存安全还不用垃圾回收。”\n“Go 编译快、部署简单。”\n“Python 的机器学习生态最丰富。”\n\n这些都是技术层面的讨论。可量化，可辩论，看起来很理性。\n\n但还有第二个对话——隐形对话。\n\n“我是 Rust 程序员。”\n“我想成为 Rust 程序员。”\n“我无法想象一个不选择 Rust 的自己。”\n\n这个对话不会说出口。很多时候，当事人自己都没意识到它在运行。\n\nSteve 那位 CTO 的 Perl 分析，每一条技术论点在字面上都是对的。但那份分析感觉像走过场，因为它只是在给一个早就做好的决定找理由。\n\n那位 CTO 花了十年时间成为 Perl 社区的知名人物，他不是在评估语言，他是在保护一个定义了自己是谁的身份。\n\n公司为这个身份付出的代价是每月多烧 30 万美元。\n\n所以你回头看 Codex CLI 用 Rust 重写，真的是因为 Rust 更好吗？🤪",
+        "created_at": "Thu Jan 08 22:30:52 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2009392379912978432",
+            "url": "https://pbs.twimg.com/media/G-LLuSsXAAAXRZ_.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 165933,
+          "friends_count": 1521,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 14,
+          "favorite_count": 103,
+          "reply_count": 31,
+          "quote_count": 5
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009458222814638115",
+      "text": "https://t.co/2LojrnVeEw",
+      "created_at": "Fri Jan 09 02:52:28 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2009453880698933589",
+        "text": "我也是 Codex 长期用户，其实我对 Codex 的吐槽也有点来自一个忠实用户的“怒其不争”。\n\n首先 Codex 模型能力我一直是很认可的，很多编程任务比 Claude 4.5 Opus 还要强。\n\n然后 Codex cli 和 Claude Code 的一个主要理念上的差异在于 Codex 希望模型接管一切，可定制化的相对较少，所以像 skills、plugins 这样的都是 Claude Code 先提出来的，甚至于 subagent 也不支持，而这也局限于 codex 只能用于编程，其他方面并不是很好用。\n\n因为模型接管一切反而不好定制，但是现实中的很多需求是需要自己定制工作流的。\n\nClaude Code 可以在编程之外做很多事情，正在往“通用 Agent”的方向走，比如我现在写作很多辅助工作都是基于 Claude Code + Skill，连配图都是它帮我自动生成的，而 codex 模型的强项在编程，编程之外这些事 Codex 上就比较难做 。\n\n你可以看到 Claude Code 在编程之外的很多应用，但是你看到 Codex 有么？！",
+        "created_at": "Fri Jan 09 02:35:13 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 165933,
+          "friends_count": 1521,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 36,
+          "reply_count": 29,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009460579862491467",
+      "text": "Claude Code 刚发布了简化代码的 Agent code-simplifier，安装方法：\n1. 打开 Claude Code\n2. 输入 /plugin marketplace update claude-plugins-official\n3. 输入 /plugin install code-simplifier\n\n提示词地址：https://t.co/73DD92ILYG https://t.co/Dgk5MtzOny",
+      "created_at": "Fri Jan 09 03:01:50 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2009460415315542016",
+          "url": "https://pbs.twimg.com/media/G-MJmeUXgAAllMb.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2009450715081789767",
+        "text": "We just open sourced the code-simplifier agent we use on the Claude Code team.\n\nTry it: claude plugin install code-simplifier\n\nOr from within a session:\n  /plugin marketplace update claude-plugins-official\n  /plugin install code-simplifier\n\nAsk Claude to use the code simplifier agent at the end of a long coding session, or to clean up complex PRs. Let us know what you think!",
+        "created_at": "Fri Jan 09 02:22:38 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2009450340782100481",
+            "url": "https://pbs.twimg.com/media/G-MAcDwa0AEk3gx.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "159337660",
+          "name": "Boris Cherny",
+          "screen_name": "bcherny",
+          "description": "Claude Code @anthropicai",
+          "followers_count": 142352,
+          "friends_count": 126,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 165,
+          "favorite_count": 2448,
+          "reply_count": 98,
+          "quote_count": 39
+        }
+      },
+      "stats": {
+        "retweet_count": 12,
+        "favorite_count": 44,
+        "reply_count": 9,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2009464037948707286",
+      "text": "写一个生成图片的 Skill 比你想的简单，而且很实用，最重要的是你要有一个能生成图片的脚本（可以让 AI 写），以及一个能连通 nano banana pro 的 API Key，然后在 Skill 里面，说明清楚该如何调用脚本就可以。\n\n最妙的是你可以在其他skill里面调用它\n\n例子参考：https://t.co/hNk4mK2JJQ https://t.co/9ZwswrsBh2",
+      "created_at": "Fri Jan 09 03:15:35 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2009463251445133312",
+          "url": "https://pbs.twimg.com/media/G-MMLjuWsAAqYEX.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2009458780216639636",
+        "text": "@dotey 大佬说的脚本是指Skills吗？动态传Prompt能不能展开说一下？",
+        "created_at": "Fri Jan 09 02:54:41 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1482630283664904193",
+          "name": "Aaron Chu",
+          "screen_name": "Garen08275468",
+          "description": "",
+          "followers_count": 270,
+          "friends_count": 516,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 19,
+        "reply_count": 7,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009466308946284770",
+      "text": "也有办法用 Gemini，但是有风险而且同步 cookie 很麻烦：https://t.co/ASFZdlLF3t\n\nhttps://t.co/36PokQDHNS",
+      "created_at": "Fri Jan 09 03:24:36 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2009465666466955349",
+        "text": "@dotey 我的困惑就是，API出图，比网页简陋很多，怎么搞都简陋。\n\n所以目前还是最笨流程，gemini  出图，下载大图，去logo，慢啊",
+        "created_at": "Fri Jan 09 03:22:03 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "12306542",
+          "name": "fangjun",
+          "screen_name": "fjun99",
+          "description": "I tweet about blockchain/web3 development, tools and best practices. @developer_dao @Uweb_web3",
+          "followers_count": 4656,
+          "friends_count": 2296,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 3,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009467711555006734",
+      "text": "RT @servasyy_ai: 帖子发完后，一看私信爆了🔥\n都想要这套自动学习了3000个提示词的提示词skills\n\n确实花了不少时间做的，不是普通简单的skill，而是一套skills集合，本不打算开源，准备自用的\n\n大号被封1个月，新号也终于快9K了\n为了答谢大家的帮助…",
+      "created_at": "Fri Jan 09 03:30:11 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2009428713377779945",
+        "text": "帖子发完后，一看私信爆了🔥\n都想要这套自动学习了3000个提示词的提示词skills\n\n确实花了不少时间做的，不是普通简单的skill，而是一套skills集合，本不打算开源，准备自用的\n\n大号被封1个月，新号也终于快9K了\n为了答谢大家的帮助我就给大家献礼了\n\n这个提示词skills主要可以：\n自动学习，分解结构，保存数据库和模版，分析对比，自动组合，还原效果很高\n\n过程中非常感谢两位提示词大神@94vanAI @berryxia \n主要吸取了他们对于人像捏脸和提示词结构+美感结合\n没关注的朋友可以关注一下他们，他们是我心中最强王者\n\n当然希望没关注的我的朋友，可以点赞，关注，收藏不要错过，创作不易，多谢各位支持！\nhttps://t.co/qRy4CZtPiP",
+        "created_at": "Fri Jan 09 00:55:13 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2009428364864704512",
+            "url": "https://pbs.twimg.com/media/G-Lsc5Fa0AAu4OM.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2009428569567739904",
+            "url": "https://pbs.twimg.com/media/G-LsozqbQAAb6Vt.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2008702442243060193",
+          "text": "自动学习了3000多个提示词精华，\n一句话描述产出成果还行\n\n最后调用z-image出图\n\n这套skill组合的开发就告一段落了 https://t.co/yL3b8AF1dW",
+          "created_at": "Wed Jan 07 00:49:16 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2008701979670069248",
+              "url": "https://pbs.twimg.com/media/G-BXztXbwAAngLP.jpg"
+            },
+            {
+              "type": "photo",
+              "id": "2008702016672198656",
+              "url": "https://pbs.twimg.com/media/G-BX13NbcAARlhH.jpg"
+            },
+            {
+              "type": "photo",
+              "id": "2008702050444734466",
+              "url": "https://pbs.twimg.com/media/G-BX31BbcAInMqc.jpg"
+            },
+            {
+              "type": "photo",
+              "id": "2008702114747617280",
+              "url": "https://pbs.twimg.com/media/G-BX7kkbkAACrGl.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1998968758422179840",
+            "name": "huangserva",
+            "screen_name": "servasyy_ai",
+            "description": "古早程序员 | AI出海 | 自由职业\n机车游侠&机速购&骑享租创始人\n15年前 freelance 起步 → 连续创业者 → 亏过1个亿，逆风翻盘中\n分享创业，AI，读书，生活，健身",
+            "followers_count": 8837,
+            "friends_count": 261,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 73,
+            "favorite_count": 552,
+            "reply_count": 49,
+            "quote_count": 3
+          }
+        },
+        "user": {
+          "id": "1998968758422179840",
+          "name": "huangserva",
+          "screen_name": "servasyy_ai",
+          "description": "古早程序员 | AI出海 | 自由职业\n机车游侠&机速购&骑享租创始人\n15年前 freelance 起步 → 连续创业者 → 亏过1个亿，逆风翻盘中\n分享创业，AI，读书，生活，健身",
+          "followers_count": 8837,
+          "friends_count": 261,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 18,
+          "favorite_count": 98,
+          "reply_count": 37,
+          "quote_count": 12
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 18,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009474762070691904",
+      "text": "我觉得你是没发挥 claude code 的潜力，所有能用 dify 这类工作流完成的 AI 任务，几乎都可以用 skills + subagent 完成，除了一些特别要求在云端完成你又没有 API 的。\n\nskill 你不能只当作单一技能，还要把它们组合起来用，先把工作流中需要的能力都拆分成单一的 skill 或者 subagent，然后由一到多个 skills 把这些 skill 用自然语言编排起来，换句话说就是用自然语言去描述你的工作流。\n\n所有的中间结果都保存成本地文件，多用 subagent 去分摊上下文，subagent 只传入文件路径返回文件路径。\n\n其他的都交给 Claude",
+      "created_at": "Fri Jan 09 03:58:12 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2009472836092743972",
+        "text": "@dotey 通用agent这个说法棒极了，我的cc已经取代了一多半 @dify_ai 的任务了，尽管Dify依然是超复杂任务的不二之选，但cc可以使用claude subscription的额度，一些简单任务完全可以做到平替",
+        "created_at": "Fri Jan 09 03:50:32 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "913269761735254017",
+          "name": "pippingg",
+          "screen_name": "Suyanzhenq",
+          "description": "From deep occran",
+          "followers_count": 4830,
+          "friends_count": 1368,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 7,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009476652389032064",
+      "text": "重构屎山代码别指望 coding agent 一夜之间帮你做了，需要借助传统软件工程。\n\n通常有两种做法：\n1. 另起炉灶，从头搭建一套新系统，老系统先保障运行，最后一次性迁移\n2. 局部替换，一个模块一个模块替换\n\n各有优缺点\n\n但有个共同点，就是你想做好，第一件事是完善好自动化测试，只有先保证你能自动化验证所有功能，才能保障重构后不会到处崩溃。\n\n用好 Coding Agent 的关键也在于让它可以自动验证结果好坏。",
+      "created_at": "Fri Jan 09 04:05:42 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2009475210253357212",
+        "text": "@dotey 应该还是很难重构系统多年沉淀下来的屎山吧",
+        "created_at": "Fri Jan 09 03:59:59 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1924386890435964928",
+          "name": "YouZhi.Mu",
+          "screen_name": "YouZhi_Mu",
+          "description": "Nothing.",
+          "followers_count": 2,
+          "friends_count": 65,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 1,
         "quote_count": 0
       }
     }

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 166145,
+    "followers_count": 166156,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260109",
-  "last_updated": "2026-01-09T22:05:29.828753",
-  "tweet_count": 21,
+  "last_updated": "2026-01-10T00:17:32.664996",
+  "tweet_count": 24,
   "tweets": [
     {
       "id": "2009453880698933589",
@@ -866,6 +866,135 @@
         "favorite_count": 28,
         "reply_count": 8,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2009748576444768421",
+      "text": "还没到，skill 要用好：\n1. 你要知道怎么设计 skill\n2. 在 Skill 中你绕不开需要脚本/工具来让 Agent 调用\n\n你要是不会编程不懂一点软件工程，你做不好 1，你不会编程做不好 2\nhttps://t.co/oieG6Rb4wv",
+      "created_at": "Fri Jan 09 22:06:14 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2009742998679204006",
+        "text": "@dotey 啊哈，我们终于到了自然语言编程的时候了",
+        "created_at": "Fri Jan 09 21:44:04 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "23062740",
+          "name": "𝙩𝙮≃𝙛{𝕩}^A𝕀²·ℙarad𝕚g𝕞",
+          "screen_name": "TaNGSoFT",
+          "description": "ai4x交互范式- EEOIP｜vibe pretraining of 𝕀²·ℙarad𝕚g𝕞｜研究Cognitive AI; 关注Evolutionary AI｜ Paradigm^Vibe 𝕚sᵃˡˡ ᵁ ᴺᵉᵉᵈ^智能平方范式智库^特大号范式｜再AI十年之三：a vibe builder...",
+          "followers_count": 15726,
+          "friends_count": 3729,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 1,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2009752227091542296",
+      "text": "其实蛮多需要长时间运行的场景的，这个和哪个 Agent 没关系，codex 也一样需要，列几个我用到的：\n1. 迁移代码从一种语言到另一种语言，且测试集完整\n2. 逆向代码\n3. 测试集合完整的情况下，逐个模块的重构代码",
+      "created_at": "Fri Jan 09 22:20:44 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2009510133991395358",
+        "text": "我赞同。codex能力强，工作稳，理解强。我甚至找不到场合用Ralph loop。实在搞不懂cc用户怎么搞那么复杂。。。打算找个弱一些的模型比如glm什么的试试Ralph loop。强如codex我人肉也很难让它迭代两次还不对。如果真的不对只能是我任务定义错了。。。",
+        "created_at": "Fri Jan 09 06:18:45 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "49913",
+          "name": "virushuo",
+          "screen_name": "virushuo",
+          "description": "Back to the 2006.  Screeching voices of the minority.\n\nAuthor «Illustrated History of Programming»",
+          "followers_count": 61523,
+          "friends_count": 2762,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 56,
+          "reply_count": 13,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2009758885398380943",
+      "text": "“你们应该多用 Bash。”\n\n过去几周，Anthropic 的 Thariq 和几十家做通用智能体的公司开了电话会议。邮件助手、客服机器人、日程管理——各种产品形态都有。聊完一圈，他发现自己反复在说同一句话。\n\nBash？那不是程序员用的命令行工具吗，和这些产品有什么关系？\n\n先看一个具体场景。\n\n假设你有一个邮件 Agent，你问它：“这周我在打车上花了多少钱？”\n\n传统做法是这样的：Agent 调用 API 拉取邮件，可能一次性取回 100 封，然后让模型从里面找 Uber、Lyft 的收据，加总金额。\n\n问题在于 100 封邮件塞进上下文，模型要同时记住这些内容，从中筛选、计算。这对大语言模型来说并不轻松。容易漏，容易错，而且你没法验证它到底看了哪些邮件。\n\n这就是典型的模型舒适区问题：数据量不算大到需要专门写程序处理，但又超出了模型一次性硬算的能力范围。夹在中间，很尴尬。\n\nThariq 的方案是：给 Agent 一个 Bash 工具，让它把中间结果存成文件。\n\n听起来很简单，但背后的逻辑很有意思。\n\n传统的工具调用是这样的流程：\n\n工具 → 模型处理 → 输出结果\n\n所有中间状态都在模型的“脑子”里，你看不见，也没法检查。\n\n换成 Bash 之后，流程变了：\n\n工具 → 存文件 → 搜索/过滤 → 模型处理 → 输出结果\n\n模型可以先把 100 封邮件存到一个文件里，然后用 grep 搜“Uber”，再 grep“Lyft”，分别统计。每一步都有迹可查，最后加总的时候，它还能回头检查自己的中间结果。\n\n这带来三个能力升级：\n\n可复现。同样的命令再跑一遍，结果一样。你可以调试，可以排查问题。\n\n可验证。模型不是凭“记忆”给你答案，而是基于实际文件里的数据。你信不过的话，自己也能打开文件看一眼。\n\n可组合。一个命令的输出可以作为下一个命令的输入，管道一接，复杂任务就能拆成简单步骤。\n\nBash 让 Agent 从“脑算”变成了“打草稿”。草稿可以留痕，可以检查，可以改。这对需要准确性的任务来说太重要了。\n\n邮件搜索只是最直观的例子。Bash 的能力边界其实很宽。\n\n链式 API 调用是个常见需求。比如“把这周我发过邮件的联系人都找出来”，这需要先拉邮件列表，提取收件人，去重，再逐个查询联系人详情。一连串操作用 Tool calls 来做，调用次数多，中间状态难管理。用 Bash 脚本串起来，逻辑清晰得多。\n\n视频和文件处理也是 Bash 的强项。ffmpeg 这个命令行工具，模型用起来得心应手。找视频里某个片段、裁剪、转码，一行命令搞定。\n\n还有定时任务。在 Agent 运行的容器里，用 cronjob 或 at 命令就能创建定时执行的任务。用户说“每天早上 8 点给我发一份新闻摘要”，Agent 可以自己设好闹钟。\n\n这些场景有个共同点：都需要多步骤操作，都需要保存中间状态，都超出了单次工具调用的能力范围。\n\n但 Bash 是把双刃剑。\n\n能执行命令意味着能做很多事，也意味着能做很多危险的事。rm -rf 一不小心就能删光整个目录。如果 Agent 被恶意提示词攻击，后果可能很严重。\n\nAnthropic 显然考虑到了这一点。他们在 Claude Agent SDK 里做了一套权限系统，包括 Bash 命令解析器和分级权限控制。哪些命令可以直接执行，哪些需要用户确认，哪些完全禁止，都可以配置。\n\n我用 Claude Code 的体会是，这套权限系统确实降低了心理负担。它会在执行敏感操作前询问你，而不是闷头就干。但安全护栏不是万能药。权限系统本身也可能有漏洞，Bash 解析器也可能被绕过。\n\n安全护栏是必需品，但不能因此就觉得万事大吉。\n\n强调 Bash 的好处，也得说清楚它的边界。\n\n如果任务足够简单，别用。“今天天气怎么样”这种一次性查询，直接调 API 返回结果就行，没必要存文件再处理。杀鸡用牛刀反而更慢。\n\n如果环境是 Serverless 的，用不了。很多云函数运行时没有可持久化的文件系统，Bash 的“存中间结果”优势就没了。\n\n如果对安全要求极高，谨慎使用。命令注入的风险无法百分之百消除，金融、医疗这类场景可能更适合用白名单式的专用工具，而非通用的 Bash。\n\n工具的选择取决于场景，而不是工具本身的强弱。Bash 很强，但不是所有场合都该用。\n\n回过头看，Thariq 这条建议的真正价值不是“Bash 很强”这个结论，而是背后的思维方式：\n\n让 Agent 的思考过程“落地”到可检查的中间产物。\n\n传统的 Agent 设计把所有东西都塞进模型的上下文，一锤子买卖。Bash 提供了另一种路径：把复杂任务拆开，每一步都留下痕迹，可以验证，可以回溯。\n\n想想看，这和人类处理复杂问题的方式多像。我们做复杂计算时会列竖式，写长文章时会先拟提纲，处理大量信息时会做笔记。不是因为脑子记不住，而是因为落到纸上更可靠、更容易检查。\n\nAgent 也一样。不是说模型处理不了，而是有中间产物的流程更值得信任。我自己用 Agent 辅助写作，所有中间产物都会存成文件：网络检索资料、提纲、不同版本的草稿、画图的提示词。这些存下来后续就可以灵活组合。\n\nBash 不只是程序员的工具，更是让 Agent 具备可验证、可复现、可审计能力的关键一环。",
+      "created_at": "Fri Jan 09 22:47:12 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2009758758277193728",
+          "url": "https://pbs.twimg.com/media/G-QY8UdXoAAXXS6.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "1982869394482139206",
+        "text": "Why even non-coding agents need bash  \n\nI've done dozens of calls with companies making general agents over the past few weeks and my advice generally boils down to: \"use the bash tool more\"   \n\nHere's a concrete example from my email agent:",
+        "created_at": "Mon Oct 27 17:57:58 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1982868260161724416",
+            "url": "https://pbs.twimg.com/media/G4SQLUtWIAApKIm.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "352806502",
+          "name": "Thariq",
+          "screen_name": "trq212",
+          "description": "Claude Code @anthropicai.   prev YC W20, mit media lab. \n\ntowards machines of loving grace",
+          "followers_count": 43252,
+          "friends_count": 1546,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 65,
+          "favorite_count": 868,
+          "reply_count": 54,
+          "quote_count": 27
+        }
+      },
+      "stats": {
+        "retweet_count": 13,
+        "favorite_count": 53,
+        "reply_count": 5,
+        "quote_count": 1
       }
     }
   ]

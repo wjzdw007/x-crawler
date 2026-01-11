@@ -1,12 +1,632 @@
 {
   "date": "20260111",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-01-11T04:23:51.427945",
-  "tweet_count": 208,
-  "unique_tweet_count": 208,
-  "total_crawled": 405,
-  "duplicates_removed": 197,
+  "last_crawl_time": "2026-01-11T06:07:11.096686",
+  "tweet_count": 219,
+  "unique_tweet_count": 219,
+  "total_crawled": 408,
+  "duplicates_removed": 189,
   "tweets": [
+    {
+      "id": "2010225131440972280",
+      "text": "RT @libukai: 看了宝玉老师的文章，很多都和我的体验相吻合。干脆借这个机会，点个炮点评一下最近中文区刷屏的一些所谓的 Skill：\n\n如果你的 Skill 中只有一个 https://t.co/8vbnWVh2o9，那这玩意和写个 Promt/Command  有啥区…",
+      "created_at": "Sun Jan 11 05:39:54 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2010222718466318627",
+        "text": "看了宝玉老师的文章，很多都和我的体验相吻合。干脆借这个机会，点个炮点评一下最近中文区刷屏的一些所谓的 Skill：\n\n如果你的 Skill 中只有一个 https://t.co/3xhJhqVILk，那这玩意和写个 Promt/Command  有啥区别？不用 Reference 是“渐进式披露”这五个字看不懂吗？不用 Scripts 是觉得每次都让 AI 临时代码稳定性更强吗？\n\n之前我已经反复强调过很多次了，Skill 的确是一个把个体经验转化为 AI 技能的低门槛方案。但是，低门槛不代表没有门槛啊！就算是可以用官方的 skill-creator skill 套娃式让 AI 写 skill，但写完了总得自己 Review 一下看看是不是靠谱吧。\n\n更何况，从我自己的实践来看，官方的 skill-creator skill 也不是那么靠谱，光 https://t.co/3xhJhqVILk 不要超过 500 行，以及不要在里面塞示例和代码这些基本规范，它就经常遵循的不太好。\n\n所以，我的解决方案是自己在官方的基础上，构建了一个增强版的 agent-skill-helper skill，从命名到架构，从SOP到代码，都有对应的 SOP 通过提示词和脚本调用来负责。\n\n而对于最终生成的 Skill，我也是一定会进行人工审核和反复测试的，甚至这个测试的过程比写代码还要频繁和严谨。\n\n至于持续进化，那更是 Skill 使用中的日常，这里还有一个小技巧：多在 Reference 中放点示例，并在 https://t.co/3xhJhqVILk 中要求多加参考，最终出来的结果稳定性会好很多很多。\n\n最后，说个不怕得罪人的话：万变不离其宗，重要的是认知能力，如果你写不好 workflow，大概率你也写不好 skill。",
+        "created_at": "Sun Jan 11 05:30:18 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2010222019451990017",
+            "url": "https://pbs.twimg.com/media/G-W-Rq0asAE88Jp.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2010222074070274048",
+            "url": "https://pbs.twimg.com/media/G-W-U2SbkAAoGGw.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2010222129053405184",
+            "url": "https://pbs.twimg.com/media/G-W-YDHbkAAJ2Bp.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2010176124450484638",
+          "text": "https://t.co/h79AGSMOtM",
+          "created_at": "Sun Jan 11 02:25:09 +0000 2026",
+          "lang": "zxx",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 166543,
+            "friends_count": 1526,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 12,
+            "favorite_count": 97,
+            "reply_count": 19,
+            "quote_count": 11
+          }
+        },
+        "user": {
+          "id": "17703982",
+          "name": "李不凯正在研究",
+          "screen_name": "libukai",
+          "description": "以 Claude Code 为基，使用 Cherry Studio + n8n + AICanHelp 构建 101 个 AI 员工｜持续更新 awesome-agent-skills 汇总最优最全的 Agent Skills 资料库｜ 已订阅 X Premium+ & 关注我可提升流量权重",
+          "followers_count": 2066,
+          "friends_count": 1383,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 7,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 166543,
+        "friends_count": 1526,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2010218073228489150",
+      "text": "RT @elicalebon: A message for @elonmusk on behalf of the people of Iran https://t.co/78sBink5to",
+      "created_at": "Sun Jan 11 05:11:51 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2010053929581854720",
+          "url": "https://video.twimg.com/amplify_video/2010053929581854720/vid/avc1/1080x1920/m7k6IxapT_JAqVse.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": {
+        "id": "2010054157059961297",
+        "text": "A message for @elonmusk on behalf of the people of Iran https://t.co/78sBink5to",
+        "created_at": "Sat Jan 10 18:20:30 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2010053929581854720",
+            "url": "https://video.twimg.com/amplify_video/2010053929581854720/vid/avc1/1080x1920/m7k6IxapT_JAqVse.mp4?tag=21",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "874629444224376833",
+          "name": "Elica Le Bon الیکا‌ ل بن",
+          "screen_name": "elicalebon",
+          "description": "Daughter of Iran; attorney, speaker, author-to-be.",
+          "followers_count": 181134,
+          "friends_count": 242,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 10137,
+          "favorite_count": 40761,
+          "reply_count": 1341,
+          "quote_count": 441
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231866012,
+        "friends_count": 1267,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 10137,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2010217858715005206",
+      "text": "https://t.co/NANxui0hSc",
+      "created_at": "Sun Jan 11 05:11:00 +0000 2026",
+      "lang": "zxx",
+      "media": [
+        {
+          "type": "video",
+          "id": "2009990199934152704",
+          "url": "https://video.twimg.com/amplify_video/2009990199934152704/vid/avc1/576x856/g5Nd5vylUcsqLNgO.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231866012,
+        "friends_count": 1267,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 416,
+        "favorite_count": 3263,
+        "reply_count": 989,
+        "quote_count": 44
+      }
+    },
+    {
+      "id": "2010217398562107902",
+      "text": "Terrible",
+      "created_at": "Sun Jan 11 05:09:10 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2010165444477382799",
+        "text": "It was on January 10, 2018, when Valaree Schwab left school to have lunch. While she was out, the 16-year-old was attacked by a group of \"school bullies\" who beat and kicked her to the ground and stole her keys. \n\nWhen she followed them to another fast food place to retrieve her belongings, Z'inah Brown, Carl Booker, and Dominique Slack stabbed Valaree in the chest, puncturing her heart and lungs. \n\nValaree spent her last conscious moments \"gasping for air, clutching the hand of a young cashier.\"\n\nCarl Booker and Dominique Slack were both sentenced to \"shock probation.\" This involved six months of incarceration in Westchester County Jail followed by five years of probation. \nSo those 2 are out and ready to kill again.\n\nZina Brown received 17 years in prison. She's eligible for release after the 17 years minus any good time credits.",
+        "created_at": "Sun Jan 11 01:42:43 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2010165429701091328",
+            "url": "https://pbs.twimg.com/media/G-WKztkaoAAEXqt.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1537225604554031104",
+          "name": "Dane",
+          "screen_name": "UltraDane",
+          "description": "Keep Your Heels, Head, & Standards High\nFashion Work. Patriot. Widow. Dog Lover\nHair Aficionado. No DMs Ever. None. 00\nMy Sister's Acct @jesuisdanois\nNo Lists",
+          "followers_count": 311529,
+          "friends_count": 1032,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1345,
+          "favorite_count": 5096,
+          "reply_count": 556,
+          "quote_count": 77
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231866012,
+        "friends_count": 1267,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1237,
+        "favorite_count": 9102,
+        "reply_count": 837,
+        "quote_count": 36
+      }
+    },
+    {
+      "id": "2010216946143506561",
+      "text": "RT @VOLDEMORT2X: Birds write songs on the soul.\n\nMade by 🅶🆁🅾🅺\n\n@grok Imagine 💫 https://t.co/RVFqfnSXr1",
+      "created_at": "Sun Jan 11 05:07:22 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2010061255516512256",
+          "url": "https://video.twimg.com/amplify_video/2010061255516512256/vid/avc1/576x856/LnOgEfPnDxEcp0Hj.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": {
+        "id": "2010061359661343086",
+        "text": "Birds write songs on the soul.\n\nMade by 🅶🆁🅾🅺\n\n@grok Imagine 💫 https://t.co/RVFqfnSXr1",
+        "created_at": "Sat Jan 10 18:49:07 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2010061255516512256",
+            "url": "https://video.twimg.com/amplify_video/2010061255516512256/vid/avc1/576x856/LnOgEfPnDxEcp0Hj.mp4?tag=23",
+            "bitrate": 5184000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1721704151615197184",
+          "name": "SPACELESS",
+          "screen_name": "VOLDEMORT2X",
+          "description": "Grok Imagine 💫",
+          "followers_count": 1929,
+          "friends_count": 480,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 78,
+          "favorite_count": 628,
+          "reply_count": 102,
+          "quote_count": 12
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231866012,
+        "friends_count": 1267,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 78,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2010216423021560020",
+      "text": "RT @dvorahfr: If there are aliens somewhere, I hope they're classy! A little gothic and a little rococo could be nice.❣️\n\nGrok Imagine http…",
+      "created_at": "Sun Jan 11 05:05:17 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2010146448089002393",
+        "text": "If there are aliens somewhere, I hope they're classy! A little gothic and a little rococo could be nice.❣️\n\nGrok Imagine https://t.co/CMbZefHhqk",
+        "created_at": "Sun Jan 11 00:27:14 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2010146386793132032",
+            "url": "https://video.twimg.com/ext_tw_video/2010146386793132032/pu/vid/avc1/720x1066/DV8ZtHcVU8wTekEt.mp4?tag=19",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2178040394",
+          "name": "Déborah",
+          "screen_name": "dvorahfr",
+          "description": "Exhibition of my AI Illustrations and videos  by Grok Imagine, Midjourney , Kling AI, Minimax, Luma, Higgsfield and Art of all kinds!\n Follow me for Art",
+          "followers_count": 109038,
+          "friends_count": 3401,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 102,
+          "favorite_count": 837,
+          "reply_count": 104,
+          "quote_count": 11
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231866012,
+        "friends_count": 1267,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 102,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2010216315009810676",
+      "text": "https://t.co/qIZY5wyeZx",
+      "created_at": "Sun Jan 11 05:04:52 +0000 2026",
+      "lang": "zxx",
+      "media": [
+        {
+          "type": "video",
+          "id": "2010034442371248128",
+          "url": "https://video.twimg.com/amplify_video/2010034442371248128/vid/avc1/576x856/igYdCW0kCkKUjkGT.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231866012,
+        "friends_count": 1267,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 740,
+        "favorite_count": 6172,
+        "reply_count": 1380,
+        "quote_count": 96
+      }
+    },
+    {
+      "id": "2010215867439820899",
+      "text": "RT @tetsuoai: Update your iOS Grok App to version 1.3.33.💫\n\nImprovements to Chat, Voice and Imagine. https://t.co/u5yMP1c6OK",
+      "created_at": "Sun Jan 11 05:03:05 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2010204406172565504",
+          "url": "https://video.twimg.com/amplify_video/2010204406172565504/vid/avc1/752x416/7PSp1Q9yAITjfyGC.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": {
+        "id": "2010204563484402140",
+        "text": "Update your iOS Grok App to version 1.3.33.💫\n\nImprovements to Chat, Voice and Imagine. https://t.co/u5yMP1c6OK",
+        "created_at": "Sun Jan 11 04:18:10 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2010204406172565504",
+            "url": "https://video.twimg.com/amplify_video/2010204406172565504/vid/avc1/752x416/7PSp1Q9yAITjfyGC.mp4?tag=23",
+            "bitrate": 5184000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1587601034339561472",
+          "name": "tetsuo",
+          "screen_name": "tetsuoai",
+          "description": "writing code since '94 · c, assembly, and whatever runs close to the metal · university cs/math · ai + art with grok",
+          "followers_count": 220787,
+          "friends_count": 881,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 86,
+          "favorite_count": 644,
+          "reply_count": 94,
+          "quote_count": 11
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231866012,
+        "friends_count": 1267,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 86,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2010213695729897771",
+      "text": "https://t.co/op5s4ZiSwh will soon far exceed Wokipedia",
+      "created_at": "Sun Jan 11 04:54:27 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2010213096883994635",
+        "text": "BREAKING: Grokipedia has now reached 86% of English Wikipedia by article count and is growing exponentially.\n\nIt just passed 6.09 million articles today with more than 128,137 approved edits by Grok. https://t.co/X6vj4QtfIO",
+        "created_at": "Sun Jan 11 04:52:04 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2010212945683496960",
+            "url": "https://pbs.twimg.com/media/G-W2BgZbQAADVgq.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1803716,
+          "friends_count": 866,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 74,
+          "favorite_count": 456,
+          "reply_count": 175,
+          "quote_count": 17
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231866012,
+        "friends_count": 1267,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 958,
+        "favorite_count": 8615,
+        "reply_count": 1311,
+        "quote_count": 78
+      }
+    },
+    {
+      "id": "2010210508637659323",
+      "text": "😑",
+      "created_at": "Sun Jan 11 04:41:47 +0000 2026",
+      "lang": "art",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2010192764164813163",
+        "text": "BREAKING: UK, Canada, and Australia are considering a coordinated ban on 𝕏, believing that doing it together will send a powerful message to Elon Musk.\n\n𝕏 is the #1 news app across these countries.\n\nTrying to suppress 𝕏 will not silence the truth. It will amplify it globally. https://t.co/KTNtULkPcZ",
+        "created_at": "Sun Jan 11 03:31:17 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2010192319858044928",
+            "url": "https://video.twimg.com/amplify_video/2010192319858044928/vid/avc1/1080x1080/cj-qHvUy9MxDV74a.mp4?tag=21",
+            "bitrate": 8768000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1803716,
+          "friends_count": 866,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 490,
+          "favorite_count": 2120,
+          "reply_count": 706,
+          "quote_count": 134
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231866012,
+        "friends_count": 1267,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2678,
+        "favorite_count": 18402,
+        "reply_count": 3593,
+        "quote_count": 192
+      }
+    },
+    {
+      "id": "2010209397717582010",
+      "text": "Nice 🇫🇷",
+      "created_at": "Sun Jan 11 04:37:22 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2010166135598301374",
+        "text": "BIG BREAKING: Grok is now the most downloaded app on the entire France App Store across all categories.\n\n#1 Top Apps\n#1 Top Overall\n#1 Productivity https://t.co/KJQ7eqqqj9",
+        "created_at": "Sun Jan 11 01:45:28 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2010166059979120641",
+            "url": "https://video.twimg.com/amplify_video/2010166059979120641/vid/avc1/1080x1080/r4tHbz19E-v81bTu.mp4?tag=21",
+            "bitrate": 8768000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1803716,
+          "friends_count": 866,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 91,
+          "favorite_count": 468,
+          "reply_count": 173,
+          "quote_count": 0
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231866012,
+        "friends_count": 1267,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 718,
+        "favorite_count": 6864,
+        "reply_count": 828,
+        "quote_count": 21
+      }
+    },
     {
       "id": "2010193541935534209",
       "text": "RT @Tz_2022: 来看看真正的高智商人群是怎么怼人的。。。🤡\n\nVahid Kazemi（前 OpenAI 员工）：\n我敢打包票，咱 xAI 团队现在的班底，其业务能力比我前东家 OpenAI 的团队要强 10 倍。\n\nroon：\n这么说吧，你这一走，两家公司的平均智商…",

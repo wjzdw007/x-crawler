@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 166525,
+    "followers_count": 166543,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260111",
-  "last_updated": "2026-01-11T04:23:51.457747",
-  "tweet_count": 5,
+  "last_updated": "2026-01-11T06:07:11.126305",
+  "tweet_count": 6,
   "tweets": [
     {
       "id": "2010169725716939072",
@@ -219,6 +219,85 @@
       "quoted": null,
       "stats": {
         "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2010225131440972280",
+      "text": "RT @libukai: 看了宝玉老师的文章，很多都和我的体验相吻合。干脆借这个机会，点个炮点评一下最近中文区刷屏的一些所谓的 Skill：\n\n如果你的 Skill 中只有一个 https://t.co/8vbnWVh2o9，那这玩意和写个 Promt/Command  有啥区…",
+      "created_at": "Sun Jan 11 05:39:54 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2010222718466318627",
+        "text": "看了宝玉老师的文章，很多都和我的体验相吻合。干脆借这个机会，点个炮点评一下最近中文区刷屏的一些所谓的 Skill：\n\n如果你的 Skill 中只有一个 https://t.co/3xhJhqVILk，那这玩意和写个 Promt/Command  有啥区别？不用 Reference 是“渐进式披露”这五个字看不懂吗？不用 Scripts 是觉得每次都让 AI 临时代码稳定性更强吗？\n\n之前我已经反复强调过很多次了，Skill 的确是一个把个体经验转化为 AI 技能的低门槛方案。但是，低门槛不代表没有门槛啊！就算是可以用官方的 skill-creator skill 套娃式让 AI 写 skill，但写完了总得自己 Review 一下看看是不是靠谱吧。\n\n更何况，从我自己的实践来看，官方的 skill-creator skill 也不是那么靠谱，光 https://t.co/3xhJhqVILk 不要超过 500 行，以及不要在里面塞示例和代码这些基本规范，它就经常遵循的不太好。\n\n所以，我的解决方案是自己在官方的基础上，构建了一个增强版的 agent-skill-helper skill，从命名到架构，从SOP到代码，都有对应的 SOP 通过提示词和脚本调用来负责。\n\n而对于最终生成的 Skill，我也是一定会进行人工审核和反复测试的，甚至这个测试的过程比写代码还要频繁和严谨。\n\n至于持续进化，那更是 Skill 使用中的日常，这里还有一个小技巧：多在 Reference 中放点示例，并在 https://t.co/3xhJhqVILk 中要求多加参考，最终出来的结果稳定性会好很多很多。\n\n最后，说个不怕得罪人的话：万变不离其宗，重要的是认知能力，如果你写不好 workflow，大概率你也写不好 skill。",
+        "created_at": "Sun Jan 11 05:30:18 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2010222019451990017",
+            "url": "https://pbs.twimg.com/media/G-W-Rq0asAE88Jp.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2010222074070274048",
+            "url": "https://pbs.twimg.com/media/G-W-U2SbkAAoGGw.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2010222129053405184",
+            "url": "https://pbs.twimg.com/media/G-W-YDHbkAAJ2Bp.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2010176124450484638",
+          "text": "https://t.co/h79AGSMOtM",
+          "created_at": "Sun Jan 11 02:25:09 +0000 2026",
+          "lang": "zxx",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 166543,
+            "friends_count": 1526,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 12,
+            "favorite_count": 97,
+            "reply_count": 19,
+            "quote_count": 11
+          }
+        },
+        "user": {
+          "id": "17703982",
+          "name": "李不凯正在研究",
+          "screen_name": "libukai",
+          "description": "以 Claude Code 为基，使用 Cherry Studio + n8n + AICanHelp 构建 101 个 AI 员工｜持续更新 awesome-agent-skills 汇总最优最全的 Agent Skills 资料库｜ 已订阅 X Premium+ & 关注我可提升流量权重",
+          "followers_count": 2066,
+          "friends_count": 1383,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 7,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

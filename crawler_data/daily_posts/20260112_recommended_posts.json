@@ -1,12 +1,181 @@
 {
   "date": "20260112",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-01-12T04:24:56.809497",
-  "tweet_count": 207,
-  "unique_tweet_count": 207,
-  "total_crawled": 406,
-  "duplicates_removed": 199,
+  "last_crawl_time": "2026-01-12T06:08:53.918295",
+  "tweet_count": 210,
+  "unique_tweet_count": 210,
+  "total_crawled": 407,
+  "duplicates_removed": 197,
   "tweets": [
+    {
+      "id": "2010591615233245553",
+      "text": "Skills 的自我进化\nhttps://t.co/VHJb92nNZZ",
+      "created_at": "Mon Jan 12 05:56:10 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2010591496664207453",
+        "text": "为什么说 Skills 更容易进化呢？\n\n先说传统软件的问题，用户使用时遇到个 bug，都没办法向开发者反馈，这个链条太长了，用户如果运气好有日志，还得把日志记录下来，或者用户专业一点，能知道怎么重现，然后这个 Bug 可能还得层层上报，先给公司，再转给 QA，QA 去验证，最后到开发，这中间稍微一点损耗就没办法重现没办法解决。\n\n但 Agent + Skills 的组合不一样，它相当于“开发者”就在你身边，Agent 既可以帮你执行任务，又可以充当开发者的角色，遇到问题不但可以定位，还可以修复。\n\n举个例子（参考图2）来说，我在使用某个 skill 的时候，发现这个 skill 的结果不符合预期，这时候我可以直接在当前会话告诉 agent，让它检查一下提示词或者脚本，看问题在哪，并且修复。\n\n由于当前会话中提示词它有，输入输出它也知道，工具调用的参数、结果它都知道，本地还有所有文件，那么它可以轻易的定位到问题在哪，直接帮你修复或者优化。\n\n还有一点，由于 skills 相关的内容都是文本文件，就是如果配合 git 做好版本管理，所有的修改操作都会被记录下来，如果有问题可以跟踪整个变更过程，而且一个人机器上的 Skills 改进了，可以共享给所有人。",
+        "created_at": "Mon Jan 12 05:55:42 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2010591420717957120",
+            "url": "https://pbs.twimg.com/media/G-cOPpxXgAADcSM.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2010591455702552576",
+            "url": "https://pbs.twimg.com/media/G-cORsGWEAAKDOY.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 166843,
+          "friends_count": 1526,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 7,
+          "reply_count": 4,
+          "quote_count": 2
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 166843,
+        "friends_count": 1526,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2010591496664207453",
+      "text": "为什么说 Skills 更容易进化呢？\n\n先说传统软件的问题，用户使用时遇到个 bug，都没办法向开发者反馈，这个链条太长了，用户如果运气好有日志，还得把日志记录下来，或者用户专业一点，能知道怎么重现，然后这个 Bug 可能还得层层上报，先给公司，再转给 QA，QA 去验证，最后到开发，这中间稍微一点损耗就没办法重现没办法解决。\n\n但 Agent + Skills 的组合不一样，它相当于“开发者”就在你身边，Agent 既可以帮你执行任务，又可以充当开发者的角色，遇到问题不但可以定位，还可以修复。\n\n举个例子（参考图2）来说，我在使用某个 skill 的时候，发现这个 skill 的结果不符合预期，这时候我可以直接在当前会话告诉 agent，让它检查一下提示词或者脚本，看问题在哪，并且修复。\n\n由于当前会话中提示词它有，输入输出它也知道，工具调用的参数、结果它都知道，本地还有所有文件，那么它可以轻易的定位到问题在哪，直接帮你修复或者优化。\n\n还有一点，由于 skills 相关的内容都是文本文件，就是如果配合 git 做好版本管理，所有的修改操作都会被记录下来，如果有问题可以跟踪整个变更过程，而且一个人机器上的 Skills 改进了，可以共享给所有人。",
+      "created_at": "Mon Jan 12 05:55:42 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2010591420717957120",
+          "url": "https://pbs.twimg.com/media/G-cOPpxXgAADcSM.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2010591455702552576",
+          "url": "https://pbs.twimg.com/media/G-cORsGWEAAKDOY.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2010176124450484638",
+        "text": "https://t.co/h79AGSMOtM",
+        "created_at": "Sun Jan 11 02:25:09 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 166843,
+          "friends_count": 1526,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 101,
+          "favorite_count": 530,
+          "reply_count": 43,
+          "quote_count": 19
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 166843,
+        "friends_count": 1526,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 7,
+        "reply_count": 4,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2010577776848306540",
+      "text": "Wow",
+      "created_at": "Mon Jan 12 05:01:11 +0000 2026",
+      "lang": "qst",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2010504976989147616",
+        "text": "JUST IN: The UK has now arrested more than 12,000 people for free speech online.",
+        "created_at": "Mon Jan 12 00:11:54 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1261335549215989760",
+          "name": "Polymarket",
+          "screen_name": "Polymarket",
+          "description": "The World's Largest Prediction Market. Trade politics, news, culture, sports & tech. Discord: https://t.co/tzKrbDf7dZ",
+          "followers_count": 959838,
+          "friends_count": 5559,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1002,
+          "favorite_count": 6147,
+          "reply_count": 498,
+          "quote_count": 232
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 231951576,
+        "friends_count": 1267,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1480,
+        "favorite_count": 12592,
+        "reply_count": 1697,
+        "quote_count": 94
+      }
+    },
     {
       "id": "2010559234547539984",
       "text": "RT @WallStreetApes: Minnesota healthcare companies caught having websites with stock ‘gibberish’ text\n\n- They just downloaded a website tem…",

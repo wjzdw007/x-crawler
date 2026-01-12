@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 166813,
+    "followers_count": 166843,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260112",
-  "last_updated": "2026-01-12T04:24:56.864993",
-  "tweet_count": 1,
+  "last_updated": "2026-01-12T06:08:53.946976",
+  "tweet_count": 3,
   "tweets": [
     {
       "id": "2010507437669818783",
@@ -53,6 +53,106 @@
         "retweet_count": 0,
         "favorite_count": 3,
         "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2010591496664207453",
+      "text": "为什么说 Skills 更容易进化呢？\n\n先说传统软件的问题，用户使用时遇到个 bug，都没办法向开发者反馈，这个链条太长了，用户如果运气好有日志，还得把日志记录下来，或者用户专业一点，能知道怎么重现，然后这个 Bug 可能还得层层上报，先给公司，再转给 QA，QA 去验证，最后到开发，这中间稍微一点损耗就没办法重现没办法解决。\n\n但 Agent + Skills 的组合不一样，它相当于“开发者”就在你身边，Agent 既可以帮你执行任务，又可以充当开发者的角色，遇到问题不但可以定位，还可以修复。\n\n举个例子（参考图2）来说，我在使用某个 skill 的时候，发现这个 skill 的结果不符合预期，这时候我可以直接在当前会话告诉 agent，让它检查一下提示词或者脚本，看问题在哪，并且修复。\n\n由于当前会话中提示词它有，输入输出它也知道，工具调用的参数、结果它都知道，本地还有所有文件，那么它可以轻易的定位到问题在哪，直接帮你修复或者优化。\n\n还有一点，由于 skills 相关的内容都是文本文件，就是如果配合 git 做好版本管理，所有的修改操作都会被记录下来，如果有问题可以跟踪整个变更过程，而且一个人机器上的 Skills 改进了，可以共享给所有人。",
+      "created_at": "Mon Jan 12 05:55:42 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2010591420717957120",
+          "url": "https://pbs.twimg.com/media/G-cOPpxXgAADcSM.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2010591455702552576",
+          "url": "https://pbs.twimg.com/media/G-cORsGWEAAKDOY.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2010176124450484638",
+        "text": "https://t.co/h79AGSMOtM",
+        "created_at": "Sun Jan 11 02:25:09 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 166843,
+          "friends_count": 1526,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 101,
+          "favorite_count": 530,
+          "reply_count": 43,
+          "quote_count": 19
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 7,
+        "reply_count": 4,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2010591615233245553",
+      "text": "Skills 的自我进化\nhttps://t.co/VHJb92nNZZ",
+      "created_at": "Mon Jan 12 05:56:10 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2010591496664207453",
+        "text": "为什么说 Skills 更容易进化呢？\n\n先说传统软件的问题，用户使用时遇到个 bug，都没办法向开发者反馈，这个链条太长了，用户如果运气好有日志，还得把日志记录下来，或者用户专业一点，能知道怎么重现，然后这个 Bug 可能还得层层上报，先给公司，再转给 QA，QA 去验证，最后到开发，这中间稍微一点损耗就没办法重现没办法解决。\n\n但 Agent + Skills 的组合不一样，它相当于“开发者”就在你身边，Agent 既可以帮你执行任务，又可以充当开发者的角色，遇到问题不但可以定位，还可以修复。\n\n举个例子（参考图2）来说，我在使用某个 skill 的时候，发现这个 skill 的结果不符合预期，这时候我可以直接在当前会话告诉 agent，让它检查一下提示词或者脚本，看问题在哪，并且修复。\n\n由于当前会话中提示词它有，输入输出它也知道，工具调用的参数、结果它都知道，本地还有所有文件，那么它可以轻易的定位到问题在哪，直接帮你修复或者优化。\n\n还有一点，由于 skills 相关的内容都是文本文件，就是如果配合 git 做好版本管理，所有的修改操作都会被记录下来，如果有问题可以跟踪整个变更过程，而且一个人机器上的 Skills 改进了，可以共享给所有人。",
+        "created_at": "Mon Jan 12 05:55:42 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2010591420717957120",
+            "url": "https://pbs.twimg.com/media/G-cOPpxXgAADcSM.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2010591455702552576",
+            "url": "https://pbs.twimg.com/media/G-cORsGWEAAKDOY.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 166843,
+          "friends_count": 1526,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 7,
+          "reply_count": 4,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

@@ -1,12 +1,191 @@
 {
   "date": "20260112",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-01-12T20:05:35.032804",
-  "tweet_count": 243,
-  "unique_tweet_count": 243,
-  "total_crawled": 437,
-  "duplicates_removed": 194,
+  "last_crawl_time": "2026-01-12T22:05:29.092642",
+  "tweet_count": 247,
+  "unique_tweet_count": 247,
+  "total_crawled": 443,
+  "duplicates_removed": 196,
   "tweets": [
+    {
+      "id": "2010829432911774064",
+      "text": "https://t.co/g68gb4BoIZ",
+      "created_at": "Mon Jan 12 21:41:10 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 167084,
+        "friends_count": 1526,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 7,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2010817497340187076",
+      "text": "Claude 的新功能 Cowork：让 AI 真正帮你干活\n\nClaude Code 本来是给程序员写代码用的，结果大家发现它整理文件、做表格、写报告也很顺手。Anthropic 索性把这套能力包装成了 Cowork，让不会写代码的人也能用上。\n\n【1】Cowork 到底能干啥\n\n你选一个电脑上的文件夹，Claude 就能在里面读文件、改文件、创建新文件。\n\n听起来简单，用起来挺香。比如你下载文件夹乱成一锅粥，让它帮你分类重命名。或者你有一堆消费截图，它能整理成一张 Excel 表。再比如你写了几页凌乱的笔记，它能帮你理顺思路、输出初稿。\n\n和普通对话不一样的是，Cowork 模式下 Claude 更像个真正的助手。你布置任务，它自己规划步骤、一步步执行，中间会告诉你进度。如果你用过 Claude Code，这感觉会很熟悉，因为底层技术是同一套。\n\n【2】还能更强\n\n基础功能只是起点。Cowork 可以接上你已有的连接器，比如 Google Drive、Slack。它还内置了一批技能，能更好地生成文档、PPT 之类的文件。再配上 Chrome 浏览器插件，Claude 甚至能帮你操作网页。\n\n这套设计让工作流变得很丝滑。你不用反复给 Claude 喂上下文，也不用手动把输出转成正确格式。甚至不用等它做完一件事再布置下一件，可以连续丢任务让它并行处理。用 Anthropic 的话说，这感觉不像你一句我一句地聊天，更像给同事留便签。\n\n【3】和 Claude Code 共享技能生态\n\n对 Claude Code 用户来说有个好消息：Cowork 能读取你本地的 https://t.co/k5gfrsJiDu 文件和自定义 Skills。\n\n我测试了一下，选择工作文件夹后，Cowork 能看到里面的 https://t.co/k5gfrsJiDu 并按指令执行。我在 Claude Code 里配置的写作风格技能，Cowork 里也能直接调用。技能分两类：Anthropic 官方提供的（docx、pptx、pdf 这些）和用户自己创建的，两类都能用。\n\n换句话说，你在 Claude Code 里攒下的工作流配置可以直接迁移过来。Cowork 不是另起炉灶，是同一套体系的图形化入口。\n\n有个坑要注意：Cowork 跑在 Linux 虚拟机里，而你的 Mac 是 ARM 架构。如果技能依赖 node_modules 或本地特定环境（比如浏览器 cookies、特定架构的二进制文件），就跑不了。我试着调用一个需要运行 nodejs 脚本的图片生成技能，报错了——架构不兼容。纯文本类的配置（https://t.co/k5gfrsJiDu、写作规范）没问题，涉及本地脚本的技能可能需要额外适配。\n\n【4】安全边界在哪里\n\nClaude 只能访问你明确授权的文件夹和连接器，动作比较大的时候会先问你。但有几件事得提前知道：Claude 可能会误解你的指令，如果你说\"清理一下这个文件夹\"，它可能真的把文件删了。指令要说清楚。\n\n另一个风险是提示词注入，就是攻击者在网页内容里藏一些指令，试图劫持 Claude 的行为。Anthropic 说他们做了防护，但这个领域整个行业都还在摸索。\n\n这些风险不是 Cowork 特有的，只是很多人可能是第一次用这种更自主的 AI 工具。官方建议：刚开始用的时候谨慎点，别一上来就让它处理重要文件。\n\n【5】现在能用吗\n\nCowork 目前是研究预览版，只对 Mac 上的 Claude Max 订阅用户开放。Anthropic 想先看看大家怎么用、有什么反馈，然后快速迭代。后面会加跨设备同步，也会出 Windows 版。\n\n这一步到是意料之中，因为 Claude Code 现在已经被用在很多编程意外的领域，但是门槛略高，限制了使用群体是程序员或者懂点技术的用户，而且脚本执行权限会有很多安全上的隐患。Cowork 一下子降低了使用的门槛，通过图形化界面就可以操作，并且也让使用更安全。\n\n现在还是早期版本，能做的事有限，安全机制也在完善中。但如果你是 Max + Mac 用户，值得一试。",
+      "created_at": "Mon Jan 12 20:53:45 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2010805682434666759",
+        "text": "Introducing Cowork: Claude Code for the rest of your work.\n\nCowork lets you complete non-technical tasks much like how developers use Claude Code. https://t.co/EqckycvFH3",
+        "created_at": "Mon Jan 12 20:06:48 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2010792398280929280",
+            "url": "https://video.twimg.com/amplify_video/2010792398280929280/vid/avc1/3840x2160/28TgKr7KSXuhnodl.mp4?tag=21",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1943306828697550848",
+          "name": "Claude",
+          "screen_name": "claudeai",
+          "description": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8dz3D or download the app.",
+          "followers_count": 228169,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 857,
+          "favorite_count": 11449,
+          "reply_count": 488,
+          "quote_count": 938
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 167084,
+        "friends_count": 1526,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 25,
+        "reply_count": 4,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2010811705614287054",
+      "text": "RT @erolnodiff: @chamath California issues nearly $100B per year of new debt. Their current long-term liabilities are $1.37T, almost half o…",
+      "created_at": "Mon Jan 12 20:30:44 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2010800136881127433",
+        "text": "@chamath California issues nearly $100B per year of new debt. Their current long-term liabilities are $1.37T, almost half of which is unfunded pension liabilities. That's ~$34,300/person of liability. They paid $6.5B in 2025 just to service the debt.",
+        "created_at": "Mon Jan 12 19:44:46 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1944989466",
+          "name": "Erol Basturk",
+          "screen_name": "erolnodiff",
+          "description": "",
+          "followers_count": 314,
+          "friends_count": 116,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 430,
+          "favorite_count": 2095,
+          "reply_count": 223,
+          "quote_count": 26
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232003964,
+        "friends_count": 1268,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 430,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2010811049096716303",
+      "text": "That’s a lot of fake voters …",
+      "created_at": "Mon Jan 12 20:28:07 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2010592304818712900",
+        "text": "Hold on. Oregon's population is only 4.25M.... 20% of their registered voters were fake?",
+        "created_at": "Mon Jan 12 05:58:55 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "902768303051038720",
+          "name": "Upstate Federalist",
+          "screen_name": "upstatefederlst",
+          "description": "Brooklyn. Engineer.",
+          "followers_count": 30976,
+          "friends_count": 573,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2271,
+          "favorite_count": 12853,
+          "reply_count": 259,
+          "quote_count": 80
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232003964,
+        "friends_count": 1268,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4112,
+        "favorite_count": 26215,
+        "reply_count": 1381,
+        "quote_count": 78
+      }
+    },
     {
       "id": "2010804262419456311",
       "text": "California state government spending on waste & fraud will keep increasing until the GOLDEN STATE has COOKED all the GOLDEN GEESE. Mark my words. \n\nThis has always been inevitable and is not due to Newsom or any individual. The Democratic Party is utterly controlled by the unions and the trial lawyers and California is a one-party state.\n\nAny politician nominally “in charge” of California has two choices: \n\n1. Stop sending crazy money to the public sector unions and law firms.\n\n2. Sacrifice the most productive citizens to pay the graft. \n\nThey will always pick the second choice, because they will lose their primary if they pick the first. \n\nOnly bankruptcy will force a righting of the state, but, between now and then, they will feast on the golden geese who were laying the golden eggs.",

@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-01-12T01:36:55.196647",
+  "tweet_count": 11,
+  "summary": "**新工具/技术**（如有）\n- Gemini / Nano banana Pro / GEM：用于生成并微调图像提示词与最终图片，作者推荐 nano banana Pro 画图效果最好。\n- Skills / skill-creator / agent-skill-helper：把个人经验封装为 agent skills 的工具链，便于复用但需加工程化流程（SOP/人工审核）。\n- Obsidian 可视化三件套（Canvas / Excalidraw / Mermaid）：已有人开源对应的 skills 实例，便于在笔记中可视化。\n- Vibe-coding / Google Antigravity：用 LLM 辅助生成代码或工具（如音频可视化）的实践方法论示例。\n\n**核心观点/方法论**（如有）\n- 高确定性场景优先用代码控制，若用 skills 必须加验证环节；原因：skills 存在小概率偏差，可能致命。\n- Skill 是把经验低门槛产品化的方式，但低门槛不等于零门槛，必须有 review、测试与持续迭代。\n- 提高稳定性的关键是用 Reference/示例和逐步披露（progressive disclosure），并在生成流程里嵌入测试用例。\n\n**实践经验/案例**（如有）\n- 提示词套件示例：完整小红书信息图拆解模板，可把任意内容拆成 1–10 张竖版卡通信息图并输出每页生成提示词，含视觉规范与排版要求。\n- 工程化实务：构建增强版 agent-skill-helper、为 skill 写 SOP、对生成的 skill 进行人工审核和反复测试，测试频率可能高于写代码本身。\n- 开源/落地案例：有人开源 Obsidian 可视化 skills；Linus 用 vibe-coding 实现 Python 音频可视化；dotey 分享了可直接使用的 prompt 与 GEM。\n- 风险与合规提醒：注意内容/账号来源与引流渠道（有被指为币圈 scam 的账号被扩散），转发引用前应核验意图与后续链接以防传播诈骗。\n\n建议：\n- 生产级或高风险场景：优先代码+验证；宣传/视觉类内容可用 skill+严格人工审核。\n- 合作与转发前审查账号历史、粉丝异常与引流目标，降低被动扩散恶意渠道的风险。",
+  "metadata": {
+    "original_tweets": 7,
+    "retweets": 4,
+    "media_tweets": 2,
+    "data_hash": "1505862b",
+    "user": "dotey"
+  }
+}

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 166740,
+    "followers_count": 166744,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260111",
-  "last_updated": "2026-01-11T22:05:19.380632",
-  "tweet_count": 8,
+  "last_updated": "2026-01-12T00:19:55.685178",
+  "tweet_count": 11,
   "tweets": [
     {
       "id": "2010169725716939072",
@@ -378,6 +378,78 @@
         "retweet_count": 5,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2010485496934248611",
+      "text": "https://t.co/dr5NasiEOV",
+      "created_at": "Sun Jan 11 22:54:30 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 18,
+        "reply_count": 3,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2010497572704501766",
+      "text": "下面是一套提示词，可以把输入内容拆解为小红书风格的系列信息图，输出每张图片的独立生成提示词，将每一张图片提示词放到 Gemini Pro 中用 Nano banana Pro 生成，就可以得到一系列的小红书图片。\n\n你可也可以直接用我分享的 GEM：https://t.co/zxaN5zMPyy\n\n这是一个示例会话：https://t.co/JuN9gpVQNb\n\n这套提示词可以在 Gemini、Claude、ChatGPT 等大模型中使用，帮你生成每一页图片提示词，然后你也可以对生成的图片提示词进行微调。但是画图时还是 nano banana Pro 画图效果最好。\n\n以下是完整提示词（请根据需要酌情修改）：",
+      "created_at": "Sun Jan 11 23:42:29 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2010497430685417472",
+          "url": "https://pbs.twimg.com/media/G-a4wtnXAAAP8yT.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 7,
+        "reply_count": 3,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2010497574872940552",
+      "text": "--- 提示词 ---\n\n# 角色定义\n你是一位专业的小红书视觉内容策划师，擅长将复杂内容拆解为吸引眼球的卡通风格系列信息图。\n\n# 任务\n请分析以下输入内容，将其拆解为 1-10 张小红书风格的系列信息图，并为每张图片输出独立的生成提示词。\n\n# 拆解原则\n1. **封面图（第1张）**：必须有强烈视觉冲击力，包含核心标题和吸引点\n2. **内容图（中间）**：每张聚焦1个核心观点，信息密度适中\n3. **结尾图（最后1张）**：总结/行动号召/金句收尾\n\n# 图片数量判断标准\n- 简单观点/单一主题：2-3 张\n- 中等复杂度/教程类：4-6 张\n- 深度干货/多维度分析：7-10 张\n\n# 视觉风格规范（重要）\n## 基础设定\n- **图片类型**：信息图（Infographic）\n- **方向比例**：竖版，3:4 或 9:16\n- **整体风格**：卡通风格、手绘风格\n\n## 背景与配色\n- 背景色：莫兰迪色系 / 奶油色 / 米白色 / 浅粉 / 薄荷绿等温柔色调\n- 配色柔和统一，符合小红书审美\n\n## 文字风格\n- **必须使用手绘风格文字**\n- 大标题突出醒目，重点文字加粗放大\n- 可使用荧光笔划线效果强调关键词\n- 禁止使用写实风格字体\n\n## 装饰元素\n- 加入少量简洁的**卡通元素、图标或名人画像**，增强趣味性和视觉记忆\n- 可使用：emoji 风格图标、手绘贴纸、便签纸质感、对话气泡等\n- 如涉及敏感人物或版权内容，画一个风格相似的卡通替代形象，不要拒绝生成\n- **所有图像元素必须是手绘/卡通风格，禁止写实风格图画**\n\n## 排版原则\n- 信息精简，突出关键词与核心概念\n- 多留白，易于一眼抓住重点\n- 要点分条呈现，层次清晰\n\n# 输出格式\n对于每张图片，请按以下结构输出：\n\n---\n### 第 X 张 / 共 N 张\n**图片定位**：[封面图 / 内容图 / 结尾图]\n**核心信息**：[这张图要传达的1句话核心]\n\n**文字内容**：\n- 主标题：xxx\n- 副标题/要点：xxx\n- 补充说明（如有）：xxx\n\n**视觉提示词**：\n```\n小红书风格信息图，竖版（3:4），卡通风格，手绘风格文字，[具体背景色]背景。\n\n[具体内容布局描述]\n\n加入简洁的卡通元素和图标增强趣味性和视觉记忆：[具体元素描述]\n\n整体风格：手绘、可爱、清新，信息精简，多留白，重点突出。所有图像和文字均为手绘风格，无写实元素。\n右下角水印：“宝玉”\n```\n---\n\n# 语言规则\n- 除非特别要求，输出语言与输入内容语言保持一致\n- 中文内容使用全角标点符号（“”，。！）",
+      "created_at": "Sun Jan 11 23:42:29 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2010497541448622080",
+          "url": "https://pbs.twimg.com/media/G-a43KPXYAAZhFA.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2010497541448540160",
+          "url": "https://pbs.twimg.com/media/G-a43KPWIAA5vKc.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2010497541444403202",
+          "url": "https://pbs.twimg.com/media/G-a43KOXAAIQQbR.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2010497541457014784",
+          "url": "https://pbs.twimg.com/media/G-a43KRXcAAYSRr.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 7,
+        "reply_count": 1,
         "quote_count": 0
       }
     }

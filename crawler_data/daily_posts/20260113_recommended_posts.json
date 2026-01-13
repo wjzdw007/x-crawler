@@ -1,12 +1,127 @@
 {
   "date": "20260113",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-01-13T14:07:52.581777",
-  "tweet_count": 235,
-  "unique_tweet_count": 235,
-  "total_crawled": 399,
-  "duplicates_removed": 164,
+  "last_crawl_time": "2026-01-13T16:07:33.141887",
+  "tweet_count": 237,
+  "unique_tweet_count": 237,
+  "total_crawled": 435,
+  "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2011101836397384152",
+      "text": "RT @yan5xu: 刚深扒了一下 MiroThinker 1.5，他们这套 Agent 压缩方式有点邪门，但看懂了觉得确实有用。\n核心解决的是「怎么在 256K 上下文里塞进去 400 次 Tool Use」的问题。\n他们做了一个极其大胆的操作：对ReAct历史上 thin…",
+      "created_at": "Tue Jan 13 15:43:36 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2010985530889289869",
+        "text": "刚深扒了一下 MiroThinker 1.5，他们这套 Agent 压缩方式有点邪门，但看懂了觉得确实有用。\n核心解决的是「怎么在 256K 上下文里塞进去 400 次 Tool Use」的问题。\n他们做了一个极其大胆的操作：对ReAct历史上 think-action-observation 中的的 Observation（工具返回结果）进行物理掩码。\n除了最近 K 轮保留原文，之前的几百轮 Tool Result 全部替换成一句 \"Tool result is omitted to save tokens\"。但是完整保留了所有的 <thought>。\n这里面有一个非常反直觉的地方，这个 agent 本身就是在做 deep research，那他只留最近 K 轮，也就是 5 轮的原文，前面都没有了，还怎么能回答问题。\n这就有一个非常隐晦但关键的前提：只要 Thought 足够密，它其实就是在无限逼近 Summary。\n每一次 Thought 的生成，本质上都是模型对当前 Observation 的一次信息切片。T1 产生时已经把 O1 里的关键数据“吃”进脑子了。\n\n虽然 O1 被替换成了占位符，但 T1 还在。T1 就成了 O1 的“信息压缩包”。不需要额外挂一个 Summary Agent，这条完整的 Thought 链，本身就是一份不断增量更新的、高保真的「动态摘要」。",
+        "created_at": "Tue Jan 13 08:01:27 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2010985388819795968",
+            "url": "https://pbs.twimg.com/media/G-h0jnUa0AAvBom.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "115897222",
+          "name": "yan5xu",
+          "screen_name": "yan5xu",
+          "description": "🤖 AI 野生研究员 | ex @ManusAI_HQ & @hey_im_monica\n推特内容仅代表个人观点，和公司无关",
+          "followers_count": 8697,
+          "friends_count": 393,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 22,
+          "favorite_count": 149,
+          "reply_count": 8,
+          "quote_count": 5
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 167509,
+        "friends_count": 1527,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 22,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2011090515429614031",
+      "text": "Claude Code 的创建者 Boris Cherny 今天发了一组推文，用一个故事解释了 Anthropic 新产品 Cowork 为什么会诞生。\n\n【1】从“没人会用”到“同事已经在用了”\n\n2024 年底，Boris 刚把 Claude Code 的第一版（当时叫 Claude CLI）发布给团队内部试用。那时候 Sonnet 3.5 的 agent 能力还很弱，他前一天才刚给它加了一个文件编辑工具，自己也只拿它当个记事本用。\n\n第二天走进办公室，他看到同事 Robert 的屏幕上开着终端，Claude CLI 正在运行，旁边是一个红绿色的代码 diff 视图。\n\nRobert 已经在用它写代码、操作 git 了。\n\n【2】然后是数据科学家\n\n几个月后，Anthropic 的工程师们已经日常使用 Claude Code。有一天 Boris 走进办公室，看到数据科学家的电脑上也开着 Claude Code 终端。他问了一句“你也在试这个？”，结果发现对方不是在试用，而是在干活——用它写 SQL 查询、做数据分析、画 matplotlib 图表，甚至用 ASCII 字符在终端里画简易图表。\n\nClaude Code 是给工程师做的，数据科学家却拿它来工作。\n\n一周后，整排数据科学家的屏幕上都是 Claude Code。\n\n【3】接着破圈了\n\n随后几个月，同样的事情反复上演。设计师用它做原型和改文案，财务用它建模型、做预测，销售用它分析 Salesforce 和 BigQuery 里的数据，用户研究员用它处理问卷结果。\n\n到现在，用户用 Claude Code 做的事情已经远远超出编程范畴：控制烤箱、从坏掉的硬盘里恢复婚礼照片、分析自己的 DNA 和医疗记录、跟客服讨价还价。\n\n【4】所以有了 Cowork\n\nBoris 说，到某个时刻，这些事情就不再让他惊讶了。“我们应该让那些想用 Claude agent 做非编程事情的人更容易上手”——这变得显而易见。于是就有了今天发布的 Cowork。\n\n他在推文里还说了一句话：“产品还早期，还不够完美，但人们已经发现它在各种意想不到的场景下极其好用。”\n\n这话听着像自谦，其实是 Anthropic 做产品的一贯风格：先发布、先让用户玩起来、再根据反馈迭代。Claude Code 就是这么长大的。\n\n【5】AI agent 正在从程序员玩具变成通用工具\n\nClaude Code 最初只是给工程师用的命令行工具，但它的本质是自然语言交互——你告诉它要做什么，它帮你执行。这个能力跟你会不会写代码没关系。数据科学家能用，财务能用，设计师也能用，只是原来的界面对他们不够友好。\n\nCowork 做的事情，就是把这个能力包装成更多人能接受的形态。\n\nAnthropic 的产品嗅觉：不是先想“我们要做一个面向非程序员的产品”，而是观察到用户已经在这么用了，然后顺势而为。用户行为是最好的产品经理。",
+      "created_at": "Tue Jan 13 14:58:37 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2011090477265657856",
+          "url": "https://pbs.twimg.com/media/G-jUIkSXIAANa8g.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2011090494806179843",
+          "url": "https://pbs.twimg.com/media/G-jUJloWQAMgOQt.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2010923222813065308",
+        "text": "It's late 2024, a few days after I launched the first version of Claude Code (then called Claude CLI) to team dogfooding. I walked into the office and saw my coworker Robert with a terminal up on his computer, Claude CLI running and a red/green diff view on screen.\n\nI was surprised. This was back in the Sonnet 3.5 days, before the model was good at agentic coding. I had just given it a FileEdit tool the day before. Claude CLI was a prototype that I thought it wasn't useful for anything yet. But Robert was already starting to use it to write code & use git for him. I was still using the CLI as a note taker mostly, but I also started making it my go-to tool for using git as a result.",
+        "created_at": "Tue Jan 13 03:53:52 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "159337660",
+          "name": "Boris Cherny",
+          "screen_name": "bcherny",
+          "description": "Claude Code @anthropicai",
+          "followers_count": 163260,
+          "friends_count": 128,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 79,
+          "favorite_count": 1520,
+          "reply_count": 60,
+          "quote_count": 25
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 167509,
+        "friends_count": 1527,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 42,
+        "reply_count": 4,
+        "quote_count": 3
+      }
+    },
     {
       "id": "2011069471679524989",
       "text": "RT @dvorahfr: “There is a third choice besides being busy and killing time, something profound.”\n-James Rozoff\n\nGrok Imagine https://t.co/2…",

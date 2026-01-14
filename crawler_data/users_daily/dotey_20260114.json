@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 167758,
+    "followers_count": 167765,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260114",
-  "last_updated": "2026-01-14T16:07:23.246978",
-  "tweet_count": 8,
+  "last_updated": "2026-01-14T18:07:39.866770",
+  "tweet_count": 10,
   "tweets": [
     {
       "id": "2011230297283584136",
@@ -315,6 +315,66 @@
       "stats": {
         "retweet_count": 1,
         "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2011486901610467836",
+      "text": "我写了一个自动发微信公众号的 Skill，操作 Chrome，支持图文和文章，会记住登录状态，不需要每次登录。\n\n文章的话，提供markdown文档本地地址，会自动帮你把 Markdown 转 HTML（可选风格较少），配图会一张张粘贴进编辑器，不需要手动上传，封面图、原创设置暂时不支持，建议把封面图放文章内容。\n\n技术上我没有使用 PlayWright MCP，因为这玩意儿太费 Tokens 了，而是用的 Chrome CDP (Chrome DevTools Protocol) 是一个允许外部程序通过 WebSocket 与 Chrome（以及 Edge、Opera 等基于 Chromium 浏览器的内核）进行通信的底层调试协议。\n\n都是脚本操作，不怎么费 Token。\n\n图文的话需要告诉图片地址、标题和内容，可以自动上传图片，填写标题和内容。\n\n所有操作都不会发布，只是帮你生成草稿。\n\n需要 Claude Code 或者其他支持 Skills 的 Agent，需要 Nodejs 运行环境（但如果你装了 Claude Code 应该就支持 Node）\n\nSkill 地址：https://t.co/FXPg3C1ttc\n\n安装说明：\nhttps://t.co/PLT3pVFaDE\n\n这是我分享的 Skill 之一，还有一些其他 Skills，注意其中 gemini-web 的 skill 可以帮你用你的 Gemini 账号画图，需要自己登录一下。不保证它的稳定性和安全性，不过我自己也在用。",
+      "created_at": "Wed Jan 14 17:13:43 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2011486870044020736",
+          "url": "https://pbs.twimg.com/media/G-o8pqdWEAAtZnd.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2009540783255261559",
+        "text": "推荐王老师的教程，另外刚才测试了一下王老师写的自动发布 X 文章的 Skill，真的是强大，而且给我很大启发，理论上来说基于这个思路可以做一个发布微信公众号或者其他平台的 Skill。\n\n原理是用脚本控制浏览器，用剪贴板把文字和图片粘贴到编辑器，最有创意的是，根据文字定位到图片要插入的位置👍",
+        "created_at": "Fri Jan 09 08:20:32 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 167765,
+          "friends_count": 1530,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 123,
+          "favorite_count": 548,
+          "reply_count": 45,
+          "quote_count": 7
+        }
+      },
+      "stats": {
+        "retweet_count": 6,
+        "favorite_count": 23,
+        "reply_count": 7,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2011489259824255448",
+      "text": "也支持 HTML，你把自己的风格保存成 html 文件，它就能自动选择复制粘贴到编辑器，但是 html 暂时不支持自动上传图片。",
+      "created_at": "Wed Jan 14 17:23:05 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 2,
         "reply_count": 0,
         "quote_count": 0
       }

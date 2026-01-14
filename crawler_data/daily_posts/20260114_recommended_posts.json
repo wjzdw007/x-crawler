@@ -1,12 +1,61 @@
 {
   "date": "20260114",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-01-14T08:07:01.661520",
-  "tweet_count": 239,
-  "unique_tweet_count": 239,
-  "total_crawled": 431,
-  "duplicates_removed": 192,
+  "last_crawl_time": "2026-01-14T10:06:31.023872",
+  "tweet_count": 240,
+  "unique_tweet_count": 240,
+  "total_crawled": 439,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2011362431793291535",
+      "text": "RT @orz99: @dotey 1. 砍掉現有的 Chrome 進程\npkill -f \"Google Chrome\"\n\n2. 複製一份 Profile (Chrome 有安全限制：遠端偵錯不能用預設 Profile 路徑)\ncp -r ~/Library/Applicat…",
+      "created_at": "Wed Jan 14 08:59:07 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2011357107447382162",
+        "text": "1. 砍掉現有的 Chrome 進程\npkill -f \"Google Chrome\"\n\n2. 複製一份 Profile (Chrome 有安全限制：遠端偵錯不能用預設 Profile 路徑)\ncp -r ~/Library/Application\\ Support/Google/Chrome/Default /tmp/chrome-debug\n\n3. 啟動 Chrome 時加上遠端偵錯參數\n/Applications/Google\\ https://t.co/4vHNt3szQM\\ Chrome \\   --remote-debugging-port=9222 \\   --user-data-dir=/tmp/chrome-debug\n\n4. 確認 Chrome 是否真的在監聽port 9222\nlsof -i :9222\n>\nCOMMAND    PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME\nGoogle    7677 orz99   54u  IPv4 0x7e5dfcda61741285      0t0  TCP localhost:teamcoherence (LISTEN)\n\n然後就可以登入 Google 帳號，快樂的 agent-browser --cdp 9222 open \"https://t.co/t0riEDa0ab\"\n\n((抱歉前貼圖片忘了馬賽克帳號資訊 so 刪除重發))",
+        "created_at": "Wed Jan 14 08:37:58 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "14331594",
+          "name": "燐夜 Lava",
+          "screen_name": "orz99",
+          "description": "燐夜｜AIエンジニア\nPythonでコード、ガスコンロで胃袋にラブレター\n玉子焼きと昭和レコード\n東京の夜が好き",
+          "followers_count": 62,
+          "friends_count": 855,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 2,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 167703,
+        "friends_count": 1530,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2011324998653513810",
       "text": "Tesla will stop selling FSD after Feb 14. \n\nFSD will only be available as a monthly subscription thereafter.",

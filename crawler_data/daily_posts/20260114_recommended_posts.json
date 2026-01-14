@@ -1,12 +1,165 @@
 {
   "date": "20260114",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-01-14T02:46:20.531506",
-  "tweet_count": 204,
-  "unique_tweet_count": 204,
-  "total_crawled": 400,
-  "duplicates_removed": 196,
+  "last_crawl_time": "2026-01-14T04:23:26.818940",
+  "tweet_count": 207,
+  "unique_tweet_count": 207,
+  "total_crawled": 404,
+  "duplicates_removed": 197,
   "tweets": [
+    {
+      "id": "2011284544096440523",
+      "text": "nvm，还是不用了\nhttps://t.co/v1CqMvsgVc",
+      "created_at": "Wed Jan 14 03:49:37 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2010982945570558450",
+        "text": "agent-browser这个新的读取html的爬虫方式还是耳目一新的，据说能节省token， 我下载了后它默认是无头模式的， 如果用headed打开的话，手工登陆google社交账号会受限， 我打了一个补丁：\n\n1. 使用channel方式打开，确保使用的是系统的chrome，而不是testing版本\n2. 使用userdatadir方式固化登陆信息，而不是手工每次save方式，目前我写死为 ~/tmp/agent-browser\n\nhttps://t.co/zF3nD0orxC\n\n本次cc自己搞了半天没有搞定， 后面是通过调用oracle agent让gemini和codex帮助才搞定。 这个oracle内部我集成了pal-clink mcp, 就是之前的zen，有兴趣的可以看我之前的推",
+        "created_at": "Tue Jan 13 07:51:11 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "9574172",
+          "name": "BadUncle",
+          "screen_name": "BadUncleX",
+          "description": "Vibe Math",
+          "followers_count": 6391,
+          "friends_count": 861,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 21,
+          "favorite_count": 100,
+          "reply_count": 4,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 167643,
+        "friends_count": 1529,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2011283369569689934",
+      "text": "RT @JamesAI: 基于王老师的这个 X 文章发布 skill，改出了一个 Linkedin 文章和微信公众号版本的。\n\nLinkedin 文章发布 Skill：https://t.co/JYKqudw9ty\n\n微信公众号文章排版 Skill：\nhttps://t.co/…",
+      "created_at": "Wed Jan 14 03:44:57 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2011280199745466466",
+        "text": "基于王老师的这个 X 文章发布 skill，改出了一个 Linkedin 文章和微信公众号版本的。\n\nLinkedin 文章发布 Skill：https://t.co/PtQznthfpo\n\n微信公众号文章排版 Skill：\nhttps://t.co/G914e34rkS\n\n微信公众号文章发布 Skill：\nhttps://t.co/EhJh0tarRi\n\n公众号文章发布用到了@miantiao 佬的https://t.co/Iry2o5v1vJ来进行自定义排版，@Yangyixxxx的https://t.co/q0dYygtDzj来进行公众号API 授权。\n\n现在配合我自己的文章写作，审稿 skills，可以联动完成多平台发布了。",
+        "created_at": "Wed Jan 14 03:32:22 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2009540783255261559",
+          "text": "推荐王老师的教程，另外刚才测试了一下王老师写的自动发布 X 文章的 Skill，真的是强大，而且给我很大启发，理论上来说基于这个思路可以做一个发布微信公众号或者其他平台的 Skill。\n\n原理是用脚本控制浏览器，用剪贴板把文字和图片粘贴到编辑器，最有创意的是，根据文字定位到图片要插入的位置👍",
+          "created_at": "Fri Jan 09 08:20:32 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 167643,
+            "friends_count": 1529,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 121,
+            "favorite_count": 532,
+            "reply_count": 44,
+            "quote_count": 6
+          }
+        },
+        "user": {
+          "id": "1708132468216487936",
+          "name": "在悉尼和稀泥",
+          "screen_name": "JamesAI",
+          "description": "💰 上班牛马，下班副业，周末学术，闲暇咨询。边赚工资边搞钱 🚀 做过产品，踩过坑，亏过百万，也赚过📖 记录真实的赚钱过程，研究副业、出海方法，分享真实经历",
+          "followers_count": 23035,
+          "friends_count": 315,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 14,
+          "reply_count": 3,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 167643,
+        "friends_count": 1529,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2011282676947567060",
+      "text": "请问 agent-browser 不能登录 Google 账号的问题有办法解决吗？ https://t.co/OIllmXrSQ4",
+      "created_at": "Wed Jan 14 03:42:12 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2011282572731625472",
+          "url": "https://pbs.twimg.com/media/G-mC1_qaMAAJB1u.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 167643,
+        "friends_count": 1529,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 12,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2011257771925348781",
       "text": "RT @yan5xu: 周末参与了monica的吐槽大师, 学到一些\n1. copycat 很有用, moncia跟进吐槽大师的时候, 中推的流量已经见底. 但最后ins板块流量大爆发, 光是导给app的流量, 就让monica登上了四个地区app 总榜第一;",

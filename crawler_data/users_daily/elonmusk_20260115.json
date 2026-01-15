@@ -1,0 +1,251 @@
+{
+  "user": {
+    "screen_name": "elonmusk",
+    "name": "Elon Musk",
+    "description": "",
+    "followers_count": 232177078,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260115",
+  "last_updated": "2026-01-15T02:42:00.358098",
+  "tweet_count": 4,
+  "tweets": [
+    {
+      "id": "2011596290074034623",
+      "text": "RT @visegrad24: Anger in Sweden after the news that the rapist knows as “The Mine Shaft Afghan” is already being granted leave from prison.…",
+      "created_at": "Thu Jan 15 00:28:23 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2011512794273763833",
+        "text": "Anger in Sweden after the news that the rapist knows as “The Mine Shaft Afghan” is already being granted leave from prison.\n\nIn 2022, he raped a woman and pushed her down a 24 meter deep mine shaft before throwing bricks on her body.\n\nShe survived somehow.\n\nTaher Amini, who was sentenced to life in prison, has been granted leave from prison. \n\nThe decision has been made despite the risk of recidivism in sexual offenses being assessed as high.\n\nTaher Amini was sentenced to life imprisonment and deportation for aggravated rape and attempted murder following the high-profile incident in the spring of 2022.\n\nThe woman survived after lying severely injured in a 24-meter-deep mine shaft for a day before she was found by passersby.\n\nAccording to the court, Amini attacked the woman after she rejected his demand for marriage. \n\nHe raped and assaulted her and then pushed her down the mine shaft.\n\nWhile she was still alive, he threw bricks down at her.\n\nAmini has been granted permission for what is known as a “lufthålspermission” (short “fresh air” leave). \n\nDuring the leave, he is, among other things, allowed to visit a restaurant, go to a bookstore and spend time in a shopping center.\n\nDocuments show that this is not the first time Amini has been granted leave.\n\nThe decision to grant him these leaves has sparked significant public controversy due to the severity of the crime and the high assessed risk of sexual recidivism.",
+        "created_at": "Wed Jan 14 18:56:36 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2011512788599099392",
+            "url": "https://pbs.twimg.com/media/G-pUOUma0AAdtUF.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1222773302441148416",
+          "name": "Visegrád 24",
+          "screen_name": "visegrad24",
+          "description": "Aggregating and curating news, politics and current affairs.",
+          "followers_count": 1562018,
+          "friends_count": 2177,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3024,
+          "favorite_count": 11446,
+          "reply_count": 830,
+          "quote_count": 215
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 3024,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2011596566151512311",
+      "text": "RT @hongyuan_mei: To understand the universe, we’ve doubled down on pushing Grok’s mathematical reasoning.\nIt’s deeply rewarding to see tha…",
+      "created_at": "Thu Jan 15 00:29:29 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2011568932251996332",
+        "text": "To understand the universe, we’ve doubled down on pushing Grok’s mathematical reasoning.\nIt’s deeply rewarding to see that progress making a real impact—recognized by the math community.\n@ziangchen_math @haozhu_wang @ssydasheng @keirp1 @Yuhu_ai_",
+        "created_at": "Wed Jan 14 22:39:41 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2011560477688463573",
+          "text": "Disclaimer: I had given early access to internal beta version of Grok 4.20\n\nIt found a new Bellman function for one of the problems I’d been working on with my student N. Alpay. \n\nThe problem reduces to identifying the pointwise maximal function U(p,q) under two constraints and understanding the behavior of U(p,0). \nIn our paper https://t.co/pgJw9MaEA1 we proved U(p,0)\\geq I(p), where I(p) is the Gaussian isoperimetric profile, I(p) ~ p\\sqrt{log(1/p)} as p ~ 0. \n\nAfter ~5 minutes, Grok 4.20 produced an explicit formula U(p,q) = E \\sqrt{q^2+\\tau}, where \\tau is the exit time of Brownian motion from (0,1) starting at p. This yields U(p,0)=E\\sqrt{\\tau} ~ p log(1/p) at p ~ 0, a square root improvement in the logarithmic factor.\n\nAny significance of this result? It will not tell you how to change the world tomorrow. Rather, it gives a small step toward understanding what is going on with averages of stochastic analogs of derivatives (quadratic variation) of Boolean functions: how small can they be? \n\nMore precisely, this gives a sharp lower bound on the L1 norm of the dyadic square function applied to indicator functions 1_A of sets A \\subset [0,1]. \nIn my previous tweet about Takagi function, we saw that the sharp lower bound on ||S_1(1_A)||_1 miraculously coincides with Takagi function of |A| which (surprisingly to me) is related to the Riemann hypothesis. Here, we obtain a sharp lower bound on ||S_2(1_A)||_1 given by E \\sqrt{\\tau}, where Brownian motion starts at |A|. This function belongs to the family of isoperimetric-type profiles, but unlike the fractal Takagi function, it is smooth and does not coincide with the Gaussian isoperimetric profile. \n\nFinally, in harmonic analysis it is known that the square function is not bounded in L^1. The question here was more about curiosity: how exactly does it blow up when tested on Boolean functions 1_A.  Previously, the best known lower bound was |A|(1-|A|) (Burkholder—Davis—Gandy). In our paper, we obtained |A| (1-|A|)\\sqrt{log(1/(|A|(1-|A|)))}. This new Grok’s Bellman function gives |A| (1-|A|) \\log(1/(|A|(1-|A|))) and this bound is actually sharp.",
+          "created_at": "Wed Jan 14 22:06:05 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2011560391147737088",
+              "url": "https://pbs.twimg.com/media/G-p_hJ6bUAAwcQR.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1188168078900649984",
+            "name": "Paata Ivanisvili",
+            "screen_name": "PI010101",
+            "description": "Professor of Mathematics @ UCI. Former postdoc @ Princeton.  Exploring what AI can (and can’t) do in math.",
+            "followers_count": 2990,
+            "friends_count": 71,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 97,
+            "favorite_count": 802,
+            "reply_count": 89,
+            "quote_count": 47
+          }
+        },
+        "user": {
+          "id": "2164964468",
+          "name": "Hongyuan Mei",
+          "screen_name": "hongyuan_mei",
+          "description": "Building AGI @xAI. ex-@GoogleDeepMind, @TTIC_Connect, @jhuclsp.",
+          "followers_count": 3497,
+          "friends_count": 265,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 246,
+          "favorite_count": 1656,
+          "reply_count": 195,
+          "quote_count": 13
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 246,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2011613979890823229",
+      "text": "RT @michaelnicollsx: New @Starlink residential service plans starting at $50/month for 100 Mbps (no data limits)!",
+      "created_at": "Thu Jan 15 01:38:41 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2011567172922065189",
+        "text": "New @Starlink residential service plans starting at $50/month for 100 Mbps (no data limits)!",
+        "created_at": "Wed Jan 14 22:32:41 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2011565942279717023",
+          "text": "Experience seamless connectivity for streaming, gaming, working from home and much more\n\nFind the right plan to fit your lifestyle → https://t.co/YHPNgLicCf https://t.co/WYDVOr0U86",
+          "created_at": "Wed Jan 14 22:27:48 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2011560481102700544",
+              "url": "https://pbs.twimg.com/media/G-p_mZBXIAAnHQl.png"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1330170106501079041",
+            "name": "Starlink",
+            "screen_name": "Starlink",
+            "description": "Internet from space for humans on Earth. Engineered by @SpaceX",
+            "followers_count": 1512570,
+            "friends_count": 29,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 76,
+            "favorite_count": 579,
+            "reply_count": 58,
+            "quote_count": 15
+          }
+        },
+        "user": {
+          "id": "1745904877283442688",
+          "name": "Michael Nicolls",
+          "screen_name": "michaelnicollsx",
+          "description": "VP of Starlink Engineering @ SpaceX",
+          "followers_count": 24669,
+          "friends_count": 154,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 228,
+          "favorite_count": 1644,
+          "reply_count": 196,
+          "quote_count": 16
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 228,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2011618024181432724",
+      "text": "RT @SpaceX: Dragon separation confirmed https://t.co/fvkyqAuZ29",
+      "created_at": "Thu Jan 15 01:54:45 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2011564473610301440",
+          "url": "https://video.twimg.com/amplify_video/2011564473610301440/vid/avc1/3840x2160/5iXVICfdrNZqur_0.mp4?tag=21",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": {
+        "id": "2011564565180432682",
+        "text": "Dragon separation confirmed https://t.co/fvkyqAuZ29",
+        "created_at": "Wed Jan 14 22:22:20 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2011564473610301440",
+            "url": "https://video.twimg.com/amplify_video/2011564473610301440/vid/avc1/3840x2160/5iXVICfdrNZqur_0.mp4?tag=21",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 40674462,
+          "friends_count": 120,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 846,
+          "favorite_count": 6892,
+          "reply_count": 292,
+          "quote_count": 66
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 846,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

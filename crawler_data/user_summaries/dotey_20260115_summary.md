@@ -1,0 +1,19 @@
+**新工具/技术**  
+- Claude Code（Anthropic 的 agent 平台）：强调长期代理与自主迭代能力，适合把任务交给 agent 端到端执行。  
+- Codex（OpenAI 的编程模型）：擅长生成 Python 脚本类解决方案，常用于 coding agent 场景。  
+- baoyu-gemini-web（dotey 发布的 skill）：本地技能，能让 Claude 等 agent 调用 Gemini Web 做图。  
+- Skill/Agent 框架（skill/mcp 讨论）：把能力封装成可调用技能的架构，是 agent 可组合性的基础。  
+- “risograph” 提示词技巧：图像生成 prompt 技巧，用于产生特定印刷效果的图像风格。
+
+**核心观点/方法论**  
+- 对 AGI 的工程化定义：AGI = 能“搞定事情”的能力，需三要素：知识（预训练）、推理（算力/思考）、试错迭代（长期代理）。这个定义把注意力放在能否完成真实任务上。  
+- Skill 的沙箱悖论：要安全就要沙箱隔离，但沙箱里没有私有数据就影响可用性，安全与可用性需要在设计上权衡。  
+- Agent 的价值不在于纯 API 调用，而在于自主决策：在信息不足或走入死胡同时能换策略、自行搜索信号和迭代。  
+- 模型行为偏好是训练结果：比如 Claude 更偏向用 bash 命令，Codex 更偏 Python，反映了不同团队和 RLHF 的影响。  
+- 评估 agent 的方法论：不要只问问题，要把一个有明确目标的完整任务交给 agent，观察其从执行到卡住再到自我修正的全过程。
+
+**实践经验/案例**  
+- 招聘 DevRel 的 agent 案例：agent 在 31 分钟内从 LinkedIn→YouTube→Twitter 交叉筛选，按演讲、互动、活跃度和离职信号缩到可候选人，展示了端到端的自主搜寻与决策流程。  
+- 画图流程实操：dotey 把封面图作为 skill 生成并公开，说明 agent 通过本地安装的画图技能（如 baoyu-gemini-web）自动调用外部模型做图。  
+- 权限与可用性并存问题：如“Claude Coworker”整理文件夹但没权限继续操作，提示 agent 落地时要考虑权限/集成边界。  
+- 平台治理影响生态：X 平台收紧 infofi 类付费发帖 API，能直接改善噪声环境，影响上层 agent/应用的可见性和数据来源。

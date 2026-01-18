@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 168838,
+    "followers_count": 168861,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260118",
-  "last_updated": "2026-01-18T16:05:37.656300",
-  "tweet_count": 13,
+  "last_updated": "2026-01-18T18:06:35.806977",
+  "tweet_count": 14,
   "tweets": [
     {
       "id": "2012680767143391534",
@@ -631,6 +631,93 @@
       },
       "stats": {
         "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2012928731472388169",
+      "text": "RT @TanShilong: 基于 @xpg0970 的思路和解析，实验基本成功。\n主要思路包括以下几点：\n\n1. 基础素材的准备，也就是首尾帧。就像最终呈现的结果，首帧是一个脏乱差的图片，尾帧是一个最终的装修结果图。基于这个思路，就比较好办了。… https://t.co/…",
+      "created_at": "Sun Jan 18 16:43:02 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2012871632696824149",
+        "text": "基于 @xpg0970 的思路和解析，实验基本成功。\n主要思路包括以下几点：\n\n1. 基础素材的准备，也就是首尾帧。就像最终呈现的结果，首帧是一个脏乱差的图片，尾帧是一个最终的装修结果图。基于这个思路，就比较好办了。\n\n如果你有一张比较不错的图（比如你直接把你家的客厅、卧室拍下来，或者之前去网上找精致的装修图）。让AI帮你完成做旧。\n\n提示词如下：\n“基于底图，生成一张年久失修，脏乱的室内场景，有很多老旧的家具与肮脏的使用痕迹”\n根据需求决定是否要移除家具，如果需要，增加这个提示词：\n“移除家具，保留脏乱的毛坯房的效果，但是要注意保持结构的一致性”\n\n这样我们就能获得一张脏乱差的原始底图了。\n\n至于尾帧，我们可以直接用比较好的成果图，如果你觉得你现有的这种照片不够好看，可以让AI帮你进行润色和修改。\n\n提示词参考：\n“保持原图视角和墙体结构，生成室内{客厅} 真实渲染图。进行合理的室内家具布置与材质搭配，为室内天花板、墙面、地板分别赋予材质，整体呈现 {现代轻奢风格} 。房间内外均进行真实感渲染。包括 {沙发, 地毯 ,茶几} ，材质质感逼真，光线自然。整体画面呈现出专业建筑摄影的光线效果，具备4K超高清分辨率的图像细节。”\n\n拿到首尾帧之后就可以进行视频生成了，在测试了即梦、可灵、Veo之后。目前最稳定的就是可灵2.6（O1在这个场景下表现一般，不推荐）\n\n视频提示词如下：\n房间装修延时摄影视频。工人们在一间简陋的毛坯房内工作，水泥墙面，。快进画面展示：人们清理杂物和垃圾袋、移除所有旧家具，{将房屋还原至毛坯房，擦洗墙壁、将灰色水泥墙刷成现代轻奢风格、先完成主体框架装修，再放入家具，再逐渐将一个房屋搭建成最终的现代轻奢风格的客厅}。多名工人在加速画面中快速移动，工具和材料不断出现又消失，窗外自然光线随时间变化。施工灰尘逐渐落定，从冷蓝色调转变为温暖的环境光。纪实风格，8-16倍速延时，4K画质。\n\n中间的步骤可以再详细点，我这个比较泛用性。这个版本还是可以再次进行迭代的",
+        "created_at": "Sun Jan 18 12:56:09 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2012868559572234240",
+            "url": "https://video.twimg.com/amplify_video/2012868559572234240/vid/avc1/1920x1080/cmR9MeKKixNEMNZc.mp4?tag=21",
+            "bitrate": 10368000
+          },
+          {
+            "type": "photo",
+            "id": "2012870504554864640",
+            "url": "https://pbs.twimg.com/media/G-8nDyraoAAUKhW.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2012870504709767169",
+            "url": "https://pbs.twimg.com/media/G-8nDzQWQAEfJ7G.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2012219865403109808",
+          "text": "首尾帧图+过渡提示词就能搞定这种视频了，用的keling2.6模型\n\n原视频15秒，我这个10秒有些赶\n\n制作过程如下：\n\n提示词生成用的Claude Opus4.5模型辅助\n\n第一步：\n\n这是用的nano banana pro的画图提示词，gemini会员可以免费用flow进行一次4张图生成，挑选喜欢的：\n\nCinematic film set of a cramped 2026 Chinese urban village rental room 城中村出租屋, shot on ARRI Alexa, overcast daylight through small dirty window with security bars, claustrophobic 10 square meter single room, realistic contemporary Chinese youth poverty aesthetic: unmade bed with cheap Pinduoduo bedsheets 拼多多床单, smartphone charging cables everywhere, empty Meituan and https://t.co/1vopw9J9Ud takeout containers 美团饿了么外卖盒 piled up, instant noodle cups, disposable chopsticks, energy drink cans 东鹏特饮, cluttered IKEA-style cheap furniture, clothes hanging on wall hooks and door frame, small foldable desk with gaming laptop and LED strip lighting, ashtray with cigarette butts, vape pen on nightstand, shared bathroom slippers, moldy walls with water stains, exposed electrical wiring, mini fridge humming, cheap electric kettle, instant coffee sachets, damp laundry hanging indoor on rope, cracked smartphone screen charging, Bluetooth earbuds case, livestreaming ring light in corner, Taobao cardboard boxes 淘宝纸箱 stacked, QR code payment signs visible, fluorescent ceiling light mixed with warm RGB LED, humid southern China atmosphere, Bi Gan film aesthetic 毕赣电影风格, contemporary Chinese indie cinema, 35mm film grain, desaturated teal and orange color grade, hyperrealistic textures, shallow depth of field, melancholic lonely atmosphere。 \n\n第二步，垫图第一步生成的满意图片，让它做一张装修整理后的温馨美观房间\n\n第三步，把这两张图片分别作为要生成视频的首帧和尾帧插入到视频生成模型的编辑页面\n\n第四步，把首尾帧图片发给让Claude Opus4.5，让它帮你去做过渡视频的提示词，从图1开始到图2结束画面\n\n第五步，拿到过渡提示词后，切到第三步的视频生成编辑页面黏贴提示词开始生成\n\n然后就是循环测试这个过渡提示词\n\n这个过渡提示词里的关键词要有“禁止魔法过渡，要用快进展示几个人在工作清理的画面”的相关描述\n\n我用的过渡提示词是：\n\n房间装修延时摄影视频。工人们在一间简陋的出租屋内工作，水泥墙面，铁栅窗户。快进画面展示：人们清理杂物和垃圾袋、擦洗墙壁、将灰色水泥墙刷成温暖的米色、沿天花板安装串灯、搭建带储物功能的木质床架、铺设中性色调床品和抱枕、在窗台摆放绿植盆栽、悬挂纱帘、整理书桌并摆放电脑和装饰品。多名工人在加速画面中快速移动，工具和材料不断出现又消失，窗外自然光线随时间变化。施工灰尘逐渐落定，从冷蓝色调转变为温暖的环境光。纪实风格，8-16倍速延时，4K画质。",
+          "created_at": "Fri Jan 16 17:46:15 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "video",
+              "id": "2012216263271985152",
+              "url": "https://video.twimg.com/amplify_video/2012216263271985152/vid/avc1/1928x1072/ZZ3UyFNtNNxxSf0U.mp4?tag=21",
+              "bitrate": 10368000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1699791054814445568",
+            "name": "神奇小喷菇AIGC",
+            "screen_name": "xpg0970",
+            "description": "1.教普通人用AI解决实际问题的实践者\nhttps://t.co/EHvJ7Y3JQ8产品观猹员\n3.喜欢聊存在主义，分享一些对赚钱的思考",
+            "followers_count": 1728,
+            "friends_count": 242,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 192,
+            "favorite_count": 999,
+            "reply_count": 33,
+            "quote_count": 13
+          }
+        },
+        "user": {
+          "id": "81998985",
+          "name": "MarioTan",
+          "screen_name": "TanShilong",
+          "description": "Architect, Designer, AI PM,｜ 公众号：角落工作室 | Wechat: tanshilongmario | 提示词填空器作者 https://t.co/68rxs6bw2C",
+          "followers_count": 2414,
+          "friends_count": 1382,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 27,
+          "favorite_count": 160,
+          "reply_count": 4,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 27,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

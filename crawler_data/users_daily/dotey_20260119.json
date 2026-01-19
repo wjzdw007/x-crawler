@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 169001,
+    "followers_count": 169041,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260119",
-  "last_updated": "2026-01-19T06:09:54.109020",
-  "tweet_count": 2,
+  "last_updated": "2026-01-19T08:07:42.862709",
+  "tweet_count": 3,
   "tweets": [
     {
       "id": "2013044625238339994",
@@ -51,6 +51,51 @@
         "favorite_count": 3,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2013148926426132938",
+      "text": "为什么 Claude Skills 的爆发点在 2026 年 1 月？\n\n问：Claude Skills 是去年 10 月中就推出的，为什么现在才突然火起来？\n\n这是个很好的问题。Claude Skills 确实在 2025 年 10 月中旬就发布了，但直到 2026 年 1 月才真正爆火。这背后有表面原因，也有更深层的逻辑。核心原因就是这东西如果只能在技术圈自嗨，它是火不起来的。去年 10 月份 Skills 编程领域其实很快就开始用起来了，而现在火，只是因为它出圈了，在技术之外的领域火起来了，非技术人员也用起来了。\n\nSkills 真正的价值其实是在非编程领域。去年 Coding Agent（比如 Claude Code、OpenCode）开始在非编程领域开花，而 Skills 的设计特点让它能很快找到 Agent 在非编程领域上的场景落地。\n\n1. 有 bash 和脚本能力，可以自动化本机操作\n\nSkills 让 Claude 能借助代码脚本操作你的本机系统，把很多琐碎的电脑操作变成自动化操作。\n\nClaude Code 的创建者 Boris Cherny 在 X 上分享过一个有趣的观察：自从 Claude Code 发布以来，他发现用户们在用它做各种非编码的工作——做度假研究、做 PPT、清理邮件、取消订阅、从硬盘恢复婚礼照片、监控植物生长，甚至控制烤箱。\n\n> Since we launched Claude Code, we saw people using it for all sorts of non-coding work: doing vacation research, building slide decks, cleaning up your email, cancelling subscriptions, recovering wedding photos from a hard drive, monitoring plant growth, controlling your oven.\n>\n> https://t.co/vDTIR9c3xQ\n\n这些场景和写代码完全不沾边，但 Skills + bash 能力的组合让这一切成为可能。比如我自己就做了一些工作流，帮我采集信息、写作、写 PPT、画漫画、发布，极大提升效率。像发文章到公众号、X Article 这些，以前需要手动重复的操作，现在一个 Skill 就搞定了。\n\n2. Skills 可以相互调用，用自然语言编排工作流\n\n如果是单一的 skill，作用其实有限。但当你有多个 skills，并且 skills 还可以相互调用，那意味着你可以编排工作流。\n\nSkills 让 AI 可以像《黑客帝国》主角 Neo 那样瞬间学会新技能：“I know kung fu”。Claude 会根据任务自动加载需要的 Skill，完成后再卸载，整个过程无需用户干预。\n\n而最神奇的地方在于，你只需要用自然语言去编排工作流。这中间会有 Agent/大模型去解读你的自然语言，按照工作流执行，有问题还会帮你修复。这极大地解决了非专业用户需要程序员协助编排工作流的问题。\n\n3. Skills 本身易于分发，几乎成了每个 agent 的标配\n\n一个 skill 只要有一个 https://t.co/05rGqABuRg markdown 文件和辅助的脚本或者文档，打个 zip 包就能发布。这种轻量级的设计让分发变得极其简单。\n\n有个时间点很重要，2025 年 12 月 18 日，Anthropic 宣布将 Agent Skills 规范开放为跨平台标准。很快，微软在 VS Code 和 GitHub Copilot 中集成了对 Agent Skills 的支持，OpenAI 也在 ChatGPT 的代码解释器和 Codex CLI 中采用了几乎相同的技能目录结构。\n\nSkills 在 10 月发布时，主要还是被定位为开发者工具。但随着生态成熟、开放标准确立、以及 Cowork 这样面向普通用户的产品推出，Skills 在非编程领域的价值才真正被释放出来。\n\n回顾这个过程：\n10 月：Skills 发布，开发者圈小范围关注\n11-12 月：技能规范开放、生态扩展、用户积累经验\n1 月：产品更新 + 非编程场景落地 + 病毒式传播 = 爆发\n\nSkills 的爆发是现在它找到了真正的价值定位，让非程序员也能通过自然语言编排复杂的自动化工作流。这才是 Skills 真正火起来的原因，随着更多场景被发掘出来，还会持续的火上一段时间。",
+      "created_at": "Mon Jan 19 07:18:01 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2013148846973440000",
+          "url": "https://pbs.twimg.com/media/G_AkNc_W0AAfDqK.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2013106535677743440",
+        "text": "@dotey 感觉最近skills相关的中文帖子突然多了起来，但记得Claude skills本身是去年10月中就推出了，请问一下宝玉老师觉得为啥skills的爆发点在1月份的现在啊？",
+        "created_at": "Mon Jan 19 04:29:34 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2833481",
+          "name": "RichChat",
+          "screen_name": "richardchang",
+          "description": "Tech enthusiast | AI aficionado | Sharing original insights on AI trends, tools, and applications |  分享AI趋势、工具及应用的原创见解，欢迎关注和交流 | 公众号 - 檬查查",
+          "followers_count": 1562,
+          "friends_count": 530,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 19,
+        "reply_count": 9,
+        "quote_count": 2
       }
     }
   ]

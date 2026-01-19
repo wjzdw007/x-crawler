@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-01-19T01:36:41.448714",
+  "tweet_count": 14,
+  "summary": "**新工具/技术**\n- comic skill：一个把输入素材自动生成漫画剧本、分镜与提示词的 Skill，能产出连贯的漫画页面和教程，便于快速迭代创作。\n- Claude Code + Skill 集成：在 Claude Code 中跑通 Skill 的流水线，能让模型自动拆分分镜并管理上下文与提示词。\n- Gemini CLI / MJ/SD 提示词套件：将角色特征封装成固定词包，直接输出给 Midjourney/Stable Diffusion 使用以保证风格一致性。\n- Keling 2.6（视频模型）：用于首尾帧到过渡视频的生成，实践中对延时/装修类视频效果稳定。\n- 开源 Skills 库：作为技术形态存在，天然有利于生态与信任建设，但单纯开源不易直接变现。\n\n**核心观点/方法论**\n- Skills 是短期红利也是长期壁垒，但壁垒来源于团队在 Prompt、上下文与工程能力上的积累，而非 Skill 本身的形式。\n- 用三个阶段解释：Chatbot+Prompt → Agent+上下文工程 → Agent+Skills，说明能力演进与竞争优势的转移路径。\n- 投资 Skills 实质上是投资能力（prompt engineering、上下文压缩、工具整合），这些能力能被迁移到下一波技术中继续发挥价值。\n- 垂直领域的护城河在于独有的信息资产/数据，Agent/Skill 是调用这些资产的手段，而非最终护城河。\n\n**实践经验/案例**\n- 漫画 Skill 实操流程：给一个脑洞→Claude 自动拆分分镜→提取角色特征成固定词包→生成针对 MJ/SD 的风格与光影提示词，能保持角色与画面尺寸一致。\n- 多位用户在 Claude Code 与 Gemini CLI 上复现实验，反馈画风/肖像一致性和尺寸一致性良好。\n- 装修延时视频流程（落地示例）：准备首尾帧（脏乱→装修后）→用模型分别生成首尾图→让 Claude 生成过渡提示词→用 Keling2.6 等视频模型生成延时视频。\n- Claude Code 的 auto-compact（自动压缩上下文）可配置（/config），对上下文工程策略有直接影响，实操时需注意开启/禁用的权衡。\n- 开源 Skills 的实践结论：有助于建立信任和生态扩展，但需要设计配套的商业化路径才能长期支撑团队。",
+  "metadata": {
+    "original_tweets": 11,
+    "retweets": 3,
+    "media_tweets": 3,
+    "data_hash": "9377ea58",
+    "user": "dotey"
+  }
+}

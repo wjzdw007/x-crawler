@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 169474,
+    "followers_count": 169531,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260120",
-  "last_updated": "2026-01-20T06:08:30.606232",
-  "tweet_count": 2,
+  "last_updated": "2026-01-20T08:07:34.392262",
+  "tweet_count": 4,
   "tweets": [
     {
       "id": "2013483577942429830",
@@ -45,6 +45,96 @@
         "favorite_count": 5,
         "reply_count": 3,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2013516064361943148",
+      "text": "推荐这个基于 Claude Agent SDK + Electron 开发的开源 Agent\n\nCraft Agents 是 Craft 团队开源的一款 AI Agent 工具，核心理念是为 Claude Code 提供一个更友好的图形界面，让用户能更高效地与 AI 编程助手协作。\n\n核心特色\n\n告别命令行的 Claude Code 体验——保留 Claude Code 的全部能力，但用精心设计的 UI/UX 包装。作者坦言自己不喜欢终端界面，更偏爱优雅的视觉设计、字体排版和触控交互。\n\n解决实际痛点——针对 Claude Code 使用中常见的困扰：难以审查计划、不易理解代码变更的原因、多任务切换困难等问题，提供了更清晰的工作流。\n\n非技术人员也能用——Craft 内部的财务、市场、客服、HR 团队都已开始日常使用，证明了它对「非程序员」的友好度。\n\n可 fork、可定制——采用 Apache 2.0 协议开源。作者认为未来的个人软件不是从零构建，而是「fork + remix」——基于现有项目二次定制，打造真正属于自己的工具。\n\n技术背景\n\n基于 Web 技术栈开发，底层调用 Claude Agent SDK。作者是有 20+ 年经验的 iOS/UIKit 工程师，这是他首次认真尝试 Web 开发，整个项目 100% 代码由 Claude 编写，但架构决策和 UX 细节打磨完全由人主导。\n\n项目地址\n下载：https://t.co/eV1tE0hnfB\n源码：https://t.co/nOJxIrSlz6",
+      "created_at": "Tue Jan 20 07:36:53 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2013515154671939584",
+          "url": "https://pbs.twimg.com/media/G_FxXXgWMAA07ei.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2013302678105796764",
+        "text": "https://t.co/J701WKvfpB",
+        "created_at": "Mon Jan 19 17:28:58 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "69859391",
+          "name": "Balint Orosz",
+          "screen_name": "balintorosz",
+          "description": "Founder @craftdocs",
+          "followers_count": 2326,
+          "friends_count": 570,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 22,
+          "favorite_count": 411,
+          "reply_count": 22,
+          "quote_count": 13
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 18,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2013519522032939459",
+      "text": "Sulaiman Ghori（昵称Sully）是xAI的一名工程师，近日在一档播客节目中接受采访，畅谈xAI内部文化和项目进展。然而，这次畅所欲言直接导致他被马斯克开除。\n\n完整视频地址：https://t.co/k6DiIQMjNq\n\n原因很简单：他把xAI最核心的战略路线图和商业机密全说出来了。\n\n他到底泄露了什么？\n\n1. Macrohard项目的核心概念\n\nMacrohard是xAI正在开发的人类模拟器（Human Emulator）项目。Sully在采访中详细解释了这个概念：\n\n> 我们正在构建的是人类模拟器……任何人类在数字世界中通过键盘鼠标输入、看屏幕做决策的事情，我们都直接模拟人类的行为。不需要任何软件适配，我们可以部署到任何人类目前所在的场景中。\n\n这相当于把产品定位和技术路线完全公开给了竞争对手。\n\n2. Tesla汽车作为部署平台的战略计划\n\n这是最劲爆的部分。Sully透露了一个尚未公开的重大战略：\n\n> 如果我们想部署100万个人类模拟器，我们需要100万台计算机。怎么做到？答案两天后就出现了——Tesla汽车的计算机。\n\n他进一步解释：\n- 北美有约400万辆Tesla汽车\n- 其中一半以上配备Hardware 4\n- 这些车70-80%的时间处于闲置状态（通常在充电）\n- xAI可以付费租用车主的闲置算力来运行人类模拟器\n- 车主可以用这笔钱来支付租赁费用\n\n> 这是纯软件实现，不需要任何基础设施建设。\n\n这个信息的敏感程度不言而喻——这是xAI相对于OpenAI、Anthropic、Google等竞争对手的重大战略优势，现在被公开了。\n\n3. 与竞争对手完全相反的技术路线\n\nSully透露了xAI在模型策略上的核心决策：\n\n> 对于其他实验室的人类模拟器尝试，他们的方法是做更多推理、构建更大的模型。我们的决定让我们走上了完全相反的道路。\n\nxAI选择的是速度优先：\n- 目标是比人类快1.5倍，实际可能达到8倍甚至更快\n- 使用更小的模型，可以更快迭代（从4周缩短到1周）\n- 逻辑是：没人愿意等10分钟让电脑做一件我5分钟就能做完的事，但如果10秒就能完成，多少钱我都愿意付\n\n4. 内部测试细节\n\nSully还透露他们已经在公司内部部署虚拟员工进行测试：\n\n> 我们开始在公司内部测试人类模拟器作为员工……有时候有人会说“嘿，你能帮我做这件事吗？”\n> 虚拟员工说“好的，来我桌子这边”，结果他们走过去发现什么都没有。\n> 有好几次有人问我：“组织架构图上这个向你汇报的人今天没来吗？”，那只是一个AI虚拟员工。\n\n5. 营收目标和价值估算\n\n虽然没有透露具体数字，但他说了这些：\n\n> 我们现在大约是每个commit价值250万美元，我今天做了5个。\n>\n> 所以你今天创造了1250万美元的价值？\n>\n> 是的，杠杆效应极其强大。\n\n他还提到Macrohard有具体的营收目标，并且每天都在计算延误或加速带来的收入变化。\n\n6. 团队规模和运营细节\n\n- iOS团队在某个时期只有3个人\n- Macrohard项目最初只有2个人\n- 销售团队全是工程师\n- 公司内部几乎没有文档（我们做事太快，没时间写文档）\n- 管理层只有三层：IC、联合创始人/经理、Elon\n\n---\n\n为什么这些信息如此敏感？\n\n对竞争对手的价值\n\n1. 产品方向：现在OpenAI、Anthropic、Google都知道xAI在做什么了\n2. 技术路线：小模型+速度优先的策略被公开，竞争对手可以评估是否跟进\n3. 部署策略：Tesla算力网络的计划暴露了xAI独特的竞争优势\n4. 内部进度：竞争对手可以估算xAI的发展阶段\n\n对xAI的商业影响\n\n- Tesla汽车租用算力的计划可能需要重新评估\n- 与客户的保密协议可能受到影响（他提到了与客户合作测试人类模拟器的细节）\n- 内部文化和运营方式被完全曝光",
+      "created_at": "Tue Jan 20 07:50:38 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2013364737074192549",
+        "text": "&gt; How to ruin your entire life in 1 hour\n\n&gt; go on a podcast and talk about your employer. https://t.co/DZcZzhaxlI",
+        "created_at": "Mon Jan 19 21:35:34 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2013364730451136512",
+            "url": "https://pbs.twimg.com/media/G_DojhnXEAANKQ-.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "800854096219471872",
+          "name": "Yuchen Jin",
+          "screen_name": "Yuchenj_UW",
+          "description": "Co-founder & CTO @hyperbolic_labs cooking fun AI systems. Prev: OctoAI (acquired by @nvidia) building Apache TVM, PhD @ University of Washington.",
+          "followers_count": 76257,
+          "friends_count": 660,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 73,
+          "favorite_count": 3095,
+          "reply_count": 144,
+          "quote_count": 21
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 6,
+        "reply_count": 2,
+        "quote_count": 1
       }
     }
   ]

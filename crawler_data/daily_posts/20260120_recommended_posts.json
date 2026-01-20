@@ -1,12 +1,944 @@
 {
   "date": "20260120",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-01-20T04:22:06.689096",
-  "tweet_count": 205,
-  "unique_tweet_count": 205,
+  "last_crawl_time": "2026-01-20T06:08:30.548458",
+  "tweet_count": 223,
+  "unique_tweet_count": 223,
   "total_crawled": 405,
-  "duplicates_removed": 200,
+  "duplicates_removed": 182,
   "tweets": [
+    {
+      "id": "2013493293322007036",
+      "text": "RT @teslaownersSV: Literally every Tesla owner while on FSD https://t.co/SSbGNtQlLy",
+      "created_at": "Tue Jan 20 06:06:24 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2013419724357451776",
+          "url": "https://video.twimg.com/amplify_video/2013419724357451776/vid/avc1/576x1024/sb9p2vyiKOkQkxW0.mp4?tag=21",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": {
+        "id": "2013419867186053241",
+        "text": "Literally every Tesla owner while on FSD https://t.co/SSbGNtQlLy",
+        "created_at": "Tue Jan 20 01:14:38 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2013419724357451776",
+            "url": "https://video.twimg.com/amplify_video/2013419724357451776/vid/avc1/576x1024/sb9p2vyiKOkQkxW0.mp4?tag=21",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1016059981907386368",
+          "name": "Tesla Owners Silicon Valley",
+          "screen_name": "teslaownersSV",
+          "description": "The most notorious Tesla Club in the world. Creator of @thextakeover and taking the Takeover global. We amplify sustainability and philanthropy.",
+          "followers_count": 1382276,
+          "friends_count": 824,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 28,
+          "favorite_count": 191,
+          "reply_count": 43,
+          "quote_count": 5
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232547320,
+        "friends_count": 1271,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 28,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2013490995623801049",
+      "text": "They will do this nationally as soon as they gain power and democracy will end",
+      "created_at": "Tue Jan 20 05:57:16 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2013427413632303373",
+        "text": "While conservatives were bleating \"if we fight dirty, we're no better than them\" it took Democrats less than 24 hours after winning to put in express lanes to Sodom and Gomorrah.",
+        "created_at": "Tue Jan 20 01:44:37 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "879548970082721792",
+          "name": "Rising serpent 🇺🇸",
+          "screen_name": "rising_serpent",
+          "description": "Did not consent to the blue check.",
+          "followers_count": 261964,
+          "friends_count": 3435,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 427,
+          "favorite_count": 1146,
+          "reply_count": 41,
+          "quote_count": 12
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232547320,
+        "friends_count": 1271,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 217,
+        "favorite_count": 1491,
+        "reply_count": 455,
+        "quote_count": 19
+      }
+    },
+    {
+      "id": "2013490814064767458",
+      "text": "想让 AI 自动读取 doc/docx 文档，再基于这些文档生成新文档，这种场景能做成 Skill 吗？\n\n可以，但做之前先想清楚一个问题：这是一次性任务，还是需要反复做的任务？\n\n如果只是一次性任务，没必要做成 Skill——Skill 的核心价值在于复用。\n\n如果是需要反复做的任务，建议按这个流程走：\n\n1. 先手动做几遍，沉淀最佳实践。摸清楚哪些步骤是固定的，哪些地方容易出问题，什么样的输出质量最好。\n\n2. 让 Agent 帮你创建 Skill。新开一个会话，在支持 Skills 的 Agent 里把任务完整做一遍，做完后告诉它：把刚才的操作创建成一个 Skill，方便以后复用。\n\n3. 用 Skill 做任务，持续迭代优化。以后都用这个 Skill 来执行任务。每次完成后检查输出，哪里不满意就告诉 Agent，让它改进并更新 Skill。\n\n简单说，Skill 就是可复用的最佳实践。先跑通流程，再固化成 Skill，然后在实战中不断打磨，这才是正确的使用姿势。",
+      "created_at": "Tue Jan 20 05:56:33 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2013490791331622912",
+          "url": "https://pbs.twimg.com/media/G_FbNO_XcAA660z.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 169474,
+        "friends_count": 1533,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2013490738919886981",
+      "text": "And the fraudsters always have amazingly good fake sob stories",
+      "created_at": "Tue Jan 20 05:56:15 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2013419310165733767",
+        "text": "Palantir cofounder\n\n“@elonmusk made a great point when I was involved as a kid at PayPal: whenever you turn off fraud or grift, the people who would scream the most were the fraudsters.”\n https://t.co/n5Kstgr9p3",
+        "created_at": "Tue Jan 20 01:12:25 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2005058607902052352",
+            "url": "https://video.twimg.com/amplify_video/2005058607902052352/vid/avc1/1206x664/xw_WfRX8lyF_d69K.mp4?tag=21",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1016059981907386368",
+          "name": "Tesla Owners Silicon Valley",
+          "screen_name": "teslaownersSV",
+          "description": "The most notorious Tesla Club in the world. Creator of @thextakeover and taking the Takeover global. We amplify sustainability and philanthropy.",
+          "followers_count": 1382276,
+          "friends_count": 824,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 29,
+          "favorite_count": 341,
+          "reply_count": 22,
+          "quote_count": 5
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232547320,
+        "friends_count": 1271,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 206,
+        "favorite_count": 1532,
+        "reply_count": 404,
+        "quote_count": 14
+      }
+    },
+    {
+      "id": "2013487374488002848",
+      "text": "RT @cb_doge: \"In person voting with ID, End of Story.\"\n\nElection integrity starts with voter ID. Without it, democracy fails. https://t.co/…",
+      "created_at": "Tue Jan 20 05:42:53 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2013333057185685926",
+        "text": "\"In person voting with ID, End of Story.\"\n\nElection integrity starts with voter ID. Without it, democracy fails. https://t.co/TKEZNQVpR5",
+        "created_at": "Mon Jan 19 19:29:41 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2013332772899766272",
+            "url": "https://video.twimg.com/amplify_video/2013332772899766272/vid/avc1/1278x1080/HSwboEiqCSjhSHAb.mp4?tag=21",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1809780,
+          "friends_count": 875,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 415,
+          "favorite_count": 2356,
+          "reply_count": 343,
+          "quote_count": 25
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232547320,
+        "friends_count": 1271,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 415,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2013486686219468825",
+      "text": "💯",
+      "created_at": "Tue Jan 20 05:40:09 +0000 2026",
+      "lang": "art",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2013345396303745449",
+        "text": "\"Gavin Newsom, one of the worst governors in the world signed a bill that you are not allowed to ask a person, even ask them whether or not they have a voter id. This is because they want to cheat.\" \n\n一 Donald Trump\n\n https://t.co/PzAAu8Hn2V",
+        "created_at": "Mon Jan 19 20:18:43 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "1907262334059323392",
+            "url": "https://video.twimg.com/ext_tw_video/1907262334059323392/pu/vid/avc1/720x720/PX928W4nIAga2WIF.mp4?tag=12",
+            "bitrate": 1280000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1809780,
+          "friends_count": 875,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 522,
+          "favorite_count": 2661,
+          "reply_count": 205,
+          "quote_count": 23
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232547320,
+        "friends_count": 1271,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 581,
+        "favorite_count": 4574,
+        "reply_count": 609,
+        "quote_count": 21
+      }
+    },
+    {
+      "id": "2013486586403729602",
+      "text": "RT @XFreeze: MACROHARD and MACROHARDRR from space 🛰️\n\nxAI's powerhouse https://t.co/RJWUZfHZSm",
+      "created_at": "Tue Jan 20 05:39:45 +0000 2026",
+      "lang": "fr",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2013480768857628672",
+          "url": "https://pbs.twimg.com/media/G_FSF2XW4AAPQxr.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2013482854760817047",
+        "text": "MACROHARD and MACROHARDRR from space 🛰️\n\nxAI's powerhouse https://t.co/RJWUZfHZSm",
+        "created_at": "Tue Jan 20 05:24:55 +0000 2026",
+        "lang": "fr",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2013480768857628672",
+            "url": "https://pbs.twimg.com/media/G_FSF2XW4AAPQxr.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 115163,
+          "friends_count": 1516,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 73,
+          "favorite_count": 593,
+          "reply_count": 99,
+          "quote_count": 12
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232547320,
+        "friends_count": 1271,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 73,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2013486265786642655",
+      "text": "RT @ReiiValentinaa: Throwback to Elon Musk straight-up owning Don Lemon right on The Don Lemon Show😂 https://t.co/iMAkVmnf69",
+      "created_at": "Tue Jan 20 05:38:29 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2013341078271803392",
+          "url": "https://video.twimg.com/amplify_video/2013341078271803392/vid/avc1/576x1024/E0sjKSyn--wlMrrx.mp4?tag=21",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": {
+        "id": "2013341150057251227",
+        "text": "Throwback to Elon Musk straight-up owning Don Lemon right on The Don Lemon Show😂 https://t.co/iMAkVmnf69",
+        "created_at": "Mon Jan 19 20:01:50 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2013341078271803392",
+            "url": "https://video.twimg.com/amplify_video/2013341078271803392/vid/avc1/576x1024/E0sjKSyn--wlMrrx.mp4?tag=21",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2013339135302414563",
+          "text": "@Polymarket The most entertaining outcome, especially if ironic, is the most likely",
+          "created_at": "Mon Jan 19 19:53:50 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 232547320,
+            "friends_count": 1271,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1158,
+            "favorite_count": 40718,
+            "reply_count": 585,
+            "quote_count": 66
+          }
+        },
+        "user": {
+          "id": "1348834517470085120",
+          "name": "Reii",
+          "screen_name": "ReiiValentinaa",
+          "description": "Independent journalist • Anti-Woke • reiirenae.digital@gmail.com",
+          "followers_count": 64865,
+          "friends_count": 1832,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1982,
+          "favorite_count": 15823,
+          "reply_count": 249,
+          "quote_count": 60
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232547320,
+        "friends_count": 1271,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1982,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2013485738877165972",
+      "text": "RT @cb_doge: Grok explained the newly open sourced X algorithm in 10 clear and easy points:\n\n1) When you open the \"For You\" feed on X, it s…",
+      "created_at": "Tue Jan 20 05:36:23 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2013479028158800185",
+        "text": "Grok explained the newly open sourced X algorithm in 10 clear and easy points:\n\n1) When you open the \"For You\" feed on X, it starts by gathering your personal info, like who you follow and what posts you've liked, replied to, or shared in the past—this helps customize what you see.\n\n2) Next, it collects potential posts from two main places: ones from people you already follow (called in-network) and new discoveries from across all of X (called out-of-network) that might interest you.\n\n3) The in-network posts come from a fast system that stores recent updates from your followed accounts in memory, making it quick to grab without delays.\n\n4) For out-of-network posts, it uses smart AI to compare your interests (based on your history) with all posts on X, picking ones that seem similar or relevant through a matching process.\n\n5) Once it has these candidate posts, it adds extra details to each, like the post's text, images, videos, author's name, and whether they're verified or if it's behind a paywall.\n\n6) Then, it cleans up the list by removing duplicates, old posts, your own stuff, anything from blocked or muted people, keywords you don't like, or things you've already seen.\n\n7) Now, a powerful AI model (based on Grok) looks at your past interactions and predicts how likely you are to like, reply, repost, click, or even dislike each post—giving each a score.\n\n8) It combines these predictions into one final score per post, boosting good actions (like likes) and lowering bad ones (like blocks), while adjusting to mix in variety so one person doesn't dominate your feed.\n\n9) The posts are sorted by these scores, and the top ones are selected to create your feed, ensuring a balanced mix of familiar and new content.\n\n10) Finally, it does one last check to remove any deleted, spammy, violent, or inappropriate posts, then serves up the ranked feed for you to scroll through.",
+        "created_at": "Tue Jan 20 05:09:43 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2013478427936882688",
+            "url": "https://pbs.twimg.com/media/G_FP9lwXAAAQz3r.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1809780,
+          "friends_count": 875,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 137,
+          "favorite_count": 770,
+          "reply_count": 261,
+          "quote_count": 47
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232547320,
+        "friends_count": 1271,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 137,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2013484443139281132",
+      "text": "RT @EndWokeness: In 2017, an autistic white kid in Chicago was abducted and tortured by 4 black suspects, livestreamed online \n\nDon Lemon:…",
+      "created_at": "Tue Jan 20 05:31:14 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2013427705258082812",
+        "text": "In 2017, an autistic white kid in Chicago was abducted and tortured by 4 black suspects, livestreamed online \n\nDon Lemon: \"I don't think it's evil\" https://t.co/mnlGqFeycJ",
+        "created_at": "Tue Jan 20 01:45:47 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2013427632797282304",
+            "url": "https://video.twimg.com/amplify_video/2013427632797282304/vid/avc1/1896x1080/7Am5nmRKm6xTgy8D.mp4?tag=21",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1552795969959636992",
+          "name": "End Wokeness",
+          "screen_name": "EndWokeness",
+          "description": "Fighting, exposing, and mocking wokeness. DM for submissions",
+          "followers_count": 3917230,
+          "friends_count": 1337,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4188,
+          "favorite_count": 19981,
+          "reply_count": 578,
+          "quote_count": 168
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232547320,
+        "friends_count": 1271,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4188,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2013483640496496789",
+      "text": "One of the dumbest things ever https://t.co/rJtmbnwHLJ",
+      "created_at": "Tue Jan 20 05:28:03 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2013483632585736192",
+          "url": "https://pbs.twimg.com/media/G_FUsilWAAAAQKk.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232547320,
+        "friends_count": 1271,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 783,
+        "favorite_count": 9253,
+        "reply_count": 1383,
+        "quote_count": 67
+      }
+    },
+    {
+      "id": "2013483577942429830",
+      "text": "https://t.co/CgMEoIPo5c",
+      "created_at": "Tue Jan 20 05:27:48 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 169474,
+        "friends_count": 1533,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 17,
+        "reply_count": 8,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2013483021043933554",
+      "text": "RT @cb_doge: BREAKING: 𝕏 has open sourced its For You feed algorithm, the same production system running today and powered by Grok from xAI…",
+      "created_at": "Tue Jan 20 05:25:35 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2013477113018622151",
+        "text": "BREAKING: 𝕏 has open sourced its For You feed algorithm, the same production system running today and powered by Grok from xAI. The full code is live on GitHub and will be refreshed every 4 weeks.\n\nYour feed blends posts from accounts you follow with posts discovered across all of 𝕏, then ranks them using a Grok based transformer that predicts how likely you are to like, reply, repost, click, or watch. Instead of one simple score, the model predicts many actions and combines them for a more nuanced ranking.\n\nEverything learns directly from user behavior. Intelligence lives inside the model, not scattered pipelines. The system is modular, transparent, and stable, with each post scored independently so results are cacheable and consistent.\n\nThis is one of the most open looks ever at a large scale social feed ranking system.",
+        "created_at": "Tue Jan 20 05:02:06 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2013476839847534592",
+            "url": "https://pbs.twimg.com/media/G_FOhJqWoAAS5zr.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1809780,
+          "friends_count": 875,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 226,
+          "favorite_count": 1224,
+          "reply_count": 379,
+          "quote_count": 61
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232547320,
+        "friends_count": 1271,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 226,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2013482798884233622",
+      "text": "We know the algorithm is dumb and needs massive improvements, but at least you can see us struggle to make it better in real-time and with transparency. \n\nNo other social media companies do this.",
+      "created_at": "Tue Jan 20 05:24:42 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2013471689087086804",
+        "text": "We have open-sourced our new 𝕏 algorithm, powered by the same transformer architecture as xAI's Grok model.\n\nCheck it out here:  https://t.co/3WKwZkdgmB",
+        "created_at": "Tue Jan 20 04:40:33 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "6844292",
+          "name": "Engineering",
+          "screen_name": "XEng",
+          "description": "updates from our engineering team",
+          "followers_count": 1293980,
+          "friends_count": 5,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 171,
+          "favorite_count": 1160,
+          "reply_count": 274,
+          "quote_count": 224
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232547320,
+        "friends_count": 1271,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 817,
+        "favorite_count": 8212,
+        "reply_count": 1755,
+        "quote_count": 182
+      }
+    },
+    {
+      "id": "2013481943850197184",
+      "text": "RT @JoelWBerry: If we can’t get Republicans to pass the most inoffensive, common-sense bill in history, one that’s supported by the vast ma…",
+      "created_at": "Tue Jan 20 05:21:18 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2013447593573966092",
+        "text": "If we can’t get Republicans to pass the most inoffensive, common-sense bill in history, one that’s supported by the vast majority of Americans, what use are they?\n\nWhy should anyone vote for any of them again?",
+        "created_at": "Tue Jan 20 03:04:49 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2013271550636826797",
+          "text": "This is great. \n\nThe two critical factors for voting integrity and saving democracy in America are simply requiring ID and in-person voting!\n\nThe last one is super important. Mail-in voting should only be for troops overseas or a serious medical condition.",
+          "created_at": "Mon Jan 19 15:25:17 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 232547320,
+            "friends_count": 1271,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 23940,
+            "favorite_count": 97486,
+            "reply_count": 6044,
+            "quote_count": 812
+          }
+        },
+        "user": {
+          "id": "31439580",
+          "name": "Joel Berry",
+          "screen_name": "JoelWBerry",
+          "description": "Managing Editor of @TheBabylonBee, bestselling author of Postmodern Pilgrim’s Progress, USMC vet, grumpy dad",
+          "followers_count": 162406,
+          "friends_count": 2763,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 450,
+          "favorite_count": 2871,
+          "reply_count": 178,
+          "quote_count": 23
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232547320,
+        "friends_count": 1271,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 449,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2013479737000370530",
+      "text": "RT @SenRickScott: Thanks for leading the way in the House, @timburchett!\n\nWe MUST pass the SAVE Act to secure our elections and save our co…",
+      "created_at": "Tue Jan 20 05:12:32 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2013439551302246531",
+        "text": "Thanks for leading the way in the House, @timburchett!\n\nWe MUST pass the SAVE Act to secure our elections and save our country.",
+        "created_at": "Tue Jan 20 02:32:51 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2013226785731715384",
+          "text": "My anger continues. Why won’t we pass the Dadgum SAVE Act? https://t.co/Rmn9YCozhi",
+          "created_at": "Mon Jan 19 12:27:24 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2013226720145383424",
+              "url": "https://video.twimg.com/amplify_video/2013226720145383424/vid/avc1/720x1280/SDm0dwu2tzhxcOgK.mp4?tag=21",
+              "bitrate": 2176000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "353890966",
+            "name": "Tim Burchett",
+            "screen_name": "timburchett",
+            "description": "Married to Kelly. Father to Isabel. Congressman representing #TN02 Former @KnoxGov Mayor. Former state legislator. Fiscally conservative Republican.",
+            "followers_count": 452859,
+            "friends_count": 2944,
+            "verified": false,
+            "is_blue_verified": false
+          },
+          "stats": {
+            "retweet_count": 11335,
+            "favorite_count": 46733,
+            "reply_count": 2737,
+            "quote_count": 435
+          }
+        },
+        "user": {
+          "id": "131546062",
+          "name": "Rick Scott",
+          "screen_name": "SenRickScott",
+          "description": "Florida's U.S. Senator. Fighting for Florida families and to Make Washington Work. #LetsGetToWork https://t.co/O6Ra1UNW96",
+          "followers_count": 716975,
+          "friends_count": 1360,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 504,
+          "favorite_count": 2652,
+          "reply_count": 179,
+          "quote_count": 10
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232547320,
+        "friends_count": 1271,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 504,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2013479489460662421",
+      "text": "RT @turnedwife: I just watched a video of a girl who was put on testosterone at 14 talk about her voice changing and how no one told her th…",
+      "created_at": "Tue Jan 20 05:11:33 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2013418062603522179",
+        "text": "I just watched a video of a girl who was put on testosterone at 14 talk about her voice changing and how no one told her that testosterone doesn’t just lower your voice.\nIt literally thickens the vocal cords, and the female larynx is not built to accommodate that, now it hurts for her to even speak. \n\nI had no idea and I wonder how much other crap like this nobody is being told. Putting children on this crap and changing their lives forever should be a crime for both parents and doctors.",
+        "created_at": "Tue Jan 20 01:07:28 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "988976745033486336",
+          "name": "Tanya",
+          "screen_name": "turnedwife",
+          "description": "✝️",
+          "followers_count": 64450,
+          "friends_count": 762,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 895,
+          "favorite_count": 8679,
+          "reply_count": 237,
+          "quote_count": 26
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232547320,
+        "friends_count": 1271,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 895,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2013434551381770340",
       "text": "Bingo",
@@ -5320,6 +6252,76 @@
         "favorite_count": 237,
         "reply_count": 21,
         "quote_count": 14
+      }
+    },
+    {
+      "id": "2012784452766711936",
+      "text": "这个画漫画的 skill 可以保持角色一致性\n\nhttps://t.co/rZtjwjhf7D",
+      "created_at": "Sun Jan 18 07:09:43 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2012782942012297695",
+        "text": "告别手动调优！Claude Code + 漫画 Skill = 丝滑的 AI 创作流水线 🚀\n\n刚在 Claude Code 里跑通了宝玉老师@dotey AI漫画的skill，体验堪称“惊艳”。\n\n以前做 AI 漫画：剧本 -> 磨提示词 -> 角色跑脸 -> 补分镜，半天出不了一页。 现在的工作流：\n \n1️⃣ 给一个脑洞，Claude 自动拆解专业分镜（特写/全景/俯拍配置到位）。\n\n2️⃣ 角色特征被自动提取为固定词包，解决一致性痛点。\n\n3️⃣ 连 Midjourney/SD 的提示词都按光影和艺术风格写好了。\n\n下面是我自己生成的一个示例，大家赶紧也去体验一下！\n\n🔗 工具指路：https://t.co/vRndnQzQyj\n#AI工作流 #ClaudeCode #AI漫画 #IP创作",
+        "created_at": "Sun Jan 18 07:03:43 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2012782642026913792",
+            "url": "https://pbs.twimg.com/media/G-7XJhQWIAA86ej.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2012782674641887232",
+            "url": "https://pbs.twimg.com/media/G-7XLawXIAAyWuu.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2012782704035598336",
+            "url": "https://pbs.twimg.com/media/G-7XNIQXkAAgbx6.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2012782742337949696",
+            "url": "https://pbs.twimg.com/media/G-7XPW8XEAA9B_-.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1385766205403713536",
+          "name": "xiangxiang",
+          "screen_name": "xiangxiang103",
+          "description": "Investor in AI & Crypto | Macro Researcher。观测AGI生产力革命、拆解联储货币政策脉络、捕获Web3价值捕获逻辑。喜欢研究复杂系统，热衷于在高度不确定性中寻找非对称机会。输出仅为内化，常态化出错，持续性修正。独立分析师 |【实研关隘模型】创始人。",
+          "followers_count": 1256,
+          "friends_count": 3272,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 9,
+          "favorite_count": 36,
+          "reply_count": 14,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 169479,
+        "friends_count": 1533,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 28,
+        "reply_count": 4,
+        "quote_count": 0
       }
     },
     {

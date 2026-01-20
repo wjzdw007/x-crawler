@@ -1,0 +1,51 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 169474,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260120",
+  "last_updated": "2026-01-20T06:08:30.606232",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2013483577942429830",
+      "text": "https://t.co/CgMEoIPo5c",
+      "created_at": "Tue Jan 20 05:27:48 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 17,
+        "reply_count": 8,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2013490814064767458",
+      "text": "想让 AI 自动读取 doc/docx 文档，再基于这些文档生成新文档，这种场景能做成 Skill 吗？\n\n可以，但做之前先想清楚一个问题：这是一次性任务，还是需要反复做的任务？\n\n如果只是一次性任务，没必要做成 Skill——Skill 的核心价值在于复用。\n\n如果是需要反复做的任务，建议按这个流程走：\n\n1. 先手动做几遍，沉淀最佳实践。摸清楚哪些步骤是固定的，哪些地方容易出问题，什么样的输出质量最好。\n\n2. 让 Agent 帮你创建 Skill。新开一个会话，在支持 Skills 的 Agent 里把任务完整做一遍，做完后告诉它：把刚才的操作创建成一个 Skill，方便以后复用。\n\n3. 用 Skill 做任务，持续迭代优化。以后都用这个 Skill 来执行任务。每次完成后检查输出，哪里不满意就告诉 Agent，让它改进并更新 Skill。\n\n简单说，Skill 就是可复用的最佳实践。先跑通流程，再固化成 Skill，然后在实战中不断打磨，这才是正确的使用姿势。",
+      "created_at": "Tue Jan 20 05:56:33 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2013490791331622912",
+          "url": "https://pbs.twimg.com/media/G_FbNO_XcAA660z.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    }
+  ]
+}

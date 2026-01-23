@@ -1,12 +1,351 @@
 {
   "date": "20260123",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-01-23T18:07:37.517750",
-  "tweet_count": 281,
-  "unique_tweet_count": 281,
-  "total_crawled": 467,
-  "duplicates_removed": 186,
+  "last_crawl_time": "2026-01-23T20:05:44.412461",
+  "tweet_count": 286,
+  "unique_tweet_count": 286,
+  "total_crawled": 481,
+  "duplicates_removed": 195,
   "tweets": [
+    {
+      "id": "2014782612636590465",
+      "text": "RT @eviljer: 两段式工作流实现「台历自由」\n\n直接让 AI 画日历，往往是大型翻车现场：不是日期错乱（2 月 30 号？），就是排版像被挤过的牙膏。\n\n为了从根源上解决这个问题，我探索了一套「脚本前处理 + 审美推演」的两段式工作流。\n\n1️⃣ 脚本先行：把逻辑交给…",
+      "created_at": "Fri Jan 23 19:29:42 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2014777246897377321",
+        "text": "两段式工作流实现「台历自由」\n\n直接让 AI 画日历，往往是大型翻车现场：不是日期错乱（2 月 30 号？），就是排版像被挤过的牙膏。\n\n为了从根源上解决这个问题，我探索了一套「脚本前处理 + 审美推演」的两段式工作流。\n\n1️⃣ 脚本先行：把逻辑交给代码\n先用一段简单的 Python 脚本读取当前系统时间，生成结构化的 CSV 日历数据。这意味着：\n\n根除幻觉：彻底告别日期生成牛头不对马嘴\n绝对整齐：用数据结构锁定视觉结构，再也不会因为空格问题导致表格错落\n\n2️⃣ 咒语拼合：把想象交给模型\n将上一步生成的准确「日历骨架」，作为变量传入主绘图 Prompt 的「画面血肉」中。\n\n这样一来，绘图模型只需要专注自己擅长的事情：在准确的骨架上，推演出符合 [主题] 逻辑的画面。\n而 [主题] 变量，默认是根据日期自动生成的，用户还可以按需覆写。（比如图 2 的「森林里的小精灵王国」），在既定约束下给到最大自由度。\n\n目前我已将流程固化为 Visual Design Skill 的一个专项任务： 只需放入 Prompt 模版和脚本，Agent 接收到触发词便自动接管，数据注入与画面生成一气呵成。\n\n以无厚入有间，大概就是这种巧劲。",
+        "created_at": "Fri Jan 23 19:08:23 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2014765985023365120",
+            "url": "https://pbs.twimg.com/media/G_Xi_RrbkAAyK56.png"
+          },
+          {
+            "type": "photo",
+            "id": "2014773228237934592",
+            "url": "https://pbs.twimg.com/media/G_Xpk4wW0AAWRJ7.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2014774893397819392",
+            "url": "https://pbs.twimg.com/media/G_XrFz9aQAAImBU.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2014774893892796416",
+            "url": "https://pbs.twimg.com/media/G_XrF1zbAAAvBcI.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "717142471",
+          "name": "Jerlin",
+          "screen_name": "eviljer",
+          "description": "一人团队，全能但不全干。\nAI 玩法 × Taste in the loop \nhttps://t.co/YTtlIGTtLK",
+          "followers_count": 10631,
+          "friends_count": 682,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 2,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 171446,
+        "friends_count": 1541,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2014777503206756541",
+      "text": "Try https://t.co/op5s4ZikGJ",
+      "created_at": "Fri Jan 23 19:09:24 +0000 2026",
+      "lang": "und",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2014765139141263488",
+        "text": "Wikipedia often doesn't have articles pertinent to current events -- for example, nothing on  \"zombie filibuster\"\n\nGrokipedia, on the other hand: full explanation, relevant to the current issue, broken down from multiple perspectives \n\n- it's a procedural rule \n- allows Senate minority to block bills\n- \"silent\" - eg doesn't even require the long monolgue\n- currently blocking SAVE act\n- could be eliminated with simple 51-vote majority\n- likely won't be\n- fear of retaliation\n- constitutional criticisms\n\nThis is a powerful feature of grokipedia, that it's incredibly fast to be relevant to the world",
+        "created_at": "Fri Jan 23 18:20:16 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2014741702402310149",
+            "url": "https://pbs.twimg.com/media/G_XM513bAAUmanm.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2014741709310349312",
+            "url": "https://pbs.twimg.com/media/G_XM6PmbUAAZg7p.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1317327383628705793",
+          "name": "Arthur MacWaters",
+          "screen_name": "ArthurMacwaters",
+          "description": "I'm an unapologetic believer in American exceptionalism 🇺🇸\n\nPosts on startups & politics, founder @legionhealth (yc s21) | prev @princeton @mckinsey",
+          "followers_count": 48998,
+          "friends_count": 965,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 21,
+          "favorite_count": 155,
+          "reply_count": 32,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232911863,
+        "friends_count": 1275,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 528,
+        "favorite_count": 3155,
+        "reply_count": 933,
+        "quote_count": 36
+      }
+    },
+    {
+      "id": "2014776996501365113",
+      "text": "RT @TheRabbitHole: An exchange with Charlie Kirk:\n\n&gt; Whites have privilege.\n&gt; What can Whites do that Blacks can’t?\n&gt; Nothing.\n&gt; Then there…",
+      "created_at": "Fri Jan 23 19:07:23 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2014764824102846961",
+        "text": "An exchange with Charlie Kirk:\n\n&gt; Whites have privilege.\n&gt; What can Whites do that Blacks can’t?\n&gt; Nothing.\n&gt; Then there’s no white privilege.\n\n https://t.co/jzpzkboCak",
+        "created_at": "Fri Jan 23 18:19:01 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "1909381722967597056",
+            "url": "https://video.twimg.com/amplify_video/1909381722967597056/vid/avc1/576x1024/XVzlzLQ8HUaAhZNm.mp4?tag=16",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1485689970593468416",
+          "name": "The Rabbit Hole",
+          "screen_name": "TheRabbitHole",
+          "description": "Navigating the discourse",
+          "followers_count": 1086145,
+          "friends_count": 1713,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 597,
+          "favorite_count": 3158,
+          "reply_count": 215,
+          "quote_count": 30
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232911863,
+        "friends_count": 1275,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 597,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2014774396418674898",
+      "text": "RT @jgebbia: The difference between a conspiracy theory and the truth? About 6 months. This one is extremely disturbing. Turns out mass imm…",
+      "created_at": "Fri Jan 23 18:57:03 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2014765730995257699",
+        "text": "The difference between a conspiracy theory and the truth? About 6 months. This one is extremely disturbing. Turns out mass immigration by flooding tens of millions of illegal immigrants under the Biden and Mayorkas regime was not incompetence. Democrats importing foreign voters is pure evil, anti-democratic, anti-American, and far worse than the current effort to uphold the law and deport those who are here illegally 🇺🇸",
+        "created_at": "Fri Jan 23 18:22:37 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2014683113981444510",
+          "text": "Here’s a U.S. State Department official admitting that mass immigration is designed to change the demographics of the United States.\n\nImmigrants, especially from Latin America, overwhelmingly vote Democrat, and so Democrats decided to import a new electorate to secure permanent power.\n\nh/t @Project_Veritas",
+          "created_at": "Fri Jan 23 12:54:20 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2014683041449271296",
+              "url": "https://video.twimg.com/amplify_video/2014683041449271296/vid/avc1/1194x666/vGtSQGFeUHzyWqzN.mp4?tag=21",
+              "bitrate": 2176000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1573674135816904705",
+            "name": "Adam Johnston",
+            "screen_name": "adamkjohnston",
+            "description": "Senior Contributor @FDRLST | Words in @amacforamerica @theblaze @DailyCaller @amconmag",
+            "followers_count": 23065,
+            "friends_count": 995,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 3928,
+            "favorite_count": 12224,
+            "reply_count": 573,
+            "quote_count": 333
+          }
+        },
+        "user": {
+          "id": "11417802",
+          "name": "Joe Gebbia",
+          "screen_name": "jgebbia",
+          "description": "U.S. Chief Design Officer 🇺🇸 National Design Studio is growing. Designers & Software Eng apply via link below. Views are my own",
+          "followers_count": 214359,
+          "friends_count": 1201,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 830,
+          "favorite_count": 4343,
+          "reply_count": 258,
+          "quote_count": 30
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232911863,
+        "friends_count": 1275,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 830,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2014762002053288299",
+      "text": "RT @Cernovich: Under the made-up blue slip rule, for a Trump judge or US Attorney nomination to go forward for approval, BOTH SENATORS, eve…",
+      "created_at": "Fri Jan 23 18:07:48 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2014738507454181550",
+        "text": "Under the made-up blue slip rule, for a Trump judge or US Attorney nomination to go forward for approval, BOTH SENATORS, even from a Democrat state, must approve. Otherwise Grassley won't send the nominee forward. \n\nBecause of the blue slip system, there are entire judicial regions (the 9th Circuit) where it's known by lawyers and other judges that the law doesn't apply. There's no way to reform the system, because the Senate won't change the rules. \n\nThis also means that Trump, despite winning the popular vote and 7 for 7 swing states, cannot appoint US Attorneys who will enforce the will of the American people. One Democrat can veto anything.\n\nEven worse, there are line attorneys inside DOJ who are working to protect Democrats. They were hired by Biden. There's no way to remove them, because Trump cannot put his own US Atty inside the office.\n\nThe blue slip system is made up, by the way. It's not in law. Grassley could end it today. Why won't he?",
+        "created_at": "Fri Jan 23 16:34:26 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2014597635559088243",
+          "text": "What is this blue slip bs?",
+          "created_at": "Fri Jan 23 07:14:40 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "",
+            "followers_count": 232911863,
+            "friends_count": 1275,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 13300,
+            "favorite_count": 45342,
+            "reply_count": 3477,
+            "quote_count": 536
+          }
+        },
+        "user": {
+          "id": "358545917",
+          "name": "Cernovich",
+          "screen_name": "Cernovich",
+          "description": "New! Purest Creatine is the best version. To get people to switch brands, it's 30% off your first subscription. Pre-order below👇",
+          "followers_count": 1467573,
+          "friends_count": 4224,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2566,
+          "favorite_count": 8086,
+          "reply_count": 527,
+          "quote_count": 150
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232911863,
+        "friends_count": 1275,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2565,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2014761732460204460",
       "text": "RT @SawyerMerritt: Business Insider review of FSD (Supervised) V14:\n\n\"FSD proved to be a highly capable driver — so much so that it has spo…",

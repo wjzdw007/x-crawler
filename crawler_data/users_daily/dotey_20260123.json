@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 171429,
+    "followers_count": 171446,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260123",
-  "last_updated": "2026-01-23T18:07:37.580265",
-  "tweet_count": 6,
+  "last_updated": "2026-01-23T20:05:44.446710",
+  "tweet_count": 7,
   "tweets": [
     {
       "id": "2014501905972474167",
@@ -286,6 +286,66 @@
           "retweet_count": 1,
           "favorite_count": 0,
           "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2014782612636590465",
+      "text": "RT @eviljer: 两段式工作流实现「台历自由」\n\n直接让 AI 画日历，往往是大型翻车现场：不是日期错乱（2 月 30 号？），就是排版像被挤过的牙膏。\n\n为了从根源上解决这个问题，我探索了一套「脚本前处理 + 审美推演」的两段式工作流。\n\n1️⃣ 脚本先行：把逻辑交给…",
+      "created_at": "Fri Jan 23 19:29:42 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2014777246897377321",
+        "text": "两段式工作流实现「台历自由」\n\n直接让 AI 画日历，往往是大型翻车现场：不是日期错乱（2 月 30 号？），就是排版像被挤过的牙膏。\n\n为了从根源上解决这个问题，我探索了一套「脚本前处理 + 审美推演」的两段式工作流。\n\n1️⃣ 脚本先行：把逻辑交给代码\n先用一段简单的 Python 脚本读取当前系统时间，生成结构化的 CSV 日历数据。这意味着：\n\n根除幻觉：彻底告别日期生成牛头不对马嘴\n绝对整齐：用数据结构锁定视觉结构，再也不会因为空格问题导致表格错落\n\n2️⃣ 咒语拼合：把想象交给模型\n将上一步生成的准确「日历骨架」，作为变量传入主绘图 Prompt 的「画面血肉」中。\n\n这样一来，绘图模型只需要专注自己擅长的事情：在准确的骨架上，推演出符合 [主题] 逻辑的画面。\n而 [主题] 变量，默认是根据日期自动生成的，用户还可以按需覆写。（比如图 2 的「森林里的小精灵王国」），在既定约束下给到最大自由度。\n\n目前我已将流程固化为 Visual Design Skill 的一个专项任务： 只需放入 Prompt 模版和脚本，Agent 接收到触发词便自动接管，数据注入与画面生成一气呵成。\n\n以无厚入有间，大概就是这种巧劲。",
+        "created_at": "Fri Jan 23 19:08:23 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2014765985023365120",
+            "url": "https://pbs.twimg.com/media/G_Xi_RrbkAAyK56.png"
+          },
+          {
+            "type": "photo",
+            "id": "2014773228237934592",
+            "url": "https://pbs.twimg.com/media/G_Xpk4wW0AAWRJ7.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2014774893397819392",
+            "url": "https://pbs.twimg.com/media/G_XrFz9aQAAImBU.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2014774893892796416",
+            "url": "https://pbs.twimg.com/media/G_XrF1zbAAAvBcI.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "717142471",
+          "name": "Jerlin",
+          "screen_name": "eviljer",
+          "description": "一人团队，全能但不全干。\nAI 玩法 × Taste in the loop \nhttps://t.co/YTtlIGTtLK",
+          "followers_count": 10631,
+          "friends_count": 682,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 2,
+          "reply_count": 1,
           "quote_count": 0
         }
       },

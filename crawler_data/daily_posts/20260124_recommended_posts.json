@@ -1,12 +1,315 @@
 {
   "date": "20260124",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-01-24T18:07:03.079696",
-  "tweet_count": 245,
-  "unique_tweet_count": 245,
-  "total_crawled": 442,
-  "duplicates_removed": 197,
+  "last_crawl_time": "2026-01-24T20:05:14.139965",
+  "tweet_count": 250,
+  "unique_tweet_count": 250,
+  "total_crawled": 445,
+  "duplicates_removed": 195,
   "tweets": [
+    {
+      "id": "2015149067068711222",
+      "text": "这一段时间 baoyu-skills 项目更新很频繁，但基本都基于这样一个迭代模式：\n\n1. 发现问题\n比如我今天发现 commit messages 都是没有意义的版本号变更，虽然有 CHANGELOG，但这不利于后续维护\n\n另外就是版本号的变更当前都是 Agent 决定，有时候其实我想自己控制，但是又懒的写要求\n\n再有就是还得手动 push origin，还是懒\n\n2. 分析问题\n要让 commit messages 变得有意义，把每个skills/模块的变更变成独立的commit，版本号的变更跟以前保持一致就可以。\n\n3. 解决问题\n不需要手动去执行，把要求发给 Claude Code，这种可以几句话描述清楚的直接交给它做就可以了。\n\n4. 验证问题\n做完当然需要验证一下，看是不是符合预期。先看变更记录，再测试（有些甚至可以告诉 Agent 验证方法让它自己验证），测试下来跟我期望的一样，如果不一致就要回到原来的会话告诉 Agent 我期望的结果和实际结果的差异，让它修复\n\nhttps://t.co/GOjnWisJjw",
+      "created_at": "Sat Jan 24 19:45:51 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2015145386680123392",
+          "url": "https://pbs.twimg.com/media/G_c8DW_WAAARb4W.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2015148072381124608",
+          "url": "https://pbs.twimg.com/media/G_c-fsAXEAAxvnG.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2015148343186411520",
+          "url": "https://pbs.twimg.com/media/G_c-vc1X0AA9mjQ.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2015149025964564480",
+          "url": "https://pbs.twimg.com/media/G_c_XMYXoAAOcEe.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 171881,
+        "friends_count": 1541,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 1,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2015134126089654473",
+      "text": "True",
+      "created_at": "Sat Jan 24 18:46:29 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2015118722558820705",
+        "text": "https://t.co/4wIeJRvlPs",
+        "created_at": "Sat Jan 24 17:45:17 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "282419632",
+          "name": "Kaizen D. Asiedu",
+          "screen_name": "thatsKAIZEN",
+          "description": "Clear Thinker. Harvard ‘12, Emmy Winner.",
+          "followers_count": 678785,
+          "friends_count": 559,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 546,
+          "favorite_count": 2489,
+          "reply_count": 176,
+          "quote_count": 95
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232975458,
+        "friends_count": 1275,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3713,
+        "favorite_count": 24467,
+        "reply_count": 1871,
+        "quote_count": 130
+      }
+    },
+    {
+      "id": "2015132267463487884",
+      "text": "RT @RobSchneider: The Democrats will not stop this beyond obvious cheating until SAME DAY/PAPER BALLOTS with VOTER ID is MADE THE LAW of th…",
+      "created_at": "Sat Jan 24 18:39:06 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2015113788518023489",
+        "text": "The Democrats will not stop this beyond obvious cheating until SAME DAY/PAPER BALLOTS with VOTER ID is MADE THE LAW of the LAND👇🇺🇸",
+        "created_at": "Sat Jan 24 17:25:40 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2015031840982356412",
+          "text": "WOW 🚨 Swing State Wisconsin voter rolls show they have 7.14 million people registered to vote but only 4 million adults that live in the state\n\nAgain, Wisconsin HAS ALMOST TWICE as many registered voters vs adults who live there\n\n“We only have 4 million adults in the state of Wisconsin. We're approaching, in the 7.13 million number on the voter rolls, that grows almost daily. It never ends. It never rarely goes down — It's the highest that I've ever seen. It's even worse than this because there's the 4.4 million adults in Wisconsin, not all of them registered, not all of them vote. We're really down around about 3.6 million, 3.7 million.”\n\nSo what he’s saying is only about 3.7 million people are registered voters but they have 7.13 million registered voters",
+          "created_at": "Sat Jan 24 12:00:03 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2015001217811070976",
+              "url": "https://video.twimg.com/amplify_video/2015001217811070976/vid/avc1/720x1280/LAE_Y_glKRPAwMyR.mp4?tag=21",
+              "bitrate": 2176000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1099579684981944320",
+            "name": "Wall Street Apes",
+            "screen_name": "WallStreetApes",
+            "description": "We Are The Resistance. Unfiltered Breaking News | Followed By @elonmusk 𝕏 @joerogan 🎙️ @DonaldjTrumpJr 🇺🇸 @dbongino ⚖️ @RealAlexJones 🪬 @JamesOKeefeIII 🗞️",
+            "followers_count": 1287971,
+            "friends_count": 32369,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 12400,
+            "favorite_count": 30021,
+            "reply_count": 1248,
+            "quote_count": 763
+          }
+        },
+        "user": {
+          "id": "90552683",
+          "name": "Rob Schneider 🇺🇸",
+          "screen_name": "RobSchneider",
+          "description": "ORDER My New Book on Free Speech, “You Can Do It: Speak Your Mind America!” https://t.co/CW4oaT2R8A AND come SEE ME ON TOUR! https://t.co/j6U5wpXvZk",
+          "followers_count": 2246517,
+          "friends_count": 696,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1349,
+          "favorite_count": 4881,
+          "reply_count": 295,
+          "quote_count": 36
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232975458,
+        "friends_count": 1275,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1349,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2015132080112312625",
+      "text": "True",
+      "created_at": "Sat Jan 24 18:38:21 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2015123072010055739",
+        "text": "Holding secure elections is a civilizational IQ test\n\n> 14 states don't require any ID at all to vote\n\n> it's impossible to say that \"cheating is rare\" if you don't measure the thing at all \n\n> requiring proof of citizenship is incredibly popular among all Americans\n\n> yet, the SAVE act *still* hasn't passed\n\nWhat are we even doing?!\n\nIf we don't do this, we're not going to have the chance. It's that simple.",
+        "created_at": "Sat Jan 24 18:02:34 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2015121904341008385",
+            "url": "https://pbs.twimg.com/media/G_cmsgdawAEIVkB.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1317327383628705793",
+          "name": "Arthur MacWaters",
+          "screen_name": "ArthurMacwaters",
+          "description": "I'm an unapologetic believer in American exceptionalism 🇺🇸\n\nPosts on startups & politics, founder @legionhealth (yc s21) | prev @princeton @mckinsey",
+          "followers_count": 50295,
+          "friends_count": 965,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 236,
+          "favorite_count": 986,
+          "reply_count": 107,
+          "quote_count": 18
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 232975458,
+        "friends_count": 1275,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1802,
+        "favorite_count": 10811,
+        "reply_count": 1066,
+        "quote_count": 43
+      }
+    },
+    {
+      "id": "2015124756685623502",
+      "text": "RT @recatm: 这个我同意耶。真的用AI来做一件比“写个公众号，画张自媒体插图，做个飞机稿app” 更专业更深入的任务，人的判断力、审美、知识储备（深度和广度都算），以及解决系统性问题的经验就必不可少了。\n\n除了 Vibe coding吧。 我Vibe Coding 了…",
+      "created_at": "Sat Jan 24 18:09:15 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2015036674569339247",
+        "text": "这个我同意耶。真的用AI来做一件比“写个公众号，画张自媒体插图，做个飞机稿app” 更专业更深入的任务，人的判断力、审美、知识储备（深度和广度都算），以及解决系统性问题的经验就必不可少了。\n\n除了 Vibe coding吧。 我Vibe Coding 了不少只给自己用的小工具，说是 workflow 也行吧，还挺爽的。\n\n第一，现在 写码的确是AI生产力替代最强的一类任务。\n\n第二，的确写码我是个纯纯的棒槌，能写出来一些小东西帮助自己就很满意了。从来没有奢望过能拿出来做个生意，或者给别人提PR 🤣\n\n真说 做给能现实交付的设计任务，做研报，成体系有点深度的知识写作，那还真的不能 YOLO （ you only look once） 。\n\n光上下文我就得严格筛选。你不知道 AI给你找的那些信息源，除非是经典知识，质量有多随机。。。",
+        "created_at": "Sat Jan 24 12:19:15 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2015029295517987079",
+          "text": "跟部门分享的时候正好聊到，我的观点是：\n\nAI 可以快速把很多行业的人拉齐到平庸水平上来，对入门者非常友好。\n\n所以：\n\n如果外行在 AI 协助下做你的工作，你恼羞成怒，可能说明你自己也就是行业内平庸的水平而已……均线以上的专家是能够看出差别，目前仍然是具有不可替代的护城河的。",
+          "created_at": "Sat Jan 24 11:49:56 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "256559269",
+            "name": "Xiaowen",
+            "screen_name": "ixiaowenz",
+            "description": "Senior Director in Finance Technology, Payment Network | Enterprise Architecture and Strategy | Extreme INTJ | Alcoholic",
+            "followers_count": 21052,
+            "friends_count": 1881,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 3,
+            "favorite_count": 12,
+            "reply_count": 0,
+            "quote_count": 3
+          }
+        },
+        "user": {
+          "id": "18824096",
+          "name": "西乔 XiQiao",
+          "screen_name": "recatm",
+          "description": "Gen-AI (Video/Image) Applied Researcher & Advisor |\n\nAuthor of book «Illustrated History of Programming» | 20 yrs experience PM、Cartoonist & Designer",
+          "followers_count": 121371,
+          "friends_count": 3509,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 22,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 171881,
+        "friends_count": 1541,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2015124053472755877",
       "text": "NotebookLM 一不能编辑修改，而不能选样式\n这里你可以自己确认编辑大纲，确认编辑提示词，可以随时修改，样式还多\nhttps://t.co/xrlzlEnj3Q",

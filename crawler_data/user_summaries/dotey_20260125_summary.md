@@ -1,0 +1,20 @@
+**新工具/技术**
+- Clawdbot — 本地优先的开源个人 AI 智能体，能在 macOS/Linux/Windows(WSL2) 上运行，内置浏览器控制、Canvas、定时任务和 Shell 执行等工具，支持多渠道接入（Telegram/WhatsApp/Slack/Discord/Signal/iMessage/Teams）。
+- Claude Code — Anthropic 的编码/工作流工具，dotey 建议优先用好它而不是盲目折腾新方案。
+- Claude Opus 4.5 — 推荐与 Anthropic Pro/Max 订阅配合使用，以获得更强的长上下文能力和提示词注入防护。
+- Anthropic OAuth token 政策变更 — Claude Code 的 OAuth token 现在被限制只能在 Claude Code 内使用，外部集成需单独配置 Anthropic API key。
+- Confirmo — 针对 Claude Code 的桌面“宠物”工具，开箱即用、无配置、只监听本地 sessions jsonl 文件（不联网），用于状态提示和陪伴感。
+- Mac Mini 作为部署设备 — 被多用户用作“永不休息”的本地 Clawdbot 主机，成为常见的硬件选择。
+
+**核心观点/方法论**
+- “Skills 不是 Agent” 的比喻 — 带说明书的电锯不是木工；工具（skills）和能独立完成一系列任务的智能体（agent）不是同一概念，区分能避免错判能力边界。
+- 专注掌握成熟工具胜过追新潮 — “用好 Claude Code 就够了” 的立场，强调效率和稳定性优于频繁切换工具栈。
+- AI-native 世代能力跃迁 — 一代人能力提升并非单纯智力，而是可调用的外部认知能力被抬升，导致学习范式、抽象能力和试错速度的指数级变化。
+- 本地优先与隐私控制是关键设计取向 — 本地运行（如 Clawdbot/Confirmo）既可实现高度自动化，又能减少数据外流和隐私风险。
+
+**实践经验/案例**
+- Mac Mini + Clawdbot 自动化开发流 —— 实例：通过 Telegram 监控 Claude 编码会话，自动拉代码、打开 VS Code、跑测试、生成修复并提交，降低人工干预。
+- 远程控制与“躺着也能工作”场景 —— 用户通过聊天应用远程触发本地操作（重建网站、跑脚本等），展示多渠道接入的实际价值。
+- Anthropic 政策变更的实务影响 —— 需要为外部集成单独配置 API key；同时为获得更好上下文和安全性建议订阅 Pro/Max 并用 Opus 4.5。
+- 轻量监控替代侵入式集成 —— Confirmo 展示了用本地文件监听实现状态反馈的低侵入模式，适合“陪伴式”或监控式 UX。
+- 建议总结 —— 把精力投入到本地优先、可复现的自动化流水线和稳定模型订阅上，而不是追逐每个新“agent”项目。

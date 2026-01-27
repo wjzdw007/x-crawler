@@ -1,12 +1,195 @@
 {
   "date": "20260127",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-01-27T00:19:19.276287",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-01-27T02:47:24.877986",
+  "tweet_count": 206,
+  "unique_tweet_count": 206,
+  "total_crawled": 400,
+  "duplicates_removed": 194,
   "tweets": [
+    {
+      "id": "2015975823329685769",
+      "text": "RT @dongxi_nlp: 看了 @karpathy 这篇，很有感想。\n\n对Code Agent 的认知，在2026突然开始改变。\n\n前两周，只靠 codex 和 claude code 完整复现和提高了 一篇 AI 论文方法。Code Agent 熟练使用 pytorch…",
+      "created_at": "Tue Jan 27 02:31:05 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2015929167846789456",
+        "text": "看了 @karpathy 这篇，很有感想。\n\n对Code Agent 的认知，在2026突然开始改变。\n\n前两周，只靠 codex 和 claude code 完整复现和提高了 一篇 AI 论文方法。Code Agent 熟练使用 pytorch，并按照我的想法，增加了全新的实验，我一行代码都没写。\n\n而且，Code Agent，可以同时在多个不同项目的 repo 工作。而作为人类的我们，成为了最大瓶颈，因为我们只会单线程的观察思考和给出指令，我们无法在同一秒说出两句话。\n\n其实 Code Agent，这种 CLI Agent 的设计理念就是 Agent - Computer - Interface，并没有人类什么事。\n\n所以，未来即使出现 AK 说的 10 倍 100 倍工程师，也都是暂时的。\n\n全部都是 Agent，Human out of the loop。",
+        "created_at": "Mon Jan 26 23:25:42 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2015883857489522876",
+          "text": "A few random notes from claude coding quite a bit last few weeks.\n\nCoding workflow. Given the latest lift in LLM coding capability, like many others I rapidly went from about 80% manual+autocomplete coding and 20% agents in November to 80% agent coding and 20% edits+touchups in December. i.e. I really am mostly programming in English now, a bit sheepishly telling the LLM what code to write... in words. It hurts the ego a bit but the power to operate over software in large \"code actions\" is just too net useful, especially once you adapt to it, configure it, learn to use it, and wrap your head around what it can and cannot do. This is easily the biggest change to my basic coding workflow in ~2 decades of programming and it happened over the course of a few weeks. I'd expect something similar to be happening to well into double digit percent of engineers out there, while the awareness of it in the general population feels well into low single digit percent.\n\nIDEs/agent swarms/fallability. Both the \"no need for IDE anymore\" hype and the \"agent swarm\" hype is imo too much for right now. The models definitely still make mistakes and if you have any code you actually care about I would watch them like a hawk, in a nice large IDE on the side. The mistakes have changed a lot - they are not simple syntax errors anymore, they are subtle conceptual errors that a slightly sloppy, hasty junior dev might do. The most common category is that the models make wrong assumptions on your behalf and just run along with them without checking. They also don't manage their confusion, they don't seek clarifications, they don't surface inconsistencies, they don't present tradeoffs, they don't push back when they should, and they are still a little too sycophantic. Things get better in plan mode, but there is some need for a lightweight inline plan mode. They also really like to overcomplicate code and APIs, they bloat abstractions, they don't clean up dead code after themselves, etc. They will implement an inefficient, bloated, brittle construction over 1000 lines of code and it's up to you to be like \"umm couldn't you just do this instead?\" and they will be like \"of course!\" and immediately cut it down to 100 lines. They still sometimes change/remove comments and code they don't like or don't sufficiently understand as side effects, even if it is orthogonal to the task at hand. All of this happens despite a few simple attempts to fix it via instructions in CLAUDE . md. Despite all these issues, it is still a net huge improvement and it's very difficult to imagine going back to manual coding. TLDR everyone has their developing flow, my current is a small few CC sessions on the left in ghostty windows/tabs and an IDE on the right for viewing the code + manual edits.\n\nTenacity. It's so interesting to watch an agent relentlessly work at something. They never get tired, they never get demoralized, they just keep going and trying things where a person would have given up long ago to fight another day. It's a \"feel the AGI\" moment to watch it struggle with something for a long time just to come out victorious 30 minutes later. You realize that stamina is a core bottleneck to work and that with LLMs in hand it has been dramatically increased.\n\nSpeedups. It's not clear how to measure the \"speedup\" of LLM assistance. Certainly I feel net way faster at what I was going to do, but the main effect is that I do a lot more than I was going to do because 1) I can code up all kinds of things that just wouldn't have been worth coding before and 2) I can approach code that I couldn't work on before because of knowledge/skill issue. So certainly it's speedup, but it's possibly a lot more an expansion.\n\nLeverage. LLMs are exceptionally good at looping until they meet specific goals and this is where most of the \"feel the AGI\" magic is to be found. Don't tell it what to do, give it success criteria and watch it go. Get it to write tests first and then pass them. Put it in the loop with a browser MCP. Write the naive algorithm that is very likely correct first, then ask it to optimize it while preserving correctness. Change your approach from imperative to declarative to get the agents looping longer and gain leverage.\n\nFun. I didn't anticipate that with agents programming feels *more* fun because a lot of the fill in the blanks drudgery is removed and what remains is the creative part. I also feel less blocked/stuck (which is not fun) and I experience a lot more courage because there's almost always a way to work hand in hand with it to make some positive progress. I have seen the opposite sentiment from other people too; LLM coding will split up engineers based on those who primarily liked coding and those who primarily liked building.\n\nAtrophy. I've already noticed that I am slowly starting to atrophy my ability to write code manually. Generation (writing code) and discrimination (reading code) are different capabilities in the brain. Largely due to all the little mostly syntactic details involved in programming, you can review code just fine even if you struggle to write it.\n\nSlopacolypse. I am bracing for 2026 as the year of the slopacolypse across all of github, substack, arxiv, X/instagram, and generally all digital media. We're also going to see a lot more AI hype productivity theater (is that even possible?), on the side of actual, real improvements.\n\nQuestions. A few of the questions on my mind:\n- What happens to the \"10X engineer\" - the ratio of productivity between the mean and the max engineer? It's quite possible that this grows *a lot*.\n- Armed with LLMs, do generalists increasingly outperform specialists? LLMs are a lot better at fill in the blanks (the micro) than grand strategy (the macro).\n- What does LLM coding feel like in the future? Is it like playing StarCraft? Playing Factorio? Playing music?\n- How much of society is bottlenecked by digital knowledge work?\n\nTLDR Where does this leave us? LLM agent capabilities (Claude & Codex especially) have crossed some kind of threshold of coherence around December 2025 and caused a phase shift in software engineering and closely related. The intelligence part suddenly feels quite a bit ahead of all the rest of it - integrations (tools, knowledge), the necessity for new organizational workflows, processes, diffusion more generally. 2026 is going to be a high energy year as the industry metabolizes the new capability.",
+          "created_at": "Mon Jan 26 20:25:39 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "33836629",
+            "name": "Andrej Karpathy",
+            "screen_name": "karpathy",
+            "description": "Building @EurekaLabsAI. Previously Director of AI @ Tesla, founding team @ OpenAI, CS231n/PhD @ Stanford. I like to train large deep neural nets.",
+            "followers_count": 1637144,
+            "friends_count": 1049,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1644,
+            "favorite_count": 13528,
+            "reply_count": 703,
+            "quote_count": 477
+          }
+        },
+        "user": {
+          "id": "1477948736156454913",
+          "name": "马东锡 NLP",
+          "screen_name": "dongxi_nlp",
+          "description": "Prev. PhD @Stockholm_Uni | Alumni @KTHuniversity @uppsalauni Sharing insights on AI, autonomous agents, and large language & reasoning models",
+          "followers_count": 35614,
+          "friends_count": 915,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 9,
+          "favorite_count": 93,
+          "reply_count": 6,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 172901,
+        "friends_count": 1543,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2015956064168996881",
+      "text": "Good question \n\nhttps://t.co/kypkZaczVC",
+      "created_at": "Tue Jan 27 01:12:35 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2015867519660138815",
+        "text": "🚨TALIBAN ANNOUNCE RETURN OF SLAVERY TO AFGHANISTAN\n\nThe old Ghulam system in which children were taken as sexual slaves and servants has officially returned\n\nWhere is the left crying out against this?\nWhere are the marches?\nWhere are the speeches?\n\nSilence. https://t.co/C0hEOduWre",
+        "created_at": "Mon Jan 26 19:20:44 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2015867159386136576",
+            "url": "https://pbs.twimg.com/media/G_nMgD2WIAArm4B.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1722014154322575360",
+          "name": "Basil the Great",
+          "screen_name": "BasilTheGreat",
+          "description": "🇬🇧We must take our country back🇬🇧\n\nDM for submissions/credit/deletion",
+          "followers_count": 266433,
+          "friends_count": 4995,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3529,
+          "favorite_count": 8459,
+          "reply_count": 573,
+          "quote_count": 274
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233170216,
+        "friends_count": 1279,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3972,
+        "favorite_count": 19130,
+        "reply_count": 1775,
+        "quote_count": 132
+      }
+    },
+    {
+      "id": "2015955129975947615",
+      "text": "WhatsApp is not secure. Even Signal is questionable. \n\nUse 𝕏 Chat.",
+      "created_at": "Tue Jan 27 01:08:52 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2015922988731007312",
+        "text": "BREAKING: Meta Whistleblowers say WhatsApp private chats can be read by the company, despite promises of end to end encryption.\n\nA lawsuit filed in US court claims Meta misled billions of users worldwide into believing their messages were fully private.\n\nMeta can not be trusted. https://t.co/jcXH9qnrZs",
+        "created_at": "Mon Jan 26 23:01:09 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2015922711659511808",
+            "url": "https://pbs.twimg.com/media/G_n_BoMbgAAoXqU.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1814437,
+          "friends_count": 889,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 893,
+          "favorite_count": 2972,
+          "reply_count": 561,
+          "quote_count": 198
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233170216,
+        "friends_count": 1279,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3758,
+        "favorite_count": 24776,
+        "reply_count": 4007,
+        "quote_count": 398
+      }
+    },
     {
       "id": "2015917131121013200",
       "text": "RT @cb_doge: BREAKING: Grok 4.20 just took the #1 spot on PredictionArena. 🥇\n\nIt is the only AI in profit, while every other model is sitti…",
@@ -4228,6 +4411,55 @@
       },
       "stats": {
         "retweet_count": 1584,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2015478364790759457",
+      "text": "RT @AveryDaye: It seems as though immigration and voter ID laws are the two biggest issues for each party right now. \n\nOne side is fighting…",
+      "created_at": "Sun Jan 25 17:34:22 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2015419422924497127",
+        "text": "It seems as though immigration and voter ID laws are the two biggest issues for each party right now. \n\nOne side is fighting for unchecked immigration and no voter ID. The other side is fighting for basic immigration laws and voter ID. \n\nIt doesn’t take a genius to figure out what’s going on here.",
+        "created_at": "Sun Jan 25 13:40:09 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1704450148552638464",
+          "name": "Avery Daye",
+          "screen_name": "AveryDaye",
+          "description": "Big government sucks 🇺🇸",
+          "followers_count": 120948,
+          "friends_count": 922,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1735,
+          "favorite_count": 8297,
+          "reply_count": 341,
+          "quote_count": 39
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233170216,
+        "friends_count": 1279,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1735,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
@@ -8901,6 +9133,37 @@
       }
     },
     {
+      "id": "2014963861615448208",
+      "text": "https://t.co/yvmqoXRLDn",
+      "created_at": "Sat Jan 24 07:29:55 +0000 2026",
+      "lang": "zxx",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2014963580852936704",
+          "url": "https://pbs.twimg.com/media/G_aWs3gWoAA1gIU.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 172901,
+        "friends_count": 1543,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
       "id": "2014963841512223174",
       "text": "图解 AI Agent Loop\n\n使用 baoyu-comic Skill 一键制作\n\n$ npx skills add jimliu/baoyu-skills https://t.co/F4hv4vxDuR",
       "created_at": "Sat Jan 24 07:29:50 +0000 2026",
@@ -10305,6 +10568,37 @@
         "favorite_count": 48,
         "reply_count": 2,
         "quote_count": 2
+      }
+    },
+    {
+      "id": "2014804985444225158",
+      "text": "项目地址：https://t.co/FIbU7a9Zcx\n感谢网友的建议 https://t.co/HPKZ5wLxYY",
+      "created_at": "Fri Jan 23 20:58:36 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2014804963533139968",
+          "url": "https://pbs.twimg.com/media/G_YGcH8WMAAqk8I.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 172901,
+        "friends_count": 1543,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 18,
+        "reply_count": 1,
+        "quote_count": 0
       }
     },
     {

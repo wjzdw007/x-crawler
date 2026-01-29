@@ -1,0 +1,54 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 173411,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260129",
+  "last_updated": "2026-01-29T02:57:17.080471",
+  "tweet_count": 1,
+  "tweets": [
+    {
+      "id": "2016707004782260603",
+      "text": "我以前遇到一些老板，不能说不懂软件工程，他们懂一点工程，言必称敏捷迭代单元测试，通常这种半吊子指挥起软件项目来更要命。\n\n一：单元测试就能保证质量\n\n对一半，确实有帮助，但是单元测试覆盖不等于质量就好，毕竟软件是有很多模块，一个模块单独测没问题，合在一起可能就出错了，所以要有集成测试。\n集成测试通常也只能覆盖主要路径，毕竟分支太多，只能边用边补充。\n\n所以单元测试覆盖不等于就能保证质量。\n\n这里的核心，不在于单元测试，而是在于让 AI 能自己验证自己产生结果，单元测试是一种很好的手段，但要辅助其他手段。\n\n二：代码用完一遍就扔就没屎山代码\n\n没错，但是代码能不能用完就扔，得看项目，都是做一些演示玩具项目那真没问题，要给普通用户用的商业项目，就需要反复“迭代”。\n\n代码是要“迭代”，不是一次性消耗品。\n\n三：要学会top down design，先写spec，再选tech stack，再完成design，再设计module，再分配完成coding就能做好软件\n\n其实挺对的，不过这恰恰证明代码没法一次性扔，否则还要这么复杂干嘛。\n\n真正的问题在于，能做到这些的至少得3年以上一线编码经验的积累，甚至更久。有能力写好spec做好top down design的，基本不用愁怎么vibe coding。\n\n不要指望 AI 短期能做到，这对上下文和注意力要求极高，未来也许能吧，拭目以待。\n\n另外关于spec，我吐槽不止一次了，刚开始也许不错，后面要spec和代码同步就很难了。\n\n很多事情理论上看起来挺美，真做起来各种坑。哪有什么银弹！\n\n当然“严格遵照人类已有的全部软件工程管理方式”、“学好用好software engineering”还是挺对的。",
+      "created_at": "Thu Jan 29 02:56:33 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2016368886963159217",
+        "text": "终于有人懂我半年前的哲学了。\n\n我反反复复讲，multi SWE Agent时代，模型能力固定的前提下，token无限=人力无限，\n\n所有设计模式的主导，你的第一原理是“让1000个大傻逼合作写代码”，而不是“让一个天才瞎鸡巴写”，\n\n而“让1000个大傻逼合作”，就必须严格遵照人类已有的全部软件工程管理方式：\n\n1. 要学会top down design，先写spec，再选tech stack，再完成design，再设计module，再分配完成coding；\n\n2. 代码即厕纸，用完一遍就扔。\n\n如果一份codebase反复修改，最终一定是屎山，大量sprint积累后，根本无法维护；\n\n如果把代码当厕纸，每次修改都重写一遍，每次修改需求都从spec修改，固定endpoint和功能，每次重写，每次重写，每次重写，就不存在屎山；\n\n3. 用大量、巨大量、海量的unit test来保证整个codebase的稳定性和API、endpoint等等的一致性。\n\n既然你有了1000个傻逼程序员，就再雇1000个sde test来专门完成test工作。\n\n人类对于软件开发的所有经验，都在software engineering这一门课里，\n\n这一门课告诉我们唯一的一件事，就是如何管好傻逼，如何用好傻逼，如何给傻逼安排好工作。\n\n在token无限=人力无限的今天，software engineering就是最好的管理学圣经，\n\n只有彻底吃透了software engineering的精髓，才能让你从“用一个天才LLM Agent写代码”，\n\n到“正确管理1000个会犯错且不停犯错的LLM Agent写代码”的思路转变。",
+        "created_at": "Wed Jan 28 04:32:59 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "28940967",
+          "name": "lidang 立党 （全网劝人卖房、劝人学CS、劝人买SP500和NASDAQ100第一人）",
+          "screen_name": "lidangzzz",
+          "description": "co-founder @HedgehogLabHQ @Project_DARC",
+          "followers_count": 1602627,
+          "friends_count": 2704,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 54,
+          "favorite_count": 435,
+          "reply_count": 23,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

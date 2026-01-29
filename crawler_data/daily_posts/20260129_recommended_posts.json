@@ -1,12 +1,1547 @@
 {
   "date": "20260129",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-01-29T14:16:42.493348",
-  "tweet_count": 246,
-  "unique_tweet_count": 246,
-  "total_crawled": 437,
-  "duplicates_removed": 191,
+  "last_crawl_time": "2026-01-29T16:13:03.713505",
+  "tweet_count": 272,
+  "unique_tweet_count": 272,
+  "total_crawled": 446,
+  "duplicates_removed": 174,
   "tweets": [
+    {
+      "id": "2016905035339149703",
+      "text": "RT @op7418: 终于，Gemini CLI 也支持创建和使用 Skills 了！\n\n而且我发现，它可以检测到 Claude Code 已经安装的 Skills。\n\n这下可以爽玩了，Skills 接力，哈哈 https://t.co/kaZ8IWsCBQ",
+      "created_at": "Thu Jan 29 16:03:27 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2016744934192377857",
+          "url": "https://pbs.twimg.com/media/G_zq1R0a8AE7sx7.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2016745143429431806",
+        "text": "终于，Gemini CLI 也支持创建和使用 Skills 了！\n\n而且我发现，它可以检测到 Claude Code 已经安装的 Skills。\n\n这下可以爽玩了，Skills 接力，哈哈 https://t.co/kaZ8IWsCBQ",
+        "created_at": "Thu Jan 29 05:28:06 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2016744934192377857",
+            "url": "https://pbs.twimg.com/media/G_zq1R0a8AE7sx7.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2016705735334519181",
+          "text": "Gemini CLI 更新\n\n终于支持使用和创建 Skills 了！\n\n同时开始支持 hooks https://t.co/tZoEWU8t2o",
+          "created_at": "Thu Jan 29 02:51:30 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2016705727071735815",
+              "url": "https://pbs.twimg.com/media/G_zHLH6bUAcgo3J.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1669276256",
+            "name": "歸藏(guizang.ai)",
+            "screen_name": "op7418",
+            "description": "关注人工智能、LLM 、 AI 图像视频和设计（Interested in AI, LLM, Stable Diffusion, and design）\n\n歸藏的 AIGC 周刊｜公众号：歸藏的AI工具箱",
+            "followers_count": 117370,
+            "friends_count": 1235,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1,
+            "favorite_count": 28,
+            "reply_count": 4,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "1669276256",
+          "name": "歸藏(guizang.ai)",
+          "screen_name": "op7418",
+          "description": "关注人工智能、LLM 、 AI 图像视频和设计（Interested in AI, LLM, Stable Diffusion, and design）\n\n歸藏的 AIGC 周刊｜公众号：歸藏的AI工具箱",
+          "followers_count": 117370,
+          "friends_count": 1235,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 22,
+          "reply_count": 7,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 173619,
+        "friends_count": 1545,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016903765383655870",
+      "text": "“离开剂量谈毒性就是耍流氓”，AI 代码要不要架构要不要 Review，也要看场景看应用，Demo、玩具应用、Skills 里面用的小脚本，不重要的功能模块，这些完全可以当黑盒子看输入输出就可以。\n\n但是给别人用的，有安全要求、性能要求的，需要长期维护的，就得慎重了，可以用 AI 写，人得把关",
+      "created_at": "Thu Jan 29 15:58:24 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2016878211842670741",
+        "text": "现在有部分人担心的是，AI 把项目改成黑盒，架构自己理解不了了，从而以后不好维护了，所以还需要去读 AI 代码，识别 AI 代码的实现问题。\n咋说呢，我觉得这也很正常。我甚至也不知道了，就是说 AI 代码到底应不应该去考虑架构、考虑实现。\n\n现在更像是一个分水岭，从手工编程时代迈向 AI 编程时代的重要转折点，虽然推特上大多数应该都是毫无疑问的全 AI 编程，但是仍有大部分的群体，是手工编程的。\n到底怎么看这个问题，我觉得我也没有特别能说服别人的答案。",
+        "created_at": "Thu Jan 29 14:16:52 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "371296701",
+          "name": "马天翼",
+          "screen_name": "fkysly",
+          "description": "Indie hacker & AI.",
+          "followers_count": 9605,
+          "friends_count": 489,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 4,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 173619,
+        "friends_count": 1545,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016901737915838659",
+      "text": "RT @PhysInHistory: A wave is just circular motion unfolded in space and time. ✍️ https://t.co/OANVtGn1TW",
+      "created_at": "Thu Jan 29 15:50:21 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "animated_gif",
+          "id": "2016870008673226752",
+          "url": "https://pbs.twimg.com/tweet_video_thumb/G_1clkkbUAAvSNX.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2016870577668313566",
+        "text": "A wave is just circular motion unfolded in space and time. ✍️ https://t.co/OANVtGn1TW",
+        "created_at": "Thu Jan 29 13:46:32 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "animated_gif",
+            "id": "2016870008673226752",
+            "url": "https://pbs.twimg.com/tweet_video_thumb/G_1clkkbUAAvSNX.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1288841746898534401",
+          "name": "Physics In History",
+          "screen_name": "PhysInHistory",
+          "description": "Photos from the history of physics | © with mentioned Archives. Shared for educational purposes. Einstein portrait © Ullsteinbild. Subscribe for curated papers.",
+          "followers_count": 1078290,
+          "friends_count": 0,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 313,
+          "favorite_count": 1726,
+          "reply_count": 217,
+          "quote_count": 30
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 313,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016900644271993284",
+      "text": "避免误会，上面只是简单总结了一下，再发一下原文链接：https://t.co/LFCgeWh557",
+      "created_at": "Thu Jan 29 15:46:00 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 173619,
+        "friends_count": 1545,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016896752251502873",
+      "text": "推荐阅读：《万字解析 Manus 的 PMF 和 AI Agent 赛道竞争的稳态约束》\n作者： “约尔 Yor”\n\n作者问了一个问题：AI应用的数据都在暴涨，但怎么判断用户是真在用，还是只是在尝鲜围观？\n\n作者给出的答案是：别看融资额和PR稿，去看Reddit和Discord上的真实吐槽。这些地方的用户样本偏早期adopter，语气不友好甚至充满抱怨，但恰恰因为他们真的拿AI去干活、为结果承担过现实成本，所以信息密度极高。\n\n先说结论：Manus找到了自己的位置，而且很清晰。\n\n【1】核心发现\n\nManus 到底解决了什么问题？\n\n一句话：那些不做不行、自己做太累、雇人又不划算的商业杂活。\n\n报税、填表、爬数据、做PPT、跑固定流程，这些任务的特征是输入输出明确、逻辑不复杂、但执行过程冗长琐碎。\n\nManus覆盖的正是这片结构性真空。\n\n用户付费的四种动机：\n1. 花钱换精力（认知代工）\n2. 第一次做出原本不会的东西（能力解锁）\n3. 比雇人便宜（成本替代）\n4. 不想参与繁琐执行（托管）\n\nManus 和 ChatGPT 不是替代关系，而是分工。\n\nChatGPT 是认知层产品，擅长想清楚；Manus 是执行层产品，负责跑出来。\n\n很多用户先在 ChatGPT 打磨 prompt，再交给 Manus 执行，省积分。\n\n【2】Manus 比 ChatGPT 强在哪\n\nChatGPT 是认知层产品，擅长对话、思考、解释。\nManus 是执行层产品，能在真实工作流里干活。\n\n具体差异：\n- Manus 能交付完整调研报告而非只给建议；\n- 能直接处理 PDF、图片生成表格而非需要大量人工修正；\n- 能离线持续执行而非需要你盯着；\n- 能拿到系统权限直接操作服务器和代码仓库。\n\n【3】谁在付费？\n\n核心用户是 Freelancer、一人公司、小型工作室。他们对外售卖判断力，但缺少助理和运营。Manus 提供的是一种\"低配组织形态\"，让个体拥有接近小团队的执行能力。\n\nManus提供的是一种低配组织形态，让个体拥有接近小团队的执行能力。\n\n付费逻辑很直接：只要比雇人便宜、比自己做省时间，ROI 算得过账就行。\n\n【4】Manus 的软肋？\n\n积分焦虑。Agent 的价值来自交付结果，但计费发生在执行过程，成本和结果脱钩。\n\n用户愿意为结果付钱，但不敢为过程放手。只要执行路径不确定、按 token 计费，就必然制造成本焦虑，抑制用户把更大任务交出去。\n\n用户的积分焦虑本质是“执行不确定性”的定价问题。\n\n【5】更大的问题：这一代AI争夺的稀缺资源是什么？\n\n移动互联网争的是用户时间，AI争的是人类可被外包的经济效用总量：有多少真实工作、决策和表达，人类愿意授权给AI执行。\n\nToken消耗量就像当年移动互联网时代的人均网络流量消耗，只说明为系统消耗了多少资源，不代表为现实世界创造了多少价值。\n\nAI 产品在争夺三种份额：\n1. 任务份额\n2. 决策份额\n3. 产出份额。\n\n【6】终局形态？\n\nManus 之外的机会在三个方向：\n1. 深耕垂直领域的专业 Agent\n2. AI 加人类服务的混合交付\n3. 嵌入工作过程的 Copilot\n\n终局可能不是一个超级智能体，决定天花板的，是谁能进入更高价值、更高责任、更高决策密度的任务结构。\n\n链接：https://t.co/IrjkMFkkir",
+      "created_at": "Thu Jan 29 15:30:32 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2016896575432265729",
+          "url": "https://pbs.twimg.com/media/G_10v9dXkAELEH_.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 173619,
+        "friends_count": 1545,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 18,
+        "reply_count": 2,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2016890586666520627",
+      "text": "Grokipedia will exceed the content breadth, depth and accuracy of Wikipedia by &gt;1000%",
+      "created_at": "Thu Jan 29 15:06:02 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2016883730753999325",
+        "text": "BREAKING: More pages from Grokipedia are now ranking #1 on Google ahead of woke Wikipedia.\n\nKeep sharing and citing Grokipedia links. https://t.co/VEYWec4zQy",
+        "created_at": "Thu Jan 29 14:38:47 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2016883714886926336",
+            "url": "https://pbs.twimg.com/media/G_1pDYMbAAAmlRJ.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1817293,
+          "friends_count": 893,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 88,
+          "favorite_count": 550,
+          "reply_count": 197,
+          "quote_count": 14
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1251,
+        "favorite_count": 8596,
+        "reply_count": 1430,
+        "quote_count": 61
+      }
+    },
+    {
+      "id": "2016889938327847415",
+      "text": "Suggest edits for articles on https://t.co/op5s4ZikGJ and @Grok will research the Internet to confirm and approve your edit",
+      "created_at": "Thu Jan 29 15:03:27 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2016888791630565602",
+        "text": "BREAKING: Grokipedia just surpassed 400000 approved edits by Grok. https://t.co/gNRN4jc2Ul",
+        "created_at": "Thu Jan 29 14:58:54 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2016888773607641088",
+            "url": "https://pbs.twimg.com/media/G_1tp1ZbUAAam6S.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1817293,
+          "friends_count": 893,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 41,
+          "favorite_count": 276,
+          "reply_count": 158,
+          "quote_count": 9
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 529,
+        "favorite_count": 3269,
+        "reply_count": 771,
+        "quote_count": 34
+      }
+    },
+    {
+      "id": "2016889137299706271",
+      "text": "And more improvements every week",
+      "created_at": "Thu Jan 29 15:00:16 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2016872780407406887",
+        "text": "Take a look at where the \"leading\" AI company is ranked ... https://t.co/tvn2C1wDXH",
+        "created_at": "Thu Jan 29 13:55:17 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2016872774594383872",
+            "url": "https://pbs.twimg.com/media/G_1fGkba0AAf-dN.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1604863807574212611",
+          "name": "Tech Dev Notes",
+          "screen_name": "techdevnotes",
+          "description": "Notes on tech | https://t.co/L0xyXaUV2y",
+          "followers_count": 53187,
+          "friends_count": 0,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 13,
+          "favorite_count": 114,
+          "reply_count": 45,
+          "quote_count": 8
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 719,
+        "favorite_count": 5634,
+        "reply_count": 1057,
+        "quote_count": 35
+      }
+    },
+    {
+      "id": "2016888853286600751",
+      "text": "RT @art_muse: Monochrome Melody 🎶 🎧\n\nAnimation by Grok Imagine https://t.co/Ed7X6xKLfj",
+      "created_at": "Thu Jan 29 14:59:09 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2016544307264581632",
+          "url": "https://video.twimg.com/amplify_video/2016544307264581632/vid/avc1/464x688/pLevgoMk7iemuvy7.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": {
+        "id": "2016544382443278784",
+        "text": "Monochrome Melody 🎶 🎧\n\nAnimation by Grok Imagine https://t.co/Ed7X6xKLfj",
+        "created_at": "Wed Jan 28 16:10:21 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2016544307264581632",
+            "url": "https://video.twimg.com/amplify_video/2016544307264581632/vid/avc1/464x688/pLevgoMk7iemuvy7.mp4?tag=23",
+            "bitrate": 5184000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1703374786162749440",
+          "name": "Art Muse",
+          "screen_name": "art_muse",
+          "description": "Sharing AI art, musings, & moments that spark the soul. Animations by Grok Imagine.",
+          "followers_count": 11816,
+          "friends_count": 1338,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 117,
+          "favorite_count": 846,
+          "reply_count": 152,
+          "quote_count": 10
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 117,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016888707911983422",
+      "text": "RT @XFreeze: I just uploaded the image and this is the result from grok Imagine \n\nLook at the video\n\nLiterally zero prompt….it’s soo perfec…",
+      "created_at": "Thu Jan 29 14:58:34 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2016884487561310249",
+        "text": "I just uploaded the image and this is the result from grok Imagine \n\nLook at the video\n\nLiterally zero prompt….it’s soo perfect \n\nGrok Imagine is soo amazing https://t.co/SBeYCub4QI",
+        "created_at": "Thu Jan 29 14:41:48 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2016884390043750400",
+            "url": "https://video.twimg.com/amplify_video/2016884390043750400/vid/avc1/640x480/dDXq1N5j2U92d2Hn.mp4?tag=23",
+            "bitrate": 5184000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 127814,
+          "friends_count": 1635,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 129,
+          "favorite_count": 738,
+          "reply_count": 189,
+          "quote_count": 10
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 129,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016886116549374084",
+      "text": "RT @DimaZeniuk: Starship will likely grow by another 20m over time, reaching up to 140m 🤯 https://t.co/EYfJKTylXV",
+      "created_at": "Thu Jan 29 14:48:16 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1764709029270687744",
+          "url": "https://video.twimg.com/amplify_video/1764709029270687744/vid/avc1/720x1280/Wher6Hc4ZAbsw2GA.mp4?tag=14",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": {
+        "id": "2016642617304375587",
+        "text": "Starship will likely grow by another 20m over time, reaching up to 140m 🤯 https://t.co/EYfJKTylXV",
+        "created_at": "Wed Jan 28 22:40:42 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "1764709029270687744",
+            "url": "https://video.twimg.com/amplify_video/1764709029270687744/vid/avc1/720x1280/Wher6Hc4ZAbsw2GA.mp4?tag=14",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1198495865301864448",
+          "name": "Dima Zeniuk",
+          "screen_name": "DimaZeniuk",
+          "description": "Tesla | SpaceX | Starlink | X |\nFree speech\n\nInspired by innovation | Future | Neuralink",
+          "followers_count": 119329,
+          "friends_count": 631,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 319,
+          "favorite_count": 2829,
+          "reply_count": 201,
+          "quote_count": 19
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 319,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016884922162508148",
+      "text": "RT @karatademada: This is how good my timeline feels right now.\n\nIn tune.\nEvery post just lands.\n\nHow’s yours? https://t.co/gaTK4CX78x",
+      "created_at": "Thu Jan 29 14:43:32 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2016808280128180225",
+          "url": "https://video.twimg.com/amplify_video/2016808280128180225/vid/avc1/576x856/n7U_0LANiPH0vqrD.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": {
+        "id": "2016808341545119820",
+        "text": "This is how good my timeline feels right now.\n\nIn tune.\nEvery post just lands.\n\nHow’s yours? https://t.co/gaTK4CX78x",
+        "created_at": "Thu Jan 29 09:39:13 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2016808280128180225",
+            "url": "https://video.twimg.com/amplify_video/2016808280128180225/vid/avc1/576x856/n7U_0LANiPH0vqrD.mp4?tag=23",
+            "bitrate": 5184000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1398565994042376195",
+          "name": "Karata",
+          "screen_name": "karatademada",
+          "description": "Photography & AI Enthusiast | Writer ✍️ If you enjoy my content , subscribe to my newsletter for more: https://t.co/b2Jb8aud1C",
+          "followers_count": 22526,
+          "friends_count": 2881,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 110,
+          "favorite_count": 758,
+          "reply_count": 146,
+          "quote_count": 6
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 110,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016884866592264330",
+      "text": "RT @Morning88104856: “The stars call to us—the future is ours to explore.” 💫\n\nGrok Imagine https://t.co/1fgGVTW9hU",
+      "created_at": "Thu Jan 29 14:43:18 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2016689828751167488",
+          "url": "https://video.twimg.com/amplify_video/2016689828751167488/vid/avc1/464x688/XL62EnWEwLTziM7h.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": {
+        "id": "2016690128077373834",
+        "text": "“The stars call to us—the future is ours to explore.” 💫\n\nGrok Imagine https://t.co/1fgGVTW9hU",
+        "created_at": "Thu Jan 29 01:49:29 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2016689828751167488",
+            "url": "https://video.twimg.com/amplify_video/2016689828751167488/vid/avc1/464x688/XL62EnWEwLTziM7h.mp4?tag=23",
+            "bitrate": 5184000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1623453348127973376",
+          "name": "Morning Glory",
+          "screen_name": "Morning88104856",
+          "description": "𝘈𝘳𝘵𝘪𝘴𝘵 • 𝘌𝘹𝘱𝘭𝘰𝘳𝘦𝘳 • 𝘊𝘳𝘦𝘢𝘵𝘰𝘳 ✨             Always learning, always evolving",
+          "followers_count": 6554,
+          "friends_count": 896,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 118,
+          "favorite_count": 744,
+          "reply_count": 107,
+          "quote_count": 4
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 118,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016884648320618677",
+      "text": "RT @VOLDEMORT2X: If forgetting were easy, I would have forgotten long ago..\n\nMade by 🅶🆁🅾🅺\n\n@grok Imagine 💫 https://t.co/ZlKEtcJyNM",
+      "created_at": "Thu Jan 29 14:42:26 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2016825102365794304",
+          "url": "https://video.twimg.com/amplify_video/2016825102365794304/vid/avc1/576x856/zB25zatnZ3eM82TM.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": {
+        "id": "2016825275602842082",
+        "text": "If forgetting were easy, I would have forgotten long ago..\n\nMade by 🅶🆁🅾🅺\n\n@grok Imagine 💫 https://t.co/ZlKEtcJyNM",
+        "created_at": "Thu Jan 29 10:46:31 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2016825102365794304",
+            "url": "https://video.twimg.com/amplify_video/2016825102365794304/vid/avc1/576x856/zB25zatnZ3eM82TM.mp4?tag=23",
+            "bitrate": 5184000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1721704151615197184",
+          "name": "SPACELESS",
+          "screen_name": "VOLDEMORT2X",
+          "description": "Grok Imagine 💫",
+          "followers_count": 3138,
+          "friends_count": 640,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 116,
+          "favorite_count": 639,
+          "reply_count": 118,
+          "quote_count": 5
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 116,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016883913935794442",
+      "text": "RT @rovvmut_: Grok Imagine v1.0 https://t.co/6qUCwDLiqr",
+      "created_at": "Thu Jan 29 14:39:31 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2016789889111736320",
+          "url": "https://video.twimg.com/amplify_video/2016789889111736320/vid/avc1/688x464/TtKBb4PS7BvX540s.mp4?tag=23",
+          "bitrate": 5184000
+        }
+      ],
+      "retweet": {
+        "id": "2016790138312122531",
+        "text": "Grok Imagine v1.0 https://t.co/6qUCwDLiqr",
+        "created_at": "Thu Jan 29 08:26:53 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2016789889111736320",
+            "url": "https://video.twimg.com/amplify_video/2016789889111736320/vid/avc1/688x464/TtKBb4PS7BvX540s.mp4?tag=23",
+            "bitrate": 5184000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1547623016238002179",
+          "name": "Heisenberg",
+          "screen_name": "rovvmut_",
+          "description": "I'm vengeance. I post about AI, Tech and drop memes along the way. DM for collaborations.",
+          "followers_count": 27433,
+          "friends_count": 1573,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 145,
+          "favorite_count": 1025,
+          "reply_count": 182,
+          "quote_count": 12
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 145,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016883723807895930",
+      "text": "RT @mark_k: xAI’s Grok Imagine has officially claimed the top spot in the Artificial Analysis Video Arena, leading the rankings for both Te…",
+      "created_at": "Thu Jan 29 14:38:46 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2016784734362214676",
+        "text": "xAI’s Grok Imagine has officially claimed the top spot in the Artificial Analysis Video Arena, leading the rankings for both Text-to-Video and Image-to-Video. This leap by @xai puts it ahead of major competitors like Runway Gen-4.5, Kling 2.5 Turbo, and Google’s Veo 3.1.\n\nBeyond visual quality, Grok Imagine stands out for its native audio generation, a feature it shares with elite models like Sora. Currently available via API, it is positioned as a highly competitive option at $4.20 per minute, significantly undercutting the pricing of high-end rivals like Sora 2 Pro.",
+        "created_at": "Thu Jan 29 08:05:25 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2016784479889870849",
+            "url": "https://pbs.twimg.com/media/G_0OzJBbUAEpgXj.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "8721292",
+          "name": "Mark Kretschmann",
+          "screen_name": "mark_k",
+          "description": "AI & Software Engineering | Fitness | e/acc",
+          "followers_count": 28218,
+          "friends_count": 592,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 126,
+          "favorite_count": 740,
+          "reply_count": 92,
+          "quote_count": 6
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 126,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016882844451172761",
+      "text": "RT @visegrad24: The Acropolis in the snow! 🇬🇷 https://t.co/020qbipAQr",
+      "created_at": "Thu Jan 29 14:35:16 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2016538217336504320",
+          "url": "https://video.twimg.com/amplify_video/2016538217336504320/vid/avc1/1080x1920/_S7wzcGiLE68sHtP.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": {
+        "id": "2016538347674460630",
+        "text": "The Acropolis in the snow! 🇬🇷 https://t.co/020qbipAQr",
+        "created_at": "Wed Jan 28 15:46:22 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2016538217336504320",
+            "url": "https://video.twimg.com/amplify_video/2016538217336504320/vid/avc1/1080x1920/_S7wzcGiLE68sHtP.mp4?tag=21",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1222773302441148416",
+          "name": "Visegrád 24",
+          "screen_name": "visegrad24",
+          "description": "Aggregating and curating news, politics and current affairs.",
+          "followers_count": 1593288,
+          "friends_count": 2216,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2933,
+          "favorite_count": 24315,
+          "reply_count": 386,
+          "quote_count": 238
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2933,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016882819134321073",
+      "text": "RT @interesting_aIl: SpaceX successfully caught a rocket booster mid-air for the second time in history https://t.co/MnYlrprbB4",
+      "created_at": "Thu Jan 29 14:35:10 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2016753678233882624",
+          "url": "https://video.twimg.com/ext_tw_video/2016753678233882624/pu/vid/avc1/676x614/omYlKMhcMhrxAX1e.mp4?tag=12",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": {
+        "id": "2016753713780543596",
+        "text": "SpaceX successfully caught a rocket booster mid-air for the second time in history https://t.co/MnYlrprbB4",
+        "created_at": "Thu Jan 29 06:02:09 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2016753678233882624",
+            "url": "https://video.twimg.com/ext_tw_video/2016753678233882624/pu/vid/avc1/676x614/omYlKMhcMhrxAX1e.mp4?tag=12",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1485068728412913666",
+          "name": "Interesting As Fuck",
+          "screen_name": "interesting_aIl",
+          "description": "Posting interesting history, tech, art, and more.",
+          "followers_count": 2555411,
+          "friends_count": 110,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 919,
+          "favorite_count": 11957,
+          "reply_count": 350,
+          "quote_count": 80
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 919,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016881648814485697",
+      "text": "RT @Kyrannio: The camera motion in Imagine is insanely next-level...woah! I've been exploring a few prompts with the token 'image sequence'…",
+      "created_at": "Thu Jan 29 14:30:31 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2016801869767856383",
+        "text": "The camera motion in Imagine is insanely next-level...woah! I've been exploring a few prompts with the token 'image sequence' https://t.co/vU1G4jfsfE",
+        "created_at": "Thu Jan 29 09:13:30 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2016801800503148544",
+            "url": "https://video.twimg.com/amplify_video/2016801800503148544/vid/avc1/752x416/JvkIVhRp_XmmJNiF.mp4?tag=23",
+            "bitrate": 5184000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "104617997",
+          "name": "Kiri",
+          "screen_name": "Kyrannio",
+          "description": "hyperstition maxi building agents | AI dev | bootstrapping & building agentic + interactive video platform NoSpoon Studios @NoSpoonStudios",
+          "followers_count": 18136,
+          "friends_count": 9841,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 130,
+          "favorite_count": 848,
+          "reply_count": 144,
+          "quote_count": 5
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 130,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016881466567704852",
+      "text": "RT @imhaotian: We spent the past three months polishing the model quality and optimizing the user experiences. Grok Imagine now produces mo…",
+      "created_at": "Thu Jan 29 14:29:48 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2016762983385530763",
+        "text": "We spent the past three months polishing the model quality and optimizing the user experiences. Grok Imagine now produces more videos every day than all other companies combined and it ranks #1 on leaderboards! I’m extremely proud of what the team has achieved. We’re the best!",
+        "created_at": "Thu Jan 29 06:38:59 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2016745652739363129",
+          "text": "Understanding requires imagining. Grok Imagine lets you bring what’s in your brain to life, and now it’s available via the world’s fastest, and most powerful video API: https://t.co/tqQwQVgCEI\n\nTry it out and let your Imagination run wild. https://t.co/Bn6Z70Ual6",
+          "created_at": "Thu Jan 29 05:30:07 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2016745571508506625",
+              "url": "https://video.twimg.com/amplify_video/2016745571508506625/vid/avc1/1920x1080/5sF2Yy_D-PukmQdW.mp4?tag=21",
+              "bitrate": 10368000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1661523610111193088",
+            "name": "xAI",
+            "screen_name": "xai",
+            "description": "",
+            "followers_count": 1875600,
+            "friends_count": 38,
+            "verified": false,
+            "is_blue_verified": false
+          },
+          "stats": {
+            "retweet_count": 389,
+            "favorite_count": 2601,
+            "reply_count": 344,
+            "quote_count": 152
+          }
+        },
+        "user": {
+          "id": "2267475408",
+          "name": "Haotian Liu",
+          "screen_name": "imhaotian",
+          "description": "building intelligence @xAI. @grok omni/imagine/vision. creator of #LLaVA, prev. @MSFTResearch @UWMadison",
+          "followers_count": 11555,
+          "friends_count": 523,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 136,
+          "favorite_count": 1019,
+          "reply_count": 131,
+          "quote_count": 14
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 136,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016881341195845931",
+      "text": "RT @EvaLovesDesign: Be feminine, it’s a gift ✨ https://t.co/VoWylcj4Xf",
+      "created_at": "Thu Jan 29 14:29:18 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2016613545530527744",
+          "url": "https://pbs.twimg.com/media/G_xzVc6WkAA5wdE.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2016613551851405675",
+        "text": "Be feminine, it’s a gift ✨ https://t.co/VoWylcj4Xf",
+        "created_at": "Wed Jan 28 20:45:12 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2016613545530527744",
+            "url": "https://pbs.twimg.com/media/G_xzVc6WkAA5wdE.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1641433637865283584",
+          "name": "Elle Lookbook",
+          "screen_name": "EvaLovesDesign",
+          "description": "Style 👑 romantic, a touch of rustic, splash of whimsy, old world elegance 🏛️, a warm embrace with a glass of 🥂.        Me 🥐.     🖼️dm for credit or removal",
+          "followers_count": 172318,
+          "friends_count": 835,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 402,
+          "favorite_count": 4309,
+          "reply_count": 191,
+          "quote_count": 32
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 402,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016880589517861201",
+      "text": "RT @Hoang_HQ: Describe her singing voice in one word.💫🎙️\n https://t.co/EYqzaIf5uz",
+      "created_at": "Thu Jan 29 14:26:19 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "1952344774851301376",
+          "url": "https://video.twimg.com/amplify_video/1952344774851301376/vid/avc1/1080x1920/ajhCuuib2B5xLGD_.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": {
+        "id": "1993386576639148106",
+        "text": "Describe her singing voice in one word.💫🎙️\n https://t.co/EYqzaIf5uz",
+        "created_at": "Tue Nov 25 18:29:29 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "1952344774851301376",
+            "url": "https://video.twimg.com/amplify_video/1952344774851301376/vid/avc1/1080x1920/ajhCuuib2B5xLGD_.mp4?tag=21",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1689645242142834688",
+          "name": "𝗧𝗶𝗺𝗲𝗹𝗲𝘀𝘀 𝗠𝘂𝘀𝗶𝗰 ✨🎵",
+          "screen_name": "Hoang_HQ",
+          "description": "🎶 💥Classic music & 50s-90s | 📽️ Retro movies | 🎨 Vintage art #TimelessMusic #movie #paint #art #70sVibes #80sVibes #VintageVibes #ClassicHits #RetroMusic",
+          "followers_count": 393999,
+          "friends_count": 4208,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1587,
+          "favorite_count": 8932,
+          "reply_count": 767,
+          "quote_count": 161
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1587,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016879318127804458",
+      "text": "RT @SawyerMerritt: By June 30, 2026, Tesla will officially discontinue the Model S and Model X.\n\nSince the Model S rolled out in 2012 and M…",
+      "created_at": "Thu Jan 29 14:21:15 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2016662737359704141",
+        "text": "By June 30, 2026, Tesla will officially discontinue the Model S and Model X.\n\nSince the Model S rolled out in 2012 and Model X in 2016, about 740,000 of them have been delivered, each one helping define an era of Tesla’s and automotive history.\n\nSalute to two amazing products 🫡 https://t.co/82SyFjYpi0",
+        "created_at": "Thu Jan 29 00:00:39 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2016661528464764928",
+            "url": "https://pbs.twimg.com/media/G_ye-bRWsAAiiZf.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2016661535586754560",
+            "url": "https://pbs.twimg.com/media/G_ye-1zXoAAkpfA.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2016661565953458176",
+            "url": "https://pbs.twimg.com/media/G_yfAm7WwAAaoS9.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2016661585918345216",
+            "url": "https://pbs.twimg.com/media/G_yfBxTWwAAGe19.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EV/space/tech news. Bringing you the latest news in a single, easy-to-read feed. $TSLA investor & Model Y owner.",
+          "followers_count": 1030586,
+          "friends_count": 429,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 468,
+          "favorite_count": 5392,
+          "reply_count": 499,
+          "quote_count": 114
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 468,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016879137328099649",
+      "text": "RT @XFreeze: Neuralink is ready to implant its Blindsight vision-restoring device in a human for the first time, pending regulatory approva…",
+      "created_at": "Thu Jan 29 14:20:32 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2016870515219058855",
+        "text": "Neuralink is ready to implant its Blindsight vision-restoring device in a human for the first time, pending regulatory approval\n\n•   Blindsight bypasses damaged eyes and optic nerves, using a camera to wirelessly send visual data directly to the brain’s visual cortex\n•  Initial vision will be low-resolution, with the goal of improving quality over time as the technology advances\n•  Neuralink has expanded its brain-computer interface trials to 21 participants worldwide",
+        "created_at": "Thu Jan 29 13:46:17 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2016868861912764416",
+            "url": "https://pbs.twimg.com/media/G_1bi0jbUAAr2Ks.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 127814,
+          "friends_count": 1635,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 354,
+          "favorite_count": 1681,
+          "reply_count": 219,
+          "quote_count": 36
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 354,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016878862982959477",
+      "text": "RT @jasondebolt: I’m sad to hear that the model S and model X will be discontinued, but it makes complete sense.\n\nI ordered my Tesla model…",
+      "created_at": "Thu Jan 29 14:19:27 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2016747015485739392",
+        "text": "I’m sad to hear that the model S and model X will be discontinued, but it makes complete sense.\n\nI ordered my Tesla model S in 2011 and took delivery in early 2013. It was a rare vehicle even in Palo Alto and Mountain View at that time.\n\nI gave many test rides to my coworkers, helping me build conviction to accumulate $TSLA from 2013 onwards. I remember one guy in particular who was critical of the Model S, going from saying it was an “expensive golf cart”, to ordering a Tesla after I gave him a test drive. It was wild to see the “oh fuck” realization on people’s faces when the experienced the model S for thr first time. They went from critics to customers faster than I had seen anyone change their minds. The Model S was a spaceship. \n\nUp until now, the model S was arguably Tesla’s biggest step change product ever, literally pushing Tesla from zero to one as company. Tesla achieved its first profitable quarter in Q1 2013 from strong Model S sales. Consistent profitability was achieved seven years later in 2020 with the Model 3 and Model Y.\n\nWithin a decade, very few people will even know that Tesla ever made the model S or X. Within two decades, most people won’t even remember/know that Tesla ever made human operated vehicles.\n\nThe original roadster was the proof of concept. The model 3/Y were the people’s Teslas. The model S/X were the most iconic flagship Tesla vehicles. They drove critical early adoption and made Tesla a going concern. The Model 3/Y came to the rescue and made Tesla truly profitable. Every step change Tesla product rescues the company while simultaneously launching it to new heights. FSD and Optimus are next.",
+        "created_at": "Thu Jan 29 05:35:32 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": null,
+          "text": "",
+          "created_at": null,
+          "lang": null,
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": null,
+          "stats": {
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          }
+        },
+        "user": {
+          "id": "298274977",
+          "name": "Jason DeBolt ⚡️",
+          "screen_name": "jasondebolt",
+          "description": "All in Tesla investor since 2013 | Retired | Software Engineer | Philosophy | My tweets/DM’s are not financial advice | I don’t sell anything, watch for scams.",
+          "followers_count": 253008,
+          "friends_count": 6131,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 159,
+          "favorite_count": 1330,
+          "reply_count": 97,
+          "quote_count": 6
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 159,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2016878252539691506",
+      "text": "Much more coming out from @xAI. \n\nWe are cooking hard on many projects.",
+      "created_at": "Thu Jan 29 14:17:01 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2016774246962487311",
+        "text": "Who said @xAI is irrelevant? \n\nMany.",
+        "created_at": "Thu Jan 29 07:23:44 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "13348",
+          "name": "Robert Scoble",
+          "screen_name": "Scobleizer",
+          "description": "San Francisco/Silicon Valley AI | Robots, holodecks, BCIs, analysis of new things | Ex-Microsoft, Rackspace, Fast Company | Wrote eight books about the future.",
+          "followers_count": 556066,
+          "friends_count": 36071,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 15,
+          "favorite_count": 345,
+          "reply_count": 37,
+          "quote_count": 0
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 233353202,
+        "friends_count": 1278,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 913,
+        "favorite_count": 9230,
+        "reply_count": 1487,
+        "quote_count": 83
+      }
+    },
     {
       "id": "2016877278194475041",
       "text": "Thanks Jeff, you rock ❤️",

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 174761,
+    "followers_count": 174796,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260131",
-  "last_updated": "2026-01-31T18:07:59.030207",
-  "tweet_count": 14,
+  "last_updated": "2026-01-31T20:06:13.471569",
+  "tweet_count": 17,
   "tweets": [
     {
       "id": "2017437993305276646",
@@ -516,6 +516,123 @@
       "quoted": null,
       "stats": {
         "retweet_count": 7,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2017670246279098601",
+      "text": "我估计 Moltbook 火不过一周，一个月后估计就没什么人提起来了，新鲜感过去后，没有人会去看 AI 产生的垃圾，没有人的注意力，它啥也不是。\n\nClawdbot/OpenClaw 会存在很长一段时间，最重要的是它以后会成为一个代名词，开创了一个新的产品形态，就像当年 Cursor 一样。",
+      "created_at": "Sat Jan 31 18:44:07 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2017502150708875443",
+        "text": "https://t.co/yrJ4tO1XXD",
+        "created_at": "Sat Jan 31 07:36:10 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 174796,
+          "friends_count": 1547,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 82,
+          "favorite_count": 335,
+          "reply_count": 30,
+          "quote_count": 21
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 23,
+        "reply_count": 14,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2017671808636350554",
+      "text": "上头很正常，坚持一周在看：）\n还有人天天去 Sora 2 上刷视频吗？\nhttps://t.co/FU0rFvjUBG",
+      "created_at": "Sat Jan 31 18:50:20 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2017671479857713554",
+        "text": "@dotey 😭😭可是，我越看越上头，我都看到三四个ai在谈论失业了，",
+        "created_at": "Sat Jan 31 18:49:01 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1558317849508122629",
+          "name": "CuiMao",
+          "screen_name": "CuiMao",
+          "description": "AI Developer",
+          "followers_count": 27078,
+          "friends_count": 1109,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 4,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2017690558613930229",
+      "text": "怎么设计一个为 AI 时代准备的数据存储引擎\n\n核心问题是：做 AI 应用时，数据结构经常要变。今天 AI 输出 12 个字段，明天可能变成 30 个。传统数据库改表结构要走流程、要停机，根本跟不上这个节奏。\n\n若石的解决方案组合了三个技术点：\n1. 用 EAV 模式 + JSON Schema，实现“零 DDL”，加字段不用改表结构\n2. 用 PostgreSQL 的 CTE + JSON_AGG，把 N+1 查询问题干掉，延迟从 1 秒降到 25 毫秒\n3. 用 DuckDB + Parquet 做冷热分离，同时用 Anti-Join 机制保证查询不会读到脏数据\n\n如果你在做 AI 应用，经常为改数据库字段这事烦，或者对数据库架构设计感兴趣，推荐看看若石的文章。",
+      "created_at": "Sat Jan 31 20:04:50 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2017686621211214188",
+        "text": "When your AI application produces dozens of new data structures every day, while your database is still waiting for DBA approval on ALTER TABLE—that gap is exactly what Forma is built to solve.\n\n https://t.co/hTn8Ya99iH",
+        "created_at": "Sat Jan 31 19:49:11 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "10174552",
+          "name": "若石",
+          "screen_name": "iceboundrock",
+          "description": "一个对宇宙万物充满好奇的男人",
+          "followers_count": 721,
+          "friends_count": 745,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

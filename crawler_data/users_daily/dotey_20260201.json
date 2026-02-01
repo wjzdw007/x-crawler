@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 175000,
+    "followers_count": 175062,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260201",
-  "last_updated": "2026-02-01T06:19:01.456085",
-  "tweet_count": 7,
+  "last_updated": "2026-02-01T08:08:17.914357",
+  "tweet_count": 8,
   "tweets": [
     {
       "id": "2017755632317636700",
@@ -326,6 +326,45 @@
         "favorite_count": 1,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2017854275905274075",
+      "text": "Boris（Claude Code 创始人）解释为什么 Claude Code 不用 RAG 向量检索代码：\n\n在开发 Claude Code 的早期版本时，我们曾尝试过 RAG 搭配本地向量数据库的方案。\n\n但很快我们就发现，Agent 使用关键字搜索在实际应用中的表现通常要出色得多。\n\n这种方案不仅实现起来更加简洁，而且还完美避开了 RAG 模式下那些令人头疼的“老毛病”：比如数据安全性、隐私泄露风险、信息滞后以及系统可靠性等问题。",
+      "created_at": "Sun Feb 01 06:55:23 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2017824286489383315",
+        "text": "@EthanLipnik 👋 Early versions of Claude Code used RAG + a local vector db, but we found pretty quickly that agentic search generally works better. It is also simpler and doesn’t have the same issues around security, privacy, staleness, and reliability.",
+        "created_at": "Sun Feb 01 04:56:13 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "159337660",
+          "name": "Boris Cherny",
+          "screen_name": "bcherny",
+          "description": "Claude Code @anthropicai",
+          "followers_count": 205614,
+          "friends_count": 129,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 26,
+          "favorite_count": 837,
+          "reply_count": 34,
+          "quote_count": 10
+        }
+      },
+      "stats": {
+        "retweet_count": 6,
+        "favorite_count": 39,
+        "reply_count": 8,
+        "quote_count": 2
       }
     }
   ]

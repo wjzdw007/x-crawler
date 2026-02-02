@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 175356,
+    "followers_count": 175386,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260202",
-  "last_updated": "2026-02-02T08:14:22.525017",
-  "tweet_count": 3,
+  "last_updated": "2026-02-02T10:18:39.220141",
+  "tweet_count": 4,
   "tweets": [
     {
       "id": "2018118669117935688",
@@ -78,6 +78,27 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2018241889275670770",
+      "text": "李想刚发了条朋友圈，盘点 2025 到 2026 年初最具突破性的 AI 产品：Claude Code、豆包手机、Manus、OpenClaw、MoltBook、Chrome Gemini。\n\n六个产品看着不相干，但背后都是一个问题：怎么让 AI 真正帮你干活？\n\n订机票、发微信、填表格，你都想交给 AI。问题是每个 App 都是独立王国，不会把数据和操作权限开放给外人。你想要一个贾维斯，但贾维斯走到哪都吃闭门羹。\n\n豆包手机、OpenClaw、Chrome Gemini 这三个产品选了同一条路绕过去：GUI Agent。\n\n后门不开就走前门，让 AI 直接帮你看屏幕、模拟点击来操作你的设备。\n\n【1】前门怎么走？\n\n传统思路是走后门：让 App 开放接口，AI 直接调用。但现实是大多数 App 根本不开放。\n\nGUI Agent 反过来：AI 在用户授权下帮你看屏幕，识别按钮和输入框在哪，模拟人的手指去点击、滑动、输入。就像你开视频让朋友远程帮你操作手机，只不过这个“朋友”是 AI，而且直接上手帮你干。如果是你自己授权，加上一些关键环节的确认，相对还是比较安全的。\n\n【2】三个产品，同一个思路，落点不同\n\nChrome Gemini：浏览器里的智能体\n\nGemini in Chrome 不只帮你总结网页，它还有个功能叫“自动浏览”（auto browse）：你说需求，它直接在网页里帮你跑流程，比如预约、填表、规划行程。\n\n浏览器场景有个天然优势：网页不是一张图片，背后有结构信息，哪里是按钮、哪里是输入框，AI 能“看”得更准。所以这类能力会先在浏览器里成熟，再往系统级扩展。\n\n豆包手机助手：手机里的智能体\n\n字节跳动的豆包手机助手就是 GUI Agent 在手机上的打法：读屏幕内容，模拟点击、滑动，帮你跨 App 完成任务。\n\nOpenClaw：电脑里的智能体\n\nOpenClaw 这波火，很大程度因为“真的能干活”。它强调本地运行，能连接你常用的即时通信工具，像个住在电脑里的助手，在浏览器环境里帮你点网页、填表单、跑流程。它把这层能力封装得更好用了。\n\n【3】GUI Agent 其实是个不错的技术路径\n\n国内厂商围绕 GUI Agent 吵得凶：激进、危险、绕不过生态。但 OpenClaw 的火爆说明用户不想再等了，哪怕有风险也要试试。\n\n矛盾很简单：用户想“现在就用、能跨一堆软件”，App 厂商想“别绕过我的地盘”。\n\nGUI Agent 是个现实的折中方案。如果每个 App 都愿意开放接口，当然最好，但这需要时间，很多小 App、小网站根本不会配合。GUI Agent 绕过了这个问题，只要用户授权，能“看屏幕 + 点屏幕”，什么 App 都能操作，覆盖面广，上手快。\n\n所以未来大概率是混合模式：重要的、高频的事走正规接口，长尾的、没人配合的事用 GUI Agent 兜底。",
+      "created_at": "Mon Feb 02 08:35:38 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2018241838809792512",
+          "url": "https://pbs.twimg.com/media/HAI8QmEWwAAAuxs.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 14,
+        "favorite_count": 87,
+        "reply_count": 27,
+        "quote_count": 7
       }
     }
   ]

@@ -1,0 +1,164 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 175812,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260203",
+  "last_updated": "2026-02-03T06:19:11.009880",
+  "tweet_count": 4,
+  "tweets": [
+    {
+      "id": "2018551826115702966",
+      "text": "https://t.co/RwbURjcOXI",
+      "created_at": "Tue Feb 03 05:07:12 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 6,
+        "favorite_count": 80,
+        "reply_count": 15,
+        "quote_count": 7
+      }
+    },
+    {
+      "id": "2018560859283304742",
+      "text": "有网友问我“让 Codex 帮我写了一个脚本，定时检测上下文是否接近上限，自动新开会话并输入 continue。”这个动作具体是怎么完成的，其实当时我还分享了，只是一开始是用 Claude Code 操作，后来还是改成定时脚本了😅 https://t.co/a5gR0UOJQt",
+      "created_at": "Tue Feb 03 05:43:06 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1972200355506135165",
+        "text": "卧槽，我真解决了让 Codex 连续工作 8 小时的问题，上下文都不会爆掉！\n\n方案就是让 Claude Code 去当监工监督 Codex 干活，大概的步骤如下：\n\n1. 首先要让 Codex 生成一个任务的 TODO List，就是那种能一步步完成的\n2. 然后让 Codex 更新 Agents md 文件，加上说明，如果输入 continue，要读取 TODO 文件，去选取任务，执行后更新 TODO\n3. 让 Claude Code 去执行命令：\n> export TERM=xterm && codex exec \"continue to next task\" --full-auto\n\n也就是 Claude Code 去启动 codex 并传入提示词 \"continue to next task\"\n\n并且监控 codex 的执行，如果当前任务完成了，就杀掉进程，重新执行上面的指令下一个任务。\n\n由于每次都是新的 session，所以 codex 的上下文每次用的不多，不会爆掉。\n\n那么怎么保证 Claude Code 的 Context 不爆掉呢？毕竟codex输出的信息也不少\n\n答案就是让 Claude Code 每次去启动 codex 和监控 codex 执行的时候，都起一个子 Agent，这样每个子 Agent 都有独立的上下文，主 Agent 只有子Agent完成的上下文，占用空间极小。\n\n完整的提示词和运行效果在图1可以看到：\n> 帮我在当前目录下，新开一个agent，使用 export TERM=xterm && codex exec \"continue to next task\" --full-auto 命令开启一个 codex 进程,  注意观察任务执行情况，如果当前任务完成(任务运行时间较长，可以多等一会)，就结束进程，然后重新开个agent运行相同指令让它继续\n> 注意每次打开codex和监控它运行都调用一个新agent (Task Tool)来执行这个操作以避免主agent上下文太长\n\nBTW: 监控 codex 执行这任务理论上来说 Gemini cli和 Codex cli 也能做，但是我没成功。",
+        "created_at": "Sun Sep 28 07:23:01 +0000 2025",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1972198179215982592",
+            "url": "https://pbs.twimg.com/media/G16ny3rXQAAIruT.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1972198854213677056",
+            "url": "https://pbs.twimg.com/media/G16oaKPWsAAON4Y.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 175812,
+          "friends_count": 1548,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 366,
+          "favorite_count": 1861,
+          "reply_count": 98,
+          "quote_count": 46
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2018563079530041573",
+      "text": "RT @liumy404: 🎙️ AI Engineering (CN) Launch Talk\nA conversation on core AI engineering principles and what engineers should focus on in 202…",
+      "created_at": "Tue Feb 03 05:51:55 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2018562105662996620",
+        "text": "🎙️ AI Engineering (CN) Launch Talk\nA conversation on core AI engineering principles and what engineers should focus on in 2026.\nGuests:\n @chipro — AI engineering &amp; system design\n @dotey — AI applications &amp; prompt engineering\nFeb 5, 11:30–13:30 (Beijing) \nFeb 4, 7:30–9:30 PM (PT) https://t.co/zkI7pVDBKz",
+        "created_at": "Tue Feb 03 05:48:03 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2018562040835809280",
+            "url": "https://pbs.twimg.com/media/HANfezkbIAALmmg.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4738574779",
+          "name": "英子姐（Marry Liu）",
+          "screen_name": "liumy404",
+          "description": "人民邮电出版社图灵策划编辑\n（Managing Editor, Turing Book Company/Posts and Telecom Press Co.,Ltd）",
+          "followers_count": 201,
+          "friends_count": 201,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 3,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2018565105672388725",
+      "text": "RT @Selenevea: @jinglian @dotey 作为更懂用户的前“产品经理”和“用户运营”，我要正儿八经的给你们提建议，不要做横图，不要做横图，不要做横图，你们在高频的使用 PC 不代表用户也用 PC。X 现在和小红书，TK，抖音一样，手机端用户占比最大，信息量…",
+      "created_at": "Tue Feb 03 05:59:58 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2018564694873952470",
+        "text": "@jinglian @dotey 作为更懂用户的前“产品经理”和“用户运营”，我要正儿八经的给你们提建议，不要做横图，不要做横图，不要做横图，你们在高频的使用 PC 不代表用户也用 PC。X 现在和小红书，TK，抖音一样，手机端用户占比最大，信息量本来就大，横图+小屏，阅读体验非常糟糕！",
+        "created_at": "Tue Feb 03 05:58:21 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1713033689725280256",
+          "name": "Selenevea",
+          "screen_name": "Selenevea",
+          "description": "贩卖日落与深夜的心事\n只取悦自己，无关他人\nOOTD | 记录瞬间 | 勿扰模式",
+          "followers_count": 1247,
+          "friends_count": 419,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 4,
+          "reply_count": 2,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

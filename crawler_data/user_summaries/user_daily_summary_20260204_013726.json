@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-02-04T01:37:26.837879",
+  "tweet_count": 11,
+  "summary": "**新工具/技术**\n- Codex + Claude Code 协作（含 codex exec --full-auto）——把 Claude Code 当“监工”启动/监督 Codex 进程，配合命令行自动传入“continue”以实现长时间连续工作。\n- .agents/skills 目录规范（社区倡议，Codex 已开始支持）——把 agent 能力统一放到 .agents/skills，以减少多文件夹管理成本、方便复用和生态标准化。\n- Claude Code 的 Plan Mode ——用来快速生成可迭代的 plan，适合短循环开发而非一次性大规格设计。\n\n**核心观点/方法论**\n- 反对 Spec-Driven（瀑布式）开发——不要试图一次性把所有规格写完再交给 AI，效率低且易出错；更重要的是快速验证与迭代。\n- 以模糊但正确的方向 + 快速短迭代为核心——设定小目标、用可验证的单元/测试快速反馈，持续修正比前期过度设计更值钱。\n- 通过“子 Agent / 子进程”控制上下文膨胀——每次开启新 session 或子 Agent 执行任务，主 Agent 只保留结果，从而避免上下文占满导致的性能/成本问题。\n\n**实践经验/案例**\n- 自动化长期任务：原先用 Claude Code 管控 Codex，但最终改为定时脚本+新会话策略，稳定性更好；关键点是检测上下文接近上限时自动新开会话并输入 continue。\n- 监控策略：让监工（Claude Code 或调度脚本）为每次 Codex 执行起子 Agent，任务完成就杀进程并重启，保证每次 session 上下文较小。\n- 工程落地建议：少写详尽 spec，先产出可运行的小版本；Plan Mode 足够大多数场景的规划需求，迭代频率比一次性设计更能产出高质量结果。\n- 社区/生态实践：推动统一 agent skills 目录（.agents/skills）能显著降低复杂度，Codex 已在向该标准迁移，值得团队跟进以便互操作。",
+  "metadata": {
+    "original_tweets": 8,
+    "retweets": 3,
+    "media_tweets": 0,
+    "data_hash": "778797c0",
+    "user": "dotey"
+  }
+}

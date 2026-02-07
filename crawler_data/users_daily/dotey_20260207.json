@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 177310,
+    "followers_count": 177342,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260207",
-  "last_updated": "2026-02-07T16:07:31.767750",
-  "tweet_count": 10,
+  "last_updated": "2026-02-07T18:08:06.987459",
+  "tweet_count": 12,
   "tweets": [
     {
       "id": "2019929177781379525",
@@ -422,6 +422,84 @@
       "stats": {
         "retweet_count": 4,
         "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2020185462175068538",
+      "text": "不要用人类维护项目的方式看AI，AI不需要理解整个架构，它只需要关心某个功能相关的，这部分上下文不多。\n\n后端项目用好 Coding Agent 的关键在验收。你确定好验收的标准，其他交给 Agent 自主去做，人只要稍加引导监督就好。\n\n你们觉得后端有护城河的多半是没有用过最新的 GPT-5.3-codex + codex 或者 Opus 4.6 + claude code。 \n\n不要用了 Copilot 或者 CC 接个普通模型试了个任务就觉得它不行。去试试用 codex cli 或者 claude code 配合它们最强的模型，改改屎山代码，看看它能力如何。只要你测试覆盖够，基本上绝大部分问题都能解决。\n\n再强调，测试验收标准很重要，没有测试要先补测试。\n\n全新新项目还有不足，但微服务化，把项目拆小一点，Agent 可以轻松搞定。\n\n后端项目的护城河以后就是差个背锅的，需要人工审查。",
+      "created_at": "Sat Feb 07 17:18:42 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2020061402485170190",
+        "text": "对于老司机当然都可以。\n对于复杂业务的后端，我认为现在的上下文不够长，想搞定还是非常难的。从api到数据存储，这个还是非常复杂的。\n相较而言，前端不需要那么大上下文。",
+        "created_at": "Sat Feb 07 09:05:43 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1712095004",
+          "name": "i5ting",
+          "screen_name": "i5ting",
+          "description": "前阿里，字节前端技术专家，关注Node.js AI Agent开发和Moonbit语言",
+          "followers_count": 12500,
+          "friends_count": 2925,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 15,
+          "reply_count": 7,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 25,
+        "reply_count": 5,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2020185601274966088",
+      "text": "后端没有护城河",
+      "created_at": "Sat Feb 07 17:19:15 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2020185462175068538",
+        "text": "不要用人类维护项目的方式看AI，AI不需要理解整个架构，它只需要关心某个功能相关的，这部分上下文不多。\n\n后端项目用好 Coding Agent 的关键在验收。你确定好验收的标准，其他交给 Agent 自主去做，人只要稍加引导监督就好。\n\n你们觉得后端有护城河的多半是没有用过最新的 GPT-5.3-codex + codex 或者 Opus 4.6 + claude code。 \n\n不要用了 Copilot 或者 CC 接个普通模型试了个任务就觉得它不行。去试试用 codex cli 或者 claude code 配合它们最强的模型，改改屎山代码，看看它能力如何。只要你测试覆盖够，基本上绝大部分问题都能解决。\n\n再强调，测试验收标准很重要，没有测试要先补测试。\n\n全新新项目还有不足，但微服务化，把项目拆小一点，Agent 可以轻松搞定。\n\n后端项目的护城河以后就是差个背锅的，需要人工审查。",
+        "created_at": "Sat Feb 07 17:18:42 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 177342,
+          "friends_count": 1550,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3,
+          "favorite_count": 25,
+          "reply_count": 5,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
         "reply_count": 0,
         "quote_count": 0
       }

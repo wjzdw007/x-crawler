@@ -1,12 +1,239 @@
 {
   "date": "20260420",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-04-20T18:22:34.181139",
-  "tweet_count": 221,
-  "unique_tweet_count": 221,
+  "last_crawl_time": "2026-04-20T20:17:01.672163",
+  "tweet_count": 225,
+  "unique_tweet_count": 225,
   "total_crawled": 421,
-  "duplicates_removed": 200,
+  "duplicates_removed": 196,
   "tweets": [
+    {
+      "id": "2046316977711452560",
+      "text": "OpenAI 给 Codex 加了一个新功能 Chronicle，让它能“看”你的屏幕。\n\n简单说，Codex 现在可以记住你最近在屏幕上干了什么。你跟它说“这个报错”“那个文件”，它不用你解释就知道指的是什么。过去你得复制粘贴一堆上下文才能让 AI 理解你在做什么，现在它自己会从屏幕内容里补齐。\n\n背景：Codex 上周刚推出了 Memories 功能，可以跨会话记住用户的偏好和项目。Chronicle 是 Memories 的扩展，靠后台进程定期截屏、做 OCR、分析你正在用哪些工具，再把这些信息整理成记忆文件。\n\n目前是小范围灰度：只开放给 macOS 上的 ChatGPT Pro 订阅用户，欧盟、英国、瑞士不支持，大概率是隐私法规的原因。\n\n但是需要注意的是：它会很快吃掉你的 rate limit，因为后台一直在跑 Agent 做总结。生成的记忆是明文 Markdown 存在本地 ~/.codex/memories_extensions/chronicle 里，其他 App 也能读到，敏感信息存在泄露风险。OpenAI 还明确警告这会放大 prompt injection 的风险：如果你浏览了带有恶意指令的网页，Codex 可能真的会照着那些指令执行。\n\n屏幕截图会上传到 OpenAI 服务器生成记忆，官方说处理完就删，也不用于训练。如果不放心，可以随时从菜单栏暂停，或者直接删掉那些 Markdown 文件让它\"忘记\"。\n\nAI 读屏幕这个方向不算新。微软 Recall 在 Windows 上折腾了一年多，Cursor 这类 IDE 也在探索类似的上下文补齐。但把它做成持续运行的后台 Agent，自动更新长期记忆，再直接塞进一个命令行编程工具里，目前还没看到别家这么干。\n\n我暂时还不打算测试，不太喜欢有人/Agent盯着屏幕的感觉，有兴趣的可以试试并反馈下好用不。",
+      "created_at": "Mon Apr 20 19:56:00 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2046288243768082699",
+        "text": "Last week, we released a preview of memories in Codex.\n\nToday, we’re expanding the experiment with Chronicle, which improves memories using recent screen context.\n\nNow, Codex can help with what you’ve been working on without you restating context. https://t.co/b3p8I5eXOy",
+        "created_at": "Mon Apr 20 18:01:50 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2046288161240948736",
+            "url": "https://video.twimg.com/amplify_video/2046288161240948736/vid/avc1/1280x720/fuCvu67dkFPU-vkU.mp4?tag=14",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1633874951508721686",
+          "name": "OpenAI Developers",
+          "screen_name": "OpenAIDevs",
+          "description": "Official updates for developers building with Codex & the OpenAI Platform • Service status: https://t.co/kZwnwdYYEq",
+          "followers_count": 309016,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 145,
+          "favorite_count": 2073,
+          "reply_count": 125,
+          "quote_count": 67
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 211268,
+        "friends_count": 1610,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 4,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2046313895447716230",
+      "text": "Try it out",
+      "created_at": "Mon Apr 20 19:43:46 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2046260046112391170",
+        "text": "Anyone telling you that you need to use Claude to run just about any OpenClaw spending a wacky $1000 or more per month is no expert you should trust.\n\nUse @Grok. Great pricing and 4.3 is in another category. You won’t be burning $1000 a month.\n\nYou will absolutely thank me.",
+        "created_at": "Mon Apr 20 16:09:47 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "101584084",
+          "name": "Brian Roemmele",
+          "screen_name": "BrianRoemmele",
+          "description": "we can only see what we think is possible...",
+          "followers_count": 467972,
+          "friends_count": 43266,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 48,
+          "favorite_count": 1113,
+          "reply_count": 155,
+          "quote_count": 12
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 238621068,
+        "friends_count": 1315,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 476,
+        "favorite_count": 4495,
+        "reply_count": 996,
+        "quote_count": 20
+      }
+    },
+    {
+      "id": "2046308563031867886",
+      "text": "RT @Timcast: I worked as a fund raiser for several top NGOs\n\nIts all fake\n\nLies, tricks, and legal loopholes to get money for nothing.\n\nWe…",
+      "created_at": "Mon Apr 20 19:22:34 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2046244931635650615",
+        "text": "I worked as a fund raiser for several top NGOs\n\nIts all fake\n\nLies, tricks, and legal loopholes to get money for nothing.\n\nWe used to call it \"cold selling hope\"",
+        "created_at": "Mon Apr 20 15:09:43 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2046095231591104698",
+          "text": "@mattvanswol A friend of mine donated to an orphanage for over a decade and one day he stopped by to check on the orphans. \n\nWhat he found was a room full of people working the phones for donations and zero kids. Not even one kid for show. Zero.",
+          "created_at": "Mon Apr 20 05:14:52 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "https://t.co/dDtDyVssfm",
+            "followers_count": 238621068,
+            "friends_count": 1315,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 12481,
+            "favorite_count": 86233,
+            "reply_count": 2899,
+            "quote_count": 399
+          }
+        },
+        "user": {
+          "id": "27000730",
+          "name": "Tim Pool",
+          "screen_name": "Timcast",
+          "description": "Host of Timcast IRL And CEO https://t.co/05eFrFNCuW\nHost of The Culture War Podcast at https://t.co/mtMhgpJnKO",
+          "followers_count": 2610517,
+          "friends_count": 996,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 995,
+          "favorite_count": 6983,
+          "reply_count": 268,
+          "quote_count": 24
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 238621068,
+        "friends_count": 1315,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 995,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2046308075947405581",
+      "text": "🎯",
+      "created_at": "Mon Apr 20 19:20:38 +0000 2026",
+      "lang": "art",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2046266184908124601",
+        "text": "This is how the EU/UK now regulates social media: \n\n🤐 Offer CEOs secret deals to censor dissent. \n🚨 If they refuse, open criminal cases against them.\n😑 When people push back, say it's \"all for the children\".\n\n🎭 \"Protecting children\" has become the standard legal/PR cover.",
+        "created_at": "Mon Apr 20 16:34:10 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "16477634",
+          "name": "Pavel Durov",
+          "screen_name": "durov",
+          "description": "Founder, CEO at @telegram (2013), founder, ex-CEO of @vkontakte (2006), part-time troll.",
+          "followers_count": 2805325,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4426,
+          "favorite_count": 21970,
+          "reply_count": 910,
+          "quote_count": 247
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 238621068,
+        "friends_count": 1315,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3564,
+        "favorite_count": 24576,
+        "reply_count": 1486,
+        "quote_count": 73
+      }
+    },
     {
       "id": "2046234586808520709",
       "text": "Imagine upgrades",

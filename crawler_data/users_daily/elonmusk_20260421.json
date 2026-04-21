@@ -1,0 +1,247 @@
+{
+  "user": {
+    "screen_name": "elonmusk",
+    "name": "Elon Musk",
+    "description": "https://t.co/dDtDyVssfm",
+    "followers_count": 238637089,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260421",
+  "last_updated": "2026-04-21T03:06:22.412625",
+  "tweet_count": 5,
+  "tweets": [
+    {
+      "id": "2046387188535861419",
+      "text": "RT @wholemars: It hit me yesterday when I was going to pick up lunch.\n\nI pre-cooled the Tesla Model 3 from my phone, and set the destinatio…",
+      "created_at": "Tue Apr 21 00:35:00 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2046342193473024363",
+        "text": "It hit me yesterday when I was going to pick up lunch.\n\nI pre-cooled the Tesla Model 3 from my phone, and set the destination to the restaurant. Then I hit start self-driving. Mad Max mode, park in the parking lot. \n\nThe car drove so confidently, it's movements were so lifelike... I just couldn't believe it. The way it drives is... confident... comforting... better than anything I could have imagined. \n\nAs it drove me to pick up my lunch order, I changed the music on my phone. I turned up the music and danced a little as I opened X and started reading and replying to peoples comments. It got to the restaurant before I even  realized where we were, pulled into the parking lot, and parked perfectly. \n\nI picked up the food, put it in the frunk, and then got in the car. Tapped Home (Mad Max, Park in Driveway selected automatically) and then hit self-driving. The car drove me back home like a work of art. It didn't send the food flying around. It was just perfect.\n\nWhen it got home it parked in the driveway, right where the car was before I left, and I brought the food inside. \n\nIt just hit me like damn, they really created a personally owned Robotaxi. This is the user experience I have been dreaming of for years, and now it's here. It's really working, and it's better than I imagined.\n\nThe coming months and years will be a lot of fun as we just remove the driver out of the equation entirely.",
+        "created_at": "Mon Apr 20 21:36:12 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1263491240336769026",
+          "name": "Whole Mars Catalog",
+          "screen_name": "wholemars",
+          "description": "🤖 🚗 🤖 🚕",
+          "followers_count": 928883,
+          "friends_count": 29563,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 364,
+          "favorite_count": 2786,
+          "reply_count": 260,
+          "quote_count": 19
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 364,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2046387953086140472",
+      "text": "RT @BrianRoemmele: @GreenTechWizard @elonmusk I hope this helps. If you need more help let me know:\n\nConnecting OpenClaw to the X API is st…",
+      "created_at": "Tue Apr 21 00:38:02 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2046386834599821605",
+        "text": "I hope this helps. If you need more help let me know:\n\nConnecting OpenClaw to the X API is straightforward now thanks to X’s official native support... \n\nThe best and most direct method uses the official xurl CLI tool from X, which comes with a pre-built SKILL.md that OpenClaw recognizes automatically. This lets your local OpenClaw agent post tweets, search timelines, read posts, reply, manage follows, send DMs, upload media, and more all via natural language commands.\n\nOfficial Native Method: xurl CLI (Recommended for Direct X API Access)\n\nThis uses X’s pay-per-use API pricing (very affordable now:  e.g., owned reads ~$0.001/request, basic posts ~$0.015). No third-party bridges required.\n\n1Get X API Credentials\n◦Go to the X Developer Portal.\n◦Create a new app (or project).\n◦In the app settings:\n▪Set the redirect URI to http://localhost:8080/callback.\n▪Move the app to the Pay-per-use package and Production environment (important — otherwise reads may fail with “client-forbidden”).\n◦Note your Client ID and Client Secret.\n2Install the xurl CLI (on your machine where OpenClaw runs) Run one of these (pick your OS/preference):\n◦macOS (Homebrew): brew install --cask xdevplatform/tap/xurl\n◦\n◦npm (any OS): npm install -g @xdevplatform/xurl\n◦\n◦One-liner shell script: curl -fsSL https://t.co/fpSj1EZboP | bash\n◦\n◦Or go install https://t.co/gKIxEqB34U.\n3Authenticate xurl (do this manually — never via the agent for security)\n◦Register your app: xurl auth apps add my-app --client-id YOUR_CLIENT_ID --client-secret YOUR_CLIENT_SECRET\n◦\n◦Start OAuth2 flow: xurl auth oauth2\n◦ (Follow the browser prompt; it opens automatically.)\n◦Check status: xurl auth status\n◦\n◦(Optional) Set default app/user: xurl auth default my-app or run the interactive picker with xurl auth default.\n4OpenClaw Integration\n◦Restart your OpenClaw gateway/agent if needed.\n◦The built-in xurl skill (in skills/xurl/SKILL.md) is already merged into OpenClaw — no extra install required.\n◦Your agent now understands commands like:\n▪xurl post \"Hello from my OpenClaw agent using Grok!\"\n▪xurl search \"Grok 4.3\" -n 10\n▪xurl timeline -n 20\n▪xurl reply 1234567890123456789 \"Great point!\"\n▪xurl whoami, xurl read [post URL], xurl follow @handle, etc.\n◦Just talk to your agent naturally: “Post a tweet about the new Grok pricing” or “Search X for recent OpenClaw updates and summarize.”\nSecurity Notes (built into the skill):\n•Never paste tokens/secrets into chat or let the agent run auth commands with flags.\n•All credentials stay in ~/.xurl (YAML file) on your machine.\n•The agent calls the local xurl binary directly.\nEasier Alternative: https://t.co/HFrqJLeoOB Bridge (No X Developer Account Needed)\nIf you want the simplest setup (great for quick testing or posting-only):\n1Sign up free at https://t.co/S4KYW5VYae and connect your X account via OAuth (one click).\n2Generate an API key (starts with ot_) in Settings → API.\n3Install the official skill: clawhub install opentweet-x-poster\n\nSet the key: \nexport OPENTWEET_API_KEY=\"ot_your_key_here\"\n (Or add it to ~/.openclaw/openclaw.json under secrets.)\n\nAsk your agent: \n\n“Post a tweet saying [text]” it just works.\n\nTips for Your Setup\n\n•Use Grok as the backend (as Brian mentioned in the thread): It’s far cheaper than Claude for running OpenClaw agents long-term and has excellent reasoning for agent tasks.\n•Test with xurl whoami or xurl timeline in your terminal first.\n•Full command list and raw API access (xurl /2/tweets etc.) are in the skill docs.\n\nThat’s it: once set up, your OpenClaw agent has full X superpowers running locally. If you hit any snags (e.g., auth errors), the most common fix is confirming your app is in Pay-per-use/Production in the developer portal. \n\n🦞",
+        "created_at": "Tue Apr 21 00:33:36 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "101584084",
+          "name": "Brian Roemmele",
+          "screen_name": "BrianRoemmele",
+          "description": "we can only see what we think is possible...",
+          "followers_count": 468322,
+          "friends_count": 43272,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 259,
+          "favorite_count": 1183,
+          "reply_count": 157,
+          "quote_count": 8
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 259,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2046404769040810159",
+      "text": "Only the fraud was stopped by DOGE and, even then, only some of the fraud",
+      "created_at": "Tue Apr 21 01:44:51 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2046376988651176206",
+        "text": "On Friday, @StateDeptGHSD released its first wave of PEPFAR data, covering July-Sept 2025, after State took over USAID’s lifesaving health programs. Contrary to false media narratives, the data shows that President Trump’s foreign assistance review maintained and improved frontline lifesaving programs, while reducing NGO bloat and costs. \n\nDuring this transition period; \n- 20.6 million people w/ HIV received PEPFAR-supported antiretroviral treatment, exactly as many as during Biden’s last year\n- Early progress towards @SecRubio’s ambitious goal of ending mother-to-child transmission of HIV during @POTUS Trump’s second term, with preventive treatment initiated for 103k expectant/breastfeeding mothers, more than 2x as many as the same period a year earlier \n- Good initial progress moving programs, particularly in the treatment and testing space, to national health ministries as we champion self-reliance among health assistance countries \n\nThis is all before the transformational investments in global health innovation and self-reliance made via the America First Global Health Strategy. Launched in Sept 2025, we have already signed 31 bilateral compacts worth more than $21 billion in U.S. commitments and country co-investment, and announced historic new innovation initiatives like our partnership with Gilead Sciences to get 3 million people in high-burden countries its new 99.9% effective twice yearly HIV prevention drug Lenacapavir.  \n\nhttps://t.co/p5xqgXehaL",
+        "created_at": "Mon Apr 20 23:54:28 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "87951215",
+          "name": "Senior Official Jeremy Lewin",
+          "screen_name": "UnderSecretaryF",
+          "description": "Official acct of the Under Secretary of State for Foreign Assistance, Humanitarian Affairs & Religious Freedom (F). TOU: https://t.co/H5T8k8jFCY",
+          "followers_count": 45524,
+          "friends_count": 308,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 276,
+          "favorite_count": 1435,
+          "reply_count": 75,
+          "quote_count": 15
+        }
+      },
+      "stats": {
+        "retweet_count": 2879,
+        "favorite_count": 23566,
+        "reply_count": 1160,
+        "quote_count": 75
+      }
+    },
+    {
+      "id": "2046405057332097524",
+      "text": "Grok",
+      "created_at": "Tue Apr 21 01:46:00 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2046391105424351276",
+        "text": "Midwit tries to force Grok into a corner but gets BTFO\n\nthis is absolutely fascinating https://t.co/AzPVOzer9T",
+        "created_at": "Tue Apr 21 00:50:34 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2046391063116746752",
+            "url": "https://pbs.twimg.com/media/HGY91GSbkAAZIco.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "44067298",
+          "name": "Michael Malice",
+          "screen_name": "michaelmalice",
+          "description": "Author: Dear Reader, The New Right, Anarchist Handbook, Not Sick of Winning, The White Pill \nHost \"YOUR WELCOME\" \nSubject: Ego & Hubris by Harvey Pekar\nHe/Him ⚑",
+          "followers_count": 821668,
+          "friends_count": 1087,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 140,
+          "favorite_count": 2578,
+          "reply_count": 188,
+          "quote_count": 30
+        }
+      },
+      "stats": {
+        "retweet_count": 1216,
+        "favorite_count": 14663,
+        "reply_count": 1362,
+        "quote_count": 69
+      }
+    },
+    {
+      "id": "2046413727239372940",
+      "text": "RT @chaitu: Smarter video extensions are live on Grok Imagine.",
+      "created_at": "Tue Apr 21 02:20:27 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2046322411713495314",
+        "text": "Smarter video extensions are live on Grok Imagine.",
+        "created_at": "Mon Apr 20 20:17:36 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2046313676336947386",
+          "text": "Smarter video extensions.\n\nGrok now sees your original prompt and clip, so extensions continue naturally with consistent audio.\n\nTry Grok Imagine in the app or on web.\nhttps://t.co/zjY7ZChpqo",
+          "created_at": "Mon Apr 20 19:42:53 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2046312651589120000",
+              "url": "https://video.twimg.com/amplify_video/2046312651589120000/vid/avc1/2160x2700/Qnc5to7qv3quWJe2.mp4?tag=21",
+              "bitrate": 25128000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "2019292645466730499",
+            "name": "Grok Imagine",
+            "screen_name": "imagine",
+            "description": "Unlock your imagination with Grok Imagine.",
+            "followers_count": 44904,
+            "friends_count": 4,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 99,
+            "favorite_count": 697,
+            "reply_count": 76,
+            "quote_count": 24
+          }
+        },
+        "user": {
+          "id": "2188015574",
+          "name": "Chaitu",
+          "screen_name": "chaitu",
+          "description": "@imagine at @xai",
+          "followers_count": 13615,
+          "friends_count": 240,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 135,
+          "favorite_count": 764,
+          "reply_count": 91,
+          "quote_count": 4
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 135,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

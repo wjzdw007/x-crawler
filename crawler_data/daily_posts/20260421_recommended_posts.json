@@ -1,12 +1,61 @@
 {
   "date": "20260421",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-04-21T16:26:47.322786",
-  "tweet_count": 218,
-  "unique_tweet_count": 218,
-  "total_crawled": 411,
-  "duplicates_removed": 193,
+  "last_crawl_time": "2026-04-21T18:25:06.211379",
+  "tweet_count": 219,
+  "unique_tweet_count": 219,
+  "total_crawled": 418,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2046644342241083510",
+      "text": "Google 今天把 Gemini Deep Research 升级成了两个版本：Deep Research 和 Deep Research Max。\n\nDeep Research 走速度和成本优先的路线，适合做成即问即答的研究助手嵌到用户界面里。\n\nMax 版则反过来：跑更长时间、烧更多算力，\n\n反复搜索、反复推理、反复打磨报告。官方给的典型场景是分析师晚上下班前触发一个尽调任务，第二天早上上班，一份完整报告已经躺在邮箱里。\n\n两个版本背后都是 Gemini 3.1 Pro，就是 Google 今年 2 月发布的那个推理能力相比 3 Pro 翻倍的模型。\n\n【1】能插上自己的数据了\n\n过去的 Deep Research 只能搜开放的互联网。这次最关键的变化是支持了 MCP。\n\n开发者现在可以把 FactSet、S&P、PitchBook 这类专业付费数据源接进来，让 Deep Research 在这些金融和市场数据库里翻找资料，而不是只能靠公开网页。Google 已经在和这三家合作设计 MCP 接口。\n\n此外还能把 PDF、CSV、图片、音频、视频当成研究素材直接喂进去；可以让它同时调用 Google Search、URL Context、代码执行、File Search，也可以把联网完全关掉，只在内部数据里查。\n\n报告里现在会直接生成图表和信息图。图表用 HTML 渲染，信息图调用 Nano Banana。研究过程支持流式输出，能实时看到数字智能体当前在想什么、搜到了什么。\n\n还有一个叫“协同规划”的功能：数字智能体先给出一份研究计划，用户可以在它开跑之前调整范围。对那些容易跑偏、需要人工把关的研究任务挺实用。\n\n从今天起在 Gemini API 的付费档里以公开预览版提供，通过 Interactions API 调用。Google Cloud 上的企业版本即将上线。\n\n官方没有公布具体定价。",
+      "created_at": "Tue Apr 21 17:36:50 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2046628728210350366",
+        "text": "https://t.co/4qzw6uOtqy",
+        "created_at": "Tue Apr 21 16:34:47 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1742923424056713217",
+          "name": "Google AI Studio",
+          "screen_name": "GoogleAIStudio",
+          "description": "The fastest path from prompt to prototype to production with Gemini",
+          "followers_count": 158698,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 18,
+          "favorite_count": 205,
+          "reply_count": 8,
+          "quote_count": 9
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 211508,
+        "friends_count": 1611,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 11,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2046617607336329447",
       "text": "It’s a start. Vastly more will be needed to extend consciousness to the stars.",

@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-04-22T01:39:24.706885",
+  "tweet_count": 19,
+  "summary": "**新工具/技术**\n- GPT Image 2 / ChatGPT Images 2.0（OpenAI）——dotey 用大量示例和 prompt 模板验证其多语言文字渲染、Thinking Mode（可联网抓取实时数据）与高细节构图能力。\n- Codex + GPT-Image-2 集成——Codex 已把 GPT-Image-2 设为默认图像引擎，能无须额外 API key 直接出图，降低原型成本；dotey 正针对 baoyu-skills 做适配优化。\n- nano banana / nano banana pro（prompt 模板系列）——dotey 广泛采用并分享的一套高可复用 prompt 风格，用于生成各类精细图像和信息卡。\n\n**核心观点/方法论**\n- 提供可复用的“工程化”prompt 模板（天气卡、等距微缩场景、品牌概念店、财报/股价场景、儿童游记、粉笔板信息图等），通过明确构图、比例、材质与文本规则来稳定输出；重要性在于把随机性降到可控、便于规模化生产。\n- 在生成前强制“数据预检/抓取”步骤（如实时天气、股票数据），或在找不到数据时中止生成——以减少图像中事实性错误与 hallucination。\n- 推崇模块化技能（baoyu-skills）与管道化工作流，把 prompt、数据获取、渲染参数和后处理解耦，便于维护和迭代。\n\n**实践经验/案例**\n- 现成可用的 prompt 集（示例含：上海天气卡、Starbucks 盲盒风概念店、Google 股价等距微缩场景、唐朝题材混搭图、儿童涂 crayon 旅行日记、黑板粉笔信息图等），可直接用于内容生产或二次改造。\n- 实测：GPT-Image-2 在复杂排版、小字、多语言文本与 UI 元素上表现明显优于早期模型，适合直接产出成品图（最高支持约 2K）。\n- 在实践中遇到的数据抓取不稳定（天气卡抓取失败案例），表明需要在 prompt 外补强稳定的数据接入层与重试/回退策略。\n- 用 Codex + baoyu-skills 的组合能快速把文章/素材批量转成图像资产，适合内容团队做自动化图像产出流水线。\n- dotey 也在持续优化 prompt 参数（长短、ar、元素位置、文案语言），显示出“prompt 工程化 + 运维化”的成熟路径。",
+  "metadata": {
+    "original_tweets": 19,
+    "retweets": 0,
+    "media_tweets": 14,
+    "data_hash": "2ad409bb",
+    "user": "dotey"
+  }
+}

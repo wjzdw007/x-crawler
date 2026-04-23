@@ -1,12 +1,235 @@
 {
   "date": "20260423",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-04-23T18:26:02.171693",
-  "tweet_count": 231,
-  "unique_tweet_count": 231,
-  "total_crawled": 429,
-  "duplicates_removed": 198,
+  "last_crawl_time": "2026-04-23T20:22:28.223444",
+  "tweet_count": 236,
+  "unique_tweet_count": 236,
+  "total_crawled": 431,
+  "duplicates_removed": 195,
   "tweets": [
+    {
+      "id": "2047403459717320819",
+      "text": "Codex 已经可以支持 GPT-5.5 了，同时一口气推了五个能力升级，大方向是让 Codex 从“写代码的工具”变成“帮你干活的智能体”。\n\n最大的变化是浏览器操控。Codex 现在可以直接操作网页应用，点击页面、填写表单、截图查看结果，然后根据看到的内容自己迭代，直到任务完成。比如你让它测一个注册流程，它能自己走完全程并告诉你哪一步有问题。\n\n文档能力也升级了。Codex 现在能直接在 Microsoft Office 和 Google Drive 里生成电子表格、幻灯片和文档，质量比之前好不少。应用内还加了一个文件预览器，改完可以直接看效果、反复调整，不用来回切换。\n\n电脑操控（Computer Use）跟着 GPT-5.5 一起增强，能看屏幕内容、点击、打字、在不同应用之间传递上下文。这个方向 Anthropic 去年率先推出，OpenAI 现在也跟上了。\n\n比较有意思的是新增的“自动审查”（Auto-review）模式。以前 Codex 每走一步都要你点确认，现在它可以连续执行更长的任务链，遇到高风险操作时会启动一个独立的审查智能体来检查，通过了才继续。相当于自带了一个安全审计员，减少人工干预的同时控制风险。\n\n另外，上周发布的图像生成模型 gpt-image-2 也整合进了 Codex，做应用原型、演示文稿的时候可以顺手生成配图，不用再切到别的工具。",
+      "created_at": "Thu Apr 23 19:53:18 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2047381283358355706",
+        "text": "With GPT-5.5, Codex now gets more of the job done across the browser, files, docs, and your computer.\n\nWe've expanded browser use so Codex can interact with web apps, and test flows, click through pages, capture screenshots, and iterate on what it sees until it completes the task.",
+        "created_at": "Thu Apr 23 18:25:11 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2047381225476886528",
+            "url": "https://video.twimg.com/amplify_video/2047381225476886528/vid/avc1/1280x720/BW-edN2IaVwko1OU.mp4?tag=14",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1633874951508721686",
+          "name": "OpenAI Developers",
+          "screen_name": "OpenAIDevs",
+          "description": "Official updates for developers building with Codex & the OpenAI Platform • Service status: https://t.co/kZwnwdYYEq",
+          "followers_count": 314263,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 150,
+          "favorite_count": 1975,
+          "reply_count": 68,
+          "quote_count": 36
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 212134,
+        "friends_count": 1614,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 7,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2047396679679090994",
+      "text": "夸早了点😂，只能说比以前好多了\n\n参考会话：\nhttps://t.co/CAg3wqRM7n https://t.co/ES1n5Qi0vg",
+      "created_at": "Thu Apr 23 19:26:21 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2047396309452124160",
+          "url": "https://pbs.twimg.com/media/HGnQGItW8AAMwdN.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 212134,
+        "friends_count": 1614,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 2,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2047394795992018997",
+      "text": "写作终于说人话了！\n\nPrompt：\n\n我在学习：“Agent Harness” 这个概念。  我希望你通过写一个寓言的方式，间接地把这个概念完整讲出来。最好一直到快结尾时，人才会慢慢意识到这个概念究竟是什么。然后在故事之后，再补一段解释，把你刚才真正要讲的概念说清楚。\n\nResponse：\n\n寓言：会预言的鹿，与不会迷路的车\n\n很久以前，山谷里有一座城，城里的人都说，北山住着一头银鹿。\n\n这头鹿很奇怪。它能看懂星象，能听出河水里混着哪座山的雪，能从一片叶子的缺口判断哪条路刚有狼群经过。国王听说后，便派人把银鹿请进宫里。\n\n国王问它：\n\n“今年该往哪里开渠，才能让庄稼不旱？”\n\n银鹿闭上眼，闻了闻风，说：\n\n“东边第三道岭下，有一层暗水。先挖浅井，再引渠，不要直挖，否则会塌。”\n\n工匠照做，果然出水。\n\n国王又问：\n\n“商队该走哪条路，才能避开强盗？”\n\n银鹿看了看月光，说：\n\n“别走旧驿道。绕过黑松林，从盐石坡下去。强盗在那里等着你们。”\n\n商队照做，也平安归来。\n\n于是国王大喜，说：\n\n“从今天起，银鹿就是我国最聪明的大臣。”\n\n可是没过多久，问题来了。\n\n银鹿虽然聪明，却不会自己开渠。它说得出暗水在哪里，却不能拿起锄头。它知道强盗埋伏在哪里，却不能替商队安排马匹、干粮、路引。它能判断草药有没有毒，却不能进药房配药；它能指出城墙裂缝，却不能调度石匠；它能说“这件事要先查旧账”，却不知道旧账放在哪间屋子。\n\n国王很困惑。\n\n“你不是很聪明吗？为什么还要这么多人？”\n\n银鹿说：\n\n“我能想，但我没有手。我能看见许多可能，但我不知道你准我碰哪些门、翻哪些柜、命令哪些人。我能记住刚才说的话，可三个月前的旧约，得有人拿给我。我能给出办法，但得有人确认办法真的被做对了。”\n\n国王觉得它是在推脱，便下令：\n\n“那就让银鹿自由行动。宫里的门都打开，仓库也打开，账本也打开。凡它所说，人人照办。”\n\n第一天，银鹿让侍从去药房取“白根草”。侍从不知白根草有两种，一种救人，一种伤人，差点拿错。\n\n第二天，银鹿让人修东城墙。石匠听成了西城墙，忙了一整日。\n\n第三天，银鹿建议商队绕路。商队照做了，却忘了带盐石坡通行文书，被边防扣住。\n\n第四天，银鹿为了查一笔粮仓亏空，让人翻出所有账簿。账簿堆满宫殿，没人知道哪本已经查过，哪本还没查，哪条线索可信，哪条只是猜测。\n\n第五天，银鹿说：\n\n“这不是聪明不聪明的问题。你们把我放进了世界，却没有给我一辆能在世界里行走的车。”\n\n国王召来木匠、车夫、书记官、守门人、法官和老猎人，要他们做一件东西。\n\n木匠先造了一辆车。车不豪华，但结实，能装账本、工具、地图和样本。\n\n车夫说：“还不够。车要有缰绳，不然银鹿看到什么都想追。”\n\n于是他们给车装上缰绳。银鹿可以指方向，但车夫会问：“这是去药房、粮仓，还是城外？你有这个许可吗？”\n\n书记官说：“还不够。每次出行，要记下它为什么去、拿了什么、问了谁、结果如何。”\n\n于是车上有了日志。\n\n守门人说：“还不够。有些门可以直接开，有些门要国王点头，有些门永远不能开。”\n\n于是车上有了钥匙环。每把钥匙都刻着用途和限制。\n\n老猎人说：“还不够。山路会断，桥会塌，人会听错。车要会停下来，重问一遍，或者换路。”\n\n于是车上有了备用路线和出错时的规矩。\n\n法官说：“还不够。银鹿说‘已经办好’时，不能只听它说。要验收：渠水有没有流到田里？药有没有配对？账有没有对上？”\n\n于是车上有了检验表。\n\n药师说：“还不够。银鹿每次都从头学，会误事。它要记得哪些草药上次有效，哪些村子忌用哪味药。”\n\n于是车上有了记忆匣。短事放在前格，旧约放在后格；有些记忆会过期，有些要反复核实才准留下。\n\n铁匠说：“还不够。万一银鹿要试一种危险办法，不能让它在城里乱试。”\n\n于是他们在城外建了一块试验场。新车、新药、新机关，先在那里试，不伤百姓。\n\n画师说：“还不够。银鹿看到的东西，百姓看不懂；百姓给的请求，银鹿也可能误解。”\n\n于是车上又多了一块双面板。一面把百姓的话整理成清楚的任务，一面把银鹿的想法翻译成百姓能执行的步骤。\n\n最后，国王问：\n\n“现在可以了吗？”\n\n众人看向银鹿。\n\n银鹿说：\n\n“现在，我不只是会回答问题了。现在，我能接住一个目标，带着记忆和工具，按规矩走进世界，遇到错误会回头，做完之后会留下证据。”\n\n国王恍然大悟。\n\n原来真正神奇的，不只是那头会思考的鹿。\n\n真正让国家运转起来的，是那辆车、缰绳、钥匙、日志、试验场、记忆匣、验收表、守门人和车夫共同组成的东西。\n\n后来，邻国来访，问国王：\n\n“你们的银鹿为何比我们的智者有用这么多？难道它更聪明？”\n\n国王笑了笑，说：\n\n“未必。你们只请来了一个聪明的脑袋。我们给这个脑袋配了能行动的身体、能守规矩的手、能记事的口袋、能试错的院子、能被审计的足迹，以及知道什么时候该请人点头的缰绳。”\n\n邻国使者问：\n\n“这东西叫什么？”\n\n国王想了想，说：\n\n“我们原先以为是在造一辆车。后来才知道，我们造的是一副让智慧可以安全拉动现实的挽具。”\n\n银鹿低头看了看自己身上的缰绳，又看了看远处已经通水的田野。\n\n它终于明白：没有这副挽具，它只是会说话的预言；有了这副挽具，它才成了能做事的行者。\n\n解释：这个寓言真正讲的是 Agent Harness\n\n在 AI 语境里，Agent Harness 可以理解为：包在模型外面、让模型从“会回答”变成“能执行任务”的整套软件基础设施。近来的行业表述里，常见一句话是 Agent = Model + Harness：模型提供推理与生成能力，而 harness 负责工具、状态、上下文、执行、约束、反馈和持久化等部分。LangChain 近期也把 harness 描述为把模型变成自主工作引擎的系统，并强调文件系统、沙盒、记忆等核心部件；Martin Fowler 的文章也把 harness 概括为“除了模型本身之外的东西”。(LangChain)\n\n寓言里的银鹿就是模型。它聪明、能判断、能提出方案，但它本身并不等于一个完整 agent。它不能天然访问文件、调用工具、记住长期状态、申请权限、检查执行结果，或在危险操作前进入安全环境。\n\n寓言里的车、缰绳、钥匙、日志、试验场、记忆匣、验收表就是 Agent Harness 的不同部分：\n\n车，是运行环境和任务循环，让模型能一步步执行，而不是只回答一次。\n\n缰绳，是控制流、策略和边界，决定模型什么时候继续、什么时候停、什么时候需要人类确认。\n\n钥匙，是权限系统和工具访问控制。不是所有工具都能随便用，也不是所有数据都能随便读。\n\n日志，是可观察性和审计记录。系统要知道模型做过什么、为什么这么做、调用了什么、产生了什么结果。\n\n记忆匣，是上下文和记忆管理，包括短期对话状态、长期偏好、历史任务、文件内容、外部知识等。LangChain 另一篇关于 harness 与 memory 的文章也强调，记忆不是额外贴上去的小插件，而是 harness 管理上下文的核心职责之一。(LangChain)\n\n试验场，是 sandbox，也就是安全执行环境。比如让 coding agent 改代码、跑命令、读写文件时，不能直接让它无边界地碰生产系统。\n\n验收表，是验证、测试、评估和错误恢复。一个 agent 不能只说“我完成了”，系统还要检查输出是否符合目标，失败时能重试、回滚、请求帮助或换策略。\n\n双面板，是输入输出适配。用户的自然语言请求要被整理成可执行任务；工具返回的大量结果也要被压缩、格式化、再喂给模型；最终结果还要以人能理解的方式呈现。\n\n所以，Agent Harness 不是模型本身，也不只是 prompt，更不只是某个工具列表。它是让模型能在真实环境中长期、可靠、可控地工作的“外部身体”和“运行制度”。Microsoft 对 agent harness 的描述也强调，它是模型推理连接真实执行的层，包括 shell、文件系统访问、审批流和跨长会话的上下文管理。(Microsoft for Developers)\n\n它和 agent framework / SDK 也不完全一样。Framework 或 SDK 更像木匠手里的材料和图纸；Agent Harness 更像已经装配起来、实际承载某个 agent 运转的那套车、路、钥匙、规则和检查机制。Salesforce 的解释也类似：harness 是围绕模型的执行环境，管理生命周期、上下文以及与外部世界的交互。(Salesforce)\n\n最终，寓言想表达的是：\n\n一个模型会思考，不代表它能可靠地做事。\n一个 agent 真正能做事，是因为模型之外还有一整套 harness：给它工具，给它记忆，给它权限，给它边界，给它反馈，给它验收，也给它在现实世界中安全行动的方式。",
+      "created_at": "Thu Apr 23 19:18:52 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 212134,
+        "friends_count": 1614,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2047388496944361834",
+      "text": "Claude Code 和 Codex 或者其他 Agent 使用 Skills 的主要差别：\n\n1. 执行 Skills 的模型不一样\nCC 会用 Claude 模型，Codex 会用 GPT 模型，如果接 API 可能还会选择其他模型；不同模型的偏好和能力不一样，所以 Skills 里面的提示词也会有差异\n\n2. 环境（Harness）不一样\n不同的 agent 有不同的工具，以及不同的访问环境的限制。比如说：\n- Codex 能用内置的 imagegen Skill 画图，CC 不行\n- CC 和 Codex 都能执行脚本访问网络，但是 Cowork 可能不行\n- CC 有一个方便好用的 AskUserQuestion 收集用户反馈，还支持一次多个问题，但是其他 Agent 大多只能一次一个问题，甚至没有\n\n所以写 Skills，可能需要针对不同 Agent/模型做一些定制化，比如我在 baoyu-skills 里面，就需要去检测当前 agent 有哪些能力，再去让 agent 选择正确的工具",
+      "created_at": "Thu Apr 23 18:53:50 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2047388481593184257",
+          "url": "https://pbs.twimg.com/media/HGnI-fqWkAEj9Bf.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2047356029160313251",
+        "text": "@dotey 宝玉老师，想问下Claude code 和codex使用skills有什么区别吗",
+        "created_at": "Thu Apr 23 16:44:50 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1380073450878824451",
+          "name": "K哥观市",
+          "screen_name": "jason199567",
+          "description": "炒饼大师,好吃",
+          "followers_count": 15,
+          "friends_count": 263,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 212134,
+        "friends_count": 1614,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2047388162687684615",
+      "text": "OpenAI 发布 GPT-5.5，目前向 ChatGPT 的 Plus、Pro、Business 和 Enterprise 用户开放，同步上线 Codex。API 将\"很快\"跟进。\n\nGPT-5.5 的核心卖点是\"更聪明但不变慢\"。OpenAI 声称它在实际服务中的每 token 延迟与 GPT-5.4 持平，同时完成同样的 Codex 任务消耗更少 token。换句话说，能力提升的同时效率也在涨。\n\n跑分方面，GPT-5.5 在多个基准上刷新了纪录。Terminal-Bench 2.0（复杂命令行工作流测试）拿到 82.7%，GPT-5.4 是 75.1%，Claude Opus 4.7 是 69.4%。在 OSWorld（让模型独立操作真实计算机环境）上达到 78.7%，与 Claude Opus 4.7 的 78.0% 接近。GDPval（对标 44 个职业的行业专家产出质量）得分 84.9%，也领先一个身位。不过 SWE-Bench Pro 上，Claude Opus 4.7 的 64.3% 仍然高于 GPT-5.5 的 58.6%，OpenAI 自己在表格里也标注了该基准存在记忆化问题。\n\n数学和科研领域的提升更显著。FrontierMath Tier 4 从 GPT-5.4 的 27.1% 跳到 35.4%，但 Claude Opus 4.7 只有 22.9%。OpenAI 还发布了一篇用 GPT-5.5 内部版本辅助发现的 Ramsey 数新证明，已在 Lean 中完成验证。新推出的 GeneBench 测试多阶段遗传学数据分析，GPT-5.5 拿到 25.0%，GPT-5.4 是 19.0%。\n\n第三方机构 Artificial Analysis 的综合智能指数显示了一个有趣的效率对比：在相同智能水平下，GPT-5.5 消耗的 token 总量大约是竞品前沿编码模型的一半。这对 API 用户来说是实打实的成本优势。\n\n定价方面，API 为 5 美元/百万输入 token、30 美元/百万输出 token，上下文窗口 100 万 token。GPT-5.5 Pro 定价更高，30 美元输入、180 美元输出。虽然单价高于 GPT-5.4，但 OpenAI 强调 token 效率的提升可以对冲价格差异。\n\n安全方面，OpenAI 将 GPT-5.5 的网络安全和生物/化学能力归为 Preparedness Framework 下的\"High\"级别（未达 Critical）。CyberGym 得分 81.8%，高于 Claude Opus 4.7 的 73.1%。同时推出了面向安全研究人员的 Trusted Access for Cyber 计划，降低合规用户的安全限制。\n\nOpenAI 内部已经有超过 85% 的员工每周使用 Codex，覆盖工程、财务、市场、数据科学等职能。文中提到的一个案例：财务团队用 Codex 审阅了 24,771 份 K-1 税表，共 71,637 页，比去年提前两周完成。",
+      "created_at": "Thu Apr 23 18:52:31 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2047376561205325845",
+        "text": "Introducing GPT-5.5\n\nA new class of intelligence for real work and powering agents, built to understand complex goals, use tools, check its work, and carry more tasks through to completion. It marks a new way of getting computer work done.\n\nNow available in ChatGPT and Codex. https://t.co/rPLTk99ZH5",
+        "created_at": "Thu Apr 23 18:06:25 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2047374439407620096",
+            "url": "https://video.twimg.com/amplify_video/2047374439407620096/vid/avc1/1920x1080/KbNwuXNHSjTOBFL9.mp4?tag=21",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 4762241,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3227,
+          "favorite_count": 25375,
+          "reply_count": 1371,
+          "quote_count": 1777
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 212134,
+        "friends_count": 1614,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 31,
+        "reply_count": 7,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2047370565497856013",
       "text": "GPT Image 2 Prompt:\n\nClassic Bathtime Portrait of a Chicken in a Miniature Clawfoot Tub\n\nAn anime-style chicken mid-leap with a tiny katana in its wing, slashing through drifting sakura petals. The background is a blurred pastel forest of blooming cherry blossoms. The chicken wears a mint-green ninja scarf fluttering behind, and the light glows with soft pink and gold.",

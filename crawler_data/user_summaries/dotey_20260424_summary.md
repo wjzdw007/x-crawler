@@ -1,0 +1,20 @@
+**新工具/技术**
+- GPT Image 2（图像模型）——支持丰富 Prompt 控制（包括多语言提示、质量词），实验性 API 可产 2K/4K 图像并能生成 360° 等格式；核心团队成员 Boyuan Chen 接收社区反馈。  
+- baoyu-cover-image、baoyu-article-illustrator（hand-drawn-edu）、baoyu-infographic skill + Codex Agent——用于自动化生成封面与手绘信息图的 Skill/Agent 组合，实践中被推荐效果良好。  
+- DeepSeek‑V4（开源预览版）——分 V4‑Pro（旗舰）与 V4‑Flash（轻量），把 1M 上下文长度作为标配，提供 OpenAI/Anthropic 接口兼容与开源权重。  
+- 新注意力机制（token 压缩 + DSA 稀疏注意力）——用于把百万上下文的计算与显存需求显著下降，从“可做但昂贵”变为“标配且不加价”。  
+- Cursor 3 的 /multitask 功能——支持异步并行子智能体（sub-agent），可把排队任务改为并行执行，提升吞吐与响应并发。  
+- Claude/第三方 Skill（如把幻灯片做成杂志风）——用 Skill 预设采访式输入和固定布局可稳定输出高质量设计样式。
+
+**核心观点/方法论**
+- Prompt 细节与语言切换能明显改变生成质量——在 GPT Image 2 中切换提示语言并加入质量词（如“フラットなアニメカラーリング、影なし”）可以去除粒感、提升平滑度，这说明描述性质量词与语言语境对渲染风格有强作用。  
+- 将超长上下文作为默认能力，会改变开发与产品设计方式——1M 上下文让把整个代码库或完整文档一次性喂入成为可行方案，减少切分与检索复杂度。  
+- 模型分层产品策略（Pro vs Flash）与思考模式区分（非思考/思考、reasoning_effort）是提高可用性与成本可控性的关键方法论。  
+- 开源 + 兼容多接口（OpenAI/Anthropic）有助于生态适配与开发者迁移，降低锁定成本并扩大采用门槛。
+
+**实践经验/案例**
+- 提示工程实例：用“flat anime coloring, no shadows”或日语质量描述能在 GPT Image 2 上得到更平滑的动画上色效果，适合去除 SD 风格颗粒感。  
+- 信息图生成：按预设配色、手绘 wobble、图优先的 Prompt（英/中文模板）配合 baoyu-infographic skill，能稳定产出高质量单页手绘信息图。  
+- 360° 全景生成：有人用 GPT‑Image‑2 在 Happycapy 中直接生成 equirectangular 全景并展示，说明模型可用于非常规格式输出。  
+- Agentic Coding 对比：DeepSeek‑V4‑Pro 在内部 Agent 编程任务上被评价优于 Claude Sonnet 4.5、接近 Opus 4.6（非深思模式），但在深度“思考”模式仍略输 Opus。  
+- 迁移与兼容提醒：调用 DeepSeek‑V4 时需把 model 改为 deepseek‑v4‑pro 或 deepseek‑v4‑flash，旧模型名将在 2026‑07‑24 停用，注意提前迁移。

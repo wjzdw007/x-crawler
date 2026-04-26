@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 213416,
+    "followers_count": 213492,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260426",
-  "last_updated": "2026-04-26T03:06:59.143712",
-  "tweet_count": 1,
+  "last_updated": "2026-04-26T05:04:55.405830",
+  "tweet_count": 3,
   "tweets": [
     {
       "id": "2048212030482509960",
@@ -48,6 +48,140 @@
         "favorite_count": 26,
         "reply_count": 17,
         "quote_count": 3
+      }
+    },
+    {
+      "id": "2048251701900063045",
+      "text": "RT @threeaus: 总结下罗福莉访谈中的一些主要信息\n\nAgent 框架\n\n- 访谈的前 1 个小时都在讲 OpenClaw，给部分人造成了不好的观感，但个人觉得无碍，这个里面穿插了罗福莉对 Agent 框架的理解。OpenClaw 让她认识到了 Agent…",
+      "created_at": "Sun Apr 26 04:03:55 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2048057738778010068",
+        "text": "总结下罗福莉访谈中的一些主要信息\n\nAgent 框架\n\n- 访谈的前 1 个小时都在讲 OpenClaw，给部分人造成了不好的观感，但个人觉得无碍，这个里面穿插了罗福莉对 Agent 框架的理解。OpenClaw 让她认识到了 Agent 框架的力量，一套非常复杂的Agent框架设计，可以弥补非常多模型能力的短板，也能让一个中等模型表现更好。我们的日常生活，通过一套好的 Agent 框架 + 一个性价比高的中等模型，可以满足大部分需求。\n\n- 在罗福莉的实践中，她是先用 Claude Opus 4.6 改进 OpenClaw 的框架，然后再切到弱一点的模型，发现也很好用，这一过程也启发了 MiMo-V2-Pro 的后训练过程。\n\n- 关于 agent 为什么是在最近才爆发；罗福莉认为，之前的 agent 框架非常简洁，并且通用性不够；另外，模型能力也不够。OpenClaw 和 Opus 4.6 的“握手”，非常重要。\n\n- 关于很多评测指标，如 BrowseCap、SWE-Bench、Terminal-Bench，即使这些是 agent 相关的指标，但也是错误的指标，分高不代表能用，这也是一个歧途，导致很多公司在 25 年走了弯路，并没有真正为 agent 训练模型。\n\nAgent for 研究\n\n- 罗福莉团队已经在用 OpenClaw、Claude Code 这些 Agent 来加速研究过程，以前30、40周做到的事，现在只需要 3、4周。研究加速后，卡的数量变成了瓶颈。\n\n- 之前做研究，中间流程很长，至少一两周，快的话也需要一两天，现在在 agent 辅助下，一两个小时就可以做完。以前罗认为训模型是很难的，她最近发现只要把近期的 context 告诉它，它甚至能帮你复原你的科研成长路径，在同样的话题下，跟你一样聪明。\n\n团队和管理风格\n\n- 之前 MiMo-V2-Pro 发布的时候，罗福莉提到过对团队的要求，第二天 OpenClaw对话次数不超过100轮的人，可以离职，但这个事并没有明确的考核。这也反应了罗福莉的管理风格，更希望去激发好奇心和热情，靠热爱去驱动管理。\n\n- MiMo 是非常小且极致的团队，目前已达到 100 人，团队没有 deadline，只要雷军接受即可，独立于小米团队架构之外。\n\n- 团队没有分组，也没有具体的 leader，没有职级，非常扁平，很多人进来之前也没有做过一个大模型。\n\n研究和趋势判断\n\n- 26 年仍然是围绕生产力变革，在高生产力场景。但另外一方面，85%的普惠场景也需要好的 agent 来满足，多模态、低成本、高效、高速度，很关键。\n\n- Agent 是非常长程和多轮的任务，现实世界很少有可以达到这种级别（1M context）的数据，code 是为数不多的选择。把 code 做好，模型的长下文能力会变好，agent 能力也会变强。\n\n- 模型公司的入场券：long context 并且非常高效，预训练阶段做好 code、 1T 参数，达到Opus 4.6 的能力。\n\n- MiMo V2 Omni 模型比 V2 Pro 小，但由于是多模态训练，它对世界感知能力以及知识储备上会比 Pro 更强。\n\n- 在 agent 时代，用于研究、预训练、后训练的计算比例应该是 3:1:1，而在 Chatbot 时代，预训练和后训练的比例是 3.5:1。\n\n- 行业主流采用 DeepSeek 的 MLA，小米选择了 MTP，是因为模型训到中后期，开始设计推理方案时，发现在他们的推理卡上计算剩余太多，MTP 很很合适；同时，MTP 也更适合 Agent 时代对长上下文和推理速度的双重需求。罗认为 MLA 对 Chatbot 是个好架构，但对于 Agent 不够好。\n\n- 对 AGI 的实现比较乐观，认为现在已经实现了 20%，未来 2 年可实现 AGI。",
+        "created_at": "Sat Apr 25 15:13:10 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2047887995303535055",
+          "text": "周末是最好的学习时间\nWeekends are the best time for studying🙇🏻\n\n【对罗福莉的3.5小时访谈：AI范式已然巨变！OpenClaw、智能体框架、Agent范式很吃Post-train、卡的分配比例、巨变下的组织-哔哩哔哩】 https://t.co/WIaLFTkYrP",
+          "created_at": "Sat Apr 25 03:58:40 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1231772373323411456",
+            "name": "张小珺 Xiaojun Zhang",
+            "screen_name": "zhang_benita",
+            "description": "Award-winning tech journalist and host of the Zhang Xiaojun Podcast.",
+            "followers_count": 31242,
+            "friends_count": 115,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 23,
+            "favorite_count": 253,
+            "reply_count": 21,
+            "quote_count": 7
+          }
+        },
+        "user": {
+          "id": "2392383031",
+          "name": "陆三金",
+          "screen_name": "threeaus",
+          "description": "Ruthless AI News reposting machine",
+          "followers_count": 1152,
+          "friends_count": 3760,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 21,
+          "reply_count": 2,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2048258873119674779",
+      "text": "作者画的这图效果挺好，不过好像没提供提示词，我仿照着写了一个 GPT Image 2 的提示词模板：\n> 请创作一张关于「【数学概念/知识点】」的数学可视化信息图，目标是帮助读者直观理解：它是什么、为什么成立、几何/结构直觉是什么、在不同场景下如何表现。画面要像高质量数学讲义 + 手绘教育海报，优雅、清晰、信息丰富，但不要杂乱。\n>\n> 视觉风格：竖版或横版均可，干净的浅色纸张背景，深蓝标题，黑色/深灰正文线条，搭配少量优雅的蓝色、青绿色、金色、红色强调色。使用圆角卡片、细线边框、编号标签、手绘箭头、局部放大框和总结栏。整体要美观、平衡、有学术感，让人一眼看懂这个概念的“结构”和“为什么”。",
+      "created_at": "Sun Apr 26 04:32:24 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2048258769076039680",
+          "url": "https://pbs.twimg.com/media/HGzgf5LbMAAy64Q.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2048258769176711168",
+          "url": "https://pbs.twimg.com/media/HGzgf5jbUAAzFtI.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2047910605160366435",
+        "text": "Some more of these math visualizations. I’d love to get a bunch of them turned into those nice metal prints and mount them in a 3 × 3 grid on the wall of my office. https://t.co/RMsE3UAFa1",
+        "created_at": "Sat Apr 25 05:28:31 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2047910595987435521",
+            "url": "https://pbs.twimg.com/media/HGuj1jWW8AEb-PD.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2047910595991629824",
+            "url": "https://pbs.twimg.com/media/HGuj1jXW8AANEFS.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2047910596142858240",
+            "url": "https://pbs.twimg.com/media/HGuj1j7agAA0wbM.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2047910595991670784",
+            "url": "https://pbs.twimg.com/media/HGuj1jXXkAAiNwc.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "29239591",
+          "name": "Jeffrey Emanuel",
+          "screen_name": "doodlestein",
+          "description": "Former Quant Investor | My Open Source Projects: https://t.co/9qbOCDlaqM |\nTry https://t.co/oCtjI2mBIl , my collection of agent coding tooling.",
+          "followers_count": 43298,
+          "friends_count": 13192,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 17,
+          "favorite_count": 110,
+          "reply_count": 4,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 43,
+        "reply_count": 2,
+        "quote_count": 1
       }
     }
   ]

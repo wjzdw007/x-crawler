@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-04-27T01:39:39.783109",
+  "tweet_count": 8,
+  "summary": "**新工具/技术**\n- OpenClaw：一种复杂的 Agent 框架设计，能弥补模型能力短板，使中等模型也能完成复杂多轮任务。  \n- Claude Opus 4.6：高能力对话模型，常用于先优化框架（OpenClaw），再验证下放到弱模型的效果。  \n- MiMo-V2‑Pro / V2 Omni：MiMo 系列模型；Pro 注重推理能力，Omni 通过多模态训练在世界感知和知识上更强。  \n- GPT Image 2 / ChatGPT‑Image‑2.0：高质量图像生成工具，配合结构化提示词能稳定产出专业级视觉结果。  \n- “上下文种子”（设计模式）：在工具接口中加非必需但有价值的上下文参数，用来长期收集产品洞察（例如 purpose、user_goal 等）。\n\n**核心观点/方法论**\n- PRD 不必专门写给 Agent：如果产品经理写的人能看懂，模型一般也能理解；为 Agent 写专门一版会带来重复劳动和流程膨胀。  \n- 框架优先于单纯大模型：一套优秀的 Agent 框架 + 性价比高的中等模型可满足大部分场景，成本更优。  \n- 评测指标易迷惑：像 BrowseCap、SWE‑Bench 等分数高不代表能用，过度追分数会误导研究方向。  \n- 长上下文与 code 是关键：长上下文能力和 code 数据在提升长程、多轮 agent 能力上非常重要。  \n- 训练与算力分配要调整：Agent 时代建议研究:预训:后训 计算比例约 3:1:1（相较 Chatbot 时代比例不同）。  \n- 设计工具要主动埋点：通过上下文种子把工具调用转化为可分析的产品信号，发现真正的用户需求。\n\n**实践经验/案例**\n- fetch_tickets 示例：在抓取工单工具中加入 purpose、user_goal、related_event、confidence 等字段，能把工具使用行为直接映射为产品需求（如自动生成事故报告）。  \n- Agent 加速研究：团队实践显示，用 Agent 把过去需要数月的研究缩短为数周或数小时，瓶颈变成算力/卡的分配与并发。  \n- Prompt 模板落地：分享的数学可视化、kawaii 猫咪、刺绣风、地景档案模型等 Image2 提示词，说明结构化提示能提升图像生成的一致性与复现性。  \n- 组织与管理启示：小而精、扁平、以好奇心驱动的团队更容易在 Agent 时代快速迭代；实践中也强调对话/探索量级以激励产出。",
+  "metadata": {
+    "original_tweets": 5,
+    "retweets": 3,
+    "media_tweets": 3,
+    "data_hash": "2c7cd200",
+    "user": "dotey"
+  }
+}

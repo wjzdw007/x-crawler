@@ -1,12 +1,171 @@
 {
   "date": "20260428",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-04-28T18:34:39.917522",
-  "tweet_count": 218,
-  "unique_tweet_count": 218,
-  "total_crawled": 412,
-  "duplicates_removed": 194,
+  "last_crawl_time": "2026-04-28T20:31:39.835632",
+  "tweet_count": 221,
+  "unique_tweet_count": 221,
+  "total_crawled": 418,
+  "duplicates_removed": 197,
   "tweets": [
+    {
+      "id": "2049219569445732851",
+      "text": "Mitchell Hashimoto 宣布，他的开源终端模拟器 Ghostty 将从 GitHub 迁出。\n\n【注：Mitchell Hashimoto 是 Vagrant 和 Terraform 的创造者，HashiCorp 联合创始人，开发者社区的标志性人物。Ghostty 是近两年热度很高的现代终端模拟器。】\n\nHashimoto 是 GitHub 的第 1299 号用户，2008 年注册，用了 18 年。他说自己每天都打开 GitHub，甚至蜜月的时候老婆还没醒就在刷 GitHub。这个平台承载了他的职业生涯、开源项目和热情所在，当年做 Vagrant 的动力之一就是“说不定 GitHub 会因此雇我”。\n\n但过去一个月，他开始在日记本上给每天打“X”，标记 GitHub 宕机影响工作的日子。结果几乎每天都有 X。写这篇公告当天，GitHub Actions 又挂了，他有两个小时没法做代码审查。他说，一个每天都会把你挡在外面几个小时的平台，已经不适合做严肃的开发工作了。\n\n他特意说明，这个决定酝酿了好几个月，和 4 月 27 日那次大规模 ElasticSearch 宕机只是时间上的巧合。\n\n迁移计划是渐进式的：先保留一个只读镜像在 GitHub 原地址，具体搬去哪还在和多家供应商（商业和开源都有）谈。他的个人项目暂时不动，先把 Ghostty 迁走。",
+      "created_at": "Tue Apr 28 20:09:52 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2049213597419774026",
+        "text": "Ghostty is leaving GitHub. I'm GitHub user 1299, joined Feb 2008. I've visited GitHub almost every single day for over 18 years. It's never been a question for me where I'd put my projects: always GitHub. I'm super sad to say this, but its time to go. https://t.co/DQDemHdytV",
+        "created_at": "Tue Apr 28 19:46:08 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "12819682",
+          "name": "Mitchell Hashimoto",
+          "screen_name": "mitchellh",
+          "description": "Creator of Ghostty. 👻 Prev founded @HashiCorp, created Vagrant, Terraform, Vault, and others.",
+          "followers_count": 186616,
+          "friends_count": 148,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 189,
+          "favorite_count": 2433,
+          "reply_count": 124,
+          "quote_count": 83
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 214614,
+        "friends_count": 1619,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2049200788451246188",
+      "text": "ByteByteGo 画的 MCP 和 Agent Skills 的对比图，比 AI 画的还是精致多了。\n\n不过这种图的问题，就是你懂的话一看就很清晰，不懂的话看图还是看不懂。",
+      "created_at": "Tue Apr 28 18:55:14 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2048786802191052970",
+        "text": "MCP vs Skills https://t.co/SB2CbDkFt4",
+        "created_at": "Mon Apr 27 15:30:12 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2048786797149462529",
+            "url": "https://pbs.twimg.com/media/HG7AvLCaoAEUHaj.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "172200213",
+          "name": "Alex Xu",
+          "screen_name": "alexxubyte",
+          "description": "Co-Founder of ByteByteGo | Author of the bestselling book series: ‘System Design Interview’ | YouTube: https://t.co/9gPSJSrtPU",
+          "followers_count": 289830,
+          "friends_count": 554,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 164,
+          "favorite_count": 828,
+          "reply_count": 3,
+          "quote_count": 4
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 214614,
+        "friends_count": 1619,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 5,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2049196504804409714",
+      "text": "RT @wsl8297: 在 GitHub 上挖到一门很实用的开源课：Learn Harness Engineering，专门教你给 AI 编程助手搭一套更可靠的“工作台”。\n\n它把 AI 协作拆成五个关键机制：指令、状态、验证、范围、会话，让每次任务都可追踪、可续接、可验证，…",
+      "created_at": "Tue Apr 28 18:38:13 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2048929452579799164",
+        "text": "在 GitHub 上挖到一门很实用的开源课：Learn Harness Engineering，专门教你给 AI 编程助手搭一套更可靠的“工作台”。\n\n它把 AI 协作拆成五个关键机制：指令、状态、验证、范围、会话，让每次任务都可追踪、可续接、可验证，不再靠运气出结果。\n\nGitHub：https://t.co/G1kBghFqXg\n\n官网：https://t.co/6OHbxJcWz6\n\n课程结构很清晰：12 节理论 + 6 个实战项目，用同一个桌面应用贯穿推进，边做边演进。\n从最基础的对比实验起步，逐步把整套工作环境搭起来；每个项目的产出，直接接到下一个项目继续用，越做越稳。\n\n更贴心的是，它还提供可直接复用的模板文件：拷进自己的项目就能上手，不用完整学完，也能立刻提升 AI 的稳定性和可控性。\n\n如果你已经在用 Claude Code 或 Codex 做真实开发，却总觉得 AI 时好时坏、难以复现，这门课很值得花时间看看。",
+        "created_at": "Tue Apr 28 00:57:03 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2048929450121965568",
+            "url": "https://pbs.twimg.com/media/HG9CeqxbMAAohL-.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1890029305205608448",
+          "name": "Joruno",
+          "screen_name": "wsl8297",
+          "description": "🧠 AI 程序员，写提示词比写代码还多\n💻 坚持分享高质量、有趣、实用的教程、AI工具\n💃 梦想是成为一名秧歌 STAR",
+          "followers_count": 9839,
+          "friends_count": 447,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 173,
+          "favorite_count": 1141,
+          "reply_count": 6,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 214614,
+        "friends_count": 1619,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 173,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2049191520977232163",
       "text": "帮转招聘信息",

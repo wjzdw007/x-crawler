@@ -1,0 +1,108 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 214624,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260429",
+  "last_updated": "2026-04-29T00:36:46.659121",
+  "tweet_count": 3,
+  "tweets": [
+    {
+      "id": "2049279099454292283",
+      "text": "微软 1 月开源的 VibeVoice-ASR 语音识别模型（https://t.co/CsXftlEAul），Simon Willison 在 Mac 上测试后给出了一份具体的实测报告。\n\nVibeVoice-ASR 是微软研究院今年 1 月 21 日开源的 9B 参数语音转文字模型，MIT 协议。最大卖点是单次能处理 60 分钟连续音频，而且把\"谁在说、什么时候说、说了什么\"做成结构化输出。\n\n传统方案要拿 Whisper（OpenAI 开源的语音识别模型）配上 pyannote 这种说话人分离工具拼起来，这次一个模型直接搞定，原生支持 50 多种语言和中英混说。\n\nSimon 跑的是社区做的 4-bit 量化版（5.71GB，原模型 17.3GB），机器是 128GB 内存的 M5 Max MacBook Pro，转写一小时播客花了 8 分 45 秒。调用时要手动把 max-tokens 调到 32768，否则默认 8192 只够大约 25 分钟的音频。Activity Monitor 监控显示，prefill（预填充）阶段内存峰值飙到 61.5GB，生成阶段稳定在 18GB 上下，普通 32GB 笔电基本跑不动这个量化版。\n\n一个有趣的细节：模型把这场播客识别成了三个说话人。实际上只有 Simon 和主持人 Lenny 两人对谈，但 Lenny 的开场白和广告口播用了不同的录音环境，模型干脆把这部分切成了第三人。\n\n硬限制有两个：单次最多 60 分钟，超过要自己切片处理，还得手动对齐切片间的说话人 ID；想本地跑量化版至少要 64GB 以上内存的机器。对做播客转写、会议纪要、采访整理的人来说，原来拼接的多步流程现在能压缩成一次推理。",
+      "created_at": "Wed Apr 29 00:06:25 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2048912086307377252",
+        "text": "Microsoft's MIT licensed VibeVoice speech-to-text model (think Whisper with speaker diarization) is really good - my notes on running the 5.71GB 4bit MLX conversion on an M5 MacBook, using about 60GB of RAM at peak and transcribing 1hr of audio in ~9 mins https://t.co/lyu5rtXwPQ",
+        "created_at": "Mon Apr 27 23:48:02 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "12497",
+          "name": "Simon Willison",
+          "screen_name": "simonw",
+          "description": "Creator @datasetteproj, co-creator Django. PSF board. Hangs out with @natbat. He/Him. Mastodon: https://t.co/t0MrmnJW0K Bsky: https://t.co/OnWIyhX4CH",
+          "followers_count": 172027,
+          "friends_count": 5639,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 82,
+          "favorite_count": 953,
+          "reply_count": 36,
+          "quote_count": 6
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 14,
+        "reply_count": 5,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2049283917509693942",
+      "text": "https://t.co/gDzllrcVJi",
+      "created_at": "Wed Apr 29 00:25:34 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2049285974622937260",
+      "text": "测试反馈\nhttps://t.co/JE5rY6O7hx",
+      "created_at": "Wed Apr 29 00:33:44 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2049285489547792757",
+        "text": "@dotey 之前测试过，没有说的那么强，而且慢。\n语者区分的质量也没pyannote/speaker-diarization好。\n本地运行暂时效果最好的pyannote+qwenASR。\n想用本地模型不切开一次过处理60分钟而且保证质量，基本上是乱来。",
+        "created_at": "Wed Apr 29 00:31:49 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "51363416",
+          "name": "Osaker",
+          "screen_name": "gogoxui",
+          "description": "In the mind, ideas conceive; through the hands, they achieve.",
+          "followers_count": 1531,
+          "friends_count": 1300,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 2,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

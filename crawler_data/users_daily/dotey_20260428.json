@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 214619,
+    "followers_count": 214624,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260428",
-  "last_updated": "2026-04-28T22:22:25.818798",
-  "tweet_count": 12,
+  "last_updated": "2026-04-29T00:36:46.660565",
+  "tweet_count": 14,
   "tweets": [
     {
       "id": "2049159489538998508",
@@ -533,6 +533,84 @@
       "stats": {
         "retweet_count": 0,
         "favorite_count": 3,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2049265362718351779",
+      "text": "OpenAI 宣布与 AWS 扩大合作，把自家模型（包括最新的 GPT-5.5）、Codex 编程工具和托管智能体（Managed Agents）全部搬上 Amazon Bedrock 平台，目前以限量预览形式上线。\n\n这对企业客户意味着什么？以前想用 OpenAI 的模型，基本只能走 Azure。很多已经重仓 AWS 的公司要么迁移基础设施，要么放弃 OpenAI，两头都不划算。现在这个障碍没了。企业可以在自己熟悉的 AWS 环境里直接调用 OpenAI 的模型，安全策略、合规流程、账单体系全部复用，Codex 的使用费用甚至可以算进 AWS 的云消费承诺额度里。\n\nCodex 这次上线 AWS 的方式也值得注意。企业只需要在 Codex 里把模型提供商配置成 Bedrock，CLI、桌面端、VS Code 插件都支持。OpenAI 公布的数据是 Codex 周活用户已超 400 万，而且用途早已不限于写代码，还延伸到了研究分析、文档处理、做 PPT 这些场景。\n\n另一个新品是 Amazon Bedrock Managed Agents。简单说就是企业可以在 AWS 上部署 OpenAI 驱动的智能体，能维持上下文、执行多步骤任务、调用工具。AWS 负责底层的编排、治理和安全合规，企业只需要关心智能体本身要做什么事。\n\n【注：Bedrock 是 AWS 的大模型托管平台，之前已经接入了 Anthropic 的 Claude、Meta 的 Llama 等模型。OpenAI 的加入让 Bedrock 凑齐了几乎所有主流前沿模型，也让 AWS 在跟 Azure 的云端 AI 竞争中多了一张重要的牌。】",
+      "created_at": "Tue Apr 28 23:11:50 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2049258911887434165",
+        "text": "Earlier this year, OpenAI and @amazon partnered to bring OpenAI’s frontier capabilities to enterprises, startups, and customers around the world.\n\nWe’re taking the next step: making our models, Codex, and Bedrock Managed Agents available to @awscloud customers, in limited preview.\n\nMaking OpenAI available on AWS means enterprises can get AI into production faster - across software engineering and other professional workflows.\n\nWe’re excited to see what gets built!\n\nhttps://t.co/04HlMSSOEe",
+        "created_at": "Tue Apr 28 22:46:12 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1803847768781524992",
+          "name": "OpenAI Newsroom",
+          "screen_name": "OpenAINewsroom",
+          "description": "The official newsroom for @OpenAI.",
+          "followers_count": 144493,
+          "friends_count": 3,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 26,
+          "favorite_count": 374,
+          "reply_count": 19,
+          "quote_count": 13
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 28,
+        "reply_count": 6,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2049271531235123287",
+      "text": "RT @grapeot: Meta 花 20 亿买 Manus，Musk 给 Cursor 开了 600 亿收购选项。中文互联网最常见的反应：套壳，冲动消费。\n\n这个判断方向性地错了。\n\nManus 在所有人照搬人类组织架构做 multi-agent 的时候，判断 LLM 天生…",
+      "created_at": "Tue Apr 28 23:36:21 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2049240246139941074",
+        "text": "Meta 花 20 亿买 Manus，Musk 给 Cursor 开了 600 亿收购选项。中文互联网最常见的反应：套壳，冲动消费。\n\n这个判断方向性地错了。\n\nManus 在所有人照搬人类组织架构做 multi-agent 的时候，判断 LLM 天生是 generalist，不该 hat wearing。Cursor 判断 AI 编程的产品瓶颈在模型速度，自训模型绕不过去，然后五个月把训练链路从纯 RL 迭代到 continued pretraining + RL，做出了质量接近 Sonnet 4.5 但快数倍的 Composer。\n\n两家共同点：认知领先行业至少一个身位，而且这个领先可以用竞品对比和技术路线验证。\n\nhttps://t.co/gVBSDpTct7",
+        "created_at": "Tue Apr 28 21:32:02 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "25820199",
+          "name": "鸭哥",
+          "screen_name": "grapeot",
+          "description": "AI builder。关注 agent 基础设施、AI-native 开发和模型能力边界。Superlinear Academy 联合创始人。",
+          "followers_count": 3923,
+          "friends_count": 122,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3,
+          "favorite_count": 21,
+          "reply_count": 3,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
       }

@@ -1,12 +1,93 @@
 {
   "date": "20260430",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-04-30T06:54:49.985224",
-  "tweet_count": 206,
-  "unique_tweet_count": 206,
-  "total_crawled": 402,
-  "duplicates_removed": 196,
+  "last_crawl_time": "2026-04-30T08:49:01.904725",
+  "tweet_count": 208,
+  "unique_tweet_count": 208,
+  "total_crawled": 406,
+  "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2049760093647024601",
+      "text": "RT @XFreeze: Grok Imagine Agent Mode (Beta) just went live on Grok web\n\nIt’s a full creative agent working on one infinite open canvas\n\nGro…",
+      "created_at": "Thu Apr 30 07:57:43 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2049725955208622475",
+        "text": "Grok Imagine Agent Mode (Beta) just went live on Grok web\n\nIt’s a full creative agent working on one infinite open canvas\n\nGrok Agent plans → generates → edits → iterates everything automatically in the same workspace\n\nTell it what you want and watch it plan, generate, edit, and iterate everything in one seamless workspace:\n• 🎬 “Generate a 1-minute cinematic film” \n•  📚 “Create a complete manga set” \n•  🛍️ “Build UGC product stories”\n\nThis is the real leap from simple prompts to end-to-end creative production\n\nThis is the biggest upgrade to Grok Imagine yet",
+        "created_at": "Thu Apr 30 05:42:04 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2049724062725963776",
+            "url": "https://video.twimg.com/amplify_video/2049724062725963776/vid/avc1/1546x1310/3-ORfwb67bvwTTmQ.mp4?tag=21",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 205099,
+          "friends_count": 1778,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 138,
+          "favorite_count": 779,
+          "reply_count": 230,
+          "quote_count": 11
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239691476,
+        "friends_count": 1319,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 138,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2049756754058342448",
+      "text": "Congrats to the @SpaceX Falcon Team!",
+      "created_at": "Thu Apr 30 07:44:27 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239691476,
+        "friends_count": 1319,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 202,
+        "favorite_count": 993,
+        "reply_count": 494,
+        "quote_count": 19
+      }
+    },
     {
       "id": "2049735038560842186",
       "text": "Hermes Agent 加了一个新功能：Curator（策展人）。\n\nHermes Agent 有个“自我进化”机制，用着用着会自己创建各种技能文件来优化工作流。但技能攒多了就成了数字垃圾抽屉，重复的、过时的、太细碎的全堆在一起。Curator 干的就是定期收拾这个抽屉。\n\n它默认每周自动跑一次，做几件事：统计每个技能的使用频率和更新时间，把功能重叠的技能合并，把太久没用的清理掉，把过于具体的小技能降级成模板或脚本、塞进更通用的技能里。外部安装的技能、内置技能、以及你手动\"钉住\"的技能它不会碰，只动智能体自己生成的和用户手写的。\n\n不想让它自动跑也行，在 config.yaml 里关掉就好，或者用 hermes curator run 手动触发。\n\n也算是对于技能越来越多的一个痛点解决方案，至于效果如何，可以观察看看。",

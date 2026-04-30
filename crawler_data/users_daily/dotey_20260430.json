@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 215154,
+    "followers_count": 215184,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260430",
-  "last_updated": "2026-04-30T14:45:15.493479",
-  "tweet_count": 4,
+  "last_updated": "2026-04-30T16:34:17.665824",
+  "tweet_count": 5,
   "tweets": [
     {
       "id": "2049691392364916875",
@@ -214,6 +214,56 @@
         "favorite_count": 12,
         "reply_count": 3,
         "quote_count": 2
+      }
+    },
+    {
+      "id": "2049888645369200671",
+      "text": "侧边栏会话有很多诟病，但用户已经习惯了。\n\n现在 Agent 产品有两类主流交互：\n\n第一类是左边是对话列表，右边是代码或者文档，代表性的是 Codex、Cursor 的 Agent 模式\n\n第二类是左边像传统软件，Agent 对话在右边，比如 GitHub Copilot\n\n第一类是 Agent 为中心，用户主要操作是通过对话指挥 AI Agent，用户去手动修改为辅助，所以对话为主。这也是为什么像 Cursor 会在原来 IDE 之外新造一个 Agent 模式， Codex Desktop 甚至连文件编辑都不支持。\n\n第二类是人操作软件为主，Agent 为辅助，借助 Agent 去做一些微调，所以是在不改变原有操作基础上加个侧边栏。\n\n也有一些软件想全都要，既想要 Agent 对话，又想要保留原有的软件操作，结果是交互很乱。\n\n如何设计好 Agent 的交互还很新，有很多探索空间，但是你的软件是 Agent 为中心还是 Agent 只是辅助，这个得先想清楚，想清楚这点才能做好后续的交互设计。\n\n你怎么看？",
+      "created_at": "Thu Apr 30 16:28:32 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2049885646269939712",
+          "url": "https://pbs.twimg.com/media/HHKoInAXgAAJNRi.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2049886191432921088",
+          "url": "https://pbs.twimg.com/media/HHKooV5WcAA9A-_.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2049750275427373167",
+        "text": "为什么从gpt到现在已经三年多了\n还是这种交互\n侧边栏会话记录+对话详情+artifact\n再多一点儿可能再分一个层级出四栏\n或者上下再分层级tab\n\n之所以没有新的交互形式革新\n我觉得至关重要的一点是\n对agent交互过程中stateless到stateful的处理\n\n如果有一些infra可以快速做这些状态机抽象\n那交互形式将会丰富很多",
+        "created_at": "Thu Apr 30 07:18:42 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3122661542",
+          "name": "Yangyi",
+          "screen_name": "yangyi",
+          "description": "人机协同架构师\nReverb Marketing布道者\n新时代人机协同基站 - 牛马AI👉🏻https://t.co/QJVShfywLx\nYangyi实战手记👉🏻https://t.co/Pkue4jV8hK",
+          "followers_count": 122625,
+          "friends_count": 570,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 3,
+          "reply_count": 2,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
       }
     }
   ]

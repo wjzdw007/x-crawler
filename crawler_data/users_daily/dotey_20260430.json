@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 214945,
+    "followers_count": 214982,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260430",
-  "last_updated": "2026-04-30T05:10:22.686085",
-  "tweet_count": 2,
+  "last_updated": "2026-04-30T06:54:50.010627",
+  "tweet_count": 4,
   "tweets": [
     {
       "id": "2049691392364916875",
@@ -130,6 +130,90 @@
         "favorite_count": 103,
         "reply_count": 10,
         "quote_count": 4
+      }
+    },
+    {
+      "id": "2049722598758522963",
+      "text": "Sam Altman 刚宣布，OpenAI 将在未来几天向“关键网络安全防御者”推送 GPT-5.5-Cyber，一个专门为网络安全打造的前沿模型。他说 OpenAI 会和整个行业生态及政府合作，建立可信的访问机制，目标是尽快帮助保护企业和基础设施。",
+      "created_at": "Thu Apr 30 05:28:44 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2049712078836170843",
+        "text": "we're starting rollout of GPT-5.5-Cyber, a frontier cybersecurity model, to critical cyber defenders in the next few days.\n\nwe will work with the entire ecosystem and the government to figure out trusted access for cyber; we want to rapidly help secure companies/infrastructure.",
+        "created_at": "Thu Apr 30 04:46:56 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1605",
+          "name": "Sam Altman",
+          "screen_name": "sama",
+          "description": "AI is cool i guess",
+          "followers_count": 4733361,
+          "friends_count": 1010,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 334,
+          "favorite_count": 4558,
+          "reply_count": 605,
+          "quote_count": 130
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 24,
+        "reply_count": 6,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2049735038560842186",
+      "text": "Hermes Agent 加了一个新功能：Curator（策展人）。\n\nHermes Agent 有个“自我进化”机制，用着用着会自己创建各种技能文件来优化工作流。但技能攒多了就成了数字垃圾抽屉，重复的、过时的、太细碎的全堆在一起。Curator 干的就是定期收拾这个抽屉。\n\n它默认每周自动跑一次，做几件事：统计每个技能的使用频率和更新时间，把功能重叠的技能合并，把太久没用的清理掉，把过于具体的小技能降级成模板或脚本、塞进更通用的技能里。外部安装的技能、内置技能、以及你手动\"钉住\"的技能它不会碰，只动智能体自己生成的和用户手写的。\n\n不想让它自动跑也行，在 config.yaml 里关掉就好，或者用 hermes curator run 手动触发。\n\n也算是对于技能越来越多的一个痛点解决方案，至于效果如何，可以观察看看。",
+      "created_at": "Thu Apr 30 06:18:10 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2049717907664581067",
+        "text": "Introducing Hermes Curator!   \n\nThe new system built in to Hermes Agent now helps you keep your skills that the self improvement loop creates in check, by consolidating and pruning automatically.\n\nThe curator does multiple things:\n\n- keeps track of how often you use each skill, when it was last updated/created, etc\n\n- Once a week runs automatically (configurable)\n\n- Uses the analytics plus it's own scanning of your skills and consolidates or prunes them if necessary\n\n- Skips externally installed skills, built in skills, and skills you \"pin\" that you dont' want touched. It will only attempt curation over agent created/updated skills or user written skills.\n\n- It will then determine whether skills can be consolidated, pruned, or otherwise made more manageable. It will convert some skills that are too specific into references, templates or scripts for larger/broader skills, or integrate them directly into a consolidation of an existing skill.\n\nYou can also disable it entirely in the config.yaml and/or run it manually with `hermes curator run `\n\nLearn more on the docs here:\n\nhttps://t.co/6woLLRtDLP",
+        "created_at": "Thu Apr 30 05:10:05 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2049717583327477760",
+            "url": "https://pbs.twimg.com/media/HHIPSDwbQAA2PlY.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1365020011123773442",
+          "name": "Teknium 🪽",
+          "screen_name": "Teknium",
+          "description": "Cofounder and Lead Engineer - Hermes Agent @NousResearch, prev @StabilityAI\nGithub: https://t.co/LZwHTUFwPq\nHuggingFace: https://t.co/sN2FFU8PVE",
+          "followers_count": 78561,
+          "friends_count": 6028,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 39,
+          "favorite_count": 454,
+          "reply_count": 33,
+          "quote_count": 10
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 12,
+        "reply_count": 3,
+        "quote_count": 2
       }
     }
   ]

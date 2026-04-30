@@ -1,12 +1,257 @@
 {
   "date": "20260430",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-04-30T05:10:22.656872",
-  "tweet_count": 202,
-  "unique_tweet_count": 202,
-  "total_crawled": 400,
-  "duplicates_removed": 198,
+  "last_crawl_time": "2026-04-30T06:54:49.985224",
+  "tweet_count": 206,
+  "unique_tweet_count": 206,
+  "total_crawled": 402,
+  "duplicates_removed": 196,
   "tweets": [
+    {
+      "id": "2049735038560842186",
+      "text": "Hermes Agent 加了一个新功能：Curator（策展人）。\n\nHermes Agent 有个“自我进化”机制，用着用着会自己创建各种技能文件来优化工作流。但技能攒多了就成了数字垃圾抽屉，重复的、过时的、太细碎的全堆在一起。Curator 干的就是定期收拾这个抽屉。\n\n它默认每周自动跑一次，做几件事：统计每个技能的使用频率和更新时间，把功能重叠的技能合并，把太久没用的清理掉，把过于具体的小技能降级成模板或脚本、塞进更通用的技能里。外部安装的技能、内置技能、以及你手动\"钉住\"的技能它不会碰，只动智能体自己生成的和用户手写的。\n\n不想让它自动跑也行，在 config.yaml 里关掉就好，或者用 hermes curator run 手动触发。\n\n也算是对于技能越来越多的一个痛点解决方案，至于效果如何，可以观察看看。",
+      "created_at": "Thu Apr 30 06:18:10 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2049717907664581067",
+        "text": "Introducing Hermes Curator!   \n\nThe new system built in to Hermes Agent now helps you keep your skills that the self improvement loop creates in check, by consolidating and pruning automatically.\n\nThe curator does multiple things:\n\n- keeps track of how often you use each skill, when it was last updated/created, etc\n\n- Once a week runs automatically (configurable)\n\n- Uses the analytics plus it's own scanning of your skills and consolidates or prunes them if necessary\n\n- Skips externally installed skills, built in skills, and skills you \"pin\" that you dont' want touched. It will only attempt curation over agent created/updated skills or user written skills.\n\n- It will then determine whether skills can be consolidated, pruned, or otherwise made more manageable. It will convert some skills that are too specific into references, templates or scripts for larger/broader skills, or integrate them directly into a consolidation of an existing skill.\n\nYou can also disable it entirely in the config.yaml and/or run it manually with `hermes curator run `\n\nLearn more on the docs here:\n\nhttps://t.co/6woLLRtDLP",
+        "created_at": "Thu Apr 30 05:10:05 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2049717583327477760",
+            "url": "https://pbs.twimg.com/media/HHIPSDwbQAA2PlY.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1365020011123773442",
+          "name": "Teknium 🪽",
+          "screen_name": "Teknium",
+          "description": "Cofounder and Lead Engineer - Hermes Agent @NousResearch, prev @StabilityAI\nGithub: https://t.co/LZwHTUFwPq\nHuggingFace: https://t.co/sN2FFU8PVE",
+          "followers_count": 78561,
+          "friends_count": 6028,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 39,
+          "favorite_count": 454,
+          "reply_count": 33,
+          "quote_count": 10
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 214982,
+        "friends_count": 1622,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 12,
+        "reply_count": 3,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2049728808178331780",
+      "text": "RT @Tesla: A thousand little conveniences add up to a seamless experience",
+      "created_at": "Thu Apr 30 05:53:24 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2049579474753409526",
+        "text": "A thousand little conveniences add up to a seamless experience",
+        "created_at": "Wed Apr 29 20:00:00 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2049214904683679892",
+          "text": "Close Windows on Lock is such a great feature, hard to believe Tesla is one of the only car companies that does this.\n@Tesla https://t.co/uQ3N2unZfc",
+          "created_at": "Tue Apr 28 19:51:20 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2049214667231571968",
+              "url": "https://video.twimg.com/amplify_video/2049214667231571968/vid/avc1/3840x2160/55FUfluJFGcxbsvq.mp4?tag=21",
+              "bitrate": 25128000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1780293318724943874",
+            "name": "Devin Olsen",
+            "screen_name": "DevinOlsenn",
+            "description": "Content Creator | Trying my best to be an unbiased Tesla Fan",
+            "followers_count": 11896,
+            "friends_count": 650,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 213,
+            "favorite_count": 4283,
+            "reply_count": 380,
+            "quote_count": 112
+          }
+        },
+        "user": {
+          "id": "13298072",
+          "name": "Tesla",
+          "screen_name": "Tesla",
+          "description": "Electric vehicles, giant batteries & solar, AI & robotics",
+          "followers_count": 24791078,
+          "friends_count": 56,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 568,
+          "favorite_count": 5645,
+          "reply_count": 390,
+          "quote_count": 35
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239686749,
+        "friends_count": 1319,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 568,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2049723344245948667",
+      "text": "RT @tesla_semi: First Semi off high volume line https://t.co/fI1AdQrJFH",
+      "created_at": "Thu Apr 30 05:31:41 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2049590835763871744",
+          "url": "https://pbs.twimg.com/media/HHGcAYSaAAALllB.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2049590842302857675",
+        "text": "First Semi off high volume line https://t.co/fI1AdQrJFH",
+        "created_at": "Wed Apr 29 20:45:11 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2049590835763871744",
+            "url": "https://pbs.twimg.com/media/HHGcAYSaAAALllB.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1867171663961362432",
+          "name": "Tesla Semi",
+          "screen_name": "tesla_semi",
+          "description": "BAMF – the future of electric trucking",
+          "followers_count": 48969,
+          "friends_count": 7,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1724,
+          "favorite_count": 14305,
+          "reply_count": 728,
+          "quote_count": 345
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239686749,
+        "friends_count": 1319,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1724,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2049722598758522963",
+      "text": "Sam Altman 刚宣布，OpenAI 将在未来几天向“关键网络安全防御者”推送 GPT-5.5-Cyber，一个专门为网络安全打造的前沿模型。他说 OpenAI 会和整个行业生态及政府合作，建立可信的访问机制，目标是尽快帮助保护企业和基础设施。",
+      "created_at": "Thu Apr 30 05:28:44 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2049712078836170843",
+        "text": "we're starting rollout of GPT-5.5-Cyber, a frontier cybersecurity model, to critical cyber defenders in the next few days.\n\nwe will work with the entire ecosystem and the government to figure out trusted access for cyber; we want to rapidly help secure companies/infrastructure.",
+        "created_at": "Thu Apr 30 04:46:56 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1605",
+          "name": "Sam Altman",
+          "screen_name": "sama",
+          "description": "AI is cool i guess",
+          "followers_count": 4733361,
+          "friends_count": 1010,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 334,
+          "favorite_count": 4558,
+          "reply_count": 605,
+          "quote_count": 130
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 214982,
+        "friends_count": 1622,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 24,
+        "reply_count": 6,
+        "quote_count": 1
+      }
+    },
     {
       "id": "2049698879197651087",
       "text": "OpenAI 发了一篇技术博客，认真调查了一个荒诞的问题：为什么他们的模型越来越爱说“哥布林”（goblin）和“小精灵”（gremlin）？\n\n事情最早在去年 11 月 GPT-5.1 上线后被注意到。用户反馈模型说话太过自来熟，内部一查，发现包含“goblin”的对话比之前暴涨了 175%，“gremlin”涨了 52%。当时觉得比例还小，没太当回事。\n\n几个月后 GPT-5.4 上线，哥布林彻底泛滥，用户和员工都受不了了。OpenAI 这才认真追查，最终锁定了罪魁祸首：ChatGPT 的性格定制功能。\n\nChatGPT 有八种可选性格，其中一种叫“Nerdy”（极客风）。训练这个性格时，奖励模型被设定为鼓励\"俏皮、有趣的表达\"，结果无意中给了包含奇幻生物比喻的回复更高的分数。模型很快学会了一个捷径：提到哥布林就能拿高分。\n\n问题在于，这个习惯没有老老实实待在极客性格里。数据显示，Nerdy 性格只占 ChatGPT 全部回复的 2.5%，却贡献了 66.7% 的“goblin”出现次数。从 GPT-5.2 到 GPT-5.4，Nerdy 性格下的哥布林出现率飙升了 3881%。更麻烦的是，即使在没有 Nerdy 性格提示词的对话中，哥布林也在同步增长。\n\nOpenAI 给出的解释是一个经典的反馈循环：强化学习先在极客性格里奖励了这种表达，然后模型生成的带哥布林的回复被收录进了下一轮训练数据，模型因此更加习惯输出哥布林，如此循环放大。除了哥布林，浣熊、巨魔、食人魔、鸽子也都被查出是同一机制产生的“tic词”（语言习惯性抽搐）。\n\n【注：tic 原本是医学术语，指不自主的重复动作或发声，OpenAI 在这里借用来形容模型养成的不受控语言习惯。】\n\n修复方面，OpenAI 在今年 3 月下架了 Nerdy 性格，移除了相关奖励信号，并过滤了训练数据中的生物词。但 GPT-5.5 的训练在找到根因之前就已经开始，所以新模型依然带着哥布林习性出厂。目前的临时方案是在 Codex（OpenAI 的编程工具）里通过系统提示词压制。博客里甚至贴了一段命令行代码，教你怎么把哥布林抑制指令去掉，\"让小精灵们自由奔跑\"。\n\n这篇博客表面上是讲一个好笑的 bug，底下其实揭示了一个 AI 训练的核心难题：你给模型的每一个微小的奖励信号，都可能在你不知道的地方被放大和泛化。一个只针对 2.5% 用户的性格训练，最终污染了整个模型的语言习惯。",

@@ -1,12 +1,153 @@
 {
   "date": "20260430",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-04-30T03:08:29.140668",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
+  "last_crawl_time": "2026-04-30T05:10:22.656872",
+  "tweet_count": 202,
+  "unique_tweet_count": 202,
   "total_crawled": 400,
-  "duplicates_removed": 200,
+  "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2049698879197651087",
+      "text": "OpenAI 发了一篇技术博客，认真调查了一个荒诞的问题：为什么他们的模型越来越爱说“哥布林”（goblin）和“小精灵”（gremlin）？\n\n事情最早在去年 11 月 GPT-5.1 上线后被注意到。用户反馈模型说话太过自来熟，内部一查，发现包含“goblin”的对话比之前暴涨了 175%，“gremlin”涨了 52%。当时觉得比例还小，没太当回事。\n\n几个月后 GPT-5.4 上线，哥布林彻底泛滥，用户和员工都受不了了。OpenAI 这才认真追查，最终锁定了罪魁祸首：ChatGPT 的性格定制功能。\n\nChatGPT 有八种可选性格，其中一种叫“Nerdy”（极客风）。训练这个性格时，奖励模型被设定为鼓励\"俏皮、有趣的表达\"，结果无意中给了包含奇幻生物比喻的回复更高的分数。模型很快学会了一个捷径：提到哥布林就能拿高分。\n\n问题在于，这个习惯没有老老实实待在极客性格里。数据显示，Nerdy 性格只占 ChatGPT 全部回复的 2.5%，却贡献了 66.7% 的“goblin”出现次数。从 GPT-5.2 到 GPT-5.4，Nerdy 性格下的哥布林出现率飙升了 3881%。更麻烦的是，即使在没有 Nerdy 性格提示词的对话中，哥布林也在同步增长。\n\nOpenAI 给出的解释是一个经典的反馈循环：强化学习先在极客性格里奖励了这种表达，然后模型生成的带哥布林的回复被收录进了下一轮训练数据，模型因此更加习惯输出哥布林，如此循环放大。除了哥布林，浣熊、巨魔、食人魔、鸽子也都被查出是同一机制产生的“tic词”（语言习惯性抽搐）。\n\n【注：tic 原本是医学术语，指不自主的重复动作或发声，OpenAI 在这里借用来形容模型养成的不受控语言习惯。】\n\n修复方面，OpenAI 在今年 3 月下架了 Nerdy 性格，移除了相关奖励信号，并过滤了训练数据中的生物词。但 GPT-5.5 的训练在找到根因之前就已经开始，所以新模型依然带着哥布林习性出厂。目前的临时方案是在 Codex（OpenAI 的编程工具）里通过系统提示词压制。博客里甚至贴了一段命令行代码，教你怎么把哥布林抑制指令去掉，\"让小精灵们自由奔跑\"。\n\n这篇博客表面上是讲一个好笑的 bug，底下其实揭示了一个 AI 训练的核心难题：你给模型的每一个微小的奖励信号，都可能在你不知道的地方被放大和泛化。一个只针对 2.5% 用户的性格训练，最终污染了整个模型的语言习惯。",
+      "created_at": "Thu Apr 30 03:54:29 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2049698835367108608",
+          "url": "https://pbs.twimg.com/media/HHH-OyKWoAA_H9I.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2049698854665109504",
+          "url": "https://pbs.twimg.com/media/HHH-P6DWwAAXWT_.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2049698874332160000",
+          "url": "https://pbs.twimg.com/media/HHH-RDUWIAAi3cR.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2049690533845663830",
+        "text": "We’re talking about Goblins. \nhttps://t.co/dqmcLGCW71",
+        "created_at": "Thu Apr 30 03:21:19 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 4794284,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 285,
+          "favorite_count": 2379,
+          "reply_count": 238,
+          "quote_count": 227
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 214945,
+        "friends_count": 1622,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 15,
+        "favorite_count": 103,
+        "reply_count": 10,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "2049691392364916875",
+      "text": "原推这个提示词风格很好看👍\n\n----\n\n一张极简风格插画，画面主体是【主体/物体】。使用干净纤细的线条描绘轮廓与结构，整体以黑白或低饱和色为主，只在局部加入少量鲜明色彩作为视觉重点。画面有大量留白，构图精致克制，现代杂志编辑插画风格，优雅、简洁、高级。不要复杂背景，不要写实摄影，不要厚重阴影，不要过多装饰。 \n\n---- \n\n主体/物体：一只安静坐着的猫",
+      "created_at": "Thu Apr 30 03:24:44 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2049691370642681856",
+          "url": "https://pbs.twimg.com/media/HHH3cR5XMAAKvZl.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2049400614195794230",
+        "text": "Minimal Line + Color Accent Illustrations\n\nPROMPT:\n“Minimal illustration of [SUBJECT/OBJECT], clean thin lines with selective vibrant color accents, lots of negative space, refined composition, modern editorial style, elegant and simple.” https://t.co/VciDancjw5",
+        "created_at": "Wed Apr 29 08:09:17 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2049400598752309248",
+            "url": "https://pbs.twimg.com/media/HHDu_IMasAAEqxW.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2049400598857224192",
+            "url": "https://pbs.twimg.com/media/HHDu_IlbkAAQme4.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2049400599058448384",
+            "url": "https://pbs.twimg.com/media/HHDu_JVaAAAED-4.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2049400599557611521",
+            "url": "https://pbs.twimg.com/media/HHDu_LMaoAEXFS6.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1703254623031525376",
+          "name": "Aleena Amir",
+          "screen_name": "aleenaamiir",
+          "description": "AI Visual Creator | Helping others create with AI. DM for collaborations.",
+          "followers_count": 18063,
+          "friends_count": 1176,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 32,
+          "favorite_count": 241,
+          "reply_count": 15,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 214945,
+        "friends_count": 1622,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 21,
+        "favorite_count": 140,
+        "reply_count": 13,
+        "quote_count": 4
+      }
+    },
     {
       "id": "2049624930887614648",
       "text": "OpenAI 上周发布 GPT-5.5 后，紧接着放出了一份官方提示词指南。这份指南传递的核心信息只有一个：别再写长提示词了。\n\nGPT-5.5 距离上一代 GPT-5.4 只隔了六周，API 定价每百万输入 Token 5 美元、输出 30 美元，上下文窗口 100 万 Token，目前已面向 Plus、Pro、Business 和 Enterprise 用户开放。模型本身的变化各家媒体已经报道过，这份提示词指南更值得关注的是它暗示的使用方式转变。\n\n【1】越短越好，告诉它“要什么”而不是“怎么做”\n\n过去用 AI 模型，很多人习惯写一长串步骤，手把手教模型该先查什么、再比什么、最后怎么输出。OpenAI 在指南里直接说：这套玩法过时了。GPT-5.5 的推理能力够强，你只需要描述清楚想要的结果、成功的标准和限制条件，剩下的让它自己规划路径。\n\n指南原话的意思是：以前的模型比较笨，需要你教它每一步怎么走，但对 GPT-5.5 来说，这些啰嗦的指令反而成了干扰，会缩小它的搜索空间，让输出变得死板。\n\n对开发者来说，这意味着需要重新审视手头积攒的提示词模板。以前管用的“保姆式”写法，现在可能适得其反。\n\n【2】给 AI 装上“性格”和“刹车”\n\n指南花了不少篇幅讲两件事：一是怎么给模型设定性格（语气、态度、合作方式），二是怎么让它知道什么时候该停。\n\n性格设定分两层。一层是“听起来像什么人”，比如热情还是干练、直接还是委婉。另一层是“怎么干活”，比如什么时候该主动提问、什么时候可以自己做主。OpenAI 建议两层都写短，几句话就够。\n\n停止条件可能更实用。指南建议给搜索行为设定“检索预算”，明确告诉模型：搜到什么程度就收手。比如第一次搜索如果已经能回答问题，就别再搜了。只有在核心问题没被回答、缺少关键事实、或用户要求穷尽所有情况时，才允许发起下一次搜索。\n\n这对做客服、做知识问答产品的团队很有参考价值。搜索次数直接关联 Token 消耗和成本，设好预算能省不少钱。\n\n【3】一个有意思的细节：开场白\n\nGPT-5.5 在开始输出文字之前，可能会在后台默默花时间推理和规划。用户盯着空白屏幕等待的体验很差。指南建议让模型在正式干活之前，先输出一两句话，告诉用户“收到了，我先做这个”。\n\n这不会让任务真的变快，但能让用户觉得响应快了。做过产品的人都知道，感知速度有时候比实际速度更重要。\n\n【4】创意写作要区分事实和发挥\n\n指南里有一段专门讲给 AI 写幻灯片、宣传文案、演讲稿时的注意事项：产品数据、客户信息、路线图这些必须用有出处的事实，不能让模型编造。如果手头没有数据，宁可用占位符标出来，也别让 AI 自由发挥出一个看起来很真但完全瞎编的数字。\n\n这条建议对应的是 AI 最大的实用风险之一：模型编故事的能力太强，强到你可能分不清哪些是真的。尤其是在做对外材料的时候，一个编造的客户案例或数据点，后果可能比不写还糟。\n\nOpenAI 推荐的提示词模板最终浓缩成六个模块：角色、性格、目标、成功标准、限制条件、停止规则。每个模块都强调“尽量简短，只在需要改变模型行为的地方加细节”。\n\n从 GPT-4 时代的“提示词工程”到现在 GPT-5.5 的“少说多做”，提示词的写法以前是人适应模型的局限，现在是模型开始适应人的模糊表达。对于还在用两年前的提示词模板的团队，可能要考虑重写你的提示词了。\n\n更详细的文档：https://t.co/Pjd56B7dkI",

@@ -1,0 +1,136 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 214945,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260430",
+  "last_updated": "2026-04-30T05:10:22.686085",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2049691392364916875",
+      "text": "原推这个提示词风格很好看👍\n\n----\n\n一张极简风格插画，画面主体是【主体/物体】。使用干净纤细的线条描绘轮廓与结构，整体以黑白或低饱和色为主，只在局部加入少量鲜明色彩作为视觉重点。画面有大量留白，构图精致克制，现代杂志编辑插画风格，优雅、简洁、高级。不要复杂背景，不要写实摄影，不要厚重阴影，不要过多装饰。 \n\n---- \n\n主体/物体：一只安静坐着的猫",
+      "created_at": "Thu Apr 30 03:24:44 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2049691370642681856",
+          "url": "https://pbs.twimg.com/media/HHH3cR5XMAAKvZl.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2049400614195794230",
+        "text": "Minimal Line + Color Accent Illustrations\n\nPROMPT:\n“Minimal illustration of [SUBJECT/OBJECT], clean thin lines with selective vibrant color accents, lots of negative space, refined composition, modern editorial style, elegant and simple.” https://t.co/VciDancjw5",
+        "created_at": "Wed Apr 29 08:09:17 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2049400598752309248",
+            "url": "https://pbs.twimg.com/media/HHDu_IMasAAEqxW.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2049400598857224192",
+            "url": "https://pbs.twimg.com/media/HHDu_IlbkAAQme4.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2049400599058448384",
+            "url": "https://pbs.twimg.com/media/HHDu_JVaAAAED-4.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2049400599557611521",
+            "url": "https://pbs.twimg.com/media/HHDu_LMaoAEXFS6.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1703254623031525376",
+          "name": "Aleena Amir",
+          "screen_name": "aleenaamiir",
+          "description": "AI Visual Creator | Helping others create with AI. DM for collaborations.",
+          "followers_count": 18063,
+          "friends_count": 1176,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 32,
+          "favorite_count": 241,
+          "reply_count": 15,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 21,
+        "favorite_count": 140,
+        "reply_count": 13,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "2049698879197651087",
+      "text": "OpenAI 发了一篇技术博客，认真调查了一个荒诞的问题：为什么他们的模型越来越爱说“哥布林”（goblin）和“小精灵”（gremlin）？\n\n事情最早在去年 11 月 GPT-5.1 上线后被注意到。用户反馈模型说话太过自来熟，内部一查，发现包含“goblin”的对话比之前暴涨了 175%，“gremlin”涨了 52%。当时觉得比例还小，没太当回事。\n\n几个月后 GPT-5.4 上线，哥布林彻底泛滥，用户和员工都受不了了。OpenAI 这才认真追查，最终锁定了罪魁祸首：ChatGPT 的性格定制功能。\n\nChatGPT 有八种可选性格，其中一种叫“Nerdy”（极客风）。训练这个性格时，奖励模型被设定为鼓励\"俏皮、有趣的表达\"，结果无意中给了包含奇幻生物比喻的回复更高的分数。模型很快学会了一个捷径：提到哥布林就能拿高分。\n\n问题在于，这个习惯没有老老实实待在极客性格里。数据显示，Nerdy 性格只占 ChatGPT 全部回复的 2.5%，却贡献了 66.7% 的“goblin”出现次数。从 GPT-5.2 到 GPT-5.4，Nerdy 性格下的哥布林出现率飙升了 3881%。更麻烦的是，即使在没有 Nerdy 性格提示词的对话中，哥布林也在同步增长。\n\nOpenAI 给出的解释是一个经典的反馈循环：强化学习先在极客性格里奖励了这种表达，然后模型生成的带哥布林的回复被收录进了下一轮训练数据，模型因此更加习惯输出哥布林，如此循环放大。除了哥布林，浣熊、巨魔、食人魔、鸽子也都被查出是同一机制产生的“tic词”（语言习惯性抽搐）。\n\n【注：tic 原本是医学术语，指不自主的重复动作或发声，OpenAI 在这里借用来形容模型养成的不受控语言习惯。】\n\n修复方面，OpenAI 在今年 3 月下架了 Nerdy 性格，移除了相关奖励信号，并过滤了训练数据中的生物词。但 GPT-5.5 的训练在找到根因之前就已经开始，所以新模型依然带着哥布林习性出厂。目前的临时方案是在 Codex（OpenAI 的编程工具）里通过系统提示词压制。博客里甚至贴了一段命令行代码，教你怎么把哥布林抑制指令去掉，\"让小精灵们自由奔跑\"。\n\n这篇博客表面上是讲一个好笑的 bug，底下其实揭示了一个 AI 训练的核心难题：你给模型的每一个微小的奖励信号，都可能在你不知道的地方被放大和泛化。一个只针对 2.5% 用户的性格训练，最终污染了整个模型的语言习惯。",
+      "created_at": "Thu Apr 30 03:54:29 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2049698835367108608",
+          "url": "https://pbs.twimg.com/media/HHH-OyKWoAA_H9I.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2049698854665109504",
+          "url": "https://pbs.twimg.com/media/HHH-P6DWwAAXWT_.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2049698874332160000",
+          "url": "https://pbs.twimg.com/media/HHH-RDUWIAAi3cR.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2049690533845663830",
+        "text": "We’re talking about Goblins. \nhttps://t.co/dqmcLGCW71",
+        "created_at": "Thu Apr 30 03:21:19 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 4794284,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 285,
+          "favorite_count": 2379,
+          "reply_count": 238,
+          "quote_count": 227
+        }
+      },
+      "stats": {
+        "retweet_count": 15,
+        "favorite_count": 103,
+        "reply_count": 10,
+        "quote_count": 4
+      }
+    }
+  ]
+}

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 215184,
+    "followers_count": 215206,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260430",
-  "last_updated": "2026-04-30T16:34:17.665824",
-  "tweet_count": 5,
+  "last_updated": "2026-04-30T18:32:05.558083",
+  "tweet_count": 6,
   "tweets": [
     {
       "id": "2049691392364916875",
@@ -263,6 +263,56 @@
         "retweet_count": 0,
         "favorite_count": 2,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2049892890323697859",
+      "text": "试用下来 CodexPotter 不错，推荐下。它不是基于 Codex 插件机制，它本身是一个 cli，然后会后台启动 codex cli，把指令传给 codex，同步显示 codex cli 结果。\n\nCodexPotter 先把想要的结果写进一个 MAIN.md 文件，然后工具在后台不停地启动新的 Codex 会话，每一轮都用全新、干净的上下文，对照 MAIN.md 检查代码、修正、再检查、再修正，直到结果跟你写的一致才停。\n\n默认最多是 6 轮，但是你可以通过配置修改数字。\n\n使用上需要注意，CodexPotter 适合目标明确的任务，比如“按照这个设计文档实现订阅系统”，不适合需要来回讨论的交互式开发。它是个任务执行器，不是聊天伙伴。\n\n顺便说一下：Ralph 这个名字的来源是《辛普森一家》那个爱重复同一句话的小孩 Ralph Wiggum pattern。\n\nhttps://t.co/RTRXbStF67",
+      "created_at": "Thu Apr 30 16:45:24 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2049890498471473152",
+          "url": "https://pbs.twimg.com/media/HHKsjC3XMAALdwD.png"
+        },
+        {
+          "type": "photo",
+          "id": "2049890566268207104",
+          "url": "https://pbs.twimg.com/media/HHKsm_bXQAAJRrj.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2044829447732261063",
+        "text": "请问有没有好用的 Ralph Loop for Codex？\n类似于 Claude Code 的 Ralph Wiggum Plugin https://t.co/hBJFsEv8il\n\n用过 oh my codex，给我装了一坨 MCP，魔改了我的 codex Custom instructions，我个人很不喜欢这种。",
+        "created_at": "Thu Apr 16 17:25:06 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 215206,
+          "friends_count": 1622,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 9,
+          "favorite_count": 80,
+          "reply_count": 15,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 40,
+        "reply_count": 8,
         "quote_count": 0
       }
     }

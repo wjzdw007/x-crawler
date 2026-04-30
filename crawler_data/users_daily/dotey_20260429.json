@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 214827,
+    "followers_count": 214857,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260429",
-  "last_updated": "2026-04-29T22:21:58.517740",
-  "tweet_count": 10,
+  "last_updated": "2026-04-30T00:36:15.286984",
+  "tweet_count": 12,
   "tweets": [
     {
       "id": "2049279099454292283",
@@ -402,6 +402,66 @@
         "favorite_count": 1,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2049617833370202182",
+      "text": "https://t.co/8lkJ3qv29q",
+      "created_at": "Wed Apr 29 22:32:26 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 27,
+        "favorite_count": 139,
+        "reply_count": 1,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2049624930887614648",
+      "text": "OpenAI 上周发布 GPT-5.5 后，紧接着放出了一份官方提示词指南。这份指南传递的核心信息只有一个：别再写长提示词了。\n\nGPT-5.5 距离上一代 GPT-5.4 只隔了六周，API 定价每百万输入 Token 5 美元、输出 30 美元，上下文窗口 100 万 Token，目前已面向 Plus、Pro、Business 和 Enterprise 用户开放。模型本身的变化各家媒体已经报道过，这份提示词指南更值得关注的是它暗示的使用方式转变。\n\n【1】越短越好，告诉它“要什么”而不是“怎么做”\n\n过去用 AI 模型，很多人习惯写一长串步骤，手把手教模型该先查什么、再比什么、最后怎么输出。OpenAI 在指南里直接说：这套玩法过时了。GPT-5.5 的推理能力够强，你只需要描述清楚想要的结果、成功的标准和限制条件，剩下的让它自己规划路径。\n\n指南原话的意思是：以前的模型比较笨，需要你教它每一步怎么走，但对 GPT-5.5 来说，这些啰嗦的指令反而成了干扰，会缩小它的搜索空间，让输出变得死板。\n\n对开发者来说，这意味着需要重新审视手头积攒的提示词模板。以前管用的“保姆式”写法，现在可能适得其反。\n\n【2】给 AI 装上“性格”和“刹车”\n\n指南花了不少篇幅讲两件事：一是怎么给模型设定性格（语气、态度、合作方式），二是怎么让它知道什么时候该停。\n\n性格设定分两层。一层是“听起来像什么人”，比如热情还是干练、直接还是委婉。另一层是“怎么干活”，比如什么时候该主动提问、什么时候可以自己做主。OpenAI 建议两层都写短，几句话就够。\n\n停止条件可能更实用。指南建议给搜索行为设定“检索预算”，明确告诉模型：搜到什么程度就收手。比如第一次搜索如果已经能回答问题，就别再搜了。只有在核心问题没被回答、缺少关键事实、或用户要求穷尽所有情况时，才允许发起下一次搜索。\n\n这对做客服、做知识问答产品的团队很有参考价值。搜索次数直接关联 Token 消耗和成本，设好预算能省不少钱。\n\n【3】一个有意思的细节：开场白\n\nGPT-5.5 在开始输出文字之前，可能会在后台默默花时间推理和规划。用户盯着空白屏幕等待的体验很差。指南建议让模型在正式干活之前，先输出一两句话，告诉用户“收到了，我先做这个”。\n\n这不会让任务真的变快，但能让用户觉得响应快了。做过产品的人都知道，感知速度有时候比实际速度更重要。\n\n【4】创意写作要区分事实和发挥\n\n指南里有一段专门讲给 AI 写幻灯片、宣传文案、演讲稿时的注意事项：产品数据、客户信息、路线图这些必须用有出处的事实，不能让模型编造。如果手头没有数据，宁可用占位符标出来，也别让 AI 自由发挥出一个看起来很真但完全瞎编的数字。\n\n这条建议对应的是 AI 最大的实用风险之一：模型编故事的能力太强，强到你可能分不清哪些是真的。尤其是在做对外材料的时候，一个编造的客户案例或数据点，后果可能比不写还糟。\n\nOpenAI 推荐的提示词模板最终浓缩成六个模块：角色、性格、目标、成功标准、限制条件、停止规则。每个模块都强调“尽量简短，只在需要改变模型行为的地方加细节”。\n\n从 GPT-4 时代的“提示词工程”到现在 GPT-5.5 的“少说多做”，提示词的写法以前是人适应模型的局限，现在是模型开始适应人的模糊表达。对于还在用两年前的提示词模板的团队，可能要考虑重写你的提示词了。\n\n更详细的文档：https://t.co/Pjd56B7dkI",
+      "created_at": "Wed Apr 29 23:00:38 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2049624866073018368",
+          "url": "https://pbs.twimg.com/media/HHG69NEXAAAOVAf.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2049523746910908886",
+        "text": "https://t.co/pmkDoTe9Ug\n\n**NEW: GPT-5.5 Prompting Guide**\n\n\"GPT-5.5 works best when prompts define the outcome and leave room for the model to choose an efficient solution path. Compared with earlier models, you can often use shorter, more outcome-oriented prompts: describe what good looks like, what constraints matter, what evidence is available, and what the final answer should contain.\n\nAvoid carrying over every instruction from an older prompt stack. Legacy prompts often over-specify the process because earlier models needed more help staying on track. With GPT-5.5, that can add noise, narrow the model’s search space, or lead to overly mechanical answers.\n\nFor more detail on GPT-5.5 behavior changes, start with the Using GPT-5.5 guide. This guide focuses on prompt changes that follow from those behavior changes.\n\nThe patterns here are starting points. Adapt them to your product surface, tools, evals, and user experience goals.\"",
+        "created_at": "Wed Apr 29 16:18:34 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "275826054",
+          "name": "Adam.GPT",
+          "screen_name": "TheRealAdamG",
+          "description": "Forward Deployed GTM at @OpenAI. Senior token slinger. A fan of NY sports, memes, tech & nice people. NJ. My opinions are my own.",
+          "followers_count": 34713,
+          "friends_count": 4546,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 157,
+          "favorite_count": 1683,
+          "reply_count": 31,
+          "quote_count": 13
+        }
+      },
+      "stats": {
+        "retweet_count": 25,
+        "favorite_count": 173,
+        "reply_count": 4,
+        "quote_count": 3
       }
     }
   ]

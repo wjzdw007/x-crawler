@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 215483,
+    "followers_count": 215486,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260502",
-  "last_updated": "2026-05-02T05:05:22.841284",
-  "tweet_count": 3,
+  "last_updated": "2026-05-02T06:41:43.077456",
+  "tweet_count": 4,
   "tweets": [
     {
       "id": "2050367418648727764",
@@ -176,6 +176,45 @@
         "retweet_count": 5,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2050462792956698938",
+      "text": "为了省 $25，不值得…",
+      "created_at": "Sat May 02 06:30:00 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2050098091789828376",
+        "text": "这个也太屌了！\n\n这个中国开发者在飞机上用 MacBook 本地跑 Llama 70B，整整 11 小时没有网络，处理了完整的客户项目。\n\n他坐在跨大西洋航班的靠窗位置，设备是 MacBook Pro M4，64GB 内存。机上 WiFi 要价 25 美元，他拒绝了。\n没有云端 API，没有连接 Anthropic 或 OpenAI 的服务器，完全没有互联网。\n只有一台本地运行的 Llama 3.3 70B（bf16）和他自己写的编排脚本。\n模型通过 llama.cpp 运行。生成速度 71 tokens/秒，上下文约 60,000 tokens，内存占用 48.6 GiB / 64 GiB，起飞时电池剩余 3 小时 21 分钟。\n\n起飞前他给编排器写了这样的系统提示：\n\"你是一个运行在单台 MacBook 上的离线编排器。没有网络。你唯一的资源是 /Users/dev/work 下的本地文件、localhost:8080 的 Llama 70B 推理服务，以及 3 小时 21 分钟的电池预算。处理 /Users/dev/work/queue.jsonl 中的任务队列（每行一个客户任务）。对每个任务：起草 → 运行本地评估 → 保存产物到 /Users/dev/work/done/。每 12 个任务保存一次上下文检查点，以便更换电池后恢复。仅在队列为空或电池低于 5% 时停止。\"\n所以这个系统完全清楚自己运行在什么资源上。\n它知道自己未来 11 小时没有外部连接。它知道自己的内存和电池都是有限的。它知道在飞机降落之前不会有人类介入。\n系统跑在一个循环里。从队列取任务，推理，保存产物，写检查点。一个接一个。\n当电池低于 5% 时，编排器自动暂停，等待笔记本切换到备用充电宝，然后从最后一个检查点恢复。\n这是系统在飞行中的日志：\n\"saved context checkpoint 8 of 12 (pos_min = 488, pos_max = 50118, size = 62.813 MiB)\"\n\"restored context checkpoint (pos_min = 488, pos_max = 50118)\"\n\"prompt processing progress: n_tokens = 50 / 60818\"\n\"task 37016 done | tps = 71 s tokens text → /Users/dev/work/done/proposal_westside.md\"\n窗外是云层、蓝天，没有 WiFi。托盘上是一台 MacBook，一个打开的终端，两个屏幕，一个 localhost 推理服务。\n\n这是过去一年里我见过的最漂亮的离线 AI 工作流：\n11 小时飞行，WiFi 费用 0 美元，所有客户队列在降落前全部清空。\n\n这个故事的核心不是技术多牛（llama.cpp 跑 70B 现在很常规），而是一个完整的离线自主工作流，编排器理解自己的资源约束，自动管理电池和检查点，没人干预干了 11 小时。\n\n这种\"self-aware computing\"的感觉确实挺酷的！\n\nhttps://t.co/RH9Q7ypzre",
+        "created_at": "Fri May 01 06:20:48 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1998968758422179840",
+          "name": "huangserva",
+          "screen_name": "servasyy_ai",
+          "description": "古早程序员 | AI出海 | 自由职业\n机车游侠&机速购&骑享租创始人\n15年前 freelance 起步 → 连续创业者 → 亏过1个亿，逆风翻盘中\n分享创业，AI，读书，生活，健身",
+          "followers_count": 28531,
+          "friends_count": 587,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 219,
+          "favorite_count": 1366,
+          "reply_count": 97,
+          "quote_count": 28
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 9,
+        "reply_count": 3,
         "quote_count": 0
       }
     }

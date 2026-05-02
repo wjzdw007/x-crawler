@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-05-02T01:39:19.120657",
+  "tweet_count": 8,
+  "summary": "**新工具/技术**\n- Codex CLI 的 /goal（Ralph loop）：OpenAI 在 Codex CLI 0.128.0 中加入了 /goal，用于保持“目标”在多轮会话中持续执行直到达成。  \n- Codex 的 /side（侧聊）：在 Codex App 中新增的侧链对话功能，可在当前线程中临时打开副问题，会话上下文共享，功能上类似 Claude Code 的 /btw。  \n- 启用方式简化命令：除了编辑配置文件，也可以用命令行 codex features enable goals 来开启该功能，降低上手门槛。  \n- DeepSeek-TUI（开源终端工具）：社区驱动的终端搜索/agent 工具，作者在寻求国内社区传播与协作，强调“开源无国界”。  \n- GPT Image 2 的病毒式提示词：流行的“把图重画成最糟糕的 MS Paint 风格”提示，展示了通过极端风格指令操控生成结果的可能性。  \n- Apple Support 更新泄露 Claude.md：Apple 在 App 更新中意外包含了 Claude.md 文件，提示发布流程中可能有敏感或未公开文档泄露风险。\n\n**核心观点/方法论**\n- 官方功能优先替代黑客式解决方案：当厂商把功能（如 goals）内建到 CLI，开发者就不用自己写脚本、用 git 做外部记忆或绕过审批，稳定性和安全性都更好。  \n- 命令与命名影响认知与迁移成本：/side 与已存在的 /btw 功能相似，但改名会影响用户理解与迁移习惯，产品一致性重要。  \n- 创意提示词能驱动社区玩法与测试边界：极端或幽默的提示词不仅能产出有趣结果，也能帮助发现模型在风格控制和鲁棒性上的表现。  \n- 开源协作有助于跨区域传播与落地：社区工具通过开源能更快被不同生态采用，但也依赖传播渠道（如微信）和本地化支持。\n\n**实践经验/案例**\n- 快速开启示例：在 ~/.codex/config.toml 的 [features] 段写上 goals = true 即可开启，或者执行 codex features enable goals 更方便。  \n- 功能可用性说明：/goal 目前只在终端 CLI 可用，桌面 App 尚未跟上，选择工具时要考虑平台限制。  \n- 工作流影响：/goal 能保持跨轮目标状态，减少手工运维和不安全的绕过参数（如 --dangerously-bypass...），适合需要长期跟进的自动化任务。  \n- 发布与合规提示：Apple 泄露文件的案例提醒开发者在打包/发布时检查是否包含不应公开的文档或配置文件。",
+  "metadata": {
+    "original_tweets": 8,
+    "retweets": 0,
+    "media_tweets": 0,
+    "data_hash": "657bc591",
+    "user": "dotey"
+  }
+}

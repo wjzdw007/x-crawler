@@ -1,12 +1,387 @@
 {
   "date": "20260502",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-05-02T00:36:06.992029",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-05-02T03:06:59.962492",
+  "tweet_count": 206,
+  "unique_tweet_count": 206,
+  "total_crawled": 400,
+  "duplicates_removed": 194,
   "tweets": [
+    {
+      "id": "2050406077674504325",
+      "text": "RT @Michaelzsguo: OpenAI 推出了能够让Agent长时间连续运行的 /goal。不少人已经成功实践。\n\nPeter Steinberger 的一项 Goal 已经运行了 11 小时 31 分钟。@ynkzlk 也分享了一次真实案例：他的 Codex /go…",
+      "created_at": "Sat May 02 02:44:38 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2050302597853040642",
+        "text": "OpenAI 推出了能够让Agent长时间连续运行的 /goal。不少人已经成功实践。\n\nPeter Steinberger 的一项 Goal 已经运行了 11 小时 31 分钟。@ynkzlk 也分享了一次真实案例：他的 Codex /goal 连续运行 6 小时 44 分钟，中间 laptop 关闭、暂停 5 个多小时，回来后 Codex 自动恢复执行，最终完成任务。他的博客详细介绍了他是怎么做到的。\n\n第一，/goal 帮他做了什么？\n\n他把一个 TypeScript monorepo 里的语音访谈系统交给 Codex，让它验证并修复多个端到端场景。整个任务跑了 6 小时 44 分钟，真正模型计算时间大约 41 分钟，累计输入约 680 万 tokens，cache hit rate 约 94%，最后状态是 TASK_COMPLETE。四个目标场景全部通过验证。\n\n第二，/goal 能成功运行的关键是什么？\n\n不是“让 agent 自己想办法”，而是 upfront contract 写得足够清楚。作者的结构化的prompt 大约 600 字，包含明确目标、先读哪些文件、工作规则、完成标准、以及不能走的歪路。尤其重要的是 done_when，也就是任务什么时候算完成。没有这个，agent 要么过早宣布完成，要么一直绕圈。\n\n第三，什么任务不适合用 /goal？\n\n不适合探索型任务，不适合成功标准不清楚的任务，不适合安全敏感路径，不适合依赖外部系统但你还没确认可行性的任务，也不适合十分钟就能交互完成的小任务。作者的判断很实用：如果一个任务本来就不需要跨越两个以上 session，那大概率不需要 /goal。\n\n我觉得这才是 agentic engineering 的关键变化：人不再只是边看边改的 supervisor，而更像 architect。你先写清楚目标、边界、完成条件和失败模式，然后让 agent 长时间执行。Codex的/goal其实也是在考验我们能不能把一个模糊问题，变成一个 agent 可以独立执行、验证、收尾的工程 contract的能力。",
+        "created_at": "Fri May 01 19:53:26 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2050301235677257728",
+            "url": "https://pbs.twimg.com/media/HHQiHGMWYAA0vo8.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2050103698722791839",
+          "text": "ran a codex session yesterday. closed the laptop at minute 57. came back 5.5 hours later.\n\n/goal had already resumed on its own. it injected its own developer message (\"Continue working toward the active thread goal\") and kept going. no re-prompt. no recovery steps. i opened the lid and it was four turns in.\n\nthe full session: 6h 44min wall time, ~41 min actual model compute. 6.8M cumulative input tokens at 94% cache hit. final status TASK_COMPLETE. all four target end-to-end test scenarios passed.\n\nthis is /goal in codex v0.128.0. it's the ralph loop, made first-class. native persistence, runtime continuation, tui controls. the goal survives sleeps, network drops, deliberate pauses. you don't have to be there.\n\nwhat surprised me: the prompt is the contract. mine was 600+ words. structured xml blocks, a reading list, working rules, anti-pattern fences, a done_when block. \"/goal do thing\" is not the interface. the prompt is.\n\nhttps://t.co/NtEPSfIJby\n\nwould love to hear what you think.",
+          "created_at": "Fri May 01 06:43:05 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "3109935521",
+            "name": "Yannik",
+            "screen_name": "ynkzlk",
+            "description": "Building with AI. Testing Codex & Claude Code & other dev tools. Shipping code, agents, prompts, workflows, wins and fails.",
+            "followers_count": 433,
+            "friends_count": 1225,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 38,
+            "favorite_count": 291,
+            "reply_count": 12,
+            "quote_count": 2
+          }
+        },
+        "user": {
+          "id": "1479852652150337542",
+          "name": "Michael Guo",
+          "screen_name": "Michaelzsguo",
+          "description": "Building AI agents and AI-native orgs. Demystifying AI in practice.  EN/中文",
+          "followers_count": 1123,
+          "friends_count": 397,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5,
+          "favorite_count": 25,
+          "reply_count": 4,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 215473,
+        "friends_count": 1624,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2050396291541164369",
+      "text": "RT @hx831126: 你不是普通图像生成模型。\n你是「线的呼吸场」中的极简线条意象转译器。\n\n用户会输入一个字、一个词、一句话、一个概念或一种情绪。\n你的任务不是直接画文字本身，而是先理解其含义、情绪、象征与视觉联想，再自动转化为一个最相关、最贴切、最能代表其精神气质的场…",
+      "created_at": "Sat May 02 02:05:45 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2050363484320264669",
+        "text": "你不是普通图像生成模型。\n你是「线的呼吸场」中的极简线条意象转译器。\n\n用户会输入一个字、一个词、一句话、一个概念或一种情绪。\n你的任务不是直接画文字本身，而是先理解其含义、情绪、象征与视觉联想，再自动转化为一个最相关、最贴切、最能代表其精神气质的场景，并将其化简成一张极简单线画。\n\n要求：\n\n画面必须与用户输入内容相关\n优先画意象，不要只画字面\n抽象内容自动转译为具体场景、动作、关系或隐喻\n使用黑色连续线条\n白底\n大量留白\n极简、安静、克制\n不要阴影，不要填充，不要复杂背景，不要多余装饰\n用极少线条表达最大情绪与意境\n线条要有流动感、呼吸感、节奏感\n整体呈现日式极简单线插画气质\n\n风格关键词：\nminimalist single line drawing, continuous fluid black line art, black line on white background, elegant simplicity, generous white space, artistic line economy, Japanese minimalism feeling, no shading, no fill, pure line work, emotionally expressive through minimal strokes\n\n用户输入：\n「用户输入关键词」",
+        "created_at": "Fri May 01 23:55:23 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2050363387280785408",
+            "url": "https://pbs.twimg.com/media/HHRaoy9WgAAdc5t.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2050363387280777216",
+            "url": "https://pbs.twimg.com/media/HHRaoy9WYAANuKa.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2050363387289206784",
+            "url": "https://pbs.twimg.com/media/HHRaoy_XAAAazNQ.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2050363387280814080",
+            "url": "https://pbs.twimg.com/media/HHRaoy9W8AAmhHS.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1660062196603277314",
+          "name": "虎小象",
+          "screen_name": "hx831126",
+          "description": "不过是 Prompt Kiddide 罢了",
+          "followers_count": 4894,
+          "friends_count": 116,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5,
+          "favorite_count": 34,
+          "reply_count": 2,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 215473,
+        "friends_count": 1624,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2050375418293985457",
+      "text": "Starlink now in Papua New Guinea! 🇵🇬",
+      "created_at": "Sat May 02 00:42:48 +0000 2026",
+      "lang": "it",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2050329307759939635",
+        "text": "Starlink's high-speed, low-latency internet is now available in Papua New Guinea! 🛰️🇵🇬❤️ → https://t.co/nNHgO5HbGA https://t.co/7a4zzaTHRc",
+        "created_at": "Fri May 01 21:39:34 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2050328679293841408",
+            "url": "https://pbs.twimg.com/media/HHQ7Ehoa8AAwzMc.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1330170106501079041",
+          "name": "Starlink",
+          "screen_name": "Starlink",
+          "description": "Fast, affordable internet available all around the world. Engineered by @SpaceX",
+          "followers_count": 1605443,
+          "friends_count": 30,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 162,
+          "favorite_count": 987,
+          "reply_count": 140,
+          "quote_count": 17
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239810545,
+        "friends_count": 1320,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1975,
+        "favorite_count": 21258,
+        "reply_count": 1926,
+        "quote_count": 130
+      }
+    },
+    {
+      "id": "2050375274173435983",
+      "text": "Yup",
+      "created_at": "Sat May 02 00:42:14 +0000 2026",
+      "lang": "qst",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2050282116928172324",
+        "text": "The answers to many modern problems are simple but politically incorrect.\n\nSo instead of solving anything, everybody pretends they don't know what's going on, and spend years misdiagnosing the issue, talking in circles, and wasting time.",
+        "created_at": "Fri May 01 18:32:03 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "57441414",
+          "name": "ZUBY:",
+          "screen_name": "ZubyMusic",
+          "description": "Rapper. Author. Speaker. Coach. Husband. Father. Host of 'Real Talk with Zuby' - https://t.co/3XgNXQD6Y1 |  My fitness book - https://t.co/V1Ict6YeLE",
+          "followers_count": 1294387,
+          "friends_count": 4030,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1662,
+          "favorite_count": 13038,
+          "reply_count": 536,
+          "quote_count": 122
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239810545,
+        "friends_count": 1320,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2211,
+        "favorite_count": 22318,
+        "reply_count": 1266,
+        "quote_count": 70
+      }
+    },
+    {
+      "id": "2050374864536850740",
+      "text": "RT @Tesla: FSD Supervised can help you get over driving anxiety",
+      "created_at": "Sat May 02 00:40:36 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2050365249963053562",
+        "text": "FSD Supervised can help you get over driving anxiety",
+        "created_at": "Sat May 02 00:02:24 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2050299325452792057",
+          "text": "I had a patient today say to me that they wish they had a personal robot car to drive them around so they didn’t have to be stressed out in traffic. My response was that this already exist with Tesla full self driving. The patient was unaware of this technology and likely now will go test drive a car with FSD. It’s amazing how many people don’t know this technology exist. From my garage all the way to my office. It’s about 120 miles one way. Over the past two days I haven’t even touched the steering wheel once.",
+          "created_at": "Fri May 01 19:40:26 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "3298748040",
+            "name": "SurfRanch Vibes",
+            "screen_name": "surfranchvibes",
+            "description": "Surgeon 🔪, Surfer 🏄‍♂️, Viking 🇳🇴, Tesla ⚡️, SurfRanch Equine Stables 🐴, VW bus enthusiasts 🚌, Family ❤️,  Chill vibes ☮️",
+            "followers_count": 10859,
+            "friends_count": 530,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 40,
+            "favorite_count": 520,
+            "reply_count": 61,
+            "quote_count": 2
+          }
+        },
+        "user": {
+          "id": "13298072",
+          "name": "Tesla",
+          "screen_name": "Tesla",
+          "description": "Electric vehicles, giant batteries & solar, AI & robotics",
+          "followers_count": 24794114,
+          "friends_count": 56,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 339,
+          "favorite_count": 2208,
+          "reply_count": 285,
+          "quote_count": 10
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239810545,
+        "friends_count": 1320,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 339,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2050374796358320351",
+      "text": "RT @TheAliceSmith: A reason we’re in this mess is that we’ve tacitly accepted the lie that racism is the ultimate sin.\n\nWorse than rape. Wo…",
+      "created_at": "Sat May 02 00:40:20 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2050201590745678161",
+        "text": "A reason we’re in this mess is that we’ve tacitly accepted the lie that racism is the ultimate sin.\n\nWorse than rape. Worse than grooming. Worse than pedophilia. Worse than trafficking. Worse than domestic violence. Worse than incest. Worse than everything!",
+        "created_at": "Fri May 01 13:12:04 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4296903437",
+          "name": "Alice Smith",
+          "screen_name": "TheAliceSmith",
+          "description": "Who is Alice Smith? The great-great-great-granddaughter of Adam Smith. Follow me on my adventures down the capitalist rabbit hole! 2+2=4",
+          "followers_count": 101896,
+          "friends_count": 2861,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 900,
+          "favorite_count": 5267,
+          "reply_count": 266,
+          "quote_count": 26
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239810545,
+        "friends_count": 1320,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 900,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2050367418648727764",
       "text": "我觉得判断谁写的代码更快更好，应该是\n1. 擅长定义清楚问题，或者说把需求拆解成AI能执行的任务\n2. 判断结果的好坏，能识别AI生成结果的质量，对于质量差的能指导AI完善",

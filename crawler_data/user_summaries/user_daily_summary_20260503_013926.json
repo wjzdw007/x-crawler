@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-05-03T01:39:26.813481",
+  "tweet_count": 7,
+  "summary": "**新工具/技术**（如有）\n- Codex /goal — 支持长时间、可恢复运行的 agent 接口，prompt 被当作“contract”，内建持久化与恢复能力，适合跨 session 的自动化任务。  \n- Llama 3.3 70B（通过 llama.cpp 在本地 M4 MacBook 运行）— 离线大模型推理示例，约 71 tokens/s、60k 上下文，展示单机处理大任务的可行性。  \n- Chronicle（配合 Codex）— 记录用户电脑操作轨迹的系统级工具，能把行为数据交给模型做效率分析与建议。  \n- Open Design pets（Codex 同款 pets）开源套件 — 超过 100+ 可复用“宠物”角色与动作，方便构建带行为状态的交互代理或演示组件。\n\n**核心观点/方法论**（如有）\n- Prompt = contract，明确的结构化 prompt（包含目标、规则、done_when）是让 agent 长期独立执行并正确结束的关键。  \n- 人的角色从实时监督转向 architect：先把模糊问题拆成 agent 能独立执行并验证的工程合同。  \n- 注释/Docstring 的价值上升：在 AI 辅助编程场景下，清晰的注释比纯算法能力更能决定产出质量和速度。  \n- 能力不在于“让 AI 自己想办法”，而在于制定边界、完成标准与反模式限制，减少 agent 偏离或死循环。  \n- 自感知编排很重要：让系统理解电池、内存、离线等资源约束，才能实现稳健的长期自动执行与检查点恢复。\n\n**实践经验/案例**（如有）\n- Codex /goal 实战：多人报告 /goal 连续运行 6–11 小时并完成端到端场景，成功的共同点是 600+ 字的结构化 prompt 与明确的 done_when。  \n- 机上离线 Llama 70B：开发者在跨大西洋航班上用本地 70B 处理客户队列 11 小时，靠检查点与电池阈值管理实现无人值守工作流。  \n- Chronicle + Codex：把操作轨迹交给 Codex 可以得到直接、可执行的效率改进建议，适合想要“被动诊断”工作习惯的人。  \n- 图像生成 Prompt 实例：将“概念/情绪”先语义化再转译为极简连续线条的约束集（黑线白底、大量留白等），能显著提高输出风格一致性。  \n- Open Design pets 开源效果：提供现成的行为/状态库与动画，可加速构建互动化示例或教学 demo。",
+  "metadata": {
+    "original_tweets": 3,
+    "retweets": 4,
+    "media_tweets": 0,
+    "data_hash": "f26b8d5c",
+    "user": "dotey"
+  }
+}

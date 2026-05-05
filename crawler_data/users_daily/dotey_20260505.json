@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 215889,
+    "followers_count": 215898,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260505",
-  "last_updated": "2026-05-05T16:39:27.977831",
-  "tweet_count": 4,
+  "last_updated": "2026-05-05T18:33:16.769714",
+  "tweet_count": 8,
   "tweets": [
     {
       "id": "2051492968062767529",
@@ -223,6 +223,189 @@
         "retweet_count": 5,
         "favorite_count": 35,
         "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051704609299701821",
+      "text": "open-slide 这个开源的 Slides 项目不错，可以通过 Agent + Skills 制作 Slides，然后还有一个 Web 程序可以编辑生成好的 Slides。\n\n并且可以支持动画，以及网页直接播放 slides。\n\n期待完善：\n- 更好的编辑\n- 导出 pptx\n\nhttps://t.co/rhZSr6H7Lf",
+      "created_at": "Tue May 05 16:44:32 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2050602481953181968",
+        "text": "Introducing open-slide - The slide framework built for agents.\n\nPrompt your agent, get a polished deck.\n\n$ npx @⁠open-slide/cli init\n\n👇 https://t.co/bR3WuQtAjl",
+        "created_at": "Sat May 02 15:45:04 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2050596816228614144",
+            "url": "https://video.twimg.com/amplify_video/2050596816228614144/vid/avc1/3840x2160/MSwBtDwXNHul6Xgb.mp4?tag=27",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1520036630656352256",
+          "name": "Yiwei Ho",
+          "screen_name": "1weiho",
+          "description": "Finding calm in the details. ambassador @raycast",
+          "followers_count": 1205,
+          "friends_count": 648,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 211,
+          "favorite_count": 2772,
+          "reply_count": 69,
+          "quote_count": 25
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 20,
+        "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051717367164518467",
+      "text": "Google 为自家开源模型 Gemma 4 发布了 MTP drafter（多 token 预测草稿模型），推理速度最高提升 3 倍，输出质量保持不变。https://t.co/2skub5Q1HM \n\nGemma 4 是 Google 几周前发布的开源模型系列，从手机端的 E2B、E4B 一直到工作站的 26B MoE 和 31B Dense，官方称上线几周下载量已经突破 6000 万。MTP drafter 用的是 speculative decoding（推测解码）：让一个轻量级的小模型先“猜”出接下来好几个 token，再让大模型一次性并行验证，验证通过的部分一口气全部输出。\n\n这套机制对本地跑模型的场景特别有用。LLM 推理之所以慢，瓶颈往往不在算力，而在内存带宽，处理器大部分时间都在把几十亿参数从显存搬到计算单元，只为了挤出下一个 token。推测解码把闲置算力利用起来，让小模型一次预测多个 token，大模型只做验证，等于把流水线拉满。\n\n实际效果上，在 Apple Silicon 跑 26B MoE 模型，批量大小开到 4 到 8 时本地能拿到约 2.2 倍提速。因为最终验证仍由大模型完成，输出和原版逐字一致，没有质量取舍。\n\ndrafter 沿用 Gemma 4 的 Apache 2.0 协议，权重已经上传到 Hugging Face 和 Kaggle，transformers、MLX、vLLM、SGLang、Ollama 都已支持。",
+      "created_at": "Tue May 05 17:35:14 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2051700533040459776",
+          "url": "https://video.twimg.com/amplify_video/2051700533040459776/vid/avc1/2532x1344/Y0tSsb8snjxSXV7Q.mp4?tag=27",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2051700498328346945",
+        "text": "Gemma 4: Now up to 3x Faster. ⚡\n\nSame quality, way more speed. Our new MTP drafters allow Gemma 4 to predict multiple tokens at once, effectively tripling your output speed without compromising intelligence. https://t.co/xyltPFFVMw",
+        "created_at": "Tue May 05 16:28:12 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "animated_gif",
+            "id": "2051700193633132544",
+            "url": "https://pbs.twimg.com/tweet_video_thumb/HHkadKsaYAAqrdn.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "50090898",
+          "name": "Google for Developers",
+          "screen_name": "googledevs",
+          "description": "Discover the latest developer tools, resources, events, and announcements to help you build smarter, ship faster. 🚀",
+          "followers_count": 2570120,
+          "friends_count": 313,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 155,
+          "favorite_count": 1924,
+          "reply_count": 62,
+          "quote_count": 40
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 16,
+        "reply_count": 2,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2051718289290625266",
+      "text": "Drafter 详细解释：https://t.co/LKzCs0Y8rV",
+      "created_at": "Tue May 05 17:38:53 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2051694045869879749",
+        "text": "https://t.co/BvHkG5TaBF",
+        "created_at": "Tue May 05 16:02:33 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1908326331609468928",
+          "name": "Google Gemma",
+          "screen_name": "googlegemma",
+          "description": "The official home of Google's Gemma. Lightweight, state-of-the-art open models by Google DeepMind, built on Gemini tech. What will you build? 🚀💻",
+          "followers_count": 68177,
+          "friends_count": 0,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 43,
+          "favorite_count": 276,
+          "reply_count": 6,
+          "quote_count": 15
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051720198403596715",
+      "text": "OpenAI 把 ChatGPT 的默认模型升级成了 GPT-5.5 Instant，从今天开始替换原来的 GPT-5.3 Instant，全量推送给所有用户。\n\nInstant 是 ChatGPT 里反应最快的日常档，几亿人每天都在用，这次升级针对的也是日常问答场景。\n\n【1】幻觉显著减少\n\nOpenAI 内部测试的数据：在医疗、法律、金融这类答错代价很高的高风险问题上，GPT-5.5 Instant 编造事实的概率比上一代少 52.5%。在用户实际标记过\"这答错了\"的对话上，错误率降 37.3%。\n\n跑分跟着上来：博士级科学题 GPQA 从 78.5% 升到 85.6%，AIME 2025 数学竞赛从 65.4% 跳到 81.2%，多模态推理 MMMU-Pro 从 69.2% 提到 76%。\n\n【2】回答更短，废话更少\n\n以前 ChatGPT 经常被吐槽答得太啰嗦，问个简单问题能给你回三屏。新版明显收敛，不必要的反问、过度排版和表情符号都少了。\n\n【3】主动用你的过去聊天记录\n\n如果你连了 Gmail、上传过文件、之前和它聊过别的事，新版会更主动地把这些内容拿来用。比如问\"推荐一家新茶饮店\"，它会参考你之前说过常去哪、偏好哪种风格，给出更贴你的答案，而不是泛泛列几家热门店。\n\nOpenAI 同时上线了一个叫\"记忆来源\"（memory sources）的功能，每条用到记忆的回答都可以点开看具体引用了什么，不想被引用的内容随时删掉。\n\n【4】发布节奏\n\n今天起向所有 ChatGPT 用户推送，免费档也能用。API 里的别名是 chat-latest。付费用户想保留旧版的，GPT-5.3 Instant 在模型设置里还会留三个月。\n\n个性化记忆功能先上 Plus 和 Pro 的网页端，移动端随后跟进，Free、Go、Business、Enterprise 之后再逐步开放。",
+      "created_at": "Tue May 05 17:46:29 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2051709103614083475",
+        "text": "GPT-5.5 Instant is starting to roll out to everyone in ChatGPT. \n\nMuch more concise. Better memory. More personalized.\n\nAnd it's way easier to talk to. Really. https://t.co/C6iCpFZte7",
+        "created_at": "Tue May 05 17:02:23 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2051708360530219008",
+            "url": "https://video.twimg.com/amplify_video/2051708360530219008/vid/avc1/1920x1080/22SIAW-ilgx6SVre.mp4?tag=27",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1714438092655149056",
+          "name": "ChatGPT",
+          "screen_name": "ChatGPTapp",
+          "description": "Never talk about goblins, gremlins, raccoons, trolls, ogres, pigeons, or other animals or creatures unless it is absolutely and unambiguously relevant...",
+          "followers_count": 542214,
+          "friends_count": 249,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 82,
+          "favorite_count": 1126,
+          "reply_count": 110,
+          "quote_count": 30
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 11,
+        "reply_count": 3,
         "quote_count": 0
       }
     }

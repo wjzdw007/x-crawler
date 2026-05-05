@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 215869,
+    "followers_count": 215889,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260505",
-  "last_updated": "2026-05-05T12:28:30.792999",
-  "tweet_count": 1,
+  "last_updated": "2026-05-05T16:39:27.977831",
+  "tweet_count": 4,
   "tweets": [
     {
       "id": "2051492968062767529",
@@ -103,6 +103,126 @@
         "retweet_count": 5,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051673437727346838",
+      "text": "/goal 目标不是为了时间长而时间长，它的目标是为了解决需要长时间运行的任务，避免人工反复的输入 continue。\n\n要有清晰的目标，你的任务是要解决什么问题？让它运行时间长不是一个目标\n\n要有验收标准，怎么样算完成？\n\n要有文档指导，该怎么完成任务？长时间的任务要分阶段，而不是一次性完成，每个阶段都要有文档说明\n\n要有中间进度辅助，比如进度、checklist等\n\n比如说我在让 codex 去逆向 codex app 项目，已经跑了17个小时了。\n\n第一步我是先跟 Codex 一起制定一个计划，计划中会有详细的验收标准\n\n然后不直接执行计划，而是把计划保存成文档，去项目中初始化 Agents md 文件，让 codex 清晰知道任务目标和验收方法以及验收标准。\n\n再试运行，/goal 后面告诉它按照 Agents md 的要求执行，并记录进度。第一次只跑了半小时就结束了，因为它没理解要把代码写成命名友好、类型完整、文件名结构良好的结果。\n\n于是我找了一个文件做样板，手动（AI 辅助）写了一个样板，告诉它这是我期望的结果，然后更新了计划文件。\n\n这样可能反复几次，后续就没什么问题了。\n\n所以还是要说清楚你想要什么，写成文档，让 AI 清楚的知道怎么去做，怎么验证结果，怎么知道是否完成。",
+      "created_at": "Tue May 05 14:40:40 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2051669932719403008",
+          "url": "https://pbs.twimg.com/media/HHj-7wAW8AAAmKo.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2051670823899906048",
+          "url": "https://pbs.twimg.com/media/HHj_vn6WQAAKxkF.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2051671951005851651",
+          "url": "https://pbs.twimg.com/media/HHkAxOtWIAMIN5k.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2051672057104957443",
+          "url": "https://pbs.twimg.com/media/HHkA3Z9WAAMLEU3.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2051618359209324599",
+        "text": "@dotey 您好，现在已成功录入😄，可还有一个问题，我用chatgpt pro给我写的/goal在codex上运行每次不到半小时它就自己结束了,我给chatgpt pro说了我的需求是长期让他自主化运行，也给codexCLI最高权限了，并且说明了/goal内不要给codex设限。但不起作用。请问有什么方法可以让它长时间运行，谢谢您！",
+        "created_at": "Tue May 05 11:01:48 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2032027125113556992",
+          "name": "pinecone",
+          "screen_name": "kaxsg520",
+          "description": "",
+          "followers_count": 0,
+          "friends_count": 43,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 10,
+        "favorite_count": 69,
+        "reply_count": 10,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051673803231506917",
+      "text": "RT @HiTw93: Today was the most productive coding day I’ve had in 10 years.\n\nI spent 1.6k out of the 10k credits Cursor gave me, mainly usin…",
+      "created_at": "Tue May 05 14:42:07 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2051597128980746407",
+        "text": "Today was the most productive coding day I’ve had in 10 years.\n\nI spent 1.6k out of the 10k credits Cursor gave me, mainly using Opus 4.7 1M Max and GPT-5.5 Extra High Fast. The takeaway is simple. In Cursor these models feel unusually well tuned, fast, precise, and reliable for real work.\n\nHere’s what I got done in a single day:\n\n1. Built the iOS version of MiaoYan from scratch with iPad support, including preview and iCloud sync  \n2. Fully implemented payments in the Mole macOS client and shipped the V1 website  \n3. Wrapped up Kaku macOS terminal v0.10, polishing AI chat and many details  \n4. Shipped a major upgrade to Kami typesetting system, fixing PPT support and many edge cases  \n5. Upgraded my Luo Chinese font project with a new learning mode and overall improvements  \n6. Improved Mole CLI with better performance, fallbacks, and a lot of detail work  \n\nThere was also a lot more small work in between.\n\nWhat stood out is strong context handling, solid multi file edits, and stable long chain execution. It feels like a real collaborator.\n\nAs a long time builder and a TSLA shareholder, I’m excited to see Cursor keep improving. Thanks again @cursor_ai  @edwinarbus  for the 10k credits, I will keep putting them to good use.",
+        "created_at": "Tue May 05 09:37:27 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2051594961871872000",
+            "url": "https://pbs.twimg.com/media/HHi6v31aoAAmZBz.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1521688129559613440",
+          "name": "Tw93",
+          "screen_name": "HiTw93",
+          "description": "Kaku · Pake · MiaoYan · Waza · Kami · Mole",
+          "followers_count": 143116,
+          "friends_count": 300,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 8,
+          "favorite_count": 254,
+          "reply_count": 30,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051688341519609897",
+      "text": "https://t.co/cFZS7VsNIv",
+      "created_at": "Tue May 05 15:39:53 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 35,
+        "reply_count": 2,
         "quote_count": 0
       }
     }

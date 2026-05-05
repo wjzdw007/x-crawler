@@ -1,12 +1,737 @@
 {
   "date": "20260505",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-05-05T12:28:30.741678",
-  "tweet_count": 205,
-  "unique_tweet_count": 205,
-  "total_crawled": 403,
-  "duplicates_removed": 198,
+  "last_crawl_time": "2026-05-05T16:39:27.946775",
+  "tweet_count": 218,
+  "unique_tweet_count": 218,
+  "total_crawled": 405,
+  "duplicates_removed": 187,
   "tweets": [
+    {
+      "id": "2051688341519609897",
+      "text": "https://t.co/cFZS7VsNIv",
+      "created_at": "Tue May 05 15:39:53 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 215889,
+        "friends_count": 1625,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 35,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051673803231506917",
+      "text": "RT @HiTw93: Today was the most productive coding day I’ve had in 10 years.\n\nI spent 1.6k out of the 10k credits Cursor gave me, mainly usin…",
+      "created_at": "Tue May 05 14:42:07 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2051597128980746407",
+        "text": "Today was the most productive coding day I’ve had in 10 years.\n\nI spent 1.6k out of the 10k credits Cursor gave me, mainly using Opus 4.7 1M Max and GPT-5.5 Extra High Fast. The takeaway is simple. In Cursor these models feel unusually well tuned, fast, precise, and reliable for real work.\n\nHere’s what I got done in a single day:\n\n1. Built the iOS version of MiaoYan from scratch with iPad support, including preview and iCloud sync  \n2. Fully implemented payments in the Mole macOS client and shipped the V1 website  \n3. Wrapped up Kaku macOS terminal v0.10, polishing AI chat and many details  \n4. Shipped a major upgrade to Kami typesetting system, fixing PPT support and many edge cases  \n5. Upgraded my Luo Chinese font project with a new learning mode and overall improvements  \n6. Improved Mole CLI with better performance, fallbacks, and a lot of detail work  \n\nThere was also a lot more small work in between.\n\nWhat stood out is strong context handling, solid multi file edits, and stable long chain execution. It feels like a real collaborator.\n\nAs a long time builder and a TSLA shareholder, I’m excited to see Cursor keep improving. Thanks again @cursor_ai  @edwinarbus  for the 10k credits, I will keep putting them to good use.",
+        "created_at": "Tue May 05 09:37:27 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2051594961871872000",
+            "url": "https://pbs.twimg.com/media/HHi6v31aoAAmZBz.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1521688129559613440",
+          "name": "Tw93",
+          "screen_name": "HiTw93",
+          "description": "Kaku · Pake · MiaoYan · Waza · Kami · Mole",
+          "followers_count": 143116,
+          "friends_count": 300,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 8,
+          "favorite_count": 254,
+          "reply_count": 30,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 215889,
+        "friends_count": 1625,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051673437727346838",
+      "text": "/goal 目标不是为了时间长而时间长，它的目标是为了解决需要长时间运行的任务，避免人工反复的输入 continue。\n\n要有清晰的目标，你的任务是要解决什么问题？让它运行时间长不是一个目标\n\n要有验收标准，怎么样算完成？\n\n要有文档指导，该怎么完成任务？长时间的任务要分阶段，而不是一次性完成，每个阶段都要有文档说明\n\n要有中间进度辅助，比如进度、checklist等\n\n比如说我在让 codex 去逆向 codex app 项目，已经跑了17个小时了。\n\n第一步我是先跟 Codex 一起制定一个计划，计划中会有详细的验收标准\n\n然后不直接执行计划，而是把计划保存成文档，去项目中初始化 Agents md 文件，让 codex 清晰知道任务目标和验收方法以及验收标准。\n\n再试运行，/goal 后面告诉它按照 Agents md 的要求执行，并记录进度。第一次只跑了半小时就结束了，因为它没理解要把代码写成命名友好、类型完整、文件名结构良好的结果。\n\n于是我找了一个文件做样板，手动（AI 辅助）写了一个样板，告诉它这是我期望的结果，然后更新了计划文件。\n\n这样可能反复几次，后续就没什么问题了。\n\n所以还是要说清楚你想要什么，写成文档，让 AI 清楚的知道怎么去做，怎么验证结果，怎么知道是否完成。",
+      "created_at": "Tue May 05 14:40:40 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2051669932719403008",
+          "url": "https://pbs.twimg.com/media/HHj-7wAW8AAAmKo.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2051670823899906048",
+          "url": "https://pbs.twimg.com/media/HHj_vn6WQAAKxkF.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2051671951005851651",
+          "url": "https://pbs.twimg.com/media/HHkAxOtWIAMIN5k.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2051672057104957443",
+          "url": "https://pbs.twimg.com/media/HHkA3Z9WAAMLEU3.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2051618359209324599",
+        "text": "@dotey 您好，现在已成功录入😄，可还有一个问题，我用chatgpt pro给我写的/goal在codex上运行每次不到半小时它就自己结束了,我给chatgpt pro说了我的需求是长期让他自主化运行，也给codexCLI最高权限了，并且说明了/goal内不要给codex设限。但不起作用。请问有什么方法可以让它长时间运行，谢谢您！",
+        "created_at": "Tue May 05 11:01:48 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2032027125113556992",
+          "name": "pinecone",
+          "screen_name": "kaxsg520",
+          "description": "",
+          "followers_count": 0,
+          "friends_count": 43,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 215889,
+        "friends_count": 1625,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 10,
+        "favorite_count": 69,
+        "reply_count": 10,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051667697843515493",
+      "text": "RT @ianmiles: Japan just had the fewest babies born in any year on record. Not since the war. Not since the 1918 flu. Since records began i…",
+      "created_at": "Tue May 05 14:17:51 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2051601915059048868",
+        "text": "Japan just had the fewest babies born in any year on record. Not since the war. Not since the 1918 flu. Since records began in 1899.\n\n705,809 births, the tenth annual record low in a row, and they're now down 30% in a decade. More than two deaths for every birth. The population shrank by almost 900,000 people in twelve months.\n\nThis is what a demographic spiral looks like in real time. Fewer young people now means fewer parents in twenty years, which means fewer births in thirty. Recovery requires reversing a trend that has been running for half a century.",
+        "created_at": "Tue May 05 09:56:28 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2051601696867147776",
+            "url": "https://pbs.twimg.com/media/HHjA35pa4AAHdM4.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2051601696829378560",
+            "url": "https://pbs.twimg.com/media/HHjA35gakAAtdDd.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2051601696846196736",
+            "url": "https://pbs.twimg.com/media/HHjA35kbMAAxvGP.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2051601696913338368",
+            "url": "https://pbs.twimg.com/media/HHjA350bsAAd1bM.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "16106584",
+          "name": "Ian Miles Cheong",
+          "screen_name": "ianmiles",
+          "description": "I say the quiet part out loud.",
+          "followers_count": 1262713,
+          "friends_count": 1441,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 517,
+          "favorite_count": 2418,
+          "reply_count": 467,
+          "quote_count": 46
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239965265,
+        "friends_count": 1323,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 517,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051651609864929470",
+      "text": "RT @martianwyrdlord: \"Of all tyrannies, a tyranny sincerely exercised for the good of its victims may be the most oppressive. It would be b…",
+      "created_at": "Tue May 05 13:13:56 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2051407477535658423",
+        "text": "\"Of all tyrannies, a tyranny sincerely exercised for the good of its victims may be the most oppressive. It would be better to live under robber barons than under omnipotent moral busybodies. The robber baron's cruelty may sometimes sleep, his cupidity may at some point be satiated; but those who torment us for our own good will torment us without end for they do so with the approval of their own conscience.\" - C. S. Lewis",
+        "created_at": "Mon May 04 21:03:50 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2051407474947661825",
+            "url": "https://pbs.twimg.com/media/HHgQOsnWIAERm36.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2051256808195399896",
+          "text": "Amsterdam has now banned all public advertisements for meat products, in a bid to change \"social norms\" and reduce citydwellers' meat consumption by half by 2050.\n\nGreen politicians like Anneke Veenhoff and Anke Bakker spearheaded the ban. https://t.co/UCc4lAN2ex",
+          "created_at": "Mon May 04 11:05:08 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2051256469610274816",
+              "url": "https://pbs.twimg.com/media/HHeG5B5XoAANBbH.png"
+            },
+            {
+              "type": "photo",
+              "id": "2051256494306295808",
+              "url": "https://pbs.twimg.com/media/HHeG6d5XAAAZBKr.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1161261376846946305",
+            "name": "RAW EGG NATIONALIST",
+            "screen_name": "Babygravy9",
+            "description": "New book THE LAST MEN: LIBERALISM AND THE DEATH OF MASCULINITY out now (Amazon); S'stack (https://t.co/YQuXSS0rXk); #1 bestselling author; founder Kindred Harvest",
+            "followers_count": 321485,
+            "friends_count": 2941,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 128,
+            "favorite_count": 923,
+            "reply_count": 135,
+            "quote_count": 39
+          }
+        },
+        "user": {
+          "id": "1609651923363168258",
+          "name": "John Carter",
+          "screen_name": "martianwyrdlord",
+          "description": "wyrd guy",
+          "followers_count": 56196,
+          "friends_count": 1279,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1332,
+          "favorite_count": 6017,
+          "reply_count": 328,
+          "quote_count": 49
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239965265,
+        "friends_count": 1323,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1332,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051650226503741898",
+      "text": "RT @glennbeck: I want to tell you the story of a young woman who you have probably never heard of. Her name is Mary Anne. She was born on a…",
+      "created_at": "Tue May 05 13:08:26 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2051367322976235840",
+        "text": "I want to tell you the story of a young woman who you have probably never heard of. Her name is Mary Anne. She was born on a remote island in Scotland, where life was harsh and unforgiving.\n\nOn May 2, 1930, when she was 18 years old, she got on a boat headed for Ellis Island to start a new life. She arrived here 11 days later.\n\n She wasn't chasing fame, riches, or power. She came for the unique opportunity that America offered. Her sister was already here and had found a job as a maid. So, Mary Anne MacLeod joined her, listing her occupation as “domestic” on her Ellis Island immigration papers.\n\nShe came to America knowing that she would clean the houses and toilets of the wealthy families in New York. She and her sister lived and worked hard through the worst days of the Depression. And she persevered.\n\nSix years later, she married a man named Fred. He was the son of German immigrants. Then In 1942, she became a citizen.\n\nMary and Fred would end up having five children: two daughters and three sons.\n\n One of those sons, they named Donald.\n\nA woman who came here as a maid, the lowest of jobs, would raise a son who would change the very skyline that greeted his mother when she arrived at Ellis Island.\n\nAfter that, he would become the 45th and 47th President of the United States.\n\nThere is no other country in the world where a woman can arrive with nothing, and in ONE generation, her son would lead the entire world.\n\nFor America’s 250th anniversary, I wanted to present President Trump with this painting I did, and then I ran out of time and talent. So, I asked a good friend of mine, Mike Malm, to help me finish it. This is how I envisioned her coming into the United States.\n\nMary Anne MacLeod Trump should be a household name. Her story is everything that is great about America.",
+        "created_at": "Mon May 04 18:24:17 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2051364775477510145",
+            "url": "https://pbs.twimg.com/media/HHfpZQsWAAEegvn.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "17454769",
+          "name": "Glenn Beck",
+          "screen_name": "glennbeck",
+          "description": "Digital disruptor. Truth-teller. Narrator of meaning . Philanthropist ($300m+ raised). Founder of TheBlaze, Torch. Empowering the people, not the system.",
+          "followers_count": 2250139,
+          "friends_count": 862,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7234,
+          "favorite_count": 27942,
+          "reply_count": 898,
+          "quote_count": 325
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239965265,
+        "friends_count": 1323,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 7234,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051648017804222774",
+      "text": "RT @teslaownersSV: Elon Musk is playing a long game most people don’t think about.\n\nThe idea lines up with the Kardashev scale. Not just im…",
+      "created_at": "Tue May 05 12:59:39 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2051370296054272242",
+        "text": "Elon Musk is playing a long game most people don’t think about.\n\nThe idea lines up with the Kardashev scale. Not just improving life on Earth, but increasing how much energy humanity can use and control over time.\n\nTesla, SpaceX and Starlink all fit into that direction. Energy, transport and connectivity are the foundation layers if you’re thinking beyond a single planet.\n\nIt sounds far off, but the early pieces are already in motion.",
+        "created_at": "Mon May 04 18:36:05 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2051370241721335808",
+            "url": "https://video.twimg.com/amplify_video/2051370241721335808/vid/avc1/480x640/ktATCIS5wQdxS9Rn.mp4?tag=27",
+            "bitrate": 950000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1016059981907386368",
+          "name": "Tesla Owners Silicon Valley",
+          "screen_name": "teslaownersSV",
+          "description": "The most notorious Tesla Club in the world. Creator of @thextakeover and taking the Takeover global. \n2.8M followers across all channels",
+          "followers_count": 1414465,
+          "friends_count": 878,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 400,
+          "favorite_count": 1937,
+          "reply_count": 238,
+          "quote_count": 30
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239965265,
+        "friends_count": 1323,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 400,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051647716225429670",
+      "text": "RT @XFreeze: Elon Musk sees a path where the cost to orbit drops below commercial air freight\n\nUltimately Starship will be able to fly acro…",
+      "created_at": "Tue May 05 12:58:27 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2051308868722991389",
+        "text": "Elon Musk sees a path where the cost to orbit drops below commercial air freight\n\nUltimately Starship will be able to fly across the globe cheaper per ton than a Boeing 747\n\nThat opens up a massive range of possibilities for global logistics https://t.co/BMVH0JMlo9",
+        "created_at": "Mon May 04 14:32:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2051306630478761985",
+            "url": "https://video.twimg.com/amplify_video/2051306630478761985/vid/avc1/720x960/YK2ZYUhLpRrsjZi8.mp4?tag=27",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 208866,
+          "friends_count": 1794,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 563,
+          "favorite_count": 3032,
+          "reply_count": 253,
+          "quote_count": 43
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239965265,
+        "friends_count": 1323,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 563,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051645350860161089",
+      "text": "RT @MakeSenseMarie: This man says, “let me get this straight. \n\nWhen White people move into an area, it’s called “colonizing” or “gentrific…",
+      "created_at": "Tue May 05 12:49:04 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2051356237262999828",
+        "text": "This man says, “let me get this straight. \n\nWhen White people move into an area, it’s called “colonizing” or “gentrification”, \n\nwhich is bad.\n\nBut if people of a high melanin count move into an area, that’s “cultural enrichment” and “diversity is our strength”, \n\nwhich is good.\n\nBut then if those same White people don’t  want any more “cultural enrichment” or are tired of “diversity” being their strength, that’s called “White Flight”, \n\nwhich is bad.\n\nSo they don’t want White people to come or to go. \n\nIt’s almost as if they don’t want them (whites) to exist at all.”\n\nHe’s figuring it out.",
+        "created_at": "Mon May 04 17:40:13 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2051356158670073856",
+            "url": "https://video.twimg.com/amplify_video/2051356158670073856/vid/avc1/576x1024/iZzatBGONZ0ihqbF.mp4?tag=27",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1587285518215270400",
+          "name": "Make Sense of it Marie",
+          "screen_name": "MakeSenseMarie",
+          "description": "Just a southern girl with a little common sense.🌼 🇺🇸 🐩  https://t.co/WAmjioMA61 YouTube https://t.co/Tru1vgRhLM",
+          "followers_count": 2341,
+          "friends_count": 88,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 8504,
+          "favorite_count": 42765,
+          "reply_count": 871,
+          "quote_count": 235
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239965265,
+        "friends_count": 1323,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 8504,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051643823265370217",
+      "text": "Try Tesla, Starlink &amp; auto-translation on 𝕏 https://t.co/enxwcUXrCh",
+      "created_at": "Tue May 05 12:42:59 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2050590568015704064",
+          "url": "https://video.twimg.com/amplify_video/2050590568015704064/vid/avc1/1920x1080/mQGV623byZWhVSU1.mp4?tag=27",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239965265,
+        "friends_count": 1323,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2062,
+        "favorite_count": 14457,
+        "reply_count": 1709,
+        "quote_count": 80
+      }
+    },
+    {
+      "id": "2051642728883310851",
+      "text": "RT @anishmoonka: There's a clay tablet with the founding charter of a 12-partner company on it. Twelve merchants pooled 33 pounds of gold t…",
+      "created_at": "Tue May 05 12:38:38 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2051400975248961901",
+        "text": "There's a clay tablet with the founding charter of a 12-partner company on it. Twelve merchants pooled 33 pounds of gold to start the firm. The contract has the partner names, the starting capital, the profit split, and the penalty for cashing out early.\n\nThe tablet is nearly 4,000 years old. It was found at a site called Kanesh, in central Turkey. Archaeologists have dug up 23,500 of these clay records there, most of them business documents: receipts, loan contracts, shipping orders, lawsuits. The houses they were stored in eventually burned. The fire baked the clay solid and preserved every record.\n\nThe merchants came from Assur, in modern-day Iraq. They loaded donkeys with tin and cloth and walked them 1,000 kilometers across mountain passes to Kanesh, roughly the distance from New York to Atlanta. Each donkey carried about 180 pounds and the trip took two to three months. They came home with silver and gold.\n\nThe company ran for twelve years under a merchant named Amur Ishtar. A third of the profits went back to the investors. Pull your share out early and the firm gave you four kilos of silver per kilo of gold, half the normal rate. Locked-up money was meant to stay locked up.\n\nThat one company was just a tiny piece. The tablets show a complete economy with partners suing each other in commercial court, husbands writing home about prices, and wives writing back complaining the husband had been gone too long. A woman named Ahatum quietly lent silver to four different men over nine years. People bought up other people's loan documents and used them as collateral for new loans, the same thing Wall Street does today with mortgage-backed securities. One merchant got caught smuggling tin in his underwear to dodge a 10% import tax.\n\nIn 2019, four economists from Harvard, Sciences Po, Chicago, and Virginia ran the tablet numbers through a gravity model, the math economists use today to predict how much two countries will trade based on size and distance. The Bronze Age numbers matched modern trade numbers almost exactly. Trade fell off with distance at nearly the same rate it does between countries today. The paper ran in the Quarterly Journal of Economics.\n\nThere was no economic theory yet. The idea didn't even have a name. The word \"capitalism\" wouldn't be coined for another 3,800 years, and Adam Smith was 3,700 years away from writing a sentence about markets. Just a guy named Pushu-ken writing a clay tablet to his business partner about a shipment of cloth, and a woman in Assur recording who owed her how much silver. Capitalism was already there, doing its full job, almost four thousand years before anyone wrote down a theory of how it worked.",
+        "created_at": "Mon May 04 20:38:00 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2051154852932165891",
+          "text": "Niemand hat den \"Kapitalismus\" erfunden. Kapitalismus ist das, was freie Menschen von Natur aus tun - Waren und Dienstleistungen zu ihrem eigenen Vorteil tauschen.",
+          "created_at": "Mon May 04 04:20:00 +0000 2026",
+          "lang": "de",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1307999283220754432",
+            "name": "Hayek-Club Weimar",
+            "screen_name": "WeimarClub",
+            "description": "Hier twittert der Hayek-Club Weimar.  #Freiheit #Wohlstand  #Markt #Eigentum #ÖsterreichischeSchule #Mises #Hayek #Baader #Privateigentum #freiegesellschaft",
+            "followers_count": 10455,
+            "friends_count": 463,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1580,
+            "favorite_count": 11905,
+            "reply_count": 462,
+            "quote_count": 109
+          }
+        },
+        "user": {
+          "id": "999564240850640897",
+          "name": "Anish Moonka",
+          "screen_name": "anishmoonka",
+          "description": "Follow me for Curiositymaxxing 🌱\n\nBuilding @FromtheArena1 @10MinuteGita | Investor 10Y | Ex CoS @Kavinbm | AI assisted Builder/Storyteller (Research)",
+          "followers_count": 99155,
+          "friends_count": 989,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1968,
+          "favorite_count": 9793,
+          "reply_count": 265,
+          "quote_count": 121
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239965265,
+        "friends_count": 1323,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1968,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051641477684666801",
+      "text": "https://t.co/sgAh2tlJUX",
+      "created_at": "Tue May 05 12:33:40 +0000 2026",
+      "lang": "zxx",
+      "media": [
+        {
+          "type": "video",
+          "id": "2051303985827524608",
+          "url": "https://video.twimg.com/amplify_video/2051303985827524608/vid/avc1/2160x3218/_TDQ5k597rrbUkB6.mp4?tag=27",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239965265,
+        "friends_count": 1323,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5131,
+        "favorite_count": 44294,
+        "reply_count": 5530,
+        "quote_count": 383
+      }
+    },
+    {
+      "id": "2051640873931382815",
+      "text": "RT @zarathustra5150: Dostoevsky captures the essence of the modern, downwardly mobile progressive activist, 150 years early. A conviction o…",
+      "created_at": "Tue May 05 12:31:16 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2051446343441519041",
+        "text": "Dostoevsky captures the essence of the modern, downwardly mobile progressive activist, 150 years early. A conviction of higher destiny, no path to reach it, and a misery that converts into hatred of the surrounding world. Politics is downstream of psychology, and this is the psychology.",
+        "created_at": "Mon May 04 23:38:16 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2051446338689142784",
+            "url": "https://pbs.twimg.com/media/HHgzk3VXkAA2Jhp.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1588353149483597824",
+          "name": "Zarathustra",
+          "screen_name": "zarathustra5150",
+          "description": "I knew the rules, but the rules did not know me.",
+          "followers_count": 51521,
+          "friends_count": 3274,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 492,
+          "favorite_count": 2465,
+          "reply_count": 177,
+          "quote_count": 30
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239965265,
+        "friends_count": 1323,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 492,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2051637871925510312",
       "text": "RT @ThomasSowell: \"If you believe in equal rights, then what do ‘women's rights,’ ‘gay rights,’ etc. mean? Either they are redundant or the…",

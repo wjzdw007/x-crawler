@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 215984,
+    "followers_count": 216011,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260506",
-  "last_updated": "2026-05-06T05:08:38.615419",
-  "tweet_count": 4,
+  "last_updated": "2026-05-06T07:00:11.018110",
+  "tweet_count": 6,
   "tweets": [
     {
       "id": "2051833916378501444",
@@ -149,6 +149,103 @@
         "retweet_count": 8,
         "favorite_count": 171,
         "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051902663051157521",
+      "text": "Hermes Agent 这名字，间接影响了爱马仕广告的投放效果，日常讨论 Hermes 看到广告的大多数不是目标人群😂 https://t.co/jpXQqQjSw5",
+      "created_at": "Wed May 06 05:51:32 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2051902155708129283",
+          "url": "https://pbs.twimg.com/media/HHnSI6DXYAMupal.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 13,
+        "reply_count": 11,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2051902838100439318",
+      "text": "RT @shao__meng: Warp 团队这是要把开源进行到底了，在 Warp、Doc 开源后，又把团队用于加速工作流的 Oz Skills 开源了 @warpdotdev 👏🏻👏🏻\n\n# Warp 团队的 15 个 Skills\nhttps://t.co/XtK5DWaV…",
+      "created_at": "Wed May 06 05:52:13 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2051865033425190994",
+        "text": "Warp 团队这是要把开源进行到底了，在 Warp、Doc 开源后，又把团队用于加速工作流的 Oz Skills 开源了 @warpdotdev 👏🏻👏🏻\n\n# Warp 团队的 15 个 Skills\nhttps://t.co/JQsHpIQvQD\n\n1. Git/GitHub 协作流（最成熟的一类）\n· create-pull-request：检查 gh CLI、分析 commits、按项目惯例生成 PR 描述。\n· ci-fix：定位失败的 GitHub Actions run → 拉日志 → 最小化修复 → 推到 ci-fix/<branch> 分支验证。强调\"最小 diff\"和不放宽 workflow 权限的安全约束。\n· github-bug-report-triage：照 issue template 评估 bug 报告的可执行性，反馈缺失信息。\n· github-issue-dedupe：用 gh search + 关键词/语义混合策略找重复 issue，可挂到 GitHub Action 里自动跑。\n\n2. 数据/分析\n· dbt-model-index：一份模板化的 dbt 模型索引（不是现成数据，而是教用户填自己的仓库结构），让 Agent 写 BigQuery SQL 前先选对表。\n· analysis-artifacts：把\"深度分析\"流程标准化——analyses/<name>/ 目录下产出 SQL、可视化、README，确保结果可复现可分享。\n\n3. Web 质量审计（直接调用 MCP 工具）\n· web-performance-audit：依赖 chrome-devtools-mcp，跑 Core Web Vitals、网络优化。\n· web-accessibility-audit：按 WCAG POUR 原则审 a11y。\n· seo-aeo-audit：技术 SEO + AI 引用优化（AEO，面向 LLM 检索时代的新概念）。\n· webapp-testing：用原生 Playwright 脚本测本地 web 应用，自带 with_server.py 管服务生命周期。\n\n4. 基础设施 / 工程规范\n· terraform-style-check：照 HashiCorp 官方风格生成/审查 Terraform。\n· mcp-builder：最厚的一个 skill——四阶段教 Agent 构建高质量 MCP server（Python FastMCP 或 TS SDK），重点强调 \"workflow tools\" 比 \"API coverage\" 更重要的设计哲学。\n\n5. 通用生产力\n· docs-update：扫描近 24h commits → 识别需要更新文档的变更 → 适配 Mintlify/Docusaurus/GitBook 等平台。\n· scheduler：本地定时提醒（明确不做云端 agent 调度，划清边界）。\n· slack-qa-investigate：只读模式深度调查代码并回答问题，强调\"先验证再回答\"。",
+        "created_at": "Wed May 06 03:22:00 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2051865014936723456",
+            "url": "https://pbs.twimg.com/media/HHmwXB5a4AAz-2B.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2051768459101642872",
+          "text": "The Warp team uses a lot of Skills to speed up our workflow, so we open-sourced them.\n\n&gt; npx skills add warpdotdev/oz-skills\n\nIncludes Skills for SEO and accessibility auditing, documentation writing, DevOps tasks like terraform configuration, and more. https://t.co/jr5c9ex3Jd",
+          "created_at": "Tue May 05 20:58:15 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2051768407494918144",
+              "url": "https://video.twimg.com/amplify_video/2051768407494918144/vid/avc1/1056x720/GEAEdOs4ZwY3p9gp.mp4?tag=14",
+              "bitrate": 2176000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1399860779319443459",
+            "name": "Warp",
+            "screen_name": "warpdotdev",
+            "description": "The open-source agentic development environment, born out of the terminal. Build with agents, locally and in the cloud with Oz.\n\nhttps://t.co/DhGZnVAeOe",
+            "followers_count": 54731,
+            "friends_count": 1,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 12,
+            "favorite_count": 176,
+            "reply_count": 4,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "1727548535816724480",
+          "name": "meng shao",
+          "screen_name": "shao__meng",
+          "description": "AI 团队顾问&企业 AI 培训，专注「上下文工程」 &「AI 智能体」\n· 顾问：前沿理论 → 企业真实落地闭环\n· 培训：企业 AI 培训，推动全员 AI 提效\n\n合作：私信 / shaomeng@outlook.com\n公众号/小红书：AI 启蒙小伙伴",
+          "followers_count": 29972,
+          "friends_count": 1206,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 8,
+          "favorite_count": 84,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 0,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

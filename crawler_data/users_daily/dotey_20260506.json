@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 216179,
+    "followers_count": 216218,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260506",
-  "last_updated": "2026-05-06T14:57:37.754352",
-  "tweet_count": 6,
+  "last_updated": "2026-05-06T16:35:53.969764",
+  "tweet_count": 9,
   "tweets": [
     {
       "id": "2051833916378501444",
@@ -246,6 +246,106 @@
         "retweet_count": 8,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2052050136134471770",
+      "text": "RT @9hills: 插件推荐：plannotator\n\n可评论、编辑和共享的 Plan，结合 pi 好用（也支持别的 Agent）。\n\n基本的工作流程：\n1. /plannotator 实现xxx功能 \n2. 生成plan，保存到本地并打开一个web评审页面\n3. 类似 C…",
+      "created_at": "Wed May 06 15:37:32 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2051956931087278290",
+        "text": "插件推荐：plannotator\n\n可评论、编辑和共享的 Plan，结合 pi 好用（也支持别的 Agent）。\n\n基本的工作流程：\n1. /plannotator 实现xxx功能 \n2. 生成plan，保存到本地并打开一个web评审页面\n3. 类似 Code Review，可以评论后提交，agent 迭代 Plan\n4. 接受 Plan，Agent 开始执行\n\nDemo 请看视频\n\nhttps://t.co/7laMbj8unb",
+        "created_at": "Wed May 06 09:27:10 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "116355740",
+          "name": "九原客",
+          "screen_name": "9hills",
+          "description": "喜欢一切美好的事物。目前聚焦在大模型领域。",
+          "followers_count": 26027,
+          "friends_count": 1065,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5,
+          "favorite_count": 49,
+          "reply_count": 8,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2052050155570864519",
+      "text": "https://t.co/X6Je2DwuoE",
+      "created_at": "Wed May 06 15:37:36 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 18,
+        "reply_count": 3,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2052056444330000513",
+      "text": "OpenAI 把训练 ChatGPT 用的网络协议开源了。https://t.co/s2euzfedsb\n\n这套协议叫 MRC（Multipath Reliable Connection，多路径可靠连接），由 OpenAI 联合 AMD、博通、英特尔、微软、英伟达共同开发，通过 OCP（开放计算项目，业内最大的开源硬件标准组织）开放给全行业。AMD、博通、微软、英伟达同步发了配套博文。\n\n训练大模型，几万到十几万张 GPU 要保持步调一致。一次训练步可能涉及几百万次数据传输，只要有一笔晚到，所有 GPU 都得干等。集群越大，链路抖动和故障越频繁。\n\n传统网络的麻烦：一条链路挂了，整个训练任务可能崩掉，得回到上一个检查点重跑；交换机重新算路由要花好几秒甚至几十秒。OpenAI 在搭 Stargate（其大型算力基础设施项目）这种规模的集群时，遇到的第一个瓶颈就是网络。\n\n过去一笔传输只走一条路径，MRC 改成把数据包拆散，同时分头走几百条路径，目的地再按内存地址重新拼起来。\n\n链路出问题，微秒级就能绕开，不需要交换机重算路由表。OpenAI 还把动态路由协议(BGP)整个砍掉,改用 SRv6 源路由:发送方直接指定每个包走哪条路,交换机退化成\"无脑\"转发器,故障面大幅缩小。\n\n网络结构因此简化。原本要 3 到 4 层交换机才能连起十几万张 GPU,MRC 的多平面设计 2 层就够,功耗、成本、故障点全降。\n\nMRC 已经部署在 OpenAI 所有最大的英伟达 GB200 超算上,包括 Stargate 在德州 Abilene 与甲骨文合建的站点,以及微软 Fairwater 数据中心。多个 OpenAI 模型用它训练出来。\n\n最直观的例子:最近一次前沿模型训练(服务 ChatGPT 和 Codex)期间,团队重启了 4 台核心交换机,不需要跟训练团队协调;每分钟还有多次链路抖动,对训练任务也没有可测量的影响。换以前,这种事故足以让整个任务崩溃。",
+      "created_at": "Wed May 06 16:02:36 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2052025253283651584",
+          "url": "https://video.twimg.com/amplify_video/2052025253283651584/vid/avc1/1280x1280/d10uc7t793sKUGIk.mp4?tag=27",
+          "bitrate": 8768000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2052025532485902368",
+        "text": "We’ve partnered with @AMD, @Broadcom, @Intel, @Microsoft, and @NVIDIA, to release Multipath Reliable Connection (MRC), a new open networking protocol that helps large AI training clusters run faster and more reliably, with less wasted GPU time.\n\nhttps://t.co/AiV952AJXs",
+        "created_at": "Wed May 06 13:59:46 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 4820439,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 274,
+          "favorite_count": 2807,
+          "reply_count": 136,
+          "quote_count": 66
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 33,
+        "reply_count": 2,
         "quote_count": 0
       }
     }

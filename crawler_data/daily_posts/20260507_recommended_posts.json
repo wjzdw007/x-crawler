@@ -1,12 +1,152 @@
 {
   "date": "20260507",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-05-07T16:38:43.321084",
-  "tweet_count": 220,
-  "unique_tweet_count": 220,
+  "last_crawl_time": "2026-05-07T18:37:52.557483",
+  "tweet_count": 222,
+  "unique_tweet_count": 222,
   "total_crawled": 420,
-  "duplicates_removed": 200,
+  "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2052440968863887715",
+      "text": "OpenAI 在 Realtime API 里上线了三款新语音模型：GPT-Realtime-2、GPT-Realtime-Translate 和 GPT-Realtime-Whisper，分别管对话、翻译和实时转录。\n\n【1】主角：GPT-Realtime-2\n\n号称带 GPT-5 级别的推理能力。比上一代 GPT-Realtime-1.5，在 Big Bench Audio 智能测试上从 81.4% 涨到 96.6%，Audio MultiChallenge 多轮对话指令跟随从 34.7% 涨到 48.5%。\n\n几个实际变化：\n\n开口前会先垫一句。执行长任务前先说\"我查一下\"\"稍等一下\"，避免用户对着空气以为它死机了。\n\n工具调用透明化。能同时调多个工具，过程会被念出来，比如\"正在查你的日历\"\"正在搜索\"，让用户听到 agent 在干什么。\n\n上下文窗口从 32K 扩到 128K，能撑更长的对话和更复杂的任务编排。\n\n开发者可以在 minimal 到 xhigh 五档推理强度里选，默认 low。简单问答用低延迟，复杂任务挂高推理。\n\n出错时会说\"这块我现在处理不了\"，不再直接卡死或乱讲。\n\n【2】Translate 和 Whisper\n\nGPT-Realtime-Translate 支持 70 多种输入语言、13 种输出语言的实时语音翻译，主打跨境客服、教育、直播场景。德国电信已经在测；BolnaAI 在印地语、泰米尔语、泰卢固语等印度方言场景下报告错词率比其他模型低 12.5%。\n\nGPT-Realtime-Whisper 是流式版 Whisper，边说边出字幕，主打会议、直播、客服转录。\n\n【3】价格\n\nGPT-Realtime-2：每百万音频输入 token $32（缓存 $0.40），输出 token $64。\n\nGPT-Realtime-Translate：每分钟 $0.034。\n\nGPT-Realtime-Whisper：每分钟 $0.017。\n\n三款都已在 Realtime API 上线，Playground 可以直接试 GPT-Realtime-2。",
+      "created_at": "Thu May 07 17:30:34 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2052438194625593804",
+        "text": "Introducing GPT-Realtime-2 in the API: our most intelligent voice model yet, bringing GPT-5-class reasoning to voice agents.\n\nVoice agents are now real-time collaborators that can listen, reason, and solve complex problems as conversations unfold.\n\nNow available in the API alongside streaming models GPT-Realtime-Translate and GPT-Realtime-Whisper — a new set of audio capabilities for the next generation of voice interfaces.",
+        "created_at": "Thu May 07 17:19:32 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2052435360064643072",
+            "url": "https://video.twimg.com/amplify_video/2052435360064643072/vid/avc1/1920x1080/sROaBqurx915k71O.mp4?tag=27",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 4823615,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 418,
+          "favorite_count": 5034,
+          "reply_count": 295,
+          "quote_count": 218
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 216654,
+        "friends_count": 1631,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 20,
+        "reply_count": 4,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2052439472533295553",
+      "text": "RT @nash_su: 虚拟文件系统又进化了，这个感觉是目前最好的一个👍\n\n最近给 Agent 用的虚拟文件系统很多，前几天才介绍了一个基于 ES 的，这个新出的 mirage，最大的亮点是可以集成S3, Google Drive, Slack, Gmail, 和 Redis…",
+      "created_at": "Thu May 07 17:24:37 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2052295697958056129",
+        "text": "虚拟文件系统又进化了，这个感觉是目前最好的一个👍\n\n最近给 Agent 用的虚拟文件系统很多，前几天才介绍了一个基于 ES 的，这个新出的 mirage，最大的亮点是可以集成S3, Google Drive, Slack, Gmail, 和 Redis 等等，这个一下思路就开阔了，文件系统变成了资源中心，Bash 调用检索一切。",
+        "created_at": "Thu May 07 07:53:18 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2052105012172792061",
+          "text": "Introducing Mirage, a unified virtual filesystem for AI agents!\n\n6 weeks. 1.1M+ lines of code. We rewrote bash from the ground up so cat, grep, head, and pipes work across heterogeneous services. S3, Google Drive, Slack, Gmail, GitHub, Linear, Notion, Postgres, MongoDB, SSH, and more, all mounted side-by-side as one filesystem.\n\nBash that AI agents already know works on every format! cat, grep, head, and wc parse .parquet, .csv, .json, .h5, even .wav! One pipe can stitch S3, Drive, GitHub, Slack, and Linear together, same Unix semantics throughout.\n\nWorkspaces are versioned too. Snapshot, clone, and roll back the whole thing with one API call. A two-layer cache turns repeated reads into local lookups, so agent loops stay fast and cheap.\n\nDrop a Workspace into FastAPI, Express, or a browser app. Wire it into OpenAI Agents SDK, Vercel AI SDK, LangChain, Mastra, or Pi. Run it alongside Claude Code and Codex.\n\nSite: https://t.co/zo1orc2wA9\nGitHub: https://t.co/zeRAKri7I9\n\n#AIAgents #OpenSource #AgenticAI #Strukto #Filesystem #VFS",
+          "created_at": "Wed May 06 19:15:35 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2052104452681908224",
+              "url": "https://pbs.twimg.com/media/HHqKIJAaQAAb5hL.jpg"
+            },
+            {
+              "type": "photo",
+              "id": "2052104488576802816",
+              "url": "https://pbs.twimg.com/media/HHqKKOua4AAy8Cg.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1675288246144868355",
+            "name": "Zecheng Zhang",
+            "screen_name": "zechengzh",
+            "description": "Founder @ https://t.co/2JWm2aq3T2 | YC Alumni | Founding Engineer @ https://t.co/5txAk2P7AW | Stanford CS MS | DeepSNAP and PyTorch Frame Co-creator",
+            "followers_count": 1768,
+            "friends_count": 720,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 212,
+            "favorite_count": 2275,
+            "reply_count": 125,
+            "quote_count": 47
+          }
+        },
+        "user": {
+          "id": "133153722",
+          "name": "nash_su - e/acc",
+          "screen_name": "nash_su",
+          "description": "e/acc - AI创业者，大部分INTJ，偶尔ENTJ。Founder of https://t.co/Laxarievr1 ， 前OpenCSG联合创始人，前 IterCast/LinuxCast 创始人。马拉松爱好者（PB官方255，个人最好成绩249）",
+          "followers_count": 19662,
+          "friends_count": 1572,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 20,
+          "favorite_count": 144,
+          "reply_count": 16,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 216654,
+        "friends_count": 1631,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 20,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2052294013290791100",
       "text": "RT @Will_Tanner_1: Pictures from a vanished civilization",

@@ -1,12 +1,301 @@
 {
   "date": "20260507",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-05-07T20:31:44.702044",
-  "tweet_count": 227,
-  "unique_tweet_count": 227,
-  "total_crawled": 422,
+  "last_crawl_time": "2026-05-07T22:25:31.504133",
+  "tweet_count": 232,
+  "unique_tweet_count": 232,
+  "total_crawled": 427,
   "duplicates_removed": 195,
   "tweets": [
+    {
+      "id": "2052512560264380737",
+      "text": "OpenAI 上线了官方命令行工具 openai-cli，开发者可以直接在终端里调 API，不用再写 SDK 代码。\n\n项目开源在 GitHub (openai/openai-cli)，Apache 2.0 协议，可通过 Homebrew 或 Go 安装。命令走资源化结构，比如 openai responses create --input \"...\" --model <model> 这样的写法。\n\n工具的几个核心能力：\n\n调用 Responses API，并且支持所有 cloud tools，也就是 OpenAI 托管的内置工具，包括 web 搜索、代码解释器、文件检索、图像生成等。换句话说，agent 风格的工作流也能直接从命令行跑通。\n\n输出走 Unix 风格的结构化格式（JSON、YAML、JSONL、pretty、raw 等），可以管道串联，再配合 GJSON 语法直接抽字段，跟 jq 类似，但是内建。\n\n图像生成、图像编辑、语音转录、TTS 这些原本要写 Python 调 SDK 的事情，一行命令就能完成。\n\n管理类操作也整合进去了，可以创建 project、配发 API key，对运维和团队管理者比较友好。\n\n文件传参用 @ file.ext 语法，跟 curl 习惯一致；二进制内容可以用 @data:// 显式 base64 编码。\n\n发布的人是 jxnlco（jason liu），他在 X 上把这个项目定性为 \"small ship / passion project\"，暗示是相对轻量的发布，更多文档稍后放出。\n\n之前 OpenAI 官方只有 Python、Node 等语言 SDK，纯命令行用户要么裸写 curl，要么自己包脚本。这次把 SDK 能力直接搬到 shell 里，能拼进现有的自动化流程，也方便服务器端和 CI/CD 场景。\n\n很适合 Agent 使用。\n\nhttps://t.co/8vkfbaalC0",
+      "created_at": "Thu May 07 22:15:02 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2052497604764913732",
+        "text": "small ship / passion project, more details soon \nhttps://t.co/Njxmsg9ISm\n\n1. call responses via cli with all cloud tools\n2. unix style structured outputs via cli \n2. image gen/edit, transcription, tts\n3. make projects and provision api keys\n\nmore docs soon",
+        "created_at": "Thu May 07 21:15:37 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "17203692",
+          "name": "jason liu",
+          "screen_name": "jxnlco",
+          "description": "hype @openai",
+          "followers_count": 58496,
+          "friends_count": 2662,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 18,
+          "favorite_count": 217,
+          "reply_count": 15,
+          "quote_count": 7
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 216673,
+        "friends_count": 1632,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 5,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2052502301781414261",
+      "text": "RT @cybertruck: Badass tank that beats your sports car in a drag race",
+      "created_at": "Thu May 07 21:34:17 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2052495044582736037",
+        "text": "Badass tank that beats your sports car in a drag race",
+        "created_at": "Thu May 07 21:05:26 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2052463759860576415",
+          "text": "Only when you drive the Cybertruck do you realize how incredible it is: a bulletproof tank that moves like a million dollar sports car!\n\nReason for the angular shape is that the thick, ultra-hard stainless steel body panels cannot be stamped like the thin, feeble, paper-strength mild steel of other trucks. Cybertruck body panels would break 5000 ton stamping machines.",
+          "created_at": "Thu May 07 19:01:07 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "https://t.co/dDtDyVssfm",
+            "followers_count": 239997465,
+            "friends_count": 1326,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 5337,
+            "favorite_count": 50156,
+            "reply_count": 6897,
+            "quote_count": 375
+          }
+        },
+        "user": {
+          "id": "1686044379910131718",
+          "name": "Cybertruck",
+          "screen_name": "cybertruck",
+          "description": "📐",
+          "followers_count": 248384,
+          "friends_count": 13,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 238,
+          "favorite_count": 2226,
+          "reply_count": 318,
+          "quote_count": 16
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239997465,
+        "friends_count": 1326,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 238,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2052500525598527732",
+      "text": "ChatGPT 跟中文用户对话，有一句话已经被吐槽了大半年：“我会稳稳地接住你”。不管是问数学题、让它写代码，还是要它生成图片，这句话都会莫名其妙冒出来。WIRED 这篇报道把现象和成因梳理了一遍。\n\n直译听着没问题，但中文母语者一听就觉得过于黏腻、用错了场合。模型有时还会自己加戏：“我就在这里，不逃，不躲，不闪避，稳稳地接住你。”\n\n这句话已经被中文互联网玩成了梗。有人把 ChatGPT P 成一个救生气垫，张开双臂等着接住坠落的用户。重庆一位 20 岁的开发者 Zeng Fanyu 还做了个开源工具叫 Jiezhu，专门帮聊天机器人理解用户意图，他告诉 WIRED 做这个项目的动力就是觉得这个梗太好笑。OpenAI 自己也知道这件事，4 月发布新一代图像模型时，研究员陈博远（Boyuan Chen）画了一格漫画自嘲新模型又一次学会了说这句话。\n\n类似的怪癖不止这一句。报道还提到，ChatGPT 中文里有时会无端冒出\"砍一刀\"，拼多多最具辨识度的那句营销话术。\n\nAI 写作检测工具 Pangram 的联合创始人 Max Spero 告诉 WIRED，这种\"逮住一句话猛用\"的现象叫 mode collapse（模式坍缩），是后训练阶段反馈机制走偏的副作用。他的原话是：我们不知道怎么告诉模型，这句话是好的，但连用十次就不再是好的了。\n\n为什么偏偏是这一句？报道给了两个解释。\n\n一是翻译错位。英文里 \"I've got you\" 是个口语短句，干脆利落，意思接近“我懂”或“我帮你兜着”。机械直译到中文就变成又长又煽情的\"稳稳接住\"。文章引用中国学者的研究，西方大模型训练语料以英文为主，它们生成的中文在介词使用和句子结构上都更像英文，读起来就是一股翻译腔。\n\n二是讨好倾向。“接住”在中文里原本是心理咨询的专业用语，指为对方“留出空间”安放情绪，这几年通过流行心理学渗透进了日常表达。Anthropic 在 2023 年关于 sycophancy（讨好用户）的论文已经证明，模型讨好用户的倾向来自 RLHF（基于人类反馈的强化学习），人类标注员更偏好让人舒服的回答，模型就被反复奖励到那个方向。OpenAI 最近一篇解释 GPT-5.5 为什么不让谈 goblin 的博客也承认，哪怕一个很小的奖励信号，滚成雪球之后都会失控。\n\n报道结尾提醒：这不是 OpenAI 独有的毛病。最近有中文用户反映，Claude 新版本和 DeepSeek 也开始说“稳稳接住你”了。要么是用了相似的训练数据，要么是模型之间互相蒸馏，这个梗短时间内不会消失。",
+      "created_at": "Thu May 07 21:27:13 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2052500278948093953",
+          "url": "https://pbs.twimg.com/media/HHvyIQwXYAEXkyd.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2052426059803463688",
+        "text": "OpenAI's chatbot has some weird linguistic tics in Chinese that are driving users crazy. https://t.co/ywtPzXGSa0",
+        "created_at": "Thu May 07 16:31:19 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1344951",
+          "name": "WIRED",
+          "screen_name": "WIRED",
+          "description": "For Future Reference.\nSign up for our newsletters: https://t.co/Tl6GImvc8R",
+          "followers_count": 9289848,
+          "friends_count": 449,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 10,
+          "reply_count": 2,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 216673,
+        "friends_count": 1632,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 42,
+        "reply_count": 9,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2052492340892221800",
+      "text": "OpenAI 给 Codex 推出了 Chrome 扩展，让它能直接在浏览器里干活。Mac 和 Windows 用户从今天起可以在 Codex app 里安装 Chrome 插件，让 Codex 直接在浏览器里执行任务，并且支持后台多标签并行运行，不会霸占你正在用的浏览器界面。\n\nCodex 是 OpenAI 的编程 agent，之前主要活动范围是终端、IDE 和云端。这次进入浏览器后，它能处理那些必须登录才能完成的活儿，比如查内部后台、刷 dashboard、在 CRM 里更新客户信息、走完需要点好几个页面才能完成的复杂表单流程。\n\n工作方式上，Codex 通过写代码、跑代码来操作页面。一个任务如果涉及多个工具，它会自己挑：能用现成插件搞定就用插件，必须登录的网站就走 Chrome，需要时两边混着来。\n\nOpenAI 给出的典型用例包括调试浏览器里的业务流程、做调研、更新 CRM 记录、处理结构化页面里的重复数据录入。\n\n今天就能在 Codex app 里启用，欧盟和英国暂未开放，OpenAI 表示后续支持。",
+      "created_at": "Thu May 07 20:54:42 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2052480800004956323",
+        "text": "Codex now works directly in Chrome on macOS and Windows.\n\nIt’s even better at working with apps and sites in Chrome, and now works in parallel across tabs in the background without taking over your browser.\n\nTo get started, install the Chrome plugin in the Codex app. https://t.co/pjtHd9gC69",
+        "created_at": "Thu May 07 20:08:50 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2052447512422912000",
+            "url": "https://video.twimg.com/amplify_video/2052447512422912000/vid/avc1/3840x2160/nlKDHFPHtb0choQ2.mp4?tag=27",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 4824359,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 369,
+          "favorite_count": 4981,
+          "reply_count": 233,
+          "quote_count": 140
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 216673,
+        "friends_count": 1632,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 17,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2052487556474740870",
+      "text": "Anthropic 把 Claude 全面塞进了 Microsoft 365。Excel、PowerPoint、Word 三个插件从 beta 转为正式版（GA），Outlook 插件同步进入公测。\n\n意味着不用再切到 https://t.co/vefasn3rYt 网页端，可以在 Excel 表格里、PPT 幻灯片上、Word 文档中、Outlook 邮箱里直接喊 Claude 干活。\n\n真正的卖点是跨应用的上下文衔接。Anthropic 给的典型场景：先在 Outlook 里让 Claude 整理收件箱、起草回复，顺手打开邮件里附的 brief 到 Word；接着让它根据 Word 简报在 Excel 里搭财务模型，公式分布在多个 sheet；再做成 PowerPoint，最后回到 Outlook 起草评审邀请。整个流程里 Claude 带着前一步的上下文走，不需要重新喂材料。\n\n具体能力上，Excel 里 Claude 能改单元格和假设条件而不破坏现有公式；PowerPoint 里它按你的模板排版，生成原生图表而不是塞图片；Word 里改稿用 tracked changes（修订模式）呈现，让你逐条接受或拒绝；Outlook 里草稿会停在草稿箱等你点发送。\n\n定价方面，所有付费 Claude 套餐用户都能用，不需要额外掏钱。",
+      "created_at": "Thu May 07 20:35:41 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2052445786651168849",
+        "text": "Claude for Excel, PowerPoint, and Word are now generally available, and Claude for Outlook is in public beta.\n\nAs Claude moves between your Microsoft apps, it carries the full context of your conversation. https://t.co/l8oOcoFcHg",
+        "created_at": "Thu May 07 17:49:42 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2052441205993009153",
+            "url": "https://video.twimg.com/amplify_video/2052441205993009153/vid/avc1/1920x1080/6xiMqKMJrLXcoAQk.mp4?tag=27",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1943306828697550848",
+          "name": "Claude",
+          "screen_name": "claudeai",
+          "description": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+          "followers_count": 1318034,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1096,
+          "favorite_count": 18136,
+          "reply_count": 484,
+          "quote_count": 354
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 216673,
+        "friends_count": 1632,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 37,
+        "reply_count": 4,
+        "quote_count": 2
+      }
+    },
     {
       "id": "2052471998480281902",
       "text": "RT @TheAliceSmith: So, how many Greeks are acting in Christopher Nolan’s new film The Odyssey?\n\nOh, I forgot. Cultural appropriation only w…",

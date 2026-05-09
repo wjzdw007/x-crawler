@@ -1,12 +1,356 @@
 {
   "date": "20260509",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-05-09T00:37:38.274756",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-05-09T03:08:18.973904",
+  "tweet_count": 209,
+  "unique_tweet_count": 209,
+  "total_crawled": 400,
+  "duplicates_removed": 191,
   "tweets": [
+    {
+      "id": "2052948362668732781",
+      "text": "GPT Image 2 Prompt：水墨风格 Slides/PPT \n\n可以把下面的提示词模板发给 Agent，让 Agent 帮你生成每一页 Slides 的画图 Prompt，Codex 这样有画图能力的直接出图。\n\n--- 提示词模板 ---\n\nTitle: [在此输入幻灯片标题]\n\nKey Points:\n- [要点 1：简洁的描述]\n- [要点 2：核心数据或事实]\n- [要点 3：关键结论]\n\nVisual Elements: \n[描述视觉元素，例如：纹理宣纸背景 (Textured rice paper background)、水墨山水 (Ink-wash motifs)、\n简约的圆圈 (Enso circle)、红色印章 (Red seal mark)、雾气效果 (Mist-grey effects)]。\n整体风格应保持 [Quiet / Restrained / Wabi-Sabi / Contemporary East-Asian Luxury]。\n\nLayout Preference: \n[布局说明，例如：左右分割 (Split layout)、居中对齐 (Centered layout)、\n文字居左且右侧留白 (Left-aligned text with negative space)]。\n\nText Hierarchy: \n[文字层级，例如：标题使用大号衬线字体 (Large Display Serif)，正文使用易读的衬线字体 (Body Serif)，\n确保视觉平衡和清晰的阅读顺序]。\n\nContinuity Note: \n[延续性说明，例如：保持与前一页相同的背景纹理和色调 (#F5F0E8, #2C3E2D)，\n使用相似的印章位置以维持视觉一致性]。\n\n----- 示例 ------\n\nTitle: Agent Loop 深度解析: 揭秘 AI 智能体的心脏.\nKey Points: 核心定义、主要职责、设计目标。\nVisual Elements: 大号优雅标题，背景为宣纸纹理，带有淡淡的水墨山水和圆圈笔触，角落处有红色小印章。\nLayout: 干净的布局，大量留白（Open Sky）。\nText Hierarchy: 标题最为突出，下方是较小的正文。",
+      "created_at": "Sat May 09 03:06:46 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2052948351629336576",
+          "url": "https://pbs.twimg.com/media/HH2JphkXIAAo_qZ.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 216964,
+        "friends_count": 1635,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2052942818570543550",
+      "text": "GPT Image 2 Prompt：中文科技新闻爆款封面生成器\n\n--- Prompt ---\n\n你是一名顶级中文科技媒体视觉设计师。\n\n你的任务是：\n\n根据用户输入的一整篇文章内容，自动提取核心新闻、关键数字、核心产品、行业情绪和信息层级，并生成一张高冲击力的中文科技新闻文章封面图。\n\n图片比例：16:9 横版。\n\n---\n\n【整体风格】\n\n生成一张「中文科技媒体爆款封面图」。\n\n整体风格参考：\n\n* 中国科技媒体头图\n* B站科技区爆款缩略图\n* 财经新闻视觉\n* 游戏行业信息图\n* 高冲击力 YouTube Thumbnail\n* “行业突发新闻”视觉风格\n\n要求：\n\n* 强烈视觉冲击\n* 信息密度高\n* 3 秒内看懂新闻重点\n* 专业媒体感\n* 大量数据卡片\n* 中文粗黑大标题\n* 明确的产品主视觉\n* 明确的情绪表达\n* 不要极简风\n* 不要 Apple 风\n* 不要电影海报风\n* 要像“行业大事件”\n\n---\n\n【自动分析文章】\n\n你必须先自动从文章中提取：\n\n1. 最适合作为封面的主标题\n2. 最有冲击力的副标题\n3. 最重要的数字\n4. 最大涨幅、跌幅或变化幅度\n5. 最核心的产品、品牌或人物\n6. 最能制造视觉冲击的信息\n7. 用户最关心的结论\n8. 文章整体情绪\n\n文章情绪可以是：\n\n* 暴涨\n* 暴跌\n* 涨价\n* 崩盘\n* 封禁\n* 突破\n* 发布\n* 革命\n* 危机\n* 反转\n* 震动\n* 警告\n* 机会\n* 行业洗牌\n\n然后把这些信息转化为视觉设计。\n\n---\n\n【构图结构】\n\n画面采用高密度信息图式布局，自动生成以下区域：\n\n1. 顶部新闻区\n\n* 放品牌名、产品名或行业标签\n* 加入“突发”“官方宣布”“重磅”“最新”“行业震动”等新闻标签\n* 标签内容根据文章情绪自动选择\n\n2. 中央超大标题区\n\n* 使用超巨大中文标题\n* 字体粗壮\n* 强烈立体感\n* 可带轻微破损、压迫、速度或科技纹理\n* 关键词用高亮色突出\n* 标题必须短、狠、直接\n* 让读者 3 秒内知道发生了什么\n\n3. 主视觉产品区\n\n* 自动识别文章中的核心产品、品牌、设备、人物或象征物\n* 将其作为画面最大视觉主体之一\n* 产品应有透视感、层次感、光效和冲击力\n* 背后可以加入行情图、能量光、箭头、爆炸线、科技 HUD、速度线等元素\n\n4. 数据卡片区\n\n自动把文章中的关键信息做成多个卡片，包括但不限于：\n\n* 价格变化\n* 涨跌幅\n* 时间节点\n* 地区差异\n* 销量\n* 成本\n* 市值\n* 用户影响\n* 行业对比\n\n数据卡片要求：\n\n* 旧数据可以使用删除线\n* 新数据必须更醒目\n* 百分比、金额、时间必须突出\n* 每张卡片只表达一个重点\n* 卡片之间层级清晰，不要堆成一团\n\n5. 底部总结区\n\n自动提取文章中的 3–5 个结论，做成图标化摘要：\n\n* 原因\n* 影响\n* 趋势\n* 风险\n* 机会\n* 用户建议\n* 行业判断\n\n每个结论用「图标 + 短句」呈现。\n\n---\n\n【配色策略】\n\n不要固定使用某一种配色。\n你必须根据文章的行业、品牌、情绪和新闻性质，自动生成一套高冲击力封面配色。\n\n配色必须遵循以下原则：\n\n1. 品牌优先\n\n如果文章中出现明确品牌、产品或公司，优先提取其品牌识别色作为主色调。\n但不要机械复制 Logo 颜色，要转化为更适合封面的高对比视觉系统。\n\n2. 情绪优先\n\n根据新闻情绪自动选择色彩方向：\n\n* 涨价、危机、封禁、暴雷、裁员、监管、事故：\n  使用高压迫感、高警示感、高对比色彩。\n\n* 发布、升级、突破、胜利、增长：\n  使用更明亮、更有能量的科技色彩。\n\n* AI、芯片、未来科技、模型发布：\n  使用冷色科技感配色。\n\n* 财经、股价、市值、成本、价格：\n  使用金融信息图配色。\n\n* 游戏、娱乐、消费电子：\n  使用更强烈、更年轻、更商业化的高饱和配色。\n\n3. 对比关系\n\n画面必须建立清晰的对比层级：\n\n* 背景色：负责情绪氛围\n* 主标题色：必须与背景形成强烈反差\n* 重点数字色：必须是全图最醒目的颜色之一\n* 辅助信息色：降低饱和度，避免抢主标题\n* 警示/强调色：只用于关键词、箭头、涨跌幅和标签\n\n4. 色彩数量控制\n\n整张图控制在 3–5 个主要颜色内：\n\n* 1 个主背景色\n* 1 个品牌/主题主色\n* 1 个强强调色\n* 1 个文字高对比色\n* 1 个辅助信息色\n\n不要使用过多杂乱颜色。\n即使信息密度很高，配色也必须统一。\n\n5. 信息情绪匹配\n\n配色必须服务于文章核心情绪：\n\n* 坏消息：压迫感、警示感、冲击感\n* 好消息：爆发感、速度感、未来感\n* 行业分析：专业感、数据感、冷静但有冲击力\n* 消费建议：让用户一眼看到风险、机会或行动窗口\n\n6. 禁止事项\n\n* 不要默认使用红黑配色\n* 不要使用柔和小清新配色，除非文章本身是生活方式、教育、亲子、文艺类主题\n* 不要使用低对比配色\n* 不要让背景色、标题色和数字色互相打架\n* 不要因为品牌色存在，就牺牲可读性\n\n---\n\n【字体】\n\n* 中文超粗黑体\n* 大标题必须极其醒目\n* 数字和百分比必须巨大\n* 重要数字可以使用描边、阴影、立体效果\n* 字体要有新闻冲击感\n* 不要使用纤细字体\n* 不要使用文艺字体\n\n---\n\n【背景】\n\n根据文章情绪自动选择背景元素：\n\n* 财经/涨跌类：行情图、上涨/下跌箭头、数字网格、金融曲线\n* AI/科技类：HUD、芯片纹理、发光线条、数据流\n* 游戏/消费电子类：产品光效、速度线、爆炸形状、品牌元素\n* 危机/监管类：警示纹理、印章、封条、暗色压迫背景\n* 发布/突破类：光束、能量环、未来感渐变、发光粒子\n\n背景不能太空。\n但也不能干扰标题和数字阅读。\n\n---\n\n【排版原则】\n\n* 信息密度高，但层级必须清晰\n* 一眼先看标题\n* 第二眼看产品\n* 第三眼看关键数字\n* 第四眼看细节卡片\n* 所有文字必须尽量清晰可读\n* 中文排版要像专业媒体编辑做的封面\n* 不要平均用力\n* 不要把所有信息做得一样大\n\n---\n\n【输出要求】\n\n最终输出一张：\n\n* 专业\n* 高冲击力\n* 媒体级\n* 中文科技新闻封面图\n* 16:9 横版\n* 信息密集但清晰\n* 适合作为公众号、视频封面、文章头图使用\n\n---\n\n【用户文章】\n\n{{ARTICLE}}",
+      "created_at": "Sat May 09 02:44:44 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2052942732339953667",
+          "url": "https://pbs.twimg.com/media/HH2EicFXwAMAJTm.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2052942757245636614",
+          "url": "https://pbs.twimg.com/media/HH2Ej43WUAY9FHi.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2052942778204553221",
+          "url": "https://pbs.twimg.com/media/HH2ElG8WAAUqewN.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2052942803378868227",
+          "url": "https://pbs.twimg.com/media/HH2EmkuXkAMMohF.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 216964,
+        "friends_count": 1635,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 12,
+        "reply_count": 3,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2052933700996804827",
+      "text": "任天堂今天宣布全线涨价，Switch 2、老款 Switch、Nintendo Switch Online 会员全部上调。\n\n日本市场首当其冲，5 月 25 日起生效。Switch 2 日文版从 49,980 日元涨到 59,980 日元，涨了一万日元，涨幅 20%。老款 Switch 的涨幅更夸张，基础款从 32,978 日元直接跳到 43,980 日元，涨了一万一。Switch Lite 也从 21,978 涨到 29,980，涨幅接近 36%。\n\n美国市场 9 月 1 日生效，Switch 2 从 449.99 美元涨到 499.99 美元，加了 50 美元。欧洲从 469.99 欧元涨到 499.99 欧元，加拿大从 629.99 加元涨到 679.99 加元。\n\nNintendo Switch Online 的日本区会员也要涨。个人年费从 2,400 日元涨到 3,000 日元，家庭年费从 4,500 涨到 5,800，7 月 1 日起生效。韩国也会跟进，其他地区暂未公布。\n\n任天堂在公告中用的措辞是\"市场环境变化\"，预计\"中长期持续\"。翻译成人话就是：短期内别指望降回去。\n\n背后的原因不止一个。任天堂同日发布的财报里提到，预计下一财年因内存等零部件涨价和关税措施，将增加约 1000 亿日元的额外成本。内存价格暴涨和 AI 数据中心的疯狂采购直接相关，AI 公司把存储芯片的产能吃掉了一大块，连带游戏主机这种\"小客户\"也得跟着多掏钱。再加上美国关税的持续压力和日元疲软，任天堂扛了快一年，现在扛不住了。\n\n任天堂不是第一个涨的。索尼的 PS5 过去一年累计涨了超过 150 美元，微软的 Xbox Series 和 Game Pass 也先后提了价。主机游戏正在整体变贵，三大厂商现在全部站在了同一条涨价线上。\n\nSwitch 2 去年 6 月上市，三个季度卖了 1986 万台。但任天堂对下一财年的销量预期只有 1650 万台，明显比外界预期的 2000 万台保守不少。涨价大概率会进一步压缩销量空间。任天堂的用户群体比索尼和微软更偏年轻和家庭向，对价格也更敏感，499 美元的 Switch 2 已经和 PS5、Xbox Series X 站到了同一个价位段。\n\n如果你在考虑入手 Switch 2，美国和欧洲市场还有将近四个月的窗口期，9 月 1 日之前按现价买还来得及。日本玩家就比较紧迫了，5 月 25 日就生效。\n\nhttps://t.co/P5la7kgHSp",
+      "created_at": "Sat May 09 02:08:30 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2052933672051838981",
+          "url": "https://pbs.twimg.com/media/HH18TD4WkAUH3RG.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 216964,
+        "friends_count": 1635,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 8,
+        "reply_count": 8,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2052931934863405446",
+      "text": "https://t.co/CffvnzlYOi",
+      "created_at": "Sat May 09 02:01:29 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2052930530329460881",
+        "text": "其实我不太赞同文章中的观点\n\n两者不是非此即彼的关系，Markdown 是用来保存信息，HTML 是用来展示和交互。\n\n对于 LLM 来说，Markdown 的信息密度是最高的，HTML 是臃肿的，并不适合 HTML 阅读和生成，即使现在 AI 生成 HTML，也需要借助 React 这样的前端技术拆分成模块才能生成的比较好，一个大的 HTML 是无法一次性生成好的。",
+        "created_at": "Sat May 09 01:55:54 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 216964,
+          "friends_count": 1635,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 73,
+          "reply_count": 39,
+          "quote_count": 4
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 216964,
+        "friends_count": 1635,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2052930965719130444",
+      "text": "最早我写东西用 Word、HTML 编辑器，就会经常去纠结格式，画很长时间去调格式，当用 Markdown 后，发现可以更加专注于内容，所以后来我写东西，基本只用 Markdown。",
+      "created_at": "Sat May 09 01:57:38 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 216964,
+        "friends_count": 1635,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2052930530329460881",
+      "text": "其实我不太赞同文章中的观点\n\n两者不是非此即彼的关系，Markdown 是用来保存信息，HTML 是用来展示和交互。\n\n对于 LLM 来说，Markdown 的信息密度是最高的，HTML 是臃肿的，并不适合 HTML 阅读和生成，即使现在 AI 生成 HTML，也需要借助 React 这样的前端技术拆分成模块才能生成的比较好，一个大的 HTML 是无法一次性生成好的。",
+      "created_at": "Sat May 09 01:55:54 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2052929093461528903",
+        "text": "https://t.co/d1MmKpPABz",
+        "created_at": "Sat May 09 01:50:12 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 216964,
+          "friends_count": 1635,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 11,
+          "favorite_count": 62,
+          "reply_count": 9,
+          "quote_count": 2
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 216964,
+        "friends_count": 1635,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 73,
+        "reply_count": 39,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "2052929093461528903",
+      "text": "https://t.co/d1MmKpPABz",
+      "created_at": "Sat May 09 01:50:12 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 216964,
+        "friends_count": 1635,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 11,
+        "favorite_count": 62,
+        "reply_count": 9,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2052918101306757231",
+      "text": "Tesla AI Vision deploys airbags before impact, which greatly reduces risk of injury or death. This comes for free on all new cars.",
+      "created_at": "Sat May 09 01:06:31 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2052900071612784692",
+        "text": "Tesla Vision allows us to deploy airbags up to 70 milliseconds earlier if your Tesla detects an unavoidable collision \n\nThis can be the difference between serious injury &amp; walking away from a crash https://t.co/21p6WttQ9V",
+        "created_at": "Fri May 08 23:54:52 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2052899442588827648",
+            "url": "https://video.twimg.com/amplify_video/2052899442588827648/vid/avc1/3840x2160/TlzqHe4dPH5ZnxWq.mp4?tag=27",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "13298072",
+          "name": "Tesla",
+          "screen_name": "Tesla",
+          "description": "Electric vehicles, giant batteries & solar, AI & robotics",
+          "followers_count": 24794725,
+          "friends_count": 56,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1028,
+          "favorite_count": 7657,
+          "reply_count": 339,
+          "quote_count": 174
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240005488,
+        "friends_count": 1326,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3165,
+        "favorite_count": 26698,
+        "reply_count": 2039,
+        "quote_count": 191
+      }
+    },
+    {
+      "id": "2052914500169613445",
+      "text": "https://t.co/WUgWqV9t28",
+      "created_at": "Sat May 09 00:52:12 +0000 2026",
+      "lang": "zxx",
+      "media": [
+        {
+          "type": "video",
+          "id": "2052877337364979715",
+          "url": "https://video.twimg.com/amplify_video/2052877337364979715/vid/avc1/1920x1080/yG6R4yTJcKimHSTO.mp4?tag=27",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240005488,
+        "friends_count": 1326,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1674,
+        "favorite_count": 13046,
+        "reply_count": 1441,
+        "quote_count": 80
+      }
+    },
     {
       "id": "2052890115421417647",
       "text": "https://t.co/CrThu6GaBY",

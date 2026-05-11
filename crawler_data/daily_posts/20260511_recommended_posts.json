@@ -1,12 +1,140 @@
 {
   "date": "20260511",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-05-11T18:40:05.187415",
-  "tweet_count": 207,
-  "unique_tweet_count": 207,
-  "total_crawled": 402,
-  "duplicates_removed": 195,
+  "last_crawl_time": "2026-05-11T20:37:23.201723",
+  "tweet_count": 209,
+  "unique_tweet_count": 209,
+  "total_crawled": 407,
+  "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2053936809608978758",
+      "text": "RT @yetone: 注意这个 Agent Pets 是依赖 MCP 实现的，所以某种程度上，它可能会干扰 Agent 正在执行的真实任务。\n\n原因很简单：模型需要时刻记得去调用 Agent Pets MCP。\n这等于给大模型额外增加了一层心智负担。\n但问题是，调用这个 MC…",
+      "created_at": "Mon May 11 20:34:30 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2053933995713597831",
+        "text": "注意这个 Agent Pets 是依赖 MCP 实现的，所以某种程度上，它可能会干扰 Agent 正在执行的真实任务。\n\n原因很简单：模型需要时刻记得去调用 Agent Pets MCP。\n这等于给大模型额外增加了一层心智负担。\n但问题是，调用这个 MCP 对任务本身没有任何帮助。\n它不提供信息，不提升推理，也不推进目标，只是在任务链路里插入了一个与结果无关的动作。\n\n换句话说，它会让任务执行变得没那么高效，甚至可以说是一种「降智」。\n这也是为什么 Confirmo 第一版甚至有点洁癖地不改动用户 Agent 的任何配置，只监听 Sessions。直到第二版不得不用 Hooks 实现时，也完全保证了它不会干扰真实任务的执行。\n\n核心原则只有一个：\n\n不要让 Pets 这种只提供情绪价值的功能，干扰到真正宝贵的任务本身。",
+        "created_at": "Mon May 11 20:23:19 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2053789462983835816",
+          "text": "一只趴在桌面的像素宠物，跟着你的 Claude Code 或 OpenCode agent 一起干活。agent 思考它就皱眉，改文件它就敲键盘，跑测试它就转圈，报错了就耷拉耳朵。通过 MCP 连上 agent，所有反应都是本地静态文案。\n\nhttps://t.co/CzEDicAMAi https://t.co/a3tpUoVjwh",
+          "created_at": "Mon May 11 10:49:00 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2053713744468078592",
+              "url": "https://pbs.twimg.com/media/HIBBxQFbcAARskP.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "168139512",
+            "name": "Geek",
+            "screen_name": "geekbb",
+            "description": "🧠在家居士 | 🥦素食者 | 🏃🏻马拉松爱好者 | 💰省钱小能手 | 搭🪜技术资深学者 | 👨‍💻科技宅 | 🆕更新狂 | 🆅 六边型战五渣 | ⚡️ Geek Lite ➮ @QingQ77",
+            "followers_count": 111555,
+            "friends_count": 516,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 4,
+            "favorite_count": 21,
+            "reply_count": 5,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "147786784",
+          "name": "yetone",
+          "screen_name": "yetone",
+          "description": "Work at @isoformai\n\nBuilt a Coding Agent for Vim: avante.nvim\n\nBuilding: https://t.co/pfq9srNgsd\n\nBuilding: https://t.co/fpGnPR5t9C\n\nBuilding: https://t.co/cBN1yzJPIG",
+          "followers_count": 83720,
+          "friends_count": 4522,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 3,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 217631,
+        "friends_count": 1634,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2053927640663257167",
+      "text": "Such hypocrisy",
+      "created_at": "Mon May 11 19:58:04 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2053637946641657964",
+        "text": "Same move. Same hand on the heart, same wave to the crowd. Musk did it and gets called a Nazi to this day. Mamdani does it and those same people have not said a word.\n\nWell, not exactly. Once the side by side clips went viral, some of them did speak up. Not to apologize to Musk. To defend Mamdani.\n\nSuddenly the gesture is not the gesture. Suddenly we need to talk about arm speed. Whether the fingers wiggled at the end. Whether he was smiling. Whether his grandparents were in the right party. A year ago none of that mattered. The hand went up, the verdict came down. Now we get a forensic seminar on millimeters and microseconds to prove Mamdani's arm moved slower.\n\nMamdani's own press office said \"in no way was this a Nazi salute.\" Funny. Musk said the same thing. His did not count. Mamdani's did, instantly.\n\nThat tells you everything. The \"Nazi salute\" thing was never about the gesture. If it were, they would be screaming right now. They are not. It was about Musk. They hate him because he is the richest man in the world and he was attacking their ideological piggy bank with DOGE, so they smeared him.\n\nMamdani is on their team, so he gets a pass, plus a defense team running stopwatch analysis. Same hand, opposite verdict.\n\nA wave is a wave. The rule does not change based on who is waving. When it does, you are not watching principle. You are watching a hit job.",
+        "created_at": "Mon May 11 00:46:55 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1884656076341092352",
+          "name": "The Rational Animal 🤔",
+          "screen_name": "theobjectivist",
+          "description": "Champion of Reason, Individual Rights and Capitalism.",
+          "followers_count": 4979,
+          "friends_count": 640,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 680,
+          "favorite_count": 3585,
+          "reply_count": 213,
+          "quote_count": 30
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240027368,
+        "friends_count": 1324,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1674,
+        "favorite_count": 15604,
+        "reply_count": 1401,
+        "quote_count": 45
+      }
+    },
     {
       "id": "2053894928900501818",
       "text": "RT @EvaFox: Maye Musk on Elon: He wants to leave the world in a better place than he found it\n\n“People often misunderstand Elon. He’s not m…",

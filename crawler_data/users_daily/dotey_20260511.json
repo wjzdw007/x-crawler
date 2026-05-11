@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 217635,
+    "followers_count": 217631,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260511",
-  "last_updated": "2026-05-11T18:40:05.303684",
-  "tweet_count": 1,
+  "last_updated": "2026-05-11T20:37:23.226418",
+  "tweet_count": 2,
   "tweets": [
     {
       "id": "2053856674255978846",
@@ -45,6 +45,75 @@
       "quoted": null,
       "stats": {
         "retweet_count": 3,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2053936809608978758",
+      "text": "RT @yetone: 注意这个 Agent Pets 是依赖 MCP 实现的，所以某种程度上，它可能会干扰 Agent 正在执行的真实任务。\n\n原因很简单：模型需要时刻记得去调用 Agent Pets MCP。\n这等于给大模型额外增加了一层心智负担。\n但问题是，调用这个 MC…",
+      "created_at": "Mon May 11 20:34:30 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2053933995713597831",
+        "text": "注意这个 Agent Pets 是依赖 MCP 实现的，所以某种程度上，它可能会干扰 Agent 正在执行的真实任务。\n\n原因很简单：模型需要时刻记得去调用 Agent Pets MCP。\n这等于给大模型额外增加了一层心智负担。\n但问题是，调用这个 MCP 对任务本身没有任何帮助。\n它不提供信息，不提升推理，也不推进目标，只是在任务链路里插入了一个与结果无关的动作。\n\n换句话说，它会让任务执行变得没那么高效，甚至可以说是一种「降智」。\n这也是为什么 Confirmo 第一版甚至有点洁癖地不改动用户 Agent 的任何配置，只监听 Sessions。直到第二版不得不用 Hooks 实现时，也完全保证了它不会干扰真实任务的执行。\n\n核心原则只有一个：\n\n不要让 Pets 这种只提供情绪价值的功能，干扰到真正宝贵的任务本身。",
+        "created_at": "Mon May 11 20:23:19 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2053789462983835816",
+          "text": "一只趴在桌面的像素宠物，跟着你的 Claude Code 或 OpenCode agent 一起干活。agent 思考它就皱眉，改文件它就敲键盘，跑测试它就转圈，报错了就耷拉耳朵。通过 MCP 连上 agent，所有反应都是本地静态文案。\n\nhttps://t.co/CzEDicAMAi https://t.co/a3tpUoVjwh",
+          "created_at": "Mon May 11 10:49:00 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2053713744468078592",
+              "url": "https://pbs.twimg.com/media/HIBBxQFbcAARskP.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "168139512",
+            "name": "Geek",
+            "screen_name": "geekbb",
+            "description": "🧠在家居士 | 🥦素食者 | 🏃🏻马拉松爱好者 | 💰省钱小能手 | 搭🪜技术资深学者 | 👨‍💻科技宅 | 🆕更新狂 | 🆅 六边型战五渣 | ⚡️ Geek Lite ➮ @QingQ77",
+            "followers_count": 111555,
+            "friends_count": 516,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 4,
+            "favorite_count": 21,
+            "reply_count": 5,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "147786784",
+          "name": "yetone",
+          "screen_name": "yetone",
+          "description": "Work at @isoformai\n\nBuilt a Coding Agent for Vim: avante.nvim\n\nBuilding: https://t.co/pfq9srNgsd\n\nBuilding: https://t.co/fpGnPR5t9C\n\nBuilding: https://t.co/cBN1yzJPIG",
+          "followers_count": 83720,
+          "friends_count": 4522,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 3,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

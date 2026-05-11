@@ -1,12 +1,346 @@
 {
   "date": "20260511",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-05-11T20:37:23.201723",
-  "tweet_count": 209,
-  "unique_tweet_count": 209,
-  "total_crawled": 407,
-  "duplicates_removed": 198,
+  "last_crawl_time": "2026-05-11T22:25:52.164752",
+  "tweet_count": 215,
+  "unique_tweet_count": 215,
+  "total_crawled": 409,
+  "duplicates_removed": 194,
   "tweets": [
+    {
+      "id": "2053959995662749705",
+      "text": "Coursera 今天完成对 Udemy 的收购，两家在线教育领域的老对手合并为一家公司。\n\n交易在 2025 年 12 月 17 日宣布，全股票形式，整体估值约 25 亿美元。Udemy 股东每股换 0.800 股 Coursera 股票，相当于此前 30 个交易日均价的 26% 溢价。原 Coursera 股东持有合并公司约 59% 的股份，原 Udemy 股东占 41%。\n\nUdemy 从纳斯达克退市，合并后的公司沿用 Coursera 名号，继续以 COUR 代码在纽交所交易。Coursera 现任 CEO Greg Hart 继续担任合并后公司的 CEO，吴恩达（Coursera 联合创始人）继续担任董事会主席。\n\nCoursera 由吴恩达和 Daphne Koller 2012 年在斯坦福创立，主打和名校（斯坦福、密歇根大学等）以及大公司合作推出的认证课程，走\"严肃学习 + 学分认证\"路线，企业客户和高校机构是主要收入来源。\n\nUdemy 2010 年创立，做的是开放式课程市场，任何讲师都能上架卖课，目录更杂、价格更便宜，靠 C 端学员的单课零售付费起家。\n\n两家走的是同一个赛道的两端，2021 年前后脚上市。合并后规模：约 2.9 亿注册学习者，1.8 万家企业客户，9.5 万名讲师，超过 31.5 万门课程，2025 年合并年收入超过 15 亿美元。Coursera 预计 24 个月内实现 1.15 亿美元的年化成本协同。\n\nAI 正在重塑各行业对技能的要求。一方面，企业急着让员工补齐 AI 相关技能，培训需求暴涨；另一方面，LLM 本身也是一种学习替代品，遇到不懂的概念问 Claude 或 ChatGPT 就够了，不一定还要去报一门十小时的视频课。",
+      "created_at": "Mon May 11 22:06:38 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2053857910451827061",
+        "text": "I'm delighted that @coursera  and @udemy have come together as one company to serve learners.\n\nBoth Coursera and Udemy were founded with the belief that access to high-quality education changes lives. Over the years, both companies have advanced this goal, creating opportunities for individuals, organizations, and communities around the world.\n\nThat role is even more important now, as AI is changing the nature of work and increasing the need for continuous learning. Helping people build job-relevant skills will be critical to how we create a better world.\n\nBy combining the strengths of both ‌companies, we can better serve this need. We bring together a broader range of learning content, trusted instructors and educators, and engaging learning experiences. This creates new opportunities to make learning more personalized, more applied, and more accessible at scale.\n\nI’m excited to serve as Chairman of the combined company, working alongside Greg Hart and the leadership team. There is a strong foundation in both organizations, and I look forward to what the teams will build together to expand access opportunity globally.\n\nLearn more: https://t.co/QpCwBmqWTJ",
+        "created_at": "Mon May 11 15:20:59 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "216939636",
+          "name": "Andrew Ng",
+          "screen_name": "AndrewYNg",
+          "description": "Co-Founder of Coursera; Stanford CS adjunct faculty. Former head of Baidu AI Group/Google Brain. #ai #machinelearning, #deeplearning #MOOCs",
+          "followers_count": 1515834,
+          "friends_count": 1078,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 230,
+          "favorite_count": 1901,
+          "reply_count": 112,
+          "quote_count": 52
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 217636,
+        "friends_count": 1634,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2053958143411888437",
+      "text": "Claude Code 今天上线了一个新功能：agent view，让开发者可以在一个界面里统管所有正在运行的 AI 编程会话。\n\n过去用 Claude Code 同时跑多个任务，只能靠一堆终端标签页和 tmux 分屏拼凑，脑子里还得记着每个任务跑到哪了。现在不用这么折腾了。\n\n在任意会话里按左箭头，或者直接在终端跑 claude agents，就能打开 agent view 的总览界面。每一行显示一个会话的状态：在等你回复、还在跑、还是已经完成，一眼能看清。\n\n最实用的一点是不用切换上下文就能回复。选中某个会话可以先\"偷看\"最新进展，如果它在等你做决定，直接在那里打回复，它就接着跑。不用打开完整会话窗口，不打断你手头在做的事。\n\n想把某个会话扔到后台？在会话内输入 /bg。想直接起一个后台任务？claude --bg [任务描述]，连前台都不用经过。\n\n目前 agent view 以“研究预览”状态上线，Pro、Max、Team、Enterprise 和 API 用户今天就可以用，直接跑 claude agents 即可激活。",
+      "created_at": "Mon May 11 21:59:16 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2053940934736228454",
+        "text": "New in Claude Code: agent view.\n\nOne list of all your sessions, available today as a research preview. https://t.co/NnbsAQjSPW",
+        "created_at": "Mon May 11 20:50:53 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2053935379166687232",
+            "url": "https://video.twimg.com/amplify_video/2053935379166687232/vid/avc1/3840x2160/blJrzjlcZtyj_LfB.mp4?tag=27",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1943306828697550848",
+          "name": "Claude",
+          "screen_name": "claudeai",
+          "description": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+          "followers_count": 1346156,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 407,
+          "favorite_count": 7086,
+          "reply_count": 318,
+          "quote_count": 183
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 217636,
+        "friends_count": 1634,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 5,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2053954397802012934",
+      "text": "RT @SpaceX: Launch rehearsal complete. During a flight-like countdown, more than 5,000 metric tonnes (11+ million pounds) of propellant wer…",
+      "created_at": "Mon May 11 21:44:23 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2053929135936864393",
+        "text": "Launch rehearsal complete. During a flight-like countdown, more than 5,000 metric tonnes (11+ million pounds) of propellant were loaded on the fully stacked Starship and Super Heavy V3 vehicles for the first time https://t.co/e9oZlzc0yz",
+        "created_at": "Mon May 11 20:04:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2053928568783093760",
+            "url": "https://pbs.twimg.com/media/HIEFJrBXwAALuiq.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2053928588534009858",
+            "url": "https://pbs.twimg.com/media/HIEFK0mW0AIH5xq.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2053928609111330817",
+            "url": "https://pbs.twimg.com/media/HIEFMBQX0AEZuE0.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2053928629160095745",
+            "url": "https://pbs.twimg.com/media/HIEFNL8XsAElOeE.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41658074,
+          "friends_count": 123,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1797,
+          "favorite_count": 11466,
+          "reply_count": 602,
+          "quote_count": 195
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239996066,
+        "friends_count": 1324,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1797,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2053954148010270846",
+      "text": "RT @DashHuang: 这东西很蠢，还在以传统人类的认知局限来安排 AI Agent 的工作。游戏工作室要那么多岗位是因为大部分人太弱鸡，能力太有限了。AI 明明有更全面的能力，可以纵览全局，却还要用人类的职业习惯困住他们手脚，把他限制成螺丝钉。可笑！\n另外烦透了这种“卧…",
+      "created_at": "Mon May 11 21:43:24 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2053789384068227438",
+        "text": "这东西很蠢，还在以传统人类的认知局限来安排 AI Agent 的工作。游戏工作室要那么多岗位是因为大部分人太弱鸡，能力太有限了。AI 明明有更全面的能力，可以纵览全局，却还要用人类的职业习惯困住他们手脚，把他限制成螺丝钉。可笑！\n另外烦透了这种“卧槽”，链接见评论的套路。吹之前能不能自己先用用?",
+        "created_at": "Mon May 11 10:48:41 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2053709074466824688",
+          "text": "卧槽，有大神直接用Claude Code，复刻出一整套完整游戏开发工作室。\n\nGitHub 1.8万stars，免费开源，项目名叫Claude Code Game Studios，\n\n48个AI智能体1:1还原线下工作室全岗位，从创意总监到关卡设计师全覆盖。\n\n36条斜杠指令一键启动全流程，适配Godot Unity Unreal三大游戏引擎。\n\n自带自动化校验钩子、分路径编码规则、28套行业标准文档模板，架构拉满。\n\n所有AI只做梳理方案不擅自操作，决策权全程握在自己手里。\n\n克隆仓库一键启动，MIT开源可商用，凭空拥有一支专业游戏开发团队。\n\n老规矩GitHub地址评论区自取！",
+          "created_at": "Mon May 11 05:29:34 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2053709064140435456",
+              "url": "https://pbs.twimg.com/media/HIA9g0gXMAAHQML.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1974653328274714624",
+            "name": "阿绎 AYi",
+            "screen_name": "AYi_AInotes",
+            "description": "大厂组织发展专家 × 心理学硕士 × AI 重度实践者 \n分享有用的 AI 实践，也分享工具之外的深度认知\nAIGC | Prompt Engineering | 商业思维 丨职场丨认知心理学\n🐈 喜欢健身，玩游戏，和 4 只猫一起生活和工作",
+            "followers_count": 43250,
+            "friends_count": 364,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 73,
+            "favorite_count": 391,
+            "reply_count": 24,
+            "quote_count": 5
+          }
+        },
+        "user": {
+          "id": "1166761",
+          "name": "Dash",
+          "screen_name": "DashHuang",
+          "description": "心动公司 CEO，TapTap、VeryCD创始人。",
+          "followers_count": 113806,
+          "friends_count": 687,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 18,
+          "favorite_count": 260,
+          "reply_count": 70,
+          "quote_count": 11
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 217636,
+        "friends_count": 1634,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 18,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2053943794165318109",
+      "text": "Cursor 最大的劣势是没自己的顶尖模型，最大的优势是可以用任何一家模型\nhttps://t.co/cM6NSwe5L8",
+      "created_at": "Mon May 11 21:02:15 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2053941929394794946",
+        "text": "@dotey 目前来看，cursor最有可能",
+        "created_at": "Mon May 11 20:54:51 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2039004517123936257",
+          "name": "最奶的龙",
+          "screen_name": "zuinaidelong",
+          "description": "",
+          "followers_count": 8,
+          "friends_count": 84,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 217636,
+        "friends_count": 1634,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2053940091970580736",
+      "text": "Codex 的野心，MCP 和 Skill 的下一步\n\n这段时间我在密集使用 Codex App、Cursor 等 Agent 应用，有件事越来越觉得有意思。\n\n去年大家争的是谁家模型更强，今年争的好像变成了谁家窗口右侧更好用。\n\nCodex、Claude 桌面版、Cursor 3.0、TRAE SOLO，这几家最顶尖的 Agent，在完全没有协商的情况下，几乎同时收敛到了同一个界面布局：左侧是项目和会话列表，中间是和 Agent 的对话，右侧是工作区，放着文件浏览、网页预览、文件变更审查这些功能。\n\n肯定不是相互之间的抄袭，更像是当前 Agent 交互的最优解。\n\n【1】为什么是三栏\n\n传统 Chatbot 只需要两栏，左边会话历史，右边对话窗口，你问它答，用完走人。\n\n到了 Agent 时代，Agent 能自己写代码、改文件、调工具了。它做完之后，你得看看有没有做对——右侧工作区就是为这件事出现的。\n\n但这只是第一阶段。\n\n随着用户越来越多时间是在指挥 Agent，打开 VSCode 这类专业工具的时间自然越来越少。那个问题迟早会冒出来：Agent 帮你写完代码、做完 PPT，你想微调几个字，还要专门切出去打开另一个软件？\n\n没有人愿意这样。用户的自然期待是：能不能直接在 Agent 里改？这也是目前 Codex App 呼声最高的功能之一（另一个呼声高的是手机版，马上要出了）。\n\n于是各家开始悄悄升级右侧工作区，让它从只能看文件编辑记录，变成了一个多功能区。Codex 在 4 月 16 日的大版本更新里，右侧工作区的改动幅度是所有功能里最大的。\n\n交互细节上各家略有差异。Codex 和 Cursor 用 Tab 切换，Claude 用浮动面板。我自己用下来觉得 Codex 最顺手，Claude 的浮动面板方案设计感有余、实用性不足，迟早要改。\n\n【2】Codex 的真正野心\n\n但如果只把这个变化读成“设计界面进化”，就低估 Codex 了。\n\nCodex 4 月大版本发布时的口号是“Codex for (almost) everything”——几乎任何任务都能做。你可以把它理解成一句广告口号，但更像是一个产品方向的声明。\n\n要兑现这句话，Codex 不能只是个擅长写代码的 Agent，它必须能处理各种文件格式，支持各领域的专业工作流，还要让用户能在它里面完成全程闭环，包括最后的人工微调。\n\n目前 Codex 还做不到最后一步：生成之后无法编辑，代码、Markdown、PPTX 都不行。这可能是产品上有意为之的克制，可能是技术上还没跑通，也可能是在等一个统一的解决方案出现。\n\n我猜是第三种。\n\n【3】MCP 和 Skill 都只解决了一半\n\n要理解 Codex 在等什么，得先想清楚 Agent 能力拼图里现在差哪一块。\n\nMCP 解决了“连接”问题：Agent 通过统一规范接入各种工具，数据库、日历、代码仓库，都能打通。\n\nAgent Skills 解决了“怎么做”的问题：Agent 学会了它没训练过的领域知识和最佳实践，比如怎么写特定风格的文章，怎么处理某类复杂任务。\n\n这两件事做得都还不错。但有一块缺口始终没补上：用户的二次编辑。\n\n你让 AI 写完一篇文章，最后还是要自己打开编辑器改几处，毕竟很多时候最后那 5% 的精准度，只有自己动手才能到位。就算将来 AI 再聪明，它也做不到百分百的懂你，还是少不了要手动去做修改。\n\n于是最近 Markdown 编辑器又火了，各种 Vibe Coding 出来的 Markdown 产品满天飞。\n\n但 Codex 不会自己做一个 Markdown 编辑器，因为每个人的偏好都不一样，做出来永远有人不满意；更何况它也不可能把每个垂直领域的专业编辑器都集成进来。\n\n最合理的路，是插件机制。\n\n【4】下一步：Agent 版 App Store\n\n把 Agent 做成平台，让社区来贡献插件，就像 VSCode 和 Chrome 那样。\n\nCodex 只需要聚焦在 Agent 调度这一层，把文件预览、二次编辑、垂直领域的专业能力都交给插件来扩展。用户按需安装，做设计的装设计插件，写作者装写作插件。\n\n插件机制还能顺手解决一个长期没有答案的问题：Skill 没办法商业化。\n\n我自己的 baoyu-skills 快 2 万 Star 了，但从中赚到的钱是 $0。Skill 这东西几乎是透明的，对 Agent 透明，对人也透明，复刻成本极低，不管你写得再好，护城河都很浅。\n\n插件不一样。App Store 和 Chrome 插件市场已经跑通了一套收费和版权保护机制，把它移植到 Agent 插件市场完全可行。好插件可以收费，开发者才有持续打磨的动力，生态才真正能转起来。\n\nCodex 现在已经有了一个非常原始的插件市场。从这里到成熟的收费插件生态，还有很长的路，但方向是对的。\n\n想做这件事的不止 Codex 一家。Cursor 我能看到类似的影子。唯独 Claude Code 和 Cowork，目前没看到这个方向的产品迹象——也许他们不屑于做，也许只是还没走到这一步。\n\n【5】留给中小团队的窗口\n\n如果 Codex 真的跑通了插件生态，对中小团队意味着什么？\n\n除了自己做一个垂直 Agent，还有另一条路：在 Codex 这样的平台上做插件。不用自己搭 Agent 调度层，不用解决 Token 接入，用户分发也靠平台。你只需要专注在那个“最后一公里”——帮用户把 Agent 生成的结果处理好、编辑好、用得顺手。\n\n这个窗口不会开太久。先进去的能拿到冷启动红利，晚进去的只剩存量竞争。\n\n时间点不会太远，也许就在这几个月。\n\nCodex 的野心摆在那里，“几乎任何任务”这个口号要真正兑现，插件机制是绕不过去的一步。如果 OpenAI 在这件事上继续犹豫，那才是真的失误。\n\n你觉得这个插件生态最后会是哪家先跑通？或者说你觉得有更适合 Agent 的产品表现形式？欢迎留言分享！",
+      "created_at": "Mon May 11 20:47:32 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2053938582524510208",
+          "url": "https://pbs.twimg.com/media/HIEOQjHXwAAmvnC.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 217636,
+        "friends_count": 1634,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 41,
+        "reply_count": 14,
+        "quote_count": 4
+      }
+    },
     {
       "id": "2053936809608978758",
       "text": "RT @yetone: 注意这个 Agent Pets 是依赖 MCP 实现的，所以某种程度上，它可能会干扰 Agent 正在执行的真实任务。\n\n原因很简单：模型需要时刻记得去调用 Agent Pets MCP。\n这等于给大模型额外增加了一层心智负担。\n但问题是，调用这个 MC…",

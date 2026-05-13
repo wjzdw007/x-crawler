@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 218137,
+    "followers_count": 218147,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260513",
-  "last_updated": "2026-05-13T18:41:01.956508",
-  "tweet_count": 5,
+  "last_updated": "2026-05-13T20:37:05.991160",
+  "tweet_count": 7,
   "tweets": [
     {
       "id": "2054383106115678639",
@@ -228,6 +228,90 @@
         "retweet_count": 5,
         "favorite_count": 18,
         "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2054651679786914278",
+      "text": "Anthropic 把 Claude Code 的每周用量上限提了 50%，即刻生效，截止到 7 月 13 日下午 6 点（太平洋时间）。\n\n覆盖 Pro、Max、Team 和按席位计费的 Enterprise 用户，命令行、IDE 插件、桌面端、网页端，所有入口都一样涨。账号已经自动调整，不用做任何操作。\n\n这 50% 是叠加在上周刚宣布的 5 小时窗口翻倍之上的，两个维度的天花板一起被抬。\n\n【注：Claude Code 有两套限额。5 小时滚动窗口管的是短时间内能写多少，写得猛的人一下午就能撞顶；每周总额管的是一周能写多少，防止你某天突然把整周配额刷光。两个一起放宽，等于哪头都松了绑。】\n\n过去几个月 Claude Code 用户最常吐槽的就是 Pro 套餐限额触发太勤，跟 Cursor、Codex 这些竞品比，\"用着用着就停\"的体感差不少。短期内连开两次额度，留人的意图挺明显。\n\n7 月 13 日之后是否延续，没说。",
+      "created_at": "Wed May 13 19:55:08 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2054639777685934564",
+        "text": "Claude Code weekly limits are increasing 50%, now through July 13.\n\nLive now for all Pro, Max, Team, and seat-based Enterprise users. https://t.co/5nU0XX4RZY",
+        "created_at": "Wed May 13 19:07:51 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2054638866423066624",
+            "url": "https://pbs.twimg.com/media/HIOLKb7bsAAXtoD.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2024518793679294464",
+          "name": "ClaudeDevs",
+          "screen_name": "ClaudeDevs",
+          "description": "Official updates for developers building with @ClaudeAI",
+          "followers_count": 404712,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 476,
+          "favorite_count": 6706,
+          "reply_count": 501,
+          "quote_count": 350
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 12,
+        "reply_count": 5,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2054658140373680577",
+      "text": "从 6 月 15 日起，Claude 付费套餐的程序化调用（Agent SDK、claude -p 命令行、Claude Code GitHub Actions、以及 Conductor 和 OpenClaw 这类基于 Agent SDK 的第三方工具）会有一个单独的月度 credit。\n\n听起来像是分了口袋，省得自动化任务把交互式额度烧光。但看数额就知道问题在哪：Pro 20 美元，Max 5x 100 美元，Max 20x 200 美元，Team 标准席位 20 美元一人，Team 高级席位 100 美元一人。\n\n按 Anthropic 自己的 API 价格算，Pro 的 20 美元用 Sonnet 只够大约六七百万 token 输入或一百多万 token 输出，几轮密集的 agent 循环就见底。Max 20x 用户每月付 200 美元订阅费，拿到的 SDK credit 正好也是 200 美元。\n\n关键在于变化方向。之前 SDK 和交互式聊天共用订阅套餐的 rate limit（速率限制），Claude Code 重度用户能在订阅价格下跑出远超 200 美元等价的 API 用量，这是订阅模式的吸引力所在。现在 SDK 端被按美元封顶，相当于把这块超额价值收回去了。Anthropic 在帮助文档里也挑明：团队跑生产级共享自动化的，应该转去 Claude Developer Platform 用 API key 按量付费，订阅套餐\"不是为这个场景设计的\"。\n\n受冲击最大的是第三方工具用户。之前用 OpenClaw、Conductor 这类基于 Agent SDK 的 agent 工具的人，本质上是\"用订阅价跑高频自动化\"。新政之下，这条路只剩 credit 那一点点额度可走，烧完要么转 extra usage（额外用量，按 API 价付钱）继续跑，要么停到下个月 credit 重置。\n\n不受影响的部分：API key 用户照旧按量付费；交互式 Claude Code（终端和 IDE 里手敲那种）、Claude Cowork，以及网页/桌面/手机端的 Claude 聊天，都继续走原本的订阅限额。\n\n6 月 8 日 Anthropic 会给符合条件的用户发邮件领取，6 月 15 日生效。",
+      "created_at": "Wed May 13 20:20:49 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2054610152817619388",
+        "text": "Starting June 15, paid Claude plans can claim a dedicated monthly credit for programmatic usage.\n\nThe credit covers usage of:\n- Claude Agent SDK\n- claude -p\n- Claude Code GitHub Actions\n- Third-party apps built on the Agent SDK",
+        "created_at": "Wed May 13 17:10:07 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2024518793679294464",
+          "name": "ClaudeDevs",
+          "screen_name": "ClaudeDevs",
+          "description": "Official updates for developers building with @ClaudeAI",
+          "followers_count": 404712,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 320,
+          "favorite_count": 6110,
+          "reply_count": 525,
+          "quote_count": 542
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 217876,
+    "followers_count": 217900,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260512",
-  "last_updated": "2026-05-12T22:29:30.243911",
-  "tweet_count": 8,
+  "last_updated": "2026-05-13T00:39:48.088490",
+  "tweet_count": 9,
   "tweets": [
     {
       "id": "2054012031922057677",
@@ -268,6 +268,28 @@
         "favorite_count": 2,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2054330598596981218",
+      "text": "Anthropic 今天正式上线了一个叫做「Claude for Legal」的仓库，一口气放出了 12 个针对具体法律岗位的插件，以及超过 20 个连接行业常用软件的 MCP 连接器。\n\n无论你是公司法务、打并购战的律所、专注隐私和 AI 治理的法律顾问，还是每天苦熬到半夜的诉讼律师，甚至是法学院里摸爬滚打的学生，这个仓库都给你准备好了对应的 AI 工具，直接在 GitHub 上开源了：https://t.co/LfyrN6b0yo。\n\n这些插件用之前不是即插即用，你得花 10 到 20 分钟，带着 Claude 做个简单的“冷启动访谈”，把你团队的 playbook、模板和风格习惯都塞进一个叫 CLAUDE.md 的本地文件。这样，以后每个插件干活儿的时候，都自动按照你自家的风格和标准来。\n\nAnthropic 这么搞，是为了彻底解决 AI 法律工具最常见的槽点：输出内容太通用，看起来不像哪家律所自己的东西。\n\nAnthropic 还是挺懂律所的痛点的。\n\n比如 Vendor Agreement Reviewer 插件，它能自动对照你家合同模板改供应商协议，还贴心地输出一份 redline 备忘录；\n又比如 NDA Triager，帮你自动把涌进来的 NDA 文件按绿黄红分级，绿灯放行、红灯直接推律师处理；\nClaim Chart Builder 插件可以一键生成专利侵权对比表；\nPrivilege Log Reviewer 自动帮你跑第一轮特权日志审查；\n而 Docket Watcher 插件则不知疲倦地盯着法院动静，帮你把最新动态实时扫进来。\n\n简单讲，就是把律所里最烦、最机械、最浪费人力的活，变成了一个个简单的 slash command。\n\n如果说插件解决的是律所内部效率问题，那么对行业系统的深度接入才真正体现 Anthropic 的野心。\n\n现在，Thomson Reuters 的 CoCounsel、Harvey，还有 iManage、NetDocuments、Ironclad、DocuSign、Everlaw、Relativity、Box、Datasite 等几乎所有你能叫得上名字的平台，全都接入了官方 MCP 连接器。日常办公的 Word、Excel、Outlook、PPT 也全线打通。合同改完后，Claude 甚至会直接输出成 Word 修订模式，律师一条条接受或拒绝就行。\n\nAnthropic 不只是把目光停留在高端律所。他们还特意做了些更「接地气」的事儿，联合 Free Law Project 和 Justice Technology Association，给法律援助机构、公设辩护人、非营利法律组织推出特别折扣，连给普通当事人设计的 Courtroom5 工具也接进来了。这点挺让人感触的，因为美国大约八成民事诉讼里的原被告，根本请不起律师。\n\nClaude for Legal 背后的大脑是刚升级的 Claude Opus 4.7 模型。Anthropic 很谨慎地强调：所有插件输出都是“仅供律师审阅的草稿”，绝对不能替代律师的专业判断。\n\nREADME 文件里反复提醒：引用必须追踪来源，涉及特权和主观法律判断时，要默认保守处理。毕竟法律这件事，AI 还是不能完全代替专业律师。\n\n官方博客：https://t.co/u53lPbvuVn",
+      "created_at": "Tue May 12 22:39:16 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2054330525330911233",
+          "url": "https://video.twimg.com/amplify_video/2054330525330911233/vid/avc1/3840x2160/t0Qv4OjCN6B7N9W4.mp4?tag=27",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 31,
+        "favorite_count": 151,
+        "reply_count": 16,
+        "quote_count": 5
       }
     }
   ]

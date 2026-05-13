@@ -1,12 +1,67 @@
 {
   "date": "20260513",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-05-13T16:50:31.053938",
-  "tweet_count": 217,
-  "unique_tweet_count": 217,
-  "total_crawled": 415,
-  "duplicates_removed": 198,
+  "last_crawl_time": "2026-05-13T18:41:01.930037",
+  "tweet_count": 218,
+  "unique_tweet_count": 218,
+  "total_crawled": 417,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2054609453467517363",
+      "text": "要做好字幕 SRT，断句最重要，其次是纠正拼写错误。这些可以借助 AI 或者 Agent 来做了。\n\n不过前提是先生成单词级别的时间戳，这样才能在组合后拼回去，现在主流语音识别模型都支持输出 json 格式，每个单词都标注清楚start和end的timestamp。\n\n英文断句很简单，只要找标点符号就可以切分成长度合适的。\n\n但中文断句要难一些，中文语音用whisper生成，吐出来的是一大坨没有标点的，并且它的“word”不是一个汉字，而是几个汉字。\n\n所以需要借助大模型去断句加标点，然后再重新对齐时间戳再拆分，就需要用一些比较复杂的代码算法辅助。当然理论上来说 Agent 也能帮你做，就是费 Token 些。\n\n还有一个坑就是几个小时的访谈，大模型是没办法一次性处理的，需要分块，但是分块还要注意不能切分在一句话中间。\n\n最后不一定要用 Whisper API，现在电脑跑 Whisper 模型还是足够。\n\n如果是 Mac，推荐用 WhisperKit，支持word level timestamp，以及识别 speaker\nhttps://t.co/SKlsFGZqAw",
+      "created_at": "Wed May 13 17:07:21 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2054569776358490216",
+        "text": "Whisper API 直接吐的 SRT，几乎不能用。\n\n两个失败模式：\n- 30 秒一大块字幕，没人读得完\n- 安静段循环幻觉「你很难的」× 50\n\n修法：response_format=verbose_json + timestamp_granularities[]=word，自己拼 cue。\n\n别让不懂你需求的工具替你做边界决定。\n\n源码：https://t.co/dKQ0jmi3ha https://t.co/Hk5S8iOhf5",
+        "created_at": "Wed May 13 14:29:41 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2054569646947475456",
+            "url": "https://pbs.twimg.com/media/HINMNVSaoAARBGd.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "999081",
+          "name": "Jianshuo Wang",
+          "screen_name": "jianshuo",
+          "description": "微信公众号：王建硕\n网站：https://t.co/fhvKqZ7qUH",
+          "followers_count": 7377,
+          "friends_count": 1201,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 2,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 218137,
+        "friends_count": 1634,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 18,
+        "reply_count": 6,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2054600263189582234",
       "text": "RT @bkingfilm: 一个游戏项目最危险的时候，可能不是没人看好，而是突然被公司重视。\n\n3个人做 demo，3个月搭起来，效果不错，老板问：一个月一个英雄要多少人？\n\n团队从几十人快速冲到七八十人，资源来了，管理也来了。\n\n但制作人管理经验却跟不上，还没空去盯产品了…",

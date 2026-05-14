@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 218367,
+    "followers_count": 218371,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260514",
-  "last_updated": "2026-05-14T20:34:09.386949",
-  "tweet_count": 6,
+  "last_updated": "2026-05-14T22:26:56.461493",
+  "tweet_count": 7,
   "tweets": [
     {
       "id": "2054768295534846239",
@@ -196,6 +196,52 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2055029251762422196",
+      "text": "OpenAI 把 Codex 搬进了 ChatGPT 手机 App，今天在 iOS 和安卓上同步开启 preview，所有 ChatGPT 用户都能用，包括免费版和最低价的 Go 套餐。\n\n手机端不是让你在手机上写代码。真正干活的 Codex 还是跑在你的笔记本、Mac mini 或者 devbox 上，手机只是一个远程窗口：地铁上能看 Codex 跑到哪一步、审一眼它改的 diff 和跑的测试结果、批准下一步操作，或者临时换个方向走。文件、凭证、权限都留在原来那台机器上，不上传到手机。\n\nOpenAI 的解释是底层走了一层 secure relay 中继,让跑着 Codex 的机器能跨设备保持可达,又不直接暴露在公网上。你在哪台设备登录 ChatGPT，会话状态和上下文就跟到哪里。\n\n为什么现在做。OpenAI 自己公布的数字是 Codex 每周活跃用户已经过 400 万。当 agent 越来越多地跑长任务，几十分钟甚至几小时的那种，人坐在电脑前盯着就很傻，你需要随手能看一眼、能拍板的能力。\n\n一个明显限制：手机端目前只能连 macOS 上的 Codex，Windows 支持据说”很快”。\n\n另一层意思是，OpenAI 没给 Codex 单独做手机 App，而是塞进 ChatGPT 主 App。这跟他们之前透露过的”超级 App”路线一致，把 ChatGPT、Codex、Atlas 浏览器整合成一个入口。桌面端是独立的 Codex App，手机端直接合并进 ChatGPT。\n\n参照系是 Anthropic。Claude Code 从去年秋天起就支持手机远程查看和介入正在跑的任务，后面的 Cowork 配套移动端走的也是类似 dispatch 思路。Codex 这次把覆盖范围扩到了 devbox 和远程企业环境（支持 remote SSH 接入），算是追平加扩张。",
+      "created_at": "Thu May 14 20:55:28 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2055016850849993072",
+        "text": "You've been asking for this one...\n\nNow in preview: Codex in the ChatGPT mobile app.\n\nStart new work, review outputs, steer execution, and approve next steps, all from the ChatGPT mobile app. Codex will keep running on your laptop, Mac mini, or devbox. https://t.co/9i2Jckjt9z",
+        "created_at": "Thu May 14 20:06:12 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2055015698280411136",
+            "url": "https://video.twimg.com/amplify_video/2055015698280411136/vid/avc1/2160x2160/7HZezPVzDzyCXsCX.mp4?tag=27",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 4854681,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1066,
+          "favorite_count": 9590,
+          "reply_count": 785,
+          "quote_count": 880
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 34,
+        "reply_count": 7,
+        "quote_count": 4
       }
     }
   ]

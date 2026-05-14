@@ -1,12 +1,156 @@
 {
   "date": "20260514",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-05-14T03:08:50.359275",
-  "tweet_count": 201,
-  "unique_tweet_count": 201,
-  "total_crawled": 400,
-  "duplicates_removed": 199,
+  "last_crawl_time": "2026-05-14T05:20:00.297475",
+  "tweet_count": 205,
+  "unique_tweet_count": 205,
+  "total_crawled": 401,
+  "duplicates_removed": 196,
   "tweets": [
+    {
+      "id": "2054780317354135591",
+      "text": "RT @cb_doge: Elon Musk with NVIDIA CEO Jensen Huang, Apple CEO Tim Cook, President Trump, Chinese President Xi Jinping, and members of the…",
+      "created_at": "Thu May 14 04:26:18 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2054772312411668535",
+        "text": "Elon Musk with NVIDIA CEO Jensen Huang, Apple CEO Tim Cook, President Trump, Chinese President Xi Jinping, and members of the U.S. delegation in Beijing. https://t.co/sooA1y9yl1",
+        "created_at": "Thu May 14 03:54:29 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2054772162637217792",
+            "url": "https://video.twimg.com/amplify_video/2054772162637217792/vid/avc1/1920x1080/z8YvNGBey5WXAdtx.mp4?tag=27",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1861836,
+          "friends_count": 946,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 585,
+          "favorite_count": 4449,
+          "reply_count": 590,
+          "quote_count": 66
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239902001,
+        "friends_count": 1328,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 585,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2054776883493904838",
+      "text": "Anthropic 刚推出 Claude for Small Business，把 AI 直接集成到 QuickBooks、PayPal、HubSpot、Canva、DocuSign 这些小企业每天用的工具里。你只要打开 Claude 桌面端的开关，就能一键启动 15 个预设技能：工资核算、现金流预测、催款、做营销素材、签合同，甚至新员工入职全自动搞定。\n\n收费方式很克制：不额外加钱，只要 Claude 订阅费加上 SaaS 工具的钱。安全方面也放心，工作流必须人为启动审批，Claude 拿不到你本来没有的权限，Team 和 Enterprise 用户数据默认不拿来训练模型。\n\n最近 Anthropic 发布节奏很快：上周金融版发布，这周法律版更新，现在轮到小企业版了。理由也很直接：美国小企业撑起44%的 GDP，却一直没人专门给他们做 AI 产品。\n\n5 月 14 日开始，Anthropic 会在芝加哥、达拉斯等十个城市办免费半天培训，每场限 100 个本地小企业主。线上还有和 PayPal 合作的免费课程，让老板们快速搞懂怎么用 AI。\n\n不过，这招对传统 SaaS 厂商不算友好。Claude 把 QuickBooks、HubSpot 这些工具变成后台，用户界面都不用打开。过去几个月，Salesforce、DocuSign 等公司的股价已经一路下跌。Anthropic CEO Dario Amodei 甚至说过：“单个 SaaS 厂商很可能迅速失去市值，甚至倒闭”。\n\n但讽刺的是，这次 Claude 接入的工具列表里，恰好有几家他刚刚点名的公司。一边说人家要倒闭，一边还要用人家的工具……\n\n产品页面：https://t.co/DW6zPT4rxd",
+      "created_at": "Thu May 14 04:12:39 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2054776811796504576",
+          "url": "https://video.twimg.com/amplify_video/2054776811796504576/vid/avc1/1920x1080/_I-Xyf75QbZZAuya.mp4?tag=27",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 218205,
+        "friends_count": 1634,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 6,
+        "favorite_count": 38,
+        "reply_count": 11,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2054774181808488756",
+      "text": "问：上下文（Context）和上下文窗口（Context Window）什么差别？\n\n这两个概念经常被混用，但其实指的是不同层面的东西：\n\n上下文是指 AI Agent 在执行任务时实际拥有的所有信息，包括系统提示词、用户的对话历史、检索到的文档、工具调用的结果、记忆模块注入的内容等等。你可以把它理解为“Agent 此刻脑子里装的所有东西”。上下文是一个动态的、可以被工程化管理的概念——哪些信息该放进来、什么时候放、怎么组织，这就是现在越来越多人说的 Context Engineering。\n\n上下文窗口则是模型层面的一个硬性限制，指的是模型单次推理能处理的最大 token 数量。比如 128K、200K、1M 这些数字，说的就是上下文窗口的大小。它本质上是一个“容器的容量”。\n\n打个比方：上下文窗口是你厨房操作台的面积，上下文是你实际摆在台面上的食材、调料、菜谱和工具。台面就那么大（上下文窗口有上限），但你放什么上去、怎么摆放（上下文的管理）决定了你能不能高效做菜。\n\n在 Agent 开发中，一个核心挑战就是：Agent 需要的上下文往往远超上下文窗口的容量。对话越来越长、工具调用结果越来越多、检索的文档越来越大——这些都在消耗上下文窗口的空间。所以才需要各种策略来管理：摘要压缩历史对话、选择性检索而不是全量灌入、及时清理不再需要的中间结果等等。\n\n简单总结就是：上下文（Context）是“内容”，上下文窗口（Context Window）是“装内容的容器”。做 Agent 工程的核心功夫之一，就是在有限的“上下文窗口”里塞进最有价值的“上下文”。",
+      "created_at": "Thu May 14 04:01:55 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2054773486736801792",
+          "url": "https://pbs.twimg.com/media/HIQFmXrWgAAsaMS.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 218205,
+        "friends_count": 1634,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 36,
+        "reply_count": 7,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2054768295534846239",
+      "text": "baoyu-skills 新加了一个 Skill：\n微信群聊总结 Skill：https://t.co/99tEbqlnXH\n\n依赖于 wx-cli：https://t.co/dTgqW5CG7f\n如何配置使用 wx-cli 请看项目文档，无法提供帮助。另外目前只是借助其读取数据，其他没任何关系。\n\nClaude Code + Claude Opus 4.6 效果最佳",
+      "created_at": "Thu May 14 03:38:32 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 218205,
+        "friends_count": 1634,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 6,
+        "favorite_count": 40,
+        "reply_count": 5,
+        "quote_count": 1
+      }
+    },
     {
       "id": "2054732429416636856",
       "text": "RT @chrisparkX: posting on 𝕏 30,000 ft in the air \nall thanks to @Starlink @United 🫶 https://t.co/EdlOzqVcal",

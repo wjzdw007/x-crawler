@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 218531,
+    "followers_count": 218538,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260515",
-  "last_updated": "2026-05-15T18:35:49.140808",
-  "tweet_count": 10,
+  "last_updated": "2026-05-15T20:29:34.242647",
+  "tweet_count": 12,
   "tweets": [
     {
       "id": "2055097242755706984",
@@ -408,6 +408,73 @@
         "retweet_count": 25,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2055357875262730608",
+      "text": "ChatGPT 和 Codex 要合二为一\n\nOpenAI 周五对内宣布新一轮组织调整。联合创始人兼总裁 Greg Brockman 正式接管公司产品战略，旗下 ChatGPT、编程智能体 Codex 以及面向开发者的 API 业务被整合进同一个核心产品团队。Brockman 在内部备忘录里说，公司决定把 ChatGPT 和 Codex \"合并成一个统一的体验\"。\n\nBrockman 此前是临时负责产品，因为原本主管这块的 AGI 部署 CEO Fidji Simo 上个月开始病休。现在临时变成正式，Simo 仍在病休中，OpenAI 表示这次调整方案是她和 Brockman 一起敲定的，公司预期她会回归。\n\n原 Codex 负责人 Tibo（Thibault Sottiaux） 升任核心产品和平台主管，统管消费、企业、开发者三条线。Codex 是 OpenAI 史上增长最快的产品之一，Tibo 是主要操盘手。\n\n讲真，Codex App 是做的真不错！\n\n执掌 ChatGPT 三年多的 Nick Turley 调任新岗位，主攻企业产品改版，同时继续看 ChatGPT。他 2022 年接手这款产品，如今 ChatGPT 周活已经超过 9 亿。\n\nOpenAI 正在为 IPO 做准备，最快今年内可能提交申请。上市前要把故事讲清楚，产品线得收得更整齐——目前的重心被压缩到三件事：ChatGPT、Codex，还有那个传了很久但还没露面的\"everything app\"。\n\n另一个原因是被 Anthropic 打疼了。Brockman 在备忘录里点的两个关键词是\"agentic future\"和“消费、企业双线作战”。翻译过来就是：在编程领域，Anthropic 用 Claude 把开发者市场抢走了一大块；在消费级聊天产品上，Google 也咬得很紧。\n\n至于合并意味着什么\n\nBrockman 给的官方理由是 OpenAI 的产品本来就在自然趋同——Codex 正越来越多地驱动 OpenAI 的消费和企业产品。让 ChatGPT 替用户自主执行数字任务的能力，底层用的正是 Codex 那套东西。\n\n落到具体形态上，未来普通用户在 ChatGPT 里大概率能更深地调用 Codex 的能力，而开发者用 Codex 时也会感觉它和 ChatGPT 越来越像同一个东西。三个产品团队合一，意味着资源不再分散，代价是过去几条产品线各自的独立节奏会被打破。\n\n顺便一提，上个月 OpenAI 还有一批高管彻底离开，包括主管科研 AI 工作空间的 Kevin Weil、Sora 负责人 Bill Peebles，以及企业应用 CTO Srinivas Narayanan。",
+      "created_at": "Fri May 15 18:41:18 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2055357088939773952",
+          "url": "https://pbs.twimg.com/media/HIYYYfTWEAAqQ0s.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 32,
+        "reply_count": 8,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2055365342445322385",
+      "text": "【ChatGPT 现在能看你的银行账户了】\n\nOpenAI 今天给美国 Pro 用户开放了一个新功能：在 ChatGPT 里直接绑定银行、投资、信用卡等账户，看一个统一的资产 dashboard，然后基于真实数据问问题。支持 Plaid 接入的 12000 多家金融机构，网页和 iOS 端可用，后续会下放到 Plus，目标是面向所有人。\n\n绑账户后，ChatGPT 能看到你的余额、交易记录、投资和负债，但看不到完整账号，也不能动你的钱。默认走 GPT-5.5 Thinking 推理模型，Pro 用户可以切到 GPT-5.5 Pro。OpenAI 还专门搞了套内部评测，找 50 多位金融专业人士打分，5.5 Pro 拿了 82.5、5.5 Thinking 79，满分 100。\n\n【真正的看点是 Intuit】\n\nOpenAI 想让 ChatGPT 从“给建议”变成“帮你办事”，理财是第一个落地场景。官方举的例子：问哪张信用卡合适，ChatGPT 不光推荐，还能算过审概率，然后让你在对话框里直接提交申请；问卖股票要交多少税，它给一个估算，还能帮你约一个本地真人税务顾问。\n\n后面这层服务靠和 Intuit 合作打通。Intuit 是 TurboTax 和 QuickBooks 的母公司，也是当年被自己关掉的免费理财 App Mint 的东家。这次合作意味着 ChatGPT 要把“咨询”和“动手”塞进同一个对话窗。\n\n【隐私这关】\n\n把所有金融账户连给 OpenAI，不是每个人都愿意跨这一步。官方留了几个口子：随时断开账户，同步数据 30 天内删除；专门有一类叫“financial memories”的记忆，用来存你说过的财务背景(比如“我还欠爸妈两万”“明年要买房”)，可单独查看和删除；用临时对话时不会访问账户数据。但聊天本身是否参与模型训练，遵循你已有的 Data controls 设置，得自己去翻一下。\n\n【会影响谁】\n\n国内用户暂时无关，这是美国限定。但对 OpenAI 是个标志性动作：每月已经有 2 亿人在 ChatGPT 上问怎么存钱、怎么投资，现在它干脆把这件事产品化。直接挑到擂台上的是 Monarch、Copilot、YNAB 这些独立理财 App，以及银行自己的 App。",
+      "created_at": "Fri May 15 19:10:59 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2055317612687675545",
+        "text": "A preview for Pro users: a new personal finance experience in ChatGPT.\n\nPro users in the U.S. can securely connect financial accounts, see where their money is going, and ask questions based on the information they choose to connect.\n\nYour full financial picture, now in ChatGPT. https://t.co/NjbJqOqFRi",
+        "created_at": "Fri May 15 16:01:19 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2055317162185916416",
+            "url": "https://video.twimg.com/amplify_video/2055317162185916416/vid/avc1/1920x1080/YN2fJMNL-tNWfbZe.mp4?tag=27",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1714438092655149056",
+          "name": "ChatGPT",
+          "screen_name": "ChatGPTapp",
+          "description": "ChatGPT is for the people.",
+          "followers_count": 553625,
+          "friends_count": 255,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 591,
+          "favorite_count": 10684,
+          "reply_count": 607,
+          "quote_count": 769
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 15,
+        "reply_count": 3,
         "quote_count": 0
       }
     }

@@ -1,12 +1,543 @@
 {
   "date": "20260515",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-05-15T12:39:25.698984",
-  "tweet_count": 213,
-  "unique_tweet_count": 213,
+  "last_crawl_time": "2026-05-15T14:51:59.675097",
+  "tweet_count": 223,
+  "unique_tweet_count": 223,
   "total_crawled": 413,
-  "duplicates_removed": 200,
+  "duplicates_removed": 190,
   "tweets": [
+    {
+      "id": "2055300067179774213",
+      "text": "RT @FeitengLi: 其实这些问题都能很好的解决了\n\n1. 扔掉 whisper，换 ASR 模型，Qwen3-ASR 就很不错幻觉很少、也有一些别的ASR选择，whisper 幻觉多也要求 30s片段，Qwen3-ASR 塞更长的音频识别越准确，最大支持 20 分钟；…",
+      "created_at": "Fri May 15 14:51:36 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2055237563393466560",
+        "text": "其实这些问题都能很好的解决了\n\n1. 扔掉 whisper，换 ASR 模型，Qwen3-ASR 就很不错幻觉很少、也有一些别的ASR选择，whisper 幻觉多也要求 30s片段，Qwen3-ASR 塞更长的音频识别越准确，最大支持 20 分钟；\n2. 文字时间轴 也扔掉 whisper 不是很准, 虽然 Qwen/Qwen3-ForcedAligner-0.6B 也能用，但实际测试超过 180s 就时间轴就混乱不堪，可以用 @LattifAI_HQ  https://t.co/ukwzM7NMeS 4 小时都轻松准确，https://t.co/zNDkOQZrui 可以到这里看看 卡拉 OK 字幕都十分准确，也有 skill https://t.co/bR8Nw1ahze  speaker diarization 和 naming 也解决的很好了\n3. VAD 切片我推荐自己的项目 https://t.co/l5yvfDJUOs 准确性 Top",
+        "created_at": "Fri May 15 10:43:14 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2054609453467517363",
+          "text": "要做好字幕 SRT，断句最重要，其次是纠正拼写错误。这些可以借助 AI 或者 Agent 来做了。\n\n不过前提是先生成单词级别的时间戳，这样才能在组合后拼回去，现在主流语音识别模型都支持输出 json 格式，每个单词都标注清楚start和end的timestamp。\n\n英文断句很简单，只要找标点符号就可以切分成长度合适的。\n\n但中文断句要难一些，中文语音用whisper生成，吐出来的是一大坨没有标点的，并且它的“word”不是一个汉字，而是几个汉字。\n\n所以需要借助大模型去断句加标点，然后再重新对齐时间戳再拆分，就需要用一些比较复杂的代码算法辅助。当然理论上来说 Agent 也能帮你做，就是费 Token 些。\n\n还有一个坑就是几个小时的访谈，大模型是没办法一次性处理的，需要分块，但是分块还要注意不能切分在一句话中间。\n\n最后不一定要用 Whisper API，现在电脑跑 Whisper 模型还是足够。\n\n如果是 Mac，推荐用 WhisperKit，支持word level timestamp，以及识别 speaker\nhttps://t.co/SKlsFGZqAw",
+          "created_at": "Wed May 13 17:07:21 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 218502,
+            "friends_count": 1634,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 15,
+            "favorite_count": 91,
+            "reply_count": 17,
+            "quote_count": 2
+          }
+        },
+        "user": {
+          "id": "796724898454499328",
+          "name": "Feiteng",
+          "screen_name": "FeitengLi",
+          "description": "10年 Speech· 构建DL模型服务过亿用户\n写过 Speech & Image & Video LLM DiT 算法模型，vibe 前端；\n公众号：Generative AI https://t.co/ap8SkpMavL",
+          "followers_count": 2556,
+          "friends_count": 1129,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 24,
+          "reply_count": 2,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 218502,
+        "friends_count": 1634,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2055299836145254860",
+      "text": "Only 𝕏 is open, the other social media companies manipulate the results behind closed doors",
+      "created_at": "Fri May 15 14:50:41 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2055293952908304452",
+        "text": "𝕏 - ✅ open source algorithm \n\nYoutube ❌\nFacebook ❌\nInstagram ❌\nTikTok ❌\nReddit ❌\nThreads ❌\n\nWhy do other social networks not make their algorithms open-source?",
+        "created_at": "Fri May 15 14:27:18 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1866933,
+          "friends_count": 946,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 42,
+          "favorite_count": 307,
+          "reply_count": 176,
+          "quote_count": 10
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239834129,
+        "friends_count": 1330,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 48,
+        "favorite_count": 461,
+        "reply_count": 164,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "2055294612751991090",
+      "text": "The goal of the 𝕏 algorithm is simple: show each user the content they are most likely to find interesting, limited only by the laws within a given jurisdiction. No thumb on the scale. \n\nDoesn’t mean we achieve the goal, but that is what I tell the team.",
+      "created_at": "Fri May 15 14:29:55 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239834129,
+        "friends_count": 1330,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 186,
+        "favorite_count": 1480,
+        "reply_count": 625,
+        "quote_count": 44
+      }
+    },
+    {
+      "id": "2055293386123567441",
+      "text": "Critique of the 𝕏 algorithm is welcome. \n\nThere will be monthly updates of the latest algorithm to GitHub with release notes. \n\nAs reminder, you can always choose no algorithm via the Following tab.",
+      "created_at": "Fri May 15 14:25:03 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2055171998997750133",
+        "text": "This is how the algorithm can completely destroy your reach over night. \n\nThis is the last: \nLeft: 3 months\nRight: 2 weeks \n\nSuper consistent 85-95% drop on all metrics. \n\neverything after a viral post going ballistic, I tried everything, cool down, delete low quality posts, block bot accounts.\n\nKept posting after cool down, nothing really breaks through. \n\nShort hot takes 🛑 \nLong form with good signal 🛑 \nViral potential post 🛑 \nCore audience value post 🛑 \n\nWhat bothers me here is that 48h after posting a mega viral post I get suppressed back to the Stone Age. \n\nThis follow previous situations I’ve had with the grok powered algorithm. Where it feels like tweepCred falls far below a certain level, and you’re locked into a low reach prison with every effort to break out is making it harder and harder to do so. \n\nI’m asking for transparency on what we can do as content creators when this happens. I don’t want to spam my way out of this. I’d like to know, if I did something wrong, how I can address it, take the responsibility of algorithmic suppression for what ever the length is. \n\nBut this limbo is most likely going to make me leave the platform.",
+        "created_at": "Fri May 15 06:22:42 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2055171994048450560",
+            "url": "https://pbs.twimg.com/media/HIVwCjGW0AAltSx.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2055171994056794112",
+            "url": "https://pbs.twimg.com/media/HIVwCjIWIAA77kH.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3888491",
+          "name": "Linus ✦ Ekenstam",
+          "screen_name": "LinusEkenstam",
+          "description": "AI Evangelist & Optimist. Latest AI News, Trends and learn how to use AI tools to augment your abilities. collab@linusekenstam.com for partnerships 🤝",
+          "followers_count": 236976,
+          "friends_count": 3721,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 38,
+          "favorite_count": 416,
+          "reply_count": 246,
+          "quote_count": 32
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239834129,
+        "friends_count": 1330,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 890,
+        "favorite_count": 6219,
+        "reply_count": 2063,
+        "quote_count": 142
+      }
+    },
+    {
+      "id": "2055292540803502195",
+      "text": "RT @doganuraldesign: 𝕏 just open-sourced its For You algorithm.\n\nThis is one of the biggest transparency moves from any social platform.\n\nH…",
+      "created_at": "Fri May 15 14:21:41 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2055288503349432775",
+        "text": "𝕏 just open-sourced its For You algorithm.\n\nThis is one of the biggest transparency moves from any social platform.\n\nHere’s the Grok breakdown:",
+        "created_at": "Fri May 15 14:05:39 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1553043003496960000",
+          "name": "Dogan Ural",
+          "screen_name": "doganuraldesign",
+          "description": "Official Creative Ambassador @xAI / Designer / Creative Director / Latent Space Explorer / Dad",
+          "followers_count": 139092,
+          "friends_count": 644,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 169,
+          "favorite_count": 994,
+          "reply_count": 197,
+          "quote_count": 25
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239834129,
+        "friends_count": 1330,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 169,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2055292203166216399",
+      "text": "RT @elonmusk: @raqisright Lmao\n\nInstagram is for girls",
+      "created_at": "Fri May 15 14:20:21 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2055285193746022524",
+        "text": "@raqisright Lmao\n\nInstagram is for girls",
+        "created_at": "Fri May 15 13:52:30 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "44196397",
+          "name": "Elon Musk",
+          "screen_name": "elonmusk",
+          "description": "https://t.co/dDtDyVssfm",
+          "followers_count": 239834129,
+          "friends_count": 1330,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 847,
+          "favorite_count": 8830,
+          "reply_count": 1582,
+          "quote_count": 249
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239834129,
+        "friends_count": 1330,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 848,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2055283789874815235",
+      "text": "RT @tetsuoai: 40 Grok Build agents tearing through C code in parallel. All supervised by DAD.\n\nDAD is a lightweight autonomous tmux supervi…",
+      "created_at": "Fri May 15 13:46:55 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2055212910146719773",
+        "text": "40 Grok Build agents tearing through C code in parallel. All supervised by DAD.\n\nDAD is a lightweight autonomous tmux supervisor for long-running Grok tasks. Built entirely in Grok Build.\n\n/dad \"your objective\" launches grok --yolo (the Son) and spins up two loops:\n\n2-min fast loop: nudges only when the Son is stuck, frozen, finished, or waiting. Hands off in Plan mode.\n\n12-min deep loop: re-reads the objective, pushes back if the Son lowers the bar, triggers /compact at ~50% context.\n\nRe-attachable. Walk back to a DAD-* window hours later and Dad rehydrates the loops.\n\nSet and forget. Dad watches, the Son works.",
+        "created_at": "Fri May 15 09:05:16 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2055209199311982592",
+            "url": "https://pbs.twimg.com/media/HIWR4LgbEAAoAML.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2054993285152989373",
+          "text": "An early beta of Grok Build, an agentic CLI for coding, building apps, and automating workflows is now available for SuperGrok Heavy subscribers.\n\nThrough this early beta, we will improve the model and product based on your feedback.\n\nTry it at https://t.co/bpTHpjivWD https://t.co/Rlg4qMLkrv",
+          "created_at": "Thu May 14 18:32:33 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2054991385741451264",
+              "url": "https://pbs.twimg.com/media/HITLxwubYAASkW_.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1661523610111193088",
+            "name": "xAI",
+            "screen_name": "xai",
+            "description": "",
+            "followers_count": 1986600,
+            "friends_count": 5,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1418,
+            "favorite_count": 9230,
+            "reply_count": 1368,
+            "quote_count": 693
+          }
+        },
+        "user": {
+          "id": "1587601034339561472",
+          "name": "tetsuo",
+          "screen_name": "tetsuoai",
+          "description": "https://t.co/XUN6n3lF70 //: 👾",
+          "followers_count": 232590,
+          "friends_count": 476,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 199,
+          "favorite_count": 1072,
+          "reply_count": 174,
+          "quote_count": 11
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239834129,
+        "friends_count": 1330,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 199,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2055283684991983985",
+      "text": "RT @XFreeze: 𝕏 just open sourced the latest recommendation algorithm on GitHub\n\n𝕏 is the only major social platform in the world to publicl…",
+      "created_at": "Fri May 15 13:46:30 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2055282081391882423",
+        "text": "𝕏 just open sourced the latest recommendation algorithm on GitHub\n\n𝕏 is the only major social platform in the world to publicly open source its core recommendation algorithm\n\nIt is by far the most transparent social platform in the world right now\n\nhttps://t.co/ik1hDHgbj7 https://t.co/Obfm4deBS2",
+        "created_at": "Fri May 15 13:40:08 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2055280586533576704",
+            "url": "https://pbs.twimg.com/media/HIXSzdoXIAAJkHe.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 218431,
+          "friends_count": 1819,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 244,
+          "favorite_count": 1292,
+          "reply_count": 293,
+          "quote_count": 33
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239834129,
+        "friends_count": 1330,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 244,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2055277918633562153",
+      "text": "The latest 𝕏 algorithm has been published to GitHub\nhttps://t.co/ZCOm51uxmh",
+      "created_at": "Fri May 15 13:23:35 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239834129,
+        "friends_count": 1330,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3010,
+        "favorite_count": 22929,
+        "reply_count": 3818,
+        "quote_count": 1092
+      }
+    },
+    {
+      "id": "2055276095713558583",
+      "text": "RT @GadSaad: Suicidal Empathy is now the #1 book in Canada across ALL books!  @HarperCollins @literaryeric https://t.co/MNC7Qvy9sj",
+      "created_at": "Fri May 15 13:16:21 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2055241712159645696",
+          "url": "https://pbs.twimg.com/media/HIWvcrTXYAAwdQs.png"
+        }
+      ],
+      "retweet": {
+        "id": "2055241807546503204",
+        "text": "Suicidal Empathy is now the #1 book in Canada across ALL books!  @HarperCollins @literaryeric https://t.co/MNC7Qvy9sj",
+        "created_at": "Fri May 15 11:00:06 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2055241712159645696",
+            "url": "https://pbs.twimg.com/media/HIWvcrTXYAAwdQs.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "116579971",
+          "name": "Gad Saad",
+          "screen_name": "GadSaad",
+          "description": "Professor, Evolutionary Behavioral Scientist, Author. Opinions are mine alone. Retweets do not necessarily imply an endorsement.",
+          "followers_count": 1306853,
+          "friends_count": 466,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 524,
+          "favorite_count": 3705,
+          "reply_count": 308,
+          "quote_count": 25
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 239834129,
+        "friends_count": 1330,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 524,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2055161002694758679",
       "text": "Default is vim keybindings btw",

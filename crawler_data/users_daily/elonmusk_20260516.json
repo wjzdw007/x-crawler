@@ -3,13 +3,13 @@
     "screen_name": "elonmusk",
     "name": "Elon Musk",
     "description": "https://t.co/dDtDyVssfm",
-    "followers_count": 239924480,
+    "followers_count": 239932825,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260516",
-  "last_updated": "2026-05-16T16:22:02.118389",
-  "tweet_count": 20,
+  "last_updated": "2026-05-16T18:21:44.621006",
+  "tweet_count": 30,
   "tweets": [
     {
       "id": "2055472238363889851",
@@ -1027,6 +1027,521 @@
         "favorite_count": 38,
         "reply_count": 11,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2055686906805895308",
+      "text": "RT @tetsuoai: Grok Build has three commands for managing memory across sessions: /memory, /flush, and /dream. They're experimental but wort…",
+      "created_at": "Sat May 16 16:28:46 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2055646508469674455",
+        "text": "Grok Build has three commands for managing memory across sessions: /memory, /flush, and /dream. They're experimental but worth looking at if you've ever been frustrated with how agents forget everything between conversations.\n\n/memory opens a window into what Grok has saved. There are three layers: global memory, workspace-specific memory, and per-session summaries. You can read what's there, edit it, or delete things you don't want kept.\n\n/flush is for when you've had a useful session and want it saved before context compaction kicks in. It writes a summary of the current conversation into the memory store, capturing decisions, debugging paths, project conventions, and anything else worth keeping.\n\n/dream runs in the background over your old session logs and memory fragments. It deduplicates overlapping notes, merges related fragments, and consolidates everything into cleaner topics, so the store doesn't grow into a pile of half redundant snippets over time.\n\nMost agent memory I've looked at just shoves the chat history into RAG. That works for about a week before the store gets noisy and starts hurting sessions. Grok Build treats capture and consolidation as separate commands, with the user able to inspect what's saved.\n\nThe editable part is important. If your agent saves something wrong, or if your conventions change, you need to be able to go find that memory and remove it. Otherwise the agent keeps applying outdated context with full confidence and you spend cycles undoing its mistakes.\n\nManaging context for long-running agents is going to need real memory primitives. Write, search, prune, and consolidate, all as first class operations. Grok shipping these three commands is the first time I've seen a consumer product treat memory as its own layer.",
+        "created_at": "Sat May 16 13:48:14 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2055637465193738240",
+            "url": "https://pbs.twimg.com/media/HIcXYiPbcAA9u-y.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1587601034339561472",
+          "name": "tetsuo",
+          "screen_name": "tetsuoai",
+          "description": "https://t.co/XUN6n3lF70 //: 👾",
+          "followers_count": 232656,
+          "friends_count": 479,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 213,
+          "favorite_count": 1004,
+          "reply_count": 152,
+          "quote_count": 14
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 213,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2055687593480552641",
+      "text": "RT @elonmusk: @brivael Rousseau was such a diabolical asshole!",
+      "created_at": "Sat May 16 16:31:29 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2055683643893276805",
+        "text": "@brivael Rousseau was such a diabolical asshole!",
+        "created_at": "Sat May 16 16:15:48 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "44196397",
+          "name": "Elon Musk",
+          "screen_name": "elonmusk",
+          "description": "https://t.co/dDtDyVssfm",
+          "followers_count": 239932825,
+          "friends_count": 1332,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 442,
+          "favorite_count": 3894,
+          "reply_count": 658,
+          "quote_count": 56
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 442,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2055691590920794206",
+      "text": "The thousands of British people imprisoned merely for social media posts or speaking their mind need to be released!\n\nNo more prison island!!",
+      "created_at": "Sat May 16 16:47:22 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2055615353678422326",
+        "text": "We want our country back . Millions are in attendance https://t.co/29EKkv5d3e",
+        "created_at": "Sat May 16 11:44:26 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2055615263056203776",
+            "url": "https://video.twimg.com/amplify_video/2055615263056203776/vid/avc1/1080x1920/NagJvtQ2dWVrtjPh.mp4?tag=27",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "374712154",
+          "name": "Tommy Robinson 🇬🇧",
+          "screen_name": "TRobinsonNewEra",
+          "description": "Journalist Support us: https://t.co/IBf12EjvdO My books: https://t.co/deh3pH9EEk for direct contact https://t.co/zOcM3ad9DX",
+          "followers_count": 1950925,
+          "friends_count": 13618,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 21587,
+          "favorite_count": 114072,
+          "reply_count": 4187,
+          "quote_count": 890
+        }
+      },
+      "stats": {
+        "retweet_count": 17567,
+        "favorite_count": 116459,
+        "reply_count": 3819,
+        "quote_count": 406
+      }
+    },
+    {
+      "id": "2055694239099424844",
+      "text": "That cartoon of someone going from slightly left of center to somehow right wing describes the average American",
+      "created_at": "Sat May 16 16:57:54 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2055691209432059997",
+        "text": "Woke is a death cult that executes common sense and devours anyone who tells the truth\n\nIt spreads insanity like a plague and turns mental illness into the new standard\n\nWorst of all, it has turned pure evil into a religion and demands we worship it https://t.co/ipoiP2w0HH",
+        "created_at": "Sat May 16 16:45:51 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2055691198514298880",
+            "url": "https://pbs.twimg.com/media/HIdIQOdXgAA4Dbk.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 220639,
+          "friends_count": 1823,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 621,
+          "favorite_count": 3071,
+          "reply_count": 278,
+          "quote_count": 65
+        }
+      },
+      "stats": {
+        "retweet_count": 3471,
+        "favorite_count": 24308,
+        "reply_count": 2170,
+        "quote_count": 125
+      }
+    },
+    {
+      "id": "2055694363158630455",
+      "text": "RT @ArthurMacwaters: Constructing is far nobler than deconstructing. \n\nTo the extent that the West is faltering, it is only becuase takers…",
+      "created_at": "Sat May 16 16:58:23 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2055627960321794333",
+        "text": "Constructing is far nobler than deconstructing. \n\nTo the extent that the West is faltering, it is only becuase takers have gained more power than makers\n\nBuilding is moral. \n\nBack to building. \n\nNever fall into the poisoned mental frame of those who cannot want and imagine a positive future, and therefore have no willpower to build it.",
+        "created_at": "Sat May 16 12:34:32 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2055627908438241280",
+            "url": "https://pbs.twimg.com/media/HIcOsQjXMAAadc6.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2055627908647895040",
+            "url": "https://pbs.twimg.com/media/HIcOsRVWQAA6jpm.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2055627908589273088",
+            "url": "https://pbs.twimg.com/media/HIcOsRHXwAAoRGf.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2055627908832493568",
+            "url": "https://pbs.twimg.com/media/HIcOsSBXAAAVgvg.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2055414755435889086",
+          "text": "Aujourd'hui je déconstruis la déconstruction.\n\nLa déconstruction est le virus mental le plus efficace jamais conçu contre une civilisation. Il a été fabriqué en France entre 1966 et 1980 par trois hommes : Foucault, Derrida, Deleuze. Il a été exporté aux États-Unis, hybridé avec le puritanisme racial américain, et il est revenu trente ans plus tard sous le nom de wokisme paralyser l'Occident entier. Voici comment il fonctionne, et pourquoi il faut le détruire.\n\nLa thèse est simple. Toute vérité n'est qu'un rapport de pouvoir déguisé. Tout texte sacré, toute loi, toute science, toute norme, toute hiérarchie, toute identité, toute institution cache en réalité une domination. Déconstruire, c'est montrer le rapport de force sous le vernis du vrai. C'est arracher le masque. C'est \"démasquer\".\n\nFormulé comme ça, ça paraît inoffensif. Voire utile. Qui n'aime pas un peu d'esprit critique ? Le piège est là. La déconstruction se présente comme une méthode. Elle est en réalité une ontologie. Elle ne dit pas seulement \"interrogeons les normes\", elle dit \"il n'y a *que* des rapports de pouvoir\". La différence est civilisationnelle.\n\nUne société qui interroge ses normes reste debout. Une société qui croit que ses normes ne sont *rien d'autre* que de la domination s'effondre. Parce qu'elle ne peut plus rien défendre. Plus une frontière, plus une loi, plus une science, plus une langue, plus une histoire, plus une biologie, plus une famille. Tout devient suspect. Tout devient négociable. Tout devient \"construit donc déconstructible\".\n\nC'est la première raison pour laquelle c'est un virus. Il s'auto-réplique. Une fois inoculé, il transforme tout ce qu'il touche en cible. La science est patriarcale, donc déconstruisons-la. Le langage est colonial, donc réinventons-le. La méritocratie est raciste, donc abolissons-la. Le sexe est une construction, donc choisissons-le. Il n'y a plus de roc. Tout est sable.\n\nDeuxième raison. Le virus est *non-falsifiable*. Si vous défendez une norme, c'est que vous êtes l'oppresseur. Si vous niez être oppresseur, c'est la preuve de votre privilège inconscient. Si vous citez des faits, vos faits sont contaminés par le pouvoir qui les a produits. Si vous citez la raison, la raison elle-même est blanche, masculine, occidentale. Il n'y a aucune sortie possible. Le système est conçu pour rendre toute objection irrecevable par définition.\n\nC'est exactement la structure d'une secte. Et c'est exactement ce qui s'est installé dans les universités, les RH, les médias, les administrations, les conseils d'administration depuis vingt ans.\n\nTroisième raison. Le virus s'auto-réfute mais ne s'auto-détruit pas. Si toute vérité est pouvoir, alors la phrase \"toute vérité est pouvoir\" est elle-même du pouvoir, donc sans valeur. Logiquement, la déconstruction se mord la queue dès la première phrase. Mais elle s'en moque. Parce qu'elle n'a jamais cherché la cohérence. Elle cherche l'efficacité politique. Et son efficacité politique est immense. Elle désarme ses ennemis et arme ses militants. Elle paralyse le défenseur et libère l'attaquant. C'est une arme asymétrique parfaite.\n\nQuatrième raison. Le virus produit des humains diminués. Une génération entière a appris à déconstruire et n'a jamais appris à construire. Elle sait soupçonner, jamais admirer. Elle voit le pouvoir partout et la beauté nulle part. Elle peut produire mille pages sur le caractère opprimant de Shakespeare et zéro ligne qui vaille la peine d'être lue dans cent ans. Elle a confondu l'intelligence critique avec la pose critique. Elle est stérile par construction. Un esprit nourri à la déconstruction est un esprit qui ne sait plus rien édifier.\n\nCinquième raison, la plus grave. Une civilisation se tient debout sur trois piliers. La croyance qu'une vérité est accessible à la raison. La croyance qu'un bien se distingue d'un mal. La croyance qu'un héritage mérite d'être transmis. La déconstruction a méthodiquement dynamité les trois. Pas par méchanceté. Par jeu intellectuel, par fascination du soupçon, par haine de la bourgeoisie qui avait nourri ses prophètes. Mais le résultat est là. Une civilisation qui ne croit plus en sa vérité, ni en son bien, ni en son héritage ne se défend pas. Elle s'excuse en attendant la fin.\n\nVoilà ce qu'on a fait. Voilà ce qu'il faut nommer.\n\nLa bonne nouvelle, c'est qu'un virus mental ne survit que tant qu'on lui cède l'autorité du discours. Il meurt dès qu'on cesse de jouer son jeu. Dès qu'on réaffirme tranquillement qu'il existe une vérité, un beau, un bien, un héritage. Dès qu'on cesse de demander la permission aux déconstructeurs pour bâtir. Dès qu'on refait. Dès qu'on transmet. Dès qu'on crée.\n\nLes bâtisseurs ont toujours le dernier mot sur les commentateurs. Toujours. Parce qu'à la fin il reste ce qui est construit, et rien de ce qui a été déconstruit.\n\nAlors aujourd'hui je déconstruis la déconstruction. Et demain je construis.",
+          "created_at": "Fri May 15 22:27:20 +0000 2026",
+          "lang": "fr",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1874492187070615552",
+            "name": "Brivael Le Pogam",
+            "screen_name": "brivael",
+            "description": "Co-founder @argildotai (YC S24). 🇫🇷 voice on AI, Austrian econ & techno-optimism.  🟢 Strategy call & brand sponsorships👇",
+            "followers_count": 86532,
+            "friends_count": 456,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 3735,
+            "favorite_count": 12269,
+            "reply_count": 663,
+            "quote_count": 482
+          }
+        },
+        "user": {
+          "id": "1317327383628705793",
+          "name": "Arthur MacWaters",
+          "screen_name": "ArthurMacwaters",
+          "description": "on mission @legionhealth building autonomous care. techno-optimist and unapologetic believer in American exceptionalism 🇺🇸\nprev @princeton @mckinsey",
+          "followers_count": 74968,
+          "friends_count": 989,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 319,
+          "favorite_count": 1503,
+          "reply_count": 165,
+          "quote_count": 12
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 319,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2055694878563037581",
+      "text": "RT @Gavin_McInnes: One of the reasons the elites ignore the Muslim grooming gangs is they simply can’t handle the levels of horror these at…",
+      "created_at": "Sat May 16 17:00:26 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2055670330996183200",
+        "text": "One of the reasons the elites ignore the Muslim grooming gangs is they simply can’t handle the levels of horror these attacks reach. Such as…\n-nailing a girl’s tongue to a block of wood while she’s raped.\n-having them dig their own graves.\n-drenching them in gasoline.\n-branding girl’s asses with an M for Mohammad.\n-raping girls under the Pakistani flag.\nThe list goes on. It’s much easier just to assume we’re lying and the problem isn’t real.",
+        "created_at": "Sat May 16 15:22:54 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2055658996653023620",
+          "text": "Piers is an attention seeking sausage.\n\nHere's some attention again Piers, happy to do you a favour - proving again how much of a total sausage you are.\n\nEnjoy another public humiliation.\n\nHope you're watching the live.\n\n#UniteTheKingdom #UTK #FourNationsOneKingdom https://t.co/SO6fljNyqX",
+          "created_at": "Sat May 16 14:37:51 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2055658783548829696",
+              "url": "https://video.twimg.com/amplify_video/2055658783548829696/vid/avc1/464x848/7T26D83xBTOZRCLK.mp4?tag=27",
+              "bitrate": 950000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "374712154",
+            "name": "Tommy Robinson 🇬🇧",
+            "screen_name": "TRobinsonNewEra",
+            "description": "Journalist Support us: https://t.co/IBf12EjvdO My books: https://t.co/deh3pH9EEk for direct contact https://t.co/zOcM3ad9DX",
+            "followers_count": 1950925,
+            "friends_count": 13618,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 3169,
+            "favorite_count": 24156,
+            "reply_count": 787,
+            "quote_count": 107
+          }
+        },
+        "user": {
+          "id": "147580943",
+          "name": "Gavin McInnes",
+          "screen_name": "Gavin_McInnes",
+          "description": "Created VICE Media, Proud Boys, hipsters, and the Post-it Note. Check out Compound Censored. I do a new show every day live at 2PM ET.",
+          "followers_count": 274435,
+          "friends_count": 764,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3018,
+          "favorite_count": 13342,
+          "reply_count": 518,
+          "quote_count": 99
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 3018,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2055708802591138116",
+      "text": "Free the political prisoners in Britain!",
+      "created_at": "Sat May 16 17:55:46 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2055699362861453359",
+        "text": "The UK has become a prison island. https://t.co/KQXA06XDWn",
+        "created_at": "Sat May 16 17:18:15 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2055699355664035841",
+            "url": "https://pbs.twimg.com/media/HIdPrCNasAE0idW.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1870264,
+          "friends_count": 946,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 404,
+          "favorite_count": 1257,
+          "reply_count": 256,
+          "quote_count": 72
+        }
+      },
+      "stats": {
+        "retweet_count": 3364,
+        "favorite_count": 19084,
+        "reply_count": 1267,
+        "quote_count": 111
+      }
+    },
+    {
+      "id": "2055711697667535205",
+      "text": "Starlink Internet access enables people to learn anything and access the global market for their goods &amp; services, improving their standard of living",
+      "created_at": "Sat May 16 18:07:16 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2055706290068902187",
+        "text": "The internet is the one single thing that literally lifts an entire country's GDP\n\nEvery country that signs with Starlink gets a parallel internet infrastructure\n\nEvery country that delays gets left further behind",
+        "created_at": "Sat May 16 17:45:47 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2055687619426541568",
+            "url": "https://pbs.twimg.com/media/HIdE_5UWYAAnYLh.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 220639,
+          "friends_count": 1823,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 23,
+          "favorite_count": 133,
+          "reply_count": 78,
+          "quote_count": 8
+        }
+      },
+      "stats": {
+        "retweet_count": 528,
+        "favorite_count": 3616,
+        "reply_count": 926,
+        "quote_count": 38
+      }
+    },
+    {
+      "id": "2055712603746316458",
+      "text": "RT @doganuraldesign: Would you want to see your past interactions with someone on 𝕏? https://t.co/e5AwVSQ9gh",
+      "created_at": "Sat May 16 18:10:52 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2055684239585161216",
+          "url": "https://pbs.twimg.com/media/HIdB7KbXsAA4RWx.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2055684245591355595",
+        "text": "Would you want to see your past interactions with someone on 𝕏? https://t.co/e5AwVSQ9gh",
+        "created_at": "Sat May 16 16:18:11 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2055684239585161216",
+            "url": "https://pbs.twimg.com/media/HIdB7KbXsAA4RWx.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1553043003496960000",
+          "name": "Dogan Ural",
+          "screen_name": "doganuraldesign",
+          "description": "Official Creative Ambassador @xAI / Designer / Creative Director / Latent Space Explorer / Dad",
+          "followers_count": 139640,
+          "friends_count": 643,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 82,
+          "favorite_count": 630,
+          "reply_count": 218,
+          "quote_count": 10
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 82,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2055714028601618536",
+      "text": "Exactly",
+      "created_at": "Sat May 16 18:16:32 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2055614044347011256",
+        "text": "Race-swapping in these movies is essentially the same as putting black faces on traditional European stories. It’s not fighting racism — it is racism https://t.co/ySveC8RZws",
+        "created_at": "Sat May 16 11:39:14 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2055613962063147009",
+            "url": "https://pbs.twimg.com/media/HIcCAeQbcAE0g49.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1518557272854523904",
+          "name": "Skscartoon",
+          "screen_name": "skscartoon",
+          "description": "A small time artist down under",
+          "followers_count": 140850,
+          "friends_count": 460,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 622,
+          "favorite_count": 5284,
+          "reply_count": 61,
+          "quote_count": 11
+        }
+      },
+      "stats": {
+        "retweet_count": 383,
+        "favorite_count": 2948,
+        "reply_count": 360,
+        "quote_count": 6
       }
     }
   ]

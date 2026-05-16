@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 218678,
+    "followers_count": 218699,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260516",
-  "last_updated": "2026-05-16T14:30:37.106385",
-  "tweet_count": 4,
+  "last_updated": "2026-05-16T16:22:02.143568",
+  "tweet_count": 5,
   "tweets": [
     {
       "id": "2055470006679302261",
@@ -104,6 +104,45 @@
         "retweet_count": 3,
         "favorite_count": 32,
         "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2055682292937326638",
+      "text": "让 AI 干很长时间的活，核心是规划和验证：\n1. 如原推那样规划成小的阶段\n2. 另外每个阶段最好有明确的验证方法，这一步很重要，可以是自动化测试（单元测试、集成测试、端到端测试）\n\n所以长任务最适合的场景是那种测试覆盖完整的语言迁移，比如 bun 从 zig 迁移到 rust，一百万行代码的变更，但是测试覆盖完整，而且 AI 主要做的是“翻译”的工作，还可以验证，那连着跑几个几周都没问题，还不担心跑偏。\n\n普通任务，如果没有办法让 Agent 自己验证，还跑很久，就很容易出现南辕北辙的情况，跑的时间越长，偏的越远。还是自己中间验证一下更好。",
+      "created_at": "Sat May 16 16:10:26 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2055491568589852963",
+        "text": "我看了很多人描述他们如何使用AI编程，看到里面很多有类似“让AI干了一晚上”这样的表述，所以这是现在使用AI编程的常规操作？按照这样干很长时间产生很多代码的做法，碳基人想review都难。\n\n我大致说一下我怎么AI编程的。最开始我先了解需求，划分阶段，生成一个类似 phase.md 的文件，里面详细按照顺序划分了每一步要实现什么。然后我再开始让AI按照步骤来工作，每一步都有对应的用例，我来review之后再提交，这样每次提交的代码量不会特别多，到我没有办法review的程度。\n\n在我这套使用AI编程的方法论下，即使使用的不是sota级别的国产模型kimi、glm，我也感觉工作良好。因为产出 = 我的基础能力 X 模型能力，我的基础能力给工作的质量打了底。\n\n我看到很多人一次性让AI干这么长时间的活，终于有点明白为啥同样都是用kimi，产出质量上大家感觉差异这么大了。",
+        "created_at": "Sat May 16 03:32:33 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "40501748",
+          "name": "\b老C@codedump.info",
+          "screen_name": "lichuang",
+          "description": "telegram(cn)：https://t.co/ck3vCHgHjA，https://t.co/yjUeoLnOHk, blog: https://t.co/3aHAfVVMct",
+          "followers_count": 5771,
+          "friends_count": 792,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 16,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 2,
         "quote_count": 0
       }
     }

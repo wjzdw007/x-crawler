@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 219044,
+    "followers_count": 219052,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260518",
-  "last_updated": "2026-05-18T17:00:56.268657",
-  "tweet_count": 1,
+  "last_updated": "2026-05-18T18:40:25.398921",
+  "tweet_count": 4,
   "tweets": [
     {
       "id": "2056247701264630062",
@@ -24,6 +24,129 @@
         "favorite_count": 53,
         "reply_count": 11,
         "quote_count": 5
+      }
+    },
+    {
+      "id": "2056421137257496665",
+      "text": "我最近 Vibe Coding 的一些感受：就是心态回不去了，以前可以接受几个月才做一个产品出来，现在忍受不了这种速度，就会依赖 Agent 去写代码，但是对快速生成的质量很难满意，就需要花时间去细心打磨，但又难接受打磨的速度，就很拧巴。\n\n有点像打游戏，用作弊码了开始很爽，玩一会就索然无味了。",
+      "created_at": "Mon May 18 17:06:20 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2056414962713534717",
+        "text": "AI 能解放过去很多枯燥繁琐无聊的重复工作，\n\n也让现在的创造变得更加无聊。\n\n-- vibe有感。",
+        "created_at": "Mon May 18 16:41:48 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1637070779975352320",
+          "name": "Go学长",
+          "screen_name": "arkuy99",
+          "description": "building  https://t.co/m270kq0cxL  a native iOS app for Claude Code / ex @TencentGames / ex @TempleRun",
+          "followers_count": 5102,
+          "friends_count": 969,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 5,
+          "reply_count": 3,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 30,
+        "reply_count": 15,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2056426204324901132",
+      "text": "show me the money\nblack sheep wall\noperation cwal\nhttps://t.co/CBmG9GJXhs",
+      "created_at": "Mon May 18 17:26:28 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2056424950408372476",
+        "text": "太赞同了😭 经常在质量和速度上反复纠结. \n\n为什么 AI 时代感觉人不是更轻松反而是更累了，有时候想想我觉得这是一种集体卷的结果。\n\n你花很长的时间去打磨某个细节，去追求某个像素的摆放，去调整项目的 Scale ，但是没有人会等你。\n\n当所有人都在追求快，你慢就会被淘汰。\n\n你狂练微操，别人在 war3 一句 whosyourdaddy 就终结了你。",
+        "created_at": "Mon May 18 17:21:29 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1637070779975352320",
+          "name": "Go学长",
+          "screen_name": "arkuy99",
+          "description": "building  https://t.co/m270kq0cxL  a native iOS app for Claude Code / ex @TencentGames / ex @TempleRun",
+          "followers_count": 5102,
+          "friends_count": 969,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 4,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2056432162635731438",
+      "text": "Cursor 发布 Composer 2.5\n\nCursor 今天上线自家编程模型 Composer 2.5。主打长任务上更顶得住、复杂指令跟得更稳，官方称效率最多能比同等水平的模型高出十倍。为了推这个新模型，Cursor 把它未来一周的默认额度直接翻倍。\n\n训练上的一个小亮点是用文本反馈做信用分配，让模型在十万 token 量级的长轨迹里也能学得动。就是让模型扛得住连续几十上百步的编程任务，中途不容易忘了自己在干什么。\n\n底座还是 Kimi\n\nComposer 2.5 仍然基于 Moonshot 的 Kimi K2.5 二次训练，跟上一代一致。两个月前 Composer 2 发布时 Cursor 没披露底座来源，被开发者从 API 请求头里挖出 kimi-k2p5-rl 的模型 ID 闹了一场，这次直接写进了博客，算是把透明度补回来。\n\n发布同时，Cursor 宣布跟 SpaceXAI 联合从零训练一个更大的模型，总算力是这次的十倍，跑在 Colossus 2 那套百万张 H100 等效的超算集群上。\n\n背景是 SpaceX 4 月跟 Cursor 签了战略合作，并拿到了今年晚些时候以 600 亿美元收购 Cursor 的选择权；xAI 此前已并入 SpaceX。Cursor 的算力命脉，事实上已经接到了马斯克这边。",
+      "created_at": "Mon May 18 17:50:08 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2056415413077233983",
+        "text": "Introducing Composer 2.5, our most powerful model yet.\n\nIt's more intelligent, better at sustained work on long-running tasks, and more reliable at following complex instructions.\n\nFor the next week, we’re doubling the included usage of the model. https://t.co/N87ojcXlOC",
+        "created_at": "Mon May 18 16:43:35 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2056412389990682627",
+            "url": "https://pbs.twimg.com/media/HInYLGEbUAMPCxf.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1695890961094909952",
+          "name": "Cursor",
+          "screen_name": "cursor_ai",
+          "description": "The best way to build software with AI.",
+          "followers_count": 369711,
+          "friends_count": 39,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 429,
+          "favorite_count": 5084,
+          "reply_count": 405,
+          "quote_count": 357
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 12,
+        "reply_count": 5,
+        "quote_count": 1
       }
     }
   ]

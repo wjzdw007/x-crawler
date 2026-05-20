@@ -1,12 +1,146 @@
 {
   "date": "20260520",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-05-20T20:45:45.241164",
-  "tweet_count": 250,
-  "unique_tweet_count": 250,
-  "total_crawled": 442,
-  "duplicates_removed": 192,
+  "last_crawl_time": "2026-05-20T22:33:45.130027",
+  "tweet_count": 252,
+  "unique_tweet_count": 252,
+  "total_crawled": 450,
+  "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2057226917284364701",
+      "text": "RT @nottombrown: We’re expanding our partnership with @SpaceX, and will be scaling up on GB200 capacity in Colossus 2 throughout June. \n\nAp…",
+      "created_at": "Wed May 20 22:28:13 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2057194829986300375",
+        "text": "We’re expanding our partnership with @SpaceX, and will be scaling up on GB200 capacity in Colossus 2 throughout June. \n\nAppreciate @elonmusk and the team helping us find good homes for the Claudes.",
+        "created_at": "Wed May 20 20:20:42 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2052062566126649448",
+          "text": "In the next few days we'll be ramping up Claude inference on Colossus. \n\nGrateful to be partnering with SpaceX here. We are going to need to move a lot of atoms in order to keep up with AI demand, and there's nobody better at quickly moving atoms (on or off planet Earth)",
+          "created_at": "Wed May 06 16:26:55 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "51590414",
+            "name": "Tom Brown",
+            "screen_name": "nottombrown",
+            "description": "Co-founder and Chief Compute Officer @AnthropicAI",
+            "followers_count": 22477,
+            "friends_count": 420,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 327,
+            "favorite_count": 7556,
+            "reply_count": 112,
+            "quote_count": 44
+          }
+        },
+        "user": {
+          "id": "51590414",
+          "name": "Tom Brown",
+          "screen_name": "nottombrown",
+          "description": "Co-founder and Chief Compute Officer @AnthropicAI",
+          "followers_count": 22477,
+          "friends_count": 420,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 198,
+          "favorite_count": 2880,
+          "reply_count": 154,
+          "quote_count": 91
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240061071,
+        "friends_count": 1335,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 198,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2057215630915338748",
+      "text": "RT @eraera: @dotey 这才是今天迷茫的年轻人需要的，而不是什么：“你们要拥抱AI” 这样的说教。 https://t.co/MSvQDSfj4e",
+      "created_at": "Wed May 20 21:43:22 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2057209759087120384",
+          "url": "https://pbs.twimg.com/media/HIytYFba0AABQbe.png"
+        }
+      ],
+      "retweet": {
+        "id": "2057209987135680854",
+        "text": "@dotey 这才是今天迷茫的年轻人需要的，而不是什么：“你们要拥抱AI” 这样的说教。 https://t.co/MSvQDSfj4e",
+        "created_at": "Wed May 20 21:20:56 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2057209759087120384",
+            "url": "https://pbs.twimg.com/media/HIytYFba0AABQbe.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "50883",
+          "name": "eraera",
+          "screen_name": "eraera",
+          "description": "A blackbox is a network of blackboxes, the world is one such blackbox.",
+          "followers_count": 1155,
+          "friends_count": 216,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 2,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 219519,
+        "friends_count": 1637,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2057193368224923853",
       "text": "补充下：我之所以认为会有内存问题，是因为两个交互设计对用户心里预期的不同导致的实现方式可能会有不同。https://t.co/Sg5avvZaPK\n\n假设一个场景，用户打开一个很长的对话，这个对话已经完整加载，并且在浏览中间部分\n\n会话历史在左侧，点击另一个历史消息，然后再点击回前一个历史消息，那么用户预期是全新的加载，切换回以后可以不恢复之前的状态。\n\n如果把会话放在顶部 tab，那么所有打开过的消息都在上面，用户的预期会认为所有打开过的会话，状态都要保留，如果我切换 tab 回到上一次会话的状态，那么我希望我之前加载的消息、浏览的位置都是保留的。",

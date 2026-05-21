@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 219519,
+    "followers_count": 219526,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260520",
-  "last_updated": "2026-05-20T22:33:45.174212",
-  "tweet_count": 8,
+  "last_updated": "2026-05-21T00:43:37.104928",
+  "tweet_count": 10,
   "tweets": [
     {
       "id": "2056966557507391528",
@@ -329,6 +329,73 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2057235477623939482",
+      "text": "Codex 使用技巧：Steer 和 Queue\n\n通常 Agent 执行一个任务不会马上结束，可能会要等几分钟甚至更久，如果这时候你有个新的要求想补充，这里有两种方式补充：Steer（任务干预） 和 Queue（排队）。\n\n> Steer（快捷键：Shift + Enter）：在当前任务还没完成时，中途打断 Codex 并给它指引新的方向。\n\n这个功能相当于你按停止，输入新指令然后再让 Agent 继续。但不需要你去手动停止再让它继续，只要输入指令，按 Shift + 回车，或者先回车，在点击“Steer”按钮就可以发送。Agent 会在下一轮工具调用间隙直接添加新的指令到上下文。\n\n> Queue（快捷键：Enter）：在 Codex 完成当前步骤后，给它安排接下来的活儿。\n\n任务排队就不太一样了。它不会打断正在进行的任务，而是把新任务排在队伍后面。而且你提交多条信息，它在任务结束后，不会一次性把你队列的消息执行，而是执行一条，完成这一条对应的任务后，继续下一条。\n\n所以有时候我睡觉前，会在一个长任务后面加上几个 “Continue” 消息到队列，让它尽可能多跑一会，免得中间就停止了。\n\n简单来说，“Steer”是改变 Codex 眼下正在做的事，而“Queue”是安排它接下来要做的事。",
+      "created_at": "Wed May 20 23:02:14 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2057235397231419392",
+          "url": "https://pbs.twimg.com/media/HIzEsa9WoAAe8WY.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 65,
+        "reply_count": 9,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "2057245845964181593",
+      "text": "这位博主做了系列 Google Omni vs Seedance 2.0的对比视频，看起来差距还是蛮明显",
+      "created_at": "Wed May 20 23:43:26 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2056969972556222690",
+        "text": "Google Omni vs Seedance 2.0 😳 \nOlympic Diving Test — Seedance 2.0 also wins this test!🔥\n\nPrompt👇\nFemale Olympic diver from platform takeoff to mid-air perfect dive into blue pool, full sequence action, colorful swimsuit, dynamic shot. https://t.co/636bkrYUvl",
+        "created_at": "Wed May 20 05:27:12 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2056969886510018560",
+            "url": "https://video.twimg.com/ext_tw_video/2056969886510018560/pu/vid/avc1/1080x1080/O3agWGibflQCeqJa.mp4?tag=25",
+            "bitrate": 8768000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1301484228811530240",
+          "name": "Ratul Ali",
+          "screen_name": "Ratul_AI",
+          "description": "AI Artist 🇮🇳 l CPP👉 @Hailuo_AI l @pika_labs l @nimvideo l @higgsfield l @PixVerse_ l @ViduAI_official",
+          "followers_count": 168,
+          "friends_count": 280,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 19,
+          "favorite_count": 420,
+          "reply_count": 56,
+          "quote_count": 25
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 12,
+        "reply_count": 9,
+        "quote_count": 1
       }
     }
   ]

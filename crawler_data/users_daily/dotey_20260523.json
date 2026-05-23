@@ -8,8 +8,8 @@
     "is_blue_verified": true
   },
   "date": "20260523",
-  "last_updated": "2026-05-23T20:20:26.456903",
-  "tweet_count": 11,
+  "last_updated": "2026-05-23T22:20:11.023931",
+  "tweet_count": 12,
   "tweets": [
     {
       "id": "2058011933891019240",
@@ -528,6 +528,45 @@
         "retweet_count": 4,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2058301264992067603",
+      "text": "Codex 额度又重置了，又亏了几十个亿😭",
+      "created_at": "Sat May 23 21:37:17 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2058280452851638313",
+        "text": "Some of you noticed limits drained faster in Codex, we root caused it to an optimization that we rolled back that had an impact on cache hit rates when compacting across long running sessions. \n\nWe fixed this and have now reset usage limits for all accounts. Enjoy the weekend.",
+        "created_at": "Sat May 23 20:14:35 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1953337039510003712",
+          "name": "Tibo",
+          "screen_name": "thsottiaux",
+          "description": "Codex & ChatGPT @OpenAI",
+          "followers_count": 116439,
+          "friends_count": 64,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 218,
+          "favorite_count": 5166,
+          "reply_count": 595,
+          "quote_count": 205
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 6,
         "quote_count": 0
       }
     }

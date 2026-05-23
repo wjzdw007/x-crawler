@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 220371,
+    "followers_count": 220429,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260523",
-  "last_updated": "2026-05-23T06:57:34.440826",
-  "tweet_count": 4,
+  "last_updated": "2026-05-23T08:44:31.684182",
+  "tweet_count": 8,
   "tweets": [
     {
       "id": "2058011933891019240",
@@ -213,6 +213,180 @@
         "retweet_count": 2,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2058084478459826432",
+      "text": "如果你同时用飞书和 Claude Code 的话，Zara Zhang这个开源项目 feishu-claude-code-bridge 值得一试，它可以让你在飞书里面直接连接 Claude Code，从飞书指挥 Claude Code，反过来也能借助 Claude Code 新建、编辑飞书文档。\n\n举例来说，我可以通过和飞书智能体对话，发送推文连接，让它抓取推文并翻译成中文，再把结果创建成飞书文档。\n\n或者说你在飞书上收到一条消息，也可以一键转发给飞书智能体，它会通过 Claude Code 做后续处理，并且实时将处理过程通过消息同步给你，如果有需要确认的，还能通过卡片的形式在飞书中展示。\n\n连接步骤很简单，打开飞书本地客户端（网页版不行），然后在命令行窗口执行：\n> npx -y lark-channel-bridge@latest run （第一次需要配置 App 凭证，后面可以跳过这一步）\n> 和\n> npx -y lark-channel-bridge@latest run\n\n就可以通过扫码或者浏览器打开 URL 创建智能体、连接 Claude Code\n\n按照网页提示创建应用和授权，连接上就可以在飞书的会话看到新建的智能助手。然后直接发送消息。\n\n有个细节做的很好，就是它可以设置 Claude Code 对应的 Workspace（工作区），也就是运行 Claude Code 的目录，这样你所有操作结果都会在 Workspace，也可以读取 Workspace 下的文件、CLAUDE.md 设置、Skills、Hooks 等等，跟你直接用 Claude Code 操作几乎没差别。\n\n一些具体的指令可以看项目文档，说的很清楚。\n\n工作原理其实不复杂，它是一个“飞书消息 ↔ 本机 Claude Code CLI”的桥，或者说翻译。飞书负责收发消息，bridge 常驻本机，收到消息后整理成 prompt，通过 “claude -p ”这样的命令行启动本机的 Claude CLI 处理，再把 Claude 的流式输出更新回飞书。\n\n这种项目的价值，不仅说你可以将飞书和 Claude Code 打通，还可以发掘出很多新的可能，比如你也可以让飞书和本机的小龙虾、Codex、Cursor 连接起来，在飞书界面中操作它们，它们反过来也能借助飞书 cli 操作飞书。\n\n开源项目有个好处就是你可以照葫芦画瓢，如果你想参考它做一些自己的机器人，可以把代码库发给 Coding Agent，帮你定制化一个自己的版本。\n\n比如说这两个是其他网友做过的把 Codex 接入飞书的 bridge 项目，用起来也是一样的：\nhttps://t.co/cKLfCDfskP\nhttps://t.co/zCPoISnudz\n\n有一点要提醒的是，Bridge 使用的是claude -p模式，自 2026 年 6 月 15 日起，Claude 订阅计划对 claude -p 和 Agent SDK 的使用将独立计费，不走订阅额度。如果你是用 API，不受影响。或者也可以考虑使用上面的 Codex bridge 项目。\n\n项目地址：https://t.co/7BWMwz6p3s",
+      "created_at": "Sat May 23 07:15:51 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2058084064033112064",
+          "url": "https://pbs.twimg.com/media/HI_IjVKWAAA8-Nr.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2058084371475619840",
+          "url": "https://pbs.twimg.com/media/HI_I1OeWYAAXrUJ.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2058084394661711872",
+          "url": "https://pbs.twimg.com/media/HI_I2k2WEAAxqY1.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2058084420221829120",
+          "url": "https://pbs.twimg.com/media/HI_I4EEWgAAXUcT.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2057710284920520906",
+        "text": "Introducing the Claude Code Lark/Feishu Bridge 🌉 (open-source)\n\nTalk to Claude Code in Lark/Feishu like a colleague\n- Use Claude Code on your phone via Lark chat\n- Manage multiple CC sessions as group chats in Lark (one chat = one session), say goodbye to messy terminal tabs\n- Claude Code can read all your work context in Lark (chat, docs, meeting transcripts, etc) via CLI\n- Claude Code can write Lark Docs for you; you can even @ mention it in the comment and it will reply\n- Forward any Lark messages to Claude and it can just get the task done\n- Claude can send you interactive cards with buttons and UI\n\nOpen-source; try it now: https://t.co/V1eRIg87wx",
+        "created_at": "Fri May 22 06:28:56 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2057710069031264256",
+            "url": "https://pbs.twimg.com/media/HI50Z9NaYAABNnV.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1472063616",
+          "name": "Zara Zhang",
+          "screen_name": "zarazhangrui",
+          "description": "Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w",
+          "followers_count": 67028,
+          "friends_count": 1441,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 17,
+          "favorite_count": 139,
+          "reply_count": 16,
+          "quote_count": 6
+        }
+      },
+      "stats": {
+        "retweet_count": 14,
+        "favorite_count": 45,
+        "reply_count": 14,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2058091470066753579",
+      "text": "这张原理图画的挺好的，操作方法是这样的： https://t.co/6vRC2EOXw4",
+      "created_at": "Sat May 23 07:43:38 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2058090771035590656",
+          "url": "https://pbs.twimg.com/media/HI_OpusWEAA-GqG.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2058084478459826432",
+        "text": "如果你同时用飞书和 Claude Code 的话，Zara Zhang这个开源项目 feishu-claude-code-bridge 值得一试，它可以让你在飞书里面直接连接 Claude Code，从飞书指挥 Claude Code，反过来也能借助 Claude Code 新建、编辑飞书文档。\n\n举例来说，我可以通过和飞书智能体对话，发送推文连接，让它抓取推文并翻译成中文，再把结果创建成飞书文档。\n\n或者说你在飞书上收到一条消息，也可以一键转发给飞书智能体，它会通过 Claude Code 做后续处理，并且实时将处理过程通过消息同步给你，如果有需要确认的，还能通过卡片的形式在飞书中展示。\n\n连接步骤很简单，打开飞书本地客户端（网页版不行），然后在命令行窗口执行：\n> npx -y lark-channel-bridge@latest run （第一次需要配置 App 凭证，后面可以跳过这一步）\n> 和\n> npx -y lark-channel-bridge@latest run\n\n就可以通过扫码或者浏览器打开 URL 创建智能体、连接 Claude Code\n\n按照网页提示创建应用和授权，连接上就可以在飞书的会话看到新建的智能助手。然后直接发送消息。\n\n有个细节做的很好，就是它可以设置 Claude Code 对应的 Workspace（工作区），也就是运行 Claude Code 的目录，这样你所有操作结果都会在 Workspace，也可以读取 Workspace 下的文件、CLAUDE.md 设置、Skills、Hooks 等等，跟你直接用 Claude Code 操作几乎没差别。\n\n一些具体的指令可以看项目文档，说的很清楚。\n\n工作原理其实不复杂，它是一个“飞书消息 ↔ 本机 Claude Code CLI”的桥，或者说翻译。飞书负责收发消息，bridge 常驻本机，收到消息后整理成 prompt，通过 “claude -p ”这样的命令行启动本机的 Claude CLI 处理，再把 Claude 的流式输出更新回飞书。\n\n这种项目的价值，不仅说你可以将飞书和 Claude Code 打通，还可以发掘出很多新的可能，比如你也可以让飞书和本机的小龙虾、Codex、Cursor 连接起来，在飞书界面中操作它们，它们反过来也能借助飞书 cli 操作飞书。\n\n开源项目有个好处就是你可以照葫芦画瓢，如果你想参考它做一些自己的机器人，可以把代码库发给 Coding Agent，帮你定制化一个自己的版本。\n\n比如说这两个是其他网友做过的把 Codex 接入飞书的 bridge 项目，用起来也是一样的：\nhttps://t.co/cKLfCDfskP\nhttps://t.co/zCPoISnudz\n\n有一点要提醒的是，Bridge 使用的是claude -p模式，自 2026 年 6 月 15 日起，Claude 订阅计划对 claude -p 和 Agent SDK 的使用将独立计费，不走订阅额度。如果你是用 API，不受影响。或者也可以考虑使用上面的 Codex bridge 项目。\n\n项目地址：https://t.co/7BWMwz6p3s",
+        "created_at": "Sat May 23 07:15:51 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2058084064033112064",
+            "url": "https://pbs.twimg.com/media/HI_IjVKWAAA8-Nr.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2058084371475619840",
+            "url": "https://pbs.twimg.com/media/HI_I1OeWYAAXrUJ.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2058084394661711872",
+            "url": "https://pbs.twimg.com/media/HI_I2k2WEAAxqY1.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2058084420221829120",
+            "url": "https://pbs.twimg.com/media/HI_I4EEWgAAXUcT.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 220429,
+          "friends_count": 1647,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 14,
+          "favorite_count": 45,
+          "reply_count": 14,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 33,
+        "reply_count": 4,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2058091472390394135",
+      "text": "1. 下载项目，先在 Codex 中，让它阅读项目后写一个说明文档\n\n&gt; 详细解释一下 ~/github/feishu-claude-code-bridge 这个项目的工作原理 ，用mermaid画一些图补充说明，目的是小白看了也能清楚它的工作原理 https://t.co/KDfeRx5JhR",
+      "created_at": "Sat May 23 07:43:39 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2058090966456717312",
+          "url": "https://pbs.twimg.com/media/HI_O1GsX0AARBQj.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2058091474734969273",
+      "text": "2. 在 ChatGPT 中，把 Codex 生成好的内容粘贴进去，加一句提示词：\n\n&gt; 画一张手绘教育信息图： https://t.co/9dlMrq3MQn",
+      "created_at": "Sat May 23 07:43:39 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2058091402022559744",
+          "url": "https://pbs.twimg.com/media/HI_POdTXIAA8hEw.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 1,
         "quote_count": 0
       }
     }

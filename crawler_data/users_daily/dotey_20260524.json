@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 220919,
+    "followers_count": 220932,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260524",
-  "last_updated": "2026-05-24T18:24:55.597320",
-  "tweet_count": 6,
+  "last_updated": "2026-05-24T20:23:17.858214",
+  "tweet_count": 7,
   "tweets": [
     {
       "id": "2058421725256171718",
@@ -256,6 +256,57 @@
       ],
       "retweet": null,
       "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2058618849172365623",
+      "text": "右上角的信息 icon 可以显示隐藏右上角的信息面板，可以看到当前 Turn 的进展\n\nSteer 可以在当前这一个轮次的任务中，加入提示词\n\nQueue “理论上”可以加入提示词在下一个轮次，但实测下来不会，像是个bug\n\nSteer 和 Queue 都只影响当前或者下一轮次的任务，不会影响 Goal\nhttps://t.co/a4g8ZAc850 https://t.co/zeWVt4nSPv",
+      "created_at": "Sun May 24 18:39:15 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2058613520380424192",
+          "url": "https://pbs.twimg.com/media/HJGqFvwXcAA2fus.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2057235477623939482",
+        "text": "Codex 使用技巧：Steer 和 Queue\n\n通常 Agent 执行一个任务不会马上结束，可能会要等几分钟甚至更久，如果这时候你有个新的要求想补充，这里有两种方式补充：Steer（任务干预） 和 Queue（排队）。\n\n> Steer（快捷键：Shift + Enter）：在当前任务还没完成时，中途打断 Codex 并给它指引新的方向。\n\n这个功能相当于你按停止，输入新指令然后再让 Agent 继续。但不需要你去手动停止再让它继续，只要输入指令，按 Shift + 回车，或者先回车，在点击“Steer”按钮就可以发送。Agent 会在下一轮工具调用间隙直接添加新的指令到上下文。\n\n> Queue（快捷键：Enter）：在 Codex 完成当前步骤后，给它安排接下来的活儿。\n\n任务排队就不太一样了。它不会打断正在进行的任务，而是把新任务排在队伍后面。而且你提交多条信息，它在任务结束后，不会一次性把你队列的消息执行，而是执行一条，完成这一条对应的任务后，继续下一条。\n\n所以有时候我睡觉前，会在一个长任务后面加上几个 “Continue” 消息到队列，让它尽可能多跑一会，免得中间就停止了。\n\n简单来说，“Steer”是改变 Codex 眼下正在做的事，而“Queue”是安排它接下来要做的事。",
+        "created_at": "Wed May 20 23:02:14 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2057235397231419392",
+            "url": "https://pbs.twimg.com/media/HIzEsa9WoAAe8WY.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 220932,
+          "friends_count": 1648,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 49,
+          "favorite_count": 298,
+          "reply_count": 79,
+          "quote_count": 12
+        }
+      },
       "stats": {
         "retweet_count": 0,
         "favorite_count": 0,

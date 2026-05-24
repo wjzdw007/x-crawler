@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 220900,
+    "followers_count": 220919,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260524",
-  "last_updated": "2026-05-24T16:24:26.399111",
-  "tweet_count": 2,
+  "last_updated": "2026-05-24T18:24:55.597320",
+  "tweet_count": 6,
   "tweets": [
     {
       "id": "2058421725256171718",
@@ -74,6 +74,190 @@
       "quoted": null,
       "stats": {
         "retweet_count": 19,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2058586572077801898",
+      "text": "欢迎 caoz 正式启用 X👏",
+      "created_at": "Sun May 24 16:31:00 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2058221709329850653",
+        "text": "注册推特14年，除了第一条hello world，还没发过贴。 \n\n不过最近觉得是时候在海外稍稍尝试建立点影响力了，万一能赚点退休金呢。\n\n就酱。",
+        "created_at": "Sat May 23 16:21:10 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "877141452",
+          "name": "caoz",
+          "screen_name": "caoz4",
+          "description": "闷骚老男人\n\nhttps://t.co/I0Lq9HLHiy",
+          "followers_count": 6674,
+          "friends_count": 81,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 166,
+          "reply_count": 154,
+          "quote_count": 16
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 16,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2058591666504716426",
+      "text": "RT @TobyAtLarge: （好担心自己变成杠精😂）\n\n先说结论：观察方向对，但论证粗糙，外推过度，借鉴意义有限。本文展现出了作者她这个背景和level不应该呈现出的稚嫩感。\n\n几个核心问题：\n\n1. \"代码几乎免费\"是演讲修辞，不是事实。…",
+      "created_at": "Sun May 24 16:51:14 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2058591481951400240",
+        "text": "（好担心自己变成杠精😂）\n\n先说结论：观察方向对，但论证粗糙，外推过度，借鉴意义有限。本文展现出了作者她这个背景和level不应该呈现出的稚嫩感。\n\n几个核心问题：\n\n1. \"代码几乎免费\"是演讲修辞，不是事实。\n\n代码确实便宜了很多，但\"优秀代码\"——考虑到架构设计、边界条件、测试覆盖——仍然有成本。这个区分不是挑字眼，而是直接决定了你能不能真的\"随便试错、三个 PR 并行上\"。Fiona 自己也承认\"维护成本不会跟着归零\"，说明她心里清楚，只是演讲里为了冲击力把话说满了。\n\n2. Source of truth 不止一层。\n\n她说\"代码是唯一的 source of truth\"，这过于绝对。实际工程至少有三层：需求（为什么做）→ 设计（怎么做）→ 代码（做出来了）。需求文档才是最初的 source of truth。代码是执行结果，经常处在折中状态——来自业务限制、时间压力、技术债的折中。如果没有需求文档做参照，你连\"这个折中是刻意的还是 bug\"都分不清。\n\n3. 三个\"未解问题\"暴露了思考深度不够（疑菜）。\n\n- \"跨平台团队还有没有意义\"——她的前提就是大家都在用 Claude Code 写代码，设计师能写、PM 能写、工程师能写。既然如此，答案不是显而易见吗？iOS 和 Android 的分队已经没有必要了。把一个自己前提里已经蕴含了答案的问题当成\"未解难题\"，很奇怪。\n- \"自动评审推多远\"——答案很清楚：bottom line 是不能让 bug 到用户那里。\n- \"角色模糊后公平感怎么设计\"——这个问题的框架就错了。作为一个企业，你最应该关心的是交付的产品质量和代码质量，而不是内部团队对\"谁的代码贡献更多\"的公平感。PM 提交的 PR 和工程师提交的 PR，在 review 标准上不该有任何区别。产品是用户喜闻乐见的，所谓的\"公平感\"不应该是个问题。\n\n4. JIT planning = 没有规划\n\n她说不做半年路线图，\"什么时候需要再做什么\"。这很夸张。说白了就是对一个正经严肃的 toB/toC 产品不做规划。\n任何产品都有核心路线、大方向和目标。\"先发 PR、少开会\"直接导致 feature 失控。而且讽刺的是，从用户端观察，Claude Code 的发布节奏看起来是有规划、有节制的——并不像她描述的那种勃勃生机万物竞发的野蛮生长式的运作方式。\n\n5. 整体判断：特殊环境里的个人经验，包装成了普适方法论。\n\nAnthropic 是一个极端特殊的环境：AI-native 产品、极高人才密度、公司本身就是最好的 dogfooding 场景。在这种环境里一年的实验，外推到\"所有工程团队都该这样\"——折扣要打得很大。",
+        "created_at": "Sun May 24 16:50:30 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2054086398328656383",
+          "text": "https://t.co/5QbLGdxBiw",
+          "created_at": "Tue May 12 06:28:55 +0000 2026",
+          "lang": "zxx",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 220919,
+            "friends_count": 1648,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 96,
+            "favorite_count": 424,
+            "reply_count": 30,
+            "quote_count": 10
+          }
+        },
+        "user": {
+          "id": "1788105353525329920",
+          "name": "Toby!",
+          "screen_name": "TobyAtLarge",
+          "description": "🦄7年北美独角兽算法程序员\n🚀连续创业 | 科技投资 | ENTP\n🇺🇸美国本硕 🇨🇦旅居温哥华 🇨🇳现居上海\n🍚美食爱好者 | steam囤囤鼠\n\n✉️开放交流合作 👋\n\ntoby.fangyuan@gmail.com",
+          "followers_count": 5164,
+          "friends_count": 434,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3,
+          "favorite_count": 14,
+          "reply_count": 2,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2058612576775229669",
+      "text": "一个正在进行中的 /goal 任务，如何知道进展如何了？如何暂停、继续、添加更新？\n\n有时候一个长任务，执行很久了，也不知道进展如何了，这时候可以借助 /side 指令开启一个side chat，不影响当前会话，并且有当前会话所有上下文，比如：\n\n&gt; /side 目前进度如何了？预计还要多久 https://t.co/0EVudYTknp",
+      "created_at": "Sun May 24 18:14:20 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2058611236682506240",
+          "url": "https://pbs.twimg.com/media/HJGoA0UWoAAYWAg.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2058611549112008704",
+          "url": "https://pbs.twimg.com/media/HJGoTANWgAA1Fjv.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2057672416071987378",
+        "text": "如何在  Codex App 使用 /goal 的简单说明：\n\n1. 升级 Codex App 到最新版本\n\n2. 先在命令行运行一下下面的指令：  \n> codex features enable goals\n\n或者手动修改 ~/.codex/config.toml\n\n[features]\ngoals = true\n\n3. 开头输入 /goal，或者点 + 弹出菜单中选择\n\n4. 开始后，输入框上方可以暂停、编辑、删除",
+        "created_at": "Fri May 22 03:58:28 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2057671787794534400",
+            "url": "https://pbs.twimg.com/media/HI5RlsfWEAAP_rG.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2057672045995950080",
+            "url": "https://pbs.twimg.com/media/HI5R0uXXAAAYFD8.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 220919,
+          "friends_count": 1648,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 66,
+          "favorite_count": 401,
+          "reply_count": 68,
+          "quote_count": 13
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2058612580315177199",
+      "text": "在输入框上面有一个 Goal 的面板，可以对 goal 进行调整：\n1. 删除 goal，会变成一次普通任务，结束后不会继续\n2. 暂停/继续 goal，可以先暂停，比如 token 不够用了要等 Tibo Reset\n3. 编辑 goal，对 goal 做调整\n\n这些 gaol 的调整都需要等当前这一轮次（Turn）结束后生效 https://t.co/V5ddRxXPad",
+      "created_at": "Sun May 24 18:14:20 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2058611760081272832",
+          "url": "https://pbs.twimg.com/media/HJGofSIWAAAAb4r.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

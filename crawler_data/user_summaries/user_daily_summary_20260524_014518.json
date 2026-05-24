@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-05-24T01:45:18.492331",
+  "tweet_count": 13,
+  "summary": "**新工具/技术**\n- Hermes Agent：NousResearch 的 Agent 框架，官方文档详细，适合看整体架构与组件关系。  \n- Codex / Claude Code：交互式本地 Agent 平台，适合让 Agent 打开并解释代码库、查看 SubAgent 运行状态与提示词。  \n- feishu-claude-code-bridge（Zara Zhang / lark-channel-bridge）：开源桥接器，把飞书/飞书客户端消息与本机 Claude Code CLI 连通，实现消息↔CLI 的实时交互。  \n- Codex/Codex-bridge（第三方）：可替代 Claude 的本地桥接方案，避免 claude -p 计费影响。  \n- PermissionFlow、Capcap：dotey 转发的 macOS 授权库与截图工具，属于实用开发者工具链补充。\n\n**核心观点/方法论**\n- 先读官方文档再看代码：看架构文档能建立整体认知，随后用 Agent（Codex/Claude Code）逐步解释代码，效率高且可随问随答。为什么重要：减少盲摸，快速构建系统性理解。  \n- 用“消息↔本机 CLI”桥接思路扩展 Agent 场景：把企业 IM 作为操作界面（飞书作为前端），本地或私有模型做执行端，形成可追溯的工作流。为什么重要：把强交互能力带到日常协作工具里，提升可用性与自动化。  \n- 工具链组合优于单一工具：示例流程为 Codex 阅读代码→生成说明→把说明给 ChatGPT/绘图工具生成教育信息图，体现“各司其职”的流水线式生产。为什么重要：发挥各平台长处，产出更专业的文档/视觉内容。  \n- 实用性优先，按需置顶对话：对项目维持少量常驻会话即可，无需对每个任务都建立长期会话，降低管理成本。\n\n**实践经验/案例**\n- Feishu + Claude Code 桥接实操：在本地飞书客户端运行 npx -y lark-channel-bridge@latest run，按网页引导创建应用与授权，bridge 可设置 Workspace 与 Claude Code 目录，结果与直接在本机操作几乎一致。  \n- 风险/成本提示：Claude 的 claude -p 与 Agent SDK 将于 2026-06-15 起独立计费，若关心费用可用 API 或改用 Codex 类替代桥。  \n- Codex 使用感受：交互界面能清晰展示 SubAgents 与各自提示词，便于调试与理解 Agent 行为；此前出现限额消耗问题已修复并重置额度。",
+  "metadata": {
+    "original_tweets": 10,
+    "retweets": 3,
+    "media_tweets": 7,
+    "data_hash": "4d19a72f",
+    "user": "dotey"
+  }
+}

@@ -1,12 +1,192 @@
 {
   "date": "20260526",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-05-26T18:51:07.734958",
-  "tweet_count": 225,
-  "unique_tweet_count": 225,
-  "total_crawled": 420,
-  "duplicates_removed": 195,
+  "last_crawl_time": "2026-05-26T20:44:17.143301",
+  "tweet_count": 228,
+  "unique_tweet_count": 228,
+  "total_crawled": 425,
+  "duplicates_removed": 197,
   "tweets": [
+    {
+      "id": "2059363993576169658",
+      "text": "RT @fi56622380: 华为τ scaling定律营销策略，无非是more than moore的广义摩尔定律的另一种说法而已\n\n作为芯片架构师，我更感兴趣的，还是芯片密度提升，ppt上41%能耗提升和12.7%性能提升，到底是怎么实现的\n\n看完了论文，感觉华为这次创新…",
+      "created_at": "Tue May 26 20:00:11 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2059176109061857761",
+        "text": "华为τ scaling定律营销策略，无非是more than moore的广义摩尔定律的另一种说法而已\n\n作为芯片架构师，我更感兴趣的，还是芯片密度提升，ppt上41%能耗提升和12.7%性能提升，到底是怎么实现的\n\n看完了论文，感觉华为这次创新，本质上是用设计复杂度高 + 高制造成本 + 超前散热，一定程度弥补了工艺差距\n\n-----------------\n\n1. 华为芯片堆叠带来的等效密度提升，是虚假宣传还是真的，是不是工艺突破？有没有实打实的好处？\n\n等效密度提升的来源，是两片芯片用hybrid bonding技术绑在一起，投影面积理论上能减小一半，但第一代不是全芯片双层折叠，而是选择性折叠关键logic，所以只有大概53%的芯片面积实现了折叠(密度155->238)，等到后面几代折叠面积会逐渐增大，到2030年接近全折叠（密度155->292）\n\n这2026第一代等效密度从 2025 年 155 MTr/mm² 跳到 2026 年 238 MTr/mm²，时钟频率也提升了12.7%，功耗比提升41%，表面上看似乎和工艺突破没有什么区别，但有一点重要区别就是leakage power华为从头到尾没有提，只要工艺节点不变，gate leakage、junction leakage 不会因为 3D stacking 自动改善\n\n2030年到2031年的等效密度突变，大概率是来自于2层堆叠到3层堆叠，正如2025到2026年的等效密度突变，时钟频率突变，来自单层到2层折叠\n\n所以从leakage没提这个事来看，这个2031年等效1.4nm，和工艺节点上的突破没有联系。\n\n本质上是用设计复杂度高 + 高成本 + 超前散热 + 超前部署advanced packaging，一定程度弥补了工艺差距\n\n-----------\n那么这样看起来虚假的等效密度提升，有用处吗？好处在哪里？\n\n有的，设计上topology折叠，原来要跑几毫米的水平走线，折叠后变成了几十微米。降低了super buffer/bus的长度，降低了clock tree的深度（clock depth -42%、clock wire -28%），clock skew也带来了改良(-25%)，这对动态功耗的改善是实实在在的。部分critical path的缩短，也让时钟频率的上升更容易\n\n所以ppt roadmap上performance的提升，从2025年到2026年上升了12.7%，大部分都是来自于时钟频率的上升（12.7%）\n\n所以好处基本上是topology拆分电路逻辑设计上带来的提升\n\n既然没有实质上的工艺提升，华为芯片堆叠带来等效密度提升的trade off代价在哪里？\n\n三个代价：散热超前发展，设计复杂度高，制造成本变高\n\n最大的代价就是热密度的同步上升，理论上logic on logic都是CPU execution发热最严重的区域，这部分折叠起来相当于功耗密度直接翻倍，但算上41% power efficiency改善，功耗密度仍只比非堆叠方案高40%左右。所以第一代只能对最关键的部分做折叠，大概只占全芯片面积的53%。\n\n所以散热技术也被逼的超前发展，直接上毫米级的MEMS风扇，做micro-cooling fan。\n\n另外的代价就是设计复杂度的变高，critical path的折叠，哪个部分的logic能折叠，折叠之后又会带来从前端到后端的巨大变化要推翻重来\n\n现有的所有EDA工具也不可能支持3D topology，论文自己也承认，full-scale LogicFolding需要全新的3D-native EDA toolchain，把多层stacked dies当作单一连续设计实体处理。哪些logic能折叠、折叠后的inter-die timing closure怎么做，Physical Design（PD）也是难点\n\n制造成本也会更高，被迫超前部署advanced packaging封装，1.5~2um的hybrid bonding + logic on logic都是很有挑战需要显著更高的成本\n以前一层wafer做一次光刻；现在两层wafer分别做光刻再bonding，加上hybrid bonding的overlay控制（论文要求<0.5μm）、TSV、KOZ keep-out zone、冗余修复、良率乘法损失，每颗芯片的制造成本和测试成本都要显著上升\n\n--------------------------\n\n2. Tau scaling这个说法，scaling的到底是什么，这个scaling技术路线是不是一次性的design topology红利？潜力如何？持续进步的空间在哪里？\n\nτ Scaling的核心主张是：用时间常数τ替代几何线宽作为全栈优化目标，在器件、电路、芯片、系统四个层级分别压缩特征延迟\n\n公式本身没有任何新物理。\"关注瓶颈延迟\"是所有架构师都在做的事情。整个行业都知道互联RC是延迟瓶颈，TSMC每一代工艺都在用low-k dielectrics/semi-damascene等手段降RC。把一个众所周知的优化方向包装成\"定律\"是显然的营销宣传手段，本质是More than Moore的广义摩尔定律的另一种说法\n\n抛开marketing，华为目前所谓RC delay的改善，本质上是芯片堆叠之后，topology距离缩短，让匹配的effective RC都变小，不是RC工艺常数\n\n至于scaling的意思，是能持续发展的一条roadmap。这里的持续改善路径指的是，全芯片堆叠的层数越来越多，从25~30年的2层堆叠，到31年开始的3层堆叠，以后甚至会考虑4层堆叠\n\n第一代折叠技术甚至不是全芯片双层折叠，而是选择性折叠关键logic，所以只有大概53%的芯片面积实现了折叠(密度155->238)，等到后面几代折叠面积会逐渐增大，到2030年接近全折叠（密度155->292）。2031年的roadmap之所以会出现一个阶跃，就是因为那是从2层折叠到3层折叠的时间点。\n\n但需要注意的是，这个scaling方法的边际效应是逐渐缩小的，折叠成双层的收益是100%，2->3层的收益就只有50%，如果2035年再从3->4层堆叠，收益就只有33%了\n\n另外随着堆叠层数变高，上面说到的三个挑战，散热，设计复杂度，成本，都是越来越大\n\n---------------------\n\n3. 华为的芯片堆叠，是不是TSMC/AMD已经有的hybrid bonding技术？华为做到的是cache on logic，cache on cache，还是logic on logic，logic on logic最大的散热问题是怎么解决的？\n\n是已经有的技术没错，但同时也是把现有技术指标做到了领先也是真的，3D堆叠本身不是新技术，TSMC的hybrid bonding量产还是6um，华为论文给出Kirin 2026的hybrid bonding pitch是1.5μm\n\n我在刚刚看到华为的堆叠消息之后，第一反应也是怀疑和AMD的3D V cache类似，它主要把 SRAM cache 叠在 已经有的L3 cache 区域上，通常会避免直接堆在最热的 CPU execution logic 上，就是避免散热问题，毕竟SRAM 的功耗密度和热点特性与high-activity logic 不一样，如果最热的logic on logic堆叠，散热恐怕会碰到困难\n\n但看了更多数据之后，clock buffer -56%、clock depth -42%、clock wire -28%，这些只有在core内部的clock distribution被重构时才可能发生。纯SRAM stacking不会碰core内部的clock tree。另外如果只是cache on cache，大概率是不需要单独MEMS微型风扇额外散热的，证据普遍都指向logic on logic方式\n\n华为这个技术的精妙之处在于，logic on logic 折叠之后热密度并没有翻倍，而是因为topology的好处，能耗下降了30%，这样热密度只上升了40~50%\n\n而第一代没有完全把整个最热的execution logic 100%堆叠起来，论文也明确说selectively applied along key critical paths，只是大概53%有选择性关键路径会堆叠起来，可能颗粒度都没有那么好，只是IP堆叠在IP上，那么热密度上升也许能维持在20%以内\n\n但这条道路继续前行，超前发展的散热就成了必然，现在是MEMS微型毫米级的主动散热风扇，紧贴处理器传导效率高，和华为手机一样，散热堆料特别足，而且技术领先同行。\n\n以后怕是要把HBM7/8的微流道散热技术提前用起来了，毕竟HBM7/8要上24+层堆叠，华为很可能要在提前用上下个世代的散热技术了\n\n-------------------------\n\n4. 从架构角度来说，最重要的问题，华为41%的power efficiency（能耗比）提升，到底是怎么实现的？为什么AMD的3D V cache没有这么大的提升？\n\n首先确定41%的定义。论文只说\"SoC performance-core power efficiency improved by 41%\"，没有给出benchmark名称、Voltage/Freq点、温度条件、功耗边界。但PPT roadmap上有一个关键线索：ISO-Power Performance的数字，2025年是2.75，2026年是3.1，提升12.7%\n\n这个时钟频率提升12.7%完全一致，可以理解为，同功耗的性能提升是12.7%，绝大部分是时钟频率提升带来的\n\n至于能耗比上优化的猜测是，LogicFolding缩短critical path → 在固定Vdd下Fmax从2.75GHz提升到3.1GHz → 这意味着在原来的2.75GHz频率下，有了约12.7%的timing headroom → 这个空间在iso-performance模式下可以换成更低的Vdd\n\n另外的能耗比的提升，可能也来自于电路折叠之后，cache hit latency的下降。从业界经验来看，一般L2/L3 cache hit latency下降10%，CPU整体性能会有至少5%的提升\n\nppt里显示SRAM latency下降30%，估计会有一部分转化为cache hit latency的下降\n\nAMD的3D V cache没有这么大的提升，主要是因为AMD的底层logic die并没有重新设计，3D cache的延迟latency不仅没有减小反而加大，只是增加了cache大小，收益不如latency下降那么明显。\n\n另一方面，clock skew的下降,critical路径变短，造成电路timing变好，意味着华为可以使用更低的vdd（猜测甚至能低7~8%），以及路径缩短所带来的RC的下降(考虑到clock buffer -56%、wire -28%、SRAM pJ/bit -24%这些数字，比如C_eff下降10~15%合理)，再加上clock tree的整体缩短和下降，确实是有可能在部分Voltage/Freq点做到同性能下，做到30%的功耗下降的，而30%的功耗下降换算过来就是41%的power efficiency\n\n对比苹果和高通，每一代手机芯片在iso-power下单核性能一般提升10-20%，iso-performance下功耗一般降30-40%，这是V/F曲线的特性决定的，所以从经验上来说，数字是对的上的。\n\n所以这个power efficiency（能耗比）的提升，从现有的数字上来说可以从topology推导出来是合理的，可能真的和工艺节点没有太大关系\n\n----------------------------\n\n5. 这个技术路线有没有可复制性，其他家会不会效仿？\n\n短期内不会大规模效仿，因为性价比和风险收益比来说不好。长期来看，这个方向所有人都在走，只是名字不一样\n\n华为做LogicFolding的根本驱动力是制裁，工艺节点被卡在7nm，只能在封装，散热，和设计层面想办法弥补。华为也为此付出了不小的代价：散热成本，设计复杂度，以及制造成本更高（包括良率）。这是一个被逼出来的路线，不是一个自然选择\n\n其他玩家在用TSMC就能做到正常的经济迭代，是没有必要冒着这个风险，去超前迭代散热技术和设计复杂度的\n\n长期来看，Intel的Foveros、TSMC的SoIC、AMD的MI300的3D stacking都在朝同一个方向走。如果继续追最先进节点的经济性持续恶化，那么\"固定一个成熟节点+3D topology optimization\"的路线会越来越有吸引力\n\n散热方面，MEMS微型风扇和微流道也会成为未来HBM散热的主流\n\n-------------------\n\n总结一下，华为这次的创新，绝对是值得尊重的，在制裁环境下，用极高的设计复杂度和成本，在一个被锁定的工艺节点上大胆重新设计，榨出了一次大的topology红利，虽然它有天花板。每多加一层的边际收益递减（堆叠1->2层, 2->3层, 3->4层，提升百分比变小），leakage无法解决，散热越来越难，3D EDA工具链更是全新的挑战。\n\n但这个Tau scaling不是一条可以走十年的指数增长路径，每次爬完一个台阶，下一个台阶更难爬，而且台阶更矮收益更小，华为以后想缩小差距，还得再想想靠什么其他的路线",
+        "created_at": "Tue May 26 07:33:36 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2059173475764596736",
+            "url": "https://pbs.twimg.com/media/HJOnXcHa8AAwOyQ.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2059173674637561856",
+            "url": "https://pbs.twimg.com/media/HJOnjA-bkAAXPdi.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2059173711392223232",
+            "url": "https://pbs.twimg.com/media/HJOnlJ5bMAA8OOp.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2059173763376463872",
+            "url": "https://pbs.twimg.com/media/HJOnoLjbwAAqrHe.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1503621835136462849",
+          "name": "fin",
+          "screen_name": "fi56622380",
+          "description": "立场不重要，事物的运行逻辑和内在规律才是更值得关注的部分 | \n\n读过三个不同专业的学位，体验过两个大洲的尘世生活，设计过一次火星车芯片，还没有去看过心心念念的冰川",
+          "followers_count": 55341,
+          "friends_count": 481,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 345,
+          "favorite_count": 1303,
+          "reply_count": 126,
+          "quote_count": 49
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 221298,
+        "friends_count": 1649,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 345,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2059363470488092778",
+      "text": "Inspiring!",
+      "created_at": "Tue May 26 19:58:07 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2059349030514094568",
+        "text": "NASA just officially unveiled their master plan for a permanent Moon Base at the lunar South Pole\n\nThis is not just about flags and footprints. NASA is moving to establish an enduring, sustained human presence, and they are heavily relying on commercial innovators to build it\n\nThe roadmap is highly aggressive:\n• Phase 1: Heavy robotic missions and commercial payload deliveries\n• Phase 2: Semi-permanent infrastructure, including fission surface power and lunar drones\n• Phase 3: A sustained, permanent human outpost\n\nThe most important takeaway is NASA explicitly stated this base is the ultimate proving ground to prepare humanity for missions to Mars\n\nWhile legacy aerospace companies are still struggling to reliably get a small capsule to the ISS, NASA is setting the stage for massive lunar infrastructure....which is exactly the kind of heavy-lift planetary deployment SpaceX’s Starship was designed for\n\nThe multi-planetary economy is officially kicking off",
+        "created_at": "Tue May 26 19:00:44 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2059347597798633472",
+            "url": "https://pbs.twimg.com/media/HJRFurPXcAAUlFE.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 226660,
+          "friends_count": 1845,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 274,
+          "favorite_count": 1726,
+          "reply_count": 191,
+          "quote_count": 45
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240157907,
+        "friends_count": 1345,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1349,
+        "favorite_count": 11114,
+        "reply_count": 1372,
+        "quote_count": 72
+      }
+    },
+    {
+      "id": "2059362297597010222",
+      "text": "Grok",
+      "created_at": "Tue May 26 19:53:27 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2059337441597591901",
+        "text": "Belgian man convicted of hate speech describes the judicial rationale for his latest conviction.\n\nI asked Gemini: Is this man's account of his conviction accurate?\n\nGemini replied that it was grossly inaccurate.\n\nSo, I copied and pasted Gemini's response, and asked Grok to reply to it.\n\nGrok told me that Gemini was mixing up two different cases, and that the tweet was an accurate representation of the latest judicial proceeding against  Van Langenhove.\n\nI went back to Gemini, and asked it to reply to what Grok had just told me, and it responded: \"Grok is completely correct. I mixed up the cases, and I appreciate the correction.\" \n\nAs I've tweeted in the past: This sort of thing happens all the time.",
+        "created_at": "Tue May 26 18:14:41 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2059334061252898816",
+            "url": "https://pbs.twimg.com/media/HJQ5avrXcAAlzBu.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1549461766983360512",
+          "name": "i/o",
+          "screen_name": "avidseries",
+          "description": "Good and bad ideas are fairly equally distributed across the political spectrum.\n\nErect a strawman in my replies, you get blocked.",
+          "followers_count": 196184,
+          "friends_count": 244,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 238,
+          "favorite_count": 1724,
+          "reply_count": 60,
+          "quote_count": 19
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240157907,
+        "friends_count": 1345,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1044,
+        "favorite_count": 6084,
+        "reply_count": 725,
+        "quote_count": 41
+      }
+    },
     {
       "id": "2059345041806553416",
       "text": "Time to build major base on the Moon!",

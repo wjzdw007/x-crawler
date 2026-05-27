@@ -1,12 +1,294 @@
 {
   "date": "20260527",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-05-27T03:10:48.384359",
-  "tweet_count": 202,
-  "unique_tweet_count": 202,
-  "total_crawled": 400,
-  "duplicates_removed": 198,
+  "last_crawl_time": "2026-05-27T05:32:23.287594",
+  "tweet_count": 207,
+  "unique_tweet_count": 207,
+  "total_crawled": 402,
+  "duplicates_removed": 195,
   "tweets": [
+    {
+      "id": "2059494412414013924",
+      "text": "Coding Agent 不行，模型和 Agent 应用都还没追上\nhttps://t.co/7Lm4kbKtNS",
+      "created_at": "Wed May 27 04:38:26 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2059491743100473391",
+        "text": "@dotey 掉队怎么说？",
+        "created_at": "Wed May 27 04:27:49 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1723122161034907648",
+          "name": "AutoJunjie",
+          "screen_name": "AutoJunjie2023",
+          "description": "Building @ChorusAIDLC | Renaissance Developer @AWS",
+          "followers_count": 202,
+          "friends_count": 1013,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 221365,
+        "friends_count": 1649,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2059487940506501614",
+      "text": "Gemini 2.5 Pro 之前，Google 模型没有超过 GPT-4 的好么\n现在 Gemini 又开始掉队了……",
+      "created_at": "Wed May 27 04:12:43 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2059424347748483566",
+        "text": "Google其实比OpenAI更早做MoE。\n我们专访到了Gemini前核心科学家Andrew Dai。Andrew回忆，Google Brain在 2021 年就已经做出了比GPT-3更强的MoE大模型GLaM，PaLM 2甚至在2023年初就训练完成。\n但问题不在技术，而在组织。为了等Google I/O，PaLM 2被硬生生拖慢发布；而OpenAI抢在前面发布GPT-4，直接改写了市场叙事。\n“早一点发布，我们可能就是世界最好的模型。”最先看到未来的人，为什么反而输了时间？",
+        "created_at": "Wed May 27 00:00:01 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2059181849751220225",
+            "url": "https://video.twimg.com/amplify_video/2059181849751220225/vid/avc1/1080x1920/kOI962CkRmwqbrRM.mp4?tag=27",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1474446180432039937",
+          "name": "硅谷101",
+          "screen_name": "thevalley101",
+          "description": "分享当下最新鲜的技术、知识与思想；从这里驶向未来。\n硅谷101播客：https://t.co/YDpJrQuRJm\n硅谷101视频：https://t.co/LdlyYPAiso\nWeb3 101：https://t.co/4NAJKOhToB",
+          "followers_count": 8985,
+          "friends_count": 75,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 25,
+          "reply_count": 6,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 221365,
+        "friends_count": 1649,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 22,
+        "reply_count": 21,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2059483977879376292",
+      "text": "RT @skcd42: Bug fixes shipping to Grok Build 0.2.3 (release notes will be available in the TUI)\n\n- add “Yes, and don't ask again for anythi…",
+      "created_at": "Wed May 27 03:56:58 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2059471983684055257",
+        "text": "Bug fixes shipping to Grok Build 0.2.3 (release notes will be available in the TUI)\n\n- add “Yes, and don't ask again for anything (always-approve mode)\"\n- add alpha/stable to welcome screen\n- JetBrains/JediTerm terminal detection so TUI does not get confused and detect it as some other terminal\n- persist model ID instead of display name for default_model\n- clamp Q&A height to prevent ratatui buffer overflow\n- better UX for tmux inside ssh copy-paste issues\n- store vim mode persistently in the config.toml to prevent restart loss\n- memory usage improvements for managing chat history on the hot path",
+        "created_at": "Wed May 27 03:09:18 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1480673713179795457",
+          "name": "skcd",
+          "screen_name": "skcd42",
+          "description": "Understanding the universe @xai \nex hacking @aide_dev \nex fb engineer\nICPC WF\n\nits just code 👨🏼‍💻",
+          "followers_count": 17836,
+          "friends_count": 316,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 150,
+          "favorite_count": 922,
+          "reply_count": 176,
+          "quote_count": 10
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240142327,
+        "friends_count": 1345,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 150,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2059473112006320238",
+      "text": "RT @UnderSecPD: Policymakers worried about the rise of the so-called “far right” should avoid criminalizing accurate, data-driven  politica…",
+      "created_at": "Wed May 27 03:13:47 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2059364834265985082",
+        "text": "Policymakers worried about the rise of the so-called “far right” should avoid criminalizing accurate, data-driven  political speech about mass migration — as this ruling appears to explicitly contemplate.  \n\nDoing so means that people willing to be convicted of “racism” get a monopoly on making arguments that strike large segments of the public as important and true.",
+        "created_at": "Tue May 26 20:03:32 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2059275296050741666",
+          "text": "A very sad announcement.\n\nI have just been convicted a second time for 'hate speech' and it is only due to a technicality that I could not immediately be sent to jail —to the judge's frustration.\n\nIn an ironic turn of events it's actually thanks to my previous prison sentence (for memes in a private group chat) that I am now still free —in a physical sense, at least.\n\nCall me naive but I didn't think they would take it this far, given that this precedent criminalises many of the arguments used by even the most moderate politicians critical of mass migration.\n\nIn February 2024 I gave a lecture at Catholic University Leuven wherein I linked mass migration to crime and a deterioration of our quality of life. Every single point I made was 100% the truth and based on scientific evidence.\n\nCynically, even the judge that convicted me admits as much by writing in his verdict: “Even if all of the statements made by Van Langenhove are based on scientific evidence and statistics, it makes no difference to the criminal intent. Van Langenhove is not charged with spreading false information. He is charged with presenting facts in a way that incites hatred against persons on the grounds of one or more of the protected criteria in the Anti-Racism Law.”\n \nThat's a lot of words just to say he wants to send me to prison for speaking the truth.\n\nEven the regime media write: \"It did not matter to the court that Van Langenhove was quoting scientific sources. The judge argued that Van Langenhove's main message was that a big part of the societal problems like insecurity, housing shortages and lowering educational standards are due to mass migration.\"\n\nYou may think the regime media are being sympathetic to me in the first sentence, but in reality they are warning people: even if you speak the truth, if you go against our narrative, we will crush you in every way possible.\n\nBoth the public prosecutor and the judge did not present a single real argument as to how or against whom I would have incited hatred. So even if I would accept their crazy, dystopic law, I still did not break it.\n \nThe only argument they present is that I created a \"hostile atmosphere of us versus them” in regards to migrants. But even this silly argument (which is not even a punishable offence) is not true. To me, the deadly disease is self-hatred and one of its worst symptoms is replacement migration. My enemy is thus NOT the migrants themselves but those orchestrating the mass migration.\n\nSadly, in Belgium, evidence is not needed and ‘vibes’ are enough to put someone in jail.\n\nGiven the fact that I have another court case coming up in September and that I have a dozen active criminal investigations for hate speech, time is running out for me. I have already paid more than €420,000 in legal fees and there is no ending in sight. I have been in an intense battle of attrition for eight years and must now regroup to make sure I can still win.\n\nIf you want to help me, you can do so via the links below. If you can help in other ways, please contact me via DM.\n\nIf you live in a country that still has free speech, never let them touch it, however noble they make the motives sound, because this is where it leads to.",
+          "created_at": "Tue May 26 14:07:44 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2059266842447781888",
+              "url": "https://pbs.twimg.com/media/HJP8SGHXIAAp4yk.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "848784339483721728",
+            "name": "Dries Van Langenhove",
+            "screen_name": "DVanLangenhove",
+            "description": "Remigration activist. Sent to jail by the Brussels regime for 'hatespeech' because I love European civilisation. Help me fight: https://t.co/nLW746HiMO",
+            "followers_count": 121236,
+            "friends_count": 452,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 7756,
+            "favorite_count": 29055,
+            "reply_count": 1121,
+            "quote_count": 885
+          }
+        },
+        "user": {
+          "id": "12858902",
+          "name": "Under Secretary of State Sarah B. Rogers",
+          "screen_name": "UnderSecPD",
+          "description": "Official account of @StateDept’s Under Secretary for Public Diplomacy.",
+          "followers_count": 151988,
+          "friends_count": 537,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 495,
+          "favorite_count": 2625,
+          "reply_count": 142,
+          "quote_count": 13
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240142327,
+        "friends_count": 1345,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 495,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2059472491115123177",
+      "text": "Wow",
+      "created_at": "Wed May 27 03:11:19 +0000 2026",
+      "lang": "qst",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2059348120023003622",
+        "text": "Dries has just been convicted again: This time for speaking the truth about the disastrous consequences of mass migration.\n\nThe most insane part is that the Belgian court even admitted Dries spoke the truth, as what he said was factual, but deems it a crime because it could incite hatred. Let that sink in. \n\nThey’re criminalizing the truth and they’re using Dries to set an example.\n\nLet’s come together to help him. Dries is a young father, a brave patriot and the Belgian establishment has been trying to destroy him for years. He’s taken so many hits, he really deserves our help.",
+        "created_at": "Tue May 26 18:57:07 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "980516212059856901",
+          "name": "Eva Vlaardingerbroek",
+          "screen_name": "EvaVlaar",
+          "description": "🇳🇱 | “Shieldmaiden of the far right” | Commentator | Legal Philosopher LL.M. | Generation Remigration",
+          "followers_count": 1262608,
+          "friends_count": 1527,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2469,
+          "favorite_count": 10710,
+          "reply_count": 299,
+          "quote_count": 76
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240142327,
+        "friends_count": 1345,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2844,
+        "favorite_count": 20203,
+        "reply_count": 1027,
+        "quote_count": 55
+      }
+    },
     {
       "id": "2059471328529297595",
       "text": "RT @DashHuang: 把 AI 想象成数字员工，一个人管理的下属员工的薪资，和自己的薪资 1 : 1，甚至 1 : 10 其实都是正常的。所以未来 AI Token 的费用成本和员工工资齐平或超过都是可预期的。当然投产比的衡量标准也会和团队人数、薪资成本一样。你的团队招…",

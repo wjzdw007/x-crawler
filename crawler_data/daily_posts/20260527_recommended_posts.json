@@ -1,12 +1,203 @@
 {
   "date": "20260527",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-05-27T20:46:08.103666",
-  "tweet_count": 225,
-  "unique_tweet_count": 225,
-  "total_crawled": 418,
-  "duplicates_removed": 193,
+  "last_crawl_time": "2026-05-27T22:35:46.686508",
+  "tweet_count": 228,
+  "unique_tweet_count": 228,
+  "total_crawled": 425,
+  "duplicates_removed": 197,
   "tweets": [
+    {
+      "id": "2059762422098067835",
+      "text": "RT @XFreeze: I just found something interesting hidden on the SpaceX website\n\nGo to:\nhttps://t.co/9S7htc2TXp → Human Spaceflight → Space St…",
+      "created_at": "Wed May 27 22:23:24 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2059733567337296187",
+        "text": "I just found something interesting hidden on the SpaceX website\n\nGo to:\nhttps://t.co/viRbWa2eZf → Human Spaceflight → Space Station → scroll all the way down → “Play Now”\n\nIt’s a live Dragon docking simulator where you try docking with the ISS yourself\n\nAnd really… this game is way trickier than it looks\n\nYou think it’ll be simple until the capsule starts drifting sideways and rotating at the same time 😭\n\nMade me realize how insanely precise real docking actually is. The controls, timing, movement… everything has to be perfect",
+        "created_at": "Wed May 27 20:28:45 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2059732767575842818",
+            "url": "https://pbs.twimg.com/media/HJWkCgeXIAI84Ee.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 227888,
+          "friends_count": 1844,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 197,
+          "favorite_count": 1014,
+          "reply_count": 196,
+          "quote_count": 24
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240171274,
+        "friends_count": 1345,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 197,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2059762373238697993",
+      "text": "RT @theskory: We spent a ton of time making worktrees actually work well for agent swarms and large repos.\n\nWhen you’re running 10s of agen…",
+      "created_at": "Wed May 27 22:23:12 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2059729539287167068",
+        "text": "We spent a ton of time making worktrees actually work well for agent swarms and large repos.\n\nWhen you’re running 10s of agents that ship, you quickly realize you need worktree, but git’s defaults are brutal at this scale.\nSlow creation, every agent copying the whole repo, can’t check out the same branch twice.\n\nSo we fixed those problems in Grok Build.\nNow agents can spin up, reset, and go wild constantly. Worktrees are faster than normal Git, everything shares the same base, and it doesn’t eat your disk or grind your SSD.\n\nTry it:\ngrok -w <label> → new session in a worktree\ngrok -w <label> -r <session_id> → resume one\ngrok worktree ... → manage them",
+        "created_at": "Wed May 27 20:12:44 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2059009703917785118",
+          "text": "the @xai team really cooked with Grok Build\n\nthe most beautiful (and performant) TUI I've seen so far\n\n&gt;realtime context view\n&gt;feels snappy in ghostty\n&gt;first class worktree support\n&gt;great resume session flow\n&gt;robust keyboard shortcuts https://t.co/VmJQyjI8Bv",
+          "created_at": "Mon May 25 20:32:22 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2059008916860911616",
+              "url": "https://video.twimg.com/amplify_video/2059008916860911616/vid/avc1/3840x2160/gXIph9vILo7qbPGP.mp4?tag=27",
+              "bitrate": 25128000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1518984544421965824",
+            "name": "matt palmer",
+            "screen_name": "mattyp",
+            "description": "developer experience @conductor_build, prev @replit\noperating advisor @bessemervp",
+            "followers_count": 42252,
+            "friends_count": 670,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 970,
+            "favorite_count": 2556,
+            "reply_count": 223,
+            "quote_count": 8
+          }
+        },
+        "user": {
+          "id": "1394449160",
+          "name": "Boris Skorobogaty",
+          "screen_name": "theskory",
+          "description": "Cooking at @xAI, ex Senior Staff @Meta",
+          "followers_count": 479,
+          "friends_count": 268,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 51,
+          "favorite_count": 321,
+          "reply_count": 53,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240171274,
+        "friends_count": 1345,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 51,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2059761955519508774",
+      "text": "RT @SawyerMerritt: NASA Administrator Jared Isaacman: \"@SpaceX is probably our greatest commercial space company, hands down. We rely on Sp…",
+      "created_at": "Wed May 27 22:21:33 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2059732520485175424",
+        "text": "NASA Administrator Jared Isaacman: \"@SpaceX is probably our greatest commercial space company, hands down. We rely on SpaceX heavily to put our astronauts to and from the international space station.\"\nhttps://t.co/3Ef2N6d2rb",
+        "created_at": "Wed May 27 20:24:35 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2059703030417612800",
+            "url": "https://video.twimg.com/amplify_video/2059703030417612800/vid/avc1/1280x720/dWGdV_jeevbDe9a8.mp4?tag=14",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EVs/space/tech. Bringing you the latest news in a single, easy-to-read feed. $TSLA investor & Model Y owner.",
+          "followers_count": 1078065,
+          "friends_count": 459,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 360,
+          "favorite_count": 3572,
+          "reply_count": 153,
+          "quote_count": 16
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240171274,
+        "friends_count": 1345,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 360,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2059729329119006928",
       "text": "RepoPrompt 作者被 OpenAI 招安了，然后这软件现在免费了，即将开源。\n\n如果你是 RepoPrompt 付费用户会给你送 Codex 的 Credits。 https://t.co/dwXRjdABwV",

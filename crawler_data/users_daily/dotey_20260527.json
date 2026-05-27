@@ -1,0 +1,123 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 221314,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260527",
+  "last_updated": "2026-05-27T00:46:56.701980",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2059426345713582316",
+      "text": "RT @blackanger: 这组材料放在一起，结论并不是“软件工程要结束了”。恰恰相反，软件工程正在变得更工程化。\n\n当 AI 只能补全代码时，我们关心模型能力。当 AI 能参与任务流时，我们开始关心环境、上下文、规则和反馈。当 AI 进入组织生产系统时，我们必须关心成本、…",
+      "created_at": "Wed May 27 00:07:57 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2059408111757312212",
+        "text": "这组材料放在一起，结论并不是“软件工程要结束了”。恰恰相反，软件工程正在变得更工程化。\n\n当 AI 只能补全代码时，我们关心模型能力。当 AI 能参与任务流时，我们开始关心环境、上下文、规则和反馈。当 AI 进入组织生产系统时，我们必须关心成本、权限、审计、回滚和责任。当 AI 开始读写更宽的工作图谱时，我们还要重新思考代码库、文档、任务系统和协作平台的形态。\n\n所以，AI 编程的下一阶段，不是更强的提示词，而是更好的工作系统。\n\n个人层面，差距会来自谁更会把问题表达清楚、把上下文组织好、把验证做扎实。\n\n团队层面，差距会来自谁更早把 prompt、skills、scripts、hooks、测试、日志和治理沉淀成共享资产。\n\n组织层面，差距会来自谁能让 agent 在明确边界内高效行动，同时让人类保留关键判断权。\n\n真正的 AI-native 工程能力，不是让 agent 替你写更多代码，而是让人和 agent 在同一个可维护系统里稳定协作。",
+        "created_at": "Tue May 26 22:55:30 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2059374176012845376",
+          "text": "https://t.co/QX0ZLO43fU",
+          "created_at": "Tue May 26 20:40:39 +0000 2026",
+          "lang": "zxx",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "7755562",
+            "name": "AlexZ 🦀",
+            "screen_name": "blackanger",
+            "description": "System in Rust, Application in AI.\nSlow down. Have fun. Live well.\nINTJ-A. No ism.\nLifelong Programmer and  Writer.\nStudy in Public, Building in Public.\n\n🦀 保命",
+            "followers_count": 19530,
+            "friends_count": 1600,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1,
+            "favorite_count": 8,
+            "reply_count": 0,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "7755562",
+          "name": "AlexZ 🦀",
+          "screen_name": "blackanger",
+          "description": "System in Rust, Application in AI.\nSlow down. Have fun. Live well.\nINTJ-A. No ism.\nLifelong Programmer and  Writer.\nStudy in Public, Building in Public.\n\n🦀 保命",
+          "followers_count": 19530,
+          "friends_count": 1600,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5,
+          "favorite_count": 7,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2059434459783389397",
+      "text": "以我的经验，只有明确的可以程序自动验收标准的 Skills 才能自我进化，比如说你写个 Skill 去优化代码性能，这个代码性能是可测量可量化的，那么给一些测试样例去优化 Skill，那么能越来越好。\n\n对于一些没有明确的验收标准的 Skill，比如你写一个写作的 Skill，写作的好坏并没有很明确的验收标准，只能是 AI “自己打分”，但是这个打分其实和真实人类的体感还是有差距，AI 打分很好的稿子可能真人看起来一股 AI 味。\n\n真想写好 Agent Skills，还是要人去用，人去指出优化的方向，才能优化好。\n\n但有一点，没必要人自己去写 Skill，最好是人指挥 AI 去优化 Skill，AI 在具体执行上是做的蛮好的。\n\n另外做好版本管理，一轮一轮迭代，有时候还会出现负优化，得回退到旧的版本。",
+      "created_at": "Wed May 27 00:40:12 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2059409495303045579",
+        "text": "什么?! skill 也能\"训练\"了?\n\n以往大家都是凭经验让AI写 skill, 然后调试的时候也是运行几下感觉没bug就完事了.\n\n但 skill 能运行就一定好吗? 于是微软联合上交复旦同济等机构发了一个新框架 SkillOpt, 直接让AI评估skill写的好不好然后不断去优化! \n\n最终, 这个框架写的 skill 让GPT-5.5的直接对话准确率飙升了 23.5分!\n\n这个框架具体是怎么做的也很简单, 让skill迭代过程实现 harness 闭环! 大模型写完 skill 后, 立刻进入跑分流程, 只有得分更高的 skill 变更才会留下来. 跟大模型的强化学习过程如出一辙. \n\n框架的设计也很值得做 Agent 框架的同学借鉴, 比如:\n\n它设计了一个独立的优化器模型, 这个模型是用来写 skill 的, 它会根据 Agent 执行任务的试错表现得分, 对 skill 进行编辑操作(增加、删除、替换文本).\n\n然后就是 harness 流程了：每一次文本编辑都必须在独立的验证集上分数有提升, 才会允许合并.\n\n最后, 也是最精彩的地方, 框架还引入深度学习训练机制, 设计了文本层的学习率预算, 这个的核心就是限制大模型每次只能修改skill的一小部分, 慢慢迭代, 而不是全都重写.\n论文中最有价值的数据就在这里, 论文实验发现, 每一步设置 4 到 8 个编辑操作的预算效果最好. 最终的最佳 skill 往往只包含 1 到 4 个被接受的核心修改.\n\n甚至他们还设计了被拒编辑缓冲区, 用来存储训练过程的反面胶材, 以及周期性慢速/元更新, 这个则是跑完一个周期后, 会进行一次盘点, 类似于让框架形成记忆, 能更好的维持后续迭代.\n\n这篇论文的结论十分深刻: skill(prompt) 完全配得上, 也需要一套系统级的训练流程. \n\n原文中的描述直接是: 我们主张, skill 应当作为 Agent 的外部冻结状态来被\"训练\", 并且训练过程还要\"让权重空间优化具有可重复性\"! \n\n这是不是意味着, 提示词工程(Prompting)和模型训练(Training) 的界限将逐渐变得模糊? 而提示词工程完全进入了机器学习的领域. 也许很快, 我们再也不需要人类去手动瞎改和调试提示词了!\n\n论文地址: https://t.co/IHn7EZuhbv\n\n#skillopt  #微软  #提示词工程 #harness",
+        "created_at": "Tue May 26 23:01:00 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2059347805064564736",
+            "url": "https://pbs.twimg.com/media/HJRF6vXakAA-Gg1.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1071224721046261760",
+          "name": "karminski-牙医",
+          "screen_name": "karminski3",
+          "description": "A coder, road bike rider, server fortune teller, electronic waste collector, co-founder of KCORES, ex-director at IllaSoft, KingsoftOffice, Juejin.",
+          "followers_count": 37402,
+          "friends_count": 1535,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 14,
+          "favorite_count": 91,
+          "reply_count": 3,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    }
+  ]
+}

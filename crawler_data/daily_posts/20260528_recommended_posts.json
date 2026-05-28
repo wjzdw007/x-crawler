@@ -1,12 +1,85 @@
 {
   "date": "20260528",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-05-28T03:11:09.861307",
-  "tweet_count": 203,
-  "unique_tweet_count": 203,
-  "total_crawled": 400,
-  "duplicates_removed": 197,
+  "last_crawl_time": "2026-05-28T05:28:40.821791",
+  "tweet_count": 204,
+  "unique_tweet_count": 204,
+  "total_crawled": 403,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2059836085652291759",
+      "text": "RT @yan5xu: context 共享还是要有的。但分成两种看。\n放在message history的session内context，prompt cache友好，因为有 tool use trajectory，后续的tool use可以自然的跟随。适合人agent 密集…",
+      "created_at": "Thu May 28 03:16:07 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2059827711397577189",
+        "text": "context 共享还是要有的。但分成两种看。\n放在message history的session内context，prompt cache友好，因为有 tool use trajectory，后续的tool use可以自然的跟随。适合人agent 密集协作。\n通过 context tool 的跨session context，agent 使用工具按需拉取。能够减少无效context，避免上下文污染。适合task-driven agen，human-free。",
+        "created_at": "Thu May 28 02:42:50 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2059809458734424342",
+          "text": "如果我们的共识是「agent 共享 context 比不共享做得更好」，那我们必须提一个反方向的问题，「有没有什么场景不共享 context 做得更好？」答案是 adversarial 的场景，例如下棋的对手。按照这个思路，产品经理和设计师应该是同一个 agent，但写代码和审阅代码必须切分为两个 agent，审阅代码的 agent 不能有此前写代码的 context。",
+          "created_at": "Thu May 28 01:30:19 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1618521",
+            "name": "Cat Chen, @catchen@mastodon.world",
+            "screen_name": "CatChen",
+            "description": "Career coach, programmer, author, speaker. Former engineer & manager @ Chime, Robinhood, Facebook, Wandou Labs, Yahoo, Baidu. Career coaching available.",
+            "followers_count": 19142,
+            "friends_count": 308,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 5,
+            "favorite_count": 35,
+            "reply_count": 0,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "115897222",
+          "name": "yan5xu",
+          "screen_name": "yan5xu",
+          "description": "🤖 AI 野生研究员 | ex @ManusAI_HQ & @hey_im_monica\n推特内容仅代表个人观点，和公司无关",
+          "followers_count": 15784,
+          "friends_count": 439,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 17,
+          "reply_count": 2,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 221568,
+        "friends_count": 1655,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2059832074782089299",
       "text": "Agent 生成的结果要不要人工审查，取决于验证方法是不是可靠，以及模型能力是否够强，能理解任务并做好验证工作。\n就写代码这种事来说，中间结果确实不需要太多人工检查了，不过开头的 Plan/Design 和最终的审查，人还是过关一下比较好。",

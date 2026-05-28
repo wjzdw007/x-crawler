@@ -1,12 +1,74 @@
 {
   "date": "20260528",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-05-28T17:18:33.772167",
-  "tweet_count": 210,
-  "unique_tweet_count": 210,
-  "total_crawled": 408,
-  "duplicates_removed": 198,
+  "last_crawl_time": "2026-05-28T18:55:32.422979",
+  "tweet_count": 211,
+  "unique_tweet_count": 211,
+  "total_crawled": 410,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2060051148921323542",
+      "text": "Anthropic 今天发布了 Claude Opus 4.8，价格和上一代 4.7 持平。https://t.co/TWIpr3SkK2\n\n它最大的变化是更诚实了：更愿意承认自己不确定，更少为了凑个答案而硬编，对自己干到哪一步也能做出更真实的判断。跑长时间的 agent 任务时，它更像一个靠谱的工程师，不用你时时盯着。\n\n同时上线的还有 fast mode【快速模式】，同一个模型，速度大约快 2.5 倍，价格比以前便宜了三倍。在 Claude Code 里用 /fast 打开，API 用户得找客户经理申请或排队。\n\n【重头戏是 dynamic workflows】\n\n跟着 Opus 4.8 一起放出来的，是 Claude Code 的新功能 dynamic workflows（动态工作流），目前是研究预览。\n\n你给它一个大任务，它自己拆解，一次性派出几十到几百个并行的 subagent（子智能体）去干，干完会让另一批 agent 去验证，甚至专门派 agent 去挑刺，反复迭代到结果收敛，最后给你一个整合好的答案。整个过程能跑几小时甚至几天，中途断了还能接着跑。\n\n适合的活：整个代码仓库的 bug 排查、安全审计、性能优化，以及最常见的大规模迁移，框架升级、API 替换、跨语言移植，一次涉及上千个文件那种。\n\nAnthropic 把 Bun 用 Rust 重写当做了宣传安利。Bun 是个跑得很快的 JavaScript 运行时，创始人 Jarred Sumner 用 dynamic workflows 把整个项目从 Zig 移植到 Rust，官方说写了约 75 万行 Rust 代码，通过 99.8% 的原有测试，从第一次提交到合并只花了 11 天。\n\n【代价：它很烧 token】\n\nAnthropic 罕见地主动警告：dynamic workflows 消耗的 token 比普通 Claude Code 会话多得多，建议先拿小任务试水。第一次触发时，Claude Code 会先把要跑的东西摆给你看、让你确认，企业管理员也可以直接禁用。\n\n目前 Max、Team 套餐和 API 用户默认开启，Enterprise 套餐默认关闭，要管理员手动打开。开启方式是直接让 Claude\"建个 workflow\"，或者打开一个叫 ultracode 的开关。",
+      "created_at": "Thu May 28 17:30:42 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2060037207889473542",
+          "url": "https://video.twimg.com/amplify_video/2060037207889473542/vid/avc1/1920x1080/Pa_x_xKUEfJxgJmS.mp4?tag=27",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2060042702150930686",
+        "text": "Introducing Claude Opus 4.8: it builds on Opus 4.7 with sharper judgment, more honesty about its own progress, and the ability to work independently for longer than its predecessors.\n\nAvailable today at the same price. https://t.co/EufxL7T1kb",
+        "created_at": "Thu May 28 16:57:08 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2060036436804419584",
+            "url": "https://pbs.twimg.com/media/HJa4OYgWwAAlfWX.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1943306828697550848",
+          "name": "Claude",
+          "screen_name": "claudeai",
+          "description": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+          "followers_count": 1401138,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4082,
+          "favorite_count": 35205,
+          "reply_count": 1994,
+          "quote_count": 2861
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 221669,
+        "friends_count": 1656,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 67,
+        "reply_count": 15,
+        "quote_count": 6
+      }
+    },
     {
       "id": "2060038394428964893",
       "text": "Next will be writing the inference stack in C for simultaneous high-speed RL across a large block of GB300s. \n\n(We do use a little C++ tbh, but not much)",

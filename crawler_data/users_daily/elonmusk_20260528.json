@@ -3,13 +3,13 @@
     "screen_name": "elonmusk",
     "name": "Elon Musk",
     "description": "https://t.co/dDtDyVssfm",
-    "followers_count": 240156655,
+    "followers_count": 240159582,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260528",
-  "last_updated": "2026-05-28T05:28:40.857240",
-  "tweet_count": 2,
+  "last_updated": "2026-05-28T07:23:03.224104",
+  "tweet_count": 4,
   "tweets": [
     {
       "id": "2059802437146533964",
@@ -125,6 +125,60 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2059873440212124071",
+      "text": "Grok Build improvements",
+      "created_at": "Thu May 28 05:44:33 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2059832717542555657",
+        "text": "Bug fixes shipping to Grok Build 0.2.7 (release notes will be available in the TUI)\n\n• Wrap around on Up/Down in slash menu and history search\n• Restore subagent UI and replay on session resume\n• Fix Ctrl+Delete on windows\n• Windows drag-and-drop screenshot images + Ctrl/Alt+V image input\n• Add Windows-friendly alternatives for Ctrl+Enter / Ctrl+;\n• Strip base64 str images from read_file tool calls & pass as multimodal vision tokens\n• Share terminal backend, scheduler, monitor across subagent sessions\n• Image pipeline improvements (fix truncation, min pixels)\n• /login command to reauth from inside TUI\n• Add /usage\n• Handle Cmd+A in prompt to select all text in ghostty",
+        "created_at": "Thu May 28 03:02:44 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1480673713179795457",
+          "name": "skcd",
+          "screen_name": "skcd42",
+          "description": "Understanding the universe @xai \nex hacking @aide_dev \nex fb engineer\nICPC WF\n\nits just code 👨🏼‍💻",
+          "followers_count": 22166,
+          "friends_count": 316,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 32,
+          "favorite_count": 442,
+          "reply_count": 103,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 810,
+        "favorite_count": 6146,
+        "reply_count": 1411,
+        "quote_count": 51
+      }
+    },
+    {
+      "id": "2059884150187053488",
+      "text": "SpaceX has almost finished writing V1.0 of an in-house AI training stack in C that exact-maps to 220k GB300s with 800G NICs, making heavy use of pipeline parallelism and getting as close to bare metal as possible.\n\nThe potential speed improvement vs JAX for large training runs is over an order of magnitude.",
+      "created_at": "Thu May 28 06:27:06 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1015,
+        "favorite_count": 10629,
+        "reply_count": 1923,
+        "quote_count": 155
       }
     }
   ]

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 221508,
+    "followers_count": 221519,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260527",
-  "last_updated": "2026-05-27T22:35:46.736940",
-  "tweet_count": 12,
+  "last_updated": "2026-05-28T00:39:55.243108",
+  "tweet_count": 15,
   "tweets": [
     {
       "id": "2059426345713582316",
@@ -573,6 +573,111 @@
         "favorite_count": 14,
         "reply_count": 7,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2059770088236908723",
+      "text": "Claude Design 现在和 Claude AI 网站以及 Claude Code 共享额度了，之前是独立的额度，一不小心就没了。\n\n这个产品推荐多用用，产品设计能力和 UI 设计能力挺不错的。\n\n一个经验就是你先让它帮你定义一套设计系统（Design System），打磨好了后，基于设计系统去设计 UI，一致性会好很多 https://t.co/zETuJOqcLP",
+      "created_at": "Wed May 27 22:53:52 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2059770042527490051",
+          "url": "https://pbs.twimg.com/media/HJXF8MfXoAMQkvp.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 29,
+        "reply_count": 6,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2059773942500298934",
+      "text": "用好 Coding Agent，重点是两头，尤其是开头的部分，如果一开始就走偏了后面怎么改都改不好。\n\n比如我要开发一个新功能，首先不是直接叫给 Agent 去写，会把需求简单整理一下，发给三个不同的 Agent（Codex、Claude Code、Cursor），打开 Plan 模式去帮我写 Plan，这里要用最好的模型。\n\n都写完了之后我去看看谁的最好，以及其他版本有什么可取的地方。GPT 5.5 和 Claude Opus 4.7 并不是谁总是最好，选好了设计后，再把另外两个设计也发给它，让它借鉴一下。当然都不满意就要反复调整提示词多轮讨论。\n\n如果是简单的 Plan，直接就可以开始做了。\n\n如果是复杂的 Plan，让它设计成几个 Phases，每个 phase 说清楚要求和验证的方法，保存成一个 Markdown 文档，把相关的素材也都引用上。\n\n偷懒一点就用 /goal 把 plan 文件发给它，让它按照 Phases 执行，担心 Agent 跑偏就每一步完成人工去审核一下，及时纠偏。\n\n写代码有条件当然用最好的模型，但如果像节约成本，便宜一点的模型也是可以的，毕竟设计好了、有明确的验收标准，偏不到哪里去。\n\n最后代码 Review 不需要太多 Agent 去，GPT-5.5 这种就够了，重点是看是不是符合设计要求以及代码质量有没有问题。\n\n这其实很像一个几个高水平的架构师，一人出一套系统设计方案，你来拍板，然后交给程序员去执行，最后让高水平的程序员或者架构师 review 一下代码。",
+      "created_at": "Wed May 27 23:09:11 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2059773930454290435",
+          "url": "https://pbs.twimg.com/media/HJXJegJWkAM1uPF.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2059669613362004383",
+        "text": "让不同的 agent 交叉 review 的后果就是代码越改越多。。。",
+        "created_at": "Wed May 27 16:14:37 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1398530874400935937",
+          "name": "akazwz",
+          "screen_name": "akazwz_",
+          "description": "个人观点",
+          "followers_count": 5952,
+          "friends_count": 840,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 17,
+          "reply_count": 12,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 11,
+        "favorite_count": 92,
+        "reply_count": 15,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2059776323699007493",
+      "text": "需要具体情况具体看，但大的方向是单 Agent，所有问题都问一个 Agent，但是这个 Agent 有不同的 Skills 和一些工具，它可以自主的去决定该怎么得到需要的上下文\n\n多关注 Codex、Claude Code 这些一流 Agent 的设计方向；如果这种多角色聊天靠谱他们早做了\nhttps://t.co/kQQgaRM6ft",
+      "created_at": "Wed May 27 23:18:39 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2059772680895893637",
+        "text": "@dotey 大佬有没有什么好的思路",
+        "created_at": "Wed May 27 23:04:10 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2047657064613212160",
+          "name": "woniu",
+          "screen_name": "woniu513513",
+          "description": "刚刚接触AI的超级超级新手，四处求学。",
+          "followers_count": 72,
+          "friends_count": 463,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 1
       }
     }
   ]

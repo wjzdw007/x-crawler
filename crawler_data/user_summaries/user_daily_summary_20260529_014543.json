@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-05-29T01:45:43.421245",
+  "tweet_count": 6,
+  "summary": "**新工具/技术**（如有）\n- Claude Opus 4.8：在 Opus 4.7 基础上更“诚实”、判断力更好，能更长期独立运行，适合长时间的 agent 任务。  \n- Dynamic Workflows（动态工作流）：Claude Code 能自动拆大任务并行派数十到数百个 subagent 做、再派验证/挑刺 agent 迭代直至收敛，支持断点续跑（研究预览）。  \n- Fast mode（快速模式）：同模型提供 ~2.5x 加速、价格显著降低的运行模式；API 访问受限或需申请。  \n- Cursor 升级支持 Opus 4.8：客户端已开始默认暴露 4.8 并隐藏 4.7（保留 4.6），体现平台对版本稳定性的选择性暴露。\n\n**核心观点/方法论**（如有）\n- 是否人工审查取决于验证方法的可靠性和模型是否具备理解/验证能力；好的自动验证可降低人工干预成本。  \n- 对于写代码类任务，中间步骤人工复核可以少些，但 Plan/Design 与最终审查仍建议人工把关以防偏差。  \n- Context 共享要分两类：session 内的 message-history 适合人-agent 密集协作（保持 tool-use 轨迹），跨 session 的 context-tool 按需拉取适合 task-driven、human-free 场景以防上下文污染。  \n- 在对抗性/审阅场景应刻意隔离上下文（写代码与审阅代码分成不同 agent），避免信息泄露或偏见传递。  \n- 注意力治理是个独立问题：单纯扩大上下文并不能自动解决注意力分散或信息筛选的问题。\n\n**实践经验/案例**（如有）\n- Bun 从 Zig 迁移到 Rust 的案例：用 dynamic workflows 写约 75 万行 Rust，通过 99.8% 原有测试，从首次提交到合并花了 11 天，展示大规模并行化迁移的可行性。  \n- Anthropic 提醒 dynamic workflows 耗 token 很高，建议先用小任务试水；企业管理员可禁用或限制该功能。  \n- Opus 4.8 在长任务中的持续性与自我判断提升，有助于减少持续人力监控；但写作表现上部分用户仍觉得 4.6 更合口味。  \n- 产品/平台应在默认曝光与权限控制上做权衡（如 Cursor 隐藏某版本、Enterprise 默认关闭 dynamic workflows），以平衡能力与风险。",
+  "metadata": {
+    "original_tweets": 4,
+    "retweets": 2,
+    "media_tweets": 2,
+    "data_hash": "8db12a53",
+    "user": "dotey"
+  }
+}

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 221772,
+    "followers_count": 221780,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260529",
-  "last_updated": "2026-05-29T15:08:21.590696",
-  "tweet_count": 3,
+  "last_updated": "2026-05-29T17:12:25.638823",
+  "tweet_count": 7,
   "tweets": [
     {
       "id": "2060156816344895511",
@@ -165,6 +165,186 @@
       "quoted": null,
       "stats": {
         "retweet_count": 7,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2060401447443804225",
+      "text": "RT @9hills: 1. API 不会注入系统提示词，所以才能复现（客户端和网页都有系统提示词）\n2. 之前的模型会做身份训练（我是谁），但是现在模型基本不会在后训练做这件事，身份认知会损害模型整体性能（虽然只有一点，但没有必要）\n\n至于原因，最有可能的有两种：\n1. 采集…",
+      "created_at": "Fri May 29 16:42:40 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2060303981222777239",
+        "text": "1. API 不会注入系统提示词，所以才能复现（客户端和网页都有系统提示词）\n2. 之前的模型会做身份训练（我是谁），但是现在模型基本不会在后训练做这件事，身份认知会损害模型整体性能（虽然只有一点，但没有必要）\n\n至于原因，最有可能的有两种：\n1. 采集到一些 hf 上公开的合成 SFT 数据集用来弥补小语种的语料不足。这些数据集可能就是 DeepSeek、Qwen 蒸馏合成出来的。这个阶段可以是后训练，也可以是在预训练的最后退火阶段。\n2.  有意识的使用中文模型合成缺失的小语种语料。\n\n我觉得 1 的概率比较大。",
+        "created_at": "Fri May 29 10:15:22 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2060177567550984694",
+          "text": "#claude \n\n我靠！段子成真了！\n\n在CC客户端不会复现，直接调用API可以复现\n\n达里奥，真有你的🧐 https://t.co/GwxhXkTbQY",
+          "created_at": "Fri May 29 01:53:03 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2060177198884290560",
+              "url": "https://pbs.twimg.com/media/HJc4P0HbgAA25A9.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1488855650402664448",
+            "name": "雪糕🍧",
+            "screen_name": "bettycyoder",
+            "description": "真实记录生活、NOIP观察员、AI模型实践者、长期主义、Developer",
+            "followers_count": 150,
+            "friends_count": 742,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 7,
+            "favorite_count": 92,
+            "reply_count": 39,
+            "quote_count": 8
+          }
+        },
+        "user": {
+          "id": "116355740",
+          "name": "九原客",
+          "screen_name": "9hills",
+          "description": "喜欢一切美好的事物。目前聚焦在大模型领域。",
+          "followers_count": 27016,
+          "friends_count": 1116,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5,
+          "favorite_count": 36,
+          "reply_count": 5,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2060404667423596843",
+      "text": "Claude Opus 4.8 发布的同时，Anthropic 还上线了一个 API 层面的新能力：mid-conversation system messages（对话中途系统消息）。对于做 Agent 开发的会很有用。\n\n简单来说它就是类似于后续注入的方式修改原始系统提示词（System Prompt），并且不会影响 Prompt Caching。\n\n4.8 之前 Claude 是不能发送类型是 system 的消息，只能支持 user 或者 assistant 消息，system prompt 只能在最前面。\n\n所以 Claude Code 之前是用的一种特殊的消息内容：<system-reminder>，尝试覆盖系统消息指令。\n\n举个例子，你在初始 system message 指定这个 Agent 是一个系统设计师的角色，擅长做系统设计，但是不允许写代码，只写文档。\n\n然后随着任务推进，现在得让这个 Agent 开始写代码了，但你就算通过 user message 去让它可以写代码，因为权重不够高，它还是会倾向于不写代码写文档。\n\n现在有了 mid-conversation system messages，你就可以新加一条指令，明确要求它转变角色变成一个开发工程师，不必再遵守之前不写代码只写文档的约定，并且 mid-conversation system messages 的优先级更高，能覆盖原始 system message 的设定。\n\n这个功能目前只支持 Claude Opus 4.8，只在 Anthropic 自家 API 和 AWS 上的 Claude Platform 可用，Bedrock、Vertex AI、Microsoft Foundry 都不支持。系统消息不能放在对话开头（开头还是用顶层 system 字段），也不能连续放两条，必须跟在 user 消息后面。\n\n对于普通用户，这功能无需关心。",
+      "created_at": "Fri May 29 16:55:27 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2060404656178671622",
+          "url": "https://pbs.twimg.com/media/HJgHHkkXMAYB-o6.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2060075220044796199",
+        "text": "a number of useful tips + tricks for Opus 4.8: \n\n1/ you can now update the system prompt mid-conversation w/o breaking the prompt cache. \n\npreviously, you had to add <system-reminder> tags to user messages (see @trq212's post).\n\nhttps://t.co/wX5lYjBXvJ\n\nhttps://t.co/hyd4vmxWXv",
+        "created_at": "Thu May 28 19:06:21 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "39202644",
+          "name": "Lance Martin",
+          "screen_name": "RLanceMartin",
+          "description": "MTS @anthropicai",
+          "followers_count": 29859,
+          "friends_count": 439,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 28,
+          "favorite_count": 243,
+          "reply_count": 8,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 9,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2060406311594918075",
+      "text": "RT @xiaogaifun: Notion 创始人这期分享确实很精彩。\n\n大家千万别错过 Notion CEO Ivan Zhao 在红杉聊的这期播客，观点特别有见地。\n\n甚至我觉得，这是近半年来所有创业者都应该认真精读的一期内容。\n\n相当解惑。Ivan 把 AI 时代里一个…",
+      "created_at": "Fri May 29 17:01:59 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2060298550123385304",
+        "text": "Notion 创始人这期分享确实很精彩。\n\n大家千万别错过 Notion CEO Ivan Zhao 在红杉聊的这期播客，观点特别有见地。\n\n甚至我觉得，这是近半年来所有创业者都应该认真精读的一期内容。\n\n相当解惑。Ivan 把 AI 时代里一个组织正在发生的变化，用一种特别形象的方式串了起来。\n\n1、Ivan 提到一个非常有意思的概念，叫 Jazz Mode。传统公司像 marching band（行进乐队），队形整齐，节奏固定，指挥说什么大家做什么。\n\nNotion 想做的是 jazz band，有基本结构，但更强调即兴、互相接住、每个人都能主动发挥。\n\nIvan 觉得 AI 时代变化太快，太像 marching band 的组织会跟不上，所以 Notion 这几年在刻意招那种高主动性、高好奇心、能自己找路的人。\n\n2、公司并不存在完美的扁平结构，人和人之间的层级关系始终存在，在这一点上他选择承认现实。\n\n真正能设计的是一起工作的方式，把公司组织得更像一支可以即兴合奏的爵士乐队，而不是一支只会整齐队列表演的军乐队。\n\n3、但爵士模式的前提是主旋律要清楚，相当于愿景、产品方向和少数几条铁律，类似底层和声结构。\n\n团队在这个主旋律之上拥有较大的即兴空间，可以根据用户反馈和技术变化自己处理段落，而不是在每一个决策点都往上递审批。\n\n4、Notion 现在大约有六十个曾经做过创始人的员工，这是他刻意营造的人才结构。\n\n他更愿意招对 0 到 1 负过全责的人，这类人习惯自己发现问题、搭框架、推进落地，也更愿意在模糊地带主动出手。\n\n公司需要的是能自己写歌、也能听懂别人演奏的人，而不是只会照谱子执行任务的演奏员。\n\n5、在工程组织上，他把 Notion 重构成一个杠铃结构。\n\n一端是非常 junior 的工程师，刚毕业或者职业早期；另一端是少数非常 senior 的架构师和技术带头人。\n\n中间那类常规中高级工程师反而被刻意压缩，整个分布像一根两头重、中间瘦的杠铃。\n\n6、杠铃结构背后的逻辑很简单。年轻工程师可塑性强，不会被旧时代的大规模工程实践和工具链束缚思路，在大模型快速变化的环境里能更容易接受全新的开发范式。\n\n资深架构师负责定义系统级的分工和抽象，比如哪些部分交给模型，哪些部分坚持规则，如何组织数据和服务，确保整个产品作为一个系统是连贯的，而不是东一块西一块的功能拼盘。\n\n7、当一个工程团队里大多数人都停在经验不浅、但也谈不上顶尖的这个档位时，整个组织很容易陷入一种温水状态：事情都有人做，但缺少敢颠覆旧方案的人，也少了愿意疯狂尝试新东西的人。\n\n年轻人缺少全局视角，只能局部优化，老一辈如果人数太少，声音又容易被流程淹没，这种结构在 AI 时代会变得非常迟钝。\n\n8、他用一个很有画面感的比喻来解释大模型产品开发。传统软件工程更像修桥，强调确定性的结构分析和数学推演，只要按照规范搭建，结果会高度可预测。\n\n基于大语言模型做产品更接近酿啤酒，需要在原有配方和工艺上不断试验，调整温度、时间和原料比例，最后的标准来自人的口感而不是单一技术指标，用户体验是第一参照系。\n\n9、他把 Notion 的 AI 能力视作对产品的再创作，而不是简单给旧界面贴一个智能按钮。\n\n在拿到 GPT4 的早期访问时，他的直觉是，工具本身的工作方式需要重想，如果从公司一开始就可以假设存在这样的模型，那么 Notion 的交互结构、功能边界和价值主张应该是完全不一样的一套设计，这需要以重启思维来对待，而不是做一个插件。\n\n10、他的职业生涯里出现过两次真正意义上的重启。\n\n第一次发生在公司最困难的时候，团队被压缩到只剩几个核心成员，几个人躲在京都的小公寓里，用近乎白纸的心态重新问自己。\n\nNotion 还要不要继续存在，如果要继续，哪些东西必须放弃，哪些能力哪怕再难也要保留。这一轮更偏向拿掉包袱、守住本质。\n\n11、第二次重启发生在他拿到 GPT4 早期权限之后。\n\n当模型能力跃迁时，他意识到自己这家公司可能会失去原本的位置，也可能借此进化成下一代生产力工具，关键在于有没有勇气承认旧的产品假设正在过期。\n\n这一次的重启更偏向向前跳，是把 Notion 推向 AI 原生路线的转折点，从「文档+数据库」升级成「有理解能力的工作空间」的起点。\n\n12、关于什么时候该重启，他给的判断标准非常实际。\n\n并不是等到财务报表撑不住，更多是看组织与时代之间的错位：技术和市场环境已经明显往前走了，内部流程、产品形态和人才结构还停在旧逻辑里。\n\n同时创始人对当下这家公司明显提不起兴趣，每天更像在维护一台运转正常但没有灵魂的机器，这种状态持续存在，基本就到了需要重启的阶段。\n\n13、他谈创始人角色时，把重心放在创始人能量上。\n\n创始人在公司里最关键的价值不只是最后拍板，更是持续发射出一套稳定的频率，这套频率包括对产品审美的标准，对什么算好体验的直觉，对哪些细节不能妥协的执念，以及面对不确定性时愿不愿意亲自下场试。\n\n只要这股能量还在线，团队就知道自己在跟随一位有风格的乐手，不是在为一个抽象的 KPI 系统打工。\n\n14、在人才选拔上，他逐步弱化简历本身的重要性。\n\nNotion 的第一轮面试已经不再以简历为核心材料，更关注候选人在开放问题前的思考方式，对产品的直觉，对工具和工作方式的理解。\n\n名校和大厂的履历在他眼里容易变成噪音，他更在意一个人能不能提出自己的看法，能不能在真实的情境下把事情推进，而不仅是在纸面上合格。\n\n15、在销售文化上，他没有把销售放在产品的对立面。\n\n他希望 Notion 的销售像懂音乐的乐手，先听清楚客户现在那首歌的节奏，再思考 Notion 这件乐器应该在什么位置加入，是主旋律，是伴奏，还是间奏，而不是一上来就把音量拉到最大只追逐签约数字。\n\n真正重要的是建立长期合作关系，帮助对方把 Notion 用深、用广，而不是满足一次性收入目标。\n\n16、他反复把组织、产品和 AI 放在同一个坐标系里思考。\n\n组织设计要适配新的技术范式，人才结构要为试错和即兴留出空间，产品要在模型能力和用户体验之间找到新的平衡点，销售和商业化则负责把这套东西带到更大的市场里。\n\n整套思路的底层前提很简单：这家公司永远是一支在不断改编曲目的爵士乐队，而不是一台固定工序的流水线。",
+        "created_at": "Fri May 29 09:53:47 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2060298446666690560",
+            "url": "https://pbs.twimg.com/media/HJemhXTbcAAI6qN.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2020434850025709568",
+          "name": "小盖",
+          "screen_name": "xiaogaifun",
+          "description": "做有意思的事情。",
+          "followers_count": 991,
+          "friends_count": 73,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5,
+          "favorite_count": 20,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2060407572708913648",
+      "text": "这其实让我想起 OpenAI API 的消息类型，一直是可以随意组合和传入 role 为 system 的消息的。\n\n主要差别在于 OpenAI 对于 role 为 system 的消息权重不算很高，而 Claude 对于 role 为 system 的消息权重很高。\n\n另一个实现层面的差异：OpenAI 的缓存是全自动的，不需要开发者做任何事；Anthropic 的缓存需要开发者手动设置 cache_control 断点来标记哪些内容应该缓存（虽然现在也有了自动缓存选项）。",
+      "created_at": "Fri May 29 17:07:00 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2060407166280798211",
+          "url": "https://pbs.twimg.com/media/HJgJZrbWEAML1UX.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

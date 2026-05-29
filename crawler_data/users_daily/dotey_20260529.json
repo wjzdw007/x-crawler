@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 221780,
+    "followers_count": 221782,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260529",
-  "last_updated": "2026-05-29T17:12:25.638823",
-  "tweet_count": 7,
+  "last_updated": "2026-05-29T18:54:57.152363",
+  "tweet_count": 11,
   "tweets": [
     {
       "id": "2060156816344895511",
@@ -343,6 +343,185 @@
       ],
       "retweet": null,
       "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2060411347930661235",
+      "text": "借助 AI 去写 Mac App 完全没问题的。几点经验分享：\n\n1. 尽可能选 AppKit 而不是 SwiftUI，SwiftUI 不如 AppKit 强大，做出来的界面也不好看。SwiftUI 相比 AppKit 的优势是开发简单，但这条已经被 AI 弥补了\n\n2. 先用 Claude Design 去打磨 UI 设计和 UX 交互再去写代码可以事半功倍\n\n3. Opus 比 GPT-5.5 做出来的 UI 要好看\n\n4. Codex 有个官方 Plugin 叫 “Build macOS Apps”，可以用",
+      "created_at": "Fri May 29 17:22:00 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2060410927464243203",
+          "url": "https://pbs.twimg.com/media/HJgM0m7W4AMWUMn.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2060277012774998062",
+        "text": "今天想到一点，我是否可以去做 mac app?\n\n理由如下\n\n- 会 objective-c/swift  我是国内比较早进入 iOS 开发的那批人\n\n- 正好有个 idea\n\n- 正好有 claude code ，以前总觉得 appkit 很难用，现在有 claude code，这个门槛似乎消失了",
+        "created_at": "Fri May 29 08:28:12 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1164388321545449472",
+          "name": "卫斯理",
+          "screen_name": "imwsl90",
+          "description": "前程序员/产品经理/中年已婚带2娃\n\n- 互联网、编程、OPC、AI、两性情感、历史八卦\n\n魔法：https://t.co/JP98BPq67P\ngg 卡: https://t.co/NQjvc4kX7d\nidid: https://t.co/LS4G0sN2DR\ntools: https://t.co/YqQ06UAXZy",
+          "followers_count": 93405,
+          "friends_count": 7946,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 18,
+          "reply_count": 15,
+          "quote_count": 0
+        }
+      },
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 68,
+        "reply_count": 13,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2060417073847709710",
+      "text": "我的原则：\n✅ Reasoning Max \n❌Speed Fast\n\n慢就是快，多花点时间推理，你就少花一点时间去验证\n\n快就是贵，Fast 不是不好，主要是性价比不高，不差钱当然无所谓",
+      "created_at": "Fri May 29 17:44:45 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2060354285398106422",
+        "text": "@MomoseReina 选择Max\n\n挽弓当挽强、用人当用长，你的时间比什么都宝贵",
+        "created_at": "Fri May 29 13:35:15 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "826639262988718080",
+          "name": "Rainman",
+          "screen_name": "0xdeusyu",
+          "description": "读万卷书行万里路｜软件工程师｜AI = 我的 OIALO｜连接一切｜不争论，只拉黑\nRead ten thousand books, travel ten thousand miles. | AI·OIALO | Nexus Thinker | Cloud Computing | RD",
+          "followers_count": 8855,
+          "friends_count": 569,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 4,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 15,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2060421928267952385",
+      "text": "> 5、在工程组织上，他把 Notion 重构成一个杠铃结构。  一端是非常 junior 的工程师，刚毕业或者职业早期；另一端是少数非常 senior 的架构师和技术带头人。  中间那类常规中高级工程师反而被刻意压缩，整个分布像一根两头重、中间瘦的杠铃。\n\n他这个观点是有问题的：\n\n1. 少了中层衔接\n初级工程师做出来的东西不靠谱，然后高级的工程的就要花大量时间经历去引导和验证，还得照顾新人的情绪，比自己做还累。\n\n2. 初级会成长为中层\n就算说这个杠铃结构是好的，那么经过1-3年，杠铃一头会变成中间那部分，杠铃变三角锥了，难不成隔一段就开除掉中间那一段重新招新人？\n\n这理论用在 AI 上还靠谱一点，一个人指挥几个 AI 比指挥junior工程师省心多了\n\nNotion 创始人给我感觉就是每次写文章都很厉害，写出来的东西都能传播一波，但 Notion 在 AI 时代有啥惊艳的产品吗？",
+      "created_at": "Fri May 29 18:04:03 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2060298550123385304",
+        "text": "Notion 创始人这期分享确实很精彩。\n\n大家千万别错过 Notion CEO Ivan Zhao 在红杉聊的这期播客，观点特别有见地。\n\n甚至我觉得，这是近半年来所有创业者都应该认真精读的一期内容。\n\n相当解惑。Ivan 把 AI 时代里一个组织正在发生的变化，用一种特别形象的方式串了起来。\n\n1、Ivan 提到一个非常有意思的概念，叫 Jazz Mode。传统公司像 marching band（行进乐队），队形整齐，节奏固定，指挥说什么大家做什么。\n\nNotion 想做的是 jazz band，有基本结构，但更强调即兴、互相接住、每个人都能主动发挥。\n\nIvan 觉得 AI 时代变化太快，太像 marching band 的组织会跟不上，所以 Notion 这几年在刻意招那种高主动性、高好奇心、能自己找路的人。\n\n2、公司并不存在完美的扁平结构，人和人之间的层级关系始终存在，在这一点上他选择承认现实。\n\n真正能设计的是一起工作的方式，把公司组织得更像一支可以即兴合奏的爵士乐队，而不是一支只会整齐队列表演的军乐队。\n\n3、但爵士模式的前提是主旋律要清楚，相当于愿景、产品方向和少数几条铁律，类似底层和声结构。\n\n团队在这个主旋律之上拥有较大的即兴空间，可以根据用户反馈和技术变化自己处理段落，而不是在每一个决策点都往上递审批。\n\n4、Notion 现在大约有六十个曾经做过创始人的员工，这是他刻意营造的人才结构。\n\n他更愿意招对 0 到 1 负过全责的人，这类人习惯自己发现问题、搭框架、推进落地，也更愿意在模糊地带主动出手。\n\n公司需要的是能自己写歌、也能听懂别人演奏的人，而不是只会照谱子执行任务的演奏员。\n\n5、在工程组织上，他把 Notion 重构成一个杠铃结构。\n\n一端是非常 junior 的工程师，刚毕业或者职业早期；另一端是少数非常 senior 的架构师和技术带头人。\n\n中间那类常规中高级工程师反而被刻意压缩，整个分布像一根两头重、中间瘦的杠铃。\n\n6、杠铃结构背后的逻辑很简单。年轻工程师可塑性强，不会被旧时代的大规模工程实践和工具链束缚思路，在大模型快速变化的环境里能更容易接受全新的开发范式。\n\n资深架构师负责定义系统级的分工和抽象，比如哪些部分交给模型，哪些部分坚持规则，如何组织数据和服务，确保整个产品作为一个系统是连贯的，而不是东一块西一块的功能拼盘。\n\n7、当一个工程团队里大多数人都停在经验不浅、但也谈不上顶尖的这个档位时，整个组织很容易陷入一种温水状态：事情都有人做，但缺少敢颠覆旧方案的人，也少了愿意疯狂尝试新东西的人。\n\n年轻人缺少全局视角，只能局部优化，老一辈如果人数太少，声音又容易被流程淹没，这种结构在 AI 时代会变得非常迟钝。\n\n8、他用一个很有画面感的比喻来解释大模型产品开发。传统软件工程更像修桥，强调确定性的结构分析和数学推演，只要按照规范搭建，结果会高度可预测。\n\n基于大语言模型做产品更接近酿啤酒，需要在原有配方和工艺上不断试验，调整温度、时间和原料比例，最后的标准来自人的口感而不是单一技术指标，用户体验是第一参照系。\n\n9、他把 Notion 的 AI 能力视作对产品的再创作，而不是简单给旧界面贴一个智能按钮。\n\n在拿到 GPT4 的早期访问时，他的直觉是，工具本身的工作方式需要重想，如果从公司一开始就可以假设存在这样的模型，那么 Notion 的交互结构、功能边界和价值主张应该是完全不一样的一套设计，这需要以重启思维来对待，而不是做一个插件。\n\n10、他的职业生涯里出现过两次真正意义上的重启。\n\n第一次发生在公司最困难的时候，团队被压缩到只剩几个核心成员，几个人躲在京都的小公寓里，用近乎白纸的心态重新问自己。\n\nNotion 还要不要继续存在，如果要继续，哪些东西必须放弃，哪些能力哪怕再难也要保留。这一轮更偏向拿掉包袱、守住本质。\n\n11、第二次重启发生在他拿到 GPT4 早期权限之后。\n\n当模型能力跃迁时，他意识到自己这家公司可能会失去原本的位置，也可能借此进化成下一代生产力工具，关键在于有没有勇气承认旧的产品假设正在过期。\n\n这一次的重启更偏向向前跳，是把 Notion 推向 AI 原生路线的转折点，从「文档+数据库」升级成「有理解能力的工作空间」的起点。\n\n12、关于什么时候该重启，他给的判断标准非常实际。\n\n并不是等到财务报表撑不住，更多是看组织与时代之间的错位：技术和市场环境已经明显往前走了，内部流程、产品形态和人才结构还停在旧逻辑里。\n\n同时创始人对当下这家公司明显提不起兴趣，每天更像在维护一台运转正常但没有灵魂的机器，这种状态持续存在，基本就到了需要重启的阶段。\n\n13、他谈创始人角色时，把重心放在创始人能量上。\n\n创始人在公司里最关键的价值不只是最后拍板，更是持续发射出一套稳定的频率，这套频率包括对产品审美的标准，对什么算好体验的直觉，对哪些细节不能妥协的执念，以及面对不确定性时愿不愿意亲自下场试。\n\n只要这股能量还在线，团队就知道自己在跟随一位有风格的乐手，不是在为一个抽象的 KPI 系统打工。\n\n14、在人才选拔上，他逐步弱化简历本身的重要性。\n\nNotion 的第一轮面试已经不再以简历为核心材料，更关注候选人在开放问题前的思考方式，对产品的直觉，对工具和工作方式的理解。\n\n名校和大厂的履历在他眼里容易变成噪音，他更在意一个人能不能提出自己的看法，能不能在真实的情境下把事情推进，而不仅是在纸面上合格。\n\n15、在销售文化上，他没有把销售放在产品的对立面。\n\n他希望 Notion 的销售像懂音乐的乐手，先听清楚客户现在那首歌的节奏，再思考 Notion 这件乐器应该在什么位置加入，是主旋律，是伴奏，还是间奏，而不是一上来就把音量拉到最大只追逐签约数字。\n\n真正重要的是建立长期合作关系，帮助对方把 Notion 用深、用广，而不是满足一次性收入目标。\n\n16、他反复把组织、产品和 AI 放在同一个坐标系里思考。\n\n组织设计要适配新的技术范式，人才结构要为试错和即兴留出空间，产品要在模型能力和用户体验之间找到新的平衡点，销售和商业化则负责把这套东西带到更大的市场里。\n\n整套思路的底层前提很简单：这家公司永远是一支在不断改编曲目的爵士乐队，而不是一台固定工序的流水线。",
+        "created_at": "Fri May 29 09:53:47 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2060298446666690560",
+            "url": "https://pbs.twimg.com/media/HJemhXTbcAAI6qN.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2020434850025709568",
+          "name": "小盖",
+          "screen_name": "xiaogaifun",
+          "description": "做有意思的事情。",
+          "followers_count": 1000,
+          "friends_count": 73,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 13,
+          "favorite_count": 49,
+          "reply_count": 2,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 8,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2060433841135772012",
+      "text": "对于 Claude Design 和实际代码的版本同步问题，我目前是这么处理的：\n\n首先要有一个唯一源，就是把 Claude Design 的结果当做设计唯一的源，以它为准\n\n然后在更新design的时候会让它写一个changelog，让 Claude Code 去根据Changelog 同步\n\n尽可能先改 Claude Design 的设计再改代码。有时候临时在代码中修改了，时候去 Claude Design 那边同步一下。\n\n如果有更好的办法也欢迎分享",
+      "created_at": "Fri May 29 18:51:23 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2060433191056404483",
+          "url": "https://pbs.twimg.com/media/HJghEhRXcAMzpTt.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2060433221192491008",
+          "url": "https://pbs.twimg.com/media/HJghGRiXoAAK74d.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2060432103884587024",
+        "text": "@dotey 这里有一个小问题，后续ui 改动怎们办？先改 claude design，有时候小改动直接改code，但是这样时间长了 design 和 code就 不一致了",
+        "created_at": "Fri May 29 18:44:29 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1957680160305819648",
+          "name": "CanCan",
+          "screen_name": "cancan8443",
+          "description": "building AI agents. currently: aque — a tmux desk where multiple coding agents queue for your attention instead of stealing it across tabs.",
+          "followers_count": 3,
+          "friends_count": 19,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
       "stats": {
         "retweet_count": 0,
         "favorite_count": 0,

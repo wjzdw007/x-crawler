@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-05-30T01:43:12.303721",
+  "tweet_count": 14,
+  "summary": "**新工具/技术**（如有）\n- Claude Opus 4.8（模型卡亮点）：1M 上下文 GraphWalks 显著提升、加强 multi‑agent 能力、更愿意承认代码缺陷，但在部分 Agent 安全测试和 Vending‑Bench（商业决策类）出现退步。  \n- mid‑conversation system messages（Anthropic API 特性）：可在对话中途注入高优先级 system 消息以覆盖初始 system prompt（仅在 Anthropic 自家 API 与 AWS Claude Platform 可用，不能放在开头、不能连续两条）。  \n- pi‑dynamic‑workflows：基于 JS 的子代理 DSL，实现“code mode”子代理（agent()、parallel()、pipeline()、phase()、log() 等），对标 Opus 4.8 的动态工作流，可用任意大模型驱动。  \n- Codex Computer Use（OpenAI 功能）：Codex 可在 Windows 上模拟人工操作桌面应用，结合手机 App 可远程启动/监控/审批电脑任务（此前仅支持 macOS）。  \n- Codex 插件 “Build macOS Apps”：官方插件，便于用 Codex 生成 macOS 应用代码。\n\n**核心观点/方法论**（如有）\n- System prompt 权重差异：Claude 对 system 角色权重高、OpenAI 则权重相对低；实现细节也不同（Anthropic 的 prompt 缓存需要手动设置 cache_control 断点，OpenAI 缓存更自动）。重要性：影响 Agent 行为控制和 prompt‑caching 策略。  \n- 组织/人才设计（Notion 的“爵士乐队”与杠铃结构）：主张用清晰主旋律＋高主动性人才（junior 多、少数 senior 架构师），以适应快速的 AI 时代变动。重要性：决定试错空间与产品快速迭代能力。  \n- Reasoning Max > Speed Fast：优先深推理以减少验证成本，强调“慢就是快”的性价比取向。  \n- 设计优先、以设计为单一真源：把 Claude Design 作为设计唯一源，通过 changelog 让 Claude Code 同步，减少设计/代码漂移。重要性：保障设计与实现一致性，便于自动化同步。\n\n**实践经验/案例**（如有）\n- 用 mid‑conversation system messages 变更 Agent 角色：当任务需要角色转变（比如从文档撰写到写代码）时，注入 mid‑conversation system 消息能有效覆盖初始限制，避免 user 消息权重不足。  \n- 动态工作流与子代理实践：pi‑dynamic‑workflows 把子代理写成可执行的 JS DSL，利于可组合、并行和流水线式子任务管理，比纯文本指令更可靠。  \n- Claude Design ↔ Claude Code 同步流程：以 Claude Design 为唯一源，更新时让 Design 输出 changelog，驱动 Code 层按 changelog 自动或半自动同步。  \n- Mac App 开发经验：推荐优先选 AppKit（更强、界面更好），用 Claude Design 打磨 UI/UX 再交给 Codex 或插件生成代码；Opus 在 UI 设计输出上被评价优于 GPT‑5.5。  \n- Codex 使用痛点与改进点：Computer Use 扩到 Windows 后远程监控更顺畅，但普通模式下缺少 ask__user_question tool（需手动写交互）影响交互效率。  \n- 对模型能力比较的实务观察：不同模型在找 bug/代码生成上侧重点不同（如 gpt‑5.5 在某些 bug 找寻上表现更好），应根据任务选模型并考虑多模型协同。",
+  "metadata": {
+    "original_tweets": 10,
+    "retweets": 4,
+    "media_tweets": 4,
+    "data_hash": "0ba0638e",
+    "user": "dotey"
+  }
+}

@@ -1,0 +1,18 @@
+**新工具/技术**（如有）
+- Codex（新版）：界面可显示 token 用量，需在设置里主动打开，便于成本监控与优化。  
+- Codex 会话自管理：可以通过对话创建/搜索/归档/置顶会话，并为并行任务拉起独立 worktree，提升多任务组织性。  
+- Codex Chrome 插件 / @chrome：允许 Agent 直接在浏览器中抓包与调试，减少手动复制粘贴。  
+- Agent Skill + Script 模式：把确定性步骤用脚本实现，Agent 负责自然语言到 SQL 等“翻译”任务。  
+- Sandcastle（Matt 的开源）：用 TypeScript 编排多 Agent 的 Workflow，适合极客级多 Agent 协作场景。  
+- 模型 token 消耗倍数对比表（冷知识）：如 GitHub Copilot 的 Gemini 3.5 Flash 按 14x 计耗，其他模型有不同倍数，影响成本估算。
+
+**核心观点/方法论**（如有）
+- 分工原则：LLM 做擅长的“翻译/理解”，确定性执行（SQL 执行、文件导出、格式化）交给脚本，能大幅减少 token 消耗并提升稳定性。  
+- 将工作流从 Memory 移到 Skill+Script：Memory 只是背景，Agent 每次重推理很耗 token；把流程写成可复用 Skill/模板，Agent 只需填空即可。  
+- 多 Agent 协作取长补短：不同 Agent 各有优势，通过编排（如 Sandcastle）可以在复杂任务中集成最优能力，但适用于追求极致的场景。
+
+**实践经验/案例**（如有）
+- 把数据库任务拆解：LLM 生成 SQL，Python/Shell 脚本执行查询、格式化并上传，实践中 token 消耗可下降一个数量级。  
+- 群聊总结 Skill 更新：在群内 @bot 时可结合上下文做总结并回复问题，提升自动化会议/群记录处理效率。  
+- 调试网络请求两法：1) 用 Chrome DevTools 的 Export HAR 导出 .har 文件并交给 Codex 分析；2) 用 Codex 浏览器扩展让 Agent 直接抓包调试。  
+- 产品细节影响使用：新版 Codex 将上下文用量显示移回但需手动开启，影响用户对成本的即时感知与调优决策。

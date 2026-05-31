@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 221969,
+    "followers_count": 221982,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260530",
-  "last_updated": "2026-05-30T22:24:01.899970",
-  "tweet_count": 10,
+  "last_updated": "2026-05-31T00:44:42.656705",
+  "tweet_count": 12,
   "tweets": [
     {
       "id": "2060529208602833354",
@@ -374,6 +374,73 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2060865571244183797",
+      "text": "像我日常会几个 Agent 一起用：Codex、Claude Code、Cursor、GitHub Copilot，这些 Agent 各有所长，或者有时候要集众家之长。\n\nMatt 这个 Sandcastle 就是用 TypeScript 脚本来编排 Workflow，可以把这些 Agent 编排在同一个 WorkFlow 中一起来完成一些任务，可以在虚拟机中运行。\n\n但过于极客不太适合普通用户，一般的场景真用不上，适合一些追求极致的场景。举例来说你要赛博养蛊：写个技术方案，让各个 Agent 一人出一套，再相互打分完善。",
+      "created_at": "Sat May 30 23:26:55 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2049506712801935611",
+        "text": "I built my own software factory, and I open-sourced it.\n\nIt's called Sandcastle. Here's how to use it: https://t.co/SpX9E5u4k4",
+        "created_at": "Wed Apr 29 15:10:52 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2049505675072663552",
+            "url": "https://video.twimg.com/amplify_video/2049505675072663552/vid/avc1/1920x1080/IFCmziau1fNRuIEx.mp4?tag=21",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "346640777",
+          "name": "Matt Pocock",
+          "screen_name": "mattpocockuk",
+          "description": "I teach devs for a living. Author of Total TypeScript and AI Hero. Ex-@vercel. Used to be a voice coach.",
+          "followers_count": 280362,
+          "friends_count": 782,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 173,
+          "favorite_count": 3234,
+          "reply_count": 81,
+          "quote_count": 15
+        }
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 33,
+        "reply_count": 9,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2060870825771773997",
+      "text": "Codex/Claude Code 调试网络请求的技巧\n\n在开发网页程序的时候，有时候会有一些服务端 API 交互代码，如果出现故障或者要优化，就需要根据网络请求的数据去分析问题，有两种简单的方法可以让 Agent 自己拿到这些数据而不需要你手动复制粘贴：\n\n1. 打开 Chrome Dev Tool 后，切换到 Network 请求，有一个 Export HAR 的功能，可以把当前所有网络请求导出成一个 .har 文件，然后把文件路径发给 Codex，让它帮你分析网络请求。\n\n2. 使用 Codex 的 Chrome Plugin，安装官方的 Chrome Plugin，安装 Chrome 的 Codex 浏览器扩展，直接在消息中 \"@chrome\" 就可以让 Codex 去使用你的浏览器自己调试、抓包",
+      "created_at": "Sat May 30 23:47:48 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2060869169411772420",
+          "url": "https://pbs.twimg.com/media/HJmtlzNX0AQdxyo.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 27,
+        "reply_count": 1,
+        "quote_count": 1
       }
     }
   ]

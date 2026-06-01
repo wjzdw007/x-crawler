@@ -1,12 +1,103 @@
 {
   "date": "20260601",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-01T21:15:27.578249",
-  "tweet_count": 222,
-  "unique_tweet_count": 222,
-  "total_crawled": 420,
+  "last_crawl_time": "2026-06-01T22:46:43.925463",
+  "tweet_count": 224,
+  "unique_tweet_count": 224,
+  "total_crawled": 422,
   "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2061569125948760319",
+      "text": "Cursor 在为用户增加使用额度。最近我重度使用了 Cursor 的 Agent，效果相当不错。我常用的 GUI Agent 里面，Codex App > Cursor > Claude Desktop。\n\n几个亮点：\n\n1. 它的 multitask 模式可以开启多个后台任务并行，速度很不错。\n\n2. 它可以灵活选择各种模型，不像 Codex 和 Claude Code 只能选择自家模型，composer 2.5 在普通任务上的能力和速度都还可以\n\n3. Plan 模式比较详细，列有详细的 Steps，配合 multitask 模式通常效果很稳定\n\n不足之处：\n还不支持 /goal、手机版\n还没有类似于 Codex 的 Chrome use + Computer use 的调试功能，只有内置浏览器的调试",
+      "created_at": "Mon Jun 01 22:02:36 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2061569089294811137",
+          "url": "https://pbs.twimg.com/media/HJwqKf9XwAEFmKu.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2061550723503194426",
+        "text": "We’re increasing usage limits for every Teams user.\n\nInspired by the success of our Ultra plan, we're also introducing a Premium team seat that includes 5x usage at only 3x the cost.",
+        "created_at": "Mon Jun 01 20:49:28 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1695890961094909952",
+          "name": "Cursor",
+          "screen_name": "cursor_ai",
+          "description": "Coding agent for building ambitious software",
+          "followers_count": 384310,
+          "friends_count": 39,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 14,
+          "favorite_count": 716,
+          "reply_count": 32,
+          "quote_count": 5
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 222428,
+        "friends_count": 1663,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 3,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2061565621360337132",
+      "text": "It would be great if AI agents like Codex and Cursor could expose an API to web views. This would allow a webpage opened in the right pane to send prompts (including text and images) directly back to the agent.\n\nFor instance, if I build a webpage similar to Claude Design, I could add an in-page input box. When a user enters a prompt and clicks \"send\", the webpage would call an API like \"window.codex.sendPrompt(text, attachments)\" to push that content straight into the chat interface on the left. This would enable much deeper interaction between the agent and the webpage, unlocking a lot more possibilities.\n\ncc @thsottiaux @jxnlco @Dimillian",
+      "created_at": "Mon Jun 01 21:48:40 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2061565614129303552",
+          "url": "https://pbs.twimg.com/media/HJwnAN9WUAAMPpM.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2061565613877706752",
+          "url": "https://pbs.twimg.com/media/HJwnANBXQAA2VkC.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 222428,
+        "friends_count": 1663,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 6,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2061556501450228081",
       "text": "比如我这周还剩2天自然重置，如果是 Codex 的重置，相当于重新7天的计数\n而 Claude 则是这2天是7天满额token，2天后又是7天的重置",

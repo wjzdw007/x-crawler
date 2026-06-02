@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 222714,
+    "followers_count": 222748,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260602",
-  "last_updated": "2026-06-02T13:18:31.456514",
-  "tweet_count": 5,
+  "last_updated": "2026-06-02T15:26:50.516558",
+  "tweet_count": 6,
   "tweets": [
     {
       "id": "2061612712732324142",
@@ -160,6 +160,69 @@
         "retweet_count": 0,
         "favorite_count": 21,
         "reply_count": 7,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2061825318004867340",
+      "text": "RT @yetone: 但是这个应该不能去把责任归到用户身上，而必须是归到 Anthropic 身上。因为新的模型刚推出的时候，它内部没经过大量的测试，导致 Inference Infra 出现各种 bug，导致各种降智行为，甚至这一次 Opus 4.8 对 edit tool…",
+      "created_at": "Tue Jun 02 15:00:37 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2061768480308027420",
+        "text": "但是这个应该不能去把责任归到用户身上，而必须是归到 Anthropic 身上。因为新的模型刚推出的时候，它内部没经过大量的测试，导致 Inference Infra 出现各种 bug，导致各种降智行为，甚至这一次 Opus 4.8 对 edit tool 调用的 old_string 参数都会传错。推出之后，当把用户当成小白鼠测试过一段时间之后，他们收集到这些真实的用户的血与泪换来的 feedback 后，偷偷把这个模型的 Inference Infra bug 修完，然后舆论回暖，导致大家嘲笑刚开始吐槽这个模型的人，这个很不公平的。\n\n比如前天 opus 4.8 就偷偷修好了我上面提到的 edit tool 调用的时候 old_string 都传错的弱智问题，你看，从昨天开始使用 opus 4.8 的人，跟刚开始就使用 opus 4.8 的人对其评价就完全不一样。",
+        "created_at": "Tue Jun 02 11:14:46 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2061758422027235597",
+          "text": "@hwwaanng 每次出新版本都这样 刚出的时候喷成狗 过阵子又真香 我已经看透了哈哈哈",
+          "created_at": "Tue Jun 02 10:34:48 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1488855650402664448",
+            "name": "雪糕🍧",
+            "screen_name": "bettycyoder",
+            "description": "真实记录生活、NOIP观察员、AI模型实践者、长期主义、Developer",
+            "followers_count": 173,
+            "friends_count": 727,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 0,
+            "favorite_count": 3,
+            "reply_count": 1,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "147786784",
+          "name": "yetone",
+          "screen_name": "yetone",
+          "description": "Work at @isoformai\n\nBuilt: avante.nvim\n\nBuilding: https://t.co/pfq9srNgsd\n\nBuilding: https://t.co/fpGnPR5t9C\n\nBuilding: https://t.co/cBN1yzJPIG\n\nBuilding: https://t.co/QhQRLD4zQo",
+          "followers_count": 85819,
+          "friends_count": 4532,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 119,
+          "reply_count": 20,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 0,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

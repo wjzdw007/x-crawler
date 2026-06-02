@@ -1,0 +1,20 @@
+**新工具/技术**（如有）
+- Claude Design：一个面向产品/UI 设计的 Agent，最近与 Claude 的其它产品共享额度，适合快速产出高质量设计稿。  
+- Adobe Spectrum 2（作为可导入的 Design System）：导入成熟 Design System 可显著提升设计风格一致性和质感。  
+- Opus 4.8：在写作上不如 GPT 系列，但在 UI 设计、UI 实现和系统设计/计划层面表现优异。  
+- Cursor：支持多任务并行（multitask）、多模型选择、详尽的 Plan 模式，对工程型 GUI Agent 使用体验友好；目前不支持 /goal 和手机端。  
+- Codex / Claude Code：各有调试与浏览器集成特性（如 Chrome use / Computer use），在工程化场景仍有独到价值。  
+- 建议/设想：为 Agent 暴露页面端 API（例如 window.codex.sendPrompt）能把网页与 Agent 深度联动，拓展交互可能。
+
+**核心观点/方法论**（如有）
+- /goal 思路：把大目标拆成 checklist 或阶段化的设计文档，明确每个 Phase 的验收条件并让 AI 自主 commit，提升任务可控性与推进效率。  
+- 模型组合哲学：不要寄望单一模型全能，应“东食西宿”——发现各模型长处并组合使用以弥补短板。  
+- 设计系统优先：先定义/导入 Design System 再做 UI，能保证一致性并提升成品档次。  
+- 关注成本与配额：高频使用需注意 Token 消耗与不同产品的额度策略差异，优化调用与分批处理以节省成本。
+
+**实践经验/案例**（如有）
+- Checklist+批量处理：逆向代码时先用脚本把任务整理成 JSON，再让 AI 分批处理并在每批完成后更新 JSON，便于并行与断点续做。  
+- 阶段化设计流程：与 AI 共同写详细设计文档，AI 划分 Phases、设定验收条件并逐阶段执行，效果更可控。  
+- 设计到实现的流水线：用 Claude Design 产出规范化设计，再分别交给 GPT-5.5 与 Opus 4.8 实现比对效果，能找到实现侧差异与最优组合。  
+- 工具优先级（作者个人）：在 GUI Agent 里偏好顺序为 Codex App > Cursor > Claude Desktop（基于多模型/并行与 Plan 能力）。  
+- 配额差异说明：Claude 的额度重置逻辑为“剩余时间按满额计算后再重置”，比某些产品的滑动窗口式重置更友好。

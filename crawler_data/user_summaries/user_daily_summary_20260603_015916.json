@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-06-03T01:59:16.613343",
+  "tweet_count": 8,
+  "summary": "**新工具/技术**（如有）\n- Codex Sites：OpenAI 的 Sites 能根据一句话把想法变成可分享的交互网站/应用，先在 Business/Enterprise 推出，适合团队快速原型与内部分享。  \n- Codex-cli 作 Provider（baoyu-image-gen Skill）：baoyu-image-gen 已支持用本地 codex-cli 作为图像生成提供者，意味着 Claude Code、Hermes 等 Agent 可以通过本地 CLI 调用 Codex 输出图片（需安装并有订阅）。  \n- Hermes Desktop（Hermes Agent GUI 客户端）：Hermes 推出本地化 GUI 客户端，标志着 Agent 使用正朝向图形化与桌面化演进。  \n- Codex 计费/配额调整：社区转述 Codex 的 free 和 go 计划可能改为按月刷新用量，团队需关注配额与订阅策略变化。\n\n**核心观点/方法论**（如有）\n- Spec 只是手段，验证才是关键：dotey 表示不反对 openspec，但更看重能验证结果的方法（spec、自动化测试，或让 AI 自主决定验证流程），因为最终要保证行为可验证和可靠。  \n- 厂商应对新模型的 infra 负责：转发观点强调新模型上线初期若出现推理/infra Bug，责任不应推给用户，厂商应提前充分测试并及时修复，维护公平评价。  \n- Agent 趋向 GUI 化：Hermes Desktop 的出现说明主流 Agent 正向 GUI 发展，这对使用门槛和团队协同很重要。\n\n**实践经验/案例**（如有）\n- 课程与书籍资源：dotey 今晚在图灵社区做 Agent Skills 公开课，并发布了配套资源和样章，适合想做 Skill 或提升 AI 提效的从业者学习。  \n- 社区驱动的工程改进：baoyu-image-gen 通过社区 PR 快速添加 codex-cli 支持，展示了开源/社区贡献在快速迭代 Skill 实践中的价值。  \n- 集成策略提示：在 Agent 中集成第三方模型/工具时，可选择通过本地 CLI 或 Provider 层接入（降低直接依赖 API 的复杂度），但要注意订阅与部署成本。  \n- 运营与订阅注意事项：Codex 新功能（Sites）面向企业计划、配额刷新机制也在变，团队在上线相关功能前应确认账号权限与配额策略以避免中断。",
+  "metadata": {
+    "original_tweets": 5,
+    "retweets": 3,
+    "media_tweets": 3,
+    "data_hash": "ecbf7528",
+    "user": "dotey"
+  }
+}

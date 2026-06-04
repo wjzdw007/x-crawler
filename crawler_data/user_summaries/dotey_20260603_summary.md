@@ -1,0 +1,22 @@
+**新工具/技术**（如有）
+- Codex（包含 Computer Use / Chrome Use 等功能）— 最新版本提示 Computer Use 出问题（无法打开），但整体仍有实用性。  
+- Codex 的一键 commit changes 功能 — 可自动生成 commit message，提升开发效率并减少人工错误。  
+- Opus 4.8 — 在构建 Mac App UI 上表现强，适合把设计稿较高还原为可用界面。  
+- Cursor（Agent 平台）— 支持 multitask、灵活模型选择和详细 Plan 模式，适合并行和流程化任务。  
+-Claude Code / Claude Desktop — 桌面端功能丰富但存在频繁权限确认弹窗与调试能力不足的问题。  
+- GPT Image Gen V2 / GPT image2 — 图像生成在“逼真度/风格化插画”上都进步显著，适合插画和短视频场景。
+
+**核心观点/方法论**（如有）
+- 早做 GUI、重视 GUI 的普适性 — GUI 更容易把 Agent 做成通用办公工具，TUI/Coding-only 模式难以大规模落地。为什么重要：用户接受度与生产力直观相关。  
+- 多任务 + 计划驱动提高 Agent 稳定性 — 开启 multitask 并配合详细 Steps 的 Plan 通常能得到更稳定的自动化执行结果。  
+- 模型选择灵活性是优势 — 能选不同模型的 Agent（如 Cursor）在兼顾速度与质量上更有弹性。  
+- 自动化细节（如自动生成 commit message）能显著降低开发摩擦，提高迭代速度。  
+- 图像生成已能“以假乱真” — 带来内容创作效率但也提醒对真实性/合规性的警惕。
+
+**实践经验/案例**（如有）
+- 用 Opus 4.8 实现 Claude Design，复现度高，说明现有工具能把设计稿快速落地成 Mac 客户端界面。  
+- 常用 GUI Agent 顺序：Codex App > Cursor > Claude Desktop（个人实践中的效率/体验排序）。  
+- Codex 的一键 commit 功能已成为常用小功能，能减少提交时的上下文切换与命名纠结。  
+- Claude Desktop 经常弹权限确认，开启 Bypass Permissions 仍有问题，作者在寻求社区解决方案（实际问题排查/工程经验）。  
+- 转发/案例：GPT image2 的插画风格非常适合儿童绘本与杂志风插画，说明生成模型在风格化创作上已具商业价值。  
+- 相关行业观察：好的域名（.com）对品牌价值影响大，谈判/法律路径可低成本取回关键域名（Notion/Brewster 案例）。

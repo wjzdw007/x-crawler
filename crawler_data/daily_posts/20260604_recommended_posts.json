@@ -1,12 +1,229 @@
 {
   "date": "20260604",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-04T05:39:48.417684",
-  "tweet_count": 221,
-  "unique_tweet_count": 221,
-  "total_crawled": 411,
-  "duplicates_removed": 190,
+  "last_crawl_time": "2026-06-04T07:40:41.532364",
+  "tweet_count": 225,
+  "unique_tweet_count": 225,
+  "total_crawled": 421,
+  "duplicates_removed": 196,
   "tweets": [
+    {
+      "id": "2062424194219114745",
+      "text": "https://t.co/8T0sVlzKQz",
+      "created_at": "Thu Jun 04 06:40:20 +0000 2026",
+      "lang": "zxx",
+      "media": [
+        {
+          "type": "video",
+          "id": "2062367980416282624",
+          "url": "https://video.twimg.com/amplify_video/2062367980416282624/vid/avc1/1280x720/CqGPL9VjXS-q_u2t.mp4?tag=27",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240129025,
+        "friends_count": 1352,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 720,
+        "favorite_count": 4860,
+        "reply_count": 1568,
+        "quote_count": 97
+      }
+    },
+    {
+      "id": "2062423834217898323",
+      "text": "Hadamard thought in image space",
+      "created_at": "Thu Jun 04 06:38:54 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2062266181890031815",
+        "text": "World Labs CEO Dr. Fei-Fei Li: \"The world is not made of words.\"\n\n\"Language models have given machines an extraordinary command of concepts, vocabulary, and reasoning, but the physical world, virtual or real, runs on a different substrate.\"\n\n\"Where language models learn the statistical structure of text, world models learn the statistical structure of space and time: how light falls on a surface, how a garden looks from an angle no camera has captured, how objects respond to force and follow the laws of physics.\"\n\n\"Language gave machines a way to talk about that world. World models are how machines will finally come to understand, imagine, reason and interact with it.\"\n\nFull piece: https://t.co/C9qOJg5wuc",
+        "created_at": "Wed Jun 03 20:12:27 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "animated_gif",
+            "id": "2062266150353092608",
+            "url": "https://pbs.twimg.com/tweet_video_thumb/HJ6kIywbwAAhRQl.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "64844802",
+          "name": "a16z",
+          "screen_name": "a16z",
+          "description": "It's time to build.\n\nhttps://t.co/A9eTFq6Xbx\n\nPosts are not investment advice or an advertisement for investment services. See https://t.co/nX2FtaLE06.",
+          "followers_count": 991607,
+          "friends_count": 62,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 165,
+          "favorite_count": 1188,
+          "reply_count": 78,
+          "quote_count": 22
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240129025,
+        "friends_count": 1352,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 426,
+        "favorite_count": 2866,
+        "reply_count": 675,
+        "quote_count": 12
+      }
+    },
+    {
+      "id": "2062415262893134321",
+      "text": "上次推荐的 Zara Zhang 的开源项目 feishu-claude-code-bridge ，可以把飞书和你本机的 Claude Code 连接起来，解决了用飞书保存所有消息历史，以及随时将飞书的信息转发给Claude的问题，相当使用的一个功能。\n\n现在有个问题是再过几天到 6 月 15 日，Claude 订阅计划对 claude -p 和 Agent SDK 的使用将独立计费，不走订阅额度。\n\n好在 Zara Zhang 这几天刚把项目升级了，也能支持飞书连接 Codex 了，只要你本机装了 codex cli，登录了 ChatGPT 账号或者配置了 API，就能使用，不用担心 claude -p 收费的问题了。另外还带来一个好处，就是 Codex 是有调用 GPT Image 2 画图能力的，所以你现在可以从飞书指挥 Codex 画图，画完的图片直接就到飞书，插入文档。\n\n比如我的一个常用指令如下：\n> 请帮我抓取并翻译 {url}\n> 然后根据翻译的内容画一张中文手绘教育风信息图 \n> 最后把文章和图片一起创建一份飞书文档\n\n连接步骤和之前介绍的连接 Claude Code 方法一致，只是运行的命令行变成了：\n\n> lark-channel-bridge run --profile codex\n\n具体可以看项目的说明说，中英文版都有，写的很详细：\nhttps://t.co/PS44XaFjFv",
+      "created_at": "Thu Jun 04 06:04:51 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2062415061839187968",
+          "url": "https://pbs.twimg.com/media/HJ8rklRXEAAlPkS.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2062415093430685696",
+          "url": "https://pbs.twimg.com/media/HJ8rma9XEAA9VmC.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2058084478459826432",
+        "text": "如果你同时用飞书和 Claude Code 的话，Zara Zhang这个开源项目 feishu-claude-code-bridge 值得一试，它可以让你在飞书里面直接连接 Claude Code，从飞书指挥 Claude Code，反过来也能借助 Claude Code 新建、编辑飞书文档。\n\n举例来说，我可以通过和飞书智能体对话，发送推文连接，让它抓取推文并翻译成中文，再把结果创建成飞书文档。\n\n或者说你在飞书上收到一条消息，也可以一键转发给飞书智能体，它会通过 Claude Code 做后续处理，并且实时将处理过程通过消息同步给你，如果有需要确认的，还能通过卡片的形式在飞书中展示。\n\n连接步骤很简单，打开飞书本地客户端（网页版不行），然后在命令行窗口执行：\n> npx -y lark-channel-bridge@latest run （第一次需要配置 App 凭证，后面可以跳过这一步）\n> 和\n> npx -y lark-channel-bridge@latest run\n\n就可以通过扫码或者浏览器打开 URL 创建智能体、连接 Claude Code\n\n按照网页提示创建应用和授权，连接上就可以在飞书的会话看到新建的智能助手。然后直接发送消息。\n\n有个细节做的很好，就是它可以设置 Claude Code 对应的 Workspace（工作区），也就是运行 Claude Code 的目录，这样你所有操作结果都会在 Workspace，也可以读取 Workspace 下的文件、CLAUDE.md 设置、Skills、Hooks 等等，跟你直接用 Claude Code 操作几乎没差别。\n\n一些具体的指令可以看项目文档，说的很清楚。\n\n工作原理其实不复杂，它是一个“飞书消息 ↔ 本机 Claude Code CLI”的桥，或者说翻译。飞书负责收发消息，bridge 常驻本机，收到消息后整理成 prompt，通过 “claude -p ”这样的命令行启动本机的 Claude CLI 处理，再把 Claude 的流式输出更新回飞书。\n\n这种项目的价值，不仅说你可以将飞书和 Claude Code 打通，还可以发掘出很多新的可能，比如你也可以让飞书和本机的小龙虾、Codex、Cursor 连接起来，在飞书界面中操作它们，它们反过来也能借助飞书 cli 操作飞书。\n\n开源项目有个好处就是你可以照葫芦画瓢，如果你想参考它做一些自己的机器人，可以把代码库发给 Coding Agent，帮你定制化一个自己的版本。\n\n比如说这两个是其他网友做过的把 Codex 接入飞书的 bridge 项目，用起来也是一样的：\nhttps://t.co/cKLfCDfskP\nhttps://t.co/zCPoISnudz\n\n有一点要提醒的是，Bridge 使用的是claude -p模式，自 2026 年 6 月 15 日起，Claude 订阅计划对 claude -p 和 Agent SDK 的使用将独立计费，不走订阅额度。如果你是用 API，不受影响。或者也可以考虑使用上面的 Codex bridge 项目。\n\n项目地址：https://t.co/7BWMwz6p3s",
+        "created_at": "Sat May 23 07:15:51 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2058084064033112064",
+            "url": "https://pbs.twimg.com/media/HI_IjVKWAAA8-Nr.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2058084371475619840",
+            "url": "https://pbs.twimg.com/media/HI_I1OeWYAAXrUJ.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2058084394661711872",
+            "url": "https://pbs.twimg.com/media/HI_I2k2WEAAxqY1.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2058084420221829120",
+            "url": "https://pbs.twimg.com/media/HI_I4EEWgAAXUcT.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 222982,
+          "friends_count": 1666,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 45,
+          "favorite_count": 186,
+          "reply_count": 40,
+          "quote_count": 7
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 222982,
+        "friends_count": 1666,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 22,
+        "reply_count": 4,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2062410298695234046",
+      "text": "最近 Codex GPT-5.5 给我的感觉是干活不如 Claude Opus 4.8，当然可能是因为我在开发 Mac 应用，Opus 更擅长一些",
+      "created_at": "Thu Jun 04 05:45:07 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2062375129515245862",
+        "text": "codex突然大降智，原计划跑2天的goal刚才20分钟给我交付了\n\n拿去评分，给了AI评分以来最低的5/10分",
+        "created_at": "Thu Jun 04 03:25:22 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "20571502",
+          "name": "Jesse Lau 遁一子",
+          "screen_name": "jesselaunz",
+          "description": "AI 借假修真",
+          "followers_count": 30250,
+          "friends_count": 2141,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 15,
+          "reply_count": 6,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 222982,
+        "friends_count": 1666,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 31,
+        "reply_count": 16,
+        "quote_count": 1
+      }
+    },
     {
       "id": "2062402725183373519",
       "text": "RT @heavypulp: @millerman Reading this again, I thought you meant for making like a full length movie or a 30 min episode. \n\nFor this 40 se…",

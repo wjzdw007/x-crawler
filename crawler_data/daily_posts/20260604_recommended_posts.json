@@ -1,12 +1,296 @@
 {
   "date": "20260604",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-04T18:49:28.669917",
-  "tweet_count": 231,
-  "unique_tweet_count": 231,
-  "total_crawled": 428,
-  "duplicates_removed": 197,
+  "last_crawl_time": "2026-06-04T20:45:46.502373",
+  "tweet_count": 237,
+  "unique_tweet_count": 237,
+  "total_crawled": 431,
+  "duplicates_removed": 194,
   "tweets": [
+    {
+      "id": "2062631919011954734",
+      "text": "中文版 https://t.co/wMoIvdtDnk",
+      "created_at": "Thu Jun 04 20:25:45 +0000 2026",
+      "lang": "ja",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2062631902691864576",
+          "url": "https://pbs.twimg.com/media/HJ_wyYZWMAAwLQx.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 223048,
+        "friends_count": 1666,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2062630738994807131",
+      "text": "一图胜千言 https://t.co/1SvQgllCMs",
+      "created_at": "Thu Jun 04 20:21:04 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2062630386069336064",
+          "url": "https://pbs.twimg.com/media/HJ_vaGiW8AALjG8.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 223048,
+        "friends_count": 1666,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2062629786283864504",
+      "text": "Codex 新的这个 Build iOS Apps 插件，可以让你方便的在 Codex 查看和测试你的 iOS 应用，预览 SwiftUI组件，修改了还能马上看到更新。\n\n简单解释下原理：\n\n这个插件可以理解成：把原本只能在 Xcode 和 iOS Simulator 里看的 App，搬到了 Codex 右边的浏览器里。视频里右侧那个 iPhone 画面，其实还是一台真实运行中的 iOS Simulator，只是插件用一个第三方 npm serve-sim 把模拟器画面持续截取成视频流，再显示到浏览器页面中。所以 Codex 不只是读代码，它还能“看见”App 当前长什么样。\n\n浏览器能操作这个 App，是因为插件还建立了一条控制通道。你在浏览器里点击、拖动、输入文字时，浏览器会把这些动作换算成模拟器里的触摸坐标或键盘事件，再发回 iOS Simulator。也就是说，浏览器本身没有运行 iOS App，它只是像一个远程屏幕：一边接收模拟器画面，一边把你的操作转发给模拟器。\n\n结合 Codex 的 Browser Use 操作浏览器能力，就可以实现 Codex 自行调试 iOS App。\n\n视频里看到的“选择元素”也不是在选网页里的按钮。iOS App 没有网页 DOM，所以插件会读取 App 的 Accessibility 信息，也就是系统给辅助功能用的那套“这个按钮叫什么、位置在哪里、是不是可点”的数据。然后插件在浏览器画面上盖一层透明的 HTML 按钮，每个透明按钮对应一个 iOS UI 元素。这样 Codex 就能点选、识别、描述这些原生 iOS 元素。\n\nSwiftUI Preview 和热重载则是另一个能力：插件会临时生成一个专门用来展示 Preview 的小 App，把你的 SwiftUI 预览放进去运行。你改代码后，它可以只重新编译预览相关的小动态库，再通知正在运行的 Preview App 更新画面，不一定每次都完整重装 App。最终效果就是：Codex 能在同一个窗口里读代码、改 UI、运行模拟器、看结果、继续调整，形成一个完整的 iOS 开发闭环。",
+      "created_at": "Thu Jun 04 20:17:17 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2062599291479478275",
+        "text": "More of the iOS app loop, now inside Codex.\n\nThe Build iOS Apps plugin lets Codex view and test your iOS app in the in-app browser, open SwiftUI previews, and hot reload edits without leaving Codex. https://t.co/SksapiJFjY",
+        "created_at": "Thu Jun 04 18:16:06 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2062599232268431360",
+            "url": "https://video.twimg.com/amplify_video/2062599232268431360/vid/avc1/1280x720/qUijCg6X_g9fv3Hw.mp4?tag=14",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1633874951508721686",
+          "name": "OpenAI Developers",
+          "screen_name": "OpenAIDevs",
+          "description": "Official updates for developers building with Codex & the OpenAI Platform • Service status: https://t.co/kZwnwdYYEq",
+          "followers_count": 350396,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 146,
+          "favorite_count": 3107,
+          "reply_count": 120,
+          "quote_count": 82
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 223048,
+        "friends_count": 1666,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2062616573790265543",
+      "text": "OpenAI 给 ChatGPT 的记忆系统做了一次大升级，新架构叫“Dreaming”（做梦）。核心变化：ChatGPT 不再需要你主动说“记住这个”，它会在后台自动从你的聊天记录里提炼、整合、更新记忆。https://t.co/T2rutyZqXc \n\n旧版记忆 2024 年 4 月上线，本质上是个笔记本，你说一句“记住我七月要去新加坡”，它就记一条。问题很明显：你没特意提的事它全忘，记下的东西也不会过期，七月过完了它还以为你在新加坡。\n\n新版 Dreaming 换了个思路：后台有个持续运行的流程，会跨多轮对话综合提炼你的信息，并且随时间推移自动更新。比如“你计划七月去新加坡”到了八月会变成“你七月去过新加坡”。\n\nOpenAI 给出了三组评测数据，从 2024 年到 2026 年的变化：\n\n1. 事实记忆准确率（你告诉过它你用什么相机，下次问相关推荐时能不能想起来）：41.5% → 67.9% → 82.8%\n\n2. 偏好遵循率（你是素食主义者，它推荐餐厅时会不会忘了这一点）：31.4% → 55.3% → 71.3%\n\n3. 时效性准确率（你旅行结束了，它还以为你在国外吗）：9.4% → 52.2% → 75.1%\n\n时效性准确率指标提升最高，从接近零到七成多。这也是旧版记忆让用户不满意的的地方，记了就不更新，时间一长全是过期信息。\n\n文章里举了个很能说明问题的例子：用户之前跟 ChatGPT 聊过自己的水下摄影装备（Sony A1 II、Nauticam 壳、Backscatter Mini Flash 3、Inon Z-330），后来问“我想给水下摄影套装加个 TTL，需要买什么”。没有记忆的 ChatGPT 给了一大堆通用兼容性指南，让用户自己去查；有记忆的版本直接报出了具体型号和 SKU，还帮他分析了两个闪光灯分别该配哪个 TTL 触发器。\n\n用户可以在新增的“记忆摘要”页面里查看 ChatGPT 对你的了解，也可以手动修正或删除。\n\n目前 Plus 和 Pro 用户（美国）已经开始推送，免费用户也会在未来几周拿到。OpenAI 说通过优化把给免费用户提供 Dreaming 所需的算力降低了约 5 倍，这才让大规模铺开变得可行。\n\n有意思的是，Anthropic 在 5 月 6 日的 Code with Claude 开发者大会上也发布了自己的“Dreaming”功能，比 OpenAI 这次发布早了将近一个月。两家不约而同选了同一个词，但产品逻辑完全走了两条路。\n\nOpenAI 的 Dreaming 是给普通用户用的。它在后台综合你跟 ChatGPT 的所有聊天记录，提炼出“你是谁、你喜欢什么、你最近在忙什么”，然后把这些信息注入每次新对话。解决的是“我跟 AI 聊了两年，它还是不认识我”的问题。目标是让 ChatGPT 变成一个越来越懂你的私人助手。\n\nAnthropic 的 Dreaming 是给开发者用的，目前只在 Managed Agents API 里提供，以研究预览的形式开放。它的对象是“agent”。一个在生产环境里跑了几个月的 AI agent 会积累大量会话记录和笔记，Dreaming 在 agent 空闲时自动整理这些记录：合并重复条目、删除过期信息、把相对日期转成绝对日期（“昨天决定用 Redis”变成“2026 年 3 月 15 日决定用 Redis”），最关键的是从跨会话的历史里提取 agent 自己没意识到的模式。",
+      "created_at": "Thu Jun 04 19:24:47 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2062567274478014464",
+          "url": "https://video.twimg.com/amplify_video/2062567274478014464/vid/avc1/3840x2160/x6zQhKIDbioY4Hzi.mp4?tag=27",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2062567556524003631",
+        "text": "We’ve been researching new ways for ChatGPT memory to carry context across conversations and keep it useful over time.\n\nToday, that work is rolling out as a more capable memory system in ChatGPT. https://t.co/0MyFKCe2Mu",
+        "created_at": "Thu Jun 04 16:10:00 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 4912102,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 482,
+          "favorite_count": 5385,
+          "reply_count": 351,
+          "quote_count": 228
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 223048,
+        "friends_count": 1666,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 18,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2062614031546880033",
+      "text": "RT @BasilTheGreat: 🚨BREAKING: SPECIALIST DOCTOR SAYS HENRY NOWAK COULD HAVE LIVED IF NOT FOR POLICE\n\nIn summary:\n\n- Henry was alive when th…",
+      "created_at": "Thu Jun 04 19:14:41 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2062517983159747008",
+        "text": "🚨BREAKING: SPECIALIST DOCTOR SAYS HENRY NOWAK COULD HAVE LIVED IF NOT FOR POLICE\n\nIn summary:\n\n- Henry was alive when they arrived and likely clotted\n- Aggressive police intervention likely tore clot\n- Major Trauma department was minutes away from scene\n- Judge and Pathologist were FAR TOO LENIENT on Police\n- Henry Nowak had 50% CHANCE to survive\n- Absolutely convinced that if he arrived in hospital alive he would have survived\n\nThis is disgusting, the family deserve justice\n\nFull breakdown below:\n\nDr Krzysztof Magier [@DrMagier] based in the Isle of Wight is a qualified Paediatric Care Lead and part of the 'Critical Care Network' with experience in combat medicine training and a specialized course in treating severe injuries (including gunshot and stab wounds) has analysed the footage and claimed the AGGRESSIVE Police intervention may have contributed towards Henry's death.\n\nDr Magier DISAGREES with the pathologist's and judge's opinion that Henry Nowak had ZERO chance of SURVIVAL.\n\nAs well as the claim that handcuffing him essentially changed NOTHING. \n\nIn fact he claims the REVERSE IS TRUE, there is a high likelihood that the police intervention CONTRIBUTED TO HENRY'S DEATH. \n\nHe analysed the autopsy report, which points to DAMAGE to the subclavian vein as the main source of BLEEDING.\n\nIn a healthy person, venous bleeding occurs under low pressure and often self-limits thanks to the NATURALLY FORMING CLOT, while simply approximating the wound edges and compressing the surrounding tissues closes the vein enough to slow or even stop the bleeding.\n\nThe body camera footage shows that when police arrived on the scene (likely 5-10 minutes after the injury), Henry was CONCIOUS ENOUGH to speak LOUDLY. \n\nHe was therefore NOT YET in a terminal state. \n\nAfter his arms were twisted behind his back and handcuffed, the vein was most likely STRETCHED, the clot TORN, and BLEEDING DRAMATICALLY INTENSIFIED. \n\nWithin just about three minutes, he lost consciousness and DIED.   \n\nPeople with suspected internal injuries should NEVER be moved or yanked abruptly, such actions can destroy the natural clot and lead to massive internal hemorrhage. \n\nInstead of immediately calling a medical rescue team and handing the patient over to paramedics, the police ARRESTED HIM. \n\nIf paramedics had arrived first on the scene, Henry’s chances of survival would have been MUCH HIGHER.\n\nAS HIGH AS \"50%\"—writes Dr. Magier.\n\nParamedics could have quickly started an IV, administered fluids to increase circulating blood volume, and tranexamic acid to stabilize the clot, and if needed, performed needle decompression (inserting a large, long needle into the lung), because the issue wasn’t so much lack of lung function, but compression of the blood-filled lung on the heart and mediastinum, which blocks circulation.\n\nWorse still, the incident took place just a few minutes' drive by car (2–3 minutes by ambulance with sirens) from Southampton University Hospital—a regional MAJOR TRAUMA CENTRE equipped with a full team of specialists, procedures, and equipment. \n\n\"I AM CONVINCED THAT IF HENRY HAD ARRIVED THERE ALIVE THE DOCTORS WOULD HAVE NOT LET HIM DIE\"—writes Dr. Magier.\n\nThe aggressive police intervention, instead of saving a life, led to death through improper handling of a severely injured person, even though world-class care was just minutes away. \"I fear the Judge and pathologist were too lenient toward the police\"",
+        "created_at": "Thu Jun 04 12:53:01 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2062515634886373377",
+            "url": "https://pbs.twimg.com/media/HJ-HCtEXcAEqUpV.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1722014154322575360",
+          "name": "Basil the Great",
+          "screen_name": "BasilTheGreat",
+          "description": "--//-- Restore Britain --//--\n\nDM for submissions/credit/deletion",
+          "followers_count": 312188,
+          "friends_count": 5029,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7589,
+          "favorite_count": 25733,
+          "reply_count": 786,
+          "quote_count": 383
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240152408,
+        "friends_count": 1352,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 7589,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2062613724523864464",
+      "text": "This provides some sense of scale",
+      "created_at": "Thu Jun 04 19:13:28 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2062529651554050535",
+        "text": "Starlink V3 satellites\n\nBandwidth per Satellite:\n• V2: 96 Gbps\n• V3: 1,024 Gbps\n\nBandwidth per Launch:\nV2: 2,600 Gbps\nV3: 61,000 Gbps\n\nDeployment per Launch:\n• V2: 27 satellites (on Falcon 9)\n• V3: 60 (on Starship)\n\nStarlink V3 satellites will begin to be deployed in late 2026 on Starship.",
+        "created_at": "Thu Jun 04 13:39:23 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2062528606014668800",
+            "url": "https://pbs.twimg.com/media/HJ-S1uSWAAAl2_w.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EVs/space/tech. Bringing you the latest news in a single, easy-to-read feed. $TSLA & $SPCX investor, Model Y owner.",
+          "followers_count": 1081530,
+          "friends_count": 462,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 255,
+          "favorite_count": 2570,
+          "reply_count": 113,
+          "quote_count": 38
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240152408,
+        "friends_count": 1352,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1314,
+        "favorite_count": 15096,
+        "reply_count": 1577,
+        "quote_count": 62
+      }
+    },
     {
       "id": "2062593766658015636",
       "text": "产品设计的重要性：）",

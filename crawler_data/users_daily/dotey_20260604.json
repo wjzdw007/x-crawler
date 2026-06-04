@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 223035,
+    "followers_count": 223047,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260604",
-  "last_updated": "2026-06-04T17:05:24.687246",
-  "tweet_count": 7,
+  "last_updated": "2026-06-04T18:49:28.696176",
+  "tweet_count": 10,
   "tweets": [
     {
       "id": "2062330943931662710",
@@ -333,6 +333,135 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2062583066594287901",
+      "text": "我知道的所有做AI Agent的团队都很拼，不是老板逼着的，是为了心中理想，所以心甘情愿加班和搞封闭开发👍\n\n有点我好奇的是：Kimi 团队在开发 Kimi Code 的时候，是自家模型 token 用的多还是 Claude 或者 GPT 模型的 Token 用的多呢？ 🤔",
+      "created_at": "Thu Jun 04 17:11:38 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2062507087822000356",
+        "text": "过去一个月是疯狂的一个月\n\n大概一个月前，我下定决心重构 kimi-code，开始设计新的架构。\n我大概抱着电脑和便携屏在汤泉卷了两整天，花了几千刀的 token 去做架构分析、设计和验证，最终得到了一份我认为最优的架构方案。 我觉得在 vibe 时代，架构变得更加重要了，一份好的架构能够在可控的范围内，让 Agent 肆意 coding，而不会打破东西\n\n- 架构确定后，就开始冲刺实现。（过程中吵和推翻了无数次）\n- 迅速组建了一个强大的 team，感恩兄弟们无条件的信任🙇‍♂️\n- 迅速 onboarding 整个 team，🙇‍♂️ 再次感恩兄弟们\n- 封闭开发了一段时间（🤣年轻的时候，觉得是糟粕，真到时候，发现是人类工程效率奇迹。你无法想象随时可以拉着全部人在白板前吵架的架构迭代速度）\n- 虽然代码都是 vibe 的，但依旧逃不过 “代码质量正比于人类的注意力密度”。所以 agent 并不会替代所有程序员，只会让顶级的程序员生产力翻 20 倍，并淘汰其他程序员，且，集体主义 >>> 个人英雄主义。\n- 一步一个坑的解决过程中遇到的问题。每一天都是最绝望的一天😭\n- 开源后就病倒了，皮质醇分泌过度，影响免疫力\n- 这一个月学的东西够我消化半年的\n- 一周干了一整箱红牛，还得是生物燃料\n- 🫥 也在 x 上消失了一个月\n\n本来想写一些文章去总结过程中一些 insights 和 idea，但我本来就不擅长写长文，外加人脑自我保护让我迅速忘记了整个过程中的痛苦，并模糊了时间观念（冷知识，kimi-code 重构版开源其实才过了一周多，但在我的感性认知中，像是已经过了一个月）\n\n等 kimi-code 陆续迭代到稳定，再去总结过程中的 lessons learned",
+        "created_at": "Thu Jun 04 12:09:43 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2062507073074806784",
+            "url": "https://pbs.twimg.com/media/HJ9_QV1awAA-cmd.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1102444843140182016",
+          "name": "Kai",
+          "screen_name": "real_kai42",
+          "description": "独立开发者，20k stars 开源项目 Qwerty Learner 作者，《Web Worker 播客》主播\n\n仅聊技术和生活，仅代表个人观点，不太擅长文字，但话痨∠(｀ω´*) \n\n主页/咨询服务/内推 : https://t.co/ZCsVg4sr1t\nex @Microsoft @BytedanceTalk @hulu",
+          "followers_count": 32729,
+          "friends_count": 1183,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 40,
+          "favorite_count": 899,
+          "reply_count": 131,
+          "quote_count": 25
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 21,
+        "reply_count": 7,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2062586895779946817",
+      "text": "如果有条件的话，选你能用的上的最聪明的 2-3 个就够了。只有你很在乎成本的情况下或者要做一些研究工作，才需要去使用其他便宜些的模型。\n\n再聪明的模型一个也不够，因为不够稳定和全面，比如最近 GPT-5.5 就不如 Opus 4.8 稳定，甚至写东西还得退回 Opus 4.6。翻译我还是最喜欢 Gemini 3.1 Pro 的版本。画图选 GPT Image 2。\n\n就算 Opus 4.8 不错，复杂一点任务我也会让 GPT-5.5 同时出个方案，对比一下，并不总是 Opus 的方案更好。\n\nToken 贵的省时间，时间比 Token 还贵！",
+      "created_at": "Thu Jun 04 17:26:51 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2062572208938164710",
+        "text": "@dotey 请教一下大佬，假如codex或者cc可以满足目前的需求，是否还有必要体验国内agent，目前只深度用过这两个agent，不知道有没有必要多体验不同agent的区别，还是深耕一两个就行",
+        "created_at": "Thu Jun 04 16:28:30 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1930539303173799936",
+          "name": "Simon Fan",
+          "screen_name": "4OqEdKUU2922274",
+          "description": "",
+          "followers_count": 2,
+          "friends_count": 13,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 26,
+        "reply_count": 4,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2062593766658015636",
+      "text": "产品设计的重要性：）",
+      "created_at": "Thu Jun 04 17:54:09 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2062536809259892901",
+        "text": "@jiadana2520 我没截图，简单给你画一下。codex 就很醒目。qodex一愣神就点错了 https://t.co/s9tjrZ5uh6",
+        "created_at": "Thu Jun 04 14:07:50 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2062536641609392128",
+            "url": "https://pbs.twimg.com/media/HJ-aJdNa4AACbXi.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1729075801491116032",
+          "name": "Paidax",
+          "screen_name": "xin_pai88825",
+          "description": "兴趣使然的设计师\n做过麻雀记。现在在做 新枝 和 Para翻译\n发点碎碎念，记录产品日常",
+          "followers_count": 13492,
+          "friends_count": 993,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 9,
+          "reply_count": 3,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 2,
+        "quote_count": 1
       }
     }
   ]

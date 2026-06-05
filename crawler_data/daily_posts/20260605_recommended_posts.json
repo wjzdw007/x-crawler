@@ -1,12 +1,291 @@
 {
   "date": "20260605",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-05T05:34:40.188965",
-  "tweet_count": 210,
-  "unique_tweet_count": 210,
-  "total_crawled": 403,
-  "duplicates_removed": 193,
+  "last_crawl_time": "2026-06-05T07:34:51.104086",
+  "tweet_count": 215,
+  "unique_tweet_count": 215,
+  "total_crawled": 410,
+  "duplicates_removed": 195,
   "tweets": [
+    {
+      "id": "2062796377055187258",
+      "text": "29 more Starlink satellites. \n\nOver 10,000 in orbit now.",
+      "created_at": "Fri Jun 05 07:19:15 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2062585343388319851",
+        "text": "Falcon 9 launches and deploys 29 @Starlink satellites from Florida https://t.co/ODzPDs3Esk",
+        "created_at": "Thu Jun 04 17:20:41 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2062585246852190208",
+            "url": "https://pbs.twimg.com/media/HJ_GWp2WEAAHkE2.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2062585278489853953",
+            "url": "https://pbs.twimg.com/media/HJ_GYftWgAE2iIB.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2062585296051453952",
+            "url": "https://pbs.twimg.com/media/HJ_GZhIXQAAeVJx.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2062585313612926976",
+            "url": "https://pbs.twimg.com/media/HJ_GaijWEAAdi5q.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41720251,
+          "friends_count": 123,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 713,
+          "favorite_count": 5435,
+          "reply_count": 289,
+          "quote_count": 38
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240127821,
+        "friends_count": 1352,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 379,
+        "favorite_count": 3631,
+        "reply_count": 852,
+        "quote_count": 47
+      }
+    },
+    {
+      "id": "2062796095764234421",
+      "text": "Grok supports worktrees",
+      "created_at": "Fri Jun 05 07:18:08 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2062408615575822547",
+        "text": "Grok Build tip of the day: worktrees!\n\nIf you're unfamiliar with worktrees, they're essentially  lightweight copies of your repo, allowing you to run parallel agents within their own workspaces. Try it either in the home screen or using `grok -w`! https://t.co/dTTrrdMus8",
+        "created_at": "Thu Jun 04 05:38:26 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2062407951751757824",
+            "url": "https://video.twimg.com/amplify_video/2062407951751757824/vid/avc1/2106x1544/-1wjsZEjTNB6HJhD.mp4?tag=27",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "843552513936801797",
+          "name": "akshey",
+          "screen_name": "aksheyd",
+          "description": "sprite zero enthusiast @spacexai",
+          "followers_count": 1246,
+          "friends_count": 153,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 21,
+          "favorite_count": 303,
+          "reply_count": 32,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240127821,
+        "friends_count": 1352,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 120,
+        "favorite_count": 765,
+        "reply_count": 378,
+        "quote_count": 8
+      }
+    },
+    {
+      "id": "2062795562265550876",
+      "text": "Grok Build updates",
+      "created_at": "Fri Jun 05 07:16:01 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2062363644638458007",
+        "text": "Bug fixes shipping to Grok Build 0.2.20 (release notes will be available in the TUI and on change-log website)\n\n• Eliminate ghost-cell artifacts in markdown table rendering\n• Make monitors visible and killable to the model\n• Preserve soft breaks in plan preview\n• Add image_to_video and reference_to_video tools\n• Add bundled imagine skill\n• Convert ICO images to PNG\n• Resolve [Image # N] attachment references in image_edit\n• Open fullscreen viewer on Enter for Search and ListDir blocks\n• Route MCP lifecycle notifications by sessionId + bound per-server init\n• Route mouse-wheel scroll to /btw overlay panel\n• Compaction: neutralize echoed summarization instruction in summary seed\n• Structured compaction prompt (successor-assistant, carry-forward, <analysis>\n block)\n• Dedupe between-turn subagent completion reminders\n• Allow auto-update to downgrade on rollback\n• Dedupe MCP servers declared in both .mcp.json and plugin.json\n• Fix local stdio MCP servers on Windows",
+        "created_at": "Thu Jun 04 02:39:44 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1480673713179795457",
+          "name": "skcd",
+          "screen_name": "skcd42",
+          "description": "Understanding the universe @xai \nex hacking @aide_dev \nex fb engineer\nICPC WF\n\nits just code 👨🏼‍💻",
+          "followers_count": 27693,
+          "friends_count": 317,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 20,
+          "favorite_count": 310,
+          "reply_count": 38,
+          "quote_count": 5
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240127821,
+        "friends_count": 1352,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 142,
+        "favorite_count": 896,
+        "reply_count": 407,
+        "quote_count": 9
+      }
+    },
+    {
+      "id": "2062795019551957383",
+      "text": "Grok model improvement",
+      "created_at": "Fri Jun 05 07:13:52 +0000 2026",
+      "lang": "ca",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2062598069351551001",
+        "text": "The updated Grok-build model (still the 0.5T one) is much better than before. It’s less lazy, more autonomous, and more accurate. We are still improving it on long-horizon tasks. Stay tuned and enjoy it in our beautiful TUI with new usage limits! 🚀",
+        "created_at": "Thu Jun 04 18:11:15 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "726053744731807744",
+          "name": "Bill Yuchen Lin",
+          "screen_name": "billyuchenlin",
+          "description": "RL for coding @xAI @SpaceX Affiliate Assistant Prof @UW. Ex: @allen_ai; Google, Meta FAIR.",
+          "followers_count": 26552,
+          "friends_count": 2818,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 321,
+          "reply_count": 32,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240127821,
+        "friends_count": 1352,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 159,
+        "favorite_count": 1051,
+        "reply_count": 456,
+        "quote_count": 11
+      }
+    },
+    {
+      "id": "2062787401001365530",
+      "text": "RT @xiaohu: 兄弟们，福利来了\n\n宝玉老师 @dotey 不是写了一本新书《图解Skill》嘛\n\n非常不错，我的很多技能也是和宝玉老师学习的\n\n本质分享开源的思想，今天开始我也将陆续分享一些我自己使用的技能🤓\n\n技能稍后发出，先搞10本宝玉的《图解Skill》送给大家…",
+      "created_at": "Fri Jun 05 06:43:35 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2062785253442543704",
+        "text": "兄弟们，福利来了\n\n宝玉老师 @dotey 不是写了一本新书《图解Skill》嘛\n\n非常不错，我的很多技能也是和宝玉老师学习的\n\n本质分享开源的思想，今天开始我也将陆续分享一些我自己使用的技能🤓\n\n技能稍后发出，先搞10本宝玉的《图解Skill》送给大家。\n\n木有乱七八糟的的条件转发本推即可，周一抽10位...\n\n送出...",
+        "created_at": "Fri Jun 05 06:35:03 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2062778571463299072",
+            "url": "https://pbs.twimg.com/media/HKB2LoJbkAA3JWj.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1764818331822182400",
+          "name": "小互",
+          "screen_name": "xiaohu",
+          "description": "带你了解全球最前沿科技、AI动态...\n\n学AI找小互，找小互，上 https://t.co/4PVaHEr5r3 ...\n\n小互AI日报 社群：https://t.co/LIEXfWUHv1",
+          "followers_count": 108217,
+          "friends_count": 1664,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 30,
+          "favorite_count": 19,
+          "reply_count": 18,
+          "quote_count": 6
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 223121,
+        "friends_count": 1667,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 30,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2062752172450681051",
       "text": "Yes, SPLC is a criminal organization",

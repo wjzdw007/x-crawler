@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 223530,
+    "followers_count": 223536,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260607",
-  "last_updated": "2026-06-07T16:33:17.191481",
-  "tweet_count": 9,
+  "last_updated": "2026-06-07T18:30:06.984987",
+  "tweet_count": 11,
   "tweets": [
     {
       "id": "2063444443991097775",
@@ -429,6 +429,142 @@
         "retweet_count": 0,
         "favorite_count": 2,
         "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2063674134903603302",
+      "text": "之所以研究 Claude Design，是因为最近摸索出一套不错的开发模式：\n\n1. 先用 Claude Design 去设计 App 的 UI 和 UX，第一版本越简单越好。\n\nClaude Design 交付的结果是 HTML + CSS + React + data.js，通过 CSS 一下就可以看清楚设计系统的颜色系统、尺寸规范，通过 React 可以看清楚组件结构，通过 data 可以知道数据结构什么样子。\n\n这几个组合可比 figma 对于 AI 来说友好多了，尤其是 data.jsx，这是一般的设计 App 不会有的，但对开发特别重要的。\n\n还有一个优势就是交付的结果都是文本格式的，可以一起提交到 git 做版本管理，用 git diff 就可以清楚的让 AI 知道设计稿修改了什么。\n\n2. 把 Claude Design 生成设计稿交给 Claude Opus 4.8 去实现一个 MVP，第一个版本只实现 UI 功能，告诉它技术栈（比如 AppKit 而不是 SwiftUI），通过几个小版本的迭代，让它逐步完善。比如第一个版本只是主界面\n\n之所以不用 GPT，是因为 Opus 在 UI 实现上比 GPT 好太多，同样的设计稿，GPT 实现的各种细节问题的，不能很好的遵守设计稿。\n\n之所以不一下子实现太多功能，是因为功能越少 Agent 越容易聚焦，做出来效果越好。所以怎么拆分版本，也是用好 Coding Agent 的一种能力。\n\n非 UI 的功能，用什么模型没有那么大差别，所以我也会用 Codex 配合非 UI 工作。\n\n3. 每次生成一个版本，要让它可以运行，无论是 Agent 还是人都是需要即时反馈的，有了反馈才知道方向对不对，才知道下一步要做什么。\n\n人在测试的时候，能发现各种问题，代码问题就让 Agent 去修改，UI 设计有问题不是马上修改代码，而是要去 Claude Design 去修改设计稿，设计稿修改完了，把设计稿下载回去，替换本地的设计稿文件。\n\n设计稿替换后，让 Agent 去 git diff 分析一下变更，给它个截图，都不用多说它就知道怎么改了。\n\n4. 版本稳定后继续新一轮迭代\n\n当设计的功能做完之后，不一定是要马上去设计新的功能，而是可以重新审查一下实现的代码，重构优化一下。\n\n比如我在第一版实现后，让 Opus 4.8 去做了性能分析，看性能问题在哪，然后告诉我当前用 NSScrollView，内容一多就内存暴涨，建议 NSTableView。\n\n我心想这不应该是一开始就该考虑到的么！不管怎么样亡羊补牢也不算晚。\n\n性能优化完就继续加功能，更新设计稿，让 Agent 参考新设计稿优化功能。\n\n---\n\n再回来说研究 Claude Design 的事，因为反复 Claude Design 修改，同步到本地，然后这一步让我后来很烦，因为需要在本地和 Claude Design 网页切换，还要导出下载到本地，解压缩替换。\n\n于是我就想能不能在本地就可以重现 Claude Design 直接集成到本地 Agent，所以我去研究了 Claude Design，然后发现完全可以本地跑起来，只是本地 Agent 在工具调用上有些差异，以及不方便直接在设计稿上标记编辑。\n\n上周正好 Codex 发布了直接调试 iOS 的功能，它带了标记修改的功能，然后我灵机一动，这不正好可以代替 Claude Design 的标记修改功能么。（图2）\n\n问题是 GPT 5.5 模型设计能力不够，在 Codex 里面设计效果也不会好。\n\n接着  Cursor 也发布了网页标记功能，这下正好，Cursor 里面可以用 Opus 4.8，做成 Skill 就可以本地运行了，还可以在 Cursor 内置浏览器中，直接标记、评论修改。\n\n好在 Claude Code 的核心逻辑都在浏览器前端，他们在网页上做了个 Harness，这给了我分析的便利，耐心一点就可以分析出所有的 Prompt、内置 Skills、初始组件，再针对 Cursor 的工具做一些兼容就可以跑起来了。（图3）\n\n测试对比了一下和在 Claude Design 上跑的效果差不多。（图4）\n\n归根结底，还是 Claude Desktop 太拉胯了，Claude Design 本应该集成在 Claude Desktop 的，不然也不需要我这么折腾。\n\n当然不折腾下我也没机会学习 Claude Design 优秀的设计，真的很棒，接下来会系列更新我的学习心得。\n\n推荐去试试最终的 Skill，让你本地就可以跑 Claude Design：\nhttps://t.co/d2EaYV6q7j",
+      "created_at": "Sun Jun 07 17:27:09 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2063674019589550080",
+          "url": "https://pbs.twimg.com/media/HKOklkXWcAArKsq.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2063674036987584512",
+          "url": "https://pbs.twimg.com/media/HKOkmlLXYAAS7aU.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2063674076476915712",
+          "url": "https://pbs.twimg.com/media/HKOko4SWwAAOHMg.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2063674126653419520",
+          "url": "https://pbs.twimg.com/media/HKOkrzNXcAA032T.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2063475943402872982",
+        "text": "最近为了研究 Claude Design，专门写了一个工具，可以解析 HAR 文件，解密 Claude Design 传输的二进制内容，这样可以方便的看到请求的 Prompt https://t.co/bcQgNnTRZ5",
+        "created_at": "Sun Jun 07 04:19:37 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2063474226263162880",
+            "url": "https://pbs.twimg.com/media/HKLu4EOXAAAzoZu.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2063474609328906240",
+            "url": "https://pbs.twimg.com/media/HKLvOXQWYAAy7SV.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2063475751827939328",
+            "url": "https://pbs.twimg.com/media/HKLwQ3ZWIAAdcsj.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 223536,
+          "friends_count": 1669,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 9,
+          "favorite_count": 128,
+          "reply_count": 49,
+          "quote_count": 5
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 45,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2063686036895478162",
+      "text": "ChatGPT 要变 AgentGPT 了\n\n当然 ChatGPT 应该不会改名字，但 ChatGPT 应该不再是一个单纯的 Chat 工具了。\n\nOpenAI 内部一位高管对《金融时报》说：\"Chat is dead.\"（聊天已死。）\n\nOpenAI 正在准备 ChatGPT 自 2022 年上线以来最大规模的改版。改版的方向很明确：不再只做聊天机器人，要做超级应用。编程工具 Codex、能自主执行多步骤任务的 AI agent、图像生成、第三方合作伙伴的应用（目前已知包括 Canva 和 Booking），全部塞进一个统一界面里。\n\n首席产品官 Tibo（Thibault Sottiaux） 对《金融时报》说：目标是打造一个跨越所有平台的个人 AI 助手，覆盖工作和生活的方方面面。更远期的计划是，连用户输入 prompt 这一步都省掉，让模型直接理解用户意图。\n\n【注：Tibo 目前统管 ChatGPT、Codex 和平台产品团队，OpenAI 最近刚把这几个原本独立的团队合并到了他手下。】\n\n改版预计未来几周内开始上线，先从网页端和手机端推出。新界面会更积极地引导用户去用编程、图像生成和第三方应用功能，而不是停留在对话框里聊天。\n\n这次改版的驱动力不只是产品理念，还有来自商业上的压力。\n\nChatGPT 现在有 9 亿周活跃用户，超过 5000 万付费个人用户，月收入 20 亿美元。但大部分用户用的是免费版，公司至今没有盈利。企业客户目前贡献了约 40% 的收入（来自大约 200 万家企业客户），OpenAI 希望年底前把这个比例提到 50%。Codex 是增长最快的产品线，桌面版上线后周活已经超过 500 万。\n\n把用户从低利润的免费聊天引导到高利润的企业工具和编程产品上，是 IPO 前必须讲出来的故事。\n\n说到 IPO，OpenAI 今年 3 月刚完成了 1220 亿美元的融资轮（Amazon 出了 500 亿，Nvidia 和软银各 300 亿），估值 8520 亿美元。高盛和摩根士丹利正在为 IPO 做准备，目标估值可能超过 1 万亿美元。\n\n但竞争对手 Anthropic 也没闲着。6 月 1 日，Anthropic 向 SEC 提交了保密 S-1 文件，最新一轮融资估值已经达到 9650 亿美元，5 月年化收入 470 亿美元。也就是说，按估值算，Anthropic 已经超过了 OpenAI。在企业市场，Claude Code 的增长也在直接蚕食 Codex 的地盘。Google 那边，Gemini 上个月在 I/O 大会上宣布月活达到 9 亿，逼近 ChatGPT。\n\nOpenAI 现在面对的局面是：消费端被 Google 追，企业端被 Anthropic 抢，自己又还没盈利，IPO 窗口就在眼前。把 ChatGPT 从聊天工具变成平台，既是产品升级，也是给投资人讲的新故事。\n\n对普通用户来说，最直接的变化是：打开 ChatGPT 的界面会跟现在不一样，不再是一个简单的对话框，而是一个带有明确功能入口的应用。对开发者来说，Codex 和 agent 能力的整合意味着更多工作可以在 ChatGPT 内完成，不用跳转到其他工具。\n\n至于 OpenAI 能不能靠这次改版让投资人相信它不只是一家聊天机器人公司，这可能是 Sam Altman 今年最重要的一次产品赌注。",
+      "created_at": "Sun Jun 07 18:14:27 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2063634671238582730",
+        "text": "根据《金融时报》报道：Open AI 正在筹划对ChatGPT推出以来的最大规模改革\n\n“聊天已死”\n\nAI的未来不在于回答问题的聊天机器人，而在于能够为用户执行任务的智能体，也就是Agent！ https://t.co/MIJlYPjqo4",
+        "created_at": "Sun Jun 07 14:50:20 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2063634661298094080",
+            "url": "https://pbs.twimg.com/media/HKOAynTbQAA1ztT.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2063634661730123776",
+            "url": "https://pbs.twimg.com/media/HKOAyo6bgAAcSy2.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2063634661306441728",
+            "url": "https://pbs.twimg.com/media/HKOAynVaoAA72WB.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2063634661306490880",
+            "url": "https://pbs.twimg.com/media/HKOAynVbYAAt7L_.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1597654998971604992",
+          "name": "金融汪",
+          "screen_name": "yuyy614893671",
+          "description": "油管频道：金融汪 ，网址：https://t.co/mE0zmyZHPv\n\n金融市场老兵，观察和理解这个世界每天在发生着什么，是我的兴趣也是工作。X上的内容只是分享，不是投资建议。",
+          "followers_count": 70660,
+          "friends_count": 610,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 37,
+          "reply_count": 14,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 2,
         "quote_count": 0
       }
     }

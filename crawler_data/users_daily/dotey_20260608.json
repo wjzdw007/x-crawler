@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 223557,
+    "followers_count": 223599,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260608",
-  "last_updated": "2026-06-08T00:47:53.137400",
-  "tweet_count": 1,
+  "last_updated": "2026-06-08T03:11:55.476644",
+  "tweet_count": 4,
   "tweets": [
     {
       "id": "2063779728360698168",
@@ -48,6 +48,99 @@
         "favorite_count": 4,
         "reply_count": 3,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2063786116860235859",
+      "text": "在 Chat 时代，追求的是一次通过，因为没有运行环境，但是在 Agent 时代，只要有明确的错误反馈，修正起来很快。\n\nReact 代码，js出错了很好调试修复，css错误只要能定位到具体组件也很好修；一个大的 HTML 里面的一些样式细节出错了，不会有啥明显的错误，但是 debug 起来可真的会要命。",
+      "created_at": "Mon Jun 08 00:52:08 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 7,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2063793327393145266",
+      "text": "如果配合好设计系统（Design System）去用 Claude Design，那么你就可以更多聚焦在 UX 而不是 UI 设计\nhttps://t.co/9nXbFc4FDQ",
+      "created_at": "Mon Jun 08 01:20:47 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2063721890695315717",
+        "text": "@saurabh_visator Claude Design 有一个很重要的前提：你有自己的 DS（Design System）。当你有了 Design System，那么你不需要太多的 UI 设计，因为 UI 设计规范在 DS 已经定义好了，更多的是 UX 的设计。这才是正确的方向。",
+        "created_at": "Sun Jun 07 20:36:55 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "Prompt Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 223599,
+          "friends_count": 1669,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 4,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2063800780050608603",
+      "text": "长时间运行 Agent，Agent 能自行验证才是关键，否则可能只是浪费 Token",
+      "created_at": "Mon Jun 08 01:50:24 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2063792263067754658",
+        "text": "Seeing a number of benchmarks showing Opus is the best model for long-running work.\n\nFive tips for running Opus autonomously for hours/days:\n\n1. Use auto mode for permissions, so Claude doesn’t ask for approval\n2. Use dynamic workflows, to have Claude orchestrate hundreds/thousands of agents to get a task done\n3. Use /goal or /loop, to nudge Claude to keep going until it’s done\n4. Use Claude Code in the cloud, so you can close your laptop (easiest way is the desktop or mobile app)\n5. Make sure Claude has a way to self-verify its work end to end: Claude in Chrome browser extension for web, iOS/Android sim MCP for mobile, a way to start the full web server or service for backend work",
+        "created_at": "Mon Jun 08 01:16:33 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "159337660",
+          "name": "Boris Cherny",
+          "screen_name": "bcherny",
+          "description": "Claude Code @anthropicai",
+          "followers_count": 480036,
+          "friends_count": 133,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 69,
+          "favorite_count": 852,
+          "reply_count": 107,
+          "quote_count": 21
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 29,
+        "reply_count": 7,
+        "quote_count": 1
       }
     }
   ]

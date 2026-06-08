@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-06-08T01:53:37.295128",
+  "tweet_count": 12,
+  "summary": "**新工具/技术**（如有）\n- Cursor Design（Cursor 的浏览器 + 元素标注）：把浏览器变成设计工作室，描述界面能生成 HTML，预览中点元素并直接说要改什么，适合本地运行 Claude Design（推荐配 Opus 4.8）。\n- baoyu-design Skill（npx skills add JimLiu/baoyu-design）：dotey 推的 Skill，可以在本地复现 Claude Design 的功能，便于本地迭代和集成到 agent 流程。\n- Claude Design 交付格式：输出 HTML + CSS + React 组件 + data.jsx（数据结构），文本化交付便于版本控制和 git diff 驱动的协作。\n- HAR 解析工具：dotey 写了一个工具，能解析 HAR 并解密 Claude Design 发送的二进制，方便看到实际请求的 prompt。\n- 通信协议：Claude Design 使用 Protocol Buffers（protobuf）而非 JSON，但客户端 JS 带有 schema，能被反向工程得到。\n\n**核心观点/方法论**（如有）\n- 交互优先、以可点为准：原型必须能被点击验证交互，否则只是“画”——强调快速获得真实用户行为信号的重要性。\n- 简约与层次感胜于堆砌：好的设计系统应“看不见”，留白、像素克制、谨慎配色（≤3色）是降低认知负担的关键。\n- 快速发布与迭代胜过完美：最短完成路径是把版本发出去，从运行结果和反馈中收敛设计与实现。\n- 用户心理模型为规范：产品规范应以用户的 mental model 为准，技术或内部文档应适配用户的预期。\n\n**实践经验/案例**（如有）\n- Claude Design → Opus 4.8 → Agent 的工作流：用 Claude Design 生成设计稿（文本化组件），交给 Opus 实现 MVP（先只做 UI），再让 agent 根据运行反馈修复与优化，利于分步聚焦与迭代。\n- 本地化运行尝试：dotey 将 Claude Design 的前端逻辑分析出来，在 Cursor/Skill 环境做兼容，实现本地复现，减少网页/本地切换成本。\n- 版本管理优势：因为设计产出是可读文本，直接提交到 git 并用 git diff 给 agent 截图/说明，可实现“设计稿替换→agent 自动调整”的闭环。\n- 模型对比结论：Opus 4.8 在 UI 实现上优于 GPT-5.5（更能遵守设计稿细节）；GPT-5.5 在深度检索/搜索相关的 research 任务表现更好，两者可并用。\n- 工具/权限问题：Claude Code 移动端 remote control 能 plan 但无法 bypass permission，实际远控与自动化仍受平台权限限制，影响可用性。",
+  "metadata": {
+    "original_tweets": 11,
+    "retweets": 1,
+    "media_tweets": 8,
+    "data_hash": "055b13e1",
+    "user": "dotey"
+  }
+}

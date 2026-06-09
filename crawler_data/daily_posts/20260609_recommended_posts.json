@@ -1,12 +1,325 @@
 {
   "date": "20260609",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-09T16:57:31.480753",
-  "tweet_count": 220,
-  "unique_tweet_count": 220,
-  "total_crawled": 410,
-  "duplicates_removed": 190,
+  "last_crawl_time": "2026-06-09T18:46:58.604875",
+  "tweet_count": 225,
+  "unique_tweet_count": 225,
+  "total_crawled": 420,
+  "duplicates_removed": 195,
   "tweets": [
+    {
+      "id": "2064397772103528771",
+      "text": "Anthropic 今天同时发布了两个模型：Claude Fable 5 和 Claude Mythos 5。\n\n两个模型用的是同一个底座，区别在于 Fable 5 加了一套安全分类器，面向所有用户开放；Mythos 5 去掉了部分安全限制，只给 Project Glasswing 的网络安全合作伙伴用。\n\n简单说，Fable 5 就是\"带护栏的 Mythos\"。两个月前，Mythos Preview 还锁在大约 200 家防御机构手里，现在普通开发者也能用到同级别的能力了。\n\n【Fable 5 的安全机制】\n\nFable 5 的安全机制不是传统的\"拒绝回答\"，而是降级：当分类器检测到请求涉及网络安全攻击、生物化学武器相关内容或模型蒸馏行为时，会自动切换到 Opus 4.8 来回答，并告知用户发生了降级。Anthropic 给出的数据是，超过 95% 的对话不会触发降级。\n\nAnthropic 也坦承分类器目前调得偏严，会误伤正常请求，后续会持续优化降低误报率。\n\n【能力到底有多强】\n\nAnthropic 列了一堆 benchmark，但几个实际案例更能说明问题。\n\nStripe 拿 Fable 5 在一个 5000 万行的 Ruby 代码库里做了一次全库迁移，一天完成，原本需要一整个团队花两个多月。在 Cognition 的 FrontierCode 测试中，Fable 5 在中等算力消耗下就拿到了最高分，Token 效率比之前的 Claude 模型明显更好。\n\n视觉能力上，之前的 Claude 模型玩宝可梦火红版需要各种辅助工具才能推进，Fable 5 只靠最基础的视觉接口就通关了。还能从截图直接还原一个 Web 应用的源代码。\n\n在生命科学方向，Mythos 5 让 Anthropic 内部的蛋白质设计专家把药物设计流程中的部分环节加速了约 10 倍。在一项基因组学研究中，Mythos 5 在几乎完全自主的情况下工作了一周多，训练出的模型表现超过了发表在 Science 上的模型，而体量只有后者的百分之一。\n\n【价格和可用性】\n\nFable 5 和 Mythos 5 的 API 定价是每百万输入 Token 10 美元、输出 50 美元。对比 Mythos Preview 的 25/125 美元，降了 60%。但比 Opus 4.8 的 5/25 美元贵了一倍，和 OpenAI 的 GPT-5.5（5/30 美元）相比，输入贵一倍，输出贵了约 67%。\n\n订阅用户要注意一个时间窗口：从今天到 6 月 22 日，Pro、Max、Team 和企业版用户可以免费使用 Fable 5。6 月 23 日开始，使用 Fable 5 需要额外购买 usage credits。Anthropic 说等产能充足后会把 Fable 5 恢复为订阅计划的标配，但没给具体时间。\n\nAPI 和按量付费的企业用户不受影响，今天起就能正常调用。\n\n【一个容易被忽略的政策变化】\n\nAnthropic 同时宣布，从 Fable 5 开始，所有 Mythos 级别模型的流量将强制保留 30 天，覆盖第一方和第三方平台。Anthropic 承诺不会用这些数据训练模型，仅用于安全监控，比如检测新型越狱攻击和跨请求的复杂攻击模式。但对于注重数据隐私的企业用户来说，这是一个需要评估的变化，尤其是那些之前选择 Anthropic 正是因为其零留存政策的客户。",
+      "created_at": "Tue Jun 09 17:22:38 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2064394146916229443",
+        "text": "Introducing Claude Fable 5: a Mythos-class model that we’ve made safe for general use.\n\nIts capabilities exceed those of any model we’ve ever made generally available. https://t.co/2AvmEjHIX8",
+        "created_at": "Tue Jun 09 17:08:13 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2064389698190012416",
+            "url": "https://video.twimg.com/amplify_video/2064389698190012416/vid/avc1/2160x2160/cRYBJVhIVvopbO92.mp4?tag=27",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1943306828697550848",
+          "name": "Claude",
+          "screen_name": "claudeai",
+          "description": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+          "followers_count": 1439859,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 6441,
+          "favorite_count": 46087,
+          "reply_count": 2472,
+          "quote_count": 4510
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 223952,
+        "friends_count": 1669,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 69,
+        "reply_count": 10,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "2064397078869008833",
+      "text": "RT @RupertLowe10: We must stop harbouring those who wish to decapitate children.\n\nA vast number of people need to be removed from our count…",
+      "created_at": "Tue Jun 09 17:19:52 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2064266253284315181",
+        "text": "We must stop harbouring those who wish to decapitate children.\n\nA vast number of people need to be removed from our country - when I say vast, I mean it.\n\nMillions and millions need to leave or be made to leave.",
+        "created_at": "Tue Jun 09 08:40:01 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1121375429884039175",
+          "name": "Rupert Lowe MP",
+          "screen_name": "RupertLowe10",
+          "description": "Great Yarmouth MP. Ex-Southampton FC Chairman. Businessman. Farmer. Former MEP. Leader, @restorebritain.",
+          "followers_count": 810757,
+          "friends_count": 753,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4126,
+          "favorite_count": 29423,
+          "reply_count": 667,
+          "quote_count": 85
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240141477,
+        "friends_count": 1352,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4122,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2064396888242049147",
+      "text": "RT @DrewPavlou: Just endless atrocities in Britain right now",
+      "created_at": "Tue Jun 09 17:19:07 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2064279620900516224",
+        "text": "Just endless atrocities in Britain right now",
+        "created_at": "Tue Jun 09 09:33:08 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2064272080346972507",
+          "text": "Suspect in custody after multiple people stabbed at a Manchester school. https://t.co/VjJRlsvG5p",
+          "created_at": "Tue Jun 09 09:03:10 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2064272039163101184",
+              "url": "https://pbs.twimg.com/media/HKXEe44WgAArugR.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1212783083272855552",
+            "name": "Open Source Intel",
+            "screen_name": "Osint613",
+            "description": "Monitoring Real-Time News & Open Source Intelligence • Middle East • US • World • Geopolitics Analysis • Commentary • On The Ground • Signal Tips: Osint.613",
+            "followers_count": 1471859,
+            "friends_count": 1111,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 519,
+            "favorite_count": 2259,
+            "reply_count": 149,
+            "quote_count": 96
+          }
+        },
+        "user": {
+          "id": "1133510366422392833",
+          "name": "Drew Pavlou 🇦🇺🇺🇸🇺🇦🇹🇼",
+          "screen_name": "DrewPavlou",
+          "description": "Western civilisation enjoyer. Patriot. Adventurer. Anti-communist counter-revolutionary. Survived CCP kidnap plot. FREE TIBET.",
+          "followers_count": 256841,
+          "friends_count": 6363,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 701,
+          "favorite_count": 5435,
+          "reply_count": 207,
+          "quote_count": 18
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240141477,
+        "friends_count": 1352,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 701,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2064396773188059165",
+      "text": "RT @aelluswamy: - Netherlands\n- Lithuania \n- Estonia\n- Denmark",
+      "created_at": "Tue Jun 09 17:18:40 +0000 2026",
+      "lang": "cy",
+      "media": [],
+      "retweet": {
+        "id": "2064392082891133011",
+        "text": "- Netherlands\n- Lithuania \n- Estonia\n- Denmark",
+        "created_at": "Tue Jun 09 17:00:01 +0000 2026",
+        "lang": "cy",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2064350518907167166",
+          "text": "FSD Supervised now approved in Denmark 🇩🇰\n\nRollout will begin soon https://t.co/Xpxwcme10k",
+          "created_at": "Tue Jun 09 14:14:52 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2064350405556043776",
+              "url": "https://video.twimg.com/amplify_video/2064350405556043776/vid/avc1/3840x2160/LGh5IHelKaJWLzD7.mp4?tag=27",
+              "bitrate": 25128000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1620480811303866369",
+            "name": "Tesla Europe, Middle East & Africa",
+            "screen_name": "teslaeurope",
+            "description": "All things Tesla Europe, Middle East & Africa",
+            "followers_count": 171693,
+            "friends_count": 20,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1228,
+            "favorite_count": 8906,
+            "reply_count": 586,
+            "quote_count": 519
+          }
+        },
+        "user": {
+          "id": "87657877",
+          "name": "Ashok Elluswamy",
+          "screen_name": "aelluswamy",
+          "description": "Leading AI @Tesla",
+          "followers_count": 309375,
+          "friends_count": 615,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 404,
+          "favorite_count": 3019,
+          "reply_count": 241,
+          "quote_count": 23
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240141477,
+        "friends_count": 1352,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 404,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2064396727344320767",
+      "text": "Only Restore Britain can save Britain. \n\nIt is the only way.",
+      "created_at": "Tue Jun 09 17:18:29 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2064378927485714912",
+        "text": "The arrested Sudanese man was an 'asylum seeker'.\n\nHe entered Britain in February 2023, immediately claiming asylum, according to the police. \n\nWho was the immigration minister at the time? And then when the man was granted leave to remain in our country?\n\nReform's Robert Jenrick.\n\nWho was Home Secretary?\n\nReform's Suella Braverman.\n\nThey were responsible for our borders. \n\nThey failed, in the most horrific way, with the most horrific consequences. \n\nA Restore Britain Government will abolish the entire asylum system.\n\nNo more asylum seekers.\n\nAnyone who entered our country illegally will be deported, regardless of current status. \n\nEnough.\n\nRestore Britain will not fail you.",
+        "created_at": "Tue Jun 09 16:07:45 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1121375429884039175",
+          "name": "Rupert Lowe MP",
+          "screen_name": "RupertLowe10",
+          "description": "Great Yarmouth MP. Ex-Southampton FC Chairman. Businessman. Farmer. Former MEP. Leader, @restorebritain.",
+          "followers_count": 810757,
+          "friends_count": 753,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 6693,
+          "favorite_count": 43234,
+          "reply_count": 1059,
+          "quote_count": 245
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240141477,
+        "friends_count": 1352,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5041,
+        "favorite_count": 40255,
+        "reply_count": 2411,
+        "quote_count": 193
+      }
+    },
     {
       "id": "2064383776076009787",
       "text": "要换电脑，卡的不行 https://t.co/tSUr3vcLNf",

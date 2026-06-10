@@ -1,12 +1,82 @@
 {
   "date": "20260610",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-10T15:08:11.609325",
-  "tweet_count": 216,
-  "unique_tweet_count": 216,
-  "total_crawled": 414,
-  "duplicates_removed": 198,
+  "last_crawl_time": "2026-06-10T17:07:38.285706",
+  "tweet_count": 217,
+  "unique_tweet_count": 217,
+  "total_crawled": 416,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2064749906800111892",
+      "text": "Claude Design 有一个完整的 Agent 运行环境，如果把它跟 Claude Code 比较的话，只是它基于浏览器和虚拟机来构建的。它有45个工具，有24个内置skills。运行方式也是基于 Agentic Loop。\n\n所以它就是一个完整的 Agent Harness。 https://t.co/QKnBqSMYSK",
+      "created_at": "Wed Jun 10 16:41:53 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2064747914895716353",
+          "url": "https://pbs.twimg.com/media/HKd1SgIWcAEqsmv.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2064748823977558016",
+          "url": "https://pbs.twimg.com/media/HKd2HauWgAAo2r4.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2064749111362879488",
+          "url": "https://pbs.twimg.com/media/HKd2YJUWgAAW6Jf.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2064749553459335169",
+          "url": "https://pbs.twimg.com/media/HKd2x4QXEAEFTjL.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2064736508175859927",
+        "text": "@dotey 我们团队研究快一个月了，未发现任何harness迹象，看起来就是单个agent在那做。哥你说的harness在那自定义？",
+        "created_at": "Wed Jun 10 15:48:39 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1465543249142386689",
+          "name": "Bro Van",
+          "screen_name": "FanVancoo",
+          "description": "Product Designer ｜ Independent Developer｜Figma Cloudy/Fluted  Glass 插件作者｜",
+          "followers_count": 73,
+          "friends_count": 243,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 224209,
+        "friends_count": 1669,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 14,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2064723728680825318",
       "text": "6. 要设计好也要抽卡\nLLM 有随机性，设计也是如此，跟出图一样，得多试几次 https://t.co/W2lfwDAb8r\n\n7. 先线框草图确定好布局和交互，再高精度交互\n如果你还没有想清楚交互、布局这些粗粒度的，可以先选择线框草图，反复调整布局、交互。\n\n满意了后可以新建一个高进度交互原型项目继续，有几种方式可以把草图给它\n1). 直接把之前项目链接发给它作为基础，它可以基于草图实现\n\n2). 让 Claude Design 基于已有设计写一份详细的 PRD （需求说明文档） \n这其实是个非常好的做法，它写文档的水平很高，写出来的结果很详尽，主要是写完了你可以再看看，人工再补充一些文字，比在 Claude Design 上调整简单方便多了。\n\n文档调整完再作为附件发给 Claude Design 就可以二次创作了。",

@@ -1,12 +1,61 @@
 {
   "date": "20260610",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-10T03:10:26.640111",
-  "tweet_count": 202,
-  "unique_tweet_count": 202,
-  "total_crawled": 400,
-  "duplicates_removed": 198,
+  "last_crawl_time": "2026-06-10T05:35:04.577704",
+  "tweet_count": 203,
+  "unique_tweet_count": 203,
+  "total_crawled": 402,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2064581575711260827",
+      "text": "大量测试 Claude Design 后我的一个结论：\nUI/UX 设计方面 Claude 4.8 就够好了，Fable 5 没有体现出更好的 UI/UX 设计能力，甚至还不如 Claude 4.8 的设计效果。",
+      "created_at": "Wed Jun 10 05:33:00 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2064397772103528771",
+        "text": "Anthropic 今天同时发布了两个模型：Claude Fable 5 和 Claude Mythos 5。\n\n两个模型用的是同一个底座，区别在于 Fable 5 加了一套安全分类器，面向所有用户开放；Mythos 5 去掉了部分安全限制，只给 Project Glasswing 的网络安全合作伙伴用。\n\n简单说，Fable 5 就是\"带护栏的 Mythos\"。两个月前，Mythos Preview 还锁在大约 200 家防御机构手里，现在普通开发者也能用到同级别的能力了。\n\n【Fable 5 的安全机制】\n\nFable 5 的安全机制不是传统的\"拒绝回答\"，而是降级：当分类器检测到请求涉及网络安全攻击、生物化学武器相关内容或模型蒸馏行为时，会自动切换到 Opus 4.8 来回答，并告知用户发生了降级。Anthropic 给出的数据是，超过 95% 的对话不会触发降级。\n\nAnthropic 也坦承分类器目前调得偏严，会误伤正常请求，后续会持续优化降低误报率。\n\n【能力到底有多强】\n\nAnthropic 列了一堆 benchmark，但几个实际案例更能说明问题。\n\nStripe 拿 Fable 5 在一个 5000 万行的 Ruby 代码库里做了一次全库迁移，一天完成，原本需要一整个团队花两个多月。在 Cognition 的 FrontierCode 测试中，Fable 5 在中等算力消耗下就拿到了最高分，Token 效率比之前的 Claude 模型明显更好。\n\n视觉能力上，之前的 Claude 模型玩宝可梦火红版需要各种辅助工具才能推进，Fable 5 只靠最基础的视觉接口就通关了。还能从截图直接还原一个 Web 应用的源代码。\n\n在生命科学方向，Mythos 5 让 Anthropic 内部的蛋白质设计专家把药物设计流程中的部分环节加速了约 10 倍。在一项基因组学研究中，Mythos 5 在几乎完全自主的情况下工作了一周多，训练出的模型表现超过了发表在 Science 上的模型，而体量只有后者的百分之一。\n\n【价格和可用性】\n\nFable 5 和 Mythos 5 的 API 定价是每百万输入 Token 10 美元、输出 50 美元。对比 Mythos Preview 的 25/125 美元，降了 60%。但比 Opus 4.8 的 5/25 美元贵了一倍，和 OpenAI 的 GPT-5.5（5/30 美元）相比，输入贵一倍，输出贵了约 67%。\n\n订阅用户要注意一个时间窗口：从今天到 6 月 22 日，Pro、Max、Team 和企业版用户可以免费使用 Fable 5。6 月 23 日开始，使用 Fable 5 需要额外购买 usage credits。Anthropic 说等产能充足后会把 Fable 5 恢复为订阅计划的标配，但没给具体时间。\n\nAPI 和按量付费的企业用户不受影响，今天起就能正常调用。\n\n【一个容易被忽略的政策变化】\n\nAnthropic 同时宣布，从 Fable 5 开始，所有 Mythos 级别模型的流量将强制保留 30 天，覆盖第一方和第三方平台。Anthropic 承诺不会用这些数据训练模型，仅用于安全监控，比如检测新型越狱攻击和跨请求的复杂攻击模式。但对于注重数据隐私的企业用户来说，这是一个需要评估的变化，尤其是那些之前选择 Anthropic 正是因为其零留存政策的客户。",
+        "created_at": "Tue Jun 09 17:22:38 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 224101,
+          "friends_count": 1669,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 36,
+          "favorite_count": 267,
+          "reply_count": 99,
+          "quote_count": 11
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 224101,
+        "friends_count": 1669,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2064520765374931277",
       "text": "RT @visegrad24: This is the UK https://t.co/WyCeA6abBk",

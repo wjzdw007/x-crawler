@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-06-10T01:49:01.416728",
+  "tweet_count": 9,
+  "summary": "**新工具/技术**（如有）\n- baoyu-design skill：支持导入 Design System 并在新建项目时选择导入，保留 Claude Design 的导入/编译方式，命令 npx skills add JimLiu/baoyu-design（便于把 LLM-driven 设计流整合到本地工作流）。\n- Claude Fable 5 / Mythos 5（Anthropic 新发布）：同一底座，Fable 5 加安全分类器对公众开放、Mythos 5 去掉部分限制供合作伙伴使用；并引入 30 天流量保留用于安全监控。\n\n**核心观点/方法论**（如有）\n- AI‑native 产品要独立设计：不要用已有的 RPV（资源/流程/价值）思路强行套旧产品，最好做接近完全独立的 AI app，以避免兼容性和体验上被现有体系“锁死”。\n- less is more，保持克制：避免把用户全部生活塞进一个产品，过度侵入会导致用户厌恶或恐惧，影响留存和增长。\n- 安全降级优于直接拒绝：用分类器检测风险并在必要时降级到更保守的模型回答，同时告知用户，是一种更平衡的风险管理方式。\n- 留存与隐私需权衡：Anthropic 的 30 天流量保留用于安全监控，企业用户要评估这对合规和信任的影响。\n\n**实践经验/案例**（如有）\n- baoyu-design 实践：实现过程比预期复杂，但效果好，可通过交互让用户选择已导入的 Design System，提升设计→代码闭环效率。\n- 大规模代码迁移：Stripe 用 Fable 5 在一天内完成 5000 万行 Ruby 库迁移，说明新模型在代码理解与大规模改造上的显著效率提升。\n- 视觉与逆向工程能力：Fable 5 能从截图还原 Web 应用源码、在视觉任务上只用基础接口就推进复杂流程，工具化能力增强。\n- 生命科学加速：Mythos 5 在药物设计/基因组学任务中显著加速部分环节（报道约 10x 加速），并在小体量资源下达成高于传统论文模型的效果。\n- 成本与使用注意：Fable/Mythos 的 Token 成本明显高于 Opus 4.8，且消耗快；在免费或低费窗口使用前应评估成本、速率限制和降级误报对产品体验的影响。",
+  "metadata": {
+    "original_tweets": 6,
+    "retweets": 3,
+    "media_tweets": 3,
+    "data_hash": "e70de4b4",
+    "user": "dotey"
+  }
+}

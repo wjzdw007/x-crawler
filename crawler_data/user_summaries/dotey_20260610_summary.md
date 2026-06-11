@@ -1,0 +1,22 @@
+**新工具/技术**
+- Claude Fable 5 / Mythos 5：Anthropic 最新两款模型，Fable 对外带分类器降级到 Opus 4.8 以保证安全，Mythos 去掉部分限制供合作方使用。  
+- Opus 4.8：作为降级后或低成本替代的基础模型，dotey 认为在 UI/UX 设计场景已经足够好。  
+- Claude Design：基于浏览器+虚拟机的设计型 Agent Harness，内置多工具（约45 个）和 skills（约24 个），用于界面原型、交互与迭代。  
+- Claude Code / Agentic Loop（转发内容）：强调“loop/routine 驱动 agent”的实践，用多个自动化 routine 并行运行和路由任务以提升规模化能力。  
+- Design System / Markup / Edit / Tweaks（功能集合）：Design System 固定风格、Markup 做局部评论修改、Edit 做 DOM/树形调整、Tweaks 试风格与导航配置，都是 Claude Design 的核心交互手段。
+
+**核心观点/方法论**
+- 在 UI/UX 场景不必盲目追新模型：dotey 结论是 Claude 4.8 在 UI/UX 设计上已“够用”，Fable 5 并未带来明显提升，这提醒我们用一致的验收标准比较模型更可靠。  
+- 以 Design System 为基准能避免“AI 味”：固定组件库/设计系统可以把模型输出约束到可复现的风格与规范上，便于审查和维护。  
+- 迭代优于一次成型：先搭骨架、小步快跑，通过聊天框/Markup/Edits 逐步完善，比一次要求完美更高效。  
+- 把规则写成 skill 而非即时纠正：在 agent 化流程中，不纠正单次输出，而是把常见错误固化为规则或 CLAUDE.md，可以让 agent 长期稳定运行。  
+- 上下文与会话管理重要：左侧对话不是无限上下文，新任务要新会话以避免上下文膨胀导致错误或性能问题。  
+- 安全与隐私是折衷：Fable/Mythos 级模型将强制保留流量 30 天用于安全监控（Anthropic 承诺不用于训练），企业需评估合规风险。
+
+**实践经验/案例**
+- 实战指标：Stripe 用 Fable 在 5000 万行 Ruby 代码库做全库迁移，一天完成（原需数月），展示了大模型在代码迁移上的高效。  
+- 生命科学示例：Mythos 在蛋白质与基因组学任务上显著加速（蛋白质设计环节约 10 倍，基因组学训练效果超越更大模型），说明专用配置能带来行业级收益。  
+- Claude Design 使用建议：dotey 偏好先设置 Adobe Spectrum 等 Design System，先线框后高保真，必要时让 Claude 写 PRD 再二次创作，能提高产出质量和可复用性。  
+- 编辑流程细节：Markup 便于局部评论修改但不能附图，Edit 可直接修改元素树，Tweaks 用于快速尝试主题/导航，组合使用减少 token 消耗并加速迭代。  
+- 性能与成本权衡：在 Claude Design 中做设计通常更省 token（专用 harness 少无关调用），但响应速度比本地慢（浏览器↔虚拟机交互开销）。  
+- Agent 化治理：从 Claude Code 的复盘看，规模化 agent 需用大量执行轨迹训练分类器并用红队把漏洞转化为 eval，才能放心把 routine 放手运行。

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 224220,
+    "followers_count": 224248,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260611",
-  "last_updated": "2026-06-11T00:47:54.125512",
-  "tweet_count": 2,
+  "last_updated": "2026-06-11T03:10:11.668723",
+  "tweet_count": 6,
   "tweets": [
     {
       "id": "2064863783349317762",
@@ -38,6 +38,139 @@
         "retweet_count": 0,
         "favorite_count": 1,
         "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2064876738161651846",
+      "text": "11. 使用 CLAUDE.md\n\n可能很多人不知道 Claude Design 是支持 CLAUDE.md 文件的，你可以通过左侧聊天窗口初始化 CLAUDE.md ，把一些需要反复叮嘱的事情放到里面，和在 Claude Code 里面用 CLAUDE.md 一样的 https://t.co/vAZMi0OCsh",
+      "created_at": "Thu Jun 11 01:05:52 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2064876124723621888",
+          "url": "https://pbs.twimg.com/media/HKfp5S9WMAATF7I.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2064904545298194855",
+      "text": "这段视频展示了一个极其前沿且硬核的视频制作方式：视频完全没有使用传统的非编软件（如 Premiere 或 Final Cut），而是由 Claude Code 配合 Fable 5 通过全自动编写代码和调用命令行工具“剪辑”而成的。\n\n整个工作流被抽象成了一个软件工程项目，主要包含以下几个关键步骤：\n\n1. 全量语音转写与时间戳打点 (Whisper)： 将拍摄的 25GB 原始素材（17个 Take，4个场景）交给本地运行的 Whisper 模型。模型不仅输出了文本，还生成了精确到毫秒级的单词时间戳 JSON 文件。\n\n2. AI 智能挑选最佳镜头 (Subagents)： 多个 Subagent（子智能体）基于生成的 JSON 文件，自动分析并剔除了包含“嗯”、“啊”等停顿词的废片，选出了表达最清晰、结尾最干净的备选片段。\n\n3. FFmpeg 自动粗剪： 将 AI 挑选出的最终片段生成一个决策 JSON 文件，然后直接通过代码调用 ffmpeg，将这些片段无缝拼接到一起，完成第一版粗剪。\n\n4. 纯代码自定义调色 (Color Grading)： AI 从零开始手写了 LUTs（色彩查找表）代码，并且为了方便人类介入，它还自动生成了一个带有滑块的 HTML 网页，让人类可以通过拖拽滑块直观地调整色温、亮度和对比度，调好后的参数会直接传回代码中。\n\n5. React 组件化动画制作 (Remotion)： 并没有使用 After Effects。AI 将原本静态的图形文件转写成了基于 React 的 Remotion 动画组件。利用第一步生成的单词时间戳，AI 实现了极其精准的“卡点”——当作者念出特定的词（如 \"right\"）时，UI 动画会自动触发，完全不需要手动对齐时间轴。\n\n6. Figma MCP 协作打磨： AI 将生成的画面导出到 Figma 中，让人类设计团队进行排版和视觉优化。人类修改完毕后，AI 再通过 MCP（模型上下文协议）将 Figma 的最新设计自动“抓”回代码里，最终渲染出 4K 24fps 的成片。",
+      "created_at": "Thu Jun 11 02:56:22 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2064826394589442448",
+        "text": "Lots of people asked how I used Fable to edit its own launch video so I made a video about that!\n\nTLDR it wrote a lot of code &amp;  tool calls to use transcription services, ffmpeg, do colorgrading, use the figma mcp, make remotion UI and render it. \n\nI didn't touch a video editor. https://t.co/hJRdJye5Fy",
+        "created_at": "Wed Jun 10 21:45:49 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2064825703275859968",
+            "url": "https://video.twimg.com/amplify_video/2064825703275859968/vid/avc1/1740x1080/L8R-kjmE84hGeMrO.mp4?tag=27",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "352806502",
+          "name": "Thariq",
+          "screen_name": "trq212",
+          "description": "Claude Code @anthropicai.   prev YC W20, @southpkcommons, @medialab",
+          "followers_count": 277655,
+          "friends_count": 1870,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 239,
+          "favorite_count": 4207,
+          "reply_count": 159,
+          "quote_count": 63
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 15,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2064905536592568789",
+      "text": "手绘卡通风格\nhttps://t.co/zJ616PgtJ3 https://t.co/ahotkzWIit",
+      "created_at": "Thu Jun 11 03:00:18 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2064905499603046400",
+          "url": "https://pbs.twimg.com/media/HKgEnI6XEAAg_ZA.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2064898445694087679",
+        "text": "@dotey 这张图叫做什么画风？很喜欢",
+        "created_at": "Thu Jun 11 02:32:08 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2040058982258057218",
+          "name": "范师傅",
+          "screen_name": "FanShifu",
+          "description": "35岁 Non-coder 独立开发｜AI出海 × 一人公司\n\n上一段：逃离体制，卷国内电商（单人单月GMV 60万+）\n小红书2个月跑通变现5万\n\n每周复盘：产品·增长·心态·变现\n🛠️真实第二曲线路径 → 💰",
+          "followers_count": 314,
+          "friends_count": 99,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2064907115223720355",
+      "text": "DeepSeek 招 Agent Harness 研究员，能是世界范围内第一次招聘“Harness研究员” \nhttps://t.co/FEDd5AAxz0\n\n● 招聘岗位：Agent Harness 研究员（实习/全职）\n● 工作性质：全职 | 实习\n● 工作地点：浙江·杭州市 / 北京市\n\n================================\n\n【团队使命】\nModel + Harness = Agent\n我们正在把 DeepSeek 的前沿模型能力，转化为领先的 Agent 产品。这其中除模型本身以外的所有工作，都属于 Harness 的范畴。\n你将加入 Harness 团队，与研究员、工程师、产品经理紧密协作，探索 Harness 领域的研究前沿，定义 DeepSeek 对 Harness 的理解。\n\n================================\n\n【主要职责】\n- 前沿创新：与 Harness 团队的研究员与工程师深度沟通、紧密合作，共同定义和实现 Harness 领域基于模型能力的前沿创新，包括但不限于上下文管理、长期记忆、Subagent 与 Multi-Agent、自进化 Agent 等领域。\n- 深度适配：与模型训练团队的研究员与工程师深度沟通与合作，实现模型与 Harness 的共同进化，从 Harness 的角度实现 DeepSeek 的 Harness 与模型的深度适配。\n- 评测构建：提出 Harness 领域的基准测试与评测方法，构建评测基准数据和制定数据标注策略，从 Harness 的角度研究并优化 Agent 在各领域的智能水平。\n- 真实迭代：以真实世界的任务作为 Harness 研究的重要反馈源，设计相关数据与实验，持续迭代 Agent 能力在真实使用场景下的表现。\n- 用户优化：基于团队收集到的用户反馈，从 Harness 的角度研究并优化为最广大用户解决真实场景问题的能力。\n\n================================\n\n【任职要求】\n- 科研背景：硕士学历及以上，2年以上计算机科学或相关领域的科研经验，水平过硬，眼界广阔，有科研品味；在计算机科学领域具有含金量的论文发表（特别优秀候选人可放宽学历及年限要求）。\n- 独立推进：面对问题能够独立分析并提出自己的 idea，具备从 0 到 1 推动研究的能力；能够快速将想法转化为可运行的原型，具备高效的实验迭代能力。\n- 全栈开发：熟练使用 AI Agent 工具进行软件开发，在软件开发领域具有极强的学习能力；能够在 AI 辅助下，在没有直接经验的领域（如语言、技术、框架等）进行研究目的的编程工作。\n- 重度用户：是 Agent 产品的高强度用户，对 Agent Harness 的开发和研究有极大的热情，对模型行为有品味有判断力；深度使用过代码类及通用类 Agent 产品，并将相关产品的使用融入到自己的工作和生活中。\n- 知识储备：熟悉 LLM 以及 Agent 基本机制及其技术原理（包括 LLM API、KV Cache、Agent Loop、Tool Use、Reasoning、Planning、Skills、MCP、Memory、Subagent、Multi-Agent 等）；对 Prompt Engineering、Context Engineering、Harness Engineering 等课题有深入的理解。\n- 沟通能力：具备良好的中文沟通能力。\n\n================================\n\n【加分项】\n- AI 领域相关科研经验，或 AI 行业的研究员任职经验。\n- 拥有个人开源作品，或对开源社区有深度贡献。\n- 在计算机科学领域、编程领域、或数据科学领域获得过具有含金量的比赛奖项。\n- 其它超乎常人的与此工作相关的才能。",
+      "created_at": "Thu Jun 11 03:06:35 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2064906522941894656",
+          "url": "https://pbs.twimg.com/media/HKgFitJWsAAO9En.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

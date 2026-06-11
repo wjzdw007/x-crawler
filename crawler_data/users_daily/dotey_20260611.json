@@ -1,0 +1,45 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 224220,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260611",
+  "last_updated": "2026-06-11T00:47:54.125512",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2064863783349317762",
+      "text": "9. 设计结果要用版本管理起来\n\nClaude Design 交付的结果是 HTML + CSS + React + data.js，通过 CSS 一下就可以看清楚设计系统的颜色系统、尺寸规范，通过 React 可以看清楚组件结构，通过 data 可以知道数据结构什么样子。\n\n这几个组合可比 figma 对于 AI 来说友好多了，尤其是 data.jsx，这是一般的设计 App 不会有的，但对开发特别重要的。\n\n还有一个优势就是交付的结果都是文本格式的，可以一起提交到 git 做版本管理，用 git diff 就可以清楚的让 AI 知道设计稿修改了什么。\n\n所以我每次都是下载 zip，本地解压缩后放到项目中，替换项目中旧的版本，配合 git 很好跟踪设计变更。",
+      "created_at": "Thu Jun 11 00:14:23 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2064864295540728054",
+      "text": "10. 把 Claude Design 当做唯一设计源\n\n设计好了，在开发的时候做调整很正常，但是一定要先改设计稿，再改代码。哪怕临时改了代码，也要在设计稿那边同步一下，不然时间一长两边的版本就无法同步了。\n\n好的设计同步流程应该是单向的：Claude Design -&gt; Code",
+      "created_at": "Thu Jun 11 00:16:26 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    }
+  ]
+}

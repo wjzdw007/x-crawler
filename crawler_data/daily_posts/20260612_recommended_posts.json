@@ -1,12 +1,129 @@
 {
   "date": "20260612",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-12T05:37:09.729820",
-  "tweet_count": 204,
-  "unique_tweet_count": 204,
+  "last_crawl_time": "2026-06-12T07:39:10.954696",
+  "tweet_count": 206,
+  "unique_tweet_count": 206,
   "total_crawled": 404,
-  "duplicates_removed": 200,
+  "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2065331212793549046",
+      "text": "RT @XFreeze: Grok Build just got a major update with a ton of new features and improvements\n\nRelease Notes: v0.2.51\n\nBreaking Changes:\n• gr…",
+      "created_at": "Fri Jun 12 07:11:47 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2065327439476375760",
+        "text": "Grok Build just got a major update with a ton of new features and improvements\n\nRelease Notes: v0.2.51\n\nBreaking Changes:\n• grok mcp add now accepts positional arguments (e.g. grok mcp add filesystem -- npx ...), supports --scope project, and adds -e/-H flags for env/headers.\n\nFeatures:\n• Mermaid flowcharts now render subgraph blocks as titled frames with correct internal and cross-boundary edges.\n• Class diagrams in Mermaid now render as proper UML boxes with attributes, methods and inheritance arrows instead of raw source.\n• Permission prompts now accept a double-click on an option to submit it, matching the existing Enter and number-key shortcuts.\n• New /code-review slash command now ships with the CLI and is always available\n\nBug Fixes:\n• Plan mode exit reminders no longer appear after the model has already started implementing the plan.\n• Expanded thinking blocks in scrollback now remain expanded when the agent finishes them.\n• grok update no longer downloads the same binary twice when multiple updaters or leader checks run concurrently.\n• Background task IDs after /compact are now shown verbatim so the model can reference them correctly in later tool calls.\n• Typing / while scrollback is focused now focuses the prompt and opens the slash-command dropdown.",
+        "created_at": "Fri Jun 12 06:56:48 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2065326542394474496",
+            "url": "https://pbs.twimg.com/media/HKmDjDibwAAac2l.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2064819487837401199",
+          "text": "Grok Build just got another update with improvements on reliability, stability, and developer experience\n\nRelease Notes: v0.2.45\n\nFeatures:\n• Mermaid diagrams now render to images when you click Open in a code block (enabled by default)\n\nBug Fixes:\n• Fixed rare conversation corruption when skills changed while a tool call was still running\n• Fixed grok --resume failing on empty image-only session folders left by cross-directory pastes\n• Fixed pasted images and relative paths using the wrong directory after resuming a session from another folder\n• Welcome screen logo no longer renders as invalid characters on legacy Windows command prompts and PowerShell\n• Fixed \"unknown session id\" errors that occurred after the leader process crashed or was killed",
+          "created_at": "Wed Jun 10 21:18:23 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2064818810184761344",
+              "url": "https://pbs.twimg.com/media/HKe1xJqbgAAYQLy.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1818311005698678784",
+            "name": "X Freeze",
+            "screen_name": "XFreeze",
+            "description": "",
+            "followers_count": 233077,
+            "friends_count": 1871,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 8,
+            "favorite_count": 85,
+            "reply_count": 15,
+            "quote_count": 2
+          }
+        },
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 233077,
+          "friends_count": 1871,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 88,
+          "favorite_count": 447,
+          "reply_count": 177,
+          "quote_count": 4
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240189865,
+        "friends_count": 1353,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 88,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2065317926668833238",
+      "text": "Good interview  https://t.co/IoiIJPLnXG",
+      "created_at": "Fri Jun 12 06:19:00 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2065203628135297024",
+          "url": "https://video.twimg.com/amplify_video/2065203628135297024/vid/avc1/1920x1080/PJWZRFhP6yOFg3p2.mp4?tag=27",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240189865,
+        "friends_count": 1353,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1037,
+        "favorite_count": 7178,
+        "reply_count": 1585,
+        "quote_count": 64
+      }
+    },
     {
       "id": "2065253289751359566",
       "text": "一竿一线一山水，一漂一钩一逍遥。\n鱼咬不咬随它去，坐看云起日头高。\n\n一杯一椅一 Agent，一聊一等一逍遥。\n跑完没跑不必盯，起身续水伸个腰。 https://t.co/yI43oJLNGX",

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 224985,
+    "followers_count": 225002,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260613",
-  "last_updated": "2026-06-13T22:25:38.964169",
-  "tweet_count": 7,
+  "last_updated": "2026-06-14T00:47:39.868068",
+  "tweet_count": 9,
   "tweets": [
     {
       "id": "2065648410640748583",
@@ -276,6 +276,111 @@
         "favorite_count": 30,
         "reply_count": 7,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2065940342264770589",
+      "text": "举一个具体的用 Claude Design 更新设计和代码的例子\n\n我有一个视频字幕编辑器工具，是 Claude Design 做的设计，之前标题文字和下面的信息是放在一行，标题一长就放不下，于是我就让它变成两行。\n\n图1 是我在设计稿上做的修改，修改好了后导出下载 zip 文件，放到项目中，用 git diff 很容易看到做了哪些变更（图2）\n\n然后一句简单的提示给 Claude Code：\n> 参考设计稿 design 目录下的相关变更，对 UI 进行变更\n\nClaude 自己通过 git diff 去分析变更，然后找出所有设计稿修改了的位置，自己帮我修改了相应的 Swift 代码，任务完成！（图4是修改后的效果）\n\n全程我主要是在 Claude Design 上修改，然后需要手工去同步一下。",
+      "created_at": "Sat Jun 13 23:32:15 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2065940248375246848",
+          "url": "https://pbs.twimg.com/media/HKuxtceWwAAApn-.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2065940265777381376",
+          "url": "https://pbs.twimg.com/media/HKuxudTWQAAY0d1.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2065940294583947264",
+          "url": "https://pbs.twimg.com/media/HKuxwInXkAASNEK.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2065940329425940480",
+          "url": "https://pbs.twimg.com/media/HKuxyKaWMAAnfBL.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2065874894563463660",
+        "text": "为啥 Codex 还不推出类似 Codex Design 的产品？\n\nAnthropic 最近推出了 Claude Design，是我除了编程之外用得最多的 Agent，也推荐过很多次。效果真的好：你用一句话描述想要的 App，它直接给你生成一个可交互的原型，点哪哪都有反应，不仔细看还以为在操作真实的 App。\n\n有网友问：为啥 Codex 还不推出类似 Codex Design 的产品？\n\n简单来说，GPT-5.5 的模型能力还做不好这件事。但要解释清楚为什么，得先理解一个关键区分。\n\n【1】Agent 的两层：模型和 Harness\n\n很多人把 Codex、Claude Design 和 GPT-5.5、Claude Opus 4.8 混在一起说，其实它们是完全不同的两层。\n\nClaude Design 和 Codex 是\"产品层\"，业界叫 Harness，包括提示词、工具链、UI 交互流程这些工程层面的东西。Claude Opus 4.8 和 GPT-5.5 是\"模型层\"，是真正干活的大脑。\n\n打个比方：Harness 是厨房，里面有锅碗瓢盆（工具）和菜谱（Skills），模型是厨师。同一套厨房，换个厨师，做出来的菜完全不一样。\n\n理解了这个区分，后面的事情就好说了。\n\n【2】Harness 不是门槛\n\nClaude Design 的 Harness 层技术上不复杂。花点心思逆向一下，提示词、工具代码几乎都可以拿到。我已经做过了，成果在 baoyu-design（https://t.co/8zkHcKlfWP），可以借助 Skill 把 Claude Design 在其他模型上运行。工程上没秘密。\n\n真正拉开差距的是背后的模型。\n\n【3】高精度可交互原型，难在模型\n\nClaude Design 这个名字容易让人误解，以为交付的是 Figma、Photoshop 那样的静态设计图。实际上它交付的比 Figma 更进一步，是融合了设计稿和原型的高精度可交互原型：你不光能看到设计，还能直接上手操作。\n\n这对模型的要求很高。\n\n举个例子。我要做一个类似 X/微博的客户端。让模型画一个好看的静态界面，很多模型都做得到。但要让这个界面能交互就复杂了：切换不同 Timeline，展示不同类型的推文（文本、图片、视频），点赞要变红心，删推要从列表消失，从列表点进详情再返回，状态还要保持住。\n\n要做到这些，模型必须在动手画 UI 之前，先把整套数据结构和状态管理想清楚：tweet 长什么样、timeline 有哪几种、每个按钮当前是什么状态、状态之间怎么联动。这是系统架构设计的活，不是画 UI 的活。\n\nClaude Design 对模型的要求，是同时具备优秀的 UI/UX 设计能力和系统架构设计能力，缺一个效果就大打折扣。这也是为什么我之前反对只产出纯 HTML 的设计稿，那只是静态的 UI 设计，没有融合 UX 交互。\n\n有条件的话可以自己测试感受一下。比如用这个提示词：\n\nDesign a X Client for Mac, similar to Tweetbot for Mac from Tapbots\n\n同样的提示词让 Codex 去做，也能出个东西，能看，也能简单交互。但对比一下就知道差距了：列表能滚动，sidebar 不能点；点赞按钮没反应。来回迭代好几轮，才能达到一个勉强凑合的水平。\n\nClaude Design 做出来完全不一样。从 Timeline 切到通知页，从列表点进详情再返回，全程流畅，状态都保持住了。不仔细看真以为在操作一个完成度很高的 App，虽然数据都是模拟的。\n\nClaude Opus 4.8 显然在设计和架构这类场景上做了大量训练和优化。\n\n【4】产出物就是代码\n\n去看 Claude Design 的产出物，注意里面的 data.jsx 文件。它把整个设计的数据结构定义得很清晰，基于这个结构模拟了一套完整数据，然后用 React 在这套数据上构建 UI。\n\n设计产物本身就是代码（React、CSS、JSON），不是 Figma 或 PSD，任何开发者拿到都能直接看出按钮的圆角、主色、间距，照着自己的技术栈实现就行。后续设计变更？git diff 一看就知道改了什么。设计和开发之间的沟通损耗降到了最低。\n\n说得不严谨，应该说设计 Agent 和开发 Agent 之间的沟通损耗很低了。现在都是人在指挥 Agent 去设计，人指挥 Agent 写代码了。\n\n【5】怎么用好 Claude Design\n\n很多人不知道该怎么用好 Claude Design，其实有点像 Vibe Coding：有个基本的想法，先让它做一个版本出来，然后通过 Chat 去指挥 Agent 帮你改，调整几个版本你的思路就清晰了。\n\n整个调整的过程非常神奇，有一种\"言出法随\"的感觉，你想让它怎么改它总能给你实现出来。这也是为啥我现在很痴迷用 Claude Design，反馈来得太快太过瘾了。\n\n还有一个小技巧：不要说太具体的要求，而是说你的目标是想要什么，让它自由发挥。往往能得到更好的效果，毕竟它训练过几乎所有公共的 UI 设计。\n\n回到最初的问题。Codex 不推类似的设计产品，是因为 GPT-5.5 还扛不住这个活。画个好看的界面很多模型都行，难的是在动手之前把数据结构、状态管理、交互逻辑都想清楚，然后一次性交付一个完整的可交互原型。\n\n目前只有 Claude 的模型做到了。至于能领先多久，就看 OpenAI 或者其他家后面模型的进化速度了。",
+        "created_at": "Sat Jun 13 19:12:11 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2065874599502376960",
+            "url": "https://pbs.twimg.com/media/HKt2ALXXcAA-iqw.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 225002,
+          "friends_count": 1670,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 22,
+          "favorite_count": 131,
+          "reply_count": 23,
+          "quote_count": 5
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 23,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2065940990670614874",
+      "text": "模型能力才是王道，如果模型能力差不多，自然是 Codex 胜出，模型能力有差距的时候我宁可麻烦一点手动操作\nhttps://t.co/Ms3InQB7fz",
+      "created_at": "Sat Jun 13 23:34:50 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2065935578751709499",
+        "text": "@dotey 因为codex browser内建的前端修改功能比claude design强。 跟我一起合作的设计师都觉得claude design是网页版这件事极反常理。 他就应该跟coding agent做在一起。",
+        "created_at": "Sat Jun 13 23:13:19 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1992678247050457088",
+          "name": "Axi",
+          "screen_name": "Xxi5olc",
+          "description": "Technologist, Product Designer",
+          "followers_count": 100,
+          "friends_count": 710,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 2,
+        "reply_count": 2,
+        "quote_count": 0
       }
     }
   ]

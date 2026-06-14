@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 225002,
+    "followers_count": 225025,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260614",
-  "last_updated": "2026-06-14T00:47:39.867124",
-  "tweet_count": 1,
+  "last_updated": "2026-06-14T03:10:56.852821",
+  "tweet_count": 3,
   "tweets": [
     {
       "id": "2065948642301685829",
@@ -48,6 +48,95 @@
         "favorite_count": 7,
         "reply_count": 2,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2065980545645895966",
+      "text": "精细调整字型字号颜色，确实是设计师的日常。但我觉得用 AI Agent 辅助设计之后，修改的方式也得跟着变：\n\n1、设计系统要用起来\n\n为什么需要手动精调字型字号、颜色？很多时候是因为没有统一的设计系统做规范。如果有配套的设计系统，按钮圆角、字号、间距都有严格定义，生成时不会出现 3px、5px 这种随意值。就算偶尔有偏差，让 Agent 遵循设计系统去修改就行，极少需要人工微调。\n\n2、设计师变成设计经理\n\n不再亲自调像素，而是用文字指令指挥 Agent 去改。Opus 4.8+ 结合设计系统，基本做到\"言出法随\"，不太会偏出你的要求。\n\n3、方向和验收还是人的活\n\n虽然执行交给了 Agent，但大方向还是人来把关，告诉 Agent 该怎么调整，调完检查结果是否符合预期。Agent 干活，人做判断。",
+      "created_at": "Sun Jun 14 02:12:00 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2065980378410524672",
+          "url": "https://pbs.twimg.com/media/HKvWNUgWIAABmAv.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2065980425386749952",
+          "url": "https://pbs.twimg.com/media/HKvWQDgWcAAixwv.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2065976298409746510",
+        "text": "@FanVancoo @dotey 你说的对。 绝大部分时候设计师还是需要对字型字号，图形颜色做精确调整的。不是什么都适合用claude design码字描述",
+        "created_at": "Sun Jun 14 01:55:08 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1992678247050457088",
+          "name": "Axi",
+          "screen_name": "Xxi5olc",
+          "description": "Technologist, Product Designer",
+          "followers_count": 102,
+          "friends_count": 712,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 7,
+        "reply_count": 8,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2065991056261312674",
+      "text": "模型是根本，Harness层相对好补齐，但Harness这层不需要太多垂直领域的，Claude Design 很快就会合并到 Claude Desktop，Codex 在下一代或者几代模型能力够了后，会在 Codex App 直接以 Plugin 集成 Codex Design",
+      "created_at": "Sun Jun 14 02:53:46 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2065984325900976130",
+        "text": "@dotey 模型能力与Harness是相辅相成的。\n宝玉这篇对这两个的解释太通透了。另外，宝玉怎么看开源的Open Design之类的？如果他用上了Claude Code的模型，是否也能达到类似的工程能力呢？",
+        "created_at": "Sun Jun 14 02:27:02 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1923215615227199489",
+          "name": "赖叔 | LaiShu.ai",
+          "screen_name": "hiheimu",
+          "description": "前制造业 IT 研发经理｜曾带百人团队\n记录重返 AI 时代的学习、思考与判断\nAI in use · thinking out loud",
+          "followers_count": 1304,
+          "friends_count": 497,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 0,
+        "quote_count": 0
       }
     }
   ]

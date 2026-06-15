@@ -1,0 +1,93 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 225153,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260615",
+  "last_updated": "2026-06-15T00:49:46.368082",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2066313246340960590",
+      "text": "RT @dongxi_nlp: https://t.co/4OzOCyqB3C",
+      "created_at": "Mon Jun 15 00:14:02 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": {
+        "id": "2066290950352081336",
+        "text": "https://t.co/4OzOCyqB3C",
+        "created_at": "Sun Jun 14 22:45:27 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1477948736156454913",
+          "name": "马东锡 NLP",
+          "screen_name": "dongxi_nlp",
+          "description": "Prev. PhD @Stockholm_Uni | Alumni @KTHuniversity @uppsalauni Sharing insights on AI, autonomous agents, and large language & reasoning models",
+          "followers_count": 39660,
+          "friends_count": 1006,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 6,
+          "reply_count": 0,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2066314944950268139",
+      "text": "我在做 baoyu-skills 时，做了一个尝试，就是用了一个 EXTEND.md 文件保存用户自定义设置，当时我想的是 Agent 读起来方便。\n\n但是这导致一个问题，Markdown 不是严格的结构化数据，LLM 自己读取没问题，但是程序解析很困难，另外格式很难严格保持一致性。\n\n如果让我再设计的话，我会更倾向于用 json 或者 yaml 文件格式作为 Skill 的扩展配置，这样既可以让 LLM 方便读取，也可以用代码解析和保存。",
+      "created_at": "Mon Jun 15 00:20:47 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2066290950352081336",
+        "text": "https://t.co/4OzOCyqB3C",
+        "created_at": "Sun Jun 14 22:45:27 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1477948736156454913",
+          "name": "马东锡 NLP",
+          "screen_name": "dongxi_nlp",
+          "description": "Prev. PhD @Stockholm_Uni | Alumni @KTHuniversity @uppsalauni Sharing insights on AI, autonomous agents, and large language & reasoning models",
+          "followers_count": 39660,
+          "friends_count": 1006,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 6,
+          "reply_count": 0,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 14,
+        "reply_count": 6,
+        "quote_count": 0
+      }
+    }
+  ]
+}

@@ -1,12 +1,272 @@
 {
   "date": "20260616",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-16T03:11:16.096326",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
+  "last_crawl_time": "2026-06-16T05:52:13.993200",
+  "tweet_count": 205,
+  "unique_tweet_count": 205,
   "total_crawled": 400,
-  "duplicates_removed": 200,
+  "duplicates_removed": 195,
   "tweets": [
+    {
+      "id": "2066760560109351251",
+      "text": "RT @perrymetzger: In the ancient world, the way many people gained great wealth was by forming gangs of strong men, beating up their neighb…",
+      "created_at": "Tue Jun 16 05:51:30 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2066639370489413900",
+        "text": "In the ancient world, the way many people gained great wealth was by forming gangs of strong men, beating up their neighbors, and taking their stuff. \n\nPeople still speak with admiration of men like Alexander the Great and Julius Caesar, but they were little better than gangsters who enriched themselves through armed robbery.\n\nThis was a negative sum game, and assured that people remained poor and unhappy for thousands of years.\n\nEventually, however, we figured out that respecting each other’s rights, building things, and trading meant that we could play positive sum games instead. We could increase the amount of wealth, and all would benefit. As a result, we moved from living in unheated shacks to living in what our ancestors would’ve thought of as paradise in only a few hundred years.\n\nHowever, there are still people out there who think that beating someone up and taking their stuff is a really great idea.\n\nIt is the great task of our civilization to shun such people, as they are not fit to be part of society.",
+        "created_at": "Mon Jun 15 21:49:56 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2065488539802821041",
+          "text": "If we liquidated Elon Musk as a financial entity we could each pocket $3,000. Just putting that out there. 3K. Not bad.",
+          "created_at": "Fri Jun 12 17:36:57 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "2019138239844470785",
+            "name": "they/them might be giants ☭",
+            "screen_name": "babadookspinoza",
+            "description": "My old account was hacked. Communist (ML☭), anti-imperialist. they/them. For mutuals: @dookwithatwist. Find my work @LOMatEotW. Venmo/Cashapp: claymationary :)",
+            "followers_count": 5720,
+            "friends_count": 1443,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1263,
+            "favorite_count": 22621,
+            "reply_count": 1089,
+            "quote_count": 312
+          }
+        },
+        "user": {
+          "id": "127100323",
+          "name": "Perry E. Metzger",
+          "screen_name": "perrymetzger",
+          "description": "Mad Scientist, Bon Vivant, and Raconteur.",
+          "followers_count": 17193,
+          "friends_count": 1229,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 84,
+          "favorite_count": 700,
+          "reply_count": 26,
+          "quote_count": 4
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240278250,
+        "friends_count": 1356,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 84,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2066743786466689117",
+      "text": "导出 PPTX 的原理，也就是 gen_pptx 干的事，本质上就是找个浏览器把你的网页幻灯片真正打开看一遍，再照着搬进 PowerPoint。它在后台悄悄启动一个 Chromium（没有窗口），把你的 HTML deck 当成真网页加载、一页页翻过去——该藏的导航条藏掉、该换的字体换好、图片等加载完。这样它看到的就是幻灯片最终长的样子，而不是去死磕 HTML 代码。\n\n接下来有两条路。截图模式最简单：直接给每一页拍张高清照片，贴成 PPT 的整页背景——长得一模一样，但在 PPT 里改不了字，就是张图。可编辑模式更聪明：它把页面上每个元素的位置、文字、颜色、字体都量出来，然后翻译成 PowerPoint 自己的“积木”——文字还是文字框、方块还是形状、图片还是图片。所以导出后你能在 PPT 里点开继续改。代价是排版可能跟原网页有一点点出入。\n\n最后它用一个叫 PptxGenJS 的工具把这些“积木”拼成 .pptx 文件存下来，顺便做几项体检：比如发现相邻两页截图一模一样，就提示你“翻页脚本可能没生效”；尺寸对不上、备注没抓到也会提示。这些提示就是结果里的 flags，给你判断要不要重导。",
+      "created_at": "Tue Jun 16 04:44:51 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2066743770469527552",
+          "url": "https://pbs.twimg.com/media/HK6MgliWcAAq0Ny.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 225435,
+        "friends_count": 1671,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 5,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2066737885798175022",
+      "text": "导出 PPTX 很简单，只要在会话同一会话里面说导出 PPTX 就好了\n\n导出来的 PPTX 是可以 PowerPoint 打开编辑的 https://t.co/jl9D7W3mqu",
+      "created_at": "Tue Jun 16 04:21:24 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2066737856735854592",
+          "url": "https://pbs.twimg.com/media/HK6HIXKXwAArfL0.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 225435,
+        "friends_count": 1671,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 10,
+        "reply_count": 1,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2066736451404923109",
+      "text": "baoyu-design skill（让你本地运行 Claude Design 的 Skill）更新，本地生成 PPT 的效果，可以借助 Cursor、Codex 内置的浏览器预览 PPT，也可以直接用它们的标记工具修改 PPT 细节。按 F 键可以全屏播放。\n\n还可以导出成可以编辑的 PPTX\n\nhttps://t.co/POuwOWSuwe https://t.co/mue0xL9WTR",
+      "created_at": "Tue Jun 16 04:15:42 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2066714636640997377",
+          "url": "https://pbs.twimg.com/media/HK5yAxkWUAElpLy.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2066716262802014208",
+          "url": "https://pbs.twimg.com/media/HK5zfbfWQAAFF9V.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2066716724494233600",
+          "url": "https://pbs.twimg.com/media/HK5z6TbWcAA1bm1.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2066717120621133824",
+          "url": "https://pbs.twimg.com/media/HK50RXHXQAAQIVu.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2064959133535658144",
+        "text": "baoyu-design skill （让你本地运行 Claude Design 的 Skill）更新，现在支持导入 figma 本地文件（Figma可以保存成 xxx.fig 文件）。比如你有一个设计系统的 Figma 文件，可以根据 Figma 在本地重建一个设计系统，和 Claude Design 在线版一样的效果。\n\n这个功能还挺复杂的，如果没有 Claude Fable 5 帮忙搞不定，就是 Token 不够用 😭\n\n用法很简单，安装 Skill 后，把 Figma 路径发给它，让导入为 Design System，后续新建设计项目都可以用，也可以直接加到项目中。\n\nSkill 地址：https://t.co/d2EaYV6q7j",
+        "created_at": "Thu Jun 11 06:33:17 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2064956283925520384",
+            "url": "https://pbs.twimg.com/media/HKgyzLQXYAAYbq5.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 225435,
+          "friends_count": 1671,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 9,
+          "favorite_count": 86,
+          "reply_count": 54,
+          "quote_count": 0
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 225435,
+        "friends_count": 1671,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 64,
+        "reply_count": 8,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2066721468742881532",
+      "text": "用 Codex 反编译 Codex App 源码😜",
+      "created_at": "Tue Jun 16 03:16:10 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2066716103754273169",
+        "text": "你用codex做的最疯狂的事情是啥？",
+        "created_at": "Tue Jun 16 02:54:51 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "5967912",
+          "name": "Tinyfool",
+          "screen_name": "tinyfool",
+          "description": "Youtuber\n20年老程序员，业已退休，不以写代码为主业。\n不是英语老师，但开发了\"英语轻松读\"，做了广受好评的学习英语的视频。\n心在日本，人目前在天津\nYoutube：\n英语学习之路 https://t.co/fY05anVN8r\n胡说八道 https://t.co/FQLaNWFD5j",
+          "followers_count": 193321,
+          "friends_count": 1004,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 7,
+          "reply_count": 18,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 225435,
+        "friends_count": 1671,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 38,
+        "reply_count": 23,
+        "quote_count": 1
+      }
+    },
     {
       "id": "2066684608226165232",
       "text": "推荐关注 Codex 团队的 jason，这样他能多发一点 Codex 技术内幕文章",

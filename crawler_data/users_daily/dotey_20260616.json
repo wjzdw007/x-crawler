@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 225784,
+    "followers_count": 225801,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260616",
-  "last_updated": "2026-06-16T22:39:58.472933",
-  "tweet_count": 12,
+  "last_updated": "2026-06-17T00:49:14.026570",
+  "tweet_count": 15,
   "tweets": [
     {
       "id": "2066684608226165232",
@@ -436,6 +436,137 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2067027033431875699",
+      "text": "NVIDIA GEAR 实验室发布了 ENPIRE，一套让 AI 编程 agent 自主操控真实机器人做实验的系统。是在真实物理世界里跑，让 AI 自己重置场景、跑实验、判断成败、查论文、改代码、再来一轮，人类只需要早上起来看报告就行。\n\nENPIRE 的全称是 Agentic Robot Policy Self-Improvement in the Real World，由 NVIDIA GEAR 实验室联合 CMU、UC Berkeley 共同开发。Jim Fan 是 GEAR 实验室的联合负责人，他把这个方向叫 AutoResearch，意思是让 AI 来做科研。之前这个概念只在纯数字环境里跑通过，ENPIRE 是第一次把它搬到了物理世界。\n\n系统的运作方式是这样的：给一组 AI 编程 agent 分配一队机器人、一批 GPU 和足够的 token 预算，然后设定一个目标，比如“尽快完成这个任务，让机器人保持忙碌但别出事”。接下来人就可以走了。\n\nagent 会自动做四件事：\n\n1. 搭建环境：包括自动重置场景和自动判断成败\n2. 改进操控策略：从启发式学习到行为克隆到强化学习都会尝试\n3. 在真实机器人上跑实验收集数据\n4. 分析失败原因并迭代改进代码\n\n整个循环完全自主，不需要人参与。\n\nENPIRE 测试了几个相当刁钻的操作任务：把细小的 pin 脚精确插入盒子、穿扎带、用剪刀剪扎带、把 GPU 插到主板上。这些都是需要高精度灵巧操作的任务，不是简单的抓取搬运。最终 agent 自主训练出的策略达到了 99% 的成功率（pass@8 标准）。\n\n项目同时测试了三款编程 agent：\n1. OpenAI 的 Codex（搭配 GPT-5.5）\n2. Anthropic 的 Claude Code（搭配 Opus 4.7）\n3. 月之暗面的 Kimi Code（搭配 Kimi K2.6）。\n\n三家的 agent 都能跑通整个流程，但在不同任务上的研究进展速度有差异。\n\n一个比较有意思的发现是他们所谓的“物理 scaling law”：8 台机器人并行探索，比 1 台或 4 台的研究推进速度快得多。\n\n更多机器人意味着更多并行实验，agent 之间还能互相参考对方的成功策略，类似于多个研究者同时攻关同一个问题。不过扩大规模也有代价，token 消耗会显著增加，而且 agent 花在总结同伴进展上的时间会变多，机器人的实际利用率反而下降。\n\n所有代码会开源，让你在家也能搭一个自运行的机器人实验室，但你至少得有一队机器人臂和一批 GPU。开源本身的意义在于，其他机器人实验室可以直接复用这套 agent 驱动的实验框架，省掉大量人工盯实验的时间。",
+      "created_at": "Tue Jun 16 23:30:22 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2066921736369766762",
+        "text": "Today, we enable AutoResearch in the physical world for the first time! Introducing ENPIRE: we give 8 Codex agents a fleet of robots, an allocation of GPUs, and generous token budget. We set them free with a simple goal: solve the task as quickly as possible, keep the robots busy but stay safe, don't waste precious compute. Make no mistake.\n\nThen humans step aside and our watch begins. The robot fleet starts to come alive: they learn to look for visual clues, reset the scene, practice novel skills, tinker with control stack, read papers online, debate, reflect, get stuck, and try again directly on the hardware. All we did is to give Codex an API to the world of atoms, and the rest is emergence.\n\nENPIRE is able to solve high-precision tasks like tying zip-ties, organizing fine pins, and installing GPUs all by itself. We also discovered a new type of \"physical scaling\": 8 robots exploring in parallel improves significantly faster than fewer ones. \n\nA part of our NVIDIA GEAR lab now self-improves tirelessly over night. We just read the reports in the morning. \n\n/goal: we all take a holiday and Jensen wouldn't even notice ;)\n\nWe will be open-sourcing everything, so you can host your self-running robot lab at home too! Deep dive in the thread:",
+        "created_at": "Tue Jun 16 16:31:58 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2066910077886570496",
+            "url": "https://video.twimg.com/amplify_video/2066910077886570496/vid/avc1/1920x1080/Wn1aQDpM58idppBt.mp4?tag=28",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1007413134",
+          "name": "Jim Fan",
+          "screen_name": "DrJimFan",
+          "description": "NVIDIA Director of Robotics & Distinguished Scientist. Co-Lead of GEAR lab. Solving Physical AGI, one motor at a time. Stanford Ph.D. OpenAI's 1st intern.",
+          "followers_count": 456511,
+          "friends_count": 3133,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 322,
+          "favorite_count": 2085,
+          "reply_count": 74,
+          "quote_count": 72
+        }
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 16,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2067032262537785535",
+      "text": "RT @Suyanzhenq: 一个拼命往自己身上捅刀子的男孩——从人性角度剖析Anthropic Fable 5事件\n\n今天是6月16日，距离美国政府强制Anthropic（简称A社）已经超过96小时，这个事件引起了巨大波澜，也引发了很多对现实政权干预技术和市场的担忧，但是从…",
+      "created_at": "Tue Jun 16 23:51:09 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2067019933834252477",
+        "text": "一个拼命往自己身上捅刀子的男孩——从人性角度剖析Anthropic Fable 5事件\n\n今天是6月16日，距离美国政府强制Anthropic（简称A社）已经超过96小时，这个事件引起了巨大波澜，也引发了很多对现实政权干预技术和市场的担忧，但是从人性角度，这却是一次毫不意外的灰犀牛事件。\n\n在整个事件发生之前的几个月里，我们看到A社 @AnthropicAI ，以及老板 @DarioAmodei 一直在不遗余力地向公众和政府游说Mythos模型的危险性，在把市场的好奇，期待和担忧拉满后，Mythos的安全版Fable上市，毫无意外地出意外了。\n\n在市场前期宣传阶段，这种制造安全焦虑是一种合格的营销策略——效果比Open AI每次以震惊体宣传GPT新模型的效果要好，但却是一把双刃剑：在拉满好奇的同时，招惹来了权力的介入。\n\n我猜出现今天Fable 5被勒令下架的结果，绝对在Dario Amodei的意料之外。但你看从古至今，任何商品的制造者，都无一例外拼命宣传产品优秀和有益的一面，不遗余力地隐藏负面的一面。只有Mythos模型是唯一的例外。\n\n形成这种事态的原因只有一个：Amodei对人性和权力的暗恶一无所知，早年他在百度工作的经历，让他对中国政府深恶痛绝，这种对管制的憎恶我完全赞同，但他的天真之处在于他以为美国政府和中国政府不一样。这种天真可能在民主党的拜登政府不会带来多少祸患，拜登政府是典型的只顾自己捞钱，别的事能少管尽量少管的政府。但Amodei遇到了Trump，一个崇拜强权和管制，致力于扩大美国政府管辖权力的总统，一切就都不同了。\n\nAmodei像一个探测到了金矿的孩子，真诚地到处对每一个人诉说他发现的金矿纯度有多高，储量有多大，兴奋而又忘我，以至于忘记了他自己只是个孩子，他没有能力守护他的发现，周围觊觎他成功的人又太多：举报他的是Anthropic的大股东Amazon的CEO Andy Jessy，Amodei一定很震惊：我的大股东为什么背刺我？？宣判禁令的是美国政府，Amodei再次震惊：美国政府为什么和中国政府的管制手法如出一辙？？？\n\n他还是太天真，太幼稚了，以前他只是作为Open AI的一员，因为不满 @sama 而出走，这些人性中的暗恶和龌龊，博弈与妥协，他都没经历过，他只想安安静静地做研发，然后骄傲地向世界炫耀他的产品。作为一个研究员，这当然是令人向往的生活，但作为一家企业的CEO，身上还会多出许多保护企业的职责。而这种对企业，对产品的保护，其实也是他最讨厌的Sam Altman在做的。\n\n在OpenAI罢免Altman的宫斗剧里，指责最多的，就是Altman善于撒谎，掩饰，伪装。长久做企业的人都知道，这种撒谎，掩饰，伪装，在面对你无法对抗的权力可能带来的干预和伤害的时候，是如此的必要，这是你拥有的唯一的武器——今天Amodei也学到了这一课，并且很快他也会努力学习这种技巧。\n\nDo the right thing 有时候是这么难，让你怀疑你所做的事情是否符合道德。但你看看你的目标，和那些无法逾越的阻碍，你就会默默放下道德包袱，为了成功赌上一切。\n\nSam Altman肯定不是一个道德完人，哪个企业家都不是，如果想做一番事情，就必须舍弃一些东西，他是个善于营销的人，只是你会发现，GPT每次发布新模型，Altman都是毫无销售技巧的“好到令我‘哇’的一声！新模型肯定能帮助到大家”。这营销蠢得要死。然而Altman知道，这才是最好的生存方式：一点一点推进AI，避免引来不必要的麻烦。来自政府的监管——不要以为监管就是好东西，目前人类的治理水平还无法适应AI时代。这种落后的监管终将和技术的进步产生直接对抗，那个时候，积蓄了足够多力量的AI，已经360度全方位改变了社会，才是与政府摊牌，强迫政府进化，催生出更适合AI时代的监管方式的时候。\n\n但现在由于Amodei拼命要唤醒沉睡的利维坦，招致大股东的背叛，并且监管已经到位，Anthropic求仁得仁，正在为这次的鲁莽行动付出代价。\n\n对人性暗恶认识的越深，才能走得越远，人类社会表面上是规则，法律与利益，背后都是人性博弈。",
+        "created_at": "Tue Jun 16 23:02:10 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "913269761735254017",
+          "name": "pippingg",
+          "screen_name": "Suyanzhenq",
+          "description": "From deep ocean, retired old man.",
+          "followers_count": 5266,
+          "friends_count": 1448,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 10,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2067033481142509588",
+      "text": "Codex 操控电脑的三种方式。Codex 团队成员 Jason 今天写了一篇详细指南，把三者的区别和适用场景理清楚了，这里做个精简版。\n\n【1】Computer Use：最广，也最慢\n\nComputer Use 让 Codex 像人一样看屏幕、点鼠标、敲键盘，操作你电脑上的任何图形界面应用。Spotify、Xcode、系统设置、iOS 模拟器，甚至 iPhone Mirroring 都能控制。\n\n代价是慢。结构化插件可以直接调 API，Computer Use 得一步步看界面、找按钮、等响应、再检查结果。但它能搞定没有 API 的应用，这是其他方式做不到的。\n\nMac 和 Windows 的体验差距很大：Mac 上 Codex 可以在后台静悄悄地操作，你继续用自己的电脑不受影响；Windows 上它必须占据前台，操作期间你没法用那台机器。\n\nJason 举了个例子：有次他的快递被偷了，Amazon 说要等 25 分钟才能接通客服。他让 Codex 每五分钟检查一次聊天窗口，客服出现后改为每分钟一次，自动完成退款流程。他去洗了个澡，回来退款已经办好了。\n\n【2】Chrome 扩展：带着你的登录状态\n\nChrome 扩展让 Codex 使用你已登录的浏览器会话，包括 cookies、账号状态和已有标签页。Gmail、LinkedIn、Salesforce、公司内部后台，这些需要登录才能用的工具，Chrome 扩展是对的选择。\n\n它还能同时控制多个标签页，在一个标签里读信息，到另一个标签里对比，再到第三个标签完成操作。Computer Use 也能操作浏览器，但它只认屏幕坐标，Chrome 扩展理解的是浏览器层面的上下文。\n\nJason 用它跑了一个长期任务：每天让 Codex 通过 Chrome 检查他的 Twitter 私信、浏览相关新闻、收集反馈，把有价值的内容存到本地文件，但不发任何消息。\n要注意的是，网站会把 Codex 的点击和表单提交当作你本人的操作。研究、浏览、起草可以自动化，但发送、发布、付款这类操作最好留给自己确认。\n\n【3】内置浏览器：给开发者的沙盒\n\n内置浏览器住在 Codex 的对话线程里，你和 Codex 共享同一个渲染页面。它不带任何登录状态和 cookies，是个完全隔离的环境。\n\n这反而成了开发场景的优势。它的主场是本地开发服务器、文件预览、公共网页、响应式布局检查和视觉 bug 复现。Codex 可以改代码、操作页面、截图、再跑一遍，形成紧密的反馈循环。\n\nJason 最喜欢的功能是标注：你可以直接在页面上点击某个元素留评论，比如\"这个层级反了\"\"这个按钮间距不够\"，Codex 会拿着截图和元素上下文去改代码，改完重新打开同一个页面等你下一轮标注。比来回传截图和文字描述高效得多。\n\n【选哪个？】\n\n简单记：任务需要登录状态用 Chrome，需要操作桌面应用用 Computer Use，在做前端开发用内置浏览器。如果有现成的插件或 MCP 能完成任务，优先用结构化工具，视觉控制是最后手段。",
+      "created_at": "Tue Jun 16 23:56:00 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2067033410426597377",
+          "url": "https://video.twimg.com/amplify_video/2067033410426597377/vid/avc1/1920x1080/eNOjt53UFt9FGILX.mp4?tag=28",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2066970432855581052",
+        "text": "https://t.co/e9PrQGAqZT",
+        "created_at": "Tue Jun 16 19:45:28 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "17203692",
+          "name": "jason",
+          "screen_name": "jxnlco",
+          "description": "everything experience @openai",
+          "followers_count": 104454,
+          "friends_count": 2703,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 19,
+          "favorite_count": 280,
+          "reply_count": 12,
+          "quote_count": 9
+        }
+      },
+      "stats": {
+        "retweet_count": 11,
+        "favorite_count": 70,
+        "reply_count": 11,
+        "quote_count": 2
       }
     }
   ]

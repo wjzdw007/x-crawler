@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-06-17T01:55:55.455454",
+  "tweet_count": 15,
+  "summary": "**新工具/技术**（如有）\n- baoyu-design skill：本地运行的 Claude Design Skill，支持导入本地 Figma (.fig) 文件、在内置浏览器预览设计并导出可编辑的 PPTX。  \n- gen_pptx 导出流程：通过后台无窗口 Chromium 把 HTML 幻灯片完整渲染，再用两种路径生成 PPT（整页截图或解析元素重建），最后使用 PptxGenJS 输出 .pptx。  \n- Claude Code 的 dynamic workflows：多 Agent 编排的工作流能力（但容易产生大量 Agents 与 Token 消耗）。  \n- ENPIRE（NVIDIA GEAR）：Agent 驱动的物理世界 AutoResearch 框架，把编程 agent 接入真实机器人、GPU 与实验预算，实现自主迭代实验并计划开源。  \n- SpaceX 收购 Cursor：战略性并购（600 亿美元全股票），目的是快速进入 AI 编程工具赛道并与自家超算联合训练模型（影响生态与竞品格局）。  \n- Codex 操控电脑的三种方式：Computer Use（视觉级、可控桌面应用）、Chrome 扩展（带登录会话、适合网页/多标签）、内置浏览器（无登录沙盒、适合本地开发调试）。\n\n**核心观点/方法论**（如有）\n- 可编辑性 vs 视觉一致性的权衡：截图模式保证外观一模一样但不可改，解析模式可编辑但排版可能有轻微差异——根据后续编辑需求选策略。  \n- 按场景选接入方式：需要登录/会话用 Chrome 扩展；操作桌面原生应用用 Computer Use；本地开发与可重复调试用内置浏览器。  \n- Agent/并行扩展的双刃剑：更多 agent/机器人能加速探索（物理 scaling），但会显著增加 token/算力消耗并带来协调开销，需度量边际收益。  \n- 成本与可靠性要并重：动态 workflows 或自动化长期任务可能在短时间内产生巨额 token 消耗，应设限与监控。  \n- 政策风险不可忽视：政府对模型出口与部署的干预（如对 Anthropic 的限制）会影响可用性和商业策略，研发与合规要并行。\n\n**实践经验/案例**（如有）\n- baoyu-design 实操：可把设计系统的 Figma 文件导入本地 Skill，重建本地 Design System 并直接生成/预览 PPT，适合离线或内网团队工作流。  \n- gen_pptx 细节：先由 headless Chromium 把幻灯片“看一遍”并翻页，截图模式快速保真，解析模式提取文字/形状后由 PptxGenJS 拼成可编辑 PPT 并给出质量 flags（如重复页、尺寸异常）。  \n- ENPIRE 成果：在高精度装配任务上通过 agent 自主训练达 ~99% 成功率，并观察到 8 台机器人并行显著优于更小规模的推进速度。  \n- Codex 自动化示例：Computer Use 可做无人值守的长时 GUI 任务（示例：自动监测客服窗口并完成退款）；Chrome 扩展适合多标签、带登录的自动化；内置浏览器适合代码—运行—标注—迭代的开发闭环。",
+  "metadata": {
+    "original_tweets": 12,
+    "retweets": 3,
+    "media_tweets": 7,
+    "data_hash": "22a3f4b8",
+    "user": "dotey"
+  }
+}

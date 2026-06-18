@@ -1,12 +1,725 @@
 {
   "date": "20260618",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-18T00:49:32.308785",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-06-18T03:10:33.728655",
+  "tweet_count": 213,
+  "unique_tweet_count": 213,
+  "total_crawled": 400,
+  "duplicates_removed": 187,
   "tweets": [
+    {
+      "id": "2067438979667140620",
+      "text": "https://t.co/ujL9EUqFK4",
+      "created_at": "Thu Jun 18 02:47:18 +0000 2026",
+      "lang": "zxx",
+      "media": [
+        {
+          "type": "video",
+          "id": "1848648724500672512",
+          "url": "https://video.twimg.com/ext_tw_video/1848648724500672512/pu/vid/avc1/1280x720/xBprO0DsNrw4nuSk.mp4?tag=12",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240290852,
+        "friends_count": 1357,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 611,
+        "favorite_count": 5405,
+        "reply_count": 745,
+        "quote_count": 47
+      }
+    },
+    {
+      "id": "2067438023894253721",
+      "text": "RT @XFreeze: Grok Build just got new update with new improvements, features, and bug fixes\n\nRelease Notes: v0.2.55\n\nFeatures:\n• Added optio…",
+      "created_at": "Thu Jun 18 02:43:30 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2067271801877742036",
+        "text": "Grok Build just got new update with new improvements, features, and bug fixes\n\nRelease Notes: v0.2.55\n\nFeatures:\n• Added option to fully disable the hunk tracker via --hunk-tracker-mode, GROK_HUNK_TRACKER, or config.\n\nBug Fixes:\n• Windows install scripts now run cleanly via irm | iex without spurious BOM errors.\n• Tables & wide content no longer leave stray characters next to timestamps in the scrollback.\n• Mermaid diagrams now render node labels cleanly without HTML tags or raw markdown syntax.\n• MCP servers using HTTP now recover automatically after temporary connection drops!\n• Very long sessions can now scroll all the way to the bottom of the conversation history",
+        "created_at": "Wed Jun 17 15:43:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2067256360933408769",
+            "url": "https://pbs.twimg.com/media/HLBetR0aQAEpcXU.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2066784422431756323",
+          "text": "Grok Build just got new update. The team is shipping at an absolutely relentless pace\n\nRelease Notes: v0.2.54\n\nFeatures:\n• Rewind now works end-to-end across conversation and file state with proper CAS handling.\n\nBug Fixes:\n• Git branch icons now render correctly on Windows without Nerd Fonts.\n• Mermaid diagrams now render inline without the model suggesting external viewers.\n• MCP connection errors now show the actual failure reason to the model.\n• MCP servers with noisy stdout no longer disconnect unexpectedly.\n• Usage warnings now always display \"Usage left: N%\" instead of varying between \"Free credits left\" and \"Credits left\".\n• Window title no longer flashes or oscillates during permission prompts while the terminal window is focused.\n\nPerformance:\n• Fixed pager freezes and 100% CPU usage when rendering very long agent reasoning outputs with thousands of styled spans.",
+          "created_at": "Tue Jun 16 07:26:19 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2066783486548312064",
+              "url": "https://pbs.twimg.com/media/HK6woXdbAAAxxll.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1818311005698678784",
+            "name": "X Freeze",
+            "screen_name": "XFreeze",
+            "description": "",
+            "followers_count": 238385,
+            "friends_count": 1878,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 23,
+            "favorite_count": 142,
+            "reply_count": 25,
+            "quote_count": 3
+          }
+        },
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 238385,
+          "friends_count": 1878,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 86,
+          "favorite_count": 437,
+          "reply_count": 76,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240290852,
+        "friends_count": 1357,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 85,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2067436677019422914",
+      "text": "RT @cursor_ai: It’s now easier to move local agents to the cloud so they can keep working with your laptop closed.\n\nPrompt Cursor from your…",
+      "created_at": "Thu Jun 18 02:38:09 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2067366343817805899",
+        "text": "It’s now easier to move local agents to the cloud so they can keep working with your laptop closed.\n\nPrompt Cursor from your phone, run many agents in parallel, and get back PRs with demos of their work. https://t.co/vuh5aZbH3e",
+        "created_at": "Wed Jun 17 21:58:40 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2067366219263750144",
+            "url": "https://video.twimg.com/amplify_video/2067366219263750144/vid/avc1/1920x1080/W9EBYK0FFZcOsoue.mp4?tag=28",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1695890961094909952",
+          "name": "Cursor",
+          "screen_name": "cursor_ai",
+          "description": "Coding agent for building ambitious software",
+          "followers_count": 409407,
+          "friends_count": 38,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 209,
+          "favorite_count": 2578,
+          "reply_count": 141,
+          "quote_count": 44
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240290852,
+        "friends_count": 1357,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 209,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2067432573836652699",
+      "text": "Progress",
+      "created_at": "Thu Jun 18 02:21:51 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2067389688256909373",
+        "text": "Try Grok Build 0.1 on code review",
+        "created_at": "Wed Jun 17 23:31:26 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2867234365",
+          "name": "Andrew Milich",
+          "screen_name": "milichab",
+          "description": "@xai @spacex previously @cursor_ai, former CEO @skiffprivacy (acquired by @notionhq)",
+          "followers_count": 48975,
+          "friends_count": 1791,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 19,
+          "favorite_count": 206,
+          "reply_count": 23,
+          "quote_count": 5
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240290852,
+        "friends_count": 1357,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 289,
+        "favorite_count": 2579,
+        "reply_count": 661,
+        "quote_count": 18
+      }
+    },
+    {
+      "id": "2067431278006391066",
+      "text": "As it should.",
+      "created_at": "Thu Jun 18 02:16:42 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2067376315569750492",
+        "text": "The British Isles are beginning to remember what every civilization eventually remembers:\n\nA government that cannot protect its people eventually loses the moral authority to govern them.\n\nEverything that follows is just the timetable.",
+        "created_at": "Wed Jun 17 22:38:18 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4889539601",
+          "name": "InfantryDort",
+          "screen_name": "infantrydort",
+          "description": "Just an Infantryman trying to close with and destroy. Motivated to make the U.S. Infantry lethal again. Active Duty LTC. 11M to 11B to 11A. Views are my own.",
+          "followers_count": 96644,
+          "friends_count": 917,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1274,
+          "favorite_count": 8865,
+          "reply_count": 233,
+          "quote_count": 41
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240290852,
+        "friends_count": 1357,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1688,
+        "favorite_count": 13401,
+        "reply_count": 818,
+        "quote_count": 23
+      }
+    },
+    {
+      "id": "2067431040940167408",
+      "text": "RT @travelingflying: Elon Musk: ”I think there are great things in every culture. We don’t want the German culture to disappear. We don’t w…",
+      "created_at": "Thu Jun 18 02:15:45 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2067291185484288016",
+        "text": "Elon Musk: ”I think there are great things in every culture. We don’t want the German culture to disappear. We don’t want French culture to disappear. We don’t want Korean culture to disappear, or Japan, or America, or anywhere.\n\nI think we should be very cautious about having some sort of global mixing pot, because every place will be the same, and there won’t be any unique cultures in the world. Which I think would make the world worse.\n\nSo I think we need to preserve these country cultures, and that’s the future that I think is better. I think that most people would agree is better. We shouldn’t have cultures disappear.\n\nAnd currently, based on the current birth rates and the sort of so-called multiculturalism and globalism, what we’re actually seeing is the dilution of individual cultures and the destruction and death of individual cultures, which I think is terrible for the future.”",
+        "created_at": "Wed Jun 17 17:00:01 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2067285479561789441",
+            "url": "https://video.twimg.com/amplify_video/2067285479561789441/vid/avc1/810x1204/YzRL8_9kRW9W_MCh.mp4?tag=28",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4868124659",
+          "name": "Taya Bass",
+          "screen_name": "travelingflying",
+          "description": "Right-wing|Christ is King|Conservative|Tesla & SpaceX Investor",
+          "followers_count": 184888,
+          "friends_count": 21217,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3066,
+          "favorite_count": 11651,
+          "reply_count": 698,
+          "quote_count": 171
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240290852,
+        "friends_count": 1357,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3070,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2067427013527580863",
+      "text": "Essential reading",
+      "created_at": "Thu Jun 18 01:59:45 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2067371945763524615",
+        "text": "I'm delighted to report that Suicidal Empathy has now been five weeks straight on The New York Times Bestseller List, having debuted as an Instant #1 in its first week!\n\nGet your copy today: https://t.co/MyiE7bjYGx",
+        "created_at": "Wed Jun 17 22:20:56 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "116579971",
+          "name": "Gad Saad",
+          "screen_name": "GadSaad",
+          "description": "Professor, Evolutionary Behavioral Scientist, Author. Opinions are mine alone. Retweets do not necessarily imply an endorsement.",
+          "followers_count": 1337645,
+          "friends_count": 480,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 510,
+          "favorite_count": 4097,
+          "reply_count": 212,
+          "quote_count": 14
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240290852,
+        "friends_count": 1357,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1456,
+        "favorite_count": 12633,
+        "reply_count": 792,
+        "quote_count": 37
+      }
+    },
+    {
+      "id": "2067426896414208365",
+      "text": "And this report is just the tip of an enormous iceberg of evil",
+      "created_at": "Thu Jun 18 01:59:17 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2067353275020562636",
+        "text": "🚨Big announcement from Asmongold!\n\nHe just said live on stream that he’ll be reading the entire UK Rape Gang Inquiry report word for word on stream.\n\nWith his huge audience of 3.4 million+ Twitch followers, this is going to reach a massive number of people. \n\nNo more relying on mainstream media spin.\n\nTune in to @Asmongold on Twitch tomorrow. This one’s important.\n\n#Asmongold #RapeGangInquiry #GroomingGangs",
+        "created_at": "Wed Jun 17 21:06:44 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "74427874",
+          "name": "WasAcop",
+          "screen_name": "WasAcop",
+          "description": "Dave Ex Police. Sexual abuse survivor WYP PTSD. ✝️ Ex-Socialist. Use a computer program to type due to dyslexia, it’s why I sound robotic.",
+          "followers_count": 8059,
+          "friends_count": 5208,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2014,
+          "favorite_count": 13415,
+          "reply_count": 204,
+          "quote_count": 63
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240290852,
+        "friends_count": 1357,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3176,
+        "favorite_count": 24440,
+        "reply_count": 720,
+        "quote_count": 59
+      }
+    },
+    {
+      "id": "2067426405391237170",
+      "text": "RT @karaebel: Behind the scenes: many other cool shots from the 1.5 video launch. \n\nExploring styles in Grok Imagine. https://t.co/huuCM8bP…",
+      "created_at": "Thu Jun 18 01:57:20 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2067381776000208907",
+        "text": "Behind the scenes: many other cool shots from the 1.5 video launch. \n\nExploring styles in Grok Imagine. https://t.co/huuCM8bPeS",
+        "created_at": "Wed Jun 17 23:00:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2067379560430391296",
+            "url": "https://video.twimg.com/amplify_video/2067379560430391296/vid/avc1/3448x2160/RA8Mdo9UR8DJMkLy.mp4?tag=28",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1485374408269176833",
+          "name": "Kara",
+          "screen_name": "karaebel",
+          "description": "Video Content Design for @grok at @SpaceX @xAI",
+          "followers_count": 1637,
+          "friends_count": 437,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 121,
+          "favorite_count": 674,
+          "reply_count": 75,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240290852,
+        "friends_count": 1357,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 122,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2067426268984009187",
+      "text": "Utterly irreconcilable with Western values",
+      "created_at": "Thu Jun 18 01:56:48 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2067420441464172626",
+        "text": "@rlfrmk @elonmusk @Yolo304741 @MattWalshBlog Ok https://t.co/RgQBWJo8Al",
+        "created_at": "Thu Jun 18 01:33:38 +0000 2026",
+        "lang": "und",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2067420439379607552",
+            "url": "https://pbs.twimg.com/media/HLDz75qagAABy-c.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4764645319",
+          "name": "The People's Therapist 👏Expert👏",
+          "screen_name": "Careerflex",
+          "description": "Fixer of Men. Builder of Marriages.\nMarine Officer • LMFT • AFG Vet •\nI explain madness, masculinity, and collapse.\n\nhttps://t.co/wBHNNEGRsZ\n\n👇 Read + sub",
+          "followers_count": 8356,
+          "friends_count": 1441,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 70,
+          "favorite_count": 539,
+          "reply_count": 20,
+          "quote_count": 7
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240290852,
+        "friends_count": 1357,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1431,
+        "favorite_count": 9965,
+        "reply_count": 554,
+        "quote_count": 27
+      }
+    },
+    {
+      "id": "2067424406247485777",
+      "text": "No one can save you when they become the police",
+      "created_at": "Thu Jun 18 01:49:23 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2067382349441233153",
+        "text": "The areas where these gangs operate(d) are places like  Rotherham and Oldham.\n\nThey are basically South-Asian Muslim ghettos. Even many of the police in these places are part of the biraderi clans, they're also Pakistani (or Bangladeshi) Muslims.\n\nAnd so are many of the councillors that control local government. That is important context here.",
+        "created_at": "Wed Jun 17 23:02:16 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1595362799290662912",
+          "name": "jjinUK64",
+          "screen_name": "JjinUk64",
+          "description": "",
+          "followers_count": 2575,
+          "friends_count": 1061,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 397,
+          "favorite_count": 3197,
+          "reply_count": 126,
+          "quote_count": 12
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240290852,
+        "friends_count": 1357,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2428,
+        "favorite_count": 17119,
+        "reply_count": 870,
+        "quote_count": 55
+      }
+    },
+    {
+      "id": "2067422433251078480",
+      "text": "Maybe WSJ isn’t that bad after all 😂",
+      "created_at": "Thu Jun 18 01:41:33 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2067319276759929245",
+        "text": "From @WSJFreeEx via @WSJOpinion: Elon Musk officially entered the canon of the greatest inventors, builders and capitalists not only of our time but arguably of humankind. What a time to be alive. What an extraordinary era to build, writes @EliseStefanik.\nhttps://t.co/ChbLGVcbS6",
+        "created_at": "Wed Jun 17 18:51:39 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3108351",
+          "name": "The Wall Street Journal",
+          "screen_name": "WSJ",
+          "description": "Sign up for our newsletters and alerts: https://t.co/QevH0DLQi8 | Got a tip? https://t.co/iXIigdPjEZ | For WSJ customer support: https://t.co/DZgH9n53qg",
+          "followers_count": 21598124,
+          "friends_count": 1059,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 394,
+          "favorite_count": 4288,
+          "reply_count": 225,
+          "quote_count": 26
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240290852,
+        "friends_count": 1357,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1576,
+        "favorite_count": 21765,
+        "reply_count": 1585,
+        "quote_count": 71
+      }
+    },
+    {
+      "id": "2067421493689196865",
+      "text": "RT @brivael: Je vais être clair.\n\nCe qui a produit les viols de masse.\n\nC’est le gauchisme / le wokisme / le socialisme et l’empathie suici…",
+      "created_at": "Thu Jun 18 01:37:49 +0000 2026",
+      "lang": "fr",
+      "media": [],
+      "retweet": {
+        "id": "2067345925132210535",
+        "text": "Je vais être clair.\n\nCe qui a produit les viols de masse.\n\nC’est le gauchisme / le wokisme / le socialisme et l’empathie suicidaire.\n\nLes gens vont devoir choisir un camp.\n\nLe premier camp, c’est le camp de la liberté, la responsabilité individuelle, du mérite et les villes qui ne sentent pas le pipi.\n\nLe deuxième camp, c’est le camp dysfonctionnel, où tout se transforme en merde, le camp de l’étatisme socialo-communiste à outrance qui rend les gens malheureux et qui dans sa phase terminal, accepte que 250.000 gamines se fassent violer pour le “bien commun” et la peur de se faire traiter de “rascite”.\n\nPartez. Et ne revenez jamais.\n\nCeux qui ont participé de près ou de loin aux grooming gangs, en conscience.\n\nVous méritez l’exil ou le bagne.",
+        "created_at": "Wed Jun 17 20:37:32 +0000 2026",
+        "lang": "fr",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2067074495605584223",
+          "text": "The multiculturalism leaving my body as I read this report https://t.co/6we1GwKB0L",
+          "created_at": "Wed Jun 17 02:38:58 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2067074492413759488",
+              "url": "https://pbs.twimg.com/media/HK-5TIyX0AAop_A.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "298754479",
+            "name": "Robert Sterling",
+            "screen_name": "RobertMSterling",
+            "description": "Finance bro. American. Marine. Christian. Don't take anything I say here seriously.",
+            "followers_count": 211721,
+            "friends_count": 3177,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 633,
+            "favorite_count": 12234,
+            "reply_count": 72,
+            "quote_count": 10
+          }
+        },
+        "user": {
+          "id": "1874492187070615552",
+          "name": "Brivael Le Pogam",
+          "screen_name": "brivael",
+          "description": "Co-Founder @argildotai giving the west infinite leverage. Freedom fighter.",
+          "followers_count": 135165,
+          "friends_count": 688,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 487,
+          "favorite_count": 2204,
+          "reply_count": 159,
+          "quote_count": 19
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240290852,
+        "friends_count": 1357,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 487,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2067381098653581493",
       "text": "RT @Starlink: Starlink is connecting 100,000 students and 1,500 teachers in Malawi across 30 rural schools to online learning resources. Fo…",

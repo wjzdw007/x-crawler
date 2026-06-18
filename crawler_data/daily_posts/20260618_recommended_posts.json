@@ -1,12 +1,213 @@
 {
   "date": "20260618",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-18T18:51:28.978239",
-  "tweet_count": 230,
-  "unique_tweet_count": 230,
-  "total_crawled": 422,
-  "duplicates_removed": 192,
+  "last_crawl_time": "2026-06-18T20:52:11.755656",
+  "tweet_count": 233,
+  "unique_tweet_count": 233,
+  "total_crawled": 430,
+  "duplicates_removed": 197,
   "tweets": [
+    {
+      "id": "2067708784106160322",
+      "text": "Claude Code 推出 Artifact 功能：AI 编程从终端走向可视化协作\n\nClaude Code 现在可以把工作过程生成 Artifact，简单说就是一个实时更新的网页。PR 走查、系统架构说明、调试时间线、发布清单，这些原本只存在于终端会话里的东西，现在变成一个链接，发给团队成员直接打开就能看。\n\n生成 Artifact 时，Claude Code 会用到当前会话的完整上下文，包括代码库、已接入的外部工具（比如监控系统）和对话内容。一个事故调查页面可以同时展示出错的测试代码、监控工具里的错误曲线，以及 Claude 的根因分析推理，不需要你手动接数据源或搭基础设施。\n\nArtifact 会随会话进展自动更新。每次更新后，打开页面的人立刻能看到最新版本，同一个链接始终有效，历史版本也可以随时回溯。\n\nAnthropic 在内部测试中发现，最高频的场景是调试。一个工程师在早会前启动事故排查，Claude Code 查着日志就发布了一个 Artifact：时间线、可疑提交、错误率图表。她把链接丢进群里，等早会开始时页面已经更新了两次。团队不用再听\"我来介绍一下 agent 查到了什么\"，所有人看着同一个页面讨论就行。\n\n这其实解决了 AI 编程工具的一个实际问题：agent 在终端里干了很多活，但成果只有操作者自己看得到，团队协作时还得靠人肉\"翻译\"。Artifact 把这个中间环节省了。\n\n安全方面，Artifact 默认私有，只有同组织内认证成员可以查看，不能公开。管理员可以控制组织级开关、设置角色权限和数据保留策略。\n\n除了调试和 PR 走查，Anthropic 列出的用例还包括：法务用它审计所有第三方依赖的开源许可证，安全团队做代码审查报告并把每个发现链接到具体代码行，平台财务从 Terraform 代码里提取云资源成本分布，设计师用真实组件库生成多套 UI 方案直接挑选。\n\n目前 Artifact 功能以 beta 形式向 Claude Team 和 Enterprise 组织开放，可通过 Claude Code CLI 和桌面应用生成，页面在任何浏览器里查看。个人用户暂时用不了。",
+      "created_at": "Thu Jun 18 20:39:24 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2067671912038240487",
+        "text": "New in Claude Code: Artifacts.\n\nInteractive pages built from your session, like a PR walkthrough or a living project dashboard, shared with your team at a private link.\n\nAvailable in beta on Team and Enterprise plans. https://t.co/0NX9gNCaAs",
+        "created_at": "Thu Jun 18 18:12:53 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2067666542905405441",
+            "url": "https://video.twimg.com/amplify_video/2067666542905405441/vid/avc1/1920x1080/nMl0YMtfhPxf3e24.mp4?tag=28",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1943306828697550848",
+          "name": "Claude",
+          "screen_name": "claudeai",
+          "description": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+          "followers_count": 1513617,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 338,
+          "favorite_count": 6530,
+          "reply_count": 321,
+          "quote_count": 153
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 226998,
+        "friends_count": 1671,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2067699358586253663",
+      "text": "OpenAI Codex 上线了 Record & Replay 功能：在 Mac 上把一个重复性操作演示一遍，Codex 会观察你的操作过程，自动生成一个可复用的 Skill。下次遇到同样的任务，换一组输入参数，Codex 就能替你重新执行。\n\n目前仅限 macOS，欧盟地区暂不可用，使用前需要先开启 Computer Use。\n\n这个功能解决的问题很具体。很多日常工作流程步骤固定但难以用文字描述清楚：报销填单要选对科目和审批人，发布视频要按固定顺序填标题、标签、缩略图，创建 issue 要勾选特定的标签和指派人。以前想让 AI 帮你做这些事，你得把每一步写成精确的指令。Record & Replay 的思路是，与其写说明书，不如做一遍给它看。\n\n操作流程不复杂。在 Codex 桌面端打开 Plugins，点加号菜单，选 Record a skill，然后正常在 Mac 上完成一遍操作。完成后停止录制，Codex 会分析你的操作，生成一份 Skill 文件，里面包含触发条件、所需输入、执行步骤和验证方式。这份 Skill 可以检查、可以编辑，不是黑盒。\n\n重放的时候，开一个新对话，告诉 Codex 用这个 Skill，给它这次不同的参数就行。Codex 会结合 Computer Use（桌面操控）、浏览器操作和已连接的 plugin 来完成任务。",
+      "created_at": "Thu Jun 18 20:01:57 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2067681320281723113",
+        "text": "Show Codex a workflow once. Reuse it as a skill.\n\nRecord &amp; Replay lets you show Codex a recurring task, like filing an expense report or submitting a time-off request.\n\nCodex turns that demo into an inspectable, editable skill.\n\nYou control when recording starts and stops. https://t.co/UqSGaO7XUs",
+        "created_at": "Thu Jun 18 18:50:17 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2067680664439476224",
+            "url": "https://video.twimg.com/amplify_video/2067680664439476224/vid/avc1/1920x1080/9fmVn1UerFbuydQT.mp4?tag=28",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1633874951508721686",
+          "name": "OpenAI Developers",
+          "screen_name": "OpenAIDevs",
+          "description": "Official updates for developers building with Codex & the OpenAI Platform • Service status: https://t.co/kZwnwdYYEq",
+          "followers_count": 357995,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 231,
+          "favorite_count": 3619,
+          "reply_count": 150,
+          "quote_count": 159
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 226998,
+        "friends_count": 1671,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 22,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2067690214915445174",
+      "text": "RT @Compute_King: 大家现在能叫出一串名字：DeepSeek，千问，Kimi，混元，星火，文心一言…… 感觉好像就是ChatGPT一出来，中国本土公司一夜之间全冒出来了。但其实根本不是那么回事。\n\n如果画一张中国大模型的技术族谱，你会发现几条主线：\n\n第一条主线…",
+      "created_at": "Thu Jun 18 19:25:37 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2067407487624691991",
+        "text": "大家现在能叫出一串名字：DeepSeek，千问，Kimi，混元，星火，文心一言…… 感觉好像就是ChatGPT一出来，中国本土公司一夜之间全冒出来了。但其实根本不是那么回事。\n\n如果画一张中国大模型的技术族谱，你会发现几条主线：\n\n第一条主线和智源研究院有关。\n\n北京智源人工智能研究院（BAAI）成立于2018年11月。它不是一家普通的公司，而是在科技部和北京市政府的支持下，由清华、北大、中科院这些顶尖高校和科技企业共同发起的非营利研究机构。它不为赚钱，专为死磕AI领域最硬核、最原始的创新，目标直指大模型、世界模型和通用人工智能这些星辰大海。\n\n智源研究院2021年牵头搞出了“悟道”系列大模型，成了后来中国大模型江湖的技术土壤。现在，它又开始折腾“悟界”系列，想让AI不仅懂文字图片，还能看懂物理世界，更进一步帮科学家研究生命科学。\n\n智源手里还有两张王牌：\n\n🔹 智源大会：这是它每年组局的全球AI顶级聚会，大牛学者和行业大佬都会来，现场发布一堆前沿成果和年度趋势预测，基本是国内AI圈的风向标。\n\n🔹 人才生态：它最厉害的一招，是把清华、北大、中科院这些顶级学术力量揉在一起，打破体制的围墙，搞出一个自由开放的交流平台。\n\n在笔者看来，现在的智源更多扮演的角色像是一个播火者，不造产品，只管把火种点燃，然后递到整个产业手里。\n\n如果把智源研究院看作是一棵树的根，顺着根往上看，会分出三条枝干：\n\n一条是CPM（清华大学牵头的超大规模预训练模型）。2020年11月14日，智源研究院和清华大学研究团队联合发布了以中文为核心的大规模预训练语言模型CPM-LM，参数规模达26 亿，预训练中文数据规模100 GB。CPM这条线往下长出了OpenBMB开源社区，再后来就有了现在大家在端侧玩得比较多的MiniCPM模型。\n\n另一条是“悟道”系列，它直接孕育了GLM这个技术路线，然后孵化出了现在商业化最成功的智谱AI，就是那个ChatGLM背后的大佬。\n\n还有一条叫M6，是阿里达摩院跟智源一起捣鼓的多模态大模型，这条线一路往下，就演化成了今天的通义千问Qwen。\n\n现在市面上竞争得你死我活的大模型产品，追根溯源，技术底气有一大半都能对上这个谱系。\n\n为什么智源研究院这么牛？因为它当时把国内最核心的大模型人才和最前沿的技术路线全给聚到一块儿了。智源，清华，北大这三家，基本上构成了一个铁三角，就像美国那边的OpenAI，DeepMind配上斯坦福，伯克利一样，人才和想法在这个生态里来回流动，碰撞出来的火花，就把早期的底座给搭好了。\n\n第二条主线是百度，属于典型的“起了个大早，赶了个完集”。\n\n早在AI这个词还没流行的2013年，李彦宏就亲自挂帅，成立了百度深度学习研究院，这是全球第一个把“深度学习”直接挂在企业研究院招牌上的。\n\n紧接着2014年，百度在硅谷设立人工智能实验室，请来了吴恩达当首席科学家，全力推动“百度大脑”。更有意思的是，现在AI圈如日中天的Anthropic创始人Dario Amodei，当时就在那个组里研究语音识别和模型扩展。他还把Jim Fan招了进来做实习生。\n\n2017年底，百度硅谷团队干了一件大事，发了一篇论文叫《Deep Learning Scaling Is Predictable, Empirically》，第一次系统性地证明了Scaling Law在机器翻译、语言建模、图像和语音上都管用。可惜当时没引起太大轰动，但金子总会发光，它后来成了大模型研究的基石。2019年OpenAI那篇著名的Scaling Law论文，参考文献里就明明白白引用了这篇百度论文的作者Joel Hestness的后续研究。\n\n时间来到2019年，百度正式发布了开创性的知识增强语义模型ERNIE 1.0。这个模型厉害在于，它不只看无结构的原始数据，还把百度多年积累的大规模知识图谱给融合进去了，一出来就刷新了多种中文NLP任务，直接对标BERT。年底更是迅速迭代到了ERNIE 2.0，搞了持续学习语义理解框架，中英文任务上全面超越了业界主流模型。\n\n第三条主线是科大讯飞。\n\n源头可以一直追到1999年，当时还在中科大读博的刘庆峰，和导师王仁华教授一起，依托中科大创立了科大讯飞的前身。讯飞从中文语音起家，但它在AI大模型上的布局，可以追溯到2014年。\n\n那年，讯飞首次提出“讯飞超脑计划”。这个计划是个战略转弯信号，标志着讯飞不再只盯着智能语音，而是要向更难的认知智能和机器学习全面进军。\n\n到了2019年10月份，讯飞被美国商务部加入了禁运名单，决定启动“国产化AI算力底座”建设。这为后来大模型的自主训练，提前备好了算力粮草。\n\n说到这儿，笔者插一段亲身见闻。 这其中的很长一段时间笔者还在某大厂工作，业务跟英伟达是直接竞争关系，所以能亲眼看到百度和讯飞在英伟达生态圈里有多重。重到什么程度呢？当时CUDA软件栈里好多奇怪的Bug，都是百度和讯飞的工程师先踩到，然后和英伟达一起联手修掉的。从这点就能看出来，这两家当时在AI工程化上走得还是比较前沿的。\n\n如果说ChatGPT像一把火，那么他一下子把整个中国大模型产业给点爆了，商业化了，出圈了，但烧起来的那些柴，是在2020年前就一批批已经被产业的大拿们码好了的。\n\n因为，在那之前，这些人已经闷头干了不少事：\n\n🔹 完整的大规模预训练体系搭起来了，知道大模型该怎么训了；\n\n🔹 积累了部分中文高质量语料，不再是拿英文随便翻译翻译就完事；\n\n🔹 千亿，万亿参数的超大模型真刀真枪跑通了，验证了工程上走得通；\n\n🔹 部分搭建了国产化AI算力底座，踩了很多坑；\n\n🔹 多模态路线也摸着石头探索了；\n\n🔹 各种开源社区，像OpenBMB，也建起来了。\n\n这些工作，在那些个安静的前夜，的确没有马上变成赚大钱的产品，但它们实实在在化作了土壤。后来智谱AI的崛起，通义千问的迭代，百度的文心，DeepSeek的惊艳，讯飞的星火，到字节的豆包，腾讯的混元，小而强的面壁MiniCPM，全都是从这片土壤里长出来的庄稼。\n\n中国大模型产业的爆发，扳机是ChatGPT扣动的；但中国大模型技术的种子，是早在2020年前，由智源研究院，百度，科大讯飞，以及清华，北大，中科大和一批有远见的科技企业，一起亲手种下去的。",
+        "created_at": "Thu Jun 18 00:42:10 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2067397343188746240",
+            "url": "https://pbs.twimg.com/media/HLDe7hpaAAA_56L.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2067406718708158464",
+            "url": "https://pbs.twimg.com/media/HLDndQLbEAA1TB5.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2067406787675049984",
+            "url": "https://pbs.twimg.com/media/HLDnhRGaUAA6lEz.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2067080501886931084",
+          "text": "还是亲历者来说说历史吧。中国最早的大模型研究基本上与智源研究院有关。第一个正式发布的大模型是智源研究院支持清华刘知远团队的清源CPM（2020年11月，26亿参数） https://t.co/h8jKwiNuv7 ，后来演变为OpenBMB，现在还是最好的端侧模型之一。然后就是智源研究院牵头，唐杰老师挂帅的悟道1.0模型系列（2021年3月），其中就包括GLM的最早期版本（GLM论文通信作者是唐杰和杨植麟）。\n其他比较早期的工作，百度是Ernie 3.0（2021年7月）；阿里M6（2021年3月）是与唐杰团队合作的（林俊旸是第一作者，唐和当时在阿里的杨红霞是通信作者），后来演变为Qwen。华为盘古有两个版本，一个是华为云田奇与杨植麟团队合作，一个出自诺亚方舟实验室，但都没有持续。\n可能有遗漏的，大家可以补充。",
+          "created_at": "Wed Jun 17 03:02:50 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "2863771",
+            "name": "刘江/LIU Jiang",
+            "screen_name": "turingbook",
+            "description": "Exploring AGI. Co-Founder of Turing Company. ex Meituan, BAAI, CSDN. 图灵联合创始人。曾任：北京智源人工智能研究院副院长，CSDN&《程序员》杂志总编，美团技术学院院长。",
+            "followers_count": 52166,
+            "friends_count": 3018,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 52,
+            "favorite_count": 315,
+            "reply_count": 55,
+            "quote_count": 7
+          }
+        },
+        "user": {
+          "id": "1838111417851056128",
+          "name": "Compute King",
+          "screen_name": "Compute_King",
+          "description": "Husband & Father | Lifelong Learner | Creator & Innovator\nSemi · AI · HPC · GPU Computing Guru\nGlobal Compute Infrastructure & Bare-Metal Compute",
+          "followers_count": 27853,
+          "friends_count": 689,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 104,
+          "favorite_count": 541,
+          "reply_count": 86,
+          "quote_count": 12
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 226998,
+        "friends_count": 1671,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 104,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2067676155553972711",
       "text": "让我想起 Codex 的 Sites 功能，不过 Sites 还只有企业版能用，Claude Code 这个谁都能用了。\n\n挺好的，好的功能就应该集成进去，共同学习共同进步。\n\nhttps://t.co/53DZPmryH7",

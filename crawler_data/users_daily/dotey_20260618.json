@@ -1,0 +1,78 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 226311,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260618",
+  "last_updated": "2026-06-18T05:38:06.598353",
+  "tweet_count": 1,
+  "tweets": [
+    {
+      "id": "2067453594417111533",
+      "text": "RT @CatChen: 很多大公司会写好好看的技术博客，但如果你用这上面的文章来研究大公司的技术演化史的话，信三成就好了。很多时候技术博客都是为了树立形象而写的，把事情写得很简单也很美好。\n\n举个例子，很多年前 Airbnb 写了一篇很出名的 SDUI (Server Dri…",
+      "created_at": "Thu Jun 18 03:45:22 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2067452823025975398",
+        "text": "很多大公司会写好好看的技术博客，但如果你用这上面的文章来研究大公司的技术演化史的话，信三成就好了。很多时候技术博客都是为了树立形象而写的，把事情写得很简单也很美好。\n\n举个例子，很多年前 Airbnb 写了一篇很出名的 SDUI (Server Driven UI) 的文章。看起来他们做得很成功，原来客户端写死必须要经过 Apple/Google 审核才能更新的界面代码，现在都变成服务器端驱动了。想要更新界面，随时在服务器端改代码就行。想要做 A/B 测试，服务器端就能把两个版本写了，不需要等客户端更新。 https://t.co/S7LOVbSVx7\n\n我后来找 Airbnb 的朋友说，想要跟他们学习一下他们做 SDUI 的经验，结果别人说这篇博客上所写的技术完全没办法在公司内推开。原因很简单：产品只想把屏幕中的一小部分改为 SDUI 试试，但框架要求整个屏幕用 SDUI 重写，产品自然不愿意。\n\n当时我的朋友说，Airbnb 又在做一个新的框架，支持只替换产品屏幕中的局部，希望能够被产品接受。这件事情后来不知道怎么样了，反正也没见到 Airbnb 发新的博客文章了。\n\n所以大公司的技术博客只能用来满足猎奇心，要知道真正发生了什么事情，还是要找在公司里面亲身经历过的人来了解。",
+        "created_at": "Thu Jun 18 03:42:19 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2067445519581127061",
+          "text": "Facebook 在从 Git 迁移到 Mercurial 之前就有 stacked diff，而且已经用了很多年。一开始用 Git 的时候，后端其实是个 SVN，只是把前端桥接为 Git，但这不妨碍大家用 stacked diff，因为整个产生 diff 的操作发生在 Git 以外。\n\nFacebook 一直没有公开它魔改过的 Arcanist 和 Phabricator，这才是实现 stacked diff 的核心。在 Arcanist 之后 Facebook 做了 Jellyfish 作为新的客户端，但依然没有对外公开。\n\nJellyfish 基于 Mercurial 客户端和 Phabricator 服务器端，没办法公开给 Git + GitHub 的用户使用，于是有人做了概念上相似但又兼容 Git 的 Sapling。Facebook 内部其实不用 Sapling。（这不是唯一一个公开版本只公开概念但不公开内部源代码的东西，还有哪些你就猜吧。）",
+          "created_at": "Thu Jun 18 03:13:17 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1618521",
+            "name": "Cat Chen, @catchen@mastodon.world",
+            "screen_name": "CatChen",
+            "description": "Career coach, programmer, author, speaker. Former engineer & manager @ Chime, Robinhood, Facebook, Wandou Labs, Yahoo, Baidu. Career coaching available.",
+            "followers_count": 19496,
+            "friends_count": 314,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 3,
+            "favorite_count": 12,
+            "reply_count": 5,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "1618521",
+          "name": "Cat Chen, @catchen@mastodon.world",
+          "screen_name": "CatChen",
+          "description": "Career coach, programmer, author, speaker. Former engineer & manager @ Chime, Robinhood, Facebook, Wandou Labs, Yahoo, Baidu. Career coaching available.",
+          "followers_count": 19496,
+          "friends_count": 314,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 11,
+          "favorite_count": 51,
+          "reply_count": 15,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 11,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

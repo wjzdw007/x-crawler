@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 226090,
+    "followers_count": 226100,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260617",
-  "last_updated": "2026-06-17T22:36:22.654258",
-  "tweet_count": 7,
+  "last_updated": "2026-06-18T00:49:32.354712",
+  "tweet_count": 9,
   "tweets": [
     {
       "id": "2067039941960327204",
@@ -319,6 +319,84 @@
         "favorite_count": 1,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2067376170145075206",
+      "text": "这篇文章写的有点玄乎，估计是为了蹭现在流行的 Loop Engineering 的概念。\n\n核心内容是两个循环：内循环和外循环\n\n所谓内循环，就是干活的定时任务，每 2 小时检查下有没有新邮件，如果有邮件，就去自动检索相关上下文，自动帮你写个草稿，但是不发送，让你自己修改后发送。\n\n所谓外循环，就是一个自进化自学习的 Skill，每次你对 AI 写的草稿修改，都根据修改记录去优化你的 Skill，让它下次能写的更好。\n\n这有点像我以前介绍过的写作风格 Skill，你可以把自己的文章提炼出一个写作风格 Skill，然后先用它生成，生成完了修改，修改完了让 Agent 根据你修改的内容去完善写作风格 Skill，越来越懂你。\n\n我当时是手动做，他这样做成一个自动化循环应该会更好一点。",
+      "created_at": "Wed Jun 17 22:37:43 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2067262326043287852",
+        "text": "https://t.co/xGBxV5ZTzr",
+        "created_at": "Wed Jun 17 15:05:21 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "950683852497965056",
+          "name": "Gabriel Chua",
+          "screen_name": "gabrielchua",
+          "description": "DX Engineer, Codex @OpenAI || Opinions my own",
+          "followers_count": 12561,
+          "friends_count": 1200,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 98,
+          "reply_count": 9,
+          "quote_count": 7
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 28,
+        "reply_count": 10,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2067376402400202858",
+      "text": "写作风格 Skill：https://t.co/Pfh7FfLiLs",
+      "created_at": "Wed Jun 17 22:38:38 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2022774029220749538",
+        "text": "https://t.co/SvbenMCaFg",
+        "created_at": "Sat Feb 14 20:44:44 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 226100,
+          "friends_count": 1670,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 223,
+          "favorite_count": 1235,
+          "reply_count": 63,
+          "quote_count": 53
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 17,
+        "reply_count": 2,
+        "quote_count": 1
       }
     }
   ]

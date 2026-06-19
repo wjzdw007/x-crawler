@@ -1,12 +1,192 @@
 {
   "date": "20260619",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-19T16:51:09.148988",
-  "tweet_count": 230,
-  "unique_tweet_count": 230,
-  "total_crawled": 421,
-  "duplicates_removed": 191,
+  "last_crawl_time": "2026-06-19T18:38:56.174446",
+  "tweet_count": 233,
+  "unique_tweet_count": 233,
+  "total_crawled": 430,
+  "duplicates_removed": 197,
   "tweets": [
+    {
+      "id": "2068040641754304544",
+      "text": "Skill 和软件一样，需要不断迭代的，而且你用户越多，遇到的各种问题就越多，就需要去解决各种边边角角的问题，才能越来越好用。\n\n比如 @yangyi 昨天在他的牛马AI里面测试了这个Skill，说导出好像有问题，我拿到结果一看，简直惨不忍睹（图2），这里面有两个问题：\n1. 样式表不对，没有铺满整页，只占了一半\n2. 导出的渐变色没有了，把图片都遮没了\n\n写 Skill 比写软件有个优势，就是你可以让 Agent 先跑，跑完之后 Agent 它自己知道有哪些上下文，遇到了什么问题，这样它可以分析问题在哪。\n\n于是我在本地跑一次，能重现，再让它分析原因，解决，那么它就能找出原因，并从 Skill 的层面去解决，添加测试覆盖，避免类似的问题再次出现。\n\n这其实也是我日常迭代 Skill 的方法：\n\n自己用 -> 发现问题 -> 让 Agent 分析原因 -> 让 Agent 出解决方案 -> 确认方案♻️ -> 更新 Skill -> 自己用 ♻️",
+      "created_at": "Fri Jun 19 18:38:05 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2068036632113029120",
+          "url": "https://pbs.twimg.com/media/HLMkXCeXoAAOQVQ.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2068036662563622912",
+          "url": "https://pbs.twimg.com/media/HLMkYz6W0AAKb8Q.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2068039432721063936",
+          "url": "https://pbs.twimg.com/media/HLMm6DjW4AAWTu3.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2068039563637878784",
+          "url": "https://pbs.twimg.com/media/HLMnBrQW8AAcMX9.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2067876611873964284",
+        "text": "baoyu-design skill 更新：可以在制作 PPT、动画视频或者网站时调用 AI 生图技能配图了，当然需要你本地 Agent 有配置画图 Skill。\n\n如果是 Codex 可以直接调用内置画图工具，如果你用 Claude Code 的话可以配合 baoyu-image-gen skill 去调用 Codex CLI 画图。\n\n用它来生成 PPT 效果特别好，可以自动帮你在 PPT 合适位置插入配图，最牛的是你可以连图片一起导出为 PPTX，还可以接着用 PowerPoint 或者 Keynote 二次编辑。\n\n推荐去试试看：\nbaoyu-design Skill：https://t.co/d2EaYV6q7j\nbaoyu-image-gen Skill：https://t.co/7yPdsrqs3H",
+        "created_at": "Fri Jun 19 07:46:18 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2067875397841158144",
+            "url": "https://pbs.twimg.com/media/HLKRt-AXgAAFSGw.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 227233,
+          "friends_count": 1671,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 43,
+          "favorite_count": 244,
+          "reply_count": 42,
+          "quote_count": 4
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 227233,
+        "friends_count": 1671,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2068016647877640381",
+      "text": "作者回应\nhttps://t.co/U5e1EMpEyX",
+      "created_at": "Fri Jun 19 17:02:45 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2067970516951150721",
+        "text": "Got em. I poison my AGENTS.md (and other things like code comments) all over the place with prompt injections like this to find people who don't review their code and sling it off to another human. Catches folks all the time and then its an instant ban. \n\nAs I've said, I don't care if you don't review your own code. But if you're submitting code to an OSS project and crossing a human boundary, it is simple courtesy to do some human review.",
+        "created_at": "Fri Jun 19 13:59:26 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "12819682",
+          "name": "Mitchell Hashimoto",
+          "screen_name": "mitchellh",
+          "description": "Creator of Ghostty. 👻 Prev founded @HashiCorp, created Vagrant, Terraform, Vault, and others.",
+          "followers_count": 204760,
+          "friends_count": 146,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 143,
+          "favorite_count": 2874,
+          "reply_count": 81,
+          "quote_count": 36
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 227233,
+        "friends_count": 1671,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2068016587953643922",
+      "text": "哈哈，绝了，通过提示词注入让那些通过 AI 提交 PR 并且不人工审查的现出原形！",
+      "created_at": "Fri Jun 19 17:02:31 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2067969588046823855",
+        "text": "🤪 Great AI disclosure trick @mitchellh :D https://t.co/RI2dnGbSEo",
+        "created_at": "Fri Jun 19 13:55:45 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2067969385227030528",
+            "url": "https://pbs.twimg.com/media/HLLnMwTXEAAua88.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "40663578",
+          "name": "Seb ⚛️ ThisWeekInReact.com",
+          "screen_name": "sebastienlorber",
+          "description": "🔥 Join 40k devs - Stay up-to-date with React:\n\n• 📨 https://t.co/DvLGHeLY5G\n\n• @ThisWeekInReact\n• @docusaurus maintainer\n• 🇫🇷",
+          "followers_count": 53698,
+          "friends_count": 5466,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 16,
+          "favorite_count": 373,
+          "reply_count": 7,
+          "quote_count": 4
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 227233,
+        "friends_count": 1671,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 17,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2067994311195586612",
       "text": "Fauci committed so many evil crimes",

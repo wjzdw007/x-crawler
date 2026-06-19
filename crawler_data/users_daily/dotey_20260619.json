@@ -8,8 +8,8 @@
     "is_blue_verified": true
   },
   "date": "20260619",
-  "last_updated": "2026-06-19T20:33:23.989267",
-  "tweet_count": 8,
+  "last_updated": "2026-06-19T22:22:23.501523",
+  "tweet_count": 9,
   "tweets": [
     {
       "id": "2067876611873964284",
@@ -345,6 +345,69 @@
         "retweet_count": 0,
         "favorite_count": 9,
         "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2068087624758177881",
+      "text": "RT @Barret_China: 大概一个月多前，电脑中了木马，潜伏了一个月才被发现，也导致了我的 X 账号被盗。\n\n让 Claude 和 Codex 逐一分析系统进程时，找到了一个叫做 com\\.apple.accountsd.helper.plist 的进程，乍一看还以为…",
+      "created_at": "Fri Jun 19 21:44:47 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2067997733605331174",
+        "text": "大概一个月多前，电脑中了木马，潜伏了一个月才被发现，也导致了我的 X 账号被盗。\n\n让 Claude 和 Codex 逐一分析系统进程时，找到了一个叫做 com\\.apple.accountsd.helper.plist 的进程，乍一看还以为是苹果系统的宿主进程，但 Claude 对这个进程提出了质疑。\n\n沿着这个线索，对 accountsd 进行了详细的分析。这个木马首先给系统添加了一个开机自启项，确保可长期潜伏，然后通过 root 权限写了一个守护脚本，每秒探测当前系统是否有新用户登录，一旦登录就通过 AppleScript 脚本切换成当前用户身份，运行一个叫做 AccountsHelper 的程序。\n\n对 AccountsHelper（SHA256：9168cbc45f）也做二进制分析，它的依赖极少，主要职责是从远端加载指令，然后拉起一个交互式 PTY shell，攻击者就是通过这个 shell 来远程操控电脑的。木马执行的每个环节，清理工作都做的特别好，几乎所有日志都被清理干净了。\n\n为了溯源整个中马过程，我分析了将近两个多月的系统日志，仅找到一条可疑指令：有个 curl 操作，下载并执行了一条混淆命令，这也是唯一的线索，解密指令得到了一个远端 IP地址。\n\n后来也从公开情报里找到这个木马，它是 AMOS Stealer 恶意软件家族的变种，之前主要针对 Windows 平台，今年四月第一次在 macOS 上被发现。\n\n从 .zhistory 日志看，curl 前后都是 Claude Code 相关操作，高度怀疑就是 Agent 程序引入了这个木马。\n\n我的 Claude Code 长期是 bypass 模式，所有的命令执行都是直接放过，怀疑是在做软件安装或更新的时候，AI 从互联网找到了一些不安全的资源，下载了这个木马。\n\n这个 AMOS 木马，主要会去扫各种虚拟货币钱包，尤其是浏览器插件钱包。顺带也把我各种登录态 Cookies 全部拿走了，这才导致 X 账号被恶意添加了一个 Passkey。\n\n一般木马进来之后，除了目的性的攻击（例如虚拟钱包转账、文件加密勒索）外，它还会使劲去找各种敏感信息，尤其是浏览器里的登录态、Keychain 里保存的账号密码、聊天工具的登录状态、开发环境里的 .env 文件和各种 token，等等。\n\n我这个教训，大家记住两点：1）所有能够加 F2A 的账号都要加，登录时的二次验证会增加攻击者的门槛；2）AI 在执行各种程序的时候，一定要注意它在执行什么，尤其是安装和更新软件的时候，要先确认再执行。\n\n跟一些安全研究者也交流了这个木马的细节，他说近期这类事件特别高频，攻击者会伪造各种软件的官网，Google 搜出来默认都排在第一位，诱导用户（尤其是 AI）下载木马，防不胜防！",
+        "created_at": "Fri Jun 19 15:47:35 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2067941860631552425",
+          "text": "这个账号在过去一段时间，一直处于不可用状态，被黑客添加了 passkey 之后，给我改了密码，改了邮箱，改了手机号码。完全被接管。\n\n我这个账号开启了 F2A，能加的安全措施也都加了，挺好奇是如何绕过的。\n\n这几天让 Claude 给我电脑做了深度体检，对启动的每个进程都做了分析，排查到，有一个伪装得特别好的木马，在我电脑跑了快一个月！\n\n申诉了好几天，也找了不少朋友帮忙，还是把账号搞回来了。后面再详细分享下过程。\n\n另外，也注册了一个防丢的小号，可以加个关注，@barretlee_china 😄",
+          "created_at": "Fri Jun 19 12:05:34 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "272736093",
+            "name": "Barret李靖",
+            "screen_name": "Barret_China",
+            "description": "AI Engineer | Lifelong Learner | Dad of 2 | Cloud Native | Sharing insights and experiences | 小胡子哥，一个有趣的灵魂",
+            "followers_count": 81731,
+            "friends_count": 405,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 3,
+            "favorite_count": 115,
+            "reply_count": 46,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "272736093",
+          "name": "Barret李靖",
+          "screen_name": "Barret_China",
+          "description": "AI Engineer | Lifelong Learner | Dad of 2 | Cloud Native | Sharing insights and experiences | 小胡子哥，一个有趣的灵魂",
+          "followers_count": 81731,
+          "friends_count": 405,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 45,
+          "favorite_count": 245,
+          "reply_count": 31,
+          "quote_count": 13
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 45,
+        "favorite_count": 0,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

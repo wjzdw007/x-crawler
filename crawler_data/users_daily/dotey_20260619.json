@@ -1,0 +1,67 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 227094,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260619",
+  "last_updated": "2026-06-19T07:54:05.232867",
+  "tweet_count": 1,
+  "tweets": [
+    {
+      "id": "2067876611873964284",
+      "text": "baoyu-design skill 更新：可以在制作 PPT、动画视频或者网站时调用 AI 生图技能配图了，当然需要你本地 Agent 有配置画图 Skill。\n\n如果是 Codex 可以直接调用内置画图工具，如果你用 Claude Code 的话可以配合 baoyu-image-gen skill 去调用 Codex CLI 画图。\n\n用它来生成 PPT 效果特别好，可以自动帮你在 PPT 合适位置插入配图，最牛的是你可以连图片一起导出为 PPTX，还可以接着用 PowerPoint 或者 Keynote 二次编辑。\n\n推荐去试试看：\nbaoyu-design Skill：https://t.co/d2EaYV6q7j\nbaoyu-image-gen Skill：https://t.co/7yPdsrqs3H",
+      "created_at": "Fri Jun 19 07:46:18 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2067875397841158144",
+          "url": "https://pbs.twimg.com/media/HLKRt-AXgAAFSGw.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2067039941960327204",
+        "text": "baoyu-design skill 可以在本地生成动画视频，导出 mp4 格式，就像附件视频这个。\n\nClaude Design 网页版可以用提示词创建动画视频，但你需要在网页上才能看到视频，无法下载。也有人基于第三方插件录屏软件实现过，不过很麻烦，效果也不是很好。\n\n在这套 Skill 基础上，我已经实现了直接把动画导出成 mp4 视频的能力。\n\n生成动画和导出视频，其实原理差不多，就是每一帧画面，都是根据所在时间坐标算出来的，就像一个函数 f(t)，你传入给动画引擎任意一个时间点 t，它能直接算出那一瞬间屏幕上每个元素的位置、透明度、大小，所有视觉状态完全由 t 决定。不需要从头播放到那个时刻，也不需要记住之前发生了什么。\n\n传统写动画的方式是命令式的：到了某个时刻，去改某个元素的位置，把透明度调一下。状态散落在各处，时间一乱画面就乱。这套引擎反过来，用的是声明式思路：你不去驱动元素运动，只描述在第 t 秒，每个元素应该长什么样。\n\n打个比方，传统动画像看电影，你必须从头看才知道第 30 分钟画面是什么。这套引擎更像一本特殊的书，翻到任意一页，画面都是完整的、确定的。\n\n这个设计带来了三个能力：\n\n1. 拖动播放条跳到任意位置可以，因为 f(t) 随时能算；\n2. 反复调试同一个画面可以，因为同一个 t 永远产出同一帧；\n3. 把动画导出成视频也可以，而且方式很巧妙。\n\n那么导出视频是怎么实现的呢？\n\n直觉上，把浏览器里的动画变成 MP4，录个屏不就行了？\n\n录屏是实时的。机器稍微一卡就掉帧，拍出来的视频不可复现。而且播放条、黑色背景、圆角阴影这些\"播放器外壳\"会一起被录进去。\n\nbaoyu-design 用的方法更像定格动画的拍摄：启动一个无头浏览器（没有界面的 Chromium），加载动画页面，通过引擎预留的一个控制接口精确操控时间轴。每设定一个时间点，等浏览器把画面渲染完成，截一张图，通过管道直接喂给 ffmpeg 编码。一段 95 秒、30fps 的动画就是 2850 次\"摆好时间，拍照\"的循环。慢，但每一帧都是精确的，绝不掉帧。\n\n这里有个容易忽略的细节：设定时间后，工具会等两帧 requestAnimationFrame 再截图。因为修改时间只是改了 React 状态，浏览器还需要一到两帧才能把新画面真正画到屏幕上。等少了，截到的可能是上一帧的残影。\n\n为了让画面更锐利，截图时用 2 倍设备像素比渲染，实际按 3840×2160 出图，最后由 ffmpeg 缩回 1080p。原理和高分辨率印刷一样：先在更大的画布上精细绘制，再高质量缩小，文字边缘和细线会明显更清晰。\n\nbaoyu-design 在 GitHub 开源（MIT 协议），目前 1.2K star。感兴趣的可以去看看它的 skills/baoyu-design 目录，动画引擎的完整实现都在里面。\n\nhttps://t.co/d2EaYV6q7j",
+        "created_at": "Wed Jun 17 00:21:40 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2067036122643939328",
+            "url": "https://video.twimg.com/amplify_video/2067036122643939328/vid/avc1/1920x1080/AJAJAmpLFjR83yF4.mp4?tag=28",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 227094,
+          "friends_count": 1670,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 112,
+          "favorite_count": 589,
+          "reply_count": 69,
+          "quote_count": 11
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 4,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    }
+  ]
+}

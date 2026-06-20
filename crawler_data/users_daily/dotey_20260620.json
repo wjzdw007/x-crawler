@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 227342,
+    "followers_count": 227360,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260620",
-  "last_updated": "2026-06-20T14:48:21.459987",
-  "tweet_count": 4,
+  "last_updated": "2026-06-20T16:33:57.609365",
+  "tweet_count": 5,
   "tweets": [
     {
       "id": "2068183780938985827",
@@ -174,6 +174,51 @@
         "retweet_count": 0,
         "favorite_count": 4,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2068363092904276316",
+      "text": "这些问题跟传统软件工程一样，你都能在软件工程里面找到答案，只不过执行的主体不再是人，而是人+Agent。\n\n【1】让 Agent 生成的代码能更好地满足需求\n\n1）需求分析\n\n你自己得先搞清楚要做什么，然后让 Agent 搞清楚你要做的是什么。给它充足的上下文，反复确认，否则会南辕北辙，越做错的越远。\n\nAgent 不怕你啰嗦，怕你不说。你觉得显然的东西，对它来说一点都不显然。\n\n2）系统设计\n\n不管多大的功能，都要先设计，设计有几个目的：\n\n对齐需求，确保 Agent 知道你想要什么；拆分里程碑，让 Agent 一次只交付一部分，且每一次交付都可以运行和验证；了解整个系统架构，你可以不自己写代码，但是知道系统长什么样很重要，不了解架构你就没法做有效的代码审查。\n\n最简单有效的方式是用 plan 模式，让 Agent 先出方案。这个过程中 Agent 会问你问题，通过这些问题和最后的设计文档，你们之间会形成一个共识，避免模糊不清就动手写代码。\n\n【2】减少新版本上线后的不稳定，减少线上紧急修复\n\n1）代码审查\n\n前面说了要拆分，拆分细了才好审查。每次提交做一件事，审查的人（包括你自己）才能看得过来。\n\n可以先让 Agent 审查，但人要兜底。Agent 审查能抓住格式、命名、明显的逻辑错误，但业务逻辑对不对、边界条件有没有漏，这些还是得人来判断。\n\n2）自动化测试覆盖\n\n单元测试覆盖会给 Agent 即时反馈，它改了代码跑一下测试就知道有没有破坏已有功能；集成测试也很重要，单个模块测试通过不代表组装在一起也没问题，用模拟数据把主要流程的集成测试覆盖起来；单元测试和集成测试要跟 CI 集成，提交就自动跑，不要依赖人手动触发；端到端测试直接连测试环境或正式环境，通常没那么稳定，但可以代替大部分人工测试，现在有 AI 加持的 browser use 工具，写端到端测试比以前容易很多。\n\n最后一点：自己多测试，不要过于信任 AI，尤其是关键路径和涉及钱的流程。\n\n3）灰度发布\n\n新功能不要着急全量上线，先给内部人用，测试没问题了再逐步扩大范围。加上 feature flag 开关，有问题随时关闭，不用等发版。\n\n4）CI/CD\n\n建立自动化部署、发布和回滚机制。修复了问题能以最快速度自动化验证和发布；出了严重问题第一时间回滚到稳定版本，回滚的速度决定了线上事故的影响范围。\n\n【3】线上问题的自动化修复\n\n1）记日志\n\n不用多解释，没日志一切免谈。补充一点：日志要结构化，要有足够的上下文信息（请求 ID、用户 ID、关键参数），这样 Agent 拿到日志才能还原现场，否则给它一堆无意义的 print 输出，它也分析不出什么。\n\n2）能重现和验证\n\n建立一套和生产环境尽量一致的测试环境，能重现问题、能验证修复。没有重现环境，Agent 只能靠猜，修出来的东西你也不敢上线。\n\n3）CI/CD\n\n跟上面一样，修 bug 本身可能很简单，但不要修一个 bug 搞出三个新问题。自动化测试跑通了再合并，这个纪律不能省。\n\n4）不要过于依赖自动化\n\n说实话，让 AI 全自动修线上 bug 听起来很美好，但目前更现实的路径是：AI 辅助定位问题、生成修复方案、人来确认后再提交。全自动闭环修复，对大多数团队来说还不成熟，建立好的开发、测试、发布流程比追求全自动化更重要。\n\n与其追求 AI 自己修 bug，不如追求AI 帮你少写 bug。前面说的需求分析、系统设计、测试覆盖、代码审查做好了，需要紧急修的 bug 自然就少了。",
+      "created_at": "Sat Jun 20 15:59:24 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2068362859659079680",
+          "url": "https://pbs.twimg.com/media/HLRND-yXMAA43aC.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2068253588376420621",
+        "text": "宝玉兄可以分享一下你对如何通过一些harness操作来处理以下问题的看法😄\n1. 让Agentic生成的代码能更好地满足需求\n1.  减少新版本上线后的不稳定\n2. 减少线上需要紧急修复bug\n2. 如果出现了线上问题，如果让AI能自行复现错误，debug并修复线上的问题并提交PR (修bug自动化)",
+        "created_at": "Sat Jun 20 08:44:16 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1872403399989424128",
+          "name": "JimmyJacy",
+          "screen_name": "ljhspurs",
+          "description": "Full stack engineer. Focus on AI creativit, hk and us stock IPOs, investment, stock options",
+          "followers_count": 894,
+          "friends_count": 229,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 1,
         "quote_count": 0
       }
     }

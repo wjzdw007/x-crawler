@@ -1,12 +1,137 @@
 {
   "date": "20260620",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-20T05:32:08.924046",
-  "tweet_count": 201,
-  "unique_tweet_count": 201,
-  "total_crawled": 400,
-  "duplicates_removed": 199,
+  "last_crawl_time": "2026-06-20T07:21:56.893301",
+  "tweet_count": 203,
+  "unique_tweet_count": 203,
+  "total_crawled": 401,
+  "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2068231396015890449",
+      "text": "一点不同意见。\n\n如果是程序发生了错误，那首先这是代码问题，代码问题不一定是 Codex 的锅。你让它再怎么改 AGENTS.md，也不见得下次就不会犯同样的错误。\n\n从软件工程的角度来说，通常处理错误的顺序是这样的：\n\n1）恢复生产 \n先恢复再找原因，尤其是线上紧急问题。要么回滚要么打补丁，先把生产恢复了再说。但也要注意保留日志和现场，方便后续追查。\n\n2）找根因 \n错误发生了，找 Root Cause 是必须的。到底是逻辑错误、边界条件没处理、还是对需求理解有偏差？不同的根因，对应不同的解法。\n\n3）避免再次发生 \n这一步当然没问题，但怎么做有讲究，不是一句更新 AGENTS.md 就能解决所有情况的。\n\n比如边界条件没覆盖，那就加测试用例；代码架构有缺陷，那就重构；Code Review 流程有漏洞，那就改进 review 流程。具体怎么做，要根据根因来定。\n\n那什么情况下才应该更新 AGENTS.md？\n\n当错误的根因是 AI 对项目特有的约定或上下文缺乏了解的时候。\n比如项目有特定的命名规范或目录结构约定，代码里看不出来；\n比如某些 API 有隐含的使用限制，文档里没写清楚；\n比如团队有特殊的测试规范或提交规范。\n\n这些属于项目知识，写进 AGENTS.md 是合理的。\n\n但如果一个 bug 应该靠测试来防，那就写测试；应该靠 Code Review 来防，那就改流程。把什么都往 AGENTS.md 里塞，反而会让它变得大而无用还占 Token，规则越多越不精准，AI 反而更容易忽略真正重要的那几条。",
+      "created_at": "Sat Jun 20 07:16:05 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2068171751172030890",
+        "text": "错误发生 → 修复问题 → 追问原因 → 写入 AGENTS.md → 以后 AI 记住规则。 https://t.co/zRj1hXkYk4",
+        "created_at": "Sat Jun 20 03:19:04 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2068171602865655808",
+            "url": "https://pbs.twimg.com/media/HLOfHXtbkAA_bEx.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1660062196603277314",
+          "name": "虎小象",
+          "screen_name": "hx831126",
+          "description": "不过是 Prompt Kiddide 罢了",
+          "followers_count": 7989,
+          "friends_count": 127,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 2,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 227304,
+        "friends_count": 1671,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2068221289609715803",
+      "text": "这个提示词挺酷，针织玩偶",
+      "created_at": "Sat Jun 20 06:35:55 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2067925399947067728",
+        "text": "Prompt share: Cozy Crochet Characters\n\n💬Prompt: A handcrafted crochet doll of a [subject], made with soft yarn textures and intricate knitted details. Dressed in a vivid [color1] accent and a delicate [color2] garment, holding a small [prop]. Set in a cozy [setting], warm muted atmosphere, charming handmade aesthetic, nostalgic amigurumi style.\n\nTry it and share yours 🔥",
+        "created_at": "Fri Jun 19 11:00:10 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2067925366954700800",
+            "url": "https://pbs.twimg.com/media/HLK_KjdasAAbmRt.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2067925377151098880",
+            "url": "https://pbs.twimg.com/media/HLK_LJcbYAALX16.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2067925387347439616",
+            "url": "https://pbs.twimg.com/media/HLK_LvbbMAAj2RO.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2067925395903799296",
+            "url": "https://pbs.twimg.com/media/HLK_MPTa4AAcPN5.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1538661635921006592",
+          "name": "Amira Zairi",
+          "screen_name": "azed_ai",
+          "description": "AI Educator & Creator | Ambassador @Adobe @LeonardoAi & @tripoai | Partner with leading brands | 📧Collab → hello@amirazairi.com | HIGGS-6LKDK",
+          "followers_count": 58339,
+          "friends_count": 958,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 17,
+          "favorite_count": 169,
+          "reply_count": 40,
+          "quote_count": 4
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 227304,
+        "friends_count": 1671,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 10,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2068183780938985827",
       "text": "Codex 上线了一个跨设备任务迁移功能，叫 Handoff。你在笔记本上用 Codex 写代码写到一半，合上盖子之前，可以把正在进行的任务连同代码状态一起迁移到远程服务器上继续跑。回到家了，再把任务拉回来。\n\n这个功能有两个有意思的地方。\n\n第一，迁移操作不是在界面上点按钮，而是直接在聊天框里用自然语言下指令。比如你可以说：\n\n“我要离开办公室了，把我正在跑的线程迁移到远程主机上，确保它们在那边正常运行。”\n\nCodex 会自动帮你完成整个迁移流程。\n\n第二，迁移的不只是对话记录，而是完整的 Git 状态。你本地没提交的代码改动、当前所在的分支，都会跟着一起过去。到了远程机器上，代码接着你离开的那个位置继续。\n\n不过用起来有几个前提条件。\n\n首先你得在 Codex 的 Settings > Connections > SSH 里配置好远程主机连接，远程机器上也要装好 Codex 并开启“允许其他设备连接”，两边还得登录同一个 ChatGPT 账号。\n\n然后远程主机上要有同一个 Git 仓库的克隆，并在 Codex 里把它保存成项目。\n\n如果你本地打开的是仓库的某个子目录，远程那边也得保存同样的子目录路径，不然 Codex 找不到匹配的迁移目标。远程机器还得能访问同一个 Git 远程仓库，私有仓库的话需要提前配好 SSH key 或 GitHub 认证。\n\n我觉得这还是太麻烦了一点，不如办公室或者家里有台电脑常年开着方便。\n\n当然对于重度使用 AI 编程工具的开发者来说，这个功能解决了一个很实际的问题：AI 帮你改代码改到一半，你得走了，之前只能等它跑完或者放弃进度。现在可以把任务托管到云端服务器上，通勤路上它继续干活，你到家了再接手看结果。",

@@ -1,12 +1,257 @@
 {
   "date": "20260623",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-23T20:45:47.660605",
-  "tweet_count": 271,
-  "unique_tweet_count": 271,
-  "total_crawled": 463,
-  "duplicates_removed": 192,
+  "last_crawl_time": "2026-06-23T22:29:09.182834",
+  "tweet_count": 275,
+  "unique_tweet_count": 275,
+  "total_crawled": 471,
+  "duplicates_removed": 196,
   "tweets": [
+    {
+      "id": "2069544470756905104",
+      "text": "RT @oran_ge: 看到即梦上的新模型这么贵，联想到最近总结出来的一个ROI 定律。\n大模型训练和使用都遵循 ROI 定律\n今天大家都去做coding和短剧\n就是因为 算力、精力、时间有限的情况下，RL 肯定选择价值最高的场景，不会去做价格很低的场景。…",
+      "created_at": "Tue Jun 23 22:13:46 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2069540524101652915",
+        "text": "看到即梦上的新模型这么贵，联想到最近总结出来的一个ROI 定律。\n大模型训练和使用都遵循 ROI 定律\n今天大家都去做coding和短剧\n就是因为 算力、精力、时间有限的情况下，RL 肯定选择价值最高的场景，不会去做价格很低的场景。\n我们把职业按照GDP占比来排序，排在前面的一定是会被最先训练出来的，这正是 OpenAI 研究员选择领域的方法\n用户使用也是如此，模型这么贵，只有 ROI 算得过来才有人用。\n这些工具看起来人人可用，其实卷的是用工具创造真正价值的能力。\n如果不能创造价值，只是玩，那要么特别有钱，要么一时脑热，无法持续。\n然而今天的 AI 还是处于「替代阶段」，还没有到「发现新价值」阶段，后者才是新的增长点。",
+        "created_at": "Tue Jun 23 21:58:05 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2069255847226818926",
+          "text": "Seedance 2.0 4K  15 秒要 1200 积分。\n按超会来算，\n一条 15 秒 4K 视频差不多 88 元，\n一条 1 分钟左右的广告片，\n成本大概 350 元上下。就算抽卡翻个倍700元\n如果能跑出可用的 4K 商业画面，\n你觉得这个价格贵吗？ https://t.co/xgu9fzsJpG",
+          "created_at": "Tue Jun 23 03:06:53 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2069255840331341824",
+              "url": "https://pbs.twimg.com/media/HLd5OTBaIAAMDyJ.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "2038081270497087488",
+            "name": "小宇Chengzi",
+            "screen_name": "Chengzilhy",
+            "description": "👗女装店主理人为主业，Ai创作者为辅 \n🌠用Ai作为魔法笔把想法变成视频 \n🎥实践+分享更多制作视频流程\nDM for collaborations. 📩",
+            "followers_count": 1637,
+            "friends_count": 242,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 4,
+            "favorite_count": 33,
+            "reply_count": 17,
+            "quote_count": 2
+          }
+        },
+        "user": {
+          "id": "6782882",
+          "name": "Orange AI",
+          "screen_name": "oran_ge",
+          "description": "we are already living in science fiction. building the os for it",
+          "followers_count": 173785,
+          "friends_count": 613,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 2,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 227772,
+        "friends_count": 1671,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2069537208378302874",
+      "text": "Google Workspace CLI 这项目当时我还转发过，没想到几个月过去，作者 Justin Poehnelt 因为这个项目被开除了。\n\nJustin 在 Google 干了将近七年，岗位是 Workspace 开发者关系工程师。今年 3 月初，他用 Rust 写了一个 Google Workspace CLI，放在了 Google 官方 GitHub 组织下（https://t.co/2vVBxIoI1c），可以用命令行操作 Gmail、Drive、Calendar 等所有 Workspace 服务，还内置了 MCP 服务器，AI agent 可以直接调用。\n\nAddy Osmani 3 月 5 日发推介绍了这个项目。然后就爆了，Hacker News 第一名，GitHub star 数冲到两万多，几天之内就有了几千个实际用户。\n\nGoogle 内部的反应是两极的：有总监和高管主动来问这个工具能教他们什么；同时法务开始盘问他，为什么项目上有 Google 的 logo 和品牌色。\n\n4 月 22 日到 24 日的 Google Cloud Next 大会上，Google Workspace 官方博客宣布官方 Workspace CLI 即将推出。两天后，Justin 被开除了。\n\n他怀疑是 Workspace 的某些管理层和项目害怕被 AI agent 颠覆，而这种恐惧不只是针对他的 CLI，是针对整个 agent 对 Workspace 意味着什么。\n\nHacker News 上对这件事的观点两极分化。一派认为这是 Google 官僚主义碾压创新的典型案例，七年老员工做了个用户真正想要的东西，然后被自己公司干掉了。另一派指出，Google 有一套非常明确的开源发布审批流程，用公司品牌发布未经批准的项目，在任何大公司都可能被开除。\n\nJustin 本人在 Hacker News 回复里的说法是：作为 DevRel 工程师，开源发布审批本来就是他日常工作的一部分，而且这个流程文档不清楚，还一直在变。\n\n这个项目本身还活着。最新一次更新是 6 月，GitHub 上 26000 多颗星，InfoQ 和 BetterStack 都有详细的教程。Justin 被开除后还在继续写技术博客，最近一篇是用 Claude Code 的 subagent 做 Gmail 分类。\n\n对于正在用这个 Workspace CLI 的开发者来说，眼下倒不用太担心，项目还在 Google 的 GitHub 组织下正常维护。",
+      "created_at": "Tue Jun 23 21:44:55 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2069482265953087602",
+        "text": "Two months ago I was fired by Google for creating the Google Workspace CLI. It went viral, hit #1 on Hacker News, gained thousands of GitHub stars and many thousands of actual users in just a couple days.\n\nIt was an incredible, confusing journey, from directors and leaders asking what they could learn from the tool to getting grilled by legal about why the Google logo and brand colors are on the Google Workspace GitHub code repositories.\n\nI think the cause was that Workspace and certain leaders (and projects) were afraid of being disrupted. But the fear wasn't specific to my CLI, it was a broader fear in what agents meant for Workspace. Either way, the irony of my termination was the announcement at Google Cloud Next two days before I was fired that an official Workspace CLI was coming.\n\nI want this out there because it is easier for me to explain my story and it is an experience I want to fully own. It's also part of my healing.\n\nNearly 7 years at Google was an incredible opportunity for me and I was fortunate to have wonderful teammates and a manager that fully supported me through these last few months. Thank you.",
+        "created_at": "Tue Jun 23 18:06:35 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2069482261431623681",
+            "url": "https://pbs.twimg.com/media/HLhHJvWaoAEBgxd.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2029297693412212737",
+          "name": "Justin Poehnelt",
+          "screen_name": "JPoehnelt",
+          "description": "Building my next thing at https://t.co/92Zaf6Fml8, ex Google | Descartes Labs. Ultra runner.",
+          "followers_count": 1391,
+          "friends_count": 0,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 6,
+          "favorite_count": 154,
+          "reply_count": 15,
+          "quote_count": 13
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 227772,
+        "friends_count": 1671,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2069535856491483484",
+      "text": "True",
+      "created_at": "Tue Jun 23 21:39:32 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2069483990579605925",
+        "text": "The money being sent from USAID wasn’t for humanitarian efforts. USAID money was being LAUNDERED TO GEORGE SOROS to pay for protests\n\nMike Benz exposes USAID has been sending money to George Soros NGOs, he then uses that money to FUND AND TRAIN PROTESTERS\n\nUSAID paying for street protest handbooks to be printed\n\n“USAID gave $5 million to Open Society Foundation — USAID is actually funding George Soros and Soros is passing those funds to the people on the ground.”\n\n“USAID paid to have Saul Alinsky Street protest handbooks printed.”\n\n“The local politicians, the local judges, the local prosecutors, the local anti-corruption NGOs, the local media outlets, the local trade labor, labor groups and unions.”\n\nThis is 100% true and it’s publicly available information \n\nIn 2001, the Soros foundations network was listed USAID among its “donor partners” alongside other government aid agencies. There have been many documented collaborations\n\nWe funded these protests handbooks\n\nUSAID provided 5+ million noted in the Government Accountability Office reports for projects involving OSF-linked groups. These trained hundreds of young Macedonians in activism",
+        "created_at": "Tue Jun 23 18:13:27 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2069483823734444033",
+            "url": "https://video.twimg.com/amplify_video/2069483823734444033/vid/avc1/1920x1080/6-1rlkXZtBKZPSqi.mp4?tag=28",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1099579684981944320",
+          "name": "Wall Street Apes",
+          "screen_name": "WallStreetApes",
+          "description": "We Are The Resistance. Unfiltered Breaking News | Followed By @elonmusk 𝕏 @joerogan 🎙️ @DonaldjTrumpJr 🇺🇸 @dbongino ⚖️ @RealAlexJones 🪬 @JamesOKeefeIII 🗞️",
+          "followers_count": 1371991,
+          "friends_count": 33039,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1799,
+          "favorite_count": 4277,
+          "reply_count": 134,
+          "quote_count": 65
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240447645,
+        "friends_count": 1357,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2418,
+        "favorite_count": 9889,
+        "reply_count": 570,
+        "quote_count": 47
+      }
+    },
+    {
+      "id": "2069535601892987275",
+      "text": "Starlink coming to @AmericanAir next year!",
+      "created_at": "Tue Jun 23 21:38:32 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2069529110544839048",
+        "text": "BREAKING: American Airlines has just confirmed it will begin rolling out Starlink across more than 500 narrowbody aircraft starting early next year. https://t.co/aTSx4to74H",
+        "created_at": "Tue Jun 23 21:12:44 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2069529106765791232",
+            "url": "https://pbs.twimg.com/media/HLhxwf0bQAA6xw9.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1885465,
+          "friends_count": 973,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 136,
+          "favorite_count": 1010,
+          "reply_count": 112,
+          "quote_count": 13
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/dDtDyVssfm",
+        "followers_count": 240447645,
+        "friends_count": 1357,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1096,
+        "favorite_count": 13231,
+        "reply_count": 1010,
+        "quote_count": 67
+      }
+    },
     {
       "id": "2069517224378061282",
       "text": "RT @AndrewCFollett: USAID and other shady leftist charities used real suffering as a human shield for leftist graft!\n\nAlmost 57% of USAID m…",

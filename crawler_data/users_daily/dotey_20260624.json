@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 227996,
+    "followers_count": 228023,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260624",
-  "last_updated": "2026-06-24T22:30:43.742216",
-  "tweet_count": 9,
+  "last_updated": "2026-06-25T00:44:16.219508",
+  "tweet_count": 12,
   "tweets": [
     {
       "id": "2069602746450284614",
@@ -407,6 +407,105 @@
         "retweet_count": 0,
         "favorite_count": 6,
         "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2069917507046031719",
+      "text": "我也遇到过让 AI 整理播客访谈会出现细节遗漏的问题，不过我的做法不太一样，我是同时生成2-3份稿子，然后选一份写的最好的作为底稿，然后把其他两份的内容合并进来。\n\n这样一方面避免遗漏，另一方面也避免偶尔抽卡失败生成了比较烂的稿子，因为如果稿子一开始就没写好，你再去追问也很难提升质量",
+      "created_at": "Wed Jun 24 22:56:05 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2069801085988929998",
+        "text": "长达3个小时的播客访谈，如果原文提供给AI生成文章。\n\n经常会漏掉一些细节，所以我会连续追问几次：\n\n“还有什么细节需要补充吗？”\n\n一般三次左右就差不多，感觉应该做成一个Agent Skill。\n\n哪怕同一个模型，连续追问也能改善质量。\n\n当然，目标不是为了写更长，只是希望更有故事性。 https://t.co/58TnID2Oho",
+        "created_at": "Wed Jun 24 15:13:28 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2069800396873166848",
+            "url": "https://pbs.twimg.com/media/HLlofqOWcAA_vM_.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "6690032",
+          "name": "向阳乔木",
+          "screen_name": "vista8",
+          "description": "喜欢摇滚乐、爱钓鱼的PM",
+          "followers_count": 114279,
+          "friends_count": 1585,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 5,
+          "reply_count": 6,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2069917698817974610",
+      "text": "当然合并稿子这事也可以让 AI 去做\nhttps://t.co/XH8ldrx6vt",
+      "created_at": "Wed Jun 24 22:56:51 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2029443721637327027",
+        "text": "https://t.co/ebSt1rQVap",
+        "created_at": "Thu Mar 05 06:27:43 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 228023,
+          "friends_count": 1672,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 74,
+          "favorite_count": 362,
+          "reply_count": 29,
+          "quote_count": 14
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 9,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2069918721972523191",
+      "text": "我在《图解Skill》的配套项目仓库（https://t.co/Pa4Ah9dCcT ）里面分享了两个 Skills：\n- interview-analysis/ — 访谈内容分析技能。将播客/视频访谈转化为结构化写作素材包和提纲，提取高价值信息点、金句与待验证背景。\n- interview-writing/ — 访谈实录写作技能。将访谈分析素材转化为正式文章，保留问答对话感，补充背景解读，适合在完成访谈分析后使用。",
+      "created_at": "Wed Jun 24 23:00:55 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-06-25T01:46:40.801538",
+  "tweet_count": 12,
+  "summary": "**新工具/技术**（如有）\n- 软链接（符号链接）——把开源/本地 Skill 存在统一仓库，再在项目里用软链接指向原件，避免复制冗余并方便统一更新。  \n- Agent 自动化（Codex/Claude Code）——让 Agent 代为创建/维护软链接和定时拉取更新，减少手工命令记忆与操作。  \n- interview-analysis / interview-writing 两个 Skill 仓库——dotey 在配套项目里开源了用于访谈分析与写作的两个 Skill，可直接复用。\n\n**核心观点/方法论**（如有）\n- Skill 只装在项目里，不装全局——目的是节约 Agent 的上下文窗口，减少误触发和空间浪费，从而提高工作效率。  \n- 用软链接把项目指向统一仓库——保持文件只有一份，更新/修复一次传播到所有项目，降低维护成本。  \n- 把重复的“脏活”交给 Agent 干——用自然语言让 Agent 完成软链接创建、更新或定时 git pull，把人力集中在业务上。  \n- 更新与版本管理跟 git 走——对第三方 Skill 建议 fork 后本地维护，必要时定期和 upstream 同步，便于定制与回溯。\n\n**实践经验/案例**（如有）\n- 具体路径链示例：将项目内 .agents/skills 软链到 ~/GitHub/… 的原件，再把 .claude/skills 指向 .agents/skills，让 Claude Code 能找到 Skill。  \n- 好处一：更新只需在仓库里做一次，所有项目自动生效，极大降低重复维护工作量。  \n- 好处二：在项目中修复 bug 可直接改回原件并提交到上游，能顺手回馈开源社区。  \n- 自动化建议：用 Agent 或 codex/CC 的定时任务（crontab）做定期 git pull，保持 Skill 与 upstream 同步。  \n- 内容生成经验：为避免 AI 漏细节，通常并行生成 2–3 份稿子，选最佳稿为底稿，再把其他稿的有价值部分合并进来。  \n- 总结价值：该流程节省上下文空间、便于快速迭代和统一维护，同时把重复性文件操作交给 Agent，提升整体协作效率。",
+  "metadata": {
+    "original_tweets": 9,
+    "retweets": 3,
+    "media_tweets": 2,
+    "data_hash": "bfab43b5",
+    "user": "dotey"
+  }
+}

@@ -1,12 +1,67 @@
 {
   "date": "20260627",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-27T18:27:12.059955",
-  "tweet_count": 227,
-  "unique_tweet_count": 227,
+  "last_crawl_time": "2026-06-27T20:26:14.266376",
+  "tweet_count": 228,
+  "unique_tweet_count": 228,
   "total_crawled": 427,
-  "duplicates_removed": 200,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2070961932480188467",
+      "text": "谢谢指正",
+      "created_at": "Sat Jun 27 20:06:15 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2070960266754552259",
+        "text": "@dotey 推文有误，GPT4.5是彻底下线了，包括api，api在大约一年前就下线了，web是很长时间以来唯一能用GPT4.5的渠道 https://t.co/1iFYPVLA0A",
+        "created_at": "Sat Jun 27 19:59:38 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2070960264590303232",
+            "url": "https://pbs.twimg.com/media/HL2HY2LaoAATEM6.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1863213319416610816",
+          "name": "核桃",
+          "screen_name": "1gedahetao",
+          "description": "不知道写什么...",
+          "followers_count": 92,
+          "friends_count": 460,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 228483,
+        "friends_count": 1676,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2070904833939329477",
       "text": "现在 Codex/Claude Code 的上下文压缩确实做的挺好了，加上 Prompt Caching，一个 Session 内持续聊没那么大成本压力了。我现在也越来越多的在一个会话内继续任务。\n\n另外还有两个配套功能是很好的：\n\n1. fork，就是从某一个对话位置开分支，只保留该对话前面的历史记录，让上下文更纯粹\n\n2. /btw或者/side，在当前会话中提问，通常用于你想起来一件跟当前任务关系不大的事，没必要加入当前上下文中。\n\n比如说使用 plan 模式时，你要回答一堆问题，但是这些问题选项说的不是很清楚你也不知道该选什么，这时候最适合用 /btw 让详细解释一下每个选项的意思，甚至还可以让它给你建议。",

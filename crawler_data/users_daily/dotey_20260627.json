@@ -1,0 +1,129 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 228380,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260627",
+  "last_updated": "2026-06-27T05:20:06.155105",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2070722541618934018",
+      "text": "RT @LufzzLiz: 嘿嘿，skill写好了，开源了朋友们！\n实现原理：\n把文章或架构内容先压缩成一份结构化 JSON spec，再由本地 Python + Pillow 渲染出黑底手绘风格的 PNG、GIF 和可编辑的 Excalidraw JSON。\n\n开源地址见评论…",
+      "created_at": "Sat Jun 27 04:15:00 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2070440720394256403",
+        "text": "嘿嘿，skill写好了，开源了朋友们！\n实现原理：\n把文章或架构内容先压缩成一份结构化 JSON spec，再由本地 Python + Pillow 渲染出黑底手绘风格的 PNG、GIF 和可编辑的 Excalidraw JSON。\n\n开源地址见评论👇 欢迎Star～\n\n算是抛砖引玉，目前只做了一个风格，更多风格大家可以自己告诉你的Agent DIY https://t.co/VT28JGoNMe",
+        "created_at": "Fri Jun 26 09:35:09 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "animated_gif",
+            "id": "2070440002589499392",
+            "url": "https://pbs.twimg.com/tweet_video_thumb/HLuuNnMbIAAO1bc.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2070295851193536998",
+          "text": "哈哈，早上看到 @YuLin807 发帖老外们做出类似漂亮的动图，我尝试了下用动图总结下我这个文章的项目，没想到很快就出来了\n\nQingYue快来看看，效果可以不，可以我就整个skill 开源出来🐶 https://t.co/jLDxVCROa3",
+          "created_at": "Thu Jun 25 23:59:29 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "animated_gif",
+              "id": "2070294825891688448",
+              "url": "https://pbs.twimg.com/tweet_video_thumb/HLsqLN2acAAg-2W.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1598519155736645632",
+            "name": "岚叔",
+            "screen_name": "LufzzLiz",
+            "description": "用代码表达思想，用 AI 拓展想象，从生活汲取能量。\n探索阅读与创造的边界。输出有温度的洞察。 致力于降低 AI 使用门槛，让更多人受益。\n某大厂架构师-多模态、模型私有化领域\n关注AI产品、AI结合教育、艺术创作领域\n📮: lanshulan007@gmail.com",
+            "followers_count": 20414,
+            "friends_count": 708,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 17,
+            "favorite_count": 143,
+            "reply_count": 57,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "1598519155736645632",
+          "name": "岚叔",
+          "screen_name": "LufzzLiz",
+          "description": "用代码表达思想，用 AI 拓展想象，从生活汲取能量。\n探索阅读与创造的边界。输出有温度的洞察。 致力于降低 AI 使用门槛，让更多人受益。\n某大厂架构师-多模态、模型私有化领域\n关注AI产品、AI结合教育、艺术创作领域\n📮: lanshulan007@gmail.com",
+          "followers_count": 20414,
+          "friends_count": 708,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 31,
+          "favorite_count": 138,
+          "reply_count": 23,
+          "quote_count": 7
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 31,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2070735570830020939",
+      "text": "Anthropic 的 Mythos 5 被美国政府封禁两周后，今天拿到了部分解禁令。\n\n商务部长 Howard Lutnick 致信 Anthropic，批准约 100 家美国政府机构和关键基础设施企业重新使用 Mythos 5。这是 6 月 12 日全面封禁以来的第一次松动，但只是部分松动，面向普通用户的 Fable 5 仍然处于下线状态。\n\n先说前因。6 月 9 日 Anthropic 同时发布了两个模型：Fable 5 面向公众开放，Mythos 5 则限定给 Project Glasswing 合作伙伴用于网络安全防御。两者其实是同一个底层模型，区别在于 Fable 5 加了一层安全护栏，遇到网络攻击、生化等敏感话题会自动降级到 Opus 4.8 回答；Mythos 5 把这些限制放开了，专门给防御端用。\n\n三天后，Amazon CEO Andy Jassy 亲自打电话给财政部长 Scott Bessent，说亚马逊安全研究员发现了一种绕过 Fable 5 安全护栏的方法。当晚，商务部长 Lutnick 向 Anthropic 发出正式出口管制指令，要求禁止所有外国公民访问这两个模型，不遵守可能面临刑事和民事处罚。由于 Anthropic 无法实时验证用户国籍，只能对所有用户一刀切下线。\n\n这里有个微妙的背景：Amazon 是 Anthropic 最大的投资方，累计投入 130 亿美元，Anthropic 也承诺在 AWS 上花费 1000 亿美元。投资人亲手引爆了被投公司最重要产品的下架，这在硅谷历史上相当罕见。同时也有人开始关注商务部长 Lutnick 与 OpenAI（Anthropic 的直接竞争对手）的财务关系。\n\nAnthropic 的态度很明确：他们认为这是一个“窄范围的、非通用的”越狱方法，不应该成为召回一个已部署给数亿人的商业模型的理由。如果同样的标准应用于整个行业，所有前沿模型的部署都得停。\n\n过去两周，Anthropic 派出了顶级科学家和工程师团队到华盛顿，与商务部和国家网络安全主管办公室每天进行会谈。今天的结果算是初步成果。\n\n回到今天的新闻。新指令允许 Mythos 5 向运营和保护关键基础设施的美国机构重新开放，而且这次有一个重要变化：这些机构的非美国籍员工也被授权使用，Anthropic 自己的非美国籍员工也包含在内。这比 6 月 12 日那个“一刀切禁止所有外国公民”的指令灵活了不少。\n\n据知情人士透露，Anthropic 将在本周末继续与政府讨论 Fable 5 的恢复问题。但 Fable 5 何时能回归，目前没有时间表。对普通用户来说，Claude 最强模型仍然不可用，只能继续用 Opus 4.8。\n\nMythos 5 当初被封禁，理由是它的网络攻击能力太强、有被滥用的风险。现在被优先解禁的用途，恰恰是网络安全防御。一个模型因为太危险而被下架，又因为太有用而被请回来。而就在同一天，OpenAI 的 GPT 5.6 也在走类似的路径，由政府逐客户审批后才能使用。美国政府对前沿 AI 模型的发布前审查，正在从个案变成惯例。",
+      "created_at": "Sat Jun 27 05:06:47 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2070665903440871779",
+        "text": "Since June 12, we’ve been working closely with the US government to restore access to Claude Mythos 5 and Fable 5. Today, the government notified us that Mythos 5, our strongest cybersecurity model, can be redeployed to a set of US organizations that operate and defend critical infrastructure.\n\nWe’re restoring access for these organizations quickly, and we’re continuing to work with the government to expand access to Mythos 5 and make Fable 5 available for general use again.",
+        "created_at": "Sat Jun 27 00:29:57 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1353836358901501952",
+          "name": "Anthropic",
+          "screen_name": "AnthropicAI",
+          "description": "We're an AI safety and research company that builds reliable, interpretable, and steerable AI systems. Talk to our AI assistant @claudeai on https://t.co/FhDI3KQh0n.",
+          "followers_count": 1453574,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1825,
+          "favorite_count": 15656,
+          "reply_count": 1372,
+          "quote_count": 916
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 7,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    }
+  ]
+}

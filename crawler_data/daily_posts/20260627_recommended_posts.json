@@ -1,12 +1,141 @@
 {
   "date": "20260627",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-27T14:34:23.898516",
-  "tweet_count": 224,
-  "unique_tweet_count": 224,
-  "total_crawled": 423,
-  "duplicates_removed": 199,
+  "last_crawl_time": "2026-06-27T16:26:55.875546",
+  "tweet_count": 227,
+  "unique_tweet_count": 227,
+  "total_crawled": 424,
+  "duplicates_removed": 197,
   "tweets": [
+    {
+      "id": "2070904833939329477",
+      "text": "现在 Codex/Claude Code 的上下文压缩确实做的挺好了，加上 Prompt Caching，一个 Session 内持续聊没那么大成本压力了。我现在也越来越多的在一个会话内继续任务。\n\n另外还有两个配套功能是很好的：\n\n1. fork，就是从某一个对话位置开分支，只保留该对话前面的历史记录，让上下文更纯粹\n\n2. /btw或者/side，在当前会话中提问，通常用于你想起来一件跟当前任务关系不大的事，没必要加入当前上下文中。\n\n比如说使用 plan 模式时，你要回答一堆问题，但是这些问题选项说的不是很清楚你也不知道该选什么，这时候最适合用 /btw 让详细解释一下每个选项的意思，甚至还可以让它给你建议。",
+      "created_at": "Sat Jun 27 16:19:22 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2070848145437704542",
+        "text": "True story: I stopped thinking about context since GPT 5.3 Codex\n\nSingle project focused threads with the recent capability of codex to spinoff new threads is goated!\n\nCodex continues and goes through compaction but remembers all the important stuff and if not, it’ll look up through the session and find the relevant info\n\nThis is also the reason why /goal is so effective as well",
+        "created_at": "Sat Jun 27 12:34:07 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "874987512850128897",
+          "name": "Vaibhav (VB) Srivastav",
+          "screen_name": "reach_vb",
+          "description": "founder mode @OpenAI | ex @huggingface | F1 fan | Here for @at_sofdog’s wisdom | *opinions my own",
+          "followers_count": 52112,
+          "friends_count": 288,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 6,
+          "favorite_count": 278,
+          "reply_count": 56,
+          "quote_count": 5
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 228459,
+        "friends_count": 1676,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 6,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2070901946735587764",
+      "text": "6 月 26 日，OpenAI 正式从 ChatGPT 中移除了 GPT-4.5。这是 GPT-4 系列在 ChatGPT 里的最后一个模型，至此，GPT-4 时代在消费端彻底翻篇。\n\n我觉得 GPT-4.5 至今仍是最好的写作模型之一，GPT-5 系列在文风和个性上始终没能达到 GPT-4.5 的水准。\n\nGPT-4.5 原本就只对付费用户开放，使用量不大，所以 OpenAI 只给了 30 天的过渡期（5 月 28 日公告，6 月 26 日下线）。已有的 GPT-4.5 对话会自动切换到 GPT-5.5 继续，用户不需要手动操作。基于 GPT-4.5 搭建的自定义 GPT 也将同步失效，创建者需要手动迁移到新模型。\n\nAPI 端不受影响，开发者仍然可以通过 API 调用 GPT-4.5。\n\n回头看，GPT-4 系列的退场过程颇为曲折。去年 GPT-5 发布时，OpenAI 原本打算同步下线 GPT-4o，结果引发大规模用户抗议，不少人把 GPT-4o 当成了有温度的陪伴者，对下线反应激烈到 OpenAI 不得不临时恢复。最终 GPT-4o 在今年 2 月才正式退役，OpenAI 当时透露日活用户中仅 0.1% 仍在选用它，但按 8 亿周活用户的基数算，这仍然意味着约 80 万人。\n\n下一个要走的是 o3，8 月 26 日下线，过渡期 90 天。",
+      "created_at": "Sat Jun 27 16:07:54 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2070900664423661568",
+          "url": "https://pbs.twimg.com/media/HL1RLqQXwAActN8.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 228459,
+        "friends_count": 1676,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 8,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2070891191898370086",
+      "text": "讨厌老登，理解老登，成为老登",
+      "created_at": "Sat Jun 27 15:25:10 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2070784602491568257",
+        "text": "我喜欢老登，有认知和思辨。\n我一直的观点：ai构建在好的基建上，才能健康稳定的快速迭代。\n基建能做好的基本都是老登。这是专业程序员最后的尊严。\n新登往往概念强，快速落地，然后吹牛忽悠投资，砍掉产研，钱到手就完事。有朋友说一年时间，被三家ai创业公司裁员，套路基本都这样。",
+        "created_at": "Sat Jun 27 08:21:37 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1712095004",
+          "name": "i5ting",
+          "screen_name": "i5ting",
+          "description": "前阿里前端技术专家，关注Node.js AI Agent开发和Moonbit语言",
+          "followers_count": 14260,
+          "friends_count": 3078,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 14,
+          "reply_count": 5,
+          "quote_count": 0
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 228459,
+        "friends_count": 1676,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 8,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2070868415330554086",
       "text": "RT @RupertLowe10: It has now reached the point where I truly believe that public officials and politicians who continue to knowingly import…",

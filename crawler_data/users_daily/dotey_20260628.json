@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 228585,
+    "followers_count": 228586,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260628",
-  "last_updated": "2026-06-28T20:29:03.401255",
-  "tweet_count": 1,
+  "last_updated": "2026-06-28T22:24:27.273949",
+  "tweet_count": 4,
   "tweets": [
     {
       "id": "2071076395300663438",
@@ -53,6 +53,117 @@
         "retweet_count": 0,
         "favorite_count": 5,
         "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2071348102263378085",
+      "text": "RepoPrompt 已经开源了，社区版（Community Edition）已上线 GitHub。\n\n背后的故事是这样的：几个月前，OpenAI 开发者体验负责人 Romain Huet 找到 Provencher，邀请他加入 OpenAI 团队。Provencher 答应之前提了一个条件，要先安排好现有付费用户。于是 Repo Prompt 先免费开放，现在彻底开源。\n\nRepo Prompt 最初只做一件事：帮开发者从代码仓库里挑选文件，拼成一段高质量的 prompt，然后复制粘贴到 ChatGPT 或 Claude 里。听起来很简单，但它切中了一个真实痛点：把整个代码库丢给 AI 模型，效果往往很差，超过 32K token 的 prompt 甚至会让模型变笨，你需要精挑细选，只给模型看它真正需要的代码。这种做法现在有个正式名字叫上下文工程。\n\n开源版本的变化很大。Provencher 把架构做了一个反转：不再让应用本身去调度 agent，而是让内置的 MCP server 成为主控，底层的命令行工具（Claude Code、Codex、OpenCode、Gemini CLI）变成可以随时替换的执行层。这意味着你可以用一个推理模型做规划和任务分解，然后把子任务分发给不同的 agent 并行执行，每个 agent 只看自己负责的那部分文件。\n\n为了适应开源协作，很多老版本的手工拼 prompt功能被砍掉了，项目结构也从 Xcode 依赖中解耦出来，不需要装 Xcode 就能编译。贡献者管理借鉴了 libgdx 作者 Mario Zechner 的做法，维护一个白名单，之前的付费用户只要同意就自动成为认证贡献者。\n\n目前只支持 macOS，跨平台版本还在开发中，可以通过 Homebrew 安装（brew install --cask repoprompt-ce）。\n\n社区版：https://t.co/eYOPTUx2Fh\n\n老版本：https://t.co/QRBfcFFCg8",
+      "created_at": "Sun Jun 28 21:40:46 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2059729329119006928",
+        "text": "RepoPrompt 作者被 OpenAI 招安了，然后这软件现在免费了，即将开源。\n\n如果你是 RepoPrompt 付费用户会给你送 Codex 的 Credits。 https://t.co/dwXRjdABwV",
+        "created_at": "Wed May 27 20:11:54 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2059728671838007296",
+            "url": "https://pbs.twimg.com/media/HJWgUGqXcAALvW8.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2059728927124226050",
+            "url": "https://pbs.twimg.com/media/HJWgi9rWAAIwMOq.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 228586,
+          "friends_count": 1676,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 35,
+          "favorite_count": 369,
+          "reply_count": 47,
+          "quote_count": 6
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 11,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2071356525570924563",
+      "text": "Anthropic 上周发布了 Claude Tag，目前以 beta 形式面向 Claude Team 和 Enterprise 用户开放。\n\n简单说，Claude Tag 让团队可以在 Slack 频道里 @ Claude，像 @ 同事一样给它派活。管理员事先配置好 Claude 能访问哪些频道、工具、数据源和代码库，之后频道里的任何人都能直接给它布置任务，Claude 会在后台拆解、执行，完成后在 Slack 线程里回复结果。\n\nClaude Tag 发布当天，Andrej Karpathy 发了一条长帖，称这是 LLM 交互方式的第三次重大重新设计。他的框架是这样的：\n\n第一代，LLM 是你去访问的网站（ChatGPT 网页版）；\n第二代，是你下载到电脑上的 App（Codex App、Claude 桌面端、Cursor 这类）；\n第三代，也就是 Claude Tag 代表的方向，LLM 变成了一个持久存在、异步运行、拥有组织级工具和上下文的实体，直接嵌入团队的工作流里。\n\nKarpathy 说，一旦底层的集成工作做好了（工具、计算环境、权限、记忆这些），Claude 就像一个无缝加入团队的成员，你像跟人说话一样跟它沟通，它能处理各种各样的工作。他的原话是：\n> \"it really takes a while to wrap your head around it, but it works and it is awesome\"。\n\n这条帖子引发了两极反应。一部分人认为 Karpathy 在给 Anthropic 做软广，一个 Slack bot 而已，何至于\"第三次重新设计\"。另一部分人则认为他抓住了一个真实的产品范式变化，只是用了一个很容易被误读的产品（Slack 集成）来承载这个观点。\n\nGergely Orosz 今天发帖说，他跟 Anthropic 内部几个人聊过之后，理解了 Karpathy 在说什么，也理解了为什么很多人会误解。\n\n重点不在 Slack。真正的突破是一个云端 AI 被接入了公司内部系统后开箱即用。Slack 只是入口，背后是云端执行环境、持久记忆、工具集成和组织级权限控制这套组合。\n\n他举了个例子：两周前有家创业公司给他演示了自己搭的类似系统，在 Slack 里 @ 一下就能启动云端开发环境、自动连接内部工具。他们的评价是“绝对的 game changer”，因为触发并行工作变得极其简单。\n\n这套东西对已经配好本地开发环境的工程师来说没什么新鲜感，就是个“哦，然后呢”的反应。真正受益的是三类人：\n1. 新入职员工\n2. 非工程师\n3. 以及需要改动不熟悉代码库的开发者\n他们不再需要花时间配本地环境了。\n\n那家创业公司花了几个月才把这套集成做出来，这里面集成才是核心难题，未来会有更多厂商跟进这个模式，因为“云端开发环境 + agent + 集成 + Slack 入口”这个组合才是真正的解锁点。\n\nClaude Tag 并非没有竞争对手。GitHub Copilot 已经支持在 Slack 里 @ GitHub 触发 coding agent，OpenAI Codex 也在做云端异步执行，Salesforce 更是凭借 Slack 东家的身份天然占据入口。Claude Tag 的差异化在于频道级共享身份、持久记忆和异步执行的组合，但“集成”这两个字说起来容易，做到“just works”是另一回事。\n\n这家创业公司花几个月才搞定的事，Anthropic 能不能让企业客户开箱即用，才是这个产品能不能兑现 Karpathy 那番愿景的关键。",
+      "created_at": "Sun Jun 28 22:14:14 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2071126385121452190",
+        "text": "I talked with a few folks inside Anthropic and I am starting to understand what @karpathy is saying (and what lots of people are misunderstanding)\n\nIt's not about Slack, but about a cloud AI, hooked up to ALL internal company systems, that \"just works.\" THIS is the breakthrough",
+        "created_at": "Sun Jun 28 06:59:44 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "30192824",
+          "name": "Gergely Orosz",
+          "screen_name": "GergelyOrosz",
+          "description": "Writing @Pragmatic_Eng, the #1 software engineering newsletter on Substack. Author of @EngGuidebook. Formerly Uber & Skype.",
+          "followers_count": 341812,
+          "friends_count": 2986,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 128,
+          "favorite_count": 2908,
+          "reply_count": 218,
+          "quote_count": 57
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2071357697585242300",
+      "text": "这种AI视频也挺有意思的😂 https://t.co/kPiMFZqeZb",
+      "created_at": "Sun Jun 28 22:18:53 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2071129793815261184",
+          "url": "https://video.twimg.com/amplify_video/2071129793815261184/vid/avc1/720x1280/4IlrJNADYkOzfwPQ.mp4?tag=28",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
         "quote_count": 0
       }
     }

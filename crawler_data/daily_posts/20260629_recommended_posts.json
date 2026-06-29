@@ -1,12 +1,326 @@
 {
   "date": "20260629",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-29T17:06:01.417393",
-  "tweet_count": 248,
-  "unique_tweet_count": 248,
-  "total_crawled": 439,
-  "duplicates_removed": 191,
+  "last_crawl_time": "2026-06-29T18:43:11.404166",
+  "tweet_count": 254,
+  "unique_tweet_count": 254,
+  "total_crawled": 448,
+  "duplicates_removed": 194,
   "tweets": [
+    {
+      "id": "2071658817214116106",
+      "text": "Meta 今天同时放出两个大动作：Brain2Qwerty v1 论文正式登上 Nature Neuroscience，v2 同日发布。v1 去年以预印本形式公开时，能从脑电信号里逐字母还原打字内容，字符错误率 32%。v2 跳过了字母这一层，直接做到句子级别的实时解码，平均单词准确率 61%，表现最好的被试达到 78%，超过一半的句子解码误差在一个词以内。\n\n作为参照，此前非侵入式方法的单词准确率只有 8%。\n\n这里说的“非侵入式”，就是不需要开颅手术、不需要往脑子里植入电极。被试戴的是 MEG（脑磁图）设备，通过头皮外的传感器捕捉大脑活动产生的微弱磁场。相比之下，Neuralink 那类侵入式脑机接口准确率能到 90% 以上，但代价是一台开颅手术。\n\nv2 的训练数据来自 9 名志愿者，每人戴着 MEG 设备打字 10 小时，总共录了约 22,000 个句子。系统用端到端深度学习直接处理原始脑信号，再通过微调大语言模型来利用语义上下文，把嘈杂的神经数据“翻译”成连贯的语言。Meta 还提到他们用 AI Agent 来探索解码流程的优化方案，最终的训练配置由工程师人工选定。\n\n一个有意思的发现：解码准确率随数据量呈对数线性提升。也就是说，单靠增加训练数据就有可能继续缩小和侵入式方法之间的差距。\n\nMeta 开源了 v1 和 v2 的全部训练代码，合作方 BCBL（巴斯克认知、大脑与语言中心）则开放了 v1 的数据集。\n\n离实用还有多远？\n\nMEG 设备体积大、造价数百万美元、需要磁屏蔽房间，目前只能在实验室环境下运行。而且这次的被试都是健康人，能否在真正需要帮助的脑损伤患者身上复现效果，还没有验证。便携式 MEG 替代方案（基于光泵磁力计）正在研发中，但离消费级产品还有相当距离。\n\n不过，把非侵入式脑机接口的句子解码能力从“几乎不能用”拉到“大致能沟通“，这一步本身的意义在于：它证明了不开刀也有可能做到接近开刀的效果，剩下的是工程问题而非原理问题。\n\n对全球数百万因脑损伤而丧失沟通能力的人来说，一条不需要手术的路径，哪怕还很远，还是很值得期待。\n\n官方介绍：https://t.co/TZLlVkyE9X",
+      "created_at": "Mon Jun 29 18:15:26 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2071566924803395741",
+        "text": "We’re sharing the next major milestone in our non-invasive brain-to-text decoder research: Brain2Qwerty v2.\n\nBuilding on v1, which was published today in @Nature, Brain2Qwerty v2 is the highest-performing end-to-end pipeline capable of real-time sentence decoding from raw brain signals. It advances beyond character-level performance to decoding words and semantics, enabling accuracy for overall communication.\n\nWe believe this research has the potential to make a real difference for the millions of people who suffer from brain lesions or disorders that prevent them from communicating.\n\n🧵👇",
+        "created_at": "Mon Jun 29 12:10:17 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "animated_gif",
+            "id": "2071565272277004288",
+            "url": "https://pbs.twimg.com/tweet_video_thumb/HL-to7cbMAAQwSr.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1034844617261248512",
+          "name": "AI at Meta",
+          "screen_name": "AIatMeta",
+          "description": "Together with the AI community, we are pushing the boundaries of what’s possible through open science to create a more connected world.",
+          "followers_count": 812742,
+          "friends_count": 324,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 834,
+          "favorite_count": 6546,
+          "reply_count": 238,
+          "quote_count": 506
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 228725,
+        "friends_count": 1676,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 15,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2071654176677883992",
+      "text": "RT @C_3C_3: USAID had 64 years and $2 trillion to end world hunger.\n\nThe Left is acting like all they needed was 1 more year.\n\nBy ending US…",
+      "created_at": "Mon Jun 29 17:56:59 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2071559028656783361",
+        "text": "USAID had 64 years and $2 trillion to end world hunger.\n\nThe Left is acting like all they needed was 1 more year.\n\nBy ending USAID the funding for Communism and was drastically cut.\n\nLess Communism did more to end world hunger than anything USAID did during its entire existence.",
+        "created_at": "Mon Jun 29 11:38:54 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2327400218",
+          "name": "C3",
+          "screen_name": "C_3C_3",
+          "description": "",
+          "followers_count": 331805,
+          "friends_count": 8778,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2010,
+          "favorite_count": 9273,
+          "reply_count": 268,
+          "quote_count": 55
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240625028,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2010,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2071652486209843689",
+      "text": "RT @ericzakariasson: i've been using cursor mobile on the go for the last weeks, and having access to all cloud agents from everywhere is r…",
+      "created_at": "Mon Jun 29 17:50:16 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2071641492037554525",
+        "text": "i've been using cursor mobile on the go for the last weeks, and having access to all cloud agents from everywhere is really nice\n\ngo on a walk, get an idea, dictate it in the app\ncome back from walk to a finished agent where you can jump into it\n\ntry it today!",
+        "created_at": "Mon Jun 29 17:06:35 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2071641103191998810",
+          "text": "Introducing Cursor for iOS.\n\nBuild from anywhere by launching always-on cloud agents. Or remotely control agents running on your computer from the app.\n\nComposer 2.5 is 75% off in the app now through July 5. https://t.co/dFxQyrgmBb",
+          "created_at": "Mon Jun 29 17:05:02 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2071638346145923072",
+              "url": "https://video.twimg.com/amplify_video/2071638346145923072/vid/avc1/1920x1080/n9AZc0_aYwh8Z6Bs.mp4?tag=28",
+              "bitrate": 10368000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1695890961094909952",
+            "name": "Cursor",
+            "screen_name": "cursor_ai",
+            "description": "Coding agent for building ambitious software",
+            "followers_count": 417661,
+            "friends_count": 38,
+            "verified": false,
+            "is_blue_verified": false
+          },
+          "stats": {
+            "retweet_count": 449,
+            "favorite_count": 5326,
+            "reply_count": 511,
+            "quote_count": 418
+          }
+        },
+        "user": {
+          "id": "505835394",
+          "name": "eric zakariasson",
+          "screen_name": "ericzakariasson",
+          "description": "@cursor_ai & tinkering. https://t.co/udyDUjFI0i",
+          "followers_count": 76221,
+          "friends_count": 586,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 125,
+          "favorite_count": 874,
+          "reply_count": 101,
+          "quote_count": 6
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240625028,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 125,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2071652181854343349",
+      "text": "It’s total bullshit!\n\nDeaths in Africa DECREASED after cutting USAID funding, which they were using to push for violent overthrow of governments!!",
+      "created_at": "Mon Jun 29 17:49:04 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2071645688870395904",
+        "text": "Anyone citing the Lancet study to claim Elon killed 14 million people (or any other ridiculous number) should just be laughed at.\n\nThe study models a deliberately absurd scenario and it does so with incorrect inputs to the model.\n\nThe scenario did not come true. Stop citing it!",
+        "created_at": "Mon Jun 29 17:23:16 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1637507099558027267",
+          "name": "Crémieux",
+          "screen_name": "cremieuxrecueil",
+          "description": "I write about genetics, 'metrics, and demographics.\n\nRead my long-form writing at https://t.co/8hgA4nNS2A.",
+          "followers_count": 315208,
+          "friends_count": 2107,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 78,
+          "favorite_count": 908,
+          "reply_count": 43,
+          "quote_count": 6
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240625028,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1277,
+        "favorite_count": 8598,
+        "reply_count": 805,
+        "quote_count": 48
+      }
+    },
+    {
+      "id": "2071651728202543557",
+      "text": "I love optimizing machines \n\nIt’s like a beautiful puzzle\n\nThat also achieves true usefulness",
+      "created_at": "Mon Jun 29 17:47:16 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240625028,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1011,
+        "favorite_count": 9635,
+        "reply_count": 2042,
+        "quote_count": 137
+      }
+    },
+    {
+      "id": "2071650759330906253",
+      "text": "Cursor for iOS!",
+      "created_at": "Mon Jun 29 17:43:25 +0000 2026",
+      "lang": "es",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2071641103191998810",
+        "text": "Introducing Cursor for iOS.\n\nBuild from anywhere by launching always-on cloud agents. Or remotely control agents running on your computer from the app.\n\nComposer 2.5 is 75% off in the app now through July 5. https://t.co/dFxQyrgmBb",
+        "created_at": "Mon Jun 29 17:05:02 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2071638346145923072",
+            "url": "https://video.twimg.com/amplify_video/2071638346145923072/vid/avc1/1920x1080/n9AZc0_aYwh8Z6Bs.mp4?tag=28",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1695890961094909952",
+          "name": "Cursor",
+          "screen_name": "cursor_ai",
+          "description": "Coding agent for building ambitious software",
+          "followers_count": 417661,
+          "friends_count": 38,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 449,
+          "favorite_count": 5326,
+          "reply_count": 511,
+          "quote_count": 418
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240625028,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 433,
+        "favorite_count": 4350,
+        "reply_count": 577,
+        "quote_count": 37
+      }
+    },
     {
       "id": "2071633913277993044",
       "text": "RT @KatieMiller: But Democrats told me Elon didn’t do philanthropy… https://t.co/UFt7xGZ741",

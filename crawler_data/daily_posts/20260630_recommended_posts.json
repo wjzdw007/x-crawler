@@ -1,12 +1,541 @@
 {
   "date": "20260630",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-30T16:46:17.511403",
-  "tweet_count": 232,
-  "unique_tweet_count": 232,
-  "total_crawled": 426,
-  "duplicates_removed": 194,
+  "last_crawl_time": "2026-06-30T18:39:10.904742",
+  "tweet_count": 241,
+  "unique_tweet_count": 241,
+  "total_crawled": 432,
+  "duplicates_removed": 191,
   "tweets": [
+    {
+      "id": "2072025716913262957",
+      "text": "Anthropic 今天发布 Claude Sonnet 5，替代 Sonnet 4.6 成为免费版和 Pro 版的默认模型。Anthropic 的定位很明确：Agent 能力接近自家最贵的 Opus 4.8，API 价格只有后者的 40%。\n\nSonnet 系列是开发者用量最大的一档。但过去几个月，AI Agent 能力（让模型自主规划、调用工具完成多步骤任务）的主要进步集中在更贵的 Opus 系列，两者差距越来越明显。Sonnet 5 把差距缩了回来。在 Agent 编程基准上，Sonnet 5 得分 63.2%，Sonnet 4.6 是 58.1%，Opus 4.8 是 69.2%。在知识工作基准上，Sonnet 5 甚至略微超过了 Opus 4.8。\n\n早期测试者的反馈比较一致：以前 Sonnet 做到一半会停的复杂任务，现在能跑完，还会主动检查自己的输出。Zapier 的工程师说，让 Sonnet 5 连续执行“更新 Salesforce 账户等级，再给企业客户发公告邮件”，模型一口气做完了，“以前会卡在半路”。\n\nAPI 定价分两阶段：8 月 31 日前的推广价是输入 2 美元/百万 Token、输出 10 美元/百万 Token，之后涨到 3 美元和 15 美元。据 TechCrunch 报道，这个价格低于 OpenAI 的 GPT-5.5 和 Google 的 Gemini 3.1 Pro，但仍高于 Gemini 3.5 Flash。\n\n有个容易忽略的细节：Sonnet 5 换了新的分词器，同样的文本可能消耗 1.0 到 1.35 倍的 Token。Anthropic 说推广期的定价已经把这个涨幅对冲掉了，过渡期总成本大致不变。但推广价结束后，实际花费会比官方标价的涨幅更大。\n\n安全方面，Sonnet 5 的幻觉率和迎合倾向低于前代，Agent 场景下抵御提示注入和恶意请求的能力更强。因为网络安全能力有所提升，模型默认开启了实时安全防护（和 Opus 4.7、4.8 相同的机制）。\n\nSonnet 5 今天起在 Claude 所有套餐、Claude Code 和 API 上可用，模型代号 claude-sonnet-5。",
+      "created_at": "Tue Jun 30 18:33:21 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2072017450611142835",
+        "text": "Introducing Claude Sonnet 5, our most agentic Sonnet yet.\n\nIt makes plans, uses tools like browsers and terminals, and runs autonomously at a level that just a few months ago required larger and more expensive models. https://t.co/UKK8G7ww5h",
+        "created_at": "Tue Jun 30 18:00:31 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2072014980103176192",
+            "url": "https://video.twimg.com/amplify_video/2072014980103176192/vid/avc1/1728x2160/zHnxI04ExEMPKIbE.mp4?tag=28",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1943306828697550848",
+          "name": "Claude",
+          "screen_name": "claudeai",
+          "description": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+          "followers_count": 1546601,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1127,
+          "favorite_count": 10681,
+          "reply_count": 737,
+          "quote_count": 694
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 228929,
+        "friends_count": 1676,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2072023827647799570",
+      "text": "RT @teslaownersSV: Nvidia CEO Jensen \n“@Tesla stack is the most advanced autonomous vehicle stack in the world. I’m fairly certain they wer…",
+      "created_at": "Tue Jun 30 18:25:51 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2071726757124903211",
+        "text": "Nvidia CEO Jensen \n“@Tesla stack is the most advanced autonomous vehicle stack in the world. I’m fairly certain they were already using end-to-end AI. Whether their AI did reasoning or not in somewhat secondary to that first part.” https://t.co/YJAlQJybgx",
+        "created_at": "Mon Jun 29 22:45:24 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2009145892025376769",
+            "url": "https://video.twimg.com/amplify_video/2009145892025376769/vid/avc1/1320x734/C7DMzk0W8fpr9chU.mp4?tag=21",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1016059981907386368",
+          "name": "Tesla Owners Silicon Valley",
+          "screen_name": "teslaownersSV",
+          "description": "The most notorious Tesla Club in the world. Creator of @thextakeover and taking the Takeover global. \n2.8M followers across all channels",
+          "followers_count": 1426009,
+          "friends_count": 810,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 168,
+          "favorite_count": 1208,
+          "reply_count": 62,
+          "quote_count": 8
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240644643,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 168,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2072023421299417279",
+      "text": "RT @XFreeze: The media bias against Elon is absolutely insane\n\nThey don’t report on him\nThey hunt for ways to make him look evil\nIs it a li…",
+      "created_at": "Tue Jun 30 18:24:14 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2071993098641756518",
+        "text": "The media bias against Elon is absolutely insane\n\nThey don’t report on him\nThey hunt for ways to make him look evil\nIs it a lie? Doesn’t matter\nIs there proof? Still doesn’t matter\n\nThey will lie, twist, exaggerate, or straight-up fabricate stories just to paint him as the villain… and they go to levels you can’t even imagine\n\nWhen asked to actually show proof or give contact of the real help people were receiving from USAID, they provided none. Literally none\n\nYet somehow, the second DOGE started cutting waste, “millions of deaths” magically appeared in the numbers\n\nLet’s look at the actual reality:\n• A USAID contracting officer and corporate executives pleaded guilty to a decade-long bribery scheme involving over $550 million in contracts\n\n• They were running aid programs with Hamas staff inside the organizations\n• They were literally funding Al-Qaeda terrorists\n\n• Let me say it again: They were funding terrorists\n\nBut the corrupt media doesn’t care\n\nAll they care about is manufacturing fake “Holocaust-level” death numbers just to paint Elon as evil\n\nPure propaganda",
+        "created_at": "Tue Jun 30 16:23:45 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2071993093398876163",
+            "url": "https://pbs.twimg.com/media/HMEyvZUaUAMZ5kl.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2070021049341898790",
+          "text": "Honestly at this point I'm a bit frustrated I didn't get my USAID-sponsored RPG https://t.co/6PqxcFCbGk",
+          "created_at": "Thu Jun 25 05:47:31 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2070020382376280064",
+              "url": "https://pbs.twimg.com/media/HLowkgFbQAAoVLt.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1317327383628705793",
+            "name": "Arthur MacWaters",
+            "screen_name": "ArthurMacwaters",
+            "description": "unapologetic believer in American exceptionalism 🇺🇸  \nfounder @legionhealth prev @mckinsey @princeton",
+            "followers_count": 82883,
+            "friends_count": 997,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1539,
+            "favorite_count": 6913,
+            "reply_count": 240,
+            "quote_count": 30
+          }
+        },
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 242601,
+          "friends_count": 1896,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 136,
+          "favorite_count": 748,
+          "reply_count": 87,
+          "quote_count": 4
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240644643,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 136,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2072015711635914948",
+      "text": "Half price Starlink for people in the Memphis region",
+      "created_at": "Tue Jun 30 17:53:36 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2072011507706044466",
+        "text": "SpaceXAI has announced that they will be applying a 50% discount on the standard @Starlink monthly price for both new and existing customers in the Memphis area as a way to give back to the community where they operate their Colossus data centers.\n\n• No upfront hardware costs on Residential Starlink kits for new customers\n• The discount applies to Starlink service addresses located in eligible parts of the Memphis area (see below). \n• No action is required. The discount will appear on your next bill and will continue as long as your service address remains in the eligible area. \n• Friends and family nearby can also benefit from the discount. You both earn a month of free service through Starlink's referral program.",
+        "created_at": "Tue Jun 30 17:36:54 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2072009914755534848",
+            "url": "https://pbs.twimg.com/media/HMFCChwXUAAaqXV.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EVs/space/tech. Bringing you the latest news in a single, easy-to-read feed. $TSLA & $SPCX investor, Model Y owner.",
+          "followers_count": 1097891,
+          "friends_count": 468,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 122,
+          "favorite_count": 1285,
+          "reply_count": 90,
+          "quote_count": 14
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240644643,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 459,
+        "favorite_count": 2726,
+        "reply_count": 753,
+        "quote_count": 40
+      }
+    },
+    {
+      "id": "2072015455494037819",
+      "text": "RT @xAIMemphis: Earlier this year, @SpaceX acquired @xAI (now SpaceXAI), which operates the Colossus datacenters in Memphis.\n \nAs SpaceX co…",
+      "created_at": "Tue Jun 30 17:52:35 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2072009696119022017",
+        "text": "Earlier this year, @SpaceX acquired @xAI (now SpaceXAI), which operates the Colossus datacenters in Memphis.\n \nAs SpaceX continues to invest in the area, SpaceX is offering our neighbors in the Memphis area no upfront hardware costs on Residential @Starlink kits for new customers and a discount on home internet service plans for both new and existing customers. \n\nFAQ: https://t.co/TmKSYXOFVT",
+        "created_at": "Tue Jun 30 17:29:42 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2072009692214181888",
+            "url": "https://pbs.twimg.com/media/HMFB1kuXwAAZ6rX.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1937236128010240001",
+          "name": "xAI Memphis",
+          "screen_name": "xAIMemphis",
+          "description": "",
+          "followers_count": 27128,
+          "friends_count": 11,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 193,
+          "favorite_count": 1467,
+          "reply_count": 131,
+          "quote_count": 21
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240644643,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 194,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2072015266746159442",
+      "text": "RT @cb_doge: BREAKING: Philippines becomes the first country in Southeast Asia to commercially launch Starlink Direct-to-Cell through a mob…",
+      "created_at": "Tue Jun 30 17:51:50 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2071920282395369658",
+        "text": "BREAKING: Philippines becomes the first country in Southeast Asia to commercially launch Starlink Direct-to-Cell through a mobile network. \n\nGlobe has secured regulatory approval to offer Starlink Direct-to-Cell service nationwide. https://t.co/5upFuayH8p",
+        "created_at": "Tue Jun 30 11:34:24 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2071895852893745152",
+            "url": "https://video.twimg.com/amplify_video/2071895852893745152/vid/avc1/1080x1350/Y1a5oQNqIZhGzOx5.mp4?tag=28",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1887956,
+          "friends_count": 1001,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 502,
+          "favorite_count": 2487,
+          "reply_count": 272,
+          "quote_count": 51
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240644643,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 504,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2072000613580239234",
+      "text": "帮转招人信息，Kimi Code 招人",
+      "created_at": "Tue Jun 30 16:53:36 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2071921902034288862",
+        "text": "🤠 \nKimi Code也在招人，感兴趣直接发我邮箱 me@kaiyi.cool\n\n感谢大佬们帮忙扩散 捧场 https://t.co/DIt4ULZAM8",
+        "created_at": "Tue Jun 30 11:40:50 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2071921888897515520",
+            "url": "https://pbs.twimg.com/media/HMDx-v4XwAASpol.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1102444843140182016",
+          "name": "Kai",
+          "screen_name": "real_kai42",
+          "description": "独立开发者，20k stars 开源项目 Qwerty Learner 作者，《Web Worker 播客》主播\n\n仅聊技术和生活，仅代表个人观点，不太擅长文字，但话痨∠(｀ω´*) \n\n主页/咨询服务/内推 : https://t.co/ZCsVg4sr1t\nex @Microsoft @BytedanceTalk @hulu",
+          "followers_count": 35471,
+          "friends_count": 1187,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 28,
+          "favorite_count": 202,
+          "reply_count": 32,
+          "quote_count": 20
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 228929,
+        "friends_count": 1676,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 4,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2072000588112343388",
+      "text": "SpaceXAI",
+      "created_at": "Tue Jun 30 16:53:30 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2035562571932024842",
+        "text": "In order to understand the universe, you must explore the universe → https://t.co/E9BY2xFmcL https://t.co/9bF1GLUQZR",
+        "created_at": "Sun Mar 22 03:41:50 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2035562419754344448",
+            "url": "https://video.twimg.com/amplify_video/2035562419754344448/vid/avc1/3840x2160/WRLZ8zB34K1orpho.mp4?tag=21",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1661523610111193088",
+          "name": "xAI",
+          "screen_name": "xai",
+          "description": "",
+          "followers_count": 2005755,
+          "friends_count": 5,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1421,
+          "favorite_count": 7309,
+          "reply_count": 1231,
+          "quote_count": 154
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240644643,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 765,
+        "favorite_count": 4396,
+        "reply_count": 1076,
+        "quote_count": 46
+      }
+    },
+    {
+      "id": "2072000185769586922",
+      "text": "And that’s just the tip of the iceberg",
+      "created_at": "Tue Jun 30 16:51:54 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2071680910009782757",
+        "text": "USAID ran a secret fake Twitter to spark revolution in Cuba. Funded Venezuelan opposition politicians directly. Got expelled from Bolivia after WikiLeaks cables revealed the ambassador admitted aid was \"hidden by our use of third parties.\" All documented. All sourced. This isn't conspiracy, it's declassified.",
+        "created_at": "Mon Jun 29 19:43:13 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2071680907547738113",
+            "url": "https://pbs.twimg.com/media/HMAWzyZXgAE_CaR.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2039934634515951616",
+          "name": "DATA",
+          "screen_name": "DataDiscovered",
+          "description": "The data is public. The charts are free. The conclusions are yours.",
+          "followers_count": 709,
+          "friends_count": 162,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 315,
+          "favorite_count": 1228,
+          "reply_count": 57,
+          "quote_count": 25
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240644643,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2299,
+        "favorite_count": 8955,
+        "reply_count": 817,
+        "quote_count": 57
+      }
+    },
     {
       "id": "2071997217431343357",
       "text": "RT @LinearUncle: 个人强烈推荐一个开源的媲美甚至部分超越codex app 的coding IDE：Orca\nhttps://t.co/DbB7cicLjo\n https://t.co/BGLwVyrXZS\n\nMac/Win/Linux 全平台,  支持所有主流…",

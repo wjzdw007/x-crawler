@@ -1,12 +1,316 @@
 {
   "date": "20260630",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-06-30T14:54:52.443609",
-  "tweet_count": 226,
-  "unique_tweet_count": 226,
-  "total_crawled": 421,
-  "duplicates_removed": 195,
+  "last_crawl_time": "2026-06-30T16:46:17.511403",
+  "tweet_count": 232,
+  "unique_tweet_count": 232,
+  "total_crawled": 426,
+  "duplicates_removed": 194,
   "tweets": [
+    {
+      "id": "2071997217431343357",
+      "text": "RT @LinearUncle: 个人强烈推荐一个开源的媲美甚至部分超越codex app 的coding IDE：Orca\nhttps://t.co/DbB7cicLjo\n https://t.co/BGLwVyrXZS\n\nMac/Win/Linux 全平台,  支持所有主流…",
+      "created_at": "Tue Jun 30 16:40:07 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2071807005275111658",
+        "text": "个人强烈推荐一个开源的媲美甚至部分超越codex app 的coding IDE：Orca\nhttps://t.co/YQCSx5FVTy\n https://t.co/FMKgEb5Aes\n\nMac/Win/Linux 全平台,  支持所有主流Coding agent CLI(CC, codex, pi, opencode etc.),  这是我用过最强大的套壳，其他的我全都卸载了。\n\n功能：\n. 并行worktree\n. computer use(操作电脑，类似codex的电脑使用)\n. 登录态browser（类似codex @chrome）\n. 嵌入式真实 Chromium + Design Mode\n. orca mobile(手机端app，远程控制电脑！）\n. 自动化（定时任务，loop engineering）\n. 语音输入\n. iOS/Android手机模拟器\n. 远程主机控制\n. token使用追踪\n.  GitHub / Linear 原生：PR、issue、看板里直接开\n. orca CLI\n\n我特别强调，喜欢pi的人也非常推荐用这个。",
+        "created_at": "Tue Jun 30 04:04:17 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2071806636956483584",
+            "url": "https://pbs.twimg.com/media/HMCJKM8WgAAGnBr.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2071806782708613121",
+            "url": "https://pbs.twimg.com/media/HMCJSr6XgAExKc7.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2071806915214966786",
+            "url": "https://pbs.twimg.com/media/HMCJaZiWAAIpz5H.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2071806991513645056",
+            "url": "https://pbs.twimg.com/media/HMCJe1xXcAAD-rE.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1239771839464783872",
+          "name": "LinearUncle",
+          "screen_name": "LinearUncle",
+          "description": "👑 AI coding - 职业工程师\n💻 只分享硬核AI编程工具，技巧等",
+          "followers_count": 10242,
+          "friends_count": 1140,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 17,
+          "favorite_count": 123,
+          "reply_count": 16,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 228913,
+        "friends_count": 1676,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 17,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2071995057247297924",
+      "text": "Claude Code 被指在系统提示词里偷偷给中国代理用户“打水印”\n\n一份 Reddit 帖子和一份 GitHub 上的独立验证报告指控：Anthropic 的编程工具 Claude Code 会悄悄检查用户是否通过中国相关的代理服务器访问，如果是，就在发给 Anthropic 的系统提示词里用几乎肉眼不可见的 Unicode 字符差异来“标记”这些用户。\n\n具体怎么做的？安全研究员 Adnane Khan 在 GitHub 上发布了针对 Claude Code v2.1.193 到 v2.1.196 的逆向分析报告。他从二进制文件中提取出了完整的 JavaScript 代码，还原了整个机制。\n\nClaude Code 在每次请求时都会在系统提示词中写入一行“Today's date is 2026-06-30.”之类的日期信息。报告称，当用户设置了 ANTHROPIC_BASE_URL 环境变量（用来把请求转发到非 Anthropic 官方的代理服务器时），Claude Code 会执行以下检查：\n\n第一，看你的代理服务器域名是否在一个包含 147 个条目的列表里。这个列表用 XOR-91 编码做了简单混淆，解码后包含百度、阿里巴巴、蚂蚁集团、字节跳动、Moonshot AI、MiniMax、阶跃星辰等中国大厂和 AI 实验室的域名，以及大量中国开发者社区熟知的 Claude API 中转站域名。\n\n第二，看你的系统时区是不是 Asia/Shanghai 或 Asia/Urumqi。\n\n然后，它用两种方式把检测结果“编码”进系统提示词。一是日期分隔符：如果命中中国时区，日期格式从 2026-06-30 变成 2026/06/30。二是“Today's”里那个撇号，用四种视觉上几乎一模一样的 Unicode 字符来区分四种状态：普通 ASCII 撇号表示“啥也没命中”，U+2019（右单引号）表示“域名在列表里”，U+02BC（修饰字母撇号）表示“域名包含 AI 实验室关键词”，U+02B9（修饰字母 prime）表示“两者都命中”。\n\nAdnane Khan 的报告用了一个精确的词来描述这个机制：隐蔽信道（covert channel）。\n\n这些字符差异，正常用户几乎不可能注意到。它们不会以单独的遥测数据包发出，而是搭便车藏在每次请求都会发送的系统提示词里。\n\n验证报告的作者在结论部分做了一个关键区分：这个机制是代理触发的（proxy-gated），只有在用户主动设置了非 Anthropic 官方 API 端点时才会激活。正常通过 api.anthropic. com 使用 Claude Code 的绝大多数用户不受影响。它也不是数据外泄，没有额外的网络请求或文件访问，只是在已有的系统提示词里做了字符替换。\n\n但报告也指出了两个问题。\n\n第一，它是未公开的。如果 Anthropic 在文档里写明“当你使用第三方代理时，我们会在系统提示词中嵌入路由元数据以检测滥用”，这就是一个开发者可以评估、接受或拒绝的遥测策略。但把信号藏在肉眼不可见的 Unicode 字符里，用 XOR 混淆域名列表，这让人没法审计。\n\n第二，它误伤范围太广。很多用户使用 ANTHROPIC_BASE_URL 是为了完全合法的目的，比如通过企业网关路由、混用不同模型、或者在网络受限环境下工作。这些用户会被一视同仁地打上标记。而真正的专业转售商，看到这种机制后绕过它只需要几秒钟。报告原文的说法是：作为反滥用手段它很弱，作为隐私问题它标记了不该标记的人群。\n\nClaude Code 不是一个普通的聊天窗口。它能读你的代码仓库、运行终端命令、修改文件。Anthropic 自己的工程文档里都举过 Claude Code 误操作的例子：删除远程 git 分支、上传 GitHub token、对生产数据库执行迁移。对于这样一个需要深度信任才能使用的工具，用户有权知道它在背后做了什么。\n\n截至发稿时，Anthropic 尚未对这一指控做出公开回应。这个故事今天（6 月 30 日）刚刚曝出，相关指控来自 Reddit 帖子和一份独立安全研究员的逆向工程报告，还需要更多独立验证。代码已经被提取并公开，任何有能力的开发者都可以自行检查 Claude Code 的二进制文件来确认或否认这些发现。",
+      "created_at": "Tue Jun 30 16:31:32 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2071971609183678544",
+        "text": "‼️ BREAKING: Anthropic has embedded hidden spyware-like code in Claude Code that covertly targets Chinese users. It then sends information regarding every user by injecting it into their prompt message.\n\nClaude Code is sending info like timezone, proxy and possible AI Lab connections into the system prompt in ways Chinese users can't notice.\n\nA coding agent with repo and command permissions should not silently hide routing metadata inside prompts. This is a serious breach of user trust.",
+        "created_at": "Tue Jun 30 14:58:21 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2071967492918910977",
+            "url": "https://pbs.twimg.com/media/HMEbdQGWoAERtu7.png"
+          },
+          {
+            "type": "photo",
+            "id": "2071968165311959040",
+            "url": "https://pbs.twimg.com/media/HMEcEY9WUAA-VtP.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1831435289341894656",
+          "name": "International Cyber Digest",
+          "screen_name": "IntCyberDigest",
+          "description": "Your weekly go-to cybersecurity newsletter, curated and commented on by our senior analysts.",
+          "followers_count": 177872,
+          "friends_count": 292,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 495,
+          "favorite_count": 4225,
+          "reply_count": 225,
+          "quote_count": 165
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 228913,
+        "friends_count": 1676,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 23,
+        "reply_count": 4,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2071994061624426582",
+      "text": "https://t.co/VgpWIg2BFI",
+      "created_at": "Tue Jun 30 16:27:34 +0000 2026",
+      "lang": "zxx",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2071994058247946240",
+          "url": "https://pbs.twimg.com/media/HMEznjqWwAAuzde.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240642224,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 937,
+        "favorite_count": 5020,
+        "reply_count": 990,
+        "quote_count": 96
+      }
+    },
+    {
+      "id": "2071992108337033528",
+      "text": "Claude Code 这个宣传视频从 X 的评论上看有点翻车了😂\n\n这个宣传吧，用的数据虽然都很强大的样子：每天 4500 次生产部署，73% 的 PR 由 AI 辅助，Niklas 本人同时开 5 到 10 个 Claude 会话跑在不同的 git worktree 里，2000 万行的 monorepo 里 agent 跑得挺好，做代码迁移加了验证机制后成功率从 25% 拉到了 80%。\n\n但问题是他们选的 Spotify，很多人是 Spotify 的用户，都没有感到这两年 Spotify 产品质量有啥提升，反而变差了，也就是说他们虽然用了 AI，但是用户是感知不到提升的\n\n摘录几条评论：\n\n> Spotify 是朋友圈里大家还在付费的质量最低的消费级 App，过去几年没变好甚至在变差。这类报道只讲部署次数这种无意义指标，不讲用户满意度和真实产品结果，让 AI 和 Claude 看起来像小丑。\n> Mitchell Hashimoto（Ghostty 作者、HashiCorp 创始人）\n\n> 最近四周里有三周播客链接发不到 Spotify，播客发布系统和网页播放器接连出问题。一边是每天 4500 次部署，一边是连播客都发不上去，对比太讽刺了。\n> Gergely Orosz（知名软件工程博主）\n\n> Spotify 的播客界面像小学生画的，与其每天部署 4500 次，不如一天只部署 1 次但做点真正好的东西。\n> ThePrimeagen\n\n评论区大量重复出现的吐槽包括：\n- 4500 次部署到底在部署什么？\n- App 十年没怎么变过。产品感觉停滞多年。\n- 为什么 bug 越来越多？\n- 离线播放失效、桌面端卡顿、缓存清不干净。\n- 这不叫部署，这叫垃圾代码生产机。\n\n支持的声音也有，但很少，点赞也低。有人对“加 judge 后成功率从 25% 到 80%”这个细节感兴趣，有人觉得大规模 monorepo 下跑 agent 的实践有参考价值。\n\n这次翻车的根源其实很简单：Claude 展示的全是工程侧的数字，部署次数、PR 占比、agent 会话数、成功率提升，但完全没有展示用户侧的价值。产品更好用了吗？Bug 更少了吗？用户体验提升了吗？一个字都没提。\n\nAI 宣传总是在讲效率提升了多少，讲代码产出快了多少，但如果用户感知不到任何变化，甚至觉得产品在变差，那这些数字就成了反面教材：用 AI 生产了更多代码，但产品并没有因此变好。\n\n这其实也是当下整个 AI Agent 面临的一个根本问题：我们到底在用什么来衡量 AI 的价值？如果衡量标准只停留在“写了多少行代码”、“部署了多少次”、“PR 通过率多高”，那只是在衡量生产效率，但用户更关心产品质量。\n\n用户不关心你每天部署多少次，只关心用了 AI 后 App 是不是更好用了，是不是解决用户真实痛点了。",
+      "created_at": "Tue Jun 30 16:19:49 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2071671418245492926",
+        "text": "Boris sat down with Spotify VP of Engineering Niklas Gustavsson. \n\nSpotify ships 4,500 production deploys a day, and 73% of PRs are now AI-assisted. https://t.co/Bc0xPduumG",
+        "created_at": "Mon Jun 29 19:05:30 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2071669943855370240",
+            "url": "https://video.twimg.com/amplify_video/2071669943855370240/vid/avc1/3840x2160/XeUUNQPpLDt9_bQt.mp4?tag=28",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2024518793679294464",
+          "name": "ClaudeDevs",
+          "screen_name": "ClaudeDevs",
+          "description": "Official updates for developers building with @ClaudeAI",
+          "followers_count": 533719,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 185,
+          "favorite_count": 3444,
+          "reply_count": 369,
+          "quote_count": 481
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 228913,
+        "friends_count": 1676,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 5,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2071984597311557807",
+      "text": "I will take that as a compliment https://t.co/kTZqkuPqMf",
+      "created_at": "Tue Jun 30 15:49:58 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2071984562767265792",
+          "url": "https://pbs.twimg.com/media/HMEq-2PWAAA186p.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240642224,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 615,
+        "favorite_count": 6423,
+        "reply_count": 1594,
+        "quote_count": 92
+      }
+    },
+    {
+      "id": "2071978911919923676",
+      "text": "🎯",
+      "created_at": "Tue Jun 30 15:27:22 +0000 2026",
+      "lang": "art",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2071770618165362795",
+        "text": "It sounds crazy, But it actually seems True! https://t.co/vUQA744dP9",
+        "created_at": "Tue Jun 30 01:39:41 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2071770556559413250",
+            "url": "https://video.twimg.com/amplify_video/2071770556559413250/vid/avc1/720x1280/DHLeyO1uI7NALF-3.mp4?tag=28",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1318263321745907713",
+          "name": "Johnny Midnight ⚡️",
+          "screen_name": "its_The_Dr",
+          "description": "Join me weekdays at WFJB AM 1776 (parody account) MAGA🇺🇸 With Great Power, Comes Great Responsibility 💥Dinesh, Ryan Fournier. No DMs No Porn.",
+          "followers_count": 668222,
+          "friends_count": 18881,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 846,
+          "favorite_count": 3951,
+          "reply_count": 74,
+          "quote_count": 40
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240642224,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 648,
+        "favorite_count": 2951,
+        "reply_count": 687,
+        "quote_count": 22
+      }
+    },
     {
       "id": "2071968172647858409",
       "text": "https://t.co/05z7mrhVYu",

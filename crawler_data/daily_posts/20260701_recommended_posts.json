@@ -1,12 +1,122 @@
 {
   "date": "20260701",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-01T15:02:12.900712",
-  "tweet_count": 209,
-  "unique_tweet_count": 209,
-  "total_crawled": 405,
-  "duplicates_removed": 196,
+  "last_crawl_time": "2026-07-01T16:49:28.098734",
+  "tweet_count": 211,
+  "unique_tweet_count": 211,
+  "total_crawled": 409,
+  "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2072360872920375547",
+      "text": "\"Make it Work. Make it Right. Make it Fast.\" https://t.co/SMTrrDJp2c",
+      "created_at": "Wed Jul 01 16:45:09 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2072360743987486720",
+          "url": "https://pbs.twimg.com/media/HMKBHefWoAA15iR.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2072141085460332941",
+        "text": "即使很多时候写文件是最优解，软件工程的正确实践是：先无脑上 sqlite，然后把局部 hotspot 改成文件。而不是反过来，先把上来就用 sqlite 批判一番。",
+        "created_at": "Wed Jul 01 02:11:47 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "28964807",
+          "name": "FENG DONG",
+          "screen_name": "middlefeng",
+          "description": "Author of Nuo Model Viewer. Programming C++, Lua, DirectX, Windows, iOS, macOS, Metal. Linux kernel fan. Atheism leads to singularity and God save us.",
+          "followers_count": 7033,
+          "friends_count": 763,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 19,
+          "reply_count": 0,
+          "quote_count": 2
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 229079,
+        "friends_count": 1678,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2072352618676953539",
+      "text": "Claude Science System Prompt and Skills\n\nhttps://t.co/l7r3KrpG77 https://t.co/OEmxno9WDI",
+      "created_at": "Wed Jul 01 16:12:21 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2072352531632562176",
+          "url": "https://pbs.twimg.com/media/HMJ5pdFXIAA8P5Q.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2072086962190884947",
+        "text": "Anthropic 今天发布了 Claude Science，一个面向科学研究者的 AI 工作台。它的定位很明确：做科学研究领域的 Claude Code。\n\n去年 Claude Code 改变了程序员的工作方式，Anthropic CEO Dario Amodei 认为 Claude Science 能在生命科学领域复制同样的事。考虑到 Anthropic 目前年化收入已达 420 亿美元、估值 9650 亿美元，这个野心至少有财力支撑。\n\nClaude Science 不是新模型。它用的还是现有的 Claude 模型（包括 Opus 4.8），没有专门训练过生物学能力。它做的事情是把科研工作流程整合到了一个环境里。\n\n【1】解决什么问题\n\n做过计算生物学的人都知道，日常工作是在一堆工具之间反复横跳：查文献用 PubMed，写代码用 Jupyter，跑分析用 R，提交计算任务要登录集群终端，看蛋白结构又得换个软件。每个数据库还有自己的格式和查询方式。\n\nClaude Science 把这些东西塞进了同一个界面。一个主 AI Agent 充当“项目经理”，连接了 60 多个科学数据库，涵盖基因组学、单细胞分析、蛋白质组学、结构生物学、化学信息学等领域。用自然语言提问，它就会调用相应的专业 Agent 去不同数据库查询和汇总。\n\n它还能往下分派任务，生成子 Agent 来处理具体工作，或者把任务交给用户自己创建的专家 Agent。另外有一个专门的审查 Agent，负责检查引用和计算结果是否正确。\n\n【2】两个比较实际的特性\n\n第一个是可复现性。Claude Science 生成的每张图表都附带生成它的完整代码、运行环境、创建过程的自然语言描述，以及完整对话记录。几个月后回头看，还能还原当时的整个分析过程。想调整图表也简单，用自然语言说“把 Y 轴改成对数刻度”或者“去掉网格线”，Agent会自动修改对应代码。\n\n第二个是本地运算。它可以装在 macOS 或 Linux 上，也可以通过 SSH 连接到实验室的高性能计算集群。数据不用全部传到云端，敏感数据可以留在本地基础设施上，只有分析每一步需要的上下文信息才会发送给 Claude。如果计算量大，它还能调用 Modal 账户按需扩展到上百个 GPU。\n\n【3】早期用户怎么说\n\nGladstone 研究所的 Sean Whalen 用它几天之内从零搭了一个基因组浏览器。UCSF 的 Stephen Francis 说，Claude Science 在他们的 RNA-seq 数据里发现了一个实验室病毒污染物，他们团队在这个问题上卡了将近一年。Allen 研究所的 Jérôme Lecoq 用它搭了一套多 Agent 文献综述系统，让多个子 Agent 读几千篇论文、提取核心发现，然后按叙事结构生成综述，以前他的团队写这样一篇综述要两年。\n\nMIT 的 Iain Cheeseman 的评价可能最直观，他说这个工具让他作为一个非计算生物学背景的人能做以前根本做不了的分析，他发现自己会把积攒多年的研究问题拿去用 Claude Science 试。\n\n【4】竞争格局\n\nAnthropic 并不是唯一盯上这个方向的公司。OpenAI 在今年 4 月推出了 GPT-Rosalind，一个专门针对生命科学的推理模型，6 月初又做了一轮能力升级。两者的思路不太一样：GPT-Rosalind 是专门训练的领域模型，侧重生物推理能力本身；Claude Science 不改模型，改的是工作流程，把现有模型包装成一个集成了数据库、计算资源和协作 Agent 的科研平台。\n\nGPT-Rosalind 目前只对签了企业协议的美国客户开放研究预览。Claude Science 的门槛低一些，Pro（20 美元/月）以上的付费用户就能用。\n\n这反映了 Anthropic 的策略转变，从单纯卖模型能力，转向拥有特定行业的操作层，就像 Claude Code 成了软件开发的操作层一样。\n\n【5】怎么用\n\nClaude Science 今天开始公测，macOS 和 Linux 可用，需要 Pro、Max、Team 或 Enterprise 订阅。Team 和 Enterprise 用户需要管理员开启权限。学术机构和非营利研究组织的活跃实验室可以申请 Team 计划的折扣席位。\n\nAnthropic 还会资助最多 50 个 Claude Science 研究项目，每个项目最高 3 万美元额度，Modal 另外提供最多 2000 美元的计算资源。申请截止 7 月 15 日，结果 7 月 31 日前通知，项目运行时间为 9 月 1 日到 12 月 1 日。",
+        "created_at": "Tue Jun 30 22:36:43 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 229079,
+          "friends_count": 1678,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 23,
+          "favorite_count": 125,
+          "reply_count": 27,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 229079,
+        "friends_count": 1678,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 6,
+        "favorite_count": 50,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2072322531206602948",
       "text": "RT @KonstantinKisin: We tax cigarettes to reduce smoking.\nWe tax alcohol to reduce drinking.\nWe tax fuel to reduce driving.\n\nWhat do you th…",

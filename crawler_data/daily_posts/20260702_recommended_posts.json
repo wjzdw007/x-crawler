@@ -1,12 +1,126 @@
 {
   "date": "20260702",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-02T00:43:21.753823",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-07-02T03:07:52.290492",
+  "tweet_count": 202,
+  "unique_tweet_count": 202,
+  "total_crawled": 400,
+  "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2072505319633424772",
+      "text": "RT @SpaceX: Teams recently completed build and acceptance testing of our 1,000th Merlin 1D engine for Falcon’s first stage! With Falcon’s r…",
+      "created_at": "Thu Jul 02 02:19:08 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2072464558732824680",
+        "text": "Teams recently completed build and acceptance testing of our 1,000th Merlin 1D engine for Falcon’s first stage! With Falcon’s reusability, recovering these engines has enabled continued reliability enhancements, making Merlin one of the most reliable rocket engines ever manufactured",
+        "created_at": "Wed Jul 01 23:37:09 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2072464101188784128",
+            "url": "https://pbs.twimg.com/media/HMLfHqEbUAA-kFk.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2072464410392842240",
+            "url": "https://pbs.twimg.com/media/HMLfZp8a0AAnMqA.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2072464434719825920",
+            "url": "https://pbs.twimg.com/media/HMLfbEkbIAAazEE.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41876550,
+          "friends_count": 123,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 905,
+          "favorite_count": 6429,
+          "reply_count": 416,
+          "quote_count": 75
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240647260,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 905,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2072482750636966031",
+      "text": "RT @laike9m_: 到底要不要人工审阅 AI 生成的代码，我是这么看的：\n\n- 在 agentic coding 时代，自动化测试变得尤为重要。所有能被自动验证的行为都应该被验证。AI 写单元测试很容易，但对于更复杂的集成测试，仍然需要人去搭建——这些工作很多是一次性的…",
+      "created_at": "Thu Jul 02 00:49:27 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2072383502356734102",
+        "text": "到底要不要人工审阅 AI 生成的代码，我是这么看的：\n\n- 在 agentic coding 时代，自动化测试变得尤为重要。所有能被自动验证的行为都应该被验证。AI 写单元测试很容易，但对于更复杂的集成测试，仍然需要人去搭建——这些工作很多是一次性的，但也有些需要跟着项目迭代。\n\n- AI code review 能搞定 90% 过往需肉眼检查的内容（语法、注释、边界条件、logging、etc），当然前提是团队提供了严格的代码规范。这并不难。\n\n- 仍然需要人把关的那 10%，是「架构设计」。AI 能写出完全符合代码规范，但是架构一团糟的代码。而「设计」往往项目甚至单个功能相关的，很难被规范化。这里人类的经验就很重要了。\n\n- 如何让人从 AI 生成的巨量代码中快速提炼出架构设计？好的做法是让 AI 往 commit message 里加入「修改了哪些代码」的总结，并提炼出架构图。很多 AI code review 产品已经是这么做的了。人不再需要去看代码，看总结就行了。\n\n- 很多场合下，的确没有必要人工 review：比如一次性脚本、使用成熟框架（Django, React）的项目等等。对于那些复杂且会长久维护的项目，人类 review 是必要的，但并不等于人要去读每一行代码。\n\n- 最好维护一个包含设计选择、代码结构的文档，让 AI 实时更新。这对于人和 AI 都有极大帮助，能减少很多不必要的 turns 和上下文开销。",
+        "created_at": "Wed Jul 01 18:15:04 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1674494790",
+          "name": "laike9m",
+          "screen_name": "laike9m_",
+          "description": "Software engineer @julesagent\n\nhttps://t.co/LGIKFkoQbn - Mac 上最好的划词 AI 搜索 & 翻译\n\nTelegram/Gmail 同 ID",
+          "followers_count": 22116,
+          "friends_count": 987,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 13,
+          "favorite_count": 82,
+          "reply_count": 16,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 229127,
+        "friends_count": 1679,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 13,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2072467206273691790",
       "text": "已经到5小时限额了😑 https://t.co/jWgMzi9PLw",

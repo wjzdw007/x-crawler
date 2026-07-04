@@ -1,0 +1,67 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 229297,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260704",
+  "last_updated": "2026-07-04T06:45:34.634003",
+  "tweet_count": 1,
+  "tweets": [
+    {
+      "id": "2073286406558949828",
+      "text": "baoyu-design skill 更新： 支持 PPT 动画了\n\n现在有很多朋友用这个 Skill 做 PPT 了，我自己也用，真的挺好用的。有朋友问能不能支持 PPT 动画，但当前这个skill生成的是 HTML 格式的 PPT，然后借助 PptxGenJS 导出为 PPTX，这个库有个局限就是不支持 PPT 的动画。\n\n之前借助 Opus 4.8 确实没搞定，但现在有 Fable 5 了，这时候就体现出 Fable 5 的价值了，它对于 PPTX 的 XML 格式了如指掌，迭代了几轮就搞定了。\n\n视频前半部分是 HTML 页面的动画效果，后半部分是在 KeyNote 中预览播放的效果。动画细节上还是有点小出入，但常用的几个动画应该没什么问题。\n\n推荐去试试看：\nbaoyu-design Skill：https://t.co/d2EaYV6q7j",
+      "created_at": "Sat Jul 04 06:02:53 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2073283886402981888",
+          "url": "https://video.twimg.com/amplify_video/2073283886402981888/vid/avc1/2560x1440/LXIxGstoY7Mo7ml7.mp4?tag=28",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2067876611873964284",
+        "text": "baoyu-design skill 更新：可以在制作 PPT、动画视频或者网站时调用 AI 生图技能配图了，当然需要你本地 Agent 有配置画图 Skill。\n\n如果是 Codex 可以直接调用内置画图工具，如果你用 Claude Code 的话可以配合 baoyu-image-gen skill 去调用 Codex CLI 画图。\n\n用它来生成 PPT 效果特别好，可以自动帮你在 PPT 合适位置插入配图，最牛的是你可以连图片一起导出为 PPTX，还可以接着用 PowerPoint 或者 Keynote 二次编辑。\n\n推荐去试试看：\nbaoyu-design Skill：https://t.co/d2EaYV6q7j\nbaoyu-image-gen Skill：https://t.co/7yPdsrqs3H",
+        "created_at": "Fri Jun 19 07:46:18 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2067875397841158144",
+            "url": "https://pbs.twimg.com/media/HLKRt-AXgAAFSGw.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 229297,
+          "friends_count": 1679,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 90,
+          "favorite_count": 469,
+          "reply_count": 66,
+          "quote_count": 8
+        }
+      },
+      "stats": {
+        "retweet_count": 6,
+        "favorite_count": 24,
+        "reply_count": 4,
+        "quote_count": 0
+      }
+    }
+  ]
+}

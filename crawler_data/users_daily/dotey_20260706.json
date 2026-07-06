@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 229623,
+    "followers_count": 229625,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260706",
-  "last_updated": "2026-07-06T21:27:06.869008",
-  "tweet_count": 3,
+  "last_updated": "2026-07-06T23:04:55.952479",
+  "tweet_count": 4,
   "tweets": [
     {
       "id": "2074011027881017559",
@@ -187,6 +187,59 @@
         "retweet_count": 11,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2074255513353642090",
+      "text": "Anthropic Claude Code 工程师 Thariq Shihipar 上周在 AI Engineer World's Fair 上做了一场关于 Fable 5 的演讲。\n\n他提了四个主题，最有信息量的是前两个。\n\n第一个叫“解除 Claude 的束缚”（unhobbling Claude）。\n\n他的核心观点是，模型的能力是在使用过程中逐步摸索出来的，很难一开始就设计出来的，所以模型变强的方式往往出人意料。\n\n举例来说：你问聊天模型哪些宝可梦的名字以 aw 结尾，它答不上来，因为它虽然知道所有宝可梦的名字，但没法在脑子里一个一个过。但如果你给它代码执行工具，它会去拉全部宝可梦列表然后写脚本过滤，两秒钟就能找出答案。\n\nAnthropic 内部把这叫“能力悬余”（capability overhang），模型其实已经能做很多事，只是我们还没找到正确的打开方式。\n\nClaude Code 最近一个关键变化是砍掉了 80% 的系统提示词。早期模型需要详细的指令和大量示例，但 Fable 这个级别的模型反过来了，给太多示例反而会限制它，因为它自己的想象力比你给的示例更丰富。新的做法是给上下文，不给约束；告诉它情况，不告诉它不许做什么。\n\n第二个主题叫“找到你的未知”。\n\n你写给模型的提示词就像是“地图”，但真正的代码库和现实世界是“领地”。模型在领地里碰到地图上没标注的东西，就是一个未知数，就得自己做决定。Fable 5 的活动范围太大了，如果你不提前搞清楚这些未知数，它会在你没想到的地方做出你不想要的决策。\n\n他给了几个具体方法：\n\n让 Fable 做一次“盲区扫描”（blind spot pass），在动手之前先通读相关代码，帮你找出你自己都不知道的潜在问题。\n\n让它一口气做四个风格完全不同的原型，这样你可以通过反应来发现自己的偏好，而不是先想清楚再描述。\n\n让它提问你，通过提问把你脑子里那些\"知道但没写下来\"的细节挖出来。\n\n给它一段别的系统里的代码当参考地图，比直接写规格说明书更高效。\n\n让它在执行过程中记录每个偏离你预期的决策点，事后你能看到它在哪些地方遇到了你没考虑到的问题。\n\n最后让它反过来考你，确保你理解它做了什么，这样你在提 PR 的时候能说清楚发生了什么。\n\n演讲的后半段内容就偏感性了，有点像@onevcat 写的那篇《当编程变得不再有趣》 https://t.co/AKtlV7h0ED。\n\n他说第一次用 Fable 的时候，既觉得获得了很多，也觉得失去了什么。他以前开过一家三十人的 YC 创业公司，当时团队因为写代码太难，被迫在各种功能之间做取舍。几周前他回去看那个代码库，用 Fable 几小时就做完了当年要花好几周的事。他真的很喜欢手写代码时那种在脑子里旋转整个代码库的感觉，但也记得那些熬夜调 bug、项目一个接一个失败的日子。\n\n他最后的建议是“打破常规”（be unreasonable）。\n\n以前做取舍是本能，好、快、省三选二，现在他觉得这套逻辑该被推翻了：与其先设好优先级排除掉一部分，不如逼一下现实，看它是不是真的会逼你二选一。他演讲前一天花四个小时用 Fable 做完了这场演讲的全部 PPT。",
+      "created_at": "Mon Jul 06 22:13:46 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2074255330750418945",
+          "url": "https://video.twimg.com/amplify_video/2074255330750418945/vid/avc1/1280x720/nxW2PFsvJrmUpsxG.mp4?tag=28",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2074019009226322078",
+        "text": "来自 Claude Code 团队成员 Thariq 分享的用好 Fable 5模型的秘诀。\n\n以下内容整理自 Thariq 的视频：\n\n过去，我们需要时刻检查 Claude 是否在正确地做事。比如，把任务拆分成小块交给它、反复检查它的输出，并在它过早停下时发现问题。但有了 Claude Fable 5，我反而发现自己越来越多地是在检查 Claude 是否在做正确的工作。\n\nFable 可以一次运行几个小时，它会测试自己的工作，老实说，我经常发现它写出的代码比我的还要好。我的工作变得越来越侧重于指引方向和前期设置，而不是监督。因此，以下是我在使用 Fable 时，工作方式发生的三个改变。\n\n首先，我把 Claude 当作一个思维伙伴。我给它提供所需的上下文。其次，我给 Claude 设定目标并提供验证这些目标的方法。最后，我试着变得更有野心，让 Claude 去做我以前从未尝试过的事情。\n\n第一点，你要越来越多地把 Claude 视为一个思维伙伴。\n\n我在使用 Fable 时发现的一个失败模式是，我可能实际上并不知道自己想要什么，或者我可能不知道什么是可行的。但是，在我的思考过程中尽早让 Claude 参与进来，我就可以在实施之前发现这些问题。\n\n举个例子，我会先从一个小的需求规范（spec）开始，在编写最终的规范文件之前，我会要求 Claude 就实施方案对我进行“面试提问”。这有助于我建立信心，确信自己知道想要什么。或者，我也可能抛出一个想法，让它想出几个可以发展的方向，并制作一些 HTML 页面原型供我审查。\n\n当我准备好进行实施时，我会尽量给它提供上下文，而不仅仅是约束条件，这样 Claude 就能真正帮助我达成目标。\n\n例如，我不会说“保持简单，不要过度设计”，而是会说：“嘿，这个功能是个实验。我们很有可能在一个月后删掉它。所以不要构建任何丢弃起来会很心疼的东西。”给它这样的上下文，能让它发现你可能都没想到的事情。\n\n一旦你知道自己想要什么了，特别是面对一个雄心勃勃的难题时，考虑给 Claude 设定目标以及验证目标的方法。\n\n为此，我们推出了两个很好用的新功能，我也鼓励大家试一试：/goal（目标指令）和 workflows（工作流）。目标功能帮助 Claude 持续工作直至完成，而工作流则帮助 Claude 验证其工作。\n\n因此，在我写完规范文档后，我可能会告诉 Claude：“设定一个目标，以完整实现该规范。然后使用工作流来验证计划的每个部分，并准备一份报告，说明已实现了哪些内容以及是否有任何差异。”这让 Claude 能够尽可能以富有创意和周到的方式发挥其能力，同时又能确保它正在构建你想要的东西。\n\n最后，试着更有野心一些。\n\nFable 真的是一个令人难以置信的模型，它促使我在工作中打破常规去思考。例如，我正在用 Fable 剪辑这个视频。如果有什么事情是你以为大语言模型做不到的，给它个机会试试。我们由衷地认为，Fable 提高了“一切皆有可能”的上限。",
+        "created_at": "Mon Jul 06 06:33:59 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2074018416457900032",
+            "url": "https://video.twimg.com/amplify_video/2074018416457900032/vid/avc1/3840x2160/RmIRcN5hA7u4kJwt.mp4?tag=28",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 229625,
+          "friends_count": 1681,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 35,
+          "favorite_count": 278,
+          "reply_count": 28,
+          "quote_count": 8
+        }
+      },
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 40,
+        "reply_count": 1,
         "quote_count": 0
       }
     }

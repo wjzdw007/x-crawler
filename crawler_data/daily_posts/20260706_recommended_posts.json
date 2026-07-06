@@ -1,12 +1,524 @@
 {
   "date": "20260706",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-06T02:43:31.876236",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-07-06T08:17:33.330172",
+  "tweet_count": 208,
+  "unique_tweet_count": 208,
+  "total_crawled": 400,
+  "duplicates_removed": 192,
   "tweets": [
+    {
+      "id": "2074019009226322078",
+      "text": "来自 Claude Code 团队成员 Thariq 分享的用好 Fable 5模型的秘诀。\n\n以下内容整理自 Thariq 的视频：\n\n过去，我们需要时刻检查 Claude 是否在正确地做事。比如，把任务拆分成小块交给它、反复检查它的输出，并在它过早停下时发现问题。但有了 Claude Fable 5，我反而发现自己越来越多地是在检查 Claude 是否在做正确的工作。\n\nFable 可以一次运行几个小时，它会测试自己的工作，老实说，我经常发现它写出的代码比我的还要好。我的工作变得越来越侧重于指引方向和前期设置，而不是监督。因此，以下是我在使用 Fable 时，工作方式发生的三个改变。\n\n首先，我把 Claude 当作一个思维伙伴。我给它提供所需的上下文。其次，我给 Claude 设定目标并提供验证这些目标的方法。最后，我试着变得更有野心，让 Claude 去做我以前从未尝试过的事情。\n\n第一点，你要越来越多地把 Claude 视为一个思维伙伴。\n\n我在使用 Fable 时发现的一个失败模式是，我可能实际上并不知道自己想要什么，或者我可能不知道什么是可行的。但是，在我的思考过程中尽早让 Claude 参与进来，我就可以在实施之前发现这些问题。\n\n举个例子，我会先从一个小的需求规范（spec）开始，在编写最终的规范文件之前，我会要求 Claude 就实施方案对我进行“面试提问”。这有助于我建立信心，确信自己知道想要什么。或者，我也可能抛出一个想法，让它想出几个可以发展的方向，并制作一些 HTML 页面原型供我审查。\n\n当我准备好进行实施时，我会尽量给它提供上下文，而不仅仅是约束条件，这样 Claude 就能真正帮助我达成目标。\n\n例如，我不会说“保持简单，不要过度设计”，而是会说：“嘿，这个功能是个实验。我们很有可能在一个月后删掉它。所以不要构建任何丢弃起来会很心疼的东西。”给它这样的上下文，能让它发现你可能都没想到的事情。\n\n一旦你知道自己想要什么了，特别是面对一个雄心勃勃的难题时，考虑给 Claude 设定目标以及验证目标的方法。\n\n为此，我们推出了两个很好用的新功能，我也鼓励大家试一试：/goal（目标指令）和 workflows（工作流）。目标功能帮助 Claude 持续工作直至完成，而工作流则帮助 Claude 验证其工作。\n\n因此，在我写完规范文档后，我可能会告诉 Claude：“设定一个目标，以完整实现该规范。然后使用工作流来验证计划的每个部分，并准备一份报告，说明已实现了哪些内容以及是否有任何差异。”这让 Claude 能够尽可能以富有创意和周到的方式发挥其能力，同时又能确保它正在构建你想要的东西。\n\n最后，试着更有野心一些。\n\nFable 真的是一个令人难以置信的模型，它促使我在工作中打破常规去思考。例如，我正在用 Fable 剪辑这个视频。如果有什么事情是你以为大语言模型做不到的，给它个机会试试。我们由衷地认为，Fable 提高了“一切皆有可能”的上限。",
+      "created_at": "Mon Jul 06 06:33:59 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2074018416457900032",
+          "url": "https://video.twimg.com/amplify_video/2074018416457900032/vid/avc1/3840x2160/RmIRcN5hA7u4kJwt.mp4?tag=28",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2073100352921215386",
+        "text": "https://t.co/hPiZr1kG7r",
+        "created_at": "Fri Jul 03 17:43:35 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "352806502",
+          "name": "Thariq",
+          "screen_name": "trq212",
+          "description": "Claude Code @anthropicai.   prev YC W20, @southpkcommons, @medialab",
+          "followers_count": 304261,
+          "friends_count": 1856,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 996,
+          "favorite_count": 7894,
+          "reply_count": 232,
+          "quote_count": 332
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 229525,
+        "friends_count": 1680,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 70,
+        "reply_count": 10,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2074011027881017559",
+      "text": "RT @ewind_dev: 非常激动地和大家分享，在 Fable 加持下，我终于做出了多年来设想中最极致的跨平台 UI 框架，这就是 PocketJS！\n\n将 QuickJS 移植至内存仅 32MB 的索尼 PSP，结合标准版 SolidJS 和 Vue Vapor，配合编译…",
+      "created_at": "Mon Jul 06 06:02:16 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2073954581017698454",
+        "text": "非常激动地和大家分享，在 Fable 加持下，我终于做出了多年来设想中最极致的跨平台 UI 框架，这就是 PocketJS！\n\n将 QuickJS 移植至内存仅 32MB 的索尼 PSP，结合标准版 SolidJS 和 Vue Vapor，配合编译期 tailwind 样式引擎，实现了 8MB 内存下 60fps 的流畅动画！\n\n来拥抱裸金属 Modern Web 吧！",
+        "created_at": "Mon Jul 06 02:17:58 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2073945110979723734",
+          "text": "Introducing PocketJS 🕹️\n\nimport { createSignal } from \"solid-js\"\non a Sony PSP.\n\nNo forked framework. Real Solid and Vue Vapor, compile-time Tailwind design system, and 60 FPS animation in 8 MB of RAM!\n\nBare Metal Modern Web ⚡️ https://t.co/dOSKUlwEsu",
+          "created_at": "Mon Jul 06 01:40:21 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2073944895321260032",
+              "url": "https://video.twimg.com/amplify_video/2073944895321260032/vid/avc1/1280x684/Sf5WC1KnqV7SWYt-.mp4?tag=28",
+              "bitrate": 2176000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "2073930803839746048",
+            "name": "PocketJS",
+            "screen_name": "pocket_js",
+            "description": "",
+            "followers_count": 131,
+            "friends_count": 6,
+            "verified": false,
+            "is_blue_verified": false
+          },
+          "stats": {
+            "retweet_count": 16,
+            "favorite_count": 180,
+            "reply_count": 1,
+            "quote_count": 3
+          }
+        },
+        "user": {
+          "id": "1265957219612258307",
+          "name": "Yifeng \"Evan\" Wang",
+          "screen_name": "ewind_dev",
+          "description": "MTS @paperboy_ai / ex @lovart_ai / cofounded @AffineOfficial / aka 雪碧 / cooking @pocket_js",
+          "followers_count": 12298,
+          "friends_count": 1415,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 122,
+          "favorite_count": 979,
+          "reply_count": 37,
+          "quote_count": 19
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 229525,
+        "friends_count": 1680,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 122,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2073993861714624925",
+      "text": "RT @cillianblack: Oh look. The migrant who stomped a white Swedish man to death was a rapist ... because of course he was.\n\nMeaning, if the…",
+      "created_at": "Mon Jul 06 04:54:04 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2073432061474390072",
+        "text": "Oh look. The migrant who stomped a white Swedish man to death was a rapist ... because of course he was.\n\nMeaning, if the authorities did their fucking job and deported him, Christian Zedig's children would still have a father.",
+        "created_at": "Sat Jul 04 15:41:40 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2073332781359219091",
+          "text": "🚨NEWS: The migrant who attacked and killed Swedish Father Christian Zedig in a football fan zone had multiple previous criminal charges including:\n\n- Charged with rape in 2013 \n- 7 years for attempted murder in 2017\n- Charged with assault in April 2026\n\nWhy wasn't he stopped? https://t.co/qXY0CTUugV",
+          "created_at": "Sat Jul 04 09:07:10 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2073332391800696832",
+              "url": "https://pbs.twimg.com/media/HMX000qXcAANFZn.png"
+            },
+            {
+              "type": "photo",
+              "id": "2073332478450778112",
+              "url": "https://pbs.twimg.com/media/HMX053dWwAAd7A0.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1722014154322575360",
+            "name": "Basil the Great",
+            "screen_name": "BasilTheGreat",
+            "description": "--//-- Restore Britain --//--\n\nDM for submissions/credit/deletion",
+            "followers_count": 327410,
+            "friends_count": 5066,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 3533,
+            "favorite_count": 13663,
+            "reply_count": 414,
+            "quote_count": 112
+          }
+        },
+        "user": {
+          "id": "2048802598400983041",
+          "name": "Tyler",
+          "screen_name": "cillianblack",
+          "description": "Author of the book Woke Ideology and member of Restore Britain.\n\nFollow my Substack: https://t.co/hXH3Lzuc2Q",
+          "followers_count": 5872,
+          "friends_count": 3183,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 9517,
+          "favorite_count": 54441,
+          "reply_count": 531,
+          "quote_count": 68
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240715913,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 9519,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2073991028713955749",
+      "text": "RT @RMistereggen: “That was fun, I’ll do it again when I get out,” said the 22-year-old Gambian violent offender after he stabbed a 55-year…",
+      "created_at": "Mon Jul 06 04:42:48 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2073842509889843529",
+        "text": "“That was fun, I’ll do it again when I get out,” said the 22-year-old Gambian violent offender after he stabbed a 55-year-old Italian man twenty times.\n\nAnd he will be released again. Perhaps to succeed in killing a European next time. https://t.co/j1NbWDH8MI",
+        "created_at": "Sun Jul 05 18:52:39 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2073842505229996032",
+            "url": "https://pbs.twimg.com/media/HMfExVRXEAAo6TS.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1156300264070111233",
+          "name": "Rebecca Mistereggen",
+          "screen_name": "RMistereggen",
+          "description": "Norwegian 🇳🇴 Journalist / Creator and host of Raw Report. Help me keep my caffeine levels up, buy me a coffee: https://t.co/H13QwkZomE",
+          "followers_count": 132654,
+          "friends_count": 694,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 653,
+          "favorite_count": 2784,
+          "reply_count": 215,
+          "quote_count": 17
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240715913,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 653,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2073990257419173964",
+      "text": "Making sure Cybercab meets the needs of the blind",
+      "created_at": "Mon Jul 06 04:39:44 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2073925001661890910",
+        "text": "Cybercab at the National Federation of the Blind's Annual Convention in Austin for a hands-on experience of its accessibility features for blind or visually impaired customers  For example: – Braille lettering on physical controls\n– Space for service animals & assistive devices\n– Wheelchair-height seating for easier transfers",
+        "created_at": "Mon Jul 06 00:20:26 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2073924980749074432",
+            "url": "https://pbs.twimg.com/media/HMgPyChbgAApxb0.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2073924980740624384",
+            "url": "https://pbs.twimg.com/media/HMgPyCfakAAcodv.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2073924980711309312",
+            "url": "https://pbs.twimg.com/media/HMgPyCYbQAArw5j.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2073924980715487232",
+            "url": "https://pbs.twimg.com/media/HMgPyCZbAAAaX4G.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1853866883851620352",
+          "name": "Tesla Robotaxi",
+          "screen_name": "robotaxi",
+          "description": "The future of autonomy",
+          "followers_count": 195117,
+          "friends_count": 5,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 687,
+          "favorite_count": 4609,
+          "reply_count": 212,
+          "quote_count": 143
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240715913,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1043,
+        "favorite_count": 6176,
+        "reply_count": 1065,
+        "quote_count": 62
+      }
+    },
+    {
+      "id": "2073989923305079000",
+      "text": "RT @cybertruck: 🇺🇸🇺🇸🇺🇸 https://t.co/CLI1oPcy95",
+      "created_at": "Mon Jul 06 04:38:25 +0000 2026",
+      "lang": "qme",
+      "media": [
+        {
+          "type": "video",
+          "id": "2073414459775709184",
+          "url": "https://video.twimg.com/ext_tw_video/2073414459775709184/pu/vid/avc1/1920x1080/XposhyntH-RY2rvo.mp4?tag=26",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": {
+        "id": "2073473753913434553",
+        "text": "🇺🇸🇺🇸🇺🇸 https://t.co/CLI1oPcy95",
+        "created_at": "Sat Jul 04 18:27:20 +0000 2026",
+        "lang": "qme",
+        "media": [
+          {
+            "type": "video",
+            "id": "2073414459775709184",
+            "url": "https://video.twimg.com/ext_tw_video/2073414459775709184/pu/vid/avc1/1920x1080/XposhyntH-RY2rvo.mp4?tag=26",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1686044379910131718",
+          "name": "Cybertruck",
+          "screen_name": "cybertruck",
+          "description": "📐",
+          "followers_count": 255449,
+          "friends_count": 13,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 984,
+          "favorite_count": 9256,
+          "reply_count": 378,
+          "quote_count": 58
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240715913,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 984,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2073983050673778703",
+      "text": "RT @PalmerLuckey: We need a bit more shame.\n\nPeople used to avoid certain self-interested behaviors to avoid shame, private and public.  La…",
+      "created_at": "Mon Jul 06 04:11:06 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2073971236615729389",
+        "text": "We need a bit more shame.\n\nPeople used to avoid certain self-interested behaviors to avoid shame, private and public.  Law and customs assumed this.\n\nNow, 38% of Stanford students claim to be disabled.  40% of young women (under 35) claim mental illness, and SSI disability payments have gone up 400% in a single generation.\n\nIt isn't good for anyone, least of all people who are actually disabled, when everyone looks the other way as friends and family and peers con the system with a level of shamelessness no architect of our safety net ever imagined could be possible in America.  When everyone is disabled, nobody is.",
+        "created_at": "Mon Jul 06 03:24:09 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "294306372",
+          "name": "Palmer Luckey",
+          "screen_name": "PalmerLuckey",
+          "description": "I am a technology enthusiast, writer, and modder. Founder of @ModRetro, @Oculus VR, and @Anduriltech. Keeping American superheroes safe with autonomous systems.",
+          "followers_count": 945001,
+          "friends_count": 2099,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1283,
+          "favorite_count": 13782,
+          "reply_count": 857,
+          "quote_count": 135
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240715913,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1283,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2073982858016838139",
+      "text": "RT @SawyerMerritt: \"Richard Symons, the owner of a U.K.-based used-car sales company that specializes in EVs, has found that the batteries…",
+      "created_at": "Mon Jul 06 04:10:20 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2073806820301312498",
+        "text": "\"Richard Symons, the owner of a U.K.-based used-car sales company that specializes in EVs, has found that the batteries that power these cars (Teslas) continue to perform well even after several hundred thousand miles.\n\n“They are proving themselves to be exceptionally reliable.\" https://t.co/vXZXHGCJKY",
+        "created_at": "Sun Jul 05 16:30:50 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2073805226017005568",
+            "url": "https://pbs.twimg.com/media/HMei3ZYXoAAJ2Ul.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EVs/space/tech. Bringing you the latest news in a single, easy-to-read feed. $TSLA & $SPCX investor, Model Y owner.",
+          "followers_count": 1099628,
+          "friends_count": 469,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 780,
+          "favorite_count": 6307,
+          "reply_count": 248,
+          "quote_count": 47
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240715913,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 780,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2073951866078089294",
       "text": "RT @yunta_tsai: One of the most misunderstood facts is that the US was founded with abundance, whereas it was in fact built from scratch.…",

@@ -1,0 +1,131 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 229525,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260706",
+  "last_updated": "2026-07-06T08:17:33.359684",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2074011027881017559",
+      "text": "RT @ewind_dev: 非常激动地和大家分享，在 Fable 加持下，我终于做出了多年来设想中最极致的跨平台 UI 框架，这就是 PocketJS！\n\n将 QuickJS 移植至内存仅 32MB 的索尼 PSP，结合标准版 SolidJS 和 Vue Vapor，配合编译…",
+      "created_at": "Mon Jul 06 06:02:16 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2073954581017698454",
+        "text": "非常激动地和大家分享，在 Fable 加持下，我终于做出了多年来设想中最极致的跨平台 UI 框架，这就是 PocketJS！\n\n将 QuickJS 移植至内存仅 32MB 的索尼 PSP，结合标准版 SolidJS 和 Vue Vapor，配合编译期 tailwind 样式引擎，实现了 8MB 内存下 60fps 的流畅动画！\n\n来拥抱裸金属 Modern Web 吧！",
+        "created_at": "Mon Jul 06 02:17:58 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2073945110979723734",
+          "text": "Introducing PocketJS 🕹️\n\nimport { createSignal } from \"solid-js\"\non a Sony PSP.\n\nNo forked framework. Real Solid and Vue Vapor, compile-time Tailwind design system, and 60 FPS animation in 8 MB of RAM!\n\nBare Metal Modern Web ⚡️ https://t.co/dOSKUlwEsu",
+          "created_at": "Mon Jul 06 01:40:21 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2073944895321260032",
+              "url": "https://video.twimg.com/amplify_video/2073944895321260032/vid/avc1/1280x684/Sf5WC1KnqV7SWYt-.mp4?tag=28",
+              "bitrate": 2176000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "2073930803839746048",
+            "name": "PocketJS",
+            "screen_name": "pocket_js",
+            "description": "",
+            "followers_count": 131,
+            "friends_count": 6,
+            "verified": false,
+            "is_blue_verified": false
+          },
+          "stats": {
+            "retweet_count": 16,
+            "favorite_count": 180,
+            "reply_count": 1,
+            "quote_count": 3
+          }
+        },
+        "user": {
+          "id": "1265957219612258307",
+          "name": "Yifeng \"Evan\" Wang",
+          "screen_name": "ewind_dev",
+          "description": "MTS @paperboy_ai / ex @lovart_ai / cofounded @AffineOfficial / aka 雪碧 / cooking @pocket_js",
+          "followers_count": 12298,
+          "friends_count": 1415,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 122,
+          "favorite_count": 979,
+          "reply_count": 37,
+          "quote_count": 19
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 122,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2074019009226322078",
+      "text": "来自 Claude Code 团队成员 Thariq 分享的用好 Fable 5模型的秘诀。\n\n以下内容整理自 Thariq 的视频：\n\n过去，我们需要时刻检查 Claude 是否在正确地做事。比如，把任务拆分成小块交给它、反复检查它的输出，并在它过早停下时发现问题。但有了 Claude Fable 5，我反而发现自己越来越多地是在检查 Claude 是否在做正确的工作。\n\nFable 可以一次运行几个小时，它会测试自己的工作，老实说，我经常发现它写出的代码比我的还要好。我的工作变得越来越侧重于指引方向和前期设置，而不是监督。因此，以下是我在使用 Fable 时，工作方式发生的三个改变。\n\n首先，我把 Claude 当作一个思维伙伴。我给它提供所需的上下文。其次，我给 Claude 设定目标并提供验证这些目标的方法。最后，我试着变得更有野心，让 Claude 去做我以前从未尝试过的事情。\n\n第一点，你要越来越多地把 Claude 视为一个思维伙伴。\n\n我在使用 Fable 时发现的一个失败模式是，我可能实际上并不知道自己想要什么，或者我可能不知道什么是可行的。但是，在我的思考过程中尽早让 Claude 参与进来，我就可以在实施之前发现这些问题。\n\n举个例子，我会先从一个小的需求规范（spec）开始，在编写最终的规范文件之前，我会要求 Claude 就实施方案对我进行“面试提问”。这有助于我建立信心，确信自己知道想要什么。或者，我也可能抛出一个想法，让它想出几个可以发展的方向，并制作一些 HTML 页面原型供我审查。\n\n当我准备好进行实施时，我会尽量给它提供上下文，而不仅仅是约束条件，这样 Claude 就能真正帮助我达成目标。\n\n例如，我不会说“保持简单，不要过度设计”，而是会说：“嘿，这个功能是个实验。我们很有可能在一个月后删掉它。所以不要构建任何丢弃起来会很心疼的东西。”给它这样的上下文，能让它发现你可能都没想到的事情。\n\n一旦你知道自己想要什么了，特别是面对一个雄心勃勃的难题时，考虑给 Claude 设定目标以及验证目标的方法。\n\n为此，我们推出了两个很好用的新功能，我也鼓励大家试一试：/goal（目标指令）和 workflows（工作流）。目标功能帮助 Claude 持续工作直至完成，而工作流则帮助 Claude 验证其工作。\n\n因此，在我写完规范文档后，我可能会告诉 Claude：“设定一个目标，以完整实现该规范。然后使用工作流来验证计划的每个部分，并准备一份报告，说明已实现了哪些内容以及是否有任何差异。”这让 Claude 能够尽可能以富有创意和周到的方式发挥其能力，同时又能确保它正在构建你想要的东西。\n\n最后，试着更有野心一些。\n\nFable 真的是一个令人难以置信的模型，它促使我在工作中打破常规去思考。例如，我正在用 Fable 剪辑这个视频。如果有什么事情是你以为大语言模型做不到的，给它个机会试试。我们由衷地认为，Fable 提高了“一切皆有可能”的上限。",
+      "created_at": "Mon Jul 06 06:33:59 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2074018416457900032",
+          "url": "https://video.twimg.com/amplify_video/2074018416457900032/vid/avc1/3840x2160/RmIRcN5hA7u4kJwt.mp4?tag=28",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2073100352921215386",
+        "text": "https://t.co/hPiZr1kG7r",
+        "created_at": "Fri Jul 03 17:43:35 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "352806502",
+          "name": "Thariq",
+          "screen_name": "trq212",
+          "description": "Claude Code @anthropicai.   prev YC W20, @southpkcommons, @medialab",
+          "followers_count": 304261,
+          "friends_count": 1856,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 996,
+          "favorite_count": 7894,
+          "reply_count": 232,
+          "quote_count": 332
+        }
+      },
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 70,
+        "reply_count": 10,
+        "quote_count": 2
+      }
+    }
+  ]
+}

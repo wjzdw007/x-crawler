@@ -1,0 +1,99 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 229886,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260708",
+  "last_updated": "2026-07-08T06:25:33.313631",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2074708826670915732",
+      "text": "GPT-5.6 周四推出，期待",
+      "created_at": "Wed Jul 08 04:15:05 +0000 2026",
+      "lang": "ja",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2074704958419792299",
+        "text": "GPT-5.6 Sol, along with Terra and Luna, will launch publicly this Thursday.\n\nWe’re expanding preview access globally now. https://t.co/Uk5HcfSc2e",
+        "created_at": "Wed Jul 08 03:59:42 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2074704694052896769",
+            "url": "https://pbs.twimg.com/media/HMrU7U7bwAEO8yf.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 4986580,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3742,
+          "favorite_count": 21775,
+          "reply_count": 1285,
+          "quote_count": 2399
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 38,
+        "reply_count": 10,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2074732405743624650",
+      "text": "这篇关于如何写出好的 Skill 的文章，大部分还是不错的，也有些不严谨之处。\n\n1. 不要让模型自己写自己的 Skill ❓\n\n文章意思是人类专家写的技能比 AI 写的更好，应该人来写技能而不是让 AI 写 Skill。\n\n> 让智能体自己给自己写 Skill，这个想法非常诱人。SkillsBench 专门测试了这一点：每个任务都在三种条件下运行，无 Skill、专家策划的 Skill、模型自生成的 Skill。专家策划的 Skill 显著提升了通过率。模型自生成的 Skill 完全没有帮助，平均还比无 Skill 基线低 1.3 个点。作者的结论是：模型无法可靠地产出那些它在使用时会受益的流程性知识。\n\n这条其实不够严谨，AI 是能写 Skill 的，只要人提供好上下文就可以，而不是简单的说别让模型写 Skill。而且就算是 AI 训练过的知识，让 AI 把一些操作路径、输出风格格式固化下来都是有价值的。\n\n也不是说是错的，完全指望 Agent 帮你写 Skill、进化 Skill 还是不太够，还是需要人去引导会更好。\n\n最佳组合是人指挥 AI 写 Skill。\n\n2. 面面俱到，反而糟糕 ✅\n\n聚焦于核心内容、仅包含两三个文件的技能，其表现要远好于一大堆文件的集合，也胜过长篇大论的文档。那些试图把所有东西都写进去的“全面型技能”，反而会把任务通过率拉低到不如不用技能的水平。“细节丰富且范围明确”的做法，每次都能完胜“百科全书式”的做法。\n\n确实如此，Skill 不要追求大而全，小而精更好。\n\n3. 加载的技能越多，智能体反而越笨 ✅\n\n技能虽然是按需加载，但也是占用上下文的。不是越多越好。\n\n4. 必须在要支持的每个 Harness 中进行测试 ✅\n\nSkill 虽然是通用，但是不同 Agent 或模型还是有差异，比如 Codex 有自带画图工具，Claude Code 没有；比如 Claude 是多模态的能看图片，GLM 不能看图；这些都需要测试，并且针对性的写一些兼容性的说明。\n\n5. 瞄准模型最薄弱的领域出击 ✅\n\n> SkillsBench 按照不同领域测量了技能带来的提升效果。结果差异巨大：在软件工程领域只提升了 4.5 分，而在医疗保健领域则飙升了 51.9 分，制造业紧随其后。技能对软件开发领域的帮助最小，因为模型早就被海量的代码预训练数据“喂饱”了；而技能帮助最大的，恰恰是那些训练数据覆盖薄弱的领域。\n\n说的挺对的，我几乎不用软件工程相关的 Skill 正是因为这个原因，像 superpower 这种 skill 对于好的模型真的提升很有限。\n\n6. 不测试，你永远不知道技能好不好用 ✅\n\n> 找一组任务，运行两次：一次加载技能，一次不加载，保持其他所有变量绝对一致。用同一种标准给两次结果打分，然后看看差异。\n\n技能是需要测试的，但有些技能的测试结果是不好量化的，这时候还是需要依赖专业人士的判断。",
+      "created_at": "Wed Jul 08 05:48:46 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2074569427346174039",
+        "text": "https://t.co/QchxDeDgMH",
+        "created_at": "Tue Jul 07 19:01:09 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1202244246",
+          "name": "Aparna Dhinakaran",
+          "screen_name": "aparnadhinak",
+          "description": "founder @arizeai. I post about agents and evals. previously: @uber, @ycombinator alum",
+          "followers_count": 10855,
+          "friends_count": 1736,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 12,
+          "favorite_count": 164,
+          "reply_count": 4,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 15,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    }
+  ]
+}

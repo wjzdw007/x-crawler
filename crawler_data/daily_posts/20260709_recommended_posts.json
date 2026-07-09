@@ -1,12 +1,68 @@
 {
   "date": "20260709",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-09T19:38:56.206858",
-  "tweet_count": 257,
-  "unique_tweet_count": 257,
-  "total_crawled": 453,
-  "duplicates_removed": 196,
+  "last_crawl_time": "2026-07-09T21:20:43.605139",
+  "tweet_count": 258,
+  "unique_tweet_count": 258,
+  "total_crawled": 457,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2075314149345669145",
+      "text": "Codex 新的推理强度交互做的很酷👍",
+      "created_at": "Thu Jul 09 20:20:25 +0000 2026",
+      "lang": "ja",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2075280654929957004",
+        "text": "Ok but did you saw this slider??? https://t.co/G0FVIpIE9v",
+        "created_at": "Thu Jul 09 18:07:19 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2075280583081488384",
+            "url": "https://video.twimg.com/amplify_video/2075280583081488384/vid/avc1/3840x1912/-g8t5xmHsOgbzdat.mp4?tag=28",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "15704456",
+          "name": "Thomas Ricouard",
+          "screen_name": "Dimillian",
+          "description": "Developer Experience, Codex  @OpenAI\nBuilder, Entrepreneur, iOS/macOS, Swift/SwiftUI & more",
+          "followers_count": 53844,
+          "friends_count": 4036,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 310,
+          "reply_count": 40,
+          "quote_count": 6
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 230183,
+        "friends_count": 1682,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 15,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2075288698585809214",
       "text": "OpenAI 今天一口气发布了一整套产品更新：\n1. GPT-5.6 正式向公众开放\n2. ChatGPT 和 Codex 合体成了一个桌面应用\n3. 一个叫 ChatGPT Work 的新功能让 AI 从聊天助手变成了能干活的 Agent。\n\n先说 GPT-5.6。\n\nGPT-5.6 今天正式放开，三个级别：Sol 是旗舰，主打复杂推理和长时间自主工作；Terra 是性价比款，官方说性能接近上一代旗舰 GPT-5.5 但价格只有一半；Luna 是轻量款，跑得快、便宜。API 定价方面，Sol 每百万 token 输入 5 美元、输出 30 美元，Luna 只要 1 美元和 6 美元。ChatGPT 免费用户和 Go 用户默认用 Terra，Plus 及以上可以自选模型。\n\nSol 还新增了两个推理档位：max 让模型花更多时间深度思考，ultra 则会调用多个子智能体(Agent)并行处理任务，有点像同时派出几个人分头干活再汇总。ultra 目前限 Pro 和 Enterprise 用户。\n\n再说 ChatGPT 和 Codex 桌面应用合并。\n\nOpenAI 把 ChatGPT 和 Codex 塞进了同一个桌面应用里，Chat、Work、Codex 三个模式共享同一套能力和任务历史，区别只在界面：Codex 展示代码差异和 PR（代码提交合并请求），Work 把技术细节隐藏掉，面向非开发者。用户可以在两个模式间自由切换。\n\nCodex 现在每周活跃用户 500 万，其中超过 100 万人用它做的是开发之外的工作，比如写报告、做分析。OpenAI 发现非开发者也涌进了 Codex，与其维护两个独立产品，不如合到一起。Fidji Simo（OpenAI 应用业务 CEO）内部邮件里说：“产品分散拖慢了我们的速度。”\n\nChatGPT Work 是这次最值得关注的新功能。它不再只是回答问题，还能跨应用执行任务：连接你的 Google Drive、Slack、邮箱等工具，自己拆解复杂项目，分步骤独立完成，需要时才问你。比如你给它一句话“把客户调研整理成营销方案”，它能自己读资料、写方案、生成不同市场的素材版本，全程带着上下文。还能设定定时任务，比如每周自动汇总 Slack 消息刷新会议议程。\n\nWork 也会登陆网页和手机端，意味着你不需要在电脑前也能发起和跟踪任务。\n\n另一个值得一提的是 Sites。现在 ChatGPT 对话里生成的可视化、仪表盘或小工具，点一下就能变成一个可分享的网站。做个项目进度面板发给团队、做个内部工具原型让同事试用，不用再折腾部署。\n\n浏览器也升级了，支持登录态网站操作、多标签页和文件下载，配合新的 Chrome 扩展，ChatGPT 可以在你浏览器里直接帮你干活。这让 Computer Use（电脑操控）能力有了更实际的落地场景。\n\nCodex 端也有几个开发者关心的更新：可以直接在应用里编辑文件、看 PR 和审查反馈、新增 Ultra 模式处理高难度编码任务。还有一个细节，Codex 加了从 Claude Code 迁移的导入功能，包括设置和偏好配置，显然是在争抢 Anthropic 的开发者用户。\n\n今天的发布放在更大的背景下看，是 OpenAI 超级应用战略的一步。把聊天、编码、浏览、文件操作全装进一个应用里，目标是成为 AI 时代的生产力平台，直接对标 Google Workspace 和 Microsoft 365。\n\n考虑到 OpenAI 刚向 SEC 提交了上市文件，企业用户贡献了其 40% 的收入，这次发布的商业逻辑也很清楚：用统一平台锁住企业客户，为 IPO 讲一个更大的故事。\n\n顺带一提，GPT-5.4 将在 7 月 23 日退役。",

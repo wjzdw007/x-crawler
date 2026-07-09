@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 230004,
+    "followers_count": 230061,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260709",
-  "last_updated": "2026-07-09T02:31:19.150824",
-  "tweet_count": 1,
+  "last_updated": "2026-07-09T07:34:39.524719",
+  "tweet_count": 6,
   "tweets": [
     {
       "id": "2075044071601516732",
@@ -63,6 +63,227 @@
         "retweet_count": 0,
         "favorite_count": 5,
         "reply_count": 4,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2075061875302158572",
+      "text": "真佩服 Vercel 的挖坑速度，又开了个大坑，后面就看能不能填上了。\n\nNative SDK 是一套用 Zig 语言构建原生桌面应用的开发框架，它想解决的问题是用声明式标记语言写 Native UI。\n\n要我说，在 AI 时代之前，这类框架真的挺有价值的，写一遍到处能运行。\n\n现在 AI 时代，不如同一套设计，让 AI “翻译”到不同平台，Mac 你就老老实实用 AppKit（SwiftUI 都没必要），既能保证性能和兼容性，又能避免去踩跨平台框架带来的各种坑。\n\n当然只是我观点，仅供参考，下面是项目的介绍：\n\n主流方案（Electron 之类）往往要把一整个浏览器打包进去，应用体积和内存占用都很夸张。Native SDK 的做法是保留声明式的写法，但把浏览器换掉，用自己的渲染引擎直接往操作系统窗口里画像素。\n\n开发体验上，界面写在 .native 后缀的标记文件里，逻辑用 Zig 写，架构是 Model/Message/Update 的单向数据流，跟 Elm 那一套思路类似。状态变更只发生在一个 update 函数里，界面层只负责绑定和派发消息，不能直接改数据。这种约束带来一个好处：整个应用的行为是确定性的，可以录制一次操作、无头回放、逐帧对比状态指纹来做自动化测试。\n\n框架自带了一套组件库（按钮、输入框、Tab、对话框、虚拟列表、图表等），默认就有排版和配色，拿来就能用。定制走设计 Token 体系，换一套 Token 就能换一套视觉风格。CLI 工具链也比较完整：native init 创建项目，native dev 热重载开发，native check 做静态校验（能检查标记文件里的数据绑定是否跟 Zig 的 Model 和 Msg 类型匹配），native test 跑无头 UI 测试，native build 出发布包。最终产物是几 MB 的单体二进制文件，不带解释器和运行时。\n\n一个有意思的设计是它把 AI Agent 协作作为一等公民考虑：每个应用内置自动化服务器，Agent 可以读取无障碍快照、操控控件、断言运行时状态、截取确定性截图。CLI 还自带 Agent 技能文件，用 native skills list 可以查看。\n\n平台支持方面，macOS 最成熟（Metal 渲染、原生菜单、托盘），Linux 和 Windows 可用但功能少一些，iOS 和 Android 处于实验阶段。WebView 作为可选项在桌面端也能混用。项目目前还在 pre-1.0 阶段，API 仍在变动，采用 Apache 2.0 开源协议。",
+      "created_at": "Thu Jul 09 03:37:58 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2075016514860650685",
+        "text": "Introducing Native SDK\n\nThe toolkit for building native apps\n\n→ Hot reload\n→ Markup + Zig\n→ Instant launch\n→ macOS, Windows and Linux\n→ GPU engine built from scratch\n→ Built-in design system and themes\n→ Custom components + design tokens https://t.co/UCm7S2bzwP",
+        "created_at": "Thu Jul 09 00:37:43 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2075016498771345408",
+            "url": "https://pbs.twimg.com/media/HMvwgwBXQAAW3TJ.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "152108221",
+          "name": "Chris Tate",
+          "screen_name": "ctatedev",
+          "description": "@Vercel Labs | Created https://t.co/473Fqx4HKt, https://t.co/ZekOfFeoXF, https://t.co/9MKvOdyxN3, https://t.co/Bnt6dbEdSi, https://t.co/SODeKvPbac | Husband & Dad | He/him | Musician, Space Nerd, Foodie | Vegan",
+          "followers_count": 60982,
+          "friends_count": 1590,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 80,
+          "favorite_count": 1358,
+          "reply_count": 79,
+          "quote_count": 31
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 49,
+        "reply_count": 16,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2075076191283777945",
+      "text": "更接近 Flutter 的思路，跟 RN 走的是相反方向。 https://t.co/MJZt6HHmVO\n\nRN 的做法是把 JS 写的组件映射到平台原生控件（iOS 上是 UIKit，Android 上是原生 View），所以按钮、输入框这些长得跟系统控件一样。\n\nNative SDK 不用平台原生控件，它自己有一套渲染引擎，每个像素都自己画。按钮、列表、输入框全是引擎绘制的，不是系统提供的。从这个意义上说，它的原生指的是编译成原生二进制、直接画进 OS 窗口，而不是使用原生 UI 组件。\n\n但它又不像 Flutter 那样什么都自己来。滚动物理、右键菜单、系统对话框、托盘、文本输入（IME）这些交给操作系统处理。所以是个混合策略，渲染自己做，但交互行为里涉及系统级体验的部分还是走 OS。\n\n跟 Zed 的 GPUI 对比，两者的核心哲学很像，都是不依赖系统控件，自己画全部界面，编译型语言，无运行时。主要差异在几个层面：\n\n1. 语言选择不同。\nGPUI 用 Rust，Native SDK 用 Zig。\n\n2. 界面描述方式不同。\nGPUI 的 UI 写在 Rust 代码里，通过实现 Render trait 来声明视图，本质上是代码即 UI。Native SDK 把视图拆到单独的 .native 标记文件里，跟逻辑代码分离，更接近 Web 前端的写法（模板 + 逻辑分离）。对 AI 代码生成来说，标记文件可能比 Rust trait 实现更容易生成和校验。\n\n3. 状态管理模型不同。\nGPUI 是 Entity 系统加响应式上下文，比较灵活但也更零散。Native SDK 是严格的 Elm 架构（Model/Msg/Update），所有状态变更只走 update 函数，确定性更强，可以做到录制回放和逐帧比对。这是一个取舍，牺牲灵活性换可预测性。\n\n4. 定位也不太一样。\nGPUI 是和 Zed 编辑器伴生的，现在虽然计划独立发布成 crate，但设计决策高度围绕编辑器场景（高帧率文本渲染、多人协作）。Native SDK 从一开始就定位通用应用框架，自带组件库和 Design Token 体系，带着开箱就能出像样 App的意图。",
+      "created_at": "Thu Jul 09 04:34:51 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2075071901559669098",
+        "text": "@dotey 有多原生。类似RN还是Flutter。\n\n对比zed的GPUI是一样的思路还是啥",
+        "created_at": "Thu Jul 09 04:17:48 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1564877971051393025",
+          "name": "CorrectRoad",
+          "screen_name": "CorrectRoad",
+          "description": "",
+          "followers_count": 706,
+          "friends_count": 660,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2075085137990005164",
+      "text": "OpenAI 今天发布 GPT-Live，用全双工架构（full-duplex）取代 ChatGPT 原有的语音模式。同声传译的演示效果很惊艳。\n\n两个型号 GPT-Live-1 和 GPT-Live-1 mini，分别面向付费和免费用户，今天起在 iOS、Android 和网页端全球推出。\n\n这是 ChatGPT 语音的第三代技术。之前的语音模式本质上是\"对讲机\"模式，你说完它才说，中间稍微停顿一下就可能被打断。GPT-Live 改成了全双工，可以一边听你说一边自己说，每秒做多次交互决策，判断该说话、该闭嘴、该打断还是该调用工具。对话中它会像真人一样插入\"mhmm\"\"got it\"之类的回应，表示在听。\n\n架构上有一个比较有意思的变化：GPT-Live 把语音交互层和推理层拆开了。日常对话它自己处理，遇到需要联网搜索、深度推理的问题，就后台交给 GPT-5.5 去干活，自己继续跟你聊着。等结果出来了再无缝带回对话。OpenAI 说以后出了更新的模型会持续替换后端，前端语音模型不用重新训练。这个设计对做语音智能体的开发者可能比较有吸引力，也给了 OpenAI 一个把语音产品和模型迭代解耦的机制。\n\n用户端还加了三档推理强度可选：Instant（快速回答）、Medium 和 High（需要想一会儿的复杂问题），九个语音角色也重新录制过。语音对话中还能显示天气、股票、体育比分等可视化卡片。\n\n不过上线第一天用户反馈就出现了一个有点讽刺的问题：那些设计来让对话更自然的回应词，实际用起来让不少人觉得烦。社交媒体上已经有用户吐槽 GPT-Live 的\"mhmm\"太频繁，声音直接闯入注意力的感受和文字不同，AI 的热情过了头反而成了干扰。TechCrunch 在报道中也提到，演示中展示印地语实时翻译时，模型带着明显的美式口音，措辞偏书面，效果并不理想。OpenAI 说\"针对最常用语言做了优化\"，但没有公布具体支持哪些语言。\n\n另外，GPT-Live 上线时不支持视频通话和屏幕共享，需要这些功能的用户得切回旧版。API 也还没开放，开发者只能先登记排队。\n\n每周有超过 1.5 亿人使用 ChatGPT 的语音和听写功能。OpenAI 显然把语音视为下一个主力交互界面，ChatGPT Voice 产品负责人 Atty Eleti 说自己散步时经常跟它聊三四十分钟。至于全双工到底是一次真正的体验升级，还是又一个演示很惊艳、日常用起来还得调的产品，可能还得看接下来几周用户怎么说。\n\n官方介绍：https://t.co/FO0UXPiGbm",
+      "created_at": "Thu Jul 09 05:10:24 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2075082628730851328",
+          "url": "https://video.twimg.com/amplify_video/2075082628730851328/vid/avc1/3840x2160/jNdkb3GMUdvHG-a-.mp4?tag=28",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2074907025537224840",
+        "text": "Introducing GPT-Live, a new generation of voice models for natural human-AI interaction.\n\nRolling out in ChatGPT starting today.\n\nYou’ll want to turn the sound on for this one. https://t.co/WzoQFvA5ir",
+        "created_at": "Wed Jul 08 17:22:39 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2074902339463598081",
+            "url": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/3840x2160/SlZg3Bq2mrXXDoO4.mp4?tag=28",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 4996368,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1777,
+          "favorite_count": 19949,
+          "reply_count": 1025,
+          "quote_count": 1345
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 56,
+        "reply_count": 23,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2075096539697967459",
+      "text": "打个比方，你领养了个孩子，听着他第一声啼哭出生，看着他咿呀学语蹒跚学步，你一点点教他看着他一点一点的长大。\n\n后来你又领养了个孩子，一开始就是12岁，虽然你不用操心换尿布这种事，虽然这孩子是按照你的要求筛选出来的，但是这孩子的成长你一无所知。\n\n那这两个娃虽然都算是你孩子，但是感情肯定是不一样的。\n\n是不是一开始是 AI 写的没那么重要，但这个软件迭代的过程你有没有参与很重要。\n\n如果一开始是个 MVP，很小，但是功能你都知道，代码和架构你也了解，你一点点往上迭代功能，歪了会纠过来，那么这样的项目你就会更有感情、更上心些。",
+      "created_at": "Thu Jul 09 05:55:43 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2075071134933066035",
+        "text": "如果一个项目 \n\n一开始就是全部是 AI 写的  我后面不管怎么样完全提不去兴趣去看任何一行代码\n\n如果一开始地基是我打的，不管后面 AI 怎么修，我都会去看每一次的 PR，防止打歪。\n\n何意味。",
+        "created_at": "Thu Jul 09 04:14:46 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1637070779975352320",
+          "name": "Go学长",
+          "screen_name": "arkuy99",
+          "description": "building  https://t.co/m270kq0Knj  a native iOS app for Claude Code \n/ ex @TencentGames \n/ ex @TempleRun",
+          "followers_count": 8294,
+          "friends_count": 1059,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 45,
+          "reply_count": 16,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 40,
+        "reply_count": 16,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2075099014542815743",
+      "text": "赞配图😂\nhttps://t.co/kVi2qCXbMy",
+      "created_at": "Thu Jul 09 06:05:33 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2075098223572865400",
+        "text": "https://t.co/nysQNDIGV5",
+        "created_at": "Thu Jul 09 06:02:24 +0000 2026",
+        "lang": "zxx",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2075098197295542272",
+            "url": "https://pbs.twimg.com/media/HMw60OvasAA3XYG.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "120046082",
+          "name": "Jim Liu aka 刘指导",
+          "screen_name": "jimnox",
+          "description": "AI & Fullstack developer👨‍💻 | Working from home🏠",
+          "followers_count": 288,
+          "friends_count": 223,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

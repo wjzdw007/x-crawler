@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 230135,
+    "followers_count": 230160,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260709",
-  "last_updated": "2026-07-09T14:48:11.537767",
-  "tweet_count": 6,
+  "last_updated": "2026-07-09T17:52:58.366033",
+  "tweet_count": 10,
   "tweets": [
     {
       "id": "2075044071601516732",
@@ -284,6 +284,175 @@
         "retweet_count": 0,
         "favorite_count": 3,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2075255723487826347",
+      "text": "当你用 Coding Agent 去 Vibe Coding 的时候，你的角色不是单纯的程序员了，变成了工程经理（EM，Engineering Manager）的角色，这就好比你问一个 EM：为啥要去看代码？不应该只关注功能么？\n\n一个不懂代码不看代码的 EM 也许可以当个合格的 EM，但绝对不是优秀的 EM。\n\n指挥 AI Agent 干活，跟 EM 指挥一群开发工程师（SDE）很像，当过 EM 的一定心有戚戚，你得帮着去理解需求、拆解需求，去分配任务，去验收任务。\n\n比指挥 SDE 省心的地方在于你不用照顾 AI 的情绪，也不用担心 AI 过劳，可以使劲 PUA，使劲用。\n\n但费心的地方在于 AI 没有主动性，AI 没有完整上下文。\n\n没有主动性体现在你得指挥着他们干活，哪怕 AI 再聪明，也不能你一句话就主动把活都给你干了。\n\n整个团队 EM 了解的信息是最多的，下面每一个 SDE 了解的信息都是片面的，就像 Agent 不知道所有上下文只有你知道。\n\n所以一个功能做出来，EM 如果不验收一下，不看看代码，那么即使你下面的 SDE 再聪明，也会因为信息不对称不完整，造成误解，而实现出跟你预期不一样的结果，更不要说搞出一些严重的安全性问题。\n\n再聪明的 AI，在没有充分了解所做功能的完整上下文、使用场景的情况下，方案都是可能有偏差的。毕竟没有万能的方案，只有适合特定场景的方案。就算你在事前有充分的计划和讨论，但是一些藏在你脑子里面的隐含的难以表达的信息还有很多是无法直接传导给 AI 的。",
+      "created_at": "Thu Jul 09 16:28:15 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2075222067029639266",
+        "text": "@dotey 为啥要去看代码？不应该是只关注功能么？",
+        "created_at": "Thu Jul 09 14:14:31 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2037063411855745027",
+          "name": "火炬手奶爸zuihao.ai",
+          "screen_name": "yuerschool",
+          "description": "20年职业公益人，北京奥运火炬手，专注环保、健康和养育。\n想做一个ai养育平台，从纯母乳切入颠覆家政行业，寻技术合伙人。\niam@zuihao.ai",
+          "followers_count": 14,
+          "friends_count": 106,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 15,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2075261703411904826",
+      "text": "AI 写的代码量太大看不过来，这里面分两种，一种是做原型，这种你就不需要看，只验证功能就好了；一种是要做生产环境就绪的版本，那么就要看代码要验证功能。https://t.co/NFRddAa89J\n\n代码太多看不过来的问题其实在传统软件工程就有这种问题，核心就是集成的颗粒度。\n\n早年瀑布模型的时候，一个版本几个月上年，每次变更一大坨，各模块独立开发，然后再集成。但模块之间集成的时候无比痛苦，因为代码变更太多了。并且集成后要很长时间才能稳定下来。\n\n后来敏捷开发就变成“持续集成（Continuous integration）”了，简单来说就是一次一个小功能，做了一点就集成。不是围绕模块去变更，而是围绕小的功能点去变更，再配合好自动化测试，每次功能的变更后系统整体都是稳定的。由于一次变更量不大，所以也好验收代码。\n\nVibe Coding 也是一样的，你一次让 AI 搞个大的，不仅结果不好，还没办法验收审查，代码看不过来。\n\n如果你换个思路，一次做个小功能点，一次修一个小bug，那么每次做完你都是可以验收可以审查的，可以随时纠正的。质量也有保障。",
+      "created_at": "Thu Jul 09 16:52:01 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2075257259987484686",
+        "text": "@dotey Ai 写的代码量太大了，看不过来怎么办？",
+        "created_at": "Thu Jul 09 16:34:21 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1375873003792179201",
+          "name": "Kael",
+          "screen_name": "zemul888",
+          "description": "👨‍💻 独立开发者 | AI Builder | 互联网打杂 \n💻 海外VPS & AI 工具实战测评\n💡 聊聊最新AI实践、前沿趋势\n海外特价VPS:  https://t.co/enEfr6nRjw",
+          "followers_count": 438,
+          "friends_count": 607,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 5,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2075264344154157326",
+      "text": "小扎也是拼了，为了宣传新模型，都来 X 发推了",
+      "created_at": "Thu Jul 09 17:02:30 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2075218444056707458",
+        "text": "(1) Today we're releasing Muse Spark 1.1 -- a strong agentic and coding model at a very low price. It's available through our new Meta Model API and in Meta AI.",
+        "created_at": "Thu Jul 09 14:00:07 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "20749410",
+          "name": "Mark Zuckerberg",
+          "screen_name": "finkd",
+          "description": "",
+          "followers_count": 2081253,
+          "friends_count": 707,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1594,
+          "favorite_count": 19139,
+          "reply_count": 2556,
+          "quote_count": 2078
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 21,
+        "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2075272687912448127",
+      "text": "ChatGPT Codex 合并了，名字就叫 ChatGPT Codex https://t.co/UKSn6TgQRt",
+      "created_at": "Thu Jul 09 17:35:40 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2075272574993375233",
+          "url": "https://pbs.twimg.com/media/HMzZaWSXIAEcUJP.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2075271421149020426",
+        "text": "Sol, Terra, and Luna, our GPT‑5.6 family of models, are starting to roll out now in ChatGPT, Codex, and the API. https://t.co/Qri7GdtYs3",
+        "created_at": "Thu Jul 09 17:30:38 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2075270581357080576",
+            "url": "https://video.twimg.com/amplify_video/2075270581357080576/vid/avc1/3840x2160/L35nsf8FUU5q4qVR.mp4?tag=28",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 5001469,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 338,
+          "favorite_count": 2952,
+          "reply_count": 197,
+          "quote_count": 169
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 30,
+        "reply_count": 8,
         "quote_count": 0
       }
     }

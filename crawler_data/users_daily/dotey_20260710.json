@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 230358,
+    "followers_count": 230365,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260710",
-  "last_updated": "2026-07-10T17:45:24.952915",
-  "tweet_count": 1,
+  "last_updated": "2026-07-10T19:22:30.355431",
+  "tweet_count": 3,
   "tweets": [
     {
       "id": "2075372480445759798",
@@ -46,6 +46,67 @@
       "stats": {
         "retweet_count": 1,
         "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2075652538058109385",
+      "text": "很多人搞不清楚 ChatGPT、Codex、Work 什么差别，以及额度是独立的还是共享的，根据官方文档整理了一个简单的 Q & A。\n\nQ：Chat、Work、Codex，一句话说清区别？\n\nChat 回答问题，Work 帮你干活，Codex 帮你写代码。\n\nChat 就是你熟悉的 ChatGPT，你问它答，快进快出。\n\nWork 是一个能跨应用收集信息、然后交付完整成品的智能体（Agent），交付物是文档、表格、幻灯片、网页应用这些拿到手就能用的东西。\n\nCodex 也是智能体，但它主要操作的是代码仓库，能读你的项目文件、改代码、跑测试、提交 PR。\n\n打个比方：\nChat 是你问\"番茄炒蛋怎么做\"，它告诉你步骤。\nWork 是你说\"帮我准备一桌晚餐\"，它自己去冰箱找食材、炒菜、摆盘。\nCodex 是你说\"这个菜谱 App 有 bug\"，它打开代码自己修。\n\n【来源：https://t.co/tqEoL3c3SD】\n\nQ：Work 到底能做什么？跟直接在 Chat 里说“帮我写个报告”有什么不同？\n\n在 Chat 里你说“帮我写个报告”，它给你一段文字，你自己复制粘贴到 Word 里排版。\n\nWork 完全不同。你先把日常工具接进去，Slack、Gmail、Google Drive、SharePoint、Teams、日历、CRM、项目管理工具都行，OpenAI 叫它 plugins。接好之后告诉它你要什么结果，它会自己去这些应用里拉数据、整合信息、生成一份可以直接交付的成品。你在提示词里用 @ 加应用名就能指定它去哪儿找数据。\n\n举个例子，Zapier 的企业营销负责人用 Work 搭了一个系统，每月审查数千条线索，追踪 CRM 和邮件中的客户触点，找出跟进断裂的地方，生成管理层周报。Virgin Atlantic 的数字产品负责人用它做竞品对标分析，让 ChatGPT 调研各家航空公司的服务水平，生成可供团队审查的数据集，把原本需要数周的分析缩短到几小时。\n\n另一个区别是 Work 能长时间跟进。一个复杂项目，它可以跟好几个小时，自己拆步骤、自己推进。中间有拿不准的会来问你，你也可以随时调整方向、审批关键动作。\n\n【来源：https://t.co/Kt5D057ZJn】\n\nQ：Work 能定时跑任务？\n\n能。这个功能叫 Scheduled Tasks（定时任务），可以设成一次性、定时重复、事件触发或持续监控。\n\n比如你设一个任务：每天早上检查 Slack 和邮件里的新消息，整理成简报发给你。或者：每当有新的客户反馈进来，自动归类主题、整理成产品改进建议。这些都能在后台跑。它还能用桌面端的内置浏览器上网查信息，甚至通过 Computer Use 功能操作你电脑上的其他应用。\n\n定时任务面向 Plus、Pro、Business 和 Enterprise 用户开放，各档计划的并发任务数量上限不同。任务不能每小时跑超过一次，长时间无人理会的任务可能会自动暂停。\n\n【来源：https://t.co/Kt5D057ZJn https://t.co/QYcuIuhe0V】\n\nQ：那 Codex 跟 Work 的区别到底在哪？\n\n这两其实是同一套底层 Agent（Codex）和 UI，但是应用在不同的场景，配合不同的插件。读的东西不同，交付的东西也不同。\n\nWork 读的是你的业务上下文，邮件、文档、聊天记录、日历，交付的是商务成品，幻灯片、电子表格、文档、网站。Codex 读的是你的代码仓库，交付的是代码变更，diff、测试结果、PR。\n\n【来源：https://t.co/Kt5D057ZJn】\n\nQ：Codex 每周有 500 万人用，为什么还要再出一个 Work？\n\nOpenAI 在博文里提到，虽然 Codex 最初是为开发者设计的编程智能体，但已经有超过 100 万人在用它做软件开发以外的工作。Work 的推出，某种程度上是把这些非编程用途正式化了，给了它一个专门的界面和工作流，用 plugins 连接业务应用，输出文档和幻灯片而不是代码。\n\nOpenAI 自己内部也在大量使用：销售团队用 Work 把一次客户探索对话在 24 小时内变成了定制 POC（概念验证），以前这个流程需要几周。财务团队用 Work 把月末结账和预测流程从几天压缩到几小时。\n\n我觉得 Codex 这么做呢，目的是为了吸引办公人群，原本这些人看到 Codex 的名字会以为是写代码用的，但是改名呢又会影响原本的 Codex 用户，结果就搞成这样一套产品两个名字。\n\n简单来说就是一套产品，两个名字，两种主要场景，同时吸引不同用户群。\n\n【来源：https://t.co/tqEoL3c3SD https://t.co/p0DLI5Y430】\n\nQ：我在哪儿能用这三个模式？\n\nChat 最简单，网页、手机、桌面端都有，所有平台通用。\n\nWork 在网页和手机上已经开始上线（Pro、Enterprise、Edu 优先，Plus 和 Business 未来几天陆续开放）。桌面端也有，而且桌面端更强，能用本地文件，还有内置浏览器上网抓取信息。\n\nCodex 只在桌面端能选。手机上不能直接用 Codex 模式，但可以通过 ChatGPT App 里的 Remote 标签远程查看桌面上正在跑的 Codex 任务。\n\n一个要注意的点：网页/手机端的 Work 对话和桌面端的 Work 对话目前不互通，云端是云端，本地是本地。Chat 对话则可以跨网页和桌面端同步。\n\n原来独立的 Codex App 已经合并进了新版 ChatGPT 桌面端。一个 App 里切换 Chat、Work、Codex 就行。开发者可以把 Codex 设为默认打开视图，App 图标也能换成 Codex 的 logo。原来的 ChatGPT 桌面端会更名为 ChatGPT Classic。\n\n【来源：https://t.co/tqEoL3c3SD https://t.co/Kt5D057ZJn】\n\nQ：Chat 聊天和 Work/Codex 的额度是共享的吗？\n\n不共享。Chat 对话有自己独立的消息限额，图片生成和语音也各有各自的独立限额和重置周期。\n\nWork 和 Codex 用的是另一个池子，OpenAI 叫它\"智能体用量\"（agentic usage）。帮助中心原文说：Codex、ChatGPT Work、ChatGPT for Excel 和 Workspace Agents 的用量从同一个智能体额度池中扣减。\n\n所以你在 Chat 里聊天聊得再多，不会影响 Work 和 Codex 的额度。但 Work 和 Codex 之间会互相挤占。白天用 Work 跑了一堆复杂任务，晚上想用 Codex 写代码，可能会发现额度已经不多了。\n\n【来源：https://t.co/p2DbCXqAtQ https://t.co/uD7Q9BKZ2o】\n\nQ：要花多少钱？\n\nWork 不是独立付费产品。它跟 Codex 共用同一个额度池，包含在你现有的 ChatGPT 订阅里。所有计划都能用，从免费到企业版，区别在于额度多少。\n\nFree（免费）：能试用 Work 和 Codex，额度非常有限，试试味道可以。美国地区有广告。 \n\nGo（$8/月）：额度比免费多约 10 倍，桌面端可有限地用 GPT-5.6 Terra 跑 Work 和 Codex。没有 Deep Research 和 Agent Mode。有广告。 \n\nPlus（$20/月）：第一个去掉广告、功能完整的档位。包含 Deep Research（每月 10 次）、Codex、Agent Mode。三年没涨价，性价比最高。\n\nPro（$100 或 $200/月）：$100 档额度是 Plus 的 5 倍，$200 档是 20 倍。面向重度用户。 \n\nBusiness（$20/月/人起，年付；月付 $25）：至少 2 人，多了 SSO 和合规控制，数据默认不用于训练。\n\nEnterprise（定制报价）：150 人起。\n\n额度计费从今年 4 月开始改成按 Token 消耗计算。用更强的模型或开 Fast 模式，消耗更多。Plus 和 Pro 用户额度用完后可以购买额外 credits 继续使用。\n\n【来源：https://t.co/at716u8Sdn https://t.co/uD7Q9BKZ2o】\n\nQ：GPT-5.6 的 Sol、Terra、Luna 是什么？我该用哪个？\n\n这是 GPT-5.6 的三个子型号。\n\nSol 最强，适合复杂推理和高难度编程，也最贵（API 价格 $5/$30 每百万 Token 输入/输出）。\nTerra 居中，日常工作默认选它（$2.50/$15）。\nLuna 最快最便宜，对速度敏感或任务简单时用（$1/$6）。\n\nFree 和 Go 用户只能用 Terra。\n\nPlus 及以上可以三个都选，还能调节 effort 级别。\n\nultra effort 在 Work 中仅限 Pro 和 Enterprise 用户，在 Codex 中 Plus 及以上可用。\n\n【来源：https://t.co/p0DLI5Y430 https://t.co/at716u8Sdn】\n\nQ：Work 上线后，原来的 ChatGPT 还在吗？\n\n在。Chat 模式就是原来的 ChatGPT，一切照旧。桌面端点\"Quick chat\"按钮就能开新对话，手机端在顶部下拉菜单选\"Chat\"。你可以完全无视 Work 和 Codex，继续像以前一样用。\n\n【来源：https://t.co/tqEoL3c3SD】",
+      "created_at": "Fri Jul 10 18:45:03 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2075274271845404744",
+        "text": "Introducing ChatGPT Work, a new agent in ChatGPT powered by Codex and GPT-5.6.\n\nIt can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work.\n\nIt’s a whole new way to get work done. https://t.co/uGbvjU1LsV",
+        "created_at": "Thu Jul 09 17:41:57 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2075269404997373952",
+            "url": "https://video.twimg.com/amplify_video/2075269404997373952/vid/avc1/3840x2160/BynzTmCwla4Zse3g.mp4?tag=28",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 5009550,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1958,
+          "favorite_count": 19411,
+          "reply_count": 857,
+          "quote_count": 856
+        }
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 16,
+        "reply_count": 4,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2075654589022437728",
+      "text": "Q：ChatGPT Work 桌面端和 Claude Cowork 桌面端有什么区别？\n\n两者现在都是桌面端智能体，都能操作本地文件，都能用 Computer Use 控制你的电脑，都支持定时任务。但实际用起来，路径和体验差别不小。\n\n1. 执行架构不同。\n\nCowork 在你的电脑上运行一个隔离的 Linux 虚拟机作为沙箱，所有文件操作都在这个本地沙箱里完成，生成的文件（.docx、.xlsx、.pptx、.pdf）直接保存到你指定的文件夹。\n\nChatGPT Work 的桌面端继承了 Codex 的沙箱和权限控制体系，用操作系统原生隔离机制（macOS 上是 Seatbelt，Windows 上是 Windows Sandbox），同时还有一个内置浏览器，不需要额外装扩展就能上网查资料、操作网页工具。\n\n2. 操作电脑的方式不同。\n\nChatGPT Work 桌面端的 Computer Use 可以在后台操作你的其他应用，点击、打字、移动文件，你会看到屏幕上出现一个\"不是你在动\"的第二个光标。\n\nCowork 也有 Computer Use（目前仍是研究预览阶段），通过 Claude in Chrome 扩展操作浏览器，通过桌面端直接操作应用。\n\n3. 应用连接方式不同。\n\nChatGPT Work 用统一的 plugins 目录，60 多个连接器对接 Slack、Teams、Google Drive、SharePoint、Salesforce 等。你在提示词里用 @ 指定应用名就能拉数据。\n\nCowork 用 MCP（Model Context Protocol，模型上下文协议）连接器，对接 Slack、Notion、HubSpot、Jira、Linear 等，还有 11 个官方行业插件（销售、法务、营销、财务等），也支持自建插件。\n\n4. 产品结构相似但不同。\n\nChatGPT 桌面端现在是三合一：Chat、Work、Codex 在同一个 App 里通过模式切换器选择。\n\nClaude 桌面端最近也改版了，从原来的三个标签（Chat、Cowork、Code）合并成了两个标签：Home 和 Code。\n\nHome 里 Chat 和 Cowork 共享同一个首页，对话、Cowork 任务、项目和文件都在同一个侧边栏里，你在消息框左下角切换 Chat 和 Cowork 模式。\n\nCode 标签是 Claude Code 的桌面界面，专门用于软件开发。\n\n结构上，两家现在很像：都是把日常对话、知识工作、编程三种模式塞进了同一个桌面 App。\n\n5. 跨设备能力不同。\n\nClaude Cowork 从 7 月 7 日开始向网页和手机端扩展（Beta，Max 用户优先，其他付费计划陆续开放）。\n\nCowork 任务现在可以远程跑在 Anthropic 的服务器上，关掉电脑也能继续执行，你可以在手机上查看进度、回复 Claude 的问题、或在另一台设备上接着干。定时任务也能在后台跑了。但有一个限制：如果任务需要读写本地文件、用浏览器、或用 Computer Use，你的桌面端 App 必须保持打开状态，远程会话通过桌面端去够这些本地资源。\n\nChatGPT 这边，Chat 对话可以在网页和桌面端之间同步。但 Work 对话目前不互通：网页/手机端创建的 Work 对话留在云端，不会出现在桌面端的 Work 里；桌面端的 Work 线程和本地文件也留在那台电脑上。Codex 桌面端任务不会出现在网页端，但可以通过手机 App 的 Remote 标签远程查看。\n\nClaude Cowork 的跨设备同步走得更前面一步，同一个会话可以在桌面、网页、手机端之间流转。ChatGPT Work 目前云端和桌面端是割裂的，这是 OpenAI 明确说了\"at launch\"的限制，后续大概率会补上。\n\n【来源：https://t.co/Kt5D057ZJn https://t.co/X7JNsuOWht https://t.co/C3mrKRS7Sw https://t.co/zjyhPvHQwG\nhttps://t.co/AnBWWHDqiM】",
+      "created_at": "Fri Jul 10 18:53:12 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 2,
         "reply_count": 0,
         "quote_count": 0
       }

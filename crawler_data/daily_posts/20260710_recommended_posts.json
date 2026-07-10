@@ -1,12 +1,98 @@
 {
   "date": "20260710",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-10T21:04:10.282961",
-  "tweet_count": 218,
-  "unique_tweet_count": 218,
+  "last_crawl_time": "2026-07-10T22:57:43.123963",
+  "tweet_count": 220,
+  "unique_tweet_count": 220,
   "total_crawled": 418,
-  "duplicates_removed": 200,
+  "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2075712647723397452",
+      "text": "吃瓜：Apple 把 OpenAI 告上了法庭，指控 OpenAI 系统性地窃取苹果商业机密，用来开发自己的 AI 硬件设备。\n\n诉状今天提交至加州北区联邦地方法院，被告包括 OpenAI、OpenAI 硬件负责人 Tang Tan（前苹果 iPhone 和 Apple Watch 产品设计副总裁，在苹果工作了 24 年）、前苹果高级系统电气工程师 Chang Liu，以及 Jony Ive 联合创立的 io Products。Jony Ive 本人不在被告之列。\n\n来源：https://t.co/Z9O49JUypJ",
+      "created_at": "Fri Jul 10 22:43:54 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2075712160043298816",
+          "url": "https://pbs.twimg.com/media/HM5pNkNW8AAxhBo.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 230367,
+        "friends_count": 1683,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 4,
+        "reply_count": 3,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2075687836091625704",
+      "text": "Try Grok 4.5 in Perplexity",
+      "created_at": "Fri Jul 10 21:05:19 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2075660058625790159",
+        "text": "Grok 4.5 is now available as an orchestrator model in Computer for Consumer Pro and Max subscribers.\n\nWe evaluated it against five other orchestrator configurations on WANDR. It scored higher than every other configuration at roughly half the cost of Opus 4.8. https://t.co/3WjjiB6z8Z",
+        "created_at": "Fri Jul 10 19:14:56 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2075660055870164992",
+            "url": "https://pbs.twimg.com/media/HM450tCb0AAJgUc.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1599587232175849472",
+          "name": "Perplexity",
+          "screen_name": "perplexity_ai",
+          "description": "Curiosity changes everything. Download our free app on iOS, Mac, Windows, and Android.",
+          "followers_count": 496753,
+          "friends_count": 77,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 66,
+          "favorite_count": 803,
+          "reply_count": 75,
+          "quote_count": 29
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240788564,
+        "friends_count": 1367,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 508,
+        "favorite_count": 2541,
+        "reply_count": 717,
+        "quote_count": 27
+      }
+    },
     {
       "id": "2075654589022437728",
       "text": "Q：ChatGPT Work 桌面端和 Claude Cowork 桌面端有什么区别？\n\n两者现在都是桌面端智能体，都能操作本地文件，都能用 Computer Use 控制你的电脑，都支持定时任务。但实际用起来，路径和体验差别不小。\n\n1. 执行架构不同。\n\nCowork 在你的电脑上运行一个隔离的 Linux 虚拟机作为沙箱，所有文件操作都在这个本地沙箱里完成，生成的文件（.docx、.xlsx、.pptx、.pdf）直接保存到你指定的文件夹。\n\nChatGPT Work 的桌面端继承了 Codex 的沙箱和权限控制体系，用操作系统原生隔离机制（macOS 上是 Seatbelt，Windows 上是 Windows Sandbox），同时还有一个内置浏览器，不需要额外装扩展就能上网查资料、操作网页工具。\n\n2. 操作电脑的方式不同。\n\nChatGPT Work 桌面端的 Computer Use 可以在后台操作你的其他应用，点击、打字、移动文件，你会看到屏幕上出现一个\"不是你在动\"的第二个光标。\n\nCowork 也有 Computer Use（目前仍是研究预览阶段），通过 Claude in Chrome 扩展操作浏览器，通过桌面端直接操作应用。\n\n3. 应用连接方式不同。\n\nChatGPT Work 用统一的 plugins 目录，60 多个连接器对接 Slack、Teams、Google Drive、SharePoint、Salesforce 等。你在提示词里用 @ 指定应用名就能拉数据。\n\nCowork 用 MCP（Model Context Protocol，模型上下文协议）连接器，对接 Slack、Notion、HubSpot、Jira、Linear 等，还有 11 个官方行业插件（销售、法务、营销、财务等），也支持自建插件。\n\n4. 产品结构相似但不同。\n\nChatGPT 桌面端现在是三合一：Chat、Work、Codex 在同一个 App 里通过模式切换器选择。\n\nClaude 桌面端最近也改版了，从原来的三个标签（Chat、Cowork、Code）合并成了两个标签：Home 和 Code。\n\nHome 里 Chat 和 Cowork 共享同一个首页，对话、Cowork 任务、项目和文件都在同一个侧边栏里，你在消息框左下角切换 Chat 和 Cowork 模式。\n\nCode 标签是 Claude Code 的桌面界面，专门用于软件开发。\n\n结构上，两家现在很像：都是把日常对话、知识工作、编程三种模式塞进了同一个桌面 App。\n\n5. 跨设备能力不同。\n\nClaude Cowork 从 7 月 7 日开始向网页和手机端扩展（Beta，Max 用户优先，其他付费计划陆续开放）。\n\nCowork 任务现在可以远程跑在 Anthropic 的服务器上，关掉电脑也能继续执行，你可以在手机上查看进度、回复 Claude 的问题、或在另一台设备上接着干。定时任务也能在后台跑了。但有一个限制：如果任务需要读写本地文件、用浏览器、或用 Computer Use，你的桌面端 App 必须保持打开状态，远程会话通过桌面端去够这些本地资源。\n\nChatGPT 这边，Chat 对话可以在网页和桌面端之间同步。但 Work 对话目前不互通：网页/手机端创建的 Work 对话留在云端，不会出现在桌面端的 Work 里；桌面端的 Work 线程和本地文件也留在那台电脑上。Codex 桌面端任务不会出现在网页端，但可以通过手机 App 的 Remote 标签远程查看。\n\nClaude Cowork 的跨设备同步走得更前面一步，同一个会话可以在桌面、网页、手机端之间流转。ChatGPT Work 目前云端和桌面端是割裂的，这是 OpenAI 明确说了\"at launch\"的限制，后续大概率会补上。\n\n【来源：https://t.co/Kt5D057ZJn https://t.co/X7JNsuOWht https://t.co/C3mrKRS7Sw https://t.co/zjyhPvHQwG\nhttps://t.co/AnBWWHDqiM】",

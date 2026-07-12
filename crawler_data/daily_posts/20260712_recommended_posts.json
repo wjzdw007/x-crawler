@@ -1,12 +1,44 @@
 {
   "date": "20260712",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-12T02:14:06.621426",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-07-12T06:31:10.474495",
+  "tweet_count": 201,
+  "unique_tweet_count": 201,
+  "total_crawled": 400,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2076174130135674907",
+      "text": "Anthropic 7 月 10 日发布了一场关于 Agent 基础设施的对谈。Claude 平台工程负责人 Katelyn Lesse、产品负责人 Angela Jiang 和产品经理 Jess Yann，分享了几个来自一线的观察。\n\n【Agent 的“脚手架”正在变薄】\n\n几个月前，搭建 Agent 往往需要写大量流程控制代码：先执行 A，满足条件再进入 B，遇到不同情况还要切换不同分支。流程越复杂，系统越容易出错。\n\n随着模型的推理和工具调用能力增强，这些编排层（harness）正在变薄。开发者不用再规定每一步，只需给出目标和基本边界，让模型自己决定怎么完成。\n\n与此同时，一种更高层的编排方式开始出现：让多个 Agent 同时解决一个问题，从中选出最佳方案；让一个 Agent 提方案，另一个负责挑错；或者在 Agent 卡住时，请另一个能力更强的 Agent 提供建议。\n\n重点正在从“控制每一步”，转向“设计 Agent 之间如何协作”。\n\n【衡量 Agent “投入产出比”（ROI，Return on Investment），先看一个人快了多少】\n\nAngela 建议，企业不要一开始就规划上百个自动化流程，而应该先看一个具体的人：用了 Agent 之后，他的工作速度和产出提高了多少？\n\n验证有效后，再从个人推广到团队，最后才处理跨部门流程。前期重点看速度和生产力，等应用逐步成熟，再衡量收入、成本和用户指标。\n\n很多企业做 AI 转型时，喜欢先画一张宏大的自动化蓝图。问题是，流程涉及的部门越多、规则越复杂，落地阻力就越大。从个人开始，更容易看到效果，也更容易持续推进。\n\n【工程团队没消失，但每个人的角色都变了】\n\nKatelyn 观察到，Anthropic 的工程团队和半年前相比，人员构成没有太大变化，但协作方式已经不同。\n\n过去通常由技术负责人决定架构，其他工程师领取任务、编写代码。现在，更多工程师会参与产品和架构决策，再分别指挥 Claude 完成具体工作。\n\nAgent 的作用也不再只是“帮忙写代码”。她提到 Shopify 的 River 系统，已经把需求文档、开发环境、代码实现和 QA 测试串成了一套端到端的 Agent 工作流。\n\n【个体变强，不等于团队自然变好】\n\nAgent 降低了开发和试错成本，也可能带来新的问题。\n\n过去，一个团队会先讨论十个方案中哪个最值得做。现在，每个人都可以快速做出十个原型，甚至全部上线，让市场决定谁胜出。\n\n这样做速度很快，但如果缺少统一方向，产品很容易无序扩张。Agent 能显著放大个人能力，却不会自动解决团队的协调、取舍和决策问题。\n\n来源：https://t.co/fEuKIzIlfk",
+      "created_at": "Sun Jul 12 05:17:40 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2076173574394568704",
+          "url": "https://video.twimg.com/amplify_video/2076173574394568704/vid/avc1/1572x1080/OI1BVL3y6uvVkMKa.mp4?tag=28",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 230545,
+        "friends_count": 1684,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 10,
+        "favorite_count": 40,
+        "reply_count": 7,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2076102645823971373",
       "text": "Starship is evolving rapidly",

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 230787,
+    "followers_count": 230804,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260709",
-  "last_updated": "2026-07-13T22:53:19.400543",
-  "tweet_count": 14,
+  "last_updated": "2026-07-14T02:01:36.183536",
+  "tweet_count": 15,
   "tweets": [
     {
       "id": "2075044071601516732",
@@ -652,6 +652,28 @@
         "favorite_count": 8,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2075342549351297525",
+      "text": "@atomic_chat_hq 这个拿几个最新模型测试物理引擎，结果很有意思！\nhttps://t.co/xRaXcklyI9\n\n他们给 4 款模型下达了完全相同的提示词：\n> 用 HTML5 canvas 编写代码，构建三个独立的、带有真实物理引擎演示的场景。\n\n具体的提示词测试场景如下：\n\n一辆怪兽卡车 (monster truck) 后空翻砸向一辆停靠着的汽车\n一辆特技赛车飞跃六辆公交车后撞上一堵砖墙\n一列火车从断桥上脱轨坠入水中\n\n各模型的输出结果与成本：\n\nGPT-5.6 Sol Ultra: 生成了 3.29 万个 token，花费 0.33 美元\nOpus 4.8: 生成了 9200 个 token，花费 0.24 美元\nGPT-5.5: 生成了 1.24 万个 token，花费 0.11 美元\nGrok 4.5: 生成了 7000 个 token，花费 0.08 美元\n\n在画面呈现上，Sol Ultra 的绘画风格和前辈 GPT-5.5 如出一辙，仅仅是增添了一些细节。这一点在“赛车飞跃公交车”的测试中表现得最为明显，两者的输出画面几乎是一个模子刻出来的。\n\n但在另外两项测试中，Sol Ultra 的表现却惨遭滑铁卢，甚至比不上它的上一代，物理引擎的模拟效果明显变弱了。\n\n在“卡车后空翻”和“火车脱轨”这两个场景的较量中，老将 GPT-5.5 赢得很干脆。总结来说，花 3 倍的价钱去用 Sol Ultra，你实际得到的不过是一个“物理效果更差、但画面稍微精美一丁点”的 GPT-5.5 罢了。\n\n顺便提一句，初出茅庐的 Grok 4.5 在三项测试里直接搞砸了两项，仅仅在“火车脱轨”这个场景里表现尚可。",
+      "created_at": "Thu Jul 09 22:13:16 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2075323261622140930",
+          "url": "https://video.twimg.com/amplify_video/2075323261622140930/vid/avc1/1080x1080/L9mtmONipoPZiq35.mp4?tag=28",
+          "bitrate": 8768000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 70,
+        "reply_count": 20,
+        "quote_count": 1
       }
     }
   ]

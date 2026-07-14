@@ -1,12 +1,177 @@
 {
   "date": "20260714",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-14T04:58:11.902629",
-  "tweet_count": 202,
-  "unique_tweet_count": 202,
-  "total_crawled": 400,
-  "duplicates_removed": 198,
+  "last_crawl_time": "2026-07-14T07:55:43.057693",
+  "tweet_count": 205,
+  "unique_tweet_count": 205,
+  "total_crawled": 402,
+  "duplicates_removed": 197,
   "tweets": [
+    {
+      "id": "2076909201524203973",
+      "text": "Grok 4.5 reaches #1 position on Long-Horizon Terminal-Bench",
+      "created_at": "Tue Jul 14 05:58:35 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2076879157137686634",
+        "text": "The Long-Horizon Terminal-Bench paper landed around May and concluded that the results showed headroom for improvement. The best of the 15 models they tested finished seven of the 46 tasks, and the mean across all models was about two. That ceiling is what fifth place looks like on the current board.\n\nGrok 4.5 is now at 13, and Fable 5 is at 12. A single task costs around 9.9M tokens, 231 episodes, and 85 minutes of wall clock time. That means agents are holding a plan across all of it and finishing, and that capability nearly doubled in two months.\n\nSpaceXAI is on top, and they marketed the 4.2x output token efficiency, which undersells it. Two dollars in, six out, per million. On a benchmark where one task burns ten million tokens, the bill is dominated by input replay, and they say Grok 4.5 solves tasks in under half the number of steps, so there is less accumulated context to resend on every call. The efficiency compounds on the input side, which is the side that costs money.\n\nFable 5 is one task behind. Their own launch chart has them losing DeepSWE 1.1 to Fable by 17 points, and Grok 4.20 sits on this same board at 0.080 with zero completions, so whatever happened in 4.5 is not a family trait.\n\nMy read is that the 4.5 jump came out of training alongside Cursor, which is a stream of real agentic edit trajectories nobody else has at that volume, and nothing in the counterevidence argues against it compounding into the next checkpoint.",
+        "created_at": "Tue Jul 14 03:59:12 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2076872622546284544",
+            "url": "https://pbs.twimg.com/media/HNKIpX6a8AApA8P.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1587601034339561472",
+          "name": "tetsuo",
+          "screen_name": "tetsuoai",
+          "description": "building @a_g_e_n_c //: 👾 just grok it",
+          "followers_count": 235866,
+          "friends_count": 692,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 23,
+          "favorite_count": 217,
+          "reply_count": 56,
+          "quote_count": 11
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240844247,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 457,
+        "favorite_count": 2599,
+        "reply_count": 897,
+        "quote_count": 50
+      }
+    },
+    {
+      "id": "2076907660784353785",
+      "text": "RT @kevinnbass: Just a reminder that deepseek v3 came out 18 months ago and was considered revolutionary at the time but is basically unusa…",
+      "created_at": "Tue Jul 14 05:52:28 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2076881971117011234",
+        "text": "Just a reminder that deepseek v3 came out 18 months ago and was considered revolutionary at the time but is basically unusable today\n\nThere was a fierce debate at the time about vibe coding and the argument was that LLMs can never create anything new because they are limited by their training data\n\nThose engineers were partly right and vibe coding was a real nightmare, I cannot believe what we used to put ourselves through with Sonnet 3.5, but we also knew real new things could be made and that the detractors were wrong\n\nI guess us non-engineers saw it most clearly (I would like to think so at least) because we were astonished at the new things we could do without the programming background, and we had nothing to lose and everything to gain in our enthusiasm\n\nThen came Opus 4.5 earlier this year which changed everything\n\nSuddenly real production code became possible with so much less friction and headache\n\nEveryone complained endlessly about models being nerfed or quantized but there was a steady march of progress from 4.5 to 4.8\n\nNow a completely new crop of models is coming out that is not quite a 4.5 moment but something close\n\nWe are not only getting more polish but things are becoming a little freaky, entire isolated domains become possible to combine with small teams or even just one person into new applications that would have required large infusions of time and capital in the past\n\nMy wife back in 2021 told me about AI but I was in healthcare, I thought she was being a little nutty, and she talked like something from a science fiction film was coming and she got involved in it early on\n\nShe never stops letting me know that she was right, and she was\n\nThe next year is going to be wild, the world is truly going to change over the next few years, the scale of disruption will be a combination of astonishing and awesome, but also catastrophic\n\nThere are many amazing things ahead and extraordinary challenges and opportunities\n\nWe are living inside one of one of the biggest revolutions in human history",
+        "created_at": "Tue Jul 14 04:10:23 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1038726722",
+          "name": "Kevin Bass",
+          "screen_name": "kevinnbass",
+          "description": "Interested in tech, AI, public health, healthcare — Kicked out of TTU med for truth-telling — I want Texas Tech to tell the truth about what it did",
+          "followers_count": 217199,
+          "friends_count": 2769,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 165,
+          "favorite_count": 1032,
+          "reply_count": 156,
+          "quote_count": 11
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240844247,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 165,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2076905740531302479",
+      "text": "The woke mob had turned Twitter into Wormtongue to the World https://t.co/XUcA15vImB",
+      "created_at": "Tue Jul 14 05:44:50 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2076905738413170688",
+          "url": "https://pbs.twimg.com/media/HNKmw-IWYAAt96B.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2076790049421828402",
+        "text": "Elon buying Twitter and restoring free speech was unironically one of the most pivotal moments in the 21st century\n\nIts effects will be studied for generations https://t.co/zrO6lZATCT",
+        "created_at": "Mon Jul 13 22:05:07 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2076789724166098944",
+            "url": "https://pbs.twimg.com/media/HNI9QDYaEAAmiH5.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1317327383628705793",
+          "name": "Arthur MacWaters",
+          "screen_name": "ArthurMacwaters",
+          "description": "unapologetic believer in American exceptionalism 🇺🇸  \nfounder @legionhealth prev @mckinsey @princeton",
+          "followers_count": 83584,
+          "friends_count": 994,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 953,
+          "favorite_count": 8638,
+          "reply_count": 144,
+          "quote_count": 51
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240844247,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 651,
+        "favorite_count": 4607,
+        "reply_count": 1004,
+        "quote_count": 49
+      }
+    },
     {
       "id": "2076872817690239299",
       "text": "RT @XFreeze: SpaceX was founded on one powerful belief:\n\nA future where humanity is out exploring the stars is fundamentally more exciting…",

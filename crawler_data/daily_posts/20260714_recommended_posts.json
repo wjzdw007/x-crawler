@@ -1,12 +1,43 @@
 {
   "date": "20260714",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-14T15:21:47.506771",
-  "tweet_count": 210,
-  "unique_tweet_count": 210,
-  "total_crawled": 405,
-  "duplicates_removed": 195,
+  "last_crawl_time": "2026-07-14T17:10:17.125804",
+  "tweet_count": 211,
+  "unique_tweet_count": 211,
+  "total_crawled": 410,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2077074912435433901",
+      "text": "字幕转录翻译剪辑 Skill —— BaoCut（仅支持 Mac）\n\n借助 Agent Skill，可以转录视频、对转录结果识别 Speaker、润色（纠正错别字口癖等）、也可以根据转录结果对视频进行简单的剪辑，比如删除口癖、重复等。\n\n这次尝试解决一个问题就是 Agent 对字幕转录翻译后，无法通过一个友好的操作界面二次编辑的问题。\n\n现在的做法是为 Agent 提供一个 cli，配合 Skill 的说明，Agent 可以借助 cli 去转录，获取转录结果润色、翻译，并实时同步进度到 GUI。后续可以在 GUI 进行预览和人工编辑。\n\n安装了 Skill 和 App 后，后续只要从 Codex 或者 Claude Code 这种 Agent，触发 Skill 即可执行，比如：\n> /baocut 转录并翻译视频：<视频 url 或路径>\n\n已知问题：\n- 仅支持 Mac\n- 翻译速度略慢，但质量会不错\n\n下载地址：https://t.co/89Wi1b3hZT\n\nSkill 从 App 内可以安装，或者 Skill 地址：https://t.co/aON4AditbU",
+      "created_at": "Tue Jul 14 16:57:03 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2077068827918041088",
+          "url": "https://pbs.twimg.com/media/HNM7GB4XgAAvh7C.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 230896,
+        "friends_count": 1687,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 9,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2077044528234553709",
       "text": "Ancient times  https://t.co/8VWNoiOHjg",

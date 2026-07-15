@@ -1,12 +1,208 @@
 {
   "date": "20260715",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-15T04:52:03.321761",
-  "tweet_count": 210,
-  "unique_tweet_count": 210,
-  "total_crawled": 400,
-  "duplicates_removed": 190,
+  "last_crawl_time": "2026-07-15T08:00:35.324451",
+  "tweet_count": 213,
+  "unique_tweet_count": 213,
+  "total_crawled": 410,
+  "duplicates_removed": 197,
   "tweets": [
+    {
+      "id": "2077294450645107051",
+      "text": "今天在 ChatGPT 里面找 Codex 没找到，原来改名叫 Remote 了",
+      "created_at": "Wed Jul 15 07:29:25 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2076968653019300283",
+        "text": "Here is the latest update to Codex Remote on iOS! \n\nAs I posted, we now support the new visualisation feature, but there is also a ton of other improvements and fixes! \n\nhttps://t.co/FY9qiWojdp https://t.co/6DA2bKPnZQ",
+        "created_at": "Tue Jul 14 09:54:49 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2076968352178716672",
+            "url": "https://pbs.twimg.com/media/HNLftklXQAAhnAh.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "15704456",
+          "name": "Thomas Ricouard",
+          "screen_name": "Dimillian",
+          "description": "Developer Experience, Codex  @OpenAI\nBuilder, Entrepreneur, iOS/macOS, Swift/SwiftUI & more",
+          "followers_count": 54272,
+          "friends_count": 4048,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 6,
+          "favorite_count": 178,
+          "reply_count": 23,
+          "quote_count": 4
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 230973,
+        "friends_count": 1687,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 11,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2077281462433223043",
+      "text": "我在开发 BaoCut 这个 App 的时候，是基于一个 Loop 来的：\n\n1. 在开发新功能之前先设计原型（参考图1），借助的是 baoyu-design skill （https://t.co/d2EaYV6q7j ），配合 Claude Code App 内置的浏览器实施预览调整，模型 Opus 4.8 就很好了，都不需要 Fable 5.\n\nGPT 5.6 Sol 设计能力还是不如 Opus 4.8\n\n2. 原型打磨好了后，只需要在同一会话内，让 Claude Code 基于新的 UI 设计去实现功能即可，这块 Claude 做的很好，Fable 5 效果最好，能将设计稿几乎 1:1 还原，如果修改不多 Opus 4.8 也能胜任。\n\n这些 UI 的打磨我还是更放心让 Fable 和 Opus 而不是 GPT，但其他一些不涉及 UI 部分的 GPT 5.6 Sol 就做的很好。\n\n3. 更新好了后测试没问题，就可以通过发布的 skill 发布新版本。\n\n这里可以放心让 Codex 去做了，尤其是它的 CloudFlare Plugin 很好用，直接帮助发布更新安装包到 CF。\n\n这个 loop 的每一个迭代的起点是自己的想法，让 AI 提供设计方案，和 AI 反复讨论后确定方案，然后 AI 实施，AI 实施完成后人再去验证和当初想要的是否一致，如果不一致再让 AI 调整甚至推翻重来。",
+      "created_at": "Wed Jul 15 06:37:49 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2077277382805729280",
+          "url": "https://pbs.twimg.com/media/HNP4xhYWsAAxX0_.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2077074912435433901",
+        "text": "字幕转录翻译剪辑 Skill —— BaoCut（仅支持 Mac）\n\n借助 Agent Skill，可以转录视频、对转录结果识别 Speaker、润色（纠正错别字口癖等）、也可以根据转录结果对视频进行简单的剪辑，比如删除口癖、重复等。\n\n这次尝试解决一个问题就是 Agent 对字幕转录翻译后，无法通过一个友好的操作界面二次编辑的问题。\n\n现在的做法是为 Agent 提供一个 cli，配合 Skill 的说明，Agent 可以借助 cli 去转录，获取转录结果润色、翻译，并实时同步进度到 GUI。后续可以在 GUI 进行预览和人工编辑。\n\n安装了 Skill 和 App 后，后续只要从 Codex 或者 Claude Code 这种 Agent，触发 Skill 即可执行，比如：\n> /baocut 转录并翻译视频：<视频 url 或路径>\n\n已知问题：\n- 仅支持 Mac\n- 翻译速度略慢，但质量会不错\n\n下载地址：https://t.co/89Wi1b3hZT\n\nSkill 从 App 内可以安装，或者 Skill 地址：https://t.co/aON4AditbU",
+        "created_at": "Tue Jul 14 16:57:03 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2077068827918041088",
+            "url": "https://pbs.twimg.com/media/HNM7GB4XgAAvh7C.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 230973,
+          "friends_count": 1687,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 39,
+          "favorite_count": 336,
+          "reply_count": 42,
+          "quote_count": 13
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 230973,
+        "friends_count": 1687,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 17,
+        "reply_count": 8,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2077269478010761313",
+      "text": "RT @michaelnicollsx: Congrats to the @Starlink team on the release of the new Starlink V5 terminal, designed with high performance, reliabi…",
+      "created_at": "Wed Jul 15 05:50:12 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2077233376281469157",
+        "text": "Congrats to the @Starlink team on the release of the new Starlink V5 terminal, designed with high performance, reliability, and scalability in mind based on the learnings of our previous products. Also, designed and manufactured in the USA.",
+        "created_at": "Wed Jul 15 03:26:44 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2077145785481957839",
+          "text": "The next generation Starlink Kit is designed to deliver reliable, high-speed home internet. Starlink V5 has a smaller form factor and lightweight design with greater power efficiency than the Starlink V4.\n\nWith speeds up to 375+ Mbps, Starlink V5 delivers seamless connectivity for streaming, video calling, gaming and more.\n\nCurrently available in select areas. As production ramps, Starlink V5 will be available in additional areas.\n\nOrder now → https://t.co/fv9RdnnPdx",
+          "created_at": "Tue Jul 14 21:38:41 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2077099374031855616",
+              "url": "https://video.twimg.com/amplify_video/2077099374031855616/vid/avc1/3840x2046/uQwkf0KAfFh9i6KX.mp4?tag=28",
+              "bitrate": 25128000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1330170106501079041",
+            "name": "Starlink",
+            "screen_name": "Starlink",
+            "description": "Fast, affordable internet available all around the world. Engineered by @SpaceX",
+            "followers_count": 1675323,
+            "friends_count": 31,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 553,
+            "favorite_count": 3885,
+            "reply_count": 261,
+            "quote_count": 82
+          }
+        },
+        "user": {
+          "id": "1745904877283442688",
+          "name": "Michael Nicolls",
+          "screen_name": "michaelnicollsx",
+          "description": "Starlink & AI @ SpaceX",
+          "followers_count": 33248,
+          "friends_count": 186,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 272,
+          "favorite_count": 1638,
+          "reply_count": 236,
+          "quote_count": 12
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240870282,
+        "friends_count": 1367,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 272,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2077226385957851644",
       "text": "@bkingfilm 未来不会，苹果、Google 这些做系统的会逐步集成 AI 能力",

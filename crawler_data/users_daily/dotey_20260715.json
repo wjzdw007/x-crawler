@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 230926,
+    "followers_count": 230940,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260715",
-  "last_updated": "2026-07-15T01:58:30.439044",
-  "tweet_count": 1,
+  "last_updated": "2026-07-15T04:52:03.351793",
+  "tweet_count": 5,
   "tweets": [
     {
       "id": "2077210433254015428",
@@ -71,6 +71,134 @@
         "retweet_count": 1,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2077216164103487986",
+      "text": "Codex 最新动态：\n\n从 GPT‑5.6 与 Ultra 模式，到多智能体并行协作、计算机与浏览器操作、应用截图理解、行内代码和文档修改，再到一键发布 Sites、跨项目管理以及完整的 PR 工作流。\n\nCodex 已不只是一个“帮你写代码”的工具，而是能够拆解复杂任务、操作和测试应用、协调多个项目、处理 Bug 与代码审查，并协助完成发布的开发伙伴。\n\n无论你想提高日常开发效率，还是探索更自动化的 AI 编程方式，这支视频都能帮你快速掌握 Codex 的新能力和实际应用场景。\n\n本视频由 baocut 翻译",
+      "created_at": "Wed Jul 15 02:18:20 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2077215515420897280",
+          "url": "https://video.twimg.com/amplify_video/2077215515420897280/vid/avc1/1920x1080/tb94biRsKe_ghn5u.mp4?tag=28",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2077166520392970529",
+        "text": "7M+ weekly Codex users. 150+ updates in two months.\n\n@romainhuet catches you up on what’s new in Codex:\nGPT‑5.6 and Ultra\nParallel work with /goal\nFaster computer use\nAppShots\nInline edits\nSites\nCodex mobile and SSH workflows\nPRs from review to merge https://t.co/1enm87MFkE",
+        "created_at": "Tue Jul 14 23:01:05 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2077157574584233984",
+            "url": "https://video.twimg.com/amplify_video/2077157574584233984/vid/avc1/1920x1080/XJTLzAta7tHcu1DC.mp4?tag=28",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1633874951508721686",
+          "name": "OpenAI Developers",
+          "screen_name": "OpenAIDevs",
+          "description": "Official updates for developers building with Codex & the OpenAI Platform • Service status: https://t.co/kZwnwdYYEq",
+          "followers_count": 375465,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 80,
+          "favorite_count": 1229,
+          "reply_count": 81,
+          "quote_count": 30
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 33,
+        "reply_count": 14,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2077225080027775206",
+      "text": "这个 App 最开始是自己用的，是走的 LLM 方案，先整体翻译，然后按句子配对，再 LLM 拆分，但是拆分效果总是不理想。\n\n另外走 LLM 还有一个问题，就是要配置 API Key，这其实对普通人不友好，另外就是成本其实不低，Gemini 3.5 Flash 一部长一点视频都几美元。\n\n最后发现还是 Agent + Skill 路线最好：\n\n1. Agent 有很好的纠错能力，哪怕你不给它这样的工具，它自己都能一边翻译一边纠错，质量不错。\n\n2. 把 App 的能力封装成 cli，让 Agent 可以通过命令行调用 App 的功能\n\n3. 配合一个 Skill 把常用的工作流比如像转录、润色、翻译、对齐、剪辑都固化下来，这样 Agent 就知道最佳实践是什么，不需要每次都自己摸索\n\n4. App 解决的是人工预览、校对的部分。\n\nAgent 操作完，如果你是人肉看文本字幕，或者你每次修改一点都要重新 ffmpeg 生成一遍视频，那效率太低了。最好的方式其实不是完全交给 Agent，而是可以有一个图形化的工具快速的预览、二次编辑。\n\n5. Agent 相对比较通用和便宜，现在大家都有 Agent，包月的 Token 经常花不完，用来干这种活正合适",
+      "created_at": "Wed Jul 15 02:53:46 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2077074912435433901",
+        "text": "字幕转录翻译剪辑 Skill —— BaoCut（仅支持 Mac）\n\n借助 Agent Skill，可以转录视频、对转录结果识别 Speaker、润色（纠正错别字口癖等）、也可以根据转录结果对视频进行简单的剪辑，比如删除口癖、重复等。\n\n这次尝试解决一个问题就是 Agent 对字幕转录翻译后，无法通过一个友好的操作界面二次编辑的问题。\n\n现在的做法是为 Agent 提供一个 cli，配合 Skill 的说明，Agent 可以借助 cli 去转录，获取转录结果润色、翻译，并实时同步进度到 GUI。后续可以在 GUI 进行预览和人工编辑。\n\n安装了 Skill 和 App 后，后续只要从 Codex 或者 Claude Code 这种 Agent，触发 Skill 即可执行，比如：\n> /baocut 转录并翻译视频：<视频 url 或路径>\n\n已知问题：\n- 仅支持 Mac\n- 翻译速度略慢，但质量会不错\n\n下载地址：https://t.co/89Wi1b3hZT\n\nSkill 从 App 内可以安装，或者 Skill 地址：https://t.co/aON4AditbU",
+        "created_at": "Tue Jul 14 16:57:03 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2077068827918041088",
+            "url": "https://pbs.twimg.com/media/HNM7GB4XgAAvh7C.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 230940,
+          "friends_count": 1687,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 35,
+          "favorite_count": 288,
+          "reply_count": 34,
+          "quote_count": 6
+        }
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 29,
+        "reply_count": 12,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2077226148648366543",
+      "text": "@bkingfilm 受限于操作系统，不行的",
+      "created_at": "Wed Jul 15 02:58:01 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2077226385957851644",
+      "text": "@bkingfilm 未来不会，苹果、Google 这些做系统的会逐步集成 AI 能力",
+      "created_at": "Wed Jul 15 02:58:58 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 2,
         "quote_count": 0
       }
     }

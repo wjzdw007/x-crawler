@@ -1,12 +1,511 @@
 {
   "date": "20260715",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-15T01:58:30.406753",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-07-15T04:52:03.321761",
+  "tweet_count": 210,
+  "unique_tweet_count": 210,
+  "total_crawled": 400,
+  "duplicates_removed": 190,
   "tweets": [
+    {
+      "id": "2077226385957851644",
+      "text": "@bkingfilm 未来不会，苹果、Google 这些做系统的会逐步集成 AI 能力",
+      "created_at": "Wed Jul 15 02:58:58 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 230940,
+        "friends_count": 1687,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2077226148648366543",
+      "text": "@bkingfilm 受限于操作系统，不行的",
+      "created_at": "Wed Jul 15 02:58:01 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 230940,
+        "friends_count": 1687,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2077225080027775206",
+      "text": "这个 App 最开始是自己用的，是走的 LLM 方案，先整体翻译，然后按句子配对，再 LLM 拆分，但是拆分效果总是不理想。\n\n另外走 LLM 还有一个问题，就是要配置 API Key，这其实对普通人不友好，另外就是成本其实不低，Gemini 3.5 Flash 一部长一点视频都几美元。\n\n最后发现还是 Agent + Skill 路线最好：\n\n1. Agent 有很好的纠错能力，哪怕你不给它这样的工具，它自己都能一边翻译一边纠错，质量不错。\n\n2. 把 App 的能力封装成 cli，让 Agent 可以通过命令行调用 App 的功能\n\n3. 配合一个 Skill 把常用的工作流比如像转录、润色、翻译、对齐、剪辑都固化下来，这样 Agent 就知道最佳实践是什么，不需要每次都自己摸索\n\n4. App 解决的是人工预览、校对的部分。\n\nAgent 操作完，如果你是人肉看文本字幕，或者你每次修改一点都要重新 ffmpeg 生成一遍视频，那效率太低了。最好的方式其实不是完全交给 Agent，而是可以有一个图形化的工具快速的预览、二次编辑。\n\n5. Agent 相对比较通用和便宜，现在大家都有 Agent，包月的 Token 经常花不完，用来干这种活正合适",
+      "created_at": "Wed Jul 15 02:53:46 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2077074912435433901",
+        "text": "字幕转录翻译剪辑 Skill —— BaoCut（仅支持 Mac）\n\n借助 Agent Skill，可以转录视频、对转录结果识别 Speaker、润色（纠正错别字口癖等）、也可以根据转录结果对视频进行简单的剪辑，比如删除口癖、重复等。\n\n这次尝试解决一个问题就是 Agent 对字幕转录翻译后，无法通过一个友好的操作界面二次编辑的问题。\n\n现在的做法是为 Agent 提供一个 cli，配合 Skill 的说明，Agent 可以借助 cli 去转录，获取转录结果润色、翻译，并实时同步进度到 GUI。后续可以在 GUI 进行预览和人工编辑。\n\n安装了 Skill 和 App 后，后续只要从 Codex 或者 Claude Code 这种 Agent，触发 Skill 即可执行，比如：\n> /baocut 转录并翻译视频：<视频 url 或路径>\n\n已知问题：\n- 仅支持 Mac\n- 翻译速度略慢，但质量会不错\n\n下载地址：https://t.co/89Wi1b3hZT\n\nSkill 从 App 内可以安装，或者 Skill 地址：https://t.co/aON4AditbU",
+        "created_at": "Tue Jul 14 16:57:03 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2077068827918041088",
+            "url": "https://pbs.twimg.com/media/HNM7GB4XgAAvh7C.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 230940,
+          "friends_count": 1687,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 35,
+          "favorite_count": 288,
+          "reply_count": 34,
+          "quote_count": 6
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 230940,
+        "friends_count": 1687,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 29,
+        "reply_count": 12,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2077219839626641676",
+      "text": "Grok 4.5 is worth trying",
+      "created_at": "Wed Jul 15 02:32:57 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2077170837413867751",
+        "text": "Grok 4.5 just ranked #2 on the FrontierSWE leaderboard, outperforming Claude Opus 4.8 and GPT-5.5\n\nIt delivers top-tier coding performance with exceptional speed, strong token efficiency and a much lower cost than many competing frontier models\n\nGrok 4.5 is already one of the best coding models available today, sitting at the very top",
+        "created_at": "Tue Jul 14 23:18:14 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2077170832250695680",
+            "url": "https://pbs.twimg.com/media/HNOX3doa8AAW1Ut.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 244957,
+          "friends_count": 1928,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 45,
+          "favorite_count": 333,
+          "reply_count": 110,
+          "quote_count": 4
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240870351,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 569,
+        "favorite_count": 3906,
+        "reply_count": 1137,
+        "quote_count": 54
+      }
+    },
+    {
+      "id": "2077219528765784339",
+      "text": "RT @cb_doge: BREAKING: The new Starlink V5 is 48% smaller and 62% lighter than V4.\n\n• Size: 384 × 306 mm vs 594 × 383 mm\n• Weight: 1.1 kg v…",
+      "created_at": "Wed Jul 15 02:31:43 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2077152453557178625",
+        "text": "BREAKING: The new Starlink V5 is 48% smaller and 62% lighter than V4.\n\n• Size: 384 × 306 mm vs 594 × 383 mm\n• Weight: 1.1 kg vs 2.9 kg\n• Power: 35–50W vs 75–100W\n• Wind rating: 265 km/h vs 96+ km/h\n• Same 110° field of view\n• Speeds up to 375+ Mbps https://t.co/l6Rpqm4TuY",
+        "created_at": "Tue Jul 14 22:05:11 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2077151987993583616",
+            "url": "https://pbs.twimg.com/media/HNOGulTaoAAiXxu.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1887391,
+          "friends_count": 1014,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 336,
+          "favorite_count": 1801,
+          "reply_count": 198,
+          "quote_count": 12
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240870351,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 336,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2077219169724948545",
+      "text": "RT @tetsuoai: Grok 4.5 Usage reset to 0% time to build. https://t.co/cFRHgcgkv7",
+      "created_at": "Wed Jul 15 02:30:17 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2077181940042706944",
+          "url": "https://pbs.twimg.com/media/HNOh-BYaMAACiN1.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2077183806117920958",
+        "text": "Grok 4.5 Usage reset to 0% time to build. https://t.co/cFRHgcgkv7",
+        "created_at": "Wed Jul 15 00:09:46 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2077181940042706944",
+            "url": "https://pbs.twimg.com/media/HNOh-BYaMAACiN1.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1587601034339561472",
+          "name": "tetsuo",
+          "screen_name": "tetsuoai",
+          "description": "building @a_g_e_n_c //: 👾 just grok it",
+          "followers_count": 236005,
+          "friends_count": 694,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 160,
+          "favorite_count": 1012,
+          "reply_count": 117,
+          "quote_count": 8
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240870351,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 160,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2077217230895382826",
+      "text": "Order the Starlink V5 terminal!",
+      "created_at": "Wed Jul 15 02:22:35 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2077145785481957839",
+        "text": "The next generation Starlink Kit is designed to deliver reliable, high-speed home internet. Starlink V5 has a smaller form factor and lightweight design with greater power efficiency than the Starlink V4.\n\nWith speeds up to 375+ Mbps, Starlink V5 delivers seamless connectivity for streaming, video calling, gaming and more.\n\nCurrently available in select areas. As production ramps, Starlink V5 will be available in additional areas.\n\nOrder now → https://t.co/fv9RdnnPdx",
+        "created_at": "Tue Jul 14 21:38:41 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2077099374031855616",
+            "url": "https://video.twimg.com/amplify_video/2077099374031855616/vid/avc1/3840x2046/uQwkf0KAfFh9i6KX.mp4?tag=28",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1330170106501079041",
+          "name": "Starlink",
+          "screen_name": "Starlink",
+          "description": "Fast, affordable internet available all around the world. Engineered by @SpaceX",
+          "followers_count": 1675098,
+          "friends_count": 31,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 464,
+          "favorite_count": 3173,
+          "reply_count": 192,
+          "quote_count": 63
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240870351,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 686,
+        "favorite_count": 3953,
+        "reply_count": 795,
+        "quote_count": 26
+      }
+    },
+    {
+      "id": "2077216893329445219",
+      "text": "RT @yunta_tsai: People may disagree on which frontier model is best, but they all seem to agree the current X algorithm is superb.",
+      "created_at": "Wed Jul 15 02:21:14 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2077204303568347312",
+        "text": "People may disagree on which frontier model is best, but they all seem to agree the current X algorithm is superb.",
+        "created_at": "Wed Jul 15 01:31:13 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1577705091737432070",
+          "name": "Yun-Ta Tsai",
+          "screen_name": "yunta_tsai",
+          "description": "Sr. Staff Engineer  @Tesla_AI",
+          "followers_count": 120917,
+          "friends_count": 217,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 174,
+          "favorite_count": 1369,
+          "reply_count": 154,
+          "quote_count": 10
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240870351,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 174,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2077216833359274096",
+      "text": "RT @XFreeze: SpaceX just launched two Falcon 9 rockets carrying 56 Starlink satellites in less than eight hours\n\nSpaceX is moving at light…",
+      "created_at": "Wed Jul 15 02:21:00 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2077042441698312486",
+        "text": "SpaceX just launched two Falcon 9 rockets carrying 56 Starlink satellites in less than eight hours\n\nSpaceX is moving at light speed right now\n\nFirst:\n• 27 Starlink satellites from Vandenberg\n\nThen, just 7 hours and 42 minutes later:\n• 29 more Starlink satellites from Florida\n\nTwo coasts, two rockets, 56 satellites, less than eight hours\n\nFor most space programs, one launch is a major national achievement\nSpaceX launched twice in one day and was already preparing for the next mission\n\nSpaceX is basically running an orbital assembly line",
+        "created_at": "Tue Jul 14 14:48:02 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2077042424967274497",
+            "url": "https://pbs.twimg.com/media/HNMjFLOXIAEnSrU.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 244957,
+          "friends_count": 1928,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 360,
+          "favorite_count": 2136,
+          "reply_count": 142,
+          "quote_count": 19
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240870351,
+        "friends_count": 1366,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 360,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2077216164103487986",
+      "text": "Codex 最新动态：\n\n从 GPT‑5.6 与 Ultra 模式，到多智能体并行协作、计算机与浏览器操作、应用截图理解、行内代码和文档修改，再到一键发布 Sites、跨项目管理以及完整的 PR 工作流。\n\nCodex 已不只是一个“帮你写代码”的工具，而是能够拆解复杂任务、操作和测试应用、协调多个项目、处理 Bug 与代码审查，并协助完成发布的开发伙伴。\n\n无论你想提高日常开发效率，还是探索更自动化的 AI 编程方式，这支视频都能帮你快速掌握 Codex 的新能力和实际应用场景。\n\n本视频由 baocut 翻译",
+      "created_at": "Wed Jul 15 02:18:20 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2077215515420897280",
+          "url": "https://video.twimg.com/amplify_video/2077215515420897280/vid/avc1/1920x1080/tb94biRsKe_ghn5u.mp4?tag=28",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2077166520392970529",
+        "text": "7M+ weekly Codex users. 150+ updates in two months.\n\n@romainhuet catches you up on what’s new in Codex:\nGPT‑5.6 and Ultra\nParallel work with /goal\nFaster computer use\nAppShots\nInline edits\nSites\nCodex mobile and SSH workflows\nPRs from review to merge https://t.co/1enm87MFkE",
+        "created_at": "Tue Jul 14 23:01:05 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2077157574584233984",
+            "url": "https://video.twimg.com/amplify_video/2077157574584233984/vid/avc1/1920x1080/XJTLzAta7tHcu1DC.mp4?tag=28",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1633874951508721686",
+          "name": "OpenAI Developers",
+          "screen_name": "OpenAIDevs",
+          "description": "Official updates for developers building with Codex & the OpenAI Platform • Service status: https://t.co/kZwnwdYYEq",
+          "followers_count": 375465,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 80,
+          "favorite_count": 1229,
+          "reply_count": 81,
+          "quote_count": 30
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 230940,
+        "friends_count": 1687,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 33,
+        "reply_count": 14,
+        "quote_count": 3
+      }
+    },
     {
       "id": "2077210433254015428",
       "text": "RT @shao__meng: Cognition 收购 Windsurf 一周年？！\n\n时间过得真快，总觉得还是前几个月的事。这么说，WIndsurf 创始人加入 Google 也有一年了，可 Antigravity 好像真的没什么声音了。。。\n\n跑题了！看看 @ScottW…",

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 231004,
+    "followers_count": 231020,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260715",
-  "last_updated": "2026-07-15T13:27:14.633227",
-  "tweet_count": 7,
+  "last_updated": "2026-07-15T15:24:34.603179",
+  "tweet_count": 8,
   "tweets": [
     {
       "id": "2077210433254015428",
@@ -295,6 +295,51 @@
         "retweet_count": 1,
         "favorite_count": 11,
         "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2077410256607424911",
+      "text": "RT @aigclink: BaoCut：是宝玉老师 @dotey 开发的转录+粗剪的Skill，对创作者，省掉的是逐句抠字幕的时间。安装到 Claude Code / Codex 上，即可用自然语言驱动 BaoCut 这个 skill 剪辑 app 的命令行。… https:…",
+      "created_at": "Wed Jul 15 15:09:36 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2077335633274745263",
+        "text": "BaoCut：是宝玉老师 @dotey 开发的转录+粗剪的Skill，对创作者，省掉的是逐句抠字幕的时间。安装到 Claude Code / Codex 上，即可用自然语言驱动 BaoCut 这个 skill 剪辑 app 的命令行。\n\n适用场景：对于喜欢将国外的演讲搬到国内的朋友来说简直就是福音，用baocut把视频/youtube的url导入即可完成翻译转录，对于搬运侠来说省了不少事。对于做跨境电商的朋友也很有价值，多语言转录也很有价值。\n\n昨天介绍的三家接 agent 都走 MCP——ChatCut 给闭源编辑器外挂 MCP 插件、OpenCut 把 MCP 写进重写路线图、Palmier 原生 MCP。BaoCut 换了个更轻的姿势：把 app 自带的 baocut CLI 包成一个 https://t.co/x8iW7w1d88 Agent Skill，agent 直接跑命令cli：\n\n· baocut --json auto talk.mp4 --lang zh   # 转写 → 润色 → 翻译，一条命令\n· baocut export <id> --srt --translated --lang zh\n\nBaoCut 解决的问题很垂直很精准：口播视频的转写、加字幕、翻译字幕、说话人复核、清理 talking-head、导出——这些正是知识博主/口播号最费时的机械活。以前逐句对字幕、手动翻译的活，现在跟 Claude Code 说句人话就跑完了。\n\n我测试baocut使用了下，字幕识别转录上，要比剪映的自动字幕识别要好，帮我把相关的语气词拿掉了、很多重复的语句也直接剪掉了，也可以直接将字幕翻译为十几种其他语言。\n#BaoCut #AI剪辑 #字幕翻译 #ClaudeCode #AgentSkill",
+        "created_at": "Wed Jul 15 10:13:04 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2077335121653612544",
+            "url": "https://pbs.twimg.com/media/HNQtSXWbQAAV53P.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1535166019978768384",
+          "name": "AIGCLINK",
+          "screen_name": "aigclink",
+          "description": "致力于让每个想拥抱AI的人都能找到适合自己的AI产品，助力企业定制AIGC应用",
+          "followers_count": 36210,
+          "friends_count": 1758,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 11,
+          "reply_count": 3,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

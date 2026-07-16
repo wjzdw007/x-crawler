@@ -1,0 +1,20 @@
+**新工具/技术**
+- BaoCut（App + Skill + CLI）：用于视频转录、润色、翻译与粗剪，作为 Agent Skill 被 Claude Code / Codex 调用，支持把常用工作流固化为命令行接口。  
+- Codex / Codex Remote（原名 Remote）：OpenAI 的开发者平台生态，新增 GPT‑5.6、Ultra 模式、多智能体并行、AppShots、行内编辑、完整 PR 到合并流程等，朝“自动化软件工程”方向演进。  
+- Devin Desktop（Cognition 方向产品化示例）：把“任意 Agent + 任意模型 + 任意终端”统一入口，支持模型、Agent、终端协同工作（来源于 Cognition/Windsurf 一年整合叙述）。  
+- Fable / Opus（设计与实现模型选择）：在 UI 原型还原上 Fable 5 与 Opus 4.8 表现优于 GPT‑5.6 Sol，用于把设计稿几乎 1:1 转成实现。  
+- kbd-1.0-codex-micro：面向 Codex 的硬件键盘，用于快速映射工作流与固定会话置顶，关注开发者体验与效率提升。  
+
+**核心观点/方法论**
+- Agent+Skill 优于 LLM-only：把具体能力封装成 CLI/Skill，让 Agent 调用并固化最佳实践，减少对大模型逐次试错的依赖，成本和稳定性更好。  
+- 并购快速补齐能力栈：Cognition+Windsurf 的案例说明并购能在短时间内补齐 GTM 与工程组织、把分散能力收拢为完整产品栈，加速商业化与规模化。  
+- 人机闭环仍关键：完整循环是“人—AI 共同迭代”：人提供想法与验证，AI 生成设计/实现/发布，人再校验并指导下一轮调整。  
+- 工具链分工明确提高效率：把能自动化的环节（转录、润色、发布）交给 Agent/平台，把需要感性判断的环节（UI 微调、最终预览）留给图形化 GUI 和人工校对。  
+- 平台与系统集成趋势：操作系统厂商（Apple、Google）会逐步把 AI 能力下沉到系统层，会改变 Agent 部署与能力可达性。  
+
+**实践经验/案例**
+- BaoCut 实操教训：最初用 LLM 整体翻译拆句效果差且成本高，改为 Agent+Skill+CLI 后纠错与效率显著提升；但目前仅支持 Mac、翻译速度有时慢。  
+- 开发迭代 loop（dotey 的做法）：先用 baoyu-design Skill 做原型（Opus/Fable 优势），再在同会话里让 Claude Code 实现、测试、通过 skill 发布，形成快速闭环交付。  
+- Codex 实战价值：Codex 的并行 Agent、SSH/移动/发布工作流与插件（如 CloudFlare 插件）把“从设计到部署”的流程更自动化，适合降低重复性工程成本并加快发布节奏。  
+- 并购带来的量化跃迁（Cognition 案例）：团队规模与收入在一年内大幅增长（示例性从 44→350 人、$73M→>$500M run‑rate），说明技术+GTM 整合能快速放大商业化效果。  
+- 工程选择权衡：在 UI 相关任务更信赖专门的视觉模型（Fable/Opus），非 UI 的逻辑/调度更可交给 GPT 系列，按任务选择模型可提高产出质量与成本效率。

@@ -3,13 +3,13 @@
     "screen_name": "elonmusk",
     "name": "Elon Musk",
     "description": "Starmind",
-    "followers_count": 240888611,
+    "followers_count": 240893609,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260715",
-  "last_updated": "2026-07-15T22:56:25.601084",
-  "tweet_count": 34,
+  "last_updated": "2026-07-16T02:08:49.315122",
+  "tweet_count": 35,
   "tweets": [
     {
       "id": "2077216833359274096",
@@ -1605,6 +1605,51 @@
         "favorite_count": 1352,
         "reply_count": 371,
         "quote_count": 29
+      }
+    },
+    {
+      "id": "2077536036628893943",
+      "text": "RT @MiaAI_lab: I've inspected the open-sourced Grok Build so you don't have to. Here's exactly what data it sends (and what stays local):…",
+      "created_at": "Wed Jul 15 23:29:24 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2077512540431466565",
+        "text": "I've inspected the open-sourced Grok Build so you don't have to. Here's exactly what data it sends (and what stays local):\n\nCore (unavoidable)→ Your prompts/conversations + tool calls go to xAI's inference API. That's the whole point of the CLI.\n\nEverything else is off by default — no Mixpanel, no Sentry, no product telemetry unless you explicitly turn it on. Even the auto-update check is a simple version GET you can disable in config.\n\nPurely local stuff (crash reports, debug logs, secret redaction, auth) never touches the network. All telemetry paths also scrub secrets before anything is sent.\n\nFull details 👇",
+        "created_at": "Wed Jul 15 21:56:02 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2077511613385449473",
+            "url": "https://pbs.twimg.com/media/HNTNziSWoAEz-_U.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1550009227493752834",
+          "name": "Mia",
+          "screen_name": "MiaAI_lab",
+          "description": "Building with AI & LLMs | Insights, tools & honest experiments",
+          "followers_count": 6260,
+          "friends_count": 324,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 279,
+          "favorite_count": 1369,
+          "reply_count": 172,
+          "quote_count": 9
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 279,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
       }
     }
   ]

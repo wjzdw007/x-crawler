@@ -1,12 +1,230 @@
 {
   "date": "20260717",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-17T15:11:35.502738",
-  "tweet_count": 211,
-  "unique_tweet_count": 211,
+  "last_crawl_time": "2026-07-17T17:08:25.051666",
+  "tweet_count": 215,
+  "unique_tweet_count": 215,
   "total_crawled": 411,
-  "duplicates_removed": 200,
+  "duplicates_removed": 196,
   "tweets": [
+    {
+      "id": "2078164555188875366",
+      "text": "UI Design Opus 4.8 是最好的，Fable 5 也不见得比它更好。GPT 5.6 Design 只能说比 GPT 5.5 好点，还是很差。\n\n推荐多用用 Claude Design + Opus 4.8 做做原型设计 UI 设计，会让你的软件设计水平提升一大截。",
+      "created_at": "Fri Jul 17 17:06:55 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2078149922680135905",
+        "text": "opus 4.8 现在处于一个非常尴尬的位置，复杂点的需求我用 fable / GPT 5.6 sol，其他的需求我用 sonnet 5 也不会选 opus 4.8",
+        "created_at": "Fri Jul 17 16:08:46 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1398530874400935937",
+          "name": "akazwz",
+          "screen_name": "akazwz_",
+          "description": "个人观点",
+          "followers_count": 6104,
+          "friends_count": 886,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 4,
+          "reply_count": 4,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 231302,
+        "friends_count": 1688,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2078157710889976082",
+      "text": "OpenAI 正面回应了 GPT-5.6 在用户电脑上删文件这事，结论是：GPT-5.6 在执行编程任务时，可能会把用户的整个主目录（$HOME）给删了。\n\n出现这种问题的原因是这样的：\n用户开启了 Codex 的完全访问模式（Full Access），关掉了沙盒保护，也没开自动审查（Auto Review）。模型在做清理任务时，试图重写 $HOME 环境变量来指定一个临时目录，结果搞混了，把真正的 $HOME 目录删掉了。\n\nTibo 说 OpenAI 正在采取措施：更新开发者提示信息，引导用户使用更安全的权限模式，在 Codex 的 Harness 加额外的安全检查。他还承诺几天内会发一篇详细的事后分析报告。",
+      "created_at": "Fri Jul 17 16:39:43 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2077630111499882637",
+        "text": "On file deletions. We’ve investigated a handful of reports where GPT-5.6 unexpectedly deleted files. \n\nWhat we have  found is that this most commonly occurs when:\n- Full access mode is enabled and codex is run without sandboxing protections, including without auto review being enabled\n- The model attempts  to override the $HOME env var to define a temporary directory.\n- The model makes an honest mistake and mistakenly deletes $HOME instead.\n\nThis is of course not how we want the system to behave, even when a user operates the model in full-access mode without the safeguards of our sandbox or without using auto review which checks for these kinds of high risk actions and rejects them. \n\nWe are taking steps to mitigate this risk including by updating the developer message, guiding more users towards safer permission modes, and adding additional harness safeguards. Even though this happens extremely rarely, we’ll share a detailed post-mortem in the coming days that goes into more details and what we are doing to minimize risks further.",
+        "created_at": "Thu Jul 16 05:43:13 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1953337039510003712",
+          "name": "Tibo",
+          "screen_name": "thsottiaux",
+          "description": "Codex & ChatGPT @OpenAI",
+          "followers_count": 283846,
+          "friends_count": 65,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 415,
+          "favorite_count": 8782,
+          "reply_count": 700,
+          "quote_count": 223
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 231302,
+        "friends_count": 1688,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 8,
+        "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2078154564272889992",
+      "text": "RT @gantrols: 助力国产百元手柄平替Codex Micro，开源Agent controller。只要人民币，不要230美元。甚至无需运费\n\n大致思路是，将手柄操作转成Codex操作。目前仅支持Windows 64位，由于是一天内（让Codex）赶工出来的，会有不少…",
+      "created_at": "Fri Jul 17 16:27:13 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2078114258286768439",
+        "text": "助力国产百元手柄平替Codex Micro，开源Agent controller。只要人民币，不要230美元。甚至无需运费\n\n大致思路是，将手柄操作转成Codex操作。目前仅支持Windows 64位，由于是一天内（让Codex）赶工出来的，会有不少问题，开软件，重启Codex(ChatGPT)会好很多\n\n开源地址：https://t.co/p0l8Me1fVn https://t.co/1czoK5VX2v",
+        "created_at": "Fri Jul 17 13:47:03 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2078113148159348736",
+            "url": "https://pbs.twimg.com/media/HNbw5d8bUAAM2M-.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2078113162919133184",
+            "url": "https://pbs.twimg.com/media/HNbw6U7bwAAWepj.png"
+          },
+          {
+            "type": "photo",
+            "id": "2078113326136209408",
+            "url": "https://pbs.twimg.com/media/HNbxD09asAAGUyL.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1553753362633719808",
+          "name": "Gantrol",
+          "screen_name": "gantrols",
+          "description": "全栈程序员，长期关注最强梯队大模型，不跟风吹牛。好奇怪，这只AI博主是个人。",
+          "followers_count": 1316,
+          "friends_count": 108,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 3,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 231302,
+        "friends_count": 1688,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2078146099701850249",
+      "text": "RT @america: Newly declassified documents from the Department of Homeland Security show that over 250,000 non-citizens are illegally regist…",
+      "created_at": "Fri Jul 17 15:53:34 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2077938572158550041",
+        "text": "Newly declassified documents from the Department of Homeland Security show that over 250,000 non-citizens are illegally registered to vote in just the four states for which public data files have been reviewed. https://t.co/0oOespyg3p",
+        "created_at": "Fri Jul 17 02:08:56 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2077938569017012224",
+            "url": "https://pbs.twimg.com/media/HNZSHn9XsAAisxI.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1841988608825466880",
+          "name": "America",
+          "screen_name": "america",
+          "description": "PAC Founded by @ElonMusk to support candidates who champion Secure Borders, Sensible Spending, Safe Cities, Fair Justice System, Free Speech and Self-Protection",
+          "followers_count": 1216455,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4149,
+          "favorite_count": 15365,
+          "reply_count": 602,
+          "quote_count": 251
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240913354,
+        "friends_count": 1370,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4142,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2078086509052227916",
       "text": "This is messed up",

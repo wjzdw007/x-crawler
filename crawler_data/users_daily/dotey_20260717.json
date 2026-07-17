@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 231229,
+    "followers_count": 231258,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260717",
-  "last_updated": "2026-07-17T06:12:57.099959",
-  "tweet_count": 2,
+  "last_updated": "2026-07-17T09:54:03.671426",
+  "tweet_count": 3,
   "tweets": [
     {
       "id": "2077929393729511716",
@@ -125,6 +125,57 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2078003883855524314",
+      "text": "最早我做字幕翻译的时候，语音转文字是用的 Whisper，但是 Whisper 有几个问题：\n\n一个问题是时间戳不准，时间戳不准拆分的就是就可能字幕和语音对不上，很影响效果，需要人工去从头到尾校对一遍\n\n一个问题是中英文混排支持不好，中文其实支持也不算太好，所以中文的转录就效果很差\n\n一个问题是不直接支持识别发言人\n\n虽然这些问题都可以通过收费的云端模型来解决，但是成本相对高一些。\n\n最近测试了 Qwen3 ASR，效果是真的很不错，配合 Qwen3-ForcedAligner 模型，可以识别后把词级时间戳对的很精准。0.6b 就足够了，本地运行资源占用也不高。https://t.co/yFDhPkBk2j\n\n发言人识别也有开源的模型：Pyannote + WeSpeaker。不过这个发言人一多尤其是一起说话识别的不够准，但配合 Agent 结合上下文就能做到相对比较准了。\n\n如果真的要求高，也可以走云端模型，比如火山引擎上的豆包录音文件识别模型 2.0 就质量挺好，速度也快，就是要额外花钱。",
+      "created_at": "Fri Jul 17 06:28:28 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2078003278290280448",
+          "url": "https://pbs.twimg.com/media/HNaM-MyW4AAqbj_.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2077281462433223043",
+        "text": "我在开发 BaoCut 这个 App 的时候，是基于一个 Loop 来的：\n\n1. 在开发新功能之前先设计原型（参考图1），借助的是 baoyu-design skill （https://t.co/d2EaYV6q7j ），配合 Claude Code App 内置的浏览器实施预览调整，模型 Opus 4.8 就很好了，都不需要 Fable 5.\n\nGPT 5.6 Sol 设计能力还是不如 Opus 4.8\n\n2. 原型打磨好了后，只需要在同一会话内，让 Claude Code 基于新的 UI 设计去实现功能即可，这块 Claude 做的很好，Fable 5 效果最好，能将设计稿几乎 1:1 还原，如果修改不多 Opus 4.8 也能胜任。\n\n这些 UI 的打磨我还是更放心让 Fable 和 Opus 而不是 GPT，但其他一些不涉及 UI 部分的 GPT 5.6 Sol 就做的很好。\n\n3. 更新好了后测试没问题，就可以通过发布的 skill 发布新版本。\n\n这里可以放心让 Codex 去做了，尤其是它的 CloudFlare Plugin 很好用，直接帮助发布更新安装包到 CF。\n\n这个 loop 的每一个迭代的起点是自己的想法，让 AI 提供设计方案，和 AI 反复讨论后确定方案，然后 AI 实施，AI 实施完成后人再去验证和当初想要的是否一致，如果不一致再让 AI 调整甚至推翻重来。",
+        "created_at": "Wed Jul 15 06:37:49 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2077277382805729280",
+            "url": "https://pbs.twimg.com/media/HNP4xhYWsAAxX0_.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 231258,
+          "friends_count": 1688,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 22,
+          "favorite_count": 173,
+          "reply_count": 72,
+          "quote_count": 5
+        }
+      },
+      "stats": {
+        "retweet_count": 13,
+        "favorite_count": 158,
+        "reply_count": 29,
+        "quote_count": 2
       }
     }
   ]

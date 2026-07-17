@@ -3,13 +3,13 @@
     "screen_name": "elonmusk",
     "name": "Elon Musk",
     "description": "Starmind",
-    "followers_count": 240912898,
+    "followers_count": 240918338,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260717",
-  "last_updated": "2026-07-17T06:12:57.107562",
-  "tweet_count": 2,
+  "last_updated": "2026-07-17T09:54:03.643504",
+  "tweet_count": 9,
   "tweets": [
     {
       "id": "2077906757641183445",
@@ -63,6 +63,300 @@
         "favorite_count": 4743,
         "reply_count": 634,
         "quote_count": 34
+      }
+    },
+    {
+      "id": "2078006929188606315",
+      "text": "https://t.co/NQj2euaQdh",
+      "created_at": "Fri Jul 17 06:40:34 +0000 2026",
+      "lang": "zxx",
+      "media": [
+        {
+          "type": "video",
+          "id": "2077753125717377024",
+          "url": "https://video.twimg.com/amplify_video/2077753125717377024/vid/avc1/1920x1080/qeB4oH_UCdYvnmbz.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2453,
+        "favorite_count": 13968,
+        "reply_count": 921,
+        "quote_count": 137
+      }
+    },
+    {
+      "id": "2078007993296179568",
+      "text": "Grok Build upgrades",
+      "created_at": "Fri Jul 17 06:44:47 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2077942111807398179",
+        "text": "Grok Build just received another major update, introducing powerful conversation navigation, enhanced enterprise controls, smarter terminal workflows, and extensive reliability improvements\n\nRelease Notes: v0.2.102 — 2026-07-16\n\nBreaking Changes:\n• --minimal and --fullscreen flags now apply only to the current session.\n\nFeatures:\n• New /jump slash command lets you quickly jump to any previous turn in the conversation.\n• New /timeline sidebar shows a clickable tick rail for fast navigation between conversation turns.\n• grok login now requests Grok Projects scopes so workspace listing works after consent.\n• Permission mode can now be set fleet-wide via remote config when no local setting exists.\n• Edit tool output has a setting to show a compact one-line summary instead of always-expanded diffs.\n• Tab completion in !bash mode now works like a normal terminal (prefix fill, dropdown, directory drill-down).\n• Enterprise deployments can now disable voice dictation via requirements.toml so /voice and Ctrl+Space are hidden for everyone.\n• User prompts now appear bold only in --minimal mode; fullscreen keeps normal weight.\n• grok plugin install now accepts a marketplace's registered name as a qualifier.\n• Consecutive edits to the same file now collapse into a single scrollback row when collapsed edit blocks are enabled.\n• Local sessions now inherit your shell environment variables and keep the current directory across commands.\n\nBug Fixes:\n• Login and re-login no longer stack multiple device-code polls or leave stale flows running.\n• Background task tools now render with correct icons and titles instead of the generic MCP wrench.\n• Task tool now correctly validates and displays allowed model slugs for subagents.\n• Rewind now correctly handles bash transcripts, permission follow-ups, and sessions that mix old and new prompt markers.\n• Re-login during a session now immediately uses the new token instead of requiring a new session.\n• Terminal commands using globs now behave the same on zsh as on bash and no longer fail with shell errors.\n• Installer no longer replaces stowed shell configuration symlinks with plain files on upgrade.\n• Voice transcription now works with enterprise API bases and API-key authentication.\n• Fixed crashes on some network-mounted home directories by using a safer SQLite journal mode.\n• Home and End keys now move to the ends of the current wrapped line in the prompt.\n• Arrow keys and Esc now work correctly inside viewers opened from the dashboard.\n• Warns at startup when user and project sandbox profiles define the same name differently.\n• Billing upgrade links now show the full URL in the transcript (and copy it) when a browser cannot be opened.\n• Fixed Ctrl+Y yank no longer working after sending a prompt.\n• No longer shows permission prompts seconds after a turn was cancelled with Esc or Ctrl+C.\n• Page Up and Page Down now move the highlighted entry to the top or bottom of the visible scrollback area.\n• Conflicting project and user sandbox profiles now show a clear warning on the welcome screen.\n• OAuth login URLs no longer contain duplicate referrer parameters.\n• File links in official VS Code Remote-SSH terminals now use VS Code's native path handling.\n• Minimal mode now shows the folder-trust prompt after sign-in when required.\n• Skills whose names collide with built-in slash commands are now reachable via qualified names.\n• Fixed background task tracking when using grok -p --no-wait-for-background so tasks are properly reaped on exit.\n• Rate limit errors (429) now show specific server messages (capacity, team limits, free-usage) instead of generic upgrade prompts, with correct copy based on auth type.\n• /copy slash command is now available in minimal mode.\n\nPerformance:\n• Improved recap and compaction behavior.",
+        "created_at": "Fri Jul 17 02:23:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2077882146992336898",
+            "url": "https://pbs.twimg.com/media/HNYezbiasAIH2ZA.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 245594,
+          "friends_count": 1935,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 30,
+          "favorite_count": 178,
+          "reply_count": 34,
+          "quote_count": 13
+        }
+      },
+      "stats": {
+        "retweet_count": 357,
+        "favorite_count": 1789,
+        "reply_count": 528,
+        "quote_count": 29
+      }
+    },
+    {
+      "id": "2078008818764505356",
+      "text": "Grok Imagine",
+      "created_at": "Fri Jul 17 06:48:04 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2077990430122111051",
+        "text": "We are beings of light, and Grok reveals this light.✨ https://t.co/h7E62rkarr",
+        "created_at": "Fri Jul 17 05:35:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2077990404205445120",
+            "url": "https://video.twimg.com/amplify_video/2077990404205445120/vid/avc1/720x1280/A4yVEFhuLK8hLzQ8.mp4?tag=29",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2178040394",
+          "name": "Déborah",
+          "screen_name": "dvorahfr",
+          "description": "Exhibition of my AI Illustrations and videos  by Grok Imagine and Art of all kinds!\n Follow me for Art",
+          "followers_count": 164310,
+          "friends_count": 3711,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 26,
+          "favorite_count": 232,
+          "reply_count": 63,
+          "quote_count": 13
+        }
+      },
+      "stats": {
+        "retweet_count": 396,
+        "favorite_count": 2245,
+        "reply_count": 809,
+        "quote_count": 41
+      }
+    },
+    {
+      "id": "2078011289696137669",
+      "text": "RT @kentcdodds: Grok 4.5 is the first time I feel like I can regularly use a Grok model for building software.",
+      "created_at": "Fri Jul 17 06:57:53 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2077867806906003478",
+        "text": "Grok 4.5 is the first time I feel like I can regularly use a Grok model for building software.",
+        "created_at": "Thu Jul 16 21:27:44 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "389681470",
+          "name": "Kent C. Dodds 🏹",
+          "screen_name": "kentcdodds",
+          "description": "Husband, 6x Dad, Latter-day Saint, Dev, Educator\n🏹 https://t.co/bGlNcdW2iJ\n⚡️ https://t.co/X8fNGbdL2y\n🌌 https://t.co/pPQmnZS6rR\n🚀 https://t.co/NYn5aJVGve\n🏆 https://t.co/U5KafpJTZp",
+          "followers_count": 322621,
+          "friends_count": 458,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 128,
+          "favorite_count": 935,
+          "reply_count": 129,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 128,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2078014448267104664",
+      "text": "Try Grok",
+      "created_at": "Fri Jul 17 07:10:26 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2077924746415518033",
+        "text": "kimi k3 vs gpt 5.6 sol vs fable 5 vs grok 4.5\n\n@Kimi_Moonshot just dropped kimi k3 – a 2.8t param native multimodal model, the first open 3t-class release. key facts:\n\n• 1m token context. stable latentmoe activating 16 of 896 experts, built on kimi delta attention (kda) and attention residuals\n\n• quantization-aware training from the sft stage onward – mxfp4 weights, mxfp8 activations. moonshot claims ~2.5x scaling efficiency over k2\n\n• max thinking effort by default. low- and high-effort modes are \"coming in updates\" – there is no way to turn the thinking down today, and you feel it in every run\n\n• pricing: $0.30/mtok cache-hit input, $3.00/mtok cache-miss, $15.00/mtok output. claims >90% cache hit rate on coding workloads\n\n• benchmarks: swe marathon 42.0 (1st – fable 5: 35.0, sol: 39.0, opus 4.8: 40.0), terminal bench 2.1 88.3, browsecomp 91.2 (1st), program bench 77.8 (1st), gpqa-diamond 93.5. loses frontierswe 81.2 vs fable's 86.6, and deepswe 67.5 vs sol's 73.0\n\nour test – 3 prompts, single-file html, @threejs, fully procedural, no assets:\n\n1. photorealistic european roulette wheel – 37 pockets in the real sequence, mahogany clearcoat bowl, chrome turret, diamond deflectors, flick-to-spin, ball that spirals inward and settles on a mathematically real number\n\n2. las vegas slot machine – 3 reels behind transmissive glass, drag the chrome lever to play, mechanical odometer counters modelled in 3d, coin physics on win\n\n3. full pinball table – 6.5° tilted playfield, flipper impulse physics, spline ramps, drop targets, 6 bumpers, mechanical score reels in the backbox\n\nwe ran the test on @aimlapi platform\n\nresults:\n\n- cost\n#1 grok 4.5 – $0.30\n#2 kimi k3 – $0.71\n#3 gpt 5.6 sol – $2.05\n#4 fable 5 – $7.69\n\n- tokens\n#1 grok 4.5 – 34,241\n#2 gpt 5.6 sol – 51,748\n#3 fable 5 – 144,126\n#4 kimi k3 – 157,999\n\n- lines of code\n#1 gpt 5.6 sol – 3,054\n#2 grok 4.5 – 3,047\n#3 kimi k3 – 2,255\n#4 fable 5 – 1,950\n\n- generation time\n#1 grok 4.5 – 5.1 min\n#2 gpt 5.6 sol – 22.0 min\n#3 fable 5 – 31.5 min\n#4 kimi k3 – 75.6 min\n\nobservations:\n\n• kimi k3 is cheap and it is slow. 75.6 minutes across three prompts against grok's 5.1. it is 2.4x grok's price and 15x grok's wall clock. the roulette took 15 min, the slot 18, the pinball 42\n\n• it failed 2 of 3. only the roulette works. the slot machine has reel cutouts on both faces of the cabinet and the symbols face backwards – you can only read your spin by walking around to the rear of the machine. the pinball table stands vertically on its edge with the legs floating detached beside it.\n\n• 81% of kimi's output tokens are reasoning, not code. grok: 22%. you are not paying for a bigger answer, you are paying for a longer argument with itself\n\n• price per 100 shipped lines – grok $0.010, kimi $0.031, sol $0.067, fable $0.394. a 39x spread for the same three files\n\nkimi k3's code quality:\n\nupsides:\n\n• the roulette is genuinely good – procedural wood grain with real specular breakup, correct european sequence (0-32-15-19-4...), chrome turret, diamond deflectors, clean console\n\n• the pinball artwork is the best in the test – a synthwave \"nova strike / deep space\" field with six individually coloured neon bumper rings, a retro sun on a grid horizon, a nova burst, and a scoring legend printed on the apron. no other model printed the rules on the machine. it is a beautiful texture on a broken object\n\n• physics reasoning is real – it derived a 480hz substep for the collider, worked out ball settle conditions and termination guarantees, and checked every ramp exit vector by hand before writing any of it\n\n• it is the only model that saw the importmap trap coming. sol shipped a blank white page twice because three.js addons import the bare specifier 'three' and die without an import map\n\ndownsides:\n\n• it dodged that trap on the slot by loading three.js r128 through classic script tags – a 2021 build with no working transmission. its slot glass rendered fully opaque and buried all three reels behind a white pane. the code asks for transmission: 0.93, ior: 1.5 – correct, and silently ignored by a renderer that predates the feature\n\n• after 42 minutes and 212k characters of reasoning, the pinball cabinet is not assembled. the table stands vertically on its edge like a wardrobe – the prompt asked for 6.5° from horizontal, it delivered 90°. the legs float detached in the void beside it. head-on it photographs beautifully; orbit ten degrees and it is a painted slab with four chrome rods hovering nearby\n\n• the playfield z-fights with the glass – hard black banding across the whole field as soon as you pull the camera back\n\na note on the pinball, in fairness to kimi: nobody passed it. every model shipped broken ball physics and controls you cannot trust. it is the hardest prompt we have run and the whole field failed it, each in its own way\n\nkimi k3 reasons better than anything else here and it shows exactly where reasoning pays – physics constants, sequences, edge cases, traps the others walked into\n\nfollow @thehypedotnews for 24/7 ai news, analysis and breakdowns",
+        "created_at": "Fri Jul 17 01:14:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2077923739874770944",
+            "url": "https://video.twimg.com/amplify_video/2077923739874770944/vid/avc1/1440x1080/a3W5i4qBTcAWePcc.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2034267014135685120",
+          "name": "thehype.",
+          "screen_name": "thehypedotnews",
+          "description": "ai news, analysis and breakdowns.\n\nget daily podcast + newsletter: 🔗 https://t.co/s2tMfi5tnB // listen to 24/7 radio, fully run by ai ↓",
+          "followers_count": 3375,
+          "friends_count": 11,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 27,
+          "favorite_count": 271,
+          "reply_count": 34,
+          "quote_count": 21
+        }
+      },
+      "stats": {
+        "retweet_count": 329,
+        "favorite_count": 2140,
+        "reply_count": 635,
+        "quote_count": 33
+      }
+    },
+    {
+      "id": "2078015422931091486",
+      "text": "As promised",
+      "created_at": "Fri Jul 17 07:14:19 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2077820074015293774",
+        "text": "SuperGrok Heavy now includes X Premium+ at no extra cost.\n\nJust link your X account in the Grok app to activate it instantly. https://t.co/LoN7CL9ZLk",
+        "created_at": "Thu Jul 16 18:18:04 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2077810013419319296",
+            "url": "https://pbs.twimg.com/media/HNXdMtCbsAAicOZ.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1399766153053061121",
+          "name": "Premium",
+          "screen_name": "premium",
+          "description": "Subscribe for the best X experience: ad-free, post edits, content monetization, Grok AI with higher limits, video downloads, long posts, X Pro, and more.",
+          "followers_count": 1269207,
+          "friends_count": 3,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 479,
+          "favorite_count": 5841,
+          "reply_count": 451,
+          "quote_count": 213
+        }
+      },
+      "stats": {
+        "retweet_count": 689,
+        "favorite_count": 6596,
+        "reply_count": 1211,
+        "quote_count": 62
+      }
+    },
+    {
+      "id": "2078018021507932480",
+      "text": "RT @no4core: @saneord also 29 days ago. https://t.co/jUsiEiy0EX",
+      "created_at": "Fri Jul 17 07:24:38 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2077959737967251456",
+          "url": "https://pbs.twimg.com/media/HNZlX0caEAAuOJM.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2077959740316074188",
+        "text": "@saneord also 29 days ago. https://t.co/jUsiEiy0EX",
+        "created_at": "Fri Jul 17 03:33:03 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2077959737967251456",
+            "url": "https://pbs.twimg.com/media/HNZlX0caEAAuOJM.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1444691386704433158",
+          "name": "noah",
+          "screen_name": "no4core",
+          "description": "a high school student with some unconventional interests",
+          "followers_count": 59,
+          "friends_count": 972,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 137,
+          "favorite_count": 753,
+          "reply_count": 118,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 137,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
       }
     }
   ]

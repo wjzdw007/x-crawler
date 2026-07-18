@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 231486,
+    "followers_count": 231507,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260718",
-  "last_updated": "2026-07-18T13:04:52.809358",
-  "tweet_count": 9,
+  "last_updated": "2026-07-18T14:48:19.004109",
+  "tweet_count": 11,
   "tweets": [
     {
       "id": "2078311802933285059",
@@ -360,6 +360,114 @@
         "favorite_count": 15,
         "reply_count": 4,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2078478177588904314",
+      "text": "RT @frankekn: 此時再回來看這篇, 依然適用",
+      "created_at": "Sat Jul 18 13:53:08 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2078440886678220819",
+        "text": "此時再回來看這篇, 依然適用",
+        "created_at": "Sat Jul 18 11:24:57 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2003594706291171695",
+          "text": "唐杰 @jietang 是清华大学教授、智谱（GLM 系列模型出自他们家）AI 首席科学家，也是国内最懂大模型的人之一。他刚发了长微博（见评论），谈 2025 年对大模型的感悟。\n\n有意思的是，唐杰和 Andrej Karpathy 的观察有不少共鸣，但也有一些不同的侧重点。两个顶级专家的视角放在一起看，能看出更完整的图景。\n\n内容比较长，但有句话我要特别放在前面高亮一下：\n> AI 模型应用的第一性原理不应该是创造新的 App，它的本质是 AGI 替代人类工作，因此研发替代不同工种的 AI 是应用的关键\n\n如果你是在做 AI 应用开发，应该反复思考一下这句话：AI 应用的第一性原理不是创造新产品，而是替代人类工作。想清楚这一点，很多事情的优先级就清楚了。\n\n唐杰的核心观点有七层逻辑。\n\n---\n\n第一层：预训练没死，只是不再是唯一主角\n\n预训练仍然是让模型掌握世界知识和基础推理能力的根基。\n\n更多的数据、更大的参数、更饱和的计算，依然是提升模型智商最高效的办法。这就像还在长身体的孩子，饭量（算力）和营养（数据）必须管够，这是物理规律，没法绕弯。\n\n但光有智商不行，现在的模型有个毛病：容易“偏科”。为了刷榜单（Benchmark），很多模型都在针对性地做题，导致在真实复杂的场景下反而不好用。这好比孩子上完九年义务教育（预训练）后，必须把他扔到真实的职场里去实习，去处理那些书本上没有的烂摊子，这才是真本事。\n\n所以接下来的重点是“中后训练”（Mid and Post training）。中后训练这两个阶段负责「激活」模型的能力，尤其是长尾场景的对齐能力。\n\n什么是长尾场景？就是那些不常见但真实存在的需求。比如帮律师整理某类特殊合同、帮医生分析某种罕见病的影像。这些场景在通用测试集里占比很小，但在真实应用中至关重要。\n\n通用 benchmark 一方面评测了模型效果，但也可能让很多模型过拟合。这和 Karpathy 说的「训练在测试集上是一门新艺术」观点一致。大家都在刷榜，但榜单刷了高分不等于能解决真实问题。\n\n---\n\n第二层：Agent 是从「学生」到「打工人」的跨越\n\n唐杰用了个形象的比喻：\n> 如果没有 Agent 能力，大模型就是个“理论博士”。一个人书读得再多，读到了博士后，如果不能动手解决问题，那也只是知识的容器，产生不了生产力。\n\n这个比喻精准。预训练是上课，强化学习是刷题，但这些都还在「学习阶段」。Agent 是让模型真正「干活」的关键，是进入真实世界、产生实际价值的门槛。\n\n不同 Agent 环境的泛化和迁移并不容易。你在一个代码环境里训出来的能力，换到浏览器环境就不一定好使。现在最简单的办法，还是不断堆更多环境的数据，针对不同环境做强化学习。\n\n以前我们做 Agent，是给模型外挂各种工具。现在的趋势是，直接把使用工具的数据写进模型的“DNA”里去训练。\n\n这听起来有点笨，但确实是当下最有效的路径。\n\nKarpathy 也把 Agent 列为今年最重要的变化之一，他以 Claude Code 为例，强调 Agent 要能「住在你电脑里」，调用工具、循环执行、解决复杂问题。\n\n---\n\n第三层：记忆是刚需，但怎么做还没想清楚\n\n唐杰花了不少篇幅讲记忆。他认为，模型要在真实环境中落地，记忆能力是必须的。\n\n他把人类记忆分成四层：\n- 短期记忆，对应前额叶\n- 中期记忆，对应海马体\n- 长期记忆，分布在大脑皮层\n- 人类历史记忆，对应维基百科和史书\n\nAI 也要模仿这个机制，大模型对应的可能是：\n- Context 窗口 → 短期记忆\n- RAG 检索 → 中期记忆\n- 模型参数 → 长期记忆\n\n一个思路是「压缩记忆」，把重要信息精简后存在 context 里。目前的“超长上下文”只是解决了短期记忆，相当于把它能用的“便签纸”变长了。如果未来 context 窗口足够长，短中长期记忆都有可能实现。\n\n但有个更难的问题：怎么更新模型自身的知识？怎么改参数？这还是个未解难题。\n\n---\n\n第四层：在线学习和自我评估，可能是下一个 Scaling 范式\n\n这一段是唐杰观点里最前瞻的部分。\n\n现在的模型是“离线”的，训练好就不变了。这有几个问题：模型不能真正自我迭代，重新训练浪费资源，还会丢掉很多交互数据。\n\n理想情况是什么？模型能在线学习，边用边学，越用越聪明。\n\n但要实现这一点，有个前置条件：模型要知道自己对不对。这就是「自我评估」。如果模型能判断自己的输出质量，哪怕是概率性地判断，它就知道了优化目标，就能自我改进。\n\n唐杰认为，构建模型的自我评价机制是个难题，但也可能是下一个 scaling 范式的方向。他用了几个词：continual learning、real time learning、online learning。\n\n这和 Karpathy 提到的 RLVR 有一定呼应。RLVR 之所以有效，正是因为有「可验证的奖励」，模型能知道自己对不对。如果这个机制能泛化到更多场景，在线学习就有可能实现。\n\n---\n\n第五层：AI 应用的第一性原理是「替代工种」\n\n这是对我启发最大的一句话：\n> AI 模型应用的第一性原理不应该是创造新的 App，它的本质是 AGI 替代人类工作，因此研发替代不同工种的 AI 是应用的关键\n\nAI 的本质不是创造新的 App，而是替代人类工作。\n\n两条路：\n1. 把以前需要人参与的软件 AI 化。\n2. 创造对齐人类某个工种的 AI 软件，直接替代人类工作。\n\nChat 已经部分替代了搜索，同时还融合了情感交互，下一步就是替代客服、替代初级程序员、替代数据分析师。\n\n所以，明年 2026 年的爆发点在于“AI 替代不同工种”。\n\n创业者要思考的不是“我要开发个什么软件给用户用”，而是“我要造一个什么样的 AI 员工，去帮老板把某个岗位的人力成本砍掉”。\n\n换句话说，别老想着做一个「AI+X」的新产品，先想想哪些人类工作可以被替代，再倒推产品形态。\n\n这和 Karpathy 关于「Cursor for X」的观察遥相呼应。Cursor 本质上是「程序员这个工种的 AI 化」，那么各行各业都会出现类似的东西。\n\n---\n\n第六层：领域大模型是个「伪命题」\n\n这个观点可能会让一些人不舒服，但唐杰说得很直接：领域大模型就是个伪命题。都 AGI 了，哪有什么“领域专用（domain-specific）AGI”？\n\n之所以有领域大模型存在，是因为应用企业不愿意在 AI 模型公司面前认输，希望用领域 know-how 构建护城河，把 AI 驯化为工具。\n\n但 AI 的本质是「海啸」，走到哪里都会把一切卷进去。一定会有领域公司主动走出护城河，被卷进 AGI 的世界。领域的数据、流程、Agent 数据，慢慢都会进入主模型。\n\n当然 AGI 还没实现之前，领域模型会长时间存在。但这个时间窗口有多长？不好说，AI 发展实在太快了。\n\n---\n\n第七层：多模态和具身智能，前景光明但道路艰难\n\n多模态肯定是未来。但当下的问题是：它对提升 AGI 的智能上限帮助有限。\n\n文本、多模态、多模态生成，可能还是分开发展更高效。当然，探索三者结合需要勇气和钱。\n\n具身智能（机器人）更难。难点和 Agent 一样：通用性。你教会机器人在 A 场景干活，换个场景又不行了。怎么办？采数据、合成数据，都不容易，还贵。\n\n怎么办？采数据，或者合成数据。都不容易，都贵。但反过来，一旦数据规模上去了，通用能力出来了，自然就形成门槛。\n\n还有个问题往往被忽略：机器人本身也是个问题。不稳定、故障频繁，这些硬件问题也在限制具身智能的发展。\n\n唐杰预判 2026 年这些都将取得长足进步。\n\n---\n\n把唐杰这篇文章串起来，其实是一张相当清晰的路线图：\n当下，预训练 scaling 依然有效，但要更重视对齐和长尾能力。\n近期，Agent 是关键突破口，让模型从\"会说\"进化到\"会做\"。\n中期，记忆系统和在线学习是必修课，模型要学会自我评估和迭代。\n长期，工种替代是应用的本质，领域护城河会被 AGI 冲垮。\n远景，多模态和具身各自发展，等待技术和数据的成熟。\n\n---\n\n把唐杰和 Karpathy 的观点放在一起看，能看出几个共识：\n\n第一，2025 年的核心变化是训练范式的升级，从「预训练为主」变成「多阶段协同」。\n\n第二，Agent 是里程碑，是模型从学习走向干活的关键跨越。\n\n第三，benchmark 刷分和真实能力之间有鸿沟，这个问题越来越被重视。\n\n第四，AI 应用的本质是替代或增强人类工种，不是为了做 App 而做 App。\n\n不同的侧重点也有意思。Karpathy 更关注「AI 是什么形状的智能」这个哲学问题，唐杰更关注「怎么让模型在真实场景落地」的工程问题。一个偏「理解」，一个偏「实现」。\n\n两个视角都需要。理解清楚了，才知道方向对不对；工程跟上了，才能把想法变成现实。\n\n2026 年，会很精彩。",
+          "created_at": "Tue Dec 23 22:32:57 +0000 2025",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2003593956718751744",
+              "url": "https://pbs.twimg.com/media/G84yFpBXMAAVOSw.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 231507,
+            "friends_count": 1689,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 460,
+            "favorite_count": 1630,
+            "reply_count": 69,
+            "quote_count": 38
+          }
+        },
+        "user": {
+          "id": "281620171",
+          "name": "Frank Y",
+          "screen_name": "frankekn",
+          "description": "Maintainer @OpenClaw 🦞\nC-level by day, agent babysitter by night.\nCloud, coding agents, model routing, very practical chaos.",
+          "followers_count": 408,
+          "friends_count": 1590,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 5,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2078481595674112362",
+      "text": "还有补充一个很重要的点，尽量用 Codex/Claude Code 的Desktop 版本，借助 Compter Use 去自动化测试。\n\n现在桌面版这块做的特别好，交付前都会主动调用 Compter Use 帮你测试一下，有问题会自动修复，这比人工测试效率高多了。\n\nhttps://t.co/pgsJ58KMjM",
+      "created_at": "Sat Jul 18 14:06:43 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2078411726954037298",
+        "text": "@dotey 目前是会有一些自动化测试，目前的流程是在开发之前先分析，并且明确测试要点，在开始按流程开发，但是感觉覆盖不全，人工黑盒测试耗费时间太多",
+        "created_at": "Sat Jul 18 09:29:05 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1718471237377114112",
+          "name": "qifeng.he",
+          "screen_name": "bernadine53742",
+          "description": "",
+          "followers_count": 11,
+          "friends_count": 288,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
       }
     }
   ]

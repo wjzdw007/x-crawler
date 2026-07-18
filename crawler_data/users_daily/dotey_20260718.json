@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 231395,
+    "followers_count": 231432,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260718",
-  "last_updated": "2026-07-18T04:54:21.278190",
-  "tweet_count": 1,
+  "last_updated": "2026-07-18T07:42:56.658128",
+  "tweet_count": 4,
   "tweets": [
     {
       "id": "2078311802933285059",
@@ -48,6 +48,105 @@
         "favorite_count": 95,
         "reply_count": 28,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2078350528099107292",
+      "text": "现在还有人在推荐的所谓开源“剪映 CapCut”替代 OpenCut 现在已经只有一个壳了，基本上啥代码都没有。https://t.co/vqWYpMDvRU\n\n以前的那个半成品也归档不再更新了。https://t.co/RfVd7B6YOe",
+      "created_at": "Sat Jul 18 05:25:54 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 33,
+        "reply_count": 17,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2078382113171091735",
+      "text": "如果你惊讶于为什么 Codex 一天能发布几个版本，从这条 Codex 团队成员的推文你大概可以看出，现在绝大部分具体代码已经都是 Codex 在实现了。\n\n我的体验也差不多，日常开发更多变成了产品经理和 QA 的角色：定义功能+验证结果。\n\n至于代码实现，已经不怎么细看了。",
+      "created_at": "Sat Jul 18 07:31:24 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2078001038435516445",
+        "text": "I'm very curious: how close to the code do you still prompt? Do you still ask for specific architecture? Do you still ask for the code to be written in a specific way? \nFor me, it mostly depends on the project, but I can't hide I've been further and further from the actual code.",
+        "created_at": "Fri Jul 17 06:17:09 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "15704456",
+          "name": "Thomas Ricouard",
+          "screen_name": "Dimillian",
+          "description": "Developer Experience, Codex  @OpenAI\nBuilder, Entrepreneur, iOS/macOS, Swift/SwiftUI & more",
+          "followers_count": 54926,
+          "friends_count": 4052,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 199,
+          "reply_count": 84,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 7,
+        "reply_count": 3,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2078382596321341567",
+      "text": "这是我日常开发的 Loop\nhttps://t.co/uzlRAdg1Id",
+      "created_at": "Sat Jul 18 07:33:20 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2077281462433223043",
+        "text": "我在开发 BaoCut 这个 App 的时候，是基于一个 Loop 来的：\n\n1. 在开发新功能之前先设计原型（参考图1），借助的是 baoyu-design skill （https://t.co/d2EaYV6q7j ），配合 Claude Code App 内置的浏览器实施预览调整，模型 Opus 4.8 就很好了，都不需要 Fable 5.\n\nGPT 5.6 Sol 设计能力还是不如 Opus 4.8\n\n2. 原型打磨好了后，只需要在同一会话内，让 Claude Code 基于新的 UI 设计去实现功能即可，这块 Claude 做的很好，Fable 5 效果最好，能将设计稿几乎 1:1 还原，如果修改不多 Opus 4.8 也能胜任。\n\n这些 UI 的打磨我还是更放心让 Fable 和 Opus 而不是 GPT，但其他一些不涉及 UI 部分的 GPT 5.6 Sol 就做的很好。\n\n3. 更新好了后测试没问题，就可以通过发布的 skill 发布新版本。\n\n这里可以放心让 Codex 去做了，尤其是它的 CloudFlare Plugin 很好用，直接帮助发布更新安装包到 CF。\n\n这个 loop 的每一个迭代的起点是自己的想法，让 AI 提供设计方案，和 AI 反复讨论后确定方案，然后 AI 实施，AI 实施完成后人再去验证和当初想要的是否一致，如果不一致再让 AI 调整甚至推翻重来。",
+        "created_at": "Wed Jul 15 06:37:49 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2077277382805729280",
+            "url": "https://pbs.twimg.com/media/HNP4xhYWsAAxX0_.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 231432,
+          "friends_count": 1688,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 23,
+          "favorite_count": 189,
+          "reply_count": 73,
+          "quote_count": 6
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
       }
     }
   ]

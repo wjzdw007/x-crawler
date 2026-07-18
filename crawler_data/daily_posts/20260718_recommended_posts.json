@@ -1,12 +1,418 @@
 {
   "date": "20260718",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-18T04:54:21.222794",
-  "tweet_count": 208,
-  "unique_tweet_count": 208,
-  "total_crawled": 400,
+  "last_crawl_time": "2026-07-18T07:42:56.631361",
+  "tweet_count": 216,
+  "unique_tweet_count": 216,
+  "total_crawled": 408,
   "duplicates_removed": 192,
   "tweets": [
+    {
+      "id": "2078382596321341567",
+      "text": "这是我日常开发的 Loop\nhttps://t.co/uzlRAdg1Id",
+      "created_at": "Sat Jul 18 07:33:20 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2077281462433223043",
+        "text": "我在开发 BaoCut 这个 App 的时候，是基于一个 Loop 来的：\n\n1. 在开发新功能之前先设计原型（参考图1），借助的是 baoyu-design skill （https://t.co/d2EaYV6q7j ），配合 Claude Code App 内置的浏览器实施预览调整，模型 Opus 4.8 就很好了，都不需要 Fable 5.\n\nGPT 5.6 Sol 设计能力还是不如 Opus 4.8\n\n2. 原型打磨好了后，只需要在同一会话内，让 Claude Code 基于新的 UI 设计去实现功能即可，这块 Claude 做的很好，Fable 5 效果最好，能将设计稿几乎 1:1 还原，如果修改不多 Opus 4.8 也能胜任。\n\n这些 UI 的打磨我还是更放心让 Fable 和 Opus 而不是 GPT，但其他一些不涉及 UI 部分的 GPT 5.6 Sol 就做的很好。\n\n3. 更新好了后测试没问题，就可以通过发布的 skill 发布新版本。\n\n这里可以放心让 Codex 去做了，尤其是它的 CloudFlare Plugin 很好用，直接帮助发布更新安装包到 CF。\n\n这个 loop 的每一个迭代的起点是自己的想法，让 AI 提供设计方案，和 AI 反复讨论后确定方案，然后 AI 实施，AI 实施完成后人再去验证和当初想要的是否一致，如果不一致再让 AI 调整甚至推翻重来。",
+        "created_at": "Wed Jul 15 06:37:49 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2077277382805729280",
+            "url": "https://pbs.twimg.com/media/HNP4xhYWsAAxX0_.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 231432,
+          "friends_count": 1688,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 23,
+          "favorite_count": 189,
+          "reply_count": 73,
+          "quote_count": 6
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 231432,
+        "friends_count": 1688,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2078382113171091735",
+      "text": "如果你惊讶于为什么 Codex 一天能发布几个版本，从这条 Codex 团队成员的推文你大概可以看出，现在绝大部分具体代码已经都是 Codex 在实现了。\n\n我的体验也差不多，日常开发更多变成了产品经理和 QA 的角色：定义功能+验证结果。\n\n至于代码实现，已经不怎么细看了。",
+      "created_at": "Sat Jul 18 07:31:24 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2078001038435516445",
+        "text": "I'm very curious: how close to the code do you still prompt? Do you still ask for specific architecture? Do you still ask for the code to be written in a specific way? \nFor me, it mostly depends on the project, but I can't hide I've been further and further from the actual code.",
+        "created_at": "Fri Jul 17 06:17:09 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "15704456",
+          "name": "Thomas Ricouard",
+          "screen_name": "Dimillian",
+          "description": "Developer Experience, Codex  @OpenAI\nBuilder, Entrepreneur, iOS/macOS, Swift/SwiftUI & more",
+          "followers_count": 54926,
+          "friends_count": 4052,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 199,
+          "reply_count": 84,
+          "quote_count": 4
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 231432,
+        "friends_count": 1688,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 7,
+        "reply_count": 3,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2078368917404151868",
+      "text": "Mass drivers on the mf Moon!!",
+      "created_at": "Sat Jul 18 06:38:58 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2078333878398595179",
+        "text": "Elon Musk said:\n“I want to live long enough to see a mass driver on the Moon, because that is going to be incredibly epic”\n\nThis is not just about building infrastructure on the Moon. It is about building one of the most ambitious futures humanity has ever imagined\n\nA lunar mass driver will unlock an entirely new space economy, move enormous amounts of cargo beyond the Moon and open the solar system to human expansion\n\nA future far more exciting than anything humanity has experienced before https://t.co/BHJ2OuOUnN",
+        "created_at": "Sat Jul 18 04:19:44 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2057353503643783168",
+            "url": "https://video.twimg.com/amplify_video/2057353503643783168/vid/avc1/1080x1080/mpGoZmVQu4WIi3yA.mp4?tag=27",
+            "bitrate": 8768000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 246284,
+          "friends_count": 1937,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 54,
+          "favorite_count": 344,
+          "reply_count": 79,
+          "quote_count": 8
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240921768,
+        "friends_count": 1370,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 375,
+        "favorite_count": 2320,
+        "reply_count": 817,
+        "quote_count": 53
+      }
+    },
+    {
+      "id": "2078368743634149460",
+      "text": "Grok Build improves almost every day",
+      "created_at": "Sat Jul 18 06:38:17 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2078213325318676494",
+        "text": "Grok Build now has /timeline command to Toggle the timeline sidebar https://t.co/LrJn5Xzd88",
+        "created_at": "Fri Jul 17 20:20:42 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2078213245492686848",
+            "url": "https://pbs.twimg.com/media/HNdL75kacAAYw4I.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1604863807574212611",
+          "name": "Tech Dev Notes",
+          "screen_name": "techdevnotes",
+          "description": "Notes on tech",
+          "followers_count": 61284,
+          "friends_count": 0,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 8,
+          "favorite_count": 81,
+          "reply_count": 16,
+          "quote_count": 2
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240921768,
+        "friends_count": 1370,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 252,
+        "favorite_count": 1627,
+        "reply_count": 564,
+        "quote_count": 24
+      }
+    },
+    {
+      "id": "2078366941199171689",
+      "text": "Easy predictions https://t.co/zFUqwOKAW9",
+      "created_at": "Sat Jul 18 06:31:07 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2078095580375531520",
+          "url": "https://video.twimg.com/amplify_video/2078095580375531520/vid/avc1/1920x1080/NeeFK3qJrAFYiTK2.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240921768,
+        "friends_count": 1370,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 408,
+        "favorite_count": 2134,
+        "reply_count": 586,
+        "quote_count": 56
+      }
+    },
+    {
+      "id": "2078350528099107292",
+      "text": "现在还有人在推荐的所谓开源“剪映 CapCut”替代 OpenCut 现在已经只有一个壳了，基本上啥代码都没有。https://t.co/vqWYpMDvRU\n\n以前的那个半成品也归档不再更新了。https://t.co/RfVd7B6YOe",
+      "created_at": "Sat Jul 18 05:25:54 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 231432,
+        "friends_count": 1688,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 33,
+        "reply_count": 17,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2078347503603163580",
+      "text": "RT @yunta_tsai: My favorite system prompt at Grok Build: Do a) …, b) …, c) …. After finishing, please double-check the correctness and DM t…",
+      "created_at": "Sat Jul 18 05:13:53 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2078326813953265926",
+        "text": "My favorite system prompt at Grok Build: Do a) …, b) …, c) …. After finishing, please double-check the correctness and DM the visualization of sample outputs.\n\nThen walk away.",
+        "created_at": "Sat Jul 18 03:51:40 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1577705091737432070",
+          "name": "Yun-Ta Tsai",
+          "screen_name": "yunta_tsai",
+          "description": "Sr. Staff Engineer  @Tesla_AI",
+          "followers_count": 122564,
+          "friends_count": 217,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 114,
+          "favorite_count": 920,
+          "reply_count": 142,
+          "quote_count": 13
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240921768,
+        "friends_count": 1370,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 114,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2078347476608655472",
+      "text": "RT @MdeZegher: The beginning of the Megacharger network\n\nBuild-out is focused on the most important Semi routes and depots first. Follow ou…",
+      "created_at": "Sat Jul 18 05:13:46 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2078174130554523916",
+        "text": "The beginning of the Megacharger network\n\nBuild-out is focused on the most important Semi routes and depots first. Follow our progress here: https://t.co/72ey5FW74D\n\nFor Semi customers who can install Megachargers or Basechargers at their depots, we recommend installing their own infrastructure too for the most efficient use of their fleet. Especially in California, Washington, Oregon, and Canada - private Semi Charging for Business financials are super attractive right now. Get in touch: https://t.co/DgKL2fcLkU",
+        "created_at": "Fri Jul 17 17:44:57 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2078173384945655808",
+            "url": "https://pbs.twimg.com/media/HNcnrtdbYAAOA97.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2078163491354292356",
+          "text": "New Tesla Megacharger: Bloomington, CA (6 stalls) \nhttps://t.co/nAWzgnNovx https://t.co/6jxTvIdrwx",
+          "created_at": "Fri Jul 17 17:02:41 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2078163486887358464",
+              "url": "https://pbs.twimg.com/media/HNcerkUbsAATNod.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1346535293449428992",
+            "name": "Tesla Charging",
+            "screen_name": "TeslaCharging",
+            "description": "New Superchargers and all things charging",
+            "followers_count": 294702,
+            "friends_count": 91,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 98,
+            "favorite_count": 1190,
+            "reply_count": 18,
+            "quote_count": 13
+          }
+        },
+        "user": {
+          "id": "946106088",
+          "name": "Max",
+          "screen_name": "MdeZegher",
+          "description": "Building Superchargers since 2014",
+          "followers_count": 25327,
+          "friends_count": 1039,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 286,
+          "favorite_count": 2246,
+          "reply_count": 133,
+          "quote_count": 31
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "Starmind",
+        "followers_count": 240921768,
+        "friends_count": 1370,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 286,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2078331262977139027",
       "text": "RT @tesla_na: Tesla Diner is turning 1 on July 21st, so we're throwing a party\n\nCome swing by for a day full of fun:\n– Cybercab on display…",

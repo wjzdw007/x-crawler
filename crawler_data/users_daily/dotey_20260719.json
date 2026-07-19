@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 231731,
+    "followers_count": 231744,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260719",
-  "last_updated": "2026-07-19T16:54:26.580419",
-  "tweet_count": 4,
+  "last_updated": "2026-07-19T19:00:45.730584",
+  "tweet_count": 5,
   "tweets": [
     {
       "id": "2078733650770715130",
@@ -219,6 +219,60 @@
         "favorite_count": 45,
         "reply_count": 13,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2078913744759836775",
+      "text": "RT @realWeZZard: 我不认同，这是典型的唯参数论。忽略了模型厂商的战略眼光、模型训练对用户体验的供给以及模型使用人口变迁。\n\nKimi K3 标注是 Opus 4.8 级别，我个人体验下来其实是基于它的木桶短板标的，而它的长板完全可及 Fable 5。Kimi K…",
+      "created_at": "Sun Jul 19 18:43:55 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2078818071549260005",
+        "text": "我不认同，这是典型的唯参数论。忽略了模型厂商的战略眼光、模型训练对用户体验的供给以及模型使用人口变迁。\n\nKimi K3 标注是 Opus 4.8 级别，我个人体验下来其实是基于它的木桶短板标的，而它的长板完全可及 Fable 5。Kimi K3 在长尾数据的训练上面并没有 Fable 5 训练得那么全，会导致在多轮对话的任务中失败一次，然后次次修补，进入一个很差的体验。这和 Opus 4.8 的体验完全一致。\n\n而 2026 年中的顶规模型可以保证状态一直在线。首先 Fable 5 的长尾数据训练非常全面。然后 Fable 5 的急剧性能衰减需要到达上下文长度的 80% 到 90% 才会出现。而 Kimi K3 基本在 40-50% 时就能感受到性能衰减。\n\n上述 Fable 5 的优势对于整体体验来说提升的不只是一点两点，而是四五倍的提升——因为每一步有 5% 的任务失败概率，那么 10 步都成功的概率仅为 60%；而把每一步的失败概率消除一半，那么 10 步都成功的概率将提升至 78%。这个提升对于长程任务来说只会更夸张，比如放大到 50 步则可以将成功率提升接近 4 倍。\n\n这就是 Fable 5 对于从事从 0 到 1 创新的工作者来说体验非常棒的原因——因为从 0 到 1 不可能 one-shot、也极有可能进入数据训练盲区。\n\n那为什么大家会觉得 Kimi K3 好？是因为它的 one-shot 能力真的很强。而 one shot 成功自然会带来成就感。\n\n而早在移动互联网开始时，很多人争相阅读的 Emotional Design 中就强调过「成就感」对用户体验带来的提升。Frog Design 的创始人 Hartmut Esslinger 也提出过 \"Forms follow emotion（形式追随情绪）\" 的设计原则。\n\n所谓「形式追随情绪」就是让情绪成为恰到好处的功能装置。而大部分用户想用最快的速度搞点东西出来，那极高的 one shot 成功率带来的极高情绪满足就是最好的功能装置。\n\n但 one shot 很多 AI IDE 在 2025 年就能做到，为什么 2025 年它的传播效应没有这么高，而 2026 年可以？\n\n这是因为用户人群发生了改变。在 2025 年的主要适用人群——专业开发者看来，one-shot 能力是非常鸡肋的，因为我们要对工程细节进行打磨。但是 2026 年更多非程序员群体以办公人群的身份加入，导致评价标准发生了变化。\n\n就像在移动互联网时代我们不能说：对于普通人来说想处理照片 Lightroom 足够了，没有必要购入 Photoshop。因为对于普通人来说真正合适的是美图秀秀、醒图、各种风格化相机。\n\n可以说月之暗面在模型训练方面押注前端 one-shot 能力确实是一手好棋。\n\n当然，这些用户会成长，会想做一些个性化的改动、会有创造新东西的需求。最后还是会碰到长 K3 上下文性能衰减和长尾数据不全面的短板。不过我想国产开源大模型应该已经有了第一批国内原住民——这些人没有用过美国头部两家的模型，在他们眼里，Kimi 就是最好的。",
+        "created_at": "Sun Jul 19 12:23:45 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": null,
+          "text": "",
+          "created_at": null,
+          "lang": null,
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": null,
+          "stats": {
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "reply_count": 0,
+            "quote_count": 0
+          }
+        },
+        "user": {
+          "id": "1122177599940096000",
+          "name": "WeZZard",
+          "screen_name": "realWeZZard",
+          "description": "The crazy one.\nBuilding @readycheckdev , ex-ByteDance\nFeel free to grab my skills: https://t.co/y99vQ4RS67",
+          "followers_count": 2963,
+          "friends_count": 437,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 38,
+          "reply_count": 6,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
       }
     }
   ]

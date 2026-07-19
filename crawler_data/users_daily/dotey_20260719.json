@@ -1,0 +1,110 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 231684,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260719",
+  "last_updated": "2026-07-19T09:49:41.720242",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2078733650770715130",
+      "text": "今天给 BaoCut 集成了 OpenMOSS 开源的 MOSS-Transcribe-Diarize-0.9B，能够一次性将长音频转换为结构化、带说话人标注的转写结果。\n\n它有点好就是不需要专门的发言人识别模型，直接输出带精确时间戳、发言人的时间对齐文本。\n\n转录速度比 qwen3-asr-0.6b 要慢些，不支持标点符号，似乎自定义 Prompt 与热词没有起作用。\n\n项目地址：https://t.co/M0WiOOE7FN",
+      "created_at": "Sun Jul 19 06:48:18 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2078732980948807680",
+          "url": "https://pbs.twimg.com/media/HNkkofBXsAAMoo5.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2078733578867732480",
+          "url": "https://pbs.twimg.com/media/HNklLScWcAA-O53.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2078003883855524314",
+        "text": "最早我做字幕翻译的时候，语音转文字是用的 Whisper，但是 Whisper 有几个问题：\n\n一个问题是时间戳不准，时间戳不准拆分的就是就可能字幕和语音对不上，很影响效果，需要人工去从头到尾校对一遍\n\n一个问题是中英文混排支持不好，中文其实支持也不算太好，所以中文的转录就效果很差\n\n一个问题是不直接支持识别发言人\n\n虽然这些问题都可以通过收费的云端模型来解决，但是成本相对高一些。\n\n最近测试了 Qwen3 ASR，效果是真的很不错，配合 Qwen3-ForcedAligner 模型，可以识别后把词级时间戳对的很精准。0.6b 就足够了，本地运行资源占用也不高。https://t.co/yFDhPkBk2j\n\n发言人识别也有开源的模型：Pyannote + WeSpeaker。不过这个发言人一多尤其是一起说话识别的不够准，但配合 Agent 结合上下文就能做到相对比较准了。\n\n如果真的要求高，也可以走云端模型，比如火山引擎上的豆包录音文件识别模型 2.0 就质量挺好，速度也快，就是要额外花钱。",
+        "created_at": "Fri Jul 17 06:28:28 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2078003278290280448",
+            "url": "https://pbs.twimg.com/media/HNaM-MyW4AAqbj_.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 231684,
+          "friends_count": 1689,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 57,
+          "favorite_count": 413,
+          "reply_count": 71,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 6,
+        "favorite_count": 48,
+        "reply_count": 15,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2078734362447581477",
+      "text": "更多细节介绍\nhttps://t.co/kWnheDCLu7",
+      "created_at": "Sun Jul 19 06:51:07 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2075081105225744743",
+        "text": "OpenMOSS 开源 MOSS-Transcribe-Diarize-0.9B，多人长音频转写一次搞定「说了什么、谁说的、何时说的」。\n\n0.9B 参数，128K 上下文，最长约 90 分钟音频一次喂进去，不切片不拼接。\n\n4090 单卡，RTF 0.017，5–10 分钟录音 30 秒转完。\n\n架构是 Whisper-Medium 编码器 + Qwen3-0.6B 风格 decoder，端到端一个自回归任务全包，不走 ASR＋说话人分离＋时间对齐那套级联。\n\n带热词增强，人名/术语/型号能预配。\n\nApache 2.0，能商用。\n\n模型 🤗 https://t.co/80dgzC6L3H\n代码 https://t.co/YljbTaEEuX",
+        "created_at": "Thu Jul 09 04:54:23 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "796724898454499328",
+          "name": "Feiteng",
+          "screen_name": "FeitengLi",
+          "description": "Speech · Image · Video · LLM multimodal generative models\nResearch → Infrastructure → Built AI algo serving 200M+ users\n公众号: Generative AI\nOpen to opportunities",
+          "followers_count": 3521,
+          "friends_count": 1287,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 24,
+          "favorite_count": 83,
+          "reply_count": 12,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

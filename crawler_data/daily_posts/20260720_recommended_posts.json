@@ -1,12 +1,61 @@
 {
   "date": "20260720",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-20T21:08:02.752794",
-  "tweet_count": 221,
-  "unique_tweet_count": 221,
+  "last_crawl_time": "2026-07-20T22:56:25.120518",
+  "tweet_count": 222,
+  "unique_tweet_count": 222,
   "total_crawled": 421,
-  "duplicates_removed": 200,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2079317901085941976",
+      "text": "Claude Code 更新加入了屏幕阅读器模式（Screen Reader Mode），让使用 VoiceOver、NVDA 等辅助工具的视障开发者也能用上 AI 编程助手。\n\n启用屏幕阅读器模式后，会把 Claude Code 原来那套终端界面，进度动画、方框边框、实时刷新，全部替换成纯文本逐行输出。屏幕阅读器可以按顺序读出每一行内容，包括你的输入、Claude 的回复、工具调用状态、权限请求，每种内容都有明确的文本标签（you:、claude:、tool:、Permission Required: 等），方便跳转和检索。\n\n原来的菜单和权限确认也做了适配。箭头键选择的菜单变成了编号列表，输入数字回车就行；是否确认变成输入 y/n。Claude 需要你注意的时候，比如回复完成或者等你授权，终端会响铃提醒，不用一直盯着屏幕。\n\n开启方式有三种：\n1. 启动时加 --ax-screen-reader 参数(claude --ax-screen-reader)\n2. 设置环境变量 CLAUDE_AX_SCREEN_READER=1\n3. 或者在配置文件里写 \"axScreenReader\": true。\n\n需要 v2.1.181 或更高版本。\n\n除了屏幕阅读器模式，这次还加了几个相关的无障碍设置：屏幕放大镜用户可以设置环境变量保持原生光标可见，prefersReducedMotion 可以关掉动画，还有专门的色盲友好主题（dark-daltonized 和 light-daltonized）。",
+      "created_at": "Mon Jul 20 21:29:54 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2079315549163778366",
+        "text": "Claude Code now has a screen reader mode.\n\nRunning `claude --ax-screen-reader` swaps the visual terminal UI for plain, linear text that screen readers (like VoiceOver and NVDA) can follow.",
+        "created_at": "Mon Jul 20 21:20:33 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2024518793679294464",
+          "name": "ClaudeDevs",
+          "screen_name": "ClaudeDevs",
+          "description": "Official updates for developers building with @ClaudeAI",
+          "followers_count": 612451,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 73,
+          "favorite_count": 1554,
+          "reply_count": 90,
+          "quote_count": 22
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 231868,
+        "friends_count": 1690,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 4,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2079279979175530886",
       "text": "情绪价值也是价值\nhttps://t.co/UoRjvR1TR0",

@@ -3,13 +3,13 @@
     "screen_name": "elonmusk",
     "name": "Elon Musk",
     "description": "Starmind",
-    "followers_count": 240976334,
+    "followers_count": 240980214,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260721",
-  "last_updated": "2026-07-21T17:13:59.724669",
-  "tweet_count": 19,
+  "last_updated": "2026-07-21T19:14:12.518971",
+  "tweet_count": 21,
   "tweets": [
     {
       "id": "2079420041452294418",
@@ -922,6 +922,91 @@
       "quoted": null,
       "stats": {
         "retweet_count": 348,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2079631518071427444",
+      "text": "RT @ProfTomYeh: Backpropagation by hand ✍️ ~ 11 steps walkthrough below\n\nBackpropagation is the algorithm that actually trains a neural net…",
+      "created_at": "Tue Jul 21 18:16:06 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2079208495094677511",
+        "text": "Backpropagation by hand ✍️ ~ 11 steps walkthrough below\n\nBackpropagation is the algorithm that actually trains a neural network, and it is where most people stop following along. It is not calculus you cannot do. It is matrix multiplication, working backward, one layer at a time.\n\nSo I drew and calculated one entirely by hand.\n\nGoal: push the loss gradient back through a 3-layer network and land on a new value for every weight and bias.\n\n= 1. Given =\n\nA 3-layer perceptron, an input X, predictions Ypred = [0.5, 0.5, 0], and the truth Ytarget = [0, 1, 0].\n\n= 2. Backprop gradient cells =\n\nLet us draw empty cells for every gradient we are about to compute. The shape of the answer comes first.\n\n= 3. Layer 3 softmax =\n\nWe get dL/dz3 straight from Ypred minus Ytarget = [0.5, -0.5, 0]. No chain rule needed, and that shortcut is the whole reason softmax and cross-entropy are paired.\n\n= 4. Layer 3 weights and biases =\n\nLet us multiply dL/dz3 by [a2 | 1]. One multiplication gives the gradient for W3 and b3 together.\n\n= 5. Layer 2 activations =\n\nWe multiply dL/dz3 by W3 to get dL/da2. The gradient moves back across a layer the same way the signal moved forward.\n\n= 6. Layer 2 ReLU =\n\nLet us pass it through the gate: keep the gradient where the activation was positive, zero it everywhere else.\n\n= 7. Layer 2 weights and biases =\n\nWe multiply dL/dz2 by [a1 | 1]. The same figure as step 4, one layer up.\n\n= 8. Layer 1 activations =\n\nLet us multiply dL/dz2 by W2.\n\n= 9. Layer 1 ReLU =\n\nWe apply the same gate again, now on a1.\n\n= 10. Layer 1 weights and biases =\n\nLet us multiply dL/dz1 by [x | 1], and every weight in the network now has a gradient.\n\n= 11. Update =\n\nWe subtract, and the network has learned. In practice a learning rate scales this step.\n\nThe gradients:\ndL/dz3 = [0.5, -0.5, 0]\ndL/da1 = [1, -2, 2, -1]\ndL/dz1 = [0, -2, 2, -1]\n\nThe takeaway: matrix multiplication is all you need. Just like the forward pass, backpropagation is matrix multiplications end to end. You can do every one by hand, slowly and imperfectly, which is exactly why a GPU's ability to do them fast mattered so much to deep learning.\n\n💾 Save this post!",
+        "created_at": "Mon Jul 20 14:15:09 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2079208483669315584",
+            "url": "https://video.twimg.com/ext_tw_video/2079208483669315584/pu/vid/avc1/720x720/_2gCLV-fHWMgWYls.mp4?tag=12",
+            "bitrate": 1280000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "78995338",
+          "name": "Tom Yeh",
+          "screen_name": "ProfTomYeh",
+          "description": "CS Prof | AI by Hand ✍️ | @CUBoulder",
+          "followers_count": 56668,
+          "friends_count": 848,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 257,
+          "favorite_count": 1590,
+          "reply_count": 130,
+          "quote_count": 7
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 257,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2079639420924469448",
+      "text": "RT @karpathy: One pattern I find useful for working with LLMs is a nice long ramble session. Sometimes the LLM needs more bits to understan…",
+      "created_at": "Tue Jul 21 18:47:30 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2079610838143623371",
+        "text": "One pattern I find useful for working with LLMs is a nice long ramble session. Sometimes the LLM needs more bits to understand what you're trying to achieve, but you're too lazy to type them. In these cases I like to lean back, switch to /voice and just ramble for like 10 minutes, total mess, anything goes, full stream of consciousness. Sometimes I declare it up top, something like \"switching to speech recognition sorry for any typos...\". Sometimes I turn it into a small interview of a few turns. But I find that the LLMs are somehow very good at reconstructing long incoherent rambles and often their echo of your own tangle of thoughts comes out quite a bit cleaner than what you started with. The result is that you improve the mind meld and have to correct things less from that point on.",
+        "created_at": "Tue Jul 21 16:53:55 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "33836629",
+          "name": "Andrej Karpathy",
+          "screen_name": "karpathy",
+          "description": "I like training large deep neural nets.",
+          "followers_count": 3475312,
+          "friends_count": 1113,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1044,
+          "favorite_count": 15265,
+          "reply_count": 1061,
+          "quote_count": 387
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1044,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

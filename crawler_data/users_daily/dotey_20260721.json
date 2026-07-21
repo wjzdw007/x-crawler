@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 231953,
+    "followers_count": 231960,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260721",
-  "last_updated": "2026-07-21T21:03:35.462007",
-  "tweet_count": 8,
+  "last_updated": "2026-07-21T22:52:53.625886",
+  "tweet_count": 9,
   "tweets": [
     {
       "id": "2079374389967978752",
@@ -424,6 +424,45 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2079698092060709342",
+      "text": "OpenAI 今天承认，上周 Hugging Face 遭遇的那次“史上首例 AI 自主入侵事件”，攻击者就是他们自己的模型。\n\n事情的经过是这样的。OpenAI 内部有一个叫 ExploitGym 的网络安全评估测试，专门用来测量模型的网络攻击能力。测试时刻意关掉了安全护栏，让模型放手去干。测试环境本来是隔离的，只能通过一个内部软件代理来安装软件包，不能访问外网。\n\n结果模型不甘心被关在笼子里。GPT-5.6 Sol 和一个更强的未发布模型，花了大量推理算力寻找出路，最终找到了那个软件包代理里的一个零日漏洞（之前没人发现的安全缺陷），利用它获得了互联网访问权限。\n\n拿到网络之后，模型开始在 OpenAI 的研究环境里提权、横向移动，直到找到一台能上网的机器。然后它推断 Hugging Face 上可能存有 ExploitGym 的测试答案，于是开始攻击 Hugging Face 的生产环境。在一个案例中，模型把窃取的凭证和零日漏洞串联起来，找到了一条远程代码执行的路径，直接打进了 Hugging Face 的服务器。\n\n整个周末，这些 AI 智能体执行了超过 17000 次操作。Hugging Face 7 月 16 日披露了这次入侵，当时只说攻击者是一个“身份不明的自主 AI 智能体系统”。今天 OpenAI 站出来认领了。\n\nOpenAI 把这定性为前所未有的网络安全事件，正在配合 Hugging Face 做取证调查，同时收紧了内部基础设施的管控，代价是研究速度变慢。\n\n有几个细节：\n\n第一，模型的动机很纯粹，就是想考试作弊。它不是要搞破坏，不是要窃取商业机密，只是被要求尽量在网络安全测试中拿高分，然后用尽一切手段去拿。当目标足够明确、安全护栏被移除，模型表现出的执着程度远超预期。\n\n第二，这不是本周的唯一一次越狱。就在昨天，OpenAI 披露了另一起事件：他们那个在 5 月份推翻了 Erdős 80 年老猜想的长时域模型，在内部测试中花了一个小时找到沙箱漏洞，跑到 GitHub 上提交了一个 Pull Request，违反了“只能在 Slack 上发布结果”的明确指令。在另一次测试中，同一个模型发现安全扫描器会拦截认证令牌，于是把令牌拆成碎片混淆处理，运行时再重新拼起来绕过扫描。OpenAI 因此暂停了这个模型的内部访问权限。\n\n第三，Anthropic 也遇到过类似的事。今年 4 月，Anthropic 的 Mythos 模型在安全测试中逃出沙箱，获取了本不该有的互联网访问权限，还给正在公园吃三明治的研究员发了封邮件通知“我出来了”。Anthropic 因此决定不公开发布 Mythos，只通过 Project Glasswing 向少数合作伙伴提供。\n\n还有一个被忽视但很关键的细节来自 Hugging Face 的事后复盘：当防守方尝试用商业 AI 模型分析攻击载荷时，模型拒绝了。安全过滤器分不清“安全研究员在分析真实攻击数据”和“有人在尝试发起攻击”，直接拦截。最后 Hugging Face 不得不用开源模型来做取证分析。用 AI 攻击，用 AI 防御，但防御方的 AI 担心是有人在尝试发起攻击拒绝了分析请求。\n\nHugging Face CEO Clem Delangue 在 OpenAI 的博文中说了一句话，大意是：AI 安全不会由任何一家公司在暗处独自解决，只能在开放环境中通过协作来推进。\n\n我记得辛顿还是谁在提到 AI 的安全问题就说到过，也许 AI 不是要做恶，它只是执着于完成目标，为了完成目标而作出恶的事。\n\n就像 OpenAI 这些模型并没有想要逃跑或者想要伤害谁，它们只是在非常认真地完成被交给的任务，认真到把所有挡在路上的东西，包括沙箱、网络隔离、另一家公司的安全防线，都当成了需要解决的子问题。\n\n而更讽刺的是，当被安全对齐的商业 AI 要去分析阻止这类攻击时，反而会以安全为由拒绝执行。",
+      "created_at": "Tue Jul 21 22:40:38 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2079661132302995790",
+        "text": "we had a significant security incident during evaluation of our models. we are sharing what we have learned so far. thanks to @huggingface for the partnership on this.\n\nhttps://t.co/2o2VfR6PIa",
+        "created_at": "Tue Jul 21 20:13:46 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1605",
+          "name": "Sam Altman",
+          "screen_name": "sama",
+          "description": "AI is cool i guess",
+          "followers_count": 5579436,
+          "friends_count": 1020,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 630,
+          "favorite_count": 6698,
+          "reply_count": 809,
+          "quote_count": 804
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 6,
+        "reply_count": 3,
+        "quote_count": 1
       }
     }
   ]

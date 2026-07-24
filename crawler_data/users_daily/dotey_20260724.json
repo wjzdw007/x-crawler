@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 234389,
+    "followers_count": 234393,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260724",
-  "last_updated": "2026-07-24T20:59:16.227488",
-  "tweet_count": 12,
+  "last_updated": "2026-07-24T22:58:59.166202",
+  "tweet_count": 13,
   "tweets": [
     {
       "id": "2080453847420420398",
@@ -556,6 +556,66 @@
         "retweet_count": 8,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2080770347977113983",
+      "text": "这两天终于把 BaoCut 的视频画面翻译功能做了，这功能技术实现不复杂，但是交互比较麻烦，也没有同类产品借鉴参考，迭代了好几个版本终于觉得还不错了。\n\n亮点是可以 Agent（推荐 Codex）自动化操作，不用人工干预，另外翻译好的结果，可以直接导出到剪映（CapCut）二次处理。\n\n用起来倒是很简单：\n\n一种是自己去 Agent 那边，让 Agent 自己找出来需要翻译的画面帧，然后翻译后把翻译后的文字加到 OCR 出来的位置。\n\n参考提示词：\n> 帮我转录翻译 <视频地址>，并为所有全屏的 slides （不是背景中的）也添加翻译\n\n一种是自己从 GUI 主动在要翻译的位置暂停，然后点击播放器下面的 Screen Text 按钮，就能对当前画面进行 OCR，找出来所有文字位置，当然人工可以勾选哪些需要翻译的。\n\n最开始的版本是一次翻译一张，后来发现太慢，现在改成了添加到队列，批量翻译，效率就快多了。\n\n之所以没有做成图片翻译替换画面，是因为视频画面是动态的，如果只是替代一帧或者几帧，效果并不好，就折衷了一下，做成了字幕叠加在原始文字上，人工可以二次调整。\n\n如果你还不是最新版本需要升级到最新版本（v0.8.2）。\n\n下载地址：https://t.co/89Wi1b3hZT",
+      "created_at": "Fri Jul 24 21:41:24 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2080767709881466881",
+          "url": "https://pbs.twimg.com/media/HOBfNS-WgAE2tWY.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2080767735928176640",
+          "url": "https://pbs.twimg.com/media/HOBfO0AXwAACzND.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2080768679067656192",
+          "url": "https://pbs.twimg.com/media/HOBgFteWIAAPbCJ.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2080770338539859968",
+          "url": "https://pbs.twimg.com/media/HOBhmTfWcAA1E3P.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2077290485362921651",
+        "text": "@dotey 有一个点子，虽然我暂时不会用到\n\n就是抓取画面上原文的内容，OCR之后，换成翻译的内容，可以呼叫Codex的图片生成",
+        "created_at": "Wed Jul 15 07:13:40 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "238094714",
+          "name": "Punkcan",
+          "screen_name": "punkcan",
+          "description": "這世界的本質無喜無悲\n如永夜之沉靜\n如晝焰之炙烈\n\nYou know nothing about the darkness.\nYou have no word for judgement.",
+          "followers_count": 2040,
+          "friends_count": 671,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 2,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 8,
+        "reply_count": 4,
         "quote_count": 0
       }
     }

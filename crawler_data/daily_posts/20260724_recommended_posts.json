@@ -1,12 +1,284 @@
 {
   "date": "20260724",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-24T20:59:16.172150",
-  "tweet_count": 252,
-  "unique_tweet_count": 252,
-  "total_crawled": 445,
-  "duplicates_removed": 193,
+  "last_crawl_time": "2026-07-24T22:58:59.107791",
+  "tweet_count": 257,
+  "unique_tweet_count": 257,
+  "total_crawled": 452,
+  "duplicates_removed": 195,
   "tweets": [
+    {
+      "id": "2080785172622868516",
+      "text": "Flight 13 of Starship launch attempt in 10 minutes!",
+      "created_at": "Fri Jul 24 22:40:18 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2080331023301161231",
+        "text": "Watch Starship's thirteenth flight test https://t.co/qkYYJiX24h",
+        "created_at": "Thu Jul 23 16:35:41 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41888810,
+          "friends_count": 123,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3223,
+          "favorite_count": 17980,
+          "reply_count": 1059,
+          "quote_count": 611
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 241017200,
+        "friends_count": 1375,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 396,
+        "favorite_count": 2600,
+        "reply_count": 561,
+        "quote_count": 38
+      }
+    },
+    {
+      "id": "2080777673945580013",
+      "text": "RT @doganuraldesign: If you curate your feed right, 𝕏 is your best bet for predicting the future.",
+      "created_at": "Fri Jul 24 22:10:31 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2080526418585214999",
+        "text": "If you curate your feed right, 𝕏 is your best bet for predicting the future.",
+        "created_at": "Fri Jul 24 05:32:07 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1553043003496960000",
+          "name": "Dogan Ural",
+          "screen_name": "doganuraldesign",
+          "description": "Official Creative Ambassador @SpaceXAI / Designer / Creative Director / Latent Space Explorer / Dad",
+          "followers_count": 177925,
+          "friends_count": 641,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 149,
+          "favorite_count": 1253,
+          "reply_count": 167,
+          "quote_count": 14
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 241017200,
+        "friends_count": 1375,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 148,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2080770347977113983",
+      "text": "这两天终于把 BaoCut 的视频画面翻译功能做了，这功能技术实现不复杂，但是交互比较麻烦，也没有同类产品借鉴参考，迭代了好几个版本终于觉得还不错了。\n\n亮点是可以 Agent（推荐 Codex）自动化操作，不用人工干预，另外翻译好的结果，可以直接导出到剪映（CapCut）二次处理。\n\n用起来倒是很简单：\n\n一种是自己去 Agent 那边，让 Agent 自己找出来需要翻译的画面帧，然后翻译后把翻译后的文字加到 OCR 出来的位置。\n\n参考提示词：\n> 帮我转录翻译 <视频地址>，并为所有全屏的 slides （不是背景中的）也添加翻译\n\n一种是自己从 GUI 主动在要翻译的位置暂停，然后点击播放器下面的 Screen Text 按钮，就能对当前画面进行 OCR，找出来所有文字位置，当然人工可以勾选哪些需要翻译的。\n\n最开始的版本是一次翻译一张，后来发现太慢，现在改成了添加到队列，批量翻译，效率就快多了。\n\n之所以没有做成图片翻译替换画面，是因为视频画面是动态的，如果只是替代一帧或者几帧，效果并不好，就折衷了一下，做成了字幕叠加在原始文字上，人工可以二次调整。\n\n如果你还不是最新版本需要升级到最新版本（v0.8.2）。\n\n下载地址：https://t.co/89Wi1b3hZT",
+      "created_at": "Fri Jul 24 21:41:24 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2080767709881466881",
+          "url": "https://pbs.twimg.com/media/HOBfNS-WgAE2tWY.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2080767735928176640",
+          "url": "https://pbs.twimg.com/media/HOBfO0AXwAACzND.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2080768679067656192",
+          "url": "https://pbs.twimg.com/media/HOBgFteWIAAPbCJ.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2080770338539859968",
+          "url": "https://pbs.twimg.com/media/HOBhmTfWcAA1E3P.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2077290485362921651",
+        "text": "@dotey 有一个点子，虽然我暂时不会用到\n\n就是抓取画面上原文的内容，OCR之后，换成翻译的内容，可以呼叫Codex的图片生成",
+        "created_at": "Wed Jul 15 07:13:40 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "238094714",
+          "name": "Punkcan",
+          "screen_name": "punkcan",
+          "description": "這世界的本質無喜無悲\n如永夜之沉靜\n如晝焰之炙烈\n\nYou know nothing about the darkness.\nYou have no word for judgement.",
+          "followers_count": 2040,
+          "friends_count": 671,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 2,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 234393,
+        "friends_count": 1693,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 8,
+        "reply_count": 4,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2080765392855707884",
+      "text": "Wow",
+      "created_at": "Fri Jul 24 21:21:43 +0000 2026",
+      "lang": "qst",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2080762193503539531",
+        "text": "2025 global births by county (top 50):\n\n1. 🇮🇳 India: 23.1M\n2. 🇨🇳 China: 8.7M\n3. 🇳🇬 Nigeria: 7.6M\n4. 🇵🇰 Pakistan: 6.9M\n5. 🇨🇩 DR Congo: 4.6M\n6. 🇮🇩 Indonesia: 4.4M\n7.  🇪🇹 Ethiopia: 4.2M\n8. 🇺🇸 United States: 3.7M\n9. 🇧🇩 Bangladesh: 3.4M\n10. 🇧🇷 Brazil: 2.5M\n11.  🇪🇬 Egypt: 2.5M\n12. 🇹🇿 Tanzania: 2.4M\n13. 🇲🇽 Mexico: 2.0M\n14. 🇵🇭 Philippines: 1.8M\n15. 🇺🇬 Uganda: 1.7M\n16. 🇸🇩 Sudan: 1.7M\n17.  🇰🇪 Kenya: 1.5M\n18. 🇦🇫 Afghanistan: 1.5M\n19.  🇦🇴 Angola: 1.4M\n20. 🇾🇪 Yemen: 1.4M\n21.  🇻🇳 Vietnam: 1.3M\n22. 🇲🇿 Mozambique: 1.3M\n23. 🇷🇺 Russia: 1.2M\n24. 🇮🇶 Iraq: 1.2M\n25. 🇿🇦 South Africa: 1.2M\n26. 🇳🇪 Niger: 1.1M\n27.  🇮🇷 Iran: 1.1M\n28. 🇹🇷 Turkey: 1.1M\n29. 🇲🇬 Madagascar: 1.0M\n30. 🇨🇮 Côte d’Ivoire: 1.0M\n31.  🇲🇱 Mali: 987K\n32. 🇨🇲 Cameroon: 981K\n33. 🇺🇿 Uzbekistan: 911K\n34. 🇹🇩 Chad: 907K\n35. 🇬🇭 Ghana: 898K\n36. 🇲🇲 Myanmar: 888K\n37.  🇩🇿 Algeria: 855K\n38. 🇸🇴 Somalia: 822K\n39. 🇯🇵 Japan: 748K\n40. 🇧🇫 Burkina Faso: 742K\n41.  🇿🇲 Zambia: 709K\n42. 🇩🇪 Germany: 708K\n43. 🇨🇴 Colombia: 693K\n44. 🇲🇼 Malawi: 685K\n45. 🇬🇧 UK: 680K\n46. 🇫🇷 France: 635K\n47.  🇲🇦 Morocco: 619K\n48. 🇸🇾 Syria: 601K\n49. 🇹🇭 Thailand: 572K\n50. 🇸🇦 Saudi Arabia: 565K\n\nNigeria alone had 1M more births than the entire Europe",
+        "created_at": "Fri Jul 24 21:09:00 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1552795969959636992",
+          "name": "End Wokeness",
+          "screen_name": "EndWokeness",
+          "description": "Fighting, exposing, and mocking wokeness. DM for submissions",
+          "followers_count": 3915704,
+          "friends_count": 1388,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 237,
+          "favorite_count": 1246,
+          "reply_count": 484,
+          "quote_count": 144
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 241017200,
+        "friends_count": 1375,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 465,
+        "favorite_count": 2867,
+        "reply_count": 957,
+        "quote_count": 32
+      }
+    },
+    {
+      "id": "2080760303394939160",
+      "text": "RT @XFreeze: Grok is now available directly inside Google Workspace\n\nOne add-on brings Grok into Google Sheets, Slides and Docs, where it w…",
+      "created_at": "Fri Jul 24 21:01:29 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2080732812131664187",
+        "text": "Grok is now available directly inside Google Workspace\n\nOne add-on brings Grok into Google Sheets, Slides and Docs, where it works beside the file you already have open\n\nIn Sheets, Grok can:\n• Read selected ranges and explain the data\n• Cite the exact cells behind its answers\n• Write and fill real spreadsheet formulas\n• Update values and rebuild financial scenarios\n\nIn Slides, it can:\n• Generate a complete presentation from an outline\n• Add new slides that match the existing theme\n• Restructure entire sections\n• Rewrite titles so every slide communicates a clear takeaway\n\nIn Docs, it can:\n• Draft directly inside the document\n• Turn rough notes into formatted sections\n• Correct grammar and rewrite content\n• Apply consistent headings and styles across the file\n\nEverything happens through a side panel, without constantly copying information between tabs or rebuilding the output manually\n\nOne installation works across all three apps, and organizations can deploy it across their entire workforce\n\nGrok is rapidly becoming a native intelligence layer for the tools people already use every day",
+        "created_at": "Fri Jul 24 19:12:15 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2080732803206090752",
+            "url": "https://pbs.twimg.com/media/HOA_ddeaEAAWay-.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 248905,
+          "friends_count": 1946,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 187,
+          "favorite_count": 982,
+          "reply_count": 151,
+          "quote_count": 19
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 241017200,
+        "friends_count": 1375,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 187,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2080759547753361804",
       "text": "Grok 4.5 is excellent for real-world work",

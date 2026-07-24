@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-07-24T04:14:33.943409",
+  "tweet_count": 3,
+  "summary": "**新工具/技术**（如有）\n- claude-tap：一个面向 Agent Harness Engineering 的本地可观测性平台，能展示一次真实 Agent 运行的 System Prompt、对话历史、Tool Schema、Tool Call/Result、流式响应、Token 用量及相邻请求的结构化 Diff，便于对照源码和 Trace 学习运行时行为。\n\n**核心观点/方法论**（如有）\n- AI 确实降低了重构成本，但不是放任重构的理由；应采用“科学重构”——重构前先写好测试以控制风险。\n- AI 擅长反复自我纠错（iterative validation），因此高质量的测试覆盖对 AI 驱动开发尤为关键。\n- 测试如果质量差且误解需求，会成为负资产，导致错误的重构或回归；所以人工把关和模型质量同样重要。\n\n**实践经验/案例**（如有）\n- 强烈建议把源码和真实 Trace 对照着看，通过观察运行时上下文、工具调用与状态传递来理解 Agent Runtime/Harness 的行为，加速学习。\n- 在使用 AI 写测试或代码时，一定要有人校验需求理解；若遇到模型能力不足导致错测或篡改行为，应升级或更换更好模型。\n- 重构前优先保证测试覆盖（测试可由 AI 辅助生成，但需人工审核），用测试支撑快速、安全的迭代与清理技术债。\n- 关注流式响应和 token 用量等运行时指标，有助于优化成本与性能。\n- 小结：利用可观测性工具（如 claude-tap） + 严谨的测试流程 + 人工把关，可以在 AI 驱动的编码与重构中既快速试错又有效控制风险。",
+  "metadata": {
+    "original_tweets": 2,
+    "retweets": 1,
+    "media_tweets": 1,
+    "data_hash": "4d528724",
+    "user": "dotey"
+  }
+}

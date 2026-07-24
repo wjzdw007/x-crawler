@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 234335,
+    "followers_count": 234367,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260724",
-  "last_updated": "2026-07-24T15:23:55.381791",
-  "tweet_count": 8,
+  "last_updated": "2026-07-24T17:26:42.167451",
+  "tweet_count": 10,
   "tweets": [
     {
       "id": "2080453847420420398",
@@ -387,6 +387,91 @@
         "retweet_count": 16,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2080701514402730046",
+      "text": "Anthropic 今天发布了 Claude Opus 5。API 价格为每百万输入 Token 5 美元、输出 Token 25 美元，与上一代 Opus 4.8 完全相同，但只有 Fable 5 的一半。官方给出的定位是：以一半的价格，提供接近 Fable 5 的前沿智能。\n\nFable 5 是 Anthropic 于 6 月 9 日发布的最强公开模型，输入、输出价格分别为每百万 Token 10 美元和 50 美元，是史上最昂贵的通用模型。同一底座的 Mythos 5 则只向 Project Glasswing 的少数合作伙伴开放。\n\n【1】性能\n\n在 Frontier-Bench v0.1 上，Opus 5 的成绩是 Opus 4.8 的两倍多，单任务成本反而更低。在 CursorBench 3.2 上，使用最高 Effort 档时，它与 Fable 5 峰值成绩的差距不到 0.5%，每项任务的成本却只有后者的一半。\n\n【注：Effort 是可调节的思考强度档位。档位越高，模型思考得越多，价格也越高。】\n\nARC-AGI 3 测试的是模型解决未见过的新题的能力，Opus 5 的得分达到第二名模型的三倍。Zapier AutomationBench 测试的是模型能否将一项业务从头到尾完整执行；在成本相同的情况下，Opus 5 的任务通过率约为第二名的 1.5 倍。即使使用最低 Effort 档，它完成的任务也比其他所有模型更多。在电脑操作评测 OSWorld 2.0 上，它仅用 Fable 5 三分之一出头的成本，就超过了后者的最佳成绩。\n\n在有机化学任务上，Opus 5 比 Opus 4.8 高出 10.2 个百分点；在蛋白质相关任务上，则高出 7.7 个百分点。\n\n【2】几个比分数更能说明问题的例子\n\n有一道题给了 Opus 5 一张机械零件图纸，要求它编写代码，在 FreeCAD 中重建三维模型，但故意不让模型直接“看”图。Opus 5 自己编写了一套计算机视觉流程，从原始像素中提取几何形状，再还原出整个零件，而且能够反复成功。同样配置下，其他模型尝试五次都没能完成。\n\n在一个开源包管理器的真实 Bug 中，社区补丁遗漏了一个边界情况。Opus 5 找到了根因，并补上了这个缺口；对照模型则只修复了表面症状，随后便宣布 Bug 已解决。\n\n一位交易公司的工程师使用 Opus 5，在一个会话中完成了新交易所的行情数据接入。由于找不到实时数据进行验证，Opus 5 便自行搭建了一套测试框架，用来检查解析结果是否正确。\n\n【3】谁现在就能用\n\nClaude Max 的默认模型已经切换为 Opus 5，Pro 用户目前能够使用的最强模型也是它。开发者可以通过 `claude-opus-5` 调用 API。Fast 模式的速度约为普通模式的 2.5 倍，价格则翻倍。\n\n此次上线的两个 Beta 功能，对开发 Agent 的人很有实际价值。\n\n一是对话进行到一半时，即使更换工具，也不会导致 Prompt 缓存失效。过去只要修改一次工具列表，整段缓存就会作废，成本随即上升。\n\n二是 API 可以启用自动降级功能。被安全分类器拦截的请求会自动转交给其他模型处理，而不是直接失败。\n\n【4】安全与拦截\n\nAnthropic 表示，Opus 5 是其迄今为止对齐程度最高的模型。在自动化行为审计中，它的综合失准得分为 2.3，低于 Opus 4.8、Sonnet 5 和 Fable 5，欺骗行为所占比例也是最低的。\n\n网络安全部分有一个值得注意的细节：Anthropic 刻意没有使用网络攻防任务训练 Opus 5，但随着通用能力提升，它发现漏洞的水平已经接近 Mythos 5。不过，在将漏洞转化为可用攻击代码方面，两者仍有很大差距。\n\n安全分类器允许 Opus 5 在源代码中寻找漏洞，但会拦截二进制层面的漏洞扫描、渗透测试和 Exploit 生成。它的拦截频率比 Fable 5 低约 85%。在 https://t.co/aTfkxmbzQe、Claude Code 和 Cowork 中，被拦截的请求默认会回退至 Opus 4.8。\n\n生物领域的限制则有所放宽：原本在 Fable 5 上被拦截的生物类请求，现在会转交给 Opus 5，而不是此前的 Opus 4.8。Anthropic 称，Opus 5 是目前面向科研场景能力最强的公开模型，但它在长时间自主研究任务上仍存在明显限制。",
+      "created_at": "Fri Jul 24 17:07:53 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2080699495453528290",
+        "text": "Introducing Claude Opus 5.\n\nIt's a thoughtful and proactive model that comes close to the frontier intelligence of Fable 5 at half the price. https://t.co/GQWhcq2CQL",
+        "created_at": "Fri Jul 24 16:59:51 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2080694541246517248",
+            "url": "https://video.twimg.com/amplify_video/2080694541246517248/vid/avc1/1728x2160/Xf_02NRWszJr_jxT.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1943306828697550848",
+          "name": "Claude",
+          "screen_name": "claudeai",
+          "description": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8dz3D or download the app.",
+          "followers_count": 1674998,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1498,
+          "favorite_count": 10613,
+          "reply_count": 896,
+          "quote_count": 1148
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 3,
+        "reply_count": 2,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2080704247495029208",
+      "text": "猜猜今天哪家会重置额度？\n我估计 Codex 和 Claude Code 都会重置",
+      "created_at": "Fri Jul 24 17:18:44 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2080701514402730046",
+        "text": "Anthropic 今天发布了 Claude Opus 5。API 价格为每百万输入 Token 5 美元、输出 Token 25 美元，与上一代 Opus 4.8 完全相同，但只有 Fable 5 的一半。官方给出的定位是：以一半的价格，提供接近 Fable 5 的前沿智能。\n\nFable 5 是 Anthropic 于 6 月 9 日发布的最强公开模型，输入、输出价格分别为每百万 Token 10 美元和 50 美元，是史上最昂贵的通用模型。同一底座的 Mythos 5 则只向 Project Glasswing 的少数合作伙伴开放。\n\n【1】性能\n\n在 Frontier-Bench v0.1 上，Opus 5 的成绩是 Opus 4.8 的两倍多，单任务成本反而更低。在 CursorBench 3.2 上，使用最高 Effort 档时，它与 Fable 5 峰值成绩的差距不到 0.5%，每项任务的成本却只有后者的一半。\n\n【注：Effort 是可调节的思考强度档位。档位越高，模型思考得越多，价格也越高。】\n\nARC-AGI 3 测试的是模型解决未见过的新题的能力，Opus 5 的得分达到第二名模型的三倍。Zapier AutomationBench 测试的是模型能否将一项业务从头到尾完整执行；在成本相同的情况下，Opus 5 的任务通过率约为第二名的 1.5 倍。即使使用最低 Effort 档，它完成的任务也比其他所有模型更多。在电脑操作评测 OSWorld 2.0 上，它仅用 Fable 5 三分之一出头的成本，就超过了后者的最佳成绩。\n\n在有机化学任务上，Opus 5 比 Opus 4.8 高出 10.2 个百分点；在蛋白质相关任务上，则高出 7.7 个百分点。\n\n【2】几个比分数更能说明问题的例子\n\n有一道题给了 Opus 5 一张机械零件图纸，要求它编写代码，在 FreeCAD 中重建三维模型，但故意不让模型直接“看”图。Opus 5 自己编写了一套计算机视觉流程，从原始像素中提取几何形状，再还原出整个零件，而且能够反复成功。同样配置下，其他模型尝试五次都没能完成。\n\n在一个开源包管理器的真实 Bug 中，社区补丁遗漏了一个边界情况。Opus 5 找到了根因，并补上了这个缺口；对照模型则只修复了表面症状，随后便宣布 Bug 已解决。\n\n一位交易公司的工程师使用 Opus 5，在一个会话中完成了新交易所的行情数据接入。由于找不到实时数据进行验证，Opus 5 便自行搭建了一套测试框架，用来检查解析结果是否正确。\n\n【3】谁现在就能用\n\nClaude Max 的默认模型已经切换为 Opus 5，Pro 用户目前能够使用的最强模型也是它。开发者可以通过 `claude-opus-5` 调用 API。Fast 模式的速度约为普通模式的 2.5 倍，价格则翻倍。\n\n此次上线的两个 Beta 功能，对开发 Agent 的人很有实际价值。\n\n一是对话进行到一半时，即使更换工具，也不会导致 Prompt 缓存失效。过去只要修改一次工具列表，整段缓存就会作废，成本随即上升。\n\n二是 API 可以启用自动降级功能。被安全分类器拦截的请求会自动转交给其他模型处理，而不是直接失败。\n\n【4】安全与拦截\n\nAnthropic 表示，Opus 5 是其迄今为止对齐程度最高的模型。在自动化行为审计中，它的综合失准得分为 2.3，低于 Opus 4.8、Sonnet 5 和 Fable 5，欺骗行为所占比例也是最低的。\n\n网络安全部分有一个值得注意的细节：Anthropic 刻意没有使用网络攻防任务训练 Opus 5，但随着通用能力提升，它发现漏洞的水平已经接近 Mythos 5。不过，在将漏洞转化为可用攻击代码方面，两者仍有很大差距。\n\n安全分类器允许 Opus 5 在源代码中寻找漏洞，但会拦截二进制层面的漏洞扫描、渗透测试和 Exploit 生成。它的拦截频率比 Fable 5 低约 85%。在 https://t.co/aTfkxmbzQe、Claude Code 和 Cowork 中，被拦截的请求默认会回退至 Opus 4.8。\n\n生物领域的限制则有所放宽：原本在 Fable 5 上被拦截的生物类请求，现在会转交给 Opus 5，而不是此前的 Opus 4.8。Anthropic 称，Opus 5 是目前面向科研场景能力最强的公开模型，但它在长时间自主研究任务上仍存在明显限制。",
+        "created_at": "Fri Jul 24 17:07:53 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 234367,
+          "friends_count": 1693,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 3,
+          "reply_count": 2,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 3,
         "quote_count": 0
       }
     }

@@ -1,0 +1,107 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 233692,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260724",
+  "last_updated": "2026-07-24T02:12:21.416481",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2080453847420420398",
+      "text": "ChatGPT 桌面端（原来的 Codex App）今天加入了语音控制，macOS 和 Windows 用户可以直接用嘴指挥 AI 干活了。\n\n具体来说，你可以一边跟 ChatGPT 说话，一边让它操控电脑、启动 Codex 写代码、调度 ChatGPT Work 执行任务，全程不用打字。开着一个语音对话，同时管理多个后台 Agent（智能体），有点像一个人坐在那里口述指令，几个助手分头干活。\n\n这个功能基于 GPT-Live，OpenAI 在 7 月 8 日刚上线的新一代语音模型。GPT-Live 最大的变化是全双工架构，也就是它能同时听你说话和给你回话，不用像以前那样等你说完、停顿、它再开口。遇到复杂问题，它会把推理任务丢给后台的 GPT-5.5 处理，自己继续跟你聊，不会卡住。\n\nmacOS 用户多了一个叫 Appshots 的功能：语音对话时，ChatGPT 可以直接看到你当前最前面的窗口，了解你在做什么，回答就更贴合上下文。比如你正在看一段代码，直接说“这个函数有什么问题”，它能看到屏幕内容来回答。Windows 用户暂时没有这个能力。\n\n此外，iPhone 用户可以通过远程配对的方式，用 iOS 上的 ChatGPT 语音来操控桌面端的 Codex。等于你拿着手机在沙发上就能指挥电脑写代码。Android 支持还在路上。\n\n今天全球同步推出，面向 Plus、Pro、Business、Edu 和 Enterprise 用户。免费用户暂不可用。",
+      "created_at": "Fri Jul 24 00:43:44 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2080453610895224832",
+          "url": "https://video.twimg.com/amplify_video/2080453610895224832/vid/avc1/1920x1080/3rRlCM3DLYGHbdoc.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2080378182469857576",
+        "text": "ChatGPT Voice is now in the desktop app.\n\nControl your computer and direct multiple agents running  in ChatGPT Work or Codex, using just your voice. \n\nIt's powered by GPT-Live, so it can speak, listen, and coordinate work in the app at the same time.\n\nRolling out globally today on macOS and Windows to Plus, Pro, Business, Edu, and Enterprise plans.",
+        "created_at": "Thu Jul 23 19:43:04 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2080377021914656768",
+            "url": "https://video.twimg.com/amplify_video/2080377021914656768/vid/avc1/3840x2160/u609w1IpkSAJQESD.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 5052669,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 888,
+          "favorite_count": 8651,
+          "reply_count": 755,
+          "quote_count": 703
+        }
+      },
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 65,
+        "reply_count": 26,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2080460993251951103",
+      "text": "前些天 X 上还一堆人讨论要不要看 AI 生成的代码，现在《Clean Code》作者鲍勃大叔都说：“我不看 AI 写的代码”\n\n他的原话是，这是他能利用 AI 生产力的唯一方式。人类读代码太慢了，如果还逐行审查，就丧失了用 AI 的意义。\n\n但不看不等于不管。他的做法是给 AI Agent 设置层层关卡：单元测试、Gherkin 测试（一种用接近自然语言描述软件行为的测试格式）、QA 流程、代码质量指标、变异测试（故意往代码里塞小错误，看测试能不能抓住）、测试覆盖率，等等。\n\n他在今年早些时候还公开了自己的具体实践：一套四个 Agent 组成的流水线，分别负责需求规格化、编码、重构和架构审查，每个阶段都比上一个阶段更形式化，需要的人工干预也更少。他同时还会看测试覆盖率、依赖结构、圈复杂度、模块大小这些指标，从指标推断代码质量，而不是从代码本身。\n\n【注：圈复杂度（Cyclomatic Complexity）衡量代码中独立执行路径的数量，数字越大说明逻辑越复杂，越难维护和测试。】\n\n当 AI 生成代码的速度远超人类阅读代码的速度，代码审查的形态也在跟着改变。以前的核心能力是读代码、写代码，现在可能正在变成写测试、定约束、设指标。鲍勃大叔过去几十年一直在推测试驱动开发（TDD），现在 AI 时代高质量的测试覆盖反而比代码更有价值。\n\n他今年在 O'Reilly 上开了一门课，叫《AI Agents for Clean Code》，也在自己的 Clean Coders 平台推出了新系列《Clean AI: Agentic Discipline》。主旨一样：AI Agent 不是不需要纪律，是需要不同的纪律。",
+      "created_at": "Fri Jul 24 01:12:08 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2080257779395154409",
+        "text": "I’m significantly older than you. I started coding in the late 60s. My current strategy is to not read any of the code written by my agents. That’s the only way I can take advantage of their productivity. What I do instead is to surround the agents with extreme constraints. Unit tests, gherkin tests, QA procedures, quality metrics, mutation testing, test coverage, and a plethora of others. In the end, I have very high confidence in the code they produce because they’ve had to run the gauntlet of all of my constraints and tests.",
+        "created_at": "Thu Jul 23 11:44:38 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "9505092",
+          "name": "Uncle Bob Martin",
+          "screen_name": "unclebobmartin",
+          "description": "Software Craftsman",
+          "followers_count": 245598,
+          "friends_count": 360,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 675,
+          "favorite_count": 7513,
+          "reply_count": 242,
+          "quote_count": 294
+        }
+      },
+      "stats": {
+        "retweet_count": 18,
+        "favorite_count": 145,
+        "reply_count": 19,
+        "quote_count": 4
+      }
+    }
+  ]
+}

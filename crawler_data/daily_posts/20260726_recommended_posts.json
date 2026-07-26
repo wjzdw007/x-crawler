@@ -1,12 +1,61 @@
 {
   "date": "20260726",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-26T06:33:51.723337",
-  "tweet_count": 212,
-  "unique_tweet_count": 212,
-  "total_crawled": 400,
-  "duplicates_removed": 188,
+  "last_crawl_time": "2026-07-26T09:56:35.399582",
+  "tweet_count": 213,
+  "unique_tweet_count": 213,
+  "total_crawled": 412,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2081287225027809575",
+      "text": "advisor 来自这里😅 \nhttps://t.co/mTWg69Bp3a",
+      "created_at": "Sun Jul 26 07:55:17 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2080913463577112611",
+        "text": "我有个疑惑，如果让弱一些的模型设计，聪明的模型当顾问，那么有几种可能：\n1. 它设计就是很糟糕的，问的问题也问不到点子上，那再聪明的顾问也给不了好的建议\n2. 它很自负，不觉得自己的有问题，明明该去问聪明模型而不去问\n3. 它很不自信，一点小问题就去问聪明模型\n\n这些可能都让所谓的 /advisor 模式没有什么用。\n\n为什么不让聪明的模型去设计，让弱一点的模型去执行，最后聪明的模型去验收？这样应该才是性价比最高的组合方式。",
+        "created_at": "Sat Jul 25 07:10:05 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 234611,
+          "friends_count": 1695,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 14,
+          "favorite_count": 177,
+          "reply_count": 97,
+          "quote_count": 8
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 234611,
+        "friends_count": 1695,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2081225771473879226",
       "text": "Q：Agent 用 Skills 的时候，是不是要先调一次大模型选 Skill，再调一次大模型执行工具，总共调了两次？\n\nA：不是的。Skills 的元信息（每个 Skill 的 name 和 description）在对话一开始就作为系统提示词（System Prompt）的一部分，统一加载进了上下文窗口。所以大模型在处理你的第一条消息时，已经知道了所有可用 Skills 的描述，不需要单独调用一次大模型来做选择。\n\n实际流程是：大模型在一次调用中，一边读你的问题，一边对照上下文里的 Skill 描述，判断该用哪个 Skill，然后读取对应的 SKILL.md 获取详细指令，接着决定是否调用工具——这些都可以在同一轮对话中连贯完成，并不是\"选 Skill 一次、用工具又一次\"的两段式调用。\n\n你可能会担心：每次对话都把所有 Skill 描述塞进上下文，是不是很浪费 token？这就是 Prompt Caching 发挥作用的地方。系统提示词（包括所有 Skill 描述）在多轮对话中会被缓存，后续每一轮不需要重新处理这些内容，既省了时间也省了成本。",

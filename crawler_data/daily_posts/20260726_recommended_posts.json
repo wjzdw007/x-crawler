@@ -1,12 +1,380 @@
 {
   "date": "20260726",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-26T02:22:43.548509",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-07-26T06:33:51.723337",
+  "tweet_count": 212,
+  "unique_tweet_count": 212,
+  "total_crawled": 400,
+  "duplicates_removed": 188,
   "tweets": [
+    {
+      "id": "2081225771473879226",
+      "text": "Q：Agent 用 Skills 的时候，是不是要先调一次大模型选 Skill，再调一次大模型执行工具，总共调了两次？\n\nA：不是的。Skills 的元信息（每个 Skill 的 name 和 description）在对话一开始就作为系统提示词（System Prompt）的一部分，统一加载进了上下文窗口。所以大模型在处理你的第一条消息时，已经知道了所有可用 Skills 的描述，不需要单独调用一次大模型来做选择。\n\n实际流程是：大模型在一次调用中，一边读你的问题，一边对照上下文里的 Skill 描述，判断该用哪个 Skill，然后读取对应的 SKILL.md 获取详细指令，接着决定是否调用工具——这些都可以在同一轮对话中连贯完成，并不是\"选 Skill 一次、用工具又一次\"的两段式调用。\n\n你可能会担心：每次对话都把所有 Skill 描述塞进上下文，是不是很浪费 token？这就是 Prompt Caching 发挥作用的地方。系统提示词（包括所有 Skill 描述）在多轮对话中会被缓存，后续每一轮不需要重新处理这些内容，既省了时间也省了成本。",
+      "created_at": "Sun Jul 26 03:51:05 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2081225660803010560",
+          "url": "https://pbs.twimg.com/media/HOH_tjGXUAAfjiW.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 234589,
+        "friends_count": 1695,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 37,
+        "reply_count": 18,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2081225156144365861",
+      "text": "RT @aijoey: Grok Build Web UI is live.\n\nI built a local-first dashboard for Grok sessions. Open a fresh Grok CLI and it shows up live, then…",
+      "created_at": "Sun Jul 26 03:48:39 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2080925877919949097",
+        "text": "Grok Build Web UI is live.\n\nI built a local-first dashboard for Grok sessions. Open a fresh Grok CLI and it shows up live, then inspect activity, Git changes, session history, and control agents from one place.\n\nnpx --yes grok-ui\n\nhttps://t.co/7HiJqmUfC8 https://t.co/kuKVAdxNOy",
+        "created_at": "Sat Jul 25 07:59:25 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2080925851751727104",
+            "url": "https://video.twimg.com/ext_tw_video/2080925851751727104/pu/vid/avc1/1280x720/UYZH6byVJXGm4-4U.mp4?tag=12",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "889305080679346178",
+          "name": "Joey",
+          "screen_name": "aijoey",
+          "description": "Home AI lab: 2× DGX Spark · Mac Mini · RTX 4080\nHermes agents · Tools I ship · All things Open Source\nDev Ambassador @Alibaba_Qwen",
+          "followers_count": 3408,
+          "friends_count": 1144,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 133,
+          "favorite_count": 971,
+          "reply_count": 182,
+          "quote_count": 8
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 241032229,
+        "friends_count": 1375,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 134,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2081219220415652110",
+      "text": "Grok Imagine https://t.co/wDMHRZYL0d",
+      "created_at": "Sun Jul 26 03:25:03 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2021386326168195072",
+          "url": "https://video.twimg.com/amplify_video/2021386326168195072/vid/avc1/1080x1530/8259YBqL9cbe-Qu8.mp4?tag=21",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 241032229,
+        "friends_count": 1375,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 654,
+        "favorite_count": 4040,
+        "reply_count": 1285,
+        "quote_count": 118
+      }
+    },
+    {
+      "id": "2081218380321714381",
+      "text": "https://t.co/iVejXuRUq1",
+      "created_at": "Sun Jul 26 03:21:43 +0000 2026",
+      "lang": "zxx",
+      "media": [
+        {
+          "type": "video",
+          "id": "2079982135394631680",
+          "url": "https://video.twimg.com/amplify_video/2079982135394631680/vid/avc1/1920x1080/qZ58vtQQnL08JZ9w.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 241032229,
+        "friends_count": 1375,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 393,
+        "favorite_count": 2340,
+        "reply_count": 428,
+        "quote_count": 22
+      }
+    },
+    {
+      "id": "2081217444186554672",
+      "text": "/dream",
+      "created_at": "Sun Jul 26 03:18:00 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2081118419039203765",
+        "text": "I've been using Grok Build since the first 24-hours it was made available. It is still my favorite agentic coding cli, and there are so many little features I just love.\n\nSo I thought I'd put together a little thread on what makes Grok Build so special, and some features you should try if you haven't yet.\n\nLet's kick it off 🧵",
+        "created_at": "Sat Jul 25 20:44:31 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "19016936",
+          "name": "Morgan",
+          "screen_name": "morganlinton",
+          "description": "cofounder/cto @boldmetrics, mad scientist @vulcanbench, writing https://t.co/Of0FxIXd4N, winter lover - let it snow ❄️",
+          "followers_count": 41753,
+          "friends_count": 953,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 54,
+          "favorite_count": 570,
+          "reply_count": 60,
+          "quote_count": 17
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 241032229,
+        "friends_count": 1375,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 265,
+        "favorite_count": 1912,
+        "reply_count": 426,
+        "quote_count": 37
+      }
+    },
+    {
+      "id": "2081217033543286834",
+      "text": "https://t.co/6NsBfHxGzh",
+      "created_at": "Sun Jul 26 03:16:22 +0000 2026",
+      "lang": "zxx",
+      "media": [
+        {
+          "type": "video",
+          "id": "2080885823449280512",
+          "url": "https://video.twimg.com/amplify_video/2080885823449280512/vid/avc1/720x1280/QA8KNYbGBzQJWZQx.mp4?tag=29",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 241032229,
+        "friends_count": 1375,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3722,
+        "favorite_count": 39267,
+        "reply_count": 2287,
+        "quote_count": 330
+      }
+    },
+    {
+      "id": "2081212600533008770",
+      "text": "RT @wsvn53: After 3-4 months of iteration, Open Minis — \"possibly the best Agent app on your phone\" — has stabilized into a mature architec…",
+      "created_at": "Sun Jul 26 02:58:45 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2081035242715140377",
+        "text": "After 3-4 months of iteration, Open Minis — \"possibly the best Agent app on your phone\" — has stabilized into a mature architecture, now powering tens of thousands of users' daily workflows.\n\nToday we're open sourcing all of it: the full iOS and Android code.\n\nA real on-device AI agent: a native Linux shell, browser automation, extensible skills, persistent memory, and deep system integration.\n\nNow, fork it, feel free to build your own on-device agent now. 🤗\n\nhttps://t.co/9sLRNHDOYd",
+        "created_at": "Sat Jul 25 15:14:00 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "97830312",
+          "name": "Ethan Wang",
+          "screen_name": "wsvn53",
+          "description": "Creator of Open Minis & Scrcpy Remote, hardcore Vibe Coder, hopelessly addicted to building agents and tools.",
+          "followers_count": 4166,
+          "friends_count": 430,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 60,
+          "favorite_count": 430,
+          "reply_count": 29,
+          "quote_count": 10
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 234589,
+        "friends_count": 1695,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 60,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2081210321050435990",
+      "text": "It’s time.",
+      "created_at": "Sun Jul 26 02:49:42 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2081144574500892972",
+        "text": "For the first time in 4.5 billion years, life has a real chance to become multiplanetary\n\nMaybe it’s time https://t.co/enXClgtBom",
+        "created_at": "Sat Jul 25 22:28:27 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2081144564362915841",
+            "url": "https://pbs.twimg.com/media/HOG19HUWMAEGrDg.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1198495865301864448",
+          "name": "Dima Zeniuk",
+          "screen_name": "DimaZeniuk",
+          "description": "Tesla | SpaceX | Starlink | X |\nFree speech\n\nInspired by innovation | Future | Neuralink",
+          "followers_count": 126521,
+          "friends_count": 637,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 108,
+          "favorite_count": 996,
+          "reply_count": 151,
+          "quote_count": 22
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 241032229,
+        "friends_count": 1375,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1251,
+        "favorite_count": 9793,
+        "reply_count": 1569,
+        "quote_count": 159
+      }
+    },
+    {
+      "id": "2081204422281949372",
+      "text": "Great video of Starship launching  https://t.co/QRgpOFR2au",
+      "created_at": "Sun Jul 26 02:26:15 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2081187613160148992",
+          "url": "https://video.twimg.com/amplify_video/2081187613160148992/vid/avc1/1080x1920/DjIltjWbPyk-XJsT.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 241032229,
+        "friends_count": 1375,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1582,
+        "favorite_count": 12833,
+        "reply_count": 1117,
+        "quote_count": 101
+      }
+    },
     {
       "id": "2081202568282169661",
       "text": "You can just talk to Grok Build",
@@ -5488,6 +5856,62 @@
       }
     },
     {
+      "id": "2080692621941342458",
+      "text": "RT @RupertLowe10: Marlon West is one of the bravest people I know. His work on ending the rape gangs, following what happened to his daught…",
+      "created_at": "Fri Jul 24 16:32:33 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2080603926403879130",
+        "text": "Marlon West is one of the bravest people I know. His work on ending the rape gangs, following what happened to his daughter, shows remarkable courage. \n\nI am very proud to support his campaign to become the next mayor of Greater Manchester. https://t.co/4Gyq6PtMkC",
+        "created_at": "Fri Jul 24 10:40:06 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2080603340560355328",
+            "url": "https://video.twimg.com/amplify_video/2080603340560355328/vid/avc1/832x464/OjsjHoTa2zI8Jluu.mp4?tag=29",
+            "bitrate": 832000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1121375429884039175",
+          "name": "Rupert Lowe MP",
+          "screen_name": "RupertLowe10",
+          "description": "Great Yarmouth MP. Ex-Southampton FC Chairman. Businessman. Farmer. Former MEP. Leader, @restorebritain.",
+          "followers_count": 884993,
+          "friends_count": 754,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4079,
+          "favorite_count": 24637,
+          "reply_count": 240,
+          "quote_count": 28
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 241032236,
+        "friends_count": 1375,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4079,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
       "id": "2080692487539007638",
       "text": "𝕏 is the global town square",
       "created_at": "Fri Jul 24 16:32:01 +0000 2026",
@@ -6102,6 +6526,62 @@
         "favorite_count": 37617,
         "reply_count": 2736,
         "quote_count": 170
+      }
+    },
+    {
+      "id": "2080567074762494008",
+      "text": "RT @officialsammyuk: I’ve arrived in Manchester. I’m out tomorrow with Restore Britain and their candidate Marlon West. \n\nBe great to see y…",
+      "created_at": "Fri Jul 24 08:13:40 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2080337698758242471",
+        "text": "I’ve arrived in Manchester. I’m out tomorrow with Restore Britain and their candidate Marlon West. \n\nBe great to see you all! @RestoreBritain https://t.co/8rQzlYWgPN",
+        "created_at": "Thu Jul 23 17:02:12 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2080337558500732929",
+            "url": "https://video.twimg.com/amplify_video/2080337558500732929/vid/avc1/1080x1920/1zyp8oY6u3RE0sv_.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3433128945",
+          "name": "S A M M Y Woodhouse",
+          "screen_name": "officialsammyuk",
+          "description": "Author ‘Just A Child’ • Exposed Rotherham Rape Gang Scandal & UK Government Corruption • Policy & Law Influencer • Restore Britain • The Rape Gang Inquiry Lead.",
+          "followers_count": 218741,
+          "friends_count": 5321,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1237,
+          "favorite_count": 8198,
+          "reply_count": 234,
+          "quote_count": 16
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "",
+        "followers_count": 241032236,
+        "friends_count": 1375,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1237,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
       }
     },
     {
@@ -6740,6 +7220,61 @@
         "favorite_count": 2440,
         "reply_count": 98,
         "quote_count": 34
+      }
+    },
+    {
+      "id": "2080457279975919931",
+      "text": "Gmail 的“管理订阅”功能挺好用，可以看有哪些订阅，直接取消订阅",
+      "created_at": "Fri Jul 24 00:57:23 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2080357642099454213",
+        "text": "Did you know that Gmail has a Manage Subscriptions tab?\n\nYou can view all your active subscriptions and unsubscribe from old newsletters, emails, etc— right from your inbox.\n\nTry it out! (It's quite fun...) https://t.co/heitUNfrbE",
+        "created_at": "Thu Jul 23 18:21:27 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2080357616283459584",
+            "url": "https://pbs.twimg.com/media/HN7qOtRaoAASfDf.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "38679388",
+          "name": "Gmail",
+          "screen_name": "gmail",
+          "description": "News, tips and tricks from the Gmail team. Need help? Fly on over to our Help Center or forum.",
+          "followers_count": 6360821,
+          "friends_count": 112,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 184,
+          "favorite_count": 1666,
+          "reply_count": 129,
+          "quote_count": 42
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 234589,
+        "friends_count": 1695,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 21,
+        "reply_count": 11,
+        "quote_count": 1
       }
     },
     {

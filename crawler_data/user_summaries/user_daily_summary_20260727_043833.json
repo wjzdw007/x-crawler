@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-07-27T04:38:33.979258",
+  "tweet_count": 4,
+  "summary": "**新工具/技术**\n- Open Minis — 一款本地化的 on‑device Agent（iOS/Android）开源工程，包含本地 shell、浏览器自动化、可扩展技能与持久记忆，便于做离线/深度集成的代理应用。\n- Prompt Caching — 把系统提示（包括所有 Skill 描述）缓存以避免每轮重复处理相同上下文，从而降低 token 成本与延迟。\n- Loop Engineering（Agent 闭环）— 强调让 Agent 工作形成闭环（执行→监测→修正/验收）的工程方法，不只是一次性动作。\n- /advisor 模式 — 架构模式：用弱模型执行、强模型做顾问/验收以优化成本与质量的折中方案。\n\n**核心观点/方法论**\n- Skills 在对话一开始作为 system prompt 加载，模型可在一次调用中同时判断该用哪个 Skill 并决定是否调用工具，避免“先选 Skill 再调工具”的双次调用误解。\n- Prompt Caching 是把大段固定系统提示从每轮处理中剥离出来的关键工程手段，能显著节省时间和费用。\n- advisor 模式在理论上提高性价比，但其有效性取决于执行模型的设计能力和主动求助策略，否则可能带来低质量输出或无谓开销。\n- 关于 AGI 的比喻提醒我们：不要被表象和商业叙事迷惑，注意区分“看起来像智能”的输出与真正的理解能力。\n- Loop Engineering 强调工程面的连续性：可落地的 Agent 需要自动化闭环与验证机制，而不是单轮能力展示。\n\n**实践经验/案例**\n- Open Minis 经 3–4 个月迭代，成为稳定架构并支撑数万用户日常工作流，证明本地 Agent 可行且有实际价值。\n- 在实际系统中，把 Skill 元信息放入系统提示并配合 Prompt Caching，可在多轮对话中省下大量 token 与调用延迟，适合产品化部署。\n- advisor 模式的现实风险包括：执行模型设计糟糕、过度自负不求助、或过度依赖顾问导致效率低下；需明确设计/求助/验收的边界与触发条件。\n- 工程细节（缓存、上下文管理、闭环监控）比泛泛讨论 AGI 更能推动 Agent 从概念走向可持续运营。",
+  "metadata": {
+    "original_tweets": 3,
+    "retweets": 1,
+    "media_tweets": 2,
+    "data_hash": "ef72ed1f",
+    "user": "dotey"
+  }
+}

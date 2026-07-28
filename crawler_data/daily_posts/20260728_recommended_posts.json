@@ -1,12 +1,61 @@
 {
   "date": "20260728",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-28T16:04:22.133971",
-  "tweet_count": 211,
-  "unique_tweet_count": 211,
-  "total_crawled": 406,
-  "duplicates_removed": 195,
+  "last_crawl_time": "2026-07-28T19:17:18.868864",
+  "tweet_count": 212,
+  "unique_tweet_count": 212,
+  "total_crawled": 411,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2082148581377720467",
+      "text": "一般来说没必要去省那一点 token，如果是图文、带图表的还是 pdf 最简单省事。\n\n费力去转 Markdown + 图片，看起来省 Token，但是导致信息损耗，本来多模态模型可以一页一页“看”内容，换成markdown+图片，图片、图标部分由于分离出去了反而不利于模型理解上下文导致信息损耗。\n\n再说 Token 消耗，现在 Agent 消耗 Token 的大头，不是输入的 token，而是各种 skills、反复调用工具。\n\n而且有 Prompt Caching，输入的 Token 多一点少一点对于最终成本已经差别没那么大了。",
+      "created_at": "Tue Jul 28 16:58:00 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2082032775021101217",
+        "text": "直接上传PDF给AI会让你多花4倍的token！！\n\n大家可能以为, 把PDF传上到AI，和自己复制粘贴文本到对话框效果一样。但事实上，AI会用贵4倍的视觉能力看一遍你上传的文件。\n\n但为什么AI要浪费4倍TOKEN方式处理文档呢?\n\n因为这么处理能保留排版，表格这些信息, 回答质量会比所有同行高那么一点点。即使是高一点点也意味着第一，而第一永远享受最大的资源。\n\n我们可以用下面这个7.5w star的开源项目，解决这个问题。\n\n它能把 PDF、图片、Office 文档整篇变成 Markdown格式，同时不失去，关键的图像，排版的信息。 这样处理后，直接省下80%的TOKEN！！\n\n之前这种服务,要么按页收费，要么要自己捣鼓配置，很难上手。\n\n有了这个项目后，直接打开网页就能无限使用！！\n\n关注我，每天分享一点实用AI技巧！！\n\nhttps://t.co/dik0EyfWgR",
+        "created_at": "Tue Jul 28 09:17:50 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "452072245",
+          "name": "铁锤人",
+          "screen_name": "lxfater",
+          "description": "我在用 AI 协助我创业，走向自由 github 维护 3w star 项目，写过 1200w 浏览文章，公众号：铁锤人 微信：tiechuiren101，📮：lxfater@gmail.com",
+          "followers_count": 103892,
+          "friends_count": 1340,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 27,
+          "favorite_count": 103,
+          "reply_count": 15,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 234851,
+        "friends_count": 1696,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 36,
+        "reply_count": 5,
+        "quote_count": 1
+      }
+    },
     {
       "id": "2082127138178699766",
       "text": "RT @mayemusk: 👏👏👏 @Starlink",

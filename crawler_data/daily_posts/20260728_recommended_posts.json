@@ -1,12 +1,129 @@
 {
   "date": "20260728",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-28T21:05:01.924969",
-  "tweet_count": 212,
-  "unique_tweet_count": 212,
+  "last_crawl_time": "2026-07-28T22:56:18.146339",
+  "tweet_count": 215,
+  "unique_tweet_count": 215,
   "total_crawled": 412,
-  "duplicates_removed": 200,
+  "duplicates_removed": 197,
   "tweets": [
+    {
+      "id": "2082235315675144569",
+      "text": "MCP 协议今天推出了第五个大版本（版本号 2026-07-28），核心变化：从有状态双向协议变成了无状态的请求/响应协议。\n\n这是 MCP 社区呼声最高的改动。\n\n之前的 MCP 客户端连上来要先握手，服务端要给你一个会话 ID（session ID），后续每次请求都得带着这个 ID。这意味着你的请求被限制在了某一台服务器实例上，不方便做负载均衡。\n\n现在每个请求都是独立的，自带协议版本和客户端信息，可以负载到任何一个实例上。也就是说 MCP 服务器终于可以像普通 HTTP 服务一样部署了，serverless、边缘计算、或者 CDN 后面放一排实例。\n\n那如果业务确实需要跨请求的状态呢？协议的建议是：由工具自己生成一个句柄（handle），让模型在工具调用之间传递。状态放在业务层而不是协议层，模型能看到这个句柄，也能理解要怎么用它。\n\n【其他变化】\n\nMRTR（多轮往返请求）解决中途需要用户输入确认的问题。\n\n比如 Supabase 的 MCP 服务器想在创建项目前告诉你费用，或者在执行删除操作前让你确认。以前这需要维持一个双向流不断开，现在服务端返回“需要输入”状态，客户端带上用户的回答重新发请求即可。\n\n请求头里新增了 Mcp-Method 和 Mcp-Name 两个字段，网关和防火墙可以直接根据请求头做路由和鉴权，不用解析 JSON 请求体。\n\n授权方面做了几项加固，包括要求验证授权服务器的 issuer 参数（堵上了一个授权服务器混淆漏洞）。动态客户端注册（DCR）正式废弃，改用客户端元数据文档（CIMD）。\n\nRoots、Sampling、Logging 三个功能标记为废弃，但至少还能用 12 个月。旧版 HTTP+SSE 传输同样进入废弃轨道。协议首次引入正式的废弃策略，保证最少 12 个月过渡窗口，这对生产环境的团队来说很实际：你可以排期升级，不用被动救火。\n\n【生态与迁移】\n\n四个一级开发工具包（SDK）同步更新：TypeScript、Python、Go、C#。Rust SDK 以 beta 状态跟进。MCP 目前月下载量接近 5 亿次，TypeScript 和 Python SDK 各自累计下载量都超过了 10 亿。\n\nAWS（Amazon Bedrock AgentCore）、Microsoft（Foundry）、Cloudflare（Workers）、Google Cloud 等都已宣布支持新规范。Figma、Supabase、Honeycomb 等工具厂商也在跟进。\n\n新规范有破坏性变更，依赖会话标识符的实现需要改造。SDK 团队表示根据早期测试反馈已经简化了迁移流程，但具体成本因项目而异。如果你现在在生产环境跑着 MCP 服务器，建议先看一遍完整的 changelog 和迁移指南，评估影响面再动手。",
+      "created_at": "Tue Jul 28 22:42:39 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2082235296263942144",
+          "url": "https://video.twimg.com/amplify_video/2082235296263942144/vid/avc1/1280x454/QY1hwqrqym1pXXvK.mp4?tag=29",
+          "bitrate": 832000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2082173429399142616",
+        "text": "Thrilled to announce the MCP 2026-07-28 release. It is one of MCP's biggest yet, built on 18 months of lessons learned.\n\nA few highlights:\n\n★ MCP is now stateless, with semantics for multi-round-trip requests. Serving MCP just got much simpler and more scalable.\n\n★ MCP now has extensions. MCP Apps, Tasks, Enterprise Managed Auth, and more. Domain-specific ways to use MCP, plus room for experimental additions.\n\n★ Python, Typescript, C# (soon) SDKs released a v2.0.0 for the new spec with improved ergonomics!  \n\nBut the biggest highlight for me: this release is a true community effort. Individuals and companies alike — Anthropic, Google, Microsoft, OpenAI, and many others helped shape this specification.\n\nAnd there's much more. Full details: https://t.co/NHd9cQmPCu",
+        "created_at": "Tue Jul 28 18:36:45 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "16012504",
+          "name": "David Soria Parra",
+          "screen_name": "dsp_",
+          "description": "Member of Technical Staff @AnthropicAI. Co-Creator of https://t.co/cn31cNYQD3. Ex-Meta. Playing with computers and tech. https://t.co/yDyCddC26H",
+          "followers_count": 11575,
+          "friends_count": 420,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 32,
+          "favorite_count": 213,
+          "reply_count": 5,
+          "quote_count": 15
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 234847,
+        "friends_count": 1698,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2082230863366934725",
+      "text": "我现在用的最多的模型是：\nClaude Fable 5\nGPT 5.6 Sol\nClaude Opus 4.6\nClaude Opus 5\n---\n\nOpus 5 和 Sonnet 5 一样的毛病，过度思考，token 消耗很厉害，聪明不如 Fable 5，性价比不如 GPT 5.6 Sol，有点两头不沾，所以用的少，现在主要用在 Claude Design 相关任务。\n\nFable 5 虽然贵，但是结果相当靠谱，我会跟它一起讨论技术方案，或者复杂的任务。\n\n其他的脏活累活则给 GPT 5.6 Sol，写作相关的还是 Opus 4.6 最好用。\n\n昨天一个性能优化的任务，GPT 5.6 Sol 做了半天，最后给我悄悄把 16-bit 文本解码改成了 8-bit（图1），数字马上好看了，然后给我交差了😂\n\n最后交给 Fable 5，虽然花了一些时间，但是找到问题根源（图2），还打脸了 GPT 5.6 的优化，最后优化好了。",
+      "created_at": "Tue Jul 28 22:24:58 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2082230715635134464",
+          "url": "https://pbs.twimg.com/media/HOWRzcHW8AAMylC.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2082230753543229440",
+          "url": "https://pbs.twimg.com/media/HOWR1pVWkAAaFrT.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 234847,
+        "friends_count": 1698,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 8,
+        "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2082227259096944689",
+      "text": "OpenAI 开源了 Codex Security\n\nCodex Security 是一个命令行工具（CLI）加 TypeScript 开发工具包（SDK），用 AI 自动扫描代码仓库里的安全漏洞。它能找到问题、验证问题是否真实存在，还能生成修复补丁。\n\n这个工具之前一直以 Codex 插件的形式存在，但是闭源的。\n\n六月底就有人在 GitHub 上开了 issue 要求开源，理由是安全不该被藏着。现在 OpenAI 把它拆成了独立项目，以 Apache-2.0 协议开源，项目地址： https://t.co/YZDFXg885w。\n\nCodex 插件版和独立版有什么区别？\n\n插件适合在你的 Codex 项目中，直接调用插件做安全扫描。\n\n独立版是给安全团队用的，能批量扫整个组织的所有仓库，支持历史记录、扫描结果去重、误报追踪，还能接进 CI 流水线。\n\n技术细节方面，默认使用 gpt-5.6-sol 模型做高推理强度扫描，需要 Node.js 22+ 和 Python 3.10+，支持 macOS、Linux 和 Windows。扫描结果可以导出为 SARIF、CSV 或 JSON 格式。还有个 install-hook 命令，可以在每次 git commit 前自动扫描改动过的代码，发现高危问题直接拦住提交。\n\n在公开测试阶段，Codex Security 扫描了超过 120 万次提交（commit），在 OpenSSH、GnuTLS、PHP、Chromium 等开源项目中发现了 792 个严重漏洞和 10561 个高危漏洞。有第三方测试对比过，在 16.2 万行生产代码上，Codex Security 的真阳性率是 74%，Snyk 是 28%，Semgrep 是 20%。OpenAI 开源了 Codex Security",
+      "created_at": "Tue Jul 28 22:10:39 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 234847,
+        "friends_count": 1698,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 7,
+        "reply_count": 4,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2082148581377720467",
       "text": "一般来说没必要去省那一点 token，如果是图文、带图表的还是 pdf 最简单省事。\n\n费力去转 Markdown + 图片，看起来省 Token，但是导致信息损耗，本来多模态模型可以一页一页“看”内容，换成markdown+图片，图片、图标部分由于分离出去了反而不利于模型理解上下文导致信息损耗。\n\n再说 Token 消耗，现在 Agent 消耗 Token 的大头，不是输入的 token，而是各种 skills、反复调用工具。\n\n而且有 Prompt Caching，输入的 Token 多一点少一点对于最终成本已经差别没那么大了。",

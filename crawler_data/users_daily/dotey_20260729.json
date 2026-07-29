@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 234997,
+    "followers_count": 235000,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260729",
-  "last_updated": "2026-07-29T19:07:27.822634",
-  "tweet_count": 7,
+  "last_updated": "2026-07-29T20:51:25.121973",
+  "tweet_count": 10,
   "tweets": [
     {
       "id": "2082280325040750998",
@@ -298,6 +298,122 @@
         "retweet_count": 24,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2082557559177941304",
+      "text": "今年以来，我在使用 Coding Agent 方面有一个很大的变化，就是从 TL（Teach Lead） 的角色变成了 EM（Engineering Manager） 的角色。\n\n这两个角色主要差别在技术参与深度多少。\n\n之前我更像一个 TL，虽然不是说事必躬亲，但是系统设计、代码审查什么的肯定是少不了的，说到底还是对 AI 写的代码不放心。\n\n这样虽然质量更有保障，但是人会成为 Agent 的瓶颈，很多事情需要人去决策，细节需要人去掌握。\n\n转折点在 Fable 5 前后，我发现 AI 写的代码质量已经相当可以了，只要稍加验证就不会有太大偏离，所以我越来越少的去干预 AI 写代码，而是会更站在全局去看一个项目：\n\n决定项目怎么做，去验收好结果。\n\n这极大的释放了 Agent 的生产力，大部分时候我想好要做什么功能，先和 Agent 一起做一个技术方案，然后确认方案没问题后，用 /goal 加上方案，让 Agent 去执行，写代码和自动化测试，等做好再去验收下功能，代码不怎么细看。\n\n有 Bug 了就是把 Bug 描述给 Agent 让它自己去重现解决，并且让 Agent 补上相关测试覆盖，修复了后人再去验证一下。\n\n这样还有一个好处，就是在技术选型时，不会局限于你自己的喜好和擅长。\n\n当你是 TL 的角色是，还是会有点过度关注技术实现，包括技术选型会偏向你自己熟悉的喜欢的，而不一定是最适合的。\n\n当你是 EM 的角色做技术选型，就不再关注自己擅长什么，而是什么技术最适合项目。\n\n我因为前端熟悉，所以最开始开发字幕翻译 App 时，就优先考虑 Electron 这样的技术栈，因为自己熟悉，有问题能解决也能写的出来。\n\n后来发现 Electron 性能很难满意，就换成了 Swift + AppKit 原生技术栈，本来我 Swift 是不熟悉的，但有 AI 辅助，整个过程毫无压力。\n\n现在在设计 BaoCut 下一个大版本的时候，要考虑跨平台方案，首选是 Rust，哪怕我从来没写过一行 Rust 代码，但我知道这是一个很好的跨平台选择。\n\n目前基于 Rust 的第一个版本已经写完了，整个过程几乎没有任何语言上的障碍。\n\n通过这样的模式我在开发 BaoCut 的时候，基本上可以每天一个小版本迭代。https://t.co/Bz8CeNQ2wb\n\n这两天速度慢下来了，是因为需要构思新的大版本，这时候人就又成了瓶颈了：如果人没想清楚该做什么，Agent 再厉害也帮不上。",
+      "created_at": "Wed Jul 29 20:03:08 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1745472243843334593",
+        "text": "通常北美的工程技术相关的职业分成以下五个类别：\n\n开发工程师 SE / SDE(Software Engineer / Software Development Engineer)\n工程经理 EM / SDM(Engineering Manager / Software Development Manager)\n技术主管 TL / TLM (Tech Lead / Tech Lead Manager)\n技术项目经理 TPM (Technical Program Manager)\n产品经理 PM (Product Manager)\n\nhttps://t.co/6M4zTgHj28",
+        "created_at": "Thu Jan 11 15:46:26 +0000 2024",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1745472125874450432",
+            "url": "https://pbs.twimg.com/media/GDkppowXsAATtEQ.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1745472153431027712",
+            "url": "https://pbs.twimg.com/media/GDkprPaXsAAVDqK.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 235000,
+          "friends_count": 1700,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 102,
+          "favorite_count": 332,
+          "reply_count": 5,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 9,
+        "reply_count": 2,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2082558900876779987",
+      "text": "之所以我现在不用 Hook（我用过一段时间），是因为hook是在任何任务结束都会触发，但是大多数时候你不需要去 commit，不如让 Agent 自己去决定是不是要 commit，而且只 commit 相关的",
+      "created_at": "Wed Jul 29 20:08:28 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2082560653353501071",
+      "text": "这种自我优化代码的任务并没有太大挑战，也不是模型的自我进化。\n\n模型的自我进化意味着它能修改自己的权重参数，K3 做不到吧？\n\n而 Cline 做的事只是让模型去优化 Harness，而且它有清晰的 Benchmark，这是 Agent 最擅长的事：有清晰的验收标准，反复尝试反复优化，直到达到一个更好的分数。\n\n这样的 Harness 优化出来，只能说对于 Cline 自己的 Benchmark 效果更好了，也不见得就是真的效果多好：）",
+      "created_at": "Wed Jul 29 20:15:26 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2082559636079607808",
+          "url": "https://pbs.twimg.com/media/HOa89IQXgAAA1Ou.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2082557359218401565",
+        "text": "这个可能真的就是进入 AI 自指自我进化新阶段了。。。\n\nCline 团队让 Kimi K3 进行自我迭代改进，结果只花了17个小时，Terminial Bench 评测的分数上从 77.5% 升到了88.8%，费用上从每轮79美元降低到了每轮49.8美元。。。\n\n感觉留给人类的时间真的不多了。。。🙃 https://t.co/CLHjgcfKNF",
+        "created_at": "Wed Jul 29 20:02:21 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2082556453160701952",
+            "url": "https://pbs.twimg.com/media/HOa6D29XUAAX7hl.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "100399047",
+          "name": "Tz",
+          "screen_name": "Tz_2022",
+          "description": "品味是一种异常值。→ tastes.md\nAI is the steam engine of the mind. \nAI 是心灵的蒸汽机。科幻是现实的有效坍塌。加速正在被加速。看，那千尺海啸正扑面而来，而我们还在海滩上捡垃圾。\n念念不忘，必有回响。",
+          "followers_count": 24422,
+          "friends_count": 1597,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
         "quote_count": 0
       }
     }

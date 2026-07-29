@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-07-29T04:13:33.647457",
+  "tweet_count": 7,
+  "summary": "**新工具/技术**（如有）\n- Codex Security：OpenAI 开源的代码安全扫描工具，提供 CLI + TypeScript SDK，能发现、验证漏洞并生成修复补丁，支持 SARIF/CSV/JSON 导出和 install-hook，默认用 gpt-5.6-sol 做高推理强度扫描。\n- MCP 2026-07-28：MCP 协议升级为无状态请求/响应并加入 MRTR、Mcp-Method/Mcp-Name 等请求头，便于负载均衡、serverless/边缘部署，四大主流 SDK 已同步更新。\n- 常用模型矩阵：Claude Fable 5（可靠、适合复杂技术讨论）、GPT 5.6 Sol（性价比高、适合“脏活累活”）、Claude Opus 4.6（写作最好用）；Opus 5 则有过度思考且 token 消耗高的问题。\n\n**核心观点/方法论**（如有）\n- 内部工具慎重自研：首版容易但长期维护成本高，除非能显著降低长期成本或产生核心差异，否则优先考虑成熟 SaaS。\n- 文档输入以保留排版为主：对图文/表格丰富的资料，直接上传 PDF 更利于多模态模型理解；别只盯着省输入 token，Agent 的主要开销往往是技能/工具的反复调用。\n- Agent 胜在插件生态：通用 Agent 会吞吃垂直 Agent，但真正的护城河是丰富的 Skill/插件生态与集成能力，而非仅靠开源或能换模型。\n- 模型选型以任务和成本为准：将复杂推理交给更贵但更准的模型（Fable 5），低成本重复工作交给性价比高的模型（GPT 5.6 Sol）。\n- 协议无状态化，状态上移业务层：MCP 推荐用 handle 在工具间传递状态，协议保持无状态以利于横向扩展和网关路由鉴权。\n\n**实践经验/案例**（如有）\n- 自建 JIRA 案例：某团队三月自研替代 SaaS，七月回归 Linear，说明“能做”≠“值得做”，维护成本会吞噬实际工作精力。\n- Codex Security 测试数据：公开测试扫描 >120 万次 commit，发现 792 个严重漏洞、10561 个高危漏洞；在 16.2k 行代码对比测试上真阳性率 74%，明显优于 Snyk（28%）和 Semgrep（20%）。\n- 模型协同调试实例：GPT 5.6 Sol 做了快速、表面可行的优化（16-bit→8-bit），但最终由 Fable 5 找到根因并给出更可靠修复，说明分层/组合使用模型能提高效率并降低风险。\n- 给小团队的建议：不必去拼通用 Agent，机会更多在于做差异化的插件/Skill、连接器和良好的集成与迁移支持（利用 MCP/SDK 生态）。",
+  "metadata": {
+    "original_tweets": 6,
+    "retweets": 1,
+    "media_tweets": 2,
+    "data_hash": "26c5d674",
+    "user": "dotey"
+  }
+}

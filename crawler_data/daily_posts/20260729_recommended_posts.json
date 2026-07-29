@@ -1,12 +1,85 @@
 {
   "date": "20260729",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-07-29T17:12:10.178282",
-  "tweet_count": 236,
-  "unique_tweet_count": 236,
-  "total_crawled": 435,
+  "last_crawl_time": "2026-07-29T19:07:27.796290",
+  "tweet_count": 237,
+  "unique_tweet_count": 237,
+  "total_crawled": 436,
   "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2082531496212975728",
+      "text": "RT @Pluvio9yte: 兄弟们，AI视频工作流到现在经过高强度的更新全部完结了，我还没更新完，前几期就已经上闲鱼了\n如果你想吃上抖音视频号这碗饭，推荐看一下！\n\n1. 必看：Codex + Hyperframes + HeyGen +声音克隆：全部开源❗如何零基础开始自…",
+      "created_at": "Wed Jul 29 18:19:34 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2082482018362032549",
+        "text": "兄弟们，AI视频工作流到现在经过高强度的更新全部完结了，我还没更新完，前几期就已经上闲鱼了\n如果你想吃上抖音视频号这碗饭，推荐看一下！\n\n1. 必看：Codex + Hyperframes + HeyGen +声音克隆：全部开源❗如何零基础开始自媒体变现\nhttps://t.co/RO5YAzFeHd\n\n2. 我的 55 个 AI视频 Skill 全部开源，这是每一个的用法\nhttps://t.co/uiAqGVK6q4\n\n3. 从 MiniMax 到本地声音克隆，再到数字人：一个人的 AI 视频生产线是怎么跑起来的\nhttps://t.co/CpDaWabzXx\n\n4, 用代码做视频，HyperFrames 和 Remotion 到底该选哪个\nhttps://t.co/IDOcZ3KZX0\n\n5. 我测试了5个声音克隆项目，最后留下了这一个\nhttps://t.co/s8EBfXTg7c\n\n6. 如何从零开始打造自己的爆款监控系统\nhttps://t.co/we1Csiir9N\n\n后面就是抛砖引玉，等大家逐步优化，看看能不能做出来更精美动效更多的视频，除去PPT的感觉",
+        "created_at": "Wed Jul 29 15:02:58 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2082386081794961733",
+          "text": "https://t.co/0PZCB5fDQH",
+          "created_at": "Wed Jul 29 08:41:45 +0000 2026",
+          "lang": "zxx",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1667439202357899267",
+            "name": "雪踏乌云",
+            "screen_name": "Pluvio9yte",
+            "description": "📌 聚焦：AI & Vibe coding & Prompt & Agent \n🌏 在做：创业 | Web出海 | Web3\n🌊 持续分享AI编程、AI工具、出海干货和创业经验",
+            "followers_count": 43483,
+            "friends_count": 994,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 65,
+            "favorite_count": 388,
+            "reply_count": 30,
+            "quote_count": 2
+          }
+        },
+        "user": {
+          "id": "1667439202357899267",
+          "name": "雪踏乌云",
+          "screen_name": "Pluvio9yte",
+          "description": "📌 聚焦：AI & Vibe coding & Prompt & Agent \n🌏 在做：创业 | Web出海 | Web3\n🌊 持续分享AI编程、AI工具、出海干货和创业经验",
+          "followers_count": 43483,
+          "friends_count": 994,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 24,
+          "favorite_count": 129,
+          "reply_count": 12,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 234997,
+        "friends_count": 1699,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 24,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2082505782440902700",
       "text": "在 AGENTS/CLAUDE MD 里面加一句：\nEvery implementation task that changes files MUST end with a git commit before the final response.\n\n- Inspect `git status` before editing and treat pre-existing or concurrent changes as user-owned.\n- Review the final diff and run proportionate verification before committing.\n- Stage only files or hunks that belong to the current task. Never bundle unrelated changes unless the user explicitly asks.\n- Use a concise descriptive commit message on `main`, report the commit hash, and do not push, amend, or rewrite history unless asked.\n- Read-only tasks and tasks with no file changes do not create empty commits.",

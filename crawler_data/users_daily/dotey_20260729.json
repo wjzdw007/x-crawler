@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 234980,
+    "followers_count": 234989,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260729",
-  "last_updated": "2026-07-29T15:50:27.409739",
-  "tweet_count": 5,
+  "last_updated": "2026-07-29T17:12:10.208631",
+  "tweet_count": 6,
   "tweets": [
     {
       "id": "2082280325040750998",
@@ -196,6 +196,45 @@
         "retweet_count": 4,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2082505782440902700",
+      "text": "在 AGENTS/CLAUDE MD 里面加一句：\nEvery implementation task that changes files MUST end with a git commit before the final response.\n\n- Inspect `git status` before editing and treat pre-existing or concurrent changes as user-owned.\n- Review the final diff and run proportionate verification before committing.\n- Stage only files or hunks that belong to the current task. Never bundle unrelated changes unless the user explicitly asks.\n- Use a concise descriptive commit message on `main`, report the commit hash, and do not push, amend, or rewrite history unless asked.\n- Read-only tasks and tasks with no file changes do not create empty commits.",
+      "created_at": "Wed Jul 29 16:37:24 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2082374981124825244",
+        "text": "我一定要教会我们团队的人怎么用git\n\n现在ai改了一堆代码，\n然后一个项目里完全没有提交过任何git状态\n他妈的改天改到大动脉，自己都不知道改了啥",
+        "created_at": "Wed Jul 29 07:57:38 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1567179325551812609",
+          "name": "Xiangyu 香鱼🐬",
+          "screen_name": "xiangyuli",
+          "description": "Neural scientist diving deep into AI | Brain explorer | 计算机民科 | Email to xiangyuli997@gmail.com",
+          "followers_count": 28315,
+          "friends_count": 2356,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 100,
+          "reply_count": 45,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 31,
+        "reply_count": 3,
         "quote_count": 0
       }
     }

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 235111,
+    "followers_count": 235115,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260730",
-  "last_updated": "2026-07-30T17:22:45.505778",
-  "tweet_count": 5,
+  "last_updated": "2026-07-30T19:19:22.689541",
+  "tweet_count": 7,
   "tweets": [
     {
       "id": "2082622396796694815",
@@ -257,6 +257,105 @@
       "stats": {
         "retweet_count": 0,
         "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2082882727414464599",
+      "text": "AI 生成 PPT 是不是 HTML 格式最合适这个话题很有意思，感谢 @wangyuanzju 认真的测试。\n\n首先我承认 HTML 肯定是不够完美的，会出这样格式错误的问题，可能需要人工二次纠正。\n\n然后得说清楚咱们定位不一样，我这是给个人用的 Skill 你是做通用产品，那么对成本的敏感度会不一样。\n\n接着我就要说一下我思考的维度：\n\n1. 用户在乎的是好看，或许还要能编辑\n\nCodex 有一个很强的直接操作原生 PPTX 的插件，但是我不爱用，因为做出来的太难看了，拿不出手！\n\n然后直接 AI 出图，那做出来的 PPT 是最好看的，但是没法编辑，只能修改提示词重新抽卡，偶尔还会有些文字错误\n\n折中下来 HTML 做出来就好最好的，还能编辑。\n\n2. 选 AI 最熟悉训练最多的方式\n\n发明一个格式让 AI 生成中间格式，再把中间格式翻译成 PPTX 本身是没问题的，但是这个格式一定要 AI 最熟悉的训练最多的，做出来好看的。\n\n如果你用一种 AI 没训练过的 JSON 格式、XML 格式，加上 lint 脚本，当然能做出来完美的转换，但是它会有 HTML 好看吗？是不是只能有有限的几种模板可以选择？\n\n比如我最近在做字幕和视频剪辑相关，所需要的数据格式我也一样是优先考虑 HTML + React 组件这种 AI 很熟悉并且能做出来好看效果的格式。最终把这种中间格式变成视频。",
+      "created_at": "Thu Jul 30 17:35:14 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2082745150837584183",
+        "text": "因为宝玉说HTML/CSS就是最佳的做PPT的IR，试用了一把baoyu-design，那我们经典的12页麦肯锡风格脚本。结果：成本比guizang低将近一半，12页PPT，平均每页0.5刀，但比remio还是高1.5倍；时间超过11分钟，比remio慢一倍。\n\n关键是最后还有4个页面有严重的问题没搞定（如图，有三页是很多文字都没了，将近空白，有一些架构屋明显太小）。这些问题，Claude Code又查了好久才知道怎么回事。\n\n用HTML/CSS做PPT，感觉先得烧个香，因为你就指望它一次过。如果一次过的话，说实话生成效果还是蛮漂亮的，但问题是它很难一次过，而它没有一次过的时候，AI查问题就折腾了，因为CSS的机制太灵活，很多机制是不直观的，比如这次的问题，AI最后给出的解释是：\n\n确认了，这就是 bug 本身：<section data-label=\"Cover\"> 标签上没有 on-navy class，on-navy 只加在了内层的 <div class=\"frame cover on-navy\"> 上。\n\n但 CSS 规则是：\nsection[data-label].on-navy { background: var(--navy); color: var(--paper-ink); }\n\n这条选择器要求 on-navy 加在 <section> 元素本身上才会生效。由于实际写在了子元素 .frame 上，<section> 保持默认浅色背景 var(--paper)，而 .cover-title 等文字颜色却因为在 .on-navy 后代作用域内被设置成了浅色（.on-navy .kicker { color: var(--gold); }、.on-navy .page-title { color: var(--paper-ink); } 这类后代选择器，只要祖先链上任意元素有 on-navy 就能命中）——于是造成了浅色文字画在浅色背景上，视觉上完全隐形。\n\n你能看明白吗？\n\n上次试用guizang skill的时候，也是花大量时间在调问题上，比如有个过程是这样的：\n\n第 10 页的时间线圆点在渲染后不可见。完整定位过程耗时约 47 秒，经过 5 步排查：\n\n视觉发现\"看不见圆点，只有虚线\"\n猜测是动效 data-anim 状态问题\n排除动效，发现 .tl-node 本身没被 [data-anim] 选中\n才真正定位根因：.dot 是 <span>，默认 display:inline，width/height 在 inline 元素上不生效\n还要再检查另一处同模式的元素会不会也中招——靠对比另一页截图\"渲染正常\"，反推出那处恰好因为父容器是 flex 才侥幸没坏\n\n修复动作本身只用了几秒（加一个 display:block），定位用了近一分钟。\n\n这就是CSS这套机制的设计问题。CSS的为了让工程师能够少写代码，很多机制不是看一眼就知道效果的，要做很多运算。\n\n我们的经验，给LLM的DSL，要尽可能的做到信息的局部性，尽量不要有“幽灵般的远程作用”，要尽量的做到所见即所得，要描述对象和状态而非过程。这里面有很多门道，我们也是刚入门。",
+        "created_at": "Thu Jul 30 08:28:34 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2082741231931863040",
+            "url": "https://pbs.twimg.com/media/HOdiHZhbsAATVtO.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2082741491567607808",
+            "url": "https://pbs.twimg.com/media/HOdiWgvawAAV94U.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2082741505006145536",
+            "url": "https://pbs.twimg.com/media/HOdiXSzakAASng2.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2082741602804793344",
+            "url": "https://pbs.twimg.com/media/HOdic_IbgAA-q_E.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "25466242",
+          "name": "WY",
+          "screen_name": "wangyuanzju",
+          "description": "PhD, Founder @remio_ai | Agent with Personal Memory, Best Native AI Slides PH #1 | ex VP of NetEase | LinkedIn: https://t.co/IcuIfraes1",
+          "followers_count": 7320,
+          "friends_count": 440,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 12,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 7,
+        "reply_count": 13,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2082884953709129740",
+      "text": "为什么我觉得 HTML 是做 PPT 的最佳格式\nhttps://t.co/pBEY4HFKbV",
+      "created_at": "Thu Jul 30 17:44:05 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2082882727414464599",
+        "text": "AI 生成 PPT 是不是 HTML 格式最合适这个话题很有意思，感谢 @wangyuanzju 认真的测试。\n\n首先我承认 HTML 肯定是不够完美的，会出这样格式错误的问题，可能需要人工二次纠正。\n\n然后得说清楚咱们定位不一样，我这是给个人用的 Skill 你是做通用产品，那么对成本的敏感度会不一样。\n\n接着我就要说一下我思考的维度：\n\n1. 用户在乎的是好看，或许还要能编辑\n\nCodex 有一个很强的直接操作原生 PPTX 的插件，但是我不爱用，因为做出来的太难看了，拿不出手！\n\n然后直接 AI 出图，那做出来的 PPT 是最好看的，但是没法编辑，只能修改提示词重新抽卡，偶尔还会有些文字错误\n\n折中下来 HTML 做出来就好最好的，还能编辑。\n\n2. 选 AI 最熟悉训练最多的方式\n\n发明一个格式让 AI 生成中间格式，再把中间格式翻译成 PPTX 本身是没问题的，但是这个格式一定要 AI 最熟悉的训练最多的，做出来好看的。\n\n如果你用一种 AI 没训练过的 JSON 格式、XML 格式，加上 lint 脚本，当然能做出来完美的转换，但是它会有 HTML 好看吗？是不是只能有有限的几种模板可以选择？\n\n比如我最近在做字幕和视频剪辑相关，所需要的数据格式我也一样是优先考虑 HTML + React 组件这种 AI 很熟悉并且能做出来好看效果的格式。最终把这种中间格式变成视频。",
+        "created_at": "Thu Jul 30 17:35:14 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 235115,
+          "friends_count": 1700,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 7,
+          "reply_count": 13,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
       }

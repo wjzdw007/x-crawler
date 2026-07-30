@@ -1,0 +1,118 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 235009,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260730",
+  "last_updated": "2026-07-30T01:58:05.263135",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2082622396796694815",
+      "text": "挺有趣 https://t.co/V2i516MFgs",
+      "created_at": "Thu Jul 30 00:20:47 +0000 2026",
+      "lang": "ja",
+      "media": [
+        {
+          "type": "video",
+          "id": "2082622157746470912",
+          "url": "https://video.twimg.com/amplify_video/2082622157746470912/vid/avc1/1920x1080/IF4KPZKq5jhcJUxX.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2082231281941913851",
+        "text": "I used AI to explain the Open Model Wars, with fruit. https://t.co/QvUhpRFfN5",
+        "created_at": "Tue Jul 28 22:26:38 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2082230936083841024",
+            "url": "https://video.twimg.com/amplify_video/2082230936083841024/vid/avc1/1920x1080/HHDbdYRqR-fu5FKj.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "22730423",
+          "name": "Charles Curran",
+          "screen_name": "charliebcurran",
+          "description": "Filmmaker // Director of See Know Evil // Menace Studio",
+          "followers_count": 85921,
+          "friends_count": 4191,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 337,
+          "favorite_count": 3200,
+          "reply_count": 189,
+          "quote_count": 126
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 17,
+        "reply_count": 4,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2082643908144615771",
+      "text": "AI 生成 PPT 这事我有发言权，我做过两个还颇受欢迎的 PPT Skill 版本，一个是纯图片的（baoyu-slide-deck skill），一个是 HTML 但是能转原生 PPTX（baoyu-design）。\n\n我的结论是要设计效果好并且方便编辑，一定还要是 HTML + CSS，因为你要自己设计一套中间格式，大概率是 AI 不友好的，那么设计出来的不会多好看，或者说只能组合出有限的风格样式，毕竟 AI 没丰富训练过。但现在 Claude Opus 这样的模型做 HTML 很漂亮。\n\n或者说 HTML 就是最佳中间格式。\n\n如果要转原生 PPTX，那么就需要是有约束的 HTML + CSS，这样就能兼顾美观和原生。\n\n这是我前不久用 baoyu-design skill 做的一个 PPT：\nhttps://t.co/yxvhbb3bGp\n\n基本上是 1:1 还原成 PPTX 没有任何问题。\n\n从美观程度来说 Opus 模型效果最好，比 GPT 5.6 要好，但是 GPT 的画图模型很好，可以配合着用来画图。\n\n比如我这个 Slides 就是用 Claude Code + Opus 4.8 设计，用 baoyu-image-gen Skill 调用 Codex 画图。\n\n至于成本，不是每天大量做，差别不大，重点是效果要好。\n\n推荐试试看：https://t.co/d2EaYV6q7j",
+      "created_at": "Thu Jul 30 01:46:16 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2082641450798366720",
+          "url": "https://pbs.twimg.com/media/HOcHXX1XQAAi7U9.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2082641662853906432",
+          "url": "https://pbs.twimg.com/media/HOcHjtzWAAALq17.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2082636910485492211",
+        "text": "上一条说到remio做PPT很专业，我觉得做原生PPT，我们应该是最专业的，而大部分业界产品做PPT的路线是错的。\n\n这事也挺好玩的。之前在网易的时候，最后几年我们团队内部沟通是要求不用PPT的，因为磨PPT太浪费时间。但我们做了remio之后，确实发现做PPT的需求太普遍，所以就扎根到解析和做PPT里了。\n\n要做好PPT，关键是要设计好一种合适的DSL或IR，让模型像写Markdown那样自然，而且看到IR就基本能知道效果。\n\n在这一点上，业界很多产品的做法就是不对的。\n\n比如特别多产品和SKILL是用HTML和CSS的，这就做不好也费钱，因为HTML的非绝对定位和CSS的selector等机制都会使得语言和效果脱节，所以容易写出来效果有问题，调试问题容易折腾。这一点上我们和guizang等基于HTML的SKILL做过对比，基本上remio会快一倍，成本低的更多。\n\n再比如很多产品是基于操作PPT的软件包写代码来实现，这些软件包的代码描述的很多时候是过程而非结果，语言也不够精炼，这样质量和效率也就自然做不好。remio和Claude Code比速度快一两倍，成本只有1/3，原因就在这里。\n\n最正确的路是设计一种精炼直观的IR，并且做到往返高保真，也就是说模型用这个IR生成的PPT，解析后读过来还是这个IR。往返保真这点特别重要，否则已有PPT就没法修改，对生成而言，模型写的时候是一个东西，读过来突然变成另一个东西，模型就被搞晕，不自信了，不知道自己写的对不对。\n\n但往返保真的工作量特别大，PPT的格式及其复杂，把各种PPT元素都解析成IR的工作量是很夸张的，我们做了九个月，算是做了个八成，也还没做完。\n\n走在这条路上的，业界我们除了我们，也就ppt master。ppt master是用svg作为IR。svg还是比较合适的，因为它是绝对定位布局，语法也精炼，模型也会用。但svg有个很大的问题是文本不会排版，这就要求生成的时候模型得把每个换行都算好，要是改一个字后面所有换行都得重算。这是svg路线的硬伤。当然ppt master要做的工作还有很多，最大的一块是解析已有ppt到svg的功能它才开始，这块的工作量是极大的。",
+        "created_at": "Thu Jul 30 01:18:27 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "25466242",
+          "name": "WY",
+          "screen_name": "wangyuanzju",
+          "description": "PhD, Founder @remio_ai | Agent with Personal Memory PH #1 | ex VP of NetEase | LinkedIn: https://t.co/IcuIfraes1",
+          "followers_count": 7277,
+          "friends_count": 438,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 4,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 10,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    }
+  ]
+}

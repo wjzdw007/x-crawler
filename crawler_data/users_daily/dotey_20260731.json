@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 235138,
+    "followers_count": 235178,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260731",
-  "last_updated": "2026-07-31T06:41:13.508181",
-  "tweet_count": 2,
+  "last_updated": "2026-07-31T10:36:15.797001",
+  "tweet_count": 3,
   "tweets": [
     {
       "id": "2083014693765984324",
@@ -80,6 +80,51 @@
         "favorite_count": 113,
         "reply_count": 32,
         "quote_count": 7
+      }
+    },
+    {
+      "id": "2083087254101086539",
+      "text": "DeepSeek V4-Flash 正式版 API 上线，原生适配 Codex\n\nDeepSeek 今天把 V4-Flash 从预览版升级为正式版 API，版本号 0731。模型架构和参数规模没变，还是 284B 总参数、13B 激活的混合专家架构，改动集中在后训练上。\n\n升级的核心是智能体（Agent）能力。DeepSeek 的说法是“多项 Agent 基准成绩大幅超过此前的 V4-Pro-Preview”。这句话的意思是，便宜的那个模型（Flash）经过后训练调优之后，在编程和工具调用任务上反超了贵的那个模型（Pro）的预览版。Pro 的正式版还没出，所以这个对比有时间差，但趋势本身值得关注：后训练对智能体场景的提升空间可能比很多人想的大。\n\n另一个看点是 V4-Flash 现在原生支持 Responses API 格式，专门针对 OpenAI 的 Codex 做了适配。Codex 是 OpenAI 的 AI 编程助手，覆盖命令行工具（CLI）、ChatGPT 桌面端和 VS Code 扩展三个入口。之前 DeepSeek 的 API 只兼容 OpenAI ChatCompletions 和 Anthropic 两种格式，想接 Codex 得走代理转换。现在这个中间层不需要了，DeepSeek 甚至提供了一键配置脚本，跑完之后 Codex 所有客户端自动切换到 DeepSeek 模型。\n\n你可以用每百万 Token 输入 0.14 美元、输出 0.28 美元的价格跑 AI 编程任务，同时享受 100 万 Token 的上下文窗口。做个对比，Codex 默认使用的 OpenAI 自家模型，同等量级的价格要贵上一个数量级。对于跑大量 Agent 循环的编程任务来说，Token 成本不是差个百分比的问题，是完全不同的成本结构。\n\n有两点需要注意：\n第一，这次只升级了 API 接口，DeepSeek 的 App 和网页端模型没有变化，普通用户暂时感知不到区别。\n第二，V4-Pro 的正式版还没发布，官方只说\"尽快上线\"，具体时间未知。",
+      "created_at": "Fri Jul 31 07:07:57 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2083084415157022911",
+        "text": "🚀 DeepSeek-V4-Flash Official API is now LIVE in public beta!\n\n🔷 We’ve massively upgraded its Agent capabilities—benchmark scores are now far surpassing the V4-Pro-Preview. Check out the massive performance leap below! 👇\n🔷 The official V4-Flash now natively supports the Responses API format and is fully adapted for Codex!\n\nCheck out the configuration details in our official API docs: https://t.co/smCwQZMeiq",
+        "created_at": "Fri Jul 31 06:56:41 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2083083524001914880",
+            "url": "https://pbs.twimg.com/media/HOiZba2aYAAozFz.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1714580962569588736",
+          "name": "DeepSeek",
+          "screen_name": "deepseek_ai",
+          "description": "Unravel the mystery of AGI with curiosity. Answer the essential question with long-termism.",
+          "followers_count": 1055733,
+          "friends_count": 0,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1370,
+          "favorite_count": 10239,
+          "reply_count": 806,
+          "quote_count": 1003
+        }
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 117,
+        "reply_count": 42,
+        "quote_count": 1
       }
     }
   ]

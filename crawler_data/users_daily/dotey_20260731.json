@@ -1,0 +1,65 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 235116,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260731",
+  "last_updated": "2026-07-31T02:23:02.399727",
+  "tweet_count": 1,
+  "tweets": [
+    {
+      "id": "2083014693765984324",
+      "text": "一位刚走 OpenAI 的软件工程师面试完全流程的候选人在 Reddit 上分享了详细经历。面试共五到六轮，整体偏向分布式系统能力，和传统大厂刷算法题的路子差别很大，面试加了一个新环节：考你指挥 AI 写代码的能力。\n\n招聘电话先聊你对 AI 方向的判断，建议提前读 OpenAI 的公司章程。然后两轮各 60 分钟的技术面：一轮写代码（带版本管理的键值存储），一轮系统设计（有容错机制的任务调度器）。\n\n接着是 48 小时的 take-home 项目，要交付一个能跑的系统。这位候选人拿到的题是分布式 webhook 投递，要实现重试逻辑和死信队列。做完后面试官逐行过代码，每个设计决策都得解释。\n\n现场面试四轮：两轮编程（一轮渐进式多阶段题，一轮偏系统底层，考 Python 的生成器、异步和并发），一轮系统设计（题目是\"设计 ChatGPT\"，重点看 GPU 分配、自动扩缩容和分布式协调），一轮行为面。行为面不收软技能套话，要的是真实的技术领导力案例，在压力下怎么推动跨团队达成共识。\n\n最有意思的是还在 beta 阶段的第六轮：Agentic Coding Round。给你一个现有代码库加一个靠手写搞不定的大问题，要求你用 AI Coding Agent 来完成。不是所有候选人都会遇到这一轮，但方向很明确。\n\n但它的存在已经说明了方向：在 OpenAI 眼里，“会驾驭 AI 工具写代码”正在从一个加分项变成工程师的基本功。对于正在准备 AI 公司面试的工程师来说，光刷 LeetCode 可能不够用了，怎么跟 AI 编程工具协作、怎么拆解大型问题交给 Agent 去执行，这些能力可能很快会出现在更多公司的面试流程里。",
+      "created_at": "Fri Jul 31 02:19:38 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2082707454383751305",
+        "text": "OpenAI Software Engineer Interview Experience https://t.co/iZ8qG099dI",
+        "created_at": "Thu Jul 30 05:58:46 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2082707375111475200",
+            "url": "https://pbs.twimg.com/media/HOdDUrCbEAA5CR_.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2082707395961331712",
+            "url": "https://pbs.twimg.com/media/HOdDV4taoAAPFhn.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1586689572431622149",
+          "name": "Asmit",
+          "screen_name": "coolcoder56",
+          "description": "23 | Building with AI | SDE | DM for work & collabs",
+          "followers_count": 13228,
+          "friends_count": 1762,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 203,
+          "favorite_count": 4603,
+          "reply_count": 88,
+          "quote_count": 105
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 6,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    }
+  ]
+}

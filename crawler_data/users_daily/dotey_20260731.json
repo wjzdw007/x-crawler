@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 235231,
+    "followers_count": 235249,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260731",
-  "last_updated": "2026-07-31T22:56:56.000472",
-  "tweet_count": 3,
+  "last_updated": "2026-08-01T02:23:57.313645",
+  "tweet_count": 4,
   "tweets": [
     {
       "id": "2083014693765984324",
@@ -125,6 +125,51 @@
         "favorite_count": 117,
         "reply_count": 42,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2083339915694117261",
+      "text": "RT @xiongchun007: 今天面试官问我：Agent 在流式输出 Chat Response 的过程中，怎么实现人为中断和上下文感知恢复？\n\n我说关键就两点：\n\n第一，一个 Task 一个 Session。\n用户点 Stop，只是中断当前这次 run，不是清空整个对话…",
+      "created_at": "Fri Jul 31 23:51:57 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2083208020939661615",
+        "text": "今天面试官问我：Agent 在流式输出 Chat Response 的过程中，怎么实现人为中断和上下文感知恢复？\n\n我说关键就两点：\n\n第一，一个 Task 一个 Session。\n用户点 Stop，只是中断当前这次 run，不是清空整个对话。所以停止时，要把当前上下文保存到对应的 sessionId 下；下一次恢复时，再根据这个 sessionId 把上下文加载回来。\n\n第二，要处理 tool call 被截断的情况。\n如果中断发生在 tool_call 已经生成、但 tool_result 还没返回的时候，消息链就是半截的。下一轮直接继续，很容易报 Pending tool calls exist without results。所以这类半截 tool_call，必须补一个 recovery result，让上下文重新变成合法状态。\n\n一句话：Stop 停的是这次输出，不是这个 Task 的记忆。\n\n按照这个思路，我把 Stella 的输出停止和带上下文状态恢复给做顺溜了。满分 💯",
+        "created_at": "Fri Jul 31 15:07:50 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2083203574239219712",
+            "url": "https://pbs.twimg.com/media/HOkGnQ1aUAAHfcM.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1732794145398484992",
+          "name": "山中大熊",
+          "screen_name": "xiongchun007",
+          "description": "👨‍💻 驻山程序员, 分享 AI 产品构建 • 开源测评 • Vibe Coding 实战\n\n🛠️ Building a data workbench @DataCollie in public",
+          "followers_count": 13294,
+          "friends_count": 3227,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 26,
+          "favorite_count": 167,
+          "reply_count": 20,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 26,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
       }
     }
   ]

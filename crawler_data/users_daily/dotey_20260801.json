@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 235343,
+    "followers_count": 235341,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260801",
-  "last_updated": "2026-08-01T20:45:50.604017",
-  "tweet_count": 8,
+  "last_updated": "2026-08-01T22:51:30.267134",
+  "tweet_count": 11,
   "tweets": [
     {
       "id": "2083367360547733612",
@@ -408,6 +408,177 @@
       "stats": {
         "retweet_count": 0,
         "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2083656848087933022",
+      "text": "RT @xiongchun007: 应聘 AI Agent 工程师，面试官问了一个这样的问题，我刚好做过，如图。\n\n问：在 LLM 流式输出模式下，如何最大限度的保证 UI 渲染的性能？\n\n核心是别让 UI 做蠢事：\n\n1. 不要每次 token 到来都从头渲染整段内容\n应该增…",
+      "created_at": "Sat Aug 01 20:51:19 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2083560171243274256",
+        "text": "应聘 AI Agent 工程师，面试官问了一个这样的问题，我刚好做过，如图。\n\n问：在 LLM 流式输出模式下，如何最大限度的保证 UI 渲染的性能？\n\n核心是别让 UI 做蠢事：\n\n1. 不要每次 token 到来都从头渲染整段内容\n应该增量追加节点，或按节流窗口批量刷新。否则输出越长，每次重绘成本越高。\n\n2. 不要塞重型 UI 组件。比如现成的代码高亮渲染、重型表格等，可以自己封装轻量渲染组件。\n\n3. 流式渲染要节流\nLLM token 来得很碎，UI 不需要跟每个 token 同频刷新。比如 100-300ms 合并一次，观感仍然实时，性能稳定很多。也可以结合字符串长度节流。\n\n5. 交互能力和渲染能力分离\n对输出内容的二次加工、审批动作等做分离。\n\n一句话：LLM 流式 UI 的性能优化，不是更快地重绘，而是少重绘、轻节点、按需交互。\n\n大家继续补充...",
+        "created_at": "Sat Aug 01 14:27:10 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2083555062417338368",
+            "url": "https://pbs.twimg.com/media/HOpGSkVaMAApRyi.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1732794145398484992",
+          "name": "山中大熊",
+          "screen_name": "xiongchun007",
+          "description": "👨‍💻 驻山程序员, 分享 AI 产品构建 • 开源测评 • Vibe Coding 实战\n\n🛠️ Building a data workbench @DataCollie in public",
+          "followers_count": 13412,
+          "friends_count": 3236,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 9,
+          "favorite_count": 47,
+          "reply_count": 9,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2083662041936449626",
+      "text": "RT @middlefeng: 我从没有说 code review 要坚持古法，我说的是至少先看到下面的程度。得到的回应是，就是不看 code，宁可去看其它东西（比如最喜爱的 test case）来问问题，就是故意不看生成的 code。这就是为了不看而不看。为了 ego 而不看。",
+      "created_at": "Sat Aug 01 21:11:58 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2083647550775767231",
+        "text": "我从没有说 code review 要坚持古法，我说的是至少先看到下面的程度。得到的回应是，就是不看 code，宁可去看其它东西（比如最喜爱的 test case）来问问题，就是故意不看生成的 code。这就是为了不看而不看。为了 ego 而不看。",
+        "created_at": "Sat Aug 01 20:14:23 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2080688693476790559",
+          "text": "@az372184 @dotey 至少你要看到能问问题的程度吧？",
+          "created_at": "Fri Jul 24 16:16:56 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "28964807",
+            "name": "FENG DONG",
+            "screen_name": "middlefeng",
+            "description": "Author of Nuo Model Viewer. Programming C++, Lua, DirectX, Windows, iOS, macOS, Metal. Linux kernel fan. Atheism leads to singularity and God save us.",
+            "followers_count": 7051,
+            "friends_count": 763,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "reply_count": 1,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "28964807",
+          "name": "FENG DONG",
+          "screen_name": "middlefeng",
+          "description": "Author of Nuo Model Viewer. Programming C++, Lua, DirectX, Windows, iOS, macOS, Metal. Linux kernel fan. Atheism leads to singularity and God save us.",
+          "followers_count": 7051,
+          "friends_count": 763,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 2,
+          "reply_count": 5,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2083672726741364851",
+      "text": "RT @Jenny_the_Bunny: 这种血的教训真的是得自己踩过坑之后才会发现有多痛。\n\n我们团队也是3个月前买.io域名，但是没买.ai因为要美金五位数。当时的逻辑是先开始stealth开发，验证产品，把价值做到位再说。\n\n但是2周前，我在停车场等队友来开门时刷手机突然…",
+      "created_at": "Sat Aug 01 21:54:25 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2083663347925569933",
+        "text": "这种血的教训真的是得自己踩过坑之后才会发现有多痛。\n\n我们团队也是3个月前买.io域名，但是没买.ai因为要美金五位数。当时的逻辑是先开始stealth开发，验证产品，把价值做到位再说。\n\n但是2周前，我在停车场等队友来开门时刷手机突然刷到另一个团队的launch video。没错，撞名了，而且是竞品。人家买了.ai的域名并且上个月开始申请注册商标了。晴天霹雳。\n\n经过一轮激烈讨论后，我们从“跟他们一杠到底”转到了“算了，不值得，还有很多更重要的事情需要我们的精力和时间”。之后我们连夜重新起名、买新域名、改代码。我至今还会经常口误提起那个不再属于我们的名字。\n\n所以，如果再来一次的话，我也一定会像这个startup这样一开始就把域名和商标盘下来。倒也不一定要花25万美金这么多，但最起码省去很多后顾之忧。",
+        "created_at": "Sat Aug 01 21:17:09 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2083628660708561075",
+          "text": "A recent YC startup spent 250k on a domain. I was slightly shocked. But when I asked how much they raised after YC, the answer was 6.5m. So 1/26 of their round. This is the time we live in; one shocking number counterbalances the other.",
+          "created_at": "Sat Aug 01 18:59:19 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "183749519",
+            "name": "Paul Graham",
+            "screen_name": "paulg",
+            "description": "",
+            "followers_count": 4478646,
+            "friends_count": 793,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 31,
+            "favorite_count": 1848,
+            "reply_count": 169,
+            "quote_count": 28
+          }
+        },
+        "user": {
+          "id": "3086130964",
+          "name": "Jenny Why",
+          "screen_name": "Jenny_the_Bunny",
+          "description": "Building Acorn & Agent-first context\n\n🎓MIT Engineer + MBA\n👩🏻‍💻10+ products and counting\n📱150k audience elsewhere\n💬 EN/中 🇺🇸🇨🇦🇨🇳",
+          "followers_count": 634,
+          "friends_count": 425,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 7,
+          "reply_count": 3,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
       }

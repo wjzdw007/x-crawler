@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 235334,
+    "followers_count": 235343,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260801",
-  "last_updated": "2026-08-01T19:02:54.600126",
-  "tweet_count": 7,
+  "last_updated": "2026-08-01T20:45:50.604017",
+  "tweet_count": 8,
   "tweets": [
     {
       "id": "2083367360547733612",
@@ -370,6 +370,45 @@
         "retweet_count": 0,
         "favorite_count": 0,
         "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2083639136250916926",
+      "text": "频繁到 80% 并不是什么大问题，compact 并不会频繁执行，因为执行太多一方面影响正在执行任务上下文准确性（也许压缩后，需要重新补充上下文），一方面也不能充分利用 Prompt Caching。https://t.co/ULOf2TZefe\n\n并不用太担心上下文 80% 影响性能的问题，因为现在模型处理长上下文能力已经很强，Harness 层也会补充一些提示信息，最新要做的事都在 prompt 最后的位置，能保证模型执行当前任务的注意力，所以对任务执行影响不大。\n\nHandoff 并不能解决这种问题，只能适当缓解，因为新开session 也会很快因为补充上下文又会满。你不可能一直盯着它也没必要。\n\n最佳方式就是相信它能自己处理好，设置好如何验证让它少走弯路少人工干预才是最佳使用方式。",
+      "created_at": "Sat Aug 01 19:40:56 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2083627052721131721",
+        "text": "@dotey 我就是因为这两天 gpt-5.6 sol max 做任务 auto compact 频繁突破 80%，才逼得我开始用 handoff 来解决问题。。。🙃🙃🙃",
+        "created_at": "Sat Aug 01 18:52:55 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "100399047",
+          "name": "Tz",
+          "screen_name": "Tz_2022",
+          "description": "品味是一种异常值。→ tastes.md\nAI is the steam engine of the mind. \nAI 是心灵的蒸汽机。科幻是现实的有效坍塌。加速正在被加速。看，那千尺海啸正扑面而来，而我们还在海滩上捡垃圾。\n念念不忘，必有回响。",
+          "followers_count": 24441,
+          "friends_count": 1602,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

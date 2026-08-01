@@ -1,12 +1,212 @@
 {
   "date": "20260801",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-08-01T16:56:32.503390",
-  "tweet_count": 218,
-  "unique_tweet_count": 218,
-  "total_crawled": 410,
-  "duplicates_removed": 192,
+  "last_crawl_time": "2026-08-01T19:02:54.569945",
+  "tweet_count": 221,
+  "unique_tweet_count": 221,
+  "total_crawled": 418,
+  "duplicates_removed": 197,
   "tweets": [
+    {
+      "id": "2083628609298645065",
+      "text": "我一直觉得这种测试只能测试 SVG 画图能力，并不太能体现智能水平，或者有什么理由通过这个测试能反映智能水平？",
+      "created_at": "Sat Aug 01 18:59:07 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2083342783071621224",
+        "text": "Got a disappointing pelican from DeepSeek-V4-Flash-0731 at default reasoning mode - on the left - but then I bumped reasoning up to high (via OpenRouter) and got the much better one on the right https://t.co/iBEov5peB6",
+        "created_at": "Sat Aug 01 00:03:20 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2083342568524500992",
+            "url": "https://pbs.twimg.com/media/HOmFBy5aUAA0Ykh.png"
+          },
+          {
+            "type": "photo",
+            "id": "2083342597142216704",
+            "url": "https://pbs.twimg.com/media/HOmFDdgaAAAm82H.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "12497",
+          "name": "Simon Willison",
+          "screen_name": "simonw",
+          "description": "Creator @datasetteproj, co-creator Django. PSF board. Hangs out with @natbat. He/Him. Mastodon: https://t.co/t0MrmnJW0K Bsky: https://t.co/OnWIyhX4CH",
+          "followers_count": 201558,
+          "friends_count": 5649,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 14,
+          "favorite_count": 470,
+          "reply_count": 56,
+          "quote_count": 2
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 235334,
+        "friends_count": 1701,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2083620982338486614",
+      "text": "为了节约上下文 handoff 新开 Session，这在半年一年前是很好的实践，现在没太有必要，因为 codex 自己上下文压缩做的很好了，或者 /compact 一下继续就足够了。\n\n当然如果关系不大的任务，还是新开 Session 更好。\n\n当然除此之外 handoff 还是适用于跨 Agent session 的，比如 Claude Code 里面没完成的 session 让 Codex 继续。\n\n不过我更习惯于 Claude Code 里面用 Fable 5 写技术方案文档，然后反复 Review、修改后把文档交给 Codex，配合 /goal 让它按照文档执行推进。\n\n当然设置好严格的验收标准也很有必要，否则它会偷懒。\n\n之前一个迁移任务没有设置验收标准，它就给我交付了一个差强人意的，离我要求的还有比较大差距。（参考图1）\n\n重新加上了验收标准：UI 界面像素要和原版完全一致，那么它每一步都会截图对比像素差异，直到完全一致（或者可以忽略的差异）",
+      "created_at": "Sat Aug 01 18:28:48 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2083618104244846592",
+          "url": "https://pbs.twimg.com/media/HOp_oFcWQAAbnvi.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2083618289813532672",
+          "url": "https://pbs.twimg.com/media/HOp_y4vXsAA3sgX.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2083619737636864000",
+          "url": "https://pbs.twimg.com/media/HOqBHKTWgAAUg40.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2083619908051517441",
+          "url": "https://pbs.twimg.com/media/HOqBRFJXwAEqFei.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2083535287267774908",
+        "text": "摸索出一个在 codex 里做连续任务节省大量 token 消耗且不损失上下文质量的极简方法。。。\n\n一共就两步：\n\n第一步，在一项任务完成后用以下提示词：\n\n请针对 [任务描述] 给我一个 handoff，用于后续任务开发\n\n第二步，开新对话 session，把生成的 handoff 作为第一条信息发给 AI，开始做后续任务即可\n\n它的省 token 原理很简单，就相当于对之前任务的上下文窗口做了一次有针对性的极限摘要提取和压缩梳理，扔掉了上下文中类似原始代码/日志记录等冗余信息，只保留最核心的推理逻辑和项目任务理解，所以 AI 就可以轻装上阵快速进入下一项任务的开发了。。。",
+        "created_at": "Sat Aug 01 12:48:17 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "100399047",
+          "name": "Tz",
+          "screen_name": "Tz_2022",
+          "description": "品味是一种异常值。→ tastes.md\nAI is the steam engine of the mind. \nAI 是心灵的蒸汽机。科幻是现实的有效坍塌。加速正在被加速。看，那千尺海啸正扑面而来，而我们还在海滩上捡垃圾。\n念念不忘，必有回响。",
+          "followers_count": 24440,
+          "friends_count": 1602,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 18,
+          "reply_count": 5,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 235334,
+        "friends_count": 1701,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 7,
+        "reply_count": 7,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2083620270959480931",
+      "text": "为了节约上下文 handoff 新开 Session，这在半年一年前是很好的实践，现在没太有必要，因为 codex 自己上下文压缩做的很好了，或者 /compact 一下继续就足够了。\n\n当然如果关系不大的任务，还是新开 Session 更好。\n\n当然除此之外 handoff 还是适用于跨 Agent session 的，比如 Claude Code 里面没完成的 session 让 Codex 继续。\n\n不过我更习惯于 Claude Code 里面用 Fable 5 写技术方案文档，然后反复 Review、修改后把文档交给 Codex，配合 /goal 让它按照文档执行推进。\n\n当然设置好严格的验收标准也很有必要，否则它会偷懒。\n\n之前一个迁移任务没有设置验收标准，它就给我交付了一个差强人意的，离我要求的还有比较大差距。（参考图1）\n\n重新加上了验收标准：UI 界面像素要和原版完全一致，那么它每一步都会截图对比像素差异，直到完全一致（或者可以忽略的差异）",
+      "created_at": "Sat Aug 01 18:25:59 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2083618104244846592",
+          "url": "https://pbs.twimg.com/media/HOp_oFcWQAAbnvi.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2083618289813532672",
+          "url": "https://pbs.twimg.com/media/HOp_y4vXsAA3sgX.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2083619737636864000",
+          "url": "https://pbs.twimg.com/media/HOqBHKTWgAAUg40.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2083619908051517441",
+          "url": "https://pbs.twimg.com/media/HOqBRFJXwAEqFei.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2083535287267774908",
+        "text": "摸索出一个在 codex 里做连续任务节省大量 token 消耗且不损失上下文质量的极简方法。。。\n\n一共就两步：\n\n第一步，在一项任务完成后用以下提示词：\n\n请针对 [任务描述] 给我一个 handoff，用于后续任务开发\n\n第二步，开新对话 session，把生成的 handoff 作为第一条信息发给 AI，开始做后续任务即可\n\n它的省 token 原理很简单，就相当于对之前任务的上下文窗口做了一次有针对性的极限摘要提取和压缩梳理，扔掉了上下文中类似原始代码/日志记录等冗余信息，只保留最核心的推理逻辑和项目任务理解，所以 AI 就可以轻装上阵快速进入下一项任务的开发了。。。",
+        "created_at": "Sat Aug 01 12:48:17 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "100399047",
+          "name": "Tz",
+          "screen_name": "Tz_2022",
+          "description": "品味是一种异常值。→ tastes.md\nAI is the steam engine of the mind. \nAI 是心灵的蒸汽机。科幻是现实的有效坍塌。加速正在被加速。看，那千尺海啸正扑面而来，而我们还在海滩上捡垃圾。\n念念不忘，必有回响。",
+          "followers_count": 24440,
+          "friends_count": 1602,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 18,
+          "reply_count": 5,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 235334,
+        "friends_count": 1701,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 9,
+        "reply_count": 9,
+        "quote_count": 1
+      }
+    },
     {
       "id": "2083595725552734528",
       "text": "A special effect like this used to take months of effort by a specialized company https://t.co/6QgCLwangb",

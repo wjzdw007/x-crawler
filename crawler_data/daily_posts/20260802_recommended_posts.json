@@ -1,12 +1,85 @@
 {
   "date": "20260802",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-08-02T14:59:46.243083",
-  "tweet_count": 206,
-  "unique_tweet_count": 206,
+  "last_crawl_time": "2026-08-02T16:55:35.704608",
+  "tweet_count": 207,
+  "unique_tweet_count": 207,
   "total_crawled": 406,
-  "duplicates_removed": 200,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2083938515805491681",
+      "text": "RT @xleaps: 科普一下“多模态”的具体含义。\n\n首先，我们虽然不认为盲人有“智力”上的缺陷，但不会因此让盲人靠听收音机去驾驶汽车。因为有些模态比如视觉，不是其他模态（文字或者语音）能够简单取代的。这里面有一个人择原理：即使最终在 AI 内大家都是 token,…",
+      "created_at": "Sun Aug 02 15:30:34 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2083915353185296650",
+        "text": "科普一下“多模态”的具体含义。\n\n首先，我们虽然不认为盲人有“智力”上的缺陷，但不会因此让盲人靠听收音机去驾驶汽车。因为有些模态比如视觉，不是其他模态（文字或者语音）能够简单取代的。这里面有一个人择原理：即使最终在 AI 内大家都是 token, 但人类选择了用红灯而非多普勒雷达构建了整个交通系统，也选择了用 2D 屏幕而非字节流表达计算机操作，因此 AI 为了在现实世界和数字世界中完成任务，必须接受人类已经接受的模态和输入。\n\n多模态是个被滥用了的词。模型多模态输入有利于内部更好的表示这个人择的世界，特别是视觉信号，可以帮助模型 grounding ，比如“红灯”它到底是一个什么样的信号， 在语义上毫无问题，但在开车场景里要接近人择的感知和推理，才能更加准确的表征人择世界的模型——这个世界上不存在客观的世界模型，都是人择的。\n\n即是是纯粹追求虚幻的 AGI 目标，就以长程任务为标尺，  DeepSeek 要做的长程任务，持续学习，最终也都绕不过多模态，特别是人择世界的视觉信号。一个很明显的例子就是盲人不能够仅靠语言，不依赖计算机屏幕，来操作针对视觉无碍者设计的计算机，很好完成长程计算机操作任务。 AI 也会在这种选择压力下，迫使 tokenize 人择的数字视觉信号。\n\nDeepSeek 不愿意在 AGI 的路上做多模态的输出，和 Anthropic 的方向是一样的。因为多模态输出更多是一个工程问题，牵涉到如何构建扩散或者 flow match 模型，如何让输出的分布不塌陷到平均期望上，如何保障多步输出的一致性——在通往 AGI 路上这些都是垂直的任务，可以被通用的 AI 模型一句话调用，因此可以从通用智能里外化掉。\n\nDeepSeek 放出一个只支持 text 输入的模型不代表 DeepSeek 就死死抱住 text-only 不放。实际上 DeepSeek 的非 API , 非开放权重版本是可以处理视觉信号的，而且许多我知道的企业应用里，都有人在试图给 DeepSeek 嫁接一个 ViT.",
+        "created_at": "Sun Aug 02 13:58:32 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2083633059736236200",
+          "text": "怎么还是有这么多人没懂\n多模态对实现AGI真的不重要\n这已经是业内两三年前的共识了\n\n你见到盲人影响他们智力了吗\n多模态是一种能力，不是一种智力\n就像有的人反应快，有的人手很巧，有的人空间感很强\n这些都是能力，但我们不会说有这些能力就很聪明\n\n本质上来说，图像带来的大部分语义信息已经被压缩成语言了，剩下的像素信息对于实现机器人来说是重要的，但是一个会洗衣服，会做菜的机器人不代表他很聪明，实现了AGI，这些是能力不是智力\n\n这就是为什么所有serious的AGI公司都在做coding和math，因为解决这些问题代表智力，解决好这些问题就离AGI更近了一步",
+          "created_at": "Sat Aug 01 19:16:48 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1499266443783061508",
+            "name": "JUNDE WU",
+            "screen_name": "JundeMorsenWu",
+            "description": "Building OneContext. Phd @UniofOxford. Founder of Panoptes (acq. @SenseTime_AI). Senior Scientist @Baidu_Inc.",
+            "followers_count": 17551,
+            "friends_count": 1469,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 6,
+            "favorite_count": 127,
+            "reply_count": 58,
+            "quote_count": 14
+          }
+        },
+        "user": {
+          "id": "732363",
+          "name": "Eric Xu (e/Mettā)",
+          "screen_name": "xleaps",
+          "description": "polymath, polyglot, root of a ternary tree.\n\nbuilding  https://t.co/GTxh2wWMcX\n\nprev @Meta @Google @Reddit\n\nphd in classic ai; rookie pilot 🛩️; martial artist",
+          "followers_count": 35210,
+          "friends_count": 3649,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 57,
+          "reply_count": 8,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 235456,
+        "friends_count": 1701,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2083800942927839307",
       "text": "Grok can analyze any video \nhttps://t.co/rpWSsv5C6t",

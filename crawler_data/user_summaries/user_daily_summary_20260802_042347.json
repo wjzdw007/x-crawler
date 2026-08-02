@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-08-02T04:23:47.000957",
+  "tweet_count": 12,
+  "summary": "**新工具/技术**（如有）\n- DeepSeek Harness：DeepSeek 内部的 Agent Harness 平台，正在招内测，面向多 Agent 协作与 session 管理（需要 GitHub id 参与）。  \n- Codex / Claude Code：两类大模型/平台互补使用的实践栈，常用于代码/执行型任务的接力与执行。  \n- Fable 5：在 Claude Code 内撰写技术方案文档的工具/格式，用于反复 Review 后交给 Codex 执行。  \n- /compact（或自动 compact）：上下文压缩命令或模型内置的上下文压缩机制，用于减少 token 消耗并保持关键信息。  \n- Prompt Caching：提示缓存技术，用于避免频繁重写提示并提升长上下文效率。  \n- fork / btw / sidechat：会话分支功能（绘画分支、临时旁路会话等），用于保持主会话不被污染并并行探索方向。  \n\n**核心观点/方法论**（如有）\n- Handoff（交接）其实是“有针对性的极限摘要”：在任务结束后生成 handoff，并在新 session 中用它作为起点，可大幅节省 token 且保留核心推理逻辑。重要性：在多 session 或跨模型接力时能快速恢复上下文。  \n- 不必过度依赖开新 session：随着模型（如 Codex）自身的 compact 能力增强，频繁新开 session 的必要性下降，应该平衡使用。  \n- 信任模型并用验收标准约束：把更多信任放给模型，同时通过严格、可自动化的验收（比如像素比对）来减少人工干预和返工。  \n- Context 80% 并非灾难：达到 80% 上下文窗口不是必须恐慌的信号，现代模型处理长上下文能力强，Harness 层把最新任务放在 prompt 末尾即可保障注意力。  \n- 别让 UI 做蠢事（流式渲染原则）：流式输出下的关键不是更快地重绘，而是“少重绘、增量渲染、轻节点、节流与渲染/交互分离”。  \n\n**实践经验/案例**（如有）\n- 移植任务教训：一次迁移因没设严格验收标准交付差强人意，改为“像素级 UI 一致性”后，模型每步做截图像素比对直到满足标准，交付质量明显提升。  \n- 工作流示例：在 Claude Code 用 Fable 5 写详细方案，反复 Review 后以 /goal 交给 Codex 实施——分工明确、便于多模型接力。  \n- Handoff 的适用场景：仍适合跨 Agent 的会话接力或完全不相关的后续任务；但对频繁自动 compact 的模型，其节省效果会被弱化。  \n- 流式 UI 优化实操：通过增量追加 DOM、100–300ms 合并节流、替换重型组件为轻量实现，能在保持实时感的同时大幅降低重绘成本。  \n- 关于模型自动 compact 的经验：有人遇到 gpt-5.6 在 auto compact 下频繁触发 80% 警告，结论是不用过度担心——更应通过验证流程减少人工干预。  \n\n如果需要，我可以把“handoff”提示模板、像素比对自动化思路或流式渲染的具体实现片段展开成可直接复用的步骤。",
+  "metadata": {
+    "original_tweets": 6,
+    "retweets": 6,
+    "media_tweets": 3,
+    "data_hash": "207462a3",
+    "user": "dotey"
+  }
+}

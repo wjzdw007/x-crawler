@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 235553,
+    "followers_count": 235569,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260803",
-  "last_updated": "2026-08-03T22:57:32.950156",
-  "tweet_count": 2,
+  "last_updated": "2026-08-04T02:03:40.796395",
+  "tweet_count": 5,
   "tweets": [
     {
       "id": "2084340965335031901",
@@ -95,6 +95,150 @@
         "retweet_count": 14,
         "favorite_count": 52,
         "reply_count": 11,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2084420331574284580",
+      "text": "/goal 用好的关键在于设计好严格的验收标准，每个阶段不仅说清楚任务目标是什么，还要说清楚怎么算是通过验收，这样才不容易跑偏",
+      "created_at": "Mon Aug 03 23:25:08 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2084417111984934923",
+        "text": "@dotey 宝玉大佬，使用goal，如何让他不跑偏呢",
+        "created_at": "Mon Aug 03 23:12:20 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1802611423937441792",
+          "name": "啊大",
+          "screen_name": "tancai1437",
+          "description": "",
+          "followers_count": 3,
+          "friends_count": 53,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 26,
+        "reply_count": 9,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2084420451426521368",
+      "text": "比如我这个例子就是在迁移的时候，每个阶段去截图对比像素差异，简单粗暴但有效\nhttps://t.co/pa3eVcgg1M",
+      "created_at": "Mon Aug 03 23:25:36 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2083620270959480931",
+        "text": "为了节约上下文 handoff 新开 Session，这在半年一年前是很好的实践，现在没太有必要，因为 codex 自己上下文压缩做的很好了，或者 /compact 一下继续就足够了。\n\n当然如果关系不大的任务，还是新开 Session 更好。\n\n当然除此之外 handoff 还是适用于跨 Agent session 的，比如 Claude Code 里面没完成的 session 让 Codex 继续。\n\n不过我更习惯于 Claude Code 里面用 Fable 5 写技术方案文档，然后反复 Review、修改后把文档交给 Codex，配合 /goal 让它按照文档执行推进。\n\n当然设置好严格的验收标准也很有必要，否则它会偷懒。\n\n之前一个迁移任务没有设置验收标准，它就给我交付了一个差强人意的，离我要求的还有比较大差距。（参考图1）\n\n重新加上了验收标准：UI 界面像素要和原版完全一致，那么它每一步都会截图对比像素差异，直到完全一致（或者可以忽略的差异）",
+        "created_at": "Sat Aug 01 18:25:59 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2083618104244846592",
+            "url": "https://pbs.twimg.com/media/HOp_oFcWQAAbnvi.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2083618289813532672",
+            "url": "https://pbs.twimg.com/media/HOp_y4vXsAA3sgX.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2083619737636864000",
+            "url": "https://pbs.twimg.com/media/HOqBHKTWgAAUg40.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2083619908051517441",
+            "url": "https://pbs.twimg.com/media/HOqBRFJXwAEqFei.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 235569,
+          "friends_count": 1701,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 13,
+          "favorite_count": 103,
+          "reply_count": 36,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 9,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2084424032762384846",
+      "text": "同一个session使用不同模型的话，通过subagent就可以，让主agent去开启subagent执行任务，并且可以指定subagent模型 https://t.co/hiazgKI5jy",
+      "created_at": "Mon Aug 03 23:39:50 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2084423948758917120",
+          "url": "https://pbs.twimg.com/media/HO1ciaMXoAAMHTZ.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2084422225046954042",
+        "text": "@dotey 老师，如何在一个session中用不同的模型呢",
+        "created_at": "Mon Aug 03 23:32:39 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2041656719429005312",
+          "name": "luckye",
+          "screen_name": "luckyegmce",
+          "description": "",
+          "followers_count": 2,
+          "friends_count": 75,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 27,
+        "reply_count": 25,
         "quote_count": 1
       }
     }

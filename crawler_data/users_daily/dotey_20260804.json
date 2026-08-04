@@ -1,0 +1,78 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 235569,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260804",
+  "last_updated": "2026-08-04T02:03:40.795672",
+  "tweet_count": 1,
+  "tweets": [
+    {
+      "id": "2084443666173882458",
+      "text": "RT @wquguru: AI 同时满足了一个中间商市场繁荣的所有条件：技术变化足够快，信息差足够大，资本足够多，故事足够性感。如果把大模型训练、推理、应用整条产业链拆开来看，有些价值上百亿美金的机会是3年之前甚至完全不存在的。最典型的就是推理工程。…",
+      "created_at": "Tue Aug 04 00:57:51 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2084438414905233770",
+        "text": "AI 同时满足了一个中间商市场繁荣的所有条件：技术变化足够快，信息差足够大，资本足够多，故事足够性感。如果把大模型训练、推理、应用整条产业链拆开来看，有些价值上百亿美金的机会是3年之前甚至完全不存在的。最典型的就是推理工程。\n\n三年前这个词几乎没人提，今天它已经是独立学科：核心问题是把训好的权重，变成又快、又稳、又便宜的生产级API。几个关键概念，看完就知道为什么中间商能吃这么大：\n\n1. Prefill vs Decode 分离\n输入很长时，先算一遍整个prompt（prefill），再一个个生成token（decode）。两者算力特征完全不同，现在直接拆到不同GPU上跑，效率暴增。\n\n2. Cache-aware Routing + KV Cache复用\n用户发来20万token的请求，系统先问：这段内容我之前算过吗？有现成KV Cache就直接跳过重复计算。缓存命中率决定成本和延迟。\n\n3. Speculative Decoding（投机解码）\n用一个小模型先猜大模型接下来要说什么，猜对了就直接用，猜错了再纠正。小模型便宜，而且整体速度可提升2-3倍。\n\n4. 量化（Quantization）\n把模型从FP16压到FP4/FP8，很多人以为精度必掉。但实际中不同层的误差会相互抵消，有时吞吐量涨20%，基准分数几乎不变。\n\n5. Day-0支持新模型\n开源模型一发布，中间商要在几小时内完成量化、投机头训练、内核适配、多机并行……否则就错过热度。这本身就是一门高壁垒手艺。\n\n这些优化叠加起来，能把同一个模型从30-40 tokens/s 推到300-400 tokens/s，最高近10倍。中间层吃的，就是这从能跑到跑得极致的巨大价差。\n\n技术变化越快，信息差越大，中间商越香。推理工程只是这条链上最早长出百亿公司的典型例子，后面还会有更多此类初创公司出现。",
+        "created_at": "Tue Aug 04 00:36:59 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2083948997249822787",
+          "text": "一个残酷的真相，目前大部分 AI 创业的公司都不怎么赚钱，甚至利润都不如曲曲大女人卖自己的 skill。\n\n所以发现一个有意思的事情，很多公司表面是一个业务，仔细一聊，“原来你也是卖 Token 的呀”，“原来你也是卖算力的呀”，原来大模型公司也倒卖算力赚差价呀。\n\n真正赚钱的就还是皮条客们。\n\nFA、撮合老股、倒 B300、卖 Token、卖数据集、卖算力，甚至卖一个能见到某位创始人的机会……\n\nAI 同时满足了一个中间商市场繁荣的所有条件：技术变化足够快，信息差足够大，资本足够多，故事足够性感。",
+          "created_at": "Sun Aug 02 16:12:13 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1125309529145524224",
+            "name": "WquGuru",
+            "screen_name": "wquguru",
+            "description": "AI+量化+工程\nVibe Coding 12原则→https://t.co/v8fMk1VdpL\n打造Agent PoC→https://t.co/pg7QEyZHQR\n欢迎DM👋",
+            "followers_count": 19495,
+            "friends_count": 1664,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 3,
+            "favorite_count": 55,
+            "reply_count": 10,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "1125309529145524224",
+          "name": "WquGuru",
+          "screen_name": "wquguru",
+          "description": "AI+量化+工程\nVibe Coding 12原则→https://t.co/v8fMk1VdpL\n打造Agent PoC→https://t.co/pg7QEyZHQR\n欢迎DM👋",
+          "followers_count": 19495,
+          "friends_count": 1664,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 15,
+          "reply_count": 3,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

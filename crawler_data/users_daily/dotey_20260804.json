@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 235722,
+    "followers_count": 235723,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260804",
-  "last_updated": "2026-08-04T19:26:21.639150",
-  "tweet_count": 5,
+  "last_updated": "2026-08-04T21:08:16.676272",
+  "tweet_count": 6,
   "tweets": [
     {
       "id": "2084443666173882458",
@@ -240,6 +240,69 @@
         "favorite_count": 5,
         "reply_count": 8,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2084724416684966260",
+      "text": "RT @indigox: 最强大的 Agent 都需要一台“自己的电脑”，而不只是一个容器。过去半年行业习惯于给每个 agent 配一个容器，但全球算力根本不足以支撑数亿乃至数十亿并发 agent 各自独占容器环境，这也是当前 CPU 算力（而非仅 GPU）需求紧张的原因。因此…",
+      "created_at": "Tue Aug 04 19:33:27 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2084549298960929170",
+        "text": "最强大的 Agent 都需要一台“自己的电脑”，而不只是一个容器。过去半年行业习惯于给每个 agent 配一个容器，但全球算力根本不足以支撑数亿乃至数十亿并发 agent 各自独占容器环境，这也是当前 CPU 算力（而非仅 GPU）需求紧张的原因。因此，Cloudflare 推出了开源库 cloudflare/computer 的早期预览版。\n\n核心理念是：isolate（隔离运行环境），这是他们十年前推出 Workers、六年前推出 Durable Objects 时就下的“非共识”押注：isolate 可以无限横向扩展、启动与销毁极快、空闲时能休眠、可保存自身状态。理想架构是把 agent 主循环放在 Durable Object 的 isolate 里，仅在必要时按需调用容器作为工具，从而兼顾横向与纵向扩展。\n\n这个库提供的核心抽象是 workspace：一个由 SQLite 支撑的持久化虚拟文件系统，可从 git 仓库或云存储预填充。isolate 后端把 shell 命令翻译成 JS 运行，容器后端通过 FUSE 提供完整 Linux，两边共享同一套文件、实时同步。配套的工具集里，前沿模型已经能自己判断：什么时候用便宜快速的 worker 就够了，什么时候才真正需要容器。所有文件操作可门控、可审计。\n\nCloudflare 的目标是让容器只承担不到 10% 的工作量——内部已经有 agent 完全靠 isolate 完成 JS 应用的构建、测试和部署。Agent 时代的算力经济学，正在从「每个 agent 一台机器」走向「每个 agent 一个进程」。",
+        "created_at": "Tue Aug 04 07:57:36 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2084314784577847680",
+          "text": "Your agent needs a computer, but sometimes a full Linux container is overkill.\n\nToday we're releasing a preview of cloudflare/computer, a package that runs your code in a fast isolate when possible, falling back to a container only when it's needed.\n\nhttps://t.co/keKYLt5l0R",
+          "created_at": "Mon Aug 03 16:25:43 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "300637864",
+            "name": "Cloudflare Developers",
+            "screen_name": "CloudflareDev",
+            "description": "Have questions, or building something cool with Cloudflare's Developer products? We're here to help. For help with your account please try @CloudflareHelp",
+            "followers_count": 74597,
+            "friends_count": 141,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 36,
+            "favorite_count": 294,
+            "reply_count": 7,
+            "quote_count": 9
+          }
+        },
+        "user": {
+          "id": "1723331",
+          "name": "indigo",
+          "screen_name": "indigox",
+          "description": "Co-founder of https://t.co/WosXbyLukR / Partner of Brilliant Phoenix / ex-Weibo. Investor, Writer, Coder, Gamer & Amateur Cook. e/acc, 𝕏 is my notebook …",
+          "followers_count": 54139,
+          "friends_count": 1161,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 62,
+          "reply_count": 26,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
       }
     }
   ]

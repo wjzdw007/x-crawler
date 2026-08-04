@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-08-04T04:14:19.799220",
+  "tweet_count": 5,
+  "summary": "**新工具/技术**（如有）\n- Fable 5：用来撰写技术方案与验收文档，便于批注和交接给其他 Agent。\n- Codex（GPT-5.6 Sol xhigh）：负责执行实现任务，适合复杂一次性完成的执行（可配 /goal）。\n- Opus 5：可替代执行模型，但在作者实践中稳定性和 token 耐用性不如 GPT-5.6。\n- SubAgent 机制：在同一 session 内由主 agent 启动子 agent 指定不同模型执行任务。\n\n**核心观点/方法论**（如有）\n- 分工明确的 Agent 流程：用高擅长写方案的模型产出规范，再交给擅长执行的模型去实现，最后由原作者模型验收——提高可靠性与复现性。\n- 设计严格的验收标准（/goal）：明确通过条件能防止实现偏离目标且减少反复返工。\n- 利用 /compact 与 Prompt Caching 优化成本：在缓存仍在时压缩上下文能节约后续 token 成本。\n- 在同一 session 切换模型推荐用 SubAgent：保留上下文同时指定不同模型，更高效且易管理。\n\n**实践经验/案例**（如有）\n- 推荐工作流：Fable 5 写方案 → 文档确认后 /compact → 把文档交给 Codex 执行（可 /goal）→ Fable 验收并回传反馈给 Codex。\n- 验收实操：迁移任务用截图逐步像素比对，要求与原版一致直到差异可忽略，简单粗暴但有效。\n- 模型选择经验：Opus 5 可用但不如 GPT-5.6 稳定与耐用，作者宁愿多开几步也选 GPT-5.6。\n- 会话策略：关系紧密的任务可在同一会话通过压缩上下文继续，关系不大或跨 Agent session 时再新开 session 更稳妥。\n- 文档作为上下文的价值：方案文档便于多人/多 Agent 批注、复用与快速上手，减少沟通成本。\n- 成本提示：尽量在 Prompt Caching 有效期内做 /compact，因为那时压缩代价更低；后期缓存过期再 compact 会更贵。",
+  "metadata": {
+    "original_tweets": 4,
+    "retweets": 1,
+    "media_tweets": 3,
+    "data_hash": "e6370997",
+    "user": "dotey"
+  }
+}

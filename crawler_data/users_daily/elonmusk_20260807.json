@@ -3,13 +3,13 @@
     "screen_name": "elonmusk",
     "name": "Elon Musk",
     "description": "https://t.co/ZdBx5WABYx",
-    "followers_count": 241189862,
+    "followers_count": 241192812,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260807",
-  "last_updated": "2026-08-07T12:53:37.432951",
-  "tweet_count": 6,
+  "last_updated": "2026-08-07T14:50:22.094871",
+  "tweet_count": 9,
   "tweets": [
     {
       "id": "2085530890759749760",
@@ -334,6 +334,112 @@
         "favorite_count": 1523,
         "reply_count": 525,
         "quote_count": 24
+      }
+    },
+    {
+      "id": "2085735269525766343",
+      "text": "Try Grok Build\n\nhttps://t.co/v7TKF3kXL7",
+      "created_at": "Fri Aug 07 14:30:13 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2085594014481359104",
+        "text": "Grok Build officially reaches v1.0.0, rapidly becoming one of the most powerful coding harnesses in the world\n\nAfter 100+ updates in just over 10 weeks, SpaceXAI’s coding agent has hit a major milestone.......with a smarter dashboard, a more polished developer experience, stronger reliability, safer permission handling, and meaningful performance improvements across the platform\n\nThe pace at which SpaceXAI is shipping Grok Build is totally insane\n\nRelease Notes: v1.0.0\n\nFeatures:\n• Dashboard rows show a short summary of what the agent did in the previous turn\n• Extensions modal groups items alphabetically with collapsible Skills sections\n• Grok skips the project-directory prompt when launched from home or other non-project directories\n• `/feedback` opens a dedicated report box instead of prompt mode\n• Auto theme detection works over SSH and inside tmux\n• Markdown tables reflow inside cells on narrow panes instead of clipping\n• Permission prompts show the complete script; long bash bodies expand with `Ctrl-F`\n\nBug Fixes:\n• MCP tools that return images no longer drop or corrupt large screenshots\n• Sandboxed Grok starts on large directories with many deny-glob matches\n• Rapid send-now presses no longer lose earlier queued messages\n• Esc and stop prevent background tasks from restarting the model after cancel\n• Login no longer skips when an invalid API key is in the environment\n• Model picker and command palette work while reviewing a plan\n• Tab and Esc behave consistently on question, permission, and cancel-turn cards\n• `/new` from the dashboard returns to the dashboard from an empty prompt\n• Codebase restore no longer hangs on large or shallow git repositories\n• Remote resume restores conversation only unless `--restore-code` is passed\n• Copying CJK text with the mouse includes every character at the selection edges\n• API errors appear as clean banners instead of raw JSON dumps\n• Typing exit or quit in the dashboard exits the CLI\n• Mode indicator (plan/agent/ask) stays in sync after resume and mode changes\n• `/delete` returns to the dashboard when you delete a session opened from it\n• Enter in the slash command menu runs the highlighted command\n• Grok retries more server errors during outages\n• Session-only slash commands show a message when used from the dashboard\n• Queued prompts stay visible while waiting on subagents, and slash/image rows can be reordered\n• Auto recaps no longer appear mid-turn or while busy\n• `/btw` error messages wrap fully\n\nPerformance:\n• Forking very large sessions no longer uses many times the session file size in memory\n• Exiting an empty session is instant, even on slow networks",
+        "created_at": "Fri Aug 07 05:08:56 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2085592593337810944",
+            "url": "https://pbs.twimg.com/media/HPGDaegWAAAgTQm.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 252793,
+          "friends_count": 1972,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 50,
+          "favorite_count": 361,
+          "reply_count": 46,
+          "quote_count": 11
+        }
+      },
+      "stats": {
+        "retweet_count": 130,
+        "favorite_count": 889,
+        "reply_count": 394,
+        "quote_count": 6
+      }
+    },
+    {
+      "id": "2085735374651871702",
+      "text": "https://t.co/54ppM0zX67",
+      "created_at": "Fri Aug 07 14:30:39 +0000 2026",
+      "lang": "zxx",
+      "media": [
+        {
+          "type": "video",
+          "id": "2085633120062300160",
+          "url": "https://video.twimg.com/amplify_video/2085633120062300160/vid/avc1/3840x2160/_Zp0Z5dXQHeR_Ldd.mp4?tag=29",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 345,
+        "favorite_count": 2338,
+        "reply_count": 598,
+        "quote_count": 35
+      }
+    },
+    {
+      "id": "2085737443228045492",
+      "text": "It really is this amazing",
+      "created_at": "Fri Aug 07 14:38:52 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2085598462146675072",
+        "text": "Jessica bought a new Tesla today. Her experience with self-driving was the usual religious revelation. Impressive that a 23 year old company can still generate that kind of reaction.",
+        "created_at": "Fri Aug 07 05:26:36 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "183749519",
+          "name": "Paul Graham",
+          "screen_name": "paulg",
+          "description": "",
+          "followers_count": 4593507,
+          "friends_count": 798,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 90,
+          "favorite_count": 3503,
+          "reply_count": 135,
+          "quote_count": 23
+        }
+      },
+      "stats": {
+        "retweet_count": 136,
+        "favorite_count": 1365,
+        "reply_count": 373,
+        "quote_count": 13
       }
     }
   ]

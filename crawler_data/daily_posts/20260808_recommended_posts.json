@@ -1,12 +1,214 @@
 {
   "date": "20260808",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-08-08T01:13:50.862726",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-08-08T03:22:05.980447",
+  "tweet_count": 205,
+  "unique_tweet_count": 205,
+  "total_crawled": 400,
+  "duplicates_removed": 195,
   "tweets": [
+    {
+      "id": "2085926590962164126",
+      "text": "https://t.co/fosLc0KtcA",
+      "created_at": "Sat Aug 08 03:10:28 +0000 2026",
+      "lang": "zxx",
+      "media": [
+        {
+          "type": "video",
+          "id": "2085717310547849216",
+          "url": "https://video.twimg.com/amplify_video/2085717310547849216/vid/avc1/1440x1440/p_aLiyBI9zPxBUd8.mp4?tag=25",
+          "bitrate": 12128000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241196077,
+        "friends_count": 1383,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 240,
+        "favorite_count": 1263,
+        "reply_count": 485,
+        "quote_count": 86
+      }
+    },
+    {
+      "id": "2085926400960127175",
+      "text": "RT @JohnCornyn: Texas continues to lead the way in chip innovation &amp; advanced manufacturing.\n \n@SpaceX &amp; @Tesla’s new semiconductor fabrica…",
+      "created_at": "Sat Aug 08 03:09:43 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2085890347301843344",
+        "text": "Texas continues to lead the way in chip innovation & advanced manufacturing.\n \n@SpaceX & @Tesla’s new semiconductor fabrication facility in Grimes County has the potential to create thousands of jobs for Texans, strengthen America’s semiconductor and AI industry supply chains, & help bring critical chip manufacturing back home. \n \n@SpaceX & @Tesla have also committed to invest millions of dollars in the local community and schools, and I look forward to seeing the benefits to Grimes County grow in the future.",
+        "created_at": "Sat Aug 08 00:46:27 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2085366782269817116",
+          "text": "The foundations for an exciting future are being built in Texas. Next up: Terafab → https://t.co/jGg52Zhn5I https://t.co/SNfSXNr2tb",
+          "created_at": "Thu Aug 06 14:05:59 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2085361439267491840",
+              "url": "https://video.twimg.com/amplify_video/2085361439267491840/vid/avc1/3840x2160/C0Ml1UvfZnGLNfHq.mp4?tag=29",
+              "bitrate": 25128000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "34743251",
+            "name": "SpaceX",
+            "screen_name": "SpaceX",
+            "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+            "followers_count": 41900041,
+            "friends_count": 124,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1816,
+            "favorite_count": 13535,
+            "reply_count": 713,
+            "quote_count": 477
+          }
+        },
+        "user": {
+          "id": "13218102",
+          "name": "Senator John Cornyn",
+          "screen_name": "JohnCornyn",
+          "description": "Proudly representing Texas in the U.S. Senate.",
+          "followers_count": 413269,
+          "friends_count": 14473,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 63,
+          "favorite_count": 374,
+          "reply_count": 77,
+          "quote_count": 4
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241196077,
+        "friends_count": 1383,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 63,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2085908601638445177",
+      "text": "很多人不知道该怎么用好 Agent 的 /goal 功能，也就是说给 Agent 一个目标，让它长时间运行，直到目标完成为止。\n\n其实没你想的那么复杂，注意几个点：\n1. 你的目标是什么\n2. 如何验证结果\n3. 停止条件\n\n比如说我这两天做的一个性能优化的任务，Fable 5 帮我把视频转录性能优化了2倍多（图2），提示词很简单（图1）：\n> /goal 帮我优化当前 cli 的转录大视频的性能，在遇到像这样大体积的视频时，需要优化转录性能，请以 Moss 模型测试这个视频（英文为主，多语言）转录，建立基准，然后分析性能瓶颈，尝试优化，直到你觉得已经没有优化空间了。注意你的主要任务是分析、编排和验证，具体任务尽可能交给 subagent（Opus5）去执行\n\n首先用 /goal 表示这是一个需要长时间执行的任务，需要反复执行，不能运行一会就结束了。\n\n然后给它一个视频让它先自己跑一遍转录，记录一下关键数据，建立基准。\n\n基于转录时收集的数据，Agent 自己可以去分析原因，去自己优化，优化完成后再去跑一遍，记录数据，对照前面的基准看是更好了还是更坏了。\n\n结束条件是它自己觉得已经没有优化空间了就结束。之所以我没给它一个具体指标，是因为我也不知道能优化多少，如果指标太容易达到，它一轮可能就结束了；如果指标太难超出物理极限也没意义，反而可能会出现为了优化去做一些极端的事情。\n\n最后一句让它开subagent执行子任务是因为 Fable 5 太贵，全程 Fable 5 用不了多久就要额度不够了，加了这句就耐用多了，而且质量也挺好。\n\n---\n\n还有些时候，想到一个新的技术方案，但并不知道这方案是不是有效，那也可以让它开个worktree，去验证一下是不是靠谱，看数据是更好还是更坏，如果没提升就没必要做了。（参考图3）",
+      "created_at": "Sat Aug 08 01:58:59 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2085908300688760832",
+          "url": "https://pbs.twimg.com/media/HPKijECXoAAZhMA.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2085908326731087872",
+          "url": "https://pbs.twimg.com/media/HPKiklDWAAALuYb.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2085908354703007744",
+          "url": "https://pbs.twimg.com/media/HPKimNQXoAAy2v0.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 236172,
+        "friends_count": 1703,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 66,
+        "reply_count": 14,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2085901821306945545",
+      "text": "1. 自主改进的 Harness 不是自进化模型，价值有限\n2. 面向评分的优化价值有限，到现实场景不会比 Claude Code 和 Codex 这样的更好",
+      "created_at": "Sat Aug 08 01:32:03 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2085357838755656027",
+        "text": "Prime Agent 一个能自主改进的递归 Agent 框架：\n\n仅仅把外面的框架（Harness ）换成 Prime Agent\n\nOpus 5 的 ARC-AGI-3 评分从 30.2% 冲到 95.5%甚至超越了人类专家基线（95.4%）\n\n可以直接当 Claude Code、Codex 的替代品\n\n它证明了一件事：AI 有时候跑不好的原因，很多时候不是模型不够聪明，而是外面跑它的框架束缚了它...\n\n传统的 Agent 框架（比如固定的工具调用接口、硬编码的子 Agent 或静态提示词）是为上一代模型设计的。当大模型能力越来越强时，这些固定设计反而成了“绊脚石”，限制了模型的发挥。\n\nhttps://t.co/8L4AtKlYgM",
+        "created_at": "Thu Aug 06 13:30:27 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1764818331822182400",
+          "name": "小互",
+          "screen_name": "xiaohu",
+          "description": "带你了解全球最前沿科技、AI动态...\n\nAI 精华，讲到你懂：https://t.co/nvuDIvoNg1",
+          "followers_count": 113312,
+          "friends_count": 1706,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 31,
+          "favorite_count": 163,
+          "reply_count": 51,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 236172,
+        "friends_count": 1703,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 9,
+        "reply_count": 8,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2085892976522179036",
       "text": "RT @Gorden_Sun: Claude支持会话之间互相发消息了：\n1，你可以问当前会话其他对话的信息，把其他对话的信息整合到当前会话。这倒没什么难度，类似compact然后把总结带过来。…",
@@ -10003,6 +10205,62 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2083783368475361697",
+      "text": "AJ 这 3D 渲染测试确实比鹈鹕骑自行车靠谱多了👍",
+      "created_at": "Sun Aug 02 05:14:04 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2083749667410727319",
+        "text": "We're starting to leave the territory where you'd test an LLM by e.g. \"create an svg of pelican on a bicycle\". As one idea to generalize it, I was interested what Opus 5 would do if I gave it the first paragraph of the Lord of the Rings, a 1M token budget (~$10) and asked for three js render of it. Opus went off for ~2 hours and wrote 5500 lines of code that (procedurally) rendered the story. It's kind of janky but fun. But it's a bit mindboggling that the LLM has to place and orchestrate various polygon assets in (x,y,z) coordinates and write code that animates it all, and that it even does anything at all.\n\nI also like this kind of examples because no one in their right mind would ever spend the time to write something this custom but LLMs have all the stamina and patience in the world, so it's an example where we go from \"no one would ever do this\" to \"sure, why not, it's ~free\". There might be a lot more. But I'm excited about creating hyper custom worlds that you can imagine dropping players into, e.g. here to participate in the LoTR story as a spectator NPC, or one of the characters, or etc. Something like an ephemeral GTA of X on demand.\n\nLast thought is that the domain of worlds/games exposes a weakness in LLMs: they can't easily audit their work because they aren't able to efficiently and natively perceive videos or play games within them. Here, Opus 5 had to very slowly and painstakingly take screenshots at different points, and it messed up a few times and created a bunch of jank. An example of raw capability (multimodal, gameplay) that I think is still quite lacking.",
+        "created_at": "Sun Aug 02 03:00:09 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2083744791876292608",
+            "url": "https://video.twimg.com/amplify_video/2083744791876292608/vid/avc1/1920x1080/9NW2QWX_Ejzzlpj5.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "33836629",
+          "name": "Andrej Karpathy",
+          "screen_name": "karpathy",
+          "description": "deep learning",
+          "followers_count": 3684763,
+          "friends_count": 1123,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2120,
+          "favorite_count": 27685,
+          "reply_count": 1433,
+          "quote_count": 677
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 236173,
+        "friends_count": 1703,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 40,
+        "reply_count": 86,
+        "quote_count": 1
       }
     },
     {

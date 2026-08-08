@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 236159,
+    "followers_count": 236172,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260808",
-  "last_updated": "2026-08-08T01:13:50.891343",
-  "tweet_count": 1,
+  "last_updated": "2026-08-08T03:22:06.035958",
+  "tweet_count": 3,
   "tweets": [
     {
       "id": "2085892976522179036",
@@ -78,6 +78,76 @@
         "retweet_count": 2,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2085901821306945545",
+      "text": "1. 自主改进的 Harness 不是自进化模型，价值有限\n2. 面向评分的优化价值有限，到现实场景不会比 Claude Code 和 Codex 这样的更好",
+      "created_at": "Sat Aug 08 01:32:03 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2085357838755656027",
+        "text": "Prime Agent 一个能自主改进的递归 Agent 框架：\n\n仅仅把外面的框架（Harness ）换成 Prime Agent\n\nOpus 5 的 ARC-AGI-3 评分从 30.2% 冲到 95.5%甚至超越了人类专家基线（95.4%）\n\n可以直接当 Claude Code、Codex 的替代品\n\n它证明了一件事：AI 有时候跑不好的原因，很多时候不是模型不够聪明，而是外面跑它的框架束缚了它...\n\n传统的 Agent 框架（比如固定的工具调用接口、硬编码的子 Agent 或静态提示词）是为上一代模型设计的。当大模型能力越来越强时，这些固定设计反而成了“绊脚石”，限制了模型的发挥。\n\nhttps://t.co/8L4AtKlYgM",
+        "created_at": "Thu Aug 06 13:30:27 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1764818331822182400",
+          "name": "小互",
+          "screen_name": "xiaohu",
+          "description": "带你了解全球最前沿科技、AI动态...\n\nAI 精华，讲到你懂：https://t.co/nvuDIvoNg1",
+          "followers_count": 113312,
+          "friends_count": 1706,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 31,
+          "favorite_count": 163,
+          "reply_count": 51,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 9,
+        "reply_count": 8,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2085908601638445177",
+      "text": "很多人不知道该怎么用好 Agent 的 /goal 功能，也就是说给 Agent 一个目标，让它长时间运行，直到目标完成为止。\n\n其实没你想的那么复杂，注意几个点：\n1. 你的目标是什么\n2. 如何验证结果\n3. 停止条件\n\n比如说我这两天做的一个性能优化的任务，Fable 5 帮我把视频转录性能优化了2倍多（图2），提示词很简单（图1）：\n> /goal 帮我优化当前 cli 的转录大视频的性能，在遇到像这样大体积的视频时，需要优化转录性能，请以 Moss 模型测试这个视频（英文为主，多语言）转录，建立基准，然后分析性能瓶颈，尝试优化，直到你觉得已经没有优化空间了。注意你的主要任务是分析、编排和验证，具体任务尽可能交给 subagent（Opus5）去执行\n\n首先用 /goal 表示这是一个需要长时间执行的任务，需要反复执行，不能运行一会就结束了。\n\n然后给它一个视频让它先自己跑一遍转录，记录一下关键数据，建立基准。\n\n基于转录时收集的数据，Agent 自己可以去分析原因，去自己优化，优化完成后再去跑一遍，记录数据，对照前面的基准看是更好了还是更坏了。\n\n结束条件是它自己觉得已经没有优化空间了就结束。之所以我没给它一个具体指标，是因为我也不知道能优化多少，如果指标太容易达到，它一轮可能就结束了；如果指标太难超出物理极限也没意义，反而可能会出现为了优化去做一些极端的事情。\n\n最后一句让它开subagent执行子任务是因为 Fable 5 太贵，全程 Fable 5 用不了多久就要额度不够了，加了这句就耐用多了，而且质量也挺好。\n\n---\n\n还有些时候，想到一个新的技术方案，但并不知道这方案是不是有效，那也可以让它开个worktree，去验证一下是不是靠谱，看数据是更好还是更坏，如果没提升就没必要做了。（参考图3）",
+      "created_at": "Sat Aug 08 01:58:59 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2085908300688760832",
+          "url": "https://pbs.twimg.com/media/HPKijECXoAAZhMA.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2085908326731087872",
+          "url": "https://pbs.twimg.com/media/HPKiklDWAAALuYb.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2085908354703007744",
+          "url": "https://pbs.twimg.com/media/HPKimNQXoAAy2v0.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 66,
+        "reply_count": 14,
         "quote_count": 0
       }
     }

@@ -1,12 +1,153 @@
 {
   "date": "20260809",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-08-09T14:31:06.789192",
-  "tweet_count": 211,
-  "unique_tweet_count": 211,
+  "last_crawl_time": "2026-08-09T16:29:47.762814",
+  "tweet_count": 213,
+  "unique_tweet_count": 213,
   "total_crawled": 411,
-  "duplicates_removed": 200,
+  "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2086482912145211827",
+      "text": "我觉得像视频转录剪辑这样的 App 应该是被 Agent 调用的，App 主要是用来确认结果和微调的。\n\n所以我在设计的时候，砍掉了内置的 Harness，只保留了复制 prompt，然后去 Agent 操作。另外最新版本提供了网页界面，这样可以在 Agent 内置浏览器内打开，直接从对话或者网页标记二次编辑。\n\n我坚信未来 Agent 才是入口，要做什么事是先打开 Agent 而不是打开 App。",
+      "created_at": "Sun Aug 09 16:01:05 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2086475160031211520",
+          "url": "https://pbs.twimg.com/media/HPSmGnpWMAAoND8.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2086475756528361472",
+          "url": "https://pbs.twimg.com/media/HPSmpVxWYAAfqHV.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2086445635725586513",
+        "text": "没想到宝玉哥 @dotey 做的 免费BaoCut这么强：\n\nhttps://t.co/jWOhiAF9qq\n\n1. YouTube / X 视频转录，翻译，剪辑一条龙\n\n2. 架构上GUI + CLI 分离，支持 Skill\n\n3. 你也可以不用app，在 harness 内直接调用skill转录视频成文本，用来AI 问答\n\n看视频变成享受了，强烈推荐！\n\n翻译的用户体验相对麻烦点，需要去harness里操作，如果能内置直接调用harness无头翻译，要方便很多！",
+        "created_at": "Sun Aug 09 13:32:58 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2086445520772567040",
+            "url": "https://pbs.twimg.com/media/HPSLJYzakAAgMjV.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2086445557917343745",
+            "url": "https://pbs.twimg.com/media/HPSLLjLa4AEEt7v.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2086445618483118080",
+            "url": "https://pbs.twimg.com/media/HPSLPEzbQAAMhjC.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1239771839464783872",
+          "name": "LinearUncle",
+          "screen_name": "LinearUncle",
+          "description": "👑 AI coding - 职业工程师\n💻 只分享硬核AI编程工具，技巧等",
+          "followers_count": 11671,
+          "friends_count": 1272,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 45,
+          "reply_count": 9,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 236295,
+        "friends_count": 1703,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 14,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2086473136178876469",
+      "text": "RT @LinearUncle: 没想到宝玉哥 @dotey 做的 免费BaoCut这么强：\n\nhttps://t.co/wTHRiSNkDD\n\n1. YouTube / X 视频转录，翻译，剪辑一条龙\n\n2. 架构上GUI + CLI 分离，支持 Skill\n\n3. 你也可以…",
+      "created_at": "Sun Aug 09 15:22:15 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2086445635725586513",
+        "text": "没想到宝玉哥 @dotey 做的 免费BaoCut这么强：\n\nhttps://t.co/jWOhiAF9qq\n\n1. YouTube / X 视频转录，翻译，剪辑一条龙\n\n2. 架构上GUI + CLI 分离，支持 Skill\n\n3. 你也可以不用app，在 harness 内直接调用skill转录视频成文本，用来AI 问答\n\n看视频变成享受了，强烈推荐！\n\n翻译的用户体验相对麻烦点，需要去harness里操作，如果能内置直接调用harness无头翻译，要方便很多！",
+        "created_at": "Sun Aug 09 13:32:58 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2086445520772567040",
+            "url": "https://pbs.twimg.com/media/HPSLJYzakAAgMjV.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2086445557917343745",
+            "url": "https://pbs.twimg.com/media/HPSLLjLa4AEEt7v.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2086445618483118080",
+            "url": "https://pbs.twimg.com/media/HPSLPEzbQAAMhjC.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1239771839464783872",
+          "name": "LinearUncle",
+          "screen_name": "LinearUncle",
+          "description": "👑 AI coding - 职业工程师\n💻 只分享硬核AI编程工具，技巧等",
+          "followers_count": 11671,
+          "friends_count": 1272,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 45,
+          "reply_count": 9,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 236295,
+        "friends_count": 1703,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2086423326117773536",
       "text": "RT @cb_doge: Christmas Eve 2008. Tesla closed a funding round in the final hour, days from bankruptcy.\n\nElon Musk put in all his money &amp; as…",

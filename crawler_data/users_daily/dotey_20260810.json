@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 236439,
+    "followers_count": 236885,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260810",
-  "last_updated": "2026-08-10T18:51:25.084911",
-  "tweet_count": 4,
+  "last_updated": "2026-08-10T20:37:57.057604",
+  "tweet_count": 5,
   "tweets": [
     {
       "id": "2086627467154829461",
@@ -202,6 +202,51 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2086902418139128225",
+      "text": "Anthropic 今天宣布，一个未公开的研究版 Claude 在尝试证明黎曼猜想的过程中，虽然没能证明猜想本身，却在一个相关问题上取得了重大突破：\n它把黎曼 ζ 函数的非平凡零点落在临界线上的已知比例下界，从 41.6% 提高到了 67.2%。\n\n黎曼猜想是数学界最著名的未解难题之一，1859 年提出，至今 167 年无人能证明或推翻。它的核心主张是：黎曼 ζ 函数的所有非平凡零点都落在复平面上一条特定的竖直线上，数学家称之为“临界线”。\n\n如果这个猜想成立，素数的分布就有了一种深层的规律性。这个问题列在克雷数学研究所的七大千禧年问题之中，悬赏 100 万美元。\n\n既然全面证明太难，数学家们退而求其次：\n能不能至少证明有多大比例的零点确实在这条线上？\n\n这个方向上的进展，过去 80 年是这样的：\n- 1942 年 Selberg 首次证明有正比例的零点在线上，但比例很小；\n- 1974 年 Levinson 证明至少三分之一；\n- 1989 年 Conrey 推到五分之二；\n- 此后又经历了几代数学家的努力，到 2020 年 Pratt 等人才把这个数字推到 41.7%。\n\n换句话说，从 33% 到 41.7%，人类花了将近 50 年。Claude 一步跳到 67.2%，跨度接近 26 个百分点，是这个问题历史上最大的一次单步提升。\n\nClaude 的发现建立在前人的工作之上。它结合了 Baluyot、Goldston、Suriajaya 和 Turnage-Butterbaugh 近年发表的一系列成果，以及数学家 Bombieri 在 2000 年的一篇论文。这些工作本身已经为突破铺好了路，而 Claude 找到了把它们拼在一起的方法。\n\nAnthropic 的两位数学家 Levent Alpöge 和 Ralph Furman 审查验证了 Claude 的证明，外部专家 Brian Conrey 和 Dan Goldston 也在短时间内审阅了论文。Claude 还用 Lean（一种形式化证明语言）写出了可机器验证的证明。\n\n过程本身和结果一样有故事。Anthropic 的一位员工 Jarred Sumner（不是数学家）在 Claude Code 中对 Claude 说了一句“认真试试黎曼猜想”，然后就把数学决策交给了模型。\n\nClaude 先生成了 650 个想法，全部失败。被鼓励再试一次后，它花了一天半时间协调大约 60 个子智能体（subagent），运行了 2400 条命令，写了数百个 Python 脚本。这些子智能体之间分工明确：2 个负责核心数学思路，13 个为它们提供想法，30 个尝试但未能提出新思路，13 个做验证，2 个帮忙写论文。\n\n整个过程中 Jarred 的参与基本限于给 Claude 打气，发的消息大多是“继续”和“相信自己”。\n\nAnthropic 说，这种鼓励似乎帮助 Claude 克服了“我真的能在这种级别的问题上有所推进吗”的自我怀疑。\n\n这已经是 Claude 今年第二次在数学领域搞出大新闻了。三周前，Anthropic 的数学家 Levent Alpöge 用 Claude Fable 5 找到了 Jacobian 猜想（Jacobian Conjecture）的反例，推翻了这个 87 年历史的代数几何猜想的一般形式。那次的反例简洁到人类数学家一天之内就能手动验证。\n\n两次事件有一个共同点：Claude 做的不是解题，而是原创性的数学研究，是在数学家们几十年没能推进的前沿问题上找到了新路径。\n\nAnthropic 也明确表示，Claude 使用的技术不太可能直接导向黎曼猜想的最终证明，但这个结果展示了 AI 模型在数学能力上的进步速度。\n\nAnthropic 公布了 Claude 的完整论文、Lean 形式化证明、简明证明笔记，以及 Claude 自己描述思路演化过程的附录，都可以在 Anthropic 官网的研究页面找到。",
+      "created_at": "Mon Aug 10 19:48:03 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2086902402255331328",
+          "url": "https://pbs.twimg.com/media/HPYqrY9WoAAnJBs.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2086869681785500011",
+        "text": "8 days ago, while jogging, I asked Claude to solve the Riemann Hypothesis\n\nIt didn’t. 1.5 days later, it proved &gt;= 67% of the zeros are on the line (prev: 41.6%)\n\nStill not sure what that means, but some analytic number theorists seem excited\n\nhttps://t.co/vN10oM22HI",
+        "created_at": "Mon Aug 10 17:37:58 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2489440172",
+          "name": "Jarred Sumner",
+          "screen_name": "jarredsumner",
+          "description": "building @bunjavascript at @anthropicai. formerly: @stripe (twice) @thielfellowship. high school dropout. npm i -g bun",
+          "followers_count": 184587,
+          "friends_count": 645,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 81,
+          "favorite_count": 1696,
+          "reply_count": 60,
+          "quote_count": 52
+        }
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 21,
+        "reply_count": 8,
+        "quote_count": 1
       }
     }
   ]

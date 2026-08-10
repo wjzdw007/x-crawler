@@ -1,12 +1,354 @@
 {
   "date": "20260810",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-08-10T05:22:58.717707",
-  "tweet_count": 204,
-  "unique_tweet_count": 204,
-  "total_crawled": 403,
-  "duplicates_removed": 199,
+  "last_crawl_time": "2026-08-10T07:22:45.254277",
+  "tweet_count": 210,
+  "unique_tweet_count": 210,
+  "total_crawled": 404,
+  "duplicates_removed": 194,
   "tweets": [
+    {
+      "id": "2086712175276470478",
+      "text": "RT @istdrc: @sun_hanchi 你可能没理解 harness 实际上是什么\n\n如果只是说那点 system prompt 和 tool，那显然模型可以学会它们，从此之后只需要一个 tool list + tool 实现就够，而进一步地，当模型再强大一点，我们只需…",
+      "created_at": "Mon Aug 10 07:12:06 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2086643699216490851",
+        "text": "你可能没理解 harness 实际上是什么\n\n如果只是说那点 system prompt 和 tool，那显然模型可以学会它们，从此之后只需要一个 tool list + tool 实现就够，而进一步地，当模型再强大一点，我们只需要一个 bash tool，我参与过 Kimi K2.5 模型训练过程，以及从空的 system prompt、toolset 和 loop 开始写 harness，我当然知道人们说的 harness 训进模型是什么意思\n\n但你观察 harness 的发展史和这个词本身的出现，你就会发现，随着模型智能的提升，harness 是在不断变复杂的，parallel tool call、subagent、agent swarm、agent teams、handoff、pro-active compaction、channel、cross-session communication，你以为是模型都可以学会，实际上是 harness 变复杂了模型才可能学会\n\n所有这些确实都可以进一步随着模型加强而去掉，比如我在 Kimi CLI 时就准备去掉 subagent，换成直接 bash 调用（pi 就是这么做的），去掉 parallel tool call，换成 tool call script；但与此同时，更强的智能解锁了更复杂的与世界的互动，比如进一步可以引入主动 context rewind\n\n这是一个此消彼长的过程，就像这个“阴阳”比喻 https://t.co/M7i8kdnZNN\n\n观察动物乃至人类的进化你就会发现是一样的，随着智能水平的提高，人与世界的交互方式是越来越复杂的：当人相比猿更聪明的大脑被选择后，带来的并不是不需要用树枝计数，而是复杂的语言文字；同样，当人类社会作为群体智能的水平提高的时候，人们并不是取缔了纸，而是发明了计算机和互联网\n\n终局来看，harness 会逐渐和人类原来为“仅有的一种智能”所发展的社会基础设施合并，人类文明的一切都可以重新做一遍（显然我们已经观察到所有 SaaS 都可以重新做一遍，很快会看到更多，当然不只是计算机软件）\n\n不要只看到模型训练那一点局部，看看人类学吧",
+        "created_at": "Mon Aug 10 02:40:00 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2086568454434537710",
+          "text": "I was able to comment. The truth about Pi’s article actually just said thin prompt (your context) and thick harness \n\nHarness is about capturing  the invariant structural mechanism, the yang for yin(model)，the Apollo for the\nDionysus, the *Antigma*  for the Enigma",
+          "created_at": "Sun Aug 09 21:41:00 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "633509372",
+            "name": "Monk Zero",
+            "screen_name": "NoCommas",
+            "description": "@antigma_labs, prev: @awsCloud, @Meta, @Mysten_Labs. \nA Turing Complete mind, wandering the world of Gödel Incompleteness.",
+            "followers_count": 1561,
+            "friends_count": 986,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 4,
+            "favorite_count": 28,
+            "reply_count": 0,
+            "quote_count": 2
+          }
+        },
+        "user": {
+          "id": "1396345270967836673",
+          "name": "stdrc",
+          "screen_name": "istdrc",
+          "description": "founder of https://t.co/D80NEueS92 @raft_hq | former author of Kimi CLI @Kimi_Moonshot | ex-database kernel engineer @RisingWaveLabs",
+          "followers_count": 12012,
+          "friends_count": 785,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 27,
+          "favorite_count": 187,
+          "reply_count": 20,
+          "quote_count": 19
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 236359,
+        "friends_count": 1703,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 27,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2086701644192891249",
+      "text": "Grok Imagine is focused on professional usefulness, fun for consumers and overall ease-of-use",
+      "created_at": "Mon Aug 10 06:30:15 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2086691433956688183",
+        "text": "Grok 4.5 just ranked #1 on Design Arena for Daily Usage - measuring the average unique users actually interacting with apps built by each model every day\n\nIt's not just winning benchmarks....it's winning users\n\nAnd it's outperforming Claude Fable 5, Opus 4.8 and GPT-5.6 Sol by a ridiculous margin:\n\n1. Grok 4.5 — +563.2% vs average\n2. GLM 5.2 — +241.3%\n3. GPT-5.6 Sol — +103.0%\n\nClaude Fable 5 — +39.2%\nClaude Opus 4.8 — +38.9%\n\nThe interesting thing about this benchmark is that it's measuring whether REAL PEOPLE actually use the apps these models build\n\nAnd Grok 4.5 is absolutely dominating",
+        "created_at": "Mon Aug 10 05:49:41 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2086690502921883648",
+            "url": "https://pbs.twimg.com/media/HPVp9ObXEAA1jBu.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 254894,
+          "friends_count": 1978,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 24,
+          "favorite_count": 158,
+          "reply_count": 44,
+          "quote_count": 5
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241230493,
+        "friends_count": 1386,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 225,
+        "favorite_count": 1555,
+        "reply_count": 464,
+        "quote_count": 39
+      }
+    },
+    {
+      "id": "2086700243676995651",
+      "text": "Yes",
+      "created_at": "Mon Aug 10 06:24:41 +0000 2026",
+      "lang": "qst",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2086637818118619172",
+        "text": "🗣️: \"So your goal is to colonize the Moon, use it to build the AI Dyson Swarm, climb the Kardashev scale and usher a new age of expansion of human civilization amongst the stars?\"\n\n🗿: *Kardashev stare* Yes. https://t.co/nVAVKbSy3H",
+        "created_at": "Mon Aug 10 02:16:38 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2086637814708658176",
+            "url": "https://pbs.twimg.com/media/HPU6CXibYAA54A2.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1556550048862928898",
+          "name": "Beff (e/acc)",
+          "screen_name": "beffjezos",
+          "description": "founder @ e/acc //  thermo king @extropic // Kardashev scaling is all you need",
+          "followers_count": 265112,
+          "friends_count": 3387,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 47,
+          "favorite_count": 736,
+          "reply_count": 119,
+          "quote_count": 24
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241230493,
+        "friends_count": 1386,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 452,
+        "favorite_count": 4096,
+        "reply_count": 900,
+        "quote_count": 82
+      }
+    },
+    {
+      "id": "2086699979041612260",
+      "text": "RT @nikitabier: The hardest part about hiring great leaders for X is that you need someone who can be an outstanding voice on the platform…",
+      "created_at": "Mon Aug 10 06:23:38 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2086678613450227854",
+        "text": "The hardest part about hiring great leaders for X is that you need someone who can be an outstanding voice on the platform -- but also someone who is exceptional at trench warfare (i.e., sweating the details of the user experience and handling the daily chaos & creativity of bad actors).",
+        "created_at": "Mon Aug 10 04:58:44 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "636513296",
+          "name": "Nikita Bier",
+          "screen_name": "nikitabier",
+          "description": "ex-head of product @x",
+          "followers_count": 1278627,
+          "friends_count": 2057,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 222,
+          "favorite_count": 3083,
+          "reply_count": 533,
+          "quote_count": 126
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241230493,
+        "friends_count": 1386,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 222,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2086699456586518544",
+      "text": "RT @XFreeze: “Our mission is to build a world of amazing abundance”\n\nThat is the bigger idea behind Optimus\n\ncreating a future where physic…",
+      "created_at": "Mon Aug 10 06:21:34 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2086619119970025922",
+        "text": "“Our mission is to build a world of amazing abundance”\n\nThat is the bigger idea behind Optimus\n\ncreating a future where physical work can scale almost without limit https://t.co/BbUtD3iFAD",
+        "created_at": "Mon Aug 10 01:02:20 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2086619112755867648",
+            "url": "https://pbs.twimg.com/media/HPUpBxVasAA0X9W.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 254894,
+          "friends_count": 1978,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 134,
+          "favorite_count": 882,
+          "reply_count": 129,
+          "quote_count": 16
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241230493,
+        "friends_count": 1386,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 134,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2086699415423602848",
+      "text": "RT @Similarweb: Top 10 websites by total visits in July 2026:\n\n→ Bing and TikTok move up one spot each, to 8th and 9th, respectively.\n→ Wha…",
+      "created_at": "Mon Aug 10 06:21:24 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2086333683624038502",
+        "text": "Top 10 websites by total visits in July 2026:\n\n→ Bing and TikTok move up one spot each, to 8th and 9th, respectively.\n→ WhatsApp drops to 10th place.\n→ TikTok recorded the highest MoM growth, followed by X.\n→ After 8 of the top 10 saw traffic decline in June, all 10 grew in July.\n\nhttps://t.co/b39Z3Igrfr",
+        "created_at": "Sun Aug 09 06:08:07 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2086331562031726592",
+            "url": "https://pbs.twimg.com/media/HPQjgHaWQAARq9J.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "24683972",
+          "name": "Similarweb",
+          "screen_name": "Similarweb",
+          "description": "The World’s Leading AI-Powered Digital Data Company. Listed on @NYSE: $SMWB",
+          "followers_count": 63500,
+          "friends_count": 309,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 56,
+          "favorite_count": 381,
+          "reply_count": 48,
+          "quote_count": 14
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241230493,
+        "friends_count": 1386,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 56,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2086681154715804156",
       "text": "It’s possible that Starlink may end up doing &gt;90% of IP traffic, even if competitors 10X their bandwidth",

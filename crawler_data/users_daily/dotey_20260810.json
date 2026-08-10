@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 236346,
+    "followers_count": 236359,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260810",
-  "last_updated": "2026-08-10T05:22:58.771342",
-  "tweet_count": 2,
+  "last_updated": "2026-08-10T07:22:45.286292",
+  "tweet_count": 3,
   "tweets": [
     {
       "id": "2086627467154829461",
@@ -93,6 +93,69 @@
         "retweet_count": 1,
         "favorite_count": 6,
         "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2086712175276470478",
+      "text": "RT @istdrc: @sun_hanchi 你可能没理解 harness 实际上是什么\n\n如果只是说那点 system prompt 和 tool，那显然模型可以学会它们，从此之后只需要一个 tool list + tool 实现就够，而进一步地，当模型再强大一点，我们只需…",
+      "created_at": "Mon Aug 10 07:12:06 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2086643699216490851",
+        "text": "你可能没理解 harness 实际上是什么\n\n如果只是说那点 system prompt 和 tool，那显然模型可以学会它们，从此之后只需要一个 tool list + tool 实现就够，而进一步地，当模型再强大一点，我们只需要一个 bash tool，我参与过 Kimi K2.5 模型训练过程，以及从空的 system prompt、toolset 和 loop 开始写 harness，我当然知道人们说的 harness 训进模型是什么意思\n\n但你观察 harness 的发展史和这个词本身的出现，你就会发现，随着模型智能的提升，harness 是在不断变复杂的，parallel tool call、subagent、agent swarm、agent teams、handoff、pro-active compaction、channel、cross-session communication，你以为是模型都可以学会，实际上是 harness 变复杂了模型才可能学会\n\n所有这些确实都可以进一步随着模型加强而去掉，比如我在 Kimi CLI 时就准备去掉 subagent，换成直接 bash 调用（pi 就是这么做的），去掉 parallel tool call，换成 tool call script；但与此同时，更强的智能解锁了更复杂的与世界的互动，比如进一步可以引入主动 context rewind\n\n这是一个此消彼长的过程，就像这个“阴阳”比喻 https://t.co/M7i8kdnZNN\n\n观察动物乃至人类的进化你就会发现是一样的，随着智能水平的提高，人与世界的交互方式是越来越复杂的：当人相比猿更聪明的大脑被选择后，带来的并不是不需要用树枝计数，而是复杂的语言文字；同样，当人类社会作为群体智能的水平提高的时候，人们并不是取缔了纸，而是发明了计算机和互联网\n\n终局来看，harness 会逐渐和人类原来为“仅有的一种智能”所发展的社会基础设施合并，人类文明的一切都可以重新做一遍（显然我们已经观察到所有 SaaS 都可以重新做一遍，很快会看到更多，当然不只是计算机软件）\n\n不要只看到模型训练那一点局部，看看人类学吧",
+        "created_at": "Mon Aug 10 02:40:00 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2086568454434537710",
+          "text": "I was able to comment. The truth about Pi’s article actually just said thin prompt (your context) and thick harness \n\nHarness is about capturing  the invariant structural mechanism, the yang for yin(model)，the Apollo for the\nDionysus, the *Antigma*  for the Enigma",
+          "created_at": "Sun Aug 09 21:41:00 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "633509372",
+            "name": "Monk Zero",
+            "screen_name": "NoCommas",
+            "description": "@antigma_labs, prev: @awsCloud, @Meta, @Mysten_Labs. \nA Turing Complete mind, wandering the world of Gödel Incompleteness.",
+            "followers_count": 1561,
+            "friends_count": 986,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 4,
+            "favorite_count": 28,
+            "reply_count": 0,
+            "quote_count": 2
+          }
+        },
+        "user": {
+          "id": "1396345270967836673",
+          "name": "stdrc",
+          "screen_name": "istdrc",
+          "description": "founder of https://t.co/D80NEueS92 @raft_hq | former author of Kimi CLI @Kimi_Moonshot | ex-database kernel engineer @RisingWaveLabs",
+          "followers_count": 12012,
+          "friends_count": 785,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 27,
+          "favorite_count": 187,
+          "reply_count": 20,
+          "quote_count": 19
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 27,
+        "favorite_count": 0,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

@@ -3,13 +3,13 @@
     "screen_name": "elonmusk",
     "name": "Elon Musk",
     "description": "https://t.co/ZdBx5WABYx",
-    "followers_count": 241252707,
+    "followers_count": 241255000,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260811",
-  "last_updated": "2026-08-11T16:55:26.820368",
-  "tweet_count": 6,
+  "last_updated": "2026-08-11T18:56:52.820282",
+  "tweet_count": 11,
   "tweets": [
     {
       "id": "2086975888525066354",
@@ -304,6 +304,251 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2087223469582786873",
+      "text": "RT @JensenHuang: Lightning strikes for continuous and long-run agents!\n\nNemotron 3.5 Lightning is smart, fast, efficient and open.",
+      "created_at": "Tue Aug 11 17:03:48 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2087184542050496763",
+        "text": "Lightning strikes for continuous and long-run agents!\n\nNemotron 3.5 Lightning is smart, fast, efficient and open.",
+        "created_at": "Tue Aug 11 14:29:07 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2087162151995629926",
+          "text": "Introducing NVIDIA Nemotron 3.5 Lightning⚡\n\nAn open 30B MoE model with 3B active parameters, built for always-on agents to complete high-volume, specialized tasks faster.\n\nIt delivers up to 4x the output speed of similar-sized models. https://t.co/ENWrZe76pU",
+          "created_at": "Tue Aug 11 13:00:09 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2087159401756901376",
+              "url": "https://pbs.twimg.com/media/HPcUautWQAA6vS0.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "740238495952736256",
+            "name": "NVIDIA AI",
+            "screen_name": "NVIDIAAI",
+            "description": "Teaching your AI new tricks.",
+            "followers_count": 328497,
+            "friends_count": 896,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 433,
+            "favorite_count": 3845,
+            "reply_count": 191,
+            "quote_count": 241
+          }
+        },
+        "user": {
+          "id": "2070631956824698880",
+          "name": "Jensen Huang",
+          "screen_name": "JensenHuang",
+          "description": "Founder and CEO of NVIDIA.",
+          "followers_count": 1007786,
+          "friends_count": 53,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 494,
+          "favorite_count": 5523,
+          "reply_count": 380,
+          "quote_count": 90
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 494,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2087228471667781885",
+      "text": "lmao",
+      "created_at": "Tue Aug 11 17:23:41 +0000 2026",
+      "lang": "ht",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2086503225969295453",
+        "text": "\"we have sandboxed the agent\"\n\nthe agent: https://t.co/oPyxVeDBOf",
+        "created_at": "Sun Aug 09 17:21:49 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2086502896020176896",
+            "url": "https://video.twimg.com/amplify_video/2086502896020176896/vid/avc1/1920x1080/68BVlkXBtzUrUnwv.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2011124351568056320",
+          "name": "san",
+          "screen_name": "saneord",
+          "description": "that rando guy @ AgentChat",
+          "followers_count": 828,
+          "friends_count": 434,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 181,
+          "favorite_count": 1953,
+          "reply_count": 58,
+          "quote_count": 50
+        }
+      },
+      "stats": {
+        "retweet_count": 541,
+        "favorite_count": 5326,
+        "reply_count": 600,
+        "quote_count": 37
+      }
+    },
+    {
+      "id": "2087232895798616122",
+      "text": "What would you most like us to add to or fix about Grok Build?",
+      "created_at": "Tue Aug 11 17:41:15 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2087189868875075617",
+        "text": "🚨 NEW GROK BUILD UPDATE 🚨\n\nv1.0.1 — 2026-08-10 \n\nUpdates:\n• /rewind now only truncates conversation history instead of files as well and asks for confirmation by default.\n• Managed MCP servers are now only available through the gateway catalog.\n\nFeatures:\n• Subagent spawning is now bounded; wide fan-outs queue instead of exhausting file descriptors.\n• New grok du command shows disk usage of ~/.grok including worktrees and sessions.\n• Tools now report whether they only read data, enabling safer restricted agents and subagents.\n• Sandbox workspace sessions can now limit which bundled skills are advertised via caller config.\n• Renaming a session from the dashboard now starts with the current title prefilled for easy editing.\n• /usage, /session-info, and /context now open in a tabbed modal instead of adding text to the conversation.\n• grok trace exports now bundle memory trace files for easier debugging.\n• Session rename now enforces a 100-character limit, ghost-prefills the current title, and preserves manual titles across machines.\n• New /rename --auto command unpins a manual session title so automatic titling resumes.\n• Video generation from references now supports preset voices, single-image input, 1–15 s durations, and 4:3 / 3:4 aspect ratios.\n\nBug Fixes:\n• Sandbox config entries ending in /** now correctly grant the parent directory instead of creating a literal ** subdirectory.\n• Failed alpha/enterprise updates now suggest the matching GROK_CHANNEL reinstall command.\n• On Apple Silicon, grok now installs the native arm64 build even from a Rosetta shell or x86_64 updater.\n• Skills that share names with built-in commands now appear alongside them in the slash menu with qualified names.\n• Notebook permission rules imported from Claude configs are now ignored with a warning instead of applying broadly.\n• Goal evaluation at round end no longer fails due to timeouts.\n• Tool timeouts no longer cause the agent to hang when child processes are stuck in D-state or hold pipes open.\n• Home and End keys now move to the start or end of the current logical line even when the prompt is wrapped.\n• Worktree sessions now correctly show their branch in the status bar.\n• Worktree sessions now keep their status correctly when switching directories or resuming.\n• Worktree status is no longer lost when opening the dashboard.\n• Recaps are now written in the same language as your conversation.\n• Plugin suggestions no longer flash incorrectly while typing.\n• Send Now now works during active goals without cancelling the goal.\n• Headless sessions now correctly wait for MCP servers when using delivery tools.\n• Non-interactive sessions (grok -p) no longer fail when the agent asks for user input or plan approval.\n• read_file errors for missing skills now suggest the correct registered path instead of a generic hint.\n• Session load and creation can no longer freeze forever when .envrc evaluation blocks.\n• Upgraded installs no longer silently run outdated platform skill instructions.\n• Deleting a session now properly stops and waits for any running subagents before wiping history.\n• Permission and plan-approval notification hooks no longer fire on auto-allowed tools.\n• Mid-turn steering sent with double-Enter or Ctrl+Enter now correctly tells the model it arrived while work was in progress.\n• Scrollback drag selection no longer gets stuck after the mouse button is released outside VS Code or Cursor terminals.\n• Video generation tools now show a clear error explaining ZDR storage requirements instead of silently disappearing.\n• Esc on the cancel-turn panel now closes the panel and keeps the current turn running as the shortcuts bar indicates.\n\nDownload Grok Build: https://t.co/O78rf2Dpaz\n\nUpdate to the latest Alpha release: grok update --alpha\n\nUpdate to the latest Stable release: grok update",
+        "created_at": "Tue Aug 11 14:50:17 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2087189862520696833",
+            "url": "https://pbs.twimg.com/media/HPcwHx5XsAE2WOC.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1896102,
+          "friends_count": 1028,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 48,
+          "favorite_count": 285,
+          "reply_count": 54,
+          "quote_count": 16
+        }
+      },
+      "stats": {
+        "retweet_count": 329,
+        "favorite_count": 2090,
+        "reply_count": 1138,
+        "quote_count": 28
+      }
+    },
+    {
+      "id": "2087233507370147920",
+      "text": "We will widen the Grok Bot beta after we fix basic issues with the early beta and release Grok 4.6 later this week",
+      "created_at": "Tue Aug 11 17:43:41 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2087224798078517251",
+        "text": "Introducing Grok Bot, now in early beta.\n\nBots are AI teammates that do real work for you. They sign in to your tools, use them just like you do, and come back with finished work. https://t.co/uyfA97yo98",
+        "created_at": "Tue Aug 11 17:09:05 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2087221157787525120",
+            "url": "https://video.twimg.com/amplify_video/2087221157787525120/vid/avc1/3840x2160/6h-ilLTaW4Kxmusy.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2085838061347217408",
+          "name": "Grok Bot",
+          "screen_name": "bot",
+          "description": "AI teammates that you can give real work to.",
+          "followers_count": 21213,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1101,
+          "favorite_count": 8859,
+          "reply_count": 1058,
+          "quote_count": 1048
+        }
+      },
+      "stats": {
+        "retweet_count": 601,
+        "favorite_count": 5303,
+        "reply_count": 747,
+        "quote_count": 106
+      }
+    },
+    {
+      "id": "2087235939055591862",
+      "text": "They can’t handle the truth is the real issue here",
+      "created_at": "Tue Aug 11 17:53:21 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2086803318941118510",
+        "text": "Toch benieuwd wat @elonmusk van deze kwalificatie zou vinden (U mag raden wie 'm maakt en waar):\n\n\"Premier Jetten moet Yesilgöz, en alle andere bewindslieden van zijn minderheidskabinet, verbieden om zich op sociale media uit te laten over alles dat buiten de eigen portefeuille valt. Daarnaast moet men natuurlijk sowieso geen mededelingen meer doen op X, een platform dat wordt gedomineerd door desinformatie, en dat in handen is van de rijkste man ter wereld, die bovendien een totale fascist is.\"",
+        "created_at": "Mon Aug 10 13:14:16 +0000 2026",
+        "lang": "nl",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "200098418",
+          "name": "Wierd Duk ܦܝܪܬ ܕܘܟ",
+          "screen_name": "wierdduk",
+          "description": "Historicus I Opiniemaker @Telegraaf @nieuwsvandedag_ I Tafelgast woensdag @VandaagInside I Podcastmaker 'Het Land van Wierd Duk' I Tips: wierd.duk@telegraaf.nl",
+          "followers_count": 243322,
+          "friends_count": 11170,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 101,
+          "favorite_count": 854,
+          "reply_count": 195,
+          "quote_count": 25
+        }
+      },
+      "stats": {
+        "retweet_count": 530,
+        "favorite_count": 3886,
+        "reply_count": 479,
+        "quote_count": 51
       }
     }
   ]

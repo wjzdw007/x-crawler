@@ -1,0 +1,164 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 238238,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260811",
+  "last_updated": "2026-08-11T03:40:38.984006",
+  "tweet_count": 4,
+  "tweets": [
+    {
+      "id": "2086989769955811633",
+      "text": "这个试验很有意思：100万美元预算，让给20多人的团队不限量 Token 使用 AI。\n\n结论是：\n人会更累，AI 的成本比人还高；\n效率提升最大的是组织从 0 到 1 使用 AI；\n公司的组织架构还是为人设计的，就算有无限 Token，效率提升上也有明显天花版；\n人的思考都外包给 AI 了，对项目细节掌控度下降，需要问 AI 才能回复别人的问题。",
+      "created_at": "Tue Aug 11 01:35:10 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2086933133208006689",
+        "text": "目前我在硅谷的 AI 训练/推理大厂带领一个 20 多人的团队，跟公司申请了预算100万美元，进行Token 不限量的激进实验, 这个帖子分享我在一线的使用认知和结论\n\n结论是：Token 不限量不切实际，比人类贵很多，反而造成了在组织效率提升上，遭遇了明显的边际效益门槛。\n\n我预计 AI 真正的上行空间不在于单个组织消耗 token 冲破天际线，而在于基本的大盘子从 0 到 1 开始到 AI token 使用\n\nAI 现在无法落地，有很大一部分是因为我们的公司不够 AI native，整个组织架构还是为人而设计的。因此，AI 的无预算上线使用出现了水土不服\n\n> 先说数据：\n\n最多的成员单日花费 Token $7,000，团队中位数 $2,000。大家最喜欢的模型是 GPT-5.6 Sol  Fast 和 Fable 5 Fast。算下来超过了大部分人的月工资，不可持续\n\n> 今天跟团队每个成员都 1 对 1 过，说几个共性问题\n\n1. 团队成员普遍反映比之前更累，真的很累，工资没变，干的活反而更多\n\n在等待推理过程中，团队成员中位数大概会开 5 个 session 并行去使用，context 不断地转换，这对于人脑是一个很大的挑战\n\n此外，人类去 review AI 产生的大量工作，也带来了非常大的负担\n\n2. 未必所有工作都需要贵模型。模型路由非常关键，但便宜模型未必真的便宜\n\n成员通常会将一些更偏向于快问快答、前期调研的任务交给 Grok 4.5（便宜、快）。虽然等待时间更短，但来回反复的次数更多。很多贵模型一次能完成的事情，便宜模型要来回迭代，再加上之前多个 session 并行，反而造成了一种负担。总的调用量换算成价格，甚至比贵模型更贵\n\n3. 团队的会议数上个月环比减少了将近 80%，整个团队好像变成了 AI 跟 AI 在对话工作\n\n很多团队成员将自己的大脑都托管给 AI 了，因此有的时候对项目的细节掌握度、理解度都不够。\n\n在会上别人问什么问题，人类完全无法 real-time 回答，所以更多地变成了 offline 的沟通方式——因为在 offline 情况下，收到问题之后才能去问 AI，然后再进行回答\n\n个别情况下，群里出现了 AI 一通乱答，对面的 AI 再一通乱答，两个人直接聊偏的情况",
+        "created_at": "Mon Aug 10 21:50:06 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2058239737522204672",
+          "name": "美研芒格君",
+          "screen_name": "Kay2289123",
+          "description": "小红书也是这个id @Kay2289123，\nx仅此一号，完全没有助理。\n没whatsapp，都是骗子\n\n硅谷一线大厂从事AI Training Inference\n\n团队成员来自斯坦福，UCLA，沃顿",
+          "followers_count": 24761,
+          "friends_count": 24,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 26,
+          "favorite_count": 282,
+          "reply_count": 52,
+          "quote_count": 24
+        }
+      },
+      "stats": {
+        "retweet_count": 15,
+        "favorite_count": 89,
+        "reply_count": 27,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "2086990367216312612",
+      "text": "转自刘群MT-to-Death：\n很多人不理解文本水印是怎么回事。\n\n文本水印是嵌入到语言生成中的一种印记，比如可以用A/B两个同义词的时候总是选择B、可以用两种表达方式C/D的时候总是选择次高概率的D，这样文本看起来没有任何问题，但实际上是可以检测到的。\n\n由于水印是加在文本内容上的，转变成图像再用OCR扫描出文本也没有任何用处。这种水印的添加和检测都是由大模型来做的，人很难感知到。\n\n当然修改文本有可能破坏这种水印，但由于人不知道这些水印会加在那些词上，所以水印也很难全部破坏掉。",
+      "created_at": "Tue Aug 11 01:37:32 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2086990361944064001",
+          "url": "https://pbs.twimg.com/media/HPZ6rUVXAAEO7z0.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 15,
+        "reply_count": 3,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2087010791178301852",
+      "text": "RT @xleaps: 2026 年上半年的 Sonnet 还能主打一个 Coding Subagent. \n\n到了 2026 年下半年，特别是 GLM 5.2, Kimi K3 和 GPT Luna 三英战吕布，Sonnet 在价格上毫无竞争力，而且 Tokenizer 还凭…",
+      "created_at": "Tue Aug 11 02:58:42 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2087001188910653904",
+        "text": "2026 年上半年的 Sonnet 还能主打一个 Coding Subagent. \n\n到了 2026 年下半年，特别是 GLM 5.2, Kimi K3 和 GPT Luna 三英战吕布，Sonnet 在价格上毫无竞争力，而且 Tokenizer 还凭空多了 40% 的 Token 用量，属于生态位严重受限的模型。\n\nSonnet 实际上是 Anthropic 最赚钱(margin 最高）的模型，如果 Sonnet 不能维持定价权，搞不好 Anthropic 全年的外推 ARR 会因此在年中达到最高后下降。",
+        "created_at": "Tue Aug 11 02:20:32 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2086891169217122586",
+          "text": "We're making Claude Sonnet 5's introductory pricing permanent.\n\nWe launched Sonnet 5 in June at $2 per million input tokens and $10 per million output tokens through August 31, and that price will remain unchanged.",
+          "created_at": "Mon Aug 10 19:03:21 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1943306828697550848",
+            "name": "Claude",
+            "screen_name": "claudeai",
+            "description": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8dz3D or download the app.",
+            "followers_count": 1709562,
+            "friends_count": 2,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 436,
+            "favorite_count": 7768,
+            "reply_count": 956,
+            "quote_count": 405
+          }
+        },
+        "user": {
+          "id": "732363",
+          "name": "Eric Xu (e/Mettā)",
+          "screen_name": "xleaps",
+          "description": "polymath, polyglot, root of a ternary tree.\n\nbuilding  https://t.co/GTxh2wWMcX\n\nprev @Meta @Google @Reddit\n\nphd in classic ai; rookie pilot 🛩️; martial artist",
+          "followers_count": 35262,
+          "friends_count": 3665,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 19,
+          "reply_count": 2,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2087019283523961339",
+      "text": "Codex/Claude Code 现在都支持跨session访问会话了，还是挺方便的，比如我昨天在测试我的 App 在 Windows 的运行情况，先在某个测试 Project 中调用 BaoCut Skill 去做转录视频，发现第一次运行时下载模型体验很糟糕。\n\n然后我到 BaoCut 所在源代码项目中，把会话的 Session Id 给它，让它去分析原因并给出优化方案，这样就不需要你自己去让 Agent 自己总结，也不用担心总结的时候会损失上下文，Agent 自己可以去会话中找所需的上下文。",
+      "created_at": "Tue Aug 11 03:32:26 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2087017994480185348",
+          "url": "https://pbs.twimg.com/media/HPaTzvjW8AQ9Wt5.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2087018238966120448",
+          "url": "https://pbs.twimg.com/media/HPaUB-VWQAAGTON.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    }
+  ]
+}

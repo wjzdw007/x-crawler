@@ -1,12 +1,110 @@
 {
   "date": "20260812",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-08-12T01:26:44.939118",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-08-12T04:04:04.074012",
+  "tweet_count": 202,
+  "unique_tweet_count": 202,
+  "total_crawled": 400,
+  "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2087377704286847246",
+      "text": "我是能不用worktree就不用worktree，要么不同任务用branch分支，要么就直接同一个分支多任务，一般不太用担心冲突，首先只要任务类型不一样冲突可能性较小。\n\n另外现在 Harness 比如说 Claude Code、Codex 都很聪明，遇到冲突会等另一个执行完。\n\n使用 worktree 主要是在做耗时较长的 PoC 场景，只是验证一下，同时要做其他任务，完了就删除目录。",
+      "created_at": "Wed Aug 12 03:16:40 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2087195994635001949",
+        "text": "worktree 会创建很多目录，导致磁盘空间占用比较厉害",
+        "created_at": "Tue Aug 11 15:14:38 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 240378,
+          "friends_count": 1703,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 26,
+          "reply_count": 54,
+          "quote_count": 4
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 240378,
+        "friends_count": 1703,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 10,
+        "reply_count": 14,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2087377114446041142",
+      "text": "这里的老登代表的更多是心态不是年龄😜",
+      "created_at": "Wed Aug 12 03:14:20 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2087368207682175297",
+        "text": "现在做 AI 项目，真的不能找太老登的人，我孵化了一个项目。CTO 对 AI 写代码充满了偏见，坚持手搓，并且说这样才纯粹、没有问题。\n\n我说倒也没啥，我倒不反对。做事我们要认真，把潜在的风险尽可能规避，但是你坚持手搓，导致整个项目周期拖到五六个月才能发版。\n\n结果从功能上直接被竞争对手远远超过，现在整个项目就很尴尬了",
+        "created_at": "Wed Aug 12 02:38:56 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1464631743831547911",
+          "name": "大罗SEO",
+          "screen_name": "daluoseo",
+          "description": "出海 Growth Marketing / SEO专家 | 提供SEO咨询，优化服务以及高权重外链 |  油管: 大罗SEO\nPartner @ HashMatrix",
+          "followers_count": 10967,
+          "friends_count": 1354,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 12,
+          "reply_count": 12,
+          "quote_count": 2
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 240378,
+        "friends_count": 1703,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 7,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2087323013158990077",
       "text": "RT @dongxi_nlp: “所有中国模型都在复制美国前沿模型”，显然是一种粗暴且缺乏证据支撑的叙事。\n\n然而，有组织和规模化采集美国闭源模型输出的行为，已经超出纯粹传闻的范畴。Anthropic 披露的 API 流量证据，加上这篇论文展示的攻击机制，使相关指控形成了一条技…",

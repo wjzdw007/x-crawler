@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 240150,
+    "followers_count": 240251,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260811",
-  "last_updated": "2026-08-11T22:37:43.492201",
-  "tweet_count": 10,
+  "last_updated": "2026-08-12T01:26:44.969487",
+  "tweet_count": 11,
   "tweets": [
     {
       "id": "2086989769955811633",
@@ -380,6 +380,75 @@
         "favorite_count": 13,
         "reply_count": 20,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2087323013158990077",
+      "text": "RT @dongxi_nlp: “所有中国模型都在复制美国前沿模型”，显然是一种粗暴且缺乏证据支撑的叙事。\n\n然而，有组织和规模化采集美国闭源模型输出的行为，已经超出纯粹传闻的范畴。Anthropic 披露的 API 流量证据，加上这篇论文展示的攻击机制，使相关指控形成了一条技…",
+      "created_at": "Tue Aug 11 23:39:21 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2087248596135444865",
+        "text": "“所有中国模型都在复制美国前沿模型”，显然是一种粗暴且缺乏证据支撑的叙事。\n\n然而，有组织和规模化采集美国闭源模型输出的行为，已经超出纯粹传闻的范畴。Anthropic 披露的 API 流量证据，加上这篇论文展示的攻击机制，使相关指控形成了一条技术上连贯的证据链。\n\n常规蒸馏：\n问题 -> 最终答案\n\n论文揭示的漏洞可能提供密度更高的数据：\n问题 -> 隐藏推理 -> 最终答案\n\n由此可以构造完整的推理蒸馏 pipeline：\n\nFrontier API -> Encrypted Reasoning Trace -> Weak Decoder -> Reasoning Dataset -> SFT/RL\n\n最值得关注的是 Appendix B：\n\n在注入少量 Opus 或 GPT-5.6 Sol 推理片段后，Kimi-K3 和 GLM-5.2 的生成会选择性地向来源模型偏移；但包括 DeepSeek 模型在内的对照组通常没有表现出同等程度的变化。\n\n这篇论文虽然在技术上证明了蒸馏的可行性，但现有公开证据仍无法确认这些蒸馏轨迹是否进入了某个具体模型的训练集，也无法量化中国开源模型的性能中有多少来自闭源前沿模型。\n\n最后，东方西方，蒸馏起来吧！",
+        "created_at": "Tue Aug 11 18:43:39 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2087147042888114428",
+          "text": "We can finally talk about it:\n\nWe found a way to extract hidden reasoning of frontier models using a vulnerability in the APIs of every frontier AI company.\n\nWe verified that our reasoning token count matches billed API thinking tokens 1:1 for most of the prompts we queried. https://t.co/S7wN8aP3X7",
+          "created_at": "Tue Aug 11 12:00:06 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2087147040304431104",
+              "url": "https://pbs.twimg.com/media/HPcJLMtagAAx07t.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "2166995768",
+            "name": "Alexander Panfilov",
+            "screen_name": "kotekjedi_ml",
+            "description": "MATS 9.0 | PhD @ELLISInst_Tue & @MPI_IS\n\ndoing AI Safety & Adversarial ML",
+            "followers_count": 5357,
+            "friends_count": 370,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1255,
+            "favorite_count": 9215,
+            "reply_count": 242,
+            "quote_count": 404
+          }
+        },
+        "user": {
+          "id": "1477948736156454913",
+          "name": "Dongxi 东锡 NLP",
+          "screen_name": "dongxi_nlp",
+          "description": "Prev. PhD @Stockholm_Uni | Alumni @KTHuniversity @uppsalauni Sharing insights on AI, autonomous agents, and large language & reasoning models",
+          "followers_count": 40387,
+          "friends_count": 931,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5,
+          "favorite_count": 41,
+          "reply_count": 23,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
       }
     }
   ]

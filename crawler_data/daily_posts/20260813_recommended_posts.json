@@ -1,12 +1,312 @@
 {
   "date": "20260813",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-08-13T04:08:05.308761",
-  "tweet_count": 201,
-  "unique_tweet_count": 201,
-  "total_crawled": 400,
-  "duplicates_removed": 199,
+  "last_crawl_time": "2026-08-13T07:20:21.882705",
+  "tweet_count": 207,
+  "unique_tweet_count": 207,
+  "total_crawled": 401,
+  "duplicates_removed": 194,
   "tweets": [
+    {
+      "id": "2087783863741256149",
+      "text": "最近一直在忙着把我的 App 变成跨平台的，试了几种方案还是决定用 Rust + GPUI。\n\n一开始就是用的 Electron，但是视频编辑这种场景纯网页实现性能优化还是挺不容易的，尤其是视频一长、字幕一多就会很卡，内存占用也很夸张。我不怀疑持续优化下去能是能有一个还不错的性能的，但要花不少时间精力。\n\n所以我后来就决定先做一个 Mac 版本（图1），Swift + AppKit，用 Fable 5 开发，效果特别好，跟设计稿几乎一样。必须说 Fable 5 在还原 UI 能力上是最强的，没有之一。\n\n但现在想要支持跨平台，就还得考虑其他方案。先是用 Rust 做了一个跨平台 cli 的 PoC，效果很好，音频转录和视频导出的性能比 Swift 还好，还能支持 Mac、Windows 多平台。\n\n接下来就是把 Swift 版本移植到 cli 之上，工作量还是挺大的，前期开发的功能越多，现在迁移工作就越难。初步是完成了，但接下来就是 Windows 版本的支持。\n\n再去基于 cli 开发个 windows 版本成本还是挺高，尤其是要去 windows 电脑上开发测试，各种逻辑同步想想都头大。现在 AI 让写代码变得成本很低，但是测试和验收成本还在那里，跨平台的好处就是你核心逻辑测试没问题，后面只有少量兼容性的问题需要去测试，工作量小很多。\n\n因为 cli 已经是 rust 写的，所以自然而然就会想到用 rust 的 GPUI 去做跨平台，不过决定之前肯定是要先做 PoC 验证的。\n\n跟 Fable 5 一起写了个技术方案文档，由于上个周期额度到了，后面就先让 GPT 5.6 Sol 去实现了一个 PoC 版本（图2），还不错了。\n\n今天 Grok 4.6 发布，又用 Cursor + Grok 4.6 实现了一个版本（图3），效果要差一些。Grok 4.6 有点好处就是生成的速度极快\n\n今天晚上 Claude 的额度终于刷新了，再让 Fable 去实现了一个版本（图4），相对来说是最好的一个，但离成品也还有不小的差距。\n\n经过这三个 PoC 版本，至少可行性上是没什么问题了，性能也很好，接下来就沿着这个方向走下去了。\n\n---\n\n对了，现在 BaoCut Skill 从 Windows 下也可以转录和翻译视频了：\nhttps://t.co/lU5E1qFsNe",
+      "created_at": "Thu Aug 13 06:10:36 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2087778763094323200",
+          "url": "https://pbs.twimg.com/media/HPlHuTfXcAAUoHh.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2087782517474574336",
+          "url": "https://pbs.twimg.com/media/HPlLI1pXwAAAaqQ.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2087782812527017985",
+          "url": "https://pbs.twimg.com/media/HPlLaAzWwAESWu0.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2087783080534609920",
+          "url": "https://pbs.twimg.com/media/HPlLpnNWEAAY2JS.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 240766,
+        "friends_count": 1706,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 64,
+        "reply_count": 14,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2087770286364270882",
+      "text": "RT @XFreeze: one best thing about Grok 4.6 is that you don't have to set a goal or loop\nIt now works for a long time autonomously as long a…",
+      "created_at": "Thu Aug 13 05:16:39 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2087769103821918619",
+        "text": "one best thing about Grok 4.6 is that you don't have to set a goal or loop\nIt now works for a long time autonomously as long as it can finish the job and it really really tries to finish the job",
+        "created_at": "Thu Aug 13 05:11:57 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 258152,
+          "friends_count": 1983,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 117,
+          "favorite_count": 908,
+          "reply_count": 152,
+          "quote_count": 13
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241270274,
+        "friends_count": 1389,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 117,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2087768706193789006",
+      "text": "RT @Austen: Maybe it's just because it's new and shiny but I'm obsessed with with Grok Bot.\n\nThe form factor is so fun, especially when com…",
+      "created_at": "Thu Aug 13 05:10:23 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2087685264617406963",
+        "text": "Maybe it's just because it's new and shiny but I'm obsessed with with Grok Bot.\n\nThe form factor is so fun, especially when combined with text to speech. You can FLY.\n\nAutomations just work, cross-bot messaging works perfectly (I do most everything through my \"chief of staff\"). https://t.co/tEAcRqmfTT",
+        "created_at": "Wed Aug 12 23:38:49 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2087684777478373376",
+            "url": "https://pbs.twimg.com/media/HPjyPnyWwAAJZdY.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "221838349",
+          "name": "Austen Allred",
+          "screen_name": "Austen",
+          "description": "CEO https://t.co/m6TigM4CJT: Free AI training for the smartest engineers. Will tweet as I wish and suffer the consequences. Accelerando: @kellyclaudeai",
+          "followers_count": 478299,
+          "friends_count": 1570,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 82,
+          "favorite_count": 899,
+          "reply_count": 72,
+          "quote_count": 11
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241270274,
+        "friends_count": 1389,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 82,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2087766835609719230",
+      "text": "RT @BasedMikeLee: I’m not sure who made this.\n\nBut it rocks. https://t.co/MrSeaeqPDv",
+      "created_at": "Thu Aug 13 05:02:57 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2087723659293024256",
+          "url": "https://video.twimg.com/amplify_video/2087723659293024256/vid/avc1/1440x1080/Qcn9d9ZeWOjqa7Ag.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": {
+        "id": "2087723917112721847",
+        "text": "I’m not sure who made this.\n\nBut it rocks. https://t.co/MrSeaeqPDv",
+        "created_at": "Thu Aug 13 02:12:24 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2087723659293024256",
+            "url": "https://video.twimg.com/amplify_video/2087723659293024256/vid/avc1/1440x1080/Qcn9d9ZeWOjqa7Ag.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1551266822460162051",
+          "name": "Mike Lee",
+          "screen_name": "BasedMikeLee",
+          "description": "Restore federalism and separation of powers by passing the REINS Act now!",
+          "followers_count": 703243,
+          "friends_count": 4005,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1604,
+          "favorite_count": 13913,
+          "reply_count": 526,
+          "quote_count": 162
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241270274,
+        "friends_count": 1389,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1601,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2087760446212522196",
+      "text": "https://t.co/irXUkk1duy",
+      "created_at": "Thu Aug 13 04:37:33 +0000 2026",
+      "lang": "zxx",
+      "media": [
+        {
+          "type": "video",
+          "id": "2087723659293024256",
+          "url": "https://video.twimg.com/amplify_video/2087723659293024256/vid/avc1/1440x1080/Qcn9d9ZeWOjqa7Ag.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241270274,
+        "friends_count": 1389,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4824,
+        "favorite_count": 50358,
+        "reply_count": 4223,
+        "quote_count": 855
+      }
+    },
+    {
+      "id": "2087760069693997530",
+      "text": "Grok 4.6 has a great sense of humor 😂",
+      "created_at": "Thu Aug 13 04:36:03 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2087704273438052632",
+        "text": "I have no idea why but Grok-4.6 just totally freaked out doing some maintenance tasks when it saw my low github id. https://t.co/TGcVPR0Anl",
+        "created_at": "Thu Aug 13 00:54:21 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2087703961486729216",
+            "url": "https://pbs.twimg.com/media/HPkDsRyXoAA3H7z.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "676573",
+          "name": "tobi lutke",
+          "screen_name": "tobi",
+          "description": "Shopify CEO by day, Dad in evening, hacker at night, Aspiring comprehensivist. \n+ qmd !",
+          "followers_count": 485538,
+          "friends_count": 2218,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 437,
+          "favorite_count": 17448,
+          "reply_count": 618,
+          "quote_count": 159
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241270274,
+        "friends_count": 1389,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 428,
+        "favorite_count": 4387,
+        "reply_count": 510,
+        "quote_count": 42
+      }
+    },
     {
       "id": "2087750978330062894",
       "text": "RT @yangyi: 看到很多人开始做企业AI转型或者FDE，或者帮企业GTM，其实这里面也有挺多门道的\n\n首先你不挑客户，你就会被客户挑\n世界都是反着的\n想办法做出溢价，让客户付更多的钱，你说的哪怕是错的，他们也会听\n相反，你卖的很廉价，客户反而事儿多，要求这要求那\n对于这…",

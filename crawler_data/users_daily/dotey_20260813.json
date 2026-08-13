@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 240744,
+    "followers_count": 240766,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260813",
-  "last_updated": "2026-08-13T04:08:05.350876",
-  "tweet_count": 3,
+  "last_updated": "2026-08-13T07:20:21.908104",
+  "tweet_count": 4,
   "tweets": [
     {
       "id": "2087708053009273250",
@@ -155,6 +155,42 @@
         "retweet_count": 1,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2087783863741256149",
+      "text": "最近一直在忙着把我的 App 变成跨平台的，试了几种方案还是决定用 Rust + GPUI。\n\n一开始就是用的 Electron，但是视频编辑这种场景纯网页实现性能优化还是挺不容易的，尤其是视频一长、字幕一多就会很卡，内存占用也很夸张。我不怀疑持续优化下去能是能有一个还不错的性能的，但要花不少时间精力。\n\n所以我后来就决定先做一个 Mac 版本（图1），Swift + AppKit，用 Fable 5 开发，效果特别好，跟设计稿几乎一样。必须说 Fable 5 在还原 UI 能力上是最强的，没有之一。\n\n但现在想要支持跨平台，就还得考虑其他方案。先是用 Rust 做了一个跨平台 cli 的 PoC，效果很好，音频转录和视频导出的性能比 Swift 还好，还能支持 Mac、Windows 多平台。\n\n接下来就是把 Swift 版本移植到 cli 之上，工作量还是挺大的，前期开发的功能越多，现在迁移工作就越难。初步是完成了，但接下来就是 Windows 版本的支持。\n\n再去基于 cli 开发个 windows 版本成本还是挺高，尤其是要去 windows 电脑上开发测试，各种逻辑同步想想都头大。现在 AI 让写代码变得成本很低，但是测试和验收成本还在那里，跨平台的好处就是你核心逻辑测试没问题，后面只有少量兼容性的问题需要去测试，工作量小很多。\n\n因为 cli 已经是 rust 写的，所以自然而然就会想到用 rust 的 GPUI 去做跨平台，不过决定之前肯定是要先做 PoC 验证的。\n\n跟 Fable 5 一起写了个技术方案文档，由于上个周期额度到了，后面就先让 GPT 5.6 Sol 去实现了一个 PoC 版本（图2），还不错了。\n\n今天 Grok 4.6 发布，又用 Cursor + Grok 4.6 实现了一个版本（图3），效果要差一些。Grok 4.6 有点好处就是生成的速度极快\n\n今天晚上 Claude 的额度终于刷新了，再让 Fable 去实现了一个版本（图4），相对来说是最好的一个，但离成品也还有不小的差距。\n\n经过这三个 PoC 版本，至少可行性上是没什么问题了，性能也很好，接下来就沿着这个方向走下去了。\n\n---\n\n对了，现在 BaoCut Skill 从 Windows 下也可以转录和翻译视频了：\nhttps://t.co/lU5E1qFsNe",
+      "created_at": "Thu Aug 13 06:10:36 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2087778763094323200",
+          "url": "https://pbs.twimg.com/media/HPlHuTfXcAAUoHh.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2087782517474574336",
+          "url": "https://pbs.twimg.com/media/HPlLI1pXwAAAaqQ.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2087782812527017985",
+          "url": "https://pbs.twimg.com/media/HPlLaAzWwAESWu0.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2087783080534609920",
+          "url": "https://pbs.twimg.com/media/HPlLpnNWEAAY2JS.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 64,
+        "reply_count": 14,
         "quote_count": 0
       }
     }

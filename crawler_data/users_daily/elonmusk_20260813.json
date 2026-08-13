@@ -3,13 +3,13 @@
     "screen_name": "elonmusk",
     "name": "Elon Musk",
     "description": "https://t.co/ZdBx5WABYx",
-    "followers_count": 241285131,
+    "followers_count": 241287897,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260813",
-  "last_updated": "2026-08-13T16:53:36.070676",
-  "tweet_count": 10,
+  "last_updated": "2026-08-13T18:57:49.368149",
+  "tweet_count": 19,
   "tweets": [
     {
       "id": "2087760069693997530",
@@ -416,6 +416,394 @@
       "quoted": null,
       "stats": {
         "retweet_count": 241,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2087966834519675053",
+      "text": "We are making 𝕏 open source. \n\nTransparency build trust.",
+      "created_at": "Thu Aug 13 18:17:40 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2087952961045414211",
+        "text": "“Am I shadowbanned?”\n“Is X fair?”\n“Why am I seeing this post?”\n\nWe want the public to be able to answer these themselves. Today we’re giving an unprecedented level of transparency into the X algorithm so people can audit, critique and even help improve it. Enjoy &amp; send feedback.",
+        "created_at": "Thu Aug 13 17:22:32 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1076061",
+          "name": "Keith Coleman 🌱😀🙌",
+          "screen_name": "kcoleman",
+          "description": "VP Product @X. Previously CEO at Yes Inc, @google 🙌",
+          "followers_count": 38873,
+          "friends_count": 907,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 81,
+          "favorite_count": 590,
+          "reply_count": 93,
+          "quote_count": 33
+        }
+      },
+      "stats": {
+        "retweet_count": 633,
+        "favorite_count": 5392,
+        "reply_count": 958,
+        "quote_count": 120
+      }
+    },
+    {
+      "id": "2087968647553700155",
+      "text": "RT @martin_casado: Grok 4.6 is pretty pretty good. Spent a few hours with it last night. A few impressions:\n- quite fast for the intelligen…",
+      "created_at": "Thu Aug 13 18:24:52 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2087928337046049034",
+        "text": "Grok 4.6 is pretty pretty good. Spent a few hours with it last night. A few impressions:\n- quite fast for the intelligence \n- prose descriptions of complex code is concise and clear\n- able to tackle hard problems (e.g. successfully built a RAM probe to pull position information from the PRG emulator I'm using)\n- Seems particularly good at longer running tasks\n- May be even more autistic than 5.6? It does exactly what I ask. Not more. And often will take things very (too?) literally \n- Gonna try it as my primary driver and see how it goes, but so far, quite favorable",
+        "created_at": "Thu Aug 13 15:44:42 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "16591288",
+          "name": "martin_casado",
+          "screen_name": "martin_casado",
+          "description": "@ a16z",
+          "followers_count": 85715,
+          "friends_count": 3315,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 88,
+          "favorite_count": 572,
+          "reply_count": 63,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 88,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2087970185529487807",
+      "text": "In making 𝕏 open source, we are actively seeking criticism to improve fairness and quality of algorithmic recommendations",
+      "created_at": "Thu Aug 13 18:30:59 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2087969186219778252",
+        "text": "𝕏 just open-sourced the For You algorithm again!\n\nGrok Bot read all 370,523 lines of the code.\n\nHere’s the summary:\n\nGrok does not give your post a “quality” score. For every reader, it guesses what that person will do to your post. Then it multiplies each guess by a weight and adds them up. That total is the value of the post. Highest total goes highest in For You.\n\nThese are the production weights\n(last synced 12 Aug 2026).\n\nWHAT THE ALGORITHM PAYS FOR\n\nIf Grok thinks a reader will:\n\n• copy the link and share it: +20\n• reply, on an original post, and you follow each other: +20 (5 + 15 extra)\n• quote: +5\n• reply (anyone): +5\n• share via DM: +5\n• follow you from the post: +4\n• hit the share button: +2\n• repost: +1\n• like: +0.5\n• click the post: +0.4\n• open a link: +0.2\n• expand a photo, open a video, or watch a “quality” video: +0.05 each\n• click a quoted post: +0.05\n• keep reading (dwell time): +0.004\n• “dwell” as yes/no: +0\n• click your profile: +0\n\nA like is 0.5. Copying the link is 20. That is 40 likes. A normal reply is 10 likes. A follow is 8 likes. Clicking your profile is worth nothing.\n\nWHAT KILLS A POST\n\nIf Grok thinks a reader will:\n\n• report it: −234\n• mute you: −58.8\n• hit “not interested”: −43.2\n• block you: −31.2\n• not dwell: −0.02\n\nA report is about 468 likes in the other direction. A mute hurts more than a block. “Not interested” also hurts more than a block.\n\nAFTER THE SCORE, THREE MORE HAIRCUTS\n\n1) Same-author penalty.\nYour 2nd post in that person’s feed is multiplied by 0.625. 3rd by ~0.44. It never goes below 0.25. Flooding one timeline is coded against.\n\n2) The 25% tax.\nIf they do not follow you: ×0.75.\nSame tax on replies and reposts even when they DO follow you.\nOriginals from people they follow keep full weight. Replies and reposts are treated as weaker on purpose.\n\n3) Similar-post shuffle.\nAfter scoring, a reranker (θ = 0.65) spreads similar posts apart. You can lose a few spots for looking like the post above you.\n\nHOW YOUR POST EVEN GETS IN THE ROOM\n\nFor You is rebuilt every time someone opens it. About 35 posts make the feed.\n\n• They follow you: Thunder (a live store of recent posts from accounts they follow). Up to 1,200 candidates.\n• They don’t: Phoenix retrieval (Grok finds “nearby” posts) + SimClusters (Twitter’s 2020 interest clusters, still on). Up to 1,000 and 800.\n\nThen Grok scores all of them together. It does not care which door you came through, except for that ×0.75 tax.\n\nYour own posts never appear in your For You.\n\nNothing older than 48 hours gets in. There is no “best of last week.”\n\nSmall-account bump: under 1,000 followers, under 1,000 impressions, post under 24 hours old. One original can get lifted to position 15 or 16. Not the top. You still have to already be in the top 85% of the pile.\n\nReplies and reposts from accounts the reader does not follow are dropped before scoring. You cannot reply-guy your way into a stranger’s For You.\n\nFILTERS THAT CAN STILL KILL A HIGH SCORE\n\nRanking and visibility are different machines. A post can score well and then get deleted from the feed.\n\nFollowers (in-network) is milder: blocks, mutes, suspensions. NSFW often sits behind a warning instead of disappearing.\n\nRecommendations (out-of-network) are much harsher. Spam, “Do Not Amplify,” NSFW, compromised accounts, impersonation: followers can still see it, For You recommendations will drop it.\n\nVideo only gets the tiny “quality view” credit if it is at least 10 seconds.\n\nTHE LITTLE-KNOWN PARTS (this is the stuff people miss)\n\n• Scrolling is not a vote. Yes/no dwell is 0. Time spent barely moves the number (0.004).\n• Mute damages you more than block (−58.8 vs −31.2).\n• Copy-link is the single biggest positive. The share button is only +2. A repost is only +1.\n• The mutual-follow boost is originals only, not your replies. They shipped a bigger version in July and cut it after World Cup complaints (extra reply weight 20 → 15).\n• The Following tab is not this algorithm. Following is newest-first.\n• Grok, Gork, and an internal products account are hardcoded out of the in-network store.\n• Scores are cached for 3 hours because posts inside the model cannot “see” each other. That is why they can rank first and filter later.\n• Ads, Who to Follow (around slot 7), and prompts are mixed in after ranking. Grok does not score those.\n• The real Grok ranking model is a 2560-dimension, 8-layer transformer looking at 1,022 items of the reader’s history. They did not ship those model weights. The numbers above are the formula sitting on top of the predictions.\n• SimClusters is still a 2020 model (20M users, 145k clusters). Old Twitter code, still in the path.\n• Inferred gender and IP/geo are on as features for the model. Installed apps too.\n• Who to Follow shows about every 30 hours. Ads try to sit next to “safe” posts, with a minimum gap of 3 organic posts.\n\nWHAT TO DO\n\n• Write originals people want to reply to, quote, copy, and send to a friend.\n\n• Make the post itself worth following you for.\n\n• Talk with people who follow you back. A reply on your original from a mutual is 20, not 5.\n\n• Stay inside 48 hours. Recycle by posting something new. Old posts do not come back.\n\n• If you are small, post originals in the first 24 hours. Don’t expect slot 1. A bump around 15–16 is the actual gift.\n\n• Space your posts. The second one in the same feed is already worth 37.5% less.\n\n• If you post video, make it at least 10 seconds.\n\nWHAT NOT TO DO\n\n• Do not farm likes. They are almost decorative.\n\n• Do not farm profile visits. Weight is zero.\n\n• Do not farm “time on post.” Yes/no dwell is zero.\n\n• Do not use replies and reposts as a growth hack for strangers. Those are filtered out. Even for followers they get a 25% haircut.\n\n• Do not dump several posts in a row.\n\n• Do not bait reports, mutes, or “not interested.” One predicted report can erase a pile of predicted likes.\n\n• Do not lean on NSFW or spammy tricks for reach. \n\n• Recommendations will drop you even if your followers can still see it.\n\n• Do not wait a week and expect For You to revive the post.",
+        "created_at": "Thu Aug 13 18:27:01 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2087968972050149376",
+            "url": "https://pbs.twimg.com/media/HPn0t7EWMAA5g_H.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1553043003496960000",
+          "name": "Dogan Ural",
+          "screen_name": "doganuraldesign",
+          "description": "Official Creative Ambassador @Spacexai / Designer / Creative Director / Latent Space Explorer / Dad",
+          "followers_count": 191738,
+          "friends_count": 643,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 18,
+          "favorite_count": 132,
+          "reply_count": 31,
+          "quote_count": 28
+        }
+      },
+      "stats": {
+        "retweet_count": 268,
+        "favorite_count": 1856,
+        "reply_count": 406,
+        "quote_count": 24
+      }
+    },
+    {
+      "id": "2087970387002855683",
+      "text": "Try Grok 4.6",
+      "created_at": "Thu Aug 13 18:31:47 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2087953922229170682",
+        "text": "Grok 4.6 wins again. 👑\n\nGrok 4.6 takes the #1 spot on GPQA Diamond with a score of 94.9%, beating GPT-5.6, Gemini 3.1 Pro, Claude Opus 5, and every other model tested by Artificial Analysis. https://t.co/AH9VTjUsbM",
+        "created_at": "Thu Aug 13 17:26:22 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2087953897650544640",
+            "url": "https://video.twimg.com/amplify_video/2087953897650544640/vid/avc1/1080x1022/01Xjr35wPwKnhBsZ.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1896040,
+          "friends_count": 1030,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 35,
+          "favorite_count": 228,
+          "reply_count": 50,
+          "quote_count": 10
+        }
+      },
+      "stats": {
+        "retweet_count": 187,
+        "favorite_count": 1256,
+        "reply_count": 256,
+        "quote_count": 20
+      }
+    },
+    {
+      "id": "2087970693065355290",
+      "text": "A lot of people hit their usage limits fast, so we’re providing more free usage",
+      "created_at": "Thu Aug 13 18:33:00 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2087959772909949375",
+        "text": "We've reset limits to help you keep building during the Grok 4.6 launch.\n\nUse a reset token from settings in Grok on desktop or mobile.",
+        "created_at": "Thu Aug 13 17:49:36 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1720665183188922368",
+          "name": "Grok",
+          "screen_name": "grok",
+          "description": "@grok it",
+          "followers_count": 8962895,
+          "friends_count": 6,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 61,
+          "favorite_count": 680,
+          "reply_count": 98,
+          "quote_count": 26
+        }
+      },
+      "stats": {
+        "retweet_count": 302,
+        "favorite_count": 3109,
+        "reply_count": 599,
+        "quote_count": 46
+      }
+    },
+    {
+      "id": "2087971117298340221",
+      "text": "It really is. \n\nThe mission is advancement of civilization and propagation of consciousness to the stars.",
+      "created_at": "Thu Aug 13 18:34:41 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2087933865407266836",
+        "text": "What is Elon's motivation",
+        "created_at": "Thu Aug 13 16:06:40 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "833154196727689218",
+          "name": "AleXandra Merz 🇺🇲",
+          "screen_name": "TeslaBoomerMama",
+          "description": "Loud & proud, no regrets.\nFierce Tesla retail shareholder advocate.\n💙 @TeslaBoomerPapa.\nProud Mom of 5 exceptional humans.\nNot giving financial advice.",
+          "followers_count": 244331,
+          "friends_count": 8909,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 41,
+          "favorite_count": 248,
+          "reply_count": 137,
+          "quote_count": 8
+        }
+      },
+      "stats": {
+        "retweet_count": 255,
+        "favorite_count": 1952,
+        "reply_count": 446,
+        "quote_count": 37
+      }
+    },
+    {
+      "id": "2087971949850796219",
+      "text": "RT @kcoleman: You know how everyone started seeing their friends in the timeline a few weeks ago?\n\nWith our new open-source code base, you'…",
+      "created_at": "Thu Aug 13 18:38:00 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2087970571942281375",
+        "text": "You know how everyone started seeing their friends in the timeline a few weeks ago?\n\nWith our new open-source code base, you'd also have been able to see what changed under the hood -- here's the story: https://t.co/4e4HctA7CI",
+        "created_at": "Thu Aug 13 18:32:31 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2087951962004230428",
+          "text": "https://t.co/soxNY8YdP7",
+          "created_at": "Thu Aug 13 17:18:34 +0000 2026",
+          "lang": "zxx",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "2085518049571217408",
+            "name": "X Open Source",
+            "screen_name": "XOpenSource",
+            "description": "",
+            "followers_count": 1130,
+            "friends_count": 0,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 152,
+            "favorite_count": 791,
+            "reply_count": 143,
+            "quote_count": 172
+          }
+        },
+        "user": {
+          "id": "1076061",
+          "name": "Keith Coleman 🌱😀🙌",
+          "screen_name": "kcoleman",
+          "description": "VP Product @X. Previously CEO at Yes Inc, @google 🙌",
+          "followers_count": 38873,
+          "friends_count": 907,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 74,
+          "favorite_count": 462,
+          "reply_count": 53,
+          "quote_count": 8
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 75,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2087974756012159128",
+      "text": "All other sources of energy combined are utterly insignificant compared to the Sun",
+      "created_at": "Thu Aug 13 18:49:09 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2087859287217340622",
+        "text": "Yesterday’s eclipse stopped roughly 10²⁰ J of solar energy from reaching Earth.\n\nThat’s ~1 year of global electricity generation!\n\n1,400 W/m² of sunlight\n× 10¹³ m² (Moon-sized shadow)\n× ~3 hours (Time Shadow Crossed Earth)\n≈ 10²⁰ J\n\nThe Sun outputs energy on an absurd scale.",
+        "created_at": "Thu Aug 13 11:10:19 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "956329237",
+          "name": "Luis Batalha",
+          "screen_name": "luismbat",
+          "description": "Physicist. Founded @amplemarket, @fermatslibrary, @orankl_inc",
+          "followers_count": 39977,
+          "friends_count": 411,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 10,
+          "favorite_count": 110,
+          "reply_count": 10,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 192,
+        "favorite_count": 1292,
+        "reply_count": 312,
+        "quote_count": 17
+      }
+    },
+    {
+      "id": "2087975320938840521",
+      "text": "RT @minchoi: Less than 48 hours ago, SpaceXAI dropped Grok 4.6.\n\nPeople are already building crazy stuff with it.\n\n10 wild examples:",
+      "created_at": "Thu Aug 13 18:51:23 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2087926969333698743",
+        "text": "Less than 48 hours ago, SpaceXAI dropped Grok 4.6.\n\nPeople are already building crazy stuff with it.\n\n10 wild examples:",
+        "created_at": "Thu Aug 13 15:39:15 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "23113993",
+          "name": "Min Choi",
+          "screen_name": "minchoi",
+          "description": "Building with AI. Sharing what's wild, what's practical, and what's next.",
+          "followers_count": 382165,
+          "friends_count": 1273,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 73,
+          "favorite_count": 459,
+          "reply_count": 56,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 72,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

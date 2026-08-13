@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 240846,
+    "followers_count": 240854,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260813",
-  "last_updated": "2026-08-13T16:53:36.098465",
-  "tweet_count": 6,
+  "last_updated": "2026-08-13T18:57:49.391412",
+  "tweet_count": 10,
   "tweets": [
     {
       "id": "2087708053009273250",
@@ -269,6 +269,125 @@
         "retweet_count": 907,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2087953969498706138",
+      "text": "我只是作为一个“普通用户”的角度去用 DeepSeek Harness，一些感受：\n\n1. 启动方式偏极客，程序员没问题，但是普通用户估计都没有nodejs环境，很难跑起来\n\n2. 速度飞快，这点特别好\n\n3. Thinking 部分由于 Flash 模型速度过快，导致文字闪的厉害，可以做一下节流，攒一批一起显示，配合动画动效会好一点。\n\n4. Codex 右侧的多 Tab Panel 相当重要，和当前 DSH 的插件机制是很好的搭配，强烈建议借鉴下，比如我写完 PPT 还要新开窗口去预览，来回切换很麻烦，不如显示在右侧直观\n\n5. Trajectory 和 Session log 对普通用户价值不大，不需要那么重要的位置\n\n6. 现在能列出产出物很好，但最好能直接打开，能看到 diff （开箱配置好相关插件了，不要用户二次配置，当然可以关闭）\n\n7. 模型早点支持多模态吧，多模态也是 AGI 的一部分\n\n8. 一切皆插件的理念很好，普通用户的使用体验也很重要。\n\n开发者愿意去折腾插件的前提一定是你的 Agent Harness 有大量普通用户了，否则没有多少开发者坚持在上面，新鲜劲过了就没人了。\n\n插件和用户体验并不冲突，核心还是看开箱设置/出厂配置，用户第一次用不需要太多配置就能用起来，用的时候也没什么不方便，后续再慢慢折腾插件也不迟。\n\nBTW，DSH 给我做的 PPT 质量还不错。",
+      "created_at": "Thu Aug 13 17:26:33 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2087952987914125312",
+          "url": "https://pbs.twimg.com/media/HPnmLhhWQAAFIXD.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2087953263773589504",
+          "url": "https://pbs.twimg.com/media/HPnmblLXoAA-FRv.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 70,
+        "reply_count": 21,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2087961591505358962",
+      "text": "DeepSeek Harness 团队，真正需要招的不是一帮天才程序员、奥林匹克金牌选手，需要真正懂 AI 产品的 AI 产品经理，这个阶段把产品定义清楚、规划清楚最重要。",
+      "created_at": "Thu Aug 13 17:56:50 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 10,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2087963724577435813",
+      "text": "软件自进化可能是个伪命题，只会带来更大的混乱。\n\n插件要么是一次性用完就扔的，要么就得要设计、验证和维护的，不是现在模型能力可以“自进化”的。\n\nOpenClaw 的一坨能“自进化”的 Skills 已经做了示范。\n\n还是等模型自学习自进化更靠谱点。",
+      "created_at": "Thu Aug 13 18:05:19 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2087911060154314963",
+        "text": "有幸一个月前就被 @tianyi 拉进了仓库。当时 DSH 还是一个只实现了 core framework 的毛坯房。过去一个月，基本上每次 pull 代码，都是上千个 commits 的速度在涨。\n\n说一下我对 DSH 的一些理解，不一定对：\n\n1. 首先是怎么理解 DeepSeek Harness 这个东西。我觉得 DSH 既是一个可以直接运行的 Coding Agent，目前官方提供了 Web 和 headless 两种形式；同时它也是一套 Agent 开发框架。TUI 之类的其他交互方式，也可以通过外部 profile 和插件接进来。\n\n2. 如果拿 Coding Agent 的标准来说，当前 DSH 的体验确实不如 Claude Code / Codex 那么完善。整个项目还很早期，接口一直在变化，插件生态也才刚刚开始，质量肯定是层次不齐的。\n\n3. 但如果从开发框架的角度来看，可以把 DSH 想象成一个乐高汽车玩具。DeepSeek 官方提供的这个 Coding Agent，只是他们自己拼出来的一套官方预置。你完全可以把里面的零件换成自己喜欢的：换引擎、换轮胎、换挡风玻璃，或者加装其他模组。甚至最后拼出来的东西，也不一定还是一辆汽车。\n\n4. DSH 的核心是「一切皆插件」。模型、工具、文件系统、Shell、沙箱、会话存储、Subagent、UI，甚至 Agent Loop 本身，都是插件。正因为这样，你可以把 DSH DIY 成任何自己想要的样子，这也给后面的社区生态留下了很大的空间。\n\n5. 再往前想一步，这其实有一点「自进化软件」的雏形了。DSH 现在已经可以让 Agent 检查自己的 runtime，现场写一个插件并挂载上去，然后在后续的任务里直接使用这个刚刚获得的能力。\n\n当然，现在这部分还比较实验性：动态生成的插件只存在于内存里，重启就没了，也还不能自动沉淀成一个永久插件。\n\n但可以想象一下：假设某个功能现在没有，你和 Agent 随便聊两句，这个功能就被做好了，而且可以直接开始使用。甚至 Agent 在执行任务的时候，可以自己发现缺少某种能力，然后自己完成开发、安装和调用。\n\n6. 接下来就需要等待一批真正优秀的插件了。DSH 现在还很早，但我相信它的潜力非常大。\n\n---\n\n另外从代码上来看，DSH 有非常多函数式编程的影子，不熟悉 Ocaml/Haskell 可能一上来会比较难理解，可以多让 Agent ELI5 一下。",
+        "created_at": "Thu Aug 13 14:36:02 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2572621910",
+          "name": "Jiayuan (JY) Zhang",
+          "screen_name": "jiayuan_jy",
+          "description": "Building @MulticaAI. Ex-@devv_ai. Ex-@tiktok_us.",
+          "followers_count": 117945,
+          "friends_count": 1300,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 42,
+          "favorite_count": 370,
+          "reply_count": 51,
+          "quote_count": 20
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 21,
+        "reply_count": 7,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2087966960386470339",
+      "text": "DeepSeek 作为一个模型厂商，最有价值的肯定还是做 Agent Harness Product 而不是 SDK，因为 SDK 它不容易拿到用户行为数据。\n\n做 Agent Harness Product 那就得追求用户量，追求用户量就要先做好用户体验，其次才是插件可定制化。",
+      "created_at": "Thu Aug 13 18:18:10 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2087954203339804919",
+        "text": "目前根据已有的 DeepSeek Harness 的内容，我觉得 Claude Code/Codex 就像苹果一样，什么都做，追求体验极致；而 DeepSeek Harness 可能是一种安卓的理念，就是走开源，社区自己 DIY 玩，OEM（比如一些企业定制、政府定制等等）可以私有化魔改等等。而这个基础上，最核心的就是插件生态。",
+        "created_at": "Thu Aug 13 17:27:29 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "371296701",
+          "name": "马天翼",
+          "screen_name": "fkysly",
+          "description": "Indie hacker & AI.",
+          "followers_count": 14246,
+          "friends_count": 578,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 5,
+          "reply_count": 3,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 6,
         "quote_count": 0
       }
     }

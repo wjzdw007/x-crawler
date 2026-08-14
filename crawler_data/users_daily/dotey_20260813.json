@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 240857,
+    "followers_count": 240866,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260813",
-  "last_updated": "2026-08-13T22:37:23.976583",
-  "tweet_count": 10,
+  "last_updated": "2026-08-14T01:28:08.420958",
+  "tweet_count": 11,
   "tweets": [
     {
       "id": "2087708053009273250",
@@ -388,6 +388,45 @@
         "retweet_count": 0,
         "favorite_count": 5,
         "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2088050644837953787",
+      "text": "RT @grapeot: DeepSeek 开源的第一个 agent harness DSH，论文里堆满了范畴论符号，很容易让人觉得又是研究员在真空里搞出来的理论产物。但在仔细读完源码并与 Codex 逐行对照后，我的工程判断很明确：对绝大多数日常写代码的开发者来说，它重得毫无…",
+      "created_at": "Thu Aug 13 23:50:42 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2088019011561005382",
+        "text": "DeepSeek 开源的第一个 agent harness DSH，论文里堆满了范畴论符号，很容易让人觉得又是研究员在真空里搞出来的理论产物。但在仔细读完源码并与 Codex 逐行对照后，我的工程判断很明确：对绝大多数日常写代码的开发者来说，它重得毫无必要；但对探索自进化 agent 的工程团队来说，它搭建了一套目前其他方案完全没有的底层骨架。\n\n架构上最本质的差距在于插件模型的选择。\n\nCodex 代表了典型的声明式路线：插件只是磁盘上的文件夹，贡献的是 Markdown 写的 skill 文件、MCP server 配置或 shell 脚本。插件不进 harness 进程，也不在同一进程里跑代码，改完配置重启独立进程只需两三秒。对于搜索、加工具这类绝大多数日常需求，声明式模型简单可靠，门槛接近于零。\n\nDSH 走的是命令式路线：插件带着自己的状态，直接跑在 harness 进程内部，互相注册与调用。一旦要在运行时替换插件，悬空引用清理、后台任务终止、依赖链协同以及崩溃回滚都会变成棘手难题。为此，DSH 引入了一套叫 Cordis 的重型运行时，单是管理 fiber 生命周期的核心模块就有 750 行代码。\n\n如果只是为了替换搜索服务或挂载常用工具，让开发者背上 Cordis 这套复杂度完全是过度设计。但 DeepSeek 包这盘饺子的真实意图，隐藏在控制流结构里。\n\n在 Codex 中，agent loop 的控制流被硬编码在 Rust 核心逻辑里，开发者只能在预设时刻挂载 hook，无法在运行时把单 agent 循环改成多 agent 协作循环。而在 DSH 里，agent loop 本身是放在 packages/core/agent-loop 中的一个普通 TypeScript 插件，向外提供 ctx.agentLoop 服务。只要实现相同的接口，运行中的控制流骨架随时可以整体卸载并替换。\n\nCordis 打造的那些副作用跟踪、依赖变动通知和事务性 HMR，本质上全是在支撑 agent loop 可替换这个核心目标。它保证了 agent 在运行期如果动态生成了新工具或新 loop，系统能在不中断进程的前提下平滑加载；一旦生成的代码出现错误，又能通过事务性回滚退回上一个稳定状态。\n\nCodex 交付的是结构固定的成品家具，而 DSH 交付的是允许动态改造的生成内核。DSH 不会让你的日常 coding 变得更快，但它让 harness 本身具备了面向自进化进行物理扩展的可能。\n\n深度剖析与两套架构的完整对照：\n\nhttps://t.co/tqJua5Yi2y",
+        "created_at": "Thu Aug 13 21:45:00 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "25820199",
+          "name": "鸭哥",
+          "screen_name": "grapeot",
+          "description": "AI builder。关注 agent 基础设施、AI-native 开发和模型能力边界。Superlinear Academy 联合创始人。",
+          "followers_count": 5336,
+          "friends_count": 132,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 14,
+          "favorite_count": 56,
+          "reply_count": 6,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 14,
+        "favorite_count": 0,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

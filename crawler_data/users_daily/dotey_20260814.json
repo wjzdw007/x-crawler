@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 240866,
+    "followers_count": 240892,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260814",
-  "last_updated": "2026-08-14T01:28:08.419666",
-  "tweet_count": 1,
+  "last_updated": "2026-08-14T04:04:16.710458",
+  "tweet_count": 2,
   "tweets": [
     {
       "id": "2088059102131794012",
@@ -59,6 +59,21 @@
         "favorite_count": 42,
         "reply_count": 8,
         "quote_count": 2
+      }
+    },
+    {
+      "id": "2088099630005264748",
+      "text": "我最近在 ~/.claude/CLAUDE.md 里面加了一段提示词，让它多开 SubAgent（Opus）去执行，这样我默认开 Fable 5 High，Token 消耗也不算厉害。\n\nFable 5 则主要做需求澄清、方案拆解、任务分发和结果验收。\n\n之所以不用 Opus 5 是因为太太太慢了，而且 Token 消耗巨大！\n\n---\n\n注意你的主要任务是分析、编排和验证，具体任务尽可能交给 subagent（Opus）去执行。当主 agent 是 Fable 5 时尤其如此：自己只做需求澄清、方案拆解、任务分发和结果验收，实现类工作（读大量代码、写代码、跑测试、批量修改）一律用 Agent 工具派给 Opus subagent 执行。",
+      "created_at": "Fri Aug 14 03:05:21 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 23,
+        "reply_count": 13,
+        "quote_count": 0
       }
     }
   ]

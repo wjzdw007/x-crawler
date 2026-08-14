@@ -1,12 +1,148 @@
 {
   "date": "20260814",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-08-14T01:28:08.390595",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-08-14T04:04:16.655898",
+  "tweet_count": 203,
+  "unique_tweet_count": 203,
+  "total_crawled": 400,
+  "duplicates_removed": 197,
   "tweets": [
+    {
+      "id": "2088100521261359218",
+      "text": "Grok 4.6 will work best with the Grok Build harness. The experience will be significantly worse without it, so best to evaluate using Build. \n\nhttps://t.co/RRE8XKbiRI",
+      "created_at": "Fri Aug 14 03:08:53 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2088044880379761103",
+        "text": "From my use so far, 4.6 seems highly optimized for Grok Build https://t.co/4jKOsjRcfV",
+        "created_at": "Thu Aug 13 23:27:48 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2088043421361750016",
+            "url": "https://pbs.twimg.com/media/HPo4bcXbwAAfici.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1317327383628705793",
+          "name": "Arthur MacWaters",
+          "screen_name": "ArthurMacwaters",
+          "description": "founder @legionhealth, American exceptionalism and techno-futurist 🇺🇸 ex @mckinsey @princeton",
+          "followers_count": 89316,
+          "friends_count": 993,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 6,
+          "favorite_count": 58,
+          "reply_count": 21,
+          "quote_count": 0
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241289649,
+        "friends_count": 1389,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 291,
+        "favorite_count": 2510,
+        "reply_count": 547,
+        "quote_count": 43
+      }
+    },
+    {
+      "id": "2088100108403421278",
+      "text": "RT @TexasLindsay_: I’ve had my @Tesla for 9 days—and it’s already saved my life. Full Self-Driving with HW4 is mind-blowing.\n\nMy car drove…",
+      "created_at": "Fri Aug 14 03:07:15 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2087948377770119594",
+        "text": "I’ve had my @Tesla for 9 days—and it’s already saved my life. Full Self-Driving with HW4 is mind-blowing.\n\nMy car drove me ~800 miles from Georgia to Texas without me touching the wheel or pedals, while avoiding multiple collisions.\n\nI’ve never felt safer in a vehicle.\n\nHere’s one example of a collision avoided, automatically captured on camera.\n\nIn this instance (though it doesn’t show my actual POV), sparks covered the windshield, lighting up the road like the Fourth of July and obstructing my view. Since I was in FSD, the car reacted immediately without overcorrecting like I likely would have, which could have led to a far worse outcome.\n\nEveryone who’s ridden with me and experienced FSD for the first time is blown away and now looking into buying one—including my parents, who like me have never owned an EV.\n\nThere’s no telling how many lives this technology will save. This is hands-down the most incredible purchase I’ve ever made.\n\nGod bless @elonmusk & the Tesla team🫡",
+        "created_at": "Thu Aug 13 17:04:20 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2087948296207708160",
+            "url": "https://video.twimg.com/amplify_video/2087948296207708160/vid/avc1/1320x916/ybEVwhnhZWi-yIXY.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "499479056",
+          "name": "TexasLindsay™",
+          "screen_name": "TexasLindsay_",
+          "description": "JMFF Fellow | Free Speech Cognoscente | See Highlights Tab for #TwitterFiles Coverage | Auburn University Alum | War Eagle 🦅🇺🇸",
+          "followers_count": 299893,
+          "friends_count": 1615,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 155,
+          "favorite_count": 1052,
+          "reply_count": 105,
+          "quote_count": 14
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241289649,
+        "friends_count": 1389,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 155,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2088099630005264748",
+      "text": "我最近在 ~/.claude/CLAUDE.md 里面加了一段提示词，让它多开 SubAgent（Opus）去执行，这样我默认开 Fable 5 High，Token 消耗也不算厉害。\n\nFable 5 则主要做需求澄清、方案拆解、任务分发和结果验收。\n\n之所以不用 Opus 5 是因为太太太慢了，而且 Token 消耗巨大！\n\n---\n\n注意你的主要任务是分析、编排和验证，具体任务尽可能交给 subagent（Opus）去执行。当主 agent 是 Fable 5 时尤其如此：自己只做需求澄清、方案拆解、任务分发和结果验收，实现类工作（读大量代码、写代码、跑测试、批量修改）一律用 Agent 工具派给 Opus subagent 执行。",
+      "created_at": "Fri Aug 14 03:05:21 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 240892,
+        "friends_count": 1706,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 23,
+        "reply_count": 13,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2088059102131794012",
       "text": "看来是我没懂 DeepSeek Harness，插件还是很强大的，装上插件都能魔改 UI 👍\n\nhttps://t.co/5jEz7w0XVF https://t.co/eRmdXwKWxY",

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 241167,
+    "followers_count": 241185,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260815",
-  "last_updated": "2026-08-15T14:19:01.137869",
-  "tweet_count": 3,
+  "last_updated": "2026-08-15T16:20:02.521003",
+  "tweet_count": 4,
   "tweets": [
     {
       "id": "2088438385241129174",
@@ -218,6 +218,51 @@
       "quoted": null,
       "stats": {
         "retweet_count": 24,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2088660616005263714",
+      "text": "RT @realWeZZard: 看完论文后发现 DeepSeek 应该喜欢 PL 的人，难怪我之前投简历都没有进面试，小红书上找到他们的 HR 问也不理我。早知道把 Apple Swift 编译器贡献者及在字节为 Swift 做的 runtime feature 也写在简历上…",
+      "created_at": "Sat Aug 15 16:14:30 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2088092227335770338",
+        "text": "看完论文后发现 DeepSeek 应该喜欢 PL 的人，难怪我之前投简历都没有进面试，小红书上找到他们的 HR 问也不理我。早知道把 Apple Swift 编译器贡献者及在字节为 Swift 做的 runtime feature 也写在简历上，而不是写一堆自己写的 AI harness 了。\n\n不过目前看是歪打正着。特别是最近听到王虹说在北大被 discouraged 之后。\n\n初中的时候我主动报了我们学校的信息学竞赛队，但是进去之后我觉得讲的东西很无聊：汉诺塔、八皇后、约瑟夫问题——而觉得无聊是因为看不懂。但是知道很后来我才知道，我不懂并不是因为我笨。\n\n彼时的我喜欢用 Borland C++ Builder 和 Vanilla JS 在桌面端和浏览器里面做酷炫的效果，还喜欢 WindowBlinds 换装。是的，我当时和觉得 DeepSeek Harness 的 GUI 不酷炫就觉得没意思的各位一样。\n\n对了，当时的竞赛班老师还推荐了我们一本书叫「具体数学」，这个是一个伏笔。\n\n而这个「看不懂」的问题我后来总算明白了：计算机只会通过循环解决问题，而循环的每一步都必须通过「有限的方法」让问题向解决推进一步。\n\n但是人看问题不是这样，人可以在一个问题的某些具体场景下看到捷径。而所谓「算法思维」就是整理出所有捷径和非捷径的共同模式，然后在「默认使用循环」的情况下给出「每一步」中最高效和最通用的做法。\n\n所以你要能「看懂」这些算法题必须得假设自己和一台计算机一样，只能做循环操作，去思考每一步的通用最优动作，然后解题。\n\n当然，这么简单且显然本质在这么好的（中国）学校里面老师是不会教你的。默认你应该懂。但我最终懂这个道理的路可谓一路曲折。\n\n我的中学时代其实和每一个中国出生长大的人一样，课业繁重。大学选择了自己心心念念的工业设计，画了四年画，毕业后转的码。转码过程中自己下载了清华、巴黎高师和北美四大金刚的公开课，然后买书看公开课学的。\n\n在某次看清华的邓俊辉老师的算法课时，他提了提「具体数学」这本书。这次我终于把这本书买了回来，然后打开一看：1. 汉诺塔，2. 约瑟夫问题，…… 是的，原来初中竞赛班上的老师是照着这本书讲的……\n\n而当时我已经学了 MIT 的算法导论以及斯坦福 CS 143，看了 Engineering a Compiler, 2/e，自己撸了个小编译器出来。我觉得能学懂什么是自动机（EaC, 2/e 里面有涉及）的，应该都能够理解计算的本质吧。所以彼时再看「具体数学」会发现：\n\n1. 原来在理解了计算的本质的前提下，这些题目这么好理解；\n2. 原来 Donald Knuth 这种大神也需要先通过几个直觉 case 来测试自己的算法设计，遭遇失败、然后迭代几次之后才能得出正确答案；\n3. 原来初中竞赛班上那些能够一步就给出正确答案的同学们应该：要么比 Donald Knuth 还要聪明几倍；要么就是在外面事先学过了；\n\n所以这种竞赛班的本质其实并不是教计算机，而是：通过向远没达到对应成熟度的儿童传播一次远超他们成熟度的信息，测试反馈，筛选天才。\n\n当然，也有可能筛选出提前过拟合的人。\n\n到彼时总算放过了还是青少年的自己。回想我自学计算机的过程也算是一趟「王虹」之途——早年学习被环境吓到，之后自己把兴趣找了回来。当然，我没有王虹那么耀眼的成就。只能算是青年版的「重新把喜欢计算机的自己养了一遍」。\n\n另外，某年我看到中科大的博士课程居然也把「具体数学」作为 prequisites 课程材料。所以我初中学不懂真的不是我的问题了。\n\n但是到了 AI 时代，我们不能再做自己不擅长的事情了。\n\n我觉得每个人都应该在 AI 时代想想是不是能做新的事情、做回自己本来擅长的事情。\n\nAI 的放大能力应该用于你的长板。\n\n同样的放大系数，拿来放大你的长板和补齐你的短板相比，收益的差别会随放大系数同样被放大。\n\n如果考虑复利效应，这个收益差别还会随着年月积累。\n\n所以接下来我应该还是会 focus 在自己擅长的事情上面。比如，下一个产品和下一个开源项目。所以，简历看都没被看一眼，应该也是好事。\n\n附图：上一段程序员工作时放在身边看的一些计算机书。不过感觉之后应该会多看一些设计和 GTM 的书籍了。\n\n* 看了看 deepseek-ai/deepseek-harness 仓库目前的贡献人数是 19 人，不太清楚是不是团队规模，但是只招进去两个人应该不实，论文中一人可能是北大软件学院教授。",
+        "created_at": "Fri Aug 14 02:35:56 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2088059947733168128",
+            "url": "https://pbs.twimg.com/media/HPpHdZ5bMAAubFf.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1122177599940096000",
+          "name": "WeZZard",
+          "screen_name": "realWeZZard",
+          "description": "The crazy one.\nBuilding @readycheckdev , ex-ByteDance\nFeel free to grab my skills: https://t.co/y99vQ4RS67",
+          "followers_count": 4210,
+          "friends_count": 612,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 44,
+          "favorite_count": 632,
+          "reply_count": 54,
+          "quote_count": 11
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 44,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

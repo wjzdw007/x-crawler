@@ -1,12 +1,181 @@
 {
   "date": "20260815",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-08-15T08:23:14.919843",
-  "tweet_count": 209,
-  "unique_tweet_count": 209,
+  "last_crawl_time": "2026-08-15T10:19:22.559593",
+  "tweet_count": 211,
+  "unique_tweet_count": 211,
   "total_crawled": 409,
-  "duplicates_removed": 200,
+  "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2088547300352147702",
+      "text": "RT @QuantumTransf: deepseek harness 文章已更新（https://t.co/Vwnt9nMaYp） \ndsh 内部的心智模型其实没那么简单，我在写这篇文章的时候也挣扎了很久；不过，对于写一个插件的人来说，却没有那么复杂。 文章有对此阐述，「复杂…",
+      "created_at": "Sat Aug 15 08:44:14 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2088499422619750433",
+        "text": "deepseek harness 文章已更新（https://t.co/Xzlf496akP） \ndsh 内部的心智模型其实没那么简单，我在写这篇文章的时候也挣扎了很久；不过，对于写一个插件的人来说，却没有那么复杂。 文章有对此阐述，「复杂度不是消失了，而是转移进了系统内部」，相信读完这篇文章，你能够对 dsh 内部的架构有一个比较好的认知\nrepo: https://t.co/3USVmzG15Q\n此页面仍在持续更新（",
+        "created_at": "Sat Aug 15 05:33:59 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2088499332458987520",
+            "url": "https://pbs.twimg.com/media/HPvXE9jbwAA6sqY.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2088499404244496384",
+            "url": "https://pbs.twimg.com/media/HPvXJI-bsAAFVs4.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2088274708269842721",
+          "text": "预告一下，我们会有一篇讲 deepseek harness 的短文，内容涉及使用 dsh 的基本开发，以及基于 cordis 来构建 dsh 的原理\n这并不像 pi-book 那样会是一个系列，因为我们发现，如果 pi 的理解难度是 2 星，那么 dsh 的难度至少是 4-5 星，所以我们需要更多实践才会有更好的理解 https://t.co/KcCd9qx65r",
+          "created_at": "Fri Aug 14 14:41:03 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2088274029455319040",
+              "url": "https://pbs.twimg.com/media/HPsKKmdboAAozJy.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1692126794055647232",
+            "name": "Yuu💖",
+            "screen_name": "QuantumTransf",
+            "description": "Building Kairos Agent for coding | ACMer & Computer Science Enthusiast | Lesbian | 💖love maimai & 📝writing | 🐱Catgirl | 💝I'll always be with you.",
+            "followers_count": 4128,
+            "friends_count": 472,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 7,
+            "favorite_count": 130,
+            "reply_count": 9,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "1692126794055647232",
+          "name": "Yuu💖",
+          "screen_name": "QuantumTransf",
+          "description": "Building Kairos Agent for coding | ACMer & Computer Science Enthusiast | Lesbian | 💖love maimai & 📝writing | 🐱Catgirl | 💝I'll always be with you.",
+          "followers_count": 4128,
+          "friends_count": 472,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 24,
+          "favorite_count": 161,
+          "reply_count": 10,
+          "quote_count": 4
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 241141,
+        "friends_count": 1708,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 24,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2088546892841910691",
+      "text": "RT @ewind_dev: 我可以讲清楚这种启发具体是什么。\n\n所谓 “一切皆插件” 至少有三四种不同的架构含义，很多人会将其误解为类似 Webpack 和 Pi 中的 hook 模式，或 VSCode 中在主创团队决策下开放给第三方的插件场景。\n\n然而我对 DSH 插件架构…",
+      "created_at": "Sat Aug 15 08:42:37 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2088539283049365580",
+        "text": "我可以讲清楚这种启发具体是什么。\n\n所谓 “一切皆插件” 至少有三四种不同的架构含义，很多人会将其误解为类似 Webpack 和 Pi 中的 hook 模式，或 VSCode 中在主创团队决策下开放给第三方的插件场景。\n\n然而我对 DSH 插件架构要解决的问题的理解，其实还是来源于当年的 AFFiNE。\n\n那时，虽然 AFFiNE 在产品功能上相当于 OpenNotion，但我们非常希望架构要完全可定制，理想中任意需求最好都能不 fork 我们主干就能由第三方实现（请就这句话联想一下 harness 场景）。因为在我们的融资叙事里，AFFiNE 的长期愿景是成为一个通用的应用开发底座。AFFiNE 内部我负责的 BlockSuite 编辑引擎也遇到同样的问题。满足短期需求的产品功能快速侵入通用引擎，会让技术团队对通用性愿景逐渐失去信心。\n\n因此，当时 @EEEEYHN 设计实现了 Affine Framework，而 @mirone_saul 在 BlockSuite 中也做了类似的工作。其基本思路是将 DI 和 rxjs 结合来管理业务对象的生命周期，从而只要基于这套架构的逻辑，都是原理上能运行时动态替换的——很高兴看到今天 DeepSeek 甚至就此给出了数学证明！\n\n重复一遍，这种插件模式的重点在于运行时任意扩展的理论可能性。其精髓不同于 VSCode 那样人工决定“什么能被第三方扩展”，而是任意逻辑都默认能被第三方扩展。\n\n这项工作不存在于 AFFiNE 的公开文档中，因为项目后期我们已经无暇顾及开发者业务的叙事。且这种架构也会让代码显著地更为晦涩，在古法编程时代会拖慢开发效率。有兴趣的朋友欢迎用 codex 去考古。\n\n并且，我也不觉得我有资格声称“DSH 的理念早已被我们掌握”，因为 DSH 是第一个做到在 day one 就将我们未竟的理念贯彻为项目中一等公民的产品。这种技术方向上的产品化可能性，就是对我最大的启发。\n\n在离开 AFFiNE 加入 Lovart 后，我注意到了 Prisma 作者 Johannes 对 @EffectTS_ 的称赞。如果你将手搓 DSH 插件架构的思路做到极致，那么基本上你就会重新得到 Effect。只要把它的 layer 理解成 provider， 把 tag 理解成 service key 就够了。\n\n充分 Effect 化的代码里没有 setTimeout，能用 TestClock 做确定性模拟测试，从而将 E2E 墙钟时间压缩到单测时间。我认为这对提高软件可验证性有极大价值，甚至单独约过会向 Melvin 老板和 CTO 介绍过这项技术，然而也确实感觉没人能听懂我在说什么……\n\n现在回头看，我觉得 AFFiNE 有点像是个 General Magic 式的组织，它确实尝试过在一个宏大理想的 umbrella 下汇聚很多领域内最优秀的人各自的小理想。\n\n在 AFFiNE，我有幸光明正大地烧投资人的钱，专门去研究通用编辑引擎如何从第一性原理出发设计架构。这些 know how 并不是局外人“那样肯定搞不成”可以一笔带过的。\n\nGM 最后没有跑出来，但安卓、iPod、iPhone、Flash，其实都是技术条件成熟后 GM 团队当年理想的开枝散叶。AFFiNE 团队的核心成员去了 Manus、VoidZero 等地方，我也感觉是在追寻自己多年前的影子。像 PocketJS 能不能成为新一代的 Flash 呢？\n\n现在像是来到了十年前前端框架大乱斗风起云涌的年代，在这个技术奇点加速开蹬吧！",
+        "created_at": "Sat Aug 15 08:12:22 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2088282286529618286",
+          "text": "Pi 作者对 DeekSeek Harness 评价 https://t.co/U7NcKf3AOn",
+          "created_at": "Fri Aug 14 15:11:10 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2088282079880507392",
+              "url": "https://pbs.twimg.com/media/HPsRfMoXcAAYgWI.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 241141,
+            "friends_count": 1708,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 47,
+            "favorite_count": 583,
+            "reply_count": 74,
+            "quote_count": 3
+          }
+        },
+        "user": {
+          "id": "1265957219612258307",
+          "name": "Yifeng \"Evan\" Wang",
+          "screen_name": "ewind_dev",
+          "description": "Creator @pocket_js @sheruapp / ex @lovart_ai / cofounded @AffineOfficial / aka 雪碧 / INTP",
+          "followers_count": 13417,
+          "friends_count": 1508,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 8,
+          "favorite_count": 60,
+          "reply_count": 9,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 241141,
+        "friends_count": 1708,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2088497904600133728",
       "text": "RT @GregAbbott_TX: Government-owned airports cannot favor one religion over all others.\n\nDFW plans to install Islamic wudu washing faciliti…",

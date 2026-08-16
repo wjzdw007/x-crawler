@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 241295,
+    "followers_count": 241296,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260816",
-  "last_updated": "2026-08-16T20:17:52.625845",
-  "tweet_count": 8,
+  "last_updated": "2026-08-16T22:17:15.032880",
+  "tweet_count": 10,
   "tweets": [
     {
       "id": "2088803072084504812",
@@ -371,6 +371,84 @@
         "retweet_count": 0,
         "favorite_count": 5,
         "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2089090706023346452",
+      "text": "已经有移除文本水印的开源项目了\nhttps://t.co/gvgLMPhVdC",
+      "created_at": "Sun Aug 16 20:43:32 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2089019039427543484",
+        "text": "WATERMARK STRIPPER HITS 10,000 STARS DAYS AFTER ANTHROPIC SHIPS PROVENANCE\n\nAnthropic detailed how Claude's text watermark works last week.\n\nBy this morning a MIT-licensed repo that strips it has 10,000 stars, targeting Claude, SynthID-Text and OpenAI marks, plus C2PA and EXIF in images and PDFs.\n\nhttps://t.co/C1cmCDCJKe",
+        "created_at": "Sun Aug 16 15:58:45 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1573710710852489216",
+          "name": "AI Breakfast",
+          "screen_name": "AiBreakfast",
+          "description": "The latest rumors and developments in the world of artificial intelligence.  DM to include your AI project in the email newsletter with 100k subscribers!",
+          "followers_count": 238335,
+          "friends_count": 648,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 64,
+          "favorite_count": 553,
+          "reply_count": 30,
+          "quote_count": 30
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 14,
+        "reply_count": 8,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2089094793078952339",
+      "text": "Tibo 分享了 Codex 开启 1M 上下文的方法。不过我不是很有动力去修改，感觉当前还挺流畅的，我相信他们已经针对这个上下文调优过，只要压缩得当，上下文短一些性能会更好也更便宜。\n\n具体方法很简单，只要在 ~/.codex/config.toml 中设置：\n\n```\nmodel = \"gpt-5.6-sol\"\nmodel_context_window = 1000000\nmodel_auto_compact_token_limit = 900000\n```",
+      "created_at": "Sun Aug 16 20:59:46 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2089082893804896524",
+        "text": "Here is how to enable a 1M-token context window in Codex for GPT-5.6 Sol. \n\nEven though we have tuned the context limit in Codex to be set optimally when it comes to performance and cost, this is a common ask, so here it is documented.\n\nA larger context window lets Codex retain more code, tool output, and conversation history before summarizing older material. You need a model that supports it. And GPT-5.6 Sol, for example, has a documented 1,050,000-token window. \n\nOpen ~/.codex/config.toml and add or update these settings at the top level, before any [section] headers:\n\n```\nmodel = \"gpt-5.6-sol\"\nmodel_context_window = 1000000\nmodel_auto_compact_token_limit = 900000\n```\n\nThe first setting selects the model. The second tells Codex to use a one-million-token context budget. The third starts automatic history compaction around 900,000 tokens, leaving some headroom. Restart Codex client and start a new session after saving. \n\nTo try the configuration for a single CLI session without changing your defaults:\n\n```\ncodex -m gpt-5.6-sol \\\n  -c model_context_window=1000000 \\\n  -c model_auto_compact_token_limit=900000\n```\n\nHave fun, but also know that we tuned the default carefully!",
+        "created_at": "Sun Aug 16 20:12:29 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1953337039510003712",
+          "name": "Tibo",
+          "screen_name": "thsottiaux",
+          "description": "Codex & ChatGPT @OpenAI",
+          "followers_count": 467322,
+          "friends_count": 71,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 346,
+          "favorite_count": 5486,
+          "reply_count": 510,
+          "quote_count": 162
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 19,
+        "reply_count": 4,
         "quote_count": 0
       }
     }

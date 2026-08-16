@@ -1,12 +1,68 @@
 {
   "date": "20260816",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-08-16T01:01:09.705690",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-08-16T02:57:23.740113",
+  "tweet_count": 201,
+  "unique_tweet_count": 201,
+  "total_crawled": 400,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2088803072084504812",
+      "text": "Anthropic 的篇官方技术说明，解释 Claude 文本水印的具体工作方式。https://t.co/zBCEcRvFcR\n\nClaude 用的是 Google DeepMind 2024 年发表在《Nature》上的 SynthID-Text 方案，往上追溯可以到 Scott Aaronson 2022 年的提案。这一脉方案的共同特征是在模型选词时，用密钥改变随机数的来源，从而在输出中留下统计痕迹。\n\nAnthropic 举了个例子帮助理解。假设模型写到“今天天气很冷，而且……”，下一个词可能是“阴沉”，也可能是“灰蒙蒙的”，对读者来说意思差不多。正常情况下，模型用一个随机数在这些候选词里选一个。加了水印之后，选词过程还是随机的，但随机数的来源变了，变成由密钥和前面的词共同决定。文本读起来完全一样，但事后拿着密钥去核对选词序列，就能算出这段话是 Claude 写的概率。\n\nAnthropic 在文中特别强调了一点：水印不会让模型选它本来不会选的词。模型不会因为水印而突然用一个生僻词（文中举的例子是 nubilous，一个几乎没人用的“阴天”的同义词）。水印只在模型本就犹豫的那些选择上起作用。\n\n然后是大家最关心的：会不会降低输出质量？\n\nAnthropic 说他们内部测试没有观察到水印对内容质量、创意水平或可读性的影响。他们援引了 Google DeepMind 的数据作为佐证：Google 在 Gemini 的实际流量中给一部分用户提供了带水印的模型，对比用户的点赞点踩反馈，两组没有统计显著差异。同时在受控实验中，人类评估者把带水印和不带水印的回答放在一起对比，也看不出区别。\n\n打个比方：想象你在玩大富翁，本来每回合掷骰子决定走几步。现在改成查圆周率的小数位来决定，从某一位开始，依次读下去。对玩家来说，每一步还是随机的，游戏体验没有变化。但如果有人事后看走步的完整序列，再对照圆周率，就能判断这盘游戏用的是圆周率而不是骰子。\n\n关于代码，Anthropic 的解释是：水印只在选哪个词都行的地方起作用。代码大量地方必须精确，“2+2=”后面只能跟 4，水印无从施加。所以代码的水印密度天然就比自然语言低。不过在代码注释、变量命名这些有选择余地的地方，水印仍然可以嵌入。\n\n还有一个之前没怎么讨论的重要信息：水印不携带任何用户身份信息。不能追溯到具体的用户、组织或对话。水印只回答一个问题，“这段文字是否可能经过 Claude 处理”，仅此而已。\n\n文章中也提到了水印的局限。短文本检测不了，信号太弱。纯事实性内容（比如“牛顿最著名的著作叫《自然哲学的数学原理》……”）水印也没什么发挥空间，因为下一个词几乎没有选择余地。你让 Claude 校对一篇文章只改语法标点，大部分词还是你的，水印可能根本不够形成可检测的信号。\n\n轻度编辑大概率不会完全去掉水印。但如果把每个词都换一遍，水印就没了，当然到这个程度，这段文字算不算 AI 生成的本身也值得商榷了。\n\n至于为什么全球统一加水印而不只在欧盟范围内执行，Anthropic 给出的理由是他们目前没有一个可靠的方式按地区区分是否施加水印。所以干脆全球统一上线，后续再评估是否调整。\n\n检测端还没有完全就位。Anthropic 表示很快会推出水印检测 API，但具体时间和使用方式还在敲定中。这也呼应了 Alex Cui 之前提到的一个关键问题：检测器是公开还是内部使用，会直接影响水印的实际安全性。\n\n顺便说一下，签署这份欧盟透明度行为准则的不止 Anthropic 一家，总共有大约 190 个签署方。水印不是 Claude 独有的事情，其他大模型厂商也会陆续跟上各自的方案。",
+      "created_at": "Sun Aug 16 01:40:35 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2088720412805066752",
+          "url": "https://video.twimg.com/amplify_video/2088720412805066752/vid/avc1/2334x1706/Fpb_1ucVoqEcdayk.mp4?tag=29",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2088343978873966687",
+        "text": "We’ve written an FAQ to answer some of the questions we've received about watermarking. \n\nIn summary:\n\n• We’re implementing watermarking to comply with the EU AI Act. Other major model developers have signed the same Code of Practice and will also be implementing watermarking;\n• Our watermarking method doesn’t have any practical impact on the quality or content of Claude’s outputs;\n• The difference between watermarked and un-watermarked text will not be distinguishable to readers;\n• Nothing is added to the text and there are no hidden characters;\n• Watermarking doesn’t require extra tokens, and will not be more expensive;\n• Watermarks can’t be traced to a specific person, organization, or chat.\n\nRead more: https://t.co/G76iUOJ7Hu",
+        "created_at": "Fri Aug 14 19:16:18 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1353836358901501952",
+          "name": "Anthropic",
+          "screen_name": "AnthropicAI",
+          "description": "We're an AI safety and research company that builds reliable, interpretable, and steerable AI systems. Talk to our AI assistant @claudeai on https://t.co/FhDI3KQh0n.",
+          "followers_count": 1595982,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 548,
+          "favorite_count": 3904,
+          "reply_count": 1639,
+          "quote_count": 934
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 241211,
+        "friends_count": 1708,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 21,
+        "reply_count": 12,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2088786270424313955",
       "text": "RT @mvanhorn: Okay I am convinced that I don’t think I need my OpenClaw or Hermes anymore bc of Grok Bot. 😬 It has a “can-do” attitude that…",

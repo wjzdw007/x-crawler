@@ -1,12 +1,98 @@
 {
   "date": "20260816",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-08-16T02:57:23.740113",
-  "tweet_count": 201,
-  "unique_tweet_count": 201,
-  "total_crawled": 400,
+  "last_crawl_time": "2026-08-16T04:32:23.945056",
+  "tweet_count": 202,
+  "unique_tweet_count": 202,
+  "total_crawled": 401,
   "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2088838461511839844",
+      "text": "我最近就发现，即使聪明如 Fable 5，如果你只是给它一个目标让它优化，它可能也就是在既定的框架下想办法帮你优化到极致，但是它很难跳出既定框架，发现一条完全不同的路线。\n\n比如说最近有用户反映使用 BaoCut 转录速度慢，我就反复的用 Codex 去转录视频，然后让 Codex 或者 Fable 去分析瓶颈在哪里，该怎么优化，然后每次它们都能给我一堆理由和看起来靠谱的优化方案。\n\n比如它会建议多开启 workers（subagent），对 workers 预热之类。让它按照方案优化后，似乎有效果但是又不明显。\n\n最后还是自己去分析数据包，发现耗时长还是输出的 JSON 格式太长了，导致生成、校验时间较长。\n\n如果不用 JSON 格式，比如纯文本，或者简单的 html 格式，会更节约 token，只不过这样程序解析会很复杂，比如对字幕润色分段，输出是纯文本的话，就要做 diff 比较润色后更改的内容，还要把变更后的部分，重新对应到原始字幕的单词上。\n\n简单来说，就是以前为了让程序简单就让模型输出复杂更费 token；如果要节约 token，就可以让模型的输出简单，但是程序解析会很复杂。\n\n按照这个思路改进后，效果很明显（对比图2图3），调用次数从 33 次降低到 12 次；时间从 31 分钟降低到 18 分钟。测试张小珺那期将近 7 小时的访谈，完整润色也只需要 42 分钟。\n\n如果不走 Agent 走 Cloud 模型的话，一个小时的视频，完整的翻译校对成双语字幕，用 DeepSeek v4 Flash，成本大于是 ¥0.4元。\n\n有兴趣可以试试看效果，Mac 有专门的 App，Windows 支持 cli 或者 skill。 \nBaoCut ：https://t.co/89Wi1b3hZT",
+      "created_at": "Sun Aug 16 04:01:12 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2088825332195262464",
+          "url": "https://pbs.twimg.com/media/HPz_kpNWAAAPYTf.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2088831417094483968",
+          "url": "https://pbs.twimg.com/media/HP0FG1OXsAAyFZP.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2088834460212924416",
+          "url": "https://pbs.twimg.com/media/HP0H39uWEAANQlA.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2088836217987096576",
+          "url": "https://pbs.twimg.com/media/HP0JeR8XYAAcNdW.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2085908601638445177",
+        "text": "很多人不知道该怎么用好 Agent 的 /goal 功能，也就是说给 Agent 一个目标，让它长时间运行，直到目标完成为止。\n\n其实没你想的那么复杂，注意几个点：\n1. 你的目标是什么\n2. 如何验证结果\n3. 停止条件\n\n比如说我这两天做的一个性能优化的任务，Fable 5 帮我把视频转录性能优化了2倍多（图2），提示词很简单（图1）：\n> /goal 帮我优化当前 cli 的转录大视频的性能，在遇到像这样大体积的视频时，需要优化转录性能，请以 Moss 模型测试这个视频（英文为主，多语言）转录，建立基准，然后分析性能瓶颈，尝试优化，直到你觉得已经没有优化空间了。注意你的主要任务是分析、编排和验证，具体任务尽可能交给 subagent（Opus5）去执行\n\n首先用 /goal 表示这是一个需要长时间执行的任务，需要反复执行，不能运行一会就结束了。\n\n然后给它一个视频让它先自己跑一遍转录，记录一下关键数据，建立基准。\n\n基于转录时收集的数据，Agent 自己可以去分析原因，去自己优化，优化完成后再去跑一遍，记录数据，对照前面的基准看是更好了还是更坏了。\n\n结束条件是它自己觉得已经没有优化空间了就结束。之所以我没给它一个具体指标，是因为我也不知道能优化多少，如果指标太容易达到，它一轮可能就结束了；如果指标太难超出物理极限也没意义，反而可能会出现为了优化去做一些极端的事情。\n\n最后一句让它开subagent执行子任务是因为 Fable 5 太贵，全程 Fable 5 用不了多久就要额度不够了，加了这句就耐用多了，而且质量也挺好。\n\n---\n\n还有些时候，想到一个新的技术方案，但并不知道这方案是不是有效，那也可以让它开个worktree，去验证一下是不是靠谱，看数据是更好还是更坏，如果没提升就没必要做了。（参考图3）",
+        "created_at": "Sat Aug 08 01:58:59 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2085908300688760832",
+            "url": "https://pbs.twimg.com/media/HPKijECXoAAZhMA.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2085908326731087872",
+            "url": "https://pbs.twimg.com/media/HPKiklDWAAALuYb.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2085908354703007744",
+            "url": "https://pbs.twimg.com/media/HPKimNQXoAAy2v0.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 241213,
+          "friends_count": 1708,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 100,
+          "favorite_count": 550,
+          "reply_count": 112,
+          "quote_count": 6
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 241213,
+        "friends_count": 1708,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 23,
+        "reply_count": 4,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2088803072084504812",
       "text": "Anthropic 的篇官方技术说明，解释 Claude 文本水印的具体工作方式。https://t.co/zBCEcRvFcR\n\nClaude 用的是 Google DeepMind 2024 年发表在《Nature》上的 SynthID-Text 方案，往上追溯可以到 Scott Aaronson 2022 年的提案。这一脉方案的共同特征是在模型选词时，用密钥改变随机数的来源，从而在输出中留下统计痕迹。\n\nAnthropic 举了个例子帮助理解。假设模型写到“今天天气很冷，而且……”，下一个词可能是“阴沉”，也可能是“灰蒙蒙的”，对读者来说意思差不多。正常情况下，模型用一个随机数在这些候选词里选一个。加了水印之后，选词过程还是随机的，但随机数的来源变了，变成由密钥和前面的词共同决定。文本读起来完全一样，但事后拿着密钥去核对选词序列，就能算出这段话是 Claude 写的概率。\n\nAnthropic 在文中特别强调了一点：水印不会让模型选它本来不会选的词。模型不会因为水印而突然用一个生僻词（文中举的例子是 nubilous，一个几乎没人用的“阴天”的同义词）。水印只在模型本就犹豫的那些选择上起作用。\n\n然后是大家最关心的：会不会降低输出质量？\n\nAnthropic 说他们内部测试没有观察到水印对内容质量、创意水平或可读性的影响。他们援引了 Google DeepMind 的数据作为佐证：Google 在 Gemini 的实际流量中给一部分用户提供了带水印的模型，对比用户的点赞点踩反馈，两组没有统计显著差异。同时在受控实验中，人类评估者把带水印和不带水印的回答放在一起对比，也看不出区别。\n\n打个比方：想象你在玩大富翁，本来每回合掷骰子决定走几步。现在改成查圆周率的小数位来决定，从某一位开始，依次读下去。对玩家来说，每一步还是随机的，游戏体验没有变化。但如果有人事后看走步的完整序列，再对照圆周率，就能判断这盘游戏用的是圆周率而不是骰子。\n\n关于代码，Anthropic 的解释是：水印只在选哪个词都行的地方起作用。代码大量地方必须精确，“2+2=”后面只能跟 4，水印无从施加。所以代码的水印密度天然就比自然语言低。不过在代码注释、变量命名这些有选择余地的地方，水印仍然可以嵌入。\n\n还有一个之前没怎么讨论的重要信息：水印不携带任何用户身份信息。不能追溯到具体的用户、组织或对话。水印只回答一个问题，“这段文字是否可能经过 Claude 处理”，仅此而已。\n\n文章中也提到了水印的局限。短文本检测不了，信号太弱。纯事实性内容（比如“牛顿最著名的著作叫《自然哲学的数学原理》……”）水印也没什么发挥空间，因为下一个词几乎没有选择余地。你让 Claude 校对一篇文章只改语法标点，大部分词还是你的，水印可能根本不够形成可检测的信号。\n\n轻度编辑大概率不会完全去掉水印。但如果把每个词都换一遍，水印就没了，当然到这个程度，这段文字算不算 AI 生成的本身也值得商榷了。\n\n至于为什么全球统一加水印而不只在欧盟范围内执行，Anthropic 给出的理由是他们目前没有一个可靠的方式按地区区分是否施加水印。所以干脆全球统一上线，后续再评估是否调整。\n\n检测端还没有完全就位。Anthropic 表示很快会推出水印检测 API，但具体时间和使用方式还在敲定中。这也呼应了 Alex Cui 之前提到的一个关键问题：检测器是公开还是内部使用，会直接影响水印的实际安全性。\n\n顺便说一下，签署这份欧盟透明度行为准则的不止 Anthropic 一家，总共有大约 190 个签署方。水印不是 Claude 独有的事情，其他大模型厂商也会陆续跟上各自的方案。",

@@ -1,12 +1,48 @@
 {
   "date": "20260816",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-08-16T18:22:45.463542",
-  "tweet_count": 212,
-  "unique_tweet_count": 212,
+  "last_crawl_time": "2026-08-16T20:17:52.599282",
+  "tweet_count": 213,
+  "unique_tweet_count": 213,
   "total_crawled": 412,
-  "duplicates_removed": 200,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2089072890104725788",
+      "text": "可能是太久没用 ChatGPT 了，才发现从 ChatGPT 就能直接让它修改代码提交 PR。（我是用的 ChatGPT Pro）\n\n起因是我在做一个 Deep Research 调研，完了后就想让它基于我的代码库做一个方案，但是整个代码库都打包上传太麻烦了，我就把 GitHub 地址发给它了，没想到它自己就 clone 到本地开始分析代码了，最后给了一份很详细的结合当前代码库现状的方案。\n\n一看方案写挺好，想着干脆帮我实现吧，让它自己去提交个 PR，结果它真的就基于方案帮我实现并提交 PR 了，中间确认了一次 GitHub 操作权限。\n\n需要先在 ChatGPT 的设置的 Plugins 里面连上 GitHub 才能访问你的 GitHub Repo，以及以你的名义提交 PR。",
+      "created_at": "Sun Aug 16 19:32:44 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2089071900370620416",
+          "url": "https://pbs.twimg.com/media/HP3f0zPXUAA_XM5.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2089072080499204096",
+          "url": "https://pbs.twimg.com/media/HP3f_SRXYAAAfI9.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 241295,
+        "friends_count": 1708,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 6,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2089006280530702447",
       "text": "Mole 是真心好用，自从用了 Rust，每次编译要几十G，这时候就经常需要借助 Mole 帮我清理，挺好用。\n\n除了清理，另一个我喜欢的功能是分析磁盘占用，可以很容易找出那些隐藏的占用空间的，解决后一劳永逸",

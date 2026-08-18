@@ -1,12 +1,340 @@
 {
   "date": "20260818",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-08-18T04:32:42.986802",
-  "tweet_count": 203,
-  "unique_tweet_count": 203,
-  "total_crawled": 401,
-  "duplicates_removed": 198,
+  "last_crawl_time": "2026-08-18T06:36:05.394178",
+  "tweet_count": 209,
+  "unique_tweet_count": 209,
+  "total_crawled": 403,
+  "duplicates_removed": 194,
   "tweets": [
+    {
+      "id": "2089592732780032132",
+      "text": "Grok 4.6 takes top spot on this benchmark",
+      "created_at": "Tue Aug 18 05:58:24 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2089548170347081895",
+        "text": "🥇 We evaluated Grok 4.6 on MedAgentBench, a benchmark for agentic clinical EHR tasks, and it took the top spot. Grok 4.6 posts the highest pass@1 we've measured to date, moving ahead of the previous leader, GPT-5.6 Sol, to claim first place on the leaderboard. 🏥\n\nGrok 4.6 averages ~95.9% pass@1 (avg of 3 runs), edging out the prior best (GPT-5.6-sol at ~94.7%) and improving on Grok 4.5 by roughly 2.5 points. On a benchmark where the model acts as an autonomous agent in a simulated EHR, calling FHIR APIs to complete clinical tasks across 10 task types, the result is also remarkably consistent run to run (95.3% to 96.3%). \n\n📊 Leaderboards: https://t.co/qHfewbNGeM",
+        "created_at": "Tue Aug 18 03:01:20 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2089547109712457728",
+            "url": "https://pbs.twimg.com/media/HP-QBn_a8AARJaH.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1969192770259861505",
+          "name": "Medical Sphere",
+          "screen_name": "MedicalSphereAI",
+          "description": "The global community for advancing AI in healthcare\n\nTag @AskMedSphere to test AI models on medical cases",
+          "followers_count": 2000,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 11,
+          "favorite_count": 83,
+          "reply_count": 13,
+          "quote_count": 7
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241384987,
+        "friends_count": 1391,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 219,
+        "favorite_count": 1364,
+        "reply_count": 469,
+        "quote_count": 22
+      }
+    },
+    {
+      "id": "2089590302910587116",
+      "text": "豆包越来越像 Codex 了，这是我最近用下来最直观的感受。Codex 一直是我心里 Agent App 体验的标杆，而豆包这波更新，从 GUI 电脑操作到手机远程操控，很多设计思路都能看到 Codex 的影子，有些地方甚至做了本土化的超越。\n\n最近我老婆回国，在国内用不了 ChatGPT 和 Claude 这些，日常就用豆包帮她查资料、做攻略。这两天她需要在自己电脑里找个文档，人在国内，电脑在美国——直接用手机上的豆包指挥美国这边的电脑，帮她把文档找出来发到飞书，手机上就能访问了，非常方便。\n\n注意使用的时候要在手机和电脑上登录相同的账号，并且电脑上要允许手机连接才行。然后从手机打开“工作任务”，就可以在底部看到你连接的电脑端。\n（参考图3图4）\n\n手机指挥 Agent 现在是我日常用得很多的功能。在外面的时候可以随时从手机看 Agent 任务的执行进度，或者临时想到什么事情，通过手机就能指挥家里/公司电脑上的 Agent 去执行，回家直接看结果，通勤路上也不耽误。\n\n之所以要通过手机指挥电脑，是因为电脑上的资源通常是最全的：硬盘上有所有文档、代码库，有各种配置好的技能，而电脑又不可能一直随身带着。想想看，快下班的时候还有个任务没跑完，又不想干等着，那就先让 Agent 跑着，用手机连上电脑随时看进度，有问题还能中途插话调整。动口不动手，重复活儿全甩给它。\n\n豆包在 Windows 版本上的 GUI 电脑操作功能体验下来相当的好用，它巧妙的通过豆包虚拟桌面让人和 AI 同时操作电脑，互不干扰，这点优势还蛮明显的，有点我第一次用 Codex 在 Mac 上的 Computer Use 感觉一样，就是它帮你操作电脑 App，但是完全不影响你当前正在执行的任务。不像 Claude Code 一旦使用 Computer Use，你就得等它操作完才能继续干活。\n（参考图1图2）\n\nComputer Use 让 Agent 直接帮你操作图形界面的软件：点按钮、填表格、下载文件，理论上即使没有提供 CLI 的软件都能控制。日常能用的场景很多：\n\n- 办公类：新建和排版 Word/Excel/PPT，处理函数、生成图表，或者让它开着浏览器做调研然后直接产出 PPT\n- 桌面类：批量归类整理文件、改系统设置、管理启动项这类琐碎活儿\n- 长尾类：PS 批量改图导出、证件照排版打印，甚至通过微信桌面版帮你发消息\n- 发散玩法：游戏帧率优化设置、自动化信息收集整理……\n基本上你觉得「这活儿也能甩给 AI？」的重复劳动，都值得试试\n\n我自己使用 Agent 有个技巧，就是尽可能让 Agent 能自己检查自己、拿到反馈。比如写程序，要让它自己写测试，或者用 Computer Use 去验证 App 的运行操作，自己去模拟用户操作；即使是让 AI 生成 PPT，也会让它自己截图验证下看看效果。这样可以减少人工干预，最大化利用好 Agent 的能力。\n\n入口在豆包 PC 端的「工作任务」模式里，Windows 用户记得升级到最新版；Mac 目前还只支持内置浏览器的 GUI 操作。",
+      "created_at": "Tue Aug 18 05:48:45 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2089590217812393984",
+          "url": "https://pbs.twimg.com/media/HP-3O2LWwAASXvJ.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2089590237961814016",
+          "url": "https://pbs.twimg.com/media/HP-3QBPWgAAHwka.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2089590269247131648",
+          "url": "https://pbs.twimg.com/media/HP-3R1yWkAAidZu.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2089590285638479872",
+          "url": "https://pbs.twimg.com/media/HP-3Sy2WsAA1ke0.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 241451,
+        "friends_count": 1707,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 6,
+        "favorite_count": 42,
+        "reply_count": 17,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2089587570619392460",
+      "text": "RT @desenmeng: 我支持内部尽可能开放，外部有意识地限制。平台应该有自己的判断，而不是把所有可能性原样交给插件作者和用户。…",
+      "created_at": "Tue Aug 18 05:37:54 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2089543210943287489",
+        "text": "我支持内部尽可能开放，外部有意识地限制。平台应该有自己的判断，而不是把所有可能性原样交给插件作者和用户。\n\n“一切皆插件”作为内部架构原则，我非常认同。通用引擎最怕的就是不断被具体产品的需求侵蚀：今天加一个特例，明天再补一层判断，最后虽然还叫通用引擎，实际上已经只能服务当前这个产品。其他人想做不同的东西，只能 fork，然后各自维护一套。\n\n所以 DSH 希望把 Agent Loop、Session、Tool Runtime、LLM、Persistence、Sandbox 甚至 UI 都变成可以重新组合的部分，这个方向是有价值的。Harness 还处在快速变化期，现在也没有哪套实现已经被证明是最终答案。底层如果太早写死，后面想换一种上下文组织方式、Session 模型或者 Agent Loop，都会很难。\n\n但我不认为，由此就能推出“所有内部逻辑都应该成为第三方扩展点”。\n\n把 Pi、VS Code 和 DSH 放在一起看，区别其实不在于谁有插件冲突。Pi Extension 一样可以注册同名 Tool、修改 Prompt、拦截同一个事件；VS Code 里也一直有格式化器、快捷键和语言服务互相影响的问题。只要多个扩展可以同时运行，命名、顺序、优先级和兼容性就一定会出现。\n\n真正的区别，是插件可以改到哪一层，以及平台有没有提前规定这些变化怎么组合。\n\nVS Code 的做法是，核心仍然由平台控制，第三方主要通过 Contribution Points 和稳定接口增加能力。某个扩展点允许多个 Provider 时，宿主决定结果怎么合并；某个能力只能有一个实现时，就让用户选择；名字必须唯一的地方，就在注册时处理。它当然不能消灭冲突，但它尽量把冲突限制在已经定义好的范围里。\n\nPi 更开放一些。Extension 可以注册 Tool 和 Command、修改上下文、监听或拦截 Agent 的运行过程，甚至通过同名注册覆盖内置 Tool。但它仍然有一个相对固定的 coding-agent core。Agent Loop、Session Runtime 等部分主要由宿主持有，所以 Extension 大多还是围绕同一个内核运行。\n\nDSH 再往下走了一层。它不是在固定内核周围增加能力，而是让插件共同组装内核本身。Session、Agent Loop、Tool Runtime、Persistence、Sandbox 都可能来自不同插件。\n\n这种设计的自由度确实更高，但需要处理的问题也不再只是“两个 Tool 重名”。\n\nDSH 实际上同时存在几套身份：npm/module instance、Cordis service 或 Symbol、loader entry、Tool/Command/Route/Prompt 的名字，以及 host/preset/agent/session 的 Scope。同一个插件在配置里看起来只装了一次，不代表运行时一定只有一个 module instance；module instance 相同，也不代表 registry、loader 和 Scope 对它的理解一致。再加上 reload 和 generation 切换，问题还会沿着时间继续展开。\n\n这不是纯理论问题。至少在 rc.6 的社区运行时报告里，已经出现过双实例导致 Symbol 分裂、重复 loader entry、process-global registry 冲突、late provider 工具重名，以及旧 generation 没有完全 dispose 等情况。这里需要强调，这些是社区报告，不等于维护者已经确认了同一个根因；但它们足以说明，DSH 要处理的是一整套运行时身份和生命周期问题，不只是普通的插件重名。\n\nCordis 能很好地处理 activation、依赖等待、effect disposal 和 Scope visibility，但这些机制本身并不会决定：重复注册应该 reject、replace、merge 还是 shadow；谁拥有一个名字；两个实现谁优先；安装失败以后怎么回滚；旧 generation 什么时候才算真正退出。\n\n这些选择最后还是要由平台来做。\n\nEffect 也是一样。它能把依赖和副作用表达得更清楚，让资源释放、重试、并发和 TestClock 变得更容易测试。这是很大的价值，我完全认同。\n\n但能够静态知道一段代码访问了文件、网络或者数据库，并不等于系统已经知道两个插件发生冲突时应该听谁的。知道“发生了什么”和决定“应该怎么办”，是两件事情。\n\n外部操作尤其明显。消息已经发送、文件已经被读取、支付已经完成、货已经发出，这些事情不会因为插件 dispose 就自动消失。框架可以让它们更容易追踪，也可以强迫开发者把补偿逻辑写出来，但具体是重试、补偿、对账还是人工处理，仍然是产品选择。\n\n所以“不 fork 主干”当然是个很好的目标，但它不会让不同需求之间的分歧消失。以前这些分歧存在于代码分支里，插件化以后，它们会存在于 Profile、Bundle、Scope、插件版本和加载顺序的不同组合里。\n\n这通常仍然比长期维护多个 fork 更好，但维护成本只是换了位置。以前处理 merge 和升级，现在处理依赖、身份、生命周期、状态兼容和组合测试。\n\nAI Coding 可以降低写 Adapter、迁移接口和补兼容层的成本，却不会自动决定两个插件冲突时哪一种行为才符合产品意图。代码越来越容易生成以后，平台自己的判断反而会变得更重要。\n\n这也是我为什么更支持“内部开放，外部限制”。\n\n平台不应该只是一个中性的插件容器。它首先应该知道自己要做成什么产品，然后决定哪些变化可以交给第三方，哪些行为必须保持一致。开放一个稳定接口，不只是让别人能够调用它，也意味着平台准备长期维护它的语义、升级方式和失败处理。\n\n如果平台对什么都不做判断，默认所有逻辑都能被第三方改写，那么冲突出现以后，用户只能自己判断应该装哪个插件、谁覆盖谁、哪个版本能一起工作。这个结果不是更开放，而是平台把集成工作转交给了用户。\n\n我的选择会很明确：\n\n内部实现可以尽量模块化，Agent Loop、Session、Persistence、Sandbox 都应该有替换空间。这样核心团队自己做实验、切换实现或者服务不同产品时，不需要不断侵入底层代码。\n\n但面向普通第三方时，应该只开放平台已经想清楚的部分。Tool、模型 Provider、Command、Prompt、上下文来源和 UI Contribution，可以较早形成稳定接口；Agent Loop、Session、Sandbox、Persistence 仍然可以允许替换，但先放在 experimental 或 proposed 层，不急着承诺跨版本兼容。\n\n真正需要完全控制 Runtime 的团队，可以进入更底层的 distribution 层，自己固定插件版本，并测试 install、boot、reload、dispose 和 resume。到了这一层，他做的已经不只是写一个插件，而是在维护自己的发行版，自然也应该承担对应的集成责任。\n\n所以我不反对“一切皆插件”。我反对的是把内部可替换性直接等同于外部无限扩展。\n\n内部越开放，平台越有空间继续演化；外部越克制，第三方越容易知道哪些东西真的可以依赖。这两件事并不矛盾。\n\n一个好的平台不只是提供可能性，也要敢于做选择。什么应该允许扩展，什么应该保持统一，什么现在还没想清楚、只能作为实验接口存在——这些判断本身，就是平台应该提供的价值。",
+        "created_at": "Tue Aug 18 02:41:37 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2088539283049365580",
+          "text": "我可以讲清楚这种启发具体是什么。\n\n所谓 “一切皆插件” 至少有三四种不同的架构含义，很多人会将其误解为类似 Webpack 和 Pi 中的 hook 模式，或 VSCode 中在主创团队决策下开放给第三方的插件场景。\n\n然而我对 DSH 插件架构要解决的问题的理解，其实还是来源于当年的 AFFiNE。\n\n那时，虽然 AFFiNE 在产品功能上相当于 OpenNotion，但我们非常希望架构要完全可定制，理想中任意需求最好都能不 fork 我们主干就能由第三方实现（请就这句话联想一下 harness 场景）。因为在我们的融资叙事里，AFFiNE 的长期愿景是成为一个通用的应用开发底座。AFFiNE 内部我负责的 BlockSuite 编辑引擎也遇到同样的问题。满足短期需求的产品功能快速侵入通用引擎，会让技术团队对通用性愿景逐渐失去信心。\n\n因此，当时 @EEEEYHN 设计实现了 Affine Framework，而 @mirone_saul 在 BlockSuite 中也做了类似的工作。其基本思路是将 DI 和 rxjs 结合来管理业务对象的生命周期，从而只要基于这套架构的逻辑，都是原理上能运行时动态替换的——很高兴看到今天 DeepSeek 甚至就此给出了数学证明！\n\n重复一遍，这种插件模式的重点在于运行时任意扩展的理论可能性。其精髓不同于 VSCode 那样人工决定“什么能被第三方扩展”，而是任意逻辑都默认能被第三方扩展。\n\n这项工作不存在于 AFFiNE 的公开文档中，因为项目后期我们已经无暇顾及开发者业务的叙事。且这种架构也会让代码显著地更为晦涩，在古法编程时代会拖慢开发效率。有兴趣的朋友欢迎用 codex 去考古。\n\n并且，我也不觉得我有资格声称“DSH 的理念早已被我们掌握”，因为 DSH 是第一个做到在 day one 就将我们未竟的理念贯彻为项目中一等公民的产品。这种技术方向上的产品化可能性，就是对我最大的启发。\n\n在离开 AFFiNE 加入 Lovart 后，我注意到了 Prisma 作者 Johannes 对 @EffectTS_ 的称赞。如果你将手搓 DSH 插件架构的思路做到极致，那么基本上你就会重新得到 Effect。只要把它的 layer 理解成 provider， 把 tag 理解成 service key 就够了。\n\n充分 Effect 化的代码里没有 setTimeout，能用 TestClock 做确定性模拟测试，从而将 E2E 墙钟时间压缩到单测时间。我认为这对提高软件可验证性有极大价值，甚至单独约过会向 Melvin 老板和 CTO 介绍过这项技术，然而也确实感觉没人能听懂我在说什么……\n\n现在回头看，我觉得 AFFiNE 有点像是个 General Magic 式的组织，它确实尝试过在一个宏大理想的 umbrella 下汇聚很多领域内最优秀的人各自的小理想。\n\n在 AFFiNE，我有幸光明正大地烧投资人的钱，专门去研究通用编辑引擎如何从第一性原理出发设计架构。这些 know how 并不是局外人“那样肯定搞不成”可以一笔带过的。\n\nGM 最后没有跑出来，但安卓、iPod、iPhone、Flash，其实都是技术条件成熟后 GM 团队当年理想的开枝散叶。AFFiNE 团队的核心成员去了 Manus、VoidZero 等地方，我也感觉是在追寻自己多年前的影子。像 PocketJS 能不能成为新一代的 Flash 呢？\n\n现在像是来到了十年前前端框架大乱斗风起云涌的年代，在这个技术奇点加速开蹬吧！",
+          "created_at": "Sat Aug 15 08:12:22 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1265957219612258307",
+            "name": "Yifeng \"Evan\" Wang",
+            "screen_name": "ewind_dev",
+            "description": "Creator @pocket_js @sheruapp / ex @lovart_ai / cofounded @AffineOfficial / aka 雪碧 / INTP",
+            "followers_count": 13542,
+            "friends_count": 1517,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 23,
+            "favorite_count": 207,
+            "reply_count": 53,
+            "quote_count": 2
+          }
+        },
+        "user": {
+          "id": "316860382",
+          "name": "Jason Meng",
+          "screen_name": "desenmeng",
+          "description": "Building PodHood @podhoodai \nExploring the future of content https://t.co/nGk7j1QpTk\nprev: @tiktok_us, @AlibabaGroup",
+          "followers_count": 250,
+          "friends_count": 1152,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3,
+          "favorite_count": 11,
+          "reply_count": 3,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 241451,
+        "friends_count": 1707,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2089578951484023002",
+      "text": "RT @vikvang1: Grok 4.6 is my daily driver now. This is why:\n\nWhen I’m using interactive agents in a CLI/terminal (or even Slack), what matt…",
+      "created_at": "Tue Aug 18 05:03:39 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2088751558578061542",
+        "text": "Grok 4.6 is my daily driver now. This is why:\n\nWhen I’m using interactive agents in a CLI/terminal (or even Slack), what matters most to me is speed & token throughput. Intelligence and differences in performance on benchmarks is negligible to me when speed is sacrificed. \n\nIf I am there to steer & guide the agent, or make some quick fixes, then I don’t want to wait 5+ min per turn.\n\nOpus 5 (fast) is a good solution to this, but it is WAY too expensive. Grok 4.6 is perfect though, incredibly fast, almost as smart as Fable, and relatively much cheaper than anything else right now.\n\nOn the flip side, for cloud agents working in Factories & background tasks triggered on crons, I don’t mind using intelligent, slow models like Fable / Sol. I’d even opt for a  model router for cloud tasks that biases to heavy, smart models. \n\nI guess the meta point I’m making here is that model choice is largely a function of whether there’s a human waiting in the loop.",
+        "created_at": "Sat Aug 15 22:15:53 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1354578798331785217",
+          "name": "sathvik",
+          "screen_name": "vikvang1",
+          "description": "Semper Prorsum\n\nDevX @warpdotdev, Georgia Tech Alum, ex-Perplexity",
+          "followers_count": 4339,
+          "friends_count": 1590,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 76,
+          "favorite_count": 646,
+          "reply_count": 68,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241384987,
+        "friends_count": 1391,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 76,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2089578400734167260",
+      "text": "Grok @Bot",
+      "created_at": "Tue Aug 18 05:01:27 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2089401696946634801",
+        "text": "I think Grok @Bot is a glimpse into the future of personal AI agents.\n\nHere's my new tutorial where I show you how to set up 5 useful bots:\n\n1. An advisor to create and manage your bots\n2. A YouTube researcher to find outlier videos\n3. An X scout to find viral and funny tweets\n4. A digital Marie Kondo to clean up your inbox and save money on paid subscriptions\n5. A personal concierge to save money on trips\n\nI also tested a Gamer bot to see if Grok Bot can install and play classic games like Doom, Red Alert, and Commander Keen.\n\nPlus, I discuss the biggest barrier to Grok Bot adoption and whether it can replace ChatGPT as my daily driver.\n\n📌 Watch now: https://t.co/gqQ4TclPtM",
+        "created_at": "Mon Aug 17 17:19:18 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "84490044",
+          "name": "Peter Yang",
+          "screen_name": "petergyang",
+          "description": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6",
+          "followers_count": 267919,
+          "friends_count": 2184,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 62,
+          "favorite_count": 564,
+          "reply_count": 61,
+          "quote_count": 17
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241384987,
+        "friends_count": 1391,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 259,
+        "favorite_count": 1871,
+        "reply_count": 494,
+        "quote_count": 25
+      }
+    },
+    {
+      "id": "2089575133442711787",
+      "text": "Sync to Origin",
+      "created_at": "Tue Aug 18 04:48:28 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2089399057659596847",
+        "text": "Origin, our code hosting platform, is now live.\n\nIt's fast, easy to use, and deeply integrated with Cursor.\n\nGet started by syncing your repos from GitHub. https://t.co/aqRHavAOQg",
+        "created_at": "Mon Aug 17 17:08:49 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2089397451237036032",
+            "url": "https://video.twimg.com/amplify_video/2089397451237036032/vid/avc1/1920x1080/Jnd_JeoePIL98VLX.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1695890961094909952",
+          "name": "Cursor",
+          "screen_name": "cursor_ai",
+          "description": "Coding agent for building ambitious software",
+          "followers_count": 465131,
+          "friends_count": 37,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1813,
+          "favorite_count": 20288,
+          "reply_count": 1278,
+          "quote_count": 2389
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241384987,
+        "friends_count": 1391,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 531,
+        "favorite_count": 6320,
+        "reply_count": 566,
+        "quote_count": 60
+      }
+    },
     {
       "id": "2089553857973993837",
       "text": "应该是这个选项 https://t.co/USN50lb7oO",

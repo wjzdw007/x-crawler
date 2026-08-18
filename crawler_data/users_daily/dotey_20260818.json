@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 241564,
+    "followers_count": 241567,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260818",
-  "last_updated": "2026-08-18T20:19:16.068629",
-  "tweet_count": 10,
+  "last_updated": "2026-08-18T22:19:15.413432",
+  "tweet_count": 11,
   "tweets": [
     {
       "id": "2089505447673794649",
@@ -395,6 +395,51 @@
       },
       "stats": {
         "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2089813286128656798",
+      "text": "RT @mylifcc: 我把 Claude Code 2.1.234 的包拆开了\n\n昨天我想弄清楚一件小事。两个 Claude Code 窗口互相传话，底下走的是什么。\n\n结果有两种传递方式：\n本机session之间传消息用的是 Unix Domain Socket（UDS）…",
+      "created_at": "Tue Aug 18 20:34:48 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2089718205329920442",
+        "text": "我把 Claude Code 2.1.234 的包拆开了\n\n昨天我想弄清楚一件小事。两个 Claude Code 窗口互相传话，底下走的是什么。\n\n结果有两种传递方式：\n本机session之间传消息用的是 Unix Domain Socket（UDS）\n跨机器走云端\n\n可以把它想成每个Claude Code窗口在本机开一个只属于当前系统用户的收件箱。另一个窗口往这个 socket 里丢一行纯文本。/status 里那行 Peer address 前面的 uds:，就是这个东西。",
+        "created_at": "Tue Aug 18 14:16:59 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2089715567897006081",
+            "url": "https://pbs.twimg.com/media/HQApPLoa0AE-dh-.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1486017329662423044",
+          "name": "lifcc",
+          "screen_name": "mylifcc",
+          "description": "每天用 AI 写代码的工程师\nClaude Code ｜ Codex深度用户  ｜Agentic engineering\n在这里分享 AI 工具实测和开发者工作流",
+          "followers_count": 6197,
+          "friends_count": 264,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 15,
+          "reply_count": 3,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 241495,
+    "followers_count": 241515,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260818",
-  "last_updated": "2026-08-18T12:36:54.320099",
-  "tweet_count": 5,
+  "last_updated": "2026-08-18T14:29:50.223359",
+  "tweet_count": 7,
   "tweets": [
     {
       "id": "2089505447673794649",
@@ -190,6 +190,91 @@
         "favorite_count": 42,
         "reply_count": 17,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2089708520404828524",
+      "text": "这个有意思，先装弱智跟 AI 胡乱下，把 AI 跟着一起弱智下，最后再赢它。\n\n想起那句名言：\n“你永远不要试图战胜一个纯傻逼，因为他会把你的智商拖到和他一个水平，然后再用他丰富的经验打败你！”\n\n但据说是23年的视频，现在估计不行了吧？",
+      "created_at": "Tue Aug 18 13:38:30 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2089617685978239109",
+        "text": "柯洁已经找到破解 AI 的办法了，说现在随便下 AI 包赢的，还可以让它 9 个子。如果当时和 AlphaGo 下的时候也知道这个 bug，他是能赢的。\n\n看了一下就是前期装弱智嘛，傻逼客高手，AI 无一例外都被偷吃了。\n\n网友说 懂了，我上去下一半，柯洁再下一半就能打赢 AI，我们两个真厉害。\n\nAlphaGo：其实没关系，缺乏这方面的训练数据，可以弥补的。",
+        "created_at": "Tue Aug 18 07:37:34 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2089617311414247424",
+            "url": "https://video.twimg.com/amplify_video/2089617311414247424/vid/avc1/1440x1080/fCIhhgsGn_zhuix-.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1693450364341948416",
+          "name": "iGeekbb",
+          "screen_name": "igeekbb",
+          "description": "🕹️发一些碎碎念和有趣的东东，主打一个快分享。-私信开放欢迎投稿-",
+          "followers_count": 87574,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 17,
+          "favorite_count": 279,
+          "reply_count": 84,
+          "quote_count": 5
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 13,
+        "reply_count": 9,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2089717198327583193",
+      "text": "一直有一种观点，就是小模型加 Harness，就能达到大模型的智能效果：\n> 只需要一个 10 亿参数的小模型作为“认知核心”，其余能力靠联网搜索、执行代码等工具补齐就够了。\n\nJason Wei （思维链提示技术的核心作者之一）的新推文，反驳了“小模型+工具”路线，认为光靠工具，撑不起顶级智能，把知识“内化在大脑”和“现查现用”是两回事。\n\n小模型+工具就能行的观点之所以流行，因为理论上确实说得通：模型不知道的冷门知识，可以上网查；不会算的题，可以调用代码。小模型加工具，似乎没有做不到的事。而小模型意味着更低的算力成本，对整个行业都很有吸引力。\n\n他用自己学羽毛球打了个比方。教练教的每个动作他都能做出来，但要在实战中流畅串联，跟练了上万次形成肌肉记忆的人完全不是一个级别。语言模型也一样，内化了知识的大模型和靠工具临时检索的小模型，体验差距很明显。\n\n具体来说有三点。第一是速度，直接给出答案远比调用工具搜一圈再回答快得多。第二是理解的深度，比如你问一个音乐节的口碑如何，大模型能基于海量数据给出综合判断，而小模型只能搬运搜索结果里排在前面的几条评论。第三是可靠性，每次都要重新查资料、重新推导，出错的概率更高，在复杂的长任务中错误还会层层累积。\n\n回顾“苦涩的教训”（Bitter Lesson）里面的观点：历史反复证明，靠扩大规模获得的能力提升，总是胜过精巧的工程设计。工具让小模型能做更多事，但追求最高质量的用户，始终会需要更大的模型。",
+      "created_at": "Tue Aug 18 14:12:59 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2089429555371024577",
+        "text": "When language models first started using tools well, I was sympathetic to the narrative that instead of scaling up language models, all we needed was a strong enough \"cognitive core\", say 1B parameters, and anything else could be done with tool use, like browsing the internet or executing code. I think a lot of people were sympathetic to this argument, and indeed it is pretty hard to come up with a meaningful task that cannot be in principle achieved by a 1B model with adequate access to tools. For example, any esoteric fact that a large language model would know can be, in principle, retrieved from the internet and reasoned over by a 1B language model.\n\nHowever I now think this is totally wrong for one simple reason: doing tasks quickly and naturally without tool use matters a lot.\n\nThe way that I internalized this reason was actually in my personal journey learning badminton this year. In badminton I am very much like a \"1B cognitive core\". While I can physically do every movement in a badminton shot that my coach teaches me, it requires a lot of work to mentally remember every cue and put it together. In practice I can do a shot almost perfectly, but I struggle to do it across a point and I definitely can't do it consistently in a game. This is obviously different from someone who has practiced a shot ten-thousand times and effortlessly executes it as a natural instinct.\n\nIn the same way, language models knowing a fact internally, without tool calls, is meaningful. The first reason is that we obviously care about speed; you'd much rather get an answer immediately than have the model think a long time to be sure of its answer or browse the web. A second reason is that there are some things that are simply best learned via backpropagation over lots of data. If you ask about how people generally think of the Shambhala music festival, you'd rather a large language model give you an aggregate opinion based on all the data on the internet, than get a regurgitation of the first three reviews that show up in a web search. A third reason is that having to do a lot of work to find an answer is not as reliable as already knowing the answer. While this does not have to be true in theory, it is probably true in practice, at least for now. If you have to re-look up facts or redo a mathematical derivation all the time there is a higher chance of mistakes, which can compound in a long-horizon task.\n\nOnce you buy that it is valuable to do things parametrically without tool use, then you must buy the argument that a 1B cognitive core is not sufficient. There is an information limit to how much knowledge can be internalized by a 1B model, and we will surely want AI to know more than that. Even 1T probably won't be enough. We will want the AI to know as much about our world as possible, we will want it to be updated with new information, and our expectations of what AI can do for us will continue to grow.\n\nIn summary, tool use enables small models to do a lot more, but those who demand the highest quality intelligence will always want larger models. Bitter lesson strikes again.",
+        "created_at": "Mon Aug 17 19:10:00 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1319101874532978690",
+          "name": "Jason Wei",
+          "screen_name": "_jasonwei",
+          "description": "ai researcher @meta, past: openai, google 🧠",
+          "followers_count": 111395,
+          "friends_count": 733,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 54,
+          "favorite_count": 741,
+          "reply_count": 65,
+          "quote_count": 33
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 10,
+        "reply_count": 7,
+        "quote_count": 2
       }
     }
   ]

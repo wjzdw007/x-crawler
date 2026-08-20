@@ -3,13 +3,13 @@
     "screen_name": "elonmusk",
     "name": "Elon Musk",
     "description": "https://t.co/ZdBx5WABYx",
-    "followers_count": 241416800,
+    "followers_count": 241418665,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260819",
-  "last_updated": "2026-08-19T22:21:07.058852",
-  "tweet_count": 72,
+  "last_updated": "2026-08-20T00:57:16.250944",
+  "tweet_count": 73,
   "tweets": [
     {
       "id": "2089880093195935974",
@@ -3226,6 +3226,81 @@
         "favorite_count": 8514,
         "reply_count": 671,
         "quote_count": 46
+      }
+    },
+    {
+      "id": "2090216188265869365",
+      "text": "RT @XFreeze: Grok Build just got a new update bringing a first-class workflows catalog, Always and Never allow on permission prompts, a liv…",
+      "created_at": "Wed Aug 19 23:15:48 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2090213954744463691",
+        "text": "Grok Build just got a new update bringing a first-class workflows catalog, Always and Never allow on permission prompts, a live status line that can refresh on a timer, and faster shutdown of looping tool calls\n\nRelease Notes: v1.0.7\n\nFeatures:\n• Users hitting startup timeouts can now raise the connect budget with the `GROK_CONNECT_UI_TIMEOUT_SECS` environment variable.\n• Permission prompts now show \"Always allow\" and \"Never allow\" options by default.\n• Users can now delete scheduled background loops directly from the tray.\n• Status line command scripts can now run on a timer via refresh_interval in config.toml.\n• Permission prompts now offer a 'Never allow' choice for MCP tools and web-fetch domains that persists per project.\n• Workflows tab added to the extensions modal (Ctrl+L or /plugins) listing installed workflows with name, source, and description.\n• New /workflows command opens the Workflows catalog tab; use /workflow runs to view live workflow runs.\n• Bare /workflow (or /workflow runs) now lists active and recent workflow runs with status and progress instead of usage help.\n• Workflows row added to the Ctrl+P command palette, opening the Workflows catalog tab.\n\nBug Fixes:\n• MCP server connections in non-interactive sessions no longer incorrectly require authentication for tokenless servers.\n• Fixed startup timeouts caused by concurrent auth refreshes across multiple sessions.\n• Tool call loops are interrupted earlier to avoid wasting time on repeated identical actions.\n• Subagents no longer receive the ask-user-question tool.\n• Bare email addresses are now turned into clickable mailto links in the pager.",
+        "created_at": "Wed Aug 19 23:06:55 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2090213195348938752",
+            "url": "https://pbs.twimg.com/media/HQHt06WbkAAiSlh.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2089806500114116987",
+          "text": "Grok Build just got a new update bringing a cleaner agent architecture, smoother prompt controls, a powerful new grok clone workflow, and major reliability improvements across sessions and tasks\n\nRelease Notes: v1.0.6\n\nBreaking Changes:\n• Subagent spawning no longer accepts capability_mode; tool access is now controlled only by agent type.\nFeatures:\n• Shift+arrow keys now extend text selections in the prompt like a standard text field.\n• Optional status line can now display live session info or script output at the bottom of the pager.\n• grok clone can now fetch a repo into a content store and mount a projected working tree.\n\nBug Fixes:\n• Fixed session startup hangs on large or unhealthy git repositories.\n• Queued messages during goals no longer starve, and editing queued prompts works reliably.\n• Consent notice on first launch now shows clickable links and handles keyboard/mouse correctly.\n• Ctrl+C then edit a prompt now correctly removes the original text from the conversation.\n• Double-clicking a terminal command result now shows the complete output instead of a preview.\n• Consent notice links are now stricter and more reliable on all terminals.\n• Video generation now surfaces a clear ZDR error instead of raw API responses when output storage is required.\n• Project hooks on Windows now correctly expand $CLAUDE_PROJECT_DIR when invoking PowerShell scripts.",
+          "created_at": "Tue Aug 18 20:07:51 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2089806371030265856",
+              "url": "https://pbs.twimg.com/media/HQB70nqbcAADW62.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1818311005698678784",
+            "name": "X Freeze",
+            "screen_name": "XFreeze",
+            "description": "",
+            "followers_count": 261204,
+            "friends_count": 2004,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 29,
+            "favorite_count": 219,
+            "reply_count": 21,
+            "quote_count": 5
+          }
+        },
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 261204,
+          "friends_count": 2004,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 94,
+          "favorite_count": 646,
+          "reply_count": 68,
+          "quote_count": 7
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 94,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
       }
     }
   ]

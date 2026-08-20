@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 241678,
+    "followers_count": 241675,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260819",
-  "last_updated": "2026-08-19T22:21:07.045752",
-  "tweet_count": 3,
+  "last_updated": "2026-08-20T00:57:16.237369",
+  "tweet_count": 5,
   "tweets": [
     {
       "id": "2089979681747431675",
@@ -126,6 +126,100 @@
         "favorite_count": 9,
         "reply_count": 2,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2090215153245495489",
+      "text": "智谱联合创始人唐杰老师关于 GLM 5.3 以及模型训练的一些分享：\n\n智谱 GLM-5.3 没有换基模底座，纯靠后训练让编码能力提升 50%。\n\nGLM-5.3 模型的底座是 GLM-5.2，约 743B 参数的混合专家（MoE）模型，每次推理只激活约 40B 参数。团队花了一个月，在长周期环境中做强化学习，编码能力比 GLM-5.2 提升了 50%。\n\n这里解释一下 MoE：传统模型每次推理要跑完所有参数，MoE 相当于把模型拆成一群“专家”，每次只调用其中几个，推理速度更快、成本更低。\n\n推文中特别区分了两个概念：\n1. 总参数量决定模型学习了多少知识\n2. 激活参数量和有效深度决定模型能想多深。\n\n比如说，让模型去找安全漏洞，主要是依赖的是推理能力，能把一条二十步的推理链完整走到底，相对来说各种安全数据库是次要的。\n\n至于为什么不换底座也能大幅提升呢？\n\nAI 模型的扩展（scaling）不止堆参数这一条途径。\n\n如果梳理下这些年模型训练的发展路线：\n\n- 2020 年 Kaplan 等人的研究建议参数增长要远快于数据，GPT-3、Gopher 都是这个思路的产物。\n\n- 2022 年 DeepMind 的 Chinchilla 论文则认为参数和数据应该同步增长，参数大的模型反而是最浪费算力的。\n\n- 再后来，大家发现模型上线后推理成本远超训练成本，最优解又变成了用更小的模型训更久，比如 Llama-2-7B 每个参数喂了约 290 个 token，Gemma-2-9B 更是喂了 889 个。\n\n模型能力由很多因素决定：底座大小、预训练数据量、每次前向传播的计算量、后训练。\n\n对于现阶段，模型后训练还有很大潜力可以挖掘。",
+      "created_at": "Wed Aug 19 23:11:41 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2089941544581403107",
+        "text": "Thoughts About Scaling Law\n\nScaling, but not only of parameters. Every model release now ends with the same question: how many parameters? It isn't a question that can be answered on its own. Parameter count is only meaningful alongside three others — how much data you have, where you intend to spend your compute, and who will run the model, under what conditions.\n\nThe field learned this the hard way. Kaplan et al. (2020) fit an exponent that told everyone to grow parameters faster than data — roughly 2.7:1 — and the industry complied: GPT-3, Gopher, MT-NLG. Hoffmann et al. (2022) redid the experiment across four hundred models and found the compute-optimal split is closer to 20 tokens per parameter, and that with sufficient compute the two should grow at the same rate rather than drifting apart. The error in the earlier fit compounded with every order of magnitude of compute, which is why the largest models of that generation were the most misallocated. The trillion-parameter round was, in retrospect, a detour the whole field took together and then reversed.\n\nChinchilla wasn't the end either. It optimized training compute for models that would be trained once and evaluated. Today a model is called billions of times a day and inference dominates lifetime cost. Put inference into the objective and the optimum moves toward smaller models trained far longer — deliberate over-training, which is what Llama-2-7B and Gemma-2-9B were doing at roughly 290 and 889 tokens per parameter.\n\nSparsity moved the target again. In a MoE model two quantities have to be kept apart: total parameters govern roughly how much the model can hold — knowledge, facts, the long tail — while activated parameters and effective depth govern roughly how far it can think, how many steps of a causal chain it can carry before it comes apart. A dense 20:1 ratio does not transfer. And the ratio isn't a single number at all: Roberts et al. (2025) find the optimal tokens-per-parameter is task-dependent, with memorization favoring more parameters and reasoning favoring more data. Follow-up work on MoE observes that at fixed TPP, pushing total parameters higher actually degrades reasoning, while activating more experts reliably helps it.\n\nThis matters for what we are building toward. Finding a vulnerability is not a retrieval problem. It doesn't come from having memorized more CVEs; it comes from carrying a twenty-step chain of inference to the end without losing the thread. That capability does not live in total parameter count.\n\nWhich brings us to this release. Total parameters appear to matter up to a threshold — enough to hold the world — after which additional capability comes from scaling elsewhere: effective depth per forward pass, and above all post-training. GLM-5.3 is our controlled experiment on that claim. Same base, same architecture, same total and activated parameters as GLM-5.2. One month of scaling long-horizon environments and RL. The gains are not marginal. Well, scaling has more than one dial. We turned the post-training one this time because it had the most slack left in it — not because the others are finished. Base model size, pretraining data, compute spent per forward pass: all of them are still on the table, and we will come back to each. What this experiment taught us is that the dials do not have to be turned together, and that the one worth turning next is rarely the one that was worth turning last. We are not done scaling. Next time, maybe mid-training, pre-training, and even more.",
+        "created_at": "Wed Aug 19 05:04:28 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "14776186",
+          "name": "jietang",
+          "screen_name": "jietang",
+          "description": "Professor @ Tsinghua, Founder of https://t.co/3IaQ4CI5W3.\nAGI, LLM.\n“The value of a man should be seen in what he gives and not in what he is able to receive.”―Einstein",
+          "followers_count": 64504,
+          "friends_count": 410,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 604,
+          "favorite_count": 4501,
+          "reply_count": 165,
+          "quote_count": 181
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 31,
+        "reply_count": 10,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2090224267975590325",
+      "text": "RT @mike_chong_zh: 昨天 @screenkite_com 做到了 $300K ARR 。想来分享下。\n\n @hackbearterry 今天在 Threads 上也提到“Vibe Coding 降低做出 Demo 的門檻，但是 Demo 不是交付。現在這個時代…",
+      "created_at": "Wed Aug 19 23:47:54 +0000 2026",
+      "lang": "ja",
+      "media": [],
+      "retweet": {
+        "id": "2090194486639071547",
+        "text": "昨天 @screenkite_com 做到了 $300K ARR 。想来分享下。\n\n @hackbearterry 今天在 Threads 上也提到“Vibe Coding 降低做出 Demo 的門檻，但是 Demo 不是交付。現在這個時代真正困難的已經不是把東西做出來，而是能夠找到願意為產品買單的客戶，然後讓他們掏錢”\n\n楼下我分享下具体的故事 https://t.co/xNxzE40hv6",
+        "created_at": "Wed Aug 19 21:49:34 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2090192153276452864",
+            "url": "https://pbs.twimg.com/media/HQHasGhaEAADARj.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2090192179562180608",
+            "url": "https://pbs.twimg.com/media/HQHatocacAAT7kK.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2090192228694286336",
+            "url": "https://pbs.twimg.com/media/HQHawfea4AAzruc.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1626674002969382912",
+          "name": "迈克 Mike Chong",
+          "screen_name": "mike_chong_zh",
+          "description": "英文 X @realMikeChong\n努力让一起用 AI 创造属于我们自己的不公平优势。\n做最好最快 Mac 录屏软件 @ScreenKite_com\n最 AI native 的视频编辑器 @PilotCutCom 让每个人可以无负担做视频",
+          "followers_count": 15465,
+          "friends_count": 1399,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 23,
+          "reply_count": 4,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
       }
     }
   ]

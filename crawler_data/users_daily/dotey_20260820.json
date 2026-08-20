@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 241747,
+    "followers_count": 241755,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260820",
-  "last_updated": "2026-08-20T14:31:54.453633",
-  "tweet_count": 4,
+  "last_updated": "2026-08-20T16:30:23.348961",
+  "tweet_count": 7,
   "tweets": [
     {
       "id": "2090268932548526123",
@@ -206,6 +206,161 @@
         "retweet_count": 0,
         "favorite_count": 14,
         "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2090451525726294225",
+      "text": "靠 Skill 差别不大，要设计好没 AI 味，最重要的当然是人的审美；其次是模型，GPT 就做不好设计，Claude 就强很多；最后靠的是个性化的设计系统（design system）有一套设计的规范和组件，而不是一堆不能怎么设计的规则",
+      "created_at": "Thu Aug 20 14:50:57 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2090273732308931035",
+        "text": "多花 10-20% 心思在 UI 上，就是在这个 AI slop 满天飞的时代最大的竞争优势！\n\n太给力了，Together AI 的大神哈桑分享了他是如何用 agents 设计优美 UI 的：\n\n他做了个叫 /Hallmark 的 design skill（25.8k star），把所有 AI slop 套路都列成\"别这么干\"的规则喂给模型，效果很好！\n\n其他心得：\n1. 摸清\"AI 套路\"才能让 agent 避开\n2. 最重要：给 agent 喂参考图和截图\n3. 提示词越长越具体越好\n4. 用便宜小模型迭代——GLM 5.2 效果跟 Opus 几乎分不出来，但是速度快很多\n\nhttps://t.co/u4qfxecWtZ",
+        "created_at": "Thu Aug 20 03:04:27 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2090273068413505536",
+            "url": "https://pbs.twimg.com/media/HQIkR-5aUAAR9TQ.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2090273510472163329",
+            "url": "https://pbs.twimg.com/media/HQIkrtsaIAEbzto.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1239771839464783872",
+          "name": "LinearUncle",
+          "screen_name": "LinearUncle",
+          "description": "服务器技术专家，曾就职于阿里云 ，有赞，外企，在线教育等；\n👑 AI coding - 职业工程师\n💻 只分享硬核AI编程工具，技巧等",
+          "followers_count": 12533,
+          "friends_count": 1317,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 42,
+          "favorite_count": 245,
+          "reply_count": 11,
+          "quote_count": 5
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 45,
+        "reply_count": 5,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2090462021640729074",
+      "text": "这个跨 Session 消息通知功能我至今没找到关闭的地方，而且它极其愚蠢的会通知所有历史会话，一堆早已结束了的没有 Cache 的 Session 被唤起，Token 一下子消耗的飞起！ https://t.co/eSJXirCAqK",
+      "created_at": "Thu Aug 20 15:32:39 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2090461102928801793",
+          "url": "https://pbs.twimg.com/media/HQLPTCDXsAEzvDQ.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2090461575471640576",
+          "url": "https://pbs.twimg.com/media/HQLPuiaXMAAbDWp.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2089550603731054617",
+        "text": "Claude Code 最新版本上线了一个特别讨厌的功能，频繁的给其他正在运行的 session 发消息！还老是搞错，除了浪费 token 并没有太大价值……\n\n默认打开我都没找到哪里关掉！ https://t.co/hIuEtGSmlv",
+        "created_at": "Tue Aug 18 03:11:00 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2089550069804503041",
+            "url": "https://pbs.twimg.com/media/HP-St7MXEAEYt0a.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2089550290806521856",
+            "url": "https://pbs.twimg.com/media/HP-S6yfWQAAXplY.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2089550554854789120",
+            "url": "https://pbs.twimg.com/media/HP-TKKJXEAAT67U.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 241755,
+          "friends_count": 1709,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 6,
+          "favorite_count": 77,
+          "reply_count": 32,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 13,
+        "reply_count": 7,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2090473398249959801",
+      "text": "赶紧加上(~/.claude/settings.json)：\n\n\"crossSessionInbound\": \"refuse\"\n\nhttps://t.co/tvKjHVv7PI",
+      "created_at": "Thu Aug 20 16:17:51 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2087945160470495487",
+        "text": "@Nii_Ahene @ClaudeDevs set \"crossSessionInbound\": \"refuse\" in settings.json. \n\nTo stop sending/listing: add \"SendMessage\" and \"ListAgents\" to your permissions deny list. \n\nDetails: https://t.co/bsw99XfTAz",
+        "created_at": "Thu Aug 13 16:51:33 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "31248614",
+          "name": "CJ Avilla",
+          "screen_name": "cjav_dev",
+          "description": "platform and devx @AnthropicAI @ClaudeDevs",
+          "followers_count": 3820,
+          "friends_count": 951,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 2,
+          "reply_count": 1,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 1,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

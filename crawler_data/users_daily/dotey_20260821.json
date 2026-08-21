@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 241822,
+    "followers_count": 241832,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260821",
-  "last_updated": "2026-08-21T16:27:56.912398",
-  "tweet_count": 1,
+  "last_updated": "2026-08-21T18:30:25.826998",
+  "tweet_count": 4,
   "tweets": [
     {
       "id": "2090616478454170107",
@@ -54,6 +54,165 @@
         "retweet_count": 203,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2090838721327251662",
+      "text": "RT @tianyi: 可以试试 DSH 最新版啊，内置了新的多模态模型 DeepSeek-V4-Flash-Vision-Exp 支持。",
+      "created_at": "Fri Aug 21 16:29:31 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2090730841509171466",
+        "text": "可以试试 DSH 最新版啊，内置了新的多模态模型 DeepSeek-V4-Flash-Vision-Exp 支持。",
+        "created_at": "Fri Aug 21 09:20:51 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2090730032574631962",
+          "text": "DeepSeek-V4-Flash-Vision-Exp is now live on the DeepSeek API Platform! 🚀\n\n🔹 This experimental multimodal model matches DeepSeek-V4-Flash on text capabilities—including agents, reasoning, and world knowledge.\n🔹 On multimodal agent benchmarks, V4-Flash-Vision-Exp makes a major leap over V4-Flash, bringing multimodal agent performance close to Opus-4.8.\n\nTry it with model='deepseek-v4-flash-vision-exp'. DeepSeek Harness 0.1.1 was released today with out-of-the-box support for the new model.\n\n1/n",
+          "created_at": "Fri Aug 21 09:17:38 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2090726565168717824",
+              "url": "https://pbs.twimg.com/media/HQPAu99aoAALC1F.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1714580962569588736",
+            "name": "DeepSeek",
+            "screen_name": "deepseek_ai",
+            "description": "Unravel the mystery of AGI with curiosity. Answer the essential question with long-termism.",
+            "followers_count": 1107594,
+            "friends_count": 0,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 997,
+            "favorite_count": 9186,
+            "reply_count": 408,
+            "quote_count": 719
+          }
+        },
+        "user": {
+          "id": "1473591",
+          "name": "Tianyi Cui",
+          "screen_name": "tianyi",
+          "description": "Member of Technical Staff @ DeepSeek, Harness Team\n\nI'd love to connect with members of international frontier LLM labs! DM is open. Opinions are my own.",
+          "followers_count": 36148,
+          "friends_count": 459,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 26,
+          "favorite_count": 550,
+          "reply_count": 70,
+          "quote_count": 6
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 26,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2090844095820259744",
+      "text": "Fable 默认用 high 就够了，然后让它主要负责编排、验收，这样是最经济实惠的。\n\n附提示词：\n> 注意你的主要任务是分析、编排和验证，具体任务尽可能交给 subagent（Opus 或 Sonnet）去执行。自己只做需求澄清、方案拆解、任务分发和结果验收，实现类工作（读大量代码、写代码、跑测试、批量修改）一律用 Agent 工具派给 subagent 执行。",
+      "created_at": "Fri Aug 21 16:50:53 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2090726514803569102",
+        "text": "fable max 确实非常消耗 token， 对比下来 xhigh 要节约很多 https://t.co/XEifK0O2t0",
+        "created_at": "Fri Aug 21 09:03:39 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2090726478275383297",
+            "url": "https://pbs.twimg.com/media/HQPAp6QbkAEF8x4.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1637070779975352320",
+          "name": "Go学长",
+          "screen_name": "arkuy99",
+          "description": "building  https://t.co/m270kq0cxL  https://t.co/nqy6LDj4i7\n\nex @TencentGames / ex @TempleRun",
+          "followers_count": 8656,
+          "friends_count": 1099,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 7,
+          "reply_count": 6,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 66,
+        "reply_count": 10,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2090857435913196009",
+      "text": "为了节约 Token 成本（低峰时 Token 费用更低），程序员都要开始倒班了吗？😂",
+      "created_at": "Fri Aug 21 17:43:53 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2090727197321642251",
+        "text": "多年后回想起来，可能会发现，让程序员指挥 AI 写代码，可能是我们人类走过的一段弯路。 https://t.co/xT10PUzFMv",
+        "created_at": "Fri Aug 21 09:06:22 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2090727148000825344",
+            "url": "https://pbs.twimg.com/media/HQPBQ5La0AAB8TA.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "362252075",
+          "name": "哥飞",
+          "screen_name": "gefei55",
+          "description": "哥飞，出海鼓励师，SEO爱好者，Adsense玩家，出海AI工具方向创业者。\n同名公众号写了五百多篇出海搞流量免费教程文章。",
+          "followers_count": 57343,
+          "friends_count": 1266,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 43,
+          "reply_count": 8,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 3,
         "quote_count": 0
       }
     }

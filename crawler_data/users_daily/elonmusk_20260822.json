@@ -3,13 +3,13 @@
     "screen_name": "elonmusk",
     "name": "Elon Musk",
     "description": "https://t.co/ZdBx5WABYx",
-    "followers_count": 241471907,
+    "followers_count": 241473208,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260822",
-  "last_updated": "2026-08-22T14:17:39.114801",
-  "tweet_count": 19,
+  "last_updated": "2026-08-22T16:19:26.813751",
+  "tweet_count": 26,
   "tweets": [
     {
       "id": "2090960655969099806",
@@ -1022,6 +1022,353 @@
       "quoted": null,
       "stats": {
         "retweet_count": 393,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2091187109856174411",
+      "text": "RT @tetsuoai: Three Grok bots took four reference photos, built a physics simulator from them, ran 47 fracture experiments, rejected their…",
+      "created_at": "Sat Aug 22 15:33:54 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2091121277859979528",
+        "text": "Three Grok bots took four reference photos, built a physics simulator from them, ran 47 fracture experiments, rejected their own hypothesis, picked the best designs, sliced them, and 3D printed them. Images to physical object in one autonomous loop, steered from an Apple Watch.",
+        "created_at": "Sat Aug 22 11:12:18 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2091108225806454802",
+          "text": "Grok @bot is incredible - and they can even manufacture real physical objects! Here is a little experiment I did last night: I created a team of bots and asked them to solve a complex engineering problem end to end - starting from four images as design cues, inferring transferable structural principles from the pixels, synthesizing an executable interactive physics simulator, running and reasoning over experiments, optimizing the design & finally manufacturing the best designs.\n\nThe entire loop worked remarkably well - and I was even able to communicate with the agents from my Apple Watch. (Do we live in the future yet?) \n\nTeam of agents\n\n1⃣ Chief of Staff coordinates the workflow: watches the other agents, pulls results into the main chat, transfers files between them, and keeps the job moving.\n2⃣ Physics Experimenter is the scientist-coder. It interprets the design cues and images, writes the simulator, runs experiments, analyzes the results, and produces a detailed LaTeX scientific report.\n3⃣ 3D Printing Bot operates the fabrication workflow: prepares and slices the models, generates manufacturing code, sends the job, and monitors the printer.\n\nThe workflow\n\nI provided an initial task based on four unregistered reference photographs containing different objects at different scales (pinnate leaf venation, a Voronoi-like areole mesh, a stochastic fibrous lattice, and a radial/circumferential web).\n\nThe prompt asked the agents to infer transferable design principles - hierarchy, branching, interfaces, redundancy, disorder, load paths - and use them to build an interactive laboratory for hierarchical materials and fracture.\n\nThe scientific question was: at fixed material budget, how do hierarchy depth, redundancy, disorder, and interlevel strength change stiffness, peak load, energy absorption, and the brittle-to-progressive transition?\n\nIn ~20 minutes, the Physics Experimenter produced a 2D hierarchical Euler–Bernoulli beam-network laboratory. Coarse veins persist and remain thicker; finer infill is added inside cells; members connecting levels are treated as interfaces with relative strength κ; and total material volume is conserved. The four source photographs remain visible in an editable interpretation panel. The app generates geometry, steps or runs the network to failure, compares A/B/C designs, and exports JSON, CSV, PNG, and STL geometry for fabrication.\n\nAfter validation the Physics Experimenter used the app and conducted 47 simulation experiments, including six holdouts.\n\nIt found something scientifically interesting: extra hierarchy is not \"free\" toughness. At fixed volume, initial stiffness changed by only about 20%, while work-to-failure varied by several-fold. Infill steals cross-section from the main axial veins, so deeper and more redundant networks often absorbed less energy than a simple depth-1 grid. Weak interfaces behaved as distributed fuses, producing more progressive failure and reducing localization. The specific H2 hypothesis - that hierarchy becomes detrimental primarily because interfaces form a mechanical bottleneck - was rejected; the dominant effect instead came from redistribution of a fixed material budget across structural levels.\n\nThe Physics Experimenter then assembled the methods, tests, results, hypothesis evaluation, and conclusions into a detailed scientific report.\n\nThe best designs were passed to the 3D Printing Bot. It opened Bambu Studio and brought the Bambu Lab H2D online. Both STLs were placed on one build plate at the same 50x scale and sliced using a 0.20 mm PLA process. The prints completed within less than an hour.\n\nThe loop \n\nimages → structural abstraction → executable physics → autonomous experiments → hypothesis testing → design selection → STL → slicing/manufacturing code → physical object\n\nThat last transition is what I find especially interesting: AI is beginning to operate across the entire scientific and physical workflow - converting observations into models, models into experiments, experimental evidence into revised designs, and those designs into manufactured matter by directly operating machines. This starts to blur the boundary between AI that reasons about the physical world and AI that can actually act on it. \n\nShoutout to the @bot team - you are building something very special here! The way these agents can move naturally from reasoning, to experiments, to operating machines in the physical world feels like an important step.",
+          "created_at": "Sat Aug 22 10:20:26 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2091106938486505473",
+              "url": "https://video.twimg.com/amplify_video/2091106938486505473/vid/avc1/1920x1080/azAvzyAZrH_NjGFi.mp4?tag=29",
+              "bitrate": 10368000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "2915980918",
+            "name": "Markus J. Buehler",
+            "screen_name": "ProfBuehlerMIT",
+            "description": "McAfee Professor of Engineering @MIT; Co-Founder & CTO at Unreasonable Labs; AI-Driven Scientific Discovery",
+            "followers_count": 21507,
+            "friends_count": 2367,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 46,
+            "favorite_count": 301,
+            "reply_count": 26,
+            "quote_count": 23
+          }
+        },
+        "user": {
+          "id": "1587601034339561472",
+          "name": "tetsuo",
+          "screen_name": "tetsuoai",
+          "description": "C and Assembly • Grok • AgenC //: 👾",
+          "followers_count": 237290,
+          "friends_count": 786,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 87,
+          "favorite_count": 627,
+          "reply_count": 48,
+          "quote_count": 9
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 87,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2091187331642659112",
+      "text": "lol",
+      "created_at": "Sat Aug 22 15:34:46 +0000 2026",
+      "lang": "qst",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2091076049245495512",
+        "text": "I know, he cracks me up too https://t.co/wqGwVyFokS",
+        "created_at": "Sat Aug 22 08:12:35 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2091076046988996608",
+            "url": "https://pbs.twimg.com/media/HQT-lfMbcAAzqNW.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1263491240336769026",
+          "name": "Whole Mars Catalog",
+          "screen_name": "wholemars",
+          "description": "🤖 🚗 🤖 🚕",
+          "followers_count": 1955406,
+          "friends_count": 30377,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 129,
+          "favorite_count": 2346,
+          "reply_count": 102,
+          "quote_count": 16
+        }
+      },
+      "stats": {
+        "retweet_count": 380,
+        "favorite_count": 4568,
+        "reply_count": 543,
+        "quote_count": 33
+      }
+    },
+    {
+      "id": "2091187600631685217",
+      "text": "RT @cb_doge: BREAKING: 10 schools along Guyana’s Linden–Soesdyke Highway will receive @Starlink internet. 🇬🇾\n\nThe service will give student…",
+      "created_at": "Sat Aug 22 15:35:51 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2091133522618831298",
+        "text": "BREAKING: 10 schools along Guyana’s Linden–Soesdyke Highway will receive @Starlink internet. 🇬🇾\n\nThe service will give students and teachers better access to online learning platforms, educational resources and modern teaching tools. https://t.co/hcuifZCI2y",
+        "created_at": "Sat Aug 22 12:00:57 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2091133516511932416",
+            "url": "https://pbs.twimg.com/media/HQUy2p2bcAAw842.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1897726,
+          "friends_count": 1034,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 143,
+          "favorite_count": 956,
+          "reply_count": 120,
+          "quote_count": 10
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 143,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2091189233654624544",
+      "text": "Talarico wants to enable voting fraud in Texas by banning voter ID",
+      "created_at": "Sat Aug 22 15:42:20 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2091170789265756647",
+        "text": "Democrat Nominee for U.S. Senate in Texas James Talarico in 2021: “I oppose Voter ID”\n\n https://t.co/PJp4nGFV3b",
+        "created_at": "Sat Aug 22 14:29:02 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2060119681948647429",
+            "url": "https://video.twimg.com/amplify_video/2060119681948647429/vid/avc1/1280x720/9RK6POwGRI7lKZCe.mp4?tag=27",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1841988608825466880",
+          "name": "America",
+          "screen_name": "america",
+          "description": "PAC Founded by @ElonMusk to support candidates who champion Secure Borders, Sensible Spending, Safe Cities, Fair Justice System, Free Speech and Self-Protection",
+          "followers_count": 1216009,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 161,
+          "favorite_count": 727,
+          "reply_count": 81,
+          "quote_count": 9
+        }
+      },
+      "stats": {
+        "retweet_count": 685,
+        "favorite_count": 3777,
+        "reply_count": 540,
+        "quote_count": 48
+      }
+    },
+    {
+      "id": "2091191054439682373",
+      "text": "Try Grok @Bot",
+      "created_at": "Sat Aug 22 15:49:34 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2091133785106686153",
+        "text": "Alright, it happened. After a slow start with Grok Bot I just had my mind blown. Twice\n\nI did a screen recording with audio of me cleaning up my desktop after a week that resulted in hundreds of random files that all needed particular sorting\n\nIt's a monotonous task I've always wanted to outsource but didn't really trust other platforms to give that level of access \n\nBut the mind blowing part was how my Chief of Staff LEARNED not just what I do but HOW and WHY I do things\n\nFrom a screen recording with my voice giving instructions...and because the video file was large my CoS automatically compressed the file under the limit to watch it\n\nIt then gave me feedback on what to change for how I record part two so it can learn even better\n\nAnd there's more. I planted a quick question in my video recording to see how closely it was watching and listening. You can see my CoS asking me the question in the second screenshot, it's the last chat bubble\n\nSoon enough I'll have this painful task automated away. And undoubtedly many, many others in time as well. Thank you @bot \n\nThis really will be the entry point for many and the beginning of a true paradigm shift. I also got my wife set up with Grok Bot today. This platform is easily accessible by anyone and everyone",
+        "created_at": "Sat Aug 22 12:02:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2091028799655714816",
+            "url": "https://pbs.twimg.com/media/HQTTnVKXIAAND8h.png"
+          },
+          {
+            "type": "photo",
+            "id": "2091026584647921664",
+            "url": "https://pbs.twimg.com/media/HQTRmZnWcAAz6qQ.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "767498349931028480",
+          "name": "Dillon Loomis",
+          "screen_name": "DillonLoomis",
+          "description": "",
+          "followers_count": 57879,
+          "friends_count": 892,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 24,
+          "favorite_count": 245,
+          "reply_count": 32,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 164,
+        "favorite_count": 1170,
+        "reply_count": 305,
+        "quote_count": 22
+      }
+    },
+    {
+      "id": "2091192791405916296",
+      "text": "Try Tesla self-driving\n\nFeels like magic",
+      "created_at": "Sat Aug 22 15:56:28 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2091184745614889162",
+        "text": "WSJ's Dan Neil on @Tesla's FSD (Supervised):\n\n\"By the end of the second hour—I was bewitched. FSD is amazing. I acknowledge I am a sample group of one, with only the scantest evidence to work with. Still, I know good driving when I see it. Mile by mile, the FSD started to earn my confidence. In the whitewater-like eddy and flow of rush-hour interstate traffic, FSD held its position beautifully: stopping distances, following distances, lane centering, the gradients of acceleration, steering and braking, all playing out in smoothly continuous linear functions.\"\n\nFull article: https://t.co/CMR19WufNN",
+        "created_at": "Sat Aug 22 15:24:30 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2091183310185619456",
+            "url": "https://pbs.twimg.com/media/HQVgJBvW4AA6fxn.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EVs/space/tech. Bringing you the latest news in a single, easy-to-read feed. $TSLA & $SPCX investor, Model Y owner.",
+          "followers_count": 1117595,
+          "friends_count": 488,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 127,
+          "favorite_count": 1221,
+          "reply_count": 48,
+          "quote_count": 17
+        }
+      },
+      "stats": {
+        "retweet_count": 196,
+        "favorite_count": 1252,
+        "reply_count": 389,
+        "quote_count": 28
+      }
+    },
+    {
+      "id": "2091194267293372885",
+      "text": "RT @SawyerMerritt: Mona, a member of the Federation of the Blind, gave amazing testimony yesterday about @Tesla’s Cybercab after sitting in…",
+      "created_at": "Sat Aug 22 16:02:20 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2090995576204620156",
+        "text": "Mona, a member of the Federation of the Blind, gave amazing testimony yesterday about @Tesla’s Cybercab after sitting in it this week:\n\n\"To have something like the Cybercab would be very beneficial to us as the blind community; It’s got Braille in there. Nobody else has Braille. This would be so beneficial. The app is wonderful. There’s space to put the wheelchair. They can just push themselves right in. A lot of times, the Uber and Lyft if they see you with a dog or cane, they drive right past you. With Cybercab, it doesn't know that you're blind. It doesn't know that you're in a wheelchair. It just knows that you need a ride, so I completely love the car. Just sitting in it, how comfortable it is, just knowing something is accessible - it’s the most amazing thing out there.\"\n\n(via the Nevada Transportation Authority's general session meeting yesterday)",
+        "created_at": "Sat Aug 22 02:52:48 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2090994121611567104",
+            "url": "https://video.twimg.com/amplify_video/2090994121611567104/vid/avc1/1920x1080/P3oAEkSEunqvyS-f.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EVs/space/tech. Bringing you the latest news in a single, easy-to-read feed. $TSLA & $SPCX investor, Model Y owner.",
+          "followers_count": 1117595,
+          "friends_count": 488,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 643,
+          "favorite_count": 4033,
+          "reply_count": 145,
+          "quote_count": 60
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 642,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

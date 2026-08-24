@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 242110,
+    "followers_count": 242114,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260824",
-  "last_updated": "2026-08-24T20:25:08.191004",
-  "tweet_count": 3,
+  "last_updated": "2026-08-24T22:21:44.577635",
+  "tweet_count": 6,
   "tweets": [
     {
       "id": "2091892438440796642",
@@ -165,6 +165,129 @@
         "retweet_count": 2,
         "favorite_count": 22,
         "reply_count": 11,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2091996016631300366",
+      "text": "这种技术选型，我年轻的时候会选 DeepSeek Harness，现在会选 Pi。\n\n年轻的时候追求技术上的新和酷，喜欢学新的东西，总觉得什么都要用用什么都要学学，喜欢折腾，较少的考虑项目和团队。\n\n现在更追求项目需要的、稳定的、简单的，先做出来才是最重要的，能稳定运行更好。Pi 就简单稳定，DSH 还是新东西，稳定下来还要一段时间，何苦来哉。\n\n再说了，现在有 AI，测试覆盖好一点，以后要换底层其实没那么难。",
+      "created_at": "Mon Aug 24 21:08:12 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2091798706135966009",
+        "text": "好了，\n硬件的选择告一段落，\n开始新的软件栈纠结，\n是继续用 pi agent 做开发呢？\n还是用 deepseek harness？\n\npi 是真的简洁易懂，改改代码就上手。\ndeepseek harness 是一切皆插件，以后给到agent本体的自由度会更大吧。",
+        "created_at": "Mon Aug 24 08:04:09 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1732683816685514752",
+          "name": "LotusDecoder",
+          "screen_name": "LotusDecoder",
+          "description": "AI for person，for local ，for heart\n\n2xDGX Spark, \n1x128GB M4 Max",
+          "followers_count": 7962,
+          "friends_count": 2456,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 26,
+          "reply_count": 26,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 17,
+        "reply_count": 8,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2091996200928948584",
+      "text": "RT @yaogangqiang: 我基于 Pi 开发业务产品，也是 contributor。这篇分享有多处错误，张冠李戴。\n\n一个自动关闭、没有经过 human review 的社区 PR，被包装成了「Pi 官方方案」；PR  自行报告的 benchmark，也被写成了 Pi…",
+      "created_at": "Mon Aug 24 21:08:56 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2091751515686096935",
+        "text": "我基于 Pi 开发业务产品，也是 contributor。这篇分享有多处错误，张冠李戴。\n\n一个自动关闭、没有经过 human review 的社区 PR，被包装成了「Pi 官方方案」；PR  自行报告的 benchmark，也被写成了 Pi 的官方结论。\n\nSession Tree、Lane 和 Operation Log 的架构描述来源自于 Harness v2 旧设计，不是当前 dev 的最新方案。\n\n「DSH 会永久丢失原始结果」，是社区 PR 对 DSH pruner 的评价，不是「Pi 官方表示」。\n\n传播这么广，可能是因为同时抓住了 Coding Agent、Pi，DeepSeek、Claude Code 热点。毕竟，「爆了」比「事实」更吸引眼球。\n\n也许更值得警惕的是，评论区看不到有人核查原始来源和这些结论。",
+        "created_at": "Mon Aug 24 04:56:38 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2091056022551187579",
+          "text": "爆了，Pi 居然在他们新的开发笔记里把其他家的Agent都锐评了一下🤣\n\n@pidotdev 官方表示，DSH、Claude Code、OpenCode 这一类方案，它关注的已经不是谁多几个 Tool、谁的 Demo 更炫，而是一个更麻烦的问题：\n\n如果一个 Agent 连续跑 50 个小时，它还知道自己到底干过什么吗？\n\n他们先点了 DeepSeek Harness。\n\nPi 直接从 DSH 的 Context 管理开刀。\nDSH 有一个 tool result pruner，工具输出太长以后，会保留前面一部分和后面一部分，中间直接裁掉。\n\nPi 那边给的评价很不客气：permanently-lossy pruner。\n\n因为删掉的内容以后找不回来了。\n比如一个 Agent 跑测试吐出 3 万字符日志，真正的错误刚好在第 12000 个字符，压缩完以后这段已经消失。后面模型再聪明，也没法从空气里重新读出来。\n\n所以 Pi 做的版本是 prune + spill。\n\nContext 里依然只放一小段，完整 Tool Result 同时落到磁盘，Context 留文件路径和 offset。模型需要的时候自己 grep、sed、read 回去。\n他们拿 GLM-5.3 和 DeepSeek V4 Flash 跑了 19 个真实 Session，Context 占用降低 26%～35%，uncached prefill 降低 72%～88%，信息还能恢复。\nPR 里甚至直接写strictly better than dsh’s permanently-lossy pruner😂。\n\n然后又点了 Claude Code。\n\nPi 表示有一个挺有意思的发现：\n新一代 Claude 在第三方 Harness 上，有时候反而更容易把 Tool 调错。\n最典型的情况是，Pi 给模型的 edit tool schema 明明写得很清楚，模型却会自己生成 requireUnique、matchCase、oldText2 这种 Pi 根本没有的参数。\n一个很合理的猜测是，Claude 的后训练越来越适配 Claude Code 自己的 Harness 和 Tool Schema。\n模型已经学会了 Claude Code 里某个工具应该长什么样。\n然后你把它放进 Pi，它脑子里还是那一套。\n所以现在模型能力越强，模型和 Harness 的绑定可能也越深。\n以后评价一个 Coding Model，单独看模型可能越来越没意义。\nClaude + Claude Code、DeepSeek + DSH、GPT + Codex，很可能逐渐变成一个整体。\n\n讲到这里 Pi 表示他们最近重写了 Harness，开始把一次 Agent Run 当成接近数据库事务的东西来设计。\n\nTool Call 执行之前，先写 intent。\n\n执行结束，再写结果。\n\n进程崩溃以后，系统得知道这个 Tool 到底执行过没有。\n\nSession Tree、运行状态、Lane、Operation Log 分开保存。\n\n一个 Agent 可以有多个 Lane 并行跑，每个 Lane 都知道自己的当前位置、队列和未完成操作。\n\nContext 允许压缩，原始执行历史继续保留。\n\n甚至连进程刚好死在 Tool 执行到一半这种恶心情况，他们都专门设计了 recovery。\n\n你再回头看现在很多 Agent Framework，会发现大家以前真的挺勇的：\n\n一个 while loop，塞一个模型，塞几个 Tool，Context 快满了就总结一下，然后祈祷它一直别挂。\n\n跑十分钟当然没什么。\n\nAgent 开始跑几小时、几天以后，问题全出来了。\n\n这些已经越来越像操作系统和数据库问题了。\n\n有意思的是Pi 甚至对 Extension 的态度也在变。\n\n现在大家都喜欢说「一切皆插件」，DSH 的 Cordis 就走得很远。\n\nPi 这边最近却越来越强调边界：\n\n哪些是 Conversation，哪些是 Runtime State，哪些是 UI，哪些是 Extension，哪些东西能持久化，哪些东西只能观察。\n\n因为插件能力一旦无限扩大，Agent 又长期运行，状态会变得非常难推理。\n\nOpenCode、Claude Code、DSH、Pi 现在看着都是 Coding Agent，底层其实已经开始走不同路线了。\n\nHarness 这东西，开始越来越像 AI 时代的操作系统了🤔",
+          "created_at": "Sat Aug 22 06:53:00 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2091056011167801344",
+              "url": "https://pbs.twimg.com/media/HQTsXP8aIAA7p16.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1699797396589588480",
+            "name": "Max For AI",
+            "screen_name": "MaxForAI",
+            "description": "Head of growth @lobehub（81K🌟）\nPrev @listenhub @Sapient_Int \n\n本科辍学创业\n没啥好看的，也就发点AI相关的内容🫡\n同名小红书4万粉丝，公众号01Founder（长文首发）\n观点仅代表个人\n\n更多请访问网站⬇️（欢迎商务、合作",
+            "followers_count": 32512,
+            "friends_count": 2797,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 329,
+            "favorite_count": 2894,
+            "reply_count": 140,
+            "quote_count": 52
+          }
+        },
+        "user": {
+          "id": "619661437",
+          "name": "Gangqiang Yao",
+          "screen_name": "yaogangqiang",
+          "description": "发现值得解决的问题，并解决他",
+          "followers_count": 1526,
+          "friends_count": 397,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 15,
+          "favorite_count": 230,
+          "reply_count": 68,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 15,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2092014354946257338",
+      "text": "https://t.co/TxWy1XGBrY",
+      "created_at": "Mon Aug 24 22:21:04 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

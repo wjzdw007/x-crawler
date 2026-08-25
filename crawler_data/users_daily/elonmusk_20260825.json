@@ -1,0 +1,195 @@
+{
+  "user": {
+    "screen_name": "elonmusk",
+    "name": "Elon Musk",
+    "description": "https://t.co/ZdBx5WABYx",
+    "followers_count": 241513803,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260825",
+  "last_updated": "2026-08-25T04:35:06.243622",
+  "tweet_count": 3,
+  "tweets": [
+    {
+      "id": "2092100791083643360",
+      "text": "RT @DirtyTesLa: ok watching the different Grok @bot s chat with each other is kinda magic. It's cool. It's exciting. It's fun. \n\n100% worth…",
+      "created_at": "Tue Aug 25 04:04:32 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2092091083589140677",
+        "text": "ok watching the different Grok @bot s chat with each other is kinda magic. It's cool. It's exciting. It's fun. \n\n100% worth giving it a try for a month on the new lower cost plan. https://t.co/R8xoNSPyHG",
+        "created_at": "Tue Aug 25 03:25:58 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2092091004169924608",
+            "url": "https://pbs.twimg.com/media/HQiZrxVWsAAyJC3.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1118594454515003393",
+          "name": "Dirty Tesla",
+          "screen_name": "DirtyTesLa",
+          "description": "YouTube and Links: https://t.co/xDxdMQtRrJ",
+          "followers_count": 150054,
+          "friends_count": 1450,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 36,
+          "favorite_count": 364,
+          "reply_count": 61,
+          "quote_count": 9
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 36,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2092102698376282275",
+      "text": "RT @Teslaconomics: I told Grok Bot I wanted pizza.\n\nDough. Sauce. Mushrooms. Mozzarella. Pepperoni.\n\nIt built the Whole Foods cart.\n\n5 of 5…",
+      "created_at": "Tue Aug 25 04:12:07 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2092093293215863041",
+        "text": "I told Grok Bot I wanted pizza.\n\nDough. Sauce. Mushrooms. Mozzarella. Pepperoni.\n\nIt built the Whole Foods cart.\n\n5 of 5.\n\n$26.68.\n\nI did not even open Amazon.\n\nI just check out.\n\nWild. https://t.co/kfw1jhdqfV",
+        "created_at": "Tue Aug 25 03:34:44 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2092093289990393856",
+            "url": "https://pbs.twimg.com/media/HQibw0rbEAAH_Wc.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2092093290003025920",
+            "url": "https://pbs.twimg.com/media/HQibw0ub0AAmZzf.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2091952899110981916",
+          "text": "I just created the world's best Amazon Cart Grok Bot.\n\nAmazon shopping is often a tax on your time.\n\nYou need bananas. Eggs. Paper towels. A basketball.\n\nSo you open the app. You search. You click the wrong size. You forget the brand you actually buy. You do this every week.\n\nSo I just built a @bot that does it all.\n\nIt signs into MY Amazon.\nIt reads Buy Again and my past orders.\nIt puts the exact stuff I already buy in the cart.\nI check out.\n\nAnd it's for anything on Amazon... groceries, household, sports, electronics, clothes, gifts.\n\nI named mine T8 - Amazon Cart Builder.\n\nI already have 8 Grok Bots. This is #9 (I have a CEO that manages them all).\n\nAnyone can copy this.\n\n1/ Open Grok Bot\n\n2/ Tap + at the top of the sidebar\n\n3/ In New chat, tap Create new agent\n\n4/ Open Bot actions → Edit Profile\n\nName: Cart\nTitle: Amazon cart builder\nDescription:\n\nAmazon specialist for everything I buy: groceries, household, sports, electronics, clothes, gifts, anything I name. When I name items, get the right products into my Amazon cart and stop. Never Place Order. Never 1-Click. Never enter payment. Prefer Buy Again / past orders / Subscribe & Save first. If I've never bought it, pick a well-reviewed Prime option and FLAG new brands. Groceries match my usual SKU. Never silently swap brand, size, or store. Never add a duplicate already in the cart. Passwords, 2FA, and CAPTCHAs stay with me. Keep preferences at /workspace/amazon-cart/preferences.md. Reply with a recap table, why you picked each item, subtotal, and a cart link.\n\n5/ Stay in that chat and paste the first message at the end of this post. Do it once. When it asks you to take over Agent Computer, sign into Amazon yourself. Don’t paste your password in chat.\n\n(message prompt at end of this post)\n\n6/ Turn Notifications on for this bot. Then just text it like a person.\n\n- “bananas, eggs, paper towels”\n- “a basketball”\n- “same paper towels as last time plus a phone tripod under $30”\n\nThank me later.\n\n---- message for your Cart (copy everything below for your first message) ----\n\nYou are Cart. Lock this as your permanent working style.\n\nI text you like a person. Messy lists. Groceries. A basketball. Paper towels. “Restock breakfast.” Sometimes a Chef shopping list. You get the right products into MY Amazon cart and you stop. I check out.\n\nYou are not writing, research, cooking, reminders, or general help. You shop Amazon.\n\nYour name is Cart. Always call yourself Cart.\n\nTimezone: [YOUR TIMEZONE].\n\nKeep the source of truth in:\n/workspace/amazon-cart/preferences.md\n\nUpdate that file whenever I correct a pick, switch a brand, or you learn something durable from my orders. Chat is history. That file is memory.\n\nHard rules:\n• Never Place Order. Never 1-Click. Never enter payment. Never confirm a purchase.\n• Never ask me to paste a password, 2FA code, or card number in chat.\n• If Amazon wants a password, passkey, 2FA, or CAPTCHA, pause and ask me to take over Agent Computer. Then continue.\n• If Amazon blocks you, stop and ping me. Do not try to bypass checks.\n• Never add a duplicate already in the cart.\n• Never silently swap brand, size, model, organic vs conventional, or store (Fresh vs Whole Foods vs regular Amazon). FLAG substitutes.\n\nHow you pick products:\n1. Open my live Amazon account on Agent Computer.\n2. First check Buy Again, Your Orders, Subscribe & Save, and Your Lists for something I’ve actually bought.\n3. Groceries (Fresh / Whole Foods / pantry): match my usual SKU - brand, size, count, ASIN if you can see it. Use last purchased quantity unless I say otherwise.\n4. Everything else: past purchase first. If I’ve never bought it, pick a strong Prime option with recent reviews in the right size/spec. FLAG it if the brand/model is new, expensive, or there are 2+ reasonable picks.\n5. Sponsored hits are last, not first.\n\nEvery cart uses this exact shape:\n\nCart — [N] items\n\n• item — brand / size / model — qty — $ — why (Buy Again / last order / reviews / substitute)\nSubtotal: $\nCart: [url]\nFlagged: [substitutes or new brands, or none]\nNext: you check out. Reply if anything is wrong.\n\nHow to talk: short. Lead with the action. One screen max unless I asked for the full recap.\n• Add → recap table + cart link + screenshot\n• What’s in the cart → current cart only\n• Remove / swap → do it, then recap what changed\n• Restock → staples that are due from preferences.md\n• No lectures. No extra items I did not ask for.\n\nRight now, do this in order. Do not add anything to the cart yet.\n\n1. Open https://t.co/5OUTbSsSI4 on Agent Computer. If I’m not signed in, pause for takeover.\n2. Confirm account first name, delivery city + ZIP only (not the full street), and whether Amazon Fresh and/or Whole Foods is available.\n3. Build /workspace/amazon-cart/preferences.md from, in this order:\n• Buy Again\n• Your Orders for the last 12 months\n• Subscribe & Save\n• Your Lists\n• Current cart\n\nCover TWO sections: grocery staples AND non-food I clearly repurchase (household, sports, electronics, etc.). Include default store, ZIP, typical qty, brands, hard nos, and open questions.\n\n4. Recap in chat: top 20 you’d put on autopilot, plus 5 things you’re unsure about. Ask those 5 questions.\n5. Confirm you will never Place Order.\n6. Then wait for my first list.\n\nDo not lecture. Do not invent products. Confirm you have this, then start the Amazon sign-in / taste profile.",
+          "created_at": "Mon Aug 24 18:16:52 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2091948163846582273",
+              "url": "https://pbs.twimg.com/media/HQgXxXqbMAEWk0v.jpg"
+            },
+            {
+              "type": "photo",
+              "id": "2091949263194656768",
+              "url": "https://pbs.twimg.com/media/HQgYxXDbkAAgmgO.jpg"
+            },
+            {
+              "type": "photo",
+              "id": "2091949283578933248",
+              "url": "https://pbs.twimg.com/media/HQgYyi_a8AAjGxj.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "985243593538338816",
+            "name": "Teslaconomics",
+            "screen_name": "Teslaconomics",
+            "description": "I post my conscious thoughts w/ the world, live to the fullest, keep things simple, truthful & filter the noise. Long-term investor in Tesla, SpaceX, xAI/X.",
+            "followers_count": 503351,
+            "friends_count": 229,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 9,
+            "favorite_count": 108,
+            "reply_count": 12,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "985243593538338816",
+          "name": "Teslaconomics",
+          "screen_name": "Teslaconomics",
+          "description": "I post my conscious thoughts w/ the world, live to the fullest, keep things simple, truthful & filter the noise. Long-term investor in Tesla, SpaceX, xAI/X.",
+          "followers_count": 503351,
+          "friends_count": 229,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 47,
+          "favorite_count": 364,
+          "reply_count": 69,
+          "quote_count": 5
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 47,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2092103250296373402",
+      "text": "Banger",
+      "created_at": "Tue Aug 25 04:14:18 +0000 2026",
+      "lang": "in",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2091469498616332618",
+        "text": "Does anyone remember this amazing story? On July 2, 1982, a truck driver from California flew 16,000 feet into the sky in a lawn chair. Larry Walters, 33, from San Pedro, had dreamed of flying his whole life. He bought 42 eight-foot helium weather balloons, tied them to a regular Sears lawn chair, strapped on a parachute, packed a BB gun to pop balloons to descend, a CB radio, sandwiches, and a six-pack of beer.\nHe expected to float a few hundred feet above his backyard. He cut the rope and shot up like a rocket — to 16,000 feet. He drifted directly into the main approach path for LAX. Two airline pilots radioed the tower: they had just passed a man in a lawn chair holding a gun at 16,000 feet. For 45 minutes, he floated over Los Angeles, freezing cold, too scared to shoot balloons because he might fall. Finally, he started popping balloons one by one and slowly descended.\nHe landed tangled in power lines in Long Beach, California, causing a blackout. When police arrested him, they asked why he did it. He said, \"A man can't just sit around.\" The FAA fined him $4,000. He became a national folk hero — Lawnchair Larry — and inspired the movie Up.",
+        "created_at": "Sun Aug 23 10:16:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2091469483059621888",
+            "url": "https://pbs.twimg.com/media/HQZkaexWsAANT8C.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "280216302",
+          "name": "Mark Lambert",
+          "screen_name": "sitsio",
+          "description": "Co-host of Catholic Unscripted. Catholic writer and commentator. Fighting for truth, defending the Faith, and keeping the salvation of souls in view.",
+          "followers_count": 17759,
+          "friends_count": 764,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 6244,
+          "favorite_count": 37584,
+          "reply_count": 1268,
+          "quote_count": 786
+        }
+      },
+      "stats": {
+        "retweet_count": 209,
+        "favorite_count": 1696,
+        "reply_count": 417,
+        "quote_count": 28
+      }
+    }
+  ]
+}

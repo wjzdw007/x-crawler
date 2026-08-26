@@ -1,12 +1,123 @@
 {
   "date": "20260826",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-08-26T04:36:14.525545",
-  "tweet_count": 202,
-  "unique_tweet_count": 202,
-  "total_crawled": 400,
+  "last_crawl_time": "2026-08-26T06:40:12.032902",
+  "tweet_count": 204,
+  "unique_tweet_count": 204,
+  "total_crawled": 402,
   "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2092490213121761787",
+      "text": "RT @cb_doge: BREAKING: Brands advertising on 𝕏 saw 143% higher returns than across other channels 🔥\n\n• Every $1 spent delivered an average…",
+      "created_at": "Wed Aug 26 05:51:58 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2092488708436144392",
+        "text": "BREAKING: Brands advertising on 𝕏 saw 143% higher returns than across other channels 🔥\n\n• Every $1 spent delivered an average return of $5.42\n• Advertisers more than doubled their spending after seeing the results\n• 𝕏 helped both create demand and drive immediate sales, according to a new independent study by Prescient AI.\n\nTry 𝕏 Ads! Highly recommended.",
+        "created_at": "Wed Aug 26 05:45:59 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2092488688706228224",
+            "url": "https://video.twimg.com/amplify_video/2092488688706228224/vid/avc1/1280x720/Rdwd4Vds61uRbEgs.mp4?tag=29",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1898014,
+          "friends_count": 1036,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 107,
+          "favorite_count": 642,
+          "reply_count": 120,
+          "quote_count": 12
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241530222,
+        "friends_count": 1397,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 107,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2092477385115603412",
+      "text": "RT @boringcompany: Thank you to @ClarkCountyNV for approving an additional 19 Vegas Loop stations - Vegas Loop is now entitled for 123 stat…",
+      "created_at": "Wed Aug 26 05:00:59 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2092396130361606374",
+        "text": "Thank you to @ClarkCountyNV for approving an additional 19 Vegas Loop stations - Vegas Loop is now entitled for 123 stations!\n\nBecause Loop is point-to-point with no intermediate stops, in the limit, one could have a Loop station in every driveway! https://t.co/aBvlLQ4ICH",
+        "created_at": "Tue Aug 25 23:38:06 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2092396119179608064",
+            "url": "https://pbs.twimg.com/media/HQmvLzUbQAAezOc.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "859816394556284929",
+          "name": "The Boring Company",
+          "screen_name": "boringcompany",
+          "description": "Beat the snail",
+          "followers_count": 1180419,
+          "friends_count": 10,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 384,
+          "favorite_count": 3432,
+          "reply_count": 189,
+          "quote_count": 62
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241530222,
+        "friends_count": 1397,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 384,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2092467523027370351",
       "text": "问了下 AI 是如何做到的：\n\n用 PID 做进程级取证，再结合项目规模、线程状态和源码完成因果定位。\n这次的推断链是：\n- vmmap -summary 23870 显示物理 footprint 约 2.3 GB、峰值约 2.7 GB。\n- 大头在 MALLOC_SMALL，而 IOSurface 只有约 14 MB、GPU 图形约 73 MB，所以视频帧池不是主因。\n- Activity Monitor 显示 439 个线程，源码中又存在每个缩略图都 std::thread::spawn、随后等待 2 路信号量的逻辑。\n- 项目时长约 24,278 秒，波形代码会生成完整的 16 kHz 单声道 Vec<f32>：\n24,278 秒 × 16,000 samples/s × 4 bytes ≈ 1.55 GB\n\n这个数字和实际内存峰值高度吻合。它属于“系统取证 + 源码验证”，不是单纯看 PID 猜出来的。",

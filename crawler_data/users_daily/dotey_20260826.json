@@ -1,0 +1,67 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 242506,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260826",
+  "last_updated": "2026-08-26T04:36:14.550176",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2092460792524218778",
+      "text": "让 AI 做性能优化很厉害，把 Activity Monitor 截个图，它能根据截图上的 pid 迅速定位到原因是啥。想起上古时代找内存泄漏可费劲了，要抓好几份内存 Dump，用工具分析堆栈，费很大劲才能定位到可能的原因。\n\n现在 Agent 能很快找出内存占用大的原因，虽然我都不知道它怎么做到的……\n\n我要做的就只是找几个场景测试一下，让它分析就好，理论上来说都可以让 Agent 自己用 computer use 完成。",
+      "created_at": "Wed Aug 26 03:55:03 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2092459788101636096",
+          "url": "https://pbs.twimg.com/media/HQnpF0iWUAA-LKs.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2092460491410989056",
+          "url": "https://pbs.twimg.com/media/HQnpuwkXYAAr_WT.png"
+        },
+        {
+          "type": "photo",
+          "id": "2092460612882157568",
+          "url": "https://pbs.twimg.com/media/HQnp11FWUAA7q1l.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 15,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2092467523027370351",
+      "text": "问了下 AI 是如何做到的：\n\n用 PID 做进程级取证，再结合项目规模、线程状态和源码完成因果定位。\n这次的推断链是：\n- vmmap -summary 23870 显示物理 footprint 约 2.3 GB、峰值约 2.7 GB。\n- 大头在 MALLOC_SMALL，而 IOSurface 只有约 14 MB、GPU 图形约 73 MB，所以视频帧池不是主因。\n- Activity Monitor 显示 439 个线程，源码中又存在每个缩略图都 std::thread::spawn、随后等待 2 路信号量的逻辑。\n- 项目时长约 24,278 秒，波形代码会生成完整的 16 kHz 单声道 Vec<f32>：\n24,278 秒 × 16,000 samples/s × 4 bytes ≈ 1.55 GB\n\n这个数字和实际内存峰值高度吻合。它属于“系统取证 + 源码验证”，不是单纯看 PID 猜出来的。",
+      "created_at": "Wed Aug 26 04:21:48 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2092467152510943232",
+          "url": "https://pbs.twimg.com/media/HQnvyfGWgAAfXxH.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

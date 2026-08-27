@@ -1,0 +1,96 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 242599,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260827",
+  "last_updated": "2026-08-27T06:53:36.286964",
+  "tweet_count": 1,
+  "tweets": [
+    {
+      "id": "2092826289841299636",
+      "text": "上次我说让 AI 很难跳出既定框架，有网友说是我提示词没写好，所以我最近换了一种写法，还真的有效果，简单来说就是让它基于要达到的目标，跳出框架，重新思考会有什么不一样的做法。\n\n上次我在 AI 帮我翻译完视频后，我给它提问：\n\n> 如果跳出当前架构，让你基于功能重新设计当前的翻译流程，你会采取什么不一样的做法？\n\n还别说，真的给了我一些不一样的思路。\n\n但是我看完觉得可能不太靠谱，不过口说无凭，那咱们用数据说话吧。\n\n我让它去开个 Worktree (因为还有其他任务再跑，不好开分支)去验证下：\n\n> 用一个worktree去验证你的方案，然后对比当前方案，看是否在不牺牲质量的前提下有更好性能。\n\n等它验证完，发现并没有预期那么好，但是也不是完全没价值，可以部分借鉴它的方案。\n\n有个小插曲，其实一开始我没看懂它的意思，也不知道是好还是不好，然后我去开了个 sidechat（/btw），让它给我详细的解释了一下：\n> 解释一下新的方案：值得做吗？是部分改进当前还是完全改进？具体怎么改进，请通俗易懂的给我解释一下，最好结合具体的例子\n\n听它解释完我才明白，然后把解释的内容重新给它让它基于这些信息去实施了，对于提升质量还是有帮助。\n\n至于为什么要用 sidechat，是因为这类解释的事情没必要放到主上下文，只是了解一下，除非后续需要用到一些聊出来的信息。\n\n---\n\n简单总结一下：\n\n1. 让 AI 根据目标跳出框架去思考，给出新的方案还是有帮助\n\n2. AI 给的方案不一定靠谱，还是得要有人工验证，最好是有数据为准，不能全盘接受\n\n3. 一些当前任务无关的问题可以问 sidechat",
+      "created_at": "Thu Aug 27 04:07:24 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2092823801843048449",
+          "url": "https://pbs.twimg.com/media/HQs0KNZWYAEWpqj.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2092823880423428097",
+          "url": "https://pbs.twimg.com/media/HQs0OyIX0AED-Jc.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2092824876302192640",
+          "url": "https://pbs.twimg.com/media/HQs1IwEX0AA4syT.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2092824960775393280",
+          "url": "https://pbs.twimg.com/media/HQs1NqwWkAAobEn.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2088838461511839844",
+        "text": "我最近就发现，即使聪明如 Fable 5，如果你只是给它一个目标让它优化，它可能也就是在既定的框架下想办法帮你优化到极致，但是它很难跳出既定框架，发现一条完全不同的路线。\n\n比如说最近有用户反映使用 BaoCut 转录速度慢，我就反复的用 Codex 去转录视频，然后让 Codex 或者 Fable 去分析瓶颈在哪里，该怎么优化，然后每次它们都能给我一堆理由和看起来靠谱的优化方案。\n\n比如它会建议多开启 workers（subagent），对 workers 预热之类。让它按照方案优化后，似乎有效果但是又不明显。\n\n最后还是自己去分析数据包，发现耗时长还是输出的 JSON 格式太长了，导致生成、校验时间较长。\n\n如果不用 JSON 格式，比如纯文本，或者简单的 html 格式，会更节约 token，只不过这样程序解析会很复杂，比如对字幕润色分段，输出是纯文本的话，就要做 diff 比较润色后更改的内容，还要把变更后的部分，重新对应到原始字幕的单词上。\n\n简单来说，就是以前为了让程序简单就让模型输出复杂更费 token；如果要节约 token，就可以让模型的输出简单，但是程序解析会很复杂。\n\n按照这个思路改进后，效果很明显（对比图2图3），调用次数从 33 次降低到 12 次；时间从 31 分钟降低到 18 分钟。测试张小珺那期将近 7 小时的访谈，完整润色也只需要 42 分钟。\n\n如果不走 Agent 走 Cloud 模型的话，一个小时的视频，完整的翻译校对成双语字幕，用 DeepSeek v4 Flash，成本大于是 ¥0.4元。\n\n有兴趣可以试试看效果，Mac 有专门的 App，Windows 支持 cli 或者 skill。 \nBaoCut ：https://t.co/89Wi1b3hZT",
+        "created_at": "Sun Aug 16 04:01:12 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2088825332195262464",
+            "url": "https://pbs.twimg.com/media/HPz_kpNWAAAPYTf.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2088831417094483968",
+            "url": "https://pbs.twimg.com/media/HP0FG1OXsAAyFZP.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2088834460212924416",
+            "url": "https://pbs.twimg.com/media/HP0H39uWEAANQlA.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2088836217987096576",
+            "url": "https://pbs.twimg.com/media/HP0JeR8XYAAcNdW.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 242599,
+          "friends_count": 1709,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 56,
+          "favorite_count": 485,
+          "reply_count": 52,
+          "quote_count": 5
+        }
+      },
+      "stats": {
+        "retweet_count": 13,
+        "favorite_count": 83,
+        "reply_count": 19,
+        "quote_count": 0
+      }
+    }
+  ]
+}

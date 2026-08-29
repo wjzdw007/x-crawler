@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 243261,
+    "followers_count": 243285,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260829",
-  "last_updated": "2026-08-29T19:07:56.847748",
-  "tweet_count": 9,
+  "last_updated": "2026-08-29T22:14:36.390903",
+  "tweet_count": 13,
   "tweets": [
     {
       "id": "2093502292066496682",
@@ -446,6 +446,144 @@
         "favorite_count": 3,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2093756288769327539",
+      "text": "之前 Claude Code 周额度临时加 50% 一再延迟之后，最终结果是 9/14 之前，还是加 50%，之后变成了加 25%，但是是永久的。\n\n好吧，直观感受就是 -25%，现在 Fable 5 本来就不够用，还降 25%，更加不经用了",
+      "created_at": "Sat Aug 29 17:42:54 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2093742321473065266",
+        "text": "Starting September 14, we're permanently raising standard weekly limits in Claude Code by 25% for Pro, Max, Team, and seat-based Enterprise plans. Until then, the current 50% increase will be in place.",
+        "created_at": "Sat Aug 29 16:47:23 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2024518793679294464",
+          "name": "ClaudeDevs",
+          "screen_name": "ClaudeDevs",
+          "description": "Official updates for developers building with @ClaudeAI",
+          "followers_count": 669036,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 618,
+          "favorite_count": 13871,
+          "reply_count": 1335,
+          "quote_count": 1064
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 32,
+        "reply_count": 13,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2093800559438381120",
+      "text": "社区标记简单直接：9/14 日起，Claude Code 周用量降低 17% https://t.co/HotTVubMpX",
+      "created_at": "Sat Aug 29 20:38:48 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2093800466769461248",
+          "url": "https://pbs.twimg.com/media/HQ6sblxXQAARyxx.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2093811243018760452",
+      "text": "Codex 正在重置额度，并且已经做了 Token 消耗的优化，理论上来说现在 Codex 的额度会更耐用了。\n\n--- 以下来自 Tibo 推文 ---\n\nTibo：我们正在为所有 Codex 和 ChatGPT Work 的付费用户重置使用额度。\n\n如果你想了解 Codex 额度消耗问题的最新进展，请接着往下看。最近，我们的团队一直在日夜奋战，翻阅了成千上万份用户报告，并马不停蹄地发布了一系列修复补丁。\n\n接下来，根据你使用 Codex 的习惯不同，你会发现自己的额度比以前变得更“耐用”了——使用时长大约能增加 10% 到 50%。\n\n这次我们真的是拿着“显微镜”进行了地毯式排查，揪出了许多潜伏已久的小毛病。以下是我们发现并修复的核心问题：\n\n- Compaction（上下文压缩）。\n\n在进行压缩时，我们之前错误地保留了旧图片，有时这会让上下文体积依然很大，从而再次触发压缩操作。修复后，对于重度使用图片的用户来说，额度消耗下降了约 10%。已修复。\n\n- Memory（记忆机制）。\n\n后台负责处理记忆的程序有时会继承“停止挂钩”（Stop hooks），导致在挂钩阻止它们结束时，这些程序依然在无意义地空转。这虽然只影响了不到 1% 的用户，但在极端情况下表现得非常糟糕——我们甚至观察到一个线程循环检查了 15,000 次自己“是否可以停止”。已修复。\n\n- Goals（目标指令）。\n\n在某些情况下，设定好的 `/goal` 指令在完成后，并没有乖乖停下，而是越过了预定的停止条件继续运行；或者，模型会死磕那些已经失效的工具，无限重试而不停止。我们看到的一些极端案例中，这竟然白白消耗了用户每周 15% 到 70% 的额度！已修复。\n\n- Automations（自动化任务）。\n\n部分自定义的定时任务，其运行频率超出了用户的实际设定。已修复。\n\n- Subagents（子智能体）。\n\n执行复杂任务时，主模型有时会调用其他专门的模型来协助）较小的模型（例如 Luna）有时会在没有被明确指令要求的情况下，擅自“请外援”调用能力更强（也更耗费额度）的助手模型。同样，如果负责调度的模型本身没有开启 `/fast`（快速）模式，它却会错误地要求子智能体以 `/fast` 模式运行。已修复。\n\n- Computer History（计算机历史记录）。\n\n旧版的代码实现会导致系统反复对重叠的活动记录进行总结。在部分案例中，单是这个小失误，每周就能吃掉用户高达五分之一的额度。已修复。\n\n- Rolling task summaries（滚动任务总结）。\n\n在普通的对话轮次中，系统会触发额外的后台请求。这不知不觉中增加了大约 1% 的 token（词元）消耗。虽然每次只扣一点点，但积少成多也是一笔不小的开销。我们现在已经禁用了这个功能。\n\n- MCP。\n\n部分工具返回的结果被系统重复编码了两次。我们还发现，一些工具的指令会被意外截断，导致系统不得不重新获取。已修复。\n\n为了彻底斩草除根，我们对系统架构进行了底层调整，以防止这些问题卷土重来。退一万步说，即便问题真的复发，我们的团队也会第一时间收到警报。此外，我们正在开发一项新功能，未来你将可以直接在应用内清楚地看到额度究竟花在了哪里，再也不用瞎猜了。\n\n毫无疑问，我们现在正在为大家重置所有的使用额度。祝大家度过一个愉快的周六！",
+      "created_at": "Sat Aug 29 21:21:16 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2093801758665715784",
+        "text": "We are reseting usage for all paid users of Codex and ChatGPT Work.\n\nPlease continue reading for an update on Codex usage limits. The team has been working around the clock, going through thousands of reports and shipping fixes.\n\nDepending on how you use Codex, you should see your usage go between 10% and 50% further than before.\n\nWe really went with a fine comb, with many uncovered small things being longstanding and here is what we found and fixed:\n- Compaction. We were keeping old images during compaction, sometimes making the context large enough to trigger compaction again. After the fix, usage dropped around 10% for users making heavy use of images. Fixed.\n- Memory. Background memory workers could inherit Stop hooks and keep running when the hook wouldn’t let them finish. This affected fewer than 1% of users, with the long tail being pretty bad and we saw one example thread check whether it could stop 15,000 times. Fixed.\n- Goals. In some cases, a set /goal could finish and then keep going past the intended stop condition, or the model would keep retrying broken tools without stopping. We saw examples consume anywhere from 15% to 70% of a weekly allowance. Fixed.\n- Automations. Some custom schedules could run more frequently than configured. Fixed.\n- Subagents. Smaller models (e.g. Luna) sometimes picked more capable helpers without being explicitly asked. The same was true where the orchestrating model not running in /fast mode could request sub-agents to run /fast. Fixed.\n- Computer History. The older implementation could lead to repeatedly summarizing overlapping activity. For some cases we saw it consume up to one fifth of the weekly usage per week. Fixed.\n- Rolling task summaries. Ordinary turns were triggering extra background requests. These added about 1% to token usage. Small each time, but it adds up. We have disabled this.\n- MCP. Some tool results could be encoded twice. We also found tool instructions getting cut off and fetched again. Fixed.\n\nWe’ve also made architectural changes to prevent these from regressing and our teams will get paged if it happens regardless. We are also working on showing you directly in the app where your usage goes so you don’t have to guess.\n\nGoes without saying that we’re resetting usage limits and I hope you enjoy a very nice Saturday!",
+        "created_at": "Sat Aug 29 20:43:34 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1953337039510003712",
+          "name": "Tibo",
+          "screen_name": "thsottiaux",
+          "description": "Codex & ChatGPT @OpenAI",
+          "followers_count": 533655,
+          "friends_count": 71,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 408,
+          "favorite_count": 7726,
+          "reply_count": 716,
+          "quote_count": 321
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 8,
+        "reply_count": 5,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2093812588358283294",
+      "text": "明天还有一次？\nhttps://t.co/kjv9T599a4",
+      "created_at": "Sat Aug 29 21:26:36 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2093811840258293947",
+        "text": "This celebration is moved to tomorrow as the button was already pressed today.",
+        "created_at": "Sat Aug 29 21:23:38 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1953337039510003712",
+          "name": "Tibo",
+          "screen_name": "thsottiaux",
+          "description": "Codex & ChatGPT @OpenAI",
+          "followers_count": 533655,
+          "friends_count": 71,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 83,
+          "favorite_count": 2677,
+          "reply_count": 455,
+          "quote_count": 121
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 1
       }
     }
   ]

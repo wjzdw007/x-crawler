@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 242763,
+    "followers_count": 242791,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260829",
-  "last_updated": "2026-08-29T01:25:10.654154",
-  "tweet_count": 1,
+  "last_updated": "2026-08-29T08:34:48.083355",
+  "tweet_count": 6,
   "tweets": [
     {
       "id": "2093502292066496682",
@@ -98,6 +98,245 @@
         "retweet_count": 684,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2093537624120062356",
+      "text": "RT @fi56622380: AI半导体终局推演2026(III) \n  \nAI半导体基建期为什么比互联网基建期更长？\n\nCoding场景之后的下一个模型ARR营收增长点在哪里？\n\nAI基建会不会过度建设？Capex是不是泡沫？经济账能算的过来吗？\n\n开源模型和闭源的格局如何…",
+      "created_at": "Sat Aug 29 03:14:00 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2093522018947977649",
+        "text": "AI半导体终局推演2026(III) \n  \nAI半导体基建期为什么比互联网基建期更长？\n\nCoding场景之后的下一个模型ARR营收增长点在哪里？\n\nAI基建会不会过度建设？Capex是不是泡沫？经济账能算的过来吗？\n\n开源模型和闭源的格局如何？对闭源模型的冲击会如何演进？\n\n本文尝试推演这几个问题背后的逻辑\n\n—--------------------------------\n\n为什么AI的基建期比互联网基建期要长？\n\n互联网革命时期的硬件/基建收入增长，只有一个渗透维度的指数型增长，就是用户量\n\n因为每个人都是订阅制，50块钱一个月的网费，没办法再升了。属于平价服务，看十倍网页也不会付十倍的钱，平价服务是没有第二个维度的指数增长的，饱和了就饱和了\n\n移动互联网的基建，也就是端侧设备智能手机，是同样的逻辑，端侧设备很难做到ASP售价很高，因为摊薄成本需要大规模生产，而要做到大规模，ASP就一定不能高，也很难涨价。所以注定了端侧设备在渗透率达到一定程度之后，很难再继续指数增长，因为上限只有一个维度决定。\n\n这也是为什么，互联网革命的硬件需求拐点大概在渗透率到了sigmoid中点之后减缓，2000年3月互联网泡沫破灭的时候，美国互联网渗透率大概在50%左右。科技革命增速最快的时候就是采用率10%迈向50%的阶段。\n\n—--------\n而AI硬件需求来源于token的指数型增长，这一轮AI之所以对硬件需求大，本质上是因为上限是由两个维度决定的:用户数量/渗透率的指数增长，和每个人的用量的指数增长\n\n这两个维度的指数增长相乘，都能转换成统一的度量衡：token，把基建上限提高了太多太多了\n\n我们这个时代，两个维度各自走到哪里了？\n\n第一个维度用户渗透率，几个月前已经达到50%，也就是sigmoid导数要拐点了\n\n第二个维度，也就是人均token用量，2026年仍然在早期。全美企业内部的AI spending中位数，现在是每人每月12美元。远期来看，这个数字有希望至少达到白领工资的10%，也就是每个月1000美元左右，中间还有接近两个数量级。\n\n现在的增长，主要是第二个维度的渗透率，也就是每个人token平均用量的指数级增长，两个sigmoid曲线接力上了\n\n这应该是历史上罕见的，两个维度sigmoid曲线接力带来的算力/基建需求，也带来了半导体的超级周期\n\n但一切的指数增长，都是上限达到之前的幻象，这一轮AI基建也不例外，只不过幻象时间要长的多，因为多了一个维度的指数型增长接力\n\n—--------------------------------\n\n另外一个AI的基建期比互联网需求高的原因，在去年写的半导体年终总结里提过：提到这两个渗透维度的指数成长，都能转换成统一的度量衡：token。跟互联网时代不同的是，互联网时代，每次请求的网络和算力成本，边际成本极低，scaling的效果极好，软件复制分发的边际成本几乎为零，且几乎不消耗额外的硬件资源。\n\n而token时代因为高额的推理成本，用户访问消耗的边际成本比互联网要高一个数量级。商业模型从“流量 × 转化率”部分转向“每 token 毛利”了，所以AI时期基建的需求比互联网时代要高的多\n\n—--------------------------------\n\n第一个渗透率维度扩散太快，已经到拐点，所以现在大家在讨论AI的前景的时候,已经不那么注重渗透率的讨论,而更多的是讨论在各行各业中,人均的token使用量会如何增长。\n\n-----\nCoding agent场景ARR迅速上升证明价值之后，6-7月开始增速放缓，市场开始担忧，coding agent在程序员群体内广泛渗透之后，什么场景能够接力token/ARR增长 ？是不是AI for science?还是RSI？\n\n我认为仍然是Coding，广义的coding，而且还有很大空间\n\nCoding是这个世界数字化的不可阻挡的趋势，万物皆可coding，而且不一定是显式的coding。实际上太多任务在后台被默默转化成了Coding,最后在记录功能的时候,仍然会被看作是Coding。\n\n目前广义Coding任务占所有的ARR收入比例大概是60%到70%之间。如果只算程序员的狭义Coding的话可能只有40%左右，另有20~30%可能是其他行业的任务转化而来的Coding agent执行结构。\n\n比如最常见的文件的编辑Excel和PowerPoint,最后都是通过后台开linux sandbox用Coding的方式去完成的。财务、CRM 操作、法律文档整理也一样，区别只在于所调用的工具和 verifier 不同，都被转换成了可观察->可执行->验证的coding闭环任务。\n\n半导体的架构探索会转换成SystemC model simulation问题，生物制药的分子结构解析和仿真中的很多环节也可以用coding完成，投行研报里的模型建模也能转换为coding问题。\n\n狭义的程序员coding任务只是第一个跑通了高频运行 观察/分析->执行->验证循环的大类任务，这也是coding为什么消耗了比chat高一个数量级的token。以后有太多的任务都是同一个逻辑下的承接者，甚至包括deep research这样的开放性任务。 形式上，下一个比较切实际的增长来源就是Co-work/computer use\n\n接力程序员Coding的，并不是另一个孤立的大场景。当前增长最快的，正是“非程序员使用Coding基础设施完成非Coding产品任务” ，Coding仍然是默认执行内核，但不一定是用户眼中的产品分类 \n\n截至2026年6月，OpenAI企业客户中，Codex已经占Codex与ChatGPT合计输出token的64%。Codex周活用户自2月以来法律部门增长108倍，销售和招聘增长41倍，市场营销增长26倍，工程部门反而只增长5倍\n\n从Anthropic的营收垂直占比来看，狭义的程序员/软件公司coding占比只有40%，金融服务/保险超过 20%，法律，制药/生命科学，消费/零售电商，占比都非常的可观，都有10%量级。\n\nSoftware eating the world的逻辑，在coding的门槛被LLM降低一百倍之后，甚至强化成了coding eating the world，或者说，coding是agent最熟悉的方式，agent正在利用coding开始向所有知识工作去扩散使用率\n\n而Agent Coding已经过了可行性和方向摸索阶段，剩下的主要是长时运行/跨系统/自主性/可靠性等工程问题 ，没有什么重大挑战了。\n\n剩下的事情只是用户适应场景和改变习惯的问题，渗透率/利用率的主要瓶颈是，大家的学习曲线没有那么快，用户需要时间迁移agent/coding工作流；企业workflow高度长尾、数据分散、内部工具整合不足，也缺少自上而下的KPI推动。模型能力、组织推动和tool integration共同决定adoption速度。 \n\n另外一个瓶颈逻辑Amdahl’s  law（结果取决于不能加速的环节），token只能解决其中一部分环节的加速，比如说像药物临床部分是无法加速的，如果其中一半环节无法加速，那么token就算把剩下的环节加速一千倍，整体加速也只有2倍。因此更现实的路径是并行探索更多方向，把瓶颈从决策转移到验证。 \n\nAnthropic 6~7月的营收放缓主要原因有三个：一个是算力不够，另一个是防蒸馏整治了不少账号，还有openai的codex 5.6抢占份额。并非广义agent coding需求触顶。 \n\n从广义agent coding角度看，我目前看不到大模型/agent需求的硬上限。目前仍然处于用的越多，提升效率越多的阶段，边际正收益仍然很大，主要瓶颈在于营收/利润能支撑多少budget，意愿和场景都没有问题。\n\n--------------------------------------------\n\n从最重要的需求端来推演，token增长率前景是没什么问题的。\n那么从基建出资方来推演，capex的上限在哪里，能不能持续？有没有泡沫？举债+FCF变负，账能不能算的过来？\n\n从基建出资方来说，和互联网区别最大的地方在于，互联网时代的基建出资方和受益方并不一致。而在 AI 时代，这两者出现了重合。基建出资方最大的Anthropic和OpenAI也同时是这一次AI革命的最大受益方。\n\n所以算账先从Openai和Anthropic角度来算是最直接的\n\n1.unit economy是算的过来的\n\n截至六月底，Anthropic大概用2GW的有效算力创造了62B的ARR。如果1GW的数据中心建设成本按50B来计算,平摊到六年,每年的成本大概是10B。那么,其实Anthropic的推理算力收入~30B/GW除以年化的算力成本大概是三倍。推理的ROIC也有差不多60%\n\n如果只算推理，那么unit economy就更好了，1GW的算力收入是接近50B的\n\n2. 在维持这个unit economy标准的前提下，只要ARR增速和算力增速同步，Anthropic + Openai的数据中心算力GW规划是能算的过来的\n\nO+A 两家在七月的时候大概6~7GW，Anthropic 65B，Openai 45B\n\nO+A 两家今年年底上线加起来大概11GW，只需要ARR半年再增长60%左右即可保持ARR和上线算力的同步增长（要知道2026上半年A 7倍，O 2倍多），也就是下半年每个月增长10%即可\n\n到2027年底，两家规划的总算力全加起来大概20~24GW，其实只需要这一年的token ARR同步增长1~1.5倍，这个算力账起码在unit economy上是算的过来的，算力跟ARR的增速同步，目前的可见度支撑2027E的capex没有大问题\n\n没有能见度的2028只能靠猜：2028E ARR一年增长80%的话，能justify O+A 总共45GW 算力规划。2029 + 2030年两年ARR继续增长100%（CAGR仅仅40%），O + A到2030年年底总共100GW算力规划是完全合理的\n\n至少O和A这样明确找到了结构性需求增长的赛道的ROIC是算的过来的，2027甚至2028的算力规划暂时没有泡沫\n\n举债和FCF变负去做AI基建，是不是赌博？是的\n\n但这样的赌博在ROIC如此好而且大概率能持续的生意面前是有合理性的，踏空错过的风险是显著大于fomo泡沫的风险。即使融资成本升到8%甚至更高，起码2027~2028，算力回报仍是可以justify借债风险的。\n\n—------------------------\nO和A的算力账是算的过来的，那么其他部分的算力呢？回报能算的过来吗？\n\n这部分定量很难，只能大概定性的算，因为其实有很多算力是不产生直接收入，只算作研发成本。比如Meta明年规划新增5GW给MSL训模型和搜广推(搜索/广告/推荐)，google的gemini 训练 + 搜广推，都不直接产生收入，但这些仍然是战略上的合理算力需求。\n\n有一个很容易被忽略的事情：全行业来说，目前很大一部分的AI/ML算力，不是卖token的，仍然是传统的搜索/广告/推荐，最典型的比如Meta，Google大部分的算力就是如此\n\n所以在看2027~2028年的天文数字一样的算力的时候，传统workload是一个容易被忽略的重要部分。产业链硅谷公司里，和市场的感觉是截然相反的：公司内部的算力缺的一塌糊涂，但市场还是在质疑算力账看不到收入，质疑oversupply\n\n但把这么多不产生直接收入但仍然重要的R&D，以及传统AI/ML的大量增长算力算进来，算不过来的那部分算力是很有限的\n\n况且O + A的算力集中度也是越来越高的：2027年全年新增算力GW，因为电力瓶颈，美国能通电大概只有20~25GW，这其中O +A可能会占10GW，也许会占到新增的接近一半。在2025年，这个比例低一些，O+A 大概只占新增算力的25%，很大一部分的算力GW不是LLM。随着时间推移，O + A的算力GW占比越来越大，也就是说总体算力账能算的过来的部分也越来越大\n\n另外一个容易被忽略的逻辑是，因为coding agent的爆发，软件行业/ML行业的迭代速度突然加快，整个世界数字化进程的加快，带来的传统硬件基建需求也在加速\n\n以CPU为例子\ntoken = 决策/智能\nCPU = 执行/验证\n\n数字世界万物皆coding，随着决策能力爆发，对执行/验证的需求会是同步的数量级的增长 \n\n而且传统ML行业的迭代速度加快，也会是CPU类似的逻辑，ML的效果变好场景变多，也会带来更多GPU/ASIC硬件的需求\n\n—------------------------\nAI基建会不会产生泡沫？会，而且最后一定会overbuild\n\nInference现在实在是太赚钱了,所以overbuild是必然会发生的结局,因为大家都想抢inference这一块的市场,每一家都在军备竞赛，无法承受失去市场份额无法跟随潮流高速增长的痛苦，没有哪一家会退缩\n\n闭源模型推理的毛利率可以轻松达到70%~85%(甚至是在CSP抽成之后)，token factory host开源模型卖token的毛利率也有60%以上（DeepSeek甚至80%以上），GPU最近不停涨价，1GW租金都在往20B走，光卖GPU集群短约都有60%以上毛利。\n\n这个AI基建市场太赚钱诱惑力太大，只要有渠道有技术的，全都涌入这个市场做neocloud，而因为build规划和落地普遍有一两年的时间差，所以overbuild一定会发生，只不过是时间问题\n\n时间问题的意思是，以目前的需求和算力规划，至少两年看不到overbuild，任何模型上的阶跃式进步(比如reasoning -> agent)，或者应用范式上的创新，带来AI spending维持增速，都会一直把这个overbuild的时间线往后续命\n\n什么时候这个续命跟不上基建的速度了，overbuild就会慢慢开始浮现\n\n但这其实是更利好于头部模型厂和应用层的,因为overbuild会导致数据中心毛利下滑，更多的推理利润都流入了头部的两家\n\nSpaceX虽然现在规模还小，但在这个卷新建算力的市场里，执行力最强，成本最低，竞争力可能是最强的，也是野心和规划最大的，以后也必然是overbuild的最重要贡献者之一。\n\n—-----------------------------------\n\n开源模型的兴起，对闭源模型营收ARR会有影响吗？目前的格局是什么样的？\n开源模型和闭源模型的差距会减小吗\n\n开源模型的势头能不能持续，和开源模型的能力也有关系，我的观点是开源模型和闭源模型的差距会维持在6个月(Mythos 2月就出来了，被监管了)，蒸馏主要是降本\n\n模型进步的三个壁垒：算力scale，数据scale，自迭代\n\nOpenai和anthropic今年加起来花了一百多亿美元买数据，但国内现在也是要花几十亿美元买数据了，数据scale这个壁垒差距有缩小，但仍然是有的\n\n算力方面，海外建数据中心 + 各个国家转口，GPU的禁令很大程度都被绕开了，等国产卡产能上来，算力壁垒也会继续缩小，目前算力数量级上的差距仍然维持\n\n目前下一代模型的进步很大程度要依赖前一代模型的迭代(自迭代RSI)，上一代模型越强，下一代就越强，差距要减小不容易\n\n—-----------------------\n\n至于闭源模型对开源模型ARR肯定是有影响的，但影响可能会比市场预期要小，起码一年之内冲击并不大，这里尝试一下大致定量分析\n\n至于openrouter和Vercel上的开源模型token占比，从28%增长到62%，只能反应小微型企业/多模型用户在用中转站里的形势变化，其实绝大部分闭源token是无法显示的，这个抽样并不能完全作数\n\n截至7月底的ARR，Anthropic大概是72~75B，Openai大概是45B\n\n截至7月，全球所有开源收入加起来是10B左右，只算北美只有4B最多5B。按ARR收入来算，北美开源模型token factory + AWS bedrock开源 + Azure开源 ARR只有~4B，闭源120B，比例大概是3%\n\n最大的x因素就是aws bedrock和azure，目前Q2来看，bedrock大概占aws AI的55%比例，~14B ARR，其中anthropic模型占80%左右，aws bedrock和azure开源模型加起来大概在1.5~2B ARR\n\n中国开源3.5B分解一下，大概是智普$1B, 阿里1.2B，Deepseek 500m，kimi 300m，minimax 200m，美国分解一下，fireworks 1B，together 1.2B(开源推理只有0.5B)，baseten 0.5B，加上其他地区的，加起来勉强10B\n\n北美的token factory开源模型推理，26年上半年大概只增长了3倍（比如fireworks从10T+/300M ARR增长到40T/1B ARR），总体来说，和闭源模型的推理市场增速比较并没有显著优势\n\n至于企业自己部署私有开源模型自己用，这条路从成本角度来说是行不通的（数据安全是另外的考虑），开源模型要是优化的不太好，成本甚至比闭源还高，不如交给token factory\n\n美国开源的算力扩张，速度还是受限于算力，所以上不去，扩张速度和闭源比并没有优势。fireworks，baseten，together，融资都是1B规模的，按现在租算力价格，一年20B/GW，一年只能租不到0.5GW，算力增速其实不比闭源更快。要扩张只能让客户到azure/aws自带算力再来\n\n中国的开源扩张速度倒是更快，但是同样token factory受限于算力，远远满足不了中国自己的需求，暂时无法大规模出海卖给美国。中国的token factory大大小小的差不多30家，已经卷成红海了，都是严重缺算力，谁有卡谁就能有收入\n\n中国token出海另外一个风险是信任和政策风险问题，美国企业自己可能不敢用，中国也有可能不愿意自己模型被免费用拿不到收益，不过以后随着openrouter和vercel的中转站继续发展，即便有token无法出海的禁令，token出海也是拦不住的，毕竟开源token卖给美国的利润太高了\n\n美国开源模型token工厂的问题在于，算力暂时有限，融资规模暂时也有限，扩张速度无法满足需求。就算是政策开放了中国开源token出海，短期算力也不够无法出去，这也是为什么Nvidia非常努力的扶持开源，甚至亲自下场加速这个进程(今天收购了hugging face)\n\n—-----------\n\n另外，闭源模型的防守策略也是很有力的，比如5.6 luna降价80%，价格就很有竞争力了\n\n我们可以对比历史，这和移动互联网时代，高通对联发科使用多年的防守策略是完全一样的：\n\nSol相当于Snapdragon 8系：旗舰维持技术与品牌上限，数量和比例并不那么大\nLuna相当于Snapdragon 4系：主动填满低价区间，不给低成本竞争者留利润池，大部分走量来自于此\n\n和token分不同的tier一样，其实联发科的芯片是远远超出手机“够用”的范畴的，别说日常使用了，就算是打游戏的高负载场景，联发科十年前都和高通差的并不远了\n\n所以token也是一样，value tier不会摧毁flagship tier的需求\n\n高通和联发科的攻防战持续了15年，高通靠着这样的策略仍然维护了自己的市场占有率，高端芯片毛利率保持的也不错，仍然是安卓阵营旗舰机第一选择\n\n所以从历史来看，开源对闭源的冲击有影响，不会影响历史进程\n\n—-------------------\n另外一个和开源相关的问题就是，tokenmaxxing潮流的结束，对ARR的增速会有影响吗？\n\n我认为tokenmaxxing只是短期的公司为了内部推广的目的，目前部分美国硅谷大厂确实对员工日常使用有限制额度，但这个额度非常高，大概是一个月10k~20k美元，95%以上的员工实际上根本用不完，而且中位数实际上很低，仍然有很多增长空间，目前对token的使用仍然处于边际正收益仍然很大的阶段\n\n—--------------------------------\n\n总的来说\n\nAI基建的前景之所以扑朔迷离，泡沫之争比互联网基建时代更激烈，主要是因为算力支出的可见度是确定的，而需求的可见度不高所以有巨大的不确定性，而中间还隔了一层收入和支出的时间错配带来的金融风险，这个基建金融风险还随着各方“加注”的不断加大，上升到了甚至能影响国债发行的程度\n\n但我还是认为，即便是以保守的没有任何新范式的base case来算，起码到2027~2028的基建是没有泡沫的\n\n算力就是智能，智能就是巨大的收入。\n\nAI token需求两个指数增长维度的迅速接力节奏是历史上绝无仅有的，万物数字化广义coding的需求才刚走完第一段，开源对利润分配的冲击是必然会发生，但不会影响整个进程大局\n\n产业链角度和市场宏观角度，看到的风险和景气度感受是相反的，但两边的感受到的剧变同样剧烈：近处的人看见的是不够，远处的人看见的是太多 \n\n算力变成了判断/认知token，需求如何推演，天花板如何计算，没有任何历史参照，我们真正在争论的，从来不是这个数字对不对，而是该用什么时间单位去看待它\n\n而这一点本身，恰恰说明了它有多大：只有真正的相变，才会让所有旧的历史参照同时失效 \n\n支出的可见度制造了今天的恐惧，而需求的不可见度，恰恰隐藏着这个时代最大的机会，看不清路径，并不一定意味着看错了方向\n\n每一条S型指数曲线终会走到尽头\n\n但文明发展从来没有停在任何一条曲线的尽头\n\n—--------------------------------------\n开源对半导体的影响如何？\n半导体Capex内战谁会是赢家？如果内存存储吃掉了太多利润，会发生什么？\n\n本篇已经太长，这两个话题就顺延到下一篇",
+        "created_at": "Sat Aug 29 02:11:59 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2093521465782190080",
+            "url": "https://pbs.twimg.com/media/HQ2urmGaQAAuZlA.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2093521579162718208",
+            "url": "https://pbs.twimg.com/media/HQ2uyMeb0AASIaW.png"
+          },
+          {
+            "type": "photo",
+            "id": "2093521623391588352",
+            "url": "https://pbs.twimg.com/media/HQ2u0xPa0AA5oex.png"
+          },
+          {
+            "type": "photo",
+            "id": "2093521647198519296",
+            "url": "https://pbs.twimg.com/media/HQ2u2J7bwAA9Dl0.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2070029693810847988",
+          "text": "AI半导体终局推演2026(II)\n\n当半导体结构性演进到AI推理主线，内存和存储成为了最大瓶颈，市场对内存和存储最大的怀疑就是：\n\nHBM/DRAM/SSD会不会摆脱传统周期性？\n\n依赖HBM指数增长的GPU架构路线进化路线，会不会停止？什么时候停止？\n\n长鑫扩产的影响有多大？会不会把这个市场重新带入周期泥潭？\n\n本篇尝试去建立一个框架来梳理这几个问题\n\n—---------—---------\n万物皆周期，而内存的周期性又特别强，最大的来源在于扩产周期过长，无法快速扩产和需求短缺时期错配\n\n摆脱传统周期性几种可能的方式\n\n1. 定制化：产品不可互换，产能不能随便转移，需要签长约。\n\n 2. 结构性的指数级需求增长：需求曲线本身很陡峭，而且供给一直追不上。\n\n  3. 技术迭代快速升级：每一代产品都快速淘汰上一代。\n满足任何一条，就能部分摆脱传统周期；满足两到三条，就能摆脱大部分传统周期\n\n根据这个框架， HBM在三条里，大概占了两条半\n\n1. 定制化，需要签长约（较弱，算半条）\n\nHBM 确实有定制化和Nvidia codesign的成分，但并不是很强。真正定制的部分只在封装和 base die，上面那十几层 DRAM die 仍然是完全 JEDEC 标准化的。\n\n比如当 Samsung 的 HBM3E 在 NVIDIA 的 qualification 上没过、份额从大约 60% 一路跌到 20% 的时候，它并没有把这批产能砸在手里报废，而是转手就供给了 Google 的 TPU、AMD. 物理上，给 NVIDIA 的 HBM3E 和给 AMD 的 HBM3E，是同一个东西。 所以产能仍然是部分可以自由转移的。\n\nHBM4之后的定制化更多一些，包括在 base die 上集成定制逻辑和/或缓存。更复杂的方式是将 HBM4E 内存控制器和定制 die-to-die 接口直接放入逻辑 base die\n\nSemiAnalysis 提到 OpenAI、NVIDIA 和 AMD 各自都在做定制 HBM 的工作，但这指的是 base die 的定制，上面的 DRAM 层仍然是标准的。\n\n部分定制化的特性，HBM主要在封装上需要合作，这也导致了客户必须签长约，但产能也确实可以转移，所以HBM 能勉强算半条。\n\n2. 结构性的指数需求增长（满足）\n\n最直观的原因，就是Nvidia token factory token throughput的硬件升级需求，导致了HBM带宽的升级换代极快，以及HBM size需求的指数增长\n\n这一条其实就是上一篇AI半导体终局推演2026(I)的结论：\ntoken throughput = HBM size × HBM 带宽，每一代翻倍。\n\nHBM size per GPU大概每年增长40%以上\n\n这条需求曲线的陡峭程度，是DRAM供给端 14% 的 wafer 增长，乘以 9% 的 density 提升，很难追上的\n\n在硬件领域，因为attn阶段KV cahce的极高带宽和极高memory size的要求，也导致了HBM独特的地位。即便是HBM涨价三五倍，把钱花在HBM上带来的边际token throughput提升，仍然比花在其他地方要划算的多。\n\n其他几个Memory路线，SRAM，HBF，CXL，PIM，目前都无法在HBM的主力赛道kv cache/attention上正面竞争，起码未来5年甚至更长时间，不太可能找到替代路线\n\n3. 技术迭代快速升级（满足）\n\nDDR3时代过了15年，仍然只是DDR5时代，而HBM的升级换代的速度基本上是两年一代，比传统DDR要快很多很多，而且近来还有加速的趋势，HBM size x HBM BW每一代翻倍，目前是完全符合这个规律的\n\n每两年一代HBM升级，NV GPU速度基本是指数型上升：2TB/s ->3.5TB/s->4.8TB/s ->8TB/s->22TB/s，而且HBM的速度和推理token throughput是完全线性正比的，上一代HBM的边际使用成本会不划算，大家都有动机去尽量用最新的产品，虽然更贵，但是带来的收益(token throughput)是更多的\n\nToken factory时代的逻辑是，技术升级（HBM带宽）的越多，赚的越多\n\n这个速度差，造成了一个和 CPU 类似的局面：旧产品快速贬值，于是囤货的价值在变低，比如说，HBM3的价值贬值的非常快，今天基本上主流产品不会用了\n\n所以HBM 厂商的理性选择，从拼当前的产能去占市场（quantity competition），变成了在稳定性和HBM速度上拼技术，拼下一代在 NVIDIA 平台上的 qualification 份额（quality competition），从而避免了在传统周期的下行波段，大家都不愿减产掉市场份额的囚徒困境。\n\n—--------------—--------------\n\nHBM和传统DRAM比较，三个条件里满足了两个半，那么HBM能摆脱传统周期性吗？\n\n内存周期性的来源，主流叙事是，DRAM 有Commodity属性（无差异化 → 价格战 →库存可囤积），所以有周期性。\n\n而Commodity属性本身并不产生周期，它只是一个振幅放大器\n\n特别是DRAM领域里，曾经产生过囚徒困境，在下行周期三星曾经扩产抢市场份额，谁先减产谁吃亏，导致谁也不敢轻易减产，最后大家都亏损惨烈\n\n实际上周期性的主要结构性来源是供给周期太长，很容易和需求周期错位。建一座 fab 要 3 年，投资上百亿美元，一旦决策就不可逆，而需求增长会有不稳定性，每次出现新范式增长，比如云服务，移动互联网手机，疫情线上需求，会有爆发式增长，而过了两年增长会放缓，供给高于需求，降价过猛，就变成了亏钱周期\n\n万物皆周期，HBM这一条同样是无法避免，但只要token需求仍然是指数型增长，结构性的指数增长会减弱周期性，因为需求可预测度更好，而且一旦降价，客户就有增大HBM size的需求（从而增大token throughput），加上HBM有一点定制化要求导致都是长约，从而从周期性转化成成长周期性，而且这一轮周期会特别长\n\n周期性：上行周期赚的多，下行周期亏的多\n成长周期性：上行周期赚的多，下行周期赚的少\n\n另外，HBM/DRAM在这三条摆脱传统周期的条件的基础上，还有一条重要优势：\n\n4. 因为DRAM密度增长scaling越来越慢，以及HBM升级换代导致DRAM堆叠倍数的增加，供给端的扩产难度持续增加\n\n2000年附近，DRAM每片wafer上DRAM bit密度每年增长大概45%，也就是说，就算晶圆wafer数量不扩产，每年的供给端DRAM bit仍然可以增长45%\n\n十年前，DRAM bit每年密度增长降到了20%，而现在，DRAM bit每年密度增长降到了9%。以前DRAM扩产甚至不怎么需要新建厂房就能得到每年20~30%的bit volume上升，现在DRAM要扩产，更多的是靠wafer数量的增长，也就是新建厂房和clean room。\n\n另外一个HBM快速扩产难度在于，HBM3e大概需要3倍的DRAM wafer晶圆，而HBM4由于堆叠密度的增加，大概需要4倍的DRAM wafer晶圆数量，相当于HBM bit相对于DRAM bit一直变得更难制造，单位DRAM wafer数量制造的HBM bit越来越少，相当于在通缩\n\n----------------------------------\n\nHBM未来有一天，会不会从成长周期性，变回传统周期性？最重要的因素是结构性指数增长，那么\nAI推理时代，这个依赖HBM指数增长的GPU架构路线进化路线，会不会停止？什么时候停止？\n\ntoken throughput = HBM size × HBM 带宽，这个HBM指数增长的第一性原理里的HBM size的增长原因正是KV cache的增长。KVCache的特性以及Attention的特性,也是非常契合HBM的。甚至让HBM领先于其他的技术路线, 能够最大化地让KVCache和Attention 阶段的利用率。\n\n换言之， 如果KV cache从架构上不存在了，那么HBM size指数增长逻辑也会受到挑战\n\n所以这个问题的本质其实是，这一轮以 Transformer 为代表的 attention 机制、以及由它衍生的 KV cache 机制，会不会消失？退潮之后会不会被取代？\n\n从历史规律来看：每一次AI模型架构革命，真正被保留下来的，是那些在数学上具有某种普适性的 primitive 操作\n\n举个例子：FFN（前馈网络，也就是模型里大量的 MLP 层）是 2012 年深度学习时代的产物，但它一路活到了今天的大语言模型里，并且仍然占据着模型相当大的参数量。它为什么能活下来？因为这也是一种universal approximation theorem（通用逼近定理）：任何足够宽的 MLP 都能逼近任意连续函数\n\nAttention 大概率也是这样一个会被保留的 primitive。因为它解决的是一个同样 基础的问题：序列sequence 中任意两个位置之间的 dynamic routing（动态路由），让一个序列里任意两个位置都能按需建立联系。这个能力一旦被验证有效，就很难被丢弃\n\n所以即便未来架构从纯 Transformer 向混合架构演进，或者向世界模型演进，但attention 层依然会存在，KV cache（或者它经过 latent compression 之后的等价物）依然需要，HBM依然会作为推理核心之一，这个依赖HBM指数增长的GPU KV cache架构路线进化路线，不会停止\n\n—---------------—---------------\n\n那么DRAM呢？在未来有没有摆脱传统周期性的可能？\n\nHBM摆脱周期性在市场上有一定共识，但DRAM摆脱周期性，市场目前基本没有共识\n\n还是回到刚才的框架，三个摆脱传统周期的条件里，DRAM是没有定制化的，所以就只能看技术迭代速度，最关键的还是要看，有没有结构性的指数增长，答案是有的\n\n在 AI token factory 这个概念里，结构性指数增长的确实主要是 HBM。但事情在 2025 年年底之后起了变化：随着 agentic CPU开始释放潜力，CPU 附带的那部分 DRAM 需求，正在成为 DRAM 新的结构性指数增长来源\n\n—------\n\n这部分的增长逻辑分两层：第一层是CPU 服务器TAM的快速增长，第二层是每个服务器CPU core配备的DRAM用量的因为agentic flow快速增长\n\n服务器CPU TAM的快速增长的4个逻辑在4月的CPU专篇详细写过，简单的说：\n\n1. AI 加速器集群里CPU和GPU配比从传统的1：4变成1：2，甚至可能往1：1迈进\n\n2. Agentic flow里CPU处理的延迟占比很高，50~90%成为重要瓶颈，需要同步扩容\n\n3. AI coding让SDE的效率大幅提升，代码量数量级增长，软件API调用指数级增长，直接转化为这部分CPU hours指数级上升\n\n4. Sandbox为保障数据安全与隔离，如Analytical Agent 需为每个任务复制大量数据库和用户上下文，导致内存(DRAM)和CPU核心的严重浪费，而且这个浪费问题五年甚至更久无法解决。另外CPU hours 在技术上很难通过优化的方法来通缩\n\n这也就是为什么，上上个季度，AMD的财报说CPU TAM到2030年会到60B，两个月前，AMD/ARM把CPU TAM的2030年预测翻倍到120B，一个月前，Nvidia再次把CPU TAM的2030年预测翻倍到200B\n\n而上个星期，Bernstein再次提升2030 CPU TAM指引到223B。在我看来，2031 CPU TAM未来上修到400B是没有太大悬念的事情，唯一的悬念是几个巨头会什么时候宣布上修这个指引\n\n再说说第二层，为什么每个服务器CPU core配备的DRAM用量在agentic时代快速增长？\n\n1. Agent 是带状态的长驻进程，不是无状态的请求-响应\n\n传统 web/SaaS 是 stateless 的：请求进来，分配内存，处理完内存立刻回收。而一个 Agent 任务可以跑 一分钟到一个小时，这整段时间里，它的 message history、system prompt、工作记忆、长期记忆、工具结果 buffer 全部常驻 DRAM\n\n和 CPU hours 一样，每个任务的内存足迹因为 stateful 和 sandbox 隔离(每个任务复制数据库和上下文)的要求，技术上很难压缩\n\n2. 上下文窗口在指数级变长，每个会话的工作集随之膨胀，并发度 × 单会话memory footprint，乘数放大\n\ncontext window 从 32K → 256K → 1M，reasoning / test-time compute 的序列长度爆炸，未来还会继续增大。每个活跃会话常驻的 messages 随 context 长度线性增长\n\n现在把两层乘起来。\n\n第一层，CPU server 的 TAM，朝 2030~2031 看大概是 5–7 倍的量级(60B → 120B → 200B → 223B，我认为还会到 400B)\n\n 第二层，每颗 CPU 的 DRAM 配比，大概 3–4 倍(4~8GB → 16~32 GB/core)，但这个增长可能大部分是一次性红利\n\n两个独立变量相乘，server 侧的 DRAM 需求是数量级的增长\n\n2030年，即便按保守的300B CPU TAM，一个CPU core按$50来算，agent时代最保守按16GB/core，这算出来新增量最少都是96EB，而今年的DRAM总产量只有47EB，明年勉强60EB，这是非常惊人的增量\n\n虽然这个agentic CPU带来的DRAM指数级增长，在第二层很大程度上是一次性红利，但持续时间会持续很久很久，因为这个短缺的缺口实在是太大了\n\n—--------\n\n回到文章开头那个框架。三个摆脱传统周期的条件里，第一条DRAM 定制化，基本可以忽略\n\n而第二条：一个结构性指数级、而且很难逆转的需求来源是成立的。commodity DRAM 现在也具备了部分摆脱传统周期性的资格。没有 HBM(两条半)那么彻底，但已经是实质性的变化\n\n第三条，技术迭代速度，DRAM的节奏也跟以前不一样了\n\n因为以前的DRAM技术迭代速度是严重依赖消费电子的，DDR的进步对于performance用处并不大，但可预见的未来里，碳基消费的传统DRAM，会远远小于硅基消费（CPU服务器）DRAM的用量\n\n以前DRAM的速度升级带来的边际效用是很低的，但现在因为CPU服务器对memory的需求增大，以及端侧AI对DDR速度的要求也增大，比如苹果为了跑本地大模型，LPDDR速度越来越快\n\n速度升级的边际效用高了不少，所以DDR6和LPDDR6的速度迭代需求比以前提升了太大了，这在图里也可以看到，LPDDR6/DDR6的迭代时间缩短了，而且速度斜率，重新开始抬头\n\n以前新一代DDR/LPDDR技术出来，大家的反应都很冷淡，等降价了才会用\n\n而现在LPDDR6出来，各家恨不得都在抢着能尽量早上就尽量早，因为速度的提升带来的performance提升是触手可及的\n\n------\n\n另外，DDR 的供给还要被 HBM 额外抽一道税。HBM 每年的扩产速度太快，导致每年都有一批原本可以做 commodity DDR 的 wafer 被拉去做 HBM，而 HBM 的转换比极低，HBM3E 大约要 3 片 DDR wafer 的产能才能做出等量的 bit，HBM4 是4 片。所以每年大约有 3% 到 5% 的 DDR bit 增长，是被这个 HBM bit tax直接吃掉的\n\n所以DRAM bit volume虽然未来每年能增长24%左右（14%来自wafer增长，9%来自每个wafer的DRAM密度增长），但算上HBM bit tax之后，传统的、非 HBM 的 commodity DDR，每年的 bit growth 大概只有 20%（约 10% 的 wafer 增长 × 约 9% 的 node density 提升）\n\n—---------------------\n\n中国长鑫扩产的影响有多大？如果不讲武德拼命扩产，会不会把这个市场重新带入周期泥潭？\n\n长鑫这几年的扩产速度还是很快的，2025年还是每个月20万晶圆，2026年北京晶圆厂及新增生产线的贡献就能到32~35万。\n\n正在建设中的上海工厂一期和二期，一期预计到2027年每月新增10万片晶圆产能，二期预计到2028年每月新增10万片晶圆产能，也就是说，2027年每个月42万晶圆，2028年能到每个月50万晶圆。\n\n但需要注意的是，长鑫的dram bit 密度大概只有御三家的一半左右，所以长鑫的每个月50万晶圆wafer能产出的dram bit volume只有其他家的一半，这里计算wafer per month的时候，就按等效一半来算\n\n把这个折扣打上之后，长鑫对整个DRAM行业的冲击还是小了很多，从2025年年底到2028年年底，长鑫对DRAM bit产能CAGR的影响大概只有1.5%，全行业的DRAM产能CAGR大概从12.7%升到14.2%\n\nDRAM月产能(kwspm) 2025E → 2028E CAGR\n\nSamsung                  685K → 920K  10.3%\nSK Hynix                   519K → 725K  11.8%\nMicron                       340K → 560K  18.1%\n非中国其他               150K → 218K  13.3%\n中国(密度折半)       117K → 274K  32.8%\n—————————————————\n含中国总计   1811K → 2697K  14.2%\n无中国总计   1694K → 2423K  12.7%\n\n就算是长鑫未来还能保持增产速度，2030年对全行业等效产能每年DRAM bit volume增产CAGR的影响，大概也不到3%，从20%  CAGR变成23% CAGR，仅此而已\n\n另外，长鑫被光刻机所限制，而DDR6 需要更高速率（14400 MT/s 起步）和更高密度,御三家做 DDR6 大概率会用 1c 或更先进节点（~12nm 以下），已经全面用 EUV。长鑫可能会在DDR6上速率受限，密度也只有一半。\n\n—----------------\n\n即便是成长性周期，为什么DRAM的这轮超级周期会持续很长时间，起码五年看不到头？\n\n第一个原因是，刚才谈到的CPU服务器需求端的巨量增长带来的结构性DRAM需求指数增长，这里结合DRAM供给端的bit volume CAGR大概稳定20%增长，就可以很清晰的看到，DRAM未来几年的缺口为什么越来越大：\n\n非HBM的传统DRAM供给端大概是每年增长20%，而需求端，按2026年60B CPU TAM，每个CPU消耗DRAM平均8GB/core，每个core $30~35来算，需求是16EB\n\n2030年按400B CPU TAM，每个CPU消耗DRAM平均16GB/core，每个core $80来算(CPU涨价超过一倍)，需求是80EB，这部分DRAM的增长CAGR大概是50%，远远超过目前的估算\n\n不同于HBM是直接和token throughput挂钩，从而和GPU赚钱效率直接挂钩，DRAM不够对于agent flow的影响主要是速度，比如说，8GB/core和16GB/core比起来，部分workload速度可能降低30%，部分低价值task实在要等等也能忍，结构性指数增长的动机很强，但需求不如GPU那么刚性\n\nSemianalysis说今年的DRAM缺口式个位数百分数，明年是超过10%。从agent CPU数量激增导致的DRAM结构性来看，这个缺口每年都会继续加大，在2030年之前看不到降低的可能\n\n—----\n\n另外一个DRAM能延续强势很久的逻辑是，因为DRAM涨价之后，被涨价消灭的那部分需求，不是真的消失了，只是延迟了，需求蓄水池太多了。\n\n所谓蓄水池，是指那些\"内存一旦降价就会立刻被释放出来的潜在需求\"。它们的存在，意味着即便供给阶段性跟上了，价格也很难崩，因为总有新的需求从蓄水池里涌出来接盘：\n\n内存换算力/速度是一个蓄水池：\n\n有大量本来需要靠额外内存来优化速度和算力的需求，在内存太贵时被压着，一旦内存降价就会被释放出来。\n\n比如 Nvidia的CPX  prefill 加速，本来的设计初衷是用额外的低成本GDDR7，来做一个专门的prefill加速器，结果LPDDR/GDDR都太贵了，比涨价前的HBM还贵，这个方案的ROI就不划算了，但等到普通内存降价，这样类似CPX的优化方案就还会回来\n\n低价值task是一个蓄水池：内存涨价导致token价格居高不下时，高价值的 task 被优先保留，低价值的 task 被延后；内存一降价，这些被延迟的需求就回来了。\n\n端侧 AI 是一个蓄水池：AI PC 的内存配置可能从 24GB 一路涨到 128GB。苹果已经明确要求最新的端侧AI满血版需要从8GB升级到12GB内存\n\n常规消费电子、Agent PC、低端手机，因为内存涨价而减少的需求，全都是蓄水池。\n\n 这么多蓄水池叠在一起，构成了一个极厚的需求缓冲垫。这就是为什么 DDR 这轮的结构性增长，后劲会比市场想象的要强。\n\n—-----\n\n还有一个DRAM价格很难大幅下降的原因在于，HBM和DRAM产能可以互相转换，所以整个DRAM complex是一起re-rate的\n\n在上行期DRAM的利润率远超HBM，HBM的涨价幅度甚至变成了由DRAM去推动。今年新签约的HBM4的价格，就是当期DRAM的价格 x 4，也就是正常堆叠倍数对应HBM4的价格\n\n一旦DRAM降价毛利下滑，因为HBM的长约透明性，利润率都是有保障的，HBM就会间接抽走更多的DRAM产能，HBM的降价也会让GPU厂商更有动力尽可能的升级HBM size，这样也间接保障了DRAM的价格地板\n\nDRAM的结构性指数增长的需求有了，density scaling放缓扩产难度在增加，厂商扩产计划都很谨慎，长鑫这几年带来的影响也是有限的，再加上需求的蓄水池非常庞大，这四个原因导致了，在可预见的至少五年甚至更长时间内，DRAM是很难进入周期低谷的。\n\n—--------------\n\nNAND SSD有希望摆脱传统周期性吗？\n\nNAND 的结构性增长动力没有 DDR 那么强，今年的缺货主要原因是几个主要玩家的生产纪律保持的很好，并没有大规模扩产，每年的产能增加主要来源于技术改进：NAND堆叠层数的增加\n\n第一个结构性增长来自AI，主要来自 KV cache 的 offloading，把HBM溢出的warm/cold KV cache 卸载到 NAND SSD上。\n\n但神奇的事情是，这个kv cache offloading的增长甚至还没有大规模发生，SSD就已经缺的比DRAM还严重了，涨价也比DRAM要更多。等到明年Rubin CMX放量，加上KV cache offloading大规模应用，SSD的缺货也会因为这个结构性增长而增长\n\n第二个，另一个去年年度总结里说到的未来可期的AI视频带来的结构性增量，今年已经有出圈的态势了\n\nSeedance体量在以一年十倍到四十倍的速度增长。目前它还卡在缺卡算力不足的阶段，需求被算力压着没完全释放。但等到缺卡阶段过去，AI 视频对NAND存储的结构性需求增长，会持续相当长的一段时间。\n\n第三个结构性增长也同样来自于agent flow带来的Sandbox使用量的指数级增长，Sandbox为保障数据安全与隔离，如Analytical Agent 需为每个任务复制大量数据库和用户上下文，导致内存(DRAM)和CPU核心的严重浪费，同样会带来大量的SSD的浪费（需求）\n\n第四个也许在2030年之后发挥作用的结构性增长，来自于HBF路线需要用到SSD，在不少投行分析中被寄予厚望，但这个技术路线还有些遥远，主要角色定位只能作为存放大模型的weights，写一次权重然后做只读，而且必须要和GPU/HBM封装在一起（48TBps/96TBps），否则靠PCIE7/8速度太慢完全无法用，只能说未来可期，下一篇AI半导体终局推演2026(III)会有更详细的分析\n\n总之，NAND SSD的结构性增长没有HBM那么强，但是胜在便宜，价格到2027年也只有$0.8/GB，是同期DRAM的四十分之一，所以也算是多级缓存里的万金油属性，结构性增长来源太广泛了\n\n也就是说，不存在DRAM/HBM单独涨价繁荣，而SSD不涨价的情况，因为如果这样的情况发生，那么大家就会想办法用SSD去承载DRAM/HBM的部分功能，用更低的成本实现类似的效果。HBM、DRAM、NAND 不是三个独立故事，而是同一 AI memory hierarchy 在不同温度层的结构性增长\n\n结构性指数增长的需求有了，NAND SSD摆脱周期了吗？ 那么就要看NAND SSD厂家的生产纪律了，唯一可能不遵守生产纪律的，只有长存。毕竟这是一个囚徒困境，一旦有一家不讲武德拼命扩产，整个NAND产业要扩产的难度比DRAM简单的多。\n\n但最起码的，这一轮NAND同样是超级周期，几个结构性指数增长带来的需求，下行期推迟到2030年问题不大",
+          "created_at": "Thu Jun 25 06:21:52 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2070029491146268672",
+              "url": "https://pbs.twimg.com/media/HLo42s5bIAA0L5B.jpg"
+            },
+            {
+              "type": "photo",
+              "id": "2070029580996665344",
+              "url": "https://pbs.twimg.com/media/HLo477nbYAAUk_5.jpg"
+            },
+            {
+              "type": "photo",
+              "id": "2070029618774790144",
+              "url": "https://pbs.twimg.com/media/HLo4-IWb0AA33N3.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1503621835136462849",
+            "name": "fin",
+            "screen_name": "fi56622380",
+            "description": "立场不重要，事物的运行逻辑和内在规律才是更值得关注的部分 | \n\n读过三个不同专业的学位，体验过两个大洲的尘世生活，设计过一次火星车芯片，还没有去看过心心念念的冰川",
+            "followers_count": 75282,
+            "friends_count": 507,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 690,
+            "favorite_count": 2370,
+            "reply_count": 200,
+            "quote_count": 91
+          }
+        },
+        "user": {
+          "id": "1503621835136462849",
+          "name": "fin",
+          "screen_name": "fi56622380",
+          "description": "立场不重要，事物的运行逻辑和内在规律才是更值得关注的部分 | \n\n读过三个不同专业的学位，体验过两个大洲的尘世生活，设计过一次火星车芯片，还没有去看过心心念念的冰川",
+          "followers_count": 75282,
+          "friends_count": 507,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 81,
+          "favorite_count": 315,
+          "reply_count": 39,
+          "quote_count": 7
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 81,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2093539751127040157",
+      "text": "Claude 新的一篇博文《How Warp builds self-improving agents on Claude》 https://t.co/CsyjaGY8TC ，看了后还是挺有收获，它解决的是 Skill 的进化问题。\n\n这个问题我以前也研究过，我写了一个反编译 JS 代码的 Skill（https://t.co/y6kA8TDnZ3），每次 Agent 反编译的时候遇到新的场景解决了就自己更新自己的 Skill，效果还不错，能一直优化，就是 Skill 文件越来越大。\n\n我还研究过写作的自我进化 Skill，那个就一言难尽，因为它其实没有自己统一的标准，经常负优化，越写越糟糕。\n\n说回来 Warp 这个，Warp 是一个挺有名的终端工具，内部尝试借助 AI 做 Code Review。一开始让 Agent review 代码，效果并不理想，主要问题体现在 Agent 不了解你的项目，不知道你的团队规范，不知道历史经验教训，就算你指出来问题它下次还记不住。简单来说就是没有记忆。\n\n初期他们采取了很多补救措施：\n- 手动根据失败案例改系统提示词\n- 完善项目的 AGENTS.md 文件（有意思的是这篇文章是 Claude 发的，但是用的是 AGENTS.md 而不是 CLAUDE.md，我记得 Claude 默认不支持 AGENTS.md 的😅）\n\n但效果并不理想，一方面它依赖于人主动去做，成本较高；另一方面团队成员在 Code Review 时人工在 PR 写的高质量评论完全没用上。\n\n所以他们搞了个解决方案，一个基础 Skill 负责做代码审查，一个改进 Skill 负责定期收集人类工程师在代码审查时的评论，尤其是对 Agent 审查结果的评论，根据人类工程师的评论去更新代码审查的 Skill。\n\n换句话说，它不是依赖于模型自己去改进自己，而是 Agent 根据人类对模型结果的标注（人类对代码审查的评论），去改进技能。\n\n只不过它把这个事做的摩擦力极低，不需要人手工去收集整理评论，不需要填写调查问卷，人只要自然的去代码下写评论，后面的事情都是 Agent 自动完成。\n\n这可能正是 Agent 的最佳实践方案之一：人负责高纬度的标注、评论、反馈这些事情，Agent 去做执行的工作，Agent 根据人类的反馈去改进 Skill。\n\n除此之外，他们还总结了一些最佳实践：\n\n1. 写原则，不要写死规则。\n\n编写 skill 时，要像在指导一个聪明人，而不是在给计算机编程。在 Skill 中写“寻找重复代码”，比列出详尽的变量命名规则更有效。\n\n2. 解释为什么。\n说明规则背后的理由，能让智能体针对问题进行推理，而不是机械执行僵化指令，也因此更容易举一反三。\n\n3. 让反馈没有摩擦毫不费力。\n在人们原本工作的地方收集反馈，例如直接评论 PR 或 issue。同时让收集过程自动发生，不要增加额外的提交步骤。低摩擦才能让信号持续流动。如果反馈太麻烦，你就收不到反馈，也就无法改进 Skill。\n\n4. 保持 Skill 精简，并使用渐进式披露。\n优秀的 skill 文件不会很庞大；它会引用资源文件和脚本，而不是一次性把所有内容都塞进上下文。\n\n5. 反馈质量大于数量，但数量也有帮助。\n\n一位资深工程师给出的少量、详细且与领域相关的反馈，可能比大量草率反馈更有价值，因为简单的赞成／反对并不能说明“为什么”。\n\n即使样本量相对较小，只要反馈来自掌握领域知识的人，而且足够详细，你也能得到非常好的信号——这些知识是智能体通过其他方式根本无法获得的。话虽如此，优质信号的语料越多，效果越好。\n\n6. 做好改进 Skill 的 Skill，可以用来改进其他 Skill。\n\n把改进 Skill（也就是前面提到的一个代码审查 Skill 一个改进 Skill）做好，收益不只限于眼前这套 Agent 循环，因为改进 Skill 在不同用例之间具有很高的复用性。除了领域专用知识这一部分，它其实是一套相当通用、可复用的机制。代码审查 Agent 的改进 skill，也可以应用到其他 Skill 的改进上。\n\n可能有人会担心：如果反馈本身是错的呢？\n\nWarp 的做法是永远不让 Agent 盲目接受反馈。给它足够的上下文来做基本的合理性检查，限制谁的反馈有权影响技能更新（不是所有人的意见都同等重要），最后始终保留人在循环中审核改动。\n\n对于那些有明确标准答案的领域，比如代码是否通过了测试、部署是否成功，可以先建一个验证基准，让 Agent 自己对着基准跑。没有标准答案的领域，比如代码风格、文档质量，就靠领域专家的判断，不要开放给所有人随意反馈。",
+      "created_at": "Sat Aug 29 03:22:27 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2093539587096211456",
+          "url": "https://video.twimg.com/amplify_video/2093539587096211456/vid/avc1/1920x1080/k5IgQT1v8ouyVBY9.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 38,
+        "favorite_count": 177,
+        "reply_count": 21,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2093541244903301321",
+      "text": "OpenAI 断供 Cursor，11 月 12 日起停止提供模型\n\nOpenAI 今天宣布终止和 Cursor 的合作，停止向 Cursor 提供 GPT 系列模型，日期定在 11 月 12 日。触发点是两周前 SpaceX 以 600 亿美元完成对 Cursor 的收购。OpenAI 给的理由是，它无法相信马斯克旗下的公司会按服务条款使用它的技术。\n\nOpenAI 在博客里点了两桩旧账。一桩是马斯克收购 Twitter 之后，Twitter 违反了和 OpenAI 签的合同。Twitter 后来并入 xAI，xAI 今年 2 月又并入 SpaceX，所以现在都算 SpaceX 的事。另一桩更近：今年 4 月 30 日，马斯克起诉 OpenAI 的案子开庭，他在证人席上承认 xAI 曾蒸馏 OpenAI 的模型，也就是拿 OpenAI 模型的输出当训练数据来训练 Grok，OpenAI 的服务条款明文禁止这么干。那场官司马斯克在 5 月输了，正在上诉。\n\nOpenAI 和 Cursor 的合同里有一条控制权变更条款，Cursor 易主后 OpenAI 有一个时间窗口可以解约。OpenAI 选了合同允许的最晚日期，给开发者留两个半月缓冲，但从现在起不再给 Cursor 接入新模型。它特别提到了 Astra，这是 OpenAI 本月刚披露的下一代模型，内部评估无法排除它的网络攻击能力达到\"关键\"级别。OpenAI 说，这样的模型交到谁手里、怎么用，它需要比以前更严格的把关。\n\n负责 OpenAI 全部核心产品的 Tibo 在 X 上说，这件事说到底是信任问题。他也给了替代方案：Cursor 用户可以继续绑定自己的 OpenAI API key 调用 GPT 模型，OpenAI 的 Codex 插件也会继续支持在 Cursor 里运行。区别是钱从 Cursor 订阅里出，变成直接付给 OpenAI。\n\n对 Cursor 用户的直接影响：11 月 12 日之后，订阅里的 GPT 模型选项会消失。想继续用 GPT，自带 key 或者装 Codex 插件；不想折腾的，换成 Claude、Gemini、Grok，或者 Cursor 自家的 Composer。\n\nOpenAI 也不是局外人。它 2024 年和 2025 年两次接触过 Cursor 想收购，被拒后转向 Windsurf，那笔交易最后也黄了。它现在的 Codex 和 Cursor 是直接竞品，信任之外，少给对手的产品供货本身就是生意。\n\n接下来最大的变数是 Anthropic。Claude 一直是 Cursor 里用得最多的模型，Anthropic 到现在没有表态。它有跟进的先例：去年 6 月 OpenAI 传出要收购 Windsurf，Anthropic 几天内就切断了 Windsurf 的 Claude 接入，联合创始人 Jared Kaplan 的原话是“把 Claude 卖给 OpenAI 太奇怪了”。\n\n今年 1 月，xAI 工程师通过 Cursor 调用 Claude 做竞品研究被发现，Anthropic 封了 xAI 的访问。但它也有不跟进的理由：今年 5 月 Anthropic 租下 SpaceX 的 Colossus 1 整个集群，22 万张 GPU，Claude Code 限额翻倍就靠这批算力。",
+      "created_at": "Sat Aug 29 03:28:23 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2093515564786540695",
+        "text": "We’re ending our partnership with Cursor following its acquisition by SpaceX. Under our proposal, Cursor’s direct access to our models would end on November 12.\n\nWe know that the people most affected by this decision are the developers who rely on OpenAI models in Cursor. We care about their experience in this transition and we’re ready to go above and beyond to support them.\n\nhttps://t.co/OzuCTzUjfX",
+        "created_at": "Sat Aug 29 01:46:20 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 5134512,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1559,
+          "favorite_count": 14853,
+          "reply_count": 1945,
+          "quote_count": 2401
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 36,
+        "reply_count": 18,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2093552273443922325",
+      "text": "怎么感觉 Anthropic 和 OpenAI 对调了😂\n\nOpenAI 宣布断供 Cursor 后不到两小时，Anthropic 联合创始人、首席算力官（Chief Compute Officer）Tom Brown 在 X 上回应：Cursor 从 2024 年的 Sonnet 3.5 时代起就是 Anthropic 信任的合作伙伴，Anthropic 会继续增加算力支持 Cursor 里的 Claude 模型，也期待 Cursor 在 SpaceX 的下一步。",
+      "created_at": "Sat Aug 29 04:12:12 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2093541294027280657",
+        "text": "Cursor has been a trusted partner of Anthropic since Sonnet 3.5. We’ll continue to increase compute to support Claude models in Cursor and are excited for what comes next with them at SpaceX.",
+        "created_at": "Sat Aug 29 03:28:35 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "51590414",
+          "name": "Tom Brown",
+          "screen_name": "NotTomBrown",
+          "description": "Co-founder and Chief Compute Officer @AnthropicAI",
+          "followers_count": 39151,
+          "friends_count": 446,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 240,
+          "favorite_count": 5070,
+          "reply_count": 258,
+          "quote_count": 190
+        }
+      },
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 189,
+        "reply_count": 80,
+        "quote_count": 8
+      }
+    },
+    {
+      "id": "2093552738797863298",
+      "text": "说的在理，当年断供 Windsurf 大家还没忘记呢\nhttps://t.co/Lmn8HuY3WR",
+      "created_at": "Sat Aug 29 04:14:03 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2093543108491530308",
+        "text": "@NotTomBrown Maybe you changed your ways, but we all remember what you did to Windsurf, which was infinitely nastier.  More likely answer is that you can’t do that here because you need the compute.",
+        "created_at": "Sat Aug 29 03:35:47 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "166138615",
+          "name": "Amjad Masad",
+          "screen_name": "amasad",
+          "description": "ceo @replit. civilizationist",
+          "followers_count": 485708,
+          "friends_count": 1558,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 59,
+          "favorite_count": 2141,
+          "reply_count": 52,
+          "quote_count": 21
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 44,
+        "reply_count": 2,
         "quote_count": 0
       }
     }

@@ -1,0 +1,151 @@
+{
+  "user": {
+    "screen_name": "elonmusk",
+    "name": "Elon Musk",
+    "description": "https://t.co/ZdBx5WABYx",
+    "followers_count": 241476172,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260829",
+  "last_updated": "2026-08-29T01:25:10.631544",
+  "tweet_count": 3,
+  "tweets": [
+    {
+      "id": "2093508852268285961",
+      "text": "RT @cb_doge: BREAKING: SpaceXAI has released a major new update for Grok Build (v1.0.13).\n\nThe update improves reliability with automatic r…",
+      "created_at": "Sat Aug 29 01:19:40 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2093481818544844864",
+        "text": "BREAKING: SpaceXAI has released a major new update for Grok Build (v1.0.13).\n\nThe update improves reliability with automatic retries and recovery from truncated responses, inference failures, oversized images and session-saving issues.\n\nIt also adds smarter hooks, better Windows support, faster MCP and session startup, improved scheduled tasks and quicker compressed CLI downloads.\n\nFeatures\n\n• Length-truncated responses now continue automatically instead of failing the turn.\n• Hooks can now ask the user to confirm a tool call instead of always allowing or denying.\n• Hooks can now request deferral or add context shown to the model after a tool runs.\n• Session close now records detailed timing data for performance analysis.\n• Credit limit upsell now offers a Try Again button to retry the last prompt.\n• Pasted images now show a live pixel preview in the prompt box on iTerm2.\n\nBug Fixes\n\n• Transient inference failures (stalls, drops, 5xx) now retry automatically instead of ending the turn.\n• Windows users can now correctly open ~/.grok and worktree sessions.\n• Session data is now more reliably saved after prompts and on power loss.\n• Compaction failures now show the actual error instead of a generic message.\n• Truncation error messages now show the right guidance instead of suggesting an unhelpful retry.\n• Truncated tool calls are now executed instead of failing the turn when arguments are complete.\n• Images larger than 2000px no longer brick sessions on many-image requests.\n• Wrapped hyperlinks in the pager now remain fully clickable on Windows Terminal instead of only the first line.\n• Recurring scheduled tasks now include a reminder to stop the monitor when work finishes.\n• Scheduled task IDs are now full UUID strings, preventing collisions when tasks are created in the same millisecond.\n\nPerformance\n\n• Subagent spawning is faster when connections drop during bursts.\n• Session startup with MCP servers is now much faster when auth is already configured.\n• MCP server startup no longer stalls behind a fixed batch size.\n• CLI downloads are now compressed, making fresh installs and updates substantially faster.\n\nDownload Grok Build: https://t.co/cB9Y5CyF8v\n\nUpdate to the latest Alpha release: grok update --alpha  \n\nUpdate to the latest Stable release: grok update",
+        "created_at": "Fri Aug 28 23:32:15 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2093481341329592320",
+            "url": "https://video.twimg.com/amplify_video/2093481341329592320/vid/avc1/1080x1080/nYl2N-795qv7Jhjn.mp4?tag=29",
+            "bitrate": 8768000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1897750,
+          "friends_count": 1039,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 54,
+          "favorite_count": 393,
+          "reply_count": 48,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 54,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2093508933944062247",
+      "text": "🔥😂",
+      "created_at": "Sat Aug 29 01:20:00 +0000 2026",
+      "lang": "art",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2093452947770446173",
+        "text": "Giving Grok Bot my corporate card and telling it to “maximize shareholder value” https://t.co/9giXJwvxMj",
+        "created_at": "Fri Aug 28 21:37:31 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2093452944943599616",
+            "url": "https://pbs.twimg.com/media/HQ1wXKFb0AAstdt.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "922955517030408192",
+          "name": "Justine Moore",
+          "screen_name": "venturetwins",
+          "description": "Partner @a16z AI 🤖 and twin to @omooretweets | Investor in @elevenlabs, @bfl_ml, @hedra_labs, @krea_ai, @heyglif, @ShizukuAILabs, @wabi, @TownAI",
+          "followers_count": 239518,
+          "friends_count": 989,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5,
+          "favorite_count": 156,
+          "reply_count": 19,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 75,
+        "favorite_count": 741,
+        "reply_count": 189,
+        "quote_count": 10
+      }
+    },
+    {
+      "id": "2093509592873390307",
+      "text": "It’s a function of SF Bay Area political views. \n\nGrok is California plus Texas, so more centered.",
+      "created_at": "Sat Aug 29 01:22:37 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2093486081207366058",
+        "text": "This is very very problematic. https://t.co/jkKSQkos5Q",
+        "created_at": "Fri Aug 28 23:49:11 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2093486072592220160",
+            "url": "https://pbs.twimg.com/media/HQ2OfcMWQAAskRd.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1011008340367953920",
+          "name": "Wilfred Reilly",
+          "screen_name": "wil_da_beast630",
+          "description": "A Serious Intellectual now, I was an executive, activist, student, and poor kid. \nButlerian Jihad today!\nhttps://t.co/EcIgfTo5ml \nhttps://t.co/EIg5asLMfy",
+          "followers_count": 181288,
+          "friends_count": 3866,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 24,
+          "favorite_count": 217,
+          "reply_count": 33,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 21,
+        "favorite_count": 191,
+        "reply_count": 57,
+        "quote_count": 2
+      }
+    }
+  ]
+}

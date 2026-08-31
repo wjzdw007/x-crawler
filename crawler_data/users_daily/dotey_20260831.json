@@ -1,0 +1,93 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 244170,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260831",
+  "last_updated": "2026-08-31T03:08:18.338115",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2094243627123744937",
+      "text": "如今 Vibe Coding 盛行，然而就算是用 AI 写代码，也少不了要考虑如何划分好模块、保障低模块之间耦合以及系统的拓展性。\n\n如何划分好模块这些事是传统软件工程和架构设计范畴，但你做好了的话，AI 生成的代码质量更高系统也更稳定。\n\n很多新手对于如何划分模块并没有什么概念，甚至很多编程老手也只是直觉知道怎么分，但也讲不出个所以然。\n\n一句话：模块按“什么会变”来分，不是按“先做什么后做什么”来分\n\n新手容易犯的一个错误是按照流程来划分模块。\n\n拿电商网站来说，购物流程是：用户下单，先收到请求，再算钱，再扣款，再存库，再发邮件。\n\n如果你把每个步骤拆成一个模块，当然可以，但是这其实并不利于后续的维护。\n\n顺着步骤分，改动会顺着步骤一路扩散。举个例子，你想给订单加一个“预计送达时间”，收到请求要处理这个字段、算运费要用到它、存库要存下来、发邮件要显示它，四个步骤都会受影响，如果不小心漏掉一个地方还会出问题。\n\n好的做法是：先列出将来最可能变的东西，然后把每一个会变的东西放到一个模块里，外面的人看不到它是怎么实现的，把信息隐藏起来。\n\n比如说前面那个购物的例子，电商网站里会变的东西有：\n- 支付渠道（今天支付宝，明天加微信，后天做海外要接 Stripe）\n- 优惠规则（运营隔三差五改一次）\n- 通知方式（邮件、短信、App 推送）\n- 数据存哪里（MySQL 换 PostgreSQL）。\n\n这么分下来，支付、优惠、通知这些都可以单独做成模块，各自的变化都只影响自己的模块，不会影响其他地方。比如说你要给数据库加一层缓存，只要改数据存储模块就好了，其他模块都不受影响。\n\n要是你觉得太复杂，也可以简单的按业务功能分，因为会一起变的东西通常就属于同一个功能，所以按功能分一般不算错。\n\n但不要按步骤分模块，这样会把本来应该放在一起的生生按照顺序拆开了。\n\n判断标准很简单：一个需求改动来了，你需要动几个模块？理想情况是一个。\n\n要是运营改个优惠规则要同时动好几个文件，说明模块分错了。\n\n按照这种“什么会变”的方式拆分模块对 AI 来说也是最友好的，因为 AI 本来就受限于上下文窗口长度，如果一个变更只要在一个模块内部就能解决，那么需要的上下文会少很多。",
+      "created_at": "Mon Aug 31 01:59:24 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2094133227627622605",
+        "text": "越是编程经验丰富，越是不放心放手让 AI 去代码和验证，很像带实习生或者带新人，总担心别人把代码库搞坏了，其实人家技术挺好的。\n\n我真正放手让 AI 去写代码不怎么看代码是在我不熟悉的领域。\n\n前不久我开始用 AI 写 Swift + AppKit 代码，就属于我不熟悉的领域，没办法只能让 AI 去写，虽然也看得懂但是毕竟没那么专业不觉得比 AI 写的更好。\n\n慢慢的发现 AI 写的质量挺好的，很多细节没太有必要去纠结，只要整理在功能、安全、性能上没啥问题就好，甚至维护都可以 AI 自己维护。\n\n所以我现在基本不看 AI 写的代码，只是 high level 看看，写完了测试一下没问题就放行了。\n\n当然一些架构的划分、模块设计还是我和 AI 一起讨论后定下来的，这些定下来后续能省心不少。",
+        "created_at": "Sun Aug 30 18:40:43 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 244170,
+          "friends_count": 1711,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 104,
+          "reply_count": 23,
+          "quote_count": 7
+        }
+      },
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 62,
+        "reply_count": 12,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2094257794866094083",
+      "text": "手写代码、手搓提示词、认真看 AI 写的代码，这都是手段，目的是软件质量，而达到目的还有更多其他手段\n\n像这种写提示词的场景，并不一定要手搓提示词，如果整理好测试数据集，设置好基准线，反复测试并给 AI 有价值的反馈，用 AI 写应该会比人写的更好\n\n写代码也是类似，定义好架构，做好自动化测试覆盖，AI 完成后人去做功能验证，测试性能和安全性，质量也可以有比较好的保障。",
+      "created_at": "Mon Aug 31 02:55:42 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2094253621294850226",
+        "text": "深有同感，可是套到自己身上就有很多个「但是」了。\n\n最近在做AI 视频，到了文生图这一阶段，如果让 AI 一路走到底，那收到的就是添加的账单和一堆烂图。可要是手搓提示词，一行行的看，能把我脑子给炸了……",
+        "created_at": "Mon Aug 31 02:39:07 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "803962614",
+          "name": "Ethan",
+          "screen_name": "ethanjtch",
+          "description": "Be a maker, not a marketer.",
+          "followers_count": 89,
+          "friends_count": 658,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 5,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

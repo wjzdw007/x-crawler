@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 244857,
+    "followers_count": 244880,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260902",
-  "last_updated": "2026-09-02T14:03:56.693523",
-  "tweet_count": 14,
+  "last_updated": "2026-09-02T19:11:56.388859",
+  "tweet_count": 17,
   "tweets": [
     {
       "id": "2094961457544720643",
@@ -533,6 +533,141 @@
         "retweet_count": 0,
         "favorite_count": 2,
         "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2095214013693243806",
+      "text": "基本上你只要让 Fable 指挥其他 Agent 干活，这两个进度条就能持平。\n\n大部分任务你选 Fable + High（或者Medium，千万别Max及以上），然后后面加一句：\n> 注意你的主要任务是分析、编排和验证，具体任务尽可能交给 subagent（Opus 或 Sonnet）去执行。自己只做需求澄清、方案拆解、任务分发和结果验收，实现类工作（读大量代码、写代码、跑测试、批量修改）一律用 Agent 工具派给 subagent 执行。",
+      "created_at": "Wed Sep 02 18:15:22 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2095114755879190638",
+        "text": "另一个 Claude Code token 管理技巧：看 /usage 时，把周度总消耗和 Fable 周度消耗两条进度条尽量对齐。\n\nFable 更贵、更聪明，但是额度只有总额度的 50%，很容易出现两种失衡：\n\nFable 条已经 70%，总用量才 40%，智力额度见底，后面只能强行降智\n总用量 70%，Fable 才 20%，便宜模型烧得太猛，最强模型的窗口反而被浪费了\n\n对齐也不必机械对半，找一个自己感觉比较良好的比例，而是让周额度和Fable额度大致成比例下降即可，一些性价比高的落地做法：\n\n主会话用 Fable 做判断、架构、拆任务、复盘；执行、检索、改文件、跑测试丢给  Opus 子代理。\n\n任务切换就 /clear，长任务中途 /compact。\n\n每天看几次进度条，Fable 超前就减少 Fable 使用强度；总进度条超前就多把一些关键决策交回 Fable。\n\n实测下来，这种节奏能让智力密度和额度一起走到重置日，达到一个最佳的状态。",
+        "created_at": "Wed Sep 02 11:40:57 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2095113112181714944",
+            "url": "https://pbs.twimg.com/media/HRNWRm_asAA852x.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1125309529145524224",
+          "name": "WquGuru",
+          "screen_name": "wquguru",
+          "description": "AI+量化+工程 \nAI/Invest/Biz/Ship资讯→https://t.co/WmkVbbvE92\n打造Agent PoC→https://t.co/pg7QEz0fGp\n📮 hello@wqu.guru",
+          "followers_count": 19973,
+          "friends_count": 536,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 4,
+          "reply_count": 4,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 31,
+        "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2095216535119843747",
+      "text": "看起来 gpt-6-astra 要发了",
+      "created_at": "Wed Sep 02 18:25:23 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2095184148981842161",
+        "text": "🚨 BREAKING: \"gpt-6-astra\" has been staged on the OpenAI API\n\nThe OpenAI Responses API now returns a 404 Not Found for \"gpt-6-astra\", where garbage/actually non-existent slugs return 400s - a 404 is also returned for 5.6 Cyber, which we know exists.\n\nA similar quirk exists in the Bedrock API used to find Fable 5.1 a day prior to launch.",
+        "created_at": "Wed Sep 02 16:16:42 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2095184140005949441",
+            "url": "https://pbs.twimg.com/media/HROW3-QWQAEJdI3.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1560927015334805504",
+          "name": "leo 🐾",
+          "screen_name": "synthwavedd",
+          "description": "tech, ai & politics nerd || got info you think i'd be interested in? let's talk! sywv.tips@proton.me || dono: https://t.co/WxQgF8aVkI",
+          "followers_count": 38722,
+          "friends_count": 2663,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 139,
+          "favorite_count": 2402,
+          "reply_count": 100,
+          "quote_count": 119
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 10,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2095226242890940567",
+      "text": "RT @latepostnews: 晚点独家丨月之暗面向港交所秘密交表，正式启动 IPO\n\n《晚点 LatePost》独家获悉，月之暗面（Kimi）已于本周以保密形式向港交所递交 A1 文件，正式启动港股 IPO 流程。A1 是企业申请在港交所上市时提交的正式申请表之一。\n\nK…",
+      "created_at": "Wed Sep 02 19:03:58 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2095142540660093315",
+        "text": "晚点独家丨月之暗面向港交所秘密交表，正式启动 IPO\n\n《晚点 LatePost》独家获悉，月之暗面（Kimi）已于本周以保密形式向港交所递交 A1 文件，正式启动港股 IPO 流程。A1 是企业申请在港交所上市时提交的正式申请表之一。\n\nKimi 方面回应上述消息称：“对于市场传闻不予置评，目前暂无可以披露的信息。”\n\n同时据我们了解，Kimi 也正在以 500 亿美元的投前估值推进新一轮融资。这很有可能是 Kimi IPO 前的最后一轮融资。",
+        "created_at": "Wed Sep 02 13:31:22 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2095142524419751936",
+            "url": "https://pbs.twimg.com/media/HRNxBoHawAAL9Dm.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1988875519623155712",
+          "name": "晚点 LatePost",
+          "screen_name": "latepostnews",
+          "description": "AI｜科技｜商业\n晚一点，好一点。商业的真相总是在晚点。\n《晚点 LatePost》官方账号",
+          "followers_count": 13087,
+          "friends_count": 23,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 9,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

@@ -1,0 +1,212 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 244729,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260902",
+  "last_updated": "2026-09-02T02:32:26.967141",
+  "tweet_count": 6,
+  "tweets": [
+    {
+      "id": "2094961457544720643",
+      "text": "现在用 Claude Code 差不多就是这样，用不了一会就会达到 5 小时的限额，即使你是 Max@20。然后你的 Fable 很快就会到 100%，只剩下鸡肋一样的 Opus 5。 https://t.co/jWsGEBDsDS",
+      "created_at": "Wed Sep 02 01:31:48 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2094961098436849664",
+          "url": "https://pbs.twimg.com/media/HRLMBPqXMAAxufD.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2094893094823149726",
+        "text": "Claude limits are ridiculous!\n\nFable 5.1 will drain your 5 hour limit in less than 30 minutes!\n\nBoth 5x and 20x users are reporting similar stats. https://t.co/G8hPEI5suF",
+        "created_at": "Tue Sep 01 21:00:09 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2094893088842088448",
+            "url": "https://pbs.twimg.com/media/HRKOKkLagAAAgAL.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "986205304269484033",
+          "name": "Shikhar",
+          "screen_name": "xikhar",
+          "description": "I talk about tech and AI\nMake cool things",
+          "followers_count": 5233,
+          "friends_count": 876,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 66,
+          "favorite_count": 1422,
+          "reply_count": 198,
+          "quote_count": 46
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 29,
+        "reply_count": 16,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2094964831061155845",
+      "text": "一个让你 Claude 的 Token 更耐用的经验：禁用 1M 上下文，尤其是在用 Fable 5.1 的时候很明显。\n\n~/.claude/settings.json\n\n\"env\": {\n  \"CLAUDE_CODE_DISABLE_1M_CONTEXT\": \"1\"\n} https://t.co/jS4FumeVWc",
+      "created_at": "Wed Sep 02 01:45:12 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2094964806730035201",
+          "url": "https://pbs.twimg.com/media/HRLPZGIWsAE_p_I.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 36,
+        "reply_count": 16,
+        "quote_count": 7
+      }
+    },
+    {
+      "id": "2094972332544520417",
+      "text": "官方建议：Fable 5.1 由于缓存价格大幅下降，不需要频繁用 /compact 压缩，这样更便宜。\n\n（但是我实测效果并不如 200k 自动压缩。）\n\n另外如果缓存已经失效（Claude Code官方订阅是1小时），那么使用 /compact 会成本很高。 https://t.co/aAQmsxSFnJ",
+      "created_at": "Wed Sep 02 02:15:01 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2094970197530595331",
+          "url": "https://pbs.twimg.com/media/HRLUS4bXUAMzGKG.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2094972106312200195",
+          "url": "https://pbs.twimg.com/media/HRLWB_MXMAMnyqW.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2094967432427212881",
+        "text": "@dotey 想问一下宝玉老师，多轮长对话不压缩和多次压缩上下文哪一种更省token呢，我压缩过几次发现额度也掉不少，现在是多轮用到7、800k之后开新对话",
+        "created_at": "Wed Sep 02 01:55:33 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1226517297419837440",
+          "name": "Neko",
+          "screen_name": "Catcappuccino1",
+          "description": "",
+          "followers_count": 4,
+          "friends_count": 31,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 6,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2094972456607862977",
+      "text": "/autocompact 200k\n更简单些\nhttps://t.co/CzaDFCmwmr",
+      "created_at": "Wed Sep 02 02:15:31 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2094966833589739606",
+        "text": "@dotey 把auto compact的threshold设置到500K不是更方便？上下文长了本来就会变笨，所以早就这么干了",
+        "created_at": "Wed Sep 02 01:53:10 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "114477484",
+          "name": "Colasama",
+          "screen_name": "Colasama",
+          "description": "Trader. Sharing on-/off-chain data, in the human centipede of infomation chain.",
+          "followers_count": 4059,
+          "friends_count": 1246,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2094972821738799117",
+      "text": "我有两台电脑两个cc账号，今天重置后一起开始猛蹬，刚开始一个开了1m一个禁了1m，token用量消耗差别非常明显，后来消耗快的那个关掉了1m上下文，消耗速度马上下来了",
+      "created_at": "Wed Sep 02 02:16:58 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2094974967901278404",
+      "text": "这个缓存折扣是针对 API 的，订阅用户并没有享受这个折扣 https://t.co/liqs1yArWF",
+      "created_at": "Wed Sep 02 02:25:29 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2094974855309373443",
+          "url": "https://pbs.twimg.com/media/HRLYiAAXMAMuz4Z.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

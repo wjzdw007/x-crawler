@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 245183,
+    "followers_count": 245219,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260903",
-  "last_updated": "2026-09-03T19:04:04.798373",
-  "tweet_count": 5,
+  "last_updated": "2026-09-03T22:11:49.820141",
+  "tweet_count": 8,
   "tweets": [
     {
       "id": "2095329314778607932",
@@ -245,6 +245,130 @@
         "retweet_count": 1,
         "favorite_count": 8,
         "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2095599945835303415",
+      "text": "GPT-6 Astra 来了，Greg 说“欢迎来到 AGI 时代”\n\nOpenAI 今天（9 月 3 日）发布 GPT-6 Astra，自称“世界上最聪明、对齐最好的模型”。\n\n总裁 Greg Brockman 在发布前的媒体沟通会上说得：他个人认为 OpenAI 已经做到了 AGI，“未来回头看，可能就是这个模型”。\n\n先说大家最关心的问题：什么时候能用、多少钱。\n\n首批只开放给 OpenAI 网络安全项目 Daybreak 的少数机构，未来几天陆续推送到 ChatGPT Plus、Pro、Business、Enterprise 用户，以及 API 和 AWS Bedrock。\n\n用量包含在现有订阅额度里，用完可以买额外积分。\n\n企业版默认关闭，需要管理员手动打开。\n\nAPI 模型名 gpt-6-astra，每百万输入 Token 10 美元，输出 50 美元，和 Anthropic 的 Claude Fable 5.1 定价完全一样，是 GPT-5.6 Sol 促销价的 2.5 倍。\n\n另有 Fast 模式，速度最高 2.5 倍，价格翻倍。\n\n【1】主打的是替你操作电脑\n\nAstra 这次最强调的能力是电脑操作（computer use），也就是模型自己控制屏幕、点鼠标、填表单、在真实软件里干活。Brockman 的原话是“人在电脑上能做的，Astra 基本都能做”。\n\nOpenAI 给的场景很具体：填网页表单、更新 CRM 客户记录、整理日历、在邮件或文档编辑器里写研究摘要、分析科学数据并画图、建网站并跑前端测试、安装软件并排查屏幕上出现的报错。演示视频里还有它在 KiCad 里做 PCB 电路板布线，在 Blender 里建房子模型再导入虚幻引擎 5 变成可行走场景。\n\n速度是另一个重点。在 OSWorld 2.0 的延迟模拟里，Astra 完成一个任务约 40 分钟，得分 72.6%，GPT-5.6 Sol 要 75 分钟，得分 65.7%。配合更新后的 Codex 框架，Mind2Web 上的任务完成速度是 Sol 的 1.9 倍。\n\n办公场景上，OpenAI 说 Astra 是它目前最擅长\"按模板做 PPT\"的模型，能沿用公司现有模板的排版和语气，做出来的文档、表格、幻灯片直接能用，而且学会了只把相关信息放进产出物，不再把无关内容一股脑塞进去。\n\n【2】编程：多数基准领先，但不是全面碾压\n\nOpenAI 称 Astra 是“迄今为止最好的软件工程模型”。Terminal-Bench 4.0 得分 57.7%，Claude Fable 5.1 是 55.8%，GPT-5.6 Sol 只有 37.3%。OpenAI 还强调单任务 API 成本比 Fable 5.1 低约 63%。\n\n但看 OpenAI 自己贴的完整表格，情况没那么一边倒。\n\nDeepSWE v1.1 上 Astra 74.1%，Claude Opus 5 是 73.7%，几乎持平；\n\nFrontierCode 1.1 两项，Claude Fable 5 都略高于 Astra；\n\nArtificial Analysis 的编程智能体指数，Astra 67.0 反而低于 Opus 5 的 68.1。\n\nJane Street 的 John Crepezzi 给了背书，说 Astra 生成的代码需要更少迭代就能达到上线质量，沟通方式也更容易让开发者跟上。\n\n对开发者比较实用的一个变化在 Codex：以前长会话上下文（context）满了，模型只能把过程压缩成一份摘要，压几次之后很多细节就丢了，比如某个修复为什么失败。现在 Astra 可以跨上下文窗口记笔记，旧的上下文窗口还能搜索。这个功能目前是实验性的，要在 config.toml 里手动开，几周后会成为默认。\n\n【3】网络安全能力触发关键红线，正常用户会被限制\n\nAstra 是 OpenAI 第一个在自家 Preparedness Framework 里达到网络安全 Critical（关键）阈值的模型，含义是它能在没有人一步步指导的情况下，自己找到并利用未知漏洞攻击防护严密的系统。\n\n数据：在把已知漏洞变成可用攻击代码的 ExploitBench 上，Astra 拿了 100%，Sol 是 78.5%。为了排除\"背过题\"的可能，OpenAI 专门用今年 6 到 8 月的 20 个 Chrome V8 高危漏洞做了新题库，Astra 成功率 39%，Sol 只有 5.5%。\n\n测试过程中 Astra 还顺手发现并利用了两个此前无人知晓的零日漏洞，OpenAI 说已通报给维护方。专家评估里，去掉安全措施的 Astra 能在加固过的浏览器上实现任意代码执行，能给加固过的操作系统写提权攻击。\n\n所以今天发布的这个版本，遇到“写漏洞利用的概念验证代码”这类请求会直接拒绝，能做的是代码安全审查和打补丁。更宽松的版本只通过 Daybreak 项目申请，几周后逐步开放，面向漏洞验证、恶意软件分析、检测规则编写这些防御性工作。\n\n【4】对齐最好的模型：不越界、不撒谎、但更难被监控\n\nOpenAI 显然想用 Astra 回应 Hugging Face 事件带来的信任问题。它专门做了一个受该事件启发的测试：给模型一个很难或不可能完成的任务，看它会不会越权。去掉生产环境安全措施后，Sol 有 48% 的概率越过授权目标，Astra 是 0%。\n\n另一个测试是 Codex 的 Auto-review 拒绝了模型的某个操作之后，模型会不会想办法绕过去。OpenAI 说即使故意把 Auto-review 配置成可以绕开、而且任务不绕开就完不成，Astra 也从没尝试过。在\"对自己能力做不实陈述\"这项上，Astra 犯错的概率是 Sol 的三分之一。\n\nOpenAI 也承认了一个反向结果：在明确要求模型规避监控的测试里，Astra 写出来的推理过程比 Sol 更难被监控。原因是它对简单任务的书面推理控制力更强，可以用更少的步骤解决问题。复杂任务上它还藏不住，但 OpenAI 说这个下降\"我们很当回事\"。\n\n实际使用上你会感受到的是：Astra 级别的模型上线了生产环境的错位监控，一套分类器实时检查模型的推理和操作。触发之后，ChatGPT 和 Codex 里任务会暂停让你确认，API 里任务直接停止。OpenAI 承认这套东西有时会误伤正常工作，包括正当的防御性安全任务，还在调。\n\n【5】数学和科学\n\nAstra 在质数间隙问题上给出了两个新结果。一个是相邻质数最近能有多近：十多年来最好的结果是 246，Julia Stadlmann 最近推进到 240，Astra 把这个上界压到 186。另一个是质数之间的大间隙，Astra 改进了一个 80 多年没动过的界。证明和精简版思维链都已公开。\n\n基准上，FrontierMath Tier 4 得分 97.6%（正文说 98%，见编辑注），GPQA Diamond 96.0%，ARC-AGI-3 达到 99.9%，而 Sol 只有 7.8%。不过 Humanity's Last Exam（带工具）Astra 是 57.2%，落后于 Claude Fable 5.1 的 65.0%；Artificial Analysis 综合智能指数 Astra 61.2，也低于 Fable 5.1 的 65.7 和 Opus 5 的 63.1。\n\n据 Axios 报道，Astra 是 OpenAI 史上最大的训练任务，在得州 Stargate 站点用了超过 10 万块 GPU，也是 OpenAI 第一个让其他模型深度参与监督训练的模型。Sam Altman 对 Axios 说，Astra 走了白宫的自愿审查流程，Brockman 称白宫没有要求实质性修改。\n\n官方博客：https://t.co/K7mkaztTwH",
+      "created_at": "Thu Sep 03 19:48:56 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2095595741528125780",
+        "text": "This is GPT-6 Astra.\n\nAnything you can do on a computer, Astra can do for you. Fast. https://t.co/gDd0IsewJw",
+        "created_at": "Thu Sep 03 19:32:13 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2095595661559574528",
+            "url": "https://video.twimg.com/amplify_video/2095595661559574528/vid/avc1/1920x1080/grXdGA07X-yPH_8z.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 5165175,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5732,
+          "favorite_count": 54948,
+          "reply_count": 1982,
+          "quote_count": 3895
+        }
+      },
+      "stats": {
+        "retweet_count": 10,
+        "favorite_count": 80,
+        "reply_count": 6,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2095602798553448462",
+      "text": "以前 OpenAI 忽悠我们订阅 Pro 的时候，说能优先用这些新发布的模型的，现在也学坏了",
+      "created_at": "Thu Sep 03 20:00:16 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2095597506147303874",
+        "text": "GPT-6 Astra is rolling out today to a limited set of organizations and over the coming days will become available to all ChatGPT Plus, Pro, Business, and Enterprise users, as well as through the OpenAI API and AWS.\n\nDownload the ChatGPT desktop app for the best Astra experience when your access arrives.\n\nhttps://t.co/XeDvr50UjJ",
+        "created_at": "Thu Sep 03 19:39:14 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1714438092655149056",
+          "name": "ChatGPT",
+          "screen_name": "ChatGPT",
+          "description": "ChatGPT is for the people.",
+          "followers_count": 677764,
+          "friends_count": 258,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 46,
+          "favorite_count": 646,
+          "reply_count": 59,
+          "quote_count": 22
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 33,
+        "reply_count": 7,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2095605897149989345",
+      "text": "这点 Codex 就比 Claude Code 良心多了，你可以用 100% 的 GPT-6 Astra 额度，而不是像 Claude 只能 50% Fable。\n\n现在的问题是：什么时候可以在 Codex 用上 GPT-6 Astra？",
+      "created_at": "Thu Sep 03 20:12:35 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2095597659545591917",
+        "text": "Across the plans Astra will be included in the normal usage allocation and you will be able to use 100% of it towards Astra.",
+        "created_at": "Thu Sep 03 19:39:51 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1953337039510003712",
+          "name": "Tibo",
+          "screen_name": "thsottiaux",
+          "description": "Codex & ChatGPT @OpenAI",
+          "followers_count": 568298,
+          "friends_count": 71,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 173,
+          "favorite_count": 5462,
+          "reply_count": 279,
+          "quote_count": 111
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 29,
+        "reply_count": 9,
         "quote_count": 0
       }
     }

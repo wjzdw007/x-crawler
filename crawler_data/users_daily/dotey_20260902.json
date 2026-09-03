@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 244883,
+    "followers_count": 244890,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260902",
-  "last_updated": "2026-09-02T22:18:49.769321",
-  "tweet_count": 17,
+  "last_updated": "2026-09-03T02:39:48.855930",
+  "tweet_count": 20,
   "tweets": [
     {
       "id": "2094961457544720643",
@@ -669,6 +669,157 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2095277585500410302",
+      "text": "用 Fable 指挥其他 Agent 效果很好是因为它给 \n 的指令很详细，基本上不会出什么岔子 https://t.co/72Lvxzpneh",
+      "created_at": "Wed Sep 02 22:27:59 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2095277385763479553",
+          "url": "https://pbs.twimg.com/media/HRPrrlxXYAEiaqp.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2095214013693243806",
+        "text": "基本上你只要让 Fable 指挥其他 Agent 干活，这两个进度条就能持平。\n\n大部分任务你选 Fable + High（或者Medium，千万别Max及以上），然后后面加一句：\n> 注意你的主要任务是分析、编排和验证，具体任务尽可能交给 subagent（Opus 或 Sonnet）去执行。自己只做需求澄清、方案拆解、任务分发和结果验收，实现类工作（读大量代码、写代码、跑测试、批量修改）一律用 Agent 工具派给 subagent 执行。",
+        "created_at": "Wed Sep 02 18:15:22 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 244890,
+          "friends_count": 1714,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 46,
+          "favorite_count": 309,
+          "reply_count": 35,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 91,
+        "reply_count": 5,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2095282572016095352",
+      "text": "如果你想试试 Fable 指挥 GPT 5.6 干活，可以试试这个 Plugin。\n\n我没有试这种模式是因为我直接让 Fable 指挥 Opus 更简单直接，没必要折腾。\n\n如果你用 Fable API 而不是订阅的话这应该是一种不错的模式。",
+      "created_at": "Wed Sep 02 22:47:48 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2095206393682780672",
+        "text": "Fable 5.1 orchestrates GPT-5.6 Luna agents.\n\nVia the 'fable-advisor' plugin for Claude Code.\n\n1. Fable 5.1 orchestrates\n2. GPT-5.6 Luna implements\n3. Fable 5.1 reviews\n\nThink of it like in-context distillation: give Luna the intelligence of Fable 5.1 at a fraction the cost.",
+        "created_at": "Wed Sep 02 17:45:05 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2095205918048923648",
+            "url": "https://video.twimg.com/amplify_video/2095205918048923648/vid/avc1/2584x1974/TSA2OFGSDUIXfPcM.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1963466798",
+          "name": "Dan McAteer",
+          "screen_name": "daniel_mac8",
+          "description": "I build AI agents for a living and write about it. Writing at https://t.co/ROXTvUfk75 · Writing @latentspacepod · Agentic Ops @ AnswerRocket",
+          "followers_count": 29735,
+          "friends_count": 4596,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 22,
+          "favorite_count": 510,
+          "reply_count": 44,
+          "quote_count": 5
+        }
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 38,
+        "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2095291379559580154",
+      "text": "Google 今天发布了 Gemini 3.8 Flash，同时推出的还有一个专门用于网络安全的变体 3.8 Flash Cyber。\n\nGoogle 最近这个发布节奏很有意思。7 月底发 3.6 Flash，8 月中发 3.7 Flash，今天又发 3.8 Flash，间隔都只有大约三周。而与此同时，今年 6 月本该发布的 Gemini 3.5 Pro 至今没有出现。Google 在 Flash 这条线上疯狂迭代，但更高端的 Pro 系列迟迟没有动静。\n\n再加上 8 月初 DeepMind 经历了一轮震荡，创始人兼 CEO Demis Hassabis 从日常管理退出，转任 DeepMind 主席和 Alphabet 首席科学家，首席科学家 Jeff Dean 也离职创业。新任 SVP Koray Kavukcuoglu 接管了 Gemini 的开发。这种背景下连续推 Flash，不知道是不是某种程度上的刷存在感。\n\n回到模型本身。\n\n3.8 Flash 和 3.7 Flash 一样的价格，每百万输入 Token 0.75 美元，每百万输出 Token 3.75 美元。\n\n注意这个价格是促销价，2026 年底到期后翻倍变成 1.5 和 7.5 美元。\n\n跑分上，3.8 Flash 在 DeepSWE v1.1（一个衡量模型自主解决复杂工程问题能力的评测）上拿到 73.7%，仅比 Claude Opus 5 的 74% 低 0.3 个百分点，超过了 GPT-5.6 Sol 的 72.7%、Claude Sonnet 5 的 53.8%，以及上代 3.7 Flash 的 65.3%。\n\n至于为什么评分高，Google 自己的解释是 3.8 Flash “works harder”，遇到复杂任务会多想几步、多调用几次工具，代价是消耗更多 Token。\n\n另一个跑分细节：3.8 Flash 在 Gray Swan 提示词注入（prompt injection）评测中被攻破的概率只有 5.5%，对比 DeepSeek V4 Pro 的 60.1%、Grok 4.6 的 51.8%。也就是说，用 3.8 Flash 做 AI Agent 被恶意指令劫持的风险要低得多。\n\n跟着 Gemini 3.8 Flash 一起发布的还有 3.8 Flash Cyber，这是一个专门为网络安全防御训练的模型，只通过 Google 新推出的 Fairwind Program 向经审核的政府机构、关键基础设施运营商和安全研究人员开放，目前全球有 650 多个合作伙伴。普通开发者用不了。\n\nGoogle 把这个模型的能力框定在安全防御上，强调它擅长找漏洞和修漏洞，而非攻击利用。在 CyberGym 漏洞发现评测中，3.8 Flash Cyber 拿到 86.2%；在覆盖 20 种编程语言的内部评测中，漏洞发现成功率超过 70%。在 CWE-Bench 自动修补评测中，它以 47.2% 的 pass@1 逼近了前沿模型的 47.8%，但成本低得多。\n\n一些实际应用案例：\nChrome 安全团队发现 3.8 Flash Cyber 比最好的商用大模型多修复了 2.6 倍的 Chrome 漏洞；\n安全公司 Wiz 的内部渗透测试中，它的召回率高出 7.5% 到 9.7%，成本却低了 2.3 到 5.2 倍；\nGoogle Cloud 漏洞研究团队用它在不到两小时内发现了一个关键漏洞，这类漏洞通常需要数月的人工研究。\n\n3.8 Flash 已经可以通过 Gemini API、Google AI Studio、Android Studio、Antigravity 等渠道使用，Google AI Pro 和 Ultra 订阅用户在 Gemini App 中也能用上。企业版通过 Gemini Enterprise 接入。Cyber 版需要申请 Fairwind Program。",
+      "created_at": "Wed Sep 02 23:22:48 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2095175881690173885",
+        "text": "Introducing Gemini 3.8 Flash, another jump in Gemini's agentic + coding capabilities, and our 3rd updated Flash model in only 6 weeks...\n\nThis model has been a ton of fun to work with, excited to see what you all think! https://t.co/Cj07lCBtp8",
+        "created_at": "Wed Sep 02 15:43:51 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2095173061041692672",
+            "url": "https://pbs.twimg.com/media/HROMzF5boAAlg1Y.png"
+          },
+          {
+            "type": "photo",
+            "id": "2095173060802510849",
+            "url": "https://pbs.twimg.com/media/HROMzFAaAAE2R-m.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2095173061066792961",
+            "url": "https://pbs.twimg.com/media/HROMzF_aoAExVqT.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2095173060588625920",
+            "url": "https://pbs.twimg.com/media/HROMzENaYAAHSmD.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "284333988",
+          "name": "Logan Kilpatrick",
+          "screen_name": "OfficialLoganK",
+          "description": "Member of technical staff, working on Gemini, @GoogleAIStudio, the Gemini API, & Kaggle. My views!",
+          "followers_count": 363099,
+          "friends_count": 3243,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 739,
+          "favorite_count": 9798,
+          "reply_count": 688,
+          "quote_count": 425
+        }
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 41,
+        "reply_count": 12,
+        "quote_count": 3
       }
     }
   ]

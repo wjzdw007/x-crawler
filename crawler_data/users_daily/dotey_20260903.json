@@ -1,0 +1,123 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 244890,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260903",
+  "last_updated": "2026-09-03T02:39:48.853855",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2095329314778607932",
+      "text": "Anthropic 刚开源了一个 /claude-api 的 skill，内置到了 Claude Code。\n\n这个 Skill 的使用场景是帮你优化 Claude API 调用的，针对 Agent 开发或者基于 Claude API 开发，如果你只是 Claude Code 用户，那么不需要管，或者你不是用的 Claude 模型，那效果估计要差一点，但也会有效果。\n\n使用方法很简单，在 Claude Code 里输入 /claude-api 加子命令，就能触发对应的诊断或迁移流程。\n\n它的代码在 GitHub 上公开：https://t.co/C8BfqwkWrA\n\n这个 skill 本身不是一个独立工具，而是一组结构化的参考文档和工作流指令。当 Claude Code 检测到你的项目里 import 了 Anthropic SDK，或者你主动输入 /claude-api，它就会把对应语言（Python、TypeScript、Java、Go、Ruby、C#、PHP 或 cURL）的 API 文档加载到上下文里，让 Claude 在帮你写代码时有准确的 API 知识可用。\n\n支持 8 种语言，覆盖两个开发面：Messages API（常规的请求、流式输出、工具调用、批量处理、提示词缓存等）和 Managed Agents（Anthropic 托管的有状态 Agent，带沙箱环境）。\n\n三个主要的子命令\n\n/claude-api cost-optimize\n\n分析你项目的实际 API 使用情况，按优先级排列省钱建议。它不是给你一份通用清单，而是看你具体的用量模式，逐项提出修改方案，你可以逐条批准或跳过。检查的项目包括缓存配置、Token 冗余、批量处理机会、effort 级别和模型选择。\n\n/claude-api prompt-audit\n\n扫描项目里的提示词和 skill 文件，找出针对当前模型来说已经过时或有问题的写法。比如过度验证（让模型反复确认自己的输出）、多余的强调语句、过时的 few-shot 示例、自相矛盾的规则。产出两样东西：一份审计报告（标出具体文件、行号和问题模式），以及一个修改建议的 diff。\n\n/claude-api migrate\n\n帮你把现有的 Claude API 代码迁移到更新的模型。它会先确认范围（哪些文件需要改），再逐个文件分类，然后按目标模型的 breaking changes 列表逐项处理。比如从 Fable 5 迁移到 Fable 5.1，或从 Opus 4.6 升级到 4.8，涉及的参数变化、废弃字段、新的默认行为，都会在这个流程里覆盖到。\n\n这些命令在 Fable 5.1 发布的背景下尤其有用。Fable 5.1 的提示词缓存价格降了 75%，但你得先确认自己的缓存配置没有问题才能真正省到钱。cost-optimize 就是干这个的。同样，Fable 5.1 在低 effort 下就能达到上一代高 effort 的水平，但如果你的提示词里还塞着大量为旧模型写的验证指令和脚手架，实际效果就打折扣。prompt-audit 帮你清理这些。\n\n除了这三个，还有一个 /claude-api managed-agents-onboard，用于从零搭建一个 Managed Agent，走一个交互式的引导流程。\n\n如果你需要做 Claude 模型 API 的优化，值得试试。\n\n---\n\n附加（翻译自原推）：常见提示词“反模式” (anti-patterns)：\n\n1. 流于形式的“验证仪式” (Verification rituals)。 \n\n诸如“仔细检查你的工作”或“在回答前核对两次”这类指令，往往会被前沿模型从字面上死板理解。这不仅没必要，还会白白浪费你的 tokens。\n\n2. 用力过猛的强调与“详尽感” (Thoroughness and emphasis boosters)。 \n\n“尽可能详尽”、“关键注意：你必须永远……”这类强调语，在指导前沿模型时，反而会导致模型变得异常啰嗦，甚至去执行大量不必要的工具调用。\n\n3. 强制性的流程与“草稿本”脚手架 (Mandatory procedures and scratchpad scaffolds)。 \n\n强制性的固定步骤（比如“在草稿本 (scratchpad) 中一步步思考”）或者思维模板，对于前沿模型来说完全是多此一举。这些人为强加的“脚手架”会与模型原生的推理能力重叠，从而白白消耗掉不必要的词元。\n\n4. 过时的示例 (Stale examples)。 \n\n有些少样本示例 (few-shot examples)（注释：在提示词中提供少量示范例子，以便让模型模仿学习的一种常见技巧） 往往是针对老一代模型常犯的错误来设计的。如果拿这些去教前沿模型，反而会让它在原本很简单、根本不需要复杂思考的任务上，刻意模仿出冗长的推理链条。\n\n5. 自相矛盾的规则 (Contradictory rules)。 \n\n前沿模型在遵循指令方面非常听话。如果你给出的指令本身存在矛盾（例如同时规定“始终在政策范围内退款”和“未经上报绝不退款”），模型会非常实在地去执行这些冲突的规则，最终导致整体表现大打折扣。\n\n6. 过时的配置 (Dated configuration)。 为老一代 Claude 编写的设置（例如手动设置思考预算 (thinking budgets)），在配合新一代模型使用时，可能会直接被 Claude 平台拒绝访问。\n\n随着时间的推移，这些反模式会在你的提示词中不断累积。当你将大语言模型升级到最新版本时，它们就会在暗中悄悄拖累整体性能。这背后的一个常见原因是：前沿模型太擅长遵循指令了，以至于这些糟糕的规则反而会误导它们，让它们把精力花在毫无意义的地方，花费不必要的 Token。\n\n举个真实案例：在一个内部的客户服务基准测试 (benchmark) 中，测试了从 Opus 4.8 升级到 Opus 5 的情况。结果发现，在使用 Opus 5（以及像 Fable 5.1 这样的其他前沿模型）时，那些所谓的“验证仪式”（比如“核对两次”）会让模型重复劳动，浪费大量的 Token。而那些“强调增强语”（比如“尽可能详尽”）则会触发几十次完全没必要的系统搜索。\n\n执行提示词审计 (prompt audits) 可以显著提升大语言模型的性能并降低成本。",
+      "created_at": "Thu Sep 03 01:53:32 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2095170001175199771",
+        "text": "i recently added this command to the claude-api skill. run it in Claude Code to fix common prompting \"anti-patterns\" that can hobble frontier models:\n\n/claude-api prompt-audit\n \npatterns include: \n\n1/Verification rituals. Instructions like \"double-check your work” or \"verify twice before responding” are often taken literally by frontier models and can waste tokens.\n\n2/ Thoroughness and emphasis boosters. \"Be maximally thorough,\" \"CRITICAL: YOU MUST ALWAYS…\" can lead to verbosity and extra tool calls when working with frontier models.\n\n3/ Mandatory procedures and scratchpad scaffolds. Fixed step processes (e.g., \"think step by step in a scratchpad\") or reasoning templates are rituals that frontier models don't need. This scaffolding can stack on top of native reasoning and use unnecessary tokens.\n\n4/ Stale examples. Few-shot examples tuned to an older model's failure modes can teach a frontier model to imitate long reasoning chains on requests that don't need them.\n\n5/ Contradictory rules. Frontier models are better at instruction following. Contradictory instructions (\"always refund within policy\" vs. \"never issue refunds without escalation\") can be followed more literally by frontier models, resulting in degraded performance.\n\n6/ Dated configuration. Settings written for an older Claude generation (e.g., manual thinking budgets) can be rejected by the Claude Platform with newer models.\n\nthese patterns accumulate in prompts over time, and can quietly degrade performance when upgrading to newer models. a common reason is the frontier models are better at instruction following, so these anti-patterns steer them to spend unnecessary tokens. \n\nexample: i tested a migration from Opus 4.8 to Opus 5 on an internal customer support benchmark. with Opus 5 (and other frontier models like Fable 5.1), verification rituals (\"verify twice\") use unnecessary tokens by duplicating work. emphasis boosters (\"be maximally thorough\") become dozens of unneeded searches.\n\napplying prompt audits can improve performance and reduce cost (as shown in example attached and will be sharing a full write-up soon). \n\nalso, the skill is also open source and some of this guidance likely applies generally across frontier models\nhttps://t.co/4rv1lfiDiz\n\nhttps://t.co/iLbvKfnTH3",
+        "created_at": "Wed Sep 02 15:20:29 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2095167189896888320",
+            "url": "https://pbs.twimg.com/media/HROHdWLbgAAE6HA.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "39202644",
+          "name": "Lance Martin",
+          "screen_name": "RLanceMartin",
+          "description": "MTS @anthropicai",
+          "followers_count": 38414,
+          "friends_count": 467,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 35,
+          "favorite_count": 472,
+          "reply_count": 46,
+          "quote_count": 8
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 15,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2095333742155887029",
+      "text": "RT @LinearUncle: 研究表明，管理你机器上乱七八糟的skills，你每个月的AI tokens 至少可以节省 10-20%! \n\n终于有人把「宝玉哥的软链接Skill 管理方案」做成Mac GUI app 了！ 今天推荐开源skill管理器： Kitter.\n\n1…",
+      "created_at": "Thu Sep 03 02:11:08 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2095330284963348800",
+        "text": "研究表明，管理你机器上乱七八糟的skills，你每个月的AI tokens 至少可以节省 10-20%! \n\n终于有人把「宝玉哥的软链接Skill 管理方案」做成Mac GUI app 了！ 今天推荐开源skill管理器： Kitter.\n\n1. Rust + GPUI 开发，精致小巧，内存/磁盘占用小\n2. 在本地维护一个统一的 Skill 仓库，需要用的时候软链过去，不会混乱，一目了然\n\n仓库地址：\nhttps://t.co/zxwfvpZEex\n\n宝玉哥skill管理办法：\nhttps://t.co/bXoxAecBVh\n\n注意：\n\n小哥未购买Developer ID，首次打开需 Control+点击 →「打开」，或被拦截时执行 xattr -dr https://t.co/HInmG3pXSq.quarantine /Applications/Kitter.app",
+        "created_at": "Thu Sep 03 01:57:23 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2095325463271166184",
+          "text": "https://t.co/IRxO1aRpY4",
+          "created_at": "Thu Sep 03 01:38:14 +0000 2026",
+          "lang": "zxx",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1587314670985060352",
+            "name": "川处安",
+            "screen_name": "leoshen0",
+            "description": "兴趣是第一生产力，品味是最深的护城河。\n\n某互联网公司在职程序员，分享一些自己对 AI 的实践与思考",
+            "followers_count": 49,
+            "friends_count": 226,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 0,
+            "favorite_count": 5,
+            "reply_count": 0,
+            "quote_count": 3
+          }
+        },
+        "user": {
+          "id": "1239771839464783872",
+          "name": "LinearUncle",
+          "screen_name": "LinearUncle",
+          "description": "服务器技术专家，曾就职于阿里云 ，有赞，外企，在线教育等；\n👑 AI coding - 职业工程师\n💻 只分享硬核AI编程工具，技巧等",
+          "followers_count": 13340,
+          "friends_count": 1368,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 7,
+          "reply_count": 2,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

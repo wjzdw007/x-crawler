@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 244890,
+    "followers_count": 244943,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260903",
-  "last_updated": "2026-09-03T02:39:48.853855",
-  "tweet_count": 2,
+  "last_updated": "2026-09-03T08:30:41.238969",
+  "tweet_count": 3,
   "tweets": [
     {
       "id": "2095329314778607932",
@@ -117,6 +117,45 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2095354973173186588",
+      "text": "任何方案都有取舍，用 subagent token 消耗肯定更大，但价钱不见的更贵。要是 Fable 5 耐用谁愿意这么折腾！\n\nsubagent 是独立的上下文，任务开始前需要重新交代子任务上下文，完成后还要交接工作，这是代价；缓存倒是其次的，因为初始上下文不会太大，而且缓存只有第一次有影响，后续子agent有自己的缓存。\n\n这样带来的收益是子 agent 可以用便宜的模型，虽然 token 消耗量大，但是价格其实更便宜，如果你是 Claude Code 订阅的话，多让 Fable 指挥 Opus/Sonnet SubAgent\n体感很明显。\n\n然后由于具体子任务细节都在子agent，主agent的上下文只需要子任务的结果，这样可以节约主agent大量上下文空间，可以更专注于任务本身。\n\n这就好比你有个能力超强的员工，他当然可以什么事情都做了，但他也可以把活派给实习生，实习生做完了检查验收一下，这样能做的事情更多了",
+      "created_at": "Thu Sep 03 03:35:30 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2095348530978394421",
+        "text": "@dotey subagent好像更消耗token, 以前就是这么做的",
+        "created_at": "Thu Sep 03 03:09:54 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1843904315037233153",
+          "name": "yanan shi",
+          "screen_name": "yananshi418377",
+          "description": "",
+          "followers_count": 1,
+          "friends_count": 52,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 41,
+        "reply_count": 16,
+        "quote_count": 3
       }
     }
   ]

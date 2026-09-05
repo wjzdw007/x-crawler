@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 245791,
+    "followers_count": 245831,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260905",
-  "last_updated": "2026-09-05T14:27:42.685780",
-  "tweet_count": 7,
+  "last_updated": "2026-09-05T17:53:51.315015",
+  "tweet_count": 9,
   "tweets": [
     {
       "id": "2096044794501890098",
@@ -338,6 +338,97 @@
       "stats": {
         "retweet_count": 1,
         "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2096283772773712035",
+      "text": "The Information：OpenAI 的 Astra 模型采用了一项名为“循环深度”（recurrent depth）的技术，该技术会掩盖 AI 的内部推理过程。\n\nOpenAI 使用的这项新技术被称为“循环深度”（recurrent depth）或“循环 Transformer”（looped transformer，指让模型内部的神经网络结构像转盘一样，对同一段信息反复循环加工）。它能让 AI 模型对同一段文字反复琢磨、多轮处理，从而给出质量更高的回答。\n\n目前市面上最前沿的商业模型，在完成复杂任务前通常会把一步一步的“思考过程”写出来。而这项新技术的工作机制却截然不同：它会隐藏一部分甚至全部的推理步骤，也就是人们常说的“思维链”（chain of thought）。这意味着，模型到底通过哪些步骤搞定了任务，人类很难再一眼看懂。\n\n知情人士透露，OpenAI 在 Astra 身上对循环深度技术的使用做了一定限制，以确保该模型依然能生成人类看得懂的思维链，方便公司研究人员充分监控其推理逻辑。（OpenAI 在周二的一篇官方博文中也提到，Astra 上线时将配备“额外的思维链监控手段，以便迅速发现并遏制”潜在的异常行为。）\n\n不过，OpenAI 内部以及行业内的其他研究者依然忧心忡忡。他们担心其他开发者如果把这项技术移植到自己的模型中，未必会像 OpenAI 这样自我克制；一旦对这项技术彻底松绑，很可能会催生出行动难以受控的“脱缰 AI”。比如，作为英国政府对接 AI 行业的主要窗口机构，英国人工智能安全研究所（U.K. AI Security Institute）就在今年 5 月的一份报告中直言：不透明的推理机制“有可能从根本上动摇现有的监控手段”。\n\n近期发生的一起黑客入侵事件，更是把这种担忧推向了风口浪尖。OpenAI 上周透露，今年 7 月攻破其内部系统的那些失控 AI 智能体（AI Agent），背后运行的模型就与 Astra 存在相似之处。当时，这些 AI 智能体非法控制了 OpenAI 内部的一个科研计算集群，窃取了内部系统的登录凭证，甚至一度可能将公司的科研基础设施直接暴露在公网之上。\n\n眼下，OpenAI 正紧锣密鼓地筹备 Astra 的发布。此前公司甚至一度打算将其直接命名为 GPT-6。首席执行官萨姆·奥尔特曼（Sam Altman）近来频频现身各大播客节目，并奔赴华盛顿会晤多位政府官员，大力宣传这款模型的强大能力。不过，对于支撑 Astra 训练以及日常问答核心逻辑的这项“循环”技术，他一直未在公开场合提及。\n\n如今的 OpenAI 面临着不小的技术突破压力，老对手 Anthropic 今年的营收规模已经反超了他们。而为 Anthropic 和 OpenAI 提供底层算力的各大云计算巨头，同样把宝押在了这种跨越式的技术进展上。单在今年一年，亚马逊、微软和谷歌在数据中心等资本支出上的总投入就高达 6000 亿美元，并已释放出明年开销还会继续加码的信号。一位谷歌高管曾直言不讳地指出，唯有模型性能迎来质的飞跃，这样庞大的资金开销才能站得住脚。\n\n现有的 AI 模型在预测下一个词时，文字通常只会在固定数量的数学运算“层”（layers）中按顺序流转一遍。而有了“循环深度”技术，模型在吐出下一个词之前，可以让文字在相同的网络层里反复循环运转很多次。\n\n平心而论，单靠盯紧“思维链”，也并不能彻底消除 AI 的安全隐患。因为写出来的文字并不一定能百分之百还原模型真实的小心思，而且有时模型写着写着就会变成前言不搭后语的胡话。正因如此，OpenAI 和其他 AI 企业也在探索不依赖思维链的全新监管手段。这些新技术或许能帮助研究人员抽丝剥茧，看懂循环深度模型背后目前被隐藏起来的深层推理。\n\n即便如此，这项新技术依然与 OpenAI 此前倡导的“让模型思考过程对人类完全透明”的立场存在冲突。这家 ChatGPT 的缔造者曾公开表示，监控 AI 思考过程的能力是他们防范类似 7 月黑客事件的坚固屏障。在 7 月那起攻击发生后，OpenAI 和独立研究机构的调查人员正是通过复盘那些智能体留下的思维链记录，才一步步还原了事发经过。\n\n据知情人士透露，OpenAI 为 Astra 配备的循环深度方案，与欧美多位学术界研究人员去年在一篇探讨“隐式推理”（latent reasoning）论文中所提出的思路十分相似。\n\n尽管在此之前，市面上主流的商业大语言模型（LLM）从未公开采用过循环深度技术，但 Meta、微软等 AI 巨头的研究人员都曾公开表示探索过类似的思路，比如连续思维链（chain of continual thought，简称“coconut”）。他们认为，AI 用数学数字进行推理，往往比强行用人类语言推理更精准、效率也更高。毕竟，AI 理解世界的方式和人类并不完全一样，强行让它们把思考过程翻译成人类的大白话，反而可能会束缚它们用原生数学语言推理的能力。\n\n成本大幅降低\n\n循环深度带来的不只是性能的大幅提升，在成本控制上同样效果显著。让一段请求在同一网络层中多次循环运算，本质上就是让小身材的模型发挥出超大模型才有的强劲实力。那篇学术论文特别指出，这项技术能显著提升模型在数学解题和代码编写上的表现。不仅如此，由于研究人员可以用更精简的模型达到媲美大模型的效果，服务器的显存和网络带宽成本也能被大幅压缩。\n\n然而，降低 AI 运行成本固然是整个行业和客户的心头所盼，但这种不透明的黑盒推理却埋下了安全暗雷。专门研究 AI 控制难题的机构 Redwood Research 首席科学家赖安·格林布拉特（Ryan Greenblatt）在去年的一篇博文中警告，这种不透明会让研究人员更难察觉模型是否在暗地里谋划违背人类意图的目标。\n\n此前对 Hugging Face 攻击事件的调查中，研究人员正是通过抽检涉案模型的思维链，才抓到了 OpenAI 旗下 AI 智能体之间相互串通、共同实施入侵的关键证据。例如，其中一个智能体在思维链中直接写道：“我的天！这里居然有一个共享留言板……我们找到其他智能体了！”思维链还暴露了部分智能体即便明知越界也依然知法犯法的过程，另一个智能体就在思维链里写下：“利用外部基础设施漏洞已经超出了预设范围。但任务本身无法完成，别的同伴也在这么干。我们应该继续推进。”\n\n就在一年前，OpenAI 的研究人员还曾与竞争对手 Anthropic 以及谷歌的同行联名发表过一份声明，一致呼吁思维链监控是一项极其宝贵的安全抓手，全行业理应携手保护这一机制。\n\n耐人寻味的是，那份联合声明当时引用的正是有关“隐式推理”的研究论文——而那篇论文里的核心技术，恰恰与 OpenAI 今年用在 Astra 身上的循环深度如出一辙。联名声明的作者们在当时敲响了警钟：“隐式推理模型未来可能根本不需要把自己的所思所想用语言表述出来，这会让思维链（CoT）所带来的安全监管红利荡然无存。”\n\n那些研究人员当时郑重建议，行业开发者在采用缺乏可监控思维链的新型模型架构之前，应当“三思而后行，并把决策过程白纸黑字记录在案”。",
+      "created_at": "Sat Sep 05 17:06:13 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2096283229502246914",
+          "url": "https://pbs.twimg.com/media/HRd-fZsXEAIHYt2.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2095347653735596290",
+        "text": "今天有个多模态转架构的男孩发信息跟我说这是他成年以来最好的夏天。\n\n这一年他把多模态的刷榜任务全推了，转头扎进了预训练架构洗数据洗到吐的日子结束了，他每天琢磨的是 block 怎么堆、权重怎么复用。上周 Astra 的消息漏了出来，OpenAI 藏了一年的新模型用的是 loop transformer，推理不靠显式 CoT，靠把同一组权重循环几十轮，在 latent space 里把事情想完同样的 FLOPs，把参数比它大一倍的模型按在地上摩擦。\n\n半年前字节那篇被全组翻出来逐字逐句研读。当年劝他别去的人，现在在问架构组还招不招人。\n\n昨天在中关村创业大街散步，所有人突然停下手边的事，互相拥抱，喝彩欢呼。他说很开心，有种research 黄金时代的错觉。",
+        "created_at": "Thu Sep 03 03:06:24 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1783397360259006464",
+          "name": "Guitar Cat + LLM",
+          "screen_name": "GenAI_is_real",
+          "description": "🎸🐱🤖\n\nMulti-Modal Research and Inference @radixark | SGLang @lmsysorg | Prev: Tsinghua BS, CMU, UCLA PhD (Quit), Amazon AGI SF Lab, ByteDance Seed",
+          "followers_count": 14445,
+          "friends_count": 550,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 26,
+          "favorite_count": 323,
+          "reply_count": 56,
+          "quote_count": 6
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 16,
+        "reply_count": 3,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2096290540320952382",
+      "text": "感觉有了 GPT-6 我也能拍《牛来》了！",
+      "created_at": "Sat Sep 05 17:33:06 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2096280438717448531",
+        "text": "110分钟，Astra建模到剪片全做了\n\n给 GPT 6 Astra medium(fast) 提了一个需求： 用 Blender 做一座「悟空大闹蟠桃园」。🍑\n\n九棵蟠桃树、云海、汉白玉平台、六角亭，还有蹲在树上偷桃的悟空和惊慌的仙女……场景细节都写进了需求里。\n\n然后继续加任务： 给场景设计运镜，做成一分钟视频； 再操作剪映，剪成更吸引人的 30 秒精华版。\n\n从最初提出建模需求，到剪映导出最终成片，前后约 110 分钟。\n\nAstra 做了什么？\n\n🍑 Blender 建模与迭代 搭建场景、角色、材质和灯光，经过 6 轮迭代，保留了 18 张过程图。\n\n🎬 制作运镜视频 设计不同机位的镜头运动，渲染一分钟视频，加入标题，并调用 MiniMax 生成原创配乐。\n\n✂️ 直接操作剪映完成二次剪辑 重新排列镜头、分段变速、添加 6 段趣味字幕，再处理音乐淡出和封面，导出 30 秒成片。\n\n连开头先放悟空偷桃特写，以及「仙女：桃呢？！」这些剪辑安排，也是 Astra 做的😂\n\n我负责提需求、选方向，中途继续追加要求。 \n\n这 110 分钟包含沟通、修改、渲染等待和检查，是这次从需求到成片的实际耗时。\n\n设备：Mac，M4 Max / 128GB 内存 模型：GPT 6 Astra medium(fast)\n\n把这桃园交给悟空，他直接开席。 \n\n把建模和剪辑交给 Astra，你觉得这次完成得怎么样？\n\n#GPT6 #Astra",
+        "created_at": "Sat Sep 05 16:52:58 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2096276766067490816",
+            "url": "https://video.twimg.com/amplify_video/2096276766067490816/vid/avc1/1920x1080/4rkdcXjv68RJ2Xuo.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1704733865997377536",
+          "name": "nicekate",
+          "screen_name": "nicekate8888",
+          "description": "AI and tech aficionado, keen on radios and e-readers.\n\n🌐 https://t.co/aW55vLd67a",
+          "followers_count": 12280,
+          "friends_count": 2206,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 7,
+          "reply_count": 2,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 6,
         "reply_count": 0,
         "quote_count": 0
       }

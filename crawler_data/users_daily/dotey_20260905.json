@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 245840,
+    "followers_count": 245846,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260905",
-  "last_updated": "2026-09-05T19:51:26.626768",
-  "tweet_count": 12,
+  "last_updated": "2026-09-05T21:53:17.448032",
+  "tweet_count": 16,
   "tweets": [
     {
       "id": "2096044794501890098",
@@ -618,6 +618,192 @@
         "retweet_count": 0,
         "favorite_count": 7,
         "reply_count": 4,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2096336200902627583",
+      "text": "这两天都在测试 Astra，各种 Astra 操作 Blender 的炫酷案例，但这恰恰证明：不是 Codex 驾驭不了 Astra，而是 Astra 离不开 Codex 这个 Harness。\n\n如果没有 Codex 这层 Harness，Astra 再怎么内化，它也不能自己打开电脑、跑起 Blender 建模。\n\n模型内化的是知识\n\n模型每一轮训练，确实会把很多东西训练进权重里：什么时候该调工具、怎么拆任务、失败了怎么回退、什么样的代码风格更好。这些是策略和判断，是可以内化的。所以 Astra 不需要你写一大堆提示词教它怎么操作 Blender，它自己就知道。\n\n但模型本身能做的只有一件事：根据输入的 Prompt 输出 Token。\n\n它说“我要在某个位置画一条线”，这只是一段文字。真正去执行这条命令、把结果喂回给它、管理上下文窗口、决定哪些操作要用户确认、把它关进沙箱里防止误删文件、任务中断了怎么恢复现场，这些全是 Harness 在干。\n\n所以“Harness 被模型内化了”这个说法是把两件事混在一起了。Harness 这一层没办法内化，因为它压根不在模型的输入输出里，你没法把“工具”训练进权重，只能训练“如何操作工具”。\n\n换句话说：可以内化的是“如何操作工具”，而“工具本身”是不能被内化的。\n\n就像一个人开车技术再好，把驾驶经验内化得再深，你把车拿走，他也只能在原地比划方向盘。\n\n模型变强，对 Harness 确实有影响。\n\n以前 Harness 要替模型做很多规划、拆解、兜底，现在模型自己会了，Harness 就可以变薄，可以少管点“该怎么想”，更多的“怎么执行”。\n\n反过来，模型越强，想用的工具越多、想干的事越复杂，对 Harness 的执行能力、权限控制、状态管理要求反而更高。\n\n所以也不存在“Codex 驾驭不了 Astra”，是模型通过 Harness 驾驭电脑。如果 Astra 的能力超出了 Codex 现有的设计，那说明 Codex 该升级了，但不意味着说 Harness 这一层可以不要了。\n\n模型和 Harness 从来是相辅相成，不是谁替代谁。\n\n模型是大脑，Harness 是手脚。大脑再聪明，也得靠手脚才能碰到真实世界。",
+      "created_at": "Sat Sep 05 20:34:32 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2095621083483484305",
+        "text": "@dotey 我觉得codex已经驾驭不了astra了，coding harness已经内化了！",
+        "created_at": "Thu Sep 03 21:12:55 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "23062740",
+          "name": "𝙩𝙮≃𝙛{𝕩}^A𝕀²·ℙarad𝕚g𝕞",
+          "screen_name": "TaNGSoFT",
+          "description": "𝕀²·ℙarad𝕚g𝕞 research via TASTE harness｜ai4x-EEOIP·ECO·speech living beings·数字新皮层 𝕚sᵃˡˡ ᵁ ᴺᵉᵉᵈ^智能平方范式智库^特大号范式｜再AI十年之四：不止于LLM...",
+          "followers_count": 17118,
+          "friends_count": 3326,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 2,
+          "reply_count": 2,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 28,
+        "reply_count": 4,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2096344663904891115",
+      "text": "《Reverse Engineering Linear's Sync Engine: A Detailed Study》这篇文章写的很好，但有些难懂，突然想到一个使用 GPT-6 Astra 的案例：\n让它把这篇文章做成一个循序渐进的互动式教学网页，一步步把内容由浅入深分解，帮我搞懂文章内容。\n\n还别说，跟着网页内容一节一节学习，好懂多了。\n\n提示词：\n\n> 帮我把这篇文章的内容，做成一个互动的循序渐进的教学网页，一步步通过互动的方式让初学者理解这篇文章中的核心概念  https://t.co/EYElCkfmnJ\n\n网页地址：https://t.co/CCfTykxWxx",
+      "created_at": "Sat Sep 05 21:08:10 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2096343706072961024",
+          "url": "https://pbs.twimg.com/media/HRe1fmea0AAkc6x.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2096236875661053983",
+        "text": "好久没看到这么精彩的和 AI 无关的技术文章了：《Reverse Engineering Linear's Sync Engine: A Detailed Study》\nhttps://t.co/WsIxp72wv2\n\n讲的是 Linear 客户端同步方案（Linear Sync Engine） 的逆向讲解，如果体验过 LInear 的就能感受到它的操作非常丝滑。这篇文章把模型怎么定义 怎么进 IndexedDB 事务怎么上报 服务端怎么回 delta 怎么做部分加载和 undo讲的非常清楚 还对技术细节感兴趣的朋友可以收藏好好读读。\n\nLinear CTO 也称赞过这篇文章。我觉得整体读的体感非常好，学到了很多，同时也很赞同乐观更新这种做法。",
+        "created_at": "Sat Sep 05 13:59:52 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "296593919",
+          "name": "Viking",
+          "screen_name": "vikingmute",
+          "description": "独立开发者 自由职业\n作品 \nTinyShip https://t.co/o0BI6W8DRb  现代化全栈 SaaS 开发平台，支持国内外双市场 Monorepo 架构 三框架支持\n简单简历 https://t.co/xMu5JFIGnr 五分钟打造程序员的金牌简历",
+          "followers_count": 67950,
+          "friends_count": 279,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 36,
+          "favorite_count": 277,
+          "reply_count": 22,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 17,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2096344861687349480",
+      "text": "RT @suwakopro: 卧槽，我只能说卧槽了",
+      "created_at": "Sat Sep 05 21:08:57 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2096068661052346382",
+        "text": "卧槽，我只能说卧槽了",
+        "created_at": "Sat Sep 05 02:51:26 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2096062392442724805",
+          "text": "It's fun to make predictions. Here's a new one:\nAnthropic has solved a Millennium Prize Problem.\nAnd I'll be even more specific.\nClaude has solved Navier–Stokes. \nIt is out for expert review.\nAnd to give myself a hard deadline, they will announce it before the IPO.",
+          "created_at": "Sat Sep 05 02:26:31 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1538525334781370368",
+            "name": "Andrew Curran",
+            "screen_name": "AndrewCurran_",
+            "description": "🏰 - I write about AI, mostly. Expect some strange sights.",
+            "followers_count": 90252,
+            "friends_count": 19344,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 330,
+            "favorite_count": 6695,
+            "reply_count": 288,
+            "quote_count": 221
+          }
+        },
+        "user": {
+          "id": "283511225",
+          "name": "Suwako — e/acc",
+          "screen_name": "suwakopro",
+          "description": "🚀 e/acc 技术乐观主义者 | 💻 静态强类型类型爱好者 | 🎲 发言随机生成 | 📊 实证分析大于规范分析 | 🌐 水平思考 | @suwako@mas.to | https://t.co/AeMdArn8vl",
+          "followers_count": 2335,
+          "friends_count": 787,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 10,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2096351810428489977",
+      "text": "仔细看了下，Andrew Curran 这条推文“预测”：Anthropic 已经解决了一道千禧年大奖难题，具体就是纳维-斯托克斯方程的存在性与光滑性问题，证明正在送交专家评审，并且会在 IPO 之前公布。\n\n注意这是“预测”，还不算正式报道，当然 Andrew 以前爆料的准确率还不错，另外以现在模型的能力，这也不无可能。\n\n千禧年大奖难题是克雷数学研究所 2000 年列出的七道难题，每道悬赏一百万美元。\n\n纳维-斯托克斯方程描述流体运动，工程上已经天天在用，但“三维情况下光滑解是否永远存在”这个纯数学问题，一百多年还没有人类证明出来。\n\nAnthropic 的 IPO 据传在 10 月中旬，所以一个多月以后就知道这条预测是不是靠谱了。",
+      "created_at": "Sat Sep 05 21:36:34 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2096062392442724805",
+        "text": "It's fun to make predictions. Here's a new one:\nAnthropic has solved a Millennium Prize Problem.\nAnd I'll be even more specific.\nClaude has solved Navier–Stokes. \nIt is out for expert review.\nAnd to give myself a hard deadline, they will announce it before the IPO.",
+        "created_at": "Sat Sep 05 02:26:31 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1538525334781370368",
+          "name": "Andrew Curran",
+          "screen_name": "AndrewCurran_",
+          "description": "🏰 - I write about AI, mostly. Expect some strange sights.",
+          "followers_count": 90252,
+          "friends_count": 19344,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 330,
+          "favorite_count": 6695,
+          "reply_count": 288,
+          "quote_count": 221
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
         "quote_count": 0
       }
     }

@@ -1,12 +1,252 @@
 {
   "date": "20260907",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-09-07T02:31:04.900497",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-09-07T08:52:47.523308",
+  "tweet_count": 204,
+  "unique_tweet_count": 204,
+  "total_crawled": 400,
+  "duplicates_removed": 196,
   "tweets": [
+    {
+      "id": "2096860572851597802",
+      "text": "RT @jakevin7: 来个暴论+干货：A➗根本就不懂 Harness.\n\n在harness上，和OpenAI对比起来，A➗更像一个营销公司。\nCodex Desktop 完全领先 Claude Desktop 一个时代。\n\n●codex desktop 的UI UX被所有…",
+      "created_at": "Mon Sep 07 07:18:13 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2096850696964325472",
+        "text": "来个暴论+干货：A➗根本就不懂 Harness.\n\n在harness上，和OpenAI对比起来，A➗更像一个营销公司。\nCodex Desktop 完全领先 Claude Desktop 一个时代。\n\n●codex desktop 的UI UX被所有同行学习，定义了agent GUI的设计规范\n●扎实优雅的架构设计。真正的技术扎实和设计优雅。老早就大幅度重构，实现了统一 runtime host: V2 使用了 app-server 架构，全端统一使用一个runtime。对比之下，CC 架构到现在还是一个 session 一个 bun，天天堆代码屎山。而codex做到了，甚至你可以用自己的Client连接别人部署的 Codex App Server。\n A➗还老吹自己是，Infra工程师特别多。我怎么感觉你根本就是营销公司？你的设计和架构在哪呢？\n●各种Agent harness benchmark测试基本都是效果最好的一批，不管是Maka做的Terminal-Bench 测试还是Runta 的 Agent harness 测试，都是最强的那一批。\n●在Astra上更是实现了异步工具调用与后训练，边执行边推理，实现了非阻塞调用，大幅度加快了执行，能明显感觉到现在执行时间短了。\n●Codex老早就实载了服务端侧的上下文压缩，所以Codex虽然上下文要短，但是实际上效果表现却非常好。\n在Astra上更是实现了异步工具调用与后训练，边执行边推理，实现了非阻塞调用，大幅度加快了执行，能明显感觉到现在执行时间短了。\n●Responses API 做了 mid-turn steering，实现了动态交互调整，在任务进行中可以插入新指令或中间修改要求，直接把穿插修改放到了底层的 API层。\n全球第一的 Computer Use 的的能力更是不用多说了，大家都吹爆了。\n●Codex 还做了上下文管理的前沿探索，Context Windows 也已经实现在Codex里面了。用上下文窗口的滑动，而不是用压缩。这样子就通过可搜索历史主动换窗，让长期的信息能够沉淀，可以被召回。\n●Codex的Memory目前也是越做越好了，基本上是目前实现里面最无感的一家。并且实现了dreaming机制。\n●实装的 PTC / Code Mode 机制配合 astra 强大的后训练能力。让模型的能力大幅度跃升。是真正的Harness和模型相互配合的典范。\n●Claude团队设计 MCP也是埋了不知道多少坑，根本没有借鉴历史很多协议的设计经验和精华。Plan mode也是Claude设计的，现在已经成了历史糟粕了。",
+        "created_at": "Mon Sep 07 06:38:58 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1068172934630395904",
+          "name": "kabikabi",
+          "screen_name": "jakevin7",
+          "description": "Building https://t.co/3kGDPSgMGW & https://t.co/1aJnnxFlma  & https://t.co/IXRkk1MroF\nAI enthusiast ! Apache Arrow/Datafusion/Doris PMC member\njakevingoo@gmail.com",
+          "followers_count": 22019,
+          "friends_count": 714,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 15,
+          "favorite_count": 165,
+          "reply_count": 36,
+          "quote_count": 9
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 246086,
+        "friends_count": 1718,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 15,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2096844931520225342",
+      "text": "Illuminating",
+      "created_at": "Mon Sep 07 06:16:03 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2096588222373515719",
+        "text": "Now the Third Man – Rudi Dutschke – The Man Who Gave the Long March Its Name.\n\nGramsci invented the strategy. Dutschke named it – and then went out and implemented it, in the streets of West Berlin, in 1968, with a generation of students who had read Gramsci and were ready to march.\n\n1. Born in East Germany in 1940, he fled to West Berlin in 1961 – two days before the Wall went up. He had seen actually existing socialism from the inside – and concluded not that the project was wrong, but that the method was. He didn’t want that version. He wanted a better one – built from the inside of the Western institutions rather than imposed from above by a party apparatus.\n\n2. He read Gramsci. He read Mao. And he synthesized them into the phrase that named the entire project: der lange Marsch durch die Institutionen – the long march through the institutions. Not Gramsci’s phrase. Dutschke’s. Gramsci had described the mechanism. Dutschke gave it the slogan that made it actionable, transmissible, and operational for an entire generation. The phrase spread across Europe in 1968 like a match dropped in dry grass. Every student who heard it understood immediately what it meant and what it required.\n\n3. The target was precisely identified: not the state, not the economy, but the institutions that reproduced the cultural hegemony – the universities, the media, the schools, the churches, the legal system. Infiltrate them. Occupy them from within. Replace the people who ran them with people who shared the counter-hegemonic project. Don’t storm the Reichstag. Get a job in the editorial office. Get a position in the faculty. Get appointed to the curriculum committee. The revolution would happen through tenure, not through barricades.\n\n4. On April 11, 1968, Josef Bachmann shot Dutschke in the head on the Kurfürstendamm in West Berlin. Three bullets. Dutschke survived – but never fully recovered. He spent the rest of his life in partial recovery, moving between Germany, Denmark, and Britain, still writing, still thinking, still speaking at conferences with the damaged brain of a man who had been shot for his ideas. He died in 1979, drowning in his bathtub during an epileptic seizure caused by the brain damage from the shooting. He was thirty-nine.\n\n5. The shooting produced something Bachmann had not intended: it made Dutschke a martyr and the movement a cause. The protests that followed — directed primarily at the Axel Springer media company, whose tabloid Bild the students blamed for inciting violence — were the largest street demonstrations in West Germany since the war. The attempt to silence the long march accelerated it. The generation radicalized by the shooting went on to become exactly what Dutschke had described: the professors, the journalists, the civil servants, the judges. The bullet proved his point.\n\n6. Gramsci designed the theory in a prison in Italy. Dutschke gave it its name and its generation in Berlin. The 1968 student movement he led was the transmission mechanism – the moment the Prison Notebooks left the academy and became a political program with a slogan, a street presence, and a generational identity. Without Dutschke, Gramsci remains a text. With Dutschke, he becomes a movement. The long march through the institutions began, as a practical matter, in West Berlin in 1968, among students who knew precisely where they were going and had a name for the route.\n\n7. The institutions they marched through are now theirs. The universities, the media, the civil service, the judiciary – all transformed, over fifty years, exactly as Dutschke described. He was shot for saying it could be done. It was done. The man who named the march did not live to see its completion. He died at thirty-nine in a bathtub, from the damage done by a bullet fired by someone who thought killing him would stop the march. It did not stop the march. It never does. Ideas shot in the head have a way of surviving their authors.\nEven the bad ones.",
+        "created_at": "Sun Sep 06 13:15:59 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2096588210025730048",
+            "url": "https://pbs.twimg.com/media/HRiT3mrbEAApP4E.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1222848324040056832",
+          "name": "Krzysztof Szczawinski 🇵🇱",
+          "screen_name": "Kristof_Poland",
+          "description": "Fan of Reason, Liberty and Western Civilization; Dad of 4; Math and Philosophy graduate; Former Derivatives Trader, Maths and Puzzles; Make the West Great Again",
+          "followers_count": 95179,
+          "friends_count": 252,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1068,
+          "favorite_count": 3276,
+          "reply_count": 156,
+          "quote_count": 110
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241592221,
+        "friends_count": 1405,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 581,
+        "favorite_count": 3514,
+        "reply_count": 623,
+        "quote_count": 43
+      }
+    },
+    {
+      "id": "2096840303298662600",
+      "text": "RT @poteto: the Grok @Bot desktop app just got a whole lot faster! there's still more to improve, but we shipped many perf improvements ove…",
+      "created_at": "Mon Sep 07 05:57:40 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2096786161981366338",
+        "text": "the Grok @Bot desktop app just got a whole lot faster! there's still more to improve, but we shipped many perf improvements over the past week:\n\n• cold start to usable shell: -247ms (18% faster).\n• cold start LCP: -425ms (23% faster).\n• cold start FCP: -234ms (16% faster). \n• total blocking time to the shell: -101 ms (34% faster).\n• warm restart to shell: -194 ms (18% faster).\n• marketplace bots tab first open: -18ms (41% faster).\n\nother stats that are unchanged:\n• INP p98: 48 ms to 56 ms. \n• composer keystroke to next frame: 8.4 to 8.5 ms.\n• chat switching: 64 to 77 ms short chat first visit, 66 to 68 ms long chat, revisits equal.\n• long chat scroll: zero long tasks.\n\nenjoy the long weekend building with Grok @Bot!",
+        "created_at": "Mon Sep 07 02:22:32 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2832427459",
+          "name": "lauren",
+          "screen_name": "poteto",
+          "description": "Grok @Bot at @SpaceXAI. Shipping with https://t.co/WDB4U1qYwW. React compiler core team, prev @cursor_ai @meta @netflix",
+          "followers_count": 91388,
+          "friends_count": 1703,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 108,
+          "favorite_count": 1690,
+          "reply_count": 153,
+          "quote_count": 21
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241592221,
+        "friends_count": 1405,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 108,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2096832334137856267",
+      "text": "RT @ring_hyacinth: Codex 做 3D 场景的正确打开方式\n\n前段时间我们用 Codex 制作了许多 3D 场景，很多朋友希望我们能出一期详细教程。\n\n这一章节的场景主要是用 Codex + Tripo + Nanobanana 制作的，为了网页端能跑，我们…",
+      "created_at": "Mon Sep 07 05:26:00 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2096704996381266424",
+        "text": "Codex 做 3D 场景的正确打开方式\n\n前段时间我们用 Codex 制作了许多 3D 场景，很多朋友希望我们能出一期详细教程。\n\n这一章节的场景主要是用 Codex + Tripo + Nanobanana 制作的，为了网页端能跑，我们的使用的技术栈是 three.JS 和 Web3D\n\n总之我知道的都在视频里啦～\n\n恰逢 GPT 6 Astra 发布，如果你在网上看到了很多惊艳的案例，又对自己做出来的效果没有那么满意，那这一期分享可能会对你有启发～\n\n#codex #tripo #threejs",
+        "created_at": "Sun Sep 06 21:00:00 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2096660889323831296",
+            "url": "https://video.twimg.com/amplify_video/2096660889323831296/vid/avc1/1280x720/nw09pZHLot9bLkC8.mp4?tag=29",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2093586165836529692",
+          "text": "用 Codex 搭了一个新的 3D 游戏场景：《爱丽丝梦游仙境》的第五章“毛毛虫的建议”。\n\n感觉现在对如何用 Codex 做 3D 小场景越来越有心得了！应该不久就能完成全部了！\n\n大家会对如何通过 Vibe Coding 做类似的小游戏感兴趣吗？如果人多，我们会在近期出个教程分享一下！ https://t.co/X9uTCKdViU",
+          "created_at": "Sat Aug 29 06:26:53 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "video",
+              "id": "2093582323522617344",
+              "url": "https://video.twimg.com/amplify_video/2093582323522617344/vid/avc1/2560x1440/DwToOzDloCeb1_PU.mp4?tag=29",
+              "bitrate": 10368000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1515128158835691526",
+            "name": "Ring Hyacinth",
+            "screen_name": "ring_hyacinth",
+            "description": "Artist working with @simonxxoo and #AI\n📮ringhyacinth@gmail.com | DM open.",
+            "followers_count": 20189,
+            "friends_count": 600,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 21,
+            "favorite_count": 248,
+            "reply_count": 78,
+            "quote_count": 6
+          }
+        },
+        "user": {
+          "id": "1515128158835691526",
+          "name": "Ring Hyacinth",
+          "screen_name": "ring_hyacinth",
+          "description": "Artist working with @simonxxoo and #AI\n📮ringhyacinth@gmail.com | DM open.",
+          "followers_count": 20189,
+          "friends_count": 600,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 66,
+          "favorite_count": 532,
+          "reply_count": 78,
+          "quote_count": 15
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 246086,
+        "friends_count": 1718,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 66,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2096743636826300768",
       "text": "RT @Alice_Weidel: Sachsen-Anhalt hat gesprochen: Die AfD ist mit 44,2% mehr als doppelt so stark wie die CDU und hat einen Regierungsauftra…",

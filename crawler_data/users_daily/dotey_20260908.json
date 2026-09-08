@@ -1,0 +1,117 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 246184,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260908",
+  "last_updated": "2026-09-08T02:44:36.190815",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2097136026997166186",
+      "text": "RT @wongcken: @dotey Tibo有反駁這個說法\n\nhttps://t.co/MxVcKAOO6e",
+      "created_at": "Tue Sep 08 01:32:46 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2097134341726040159",
+        "text": "@dotey Tibo有反駁這個說法\n\nhttps://t.co/MxVcKAOO6e",
+        "created_at": "Tue Sep 08 01:26:04 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2097084139627561041",
+          "text": "I challenge this a bit\n\n(a) Codex was started as an internal tool. The goal was explicitly to build what was the highest leverage tool to accelerate infrastructure buildout.\n(b) I don’t think the Meta vs non-Meta is particularly enlightening here. Most of us who came from older tech companies were surprised at how far OpenAI had taken Python scripts and had a desire to scale OpenAI further.\n(c) A ton of infrastructure and internal tools were built over the last few years, it’s not the case that we were just waiting for AGI to appear.",
+          "created_at": "Mon Sep 07 22:06:35 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1953337039510003712",
+            "name": "Tibo",
+            "screen_name": "thsottiaux",
+            "description": "Codex & ChatGPT @OpenAI",
+            "followers_count": 612785,
+            "friends_count": 71,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 22,
+            "favorite_count": 1055,
+            "reply_count": 39,
+            "quote_count": 4
+          }
+        },
+        "user": {
+          "id": "1104251007351963649",
+          "name": "Ken Wong",
+          "screen_name": "wongcken",
+          "description": "Love about software and technology",
+          "followers_count": 24,
+          "friends_count": 1242,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 2,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2097147133468008561",
+      "text": "Skill 的 Scripts，可以是预先写好，也可以只给说明，运行时 Agent 现场生成。\n\nAgent 现场生成 Script 的好处是灵活，可以随时随地根据场景需要去写脚本，实际上就算没有 Skill，Agent 已经在这么干了，仔细看工具调用就经常可以看到 Agent 动态生成 Python 脚本去执行一些任务。\n\n现场生成 Script 的缺点是费 Token 和慢，另外稳定性要差一些，可能写完有 bug 还需要反复调试，一些边边角角的情况很难覆盖全面。\n\n所以通常 Skill 的 Scripts 都是预先写好的，Agent 只要传入参数就可以马上得到结果。\n\n举个例子来说，一个 Markdown 转 HTML 的 Skill，这个 Agent 现写 Script 就只能做个勉强能的，很难兼顾样式美观、各种条件都覆盖，如果预先写好 Script，就会稳定很多。",
+      "created_at": "Tue Sep 08 02:16:54 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2097122430468932021",
+        "text": "@dotey 那么 skill 的 script 需要预先写好吗？还是只给说明，等运行时候 agent 现场生成？",
+        "created_at": "Tue Sep 08 00:38:44 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "330780332",
+          "name": "lalaland",
+          "screen_name": "InnerHack",
+          "description": "test....",
+          "followers_count": 50,
+          "friends_count": 280,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 2,
+        "quote_count": 1
+      }
+    }
+  ]
+}

@@ -1,12 +1,461 @@
 {
   "date": "20260910",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-09-10T02:46:40.617627",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-09-10T08:37:23.009542",
+  "tweet_count": 209,
+  "unique_tweet_count": 209,
+  "total_crawled": 400,
+  "duplicates_removed": 191,
   "tweets": [
+    {
+      "id": "2097946976524399075",
+      "text": "为什么越来越多人愿意“自己搓一个工具”？Vibe Coding正在发生什么变化？\n\n微博VibeLab AI 创意赛收官了，一共有 2500 多件原创作品，2.4 亿多话题阅读。很荣幸这次是评委一员，有机会翻看了不少优秀的参赛作品，也转发了其中一部分。\n\n一个直观的感受就是软件开发这种事情，不再需要专业人士了，普通人也能 Vibe 一个工具出来。\n\n所以借这个机会，整理总结一下：为什么越来越多人愿意“自己搓一个工具”？Vibe Coding正在发生什么变化？\n\n一、写代码这件事，门槛和成本都降下来了\n\n写代码以前是程序员的专利，想写个工具，别说学语言框架，搭个环境都费劲的要死，随便一个环境都能把你卡住，像我这样写程序得有很多年的，换个不熟悉的语言，一样也搞不定。\n\n现在借助 AI Agent，门槛一降再降，现在你只要有一个 Agent，会打字或者会语音，都能指挥 Agent 帮你写一个 App 出来。写代码这件事，从以前需要专业技能，到现在变成了语言表达能力。\n\n我自己身上都有明显变化，从以前对 Vibe Coding 的嗤之以鼻，到现在“真香”，每天都大量的在指挥 Agent 帮我写代码。\n\n二、以前的软件，满足不了长尾需求\n\n长尾理论说的是，需求分布是一条长长的尾巴：头部是大多数人共有的需求，尾巴上是无数小众的、个性化的需求。传统软件只能做头部，因为为少量用户单独开发功能，成本上是不合算的。\n\n而且，就算你有个好想法，也很难传递到开发者那里。想象一下一个普通用户的需求要经过的链条：\n用户反馈 → 产品经理收集筛选 → 转化成需求文档 → 设计师出设计稿 → 程序员做系统设计 → 编码 → 测试 → 运维部署\n\n每一环都在过滤、都在排优先级。最终大部分普通用户的需求，都被筛选掉了，软件最终只能取最大公约数，做绝大部分人都需要的那部分。\n\n结果就是，市面上的软件很多，但每个人都有一堆“要是能这样就好了”的小需求，从来没有被满足过。\n\n这次 VibeLab 里我印象很深的一个作品是 @机器旁白 做的 SiaoCut https://t.co/opuojDmWzL 。起因是他看到我做的 BaoCut，很喜欢“转写、像改文稿一样编辑、AI 处理、人工审阅、导出”串成一条工作流的思路，但 BaoCut 只支持 macOS，他是 Windows 用户。放在以前，他只能等我哪天有空做个 Windows 版，或者就此作罢。现在他自己和 AI 一起做了一个，而且不是简单复刻，还在这个过程中想清楚了自己关心的问题：AI 进入剪辑流程后，应该拿到多少数据，能替创作者决定到哪一步。\n\n这就是长尾需求被满足的样子：不需要等别人来做，有需求的人自己就能把它做出来！\n\n三、Vibe Coding 让成本变低、链条变短\n\n所以以前那种长长的从需求到交付的链条，现在可以缩成简单的几步：\n有个想法，让 AI 去设计、制作、部署。\n\n甚至于很多需求根本不需要做成一个有界面的产品。\n\n比如你想每天自动整理某个表格里的待办，或者每周追踪最新的 AI 资讯，这些事让 AI Agent 帮你写个脚本，再让它自己定时调用就行了。\n\n比如 @张铁蕾 开源的 Bridgic Agent 就是这样的作品：输入 /build，描述你的目标，它自己去探路、生成、验证，遇到需要你判断的地方再来问你。做出来的不是一次性跑完的任务，而是可以长期运行、随时修改的工作流。 https://t.co/2Q2e6cA1el\n\n还有一种更轻的做法：把你的操作流程、经验和偏好写成 Agent Skill，就像一份告诉 AI 怎么做某类事的说明文档，那么以后 Agent 就能按照 Skill 的说明帮你把很多繁琐的事情变成自动化半自动化的操作，大幅提升你的效率。\n\n现在随着 Agent Computer Use（操作电脑）的能力增强，你甚至可以让 AI 观察你操作一遍，然后它自己能把它你的操作录制成 Skill。不需要界面、不用部署，但它确实能替你干活。\n\n四、模型和智能体的能力，一直在变强\n\n现在普通人也能 Vibe Coding，还有一个重要原因是模型能力在变强。\n\n回头看这几年的变化：\n\n最初，像 GitHub Copilot 只能做代码补全，你写一半它提示后半段； 然后，它能根据描述生成一段完整的代码； 后来， Claude Code 能自己在项目里探索，读文件、找上下文，把一个功能完整实现； 现在，主流 Agent 都已经能做设计、写代码，还能帮你操作电脑，打开浏览器自己验证做出来的东西对不对。\n\n模型每上一个台阶，普通人做工具的难度就降一截。VibeLab 期间正好赶上 Kimi K3 发布，很快就有创作者拿它做体检报告工具、做斗地主游戏，还有人把 Claude Code、Qoder、GLM、Kimi K3 混着用。\n\n由此也可以看得出越来越多的人已经不再把 AI 当聊天机器人了，能配合 Agent 把 AI 当干活的工具。\n\n五、变化的还有“做工具”这件事本身的心态\n\n看作品的时候我还注意到一点：很多作品不追求改变世界这种宏大的事，就是想先解决一个具体麻烦。比如说工作流太碎、长辈不听劝、拍照没人帮、看不懂热点，作品的起点都是这样一个一个具体的痛点。\n\n最初微博在设定大赛规则的时候，把赛道拆进职场、生活、视觉、微博这些具体场景，现在看来还挺有道理的，因为这确实能激发人 Vibe 的冲动，想去用 AI 解决生活中的问题。\n\n其实这次参赛的作品也不都是工具。@世界第一裹凉皮 把 32657 位诗人、933857 首诗做成了一个三维宇宙 https://t.co/Ye1eHGxZTz ；@德里克文 的「华夏博物志」把全国博物馆收进一幅可以点开的中国画 https://t.co/LPTiBI6mzQ ；@海辛Hyacinth 把三星堆&金沙文物变成了互动场景\nhttps://t.co/cU0HwuIDCq 。这些作品看起来似乎不像工具那么实用，但让我们看到 Vibe Coding 不只是提效，也可以服务于文化和审美。\n\n以前想做这样的东西，需要一个团队，现在一个人，不需要会写程序，有自己的想法加上 AI 就可以试试看。\n\n最后，如果你也想自己搓一个工具，我的一点建议：\n\n从写一个 Agent Skill 开始。 这是成本最低的方式：不用部署，不用界面，把你希望 AI 帮你做的某类事情写清楚就行。做一次，发现哪里不对，改一改，很快就能用起来。\n\n顺便推荐下我的书《图解 Skill》，也是不错的 Skill 入门书籍。\n\n如果要做网页或者 App，不用一上来就让 AI 把整个东西做完。 建议分步走：\n\n1. 先和 AI 一起讨论需求，把你想要什么说清楚，让它复述一遍，确认理解一致。\n2. 先做原型。也就是用模拟数据，只看长什么样、怎么操作，不接真实逻辑。原型的好处是改起来成本低，修改容易，就算推翻重来都很快。\n3. 再做 MVP（最小可行产品），只做一个最核心的功能，先做一个小的能跑的东西出来。\n4. 再慢慢迭代，有了 MVP 了，能跑起来了，就可以慢慢迭代，一次加一个小功能，AI 能处理的过来，你也验收的过来，日积月累，慢慢会变成成熟的软件。\n\n做完一定要验收。 从头到尾按一个真实用户的路径试一遍，AI 说做完验收完不一定靠谱，还得自己上手用用。\n\n注意安全。 涉及钱、隐私、账号权限的东西要格外小心，拿不准的地方去找专业人士问一下。就像 SiaoCut 的作者给 AI 划定了边界：AI 只拿到任务所需的文本和时间戳，不碰原始媒体，处理完只生成待审建议，最终由人决定。这样的思路值得借鉴。\n\n最后说一句，做出来之后，发出来。\n\n这次 VibeLab 里不少作品原本只是作者电脑里的一个 Demo，发到微博之后被讨论、被转发，有的还上了热搜。对于自己动手做东西的人来说，“作品被看见”是最好激励，也是下一次迭代的开始。",
+      "created_at": "Thu Sep 10 07:15:11 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2097946968332857346",
+          "url": "https://pbs.twimg.com/media/HR1npv0WcAId_-5.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 246891,
+        "friends_count": 1719,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 24,
+        "reply_count": 13,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2097929456891646121",
+      "text": "RT @TheBabylonBee: 'Oh, Your Intelligent Creations Are Trying To Kill You? That's Interesting,' Says Jesus https://t.co/3fUeB5qbGs",
+      "created_at": "Thu Sep 10 06:05:34 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2097807315453764005",
+        "text": "'Oh, Your Intelligent Creations Are Trying To Kill You? That's Interesting,' Says Jesus https://t.co/3fUeB5qbGs",
+        "created_at": "Wed Sep 09 22:00:14 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4914384040",
+          "name": "The Babylon Bee",
+          "screen_name": "TheBabylonBee",
+          "description": "Fake news you can trust 🐝",
+          "followers_count": 5267240,
+          "friends_count": 8,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1185,
+          "favorite_count": 10292,
+          "reply_count": 246,
+          "quote_count": 131
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241629120,
+        "friends_count": 1405,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1185,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2097929222639767712",
+      "text": "Congrats Boring Company team!",
+      "created_at": "Thu Sep 10 06:04:38 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2097916729246810158",
+        "text": "The Boring Company is pleased to announce our Series D funding round of $3 billion, led by the United Arab Emirates. The financing now values The Boring Company at $23 billion. \n\nOther key investors in the round include Human Capital, Vy Capital, Valor Equity Partners, Sequoia Capital, A16Z, Temasek, Shamal Holding, and Baron Capital, in addition to other valued existing and new investors.\n\nFull details here: \nhttps://t.co/YArv2XllUL",
+        "created_at": "Thu Sep 10 05:15:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2097914339374333952",
+            "url": "https://pbs.twimg.com/media/HR1J-febAAA_G9A.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "859816394556284929",
+          "name": "The Boring Company",
+          "screen_name": "boringcompany",
+          "description": "Beat the snail",
+          "followers_count": 1183538,
+          "friends_count": 10,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 250,
+          "favorite_count": 2517,
+          "reply_count": 160,
+          "quote_count": 77
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241629120,
+        "friends_count": 1405,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 737,
+        "favorite_count": 6817,
+        "reply_count": 774,
+        "quote_count": 58
+      }
+    },
+    {
+      "id": "2097925257050853502",
+      "text": "RT @uge198568: 这是一封年入百万知识付费的检讨书：\n同样作为一把“镰刀”，这是我停更 3 个月一直在思考的事。\n\n所有事情都有周期性的，而这就是知识付费的周期\n\n就是所有观众都被教育之后，群体意识觉醒，慢慢发现做知识付费的博主，自身没有知识付费以外的商业版图，那就…",
+      "created_at": "Thu Sep 10 05:48:53 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2097866584639606855",
+        "text": "这是一封年入百万知识付费的检讨书：\n同样作为一把“镰刀”，这是我停更 3 个月一直在思考的事。\n\n所有事情都有周期性的，而这就是知识付费的周期\n\n就是所有观众都被教育之后，群体意识觉醒，慢慢发现做知识付费的博主，自身没有知识付费以外的商业版图，那就是一场收割盛宴谢幕之时。\n\n知识付费应该是额外增加现金流，同时个人偏好喜欢帮助别人，获取自我价值的实现。\n\n如果一个知识付费的博主，特别是商业博主，自身都没落地的项目在实现被动收入的时候，那这个人至少在搞流量，获客，卖课的这件事上是值得我们学习的，而不是那个人的课程。\n\n而对于知识博主来说，可能也存在一个很大的陷阱，足以让自己翻车的陷阱。\n\n那就是真的稳定，长期的实体项目，盈利效率前期是很低的，甚至是亏损的，那怎么都不如知识付费来钱快。\n\n这也就是大多数知识付费的博主扛不住第一个生命周期的原因。\n\n这件事的客观规律是什么？\n\n1，利润是对承担不可转移风险与解决物理摩擦的补偿。\n卖课程的高毛利，很大程度是因为它避开了供应链、物流、售后、团队组织等沉重的物理世界阻力。\n但商业世界的规律是：没有阻力的地方，通常也没有壁垒。\n实体或深度落地业务前期之所以盈利艰难甚至亏损，是因为资本和精力都沉淀在了那些“脏活、累活、慢活”上。\n这些繁琐的交付细节虽然拉低了短期收益率，但它们也是在构筑护城河，让别人无法在三五天内靠复制文案就抢走自己的生意。\n\n2，现金流不等于商业资产，很多博主容易把“高爆发的短期现金流”误判为“可持续的商业资产”。\n卖课赚到的是即时兑现的流水，但纯IP本身的生命周期极其脆弱，一旦受众对博主的人设产生疲劳或信任透支，获客成本就会呈指数级飙升。\n而真正的商业资产是稳定的供应链、标准化的产品体系、可复用的组织流程和具有高黏性的客群关系，这才能在周期轮动中提供长久的抗风险能力。\n所以当我做了一年知识付费之后就发现，我无法教会的人，他们最终会对我失去信任，这里不在乎是谁的责任，只看结果。这里最尴尬的地方是，这些用户必须对我失去信任，因为只有这样，才能合理化为什么同样的方法有点人成功，而我没有成功？那肯定不是我的问题，必须是外部原因。这是人性。\n\n3，健康的商业循环遵循“能力溢出”，而非“内卷自噬”。\n长期立得住的商业形态，往往是自身主营业务跑通后形成的副产品。\n实战经验是主资产，分享与教学只是近乎零边际成本的渠道放大器和信任放大器。\n一旦主客颠倒，一个人唯一的造血来源变成了“教别人如何赚钱”，商业逻辑就沦为了自我参照的封闭循环。\n靠售卖方法论维持的方法论，终究会被现实的交付结果击穿。\n\n当这些思考完毕之后，我决定停掉所有知识付费产品，只保留和我链接的付费社群，从而开始落地自己非知识付费的商业资产和落地业务，用自己的认知和知识去完成具体的业务，而不是打包变现。",
+        "created_at": "Thu Sep 10 01:55:44 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1948730310100979712",
+          "name": "U哥",
+          "screen_name": "uge198568",
+          "description": "在这里记录脑海中每天的奇思妙想\n📲 小红书：U哥帮你破局",
+          "followers_count": 7786,
+          "friends_count": 117,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3,
+          "favorite_count": 19,
+          "reply_count": 11,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 246891,
+        "friends_count": 1719,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2097916357979615503",
+      "text": "The logic is symmetric",
+      "created_at": "Thu Sep 10 05:13:31 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2097666063454355593",
+        "text": "If remigration is ethnic cleansing, then so is mass migration.",
+        "created_at": "Wed Sep 09 12:38:56 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1592931042087911425",
+          "name": "Carlos That Notices Things",
+          "screen_name": "QuetzalPhoenix",
+          "description": "The way of the world is to bloom and to flower and die but in the affairs of men there is no waning and the noon of his expression signals the onset of night.",
+          "followers_count": 57846,
+          "friends_count": 5051,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2269,
+          "favorite_count": 21854,
+          "reply_count": 177,
+          "quote_count": 45
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241629120,
+        "friends_count": 1405,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1066,
+        "favorite_count": 8689,
+        "reply_count": 681,
+        "quote_count": 55
+      }
+    },
+    {
+      "id": "2097887156396003698",
+      "text": "在无人关注的角落，Meta 也重置了",
+      "created_at": "Thu Sep 10 03:17:29 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2097880616041885901",
+        "text": "we just reset everyone’s muse token usage.\n\nenjoy!!! https://t.co/Kgfr9sCVvn",
+        "created_at": "Thu Sep 10 02:51:30 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2097880608693424128",
+            "url": "https://video.twimg.com/amplify_video/2097880608693424128/vid/avc1/576x576/1z2dlRFQP3pUPJuf.mp4?tag=29",
+            "bitrate": 832000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "615818451",
+          "name": "Alexandr Wang",
+          "screen_name": "alexandr_wang",
+          "description": "chief ai officer @meta, founder meta superintelligence labs, founder @scale_ai. rational in the fullness of time",
+          "followers_count": 663241,
+          "friends_count": 888,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 104,
+          "favorite_count": 3471,
+          "reply_count": 474,
+          "quote_count": 124
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 246891,
+        "friends_count": 1719,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 37,
+        "reply_count": 41,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2097884487455834543",
+      "text": "And @Grok @Bot gets better almost every day",
+      "created_at": "Thu Sep 10 03:06:53 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2097812178766025146",
+        "text": "I am completely sold on Grok Bot. It is awesome.",
+        "created_at": "Wed Sep 09 22:19:33 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "981179219207213057",
+          "name": "Pierre Ferragu",
+          "screen_name": "p_ferragu",
+          "description": "Commenting on technology - no investment advice. Proud producer of https://t.co/2o6yVCO1My",
+          "followers_count": 132111,
+          "friends_count": 94,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 18,
+          "favorite_count": 619,
+          "reply_count": 63,
+          "quote_count": 12
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241629120,
+        "friends_count": 1405,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 581,
+        "favorite_count": 5863,
+        "reply_count": 1292,
+        "quote_count": 88
+      }
+    },
+    {
+      "id": "2097884035918045516",
+      "text": "RT @davelee: After experiencing Cybercab for the past few days in Austin, I think the biggest thing people are missing is the zero-sum game…",
+      "created_at": "Thu Sep 10 03:05:05 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2097809911635697767",
+        "text": "After experiencing Cybercab for the past few days in Austin, I think the biggest thing people are missing is the zero-sum game built into Uber.\n\nYou have two people sharing one environment, with different preferences. The driver likes the temperature at 66. I want 72. If I get more comfortable, he gets less comfortable.\nHe likes his music. I want mine. He wants the windows open. I want them closed. I take a few extra minutes getting to the car, and those are minutes another human spends waiting for me.\n\nThere’s this constant little tug of war. My comfort and convenience can come at the expense of his. And I don’t blame the driver. It’s his working environment. He’s in that car all day. Of course he has preferences. That’s why I just let him play whatever music he wants. I don’t want my comfort to come at his expense. We’ve gotten so accustomed to this that we barely notice the tension anymore.\n\nThen you take a Cybercab. I set the temperature to 72. Nobody gets less comfortable.\nI play my Spotify at the volume I want. Nobody has to give up their music. I grab my Starbucks and take a couple of minutes to walk over, within the pickup window. Nobody is sitting there getting irritated with me.\n\nThe car has no competing preferences. That is a profound change in the experience. I can optimize the ride around what makes me comfortable without asking another person to sacrifice what makes them comfortable. And you feel it. You get in, lean back, and relax. There’s no negotiation. No wondering whether your request is going to annoy someone. That whole layer of social tension disappears.\n\nI think this is a huge part of Cybercab’s value. Removing that zero-sum dynamic changes what the service feels like at its core. Once people experience that, I think a lot of them are going to have a very hard time going back to Uber.",
+        "created_at": "Wed Sep 09 22:10:33 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2097807289721966592",
+            "url": "https://video.twimg.com/amplify_video/2097807289721966592/vid/avc1/1920x1080/qd7dLICyaoiX0SNH.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "29893444",
+          "name": "Dave Lee",
+          "screen_name": "davelee",
+          "description": "Host of YouTube channel Dave Lee on Investing, TSLA investor since 2012, building with AI.",
+          "followers_count": 631128,
+          "friends_count": 468,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 658,
+          "favorite_count": 6658,
+          "reply_count": 537,
+          "quote_count": 101
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241629120,
+        "friends_count": 1405,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 658,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2097882250977382576",
+      "text": "Tesla virtual powerplant grid stabilization system",
+      "created_at": "Thu Sep 10 02:58:00 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2097874342894096390",
+        "text": "~69,000 Powerwall owners across California are currently dispatching more than 500 MW to the grid, helping meet peak demand during today's heatwave\n\nEquivalent to the output of a power plant, but from Powerwalls already in people's homes https://t.co/bddhjTT8ep",
+        "created_at": "Thu Sep 10 02:26:34 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2097873817330958336",
+            "url": "https://pbs.twimg.com/media/HR0lHzGawAALIR7.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1405917556318392324",
+          "name": "Tesla Energy",
+          "screen_name": "teslaenergy",
+          "description": "Produce & store your own energy with Solar Panels & Powerwall",
+          "followers_count": 265263,
+          "friends_count": 41,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 317,
+          "favorite_count": 2643,
+          "reply_count": 127,
+          "quote_count": 77
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241629120,
+        "friends_count": 1405,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1022,
+        "favorite_count": 8890,
+        "reply_count": 687,
+        "quote_count": 72
+      }
+    },
     {
       "id": "2097878840655626568",
       "text": "我让 Agent Review 代码时是这么写提示词的：\n1. 先搞清楚这个 PR 解决的问题是什么\n2. 如果不看这个 PR 的实现，要解决这个问题你会怎么实现？\n3. review 代码后对比你自己的方案给出审查结果",

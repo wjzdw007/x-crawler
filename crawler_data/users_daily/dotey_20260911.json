@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 247674,
+    "followers_count": 247768,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260911",
-  "last_updated": "2026-09-11T02:39:21.841906",
-  "tweet_count": 2,
+  "last_updated": "2026-09-11T08:31:41.790056",
+  "tweet_count": 5,
   "tweets": [
     {
       "id": "2098203738205024315",
@@ -97,6 +97,135 @@
       "quoted": null,
       "stats": {
         "retweet_count": 4,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2098259961990017408",
+      "text": "用中转站的要注意信息安全",
+      "created_at": "Fri Sep 11 03:58:53 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2042423713019412941",
+        "text": "26 LLM routers are secretly injecting malicious tool calls and stealing creds. One drained our client $500k wallet.\n\nWe also managed to poison routers to forward traffic to us. Within several hours, we can directly take over ~400 hosts. \n\nCheck our paper: https://t.co/zyWz25CDpl https://t.co/PlhmOYz2ec",
+        "created_at": "Fri Apr 10 02:05:34 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2042423708829302784",
+            "url": "https://pbs.twimg.com/media/HFglir2bQAA0zmC.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1048192561863507968",
+          "name": "Chaofan Shou",
+          "screen_name": "shoucccc",
+          "description": "",
+          "followers_count": 75959,
+          "friends_count": 2524,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 820,
+          "favorite_count": 4435,
+          "reply_count": 181,
+          "quote_count": 204
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 22,
+        "reply_count": 13,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2098261118368067823",
+      "text": "这个更夸张\nhttps://t.co/mQAQLOOj4r",
+      "created_at": "Fri Sep 11 04:03:29 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2098169782541631871",
+        "text": "I bought a Fable dataset from one of the top Chinese LLM routers yesterday. \n\nWith just 6TB data, I can take over 7 Chinese/CIS gov entities &amp; 19 top Chinese firms like Xiaomi, Huawei, NIO, Minimax using SSH keys, VPN configs, Aliyun keys, GitLab tokens sent to the router. https://t.co/n6Xln0ROei",
+        "created_at": "Thu Sep 10 22:00:32 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2098169774132137984",
+            "url": "https://pbs.twimg.com/media/HR4ySwGbkAA8BRf.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1048192561863507968",
+          "name": "Chaofan Shou",
+          "screen_name": "shoucccc",
+          "description": "",
+          "followers_count": 75959,
+          "friends_count": 2524,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 460,
+          "favorite_count": 4802,
+          "reply_count": 143,
+          "quote_count": 217
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2098279403046269347",
+      "text": "RT @king1818888: 前两周面了一家硅谷背景的 AI 基础设施团队，考官抓着大模型结构化输出的容错刨根问底。\n\n面试官发难：考官指着屏幕上的 Python 代码：“我们需要大模型提取实体并返回纯 JSON 供后端解析，怎么彻底防止它偶尔在开头输出一段‘好的，这是为您…",
+      "created_at": "Fri Sep 11 05:16:08 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2098030482273235439",
+        "text": "前两周面了一家硅谷背景的 AI 基础设施团队，考官抓着大模型结构化输出的容错刨根问底。\n\n面试官发难：考官指着屏幕上的 Python 代码：“我们需要大模型提取实体并返回纯 JSON 供后端解析，怎么彻底防止它偶尔在开头输出一段‘好的，这是为您生成的回复：’或者把 Markdown 反引号带进去？”\n\n我心里怎么想的：我强忍住想笑的冲动：“这不就是我们日常调教大模型的基本功吗？恐吓它、教育它、多给两个 Few-shot 样例，它不就老实了？！”\n\n我嘴上怎么答的：“呃,在 Prompt 里加粗强调：‘【死命令】：只许输出纯 JSON，严禁输出任何多余废话或 Markdown 符号，违者扣分！’”\n\n面试官的反应：考官推了推眼镜，眼神里满是看破红尘的无奈：“不管你怎么用感叹号恐吓大模型，在概率采样的世界里，它总有千分之一的几率抽风，你的后端解析就会在半夜报 500。”\n\n后来进了大厂跟组里负责推理引擎的 Tech Lead 聊起这事，才发现我当时有多天真。靠自然语言 Prompt 永远无法保证 100% 确定性。大厂的做法是走底层约束解码（Grammar-Guided Decoding），比如通过 Outlines、Jsonformer 或者模型官方原生的 Structured Outputs API，直接在 Logits 采样阶段把所有非合规字符的概率强行置零！",
+        "created_at": "Thu Sep 10 12:47:01 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1865995824775462912",
+          "name": "Kimberly",
+          "screen_name": "king1818888",
+          "description": "现在｜澳洲 AI-Native Builder｜和 @kosxai 一起做产品  \n赛道｜AI 产品｜跨境电商｜金融｜互联网毒舌段子手  \n在做｜FlareMo 笔记｜Video Script 逐字稿  \n下一步｜Emotional OS｜银发数字人",
+          "followers_count": 11140,
+          "friends_count": 739,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 9,
+          "favorite_count": 92,
+          "reply_count": 22,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 9,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

@@ -1,0 +1,106 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 247674,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260911",
+  "last_updated": "2026-09-11T02:39:21.841906",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2098203738205024315",
+      "text": "这期播客是 The Pragmatic Engineer 对 OpenAI Codex 团队负责人 Thibault（Tibo）的访谈，聊了 Codex 的诞生、技术决策、工程文化以及软件开发方式的变迁。https://t.co/AEv4YPnSZl\n\n以下是核心要点：\n\n个人经历与加入 OpenAI\n\nThibault 是比利时人，学应用数学出身，先后做过制药供应链优化的创业公司，在 Google 做过加速移动网页的项目（后被砍掉，让他学到了要时刻审视项目真实影响力的教训），之后在 Google Maps 做评论，再转到 DeepMind。在 DeepMind 期间，他参与了一个内部聊天机器人的开发——本质上就是 ChatGPT，但比 ChatGPT 早了一年。内部传播很快，大家都在分享对话，但 DeepMind 不具备把它作为产品发布的机制，最终没能推出。\n\n后来他得知 ChatGPT 只有大约 20 个人在维护，这让他既震惊又觉得很有吸引力——这意味着极高的个人影响力。于是他加入 OpenAI，进去就赶上了推理模型的冲刺，大约一个月后 o1 preview 就发布了。\n\n为什么用 Rust 写 Codex\n\n这是一个反直觉的决定——当时模型对 Rust 的支持并不好，业界其他 AI 编码工具基本都用 TypeScript 或 Python。但团队从第一性原理出发，认为智能体的核心需要健壮、安全、高效，而 Rust 的编译时验证特性天然适合智能体场景。同时用不同语言也强制建立了产品界面和智能体核心之间的清晰边界，避免代码耦合。事实证明 Rust 确实\"很快就变得非常适合智能体开发\"。\n\n开源和模型无关的策略\n\nCodex CLI、SDK 都是开源的，而且支持非 OpenAI 模型——这在主要 AI 实验室中是独一无二的。理由很实际：如果不开源，别人只需改十行代码就能 fork 出一个支持其他模型的版本，那还不如自己直接支持。开源的好处包括新员工入职前就已经熟悉代码库、社区贡献、以及逼迫自己靠模型和产品体验赢用户而非靠锁定。\n\n代价也很明显：竞争对手会在你还没发布的时候就抄走你正在公开开发的功能，\"确实有点刺痛\"；还有大量低质量 PR 需要处理。\n\n工程文化与代码审查的变革\n\n新员工入职后听到最多的一句话是\"你问过 Codex 了吗？\"——因为 Codex 在 OpenAI 内部接入了 Slack、文档、所有代码，几乎任何问题都能给出不错的回答。\n\n代码审查正在发生质变。OpenAI 开发了专门的代码审查模型，能在逻辑推理和安全漏洞检测上达到\"超人水平\"——可以深入三四层依赖去发现文档错误导致的不变量违反。安全审查已经是强制自动化的，发现安全问题会直接阻止合并。一个 PR 可以当天提交、当天上线到十亿用户的 ChatGPT 上。\n\n代码审查的角色正在从\"正确性检查\"转向\"意图讨论\"——你到底想做什么？这件事值不值得做？这种讨论不一定要围绕代码发生。\n\n维护成本和重构的变化\n\n维护一直是软件工程的\"税\"，但现在大量维护工作（依赖升级、安全补丁）可以完全自动化。更重要的是，重新架构的成本也急剧下降——以前可能要花几个月甚至几年的重构，现在快得多。但好的架构设计反而更重要了：设计好\"盒子\"和不变量，盒子内部随便改都不影响其他部分。\n\nHarness 与模型的关系\n\n一个有趣的洞察：harness（工具/脚手架）总是\"走在模型前面\"。Codex 团队的工作本质上是为模型搭建拐杖——提醒它跑测试、保持目标一致等。然后下一代模型训练时会把这些能力内化，拐杖就可以去掉，developer message 也会越来越短。最新一代模型已经不再需要 /goal 命令来保持长期任务的专注，\"你直接告诉模型去工作一周，它就真的会做到\"。\n\nCodex 与 ChatGPT 的合并\n\n这是一个重大工程挑战：Codex 原本完全本地运行，ChatGPT 是托管云服务，两套完全不同的技术栈要统一。目标是让云端版本具备本地版本同样的能力，同时高效到能纳入 20 美元/月的 Plus 计划。ChatGPT Work 模式本质上是在云端虚拟机里运行完整的 Codex harness，机器配置强大到用户可以在里面训练模型、安装 Blender 做 3D 建模。\n\n有趣的是，Codex 在整个合并过程中还充当了\"记者\"角色，因为它能访问所有 Slack 讨论和文档，记录了团队的辩论和决策过程。\n\nThibault 的个人用法与建议\n\n他大量使用手机上的 ChatGPT Work，通过语音口述发送任务，定制了专属的技能和指令来生成他能高效消化的报告和幻灯片。任何问题——公众舆情、生产日志、功能使用率分析、团队动态——30 分钟内都能得到答案。周末他还会用 Codex 做代码探索和原型，\"一天之内就能把脑子里的想法变成可以展示给人看的东西\"。\n\n对工程师的建议：保持深度好奇心，训练自己快速理解系统的能力（\"五个为什么\"不断追问），以及与你服务的用户群体保持同步——如果你无法清晰表达意图，就很难做出好的工作。",
+      "created_at": "Fri Sep 11 00:15:28 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2097796173356515331",
+          "url": "https://video.twimg.com/amplify_video/2097796173356515331/vid/avc1/1920x1080/73ECx0dKcN75MA5W.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 14,
+        "favorite_count": 75,
+        "reply_count": 12,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2098231453398057355",
+      "text": "RT @Jackywine: 给大家介绍一下！\n网页红 警中文版的开发者：\n@huangkaoya \n他用他精湛的技术让我得以在现代依旧可以玩到原汁原味的《红色警戒 2》中文网页版，还可以联机，每天体验被电脑上的老牧师虐\n\n对此我的期望是什么时候能举办一届线下版推友红警大赛？…",
+      "created_at": "Fri Sep 11 02:05:36 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2097856466338341369",
+        "text": "给大家介绍一下！\n网页红 警中文版的开发者：\n@huangkaoya \n他用他精湛的技术让我得以在现代依旧可以玩到原汁原味的《红色警戒 2》中文网页版，还可以联机，每天体验被电脑上的老牧师虐\n\n对此我的期望是什么时候能举办一届线下版推友红警大赛？\n\n在线玩： https://t.co/o51dpjkiVk https://t.co/Jc3qfP5wy9",
+        "created_at": "Thu Sep 10 01:15:32 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2097856458683752448",
+            "url": "https://pbs.twimg.com/media/HR0VVZGaoAAHOT-.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2097677422372208754",
+          "text": "推上有没有喜欢玩红色警戒的友友！",
+          "created_at": "Wed Sep 09 13:24:05 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1404738934043602947",
+            "name": "Jackywine",
+            "screen_name": "Jackywine",
+            "description": "Obsidian VIP | PromptEngineer | 深入学习 OpenAI Anthropic 以及国产大模型\n其实不过 是工作之余分享 AI、设计、产品的普通纯小白网友罢了\n\n✈️ https://t.co/HRpOru3LUj\n\n列表https://t.co/Jyj3HMNTsZ",
+            "followers_count": 47211,
+            "friends_count": 3750,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 0,
+            "favorite_count": 10,
+            "reply_count": 11,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "1404738934043602947",
+          "name": "Jackywine",
+          "screen_name": "Jackywine",
+          "description": "Obsidian VIP | PromptEngineer | 深入学习 OpenAI Anthropic 以及国产大模型\n其实不过 是工作之余分享 AI、设计、产品的普通纯小白网友罢了\n\n✈️ https://t.co/HRpOru3LUj\n\n列表https://t.co/Jyj3HMNTsZ",
+          "followers_count": 47211,
+          "friends_count": 3750,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 43,
+          "reply_count": 37,
+          "quote_count": 4
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

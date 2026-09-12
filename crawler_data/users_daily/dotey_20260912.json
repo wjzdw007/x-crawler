@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 248276,
+    "followers_count": 248355,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260912",
-  "last_updated": "2026-09-12T16:43:10.272334",
-  "tweet_count": 5,
+  "last_updated": "2026-09-12T20:06:05.823996",
+  "tweet_count": 8,
   "tweets": [
     {
       "id": "2098618178913902928",
@@ -198,6 +198,105 @@
         "favorite_count": 110,
         "reply_count": 65,
         "quote_count": 12
+      }
+    },
+    {
+      "id": "2098826318049603869",
+      "text": "终于记住了苹果新 CEO 的名字：John Ternus（张铁牛）\n😂\n（图源：天才小熊猫，完整版：https://t.co/ohWwlnSjBK） https://t.co/HMAqtojvgT",
+      "created_at": "Sat Sep 12 17:29:23 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2098825764338601985",
+          "url": "https://pbs.twimg.com/media/HSCG6aDXEAEWGNl.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 16,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2098836752765006266",
+      "text": "OpenAI 在 Hot Chips 2026 大会上公布了自研 AI 推理芯片 Jalapeno 的完整架构。这是 OpenAI 与 Broadcom 联合开发的第一颗定制推理加速器，采用台积电 3nm 工艺，配备 6 颗 HBM4 内存堆叠。\n\n设计目标很明确：不追求纸面算力，力求 ChatGPT 和 API 用户感受到更快的响应速度。\n\n这篇来自 Silicon Co-Design 的深度技术分析，把这颗芯片的架构设计逻辑拆得很透。以下是几个值得关注的要点。\n\n1. 设计出发点：用户体验第一，不追求跑分\n\n传统芯片厂商习惯用峰值算力（所谓\"show FLOPS\"）来定义产品。OpenAI 反过来，从用户端的延迟体验倒推硬件指标。他们关心的核心指标是：第一个 Token 出来有多快（TTFT）、每个 Token 之间隔多久（TPOT）、整个请求从头到尾多长时间。\n\n这个思路决定了后续所有架构选择。\n\n2. 关键规格\n\n单颗 Jalapeno 功耗 700W（实测通常在 550W 以下），FP4 算力最高 13.4 PFLOPS，FP8 算力 3.4 PFLOPS，内存容量 216 GiB，带宽 15.4 TB/s。作为参照，NVIDIA 的 GB300 功耗 1400W，内存 288GB（HBM3E）。换算下来，Jalapeno 每瓦的内存容量大约是 GB300 的 1.5 倍。\n\n在 SemiAnalysis 的 InferenceX 基准测试中，Jalapeno 系统在峰值吞吐效率上比 NVIDIA GB200/GB300 高出 1.5 到 1.9 倍（按每千瓦算力计），端到端延迟低 1.7 到 3.6 倍。跑 DeepSeek R1 的 8K 输入 + 1K 输出测试时，端到端延迟从对照系统的 5.99 秒降到了 1.65 秒。\n\n需要说明的是，这些测试还没跟 NVIDIA 即将出货的下一代 Vera Rubin（同样使用 HBM4）做过对比。SemiAnalysis 自己也指出，Jalapeno 真正的对手是 Rubin，而非 Blackwell。\n\n3. 架构上的几个关键选择\n\n第一，空间架构（Spatial Architecture）。传统 GPU 用大量线程调度器统一协调成千上万个线程，Jalapeno 则把 64 个计算核心各自配上专属 HBM 接口，核心之间通过专用的集合通信网络直连。每个核心独立运行，不用等中央调度器分发指令。好处是延迟更可控，坏处是编程更复杂。\n\n为了降低编程门槛，OpenAI 开发了一套叫 Gluon 的编程语言，基于开源编译器 Triton 构建。开发者可以用类似 GPU 线程块的写法来编程，不用手动设计空间数据流图。\n\n第二，单芯片方案。理论上可以给预填充（Prefill）、推测解码（Speculate）、解码（Decode）三个阶段各设计一颗专用芯片，但 OpenAI 选择把所有功能集成在一颗通用芯片上。理由是：各阶段的工作量比例随模型和请求变化剧烈，专用芯片会导致某些加速器长期闲置。OpenAI 硬件团队的 Ravi Narayanaswami 的说法是，\"未来缺少某个功能的机会成本，比现在多塞一些暂时用不满的晶体管的边际成本要高得多\"。\n\n第三，网络拓扑。Jalapeno 采用 Broadcom 的 Tomahawk 6 交换芯片（全球首颗 102.4Tbps 以太网交换芯片），搭建了一个两跳 Clos 拓扑：本地域一颗 TH6 连 128 颗 Jalapeno，全局域八颗 TH6 再把 2048 颗芯片串起来。任意两颗芯片之间最多两跳到达。相比 NVIDIA 常用的三跳胖树拓扑，跳数少意味着尾延迟更可预测。\n\n第四，多 Token 预测（Multi-Token Prediction）。传统的自回归解码是一个接一个生成 Token，每个都要完整读一遍模型权重，严重受制于内存带宽。Jalapeno 的架构从底层支持多 Token 预测：用一个轻量级的草稿模型一次猜 5-10 个 Token，再用大模型一次性验证。OpenAI 称，启用多 Token 预测后延迟还能再降 3 到 5 倍。不过目前的基准测试都是在单 Token 模式下跑的，多 Token 预测尚未启用。\n\n4. AI 辅助设计芯片\n\n从 2024 年 10 月立项到流片，Jalapeno 的 RTL 开发到交付只用了大约 9 个月。OpenAI 借助了 Google 开源的 XLS 工具做高层次综合（High-Level Synthesis），用自家的前沿模型来辅助模块级优化和形式验证。这篇分析文章的作者认为，与其说 AI 让某个具体步骤变快了，不如说它让芯片设计可以更快地在不同方案之间迭代——这对缩短周期的贡献可能更大。\n\n5. 行业意义\n\nOpenAI 走了一条和 Google（TPU）类似的路：自研芯片来优化自家模型的推理效率。但 OpenAI 硬件副总裁 Richard Ho 在发布会后对彭博社明确表示，\"NVIDIA 是非常好的合作伙伴，我们仍然需要大量 NVIDIA 芯片。\" Jalapeno 的定位是补充而非替代，至少现阶段如此。\n\n据报道，第二代 Jalapeno 可能在几个月内完成流片，第三代也已在开发中。对于普通用户来说，最直接的影响是：如果 OpenAI 能把更多推理负载迁移到自研芯片上，ChatGPT 和 API 的响应速度有望进一步加快，而 OpenAI 的推理成本也会下降——这最终会反映在定价或服务质量上。\n\n如果你关注这个领域的话推荐阅读原文（后两部分需要订阅才能解锁）：https://t.co/lRie6hGNl0",
+      "created_at": "Sat Sep 12 18:10:51 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2098749036492706111",
+        "text": "An advanced system architecture breakdown of OpenAI’s Jalapeno inference accelerator that goes  beyond raw FLOPs and into the surrounding network architecture and how AI actually added value:\n\nhttps://t.co/SNXGNtNISc",
+        "created_at": "Sat Sep 12 12:22:17 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1913333251210375172",
+          "name": "Chad Wallace",
+          "screen_name": "siliconcodesign",
+          "description": "Deep-Tech Semiconductor Analyst, MSEE. Expert-driven system architecture deep-dives of AI datacenter hardware from pure fundamentals.",
+          "followers_count": 7904,
+          "friends_count": 218,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 86,
+          "favorite_count": 1130,
+          "reply_count": 10,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 10,
+        "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2098840834942652505",
+      "text": "GPT-6 Astra 社区作品集合，评论也有不少优秀作品。\n\n或者可以去官网看看 Showcase：https://t.co/cxSlxfznt8",
+      "created_at": "Sat Sep 12 18:27:04 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2098827327832822014",
+        "text": "https://t.co/66sQRpXGHr",
+        "created_at": "Sat Sep 12 17:33:23 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1633874951508721686",
+          "name": "OpenAI Developers",
+          "screen_name": "OpenAIDevs",
+          "description": "Official updates for developers building with Codex & the OpenAI Platform • Service status: https://t.co/kZwnwdYYEq",
+          "followers_count": 421400,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 58,
+          "favorite_count": 768,
+          "reply_count": 31,
+          "quote_count": 14
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 40,
+        "reply_count": 6,
+        "quote_count": 1
       }
     }
   ]

@@ -1,0 +1,120 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 248467,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260913",
+  "last_updated": "2026-09-13T02:47:01.636995",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2098945781885546788",
+      "text": "“Step back”是我常用的一个提示词关键词，有时候看到 Agent 在原地打转没有实质性进展，我就这么提醒一下 Agent，让它重新看看目标是什么，看当前路径是不是有问题，有时候会有很好的效果。\n\n这其实也是我开会时常用的个词，有时候开会的时候扯着扯着就跟主题无关了，喊一句“Let's step back”能把大家拉回来。",
+      "created_at": "Sun Sep 13 01:24:05 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2098854442544054274",
+          "url": "https://pbs.twimg.com/media/HSCg_ssWwAITmFJ.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2092826289841299636",
+        "text": "上次我说让 AI 很难跳出既定框架，有网友说是我提示词没写好，所以我最近换了一种写法，还真的有效果，简单来说就是让它基于要达到的目标，跳出框架，重新思考会有什么不一样的做法。\n\n上次我在 AI 帮我翻译完视频后，我给它提问：\n\n> 如果跳出当前架构，让你基于功能重新设计当前的翻译流程，你会采取什么不一样的做法？\n\n还别说，真的给了我一些不一样的思路。\n\n但是我看完觉得可能不太靠谱，不过口说无凭，那咱们用数据说话吧。\n\n我让它去开个 Worktree (因为还有其他任务再跑，不好开分支)去验证下：\n\n> 用一个worktree去验证你的方案，然后对比当前方案，看是否在不牺牲质量的前提下有更好性能。\n\n等它验证完，发现并没有预期那么好，但是也不是完全没价值，可以部分借鉴它的方案。\n\n有个小插曲，其实一开始我没看懂它的意思，也不知道是好还是不好，然后我去开了个 sidechat（/btw），让它给我详细的解释了一下：\n> 解释一下新的方案：值得做吗？是部分改进当前还是完全改进？具体怎么改进，请通俗易懂的给我解释一下，最好结合具体的例子\n\n听它解释完我才明白，然后把解释的内容重新给它让它基于这些信息去实施了，对于提升质量还是有帮助。\n\n至于为什么要用 sidechat，是因为这类解释的事情没必要放到主上下文，只是了解一下，除非后续需要用到一些聊出来的信息。\n\n---\n\n简单总结一下：\n\n1. 让 AI 根据目标跳出框架去思考，给出新的方案还是有帮助\n\n2. AI 给的方案不一定靠谱，还是得要有人工验证，最好是有数据为准，不能全盘接受\n\n3. 一些当前任务无关的问题可以问 sidechat",
+        "created_at": "Thu Aug 27 04:07:24 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2092823801843048449",
+            "url": "https://pbs.twimg.com/media/HQs0KNZWYAEWpqj.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2092823880423428097",
+            "url": "https://pbs.twimg.com/media/HQs0OyIX0AED-Jc.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2092824876302192640",
+            "url": "https://pbs.twimg.com/media/HQs1IwEX0AA4syT.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2092824960775393280",
+            "url": "https://pbs.twimg.com/media/HQs1NqwWkAAobEn.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 248467,
+          "friends_count": 1722,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 42,
+          "favorite_count": 248,
+          "reply_count": 94,
+          "quote_count": 7
+        }
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 60,
+        "reply_count": 17,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "2098951981414887746",
+      "text": "RT @dongxi_nlp: https://t.co/1Zp3Skkv39",
+      "created_at": "Sun Sep 13 01:48:43 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": {
+        "id": "2098945504289669481",
+        "text": "https://t.co/1Zp3Skkv39",
+        "created_at": "Sun Sep 13 01:22:59 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1477948736156454913",
+          "name": "Dongxi 东锡 NLP",
+          "screen_name": "dongxi_nlp",
+          "description": "Prev. PhD @Stockholm_Uni | Alumni @KTHuniversity @uppsalauni Sharing insights on AI",
+          "followers_count": 40746,
+          "friends_count": 976,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3,
+          "favorite_count": 16,
+          "reply_count": 2,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

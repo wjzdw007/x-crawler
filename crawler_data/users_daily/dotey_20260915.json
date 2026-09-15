@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 249138,
+    "followers_count": 249197,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260915",
-  "last_updated": "2026-09-15T07:07:34.696548",
-  "tweet_count": 10,
+  "last_updated": "2026-09-15T13:06:31.020221",
+  "tweet_count": 11,
   "tweets": [
     {
       "id": "2099663860823130546",
@@ -389,6 +389,87 @@
       "stats": {
         "retweet_count": 0,
         "favorite_count": 4,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2099762168300249411",
+      "text": "RT @yaogangqiang: 上一条说，只靠测试不能保证软件质量。这条先聊也应该怎么写测试，因为这是基础。下次聊关键设计，以及 review 应该看什么。\n\n针对业务项目，我的理解大概是这么几条：\n\n1… https://t.co/UOcdqvZtMG",
+      "created_at": "Tue Sep 15 07:28:07 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2099756770419986432",
+          "url": "https://pbs.twimg.com/media/HSPVqF-a0AAQP2K.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2099757363519709283",
+        "text": "上一条说，只靠测试不能保证软件质量。这条先聊也应该怎么写测试，因为这是基础。下次聊关键设计，以及 review 应该看什么。\n\n针对业务项目，我的理解大概是这么几条：\n\n1 测试行为，不测试实现。比如重复下单不会重复扣款，而不是某个方法调用了几次。业务没变，重构一下测试就碎一地，那多半写错了。AI 特别容易写这种测试。\n\n2 用 BDD，先写验收场景，再写代码。测试描述统一用 user 开头，用 Given / When / Then 描述，用户和 PM 也能看懂。别让 AI 写完代码，再照着自己的实现证明自己没错。\n\n3 禁止 mock。Redis、PostgreSQL 能用真的就用真的，外部系统不好接就注入 fake，但要校验它和真实系统的契约。时间逻辑用 fake timer，别 sleep 几秒再祈祷。AI 真的太喜欢随手 mock 了。\n\n4 我倾向大部分写 E2E，从用户入口走到可见结果，外部依赖可以 fake，实在不合适再写其他测试。测试多了就分级，按改动和依赖关系精准测试，定期完整跑。别改两行代码，等 CI 半天。\n\n5 前面做好了，再看分支覆盖率，先定个 90%。但重点是剩下的为什么没测，尤其是失败路径，别让 AI 为了凑数字再写一堆垃圾测试。\n\n6 前边的规则尽量都写成 lint",
+        "created_at": "Tue Sep 15 07:09:01 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2099756770419986432",
+            "url": "https://pbs.twimg.com/media/HSPVqF-a0AAQP2K.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2099403258045538435",
+          "text": "随着 vibe coding 产出大量代码，大部分项目质量并没有提高。整个软件研发历史里，写代码一直是最容易的环节，有了 AI 之后，只是让这个环节变得更容易了。\n\n我甚至听到某创业公司的人因为 bug 太多，跟我说：「我觉得可能人肉写写代码，稍微长期来看，速度更快，因为现在天天修 bug。」\n\n有很多人说：那你让 AI 写测试啊。 现实是，如果不做任何调教，AI 写出来的全都是充满 mock 的、测试实现细节的脆弱测试，而不是验证行为的测试。此外更残酷的是：即使你教会了 AI 写对测试，照样不能保证软件的质量。\n\n因为测试从来不是高质量软件的关键，Quality is designed in, not tested in.",
+          "created_at": "Mon Sep 14 07:41:56 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2099403248734195712",
+              "url": "https://pbs.twimg.com/media/HSKUIbEaUAALN36.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "619661437",
+            "name": "Gangqiang Yao",
+            "screen_name": "yaogangqiang",
+            "description": "Pi  Agent contributor\n做过几个没有赚钱的 AI 产品，正在做新的。\n记录一些 Agent / harness / context 的一手工程与产品笔记。",
+            "followers_count": 1844,
+            "friends_count": 402,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 4,
+            "favorite_count": 21,
+            "reply_count": 30,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "619661437",
+          "name": "Gangqiang Yao",
+          "screen_name": "yaogangqiang",
+          "description": "Pi  Agent contributor\n做过几个没有赚钱的 AI 产品，正在做新的。\n记录一些 Agent / harness / context 的一手工程与产品笔记。",
+          "followers_count": 1844,
+          "friends_count": 402,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 20,
+          "favorite_count": 133,
+          "reply_count": 12,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 20,
+        "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
       }

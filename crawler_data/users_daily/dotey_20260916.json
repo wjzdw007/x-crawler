@@ -1,0 +1,139 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 249295,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260916",
+  "last_updated": "2026-09-16T03:00:30.081902",
+  "tweet_count": 3,
+  "tweets": [
+    {
+      "id": "2100024321347297343",
+      "text": "RT @Barret_China: Team 的运转离不开三类人。第一，能够持续去定义问题，做什么，不做什么。第二，对结果负责的 owner，他能够牵引团队，以正确的方式拿到结果。第三，领域专家，他的技能是确保团队在复杂任务之下，依然可以良好运转。AI 很容易让这三类特性同时落…",
+      "created_at": "Wed Sep 16 00:49:49 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2099996680905269643",
+        "text": "Team 的运转离不开三类人。第一，能够持续去定义问题，做什么，不做什么。第二，对结果负责的 owner，他能够牵引团队，以正确的方式拿到结果。第三，领域专家，他的技能是确保团队在复杂任务之下，依然可以良好运转。AI 很容易让这三类特性同时落在一个人头上，因此出现了大量的超级个体、OPC。",
+        "created_at": "Tue Sep 15 22:59:59 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "272736093",
+          "name": "Barret李靖",
+          "screen_name": "Barret_China",
+          "description": "AI Engineer | Lifelong Learner | Dad of 2 | Cloud Native | Sharing insights and experiences | 小胡子哥，一个有趣的灵魂",
+          "followers_count": 83080,
+          "friends_count": 421,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 20,
+          "favorite_count": 125,
+          "reply_count": 19,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 20,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100046089214709979",
+      "text": "Thariq 说：“对于大多数集成来说，MCP 比 CLI 更好”，这显然有点夹带私货了，MCP 是比以前好了，但不代表大多数情况下就比 CLI 好。\n\n他大概给了三点理由：\n\n第一，MCP 已经变成无状态协议。\n\n这一点不是 MCP 比 CLI 好的理由，只能说 MCP 终于不再比 CLI 差了。\n\n典型一次性 CLI 调用在调用层面天然是短生命周期的。你执行 gh pr list --json，它跑完返回结果，进程退出，没有会话、没有握手、没有需要维护的连接。你可以在任意机器上跑，负载均衡随便做，横向扩展没有任何协议层面的阻碍。\n\n第二点：Deferred Tools（延迟加载工具）\n\nCLI 的 token 成本模型： 模型已经从训练数据中学会了 gh、aws、kubectl 等命令的用法。当 Agent 要调用 gh pr list --json 的时候，上下文里不需要注入任何 schema。成本只有命令本身的几十个 token，加上返回结果的 token。所以对模型熟悉的 CLI，额外的 CLI-specific schema 成本接近于零。\n\n就算没有被训练过的 cli，也有 cli --help，还可以配合 skill。\n\n有了 deferred tools 之后的 MCP： 工具被标记为 defer_loading: true 后，初始上下文里只放工具名和简短描述，完整 schema 在模型需要时按需搜索加载。Anthropic 官方数据是特定大型工具集场景下的工具定义/上下文占用降低约 85%。\n\n所以 deferred tools 把 MCP 和 CLI 之间的差距缩小了，但很难说比 CLI 的 token 效率更高。\n\n第三点：模型的 tool calling 能力提升\n\n对 CLI 的影响： 模型变强了，构造 CLI 命令更准确了，解析非结构化输出也更可靠了。CLI 从中受益。\n\n对 MCP 的影响： 模型变强了，处理结构化 schema 更准确了，多步骤工具调用链的可靠性提高了。MCP 从中受益，而且受益程度可能更大。\n\n之所以说 MCP 受益更大，是因为 CLI 的主要优势之一就是模型天然就已经会了大部分 cli，tool calling 能力弱的时候，这个先验知识优势很大。\n\n当模型的 tool calling 能力提升到足够强的时候，从 schema 中学习新工具也会更容易。\n\n综合来看，MCP 比以前强太多了这个没啥争议，但要说大多数场景比 CLI 强，我还是不太认同。\n\n最后，简单总结下\n\n适合 CLI 的场景：\n1. 模型已经训练过的 cli，都不用教，直接说用某个 cli\n\n2. 本地运行，直接跑 cli 最简单\n\n3. 管道组合任务，cli 可以 pipe\n\n4. 省 token，相对来说 cli 耗费 token 要少\n\n5. CI/CD、脚本自动化 ，大部分时候 CLI 更合适，如果 CI pipeline 里调用的是已知工具、固定命令，CLI 毫无疑问更合适；但如果 CI 里需要动态发现工具或跨多个 SaaS 服务做编排（比如跑完测试自动更新 Jira 再通知 Slack），MCP 在这种链路上其实更有优势。\n\n6. 调试和快速验证，如果只是要排查个问题，命令行里面调用下 cli 最简单方便。\n\n适合 MCP 的场景\n\n1. 没有终端访问权限的环境，比如你在浏览器环境、移动客户端，没办法直接访问 cli，但是访问 MCP 是可以的\n\n2. 需要权限认证和权限管理的多用户环境，MCP 可以集成 OAuth 等协议，可以方便的给特定用户授权，CLI 就会麻烦很多\n\n3. 模型没有训练过的工具，虽然说 cli 也可以配合 skill，但是 MCP 有个优势，就是工具的参数是提供结构化、可机器校验的 JSON Schema\n\n4. 需要审计和合规的场景，金融、医疗、政府这类受监管行业，每次工具调用需要有日志、可追溯、可审计。MCP 提供标准化结构、trace 和 header，使审计更容易实现，网关可以基于新增的 Mcp-Method 和 Mcp-Name 头部做路由、限流、计量，不需要解析请求体。CLI 的调用日志要自己在 shell 层面做，格式不统一，分析起来更麻烦。\n\n5. 工具发现（tool discovery），MCP 有标准化的 tools/list 接口，Agent 可以自己发现可用工具。对于工具集不固定、会随时间增长的平台型产品来说，这种可发现性很有价值。搭配 deferred tools 之后更是如此，Agent 不需要提前加载所有工具，可以按需搜索。\n\n当然我只是就常见的场景列了一些，不是完整的，仅供参考。",
+      "created_at": "Wed Sep 16 02:16:19 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2099958388230873165",
+        "text": "I was not expecting things to go this way, but I think MCPs are better than CLIs for most integrations. \n\nThe models have gotten much better at tool calling, we can defer tools &amp; MCP is now stateless.\n\nIf you need to compose/filter data, add params like query to your MCP tools.",
+        "created_at": "Tue Sep 15 20:27:49 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "352806502",
+          "name": "Thariq",
+          "screen_name": "trq212",
+          "description": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
+          "followers_count": 342501,
+          "friends_count": 1897,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 87,
+          "favorite_count": 1956,
+          "reply_count": 170,
+          "quote_count": 51
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 41,
+        "reply_count": 12,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2100049650426200191",
+      "text": "SwiftUI App 卡顿一个原因是它没有用 Core Animation",
+      "created_at": "Wed Sep 16 02:30:28 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2099985361271144686",
+        "text": "SwiftUI isn’t native and here’s why SwiftUI apps may sometimes feel janky. It ditches the key element that made animations run so smoothly on iOS since the original iPhone: Core Animation.\nIn SwiftUI animations run in-app without CA backing. Block the main thread: SwiftUI ball stalls while UIKit’s keeps moving on the render server.",
+        "created_at": "Tue Sep 15 22:15:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2099985034010636288",
+            "url": "https://video.twimg.com/amplify_video/2099985034010636288/vid/avc1/1206x1300/bkFQmzXBZmESVYQZ.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3293424904",
+          "name": "Krzysztof Magiera",
+          "screen_name": "kzzzf",
+          "description": "R&D @swmansion. Made react-native (@meta), reanimated, rn-screens, Radon IDE, https://t.co/oO7e4kl04h",
+          "followers_count": 14881,
+          "friends_count": 608,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 33,
+          "favorite_count": 472,
+          "reply_count": 25,
+          "quote_count": 12
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 249295,
+    "followers_count": 249319,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260916",
-  "last_updated": "2026-09-16T03:00:30.081902",
-  "tweet_count": 3,
+  "last_updated": "2026-09-16T09:02:08.634026",
+  "tweet_count": 9,
   "tweets": [
     {
       "id": "2100024321347297343",
@@ -131,6 +131,177 @@
       "stats": {
         "retweet_count": 0,
         "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100068419986923933",
+      "text": "React Native 开发者 Krzysztof Magiera 在 X 上发了一个技术演示：主线程被阻塞时，SwiftUI 的动画球会卡住，而 UIKit 的球照样平滑运动。原因是 SwiftUI 没有使用 Core Animation，那个从初代 iPhone 起就让 iOS 动画丝滑的底层引擎。他的结论是，SwiftUI 称不上\"真正原生\"。\n\nSwiftUI 的共同创建者、苹果工程师 Kyle Macomber 很快回应：这是团队最早期、最根本的设计决策之一。\n\nCore Animation 之所以不怕主线程卡顿，是因为它的动画跑在一个独立的渲染进程里，和 app 进程完全隔离。但代价是：当你希望用户在动画过程中随时打断并交互，比如列表滚动时的回弹、主屏幕切换 app 的手势，实现起来非常困难，因为事件处理和动画不在同一个进程。\n\nSwiftUI 把动画放回 app 进程，就是为了让这类可交互、可中断的动画成为默认能力，而不是需要开发者费力实现的特例。Macomber 还指出，SwiftUI 的动画大部分时间实际上跑在非主线程上，并不像演示暗示的那样总会卡。",
+      "created_at": "Wed Sep 16 03:45:03 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2100068367654629376",
+          "url": "https://pbs.twimg.com/media/HSTxDcIWsAAlbkI.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2099985361271144686",
+        "text": "SwiftUI isn’t native and here’s why SwiftUI apps may sometimes feel janky. It ditches the key element that made animations run so smoothly on iOS since the original iPhone: Core Animation.\nIn SwiftUI animations run in-app without CA backing. Block the main thread: SwiftUI ball stalls while UIKit’s keeps moving on the render server.",
+        "created_at": "Tue Sep 15 22:15:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2099985034010636288",
+            "url": "https://video.twimg.com/amplify_video/2099985034010636288/vid/avc1/1206x1300/bkFQmzXBZmESVYQZ.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3293424904",
+          "name": "Krzysztof Magiera",
+          "screen_name": "kzzzf",
+          "description": "R&D @swmansion. Made react-native (@meta), reanimated, rn-screens, Radon IDE, https://t.co/oO7e4kl04h",
+          "followers_count": 14985,
+          "friends_count": 608,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 63,
+          "favorite_count": 811,
+          "reply_count": 42,
+          "quote_count": 31
+        }
+      },
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 96,
+        "reply_count": 18,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "2100068458616467471",
+      "text": "回应贴：https://t.co/O5lWnjl1Iv",
+      "created_at": "Wed Sep 16 03:45:12 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100081695995162730",
+      "text": "补充一个很好的点，MCP 更新兼容更方便：\n\n> @一刀流小依:  我觉得mcp最大的价值，在于他在服务端能控制的东西更多。举例来说：  \n更新。服务端一个特别头疼的东西在于接口兼容性问题。mcp能做到让服务端几乎没有兼容性的顾虑，最新的api定义、功能和使用指导都是服务端推送后，agent自适应的。 但是通过暴露rest接口等，让客户端通过cli+skill集成，就很难强",
+      "created_at": "Wed Sep 16 04:37:48 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100083240857985377",
+      "text": "豆包大模型 2.1 Pro 发布 0915 版本更新，API 已在火山方舟全量上线。这次升级集中在四个方向：Agent 任务交付、多模态写代码、多模态理解、以及推理成本。\n\nAgent 方面的改进\n\n模型在需要多轮调用工具、联网查资料再出报告的场景里，强化了证据溯源和数据核验能力，幻觉明显减少。官方给的例子是金融投研：模型能自主拆解研究需求、检索数据源再建模分析，产出的底稿接近分析师水平。为了核实某车企财报里的一个说法，模型调度了 500 多个子 Agent、检索超 1000 个网页，还交叉比对了海事航迹、卫星影像等多源信息。这类\"不采信单方通稿、多源交叉验证\"的能力，对企业做尽调、出研报有直接价值。\n\n多模态 Coding\n\n这次最实用的变化可能是看图写代码。模型现在能直接读懂设计稿、图纸甚至操作录屏，把视觉信息转成前端代码。官方演示了一个场景：给模型一段录屏加几张草图，让它给一个没有文档的老 ERP 系统开发移动端页面——模型读懂了 28 万行 Java 代码，直接还原出可运行的移动端页面。\n\n在代码仓库理解上，模型对开源游戏 Luanti（约 38.7 万行代码）做了自主修复测试，83% 的任务达到了可合并标准。对经常要在大型项目里定位问题、跨文件修 bug 的开发者来说，这个数字值得关注。\n\n其他升级\n\n多模态理解方面，视频推理能力增强，能在视频里定位证据、跨帧整合；图像理解在 3D 物体识别（CAD 工件、游戏引擎元素）和密集图文解析（工程图纸、财报表格）上有明显提升。\n\n成本方面，图像和视频推理的 Token 消耗比上一代减少 30% 以上。\n\nAPI 使用上有两个入口：调用 Doubao-Seed-2.1-pro-0915 可以锁定版本；调用 Doubao-Seed-Evolving 则自动跟进最新版本，不用换 Model ID。豆包工作和 TRAE 也已同步接入。\n\n官方文章：https://t.co/ZGQCFyKde3",
+      "created_at": "Wed Sep 16 04:43:56 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2100083174491504640",
+          "url": "https://pbs.twimg.com/media/HST-hT5XQAAmZvY.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 36,
+        "reply_count": 14,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2100109937237987823",
+      "text": "ChatGPT 联合发明人创办的 TypeSafe AI 正式发布了一种全新类别的 AI 模型：\"System One 模型\"，以及该类别下的第一个模型 Jev。和现有的大语言模型不同，Jev 完全放弃了文本生成能力，专门为软件内部的快速决策而设计：输入非结构化数据，输出带有校准概率的类型安全结构化结果。\n\n简单说：Jev 不会写文章、不会聊天，但能以极低的成本和延迟，在代码里充当一个\"智能判断函数\"：分类、打分、路由、提取，这些原本用规则引擎硬写但又写不好的事情，现在可以交给它。\n\n创始人 Diogo Almeida 曾在 OpenAI 参与 InstructGPT 和 RLHF 的核心研发，是 ChatGPT 和 GPT-4 论文的共同作者。他在博客中描述：RLHF 让模型学会了取悦人类，却也让它们在自动化场景里不够可靠。于是他离开 OpenAI，潜行两年，用一套叫做 RLCD（Reinforcement Learning for Calibrated Decisions，校准决策强化学习）的新训练方法从头构建了 Jev。\n\n几个关键数字值得注意：\n\n响应速度 70 到 500 毫秒，比主流前沿大模型的 3 到 329 秒快了一到两个数量级。输入 Token 价格 0.042 美元/百万 Token（约 42 美元处理十亿 Token），输出 Token 免费。官方自称比同等智能水平的大模型快 20 到 200 倍，便宜 40 到 400 倍。\n\n这些数字的来源是 TypeSafe 自研的\"工作流评测\"（Workflow Evals），用 GPT-6 Astra 和 Anthropic 的 Fable 5.1 的平均结果作为参考答案。他们也承认，这种评测方式本身偏向 OpenAI 和 Anthropic 的模型，Jev 的实际相对表现可能被低估，但极端加速倍数（如 193 倍、444 倍）属于最优情况，不代表所有场景。\n\n速度为什么能这么快？因为架构上根本不同。大模型逐个生成 Token，前一个 Token 出来后才能算下一个。Jev 采用并行采样，所有输出一次算完。这和当年 Transformer 取代 RNN 是同一个思路：用并行取代串行。\n\n代价也很明确：Jev 不能生成文本。它输出的是事先定义好结构的决策结果，每个回答都附带置信度分数。官方宣称类型错误率从数学上等于零（因为输出结构在架构层面就被约束了），幻觉问题也因此不存在。\n\n对开发者来说，Jev 的定位不替代 ChatGPT 或 Claude 这类对话模型，主要是为了补上它们不擅长的那一环：当你需要在代码流程中嵌入一个 AI 判断节点，要求毫秒级响应、结构化输出、不能出格的时候，用大模型做这件事成本高、速度慢、还可能生成不可预期的内容。Jev 就是为这个场景设计的。TypeSafe 把这类任务叫做\"智能 if 语句\"，也就是用 AI 做原本 if-else 写不好的模糊判断。\n\n他们还做了两个有趣的演示：一个是用 Jev 实时操控经典游戏 DOOM 的 AI 机器人，每秒调用约 10 次，成本大约每小时 7 美元；另一个是 Wikipedia 竞速（从一个词条通过链接跳转到另一个指定词条），需要在成百上千个链接中做选择，Jev 在步数和速度上都领先于大模型的非推理模式。\n\n\"System One\"这个名字来自 Daniel Kahneman 的《思考，快与慢》中的\"系统一\"——快速、直觉、自动化的思维方式。\"Jev\"则取自经济学中的杰文斯悖论（Jevons Paradox）：当某种资源的使用效率大幅提高时，总需求反而会增长。TypeSafe 显然在押注：把 AI 决策的成本降到足够低，用量会爆发式增长。\n\n从博客和文档里提到的信息来看，Jev 的应用场景集中在一个核心逻辑上：凡是你在代码里需要一个\"聪明的判断\"，但又不需要它写一段话给人看的地方，都是它的地盘。\n\n具体来说有几类：\n\n第一类是流程中的智能分支。比如客服系统里判断一张工单应该转给哪个团队、紧急程度多高、用户情绪如何——这些原本要么靠关键词规则（太死板），要么靠大模型（太慢太贵）。Jev 可以在几十毫秒内给出带置信度的判断，而且输出格式固定，代码直接用。\n\n第二类是大规模数据处理。比如对海量文档做分类、打标签、提取结构化字段。大模型做这件事单条成本还行，但量一上去就很贵，而且速度是瓶颈。Jev 42 美元处理十亿 Token，输出还免费，适合需要跑几百万甚至上亿条数据的场景。\n\n第三类是实时应用。100 毫秒级别的响应意味着可以用在用户体感得到延迟的地方——实时推荐、动态定价、游戏 AI、交互式产品里的智能判断。博客里那个 DOOM 演示就是这个意思：每秒调用 10 次，大模型根本做不到。\n\n第四类比较有意思——给大模型当\"质检员\"。用 Jev 来检查大模型的输出是否安全、是否符合格式、有没有越狱，做 guardrail（安全护栏）。因为 Jev 本身不会幻觉、响应极快，很适合在大模型输出之后加一层校验。\n\n总结一下就是：Jev 不是给终端用户用的产品，是给开发者在系统架构里嵌入的组件。它解决的问题是\"我需要 AI 的判断力，但不需要它的表达力\"。\n\nJev 目前以早期访问形式开放，开发者可以在 https://t.co/9XED0JF76D 加入候补名单。",
+      "created_at": "Wed Sep 16 06:30:01 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2099925682726002904",
+        "text": "After co-inventing ChatGPT, I kept asking myself: why have superhuman chat models not led to AGI?\n\nI’ve spent the last 2 years in stealth building a new way to train models (RLCD), and a new type of frontier AI model that we are releasing today: Jev\n\n• 20-200x faster\n• 40-400x cheaper (w/ output tokens free)\n• Frontier composable intelligence optimized for decisions\n\nAFAICT the shortest path to AI-based economic revolution",
+        "created_at": "Tue Sep 15 18:17:52 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2099925575637057536",
+            "url": "https://video.twimg.com/amplify_video/2099925575637057536/vid/avc1/1920x1080/cy2CDedAjnEfjJZk.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2867689615",
+          "name": "Diogo Almeida",
+          "screen_name": "CompleteSkeptic",
+          "description": "Sane + 🌶️ takes in an insane AI world... AI capabilities researcher: co-created RLHF/ChatGPT @ @openai now trying to right the wrong 🤭 (ceo @typesafeai)",
+          "followers_count": 63051,
+          "friends_count": 92,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4544,
+          "favorite_count": 46765,
+          "reply_count": 2344,
+          "quote_count": 3270
+        }
+      },
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 55,
+        "reply_count": 24,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2100125076091760742",
+      "text": "给视频加个字幕 https://t.co/ew9WMktoxy",
+      "created_at": "Wed Sep 16 07:30:11 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2100124920986337280",
+          "url": "https://video.twimg.com/amplify_video/2100124920986337280/vid/avc1/1920x1080/C7JXJ8J25ZhSIZW6.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
         "reply_count": 0,
         "quote_count": 0
       }

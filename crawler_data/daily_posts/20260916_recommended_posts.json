@@ -1,12 +1,799 @@
 {
   "date": "20260916",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-09-16T03:00:30.053169",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-09-16T09:02:08.619031",
+  "tweet_count": 215,
+  "unique_tweet_count": 215,
+  "total_crawled": 400,
+  "duplicates_removed": 185,
   "tweets": [
+    {
+      "id": "2100125076091760742",
+      "text": "给视频加个字幕 https://t.co/ew9WMktoxy",
+      "created_at": "Wed Sep 16 07:30:11 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2100124920986337280",
+          "url": "https://video.twimg.com/amplify_video/2100124920986337280/vid/avc1/1920x1080/C7JXJ8J25ZhSIZW6.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 249319,
+        "friends_count": 1723,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100109937237987823",
+      "text": "ChatGPT 联合发明人创办的 TypeSafe AI 正式发布了一种全新类别的 AI 模型：\"System One 模型\"，以及该类别下的第一个模型 Jev。和现有的大语言模型不同，Jev 完全放弃了文本生成能力，专门为软件内部的快速决策而设计：输入非结构化数据，输出带有校准概率的类型安全结构化结果。\n\n简单说：Jev 不会写文章、不会聊天，但能以极低的成本和延迟，在代码里充当一个\"智能判断函数\"：分类、打分、路由、提取，这些原本用规则引擎硬写但又写不好的事情，现在可以交给它。\n\n创始人 Diogo Almeida 曾在 OpenAI 参与 InstructGPT 和 RLHF 的核心研发，是 ChatGPT 和 GPT-4 论文的共同作者。他在博客中描述：RLHF 让模型学会了取悦人类，却也让它们在自动化场景里不够可靠。于是他离开 OpenAI，潜行两年，用一套叫做 RLCD（Reinforcement Learning for Calibrated Decisions，校准决策强化学习）的新训练方法从头构建了 Jev。\n\n几个关键数字值得注意：\n\n响应速度 70 到 500 毫秒，比主流前沿大模型的 3 到 329 秒快了一到两个数量级。输入 Token 价格 0.042 美元/百万 Token（约 42 美元处理十亿 Token），输出 Token 免费。官方自称比同等智能水平的大模型快 20 到 200 倍，便宜 40 到 400 倍。\n\n这些数字的来源是 TypeSafe 自研的\"工作流评测\"（Workflow Evals），用 GPT-6 Astra 和 Anthropic 的 Fable 5.1 的平均结果作为参考答案。他们也承认，这种评测方式本身偏向 OpenAI 和 Anthropic 的模型，Jev 的实际相对表现可能被低估，但极端加速倍数（如 193 倍、444 倍）属于最优情况，不代表所有场景。\n\n速度为什么能这么快？因为架构上根本不同。大模型逐个生成 Token，前一个 Token 出来后才能算下一个。Jev 采用并行采样，所有输出一次算完。这和当年 Transformer 取代 RNN 是同一个思路：用并行取代串行。\n\n代价也很明确：Jev 不能生成文本。它输出的是事先定义好结构的决策结果，每个回答都附带置信度分数。官方宣称类型错误率从数学上等于零（因为输出结构在架构层面就被约束了），幻觉问题也因此不存在。\n\n对开发者来说，Jev 的定位不替代 ChatGPT 或 Claude 这类对话模型，主要是为了补上它们不擅长的那一环：当你需要在代码流程中嵌入一个 AI 判断节点，要求毫秒级响应、结构化输出、不能出格的时候，用大模型做这件事成本高、速度慢、还可能生成不可预期的内容。Jev 就是为这个场景设计的。TypeSafe 把这类任务叫做\"智能 if 语句\"，也就是用 AI 做原本 if-else 写不好的模糊判断。\n\n他们还做了两个有趣的演示：一个是用 Jev 实时操控经典游戏 DOOM 的 AI 机器人，每秒调用约 10 次，成本大约每小时 7 美元；另一个是 Wikipedia 竞速（从一个词条通过链接跳转到另一个指定词条），需要在成百上千个链接中做选择，Jev 在步数和速度上都领先于大模型的非推理模式。\n\n\"System One\"这个名字来自 Daniel Kahneman 的《思考，快与慢》中的\"系统一\"——快速、直觉、自动化的思维方式。\"Jev\"则取自经济学中的杰文斯悖论（Jevons Paradox）：当某种资源的使用效率大幅提高时，总需求反而会增长。TypeSafe 显然在押注：把 AI 决策的成本降到足够低，用量会爆发式增长。\n\n从博客和文档里提到的信息来看，Jev 的应用场景集中在一个核心逻辑上：凡是你在代码里需要一个\"聪明的判断\"，但又不需要它写一段话给人看的地方，都是它的地盘。\n\n具体来说有几类：\n\n第一类是流程中的智能分支。比如客服系统里判断一张工单应该转给哪个团队、紧急程度多高、用户情绪如何——这些原本要么靠关键词规则（太死板），要么靠大模型（太慢太贵）。Jev 可以在几十毫秒内给出带置信度的判断，而且输出格式固定，代码直接用。\n\n第二类是大规模数据处理。比如对海量文档做分类、打标签、提取结构化字段。大模型做这件事单条成本还行，但量一上去就很贵，而且速度是瓶颈。Jev 42 美元处理十亿 Token，输出还免费，适合需要跑几百万甚至上亿条数据的场景。\n\n第三类是实时应用。100 毫秒级别的响应意味着可以用在用户体感得到延迟的地方——实时推荐、动态定价、游戏 AI、交互式产品里的智能判断。博客里那个 DOOM 演示就是这个意思：每秒调用 10 次，大模型根本做不到。\n\n第四类比较有意思——给大模型当\"质检员\"。用 Jev 来检查大模型的输出是否安全、是否符合格式、有没有越狱，做 guardrail（安全护栏）。因为 Jev 本身不会幻觉、响应极快，很适合在大模型输出之后加一层校验。\n\n总结一下就是：Jev 不是给终端用户用的产品，是给开发者在系统架构里嵌入的组件。它解决的问题是\"我需要 AI 的判断力，但不需要它的表达力\"。\n\nJev 目前以早期访问形式开放，开发者可以在 https://t.co/9XED0JF76D 加入候补名单。",
+      "created_at": "Wed Sep 16 06:30:01 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2099925682726002904",
+        "text": "After co-inventing ChatGPT, I kept asking myself: why have superhuman chat models not led to AGI?\n\nI’ve spent the last 2 years in stealth building a new way to train models (RLCD), and a new type of frontier AI model that we are releasing today: Jev\n\n• 20-200x faster\n• 40-400x cheaper (w/ output tokens free)\n• Frontier composable intelligence optimized for decisions\n\nAFAICT the shortest path to AI-based economic revolution",
+        "created_at": "Tue Sep 15 18:17:52 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2099925575637057536",
+            "url": "https://video.twimg.com/amplify_video/2099925575637057536/vid/avc1/1920x1080/cy2CDedAjnEfjJZk.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2867689615",
+          "name": "Diogo Almeida",
+          "screen_name": "CompleteSkeptic",
+          "description": "Sane + 🌶️ takes in an insane AI world... AI capabilities researcher: co-created RLHF/ChatGPT @ @openai now trying to right the wrong 🤭 (ceo @typesafeai)",
+          "followers_count": 63051,
+          "friends_count": 92,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4544,
+          "favorite_count": 46765,
+          "reply_count": 2344,
+          "quote_count": 3270
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 249319,
+        "friends_count": 1723,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 55,
+        "reply_count": 24,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2100085997300293870",
+      "text": "RT @StarbaseTX: Join us this Saturday at 9 AM for International Coastal Cleanup Day, and help take care of Boca Chica Beach.\n\nThe City of S…",
+      "created_at": "Wed Sep 16 04:54:54 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2099975928482767240",
+        "text": "Join us this Saturday at 9 AM for International Coastal Cleanup Day, and help take care of Boca Chica Beach.\n\nThe City of Starbase, @SpaceX, @TXAdoptABeach, and Cameron County are teaming up for a community cleanup, and we'd love to have you there. Invite your friends, family, and neighbors. Supplies will be provided, so just bring yourself.\n\nSign up → https://t.co/KY5hFo4hvr\n\nSee you on the beach!",
+        "created_at": "Tue Sep 15 21:37:31 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2099975923864846336",
+            "url": "https://pbs.twimg.com/media/HSSc-gLWQAA9cY-.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1917716982465716227",
+          "name": "StarbaseTX",
+          "screen_name": "StarbaseTX",
+          "description": "Located on the southern tip of Texas, Starbase is the newest city in the Rio Grande Valley",
+          "followers_count": 64387,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 181,
+          "favorite_count": 1456,
+          "reply_count": 108,
+          "quote_count": 16
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241620982,
+        "friends_count": 1406,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 181,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100085873807364122",
+      "text": "😂🎯",
+      "created_at": "Wed Sep 16 04:54:24 +0000 2026",
+      "lang": "art",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2099285905312030993",
+        "text": "life cycle of a tweet\n\nyou know a post is doing well when you start getting the shut up u retard replies https://t.co/NT9KQiQcqY",
+        "created_at": "Sun Sep 13 23:55:37 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2099285901235159040",
+            "url": "https://pbs.twimg.com/media/HSIpZ5kbgAAADdD.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1469008660428771329",
+          "name": "Engineer Girlfriend",
+          "screen_name": "enggirlfriend",
+          "description": "AI maxxing, health maxxing, design engineer | ex snap",
+          "followers_count": 24108,
+          "friends_count": 928,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 50,
+          "favorite_count": 515,
+          "reply_count": 104,
+          "quote_count": 37
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241620982,
+        "friends_count": 1406,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 467,
+        "favorite_count": 4321,
+        "reply_count": 709,
+        "quote_count": 39
+      }
+    },
+    {
+      "id": "2100085464766226684",
+      "text": "RT @cb_doge: BREAKING: The Government of Zambia has launched a three-year @Starlink powered digital learning programme for 70 schools. 🇿🇲…",
+      "created_at": "Wed Sep 16 04:52:47 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2099995060930785479",
+        "text": "BREAKING: The Government of Zambia has launched a three-year @Starlink powered digital learning programme for 70 schools. 🇿🇲\n\n• Will connect 70 schools to Starlink\n• Expand digital learning and skills\n• Bring internet to surrounding communities https://t.co/84KvVS8wUG",
+        "created_at": "Tue Sep 15 22:53:33 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2099994873952882688",
+            "url": "https://video.twimg.com/amplify_video/2099994873952882688/vid/avc1/1080x1080/ZQh4BBOY7zbRIXnF.mp4?tag=29",
+            "bitrate": 8768000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1901164,
+          "friends_count": 1049,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 166,
+          "favorite_count": 1293,
+          "reply_count": 114,
+          "quote_count": 20
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241620982,
+        "friends_count": 1406,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 166,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100085414161965074",
+      "text": "True",
+      "created_at": "Wed Sep 16 04:52:35 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2099937054503391632",
+        "text": "Great conversation with @chamath, @jason, @davidsacks, and @friedberg on all the work ahead when it comes to diffusing benefits of AI broadly, earning permission from communities, and ensuring AI safety and control.",
+        "created_at": "Tue Sep 15 19:03:03 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "20571756",
+          "name": "Satya Nadella",
+          "screen_name": "satyanadella",
+          "description": "Chairman and CEO at Microsoft",
+          "followers_count": 9249621,
+          "friends_count": 316,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 155,
+          "favorite_count": 1441,
+          "reply_count": 108,
+          "quote_count": 10
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241620982,
+        "friends_count": 1406,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 242,
+        "favorite_count": 1861,
+        "reply_count": 256,
+        "quote_count": 18
+      }
+    },
+    {
+      "id": "2100083283757584858",
+      "text": "Grok Build",
+      "created_at": "Wed Sep 16 04:44:07 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2100070332082389392",
+        "text": "Grok Build just got a pretty substantial upgrade across MCP, memory, long-running sessions, and overall agent reliability\n\nMCP tools can now return structured JSON, cancelled tool calls actually tell the server to stop working, memory can be managed directly from the /memory browser, and long-running sessions keep their compaction checkpoints instead of losing them during cleanup\n\nThere are also fixes for macOS image pasting, subagent cancellation states, /rewind, huge skill files flooding context, Windows cloning, and minimal-mode session handling\n\nA lot of edge cases cleaned up here...especially for people running heavy agent workflows for long periods\n\nRelease Notes: v1.0.33\n\nFeatures:\n• MCP tool results now include structured JSON data when the server provides it.\n• GROK_GROVE=1 now enables both clone and worktree features when specific knobs are unset; missing remote settings no longer force copy.\n• Delete memories from the /memory modal using two-press x; only actual notes (not generated indexes) can be removed.\n• Composer footer now shows the Alt+Enter chord for inserting a newline when Cmd+Enter is unavailable over SSH.\n• /memory now always opens the memory browser modal; status and toggle are available via keys inside the modal instead of command arguments.\n\nBug Fixes:\n• Fixed a bug where pasting an image on macOS could attach the wrong image.\n• MCP tool calls listed directly now show their name, arguments, and any error message.\n• Background subagent tasks now correctly show cancelled status when the parent session closes.\n• The Subagents dock no longer shows an unclickable \"Done N completed\" row after all subagents finish.\n• Cancelled or timed-out MCP tool calls now notify the server so it can stop work instead of continuing in the background.\n• /rewind no longer fails when older compaction checkpoints are missing after a session sweep; only the base checkpoint for the target matters.\n• Large skill files are now capped at the same 25k-token limit as other reads; oversized skill bodies show a truncation note instead of flooding context.\n• Long-running sessions no longer lose old compaction checkpoints or prompt offloads during the 30-day cleanup sweep.\n• Auto \"where was I\" recaps no longer appear while a scheduled task, monitor, or workflow is still running.\n• In minimal mode, confirming /delete or /exit now immediately opens a new empty session instead of appearing stuck.\n• In minimal mode, resuming a session after /new now correctly reloads its history instead of showing the wrong session.\n• MCP tools that take no arguments no longer show a stray \"{}\" line in the permission sheet.\n• Fixed Windows clone and attach failures when .git/config values contain backslashes, quotes, or other characters that must be escaped.\n• /memory modal now shows clear explanations when memory is disabled and helpful empty states instead of blank panes.\n• /memory (and on/off toggles) no longer leaves user bubbles or host turns in scrollback when opening or changing the modal.\n• Fixed Windows clone staging directories that could not be cleaned up after deadline or cancel during shallow bootstrap.",
+        "created_at": "Wed Sep 16 03:52:39 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2100070197080264704",
+            "url": "https://pbs.twimg.com/media/HSTyt7RakAAY2Gd.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 275201,
+          "friends_count": 2047,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 35,
+          "favorite_count": 252,
+          "reply_count": 54,
+          "quote_count": 10
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241620982,
+        "friends_count": 1406,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 292,
+        "favorite_count": 2137,
+        "reply_count": 369,
+        "quote_count": 27
+      }
+    },
+    {
+      "id": "2100083240857985377",
+      "text": "豆包大模型 2.1 Pro 发布 0915 版本更新，API 已在火山方舟全量上线。这次升级集中在四个方向：Agent 任务交付、多模态写代码、多模态理解、以及推理成本。\n\nAgent 方面的改进\n\n模型在需要多轮调用工具、联网查资料再出报告的场景里，强化了证据溯源和数据核验能力，幻觉明显减少。官方给的例子是金融投研：模型能自主拆解研究需求、检索数据源再建模分析，产出的底稿接近分析师水平。为了核实某车企财报里的一个说法，模型调度了 500 多个子 Agent、检索超 1000 个网页，还交叉比对了海事航迹、卫星影像等多源信息。这类\"不采信单方通稿、多源交叉验证\"的能力，对企业做尽调、出研报有直接价值。\n\n多模态 Coding\n\n这次最实用的变化可能是看图写代码。模型现在能直接读懂设计稿、图纸甚至操作录屏，把视觉信息转成前端代码。官方演示了一个场景：给模型一段录屏加几张草图，让它给一个没有文档的老 ERP 系统开发移动端页面——模型读懂了 28 万行 Java 代码，直接还原出可运行的移动端页面。\n\n在代码仓库理解上，模型对开源游戏 Luanti（约 38.7 万行代码）做了自主修复测试，83% 的任务达到了可合并标准。对经常要在大型项目里定位问题、跨文件修 bug 的开发者来说，这个数字值得关注。\n\n其他升级\n\n多模态理解方面，视频推理能力增强，能在视频里定位证据、跨帧整合；图像理解在 3D 物体识别（CAD 工件、游戏引擎元素）和密集图文解析（工程图纸、财报表格）上有明显提升。\n\n成本方面，图像和视频推理的 Token 消耗比上一代减少 30% 以上。\n\nAPI 使用上有两个入口：调用 Doubao-Seed-2.1-pro-0915 可以锁定版本；调用 Doubao-Seed-Evolving 则自动跟进最新版本，不用换 Model ID。豆包工作和 TRAE 也已同步接入。\n\n官方文章：https://t.co/ZGQCFyKde3",
+      "created_at": "Wed Sep 16 04:43:56 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2100083174491504640",
+          "url": "https://pbs.twimg.com/media/HST-hT5XQAAmZvY.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 249319,
+        "friends_count": 1723,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 36,
+        "reply_count": 14,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2100081695995162730",
+      "text": "补充一个很好的点，MCP 更新兼容更方便：\n\n> @一刀流小依:  我觉得mcp最大的价值，在于他在服务端能控制的东西更多。举例来说：  \n更新。服务端一个特别头疼的东西在于接口兼容性问题。mcp能做到让服务端几乎没有兼容性的顾虑，最新的api定义、功能和使用指导都是服务端推送后，agent自适应的。 但是通过暴露rest接口等，让客户端通过cli+skill集成，就很难强",
+      "created_at": "Wed Sep 16 04:37:48 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 249319,
+        "friends_count": 1723,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100080529593028699",
+      "text": "RT @XFreeze: Elon just gave one of the clearest explanations yet for why Terafab has to exist\n\nThere are basically two problems:\n\n• Geopoli…",
+      "created_at": "Wed Sep 16 04:33:10 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2099747059553517864",
+        "text": "Elon just gave one of the clearest explanations yet for why Terafab has to exist\n\nThere are basically two problems:\n\n• Geopolitical risk — at some point, advanced chips from Taiwan may not be available\n• Scale — even if supply remains stable, existing fabs eventually run out of capacity as AI, humanoid robots and autonomous cars keep scaling\n\nAnd chips are the foundation underneath all of it\n\nServer AI, edge compute, Optimus, Tesla vehicles....everything needs enormous and reliable semiconductor supply\n\nElon:\n“So it’s either build Terafab or fail to scale”\nThat pretty much sums up the entire strategy\n\nSecure the chip supply....then scale AI and robotics without a ceiling",
+        "created_at": "Tue Sep 15 06:28:05 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2099746559772811266",
+            "url": "https://video.twimg.com/amplify_video/2099746559772811266/vid/avc1/1920x1080/FquLMeqh61KkR0tw.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2099712051899711529",
+          "text": "All-In Summit: Elon Musk & Gwynne Shotwell\n\n-- AI Risks and Peer Review\n\n-- Starship\n\n-- Terafab as Taiwan Insurance\n\n-- SpaceX/Tesla Merger Potential\n\n-- Management at SpaceX\n\n++ much more!\n\n(0:00) SpaceX's @Gwynne_Shotwell joins The Besties!\n\n(1:45) Gwynne's SpaceX story, selling rockets, and working for Elon\n\n(6:45) Running SpaceX: AI, Starlink, Rockets, and X\n\n(13:43) Direct to cell with Starlink, retiring rockets, competition\n\n(18:34) Data centers in space\n\n(22:00) Management at SpaceX\n\n(27:37) @elonmusk joins: AI's real risk, model peer review, what he meant by \"Dario is right\" \n\n(36:53) Elon and Gwynne on their working relationship, Starship's future\n\n(46:16) Terafab, Tesla, Flying cars?, merging Tesla and SpaceX\n\n(52:51) Lying AIs, how to do AI peer review right\n\n$TSLA $SPCX",
+          "created_at": "Tue Sep 15 04:08:58 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2099704160958763008",
+              "url": "https://video.twimg.com/amplify_video/2099704160958763008/vid/avc1/1920x1080/5htwxqYnobfwAY_G.mp4?tag=29",
+              "bitrate": 10368000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1234260054368342016",
+            "name": "The All-In Podcast",
+            "screen_name": "theallinpod",
+            "description": "@chamath, @jason, @davidsacks, and @friedberg cover all things economic, tech, political, social, and poker.",
+            "followers_count": 599061,
+            "friends_count": 8,
+            "verified": false,
+            "is_blue_verified": false
+          },
+          "stats": {
+            "retweet_count": 547,
+            "favorite_count": 3260,
+            "reply_count": 189,
+            "quote_count": 142
+          }
+        },
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 275201,
+          "friends_count": 2047,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 244,
+          "favorite_count": 1662,
+          "reply_count": 132,
+          "quote_count": 17
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241620982,
+        "friends_count": 1406,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 244,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100080430347378799",
+      "text": "RT @Tesla_India: Your Tesla keeps getting safer.  \n\nWe push over-the-air updates remotely at no cost and with no service visit needed https…",
+      "created_at": "Wed Sep 16 04:32:46 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2100065995641753869",
+        "text": "Your Tesla keeps getting safer.  \n\nWe push over-the-air updates remotely at no cost and with no service visit needed https://t.co/urPtyRICBL",
+        "created_at": "Wed Sep 16 03:35:25 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2100065906533793792",
+            "url": "https://pbs.twimg.com/media/HSTu0LvbAAAOMvE.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2100065927018795008",
+            "url": "https://pbs.twimg.com/media/HSTu1YDbUAATwMa.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2100065944601321472",
+            "url": "https://pbs.twimg.com/media/HSTu2ZjbYAAiwdR.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2100065960644452352",
+            "url": "https://pbs.twimg.com/media/HSTu3VUaIAACsjg.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1942146567202283520",
+          "name": "Tesla India",
+          "screen_name": "Tesla_India",
+          "description": "Building a World Of Amazing Abundance",
+          "followers_count": 37972,
+          "friends_count": 3,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 143,
+          "favorite_count": 1458,
+          "reply_count": 79,
+          "quote_count": 12
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241620982,
+        "friends_count": 1406,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 143,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100076597831491742",
+      "text": "RT @tetsuoai: SpaceXAI engineer Lingxi Li, @lingxi, runs code cleanup while everyone else is asleep. Nobody is shipping at 3 AM, so conflic…",
+      "created_at": "Wed Sep 16 04:17:33 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2100048900942094348",
+        "text": "SpaceXAI engineer Lingxi Li, @lingxi, runs code cleanup while everyone else is asleep. Nobody is shipping at 3 AM, so conflicts are rare and the changes are low risk.\n\nHis bots start a research agent that sweeps the monorepo for quality issues, poor modularization, comment bloat and security gaps. He wakes up to a stack of PRs.",
+        "created_at": "Wed Sep 16 02:27:29 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2100048803143581696",
+            "url": "https://video.twimg.com/amplify_video/2100048803143581696/vid/avc1/1920x1080/DxoVVH2QlfkqcbRw.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2099890276315848743",
+          "text": "Three SpaceXAI employees are building a company in 3 days with Grok Bot. This is Day 1.\n\nMatt Palmer (@mattyp), Lauren Tan (@poteto), and Roshan Sadanani (@roshan_s) start with research, a plan, and a product.\n\nLive now, plus sessions for engineering, product, and founders.\n\nhttps://t.co/eV3Tfd5Bf2",
+          "created_at": "Tue Sep 15 15:57:10 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "2085838061347217408",
+            "name": "Grok Bot",
+            "screen_name": "bot",
+            "description": "AI teammates that you can give real work to.",
+            "followers_count": 280358,
+            "friends_count": 4,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1266,
+            "favorite_count": 8603,
+            "reply_count": 546,
+            "quote_count": 311
+          }
+        },
+        "user": {
+          "id": "1587601034339561472",
+          "name": "tetsuo",
+          "screen_name": "tetsuoai",
+          "description": "C and Assembly • Grok • AgenC //: 👾",
+          "followers_count": 240488,
+          "friends_count": 754,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 186,
+          "favorite_count": 1689,
+          "reply_count": 104,
+          "quote_count": 15
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241620982,
+        "friends_count": 1406,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 186,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100070216902594669",
+      "text": "True",
+      "created_at": "Wed Sep 16 03:52:11 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2099545293541007797",
+        "text": "The p(doom) discussion gets all the headlines, but the p(abundance) scenery is far more like and deserves much more engagement.",
+        "created_at": "Mon Sep 14 17:06:20 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "14561327",
+          "name": "DHH",
+          "screen_name": "dhh",
+          "description": "Father of three, Creator of Ruby on Rails + Omarchy, Co-owner & CTO of 37signals, Shopify director, NYT best-selling author, and Le Mans 24h class-winner.",
+          "followers_count": 883111,
+          "friends_count": 435,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 561,
+          "favorite_count": 6072,
+          "reply_count": 339,
+          "quote_count": 131
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241620982,
+        "friends_count": 1406,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 430,
+        "favorite_count": 4213,
+        "reply_count": 582,
+        "quote_count": 39
+      }
+    },
+    {
+      "id": "2100068458616467471",
+      "text": "回应贴：https://t.co/O5lWnjl1Iv",
+      "created_at": "Wed Sep 16 03:45:12 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 249319,
+        "friends_count": 1723,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100068419986923933",
+      "text": "React Native 开发者 Krzysztof Magiera 在 X 上发了一个技术演示：主线程被阻塞时，SwiftUI 的动画球会卡住，而 UIKit 的球照样平滑运动。原因是 SwiftUI 没有使用 Core Animation，那个从初代 iPhone 起就让 iOS 动画丝滑的底层引擎。他的结论是，SwiftUI 称不上\"真正原生\"。\n\nSwiftUI 的共同创建者、苹果工程师 Kyle Macomber 很快回应：这是团队最早期、最根本的设计决策之一。\n\nCore Animation 之所以不怕主线程卡顿，是因为它的动画跑在一个独立的渲染进程里，和 app 进程完全隔离。但代价是：当你希望用户在动画过程中随时打断并交互，比如列表滚动时的回弹、主屏幕切换 app 的手势，实现起来非常困难，因为事件处理和动画不在同一个进程。\n\nSwiftUI 把动画放回 app 进程，就是为了让这类可交互、可中断的动画成为默认能力，而不是需要开发者费力实现的特例。Macomber 还指出，SwiftUI 的动画大部分时间实际上跑在非主线程上，并不像演示暗示的那样总会卡。",
+      "created_at": "Wed Sep 16 03:45:03 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2100068367654629376",
+          "url": "https://pbs.twimg.com/media/HSTxDcIWsAAlbkI.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2099985361271144686",
+        "text": "SwiftUI isn’t native and here’s why SwiftUI apps may sometimes feel janky. It ditches the key element that made animations run so smoothly on iOS since the original iPhone: Core Animation.\nIn SwiftUI animations run in-app without CA backing. Block the main thread: SwiftUI ball stalls while UIKit’s keeps moving on the render server.",
+        "created_at": "Tue Sep 15 22:15:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2099985034010636288",
+            "url": "https://video.twimg.com/amplify_video/2099985034010636288/vid/avc1/1206x1300/bkFQmzXBZmESVYQZ.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3293424904",
+          "name": "Krzysztof Magiera",
+          "screen_name": "kzzzf",
+          "description": "R&D @swmansion. Made react-native (@meta), reanimated, rn-screens, Radon IDE, https://t.co/oO7e4kl04h",
+          "followers_count": 14985,
+          "friends_count": 608,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 63,
+          "favorite_count": 811,
+          "reply_count": 42,
+          "quote_count": 31
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 249319,
+        "friends_count": 1723,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 96,
+        "reply_count": 18,
+        "quote_count": 4
+      }
+    },
     {
       "id": "2100049650426200191",
       "text": "SwiftUI App 卡顿一个原因是它没有用 Core Animation",

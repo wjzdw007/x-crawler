@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 249508,
+    "followers_count": 249512,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260917",
-  "last_updated": "2026-09-17T19:31:35.898819",
-  "tweet_count": 5,
+  "last_updated": "2026-09-17T22:38:50.209124",
+  "tweet_count": 7,
   "tweets": [
     {
       "id": "2100417446200979486",
@@ -246,6 +246,128 @@
         "retweet_count": 2,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100675403656384721",
+      "text": "RT @fkysly: 为了更好的传播这个有意义的项目，我用中文重新说一下：\n\n@judegomila 这个老哥把肿瘤学相关的资料、产品、技术、初创公司、瓶颈等都汇总到了 https://t.co/HgtyXdmXB6 这个网站\n\n也可以通过 https://t.co/STz4…",
+      "created_at": "Thu Sep 17 19:56:59 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2100416953999659141",
+        "text": "为了更好的传播这个有意义的项目，我用中文重新说一下：\n\n@judegomila 这个老哥把肿瘤学相关的资料、产品、技术、初创公司、瓶颈等都汇总到了 https://t.co/354LAReNvK 这个网站\n\n也可以通过 https://t.co/y2znETsgqH 开源项目访问。\n\n特别是大家可以用 AI 辅助看看里面提到的难题，看看能不能做出一些贡献。为人类攻克癌症做出一些微小的努力",
+        "created_at": "Thu Sep 17 02:50:00 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2100416940686909440",
+            "url": "https://pbs.twimg.com/media/HSYuFD3bIAA6ItN.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2100416941001453568",
+            "url": "https://pbs.twimg.com/media/HSYuFFCasAAAnQ0.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2100416940712116224",
+            "url": "https://pbs.twimg.com/media/HSYuFD9bwAAxrXz.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2100416940938596352",
+            "url": "https://pbs.twimg.com/media/HSYuFEzbkAA00KB.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "371296701",
+          "name": "马天翼",
+          "screen_name": "fkysly",
+          "description": "Indie hacker & AI",
+          "followers_count": 14809,
+          "friends_count": 629,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 6,
+          "favorite_count": 29,
+          "reply_count": 2,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 6,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100696009282080778",
+      "text": "Claude Code 的 Projects 改版：Claude Tag 的架构 + Slack 的 Thread 功能\n\n以前就有人说现在 ChatBot、Agent 的交互就是借鉴自 Slack 的，现在看起来一点不假，Anthropic 今天重做了 Claude 的 Projects 功能，先在 Claude Code 里上线测试版，终于把我最喜欢的 Thread 功能也抄进来了。\n\n以前的 Project 是个文件夹，放资料和指令，对话还是一个个分开的。新版变成一个持续的主对话：你在里面说要做什么，Claude 自己拆任务，分给多个并行的 Thread 去干，检查结果后汇总给你。关掉电脑，活儿还在云端继续跑。\n\n【用 Slack 的 Thread 来理解】\n\n用过 Slack 或飞书的人都熟悉 Thread（飞书里叫“话题”），有时候在频道里要就某一个话题深入讨论，就可以在某个消息下评论开个 Thread，相关讨论都收在这个 Thread 下面的回复里。主频道保持干净，想看细节再点进去。\n\n新版 Projects 就是这个形态。\n\n我还没资格使用这个新功能，看了一些视频和介绍，Boris Cherny 晒了自己项目的截图：他在主对话里丢了一张截图，说“启动 cc cli 总弹这个提示”。Claude 回了句“在查了”，随即在这条消息下面开出一个 Thread，标题是“iTerm 启动时的配置变更警告”。\n\n点开 Thread，右侧面板里是完整过程：查出是 5 月加的一个 iTerm2 功能每次启动都去改终端配置，提了修复 PR（代码合并请求）#69807，PR 已合并，Thread 标记为“已解决”，需要时可以重新打开。这件事在主对话里只占一张卡片，下面写着“11 条回复”。\n\n接着他又发了句“unship this”（把这个功能撤掉），Claude 再开一个 Thread 去办。Boris 说他已经不再管理会话了，想到什么就发什么，拆分交给 Claude。\n\n【背后是多智能体】\n\n结构上是一个协调者加一群干活的。主对话里的 Claude 是协调者，负责理解需求、派活、跟进和验收。每个 Thread 是一个独立的 Claude Code 云端会话，有自己的代码分支和仓库副本，互不干扰。两个 Thread 改到同一段代码时，按普通的合并冲突处理。单个 Thread 内部还能继续拆，调用子智能体（subagent）并行处理，让大任务更快完成。\n\n过去想让几个 Claude Code 同时干活，得自己开多个终端或云端会话，自己分工，最后自己把结果拼起来。现在这层调度交给了协调者。官方的说法是，像给幕僚长交代工作一样跟它说话，几件事一起说、顺序随意都行。\n\n【和 Claude Tag 什么关系】\n\nClaude Tag 是 Anthropic 6 月 23 日推出的产品，面向 Enterprise 和 Team 客户测试。它让 Claude 作为团队成员加入 Slack 频道，频道里任何人都可以 @Claude 派活，它把任务分阶段做完，在 Thread 里回复结果，还会记住频道里的相关信息。Anthropic 当时就说，Claude Tag 是 Claude Code 演进的开端。\n\nThariq 也有推文解释：Projects 把 Claude Tag 的架构带进了 Claude Code，每个项目有一个智能体管理记忆，再按任务派出子智能体，还可以让它主动做事、定时做事。\n\n所以两者是同一套架构装在不同的地方。Claude Tag 住在 Slack 里，面向团队，一个频道所有人共用一个 Claude。\n\n新版 Projects 在 Claude 自己的产品里，面向个人，Pro 和 Max 订阅就能用，不需要公司买企业版，也不需要 Slack。\n\n【记忆和资料库】\n\n项目里所有 Thread 共享一份记忆，干活时既读也写。官方举的例子：发布日期改到了周五，导出功能为什么砍掉，动计费服务之前要先问谁。这些事说过一次，后面新开的 Thread 都知道，不用每次在提示词里重新交代。多久汇报一次、汇报写多细，也可以直接跟它说，它会记住。\n\n另有一个资料库（library），收着你上传的文件和 Claude 产出的文件。顶部的 Overview 面板列出哪些事在等你拍板，手机上也能查看和指挥任何一个 Thread。\n\n【适合什么场景】\n\n适合一次回复搞不定、又能拆成几块并行的活。官方给了两个例子。\n\n一是给项目定个目标“降低结账环节的 p75 延迟”（75% 的请求能在这个时间内完成），让 Claude 在并行的 Thread 里逐个接口做性能分析、试优化方案、提 PR。\n\n二是同时连上 API、网页端、移动端三个仓库，目标是下线一个废弃的 v1 接口。Claude 给每个仓库开一个 Thread，迁移调用方、跑测试、提 PR，最后告诉你哪个要先合并。\n\nBoris 截图里的用法也很典型：日常维护一个代码库，bug、小需求、临时想法随手丢进去，每件事自动变成一个可追踪的 Thread。改一行代码、问一个问题这类小事，开普通会话就够了。\n\n【限制和上手】\n\n每个 Thread 都是一个完整的 Claude Code 会话，几个同时跑，用量额度消耗得更快。项目里可以查看用量，也可以给协调者和干活的 Thread 分别选模型和推理强度。Boris 截图里主对话用的是 Fable 5.1，强度设为 Low。\n\nThread 目前只在云端运行，碰不到你电脑上的文件、本地工具和公司内网。Anthropic 说本地运行很快会支持。\n\n测试版今天起开放给部分 Pro 和 Max 用户，条件是在 Claude Code 里使用云端会话，且网页和桌面端没有已建的旧项目。未来一周扩大到更多 Claude Code 用户，之后才轮到聊天、Cowork 以及 Team、Enterprise 套餐。旧项目照常可用，后续统一升级。没拿到资格的可以去 https://t.co/5MmQZJA55N 排队。",
+      "created_at": "Thu Sep 17 21:18:52 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2100695256249290753",
+          "url": "https://pbs.twimg.com/media/HScrNKIWUAEawNT.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2100695650396475392",
+          "url": "https://pbs.twimg.com/media/HScrkGcXEAAsY1e.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2100695680524173312",
+          "url": "https://pbs.twimg.com/media/HScrl2rXQAAB6Oe.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2100633571543367691",
+        "text": "Today we're rolling out Projects in Claude Code on desktop and web.\n\nA project is one conversation with Claude. It splits the work into threads itself, runs them as parallel cloud sessions, passes context between them, and keeps going when you leave.\n\nIn beta for select users. https://t.co/j4k7rludhV",
+        "created_at": "Thu Sep 17 17:10:45 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2100633402152206336",
+            "url": "https://video.twimg.com/amplify_video/2100633402152206336/vid/avc1/3840x2160/N9AHjx5bxCNAGo7g.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2024518793679294464",
+          "name": "ClaudeDevs",
+          "screen_name": "ClaudeDevs",
+          "description": "Official updates for developers building with @ClaudeAI",
+          "followers_count": 690240,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 352,
+          "favorite_count": 6564,
+          "reply_count": 300,
+          "quote_count": 163
+        }
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 17,
+        "reply_count": 7,
         "quote_count": 0
       }
     }

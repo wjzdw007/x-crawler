@@ -67,7 +67,6 @@ jobs:
 
           echo "为昨天的数据生成用户总结..."
           python run_crawler.py --user-summaries $FORCE_FLAG
-        continue-on-error: true
 
       # 6. 生成运行报告
       - name: 📊 Generate report

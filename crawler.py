@@ -627,8 +627,38 @@ class XCrawler:
         for key, value in stats.items():
             print(f"  {key}: {value}")
     
+    def get_watched_users(self) -> set:
+        """从user_prompt_templates.json读取关注的用户列表（不包括default）
+        
+        Returns:
+            set: 关注用户的screen_name集合（小写）
+        """
+        templates_file = Path("user_prompt_templates.json")
+        
+        if not templates_file.exists():
+            print(f"⚠️ 未找到 {templates_file}，将保存所有用户")
+            return set()
+        
+        try:
+            with open(templates_file, 'r', encoding='utf-8') as f:
+                templates = json.load(f)
+            
+            # 获取所有key，排除 'default'
+            watched = {
+                username.lower() 
+                for username in templates.keys() 
+                if username != 'default'
+            }
+            
+            print(f"📋 关注用户列表: {', '.join(sorted(watched))}")
+            return watched
+            
+        except Exception as e:
+            print(f"⚠️ 读取 {templates_file} 失败: {e}，将保存所有用户")
+            return set()
+    
     def save_by_user_daily(self, tweets: List[Dict]):
-        """按用户和日期分组保存所有推文数据"""
+        """按用户和日期分组保存关注用户的推文数据"""
         from dateutil.parser import parse as parse_date
         import os
         
@@ -636,9 +666,13 @@ class XCrawler:
         
         print(f"\n👥 按用户和日期分组保存推文...")
         
+        # 获取关注的用户列表
+        watched_users = self.get_watched_users()
+        
         # 按用户和日期双重分组 {user: {date: [tweets]}}
         user_date_tweets = {}
         total_processed = 0
+        skipped_count = 0
         
         for tweet in tweets:
             try:
@@ -648,6 +682,12 @@ class XCrawler:
                 # 获取用户信息
                 user = tweet.get('user', {})
                 screen_name = user.get('screen_name', 'unknown')
+                
+                # 过滤：只保存关注的用户
+                # 如果watched_users为空集合（读取失败），则保存所有用户（保持向后兼容）
+                if watched_users and screen_name.lower() not in watched_users:
+                    skipped_count += 1
+                    continue
                 
                 # 初始化嵌套字典结构
                 if screen_name not in user_date_tweets:
@@ -662,12 +702,15 @@ class XCrawler:
                 print(f"⚠️ 解析推文时间失败: {e}")
                 continue
         
-        print(f"📅 处理推文: {total_processed}/{len(tweets)} 条")
+        print(f"📅 推文处理结果:")
+        print(f"  ✅ 保存关注用户: {total_processed} 条")
+        print(f"  ⏭️  跳过非关注用户: {skipped_count} 条")
+        print(f"  📊 总处理: {total_processed + skipped_count}/{len(tweets)} 条")
         
         # 统计信息
         total_users = len(user_date_tweets)
         total_files = sum(len(date_tweets) for date_tweets in user_date_tweets.values())
-        print(f"👤 涉及用户数: {total_users} 个")
+        print(f"👤 保存用户数: {total_users} 个")
         print(f"📂 将生成文件数: {total_files} 个")
         
         # 为每个用户的每个日期保存数据

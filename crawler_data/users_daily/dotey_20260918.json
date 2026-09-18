@@ -1,0 +1,248 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 249537,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260918",
+  "last_updated": "2026-09-18T02:51:16.663385",
+  "tweet_count": 6,
+  "tweets": [
+    {
+      "id": "2100746723178242197",
+      "text": "Jason Wei 在 Stanford AI Club 做了一场约 30 分钟的演讲，围绕三个他认为理解 2025 年 AI 格局最基本的思维框架展开。Jason Wei 目前在 Meta Superintelligence Labs 做研究，此前在 OpenAI 参与创建了 o1 和 Deep Research，更早在 Google Brain 推动了 chain-of-thought prompting 和 instruction tuning 的研究，累计被引超过 9 万次。\n\n一、智能正在变成大宗商品\n\n他把 AI 的进步分成两个阶段：第一阶段是推前沿，模型还做不好某件事，你在解锁新能力；第二阶段是一旦能力达成，它就会迅速被商品化。用 MMLU 基准测试的数据看，每一年达到同等智能水平所需的花费都在下降，这个趋势在他看来还会持续，核心原因是深度学习历史上第一次\"自适应计算\"真正跑通了。过去不管问题多简单多难，推理用的算力是固定的；现在从 o1 开始，模型可以根据问题难度动态调整推理时的算力投入，这意味着简单任务的成本可以被压到极低。\n\n另一个维度是获取公开信息的时间。他画了一条时间线：从前互联网时代到互联网时代、聊天机器人时代、再到 AI 智能体时代，找到一条信息所需的时间在指数级缩短。他举了一个例子——\"1983 年韩国釜山有多少对夫妇结婚？\"——o3 回答不了这个问题，但 OpenAI Operator 可以，因为它能打开韩国统计数据库 KOSIS，一路点击操作直到查到答案。OpenAI 内部用一个叫 BrowseComp 的基准来衡量这种\"知道答案就秒验证，但找答案极耗时\"的任务，人类平均每题花两小时以上，很多题根本做不出来，而 Deep Research 能解决大约一半。\n\n这个趋势带来几个推论：过去靠知识门槛建立壁垒的领域会被民主化，vibe coding 和个人健康管理是典型例子；公开信息近乎免费之后，私有内部信息的相对价值反而上升了——比如你知道哪些房子没上市但可以卖，这种信息会更值钱；最终每个人将拥有一个\"个性化互联网\"，想知道什么就有一个为你定制的页面呈现给你。\n\n二、验证者定律：能衡量的就能被 AI 攻克\n\n第二个框架是他所说的\"验证不对称性\"。有些任务，生成一个解比验证一个解难得多——数独是经典例子，写出能跑 Twitter 的代码需要大量工程师，但验证它能不能用只要打开网页点几下。另一些任务则相反：写一篇看起来有道理的事实性文章很快，但逐句核实极其费时；宣称\"最好的饮食是只吃野牛肉\"只花 10 秒，但验证这个说法需要大样本和长期跟踪。\n\n他在一个二维平面上把这些任务画出来：X 轴是生成难度，Y 轴是验证难度。关键洞察是，你可以通过提供\"特权信息\"来改变任务在这个平面上的位置——竞赛数学题如果给了答案就秒验证，写代码如果给了测试用例（像 SWE-bench 那样）验证也变得简单。\n\n由此他提出了 Verifier's Law：AI 训练出来在某个任务上的能力，基本上与该任务的可验证程度成正比。具体来说，可验证性取决于五个因素：是否有客观正确答案、验证速度多快、能否大规模并行验证、噪声大不大、以及奖励信号是连续的还是二元的。几乎所有 AI benchmark 本身就是因为容易验证才被设计出来的，而这些 benchmark 确实在过去几年被逐一攻破，这恰好是 Verifier's Law 的实例。\n\n他特别推荐了 DeepMind 的 AlphaEvolve 作为利用验证不对称性的范例。AlphaEvolve 挑选满足上述五个条件的问题——比如找到 11 个六边形的最优排列使外接六边形最小——然后用大语言模型采样大量候选解，自动评分，把最优解作为下一轮采样的灵感，不断迭代。关键技巧在于它绕过了泛化问题：训练集和测试集是同一道题，你就是想知道这一道题的最优解。\n\n这个框架的实际推论是：最先被自动化的任务一定是验证成本最低的任务；而一个正在崛起的创业方向是——发明新的衡量方法，把原本难以验证的任务变得可验证，从而让 AI 去优化它。\n\n三、智能的锯齿状边缘\n\n对于\"AI 将如何改变世界\"这个问题，他看到的观点光谱极广。他的一个量化交易员朋友觉得 ChatGPT 跟自己工作无关，而他在顶级实验室的同事则认为再过两三年 AI 就会取代他们自己的工作。\n\n他明确反对\"快速起飞\"假说——即一旦 AI 跨过某个临界点就会突然变成超级智能。他的理由是，AI 的自我改进不是一个二元开关，而是一个渐进光谱：从跑不起来代码，到能训练但结果一般，到能自主训练但不如顶尖研究者，再到偶尔还需要人工干预。更重要的是，自我改进的速度应该按任务来看。AI 的能力图谱是一条锯齿线：在某些任务上已经达到山峰（竞赛数学、部分编程），但在另一些任务上仍是低谷（比如 ChatGPT 曾长期认为 9.11 大于 9.9，或者说一门只有几百人会的原住民语言 Tlingit）。\n\n他给出了判断 AI 在某个任务上进步速度的三条启发式规则。第一，AI 擅长数字化任务，核心原因是迭代速度——数字环境可以轻松扩展算力，而物理机器人的实验扩展成本高得多。第二，人类觉得容易的任务 AI 也往往容易，但有一类例外是\"人类因生理限制做不到但 AI 可以做到\"的任务，比如读过一千万张乳腺影像后发现某个人类注意力无法捕捉的模式来预测乳腺癌。第三，数据充足的任务 AI 表现好——数学推理在不同语言上的表现和该语言的训练数据量高度相关；而如果一个任务有单一客观指标，就可以通过强化学习生成合成数据来突破数据瓶颈，AlphaEvolve 和 AlphaZero 都是这个路线。\n\n他用一张表把这些启发式规则应用到具体任务上：主流语言翻译已经完成；调试基础代码 2023 年搞定；竞赛数学 2024 年搞定；AI 研究本身大概 2027 年；化学研究因为不是纯数字任务会更晚；拍电影大概 2029 年；修水管和理发因为高度物理化，短期内不太可能；乌兹别克传统地毯编织需要一组人花一个月、非数字化且缺数据，AI 不太可能碰到；至于\"带女朋友约会让她满意\"——他的判断是\"impossible，非数字化，缺数据\"，人类还能保住饭碗。\n\nhttps://t.co/CIbwKE5n3X",
+      "created_at": "Fri Sep 18 00:40:23 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2100733704582672384",
+          "url": "https://video.twimg.com/amplify_video/2100733704582672384/vid/avc1/1920x1080/JCL9AKo2Tby9eqif.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 13,
+        "favorite_count": 55,
+        "reply_count": 7,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2100753679376593354",
+      "text": "RT @yuyy614893671: OpenAI 首席执行官 Sam Altman 和 Nvidia 首席执行官 Jensen Huang 计划下周与中国国家主席习近平一起出席白宫的高级别国宴\n\n所以Anthropic的CEO是没在邀请之列……好吧，这厮跟川普关系也不咋地",
+      "created_at": "Fri Sep 18 01:08:01 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2100660730307788929",
+        "text": "OpenAI 首席执行官 Sam Altman 和 Nvidia 首席执行官 Jensen Huang 计划下周与中国国家主席习近平一起出席白宫的高级别国宴\n\n所以Anthropic的CEO是没在邀请之列……好吧，这厮跟川普关系也不咋地",
+        "created_at": "Thu Sep 17 18:58:41 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2100644365378982057",
+          "text": "JUST IN: OpenAI CEO Sam Altman and Nvidia CEO Jensen Huang are planning to attend a high-stakes state dinner at the White House next week with Chinese President Xi Jinping, according to sources familiar with the matter. https://t.co/h6TEcGZq3a https://t.co/HtvMlttAmu",
+          "created_at": "Thu Sep 17 17:53:39 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2100644356646424577",
+              "url": "https://pbs.twimg.com/media/HSb86aVW0AEtahm.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "28785486",
+            "name": "ABC News",
+            "screen_name": "ABC",
+            "description": "The only official ABC News account. Download our mobile app for the latest updates: https://t.co/BHFi2mi2To",
+            "followers_count": 18584295,
+            "friends_count": 402,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 75,
+            "favorite_count": 249,
+            "reply_count": 52,
+            "quote_count": 13
+          }
+        },
+        "user": {
+          "id": "1597654998971604992",
+          "name": "金融汪",
+          "screen_name": "yuyy614893671",
+          "description": "油管频道：金融汪 ，网址：https://t.co/mE0zmyZHPv\n\n金融市场老兵，观察和理解这个世界每天在发生着什么，是我的兴趣也是工作。X上的内容只是分享，不是投资建议。",
+          "followers_count": 71198,
+          "friends_count": 629,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 19,
+          "reply_count": 5,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100757928760262994",
+      "text": "我现在 ChatGPT Pro 的利用率越来越高，主要是经常用它帮我做技术方案，效果特别好，而且不占 Codex 额度。\n\n每次用的时候我直接把 GitHub 地址发给它，让它根据代码去分析去设计，写一份设计文档，甚至提交个 PR，后续我把设计文档下载到本地给 Codex 或者 Claude Code 去执行。\n\n还有时候会让它跟 Fable 赛马，同样的问题让 Fable 和 GPT 6 Pro 各自设计一个方案，然后取长补短。\n\n注意需要在设置里面连接一下自己的 GitHub 账号，这样可以访问自己的私有代码仓库和提交 PR。",
+      "created_at": "Fri Sep 18 01:24:55 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2100757060002443264",
+          "url": "https://pbs.twimg.com/media/HSdjanDW8AAvwOO.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2100757117158277120",
+          "url": "https://pbs.twimg.com/media/HSdjd7-XwAAagey.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 132,
+        "reply_count": 41,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2100767963737727267",
+      "text": "Q4：作为非工程师，怎么判断 Vibe Coding 出来的代码是否靠谱？比如 GPT 写的代码常有大量不必要的安全验证、过度防御。\n\n我的观点可能有争议，越是有编程经验的人可能越不认同，一年前的我也不会认同：不用太在意代码细节。整不整洁、有没有冗余、是否过度防御，都不是关键。\n\n你把自己当 QA，看三件事：\n1. 功能完不完整；\n2. 性能好不好，跑一下看 CPU 内存占用，我的 App 有段时间内存很高，就让 AI 去优化；\n3. 安全是最高优先级，SQL 注入、弱密码这类常识测试要做，拿不准找专业的人。\n\n其他实现细节没那么重要，就像高级语言编译成汇编你本来也看不懂，当黑盒就好。\n\n真正的重点在两头：\n\n一是拆分，拆成 Agent 刚好能处理的小模块，一次一个小模块，AI 的产出比绝大多数程序员的平均水平高；\n\n二是验收，功能、性能、安全把住，细节不用管。",
+      "created_at": "Fri Sep 18 02:04:47 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2100767884020523009",
+          "url": "https://pbs.twimg.com/media/HSdtQpqXoAEBZL3.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2094624092015992854",
+        "text": "https://t.co/UMTjznAJSc",
+        "created_at": "Tue Sep 01 03:11:14 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 249537,
+          "friends_count": 1726,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 196,
+          "favorite_count": 958,
+          "reply_count": 28,
+          "quote_count": 29
+        }
+      },
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 97,
+        "reply_count": 16,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2100768070469890368",
+      "text": "之所以把这条 Q&amp;A 翻出来，是因为看到这条推文：\nhttps://t.co/NfbhotuhEq",
+      "created_at": "Fri Sep 18 02:05:13 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2100700797143261324",
+        "text": "“Why would I look at code? It’s like assembly, like a compiled artifact.”\n\nSensei @karpathy fully agentic, 18m after “I don’t really use autocomplete AI code tools” https://t.co/vpHs4a3ey8",
+        "created_at": "Thu Sep 17 21:37:53 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2100700793611632640",
+            "url": "https://pbs.twimg.com/media/HScwPeaaQAATnBM.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "339261041",
+          "name": "sarah guo",
+          "screen_name": "saranormous",
+          "description": "startup investor/helper, founder @conviction. interested in intelligence, accelerating progress. tech podcast: @nopriorspod",
+          "followers_count": 159548,
+          "friends_count": 3385,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 62,
+          "favorite_count": 1407,
+          "reply_count": 59,
+          "quote_count": 24
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100778608847380843",
+      "text": "不知道这些人啥心理 https://t.co/mfLmvpv7uR",
+      "created_at": "Fri Sep 18 02:47:05 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2100778471605579776",
+          "url": "https://pbs.twimg.com/media/HSd247fWsAAzWEW.png"
+        },
+        {
+          "type": "photo",
+          "id": "2100778565146980352",
+          "url": "https://pbs.twimg.com/media/HSd2-X9XMAAIRZK.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

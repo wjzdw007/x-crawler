@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 249537,
+    "followers_count": 249554,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260918",
-  "last_updated": "2026-09-18T02:51:16.663385",
-  "tweet_count": 6,
+  "last_updated": "2026-09-18T08:42:43.661811",
+  "tweet_count": 10,
   "tweets": [
     {
       "id": "2100746723178242197",
@@ -241,6 +241,168 @@
         "retweet_count": 0,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100780972094402584",
+      "text": "RT @gantrols: 如何用ChatGPT网页端直接GitHub提PR？\n\n照评论参考配置好后，直接粘贴GitHub链接，然后提需求，让它改。\n\n（与此同时，过时的文档说不能提交PR） https://t.co/5iLH7X2GGR",
+      "created_at": "Fri Sep 18 02:56:29 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2100763128300781568",
+          "url": "https://pbs.twimg.com/media/HSdo71ObQAA2FuK.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2100763399672181219",
+        "text": "如何用ChatGPT网页端直接GitHub提PR？\n\n照评论参考配置好后，直接粘贴GitHub链接，然后提需求，让它改。\n\n（与此同时，过时的文档说不能提交PR） https://t.co/5iLH7X2GGR",
+        "created_at": "Fri Sep 18 01:46:39 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2100763128300781568",
+            "url": "https://pbs.twimg.com/media/HSdo71ObQAA2FuK.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1553753362633719808",
+          "name": "Gantrol",
+          "screen_name": "gantrols",
+          "description": "AIY: AI helps you DIY.",
+          "followers_count": 1360,
+          "friends_count": 114,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 5,
+          "favorite_count": 12,
+          "reply_count": 11,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100811516316397778",
+      "text": "这个新闻也挺劲爆的，堪比当年 OpenAI 黑进 HuggingFace，不过这次是三名研究员用 Claude 黑进 OpenAI，用一张图片，拿下员工账号\n\n安全公司 Hacktron 的三名研究员在 7 月 25 日串联两个高危漏洞，接管了多名 OpenAI 员工的 ChatGPT 账号，攻击代码主要由 Anthropic 的 Claude 写出。\n\n为了证明权限又不接触敏感信息，他们只让其中一名员工的 Codex 在 OpenAI 内部主代码仓库 openai/openai 里开了一个无害的 PR，随后停手。漏洞已修复，Hacktron 9 月 13 日公开了完整过程，《华尔街日报》随后跟进报道。\n\n一、在 OpenAI 官方社区论坛发有毒的图片\n\n入口是 OpenAI 的官方社区论坛 https://t.co/Xxu1QJhqbo，它用的是开源论坛软件 Discourse。用户上传 HEIC 图片（iPhone 默认的照片格式）时，Discourse 会交给 ImageMagick 转换，底层由图像库 libheif 解码。\n\nlibheif 有一个堆溢出漏洞，上游去年就改了相关代码，但没标注为安全修复，也没有 CVE 编号，Debian 12 和 13 因此一直没同步补丁，而 Discourse 的 Docker 镜像正好基于 Debian 12。结果是上传一张特制图片，就能在论坛服务器上执行任意代码。\n\n二、黒进 OpenAI 自己的登录系统\n\n论坛支持“用 OpenAI 账号登录”。OpenAI 的单点登录（SSO，一个账号通行多个服务）配置有缺陷，拿下论坛服务器后，活跃论坛用户的 ChatGPT 和 Codex 账号可以被直接接管，受害者不需要做任何操作。被接管的那名员工，Codex 连着 OpenAI 的 GitHub 组织。\n\nHacktron 强调，任何接入 OpenAI SSO 的服务被攻破，后果都一样，Discourse 只是其中一条路。由于 ChatGPT 和 Codex 可以连接各种外部服务，理论上能触及的范围包括 GitHub、Slack 和邮件。\n\n三、之前 Opus 4.8 没成功，Opus 5 几小时搞定\n\n研究员 7 月 23 日开始审查，先用 Opus 4.8 检查 Discourse 镜像里的 libheif，找到了没被回移植的补丁；24 日写出了关闭 ASLR 条件下可用的利用代码，但开启 ASLR 之后，开了好几个会话都没成功。\n注：ASLR 是操作系统的内存地址随机化防护，开启后攻击者很难预测代码在内存中的位置，利用难度高出一大截。\n\n当晚 Anthropic 发布 Opus 5。新会话 3 小时内在本地 Mac 上跑通，25 日早上 6 点在 Discourse 的环境里确认可用；随后 Claude 在自主循环中攻击研究员自己的 Discourse Cloud 实例，10 点再看时已经成功。用生成的脚本，他们拿下了 OpenAI 的论坛实例。\n\n一个细节：Opus 拒绝为远程真实目标写利用代码，研究员把自己的测试实例通过代理伪装成 CTF（夺旗赛）靶场，才让它继续。\n\n四、整次入侵花费不到 3000 美元 \n\n按 Hacktron 原文，3000 美元是整个“HEIF Heist”项目的 token 总花费，这个项目历时两个月，目标还包括 Slack、Zoom、Meta 等，由三名研究员完成；OpenAI 这一单只用了智能体几天时间，外加几小时人工。\n\n把利用代码适配到一家新公司，通常只要一两天，而且往往不知道对方的 libheif 版本和部署环境。Hacktron 还提到，在这种对目标一无所知的场景里，从 Opus 5 换到 OpenAI 的 GPT-5.6 Sol，能力又有一次明显提升。他们发出了数千张图片，对方的图像处理服务反复崩溃，据他们所知只有 Shopify 察觉到了。\n\nHacktron 自己也说，这不算完全自主的攻击，有经验的人来引导仍然重要。\n\n最后\n\n从最初发现到进入 OpenAI 仓库不到 72 小时。OpenAI 在收到报告约 14 小时后确认修复。Discourse 周六收到报告，周一补丁就绪，还给图像处理加了沙箱，7 月 28 日发布安全公告。\n\nOpenAI 9 月 1 日支付了 6500 美元赏金，并特别说明：论坛本来被明确排除在赏金计划之外，这笔钱只奖励 OpenAI 自身那部分发现，不包括针对 Discourse 的操作。",
+      "created_at": "Fri Sep 18 04:57:51 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2100778872728060304",
+        "text": "OK, this is a big deal:\n\n3 researchers used Claude Opus 5 to turn an image upload bug into an OpenAI employee account takeover, then had the compromised employee’s Codex open a PR in OpenAI’s internal monorepo.\n\nTheir entire hacking cost less than $3000 in tokens.\n\nOpus 4.8 struggled with the exploit. Then Opus 5 dropped and cracked it within hours.\n\nAI-powered cyberattacks are becoming common and cheap. The best defense is to put the best AI in the hands of defenders too.",
+        "created_at": "Fri Sep 18 02:48:08 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2100778863618084864",
+            "url": "https://pbs.twimg.com/media/HSd3Pv2a0AA0jgn.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "800854096219471872",
+          "name": "Yuchen Jin",
+          "screen_name": "Yuchenj_UW",
+          "description": "Cooking fun AI systems & products @databricks. Prev: co-founder & CTO @ Hyperbolic, OctoAI (acquired by @nvidia) Apache TVM, PhD @ University of Washington.",
+          "followers_count": 291331,
+          "friends_count": 844,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 42,
+          "favorite_count": 523,
+          "reply_count": 36,
+          "quote_count": 12
+        }
+      },
+      "stats": {
+        "retweet_count": 13,
+        "favorite_count": 116,
+        "reply_count": 25,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2100812034862428478",
+      "text": "https://t.co/3bJ8hrPM8V https://t.co/V5sIOeYhHX",
+      "created_at": "Fri Sep 18 04:59:54 +0000 2026",
+      "lang": "zxx",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2100811940020760576",
+          "url": "https://pbs.twimg.com/media/HSeVVDDWMAA5umE.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 8,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2100819960033407011",
+      "text": "如果你在 X、Instagram、TikTok、YouTube 有 10 万以上关注，就可以去 Google for Creators 申请你自己的谷歌搜索官方卡片(Search Profile) https://t.co/rrxsVuPRxF\n\n有啥用我也不清楚",
+      "created_at": "Fri Sep 18 05:31:24 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2100599527178969179",
+        "text": "Google for Creators just dropped the search profile requirements from 30K to 10K. If you are a creator and have these numbers on any of your social media accounts, check your search account and improve your performance. https://t.co/cQ4WkynPub",
+        "created_at": "Thu Sep 17 14:55:29 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2100599519851491328",
+            "url": "https://pbs.twimg.com/media/HSbUIkQasAAqRha.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2872720562",
+          "name": "Emily",
+          "screen_name": "IamEmily2050",
+          "description": "Any sufficiently advanced technology is indistinguishable from magic. Arthur C. Clarke.",
+          "followers_count": 48991,
+          "friends_count": 1053,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 6,
+          "favorite_count": 188,
+          "reply_count": 37,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 12,
+        "reply_count": 13,
         "quote_count": 0
       }
     }

@@ -1,0 +1,185 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 249706,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260919",
+  "last_updated": "2026-09-19T08:29:45.942902",
+  "tweet_count": 4,
+  "tweets": [
+    {
+      "id": "2101205726345548111",
+      "text": "RT @dongxi_nlp: Encoder 的卷土重来\n\nBERT 本来是一条极有潜力的路线：高效地把输入压成 representation。但它停留在了 task-specific 时代，每个任务都需要微调。\n\nGPT 早期同样如此，后来却沿着 scaling、in-co…",
+      "created_at": "Sat Sep 19 07:04:18 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2101183155294117913",
+        "text": "Encoder 的卷土重来\n\nBERT 本来是一条极有潜力的路线：高效地把输入压成 representation。但它停留在了 task-specific 时代，每个任务都需要微调。\n\nGPT 早期同样如此，后来却沿着 scaling、in-context learning 和 instruction tuning 走向了 泛化，把自然语言变成 universal task interface。分类、判断、推理、工具调用，统统变成 generation。\n\n于是 decoder-only 赢下了整个 paradigm，encoder 也失去了继续探索 general classifier 和 general representation model 的历史机会。\n\n但 Agent 改变了 workload。模型开始面对越来越大的输入、越来越重的 KV cache、越来越频繁的循环调用，此时，用一个巨大的 decoder 完整 prefill，再 autoregressive decode 几个 token 来完成一次判断，开始显得昂贵。\n\nJev 恰好等到了这个窗口。它试图补上 BERT 当年没有走完的路线，保留 GPT 的 task generalization，同时重新获得 encoder 和 classifier 式的 decision efficiency，成为面向 service、面向 Agent 的 泛化 decision model。",
+        "created_at": "Sat Sep 19 05:34:36 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1477948736156454913",
+          "name": "Dongxi 东锡 NLP",
+          "screen_name": "dongxi_nlp",
+          "description": "Prev. PhD @Stockholm_Uni | Alumni @KTHuniversity @uppsalauni Sharing insights on AI",
+          "followers_count": 41372,
+          "friends_count": 983,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 11,
+          "favorite_count": 104,
+          "reply_count": 6,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 11,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2101207695546015904",
+      "text": "RT @claudeai: A thread of our favorite things people built with Claude recently:\n\nhttps://t.co/bLVmlNj5ew",
+      "created_at": "Sat Sep 19 07:12:07 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2101017902316982783",
+        "text": "A thread of our favorite things people built with Claude recently:\n\nhttps://t.co/bLVmlNj5ew",
+        "created_at": "Fri Sep 18 18:37:57 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2100238648218427563",
+          "text": "I made a website with 25 mini rooms, each with Claude keeping people company.\n\nCreated with Claude Opus 5. https://t.co/VMRs5waWO5",
+          "created_at": "Wed Sep 16 15:01:28 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2100237458520829952",
+              "url": "https://video.twimg.com/amplify_video/2100237458520829952/vid/avc1/1080x1080/vzqQSxz4mVV5hnro.mp4?tag=29",
+              "bitrate": 8768000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "2015189315492478976",
+            "name": "Kevin Ngo",
+            "screen_name": "kevin_t_ngo",
+            "description": "Creative coding with AI. Not endorsing any coins.",
+            "followers_count": 10742,
+            "friends_count": 427,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 208,
+            "favorite_count": 3873,
+            "reply_count": 135,
+            "quote_count": 59
+          }
+        },
+        "user": {
+          "id": "1943306828697550848",
+          "name": "Claude",
+          "screen_name": "claudeai",
+          "description": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+          "followers_count": 1793313,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 222,
+          "favorite_count": 5111,
+          "reply_count": 127,
+          "quote_count": 17
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 222,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2101221118384169071",
+      "text": "据说是 Opus 5.2 用纯 JavaScript （用了 tree.js）做了一个关于泰坦尼克号的完整 5 分钟电影，并展示了整个过程发生的事情\n\n本来我还不太信的，看了网页有点信了，就等啥时候发布了，现在 Opus 5 慢还不怎么出活了，Fable 5 又不耐用。\n\nhttps://t.co/NveBVbDwlQ\n https://t.co/c264DV9mtj",
+      "created_at": "Sat Sep 19 08:05:28 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2101005722633035777",
+          "url": "https://video.twimg.com/amplify_video/2101005722633035777/vid/avc1/1920x1080/C1VripsE8ITlqjWI.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 13,
+        "reply_count": 8,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2101223632919728284",
+      "text": "“有奶才是娘，无 token 不义父”",
+      "created_at": "Sat Sep 19 08:15:27 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2101160579763486951",
+        "text": "🥲重置无了无了，\n口风变了，\n用户说没额度，\ntibo评论咋不充钱",
+        "created_at": "Sat Sep 19 04:04:54 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1732683816685514752",
+          "name": "LotusDecoder",
+          "screen_name": "LotusDecoder",
+          "description": "Personal AI. \nLocal-first. \nFor the inner life.\n\n2× DGX Spark · M4 Max 128GB",
+          "followers_count": 8462,
+          "friends_count": 2556,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 78,
+          "reply_count": 2,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    }
+  ]
+}

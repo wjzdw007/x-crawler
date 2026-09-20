@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 249753,
+    "followers_count": 249764,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260919",
-  "last_updated": "2026-09-19T22:07:39.700164",
-  "tweet_count": 7,
+  "last_updated": "2026-09-20T03:01:47.402059",
+  "tweet_count": 8,
   "tweets": [
     {
       "id": "2101205726345548111",
@@ -333,6 +333,51 @@
       "quoted": null,
       "stats": {
         "retweet_count": 22,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2101455809917911304",
+      "text": "RT @karminski3: 看到了个Fable5.1弄的神奇项目, 是一个标签打印机的固件, 作者说他在速卖通上买了个热敏标签打印机, 然后打印机耗材用光了, 他就买了点第三方的热敏纸. 结果这个标签打印机很鸡贼, 耗材是有RFID的(让我想起了空气净化器的滤芯), 检测到…",
+      "created_at": "Sat Sep 19 23:38:02 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2101431800920990074",
+        "text": "看到了个Fable5.1弄的神奇项目, 是一个标签打印机的固件, 作者说他在速卖通上买了个热敏标签打印机, 然后打印机耗材用光了, 他就买了点第三方的热敏纸. 结果这个标签打印机很鸡贼, 耗材是有RFID的(让我想起了空气净化器的滤芯), 检测到不是自家产品, 就降速然后降低打印质量. \n\n由于是RFID, 于是大家的人肉破解方法是把用光的耗材的卷轴(类似卷纸芯的那根塑料轴，里边有RFID芯片), 放到打印机旁边, 然后把第三方耗材的卷轴拆掉. 这样打印机就只能感应到原厂塑料轴, 就能继续打印了.\n\n作者气不过于是用Fable-5.1尝试破解这个打印机固件, 然后经过几次刷机后, 就成功了.\n\n我看了下repo细节, 有挺多好玩的地方, 首先Fable-5.1成功推导出了控制打印浓度的公式: darkness=renderer_input×coefficient, 然后定位了打印浓度在内存中的位置, 然后甚至利用了 Cortex-M0 汇编代码洞跳转技术把浓度重映射的动态逻辑缝合了进去, 彻底绕过了降速和降质限制.\n\n比较黑色幽默的是整个过程 AI 负责搞定高难度的 ARM 逆向, 数学推导和汇编注入, 而人类由于长了眼睛和手, 于是负责提供物理执行力, 也就是按电源键和看纸上的字够不够黑.\n\n从目前来看 AI 正在把逆向工程这种原本专属于极客的\"重工业技术\"彻底平民化了. 照这个趋势发展下去，硬件厂商精心设计的用来搞垄断的那些防伪和硬件锁啥的, 在人人可用的代码 Agent 面前, 基本就跟纸糊的一样了.\n\n项目在这里: https://t.co/vwI7Rv1rqC\n(记得刷机就有变砖的风险, 谨慎操作)\n\n> #fable51 #AIAgent",
+        "created_at": "Sat Sep 19 22:02:38 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2101431738211962880",
+            "url": "https://pbs.twimg.com/media/HSnJCDPbEAAePLN.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1071224721046261760",
+          "name": "karminski-牙医",
+          "screen_name": "karminski3",
+          "description": "A coder, road bike rider, server fortune teller, electronic waste collector, co-founder of KCORES, ex-director at IllaSoft, KingsoftOffice, Juejin.",
+          "followers_count": 39437,
+          "friends_count": 1558,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 65,
+          "favorite_count": 586,
+          "reply_count": 26,
+          "quote_count": 11
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 65,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

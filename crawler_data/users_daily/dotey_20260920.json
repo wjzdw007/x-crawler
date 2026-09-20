@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 249868,
+    "followers_count": 249872,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260920",
-  "last_updated": "2026-09-20T20:12:51.753613",
-  "tweet_count": 8,
+  "last_updated": "2026-09-20T23:49:15.492220",
+  "tweet_count": 9,
   "tweets": [
     {
       "id": "2101523037233217780",
@@ -251,6 +251,51 @@
         "retweet_count": 0,
         "favorite_count": 6,
         "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2101802939148910974",
+      "text": "Politico 今天刊发了一篇深度调查，采访十余位当事人，还原了今年 4 月到 7 月间，特朗普政府与 Anthropic 围绕 AI 安全监管展开的 85 天博弈。这段故事基本定义了美国当前对前沿 AI 模型的监管框架，尽管这个框架已经在被新模型甩在身后。\n\nMythos 引爆危机\n\n4 月 7 日，Anthropic 向经过审批的用户发布了新模型 Mythos。这个模型能以极快速度发现数字基础设施中的安全漏洞，用对了是防御利器，用错了就是自动化网络攻击工具。微软在 3 月底拿到早期访问后私下向政府警告：Mythos 可以让普通人发起过去只有顶尖黑客才能执行的复杂攻击，银行、电网、政府系统都可能成为目标。\n\n财政部长 Bessent 连夜紧急召集五大银行 CEO，白宫启动危机模式，内阁在战情室开会，副总统 Vance 与 Amodei 等科技高管通电话。一个高举\"让 AI 放开跑\"旗帜的政府，突然意识到 AI 也可以是指向自家经济命脉的武器。\n\n行政令一波三折\n\n白宫幕僚长 Wiles 指派国家网络总监 Cairncross 牵头制定前沿 AI 监管政策。此人是选举律师出身，对网络安全几乎一无所知，他自己也对这个任命感到意外。他的团队向企业发了一份 31 题的问卷，实质上把制定 AI 国家指南的工作外包给了行业。\n\n5 月初拿出的草案提出：前沿模型发布前须接受商务部下属 CAISI（AI 标准与创新中心）的 60 天强制评估，情报部门给出\"绿灯\"或\"红灯\"。Google、Anthropic、OpenAI 一致反对，OpenAI 内部文件写道：\"拟议的 60 天强制访问窗口在操作上不现实，将实质性地干扰前沿模型的发布周期。\"\n\n5 月 21 日，特朗普本要当天下午签署行政令，三家公司代表已赶到华盛顿。当天上午，已离开全职 AI 沙皇岗位的 Sacks 给特朗普打了个电话，论点是\"任何减速都会帮中国\"。特朗普当即取消签署。一位白宫高级官员回忆：\"他完全背叛了所有高级幕僚，把我们的腿从下面砍断了。\"\n\n经过修改，政府审查窗口从 90 天缩至 30 天且改为自愿性质。行政令在 6 月 2 日低调签署，没有仪式，没有镜头。\n\nFable 被强制下架 19 天\n\n行政令墨迹未干，新危机就来了。6 月 9 日 Anthropic 发布了面向公众的 Fable 模型 Mythos 的\"安全版\"，去掉了最高级别的网络攻击能力。两天后，亚马逊研究人员发现了一个越狱漏洞（jailbreak，指绕过模型安全护栏的方法），用户可以突破限制。\n\n白宫要求立即下架。Amodei 拒绝了，他的理由是：没有任何前沿模型能完全防越狱，Fable 的表现在预期范围内，强制下架会给整个行业树立一个不可能达到的标准。\n\n双方交锋极为直接。Cairncross 在电话中说：\"为了保护美利坚合众国，我们需要关闭 Fable 的访问。\"Amodei 说需要时间让工程师评估。Cairncross 回答：\"我已经得到了我需要的答案。\"Bessent 更直白：\"这是一个糟糕的决定。\"\n\n白宫随即动用出口管制，商务部当天下午 5:21 发出指令，禁止任何外国国民访问 Fable 和 Mythos。由于 Anthropic 自己也有海外工程师，这实际上等于全球下架。Amodei 问商务部长 Lutnick\"这是不是意味着我们必须下架\"，Lutnick 说：\"对，这就是目的。\"\n\n转折出现在 Anthropic 联合创始人 Tom Brown 接手谈判之后。他 24 小时内带技术团队飞赴华盛顿，在商务部和国安机构之间穿梭，用实时数据展示安全改进，训练了改进版安全分类器。一位政府官员形容他\"没有假设、没有理论、没有哲学探讨——直接干活\"。19 天后 Fable 恢复上线。\n\n行业连锁反应\n\nOpenAI 推 ChatGPT-5.6 时变得极度谨慎，主动接受了白宫要求的分阶段发布安排，尽管 Altman 在内部备忘录中写道\"这不是我们倾向的长期模式\"。\n\n部分企业开始重新评估对美国 AI 模型的依赖。通信基础设施公司 Telnyx 的 CEO 说，Fable 下架给了他们\"探索替代技术的完美理由\"，他们转向了中国公司智谱的 GLM 模型。\n\n9 月，Amodei 发文呼吁\"放慢前沿步伐\"，Altman 和马斯克公开声援。特朗普的回应是称 AI 风险为\"骗局\"。\n\n白宫内部陷入两难：太快怕出事，太慢怕帮中国。\n\n行政令要求 8 月底前公布安全审查细则，截止日期已过，至今没有公开文件。一位参与政策制定的官员总结了特朗普的态度：\"外面有一把锤子，公司们知道那是什么。\"",
+      "created_at": "Sun Sep 20 22:37:24 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2101708362161574344",
+        "text": "Politico has posted a long article about the Fable drama, aka Anthropic vs The White House, it's a good read if you are interested in the events that took place during the negotiations. https://t.co/ONMeAKzoHG",
+        "created_at": "Sun Sep 20 16:21:36 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2101708358059474944",
+            "url": "https://pbs.twimg.com/media/HSrEnceawAAK5hf.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1538525334781370368",
+          "name": "Andrew Curran",
+          "screen_name": "AndrewCurran_",
+          "description": "🏰 - I write about AI, mostly. Expect some strange sights.",
+          "followers_count": 98136,
+          "friends_count": 19600,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 50,
+          "favorite_count": 554,
+          "reply_count": 27,
+          "quote_count": 10
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 18,
+        "reply_count": 6,
         "quote_count": 0
       }
     }

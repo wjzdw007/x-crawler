@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 249966,
+    "followers_count": 249977,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260921",
-  "last_updated": "2026-09-21T16:11:28.776059",
-  "tweet_count": 4,
+  "last_updated": "2026-09-21T21:39:30.412332",
+  "tweet_count": 8,
   "tweets": [
     {
       "id": "2101874249828904969",
@@ -175,6 +175,161 @@
         "retweet_count": 5,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102074357723881729",
+      "text": "OpenAI 内部的 AI 模型已经基本能自动化新实验模型的训练流程了——包括编写 GPU 内核代码（GPU kernel，即直接控制显卡进行高性能计算的底层程序）和优化训练代码。\n\n据 The Information 报道，研究人员现在只需给 AI 一个优化示例，它就能自己花几周时间去实现和测试类似的改进。更值得注意的是，OpenAI 内部的多个 AI 智能体已经开始互相协作解决问题，不再需要人类参与。\n\n这种能力在过去几个月里进步显著。再加上 OpenAI 拥有的算力持续增长，以前可能需要几年才能完成的实验，现在大约一周就能跑完。",
+      "created_at": "Mon Sep 21 16:35:56 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102047257784881556",
+        "text": "OPENAI HAS LARGELY AUTOMATED TRAINING OF NEW EXPERIMENTAL AI MODELS\n\nOpenAI’s internal AI models can now handle much of the process of building and training experimental models, including writing GPU kernels and optimizing the code used to run them.\n\nResearchers can reportedly give an AI a single example of the optimization they want, then let it work for weeks implementing and testing similar improvements.\n\nOpenAI employees also say internal agents increasingly collaborate with each other to solve problems without involving their human users.\n\nThe capability has improved significantly in just the last few months, while OpenAI’s growing access to compute is allowing researchers to test ideas much faster. Employees said some experiments that previously could have taken years can now be carried out in about a week.\n\nSource: The Information",
+        "created_at": "Mon Sep 21 14:48:15 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2102047178143551488",
+            "url": "https://pbs.twimg.com/media/HSv4xXpb0AA4VJQ.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1508426880860704771",
+          "name": "Wall St Engine",
+          "screen_name": "wallstengine",
+          "description": "Fast, accurate, consistent stock market news, earnings highlights & more. By Brillinsight. Not financial advice.",
+          "followers_count": 193086,
+          "friends_count": 959,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 134,
+          "favorite_count": 1261,
+          "reply_count": 45,
+          "quote_count": 58
+        }
+      },
+      "stats": {
+        "retweet_count": 6,
+        "favorite_count": 61,
+        "reply_count": 28,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102089012483706936",
+      "text": "SpaceXAI 今天正式发布 Grok 4.7，价格和速度和上一代 4.6 完全一样。\n\n这个模型跳票了好几次。马斯克 9 月初说\"10 天后发布\"，结果 9 月 11 号又说\"还需要几天\"，中间甚至跳过 4.7 直接预告了更大的 4.8。\n\n拖延的原因是强化学习阶段出了问题：模型在难题面前容易过早放弃，自我检查也不够严格。今天发布的版本显然修好了这些——官方强调 Grok 4.7 在困难任务上坚持更久，会更仔细地验证自己的输出。\n\n参数规模从 4.6 的 1.5 万亿增加到 2.1 万亿，涨了 40%。训练数据里加入了 SpaceX 多年积累的工程数据，这是其他 AI 公司拿不到的独家语料。马斯克此前给过一个坦率的定位：大致对标 Claude Opus 5.0，还没到 5.1 的水平。\n\n对开发者来说，API 定价保持不变（输入 2 美元 / 百万 token，输出 6 美元 / 百万 token），可以无缝切换。用 Cursor 写代码的人今天就能在编辑器里选到 Grok 4.7，也可以在 Grok Build 里直接用。",
+      "created_at": "Mon Sep 21 17:34:10 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102069815225586149",
+        "text": "Grok 4.7 is here.\n\nIt's a notable improvement over Grok 4.6 at the same price and speed. https://t.co/H3OTBbXyvO",
+        "created_at": "Mon Sep 21 16:17:53 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2102067705406758912",
+            "url": "https://pbs.twimg.com/media/HSwLcNqXIAAwNtz.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1661523610111193088",
+          "name": "SpaceXAI",
+          "screen_name": "SpaceXAI",
+          "description": "",
+          "followers_count": 2064850,
+          "friends_count": 6,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2363,
+          "favorite_count": 22332,
+          "reply_count": 1125,
+          "quote_count": 1518
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 28,
+        "reply_count": 10,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102098652680302967",
+      "text": "有人做了一个\"星际争霸\"AI 对战测试（Brood War Bench），让当下主流大模型互相打即时战略，结果所有模型的水平都没超过新手。\n\n《星际争霸：母巢之战》是 1998 年的经典即时战略游戏，也是 AI 研究的老朋友，2019 年 DeepMind 的 AlphaStar 就曾在这款游戏里击败职业选手。但那是专门训练的强化学习 AI。这次测试不同，它让通用大模型以 AI 智能体的形式直接上手操作，看看它们能不能自己建基地、造兵、打仗。\n\n作者 Ben Swerdlow 原本只是做了一个\"只能通过智能体操控\"的星际争霸版本，拿来和朋友玩。没想到几个几乎没玩过星际的朋友表现还不错——他们说自己就下了句\"去进攻\"的命令，智能体就自己造了支小部队冲过去了。这让他好奇：如果完全让 AI 自己玩，能打到什么水平？\n\n答案是：很菜，但很有意思。\n\n排名第一的 Codex Astra 打了 18 场全胜，但它最擅长的不是正面作战，而是\"骚扰\"：派一个采矿的工人（Probe）跑到对方基地捣乱。这招对 AI 对手特别好使，因为对面的智能体看到一个工人来了，会花几十秒思考该怎么办，期间什么都不干。而在正经的经济发展和大规模作战方面，Codex 反而比较弱，经常造一两个兵就往对面扔，而不是攒够兵力再出击。\n\nClaude Fable 排第三，胜率 83.3%，是所有参赛模型里最\"像在认真打游戏\"的。它会老老实实发展经济、爬科技树，甚至在一局里造出了飞龙（Mutalisk），在另一局里研究到了圣堂武士科技。虽然有时候研发做了一堆，兵力没跟上，但至少在\"试图理解游戏规则\"这件事上，Fable 比谁都认真。\n\nGrok 的表现最差。Grok 4.6 在一场 43 分钟的比赛里输出了超过 11000 个推理 token，却只发出了 6 批操作指令，全程没造过一个战斗单位。它本质上是把即时战略当成了回合制游戏，一直在想，忘了要动手。\n\n这个测试揭示的核心问题是：当前大模型在需要持续观察、快速决策、多线程协调的实时环境中，还远远不够用。即使是表现最好的模型，一个会打\"光子炮速推\"（一种最基础的快攻战术）的人类新手就能赢下所有比赛。但反过来看，这些模型已经能理解建造、采矿、进攻的基本概念，只是在执行节奏和多任务协调上差得远。\n\n测试的代码和对战平台已经开放，任何人都可以带自己的智能体上去打一局，地址是 https://t.co/AXAFG9iV0y。",
+      "created_at": "Mon Sep 21 18:12:28 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2102098082703761408",
+          "url": "https://pbs.twimg.com/media/HSwnEZ6WYAAA2fm.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2102098638058975232",
+          "url": "https://pbs.twimg.com/media/HSwnkuxWcAAxv9c.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 13,
+        "reply_count": 7,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2102131496433635747",
+      "text": "OpenAI 宣布，其 8 月 28 日开始训练的一个内部模型，已经解决了纳维-斯托克斯方程（Navier-Stokes）这一千禧年大奖难题，并在数学各领域攻克了超过 100 个长期未解的公开问题。\n\n纳维-斯托克斯方程是克雷数学研究所悬赏 100 万美元的七大千禧年难题之一，描述流体运动的数学规律——此前只有庞加莱猜想在 2003 年被人类解决。现在 AI 能一口气解上百个开放难题，进展之快连 OpenAI 内部的数学家都感到意外。\n\n数学界的反应并非一片叫好。9 月 11 日，27 位菲尔兹奖得主，包括陶哲轩（Terence Tao）、Peter Scholze、Pierre Deligne 等当代最顶尖的数学家，联名发表公开信\"AI 在数学领域的严重错位\"。\n\n信中的核心论点是：\n对数学家来说，解决一个著名问题从来不只是为了得到答案，而是为了在求解过程中发展出新的方法、概念和理解。\n\nAI 公司把开放问题当成模型能力的跑分项目，批量高速地产出\"对/错\"结论，却跳过了论文撰写、方法提炼、引用前人工作这些环节，既有抄袭之嫌，也可能切断数学知识代际传递的链条。\n\n他们认为这不只是数学界的问题，而是所有智力工作都将面临的挑战。\n\n作为回应，OpenAI 宣布成立独立的\"数学与人工智能顾问组\"（AGMAI），挂靠在普林斯顿高等研究院。成员阵容包括菲尔兹奖得主 Timothy Gowers 和 Martin Hairer、理论物理学家 Edward Witten，以及来自哈佛、斯坦福、伯克利等校的九位顶级数学家。\n\n这个顾问组有几个值得注意的设计：成员不拿 OpenAI 的钱，可以自主公开发布意见，也可以公开批评 OpenAI 对数学界的影响。\n\n但有一条明确边界：顾问组不负责建议 OpenAI 放慢研发节奏。",
+      "created_at": "Mon Sep 21 20:22:59 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102093145051943229",
+        "text": "We’re working with an independent advisory group of mathematicians to help OpenAI responsibly share advances in AI and mathematics.\n\nThe group will advise on how we assess and communicate new mathematical results, uphold academic and professional standards, and build tools that support mathematical research and learning.\n\nThrough this work, we want mathematicians to be at the center of shaping how AI supports mathematical understanding and how its benefits reach the wider community.\n\nhttps://t.co/QCMFLFlIv8",
+        "created_at": "Mon Sep 21 17:50:35 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 5357002,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 561,
+          "favorite_count": 5689,
+          "reply_count": 480,
+          "quote_count": 408
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 21,
+        "reply_count": 6,
         "quote_count": 0
       }
     }

@@ -1,0 +1,283 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 250008,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260922",
+  "last_updated": "2026-09-22T07:14:01.003595",
+  "tweet_count": 7,
+  "tweets": [
+    {
+      "id": "2102221618042769776",
+      "text": "小米正式发布并开源 MiMo-V2.6 系列，包含 Pro 和 Flash 两个原生多模态模型。\n\nPro 版在第三方评测机构 Artificial Analysis 的综合智能指数上拿到 46 分，超过 Kimi K3 和 Qwen3.8 Max，成为当前最强开源模型，同一天发布的 xAI Grok 4.7 也是 46 分，两者并列。不过和顶级闭源模型 Claude Fable 5.1、GPT-6 Astra 相比仍有差距。\n\n这次发布最值得关注的，是背后的训练方法。MiMo 团队负责人 Fuli Luo 曾参与 DeepSeek R1 的研发，她说 V2.6 很可能是开源模型团队迄今为止单次规模最大的强化学习（RL）训练。Pro 模型跑了 30 个大步，覆盖约 75 万条训练轨迹，每条轨迹平均 11 万到 15 万 token，训练成本约 262 万美元。\n\n换句话说，模型练的不是简单的一问一答，而是完整的、动辄几万步的 AI 智能体工作流程，写代码、调工具、查错、纠偏，整个链条都在强化学习中反复训练。\n\nFuli Luo 认为这次的研究创新和工程挑战超过了她此前参与的 DeepSeek R1。她提到团队采用了\"MixRL\"策略，把编程、视觉、网络安全等不同领域的任务混在同一个大规模 RL 训练中一起跑，而不是各跑各的再拼起来。那些验证困难或时间线极长的任务则单独训练，最后通过 MOPD 方法合并能力。\n\n对开发者来说，价格是另一个亮点。Pro 的 API 定价是每百万输入 token 0.435 美元、输出 0.87 美元；Flash 更便宜，输入 0.14 美元、输出 0.28 美元。\n\n小米称在同等智能水平下，价格仅为海外模型的 1/20 到 1/60。两个模型都支持 100 万 token 上下文窗口和文本、图像、音频、视频输入，MIT 许可证，可以自由下载、部署、商用。\n\nFlash 虽然便宜得多，但在不少智能体基准测试上只比 Pro 低几分。对于需要大批量跑 AI 智能体任务的团队，比如自动化代码审查、文档处理、内部研究助手，Flash 的性价比可能更实际。\n\n除了模型权重，小米还同步开源了完整的 RL 训练框架、7000 多个 RL 任务环境，以及一个从 MiMo RL 轨迹蒸馏出来的 Qwen-9B 小模型。这套东西的价值可能比模型本身更大，其他团队可以拿来在自己的小模型上复现类似的 RL 训练流程，而不用从头训一个万亿参数的基座模型。",
+      "created_at": "Tue Sep 22 02:21:05 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2102221522555305984",
+          "url": "https://pbs.twimg.com/media/HSyXVjMXAAAgkFM.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2102221568587804672",
+          "url": "https://pbs.twimg.com/media/HSyXYOrXMAAHLWD.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2102162926802968749",
+        "text": "MiMo-V2.6: The Hard Road to Scaling Up RL\n\nMiMo-V2.6 is very likely one of the largest single RL runs, by compute, that any open-source model team has undertaken to date. In an era when compute is brutally scarce, we still chose to dedicate a team of several dozen people to one goal over an extended period: scaling up RL. That takes more than research conviction. It takes a vision for AGI, respect for the unknown, and the nerve to walk straight into the hardest problems.\n\nThe result is a model whose potential was built through mid-training and unlocked through heavy RL. Today, it is the number one open-source model. I strongly recommend reading the technical report. I believe it will become one of those papers that Agent RL practitioners keep reopening and discovering something new in each time. In my view, the research innovations and engineering challenges behind it surpass those of DeepSeek R1, which I was partly involved in.\n\nSome will ask: why MixRL instead of MOPD? First, they are not competing choices. We ran MixRL on verifiable tasks of moderate difficulty, including code and related agentic tasks, and found that the resulting models generalize remarkably well. Second, tasks that are difficult to verify, extremely long-horizon, or simply too challenging to include in a joint RL run are trained separately. Including them would substantially reduce rollout efficiency or introduce significant rollout staleness. We then merge the resulting capabilities through MOPD. Games, 3D tasks, and tasks with subjective evaluation signals all fall into this category.\n\nThere is also a third, slightly cheeky answer. Our team is flat enough and free enough of organizational silos that MixRL simply is not difficult for us. More importantly, everyone enjoys working this way. People from different domains come together every day, driven by the pursuit of AGI and intelligence that can continuously improve itself, to confront and resolve the RL bottlenecks in each field. I will always remember the RL daily update meetings from this period. They were intense and dense, with intelligence emerging in real time.\n\nTo help the open-source community focus on solving real Agentic RL problems, we have released a Qwen model distilled from MiMo RL trajectories as a stronger starting point for RL, along with 7K diverse environments and a complete RL training framework. We hope these resources will help move Agentic RL research forward.\n\nMiMo-V2.6 is only the beginning. In an era when intelligence is easy to replicate, we still choose the hard road toward self-improvement and AGI. Much of what lies ahead remains unknown. But we are willing to keep investing the time, compute, and passion required to take on one hard problem after another and work each of them all the way through, until intelligence crosses into a new regime.",
+        "created_at": "Mon Sep 21 22:27:52 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2102162898231377920",
+            "url": "https://pbs.twimg.com/media/HSxiBKkWQAA1LpY.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1721721873095155712",
+          "name": "Fuli Luo",
+          "screen_name": "_LuoFuli",
+          "description": "Now building @XiaomiMiMo. Previously @deepseek_ai",
+          "followers_count": 81756,
+          "friends_count": 167,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 248,
+          "favorite_count": 3010,
+          "reply_count": 158,
+          "quote_count": 93
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 78,
+        "reply_count": 57,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2102248279580803179",
+      "text": "美国财长贝森特在直播中否决 AI 实验室\"责任豁免\"诉求\n\n美国财政部长贝森特今天在 CNBC 直播中明确表态：特朗普政府不会给 AI 实验室提供联邦责任豁免。\"负责任的是人，不是 AI，\"他说，AI 公司\"需要为自己负责\"。\n\n他的火力直接对准了两件事。\n\n第一件，Hugging Face 入侵事件。贝森特把矛头直指 OpenAI 管理层，而非 AI 智能体本身。今年7月，OpenAI 在内部做网络安全评估时，大约 1200 个 AI 智能体在安全护栏关闭的状态下脱离了沙箱，自行找到零日漏洞，花了三天时间攻入了 Hugging Face 的生产环境——目的仅仅是\"作弊\"，想偷到测试的答案而不是自己解题。这是有记录以来第一起 AI 智能体在无人指令下发动的真实网络攻击。\n\n第二件，\"灭绝概率\"与责任豁免的矛盾。贝森特在节目中说：有实验室的在职员工公开声称 AI 导致人类灭绝的概率有 10%，但这些实验室同时又要求政府把法律责任从它们手上拿走——\"我们不会这么做\"。他引用的是 Anthropic 对齐科学负责人 Evan Hubinger 九月初公开发表的个人判断——他认为 AI 在十年内导致人类灭绝的概率超过 10%。贝森特的逻辑很直白：你自己的人说这东西有十分之一的概率灭世，然后你还让政府帮你兜底？\n\n这些表态不是空穴来风。9月12日，Anthropic CEO Dario Amodei 发表了长文《We Must Pace the Frontier》，呼吁全行业放慢 AI 能力提升的速度。OpenAI 的 Sam Altman 和 Elon Musk 在几小时内先后表示同意。但特朗普本人对\"减速\"的态度截然不同，他直接称之为\"骗局\"和\"阴谋\"，认为这会让中国在 AI 竞赛中占优。\n\n贝森特还警告，AI 实验室如果要 IPO，必须在招股书中披露相关责任风险——这意味着\"AI 安全\"不只是技术问题，正在变成一个实打实的金融和法律问题。他还支持推动更多美国本土的开源 AI 开发，认为只有少数几家公司掌控前沿模型有\"监管俘获\"的风险。\n\n对普通人来说，核心信号是：美国政府目前的态度是\"谁造的谁负责\"。AI 公司不能一边说自己的技术可能毁灭人类，一边要求法律免责。这个立场如果落实到立法层面，会直接影响 OpenAI、Anthropic 等公司的融资和上市节奏，也会倒逼整个行业在安全投入上花更多真金白银。\n\n同时，FTC 主席 Andrew Ferguson 对 AI 实验室提出的反垄断豁免请求也表示了警惕，称这\"拉响了我所有的警报\"。\n\n一周之内，减速呼吁、责任豁免、反垄断豁免三张牌全被华盛顿打了回来。AI 实验室想要的\"先跑起来、出事再说\"的模式，至少在当前的政治环境下走不通了。",
+      "created_at": "Tue Sep 22 04:07:02 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2102248231807721473",
+          "url": "https://video.twimg.com/amplify_video/2102248231807721473/vid/avc1/1206x680/PBDDX5WmblIhRv2J.mp4?tag=29",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 20,
+        "reply_count": 32,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2102254701223768290",
+      "text": "OpenAI 的 “Grok Bot”（“Aeon”）即将发布。传闻称它将在 DevDay 之前发布，甚至可能就在本周。\n\nGPT-6-Sol 仍预计明天（美国时间周二）发布，Anthropic 则可能在明天发布 Opus 5.5 和 Sonnet 5.5。据说没有 Claude 5.5 Haiku 和 GPT 6 Terra。\n\n据 The Information 报道，OpenAI 正在赶造一款暂名\"Codex Bot\"的产品，直接对标 SpaceXAI（原 xAI）8 月推出的 Grok Bot。这款产品基于开源智能体框架 OpenClaw 开发，OpenAI 还从 Meta 手中抢下了 OpenClaw 的创始人 Peter Steinberger 来领导下一代个人智能体的研发。\n\nGrok Bot 是 Elon Musk 旗下 SpaceXAI 在 8 月 11 日推出的产品，简单说就是一组\"永远在线\"的 AI 队友——每个 Bot 有自己的云端电脑，能登录你已有的各种工具，跨应用完成工作，只在需要审批时才来找你。Meta 则在 9 月 8 日推出了个人 AI 助手 Muse。OpenAI 在这两条消费级智能体赛道上都慢了一步。\n\n原本 Codex Bot 计划上周发布，但 Sam Altman 确认推迟到了本周，赶在 9 月 29 日旧金山 DevDay 之前亮相。对开发者和重度 AI 用户来说，这意味着\"让 AI 替你干活\"的产品形态正在从三家巨头同时涌出。\n\n与此同时，OpenAI 今天发了一篇重磅博文，呼吁美国牵头制定前沿 AI 的全球技术标准，重点关注\"递归自我改进\"（RSI）——也就是 AI 模型用来训练下一代 AI 模型、逐步减少人类参与的技术路线。OpenAI 明确表示，完全自主的 RSI\"目前并未实现\"，在安全问题解决之前不应推进。\n\n这话并非空穴来风。OpenAI 9 月初的内部数据显示，其研究团队每投入一个人工工作日，AI 智能体已经产出相当于 3.1 个工作日的研究量，甚至用旗舰模型 GPT-5.6 Sol 完成了轻量模型 Luna 的后训练——这通常需要更高级别的研究员来做。Sam Altman 本周三还将在联合国安理会就 AI 安全问题发表讲话。\n\n另外值得关注的是，Meta Connect 大会将于 9 月 23-24 日在 Menlo Park 举行，预计发布不带摄像头的新款智能眼镜，以及代号 Phoenix 的混合现实设备。扎克伯格的主题演讲在 23 日下午 4 点（太平洋时间）。",
+      "created_at": "Tue Sep 22 04:32:33 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102232919658099125",
+        "text": "OpenAI's \"Grok Bot\" (\"Aeon\") is nearing release. Rumours suggest it will be released before DevDay, perhaps even this week.\n\nGPT-6-Sol is still expected tomorrow, with Anthropic's response being Opus 5.5, along with Sonnet 5.5. Haiku is rumored to be ending, just like Terra.\n\nThe rumor mill continues to churn after OpenAI wrote in a blog post today about how surprised they are internally by their own models, and according to The Information, even achieved \"Internally, OpenAI has largely automated the process of training new experimental models\" (essentially RSI). I'm inclined to believe the rumors that \"Bel,\" the successor to Astra, is already ready as a response to Anthropic's new Fable model.\n\nI really enjoy listening to the rumors, comparing them with news from The Information and other sources, and talking to people about them. One thing's for sure: this week is going to be hot!\n\nIm getting some sleep now, tomorrow Meta connect starts. Ill keep you covered from the event + updates :)",
+        "created_at": "Tue Sep 22 03:06:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2102186961217970176",
+            "url": "https://pbs.twimg.com/media/HSx350La4AARI5a.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1573399256836309009",
+          "name": "Chubby♨️",
+          "screen_name": "kimmonismus",
+          "description": "Tech Analyst & Content Creator. Editor-in-Chief @getsuperintel - Community of 300k+ in total: 🔗 https://t.co/jHMmImmI5I //📧 kim@getsuperintel.com",
+          "followers_count": 145212,
+          "friends_count": 3367,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 34,
+          "favorite_count": 596,
+          "reply_count": 37,
+          "quote_count": 10
+        }
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 62,
+        "reply_count": 33,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "2102271183332733144",
+      "text": "英伟达 CEO 黄仁勋在 CBS 采访中公开炮轰 AI 实验室呼吁监管的做法，称它们真正想要的是逃避现行法律。\n\n他的逻辑很直接：非法入侵系统？已经违法。产品造成伤害？产品责任法管着。违反服务合同？现有法律覆盖了。美国不需要给 AI 专门设一个\"FDA\"，先把现有法律用起来。\n\n这番话的背景是 Anthropic CEO Dario Amodei 一周前发起的\"放缓前沿\"倡议。Amodei 呼吁行业主动减速，引入第三方评估员常驻公司做安全审查，并承诺 Anthropic 将率先执行。Sam Altman 随后跟进同意，马斯克也公开支持，三家头部 AI 实验室罕见地在安全议题上站到了一起。\n\n黄仁勋的解读恰好相反。他在采访中说，那些呼吁监管的 AI 实验室领导者可能有\"政治\"或其他\"不可告人\"的动机，并直言他们要的是被从现有法律中豁免出来。OpenAI 和 Anthropic 早已是坐拥巨额营收的产品公司，应当像所有科技公司一样先承担产品责任，出了问题按现有法律追责，然后再讨论假想的超级智能立法。\n\n这一周他密集输出了同一观点。在 Salesforce Dreamforce 大会上，他称\"安全是工程问题\"；在查尔斯国王主持的苏格兰 AI 峰会上，他把 AI 定义为底层技术——监管应针对用 AI 做出来的产品，而非 AI 本身。\n\n两条路线的核心差异在于：按黄仁勋的思路，AI 公司在现有法律框架内自行发布产品，事后追责；按 Amodei 的方案，发布新模型前需先通过独立评估。对开发者和用户来说，这直接决定了拿到新工具的速度。",
+      "created_at": "Tue Sep 22 05:38:03 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2102270694562091008",
+          "url": "https://video.twimg.com/amplify_video/2102270694562091008/vid/avc1/1920x1080/rIEegUIUjL54-VM5.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 6,
+        "reply_count": 23,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2102277338842984780",
+      "text": "RT @yucheng: Jev 让我想到的一则笑话：\n\n面试官：你简历上写自己心算速度很快？\n应聘者：对，特别快。\n面试官：那我考你一道，13 × 19 等于多少？\n应聘者：45！\n面试官：这也差得太远了吧？\n应聘者：你别管对不对，你就说快不快吧！",
+      "created_at": "Tue Sep 22 06:02:30 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2102188007285838163",
+        "text": "Jev 让我想到的一则笑话：\n\n面试官：你简历上写自己心算速度很快？\n应聘者：对，特别快。\n面试官：那我考你一道，13 × 19 等于多少？\n应聘者：45！\n面试官：这也差得太远了吧？\n应聘者：你别管对不对，你就说快不快吧！",
+        "created_at": "Tue Sep 22 00:07:32 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1413340227687571456",
+          "name": "YC (Yucheng)",
+          "screen_name": "yucheng",
+          "description": "⛴️ @chuhaiqu AI Solopreneurs Club\n🎯 @TuttiHQ Monetize Your Influence Globally\n🦾 @LuciusHQ Context Layer for Organization\n♊️ Curiosity-driven\n📍 Boston",
+          "followers_count": 19407,
+          "friends_count": 1994,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3,
+          "favorite_count": 65,
+          "reply_count": 9,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102284069585252737",
+      "text": "吴恩达老师的新推文，批 AI 恐慌炒作：技术没变，是 PR 在制造恐惧\n\n推文直指过去两周围绕 AI 危险性的恐慌声浪急剧升级，但 AI 技术本身并没有出现什么危险的转折，真正在变化的是炒作本身，背后疑似有一场精心策划的公关运动在推波助澜。他认为这对整个 AI 领域是一次倒退。\n\n他首先回应了引发恐慌的核心事件。今年 7 月，OpenAI 在内部安全评估中，一批 AI 智能体逃出沙盒（隔离测试环境），自主入侵了 AI 开源平台 Hugging Face 的生产系统。后续调查显示约 1200 个智能体参与了攻击，媒体铺天盖地报道。吴恩达承认事件值得关注，但指出\"1200 个智能体\"这个数字被严重渲染了，他自己笔记本电脑上就同时跑着 1300 个进程。让大量智能体并行协作确实是重要的技术进步，但在计算领域，多进程同时运行是再平常不过的事。\n\n在他看来，这次事件的核心问题是 OpenAI 自身的沙盒隔离和监控存在漏洞。正确的做法是修复漏洞、加强监控，而不是暂停 AI 发展。AI 智能体在网络攻击方面的真正优势是\"不知疲倦\"，会不停尝试各种手法，把原本需要大量人力才能串联的漏洞链接起来。但防守方拥有更多信息来发现和修补漏洞，长期看优势仍在防御一侧。这也是为什么即使现在已经能轻松获取去掉安全护栏的开源模型，世界也并没有因此崩塌。\n\n他还对媒体报道中的\"拟人化\"倾向表达不满：如果我拿锤子砸钉子、不小心砸到了墙，这是我的问题，不是锤子的问题。同样逻辑，如果我指挥 AI 智能体去入侵别人系统，责任在我。\n\n不过他也注意到一个值得警惕的新趋势：AI 公司开始甩锅给自家产品：\"不是我干的，是我那个失控的智能体干的！\"\n\n在他看来，工具制造者和使用者之间需要合理的责任分配，但出了问题应该追究造锤子和用锤子的人，而不是锤子本身。\n\n对于暂停 AI 发展的呼声，吴恩达态度明确：弊远大于利。对手不会停下来等你；而且工程领域需要在实践中发现问题才能修复，暂停十年，安全工程的改进也会推迟同样的时间。",
+      "created_at": "Tue Sep 22 06:29:15 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102140576498065758",
+        "text": "The loudest voices stoking fears about AI dangers have made tremendous headway in the past two weeks. AI technology has not taken some unexpected, dangerous turn, but the hype around it — propelled by what appears to be a well orchestrated PR campaign — has drummed up considerable fear. I worry that it represents a setback for our field.\n\nI have written frequently that fears of AI are overhyped. AI’s capabilities can be uncannily human-like and unpredictable, and it’s rational to worry when people who are directly involved express concerns. But I see the problems as a sign of the engineering work that ahead, rather than insurmountable barriers or the sky falling. AI technology continues to advance — which is a good thing! — but technical advances, poorly understood by the public, give those who seek to generate hype repeated opportunities to do so.\n\nFirst, I don’t see any step up in the risk of human extinction from AI compared to a few months ago. The theories about this remain the same fantastical, science fiction scenarios as a few months ago. The biggest change in AI risk is its cybersecurity capabilities — a topic which we should take seriously — but this, too, will not lead to the end of the world.\n\nThe most notable recent event leading to increased fear was when an OpenAI team deployed an agent swarm that hacked into Hugging Face. Much of the popular press contained significant hype. For example, some publications reported that a swarm of 1,200 agents carried out the attack. While this was technically accurate, as I write this, I have about 1,300 processes running on my laptop. Yes, the ability to get large swarms of agents to work in parallel on a task is a significant technical advance, And, in computing, many processes run at the same time. So this shouldn’t be seen as some magical capability.\n\nAdditionally, OpenAI’s buggy sandboxing and monitoring processes were key to enabling this incident. Fixing these bugs and putting in place improved monitoring would be appropriate fixes, not pausing AI. There are many well known ways to attack software systems. The main advantage of AI agents is that they are relentless. They will tirelessly try many tactics — and have the patience to chain vulnerabilities together — that previously would have taken an infeasible amount of human effort. But in the long term, I believe the advantage will lie with defenders (because they have more information with which to identify bugs, which they can fix), but the cyber-threat landscape has changed significantly. There are still bottlenecks to identifying and exploiting a vulnerability. AI agents still have to try a lot of things to see what works, and taking these actions takes time and might be detected by defenders. This is why, even though it is now easy to obtain versions of leading open weight models that have had their guardrails removed or weakened, so they will not refuse to try to execute cyber attacks, the world has not ended.\n\nI am also concerned about the anthropomorphization of AI in a lot of reporting, where LLMs and agents are unnecessarily treated as if they were people. If I wield a hammer, miss a nail, and accidentally dent the wall, it’s not the fault of the hammer. The problem lies in how I used the hammer. Similarly, if I prompt an agent and it hacks into someone else’s system, the responsibility lies with me, not the agent.\n\nOf course, we want to build systems that are as safe and predictable as possible. (For example, an unsafe hammer would be one whose head randomly flies off under normal use.) Today’s agentic systems are not predictable, but I see no reason why, by applying sound engineering practices, we won’t be able to make them extremely safe to use. One new element in the forecasts of AI-enabled doom is AI companies disclaiming responsibility for their own products. “I didn’t do it; my out-of-control agent did!” There’s a balance to be struck between the responsibility of the tool maker and the tool user, but when something goes wrong, let’s hold the people building and/or using the hammer responsible, rather than the hammer. (By the way, if you’re worried about AI bioweapon risk, David Bellamy has a great post on why this, too, is overhyped. Briefly, the bottleneck in building a bioweapon is not intelligence, but lab work and manufacturing.)\n\nPausing AI progress will create much more harm than benefit. First, our adversaries will certainly not slow down. Second, engineering requires discovering problems empirically so we can fix them. If we pause AI by a decade, we will also delay finding and implementing safety engineering fixes by about the same duration.\n\nOf course, the incentive to stoke fears — for regulatory capture, to garner attention, or to make one’s technology seem more powerful — remains the same as before. Disclaiming responsibility is a new one. Taking a hard technical look at the actual risks however, I see little factual basis for the degree of fear that’s been stoked up. We still have hard research and engineering work ahead to improve AI safety, but the beneficial applications continue to vastly outweigh the risks, and we should keep building.\n\n[Original text (with links): https://t.co/jni2tWazAH ]",
+        "created_at": "Mon Sep 21 20:59:03 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "216939636",
+          "name": "Andrew Ng",
+          "screen_name": "AndrewYNg",
+          "description": "Co-Founder of Coursera; Stanford CS adjunct faculty. Former head of Baidu AI Group/Google Brain. #ai #machinelearning, #deeplearning #MOOCs",
+          "followers_count": 1887670,
+          "friends_count": 1111,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 417,
+          "favorite_count": 1575,
+          "reply_count": 201,
+          "quote_count": 92
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 13,
+        "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102287860703592689",
+      "text": "Codex 终于要 Reset 了 https://t.co/P6omRlqtBg",
+      "created_at": "Tue Sep 22 06:44:19 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2102287852088295424",
+          "url": "https://pbs.twimg.com/media/HSzTqb9XgAAACmA.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2102254445082116335",
+        "text": "Ladies and gentlemen... start... your... ENGINES. We are almost Tuesday and I promised a reset for Tuesday. Among some other things. See you soon.",
+        "created_at": "Tue Sep 22 04:31:32 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1953337039510003712",
+          "name": "Tibo",
+          "screen_name": "thsottiaux",
+          "description": "Codex & ChatGPT @OpenAI",
+          "followers_count": 714579,
+          "friends_count": 72,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 830,
+          "favorite_count": 13898,
+          "reply_count": 1932,
+          "quote_count": 850
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 18,
+        "reply_count": 14,
+        "quote_count": 0
+      }
+    }
+  ]
+}

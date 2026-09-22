@@ -1,12 +1,327 @@
 {
   "date": "20260922",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-09-22T17:55:06.531045",
-  "tweet_count": 253,
-  "unique_tweet_count": 253,
-  "total_crawled": 419,
-  "duplicates_removed": 166,
+  "last_crawl_time": "2026-09-22T20:49:07.970900",
+  "tweet_count": 259,
+  "unique_tweet_count": 259,
+  "total_crawled": 453,
+  "duplicates_removed": 194,
   "tweets": [
+    {
+      "id": "2102495403232854309",
+      "text": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna：旗舰级能力下放，API 价格砍半\n\nOpenAI 推出 GPT-6 家族的两款新模型 Sol 和 Luna，主打“接近旗舰的能力，大幅更低的价格”。API 价格比上一代 GPT-5.6 的促销价再降 50%。\n\n先理清命名。本月早些时候，OpenAI 发布了 GPT-6 Astra，定位是最强的旗舰模型。这次的 Sol 是中档，Luna 是轻量档，相当于同一代技术的“大、中、小杯”。三款模型用相似的方法训练，所以 Astra 在编程、事实准确性、操作电脑等方面的进步，也带到了更便宜的两款上。\n\nOpenAI 这次的对比对象主要是 Anthropic 的 Claude。以下数据都来自 OpenAI 自己公布的评测，第三方复现结果还需等待。\n\n在模拟跨应用处理销售、财务、HR 等业务流程的 AutomationBench 上，Sol 以最高推理强度拿到 33.2%，每个任务成本约 0.27 美元。它超过了最高强度的 Claude Opus 5（26.9%），成本只有后者的 9% 左右，也略高于低强度的 Astra。“推理强度”可以理解为让模型想多久，想得越久，效果越好，但也越贵。\n\n编程方面，在真实代码库的长任务评测 DeepSWE 上，Sol 得分 68.8%，和 Claude Fable 5 的 69.9% 只差 1.1 个百分点，每任务成本低约 80%。更便宜的 Luna 也有 66.6%，与中等强度的 Opus 5、Fable 5 相当，成本低 93% 到 96%。在让 AI 操作电脑完成任务的 OSWorld 2.0 上，Sol 和 Opus 5 分数几乎打平，成本同样低约 80%。\n\n对开发者来说，这意味着跑长时间的编程 AI 智能体会便宜很多。OpenAI 透露，内部研究员每天的 token 消耗按 API 价格算，中位数超过 600 美元。模型越能干，这笔账就越重要。\n\n另一个实用改进是提示缓存。简单说，你反复发送的相同内容，比如系统提示、整个代码库，第二次读取时可以打一折，也就是缓存输入享受 90% 折扣。现在中途调整推理强度或开关工具都不会让缓存失效，开发者还能自己指定缓存的断点。GitHub 表示，这些改进让 Copilot 需要重新处理的 token 减少了一半以上，响应也更快。\n\n使用体验上，Sol 和 Luna 继承了 Astra 的回答风格：更直接，术语更少，废话更少，回答略短。在事实准确性上，OpenAI 称 Sol 的错误比上一代少了约一半。\n\n可用情况：即日起，Plus、Pro、Business、Enterprise 和 Edu 用户可以在 ChatGPT Work 和 Codex 中使用这两款模型。免费用户和 Go 用户可以在桌面端用 Luna。普通 Chat 界面暂未上线，ChatGPT 端会在当天分批推送。API 模型名为 gpt-6-sol 和 gpt-6-luna。",
+      "created_at": "Tue Sep 22 20:29:01 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102460975790137662",
+        "text": "Please welcome GPT-6 Sol and GPT-6 Luna to the GPT-6 universe.\n\nGPT-6 Sol and Luna build on the advances behind GPT-6 Astra, bringing much of its strengths into faster and more affordable models to support work at scale.\n\nWe’ve also made caching and inference more efficient, and we’re passing the savings directly to you: 50% lower API prices for Sol and Luna compared with GPT‑5.6 promotional pricing.",
+        "created_at": "Tue Sep 22 18:12:13 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2102460948430966784",
+            "url": "https://video.twimg.com/amplify_video/2102460948430966784/vid/avc1/1920x1080/2aqucgwb6tQ7xZ6U.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 5363753,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2935,
+          "favorite_count": 32551,
+          "reply_count": 1351,
+          "quote_count": 1872
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 250091,
+        "friends_count": 1731,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 8,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102465645334220901",
+      "text": "RT @bot: We rebuilt customer support around Grok Bot to scale our operations without adding headcount.\n\nIt works autonomously to respond to…",
+      "created_at": "Tue Sep 22 18:30:46 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2102460785649959362",
+        "text": "We rebuilt customer support around Grok Bot to scale our operations without adding headcount.\n\nIt works autonomously to respond to customers, resolve tickets, and manage the queue.\n\nhttps://t.co/Vyw224m8Dh",
+        "created_at": "Tue Sep 22 18:11:27 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2085838061347217408",
+          "name": "Grok Bot",
+          "screen_name": "bot",
+          "description": "AI teammates that you can give real work to.",
+          "followers_count": 304446,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 177,
+          "favorite_count": 1836,
+          "reply_count": 151,
+          "quote_count": 45
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241701774,
+        "friends_count": 1411,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 177,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102465393105523156",
+      "text": "RT @AmOptimistShow: 🚨NEW: @JTLonsdale &amp; @SquawkCNBC clash on AI and wealth inequality.\n\nJoe Lonsdale: 2030s is the disinflation decade... w…",
+      "created_at": "Tue Sep 22 18:29:46 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2102426287193092221",
+        "text": "🚨NEW: @JTLonsdale & @SquawkCNBC clash on AI and wealth inequality.\n\nJoe Lonsdale: 2030s is the disinflation decade... we're all going to be really wealthy if we don't break this.\n\nJoe Kernen: Everybody's going to get wealthier? Because only the wealthy have been getting wealthier...\n\nJoe Lonsdale: That's not true. Let's go back: 1870 to 1900, the Second Industrial Revolution, the last time productivity shot up a lot, the average American, the average working class American, was twice as wealthy in real terms within one generation...\n\nAndrew Ross Sorkin: Tell me where you land on \"We've got to slow everything down, because if we don't, we could end up dying...\n\nJoe Kernen: or worse...\n\nJoe Lonsdale: or worse, the companies go bankrupt \n\nAndrew: versus we've got to go full steam ahead. No matter what. No matter what the case.\n\nJoe Lonsdale: I love the meme where it's Dario and Sam saying, please regulate us. And Trump says, keep building, nerds. \n\nThese companies have a lot of liabilities. These companies need to slow down if they see themselves causing damage. I'm not worried about any existential risks in the near term. I 100% could see these companies accidentally causing some problems with hacking with cyber, for example. \n\nThey have a responsibility to slow down themselves, and we should be holding them liable if they cause any damage. And so it makes sense that they would be very careful about that. But we were just talking...\n\n2030s is disinflation decade. We're going to all be really wealthy if we don't break this. So don't slow down too much is my view.\n\nJoe Kernen: Go back to this again. You told me that 2030s are going to be the decade of disinflation. We're going to all get rich, and we're not going to need to raise taxes, and we're going to start growing faster. The deficit will come under control. This is going to happen?\n\nJoe Lonsdale: The AI is really good for rooting out fraud and grift in the government. It's really going to bring down health care costs dramatically. It's amazing for bringing back manufacturing. We have companies already bringing back lots of manufacturing here. That's only about to accelerate.\n\nWe're at what's called a GPT-3 moment right now for robotics, right. World models, which are a new type of AI -- how do things move and interact in the real world in general terms...\n\nJoe Kernen: So this will help one of our most daunting fears of the $40 trillion and the out of control deficits we're running now, this will come under control from AI? \n\nJoe Lonsdale: If you get productivity up to 3, 4 or 5%, what you 100% should be able to do with these things, if not significantly higher, that solves the deficit problem.\n\nThis is an amazing thing for a civilization; this is the answer is to get growth higher, and it's how everyone gets wealthier, it's doing more with less. It's going to do it.\n\nJoe Kernen: Everybody's going to get wealthier? Because only the wealthy have been getting wealthier...\n\nJoe Lonsdale: That's not true. Let's go back: 1870 to1900, the Second Industrial Revolution, the last time productivity shot up a lot, the average American, the average working class American, was twice as wealthy in real terms within one generation.\n\nAnd that's what happens when productivity goes up. Everyone gets wealthier. We we teach economics very poorly in this country.",
+        "created_at": "Tue Sep 22 15:54:22 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2102425207457599488",
+            "url": "https://video.twimg.com/amplify_video/2102425207457599488/vid/avc1/1280x720/YiIrOQgFYAwwwJIr.mp4?tag=29",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1599810347157913600",
+          "name": "American Optimist",
+          "screen_name": "AmOptimistShow",
+          "description": "Official Account of @JTLonsdale's American Optimist podcast\n🎙📺   NEW EPISODES: https://t.co/bQnaq8kHE8",
+          "followers_count": 17761,
+          "friends_count": 228,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 145,
+          "favorite_count": 976,
+          "reply_count": 50,
+          "quote_count": 14
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241701774,
+        "friends_count": 1411,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 145,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102463325045145978",
+      "text": "RT @cb_doge: BREAKING: SpaceXAI just released a major Grok Build update, with Grok 4.7 now available in Grok Build.\n\nThe update improves cr…",
+      "created_at": "Tue Sep 22 18:21:33 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2102448328638382234",
+        "text": "BREAKING: SpaceXAI just released a major Grok Build update, with Grok 4.7 now available in Grok Build.\n\nThe update improves crash recovery, prompt handling, navigation, configuration reliability and overall subagent performance. It also adds new subagent controls, configurable request limits and long-reasoning reminders.\n\nRelease Notes\n\nVersion 1.0.41 — September 22, 2026\n\nFeatures\n\n• Added a new sports_search tool that can look up live NFL scores, standings, schedules, player stats and team records directly from X data.\n\n• Added a subagent model inheritance setting to /settings. It persists in config.toml and respects managed and overlay layers.\n\n• Per-model request size limits can now be configured to match provider HTTP body caps and control inline image eviction.\n\n• A long-reasoning reminder can now be enabled through config to nudge the model after lengthy hidden-reasoning steps.\n\nBug Fixes\n\n• Fixed the subagent fullscreen view so it no longer shows a stray [Dashboard] button in the header.\n\n• Fixed agent frontmatter mcpServers so headers and URLs from the active agent’s agent.md correctly override config.toml and survive config reloads or agent switches.\n\n• Ctrl+P now opens the command palette immediately from the welcome screen.\n\n• The Dashboard now focuses the “+ New Agent” row instead of leaving the previous session selected.\n\n• Sessions interrupted by a crash now show a clear marker instead of silently dropping the turn.\n\n• Pressing Ctrl+Z immediately after stashing a prompt now restores it.\n\n• The collapsed edit blocks setting now correctly collapses edits even when expanded_by_default is pinned to true.\n\n• Interjections now receive a visible reply before the agent resumes its previous tasks.\n\n• Cancelling a turn blocked on spawn_subagent now tells the model that the child moved to the background instead of claiming it was never executed.\n\n• Saving a queued-prompt edit now returns focus to the composer so the next keystrokes type the next message.\n\n• Subagent activation is now consistent between the TUI and Grok Agent Studio. Tables that only set limits or models no longer disable subagents.\n\n• Effort-level selection now accepts menu labels in addition to IDs.",
+        "created_at": "Tue Sep 22 17:21:57 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2102448025805488128",
+            "url": "https://video.twimg.com/amplify_video/2102448025805488128/vid/avc1/1284x1080/gvmCUPk-G1LTDpLr.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1903256,
+          "friends_count": 1050,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 109,
+          "favorite_count": 923,
+          "reply_count": 79,
+          "quote_count": 6
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241701774,
+        "friends_count": 1411,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 109,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102461982452633616",
+      "text": "每次 OpenAI 发布新模型，第一周体验都特别好，然后它就似乎变成了一个不一样的更差的模型。\n\nClaude 如果第一周是个烂模型它后面还是个烂模型，但是如果是个好模型，它一周后还是个好模型 😂",
+      "created_at": "Tue Sep 22 18:16:13 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102455495865082336",
+        "text": "i love that with every openai release i know it will be a big upgrade\n\nwith anthropic i need to wait it out for a week to see if there were any catastrophic problems with the model first",
+        "created_at": "Tue Sep 22 17:50:26 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1101942551349731335",
+          "name": "gabriel",
+          "screen_name": "gabriel1",
+          "description": "co-founder @getenergy_, previously research at @OpenAI & @midjourney\n\nsolving future of computer work with @getenergy_",
+          "followers_count": 124631,
+          "friends_count": 605,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 404,
+          "reply_count": 17,
+          "quote_count": 2
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 250091,
+        "friends_count": 1731,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 43,
+        "reply_count": 9,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102460533433909417",
+      "text": "RT @PeterDiamandis: If AI gave you back 2 hours a day, that's 730 hours a year. What would you do with them? Spend more time with your kids…",
+      "created_at": "Tue Sep 22 18:10:27 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2102429058558501330",
+        "text": "If AI gave you back 2 hours a day, that's 730 hours a year. What would you do with them? Spend more time with your kids? Get healthy? Start the business you've been putting off? That's the conversation about the future of tech I want to have.\n\nWhat becomes possible when people get part of their lives back?",
+        "created_at": "Tue Sep 22 16:05:23 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "14710129",
+          "name": "Peter H. Diamandis, MD",
+          "screen_name": "PeterDiamandis",
+          "description": "Exec. Chairman @XPRIZE @fountainlife_hq (and others) Working to extend human healthspan. Curator @Abundance360 & @moonshots_pod",
+          "followers_count": 419136,
+          "friends_count": 899,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 198,
+          "favorite_count": 1502,
+          "reply_count": 314,
+          "quote_count": 34
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241701774,
+        "friends_count": 1411,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 198,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2102454903901982748",
       "text": "RT @AriEmanuel: 💪",

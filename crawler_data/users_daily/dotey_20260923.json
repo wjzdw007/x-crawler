@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 250248,
+    "followers_count": 250217,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260923",
-  "last_updated": "2026-09-23T14:39:27.251770",
-  "tweet_count": 3,
+  "last_updated": "2026-09-23T19:26:15.078269",
+  "tweet_count": 7,
   "tweets": [
     {
       "id": "2102560195113099549",
@@ -129,6 +129,168 @@
         "favorite_count": 37,
         "reply_count": 59,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2102789127707984243",
+      "text": "RT @xicilion: 复杂任务必须要写方案。\n\n一，建立共识，一句话并不足以讲明白目标，细节才真正影响目标和架构\n二，同步背景，ai 会围绕目标收集信息，暴露现有缺陷\n三，锁定路径，ai 会在解决具体问题的时候逐渐失去目标，最后再来回返工\n四，记录过程，工作文件会在过程中…",
+      "created_at": "Wed Sep 23 15:56:10 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2102677917977436664",
+        "text": "复杂任务必须要写方案。\n\n一，建立共识，一句话并不足以讲明白目标，细节才真正影响目标和架构\n二，同步背景，ai 会围绕目标收集信息，暴露现有缺陷\n三，锁定路径，ai 会在解决具体问题的时候逐渐失去目标，最后再来回返工\n四，记录过程，工作文件会在过程中不断更新",
+        "created_at": "Wed Sep 23 08:34:16 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2102409130816245918",
+          "text": "我不用 plan 模式，但是我复杂一点的会先写技术方案文档，主要是：\n1. 人看看文档确保大方向有没有问题\n2. Fable 写文档，文档里面写清楚技术细节和如何验证，后续 Opus 执行\n3. 作为后续验收的依据，Opus 实施完，在新会话让 Fable 按照文档去验收一下\n4. 一些重要文档会留档，但会保持更新\n5. 有时候会在 ChatGPT 网页版用 GPT-6 Pro 访问 Repo 写技术方案文档，下载下来让 Fable 去审查再让 Opus 执行\n\n简单来说，重点不是用 plan mode，但是用一个文档让人可以确认方向，以及后续多 Agent 协作传递上下文是很有价值的",
+          "created_at": "Tue Sep 22 14:46:12 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 250217,
+            "friends_count": 1735,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 20,
+            "favorite_count": 196,
+            "reply_count": 67,
+            "quote_count": 5
+          }
+        },
+        "user": {
+          "id": "364478145",
+          "name": "响马",
+          "screen_name": "xicilion",
+          "description": "。。。。。。",
+          "followers_count": 70617,
+          "friends_count": 3406,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 12,
+          "favorite_count": 153,
+          "reply_count": 39,
+          "quote_count": 5
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 12,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102805013328515318",
+      "text": "Opus 5.5 还是挺耐用，愣是没在重置前用完 https://t.co/dxrHsMutwM",
+      "created_at": "Wed Sep 23 16:59:18 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2102804885590638592",
+          "url": "https://pbs.twimg.com/media/HS6p5v2WAAARcvx.png"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 24,
+        "reply_count": 13,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102824596592640051",
+      "text": "可能官方看到咱们的讨论，要去掉 plan 模式了😂",
+      "created_at": "Wed Sep 23 18:17:07 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102813194196758746",
+        "text": "we’re thinking of killing plan mode and using the shift+tab hotkey to adjust effort levels\n\nI don’t think the models need plan mode anymore, but if you’re a plan mode diehard would love to get your feedback on why",
+        "created_at": "Wed Sep 23 17:31:48 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "352806502",
+          "name": "Thariq",
+          "screen_name": "trq212",
+          "description": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
+          "followers_count": 351643,
+          "friends_count": 1910,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 67,
+          "favorite_count": 4881,
+          "reply_count": 1381,
+          "quote_count": 100
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102841788146778126",
+      "text": "RT @rwayne: 《你对 AGENTS.md 的理解几乎为零》\n\n作者：@rwayne @onlookersh \n\n“公司变大之后，人和公司都会犯糊涂。他们想复制最初的成功，于是很多人以为：当初成功的过程里一定藏着某种魔力。于是他们开始把流程在全公司制度化。很快，大家就把…",
+      "created_at": "Wed Sep 23 19:25:25 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2102732096909537515",
+        "text": "《你对 AGENTS.md 的理解几乎为零》\n\n作者：@rwayne @onlookersh \n\n“公司变大之后，人和公司都会犯糊涂。他们想复制最初的成功，于是很多人以为：当初成功的过程里一定藏着某种魔力。于是他们开始把流程在全公司制度化。很快，大家就把流程当成了内容本身。” ———史蒂夫·乔布斯 《失落的访谈》\n\n过去的时候呢，各种的 AI 编程工具有各自的说明书。比如Anthropic 家的 Claude Code，开机默认只读一个叫 CLAUDE.md 的说明书。而 OpenAI 家的 Codex 和其他很多工具，默认读的是 AGENTS.md。我相信很多人都是跟我一样，不止用一个编程工具。那么这就会出现一个问题，我同一个项目里面，我必须放两份说明书。Claude Code 后来增加了一种处理方式，如果项目里没有 CLAUDE.md，它会检查有没有 AGENTS.md。\n\n那为什么说你对 AGENTS.md 的理解几乎为零？",
+        "created_at": "Wed Sep 23 12:09:33 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1664742004423794688",
+          "name": "Roland.W",
+          "screen_name": "rwayne",
+          "description": "Create greater value and knowledge\n合作/联系：rw@imroland.com\n微信：ozrwayne 备注来意",
+          "followers_count": 61007,
+          "friends_count": 975,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 14,
+          "favorite_count": 66,
+          "reply_count": 27,
+          "quote_count": 7
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 14,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
       }
     }
   ]

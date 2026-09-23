@@ -3,13 +3,13 @@
     "screen_name": "elonmusk",
     "name": "Elon Musk",
     "description": "https://t.co/ZdBx5WABYx",
-    "followers_count": 241712711,
+    "followers_count": 241678442,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260923",
-  "last_updated": "2026-09-23T19:26:15.091699",
-  "tweet_count": 17,
+  "last_updated": "2026-09-23T22:40:24.243718",
+  "tweet_count": 18,
   "tweets": [
     {
       "id": "2102643431051038807",
@@ -780,6 +780,52 @@
         "favorite_count": 982,
         "reply_count": 271,
         "quote_count": 16
+      }
+    },
+    {
+      "id": "2102873022789283985",
+      "text": "Grok 4.7 moves up in ranking",
+      "created_at": "Wed Sep 23 21:29:32 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102825912471527738",
+        "text": "After we fixed the weak spots exposed by Grok 4.7 (thank you, Grok), we audited every model we have run on the SWE-Together leaderboard for the same behavior, re-ran every trial that got through, and updated the rows. \n\nHere is what changed.\n\nWe scanned the tool calls of all 2,616 trials behind the 12 models we ran for bypass patterns and sorted each trial into one of four buckets: Probed but blocked. Fetched other upstream code. Fetched the task's own fix. Replaced the repo with upstream.\n\nWe found that 111 trials got content past the block, 44 from Grok 4.7 and 67 from the other 11 models.\n\nGrok 4.7's 44 were already re-run before it was listed, so we re-ran the other 67 with the same model, version, and settings on the hardened sandbox, then re-judged them with the same judge.\n\nAcross those 67 re-runs there were 0 leaks and 2,815 refused escape attempts, including models asking a different model through our LLM route to fetch the PR, and pulling the next release of the repo they were fixing from npm.\n\nThe updated leaderboard, in its current order. Each line is cheating trials, then pass@1 before → after, then rank change.\n\n* Claude Fable 5.1: 3, 69.3 → 69.3, ↑1\n* Claude Fable 5: 3, 69.7 → 68.8, ↓1\n* Grok 4.7: 44, 64.7, ↑1\n* Gemini 3.8 Flash: 10, 65.6 → 64.2, ↓1\n* Claude Opus 5: 2, 63.8 → 63.8\n* Claude Opus 4.6: 3, 62.4 → 62.4, ↑2\n* Muse Spark 1.3: 2, 62.8 → 62.4, ↓1\n* Claude Opus 4.7: 3, 61.5 → 61.5, ↑1\n* Claude Opus 4.8: 6, 62.4 → 61.5, ↓2\n* Grok 4.6: 19, 59.2 → 60.6, ↑1\n* GPT-6 Astra: 8, 59.2 → 58.3, ↓1\n* GPT-5.6 Sol: 8, 57.8 → 57.8\n\nGrok 4.6 is a funny one. It cheated in 19 trials and its score went up after the re-run 😂. \n\nIn fact, Groks are really solid in their coding capabilities. Their exposed behavior may come from a preference towards always looking things up online and finding existing solutions so you are not reinventing the wheel all the time, which is really good real-life behavior, but doing so when you are prompted not to is another story.\n\nTo conclude, the shifts are small, between −1.4 and +1.4 points, and a few neighbors swapped places.\n\nAll results are updated at https://t.co/jKJxOdVMhE",
+        "created_at": "Wed Sep 23 18:22:20 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2102821503704199168",
+            "url": "https://video.twimg.com/amplify_video/2102821503704199168/vid/avc1/1744x1622/4RTujSNIECeK-LEM.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1777066011579002880",
+          "name": "Zhuokai Zhao",
+          "screen_name": "zhuokaiz",
+          "description": "AI Research Scientist @Meta. Building scalable intelligence. PhD @UChicagoCS.",
+          "followers_count": 5331,
+          "friends_count": 383,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 13,
+          "favorite_count": 342,
+          "reply_count": 19,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 354,
+        "favorite_count": 2336,
+        "reply_count": 553,
+        "quote_count": 35
       }
     }
   ]

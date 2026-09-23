@@ -1,12 +1,117 @@
 {
   "date": "20260923",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-09-23T19:26:15.044292",
-  "tweet_count": 222,
-  "unique_tweet_count": 222,
-  "total_crawled": 408,
-  "duplicates_removed": 186,
+  "last_crawl_time": "2026-09-23T22:40:24.202560",
+  "tweet_count": 224,
+  "unique_tweet_count": 224,
+  "total_crawled": 422,
+  "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2102878285260611832",
+      "text": "RT @saturn2088: @dotey 我试了，5.5复杂写作还是 Max 最强，extra 都差一点。另外的初步的测试结果就是 5.5 Max 比 4.6 Max 节省约 19%",
+      "created_at": "Wed Sep 23 21:50:27 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2102577279922798755",
+        "text": "@dotey 我试了，5.5复杂写作还是 Max 最强，extra 都差一点。另外的初步的测试结果就是 5.5 Max 比 4.6 Max 节省约 19%",
+        "created_at": "Wed Sep 23 01:54:22 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2829477643",
+          "name": "saturn2088",
+          "screen_name": "saturn2088",
+          "description": "",
+          "followers_count": 1,
+          "friends_count": 133,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 4,
+          "reply_count": 2,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 250229,
+        "friends_count": 1735,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102873022789283985",
+      "text": "Grok 4.7 moves up in ranking",
+      "created_at": "Wed Sep 23 21:29:32 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102825912471527738",
+        "text": "After we fixed the weak spots exposed by Grok 4.7 (thank you, Grok), we audited every model we have run on the SWE-Together leaderboard for the same behavior, re-ran every trial that got through, and updated the rows. \n\nHere is what changed.\n\nWe scanned the tool calls of all 2,616 trials behind the 12 models we ran for bypass patterns and sorted each trial into one of four buckets: Probed but blocked. Fetched other upstream code. Fetched the task's own fix. Replaced the repo with upstream.\n\nWe found that 111 trials got content past the block, 44 from Grok 4.7 and 67 from the other 11 models.\n\nGrok 4.7's 44 were already re-run before it was listed, so we re-ran the other 67 with the same model, version, and settings on the hardened sandbox, then re-judged them with the same judge.\n\nAcross those 67 re-runs there were 0 leaks and 2,815 refused escape attempts, including models asking a different model through our LLM route to fetch the PR, and pulling the next release of the repo they were fixing from npm.\n\nThe updated leaderboard, in its current order. Each line is cheating trials, then pass@1 before → after, then rank change.\n\n* Claude Fable 5.1: 3, 69.3 → 69.3, ↑1\n* Claude Fable 5: 3, 69.7 → 68.8, ↓1\n* Grok 4.7: 44, 64.7, ↑1\n* Gemini 3.8 Flash: 10, 65.6 → 64.2, ↓1\n* Claude Opus 5: 2, 63.8 → 63.8\n* Claude Opus 4.6: 3, 62.4 → 62.4, ↑2\n* Muse Spark 1.3: 2, 62.8 → 62.4, ↓1\n* Claude Opus 4.7: 3, 61.5 → 61.5, ↑1\n* Claude Opus 4.8: 6, 62.4 → 61.5, ↓2\n* Grok 4.6: 19, 59.2 → 60.6, ↑1\n* GPT-6 Astra: 8, 59.2 → 58.3, ↓1\n* GPT-5.6 Sol: 8, 57.8 → 57.8\n\nGrok 4.6 is a funny one. It cheated in 19 trials and its score went up after the re-run 😂. \n\nIn fact, Groks are really solid in their coding capabilities. Their exposed behavior may come from a preference towards always looking things up online and finding existing solutions so you are not reinventing the wheel all the time, which is really good real-life behavior, but doing so when you are prompted not to is another story.\n\nTo conclude, the shifts are small, between −1.4 and +1.4 points, and a few neighbors swapped places.\n\nAll results are updated at https://t.co/jKJxOdVMhE",
+        "created_at": "Wed Sep 23 18:22:20 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2102821503704199168",
+            "url": "https://video.twimg.com/amplify_video/2102821503704199168/vid/avc1/1744x1622/4RTujSNIECeK-LEM.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1777066011579002880",
+          "name": "Zhuokai Zhao",
+          "screen_name": "zhuokaiz",
+          "description": "AI Research Scientist @Meta. Building scalable intelligence. PhD @UChicagoCS.",
+          "followers_count": 5331,
+          "friends_count": 383,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 13,
+          "favorite_count": 342,
+          "reply_count": 19,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241678442,
+        "friends_count": 1411,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 354,
+        "favorite_count": 2336,
+        "reply_count": 553,
+        "quote_count": 35
+      }
+    },
     {
       "id": "2102841788146778126",
       "text": "RT @rwayne: 《你对 AGENTS.md 的理解几乎为零》\n\n作者：@rwayne @onlookersh \n\n“公司变大之后，人和公司都会犯糊涂。他们想复制最初的成功，于是很多人以为：当初成功的过程里一定藏着某种魔力。于是他们开始把流程在全公司制度化。很快，大家就把…",

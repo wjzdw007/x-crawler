@@ -1,12 +1,610 @@
 {
   "date": "20260924",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-09-24T02:50:04.522038",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-09-24T08:58:36.657941",
+  "tweet_count": 213,
+  "unique_tweet_count": 213,
+  "total_crawled": 400,
+  "duplicates_removed": 187,
   "tweets": [
+    {
+      "id": "2103006043064164401",
+      "text": "Claude 在噬菌体里发现类 CRISPR 新酶系统\n\nAnthropic 宣布，Claude 在噬菌体（专门感染细菌的病毒）的 DNA 中发现了一类此前没人注意到的酶系统。它的结构特征和 CRISPR 很像，Anthropic 将其命名为 ART，意思是\"阵列相关逆转录酶\"。\n\n逆转录酶的作用是把 RNA 抄写成 DNA。ART 由三部分组成：一个逆转录酶，旁边一个功能未知的搭档基因，以及一长串等间距排列的重复 DNA 序列。CRISPR 也有类似的重复阵列，里面存着\"导航信息\"，所以 CRISPR 可以被编程，去基因组的指定位置剪切。实验已经证实，ART 的阵列同样会被转录成一组各不相同的短 RNA，这暗示它可能也有类似的可编程机制。\n\n这个发现值得关注，是因为同时具备这几项特征的系统，以前只找到过寥寥几个，而且全都能对 DNA 做剪切、复制、粘贴之类的操作。CRISPR 已经催生了基因编辑药物，另外几个也正在被开发成新工具。不过 Anthropic 也承认，ART 的具体功能目前还不清楚。\n\n整个发现过程几乎由 Claude 独立完成。研究人员只给了一个初始提示，让它在海量 DNA 数据库里寻找有意思的新逆转录酶。大约 950 个 Claude 智能体跑了 21 小时，消耗 2.1 亿 token。它们从 20 多万个逆转录酶中筛出 3500 个候选，再挑出最值得看的 20 个，写成人类能读懂的报告。\n\n其中一个智能体在逐段读原始序列时，直接认出了重复阵列。接着它数了重复次数，量了间距，和已知系统做比对，又查了文献，确认是新东西之后才提交给人类审核。这个逆转录酶本身以前有人报道过，但它旁边的阵列和搭档蛋白，是 Claude 第一个发现的。\n\n据 Anthropic 介绍，这类\"基因组挖掘\"工作，专家通常要花几周到几个月。CRISPR 先驱、MIT 教授张锋看过预印本后评价说，这是 AI 智能体参与生物学发现的一个好例子，这类阵列值得深入研究。\n\n这项成果出自 Anthropic 今年春天新组建的生命科学研究组。团队在湾区建了自己的湿实验室，只做 BSL-1、BSL-2 级别的低风险研究，不接触能感染人的病原体。所有实验都由人类科学家动手完成。\n\n团队日常用的工具是公开发布的 Claude Science 和 Claude Code。这意味着其他实验室理论上也能搭起这套\"AI 批量提假设、人做实验验证\"的流程。Anthropic 目前正在向外部科学家征集可以合作的研究课题。",
+      "created_at": "Thu Sep 24 06:18:07 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102824959827742916",
+        "text": "Claude has discovered a previously unknown enzyme system hidden in the DNA of bacteriophages. Beside the enzyme’s gene sits a long array of repeating DNA—a structure that looks somewhat similar to CRISPR.\n\nWe don’t yet understand what this system does, but only a handful of known systems share its features, and all of them are able to cut, copy, and paste DNA. Historically, the discovery of such programmable systems has helped revolutionize medicine. CRISPR, for instance, is now the foundation of genetic medicines. But it will take much more work to learn what this system does, and whether it can be put to similar use.\n\nRead more: https://t.co/RuEosScSMb",
+        "created_at": "Wed Sep 23 18:18:33 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1353836358901501952",
+          "name": "Anthropic",
+          "screen_name": "AnthropicAI",
+          "description": "We're an AI safety and research company that builds reliable, interpretable, and steerable AI systems. Talk to our AI assistant @claudeai on https://t.co/FhDI3KQh0n.",
+          "followers_count": 1745518,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4510,
+          "favorite_count": 36326,
+          "reply_count": 1246,
+          "quote_count": 2242
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 250330,
+        "friends_count": 1735,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 46,
+        "reply_count": 9,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2103005475075670176",
+      "text": "An Earth economy is less than a trillionth the size of a K2 economy",
+      "created_at": "Thu Sep 24 06:15:51 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102958221770322335",
+        "text": "Epic https://t.co/wOIVIamS4m",
+        "created_at": "Thu Sep 24 03:08:05 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2102958218016342016",
+            "url": "https://pbs.twimg.com/media/HS81W3paQAAhRoP.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3283901",
+          "name": "andrew chen",
+          "screen_name": "andrewchen",
+          "description": "🇺🇸 a16z speedrun",
+          "followers_count": 444748,
+          "friends_count": 15664,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 134,
+          "favorite_count": 715,
+          "reply_count": 58,
+          "quote_count": 40
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241670464,
+        "friends_count": 1411,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 492,
+        "favorite_count": 3372,
+        "reply_count": 720,
+        "quote_count": 57
+      }
+    },
+    {
+      "id": "2103005014277111831",
+      "text": "Good idea to post an image of the front page",
+      "created_at": "Thu Sep 24 06:14:02 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102978873759563931",
+        "text": "Take an early look at the front page of The Wall Street Journal https://t.co/5tqilx322Y https://t.co/FCCXGKwFeW",
+        "created_at": "Thu Sep 24 04:30:09 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2102978862787215360",
+            "url": "https://pbs.twimg.com/media/HS9IIjaWQAAd405.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3108351",
+          "name": "The Wall Street Journal",
+          "screen_name": "WSJ",
+          "description": "Sign up for our newsletters and alerts: https://t.co/QevH0DLQi8 | Got a tip? https://t.co/iXIigdPjEZ | For WSJ customer support: https://t.co/DZgH9n53qg",
+          "followers_count": 22233880,
+          "friends_count": 1058,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 52,
+          "favorite_count": 462,
+          "reply_count": 60,
+          "quote_count": 33
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241670464,
+        "friends_count": 1411,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 436,
+        "favorite_count": 4036,
+        "reply_count": 499,
+        "quote_count": 46
+      }
+    },
+    {
+      "id": "2103002338399244371",
+      "text": "RT @cb_doge: Grok 4.7 works really well with Blender. I’ve been using them to create these rough Raptor engine 3D models, and the improveme…",
+      "created_at": "Thu Sep 24 06:03:24 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2102955587218886827",
+        "text": "Grok 4.7 works really well with Blender. I’ve been using them to create these rough Raptor engine 3D models, and the improvement in quality is huge.\n\nThey’re still early versions, but the details are already coming together beautifully. https://t.co/sF4FZbWbey",
+        "created_at": "Thu Sep 24 02:57:37 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2102955496852656128",
+            "url": "https://video.twimg.com/amplify_video/2102955496852656128/vid/avc1/2256x1080/xswlMVMBZBv-oDyC.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1903221,
+          "friends_count": 1052,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 138,
+          "favorite_count": 1133,
+          "reply_count": 113,
+          "quote_count": 16
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241670464,
+        "friends_count": 1411,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 138,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102998342905061500",
+      "text": "RT @DLKFZWilliam2: 根大家分享一个提前布局的机会：\n\nMeta 刚把新一代 VR 眼镜放出来了。只有100 克、眼镜形态、不用头带，显示和传感器都在镜身上，处理器、电池和存储单独放在一个小圆盒里。5K micro-OLED、37 PPD，高通 Snapdrag…",
+      "created_at": "Thu Sep 24 05:47:31 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2102945313917223164",
+        "text": "根大家分享一个提前布局的机会：\n\nMeta 刚把新一代 VR 眼镜放出来了。只有100 克、眼镜形态、不用头带，显示和传感器都在镜身上，处理器、电池和存储单独放在一个小圆盒里。5K micro-OLED、37 PPD，高通 Snapdragon Reality Elite，续航大概 3 小时高分辨率播放。\n\n2027 年春天上市，1299 美元。\n\n我觉得这对开发者是个挺实在的窗口。这类应用完全可以像当年做 Quest 内容一样，安静地赚钱。\n\n国内几乎没团队认真盯这块，竞争反而没那么卷。\n\n机会往往就藏在这种暂时没人挤的地方。提前布局，悄咪咪赚钱。\n\n另外再说一个现在的趋势：现在的 personal agent 赛道非常拥挤。如果没有一定实力的开发者，千万不要去做这个方向。不如做做这些冷门的，花一点精力，分散一下风险。",
+        "created_at": "Thu Sep 24 02:16:48 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2102908760553656598",
+          "text": "Damn!!  I feel like this is what the Vision Air was supposed to be.\n\nZuck just introduced Meta VR glasses https://t.co/Ge5At3Y8o0",
+          "created_at": "Wed Sep 23 23:51:33 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2102908233182769152",
+              "url": "https://video.twimg.com/amplify_video/2102908233182769152/vid/avc1/2160x3840/v4Q9jjey-6Pbgcpy.mp4?tag=29",
+              "bitrate": 25128000
+            },
+            {
+              "type": "video",
+              "id": "2102908233191239680",
+              "url": "https://video.twimg.com/amplify_video/2102908233191239680/vid/avc1/2160x3840/wkRfjzBs-yiD5yUz.mp4?tag=29",
+              "bitrate": 25128000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "16517825",
+            "name": "Roberto Nickson",
+            "screen_name": "rpnickson",
+            "description": "Forever exploring the world of technology and creativity.",
+            "followers_count": 60343,
+            "friends_count": 1281,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 194,
+            "favorite_count": 2515,
+            "reply_count": 90,
+            "quote_count": 46
+          }
+        },
+        "user": {
+          "id": "1628794781257302016",
+          "name": "独立开发者William",
+          "screen_name": "DLKFZWilliam2",
+          "description": "Hi,☺️.我是一个温柔又有点古怪的有趣中年大叔,一直沉浸在自己的世界里｜原投行打工｜半路出家的退休 Dev｜全职Comedian｜养成系变装跳绳up主｜主持No.1 US Biz & Tax 播客｜写代码（技术很菜）| 玩游戏,玩音乐,搞点艺术｜搞抽象是为了给你带来欢笑和流量，对任何人无恶意，笔芯🫰 商务合作私信",
+          "followers_count": 12932,
+          "friends_count": 2010,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3,
+          "favorite_count": 31,
+          "reply_count": 16,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 250330,
+        "friends_count": 1735,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102997852569923864",
+      "text": "期待 DeepSeek 版😂",
+      "created_at": "Thu Sep 24 05:45:34 +0000 2026",
+      "lang": "ja",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102815826391019746",
+        "text": "https://t.co/FjThLBZHSq",
+        "created_at": "Wed Sep 23 17:42:16 +0000 2026",
+        "lang": "zxx",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2102815812906278912",
+            "url": "https://pbs.twimg.com/media/HS6z1zRaYAAhOc4.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2724423739",
+          "name": "Dan Hockenmaier",
+          "screen_name": "danhockenmaier",
+          "description": "Growth, marketplaces, trying to separate signal from noise. Chief Strategy Officer @faire_wholesale. Partner @reforge.",
+          "followers_count": 11978,
+          "friends_count": 647,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 608,
+          "favorite_count": 10561,
+          "reply_count": 171,
+          "quote_count": 143
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 250330,
+        "friends_count": 1735,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 39,
+        "reply_count": 9,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2102995791778369982",
+      "text": "初始提示词和源代码我放到 GitHub了：https://t.co/78h1VvgkAK\n\n有兴趣的话，你可以继续迭代，或者衍生出其他作品",
+      "created_at": "Thu Sep 24 05:37:23 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102940980379017293",
+        "text": "Opus 5.5 终结了比赛！\n\n用 Opus 5.5 重做了《桃花源记》，还是 three.js 做的，但是效果好了很多，当然这次不是一个提示词，而是反复打磨了好多次，还让它去搜索了免费的的 3D 模型，避免从头建模。\n\n如果你想试试的话：https://t.co/AcCWjJCUmM\n记得点击右下角的“循文入境” https://t.co/teiSbXttEj",
+        "created_at": "Thu Sep 24 01:59:35 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2102939337591603200",
+            "url": "https://video.twimg.com/amplify_video/2102939337591603200/vid/avc1/1920x1080/tHYJ2c5wKB2ghtX0.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 250330,
+          "friends_count": 1735,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 39,
+          "favorite_count": 364,
+          "reply_count": 80,
+          "quote_count": 11
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 250330,
+        "friends_count": 1735,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 15,
+        "reply_count": 4,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2102994911171903830",
+      "text": "因为我这个是反复迭代后的版本，所以无法单一的提示词，不过我让 Opus 5.5 还原了一下提示词（ docs/prompt.md ），可以用作初始提示词\n然后我把源代码放到 GitHub了：https://t.co/78h1VvgSqi\n\n迭代了一天时间，总 Token 大约 Max@20x 订阅一周的 10%-15%之间\n\nhttps://t.co/MON8mugfvy",
+      "created_at": "Thu Sep 24 05:33:53 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102948666285904372",
+        "text": "@dotey 有请宝玉老师分享提示词，还有消耗了多少额度？以后我给小朋友做课件，哈哈哈",
+        "created_at": "Thu Sep 24 02:30:07 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2009500781809160195",
+          "name": "老大大白",
+          "screen_name": "leosunkr",
+          "description": "",
+          "followers_count": 11,
+          "friends_count": 54,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 2,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 250330,
+        "friends_count": 1735,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 7,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102968028476436866",
+      "text": "Meta 发布了 Muse Charm，一个能挂在钥匙扣上的小设备，专门用来跟自家 AI 智能体 Muse 对话。它是 Meta 周三在 Connect 大会上发布的，扎克伯格表示目标是赶在 12 月假期季前发货。\n\n可能很多网友还不知道 Muse 是什么。它是 Meta 刚推出的个人 AI 智能体，9 月 8 日才上线，一度超过 ChatGPT 登上 iOS 免费榜第一。用户可以给它起名字、设计形象，甚至调整它说话的口音和语速，更像一个养成的专属助手。\n\nMuse Charm 就是给这个助手做了一个实体。轻触设备角落的指纹传感器就能开始对话，屏幕上显示一个可更换的 Muse 动画形象。所以不少媒体拿它和拓麻歌子（90 年代风靡一时的日本电子宠物）作比较。\n\n它解决的问题很直接：想问 AI 点事，不用掏手机解锁、再找 App。扎克伯格说用户可以直接对着它说话，不用解锁手机、打开应用，还能给 Muse 看你周围的情况。按他的说法，如果你没戴 AI 眼镜，这会是跟 Muse 交流最快的方式。\n\n同场 Muse 本身也加了新功能，包括实时视频聊天、可自选声音的实时语音对话，以及每个用户的智能体都会有一个独立邮箱地址。\n\n不过这东西离上手还有距离。Meta 目前只造了几台，零部件和设计都还没定型。价格没公布，续航、联网方式、是否需要配对手机也都没说。可能是基于 5G 的设备，这一点在 Meta 官方和主流媒体报道里还没得到确认。\n\n这类 AI 挂件此前名声不太好，像 Friend 这样的产品让很多消费者对“实体 AI”这个概念只剩白眼。Meta 的底气在于 Muse 已经有了一批真实用户，Charm 只是给他们多一个入口。",
+      "created_at": "Thu Sep 24 03:47:03 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2102967748011679744",
+          "url": "https://video.twimg.com/amplify_video/2102967748011679744/vid/avc1/2832x1540/ZP-2fLZiFCoWeCLz.mp4?tag=29",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 250330,
+        "friends_count": 1735,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 69,
+        "reply_count": 23,
+        "quote_count": 7
+      }
+    },
+    {
+      "id": "2102964178210480238",
+      "text": "RT @tesla_semi: Streaming live at 6pm PDT tomorrow https://t.co/eTDVRTFjOf",
+      "created_at": "Thu Sep 24 03:31:45 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2102955945441853856",
+        "text": "Streaming live at 6pm PDT tomorrow https://t.co/eTDVRTFjOf",
+        "created_at": "Thu Sep 24 02:59:03 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1867171663961362432",
+          "name": "Tesla Semi",
+          "screen_name": "tesla_semi",
+          "description": "BAMF – the future of electric trucking",
+          "followers_count": 70114,
+          "friends_count": 7,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 658,
+          "favorite_count": 4582,
+          "reply_count": 195,
+          "quote_count": 120
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241670464,
+        "friends_count": 1411,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 658,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2102953907936993446",
+      "text": "True",
+      "created_at": "Thu Sep 24 02:50:57 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102765171479568630",
+        "text": "EXCLUSIVE: California has created a shadow welfare system for illegal aliens. Free housing, cash, healthcare, food, phones, college tuition, even car insurance—costing taxpayers more than $10 billion per year.\n\nWe went inside the system and exposed it all. https://t.co/oJh0mpstzN",
+        "created_at": "Wed Sep 23 14:20:59 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2102764062316843008",
+            "url": "https://video.twimg.com/amplify_video/2102764062316843008/vid/avc1/3840x2160/I_iD0f1qCLljNAYX.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3066800573",
+          "name": "Christopher Rufo",
+          "screen_name": "christopherrufo",
+          "description": "Writer. Activist. Californian-in-exile. Sign up for my free Substack at https://t.co/93YfhAd0af.",
+          "followers_count": 854521,
+          "friends_count": 1083,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 13635,
+          "favorite_count": 40961,
+          "reply_count": 1329,
+          "quote_count": 1037
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241670464,
+        "friends_count": 1411,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3945,
+        "favorite_count": 21557,
+        "reply_count": 1050,
+        "quote_count": 102
+      }
+    },
     {
       "id": "2102952936771035459",
       "text": "True",
@@ -10544,6 +11142,118 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2101411845500293301",
+      "text": "RT @mtrainier2020: 归墟 1-9， 成本差不多是20K USD, 一个人的作品。\n真人演员压力山大。 https://t.co/EBaDDFA7cZ",
+      "created_at": "Sat Sep 19 20:43:20 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2101400099146649601",
+          "url": "https://video.twimg.com/amplify_video/2101400099146649601/vid/avc1/1280x720/0Skp6HgC8tMfLfBb.mp4?tag=29",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": {
+        "id": "2101400859603325096",
+        "text": "归墟 1-9， 成本差不多是20K USD, 一个人的作品。\n真人演员压力山大。 https://t.co/EBaDDFA7cZ",
+        "created_at": "Sat Sep 19 19:59:41 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2101400099146649601",
+            "url": "https://video.twimg.com/amplify_video/2101400099146649601/vid/avc1/1280x720/0Skp6HgC8tMfLfBb.mp4?tag=29",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1141738094485315584",
+          "name": "Rainier",
+          "screen_name": "mtrainier2020",
+          "description": "Cogito, ergo sum",
+          "followers_count": 144095,
+          "friends_count": 998,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 356,
+          "favorite_count": 1744,
+          "reply_count": 231,
+          "quote_count": 43
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 250330,
+        "friends_count": 1735,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 356,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2101398902503068015",
+      "text": "The unboxing will be 🤌",
+      "created_at": "Sat Sep 19 19:51:55 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2101178647088410828",
+        "text": "The next @boringcompany merch will put Uranium in Uranus",
+        "created_at": "Sat Sep 19 05:16:42 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "44196397",
+          "name": "Elon Musk",
+          "screen_name": "elonmusk",
+          "description": "https://t.co/ZdBx5WABYx",
+          "followers_count": 241670463,
+          "friends_count": 1411,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2199,
+          "favorite_count": 32140,
+          "reply_count": 2607,
+          "quote_count": 520
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241670463,
+        "friends_count": 1411,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1770,
+        "favorite_count": 16712,
+        "reply_count": 1657,
+        "quote_count": 152
       }
     },
     {

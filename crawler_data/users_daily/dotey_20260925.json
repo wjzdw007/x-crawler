@@ -1,0 +1,68 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 250442,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260925",
+  "last_updated": "2026-09-25T03:06:34.021663",
+  "tweet_count": 1,
+  "tweets": [
+    {
+      "id": "2103283524962795707",
+      "text": "Google 下周把 TPU 送上太空，芯片跑 15 分钟就得停下来降温\n\nGoogle 要把自家 AI 芯片送进太空了。Sundar Pichai 在 X 上宣布，Project Suncatcher 的第一颗原型卫星将搭乘 SpaceX 的拼车发射任务 Transporter-18 升空，卫星由 Google 和遥感卫星公司 Planet 合作打造。据《纽约时报》报道，发射定在 10 月 1 日，用猎鹰 9 号从加州范登堡太空军基地出发。\n\nSuncatcher 是 Google 去年 11 月公布的“登月计划”，研究能不能把 AI 数据中心搬到太空。出发点是电：AI 数据中心极其耗电，而在近地轨道上，卫星几乎一直晒得到太阳，太阳能发电量最多可达地面的 8 倍。\n\n这颗卫星代号 MVP，冰箱大小，装了 4 块 TPU（Google 自研的 AI 芯片，Gemini 就靠它训练和运行），算力约等于地面数据中心的一台服务器。太阳能板只提供约 1 千瓦电力，按《纽约时报》的说法，只够带动一台吹风机。它能在轨道上回答简单的 Gemini 提问，设计寿命约一年。\n\nPichai 在推文里的问题很直接：TPU 能不能在太空活下来，还能正常干活？发射和辐射这两项，Google 已经在地面测过。上天那 10 分钟里，整颗卫星要承受最高 10 倍重力的持续加速度，落到单块芯片上可达 50 到 100 倍，Google 沿三个轴向猛烈摇晃过卫星，硬件扛住了。辐射测试则显示，第六代 TPU Trillium 能承受的累积辐射剂量，超过在太空执行五年任务所受的量。\n\n最没把握的是散热。太空没有空气，风扇派不上用场，热量只能靠散热板辐射出去。Google 用的是热管加散热板的方案，但项目负责人 Travis Beals 对《纽约时报》透露，芯片目前连续跑 15 分钟左右就得关机降温。\n\n按原计划，Google 和 Planet 要到 2027 年初才发射两颗原型星。后来 Google 坚持今年就上天，愿意多担风险，干脆把芯片装进了 Planet 现成的卫星。2027 年那两颗照常发射，专门测试卫星之间的激光高速互联。Google 的最终设想是 81 颗卫星在半径 1 公里内编队飞行，用激光连成一座太空数据中心。\n\n如果长远做成了，没人会在意自己的 Gemini 请求是不是在太空里处理的。但离那一天还远。Google 负责研究的高级副总裁 James Manyika 认为，未来几年都不指望有真正能用的东西。Google 去年算过账：发射价格要在 2030 年代中期降到每公斤 200 美元以下，太空数据中心的发射加运营成本，才能和同等规模地面数据中心的电费大致相当。而当时的发射价格还在每公斤 1500 到 2900 美元。\n\n把数据中心级 AI 芯片送上天，Google 并不是第一家。创业公司 Starcloud 去年 11 月就把一块 NVIDIA H100 送入轨道，还在上面跑起了 Google 的开放模型 Gemma。",
+      "created_at": "Fri Sep 25 00:40:44 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2103283379194011648",
+          "url": "https://video.twimg.com/amplify_video/2103283379194011648/vid/avc1/1080x1920/eCw4isTsT0WRhrs0.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2103209164072010051",
+        "text": "Can our TPUs survive and operate in space? Well, we're going to find out.\n\nProject Suncatcher is hitching a ride aboard @SpaceX's Transporter-18 mission, testing a prototype satellite built in partnership with @planet\n\nOne small step for TPUs.... https://t.co/FuZoj7c0Hl",
+        "created_at": "Thu Sep 24 19:45:15 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2103208798299332608",
+            "url": "https://video.twimg.com/amplify_video/2103208798299332608/vid/avc1/1080x1920/5O8LUM1sRzGBB5f0.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "14130366",
+          "name": "Sundar Pichai",
+          "screen_name": "sundarpichai",
+          "description": "CEO, Google and Alphabet",
+          "followers_count": 11642401,
+          "friends_count": 198,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 700,
+          "favorite_count": 6624,
+          "reply_count": 262,
+          "quote_count": 186
+        }
+      },
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 36,
+        "reply_count": 10,
+        "quote_count": 1
+      }
+    }
+  ]
+}

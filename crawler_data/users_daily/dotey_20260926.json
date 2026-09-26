@@ -1,0 +1,170 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 250501,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20260926",
+  "last_updated": "2026-09-26T03:10:46.101710",
+  "tweet_count": 4,
+  "tweets": [
+    {
+      "id": "2103644663005471194",
+      "text": "Codex 要重置了",
+      "created_at": "Sat Sep 26 00:35:46 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2103637477760311522",
+        "text": "o yes… we’re back in action and we’ll reset usage limits for all paid users across codex and ChatGPT work\n\nsorry about the brief disruption!\n\n(and yes we have a special spare codex when things are down to help us out)",
+        "created_at": "Sat Sep 26 00:07:13 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1953337039510003712",
+          "name": "Tibo",
+          "screen_name": "thsottiaux",
+          "description": "Codex & ChatGPT @OpenAI",
+          "followers_count": 740672,
+          "friends_count": 72,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 549,
+          "favorite_count": 9897,
+          "reply_count": 1590,
+          "quote_count": 666
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 22,
+        "reply_count": 8,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2103678997141786937",
+      "text": "Anthropic Claude Code 团队的 Thariq Shihipar 的这篇文章讲 Claude Code 里的 effort 设置（可以理解为投入档位）该怎么用。我想很多人都不是很清楚 Claude Code 的 effort 档位怎么选，我在看这篇文章之前也有些模糊，一般默认就是 high，现在看还是有些讲究的。\n\nThariq 的经验是：low 用于头脑风暴、画草图、小改动，要的是快，随时能插手；medium 用于大部分日常开发，比如实现新功能；high 用于需要验证、边界情况多的活，比如在老代码库里修 bug；max 用于让 Claude 完全自主攻克难题，比如从头到尾搭一个 App 并验证，或者给关键软件找安全漏洞。\n\n在 Claude Code 里输入 /effort 就能切换档位，对话中途也可以换。注意只有最新的 Opus 5.5 和 Fable 5.1 不会让缓存失效，早期模型会让缓存失效。\n\nThariq 通过实测发现，effort 主要决定 Claude 在一个任务上花多少功夫做验证、测边界情况，以及替你拿多少主意。\n\neffort 从 low 到 max 分几档，本质是告诉模型你愿意让它在这件事上花多少算力。同一件事，给你 1 小时，你会先交一个能用的版本，等对方反馈再改；给你 12 小时，你会自己反复打磨、检查。\n\n最新的 Opus 5.5 和 Fable 5.1 可以在对话中途切换档位，而且不会让提示词缓存（prompt cache）失效，前面对话积累的缓存照样能用。能随时切了，很多用户就来问他到底什么时候该用哪一档。\n\n【日常开发：需求越模糊，档位差别越大】\n\nThariq 让 Opus 5.5 用不同档位做同一个模糊需求：“做一个健身记录 App”。low 档只做出一个记录表和一张简单图表，档位越高功能越多，max 档还加了一张热力图。另一个任务是重新设计 Claude Code 的 /config 菜单，low 档 1 分钟交出一个能看懂思路的交互草图；max 档用了 28 分钟，样稿跟 Claude Code 真实界面很像，还附了几种操作流程的演示。\n\n如果先让 Claude 详细采访他、整理出完整需求再动手，不同模型、不同档位的产出就很接近了。\n\n换句话说，档位越高，Claude 替你做的假设越多。想自己掌控细节，就用低档位快速出初稿，边看边改。\n\n他现在开发新功能的流程是：把需求交给 Claude，让它反过来问你还漏了哪些细节；用 low 档实现，检查大方向对不对，不对就继续用 low 档改；最后切到 high 档做验证和测试。\n\n【难题：高档位用来补边界情况】\n\n更难的任务，他去翻了 Terminal-Bench 3.0 的结果。这是一个社区出题的基准测试，题目比日常开发难得多，比如用 Verilog 写一台能装进小型 FPGA（可编程芯片）的 8 位游戏机，或者在定理证明工具 Lean 4 里完整证明一条数学定理。\n\n他的主要结论是：边界情况越多的任务，越值得开高档位。\n\nhtml-js-filter 这道题要求写一个 HTML 过滤器，把所有往网页里夹带 JavaScript 的写法都清理干净。Fable 5.1 在 low 档跑 5 次只过了 1 次，到 xhigh 档 5 次全过。low 档每次两分钟左右，写一遍过滤器，拿一个手写页面测一下就结束了。他追踪的一次 high 档运行花了约 33 分钟：先挑自己初稿的毛病，再去读解析器源码找 bug，跑了一套标准的 XSS（跨站脚本攻击）测试集，最后还写了一个随机生成网页的模糊测试程序。\n\nOpus 5.5 修存储引擎崩溃 bug 的题也类似，low 档 0/5，xhigh 档 4/5。low 档一分钟左右就直接改代码，没先复现崩溃；xhigh 档花 11 分钟，先复现，再写随机测试，还专门确认修到一半的代码会被测试拦下来。\n\n按领域看，硬件、代码审查、安全这类题目从高档位受益最多。但档位也有管不到的地方：加档位能减少因漏掉边界情况导致的失败，模型一开始思路就错了的话，档位开再高也救不回来。\n\n还有一道题能看出人在不在场的区别。gsea-proteomics 要求分析一组蛋白质组学数据，判断八种处理方式里哪些效果接近目标组织。low 档的 Opus 5.5 挑了一种听起来合理的数据预处理方法，跑一遍就报结果，5 次全错；high 档试了两种预处理方法，发现得出的结论不一样，先查清原因再选定方法，5 次对了 4 次。Thariq 说，如果有人在场，Claude 可能会先问一句这个问题该怎么设定；没人在场，高档位的效果更好。\n\n所以档位怎么选，很大程度上看你打算在这个任务里参与多少。一直默认开 high，等于每次都让 Claude 替你多拿主意，也每次都多花时间和 Token。",
+      "created_at": "Sat Sep 26 02:52:12 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2103576349499855160",
+        "text": "What is effort really? When do you change it it and why not just use max effort for everything?\n\nI dove deep into this problem, looking into evals and doing my own tests and I was quite surprised by the results. https://t.co/KO2D51j34H",
+        "created_at": "Fri Sep 25 20:04:18 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "352806502",
+          "name": "Thariq",
+          "screen_name": "trq212",
+          "description": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
+          "followers_count": 354972,
+          "friends_count": 1916,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 188,
+          "favorite_count": 2723,
+          "reply_count": 158,
+          "quote_count": 66
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 18,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2103681881053045095",
+      "text": "美国上诉法院 2 比 1 维持五角大楼对 Claude 的供应链排除令\n\n美国哥伦比亚特区联邦巡回上诉法院 9 月 25 日以 2 比 1 驳回 Anthropic 的诉请。法院认定，美国战争部（即国防部，特朗普政府去年起改用此名）以“供应链风险”为由把 Claude 清出军方供应链，没有越权，也不违宪。\n\n事情起于今年初的合同谈判。战争部要求 Claude 可用于“一切合法用途”。Anthropic 同意大幅放宽限制，但坚持保留两条：不用于致命性自主武器，不用于对美国人的大规模监控。\n\n2 月底谈判破裂，战争部长 Hegseth 3 月初正式做出认定。战争部随后下令，所有系统最迟 180 天内移除 Anthropic 产品，承包商为军方干活也不能再用 Claude，同时扩大了和 OpenAI 的合作。\n\n“供应链风险”这个标签，此前只用在被认为与外国对手有关联的企业身上。\n\n多数意见由 Katsas 法官执笔，Rao 法官附议，两人都由特朗普任命。他们认为，Anthropic 能通过训练决定 Claude 做什么、不做什么，光这一点就落入法律对“供应链风险”的定义。\n\n判决书列了三件事。\n\n第一，早期商用版 Claude 曾拒绝为国安部门总结威胁评估、处理机密文件。\n\n第二，2025 年 Claude 拒绝处理美国疾控中心（CDC）关于防止传染病传播的研究请求。\n\n第三，今年初一名 Anthropic 高管对某承包商把 Claude 用于一次海外敏感军事行动提出质疑。战争部没说是哪次行动，Anthropic 提交的媒体报道指向 1 月抓捕委内瑞拉总统马杜罗的行动。\n\nAnthropic 说前两件事后来都和政府一起解决了，第三件是误会。法院的回应是，这些事至少说明 Anthropic 的训练能有效执行它的使用限制。\n\n争议落在“供应链风险”这个词上。法律把供应链风险定义为有人可能“破坏、恶意植入功能、提取数据，或以其他方式操纵”产品。多数意见按字典义把“操纵”（manipulate）理解为操作、控制，不要求恶意。照这个理解，Anthropic 训练 Claude 拒绝那两类任务，就是在操纵产品设计、让它拒绝执行某些功能。\n\n判决书写道，法院没有理由怀疑 Anthropic 动机高尚，但这条法律只看 Anthropic 做了什么，不问为什么做。\n\n这和 Anthropic 8 月在加州赢下的官司是两回事。战争部当初依据两部法律各做了一次认定。加州北区联邦法官 Rita Lin 8 月 27 日撤销的是依据《美国法典》第 10 编第 3252 条做出的那次，这一条针对的是“对手”，要求有恶意。她还判定，特朗普要求所有联邦机构停用 Claude 的指令，以及 Hegseth 要求所有军方合作企业与 Anthropic 断绝往来的指令，都违法。\n\n这次上诉法院审的是依据 2018 年《联邦采购供应链安全法》做出的认定，适用对象是“任何人”。上诉法院表示同意加州法院“Anthropic 没有恶意”的结论，但认为这部法律不需要这个前提。\n\n所以这次判决的实际影响有限。排除令只管战争部自己的系统和承包商给战争部做的项目，普通用户和企业正常使用 Claude 不受影响。它从 3 月起就已生效，上诉法院 4 月拒绝了暂停执行的申请，这次判决维持的是现状。网上流传的“被整个国防供应链拉黑”，说得过头了。\n\nAnthropic 还主张，被贴上国家安全标签损害了公司声誉。法院引用《华尔街日报》5 月的报道回应：被认定之后，Anthropic 收到的投资报价估值超过 9000 亿美元。\n\nAnthropic 表示不同意判决，正在考虑包括进一步复审在内的所有选项。它可以申请原合议庭重审或全院法官重审，也可以上诉到最高法院。\n\n异议意见来自老布什任命的 Henderson 法官。她认为“操纵”应理解为带恶意、暗中进行的破坏，国会立这部法，是为了防范敌对国家等恶意行为者通过供应链渗透政府系统。\n\n她在异议里假设了一个场景：如果部长接下来要求接替 Anthropic 的公司允许“战争部认为必要的一切功能”，按今天的判决，这家公司只剩两个选择，要么答应，要么冒着被认定为国家安全威胁的风险。",
+      "created_at": "Sat Sep 26 03:03:39 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2103584399103041737",
+        "text": "🚨BREAKING: Claude is officially a NATIONAL SECURITY THREAT and is BLACKLISTED from the ENTIRE defense supply chain\n\n>anthropic: no autonomous weapons, no mass surveillance, no exceptions\n>pentagon blacklists claude as an active national security threat\n>anthropic sues \n\nFederal court ruled 2–1 AGAINST Anthropic:\n\n\"As Anthropic admits, the company encodes restrictions into Claude that prevent the model from performing tasks that Anthropic wishes to prevent.\"\n\n\"On more than one occasion, these restrictions have stopped Claude from performing tasks requested by government users\":\n\n>refused to perform \"tasks that were appropriate in a national security context\"\n>refused CDC queries on infectious disease prevention research\n>anthropic questioned claude's use in the military operations \n\n\"Anthropic's Chief Science Officer explained how the company 'seek[s] to embed safety considerations directly into the model itself.'\"\n\n\"[Anthropic's] CEO explained how such training gives the model an 'identity, character, values, and personality' of its own, tethered to a 'constitution' developed to impose 'high-level principles and values' on Claude itself.\"\n\n\"We have no reason to doubt that Anthropic manipulates Claude's function with noble intentions... BUT the statutory definition of a 'supply chain risk' turns on what Anthropic does, not why Anthropic does it.\"\n\n\"In our Republic, it is the President and the Secretary of War who must determine how best to balance the competing risks. In doing so here, the Secretary DID NOT transgress any limits on his authority.\"\n\nITS OVER.\nANTHROPIC IPO IN SHAMBLES",
+        "created_at": "Fri Sep 25 20:36:18 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2103581956034142209",
+            "url": "https://pbs.twimg.com/media/HTFspM1WIAEtNyh.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2103582052998156290",
+            "url": "https://pbs.twimg.com/media/HTFsu2DXkAIvQ57.png"
+          },
+          {
+            "type": "photo",
+            "id": "2103582250956677121",
+            "url": "https://pbs.twimg.com/media/HTFs6XgW4AEiUj9.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1087640384975577089",
+          "name": "NIK",
+          "screen_name": "ns123abc",
+          "description": "https://t.co/WPssuOPWw5",
+          "followers_count": 83807,
+          "friends_count": 8113,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 288,
+          "favorite_count": 2381,
+          "reply_count": 206,
+          "quote_count": 151
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2103683057689522564",
+      "text": "《什么是 Transformer》由 Claude Code + Opus 5.5 制作\n\n--- 提示词 ---\n\n帮我用js制作一个视频，主题是：什么是 Transformer\n要深入浅出，让高中生也能看得懂，不仅high level说的清楚，也要有细节，包括注意力机制，甚至一些数学概念\n\n你可以用任何工具或者安装工具，可以联网检索\n\n请给我惊喜 https://t.co/D4R85BOEn3",
+      "created_at": "Sat Sep 26 03:08:20 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2103682805754388480",
+          "url": "https://video.twimg.com/amplify_video/2103682805754388480/vid/avc1/1920x1080/5fJLDg7Xn6ENKQyo.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

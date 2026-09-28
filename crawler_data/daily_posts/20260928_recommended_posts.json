@@ -1,12 +1,1486 @@
 {
   "date": "20260928",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-09-28T10:27:44.052030",
-  "tweet_count": 211,
-  "unique_tweet_count": 211,
-  "total_crawled": 400,
-  "duplicates_removed": 189,
+  "last_crawl_time": "2026-09-28T19:10:07.857943",
+  "tweet_count": 239,
+  "unique_tweet_count": 239,
+  "total_crawled": 411,
+  "duplicates_removed": 172,
   "tweets": [
+    {
+      "id": "2104649713655947415",
+      "text": "9/12｜Less, but Better：温暖极简的字体动画\n\nJavaScript 制作，字体驱动剪辑，多种英文字体，丰富的节奏和色彩；高质量、16:9、约 30 秒、配背景音乐。\n\n需要：代码动画、字体、渲染和音乐素材/工具。原 Prompt 允许生成图片或视频，但不是必需；走混合制作时再接图像模型或 Seedance，纯字体动效可以靠代码完成。\n\n完整 Prompt：\nUse JavaScript to make a beautiful video that surprises me and shows off your capabilities. I like typography-driven editing, varied English typefaces and a warm, minimalist aesthetic, with rich rhythm and color. You can also generate images or video clips—what matters is that it looks great. Use high quality, 16:9, about 30 seconds, and background music.",
+      "created_at": "Mon Sep 28 19:09:28 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2104649669842231296",
+          "url": "https://video.twimg.com/amplify_video/2104649669842231296/vid/avc1/1920x1080/jDYNfeFsvKoL7-Qa.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 251014,
+        "friends_count": 1739,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104649667850195123",
+      "text": "8/12｜Creative Montage：展示剪辑和编码能力的混剪\n\n素材丰富、不重复镜头，英文呈现，声音一直照顾到结尾，把重点放在后段更强的高潮。\n\n需要：可用的视频/图片素材、剪辑合成和音频。Opus / Sonnet 可编排镜头、转场与代码动效；若素材不够，再考虑接 Seedance 等工具补镜头，原 Prompt 没有强制要求生成视频。\n\n完整 Prompt：\nCreate an impressive montage that shows off your editing and coding abilities. Use rich, varied material without repeating shots, with polished English presentation and sound through the ending. Focus the edit on the stronger climax in the later part.",
+      "created_at": "Mon Sep 28 19:09:17 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2104649650330284032",
+          "url": "https://video.twimg.com/amplify_video/2104649650330284032/vid/avc1/1280x720/ZGdqOezFTqAv0C7v.mp4?tag=29",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 251014,
+        "friends_count": 1739,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104649290668773568",
+      "text": "Manus Alchemy 视频 Prompt 合集\n\nManus 2.0 里面带了 12 个创建视频的示例：每条一个视频，附完整 Prompt。它的产品页面点开任一示例，就能直接看视频、复制 Prompt。\n\n这些 Prompt 也可以交给 Opus 5.5 或 Sonnet 5.5，放在能执行代码、渲染导出、调用工具的 Agent 环境里使用。代码动效、素材剪辑、AI 生成镜头，需要的工具各不相同，下面逐条说明。配的视频均为 Manus 展示作品。\n\n① Motion Design Showreel：15 秒动效作品集。文字、图形和转场可用代码制作，音乐或音效可用现成素材或另接音频工具。\n\n完整 Prompt：\nMake a dynamic 15-second motion graphics video that shows what an incredible motion designer you are.",
+      "created_at": "Mon Sep 28 19:07:48 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2104649244648878080",
+          "url": "https://video.twimg.com/amplify_video/2104649244648878080/vid/avc1/1920x1080/hib-qzoH9tTQc_U6.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2104614931962232959",
+        "text": "Manus 发布 2.0：换了底层框架，新增视频剪辑和游戏开发环境，另推个人智能体 App“Cue”\n\nManus 今天发布 2.0 版本。这是它脱离 Meta、恢复独立运营后的第一次大更新：底层智能体框架换代，桌面端升级为 Manus Studio，新增视频剪辑和游戏开发两个专业环境，另外还推出了一个独立 App，叫 Cue，但是需要邀请码才能体验。\n\nManus 是一款通用 AI 智能体（Agent，能自己拆解任务、调用工具把活干完的 AI），2025 年 3 月走红。去年 12 月 Meta 宣布以约 20 亿美元收购，今年春天被中国监管部门通过外商投资安全审查叫停，双方随后拆分，9 月初 Manus 由创始团队重新独立运营。\n\n【底层：更省的框架，能一直在线的机器】\n\nCascade 是 Manus 自研的智能体框架（harness，包在大模型外面、负责调度工具和管理任务流程的那层系统）。它让项目一开始保持轻量，需要做视频、做网页时才加载对应的专业能力，避免每个任务都背着全套工具跑。官方数据是，在一项测试配置下，相比上一代，Token 消耗少 23.2%，完成时间短 28.2%，运行成本低 32%。Manus 按积分计费，成本降了，理论上同样的积分能跑更多任务，不过官方没说积分价格会不会跟着调。\n\n新增的云电脑（Cloud Computer）是一台可以单独购买的云端专属机器，给需要一直在线的项目用，比如多人游戏的服务器、全天候运行的自动化流程。笔记本合上，项目照样在线。\n\n自动化也升级了。以前的定时任务只能到点开工，现在还能由事件触发：来了新邮件、广告数据有波动、日历上有新安排、Slack 收到消息、Notion 页面更新，都能让 Manus 开始干活。用一句话告诉它盯什么、触发后做什么，流程它自己搭。\n\n【Manus Studio：生成完还能自己动手改】\n\nAI 生成视频最头疼的是：整体差不多了，只想换首歌，结果得改提示词整条重新生成。新的视频编辑器在生成初版后给你一条时间线，片段、图片、文字、动效、音频都是分开的素材，换背景音乐、把 AI 生成的产品镜头换成自己拍的，直接在时间线上替换。改完还能交回给 Manus，让它在你的修改基础上接着调。官方说它适合 30 到 60 秒的产品广告、带货短视频、数据动画、教程和 vlog，不需要剪辑经验。追求质量可以用 Alchemy 模式，由 Manus 当创意导演，视频生成和代码生成一起上。\n\n游戏开发环境从一个能玩的模板起步，同时调用视频、图像和代码模型。编辑面板里能边看游戏运行边改代码、换素材，想把某个村民的头发从棕色改成银色，选中他改掉就行，其他部分不受影响。做好后可以发布成网页，别人点链接就能玩。多人联机原本需要自己租服务器、部署、维护，现在点几下买一台云电脑，剩下的交给 Manus，支持竞速、对战和 3D 游戏。\n\n另一个新功能是远程控制：在手机上说一句话，让 Manus 去操作家里的电脑。比如打车路上让它从某个文件夹里找到最新的演示文稿发给你，手机上能实时看到桌面上的操作过程。这背后是电脑操控能力（Computer Use，AI 像人一样看屏幕、点鼠标、敲键盘），只在你授权的会话里运行，只能用你批准的文件、浏览器和应用。\n\n【Cue：给每个智能体一套自己的身份】\n\nCue 是独立 App，和 Manus 共用底层基础设施，面向个人生活场景。每个智能体都有自己的邮箱、手机号、钱包和一台电脑，可以发消息，在你设定的预算内付钱，替你接电话再把通话内容总结给你，多个智能体还能组队协作。官方举的例子是在餐厅扫桌上的二维码，让智能体替你点单或排队取号。\n\nManus 2.0 已在网页、桌面和手机端上线。Cue 上线了网页、桌面和安卓端，iOS 版还在等 App Store 审核，据报道目前采用邀请制抢先体验。这次更新面向海外用户，Manus 在公众号上表示，正在组建团队开发面向国内市场的产品。",
+        "created_at": "Mon Sep 28 16:51:16 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 251014,
+          "friends_count": 1739,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 36,
+          "reply_count": 7,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 251014,
+        "friends_count": 1739,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104646008294535211",
+      "text": "RT @ApoStructura: There are only two launches in history that put more payload mass in orbit than Starship Flight 14.\n\nAnd that’s with only…",
+      "created_at": "Mon Sep 28 18:54:45 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2104613497426301233",
+        "text": "There are only two launches in history that put more payload mass in orbit than Starship Flight 14.\n\nAnd that’s with only 26 Starlink satellites. Future launches will carry up to 60. https://t.co/vLuADLHrc8",
+        "created_at": "Mon Sep 28 16:45:34 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2104613493022355456",
+            "url": "https://pbs.twimg.com/media/HTUW0jkXcAAk4lO.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4375247427",
+          "name": "ApoStructura",
+          "screen_name": "ApoStructura",
+          "description": "Building @FlightAtlas, SpaceAtlas, VentureAtlas | Spaceflight, tech, economics\n\nhttps://t.co/bsRBfelVBE\nhttps://t.co/vlcrzMcfkN\nhttps://t.co/fFFd97vhpN",
+          "followers_count": 12147,
+          "friends_count": 875,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 113,
+          "favorite_count": 1229,
+          "reply_count": 80,
+          "quote_count": 7
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 111,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104645885338775840",
+      "text": "RT @AJamesMcCarthy: I set a camera really close to the launch pad to get this shot. It was a sound activated trigger since it wasn’t safe f…",
+      "created_at": "Mon Sep 28 18:54:16 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2104596891300253831",
+        "text": "I set a camera really close to the launch pad to get this shot. It was a sound activated trigger since it wasn’t safe for me to stand here. \n\nThat’s all 33 Raptor engines performing nominally as Starship heads to orbit for the first time. https://t.co/qNK27lk6WQ",
+        "created_at": "Mon Sep 28 15:39:35 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2104596863886229504",
+            "url": "https://pbs.twimg.com/media/HTUHsnNXAAAEePt.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2492039959",
+          "name": "Andrew McCarthy",
+          "screen_name": "AJamesMcCarthy",
+          "description": "Exploring the universe from a backyard in Arizona. Get my latest print 👇",
+          "followers_count": 484364,
+          "friends_count": 842,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 522,
+          "favorite_count": 6556,
+          "reply_count": 208,
+          "quote_count": 26
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 525,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104643807031783851",
+      "text": "RT @Starlink: Today’s Starlink payload will add up to 26 Terabits of capacity to the constellation.",
+      "created_at": "Mon Sep 28 18:46:00 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2104563241334747537",
+        "text": "Today’s Starlink payload will add up to 26 Terabits of capacity to the constellation.",
+        "created_at": "Mon Sep 28 13:25:52 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2104563035486499043",
+          "text": "Starship has begun deploying its payload of 26 @Starlink V3 satellites. This deployment sequence will take ~30 minutes https://t.co/ycIdAx5Lbe",
+          "created_at": "Mon Sep 28 13:25:03 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2104562900929056768",
+              "url": "https://video.twimg.com/amplify_video/2104562900929056768/vid/avc1/3840x2160/qWGkYm2x9pNjRgbz.mp4?tag=29",
+              "bitrate": 25128000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "34743251",
+            "name": "SpaceX",
+            "screen_name": "SpaceX",
+            "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+            "followers_count": 41920351,
+            "friends_count": 127,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1353,
+            "favorite_count": 10861,
+            "reply_count": 275,
+            "quote_count": 238
+          }
+        },
+        "user": {
+          "id": "1330170106501079041",
+          "name": "Starlink",
+          "screen_name": "Starlink",
+          "description": "Fast, affordable internet available all around the world. Engineered by @SpaceX",
+          "followers_count": 1818637,
+          "friends_count": 31,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 416,
+          "favorite_count": 3872,
+          "reply_count": 135,
+          "quote_count": 41
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 416,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104642472613949490",
+      "text": "RT @thesupermannx: Researchers proved AI has deleted every reason universities exist.\n\nHarvard University ran a controlled experiment pitti…",
+      "created_at": "Mon Sep 28 18:40:42 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2104519992532496810",
+        "text": "Researchers proved AI has deleted every reason universities exist.\n\nHarvard University ran a controlled experiment pitting a custom AI against their own top-tier classrooms.\n\nAnd the results are going to collapse the higher education bubble.\n\nThey took 194 undergraduates and split them up.\n\nOne group learned physics in one of Harvard’s best hands-on, active-learning physical classrooms. Group work. Instructor support. The premium university experience.\n\nThe other group went home and learned the exact same material with an AI tutor.\n\nThe AI didn't just win. It embarrassed the institution.\n\nStudents using the AI learned more than twice as much as the students in the elite Harvard classroom.\n\nThey scored 30% higher on the final assessment.\n\nAnd they did it in less time.\n\nLet that sink in.\n\nA piece of software sitting on a laptop outperformed a world-class faculty in one of the most elite learning environments on Earth.\n\nUniversities have always justified their exorbitant tuition with two things: access to elite knowledge and the physical classroom experience.\n\nThis study just proved both of those moats are gone.\n\nWhen software can teach you complex physics twice as well as a $60,000-a-year institution, the math of higher education breaks permanently.\n\nThe AI didn't just give the students answers. It used strict pedagogical guardrails. It guided. It questioned. It forced the students to do the cognitive work.\n\nIt offered perfect, one-to-one tutoring, personalized to the exact moment a student misunderstood a concept.\n\nThat level of attention is mathematically impossible to scale in a physical lecture hall.\n\nFor a thousand years, the university was the only place to get a premium education.\n\nNow, it’s the bottleneck.\n\nIf AI can double your learning speed for a fraction of the cost, what exactly are students taking on decades of debt to pay for?",
+        "created_at": "Mon Sep 28 10:34:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2104519911460798464",
+            "url": "https://pbs.twimg.com/media/HTTBtZFbgAANb2u.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2052949858252939264",
+          "name": "Superman",
+          "screen_name": "thesupermannx",
+          "description": "AI & Neuroscience",
+          "followers_count": 14773,
+          "friends_count": 17,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1811,
+          "favorite_count": 8226,
+          "reply_count": 652,
+          "quote_count": 420
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1811,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104642361645003002",
+      "text": "SpaceX is building massive infrastructure for the future",
+      "created_at": "Mon Sep 28 18:40:16 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2104551744713932971",
+        "text": "We are building the infrastructure of the future, from supercomputers to Terafab to Gigasat to a new Starbase in Louisiana https://t.co/hgKvnp5TVH",
+        "created_at": "Mon Sep 28 12:40:11 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2104551520511401984",
+            "url": "https://video.twimg.com/amplify_video/2104551520511401984/vid/avc1/3840x2160/6VPWPA8nChmCoC3M.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41920351,
+          "friends_count": 127,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 414,
+          "favorite_count": 4118,
+          "reply_count": 121,
+          "quote_count": 26
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 387,
+        "favorite_count": 3435,
+        "reply_count": 468,
+        "quote_count": 51
+      }
+    },
+    {
+      "id": "2104641143984034207",
+      "text": "RT @SpaceX: Our approach to Starship’s first orbital mission https://t.co/FPrEFQXweO",
+      "created_at": "Mon Sep 28 18:35:25 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2104549535573839873",
+          "url": "https://video.twimg.com/amplify_video/2104549535573839873/vid/avc1/3840x2160/nySKw9geArreIx0I.mp4?tag=29",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": {
+        "id": "2104549692914950442",
+        "text": "Our approach to Starship’s first orbital mission https://t.co/FPrEFQXweO",
+        "created_at": "Mon Sep 28 12:32:02 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2104549535573839873",
+            "url": "https://video.twimg.com/amplify_video/2104549535573839873/vid/avc1/3840x2160/nySKw9geArreIx0I.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41920351,
+          "friends_count": 127,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 396,
+          "favorite_count": 3998,
+          "reply_count": 111,
+          "quote_count": 25
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 396,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104640740399976477",
+      "text": "Starship landing",
+      "created_at": "Mon Sep 28 18:33:49 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2104601695711904180",
+        "text": "Splashdown confirmed. Congratulations to the entire SpaceX team on the first orbital flight of Starship! https://t.co/urjmiwnvNl",
+        "created_at": "Mon Sep 28 15:58:40 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2104601502752948225",
+            "url": "https://video.twimg.com/amplify_video/2104601502752948225/vid/avc1/3840x2160/GQ0Nh2aXYOk1um4f.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41920351,
+          "friends_count": 127,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2358,
+          "favorite_count": 19704,
+          "reply_count": 671,
+          "quote_count": 424
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 492,
+        "favorite_count": 5170,
+        "reply_count": 570,
+        "quote_count": 53
+      }
+    },
+    {
+      "id": "2104638801905955166",
+      "text": "Anthropic 发布 Claude Sonnet 5.5\n\nAnthropic 发布了 Claude Sonnet 5.5，这是 Claude 5.5 系列继 Opus 5.5 之后的第二个模型。和上一代 Sonnet 5 相比，它的输出速度快了 30% 以上，完成同样的任务最多能省 30% 的钱。\n\nClaude 目前对外开放的模型分四档：Fable 最强，往下依次是 Opus、Sonnet、Haiku，越往下越便宜。按 Anthropic 的定位，Fable 负责要跑好几个小时、横跨整个代码库的大项目，Opus 5.5 负责需要反复权衡的复杂工作，Sonnet 5.5 擅长范围明确的日常任务，比如修 Bug、写文档、做 PPT 和表格。Haiku 5.5 会在几周内发布。\n\n进步最大的是编程。在 Terminal-Bench 4.0（考察模型在命令行里完成多步骤专业任务的基准测试）上，Sonnet 5.5 得分 70.6%，Sonnet 5 只有 10.3%，Opus 5.5 的最好成绩是 66.4%。在 CursorBench（题目来自真实的 Cursor 编程会话）上，它和 Opus 5.5 只差两分左右。早期测试者还发现，它更常把多个工具调用合并成一步完成，步骤少了，花费也跟着降了。\n\n办公类任务也追得很近。GDPval-AA 用 44 个职业、9 大行业的真实工作任务给模型打分，Sonnet 5.5 拿到 1844 分，Opus 5.5 是 1846 分，Sonnet 5 是 1449 分。Anthropic 做过一个内部测试：把一家上市公司的季度财报材料、电话会议记录和一份 PPT 模板交给它，让它做一份 10 页的经营回顾。两位专家看完初稿，认为可以直接发出去。它也是第一个只看截图就通关《宝可梦 红》的 Sonnet 模型。\n\n价格和 Sonnet 5 一样，每百万输入 Token 2 美元，每百万输出 Token 10 美元，是 Opus 5.5 的一半。省钱靠的是干同样的活用的 Token 更少。\n\nClaude 可以调“思考力度”（effort），从 Low 到 Max 共五档，档位越高想得越久，花钱也越多。Claude App 和 Claude Code 默认用 Medium 档。在 Terminal-Bench 上，Sonnet 5.5 用 Medium 档，每个任务约 0.83 美元，得分 28.8%；Sonnet 5 开到 Max 档，每个任务花 11.62 美元，只拿到 10.3%。日常用 Claude 的人不改任何设置，拿到的就是一个更能干、回得更快的模型。\n\nAnthropic 也提醒，跑分只反映了一部分能力。在他们自己和外部测试者的使用中，碰到开放式、需要持续判断的复杂工作，Opus 5.5 仍然明显更强。\n\n安全上有两处变化。Sonnet 5.5 的网络安全能力和 Opus 5 相当，所以它成了第一个带网络安全防护的 Sonnet 模型：日常查 Bug、修 Bug 不受影响，高风险的网络安全请求会退回给 Sonnet 5 处理，用户能看到切换。它还是第一个带防蒸馏机制的 Sonnet。蒸馏指有人用成千上万个假账号批量调用模型，拿输出去训练自己的模型。为此，Claude 的思考内容会和生成它的账号绑定，在 Claude Code 里中途切换账号的用户会受影响。\n\nSonnet 5.5 已在所有平台上线，包括 AWS、Google Cloud 和 Microsoft Azure，API 模型名是 claude-sonnet-5-5。之前关闭思考功能调用 Sonnet 的开发者，迁移前需要改用新的 between_tools 设置。",
+      "created_at": "Mon Sep 28 18:26:07 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2104633115620823187",
+        "text": "Introducing Claude Sonnet 5.5, the second model in the Claude 5.5 family.\n\nIt’s a clear upgrade over Sonnet 5, runs more than 30% faster, and costs up to 30% less for most work. https://t.co/UvXD8mDTF1",
+        "created_at": "Mon Sep 28 18:03:31 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2104629272543399936",
+            "url": "https://video.twimg.com/amplify_video/2104629272543399936/vid/avc1/1920x1080/psIdtRJzfm_fmopA.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1943306828697550848",
+          "name": "Claude",
+          "screen_name": "claudeai",
+          "description": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+          "followers_count": 1830186,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1755,
+          "favorite_count": 22202,
+          "reply_count": 888,
+          "quote_count": 1302
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 251014,
+        "friends_count": 1739,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 17,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104638529192014093",
+      "text": "RT @NASAAdmin: Congrats @SpaceX! Gorgeous launch, getting Ship to orbit and managing every step in a safe, responsible, and especially insp…",
+      "created_at": "Mon Sep 28 18:25:02 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2104574149800726532",
+        "text": "Congrats @SpaceX! Gorgeous launch, getting Ship to orbit and managing every step in a safe, responsible, and especially inspirational way. @NASA, along with the rest of the interested public, is excited to help where we can and for Starship missions to become routine!",
+        "created_at": "Mon Sep 28 14:09:13 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2104560708969259344",
+          "text": "Starship performs its orbital insertion burn and enters orbit of Earth for the first time https://t.co/LodrSTnEnl",
+          "created_at": "Mon Sep 28 13:15:48 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2104560614626766848",
+              "url": "https://video.twimg.com/amplify_video/2104560614626766848/vid/avc1/3840x2160/WMLBYlBCU0AQ5vn3.mp4?tag=29",
+              "bitrate": 25128000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "34743251",
+            "name": "SpaceX",
+            "screen_name": "SpaceX",
+            "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+            "followers_count": 41920351,
+            "friends_count": 127,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 3472,
+            "favorite_count": 23576,
+            "reply_count": 852,
+            "quote_count": 810
+          }
+        },
+        "user": {
+          "id": "2000593641480605696",
+          "name": "NASA Administrator Jared Isaacman",
+          "screen_name": "NASAAdmin",
+          "description": "Serving President Donald J. Trump as the 15th @NASA Administrator | Leading the next Golden Age of space discovery 🚀",
+          "followers_count": 208165,
+          "friends_count": 97,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1168,
+          "favorite_count": 12845,
+          "reply_count": 206,
+          "quote_count": 42
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1168,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104638475404218840",
+      "text": "RT @SpaceX: Super Heavy has splashed down in the Gulf of America! https://t.co/pEIjC2Aae1",
+      "created_at": "Mon Sep 28 18:24:49 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2104555857350463488",
+          "url": "https://video.twimg.com/amplify_video/2104555857350463488/vid/avc1/3840x2160/TsKqI1eY6aI3Om_M.mp4?tag=29",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": {
+        "id": "2104555957569077633",
+        "text": "Super Heavy has splashed down in the Gulf of America! https://t.co/pEIjC2Aae1",
+        "created_at": "Mon Sep 28 12:56:55 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2104555857350463488",
+            "url": "https://video.twimg.com/amplify_video/2104555857350463488/vid/avc1/3840x2160/TsKqI1eY6aI3Om_M.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41920351,
+          "friends_count": 127,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1011,
+          "favorite_count": 10932,
+          "reply_count": 336,
+          "quote_count": 62
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1011,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104635767951884451",
+      "text": "邀请码 https://t.co/4lvU9c9Yef",
+      "created_at": "Mon Sep 28 18:14:03 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2104626389316202774",
+        "text": "@dotey 邀请码就是 meetcue",
+        "created_at": "Mon Sep 28 17:36:47 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1660062196603277314",
+          "name": "虎小象",
+          "screen_name": "hx831126",
+          "description": "不过是 Prompt Kiddide 罢了",
+          "followers_count": 9579,
+          "friends_count": 81,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 251014,
+        "friends_count": 1739,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104614931962232959",
+      "text": "Manus 发布 2.0：换了底层框架，新增视频剪辑和游戏开发环境，另推个人智能体 App“Cue”\n\nManus 今天发布 2.0 版本。这是它脱离 Meta、恢复独立运营后的第一次大更新：底层智能体框架换代，桌面端升级为 Manus Studio，新增视频剪辑和游戏开发两个专业环境，另外还推出了一个独立 App，叫 Cue，但是需要邀请码才能体验。\n\nManus 是一款通用 AI 智能体（Agent，能自己拆解任务、调用工具把活干完的 AI），2025 年 3 月走红。去年 12 月 Meta 宣布以约 20 亿美元收购，今年春天被中国监管部门通过外商投资安全审查叫停，双方随后拆分，9 月初 Manus 由创始团队重新独立运营。\n\n【底层：更省的框架，能一直在线的机器】\n\nCascade 是 Manus 自研的智能体框架（harness，包在大模型外面、负责调度工具和管理任务流程的那层系统）。它让项目一开始保持轻量，需要做视频、做网页时才加载对应的专业能力，避免每个任务都背着全套工具跑。官方数据是，在一项测试配置下，相比上一代，Token 消耗少 23.2%，完成时间短 28.2%，运行成本低 32%。Manus 按积分计费，成本降了，理论上同样的积分能跑更多任务，不过官方没说积分价格会不会跟着调。\n\n新增的云电脑（Cloud Computer）是一台可以单独购买的云端专属机器，给需要一直在线的项目用，比如多人游戏的服务器、全天候运行的自动化流程。笔记本合上，项目照样在线。\n\n自动化也升级了。以前的定时任务只能到点开工，现在还能由事件触发：来了新邮件、广告数据有波动、日历上有新安排、Slack 收到消息、Notion 页面更新，都能让 Manus 开始干活。用一句话告诉它盯什么、触发后做什么，流程它自己搭。\n\n【Manus Studio：生成完还能自己动手改】\n\nAI 生成视频最头疼的是：整体差不多了，只想换首歌，结果得改提示词整条重新生成。新的视频编辑器在生成初版后给你一条时间线，片段、图片、文字、动效、音频都是分开的素材，换背景音乐、把 AI 生成的产品镜头换成自己拍的，直接在时间线上替换。改完还能交回给 Manus，让它在你的修改基础上接着调。官方说它适合 30 到 60 秒的产品广告、带货短视频、数据动画、教程和 vlog，不需要剪辑经验。追求质量可以用 Alchemy 模式，由 Manus 当创意导演，视频生成和代码生成一起上。\n\n游戏开发环境从一个能玩的模板起步，同时调用视频、图像和代码模型。编辑面板里能边看游戏运行边改代码、换素材，想把某个村民的头发从棕色改成银色，选中他改掉就行，其他部分不受影响。做好后可以发布成网页，别人点链接就能玩。多人联机原本需要自己租服务器、部署、维护，现在点几下买一台云电脑，剩下的交给 Manus，支持竞速、对战和 3D 游戏。\n\n另一个新功能是远程控制：在手机上说一句话，让 Manus 去操作家里的电脑。比如打车路上让它从某个文件夹里找到最新的演示文稿发给你，手机上能实时看到桌面上的操作过程。这背后是电脑操控能力（Computer Use，AI 像人一样看屏幕、点鼠标、敲键盘），只在你授权的会话里运行，只能用你批准的文件、浏览器和应用。\n\n【Cue：给每个智能体一套自己的身份】\n\nCue 是独立 App，和 Manus 共用底层基础设施，面向个人生活场景。每个智能体都有自己的邮箱、手机号、钱包和一台电脑，可以发消息，在你设定的预算内付钱，替你接电话再把通话内容总结给你，多个智能体还能组队协作。官方举的例子是在餐厅扫桌上的二维码，让智能体替你点单或排队取号。\n\nManus 2.0 已在网页、桌面和手机端上线。Cue 上线了网页、桌面和安卓端，iOS 版还在等 App Store 审核，据报道目前采用邀请制抢先体验。这次更新面向海外用户，Manus 在公众号上表示，正在组建团队开发面向国内市场的产品。",
+      "created_at": "Mon Sep 28 16:51:16 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2104592659142869352",
+        "text": "Introducing Manus 2.0 https://t.co/Hy4TI2a71m",
+        "created_at": "Mon Sep 28 15:22:46 +0000 2026",
+        "lang": "in",
+        "media": [
+          {
+            "type": "video",
+            "id": "2104592111224176640",
+            "url": "https://video.twimg.com/amplify_video/2104592111224176640/vid/avc1/1920x1080/hlWh6JzN05OBMamX.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1897259968958730240",
+          "name": "Manus",
+          "screen_name": "ManusAI",
+          "description": "Manus is the general AI agent that bridges minds and actions: it doesn't just think, it delivers results.",
+          "followers_count": 251910,
+          "friends_count": 33,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 324,
+          "favorite_count": 3745,
+          "reply_count": 183,
+          "quote_count": 284
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 251014,
+        "friends_count": 1739,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 36,
+        "reply_count": 7,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2104611961367388251",
+      "text": "RT @SpaceX: Starship performs its orbital insertion burn and enters orbit of Earth for the first time https://t.co/LodrSTnEnl",
+      "created_at": "Mon Sep 28 16:39:28 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2104560614626766848",
+          "url": "https://video.twimg.com/amplify_video/2104560614626766848/vid/avc1/3840x2160/WMLBYlBCU0AQ5vn3.mp4?tag=29",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": {
+        "id": "2104560708969259344",
+        "text": "Starship performs its orbital insertion burn and enters orbit of Earth for the first time https://t.co/LodrSTnEnl",
+        "created_at": "Mon Sep 28 13:15:48 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2104560614626766848",
+            "url": "https://video.twimg.com/amplify_video/2104560614626766848/vid/avc1/3840x2160/WMLBYlBCU0AQ5vn3.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41920351,
+          "friends_count": 127,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3472,
+          "favorite_count": 23576,
+          "reply_count": 852,
+          "quote_count": 810
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3475,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104611238894518393",
+      "text": "RT @SawyerMerritt: SpaceX's Starship rocket has successfully reached orbit and deployed its V3 Starlink satellites into orbit for the first…",
+      "created_at": "Mon Sep 28 16:36:35 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2104563930752319513",
+        "text": "SpaceX's Starship rocket has successfully reached orbit and deployed its V3 Starlink satellites into orbit for the first time, officially making this Starship's first revenue-generating flight, a major milestone for the company!\n\nCongrats @SpaceX team! Incredible achievement 🚀 https://t.co/yhFQR7xpHY",
+        "created_at": "Mon Sep 28 13:28:36 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2104563826783920128",
+            "url": "https://video.twimg.com/amplify_video/2104563826783920128/vid/avc1/1054x880/1s_LiQ3v_bz5KQAK.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EVs/space/tech. Bringing you the latest news in a single, easy-to-read feed. $TSLA & $SPCX investor, Model Y owner.",
+          "followers_count": 1137924,
+          "friends_count": 496,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2444,
+          "favorite_count": 20452,
+          "reply_count": 438,
+          "quote_count": 232
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2445,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104607183044235525",
+      "text": "恰恰相反，Claude Design 对于 Opus 5.5 来说功不可没，它的能力都内化进模型了，Claude Design 应该还帮助收集了不少优质的用户数据。\n\n在用 Opus 5.5 做视频的时候，有时候能看到 Claude Design 中 Animated Video 的影子。\n\n这也是大多数 AI 产品的宿命，里面的经验和数据都被内化进了模型",
+      "created_at": "Mon Sep 28 16:20:28 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2104470511988473964",
+        "text": "我觉得 Claude Design Team 肯定也对于 Opus 5.5 的毁天灭地的效果感到很绝望",
+        "created_at": "Mon Sep 28 07:17:23 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1122177599940096000",
+          "name": "WeZZard",
+          "screen_name": "realWeZZard",
+          "description": "The crazy one.\nex-ByteDance infra, ex Industrial Designer\nMy skills https://t.co/y99vQ4Rkgz\n4*DGX Spark, 8*T10, 2*ChatGPT Pro, 2*Claude Max",
+          "followers_count": 4908,
+          "friends_count": 883,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 45,
+          "reply_count": 33,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 251014,
+        "friends_count": 1739,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 48,
+        "reply_count": 8,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2104594943054340098",
+      "text": "先把当前代码的结果写成详细的功能文档，然后让最新的模型基于功能文档去重写是个好方法。\n\n我也常用，有个要注意的问题就是不要指望它写完了就是稳定的，要花一点时间才能稳定下来，验证的时间是少不了的。\n\n以前的单元测试代码不一定能用也不建议用，因为代码不一样了单元测试的价值不大。\n\n但以前的E2E（End to end，端到端，黑盒直接测试最终结果）测试是有用的，能保证主要流程跑通，最多稍作修改。\n\n所以重写之前，先让 AI 补一些 E2E 测试，覆盖主要流程，重写的时候可以验证，写好了以后改功能都可以跑一遍。\n\n但是要注意的是 E2E 测试没有那么稳定，有时候会受环境影响而导致失败；另一个就是速度慢，跑一遍要花一点时间（取决于你功能多少）。\n\n所以通常不会覆盖太完整，只是覆盖主要流程，并且不会跑的太频繁。\n\nWeb E2E 最成熟，Playwright 这样的框架就足够好了，其他的我不太熟。",
+      "created_at": "Mon Sep 28 15:31:50 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2104129415433363628",
+        "text": "比重构屎山可能更高效的方式：\n直接将源项目库蒸馏成功能文档，然后直接用最新的模型原地重写。。。🤦‍♂️🤦‍♂️🤦‍♂️ https://t.co/8QNcqkC2y6",
+        "created_at": "Sun Sep 27 08:42:00 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2104128868290527232",
+            "url": "https://pbs.twimg.com/media/HTNeDrwaAAA2GB3.png"
+          },
+          {
+            "type": "photo",
+            "id": "2104129037870530560",
+            "url": "https://pbs.twimg.com/media/HTNeNjfbgAA74S2.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1492195583699951620",
+          "name": "数字生命卡兹克",
+          "screen_name": "Khazix0918",
+          "description": "愿我们永远对世界保持好奇。\n公众号：数字生命卡兹克",
+          "followers_count": 81878,
+          "friends_count": 193,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 60,
+          "favorite_count": 771,
+          "reply_count": 168,
+          "quote_count": 22
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 251014,
+        "friends_count": 1739,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 77,
+        "reply_count": 11,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104573602146267294",
+      "text": "RT @SpaceX: Starship’s Raptor engines ignite during hot-staging separation. Super Heavy boosted back towards its splashdown site in the Gul…",
+      "created_at": "Mon Sep 28 14:07:02 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2104555009127956836",
+        "text": "Starship’s Raptor engines ignite during hot-staging separation. Super Heavy boosted back towards its splashdown site in the Gulf of America https://t.co/0DcBz1wayt",
+        "created_at": "Mon Sep 28 12:53:09 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2104554844618919936",
+            "url": "https://video.twimg.com/amplify_video/2104554844618919936/vid/avc1/3840x2160/1ATbVrCN_ATQuq2c.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41920351,
+          "friends_count": 127,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1059,
+          "favorite_count": 8057,
+          "reply_count": 254,
+          "quote_count": 71
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1059,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104573403973759123",
+      "text": "RT @SpaceX: Liftoff of Starship! https://t.co/40D8bXSkr2",
+      "created_at": "Mon Sep 28 14:06:15 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2104554150080004096",
+          "url": "https://video.twimg.com/amplify_video/2104554150080004096/vid/avc1/3840x2160/3Cw5xqKfytXkg3KW.mp4?tag=29",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": {
+        "id": "2104554235924815900",
+        "text": "Liftoff of Starship! https://t.co/40D8bXSkr2",
+        "created_at": "Mon Sep 28 12:50:05 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2104554150080004096",
+            "url": "https://video.twimg.com/amplify_video/2104554150080004096/vid/avc1/3840x2160/3Cw5xqKfytXkg3KW.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41920351,
+          "friends_count": 127,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3646,
+          "favorite_count": 24355,
+          "reply_count": 617,
+          "quote_count": 555
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3644,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104572572067099102",
+      "text": "All 26 Starlink V3 operational satellites deployed and operating nominally",
+      "created_at": "Mon Sep 28 14:02:56 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2104571161254474020",
+        "text": "The @Starlink team has made contact with all 26 satellites",
+        "created_at": "Mon Sep 28 13:57:20 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41920351,
+          "friends_count": 127,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1048,
+          "favorite_count": 10678,
+          "reply_count": 266,
+          "quote_count": 132
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2940,
+        "favorite_count": 34452,
+        "reply_count": 1834,
+        "quote_count": 229
+      }
+    },
+    {
+      "id": "2104572192247984493",
+      "text": "First orbital flight of Starship successful!",
+      "created_at": "Mon Sep 28 14:01:26 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2104560708969259344",
+        "text": "Starship performs its orbital insertion burn and enters orbit of Earth for the first time https://t.co/LodrSTnEnl",
+        "created_at": "Mon Sep 28 13:15:48 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2104560614626766848",
+            "url": "https://video.twimg.com/amplify_video/2104560614626766848/vid/avc1/3840x2160/WMLBYlBCU0AQ5vn3.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41920351,
+          "friends_count": 127,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3472,
+          "favorite_count": 23576,
+          "reply_count": 852,
+          "quote_count": 810
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4737,
+        "favorite_count": 48374,
+        "reply_count": 2681,
+        "quote_count": 446
+      }
+    },
+    {
+      "id": "2104545383640629321",
+      "text": "RT @SpaceX: Watch Starship Flight 14 https://t.co/uQKQvgbrch",
+      "created_at": "Mon Sep 28 12:14:54 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2104544946665804216",
+        "text": "Watch Starship Flight 14 https://t.co/uQKQvgbrch",
+        "created_at": "Mon Sep 28 12:13:10 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41920351,
+          "friends_count": 127,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7617,
+          "favorite_count": 54609,
+          "reply_count": 2813,
+          "quote_count": 1134
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 7616,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104545337478406579",
+      "text": "Starship Flight 14 launches in ~30 mins\nhttps://t.co/aJL2lNl2Xt",
+      "created_at": "Mon Sep 28 12:14:43 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2125,
+        "favorite_count": 15318,
+        "reply_count": 1543,
+        "quote_count": 363
+      }
+    },
+    {
+      "id": "2104544189824303323",
+      "text": "RT @Erdayastronaut: WE'RE LIVE to watch the FIRST ORBITAL STARSHIP!!! LET'S GO!!! https://t.co/pgurvGzTnf",
+      "created_at": "Mon Sep 28 12:10:10 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2104544004473856339",
+        "text": "WE'RE LIVE to watch the FIRST ORBITAL STARSHIP!!! LET'S GO!!! https://t.co/pgurvGzTnf",
+        "created_at": "Mon Sep 28 12:09:25 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3167257102",
+          "name": "Everyday Astronaut",
+          "screen_name": "Erdayastronaut",
+          "description": "Professional rocket orientation specialist, explainer of flamey stuff and rocket chaser. Bringing space down to Earth for everyday people 🚀",
+          "followers_count": 2068520,
+          "friends_count": 647,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 223,
+          "favorite_count": 1824,
+          "reply_count": 94,
+          "quote_count": 18
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 223,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2104541062136287336",
+      "text": "RT @JensenHuang: Today, with over 100 industry partners, we introduced the NVIDIA Open Agent Safety Platform, bringing together OpenShell a…",
+      "created_at": "Mon Sep 28 11:57:44 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2104499465055023424",
+        "text": "Today, with over 100 industry partners, we introduced the NVIDIA Open Agent Safety Platform, bringing together OpenShell and Sentry.\n\nArtificial intelligence is extraordinary technology that will advance discovery, productivity, security, health, and prosperity for generations to come.\n\nBut its full promise can only be realized when people have confidence that AI is being built to be safe and deployed with wisdom and responsibility.\n\nThis is bigger than a single product. It's the beginning of an open ecosystem to build the trust layer for safe agent systems.\n\nTogether, we are building the foundation of the AI economy.\n\nTrust and innovation are not in conflict. Safety is how trust is earned. We must build not only the most capable AI, but the most trusted AI, so that this extraordinary technology can realize its enormous promise for the world. https://t.co/ugYWQ1MyRi",
+        "created_at": "Mon Sep 28 09:12:26 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2104498544824700929",
+            "url": "https://pbs.twimg.com/media/HTSuRsKaUAE1VGz.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2070631956824698880",
+          "name": "Jensen Huang",
+          "screen_name": "JensenHuang",
+          "description": "Founder and CEO of NVIDIA.",
+          "followers_count": 1100046,
+          "friends_count": 54,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3082,
+          "favorite_count": 20805,
+          "reply_count": 1202,
+          "quote_count": 1039
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241706611,
+        "friends_count": 1412,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3084,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2104459292938035231",
       "text": "RT @threeaus: 之前不小心把 Opus 5.5 做的这个纪录片删掉了，重新传一下。\n\n没想到这部片子在小🍠上收到了相当不错的反馈，甚至还因为这部小片，已经收到了北京某大学国庆期间讲座的邀请。\n\n这是关于《药师佛佛会图》的一个记录短片\n\n事情是这样的：… https:…",
@@ -5198,6 +6672,31 @@
         "favorite_count": 45,
         "reply_count": 1,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2103752510594797945",
+      "text": "Source-linked guide to 1,000+ videos people made with Claude Opus 5.5: what they're about, how they look, how the frames were made.\n\nhttps://t.co/lKHGYXYTe9",
+      "created_at": "Sat Sep 26 07:44:19 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 251014,
+        "friends_count": 1739,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 19,
+        "favorite_count": 124,
+        "reply_count": 3,
+        "quote_count": 3
       }
     },
     {

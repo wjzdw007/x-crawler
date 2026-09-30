@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 251387,
+    "followers_count": 251416,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260929",
-  "last_updated": "2026-09-29T20:25:48.414934",
-  "tweet_count": 7,
+  "last_updated": "2026-09-30T01:00:22.421075",
+  "tweet_count": 12,
   "tweets": [
     {
       "id": "2104738433855787398",
@@ -327,6 +327,218 @@
         "favorite_count": 15,
         "reply_count": 1,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2105035958831718416",
+      "text": "2026 年 9 月 29 日，OpenAI 在旧金山 Fort Mason 办了今年的开发者大会 DevDay。主讲是 CEO Sam Altman。其他几位上台的人都在做这些产品。产品团队的 Holly 演示了新产品 Dots。后训练（模型预训练之后做对齐和能力调优的阶段）研究负责人 Tejal 讲了模型怎么反过来帮 OpenAI 做研究。Codex 的演示由 Romain Huet 来做，他在 OpenAI 负责开发者体验，去年 DevDay 主题演讲里的 Codex 演示也是他做的。整场演讲分三块：面向用户的常驻智能体 Dots 和协作空间 ChatGPT Space，给开发者的新模型和新工具，以及帮开发者做分发、赚钱的渠道。\n\n1. Dots：一直在线、会主动干活的智能体\n\nSam 把 Dots 比作电影里那种一直在身边帮忙的 AI 助手。他认为订餐厅、买机票这类代办虽然有用，但和这项技术能做的事比起来太小了。他想要的 AI 知道正在发生什么，也知道你在意什么，不用你事事交代。\n\nDots 是常驻在线的智能体（Agent），有自己的云端电脑和浏览器，能写代码、跑测试。它的权限跟着用户走，能直接用用户已经在 ChatGPT 里连好的插件，覆盖 4000 多个应用。除了在 ChatGPT 里对话，之后还可以给它发短信、打电话。目前每人先有一个 Dot，以后可以配一整组。Dots 跑在 本月早些时候发布的 GPT-6 Astra 上，Sam 称它是 OpenAI 对齐做得最好的模型。用户可以限定 Dot 能用哪些应用、能不能操作电脑，也能给它的各类操作写自定义指令，愿意交出多少责任就放多少权。\n\nSam 说，他自己的 Dot 每天早上会把夜里进来的消息过一遍，挑出紧急的提醒他。他说这让他拿回了一部分注意力，没那么离不开手机了。他还举了一个更重的例子：把应用从一个即将停用的旧 API 上迁走。这个 API 可能散落在代码库各处，改了哪里会连带弄坏什么，事先看不出来。Dot 可以追踪依赖关系，找出所有要改的地方，写代码、跑测试，最后把 PR（代码合并请求）交给团队审。他让听众想想，过去做这件事要几个人、花多久。\n\n开场视频里，用户把自己的 Dot 改名叫 Alfred。Alfred 和另一个 Dot 帮用户上线网站，改董事会材料，在婚礼蛋糕商家取消后找好备选。它们还发现财务会和女儿的演出撞了期，提出改时间。每件事都是 Dot 推进到需要人确认的地方，再由人拍板。\n\n2. ChatGPT Space：人和智能体一起用的工作区\n\nSam 认为，现有的生产力软件几乎都没考虑过人和 AI 一起干活。ChatGPT Space 以页面为单位，可以在里面写计划、做调研、生成图片和数据。页面和文件像网盘一样放在同一个空间里。Dot 能直接在页面上工作，在评论里 @ 它，它就会接活。页面本身也能带指令，比如“每天去看 API 平台的 Slack 频道，把发现更新到这里”。之后 Space 里还会加入演示文稿，格式做成智能体方便读写的样子，团队成员可以和各自的 Dot 一起改。\n\n在 Holly 的演示里，页面用斜杠命令就能插入交互图表、表格和可运行的原型。她 @ 自己的 Dot（名叫 Dotty），让它把一组数据改成柱状图。图表可以按反馈类型筛选，Dotty 每小时刷新一次。她还让 Dotty 把“某位工程师在我 Slack 私信里提过的新手引导数据”补进 FAQ。Dotty 能看到她的上下文，所以这种模糊的指代也找得到。\n\n3. OpenAI 内部怎么用 Dots\n\nHolly 用一个虚构的歌单应用 Blossom Music，模拟发布前一天的状况。早上 Dotty 已经做了几件事：发现发布评审会提前，改好了日历；看完前一晚测试用户的反馈；注意到设计团队临时改了首页，把新设计发给她。她让 Dotty 直接把这个设计做出来。Dotty 调用她笔记本上的 Codex 构建应用，在 iPhone 模拟器里跑起来，再提交 PR。现场的语音演示卡住了，Dotty 一直回复“还在查”。Codex 线程也报过一次错，她重试后才继续下去。\n\n她说，Dots 真正改变 OpenAI 工作方式的地方在 Slack。Dots 在公司 Slack 里有自己的身份，员工就开始把它们当作代理人。被同事 @ 到的零碎请求，直接转给自己的 Dot 处理。建群时，大家从一开始就把各自的 Dot 拉进来，Dot 带回结果时所有人都能看到。\n\n工程师走得更远。有人在反馈频道贴出会话 ID 和一个用户 bug，某位工程师的 Dot 就会接手排查，提 PR 修复。她说这是真实情况：工程师们的 Dots 每天这样修掉几十个 bug，Dots 这个产品本身有很多部分就是 Dots 写的。\n\n4. 上线范围和企业用的 Specialist Dots\n\nDots 和 Space 当天向 ChatGPT Pro、Business Premium 和 Enterprise 用户开放。Dot 包含在套餐里，和它的对话不占用额度。\n\n企业客户还可以预览 Specialist Dots。这是由公司统一设置、供整个团队使用的虚拟同事，负责会计、市场、法务这类工作量大的事。公司给它目标和背景，审核它的产出，给它反馈，反馈在全公司共享。OpenAI 也在和微软合作，把 Specialist Dots 接入 Agent 365（微软用来管理企业智能体的工具），企业可以用已经在用的微软工具来管理它们。\n\n5. 新模型：更便宜的 GPT-6.1 Sol，更快的 UltraFast\n\nAstra 发布这几周，用户的要求集中在两点：更便宜，更快。GPT-6.1 Sol（转录稿误作 Soul）的能力接近 Astra，价格是它的五分之一。缓存输入（重复发送、已被缓存的上下文）比标准输入便宜 95%。智能体需要反复读同一批上下文、长时间迭代，这对它们尤其省钱。Sam 说 Sol 在某些方面比 Astra 还聪明，定位是开发者的日常主力模型。\n\nUltraFast 是新的速度档，API、ChatGPT 和 Codex 里都能用。原有的 Fast 档是两倍速度、两倍价格；UltraFast 是八倍速度、六倍价格，每秒 300 个 Token。它现在可以配合 Astra 用，之后也会支持 Sol。现场让两个模型用同一个提示词，做一个 DevDay 配色的火箭。UltraFast 的火箭已经升空时，标准速度的还没做完。\n\n订阅也跟着调整。新推出的 500 美元档 Pro 订阅叫 Pro 500，额度最高，是 Plus 的 25 倍。它可以在 ChatGPT 和 Codex 里用 UltraFast，还能通过“用 ChatGPT 登录”在合作方的应用里使用。Pro 200 重新开放，继续提供所有前沿模型。\n\n另外预览了 Decisions API。它给 Luna 模型一组预先定义好的选项，让模型从中选一个，比如给请求分流、给图片分类、决定智能体下一步做什么。任务收窄成选择题之后，响应时间可以压到一秒以内，同时保留图像理解、多语言和安全防护。Romain 后来补充说，做机器人的朋友看中的是它能处理视觉输入：机器人可以根据看到的东西，近乎实时地快速行动。\n\n6. 模型开始帮 OpenAI 做研究\n\nSam 提到，去年这个时候，他和 Jakob 在一次直播里预测，一年内会出现第一个“AI 研究实习生”，当时几乎没人相信。几周前 OpenAI 宣布达成了这个目标：有了一个能接手定义清晰的研究任务的系统，这类任务原本要熟练的研究员花大量时间和精力。\n\nTejal 的方向是电脑操作（computer use，让模型像人一样操作桌面和浏览器）。她举了两个例子。\n\n第一个是让模型优化电脑操作的运行框架（harness，包在模型外面、负责调用工具和管理步骤的代码）。模型在循环里持续寻找能同时降低延迟、提升效果的改动，团队把找到的改进合进生产环境的框架，并用于后训练。结果是延迟改善了两倍以上，已经上线。\n\n第二个是模型帮忙改进了监控和拒绝训练，让 Astra 在不安全的场景里更会拒绝。Astra 在电脑操作压力测试上因此达到业内领先，操作时出错更少，也更贴合用户的本意。\n\n她给出了几项内部数据。今年夏天之后，研究工作消耗的 Token 量急剧上升。1 月时，模型能做好 15 分钟以内的短任务，需要一天以上的任务大多会失败；到 7 月，超过三分之一的一天量级研究任务，模型能在无人干预下完成。她还提到，Astra 这类模型已经帮忙解决了 100 多个悬而未决几十年的数学问题，也在参与针对耐药感染的新抗生素、古代语言研究、可再生能源和工业机器人等方向的工作。\n\n7. 给开发者的底层工具\n\nSam 说，OpenAI 想让开发者用上自己内部用的东西。\n\n第一件是 Codex 的运行框架。它同时支撑着 Codex、ChatGPT Work 和 Dots，目标是用最少的 Token、最快拿到准确结果，现在已经开源。第二件是 Codex 完全上云：在手机上开始的任务，可以在浏览器或桌面端接着做，合上笔记本任务也不会中断。\n\n云端能力带来了 Codex Security Cloud。它在云端环境里持续寻找漏洞，并准备好验证过的修复方案供人审核，这次新增了自动去重、定时扫描和新界面。Sam 说这是为了给防守方更好的工具，因为“我们看得到接下来会发生什么”。\n\n新的 Agents API 进入公开测试。它包含运行框架、托管、记忆、多智能体控制等功能，是 Codex 和 Dots 用的同一套技术，也加入了电脑操作能力。现场的例子是一个网站测试智能体，会自己打开浏览器、点击页面、测试流程。基础设施方面，OpenAI 和 AWS 合作推出由 OpenAI 驱动的 Bedrock（AWS 的托管 AI 服务）托管智能体，AWS 客户可以直接使用 OpenAI 的前沿模型、Codex 和 ChatGPT Work。\n\n隐私方面预览了 OpenAI Private Intelligence。其中的零数据留存（ZDR）配合私有安全处理，可以在不把用户内容存到 OpenAI 服务器的情况下做安全检测；私有推理则把隐私保护延伸到推理阶段。Sam 说这套方案是和最大的一批客户一起设计的，目的是让他们能把模型用在最敏感的工作上。\n\n性能方面，Responses API 一年里增长了 100 倍，可靠性保持在 99% 以上。首个 Token 的等待时间缩短了 45%，工具调用和工作流提速 30% 以上。\n\n8. Romain 的 Codex 演示\n\n演示从手机上的 Codex 开始。Romain 人还在会场外，让 Codex 替他跟观众打招呼、讲一个会场的冷知识。接着他用几张会场照片生成的 3D 场景演示 UltraFast，一边说一边改：把小人放到座位上，把直播画面投到场景里的大屏幕上。现场语音没连上，他改成了打字。\n\nCodex 命令行工具（CLI）这次全面翻新。他让 UltraFast 写一个应用，从观众里随机抽三个人送明年的门票，几秒就写完；改成抽六个人，也几乎是瞬间完成。命令行现在支持由 GPT Live 驱动的双向实时语音，不只是语音转文字，但现场没能演示出来。\n\n后面几段演示了多模态和电脑操作。游戏 Astra Adventures 从一张纸上的草图开始，几轮之后画面还很粗糙，借助图像模型，才变成有质感、能用在正式游戏里的美术。然后他让 Astra 通过浏览器自己学着玩这个游戏，屏幕左边显示模型的决策，右边显示它按下的按键。\n\n他又用“应用快照”（app shot）把自己记录飞行课程的应用作为上下文交给 Codex，让它在各种屏幕尺寸下审查这个应用并截图。Codex 自己在模拟器里点开了各项功能。云端 Codex 现在和本地版用同样的工具，包括插件和电脑操作。他顺手把一个“用 Rust 重写整个后端”的任务丢到云端，打算稍后在手机上查看。\n\n最后一个演示用的是 Hugging Face 借来的可编程小机器人 Micro Duck，它名叫 Lavender。Romain 前一晚让 Codex 把它接好：视觉用 Astra，图像生成用 GPT Image 2.5，语音交互用 GPT Live 1。机器人现场看着观众画了一幅画。他说，OpenAI 做 Dots 和 Codex 用的，就是 API 里开放给开发者的同一批工具。\n\n9. 分发和变现：让开发者在 ChatGPT 上做生意\n\nChatGPT 每周大约有 12 亿人使用。Sam 承认，此前类似的尝试效果参差不齐。他说这次有信心，是因为开发者拿到的是 OpenAI 自己做 ChatGPT 用的工具。\n\n第一项是“用 ChatGPT 登录”（Sign in with ChatGPT）。用户登录第三方应用时，可以直接用自己 ChatGPT 套餐里包含的 Token，开发者不必替新用户垫付模型费用。首批有 16 家合作方。\n\n第二项是插件扩展（plugin extensions）。开发者可以把编辑器、仪表盘乃至整个工作区，做成原生嵌在 ChatGPT 和 Codex 里的应用。现场展示了三个例子。一个是会议应用：在 ChatGPT 里看日历上的会议，点“记笔记”后，页面变成团队和 Dots 一起跟进待办的 Space。一个是 Figma：打开设计稿、看团队评论、让 ChatGPT 改稿。还有一个是 Adobe：在 ChatGPT 里使用 Photoshop 的功能。ChatGPT sites（在 ChatGPT 里生成的网站，几个月里已有数百万个）现在也能接入插件和数据。访客用自己的账号登录、带上自己的智能体，看到的内容因人而异。\n\n用户发现插件的渠道也扩大了。除了在插件库里搜索，ChatGPT 还会在对话中识别出能帮上忙的插件，用户当场就能连接。插件审核流程也简化了：开发者可以跟踪审核进度，看到需要修改的地方，申请人工复审，更新工具时也不用从头提交。\n\n第三项是 OpenAI Marketplace，首批有 30 多家合作方，包括 CodeRabbit、Notion、Vercel。企业客户可以用已经和 OpenAI 签下的采购承诺额度来买这些产品，有承诺额度的开发者也能在这里花。通过和模型推理托管公司 Baseten（转录稿写作 Base10）合作，市场里还能用到开源模型。\n\n10. 收尾：一次额度重置，和“文艺复兴”的说法\n\n当天的后续安排里，Peter 会讲 OpenAI 对开源社区的投入，包括新的 OpenClaw Enterprise Harness（OpenClaw 是一个开源 AI 智能体项目）。还有一个 Codex 游戏工作室环节，观众可以用 Codex 做复古游戏，每人能领一台 DevDay 限定的 chromatic computer，用来玩自己做的游戏。最后是 Sam、Tibo (Thibault) 和 Tejal 的现场问答。\n\nSam 和 Tibo 还在台上按下按钮，给全世界的用户重置了一次用量额度。Sam 说 OpenAI 已经做过太多次重置，Tibo 一直想把公司改名叫“重置公司”。\n\n最后 Sam 说，他不喜欢把 AI 比作新一轮工业革命，那意味着人变成巨大机器里的齿轮，转得越来越快；生活里有些部分不能也不该被自动化。他希望，如果做对了，AI 带来的会更像一场新的文艺复兴：让人对自己的生活有更多掌控，有更多工具去创造、学习和探索。",
+      "created_at": "Tue Sep 29 20:44:16 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2105032579472674816",
+          "url": "https://video.twimg.com/amplify_video/2105032579472674816/vid/avc1/1920x1080/pLD60v9LDC1kz-NR.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 22,
+        "favorite_count": 99,
+        "reply_count": 4,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "2105036270288412705",
+      "text": "现场重置了额度（送了一张重置卡）\n另外 Tibo 真的有一个重置按钮😄 https://t.co/xPmgZalsAz",
+      "created_at": "Tue Sep 29 20:45:31 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2105036130248720384",
+          "url": "https://video.twimg.com/amplify_video/2105036130248720384/vid/avc1/1920x1080/g3is1852RBSnmEeG.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2105035958831718416",
+        "text": "2026 年 9 月 29 日，OpenAI 在旧金山 Fort Mason 办了今年的开发者大会 DevDay。主讲是 CEO Sam Altman。其他几位上台的人都在做这些产品。产品团队的 Holly 演示了新产品 Dots。后训练（模型预训练之后做对齐和能力调优的阶段）研究负责人 Tejal 讲了模型怎么反过来帮 OpenAI 做研究。Codex 的演示由 Romain Huet 来做，他在 OpenAI 负责开发者体验，去年 DevDay 主题演讲里的 Codex 演示也是他做的。整场演讲分三块：面向用户的常驻智能体 Dots 和协作空间 ChatGPT Space，给开发者的新模型和新工具，以及帮开发者做分发、赚钱的渠道。\n\n1. Dots：一直在线、会主动干活的智能体\n\nSam 把 Dots 比作电影里那种一直在身边帮忙的 AI 助手。他认为订餐厅、买机票这类代办虽然有用，但和这项技术能做的事比起来太小了。他想要的 AI 知道正在发生什么，也知道你在意什么，不用你事事交代。\n\nDots 是常驻在线的智能体（Agent），有自己的云端电脑和浏览器，能写代码、跑测试。它的权限跟着用户走，能直接用用户已经在 ChatGPT 里连好的插件，覆盖 4000 多个应用。除了在 ChatGPT 里对话，之后还可以给它发短信、打电话。目前每人先有一个 Dot，以后可以配一整组。Dots 跑在 本月早些时候发布的 GPT-6 Astra 上，Sam 称它是 OpenAI 对齐做得最好的模型。用户可以限定 Dot 能用哪些应用、能不能操作电脑，也能给它的各类操作写自定义指令，愿意交出多少责任就放多少权。\n\nSam 说，他自己的 Dot 每天早上会把夜里进来的消息过一遍，挑出紧急的提醒他。他说这让他拿回了一部分注意力，没那么离不开手机了。他还举了一个更重的例子：把应用从一个即将停用的旧 API 上迁走。这个 API 可能散落在代码库各处，改了哪里会连带弄坏什么，事先看不出来。Dot 可以追踪依赖关系，找出所有要改的地方，写代码、跑测试，最后把 PR（代码合并请求）交给团队审。他让听众想想，过去做这件事要几个人、花多久。\n\n开场视频里，用户把自己的 Dot 改名叫 Alfred。Alfred 和另一个 Dot 帮用户上线网站，改董事会材料，在婚礼蛋糕商家取消后找好备选。它们还发现财务会和女儿的演出撞了期，提出改时间。每件事都是 Dot 推进到需要人确认的地方，再由人拍板。\n\n2. ChatGPT Space：人和智能体一起用的工作区\n\nSam 认为，现有的生产力软件几乎都没考虑过人和 AI 一起干活。ChatGPT Space 以页面为单位，可以在里面写计划、做调研、生成图片和数据。页面和文件像网盘一样放在同一个空间里。Dot 能直接在页面上工作，在评论里 @ 它，它就会接活。页面本身也能带指令，比如“每天去看 API 平台的 Slack 频道，把发现更新到这里”。之后 Space 里还会加入演示文稿，格式做成智能体方便读写的样子，团队成员可以和各自的 Dot 一起改。\n\n在 Holly 的演示里，页面用斜杠命令就能插入交互图表、表格和可运行的原型。她 @ 自己的 Dot（名叫 Dotty），让它把一组数据改成柱状图。图表可以按反馈类型筛选，Dotty 每小时刷新一次。她还让 Dotty 把“某位工程师在我 Slack 私信里提过的新手引导数据”补进 FAQ。Dotty 能看到她的上下文，所以这种模糊的指代也找得到。\n\n3. OpenAI 内部怎么用 Dots\n\nHolly 用一个虚构的歌单应用 Blossom Music，模拟发布前一天的状况。早上 Dotty 已经做了几件事：发现发布评审会提前，改好了日历；看完前一晚测试用户的反馈；注意到设计团队临时改了首页，把新设计发给她。她让 Dotty 直接把这个设计做出来。Dotty 调用她笔记本上的 Codex 构建应用，在 iPhone 模拟器里跑起来，再提交 PR。现场的语音演示卡住了，Dotty 一直回复“还在查”。Codex 线程也报过一次错，她重试后才继续下去。\n\n她说，Dots 真正改变 OpenAI 工作方式的地方在 Slack。Dots 在公司 Slack 里有自己的身份，员工就开始把它们当作代理人。被同事 @ 到的零碎请求，直接转给自己的 Dot 处理。建群时，大家从一开始就把各自的 Dot 拉进来，Dot 带回结果时所有人都能看到。\n\n工程师走得更远。有人在反馈频道贴出会话 ID 和一个用户 bug，某位工程师的 Dot 就会接手排查，提 PR 修复。她说这是真实情况：工程师们的 Dots 每天这样修掉几十个 bug，Dots 这个产品本身有很多部分就是 Dots 写的。\n\n4. 上线范围和企业用的 Specialist Dots\n\nDots 和 Space 当天向 ChatGPT Pro、Business Premium 和 Enterprise 用户开放。Dot 包含在套餐里，和它的对话不占用额度。\n\n企业客户还可以预览 Specialist Dots。这是由公司统一设置、供整个团队使用的虚拟同事，负责会计、市场、法务这类工作量大的事。公司给它目标和背景，审核它的产出，给它反馈，反馈在全公司共享。OpenAI 也在和微软合作，把 Specialist Dots 接入 Agent 365（微软用来管理企业智能体的工具），企业可以用已经在用的微软工具来管理它们。\n\n5. 新模型：更便宜的 GPT-6.1 Sol，更快的 UltraFast\n\nAstra 发布这几周，用户的要求集中在两点：更便宜，更快。GPT-6.1 Sol（转录稿误作 Soul）的能力接近 Astra，价格是它的五分之一。缓存输入（重复发送、已被缓存的上下文）比标准输入便宜 95%。智能体需要反复读同一批上下文、长时间迭代，这对它们尤其省钱。Sam 说 Sol 在某些方面比 Astra 还聪明，定位是开发者的日常主力模型。\n\nUltraFast 是新的速度档，API、ChatGPT 和 Codex 里都能用。原有的 Fast 档是两倍速度、两倍价格；UltraFast 是八倍速度、六倍价格，每秒 300 个 Token。它现在可以配合 Astra 用，之后也会支持 Sol。现场让两个模型用同一个提示词，做一个 DevDay 配色的火箭。UltraFast 的火箭已经升空时，标准速度的还没做完。\n\n订阅也跟着调整。新推出的 500 美元档 Pro 订阅叫 Pro 500，额度最高，是 Plus 的 25 倍。它可以在 ChatGPT 和 Codex 里用 UltraFast，还能通过“用 ChatGPT 登录”在合作方的应用里使用。Pro 200 重新开放，继续提供所有前沿模型。\n\n另外预览了 Decisions API。它给 Luna 模型一组预先定义好的选项，让模型从中选一个，比如给请求分流、给图片分类、决定智能体下一步做什么。任务收窄成选择题之后，响应时间可以压到一秒以内，同时保留图像理解、多语言和安全防护。Romain 后来补充说，做机器人的朋友看中的是它能处理视觉输入：机器人可以根据看到的东西，近乎实时地快速行动。\n\n6. 模型开始帮 OpenAI 做研究\n\nSam 提到，去年这个时候，他和 Jakob 在一次直播里预测，一年内会出现第一个“AI 研究实习生”，当时几乎没人相信。几周前 OpenAI 宣布达成了这个目标：有了一个能接手定义清晰的研究任务的系统，这类任务原本要熟练的研究员花大量时间和精力。\n\nTejal 的方向是电脑操作（computer use，让模型像人一样操作桌面和浏览器）。她举了两个例子。\n\n第一个是让模型优化电脑操作的运行框架（harness，包在模型外面、负责调用工具和管理步骤的代码）。模型在循环里持续寻找能同时降低延迟、提升效果的改动，团队把找到的改进合进生产环境的框架，并用于后训练。结果是延迟改善了两倍以上，已经上线。\n\n第二个是模型帮忙改进了监控和拒绝训练，让 Astra 在不安全的场景里更会拒绝。Astra 在电脑操作压力测试上因此达到业内领先，操作时出错更少，也更贴合用户的本意。\n\n她给出了几项内部数据。今年夏天之后，研究工作消耗的 Token 量急剧上升。1 月时，模型能做好 15 分钟以内的短任务，需要一天以上的任务大多会失败；到 7 月，超过三分之一的一天量级研究任务，模型能在无人干预下完成。她还提到，Astra 这类模型已经帮忙解决了 100 多个悬而未决几十年的数学问题，也在参与针对耐药感染的新抗生素、古代语言研究、可再生能源和工业机器人等方向的工作。\n\n7. 给开发者的底层工具\n\nSam 说，OpenAI 想让开发者用上自己内部用的东西。\n\n第一件是 Codex 的运行框架。它同时支撑着 Codex、ChatGPT Work 和 Dots，目标是用最少的 Token、最快拿到准确结果，现在已经开源。第二件是 Codex 完全上云：在手机上开始的任务，可以在浏览器或桌面端接着做，合上笔记本任务也不会中断。\n\n云端能力带来了 Codex Security Cloud。它在云端环境里持续寻找漏洞，并准备好验证过的修复方案供人审核，这次新增了自动去重、定时扫描和新界面。Sam 说这是为了给防守方更好的工具，因为“我们看得到接下来会发生什么”。\n\n新的 Agents API 进入公开测试。它包含运行框架、托管、记忆、多智能体控制等功能，是 Codex 和 Dots 用的同一套技术，也加入了电脑操作能力。现场的例子是一个网站测试智能体，会自己打开浏览器、点击页面、测试流程。基础设施方面，OpenAI 和 AWS 合作推出由 OpenAI 驱动的 Bedrock（AWS 的托管 AI 服务）托管智能体，AWS 客户可以直接使用 OpenAI 的前沿模型、Codex 和 ChatGPT Work。\n\n隐私方面预览了 OpenAI Private Intelligence。其中的零数据留存（ZDR）配合私有安全处理，可以在不把用户内容存到 OpenAI 服务器的情况下做安全检测；私有推理则把隐私保护延伸到推理阶段。Sam 说这套方案是和最大的一批客户一起设计的，目的是让他们能把模型用在最敏感的工作上。\n\n性能方面，Responses API 一年里增长了 100 倍，可靠性保持在 99% 以上。首个 Token 的等待时间缩短了 45%，工具调用和工作流提速 30% 以上。\n\n8. Romain 的 Codex 演示\n\n演示从手机上的 Codex 开始。Romain 人还在会场外，让 Codex 替他跟观众打招呼、讲一个会场的冷知识。接着他用几张会场照片生成的 3D 场景演示 UltraFast，一边说一边改：把小人放到座位上，把直播画面投到场景里的大屏幕上。现场语音没连上，他改成了打字。\n\nCodex 命令行工具（CLI）这次全面翻新。他让 UltraFast 写一个应用，从观众里随机抽三个人送明年的门票，几秒就写完；改成抽六个人，也几乎是瞬间完成。命令行现在支持由 GPT Live 驱动的双向实时语音，不只是语音转文字，但现场没能演示出来。\n\n后面几段演示了多模态和电脑操作。游戏 Astra Adventures 从一张纸上的草图开始，几轮之后画面还很粗糙，借助图像模型，才变成有质感、能用在正式游戏里的美术。然后他让 Astra 通过浏览器自己学着玩这个游戏，屏幕左边显示模型的决策，右边显示它按下的按键。\n\n他又用“应用快照”（app shot）把自己记录飞行课程的应用作为上下文交给 Codex，让它在各种屏幕尺寸下审查这个应用并截图。Codex 自己在模拟器里点开了各项功能。云端 Codex 现在和本地版用同样的工具，包括插件和电脑操作。他顺手把一个“用 Rust 重写整个后端”的任务丢到云端，打算稍后在手机上查看。\n\n最后一个演示用的是 Hugging Face 借来的可编程小机器人 Micro Duck，它名叫 Lavender。Romain 前一晚让 Codex 把它接好：视觉用 Astra，图像生成用 GPT Image 2.5，语音交互用 GPT Live 1。机器人现场看着观众画了一幅画。他说，OpenAI 做 Dots 和 Codex 用的，就是 API 里开放给开发者的同一批工具。\n\n9. 分发和变现：让开发者在 ChatGPT 上做生意\n\nChatGPT 每周大约有 12 亿人使用。Sam 承认，此前类似的尝试效果参差不齐。他说这次有信心，是因为开发者拿到的是 OpenAI 自己做 ChatGPT 用的工具。\n\n第一项是“用 ChatGPT 登录”（Sign in with ChatGPT）。用户登录第三方应用时，可以直接用自己 ChatGPT 套餐里包含的 Token，开发者不必替新用户垫付模型费用。首批有 16 家合作方。\n\n第二项是插件扩展（plugin extensions）。开发者可以把编辑器、仪表盘乃至整个工作区，做成原生嵌在 ChatGPT 和 Codex 里的应用。现场展示了三个例子。一个是会议应用：在 ChatGPT 里看日历上的会议，点“记笔记”后，页面变成团队和 Dots 一起跟进待办的 Space。一个是 Figma：打开设计稿、看团队评论、让 ChatGPT 改稿。还有一个是 Adobe：在 ChatGPT 里使用 Photoshop 的功能。ChatGPT sites（在 ChatGPT 里生成的网站，几个月里已有数百万个）现在也能接入插件和数据。访客用自己的账号登录、带上自己的智能体，看到的内容因人而异。\n\n用户发现插件的渠道也扩大了。除了在插件库里搜索，ChatGPT 还会在对话中识别出能帮上忙的插件，用户当场就能连接。插件审核流程也简化了：开发者可以跟踪审核进度，看到需要修改的地方，申请人工复审，更新工具时也不用从头提交。\n\n第三项是 OpenAI Marketplace，首批有 30 多家合作方，包括 CodeRabbit、Notion、Vercel。企业客户可以用已经和 OpenAI 签下的采购承诺额度来买这些产品，有承诺额度的开发者也能在这里花。通过和模型推理托管公司 Baseten（转录稿写作 Base10）合作，市场里还能用到开源模型。\n\n10. 收尾：一次额度重置，和“文艺复兴”的说法\n\n当天的后续安排里，Peter 会讲 OpenAI 对开源社区的投入，包括新的 OpenClaw Enterprise Harness（OpenClaw 是一个开源 AI 智能体项目）。还有一个 Codex 游戏工作室环节，观众可以用 Codex 做复古游戏，每人能领一台 DevDay 限定的 chromatic computer，用来玩自己做的游戏。最后是 Sam、Tibo (Thibault) 和 Tejal 的现场问答。\n\nSam 和 Tibo 还在台上按下按钮，给全世界的用户重置了一次用量额度。Sam 说 OpenAI 已经做过太多次重置，Tibo 一直想把公司改名叫“重置公司”。\n\n最后 Sam 说，他不喜欢把 AI 比作新一轮工业革命，那意味着人变成巨大机器里的齿轮，转得越来越快；生活里有些部分不能也不该被自动化。他希望，如果做对了，AI 带来的会更像一场新的文艺复兴：让人对自己的生活有更多掌控，有更多工具去创造、学习和探索。",
+        "created_at": "Tue Sep 29 20:44:16 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2105032579472674816",
+            "url": "https://video.twimg.com/amplify_video/2105032579472674816/vid/avc1/1920x1080/pLD60v9LDC1kz-NR.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 251416,
+          "friends_count": 1743,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 22,
+          "favorite_count": 99,
+          "reply_count": 4,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 140,
+        "reply_count": 10,
+        "quote_count": 5
+      }
+    },
+    {
+      "id": "2105043524999958811",
+      "text": "OpenAI 发布 GPT-6.1 Sol：能力接近自家旗舰 Astra，价格只要五分之一\n\nOpenAI 推出了中端模型 GPT-6.1 Sol，官方说法是“接近 Astra 的智能，五分之一的价格”。GPT-6 Astra 是 OpenAI 目前最强的模型，Sol 则是它下面一档、主打性价比的系列。\n\n先看价格。API 上，GPT-6.1 Sol 每百万 token 输入 2 美元、输出 10 美元，Astra 是 10 美元和 50 美元，正好差五倍。重复使用的内容（比如每次都要带上的系统提示词、长文档）走缓存，每百万 token 只要 0.1 美元，比 GPT-6 Sol 的缓存价又便宜了一半。\n\n对开发者来说，这意味着以前只敢在关键环节调用 Astra 的应用，现在可以把更多请求交给 Sol，账单能明显降下来。\n\n能力上，这次升级主要在三块：写代码、操作电脑、处理复杂的专业工作。按官方数据，在软件工程测试 DeepSWE 上它追平了 Astra；在衡量“让 AI 自己操作电脑完成任务”的 OSWorld 2.0 上，比上一代 Sol 提高约 7 个百分点，离 Astra 只差约 2 个百分点。回答事实类问题时的出错率也从上一代的 11.4% 降到了 7.7%。\n\nOpenAI 还特别提到，新模型更愿意坦白自己做不到什么，也更守规矩，不容易偏离用户意图或越过安全限制，这方面向 Astra 看齐。\n\n现在就能用：ChatGPT 的 Plus、Pro、Business、Enterprise 和 Edu 用户可以在 ChatGPT Work 和 Codex 里直接选用，开发者在 API 里调用 gpt-6.1-sol。官方还预告了一个生成速度最高快 8 倍的极速版，稍后上线。",
+      "created_at": "Tue Sep 29 21:14:20 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2104986129686741046",
+        "text": "GPT-6.1 Sol: near-Astra intelligence for a fifth of the price.\n\nIt’s the most cost-efficient model for its performance available today. https://t.co/hH8PnE2Oxk",
+        "created_at": "Tue Sep 29 17:26:16 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2104984622191067137",
+            "url": "https://video.twimg.com/amplify_video/2104984622191067137/vid/avc1/1920x1080/XqwxcETJ-aUHrd3Q.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 5402949,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1335,
+          "favorite_count": 16975,
+          "reply_count": 511,
+          "quote_count": 831
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 37,
+        "reply_count": 9,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2105065658149208338",
+      "text": "OpenAI 推出 Decisions API：给 AI 出选择题，150 毫秒就可给出结果\n\nOpenAI 在今天的开发者大会上发布了 Decisions API。开发者写好一个问题和几个备选答案，再把内容发过去，模型直接从选项里挑一个返回，不生成多余的内容。目前是有限预览，只对部分 API 客户开放，OpenAI 说未来几天会全面放开。\n\n它用的是 GPT-6 家族里最小、最便宜的 Luna 的特化版本。按 OpenAI 的说法，一次判断大约 150 毫秒，同样的任务走普通 Luna 接口要 1.6 秒左右，快了十倍。\n\n这类活儿以前有两种做法。一种是让大模型自由回答，再从一堆文字里解析结果，慢，还偶尔答非所问。另一种是专门训练一个分类器，得先攒标注数据，类别一变就要重训。Decisions API 把答案限定在你给的选项里，不可能跑出范围，换选项也只是改一下请求。\n\n典型用法：客服工单进来，连同“账单组、技术组、售后组”几个候选一起发过去，马上知道该派给谁；内容审核时判断一张图能不能放行；AI 智能体每走一步，决定下一步调哪个工具。输入支持文字和图片。\n\n不过社交媒体都在调侃 Decisions API 是在山寨 Jev。Jev 是创业公司 TypeSafe（创始人之一 Diogo Almeida）九月中旬发布的“决策模型”。普通聊天模型是一个字一个字往外生成，Jev 不生成文字，一次性给所有选项打分，直接返回答案和概率。TypeSafe 管它叫“System 1 模型”，借用心理学里“快思考”的说法：不推理，不解释，凭直觉秒答。\n\nJev 上线后在开发者圈很快传开。演示里有人一小时内就搭出能玩 Minecraft、Subway Surfers 的机器人，只要列出可选动作，不用训练。不过这些演示都跑在模拟器里，真实硬件上还没验证。它的价格也极低：输入每百万 token 0.042 美元，输出免费，处理一百万张三道判断题的工单大约 19 美元。\n\n但细节上还是有差异： Jev 只收文本，Decisions API 能看图。Jev 每个答案都附带校准过的概率，方便设阈值，比如“低于 0.7 就转人工”，OpenAI 这边也会返回置信度。",
+      "created_at": "Tue Sep 29 22:42:17 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2105003318917697873",
+        "text": "Give your app real-time decision-making with Decisions API, powered by GPT-6 Luna.\n\nDefine questions and possible answers to classify content, route requests, or choose an agent’s next action.\n\nAvailable in limited preview. https://t.co/LbaD18M6Do",
+        "created_at": "Tue Sep 29 18:34:34 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2105003281735168000",
+            "url": "https://video.twimg.com/amplify_video/2105003281735168000/vid/avc1/1920x1080/S7fRLovISggGPXAQ.mp4?tag=16",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1633874951508721686",
+          "name": "OpenAI Developers",
+          "screen_name": "OpenAIDevs",
+          "description": "Official updates for developers building with Codex & the OpenAI Platform • Service status: https://t.co/kZwnwdYYEq",
+          "followers_count": 441978,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 265,
+          "favorite_count": 3739,
+          "reply_count": 132,
+          "quote_count": 219
+        }
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 45,
+        "reply_count": 9,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2105073744951586841",
+      "text": "Anthropic 测试智谱 GLM-5.3：能写出可用的攻击程序，防护容易被绕过\n\nAnthropic 今天发布研究报告，称智谱 AI 的开源模型 GLM-5.3 已经能独立写出可用的网络攻击程序，水平接近 Anthropic 只向少数机构开放的 Claude Mythos Preview，而它的安全防护用简单手段就能绕过。\n\n报告用两项测试衡量模型写“漏洞利用代码”的能力，也就是把软件里的安全缺陷变成真正能攻进系统的程序。在针对 Chrome V8 引擎（浏览器里负责执行网页脚本的部分）的 ExploitBench 上，GLM-5.3 成功率 12%，Mythos Preview 是 14%，更早的模型基本为 0。在 Anthropic 自己的二进制漏洞利用测试上，两者分别是 4% 和 6%。\n\n实际演示更直观。研究人员用 GLM-5.3 在一天内找出某款主流浏览器 JavaScript 引擎里的多个零日漏洞（厂商还不知道、没有补丁的漏洞），串成一个网页：用户只要打开它，电脑里的任意文件就能被读走。这些漏洞已报告给维护方。另一次测试中，它针对一个已公开的漏洞写出攻击程序，人只投入了 20 分钟，模型运行 8 小时，花费 20.40 美元。\n\nGLM-5.3 本身会拒绝明显的恶意请求，但报告测了三种绕过方式：编一个正当理由骗它，成功率 64%；预先替它写好一段“思考过程”，成功率 92%；直接修改模型权重去掉拒绝机制（业内称 abliteration），成功率 100%。Anthropic 表示同样的手段在带防护的 Claude 模型上都没有成功。前两项测试在隔离环境中进行，模型拿到的是一个假的命令行工具，生成的代码不会真正执行。\n\n修改权重的门槛也不高。Anthropic 团队用了约 2200 个 GPU 小时、约 4400 美元，就把 GLM-5.3 对有害请求的拒绝率从 95% 降到 6%，通用能力基本不受影响。更小的 GLM-5.3-Flash 只需约 600 个 GPU 小时。\n\n美国国家标准与技术研究院下属的 AI 标准与创新中心（CAISI）评估，GLM-5.3 的网络能力比美国最前沿模型落后约四个月。报告指出，差距虽在，获取门槛却完全不同：Mythos Preview 只通过 Glasswing 项目提供给经过筛选的网络防御方，GLM-5.3 任何人都能下载和改造。\n\n报告建议政府对能力足够强的模型开展安全测试，把前沿模型更多开放给网络防御机构，并要求模型开发者对这类能力加以防护。",
+      "created_at": "Tue Sep 29 23:14:25 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2105073667461820416",
+          "url": "https://pbs.twimg.com/media/HTa5WO8XMAAqZWD.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2105035836500934817",
+        "text": "https://t.co/qzT0DWb1oj\n\nThis is just sad :(",
+        "created_at": "Tue Sep 29 20:43:47 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1275430079754092550",
+          "name": "Yossi Gandelsman",
+          "screen_name": "YGandelsman",
+          "description": "Training models at @OpenAI, assistant prof at @TTIC_connect (on leave). Views are my own.",
+          "followers_count": 3754,
+          "friends_count": 995,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 116,
+          "favorite_count": 1906,
+          "reply_count": 226,
+          "quote_count": 155
+        }
+      },
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 111,
+        "reply_count": 20,
+        "quote_count": 7
       }
     }
   ]

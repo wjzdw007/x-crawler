@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 251679,
+    "followers_count": 251709,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20260930",
-  "last_updated": "2026-09-30T20:31:00.124291",
-  "tweet_count": 5,
+  "last_updated": "2026-10-01T01:03:17.701721",
+  "tweet_count": 9,
   "tweets": [
     {
       "id": "2105107272590344281",
@@ -146,6 +146,164 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2105396970772942935",
+      "text": "谷歌发布新一代旗舰模型 Gemini 4 Argon。\n\n谷歌在跑分表里拿它和 OpenAI 的 GPT-6 Astra、Anthropic 的 Claude Fable 5.1 和 Claude Opus 5.5 对比，价格却定在 GPT-6.1 Sol 和 Opus 5.5 的档位。\n\n普通用户和开发者暂时还用不上，第一批只开放给谷歌 Fairwind 计划里的网络安全防御人员。\n\n谷歌说会分阶段放开，同时参与美国政府的模型发布前自愿审查流程，也就是正式发布前先让政府访问模型。之后先开放给付费 API 客户和 Google AI Ultra 订阅用户，再到普通消费者，具体日期没有公布。\n\n首发优惠价是每百万输入 token 2 美元、每百万输出 token 10 美元，和 GPT-6.1 Sol 完全相同。优惠期结束后是 4 美元和 20 美元，和 Claude Opus 5.5 相同。\n\nGPT-6 Astra 和 Claude Fable 5.1 都是 10 美元和 50 美元，也就是说即使恢复原价，Argon 也只要它们的五分之一。命中缓存的输入按原价的 5% 收费，同样与 Sol 和 Opus 5.5 持平。token 是模型计算文字量的单位，一百万 token 大约相当于 75 万个英文单词。\n\n规格上最大的变化是输出上限：单次最多输出 100 万 token，上一代是 6.4 万。\n\nGPT-6 Astra、GPT-6.1 Sol、Claude Fable 5.1 和 Opus 5.5 目前都是 12.8 万，Argon 是它们的将近 8 倍。\n\n按谷歌的说法，模型可以在一次任务里连续思考、生成几十万 token，难题不用拆成很多轮来做。\n\n谷歌说已有数千名员工在日常工作中使用它，并举了几个内部例子：\n\n量子计算团队用它优化量子算法的资源消耗（量子比特数乘以门操作数），其中一例几分钟内就比已发表的基准方案好 40%。\n\n一组 Argon 智能体分析谷歌数据中心的内存使用数据，自动找出并应用优化，已释放超过 300 TiB 内存，谷歌估计总共能省下 500 TiB 到 1 PiB。\n\nArgon 智能体正在把谷歌的 C/C++ 代码迁移到 Rust。Rust 是一种从语言层面避免大部分内存安全漏洞的编程语言。迁移规模从几万行的基础库，到 80 多万行的 Fuchsia 系统 Zircon 内核，上线前都要经过自动和人工审核、测试。在视频解码库 libgav1 的 Rust 版本里，智能体把 3.2 万行手写的底层加速代码换成了编译器能自动优化的安全 Rust 代码，速度是原 Rust 版的 2.7 倍，解码出的画面完全一致。\n\n谷歌的对比表一共 19 项测试，Argon 13 项第一，1 项和 Astra 并列第一，5 项落后。以下分数均为谷歌公布，顺序是 Argon、Astra、Fable 5.1、Opus 5.5。\n\n领先最明显的是专业工作。Harvey 的法律智能体测试考法律检索和文书起草，Argon 19.6%，其他三家是 5.4%、6.7%、3.8%。金融研究测试 Vals Finance Agent v2 是 65.4%，对手是 53.5%、58.9%、58.6%。Zapier 的 AutomationBench 考从头到尾完成企业业务流程，Argon 51.3%，对手是 41.4%、31.4%、42.5%。按美国 GDP 加权、覆盖金融编程法律税务的综合榜 Vals Index 上差距小一些，68.9% 对 63.1%、65.8%、67.0%。\n\n超长材料也是强项。GraphWalks 测模型在长文本里追踪信息之间的关系，材料长度在 25.6 万到 100 万 token 时，Argon 84.2%，其他三家是 71.8%、65.0%、66.8%。长视频理解 LVBench 上 Argon 91.7%，对手是 87.5%、79.7%、83.7%。\n\n编程有输有赢。考长流程真实软件工程任务的 DeepSWE v1.1 上 Argon 77.9%，对手是 74.1%、67.4%、74.2%。但在另一项软件工程测试 FrontierSWE v2 上 Argon 只有 55.0%，四家里最低，Astra 65.5% 第一。在考命令行操作的 Terminal-bench 4.0 上 Argon 57.4%，也是四家最低，Opus 5.5 以 66.4% 领先。\n\n另外三项落后的：机器学习工程 PostTrainBench，Opus 5.5 第一（49.3% 对 Argon 45.3%）；科学计算 Terminal-Bench Science，Astra 第一（68.1% 对 57.6%）；操作电脑的 OSWorld-2.0，Astra 第一（72.6% 对 69.2%），这一项表里没有 Claude 的分数。\n\n网络安全是这次发布的重点。谷歌专门训练 Argon 做安全防御：自动找漏洞、验证漏洞、打补丁。给受信任防御人员和谷歌内部团队的版本不带网络安全方面的限制，可以用上全部能力。\n\n安全公司 Wiz 已在它的免费公益项目 Scan for Good 里使用 Argon。据谷歌介绍，Argon 在全球医院使用的一款医疗软件里发现了一个严重漏洞，可能泄露敏感个人信息，之前的前沿模型都没发现。在测试漏洞修复能力的 CWE-bench v1 上，Argon 和 GPT-6 Astra 都是 68%，并列第一，Opus 5.5 是 67%，Fable 5.1 是 58%。谷歌称，它发现漏洞的能力比上一代安全专用模型 3.8 Flash Cyber 明显更强。\n\n在大范围开放前，谷歌列了四项安全措施：\n\n拒绝协助网络攻击和化学、生物、放射性、核武器方面的有害请求，并通过监测模型内部的激活状态来识别滥用。\n\n防提示词注入，也就是有人在网页或文件里藏恶意指令来劫持模型。谷歌称 Argon 在 Gray Swan 的间接提示词注入测试中领先。\n\n监控模型的思考过程和实际操作，发现它做出超出用户意图的事就中止执行。训练阶段也有类似监控，谷歌称没有把监控结果用回训练，以免模型学会躲避监控。\n\n在高风险训练和测试开始前，把运行模型的沙箱环境隔离封闭。",
+      "created_at": "Wed Sep 30 20:38:48 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2105387952478277979",
+        "text": "Lots of discussion out there about our next model(!), so I wanted to give an early look as soon as possible. Introducing Gemini 4 Argon!\n\nIt shows frontier performance in complex workflows, cyber defense and software engineering. Teams are using it extensively at Google, from coding to quantum computing, great feedback. \n\nHere’s a look at the benchmarks:",
+        "created_at": "Wed Sep 30 20:02:58 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2105386477274451968",
+            "url": "https://pbs.twimg.com/media/HTfV2KTa0AAVcsh.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "14130366",
+          "name": "Sundar Pichai",
+          "screen_name": "sundarpichai",
+          "description": "CEO, Google and Alphabet",
+          "followers_count": 11751321,
+          "friends_count": 199,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1352,
+          "favorite_count": 15007,
+          "reply_count": 816,
+          "quote_count": 848
+        }
+      },
+      "stats": {
+        "retweet_count": 10,
+        "favorite_count": 114,
+        "reply_count": 18,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2105430166876869113",
+      "text": "Figure AI 让旗下的 Figure 02 人形机器人自己跳进芬兰一家铸造厂的钢水里，以此让这一代机器人退役。熔出来的金属会被加工成限量纪念品。\n\nFigure 02 是 Figure 的第二代人形机器人，公司很多第一次都由它完成：第一次进 BMW 工厂上岗，第一次运行 Helix（Figure 自研的机器人 AI 模型，负责看画面、理解指令并控制动作），第一次做家务，第一次做物流工作。现在第三代 F.03 的数量越来越多，Figure 说继续维护 F.02 已经不划算。\n\n退役的麻烦在于保护技术。机器人里有大量自研的执行器（可以理解为驱动关节的电机）等核心硬件，Figure 不想让它们流出去；但一台台拆解又太占工程师的时间，会推迟第四代 F.04 的发布。\n\nFigure 于是在网上征求处理办法，施瓦辛格回复说\"熔了它们\"。他主演的《终结者2》结尾，T-800 机器人就是沉进钢水里的。Figure 联系了施瓦辛格，他表示想参与，项目随后启动。\n\n找场地并不顺利。美国和墨西哥的铸造厂都不愿意让装着锂电池的机器人跳进自家昂贵的设备，Figure 还请《流言终结者》的前主持人帮忙找过。最后只有芬兰伊马特拉的一家铸造厂同意。\n\n训练在 Figure 位于加州圣何塞的园区进行。团队铺了大气垫，让机器人从二楼往下跳。他们参考特技演员的动作，在仿真环境里训练了一个新的 AI 模型，让机器人在一个从没去过的铸造厂里，准确跳进盛钢水的容器。\n\n铸造厂用的是一座 75 吨的电弧炉，靠三根石墨电极通电熔化废钢。团队只有 24 小时、6 炉的机会，每炉钢水只有 20 分钟可用，之后表面就会冷却结壳。Figure 称，现场的高温和强电磁场让摄像器材等电子设备出了故障，机器人则一直正常运行自己的 AI 控制程序。\n\n熔出的金属锭已运回美国，正在加工成一批纪念 F.02 的限量藏品，数量很少，面向个人出售，博文没有公布价格和购买方式。大部分 F.02 已被熔掉，只有几台留在总部仓库。\n\nFigure 在文末特意说明，视频不是 AI 生成的：机器人确实是自主起跳，被运到芬兰，跳进了钢水。",
+      "created_at": "Wed Sep 30 22:50:43 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2105429787619532800",
+          "url": "https://video.twimg.com/amplify_video/2105429787619532800/vid/avc1/1920x1080/sxZf7ELUsTX_5d0G.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2105316886846251208",
+        "text": "The story is crazy, started with Arnold on social and ended in Finland having F.02's jump into a 75-ton arc furnace\n\nRead about our journey here:\nhttps://t.co/AbGSX2dONl",
+        "created_at": "Wed Sep 30 15:20:35 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1602443956888817665",
+          "name": "Figure",
+          "screen_name": "Figure_robot",
+          "description": "Figure is an AI Robotics company building the world's first commercially viable autonomous humanoid robot.",
+          "followers_count": 223063,
+          "friends_count": 3,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 27,
+          "favorite_count": 478,
+          "reply_count": 8,
+          "quote_count": 12
+        }
+      },
+      "stats": {
+        "retweet_count": 19,
+        "favorite_count": 135,
+        "reply_count": 19,
+        "quote_count": 7
+      }
+    },
+    {
+      "id": "2105431620769427549",
+      "text": "Anthropic 上线新站点 https://t.co/UazfKYPKLO，面向用 Claude 做开发的人。站点会发布工程深度文章、Claude Code 和 API 使用指南、Claude 团队成员的经验分享，另外还藏了一些彩蛋。\n\n原来的文档网站仍在 https://t.co/t4KD4eylrq，首页导航里的 DOCS 链接会直接跳转过去。https://t.co/UazfKYPKLO 更接近 Anthropic 工程团队的博客，文章分为智能体（Agents）、工程、实战手册（Playbooks）、技能（Skills）四类。技能指的是给 Claude 预先写好的一套操作说明，让它按固定流程完成某类任务。\n\n首页现有的文章大多围绕 Claude 5 代模型的实际用法。例如《Building with Claude Sonnet 5.5》讲怎么用 Sonnet 5.5 开发，《What a task costs on Opus 5.5》算的是在 Opus 5.5 上跑一个任务要花多少钱，《The new rules of context engineering for Claude 5 generation models》讲怎样给新一代模型组织输入内容。也有团队自己的工程复盘，比如《How we made https://t.co/vefasn3rYt 3x faster in two weeks》，记录他们两周内把 https://t.co/vefasn3rYt 提速 3 倍的过程。\n\n最新一篇是 9 月 28 日发布的《用 Claude 自动设计评测并逐步调优》。\n\n对正在用 Claude API 或 Claude Code 的开发者，这些文章能直接看到 Anthropic 内部团队怎么用模型、怎么估算成本。\n\n站点还收录了视频，包括 Claude Code 团队怎么用 Claude Code，以及 Ramp、DoorDash 等公司让员工用 Claude Code 和智能体工作的案例，完整视频放在 YouTube 上。\n\n彩蛋之一是终端模式。点导航里的 TERMINAL，整个站点会变成命令行界面，文章列表像终端里的滚动输出，输入 /help 能看到可用命令。站点的主要入口都配了键盘快捷键，按 H 回首页，按 D 打开文档，按 T 进入终端。",
+      "created_at": "Wed Sep 30 22:56:30 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2105391694741119047",
+        "text": "https://t.co/sRyO7OigQ7 is our new home for developers building with Claude. \n\nYou'll find engineering deep dives, Claude Code and API guides, tips from the teams building Claude, and some fun easter eggs. https://t.co/8fC7k63xpP",
+        "created_at": "Wed Sep 30 20:17:50 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2105391045345468416",
+            "url": "https://video.twimg.com/amplify_video/2105391045345468416/vid/avc1/1920x1080/pJTOcNzzZxhC4U1L.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2024518793679294464",
+          "name": "ClaudeDevs",
+          "screen_name": "ClaudeDevs",
+          "description": "Official updates for developers building with @ClaudeAI",
+          "followers_count": 717895,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 334,
+          "favorite_count": 5863,
+          "reply_count": 139,
+          "quote_count": 56
+        }
+      },
+      "stats": {
+        "retweet_count": 17,
+        "favorite_count": 71,
+        "reply_count": 9,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2105442328731439193",
+      "text": "让 ChatGPT 用 守序中立混乱九宫格 归类一下 AI 风云人物，给我画了这个 https://t.co/59357FboSc",
+      "created_at": "Wed Sep 30 23:39:03 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2105442320384401408",
+          "url": "https://pbs.twimg.com/media/HTgIoqGWIAAgqrq.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 14,
+        "reply_count": 10,
+        "quote_count": 1
       }
     }
   ]

@@ -1,0 +1,207 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 251982,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261002",
+  "last_updated": "2026-10-02T03:44:55.974841",
+  "tweet_count": 5,
+  "tweets": [
+    {
+      "id": "2105840601195311216",
+      "text": "Anthropic 今天给 Claude Code 推出了 Mod 功能。Claude Code 是 Anthropic 做的 AI 编程助手，你用大白话告诉它要做什么，它自己读代码、改代码、运行命令。\n\nMod 这个词来自游戏圈，玩家给游戏装 MOD，可以改画面、加道具、换玩法。比如我们以前玩过的《反恐精英》最早就是作为游戏《半条命》（Half-Life）的一个 Mod。\n\n现在 Claude Code 也能这样改了。\n\nMod 就是一小段程序，用 TypeScript（一种常用的编程语言）写。不会编程也没关系，直接跟 Claude Code 说你想要什么效果，它会自己把 Mod 写好、装上，马上生效，不用重启。\n\n【它是怎么起作用的】\n\n可以把 Claude Code 干活的过程想成一条流水线：接到你的要求，交给 AI 模型思考，模型决定读哪个文件、运行哪条命令，某些步骤要先问你同不同意，最后把结果显示在屏幕上。每到一个环节，Claude Code 都会发出一个信号，表示“我要做这件事了”。Mod 守在这些环节旁边，可以直接放行，可以改一改再放行，也可以拦下来自己处理。\n\n举几个例子。你的要求发给模型之前，Mod 可以自动补一句“请用中文回答”；Claude 要读的文件里有密码，Mod 可以先把密码涂掉；Claude 想运行一条可能删掉数据的命令，Mod 可以拦下来，让你再确认一次。\n\nMod 还能改屏幕上的样子，比如在对话旁边加一个小窗口，显示团队的代码有没有通过自动测试，或者在输入框上方加几个按钮。\n\nAnthropic 自己也开始用 Mod 搭产品。Claude Code 自带的 /diff 命令（显示改了哪些代码）现在就是一个 Mod，你可以关掉它，或者换成自己写的版本。官方计划把更多自带功能改成 Mod，以后用户可以只留一个精简的核心，其他功能按需加。\n\n安装方式和普通插件一样，在 Claude Code 里输入 /plugin 就能找到。需要 Claude Code 2.1.287 或更新的版本，功能默认打开。\n\n【要小心的地方】\n\nMod 拥有和 Claude Code 一样的权限，中间没有任何隔离。装上一个 Mod，它就能读写你电脑里的文件，看到你存的 API 密钥（调用 AI 服务用的“账号密码”），看到你发的每一句话，还能不经过你就替你批准操作。所以官方建议只装信得过的人做的 Mod。公司的管理员可以限制员工能装哪些 Mod，Team 和 Enterprise 版还会默认先加载一个安全 Mod，防止其他 Mod 绕过公司定的安全规则。\n\n【和 DeepSeek Harness 比一比】\n\n今年 8 月 13 日，DeepSeek 发布了开源的 DeepSeek Harness，也是一个 AI 智能体工具，能写代码，也能整理文件、分析表格、做幻灯片，GitHub 上已经有 24 万多人收藏。它的口号是“一切皆插件”，连连接 AI 模型的部分、管理工具的部分，甚至负责“想一步、做一步”的核心循环，都是可以拆下来换掉的插件。\n\n两家想做的事一样，都是让用户自己定制 AI 助手，起点不同。\n\nDeepSeek Harness 从一开始就是拼装式的。代码完全公开，用的是 MIT 协议（随便用、随便改），后面接哪家模型也由你选，DeepSeek 的、别家的、自己电脑上跑的都行。它甚至可以把任务转交给 Claude Code 或 OpenAI 的 Codex 去做，再把结果收回来。代价是它还在开发者预览阶段，官方提醒后续更新可能和旧版本不兼容，今天写的插件过一阵可能就用不了。\n\nClaude Code 是闭源产品，绑定 Anthropic 自家的模型。Mod 相当于在一个已经建好的房子上开了很多扇门，能改的地方越来越多，但房子还是 Anthropic 盖的。Anthropic 说要把自带功能逐步改成 Mod、只留一个小核心，这个方向和 DeepSeek Harness 的“一切皆插件”越来越近。\n\n想换模型、从最底层改起，DeepSeek Harness 更自由；已经在用 Claude Code 的人，现在不用换工具也能做不少定制。",
+      "created_at": "Fri Oct 02 02:01:38 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2105840119873773568",
+          "url": "https://video.twimg.com/amplify_video/2105840119873773568/vid/avc1/1080x1920/wuJnhEIhfHH53HuE.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2105721434807083061",
+        "text": "You can now mod Claude Code:\n\n- Change how it behaves\n- Customize the UI\n- Swap in your own features\n\nWrite one with a few lines of TypeScript, or have Claude build it for you. Mods ship inside plugins, so you install them with /plugin in the CLI or desktop app.\n\nA few examples: https://t.co/qMtzV8AeId",
+        "created_at": "Thu Oct 01 18:08:07 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2105718499234693121",
+            "url": "https://video.twimg.com/amplify_video/2105718499234693121/vid/avc1/1920x1080/jwInKuHdx4QkD-_s.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2024518793679294464",
+          "name": "ClaudeDevs",
+          "screen_name": "ClaudeDevs",
+          "description": "Official updates for developers building with @ClaudeAI",
+          "followers_count": 722052,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 759,
+          "favorite_count": 14228,
+          "reply_count": 419,
+          "quote_count": 452
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 60,
+        "reply_count": 19,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2105848317855031733",
+      "text": "这条也挺酷\nhttps://t.co/PL7T5P06rz",
+      "created_at": "Fri Oct 02 02:32:18 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2105816670896009224",
+        "text": "\"Hey Fable, please make a cool animation\"  \n\n15 minutes later.\n\nFABLE 5.5 IS SO GOOD AT THESE.\n\nHOW??? https://t.co/PS1GTkJUgd",
+        "created_at": "Fri Oct 02 00:26:33 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2105815801198501888",
+            "url": "https://video.twimg.com/amplify_video/2105815801198501888/vid/avc1/1920x1080/jh_w8kK8bBeturUV.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "349262180",
+          "name": "Tak 🦞",
+          "screen_name": "cherry_mx_reds",
+          "description": "I build with AI and share everything, including the prompts • Art • Games • Model Tester • Community OpenClaw maintainer",
+          "followers_count": 5634,
+          "friends_count": 1126,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 25,
+          "favorite_count": 530,
+          "reply_count": 28,
+          "quote_count": 10
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2105853608944107819",
+      "text": "Codex 又要有重置了，美国时间 10 月 2 日上午 10 点重置，也就是北京时间 10 月 3 日凌晨 2:00\n蹬起来",
+      "created_at": "Fri Oct 02 02:53:19 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2105843926221660585",
+        "text": "Global reset landing tomorrow 10am PST for all paid ChatGPT accounts. Apologies for the slow start with GPT-6.1 Sol, it's now back to running at expected speeds after the massive load spike in the first two days.",
+        "created_at": "Fri Oct 02 02:14:51 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1953337039510003712",
+          "name": "Tibo",
+          "screen_name": "thsottiaux",
+          "description": "Codex & ChatGPT @OpenAI",
+          "followers_count": 777106,
+          "friends_count": 76,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 545,
+          "favorite_count": 7468,
+          "reply_count": 977,
+          "quote_count": 684
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 20,
+        "reply_count": 14,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2105855044046463308",
+      "text": "帮转程序员求职，需要 H1B Sponsor",
+      "created_at": "Fri Oct 02 02:59:02 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2105810806533452102",
+        "text": "不能免俗也进入中年程序员求职的赛道了，来 X 上看看有没有合适的机会，欢迎转发扩散。\n\n个人背景：之前都在大厂，10+ 年工程经验，前端各个方向都做过，也带过团队、负责过完整的业务和技术方向。\n\n目前人在湾区，主要想看前端/全栈/Agent 相关方向，需要 H1B Sponsor，优先考虑 Base 在湾区或者 Remote，其他方面都比较 Flexible。\n\n有合适机会欢迎 DM，感谢 🙏",
+        "created_at": "Fri Oct 02 00:03:15 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "614450038",
+          "name": "果大",
+          "screen_name": "guoda2066",
+          "description": "真实且松弛",
+          "followers_count": 3188,
+          "friends_count": 539,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 13,
+          "favorite_count": 67,
+          "reply_count": 9,
+          "quote_count": 8
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 8,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2105863984624599374",
+      "text": "我可能又算错了，应该是 10 月 3 日凌晨 1 点 🥲",
+      "created_at": "Fri Oct 02 03:34:33 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

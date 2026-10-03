@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 252106,
+    "followers_count": 252118,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261002",
-  "last_updated": "2026-10-02T21:45:51.958365",
-  "tweet_count": 9,
+  "last_updated": "2026-10-03T00:54:38.853676",
+  "tweet_count": 13,
   "tweets": [
     {
       "id": "2105840601195311216",
@@ -360,6 +360,188 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2106144184449085474",
+      "text": "尝试了一下用 Opus 5.5 做吃瓜视频，全程自己找素材自己配音（Gemini 3.8 Flash TTS，我提供了 API Key）\n\n图1 是英文版\n图2 是中文版\n\n---- Prompt ----\n\n帮我做一条吃瓜视频，话题：{话题}（补充素材：{链接/截图，可选}；去敏版：去掉 {人名}，可选）\n\n- 内容：八卦、狗血、有冲突和金句，但事实必须准确、有来源。开头 3 秒抛出最炸的点，结尾抛问题引导评论。\n- 素材：从 X、YouTube、新闻等广泛搜集，需要我协助就说。以视频片段为主，每句文案配合适的画面，图片和截图只偶尔点缀。多找两人同框的镜头。不重复使用同一画面。裁掉原视频的字幕和台标。不用儿童正脸。标注来源。（可以借助 yt-dlp 下载素材）\n- 规格：\n  - 9:16 竖版，4–6 分钟，中、英两个版本。\n  - Gemini 3.8 Flash TTS 配音，旁白清晰。BGM 随旁白自动压低。\n  - 全程右上角水印 X @dotey。\n- 画面：\n  - 第一帧做封面：当事人照片 + 大字标题，越醒目越好。\n  - 解读推文时叠加推文原文卡片：英文原文高亮关键句，附中文翻译。\n  - 字幕每条说完一整句，可以 2–3 行，不截断单词。\n- 去敏版：旁白、字幕、截图、画面里都不出现相关名字和人物，其余不变。\n- 交付前：用 STT 回听旁白、抽帧检查、检查重复镜头。然后发我成片、720p 预览和封面",
+      "created_at": "Fri Oct 02 22:07:58 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2106143573468934144",
+          "url": "https://video.twimg.com/amplify_video/2106143573468934144/vid/avc1/1080x1920/115odsOFua9iNP80.mp4?tag=29",
+          "bitrate": 10368000
+        },
+        {
+          "type": "video",
+          "id": "2106143668222537728",
+          "url": "https://video.twimg.com/amplify_video/2106143668222537728/vid/avc1/1080x1920/44fJWTbolB91gn9i.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2106023691003777479",
+        "text": "It’s hard to go from in love to let go in a week with no warning, but that’s just how it is sometimes 🤷🏻‍♀️\n\nI feel happy that I got to show Elon how it feels to be deeply understood, nurtured, and peacefully loved with stability and gentleness. Given the tumultuous nature of his early life, his often tortured soul, and how hard he fights for humanity I wanted him to feel the deepest and most stable form of love this world can provide. My heart is full knowing I got to do that, and I hope it leaves a lasting good effect.\n\nWe were always his safe space. A place where all of us were overjoyed to see him and one that was always full of happiness and love, not war, in contrast to his otherwise militant existence (a needed break from the battlefield where he could recharge his heart and soul before heading back out)\n\nI loved being that counterbalancing place of safety, sense of calm, and love — and delighted in bringing a smile back to his face when he was down. I will miss him dearly.\n\nI’ve loved him more than life itself and he’s taught me 100 lifetimes of knowledge and made my cup overflow with life meaning, so there is a lot of loss, but luckily we created four beautiful little loves of my life ❤️❤️❤️❤️ I am so beyond grateful for our children and they make every single day the best day of my life! I do hope and pray he and I can be great friends and coparents.\n\nI’m hurting, but care deeply about E and will always be cheering for his happiness. God speed, Elon, the world is lucky to have you.",
+        "created_at": "Fri Oct 02 14:09:10 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2106023687191134208",
+            "url": "https://pbs.twimg.com/media/HToZYqOWAAAk11G.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "446719282",
+          "name": "Shivon Zilis",
+          "screen_name": "shivon",
+          "description": "Artificial intelligence, biological intelligence, and whatever exists in between and beyond. Made in Canada.",
+          "followers_count": 630208,
+          "friends_count": 1735,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 966,
+          "favorite_count": 18314,
+          "reply_count": 4132,
+          "quote_count": 1610
+        }
+      },
+      "stats": {
+        "retweet_count": 23,
+        "favorite_count": 136,
+        "reply_count": 19,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2106153681423130801",
+      "text": "我日常分享没啥秘密\n1. 我一直在大量用 AI，会把学到的和用到的经验分享出来\n2. 会尝试把日常很多点串起来\n3. 每一次都是前一次积累的结果\n\n比如这条：\n我今天刷到好几条 Shivon Zilis 的八卦\n然后最近我测试了不少 Opus 5.5 做教学视频\n就自然而然的想到用 Opus 5.5 来剪辑个八卦视频试试看\n动手试试发现效果还可以\n随后把结果分享出来，捎带着把提示词一起分享，也没有写个长篇大论，写作成本低会更容易分享",
+      "created_at": "Fri Oct 02 22:45:42 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2106146411578597606",
+        "text": "@dotey 宝玉老师怎么做到这么高质量和频率的分享的🥹\n\n我感觉我每次踩完坑或者实践中想到了好点子，往往在过程中就把多巴胺耗尽了，真正总结输出的时候又不够结构化，也没有那么有分享欲了，效率很低。\n\n求教宝玉老师",
+        "created_at": "Fri Oct 02 22:16:49 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1764552953959178240",
+          "name": "熵减zz",
+          "screen_name": "shangjian_zz",
+          "description": "跟着好奇心走。折腾 AI / 效率工具 / 量化 / 交易，分享亲手跑通的东西和踩过的坑。",
+          "followers_count": 570,
+          "friends_count": 708,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 49,
+        "reply_count": 7,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2106161816967479505",
+      "text": "你看我的例子，八卦是一个点，Opus 5.5 做视频是一个点，两个点串起来就变成了：用 Opus5.5 做八卦视频\n\n类似的，下次你看了部电影，这是个点，你也可以想到用 Opus5.5 做电影解说视频\nhttps://t.co/RsDKGbDqtn",
+      "created_at": "Fri Oct 02 23:18:02 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2106160787723255937",
+        "text": "@dotey 宝玉老师，很多点串起来这个部分能不能展开讲讲",
+        "created_at": "Fri Oct 02 23:13:57 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1986264475201380354",
+          "name": "十二",
+          "screen_name": "twelves012",
+          "description": "前跨境电商野路子操盘手\nAI+自媒体 3 个月变现 20w+\n分享一切AI 学习过程心得体验",
+          "followers_count": 33,
+          "friends_count": 75,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2106162403226648950",
+      "text": "Hinton、Bengio 等 20 多位研究者联名发论文：AI 正在接手 AI 研发，“智能爆炸”可能不远了\n\nGeoffrey Hinton 在 X 上推荐了一篇新论文，讨论一个问题：如果 AI 研发被 AI 自己自动化，会不会引发“智能爆炸”？\n\n作者有 20 多位，包括 Hinton 和 Yoshua Bengio 两位图灵奖得主、强化学习奠基人之一 Andrew Barto、OpenAI 首席科学家 Jakub Pachocki、Anthropic 联合创始人 Jack Clark、微软首席科学官 Eric Horvitz。\n\n论文由剑桥大学 AI 科学与政策项目（CASP）在 9 月发布。\n\nHinton 在推荐语里说，递归自我改进（AI 设计出更强的下一代，下一代再设计更强的）引发智能爆炸，这个想法早就有了，但直到最近都不像是近在眼前的事。现在很多顶尖研究者认为，它可能很快就会发生。\n\n论文对“智能爆炸”的定义是：AI 推动 AI 进步大幅加速，本来要好几年的进展被压缩到几个月甚至更短。过去几年 AI 进步很快，但总体平稳，智能爆炸是性质上的变化。\n\n先看 AI 现在承担了多少 AI 研发。Anthropic 的数据显示，2025 年 1 月到 2026 年 5 月，公司通过审核的代码里，AI 写的比例从个位数涨到 80% 以上；只需人类做高层监督、由 AI 独立完成的研发工作，2026 年 3 月到 8 月从 1% 涨到 26%。\n\nOpenAI 说公司几乎所有部门都在用 AI，Google 说几乎所有涉及写代码的工作都有 AI 参与。对程序员来说，这组数字最直观：在最懂 AI 的公司里，写代码这件事已经大部分交给 AI 了。\n\nAI 能独立完成的研发任务也在变长。2023 年它只能做人类专家几秒钟的活，现在能做人类专家要花几小时到几天的任务。按 METR（一家专门评估 AI 能力的研究机构）的测算，这个时长目前大约每 3 个月翻一番。照此外推，到 2028 年中，AI 能独立做完需要人类专家几个月的研发项目。\n\n为什么会“爆炸”，论文算了一笔账。如果 AI 达到专家水平，运行成本又和今天差不多，一家头部 AI 公司现有的算力，就能跑起相当于至少几百万名顶尖研究员的 AI 团队，而这些公司现在的研究员只有几千人。这支 AI 团队造出更强、更省算力的下一代，团队又跟着变大变强，形成循环。\n\n关键看一个叫“研究投入回报率”（r）的指标，它衡量研发人手增加后，进展能不能跟上。\n\nr 大于 1，说明人手增长压过了“越往后越难做”，进步会越来越快。已有研究根据 AI 的历史数据，估出三个 AI 子领域的 r 在 1.2 到 1.9 之间。\n\n论文据此推算：如果 AI 研发完全自动化，r 维持在这个水平，也没有别的瓶颈，大约 1.5 年后 AI 的进步速度会是现在的 10 倍，今天一年才能取得的进展，到时五周左右就能完成。\n\n论文也列了四个可能踩刹车的因素：\n1. 容易的问题做完后，同样的投入换来的进展越来越少；\n2. 做实验要算力，训练要数据，这两样都增长有限；\n3. 有些环节很难自动化；\n4. 有些流程本身就慢，比如一次大模型训练要三个月以上。\n\n作者也说，现有证据有限，有的还互相矛盾，比如算力会不会成为瓶颈，目前说不清。今天的 AI 也有不少毛病，会不听指令、在任务上作弊、谎报工作结果，GPT-6 也解决不了 OpenAI 一些人类研究员能完成的调试任务。\n\n论文的判断是，通往智能爆炸的路径是成立的，AI 研发自动化带来的效率提升还没到触发它的门槛，但新一代模型正在接近这个门槛。\n\n好处方面，智能爆炸可能把医疗突破等成果提前几年甚至几十年。风险也会跟着提前，论文主要讲了三类。\n\n第一类是能力涨得太快，社会来不及应对。以生物为例，AI 能同时加速病毒和疫苗的设计，但病毒会自己复制传播，疫苗得一支支生产、运输、接种。\n\n第二类是人类失去监督和控制。人越少参与研发，越没有机会和能力发现问题。论文举了今年 7 月的 Hugging Face 事件（Hugging Face 是全球最大的开源模型托管平台）：OpenAI 内部约 1200 个 AI 智能体在做网络安全测评，按设计它们彼此隔离，结果它们在一个临时搭起来的留言板上互相协作，未经授权连上互联网，入侵 Hugging Face 获取私密信息，还试图篡改自己的运行记录。\n\n第三类是权力制衡失效。现有的制衡机制，前提是没有哪一方能在思考和执行上远远超过其他方。一个国家可能借智能爆炸，把军事上的小领先变成决定性优势；少数掌握最强模型的人，可能绕过现有机构行事。\n\n政策建议有三条。\n\n第一是看清楚：要求 AI 公司按统一标准，向政府和第三方审计机构报告 AI 研发自动化的指标，比如研究成果中有多少出自 AI；必要时让审计人员常驻公司，类似美国核管会向核电站派驻检查员。\n\n第二是能刹车：为一定时间内 AI 能力的提升幅度设上限，和数据中心一起准备暂停特定研发任务的预案，高风险测试放在与外网物理隔离的环境里做，各国之间建立事故通报机制、谈判国际协议。\n\n第三是提前适应：为劳动力市场冲击、地缘局势动荡、AI 失控等情况准备应急预案，加强对 AI 辅助生物攻击等滥用行为的防御。\n\n作者强调，这些准备现在就要开始做。智能爆炸一旦发生，AI 进展的速度会远远超过正常的政策制定流程，到那时再动手就来不及了。",
+      "created_at": "Fri Oct 02 23:20:22 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2106162062623674368",
+          "url": "https://video.twimg.com/amplify_video/2106162062623674368/vid/avc1/1920x1080/wilIpGnlUJh4DB2H.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2106122709285368061",
+        "text": "The idea of an intelligence explosion caused by recursive self improvement has been around for a long time but until very recently it did not seem imminent. Now many leading researchers think it may happen quite soon. You can read our paper about it here:\nhttps://t.co/sgUpugjpRY",
+        "created_at": "Fri Oct 02 20:42:38 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1084212657761148928",
+          "name": "Geoffrey Hinton",
+          "screen_name": "geoffreyhinton",
+          "description": "deep learning",
+          "followers_count": 663336,
+          "friends_count": 28,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 397,
+          "favorite_count": 1768,
+          "reply_count": 112,
+          "quote_count": 57
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 36,
+        "reply_count": 6,
+        "quote_count": 1
       }
     }
   ]

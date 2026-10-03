@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-10-03T06:04:28.392895",
+  "tweet_count": 13,
+  "summary": "**新工具/技术**（如有）\n- Claude Code + Mod：Anthropic 的编程助手 Claude Code 现在支持用 TypeScript 写“小插件（Mod）”改行为和 UI，Mod 可在流水线各环节拦截/修改/放行动作。  \n- DeepSeek Harness：开源的拼装式智能体框架（MIT 许可），从模型到管理循环均可替换，强调“一切皆插件”的高度可定制性。  \n- Opus 5.5：Anthropic 新一代多模态模型，能写绘图代码并多轮自检，适合生成视觉内容与自动化视频制作。  \n- Codex 新功能集合（Ultrafast / dots / Space / 云端 Codex）：Ultrafast 提速生成、dots 做长期智能体、Space 为团队协作、云端 Codex 支持在服务器上跑任务。  \n\n**核心观点/方法论**（如有）\n- 插件化趋势：把功能做成可装卸的 Mod/插件，能让产品从“一个大房子”变为“可按需扩展的模块化系统”，降低用户定制成本并促进生态。  \n- 权限风险与信任边界：Mod 与主程序同权限、无隔离，带来便利的同时也把读写文件、API key、自动批准等高风险权限暴露出来，安全治理变得更重要。  \n- 开放与封闭的权衡：DeepSeek 提供极大自由与可替换性，但兼容性与稳定性风险高；Claude Code 在封闭平台上以插件化逐步开放，适合已有生态的用户。  \n- AI 自动化研发的系统性风险（智能爆炸）：论文提示如果 AI 大规模替代研发人员并保持高回报率 r，进步可能呈指数级加速，要求提前制定审计、刹车和应急策略。  \n- 内容创作的“串点”方法论：把不同的小点（事件、模型能力、制作工具）组合成可产出的场景，是低成本高频分享的可复制策略。  \n\n**实践经验/案例**（如有）\n- Claude Code Mod 示例：在模型请求前自动加“请用中文回答”、对含密码的文件做红action、拦截危险命令、或在 UI 加显示测试结果的小窗，都是典型实用场景。  \n- 安装与版本要点：Mod 通过 /plugin 安装，需 Claude Code 2.1.287+，功能默认开启；企业可限制可装 Mod 列表并预装安全 Mod。  \n- 安全建议：只装信任来源的 Mod，企业应用中由管理员集中管控和强制安全策略以防权限绕过。  \n- Opus 5.5 视频实操：dotey 用 Opus 5.5 + Gemini 3.8 Flash TTS 自动化剪辑竖版吃瓜视频，配套给出完整 Prompt 模板（素材、规范、去敏规则与验收流程），证明模型可落地成品级流程。  \n- 产品选择建议：想从底层高度可控、换模型自由的团队选 DeepSeek；已在 Claude 生态、想快速定制的用户优先用 Claude Code + Mods。",
+  "metadata": {
+    "original_tweets": 12,
+    "retweets": 1,
+    "media_tweets": 4,
+    "data_hash": "cb61af0c",
+    "user": "dotey"
+  }
+}

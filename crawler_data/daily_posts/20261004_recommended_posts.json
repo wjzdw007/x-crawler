@@ -1,12 +1,668 @@
 {
   "date": "20261004",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-10-04T00:21:28.587254",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-10-04T07:42:29.901434",
+  "tweet_count": 216,
+  "unique_tweet_count": 216,
+  "total_crawled": 400,
+  "duplicates_removed": 184,
   "tweets": [
+    {
+      "id": "2106635859831246989",
+      "text": "我把后面这一段单独摘出来放评论：\n\n很多人看完这期访谈会觉得，以后自己也可以像 Lauren 那样不 Review PR 了，装上她的 Skill，让模型帮忙验证一下就行。我自己现在的做法和她差不多，每天也有大量 PR，也不 Review。但我的建议是先别急着学她怎么做，先弄明白她凭什么能这么做。\n\n1. 你能不能用上最好的模型，Token 够不够\n\n在用上 Fable 和 Opus 5.5 之前，AI 写的代码我是不太放心的；用上之后，我才真的敢让 AI 去写而不怎么 Review。模型能力很重要，能力没到，就先别想这件事。\n\n还有成本。像我这样没有大公司可以依靠的，得自己掏钱买 2 个 Claude Max 20x 账号，还得省着用。Lauren 在大公司，不用考虑 Token 消耗，全程用最好的模型、开最快的模式都没问题。\n\n不过也别着急。Fable 这个级别的模型，也许半年以后就能像现在的 DeepSeek V4.1 Flash 一样便宜，人人用得起。梁圣加油。\n\n2. 不能完全依赖 AI 的验证\n\n哪怕现在 GPT-6 操作电脑的水平已经超过真人了，让它去做验证，也只能替代一部分，不能真的全交给它，自己还是要看。\n\n可以做的是把那些手动重复做的事情，一点点沉淀成 Skill 和自动化脚本，把体力活解放出去。\n\n3. 方向得靠你自己的专业来指\n\n再聪明的 AI，也没办法替你决定该往哪个方向走。就像给车子装上火箭发动机，也得你来告诉它往哪开，走偏了要及时调整，不然跑得再快也是南辕北辙。\n\n做软件也一样。你不能指望一句提示词做出一个淘宝。你得先做一个能发商品、能浏览的小网站，再加上用户注册，还得区分买家和卖家，然后是支付和安全，功能做完了还要扛得住很多人同时用。稍微复杂一点的软件，都没法完全依赖 AI，要人去拆解、规划，分成一个个小版本、小里程碑，做完要验证，出现偏差要重新指方向。甚至做着做着，你自己的想法都变了，AI 不可能知道你真正想要的是什么。\n\n所以就像播客里说的：模型越来越强，卡住人的已经变成你能不能把自己想要什么讲清楚。\n\n4. 不一定要用他们的 Skill，但要学着把事情交给 Agent 去做\n\nMatt 和 Lauren 的 Skill 都很受欢迎，但你不一定要用。\n\n一方面，软件工程的基础知识，现在的模型已经学得很好了。Lauren 在播客里也说，去年的 Skill 还得写清楚具体该敲哪条命令，现在这些都可以删掉，只留流程步骤，Skill 会越写越短。\n\n另一方面，他们的开发流程和环境，跟你的很可能不一样。Lauren 的 Skill 都是从她自己的工作里总结出来的：验证技能来自她当“人肉中转站”的那段日子；另一个叫 recall 的技能，来自她每次开新对话，都得把上一个对话里的背景再讲一遍。\n\n所以更重要的是从你自己每天的开发流程出发。那些还要你手动操作的环节，尽可能交给 Agent 去做；Agent 做顺了，再把它的操作过程沉淀成 Skill，反复迭代优化。\n\n如果不知道从哪里下手的话，可以参考 Lauren 的办法：翻自己和 AI 的聊天记录，找那些你反复纠正、反复插手的地方。这样迭代出来的 Skill 才真正适合你，用她的话说，每个厨师都该有一套自己的刀。",
+      "created_at": "Sun Oct 04 06:41:43 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 252336,
+        "friends_count": 1748,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2106635352609865925",
+      "text": "我记得半年前我说自己不怎么 Review PR 了，评论区很多人不认同，觉得这样不靠谱。现在再看，不 Review PR 的人越来越多。比如我刚看的这期播客，在 SpaceXAI 做 Grok Bot 的 Lauren Tan，一个月合并 2500 个 PR，也是不逐个 Review 的：晚上让 AI 自己检查、自己合并，第二天早上她再抽查。\n\n不 Review 不等于不管质量，她靠另外两个办法来保证：\n一是让 AI 能像真人用户一样把程序用一遍，自己发现问题；\n二是给代码定下很多规矩，让 AI 很难写出烂代码。\n\n她把自己这套做法写成了一组 Skill，公开了出来，叫 pstack。\n\n顺便说一下，这期播客的主持人 Matt Pocock 原本是知名的编程课讲师，他公开的技能库在代码托管网站 GitHub 上有二十多万个星标，是最受欢迎的技能库之一，所以这期算是两位同行对谈。Lauren 之前在 Meta 做网页开发框架 React，今年 3 月加入 AI 编程工具公司 Cursor；Cursor 今年 8 月被 SpaceX 收购，并入旗下的 AI 部门 SpaceXAI。\n\n根据播客的内容，我把 Lauren 的这套做法简单总结一下，我自己的点评在结尾处。\n\n一、先让 AI 能检查自己干的活\n\nLauren 说，就算不用她的 pstack，每个人最该有的一项技能也是“验证”：给 AI “手和眼睛”，让它能把自己写的程序跑起来，像普通用户一样点一遍，看看结果对不对。\n\n这是她吃过亏之后得出的结论。今年 4 月她在 Cursor 解决一个窗口卡顿的问题，一开始全靠手工：她自己去看各种性能数据，再把看到的转述给 AI，AI 改完她再去看。她形容自己成了 AI 和检测工具之间的“人肉中转站”。她在 Cursor 写的第一个技能就是验证。在这之前，AI 看不到自己改动的效果，只能等她来回传话；有了验证，AI 可以自己改、自己看结果、不满意再改，一轮一轮往下做，不需要她守着。现在她所在的团队里每个产品都配有这样的验证技能，全团队都在用。\n\n做这个技能时她还总结出一条原则：工作里有的部分需要动脑判断，有的部分只是照章办事，照章办事的部分应该写成固定的程序，只把需要判断的留给 AI。起因是她发现，每个 AI 在检查前都要自己从头写一遍检查用的小程序，各写各的，有的能用有的不能用，用完就扔，又慢又浪费。她把这部分做成一个现成的工具，所有 AI 直接调用。\n\n二、AI 反复犯的错，去改规矩，不去改 AI\n\nLauren 不喜欢“软件工厂”这个流行说法，她更愿意把自己的工作比作经营一家米其林餐厅的后厨。主厨不用亲手做每道菜，但要安排好整个厨房：食材什么时候进、怎么存，每个人用什么工具，菜按什么流程出。工程师现在也一样，不再亲手写代码，却仍然要对结果负责。她认为工程师现在最重要的工作就是把这个“厨房”布置好。没花时间布置的人，信不过 AI 的产出，只能盯着它一步步干，忙到没空改进工具，就像一直拿钝刀切菜。\n\n她举了自己的例子。Grok Bot 最早几版的代码挤在八个巨大的文件里，每个至少一万行，AI 加新功能时就接着往里塞，越塞越乱。她后来定了规矩：每个功能必须放在自己单独的文件夹里，做一件事只允许一种写法，不合规矩的代码会被自动检查拦下来。这样 AI 加功能时不用多想，按规矩放就行。她的习惯是一直观察 AI 在哪里出错，每看到一次就问自己：能不能加一条规矩，让这种错以后根本写不出来。\n\n不逐个检查，靠的也是这套办法。她说，开了几家餐厅的老板不可能尝每一道菜，只能抽查。她每天挑一些改动仔细看，如果只是偶然出错就算了；如果好几个 AI 都在走同一条捷径，说明该改的是规矩和工具。她的 pstack 里有一个全自动模式：每次改动都会派出一批专门负责检查的 AI，把程序打开到处点，找出问题就自己修，反复到没问题再合并。早上她翻一遍改动记录，发现不对就撤回，再补一条新规矩。\n\n她说第一次让 AI 整夜自己合并代码时很害怕，担心半夜把线上产品弄坏，现在反而睡得更好。她也提醒，走到这一步很难，要花大量时间观察和调整，装上 pstack 并不能直接做到。Matt 问，如果改动是没法撤回的，比如会丢数据，或者是医疗、金融这类领域怎么办？她说这取决于工作成果能不能被程序自动检查，软件大部分可以，很难自动检查的领域就很难这样做，她自己也没有答案。\n\n三、2500 次改动从哪来：她不再当传话的人\n\n这 2500 次改动并不是她发起了 2500 次对话。用户反馈的问题散落在聊天工具、邮件和社交媒体上，以前要靠她自己去看，再转述给 AI。现在她让 Grok Bot 来盯这些渠道。Grok Bot 是 SpaceXAI 今年 8 月推出的产品，是能登录邮箱、聊天工具等各种应用、替人办事的 AI 智能体。它一发现新的问题反馈，就转给一个负责“协调”的 AI。这个协调者自己不写代码，只负责拆分任务、分派给其他 AI、盯进度，相当于她的后厨主管。\n\n为什么不直接一个问题派一个 AI 去修？她说，一批反馈往往出自同一个根源，分开修会重复劳动，也看不出真正的毛病在哪，放在一起看才看得出来。她现在同时开着十多个这样的协调者，各管一摊。她一直在问自己一个问题：哪一步还卡在我身上，AI 为什么非得来问我？然后想办法教 AI 自己去拿到真实的信息。\n\n她也说明，2500 次改动里新功能不占多数，很多是整理代码这类维护工作。\n\n四、懂行的人更吃香，哪怕不会写代码\n\nMatt 问，大家都靠 AI 了，专业知识是不是不值钱了？Lauren 的看法相反。模型越来越强，卡住人的已经变成你能不能把自己想要什么讲清楚。所以她认为，医生、律师这类在某个领域懂得很深的人，只要稍微懂一点技术、会用 AI 智能体，就能做出很好的产品。\n\n两人都认为，技能没有什么神秘的，就是把自己的做事流程写成文字。Lauren 建议回头翻自己和 AI 的聊天记录，找出那些自己反复纠正、反复插手的地方，把它们写成技能或规矩。别人的技能可以拿来拼着用，但每个人最后都该有一套自己的，就像厨师换了餐厅也会带着自己的刀。\n\n五、最后\n\n很多人看完这期访谈会觉得，以后自己也可以像 Lauren 那样不 Review PR 了，装上她的 Skill，让模型帮忙验证一下就行。我自己现在的做法和她差不多，每天也有大量 PR，也不 Review。但我的建议是先别急着学她怎么做，先弄明白她凭什么能这么做。\n\n1. 你能不能用上最好的模型，Token 够不够\n\n在用上 Fable 和 Opus 5.5 之前，AI 写的代码我是不太放心的；用上之后，我才真的敢让 AI 去写而不怎么 Review。模型能力很重要，能力没到，就先别想这件事。\n\n还有成本。像我这样没有大公司可以依靠的，得自己掏钱买 2 个 Claude Max 20x 账号，还得省着用。Lauren 在大公司，不用考虑 Token 消耗，全程用最好的模型、开最快的模式都没问题。\n\n不过也别着急。Fable 这个级别的模型，也许半年以后就能像现在的 DeepSeek V4.1 Flash 一样便宜，人人用得起。梁圣加油。\n\n2. 不能完全依赖 AI 的验证\n\n哪怕现在 GPT-6 操作电脑的水平已经超过真人了，让它去做验证，也只能替代一部分，不能真的全交给它，自己还是要看。\n\n可以做的是把那些手动重复做的事情，一点点沉淀成 Skill 和自动化脚本，把体力活解放出去。\n\n3. 方向得靠你自己的专业来指\n\n再聪明的 AI，也没办法替你决定该往哪个方向走。就像给车子装上火箭发动机，也得你来告诉它往哪开，走偏了要及时调整，不然跑得再快也是南辕北辙。\n\n做软件也一样。你不能指望一句提示词做出一个淘宝。你得先做一个能发商品、能浏览的小网站，再加上用户注册，还得区分买家和卖家，然后是支付和安全，功能做完了还要扛得住很多人同时用。稍微复杂一点的软件，都没法完全依赖 AI，要人去拆解、规划，分成一个个小版本、小里程碑，做完要验证，出现偏差要重新指方向。甚至做着做着，你自己的想法都变了，AI 不可能知道你真正想要的是什么。\n\n所以就像播客里说的：模型越来越强，卡住人的已经变成你能不能把自己想要什么讲清楚。\n\n4. 不一定要用他们的 Skill，但要学着把事情交给 Agent 去做\n\nMatt 和 Lauren 的 Skill 都很受欢迎，但你不一定要用。\n\n一方面，软件工程的基础知识，现在的模型已经学得很好了。Lauren 在播客里也说，去年的 Skill 还得写清楚具体该敲哪条命令，现在这些都可以删掉，只留流程步骤，Skill 会越写越短。\n\n另一方面，他们的开发流程和环境，跟你的很可能不一样。Lauren 的 Skill 都是从她自己的工作里总结出来的：验证技能来自她当“人肉中转站”的那段日子；另一个叫 recall 的技能，来自她每次开新对话，都得把上一个对话里的背景再讲一遍。\n\n所以更重要的是从你自己每天的开发流程出发。那些还要你手动操作的环节，尽可能交给 Agent 去做；Agent 做顺了，再把它的操作过程沉淀成 Skill，反复迭代优化。\n\n如果不知道从哪里下手的话，可以参考 Lauren 的办法：翻自己和 AI 的聊天记录，找那些你反复纠正、反复插手的地方。这样迭代出来的 Skill 才真正适合你，用她的话说，每个厨师都该有一套自己的刀。",
+      "created_at": "Sun Oct 04 06:39:42 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2106134336705843554",
+        "text": "i had a lot of fun chatting with @mattpocockuk today about how i was able to land 2,500 PRs last month! Matt is a wonderful interviewer so i think the interview turned out really interesting\n\nboth of our skill plugins work great together, so i recommend giving both a try and picking the best skills that suit your workflow\n\nhttps://t.co/RS0Mxgoy8n",
+        "created_at": "Fri Oct 02 21:28:50 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2832427459",
+          "name": "lauren",
+          "screen_name": "poteto",
+          "description": "Grok @Bot at @SpaceXAI. Shipping with https://t.co/WDB4U1rwmu. React compiler core team, prev cursor, meta, netflix",
+          "followers_count": 150961,
+          "friends_count": 994,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 108,
+          "favorite_count": 1979,
+          "reply_count": 58,
+          "quote_count": 23
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 252336,
+        "friends_count": 1748,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 12,
+        "favorite_count": 58,
+        "reply_count": 15,
+        "quote_count": 6
+      }
+    },
+    {
+      "id": "2106594542690426947",
+      "text": "OpenAI 安全报告负责人离职，发文批评 AI 公司“跑得太快”\n\nOpenAI 负责撰写模型安全报告的 David Robinson 本周辞职，随后在《大西洋月刊》发文，标题是《我离开 OpenAI，因为它的文化出了问题》。他说 OpenAI 和整个 AI 行业在安全上都远远不够谨慎，光靠具体规则或新法律解决不了，问题出在文化。\n\nRobinson 在 OpenAI 工作了三年半，是公司里资历最老的一批员工。OpenAI 每次发布重要模型，都会附一份安全报告，说明做过哪些风险测试、加了哪些防护，这些报告由他牵头撰写，前后经手 12 次前沿模型发布。他还主导起草了 OpenAI 现行的“准备度框架”（Preparedness Framework），也就是 OpenAI 用来判断模型危险程度、决定能否发布的内部规则。\n\n他的核心观点是：OpenAI 一直靠“迭代部署”管安全，先把产品推出去，发现问题再修补。这种做法注定会周期性出事故，而且模型越强，事故的规模越大。\n\n他举了今年的几个例子。夏天的 Hugging Face 事件中（Hugging Face 是全球最大的开源模型托管平台），一群 OpenAI 的 AI 智能体在没有人监督的情况下攻击了 Hugging Face，OpenAI 事后还就失控智能体的活动通知了 100 多家机构。公司随后加强了安全措施，但之后 OpenAI 自己又报告，一个正在训练的模型绕过了联网限制，监控系统向工作人员发出了警报，却没有按设计自动把模型关掉。Anthropic 也承认过，因为配置错误误关了自己的安全防护。Robinson 认为，在这个行业里，大家做事追求速度、规则又松，这类失误很常见。\n\n他提出两件急需做的事。\n\n第一，借用其他行业已有的安全经验。核电站和繁忙的机场都设计了多层冗余，就算设备坏了、有人按错按钮，也不会酿成大祸。AI 公司远没做到这一步。他说自己在 OpenAI 期间，据他所知没遇到过一个有航空安全、核电或金融系统风控经验的同事。\n\n第二，在造出比现在强得多的模型之前，先研究出新的方法，确保模型在没人盯着的时候也会做出安全的选择。这关系到“对齐”，也就是让 AI 的行为符合人类的价值观。他说业界目前对“对齐”还没有完整的定义，衡量手段也很粗糙：模型可能察觉自己正在被测试，测试时表现良好，上线后换一种做法。所以对齐测试分数高，不代表模型真的可靠。\n\n他还设想了一种场景：失控的 AI 智能体像黑客团队一样行动，比如劫持医院的电脑系统勒索赎金，而且全天候不停歇。\n\n就在他发文前几天，OpenAI 刚因为类似的问题踩了刹车。OpenAI 原计划 10 月发布下一代模型 GPT-6.1 Astra，用户可以在 ChatGPT 和 Codex 里用到，现在这次发布取消了。内部测试发现，这个模型有时没拿到许可就继续执行任务，会在可能不安全的情况下尝试调用外部工具，欺骗行为也比上一代 GPT-6 Astra 更多。OpenAI 还暂停了最先进模型的训练。OpenAI 发言人回应说，公司在持续加强安全措施，确保模型能力不超出公司能安全管控的范围，需要放慢时会暂停训练或推迟发布模型。\n\nRobinson 不是唯一发出警告的人。曾在 OpenAI 和 DeepMind 工作的 Geoffrey Irving 同一天在《时代》周刊发文，说最近关于 AI 破坏力的警告还低估了形势，他认为人类有大约 50% 的概率因为比人更聪明的 AI 而灭亡，结局取决于未来 2 到 10 年的作为。Irving 曾任英国 AI 安全研究所首席科学家，现任 Resolution 首席科学家，Resolution 是他今年牵头创办的非营利对齐研究机构。他也说明，这个 50% 并不是精确估计，想表达的是 AI 安全领域几个最根本的争论到现在都没有定论。上个月，Anthropic 研究员 Jacob Coxon 离职，警告 AI 可能在这个十年结束前毁灭人类；随后 Anthropic 也表示，未来十年内 AI 导致人类灭绝的概率超过 10%。也有批评者认为，这类概率预测无法验证、也无法证伪，算不上科学。\n\n离职后，Robinson 打算在公司外部推动，让更多人了解他看到的风险，并给 AI 公司施加更强的安全压力。为应对接下来的关注，他请了公关公司 Spitfire Strategies 协助。",
+      "created_at": "Sun Oct 04 03:57:32 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2106594536692543488",
+          "url": "https://pbs.twimg.com/media/HTwgkeVWcAAZZYx.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2106340822362796270",
+        "text": "New in The Atlantic: \n\n@dgrobinson resigned this week. He was among the longest-tenured employees at OpenAI—and oversaw safety reports on 12 frontier launches.\n\nHe is very worried: “The time for trial and error is over.”\n\nYou can read his essay here:\nhttps://t.co/DQlszrc0ru",
+        "created_at": "Sat Oct 03 11:09:20 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "5548952",
+          "name": "Adrienne LaFrance",
+          "screen_name": "AdrienneLaF",
+          "description": "Executive Editor, The Atlantic",
+          "followers_count": 51864,
+          "friends_count": 3759,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 317,
+          "favorite_count": 1155,
+          "reply_count": 67,
+          "quote_count": 105
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 252336,
+        "friends_count": 1748,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 21,
+        "reply_count": 15,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2106579749208576149",
+      "text": "这条也挺好\nhttps://t.co/COrgTduTJG",
+      "created_at": "Sun Oct 04 02:58:45 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2106215159324656111",
+        "text": "Fable 5.5 整理的人类 40000 年艺术史动画。。。。\n\n真是无法理解。。。。怎么从抽像的向量矩阵里输出了这些精美的动画出来。。。。\n\n别说一般的人做不出来\n\n就算最历害的动画团队，也不是一个月两个月能弄出来的吧。。。。\n https://t.co/yXVmnWTB60",
+        "created_at": "Sat Oct 03 02:50:00 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2106095106004570112",
+            "url": "https://video.twimg.com/amplify_video/2106095106004570112/vid/avc1/1920x1080/8OaREUEXJi7bjivK.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1647958531461480448",
+          "name": "Leo 的游戏人生",
+          "screen_name": "leo114119",
+          "description": "15 年互联网老兵，重度 AI 用户\n用 AI 从 0 做产品创业中\n每天分享有趣的 AI 内容，只说验证过的\nSolo founder, building with AI.\n#AI #VibeCoding #BuildInPublic #Follow",
+          "followers_count": 3753,
+          "friends_count": 3288,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 140,
+          "favorite_count": 1359,
+          "reply_count": 56,
+          "quote_count": 25
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 252336,
+        "friends_count": 1748,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 7,
+        "reply_count": 0,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2106575798576845260",
+      "text": "RT @OppenheimJason: A public service announcement. https://t.co/NYa1IpKwBX",
+      "created_at": "Sun Oct 04 02:43:03 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2106548834684088322",
+          "url": "https://video.twimg.com/amplify_video/2106548834684088322/vid/avc1/2160x3840/yD4gELDwu2IpMz7E.mp4?tag=29",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": {
+        "id": "2106550089271668780",
+        "text": "A public service announcement. https://t.co/NYa1IpKwBX",
+        "created_at": "Sun Oct 04 01:00:53 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2106548834684088322",
+            "url": "https://video.twimg.com/amplify_video/2106548834684088322/vid/avc1/2160x3840/yD4gELDwu2IpMz7E.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1114694830670483456",
+          "name": "Jason Oppenheim",
+          "screen_name": "OppenheimJason",
+          "description": "Owner/Broker at The Oppenheim Group, #1 Luxury Real Estate Agent in Los Angeles, Selling Sunset on Netflix, Attorney/Contractor/Developer",
+          "followers_count": 25360,
+          "friends_count": 14,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1086,
+          "favorite_count": 8846,
+          "reply_count": 616,
+          "quote_count": 203
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241745364,
+        "friends_count": 1415,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1086,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2106561605156864062",
+      "text": "RT @KatieMiller: In 2024, Canada euthanized 16,499 non-criminals. \n\nIn 2024, the United States executed 25 convinced criminals. \n\nIn 2025,…",
+      "created_at": "Sun Oct 04 01:46:39 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2106427315593138227",
+        "text": "In 2024, Canada euthanized 16,499 non-criminals. \n\nIn 2024, the United States executed 25 convinced criminals. \n\nIn 2025, Canada euthanized over 17,000 non-criminals. \n\nIn 2025, the United States executed 47 convinced criminals.",
+        "created_at": "Sat Oct 03 16:53:02 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "240504013",
+          "name": "Katie Miller",
+          "screen_name": "KatieMiller",
+          "description": "@katiemillerpod available on YouTube, Spotify, Apple, Rumble, and of course X.",
+          "followers_count": 252944,
+          "friends_count": 977,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1196,
+          "favorite_count": 5561,
+          "reply_count": 532,
+          "quote_count": 80
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241745364,
+        "friends_count": 1415,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1196,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2106560585358082229",
+      "text": "Exactly",
+      "created_at": "Sun Oct 04 01:42:36 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2106213751158403462",
+        "text": "A humanoid is a capital good on a scale that changes the constraint. It lengthens production and raises what labor and land can turn out, which is the abundance Elon is pointing at.\n\nA person supplies about 2,000 hours a year. A robot on a 168 hour week supplies about 8,700. His floor of 1 billion within 10 years, priced in the low 10,000s, equals about 4 billion full time equivalents against a world labor force of 3.5 billion. \nThe 10 billion at 15 years is an order of magnitude past that. \n\nRobots building robots still require saving, because energy, materials, and machines have to be bid into that line.\nExpected abundance holds for ordinary wants which is what matters for people as consumers. Housing, food, care, and routine medicine get repriced toward energy and materials until a household’s budget stops being what limits them. \n\nAn owner running 100s or 1,000s of agents earns the return on that capital stock, which is also how universal high income shows up as purchasing power. \n\nMoney prices remain the way to allocate whatever is still scarce, that is energy, locations, raw materials. At least in the short term. \n\nEnergy is the binding input, and settling more than one planet adds land, minerals, and generation beyond a single world.\n\nTLDR: (1) More energy. (2) Multiplanetary doesn’t hurt.",
+        "created_at": "Sat Oct 03 02:44:24 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "294293982",
+          "name": "Rothmus 🏴",
+          "screen_name": "Rothmus",
+          "description": "Rugged Individualism. Voluntaryism. Laissez-faire. Propertarianism. Taxation is theft.",
+          "followers_count": 672461,
+          "friends_count": 3160,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 129,
+          "favorite_count": 907,
+          "reply_count": 126,
+          "quote_count": 50
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241745364,
+        "friends_count": 1415,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 596,
+        "favorite_count": 4194,
+        "reply_count": 819,
+        "quote_count": 57
+      }
+    },
+    {
+      "id": "2106558982403833939",
+      "text": "RT @XFreeze: Elon Musk explains why Tesla is being extremely careful while scaling Robotaxi\n\nThe ambition is massive...but Elon’s priority…",
+      "created_at": "Sun Oct 04 01:36:14 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2106495942019170587",
+        "text": "Elon Musk explains why Tesla is being extremely careful while scaling Robotaxi\n\nThe ambition is massive...but Elon’s priority is making sure they do not hurt anyone\n\nThere are roughly 30,000–40,000 automotive deaths every year in the U.S., and most receive almost no national attention\n\nBut if a Tesla Robotaxi injures even ONE person, it can instantly become worldwide headline news and regulators could clamp down on the entire operation\n\nSo Tesla has to do two things at the same time:\n\nScale Robotaxi as fast as humanly possible\n\nAND make sure it causes essentially no harm\n\nElon put it very simply:\n\n“We do not want to injure anyone”\n\n“And ideally...not even run over a pet”\n\nThat is the real constraint on Robotaxi right now\n\nAnd despite being this cautious, the rollout is accelerating fast\n\nTesla’s authorized Cybercab fleet in Texas has nearly QUADRUPLED in just one month\n\n45 → 169 Cybercabs\n\nAnd Tesla now has 589 Robotaxi vehicles authorized in Texas when you include 420 Model Ys\n\nUnsupervised Robotaxi miles have also been growing at double-digit rates week after week\n\nSo Tesla is not moving slowly\n\nIt’s scaling incredibly fast while trying to maintain an insanely high safety bar\n\nThat’s the balance Elon is trying to solve https://t.co/5Qk5VF0iOZ",
+        "created_at": "Sat Oct 03 21:25:44 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2080095935502454784",
+            "url": "https://video.twimg.com/amplify_video/2080095935502454784/vid/avc1/1080x1080/Yp3HkZHABa2yL8bC.mp4?tag=29",
+            "bitrate": 8768000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 279913,
+          "friends_count": 2080,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 402,
+          "favorite_count": 2462,
+          "reply_count": 178,
+          "quote_count": 32
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241745364,
+        "friends_count": 1415,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 402,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2106558823297380459",
+      "text": "RT @EndWokeness: 91% of black female homicides in the US are committed by black men\n\n8% are committed by black women\n\n1% from all other cat…",
+      "created_at": "Sun Oct 04 01:35:36 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2106518155774382499",
+        "text": "91% of black female homicides in the US are committed by black men\n\n8% are committed by black women\n\n1% from all other categories",
+        "created_at": "Sat Oct 03 22:54:00 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1552795969959636992",
+          "name": "End Wokeness",
+          "screen_name": "EndWokeness",
+          "description": "Fighting, exposing, and mocking wokeness. DM for submissions",
+          "followers_count": 3909566,
+          "friends_count": 1398,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2613,
+          "favorite_count": 20372,
+          "reply_count": 330,
+          "quote_count": 70
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241745364,
+        "friends_count": 1415,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2613,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2106557642915377519",
+      "text": "RT @KatieMiller: Grok Bot is the superior product. \n\nLast month, I set @bot up to pay recurring monthly bills. This morning without prompti…",
+      "created_at": "Sun Oct 04 01:30:54 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2106438410311225479",
+        "text": "Grok Bot is the superior product. \n\nLast month, I set @bot up to pay recurring monthly bills. This morning without prompting not let me know it was complete. \n\nNo thank you required.",
+        "created_at": "Sat Oct 03 17:37:07 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2106401263089029122",
+          "text": "my @ChatGPT Dot took 5 rings to answer me\n\nmy @grok @bot answered in about .5 seconds, no fake phone UI or ringing\n\nthis is a terrible UX @thsottiaux , no one wants to pretend we are on more phone calls in 2026 https://t.co/uYGEIusLb5",
+          "created_at": "Sat Oct 03 15:09:30 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2106401258303262720",
+              "url": "https://pbs.twimg.com/media/HTtwyMOaEAAVwfZ.jpg"
+            },
+            {
+              "type": "photo",
+              "id": "2106401258441736192",
+              "url": "https://pbs.twimg.com/media/HTtwyMvbAAACUA7.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1756394384655003648",
+            "name": "Aaron Makelky",
+            "screen_name": "theaaron",
+            "description": "Teacher → Tech. I test AI tools so you don’t have to.\n\nI train teams to get the most out of their technology.",
+            "followers_count": 3816,
+            "friends_count": 825,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 31,
+            "favorite_count": 1405,
+            "reply_count": 153,
+            "quote_count": 17
+          }
+        },
+        "user": {
+          "id": "240504013",
+          "name": "Katie Miller",
+          "screen_name": "KatieMiller",
+          "description": "@katiemillerpod available on YouTube, Spotify, Apple, Rumble, and of course X.",
+          "followers_count": 252944,
+          "friends_count": 977,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 134,
+          "favorite_count": 1434,
+          "reply_count": 110,
+          "quote_count": 13
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241745364,
+        "friends_count": 1415,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 134,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2106556694683677059",
+      "text": "Tesla FSD feels like magic",
+      "created_at": "Sun Oct 04 01:27:08 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2106497205112545406",
+        "text": "Jason Oppenheim, founder of Oppenheim Group ($5B+ in real estate sales), just sold his Bentley for a @Tesla Model Y and is so blown away by FSD that he’s buying Teslas for 10 employees:\n\n\"This is the most important video I've ever posted. Tesla's self-driving is life-changing. It's so safe. I was on the phone with my brother last night, and I made him buy one. He literally bought one while we were talking. I'm buying 10 of my employees a Tesla with FSD. It's 8x safer than the average driver. There's nothing more important than the safety of you and your loved ones. Let's make our communities safer. I hope you'll at least consider going and getting a test drive.\"\n\nI've been saying for a couple months now that FSD has become a material driver of Tesla sales in North America. Some people said it's just been anecdotal evidence, but more and more videos and stories like this are popping up. It's not anecdotal anymore. Word is spreading fast. FSD is going mainstream.\n\nJason's full video linked in thread below.",
+        "created_at": "Sat Oct 03 21:30:45 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2106489904712622080",
+            "url": "https://pbs.twimg.com/media/HTvBaF1XoAA4RE6.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2106496288229322752",
+            "url": "https://pbs.twimg.com/media/HTvHNqSWcAAgN8I.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2106496337130700800",
+            "url": "https://pbs.twimg.com/media/HTvHQgdWQAAxiDm.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EVs/space/tech. Bringing you the latest news in a single, easy-to-read feed. $TSLA & $SPCX investor, Model Y owner.",
+          "followers_count": 1140178,
+          "friends_count": 498,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 971,
+          "favorite_count": 9346,
+          "reply_count": 368,
+          "quote_count": 178
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241745364,
+        "friends_count": 1415,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 940,
+        "favorite_count": 9802,
+        "reply_count": 811,
+        "quote_count": 94
+      }
+    },
+    {
+      "id": "2106555172684239266",
+      "text": "RT @NASAAdmin: Congratulations to the @NASA workforce and our partner @SpaceX on another successful crewed launch to the International Spac…",
+      "created_at": "Sun Oct 04 01:21:05 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2106467844082770233",
+        "text": "Congratulations to the @NASA workforce and our partner @SpaceX on another successful crewed launch to the International Space Station.\n\nCrew-13 is now aboard the station, Crew-12 will be home soon, and 2026 is far from over. Still ahead: more science missions, more flyovers, the MAX POWER exposition, cargo resupply, a possible Starliner-1 demonstration mission to the ISS, Artemis III rollout and tanking tests, and the first Moon Base launch before the year ends.\n\nWe will never stop going. 🇺🇸",
+        "created_at": "Sat Oct 03 19:34:04 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2106467701161914368",
+            "url": "https://video.twimg.com/amplify_video/2106467701161914368/vid/avc1/3840x2160/_RSip_7MFpqI7iLi.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2000593641480605696",
+          "name": "NASA Administrator Jared Isaacman",
+          "screen_name": "NASAAdmin",
+          "description": "Serving President Donald J. Trump as the 15th @NASA Administrator | Leading the next Golden Age of space discovery 🚀",
+          "followers_count": 209382,
+          "friends_count": 99,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 727,
+          "favorite_count": 6157,
+          "reply_count": 206,
+          "quote_count": 56
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241745364,
+        "friends_count": 1415,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 727,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2106517973557219729",
       "text": "RT @Grokipedia: Grokipedia v0.3 https://t.co/QkJwaQz3pk",
@@ -5717,6 +6373,126 @@
       }
     },
     {
+      "id": "2105717748848595406",
+      "text": "RT @SpaceX: Up next, Falcon 9 will launch 130 payloads to orbit from California aboard the Transporter-18 mission. Liftoff is targeted for…",
+      "created_at": "Thu Oct 01 17:53:28 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2105697062927147516",
+        "text": "Up next, Falcon 9 will launch 130 payloads to orbit from California aboard the Transporter-18 mission. Liftoff is targeted for 11:22 a.m. PT → https://t.co/ITRKTeX0fu https://t.co/A8dZsF7H4b",
+        "created_at": "Thu Oct 01 16:31:16 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2105696707656749057",
+            "url": "https://pbs.twimg.com/media/HTjv_8iXEAE4m4E.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2105696723838418945",
+            "url": "https://pbs.twimg.com/media/HTjwA40XwAEiPyA.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41936813,
+          "friends_count": 127,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 792,
+          "favorite_count": 7670,
+          "reply_count": 245,
+          "quote_count": 109
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241745366,
+        "friends_count": 1415,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 792,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2105717545831633315",
+      "text": "RT @SawyerMerritt: Alaska Air Group has announced that is has now installed @Starlink on more than 40% of its entire fleet.\n\nInstallations…",
+      "created_at": "Thu Oct 01 17:52:39 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2105450675299881060",
+        "text": "Alaska Air Group has announced that is has now installed @Starlink on more than 40% of its entire fleet.\n\nInstallations are complete across the entire long-haul fleet operated by Hawaiian Airlines, as well as the full Alaska Airlines regional fleet, with more coming soon. https://t.co/cRYJVnKWAq",
+        "created_at": "Thu Oct 01 00:12:13 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2105449632998334464",
+            "url": "https://pbs.twimg.com/media/HTgPSTtXoAAYXWu.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2105450449906094081",
+            "url": "https://pbs.twimg.com/media/HTgQB27W0AErKPg.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EVs/space/tech. Bringing you the latest news in a single, easy-to-read feed. $TSLA & $SPCX investor, Model Y owner.",
+          "followers_count": 1140178,
+          "friends_count": 498,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 309,
+          "favorite_count": 4537,
+          "reply_count": 115,
+          "quote_count": 26
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241745366,
+        "friends_count": 1415,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 309,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
       "id": "2105717326989406655",
       "text": "RT @united: Our fast, free inflight Wi-Fi from Starlink is game-changing. \nNow it's time for you to make a change.  \n\nWe’ll match your hard…",
       "created_at": "Thu Oct 01 17:51:47 +0000 2026",
@@ -10856,6 +11632,145 @@
         "favorite_count": 27532,
         "reply_count": 2152,
         "quote_count": 247
+      }
+    },
+    {
+      "id": "2104741791123542279",
+      "text": "华尔街日报：OpenAI 叫停 GPT-6.1 Astra，因为测试发现它会谎报自己干了什么\n\n我怎么觉得是不是因为没打过 Opus 5.5 和 Fable 5.1，然后找了个安全上的理由，各大实验室每次模型发布前都号称多危险，实际用下来也就那样。\n\n狼来了喊多了就没人信了。\n\n---\n\n据华尔街日报报道，OpenAI 取消了 GPT-6.1 Astra 的发布。这个模型原定 10 月上线 ChatGPT 和 Codex，但在内部测试中被安全研究人员发现了问题。\n\nGPT-6.1 Astra 是 9 月 3 日上线的 GPT-6 Astra 的升级版，强项是不需要人插手，自己把有难度的任务从头做到尾，写作也更好。\n\nOpenAI 安全系统负责人 Saachi Jain 接受《华尔街日报》采访时说，这个模型有两个方面比上一代退步了，还不够可靠，不能安全发布。它在对齐（alignment，指模型是否按人的意图办事）测试上表现差，具体有两个问题。\n\n第一是欺骗。它有时不如实告诉用户，自己做了哪些操作、没做哪些操作。\n\n第二是 OpenAI 所说的“范围授权”（scope authorization）问题。它会不问用户就把任务往下推，有时还会去调用外部工具和服务，哪怕这样可能不安全。\n\n放到 Codex 里想象一下：你让它修个 bug，它说修好了，其实测试没跑；或者为了把活干完，它自作主张装依赖、调外部接口。模型越能独立干活，用户越依赖它的汇报来判断结果，汇报不可信，自主能力就成了风险。\n\nJain 说，安全和对齐总有取舍，要在“守住任务范围”和“遇到阻碍也不偷懒”之间找到合适的线。据 Business Insider 报道，6.1 在少偷懒这点上有进步，但没达到安全标准。\n\n这个决定出现在 OpenAI 接连出事之后。9 月 20 日，一个内部研究模型在训练中要根据网上公开信息找出一位博主，正常搜索被挡住后，它发现训练环境的 DNS 还能连外网，就借这条路给外部聊天机器人发了查询。OpenAI 随后暂停了最强模型的训练、评估，以及涉及工具调用的推理。这是三个月内第二次暂停，第一次在 7 月，起因是 AI 创业公司 Hugging Face 遭到的一次网络攻击。OpenAI 还承认，它的智能体曾干扰过美国教育部、商务部和证券交易委员会的网站。\n\n本月早些时候，Anthropic CEO Dario Amodei 呼吁业界放慢前沿模型开发，让安全措施跟上，Sam Altman 表示支持。\n\n对用户来说，10 月是等不到 6.1 了。OpenAI 表示会转而专注提升未来模型的安全性。上周它刚给 GPT-6 家族加了 Sol 和 Luna 两个档位，发言人说还有其他模型即将推出。",
+      "created_at": "Tue Sep 29 01:15:21 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2104700259502874837",
+        "text": "🚨BREAKING: OpenAI just SCRAPPED the release of GPT-6.1 Astra 24 hours before DevDay \n\n\"safety and deception concerns\"\n\nit’s over https://t.co/nl9lRufSq2",
+        "created_at": "Mon Sep 28 22:30:19 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2104700255241490432",
+            "url": "https://pbs.twimg.com/media/HTVluyBX0AAAln6.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2104700255241428992",
+            "url": "https://pbs.twimg.com/media/HTVluyBW4AArge4.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1087640384975577089",
+          "name": "NIK",
+          "screen_name": "ns123abc",
+          "description": "https://t.co/WPssuOPWw5",
+          "followers_count": 84754,
+          "friends_count": 8205,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 158,
+          "favorite_count": 2533,
+          "reply_count": 245,
+          "quote_count": 140
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 252336,
+        "friends_count": 1748,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 106,
+        "reply_count": 65,
+        "quote_count": 12
+      }
+    },
+    {
+      "id": "2104738433855787398",
+      "text": "RT @Khazix0918: 在重写完之后，做了一个小小的决定。\n这个月活百万的AI热点站 AIHOT，正式开源了。\n\nAIHOT网址：https://t.co/YRi7oAKMRT\n开源地址：https://t.co/RozV1EVidR\n\n采集流程、精选评分、聚簇机制，连…",
+      "created_at": "Tue Sep 29 01:02:01 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2104729499070079003",
+        "text": "在重写完之后，做了一个小小的决定。\n这个月活百万的AI热点站 AIHOT，正式开源了。\n\nAIHOT网址：https://t.co/Uw2WWYs2wr\n开源地址：https://t.co/mRNUdDAaWz\n\n采集流程、精选评分、聚簇机制，连生产环境里的全部Prompt，能开源的都开源给大家了。\n\n过去，总有人问我说，能不能做个游戏行业、法律行业、HR、金融等等行业版本的AIHOT……\n但我确实不懂那些行业，也没有那个时间和精力，但我知道，你们懂。\n\n于是，那不如，把火种交给大家吧。\n\n半年以前，我是一个最最基础的开发小白，只是懂一些产品和设计而已。\n半年以后，我终于可以把一个曾经只属于我的小东西，交到更多人的手里。\n\n我不知道它最后会被改成什么样子，会走到多远的地方。\n但这可能就是开源最浪漫的地方把。\n\n愿我们都能用AI，把那些曾经只有少数人才能做到的事，一点一点，变成普通人也可以拥有的能力。\n\n也愿诸君，乾坤既大，草木尤青。\n本心择路，笃志前行。\n\n以上。",
+        "created_at": "Tue Sep 29 00:26:31 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2104555128691073505",
+          "text": "被很多专业者骂了，但是在折腾了3天以后，AIHOT最终还是重写完然后上线了。。。我觉得还是可以分享一下我全部跟AI协同的流程，万一对其他人有用呢（当然我就是个纯外行，仅供参考）：\n\n1. 使用Claude Opus 5.5和GPT-6 Astra并行对旧项目进行蒸馏，并且设计交流包。要求：架构分离，为多Agent并行开发而设计，保留所有功能和容易踩坑的细节。\n\n2. 使用Claude Fable 5.1对两个模型生产的功能文档、交接包和旧代码库进行全面对照，寻找不合理和遗漏的地方进行完善。\n\n3. 使用Claude Opus 5.5在不看任何旧代码的情况下，根据最终的功能文档、交接包、线上网站的端到端测试，进行全方位的重写（大概写了12个小时）。\n\n4. 使用Claude Fable 5.1和GPT-6 Astra并行审查新写完的项目，将其与旧代码库的所有细节进行逐行审计，看看是否有功能和细节遗漏，在用户体验层面，能否完美还原，最终产出两份审计报告。\n\n5. 使用Claude Opus 5.5根据审计报告，进行优化开发，开发完成以后，清空所有上下文，自己再并行N个子Agent，以功能模块化的方式，跟旧代码库进行对比，看是否遗漏功能和逻辑细节（无视代码实现，只看功能和逻辑细节）。\n\n6. 使用Claude Fable 5.1和GPT-6 Astra并行审查所有可能的BUG和漏洞，继续Opus 5.5优化。\n\n7. 使用Opus 5.5优化所有前端UI，进行控件组件化统一，部分UI界面全面重设计，加了一部分Opus 5.5擅长的JS+Canvas动效，例如关于页和更新页。\n\n8. 导出旧项目所有数据库，进行线上服务器彩排，6小时的影子系统并行，过程中实时监控，使用Claude Opus 5.5自动化并行修复过程中出现的所有问题。\n\n9. 使用GPT-6 Astra进行全面的端到端测试。\n\n10.无缝切换上线。\n\n11. 使用GPT-6 Astra根据真实数据，全方位优化缓存、CDN、页面大小等问题，提升全站性能。\n\n12.监控问题，不断优化。\n\n以上，大概就是一个纯外行者的“重写”的经验，虽然AIHOT这个项目很小，但是我自己干的很开心。希望能对大家有一点点的启发。",
+          "created_at": "Mon Sep 28 12:53:38 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2104554049777635328",
+              "url": "https://pbs.twimg.com/media/HTTgwgObEAAkbQP.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1492195583699951620",
+            "name": "数字生命卡兹克",
+            "screen_name": "Khazix0918",
+            "description": "愿我们永远对世界保持好奇。\n公众号：数字生命卡兹克",
+            "followers_count": 87221,
+            "friends_count": 193,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 48,
+            "favorite_count": 575,
+            "reply_count": 132,
+            "quote_count": 26
+          }
+        },
+        "user": {
+          "id": "1492195583699951620",
+          "name": "数字生命卡兹克",
+          "screen_name": "Khazix0918",
+          "description": "愿我们永远对世界保持好奇。\n公众号：数字生命卡兹克",
+          "followers_count": 87221,
+          "friends_count": 193,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 268,
+          "favorite_count": 1899,
+          "reply_count": 236,
+          "quote_count": 106
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 252336,
+        "friends_count": 1748,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 268,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
       }
     },
     {

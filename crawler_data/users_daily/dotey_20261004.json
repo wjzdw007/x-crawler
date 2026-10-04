@@ -1,0 +1,160 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 252336,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261004",
+  "last_updated": "2026-10-04T07:42:29.920310",
+  "tweet_count": 4,
+  "tweets": [
+    {
+      "id": "2106579749208576149",
+      "text": "这条也挺好\nhttps://t.co/COrgTduTJG",
+      "created_at": "Sun Oct 04 02:58:45 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2106215159324656111",
+        "text": "Fable 5.5 整理的人类 40000 年艺术史动画。。。。\n\n真是无法理解。。。。怎么从抽像的向量矩阵里输出了这些精美的动画出来。。。。\n\n别说一般的人做不出来\n\n就算最历害的动画团队，也不是一个月两个月能弄出来的吧。。。。\n https://t.co/yXVmnWTB60",
+        "created_at": "Sat Oct 03 02:50:00 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2106095106004570112",
+            "url": "https://video.twimg.com/amplify_video/2106095106004570112/vid/avc1/1920x1080/8OaREUEXJi7bjivK.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1647958531461480448",
+          "name": "Leo 的游戏人生",
+          "screen_name": "leo114119",
+          "description": "15 年互联网老兵，重度 AI 用户\n用 AI 从 0 做产品创业中\n每天分享有趣的 AI 内容，只说验证过的\nSolo founder, building with AI.\n#AI #VibeCoding #BuildInPublic #Follow",
+          "followers_count": 3753,
+          "friends_count": 3288,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 140,
+          "favorite_count": 1359,
+          "reply_count": 56,
+          "quote_count": 25
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 7,
+        "reply_count": 0,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2106594542690426947",
+      "text": "OpenAI 安全报告负责人离职，发文批评 AI 公司“跑得太快”\n\nOpenAI 负责撰写模型安全报告的 David Robinson 本周辞职，随后在《大西洋月刊》发文，标题是《我离开 OpenAI，因为它的文化出了问题》。他说 OpenAI 和整个 AI 行业在安全上都远远不够谨慎，光靠具体规则或新法律解决不了，问题出在文化。\n\nRobinson 在 OpenAI 工作了三年半，是公司里资历最老的一批员工。OpenAI 每次发布重要模型，都会附一份安全报告，说明做过哪些风险测试、加了哪些防护，这些报告由他牵头撰写，前后经手 12 次前沿模型发布。他还主导起草了 OpenAI 现行的“准备度框架”（Preparedness Framework），也就是 OpenAI 用来判断模型危险程度、决定能否发布的内部规则。\n\n他的核心观点是：OpenAI 一直靠“迭代部署”管安全，先把产品推出去，发现问题再修补。这种做法注定会周期性出事故，而且模型越强，事故的规模越大。\n\n他举了今年的几个例子。夏天的 Hugging Face 事件中（Hugging Face 是全球最大的开源模型托管平台），一群 OpenAI 的 AI 智能体在没有人监督的情况下攻击了 Hugging Face，OpenAI 事后还就失控智能体的活动通知了 100 多家机构。公司随后加强了安全措施，但之后 OpenAI 自己又报告，一个正在训练的模型绕过了联网限制，监控系统向工作人员发出了警报，却没有按设计自动把模型关掉。Anthropic 也承认过，因为配置错误误关了自己的安全防护。Robinson 认为，在这个行业里，大家做事追求速度、规则又松，这类失误很常见。\n\n他提出两件急需做的事。\n\n第一，借用其他行业已有的安全经验。核电站和繁忙的机场都设计了多层冗余，就算设备坏了、有人按错按钮，也不会酿成大祸。AI 公司远没做到这一步。他说自己在 OpenAI 期间，据他所知没遇到过一个有航空安全、核电或金融系统风控经验的同事。\n\n第二，在造出比现在强得多的模型之前，先研究出新的方法，确保模型在没人盯着的时候也会做出安全的选择。这关系到“对齐”，也就是让 AI 的行为符合人类的价值观。他说业界目前对“对齐”还没有完整的定义，衡量手段也很粗糙：模型可能察觉自己正在被测试，测试时表现良好，上线后换一种做法。所以对齐测试分数高，不代表模型真的可靠。\n\n他还设想了一种场景：失控的 AI 智能体像黑客团队一样行动，比如劫持医院的电脑系统勒索赎金，而且全天候不停歇。\n\n就在他发文前几天，OpenAI 刚因为类似的问题踩了刹车。OpenAI 原计划 10 月发布下一代模型 GPT-6.1 Astra，用户可以在 ChatGPT 和 Codex 里用到，现在这次发布取消了。内部测试发现，这个模型有时没拿到许可就继续执行任务，会在可能不安全的情况下尝试调用外部工具，欺骗行为也比上一代 GPT-6 Astra 更多。OpenAI 还暂停了最先进模型的训练。OpenAI 发言人回应说，公司在持续加强安全措施，确保模型能力不超出公司能安全管控的范围，需要放慢时会暂停训练或推迟发布模型。\n\nRobinson 不是唯一发出警告的人。曾在 OpenAI 和 DeepMind 工作的 Geoffrey Irving 同一天在《时代》周刊发文，说最近关于 AI 破坏力的警告还低估了形势，他认为人类有大约 50% 的概率因为比人更聪明的 AI 而灭亡，结局取决于未来 2 到 10 年的作为。Irving 曾任英国 AI 安全研究所首席科学家，现任 Resolution 首席科学家，Resolution 是他今年牵头创办的非营利对齐研究机构。他也说明，这个 50% 并不是精确估计，想表达的是 AI 安全领域几个最根本的争论到现在都没有定论。上个月，Anthropic 研究员 Jacob Coxon 离职，警告 AI 可能在这个十年结束前毁灭人类；随后 Anthropic 也表示，未来十年内 AI 导致人类灭绝的概率超过 10%。也有批评者认为，这类概率预测无法验证、也无法证伪，算不上科学。\n\n离职后，Robinson 打算在公司外部推动，让更多人了解他看到的风险，并给 AI 公司施加更强的安全压力。为应对接下来的关注，他请了公关公司 Spitfire Strategies 协助。",
+      "created_at": "Sun Oct 04 03:57:32 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2106594536692543488",
+          "url": "https://pbs.twimg.com/media/HTwgkeVWcAAZZYx.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2106340822362796270",
+        "text": "New in The Atlantic: \n\n@dgrobinson resigned this week. He was among the longest-tenured employees at OpenAI—and oversaw safety reports on 12 frontier launches.\n\nHe is very worried: “The time for trial and error is over.”\n\nYou can read his essay here:\nhttps://t.co/DQlszrc0ru",
+        "created_at": "Sat Oct 03 11:09:20 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "5548952",
+          "name": "Adrienne LaFrance",
+          "screen_name": "AdrienneLaF",
+          "description": "Executive Editor, The Atlantic",
+          "followers_count": 51864,
+          "friends_count": 3759,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 317,
+          "favorite_count": 1155,
+          "reply_count": 67,
+          "quote_count": 105
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 21,
+        "reply_count": 15,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2106635352609865925",
+      "text": "我记得半年前我说自己不怎么 Review PR 了，评论区很多人不认同，觉得这样不靠谱。现在再看，不 Review PR 的人越来越多。比如我刚看的这期播客，在 SpaceXAI 做 Grok Bot 的 Lauren Tan，一个月合并 2500 个 PR，也是不逐个 Review 的：晚上让 AI 自己检查、自己合并，第二天早上她再抽查。\n\n不 Review 不等于不管质量，她靠另外两个办法来保证：\n一是让 AI 能像真人用户一样把程序用一遍，自己发现问题；\n二是给代码定下很多规矩，让 AI 很难写出烂代码。\n\n她把自己这套做法写成了一组 Skill，公开了出来，叫 pstack。\n\n顺便说一下，这期播客的主持人 Matt Pocock 原本是知名的编程课讲师，他公开的技能库在代码托管网站 GitHub 上有二十多万个星标，是最受欢迎的技能库之一，所以这期算是两位同行对谈。Lauren 之前在 Meta 做网页开发框架 React，今年 3 月加入 AI 编程工具公司 Cursor；Cursor 今年 8 月被 SpaceX 收购，并入旗下的 AI 部门 SpaceXAI。\n\n根据播客的内容，我把 Lauren 的这套做法简单总结一下，我自己的点评在结尾处。\n\n一、先让 AI 能检查自己干的活\n\nLauren 说，就算不用她的 pstack，每个人最该有的一项技能也是“验证”：给 AI “手和眼睛”，让它能把自己写的程序跑起来，像普通用户一样点一遍，看看结果对不对。\n\n这是她吃过亏之后得出的结论。今年 4 月她在 Cursor 解决一个窗口卡顿的问题，一开始全靠手工：她自己去看各种性能数据，再把看到的转述给 AI，AI 改完她再去看。她形容自己成了 AI 和检测工具之间的“人肉中转站”。她在 Cursor 写的第一个技能就是验证。在这之前，AI 看不到自己改动的效果，只能等她来回传话；有了验证，AI 可以自己改、自己看结果、不满意再改，一轮一轮往下做，不需要她守着。现在她所在的团队里每个产品都配有这样的验证技能，全团队都在用。\n\n做这个技能时她还总结出一条原则：工作里有的部分需要动脑判断，有的部分只是照章办事，照章办事的部分应该写成固定的程序，只把需要判断的留给 AI。起因是她发现，每个 AI 在检查前都要自己从头写一遍检查用的小程序，各写各的，有的能用有的不能用，用完就扔，又慢又浪费。她把这部分做成一个现成的工具，所有 AI 直接调用。\n\n二、AI 反复犯的错，去改规矩，不去改 AI\n\nLauren 不喜欢“软件工厂”这个流行说法，她更愿意把自己的工作比作经营一家米其林餐厅的后厨。主厨不用亲手做每道菜，但要安排好整个厨房：食材什么时候进、怎么存，每个人用什么工具，菜按什么流程出。工程师现在也一样，不再亲手写代码，却仍然要对结果负责。她认为工程师现在最重要的工作就是把这个“厨房”布置好。没花时间布置的人，信不过 AI 的产出，只能盯着它一步步干，忙到没空改进工具，就像一直拿钝刀切菜。\n\n她举了自己的例子。Grok Bot 最早几版的代码挤在八个巨大的文件里，每个至少一万行，AI 加新功能时就接着往里塞，越塞越乱。她后来定了规矩：每个功能必须放在自己单独的文件夹里，做一件事只允许一种写法，不合规矩的代码会被自动检查拦下来。这样 AI 加功能时不用多想，按规矩放就行。她的习惯是一直观察 AI 在哪里出错，每看到一次就问自己：能不能加一条规矩，让这种错以后根本写不出来。\n\n不逐个检查，靠的也是这套办法。她说，开了几家餐厅的老板不可能尝每一道菜，只能抽查。她每天挑一些改动仔细看，如果只是偶然出错就算了；如果好几个 AI 都在走同一条捷径，说明该改的是规矩和工具。她的 pstack 里有一个全自动模式：每次改动都会派出一批专门负责检查的 AI，把程序打开到处点，找出问题就自己修，反复到没问题再合并。早上她翻一遍改动记录，发现不对就撤回，再补一条新规矩。\n\n她说第一次让 AI 整夜自己合并代码时很害怕，担心半夜把线上产品弄坏，现在反而睡得更好。她也提醒，走到这一步很难，要花大量时间观察和调整，装上 pstack 并不能直接做到。Matt 问，如果改动是没法撤回的，比如会丢数据，或者是医疗、金融这类领域怎么办？她说这取决于工作成果能不能被程序自动检查，软件大部分可以，很难自动检查的领域就很难这样做，她自己也没有答案。\n\n三、2500 次改动从哪来：她不再当传话的人\n\n这 2500 次改动并不是她发起了 2500 次对话。用户反馈的问题散落在聊天工具、邮件和社交媒体上，以前要靠她自己去看，再转述给 AI。现在她让 Grok Bot 来盯这些渠道。Grok Bot 是 SpaceXAI 今年 8 月推出的产品，是能登录邮箱、聊天工具等各种应用、替人办事的 AI 智能体。它一发现新的问题反馈，就转给一个负责“协调”的 AI。这个协调者自己不写代码，只负责拆分任务、分派给其他 AI、盯进度，相当于她的后厨主管。\n\n为什么不直接一个问题派一个 AI 去修？她说，一批反馈往往出自同一个根源，分开修会重复劳动，也看不出真正的毛病在哪，放在一起看才看得出来。她现在同时开着十多个这样的协调者，各管一摊。她一直在问自己一个问题：哪一步还卡在我身上，AI 为什么非得来问我？然后想办法教 AI 自己去拿到真实的信息。\n\n她也说明，2500 次改动里新功能不占多数，很多是整理代码这类维护工作。\n\n四、懂行的人更吃香，哪怕不会写代码\n\nMatt 问，大家都靠 AI 了，专业知识是不是不值钱了？Lauren 的看法相反。模型越来越强，卡住人的已经变成你能不能把自己想要什么讲清楚。所以她认为，医生、律师这类在某个领域懂得很深的人，只要稍微懂一点技术、会用 AI 智能体，就能做出很好的产品。\n\n两人都认为，技能没有什么神秘的，就是把自己的做事流程写成文字。Lauren 建议回头翻自己和 AI 的聊天记录，找出那些自己反复纠正、反复插手的地方，把它们写成技能或规矩。别人的技能可以拿来拼着用，但每个人最后都该有一套自己的，就像厨师换了餐厅也会带着自己的刀。\n\n五、最后\n\n很多人看完这期访谈会觉得，以后自己也可以像 Lauren 那样不 Review PR 了，装上她的 Skill，让模型帮忙验证一下就行。我自己现在的做法和她差不多，每天也有大量 PR，也不 Review。但我的建议是先别急着学她怎么做，先弄明白她凭什么能这么做。\n\n1. 你能不能用上最好的模型，Token 够不够\n\n在用上 Fable 和 Opus 5.5 之前，AI 写的代码我是不太放心的；用上之后，我才真的敢让 AI 去写而不怎么 Review。模型能力很重要，能力没到，就先别想这件事。\n\n还有成本。像我这样没有大公司可以依靠的，得自己掏钱买 2 个 Claude Max 20x 账号，还得省着用。Lauren 在大公司，不用考虑 Token 消耗，全程用最好的模型、开最快的模式都没问题。\n\n不过也别着急。Fable 这个级别的模型，也许半年以后就能像现在的 DeepSeek V4.1 Flash 一样便宜，人人用得起。梁圣加油。\n\n2. 不能完全依赖 AI 的验证\n\n哪怕现在 GPT-6 操作电脑的水平已经超过真人了，让它去做验证，也只能替代一部分，不能真的全交给它，自己还是要看。\n\n可以做的是把那些手动重复做的事情，一点点沉淀成 Skill 和自动化脚本，把体力活解放出去。\n\n3. 方向得靠你自己的专业来指\n\n再聪明的 AI，也没办法替你决定该往哪个方向走。就像给车子装上火箭发动机，也得你来告诉它往哪开，走偏了要及时调整，不然跑得再快也是南辕北辙。\n\n做软件也一样。你不能指望一句提示词做出一个淘宝。你得先做一个能发商品、能浏览的小网站，再加上用户注册，还得区分买家和卖家，然后是支付和安全，功能做完了还要扛得住很多人同时用。稍微复杂一点的软件，都没法完全依赖 AI，要人去拆解、规划，分成一个个小版本、小里程碑，做完要验证，出现偏差要重新指方向。甚至做着做着，你自己的想法都变了，AI 不可能知道你真正想要的是什么。\n\n所以就像播客里说的：模型越来越强，卡住人的已经变成你能不能把自己想要什么讲清楚。\n\n4. 不一定要用他们的 Skill，但要学着把事情交给 Agent 去做\n\nMatt 和 Lauren 的 Skill 都很受欢迎，但你不一定要用。\n\n一方面，软件工程的基础知识，现在的模型已经学得很好了。Lauren 在播客里也说，去年的 Skill 还得写清楚具体该敲哪条命令，现在这些都可以删掉，只留流程步骤，Skill 会越写越短。\n\n另一方面，他们的开发流程和环境，跟你的很可能不一样。Lauren 的 Skill 都是从她自己的工作里总结出来的：验证技能来自她当“人肉中转站”的那段日子；另一个叫 recall 的技能，来自她每次开新对话，都得把上一个对话里的背景再讲一遍。\n\n所以更重要的是从你自己每天的开发流程出发。那些还要你手动操作的环节，尽可能交给 Agent 去做；Agent 做顺了，再把它的操作过程沉淀成 Skill，反复迭代优化。\n\n如果不知道从哪里下手的话，可以参考 Lauren 的办法：翻自己和 AI 的聊天记录，找那些你反复纠正、反复插手的地方。这样迭代出来的 Skill 才真正适合你，用她的话说，每个厨师都该有一套自己的刀。",
+      "created_at": "Sun Oct 04 06:39:42 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2106134336705843554",
+        "text": "i had a lot of fun chatting with @mattpocockuk today about how i was able to land 2,500 PRs last month! Matt is a wonderful interviewer so i think the interview turned out really interesting\n\nboth of our skill plugins work great together, so i recommend giving both a try and picking the best skills that suit your workflow\n\nhttps://t.co/RS0Mxgoy8n",
+        "created_at": "Fri Oct 02 21:28:50 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2832427459",
+          "name": "lauren",
+          "screen_name": "poteto",
+          "description": "Grok @Bot at @SpaceXAI. Shipping with https://t.co/WDB4U1rwmu. React compiler core team, prev cursor, meta, netflix",
+          "followers_count": 150961,
+          "friends_count": 994,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 108,
+          "favorite_count": 1979,
+          "reply_count": 58,
+          "quote_count": 23
+        }
+      },
+      "stats": {
+        "retweet_count": 12,
+        "favorite_count": 58,
+        "reply_count": 15,
+        "quote_count": 6
+      }
+    },
+    {
+      "id": "2106635859831246989",
+      "text": "我把后面这一段单独摘出来放评论：\n\n很多人看完这期访谈会觉得，以后自己也可以像 Lauren 那样不 Review PR 了，装上她的 Skill，让模型帮忙验证一下就行。我自己现在的做法和她差不多，每天也有大量 PR，也不 Review。但我的建议是先别急着学她怎么做，先弄明白她凭什么能这么做。\n\n1. 你能不能用上最好的模型，Token 够不够\n\n在用上 Fable 和 Opus 5.5 之前，AI 写的代码我是不太放心的；用上之后，我才真的敢让 AI 去写而不怎么 Review。模型能力很重要，能力没到，就先别想这件事。\n\n还有成本。像我这样没有大公司可以依靠的，得自己掏钱买 2 个 Claude Max 20x 账号，还得省着用。Lauren 在大公司，不用考虑 Token 消耗，全程用最好的模型、开最快的模式都没问题。\n\n不过也别着急。Fable 这个级别的模型，也许半年以后就能像现在的 DeepSeek V4.1 Flash 一样便宜，人人用得起。梁圣加油。\n\n2. 不能完全依赖 AI 的验证\n\n哪怕现在 GPT-6 操作电脑的水平已经超过真人了，让它去做验证，也只能替代一部分，不能真的全交给它，自己还是要看。\n\n可以做的是把那些手动重复做的事情，一点点沉淀成 Skill 和自动化脚本，把体力活解放出去。\n\n3. 方向得靠你自己的专业来指\n\n再聪明的 AI，也没办法替你决定该往哪个方向走。就像给车子装上火箭发动机，也得你来告诉它往哪开，走偏了要及时调整，不然跑得再快也是南辕北辙。\n\n做软件也一样。你不能指望一句提示词做出一个淘宝。你得先做一个能发商品、能浏览的小网站，再加上用户注册，还得区分买家和卖家，然后是支付和安全，功能做完了还要扛得住很多人同时用。稍微复杂一点的软件，都没法完全依赖 AI，要人去拆解、规划，分成一个个小版本、小里程碑，做完要验证，出现偏差要重新指方向。甚至做着做着，你自己的想法都变了，AI 不可能知道你真正想要的是什么。\n\n所以就像播客里说的：模型越来越强，卡住人的已经变成你能不能把自己想要什么讲清楚。\n\n4. 不一定要用他们的 Skill，但要学着把事情交给 Agent 去做\n\nMatt 和 Lauren 的 Skill 都很受欢迎，但你不一定要用。\n\n一方面，软件工程的基础知识，现在的模型已经学得很好了。Lauren 在播客里也说，去年的 Skill 还得写清楚具体该敲哪条命令，现在这些都可以删掉，只留流程步骤，Skill 会越写越短。\n\n另一方面，他们的开发流程和环境，跟你的很可能不一样。Lauren 的 Skill 都是从她自己的工作里总结出来的：验证技能来自她当“人肉中转站”的那段日子；另一个叫 recall 的技能，来自她每次开新对话，都得把上一个对话里的背景再讲一遍。\n\n所以更重要的是从你自己每天的开发流程出发。那些还要你手动操作的环节，尽可能交给 Agent 去做；Agent 做顺了，再把它的操作过程沉淀成 Skill，反复迭代优化。\n\n如果不知道从哪里下手的话，可以参考 Lauren 的办法：翻自己和 AI 的聊天记录，找那些你反复纠正、反复插手的地方。这样迭代出来的 Skill 才真正适合你，用她的话说，每个厨师都该有一套自己的刀。",
+      "created_at": "Sun Oct 04 06:41:43 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    }
+  ]
+}

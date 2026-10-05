@@ -1,12 +1,940 @@
 {
   "date": "20261005",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-10-05T08:11:07.891577",
-  "tweet_count": 212,
-  "unique_tweet_count": 212,
-  "total_crawled": 400,
-  "duplicates_removed": 188,
+  "last_crawl_time": "2026-10-05T19:03:08.195210",
+  "tweet_count": 229,
+  "unique_tweet_count": 229,
+  "total_crawled": 412,
+  "duplicates_removed": 183,
   "tweets": [
+    {
+      "id": "2107179527591891376",
+      "text": "OpenAI 也给 ChatGPT 的文字加水印了\n\nOpenAI 今天宣布，未来几周内，欧盟用户在 ChatGPT 和 Codex 里生成的文字会带上一种看不见的水印，用来满足欧盟《人工智能法案》（EU AI Act）的要求。\n\n顺便说一下 8 月，Anthropic 已经给 Claude 加了水印，原因也是一样的。\n\n起因是欧盟 AI 法案的透明度条款在今年 8 月 2 日生效，要求 AI 生成的内容能被机器识别。7 月欧盟出了一份配套的行为准则，Anthropic、OpenAI、Google、Meta、微软等约 190 家签了字。\n\n两家的差别主要在范围。\n\nOpenAI 只在欧盟给 ChatGPT 和 Codex 默认加水印，其他地区的 ChatGPT 用户不受影响。API 这边，全球开发者可以在项目或组织设置里自己打开，部分模型今天就能用，默认关闭。\n\nAnthropic 的方案是全球统一，水印直接做在模型层面，网页版、API、Claude Code 输出的文字都带，用户关不掉。Anthropic 给的理由是，暂时没有可靠的办法按地区区分。新模型已经带上水印，旧模型会在未来几个月陆续更新。图片和文件另外用 C2PA 标准，在文件元数据里附一段加密签名的来源说明。\n\n两家加水印的算法都差不多，大模型生成水印时，每一步都要在几个差不多合适的词里随机挑一个。水印就是把这个“随机”换成一套带密钥的规则，让选词带上一种统计规律。人读起来没有区别，检测工具拿着密钥一算，就能判断这段话大概率出自哪家的模型。OpenAI 把自己的技术叫 textGrain，Anthropic 的原理基本相同。\n\n检测工具两家都没对公众开放。OpenAI 只接受审核通过的研究人员和专业机构申请。Anthropic 的检测接口在内测，面向监管机构、执法部门、媒体、事实核查机构、研究人员、教育机构和有合规需求的企业。普通人想贴一段文字进去自己查，目前两家都做不到。\n\n理论上来说，你手动稍微改写或换个开源模型润色修改下，标记就会变弱。\n\n所以两家都强调：查不出水印，不能证明是人写的。水印也说明不了人改了多少、版权归谁、内容对不对。\n\n真是脱裤子放屁——多此一举！",
+      "created_at": "Mon Oct 05 18:42:03 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107164650249101695",
+        "text": "We're expanding our approach to content provenance to include text in response to EU regulatory requirements, while recognizing the significant limitations of current text watermarking technology.\n\nOur tools already help verify whether an image or audio file was created with our models. This work builds on those efforts to help people better understand when content may have been generated or edited with an OpenAI model.\n\nIn the EU, we’ll start watermarking eligible text from ChatGPT and Codex over the coming weeks to comply with the EU AI Act.\n\nCustomers using our API can turn on text watermarking for select models worldwide today.",
+        "created_at": "Mon Oct 05 17:42:56 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 5417195,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 145,
+          "favorite_count": 2437,
+          "reply_count": 333,
+          "quote_count": 155
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 254587,
+        "friends_count": 1748,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107165971148308941",
+      "text": "【OpenAI 28 天更新第 1 天：默认速度提升约五成】\n\n今天（10 月 5 日），Tibo 公布了第一项改进：通过 ChatGPT 订阅使用 GPT-6 Astra 和 GPT-6.1 Sol，默认速度提升约 50%。用户不用改任何设置，两小时内生效。\n\n这次提速针对的是默认档位。Codex 原本有个快速模式，代价是额度按标准档的 2.5 倍消耗。现在不切模式，也能快一截。\n\n具体数字是每秒输出 50 个 Token，之前是 30 个。Tibo 还说，OpenAI 的分词器是目前优化得最好的，模型完成同样的任务用的 Token 也更少，两者叠加，实际等待时间还会更短。\n\n提速覆盖 OpenAI 自家所有产品，也覆盖通过“用 ChatGPT 登录”接入的第三方工具，比如 OpenCode、Pi、Amp、Devin。这个功能是 9 月 29 日 DevDay 上推出的，用户可以在这些工具里直接用 ChatGPT 订阅的额度跑 OpenAI 的模型。",
+      "created_at": "Mon Oct 05 17:48:11 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107158998495748264",
+        "text": "Day 1/\n\nWe have optimized the default speed to be ~50% faster across GPT-6 Astra and GPT-6.1 Sol through the subscription across all our products and partners using Sign in With ChatGPT (including OpenCode, Pi, Amp, Devin, ...).\n\nNo changes needed on your end and this should be felt within the next two hours.",
+        "created_at": "Mon Oct 05 17:20:29 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1953337039510003712",
+          "name": "Tibo",
+          "screen_name": "thsottiaux",
+          "description": "Codex & ChatGPT @OpenAI",
+          "followers_count": 797173,
+          "friends_count": 76,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 451,
+          "favorite_count": 10471,
+          "reply_count": 1474,
+          "quote_count": 524
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 254587,
+        "friends_count": 1748,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 25,
+        "reply_count": 9,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107154896520966433",
+      "text": "RT @mranti: 这个世界颠倒过来了，教皇成为了世界理性之光，最先进的AI公司（Anthropic）却希望说服教皇相信AI已经有意识、有生命。",
+      "created_at": "Mon Oct 05 17:04:11 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2106913487024685121",
+        "text": "这个世界颠倒过来了，教皇成为了世界理性之光，最先进的AI公司（Anthropic）却希望说服教皇相信AI已经有意识、有生命。",
+        "created_at": "Mon Oct 05 01:04:54 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2105983638147891490",
+          "text": "In this era of artificial intelligence, it is becoming urgent to distinguish human art from what machines produce. There is an ontological difference, even before an aesthetic one, between art and what a machine can generate through statistical calculation based on millions of images created by others. Algorithms lack the spark of humanity. For this reason, the Church wishes to renew an alliance with artists and cultural institutions to safeguard our humanity.",
+          "created_at": "Fri Oct 02 11:30:01 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1922567634907791360",
+            "name": "Pope Leo XIV",
+            "screen_name": "Pontifex",
+            "description": "Welcome to the official account of His Holiness, Pope Leo XIV.",
+            "followers_count": 17894575,
+            "friends_count": 47,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 79733,
+            "favorite_count": 457253,
+            "reply_count": 4704,
+            "quote_count": 10933
+          }
+        },
+        "user": {
+          "id": "5709522",
+          "name": "Michael Anti",
+          "screen_name": "mranti",
+          "description": "安替, Globus, Global Research. A veteran journalist on International Affairs, Harvard Nieman Fellow '08, TEDGlobal Speaker.",
+          "followers_count": 357786,
+          "friends_count": 11445,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 22,
+          "favorite_count": 234,
+          "reply_count": 21,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 254587,
+        "friends_count": 1748,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 22,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107146548664566150",
+      "text": "现在 Agent 会话的交互，有很多借鉴自 Slack\n\n包括 Claude 最新的 Projects，就是脱胎于 Thread 设计，确实很简洁好用",
+      "created_at": "Mon Oct 05 16:31:00 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107080640462004243",
+        "text": "OpenAI 的一切产品决定都是从 Slack 上交流和协调的。\n\n这世界这么多 AI 巨头，当年收购 Slack 的却是 Saleforce",
+        "created_at": "Mon Oct 05 12:09:07 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1477948736156454913",
+          "name": "Dongxi 东锡 NLP",
+          "screen_name": "dongxi_nlp",
+          "description": "Prev. PhD @Stockholm_Uni | Alumni @KTHuniversity @uppsalauni Sharing insights on AI",
+          "followers_count": 41598,
+          "friends_count": 996,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 2,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 254587,
+        "friends_count": 1748,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 17,
+        "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107144243726729645",
+      "text": "学习研究了下 amontlabs/lcu 这个项目，它把 Codex 的 Computer Use（让 AI 看屏幕、点鼠标、敲键盘来操作电脑的能力）单独拆了出来，让 Claude Code、Codex CLI、Pi 等其他 AI Agent 工具也能调用。\n\n我本来还以为它是模仿 Codex 实现了一套，原来是直接用的 Codex 的 Computer Use，在本机找到已安装的 ChatGPT 桌面版，启动其中 OpenAI 自带的 Computer Use 运行时，再通过 MCP 接到你用的 Agent 工具里。仓库文档写明，指令、执行和权限策略都以 OpenAI 原版运行时为准。\n\n因此电脑上必须装有官方 ChatGPT 桌面版，但不需要登录 ChatGPT 或 Codex 账号。\n\n它给模型的工具很少。常见的电脑操控方案会把截图、点击、输入、滚动各做成一个工具，LCU 只给两个：js 和 js_reset。\n\njs 用来执行一段 JavaScript 代码，运行环境里预置了一个名为 cua 的对象。模型通过写代码来操作电脑：先调用 cua.getState() 拿到当前桌面状态和使用说明，再用 getApp 选定某个窗口，然后调用 click、typeText、pressKey、getScreenshot 等方法。点击、输入、读取结果可以写在同一段代码里，一次调用完成。\n\n这个 JavaScript 环境会保留状态，上一次调用里定义的变量，下一次还能接着用；环境出问题时调用 js_reset 清空重来。除了截图，模型还能读取窗口的无障碍信息（操作系统提供给读屏软件的界面元素列表），按元素点击，不必完全依赖屏幕坐标。\n\njs 加 cua 对象这套接口是 OpenAI 原版的设计，LCU 原样转发。仓库记录显示，在 macOS 上对比测试时，模型收到的初始化说明和首次调用返回的使用指南，与官方 Codex 收到的内容逐字节一致。\n\n目前正式适配的 Agent 工具是 Pi、Codex CLI 和 Claude Code，Oh My Pi 和 Hermes 为实验性支持。系统支持 Apple Silicon 芯片的 macOS（需授予辅助功能和屏幕录制权限），以及使用 X11 桌面的 Linux（ARM64 和 x86-64）。Windows 11 尚在候选阶段，Intel Mac 和 Wayland 桌面不支持。\n\n控制 Chrome 浏览器需要额外开启，走的是 OpenAI 官方 Chrome 扩展，每个网站仍需单独批准。安装需要 Python 3.12 以上，README 给出的做法是把一段提示词贴给自己的 Agent，让它按安装文档完成配置，也可以从 GitHub 手动下载安装包。\n\n项目地址：https://t.co/UigGSqo5fh",
+      "created_at": "Mon Oct 05 16:21:51 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2107144138705555456",
+          "url": "https://video.twimg.com/amplify_video/2107144138705555456/vid/avc1/1920x1080/IrLc9UE8t_jnBb5i.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2106647309102825969",
+        "text": "发现一个牛逼的东西，让任意 Agent 调用 Codex 的 Computer Use。\n\nCodex 最强的就是 Computer Use。\n\n但最近用 Claude Opus 5.5比较多，这样就强强联合了。\n\n刚测试通过，安装后建议配置个 Hook，指定白名单可控制哪些 App\n\n安装地址见评论区",
+        "created_at": "Sun Oct 04 07:27:12 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2106646989790429185",
+            "url": "https://pbs.twimg.com/media/HTxQRpWawAET9Fn.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2106647063811514368",
+            "url": "https://pbs.twimg.com/media/HTxQV9Ga4AAem72.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "6690032",
+          "name": "向阳乔木",
+          "screen_name": "vista8",
+          "description": "喜欢摇滚乐、爱钓鱼的PM\n第二届GEO大会报名-11-21/22日-深圳南山\nhttps://t.co/N75cblhK9R",
+          "followers_count": 128934,
+          "friends_count": 1655,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 35,
+          "favorite_count": 346,
+          "reply_count": 101,
+          "quote_count": 9
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 254587,
+        "friends_count": 1748,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 13,
+        "favorite_count": 118,
+        "reply_count": 29,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2107138613721039224",
+      "text": "@0xdeusyu 美中不足是好几个进球画面没放全",
+      "created_at": "Mon Oct 05 15:59:28 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 254587,
+        "friends_count": 1748,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107137315436941676",
+      "text": "“一个系统基本不更新就是最稳定的”\n\n这就是 Gemini 能做到“最稳定”的秘密🤫",
+      "created_at": "Mon Oct 05 15:54:19 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107136217959858516",
+        "text": "以我的经验，御三家产品的前端页面中，Gemini 是最稳定的，Claude 稍差，ChatGPT 最颠。\n\n能连续 28 天每天上新，很符合我心中的 OpenAI。\n\n一个成熟的生态中，会自然的产生老登、中登和小登。",
+        "created_at": "Mon Oct 05 15:49:57 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1881319257604280320",
+          "name": "Vibe Monkey 😂",
+          "screen_name": "agiwebsite",
+          "description": "只有人才喜欢玩游戏。\nVibe Coding Is Fun.",
+          "followers_count": 50,
+          "friends_count": 210,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 3,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 254587,
+        "friends_count": 1748,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 29,
+        "reply_count": 14,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2107124233969279443",
+      "text": "@0xdeusyu 可以的👍",
+      "created_at": "Mon Oct 05 15:02:20 +0000 2026",
+      "lang": "ja",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 254587,
+        "friends_count": 1748,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107077372637749687",
+      "text": "RT @XFreeze: Tesla just took the top two spots in the entire Netherlands new-car market 🇳🇱\n\nNot just EVs...every car\n\nSeptember registratio…",
+      "created_at": "Mon Oct 05 11:56:07 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2106964603582161364",
+        "text": "Tesla just took the top two spots in the entire Netherlands new-car market 🇳🇱\n\nNot just EVs...every car\n\nSeptember registrations:\n\n• Model Y — 2,078 — #1 overall\n• Model 3 — 1,087 — #2 overall\n\nTesla registered 3,165 cars in September, capturing 8.7% of the entire Dutch new-car market\n\nModel Y + Model 3 literally owned the top of the market",
+        "created_at": "Mon Oct 05 04:28:01 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2106964588746997760",
+            "url": "https://pbs.twimg.com/media/HT1xIVqXgAAc58q.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 281942,
+          "friends_count": 2085,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 352,
+          "favorite_count": 2929,
+          "reply_count": 198,
+          "quote_count": 30
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241759250,
+        "friends_count": 1413,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 352,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107064467473199222",
+      "text": "RT @cb_doge: Elon Musk 8 years ago:\n\n“Nothing will affect the future of humanity more than digital super-intelligence.” https://t.co/6B1gnX…",
+      "created_at": "Mon Oct 05 11:04:51 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2106976768892768356",
+        "text": "Elon Musk 8 years ago:\n\n“Nothing will affect the future of humanity more than digital super-intelligence.” https://t.co/6B1gnXmmrC",
+        "created_at": "Mon Oct 05 05:16:22 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2106976761338863617",
+            "url": "https://pbs.twimg.com/media/HT18M4GbIAEcIg8.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1908081,
+          "friends_count": 1059,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 652,
+          "favorite_count": 3949,
+          "reply_count": 448,
+          "quote_count": 106
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241759250,
+        "friends_count": 1413,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 652,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107061909904035998",
+      "text": "RT @cb_doge: BREAKING: SpaceX now holds all 5 fastest U.S. launch-to-docking times at the International Space Station. 🇺🇸\n\n• Crew-13: 7h 55…",
+      "created_at": "Mon Oct 05 10:54:41 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107060638505996601",
+        "text": "BREAKING: SpaceX now holds all 5 fastest U.S. launch-to-docking times at the International Space Station. 🇺🇸\n\n• Crew-13: 7h 55m (Oct 1, 2026)\n• CRS-31: 12h 23m\n• Crew-11: 14h 43m\n• Ax-2: 15h 35m\n• Crew-4: 15h 44m\n\nAll five of these missions flew aboard Dragon spacecraft. https://t.co/sFNR4gQTBM",
+        "created_at": "Mon Oct 05 10:49:38 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2107060421253545984",
+            "url": "https://video.twimg.com/amplify_video/2107060421253545984/vid/avc1/1080x1080/Ao3CSfI7u_4Tly-m.mp4?tag=29",
+            "bitrate": 8768000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1908081,
+          "friends_count": 1059,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 552,
+          "favorite_count": 3837,
+          "reply_count": 243,
+          "quote_count": 48
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241759250,
+        "friends_count": 1413,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 552,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107054599085654295",
+      "text": "RT @BasicLogicIQ: Why Are Judges Releasing Violent Criminals?  https://t.co/emGwULq59F https://t.co/m8a3XxdUK0",
+      "created_at": "Mon Oct 05 10:25:38 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2103206476156223488",
+          "url": "https://video.twimg.com/amplify_video/2103206476156223488/vid/avc1/1920x1080/ielr0hKp31A42Lto.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": {
+        "id": "2103207132585943338",
+        "text": "Why Are Judges Releasing Violent Criminals?  https://t.co/emGwULq59F https://t.co/m8a3XxdUK0",
+        "created_at": "Thu Sep 24 19:37:10 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2103206476156223488",
+            "url": "https://video.twimg.com/amplify_video/2103206476156223488/vid/avc1/1920x1080/ielr0hKp31A42Lto.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1957752621499830272",
+          "name": "Basic Logic",
+          "screen_name": "BasicLogicIQ",
+          "description": "Concepts, explained simply and quickly. Combatting false narratives. Learn quick. History, Theology, Politics, Economics, Finance, Strategy.",
+          "followers_count": 16929,
+          "friends_count": 21,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 733,
+          "favorite_count": 4539,
+          "reply_count": 206,
+          "quote_count": 29
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241759250,
+        "friends_count": 1413,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 733,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107031340919280087",
+      "text": "RT @Bqlsj2023: 英伟达上周又历史新高了\n\n我看B站除了好多恶搞视频\n\n不得不说，现在Ai做视频，基本看不出来痕迹\n\n太夸张了 https://t.co/fmOrXg8EYm",
+      "created_at": "Mon Oct 05 08:53:13 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2106898922635657216",
+          "url": "https://video.twimg.com/amplify_video/2106898922635657216/vid/avc1/960x720/1vzhuBD3kDNk4R59.mp4?tag=29",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": {
+        "id": "2106899009105526922",
+        "text": "英伟达上周又历史新高了\n\n我看B站除了好多恶搞视频\n\n不得不说，现在Ai做视频，基本看不出来痕迹\n\n太夸张了 https://t.co/fmOrXg8EYm",
+        "created_at": "Mon Oct 05 00:07:22 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2106898922635657216",
+            "url": "https://video.twimg.com/amplify_video/2106898922635657216/vid/avc1/960x720/1vzhuBD3kDNk4R59.mp4?tag=29",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1405826789927182337",
+          "name": "币圈老司机🔶BNB",
+          "screen_name": "Bqlsj2023",
+          "description": "16年至今年资深币圈玩家，热衷于追寻热点 \n个人TG：@BQLSJ2023\nOK: https://t.co/ThcsyKrreA\nBN：https://t.co/f4o6v3FaZN",
+          "followers_count": 142264,
+          "friends_count": 2027,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2281,
+          "favorite_count": 19866,
+          "reply_count": 1002,
+          "quote_count": 558
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241759250,
+        "friends_count": 1413,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2281,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107030567438987391",
+      "text": "RT @kobaHUB: Jack Ma told Elon Musk humans will always be smarter than machines. \n\nMusk’s reaction says everything.\n\n“Computers may be very…",
+      "created_at": "Mon Oct 05 08:50:08 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107026299776532653",
+        "text": "Jack Ma told Elon Musk humans will always be smarter than machines. \n\nMusk’s reaction says everything.\n\n“Computers may be very clever, but human beings are much smarter. We invented the computer. I've never seen a computer invent a human being.”\n\nMa's argument was simple. Computers are tools. They calculate faster, remember more, but humans still hold something machines don't: experience, judgment, wisdom.\n\nMusk clearly didn't buy it. “What would be an example of something that humans are better than a computer at?”\n\nWatching this exchange now feels completely different than it did then. AI agents aren't just calculating anymore. They're writing code, analyzing documents, planning tasks, deciding what to do next on their own.\n\nMETR found that the length of software tasks frontier agents can complete autonomously has historically doubled roughly every seven months, with signs of even faster progress through parts of 2024.\n\nThat's where Ma's argument starts to buckle. For decades, technology automated what humans did. AI is starting to automate what we assumed required a human to think.\n\nAnd companies were already learning to create enormous value with almost no people before this wave even arrived. Instagram sold for $1 billion with 13 employees. WhatsApp sold for $19 billion with 55.\n\nNow picture what happens when a small team can direct hundreds of machines that never sleep, never take a salary, never need an office.\n\nThe question was never just which jobs disappear.\n\nIt's what happens to the money once fewer humans are needed to create it in the first place.\n\nThat's the question behind 2028: The Economy Without Humans.\n\nWho gets the money when machines do the work?",
+        "created_at": "Mon Oct 05 08:33:11 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2107026152955023360",
+            "url": "https://video.twimg.com/amplify_video/2107026152955023360/vid/avc1/1920x1080/4og7wLSZ_QLmfNDa.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2061919482801528832",
+          "name": "koba",
+          "screen_name": "kobaHUB",
+          "description": "AI, markets, and the future of work.",
+          "followers_count": 1255,
+          "friends_count": 98,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 379,
+          "favorite_count": 2369,
+          "reply_count": 413,
+          "quote_count": 65
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241759250,
+        "friends_count": 1413,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 379,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107030436103045282",
+      "text": "RT @tetsuoai: Grok 4.7 is now available on Amazon Bedrock and on Google's Gemini Enterprise Agent Platform.\n\nBoth platforms already offered…",
+      "created_at": "Mon Oct 05 08:49:37 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2106874267019440441",
+        "text": "Grok 4.7 is now available on Amazon Bedrock and on Google's Gemini Enterprise Agent Platform.\n\nBoth platforms already offered Grok 4.6. Grok 4.7 is SpaceXAI's model for coding and knowledge work, and its docs call it the most capable model SpaceXAI has built.\n\nOn the xAI API, Grok 4.7 has a 500k context window and costs $2 input and $6 output per million tokens below 200k prompt tokens.",
+        "created_at": "Sun Oct 04 22:29:03 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2106873764323733504",
+            "url": "https://pbs.twimg.com/media/HT0ehqUbMAA0Ybk.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1587601034339561472",
+          "name": "tetsuo",
+          "screen_name": "tetsuoai",
+          "description": "C and Assembly • Grok • @tetsuocorp • @a_g_e_n_c //: 👾",
+          "followers_count": 241780,
+          "friends_count": 521,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 148,
+          "favorite_count": 1021,
+          "reply_count": 71,
+          "quote_count": 10
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241759250,
+        "friends_count": 1413,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 148,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107029927589470636",
+      "text": "USAID engaged in election interference and regime change around the world, causing massive strife",
+      "created_at": "Mon Oct 05 08:47:36 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "1957763907340120346",
+        "text": "Here’s a shocking statistic you may not know. USAID more than doubled its spending on Brazil as soon Bolsonaro won their 2018 election. This was not because Brazil suddenly needed twice the aid. The money was spent on projects in Brazil to undermine Bolsonaro. https://t.co/aMRBRQYW6M",
+        "created_at": "Tue Aug 19 11:17:43 +0000 2025",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1957763901627465728",
+            "url": "https://pbs.twimg.com/media/Gytf5VaWgAAZcHb.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1957763901644267520",
+            "url": "https://pbs.twimg.com/media/Gytf5VeW4AAkYGr.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1957763901631737856",
+            "url": "https://pbs.twimg.com/media/Gytf5VbXsAAqiqx.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "1957763901623287808",
+            "url": "https://pbs.twimg.com/media/Gytf5VZWwAAHCKo.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1599510806680535042",
+          "name": "Mike Benz",
+          "screen_name": "MikeBenzCyber",
+          "description": "Executive Director, @FFO_Freedom. Former State Dept Cyber. Author of the unpublishable monstrosity, Weapons Of Mass Deletion.",
+          "followers_count": 1158426,
+          "friends_count": 810,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 14490,
+          "favorite_count": 45113,
+          "reply_count": 904,
+          "quote_count": 623
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241759250,
+        "friends_count": 1413,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 17054,
+        "favorite_count": 78541,
+        "reply_count": 2106,
+        "quote_count": 600
+      }
+    },
+    {
+      "id": "2107021713452282019",
+      "text": "我也做了一个\n\n【国足0:5输巴勒斯坦，赛后站到镜头前的，竟是17岁高中生】 https://t.co/YrGpcVE43n",
+      "created_at": "Mon Oct 05 08:14:57 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2107021109178871808",
+          "url": "https://video.twimg.com/amplify_video/2107021109178871808/vid/avc1/540x960/mWMcrvHo3heA6zKf.mp4?tag=29",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2106144184449085474",
+        "text": "尝试了一下用 Opus 5.5 做吃瓜视频，全程自己找素材自己配音（Gemini 3.8 Flash TTS，我提供了 API Key）\n\n图1 是英文版\n图2 是中文版\n\n---- Prompt ----\n\n帮我做一条吃瓜视频，话题：{话题}（补充素材：{链接/截图，可选}；去敏版：去掉 {人名}，可选）\n\n- 内容：八卦、狗血、有冲突和金句，但事实必须准确、有来源。开头 3 秒抛出最炸的点，结尾抛问题引导评论。\n- 素材：从 X、YouTube、新闻等广泛搜集，需要我协助就说。以视频片段为主，每句文案配合适的画面，图片和截图只偶尔点缀。多找两人同框的镜头。不重复使用同一画面。裁掉原视频的字幕和台标。不用儿童正脸。标注来源。（可以借助 yt-dlp 下载素材）\n- 规格：\n  - 9:16 竖版，4–6 分钟，中、英两个版本。\n  - Gemini 3.8 Flash TTS 配音，旁白清晰。BGM 随旁白自动压低。\n  - 全程右上角水印 X @dotey。\n- 画面：\n  - 第一帧做封面：当事人照片 + 大字标题，越醒目越好。\n  - 解读推文时叠加推文原文卡片：英文原文高亮关键句，附中文翻译。\n  - 字幕每条说完一整句，可以 2–3 行，不截断单词。\n- 去敏版：旁白、字幕、截图、画面里都不出现相关名字和人物，其余不变。\n- 交付前：用 STT 回听旁白、抽帧检查、检查重复镜头。然后发我成片、720p 预览和封面",
+        "created_at": "Fri Oct 02 22:07:58 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2106143573468934144",
+            "url": "https://video.twimg.com/amplify_video/2106143573468934144/vid/avc1/1080x1920/115odsOFua9iNP80.mp4?tag=29",
+            "bitrate": 10368000
+          },
+          {
+            "type": "video",
+            "id": "2106143668222537728",
+            "url": "https://video.twimg.com/amplify_video/2106143668222537728/vid/avc1/1080x1920/44fJWTbolB91gn9i.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 254587,
+          "friends_count": 1748,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 45,
+          "favorite_count": 361,
+          "reply_count": 52,
+          "quote_count": 21
+        }
+      },
+      "user": {
+        "id": "826639262988718080",
+        "name": "Rainman",
+        "screen_name": "0xdeusyu",
+        "description": "AI Engineer | AI = my OIALO | Exploring AI, cognitive tools & knowledge systems | Connecting knowledge, tools & people",
+        "followers_count": 8871,
+        "friends_count": 571,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2106986386997891567",
       "text": "RT @beffjezos: We have a duty to expand the scope and scale of civilization in order to preserve the state of matter that is intelligence i…",

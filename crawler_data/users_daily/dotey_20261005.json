@@ -1,0 +1,321 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 254587,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261005",
+  "last_updated": "2026-10-05T19:03:08.226218",
+  "tweet_count": 8,
+  "tweets": [
+    {
+      "id": "2107124233969279443",
+      "text": "@0xdeusyu 可以的👍",
+      "created_at": "Mon Oct 05 15:02:20 +0000 2026",
+      "lang": "ja",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107137315436941676",
+      "text": "“一个系统基本不更新就是最稳定的”\n\n这就是 Gemini 能做到“最稳定”的秘密🤫",
+      "created_at": "Mon Oct 05 15:54:19 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107136217959858516",
+        "text": "以我的经验，御三家产品的前端页面中，Gemini 是最稳定的，Claude 稍差，ChatGPT 最颠。\n\n能连续 28 天每天上新，很符合我心中的 OpenAI。\n\n一个成熟的生态中，会自然的产生老登、中登和小登。",
+        "created_at": "Mon Oct 05 15:49:57 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1881319257604280320",
+          "name": "Vibe Monkey 😂",
+          "screen_name": "agiwebsite",
+          "description": "只有人才喜欢玩游戏。\nVibe Coding Is Fun.",
+          "followers_count": 50,
+          "friends_count": 210,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 3,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 29,
+        "reply_count": 14,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2107138613721039224",
+      "text": "@0xdeusyu 美中不足是好几个进球画面没放全",
+      "created_at": "Mon Oct 05 15:59:28 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107144243726729645",
+      "text": "学习研究了下 amontlabs/lcu 这个项目，它把 Codex 的 Computer Use（让 AI 看屏幕、点鼠标、敲键盘来操作电脑的能力）单独拆了出来，让 Claude Code、Codex CLI、Pi 等其他 AI Agent 工具也能调用。\n\n我本来还以为它是模仿 Codex 实现了一套，原来是直接用的 Codex 的 Computer Use，在本机找到已安装的 ChatGPT 桌面版，启动其中 OpenAI 自带的 Computer Use 运行时，再通过 MCP 接到你用的 Agent 工具里。仓库文档写明，指令、执行和权限策略都以 OpenAI 原版运行时为准。\n\n因此电脑上必须装有官方 ChatGPT 桌面版，但不需要登录 ChatGPT 或 Codex 账号。\n\n它给模型的工具很少。常见的电脑操控方案会把截图、点击、输入、滚动各做成一个工具，LCU 只给两个：js 和 js_reset。\n\njs 用来执行一段 JavaScript 代码，运行环境里预置了一个名为 cua 的对象。模型通过写代码来操作电脑：先调用 cua.getState() 拿到当前桌面状态和使用说明，再用 getApp 选定某个窗口，然后调用 click、typeText、pressKey、getScreenshot 等方法。点击、输入、读取结果可以写在同一段代码里，一次调用完成。\n\n这个 JavaScript 环境会保留状态，上一次调用里定义的变量，下一次还能接着用；环境出问题时调用 js_reset 清空重来。除了截图，模型还能读取窗口的无障碍信息（操作系统提供给读屏软件的界面元素列表），按元素点击，不必完全依赖屏幕坐标。\n\njs 加 cua 对象这套接口是 OpenAI 原版的设计，LCU 原样转发。仓库记录显示，在 macOS 上对比测试时，模型收到的初始化说明和首次调用返回的使用指南，与官方 Codex 收到的内容逐字节一致。\n\n目前正式适配的 Agent 工具是 Pi、Codex CLI 和 Claude Code，Oh My Pi 和 Hermes 为实验性支持。系统支持 Apple Silicon 芯片的 macOS（需授予辅助功能和屏幕录制权限），以及使用 X11 桌面的 Linux（ARM64 和 x86-64）。Windows 11 尚在候选阶段，Intel Mac 和 Wayland 桌面不支持。\n\n控制 Chrome 浏览器需要额外开启，走的是 OpenAI 官方 Chrome 扩展，每个网站仍需单独批准。安装需要 Python 3.12 以上，README 给出的做法是把一段提示词贴给自己的 Agent，让它按安装文档完成配置，也可以从 GitHub 手动下载安装包。\n\n项目地址：https://t.co/UigGSqo5fh",
+      "created_at": "Mon Oct 05 16:21:51 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2107144138705555456",
+          "url": "https://video.twimg.com/amplify_video/2107144138705555456/vid/avc1/1920x1080/IrLc9UE8t_jnBb5i.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2106647309102825969",
+        "text": "发现一个牛逼的东西，让任意 Agent 调用 Codex 的 Computer Use。\n\nCodex 最强的就是 Computer Use。\n\n但最近用 Claude Opus 5.5比较多，这样就强强联合了。\n\n刚测试通过，安装后建议配置个 Hook，指定白名单可控制哪些 App\n\n安装地址见评论区",
+        "created_at": "Sun Oct 04 07:27:12 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2106646989790429185",
+            "url": "https://pbs.twimg.com/media/HTxQRpWawAET9Fn.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2106647063811514368",
+            "url": "https://pbs.twimg.com/media/HTxQV9Ga4AAem72.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "6690032",
+          "name": "向阳乔木",
+          "screen_name": "vista8",
+          "description": "喜欢摇滚乐、爱钓鱼的PM\n第二届GEO大会报名-11-21/22日-深圳南山\nhttps://t.co/N75cblhK9R",
+          "followers_count": 128934,
+          "friends_count": 1655,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 35,
+          "favorite_count": 346,
+          "reply_count": 101,
+          "quote_count": 9
+        }
+      },
+      "stats": {
+        "retweet_count": 13,
+        "favorite_count": 118,
+        "reply_count": 29,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2107146548664566150",
+      "text": "现在 Agent 会话的交互，有很多借鉴自 Slack\n\n包括 Claude 最新的 Projects，就是脱胎于 Thread 设计，确实很简洁好用",
+      "created_at": "Mon Oct 05 16:31:00 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107080640462004243",
+        "text": "OpenAI 的一切产品决定都是从 Slack 上交流和协调的。\n\n这世界这么多 AI 巨头，当年收购 Slack 的却是 Saleforce",
+        "created_at": "Mon Oct 05 12:09:07 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1477948736156454913",
+          "name": "Dongxi 东锡 NLP",
+          "screen_name": "dongxi_nlp",
+          "description": "Prev. PhD @Stockholm_Uni | Alumni @KTHuniversity @uppsalauni Sharing insights on AI",
+          "followers_count": 41598,
+          "friends_count": 996,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 2,
+          "reply_count": 1,
+          "quote_count": 0
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 17,
+        "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107154896520966433",
+      "text": "RT @mranti: 这个世界颠倒过来了，教皇成为了世界理性之光，最先进的AI公司（Anthropic）却希望说服教皇相信AI已经有意识、有生命。",
+      "created_at": "Mon Oct 05 17:04:11 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2106913487024685121",
+        "text": "这个世界颠倒过来了，教皇成为了世界理性之光，最先进的AI公司（Anthropic）却希望说服教皇相信AI已经有意识、有生命。",
+        "created_at": "Mon Oct 05 01:04:54 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2105983638147891490",
+          "text": "In this era of artificial intelligence, it is becoming urgent to distinguish human art from what machines produce. There is an ontological difference, even before an aesthetic one, between art and what a machine can generate through statistical calculation based on millions of images created by others. Algorithms lack the spark of humanity. For this reason, the Church wishes to renew an alliance with artists and cultural institutions to safeguard our humanity.",
+          "created_at": "Fri Oct 02 11:30:01 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1922567634907791360",
+            "name": "Pope Leo XIV",
+            "screen_name": "Pontifex",
+            "description": "Welcome to the official account of His Holiness, Pope Leo XIV.",
+            "followers_count": 17894575,
+            "friends_count": 47,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 79733,
+            "favorite_count": 457253,
+            "reply_count": 4704,
+            "quote_count": 10933
+          }
+        },
+        "user": {
+          "id": "5709522",
+          "name": "Michael Anti",
+          "screen_name": "mranti",
+          "description": "安替, Globus, Global Research. A veteran journalist on International Affairs, Harvard Nieman Fellow '08, TEDGlobal Speaker.",
+          "followers_count": 357786,
+          "friends_count": 11445,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 22,
+          "favorite_count": 234,
+          "reply_count": 21,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 22,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107165971148308941",
+      "text": "【OpenAI 28 天更新第 1 天：默认速度提升约五成】\n\n今天（10 月 5 日），Tibo 公布了第一项改进：通过 ChatGPT 订阅使用 GPT-6 Astra 和 GPT-6.1 Sol，默认速度提升约 50%。用户不用改任何设置，两小时内生效。\n\n这次提速针对的是默认档位。Codex 原本有个快速模式，代价是额度按标准档的 2.5 倍消耗。现在不切模式，也能快一截。\n\n具体数字是每秒输出 50 个 Token，之前是 30 个。Tibo 还说，OpenAI 的分词器是目前优化得最好的，模型完成同样的任务用的 Token 也更少，两者叠加，实际等待时间还会更短。\n\n提速覆盖 OpenAI 自家所有产品，也覆盖通过“用 ChatGPT 登录”接入的第三方工具，比如 OpenCode、Pi、Amp、Devin。这个功能是 9 月 29 日 DevDay 上推出的，用户可以在这些工具里直接用 ChatGPT 订阅的额度跑 OpenAI 的模型。",
+      "created_at": "Mon Oct 05 17:48:11 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107158998495748264",
+        "text": "Day 1/\n\nWe have optimized the default speed to be ~50% faster across GPT-6 Astra and GPT-6.1 Sol through the subscription across all our products and partners using Sign in With ChatGPT (including OpenCode, Pi, Amp, Devin, ...).\n\nNo changes needed on your end and this should be felt within the next two hours.",
+        "created_at": "Mon Oct 05 17:20:29 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1953337039510003712",
+          "name": "Tibo",
+          "screen_name": "thsottiaux",
+          "description": "Codex & ChatGPT @OpenAI",
+          "followers_count": 797173,
+          "friends_count": 76,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 451,
+          "favorite_count": 10471,
+          "reply_count": 1474,
+          "quote_count": 524
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 25,
+        "reply_count": 9,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107179527591891376",
+      "text": "OpenAI 也给 ChatGPT 的文字加水印了\n\nOpenAI 今天宣布，未来几周内，欧盟用户在 ChatGPT 和 Codex 里生成的文字会带上一种看不见的水印，用来满足欧盟《人工智能法案》（EU AI Act）的要求。\n\n顺便说一下 8 月，Anthropic 已经给 Claude 加了水印，原因也是一样的。\n\n起因是欧盟 AI 法案的透明度条款在今年 8 月 2 日生效，要求 AI 生成的内容能被机器识别。7 月欧盟出了一份配套的行为准则，Anthropic、OpenAI、Google、Meta、微软等约 190 家签了字。\n\n两家的差别主要在范围。\n\nOpenAI 只在欧盟给 ChatGPT 和 Codex 默认加水印，其他地区的 ChatGPT 用户不受影响。API 这边，全球开发者可以在项目或组织设置里自己打开，部分模型今天就能用，默认关闭。\n\nAnthropic 的方案是全球统一，水印直接做在模型层面，网页版、API、Claude Code 输出的文字都带，用户关不掉。Anthropic 给的理由是，暂时没有可靠的办法按地区区分。新模型已经带上水印，旧模型会在未来几个月陆续更新。图片和文件另外用 C2PA 标准，在文件元数据里附一段加密签名的来源说明。\n\n两家加水印的算法都差不多，大模型生成水印时，每一步都要在几个差不多合适的词里随机挑一个。水印就是把这个“随机”换成一套带密钥的规则，让选词带上一种统计规律。人读起来没有区别，检测工具拿着密钥一算，就能判断这段话大概率出自哪家的模型。OpenAI 把自己的技术叫 textGrain，Anthropic 的原理基本相同。\n\n检测工具两家都没对公众开放。OpenAI 只接受审核通过的研究人员和专业机构申请。Anthropic 的检测接口在内测，面向监管机构、执法部门、媒体、事实核查机构、研究人员、教育机构和有合规需求的企业。普通人想贴一段文字进去自己查，目前两家都做不到。\n\n理论上来说，你手动稍微改写或换个开源模型润色修改下，标记就会变弱。\n\n所以两家都强调：查不出水印，不能证明是人写的。水印也说明不了人改了多少、版权归谁、内容对不对。\n\n真是脱裤子放屁——多此一举！",
+      "created_at": "Mon Oct 05 18:42:03 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107164650249101695",
+        "text": "We're expanding our approach to content provenance to include text in response to EU regulatory requirements, while recognizing the significant limitations of current text watermarking technology.\n\nOur tools already help verify whether an image or audio file was created with our models. This work builds on those efforts to help people better understand when content may have been generated or edited with an OpenAI model.\n\nIn the EU, we’ll start watermarking eligible text from ChatGPT and Codex over the coming weeks to comply with the EU AI Act.\n\nCustomers using our API can turn on text watermarking for select models worldwide today.",
+        "created_at": "Mon Oct 05 17:42:56 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 5417195,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 145,
+          "favorite_count": 2437,
+          "reply_count": 333,
+          "quote_count": 155
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    }
+  ]
+}

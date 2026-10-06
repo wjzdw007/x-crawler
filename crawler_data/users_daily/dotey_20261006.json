@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 255536,
+    "followers_count": 255562,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261006",
-  "last_updated": "2026-10-06T16:30:57.418138",
-  "tweet_count": 5,
+  "last_updated": "2026-10-06T22:13:47.515751",
+  "tweet_count": 11,
   "tweets": [
     {
       "id": "2107272401939583148",
@@ -243,6 +243,266 @@
         "favorite_count": 47,
         "reply_count": 13,
         "quote_count": 2
+      }
+    },
+    {
+      "id": "2107525221599101152",
+      "text": "Google 发布 Nano Banana 2.1：局部改图更准，同一个人物换十张图也不走样\n\nGoogle 今天发布了新一代图像生成和编辑模型 Nano Banana 2.1，从今天开始陆续上线 Gemini App、Google 搜索的 AI 模式、AI Studio、Flow、Stitch、Google Ads 和 Gemini 企业平台。\n\nNano Banana 是 Google 图像模型的昵称。第一代 2025 年 8 月走红，卖点是用一句话就能改图；今年 2 月出了 Nano Banana 2。\n\n2.1 是在 2 的基础上做的升级，Google 说它在各方面都超过了之前的模型，进步最大的有三处。\n\n第一是视觉设计。海报、宣传图这类讲究排版和构图的图，出图效果更好。\n\n第二是蒙版编辑。蒙版就是先在图上圈出一块区域，模型只改这一块，其他地方原样不动。想给照片换个背景、给模特换件衣服，用不着担心模型把脸也改了。\n\n第三是主体一致性，也就是同一个人或同一件商品，在多张图里长得一模一样。按 Google 的开发文档，一次最多可以放 14 张参考图，最多同时保持 4 个角色、10 个物体不走样。画连环画、做商品多角度展示图、给同一个模特拍一组不同场景的“照片”，都靠这个能力。\n\n普通用户在 Gemini App 里就能用，因为是分批推送，有人今天就能看到，有人要等几天。\n\n开发者这边，模型 ID 是 gemini-nano-banana-2.1，今天直接是正式版。支持 1K、2K、4K 三档分辨率，画幅从 1:1、16:9 一直到 1:8 这种长条图，还能先调 Google 搜索查资料再画。上一代 gemini-3.1-flash-image（也就是 Nano Banana 2）会在 10 月 29 日停用，还在用旧接口的需要在那之前切换。",
+      "created_at": "Tue Oct 06 17:35:43 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107501209154204148",
+        "text": "Meet Nano Banana 2.1, our latest image generation and editing model 🍌\n\nThis upgraded version outperforms our previous models across the board, with notable leaps in visual design, mask-based editing, and subject consistency to help you create more natural-looking images.",
+        "created_at": "Tue Oct 06 16:00:18 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "animated_gif",
+            "id": "2107500406091759617",
+            "url": "https://pbs.twimg.com/tweet_video_thumb/HT9YdA0XQAEToa1.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "20536157",
+          "name": "Google",
+          "screen_name": "Google",
+          "description": "Here to help.",
+          "followers_count": 31909726,
+          "friends_count": 298,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 403,
+          "favorite_count": 3981,
+          "reply_count": 219,
+          "quote_count": 254
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 19,
+        "reply_count": 6,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2107581531871236525",
+      "text": "Boris 让 Opus 5.5 为一部剧集做了一个互动网站，效果确实很不错。\n\n提示词相当简单，核心就三点：\n1. 你希望它做什么？\n2. 你希望它消耗多少算力去推理？\n3. 它应该如何验证自己做对了？\n\n这里面最重要的是第一和第三，做什么和如何验证，以此为抓手 Agent 就可以形成自我验证的闭环，当然推理强度可以给任务赋能。\n\n--- 原始提示词（摘录自评论） ---\n\n> 最新一期 Acquired 播客关于 Home Depot 的内容非常精彩。我想让你制作一个能够叙述整集内容的 Artifact。把它做成精美且互动的形式，重点传达贯穿整集的商业智慧精华。一定要做得非常出色，使用大量的 token 并不断迭代，直到你对其感到自豪为止。也许可以在整个作品中加入水彩插图和历史照片，目标是营造出《纽约客》或《纽约时报》数据可视化的风格，甚至要更好。我认为你可以使用 OpenCV 来处理水彩图片。",
+      "created_at": "Tue Oct 06 21:19:28 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107516876876362200",
+        "text": "I asked Opus 5.5 to make an interactive website companion for the latest @AcquiredFM Home Depot episode. It came out pretty nice!\n\nWater color illustrations all drawn by Claude, too: https://t.co/Camrfu3bwT\n\nEpisode here: https://t.co/x2t57gdjxr",
+        "created_at": "Tue Oct 06 17:02:33 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "159337660",
+          "name": "Boris Cherny",
+          "screen_name": "bcherny",
+          "description": "Claude Code @anthropicai",
+          "followers_count": 592575,
+          "friends_count": 134,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 30,
+          "favorite_count": 859,
+          "reply_count": 93,
+          "quote_count": 7
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 9,
+        "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107581888713880032",
+      "text": "提示词\nhttps://t.co/oBPmRzW4mF",
+      "created_at": "Tue Oct 06 21:20:53 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107565388250874193",
+        "text": "I am surprised that people are surprised this is how I prompt Claude.\n\nTalk to Claude the way you would a coworker. There's no secret to prompting. There's no need to be overly scaffolded or prescriptive for most tasks -- give Claude a goal, and it will figure it out.\n\nBack in the Sonnet 3.5 days, your prompt mattered a lot. Nowadays, it's much more important to communicate to the model:\n\n1. What you want it to do\n2. How much effort you want it to spend\n3. How it should verify that it did the right thing",
+        "created_at": "Tue Oct 06 20:15:19 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "159337660",
+          "name": "Boris Cherny",
+          "screen_name": "bcherny",
+          "description": "Claude Code @anthropicai",
+          "followers_count": 592575,
+          "friends_count": 134,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 183,
+          "favorite_count": 3939,
+          "reply_count": 261,
+          "quote_count": 87
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107584190791254463",
+      "text": "RT @LufzzLiz: 🚨重磅：我们2000+ Star的开源项目迎来了重大更新：经过多轮迭代，我们用Opus 5.5 新增了9种讲解视频风格，不求多，只求做到极致，经过多次迭代后，今天开源分享给大家，效果可以见视频，感觉任何一周都可以拿去起号了\n看看大家更喜欢哪一种，或者…",
+      "created_at": "Tue Oct 06 21:30:02 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2107408409859359211",
+        "text": "🚨重磅：我们2000+ Star的开源项目迎来了重大更新：经过多轮迭代，我们用Opus 5.5 新增了9种讲解视频风格，不求多，只求做到极致，经过多次迭代后，今天开源分享给大家，效果可以见视频，感觉任何一周都可以拿去起号了\n看看大家更喜欢哪一种，或者有推荐的风格也可以发给我\n\n测试发现用我们的skill模版，即使是用codex也开始可以产出类似的效果\n\n使用流程也很简单：\n1️⃣ 拉取最新的代码\n2️⃣ 在 harness （claude 的模型最佳）使用该skill 完成关于【任意主题】的动画讲解，风格使用【v1 设计师】风格\n3️⃣ 配音（可选），使用相关TTS模型完成配音\n4️⃣ 生成数字人口播视频（可选），如果想加数字人，就用我们上面的配音驱动+ 你的数字人图片 生成最终视频。然后让claude 完美融合视频即可\n\n开源地址见评论👇",
+        "created_at": "Tue Oct 06 09:51:33 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2107404354714222592",
+            "url": "https://video.twimg.com/amplify_video/2107404354714222592/vid/avc1/1920x1080/vq3epYjTvXixQUb6.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1598519155736645632",
+          "name": "岚叔",
+          "screen_name": "LufzzLiz",
+          "description": "Al 创作者•LLM 爱好者•Al Agent 构建者\nAI 生视频•AI 生图\n输出有温度的洞察。 致力于降低 AI 使用门槛，让更多人受益。\n某大厂架构师-多模态、模型私有化领域\n企业 AI方案设计• FDE\n关注AI产品、AI结合教育、艺术创作领域\n📮: lanshulan007@gmail.com",
+          "followers_count": 24046,
+          "friends_count": 758,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 50,
+          "favorite_count": 316,
+          "reply_count": 18,
+          "quote_count": 5
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 50,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107584363043176474",
+      "text": "这是一道送分题 https://t.co/3Ogedtps4V",
+      "created_at": "Tue Oct 06 21:30:43 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2107584346211090433",
+          "url": "https://pbs.twimg.com/media/HT-ky-IWAAE2z3a.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2107576143285219799",
+        "text": "Vote",
+        "created_at": "Tue Oct 06 20:58:04 +0000 2026",
+        "lang": "fr",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1953337039510003712",
+          "name": "Tibo",
+          "screen_name": "thsottiaux",
+          "description": "Codex & ChatGPT @OpenAI",
+          "followers_count": 805239,
+          "friends_count": 75,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 69,
+          "favorite_count": 951,
+          "reply_count": 671,
+          "quote_count": 103
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 2,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107585545761157496",
+      "text": "这个网站不错，很多从 X 上收集的 Opus 5.5 动画视频案例，有 X 链接，大部分有可以跑起来的 Prompt\nhttps://t.co/JaMU9MbjWr",
+      "created_at": "Tue Oct 06 21:35:25 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107175720086589633",
+        "text": "I built a growing gallery of motion graphics made with Claude Opus 5.5, each shown next to the prompt or skill that made it.\n\n226 so far, all pulled from posts here and credited to their creators.\n\nhttps://t.co/pAGK4Y8Yqs https://t.co/tQcNVvGNff",
+        "created_at": "Mon Oct 05 18:26:55 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2107174478845276160",
+            "url": "https://video.twimg.com/amplify_video/2107174478845276160/vid/avc1/2560x1428/SaqH6T1q7i2EDUZP.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1372219458492755969",
+          "name": "p4n",
+          "screen_name": "p4nthera_",
+          "description": "Creative + Design Engineer\nOpen to work\n\nhello@p4n.me",
+          "followers_count": 1914,
+          "friends_count": 1058,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 898,
+          "favorite_count": 5837,
+          "reply_count": 88,
+          "quote_count": 99
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 9,
+        "reply_count": 1,
+        "quote_count": 0
       }
     }
   ]

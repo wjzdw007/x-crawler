@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-10-06T07:14:07.138141",
+  "tweet_count": 13,
+  "summary": "**新工具/技术**（如有）\n- amontlabs/lcu：把 OpenAI Codex 的 Computer Use 能力抽出来，让 Claude、Pi、Codex CLI 等任意 Agent 调用，实现“让模型看屏幕、点鼠标、敲键盘”能力复用。\n- LCU 的 js/js_reset + cua 接口：提供一个持久的 JavaScript 运行环境，模型通过预置的 cua 对象调用 getState/getApp/click/typeText/getScreenshot 等方法；遇错可用 js_reset 清空状态。\n- 平台与依赖：需要本机安装官方 ChatGPT 桌面版（无需登录），支持 Apple Silicon macOS 和 X11 Linux（ARM64/x86-64），Windows 11 为候选，Intel Mac/Wayland 不支持。\n- Chrome 控制需额外开启：走 OpenAI 官方 Chrome 扩展，且每个站点需单独授权；安装可通过提示词或手动下载包完成。\n- Google Docs 原生支持 Markdown：Drive/Docs 可直接预览、编辑、协作 .md 文件，降低格式转换成本。\n- Cursor Ultra（产品补充）：在性价比讨论中被点名为值得关注的替代方案。\n\n**核心观点/方法论**（如有）\n- “一个系统基本不更新就是最稳定的”——稳定性有时来自少改动，Gemini 示例表明频繁发布并不一定等于稳定体验。\n- Agent 会话设计借鉴 Slack：像 Thread/Projects 的设计能提升协作和上下文管理的简洁性，影响到 Claude 等产品的 UX 走向。\n- 快速迭代与性能优化可量化：OpenAI 在 28 天计划第 1 天提升默认速度约 50%，说明后台工程调优能显著改善用户感知延迟。\n- 文本水印是合规工具但有限：对欧盟 AI 法案的响应体现了技术合规方向，但水印检测目前需密钥且对公众不可用，易被改写弱化。\n- 订阅经济学决定使用体验：SemiAnalysis 的测算显示不同厂商在订阅中给出的 Token 价值差异巨大，厂商策略（统一降配或分档差异化）直接影响用户成本和选择。\n- 大公司内部替换趋势明显：Meta、微软等在内部逐步用自研模型替代第三方服务，反映成本、隐私和长期控制权的考量。\n\n**实践经验/案例**（如有）\n- LCU 安装与安全建议：必须安装 ChatGPT 桌面版且授予辅助功能/屏幕录制权限；建议配置 Hook/白名单以限制可控应用范围。\n- Debug Codex/ChatGPT Mac App 的实操步骤：退出程序后用 open 命令加 --remote-debugging-port 启动，然后在 chrome://inspect 打开 DevTools 即可像网页一样调试 UI。\n- SemiAnalysis 的测量方法和值得注意的结论：通过观察订阅进度条增减反推 Token 消耗，结论是同价位下 Claude 在中档模型的“可用量”远高于 OpenAI（约 5 倍），但受厂商策略与 A/B 测试影响。\n- 企业用量管控案例：微软将员工单人模型预算从高额度大幅下调，Meta 把 Claude Code 的内部活跃用户减半，说明企业在把控 AI 成本与数据使用上的新常态。\n- OpenAI 提速的生态影响：默认每秒 Token 从 ~30 提升到 ~50，结合更优分词器和订阅接入，第三方工具通过“Sign in With ChatGPT”可直接受益，短期内改善交互延迟。",
+  "metadata": {
+    "original_tweets": 12,
+    "retweets": 1,
+    "media_tweets": 4,
+    "data_hash": "583d8463",
+    "user": "dotey"
+  }
+}

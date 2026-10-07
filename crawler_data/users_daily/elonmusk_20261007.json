@@ -3,13 +3,13 @@
     "screen_name": "elonmusk",
     "name": "Elon Musk",
     "description": "https://t.co/ZdBx5WABYx",
-    "followers_count": 241703114,
+    "followers_count": 241700482,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261007",
-  "last_updated": "2026-10-07T03:56:32.166588",
-  "tweet_count": 3,
+  "last_updated": "2026-10-07T10:49:54.444701",
+  "tweet_count": 27,
   "tweets": [
     {
       "id": "2107644163219202213",
@@ -129,6 +129,1157 @@
       "quoted": null,
       "stats": {
         "retweet_count": 1036,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107689502508781586",
+      "text": "RT @XFreeze: Grok Build just got one of its biggest updates yet.....a massive upgrade touching almost every part of the agent stack\n\nCompac…",
+      "created_at": "Wed Oct 07 04:28:31 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107687399509913967",
+        "text": "Grok Build just got one of its biggest updates yet.....a massive upgrade touching almost every part of the agent stack\n\nCompact mode gets a major upgrade, timestamps are now configurable, shell commands clearly show when they’re running or finished, tables can export directly as TSV, CSV or Markdown, and the dashboard now gives much better visibility and control over worktrees\n\nUnder the hood, the update is even bigger: stalled model calls now retry, long sessions are more resilient, permission handling is much tighter, failed file writes preserve existing contents, CJK memory search improves, concurrent config edits are safer, MCP tool discovery is more reliable, and worktree creation + deletion gets a huge reliability pass\n\nThere’s even a breaking safety change: grok worktree rm now refuses to delete active worktrees or ones with unsaved changes unless you explicitly force it\n\nRelease Notes: v1.0.50\n\nBreaking Changes:\n• grok worktree rm without -f now refuses to delete worktrees that are in use or contain unsaved changes and exits with an error.\n\nFeatures:\n• Compact mode now collapses recaps and keeps inner spacing on tall terminals.\n• Clicking the git branch in the header now copies the full branch name.\n• Long branch names now abbreviate on narrow terminals while remaining copyable.\n• Targeted cancels now stop only the specific response when requested by clients.\n• Compact mode now hides the dock (or tasks pane) the same way Ctrl+G does.\n• New timestamps setting offers off, minimal, and on modes in Settings and /timestamps.\n• Shell command output now shows \"Running …\" while executing and \"Ran …\" when finished.\n• Live preview pins now include whether an app was observed behind the URL.\n• Command palette (Ctrl+P) and model picker now open at the same width as the settings modal.\n• Tables rendered by grok now show copy buttons underneath that export clean TSV, CSV or Markdown suitable for spreadsheets.\n• Dashboard now shows which worktree each session belongs to, displays the -m model in the new-agent box, and lets you toggle worktree mode in the folder picker.\n\nBug Fixes:\n• Shell permission decisions now correctly prompt or approve commands matching the permission manager.\n• Cancelled turns now correctly mark unanswered tool calls as cancelled instead of succeeded.\n• Long error messages in the /usage and /session-info modals now wrap instead of being truncated.\n• Em-dashes no longer appear in status messages and subagent rows.\n• Stalled model calls during turns now retry before failing the turn.\n• Queue pane and Ctrl+; now appear and work when the dock is hidden with Ctrl+G.\n• Long sessions no longer disconnect when the conversation exceeds 4 MiB.\n• Permission rules now accept native tool names such as run_terminal_command and Shell.\n• /rewind now places the cursor at the end of the restored prompt.\n• Failed file writes now leave the previous contents instead of an empty file.\n• Fixed /loop and scheduler_create so non-ASCII intervals like 5分 no longer crash the session.\n• Fixed --disallowed-tools when only one scheduler tool is named; the other two no longer cause startup failure.\n• Fixed closing a busy tab so queued prompts are no longer sent to the model.\n• Fixed relative --cwd so grok --cwd a no longer ends up running inside a/a.\n• The terminal title now shows \"Action Required\" for any background session waiting on approval.\n• grok now accepts a prompt via piped stdin in headless mode instead of trying to open the UI.\n• An admin-set [features] title_refresh = false in requirements.toml now correctly disables title refresh even when GROK_TITLE_REFRESH is set.\n• Custom notification commands defined under [[ui.notifications.hooks]] now execute on matching events.\n• An admin pin of [cli] use_leader = false now correctly prevents --leader from starting a leader process.\n• When multiple MCP servers expose a tool with the same name, search_tool now returns all of them.\n• Concurrent Grok windows editing settings no longer lose or corrupt config.toml entries such as MCP servers or permission rules.\n• web_fetch no longer downloads huge files into memory before rejecting them.\n• memory_get no longer returns huge files that exceed the read limit.\n• Continue to run no longer kills commands running inside background subagents.\n• memory_search now finds Japanese, Chinese, and Korean words inside longer notes.\n• Drafts saved by the model now appear under their actual titles in /feedback.\n• Imagine replies that are not valid images are now rejected instead of being saved as .jpg files.\n• A workflow file that fails to parse now reports the exact file and parse error instead of 'unknown workflow'.\n• Re-encoded images are now oriented correctly using their EXIF tags instead of appearing sideways.\n• Image and log paths reported after /fork --worktree now point to real files instead of missing locations.\n• Tab characters in terminal command output are now preserved when shown to the model.\n• Transparent images are now kept as PNG when re-encoded instead of turning black.\n• The bundled ripgrep is now available to terminal commands even on images that do not install it.\n• Request bodies now stay under a small configured max_request_bytes limit instead of growing past it.\n• Effort level now stays the same after a bare /model switch instead of jumping to the new model's default.\n• Ctrl+\\ and other modified digits no longer accidentally select options on permission or cancel cards.\n• Feedback submissions now show accurate success or failure messages without premature thanks or duplicated prefixes.\n• grok doctor now reports the exact config file or setting that prevents Grok from starting instead of saying zero issues.\n• Recap summaries now appear on screen automatically instead of requiring manual scrolling.\n• grok doctor fix now opens its confirmation card on Cancel to prevent accidental edits to shell or tmux config.\n• Slash commands now run regardless of case (e.g. /COMPACT or /Compact).\n• /context no longer shows an invented auto-compact threshold when the agent does not report one.\n• Agent text no longer keeps the pager redrawing when a tool call interrupts the sentence.\n• CLI tool calls no longer fail or overflow when the workspace directory is deleted or output is huge.\n• Logs written to files or when NO_COLOR is set are now plain text instead of containing color codes.\n• Prompts now fail immediately with a clear message if the session's working directory no longer exists instead of failing later or recreating it.\n• grok -w now works correctly with separate-git-dir repositories and shows clear errors when run outside a git repo or on an empty repo.\n• Shell tool descriptions now correctly state the actual output truncation limit, and grep respects globs relative to the current session directory.\n• Compaction messages now scroll into view instead of appearing below the bottom of the screen after a turn finishes.\n• Git-mode worktrees created with -w now preserve uncommitted changes instead of dropping them.\n• Worktrees created with --worktree-ref no longer contain wrong submodule contents or LFS pointer text.\n• Worktree creation now shows the same clear error messages on every code path.\n• Failed worktree creates now show a clear error on the home screen instead of being hidden.\n• Merge and rebase conflicts now appear in the changes list instead of being hidden.\n• Fixed a crash when starting a new session with durable rewind checkpoints enabled.\n• Managed permission files with one bad key no longer lose all their valid rules.\n• Simultaneous worktree creates with the same label now succeed instead of one failing with \"already exists\".\n• grok worktree rm without -f no longer deletes arbitrary folders that happen to share a name with a removed worktree.\n• Discard now affects only the exact files you select instead of also deleting or reverting similarly-named files.\n• Permission rules with one bad entry no longer lose the other rules in the same section.\n• Chat Completions streams that end without a finish reason are now retried instead of returning partial output.\n• grok worktree rm by label now refuses when the label exists in multiple repos.\n• Grep now respects Read deny rules that use a leading ./.\n\nPerformance:\n• Command hooks no longer cause large memory spikes when they print a lot of output.\n• Retry waits now vary between processes instead of being identical.",
+        "created_at": "Wed Oct 07 04:20:09 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2107687362440695808",
+            "url": "https://pbs.twimg.com/media/HUACfTfbkAAah4C.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2106129795277103534",
+          "text": "Grok Build just got another bug-fix update, this time focused heavily on permissions and tool safety\n\nHook permission prompts now show up regardless of approval mode, WebSearch/WebFetch and image generation properly respect prompt_policy and rule decisions, and “Allow once” now really means once......only the next shell command\n\nThere’s also an extra safeguard for pkill -f and pgrep -f patterns that could accidentally kill their own shell wrapper\n\nRelease Notes: v1.0.49\n\nBug Fixes:\n• Hook permission prompts now appear regardless of approval mode.\n• Web searches, fetches, and image generation now correctly respect the prompt_policy setting and rule decisions before prompting.\n• Allow once in permission cards now applies only to the next shell command instead of the whole session.\n• pkill -f and pgrep -f commands are now rejected earlier when the pattern would kill their own shell wrapper.",
+          "created_at": "Fri Oct 02 21:10:47 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2106126063143440384",
+              "url": "https://pbs.twimg.com/media/HTp2fuXbUAAHQdW.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1818311005698678784",
+            "name": "X Freeze",
+            "screen_name": "XFreeze",
+            "description": "",
+            "followers_count": 282627,
+            "friends_count": 2087,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 19,
+            "favorite_count": 157,
+            "reply_count": 10,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 282627,
+          "friends_count": 2087,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 105,
+          "favorite_count": 692,
+          "reply_count": 77,
+          "quote_count": 9
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 105,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107690167343673712",
+      "text": "RT @SawyerMerritt: One million-mile trucker @adamlwingfield in new interview after going to the Tesla Semi launch event a couple weeks ago:…",
+      "created_at": "Wed Oct 07 04:31:09 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107319668830568833",
+        "text": "One million-mile trucker @adamlwingfield in new interview after going to the Tesla Semi launch event a couple weeks ago:\n\n“The trucking industry has adopted technology so much slower. As we toured the @Tesla Semi factory, I’m just like, wow, this doesn’t feel like trucking. It feels like transportation innovation. I’ve been in this industry a long time. I am an old-school industry veteran. You can’t tell me nothing about trucking that I don’t know. But walking away (from the event), I was like, \"This industry is going to be changed.\"\n\nAdam's full 1+ hour interview with Motortrend: https://t.co/Kn7tdlPlva",
+        "created_at": "Tue Oct 06 03:58:55 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2107312828046512128",
+            "url": "https://pbs.twimg.com/media/HT6t2iJWEAAlW1p.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2107312857058525184",
+            "url": "https://pbs.twimg.com/media/HT6t4OOWQAAHM50.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2107312866093113344",
+            "url": "https://pbs.twimg.com/media/HT6t4v4XIAA_9WS.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2107312899790168064",
+            "url": "https://pbs.twimg.com/media/HT6t6taXYAABXCp.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EVs/space/tech. Bringing you the latest news in a single, easy-to-read feed. $TSLA & $SPCX investor, Model Y owner.",
+          "followers_count": 1140963,
+          "friends_count": 498,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 425,
+          "favorite_count": 3507,
+          "reply_count": 102,
+          "quote_count": 33
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 425,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107695858259292561",
+      "text": "Tesla self-driving is magical",
+      "created_at": "Wed Oct 07 04:53:46 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107617079235060023",
+        "text": "“I'm in a Model Y L, and using [FSD Supervised]. \n\nThis is the most unbelievable technology I have ever experienced in a car.” https://t.co/9TdhKGKMtW",
+        "created_at": "Tue Oct 06 23:40:43 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2107574774209630208",
+            "url": "https://video.twimg.com/amplify_video/2107574774209630208/vid/avc1/720x1280/7Zwg7AexYEBVGIyb.mp4?tag=29",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "13298072",
+          "name": "Tesla",
+          "screen_name": "Tesla",
+          "description": "Electric vehicles, giant batteries & solar, AI & robotics",
+          "followers_count": 24777844,
+          "friends_count": 55,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 413,
+          "favorite_count": 3715,
+          "reply_count": 211,
+          "quote_count": 83
+        }
+      },
+      "stats": {
+        "retweet_count": 718,
+        "favorite_count": 5747,
+        "reply_count": 614,
+        "quote_count": 71
+      }
+    },
+    {
+      "id": "2107696351794622954",
+      "text": "SpaceX talk",
+      "created_at": "Wed Oct 07 04:55:44 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107575297432572144",
+        "text": "Grok Bot summary: IAC 2026 presentation by SpaceXAI President Michael Nicolls.\n\n🎯 The main message\n- SpaceX was founded in 2002 to make life multi-planetary and \"extend the light of consciousness to the stars.\"\n- He said the biggest risk as constellations grow is not debris. It's satellite operators not sharing data with each other.\n\n🌍 How Starlink grew\n- Starlink began in 2019 with 60 V0.9 satellites. User service started in late 2020 as the \"Better Than Nothing Beta.\"\n- V1.5 added space lasers, which let the satellites link into a mesh. That's when Starlink really took off, reaching oceans, Antarctica and airplanes.\n- V2 (2023) has 4x the capacity of V1. Falcon launches V2 satellites 2–3 times a week, and each launch adds about 3 terabits of capacity.\n- V3 launched on Starship about a week before the talk. Each V3 satellite has another 10x capacity, and each Starship launch carries 20–30x what a Falcon launch does.\n- Starlink now has over 11,000 satellites, about 60% of all active satellites in low Earth orbit.\n- It serves more than 13M customers in about 170 markets, plus ships and planes.\n- The laser mesh means Starlink doesn't depend on local ground infrastructure. During last year's fires and power outages in Spain, it kept tens of thousands of customers and emergency responders online.\n\n🚀 The life of a Starlink satellite\n- **Before launch:** SpaceX checks that deploying the satellites won't bring them close to anything else, and shares where they'll be.\n- **Deploy:** satellites are released below 300 km, where almost no other operators fly.\n- **Orbit raising:** each climb path is checked against other satellites and crewed space stations, and SpaceX publishes the satellites' positions every hour on the way up.\n- **Lower orbits for safety:** the original plan was about 1,000 km. Now every satellite flies below 500 km, and V3 will fly at about 350–360 km. At these heights a dead satellite falls back to Earth within months instead of staying up for centuries.\n\n🛡️ How they avoid collisions\n- Each satellite makes small station-keeping moves about once a day and a collision-avoidance move about every 10 days.\n- Across the fleet, that's about 1,000 avoidance moves a day.\n- Starlink's threshold for moving is nearly 100x more cautious than the industry standard, so the whole fleet's collision risk is about the same as a much smaller constellation's.\n- \"Ducking\" moves turn the satellite so it presents a smaller target during a close pass, cutting the collision risk about 10x more.\n- Automated software makes these decisions, which is why Starlink tries to stay in contact with every satellite at all times.\n\n📡 Always connected\n- Starship's live launch video was streamed over Starlink.\n- The new V3 satellites connected to the network within 2 minutes of release, because Starlink terminals are built into the satellites. Their lasers link into the mesh within tens of minutes.\n- The goal is to make contact right away and never lose it.\n\n🌬️ Space weather\n- During a 2024 solar storm, air density in orbit jumped 5x in a few hours, which throws off predictions of where satellites will be.\n- Starlink is \"probably one of the best sensors\" for this. It measures density in real time and automatically corrects its position forecasts.\n\n🔭 Working with astronomers\n- **Optical:** SpaceX tried Vantablack paint and sun visors. What finally worked was a mirror-like film that reflects sunlight away from the ground, combined with careful steering. A V2 satellite now looks about as bright as a sheet of paper. This was done with groups like the Vera Rubin Observatory.\n- **Radio:** working with observatories like the US National Radio Astronomy Observatory (NRAO), Starlink steers its beams and frequencies around where the telescopes are pointing. As a result, the telescopes can now observe more often.\n\n♻️ End of life\n- SpaceX uses statistics to predict when parts will fail and deorbits satellites early. Many of those satellites would have kept working.\n- Retired satellites are steered down within weeks, not left to drift for the 5 or 25 years regulations allow.\n- They're built to burn up completely, and reentry is aimed over the ocean.\n- Of about 10,000 satellites launched by early 2026, only a few dead ones remain in orbit. The goal is zero.\n- \"Reliability and rate go together.\"\n\n⚠️ The biggest danger: other operators\n- Tracked debris is like obstacles on a road: if you can measure it, you can avoid it.\n- What you can't avoid is a satellite that maneuvers without telling anyone. Starlink has had passes as close as tens of meters this way.\n- Starlink has maneuvered around satellites from about 650 operators in recent months, but shares position data with only about half of them. \"That number is too low.\"\n- SpaceX shares data with China's space station and some Chinese operators. Many operators don't share at all, including some in the US, Europe and Japan.\n\n⭐ Stargaze: Starlink's own space tracking\n- Over 30,000 star trackers on Starlink satellites spot passing objects as streaks against the stars.\n- Stargaze now tracks over 17,000 objects, including about 90% of the maneuvering satellites that cross Starlink's orbits.\n- In one example, an untracked satellite's predicted 9 km miss shrank to about 60 m after it maneuvered toward Starlink. Stargaze caught the move and the Starlink satellite dodged in time.\n- He said it's still no substitute for operators sharing their plans in advance.\n\n🤝 The ask: share your data\n- SpaceX runs its own space safety data platform, and over 100 operators have signed up.\n- Operators can upload their satellite positions and check them against Starlink and against Stargaze tracking.\n- His message to every operator was to join the platform and share their positions.\n\n🧠 StarMind: AI compute in space\n- StarMind is SpaceX's planned AI satellite constellation, starting launches and scaling next year.\n- The goal is to move AI compute off Earth. He expects StarMind to drive demand for Starship launches the way Starlink did for Falcon.\n- On the ground, SpaceX is building over 2 GW of compute in Memphis. He said AI demand will be nearly limitless, and Earth's resources make that hard to keep scaling there.\n- In space, the satellites run on solar power and shed heat through large radiators.\n- Each satellite is simpler than a Starlink: basically a computer with big solar panels and radiators.\n- Each one has about 250 kW, roughly one NVL72 rack of compute.\n- They'd fly in tight clusters of about 10 satellites linked by about 10 terabits of bandwidth, then connect to Starlink.\n- SpaceX has filed for up to **1 million satellites**, in low-inclination and sun-synchronous orbits. Building them could mean thousands of satellites a week.\n- New challenges include much higher reliability and redundancy, flying in close formation, and micrometeoroids. Dead satellites might be sent away from Earth instead of burning up in the atmosphere.\n\n🌙 Beyond Earth\n- Starlink is developing very high-bandwidth lasers to connect the Moon, then Mars, building an \"interplanetary mesh.\"\n- All of that depends on getting safety right in low Earth orbit first.\n\n💡 Key takeaways\n- Starlink is the world's biggest constellation, and it's moving lower to be safer.\n- It makes about 1,000 collision-avoidance moves a day, with nearly 100x more caution than the industry standard.\n- The biggest risk is operators who don't share where their satellites are going.\n- StarMind could scale to 1 million AI satellites, with launches starting next year.\n- \"Coordination is a key element for realizing all of our ambitions.\"",
+        "created_at": "Tue Oct 06 20:54:42 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2107574916686213120",
+            "url": "https://pbs.twimg.com/media/HT-cOGaa8AAPgXs.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1907845,
+          "friends_count": 1059,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 93,
+          "favorite_count": 440,
+          "reply_count": 58,
+          "quote_count": 24
+        }
+      },
+      "stats": {
+        "retweet_count": 468,
+        "favorite_count": 2424,
+        "reply_count": 313,
+        "quote_count": 33
+      }
+    },
+    {
+      "id": "2107696505432035633",
+      "text": "RT @cb_doge: Here’s the full IAC 2026 presentation by SpaceXAI President @michaelnicollsx :\n\n0:00 Walk-on and opening\n1:40 Growth of the St…",
+      "created_at": "Wed Oct 07 04:56:20 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107532299227259044",
+        "text": "Here’s the full IAC 2026 presentation by SpaceXAI President @michaelnicollsx :\n\n0:00 Walk-on and opening\n1:40 Growth of the Starlink constellation\n4:00 Global growth\n5:40 Life of a Starlink satellite\n6:40 Launch and deploy\n7:40 Orbit raise\n8:20 Starlink altitudes\n10:00 On-station ops \n12:20 Constant communication\n14:00 Space weather and prediction\n15:20 Protecting the night sky\n17:40 Protecting radio astronomy\n19:00 Controlled and targeted reentry\n22:00 Biggest risk\n23:00 Close approaches\n24:20 Stargaze\n25:40 Unannounced maneuvers\n27:00 International satellite ephemeris\n28:40 space-safety .com\n29:40 The future\n30:00 Starmind\n32:40 Laser links\n34:00 Orbital mesh view\n34:40 Interplanetary — Moon and Mars\n35:40 Walk-off",
+        "created_at": "Tue Oct 06 18:03:50 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2107531072938590209",
+            "url": "https://video.twimg.com/amplify_video/2107531072938590209/vid/avc1/1920x1080/wI9W5Xz4tmcdYdYu.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1907845,
+          "friends_count": 1059,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 296,
+          "favorite_count": 1341,
+          "reply_count": 64,
+          "quote_count": 13
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 296,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107696566870114470",
+      "text": "RT @Teslaconomics: Bro… after connecting all my Gmail accounts to Grok Bot, I don’t even need to open Gmail anymore. Today it cleaned up 2,…",
+      "created_at": "Wed Oct 07 04:56:35 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107681345178923367",
+        "text": "Bro… after connecting all my Gmail accounts to Grok Bot, I don’t even need to open Gmail anymore. Today it cleaned up 2,000+ emails, and all I had to tell it was: “Mark these as read,” “Unsubscribe me from these mailing lists,” “Move these to trash,” or respond with whatever. \n\nI’m literally managing my inbox by texting my bot… thousands of emails cleaned up with a few simple instructions. And unsubscribing means less junk coming in tomorrow, too. This might be my favorite email hack ever. \n\nWhat a game changer.",
+        "created_at": "Wed Oct 07 03:56:06 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "985243593538338816",
+          "name": "Teslaconomics",
+          "screen_name": "Teslaconomics",
+          "description": "I post my conscious thoughts w/ the world, live to the fullest, keep things simple, truthful & filter the noise. Long-term investor in Tesla, SpaceX, xAI/X.",
+          "followers_count": 514609,
+          "friends_count": 233,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 123,
+          "favorite_count": 1189,
+          "reply_count": 109,
+          "quote_count": 19
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 123,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107696927068536968",
+      "text": "RT @SpaceXAI: Grok 4.7 is now live on Microsoft Foundry https://t.co/r450VLImFN",
+      "created_at": "Wed Oct 07 04:58:01 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2107622270839717888",
+          "url": "https://video.twimg.com/amplify_video/2107622270839717888/vid/avc1/2400x1260/ER2kWpwUDjMbY800.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": {
+        "id": "2107623124909060174",
+        "text": "Grok 4.7 is now live on Microsoft Foundry https://t.co/r450VLImFN",
+        "created_at": "Wed Oct 07 00:04:45 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2107622270839717888",
+            "url": "https://video.twimg.com/amplify_video/2107622270839717888/vid/avc1/2400x1260/ER2kWpwUDjMbY800.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1661523610111193088",
+          "name": "SpaceXAI",
+          "screen_name": "SpaceXAI",
+          "description": "",
+          "followers_count": 2073563,
+          "friends_count": 6,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 171,
+          "favorite_count": 1287,
+          "reply_count": 90,
+          "quote_count": 30
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 171,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107697003899846720",
+      "text": "It really is",
+      "created_at": "Wed Oct 07 04:58:19 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107611418715705734",
+        "text": "Bad news guys: Grok Bot is actually really good 🙃",
+        "created_at": "Tue Oct 06 23:18:14 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "786375418685165568",
+          "name": "Theo - t3.gg",
+          "screen_name": "theo",
+          "description": "Full time CEO @t3dotcodes & @t3dotchat. Part time YouTuber, investor, and developer",
+          "followers_count": 398346,
+          "friends_count": 4287,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 82,
+          "favorite_count": 3769,
+          "reply_count": 368,
+          "quote_count": 60
+        }
+      },
+      "stats": {
+        "retweet_count": 553,
+        "favorite_count": 6714,
+        "reply_count": 866,
+        "quote_count": 79
+      }
+    },
+    {
+      "id": "2107701276641493321",
+      "text": "RT @davidellison: Today is a new day for @Skydance, and I'm incredibly grateful to everyone who helped get us here. It's a big day, and we'…",
+      "created_at": "Wed Oct 07 05:15:18 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107458663187440025",
+        "text": "Today is a new day for @Skydance, and I'm incredibly grateful to everyone who helped get us here. It's a big day, and we're just getting started. Let's go! https://t.co/89jxDrzVGU https://t.co/e6P28HkRto",
+        "created_at": "Tue Oct 06 13:11:14 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2107458618123767809",
+            "url": "https://video.twimg.com/amplify_video/2107458618123767809/vid/avc1/1080x1080/29NJA7FdysPACZSe.mp4?tag=29",
+            "bitrate": 8768000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2106001146925953025",
+          "name": "David Ellison",
+          "screen_name": "davidellison",
+          "description": "",
+          "followers_count": 62837,
+          "friends_count": 6,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1139,
+          "favorite_count": 7754,
+          "reply_count": 882,
+          "quote_count": 179
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1139,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107701822379143323",
+      "text": "RT @XFreeze: The engineering underneath Super Heavy is absolutely insane\n\nIt literally looks more like science fiction than rocket hardware…",
+      "created_at": "Wed Oct 07 05:17:28 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107700687635464494",
+        "text": "The engineering underneath Super Heavy is absolutely insane\n\nIt literally looks more like science fiction than rocket hardware https://t.co/26XMIXJZfd",
+        "created_at": "Wed Oct 07 05:12:57 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2107700662230540288",
+            "url": "https://pbs.twimg.com/media/HUAOldEbYAAWXza.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2107700668240957440",
+            "url": "https://pbs.twimg.com/media/HUAOlzdbEAA5cLZ.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2107700675778134017",
+            "url": "https://pbs.twimg.com/media/HUAOmPibQAEX1fD.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2107700682149310465",
+            "url": "https://pbs.twimg.com/media/HUAOmnRbsAEv7Sx.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1818311005698678784",
+          "name": "X Freeze",
+          "screen_name": "XFreeze",
+          "description": "",
+          "followers_count": 282627,
+          "friends_count": 2087,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 197,
+          "favorite_count": 1630,
+          "reply_count": 104,
+          "quote_count": 24
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 197,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107702145378316440",
+      "text": "RT @Sassafrass_84: Elon nailed the double standard.\n\nIf we shipped 100,000 Americans to Greenland, elected an American prime minister, and…",
+      "created_at": "Wed Oct 07 05:18:45 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107333845951381712",
+        "text": "Elon nailed the double standard.\n\nIf we shipped 100,000 Americans to Greenland, elected an American prime minister, and voted the place into the U.S., the left would lose their minds. Do that to Europe through mass immigration and they call it progress.\n\nSame playbook here. Import the votes. Change the country. Then act shocked when the natives notice.\n\nEurope is the warning. November is the off-ramp.\n\nVote Republican. 🇺🇸🇺🇸🇺🇸",
+        "created_at": "Tue Oct 06 04:55:15 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2107333842474303488",
+            "url": "https://pbs.twimg.com/media/HT7A9u_XAAAn68o.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1432014119931162629",
+          "name": "Sassafrass84",
+          "screen_name": "Sassafrass_84",
+          "description": "Unapologetically conservative.Wife.Patriot. Menace to the mainstream.Traditional wife with a modern mouth.America First. Red, white, and done with the nonsense.",
+          "followers_count": 642908,
+          "friends_count": 101810,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 15122,
+          "favorite_count": 51294,
+          "reply_count": 554,
+          "quote_count": 335
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 15122,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107702262227415400",
+      "text": "RT @SawyerMerritt: The Model Y was the #1 best-selling car of any kind (EV or gas) in South Korea in September for the 3rd consecutive mont…",
+      "created_at": "Wed Oct 07 05:19:13 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107480831728193866",
+        "text": "The Model Y was the #1 best-selling car of any kind (EV or gas) in South Korea in September for the 3rd consecutive month.\n\nTesla registered 12,372 vehicles last month in the country, up 36% YoY, leading South Korea's import market for the 8th consecutive month. https://t.co/rEc9WQZB2B",
+        "created_at": "Tue Oct 06 14:39:20 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2107479833718525952",
+            "url": "https://pbs.twimg.com/media/HT9FviwXkAA12Kr.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2107338588635693159",
+          "text": "Model Y, 국내 자동차 전체 판매\n3개월 연속 1위\n\nTesla, 수입차 브랜드 판매\n8개월 연속 1위\n\n놀랍도록 풍요로운 세상을 향한 여정에 함께해 주시는\nTesla 오너분들의 변함 없는 신뢰와 선택에 진심으로 감사드립니다.\n\n출처: 한국수입자동차협회(KAIDA), 한국자동차산업협회(KAMA) https://t.co/oJ7DTYhZ0A",
+          "created_at": "Tue Oct 06 05:14:06 +0000 2026",
+          "lang": "ko",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2107334786624925696",
+              "url": "https://pbs.twimg.com/media/HT7B0sOaMAAQ7bb.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1639167118733357056",
+            "name": "Tesla Korea",
+            "screen_name": "tesla_korea",
+            "description": "테슬라 코리아 공식 계정 | Building a World of Amazing Abundance",
+            "followers_count": 28570,
+            "friends_count": 42,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 177,
+            "favorite_count": 941,
+            "reply_count": 60,
+            "quote_count": 45
+          }
+        },
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EVs/space/tech. Bringing you the latest news in a single, easy-to-read feed. $TSLA & $SPCX investor, Model Y owner.",
+          "followers_count": 1140963,
+          "friends_count": 498,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 220,
+          "favorite_count": 1924,
+          "reply_count": 106,
+          "quote_count": 14
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 220,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107714870313676807",
+      "text": "🇩🇪 Danke Schön! 🇩🇪",
+      "created_at": "Wed Oct 07 06:09:19 +0000 2026",
+      "lang": "de",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107464215984517307",
+        "text": "BREAKING: Germany’s transport minister pushes for Tesla FSD approval across Europe.\n\nSpeaking today at a Tagesspiegel Background conference in Berlin, Steffen Bilger said:\n\n• He will push for Tesla FSD Supervised to reach drivers across the EU soon.\n\n• He sees potential for FSD to make roads safer and wants to support innovation.\n\n• Germany should explore its own approval route if EU talks fail.\n\n• He will work to ensure that this system can be used throughout Europe soon.\n\n📸 Lena Ganssmann / Tagesspiegel",
+        "created_at": "Tue Oct 06 13:33:18 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2107464209105821696",
+            "url": "https://pbs.twimg.com/media/HT83iEiaIAAwMCs.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1907845,
+          "friends_count": 1059,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 231,
+          "favorite_count": 1958,
+          "reply_count": 116,
+          "quote_count": 71
+        }
+      },
+      "stats": {
+        "retweet_count": 1189,
+        "favorite_count": 10722,
+        "reply_count": 869,
+        "quote_count": 173
+      }
+    },
+    {
+      "id": "2107717606702776559",
+      "text": "RT @xenocosmography: Leftists: \"We're going to set the Orks on our own people until they're all thoroughly raped and killed. Also, we're th…",
+      "created_at": "Wed Oct 07 06:20:11 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107517720514396370",
+        "text": "Leftists: \"We're going to set the Orks on our own people until they're all thoroughly raped and killed. Also, we're the good guys.\"\n-- No one thinks they sincerely think this. They don't think they sincerely think this. It's a weird ritualistic interlude.",
+        "created_at": "Tue Oct 06 17:05:55 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1709393467871461376",
+          "name": "Xenocosmography",
+          "screen_name": "xenocosmography",
+          "description": "Anglotheosophical Oblique Escalation\nhttps://t.co/zYwV8LwOQg",
+          "followers_count": 67683,
+          "friends_count": 949,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 151,
+          "favorite_count": 1665,
+          "reply_count": 71,
+          "quote_count": 15
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 151,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107717829780967641",
+      "text": "RT @PrishaMosley: I am suing my doctors for transitioning me starting as a minor in the state of North Carolina.",
+      "created_at": "Wed Oct 07 06:21:04 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107516757866865025",
+        "text": "I am suing my doctors for transitioning me starting as a minor in the state of North Carolina.",
+        "created_at": "Tue Oct 06 17:02:05 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2107175993647759630",
+          "text": "A New York jury just awarded $2 MILLION to a young woman who underwent a double mastectomy at 16 and later detransitioned.\n\nThe jury found her psychologist and surgeon liable for malpractice.\n\nHer case alleged that serious mental-health issues, including depression, body dysmorphia, anorexia and autism-spectrum traits, were not adequately addressed before an irreversible procedure was performed on a minor.\n\nNow watch what happens when someone like her speaks publicly.\n\nFor years we were told regret was exceedingly rare. We were told these procedures were necessary care. We were told questioning the process itself was dangerous.\n\nBut when a detransitioner stands up and says, “This happened to me,” suddenly she becomes the problem.\n\nThat is the epistemic tell.\n\nWhen evidence supports the narrative, it is celebrated.\n\nWhen evidence contradicts the narrative, the person carrying the evidence gets attacked.\n\nA jury heard the testimony. A jury examined the evidence. A jury found malpractice. And a jury put the damages at $2 million.\n\nYou don’t protect vulnerable young people by demanding silence from the ones who came back and said, “I wish someone had slowed this down.”\n\nYou protect them by listening.\n\n#AStoneGroove #SilentMajoritySpeaks",
+          "created_at": "Mon Oct 05 18:28:00 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2107175989356777473",
+              "url": "https://pbs.twimg.com/media/HT4xZeTX0AENt7t.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1620183298696790017",
+            "name": "A Gene Robinson",
+            "screen_name": "AlBuffalo2nite",
+            "description": "Democrats make promises. I track outcomes. \n@AlGeneRobi96834 is my Personal Account. Much more personal than this one. Let's dig in... Together!",
+            "followers_count": 141687,
+            "friends_count": 17233,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 3327,
+            "favorite_count": 10817,
+            "reply_count": 456,
+            "quote_count": 287
+          }
+        },
+        "user": {
+          "id": "1562195570911215618",
+          "name": "Prisha Mosley🦎",
+          "screen_name": "PrishaMosley",
+          "description": "28. Ex Trans. Mother. Independent Women ambassador. XX",
+          "followers_count": 50303,
+          "friends_count": 1113,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 578,
+          "favorite_count": 4254,
+          "reply_count": 158,
+          "quote_count": 30
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 578,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107717867064209705",
+      "text": "RT @poteto: I talk a lot about Grok Bot on Slack, but did you know you can also add @MicrosoftTeams?\n\nhttps://t.co/FLvXJomCdL",
+      "created_at": "Wed Oct 07 06:21:13 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107596645122875439",
+        "text": "I talk a lot about Grok Bot on Slack, but did you know you can also add @MicrosoftTeams?\n\nhttps://t.co/FLvXJomCdL",
+        "created_at": "Tue Oct 06 22:19:32 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2832427459",
+          "name": "lauren",
+          "screen_name": "poteto",
+          "description": "Grok @Bot at @SpaceXAI. Shipping with https://t.co/FhHxHHdUAz. React compiler core team, prev cursor, meta, netflix",
+          "followers_count": 162953,
+          "friends_count": 996,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 90,
+          "favorite_count": 1085,
+          "reply_count": 126,
+          "quote_count": 9
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 90,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107722382211424679",
+      "text": "RT @melvindvivas: Grok Bot is awesome",
+      "created_at": "Wed Oct 07 06:39:10 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107711125341274582",
+        "text": "Grok Bot is awesome",
+        "created_at": "Wed Oct 07 05:54:26 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1946635320797347840",
+          "name": "Melvin Vivas",
+          "screen_name": "melvindvivas",
+          "description": "Agents, Local models, AI Engineering\nAI Coworker https://t.co/llkbM6y48O\nAI Backends https://t.co/MtiGBNIYAq\nYoutube https://t.co/HRuCdgM6bD",
+          "followers_count": 5294,
+          "friends_count": 961,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 69,
+          "favorite_count": 612,
+          "reply_count": 63,
+          "quote_count": 7
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 69,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107722464591794325",
+      "text": "RT @thecsguy: Grok bot proactively helping every day is like having many executive assistants for each area of your life. \n\nThere hasn’t be…",
+      "created_at": "Wed Oct 07 06:39:29 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107682560763654325",
+        "text": "Grok bot proactively helping every day is like having many executive assistants for each area of your life. \n\nThere hasn’t been a technology that’s this well put together in a long time. \n\nI can’t wait to see what else the @SpaceXAI team is cooking 👨‍🍳 🥔",
+        "created_at": "Wed Oct 07 04:00:55 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2269676263",
+          "name": "nick",
+          "screen_name": "thecsguy",
+          "description": "software engineer @google. prev: @aws. \nopinions are my own",
+          "followers_count": 4177,
+          "friends_count": 3558,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 62,
+          "favorite_count": 514,
+          "reply_count": 30,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 62,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107722678799077887",
+      "text": "RT @debs_obrien: OK I rock. I just built an @AmazonAlexa skill so I can talk to my Grok @bot. It works and that blows my mind. I used voice…",
+      "created_at": "Wed Oct 07 06:40:20 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107568147725185130",
+        "text": "OK I rock. I just built an @AmazonAlexa skill so I can talk to my Grok @bot. It works and that blows my mind. I used voice mode in @bot to walk me through the process so I could learn how to do it rather than just put an agent on it. Thanks @kentcdodds for encouraging me to do it",
+        "created_at": "Tue Oct 06 20:26:17 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "271871022",
+          "name": "Debbie O'Brien",
+          "screen_name": "debs_obrien",
+          "description": "Helping you all learn AI, Agents, Grok Bot, MCPs and more. Twin mum 👶👶, @GoogleDevExpert, @github ⭐ alumni, prev @Microsoft https://t.co/gHfIDuhkCj",
+          "followers_count": 23051,
+          "friends_count": 1389,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 59,
+          "favorite_count": 545,
+          "reply_count": 34,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 59,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107723129120518469",
+      "text": "RT @melvindvivas: Try asking your Grok Bot to send an email\n\nIt'll claim an inbox — name@mail.grokbot.com\n\nYour bot now has an email to use…",
+      "created_at": "Wed Oct 07 06:42:08 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107545810351370324",
+        "text": "Try asking your Grok Bot to send an email\n\nIt'll claim an inbox — name@mail.grokbot.com\n\nYour bot now has an email to use. It can send and receive emails https://t.co/wGYSVKfnfD",
+        "created_at": "Tue Oct 06 18:57:32 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2107545667388526592",
+            "url": "https://pbs.twimg.com/media/HT-BnkSbUAAWzvR.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1946635320797347840",
+          "name": "Melvin Vivas",
+          "screen_name": "melvindvivas",
+          "description": "Agents, Local models, AI Engineering\nAI Coworker https://t.co/llkbM6y48O\nAI Backends https://t.co/MtiGBNIYAq\nYoutube https://t.co/HRuCdgM6bD",
+          "followers_count": 5294,
+          "friends_count": 961,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 96,
+          "favorite_count": 1235,
+          "reply_count": 127,
+          "quote_count": 27
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 96,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107724314451878104",
+      "text": "Important note regarding Grok @Bot:\n\nGoing forward, @SpaceX will use the best back end model for any given task, including Claude Opus 5.5, MidJourney, Suno and other leading APIs. \n\nWhatever is most likely to give you the best outcome.",
+      "created_at": "Wed Oct 07 06:46:50 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 3000,
+        "favorite_count": 37394,
+        "reply_count": 2998,
+        "quote_count": 1579
+      }
+    },
+    {
+      "id": "2107724662239293694",
+      "text": "RT @parkersmith: Sign up to hear the latest on @bot! I'll be sharing some of the ways proactivity has supercharged @bot, should be a good t…",
+      "created_at": "Wed Oct 07 06:48:13 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107314783041007678",
+        "text": "Sign up to hear the latest on @bot! I'll be sharing some of the ways proactivity has supercharged @bot, should be a good time :)\n\nhttps://t.co/mNKZZpwSuX",
+        "created_at": "Tue Oct 06 03:39:30 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4593733153",
+          "name": "Parker Smith",
+          "screen_name": "parkersmith",
+          "description": "Building Grok @Bot at @SpaceXAI",
+          "followers_count": 5880,
+          "friends_count": 866,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 77,
+          "favorite_count": 925,
+          "reply_count": 44,
+          "quote_count": 10
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 77,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107724743386501180",
+      "text": "RT @xenocosmography: Finally. https://t.co/Z2grZvXaYF",
+      "created_at": "Wed Oct 07 06:48:33 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107704580016582936",
+        "text": "Finally. https://t.co/Z2grZvXaYF",
+        "created_at": "Wed Oct 07 05:28:25 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2107447587683045633",
+          "text": "“We, the Jews of Israel, have a great problem with progressive Jews in the West who support immigration.\n\nIt is time for us to call them out.”\n\n— @GadiTaub1 at NatCon Jerusalem. https://t.co/9YHqGvF7Vn",
+          "created_at": "Tue Oct 06 12:27:14 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2107447461618806784",
+              "url": "https://pbs.twimg.com/media/HT8oTPSWcAAt_bk.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1304347141222039554",
+            "name": "National Conservatism",
+            "screen_name": "NatConTalk",
+            "description": "Thank you for joining us at NatCon 5 in Washington, DC | Speaker soundbites without \"quotation marks\"=paraphrases | https://t.co/UrzrU6c4cO",
+            "followers_count": 31875,
+            "friends_count": 568,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 235,
+            "favorite_count": 2519,
+            "reply_count": 112,
+            "quote_count": 120
+          }
+        },
+        "user": {
+          "id": "1709393467871461376",
+          "name": "Xenocosmography",
+          "screen_name": "xenocosmography",
+          "description": "Anglotheosophical Oblique Escalation\nhttps://t.co/zYwV8LwOQg",
+          "followers_count": 67683,
+          "friends_count": 949,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 122,
+          "favorite_count": 1084,
+          "reply_count": 62,
+          "quote_count": 8
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 122,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107724867705651557",
+      "text": "RT @LaurenDreyer: Great to be at India Mobile Congress today.\n\nThank you to the Government of India and @DoT_India for the opportunity to s…",
+      "created_at": "Wed Oct 07 06:49:02 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2107714585142919226",
+        "text": "Great to be at India Mobile Congress today.\n\nThank you to the Government of India and @DoT_India for the opportunity to share @Starlink’s vision for India.\n\nStarlink can help reach the places where the last mile is still the hardest mile - working alongside India’s operators, government and industry.\n\nAs India works through the final approvals, our message is simple:\n\nWe stand ready to serve India, as soon as India is ready! 🇮🇳🛰️",
+        "created_at": "Wed Oct 07 06:08:11 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2107714570907435008",
+            "url": "https://pbs.twimg.com/media/HUAbPC7aQAACMgC.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1722261064354832384",
+          "name": "Lauren Dreyer",
+          "screen_name": "LaurenDreyer",
+          "description": "@SpaceX since 2006 | VP of Starlink Business Operations | Verified and SpaceX-affiliated account, all others fake.",
+          "followers_count": 14524,
+          "friends_count": 151,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 127,
+          "favorite_count": 932,
+          "reply_count": 74,
+          "quote_count": 19
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 127,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

@@ -1,0 +1,166 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 255644,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261007",
+  "last_updated": "2026-10-07T03:56:32.156264",
+  "tweet_count": 3,
+  "tweets": [
+    {
+      "id": "2107627342411477413",
+      "text": "我有两个 Claude Max@20 账号，跟这篇文章的情况一样，有一个注册时间长一些的不太耐用，消耗的很快，另一个新一些账号就耐用的多，都是同样的用法。\n\n> While refining our methodology, we ran into a very confusing situation where just 1 of 3 of the same subscription we tested for a particular provider had ~20% lower limits than the other 2. This unlucky account happened to be significantly older as well, and we were worried that the provider had some cursed setup where they changed subscription limits depending on the age of the account.",
+      "created_at": "Wed Oct 07 00:21:30 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107226878931067054",
+        "text": "按照 SemiAnalysis 的测试结果：同样 200 美元，Claude 订阅的 Token 用量约为 OpenAI 的 5 倍\n\n半导体和 AI 产业研究机构 SemiAnalysis 实测了 Anthropic、OpenAI 等九家的 AI 订阅套餐。结论是，在两家都主推的日常主力模型上，Claude 订阅折算出来的价值约为 OpenAI 的 5 倍。\n\n订阅套餐不告诉你能用多少 Token，只给一个 0 到 100% 的进度条，分 5 小时和 7 天两个窗口。SemiAnalysis 的办法是一种 Token 一种 Token 地测：反复发请求，记下每用掉多少 Token 进度条跳一格，再按 API 标价折算成美元，得出“API 等价价值”，也就是同样的用量如果走 API 按量付费要花多少钱。测试场景是编程智能体这类重度使用。\n\n【差距出在中档模型】\n\n顶配模型两家差不多。200 美元套餐里，OpenAI 的 GPT-6 Astra 用满额度约值 2897 美元，Anthropic 的 Fable 5.1 约值 2485 美元。区别是 Claude 套餐里 Fable 最多只能占一半额度，用完这一半，另一半还能跑别的模型。\n\n差距在中档。两家都把中档模型当日常主力推，Anthropic 是 Opus 5.5，OpenAI 是 GPT-6.1 Sol。这一档上，Claude 各套餐的价值约为 OpenAI 的 5 倍。Sol 的 API 单价比 Opus 便宜很多，按美元比对它不太公平，但 SemiAnalysis 改成直接比 Token 数量，Claude 仍然领先一大截。\n\nOpenAI 的 Pro 套餐没有 5 小时限制，月内更容易把额度用满。SemiAnalysis 认为这一点抵不过 Opus 5.5 约 4 倍的价值差。\n\n【OpenAI 刚砍了一半】\n\n差距拉这么大，主要因为 OpenAI 上周刚改了套餐。9 月 29 日 DevDay 前后，OpenAI 宣布 200 美元的 Pro 档用量从 Plus 的 20 倍降到 10 倍，同时推出 500 美元的新档，独享每秒约 300 个 Token 的 Ultrafast 超快模式。老用户的旧额度保留到 10 月 29 日。\n\nSemiAnalysis 测到的结果和官方说法一致：200 美元档每个模型的 Token 都少了一半。Sol 的折算价值跌得更多，超过 50%，因为 OpenAI 同期把 GPT-6.1 Sol 的缓存读取价格降了一半。缓存读取指多轮对话里反复发给模型的旧内容，编程智能体用量里这部分占比很大，单价一降，同样多的 Token 折算成美元就更少。新的 500 美元档，Astra 用量只比砍之前的 200 美元档多 21%。\n\n改完之后，OpenAI 的 100、200、500 美元三档每美元换到的 Token 一样多。之前 200 美元档补贴最重，每美元价值约是 100 美元档的两倍。Anthropic 各档一直是同一个单价。\n\n这几天 OpenAI 负责 Codex 的 Tibo 承诺，未来 28 天每天要么上线一项改进，要么给全体用户重置额度。SemiAnalysis 在文中提到，OpenAI 此前多次重置额度攒下的好感，是 Codex 最近用户猛涨的原因之一，也让 Anthropic 几次收回原定的限额收紧计划。\n\n【两家减补贴的路子不同】\n\nSemiAnalysis 估算，订阅只占 Anthropic 收入约一成，却吃掉超过四成的推理算力。所以两家都在减补贴。\n\nAnthropic 的做法是越贵的模型给得越少。同一套餐里，Sonnet 5.5 和 Opus 5.5 的价值差别不大，到 Fable 5.1 明显缩水。按 SemiAnalysis 的估算，假设用户平均只用掉两成额度，Opus 5.5 订阅的毛利率约 6%，Fable 5.1 约 80%，接近软件公司的水平。OpenAI 的做法是一刀切，所有模型直接降到 Fable 那个水平。\n\nOpus 5.5 在 9 月 22 日发布，API 价格降了两成，缓存读取降了六成。Anthropic 同时提高了 Opus 的订阅额度，SemiAnalysis 测得 Max 档约多 20%，Pro 档约多 50%，但还不足以抵消降价，所以按美元折算，Opus 订阅的价值其实比之前略低。\n\n对每天用 AI 写代码、正在 200 美元档之间挑的人，眼下 Claude 给的量更多。不过额度随时会变：SemiAnalysis 测试时发现三个同款账号里有一个额度低了约 20%，厂商确认那是一次“极小范围”的 A/B 测试。\n\nhttps://t.co/XyJ9Cb6cep",
+        "created_at": "Mon Oct 05 21:50:12 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2107226490446180353",
+            "url": "https://pbs.twimg.com/media/HT5fVBhWcAEUOVt.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2107226521584689152",
+            "url": "https://pbs.twimg.com/media/HT5fW1hWYAAisnz.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2107226601398091776",
+            "url": "https://pbs.twimg.com/media/HT5fbe2WQAAz-Hz.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2107226854583119872",
+            "url": "https://pbs.twimg.com/media/HT5fqOCXMAAXjMD.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 255644,
+          "friends_count": 1749,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 30,
+          "favorite_count": 226,
+          "reply_count": 63,
+          "quote_count": 17
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 32,
+        "reply_count": 19,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107638540049772575",
+      "text": "Google 发布 EmbeddingGemma 2：在手机上用一句话搜照片、视频和录音\n\nGoogle 开源了 EmbeddingGemma 2，这是一个能在手机和电脑本地运行的多模态嵌入模型。文字、图片、视频、音频和代码都能放进同一套“坐标系”，所以你可以用一句话找到一段视频，整个过程不用联网。\n\n嵌入模型（embedding model）是搜索背后的一层技术：它把内容转成一串数字，意思相近的内容，数字也相近。上一代 EmbeddingGemma 只处理文字，这一代把几种格式统一了起来，可以跨格式找东西。比如对着手机说一句话，找出相册里对应的视频片段；或者输入一行字，在几个小时的录音里找到某段对话。\n\n模型有 7.4 亿参数，运行时占用 191MB 到 567MB 内存，手机上跑得动。Google 说它在同体量模型里表现最好，还超过了一些比它大一倍多的模型。它一次能处理的内容是上一代的 4 倍（8K 上下文），相当于 5.5 分钟音频、29 张图片或 58 帧视频。\n\n它可以和 Google 的开源大模型 Gemma 4 搭配，在设备上做 RAG（检索增强生成，先查资料再回答）。EmbeddingGemma 2 从你的本地文件里找出相关内容，Gemma 4 读完后给出答案。文件不离开设备，合同、病历这类不想上传到云端的资料也能这样处理。\n\n它基于 Gemma 4 架构，用 Apache 2.0 协议开源，可以免费商用。现在能在 Hugging Face 和 Kaggle 下载，Google 企业 AI 平台的模型库稍后上线。",
+      "created_at": "Wed Oct 07 01:06:00 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107501975671890211",
+        "text": "Introducing EmbeddingGemma 2, a new open multimodal model that sets the standard for on-device efficiency.\n\n- our first open, natively multimodal embedding model\n- handles text, code, image, video, and audio tasks within a lightweight, modular 740M parameter form factor\n- ideal for offline, privacy-first RAG when paired with Gemma 4\n- outperforms some specialist models more than twice its size\n\nWeights available now on Hugging Face.",
+        "created_at": "Tue Oct 06 16:03:21 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2107500804932608000",
+            "url": "https://video.twimg.com/amplify_video/2107500804932608000/vid/avc1/3840x2160/VdT_H37o7LF4zemE.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "14130366",
+          "name": "Sundar Pichai",
+          "screen_name": "sundarpichai",
+          "description": "CEO, Google and Alphabet",
+          "followers_count": 11831857,
+          "friends_count": 199,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 579,
+          "favorite_count": 6163,
+          "reply_count": 306,
+          "quote_count": 117
+        }
+      },
+      "stats": {
+        "retweet_count": 11,
+        "favorite_count": 60,
+        "reply_count": 23,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2107647021825884337",
+      "text": "全套 Adobe 软件的开源实现👍",
+      "created_at": "Wed Oct 07 01:39:42 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107554211529724384",
+        "text": "🚨 Adobe 天塌了，全套Adobe软件，开源实现：\n\nhttps://t.co/fuocWwRaXO https://t.co/WXGX19yQP8",
+        "created_at": "Tue Oct 06 19:30:55 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2107554098602201088",
+            "url": "https://pbs.twimg.com/media/HT-JSVAaUAA-z0C.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2047918395329511424",
+          "name": "MATH FOURNITY",
+          "screen_name": "math_fournity",
+          "description": "数学元理论研究，数学界的毁灭之神\n\nWith AI, Surpass AI",
+          "followers_count": 2709,
+          "friends_count": 2934,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 230,
+          "favorite_count": 1521,
+          "reply_count": 12,
+          "quote_count": 30
+        }
+      },
+      "stats": {
+        "retweet_count": 24,
+        "favorite_count": 140,
+        "reply_count": 21,
+        "quote_count": 3
+      }
+    }
+  ]
+}

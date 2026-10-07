@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 255562,
+    "followers_count": 255644,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261006",
-  "last_updated": "2026-10-06T22:13:47.515751",
-  "tweet_count": 11,
+  "last_updated": "2026-10-07T03:56:32.157622",
+  "tweet_count": 12,
   "tweets": [
     {
       "id": "2107272401939583148",
@@ -503,6 +503,45 @@
         "favorite_count": 9,
         "reply_count": 1,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2107606305556890023",
+      "text": "OpenAI 一次性公开 722 篇 AI 写的数学论文\n\nOpenAI 把一个内部未发布模型做出的数学成果整体公开了：722 篇论文，归成 372 组结果，全部放在 GitHub 仓库 openai/math 里，谁都能看。\n\n这个模型就是上个月宣称解决了纳维-斯托克斯方程问题（千禧年七大数学难题之一）的那个。它从 8 月 28 日开始训练，能力比 OpenAI 已发布的 GPT-6 Astra 更强，目前还没对外开放。\n\nOpenAI 说，原有的数学测试题已经难不住模型了，所以改拿真实的未解数学问题来考它。前后一共给了模型大约 4000 道题，筛掉分量不够的，剩下这 372 组。平均每个结果花的算力，相当于在 ChatGPT Pro 里思考三个小时左右。\n\n论文覆盖数论、代数几何、组合、数学物理等大部分数学分支。标题里能看到不少有名的问题，比如证明 π 的无理性测度（衡量一个数能被分数逼近得多好）等于 2，证明卡塔兰常数是无理数，还有黎曼 ζ 函数零点分布、特殊情形下的霍奇猜想。后两项 OpenAI 特别说明，用的流程和其他结果不同，其中黎曼 ζ 那篇的文字还经过人工润色。\n\n这些结论可信吗？OpenAI 自己的说法是“处在不同验证阶段”。约 160 篇的主要结论附带了 Lean 形式化证明。Lean 是一种能让计算机逐步检查数学证明的编程语言，过得了 Lean，基本可以排除证明里的逻辑漏洞。剩下的论文还没形式化，OpenAI 承认其中可能有错，说会尽快修正，所有修订都保留历史版本。另外还附了 10 份模型推理过程的摘要，让人能看到模型是怎么想出来的。\n\n发布方式本身也是这次的重点。9 月下旬，OpenAI 在普林斯顿高等研究院（爱因斯坦待过的那个研究所）支持成立了独立的“数学与人工智能顾问组”，成员是 Timothy Gowers、Edward Witten、Martin Hairer 等 9 位数学家，不拿 OpenAI 的钱。此前 25 位菲尔兹奖得主联名发公开信，批评 AI 公司抢着宣布破解名题的做法。\n\n顾问组 9 月 29 日发布了一份建议，征集了 600 多位数学家的意见。核心要求有三条：AI 写的证明要按正规论文格式重写，并引用相关的已有文献；成果要放进不受 AI 公司控制、可长期引用的学术存档平台；AI 公司要出钱支持数学界去真正理解这些成果。顾问组还明确表示，不赞成 AI 公司在外界用不到的私有模型上攻数学难题，希望它们停下来。\n\nOpenAI 这次回应了其中一部分：先放 GitHub，同时在找符合顾问组标准的社区托管平台；承诺资助一系列研讨会、学术会议，帮数学界消化这批成果；也表示正在推进“负责任地发布”这个模型。至于停止在私有模型上测试，OpenAI 没有回应。\n\n对数学专业的人来说，接下来最实际的变化是：自己研究方向上的某个猜想，可能已经在这 722 篇论文里了，值得去仓库里翻一翻。\n\n原文：https://t.co/uAxjHXhNeK\n仓库：https://t.co/aPgNSqXevr",
+      "created_at": "Tue Oct 06 22:57:55 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107596713791767021",
+        "text": "We’re releasing a broad range of new mathematical results produced by an internal frontier model.\n\nWe’ve been consulting with the independent Advisory Group on Mathematics and Artificial Intelligence at the Institute for Advanced Study, and we have drawn on their advice and public recommendations to inform how we release these results. \n\nhttps://t.co/7N6TPlft1P",
+        "created_at": "Tue Oct 06 22:19:48 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 5409105,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2607,
+          "favorite_count": 15757,
+          "reply_count": 792,
+          "quote_count": 1604
+        }
+      },
+      "stats": {
+        "retweet_count": 22,
+        "favorite_count": 164,
+        "reply_count": 40,
+        "quote_count": 13
       }
     }
   ]

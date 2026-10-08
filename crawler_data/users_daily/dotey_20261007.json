@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 255733,
+    "followers_count": 256082,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261007",
-  "last_updated": "2026-10-07T10:49:54.467167",
-  "tweet_count": 6,
+  "last_updated": "2026-10-08T00:02:22.708797",
+  "tweet_count": 14,
   "tweets": [
     {
       "id": "2107627342411477413",
@@ -282,6 +282,382 @@
         "retweet_count": 9,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107891776711446597",
+      "text": "光环都被反编译出来了，现在你可以在 Android、Linux、Windows 上玩 Halo 了。\n\n有了 AI，以前工作量巨大或者很复杂的事情现在都在变成可能……\n\n项目地址：https://t.co/HMpstmhN99",
+      "created_at": "Wed Oct 07 17:52:16 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107478563947762134",
+        "text": "The Halo OpenCE Experience™ https://t.co/Ve1xVztgAb",
+        "created_at": "Tue Oct 06 14:30:19 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2107478170643615744",
+            "url": "https://video.twimg.com/amplify_video/2107478170643615744/vid/avc1/1280x720/7eqRUM7yEiZHQrN7.mp4?tag=14",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1093571573829648384",
+          "name": "Ren™",
+          "screen_name": "BE4T_37",
+          "description": "25 - Game Dev - Gameplay and Audio Designer and Programmer\n\nLead Sound Designer and Game Designer at Team Loonar\n\nhttps://t.co/8o9zSJpU6Q",
+          "followers_count": 1163,
+          "friends_count": 871,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 585,
+          "favorite_count": 5512,
+          "reply_count": 75,
+          "quote_count": 39
+        }
+      },
+      "stats": {
+        "retweet_count": 13,
+        "favorite_count": 112,
+        "reply_count": 7,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107896388163919908",
+      "text": "Anthropic 发布 Claude Haiku 5.5：小模型价格降到上一代的十分之一\n\nAnthropic 今天发布了 Claude Haiku 5.5。Haiku 是 Claude 家族里最小、最便宜的一档，排在 Sonnet 和 Opus 之下，主要用来跑量大、对成本敏感的任务。\n\n这次最大的变化是价格。处理 10 万 Token 以内的请求，Haiku 5.5 每百万 Token 输入 0.1 美元、输出 0.5 美元，比 Haiku 4.5 便宜 90%。超过 10 万 Token 的长请求是 0.5 和 2.5 美元，便宜一半。上一代 Haiku 收到的请求里约 90% 都在 10 万 Token 以内，所以按官方估算，平均运行成本降了约 75%。\n\n10 万 Token 大约是一本中篇小说的长度，客服对话、文档摘要、分类打标这类日常任务，基本都在这个范围里。\n\n价格降了，能力也上来了。官方公布的测试里，操作电脑完成多步骤任务（OSWorld 2.1）的成绩从 Haiku 4.5 的 15.7% 涨到 72.4%；在命令行里自主完成编程任务（Terminal-Bench 4.0）从 0 涨到 39.2%。Anthropic 说它是目前速度最快的模型（Opus 开快速模式除外），Asana 实测任务完成延迟降低了 30% 以上。\n\n官方推荐的用法有两类。一类是批量的重复活，比如摘要、分类、数据库查询，以及实时客服、浏览器自动操作这种要求响应快的场景。另一类是给大模型打下手：写代码时让 Opus 5.5 或 Sonnet 5.5 当主力，把零碎的子任务分给 Haiku 5.5 去做，也就是当子智能体。\n\nHaiku 5.5 也是第一个能调节“投入力度”（effort）的 Haiku 模型，从低到最高分五档。简单任务开低档省钱，难的任务开高档换效果，开发者可以按任务选。\n\nHaiku 5.5 今天起在 Claude API 以及亚马逊 AWS、谷歌云、微软 Azure 上可用，模型名 claude-haiku-5-5。\n\n同时宣布的还有两件事。\n\nSonnet 5.5 读取缓存的价格减半，降到每百万 Token 0.1 美元。缓存就是把反复用到的内容（比如很长的系统提示词、整个代码库）存起来，下次直接读取，不用重新算。智能体任务里这部分开销占大头，官方估算这次降价让 Sonnet 5.5 跑大多数智能体任务便宜约 20%。\n\n本周起，Max 和 Team 订阅用户每月会拿到一笔 API 额度：Max 5x 送 100 美元，Max 20x 送 200 美元，Team 最多 500 美元，团队成员共用。",
+      "created_at": "Wed Oct 07 18:10:36 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107894039626277339",
+        "text": "Introducing Claude Haiku 5.5: the cheapest, fastest, and most capable small model we’ve ever released.\n\nOn average, it costs around 75% less to run than Claude Haiku 4.5. https://t.co/jm06cZJfkV",
+        "created_at": "Wed Oct 07 18:01:16 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2107890134603481088",
+            "url": "https://video.twimg.com/amplify_video/2107890134603481088/vid/avc1/3840x2160/KakPq_aXsoFB9L23.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1943306828697550848",
+          "name": "Claude",
+          "screen_name": "claudeai",
+          "description": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+          "followers_count": 1870007,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2426,
+          "favorite_count": 33717,
+          "reply_count": 1177,
+          "quote_count": 1724
+        }
+      },
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 75,
+        "reply_count": 13,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2107897671335989304",
+      "text": "本周起，Claude 的 Max 和 Team 订阅用户每月会拿到一笔 API 额度：Max 5x 送 100 美元，Max 20x 送 200 美元，Team 最多 500 美元，团队成员共用。这笔额度只能在 Claude Platform 上用。\n\nhttps://t.co/CzGsHY44lY https://t.co/wJO84SEuCE",
+      "created_at": "Wed Oct 07 18:15:42 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2107897013085855744",
+          "url": "https://pbs.twimg.com/media/HUDBKlAW4AA9w9a.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2107896388163919908",
+        "text": "Anthropic 发布 Claude Haiku 5.5：小模型价格降到上一代的十分之一\n\nAnthropic 今天发布了 Claude Haiku 5.5。Haiku 是 Claude 家族里最小、最便宜的一档，排在 Sonnet 和 Opus 之下，主要用来跑量大、对成本敏感的任务。\n\n这次最大的变化是价格。处理 10 万 Token 以内的请求，Haiku 5.5 每百万 Token 输入 0.1 美元、输出 0.5 美元，比 Haiku 4.5 便宜 90%。超过 10 万 Token 的长请求是 0.5 和 2.5 美元，便宜一半。上一代 Haiku 收到的请求里约 90% 都在 10 万 Token 以内，所以按官方估算，平均运行成本降了约 75%。\n\n10 万 Token 大约是一本中篇小说的长度，客服对话、文档摘要、分类打标这类日常任务，基本都在这个范围里。\n\n价格降了，能力也上来了。官方公布的测试里，操作电脑完成多步骤任务（OSWorld 2.1）的成绩从 Haiku 4.5 的 15.7% 涨到 72.4%；在命令行里自主完成编程任务（Terminal-Bench 4.0）从 0 涨到 39.2%。Anthropic 说它是目前速度最快的模型（Opus 开快速模式除外），Asana 实测任务完成延迟降低了 30% 以上。\n\n官方推荐的用法有两类。一类是批量的重复活，比如摘要、分类、数据库查询，以及实时客服、浏览器自动操作这种要求响应快的场景。另一类是给大模型打下手：写代码时让 Opus 5.5 或 Sonnet 5.5 当主力，把零碎的子任务分给 Haiku 5.5 去做，也就是当子智能体。\n\nHaiku 5.5 也是第一个能调节“投入力度”（effort）的 Haiku 模型，从低到最高分五档。简单任务开低档省钱，难的任务开高档换效果，开发者可以按任务选。\n\nHaiku 5.5 今天起在 Claude API 以及亚马逊 AWS、谷歌云、微软 Azure 上可用，模型名 claude-haiku-5-5。\n\n同时宣布的还有两件事。\n\nSonnet 5.5 读取缓存的价格减半，降到每百万 Token 0.1 美元。缓存就是把反复用到的内容（比如很长的系统提示词、整个代码库）存起来，下次直接读取，不用重新算。智能体任务里这部分开销占大头，官方估算这次降价让 Sonnet 5.5 跑大多数智能体任务便宜约 20%。\n\n本周起，Max 和 Team 订阅用户每月会拿到一笔 API 额度：Max 5x 送 100 美元，Max 20x 送 200 美元，Team 最多 500 美元，团队成员共用。",
+        "created_at": "Wed Oct 07 18:10:36 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 256082,
+          "friends_count": 1749,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 75,
+          "reply_count": 13,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 51,
+        "reply_count": 9,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107898828053504166",
+      "text": "Lauren 每天 Token 消耗真不少，30天 1.5 T，我还以为都是 Fable，没想到用的最多的模型是 Opus 5.5\n\n另外 Cloud 是 Token 消耗大头，如果你想同时多个任务并行，那么 Cloud 是最简单方便，每个任务都可以独立虚拟机，不担心相互干扰，只是 cloud 上的改动验证起来不如本机方便。\n\n我没有去计算 Token 消耗要多少钱，这个不太好算，因为有很多是 Cache 的，还有不同模型混合，还有 Cursor 自家模型。\n\n只是一个参考，有兴趣可以去看看资料：\nhttps://t.co/OZv78HJGrM",
+      "created_at": "Wed Oct 07 18:20:18 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2107892748938256384",
+          "url": "https://pbs.twimg.com/media/HUC9SX0WIAAn7fW.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2106635859831246989",
+        "text": "我把后面这一段单独摘出来放评论：\n\n很多人看完这期访谈会觉得，以后自己也可以像 Lauren 那样不 Review PR 了，装上她的 Skill，让模型帮忙验证一下就行。我自己现在的做法和她差不多，每天也有大量 PR，也不 Review。但我的建议是先别急着学她怎么做，先弄明白她凭什么能这么做。\n\n1. 你能不能用上最好的模型，Token 够不够\n\n在用上 Fable 和 Opus 5.5 之前，AI 写的代码我是不太放心的；用上之后，我才真的敢让 AI 去写而不怎么 Review。模型能力很重要，能力没到，就先别想这件事。\n\n还有成本。像我这样没有大公司可以依靠的，得自己掏钱买 2 个 Claude Max 20x 账号，还得省着用。Lauren 在大公司，不用考虑 Token 消耗，全程用最好的模型、开最快的模式都没问题。\n\n不过也别着急。Fable 这个级别的模型，也许半年以后就能像现在的 DeepSeek V4.1 Flash 一样便宜，人人用得起。梁圣加油。\n\n2. 不能完全依赖 AI 的验证\n\n哪怕现在 GPT-6 操作电脑的水平已经超过真人了，让它去做验证，也只能替代一部分，不能真的全交给它，自己还是要看。\n\n可以做的是把那些手动重复做的事情，一点点沉淀成 Skill 和自动化脚本，把体力活解放出去。\n\n3. 方向得靠你自己的专业来指\n\n再聪明的 AI，也没办法替你决定该往哪个方向走。就像给车子装上火箭发动机，也得你来告诉它往哪开，走偏了要及时调整，不然跑得再快也是南辕北辙。\n\n做软件也一样。你不能指望一句提示词做出一个淘宝。你得先做一个能发商品、能浏览的小网站，再加上用户注册，还得区分买家和卖家，然后是支付和安全，功能做完了还要扛得住很多人同时用。稍微复杂一点的软件，都没法完全依赖 AI，要人去拆解、规划，分成一个个小版本、小里程碑，做完要验证，出现偏差要重新指方向。甚至做着做着，你自己的想法都变了，AI 不可能知道你真正想要的是什么。\n\n所以就像播客里说的：模型越来越强，卡住人的已经变成你能不能把自己想要什么讲清楚。\n\n4. 不一定要用他们的 Skill，但要学着把事情交给 Agent 去做\n\nMatt 和 Lauren 的 Skill 都很受欢迎，但你不一定要用。\n\n一方面，软件工程的基础知识，现在的模型已经学得很好了。Lauren 在播客里也说，去年的 Skill 还得写清楚具体该敲哪条命令，现在这些都可以删掉，只留流程步骤，Skill 会越写越短。\n\n另一方面，他们的开发流程和环境，跟你的很可能不一样。Lauren 的 Skill 都是从她自己的工作里总结出来的：验证技能来自她当“人肉中转站”的那段日子；另一个叫 recall 的技能，来自她每次开新对话，都得把上一个对话里的背景再讲一遍。\n\n所以更重要的是从你自己每天的开发流程出发。那些还要你手动操作的环节，尽可能交给 Agent 去做；Agent 做顺了，再把它的操作过程沉淀成 Skill，反复迭代优化。\n\n如果不知道从哪里下手的话，可以参考 Lauren 的办法：翻自己和 AI 的聊天记录，找那些你反复纠正、反复插手的地方。这样迭代出来的 Skill 才真正适合你，用她的话说，每个厨师都该有一套自己的刀。",
+        "created_at": "Sun Oct 04 06:41:43 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 256082,
+          "friends_count": 1749,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 34,
+          "reply_count": 8,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 20,
+        "reply_count": 13,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2107902243689370074",
+      "text": "RT @mtrainier2020: 你被人耗了那么长时间。\n人家系统里给你打标签了。\n以后会有更多更真的诈骗过来。\n其实你第一步就可以阻止诈骗。\n挂断电话，打回去。 \n他们这种靠spoofing 来电显示的诈骗，最怕的就是你挂机再打。\n卫生部，要工号。找到官网，打进去，再找这…",
+      "created_at": "Wed Oct 07 18:33:52 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2107890851389288806",
+        "text": "你被人耗了那么长时间。\n人家系统里给你打标签了。\n以后会有更多更真的诈骗过来。\n其实你第一步就可以阻止诈骗。\n挂断电话，打回去。 \n他们这种靠spoofing 来电显示的诈骗，最怕的就是你挂机再打。\n卫生部，要工号。找到官网，打进去，再找这个人。\n北京公安，要警号，或者部门，挂了，再打回去。\n\n所有转接的，统统挂掉，再打。\n能过滤掉80%，诈骗电话。",
+        "created_at": "Wed Oct 07 17:48:36 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2107885150633857262",
+          "text": "诈骗流程是这样的：下午一个英国号来电，自称英国卫生部工作人员，称有人盗用我的护照号注册了一个英国手机号，并前往伦敦皇家医院。该医院有传染病，此人因此违反了公共安全条例。对方称如17:00前无法收到北京市公安局的关于冒用护照的报警联系单，我在英国的生活将受到影响，随后帮我通过专线\"转接\"到\"北京市公安局\"。\n\n电话转接后，一名自称北京警方的人让我下载 Teams软件与我视频通话，不停批评教育我没有保护好个人信息安全（小词儿一套一套的，视频场景和语气都非常真！）说将帮我发传真过去，不用担心。但过了一会儿又说我名下居然有一张银行卡涉嫌洗钱案。我表示对那张卡毫不知情，也不是我注册的。他随即要求我保持24小时监听，并每2小时汇报一次行程，还要求我对家人朋友保密。17:30他终于说完了，说之后再跟我进行案情沟通。这一停下来我感觉不对，就拉黑了。\n\n这个诈骗的核心是利用我初来乍到制造恐慌，然后切断联系并冒充权威。骗子先用\"护照被冒用、涉传染病、涉嫌洗钱\"等话术制造恐慌，让你急于自证清白，一旦开始想\"怎么证明不是我\"，就进入了对方节奏。随后以\"案件涉密\"为由，要求你对亲友保密，切断你与外界的信息来源，使骗子成为你唯一的信息源。再通过改号软件伪装官方号码（我收到的电话自动显示是“北京市公安局”）、伪造警官证和通缉令，利用你对公权力的敬畏，让人难以质疑。这就跟传销一样，关键是要风林火山地密集洗脑，不能停，不能让你琢磨，否则就有破绽。白白一个下午啊，可惜了我今天的新生招待会！",
+          "created_at": "Wed Oct 07 17:25:57 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1677732423667445760",
+            "name": "吴二棒",
+            "screen_name": "wuerbangbang",
+            "description": "北大中文本硕，苗族，民俗学博士，国博前馆员。文史艺术、书画篆刻、三俗烂梗、旅游爱好者。对世界有旺盛的探索欲，想多认识有趣的人🤒PhDing of folklore, graduated from @PKU1898, Miao,  lover of history, heritage, art & tour🪭🐾🏺",
+            "followers_count": 13210,
+            "friends_count": 858,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 5,
+            "favorite_count": 37,
+            "reply_count": 24,
+            "quote_count": 7
+          }
+        },
+        "user": {
+          "id": "1141738094485315584",
+          "name": "Rainier",
+          "screen_name": "mtrainier2020",
+          "description": "Cogito, ergo sum",
+          "followers_count": 144245,
+          "friends_count": 996,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 9,
+          "favorite_count": 66,
+          "reply_count": 10,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107902563953582145",
+      "text": "这是一个 Decisions API 很好的案例，用来做手势识别，OpenAI 的 API 相对 Jev 多模态能力更好",
+      "created_at": "Wed Oct 07 18:35:08 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107860983498817689",
+        "text": "Gesture recognition using the Decisions API by @OpenAIDevs. \n\nThanks to it's vision understanding it is way more accurate than my previous Jev-based demo. It was also faster. cc @thsottiaux @jxnlco @pvncher @tldraw @steveruizok https://t.co/3P2iKffdWW",
+        "created_at": "Wed Oct 07 15:49:55 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2107859081339731968",
+            "url": "https://video.twimg.com/amplify_video/2107859081339731968/vid/avc1/3840x2160/snwXk8joKGMr3rBZ.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "11235612",
+          "name": "Francois Laberge",
+          "screen_name": "seflless",
+          "description": "Founder Decode. The browser and whiteboard for agents — prev @Descript (AI Engineer), @Bose (XR R&D), @Jibo (Robotics)",
+          "followers_count": 4065,
+          "friends_count": 2044,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 19,
+          "favorite_count": 570,
+          "reply_count": 28,
+          "quote_count": 13
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 9,
+        "reply_count": 17,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2107917964146012485",
+      "text": "GPT-6 进入 ChatGPT 日常聊天，回答可以是一个能点、能调的智能界面\n\nOpenAI 今天开始在 ChatGPT 推送 GPT-6，主打功能叫 Intelligent UI（智能界面）。\n\nPlus、Pro、Business、Enterprise 用户今天起可用，免费版和 Go 版（OpenAI 的低价订阅套餐）明天开始陆续开放，ChatGPT 每周 12 亿用户都会用上。企业版能不能用，要看公司管理员的设置。\n\n有了 Intelligent UI，GPT-6 会根据问题决定回答长什么样：对比类问题并排摆，讲原理配一张能拖动参数的示意图，简单问题照样一段文字答完。\n\n官方举的例子是周日请朋友吃烤羊腿，人数还没定。上一代模型给的是一大段菜谱加时间表；GPT-6 给的是一张带人数调节器的购物清单，把人数从 5 改成 8，羊肉、土豆的分量跟着变，下面再接一条烹饪时间线。你也可以直接让它做个工具，比如存钱计算器、聚餐分账器，或者一个能在对话里玩的小游戏。\n\n做法上，OpenAI 搭了一套原生界面组件库，再配一个“编译器”，模型边生成，界面边显示，不用等整段回答写完。训练时还专门评估模型做出的界面清不清楚、好不好用。\n\nGPT-6 还能边想边答。以前用推理模型，得等它想完才出结果，现在它会先把已经想清楚的部分写出来。需要联网搜索的问题，GPT-6 Instant 平均比上一代 GPT-5.6 Instant 早 44% 开始回答。\n\n付费用户用的是 GPT-6 Sol，免费版和 Go 版用的是 GPT-6 Luna。这两个模型 9 月 22 日已经在 Work（工作模式）、Codex（编程工具）和 API 上线，这次是补进日常聊天的 Chat 页面，Work 和 Codex 的模型不变。\n\nAnthropic 今年 3 月 12 日给 Claude 上线了“交互式可视化”测试版，包括免费版在内的所有用户默认开启。Claude 自己判断什么时候该画图，在对话里直接生成图表、流程图、时间线，或者带滑块、按钮的小部件，比如一张能逐个点开元素的元素周期表。这个功能脱胎于 2025 年秋天的实验项目 Imagine with Claude。\n\n两家想做的是同一件事：回答一个问题时，直接给你一个能操作的界面。区别在做法。\n\n据报道，Claude 的可视化是模型现写的网页代码和矢量图，形式更自由，但每次都是从零画。OpenAI 用固定的组件库，模型负责挑组件、排版，样式统一，手机上原生显示，还能一块块流式出现。\n\nOpenAI 这次还把“这题该不该用界面、用什么界面”放进了模型训练，并且和 GPT-6 一起推给所有用户。",
+      "created_at": "Wed Oct 07 19:36:20 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107894997538525580",
+        "text": "GPT-6 and Intelligent UI, now rolling out in ChatGPT for everyone.\n\nIntelligent UI in ChatGPT delivers fast, interactive answers that make everyday questions more visual, complex topics easier to grasp, and interactive tools for your task available on the spot. https://t.co/XL2gDCPBwG",
+        "created_at": "Wed Oct 07 18:05:04 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2107893961461473280",
+            "url": "https://video.twimg.com/amplify_video/2107893961461473280/vid/avc1/1920x1080/7gMw9Wtm-zDxFZET.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 5415732,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1067,
+          "favorite_count": 14872,
+          "reply_count": 672,
+          "quote_count": 776
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 44,
+        "reply_count": 7,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2107925907914498365",
+      "text": "🎉 Tibo 为了庆祝 Codex 和 ChatGPT Work 的活跃用户达到了 4000万 的新高，为每个付费用户送一张重置卡。\n\n将在 PST 时区当天结束前送达。",
+      "created_at": "Wed Oct 07 20:07:54 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2107913674593644711",
+        "text": "Day 3/\n\nThe big one is GPT-6 in Chat, but today is also a little celebration day with a new high of 40M active users across Codex and ChatGPT Work.\n\nLoading a banked reset in everyone's paid accounts. See you again tomorrow!",
+        "created_at": "Wed Oct 07 19:19:17 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1953337039510003712",
+          "name": "Tibo",
+          "screen_name": "thsottiaux",
+          "description": "Codex & ChatGPT @OpenAI",
+          "followers_count": 813732,
+          "friends_count": 75,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 508,
+          "favorite_count": 14117,
+          "reply_count": 1059,
+          "quote_count": 466
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 18,
+        "reply_count": 2,
         "quote_count": 0
       }
     }

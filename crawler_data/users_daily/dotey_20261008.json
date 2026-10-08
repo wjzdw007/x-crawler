@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 256508,
+    "followers_count": 256604,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261008",
-  "last_updated": "2026-10-08T05:20:05.641569",
-  "tweet_count": 3,
+  "last_updated": "2026-10-08T12:42:23.956934",
+  "tweet_count": 5,
   "tweets": [
     {
       "id": "2108048535744876566",
@@ -138,6 +138,95 @@
         "favorite_count": 0,
         "reply_count": 1,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2108064873523343726",
+      "text": "RT @yetone: magpie 现在能 inspect 每个 agent、会话和请求的 context window：系统提示词、工具/MCP、记忆、文件、工具结果、对话各占多少，一格一格画出来，悬停看是谁最大。还会按缓存命中、起步轻重、增速和可靠性给每个 agent 打…",
+      "created_at": "Thu Oct 08 05:20:06 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2107968356620091474",
+        "text": "magpie 现在能 inspect 每个 agent、会话和请求的 context window：系统提示词、工具/MCP、记忆、文件、工具结果、对话各占多少，一格一格画出来，悬停看是谁最大。还会按缓存命中、起步轻重、增速和可靠性给每个 agent 打分、自动打标签。Usage → Context 里看。（v0.1.1107） https://t.co/p7j3eLpTGy",
+        "created_at": "Wed Oct 07 22:56:35 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2107951583409664000",
+            "url": "https://pbs.twimg.com/media/HUDyy_Ta8AAtMa2.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2107951583430651904",
+            "url": "https://pbs.twimg.com/media/HUDyy_YbMAABCgn.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "147786784",
+          "name": "yetone",
+          "screen_name": "yetone",
+          "description": "Built: avante.nvim\n\nBuilding:\n\nhttps://t.co/kQss3piJs8\n\nhttps://t.co/pfq9srNgsd\n\nhttps://t.co/fpGnPR5t9C\n\nhttps://t.co/cBN1yzJPIG\n\nhttps://t.co/6ERz2HMx0f\n\nhttps://t.co/QhQRLD4zQo",
+          "followers_count": 91801,
+          "friends_count": 4556,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 8,
+          "favorite_count": 311,
+          "reply_count": 60,
+          "quote_count": 5
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2108072320317145306",
+      "text": "最近用了一次 Claude Code 送的重置，加上现在 Fable 也比较耐用，所以我用 Fable 就多了一些，我的用法是这样的：\n\n把任务发给 Fable 让它安排 SubAgent（Opus）去执行，它负责分析、编排和验收。\n\n所以大部分时间它都在等 subagent 执行，也就意味着它还能能力接活。\n\n这时候你甚至都不用等subagent任务完成，持续派活，它都能给你记着一起安排，空闲的时候就会去执行\n\n所以我有几个会话就一直开着，想到啥就发一个指令过去。\n\n有点像 Fable 就是个 Tech Lead 的角色，专门帮你派活，还帮你验收，安排的妥妥当当的。\n\n我现在已经不限制用 1M 上下文了（删除CLAUDE_CODE_DISABLE_1M_CONTEXT），设置了最大上下文是 300K\n> /autocompact 300k \n\n当然这样用比只用 Opus 5.5 还是费不少，希望早点价格降下来，真的省心。",
+      "created_at": "Thu Oct 08 05:49:41 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2102433483834503425",
+        "text": "最近摸索了一种新的节约 Token 但是效果不错的模式（都是被逼的，Token 太贵）：\n\nFable 写设计方案 -> \n（Loop 开始）\nOpus 执行 -> Advisor（Fable） 验收\n（Loop 结束）\n\n步骤是这样的：\n\n1. 先 Claude 里面设置一下 advisor 为 Fable\n> /advisor fable\n\n这样在使用 Opus，Sonnet 模型的时候，遇事不决它会请教 Fable，可能会有无谓的 Fable 消耗，但还是可以接受也值得\n\n就好比请了个高级工程师当顾问\n\n2. 复杂一点的问题先让 Fable 出方案，最大化利用 Fable 的能力。\n\n就好比你让一个高级工程师写一个技术方案，让普通工程师去执行\n\n3. 方案写好了确认了，让 Opus 去执行，但是执行的时候，加一句提示词：\n\n> 完成后让你的 advisor 验收一下，如果验收有问题就按 advisor 的反馈修复，修复完成后再让 advisor 验收，直到通过 advisor 的验收为止\n\n可以配合 /goal 使用效果更佳\n\n这样 Opus 在实施完成后就会找 Advisor 验收，通过 Advisor 就会给出反馈，然后 Opus 继续修改。\n\n这样的好处就是整个过程你不需要人工去用 Fable 确认—— 以前我就是这么干的，Opus 执行完，我得回到之前 Fable 的会话去让它验收，或者新开一个会话，把文档发给 Fable 验收。\n\n现在 Agent 自己就能形成闭环，不用你自己参与。\n\n就好比你请了个高级顾问，复杂问题找顾问出方案，执行让你的工程师去按照方案执行，每次工程师做完自己去找顾问验收，顾问不仅验收还会告诉工程师哪里不对，然后工程师自己改，不用说每次做完找你，你再找顾问。",
+        "created_at": "Tue Sep 22 16:22:58 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 256604,
+          "friends_count": 1750,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 115,
+          "favorite_count": 740,
+          "reply_count": 187,
+          "quote_count": 10
+        }
+      },
+      "stats": {
+        "retweet_count": 12,
+        "favorite_count": 119,
+        "reply_count": 69,
+        "quote_count": 6
       }
     }
   ]

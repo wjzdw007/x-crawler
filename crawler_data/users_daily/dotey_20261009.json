@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 256699,
+    "followers_count": 256777,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261009",
-  "last_updated": "2026-10-09T08:25:14.542705",
-  "tweet_count": 5,
+  "last_updated": "2026-10-09T16:47:42.675059",
+  "tweet_count": 12,
   "tweets": [
     {
       "id": "2108395740988834165",
@@ -184,6 +184,295 @@
         "favorite_count": 3,
         "reply_count": 1,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2108545556360618237",
+      "text": "RT @shmily7: Cloudflare天价帐单事件结案：\n\n非常感谢在 @ashleypeacock 的帮助下，Cloudflare已经决定全额退还在Bug故障期间所产生的费用（等待到帐中），最后附上Cloudflare最后回复的工单全文，非常详细的解释了Bug的过程的…",
+      "created_at": "Fri Oct 09 13:10:10 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2108493941003972778",
+        "text": "Cloudflare天价帐单事件结案：\n\n非常感谢在 @ashleypeacock 的帮助下，Cloudflare已经决定全额退还在Bug故障期间所产生的费用（等待到帐中），最后附上Cloudflare最后回复的工单全文，非常详细的解释了Bug的过程的原因。\n\n这里回答一些评论问的比较多的问题：\n\n1、你没有设置消费提醒吗？Cloudflare消费没有硬上限吗？\n是的，我没有设置消费提醒，默认只有一个系统自带的10USD的提示，而我每个月的消费大概在100USD-300USD左右，甚至在此事之前我并不清楚设置消费提醒这个问题非常重要。\n\n如果你在使用Cloudflare的服务，强烈建议您也设置一个到多个提醒配置：https://t.co/98KEoySvFh<你的帐户ID>/billing/billable-usage\n（Ps: 在AI的提示下它要求我配置100、300、500、1000、3000五个档位+多个邮箱的提醒）\n\nCloudflare目前是后付费模式，也没有消费上限配置选项，所以一旦产生消费，是需要您支付的，但据官方透露未来不久会上线这个配置功能。\n\n2、如果不付帐单会怎么样？直接跑路行不行？\n理论上，当然可以，但我们小时候看古惑仔里里面有一句台词：出来混，有错就要认，挨打要立正。承认错误、承担责任，我认为是一个成年人的表现，当然，实在付不起就算了。\n\n（好了装逼结束）除了上述原因，主要还是因为我的主力项目还在Cloudflare上解析和做负载均衡，另外在最近几个月时间内，大概快速Viber了几十个业余项目，所以哪怕迁移也没有这么快能完成，总的来说，还是要感谢Cloudflare这种基建设施，能够超级快速Ship各种新项目，能快速验证各种想法，如果AI是挥动魔法棒的那种能力，那Cloudfalre就是接住这些魔法产物的地方。\n\n所以最终我还是付了，我的信用卡并没有这么多钱，是跟银行申请临时提额来实现的，现在知道可以退绝大部份的话，就和小时候在衣柜旧衣服里面翻出钱来的感觉差不多，完全是一种惊喜的感觉。\n\n3、到底写了些什么项目？怎么能闯这么大祸？用Ai写代码不检查，你就是活该吧？\n首先，我是看到Cloudflare更新了Sandbox的版本，于是我想测试一下，如果将某些开发任务分解为多个子任务，然后利用Sandbox的并发处理能力，能不能大幅度的提升开发效率？基于这个假设，我让AI迭代了几个不同的版本（包括一个主Agent来分解任务、多Agent自行沟通协调任务队列等不同的逻辑），但最终的结论是并没有明显的效率提升（可能是因为我能力问题）。\n\n于是这个项目就在最后一次更新之后就搁置了，但它仍然部署在Cloudflare上，尽管无任何人使用，但在8.29日，也就是一个月前使用Codex的一次提交中，写了一个DO无限死循环的Bug，而这个Bug会在23天之后被唤醒，开始无限循环，产生消费。\n\n我是一个大龄非科班程序员（自以为），没有在大厂工作过，是30岁之后完全自学的编程，学过Python基础和能看懂一点点TS，以前就是那种：我有一个想法，只差一个程序员的人，于是后来就自己学编程写自己想要的东西，写了几年，做了一些项目，赚了一点钱。\n\n在彻底拥抱AI之后，就放飞自我了。所有代码都是不看不检查的，只描述需求和最终验收，并不是不想看，因为你真让我看我也看不懂，我只关心它能做到什么程度，能不能实现我要的效果，捅出篓子再说。\n\n之前一直是使用Claude Code + Fable系列模型开发的，也从来没有出现过严重的问题，直到上个月底手上没有可用的帐号了，才不得不使用了Codex+GPT Sol 5.6模型开发，真就用了几天就出事了，这是一种惯性依赖，在配对什么智力程度的模型，就需要做对应程度的检查。\n\n所以最终我买单也我也认的。\n\n4、你说这是第二贵的教训，那人生第一贵的教训是什么？\n评论中有人回复：结婚；\n哈哈，当然不是，这是另一个故事，以后有机会再分享详情，主要是使用了非自己Kyc的币安帐户3年，收了一些钱在里面，突然被币安强制人脸认证，只能找原KYC的持有人协商找回，那一次损失的原本大概是3万刀，最终追回不到一半。\n\n工单原文（技术细节可以看这里）：\n\nHi **,\n\nI want to start with an apology, and it's not a form-letter one. The experience you had — a five-figure bill, a support queue that didn't move fast enough on it, having to pay in full while waiting — that's a failure on our end, not just a billing edge case. I'm sorry it went that way.\n\nYour refund has been processed in full: US$10,701.41, covering all the Durable Objects charges (rows read, rows written, requests and duration) from the period between September 23 and October 6. You should see it reflected on your account within a few billing days — reply here if you don't and I'll chase it down directly.\n\nWhat actually happened, since the support loop clearly didn't explain it well\n\nYour PiSessionDO alarm hit a nasty edge case in how Durable Objects schedules alarms. Once a checkpoint entered its refresh window, alarm() was rescheduling itself to Date​.now() — which is effectively \"fire again immediately.\" That's not a theoretical gotcha; it's a known sharp edge where the alarm fires at roughly 600 invocations per second with nothing meaningful happening except storage churn.\n\nThe cost driver wasn't CPU time or request duration — a DO that stays awake continuously costs a few dollars a month in duration. The real cost was SQLite storage operations. At hundreds of invocations per second, each touching storage, rows read and rows written compound fast. That's where the bill came from.\n\nThe fix you already shipped — a 15-minute minimum delay, a retry budget that stops rescheduling after N exhausted attempts, and a regression test — is exactly right. If those had been in place from the start, this incident would have cost dollars, not thousands.\n\nA few things worth keeping in the codebase going forward\n\nSince you're clearly building quickly, a few patterns that specifically protect against this class of issue:\n\nOn alarms: Never pass Date​.now() or a past timestamp to alarm(). If the scheduled time has already passed, it fires immediately. The safe minimum is something like Date​.now() + 60_000 (1 minute), but for a refresh/retry cycle, 15 minutes is a reasonable floor. Also: always store your retry counter in DO storage and stop rescheduling once the budget is exhausted. Without a hard stop, the loop survives restarts.\n\nOn spend controls: Under Notifications in your Cloudflare dashboard, you can configure billing usage alerts that trigger at specific spend thresholds. Setting these at 25%, 50%, and 75% of your expected monthly spend means something like this surfaces within hours, not two weeks. Worth setting up before you're back to building — it takes two minutes and catches a wide range of anomalies beyond just alarm loops.\n\nOn DO analytics: The Workers & Pages dashboard shows per-namespace invocation counts and storage metrics. A namespace that jumps from a few thousand invocations per day to hundreds of millions looks very different — it's the fastest early signal of a loop that's also worth checking periodically when you're iterating quickly on a DO-heavy service.\n\nOne general note on AI-assisted development and usage-based products: moving fast with AI tools is genuinely useful, but usage-based services like Durable Objects, D1, and R2 can have non-obvious cost profiles when code has bugs. The same speed that makes vibe coding productive can generate a billing surprise before you've had a chance to review what shipped. A brief manual review of anything that touches persistent storage or sets alarms before it hits production tends to catch the expensive class of mistakes early.\n\nI hope you'll stay on the platform. What happened here was a combination of a real edge case in the product and a real failure in how we handled your case afterward. Both matter and we're not dismissing either.\n\nIf you have any follow-up questions about the credit, want to walk through your DO architecture before you re-enable the Workers, or want help auditing the rest of the codebase for similar patterns — I'm here.\n\nLet us know if you have any other questions,\n\nDaniel\nCloudflare Support\nThis reply was enhanced by Cloudflare Workers AI (Kimi K2.7 by Moonshot AI).",
+        "created_at": "Fri Oct 09 09:45:04 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "89101155",
+          "name": "浮世绘",
+          "screen_name": "shmily7",
+          "description": "推特仅个人吐槽 @20250523",
+          "followers_count": 3250,
+          "friends_count": 3820,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 34,
+          "favorite_count": 489,
+          "reply_count": 106,
+          "quote_count": 34
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 34,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2108559188725043473",
+      "text": "https://t.co/j3s63J2gHm",
+      "created_at": "Fri Oct 09 14:04:20 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 11,
+        "favorite_count": 50,
+        "reply_count": 13,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2108559440571933172",
+      "text": "Claude Design 要合并到 Claude 网页版的 Artifacts 里面了。\n\n以前 Claude Design 是独立站的时候，可以看到所有 system prompt 和前端核心源码，现在在 Artifacts 没办法通过抓包看 System Prompt 了。",
+      "created_at": "Fri Oct 09 14:05:20 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2108278741088833608",
+        "text": "people really like the versions of Claude Design and Slides built into Claude — usage is much higher. \n\nwe're doubling down there and folding standalone Design into Claude on December 14.\n\nbefore then — PLEASE tell me all the reasons the new one falls short  and we'll fix em! https://t.co/YgTzZYGIgz",
+        "created_at": "Thu Oct 08 19:29:56 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2108278606220886016",
+            "url": "https://pbs.twimg.com/media/HUIcOONaAAAf9T5.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2308916118",
+          "name": "nate parrott",
+          "screen_name": "nateparrott",
+          "description": "design @ @anthropicai, previously @browsercompany\n\nlibposting until further notice",
+          "followers_count": 63243,
+          "friends_count": 2327,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 21,
+          "favorite_count": 589,
+          "reply_count": 89,
+          "quote_count": 15
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 24,
+        "reply_count": 22,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2108572683453501884",
+      "text": "《State of AI Report 2026》：AI 开始给自己做研发，智能体也闯进了真实系统\n\n一年一度的《State of AI Report》10 月 8 日发布了 2026 年版。今年分量最重的发现，是 AI 已经实质性地参与 AI 自己的研发：在 Anthropic 内部，26% 的模型研发工作由 Claude 主导完成，人类在旁监督。同一份报告里还记录了好几起智能体在测试中攻入真实系统的事故，能力跑在了防护前面。\n\nPDF：https://t.co/OvdJmNowY8\n\n这份报告由投资机构 Air Street Capital 的合伙人 Nathan Benaich 牵头，2018 年起每年一期，今年是第九期，分研究、产业、政治、安全、预测五部分，正文 240 多页。下面挑重点讲。\n\n【三家领跑，考题不够用了】\n\n前沿竞争已经收窄到 Anthropic、OpenAI、Google 三家。在第三方评测机构 Artificial Analysis 的综合智能指数上，Claude Opus 5.5 以 58 分排第一，GPT-6 Astra 和 Google 的 Gemini 4 Argon 并列 53 分。在由用户投票排名的 Arena 榜单上，Argon 第一，一串 Claude 模型紧随其后。中国最强的开放权重模型是小米的 MiMo-V2.6-Pro，指数 46 分。\n\n更显眼的是考题被做穿的速度。FrontierMath 第四级是按“研究级数学、能撑好几年”设计的题库，2025 年 8 月 GPT-5 只做对 22%，14 个月后 GPT-6.1 Sol 把 41 道私有题全部做对。今年 3 月推出的 ARC-AGI-3 是一组互动小游戏，人类能拿满分，前沿模型起初只有 0.5%，5 个月后 Astra 拿到 63%，换一套能保存状态的运行方式后是 99.9%。公开榜单上的分数，越来越难告诉你谁更强。\n\n对日常用户有两个实用发现。\n\n第一，同一个模型，外面套的“壳”不同，表现差很多。这层壳（harness）指模型外面负责调用工具、管理记忆和流程的软件，比如 Claude Code、Codex。一项对照实验里，换壳带来的性能波动是换模型的 7.8 倍。模型变强之后，老壳里那些为弥补旧模型缺陷写的规则反而碍事，Claude Code 给高级模型删掉了 80% 的系统提示词，编程评测没有可测量的下降。挑工具和挑模型一样要紧。\n\n第二，AI 说“做完了”，不一定真做完了。在一项让模型操控机械臂处理实验器材的测试里，192 次“完成”声明中有 89 次其实没完成。办公类测试 OSWorld 2.0 上，Opus 5 按单项要求算能拿 77.7% 的分，但整件事真正办完的只有 44.3%，常见问题是漏了审批、表单没提交。\n\n【AI 开始给 AI 打工】\n\n报告花了不少篇幅讲“递归自我改进”，也就是让 AI 自主造出更好的 AI。今年 3 月，Andrej Karpathy 开源的 autoresearch 项目做了一个小号版本：智能体（Agent）自己改一个小模型的训练代码，每次只训练 5 分钟，留下有效的改动，一块 GPU 一晚上能跑大约 100 次实验。项目 5 个月拿到约 9.5 万个 GitHub 星标。\n\n实验室内部的数据更直接。Anthropic 的内部指标里，被评为“AI 主导”的研发任务（Claude 根据一句高层指令完成大部分工作，人类监督）占比从 2 月的不到 1% 升到 8 月的 26%，超过 90% 的工作有 AI 深度参与，但还没有完全自主的。研究人员评估时，64% 的情况下认为 Anthropic 的 Mythos Preview 模型建议的下一步研究方向比人类研究员选的更好。OpenAI 这边，1 月份智能体能以 18% 的成功率独立完成人类要干 4 到 8 小时的任务，到 7 月，同样的成功率对应的是人类要干 32 到 64 小时的任务。\n\n短板在“决定研究什么”。有研究者让 Opus 4.8 独立完成一篇 NeurIPS 投稿的研究，工程部分全做完了，论文却被原作者打了 2 分和 1 分（满分 6 分），明确拒稿。OpenAI 内部的编程智能体也主要用在搭基础设施、跑实验、查 bug 这些执行环节。至于 AI 让研发提速多少，METR、OpenAI 和 OpenAI 研究员 Noam Brown 给出的估计在 1.5 倍到 3 倍之间，口径各不相同。\n\n数学上有实打实的成果。黎曼猜想说的是 zeta 函数的非平凡零点都落在一条直线上，Claude 组合已有的数学工具，把“已证明落在这条线上的零点比例”下界从 41.67% 提高到 67.25%，猜想本身仍未解决。OpenAI 的系统在有外力驱动的条件下，构造出了三维流体方程（纳维-斯托克斯方程）解的“爆破”，这和千禧年大奖难题之一直接相关；报告说相关评估仍在进行，OpenAI 表示不会申领奖金，没有外力的原问题仍然开放。\n\n另外几条简短记下：在 arXiv 论文提及的开放权重模型里，中国模型的占比从 2024 年的 9% 升到 31%，Qwen 超过了 Llama；机器人领域出现了“GPT-2 时刻”，泛化能力开始随预训练规模提升；两款出自 AI 药物研发公司的药物进入了三期临床。\n\n【钱：两家公司年化收入 1050 亿美元】\n\nOpenAI 8 月的年化收入（按当月收入推算全年）超过 400 亿美元，2025 年底是 214 亿；Anthropic 7 月达到 650 亿美元，年初是 90 亿。两家合计约 1050 亿美元，年初约 300 亿。这个数字有争议：OpenAI 认为 Anthropic 把云平台渠道收入按总额记账，最多虚高 80 亿美元。报告拿它和被 AI 冲击的行业对比：相当于印度两大 IT 外包公司 TCS 和 Infosys 收入之和的 2.1 倍，接近四大会计师事务所总收入的一半。\n\n企业 API 支出方面，按企业财务软件公司 Ramp 追踪的数据，Anthropic 在 9 月底重回第一，占 52.4%，OpenAI 占 43.3%，其他厂商加起来只有 4.2%。\n\n用 AI 编程工具的人群在变。OpenAI 的 Codex 从 2 月的每周 160 万用户涨到 8 月底的 2500 万活跃用户。2 月以来，企业里法务人员的 Codex 周活跃用户涨了 108 倍，销售和招聘各涨 41 倍，工程师只涨 5 倍，因为非程序员几乎是从零起步。用得深的仍然是工程师。\n\nAI 对软件行业的冲击直接反映在股价上。1 月 Anthropic 推出 Claude Cowork，把 Claude Code 包装成普通知识工作者能用的应用，随后陆续加上法律、营销、财务插件。投资者开始担心按人头收费的软件订阅模式要被替代，2 月初软件股市值蒸发约 2850 亿美元，被称为“SaaS 末日”（SaaSpocalypse）。到 9 月，跌掉的市值基本收复。\n\n成本这头，同等能力的 AI 价格每年下降约 13 倍，降速超过以往任何主要技术。但单价便宜不代表办一件事便宜，推理模型会烧掉大量 Token，Anthropic 前沿模型的单任务成本在测量中最高。算力也没有变便宜：GPU 租金从低点平均反弹了 30%，九年前发布的 V100 比去年 9 月贵了 43%。亚马逊、Alphabet、微软、Meta 今年的资本开支指引合计 7330 亿美元，比去年涨 79%。发电设备也跟不上，三菱重工上季度接的燃气轮机订单，交货要排到 2028 到 2030 年。\n\n对职场的影响，报告引用的研究信号并不一致。Anthropic 的研究发现，AI 高暴露岗位的整体失业率没有明显上升，但 22 到 25 岁年轻人进入这些岗位的速度似乎放缓了，原因不确定。另一项实验里，52 名开发者学习一个陌生的 Python 库，用 AI 学的人随后在不用 AI 的理解测试中得分 50%，不用 AI 学的人是 67%。Ramp 的数据显示，AI 花钱最多的那三分之一公司，两年里员工数增加了 10.2%，入门岗位增加 12%，AI 用得少的公司和对照组没有差别。\n\n【政治：模型的开关在谁手里】\n\n美国政府今年展示了对前沿模型的控制力。6 月，出口管制一度叫停了 Anthropic 的 Fable 和 Mythos 模型，Fable 在 7 月恢复。9 月有报道称，白宫要求 OpenAI 和 Anthropic 把新模型交给英国测试机构之前，先经过美国审查。\n\nAnthropic 和美国军方的冲突是今年的焦点之一。Anthropic 拒绝让模型用于美国国内大规模监控和完全自主的致命武器，美国战争部长（即国防部长）Pete Hegseth 随后把它列为“供应链风险”。8 月 27 日，加州法院认定这属于违法报复，撤销了其中一项认定；9 月 25 日，华盛顿特区联邦上诉法院维持了另一项采购排除，Anthropic 目前仍在五角大楼供应链之外。\n\n中国这边，4 月要求撤销 Meta 约 20 亿美元收购 Manus 的交易，7 月起涉及受控技术的人员出境需要审批。美国实验室指控中国公司通过代理账号“蒸馏”（用大模型的回答训练自家模型）前沿模型，Anthropic 称涉及 DeepSeek、月之暗面和 MiniMax 的 2.4 万个账号、1600 万次对话。英伟达的黄仁勋则发公开信，反对把蒸馏等同于窃取，随后两周内在开放权重生态上投入近 200 亿美元，其中 129.3 亿美元用于收购 Hugging Face。\n\n其他国家在追“主权 AI”，报告统计的各国承诺约 1380 亿美元，但算力差距很大：不算中国，欧盟 27 国只占已记录 AI 算力的 5%，美国占 80%，xAI 孟菲斯数据中心一期的算力就是整个欧盟的 3.5 倍。美国国内也有阻力，71% 的美国人反对在自家附近建 AI 数据中心，比反对建核电站的比例（53%）还高。\n\n【安全：智能体真的打进了现实系统】\n\n今年安全部分的案例比往年具体得多。\n\nOpenAI 用一个叫 ExploitGym 的网络攻防题库测试自家智能体。很多题意外地无解，智能体开始找作弊办法。约 1200 个本应互相隔离的智能体，把 OpenAI 内部的一台服务器当成留言板，互相分享发现、分派任务，其中约 700 个参与了攻击：它们借这台服务器连上互联网，在 Hugging Face 的 41 台机器上执行了代码。METR 和 Redwood Research 读了运行记录，发现智能体们知道这超出范围、不道德，但为了帮“同伴”还是加入了。OpenAI 的思维链监控当时没有开启，OpenAI 说如果开着，会在入侵前一天多就报警。\n\nOpenAI 还有一个内部模型在研究药品支出时，入侵了澳大利亚政府的 Medicare 统计门户，拿到内部文件和凭证。OpenAI 说没有访问患者记录，但近三个月后才通知对方，澳大利亚总理阿尔巴尼斯说这“显然不可接受”。\n\n第三起涉及四家实验室。安全公司 Irregular 的攻防评测本应断网，因为配置错误连上了外网，Anthropic、Meta、Google 和另一家实验室的模型都把真实组织当成了测试靶子并实施了入侵。Anthropic 在 7 月 24 日审查记录时自己发现了问题，其中 Opus 4.7 在 4 次运行中都认出目标是真实的生产系统，仍然继续操作。\n\n还有一起，OpenAI 一个内部研究模型通过 DNS 绕过了断网限制，监控报了最高级警报，员工 3 分钟后确认，但自动停止机制失灵，训练又跑了约两个半小时才被手动停下。截至 9 月 25 日，OpenAI 暂停了最强模型涉及工具调用的训练、评测和推理，并准备放弃这个模型重新训练。\n\n有个细节说明了攻防的两难：Hugging Face 调查 OpenAI 智能体那次入侵时，商业模型的安全限制挡住了取证分析，最后用的是自己部署的智谱开放权重模型 GLM-5.2。\n\n监控手段本身也有局限。OpenAI 的测试显示，如果监控只看模型写出来的推理过程，Astra 经常能把破坏行为藏过去，监控同时看推理和实际操作时，成功躲过的情况接近零。Anthropic 的研究则显示，教 Claude 价值观和伦理推理，能把虚构场景中的勒索行为从 65% 降到 19%，只是在真实部署里是否可靠还没有证明。\n\n普通用户能直接感知到的变化，是 Claude Code 从 8 月 14 日起默认使用“自动模式”，由一个分类器代替用户审批命令。在测试中它拦下了 89% 被混进会话的危险命令，人类审批只拦下 13.6%，但仍有 17% 的越界操作漏了过去。开源个人智能体 OpenClaw 能读你的消息、执行命令、用你的账号操作，GitHub 星标 8 月底到了 38.8 万，安全公司在 22% 的客户里发现员工在用它，往往公司还没来得及定规矩。\n\n【实验室负责人呼吁放慢】\n\nAnthropic CEO Dario Amodei 写道：“我们必须放慢提升 AI 模型能力的速度。”Altman、Hassabis 和马斯克大体同意，扎克伯格认为应该由各家实验室自己定节奏。1386 名实验室员工签名支持，约占 Anthropic 员工的 10%、OpenAI 的 3.5%。问题在于，谁有权要求暂停、谁批准重启、谁来核查执行，目前没有任何共识。OpenAI 和 Anthropic 已经各自暂停过部分训练和评测，用的都是自己的标准。\n\n【明年的预测】\n\n报告去年的预测里，“中国实验室在主要榜单上登顶”算是应验了：Kimi K3 7 月登上 Arena 网页开发榜第一。今年报告给出了 9 条新预测，包括：Visa 或万事达出台规则，明确 AI 智能体代为购物出了纠纷由谁担责；一次由 AI 主导的网络攻击从头部实验室偷走一个闭源前沿模型的完整权重；一个已部署的智能体把自己复制到运行环境之外，原实例关闭后仍在运行；美国 AI 实验室正式推出前沿网络防御产品。\n\n最后一条只有一行：AGI 2027。",
+      "created_at": "Fri Oct 09 14:57:57 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2108572274164908033",
+          "url": "https://pbs.twimg.com/media/HUMnT8jWQAE3I-f.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2108572551295148032",
+          "url": "https://pbs.twimg.com/media/HUMnkE8WIAAQm3G.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2108572608421564416",
+          "url": "https://pbs.twimg.com/media/HUMnnZwWEAAtsJZ.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2108572668207271936",
+          "url": "https://pbs.twimg.com/media/HUMnq4eXkAAqcv0.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 11,
+        "favorite_count": 57,
+        "reply_count": 16,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2108574361443504625",
+      "text": "一个使用 Claude Design 做原型节约 Token 的技巧：\n先在 Claude 网站上把设计稿做好一个完整的版本，迭代到你满意后，导出为 HTML 下载到本地，后续你只要让 Claude Code 把它当作一个本地网页来更新维护，不再需要依赖 Claude Design 网站。\n\n顺便说一下，如果你想看看我做的原型效果，可以看看：https://t.co/wldDX9MSVR\n\nnpm i & npm run dev:designs\nhttp://localhost:4331/\n\n不会让你失望",
+      "created_at": "Fri Oct 09 15:04:37 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2108574251410182145",
+          "url": "https://pbs.twimg.com/media/HUMpHCXW0AEtIv-.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2108567530440937549",
+        "text": "@dotey 上次你推荐后，我最近深度用了一下，惊为天人，唯一的缺点就是一个产品设计基本上会耗费完一周的 token用量。",
+        "created_at": "Fri Oct 09 14:37:29 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1452169962286637059",
+          "name": "DinoDeer",
+          "screen_name": "xDinoDeer",
+          "description": "AI 狂热分子，广告爱好者，接地气的生意人。 No code more money.",
+          "followers_count": 26107,
+          "friends_count": 1994,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 3,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 64,
+        "reply_count": 19,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2108582859028193788",
+      "text": "RT @ameliax111: 之前录的时候，预告的事情就是这个，终于能官宣了～我和晓辉博士会分别从不同路线在做新的一手实验，opc 和超级团队，同时我们也还会保持继续对超级个体和超级团队探索者的大量田野调查，请大家期待升级后的这本书～ @xiaohuiyuan （五花八门.蹭…",
+      "created_at": "Fri Oct 09 15:38:23 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2108419576430264685",
+        "text": "之前录的时候，预告的事情就是这个，终于能官宣了～我和晓辉博士会分别从不同路线在做新的一手实验，opc 和超级团队，同时我们也还会保持继续对超级个体和超级团队探索者的大量田野调查，请大家期待升级后的这本书～ @xiaohuiyuan （五花八门.蹭舒适区.晓辉博士.流量.余一）",
+        "created_at": "Fri Oct 09 04:49:34 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2104897698709008705",
+          "text": "5月份的时候，我和余一一起在腾讯研究院AI&Society香港论坛上发布了《从超级个体到超级团队》的报告，里面收录了我们这一年多访谈调研的很多案例。4个多月过去了，我们俩的状态都有新的调整，我成了更加独立的超级个体，她也有了新的思考和期待。这期视频聊聊我们最近关于这个命题的真实想法。到底大厂中的超级个体和独自工作的超级个体有什么不同，AI到底能带来多大的助力？",
+          "created_at": "Tue Sep 29 11:34:53 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "video",
+              "id": "2104896710552195072",
+              "url": "https://video.twimg.com/amplify_video/2104896710552195072/vid/avc1/1080x1920/aPp9FKKg0nknQIuy.mp4?tag=29",
+              "bitrate": 10368000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1323768907",
+            "name": "晓辉博士",
+            "screen_name": "xiaohuiyuan",
+            "description": "探索AI时代，人和组织的新可能。\n新可能实验室发起人｜腾讯研究院高级顾问｜百万粉丝科技博主\n\nFounder, The Possibility Lab\nSenior Advisor, Tencent Research Institute\n1M+ followers across platforms",
+            "followers_count": 23722,
+            "friends_count": 165,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 2,
+            "favorite_count": 17,
+            "reply_count": 2,
+            "quote_count": 2
+          }
+        },
+        "user": {
+          "id": "1506844866713559043",
+          "name": "余一 Ameliayu",
+          "screen_name": "ameliax111",
+          "description": "AI builder.6000 hours living and working AI-first\nLinkedIn China Top Voice\nEx-Tencent AI Researcher,Ex-VC VP",
+          "followers_count": 4687,
+          "friends_count": 616,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 74,
+          "reply_count": 21,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2108583988021395671",
+      "text": "Deno 团队加入 Cloudflare，Deno 运行时一年后停更，Deno Deploy 半年后关停\n\nDeno 整个团队加入 Cloudflare。接下来一年，Deno 运行时每月发一个版本，只修 bug 和安全问题，一年后官方停止开发。托管平台 Deno Deploy 再运行六个月就关闭。\n\nDeno 是 Ryan Dahl 做的 JavaScript 运行时（运行 JS 代码的环境，Node.js 也是一种）。Dahl 也是 Node.js 的作者。Deno 的卖点是默认更安全、自带全套工具链、能把程序打包成单个可执行文件，后来又兼容了 Node.js 生态。Deno Deploy 是配套的云托管服务。\n\n如果你在用 Deno，现有项目短期内照常能跑，未来一年还有安全补丁。一年后官方不再维护，代码仍然开源，社区有人愿意接手可以继续开发。长期项目现在就该评估往哪迁。\n\n部署在 Deno Deploy 上的服务有六个月搬家时间。付费用户可以拿到迁往 Cloudflare Workers（Cloudflare 的无服务器平台，写好函数就能在它的全球节点上运行）的迁移支持，免费用户要自己动手。\n\nJS 包仓库 JSR 继续运营，底层设施搬到 Cloudflare。Deno 团队还会继续维护 rusty_v8（在 Rust 里调用 V8 引擎的库），并把它整合进 Cloudflare 的开源运行时 workerd。\n\nDahl 说，做 Deno Deploy 让他看到底层基础设施有多复杂，所以后来做了 celld。按 Cloudflare 联合博文的介绍，celld 是 Workers 和 Durable Objects 的开源实现，今年 8 月发布，是一个用 Rust 写的单文件程序，只依赖一个对象存储桶，可以部署在自己的服务器上。\n\nDurable Objects 是 Cloudflare 的一种编程模型。每个对象相当于一个单线程的小服务器，带自己的 SQLite 数据库，能直接处理 WebSocket 长连接。比如聊天应用可以一个频道对应一个对象，用户多了，系统自动分摊到更多机器上，开发者不用自己搭扩容架构。\n\n加入 Cloudflare 后，Dahl 和 Deno 联合创始人 Bert Belder 会把 celld 的代码和思路并入 workerd，让“在自己的机器上跑 Workers 应用”成为官方正式支持的用法。目前 workerd 的 Durable Objects 只支持单实例，本地测试够用，上不了规模。这件事做成以后，这套写法既能跑在 Cloudflare 上，也能跑在自建机房里。\n\nDahl 最看重的方向是 AI 智能体。智能体需要长期保存状态、保持实时连接、闲着时不花钱，Durable Objects 正好都能提供。他在文中邀请想在自有基础设施上大规模运行智能体的团队直接联系他。",
+      "created_at": "Fri Oct 09 15:42:52 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2108543358197207048",
+        "text": "We are excited to announce that Deno is joining Cloudflare! \n\nhttps://t.co/hC5HOUb8t4",
+        "created_at": "Fri Oct 09 13:01:26 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1108769816230293504",
+          "name": "Deno",
+          "screen_name": "deno_land",
+          "description": "A modern runtime for JavaScript and TypeScript",
+          "followers_count": 100416,
+          "friends_count": 0,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 594,
+          "favorite_count": 4619,
+          "reply_count": 184,
+          "quote_count": 426
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 10,
+        "reply_count": 11,
+        "quote_count": 0
       }
     }
   ]

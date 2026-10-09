@@ -1,0 +1,190 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 256699,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261009",
+  "last_updated": "2026-10-09T08:25:14.542705",
+  "tweet_count": 5,
+  "tweets": [
+    {
+      "id": "2108395740988834165",
+      "text": "特朗普给六位科技公司掌门人颁发美国国家奖章\n\n美国总统特朗普 10 月 8 日在白宫颁发了两项国家奖章。Google 联合创始人 Sergey Brin、英伟达 CEO 黄仁勋、SpaceX 和特斯拉 CEO 马斯克、AMD CEO 苏姿丰获得国家科学奖章；戴尔创始人 Michael Dell、微软 CEO Satya Nadella 获得国家技术与创新奖章。\n\n这两项奖章是美国政府给科技界的最高荣誉，由总统亲自颁发。国家科学奖章 1959 年设立，过去获奖的大多是大学和研究机构里的科学家；国家技术与创新奖章表彰把技术做成产品和产业的人。这是特朗普两届任期里第一次颁发这两项奖章。\n\n颁奖词给出了每个人的理由。\n\nBrin 获奖是因为开发了信息检索和数据处理的基础算法，也就是 Google 搜索背后的那套方法，改变了人们获取信息的方式。\n\n黄仁勋获奖是因为把 GPU 从画图形的芯片变成了通用计算平台，让大规模并行计算成为可能。今天训练大模型用的就是这套东西。\n\n马斯克获奖是因为在航天、智能系统和通信上的工程成就，以及推动美国制造业回流。\n\n苏姿丰获奖是因为处理器架构和芯粒技术（把一颗大芯片拆成几块小芯片拼起来，成本更低、性能更容易往上堆），这套技术撑起了全球第一台百亿亿次超级计算机，也就是每秒能算一百亿亿次的机器。\n\nDell 获奖是因为建立了一家全球性的科技公司，并资助培养年轻的科学家和工程师。\n\nNadella 获奖是因为带着微软转型云计算重新焕发活力，并建起超大规模数据中心，颁奖词的说法是这些数据中心让“美国超级智能”得以训练和在全球部署。\n\n这份名单基本就是你每天用的 AI 背后的那条产业链：搜索和模型、训练芯片、服务器、云算力。颁奖词里两次出现“超级智能”，白宫把 AI 算力当成了国家实力来表彰。\n\n特朗普在颁奖时称马斯克是“当代爱迪生”。两人去年公开闹翻，美国媒体把这次授奖看作两人和解的信号。",
+      "created_at": "Fri Oct 09 03:14:51 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2108258677773967451",
+        "text": ".@POTUS presents the National Medal of Science to Sergey Brin, @JensenHuang, @elonmusk, and @LisaSu, and the National Medal of Technology and Innovation to @MichaelDell and @satyanadella. https://t.co/8IGZV6s9Of",
+        "created_at": "Thu Oct 08 18:10:12 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2108258500610564096",
+            "url": "https://video.twimg.com/amplify_video/2108258500610564096/vid/avc1/1280x720/umGmzh0PJabf60Lj.mp4?tag=29",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1881451105454002176",
+          "name": "Rapid Response 47",
+          "screen_name": "RapidResponse47",
+          "description": "Official White House Rapid Response account. Supporting President Trump’s America First agenda and holding the Fake News accountable. MAGA!",
+          "followers_count": 2317003,
+          "friends_count": 70,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1941,
+          "favorite_count": 11359,
+          "reply_count": 560,
+          "quote_count": 371
+        }
+      },
+      "stats": {
+        "retweet_count": 6,
+        "favorite_count": 61,
+        "reply_count": 24,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2108409240847016347",
+      "text": "Claude 新增数据看板和动画讲解，文档、幻灯片、设计功能结束测试\n\nAnthropic 今天给 Claude 加了两个新功能。Claude Dashboards 能把公司数据做成自动更新的数据看板，Claude Motion 能把报告、图表做成几十秒的动画讲解。两者都在测试阶段。\n\nClaude Dashboards 现在就能在 https://t.co/vefasn3rYt 网页版的 Artifacts 里面用了，但是 Claude Motion 目前只对 Team 和 Enterprise 套餐开放。\n\n此前一直在测试的 Docs（文档）、Slides（幻灯片）、Design（设计）同时转正，这三个功能现在所有套餐都能用，包括免费版。\n\n【1】数据看板：用大白话查公司数据\n\n以前想看公司数据，要么给数据团队提需求排队，要么自己写 SQL（数据库查询语言）。现在把 Claude 连上公司的数据平台，比如 BigQuery、Snowflake、Databricks、Amazon Redshift、ClickHouse，或者 Salesforce 这类客户管理系统，直接问“这周注册量和上个月比怎么样”，Claude 会写查询、出图表，做成一个看板。数据变了，看板跟着更新。\n\n每个数字都能点开看背后的查询语句，也能让 Claude 解释是怎么算出来的，每张图还标着数据最后刷新的时间。用的人可以自己核对 AI 有没有算错。\n\n它适合快速、探索性的问题。需要深入分析时，可以把看板直接发到 Amplitude、Grafana、Hex、Mixpanel、PostHog 等分析工具里接着做，Looker、Tableau 等后续支持。付费套餐可用。\n\n【2】动画讲解：让幻灯片里的内容动起来\n\nClaude Motion 能把季度报告做成全员大会上放的 30 秒讲解动画，给董事会幻灯片里的图表加动效，或者做一段给新客户看的产品操作演示。在对话框输入“/motion”就能调出来。做好后可以在编辑器里改，也可以让 Claude 改，最后导出 MP4。\n\n它不用视频生成模型。Claude 写的是代码，让你的文字、图表、形状、图片动起来，画面里不会出现 AI 生成的人物和素材，每个字、每个数字、每段时长都能改。所以它和 Sora、可灵这类视频生成产品用途不同，适合讲清楚自己手里的内容。需要再加工，可以导入 Adobe、Descript、HeyGen、Runway 等工具。\n\nClaude Motion 目前只对 Team 和 Enterprise 套餐开放。\n\n【3】文档、幻灯片、设计：免费用户也能用\n\n这三项功能上线以来，用户已经用它们做了超过 4500 万份文档、幻灯片和设计稿。这次去掉测试标签，同时补了几项能力：团队成员和 Claude 可以一起编辑同一份文件；幻灯片、设计、看板和动画可以分享给公司外的人，或者任何拿到链接的人（需管理员允许）；导出的 PowerPoint 和 PDF 能保留排版，幻灯片能直接转成可编辑的 Google Slides；手机 App 里也能修改。企业版新增 CMEK 支持，也就是企业可以用自己管理的密钥加密数据。\n\n【4】Claude Design 独立站 12 月 14 日关闭\n\nClaude Design 原本有独立网址 https://t.co/v6it9PiXTL，9 月 16 日起已经能在普通 Claude 对话里使用。Anthropic 决定把两者合并，独立站开到 12 月 14 日。\n\n用过独立站的团队要注意三点。设计系统可以在 Claude 的 Artifacts 页面一键迁移。项目在关闭前照常可用。和 Claude 的聊天记录、项目评论不会迁过来，公开分享链接到期也会失效，需要的话提前保存。\n\n企业管理员注意：看板和动画默认关闭，要在组织设置里手动开启；文档、幻灯片、设计会在 10 月 15 日默认开启。",
+      "created_at": "Fri Oct 09 04:08:30 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2108271552991252810",
+        "text": "Claude Dashboards and Claude Motion are in beta today.\n\nAsk Claude to turn your data into live dashboards and your ideas into animated explainers. https://t.co/V3fU4lMnzp",
+        "created_at": "Thu Oct 08 19:01:22 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2108268464544661507",
+            "url": "https://video.twimg.com/amplify_video/2108268464544661507/vid/avc1/1920x1080/2ox4n4hS5rv3zXUb.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1943306828697550848",
+          "name": "Claude",
+          "screen_name": "claudeai",
+          "description": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+          "followers_count": 1881336,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2548,
+          "favorite_count": 36737,
+          "reply_count": 711,
+          "quote_count": 1294
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 34,
+        "reply_count": 40,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2108414207893110818",
+      "text": "封号封号，必须得封号！ https://t.co/4zWw9BNbuR",
+      "created_at": "Fri Oct 09 04:28:14 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2041107621143556096",
+          "url": "https://video.twimg.com/amplify_video/2041107621143556096/vid/avc1/720x720/RpEEM8PF8rm-P-4h.mp4?tag=14",
+          "bitrate": 1280000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 112,
+        "reply_count": 39,
+        "quote_count": 5
+      }
+    },
+    {
+      "id": "2108419050145505439",
+      "text": "是开源的：https://t.co/VqLQ5SwNLl",
+      "created_at": "Fri Oct 09 04:47:28 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2041108969410945408",
+        "text": "https://t.co/QKw0hzi8dw\n\nnpm install -g badclaude\nbadclaude",
+        "created_at": "Mon Apr 06 11:01:14 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1457760054011121674",
+          "name": "yaml",
+          "screen_name": "blended_jpeg",
+          "description": "🌏💫\nofficial token:\n5j56nDRn5YxTaTvYd7Jd5vJdEUapRioFwYCNzwo7pump",
+          "followers_count": 1442,
+          "friends_count": 472,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 19,
+          "favorite_count": 455,
+          "reply_count": 11,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2108452995461529942",
+      "text": "还能找到当年我玩 Overwatch 1 的视频，全靠“随缘箭”，那时候 Hanzo 还有溅射，瞄对方脚底板能秒人。 https://t.co/0rZSu7m4zK",
+      "created_at": "Fri Oct 09 07:02:21 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2108452650261889024",
+          "url": "https://video.twimg.com/amplify_video/2108452650261889024/vid/avc1/1280x720/j8PmSrqV_1sH_m5L.mp4?tag=29",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 1,
+        "quote_count": 1
+      }
+    }
+  ]
+}

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 257038,
+    "followers_count": 257071,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261010",
-  "last_updated": "2026-10-10T16:51:36.345903",
-  "tweet_count": 6,
+  "last_updated": "2026-10-10T21:04:12.794627",
+  "tweet_count": 7,
   "tweets": [
     {
       "id": "2108712677971206387",
@@ -242,6 +242,82 @@
         "retweet_count": 0,
         "favorite_count": 5,
         "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2108972823440220375",
+      "text": "RT @yetone: 这条推文的建议很好，但\"把压缩调到 400K\"对每个人都成立吗？不一定。\n\n这就是 magpie 要做本地 agent 可观测性分析的原因。每个 agent 都有自己独特的行为，每个用户也有自己的使用习惯，任务难度也因人而异，所以不存在一份对所有人都最优…",
+      "created_at": "Sat Oct 10 17:27:58 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2108874802593448365",
+        "text": "这条推文的建议很好，但\"把压缩调到 400K\"对每个人都成立吗？不一定。\n\n这就是 magpie 要做本地 agent 可观测性分析的原因。每个 agent 都有自己独特的行为，每个用户也有自己的使用习惯，任务难度也因人而异，所以不存在一份对所有人都最优的配置。\n\n更麻烦的是，每个 agent 的配置项又多又复杂，还藏得很深。大多数人压根儿不知道有这些开关，就这么不知不觉地用着最不适合自己的配置，浪费了大量时间和 Token，甚至牺牲了完成任务的质量。\n\nmagpie 新功能「为你调优」：在本地用你自己的真实调用，按每个 agent、每个模型去回放压缩阈值和缓存时长，算出对你最省 Token 的那一组。千人千面，但对每个人都是最省的。",
+        "created_at": "Sat Oct 10 10:58:28 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2108874678194622464",
+            "url": "https://pbs.twimg.com/media/HUQ6WLWbUAAfzqi.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2108755870788243738",
+          "text": "最近用 Claude Code 跑长任务经常感觉 5 小时额度像流水一样掉？之前社区甚至有人吐槽它根本没做上下文压缩，暗地里疯狂塞 token。今天看了 Anthropic 官方工程师 Lydia Hallie 的详细解释，才发现大家都误解了它的机制，实际问题出在默认策略太激进。\n\n很多人不知道，auto-compact 其实是真正在做摘要的。只要一触发，前面所有的历史记录都会被一段很短的 summary 直接替换掉，根本不会在上下文里保留上百万的冗余内容。\n\n那为什么大家的配额还是崩得飞快？ 关键在于 1M 上下文模型下，系统默认一定要憋到将近 967K 才会启动自动压缩。这就很要命了——在憋到 967K 之前的那段漫长对话里，你发过去的每一句话，背后都在默默拖着七八百 K 甚至近百万 token 的庞大上下文。即便大部分命中了 Prompt Cache 且读取单价很低，但只要基数膨胀到这个量级，每一轮对话依然在疯狂蚕食你的 5 小时用量。\n还有人纠结“压缩会导致前缀改变、缓存失效，重新写一遍岂不是血亏”。其实完全不会。生成摘要本身走的大多是热缓存读取，失效之后你只需要为那段极短的新摘要付一次小额的 Cache Write，换来的却是后续交互基数直接腰斩，长远来看绝对是划算的。\n\n不想额度莫名其妙被吞完的话，建议赶紧顺手做两个调整：\n\n平时在终端直接敲个 /autocompact 400k，或者在 ~/.claude/settings.json 里配置好 autoCompactWindow，强制它提前压缩，别让上下文滚雪球滚到 900多K。\n\n另外个人订阅的缓存保活时间默认是 1 小时，但后台子代理（subagent）只有 5 分钟。如果写代码停顿久了，缓存冷掉重写确实心疼，有需要可以在配置里改一下 promptCacheTtl 和 subagentPromptCacheTtl。如果主会话跑的是 Opus，顺便把后台打杂的 subagent 换成更轻量的模型，额度立马耐用很多\n\n https://t.co/pLd5QSgzyf",
+          "created_at": "Sat Oct 10 03:05:53 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "video",
+              "id": "2108623848971366400",
+              "url": "https://video.twimg.com/amplify_video/2108623848971366400/vid/avc1/1920x660/v6tK9K5GeS2gwKGn.mp4?tag=29",
+              "bitrate": 2176000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1523533577081614336",
+            "name": "TechVerser",
+            "screen_name": "realfxw",
+            "description": "学习成瘾者｜AI 研究方向\n用严谨把复杂讲清楚\n关注：模型、自动化、工程化",
+            "followers_count": 1208,
+            "friends_count": 988,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 33,
+            "favorite_count": 421,
+            "reply_count": 25,
+            "quote_count": 7
+          }
+        },
+        "user": {
+          "id": "147786784",
+          "name": "yetone",
+          "screen_name": "yetone",
+          "description": "Built: avante.nvim\n\nBuilding:\n\nhttps://t.co/kQss3piJs8\n\nhttps://t.co/pfq9srNgsd\n\nhttps://t.co/fpGnPR5t9C\n\nhttps://t.co/cBN1yzJPIG\n\nhttps://t.co/6ERz2HMx0f\n\nhttps://t.co/QhQRLD4zQo",
+          "followers_count": 92096,
+          "friends_count": 4559,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 14,
+          "favorite_count": 244,
+          "reply_count": 66,
+          "quote_count": 9
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 14,
+        "favorite_count": 0,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

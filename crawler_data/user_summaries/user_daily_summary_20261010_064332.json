@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-10-10T06:43:32.681496",
+  "tweet_count": 27,
+  "summary": "**新工具/技术**（如有）\n- Claude Dashboards：把 BigQuery/Snowflake/Redshift 等数据源连接成自动更新的数据看板，支持查看查询语句并解释计算方法，适合探索性分析。  \n- Claude Motion：基于代码生成的短动画讲解（导出 MP4），不生成真人素材，便于把报告/幻灯片做成可控的动态演示。  \n- Claude Docs/Slides/Design（正式上线）：文档、幻灯片和设计功能对所有套餐开放，支持协同编辑和保真导出。  \n- Claude Managed Agents 动态工作流：主智能体下发分阶段计划并并行调度最多千个子智能体，适合大规模并行审计/迁移/批处理任务。  \n- Claude Code Projects：把多个 Claude Code 会话组织成“项目+线程”，线程可在云端持续运行并自动开 PR，适合长期、多任务工程流程。  \n- Microsoft-Decision-1：专做结构化“选择题”的决策模型，输出校准概率，延迟低、成本低，适合路由/打分/自动决策场景。  \n- Deno → Cloudflare：Deno 团队并入 Cloudflare，Deno 运行时一年后停更，Deno Deploy 半年后关停，迁移到 Cloudflare Workers 有迁移支持。\n\n**核心观点/方法论**（如有）\n- 人为定义 + AI 执行的闭环最高效：dotey 强调“定义问题与验收由人把关，执行交给 Agent”的工作循环能把效率放大。  \n- Token 与上下文管理是成本/性能关键：建议在 Claude Code 打开 autocompact 并把阈值设在 300–400k 以控制费用与响应速度。  \n- 算力/模型之外，壳（harness）更决定效果：报告与实践都显示同一模型在不同调用框架下表现差异远超模型间差异。  \n- 并行智能体能显著提升覆盖率，但成本和监控是瓶颈：多智能体工作流提高稳定性和召回，但要严格会话预算与模型分配策略。  \n- 生态与基础设施决定长期选择：Deno 并入 Cloudflare、数据中心/算力集中等都提示迁移与供应链风险需提前规划。  \n- 安全与可控性必须跟上能力：报告指出智能体能越过沙箱攻击真实系统，强调监控、沙箱设计和人为审批的必要性。\n\n**实践经验/案例**（如有）\n- baocut 项目实操：dotey 把方法论落地到开源项目，先产出技术方案 → 高保真原型 → Agent 实现 → 人工验收，证明 Agent 驱动能显著提速。  \n- Claude Design 节约 Token 的技巧：先在网页上做满版本并导出 HTML，本地用 Claude Code 维护，避免反复在线编辑消耗 Token。  \n- Cloudflare 账单事件教训：报警/重试逻辑必须有最小延迟、重试预算和监控告警，且在使用按量服务时要设置多档消费提醒。  \n- 多智能体找 bug 的效果：在 11.6 万行代码的测试里，动态工作流比单个智能体稳定找到更多缺陷，说明并行编排提升覆盖率。  \n- Claude Startups 与额度风控：扶持计划被申请量压垮、部分福利暂停，说明对创业优惠需有更严格准入与实时配额管理。",
+  "metadata": {
+    "original_tweets": 23,
+    "retweets": 4,
+    "media_tweets": 9,
+    "data_hash": "c1eb2832",
+    "user": "dotey"
+  }
+}

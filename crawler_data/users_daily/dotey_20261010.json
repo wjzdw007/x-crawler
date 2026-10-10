@@ -1,0 +1,189 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 256863,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261010",
+  "last_updated": "2026-10-10T03:59:46.151294",
+  "tweet_count": 4,
+  "tweets": [
+    {
+      "id": "2108712677971206387",
+      "text": "据 Business Insider 援引知情人士报道，Google 内部在测试新模型 Carbon，有员工说编码能力“感觉像 Opus 5.5”\n\nCarbon 部署在 Google 内部的 AI 编程工具 Jetski 上。报道说，Google 9 月 30 日发布的 Gemini 4 Argon 用的是另一个内部版本 Barium-B，Carbon 是在它之后训练出来的新版本。Carbon 会作为 Argon 的升级推出，还是单独作为新模型发布，目前还不清楚。\n\nOpus 5.5 是这次的参照对象，因为编程是 Gemini 目前的短板。Bloomberg 此前报道，有 Google 员工反映 Argon 跑分好看，真拿来写代码却不如预期。在第三方编程测试 Terminal Bench 4 上，Argon 得分 57%，低于 Anthropic 的 Claude Sonnet 5.5（64%）、Claude Opus 5.5（60%）和 OpenAI 的 GPT-6 Astra（59%）。Google 9 月还放开了内部限制，允许全体工程师用 Claude 写代码。\n\n如果 Carbon 真能做到 Opus 5.5 的水平，用 Gemini 写代码的开发者会直接受益。不过“感觉像”只是一位匿名员工的主观评价，Carbon 没有公开跑分，也没有发布时间，Google 拒绝评论内部路线图。眼下外界能用的只有 Argon，而且它也只开放给了部分网络安全合作伙伴，付费 API 用户和 Google AI Ultra 订阅用户还要再等。",
+      "created_at": "Sat Oct 10 00:14:15 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2108712588427046912",
+          "url": "https://pbs.twimg.com/media/HUOm7T6WsAAXs4G.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 50,
+        "reply_count": 59,
+        "quote_count": 9
+      }
+    },
+    {
+      "id": "2108745745721413678",
+      "text": "有个用 Claude Dashboard 的用法，就是下载你的 X 数据，然后从 Artifacts（https://t.co/3zHAHh3MSQ）新建 Dashboard 发给 Claude Dashboard 去分析。\n\n从 https://t.co/TBJtujil8o 获取账号数据，把每个 Tab 能下载到的数据都下载下来，然后作为附件上传到 Claude Dashboard。\n\n提示词参考：\n> 帮我分析一下我的推文数据，看看哪些推文更受欢迎，怎么优化",
+      "created_at": "Sat Oct 10 02:25:39 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2108745563856420864",
+          "url": "https://pbs.twimg.com/media/HUPE6u9XwAA0SRQ.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2108409240847016347",
+        "text": "Claude 新增数据看板和动画讲解，文档、幻灯片、设计功能结束测试\n\nAnthropic 今天给 Claude 加了两个新功能。Claude Dashboards 能把公司数据做成自动更新的数据看板，Claude Motion 能把报告、图表做成几十秒的动画讲解。两者都在测试阶段。\n\nClaude Dashboards 现在就能在 https://t.co/vefasn3rYt 网页版的 Artifacts 里面用了，但是 Claude Motion 目前只对 Team 和 Enterprise 套餐开放。\n\n此前一直在测试的 Docs（文档）、Slides（幻灯片）、Design（设计）同时转正，这三个功能现在所有套餐都能用，包括免费版。\n\n【1】数据看板：用大白话查公司数据\n\n以前想看公司数据，要么给数据团队提需求排队，要么自己写 SQL（数据库查询语言）。现在把 Claude 连上公司的数据平台，比如 BigQuery、Snowflake、Databricks、Amazon Redshift、ClickHouse，或者 Salesforce 这类客户管理系统，直接问“这周注册量和上个月比怎么样”，Claude 会写查询、出图表，做成一个看板。数据变了，看板跟着更新。\n\n每个数字都能点开看背后的查询语句，也能让 Claude 解释是怎么算出来的，每张图还标着数据最后刷新的时间。用的人可以自己核对 AI 有没有算错。\n\n它适合快速、探索性的问题。需要深入分析时，可以把看板直接发到 Amplitude、Grafana、Hex、Mixpanel、PostHog 等分析工具里接着做，Looker、Tableau 等后续支持。付费套餐可用。\n\n【2】动画讲解：让幻灯片里的内容动起来\n\nClaude Motion 能把季度报告做成全员大会上放的 30 秒讲解动画，给董事会幻灯片里的图表加动效，或者做一段给新客户看的产品操作演示。在对话框输入“/motion”就能调出来。做好后可以在编辑器里改，也可以让 Claude 改，最后导出 MP4。\n\n它不用视频生成模型。Claude 写的是代码，让你的文字、图表、形状、图片动起来，画面里不会出现 AI 生成的人物和素材，每个字、每个数字、每段时长都能改。所以它和 Sora、可灵这类视频生成产品用途不同，适合讲清楚自己手里的内容。需要再加工，可以导入 Adobe、Descript、HeyGen、Runway 等工具。\n\nClaude Motion 目前只对 Team 和 Enterprise 套餐开放。\n\n【3】文档、幻灯片、设计：免费用户也能用\n\n这三项功能上线以来，用户已经用它们做了超过 4500 万份文档、幻灯片和设计稿。这次去掉测试标签，同时补了几项能力：团队成员和 Claude 可以一起编辑同一份文件；幻灯片、设计、看板和动画可以分享给公司外的人，或者任何拿到链接的人（需管理员允许）；导出的 PowerPoint 和 PDF 能保留排版，幻灯片能直接转成可编辑的 Google Slides；手机 App 里也能修改。企业版新增 CMEK 支持，也就是企业可以用自己管理的密钥加密数据。\n\n【4】Claude Design 独立站 12 月 14 日关闭\n\nClaude Design 原本有独立网址 https://t.co/v6it9PiXTL，9 月 16 日起已经能在普通 Claude 对话里使用。Anthropic 决定把两者合并，独立站开到 12 月 14 日。\n\n用过独立站的团队要注意三点。设计系统可以在 Claude 的 Artifacts 页面一键迁移。项目在关闭前照常可用。和 Claude 的聊天记录、项目评论不会迁过来，公开分享链接到期也会失效，需要的话提前保存。\n\n企业管理员注意：看板和动画默认关闭，要在组织设置里手动开启；文档、幻灯片、设计会在 10 月 15 日默认开启。",
+        "created_at": "Fri Oct 09 04:08:30 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 256863,
+          "friends_count": 1753,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 12,
+          "favorite_count": 79,
+          "reply_count": 55,
+          "quote_count": 5
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 23,
+        "reply_count": 22,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2108751060344905924",
+      "text": "也并不是所有修改都要写技术方案，很多功能比如那些以修改 UI 为主的可以直接从修改原型开始，原型好了后可以用 Agent 内置的浏览器的“标记”工具，在要修改的地方标记，然后去写评论。\n\n原型完成后，可以在同一会话，让它把对原型的修改，同步到正式的代码中。\n\n通常我会用 Fable 帮我设计，然后让 Opus 去执行，最后 Fable 验收。",
+      "created_at": "Sat Oct 10 02:46:46 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2108748585453928448",
+          "url": "https://pbs.twimg.com/media/HUPHqnSWwAAsgxp.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2108750251846778880",
+          "url": "https://pbs.twimg.com/media/HUPJLnFXwAAZ6GA.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2108750775623065600",
+          "url": "https://pbs.twimg.com/media/HUPJqGTXoAApO60.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2108763409357721644",
+      "text": "RT @Michaelzsguo: 敏捷开发年代，“两张披萨团队”（two-pizza team）非常时髦：两张披萨够吃差不多八到十个人。\n\n到了 AI 时代，Dan Shipper 开始提出“两块披萨团队”（two-slice team）了：一两个人就够。\n\n他给这两个人安排…",
+      "created_at": "Sat Oct 10 03:35:50 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2108697102012309804",
+        "text": "敏捷开发年代，“两张披萨团队”（two-pizza team）非常时髦：两张披萨够吃差不多八到十个人。\n\n到了 AI 时代，Dan Shipper 开始提出“两块披萨团队”（two-slice team）了：一两个人就够。\n\n他给这两个人安排的角色是“海盗”和“架构师”。海盗用 AI 快速尝试，不断做、不断扔，从一堆粗糙原型里找到有价值的东西；架构师再把它打磨成可靠、优雅、可以继续扩展的系统。\n\n按他的经验，一两个人已经能推进得很快，再加人，协调成本和想法分歧反而会拖慢进度。",
+        "created_at": "Fri Oct 09 23:12:21 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2108696859866726400",
+            "url": "https://video.twimg.com/amplify_video/2108696859866726400/vid/avc1/1280x720/z5xvp2k23DMbBjat.mp4?tag=29",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2108652242215878775",
+          "text": "Tired: Two-pizza teams\n\nWired: Two-slice teams\n\n@danshipper on the best team structure in the AI-era https://t.co/2xMotHoSDP",
+          "created_at": "Fri Oct 09 20:14:06 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2108651288695283712",
+              "url": "https://video.twimg.com/amplify_video/2108651288695283712/vid/avc1/1920x1080/nh9S0AxTLohKqHoW.mp4?tag=29",
+              "bitrate": 10368000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "7958322",
+            "name": "Lenny Rachitsky",
+            "screen_name": "lennysan",
+            "description": "Deeply researched product, growth, and career advice",
+            "followers_count": 449100,
+            "friends_count": 2948,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 36,
+            "favorite_count": 463,
+            "reply_count": 58,
+            "quote_count": 24
+          }
+        },
+        "user": {
+          "id": "1479852652150337542",
+          "name": "Michael Guo",
+          "screen_name": "Michaelzsguo",
+          "description": "Building AI agents and AI-native orgs. Demystifying AI in practice.  EN/中文 (Selected build notes, experiments, and practical tips at the website link.)",
+          "followers_count": 9590,
+          "friends_count": 429,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 12,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

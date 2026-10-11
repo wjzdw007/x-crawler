@@ -1,0 +1,120 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 257197,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261011",
+  "last_updated": "2026-10-11T08:13:12.836358",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2109151666020794711",
+      "text": "用 REA 小试牛刀逆向了 Claude Slides 的 Slides 编辑器，几乎完整功能。（图1）\n\n我的用法很简单，不一定是最佳实践，仅供参考：\n\n1. 先去 Claude Slides 上把核心的脚本和样式表下载下来（图2）\n2. 按照 REA 官网的说明让 Codex 安装 REA\n3. 使用 REA Skill 去逆向混淆后的代码（图3）\n4. 用不了太久就能有一个目录结构不错的代码，但其实里面还挺乱的\n5. 然后再用 Claude Code 5.5 去重写了一遍就变成结构良好类型完整的代码了\n\n至于提示词，我没有直接逆向，而是换了个思路，先做个 Slides，然后在对话里面，说我要做一个 slides skill，让它帮我实现一个，要做的跟它的一样好，这样子出来的提示词，和原始的提示词肯定不一样，但是做出来的效果没什么差别。（图4是我用同样方法问 Claude Dashboard 的提示词）\n\n完整的代码参考：https://t.co/I25w0FGgkV",
+      "created_at": "Sun Oct 11 05:18:37 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2109147774511878146",
+          "url": "https://pbs.twimg.com/media/HUUyueaWEAI3toM.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2109148038253940736",
+          "url": "https://pbs.twimg.com/media/HUUy907WkAAijNk.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2109148543478894592",
+          "url": "https://pbs.twimg.com/media/HUUzbPCXkAAoJUl.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2109151442808238080",
+          "url": "https://pbs.twimg.com/media/HUU2D_4WcAAM2DJ.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2108794629172682783",
+        "text": "REA：让 AI 智能体帮你逆向没有源码的软件\n\n开源项目 REA（Reverse Engineer Anything）把逆向分析工具接到了 Claude Code、Codex、Cursor 这类 AI 编程智能体上。看到别人 App 里有个好功能，可以让智能体去拆这个程序，讲清楚功能是怎么实现的，附上证据，再在你自己的项目里写一个类似的。逆向分析指的是手里没有源代码，从编译好的程序反推它是怎么写的。\n\nREA 本身是一个 MCP 服务。MCP 是 AI 智能体调用外部工具的通用接口，接上以后，智能体在对话里就能直接调用 REA 的分析功能。安装只需一行命令 npx rea-agents setup，它会注册到 Claude Code、Codex、Cursor、Gemini CLI、Grok Build 等智能体里，改配置前会先备份并让你确认。不用智能体的话，也可以在终端里直接跑命令。\n\n能分析的东西很多。原生程序（直接编译成机器码的软件）要借助 Hopper、Ghidra 或 IDA 这几款反汇编工具，把机器码还原成汇编和近似 C 语言的伪代码。Electron 应用（用网页技术做的桌面软件，比如 Notion）可以直接拆开安装包里的 ASAR 归档文件，理清模块和进程间通信，不需要额外工具。此外还支持 .NET 程序、安卓 APK、固件、网站、抓包记录、以太坊合约字节码，以及在 Linux 和 macOS 上记录程序运行时的行为。\n\n分析在本机进行，REA 不上传目标程序，但分析结果会交给智能体背后的模型服务商，数据怎么处理看各家政策。\n\n项目给了三个案例。一是经典打砖块游戏 DX-Ball：从一次播放音效的调用，追到根据球的位置计算左右声道的函数，把不完整的伪代码还原成 C 代码，3205 组测试结果和原版一致，编译出的 63 个字节也和原版完全相同。二是 Notion 桌面版：追踪复制粘贴从界面一路经过预加载脚本、进程间通信到主进程的完整链路。三是日本老电脑 PC-98 上的游戏《东方幻想乡》（TH04）：从 16 位指令里还原出弹幕子弹环的角度算法。\n\n对安全研究员、做老游戏复刻和软件保存的人来说，以前要自己对着反汇编工具一行行读、一层层追调用，现在可以让智能体先追，人来核对它给出的证据。普通开发者想研究竞品某个功能的做法，也多了一条路。\n\nREADME 显示项目在 GitHub 上已有 5 万星。npm 包今年 7 月首次发布，最新的 6.3.0 版今天刚发。\n\n使用前注意两点。项目声明只支持合法的逆向研究，授权和合规由使用者自己负责，逆向别人的软件可能违反用户协议或版权法规。项目还说明从未发行或背书任何加密货币，借用 REA 名字的代币都与它无关。\n\nhttps://t.co/I6ZzxyeHhC",
+        "created_at": "Sat Oct 10 05:39:53 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2108794476068012033",
+            "url": "https://pbs.twimg.com/media/HUPxZzJXAAEn8rZ.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 257197,
+          "friends_count": 1754,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 121,
+          "favorite_count": 717,
+          "reply_count": 124,
+          "quote_count": 24
+        }
+      },
+      "stats": {
+        "retweet_count": 29,
+        "favorite_count": 237,
+        "reply_count": 44,
+        "quote_count": 7
+      }
+    },
+    {
+      "id": "2109174479582564542",
+      "text": "RT @lexi_labs: 我来祛魅一下，所谓的硅谷大厂都在清退华人工程师的事。\n\n涉密企业和项目要求clearance，这是正常的商业操作。\n\n我最近跟 SpaceX 和 Anduril 的recruiter 电话，他们的第一个问题，就是你能不能过 clearance，美国…",
+      "created_at": "Sun Oct 11 06:49:17 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2108965180285862140",
+        "text": "我来祛魅一下，所谓的硅谷大厂都在清退华人工程师的事。\n\n涉密企业和项目要求clearance，这是正常的商业操作。\n\n我最近跟 SpaceX 和 Anduril 的recruiter 电话，他们的第一个问题，就是你能不能过 clearance，美国版的政审。我不是公民过不了，于是也就不用接着聊了。\n\n以前公司的 ITAR 跟 DOD 的项目，我也是不能染指的，只能由组里过了clearance 的同事去做。\n\n把这说成排华，简直莫名其妙。",
+        "created_at": "Sat Oct 10 16:57:36 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1373764522482143234",
+          "name": "Lexi 勒西",
+          "screen_name": "lexi_labs",
+          "description": "Tech/Finance advice and vibes\n古法发贴，第一代可能也是最后一代程序员",
+          "followers_count": 16083,
+          "friends_count": 413,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 89,
+          "reply_count": 30,
+          "quote_count": 5
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 7,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

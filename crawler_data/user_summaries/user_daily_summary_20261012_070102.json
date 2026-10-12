@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-10-12T07:01:02.602412",
+  "tweet_count": 7,
+  "summary": "**新工具/技术**（如有）\n- REA（Reverse Engineer Anything）：把本地逆向分析工具接入智能体（Claude Code、Codex、Cursor 等），能在本机分析二进制、Electron、APK、抓包记录等并把证据交给智能体。  \n- REA 的集成生态：支持注册到 Claude Code、Codex、Cursor、Gemini CLI、Grok Build 等智能体，一行命令 npx rea-agents setup 可安装。  \n- document.oai.annotation.request（OpenAI 注释/标记 API）：dotey 发现并利用此 API 流程来触发/填充评论框（Codex/ChatGPT App 内部用法）。  \n- Claude Code 5.5 / Codex / Cursor：作为重写、逆向和验证代码的智能体工具链，dotey 用它们做重构与行为验证。\n\n**核心观点/方法论**（如有）\n- 逆向流程化：先抓取目标的脚本与样式，再用 REA 让智能体逆向混淆代码，最后用强模型重写以产出结构良好的代码——把“发现”与“重构”分成两步。重要性：提高效率并保证可维护性。  \n- 提示词策略：不必直接复制原始提示，先让模型产出功能（做个 Slides），再要求“把它实现成一个 slides skill，和原始一样好”，能获得不同但等效的提示与实现。重要性：避免依赖不可获的原始提示，同时获取可用实现。  \n- 协作式逆向：在请求智能体分析时主动说“告诉我需要怎么配合”，以便在本机提供额外数据或交互，能显著提升分析效果。  \n- 合规与隐私提醒：REA 在本机分析不上传目标程序，但分析结果会发送给模型服务商，逆向法律责任与数据处理由使用者/服务商政策决定，需自行评估合规性。  \n- 组织文化视角（丰田经验）：若把 AI 带来的效率直接用来裁员，员工会隐藏改进点；更好的做法是把省下的人力投入更高价值工作以形成正反馈。  \n- 能力落差观点（引用 Karpathy）：公众对 LLM 的接触形成“漏斗”——大多数人只接触到低阶体验，少数人在前沿系统上获得巨大生产力差异，说明对外沟通与预期管理很重要。  \n- 招聘与合规（转发观点）：涉密岗位、国安/ITAR 要求会改变招聘筛选（如 clearance），这不是“排华”，是合规驱动的用人逻辑。  \n- 面试趋势（Google）：面试向“代码理解/AI 合作能力”倾斜——考察能否用 AI、写提示、校验 AI 输出，而非单纯从零写算法题。\n\n**实践经验/案例**（如有）\n- Claude Slides 逆向：dotey 用 REA 把 Claude Slides 的编辑器几乎完整逆向出来，先获得目录结构再用 Claude Code 5.5 重写成类型完整、结构良好的代码，完整代码已开源。  \n- 逐步工作法效果显著：REA 快速还原出可用但杂乱的代码结构，接着用更强的模型重构能得到可维护产物——实践上比直接人工反编译效率高。  \n- Codex 内置浏览器标记分析：通过 REA 与 Codex 交互发现关键链路和 document.oai.annotation.request，用测试页面验证可以弹出评论框并填充内容，但不能直接附加评论（Cursor/Claude Code 不支持该 API）。  \n- 小技巧：在让智能体做逆向时主动配合（上传片段/确认步骤）能加速定位关键链路并提高验证成功率。  \n- 风险与建议：在用 REA 做竞品拆解或功能复现时，注意版权与使用条款，确保只做合法的研究与学习。",
+  "metadata": {
+    "original_tweets": 6,
+    "retweets": 1,
+    "media_tweets": 4,
+    "data_hash": "d6245183",
+    "user": "dotey"
+  }
+}

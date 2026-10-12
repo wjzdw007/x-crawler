@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 257584,
+    "followers_count": 257920,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261012",
-  "last_updated": "2026-10-12T08:29:04.857760",
-  "tweet_count": 13,
+  "last_updated": "2026-10-12T19:36:28.243876",
+  "tweet_count": 15,
   "tweets": [
     {
       "id": "2109436840155697267",
@@ -615,6 +615,134 @@
         "retweet_count": 1,
         "favorite_count": 39,
         "reply_count": 8,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109692709627625673",
+      "text": "有人把 Switch 版暗黑2重制版搬上了 iPhone，开源免费，游戏得你自己出\n\nGitHub 上一个叫 D2R Mobile 的开源项目，能把你自己买的 Switch 版《暗黑破坏神 II：狱火重生》（暗黑2重制版）连同“术士君临”资料片装到 iPhone 和 iPad 上离线玩。项目用 MIT 许可证开源，代码免费，仓库里不含任何游戏内容。暗黑2重制版官方只有电脑和游戏主机版本，“术士君临”是今年初推出的资料片，新增了术士职业。\n\n【它怎么做到的】\n\niPhone 和 Switch 用的是同一类 ARM 处理器，能执行同一套机器指令。所以这个项目没走模拟器的路子，Switch 版游戏的原程序直接在手机处理器上运行，只改写了极少数在苹果系统下不能原样执行的指令（涉及线程寄存器、系统调用和计时器），作者说其余部分逐字节保持原样。\n\n游戏需要的系统服务，由一个专为苹果平台写的小程序提供。画面部分在苹果的图形接口 Metal 上重新实现，着色器（负责画面渲染的小程序）从游戏原版提前翻译好。模拟器要在游戏和硬件之间加一层实时翻译，这里没有这一层。因为跑的就是原版程序，职业、符文之语、掉落规则、任务流程都和原版一样。\n\n【想玩要准备什么】\n\n设备是 iOS 26 及以上的 iPhone 或 iPad，两者共用一个安装包。\n\n游戏要正版 Switch 版本体加“术士君临”资料片，并更新到 3.3.94012 版本。作者说没有资料片的版本不支持，也没测过。\n\n游戏文件要从你自己的主机里取出来，要哪些、怎么取、放在哪，项目单独写了一篇文档。这一步对普通玩家有门槛。\n\n还需要一个 Apple 账号给 App 签名。付费开发者账号功能最全；免费 Apple ID 也能用，但没有 iCloud 存档同步，每 7 天要重新签名安装一次。\n\n仓库里没有游戏程序、美术、文字和数据表，这些都在你自己的电脑上用你自己的文件现做出来。项目声明与暴雪、任天堂没有关联，也没有得到它们的认可，只能配合自己拥有的正版游戏使用。游戏完全离线，不支持联机，不需要登录任何账号。\n\n【怎么装】\n\n有 Apple 芯片的 Mac 并装了 Xcode，是作者主推的路线：把游戏文件放进指定目录，运行准备脚本（检查工具、改写程序、翻译着色器），填好签名信息，构建出 App 装到手机上。准备脚本第一次跑耗时较长。\n\n没有 Mac，可以从项目发布页下载一个不含游戏内容的“空壳”安装包，在 Windows 上用项目的工具把自己的游戏内容做进去，再用 Sideloadly、AltStore 这类自签工具签名装机。这条路的手机第一次启动要花约 7 分钟编译着色器，只有这一次。作者说 Windows 上从做包到真机游玩已经走通，用自签工具签名这一步还在等用户反馈，Linux 上做包也没验证过。\n\n装好第一次打开，App 会让你选“游戏资源文件夹”。安装包本身一百多 MB，游戏资源约 5.6GB 另放进手机，以后升级 App 不动存档和资源。\n\n【玩起来怎么样】\n\n下面的数字都来自作者在项目页上的自述，目前没有第三方测试。\n\n作者说，内测用了 44 台 iPhone 和 iPad，全部完成了普通、噩梦、地狱三个难度的多角色通关。最低实测机型是 iPhone 14 Pro Max（A16 芯片，6GB 内存），能跑满 60 帧。\n\n在 iPhone 17 Pro Max 上，作者测得局内稳定 60 帧，从主菜单进游戏约 1 秒。60 帧时整机功耗约 3.8 瓦，按电池容量换算能连续玩近 5 小时；省电模式降到 30 帧，功耗约 1.85 瓦，续航约翻倍。功耗是在第一幕营地站着、亮度 50% 时测的，续航是换算出来的，并非实际从满电玩到没电。\n\n操作按触屏重新设计：摇杆移动，点地面或 NPC 自动寻路，技能按钮按住连放、拖动可朝任意方向瞄准，双击装备直接穿脱，长按背包空格自动整理。接上手柄会切换到原版的手柄界面，键位和 Switch 一致。整个游戏可以在中文和英文之间切换。\n\n【原版没有的东西】\n\n项目在原版之上加了一套终局内容：通关地狱后开放的 100 层“秘境”，12 关的首领连战，以及建角色时可选的“极乐世界”模式，暗金、套装、符文掉率大幅提高。\n\n便利功能有自动喝药（佣兵也会自动喂药）、低级符文和宝石自动拾取、高价值掉落时手机震动提醒、免费鉴定和回城，仓库也扩大了。多数功能可以在游戏设置里逐项开关。\n\n目前只支持 iPhone 和 iPad。作者说安卓手机用的是同一类处理器，这套做法可以照搬，要换的只是系统服务和图形对接那一层，但作者手边没有安卓手机，希望有人接手。\n\n项目地址：https://t.co/eIGfEnwLK2",
+      "created_at": "Mon Oct 12 17:08:32 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2109692624005193728",
+          "url": "https://pbs.twimg.com/media/HUciQ48XYAAsOAp.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2109692671455277056",
+          "url": "https://pbs.twimg.com/media/HUciTptWMAAM1do.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2109692699129323520",
+          "url": "https://pbs.twimg.com/media/HUciVQzWoAA-FtG.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2109570370877739020",
+        "text": "https://t.co/gOkqJZeQFi\n\nD2R Mobile 开源了。\n\n把你自己的《暗黑破坏神 II：狱火重生》术士君临带到 iPhone 和 iPad：原版程序原生执行，不是模拟器。稳定 60 帧，约 1 秒进局，触屏操作整套重做，还有秘境等终局玩法。\n\n不含游戏内容，需自备游戏文件。MIT 许可。\n\nhttps://t.co/gOkqJZeQFi https://t.co/F1SA1i5JWu",
+        "created_at": "Mon Oct 12 09:02:24 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2109570357510475776",
+            "url": "https://pbs.twimg.com/media/HUazECwbEAAV3VG.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2109570357510479872",
+            "url": "https://pbs.twimg.com/media/HUazECwbIAA-Dt8.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2109570357808205824",
+            "url": "https://pbs.twimg.com/media/HUazED3aEAAWVmd.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2109570357527289856",
+            "url": "https://pbs.twimg.com/media/HUazEC0boAA0IH_.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2105460461160599552",
+          "name": "joe jiang",
+          "screen_name": "happyjoejiang",
+          "description": "",
+          "followers_count": 1664,
+          "friends_count": 14,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 65,
+          "favorite_count": 538,
+          "reply_count": 73,
+          "quote_count": 31
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 22,
+        "reply_count": 7,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109702901719327186",
+      "text": "Meta 发布 Muse Wonder：开发者今天能用，普通用户还要等\n\nMeta 10 月 12 日发布新一代大模型 Muse Wonder，一共两个版本：Muse Wonder 主打速度，Muse Wonder Full 是完整版。扎克伯格说，这个模型让 Meta 进入了“前沿”梯队，也就是和 OpenAI、Anthropic、Google 最强模型同一档。\n\n做这个模型的是 Meta 超级智能实验室（Meta Superintelligence Labs）。按 Meta 的说法，14 个月前它把 AI 业务推倒重来，从底层技术栈重新搭起，第一代成果是 Muse Spark 系列。Muse Wonder 比 Muse Spark 大得多，在 Meta 吉瓦级的 Prometheus 数据中心训练。\n\n【谁能用，怎么用】\n\n开发者今天就能用 Muse Wonder：通过 Meta Model API（Meta 的大模型接口平台）调用，或者在 Meta 的 AI 编程工具 Muse Code 里用。\n\n完整版 Muse Wonder Full 目前只开放给 Muse Code 的订阅用户。官方博客只写了它在 Muse Code 里可用，没提 API。\n\n普通用户用的 AI 助手 Muse，官方博客写的是“很快”接入 Muse Wonder，先给订阅用户。扎克伯格在 X 上说的是“今天订阅就能用 Muse Wonder 驱动你的 Muse”，两边说法有出入。免费用户什么时候能用，Meta 只说会逐步把这个水平的能力带给所有人，以后还会用 Muse Wonder 开发专门的模型给所有 Muse 用户，没给时间表。\n\n模型卡写的规格：上下文 100 万 Token，够一次放进一个中大型代码仓库；能读文字、图片、视频和音频，输出只有文字。\n\n【和 Claude、GPT 比怎么样】\n\n下面的成绩都来自 Meta 自己公布的对比表，对手是 Claude Opus 5.5、Claude Fable 5.1 和 GPT-6 Astra，全部按最高推理强度测。其中个人超级智能指数、MemoryBench、FocusBench 是 Meta 自建的测试。对手的成绩有一部分是 Meta 自己跑的，模型卡也写明，这些跑法未必为对手模型调到了最优。\n\nMuse Wonder Full 领先的主要是三类任务。\n\n一是替人办事的智能体任务。Meta 自建的个人超级智能指数，Muse Wonder Full 59.1 分，Claude Opus 5.5 55.2，GPT-6 Astra 54.5；跑完整业务流程的 AutomationBench，45.4 对对手最高的 41.6。\n\n二是长时间写代码。DeepSWE 79.0，对手最高 74.2；做大型软件项目的 SWE-Marathon 57.5，对手最高 46.3。\n\n三是法律。法律 AI 公司 Harvey 的智能体测试 13.1，对手最高 8.6。这个测试要求交付物每一项都达标，所有模型的通过率都很低。\n\n落后的项目也不少，大多输给 Claude Opus 5.5：终端编程（Terminal-Bench）57.1 对 59.6，从零写一个完整程序（ProgramBench）59.0 对 70.5，操作电脑（OSWorld）78.4 对 81.8，健康问答 62.3 对 65.6。专业文档任务 GDP.pdf 输给 GPT-6 Astra，33.2 对 34.2。\n\nMeta 博客里也放了第三方机构 Artificial Analysis 的综合智能指数：Claude Opus 5.5 以 58 分排第一，Muse Wonder Full 56 分排第二。开发者现在能通过 API 调用的是 Muse Wonder，它是 52 分，低于 Claude Fable 5.1、GPT-6 Astra 和 Google 的 Gemini 4 Argon（都是 53 分）。\n\n按 Meta 给的数据，让 AI 长时间替你干活、跨对话记住你的情况，是 Muse Wonder 领先的地方；比综合能力，它还排在 Claude Opus 5.5 后面。\n\n【Active Memory 和 Active Focus 是什么】\n\n这是 Meta 给两项能力起的名字，也是这次发布的卖点。\n\nActive Memory（主动记忆）：跨对话记住和你有关的重要信息，做新任务时自己判断哪些旧信息用得上，主动调出来。Meta 用自建的 MemoryBench 测这项能力：在 6.4 万到 10 万 Token 的长对话里掺进干扰内容，还有和前文矛盾、后来又更新的信息，看模型最后能不能记对关键细节。Muse Wonder 85.6 分，Muse Wonder Full 85.5，Claude Opus 5.5 81.5。\n\nActive Focus（主动专注）：盯着一个难目标持续干下去，一条路走不通就换一条，遇到卡点自己想办法，情况变了跟着调整；需要时会问你，做重要操作前先跟你确认。Meta 用自建的 FocusBench 测这项能力，任务涉及租房、旅行、IT、理财等，模型要在多轮交互里应付各种现实障碍。\n\nMeta 的演示里，Muse Wonder 直接在浏览器和多个 App 之间操作，根据用户的个人偏好和情况排出一份周六跑步计划。\n\n【官方没说的】\n\n价格：博客和模型卡都没写 API 怎么收费，也没写 Muse、Muse Code 的订阅多少钱。\n\n开源：没说会不会开放模型权重。模型卡只提到，开发和部署期间按 Meta 的权重安全计划保护模型权重。Meta 过去的 Llama 系列是开放权重的，这次没有任何相关说法。\n\n安全：Meta 说这一代模型防范化学、生物、放射性、核武器和网络攻击滥用的措施是它迄今最强的，同时保留了用于网络防御的能力。完整的安全评估报告“很快”发布。",
+      "created_at": "Mon Oct 12 17:49:02 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2109702642943336448",
+          "url": "https://video.twimg.com/amplify_video/2109702642943336448/vid/avc1/1920x1080/VFtsovzfRZ7egjWw.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2109689305073614918",
+        "text": "Introducing Muse Wonder, our new family of frontier models with state of the art performance for personal and professional agentic work. https://t.co/NKHrybrGKQ",
+        "created_at": "Mon Oct 12 16:55:01 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2109668166666448896",
+            "url": "https://pbs.twimg.com/media/HUcMBSQacAAvLlw.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "20749410",
+          "name": "Mark Zuckerberg",
+          "screen_name": "finkd",
+          "description": "",
+          "followers_count": 2481025,
+          "friends_count": 759,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1841,
+          "favorite_count": 23458,
+          "reply_count": 1512,
+          "quote_count": 2002
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 24,
+        "reply_count": 11,
         "quote_count": 0
       }
     }

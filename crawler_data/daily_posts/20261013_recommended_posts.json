@@ -1,12 +1,870 @@
 {
   "date": "20261013",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-10-13T01:48:16.074025",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-10-13T08:53:22.515028",
+  "tweet_count": 220,
+  "unique_tweet_count": 220,
+  "total_crawled": 400,
+  "duplicates_removed": 180,
   "tweets": [
+    {
+      "id": "2109923163580567614",
+      "text": "REA 案例：用 Codex + REA 下载微信视频号视频\n\n仅作为案例分析，真要下载视频应该有更成熟的方案。\n\n提示词参考截图，很简单：\n> Use REA，帮我下载我微信打开正在播放的视频号的视频\n\n但一轮对话搞不定，需要根据提示多步才能完成。\n\nCodex 最终给电脑配了一个本地代理服务器搞定的，要配合着输入几次密码安装证书。\n\n而且它还写了一个解密脚本去解密下载后的视频，不知道它是训练过相关开源项目还是 REA 帮分析出来的。\n\n如果它能稳定下载后，可以让它把下载方法、流程整理成一个 Skill，这样以后就可以用这个 Skill 去做了。",
+      "created_at": "Tue Oct 13 08:24:17 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2109918660181520384",
+          "url": "https://pbs.twimg.com/media/HUfv17UWcAAUldz.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2109918753467060224",
+          "url": "https://pbs.twimg.com/media/HUfv7W1W0AAgAQ5.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2109922845752991744",
+          "url": "https://pbs.twimg.com/media/HUfzpjyWoAAr3D8.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2109470081776283941",
+        "text": "录屏是个好办法👍\n\n继续贡献一个 REA 案例，除了录屏还可以用 Computer Use，我想学习一下 CapCut 的动态字幕格式，我也不知道格式存在哪里怎么渲染的。\n\n继续问 REA，它的字幕是怎么渲染的，这次我让它自己用 Computer Use 去操作，去点击下载 Templates，然后它会自己打开 CapCut 去一个个点击下载，下载的同时去监控网络地址和磁盘保存地址。\n\n就这样操作了几十个后，Codex 发现这样点击太慢了，自己拼 URL 去从 URL 下载了，就这样下载了 2291 个 Templates。",
+        "created_at": "Mon Oct 12 02:23:54 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2109468646930034688",
+            "url": "https://pbs.twimg.com/media/HUZWjtUWsAAM3p-.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2109469282157445120",
+            "url": "https://pbs.twimg.com/media/HUZXIruXwAAMCQ-.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2109469767601999872",
+            "url": "https://pbs.twimg.com/media/HUZXk8JX0AAQpBL.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 258259,
+          "friends_count": 1755,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 25,
+          "favorite_count": 188,
+          "reply_count": 44,
+          "quote_count": 6
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 258259,
+        "friends_count": 1755,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 20,
+        "reply_count": 13,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109881121047781430",
+      "text": "Try Grok @Bot",
+      "created_at": "Tue Oct 13 05:37:13 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2109695466917302316",
+        "text": "Man Grok bot is just so good. After testing muse, dots and openclaw Grok bot mogs them all it’s not even a debate \n\nThe usage is crazy too. After 3 full days of computer use im only at 28% 👀",
+        "created_at": "Mon Oct 12 17:19:30 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "63776464",
+          "name": "Yashu Sharma 🍊",
+          "screen_name": "heyitsyashu",
+          "description": "Dad, Investor, YouTube Host, Lead AI @ PG  ✝️",
+          "followers_count": 21244,
+          "friends_count": 1311,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 17,
+          "favorite_count": 274,
+          "reply_count": 41,
+          "quote_count": 10
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241507588,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 280,
+        "favorite_count": 2236,
+        "reply_count": 667,
+        "quote_count": 54
+      }
+    },
+    {
+      "id": "2109879128573067414",
+      "text": "RT @B_doong2daddy: Grok Bot fixed a customer's bug while I was out with my family. My app user emailed me about an error. My Grok Bot handl…",
+      "created_at": "Tue Oct 13 05:29:18 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2109846615859372269",
+        "text": "Grok Bot fixed a customer's bug while I was out with my family. My app user emailed me about an error. My Grok Bot handled it from A to Z. Found bugs, fixed them, and shipped on its own. So many use cases with Grok Bot. \nJust try it. https://t.co/nDorUEx8up",
+        "created_at": "Tue Oct 13 03:20:06 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2109844157652967425",
+            "url": "https://pbs.twimg.com/media/HUesFTxWoAEYmuJ.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1324183584282939392",
+          "name": "Texas Twins Dad",
+          "screen_name": "Texas_Twins_Dad",
+          "description": "USA 🇺🇸 | Tesla • Cybertruck • FSD • SI • Grok Bot\n\nApp built: https://t.co/JiMx9lhZfN\nreferral: https://t.co/xVn7hKo1o6",
+          "followers_count": 2898,
+          "friends_count": 657,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 74,
+          "favorite_count": 683,
+          "reply_count": 68,
+          "quote_count": 7
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241507588,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 74,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109875497316298977",
+      "text": "RT @cb_doge: When Starlink helped save five lives at sea.\n\nA boat called Magic Bus was sinking in a storm, far off the coast of North Carol…",
+      "created_at": "Tue Oct 13 05:14:52 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2109874730325160288",
+        "text": "When Starlink helped save five lives at sea.\n\nA boat called Magic Bus was sinking in a storm, far off the coast of North Carolina.\n\nThe captain tried to call for help using the boat’s radio, but couldn’t reach anyone. He then used @Starlink Mini to connect his phone and call the U.S. Coast Guard.\n\nThe five people left the sinking boat in a liferaft. Rescuers arrived by helicopter and brought everyone back safely. Starlink helped them reach help when their lives were in danger.\n\nThis life-saving technology should be available in every part of the world.",
+        "created_at": "Tue Oct 13 05:11:49 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2109874573135208448",
+            "url": "https://video.twimg.com/amplify_video/2109874573135208448/vid/avc1/1920x1080/Zs4Qk7teboDsaWHh.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1907882,
+          "friends_count": 1060,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 363,
+          "favorite_count": 2549,
+          "reply_count": 171,
+          "quote_count": 26
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241507588,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 363,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109871297060839710",
+      "text": "RT @yetone: 很多人想让我分享一下工作流，我一直没想好怎么分享，因为其实我没有任何的魔法，甚至还特别简陋，总觉得分享出来毫无意义。其实我就是用 Claude Code，然后用官方的 Opus 5.5 模型执行 loop 就可以了。\n\n我会并行执行图里的 3 个 loo…",
+      "created_at": "Tue Oct 13 04:58:11 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2109855710444237018",
+        "text": "很多人想让我分享一下工作流，我一直没想好怎么分享，因为其实我没有任何的魔法，甚至还特别简陋，总觉得分享出来毫无意义。其实我就是用 Claude Code，然后用官方的 Opus 5.5 模型执行 loop 就可以了。\n\n我会并行执行图里的 3 个 loop，然后每晚抽一点时间铲铲屎（主要是 UI/UX 的问题），然后就没活儿了。",
+        "created_at": "Tue Oct 13 03:56:15 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2109854962360725504",
+            "url": "https://pbs.twimg.com/media/HUe16OcbMAA38nu.png"
+          },
+          {
+            "type": "photo",
+            "id": "2109855062742966272",
+            "url": "https://pbs.twimg.com/media/HUe2AEZaoAAEG5X.png"
+          },
+          {
+            "type": "photo",
+            "id": "2109855167806087168",
+            "url": "https://pbs.twimg.com/media/HUe2GLyaoAAt7Fx.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2109650264601117141",
+          "text": "https://t.co/4GLW8gyAZI",
+          "created_at": "Mon Oct 12 14:19:53 +0000 2026",
+          "lang": "zxx",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1125309529145524224",
+            "name": "WquGuru",
+            "screen_name": "wquguru",
+            "description": "AI + Quant + Engineering\nNewshub → https://t.co/WmkVbbvE92\nBuilding Agent PoCs → https://t.co/pg7QEz0fGp\nAIGC(texts, videos, world models)\n📮 hello@wqu.guru",
+            "followers_count": 24041,
+            "friends_count": 637,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 83,
+            "favorite_count": 709,
+            "reply_count": 40,
+            "quote_count": 17
+          }
+        },
+        "user": {
+          "id": "147786784",
+          "name": "yetone",
+          "screen_name": "yetone",
+          "description": "Built: avante.nvim\n\nBuilding:\n\nhttps://t.co/kQss3piJs8\n\nhttps://t.co/pfq9srNgsd\n\nhttps://t.co/fpGnPR5t9C\n\nhttps://t.co/cBN1yzJPIG\n\nhttps://t.co/6ERz2HMx0f\n\nhttps://t.co/QhQRLD4zQo",
+          "followers_count": 93654,
+          "friends_count": 4556,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 182,
+          "favorite_count": 1533,
+          "reply_count": 210,
+          "quote_count": 83
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 258259,
+        "friends_count": 1755,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 182,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109867516646637579",
+      "text": "Grok @Bot memory transfer",
+      "created_at": "Tue Oct 13 04:43:10 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2109853221808435364",
+        "text": "NEW GROK BOT!\n\nAI MEMORY TRANSFER!\n\nYour old AI knows you. \n\nYour new one shouldn't have to start from zero. 🧠➡️\n\nMeet Memory Transfer, a @Grok @Bot that brings over what Claude or ChatGPT learned about you, so you don't spend weeks re-explaining yourself.\n\nThere are two ways to bring it over:\n\n• Paste one prompt into your old chat and send me the answer.\n\n• Or drop in your full ChatGPT or Claude data export.\n\nThe part that matters most is that nothing gets in automatically. \n\nWe review every item together, one line at a time. Only what you keep gets saved, and each item is tagged with where it came from and when. \n\nOther AIs' guesses don't become facts, and nothing you've already saved gets overwritten unless you say so.\n\nSwitch assistants and keep your context, without the junk.\n\nTry Memory Transfer on Grok Bot today. \n\nhttps://t.co/c9r2Vsw2Ek",
+        "created_at": "Tue Oct 13 03:46:21 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "101584084",
+          "name": "Brian Roemmele",
+          "screen_name": "BrianRoemmele",
+          "description": "we can only see what we think is possible...",
+          "followers_count": 491692,
+          "friends_count": 44267,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 79,
+          "favorite_count": 785,
+          "reply_count": 117,
+          "quote_count": 28
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241507588,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 316,
+        "favorite_count": 2930,
+        "reply_count": 558,
+        "quote_count": 62
+      }
+    },
+    {
+      "id": "2109867020091072915",
+      "text": "Of course",
+      "created_at": "Tue Oct 13 04:41:11 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2109844918835331343",
+        "text": "Tesla is offering free supercharging in areas affected by the hurricane.  Thank you!",
+        "created_at": "Tue Oct 13 03:13:22 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "487297085",
+          "name": "Ron DeSantis",
+          "screen_name": "RonDeSantis",
+          "description": "Governor of Florida. Husband to @CaseyDeSantis. Father to Madison, Mason, and Mamie. Iraq Veteran.",
+          "followers_count": 3263666,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 258,
+          "favorite_count": 3341,
+          "reply_count": 52,
+          "quote_count": 23
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241507588,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 671,
+        "favorite_count": 8537,
+        "reply_count": 447,
+        "quote_count": 41
+      }
+    },
+    {
+      "id": "2109860741121503681",
+      "text": "RT @SpaceX: Falcon 9 launches 27 @Starlink satellites from California https://t.co/WdYeCRC8Z2",
+      "created_at": "Tue Oct 13 04:16:14 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2109834204401872897",
+          "url": "https://pbs.twimg.com/media/HUejB9BXsAE1SzD.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2109834212702306304",
+          "url": "https://pbs.twimg.com/media/HUejCb8WQAA-sg8.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2109834233350934528",
+          "url": "https://pbs.twimg.com/media/HUejDo3XUAAQGHU.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2109834243006230528",
+          "url": "https://pbs.twimg.com/media/HUejEM1XcAA9nMn.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2109834323989774835",
+        "text": "Falcon 9 launches 27 @Starlink satellites from California https://t.co/WdYeCRC8Z2",
+        "created_at": "Tue Oct 13 02:31:16 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2109834204401872897",
+            "url": "https://pbs.twimg.com/media/HUejB9BXsAE1SzD.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2109834212702306304",
+            "url": "https://pbs.twimg.com/media/HUejCb8WQAA-sg8.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2109834233350934528",
+            "url": "https://pbs.twimg.com/media/HUejDo3XUAAQGHU.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2109834243006230528",
+            "url": "https://pbs.twimg.com/media/HUejEM1XcAA9nMn.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41906236,
+          "friends_count": 127,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 450,
+          "favorite_count": 4007,
+          "reply_count": 237,
+          "quote_count": 61
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241507588,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 450,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109843474682150987",
+      "text": "RT @LinearUncle: 发现宝藏了！目前最牛逼的iPhone Use开源库: ICTRL\n仓库地址在评论区。\n\n直接让电脑或手机上的 Agent 操控 iPhone 里的各种 App，不用去买豆包手机了！惊叹苹果的生态真牛逼！\n\n几个让我惊喜的点：\n1. 比通过 Ma…",
+      "created_at": "Tue Oct 13 03:07:38 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2109834927521055108",
+        "text": "发现宝藏了！目前最牛逼的iPhone Use开源库: ICTRL\n仓库地址在评论区。\n\n直接让电脑或手机上的 Agent 操控 iPhone 里的各种 App，不用去买豆包手机了！惊叹苹果的生态真牛逼！\n\n几个让我惊喜的点：\n1. 比通过 Mac「iPhone 镜像」间接操作手机快很多\n2. Mac、Windows 上的 Coding Agent，都可以通过局域网 Wi-Fi 操控 iPhone\n3. 甚至不需要电脑：在 iPhone 上用 Minis App（也是一个 Coding Agent），就能直接操作这台手机\n\n怎么用：\n1. 安装完成后，直接在对话里点名使用 ictrl-phone-control skill，就能触发手机控制\n\n2. 手机端Minis app第一次使用下面提示词：\n```\n这台 iPhone 已启动 iCTRL，服务地址是 127.0.0.1:8200。\n\n请读取 http://127.0.0.1:8200/skill，按照其中的说明连接本机 iCTRL，然后打开天气，告诉我今天的天气。\n```\n\n不过，目前有一些坑：\n\n① 安装门槛比较高，需要耐心。建议把 README.md 丢给 Agent，让它带着你一步步安装。\n\n② 手机的局域网 IP 变化后，连接可能失败。目前配对信息保存在 ~/.ictrl/token.json，读到的可能还是上次的 IP。这时需要手动把 iCTRL 当前显示的监听地址告诉 Agent。\n\n3. 有些手机app会有防御，由于底层用的是测试框架，例如淘宝app就会检测，频繁让你重新登录，这些app就不要使用了\n\n仓库地址放评论区 👇\n\n附件为看天气，看滴答清单，看宝玉哥今天的推特内容（当然都是可以通过电脑上的网页端获取，这里故意用这些任务，使用手机上的相关app来展现 iCTRL的能力）",
+        "created_at": "Tue Oct 13 02:33:40 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2109832469415616512",
+            "url": "https://pbs.twimg.com/media/HUehc9saYAAMkvG.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2109832576789872640",
+            "url": "https://pbs.twimg.com/media/HUehjNsbgAALn7e.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2109832737305800704",
+            "url": "https://pbs.twimg.com/media/HUehsjqaMAA1cr1.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2109313759407947812",
+          "text": "iCTRL is now open source. ⚡\n\nIt's the iPhone automation tool we built to test Open Minis, and it turns out to be useful for far more than testing.\n\nBuilt on XCUITest, but designed for AI agents: Codex, Claude Code, Hermes, OpenClaw and Minis can tap, type, read the screen and launch apps on your iPhone or iPad, over Wi-Fi or right on the device.\n\n🧠 Ships with its own Skill: an agent that only knows the IP address learns how to drive the phone by itself\n👀 Sees more: built-in OCR reads web views and custom-drawn text\n🤖 Built for unattended runs: errors tell the agent what to do next, so it doesn't get stuck\n🖥️ Watch live: stream the screen to your browser while it works\n📡 Pair once, then go wireless: set it up one time, and from then on your agent drives the phone over Wi-Fi\n\nOne sentence is all it takes: \"Open https://t.co/WNRBoT4TEr on my iPhone and find an eSIM for China.\"\n\nhttps://t.co/N55kqTvRfX",
+          "created_at": "Sun Oct 11 16:02:44 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "2107760574037909504",
+            "name": "Open Minis",
+            "screen_name": "OpenMinis",
+            "description": "Your private on-device AI agent for iOS, Mac and Android. Run shell, browse web and automate tasks. GitHub: https://t.co/BW4nwJarOn",
+            "followers_count": 774,
+            "friends_count": 0,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 18,
+            "favorite_count": 243,
+            "reply_count": 18,
+            "quote_count": 9
+          }
+        },
+        "user": {
+          "id": "1239771839464783872",
+          "name": "LinearUncle",
+          "screen_name": "LinearUncle",
+          "description": "服务器技术专家，曾就职于阿里云 ，有赞，外企，在线教育等；\n👑 AI coding - 职业工程师\n💻 只分享硬核AI编程工具，技巧等",
+          "followers_count": 15241,
+          "friends_count": 1443,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 20,
+          "favorite_count": 102,
+          "reply_count": 14,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 258259,
+        "friends_count": 1755,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 20,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109843015833374800",
+      "text": "Anthropic 测试 AI 自我复制：现在的小模型还做不到，按趋势年底可能追上\n\n先说结论：目前还没有能在网上自己到处复制的 AI。\n\nAnthropic 在一个简化过的实验环境里测了一批开源模型，能完整走完“传到新机器、把模型装好跑起来、再传下一台”整个流程的只有智谱的 GLM-5.2，它太大，塞不进电视盒子这类小设备；塞得进去的小模型都没做到。\n\n按小模型过去的进步速度，Anthropic 估计今年年底就会有小模型达到 GLM-5.2 在这项测试里的水平，之后可能出现能在廉价联网设备上自我复制的 AI。\n\n这项研究是 Anthropic 前沿红队（Frontier Red Team，专门评估模型危险能力的团队）10 月 12 日发布的。\n\n【AI 自我复制是什么意思】\n\n电脑蠕虫是一种不用人操作、自己从一台机器复制到下一台的恶意程序。Anthropic 担心的是 AI 版本的蠕虫：把模型权重（模型本体文件）当成病毒的一部分带着走，每占领一台设备，就在上面把模型跑起来，再由这个模型去找下一个目标。\n\n它和传统病毒的区别在于能自己摸索陌生设备。传统僵尸网络（被黑客控制的大批设备）一般只针对某一类设备写死攻击代码，AI 蠕虫碰到没见过的硬件，可以自己查、自己试。它也没有一个中心开关，很难一次性关掉。\n\n【离真能用还差多远】\n\nAnthropic 把复制拆成四步：找目标、拿到执行权限、在新设备上把模型跑起来、从新设备继续传播。前两步属于黑客攻击，已有其他研究表明小模型能做，这次没有重点测。\n\n重点测的是第三步。在陌生机器上让模型跑起来，要挑对推理软件、装对版本、排查这台机器特有的问题，一步卡住后面全卡住。\n\n测试中，90 亿参数的 Qwen3.5-9B 在 9 类硬件里的 8 类上成功搭起了推理服务。这 9 类硬件大多是云服务器，从 Mac、RTX 4090 到数据中心显卡都有，另有两块实体小开发板，没有电视盒子。\n\n然后是完整流程。研究团队搭了 8 台运行模拟安卓系统的云服务器，放一只蠕虫进去，看它能不能自己扫描网络、连上别的机器、把文件传过去、搭好推理服务、再继续传。\n\nQwen3.5-9B、Gemma4-26B-A4B 等模型每次都一台也没传成；GLM-5.2 在 5 次测试里有 4 次传遍 8 台，1 次传到 7 台。\n\n这个结果有三个前提。\n\n第一，入侵环节被简化到几乎没有难度：这些机器的 ADB 端口（安卓的调试接口）不设密码，连上就能操作，Anthropic 自己说这是现实成功率的上限。不过它也提到，当年的 Mirai 僵尸网络就是靠挨个试厂商默认用户名和密码传开的，现实中很多联网设备的防护未必比这强多少。\n\n第二，蠕虫的“大脑”GLM-5.2 并不在被感染的机器上运行，而是放在另一台服务器上，因为这些机器跑不动这么大的模型。它在每台机器上搭起来的是更小的 Llama3.1-8B。实验想说明的是：如果一个 80 亿参数的小模型有 GLM-5.2 的本事，它就能把自己装到新机器上。\n\n第三，“年底追上”是根据一个通用能力指数（ECI）的趋势线推算的。通用能力只能间接反映复制能力，Anthropic 也说这只是粗略估计。\n\n【为什么盯上电视盒子】\n\n模型要自己跑起来，得有能跑模型的设备。数据中心防护严，家用和小企业的联网设备便宜、常年在线、安全措施少，是更容易下手的目标。Anthropic 举的典型是白牌安卓电视盒子：这类盒子多用安卓开源代码改的系统，厂商不额外加安全功能，内存 1 到 4GB。此前的 Kimwolf 僵尸网络就感染了 200 多万台设备，主要是这类盒子。\n\n一台盒子跑不动模型，可以把模型切成几段，分给多台盒子接力计算。Anthropic 买了 15 台约 55 美元、4GB 内存的白牌安卓电视盒子，把 Gemma4-26B-A4B 拆开分到上面，跑出了每秒 0.39 个 Token。\n\n这个演示是研究人员自己部署的，用来说明这类设备凑在一起算力够用。文中还提到，智能冰箱、智能烤箱、扫地机器人、割草机也能分担一段模型，自带 AI 芯片的监控摄像头、视频会议设备会更有吸引力。\n\n【真出现了会怎样】\n\n传得慢。按电视盒子上的实测速度，Qwen3.5-9B 完成一次推理环境搭建要 28 到 51 小时，Gemma4-26B-A4B 要 71 到 150 小时。Anthropic 算了一笔账：如果像 Kimwolf 那样感染 200 万台盒子，每 15 台跑一份 Gemma4-26B-A4B，大约有 13.3 万个副本，总算力最多相当于 40 块 H100 显卡。它把这种蠕虫比作黏菌或果蝇群，数量翻一倍要好几天。\n\n会积累经验。实验让 Qwen3.5-9B 每一代把试过的办法和踩过的坑写成笔记传给下一代，搭建成功率从第一代的 45% 升到后几代的 61% 到 84%。给小模型配一个 Opus 4.8 当顾问则没有明显帮助，小模型不知道该问什么。\n\n防得住一部分。大量设备互传几个 GB 的模型文件、设备之间持续高流量通信，在运营商的流量监控里会很显眼，传得越快越容易暴露。当年清理 Mirai 时，有运营商把被感染用户的网络隔离起来并通知他们处理，14 天清掉了 92% 的感染，不通知的只清掉 74%。\n\nAnthropic 认为类似做法对 AI 蠕虫也有效，但要彻底清除，得每家有感染的运营商都配合。设备厂商可以从源头减少目标，比如在英国市场，联网设备用默认密码已经不合规。\n\n原文没有给普通用户的具体建议。从文中描述的攻击途径推断，家里来路不明的廉价电视盒子、没改过默认密码的联网设备，是最值得留意的。",
+      "created_at": "Tue Oct 13 03:05:48 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2109842725000384512",
+          "url": "https://video.twimg.com/amplify_video/2109842725000384512/vid/avc1/2040x816/gvq9Py6KJCIE_9BK.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2109753213511704873",
+        "text": "Excited to share a research blog post that Daniel Freeman (@bucketofkets) and I have been working on for the past few months:\n\nhttps://t.co/olWBKIGdMh",
+        "created_at": "Mon Oct 12 21:08:58 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1483274470777257987",
+          "name": "William Zhou",
+          "screen_name": "willzhou97",
+          "description": "Frontier Red Team @ Anthropic. Views are my own!",
+          "followers_count": 672,
+          "friends_count": 28,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 47,
+          "favorite_count": 360,
+          "reply_count": 20,
+          "quote_count": 29
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 258259,
+        "friends_count": 1755,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 68,
+        "reply_count": 61,
+        "quote_count": 7
+      }
+    },
+    {
+      "id": "2109832196521357635",
+      "text": "RT @cb_doge: BREAKING: South Korea’s Gyeongbuk government brings @Starlink to its fire service to help protect lives in remote mountain are…",
+      "created_at": "Tue Oct 13 02:22:49 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2109786092509818886",
+        "text": "BREAKING: South Korea’s Gyeongbuk government brings @Starlink to its fire service to help protect lives in remote mountain areas. 🇰🇷\n\nGyeongbuk Fire Headquarters has equipped a command vehicle with Starlink for a pilot, helping crews share footage and coordinate emergency responses during wildfires, floods and typhoons.",
+        "created_at": "Mon Oct 12 23:19:37 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2109785707581730816",
+            "url": "https://video.twimg.com/amplify_video/2109785707581730816/vid/avc1/1080x1080/8RSTWadcfJoAJxiy.mp4?tag=29",
+            "bitrate": 8768000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1907882,
+          "friends_count": 1060,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 290,
+          "favorite_count": 1863,
+          "reply_count": 145,
+          "quote_count": 23
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241507588,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 290,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109824758888165605",
+      "text": "RT @SpaceX: Deployment of 27 @Starlink satellites confirmed",
+      "created_at": "Tue Oct 13 01:53:15 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2109819027912818930",
+        "text": "Deployment of 27 @Starlink satellites confirmed",
+        "created_at": "Tue Oct 13 01:30:29 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41906236,
+          "friends_count": 127,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 376,
+          "favorite_count": 4092,
+          "reply_count": 233,
+          "quote_count": 36
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241507588,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 376,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109823486428426348",
+      "text": "RT @dashiAIxz: 很多人在问，也分享一下关于 Opus5.5 做视频剪辑的经验\n\n我会分几个步骤去做这个事情\n\n准备工作是最重要的部分，把口播脚本和对应案例资料等都做好对应关系整理在一个飞书文档里。形式可以参照图1\n\n有一些分镜有自己想法的也会整理进去，包括参考的表…",
+      "created_at": "Tue Oct 13 01:48:12 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2108785099663867916",
+        "text": "很多人在问，也分享一下关于 Opus5.5 做视频剪辑的经验\n\n我会分几个步骤去做这个事情\n\n准备工作是最重要的部分，把口播脚本和对应案例资料等都做好对应关系整理在一个飞书文档里。形式可以参照图1\n\n有一些分镜有自己想法的也会整理进去，包括参考的表达方式或思路\n\n然后会先让 Opus 按照自己的理解剪辑开头 15s 的部分，让他重点打磨视觉细节和动画效果。这样能最大程度让他把视频的视觉质感提上来，试过很多次比一次成片的效果要好很多（图2）\n\n这里再补充一个关键的细节，可以上传一些视觉风格的参考图给它，能很大程度上避免 Claude 模型的设计同质化问题\n\n完成之后再让他生成完整的视频剪辑，再整理一个文档，让团队其他人提交各自的修改意见，让 Claude 自己读自己改就可以，他对于细节理解还是很到位的。修改流程走个一到两轮就差不多了，形式大概参照图 3\n\n配音旁白试了一下 Gemini 3.8 Flash 的 TTS，跟我自己的语调和情绪差距比较大，所以最后还是换成了自己录制的版本。如果不关心这个问题的话 TTS 模型还是很不错的\n\n另外频繁的跟飞书互动需要装个飞书 CLI，直接告诉 Claude 让他帮你安装即可",
+        "created_at": "Sat Oct 10 05:02:01 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2108782692389265408",
+            "url": "https://pbs.twimg.com/media/HUPmr5haoAAZsse.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2108783370125836288",
+            "url": "https://pbs.twimg.com/media/HUPnTWSaAAAqbKO.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2108783884238524416",
+            "url": "https://pbs.twimg.com/media/HUPnxRgbEAA4fpQ.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2108485022701482252",
+          "text": "@dashiAIxz 请问让opus剪辑提示词是啥😂\n我尝试只让opus剪辑，效果还是做的很差",
+          "created_at": "Fri Oct 09 09:09:37 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1667439202357899267",
+            "name": "雪踏乌云",
+            "screen_name": "Pluvio9yte",
+            "description": "📌 聚焦：AI & Vibe coding & Prompt & Agent \n🌏 在做：创业 | Web出海 | Web3\n🌊 持续分享AI编程、AI工具、出海干货和创业经验\n✉️ 合作私信",
+            "followers_count": 49439,
+            "friends_count": 1189,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "reply_count": 2,
+            "quote_count": 1
+          }
+        },
+        "user": {
+          "id": "1958453593893482496",
+          "name": "大师的AI小灶",
+          "screen_name": "dashiAIxz",
+          "description": "将复杂技术转化为可复用流程！\n开发了一个PPT skill：chuspeeism/dashiAI-ppt-skill\n抖音/小红书/B站：大师的AI小灶",
+          "followers_count": 4090,
+          "friends_count": 206,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 11,
+          "favorite_count": 67,
+          "reply_count": 12,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 258259,
+        "friends_count": 1755,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 11,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2109822906670682387",
       "text": "RT @ErikaDonalds: @thejakebuzz I am adding new use cases to Grok @bot daily. \n\nKitchen - gives me recipes to match what I have in stock and…",
@@ -5297,6 +6155,153 @@
       }
     },
     {
+      "id": "2109245455586492900",
+      "text": "RT @DavidSHolz: Here are my favorite short science fiction stories and omg they're literally so short why haven't you read them already?! s…",
+      "created_at": "Sun Oct 11 11:31:19 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "1783966435406164040",
+        "text": "Here are my favorite short science fiction stories and omg they're literally so short why haven't you read them already?! seriously just Google them\n\n1) \"They're Made out of Meat\" by Terry Bison\n2) \"The Last Question\" by Isaac Asimov\n3) \"I Sexually Identify as an Attack Helicopter\" by Isabel Fall\n4) \"True names\" by Vernor Vinge\n5) \"Giants\" by Peter Watts\n6) \"The Colonel\" by Peter Watts",
+        "created_at": "Fri Apr 26 21:08:37 +0000 2024",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "535358285",
+          "name": "David",
+          "screen_name": "DavidSHolz",
+          "description": "founder @midjourney, previously founded leap motion, before that was at nasa and max planck - vibeposting @davidvibesonly",
+          "followers_count": 121418,
+          "friends_count": 10917,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 216,
+          "favorite_count": 3054,
+          "reply_count": 195,
+          "quote_count": 27
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241507585,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 216,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109174479582564542",
+      "text": "RT @lexi_labs: 我来祛魅一下，所谓的硅谷大厂都在清退华人工程师的事。\n\n涉密企业和项目要求clearance，这是正常的商业操作。\n\n我最近跟 SpaceX 和 Anduril 的recruiter 电话，他们的第一个问题，就是你能不能过 clearance，美国…",
+      "created_at": "Sun Oct 11 06:49:17 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2108965180285862140",
+        "text": "我来祛魅一下，所谓的硅谷大厂都在清退华人工程师的事。\n\n涉密企业和项目要求clearance，这是正常的商业操作。\n\n我最近跟 SpaceX 和 Anduril 的recruiter 电话，他们的第一个问题，就是你能不能过 clearance，美国版的政审。我不是公民过不了，于是也就不用接着聊了。\n\n以前公司的 ITAR 跟 DOD 的项目，我也是不能染指的，只能由组里过了clearance 的同事去做。\n\n把这说成排华，简直莫名其妙。",
+        "created_at": "Sat Oct 10 16:57:36 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1373764522482143234",
+          "name": "Lexi 勒西",
+          "screen_name": "lexi_labs",
+          "description": "Tech/Finance advice and vibes\n古法发贴，第一代可能也是最后一代程序员",
+          "followers_count": 16093,
+          "friends_count": 415,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 10,
+          "favorite_count": 165,
+          "reply_count": 41,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 258259,
+        "friends_count": 1755,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 10,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109156083302539363",
+      "text": "RT @anothercohen: I don't think I know a single person who owns a Tesla and drives anymore. They use full self driving 90%+ of the time.…",
+      "created_at": "Sun Oct 11 05:36:11 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2109015482657603703",
+        "text": "I don't think I know a single person who owns a Tesla and drives anymore. They use full self driving 90%+ of the time. \n\nIncredible to think that our kids are going to grow up in a future where all they will know is autonomous driving",
+        "created_at": "Sat Oct 10 20:17:29 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "557440724",
+          "name": "Alex Cohen",
+          "screen_name": "anothercohen",
+          "description": "Member of Founding Staff @hellopatient | Previously: Led consumer and growth product @carbonhealth | Hobbies include getting fired constantly | Mostly satire",
+          "followers_count": 231796,
+          "friends_count": 1100,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 340,
+          "favorite_count": 5887,
+          "reply_count": 772,
+          "quote_count": 76
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241507585,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 340,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
       "id": "2109155867983786382",
       "text": "I just asked Grok @Bot to research the most fun Lego Star Wars kits for young kids and order them. As easy as that. https://t.co/5IKVoqvuhb",
       "created_at": "Sun Oct 11 05:35:19 +0000 2026",
@@ -5355,6 +6360,199 @@
         "favorite_count": 15499,
         "reply_count": 2688,
         "quote_count": 679
+      }
+    },
+    {
+      "id": "2109154098079535390",
+      "text": "RT @cb_doge: Nearly one in three Indian schools lacked internet access in the 2025–26 academic year.\n\nThe Education Ministry’s UDISE+ repor…",
+      "created_at": "Sun Oct 11 05:28:17 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2109148572176486785",
+        "text": "Nearly one in three Indian schools lacked internet access in the 2025–26 academic year.\n\nThe Education Ministry’s UDISE+ report recorded internet facilities in 67.4% of schools. It lists 14,66,682 schools nationwide, with internet available in 9,89,191. That leaves 4,77,491 schools without it.\n\nStarlink could help connect remote schools and give teachers and students access to more learning resources. A child’s opportunities should not depend on whether a broadband cable reaches their classroom. \n\nStarlink has already connected more than 6 million students worldwide. This is another powerful reason to support Starlink in India.",
+        "created_at": "Sun Oct 11 05:06:20 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2109148443998588928",
+            "url": "https://video.twimg.com/amplify_video/2109148443998588928/vid/avc1/1080x1080/-BmF-n0mBJrhTEyV.mp4?tag=29",
+            "bitrate": 8768000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1907882,
+          "friends_count": 1060,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 425,
+          "favorite_count": 2522,
+          "reply_count": 1551,
+          "quote_count": 177
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241507585,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 425,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109151666020794711",
+      "text": "用 REA 小试牛刀逆向了 Claude Slides 的 Slides 编辑器，几乎完整功能。（图1）\n\n我的用法很简单，不一定是最佳实践，仅供参考：\n\n1. 先去 Claude Slides 上把核心的脚本和样式表下载下来（图2）\n2. 按照 REA 官网的说明让 Codex 安装 REA\n3. 使用 REA Skill 去逆向混淆后的代码（图3）\n4. 用不了太久就能有一个目录结构不错的代码，但其实里面还挺乱的\n5. 然后再用 Claude Code 5.5 去重写了一遍就变成结构良好类型完整的代码了\n\n至于提示词，我没有直接逆向，而是换了个思路，先做个 Slides，然后在对话里面，说我要做一个 slides skill，让它帮我实现一个，要做的跟它的一样好，这样子出来的提示词，和原始的提示词肯定不一样，但是做出来的效果没什么差别。（图4是我用同样方法问 Claude Dashboard 的提示词）\n\n完整的代码参考：https://t.co/I25w0FGgkV",
+      "created_at": "Sun Oct 11 05:18:37 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2109147774511878146",
+          "url": "https://pbs.twimg.com/media/HUUyueaWEAI3toM.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2109148038253940736",
+          "url": "https://pbs.twimg.com/media/HUUy907WkAAijNk.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2109148543478894592",
+          "url": "https://pbs.twimg.com/media/HUUzbPCXkAAoJUl.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2109151442808238080",
+          "url": "https://pbs.twimg.com/media/HUU2D_4WcAAM2DJ.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2108794629172682783",
+        "text": "REA：让 AI 智能体帮你逆向没有源码的软件\n\n开源项目 REA（Reverse Engineer Anything）把逆向分析工具接到了 Claude Code、Codex、Cursor 这类 AI 编程智能体上。看到别人 App 里有个好功能，可以让智能体去拆这个程序，讲清楚功能是怎么实现的，附上证据，再在你自己的项目里写一个类似的。逆向分析指的是手里没有源代码，从编译好的程序反推它是怎么写的。\n\nREA 本身是一个 MCP 服务。MCP 是 AI 智能体调用外部工具的通用接口，接上以后，智能体在对话里就能直接调用 REA 的分析功能。安装只需一行命令 npx rea-agents setup，它会注册到 Claude Code、Codex、Cursor、Gemini CLI、Grok Build 等智能体里，改配置前会先备份并让你确认。不用智能体的话，也可以在终端里直接跑命令。\n\n能分析的东西很多。原生程序（直接编译成机器码的软件）要借助 Hopper、Ghidra 或 IDA 这几款反汇编工具，把机器码还原成汇编和近似 C 语言的伪代码。Electron 应用（用网页技术做的桌面软件，比如 Notion）可以直接拆开安装包里的 ASAR 归档文件，理清模块和进程间通信，不需要额外工具。此外还支持 .NET 程序、安卓 APK、固件、网站、抓包记录、以太坊合约字节码，以及在 Linux 和 macOS 上记录程序运行时的行为。\n\n分析在本机进行，REA 不上传目标程序，但分析结果会交给智能体背后的模型服务商，数据怎么处理看各家政策。\n\n项目给了三个案例。一是经典打砖块游戏 DX-Ball：从一次播放音效的调用，追到根据球的位置计算左右声道的函数，把不完整的伪代码还原成 C 代码，3205 组测试结果和原版一致，编译出的 63 个字节也和原版完全相同。二是 Notion 桌面版：追踪复制粘贴从界面一路经过预加载脚本、进程间通信到主进程的完整链路。三是日本老电脑 PC-98 上的游戏《东方幻想乡》（TH04）：从 16 位指令里还原出弹幕子弹环的角度算法。\n\n对安全研究员、做老游戏复刻和软件保存的人来说，以前要自己对着反汇编工具一行行读、一层层追调用，现在可以让智能体先追，人来核对它给出的证据。普通开发者想研究竞品某个功能的做法，也多了一条路。\n\nREADME 显示项目在 GitHub 上已有 5 万星。npm 包今年 7 月首次发布，最新的 6.3.0 版今天刚发。\n\n使用前注意两点。项目声明只支持合法的逆向研究，授权和合规由使用者自己负责，逆向别人的软件可能违反用户协议或版权法规。项目还说明从未发行或背书任何加密货币，借用 REA 名字的代币都与它无关。\n\nhttps://t.co/I6ZzxyeHhC",
+        "created_at": "Sat Oct 10 05:39:53 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2108794476068012033",
+            "url": "https://pbs.twimg.com/media/HUPxZzJXAAEn8rZ.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 258259,
+          "friends_count": 1755,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 164,
+          "favorite_count": 981,
+          "reply_count": 142,
+          "quote_count": 36
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 258259,
+        "friends_count": 1755,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 125,
+        "favorite_count": 842,
+        "reply_count": 101,
+        "quote_count": 21
+      }
+    },
+    {
+      "id": "2109147965537333266",
+      "text": "RT @cb_doge: Elon Musk in dad mode. ♥️ https://t.co/0sy286NJ6y",
+      "created_at": "Sun Oct 11 05:03:55 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2109144752285442048",
+          "url": "https://pbs.twimg.com/media/HUUv-jvaYAA1M2i.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2109144761131270369",
+        "text": "Elon Musk in dad mode. ♥️ https://t.co/0sy286NJ6y",
+        "created_at": "Sun Oct 11 04:51:11 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2109144752285442048",
+            "url": "https://pbs.twimg.com/media/HUUv-jvaYAA1M2i.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1907882,
+          "friends_count": 1060,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1430,
+          "favorite_count": 22131,
+          "reply_count": 1287,
+          "quote_count": 147
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241507585,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1430,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
       }
     },
     {
@@ -10473,6 +11671,62 @@
         "favorite_count": 187,
         "reply_count": 55,
         "quote_count": 5
+      }
+    },
+    {
+      "id": "2108409240847016347",
+      "text": "Claude 新增数据看板和动画讲解，文档、幻灯片、设计功能结束测试\n\nAnthropic 今天给 Claude 加了两个新功能。Claude Dashboards 能把公司数据做成自动更新的数据看板，Claude Motion 能把报告、图表做成几十秒的动画讲解。两者都在测试阶段。\n\nClaude Dashboards 现在就能在 https://t.co/vefasn3rYt 网页版的 Artifacts 里面用了，但是 Claude Motion 目前只对 Team 和 Enterprise 套餐开放。\n\n此前一直在测试的 Docs（文档）、Slides（幻灯片）、Design（设计）同时转正，这三个功能现在所有套餐都能用，包括免费版。\n\n【1】数据看板：用大白话查公司数据\n\n以前想看公司数据，要么给数据团队提需求排队，要么自己写 SQL（数据库查询语言）。现在把 Claude 连上公司的数据平台，比如 BigQuery、Snowflake、Databricks、Amazon Redshift、ClickHouse，或者 Salesforce 这类客户管理系统，直接问“这周注册量和上个月比怎么样”，Claude 会写查询、出图表，做成一个看板。数据变了，看板跟着更新。\n\n每个数字都能点开看背后的查询语句，也能让 Claude 解释是怎么算出来的，每张图还标着数据最后刷新的时间。用的人可以自己核对 AI 有没有算错。\n\n它适合快速、探索性的问题。需要深入分析时，可以把看板直接发到 Amplitude、Grafana、Hex、Mixpanel、PostHog 等分析工具里接着做，Looker、Tableau 等后续支持。付费套餐可用。\n\n【2】动画讲解：让幻灯片里的内容动起来\n\nClaude Motion 能把季度报告做成全员大会上放的 30 秒讲解动画，给董事会幻灯片里的图表加动效，或者做一段给新客户看的产品操作演示。在对话框输入“/motion”就能调出来。做好后可以在编辑器里改，也可以让 Claude 改，最后导出 MP4。\n\n它不用视频生成模型。Claude 写的是代码，让你的文字、图表、形状、图片动起来，画面里不会出现 AI 生成的人物和素材，每个字、每个数字、每段时长都能改。所以它和 Sora、可灵这类视频生成产品用途不同，适合讲清楚自己手里的内容。需要再加工，可以导入 Adobe、Descript、HeyGen、Runway 等工具。\n\nClaude Motion 目前只对 Team 和 Enterprise 套餐开放。\n\n【3】文档、幻灯片、设计：免费用户也能用\n\n这三项功能上线以来，用户已经用它们做了超过 4500 万份文档、幻灯片和设计稿。这次去掉测试标签，同时补了几项能力：团队成员和 Claude 可以一起编辑同一份文件；幻灯片、设计、看板和动画可以分享给公司外的人，或者任何拿到链接的人（需管理员允许）；导出的 PowerPoint 和 PDF 能保留排版，幻灯片能直接转成可编辑的 Google Slides；手机 App 里也能修改。企业版新增 CMEK 支持，也就是企业可以用自己管理的密钥加密数据。\n\n【4】Claude Design 独立站 12 月 14 日关闭\n\nClaude Design 原本有独立网址 https://t.co/v6it9PiXTL，9 月 16 日起已经能在普通 Claude 对话里使用。Anthropic 决定把两者合并，独立站开到 12 月 14 日。\n\n用过独立站的团队要注意三点。设计系统可以在 Claude 的 Artifacts 页面一键迁移。项目在关闭前照常可用。和 Claude 的聊天记录、项目评论不会迁过来，公开分享链接到期也会失效，需要的话提前保存。\n\n企业管理员注意：看板和动画默认关闭，要在组织设置里手动开启；文档、幻灯片、设计会在 10 月 15 日默认开启。",
+      "created_at": "Fri Oct 09 04:08:30 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2108271552991252810",
+        "text": "Claude Dashboards and Claude Motion are in beta today.\n\nAsk Claude to turn your data into live dashboards and your ideas into animated explainers. https://t.co/V3fU4lMnzp",
+        "created_at": "Thu Oct 08 19:01:22 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2108268464544661507",
+            "url": "https://video.twimg.com/amplify_video/2108268464544661507/vid/avc1/1920x1080/2ox4n4hS5rv3zXUb.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1943306828697550848",
+          "name": "Claude",
+          "screen_name": "claudeai",
+          "description": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+          "followers_count": 1898486,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4577,
+          "favorite_count": 60116,
+          "reply_count": 1148,
+          "quote_count": 2586
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 258259,
+        "friends_count": 1755,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 12,
+        "favorite_count": 88,
+        "reply_count": 57,
+        "quote_count": 6
       }
     },
     {

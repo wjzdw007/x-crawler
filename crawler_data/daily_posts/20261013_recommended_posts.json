@@ -1,12 +1,429 @@
 {
   "date": "20261013",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-10-13T08:53:22.515028",
-  "tweet_count": 220,
-  "unique_tweet_count": 220,
-  "total_crawled": 400,
-  "duplicates_removed": 180,
+  "last_crawl_time": "2026-10-13T17:20:20.102905",
+  "tweet_count": 228,
+  "unique_tweet_count": 228,
+  "total_crawled": 420,
+  "duplicates_removed": 192,
   "tweets": [
+    {
+      "id": "2110053992554238391",
+      "text": "Google 发布 Gemini 4 Argon：Pro 和 Ultra 会员今天可用，API 每百万 token 输入 2 美元、输出 10 美元\n\nGoogle 10 月 13 日发布 Gemini 4 Argon，这是 Gemini 4 系列的第一个模型，主打写代码、金融、法律、网络安全和科研这类需要很多步骤的复杂任务。系列里的其他模型，Google 说之后再推出。\n\n【谁能用，在哪用】\n\n普通用户：订阅了 Google AI Pro 或 Ultra 的，今天起可以在 Gemini App 和 Google 搜索的 AI 模式里用。免费用户暂时用不上。\n\n开发者和企业：走 Gemini API 的付费层，入口是 AI Studio 和 Google Cloud 上的 Gemini 平台，Android Studio 里也能调用。API 免费层不提供这个模型。\n\nGoogle 的 AI 编程工具 Antigravity 里也上了 Argon，个人用户要 Ultra 订阅才能用。\n\n另有两个申请通道：科研人员可以申请 6 个月免费的 Antigravity 最高用量档，共 1 万个名额，按资格和容量筛选；做网络安全防御的团队可以申请加入 Google 的 Fairwind 计划，拿到去掉网络安全限制的版本。\n\n【API 多少钱】\n\n按每 100 万 token（模型处理文字的基本单位）计价。现在是引入价：输入 2 美元，输出 10 美元，输出包括模型思考时消耗的 token。重复使用的输入命中缓存，只收 5%，也就是 0.1 美元。\n\n引入价只到 11 月 30 日。12 月 1 日起全部翻倍：输入 4 美元，输出 20 美元，缓存 0.2 美元。不急着要结果的任务可以走批量（Batch）或 Flex 档，价格是标准价的一半。官方定价页没有按提示词长度分档，输入再长也是同一个单价。\n\n【100 万 token 统一上限是什么意思】\n\nArgon 一次能处理 1,048,576 个 token，输入、思考和输出共用这一份额度。比如丢进去 60 万 token 的代码和文档，模型最多还能再产出约 44 万 token，思考也算在里面。\n\n普通调用单次最多输出 65,536 个 token。要更长的结果，得按开发者文档改用“长输出”模式：请求设成后台任务，服务器每段生成约 6.4 万 token，接着上一段往下写，直到写完或者用完你设的上限，一个任务最长跑 24 小时。这是给让模型长时间自己推理、成批写代码准备的，普通聊天用不到。\n\n文档还提醒，接力时每一段都会把前面的内容重新算进输入，用量报表里的输入 token 会比实际内容多出不少。这部分怎么计费，文档没写。\n\n【跟别家比怎么样】\n\n能独立核对的是第三方评测机构 Vals AI 的 Vals Index，它测模型在金融、写代码、法律、税务等工作上的表现。10 月 12 日更新的榜单上，Argon 以 68.90% 排第一，后面是 Anthropic 的 Claude Sonnet 5.5（67.04%）和 Claude Opus 5.5（66.97%），领先不到两个百分点。\n\n其他成绩是 Google 自己公布的。比如测物理和空间理解的 ERQA 基准，Argon 得分 87%，Google 说高于其他所有前沿模型；在 Gray Swan 的提示词注入测试里（把恶意指令藏在网页、邮件中，诱导智能体干别的事），15 次针对性攻击的成功率降到 0.7%。\n\n日常用的变化，Google 说 Argon 回答更直接，少了含糊其辞和重复，也更听从文风要求。这是跟自家旧版 Gemini 比的。\n\n【实际用起来什么样】\n\n以下都是 Google 自己的案例。\n\nGoogle 开源的智能体开发框架 ADK 有约 20 万行 Python 代码。团队把项目里的规则文件和一段话的目标交给 Argon：在不破坏现有应用的前提下削减框架开销。Argon 自己跑了一夜，找出的优化已经合并进代码库，长会话下准备会话数据的时间缩短 40%，首次导入快了 21%。\n\nChrome 团队用它重构了 Chromium 的老代码。Chromium 有 4000 万行代码，其中一个约 600 万行的旧文件夹里混着各种浏览器功能，Argon 帮团队把核心的网页处理逻辑拆出来，改动涉及几百个文件，Google 说几个月的活几周干完。按 Google 的说法，这为网页在标签页、侧边栏和浮窗之间移动而不用重新加载打下基础，还能消除一整类崩溃。\n\nGoogle 还说，内部工程师在 Antigravity 里用 Argon 后，智能体提交的代码量增加了 35% 以上，代码回滚少了近三分之一。",
+      "created_at": "Tue Oct 13 17:04:09 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110038898009407584",
+        "text": "Gemini 4 Argon is here.\n\nIt’s available globally today for developers and enterprises in the paid tier of the Gemini API and the Gemini platform, for Ultra subscribers in Google Antigravity, and Ultra and Pro subscribers in the Gemini app and Search.\n\nHope you all enjoy it! https://t.co/2jyAgqoylU",
+        "created_at": "Tue Oct 13 16:04:10 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2110037058651860992",
+            "url": "https://video.twimg.com/amplify_video/2110037058651860992/vid/avc1/1920x1080/UhhqkEMBeS6RBMth.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "14130366",
+          "name": "Sundar Pichai",
+          "screen_name": "sundarpichai",
+          "description": "CEO, Google and Alphabet",
+          "followers_count": 11920008,
+          "friends_count": 199,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 747,
+          "favorite_count": 7896,
+          "reply_count": 541,
+          "quote_count": 462
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 258504,
+        "friends_count": 1755,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 8,
+        "reply_count": 4,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110045258889236563",
+      "text": "ChatGPT 的 Dots 完全是因为我每天都要用 Codex/ChatGPT App，所以就一直在哪里，偶尔给你发个消息你就会去看一眼，慢慢就习惯了。\n\nGrokbot 就是有时候没想起来要去打开它，毕竟开太多 Bot 也挺占资源的，但我还挺喜欢它对 X 的集成，给我推送的 X 相关的信息比 Dots 靠谱。\n\n至于 Muse，我实在没电脑资源和注意力再去装一个 Bot 了。",
+      "created_at": "Tue Oct 13 16:29:27 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110020524088934754",
+        "text": "Muse 用下来完成度第一\n但为啥 Grokbot 留存这么低呢？ https://t.co/j4Ni70UfhT",
+        "created_at": "Tue Oct 13 14:51:09 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2110020323336929280",
+            "url": "https://pbs.twimg.com/media/HUhMTgFaQAAaz2F.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "6782882",
+          "name": "Orange AI",
+          "screen_name": "oran_ge",
+          "description": "Cola/ListenHub 创始人 & CEO | ex MiniMax 海螺 AI PM",
+          "followers_count": 184607,
+          "friends_count": 619,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 12,
+          "reply_count": 28,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 258504,
+        "friends_count": 1755,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 13,
+        "reply_count": 13,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109966013714575870",
+      "text": "RT @Av1dlive: i'm seriously considering switching full-time over to grok bot.\n\nit's the closest thing i've found to hiring a real jarvis. i…",
+      "created_at": "Tue Oct 13 11:14:33 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2109962443850133930",
+        "text": "i'm seriously considering switching full-time over to grok bot.\n\nit's the closest thing i've found to hiring a real jarvis. i basically run a one-person company now.\n\n62 agents. 29 scheduled routines. they write my morning newsletter, pull my market news and audit their own team for duplicate work.\n\n[here is every grok bot that i run ]\n\n@bot",
+        "created_at": "Tue Oct 13 11:00:22 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2109962199318085632",
+            "url": "https://pbs.twimg.com/media/HUgXcPPbQAAfBhP.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1713062826175299584",
+          "name": "Avid",
+          "screen_name": "Av1dlive",
+          "description": "I write, read and build | I normie-maxx | builder of agentic-stack (now on MacOS) | upcoming PhD student",
+          "followers_count": 28672,
+          "friends_count": 410,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 207,
+          "favorite_count": 1739,
+          "reply_count": 236,
+          "quote_count": 37
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241510744,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 207,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109960773116252577",
+      "text": "RT @jerrod_lew: Grok Bot is the strongest personal agent I've used yet.\n\nJust the usage on it increases so fast, and so I'm afraid to give…",
+      "created_at": "Tue Oct 13 10:53:44 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2109550671813128266",
+        "text": "Grok Bot is the strongest personal agent I've used yet.\n\nJust the usage on it increases so fast, and so I'm afraid to give it too much.\n\nReally hope there are some solutions to the overall 𝕏, Grok, Grok Bot subscriptions so they role into one.",
+        "created_at": "Mon Oct 12 07:44:08 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1655275064126853121",
+          "name": "Jerrod Lew",
+          "screen_name": "jerrod_lew",
+          "description": "Artist, creator and educator.\nTeaching you to tell stories without limits.",
+          "followers_count": 19521,
+          "friends_count": 3224,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 133,
+          "favorite_count": 1378,
+          "reply_count": 140,
+          "quote_count": 20
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241510744,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 133,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109955246923641259",
+      "text": "Grok @Bot is like hiring a super smart employee",
+      "created_at": "Tue Oct 13 10:31:46 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2108033488192774499",
+        "text": "As of tomorrow I will have brought 71 of my large clients to @Grok @Bot at their corporations. It has not failed to revolutionize each department across a wide spectrum of companies.\n\nNext week I hold a symposium for executives to map out the future.\n\nThis is the most important AI tool released thus far.",
+        "created_at": "Thu Oct 08 03:15:23 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2108033485084786688",
+            "url": "https://pbs.twimg.com/media/HUE9SS0bgAAJeD9.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "101584084",
+          "name": "Brian Roemmele",
+          "screen_name": "BrianRoemmele",
+          "description": "we can only see what we think is possible...",
+          "followers_count": 491979,
+          "friends_count": 44268,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 123,
+          "favorite_count": 2164,
+          "reply_count": 137,
+          "quote_count": 35
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241510744,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 785,
+        "favorite_count": 5490,
+        "reply_count": 1423,
+        "quote_count": 150
+      }
+    },
+    {
+      "id": "2109954637893964077",
+      "text": "RT @Space_Station: The @SpaceX Dragon is counting down to its launch at 6:33 a.m. EDT today to resupply the Expedition 75 crew with over 6,…",
+      "created_at": "Tue Oct 13 10:29:21 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2109951026300436803",
+        "text": "The @SpaceX Dragon is counting down to its launch at 6:33 a.m. EDT today to resupply the Expedition 75 crew with over 6,300 pounds of science, supplies, and roll-out solar arrays. https://t.co/lCi3E8O5e0",
+        "created_at": "Tue Oct 13 10:15:00 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1451773004",
+          "name": "International Space Station",
+          "screen_name": "Space_Station",
+          "description": "NASA's page for the latest mission and science updates from the International Space Station.",
+          "followers_count": 8888016,
+          "friends_count": 156,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 241,
+          "favorite_count": 1522,
+          "reply_count": 144,
+          "quote_count": 14
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241510744,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 241,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109954513050505575",
+      "text": "RT @melvindvivas: https://t.co/5ttM9rgnMV",
+      "created_at": "Tue Oct 13 10:28:51 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": {
+        "id": "2109876908934787127",
+        "text": "https://t.co/5ttM9rgnMV",
+        "created_at": "Tue Oct 13 05:20:29 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1946635320797347840",
+          "name": "Melvin Vivas",
+          "screen_name": "melvindvivas",
+          "description": "AI Coding, Agents, Local AI — RTX 3090\nOpen source work https://t.co/sGlqVGLMTO\nAI Engineering https://t.co/MtiGBNIqKS\nCollabs https://t.co/h82VXTQvmO",
+          "followers_count": 6270,
+          "friends_count": 981,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 100,
+          "favorite_count": 657,
+          "reply_count": 37,
+          "quote_count": 7
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241510744,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 100,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2109953737569505669",
+      "text": "RT @SpaceX: Watch Falcon 9 launch Dragon to the @Space_Station https://t.co/wkJ64eJSG4",
+      "created_at": "Tue Oct 13 10:25:46 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2109950760054403371",
+        "text": "Watch Falcon 9 launch Dragon to the @Space_Station https://t.co/wkJ64eJSG4",
+        "created_at": "Tue Oct 13 10:13:56 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "34743251",
+          "name": "SpaceX",
+          "screen_name": "SpaceX",
+          "description": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
+          "followers_count": 41907672,
+          "friends_count": 127,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 668,
+          "favorite_count": 4231,
+          "reply_count": 375,
+          "quote_count": 96
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241510744,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 668,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2109923163580567614",
       "text": "REA 案例：用 Codex + REA 下载微信视频号视频\n\n仅作为案例分析，真要下载视频应该有更成熟的方案。\n\n提示词参考截图，很简单：\n> Use REA，帮我下载我微信打开正在播放的视频号的视频\n\n但一轮对话搞不定，需要根据提示多步才能完成。\n\nCodex 最终给电脑配了一个本地代理服务器搞定的，要配合着输入几次密码安装证书。\n\n而且它还写了一个解密脚本去解密下载后的视频，不知道它是训练过相关开源项目还是 REA 帮分析出来的。\n\n如果它能稳定下载后，可以让它把下载方法、流程整理成一个 Skill，这样以后就可以用这个 Skill 去做了。",

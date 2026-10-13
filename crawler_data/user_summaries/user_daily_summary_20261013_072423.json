@@ -1,0 +1,13 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-10-13T07:24:23.738202",
+  "tweet_count": 17,
+  "summary": "**新工具/技术**（如有）\n- GPT-6.1 Sol（Codex 通道）：默认上下文从 ~272k 提升到 500k，最大可到 1M，用于减少 compaction、支持长程任务。  \n- REA + Computer Use：一种让 agent 通过内置浏览器/录屏或“模拟操作”去逆向、抓取和复刻界面流程的工具链。  \n- BaoCut（开源）：面向视频剪辑的 agent 框架，已集成 Claude Design/Claude Slides Skill，用于字幕/设计/转录等工作流自动化。  \n- Muse Wonder（Meta）：新一代模型，支持 1M token，上下文记忆与“主动专注”能力（Active Memory / Active Focus），已对外开放开发者 API。  \n- D2R Mobile（开源移植项目）：把 Switch 版《暗黑2：重制》以原生二进制方式跑到 iPhone/iPad（不是模拟器），实现高帧率与触控优化。\n\n**核心观点/方法论**（如有）\n- 增大上下文比单纯更高频压缩更能提升长程任务稳定性：更长默认上下文减少信息丢失和 compaction，利于跨多轮/大仓库的工作。  \n- 人的“带宽”比无限 token 更重要：构建良好的 harness、skills 与自动化评估链，能把模型能力放大成实际产出。  \n- 把模型视为“内部风险”来管控：把“提供智能”和“管控智能”分离，外层应做权限、审计、可观测与一键停机机制。  \n- 不能只靠提示词约束模型行为：权限控制、操作日志、独立审计要写进模型外层系统，提示词只是有限的软约束。  \n- 多模型与主动记忆/专注是 agent 成效关键：模型多样性 + 跨会话记忆和自我调整能力，能显著提高长时程自动化任务通过率。\n\n**实践经验/案例**（如有）\n- 用 REA + Computer Use 逆向 CapCut 字幕模板：先录屏/模拟操作、监控网络与磁盘，发现直接拼 URL 下载更高效，最终自动化下载 2291 个模板，说明 agent 会在实践中优化执行路径。  \n- 逆向 Claude Slides/Design 并整合进 BaoCut：通过 REA 拆解混淆代码，再用 Claude Code 重写成结构良好的 Skill，实操上能把闭源功能复刻到开源 agent 中。  \n- Anthropic/Claude 实务提醒：第三方 Agent SDK / claude -p 当前消耗的是用户订阅额度且政策不稳定，实操中要注意配额、计费与封号风险管理。",
+  "metadata": {
+    "original_tweets": 14,
+    "retweets": 3,
+    "media_tweets": 5,
+    "data_hash": "7129c9c1",
+    "user": "dotey"
+  }
+}

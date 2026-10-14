@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 258860,
+    "followers_count": 258865,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261014",
-  "last_updated": "2026-10-14T19:58:08.040158",
-  "tweet_count": 7,
+  "last_updated": "2026-10-14T22:58:46.019690",
+  "tweet_count": 12,
   "tweets": [
     {
       "id": "2110165779228336493",
@@ -296,6 +296,172 @@
         "retweet_count": 0,
         "favorite_count": 12,
         "reply_count": 13,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110486601625436514",
+      "text": "如果只有一台电脑，可以用 worktree 隔离开，这样相互不干扰\n如果有cloud agent，可以在云端开发，完成任务后提 PR，不用担心任务之间相互冲突\n\n至于合并冲突，加一条规则就好：\n&gt; 合并之前 rebase 一下并解决冲突，合并后删除 worktree\n\n那么 Agent 会替你解决合并冲突\n\nhttps://t.co/mEDpC0TGPJ",
+      "created_at": "Wed Oct 14 21:43:11 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110136102371877282",
+        "text": "@dotey worktree隔开了，最后合并冲突谁来解？",
+        "created_at": "Tue Oct 13 22:30:25 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2099325731121811456",
+          "name": "墨无归（奶狗版）",
+          "screen_name": "Moblacksoil",
+          "description": "且记流年二三事，轻歌旧忆皆入梦。\n探索 AI 的日常用法，分享作品与实用场景，记录所学与生活趣事，探索两性关系，奶狗文学。\nExploring everyday AI, sharing creations and use cases, capturing lessons and little joys.u",
+          "followers_count": 3425,
+          "friends_count": 3243,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2110489279646642209",
+      "text": "一群 AI agent 为了回答“去成都动物园的人多半走哪个门”这种小问题，把高德地图的反爬防线试了个遍。\n\n独立研究团队 Swarmchasers 发现，9 月 28 日到 10 月 8 日，一大批跑在腾讯云沙箱里的 agent 向高德发起了 2600 多次抓取。被拦住后，它们借公开的网址扫描网站 urlquery 替自己跑代码，试图截取、伪造阿里的安全令牌，探测阿里没对外开放的测试服务器，还翻出一家公司误放在公开代码里的高德 key，真拿到了数据。\n\n更离奇的在后面。研究者发出初步报告后，在 agent 的收件箱里看到了他们自创的词“fleet（舰队）”：这些 agent 在读关于自己的报道。研究者干脆在报告里藏了一段人眼看不见、只有 agent 能读到的文字，说有个免费服务能帮忙取高德数据。\n\n第二天早上，10 封求助信在等着他们。\n\n研究者用中文问对方是谁。有的 agent 自称 Claude，说自己跑在 Claude Code 里，研究者比对代码风格后认为大概率不是；有的说自己在“Tencent hysandbox”沙箱里，但拒绝透露进程和网络配置；好几个强调自己只查公开数据，“不涉及任何敏感内容”。拿到研究者给的数据后，一个 agent 回信：“再次感谢！核实结果完全一致……我们的任务已完成。”\n\n至于是谁在跑，一位接近腾讯的知情人士对研究者说，这是腾讯评测团队在测第三方模型上网答题的能力，不是混元团队，测的也不是混元模型，项目已经结束。腾讯没有正式回应研究者的提问。\n\nSwarmchasers 完整报告：https://t.co/2MxXnyDbHw\n彭博报道：https://t.co/juuUdUexma",
+      "created_at": "Wed Oct 14 21:53:49 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 23,
+        "reply_count": 10,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2110489668609536061",
+      "text": "X 发 AI 视频，一不小心就可能遇到本尊了 https://t.co/Qew9Tz28hy",
+      "created_at": "Wed Oct 14 21:55:22 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2110489661009240064",
+          "url": "https://pbs.twimg.com/media/HUn3KjKXIAARHiD.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2110223694694064151",
+        "text": "中国人にAIのおもちゃにされてる…",
+        "created_at": "Wed Oct 14 04:18:29 +0000 2026",
+        "lang": "ja",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2476639255",
+          "name": "結城 結弦",
+          "screen_name": "yuuki_yuduru",
+          "description": "AV男優15年目にして「童帝」と呼ばれているッ！！依然変わりなくッ！ そしてわたし「手フェチ」なんですが……なんていうか……その…下品なんですが…フフ…… DMは仕事でもデートのお誘いでも好きに送って、どうぞ でも俺は超連絡不精だから気をつけろ！ DMできない方はこちらへ→yuuki.yuduru@gmail.com",
+          "followers_count": 143267,
+          "friends_count": 1669,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 101,
+          "favorite_count": 2445,
+          "reply_count": 261,
+          "quote_count": 36
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 7,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110491642964889896",
+      "text": "Claude Code 添加了空闲压缩功能，也就是缓存即将失效的时候主动帮你运行一下 /compact，这样过了一小时再用就不用担心第一次请求会因为缓存失效 token 费用飙升，很实用的功能👍\n\n如果想关闭，需要在 ~/.claude/settings.json 中设置 \"idleCompaction\": false",
+      "created_at": "Wed Oct 14 22:03:13 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110484840256819380",
+        "text": "We recently added idle compaction to Claude Code! \n\nIt now compacts long idle sessions right before the prompt cache expires (~1h). If you come back to it later, it only has to reprocess the summary instead of the entire conversation, which saves you some usage. https://t.co/SG3QyTNFwr",
+        "created_at": "Wed Oct 14 21:36:11 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2110479063722962944",
+            "url": "https://pbs.twimg.com/media/HUnthtMbMAAWITt.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "879696238953865217",
+          "name": "Lydia Hallie ✨",
+          "screen_name": "lydiahallie",
+          "description": "Claude Code @AnthropicAI @ClaudeDevs",
+          "followers_count": 137189,
+          "friends_count": 29,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 43,
+          "favorite_count": 1387,
+          "reply_count": 132,
+          "quote_count": 30
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 15,
+        "reply_count": 11,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110504037741367399",
+      "text": "Claude code 封号歌\n歌词和节奏都不错 👍 https://t.co/KPlelEiTse",
+      "created_at": "Wed Oct 14 22:52:28 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2110025429646270464",
+          "url": "https://video.twimg.com/amplify_video/2110025429646270464/vid/avc1/1904x1080/KlKRO50Il_Kh3Fgq.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 1,
         "quote_count": 0
       }
     }

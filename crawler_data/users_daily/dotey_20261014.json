@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 258812,
+    "followers_count": 258860,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261014",
-  "last_updated": "2026-10-14T14:52:32.382048",
-  "tweet_count": 5,
+  "last_updated": "2026-10-14T19:58:08.040158",
+  "tweet_count": 7,
   "tweets": [
     {
       "id": "2110165779228336493",
@@ -255,6 +255,47 @@
         "retweet_count": 22,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110407054334550232",
+      "text": "Grok 推送的 AI 资讯还挺好的，但你可能想要在其他 Bot 或者 Agent 使用，一个简单的方法就是去问它是怎么做到的：\n> 你在帮我整理新闻时，是怎么去X检索我想要的资讯的？怎么判断资讯是不是新是不是有价值的？\n\n其实原理也很简单，就是关注一些特定账号，分三类：AI 实验室和公司官方号、关键人物、新闻和爆料号。\n\n也列出了能直接复制的搜索语句，覆盖模型发布、产品和 agent、融资和收购、监管和安全、爆料、中文资讯，还有我自己关注的方向。\n\n另外写了怎么判断新旧、怎么判断有没有价值，以及推送格式。\n\n再让它把这个流程整理成一个 Skill，就能去复用这个流程了。\n\n不过最关键的是，其他 Bot/Agent 你得自己花钱用 API，而 GrokBot 的 X API 不用额外花钱。\n\nGrok 整理的完整提示词我放评论。",
+      "created_at": "Wed Oct 14 16:27:05 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2110406149405028352",
+          "url": "https://pbs.twimg.com/media/HUmrNiMWMAAdmMZ.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2110406907764654080",
+          "url": "https://pbs.twimg.com/media/HUmr5rTXwAAWt9n.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 58,
+        "reply_count": 32,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2110407057622904945",
+      "text": "# X AI 资讯检索\n\n目标：在 X 上找出最近一个时间窗口（通常是 1 小时）里真正重要、而且之前没推过的 AI 资讯。用公开读取的 X 工具（search_posts_all、get_users_posts、get_news / search_news、get_posts_counts_recent），每次调用最多返回 25 条，要注意频率限制。\n\n## 1. 盯的账号（用 get_users_posts，只看时间窗口内的帖子）\n\n**AI 实验室和公司官方号**\n- OpenAI：`OpenAI`、`OpenAIDevs`、`OpenAINewsroom`、`ChatGPTapp`\n- Anthropic：`AnthropicAI`、`claudeai`\n- Google：`GoogleDeepMind`、`GoogleAI`、`GeminiApp`、`googleaidevs`\n- Meta：`AIatMeta`\n- xAI：`xai`\n- 其他：`MistralAI`、`deepseek_ai`、`Alibaba_Qwen`、`huggingface`、`nvidia`、`cursor_ai`、`perplexity_ai`、`LangChainAI`\n\n**关键人物**\n- `sama`、`gdb`（OpenAI）\n- `DarioAmodei`、`jackclarkSF`（Anthropic）\n- `sundarpichai`、`demishassabis`、`OfficialLoganK`、`JeffDean`（Google）\n- `elonmusk`、`karpathy`、`AndrewYNg`、`ylecun`\n\n**AI 新闻、爆料和评论号**\n- `TheInformation`、`theverge`、`TechCrunch`、`Reuters`、`testingcatalog`、`btibor91`、`rowancheung`、`swyx`、`simonw`\n\n按需要加上和使用者方向相关的账号，比如他自己的产品号、常转的中文 AI 博主。\n\n## 2. 搜索关键词（用 search_posts_all，设好 start_time）\n\n查询统一加 `-is:retweet` 去掉转发，加 `lang:en` 或 `lang:zh` 区分语言。\n\n**模型发布**\n- `(GPT OR Claude OR Gemini OR Llama OR Grok OR Qwen OR DeepSeek OR Mistral) (release OR launch OR announce OR \"now available\") -is:retweet`\n- `(\"new model\" OR \"open weights\" OR \"open-source model\") AI -is:retweet`\n\n**产品和 agent**\n- `(\"AI agent\" OR \"coding agent\" OR \"agent skills\" OR MCP) (launch OR ships OR introducing) -is:retweet`\n- `(Cursor OR \"Claude Code\" OR Codex OR Antigravity OR Devin) (launch OR update) -is:retweet`\n\n**行业大事**\n- `AI (acquires OR acquisition OR \"raises\" OR bankruptcy OR \"Series A\" OR \"Series B\") -is:retweet`\n- `AI (regulation OR lawsuit OR ban OR \"executive order\" OR \"AI Act\") -is:retweet`\n- `AI (\"safety\" OR \"security\" OR vulnerability OR jailbreak OR leak) -is:retweet`\n\n**爆料**\n- `(spotted OR leaked OR \"coming soon\") (GPT OR Claude OR Gemini) -is:retweet`\n\n**中文**\n- `(大模型 OR AI) (发布 OR 开源 OR 上线) lang:zh -is:retweet`\n\n**使用者自己的方向**（按人调整，例如 AI 写作、视频剪辑、语音合成、agent skills）\n- `(\"text to speech\" OR TTS OR \"video editing\" OR \"speech to text\") AI (release OR open) -is:retweet`\n\n热度筛选：用 `min_faves`（如果可用），或者拿到结果后按点赞和转发数排序。官方号、可靠媒体或高赞的帖子优先。\n\n## 3. X 新闻和热点\n- 用 get_news / search_news 搜 `AI`、`OpenAI`、`Anthropic`、`Google Gemini`，看 X 自己整理的新闻汇总。\n- 用 get_posts_counts_recent 看某个话题的讨论量是不是突然上升。\n\n## 4. 交叉核对（X 以外）\n对照 Hacker News 首页、新帖排行，以及 The Verge、TechCrunch、路透社、官方博客，找出 X 上还没起量的大事，也用来核实 X 上的说法。\n\n## 5. 判断是不是新的\n- 维护一份「已处理」记录（比如 seen.json），推过的和看过但没推的都记进去，保存标题、链接、主题关键词和日期，7 天后清掉。\n- 比对的时候看话题，不只看链接：同一件事的后续报道、别家媒体重写、转发、引用，都算旧闻。只有出现了实质性的新进展（比如从传闻变成正式发布），才算新的。\n\n## 6. 判断有没有价值\n推送：\n- 前沿模型发布或正式开放、重要开源权重\n- 大额融资、收购、破产、重要人事变动\n- 政策、监管、诉讼、重大安全事件\n- 有官方或可靠媒体来源，讨论热度够高\n- 和使用者方向直接相关（这类门槛放低一点）\n\n跳过：小额融资、纯观点或段子、小版本更新、没人复现的早期研究、来源不明的传闻（如果实在重要，就标明还没确认）。\n\n## 7. 输出格式\n每条：一行加粗标题，一到两句说清楚发生了什么、为什么重要，后面附原始链接（官方原帖或可靠报道）。没有新东西就不发消息。",
+      "created_at": "Wed Oct 14 16:27:06 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 12,
+        "reply_count": 13,
         "quote_count": 0
       }
     }

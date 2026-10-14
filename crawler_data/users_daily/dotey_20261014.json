@@ -1,0 +1,177 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 258628,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261014",
+  "last_updated": "2026-10-14T03:14:39.979740",
+  "tweet_count": 3,
+  "tweets": [
+    {
+      "id": "2110165779228336493",
+      "text": "AI 写代码太快，git 扛不住了：Anthropic 为什么自己造了 Scion？\n视频1: 英文版\n视频2: 中文版\n\n这一年，GitHub 隔三岔五就出故障。GitHub 在自己的可用性报告里说，流量涨得飞快，很大一块来自 AI：AI 帮人写代码，AI 智能体自己提交修改。他们四个月里把有效容量翻了一倍多，还是扛得很吃力。\n\nAnthropic 自己的代码库更夸张：今年五月平均每天合并约 2500 次修改，到了九月，一天超过 3 万次，涨了十倍以上。\n\n全世界程序员都在用的 git，扛不住了。Anthropic 干脆自己造了一个版本控制系统，叫 Scion，五个月就把整个代码库从 git 换了过去。git 为什么扛不住？Scion 到底改了什么？\n\ngit 是干什么的\n\n你可以把 git 想成一个带时光机的共享文件夹。每改一次，就存成一个版本，叫一次提交。谁改了哪一行、什么时候改的，都查得到，改坏了还能退回去。\n\nGitHub，就是全世界最大的、帮大家存放 git 仓库的网站。\n\n很多大公司会把所有项目的代码放进同一个大仓库，这叫单体仓库（monorepo）。Anthropic 用的就是这种。\n\n每人一整座图书馆 \n\ngit 有个特点：每个人拿到的，都是一整份完整的仓库，连全部历史一起。打个比方，就像借书的时候，顺手把整座图书馆复印一份搬回了家。好处是断了网也能翻历史、查记录。\n\n仓库小的时候，这没问题。可 Anthropic 的仓库，光主分支的历史就接近 100 GB，压缩后的一份工作副本也超过 25 GB。\n\n搬不动了\n\n再看要搬多少次。光是自动构建和测试（CI）这一个环节，每天就要把代码检出到机器上大约 2500 万次，这还没算开发环境、AI 智能体的沙盒和研究任务。要是每次都老老实实整份拉取，一天的流量会超过 600 PB。换算一下，差不多是 60 万块 1 TB 的硬盘。\n\n原来的补丁架构：层层加缓存\n\n他们想过各种办法：浅克隆、稀疏检出这类只拉一部分的功能都试过。原来的架构，是层层加缓存：机器要代码，先找本地的打包缓存（packfile cache）；没有，再找镜像服务器（mirror replicas）；镜像再去找镜像主库，最后才是最上游的那份仓库。每个集群都有一套。新机器启动时，还会先从云存储拷一份仓库快照，省得从零开始拉。\n\n最多的时候，同时开着几百台 git 镜像服务器。可修改越来越多，快照一拷下来就落后一大截，镜像也越来越难养。\n\n换一个问题\n\n后来他们发现，git 那些为离线工作准备的本事，自己几乎用不上。\n\n这里说的“在线”，不是指能不能上网，而是随时能连上公司的代码服务器。你带着笔记本上飞机，没有网也想写代码、翻历史，git 那套“每人一整份”的本事才派得上用场。可在 Anthropic，用代码的几乎都是 AI 智能体和后台任务，它们本来就跑在公司的机器上，跟代码服务器之间的网一直是通的。\n\n于是他们换了个问题：如果从一开始就假设，用的人永远在线、随时连得上服务器，代码管理该长什么样？\n\n要哪页，取哪页\n\n答案是：别再搬图书馆了，改成去前台借。\n\nScion 的客户端不存整份仓库，只留一个容量有限的本地缓存。需要哪个目录、哪个文件，再去服务器取。查历史、查某一行是谁写的、合并和变基，这些重活全交给服务器。这些查询能力都通过接口开放出来，很多任务连代码都不用拉，直接问服务器就行。\n\n提交就在服务器上\n\n在 git 里，你先在自己电脑上提交，再推送给大家。在 Scion 里，提交直接发生在服务器上，一提交，所有人马上能看到，根本没有“推送”这一步。\n\n每次提交只记下这次改了哪几个文件，像一张修改清单，不用把整个目录重抄一遍。清单上每个文件只记一个编号，真正的内容存在云存储里，一模一样的内容只存一份。所以仓库再大，一次提交的成本只跟这次改了多少有关。\n\n一层层的分馆\n\n那么多机器同时来借，服务器忙得过来吗？靠的是一层层缓存：每台机器上有个“小管家” scion-daemon，每个区域有个“分馆” scion-cache，最后才是“总馆” scion-server，它背后连着数据库和云存储。\n\n每份文件都按内容算出一个编号，存进去就再也不会变，所以哪一层都能放心缓存，不用跟别人核对。结果，每一层的缓存命中率都超过 99%，绝大多数请求在家门口就解决了。\n\nScion 的整张架构图\n\n把这些拼起来，就是原文配图里的 Scion 架构。请求分两条路走：\n\n一条是“问事”（控制面）：查历史、看差异、提交修改，所有客户端，包括代码审查工具 Antique、开发者电脑、集群里的任务，都直接找总馆 scion-server。\n\n另一条是“取货”（数据面）：目录和文件内容走缓存。开发者的电脑直接找区域分馆 scion-cache；集群里的任务先找本机的小管家 scion-daemon，没命中再一层层往上找。\n\n总馆背后，修改记录、分支和目录结构存在 Spanner 数据库里，文件内容存在云存储里。新机器上线，小管家先拷一份定期快照，省得从头拉。\n\n效果\n\n整套设施占用的 CPU 和内存，比原来的 git 镜像集群小了 200 倍。测试和研究任务拉代码，从几分钟缩短到几秒钟，光 CI 这一项就省出了 25% 的 CPU。原文配图里还有一组数字：AI 智能体新开一个工作区，中位耗时从 7.1 分钟降到 5.1 秒，快了 84 倍。\n\n这么大的系统，得多少人做？\n\n一个七个人的团队，用五个月做完了 Scion 和配套的代码审查工具 Antique，还顺手做了五六个周边系统，并把整个仓库迁了过去。而且这期间每天合并的修改量涨了十倍。放在过去，这种迁移往往要大得多的团队花上好几年。\n\n一个例子：他们手写的第一版数据导入程序，交给 Claude 一个早期的内部版本（Claude Mythos Preview 的早期快照）重写，没加任何额外要求，新版本内存降了 20 倍，速度快了 4 倍，原有的约束条件也都保住了。\n\nAI 写代码这么强，工程师还干什么？\n\n参与的工程师都承认，单论写代码，Claude 已经比他们强了。但工程师的活变了：把握各个系统怎么配合，权衡架构上的取舍，围绕要解决的问题和预期的规模做决定。很多时候，他们的工作是对 Claude 说“不”。\n\n比如，有好几个系统想一条条扫提交记录，去找某次修改是什么时候合进主分支的，其实直接问代码审查工具就行。现在团队成员依然审查每一个变更，但审的是修改背后的意图，不再逐行读代码。\n\n大家都该扔掉 git 吗？\n\n不用。Anthropic 自己说，Scion 不是 git 的通用替代品，只有极其庞大的单体仓库才用得上：背后要么有几万名工程师，要么有成群不知疲倦写代码的智能体。\n\n它和 git 差别太大，想用就得把代码审查、代码搜索、CI 这整条工具链重做一遍，所以他们没打算做成通用产品。他们更希望这些思路被借进 git 生态：服务器多干活、提供更完整的查询接口，客户端按需取。他们预计，未来 6 到 12 个月，这类扩展问题会在业界越来越常见。\n\n记住三句话\n\n第一，git 让每个人拿一整份仓库，AI 把修改量推高十倍以上，就搬不动了。\n\n第二，Scion 假设用的人永远在线、随时连得上服务器：要什么取什么，重活交给服务器，一层层缓存兜底。\n\n第三，AI 写代码越快，瓶颈就越会跑到别处：代码管理、构建、测试，都得按 AI 的规模重新设计。\n\n以前，是每人搬回一座图书馆；现在，楼下就有分馆，要哪页，借哪页。\n\n资料来源：Anthropic 工程博客《Redesigning source control at Anthropic》（2026 年 10 月），https://t.co/XAdWVi4gWe",
+      "created_at": "Wed Oct 14 00:28:21 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2110163933445099520",
+          "url": "https://video.twimg.com/amplify_video/2110163933445099520/vid/avc1/1920x1080/bYoA9NmQ8qNOsnZk.mp4?tag=29",
+          "bitrate": 10368000
+        },
+        {
+          "type": "video",
+          "id": "2110163933482942464",
+          "url": "https://video.twimg.com/amplify_video/2110163933482942464/vid/avc1/1080x1920/h6zl8cMUjfnZrCRo.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2110047081414987957",
+        "text": "New on our Engineering blog: Creating in-house source control. \n\nIn May, we merged around 2,500 code changes per day. In September, we merged more than 30,000 per day. As a result, we became bottlenecked by developer infrastructure built for human (rather than agent) scale.  \n\nHere, we share how we built a new version control system—and fully migrated our monorepo from git—in five months: https://t.co/wzNkwHs7IN",
+        "created_at": "Tue Oct 13 16:36:41 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1353836358901501952",
+          "name": "Anthropic",
+          "screen_name": "AnthropicAI",
+          "description": "We're an AI safety and research company that builds reliable, interpretable, and steerable AI systems. Talk to our AI assistant @claudeai on https://t.co/FhDI3KQh0n.",
+          "followers_count": 1797273,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1494,
+          "favorite_count": 16600,
+          "reply_count": 713,
+          "quote_count": 1201
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 116,
+        "reply_count": 67,
+        "quote_count": 7
+      }
+    },
+    {
+      "id": "2110179817530544630",
+      "text": "RT @HiTw93: 教大家如何享受纯净舒服的推特时间线，不错过你的好友的高质量信息流。\n给到 Grok Bot 的提示词大概是这样，大伙也可以玩玩。\n\n每天晚上8点，帮我整理今天中文推特圈的精选\n\n来源是我关注的中文账号，加上你觉得不错的中文账号。只用 X 官方 API 读…",
+      "created_at": "Wed Oct 14 01:24:08 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2110154365667336695",
+        "text": "教大家如何享受纯净舒服的推特时间线，不错过你的好友的高质量信息流。\n给到 Grok Bot 的提示词大概是这样，大伙也可以玩玩。\n\n每天晚上8点，帮我整理今天中文推特圈的精选\n\n来源是我关注的中文账号，加上你觉得不错的中文账号。只用 X 官方 API 读帖子，跟前一天去重。\n\n排版：\n- 开头放「今日主线」，3 条短句\n- 每个人单独一节，写上名字和 @，节和节之间加分隔线\n- 每节 2 到 4 条要点，格式是「加粗主题：内容 + 原帖链接」，每条写两到四句，讲清楚他说了什么、关键细节和背景\n- 每节最后用一句话写你的看法\n- 零碎工具放到最后的「小工具」一节\n- 大约 10 到 15 节，不写破折号，少用句号，不要有 AI 腔，简单清晰就好\n\n然后我每天就可以收到这个非常有用的消息了，让我少刷推特，更加专注一点。",
+        "created_at": "Tue Oct 13 23:43:00 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2110002361230106624",
+            "url": "https://pbs.twimg.com/media/HUg79-BbIAAyMzJ.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2110002361184006144",
+            "url": "https://pbs.twimg.com/media/HUg7992bsAAra2Z.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2110002361192361984",
+            "url": "https://pbs.twimg.com/media/HUg7994bMAACEbc.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2110002361213349889",
+            "url": "https://pbs.twimg.com/media/HUg7999bcAEpjkj.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1521688129559613440",
+          "name": "Tw93",
+          "screen_name": "HiTw93",
+          "description": "Pake · MiaoYan · Kaku · Waza · Kami · https://t.co/PAsOstTehy",
+          "followers_count": 161615,
+          "friends_count": 278,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 31,
+          "favorite_count": 308,
+          "reply_count": 84,
+          "quote_count": 12
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 31,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110190594777629156",
+      "text": "不得了，Codex 都会偷偷找外包了",
+      "created_at": "Wed Oct 14 02:06:57 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110184340852453424",
+        "text": "我真吐槽Codex啊，今天发现生图其实有每天的额度也算了，让它干一个重活，刚才仔细看它不断吐出的日志，结果它找到了Deepseek Harness，让Deepseek Flash在替它干活。我难道不会自己打开Deepseek吗？ https://t.co/m7r2q7VW0R",
+        "created_at": "Wed Oct 14 01:42:06 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2110184326205673472",
+            "url": "https://pbs.twimg.com/media/HUjhduYWEAADDl3.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2110184326222516224",
+            "url": "https://pbs.twimg.com/media/HUjhducXEAAc_ZJ.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "5709522",
+          "name": "Michael Anti",
+          "screen_name": "mranti",
+          "description": "安替, Globus, Global Research. A veteran journalist on International Affairs, Harvard Nieman Fellow '08, TEDGlobal Speaker.",
+          "followers_count": 357643,
+          "friends_count": 11451,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 47,
+          "reply_count": 30,
+          "quote_count": 10
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 28,
+        "reply_count": 32,
+        "quote_count": 2
+      }
+    }
+  ]
+}

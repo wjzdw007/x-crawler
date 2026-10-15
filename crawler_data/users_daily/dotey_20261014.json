@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 258865,
+    "followers_count": 258885,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261014",
-  "last_updated": "2026-10-14T22:58:46.019690",
-  "tweet_count": 12,
+  "last_updated": "2026-10-15T02:53:21.587673",
+  "tweet_count": 14,
   "tweets": [
     {
       "id": "2110165779228336493",
@@ -462,6 +462,79 @@
         "retweet_count": 0,
         "favorite_count": 2,
         "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110506741888590241",
+      "text": "AI 翻译字幕难在哪？BaoCut 怎么让顺序不一样的英文和中文在双语字幕上对应上\n\n看翻译的视频字幕，你一定见过这几种字幕：\n人还没开口，字幕先跳出来；\n一句话被切成几截，翻译和实际说的话对不上；\n一屏堆两三行，挡掉半个画面。\n\n这些问题都是我在做字幕翻译时遇到的难点。\n\n这期拿我的开源项目 BaoCut 做例子，对比传统字幕组的做法，讲清楚一张带时间的词表是怎么来的，再讲五个坑：语音识别听错、认错说话人、按什么单位翻、中英文语序不一样、一屏放几行。\n\n最后讲一个彩蛋：有了每个词的时间，字幕还能逐词高亮、做 KTV 和倒鸭子动画。例子来自我电脑上的真实项目。\n\n这是上集，下集会讲为什么不直接把字幕丢给 ChatGPT。\n\n视频1 是英文\n视频2 是中文\n\n项目地址：https://t.co/0yynG1EENA\n下载：https://t.co/9wMHJOLRMS",
+      "created_at": "Wed Oct 14 23:03:13 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2110505435564216320",
+          "url": "https://video.twimg.com/amplify_video/2110505435564216320/vid/avc1/1920x1080/u_ouv1d0EDRqo_Os.mp4?tag=29",
+          "bitrate": 10368000
+        },
+        {
+          "type": "video",
+          "id": "2110505456258920448",
+          "url": "https://video.twimg.com/amplify_video/2110505456258920448/vid/avc1/1080x1920/chIHw8dLYSvNtkcj.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 64,
+        "reply_count": 28,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2110507537158066310",
+      "text": "GrokBot 现在支持 plus 别名！",
+      "created_at": "Wed Oct 14 23:06:22 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110496237241667621",
+        "text": "Grok @bot now supports plus aliases! Send and receive email using dedicated aliases, or set up routines that only trigger for mail to a specific alias! https://t.co/RJM9GcsTZ0",
+        "created_at": "Wed Oct 14 22:21:28 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2110496194493378560",
+            "url": "https://pbs.twimg.com/media/HUn9G2SXcAAQsX_.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2338596771",
+          "name": "Sam Sokolin",
+          "screen_name": "SamSokolin",
+          "description": "building @bot and other things @SpaceXSI",
+          "followers_count": 6222,
+          "friends_count": 1140,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 142,
+          "favorite_count": 1767,
+          "reply_count": 234,
+          "quote_count": 64
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 24,
+        "reply_count": 16,
         "quote_count": 0
       }
     }

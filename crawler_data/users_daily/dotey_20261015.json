@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 259087,
+    "followers_count": 259091,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261015",
-  "last_updated": "2026-10-15T19:41:02.389773",
-  "tweet_count": 13,
+  "last_updated": "2026-10-15T22:53:18.669588",
+  "tweet_count": 15,
   "tweets": [
     {
       "id": "2110527175765958968",
@@ -556,6 +556,98 @@
         "favorite_count": 30,
         "reply_count": 8,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2110839911339184608",
+      "text": "Google 量子计算新进展：一种关键“零件”的次品率降到原来的 1/40\n\nGoogle 今天在《科学》期刊发表论文，在自家量子芯片 Willow 上验证了一种制造“魔态”的新办法，做出来的魔态，坏的比例降到原来的 1/40 左右。魔态是什么、为什么重要，得先从量子计算机的一个大毛病说起。\n\n量子计算机是一种新型计算机，理论上，在模拟药物分子、破解密码这类题目上，能比普通电脑快得多。它最小的计算单元叫量子比特，相当于普通电脑里存 0 和 1 的那个单元，但极其娇气，一点热量、一点干扰就会出错。所以到今天，还没有一台量子计算机能真正干正事。\n\n为了不出错，科学家给量子比特设计了一套保护办法，叫“纠错”，可以理解为给数据穿上一层防护服。穿着防护服，大部分操作照样能做。麻烦的是，有一种关键操作，穿着防护服没法直接做。偏偏只靠剩下那些操作，量子计算机能算的东西，普通电脑也都能算，等于白造了。\n\n魔态就是为这个关键操作准备的。科学家想了个绕道的办法：事先单独把一些量子比特调成一种特殊的状态，这种状态就叫“魔态”。计算中每需要做一次那个关键操作，就把一份魔态“喂”进去，效果就等于做了这个操作。喂进去就用掉了，下次还得再备一份。\n\n所以可以把魔态想成一把一次性钥匙：量子计算机每开一次那扇关键的门，就要用掉一把。之所以叫“魔态”，是因为量子计算机比普通电脑强的那份“魔力”，就靠它来实现。\n\n问题出在造钥匙上。魔态本身也是量子比特，一样娇气，很容易造坏，一把坏钥匙用进去，整道题就算错了。以前的办法是先造一大堆粗糙的魔态，再一遍遍提纯，非常费资源。有估算说，一台量子计算机最多可能要拿出 95% 的能力专门造魔态，真正用来算题的只剩一小部分。科学家 20 多年前就预见到这个瓶颈，一直在想办法压低成本。\n\n2024 年，Google 的研究员提出了一个新办法，叫“培育”：在芯片上划出一小块地方，放进一份粗糙的魔态，然后一步步检查，只要哪一步发现问题，马上扔掉重来，能一路通过所有检查的，就是合格的魔态。有点像流水线上每道工序都站着质检员，次品当场就扔。\n\n这次是第一次在真实芯片上把这个办法做成。不用培育时，大约每 1000 份魔态里有 4 份是坏的；用了培育之后，大约 1 万份里才有 1 份坏的。代价是扔掉的很多，100 次尝试里只有 8 次能留下来。\n\n离真正能用还有多远？按《科学美国人》的报道，要用量子计算机模拟分子、帮忙设计新药，魔态坏的比例得低到百万分之一甚至一亿分之一；要破解现在网上广泛使用的 RSA 加密，得低到 100 亿份里最多坏 1 份。现在做到的是 1 万份坏 1 份。Google 自己也说，这个办法还要在更大的规模上验证，还有很多难题没解决。\n\n原文：https://t.co/fuydV8pM9L\n论文：https://t.co/S34VQwG4jD\n预印本：https://t.co/iQHz3DFlsK\n《科学美国人》报道：https://t.co/NYHGFjTmaC",
+      "created_at": "Thu Oct 15 21:07:07 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2110839330285531137",
+          "url": "https://video.twimg.com/amplify_video/2110839330285531137/vid/avc1/1920x1080/rUGejmCIvOhkI23S.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2110804295352488143",
+        "text": "Some magical progress towards \"magic state\" in quantum!\n\nOur @GoogleQuantumAI team has demonstrated \"magic state cultivation\" on physical hardware for the first time. The result is a 40x error reduction on our Willow processor vs. previous methods, achieving a state-of-the-art 99.99% logical fidelity.\n\nIt's another step towards useful, error-corrected quantum computers to help solve the hardest problems. The result is published in Science today, watch the video below to see how it works",
+        "created_at": "Thu Oct 15 18:45:35 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2110803826844520448",
+            "url": "https://video.twimg.com/amplify_video/2110803826844520448/vid/avc1/1920x1080/XRqmxJqXE5Kvgw6W.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "14130366",
+          "name": "Sundar Pichai",
+          "screen_name": "sundarpichai",
+          "description": "CEO, Google and Alphabet",
+          "followers_count": 11929187,
+          "friends_count": 200,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 445,
+          "favorite_count": 4168,
+          "reply_count": 204,
+          "quote_count": 109
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 6,
+        "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110846329341837698",
+      "text": "Opus 5.5 快速模式取消排队：订阅用户要额外付费，API 价格是标准版两倍\n\nAnthropic 宣布，Claude Opus 5.5 的快速模式结束内测，取消候补名单。还是同一个模型，能力不变，回答写出来的速度最多快 2.5 倍。\n\n费用不算在订阅里。Pro、Max 等订阅用户在 Claude Code 里用 /fast 打开快速模式后，花费不占套餐额度，直接从“额外用量”扣，也就是套餐之外单独充值、按量付费的钱。套餐额度没用完也一样从额外用量扣，没开额外用量就用不了。团队版和企业版要管理员先开启。Claude Code 这部分规则这次没变。\n\n用 API 的开发者按 token 付费：每百万输入 token 8 美元，每百万输出 token 40 美元，正好是标准速度 Opus 5.5 的两倍。现在加一个参数就能用，不用再申请。\n\n微软的 Microsoft Foundry 已上线，Google Cloud 即将上线。\n\n官方文档：https://t.co/4DftYenv96\nClaude Code 快速模式说明：https://t.co/Xol9gUB1c0",
+      "created_at": "Thu Oct 15 21:32:37 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110825294655562048",
+        "text": "Opus 5.5 fast mode in the Claude Platform is no longer in research preview, and we’ve removed the waitlist!\n\nIt’s the same Opus 5.5 but up to 2.5x faster, at $8 / $40 per million tokens.\n\nIt's also available in Microsoft Foundry (Hosted on Azure), with Google Cloud coming soon.\n\nFast mode in Claude Code remains unchanged, and uses extra usage credits.\n\nSee our docs here:\nhttps://t.co/RikPqqIY0W\n\nhttps://t.co/oB0fhEgC88",
+        "created_at": "Thu Oct 15 20:09:02 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2024518793679294464",
+          "name": "ClaudeDevs",
+          "screen_name": "ClaudeDevs",
+          "description": "Official updates for developers building with @ClaudeAI",
+          "followers_count": 751512,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 110,
+          "favorite_count": 3348,
+          "reply_count": 183,
+          "quote_count": 71
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 12,
+        "reply_count": 18,
+        "quote_count": 2
       }
     }
   ]

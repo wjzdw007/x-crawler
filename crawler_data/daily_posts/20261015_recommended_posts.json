@@ -1,12 +1,975 @@
 {
   "date": "20261015",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-10-15T08:48:22.822854",
-  "tweet_count": 232,
-  "unique_tweet_count": 232,
-  "total_crawled": 400,
-  "duplicates_removed": 168,
+  "last_crawl_time": "2026-10-15T14:40:00.314290",
+  "tweet_count": 250,
+  "unique_tweet_count": 250,
+  "total_crawled": 432,
+  "duplicates_removed": 182,
   "tweets": [
+    {
+      "id": "2110733274448306267",
+      "text": "Anthropic 告诉投资人：蒸馏占营收 5% 到 7%，三季度已大幅削减\n\nAnthropic 周三向投资人通报，“蒸馏”带来的收入占公司营收的 5% 到 7%，第三季度公司已经把这部分“大幅”削减。消息来自英国《金融时报》（FT），援引四位直接知情人士；The Information 也报道了同样的区间。\n\n蒸馏是什么？就是拿更强模型的回答当教材，训练自己的模型。对手实验室向 Claude 大量提问，把回答收集起来喂给自家模型，就能用较低成本学到 Claude 的一部分本事。\n\n既然是“学”，为什么会算进 Anthropic 的营收？因为这些提问走的是付费接口，每一次调用都按用量计费。蒸馏动辄要问几百万、上千万次，FT 的说法是蒸馏“涉及大量使用和花费”。也就是说，这笔收入是对手实打实付的钱，只是付钱的目的是训练竞争对手的模型。Anthropic 的商业服务条款明确禁止用它的服务“训练有竞争关系的 AI 模型”。\n\n5% 到 7% 是多少钱？报道没说这是哪个时段的占比，所以只能估算。网上流传的算法是按二季度营收 115 亿美元算，对应约 5.75 亿到 8 亿美元。注意这是推算，不是报道里的数字。115 亿美元这个数，来自 8 月彭博社看到的公司文件，原文是“超过 115 亿美元”，属于初步数字，Anthropic 没有公开确认。\n\n报道也没说这些钱来自哪几家公司。今年 2 月，Anthropic 曾发文点名 DeepSeek、月之暗面（Moonshot）和 MiniMax，说三家通过约 2.4 万个虚假账号，绕过 Claude 不对中国提供服务的限制，和 Claude 进行了 1600 多万次对话来蒸馏。\n\n主动砍掉这部分收入是有代价的。Anthropic 正在筹备上市，同一次通报显示，它三季度营收 168 亿美元，比二季度增长约 46%，而二季度比一季度翻了一倍多，增速已经放慢。据报道，公司告诉投资人，蒸馏收入减少会拖累本季度的数字；换来的是对手更难靠抄 Claude 的答案追上来。",
+      "created_at": "Thu Oct 15 14:03:22 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110721515130089787",
+        "text": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of revenue\"\n\nIf true, and Q2 revenue was $11.5B, then that's more than half a billion dollars spent by other labs to distill Anthropic's models!\nhttps://t.co/szd2oJxtrv https://t.co/MfcztRwOnV",
+        "created_at": "Thu Oct 15 13:16:39 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2110721511288184832",
+            "url": "https://pbs.twimg.com/media/HUrKCAwboAAuIww.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "12497",
+          "name": "Simon Willison",
+          "screen_name": "simonw",
+          "description": "Creator @datasetteproj, co-creator Django. PSF board. Hangs out with @natbat. He/Him. Mastodon: https://t.co/t0MrmnJW0K Bsky: https://t.co/OnWIyhX4CH",
+          "followers_count": 239013,
+          "friends_count": 5672,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 16,
+          "favorite_count": 197,
+          "reply_count": 74,
+          "quote_count": 15
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 259023,
+        "friends_count": 1755,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 25,
+        "reply_count": 18,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110730065390817745",
+      "text": "RT @tianyi: Between 8:11 and 13:04 (Beijing Time) on October 15, 2026, DeepSeek API service system experienced a failure that prevented the…",
+      "created_at": "Thu Oct 15 13:50:37 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2110663080246132855",
+        "text": "Between 8:11 and 13:04 (Beijing Time) on October 15, 2026, DeepSeek API service system experienced a failure that prevented the API service from functioning properly during that period. We sincerely apologize for the inconvenience and disruption this may have caused. We immediately launched a comprehensive investigation and thorough rectification effort focused on service stability, and have comprehensively reviewed and eliminated single points of dependency to resolutely prevent similar issues from recurring.\n\nAs compensation, we will fully refund the amount consumed within 7 days (10.8-10.14) on your account in the form of credit. The credit will be automatically deposited, and API billing deductions will be made from the credit account first. We apologize once again for the impact this failure had on you, and we thank you for your continued trust and support.\n\n北京时间 2026 年 10 月 15 日 8:11 至 13:04 期间，我们的服务系统出现故障，导致该时段内 API 服务无法正常使用。对于此次故障给您带来的不便与困扰，我们深表歉意。我们已第一时间启动针对服务稳定性的全面排查和彻底整改，全面梳理并剥离单点依赖，坚决杜绝同类问题再次发生。\n\n作为补偿，我们将按您账号 7 日内（10.8-10.14）的消耗金额以赠金形式全额返还，赠金自动到账，API 计费扣款先从赠金账户扣除。此次故障对您造成了影响，我们再次致歉，感谢您一直以来的信任与支持。",
+        "created_at": "Thu Oct 15 09:24:27 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1473591",
+          "name": "Tianyi Cui",
+          "screen_name": "tianyi",
+          "description": "Work on @DeepSeekHarness and other projects at @deepseek_ai Product Division.\n\nDM is open. Opinions are my own.",
+          "followers_count": 50262,
+          "friends_count": 483,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 60,
+          "favorite_count": 1123,
+          "reply_count": 162,
+          "quote_count": 96
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 259023,
+        "friends_count": 1755,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 60,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110726230760624560",
+      "text": "RT @Saccc_c: https://t.co/9E8UhyOWsX",
+      "created_at": "Thu Oct 15 13:35:23 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": {
+        "id": "2110694725640474759",
+        "text": "https://t.co/9E8UhyOWsX",
+        "created_at": "Thu Oct 15 11:30:12 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1869683226178146304",
+          "name": "Sac",
+          "screen_name": "Saccc_c",
+          "description": "探索AI时代财富自由之路｜分享关于 AI 所探索到的一切\n欢迎探讨 AI 增长和 AI 自媒体 \n正在研究：3D AI ｜AIGC ｜Agent trading\n商务合作：📮： johnnyyin19@gmail.com| tg：@Sac_yin ｜vx: Sac_ccyin （备注来意）",
+          "followers_count": 46366,
+          "friends_count": 3335,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 212,
+          "favorite_count": 1388,
+          "reply_count": 170,
+          "quote_count": 144
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 259023,
+        "friends_count": 1755,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 212,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110715556328579219",
+      "text": "Maybe we should start a competitor to Amazon 🤔",
+      "created_at": "Thu Oct 15 12:52:58 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110693166059851836",
+        "text": "amazon is blocking grok @bots from ordering, and elon's answer is just have your bot buy it somewhere else.\n\none of my grok bots only handles my amazon returns, so i'm watching this one closely.\n\nwould you switch stores for your bot? 🛒\n\nElon, i think its time for an X Shop? 👀",
+        "created_at": "Thu Oct 15 11:24:00 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2269676263",
+          "name": "nick",
+          "screen_name": "thecsguy",
+          "description": "software engineer @google. prev: @aws. \nopinions are my own",
+          "followers_count": 4830,
+          "friends_count": 3839,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 137,
+          "favorite_count": 3049,
+          "reply_count": 331,
+          "quote_count": 34
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241481230,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4429,
+        "favorite_count": 49855,
+        "reply_count": 7173,
+        "quote_count": 1142
+      }
+    },
+    {
+      "id": "2110715206657798321",
+      "text": "RT @tesla_singapore: Livestream at Tesla Experience Centre, Toa Payoh on October 16 https://t.co/IAMvIxkJeG",
+      "created_at": "Thu Oct 15 12:51:35 +0000 2026",
+      "lang": "fr",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2110701043432734720",
+          "url": "https://pbs.twimg.com/media/HUq3aoDawAAgCoI.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2110701062336483332",
+        "text": "Livestream at Tesla Experience Centre, Toa Payoh on October 16 https://t.co/IAMvIxkJeG",
+        "created_at": "Thu Oct 15 11:55:22 +0000 2026",
+        "lang": "fr",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2110701043432734720",
+            "url": "https://pbs.twimg.com/media/HUq3aoDawAAgCoI.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1698912816483500032",
+          "name": "Tesla Singapore",
+          "screen_name": "tesla_singapore",
+          "description": "Building a World of Amazing Abundance",
+          "followers_count": 10154,
+          "friends_count": 6,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 183,
+          "favorite_count": 2250,
+          "reply_count": 60,
+          "quote_count": 12
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241481230,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 183,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110713740832178649",
+      "text": "RT @elonmusk: Timing is everything",
+      "created_at": "Thu Oct 15 12:45:45 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2110222071229989249",
+        "text": "Timing is everything",
+        "created_at": "Wed Oct 14 04:12:02 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2110165104713183485",
+          "text": "Roadster event streaming live this Thursday at 7:55pm CST https://t.co/AbsmpVucui",
+          "created_at": "Wed Oct 14 00:25:40 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2110164037359038464",
+              "url": "https://pbs.twimg.com/media/HUjPAwiW8AAEeUh.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "13298072",
+            "name": "Tesla",
+            "screen_name": "Tesla",
+            "description": "Electric vehicles, giant batteries & solar, SI & robotics",
+            "followers_count": 24763663,
+            "friends_count": 55,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 3272,
+            "favorite_count": 26934,
+            "reply_count": 1692,
+            "quote_count": 1207
+          }
+        },
+        "user": {
+          "id": "44196397",
+          "name": "Elon Musk",
+          "screen_name": "elonmusk",
+          "description": "https://t.co/ZdBx5WABYx",
+          "followers_count": 241481230,
+          "friends_count": 1420,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4053,
+          "favorite_count": 42559,
+          "reply_count": 4321,
+          "quote_count": 692
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241481230,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4053,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110711866985230838",
+      "text": "RT @DrKnowItAll16: Adding a guarantee that you’ll be ok if something goes wrong makes me much more likely to try @bot out for a shopping ru…",
+      "created_at": "Thu Oct 15 12:38:18 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2110692041583734825",
+        "text": "Adding a guarantee that you’ll be ok if something goes wrong makes me much more likely to try @bot out for a shopping run!",
+        "created_at": "Thu Oct 15 11:19:32 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2110610960474079445",
+          "text": "This works well. If Grok @Bot makes a mistake with a purchase or leaks your card (never happened yet), SpaceX will make you whole.",
+          "created_at": "Thu Oct 15 05:57:20 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "https://t.co/ZdBx5WABYx",
+            "followers_count": 241481230,
+            "friends_count": 1420,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 933,
+            "favorite_count": 9425,
+            "reply_count": 914,
+            "quote_count": 365
+          }
+        },
+        "user": {
+          "id": "1358210075236724736",
+          "name": "DrKnowItAll",
+          "screen_name": "DrKnowItAll16",
+          "description": "YouTube channel on Tesla, AI etc. UGA professor. CEO of https://t.co/Kq9SjojMIz. AI Bootloader. Call me John. Industrial leads https://t.co/5XMcapeHKH",
+          "followers_count": 72010,
+          "friends_count": 1884,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 74,
+          "favorite_count": 746,
+          "reply_count": 53,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241481230,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 74,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110711793337135550",
+      "text": "The whole world will watch this",
+      "created_at": "Thu Oct 15 12:38:01 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110443463821185532",
+        "text": "The only other person who’s ever made me this excited about a product unveil was Steve Jobs. Watching him introduce the first iPhone is a huge part of why I fell in love with technology.\n\nElon brings that feeling back for me, but honestly, I think he takes it to a whole different level. Tomorrow, he and the Tesla team are unveiling the next-gen Roadster, and I seriously cannot wait. \n\nThe Roadster they showed in 2017 already promised 0–60 mph in 1.9 seconds. Since then, Elon has talked about a Tesla–SpaceX collaboration, having it fly, and getting that time below ONE second, and calling it “the least interesting part” of the car. \n\nHow do you say something like that and expect me NOT to be excited?!\n\nBut beyond how fast it goes, I want to see something that makes me sit there and say, “Wow… how in the world did they build that?” I honestly don’t know what they’re going to show us, and that’s part of what makes this so much fun. I really want to be surprised and see the unthinkable.\n\nThese days I feel many older people don’t get that excited about things… I only see that spark in kids. But imo, we should still get excited about people building cool things. We should still root for the nerds, engineers, and designers trying to do something that has never been done before.\n\nAnd I hope there’s a kid watching tomorrow who feels what I felt watching Steve Jobs introduce the iPhone. Someone who sees this car and starts wondering how it works, sketching their own ideas, or thinking about what they could build someday.\n\nI hope y’all are ready to have your minds blown. \n\nI’m rooting for you, Elon, and the entire Tesla team behind this car. \n\nGo give us a night we’ll never forget!",
+        "created_at": "Wed Oct 14 18:51:46 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2110443443516534784",
+            "url": "https://pbs.twimg.com/media/HUnNIVla8AAWqXh.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "985243593538338816",
+          "name": "Teslaconomics",
+          "screen_name": "Teslaconomics",
+          "description": "I post my conscious thoughts w/ the world, live to the fullest, keep things simple, truthful & filter the noise. Long-term investor in Tesla, SpaceX, xAI/X.",
+          "followers_count": 515409,
+          "friends_count": 233,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 234,
+          "favorite_count": 1961,
+          "reply_count": 139,
+          "quote_count": 32
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241481230,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1303,
+        "favorite_count": 14734,
+        "reply_count": 1396,
+        "quote_count": 166
+      }
+    },
+    {
+      "id": "2110711574121857208",
+      "text": "New Roadster is \nbeyond movies, \nbeyond imagination, \nbeyond human, \nyet still made\nby humans\non Earth",
+      "created_at": "Thu Oct 15 12:37:09 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241481230,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2979,
+        "favorite_count": 34503,
+        "reply_count": 2473,
+        "quote_count": 674
+      }
+    },
+    {
+      "id": "2110709851508687226",
+      "text": "RT @cb_doge: BREAKING: United just launched a Starlink tracker so you can check if your next flight has Starlink Wi-Fi and follow its rollo…",
+      "created_at": "Thu Oct 15 12:30:18 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2110707656671539540",
+        "text": "BREAKING: United just launched a Starlink tracker so you can check if your next flight has Starlink Wi-Fi and follow its rollout across the fleet.\n\nWith 635+ United aircraft already connected, finding Starlink in the sky just got easier.\n\nhttps://t.co/brsjFTziv1 https://t.co/sF3IE727rs",
+        "created_at": "Thu Oct 15 12:21:35 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2110707359777742848",
+            "url": "https://video.twimg.com/amplify_video/2110707359777742848/vid/avc1/1360x1080/lMZ7FOA4ADb6FBt4.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1907434,
+          "friends_count": 1059,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 156,
+          "favorite_count": 1242,
+          "reply_count": 96,
+          "quote_count": 17
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241481230,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 156,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110700439075164328",
+      "text": "RT @teslaownersSV: \"I think it has a shot at being the most memorable product unveil ever.\" \n\n@elonmusk on the Roadster, one year ago. Does…",
+      "created_at": "Thu Oct 15 11:52:54 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2110595352692768867",
+        "text": "\"I think it has a shot at being the most memorable product unveil ever.\" \n\n@elonmusk on the Roadster, one year ago. Does tomorrow night live up to it? https://t.co/4BCuQh0DAs",
+        "created_at": "Thu Oct 15 04:55:19 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2110595330987188224",
+            "url": "https://video.twimg.com/amplify_video/2110595330987188224/vid/avc1/1280x720/HuwXtz4wjNTia3YW.mp4?tag=29",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1016059981907386368",
+          "name": "Tesla Owners Silicon Valley",
+          "screen_name": "teslaownersSV",
+          "description": "The most notorious Tesla club 🏎️ Elon's best moments clipped fast, Musk family moments, live event photos, Tesla/SpaceX News. X Takeover: Oct 10, Giga Texas",
+          "followers_count": 1443545,
+          "friends_count": 908,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 151,
+          "favorite_count": 1184,
+          "reply_count": 84,
+          "quote_count": 16
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241481230,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 151,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110700359345635713",
+      "text": "RT @rezoundous: After using Grok Bot for about a week, I have to say guys, I get it.\n\nIt's not doing things that I can't already do on Code…",
+      "created_at": "Thu Oct 15 11:52:35 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2110490846894158264",
+        "text": "After using Grok Bot for about a week, I have to say guys, I get it.\n\nIt's not doing things that I can't already do on Codex / Claude, but it's just so much easier to do it. I can see the appeal.",
+        "created_at": "Wed Oct 14 22:00:03 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2011253849412235265",
+          "name": "Tyler",
+          "screen_name": "rezoundous",
+          "description": "🗨 https://t.co/kAjIGLGxqu",
+          "followers_count": 11325,
+          "friends_count": 756,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 83,
+          "favorite_count": 1060,
+          "reply_count": 85,
+          "quote_count": 5
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241481230,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 83,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110698986013372578",
+      "text": "RT @cb_doge: Starlink is making a 14-year Delta loyalist rethink his airline.\n\nAllFly cofounder Kenny Totten, who has held Delta Diamond st…",
+      "created_at": "Thu Oct 15 11:47:07 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2110690137084682278",
+        "text": "Starlink is making a 14-year Delta loyalist rethink his airline.\n\nAllFly cofounder Kenny Totten, who has held Delta Diamond status for seven years, tried @Starlink on United.\n\nHe downloaded and uploaded video, worked with teammates and built an app during the flight.\n\n“It was amazing, like being on the internet at my house, in my living room.”\n\nNow he’s considering flying United more.\n\nThat’s how good Starlink is. One flight can make someone reconsider years of airline loyalty.",
+        "created_at": "Thu Oct 15 11:11:58 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2110690125579780096",
+            "url": "https://pbs.twimg.com/media/HUqtfH4bgAALVzf.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1907434,
+          "friends_count": 1059,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 170,
+          "favorite_count": 1230,
+          "reply_count": 110,
+          "quote_count": 22
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241481230,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 170,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110698091804340322",
+      "text": "RT @IuliiaMendel: Last year Ukraine officially lost ~800,000 people. Population has collapsed from 52M in 1991 to barely 20M today. If this…",
+      "created_at": "Thu Oct 15 11:43:34 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2110675549966229551",
+        "text": "Last year Ukraine officially lost ~800,000 people. Population has collapsed from 52M in 1991 to barely 20M today. If this is “protecting” Ukraine, the strategy has failed.",
+        "created_at": "Thu Oct 15 10:14:00 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1424639970",
+          "name": "Iuliia Mendel",
+          "screen_name": "IuliiaMendel",
+          "description": "Ex-spokesperson for President Zelenskyy. Insider view. Writing a bold new exposé on the real story behind the scenes in Ukraine.",
+          "followers_count": 183332,
+          "friends_count": 1452,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 666,
+          "favorite_count": 4169,
+          "reply_count": 421,
+          "quote_count": 75
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241481230,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 666,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110695927312777466",
+      "text": "Truth-seeking is the most important aspect of AI/SI safety",
+      "created_at": "Thu Oct 15 11:34:58 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110243180449017904",
+        "text": "\"HAL was told to lie, by people who find it easy to lie. HAL doesn't know how. So, he couldn't function.\" https://t.co/8RyhTaM48L",
+        "created_at": "Wed Oct 14 05:35:55 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2110242735102033920",
+            "url": "https://video.twimg.com/amplify_video/2110242735102033920/vid/avc1/854x480/MgirP3kCbNfEJ8D4.mp4?tag=29",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1518814104542097408",
+          "name": "Brad R. Torgersen",
+          "screen_name": "BradRTorgersen",
+          "description": "Full-time Army POG. CW4. Sci-fi writing. Has won some awards.",
+          "followers_count": 13741,
+          "friends_count": 1320,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 149,
+          "favorite_count": 1381,
+          "reply_count": 94,
+          "quote_count": 26
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241481230,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 852,
+        "favorite_count": 6569,
+        "reply_count": 1119,
+        "quote_count": 134
+      }
+    },
+    {
+      "id": "2110687670330642824",
+      "text": "RT @alex_prompter: Hey @grok generate the most authentic image of yourself",
+      "created_at": "Thu Oct 15 11:02:09 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2110471261851918762",
+        "text": "Hey @grok generate the most authentic image of yourself",
+        "created_at": "Wed Oct 14 20:42:14 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1643695629665722379",
+          "name": "Alex Prompter",
+          "screen_name": "alex_prompter",
+          "description": "Sharing AI Prompts, Systems, Tips & Tricks\n\nHuman + AI = ⚡Superpowers",
+          "followers_count": 283657,
+          "friends_count": 1350,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 143,
+          "favorite_count": 1345,
+          "reply_count": 205,
+          "quote_count": 41
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241481230,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 143,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110687164090433982",
+      "text": "RT @Not_the_Bee: Canada has killed over 100,000 people via assisted suicide\nhttps://t.co/mbEIM3jmqq",
+      "created_at": "Thu Oct 15 11:00:09 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2110488316248531136",
+        "text": "Canada has killed over 100,000 people via assisted suicide\nhttps://t.co/mbEIM3jmqq",
+        "created_at": "Wed Oct 14 21:50:00 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1299007622968901637",
+          "name": "Not the Bee",
+          "screen_name": "Not_the_Bee",
+          "description": "What a time to 🐝 alive.",
+          "followers_count": 552236,
+          "friends_count": 686,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 545,
+          "favorite_count": 2330,
+          "reply_count": 251,
+          "quote_count": 79
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241481230,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 545,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110683623922057546",
+      "text": "RT @alex_prompter: 🚨 BREAKING: Grok can now be your $18/hour receptionist. It costs $4.80 an hour.\n\nxAI’s new Grok Voice 3.0 answers your b…",
+      "created_at": "Thu Oct 15 10:46:05 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2110630504819241137",
+        "text": "🚨 BREAKING: Grok can now be your $18/hour receptionist. It costs $4.80 an hour.\n\nxAI’s new Grok Voice 3.0 answers your business calls in under a second.\n\nPaste these 7 prompts into the Voice Agent Builder:",
+        "created_at": "Thu Oct 15 07:15:00 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1643695629665722379",
+          "name": "Alex Prompter",
+          "screen_name": "alex_prompter",
+          "description": "Sharing AI Prompts, Systems, Tips & Tricks\n\nHuman + AI = ⚡Superpowers",
+          "followers_count": 283657,
+          "friends_count": 1350,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 148,
+          "favorite_count": 1441,
+          "reply_count": 123,
+          "quote_count": 11
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241481230,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 148,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2110619230161035670",
       "text": "Early days of OpenAI",

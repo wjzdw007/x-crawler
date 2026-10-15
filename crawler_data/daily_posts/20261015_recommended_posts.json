@@ -1,12 +1,747 @@
 {
   "date": "20261015",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-10-15T14:40:00.314290",
-  "tweet_count": 250,
-  "unique_tweet_count": 250,
-  "total_crawled": 432,
-  "duplicates_removed": 182,
+  "last_crawl_time": "2026-10-15T19:41:02.355717",
+  "tweet_count": 263,
+  "unique_tweet_count": 263,
+  "total_crawled": 450,
+  "duplicates_removed": 187,
   "tweets": [
+    {
+      "id": "2110793952349577418",
+      "text": "Cheng Lou 开源 Handwired：手写权重，把程序逻辑变成不用训练的神经网络\n\nMidjourney 工程师、前 React 核心团队成员 Cheng Lou 开源了一个自称“玩具项目”的 Handwired：把程序里的 if-else 和循环改写成神经网络的权重。权重是手写的，不用训练，输出和对应的 JavaScript 程序完全一致，在浏览器里就能跑。\n\n原理一行代码就能讲清。比如 result = a > 4 ? 10 : 12，在 a 是整数时可以改写成：\n\nabove4 = relu(a - 4) - relu(a - 5)\nresult = above4 × 10 + (1 - above4) × 12\n\nrelu 就是 Math.max(0, x)，神经网络里最常见的激活函数。a 大于 4 时 above4 正好是 1，否则是 0。两个分支都算出来，再用它挑一个。神经网络本质上就是一堆乘法、加法加上 relu，所以程序里的判断和分支，都能收进一个大矩阵乘法里。\n\n也许你会好奇，神经网络的输出不是带概率、不精确吗？\n\nCheng Lou 的回答是：训练出来的才这样，按程序逻辑手写的权重，同样的输入永远得到同样的输出。\n\n他放了三个 demo。\n\n第一个是 Mini OS，一个有三个窗口和程序坞的小桌面，拖动、缩放、层叠、滚动、文字输入、动画都有。打开浏览器开发者工具看，页面就是普通的网页元素，没有大模型，也没有扩散模型。驱动它的是一个 130 层、9909 个权重的“神经网络”，训练次数为零，在浏览器里用 CPU 实时计算。\n\n第二个是实时搜索 10 万份 JSON 文档，每敲一个键重搜一遍。正则匹配、JSON 解析、高亮全是这种手写网络，再转成 WebGPU 代码放到显卡上并行跑。项目文档里的实测（Apple M5 Max + Chrome）：每次搜索 11 到 15 毫秒；浏览器自带的正则引擎一般 8 到 28 毫秒，遇到容易回溯的写法要 2 秒多。文档写明两者谁快说不准，所以页面把两个时间都列出来。浏览器不支持 WebGPU 时会退回 CPU，搜一遍要 13 秒。\n\n第三个是会“学习”的相册。整个程序可微分，也就是能用训练神经网络的反向传播来调参数。你在左边画几个矩形当草图，右边的照片布局由一个小网络算出，它的 244 个参数随着你拖动实时训练。损失函数里加了一项对齐惩罚，照片会自己往一条线上靠，没有任何代码专门去对齐它们。参数很少，训练全在 JavaScript 里跑。\n\nCheng Lou 还设想，把一段 Handwired 程序接到 nanoGPT（Andrej Karpathy 的一个小型 GPT 训练项目）这样的模型上一起训练，模型既能写莎士比亚，又能精确执行那段程序。这个目前只是 README 里的设想，仓库里没有现成实现。\n\n代码以 MIT 许可开源，demo 直接在网页上打开就能玩。想自己写，需要装 Bun，克隆仓库后从 template 目录的开关按钮示例开始，文档里有完整教程。\n\n推文说“把普通 JS 代码变成神经网络”，容易让人以为能把现成代码丢进去自动转换。项目文档写的是：没有工具能把已有的 JavaScript 源码转成网络。你要用它提供的构建函数，把逻辑一句句写成比较、选择、加权求和这类操作。网络每次都要把所有操作跑一遍，不能提前退出，也不能跑运行时才知道次数的循环，所以常见的循环得改写成计数、树形合并之类的结构，文档专门用一章讲怎么改。所有数都是 32 位浮点数，每个值的取值范围要事先声明。\n\n项目主页：https://t.co/ywg9dzrFbM\nGitHub：https://t.co/fg1sj0trv4\n原推文：https://t.co/QW2cMnSiWE",
+      "created_at": "Thu Oct 15 18:04:29 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110557373651931267",
+        "text": "My dear friends, I’d like to show you my latest toy project\n\nIntroducing Handwired: turn your regular JavaScript code into a neural net!\n- no training\n- exact outputs vs the JS program\n- fully differentiable\n\nAll runnable in a browser, without GPU",
+        "created_at": "Thu Oct 15 02:24:24 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2110557184501440513",
+            "url": "https://video.twimg.com/amplify_video/2110557184501440513/vid/avc1/1920x1080/R-bKKcVLQhNm1y26.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2972744345",
+          "name": "Cheng Lou",
+          "screen_name": "_chenglou",
+          "description": "Worked on: @reactjs, @messenger, @reasonml, @rescriptlang\nCurrently: @midjourney, Pretext, Freerange",
+          "followers_count": 75582,
+          "friends_count": 519,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 653,
+          "favorite_count": 7825,
+          "reply_count": 330,
+          "quote_count": 316
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 259087,
+        "friends_count": 1756,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 30,
+        "reply_count": 8,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2110790821171601691",
+      "text": "When Konstantin called me way back then, I said I had no idea what it would look like or when it would be made, but he still had the faith to put down a deposit ❤️",
+      "created_at": "Thu Oct 15 17:52:03 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110758804035871007",
+        "text": "@elonmusk My original Roadster still runs 20 years later. Battery still fine! Reserved the new one first in 2013. Thirteen years later, \"beyond imagination\" finally gets a date.",
+        "created_at": "Thu Oct 15 15:44:49 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "16104308",
+          "name": "Konstantin Othmer",
+          "screen_name": "konikaze",
+          "description": "Partner, Recursive Ventures. Ex-Apple graphics, Caltech, serial founder. Early in Tesla, Canva, Android, Ring, Sava. #1 new Roadster reservation.",
+          "followers_count": 1587,
+          "friends_count": 442,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 49,
+          "favorite_count": 1660,
+          "reply_count": 32,
+          "quote_count": 6
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241480665,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 599,
+        "favorite_count": 10098,
+        "reply_count": 571,
+        "quote_count": 43
+      }
+    },
+    {
+      "id": "2110789964430786745",
+      "text": "Old friends are the best friends. Jensen rocks. \n\nThe Star Mind computer being co-engineered by SpaceX and Nvidia is far better than almost anyone expects and will reach volume production next year.\n\nWorking with the incredibly talented Nvidia engineering team is pure joy!",
+      "created_at": "Thu Oct 15 17:48:38 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110731226776789366",
+        "text": "Jensen Huang says he loves working with Elon Musk, and reveals their engineering teams are designing a new type of server to put data centers in space\n\n“I’m delighted that I love working with Elon. He’s using our technology for his own AI in training models and such, deploying models, of course.\"\n\n\"Grok Bot is super cool. The demand for Grok Bot, the consumption for Grok Bot is really skyrocketing. And then, of course, he rents it.\"\n\n\"And so the combination of these three things, he’s fairly unique in doing that. I guess Google does that. That would be yet another example.\"\n\n\"And so I think he also has the advantage that he loves the intersection between computing and the physical buildouts. He loves that whole area. Nobody knows more about energy than he does.\"\n\n\"One particular new market that we’re going to go explore together is putting data centers out in space. Our two engineering teams are working super closely together to create a new type of server, a new type of architecture that might be super good in space and on Earth.”",
+        "created_at": "Thu Oct 15 13:55:14 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2110730504534446080",
+            "url": "https://video.twimg.com/amplify_video/2110730504534446080/vid/avc1/1920x1080/Ehc-ubEMWCm9ymOh.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2066250685512110080",
+          "name": "Fireside Alpha",
+          "screen_name": "firesidealpha",
+          "description": "Learn what the best in business and tech are seeing, then go find your edge\n@firesidetapes for business legends",
+          "followers_count": 31370,
+          "friends_count": 353,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 108,
+          "favorite_count": 1066,
+          "reply_count": 34,
+          "quote_count": 18
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241480665,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1360,
+        "favorite_count": 14502,
+        "reply_count": 775,
+        "quote_count": 121
+      }
+    },
+    {
+      "id": "2110788138092355945",
+      "text": "🔥",
+      "created_at": "Thu Oct 15 17:41:23 +0000 2026",
+      "lang": "art",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110767476153950269",
+        "text": "hey @bot please preorder the new Tesla Roadster for me immediately, thanks",
+        "created_at": "Thu Oct 15 16:19:17 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2832427459",
+          "name": "lauren",
+          "screen_name": "poteto",
+          "description": "Grok @Bot at @SpaceXSI. Shipping with https://t.co/FhHxHHdUAz. React compiler core team, prev cursor, meta, netflix",
+          "followers_count": 193986,
+          "friends_count": 911,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 35,
+          "favorite_count": 1673,
+          "reply_count": 141,
+          "quote_count": 16
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241480665,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 375,
+        "favorite_count": 5312,
+        "reply_count": 455,
+        "quote_count": 38
+      }
+    },
+    {
+      "id": "2110788040042156538",
+      "text": "RT @SawyerMerritt: Tesla's Cybercab Robotaxis were involved in zero crashes or accidents during their first two weeks of public rides, acco…",
+      "created_at": "Thu Oct 15 17:40:59 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2110779453630546194",
+        "text": "Tesla's Cybercab Robotaxis were involved in zero crashes or accidents during their first two weeks of public rides, according to the latest NHTSA data. https://t.co/NttCIwtsxF",
+        "created_at": "Thu Oct 15 17:06:52 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2110779418301911040",
+            "url": "https://pbs.twimg.com/media/HUr-spMXUAAHHLh.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EVs/space/tech. Bringing you the latest news in a single, easy-to-read feed. $TSLA & $SPCX investor, Model Y owner.",
+          "followers_count": 1143251,
+          "friends_count": 498,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 244,
+          "favorite_count": 2873,
+          "reply_count": 133,
+          "quote_count": 38
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241480665,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 244,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110787582808441277",
+      "text": "Meta 发布开放权重模型 Muse Spark Open：免费下载能商用，本地跑要两台 512GB 内存的 Mac Studio\n\nMeta 10 月 15 日发布 Muse Spark Open，模型权重可以直接下载，按 Muse Model License 免费使用，商用也行。Meta 称它是“迄今最强的美国开放权重模型”。\n\nMuse 系列推出以来，主力模型 Muse Spark 和三天前发布的 Muse Wonder 都只能通过 Meta 的产品和 API 用，开放权重的只有小模型 Muse Glimmer。这是 Meta 第一次放出大尺寸 Muse 模型的权重。\n\n模型总共 8160 亿参数，处理每个 Token 只动用其中 420 亿，这种结构叫混合专家（MoE），算得快，但整个模型还是要全部装进内存。上下文 100 万 Token，能读文字、图片、视频和音频，输出文字，主打写代码和让 AI 长时间自己干活。\n\n【能不能下载，能不能商用】\n\n能下载。Hugging Face、亚马逊 SageMaker、Google Cloud Model Garden 和微软 Foundry 都提供权重。Hugging Face 上要先登录填申请表，写真实姓名、出生日期和完整机构名称，提交后不能改。\n\n能商用。许可证允许使用、修改、微调、蒸馏（用它的输出训练别的模型）、再分发和出售，不收费。条件有三条。\n\n第一，用了它的产品要在界面、文档、网站或设置菜单里显著标出“Built with Muse Spark Open”。\n\n第二，遵守附带的使用政策：不能用于军事、武器、关键基础设施等高风险用途，不能在没有执业资格时提供金融、法律、医疗专业服务，也不面向 18 岁以下用户。\n\n第三，卖模型接口的大公司要单独签协议。具体是：你把它或基于它改的模型通过 API 之类的方式卖给别人调用，而你的公司连同关联公司过去 12 个月总营收超过 2000 万美元，就要先通知 Meta、另签协议。算的是公司总营收，不只是这项业务的收入。\n\n把它嵌进自己的 App 做功能、公司内部用、做研究，都不受第三条限制，公司多大都一样。Llama 当年的许可证门槛是月活 7 亿用户，这次换成了针对模型接口生意的营收门槛。\n\n【普通电脑能不能跑】\n\n跑不了。模型卡写的要求是：压缩到英伟达 4 位精度格式 NVFP4 的版本至少要 700GB 显存，原始 BF16 版本要 2TB。\n\nMeta 说它针对两台 M5 Ultra Mac Studio 做了优化：每台最多 512GB 统一内存，两台连起来凑出 1TB，用苹果的 MLX 框架运行。官方没写在 Mac 上跑的是哪个压缩版本，也没给速度。\n\n有服务器的开发者，SGLang、vLLM、TensorRT-LLM、llama.cpp 等主流推理框架都能跑，也可以用 PyTorch 和 TorchTitan 微调。\n\n没有这种硬件，就调 API：Baseten、Fireworks AI、Groq、Modal、Nebius、OpenRouter、Together AI 提供接口，价格由各平台定，Meta 没公布。\n\n【和其他模型比怎么样】\n\nMeta 只拿它和开放权重模型比：美国的 Inkling（前 OpenAI CTO Mira Murati 创办的 Thinking Machines 出品）和英伟达 Nemotron 3 Ultra，法国的 Mistral Large 4，中国的通义千问 Qwen3.8、智谱 GLM 5.3、月之暗面 Kimi K3。以下成绩都来自 Meta 的模型卡。\n\n第三方机构 Artificial Analysis 的综合智能指数，Muse Spark Open 39 分，Inkling 26，Nemotron 3 Ultra 23，“美国最强”说的是这一层。放到全部开放权重模型里，它低于 GLM 5.3 的 45 和 Kimi K3 的 44，和 Qwen3.8 的 40 接近。Artificial Analysis 开源榜目前排第一的是小米 MiMo-V2.6-Pro，46 分，Meta 的对比表里没有它。\n\n单项领先的是调用工具和难题推理：测模型通过 MCP 协议调外部工具完成任务的 MCP-Atlas，89.2 分，对手最高 84.5；不借助工具做“人类最后的考试”（HLE，一套极难的跨学科考题），26.1 分，对手最高 22.2。\n\n写代码偏弱：命令行任务 Terminal-Bench 76.4 分，Kimi K3 85.0、GLM 5.3 83.9；软件工程任务 DeepSWE 60 分，Kimi K3 68、GLM 5.3 67。\n\n最突出的是防越狱。StrongREJECT 测的是模型被人诱导时会不会输出有害内容，分数越低越安全，它是 0.5 分，其他模型都在 60 分以上。Meta 说开放权重版额外做了安全训练。\n\n和自家闭源模型比，Meta 三天前引用的 Artificial Analysis 数据里，Muse Wonder 52 分，Muse Wonder Full 56 分，Muse Spark Open 低一截。\n\n原文：https://t.co/SICKXtdZyV\n官方博客：https://t.co/bMJ4GKl0An\n模型卡：https://t.co/oqcXeL9Ol0",
+      "created_at": "Thu Oct 15 17:39:10 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110779754274292212",
+        "text": "Today we’re releasing Muse Spark Open, the most capable US open-weight model to date.\n\nBuilt for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning.\n\nKey Model Specs:\n→ 816B total / 42B active parameters\n→ 1M token context window\n→ Natively multimodal across text, image, video, audio",
+        "created_at": "Thu Oct 15 17:08:04 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2110776790696534016",
+            "url": "https://pbs.twimg.com/media/HUr8TsmbIAAT-m3.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2110776819796635648",
+            "url": "https://pbs.twimg.com/media/HUr8VZAbcAAF9yn.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1034844617261248512",
+          "name": "AI at Meta",
+          "screen_name": "AIatMeta",
+          "description": "We're building the future of personal superintelligence to help people create, connect, and achieve more in life.",
+          "followers_count": 867002,
+          "friends_count": 367,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 598,
+          "favorite_count": 6048,
+          "reply_count": 245,
+          "quote_count": 351
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 259087,
+        "friends_count": 1756,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 13,
+        "reply_count": 14,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110785320975564965",
+      "text": "RT @BG2Pod: BG2 w/ @JensenHuang. Does AI Revenue Justify Capex, ‘27 AI Bottlenecks, Singularity, Open vs Closed &amp; more. 🚀🇺🇸 @altcap @_clark…",
+      "created_at": "Thu Oct 15 17:30:11 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2110723974808350898",
+        "text": "BG2 w/ @JensenHuang. Does AI Revenue Justify Capex, ‘27 AI Bottlenecks, Singularity, Open vs Closed &amp; more. 🚀🇺🇸 @altcap @_clarktang @nvidia https://t.co/hpNTre36x3",
+        "created_at": "Thu Oct 15 13:26:25 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2110722692685172736",
+            "url": "https://video.twimg.com/amplify_video/2110722692685172736/vid/avc1/1920x1080/0mLmUtYkcoiJ1fnJ.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1745181124945682432",
+          "name": "Bg2 Pod",
+          "screen_name": "BG2Pod",
+          "description": "Open Source bi-weekly convo w @altcap & @bgurley on all things tech, markets, investing & capitalism",
+          "followers_count": 37546,
+          "friends_count": 81,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 85,
+          "favorite_count": 674,
+          "reply_count": 26,
+          "quote_count": 9
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241480665,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 85,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110784478645719205",
+      "text": "RT @JTLonsdale: Balanced piece by Judge: the civil service is 12% smaller, cuts to grants far less steep than even I had hoped, but done we…",
+      "created_at": "Thu Oct 15 17:26:50 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2110778437065691511",
+        "text": "Balanced piece by Judge: the civil service is 12% smaller, cuts to grants far less steep than even I had hoped, but done well overall.\n\n\"By most indications, the federal government is running much as it did before. Some critics may have to admit: the DOGE workforce cuts worked.\"",
+        "created_at": "Thu Oct 15 17:02:50 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2110699013020565510",
+          "text": "DOGE worked. Most importantly, the civil service is 12% smaller than it was in Jan 2025.\n\nIn the Fall @CityJournal, I show they were not replaced by contractors, the biggest cuts were to middle managers, and the predictions of disaster were proven false. https://t.co/heja4NTRbh",
+          "created_at": "Thu Oct 15 11:47:14 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "2861143775",
+            "name": "Judge Glock",
+            "screen_name": "judgeglock",
+            "description": "Director of Research and Senior Fellow, @ManhattanInst. Author of \"The Dead Pledge.\" Opinions are my own.",
+            "followers_count": 5661,
+            "friends_count": 425,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 216,
+            "favorite_count": 1296,
+            "reply_count": 100,
+            "quote_count": 36
+          }
+        },
+        "user": {
+          "id": "134321104",
+          "name": "Joe Lonsdale",
+          "screen_name": "JTLonsdale",
+          "description": "I'm an entrepreneur, investor, & philanthropist. I founded @PalantirTech @Addepar @UAustinOrg @8VC & other mission-driven orgs. Bold policy @InstituteCicero",
+          "followers_count": 341058,
+          "friends_count": 528,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 145,
+          "favorite_count": 1386,
+          "reply_count": 69,
+          "quote_count": 7
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241480665,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 145,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110783975245426929",
+      "text": "Kling 4.0 正式发布了",
+      "created_at": "Thu Oct 15 17:24:50 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110747526840361191",
+        "text": "Where’s the missing King Card? Enter a world of magic, where every card tells a story.\n\nKING CARD, created with Kling 4.0.\n\nKling 4.0 is now fully available. Let the creating begin. https://t.co/uI1X4bVQLW",
+        "created_at": "Thu Oct 15 15:00:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2110722073765285888",
+            "url": "https://video.twimg.com/amplify_video/2110722073765285888/vid/avc1/3840x2160/0fUeia1cVxpB-P1F.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1799294856822673408",
+          "name": "Kling AI",
+          "screen_name": "Kling_ai",
+          "description": "Join KLING AI Community💫\nDiscord:https://t.co/kUVSFwBlEu \nTikTok:https://t.co/J7oMx5kPxn \nIG:https://t.co/DDAKgGvLqh",
+          "followers_count": 137279,
+          "friends_count": 554,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 28,
+          "favorite_count": 184,
+          "reply_count": 21,
+          "quote_count": 11
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 259087,
+        "friends_count": 1756,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 6,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110782491703357466",
+      "text": "RT @SawyerMerritt: United Airlines says that last month, more than 5.4 million people - about a third of United's customers - had @Starlink…",
+      "created_at": "Thu Oct 15 17:18:57 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2110741417090064466",
+        "text": "United Airlines says that last month, more than 5.4 million people - about a third of United's customers - had @Starlink on their flight and that satisfaction scores are more than 40 points higher on Starlink-equipped planes than those with other Wi-Fi service. https://t.co/G8EN6Qwsth",
+        "created_at": "Thu Oct 15 14:35:44 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2110741189158744065",
+            "url": "https://pbs.twimg.com/media/HUrb7aiXsAEfkOV.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2110741280703623168",
+            "url": "https://pbs.twimg.com/media/HUrcAvkXsAAoIyl.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2110741381291425792",
+            "url": "https://pbs.twimg.com/media/HUrcGmSXwAAP74l.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EVs/space/tech. Bringing you the latest news in a single, easy-to-read feed. $TSLA & $SPCX investor, Model Y owner.",
+          "followers_count": 1143251,
+          "friends_count": 498,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 187,
+          "favorite_count": 2377,
+          "reply_count": 102,
+          "quote_count": 20
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241480665,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 187,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110781325850653099",
+      "text": "RT @SawyerMerritt: New opinion article about @Starlink from a 7-year Delta Airlines Diamond Medallion status member (their highest loyalty…",
+      "created_at": "Thu Oct 15 17:14:19 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2110744832184320388",
+        "text": "New opinion article about @Starlink from a 7-year Delta Airlines Diamond Medallion status member (their highest loyalty tier):\n\n\"After flying a United flight in July that included Starlink, it was enough reason for me to switch. It was amazing, like being on the internet at my house, that's how fast it is. For the two-hour flight, I was just doing work. As a founder, I don't get the luxury of being able to log off for a few hours in the middle of the day. When Slack and email are going, or I'm collaborating and working with teammates, or I'm building an app, I want to have fast internet.\n\nOn most Delta flights that I'm on, there's at least some segment of the flight during which the internet goes out for a period of time, whether for a few minutes or 20 minutes. The reliability of the uptime leaves a bit to be desired. Nearly all of Delta's peers went with Starlink, while Delta went with Amazon's Leo, which won't be out until 2028.\n\nI hope Delta takes stock of all the online chatter and listens to its customers. It has done a great job in the past of continually improving its product and listening to its customers. For the most profitable and what I feel is the most premium airline in America, it seems odd for Delta not to outfit its planes with the best in-flight internet.\"\n\nI think we'll see more and more stories like this. As people get a taste of Starlink wi-fi on planes, they won't want to go back, and will demand better internet from airlines that don't have it, and in some cases, just switch to flying other airlines that do have it.",
+        "created_at": "Thu Oct 15 14:49:18 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2110742900308844544",
+            "url": "https://pbs.twimg.com/media/HUrdfBEWIAA9Qm2.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EVs/space/tech. Bringing you the latest news in a single, easy-to-read feed. $TSLA & $SPCX investor, Model Y owner.",
+          "followers_count": 1143251,
+          "friends_count": 498,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 177,
+          "favorite_count": 1796,
+          "reply_count": 124,
+          "quote_count": 18
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241480665,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 177,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110775751448334674",
+      "text": "帮问下：有啥官方办法可以在iTerm2里开六个Claude tab 每一个对应不同的账号呢？",
+      "created_at": "Thu Oct 15 16:52:10 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110770182088249384",
+        "text": "@dotey 谢谢  宝玉 既然开了Team Plan 有啥官方办法可以在iTerm2里开六个Claude tab 每一个对应不同的账号呢 不然每次耗尽之时再切换很麻烦 而且也可能不在家",
+        "created_at": "Thu Oct 15 16:30:02 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "130038752",
+          "name": "John",
+          "screen_name": "jhcao23",
+          "description": "ExO Consultant\nIT Application Consultant",
+          "followers_count": 74,
+          "friends_count": 61,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 259087,
+        "friends_count": 1756,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2110742783141032333",
+      "text": "This comprehensive tutorial breaks down how to build an interactive 3D narrative game based on The Little Prince using an AI-driven workflow featuring Opus 5.5, Astra, Tripo, Blender, and Unity. Spanning asset generation, scene building, rigging, and animation, it provides step-by-step guidance and practical prompts to help creators build their own immersive 3D worlds using AI.\n\nhttps://t.co/FWCpT2nTne",
+      "created_at": "Thu Oct 15 14:41:09 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2109941568253927424",
+          "url": "https://video.twimg.com/amplify_video/2109941568253927424/vid/avc1/3840x2160/_NUImXhsfraGu0Tb.mp4?tag=29",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2110694725640474759",
+        "text": "https://t.co/9E8UhyOWsX",
+        "created_at": "Thu Oct 15 11:30:12 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1869683226178146304",
+          "name": "Sac",
+          "screen_name": "Saccc_c",
+          "description": "探索AI时代财富自由之路｜分享关于 AI 所探索到的一切\n欢迎探讨 AI 增长和 AI 自媒体 \n正在研究：3D AI ｜AIGC ｜Agent trading\n商务合作：📮： johnnyyin19@gmail.com| tg：@Sac_yin ｜vx: Sac_ccyin （备注来意）",
+          "followers_count": 46900,
+          "friends_count": 3337,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 353,
+          "favorite_count": 2271,
+          "reply_count": 228,
+          "quote_count": 201
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 259087,
+        "friends_count": 1756,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 6,
+        "favorite_count": 51,
+        "reply_count": 14,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2110733274448306267",
       "text": "Anthropic 告诉投资人：蒸馏占营收 5% 到 7%，三季度已大幅削减\n\nAnthropic 周三向投资人通报，“蒸馏”带来的收入占公司营收的 5% 到 7%，第三季度公司已经把这部分“大幅”削减。消息来自英国《金融时报》（FT），援引四位直接知情人士；The Information 也报道了同样的区间。\n\n蒸馏是什么？就是拿更强模型的回答当教材，训练自己的模型。对手实验室向 Claude 大量提问，把回答收集起来喂给自家模型，就能用较低成本学到 Claude 的一部分本事。\n\n既然是“学”，为什么会算进 Anthropic 的营收？因为这些提问走的是付费接口，每一次调用都按用量计费。蒸馏动辄要问几百万、上千万次，FT 的说法是蒸馏“涉及大量使用和花费”。也就是说，这笔收入是对手实打实付的钱，只是付钱的目的是训练竞争对手的模型。Anthropic 的商业服务条款明确禁止用它的服务“训练有竞争关系的 AI 模型”。\n\n5% 到 7% 是多少钱？报道没说这是哪个时段的占比，所以只能估算。网上流传的算法是按二季度营收 115 亿美元算，对应约 5.75 亿到 8 亿美元。注意这是推算，不是报道里的数字。115 亿美元这个数，来自 8 月彭博社看到的公司文件，原文是“超过 115 亿美元”，属于初步数字，Anthropic 没有公开确认。\n\n报道也没说这些钱来自哪几家公司。今年 2 月，Anthropic 曾发文点名 DeepSeek、月之暗面（Moonshot）和 MiniMax，说三家通过约 2.4 万个虚假账号，绕过 Claude 不对中国提供服务的限制，和 Claude 进行了 1600 多万次对话来蒸馏。\n\n主动砍掉这部分收入是有代价的。Anthropic 正在筹备上市，同一次通报显示，它三季度营收 168 亿美元，比二季度增长约 46%，而二季度比一季度翻了一倍多，增速已经放慢。据报道，公司告诉投资人，蒸馏收入减少会拖累本季度的数字；换来的是对手更难靠抄 Claude 的答案追上来。",

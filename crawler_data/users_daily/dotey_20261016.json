@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 259339,
+    "followers_count": 259377,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261016",
-  "last_updated": "2026-10-16T14:30:33.381183",
-  "tweet_count": 4,
+  "last_updated": "2026-10-16T19:14:48.131600",
+  "tweet_count": 7,
   "tweets": [
     {
       "id": "2110904083561255353",
@@ -175,6 +175,129 @@
         "favorite_count": 16,
         "reply_count": 10,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2111134693743861870",
+      "text": "补充一点，除了 Opus 5.5 调度，还可以充分利用 advisor，让 Fable 当 Advisor 给 Opus 当顾问\nGPT 6.1 Sol 干杂活其实挺不错的",
+      "created_at": "Fri Oct 16 16:38:28 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2110778345877344599",
+        "text": "这个思路太对了。\n\n$20 的 Claude Pro，把 Opus 5.5 当调度大脑用，实际产出真的能打到超高量级。\n\nOpus 5.5 除了自己写代码/写文档，拆任务、安排并行、设回调、验收结果也是一流。真正耗额度的脏活累活直接丢给便宜的国产模型或本地模型就行。\n\n一个比较理想的搭配是：\nOpus 5.5：只负责规划、拆任务、交叉验证、最终决策\n执行层：DeepSeek / Qwen / GLM 等国产模型专门干确定性高的活\n\n这样一套下来，Pro 的额度利用率会高很多。以前觉得自己是在亲自掌舵，现在更像是把 Opus 当成大副，自己只负责定方向和拍板。\n\n当然，如果预算允许，还是优先上 Claude Max 20x。",
+        "created_at": "Thu Oct 15 17:02:28 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1125309529145524224",
+          "name": "WquGuru",
+          "screen_name": "wquguru",
+          "description": "AI + Quant + Engineering\nNewshub → https://t.co/WmkVbbvE92\nBuilding Agent PoCs → https://t.co/pg7QEz0fGp\nAIGC(texts, videos, world models)\n📮 hello@wqu.guru",
+          "followers_count": 24470,
+          "friends_count": 661,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 11,
+          "favorite_count": 174,
+          "reply_count": 34,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 59,
+        "reply_count": 24,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2111140356557607405",
+      "text": "RT @bozhou_ai: 刚刚有个朋友问我：没有 AI 的时候，写代码不得写死了？当初是怎么写出来的？\n\n我说那时候真的是纯手敲，唯一借助的就是自动补全。\n\n但现在回想，那时候特别容易进入心流。一坐下去，不知不觉一天就过去了，写了几千行代码。… https://t.co/I…",
+      "created_at": "Fri Oct 16 17:00:58 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2110995015812231484",
+        "text": "刚刚有个朋友问我：没有 AI 的时候，写代码不得写死了？当初是怎么写出来的？\n\n我说那时候真的是纯手敲，唯一借助的就是自动补全。\n\n但现在回想，那时候特别容易进入心流。一坐下去，不知不觉一天就过去了，写了几千行代码。\n\n现在完全没有这种感觉了。布置一个任务，注意力就跑去干别的；要改的时候再切回来，脑子得重新装一遍上下文，切换成本极高。\n\n可算下来，我这一年写的代码，已经超过过去十年加起来的总量了。\n\n只是那种写到忘记时间的一天，已经很久没有过了。",
+        "created_at": "Fri Oct 16 07:23:26 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2110993271862550529",
+            "url": "https://pbs.twimg.com/media/HUvBMjybYAEies_.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1717726640040783872",
+          "name": "泊舟",
+          "screen_name": "bozhou_ai",
+          "description": "AI Coding / Agent 实战派\n帮编程新手和老板用 AI 把想法做成工具、产品和内容\n分享教程、工具和 AI 资讯\n我的中转站：https://t.co/fZVUtERAuT\nai代充：https://t.co/AwgjI06vbH\n\n合作 V:bozhou_ai",
+          "followers_count": 30362,
+          "friends_count": 825,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 53,
+          "reply_count": 34,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2111141214150164570",
+      "text": "RT @Khazix0918: https://t.co/lqZ5vGWM0J",
+      "created_at": "Fri Oct 16 17:04:23 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": {
+        "id": "2110587546271191166",
+        "text": "https://t.co/lqZ5vGWM0J",
+        "created_at": "Thu Oct 15 04:24:18 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1492195583699951620",
+          "name": "数字生命卡兹克",
+          "screen_name": "Khazix0918",
+          "description": "愿我们永远对世界保持好奇。\n公众号：数字生命卡兹克",
+          "followers_count": 94663,
+          "friends_count": 195,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 292,
+          "favorite_count": 1964,
+          "reply_count": 78,
+          "quote_count": 59
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 292,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
       }
     }
   ]

@@ -1,12 +1,74 @@
 {
   "date": "20261016",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-10-16T08:43:24.472553",
-  "tweet_count": 234,
-  "unique_tweet_count": 234,
-  "total_crawled": 400,
-  "duplicates_removed": 166,
+  "last_crawl_time": "2026-10-16T14:30:33.349877",
+  "tweet_count": 235,
+  "unique_tweet_count": 235,
+  "total_crawled": 434,
+  "duplicates_removed": 199,
   "tweets": [
+    {
+      "id": "2111097422810169575",
+      "text": "昨天学习了一下 handwired，做了一些例子，比如做了几个倒计时、贪吃蛇这种 https://t.co/A3B63zf3Y3\n\n最后做了个教学视频：把代码变成神经网络：不训练、一个数都不差，这有什么用\n视频1: 英文版\n视频2: 中文版\n\n有人把普通代码原封不动地变成了神经网络，一次没训练，结果一个数都不差。\n\n这期从期末总评和停车费讲起，说清神经网络的两种零件：加权求和和开关，再看一条“及格线”怎么变成 7 个权重、1 层的网络。\n\n接着用闰年、FizzBuzz、阶梯电价、生命游戏、贪吃蛇等例子，回答几个问题：\n权重和层到底是什么？\n和 ChatGPT 背后的 Transformer 差在哪？\n网络能不能在浏览器里现场训练，刷新还在吗？\n出了错怎么查？\n变成网络会更快吗，CPU 和 GPU 差在哪？\n这个思路还能用在哪？\n\n---\n视频制作的 Skill 参考：https://t.co/5KVPDqbJe2\n模型：Opus 5.5\n配音：Gemini 3.8 TTS",
+      "created_at": "Fri Oct 16 14:10:22 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2111095051069673472",
+          "url": "https://video.twimg.com/amplify_video/2111095051069673472/vid/avc1/1920x1080/F43-3a7YldjlnpB_.mp4?tag=29",
+          "bitrate": 10368000
+        },
+        {
+          "type": "video",
+          "id": "2111095051044413440",
+          "url": "https://video.twimg.com/amplify_video/2111095051044413440/vid/avc1/1080x1920/7QJZtAveWNeIHJ4w.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2110793952349577418",
+        "text": "Cheng Lou 开源 Handwired：手写权重，把程序逻辑变成不用训练的神经网络\n\nMidjourney 工程师、前 React 核心团队成员 Cheng Lou 开源了一个自称“玩具项目”的 Handwired：把程序里的 if-else 和循环改写成神经网络的权重。权重是手写的，不用训练，输出和对应的 JavaScript 程序完全一致，在浏览器里就能跑。\n\n原理一行代码就能讲清。比如 result = a > 4 ? 10 : 12，在 a 是整数时可以改写成：\n\nabove4 = relu(a - 4) - relu(a - 5)\nresult = above4 × 10 + (1 - above4) × 12\n\nrelu 就是 Math.max(0, x)，神经网络里最常见的激活函数。a 大于 4 时 above4 正好是 1，否则是 0。两个分支都算出来，再用它挑一个。神经网络本质上就是一堆乘法、加法加上 relu，所以程序里的判断和分支，都能收进一个大矩阵乘法里。\n\n也许你会好奇，神经网络的输出不是带概率、不精确吗？\n\nCheng Lou 的回答是：训练出来的才这样，按程序逻辑手写的权重，同样的输入永远得到同样的输出。\n\n他放了三个 demo。\n\n第一个是 Mini OS，一个有三个窗口和程序坞的小桌面，拖动、缩放、层叠、滚动、文字输入、动画都有。打开浏览器开发者工具看，页面就是普通的网页元素，没有大模型，也没有扩散模型。驱动它的是一个 130 层、9909 个权重的“神经网络”，训练次数为零，在浏览器里用 CPU 实时计算。\n\n第二个是实时搜索 10 万份 JSON 文档，每敲一个键重搜一遍。正则匹配、JSON 解析、高亮全是这种手写网络，再转成 WebGPU 代码放到显卡上并行跑。项目文档里的实测（Apple M5 Max + Chrome）：每次搜索 11 到 15 毫秒；浏览器自带的正则引擎一般 8 到 28 毫秒，遇到容易回溯的写法要 2 秒多。文档写明两者谁快说不准，所以页面把两个时间都列出来。浏览器不支持 WebGPU 时会退回 CPU，搜一遍要 13 秒。\n\n第三个是会“学习”的相册。整个程序可微分，也就是能用训练神经网络的反向传播来调参数。你在左边画几个矩形当草图，右边的照片布局由一个小网络算出，它的 244 个参数随着你拖动实时训练。损失函数里加了一项对齐惩罚，照片会自己往一条线上靠，没有任何代码专门去对齐它们。参数很少，训练全在 JavaScript 里跑。\n\nCheng Lou 还设想，把一段 Handwired 程序接到 nanoGPT（Andrej Karpathy 的一个小型 GPT 训练项目）这样的模型上一起训练，模型既能写莎士比亚，又能精确执行那段程序。这个目前只是 README 里的设想，仓库里没有现成实现。\n\n代码以 MIT 许可开源，demo 直接在网页上打开就能玩。想自己写，需要装 Bun，克隆仓库后从 template 目录的开关按钮示例开始，文档里有完整教程。\n\n推文说“把普通 JS 代码变成神经网络”，容易让人以为能把现成代码丢进去自动转换。项目文档写的是：没有工具能把已有的 JavaScript 源码转成网络。你要用它提供的构建函数，把逻辑一句句写成比较、选择、加权求和这类操作。网络每次都要把所有操作跑一遍，不能提前退出，也不能跑运行时才知道次数的循环，所以常见的循环得改写成计数、树形合并之类的结构，文档专门用一章讲怎么改。所有数都是 32 位浮点数，每个值的取值范围要事先声明。\n\n项目主页：https://t.co/ywg9dzrFbM\nGitHub：https://t.co/fg1sj0trv4\n原推文：https://t.co/QW2cMnSiWE",
+        "created_at": "Thu Oct 15 18:04:29 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 259339,
+          "friends_count": 1756,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 41,
+          "favorite_count": 312,
+          "reply_count": 42,
+          "quote_count": 8
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 259339,
+        "friends_count": 1756,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 16,
+        "reply_count": 10,
+        "quote_count": 1
+      }
+    },
     {
       "id": "2110990708664410539",
       "text": "RT @SpaceX: Falcon 9 launches USSF-481 to orbit from pad 4E in California https://t.co/FjBOh6qRii",

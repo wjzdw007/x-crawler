@@ -1,12 +1,135 @@
 {
   "date": "20261017",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-10-17T13:26:51.387374",
-  "tweet_count": 233,
-  "unique_tweet_count": 233,
-  "total_crawled": 428,
-  "duplicates_removed": 195,
+  "last_crawl_time": "2026-10-17T16:49:34.853453",
+  "tweet_count": 235,
+  "unique_tweet_count": 235,
+  "total_crawled": 433,
+  "duplicates_removed": 198,
   "tweets": [
+    {
+      "id": "2111493245729374275",
+      "text": "RT @anabology: TESLA ROADSTER: DOWNFORCE\n\nFlying cars are real https://t.co/RTkrhU1vfh",
+      "created_at": "Sat Oct 17 16:23:14 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2111462736924192768",
+          "url": "https://video.twimg.com/amplify_video/2111462736924192768/vid/avc1/1920x1080/MCotCiHVmKVscGXC.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": {
+        "id": "2111463531870609589",
+        "text": "TESLA ROADSTER: DOWNFORCE\n\nFlying cars are real https://t.co/RTkrhU1vfh",
+        "created_at": "Sat Oct 17 14:25:09 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2111462736924192768",
+            "url": "https://video.twimg.com/amplify_video/2111462736924192768/vid/avc1/1920x1080/MCotCiHVmKVscGXC.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1650509966388731904",
+          "name": "anabology",
+          "screen_name": "anabology",
+          "description": "co-founder https://t.co/6WejBPTCn7 (bioelectricity; at-home MRI) // https://t.co/j5dZ767ySN + https://t.co/TaekXhphbF // building Claudia: https://t.co/DlIhFS20Pv + Claudia Grok Bot: https://t.co/VcQYivvtOc",
+          "followers_count": 87601,
+          "friends_count": 1002,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 282,
+          "favorite_count": 1590,
+          "reply_count": 165,
+          "quote_count": 44
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241508170,
+        "friends_count": 1420,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 281,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2111487902869832182",
+      "text": "DeepSeek 发布 V4.1-Flash-1017：做事更快、回答更短，官网和 App 已换新；联网搜索 API 每千次 5 元，11 月 1 日起收费\n\nDeepSeek 发布 V4.1-Flash 的升级版 V4.1-Flash-1017（1017 指 10 月 17 日）。官方说它测试分数更高、完成任务更快、输出更短。输出短，消耗的 token（AI 计费单位，可以理解成文字碎片）就少，同一件事做得更好，也更省钱。\n\n普通用户打开 DeepSeek 官网或 App 用的就是新版。开发者调 API 的模型名还是 deepseek-flash，代码不用改。\n\n这一版主攻从零做完整个项目，演示里它从头做出了小游戏和 3D 模型。官方在 Hugging Face 公布的测试里，进步最大的是让 AI 在命令行里自己敲命令干活，从 31.2 分涨到 42.3 分。和 Anthropic 的 Opus 5 比，几项自动办事的测试它分更高，高难度问答和写完整程序仍然落后。这些分数都是 DeepSeek 自己测的。\n\n另一件事跟开发者的钱包有关：DeepSeek 把自家搜索引擎开放成接口。Search 输入关键词返回网页结果，Fetch 给一个网址把网页内容抓成文字，合起来能让 AI 应用上网查资料。每个接口每 1000 次成功请求收 5 元（英文版标 0.75 美元），失败、没搜到、超时不收钱。\n\n如果你把 DeepSeek API 接进 Claude Code、Codex 或 DeepSeek 自家的编程工具 DeepSeek Harness 当背后的模型，这些工具里 AI 自动发起的搜索和抓网页目前免费，北京时间 11 月 1 日零点（10 月 31 日 16:00 UTC）开始按次收费。\n\n模型同时开源，MIT 协议，允许商用，可在 Hugging Face 和魔搭社区（ModelScope）下载。它有 7630 亿个参数，个人电脑跑不动，主要给企业和云服务商自己部署。\n\n模型下载：https://t.co/nEtFe7TfN1\n搜索 API 文档：https://t.co/BjOtUeiPdx",
+      "created_at": "Sat Oct 17 16:02:00 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2111375640717033777",
+        "text": "🚀 DeepSeek-V4.1-Flash-1017 is here!\n\nStronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API.\n\n🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, WorkBuddy, and more. Upgrade to DeepSeek Harness v0.2.1-rc.1 or later for the best experience with the new model.\n\n1/4",
+        "created_at": "Sat Oct 17 08:35:54 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2111374498897571840",
+            "url": "https://pbs.twimg.com/media/HU0b65KbsAAypqr.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2111374506233413632",
+            "url": "https://pbs.twimg.com/media/HU0b7UfbwAAGXNH.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1714580962569588736",
+          "name": "DeepSeek",
+          "screen_name": "deepseek_ai",
+          "description": "Unravel the mystery of AGI with curiosity. Answer the essential question with long-termism.",
+          "followers_count": 1152908,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2890,
+          "favorite_count": 25360,
+          "reply_count": 1119,
+          "quote_count": 2042
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 259588,
+        "friends_count": 1756,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 15,
+        "reply_count": 18,
+        "quote_count": 1
+      }
+    },
     {
       "id": "2111423965726146937",
       "text": "RT @cb_doge: BREAKING: Mukesh Ambani’s Reliance says it welcomes competition from Elon Musk’s Starlink in India.\n\nHere are the facts:\n\n• St…",

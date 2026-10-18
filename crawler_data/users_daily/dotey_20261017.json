@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 259608,
+    "followers_count": 259632,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261017",
-  "last_updated": "2026-10-17T22:07:38.456670",
-  "tweet_count": 6,
+  "last_updated": "2026-10-18T02:44:00.510509",
+  "tweet_count": 7,
   "tweets": [
     {
       "id": "2111253970043953393",
@@ -314,6 +314,51 @@
         "favorite_count": 5,
         "reply_count": 6,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2111580933824655815",
+      "text": "rust是个好语言，但大项目编译速度太慢，这让agent得到反馈的速度很慢，加上资源消耗奇大，并行几个任务普通机器跑不动。\n所以我现在只是局部核心组件用，其他还是回归传统 Electron",
+      "created_at": "Sat Oct 17 22:11:40 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2111344687713751218",
+        "text": "这次 Rust 大会的主题是 Rust and AI。而 Rust 常被人诟病的一点是编译废 CPU、产物废磁盘，AI 堆 Rust 代码的速度也明显慢于其他语言。\n\n但反过来想，这个“缺点”在当下可能恰恰是一个特性：一个项目如果选择用 Rust 开发，至少说明作者和 AI 认真讨论过语言选型，并且做好了长期维护的心理准备——它是奔着建立长期关系去的，而不是 one night :)。如果只是想写个临时脚本或一次性工具，AI 绝不会推荐 Rust。在这个意义上，Rust 的高门槛和高成本，反而成了一种 PoW（工作量证明）。\n\n当 AI 让代码生成成本趋近于零、开源软件产品出现无限供给时，用户和社区该如何筛选项目？最真实的观察指标只有持续维护。大家可以回头看看年初 vibe coding 最火时涌现出的海量开源项目，到现在还在更新、作者自己还在天天用的，还剩多少？我相信寥寥无几。\n\n我自己的切身体会是：你需要一个工具，花半天让 AI 搓出来；当你开始天天用它时，接下来整整一周你都在修各种边界条件；如果你把工具分享给别人，考虑到不同的设备、运行环境、用户习惯，以及长期运行会不会撑爆内存和磁盘，至少还得再修上一个月。AI 极大降低了“写出代码”的成本，却丝毫没有降低“承担后果”的成本。\n\n这也反向定义了 Rust 在 AI 时代的生态位：动态语言把原型成本降到极低，却把并发、内存与边界 bug 的暗税全部延后到运维期；而 Rust 则逼着作者在第一天就把系统契约和确定性锁死。在垃圾代码无限供给的时代，唯有维护的决心和编译期的确定性是有价值的。除非确实找不到替代品且自己极度依赖，否则真的划不来随便自己造轮子；而一旦决定自己做，且选了 Rust，那就意味着一场严肃的长期主义工程。",
+        "created_at": "Sat Oct 17 06:32:55 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2111344556352454656",
+            "url": "https://pbs.twimg.com/media/HU0AsAfXwAAQLVM.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "14052954",
+          "name": "jolestar",
+          "screen_name": "jolestar",
+          "description": "BlockChain Maximalism | Building @holonrun | uxc  | x402x | @RoochNetwork | Move |",
+          "followers_count": 17209,
+          "friends_count": 2711,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 6,
+          "favorite_count": 87,
+          "reply_count": 17,
+          "quote_count": 5
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 46,
+        "reply_count": 58,
+        "quote_count": 10
       }
     }
   ]

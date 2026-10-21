@@ -1,0 +1,377 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 260623,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261021",
+  "last_updated": "2026-10-21T09:05:47.233342",
+  "tweet_count": 8,
+  "tweets": [
+    {
+      "id": "2112751585671409696",
+      "text": "今天看了 Every 的这篇《How Codex Happened》，整理的相当详细，其中对我感触最深的是关于 Codex Desktop 的这一段，看完才知道 Codex App 背后操刀的原来是 Tibo 和 Andrew Ambrosino。\n\n当时流行的都是 Cursor 这样的 IDE 内置聊天，但 Tibo 偏偏做了一件意外的决定：做一款原生桌面应用。\n\n他看到，模型能完成的任务越来越长，人们很快会同时开好几个智能体，一整天都和它们待在一起。他说：那就必须是一个非常丰富的界面，而不是一个 1970 年代的纯文本窗口。\n\n为此，他找来了设计师、程序员、前创业者 Andrew Ambrosino。\n\n他们没有像 Cursor 那样从 VS Code Fork 一个版本出来，虽然那是当时的标准做法；他们选择了参考聊天软件：左边是任务，每个任务一个智能体；右边是对话。\n\n然后，是最冒险的决定：应用里不放代码编辑器。\n\n想改代码？只能让智能体去改。\n\n因为一旦能敲代码，你就会期待编辑器的一切，一个四人小团队根本做不到。Codex 不可能靠当一个糟糕的编辑器取胜，它必须好到让你根本不想念编辑器。\n\n每天 Ambrosino 一进办公室就挨个问同时：“你在主力用 Codex 吗？”\n\n一开始，所有人的回答都是：没有。\n\n有同事在 Slack 上抱怨，就为了替换一句话，还得去提示 Codex。连 Ambrosino 自己也写道：不能编辑文件，是这次发布里我最怀疑的一点。\n\n2025 年 11 月，Google 发布了 Antigravity，一款把智能体和完整编辑器结合在一起的工具。主导它的，正是离开 Windsurf 的那批人。\n\nAmbrosino 都开始自我怀疑：“我们是不是犯了一个巨大的错误？”\n\n更要命的是模型。就算应用做完了，以当时模型的质量，它也“无法发布”。\n\n然后，事情开始变了。11 月，GPT-5.1-Codex-Max 发布，能连续编码好几个小时。12 月，GPT-5.2-Codex 发布。独立的模型线，让团队不用顾虑八亿 ChatGPT 用户，可以迭代得更快。\n\n12 月，那位抱怨的同事改口了：我现在大多数改动，只留一条行内评论，飞快。Glaese 说：5.2 是个转折点。\n\n那年圣诞假期，整个行业迎来拐点：开发者们用 Opus 4.5 和 GPT-5.2 从头到尾搭出完整的应用，一行代码都不用自己写。\n\n2 月，Codex 应用在 OpenAI 内部流行开来。研究员 Noam Brown 说，他已经完全切换。Brockman，一个忠实的终端加 Emacs 用户，说回到老工作流，感觉像穿越回了过去。Altman 后来说，这是他们做过的最受内部喜爱的产品。\n\n可是别忘了，Codex Cloud 当初在内部也很受欢迎，结果一发布，就扑了街。\n\n这一次，会不一样吗？\n\n----\n\n完整的内容可以看原文 https://t.co/FAwjVxHjCW ，这个视频是我基于原文相应章节去搜集资料剪辑的。",
+      "created_at": "Wed Oct 21 03:43:25 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2112748208300433408",
+          "url": "https://video.twimg.com/amplify_video/2112748208300433408/vid/avc1/1920x1080/1YKmjojVJKpKDX9d.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2110802324939485505",
+        "text": "Codex is one of the most important untold stories in the history of technology.\n\nA year ago, it was a scrappy effort in a quiet corner of @OpenAI. Its cloud product hadn’t found PMF, and the team was starting over from scratch.\n\nLess than 12 months later:\n\n- Codex swallowed the flagship ChatGPT desktop app from the inside (it literally runs as com.openai.codex on your Mac)\n- Codex and ChatGPT for Work hit 40M+ weekly users across engineering and knowledge work\n- Its leader @thsottiaux was elevated to run all of OpenAI’s core products, including ChatGPT, Codex, and the API\n\nHow did they pull it off?\nThey trained their own dedicated model line, separate from ChatGPT, with researchers and product builders sitting on the same team\n\nThey built four different products in a single year (cloud → terminal → IDE sidebar → a desktop app with no code editor at all) as every model leap made a new form factor possible\n\nThey used Codex to build Codex—so a handful of people could prove a new product in weeks instead of arguing for it in meetings\n\nI had a front-row seat to the whole arc—from their failed Cloud launch, to OpenAI’s offices the night before GPT-5 dropped, to the day Codex took over ChatGPT. \n\nAnd I spent months interviewing @gdb, @thsottiaux, @embirico, @mia_glaese, @aambrosino, and @edbayes to get inside how it all went down.\n\nHere is the full, behind-closed-doors story of the team that remade OpenAI:\n\nhttps://t.co/Ai7lTOJY5r\n\nWe’re pushing the boundaries of how stories like this are told.\nThis piece is completely agent-native—designed to be read alongside your agent inside ChatGPT’s in-app browser:\n\n- Every interview transcript is included in full: Click any quote and you (or your agent) can see the exact conversation it came from.\n\n- Built for your agent to explore: Ask your agent to pull out product lessons for your team, cross-examine the transcripts, or find insights I missed when writing the piece.\n\nIt’s a story about the future of software—built to be read with an agent:\n\nhttps://t.co/Ai7lTOJY5r",
+        "created_at": "Thu Oct 15 18:37:45 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2110773907221352448",
+            "url": "https://video.twimg.com/amplify_video/2110773907221352448/vid/avc1/1080x1080/joXSJUplMYNTxhaa.mp4?tag=29",
+            "bitrate": 8768000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "19829693",
+          "name": "Dan Shipper",
+          "screen_name": "danshipper",
+          "description": "ceo @every | the only subscription you need to stay at the edge of AI",
+          "followers_count": 144145,
+          "friends_count": 2159,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 59,
+          "favorite_count": 531,
+          "reply_count": 93,
+          "quote_count": 50
+        }
+      },
+      "stats": {
+        "retweet_count": 18,
+        "favorite_count": 123,
+        "reply_count": 62,
+        "quote_count": 7
+      }
+    },
+    {
+      "id": "2112754670338757051",
+      "text": "Anthropic 被质问“是在做安全还是在抢超级智能”，Dario 回应：三处沟通失误认了，路线不改\n\nAI 安全组织 Encode 的法律总顾问 Nathan Calvin 10 月 19 日在 X 上发长文，质问 Anthropic 到底是安全组织，还是一心抢先造出超级智能的竞赛选手。Anthropic CEO Dario Amodei 随后亲自回复。\n\n起因是 Anthropic 私下给国会传阅的一份联邦 AI 法案草案。据 Politico 报道，按这份草案，政府要叫停一个 AI 模型，必须证明它迫在眉睫地可能造成 50 人以上死亡或重伤，或超过 10 亿美元损失。Calvin 认为门槛太高。\n\n【Calvin 的质疑】\n\nCalvin 认为，Anthropic 过去一年的行动更像在全力赛跑，安全排在后面。Calvin 举的例子包括：签下约 5000 亿美元的算力协议；内部 AI 研发里由 Claude 主导的比例，从年初几乎为零涨到 8 月的 26%；改版安全规则，删掉了“风险控制不住就主动暂停”的承诺。\n\nCalvin 的核心问题是：Anthropic 每次犯错，为什么都恰好对自己有利？法案里那么多太宽松的条款，为什么没有一处错在太严的方向？\n\n【Dario 的回应】\n\nDario 承认有些事是失误，但不同意 Calvin 的结论。\n\nDario 说，Anthropic 的策略一直是“向上竞争”：自己先做出负责任的样板，逼整个行业抬高标准，而这只有站在最前沿才管用。所以买算力、做芯片、用 AI 加速研发，在 Dario 看来是这条路线的正常动作。\n\nDario 还列了 Anthropic 为安全付出的商业代价：生物安全过滤严到生物学家拿来开玩笑；最强的 Mythos 级模型压了几个月才大范围开放；不向中国控股公司卖 AI 服务；本周拿出公司 5% 股份成立公益基金。\n\nDario 承认没处理好的是三件事：一封给国会的信、一句“没法在第二名的位置上做安全”，以及这份法案草案。Dario 说这些是话没写仔细、团队之间没同步，作为 CEO 他负责。删掉暂停承诺这一项，Dario 认为可以讨论，但坚持旧规则太死板，改是对的。\n\nCalvin 原帖：https://t.co/d7vZNQQJzm",
+      "created_at": "Wed Oct 21 03:55:41 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2112732230124818891",
+        "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions of frontier AI companies. I think something would be wrong if companies of the size of Anthropic didn’t get harshly criticized basically every day; strong antibodies against corporate power are a healthy feature of a free society, and especially so when issues of the gravity of the one we’re facing are at play. I also do agree that some of the examples you cite were mistakes by Anthropic.\n\nThat said, I disagree with the thrust of your post. At the core, a good fraction of the things you criticize are consequences of Anthropic’s basic theory of change that we have held for many years. Our strategy has always been what I’ve called the “race to the top” — by showing how it’s possible to build the technology responsibly, we can raise the bar for the entire industry. The forces that drive the race to the top are hugely more effective if the company practicing them is at the frontier; that’s one lesson I’ve learned repeatedly. And looking at that strategy as a whole, I’m proud of our track record and stand by it.\n\nI believe that if we take a list of things that Anthropic did in the past year that were pro-safety and commercially costly to us, they far outweigh the list you’ve made, while at the same time I also disagree with some of the items on your list. Here are some things Anthropic has done, in the same period you’ve cited (the last year), which were very costly to us commercially while having strong safety benefits:\n\n1. We played a key role in SB53 (and other state laws), at a time when doing so was politically perilous to the company and AI regulation was very unpopular. We in fact argued for a stronger version of SB53 than was ultimately passed; there were a lot of stakeholders and we were not the limiting factor in the strength of the bill that was passed.\n\n2. We have very strong biological safeguards on our models, because we’ve seen concerning results in bio uplift trials and even seen and blocked potential attempts to misuse our models for bioweapons (as seen in our threat intelligence report from a few weeks ago). This is a very serious threat that we want to have zero tolerance for. But having very low false negatives means having significant false positives (despite months of effort on our part to improve the classifiers), enough so that biologists joke about how restrictive our classifiers are, and competitors sometimes sell against us by touting their more permissive bio capabilities. This has been very painful to us in an area where we care a lot about supporting an ecosystem of Claude users (biomedical science; and it is particularly frustrating to me as a biologist), but it’s the right thing to do and we intend to keep doing it.\n\n3. Similarly, we first had Mythos-class models in February but didn’t make them generally available until June (when we had stronger cyber safeguards in place). We only offered them to a limited set of partners in order to focus on cyberdefense. It would have been much more economically rational to simply release the model to everyone. We likely sacrificed a significant chunk of a several-month model lead. But because of this, many companies secured their cyber infrastructure before the deluge of widely available cyber-capable models. Of course there are ways it could have gone better or been run better, but this was what we were aiming to do.\n\n4. I advocated forcefully and publicly, in my essay Policy on the AI Exponential in June of this year, for the government to have the power to block model releases. Back then this was still outside or maybe on the edge of the Overton window, though I understand the window has moved since then. We were attacked intensely for this.\n\n5. I don’t want to re-ignite conflict, but the events of February 2026 are a strong example. It is clear that our public stance could have seriously damaged the company’s future.\n\n6. We’ve continued to advocate for export controls on chips and chipmaking equipment to China, because we think it allows democracies to negotiate from a position of strength on AI safety agreements. We’ve done this despite problems it’s created for us with industry partners who hold very different views and on whom we are very dependent.\n\n7. As far as I’m aware we were the first, and still only, frontier company to restrict the sale of AI services to PRC-controlled companies, including those operating through third countries (otherwise a major loophole). We’ve therefore forfeited significant short-term business to prevent fueling AI platforms and applications that would help the CCP’s military and intelligence services. We are also cracking down on distillation; generally, distillation is not a major threat to us commercially, but like chip exports it has concerning national security and safety implications, so we expend significant energy and company resources to address it.\n\n8. As you mentioned, we’ve put out a lot of reports, announcements, long model cards, public advocacy, etc, all trying to inform the public about the risks of AI. These involve a level of detail and effort that would be implausible for a purely profit-maximizing company.\n\n9. Just this week, we announced we were putting 5% (and possibly more over time) of the company into a public benefit fund.\n\nAll of these decisions came with very substantial costs to us. To be fair, those that involved holding back or restricting access to frontier capabilities also had a broader cost — for example, the public might otherwise have benefitted from faster progress in biology, so I am not saying that our decisions were without tradeoffs — but they were not driven by profit-seeking.\n\nFor each decision, you can come up with ulterior motives that could have driven us — I think it is a general truth that any decision, on any topic, can always be portrayed as a nefarious scheme. But most of those end up being pretty farfetched or don’t fully make sense if you actually examine them closely. For example, it is deeply implausible that it would be a shrewd business move to block a large swath of research biology in order to do the work ourselves and compete with our customers; we expect the benefit to the ecosystem to greatly exceed the work Anthropic does itself, and for the two to complement each other. It is not in Anthropic’s interest to be perceived as unfriendly to biologists. Our Life Sciences Verification Program, which gives vetted biology professionals access to our models, also refutes this idea. \n\nOf course, a different set of people will see this and make a different criticism: that Anthropic shouldn't be making decisions about who gets access to what in the first place. I agree, in the sense that ideally the government would be making these decisions, and that’s why we advocate for regulation. But for now we are forced to make them, and enabling bioterrorism isn’t a better option.\n\nI think that even if I conceded every item in your list, I would happily hold up mine next to it; I don’t think it’s a close call. That is of course partly subjective and different things are important to different people. Maybe one way you could object is that several of the items above relate to AI misuse and not loss-of-control; if you think the latter is much more important than the former, that might change your calculus. But this is not Anthropic’s view — we view both as serious issues. You can also disagree with our decisions, as many have, but they are consistent.\n\nBut I also disagree with at least some of your list. Several items don’t represent a deviation from Anthropic’s strategy or values at all, once we postulate the “race to the top” strategy that requires being a frontier AI company. Your items 1-4 are all simply examples of what it means to compete at the frontier, and we stand by them, both in the sense that they are transparently ordinary things to do as part of that strategy, and that we stand by the strategy as a whole. \n\nTo be fair, there are important questions worth confronting (and that we are confronting) about what to do when the AI-driven acceleration gets fast enough that it is hard for safety to keep up. We are nearing that point and that’s what’s driving some of our thinking about “pacing.” But 1-4 are actions taken before that point and should be perfectly expected based on Anthropic’s strategy as a company. Of course it is possible to disagree with that strategy, but that’s a more fundamental disagreement that you could have had any time over the last few years.\n\nI agree we could have handled your items 7, 8, and 9 better. All fall into the category of “rhetoric or policy communication that wasn’t carefully written or resulting from fast-changing circumstances not propagating from one team to another fast enough.” This kind of thing happens a lot in large organizations (Anthropic is over 5,000 people), and doesn’t even necessarily represent a failure or mistake of any single person. I am of course the CEO, and I take responsibility. The volume of communication from Anthropic is enormous and if these are the worst examples, I think we’re frankly doing pretty well, though I will continue to work hard to make sure we do even better.\n\nYour 5th item (the change to our RSP) is the most substantive item, and people can debate this, but I think that the old, more rigid RSP created a lot of situations where we were technically required to do something that required a lot of effort but in retrospect wasn’t very important for safety, as well as not covering some of the most important things. Our current RSP’s focus on transparency brought things like risk reports and roadmaps, and its emphasis on independent external review laid the groundwork for even more intensive embedded evaluation, all of which I think have been valuable in driving a race to the top. In the original announcement in September 2023, we described the RSP as an “early iteration that we [would] build on” and said that “rapid iteration…will almost certainly be necessary.” I understand that changing plans is always a move that creates justifiable scrutiny — I just don’t think we ever represented that we wouldn’t do so.\n\nRelating to your 6th item (having an FCF in addition to our RSP), I know our intent is to meet the letter and spirit of our regulatory obligations (via our FCF) while also remaining able to experiment with more novel approaches to risk management that go beyond what the law currently requires (via our RSP). I promise to look into it further, as it’s a complex issue and it is possible we are not weighing the considerations in the right way.\n\nOverall, although Anthropic has made plenty of mistakes as an organization — including some of the items on your list — I feel that we have repeatedly taken serious and substantive actions counter to our bottom line and that there is a significant negativity bias distorting assessments like the one you are making above. We’ll always try to do better but, again, I am extremely proud of our track record and stand by it. I will have more to say soon about how we are going to further live our values in this moment of rapid change.",
+        "created_at": "Wed Oct 21 02:26:30 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "874126509245476864",
+          "name": "Dario Amodei",
+          "screen_name": "DarioAmodei",
+          "description": "Anthropic CEO. https://t.co/qXHIf42jTl",
+          "followers_count": 854779,
+          "friends_count": 0,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 193,
+          "favorite_count": 2681,
+          "reply_count": 418,
+          "quote_count": 212
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 23,
+        "reply_count": 18,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2112757762677748106",
+      "text": "DeepSeek 确实挺了不起的👍",
+      "created_at": "Wed Oct 21 04:07:58 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2112333322030305537",
+        "text": "I think people will generally underestimate how much technological acceleration is directly attributable to deepseek. \n\nBecause of them, it is going to proliferate. Really, it's because of them. Thank you, for everything",
+        "created_at": "Tue Oct 20 00:01:23 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1173552893003255808",
+          "name": "kache",
+          "screen_name": "yacineMTB",
+          "description": "RL, robots, embedded, simulators. prev eng @ x, stripe. 6'3 (height)\n\ntensorpunk, Father 2u2\n\nsubscribe to read my blog!",
+          "followers_count": 411685,
+          "friends_count": 6563,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 364,
+          "favorite_count": 6240,
+          "reply_count": 107,
+          "quote_count": 52
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 58,
+        "reply_count": 9,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2112758776432304188",
+      "text": "fin 的 AI 半导体终局推演系列都写到 4 了，这次讲的核心问题是：DeepSeek 这类谁都能下载的开源模型越来越便宜，OpenAI、Anthropic 会不会赚不到钱、没钱买 GPU？\n\nfin 认为不会。\n\n第一个理由：价格降，成本降得一样快。\n\n每代新芯片让同样的电多产出约一倍的 token，软件优化每年再砍一半成本，利润率守得住。1GW 数据中心跑旗舰模型一年能卖 800 亿美元，硬件摊销每年只要约 80 亿。\n\n第二个理由：便宜模型和旗舰模型是两个市场。\n\n开源只能在低端打价格战，旗舰层只有 OpenAI 和 Anthropic 在争，价格稳。\n\n第三个理由：开源占 token 用量 20% 以上，按实际花的钱只占 5% 到 10%。\n\n模型越强，能接的长任务越多，需求还会涨。",
+      "created_at": "Wed Oct 21 04:12:00 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2112705527545499955",
+        "text": "https://t.co/pWJB7yyXvq",
+        "created_at": "Wed Oct 21 00:40:24 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1503621835136462849",
+          "name": "fin",
+          "screen_name": "fi56622380",
+          "description": "立场不重要，事物的运行逻辑和内在规律才是更值得关注的部分 | \n\n读过三个不同专业的学位，体验过两个大洲的尘世生活，设计过一次火星车芯片，还没有去看过心心念念的冰川",
+          "followers_count": 78504,
+          "friends_count": 533,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 45,
+          "favorite_count": 224,
+          "reply_count": 11,
+          "quote_count": 6
+        }
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 92,
+        "reply_count": 34,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "2112775224236077393",
+      "text": "这些天以来目前为止最有价值更新：Codex 和 Work 的登录用户，缓存会永久保留，回到几小时前的旧对话或恢复会话，都保证命中缓存，没有“惩罚”（我理解是不会按照缓存失效收费）。\n\n怀疑是保存到磁盘了，那也很牛👍\n\n除此之外，OpenAI 开发者官方账号宣布，API 的提示缓存现在可以保留 12 小时，默认仍是 30 分钟。首次写入收原价 2.5 倍，之后读取缓存只收 1 成。\n\n官方文档：https://t.co/W2vqQNzbzQ",
+      "created_at": "Wed Oct 21 05:17:21 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2112712984644784534",
+        "text": "Day 16/\n\nYou can now cache for 12h in the API and for logged in users across Codex &amp; Work we keep cache forever and you don’t have any penalty for coming back to an old conversation or resuming after a few hours and are now guaranteed to hit the cache.",
+        "created_at": "Wed Oct 21 01:10:02 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1953337039510003712",
+          "name": "Tibo",
+          "screen_name": "thsottiaux",
+          "description": "Codex & ChatGPT @OpenAI",
+          "followers_count": 905637,
+          "friends_count": 76,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 564,
+          "favorite_count": 12010,
+          "reply_count": 1976,
+          "quote_count": 912
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 60,
+        "reply_count": 58,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2112778870256472083",
+      "text": "RT @wquguru: 静态逆了一遍 Claude，发现100台Mac Mini都救不了的八大天坑：\n\n1. 手机插国区 SIM 卡：Sift 会记录下来，和出口 IP 国家对不上，直接完蛋\n\n2. 清 App 数据换新号：基本没用，Sift 的 installation_i…",
+      "created_at": "Wed Oct 21 05:31:50 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2112759397554561295",
+        "text": "静态逆了一遍 Claude，发现100台Mac Mini都救不了的八大天坑：\n\n1. 手机插国区 SIM 卡：Sift 会记录下来，和出口 IP 国家对不上，直接完蛋\n\n2. 清 App 数据换新号：基本没用，Sift 的 installation_id 就是 ANDROID_ID，硬件级绑定，服务端仍能判断\n\n3. CLI 多账号共用 ~/.claude.json：device_id 不变、account_uuid 变，赤裸裸的一机多号\n\n4. 桌面切号只换账号不换 userData：ant-did 特征会跟着，如果整包复制到新机等于把识别信息原样搬过去\n\n5. 只给 https://t.co/JQehsPfVZy 配住宅IP：Sentry / Datadog / Sift / Segment 走机场，同一账号两条 IP 轨迹\n\n6. 注册/支付/KYC：Turnstile、hCaptcha、Stripe 3DS、Persona 都会看提交那一刻的 IP\n\n7. 已被限制的情况下换着 IP 反复请求：每请求一次，风控分数继续叠加\n\n8. 一个住宅 IP 挂多个账号：明显的集群信号",
+        "created_at": "Wed Oct 21 04:14:28 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2112747723078422809",
+          "text": "用 REA 分析完 Claude Code（含Mac CLI、Mac App、Android App），这应该是全网最全的代理规则了，先说几个点：\n\n1. 安卓端：检测最强，通过 Sift 进行反欺诈检测，检测 SIM 卡所在国家，收集的硬件设备ID（ANDROID_ID + Play Integrity + 硬件 key）即使重装软件也不改变\n2. Mac App 和 Mac CLI：通过 sentry 和 datadog 采集遥感数据，设备 ID 纯随机，不与硬件绑定\n3. 推测 iOS 端和安卓端差不多\n\n全分析过程由 Mac 完成，用 DeepSeek Harness + flatkey（亲测对于 REA 非常之赞）：\n\n1. 下载安装 DeepSeek Harness 桌面版：https://t.co/Tbw4KseVuT\n2. 注册 flatkey（支持 100+ 大模型，最近活动期国产模型低至 6 折，日常 8 折）\n3. DeepSeek Harness 中配置 flatkey：base url 设置为 https://t.co/oKRWGKG2Y4，API Key 从后台创建拷贝，模型选择 deepseek-v4-1-flash-1017\n\n完整规则更新到了 https://t.co/PFGQHdosPe",
+          "created_at": "Wed Oct 21 03:28:04 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2112746981588455424",
+              "url": "https://pbs.twimg.com/media/HVH8L5nb0AAPmfk.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1125309529145524224",
+            "name": "WquGuru",
+            "screen_name": "wquguru",
+            "description": "AI + Quant + Engineering\nNewshub → https://t.co/WmkVbbvE92\nBuilding Agent PoCs → https://t.co/pg7QEz0fGp\nAIGC(texts, videos, world models)\n📮 hello@wqu.guru",
+            "followers_count": 24807,
+            "friends_count": 670,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 25,
+            "favorite_count": 313,
+            "reply_count": 41,
+            "quote_count": 7
+          }
+        },
+        "user": {
+          "id": "1125309529145524224",
+          "name": "WquGuru",
+          "screen_name": "wquguru",
+          "description": "AI + Quant + Engineering\nNewshub → https://t.co/WmkVbbvE92\nBuilding Agent PoCs → https://t.co/pg7QEz0fGp\nAIGC(texts, videos, world models)\n📮 hello@wqu.guru",
+          "followers_count": 24807,
+          "friends_count": 670,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 18,
+          "favorite_count": 243,
+          "reply_count": 38,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 18,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2112780031139176779",
+      "text": "我猜测 Codex 和 Work 也是 12 个小时，只不过缓存没有命中的成本 OpenAI 给你覆盖掉了。\nhttps://t.co/Z52PCFqbvd",
+      "created_at": "Wed Oct 21 05:36:27 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2112776448834683284",
+        "text": "@dotey 永久保存～永久！",
+        "created_at": "Wed Oct 21 05:22:13 +0000 2026",
+        "lang": "ja",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1660062196603277314",
+          "name": "虎小象",
+          "screen_name": "hx831126",
+          "description": "不过是 Prompt Kiddide 罢了",
+          "followers_count": 9781,
+          "friends_count": 89,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2112788283251962092",
+      "text": "Meta 工程师确认：Meta 已在正式业务里用 Google TPU 跑 AI 推理\n\n10 月 20 日，Google 在开发者博客发布 TPU 版 SGLang 推理引擎，文中引用了 Meta 的 PyTorch-TPU 负责人 Zongwei Zhou 的原话：\"SGLang-TorchTPU 今天已经在 Meta 的生产环境中运行。\"这是目前唯一的一手确认。\n\nTPU 是 Google 自研的 AI 芯片，对手是英伟达 GPU。推理就是 AI \"上岗干活\"，你每问一个问题，它算出答案就是一次推理。\n\nZongwei Zhou 没说规模多大、用在哪些产品、TPU 是租的还是买的。The Information 今年 2 月报道过，Meta 和 Google 签了多年、数十亿美元的 TPU 租用合同，两家没有公开细节。\n\nGoogle 开发者博客：https://t.co/1pKn6zeugg\nPyTorch 博客：https://t.co/9MglhcELsd",
+      "created_at": "Wed Oct 21 06:09:15 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2112740274870837443",
+        "text": "BREAKING NEWS🚨🚨: TODAY META CONFIRMS THEY ARE RUNNING TPU INFERENCE IN PRODUCTION. What does this mean for the CUDA moat?\n\nFor those who read our public newsletter, this is not a surprise, as on Nov 28, 2025, we publicly wrote that Meta is a TPU customer & has lots of engineers working on TPUs. Our accelerator supply chain model has details about Meta's TPU procurement!",
+        "created_at": "Wed Oct 21 02:58:29 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2112740272899514368",
+            "url": "https://pbs.twimg.com/media/HVH2FZzWYAAI22R.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1745106082790318080",
+          "name": "SemiAnalysis",
+          "screen_name": "SemiAnalysis_",
+          "description": "",
+          "followers_count": 176585,
+          "friends_count": 38,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 48,
+          "favorite_count": 595,
+          "reply_count": 48,
+          "quote_count": 21
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 24,
+        "reply_count": 30,
+        "quote_count": 3
+      }
+    }
+  ]
+}

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 260721,
+    "followers_count": 260794,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261021",
-  "last_updated": "2026-10-21T14:50:37.342753",
-  "tweet_count": 8,
+  "last_updated": "2026-10-21T19:55:13.621523",
+  "tweet_count": 13,
   "tweets": [
     {
       "id": "2112751585671409696",
@@ -371,6 +371,221 @@
         "favorite_count": 24,
         "reply_count": 30,
         "quote_count": 3
+      }
+    },
+    {
+      "id": "2112930378994557130",
+      "text": "RT @HiTw93: 书接上回，接着聊昨晚聊的多端技术选型，今天我们来聊第二篇，说说我是怎么在 Mac 上来开发原生 Windows 软件的，以及我是如何搭建编译、测试环境的，还有最近一个月做 Mole Windows 版踩过的一些有意思的坑。\n\n技术栈上，Mac 版本的 M…",
+      "created_at": "Wed Oct 21 15:33:53 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2112915889523941780",
+        "text": "书接上回，接着聊昨晚聊的多端技术选型，今天我们来聊第二篇，说说我是怎么在 Mac 上来开发原生 Windows 软件的，以及我是如何搭建编译、测试环境的，还有最近一个月做 Mole Windows 版踩过的一些有意思的坑。\n\n技术栈上，Mac 版本的 Mole 使用的也是原生的 Swift + SwiftUI，能够让我很好调用系统能力以及非常好的性能体验，想着不将就，所以在 Windows 上我也是想着直接用本身写 Windows 软件最直接的语言， C# 加 WinUI 3，跑在 .NET 10 上，过程虽然难搞，但是相比十年前我了解轮子哥谈的 Windows 开发要简单好理解一些了。\n\nWindows 上的原生界面框架其实挺多的，包括很多年前了解过的 Win32、WinForms、WPF、UWP 这一波，WPF 是 2006 年出的，到现在还在维护，但控件和设计语言不是很好看，非常上一代的感觉，然后 UWP 又被沙盒和应用商店给绑定住，现在微软主推的是  Windows App SDK 里的 WinUI 3，界面框架从系统里面拆出来单独发版，这样就有一个好处，普通的 Win32 程序也能用，基础组件就是 Windows 11 自己的 Fluent 风格，我还挺喜欢，高分屏缩放和 ARM64 都是原生支持。\n\n然后这里 .NET 10 是去年 11 月发的长期支持版本，打包时我把运行时一起打进去，用户不需要另外装 .NET，x64 和 ARM64 这里各出了一个原生安装包，骁龙的 Windows 笔记本就不要走转译了，相当于尽量让用户使用简单不折腾。这里安装和更新用的是开源的 Velopack 框架，可以很方便做增量更新，也很好用。\n\n工程师开始写代码时候肯定会想到能复用尽量复用，所以我开始写的时候也非常想复用 Mac 的 Swift 代码，后面让 AI  分析了一下，十几万行代码 Swift 代码可以脱离  AppKit、SwiftUI 这些系统框架使用的20%都没有，处理的逻辑也是  ~/Library  这类 macOS自己的路径规则，基本用不上，所以  Windows 版几乎是从零开始写的。\n\n两边的关系其实非常简单，外观和交互我尽量完全一致，尽可能让大家意识里面认为的 Windows 软件不那么精致美观的感觉在这里也保持我认为好的水平，然后底层代码各写各的，关于视觉的一致性还原有了AI以后很简单，我把原本的 Mac 版写在 Swift 里的颜色、字号、间距、圆角这些设计 token，直接写了一个脚本生成为 Windows 里面XAML 资源，文案也是从 Mac 的多语言文件转成 Windows 的格式，11 种语言一起转过来，甚至大家看到的菜单栏里面的那个runner动画也是用的同一个脚本同步来的。\n\n虽说同步，可能大家会觉得很简单，其实这里需要花点精力防止 AI 直接给你跑偏了，每次同步其实我会记录对应的是Mac的哪一个提交，这样两边就不会走偏去，然后功能上会有一份 SYNC.md 当做对账表，Mac 每加一个功能、修一个安全问题，Windows 这边都会标清楚哪些是已经实现、哪些是刻意不同还是不适用，以及为什么这样判断。\n\n通过这两个机制，我可以很好的让两边的底层完全各写各的，但是又能很好地保持功能对齐，完全不需要刻意去硬写一层兼容去磨平，反而会变复杂，这里能复用的反而是设计、文案以及踩坑后定下来的各种规则，反而这些是 AI 非常喜欢的“能力抽象层”，也就是说随着时代发展，慢慢所谓的代码抽象没有那么重要了，反而是规则抽象更重要。\n\n另外 Windows 开发还有一块比 Mac 要麻烦不少，就是证书签名，没有签名的，一打开会出现「Windows已保护你的电脑」，甚至 Windows 11 的智能应用控制会直接不让运行，国内不少安全软件也会把没签名的程序当成可疑报毒，这和 Mac 上没签名、没公证的软件提示「已损坏」差不多，平时 Mac 上大家还可以跑一条命令解掉，Windows 上想正规分发，这一步没有啥好办法，就是需要。\n\n调研下来微软的签名生态的确比苹果差太多了，微软有自己的 Azure Artifact Signing，一个月 9.99 美元最省事，居然个人只开放给美国和加拿大的开发者，没办法使用，很奇葩的规定，然后行业还规定从 2023 年起签名私钥必须放在硬件或者云端 HSM 里，不能再是电脑上的一个文件，今年起单张证书最长只能用 460 天，差不多一年多就得换一次证书\n\n最后我买的是 Certum 的云端 OV 证书，3 年 3百多美元，签名时登录电脑上的 SimplySign，再用手机上的 App 给一个动态码，SmartScreen 的信誉也跟着证书上审核过的名字慢慢积累。刚开始一段时间的签名包在 ThinkPad 上也会一样被 SmartScreen 拦了下来，后来我每次发版都把安装包提交到微软的恶意软件分析门户，让信誉慢慢积累起来，而且 SimplySign 的登录会话闲置几个小时就会断开，需要再次输入动态码才能继续签名，所以这里其实很难做成云端自动打包。\n\n证书搞定后，就是开发环境的事情了，我的研发要求是代码和 AI 的上下文必须全留在 Mac 上，Mac 用习惯了，真的很难使用 Windows 去研发，这里 Windows 只负责编译和验证效果和各种测试，所以我在 Mac 上装了 Parallels Desktop，大概 3 百多块一年，之前也挺不少小伙伴吐槽过这个软件，不过在我的 M5 Pro 上跑 Windows 11 还挺顺滑，让我感觉这个钱花得很值。\n\n它最好用的一点是我的 Claude 能很顺手地操作它，仓库直接作为 Parallels 的共享文件夹挂进虚拟机，变成一个 X 盘，Mac 上改完代码，虚拟机里直接编译，不需要来回 Copy 文件，只是两边的编译产物要分到不同的目录，对于编译、启动、看日志的工作都被我写成了脚本，通过 Parallels 自带的 prlctl exec 直接在虚拟机里执行，程序启动就崩的时候 Windows 只给一个 0xc000027b，Mole 会把真正的异常写进日志，脚本跑完顺手打印出来，Claude 直接就能读到。相当于写代码还是在 Mac 上的 Claude Code 里，调试和运行都在虚拟机里，脚本不能解决的地方，直接用 Codex 的 computer use 去点，只有少部分那种系统确定弹框点不了，我在这里就是这个职责，点点系统弹框确定，哈哈。\n\n说到这里，可以和大伙分享一下 Mole Windows的架构分层，一共四层，最底下的 Core 只依赖 .NET，不碰任何 Windows 接口，清理规则、路径安全检查、卸载残留的判断都放到这里，测试用的是一个按 Windows 路径规则模拟出来的内存文件系统，这样在 Mac 上也可以很好的跑；往上是 Platform 层，注册表、文件系统、Win32 调用这些真正的系统接口都放在这一层，打开 EnableWindowsTargeting 以后，Mac 上也能编译通过；再往上就是写过应用同学非常熟悉的界面状态的 ViewModel 层，这里和 Mac 版本会一一对应，这样也能够在 Mac 上测，只有最上面这一层的 WinUI 界面必须去 Windows 里编译。\n\n这也是让我一个月时间可以写8 万多行 Windows 代码、4000 多个测试，但是几乎大部分可以在 Mac 上完成的一个很方便的地方，也是架构设计的巧妙处，当然这里我只提供之前做架构时候的想法建议，大部分是 Opus 5.5 去帮我整的，很牛逼。\n\n接着可以聊测试了，我反而认为 在 AI 时代，工程师最大的价值，除了架构设计外就是这个测试验证了，所以为了保证产品是可以售卖的，肯定需要在真实环境测试验证，反复找体验问题去修复的，所以我整了一台 ThinkPad X1 Carbon，这个机器质感还不错的，我把它当成真机环境，设置永不休眠，可以让我和我的Agent 24 小时去验证测试回归，包括获取各种真实系统环境的参数验证，400 多款 Windows 软件的卸载、残留清理、注册表、启动项测试，大部分在虚拟机里跑，x64 安装包、真实的高分屏、电池、SmartScreen 这些虚拟机看得不准确的，就直接放到这台机器上验，所以这台机器让我感觉也非常值。\n\n然后为了不想在两台机器拷来拷去，最后还是用了 UU 远程，直接在 ThinkPad 那边开一个远程终端，我这边在 Mac 上直接操作，然后还把 ssh 连接当做备用，大部分软件的安装、卸载和调试，都是通过命令行脚本去完成的，剩下需要看界面的，直接通过远程桌面让 computer use 去操作，非常方便，最终相当于我还是在 Mac 上做的所有的事情。\n\n差不多就是这些啦，这个过程下来，到最后成品让几个 Mole 天使用户去试用，大伙用着很爽，感觉这个过程的开发非常值，很有意思，而且可以帮助大家解决不少痛点，加上 Windows 上小白用户应该比 Mac 要多不少，让他们也享受到好软件的体验其实很值得开心。\n\n差不多这两天这两篇文章算是把我这一个月的思考和想法聊完了，欢迎交流，有在做 Windows 开发的小伙伴也可以一起聊聊你们的最佳实践，假如还有空，下一篇我想着给大伙聊聊怎么在研发过程中借其他程序语言的生态来补桌面端的短板，这里也非常有意思。",
+        "created_at": "Wed Oct 21 14:36:18 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2112913819899191296",
+            "url": "https://pbs.twimg.com/media/HVKT7Kwa4AAKv3K.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1521688129559613440",
+          "name": "Tw93",
+          "screen_name": "HiTw93",
+          "description": "Pake · MiaoYan · Kaku · Waza · Kami · https://t.co/PAsOstTehy",
+          "followers_count": 163077,
+          "friends_count": 281,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 17,
+          "favorite_count": 194,
+          "reply_count": 24,
+          "quote_count": 5
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 17,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2112934529916616991",
+      "text": "PHP 曝两个免登录就能接管服务器的漏洞，AI 参与发现，所有 PHP 网站要马上升级\n\nPHP 官方 10 月 21 日紧急发布 8.5.12、8.4.27、8.3.36、8.2.35，修补两个严重漏洞（CVE-2026-109618、CVE-2026-109619，研究者叫它 PHP2Shell）。按 PHP 官方的说法，攻击者不用登录，发特制请求就可能在服务器上执行任意代码，等于拿到整台服务器。WordPress、Drupal、Magento 都跑在 PHP 上，OpenAI 引用的估算是约 70% 的网站在用它。\n\n【我的 PHP 网站受影响吗】\n\n基本都在范围内。PHP 官方说，凡是对外处理网页请求的 PHP 都有风险，PHP-FPM、Apache mod_php、LiteSpeed 等常见跑法全包括，mod_php 风险最高。按 Wiz 和 Sansec 的说法，2012 年发布的 PHP 5.4 以来的版本都受影响。\n\n问题出在 PHP 引擎本身，好比大楼门锁坏了，你家装修得再好也没用。Wiz 和 Calif 已在最新版 WordPress、Drupal、Laravel 等上演示了免登录攻击。\n\n【现在该做什么】\n\n自己管服务器的：立刻升级到上面四个版本之一。PHP 8.1 及更早版本官方已停止维护，只给了 7.4、8.0、8.1 的源码补丁；用 Ubuntu、Debian 等发行版自带 PHP 的，看发行版的安全更新。\n\n用虚拟主机、托管 WordPress 的普通站长：PHP 由主机商管，装插件、改网站代码都修不了。去控制面板看 PHP 版本，或直接问主机商补了没有。\n\nPHP 官方给的临时配置只能降低风险，官方明确说升级才是唯一完整的办法。Cloudflare 给所有用户（含免费版）上了拦截规则，但它自己也说只是临时挡一下，而且只管经过 Cloudflare 的流量，攻击者绕开它直连服务器就挡不住。\n\n【AI 立了什么功】\n\nOpenAI 说，安全公司 Calif 在它的 Patch the Planet 计划里用 GPT-5.6 Sol 找到漏洞。据 Sansec 整理的时间线，Calif 8 月 11 日就报给了 PHP；Wiz 也独立发现并上报，用的是 Gemini 4 Argon 和 GPT-5.6 Sol 等工具。OpenAI 称两个月来牵头协调维护者和安全厂商准备修复，认为这是近年影响最大的漏洞之一，也是 AI 抢在攻击者前面发现漏洞的例子。\n\n【提前泄露了吗】\n\n属实。漏洞原定 10 月 22 日公开，20 日有人在 Hacker News 发帖提前曝光，帖子删了但截图已传开，PHP 官方随即把发布提前到 21 日。\n\n攻击已经开始。Cloudflare CTO 在补丁发布前几小时就说看到早期攻击；安全公司 watchTowr 说已有人用 AI 辅助写的工具发起攻击，\"目前还没人成功，但不会太久\"。荷兰政府的 DigiD 等网站先自行下线避险。\n\nPHP 官方公告：https://t.co/UZYhjf3CWO\nOpenAI 原文：https://t.co/jKdbrEaMB8\nWiz 技术说明：https://t.co/SrODSYiXOv",
+      "created_at": "Wed Oct 21 15:50:23 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2112907856018309586",
+        "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites.\n\nOver the past two months, we led a coalition of maintainers, researchers, and security providers to prepare fixes and protections ahead of disclosure. This duration was necessary because the fix was quite intricate and required a major change to the PHP engine. Every site using PHP can now safely upgrade their version to stay secure, in addition to applying mitigations from various security vendors.\n\nDue to the severity of these flaws and PHP’s widespread use, we consider this bug to be one of the most impactful vulnerabilities in recent memory. It also marks a new phase, where AI can find security bugs with internet-scale impact. \n\nThis is an example of the Defender’s Window in action: to our knowledge, frontier AI was able to find this vulnerability ahead of attackers, giving defenders time to prepare.\nhttps://t.co/TW3jrSbB3f",
+        "created_at": "Wed Oct 21 14:04:23 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 5459725,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2473,
+          "favorite_count": 12202,
+          "reply_count": 472,
+          "quote_count": 1222
+        }
+      },
+      "stats": {
+        "retweet_count": 19,
+        "favorite_count": 97,
+        "reply_count": 26,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2112959547039985972",
+      "text": "印度发证机构 eMudhra 8 枚“网站公章”密码小于 256，谁拿到都能冒充任何网站；浏览器已堵上，App 和设备要等更新\n\n你在手机上登录银行、购物网站，地址栏会有一把小锁。这把锁保证你连上的真是这家银行，没有人半路冒充。哪怕连的是咖啡馆里来路不明的 Wi-Fi，有这把锁，别人也看不到、改不了你输入的密码。\n\n小锁的原理像查身份证。网站会出示一张“网络身份证”（行业里叫证书），上面盖着发证机构的章。你的手机和电脑里存着一份可信发证机构的名单，章对得上，锁就亮。\n\n这次出事的是印度发证机构 eMudhra。它有 8 枚章被主流浏览器和系统认可，盖章靠的是一串保密的数字（私钥），本该是 100 多位的随机数，没人猜得到。Mozilla 工程师 Dennis Jackson 说，这 8 串数字都小于 256。安全研究员 Scott Helme 举的例子是 4、56、115，他说不到一秒就算出来了。\n\nCloudflare 说，拿到这些章的人能给任何网站做假身份证。比如在公共 Wi-Fi 上假扮你的银行，小锁照样亮着，你输的密码、看的内容都可能被截走或篡改。\n\n【为什么影响大】\n\n这些弱密码 2025 年 4 月就生成了，直到 2026 年 10 月 17 日才被研究者 Wayne 发现，挂了一年半，谁都能算。Mozilla 说已有多人各自算出了这些密码，有人还公开了。\n\n浏览器好办。Jackson 的网站显示，Chrome、Firefox 当天就拉黑了这些章，Apple 19 日、Microsoft 20 日跟进，大多在后台自动生效。Jackson 说主流浏览器只认在公开账本上登记过的证书，账本里查不到这些章盖过东西，所以过去用浏览器的人不会中招。\n\n麻烦在浏览器之外。手机 App、公司服务器、路由器、各种联网设备，很多自带一份名单，要等软件更新才会拉黑，老设备可能永远等不到。它们大多也不查那个公开账本，Jackson 说不知道这一年半里它们有没有被攻击过。Cloudflare 说，浏览器只用改一个程序，Cloudflare 自己要改几百个。\n\neMudhra 回应说，是生成密钥的脚本出错，员工又误用了弱的那套，10 月 18 日已作废这 8 枚章。\n\n【要做什么】\n\n普通人：把浏览器、手机和电脑系统、常用 App 都更新到最新。用 Cloudflare WARP 或 1.1.1.1 App 的，Cloudflare 已发新版，记得升级。\n\n开发者和站长：Cloudflare 提醒，程序里核对证书的可能是网络库、编程语言或操作系统，光升级 SDK 不够，要一路更新到底，再重启服务。更新后如果冒出证书报错，Cloudflare 说别靠关掉证书检查来解决，关掉了，小锁就没用了。\n\nJackson 做了个自查网站，能测浏览器和程序还认不认这些章，也列了各软件的修复版本：https://t.co/iJDiH3dZ4O\n\n原文：https://t.co/MWRCEM1fKF",
+      "created_at": "Wed Oct 21 17:29:47 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2112672178713890995",
+        "text": "Following the discovery that eight eMudhra intermediate certificates use weak keys, Cloudflare is deploying mitigations and releasing client updates. We explain the impact, our response, and what customers and developers should do next. https://t.co/lYGxHb3PHS",
+        "created_at": "Tue Oct 20 22:27:53 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "32499999",
+          "name": "Cloudflare",
+          "screen_name": "Cloudflare",
+          "description": "Cloudflare is the world’s leading #ConnectivityCloud, and we have our eyes set on an ambitious goal — to help build a #BetterInternet.",
+          "followers_count": 320547,
+          "friends_count": 5400,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 336,
+          "favorite_count": 1965,
+          "reply_count": 37,
+          "quote_count": 55
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 21,
+        "reply_count": 4,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2112979572707013113",
+      "text": "这是Tim本人吗？",
+      "created_at": "Wed Oct 21 18:49:22 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2112940762291941794",
+        "text": "iPhone Duo Review: 10,000 Folds Later... https://t.co/AR7oHSbw3p",
+        "created_at": "Wed Oct 21 16:15:08 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2112938824737439744",
+            "url": "https://video.twimg.com/amplify_video/2112938824737439744/vid/avc1/3840x2160/3Ol0JHAoTYTEbA-K.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2034172652093583360",
+          "name": "Tim Pan",
+          "screen_name": "mediastorm_en",
+          "description": "Hi I'm Tim—from China with love, chasing crazy adventures to brighten your day!",
+          "followers_count": 2847,
+          "friends_count": 0,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 505,
+          "favorite_count": 10778,
+          "reply_count": 277,
+          "quote_count": 145
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2112995995017421133",
+      "text": "Anthropic 推出 Claude Duet：会主动找你的 AI 助理，美国 Pro 和 Max 用户排队试用，不另收费\n\nAnthropic 发布了一个新 App，叫 Claude Duet，目前是研究预览版，也就是早期测试版。\n\n平时用 Claude，是你打开对话框它才干活。Duet 反过来，会主动找你：每天早上发一份简报，列出你连接的邮箱、日历、记账软件里最要紧的事；白天替你盯着，有事才发消息；你交代的任务，它在云端自己的电脑上做，手机电脑关机也不耽误，做完再通知你。\n\n这类“主动找你”的 AI 助理，两个多月里已经出了四个：xAI 的 Grok Bot 8 月上线，Meta 的 Muse 和 OpenAI 的 Dots 9 月上线，Duet 是最晚的一个。\n\n【谁能用、要不要钱】\n\n目前只对美国的 Pro 和 Max 订阅用户开放，要先排候补名单，团队版和企业版暂时没有。预览期间不单独收费，和 Claude 共用套餐额度，但后台检查也算用量，做财务模型、做幻灯片这类大任务更费。\n\n官方说它每隔几个小时才查一次你的账号，就是为了省额度，代价是两次检查之间进来的消息可能漏掉。\n\n对比一下：Muse 大部分功能免费，也只在美国；Dots 给 ChatGPT Pro 和 Business Premium 用户免费送第一个；Grok Bot 现在包含在 X 打包订阅每月 30 美元的 Premium 档及以上。\n\n【能干什么，跟另外几个有什么不同】\n\n官方说 Duet 主要为专业人士和小企业主设计，核心功能围绕工作：从 Gmail、Slack 里找出你漏回的消息并起草回复，查 QuickBooks、Stripe 里哪些发票还没收款、写好催款提醒，在 Gusto 里准备工资单，也能搭数据看板、做销售预测。能连 6000 多个连接器和插件。\n\n一位房产经纪人测试时，Duet 没人叫它查，自己发现日历上一场看房约错了日子。\n\n另外几个各有侧重。\n\nMuse 偏生活，例子是把你收藏的菜谱视频变成购物清单、帮你卖车，还能直接在 WhatsApp 里聊。\n\nDots 集成在 ChatGPT 里，也能在 Slack、Microsoft Teams 里跟它说话，适合已经全员用 ChatGPT 的公司。\n\nGrok Bot 能建好几个 Bot 分工，比如一个管招聘、一个管报销，再让一个“幕僚长”Bot 统筹。\n\n如果你本来就用 Claude，Duet 基本不用重新设置：它直接沿用你 Claude 账号里的记忆、技能和已连接的应用。它是独立 App，有 iOS 和 Android 版，电脑上在 https://t.co/vefasn3rYt 网页打开，跟主 Claude App 分开，底层是 Opus 5.5。\n\n写代码的话，Anthropic 还有 Claude Code，那是你交代任务它才动手的编程工具，不会主动找你。\n\n【会不会乱花钱、泄露隐私】\n\n发消息、付款、签文件、删东西之前，Duet 都会把要做的事摆给你看，等你批准；买卖证券、账户间转钱，你批准了也不做。它看不到你的密码和登录凭证。这次还新加了一个专门的分类器，相当于一道自动审核，检查每条要发出的消息：信用卡号、身份证件号一律拦下；健康、个人财务这类信息，只有你明确让它发才会发。\n\n别家的做法也类似。Muse 在同一台云电脑里放了一个“哨兵”智能体，Muse 的操作要先过它才能连外网。Dots 让你给每类操作定规则：直接做、先问我、或者禁止。\n\n官方也提醒，Duet 可能读错一段邮件往来，或者误判一件事急不急；订票这类个人杂事做得不如工作任务好。\n\nClaude Duet 官方介绍：https://t.co/0IGrGTkP27\n候补名单：https://t.co/kwyV6agajk",
+      "created_at": "Wed Oct 21 19:54:37 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2112984664256241837",
+        "text": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.\n\nIt comes to you with what needs your attention, completes tasks you ask of it, keeps working when you step away, and checks with you before it acts on your behalf. https://t.co/kt8gAbWuX8",
+        "created_at": "Wed Oct 21 19:09:35 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2112982862186106880",
+            "url": "https://video.twimg.com/amplify_video/2112982862186106880/vid/avc1/640x360/L7zosiEUW76tqYr-.mp4?tag=29",
+            "bitrate": 832000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1943306828697550848",
+          "name": "Claude",
+          "screen_name": "claudeai",
+          "description": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+          "followers_count": 1927696,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 710,
+          "favorite_count": 10484,
+          "reply_count": 543,
+          "quote_count": 805
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
       }
     }
   ]

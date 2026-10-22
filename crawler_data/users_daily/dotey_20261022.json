@@ -1,0 +1,211 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 260857,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261022",
+  "last_updated": "2026-10-22T03:00:40.865480",
+  "tweet_count": 5,
+  "tweets": [
+    {
+      "id": "2113067412979433847",
+      "text": "用 Node.js 的要升级了：三条版本线都有高危漏洞，最严重的可远程执行代码，eMudhra 那 8 枚坏证书也一并拉黑\n\n用 Node.js 跑服务、写工具的开发者，这周要换版本了。10 月 21 日，Node.js 给还在维护的三条版本线发了安全更新：22.x 升到 v22.23.4，24.x 升到 v24.22.1，26.x 升到 v26.12.1。三条线都修了高危漏洞，最严重的一个，官方说可能被用来远程执行代码。\n\n20.x 在 2026 年 4 月 30 日停止维护，25.x 在 6 月 1 日停止维护，这次都没有补丁。Node.js 在公告里提醒，每次发安全更新，停止维护的版本都会受影响，还在用的只能换到 22、24 或 26。\n\n【最需要注意的几个】\n\nNode.js 自带一个解压 Brotli 格式的组件。Brotli 是网页传输常用的压缩格式，HTTP 里写作 br。这个组件有越界写入的问题，也就是把数据写到了不该写的内存位置，官方说这能导致远程执行代码。公告对它只有这一句描述，没说什么情况下会触发。修法是同步了 Google Brotli 项目的一处改动，让解压程序更早发现并拒绝格式不对的数据。\n\n另外三个漏洞出在 HTTPS 的证书核对上，两个高危、一个中危。Node 连 HTTPS 地址时，会核对证书上写的地址和你要连的地址是否一致，对不上就拒绝连接。这三个问题都和 IP 地址有关：IP 用全角数字写（输入法全角状态下打出的“１２７”这种），或者写法不规范、但能被宽松地认成 IP，核对就可能被绕过。修复后，Node 直接拒绝写法不规范的 IP 地址。全角数字那个只影响 24.x 和 26.x。\n\n还有一个高危出在 dns.resolve（查域名对应地址的函数）：域名中间如果夹着一个空字符（NUL），Node 会在那里把名字截断，实际查的只是前半截。\n\n中危里，用启动快照或者把程序打包成单个可执行文件（SEA）的要留意：crypto.randomUUID() 和 randomInt() 的随机数缓存会被一起存进包里，每次启动都生成同样的“随机”值。另有三个低危，涉及 26.x 读取 ZIP 文件，以及实验性的权限模型（--permission 开关）。\n\n这次还更新了 c-ares、OpenSSL、SQLite、undici 等内置组件，修的是这些组件已经公开的漏洞。\n\n【eMudhra 坏证书，Node 也拉黑了】\n\n三个新版本都加了一份内置黑名单，第一批放进去的就是 eMudhra 那 8 枚出问题的中间证书。\n\n这件事前几天刚曝出：印度发证机构 eMudhra 有 8 枚被各家系统认可的“网站公章”，盖章用的密码小到一秒就能算出来，谁拿到都能给任意网站做假证书。10 月 17 日被发现后，Chrome 和 Firefox 当天拉黑，eMudhra 18 日作废，Apple 19 日、Microsoft 20 日跟进，Node.js 21 日发版。\n\n当时 Cloudflare 提醒，浏览器之外的程序要一路更新到编程语言这一层，Node.js 就在这一层。Node 内置了 Mozilla 的可信发证机构名单，却没有浏览器那种随时拉黑坏证书的机制，所以用这 8 枚章签出的假证书，旧版 Node 照样放行。这份黑名单对 Node 建立的所有加密连接都生效。修复的提交说明里写道，它和 Go 语言、Electron 拉黑的是同一批。\n\n想测自己的程序还认不认这几枚章，可以用 Mozilla 工程师 Dennis Jackson 做的自查网站：https://t.co/iJDiH3dZ4O\n\n原文：https://t.co/0Ib8AIHPaX",
+      "created_at": "Thu Oct 22 00:38:24 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2113037478286221570",
+        "text": "🔐 Node.js security updates are now available!\n\nNew releases for Node.js 22.x, 24.x &amp; 26.x address multiple vulnerabilities, including high-severity issues.\n\nReview the details and update your systems to stay secure.\n\n🔗 https://t.co/W4kfzx5lxz\n\n#NodeJS #Security",
+        "created_at": "Wed Oct 21 22:39:27 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "91985735",
+          "name": "Node.js",
+          "screen_name": "nodejs",
+          "description": "The Node.js JavaScript Runtime. 🐢🚀 Need help with Node.js? We've got a repo for that: https://t.co/BaCSQqhNRO",
+          "followers_count": 914346,
+          "friends_count": 599,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1739,
+          "favorite_count": 6385,
+          "reply_count": 75,
+          "quote_count": 263
+        }
+      },
+      "stats": {
+        "retweet_count": 22,
+        "favorite_count": 131,
+        "reply_count": 34,
+        "quote_count": 6
+      }
+    },
+    {
+      "id": "2113067847429632059",
+      "text": "再补充一个 Claude Code 任务卡片的细节，有些任务可以让它去云端执行，前提是你的项目是提交到 GitHub，然后通过 GitHub 的 connector 已经连接上了。\n\n走云端的好处是多任务并行起来会更容易，不过不如本地环境上工具丰富。 https://t.co/9YP9EycvH0",
+      "created_at": "Thu Oct 22 00:40:08 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2113023389166170112",
+          "url": "https://pbs.twimg.com/media/HVL3k8FXcAAvFt5.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2112649429371040028",
+        "text": "之前我用 Fable 的时候，我不敢随便在 Claude Code Desktop 里面开任务卡片，因为它新任务也会开一个 Fable 模型的，用不起。\n\n刚发现现在多了一个选项，点击可以选模型了。 https://t.co/0KEyNOgFar",
+        "created_at": "Tue Oct 20 20:57:29 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2112649107705651200",
+            "url": "https://pbs.twimg.com/media/HVGjK4_XYAAKTR7.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 260857,
+          "friends_count": 1760,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1,
+          "favorite_count": 52,
+          "reply_count": 53,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 16,
+        "reply_count": 27,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2113069735260688703",
+      "text": "现在 AI 制作语音书效果还可以，但我觉得还不如专业的真人朗读的，另外还会有多音字错误，反而误导小朋友。所以有高质量真人的语音书还是选择真人的。\n\n如果真要自己用 AI 做语音书的话，最好先用大语言模型过一遍发音，让 Agent 去操作 TTS，多音字都标注上拼音、停顿位置、情感，然后再去生成会好很多。\n\n另外付费的比开源的普遍要好一些，但我没办法推荐哪家性价比高，我自己用 Gemini TTS 也不是因为它最好，只是用的顺手。",
+      "created_at": "Thu Oct 22 00:47:38 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2113066558876733560",
+        "text": "@dotey 宝哥，我又来咨询了。上次3d建模，使用了你的方式，效果好了很多。现在又来一个新问题。孩子特别喜欢看书，但是没那么多时间，就想听书。市面上可听的资源太少了。我想是不是可以自制听书资源？你有啥推荐么？",
+        "created_at": "Thu Oct 22 00:35:01 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1703620402478563328",
+          "name": "Fiona Fan",
+          "screen_name": "fanjinglian",
+          "description": "🤖 Building with AI\n🧠 Learning in public\n\n✨ Exploring creativity & the future of work\n\n用AI创造，也记录思考",
+          "followers_count": 1672,
+          "friends_count": 1716,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 12,
+        "reply_count": 19,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2113085712404729978",
+      "text": "RT @tombkeeper: 刚开始接触生物学的时候，我经常想象原始海洋里的有机分子构成核糖核酸，然后诞生了最早的单细胞生物，单细胞生物又聚在一起变成黏糊糊的原始多细胞生物，最终一步一步演化出各种生灵。我也经常想，如果能在实验室里加速重现这一过程，完整观察整个生物演化史就好了…",
+      "created_at": "Thu Oct 22 01:51:07 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2112742851935195502",
+        "text": "刚开始接触生物学的时候，我经常想象原始海洋里的有机分子构成核糖核酸，然后诞生了最早的单细胞生物，单细胞生物又聚在一起变成黏糊糊的原始多细胞生物，最终一步一步演化出各种生灵。我也经常想，如果能在实验室里加速重现这一过程，完整观察整个生物演化史就好了。\n\n刚开始接触计算机的时候，我想过一个问题：程序是从哪里来的？后来我知道了编译器，程序从编译器来的。编译器自然也是从其它编译器来的。那么最早的编译器是从哪里来的？后来我逐渐搞清楚了这个问题的答案。但偶尔还是会想一些相关的问题，比如：如果现在全世界的编译器都忽然消失，人类要怎么重建整套体系呢？\n\n最近几年研究 AI 安全问题的时候，我经常想：如果只给予 AI 完成特定工作所需的工具，那么 AI 的能力是不是就会被限制住？是不是就可以阻止 AI 获得强大的网络入侵能力？\n\n2026 年 2 月，我看到马斯克预测到年底 AI 就可以绕过编译过程直接创建二进制文件。当时我做了一些实验，发现虽然 AI 还不能创建完整可运行的程序，但已经可以生成正确的机器码片段了。到了 9 月，我再次实验，发现此时 AI 已经可以用直接创建二进制文件的形式输出不太复杂的程序了。\n\n但用直接输出二进制文件的方式去写大型程序显然不是好的选择，即使能写出来，也难以维护。那么，是不是可以让 AI 重演现代编译器的诞生过程？就像重演从核糖核酸到哺乳动物的生物演化史？\n\n下面这个视频里超级马里奥游戏就是从核糖核酸开始构建的。\n\nAI 先是通过直接输出二进制的方式构建了一个 3584 字节的机器码装配器 A0。然后用 A0 生产了一个更类似汇编器的工具 A1。又用 AI 生产了最基础的 C 编译器 C0。再一步一步迭代，最终演化出了一个完整支持 C89 标准并部分支持 C99 标准的编译器。有了这个编译器，就可以写出超级马里奥游戏，或者是任何网络攻击程序。\n\n对 AI 说：“要有光”，然后整个世界就一步一步诞生了。所以我把这个项目命名为 BitKindle。感兴趣可以测试一下：https://t.co/GN9onM4vTq",
+        "created_at": "Wed Oct 21 03:08:43 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2112742652592500736",
+            "url": "https://video.twimg.com/amplify_video/2112742652592500736/vid/avc1/960x544/mjD80AeQlNKjQ3XH.mp4?tag=29",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "19012518",
+          "name": "Yang Yu",
+          "screen_name": "tombkeeper",
+          "description": "Security researcher, founder of Tencent's Xuanwu Lab @XuanwuLab",
+          "followers_count": 18041,
+          "friends_count": 250,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 32,
+          "favorite_count": 240,
+          "reply_count": 11,
+          "quote_count": 5
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 32,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2113089068225446022",
+      "text": "晚点新闻 @latepostnews 你们的 X 账号被黑了 https://t.co/6n03bOxtYV",
+      "created_at": "Thu Oct 22 02:04:27 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2113089001410240512",
+          "url": "https://pbs.twimg.com/media/HVMzQEvXoAABx2A.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 22,
+        "reply_count": 12,
+        "quote_count": 0
+      }
+    }
+  ]
+}

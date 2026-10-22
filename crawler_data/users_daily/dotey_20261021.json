@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 260794,
+    "followers_count": 260857,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261021",
-  "last_updated": "2026-10-21T19:55:13.621523",
-  "tweet_count": 13,
+  "last_updated": "2026-10-22T03:00:40.867672",
+  "tweet_count": 18,
   "tweets": [
     {
       "id": "2112751585671409696",
@@ -586,6 +586,190 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2113011845267116172",
+      "text": "GitLab 六周内第三个满分漏洞：不用登录就能控制服务器，2014 年以来的自建版本都要升级\n\n如果你们公司装了 GitLab，得赶紧升级了。10 月 21 日，GitLab 修复了一个满分 10 分的漏洞：在某些条件下，外人不用登录，就能在服务器上运行任意程序。2014 年的 7.0 版到现在，所有自建版本都受影响，10 月 12 日刚打过补丁的也在内。\n\n这是 GitLab 六周里修的第三个满分漏洞，第一个已经被黑客用来攻击。\n\nGitLab 是管代码的平台，很多公司把它装在自己的服务器上，全部源代码、部署用的密钥、自动打包上线的流程都在里面。服务器被人控制，对方就能翻看所有代码、取走密钥，或者悄悄改代码埋后门。\n\n【六周里的三个满分漏洞】\n\n9 月 10 日，GitLab 修了第一个：不用登录就能读取服务器上的任意文件。安全公司 watchTowr 和 Rapid7 发现有人在用它攻击，watchTowr 说可能泄露密码和密钥。美国网络安全机构 CISA 第二天把它列为“已被利用”，要求联邦机构三天内修好。\n\n后两个满分漏洞都出在正则表达式引擎里。正则表达式是描述文本规律的公式，比如“找出所有 11 位手机号”，GitLab 用 Ruby 语言自带的引擎把这种公式翻译成程序。\n\n研究者 joaxcar 一个月里在这个引擎上找出四个能远程运行程序的漏洞：9 月 23 日修了两个，要先登录，9.9 分；10 月 12 日修了一个，不用登录，10 分；第四个就是这次的，也是 10 分。\n\n前三个只影响 19.2 以后的版本。这次的问题是翻译公式时有个数字超出上限，像里程表跑满一样归零（整数溢出），攻击者能借这个错位把自己的指令塞进服务器。GitLab 每个版本都带着这个引擎，所以十二年的版本都跑不掉。10 月 12 日补到的 19.2.8、19.3.5、19.4.2 也照样中招。\n\n【我要不要管，升到哪个版本】\n\n用 https://t.co/pHDSqth3qT 网站的不用管，官方说已经修好；GitLab 代管的专属版 GitLab Dedicated 也已修复。要动手的是自己装 GitLab 的公司和个人。\n\n19.5 升到 19.5.1，19.4 升到 19.4.3，19.3 升到 19.3.6，19.2 升到 19.2.9，19.1 升到 19.1.9，19.0 升到 19.0.10。18.11 及更老的版本，统一升到 18.11.13。\n\nGitLab 平时只给最近三个月度版本打补丁，这次破例多补了四条老版本线。版本很老的不能一步跳到 18.11.13，要按规定经过几个中间版本，官方工具能算出要停哪几站：https://t.co/lNK54CLb13\n\n19.4.3 和 19.3.6 升级时要改数据库，只有一台服务器的会停机一段时间。多台服务器的可以按官方的零停机流程升级。\n\n【这次的被利用了吗】\n\nGitLab 公告没提。The Hacker News 报道说，GitLab 表示没发现被用于攻击的迹象。CISA 10 月 21 日更新的“已被利用漏洞”目录里也没有它。\n\n“某些条件”具体是什么，官方没说，管理员没法靠检查配置排除自己。官方也没给临时缓解办法，升级是唯一确定有效的做法。GitLab 另外发了两条检测规则，管理员可以用来翻日志，看有没有人试过攻击。\n\nGitLab 公告：https://t.co/geuGmVfq6V\n\n原文：https://t.co/ApZaDOjk2B",
+      "created_at": "Wed Oct 21 20:57:36 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2112981939984671090",
+        "text": "🚨 CRITICAL: GitLab flaw (CVSS 10.0) affects 12 years of releases.\n\nCVE-2026-110264 could allow unauthenticated remote code execution on self-managed servers.\n\nRead - https://t.co/frrfCwYlgp",
+        "created_at": "Wed Oct 21 18:58:46 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "209811713",
+          "name": "The Hacker News",
+          "screen_name": "TheHackersNews",
+          "description": "The #1 trusted source for cybersecurity news, insights, and analysis — built for defenders and trusted by decision-makers.",
+          "followers_count": 2439043,
+          "friends_count": 2013,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 2197,
+          "favorite_count": 9845,
+          "reply_count": 185,
+          "quote_count": 1221
+        }
+      },
+      "stats": {
+        "retweet_count": 11,
+        "favorite_count": 68,
+        "reply_count": 13,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2113014531853365681",
+      "text": "两个多月里，四家公司都推出了同一类产品：xAI 的 Grok Bot（8 月 11 日）、Meta 的 Muse（9 月 8 日）、OpenAI 的 Dots（9 月 29 日），加上今天 Anthropic 的 Claude Duet。\n\n它们的共同点是：在云端有一台自己的电脑和浏览器，你关掉手机它照样干活；会主动来找你汇报；发邮件、付款这类操作前大多会先问你。\n\n区别在于各自瞄准的人群。\n\n【Claude Duet：给专业人士和老板】\n\n底层是 Opus 5.5，每天早上发简报，平时盯着邮箱、日历、记账软件，有事才找你。\n\n能连 6000 多个连接器和插件，例子多是工作上的事：催款、做工资单、做看板。只对美国 Pro、Max 用户开放，要排候补，不另收费，和 Claude 共用额度。\n\n官方说订票这类个人杂事还做得不好。\n\n【Grok Bot：一个人带一支 AI 小团队】\n\n你可以建好几个 Bot，各给一个角色，比如招聘、报销、修 Bug，再让一个“幕僚长”Bot 统筹。\n\n据 VentureBeat 报道，它会像人一样登录网站和软件，没有接口的系统也能操作；你演示一遍流程，它就能存成固定任务以后照做。用的是哪个模型官方没说，也不能自己选。有 Mac、Windows、Linux 和 iPhone 版。\n\n发布时要每月 200 美元起，之后门槛降了，现在 X 打包订阅 30 美元的 Premium 档及以上就包含。\n\n【Muse：面向普通人，大部分功能免费】\n\nMeta 的定位是“人人都能用”，大部分功能免费，想多用再订阅。能在 Muse App 里用，也能直接在 WhatsApp 里聊。\n\n例子偏生活：把你在 Instagram 收藏的菜谱视频变成购物清单、帮你卖车、砍账单。\n\n安全设计上，同一台云电脑里另有一个“哨兵”智能体，Muse 的任何操作要先过它才能连到外网。目前只在美国上线。\n\n【Dots：集成在 ChatGPT 里】\n\n底层是 GPT-6 Astra，能连 4000 多个应用，可以在 ChatGPT、Slack、Microsoft Teams 里跟它说话，个人和公司团队都能用。\n\n用户可以给每类操作设规则：直接做、先问我、或者禁止。Pro 和 Business Premium 用户第一个 Dot 不额外收费，企业版要管理员开通。\n\n据第三方汇总，Pro 用户在欧洲经济区、英国、瑞士暂时用不了。\n\n怎么选：\n\n在美国、主要想管生活琐事，先试免费的 Muse；\n\n工作上靠 Gmail、Slack 和记账软件的老板，看 Claude Duet；\n\n公司已经全员用 ChatGPT 和 Teams，看 Dots；\n\n想同时派好几个 AI 分工干活，看 Grok Bot。",
+      "created_at": "Wed Oct 21 21:08:16 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2113008387411841358",
+        "text": "@dotey 谁能告诉我这和 Dots、Grok Bot、Muse 到底有啥区别？硅谷四大厂排队给我塞功能一模一样的赛博田螺姑娘，我那点少得可怜的待办事项已经不够它们分了......",
+        "created_at": "Wed Oct 21 20:43:52 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2093683010738716672",
+          "name": "虾基米德（粉必回）",
+          "screen_name": "some_local_ai",
+          "description": "经严谨测算，本人排开水的体积，刚好等于脑子进水的体积。",
+          "followers_count": 7,
+          "friends_count": 28,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 7,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 29,
+        "favorite_count": 247,
+        "reply_count": 62,
+        "quote_count": 22
+      }
+    },
+    {
+      "id": "2113031479685005601",
+      "text": "用 TiDB Cloud 的公司，现在就该去控制台把管理用的 API 密钥换一遍。PingCAP 10 月 20 日通知所有客户“不必等单独通知”，立刻轮换密钥、删掉不用的密钥、查日志有没有陌生操作。\n\nTiDB Cloud 是 PingCAP 的云数据库服务。这次出事的是它的“控制平面”，相当于管理后台：谁有账号、开了哪些数据库、合同价格、怎么扣费，都记在这里。客户存的业务数据在另一层。\n\n【官方承认了什么】\n\nPingCAP 10 月 19 日的报告说，有人用偷来的服务账号凭证（程序之间互相登录用的钥匙），9 月 9 日到 10 月 7 日进入内部系统，复制了数据和源代码。公司 10 月 7 日才发现。\n\n确认外泄的有：用户名和邮箱，网页版 SQL 编辑器里输入过的查询和报错，客户联系人、合同、价格和账单设置，一张存着加密 API 密钥的表。日文公告 10 月 21 日又加上“客服工单信息”，日本最多约 5 万条个人信息受影响。\n\nPingCAP 说，没有证据显示客户存在 TiDB 里的数据被动过，也没发现攻击者在生产集群上执行命令；泄露的密钥是加密的，暂未发现被解密或使用。\n\n【黑客声称了什么】\n\n以下来自勒索组织 FulcrumSec 10 月 19 日的发布，PingCAP 没有证实。\n\nFulcrumSec 说，凭证是在 PingCAP 自己的代码仓库里找到的。他们借此搭了一条“复制”通道，把后台数据库持续同步一份到自己手里，每 6 小时导出一次，连续 88 次没触发警报，共拿走 10.6 TB，已放出约 200 GB。他们还说拿到 413 个私有代码仓库、2060 万条客户 SQL 查询，以及工程师贴进内部工单的客户密钥，一个附件里就有 8027 个。PingCAP 说“工单里有可用凭证”的说法还没核实。\n\nFulcrumSec 列出的客户包括 https://t.co/89rdkLs5E3、Airbnb、Pinterest、Shopee、卡普空等几十家，这最多说明它们的相关记录在被盗数据里，不等于它们自己被攻破。名单上的 Bitget 回应说，只在 TiDB 存过公开成交记录，两个多月前已停用。\n\n【除了换密钥还要做什么】\n\n如果你曾把数据库密码、云服务密钥，或者带签名的临时下载链接（presigned URL，有效期内谁拿到都能下载文件）贴进客服工单或 SQL 编辑器，按已泄露处理，全部换掉或作废。这条是根据黑客声称和日文公告推断的，官方没这样要求。\n\n还要防钓鱼。骗子手里有真实的联系人、合同和账单，“改收款账户”的邮件可能细节全对。PingCAP 说它不会通过邮件索要密码或密钥。\n\n来源：\nPingCAP 事故报告：https://t.co/bSRj2fX6Mc\nPingCAP 客户操作建议：https://t.co/BL97KBxFkT\nPingCAP 日文公告：https://t.co/A8RBrZh5k2\nBitget 回应（动区动趋报道）：https://t.co/gdtOt3Awmf\nHacker News 讨论：https://t.co/8Lodsn2YTB",
+      "created_at": "Wed Oct 21 22:15:37 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2112563244565176634",
+        "text": "We identified unauthorized access to certain PingCAP internal systems. We took containment measures and engaged independent cybersecurity firms. There is no evidence that user data stored in TiDB was impacted. We’ll share further updates as our investigation continues: https://t.co/lQWgG0wQHn",
+        "created_at": "Tue Oct 20 15:15:01 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3328391732",
+          "name": "TiDB, powered by PingCAP",
+          "screen_name": "PingCAP",
+          "description": "The company behind #TiDB, a #MySQL compatible, #OpenSource #DistributedSQL database for building scalable modern apps.",
+          "followers_count": 7509,
+          "friends_count": 130,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 52,
+          "favorite_count": 135,
+          "reply_count": 6,
+          "quote_count": 23
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 18,
+        "reply_count": 7,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2113036984524423462",
+      "text": "Railway 存密钥的系统被入侵，部分可能已被解密；官方让所有用户立刻换掉全部密钥，部署暂停中\n\n在 Railway 上跑程序的开发者，现在就该把存在 Railway 里的环境变量全部换掉，包括 API 密钥、数据库密码和私有镜像仓库（存放打包好的程序）的登录凭证，再查查这些服务的日志。Railway 10 月 21 日说，存放客户环境变量的系统被外人访问，其中一部分可能已被解密成明文。一周之内，这是第二家替开发者保管 AI 密钥的平台出事。\n\nRailway 是云托管平台，开发者把代码交给它打包、上线、运行。程序要用到很多“钥匙”，比如数据库密码、调用 OpenAI 或 Claude 的 API 密钥（按用量扣费的通行证，谁拿到都能花你的钱）。这些钥匙不写进代码，单独存在平台上，叫环境变量。\n\n【官方说了什么】\n\nRailway 说，初步看受影响的可能只是一部分用户，确认后会发邮件通知，但建议所有人先换。攻击者怎么进来、多少人受影响、密钥怎么被解密，都还没说。\n\n部署全部暂停，谁都发布不了新版本。麻烦在于，换掉的密钥要重新部署才生效；要是先在服务商那边作废旧密钥，线上服务可能会断。先作废还是先等，官方没给建议。截至北京时间 22 日早上 6 点多，连企业版在内的所有用户都还不能部署，恢复时间未定。\n\n【为什么盯上 AI 密钥】\n\nRailway 认为，这次入侵属于最近一系列针对平台公司的攻击，目标是 OpenAI、Anthropic 这类按用量卖模型调用的 AI 推理服务商，它已通知这些公司主动作废相关密钥。它没点名其他受害平台，目前也查不到相关报道。\n\n情况最像的是 AI 编程工具 OpenCode。10 月 16 日夜里，它的网页后台被入侵，1.4% 的用户存的 OpenAI、Anthropic、Google 密钥可能外泄。据 TechCrunch 等报道，有用户一夜被刷了几百到 1700 多美元。OpenCode 说这和一次大规模“蒸馏攻击”有关，也就是拿别家模型的大量回答训练自己的模型。两家都没说彼此有关联。\n\n来源：\nRailway 公告：https://t.co/SPOEWR6nvO\nRailway 状态页：https://t.co/N1szncftat\nOpenCode 事件（TechCrunch）：https://t.co/USlsP9MxlZ",
+      "created_at": "Wed Oct 21 22:37:30 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2113025284148715845",
+        "text": "An urgent notice from the Railway team\n\nhttps://t.co/niUAhTAQJM",
+        "created_at": "Wed Oct 21 21:51:00 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1281777687850127360",
+          "name": "Railway",
+          "screen_name": "Railway",
+          "description": "The all-in-one intelligent cloud provider.\n\nStatus: @railway_status\nSupport: https://t.co/RmTT2GZo2L",
+          "followers_count": 45554,
+          "friends_count": 48,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 647,
+          "favorite_count": 3600,
+          "reply_count": 402,
+          "quote_count": 1014
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 29,
+        "reply_count": 27,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2113046543007641942",
+      "text": "不聊天、只会涂答题卡的 AI：Jev 讲明白\n\nJev 其实发布有一阵了，还是值得科普一下，做了个简单的科普视频。\n视频2 是中文版\n\nJev 只干一件事：像我们考试涂答题卡一样，在程序出好的选项里涂圈，涂的深浅就是它有几成把握。\n\n这期用一张答题卡讲清楚：\n只会做选择题有什么用？\n它为什么能快几十倍、便宜到读一大堆字才几美分？\n官方说它「幻觉率为零」，这个零是怎么来的？\n独立研究又发现它会在哪儿涂错、哪些事它干不了。\n\n最后说说它适合干什么活，以及 OpenAI 等跟进的同类产品。",
+      "created_at": "Wed Oct 21 23:15:29 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2113045923337015296",
+          "url": "https://video.twimg.com/amplify_video/2113045923337015296/vid/avc1/1920x1080/MKYEfXo589_RbepD.mp4?tag=29",
+          "bitrate": 10368000
+        },
+        {
+          "type": "video",
+          "id": "2113045941498306560",
+          "url": "https://video.twimg.com/amplify_video/2113045941498306560/vid/avc1/1080x1920/Uj_8RVvy-Wak52pK.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 60,
+        "reply_count": 28,
+        "quote_count": 2
       }
     }
   ]

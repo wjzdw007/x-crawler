@@ -47,9 +47,10 @@ cp config_template.json config.json
 X_AUTH_TOKEN=your_auth_token
 X_CT0_TOKEN=your_ct0_token
 
-# LLM配置
-OPENROUTER_API_KEY=your_api_key
-OPENAI_MODEL=openai/gpt-4o-mini
+# LLM配置（腾讯云 DeepSeek，不是 OpenRouter）
+TENCENT_DEEPSEEK_API_KEY=your_tencent_deepseek_api_key
+OPENAI_BASE_URL=https://api.lkeap.cloud.tencent.com/v1
+OPENAI_MODEL=deepseek-v3.2
 
 # 代理配置（可选）
 HTTP_PROXY=http://127.0.0.1:7890
@@ -106,8 +107,23 @@ x_crawler/
 
 ## 🔧 环境变量
 
-- `OPENROUTER_API_KEY`: OpenRouter API密钥
-- `OPENAI_MODEL`: 指定使用的模型（默认: openai/gpt-4o）
+- `TENCENT_DEEPSEEK_API_KEY`: 腾讯云 DeepSeek / LKEAP API Key（生产必填；别名 `LKEAP_API_KEY`）
+- `OPENAI_BASE_URL`: OpenAI 兼容地址（默认 `https://api.lkeap.cloud.tencent.com/v1`；TokenHub 可改为 `https://tokenhub.tencentmaas.com/v1`）
+- `OPENAI_MODEL`: 模型 ID（默认 `deepseek-v3.2`，同家族还可设 `deepseek-v3.1-terminus` / `deepseek-v3-0324` / `deepseek-r1-0528`）
+- 生产环境未配置密钥或 LLM 调用失败会**非零退出**，不会把「模拟内容」当成功提交
+
+### GitHub Actions Secrets（Daily Summary）
+
+仓库 Settings → Secrets and variables → Actions 需要：
+
+| Secret | 必填 | 说明 |
+|--------|------|------|
+| `TENCENT_DEEPSEEK_API_KEY` | 是 | 腾讯云 LKEAP / TokenHub API Key（老板单独写入，不要提交到仓库） |
+| `LKEAP_API_KEY` | 否 | 与上一行二选一即可 |
+| `OPENAI_MODEL` | 否 | 默认 `deepseek-v3.2` |
+| `OPENAI_BASE_URL` | 否 | 默认 LKEAP；已迁 TokenHub 时再覆盖 |
+
+文档：https://cloud.tencent.com/document/product/1772/115969
 
 ## 📄 许可
 

@@ -53,7 +53,7 @@ def test_config():
     if api_key:
         print(f"✅ LLM API Key: {'*' * 10}{api_key[-5:]}")
     else:
-        print("⚠️ LLM API Key: 未配置（将使用模拟模式）")
+        print("⚠️ LLM API Key: 未配置（生产环境将失败，不会写入模拟总结）")
 
     print(f"📝 LLM Model: {model}")
 

@@ -5,6 +5,7 @@ X爬虫命令行工具 - 支持灵活参数配置
 
 import argparse
 import json
+import sys
 
 def main():
     parser = argparse.ArgumentParser(description='X推文爬虫 - 生成每日报告')
@@ -105,6 +106,7 @@ def main():
                     crawler.generate_user_summaries_for_yesterday(force_overwrite=args.force)
                 else:
                     print(f"\n❌ 数据抓取失败")
+                    sys.exit(1)
             else:
                 # 标准模式：只抓取数据
                 print(f"\n📡 抓取数据...")
@@ -122,18 +124,21 @@ def main():
                     print(f"📁 数据保存在 crawler_data/daily_posts/ 目录")
                 else:
                     print(f"\n❌ 数据抓取失败")
+                    sys.exit(1)
                 
     except FileNotFoundError:
         print(f"\n❌ 配置文件不存在: {args.config}")
         print("💡 请先运行认证配置:")
         print("   python working_auth.py")
+        sys.exit(1)
         
     except Exception as e:
         print(f"\n❌ 运行出错: {e}")
         print("💡 建议:")
-        print("   1. 检查网络连接")
-        print("   2. 验证认证信息是否有效")
-        print("   3. 查看详细日志信息")
+        print("   1. 检查 TENCENT_DEEPSEEK_API_KEY / OPENAI_MODEL / OPENAI_BASE_URL 是否已配置且有效")
+        print("   2. 检查昨天的 users_daily 数据文件是否存在")
+        print("   3. 查看上方失败用户列表与 LLM 错误")
+        sys.exit(1)
 
 def show_examples():
     """显示使用示例"""

@@ -6,30 +6,147 @@ LLM总结模块 - 基于推文数据生成智能总结
 
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import List, Dict, Optional, Any
 import hashlib
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
+
+MOCK_SUMMARY_MARKERS = (
+    "由于API配置限制，当前显示模拟内容",
+    "配置LLM API密钥后将显示详细智能分析结果",
+)
+
+PLACEHOLDER_API_KEYS = {
+    "",
+    "your_openrouter_api_key_here",
+    "your_tencent_deepseek_api_key_here",
+    "your_lkeap_api_key_here",
+    "your_api_key_here",
+    "changeme",
+    "none",
+    "null",
+}
+
+# Tencent Cloud LKEAP DeepSeek (OpenAI-compatible).
+# Docs: https://cloud.tencent.com/document/product/1772/115969
+# TokenHub (newer, optional override via OPENAI_BASE_URL):
+#   https://tokenhub.tencentmaas.com/v1
+DEFAULT_LLM_BASE_URL = "https://api.lkeap.cloud.tencent.com/v1"
+DEFAULT_LLM_MODEL = "deepseek-v3.2"
+TENCENT_DEEPSEEK_FALLBACK_MODELS = (
+    "deepseek-v3.1-terminus",
+    "deepseek-v3-0324",
+)
+LLM_API_KEY_ENV_VARS = (
+    "TENCENT_DEEPSEEK_API_KEY",
+    "LKEAP_API_KEY",
+    "OPENAI_API_KEY",
+    "LLM_API_KEY",
+)
+
+
+class LLMUnavailableError(RuntimeError):
+    """Raised when a real, tweet-grounded LLM summary cannot be produced."""
+
+
+def is_mock_summary(text: Optional[str]) -> bool:
+    """Return True if text is the hardcoded mock/placeholder summary."""
+    if not text:
+        return False
+    return any(marker in text for marker in MOCK_SUMMARY_MARKERS)
+
+
+def normalize_api_key(api_key: Optional[str]) -> Optional[str]:
+    """Treat empty / example placeholder values as missing."""
+    if api_key is None:
+        return None
+    key = api_key.strip()
+    if not key or key.lower() in PLACEHOLDER_API_KEYS:
+        return None
+    return key
+
+
+def resolve_llm_api_key() -> Optional[str]:
+    """Resolve the Tencent DeepSeek (or generic OpenAI-compatible) API key.
+
+    OPENROUTER_API_KEY is intentionally not consulted — production must not
+    silently fall back to the exhausted OpenRouter account.
+    """
+    for env_name in LLM_API_KEY_ENV_VARS:
+        key = normalize_api_key(os.getenv(env_name))
+        if key:
+            return key
+    return None
+
+
+def normalize_base_url(url: Optional[str]) -> str:
+    """Return a usable OpenAI-compatible base URL; default is Tencent LKEAP."""
+    if url and url.strip():
+        return url.strip().rstrip("/")
+    return DEFAULT_LLM_BASE_URL
+
+
+def allow_mock_summaries(explicit: Optional[bool] = None) -> bool:
+    """Mock summaries are opt-in only (ALLOW_MOCK_SUMMARY=1) for local debug."""
+    if explicit is not None:
+        return bool(explicit)
+    return os.getenv("ALLOW_MOCK_SUMMARY", "").strip().lower() in {"1", "true", "yes"}
+
+
+def data_day_yyyymmdd(now: Optional[datetime] = None) -> str:
+    """YYYYMMDD of 'yesterday' in Asia/Shanghai — the Daily Summary data day.
+
+    The workflow is scheduled at 01:00 UTC (09:00 Beijing) and comments say
+    it summarizes 昨天的数据. Filenames and titles must use this date, not
+    the UTC calendar day of the runner.
+    """
+    try:
+        from zoneinfo import ZoneInfo
+        tz = ZoneInfo("Asia/Shanghai")
+    except Exception:
+        tz = timezone(timedelta(hours=8))
+    if now is None:
+        now = datetime.now(tz)
+    elif now.tzinfo is None:
+        now = now.replace(tzinfo=tz)
+    else:
+        now = now.astimezone(tz)
+    return (now - timedelta(days=1)).strftime("%Y%m%d")
+
+
+def format_data_date_label(date_str: str) -> str:
+    """Format YYYYMMDD as 2026年10月21日."""
+    return datetime.strptime(date_str, "%Y%m%d").strftime("%Y年%m月%d日")
+
+
 class TwitterSummarizer:
-    def __init__(self, api_key: Optional[str] = None, model: Optional[str] = None):
+    def __init__(self, api_key: Optional[str] = None, model: Optional[str] = None,
+                 allow_mock: Optional[bool] = None, base_url: Optional[str] = None):
         """
         初始化总结器
         
         Args:
             api_key: LLM API密钥，如果为None则从环境变量获取
             model: 指定使用的模型，如果为None则使用默认模型
+            allow_mock: 是否允许降级到模拟总结。默认否；仅当显式传入
+                或设置 ALLOW_MOCK_SUMMARY=1 时开启（本地调试）。
+            base_url: OpenAI 兼容接口地址，默认腾讯云 LKEAP DeepSeek。
         """
-        # 尝试从多个环境变量获取API密钥
-        self.api_key = (
-            api_key or 
-            os.getenv('OPENROUTER_API_KEY') or 
-            os.getenv('OPENAI_API_KEY') or
-            os.getenv('LLM_API_KEY')
-        )
+        # Tencent Cloud DeepSeek first. OPENROUTER_API_KEY is intentionally ignored.
+        self.api_key = normalize_api_key(api_key) or resolve_llm_api_key()
+        self.allow_mock = allow_mock_summaries(allow_mock)
+        self._summary_date: Optional[str] = None
+        self.base_url = normalize_base_url(base_url or os.getenv("OPENAI_BASE_URL") or os.getenv("LKEAP_BASE_URL"))
         
-        # 指定的模型：参数 > 环境变量 > None
-        self.custom_model = model or os.getenv('OPENAI_MODEL')
+        raw_model = model or os.getenv("OPENAI_MODEL")
+        self.custom_model = raw_model.strip() if raw_model and raw_model.strip() else None
         # 不再创建独立的summaries目录，使用crawler_data/user_summaries
         
         # 总结配置
@@ -83,15 +200,11 @@ class TwitterSummarizer:
         # 加载用户提示词模板
         self.load_user_prompt_templates()
         
-        # LLM配置
+        # LLM配置 — 生产路径仅为腾讯云 DeepSeek，不含 OpenRouter / Claude
         self.llm_config = {
-            "default_model": "openai/gpt-4o",
-            "fallback_models": [
-                "openai/gpt-4o-mini", 
-                "anthropic/claude-3-haiku",
-                "meta-llama/llama-3.1-8b-instruct"
-            ],
-            "max_tokens": 100000,
+            "default_model": DEFAULT_LLM_MODEL,
+            "fallback_models": list(TENCENT_DEEPSEEK_FALLBACK_MODELS),
+            "max_tokens": 8192,
             "temperature": 0.7
         }
         
@@ -106,9 +219,12 @@ class TwitterSummarizer:
         if self.api_key:
             masked_key = f"{self.api_key[:8]}...{self.api_key[-4:]}" if len(self.api_key) > 12 else "***"
             print(f"  ✅ API密钥: {masked_key}")
+        elif self.allow_mock:
+            print(f"  ⚠️ API密钥: 未设置 (ALLOW_MOCK_SUMMARY=1，将使用模拟总结)")
+            print(f"     💡 请设置环境变量: TENCENT_DEEPSEEK_API_KEY")
         else:
-            print(f"  ⚠️ API密钥: 未设置 (将使用模拟总结)")
-            print(f"     💡 请设置环境变量: OPENROUTER_API_KEY")
+            print(f"  ❌ API密钥: 未设置 (生产环境将失败，不会写入模拟总结)")
+            print(f"     💡 请设置环境变量: TENCENT_DEEPSEEK_API_KEY")
         
         # 检查依赖库
         try:
@@ -119,6 +235,7 @@ class TwitterSummarizer:
             print(f"     💡 请安装: pip install openai")
             
         effective_model = self.custom_model or self.llm_config['default_model']
+        print(f"  🌐 API地址: {self.base_url}")
         print(f"  🎯 使用模型: {effective_model}")
         if self.custom_model:
             print(f"     (自定义指定)")
@@ -458,6 +575,19 @@ class TwitterSummarizer:
             tweet_content=tweet_content
         )
 
+        # Templates such as elonmusk/dotey only interpolate {tweet_content}.
+        # Prefix the data-day so titles match the tweets actually summarized.
+        if self._summary_date:
+            try:
+                date_label = format_data_date_label(self._summary_date)
+                prompt = (
+                    f"数据日期: {date_label}（{self._summary_date}）。"
+                    f"请按该日期标注标题与时间，不要使用运行当天的日期。\n\n"
+                    f"{prompt}"
+                )
+            except ValueError:
+                pass
+
         return prompt
     
     def save_prompt_to_file(self, prompt: str, summary_type: str, tweets: List[Dict], user_info: Dict = None) -> str:
@@ -519,12 +649,26 @@ Prompt结束
         print(f"📝 完整prompt已保存: {filepath}")
         return str(filepath)
     
+    def _fallback_or_raise(self, reason: str) -> str:
+        """Return a mock summary only when explicitly allowed; otherwise fail."""
+        if self.allow_mock:
+            print(f"⚠️ {reason}；ALLOW_MOCK_SUMMARY=1，使用模拟总结")
+            return self.generate_mock_summary()
+        print(f"❌ {reason}；拒绝写入模拟占位内容")
+        raise LLMUnavailableError(reason)
+
     def call_llm_api(self, prompt: str, model: str = None) -> str:
-        """调用LLM API生成总结 - 通过OpenRouter访问"""
+        """调用腾讯云 DeepSeek（OpenAI 兼容接口）生成总结。
+        
+        缺密钥、缺依赖或全部模型失败时默认抛出 LLMUnavailableError，
+        不再静默返回模拟占位文案。仅当 allow_mock / ALLOW_MOCK_SUMMARY=1
+        时才降级到 generate_mock_summary()。生产路径不使用 OpenRouter。
+        """
         
         if not self.api_key:
-            print("⚠️ 未找到API密钥，使用模拟总结")
-            return self.generate_mock_summary()
+            return self._fallback_or_raise(
+                "未配置 LLM API 密钥。请设置 TENCENT_DEEPSEEK_API_KEY（或 LKEAP_API_KEY）。"
+            )
         
         # 确保prompt是UTF-8字符串
         if isinstance(prompt, str):
@@ -532,22 +676,21 @@ Prompt结束
         
         # 模型优先级：方法参数 > 实例自定义 > 默认配置
         target_model = model or self.custom_model or self.llm_config["default_model"]
-        models_to_try = [target_model] + self.llm_config["fallback_models"]
+        models_to_try = [target_model] + [m for m in self.llm_config["fallback_models"] if m != target_model]
         
         try:
             from openai import OpenAI
         except ImportError:
-            print("❌ 缺少openai库，请安装: pip install openai")
-            return self.generate_mock_summary()
+            return self._fallback_or_raise("缺少 openai 库，请安装: pip install openai")
             
-        # 创建OpenRouter客户端
         client = OpenAI(
-            base_url="https://openrouter.ai/api/v1",
+            base_url=self.base_url,
             api_key=self.api_key,
         )
         
         print(f"📝 Prompt长度: {len(prompt)} 字符")
         
+        last_error = None
         # 尝试多个模型
         for i, current_model in enumerate(models_to_try):
             try:
@@ -555,10 +698,6 @@ Prompt结束
                 
                 # 调用API
                 completion = client.chat.completions.create(
-                    extra_headers={
-                        "HTTP-Referer": "https://github.com/anthropics/claude-code", 
-                        "X-Title": "X-Tweet-Analysis-System",
-                    },
                     model=current_model,
                     messages=[
                         {
@@ -571,22 +710,41 @@ Prompt结束
                 )
                 
                 result = completion.choices[0].message.content
+                if not result or not str(result).strip():
+                    raise LLMUnavailableError(f"模型 {current_model} 返回空内容")
+                result = str(result)
+                if is_mock_summary(result) and not self.allow_mock:
+                    raise LLMUnavailableError("LLM 返回了模拟占位内容，拒绝作为真实总结")
                 print(f"✅ LLM响应完成: {len(result)} 字符 (模型: {current_model})")
                 return result
                 
+            except LLMUnavailableError:
+                raise
             except Exception as e:
                 error_msg = str(e).encode('utf-8', errors='ignore').decode('utf-8')
+                last_error = error_msg
                 print(f"❌ 模型 {current_model} 失败: {error_msg}")
                 if i < len(models_to_try) - 1:
                     print(f"🔄 尝试备选模型...")
                     continue
-                else:
-                    print(f"🔄 所有模型都失败，降级到模拟总结")
-                    return self.generate_mock_summary()
+        
+        return self._fallback_or_raise(
+            f"所有 LLM 模型均调用失败（最后错误: {last_error}）"
+        )
     
     def generate_mock_summary(self) -> str:
-        """生成模拟总结（当API不可用时使用）"""
-        return f"""# X推文日报 - {datetime.now().strftime('%Y年%m月%d日')}
+        """生成模拟总结（仅 allow_mock / ALLOW_MOCK_SUMMARY=1 时使用）
+        
+        标题日期使用数据日（_summary_date），与文件名 YYYYMMDD 对齐。
+        """
+        if self._summary_date:
+            try:
+                date_label = format_data_date_label(self._summary_date)
+            except ValueError:
+                date_label = datetime.now().strftime('%Y年%m月%d日')
+        else:
+            date_label = datetime.now().strftime('%Y年%m月%d日')
+        return f"""# X推文日报 - {date_label}
 
 ## 📊 数据概览
 - 分析时间：{datetime.now().strftime('%Y-%m-%d %H:%M')}
@@ -621,9 +779,16 @@ Prompt结束
 *配置LLM API密钥后将显示详细智能分析结果*"""
     
     def generate_summary(self, tweets: List[Dict], summary_type: str = "daily", user_info: Dict = None, 
-                       template_type: str = "auto", custom_instructions: str = "") -> Dict[str, Any]:
-        """生成推文总结"""
+                       template_type: str = "auto", custom_instructions: str = "",
+                       summary_date: Optional[str] = None) -> Dict[str, Any]:
+        """生成推文总结
+        
+        Args:
+            summary_date: 数据日 YYYYMMDD。标题与 prompt 使用该日期，
+                与 `{user}_{YYYYMMDD}_summary.md` 文件名对齐。
+        """
         print(f"🤖 开始生成{summary_type}总结...")
+        self._summary_date = summary_date
         
         if not tweets:
             return {
@@ -638,8 +803,11 @@ Prompt结束
         # 保存完整的prompt到文件
         self.save_prompt_to_file(prompt, summary_type, tweets, user_info)
         
-        # 调用LLM
+        # 调用LLM（失败时抛 LLMUnavailableError，不写模拟内容）
         summary_text = self.call_llm_api(prompt)
+        
+        if is_mock_summary(summary_text) and not self.allow_mock:
+            raise LLMUnavailableError("LLM 返回了模拟占位内容，拒绝作为真实总结保存")
         
         # 构建结果
         result = {
@@ -652,6 +820,7 @@ Prompt结束
                 "retweets": len([t for t in tweets if t.get('retweet')]),
                 "media_tweets": len([t for t in tweets if t.get('media')]),
                 "data_hash": hashlib.md5(str(tweets).encode()).hexdigest()[:8],
+                "data_date": summary_date,
                 "user": user_info.get('screen_name') if user_info and user_info.get('screen_name') else ('mixed_users' if summary_type.endswith('_mixed') else 'unknown')
             }
         }

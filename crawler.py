@@ -19,6 +19,16 @@ from typing import List, Dict, Optional, Any
 import random
 from config_loader import ConfigLoader
 
+
+class UserSummaryError(RuntimeError):
+    """Raised when one or more user summaries could not be produced for real."""
+
+    def __init__(self, message, failures=None, successes=None):
+        super().__init__(message)
+        self.failures = failures or []
+        self.successes = successes or []
+
+
 class XCrawler:
     def __init__(self, data_dir="crawler_data", config_file="config.json"):
         # 使用环境变量或默认值
@@ -864,91 +874,24 @@ class XCrawler:
         print(f"  📄 {action} @{screen_name}[{date_str}]: {len(sorted_tweets)} 条推文 -> {filename}")
     
     def generate_user_summaries_for_yesterday(self, force_overwrite: bool = False):
-        """生成昨天所有用户的个人推文总结"""
-        from datetime import datetime, timedelta
-        from summarizer import TwitterSummarizer
+        """生成昨天（Asia/Shanghai）所有用户的个人推文总结。
         
-        # 计算昨天日期
-        yesterday = datetime.now() - timedelta(days=1)
-        yesterday_str = yesterday.strftime('%Y%m%d')
-        
+        与 Daily Summary workflow「昨天的数据」一致：文件名与标题都用数据日。
+        """
+        from summarizer import data_day_yyyymmdd
+        yesterday_str = data_day_yyyymmdd()
         print(f"\n🤖 开始生成昨天({yesterday_str})的用户总结...")
-        
-        users_dir = self.data_dir / "users_daily"
-        summaries_dir = self.data_dir / "user_summaries"
-        summaries_dir.mkdir(exist_ok=True)
-        
-        # 查找昨天的所有用户文件
-        yesterday_files = list(users_dir.glob(f"*_{yesterday_str}.json"))
-        
-        if not yesterday_files:
-            print(f"📭 未找到昨天({yesterday_str})的用户数据文件")
-            return
-        
-        print(f"📂 发现 {len(yesterday_files)} 个用户文件")
-        
-        # 初始化总结器
-        summarizer = TwitterSummarizer()
-        summarized_count = 0
-        skipped_count = 0
-        
-        for user_file in yesterday_files:
-            try:
-                # 解析文件名获取用户名
-                username = user_file.stem.replace(f"_{yesterday_str}", "")
-                summary_filename = f"{username}_{yesterday_str}_summary.json"
-                summary_filepath = summaries_dir / summary_filename
-                
-                # 检查总结文件是否已存在
-                if summary_filepath.exists() and not force_overwrite:
-                    print(f"  ⏭️  跳过 @{username}: 总结已存在")
-                    skipped_count += 1
-                    continue
-                # 读取用户推文数据
-                with open(user_file, 'r', encoding='utf-8') as f:
-                    user_data = json.load(f)
-                
-                tweets = user_data.get('tweets', [])
-                user_info = user_data.get('user', {})
-                
-                if summary_filepath.exists() and force_overwrite:
-                    print(f"  🔄 强制覆盖 @{username} 总结 ({len(tweets)}条推文)...")
-                else:
-                    print(f"  🔄 生成 @{username} 总结 ({len(tweets)}条推文)...")
-                
-                if not tweets:
-                    print(f"  ⚠️  跳过 @{username}: 无推文数据")
-                    continue
-                
-                # 生成个人总结
-                summary_result = summarizer.generate_summary(tweets, f"user_daily", user_info)
-                
-                # 直接保存大模型的回复为markdown文件
-                md_filename = f"{username}_{yesterday_str}_summary.md"
-                md_filepath = summaries_dir / md_filename
-
-                # 判断是覆盖还是创建
-                was_existing = md_filepath.exists()
-
-                # 直接保存大模型的总结内容
-                with open(md_filepath, 'w', encoding='utf-8') as f:
-                    f.write(summary_result.get('summary', '暂无总结内容'))
-                
-                action = "覆盖" if (was_existing and force_overwrite) else "创建"
-                print(f"  ✅ {action}完成 @{username}: {md_filename}")
-                summarized_count += 1
-                
-            except Exception as e:
-                print(f"  ❌ 处理 {user_file.name} 失败: {e}")
-        
-        print(f"\n📊 用户总结完成:")
-        print(f"  ✅ 新生成: {summarized_count} 个")
-        print(f"  ⏭️  已跳过: {skipped_count} 个")
-        print(f"  📁 总结目录: {summaries_dir}")
+        return self.generate_user_summaries_for_date(yesterday_str, force_overwrite=force_overwrite)
     
     def generate_user_summaries_for_date(self, date_str: str, force_overwrite: bool = False):
-        """为指定日期的用户数据生成总结"""
-        from summarizer import TwitterSummarizer
+        """为指定日期的用户数据生成总结。
+        
+        失败闭环：
+        - 未配置 LLM / 调用失败：不写入模拟占位文件，记录失败并在结束后抛错
+        - 部分用户成功、部分失败：成功的真实总结会落盘，失败的不写 stub，最后仍非零退出
+        - 已存在的真实总结默认跳过；已存在的模拟占位会重新生成
+        """
+        from summarizer import TwitterSummarizer, LLMUnavailableError, is_mock_summary
         
         print(f"\n🤖 开始生成指定日期({date_str})的用户总结...")
         
@@ -957,37 +900,43 @@ class XCrawler:
         summaries_dir.mkdir(exist_ok=True)
         
         # 查找指定日期的所有用户文件
-        date_files = list(users_dir.glob(f"*_{date_str}.json"))
+        date_files = sorted(users_dir.glob(f"*_{date_str}.json"))
         
         if not date_files:
-            print(f"📭 未找到指定日期({date_str})的用户数据文件")
-            print(f"🔍 检查目录: {users_dir}")
-            return
+            raise UserSummaryError(
+                f"未找到日期 {date_str} 的用户数据文件（目录: {users_dir}）。无法生成总结。"
+            )
         
         print(f"📁 找到 {len(date_files)} 个用户数据文件")
         
-        # 创建总结器
-        summarizer = TwitterSummarizer()
+        api_key = self.config_loader.get("llm.api_key")
+        model = self.config_loader.get("llm.model")
+        base_url = self.config_loader.get("llm.base_url")
+        summarizer = TwitterSummarizer(api_key=api_key, model=model, base_url=base_url)
         
-        processed_count = 0
-        skipped_count = 0
+        processed = []
+        skipped = []
+        failed = []
         
         for user_file in date_files:
+            user_name = user_file.stem.replace(f"_{date_str}", "")
+            summary_filename = f"{user_name}_{date_str}_summary.md"
+            summary_path = summaries_dir / summary_filename
+            
             try:
-                # 提取用户名
-                user_name = user_file.stem.split('_')[0]  # filename: username_YYYYMMDD.json
-                
-                # 生成总结文件路径（改为markdown格式）
-                summary_filename = f"{user_name}_{date_str}_summary.md"
-                summary_path = summaries_dir / summary_filename
-                
-                # 检查是否已存在且不强制覆盖
                 if summary_path.exists() and not force_overwrite:
-                    print(f"  ⏭️  跳过 @{user_name} - 总结已存在")
-                    skipped_count += 1
+                    existing = summary_path.read_text(encoding="utf-8")
+                    if not is_mock_summary(existing):
+                        print(f"  ⏭️  跳过 @{user_name} - 真实总结已存在")
+                        skipped.append(user_name)
+                        continue
+                    print(f"  🔄 @{user_name} - 已有文件是模拟占位，重新生成")
+                
+                if not summarizer.api_key and not summarizer.allow_mock:
+                    failed.append((user_name, "未配置 TENCENT_DEEPSEEK_API_KEY / LKEAP_API_KEY"))
+                    print(f"  ❌ @{user_name} 需要 LLM 但未配置密钥，跳过写入")
                     continue
                 
-                # 加载用户数据
                 with open(user_file, 'r', encoding='utf-8') as f:
                     user_data = json.load(f)
                 
@@ -996,27 +945,65 @@ class XCrawler:
                 
                 if not tweets:
                     print(f"  ⚠️   @{user_name} - 无推文数据")
+                    skipped.append(user_name)
                     continue
                 
-                # 生成总结
                 print(f"  🔄 处理 @{user_name} ({len(tweets)} 条推文)")
-                summary_result = summarizer.generate_summary(tweets, 'user_daily', user_info)
+                summary_result = summarizer.generate_summary(
+                    tweets, 'user_daily', user_info, summary_date=date_str
+                )
                 
-                # 直接保存大模型的总结内容
+                if summary_result.get('error'):
+                    failed.append((user_name, summary_result['error']))
+                    print(f"  ❌ @{user_name} 失败: {summary_result['error']}")
+                    continue
+                
+                text = summary_result.get('summary') or ""
+                if not text.strip():
+                    failed.append((user_name, "总结内容为空"))
+                    print(f"  ❌ @{user_name} 失败: 总结内容为空")
+                    continue
+                
+                if is_mock_summary(text):
+                    failed.append((user_name, "LLM 返回了模拟占位内容，已拒绝写入"))
+                    print(f"  ❌ @{user_name} 失败: 模拟占位内容，拒绝写入")
+                    continue
+                
                 with open(summary_path, 'w', encoding='utf-8') as f:
-                    f.write(summary_result.get('summary', '暂无总结内容'))
+                    f.write(text)
                 
-                print(f"  ✅ @{user_name} 总结完成")
-                processed_count += 1
+                print(f"  ✅ @{user_name} 总结完成: {summary_filename}")
+                processed.append(user_name)
                 
+            except LLMUnavailableError as e:
+                failed.append((user_name, str(e)))
+                print(f"  ❌ @{user_name} LLM 不可用: {e}")
             except Exception as e:
+                failed.append((user_name, str(e)))
                 print(f"  ❌ @{user_name} 处理失败: {e}")
-                continue
         
         print(f"\n📊 用户总结生成完成:")
-        print(f"  ✅ 已处理: {processed_count} 个")
-        print(f"  ⏭️  已跳过: {skipped_count} 个")
+        print(f"  ✅ 已处理: {len(processed)} 个 {processed}")
+        print(f"  ⏭️  已跳过: {len(skipped)} 个 {skipped}")
+        print(f"  ❌ 失败: {len(failed)} 个")
+        for name, reason in failed:
+            print(f"     - @{name}: {reason}")
         print(f"  📁 总结目录: {summaries_dir}")
+        
+        if failed:
+            details = "; ".join(f"@{n}: {r}" for n, r in failed)
+            raise UserSummaryError(
+                f"{len(failed)} 个用户总结失败，未写入模拟占位内容。{details}",
+                failures=failed,
+                successes=processed,
+            )
+        
+        return {
+            "date": date_str,
+            "processed": processed,
+            "skipped": skipped,
+            "failed": failed,
+        }
 
 def main():
     """主函数"""

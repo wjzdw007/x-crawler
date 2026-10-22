@@ -39,7 +39,8 @@ class ConfigLoader:
             },
             "llm": {
                 "api_key": None,
-                "model": "openai/gpt-4o"
+                "model": "deepseek-v3.2",
+                "base_url": "https://api.lkeap.cloud.tencent.com/v1"
             },
             "proxy": {
                 "http": None,
@@ -64,11 +65,18 @@ class ConfigLoader:
         if os.getenv('X_CSRF_TOKEN'):
             config['authentication']['headers']['X-Csrf-Token'] = os.getenv('X_CSRF_TOKEN')
 
-        # LLM配置
-        if os.getenv('OPENROUTER_API_KEY'):
-            config['llm']['api_key'] = os.getenv('OPENROUTER_API_KEY')
-        if os.getenv('OPENAI_MODEL'):
-            config['llm']['model'] = os.getenv('OPENAI_MODEL')
+        # LLM配置 — 腾讯云 DeepSeek；不读取 OPENROUTER_API_KEY
+        for env_name in ("TENCENT_DEEPSEEK_API_KEY", "LKEAP_API_KEY", "OPENAI_API_KEY", "LLM_API_KEY"):
+            value = os.getenv(env_name)
+            if value and value.strip():
+                config['llm']['api_key'] = value.strip()
+                break
+        if os.getenv('OPENAI_MODEL', '').strip():
+            config['llm']['model'] = os.getenv('OPENAI_MODEL').strip()
+        if os.getenv('OPENAI_BASE_URL', '').strip():
+            config['llm']['base_url'] = os.getenv('OPENAI_BASE_URL').strip().rstrip('/')
+        elif os.getenv('LKEAP_BASE_URL', '').strip():
+            config['llm']['base_url'] = os.getenv('LKEAP_BASE_URL').strip().rstrip('/')
 
         # 代理配置
         if os.getenv('HTTP_PROXY'):
@@ -159,6 +167,7 @@ def main():
     print(f"  CT0 Token: {loader.get('authentication.cookies.ct0', '未设置')[:20]}...")
     print(f"  LLM API Key: {'已设置' if loader.get('llm.api_key') else '未设置'}")
     print(f"  LLM Model: {loader.get('llm.model')}")
+    print(f"  LLM Base URL: {loader.get('llm.base_url')}")
     print(f"  代理设置: {loader.get_proxy_settings() or '未设置'}")
 
     print("\n🔍 验证配置:")

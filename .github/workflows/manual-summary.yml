@@ -17,6 +17,8 @@ on:
 jobs:
   generate-summaries:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: 📥 Checkout repository
@@ -33,10 +35,23 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: 🔐 Assert Tencent DeepSeek secrets
+        env:
+          TENCENT_DEEPSEEK_API_KEY: ${{ secrets.TENCENT_DEEPSEEK_API_KEY }}
+          LKEAP_API_KEY: ${{ secrets.LKEAP_API_KEY }}
+        run: |
+          if [ -z "${TENCENT_DEEPSEEK_API_KEY}" ] && [ -z "${LKEAP_API_KEY}" ]; then
+            echo "::error::TENCENT_DEEPSEEK_API_KEY（或 LKEAP_API_KEY）未配置。禁止以模拟内容绿过。"
+            exit 1
+          fi
+          echo "Tencent DeepSeek API key is set"
+
       - name: ⚙️ Configure environment
         run: |
           cat > .env << EOF
-          OPENROUTER_API_KEY=${{ secrets.OPENROUTER_API_KEY }}
+          TENCENT_DEEPSEEK_API_KEY=${{ secrets.TENCENT_DEEPSEEK_API_KEY }}
+          LKEAP_API_KEY=${{ secrets.LKEAP_API_KEY }}
+          OPENAI_BASE_URL=${{ secrets.OPENAI_BASE_URL }}
           OPENAI_MODEL=${{ secrets.OPENAI_MODEL }}
           DATA_DIR=crawler_data
           EOF
@@ -49,16 +64,19 @@ jobs:
           fi
 
           if [ -z "${{ inputs.date }}" ]; then
-            # 生成昨天的总结
             python run_crawler.py --user-summaries $FORCE_FLAG
           else
-            # 生成指定日期的总结
             python -c "
           from crawler import XCrawler
           crawler = XCrawler()
           crawler.generate_user_summaries_for_date('${{ inputs.date }}', force_overwrite=${{ inputs.force }})
             "
           fi
+
+      - name: 🚫 Reject mock summaries
+        run: |
+          git add crawler_data/user_summaries/ || true
+          python scripts/check_summaries_not_mock.py --staged
 
       - name: 💾 Commit summaries
         run: |

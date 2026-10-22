@@ -77,8 +77,9 @@
    - `X_CT0_TOKEN`
    - `X_CSRF_TOKEN`
    - `X_BEARER_TOKEN`
-   - `OPENROUTER_API_KEY`
-   - `OPENAI_MODEL`
+   - `TENCENT_DEEPSEEK_API_KEY`（腾讯云 DeepSeek / LKEAP；必填，Daily Summary 无此密钥会直接失败）
+   - `OPENAI_MODEL`（可选，默认 `deepseek-v3.2`）
+   - `OPENAI_BASE_URL`（可选，默认 `https://api.lkeap.cloud.tencent.com/v1`）
 
 2. **启用 Actions 权限**
    ```

@@ -40,12 +40,32 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # 4. 配置环境变量
+      # 4. 断言腾讯云 DeepSeek 密钥存在（缺失则直接失败，禁止走 mock）
+      - name: 🔐 Assert Tencent DeepSeek secrets
+        env:
+          TENCENT_DEEPSEEK_API_KEY: ${{ secrets.TENCENT_DEEPSEEK_API_KEY }}
+          LKEAP_API_KEY: ${{ secrets.LKEAP_API_KEY }}
+        run: |
+          if [ -z "${TENCENT_DEEPSEEK_API_KEY}" ] && [ -z "${LKEAP_API_KEY}" ]; then
+            echo "::error::TENCENT_DEEPSEEK_API_KEY（或 LKEAP_API_KEY）未配置。Daily Summary 禁止以模拟内容绿过。"
+            echo "请在 Settings → Secrets and variables → Actions 中写入腾讯云 DeepSeek / LKEAP API Key。"
+            echo "文档: https://cloud.tencent.com/document/product/1772/115969"
+            exit 1
+          fi
+          KEY_LEN=${#TENCENT_DEEPSEEK_API_KEY}
+          if [ "$KEY_LEN" -eq 0 ]; then
+            KEY_LEN=${#LKEAP_API_KEY}
+          fi
+          echo "Tencent DeepSeek API key is set (${KEY_LEN} chars)"
+
+      # 5. 配置环境变量（不写入 OpenRouter）
       - name: ⚙️ Configure environment
         run: |
           cat > .env << EOF
-          # LLM配置 (总结需要)
-          OPENROUTER_API_KEY=${{ secrets.OPENROUTER_API_KEY }}
+          # 腾讯云 DeepSeek (LKEAP OpenAI 兼容接口)
+          TENCENT_DEEPSEEK_API_KEY=${{ secrets.TENCENT_DEEPSEEK_API_KEY }}
+          LKEAP_API_KEY=${{ secrets.LKEAP_API_KEY }}
+          OPENAI_BASE_URL=${{ secrets.OPENAI_BASE_URL }}
           OPENAI_MODEL=${{ secrets.OPENAI_MODEL }}
 
           # 代理配置 (可选)
@@ -56,8 +76,9 @@ jobs:
           DATA_DIR=crawler_data
           EOF
 
-      # 5. 生成昨天的用户总结
+      # 6. 生成昨天的用户总结（失败则非零退出，不写 mock）
       - name: 🤖 Generate user summaries
+        id: generate
         run: |
           FORCE_FLAG=""
           if [ "${{ github.event.inputs.force_summary }}" = "true" ]; then
@@ -65,50 +86,82 @@ jobs:
             echo "强制重新生成总结"
           fi
 
-          echo "为昨天的数据生成用户总结..."
+          echo "为昨天（Asia/Shanghai）的数据生成用户总结..."
           python run_crawler.py --user-summaries $FORCE_FLAG
 
-      # 6. 生成运行报告
+      # 7. 生成运行报告
       - name: 📊 Generate report
         if: always()
         run: |
           echo "## 🤖 总结生成报告" > report.md
           echo "" >> report.md
-          echo "- 🕐 运行时间: $(date +'%Y-%m-%d %H:%M:%S')" >> report.md
+          echo "- 🕐 运行时间: $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S') (北京)" >> report.md
           echo "- 📝 任务类型: 生成昨天的用户总结" >> report.md
+          echo "- 🧠 模型路径: 腾讯云 DeepSeek (LKEAP)" >> report.md
           echo "" >> report.md
 
-          # 统计总结文件
           if [ -d "crawler_data/user_summaries" ]; then
             SUMMARY_COUNT=$(ls -1 crawler_data/user_summaries/*.md 2>/dev/null | wc -l)
             echo "- 📄 总结文件总数: $SUMMARY_COUNT 个" >> report.md
 
-            # 统计今天生成的总结
-            TODAY=$(date +'%Y%m%d')
-            TODAY_SUMMARY_COUNT=$(ls -1 crawler_data/user_summaries/*_${TODAY}_*.md 2>/dev/null | wc -l)
-            echo "- ✨ 今天生成: $TODAY_SUMMARY_COUNT 个" >> report.md
+            DATA_DAY=$(TZ='Asia/Shanghai' date -d 'yesterday' +'%Y%m%d')
+            DATA_DAY_COUNT=$(ls -1 crawler_data/user_summaries/*_${DATA_DAY}_*.md 2>/dev/null | wc -l)
+            echo "- ✨ 数据日 ${DATA_DAY} 总结: $DATA_DAY_COUNT 个" >> report.md
           fi
 
           cat report.md
 
-      # 7. 提交总结到仓库
-      - name: 💾 Commit and push summaries
+      # 8. 只暂存非 mock 的总结，再硬闸
+      - name: 🚫 Reject mock summaries
+        id: reject_mock
+        if: always()
+        run: |
+          git add crawler_data/user_summaries/ || true
+
+          if python scripts/check_summaries_not_mock.py --staged; then
+            echo "staged summaries are real"
+            exit 0
+          fi
+
+          echo "检测到模拟占位内容，将从暂存区移除这些文件"
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          from summarizer import is_mock_summary
+          out = subprocess.check_output(
+              ["git", "diff", "--cached", "--name-only", "--", "crawler_data/user_summaries/"],
+              text=True,
+          )
+          bad = []
+          for line in out.splitlines():
+              path = Path(line)
+              if path.is_file() and is_mock_summary(path.read_text(encoding="utf-8")):
+                  bad.append(line)
+          if bad:
+              subprocess.check_call(["git", "reset", "HEAD", "--", *bad])
+              print("unstaged:", *bad, sep="\n  ")
+          PY
+          exit 1
+
+      # 9. 提交真实总结（部分成功也落库；job 仍会因 generate/reject 失败而标红）
+      - name: 💾 Commit and push real summaries
+        if: always()
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-          # 只添加总结文件
           git add crawler_data/user_summaries/
 
-          # 检查是否有变更
+          python scripts/check_summaries_not_mock.py --staged
+
           if git diff --staged --quiet; then
-            echo "没有新总结需要提交"
+            echo "没有真实总结需要提交"
           else
-            git commit -m "🤖 总结更新: $(date +'%Y-%m-%d') 每日总结"
+            git commit -m "🤖 总结更新: $(TZ='Asia/Shanghai' date +'%Y-%m-%d') 每日总结"
             git push
           fi
 
-      # 8. 上传运行报告
+      # 10. 上传运行报告
       - name: 📤 Upload report
         if: always()
         uses: actions/upload-artifact@v4
@@ -119,7 +172,7 @@ jobs:
             crawler_data/user_summaries/*.md
           retention-days: 30
 
-      # 9. 失败通知
+      # 11. 失败通知
       - name: 🐛 Create Issue on failure
         if: failure()
         uses: actions/github-script@v7
@@ -137,17 +190,18 @@ jobs:
               🔗 [查看运行日志](${context.payload.repository.html_url}/actions/runs/${context.runId})
 
               ### 可能原因
-              - [ ] OpenRouter API 配额不足
-              - [ ] LLM API 密钥过期
-              - [ ] 昨天没有数据文件
-              - [ ] 网络连接问题
+              - [ ] TENCENT_DEEPSEEK_API_KEY / LKEAP_API_KEY 未配置或无效
+              - [ ] 腾讯云 DeepSeek 额度不足或模型下线
+              - [ ] OPENAI_MODEL / OPENAI_BASE_URL 与 LKEAP 文档不一致
+              - [ ] 昨天没有 users_daily 数据文件
+              - [ ] 生成结果含模拟占位（已被拒绝提交）
 
               ---
               *此 Issue 由 GitHub Actions 自动创建*`,
               labels: ['bot', 'summary-failure']
             });
 
-      # 10. Telegram 通知 (可选)
+      # 12. Telegram 通知 (可选)
       - name: 📱 Send Telegram notification
         if: failure()
         continue-on-error: true

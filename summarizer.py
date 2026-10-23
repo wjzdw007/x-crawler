@@ -126,6 +126,23 @@ def format_data_date_label(date_str: str) -> str:
     return datetime.strptime(date_str, "%Y%m%d").strftime("%Y年%m月%d日")
 
 
+# Hard constraint for every Daily Summary prompt (default + all user templates).
+# Titles and body must be Simplified Chinese; proper nouns / brands / @handles may stay original.
+DAILY_SUMMARY_LANGUAGE_CONSTRAINT = (
+    "输出必须使用简体中文。标题与正文均为中文；专有名词、品牌名、@账号可保留原文。"
+)
+
+
+def apply_daily_summary_language_constraint(prompt: str) -> str:
+    """Prefix a Daily Summary prompt with the Simplified Chinese output rule."""
+    text = prompt or ""
+    if text.startswith(DAILY_SUMMARY_LANGUAGE_CONSTRAINT):
+        return text
+    if text:
+        return f"{DAILY_SUMMARY_LANGUAGE_CONSTRAINT}\n\n{text}"
+    return DAILY_SUMMARY_LANGUAGE_CONSTRAINT
+
+
 class TwitterSummarizer:
     def __init__(self, api_key: Optional[str] = None, model: Optional[str] = None,
                  allow_mock: Optional[bool] = None, base_url: Optional[str] = None):
@@ -303,7 +320,11 @@ class TwitterSummarizer:
             return self.user_prompt_templates['default']['template']
         else:
             # 后备默认模板
-            return "请分析以下用户的推文：\n\n用户信息：{user_info}\n\n推文内容：\n{tweet_content}\n\n请用中文总结要点。"
+            return (
+                "请分析以下用户的推文：\n\n用户信息：{user_info}\n\n"
+                "推文内容：\n{tweet_content}\n\n"
+                "请用简体中文总结要点。标题与正文均为中文。"
+            )
     
     def set_model(self, model: str):
         """动态设置使用的模型"""
@@ -588,7 +609,7 @@ class TwitterSummarizer:
             except ValueError:
                 pass
 
-        return prompt
+        return apply_daily_summary_language_constraint(prompt)
     
     def save_prompt_to_file(self, prompt: str, summary_type: str, tweets: List[Dict], user_info: Dict = None) -> str:
         """保存完整的LLM prompt到文件"""
@@ -701,9 +722,13 @@ Prompt结束
                     model=current_model,
                     messages=[
                         {
-                            "role": "user", 
-                            "content": prompt
-                        }
+                            "role": "system",
+                            "content": DAILY_SUMMARY_LANGUAGE_CONSTRAINT,
+                        },
+                        {
+                            "role": "user",
+                            "content": prompt,
+                        },
                     ],
                     max_tokens=self.llm_config["max_tokens"],
                     temperature=self.llm_config["temperature"]

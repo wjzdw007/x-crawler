@@ -15,11 +15,13 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT))
 
 from summarizer import (  # noqa: E402
+    DAILY_SUMMARY_LANGUAGE_CONSTRAINT,
     DEFAULT_LLM_BASE_URL,
     DEFAULT_LLM_MODEL,
     LLMUnavailableError,
     TENCENT_DEEPSEEK_FALLBACK_MODELS,
     TwitterSummarizer,
+    apply_daily_summary_language_constraint,
     data_day_yyyymmdd,
     format_data_date_label,
     is_mock_summary,
@@ -169,6 +171,84 @@ class FailClosedTests(unittest.TestCase):
         prompt = summarizer.generate_simple_prompt(SAMPLE_TWEETS, {"screen_name": "dotey"})
         self.assertIn("20261021", prompt)
         self.assertIn("2026年10月21日", prompt)
+        self.assertTrue(prompt.startswith(DAILY_SUMMARY_LANGUAGE_CONSTRAINT))
+
+    def _write_repo_templates(self):
+        src = REPO_ROOT / "user_prompt_templates.json"
+        dest = Path("user_prompt_templates.json")
+        dest.write_text(src.read_text(encoding="utf-8"), encoding="utf-8")
+        return json.loads(src.read_text(encoding="utf-8"))
+
+    def test_built_prompt_forces_simplified_chinese_for_default_and_user_templates(self):
+        templates = self._write_repo_templates()
+        self.assertIn("default", templates)
+        self.assertIn("dotey", templates)
+
+        summarizer = TwitterSummarizer(allow_mock=True)
+        summarizer._summary_date = "20261021"
+
+        default_prompt = summarizer.generate_simple_prompt(
+            SAMPLE_TWEETS, {"screen_name": "unknown_user_without_template"}
+        )
+        user_prompt = summarizer.generate_simple_prompt(
+            SAMPLE_TWEETS, {"screen_name": "dotey"}
+        )
+
+        for prompt in (default_prompt, user_prompt):
+            self.assertTrue(prompt.startswith(DAILY_SUMMARY_LANGUAGE_CONSTRAINT))
+            self.assertIn("简体中文", prompt)
+            self.assertIn("标题与正文均为中文", prompt)
+            self.assertIn("@账号可保留原文", prompt)
+
+        self.assertIn("分析用户今天的推文", default_prompt)
+        self.assertIn("dotey是AI技术专家", user_prompt)
+        self.assertNotEqual(default_prompt, user_prompt)
+
+    def test_fallback_template_prompt_also_includes_chinese_constraint(self):
+        summarizer = TwitterSummarizer(allow_mock=True)
+        self.assertEqual(summarizer.user_prompt_templates, {})
+        prompt = summarizer.generate_simple_prompt(
+            SAMPLE_TWEETS, {"screen_name": "nobody"}
+        )
+        self.assertTrue(prompt.startswith(DAILY_SUMMARY_LANGUAGE_CONSTRAINT))
+        self.assertIn("简体中文", prompt)
+
+    def test_language_constraint_helper_is_idempotent(self):
+        once = apply_daily_summary_language_constraint("hello")
+        twice = apply_daily_summary_language_constraint(once)
+        self.assertEqual(once, twice)
+        self.assertEqual(
+            DAILY_SUMMARY_LANGUAGE_CONSTRAINT,
+            "输出必须使用简体中文。标题与正文均为中文；专有名词、品牌名、@账号可保留原文。",
+        )
+
+    def test_llm_call_sends_chinese_system_constraint(self):
+        summarizer = TwitterSummarizer(api_key="sk-test-tencent", allow_mock=False)
+        captured = {}
+
+        class FakeCompletions:
+            def create(self, **kwargs):
+                captured["messages"] = kwargs["messages"]
+                msg = type("M", (), {"content": "## 核心动态\n- 测试"})()
+                choice = type("C", (), {"message": msg})()
+                return type("R", (), {"choices": [choice]})()
+
+        class FakeChat:
+            def __init__(self):
+                self.completions = FakeCompletions()
+
+        class FakeClient:
+            def __init__(self, *args, **kwargs):
+                self.chat = FakeChat()
+
+        fake_openai = type(sys)("openai")
+        fake_openai.OpenAI = FakeClient
+        with patch.dict(sys.modules, {"openai": fake_openai}):
+            result = summarizer.call_llm_api("hello")
+        self.assertEqual(captured["messages"][0]["role"], "system")
+        self.assertEqual(captured["messages"][0]["content"], DAILY_SUMMARY_LANGUAGE_CONSTRAINT)
+        self.assertEqual(captured["messages"][1]["role"], "user")
+        self.assertIn("核心动态", result)
 
     def test_api_error_does_not_return_mock(self):
         summarizer = TwitterSummarizer(api_key="sk-test-tencent", allow_mock=False)

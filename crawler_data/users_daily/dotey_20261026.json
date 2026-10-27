@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 262126,
+    "followers_count": 262178,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261026",
-  "last_updated": "2026-10-26T22:14:35.174934",
-  "tweet_count": 8,
+  "last_updated": "2026-10-27T03:25:29.541654",
+  "tweet_count": 9,
   "tweets": [
     {
       "id": "2114518128910897640",
@@ -328,6 +328,45 @@
         "favorite_count": 2,
         "reply_count": 5,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2114867168072315221",
+      "text": "OpenAI 称 AI 推翻计算机科学的“指数时间假设”，还证出杨-米尔斯理论存在，外部专家组开始核查\n\nOpenAI 10 月 26 日宣布，内部模型在数学、计算机、物理上各拿出一项成果，其中两项碰的是几十年的难题。这些都还是 OpenAI 的说法，没经过同行评审，截至发稿也没有参与核查的专家公开评价结论对错。\n\n【计算机：一条被当作地基的假设】\n\n“可满足性问题”是这样一类题：给你一堆“A 和 B 至少一个为真”之类的条件，问能不能让它们同时成立。每多一个变量，要试的组合就翻一倍。\n\n1999 年 Russell Impagliazzo 和 Ramamohan Paturi 提出“指数时间假设”（ETH）：这类题没有本质上更快的解法，耗时注定翻倍式增长。几百篇论文拿它当前提，论证很多问题“快不了”。\n\nOpenAI 公开的论文给出一个新算法，依然很慢，但耗时增长得比 ETH 断言的慢，这就足以推翻它。它没有证明“所有难题都有快速解法”（P=NP），OpenAI 也说变成实际提速还要大量研究。\n\nOpenAI 说证明已用 Lean 检查过。Lean 是一种证明检查程序，把证明拆成最小步骤逐条核对，错一步就不通过。论文和 Lean 代码都在 GitHub 上，任何人能复核。核查小组由 Impagliazzo、Paturi 和 MIT 的 Ryan Williams 牵头。\n\n【物理：千禧年难题的一半】\n\n量子色动力学（QCD）描述夸克和胶子怎样靠“强力”粘成原子核，计算和实验对得上，但没人用数学严格证明过它能成立。它的简化版“杨-米尔斯理论”是克雷数学研究所悬赏 100 万美元的千禧年难题。\n\nOpenAI 称模型 9 月写出了两者存在的证明，10 月中旬完成 Lean 检查。不过这道千禧年难题要证两件事：理论存在，以及最轻的粒子也有质量（“质量间隙”）。OpenAI 只说做了前一件。\n\n物理材料暂不公开，由诺贝尔奖得主 David Gross 带队的专家组先自己写成论文，外界目前没法检查。\n\n【数学：Kakeya 猜想推到所有维度】\n\nKakeya 问题问的是：一个图形要能放下指向每个方向的单位线段，最少多大。面积能小到接近零，但数学家猜它在“维度”上总是满的。2025 年王虹和 Joshua Zahl 证了三维。OpenAI 称模型证明了一个更强的猜想，顺带拿下所有维度，论文和 Lean 证明已直接公开。\n\n【为什么换了发布方式】\n\n9 月 OpenAI 宣布解决纳维-斯托克斯千禧年难题，有数学家说撞上自己未公开的研究，引发署名之争；10 月 6 日它一口气发了 722 篇 AI 论文，次日因错误撤回 3 篇。这次改请外部专家牵头：不签保密协议，OpenAI 不要学术署名，专家无偿独立参与。\n\nOpenAI 原文：https://t.co/ANHLKq5ocW\n论文与 Lean 证明：https://t.co/aPgNSqXevr",
+      "created_at": "Mon Oct 26 23:49:59 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2114837059462627533",
+        "text": "Announcing three major scientific discoveries, one each in mathematics (harmonic analysis), computer science (complexity theory), and physics (quantum field theory).\n\nAI starting to help us improve our understanding of the universe! https://t.co/VkfacopR2R",
+        "created_at": "Mon Oct 26 21:50:21 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "162124540",
+          "name": "Greg Brockman",
+          "screen_name": "gdb",
+          "description": "President & Co-Founder @OpenAI",
+          "followers_count": 1078670,
+          "friends_count": 8,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 884,
+          "favorite_count": 7892,
+          "reply_count": 355,
+          "quote_count": 392
+        }
+      },
+      "stats": {
+        "retweet_count": 11,
+        "favorite_count": 147,
+        "reply_count": 72,
+        "quote_count": 10
       }
     }
   ]

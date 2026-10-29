@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 262592,
+    "followers_count": 262618,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261028",
-  "last_updated": "2026-10-28T20:45:45.382527",
-  "tweet_count": 24,
+  "last_updated": "2026-10-29T01:31:29.450429",
+  "tweet_count": 27,
   "tweets": [
     {
       "id": "2115252134769729617",
@@ -1134,6 +1134,123 @@
         "favorite_count": 13,
         "reply_count": 6,
         "quote_count": 4
+      }
+    },
+    {
+      "id": "2115556902876991894",
+      "text": "网友晒 OpenAI 软件工程师面试全流程：带回家项目会被逐行追问，部分人加考“用 AI 写代码”\n\nReddit 求职论坛 r/InterviewCoderHQ 上，用户 little_kwagga 发帖说自己刚面完 OpenAI 的软件工程师岗位，把流程拆开讲了一遍：\n一通招聘官电话，两轮技术初筛，一个 48 小时的带回家项目，一场专门追问这个项目的面试，再加四轮现场面试。部分候选人还会多一轮，要求用 AI 编码工具解决一个靠手写做不完的问题。\n\n这是一位匿名网友的个人经历，OpenAI 没有公布这么细的流程，不同团队、不同职级的面试也可能不一样。能对照的官方信息是 OpenAI 官网的面试指南：大致分初步沟通、技能测试、终面、出结果几个阶段；技能测试可能是结对写代码、带回家项目或技术测试；终面一般 4 到 6 小时，见 4 到 6 位面试官。\n\n【每一轮考什么】\n\n招聘官电话：主要聊背景，但发帖人被问到“你觉得 AI 会往哪走”。发帖人建议提前读一遍 OpenAI 章程（Charter），这是 OpenAI 2018 年发布的使命文件，核心是让通用人工智能造福全人类。官网面试指南也建议读，并写明会看候选人跟公司使命和价值观合不合。\n\n技术初筛：同一天两轮，各 60 分钟。编码题是做一个“带版本的键值存储”，可以理解成一本能记住修改历史的字典：同一个词条改过很多次，你要能查出它在任意时刻的值。系统设计题是一个容错的任务调度系统，负责按时派发任务，某台机器挂了，任务既不能丢，也不能重复执行。\n\n带回家项目：48 小时内做一个能真正跑起来的东西。发帖人拿到的是分布式 webhook 投递系统。webhook 是网站之间互相通知的方式，比如你付款成功后，支付平台会主动给商家网站发一条消息。题目要求发送失败时自动重试，重试多次仍失败的消息放进“死信队列”，相当于邮局存放无法投递信件的柜子，留着之后处理。\n\n技术深挖：面试官事先看过你的项目，自己列好一张问题清单，带着你逐行过代码，追问每个选择和决定的理由。\n\n现场四轮：\n\n编码第一轮是“渐进式多阶段”题：题目分几段放出，前一段做出能跑的解法，下一段才开放。发帖人拿到的是 token 级的流式比对器。token 是大模型输出文字的最小单位，大致是一个词或半个词，模型回答时就是一个 token 一个 token 往外吐。这道题要边接收边比对内容的变化，记录每一步状态，还要能回滚到之前的状态。发帖人的经验是先尽早做出一个正确的版本，再一步步改进。\n\n编码第二轮偏系统方向，考状态管理、并发和内存效率，还问到 Python 的生成器、异步写法和迭代器这些语言底层机制。\n\n系统设计题是“设计 ChatGPT”。面试官关心的是 GPU 怎么分配、流量忽高忽低时怎么自动加减机器、多台机器之间怎么协调。发帖人提醒，除非面试官特别要求，模型推理那一层可以当成一个黑盒，不用展开。\n\n行为面问的是技术领导力、影响多个团队的架构决策、压力下怎么让大家达成一致。发帖人说要讲具体的取舍，空谈沟通技巧的回答不管用。\n\n【新增的 AI 编码轮】\n\n发帖人说，这一轮还在测试阶段，只有部分候选人会遇到：给你一个现成的代码库，外加一个大到靠手写做不完的问题，要求你用 AI 编码智能体完成。AI 编码智能体指能自己读代码、改代码、运行命令的 AI 工具，比如 OpenAI 的 Codex、Anthropic 的 Claude Code。这一轮怎么评分，发帖人没说，OpenAI 官方也没公开介绍过这一轮。\n\nOpenAI 官网面试指南里有一句相关的说明：不同面试对 AI 工具的要求不同，有些形式有意允许使用，有些要考你不靠 AI 独立解题；准备材料里会写清楚，拿不准就提前问招聘官。所以同一套面试里，可能有的轮次不许用 AI，有的轮次专门看你怎么用 AI。\n\n发帖人在帖子最后问，有没有人专门准备过渐进式多阶段这种题型，什么方法有用。\n\n来源：Reddit r/InterviewCoderHQ 用户 little_kwagga 的帖子《OpenAI Software Engineer Interview 2026》；OpenAI 面试指南 https://t.co/1YXHnS71LN",
+      "created_at": "Wed Oct 28 21:30:45 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2115316924087439493",
+        "text": "OpenAl SWE Interview Experience https://t.co/H125sMMmQ1",
+        "created_at": "Wed Oct 28 05:37:10 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2115316890272976896",
+            "url": "https://pbs.twimg.com/media/HVsdgRga0AADYXI.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2115316915396874240",
+            "url": "https://pbs.twimg.com/media/HVsdhvGbEAAk4zk.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1962604392001216512",
+          "name": "ayesha",
+          "screen_name": "ayesha_fatiima",
+          "description": "Tech | AI | DM for Collab/Work\n\n📩 ayeshaa.workss@gmail.com",
+          "followers_count": 6414,
+          "friends_count": 857,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 90,
+          "favorite_count": 3197,
+          "reply_count": 100,
+          "quote_count": 36
+        }
+      },
+      "stats": {
+        "retweet_count": 12,
+        "favorite_count": 145,
+        "reply_count": 23,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2115577135762919483",
+      "text": "红果日活 1.68 亿、人均每天两小时：秦朔说“字节时间”来了，程苓峰说这才刚开始\n\n同一份数据，两篇文章，两个结论。野村证券 9 月的报告援引 QuestMobile 数据：今年 7 月，在中国使用时长排前 50 的 App 里，抖音第一次超过微信，字节系合计占 40.9%，腾讯系占 29.1%。\n\n《第一财经日报》原总编辑秦朔据此写了《可怕的红果与中国互联网的字节时间》，担心红果这类算法机器正在吃掉人们的时间。\n\n公众号“神在吗”的作者程苓峰 10 月 28 日接着写了《肉鸡时间》，认为份额只是表面，AI 短剧才是真正的“核爆”。两篇文章都在传的“红果年入 400 亿”，红果官方已经声明不实。\n\n【红果有多能占时间】\n\n秦朔引用的报告显示，红果 7 月日活 1.68 亿，一年翻了一倍，超过腾讯视频、爱奇艺、优酷、芒果 TV 四家相加（约 1.55 亿，未去重）。按使用总时长，红果已是中国第四大 App，排在抖音、微信、抖音极速版之后；今年 2 月人均每天看 125 分钟，比抖音和微信还长。\n\n用户数上红果还差得远：微信日活 9 亿多，抖音 7 亿多。红果赢的是每个人花在上面的时间。\n\n【秦朔：红果是一台时间吸收器】\n\n秦朔把红果跑得快归结为四点。\n\n1. 算法：每集 1 到 3 分钟，集集结尾留悬念，手指一滑就是下一集。\n\n2. 供给：广电总局公布，今年前 8 个月全国上线微短剧 43 万部，是去年全年的 13 倍，其中 AI 剧超过九成。\n\n3. 生态：在抖音刷到剧情片段，一键跳到红果看全集；番茄小说提供原著，秦朔文中说，去年的爆款短剧六成以上改编自番茄小说。\n\n4. 免费：看剧不花钱，只看广告，平台拿广告收入给创作者分账。\n\n腾讯刚在微信小程序里推出“绿泡泡短剧”应战，秦朔不看好。\n\n秦朔打了个比方：字节所有 App 共用一套算法底座，像同一个酒瓶倒出不同的酒；腾讯靠社交起家，各个产品各用各的瓶子。秦朔还提到，在抖音和红果上看什么，朋友不知道，也就没有发朋友圈那种顾虑。\n\n秦朔最在意代价。每天 125 分钟，意味着读书、思考、陪家人的时间少了。\n\n秦朔预计短剧会分化成 K 型：底层是海量 AI 爽剧，顶层是少量真人精品，夹在中间的真人短剧最难过。秦朔也认为，时间多不等于价值高，腾讯在精品内容和中老年用户上仍有底盘。\n\n刹车已经出现。9 月 1 日起施行的《微短剧发展管理办法》要求 AI 内容逐集标注，禁止平台用诱导沉迷的算法。红果 10 月 21 日宣布下线“看剧赚金币”：11 月 1 日起新用户不再有这个功能，12 月 31 日前全部下线，已攒下的金币和余额不受影响。\n\n【抖音的反驳】\n\n抖音集团副总裁李亮两次在微博回应，说“字节时间”不严谨：数据只算前 50 个 App，没算长尾 App 和电脑端；字节系最新的 41.8% 也没过半；短剧和短视频是充分竞争的行业，没有谁能一直第一。\n\n秦朔 10 月 28 日回应说，“字节时间”是对注意力流向的概括，并非垄断认定。\n\n【程苓峰：要看速度，AI 短剧是另一种东西】\n\n程苓峰认为份额过没过半不重要。一年前字节系和腾讯系差不到 3 个点，现在差 13 个点，跑得快的一方会吸走所有新增的时间。\n\n程苓峰把红果的优势叫作“三低合一”：番茄小说的网文省了剧本成本，字节的视频生成模型 Seedance 省了拍摄和演员成本，抖音流量便宜还能先放片段试水，省了拉新成本。\n\n秦朔和程苓峰都看了穿越剧《持械入宋》。\n\n秦朔说它比以前的短剧多样，有内涵也有专业性，但耗时、容易陷进去。程苓峰在里面看出了一场创业：主角用现代知识造火炮、改弩机，为了拿到铁料去考科举，再一点点组织人手，按未来的地图改造旧世界。\n\n程苓峰还刷到讲急诊分诊、大闸蟹养殖、货车司机生活的剧，觉得这些短剧像一部百科全书。\n\n所以程苓峰主张把真人短剧和 AI 短剧分开看。抖音的内容是普通用户拍的，短而散，算法负责把内容送到你面前；AI 短剧是一个懂行的编剧加 AI 拍出来的，一季上百集，往一个行业越挖越深，AI 用在把内容做出来。\n\n程苓峰预计下一步 AI 两头都管：内容生成得比人看得快，每个人看到的剧情都不一样，广告直接编进情节。\n\n到那时会分成两条路：\n1. 免费的娱乐加广告，普通观众毫无招架之力，程苓峰称之为“肉鸡”；\n2. 收费的教育，因材施教，逼人往上走。\n\n【两人的分歧】\n\n秦朔认为监管和金币下线会让红果从狂奔回到常规，短剧也不会杀死长内容，就像方便面没有取代正餐。程苓峰认为这才是“核爆当夜”，引用朋友的话说“字节没有上限”。\n\n两人都担心沉迷。秦朔担心的是人的注意力和耐心被算法重塑；程苓峰担心的是社会更加 K 型，少数人借 AI 往上走，多数人被娱乐吞掉。\n\n【数字靠不靠得住】\n\n字节系、腾讯系的时长份额有出处，来自野村报告援引的 QuestMobile 数据，7 月是 40.9% 对 29.1%（秦朔引用），8 月是 41.8% 对 28.6%（程苓峰引用），统计范围只有前 50 个 App。\n\n红果“第四大 App”“人均 125 分钟”出自同一份第三方报告，红果官方没有确认。\n\n“前 8 个月 43 万部、AI 剧超九成”是广电总局网络视听司司长王小亮在国新办发布会上公布的。\n\n程苓峰文中“红果今年收入 400 亿”，红果 10 月 27 日晚已声明不实，并称网传的机构数据和专家预计都不是官方信息。\n\n拿来对比的“电影总票房 520 亿”是 2025 年全年数字，国家电影局公布为 518.32 亿元。\n\n秦朔原文：https://t.co/BmFxhLJmJF\n程苓峰原文：https://t.co/rHLhiUlGi5\n秦朔与李亮的争论：https://t.co/YovnaVNbSp\n红果辟谣 400 亿：https://t.co/6w4Lr3NUse\n红果下线金币：https://t.co/btpXOtoDYM\n43 万部微短剧：https://t.co/MvlHxlvAQU",
+      "created_at": "Wed Oct 28 22:51:09 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2115576091255431168",
+          "url": "https://pbs.twimg.com/media/HVwJPwaW4AAWUTF.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 12,
+        "favorite_count": 71,
+        "reply_count": 28,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2115591064073413118",
+      "text": "ChatGPT Pro 和 Business 订阅即日起每月送最高 500 美元 API 额度，不另收费，Plus 没有\n\nOpenAI 10 月 28 日宣布，付费的 ChatGPT Pro 和 Business 订阅用户，每月可以免费领一笔 API 额度，最多 500 美元。API 是给开发者用的接口，按用量付费，自己写的 App、网站、自动化脚本要调用 OpenAI 的模型，走的就是这条路。以前订阅 ChatGPT 和用 API 是两本账，交了订阅费，写程序照样另外充钱。现在这笔额度算在订阅里，不用额外付费。\n\n【谁能领、领多少】\n\nPro 按档位给，每月 100、200 或 500 美元。据 CellCog 的说法，额度正好等于各档月费，相当于订阅费原样变成 API 额度。Business 按付费席位算：标准席位每个 20 美元，高级席位每个 100 美元，整个工作区合在一起用，上限 500 美元，也就是 25 个标准席位或 5 个高级席位就封顶，再加人也不涨。\n\nPlus、Go、免费版和 Enterprise 都没有。据 CellCog 转述 OpenAI 帮助页，订阅还要满 7 天，免费试用和赠送的订阅不算。地区限制官方推文没提，两家媒体也没写。\n\n【怎么领】\n\n在 ChatGPT 的“设置 → 账单”里领取，绑定一个你自己名下的 API 组织（OpenAI 开发者平台上的账户），ChatGPT 账号和 API 账号要用同一个邮箱。Business 由工作区管理员在账单设置或管理后台领。领完后，在 ChatGPT 或 Codex 里用 OpenAI Developers 插件就能生成 API key、建项目，不用先绑信用卡。\n\n【能干什么，有什么限制】\n\n这笔钱可以花在 OpenAI 开发者平台的大部分服务上：调模型做对话和智能体、实时语音、生成图片，以及联网搜索、代码解释器这些内置工具。比如给自己做个小工具，或者给团队搭个内部问答机器人。\n\n几条限制要注意，以下均据 CellCog 转述的 OpenAI 帮助页：额度当月有效，账单周期结束清零，不能攒到下个月，第一个月按剩余天数折算；用 API key 跑 Codex 不能花这笔钱；它也不会提高你在 ChatGPT 和 Codex 里的使用上限，两边额度各算各的。花钱顺序是先用赠送的，再用自己充的；两笔都花完，请求会直接报错，除非开了自动充值。\n\n说明：OpenAI 帮助中心原文（https://t.co/TmmayxRUMq）这次没能直接打开，推文之外的细则来自 AlphaSignal 和 CellCog 对帮助页的转述。两家都写到的部分（Plus 和 Enterprise 不能领、额度不累积、Codex 不能用）说法一致；满 7 天、同一邮箱这些细节只有 CellCog 写了。\n\n来源：\nOpenAI 帮助中心 https://t.co/5EYQpuJYMd\nAlphaSignal https://t.co/bc86gNdPR7\nCellCog https://t.co/YjAAjjwlml",
+      "created_at": "Wed Oct 28 23:46:30 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2115583698074755078",
+        "text": "Starting today, eligible ChatGPT Pro and Business subscribers can claim up to $500 per month in API credits to build apps and agents. https://t.co/kcbaKSQh1M",
+        "created_at": "Wed Oct 28 23:17:13 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2115583492662988800",
+            "url": "https://video.twimg.com/amplify_video/2115583492662988800/vid/avc1/1920x1080/iJs0ZWOuUa7u0uHe.mp4?tag=16",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1633874951508721686",
+          "name": "OpenAI Developers",
+          "screen_name": "OpenAIDevs",
+          "description": "Official updates for developers building with Codex & the OpenAI Platform • Service status: https://t.co/kZwnwdYYEq",
+          "followers_count": 467061,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 294,
+          "favorite_count": 3582,
+          "reply_count": 246,
+          "quote_count": 307
+        }
+      },
+      "stats": {
+        "retweet_count": 26,
+        "favorite_count": 230,
+        "reply_count": 90,
+        "quote_count": 15
       }
     }
   ]

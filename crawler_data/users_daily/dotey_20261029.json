@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 262718,
+    "followers_count": 262802,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261029",
-  "last_updated": "2026-10-29T07:58:02.049738",
-  "tweet_count": 5,
+  "last_updated": "2026-10-29T14:56:50.954118",
+  "tweet_count": 7,
   "tweets": [
     {
       "id": "2115610195053220343",
@@ -156,6 +156,116 @@
         "retweet_count": 1,
         "favorite_count": 6,
         "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2115806466825453782",
+      "text": "忘记说了，直接升级不行，需要用新的 skills 名字：\n\nclaude-design-system （设计系统，不要省，做设计先用它导入或者制作好设计系统）\nclaude-design（对应 Design）\nclaude-slides（对应 Slides）\nclaude-dashboard（对应 Dashboard）\n\nhttps://t.co/18MuAuQUPB https://t.co/iFY2o51BqV",
+      "created_at": "Thu Oct 29 14:02:26 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2115805746130472960",
+          "url": "https://pbs.twimg.com/media/HVzaHbfWUAAwR7v.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2115806249333698560",
+          "url": "https://pbs.twimg.com/media/HVzakuEWMAAn4nK.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2115719451081601251",
+        "text": "@dotey 用npx skills update就行了吧？",
+        "created_at": "Thu Oct 29 08:16:39 +0000 2026",
+        "lang": "ja",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1755271013531815940",
+          "name": "Alakor nir Shozak",
+          "screen_name": "AShozak",
+          "description": "",
+          "followers_count": 9,
+          "friends_count": 3,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2115808563406708826",
+      "text": "前端逆向方法\nhttps://t.co/6sXlL977LH",
+      "created_at": "Thu Oct 29 14:10:45 +0000 2026",
+      "lang": "ja",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2109151666020794711",
+        "text": "用 REA 小试牛刀逆向了 Claude Slides 的 Slides 编辑器，几乎完整功能。（图1）\n\n我的用法很简单，不一定是最佳实践，仅供参考：\n\n1. 先去 Claude Slides 上把核心的脚本和样式表下载下来（图2）\n2. 按照 REA 官网的说明让 Codex 安装 REA\n3. 使用 REA Skill 去逆向混淆后的代码（图3）\n4. 用不了太久就能有一个目录结构不错的代码，但其实里面还挺乱的\n5. 然后再用 Claude Code 5.5 去重写了一遍就变成结构良好类型完整的代码了\n\n至于提示词，我没有直接逆向，而是换了个思路，先做个 Slides，然后在对话里面，说我要做一个 slides skill，让它帮我实现一个，要做的跟它的一样好，这样子出来的提示词，和原始的提示词肯定不一样，但是做出来的效果没什么差别。（图4是我用同样方法问 Claude Dashboard 的提示词）\n\n完整的代码参考：https://t.co/I25w0FGgkV",
+        "created_at": "Sun Oct 11 05:18:37 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2109147774511878146",
+            "url": "https://pbs.twimg.com/media/HUUyueaWEAI3toM.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2109148038253940736",
+            "url": "https://pbs.twimg.com/media/HUUy907WkAAijNk.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2109148543478894592",
+            "url": "https://pbs.twimg.com/media/HUUzbPCXkAAoJUl.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2109151442808238080",
+            "url": "https://pbs.twimg.com/media/HUU2D_4WcAAM2DJ.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 262802,
+          "friends_count": 1766,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 131,
+          "favorite_count": 872,
+          "reply_count": 103,
+          "quote_count": 27
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

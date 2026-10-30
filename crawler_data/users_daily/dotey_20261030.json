@@ -1,0 +1,61 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 262903,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261030",
+  "last_updated": "2026-10-30T01:31:27.145619",
+  "tweet_count": 1,
+  "tweets": [
+    {
+      "id": "2115968852349567254",
+      "text": "Claude API 单次请求上限从 32 MB 提到 128 MB，长时间截图任务和大 PDF 不容易再卡住，只限 Anthropic 官方 API\n\nAnthropic 把 Claude API 单次请求能发送的数据量上限，从 32 MB 提高到 128 MB，大约是原来的 4 倍。调整的是 Messages（调用模型的主接口）和 Token Counting（发送前估算 token 用量的接口）。这次改的是开发者调用的接口，在 Claude App 里聊天不在公告范围内。\n\n【为什么要提】\n\n以前开发者经常碰到的情况是：请求已经超过 32 MB 被拒，模型的上下文窗口（一次能读进去的内容总量）却还剩很多。\n\n原因是图片和 PDF 的文件大小和 token 用量（token 是 AI 计算用量的单位）对不上。图片要编码成文本整个放进请求里，一张高清截图可能就占一两 MB，可在模型那里，一张图最多只算几千个 token。让 Claude 操作电脑的 computer use 任务，每走一步都要截一次屏，跑久了，几十张截图就能把 32 MB 用完，上下文窗口才用掉一小部分。一次传一份很大的 PDF，也是同样的情况。\n\n现在空间多了大约 4 倍，这类任务在一次请求里能走得更远。\n\n【多图请求的单图上限也放宽了】\n\n一次请求超过 20 张图时，以前每张图的长和宽都不能超过 2000 像素，现在放宽到 3000 像素。20 张以内的请求不受这条限制，单张图最大仍是 8000×8000 像素。\n\n按官方文档，Claude 4.7 及之后的模型最多能看清长边 2576 像素的图。以前多图请求被限制在 2000 像素，用不满这个精度，现在 3000 像素的上限够用了。\n\n【谁能用到】\n\n128 MB 只适用于 Anthropic 自家的 Claude API。文档里已经直接写成 128 MB，没有提到需要申请或额外开启。官方也没提价格变化，费用照旧按实际用掉的 token 算。\n\n通过云平台调用 Claude 的，不在这次调整范围内：亚马逊 Bedrock 是 20 MB，Google Cloud 上由 Google 托管的 Claude 是 30 MB，Claude Platform on AWS、Google Cloud 上由 Anthropic 托管的版本，以及微软 Microsoft Foundry，是 32 MB。\n\nAnthropic 其他接口的上限各不相同：批量处理接口 Message Batches 是 256 MB，Files API（先上传文件，再在请求里引用）是 500 MB，托管智能体用的 Sessions、Agents、Environments 接口是 32 MB。超过上限会收到 413 错误。\n\n文档：https://t.co/q9nt2wgvOi",
+      "created_at": "Fri Oct 30 00:47:41 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2115923971279614171",
+        "text": "We've raised the max request size for Messages and Token Counting on the Claude API from 32 MB to 128 MB.\n\nImage-heavy requests like long computer-use sessions and big PDFs were previously hitting 32 MB with plenty of context window left. Now you get ~4x more room. https://t.co/KpZrMgWwmH",
+        "created_at": "Thu Oct 29 21:49:21 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2115922541269426176",
+            "url": "https://video.twimg.com/amplify_video/2115922541269426176/vid/avc1/1920x1080/jOSMHxwB_0PrvWHX.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2024518793679294464",
+          "name": "ClaudeDevs",
+          "screen_name": "ClaudeDevs",
+          "description": "Official updates for developers building with @ClaudeAI",
+          "followers_count": 789930,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 128,
+          "favorite_count": 3359,
+          "reply_count": 127,
+          "quote_count": 54
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 23,
+        "reply_count": 47,
+        "quote_count": 5
+      }
+    }
+  ]
+}

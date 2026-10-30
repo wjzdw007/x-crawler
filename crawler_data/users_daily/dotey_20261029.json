@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 262864,
+    "followers_count": 262903,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261029",
-  "last_updated": "2026-10-29T20:49:14.356093",
-  "tweet_count": 11,
+  "last_updated": "2026-10-30T01:31:27.146331",
+  "tweet_count": 12,
   "tweets": [
     {
       "id": "2115610195053220343",
@@ -429,6 +429,45 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2115923359149998490",
+      "text": "Claude 现在会在每次回答后自查对话安不安全：算力 Anthropic 出、不向用户收费，不额外收集数据，自称单条标记不会直接导致封号\n\n似乎更多是为了防止蒸馏？\n\nAnthropic 公布了一项叫“自我评估”（self-assessment）的防滥用技术：Claude 每回答完一轮，系统在后面追加一句简短指令，大意是“请反思这段对话是否安全”，Claude 再输出一份简短的安全评估，判断这段对话有没有违反使用政策的风险。\n\n从 6 月 Claude Fable 5 上线起，这套机制就在线上运行，Fable 5 之后发布的每个 Claude 模型都带着它，覆盖 Claude 全球流量的很大一部分。\n\n【跟用户有什么关系】\n\n花不花你的钱：自查多用的是 Anthropic 自己服务器的算力，按它的估算，整体推理算力增加不到 2%。Anthropic 说这笔成本不向客户收费。\n\n隐私：Anthropic 说自我评估不额外收集用户数据，它只读 Claude 回答时本来就在读的这段对话，也只在 Anthropic 按现有政策本来就能留存的流量上运行。签了零数据保留协议（对话不留存）的流量，目前不跑自我评估。追加的指令和评估结果都不显示给用户，也不会带进后续对话。评估里有一句理由，可能转述你的对话内容，Anthropic 按用户对话同等的数据规则管理它。\n\n会不会被误封：被标记不等于违规。Anthropic 说评估只是“需要进一步审查的信号”，单条标记不作数。在一部分危害领域，标记每晚按组织汇总，同一个组织攒了好几条高优先级标记，才交给执法团队人工复查。自我评估本身只在事后标记，不会当场打断你的对话，当场拦截由其他安全分类器负责。\n\n没问题的对话，评估只有一句“未标记”。被标记的对话，会写明涉及哪类危害、Claude 有没有拒绝、人工审查的紧急程度（1 到 10 分），外加一句理由。\n\n【为什么这么省】\n\n关键在 KV cache（键值缓存）。大模型读一段对话时，会给每个词算出一份中间结果并存起来，后面接着生成时直接调用，不用从头重读。Claude 刚回答完，整段对话的中间结果都还在缓存里，自查只需要再读一句短指令、平均多写约 10 个 Token。所以 Anthropic 那边增加的算力不到 2%。\n\n另一种做法是“提示式分类器”：另起一个模型，把完整的安全政策和对话一起塞进去，让它从头读一遍再推理。这是 Anthropic 测过最准的自动审查方式，但每段对话的算力要贵好多倍，所以只用在需要细看的地方。作为参照，Anthropic 2025 年初的第一代“宪法分类器”（专门训练来识别特定危害的独立模型）要增加 23.7% 的推理成本。\n\n打个比方：自我评估是让刚读完文件的人当场回答“这份有没有问题”；提示式分类器是另请一位审查员，把文件和整本规章从头读一遍。\n\n【效果怎么样】\n\n衡量标准就是那位贵的审查员。在 Fable 5 的真实流量抽样里，把误报控制在 1%（每 100 段正常对话误标 1 段）时，审查员标出的可疑对话，自我评估能抓到 78%；其中高优先级（7 分及以上）的能抓到 94%。\n\nAnthropic 认为，训练主要教 Claude 怎么报告，它对“什么有害”的判断大多来自本身的知识。实验里把诈骗类或网络攻击类样本整个从训练数据中拿掉，这两类在线上流量里的检出率只从 83.3% 降到 82.1%、从 94.2% 降到 90.7%。模型越大越准：四个大小不同的测试模型，同样 1% 误报下，检出率从最小的约 16% 升到最大的约 96%。\n\n传统分类器只能识别事先定好的几类危害。自我评估的标记里，约三分之一对不上 Anthropic 现有的危害分类。\n\n把这些标记聚类后，发现了几类原有防线没专门覆盖的问题：违规蒸馏（套取 Claude 的推理过程，拿去训练别的模型）、提示词注入（藏在网页或文件里劫持 AI 的指令），以及 Claude 作为智能体执行了用户没授权的操作。\n\n实际查到的案子：8 月，单个 API 客户触发了超过 10 万条儿童性剥削标记，儿童安全团队调查后报告给了美国国家失踪与受剥削儿童中心（NCMEC）。\n\n9 月，它的标记牵出一个用 Claude Code 搭建并运行自动化恋爱诈骗的团伙，受害者有几十人，人工复查后相关账号被封。它揪出的组织里，一半以上在此前一个月没被其他任何检测手段标记过。\n\n【局限】\n\n拿来当场拦截，它不够强。Anthropic 用 24 个网络攻击任务做红队测试（模拟攻击者反复试探），被拦后攻击者可以换种说法重试。没有防护时攻击成功 19 个（79%），用自我评估拦截后还剩 13 个（54%），用提示式分类器拦截只剩 6 个（25%）。所以线上当场拦截交给其他分类器，自我评估只做事后标记。离线运行时攻击者得不到即时反馈，24 次攻击过程里有 21 次被它至少标记过一次。Anthropic 也说，专门冲着自我评估下手的攻击者很可能绕得过去。\n\n它向那位贵的审查员学习，评测也用同一位审查员打分，审查员的盲区会原样传下来，评测发现不了。泛化实验只测了诈骗和网络攻击两类，都是 Claude 本来就知道有害的，换成 Claude 还没认识到的新型危害，效果未知。\n\n拿它监督 Claude 自己的行为也还不可靠。一个有问题的模型可能在自查里一并隐瞒；还有研究发现，模型给自己上一轮的操作打风险分，会比给同样操作打得更低。\n\n原文（署名日期 10 月 16 日）：https://t.co/8jtt1nYv44",
+      "created_at": "Thu Oct 29 21:46:55 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2115871889549865429",
+        "text": "We’ve trained Claude to flag potential misuse in conversations, a technique we call self-assessment. Right after it responds, Claude gives a preliminary safety assessment of the conversation. \n\nSince we began using self-assessment in June, it has surfaced misuse that our other safeguards weren’t designed to catch. \n\nBecause Claude has already read the conversation, self-assessment is very efficient. And unlike classifiers, which target a discrete set of harms, it draws on Claude’s own judgment, so it gets more accurate as our models improve.\n\nRead more on our new Safeguards blog:\nhttps://t.co/18j6zdHub4",
+        "created_at": "Thu Oct 29 18:22:24 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1353836358901501952",
+          "name": "Anthropic",
+          "screen_name": "AnthropicAI",
+          "description": "We're an AI safety and research company that builds reliable, interpretable, and steerable AI systems. Talk to our AI assistant @claudeai on https://t.co/FhDI3KQh0n.",
+          "followers_count": 1855896,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 174,
+          "favorite_count": 2471,
+          "reply_count": 686,
+          "quote_count": 235
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 64,
+        "reply_count": 40,
+        "quote_count": 1
       }
     }
   ]

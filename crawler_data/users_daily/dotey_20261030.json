@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 262903,
+    "followers_count": 262994,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261030",
-  "last_updated": "2026-10-30T01:31:27.145619",
-  "tweet_count": 1,
+  "last_updated": "2026-10-30T08:00:42.593580",
+  "tweet_count": 4,
   "tweets": [
     {
       "id": "2115968852349567254",
@@ -55,6 +55,137 @@
         "favorite_count": 23,
         "reply_count": 47,
         "quote_count": 5
+      }
+    },
+    {
+      "id": "2116026448234332315",
+      "text": "如果我理解的没错的话，当前 Claude Code 在压缩后继续任务，会按需从历史会话中查找有用的信息加载到上下文。\n\n这和作者所说的新开一个会话再去从原来的会话加载有用信息不是一回事吗？唯一的差别就是多了一点摘要信息，但这多不了多少 Token。\n\n而且就算你新开一个会话，任务继续同样会很快填满上下文。",
+      "created_at": "Fri Oct 30 04:36:33 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2115842962521509968",
+        "text": "Compaction is a mistake.\n\nWhen an agent's context fills up, tools like Codex and Claude Code compact it:\n1. The model prefills the entire session again\n2. It writes a summary of everything so far\n3. A new session starts from that summary\n\nI measured this on a real ~400k-token session with Opus 5.5:\n→ 38 s and $1.99 when the prompt cache has expired\n→ 29 s and $0.17 when it hasn't\n\nAnd the summary is lossy. The exact error message, the file path, the one number you needed is often gone.\n\nSo I do something new for Mainplane\n\nContext retrieval works the other way around. Mainplane keeps the full record of every session as a file. When the context fills up, a new session starts right away with one instruction: \"You are continuing session X. Retrieve key context from it as you go.\"\n\nThe agent searches the old session and copies the exact lines it needs, when it needs them.\n\nSame session, same model: 15 s and $0.10 to get back to work. It does not depend on a cache hit, and nothing is paraphrased.\n\nThis is the bitter lesson applied to agent memory. Don't hand-design what the model should remember. Give it the full record and good tools, and let it decide.\n\nMainplane is open source (MIT). Link in the first comment.",
+        "created_at": "Thu Oct 29 16:27:27 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "885227214882562049",
+          "name": "Alexander Yue",
+          "screen_name": "Alezander9",
+          "description": "Founder @ Mainplane | prev @ Browser Use",
+          "followers_count": 3240,
+          "friends_count": 83,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 44,
+          "favorite_count": 1323,
+          "reply_count": 142,
+          "quote_count": 35
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 45,
+        "reply_count": 67,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "2116037666655678688",
+      "text": "这一点确实，如果 cache 过期了去压缩，要付出很大的压缩成本\n\nhttps://t.co/35z0P7DDb8",
+      "created_at": "Fri Oct 30 05:21:08 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2116035459243737139",
+        "text": "@dotey 差别不在摘要那点 token，在原帖第 1 步：压缩时模型得把整段会话（作者实测约 40 万 token）先完整 prefill 一遍才写得出摘要。新开会话按需捞历史，省掉的就是这次全量重读——账单差在这一下，不在摘要长短。",
+        "created_at": "Fri Oct 30 05:12:22 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1558995886478606337",
+          "name": "leehoo",
+          "screen_name": "leehoo48415921",
+          "description": "中文 AI/dev 一手快讯｜模型/工具/政策发布硬事实 + 官方截图｜每条主帖 1 个数字｜不转二手通稿",
+          "followers_count": 100,
+          "friends_count": 290,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 5,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2116060639533969759",
+      "text": "baoyu-design v2.1 加上了评论功能，现在可以在设计的页面、slides 上标记元素并添加评论，Agent 可以读取你的评论，并且还可以回复你的评论。\n\n所有评论数据都和项目数据保存在一起，成为你项目数据资产的一部分。\n\nhttps://t.co/POuwOWT2lM https://t.co/zAlJ66CaQN",
+      "created_at": "Fri Oct 30 06:52:25 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2116059461085184000",
+          "url": "https://video.twimg.com/amplify_video/2116059461085184000/vid/avc1/1920x1080/yMROb6IPwXNIZLvn.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2115667965328977920",
+        "text": "发布 baoyu-design v2，完整的把 Claude Design、Claude Slides 和 Claude Dashboard 移植过来了，和原版体验几乎一致（除了没有评论功能），可以运行在任何 Agent 任何模型，不再依赖于 Claude Artifacts。\n\n完全开源：https://t.co/POuwOWT2lM https://t.co/YTi9YNpqTB",
+        "created_at": "Thu Oct 29 04:52:04 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2115667422518693888",
+            "url": "https://video.twimg.com/amplify_video/2115667422518693888/vid/avc1/1920x1080/uUfW5lADMbrhYiy1.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 262994,
+          "friends_count": 1767,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 165,
+          "favorite_count": 1313,
+          "reply_count": 214,
+          "quote_count": 56
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 35,
+        "reply_count": 35,
+        "quote_count": 2
       }
     }
   ]

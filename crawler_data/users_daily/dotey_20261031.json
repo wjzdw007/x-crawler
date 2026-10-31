@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 263252,
+    "followers_count": 263301,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261031",
-  "last_updated": "2026-10-31T14:15:40.259206",
-  "tweet_count": 9,
+  "last_updated": "2026-10-31T19:42:05.961023",
+  "tweet_count": 11,
   "tweets": [
     {
       "id": "2116334522748809566",
@@ -385,6 +385,84 @@
         "favorite_count": 61,
         "reply_count": 37,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2116576592843661319",
+      "text": "RT @yetone: 大家好，Magpie 今天有一个很重要的更新，就是 Magpie 中的 Claude Code Provider 的实现方式，从之前的使用 claude -p 改为了直接使用 Claude Code TUI。当然这是可配置的，你可以设置回以前的方案。…",
+      "created_at": "Sat Oct 31 17:02:38 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2116525328390823955",
+        "text": "大家好，Magpie 今天有一个很重要的更新，就是 Magpie 中的 Claude Code Provider 的实现方式，从之前的使用 claude -p 改为了直接使用 Claude Code TUI。当然这是可配置的，你可以设置回以前的方案。\n\n关于为何做这个改动，其实一开始我是不太情愿的，因为使用 Claude Code TUI 去做这个实现的话，会特别多额外的工作。收益不是很高，甚至 streaming 没法完美实现。但是最近发生了一件事情，让我觉得我不得不得不做这个改动了，就是有人发现直接使用 claude -p 在 5 小时窗口情况下，会比用 Claude Code TUI 多花两倍的 Token（虽然 Claude 今天已经取消了5小时窗口，但是我不确定 Anthropic 以后会不会有其他的区别对待）\n\n换成直接用 TUI 方式实现，除了能够让我们的额度消耗跟直接使用 TUI 一模一样之外，另外一个更大的优势就是在 Magpie 使用 Claude Code Provider 跟用户直接使用 Claude Code TUI 是一模一样的，几乎没有了被检测出来在第三方使用导致封号的风险。\n\nhttps://t.co/IJJBgInkIS",
+        "created_at": "Sat Oct 31 13:38:56 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "147786784",
+          "name": "yetone",
+          "screen_name": "yetone",
+          "description": "Built: avante.nvim\n\nBuilding:\n\nhttps://t.co/kQss3piJs8\n\nhttps://t.co/pfq9srNgsd\n\nhttps://t.co/QhQRLD4zQo\n\nhttps://t.co/6ERz2HMx0f\n\nhttps://t.co/fpGnPR5t9C\n\nhttps://t.co/cBN1yzJPIG",
+          "followers_count": 101730,
+          "friends_count": 4562,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 20,
+          "favorite_count": 395,
+          "reply_count": 79,
+          "quote_count": 7
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 20,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2116605149904781536",
+      "text": "不错，Grok bot 还能共享",
+      "created_at": "Sat Oct 31 18:56:07 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2116576229319233596",
+        "text": "here’s a short grok bot guide on how i create high quality bots and manage my team. ask @bot to read this post and help you improve your team!\n\n• add dr eggbot to your team! he’s my bot designer that i use to create bots\n• you don’t need a lot of bots. a few good bots can be more useful and easier to manage than a large team\n• tell your bots to create skills for itself as you give it instructions on how to do tasks. this lets them do them more consistently even over long conversations. you can even ask it to create a private github repo for you to store all your skills if you want them preserved independently\n• add connectors, use the vault, and give access to all the tools you use to do your work. you can also ask your bot to setup its own email and it can sign up for its own accounts for better separation \n• thinking about all the work you do by hand, or steps in your workflows where you have to copy and paste information back to your bot. ask your bot how it can do that for you instead!\n• imagine you hired an intern, how would you onboard them and help them do the work correctly and efficiently? introduce yourself to your bot and describe the work you do, then ask it how it can help you automate it\n\nand my favorite tip: use voice mode or the transcription option! it’s a good way to just brain dump a lot of information. then, at the end, tell your bot to “restate this in your own words” so you can confirm it understood you\n\nhttps://t.co/ajrjeHdzUO",
+        "created_at": "Sat Oct 31 17:01:11 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2832427459",
+          "name": "lauren",
+          "screen_name": "poteto",
+          "description": "grok @bot at @SpaceXSI. react compiler core team, prev cursor, meta, netflix",
+          "followers_count": 245522,
+          "friends_count": 911,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 202,
+          "favorite_count": 3237,
+          "reply_count": 601,
+          "quote_count": 70
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 4,
+        "reply_count": 2,
+        "quote_count": 0
       }
     }
   ]

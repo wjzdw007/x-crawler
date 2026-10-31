@@ -1,0 +1,14 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-10-31T06:40:20.523179",
+  "tweet_count": 11,
+  "summary": "# dotey 2026年10月30日 AI 动态观察\n\n**新工具/技术**\n- **baoyu-design v2.1**：把 Claude Design、Claude Slides、Claude Dashboard 移植成可在任意 Agent、任意模型上运行的开源项目，v2.1 新增元素级评论，Agent 可读取并回复评论，评论与项目数据一起保存为资产。\n- **Claude API 请求上限 32MB→128MB**：Messages 与 Token Counting 接口同步放宽，解决“文件体积先到上限、上下文窗口却还剩很多”的痛点，长时间 computer use 截图流和大 PDF 受益最明显。\n- **多图请求放宽**：单次超过 20 张图时，单图边长上限从 2000px 提到 3000px，刚好覆盖 Claude 4.7+ 长边 2576px 的识别精度；仅限 Anthropic 官方 API，Bedrock 20MB、Google 托管 30MB、AWS/Foundry 32MB 不变。\n- **Claude 套餐改名**：Max 5x→Max（$100）、Max 20x→Ultra（$200），价格与周额度不变；已验证的 Ultra 账号取消 5 小时限额，重度 Claude Code 用户可连续跑不用等窗口重置。\n- **客服转真人技巧**：企业网页客服多为预设 Q&A 机器人，输入 “live agent” 可触发转接真人。\n\n**核心观点/方法论**\n- **“压缩”与“检索”之争**：dotey 先质疑 Claude Code 压缩后按需回捞历史，与 Mainplane 新开会话检索差别不大；被提醒后认同关键成本在于压缩时要把整段约 40 万 token 会话全量 prefill 一遍，cache 过期时这笔开销很实在。\n- **组织里刻意制造“想法摩擦”**：思科总裁 Jeetu Patel 把重写 98% 遗留代码交给 27 岁、职级低五级的 Paddy，并给不限量 Token；他认为老员工的经验和年轻人的提问缺一不可，团队按“资深管理者、外部空降、AI 原生创始人”各三分之一搭配。\n- **命名避坑**：baoyu-design 刻意不带 “claude” 前缀，因为此前多个以 Claude Code 命名的项目被下架（如 Clawdbot 改名 openclaw），开源项目取名要考虑平台风险。\n\n**实践经验/案例**\n- **Google Project Suncatcher**：10 月 1 日搭乘 Transporter-18 上天的 4 颗 TPU，首次完成“地面发指令→星上启动→跑 Gemma 4→回传俳句”全链路，验证芯片扛住发射震动并在轨道运行；下一步测辐射与冷热稳定性，2027 年发射两颗互联卫星。\n- **太空算力的现实节奏**：Google 自己测算，发射价需降到每公斤 200 美元以下（约 2030 年代中期），太空数据中心成本才可能追平地面电费，短期不影响普通用户的 AI 服务。\n- **思科案例的关键数字**：先用 4 周验证可行性，目标 24 个月重写 98% 遗留代码；对照背景是约 40% 老板打算少招应届生，Patel 反其道把实习生当“反向导师”。",
+  "metadata": {
+    "original_tweets": 10,
+    "retweets": 1,
+    "media_tweets": 6,
+    "data_hash": "b7acbd25",
+    "data_date": "20261030",
+    "user": "dotey"
+  }
+}

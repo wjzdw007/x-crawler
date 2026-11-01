@@ -1,0 +1,14 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-11-01T07:09:42.750240",
+  "tweet_count": 13,
+  "summary": "**dotey 2026年10月31日分享分析**\n\n**新工具/技术**\n- DeepSeek Harness 插件：让 Claude Design 运行在 DeepSeek Harness 上，支持对设计稿标注、评论，Agent 可读取并据此修改。\n- baoyu-design 局域网共享：设计稿或 slides 可生成内网 IP+端口链接，同事实时编辑、评论，权限分只读/评论/编辑，数据留在本机。\n- Chrome HTML-in-Canvas（转推）：Chrome 157 稳定版起可把真实网页绘入 canvas 做特效且保留交互，目前仅 Chromium 内核支持。\n- Alma Relay Server 开源（转推）：用 Cloudflare Workers 或 Docker 自建中继，远程控制电脑端 Alma，端到端加密。\n- Magpie 更新（转推）：Claude Code Provider 从 `claude -p` 改为直接驱动 Claude Code TUI，可配置回旧方案。\n\n**核心观点/方法论**\n- 插件开发门槛明显降低：把官方文档交给 Opus 5.5 并说明需求即可完成 dsh plugin，“文档+强模型”正成为轻量工具开发的标准路径。\n- Claude 额度口径需要厘清：Max 20x 的“20x”指每 5 小时限额为 Pro 的 20 倍，而非总量为 Pro 的 10 倍；订阅规则变动应以官方口径为准。\n- Agent 改变工程协作方式（转推 Manus 联创）：工程师可同时跑 10–20 个请求，需求原文可直接变成 prompt，管理重心从写代码转向拆解与验收。\n- AI 安全信息要交叉验证：所谓 Claude Fable 5 权重泄露，经网友比对文件与 DeepSeek 开源模型分片一致，且区域、分片总数、体积均对不上，提示对“黑客兜售”类消息先做证据核验。\n\n**实践经验/案例**\n- 同一套插件与设计工作流可换模型验证：dotey 用 DeepSeek 4.1 Flash 跑出的效果也不错，说明工具链与模型解耦后便于按成本、效果切换。\n- 第三方调用 Claude 有隐性成本与风险（转推 yetone）：`claude -p` 在 5 小时窗口下可能比 TUI 多耗两倍 Token，改用 TUI 还能降低被封号风险。\n- Grok bot 可共享复用：按“实习生 onboarding”思路交代工作、让 bot 自建技能与仓库，少量好 bot 比大团队更易管理。",
+  "metadata": {
+    "original_tweets": 9,
+    "retweets": 4,
+    "media_tweets": 4,
+    "data_hash": "abc7a47d",
+    "data_date": "20261031",
+    "user": "dotey"
+  }
+}

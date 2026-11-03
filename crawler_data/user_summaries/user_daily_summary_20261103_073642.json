@@ -1,0 +1,14 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-11-03T07:36:42.291578",
+  "tweet_count": 5,
+  "summary": "**dotey 2026年11月02日分享分析**\n\n**新工具/技术**\n- **Claude API Message Threads**：Anthropic 公测的消息线程，服务器暂存对话，后续只发新消息和上一条回复 ID，长对话回复更快、请求体积大降。\n- **Fable 5.5**：尚未正式发布的模型，纯代码生成视频能力很强；dotey 认为对普通人加成有限，更期待其他能力提升。\n- **Anthropic Residency**：付费驻留研究项目，招教授、技术创始人、Staff 级工程师转行做 AI 安全，不要求机器学习背景，年薪折合 35–50 万美元。\n\n**核心观点/方法论**\n- **技术已无护城河，品牌信任才是**：Manus 客户端对专业人士近乎半透明，提示词、skills、harness 逻辑都能分析出来；但克隆没意义，用户选产品的重要因素是对品牌的信任。\n- **克隆没有前途**：跟在别人后面永远慢半拍，不能理解产品决策背后的原因，终究走不远。\n- **Workflow 是被“模型自己会规划”淘汰的**：拖拽节点本质是替模型笨买单的低代码过渡产物；业务 KnowHow 大于一切，搭工作流的技能已被 Agent 内化。\n- **用知识截止时间问题鉴别新模型**：问“Where did @karpathy go in 2026?”并关闭联网和记忆，答对说明是新模型。\n\n**实践经验/案例**\n- Manus 允许自定义 LLM API，客户端又用 Electron 封装，逆向门槛极低；官方显然懂这一点，代码层防护基本不 care。\n- Claude Code 已默认开启 message threads：50 万–100 万 token 请求首字等待中位数缩短约 35%，单次请求中位数从约 800 KB 降到 1.8 KB。\n- 费用不变：token 计费和限速照旧，省的是上传而非钱；与 prompt caching 互补，缓存断点仍需自己设。\n- 限制：线程 5 分钟无请求即过期，需本地留完整对话；中途不能改系统提示词和工具，不支持 ZDR 和 HIPAA，企业选型要留意。",
+  "metadata": {
+    "original_tweets": 4,
+    "retweets": 1,
+    "media_tweets": 0,
+    "data_hash": "2b254e46",
+    "data_date": "20261102",
+    "user": "dotey"
+  }
+}

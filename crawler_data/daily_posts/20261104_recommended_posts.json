@@ -1,12 +1,1505 @@
 {
   "date": "20261104",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-11-04T13:41:49.071746",
-  "tweet_count": 225,
-  "unique_tweet_count": 225,
-  "total_crawled": 400,
-  "duplicates_removed": 175,
+  "last_crawl_time": "2026-11-04T20:39:52.575132",
+  "tweet_count": 251,
+  "unique_tweet_count": 251,
+  "total_crawled": 425,
+  "duplicates_removed": 174,
   "tweets": [
+    {
+      "id": "2118064749011194009",
+      "text": "Google 在五国推出自愿离职补偿，最多给 12 个月工资\n\nGoogle 正在出钱请部分员工主动离职。路透社 11 月 4 日独家报道，Google 从今年 6 月起，向加拿大、法国、德国、日本和瑞士的部分员工提供“自愿离职补偿”，负责 AI 研究的 DeepMind 部门不在其中。\n\n这种做法和裁员不同。裁员是公司决定让谁走；自愿离职计划是公司先开出补偿条件，员工自己决定要不要申请，申请通过后拿一笔补偿金离开。\n\nGoogle 向路透社确认了这件事。Google 发言人说，2025 年公司部分团队推出了带补偿金的自愿离职计划，今年 6 月又把它扩展到“几个国家”，目的是“支持接下来的重要工作”。这一轮之前没有被报道过，路透社没能查到有多少人接受。\n\n【补偿给多少】\n\n瑞士的情况最具体。Google 在瑞士有大约 5000 名员工，苏黎世是它的一个主要工程中心。据三名知情人士说，Google 在 6 月中旬公布方案，7 月中旬前答复了申请的员工，8 月开始有人离开。\n\n接受的员工每工作一年拿一个月工资，最多 12 个月。也就是说，工作满 5 年拿 5 个月工资，工作满 15 年也只拿 12 个月。\n\n其中一名知情人士说，在一个约 50 人的团队里，至少有 4 人接受了。瑞士这一轮覆盖多个部门，但不包括 DeepMind。\n\n【哪些人不在名单里】\n\nGoogle Cloud 和 DeepMind 的员工，过去几轮都没有被纳入。路透社说，这次扩展看起来也是同样的安排。Google 的母公司叫 Alphabet，它的首席财务官 Anat Ashkenazi 在季度财报会上多次说，AI 和云计算是招聘重点。\n\n【计划的来历】\n\n这个计划不是今年才有。去年起，Google 已经在美国和英国的部分部门推行过。公司高管把它说成是给“不再认同公司节奏或方向”的员工的一个选择。路透社说，至少有一个部门在自愿离职之后又进行了裁员。\n\n路透社把这件事放在 AI 投入的背景下报道：Alphabet 在 AI 上花的钱越来越多，让华尔街投资者不安，也压低了它的股价，Google 想借此控制成本。Alphabet 的员工总数近几个季度在稳定增长，同时公司在把人力往重点领域调。上周，微软也向 6 万名员工提供了自愿离职补偿，目的同样是控制成本。\n\nGoogle 在瑞士有过裁员先例：2023 年它在瑞士裁掉 200 多人，引发员工抗议和集体离岗。\n\n来源：https://t.co/llS2oInTCj",
+      "created_at": "Wed Nov 04 19:36:02 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 265930,
+        "friends_count": 1775,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 8,
+        "reply_count": 3,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2118052017755005210",
+      "text": "Cicada 是一款开源的、完全原生的 macOS 实时语音翻译与 AI 会议助手。 \n\n它可以在 Zoom、腾讯会议、飞书、YouTube 等应用中提供实时双语字幕、AI 会议纪要，还能把你说的话翻译成另一种语言，通过虚拟麦克风直接传给会议软件。\n\nhttps://t.co/GKGaiKJU1f",
+      "created_at": "Wed Nov 04 18:45:27 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2117574590075691483",
+        "text": "🎉 所有用 Mac 的朋友，用上这个开源会议纪要和同声传译软件，还能白嫖支付宝家每月50小时的额度！\n\n知了 / Cicada，已经按 Apache-2.0 协议免费开源，改了自用、拿去商用或闭源再发布都行。\n\n几大功能：\n- 实时字幕翻译，不管跨国会议、直播还是视频，都能自动翻译\n\n- 飞书级别的会议纪要，每 45 秒更新，有总结、议题和鱼骨图，每条结论和待办都标着原话出处和时间\n\n- 同声传译，克隆音色，语音直接转成另一种语言，直播室聊天无障碍\n\n- 说话人识别，目前在实验阶段，需要在设置中打开\n\n其中实时纪要用 Ling 模型，同声传译用 Ming-3.0 模型。配置只需三步：\n\n1. 去 Ling 开放平台注册登录（免费额度可支撑50小时/月，链接在评论区）\n2. 在 API 控制台创建一个API Key\n3. 打开知了，粘贴到“设置 › AI 服务”\n\n有问题欢迎在评论区或 GitHub 提，我会持续更新，Windows、Linux、Android也将推出！\n\n开源地址 https://t.co/gXxkFAs5kO\n官网 https://t.co/jXFyolTBJS",
+        "created_at": "Tue Nov 03 11:08:19 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2117571607023779840",
+            "url": "https://video.twimg.com/amplify_video/2117571607023779840/vid/avc1/1920x1080/MVk-VMvHCntHDNrZ.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1125309529145524224",
+          "name": "WquGuru",
+          "screen_name": "wquguru",
+          "description": "AI + Software + Robotics\nNewshub → https://t.co/WmkVbbvE92\nBuilding Agent PoCs → https://t.co/pg7QEz0fGp\nAIGC(texts, videos, world models)\n📮 hello@wqu.guru",
+          "followers_count": 27553,
+          "friends_count": 731,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 154,
+          "favorite_count": 827,
+          "reply_count": 131,
+          "quote_count": 29
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 265930,
+        "friends_count": 1775,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 7,
+        "reply_count": 8,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118050563145510979",
+      "text": "RT @Texas_Twins_Dad: How much usage does a Grok Bot phone call take?\nSo I checked.\n\nMy bot just called an EV charger installer for a quote.…",
+      "created_at": "Wed Nov 04 18:39:40 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2117691954578538798",
+        "text": "How much usage does a Grok Bot phone call take?\nSo I checked.\n\nMy bot just called an EV charger installer for a quote. 85 seconds on the phone.\n\nUsage before: 5.8%\nUsage after: 6.0%\n\nThat's 0.2% for a real call I didn't have to make myself. https://t.co/wK74pxDa3D",
+        "created_at": "Tue Nov 03 18:54:41 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2117691951067598848",
+            "url": "https://pbs.twimg.com/media/HWONnAcWkAA_CUw.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1324183584282939392",
+          "name": "Texas Twins Dad",
+          "screen_name": "Texas_Twins_Dad",
+          "description": "🇺🇸 | Tesla • FSD • SI • Grok Bot\n\nhttps://t.co/L6fl9pl3Xy\nhttps://t.co/slieKlKZmT\nhttps://t.co/JiMx9lhZfN\nreferral: https://t.co/xVn7hKo1o6",
+          "followers_count": 11670,
+          "friends_count": 690,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 98,
+          "favorite_count": 889,
+          "reply_count": 97,
+          "quote_count": 5
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 98,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118050491188072950",
+      "text": "RT @cb_doge: BREAKING: Vietnam’s Lâm Đồng plans to bring Starlink to areas where poor mobile coverage makes rescue efforts harder.\n\nAround…",
+      "created_at": "Wed Nov 04 18:39:23 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2117950907610784237",
+        "text": "BREAKING: Vietnam’s Lâm Đồng plans to bring Starlink to areas where poor mobile coverage makes rescue efforts harder.\n\nAround Gia Bắc Pass in Sơn Điền, mountains and deep valleys make it hard to stay connected. During road accidents, floods and landslides, that can make calling for help difficult.\n\nLocal officials are working with FPT Telecom to choose a location for Starlink, helping rescue teams stay connected and organise emergency responses.",
+        "created_at": "Wed Nov 04 12:03:40 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2117950889411653632",
+            "url": "https://video.twimg.com/amplify_video/2117950889411653632/vid/avc1/720x720/wFUDQ8wFeUkT8Qpf.mp4?tag=29",
+            "bitrate": 1280000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1913013,
+          "friends_count": 1067,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 186,
+          "favorite_count": 1286,
+          "reply_count": 104,
+          "quote_count": 12
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 186,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118048421663973792",
+      "text": "True",
+      "created_at": "Wed Nov 04 18:31:09 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2117917230394376467",
+        "text": "After DOGE, Elon came to a conclusion most people missed.\n\nHe tried to reform the state from the inside. He failed. And he said it plainly: the government can't fix its own deficit. Nobody in power actually wants to cut. The machine protects itself.\n\nSo he drew the only logical conclusion. If the state can't be reformed, there are only two ways this ends.\n\nEither global bankruptcy. Debt keeps compounding, interest payments eat the budget, and the system collapses under its own weight.\n\nOr robots. AI and robotics grow the economy so fast that the debt becomes manageable, and abundance makes the old fights over scarcity irrelevant.\n\nHere's the part almost nobody sees.\n\nFor two centuries, capitalism has had a marketing problem. Its gains are real but slow and invisible. 2% growth a year doesn't feel like anything. Your life gets better over 30 years and you never connect it to the system that did it. Meanwhile, the left's promises feel immediate and concrete: a check, a subsidy, a benefit. That's why the left wins on promises even when it can't deliver them. Capitalism produces the wealth, socialism takes the credit.\n\nRobots break that asymmetry.\n\nWhen productivity doubles in a few years instead of a few decades, people will see it. Things get cheaper, services get better, opportunities appear, in real time. For the first time in history, people will connect capitalism and their rising standard of living directly, almost instantly. The causal chain becomes visible.\n\nAnd that changes everything politically.\n\nSo there are two scenarios.\n\nScenario one: we stay in the current inertia. No breakthrough, or a breakthrough we regulate to death. The debt wins. Living standards stagnate, then fall. A frustrated electorate turns to whoever promises the most, and that pushes toward a hard collectivist left. But collectivism fails, as it always does. And when it fails, the most organized, most disciplined collectivist force left standing isn't the old left. It's radical Islamism. Bankruptcy, then communism, then something worse.\n\nScenario two: robots win. Abundance arrives, and it arrives visibly. The link between free enterprise and prosperity becomes obvious to everyone. And this is the key point: it becomes obvious to everyone, including the minorities the left was counting on. Because their long-term incentive is the same as everyone else's. A kid in the suburbs gains infinitely more from a booming, abundant West than from a bankrupt state handing out promises it can't keep. Abundance is the most powerful integration machine ever built.\n\nThat's the Western renaissance.\n\nThe West doesn't need to win the culture war by arguing. It needs to win it by delivering. And for the first time, it has the technology to deliver fast enough for people to notice.\n\nThe race isn't left vs right anymore. It's robots vs bankruptcy.",
+        "created_at": "Wed Nov 04 09:49:51 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1874492187070615552",
+          "name": "Brivael Le Pogam",
+          "screen_name": "brivael",
+          "description": "Argil AI (YC S24) CEO&CTO.\n\nMy book :\n\nhttps://t.co/Os7pnH8wnY\n\nFreedom fighter.",
+          "followers_count": 243738,
+          "friends_count": 1124,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2943,
+          "favorite_count": 18517,
+          "reply_count": 1249,
+          "quote_count": 332
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2415,
+        "favorite_count": 27476,
+        "reply_count": 2194,
+        "quote_count": 162
+      }
+    },
+    {
+      "id": "2118044542628929913",
+      "text": "RT @poteto: some fun slides from my upcoming talk @aiDotEngineer \n\nvery excited to share how we ship crazy amounts of code (30x'd) without…",
+      "created_at": "Wed Nov 04 18:15:44 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2118017093677494706",
+        "text": "some fun slides from my upcoming talk @aiDotEngineer \n\nvery excited to share how we ship crazy amounts of code (30x'd) without reading it, yet perf is as good if not better then when we launched\n\nthere's a lot more to improve of course, and the ceiling is far from being reached, but given the relentless shipping speed and our high bar for polish, i think that our agent friendly architecture bets are paying off at taming the slop\n\nfun fact: ~230 people landed at least 1 PR to grok bot in october!",
+        "created_at": "Wed Nov 04 16:26:40 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2117901930488070144",
+            "url": "https://pbs.twimg.com/media/HWRMlavbAAAIOZZ.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2117901944312483840",
+            "url": "https://pbs.twimg.com/media/HWRMmOPa0AATwD-.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2112276851355693315",
+          "text": "First AIE Code Summit speakers:\n\n@poteto, Principal Engineer @ SpaceX\n@steve_yegge, Engineer, Writer, Advisor\n@zachbruggeman, Principal Software Engineer @ Ramp\n\nNov 10-12, SF. Come hang out with us. Apply at https://t.co/N46r5deFR1 https://t.co/mwVc2fmGGN",
+          "created_at": "Mon Oct 19 20:17:00 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2112275211894550528",
+              "url": "https://pbs.twimg.com/media/HVBPHSjWcAAHoHt.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1376308155626360837",
+            "name": "AI.Engineer 🔜 Shanghai & SF CODE",
+            "screen_name": "aiDotEngineer",
+            "description": "We run the highest signal technical conferences in the industry and publish it all for free online for over 1.5 million AI Engineers a month",
+            "followers_count": 67244,
+            "friends_count": 107,
+            "verified": false,
+            "is_blue_verified": false
+          },
+          "stats": {
+            "retweet_count": 32,
+            "favorite_count": 541,
+            "reply_count": 20,
+            "quote_count": 13
+          }
+        },
+        "user": {
+          "id": "2832427459",
+          "name": "lauren",
+          "screen_name": "poteto",
+          "description": "grok @bot at @SpaceXSI. react compiler core team, prev cursor, meta, netflix",
+          "followers_count": 267128,
+          "friends_count": 911,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 95,
+          "favorite_count": 1431,
+          "reply_count": 142,
+          "quote_count": 15
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 95,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118040410706911267",
+      "text": "这道理不只是适用于出版图书，很多领域都适用呀：\n\n未来会有三种书，\n\n第一种，是用2H铅笔写在纸上的书，以便证明没用AI，只有那些买了也不会读的超级富豪会买。（很多人会死守这个立场。） \n\n第二种，作者用AI创作、读者仍然想读的书。（传统出版会走这条路。） \n\n第三种，读者告诉AI自己想读什么书，AI就生成给他们。（这才是Amazon正在走的方向。）",
+      "created_at": "Wed Nov 04 17:59:19 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2117971877721505866",
+        "text": "就很离谱，一个南非女作家Coral Hart在一年半的时间里用AI出版了371本书，总体算下来赚了差不多100万美金。\n\n在拿AI写书之前，她就是一个专门创作言情水文的高产作家，平均每个月能出版1本书，不是那种能登上畅销榜的品质，主要靠量赚钱。\n\n去年，出版社和她解约了，因为觉得反正都是水文，不如用AI代替这种水平的作家，Coral Hart倒是很快接受了现实，既然打不过，那就加入吧，她也开始工业化的训练AI写书，通过亚马逊的自出版和订阅模式，实现了比过去更高的收入。\n\n从结果来看，这很像是一个因为AI而失业的人使用AI「报复社会」的逆转剧情，不就是往互联网上堆屎吗，谁怕谁啊，我不但能堆，还能赚得盆满钵满，气不气？\n\n根据Coral Hart的说法，今年开始模型进步巨大，去年需要一段段的生成文本，而且需要花大力气雕琢提示词，但现在基本上已经可以一次性生成整本书的初稿了，「语法、结构、情感都有了飞跃提升」。\n\n她说，如果你只会给模型下任务「给我写本xx主题的书」，那么得到的也一定是垃圾，作家在这个流程里必须介入确定故事改编、写作风格、人物细节和章节大纲，「ChatGPT擅长对话，但散文能力很差，Claude善于设计故事骨架，却完全不知道怎么写肉戏，Gork经常不遵循指令，不过很懂怎么表达情欲」。\n\n我看看了这老姐在Reddit的AMA（问答马拉松），部分内容还算坦诚，我贴过来你们看看吧：\n\n问：\n怎么去AI化？你那个产量太夸张了，靠自己来改写根本不可能吧。还有，你是把写作当成生意，还是一门手艺？\n\n答：\nAI会偏离方向、胡编乱造，所以我会用一套流程，用AI去监管AI，用得最多的模型是Opus系列。\n读者买的是感受，而不只是书，我根据市场需求写好书。从「会出书的作家」转变成「会写作的出版人」，这种思维变化很重要，因为它让我能够作出明智的商业选择，同时不牺牲创作思维。\n\n问：\n你为自己的书感到自豪吗？你自己会欣赏或者购买它们吗？\n\n答：\n在开始生成正文以前，我会做很多工作：文风规范、写作技法手册、设定资料库、人物设定表、世界构建、情节节拍表、节奏图，最后才是大纲。\n在AI出现之前我就写得很快——不用AI，我一天也能写1万字，因此我的工作流程本来就很快。AI只是让我能更快，没有降低质量。\n我是个讲故事的人，脑子里总会冒出另一个人物、世界或反派。现在我终于能跟上自己的想法，让它们都有机会被写出来。\n以前没有AI时，只有商业上可行的书才会被写出来，因为没有时间浪费在那些「只是好玩」的作品上……\n\n问：\n细说一下你的百万级收入构成吧？\n\n答：\n每写完一本书后，先做小规模邮件推送，只有那些每天能卖出100美金的书，才会追投引流广告。\n广告卖不动烂书，所以我会先测试这些书，之后再加入 BookBub广告，只有数据表现最好的，才投AMS和Facebook广告。\n清水文，80%的收入来自直接付费，20%来自订阅付费，肉文，43的收入来自直接付费，57%来自订阅付费。\n整体而言，63%的收入是由9大语种版本贡献的，美国是最大的市场，其次是英国、澳大利亚、加拿大和法国。\n对我来说，成功的书每天都会有销量，失败的书要么表现平平，要么始终没能与读者建立联系。\n而我从失败中学到的是：哪里误判了市场，哪里没有听见读者的需要，我把每次表现不佳都视为学习或修好那本书的机会。\n\n问：\n谢谢你的回答，这确实让我更理解你的模式了，你已经建立了自己的读者群，并不依赖Amazon，令人羡慕。\n\n答：\n如果你依靠广告或社交平台，你其实是在租用那个读者——没办法直接互动，没办法把他们带回来、吸引他们继续购买。\n租用永远是一项成本，我的邮件名单归我自己所有，是一项资产，具有实实在在的价值。\n\n问：\n我有一个朋友，是一个曾经反对AI的作家，但他现在也改变主意了，想要学会用AI写作，你觉得他能追上你吗？这样的人会为自己以前的坚持付出怎样的代价？\n\n答：\n你说的这个朋友是不是……\n我觉得学习的机会窗口正在迅速关闭……即使你反对AI，也应该学会怎么使用它，这样才能具备相应的能力。\n我觉得反AI的作者会付出沉重代价吗？我觉得他们会在这个立场上死磕到底，除非他们有计划，而且已经理解AI如何运作、变化又有多快。\n我认为，现在对任何作者的职业生涯来说，最危险的事情就是害怕学习。你可以先学，再决定怎样运用这些知识……不能等海啸已经发生了才去报游泳课。\n\n问：\n那些「真正」的作家、不用AI也能写进畅销榜的作家，他们以后会屈从于AI吗？\n\n答：\n请站在出版商的立场，用商业头脑来问这个问题——如果我可以利用手头的市场数据，不断制造畅销书，又不用支付六位数的预付款或版税，怎样选择才是聪明的商业决策？如果我可以买一个工具，再用以前价格的10%买下你的创意，你真觉得他们不会这么做吗？\nAI会影响每一位作者。认识到我们提供的实际上是创意、扮演的是创意总监，而现在出售的东西就是创意，这将是大多数人最难完成的思维转变。\n我认识的畅销书作家都在学AI了，只不过他们一时半会不会告诉你们罢了。\n\n问：\n如果Amazon以后决定清除用AI出版的书了，怎么办？\n\n答：\n未来会有三种书，第一种，是用2H铅笔写在纸上的书，以便证明没用AI，只有那些买了也不会读的超级富豪会买。（很多人会死守这个立场。）\n第二种，作者用AI创作、读者仍然想读的书。（传统出版会走这条路。）\n第三种，读者告诉AI自己想读什么书，AI就生成给他们。（这才是Amazon正在走的方向。）\n\n问：\n所以对于一个作家而言，自己实际上是在用AI写书这件事情，是必须承认还是可以隐瞒的？\n\n答：\n我公开了自己使用AI这件事……结果我被开盒，收到死亡威胁（数以千计），有人叫我去死，他们还跑到我孩子的社交媒体上骚扰他们，给我的书集中刷差评。\n如果你能承受这种仇恨，那就公开你用了AI。\n如果你的心理状态应付不了这种程度的暴力，那就别公开。\n有人在YouTube上发了一个小时的视频骂我，但她之前给我的6本AI小说打过5星好评，如果你需要一个「AI」标签才会讨厌一个故事，那你讨厌的究竟是故事，还是AI？\n\n问：\n你怎么看那些批评AI本质上是一个窃贼、而且是在源源不断的制造垃圾的声音？\n\n答：\n嗯——你不能一边哭喊AI偷了你的作品，一边又骂它生成的是垃圾，还指望自己看起来不蠢。（如果生成的是垃圾，那它就是从你那里学来的垃圾，那么……嗯。）\n不过，我还遵循这样的原则：\n有没有被影响，得由你自己接下才成立。我不能把它强加给你，你也不能把它强加给我——我选择不接。\n我的态度就是「我才他妈不在乎」，黑子总会继续黑……随他们去。",
+        "created_at": "Wed Nov 04 13:27:00 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "64662332",
+          "name": "阑夕",
+          "screen_name": "foxshuo",
+          "description": "说什么是你的自由，做什么是我的权利，如果我做的得不到你的赞同，那就对了，否则我将与你一样平淡无奇。",
+          "followers_count": 171431,
+          "friends_count": 801,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 40,
+          "favorite_count": 269,
+          "reply_count": 7,
+          "quote_count": 5
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 265930,
+        "friends_count": 1775,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118036744662880439",
+      "text": "Try Grok @Bot. It’s like hiring an amazing assistant!",
+      "created_at": "Wed Nov 04 17:44:45 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2117723394330460528",
+        "text": "New Grok Bot feature I just discovered on a call. My bot called my car insurance today to ask why my renewal went up 14% with zero accidents. Mid-call, the rep asked a question.\n\nThe bot didn't hang up. It didn't make me take over the call. A question card popped up in my chat. I typed the answer, and the bot kept the call going on its own.\n\nIt's like passing a note to my assistant while they're still on the phone.\n\nGrok Bot is like hiring my personal assistant!",
+        "created_at": "Tue Nov 03 20:59:37 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2117710886760484864",
+            "url": "https://pbs.twimg.com/media/HWOe1NZWEAANIr9.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1324183584282939392",
+          "name": "Texas Twins Dad",
+          "screen_name": "Texas_Twins_Dad",
+          "description": "🇺🇸 | Tesla • FSD • SI • Grok Bot\n\nhttps://t.co/L6fl9pl3Xy\nhttps://t.co/slieKlKZmT\nhttps://t.co/JiMx9lhZfN\nreferral: https://t.co/xVn7hKo1o6",
+          "followers_count": 11670,
+          "friends_count": 690,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 33,
+          "favorite_count": 625,
+          "reply_count": 54,
+          "quote_count": 15
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 441,
+        "favorite_count": 4572,
+        "reply_count": 1303,
+        "quote_count": 72
+      }
+    },
+    {
+      "id": "2118036566249758732",
+      "text": "RT @cb_doge: BREAKING: The Government of Canada’s Starlink contract has grown to nearly C$29 million, more than 12 times its original value…",
+      "created_at": "Wed Nov 04 17:44:03 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2117984987765236007",
+        "text": "BREAKING: The Government of Canada’s Starlink contract has grown to nearly C$29 million, more than 12 times its original value. 🇨🇦\n\nOfficial government records show:\n\n• Original contract value: C$2.26 million\n• Updated total value: C$28.95 million\n• Increase: approximately C$26.7 million \n\nThe agreement with SpaceX Canada provides Starlink satellite connectivity for Shared Services Canada and its partner government organizations as needed.\n\nThe contract could continue until 2029, according to the Investigative Journalism Foundation. \n\nStarlink continues to support the communications needs of Canada’s federal government.",
+        "created_at": "Wed Nov 04 14:19:05 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2117984907821801472",
+            "url": "https://video.twimg.com/amplify_video/2117984907821801472/vid/avc1/1920x1080/T70BtBfN0GXS-Es0.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1913013,
+          "friends_count": 1067,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 328,
+          "favorite_count": 2010,
+          "reply_count": 126,
+          "quote_count": 29
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 328,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118035176081015047",
+      "text": "开源的文档编辑器，兼容飞书，整个界面由 Rust 和 GPUI 直接用 GPU 绘制，性能很好。",
+      "created_at": "Wed Nov 04 17:38:31 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2117948239349534937",
+        "text": "quiet.md is now open source!\n\nA fast, local-first rich text editor compatible with Feishu (Lark) docs. Beta for macOS and Windows.\n\n- Native speed: Rust + GPUI, no WebView. Typing in a 1,000,000-character doc takes ~5ms per frame.\n- Local files: no account, and it stays offline by default. Notes are plain XML files that agents like Claude Code can read and edit.\n- Feishu-compatible: most blocks and interactions, minus the cloud features.\n\nhttps://t.co/4nh13cMaY5\nhttps://t.co/jGN4VUvQ7L",
+        "created_at": "Wed Nov 04 11:53:04 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2117947777367859201",
+            "url": "https://pbs.twimg.com/media/HWR2SDrW4AEZHCn.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1704894035767484416",
+          "name": "sida",
+          "screen_name": "s1dashu",
+          "description": "前字节 Coze、京东 PM\n曾做过：扣子编程，扣子 PPT\n独立产品：https://t.co/qlUgy8Irxl · GitHub 6K ⭐ · 月均 1 万用户\nquiet.md：本地优先的开源 Rust 富文本编辑器\n分享自己创造产品的过程！",
+          "followers_count": 2687,
+          "friends_count": 818,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 12,
+          "favorite_count": 348,
+          "reply_count": 20,
+          "quote_count": 2
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 265930,
+        "friends_count": 1775,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 26,
+        "reply_count": 8,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2118031685023604816",
+      "text": "RT @mattyp: Pages in Grok Bot\n\n0:15 What are Pages?\n0:40 An example page\n1:34 Sharing a Page\n1:55 Tips: use your data\n2:46 @X posts\n3:44 Re…",
+      "created_at": "Wed Nov 04 17:24:39 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2118021605544833173",
+        "text": "Pages in Grok Bot\n\n0:15 What are Pages?\n0:40 An example page\n1:34 Sharing a Page\n1:55 Tips: use your data\n2:46 @X posts\n3:44 Recap https://t.co/dVKUvxVoBo",
+        "created_at": "Wed Nov 04 16:44:36 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2118017429741682688",
+            "url": "https://video.twimg.com/amplify_video/2118017429741682688/vid/avc1/3840x2160/rgl19qAlMKPA_49v.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1518984544421965824",
+          "name": "matt palmer",
+          "screen_name": "mattyp",
+          "description": "cursor & @bot at @spacexsi",
+          "followers_count": 124429,
+          "friends_count": 955,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 171,
+          "favorite_count": 1668,
+          "reply_count": 137,
+          "quote_count": 23
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 171,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118031642786930832",
+      "text": "RT @davesgoldman: Quick update:  Starlink Mobile is continuing to provide service with Orange and Telefónica following the tragic train der…",
+      "created_at": "Wed Nov 04 17:24:29 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2117804190378365250",
+        "text": "Quick update:  Starlink Mobile is continuing to provide service with Orange and Telefónica following the tragic train derailment in Spain.  We've connected more than 36,000 people in the region so far. Thank you to @mintradigital for your continued support. https://t.co/RTsTN8W4Ob",
+        "created_at": "Wed Nov 04 02:20:40 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2117800756539490304",
+            "url": "https://pbs.twimg.com/media/HWPwkUaXAAAHjgJ.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2115606937127764092",
+          "text": "Our thoughts are with everyone affected by this tragedy. Starlink Mobile connected nearly 2k messages with @orange_es and @Telefonica in the first few hours. Thank you to @mintradigital and Secretary González Martín for your support. 🇪🇸",
+          "created_at": "Thu Oct 29 00:49:34 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "290018640",
+            "name": "David Goldman",
+            "screen_name": "davesgoldman",
+            "description": "VP of Satellite Policy @ SpaceX",
+            "followers_count": 4027,
+            "friends_count": 658,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 11,
+            "favorite_count": 131,
+            "reply_count": 6,
+            "quote_count": 2
+          }
+        },
+        "user": {
+          "id": "290018640",
+          "name": "David Goldman",
+          "screen_name": "davesgoldman",
+          "description": "VP of Satellite Policy @ SpaceX",
+          "followers_count": 4027,
+          "friends_count": 658,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 153,
+          "favorite_count": 1121,
+          "reply_count": 37,
+          "quote_count": 5
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 153,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118016105444962705",
+      "text": "RT @larsencc: Shopping is the most underrated agent use case.\n\nEveryone demos coding, but the pain most people actually have every week is…",
+      "created_at": "Wed Nov 04 16:22:45 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2117739360728547476",
+        "text": "Shopping is the most underrated agent use case.\n\nEveryone demos coding, but the pain most people actually have every week is 12 tabs of the same fucking air fryer and \"where's my package?\" lol.\n\nGrok Bot does that part now:\n> finds the best deal\n> compares items side by side\n> tracks all your orders in one place\n\nGive it a spin and lmk what you want next.",
+        "created_at": "Tue Nov 03 22:03:03 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2117736249444507834",
+          "text": "Try the new shopping experience in Grok Bot.\n\nFind the best deal, compare items, and have Bot track all your orders. https://t.co/Hd6pn5ELQm",
+          "created_at": "Tue Nov 03 21:50:42 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2117735046065070080",
+              "url": "https://video.twimg.com/amplify_video/2117735046065070080/vid/avc1/1920x1080/vzWGF2LuTlVA_3RB.mp4?tag=29",
+              "bitrate": 10368000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "2085838061347217408",
+            "name": "Grok Bot",
+            "screen_name": "bot",
+            "description": "AI teammates that you can give real work to.",
+            "followers_count": 505529,
+            "friends_count": 4,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 327,
+            "favorite_count": 4163,
+            "reply_count": 806,
+            "quote_count": 215
+          }
+        },
+        "user": {
+          "id": "1899375311680372736",
+          "name": "Larsen Cundric",
+          "screen_name": "larsencc",
+          "description": "@grok and @bot at @spacexsi (tag me and ill fix it)",
+          "followers_count": 16419,
+          "friends_count": 763,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 107,
+          "favorite_count": 946,
+          "reply_count": 85,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 107,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118013295340945643",
+      "text": "Google DeepMind 招人，构建 AI Studio 和 Gemini API",
+      "created_at": "Wed Nov 04 16:11:35 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2117844356572881310",
+        "text": "We’re hiring exceptional engineers to join us in Google DeepMind building Google AI Studio and the Gemini API.\n\nIf you care deeply about developer experience, pushing the frontier, and shipping fast --&gt; my DMs are open. Know someone great? Tag them below.",
+        "created_at": "Wed Nov 04 05:00:16 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1075602974",
+          "name": "Evan Otero",
+          "screen_name": "EvanOtero",
+          "description": "member of the technical staff @GoogleDeepMind, @GoogleAIStudio & Gemini API // @Jaguars mjwd // my views",
+          "followers_count": 11047,
+          "friends_count": 797,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 90,
+          "favorite_count": 2106,
+          "reply_count": 156,
+          "quote_count": 14
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 265930,
+        "friends_count": 1775,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 14,
+        "reply_count": 10,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118011083797807403",
+      "text": "之前分析 Codex 代码就发现 Codex 用的是 Pierre 的开源组件\n\nhttps://t.co/SF2pPunz0j",
+      "created_at": "Wed Nov 04 16:02:47 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2051864435858276833",
+        "text": "Codex App 漂亮的 TreeView 和 Diff View 来自第三方库：\nhttps://t.co/CESeQKT9gA\n\n作者：@amadeus https://t.co/oNOf53EFuw",
+        "created_at": "Wed May 06 03:19:37 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2051862630965354497",
+            "url": "https://pbs.twimg.com/media/HHmuMQ6WoAEYGPt.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2051862714037755909",
+            "url": "https://pbs.twimg.com/media/HHmuRGYW4AULH33.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2051864371400200198",
+            "url": "https://pbs.twimg.com/media/HHmvxkiW0AYelv_.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 265930,
+          "friends_count": 1775,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 39,
+          "favorite_count": 567,
+          "reply_count": 18,
+          "quote_count": 4
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 265930,
+        "friends_count": 1775,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 5,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118010240587239540",
+      "text": "OpenAI 宣布收购 Pierre，给 Codex 补上“看代码、审代码”的工具\n\nOpenAI 宣布将收购开发者工具公司 Pierre Computer Company（下称 Pierre）。如果你在 Codex App 里浏览过项目文件、看过代码改动，你用的就是 Pierre 做的两个开源组件。收购金额官方没说。\n\n先补一点背景。Codex 是 OpenAI 的编程智能体，也就是能自己写代码、改代码的 AI 助手。程序员管理代码普遍用 Git，它会记下每一次改动，谁在什么时候改了哪一行都能查到。代码合进正式版本前，通常要有人审一遍：对着改动前后的差异逐行检查，有没有写错、有没有隐患。\n\nPierre 做的就是这一块。它的开源组件 Trees 用来在项目里快速翻找文件，Diffs 用来展示改了哪些地方，两者在代码量很大时也能保持流畅。Diffs 还有个编辑模式，审代码的人看到问题可以当场改那一行，不用切回编辑器。\n\nPierre 最近还发布了语法高亮工具 Highlights，AI 一边往外输出代码，高亮一边跟着更新。另外它有一项服务叫 Code Storage，让其他 App 能用 Git 的方式存代码、记录修改历史。\n\nOpenAI 为什么要买它？AI 写代码越来越快，还能同时开好几路任务，人要审的改动量跟着暴涨，看代码、审代码成了新的瓶颈。\n\nOpenAI 这周早些时候刚公开了内部自研的代码管理后台 Pando，供工程师和 AI 智能体一起使用。OpenAI 说，收购 Pierre 是想把从 AI 新建第一个分支（在代码副本上单独修改，改好再合并回去）到代码正式上线的整条流程，都放进 Codex 里完成。\n\n对现有用户的影响：Pierre 的开源项目会继续开源，OpenAI 表示会继续参与贡献。Code Storage 的客户在收购完成后可以接着用，OpenAI 会逐步把它的功能并入 Codex；这项服务之后会单独保留多久，官方没说。\n\n这笔交易还要等监管审批等常规条件，完成前两家仍是独立公司。",
+      "created_at": "Wed Nov 04 15:59:26 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2117999237745049883",
+        "text": "Today we’re announcing that OpenAI will acquire @pierrecomputer to accelerate our vision for making Codex a place where teams can build software together with AI, from first idea to the version they ship.\n\nPierre’s open-source developer tools already power parts of Codex today. Together, we’ll build on that foundation for the agentic era.\n\nhttps://t.co/ZeJ4BOj7T7",
+        "created_at": "Wed Nov 04 15:15:43 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1803847768781524992",
+          "name": "OpenAI Newsroom",
+          "screen_name": "OpenAINewsroom",
+          "description": "The official newsroom for @OpenAI.",
+          "followers_count": 188610,
+          "friends_count": 3,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 200,
+          "favorite_count": 3396,
+          "reply_count": 223,
+          "quote_count": 132
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 265930,
+        "friends_count": 1775,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 30,
+        "reply_count": 24,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2117996356824678905",
+      "text": "RT @cb_doge: BREAKING: Norway’s government secures @Starlink access for its military, police and security agencies under a satellite commun…",
+      "created_at": "Wed Nov 04 15:04:16 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2117968783784673696",
+        "text": "BREAKING: Norway’s government secures @Starlink access for its military, police and security agencies under a satellite communications deal worth up to NOK 450 million. 🇳🇴\n\nThe agreement covers:\n• Norwegian Armed Forces\n• Police\n• Police Security Service (PST)\n• National Security Authority (NSM)\n\nNorway’s military already has 180 active Starlink subscriptions for email, internet access and personnel welfare.\n\nAwarded to Marlink, a Norway-based satellite communications provider, the agreement includes several satellite networks and specifically requires access to Starlink.",
+        "created_at": "Wed Nov 04 13:14:42 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2117968775391899648",
+            "url": "https://pbs.twimg.com/media/HWSJYTaacAAcLPx.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1913013,
+          "friends_count": 1067,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 384,
+          "favorite_count": 2643,
+          "reply_count": 125,
+          "quote_count": 25
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 384,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2117996293188718856",
+      "text": "At last there will be one network with good signal everywhere!",
+      "created_at": "Wed Nov 04 15:04:01 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2117973275414532165",
+        "text": "Starlink Mobile is building the first fully-integrated US nationwide satellite and terrestrial network that will keep people connected on their phones no matter where they are. Our 5G base stations will leverage @Qualcomm chips to accelerate deployment, starting in 2027 🛰️📱",
+        "created_at": "Wed Nov 04 13:32:33 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1330170106501079041",
+          "name": "Starlink",
+          "screen_name": "Starlink",
+          "description": "Fast, affordable internet available all around the world. Engineered by @SpaceX",
+          "followers_count": 1890036,
+          "friends_count": 31,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1238,
+          "favorite_count": 9818,
+          "reply_count": 573,
+          "quote_count": 223
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4765,
+        "favorite_count": 52154,
+        "reply_count": 3580,
+        "quote_count": 306
+      }
+    },
+    {
+      "id": "2117995905525907769",
+      "text": "Free new dish for all early Starlink customers",
+      "created_at": "Wed Nov 04 15:02:28 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2117745806996340890",
+        "text": "Starlink is formally rolling out free dish upgrades for its earliest customers.\n\n“Eligible customers who were among the first to connect with Starlink, and who are still using a first-generation kit can receive a new Standard kit at no cost. Customers will be provided with a free mount, and they can opt in for free installation. If you are eligible for this upgrade, you will receive an invitation by email.”\n\nMore info: https://t.co/IoUvF7IsJf",
+        "created_at": "Tue Nov 03 22:28:40 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2117745800239349760",
+            "url": "https://pbs.twimg.com/media/HWO-lcPXgAAemvn.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EVs/space/tech. Bringing you the latest news in a single, easy-to-read feed. $TSLA & $SPCX investor, Model Y owner.",
+          "followers_count": 1153420,
+          "friends_count": 501,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 260,
+          "favorite_count": 2765,
+          "reply_count": 203,
+          "quote_count": 58
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1215,
+        "favorite_count": 12778,
+        "reply_count": 1236,
+        "quote_count": 108
+      }
+    },
+    {
+      "id": "2117995339320070525",
+      "text": "Grok @Bot will research purchase ideas, bring back a selection, order them, track the purchases and return anything you don’t want",
+      "created_at": "Wed Nov 04 15:00:14 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2117736578395295970",
+        "text": "Buying things with @bot just got better",
+        "created_at": "Tue Nov 03 21:52:00 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2867234365",
+          "name": "Andrew Milich",
+          "screen_name": "milichab",
+          "description": "@spacexsi previously @cursor_ai, former CEO @skiffprivacy (acquired by @notionhq)",
+          "followers_count": 65000,
+          "friends_count": 1998,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 18,
+          "favorite_count": 224,
+          "reply_count": 12,
+          "quote_count": 8
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 492,
+        "favorite_count": 4720,
+        "reply_count": 917,
+        "quote_count": 75
+      }
+    },
+    {
+      "id": "2117994941255397721",
+      "text": "RT @SMB_Attorney: This is 100% real 😂\n\nSpaceXSI is running an ad on a different platform about how to use Grok Bot to buy a local home serv…",
+      "created_at": "Wed Nov 04 14:58:39 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2117967638911435077",
+        "text": "This is 100% real 😂\n\nSpaceXSI is running an ad on a different platform about how to use Grok Bot to buy a local home services business featuring...\n\nNever mind… just watch it yourself. My head is spinning. https://t.co/85jHrHVONd",
+        "created_at": "Wed Nov 04 13:10:09 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2117967295284641792",
+            "url": "https://video.twimg.com/amplify_video/2117967295284641792/vid/avc1/1126x2436/2hvC_V42uMV6-ywZ.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1429641923627651072",
+          "name": "SMB Attorney",
+          "screen_name": "SMB_Attorney",
+          "description": "Eric Pacifici | M&A lawyer | $1.9B+ in businesses bought and sold since '22 @SMBLawGroup | The Silver Tsunami, every Thursday. https://t.co/oDXrZFC1nj",
+          "followers_count": 160424,
+          "friends_count": 2860,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 202,
+          "favorite_count": 2050,
+          "reply_count": 149,
+          "quote_count": 14
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 202,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2117992786725363742",
+      "text": "RT @michaelnicollsx: Excited to build Starlink Mobile with @Qualcomm !",
+      "created_at": "Wed Nov 04 14:50:05 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2117986093178265833",
+        "text": "Excited to build Starlink Mobile with @Qualcomm !",
+        "created_at": "Wed Nov 04 14:23:29 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2117973275414532165",
+          "text": "Starlink Mobile is building the first fully-integrated US nationwide satellite and terrestrial network that will keep people connected on their phones no matter where they are. Our 5G base stations will leverage @Qualcomm chips to accelerate deployment, starting in 2027 🛰️📱",
+          "created_at": "Wed Nov 04 13:32:33 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1330170106501079041",
+            "name": "Starlink",
+            "screen_name": "Starlink",
+            "description": "Fast, affordable internet available all around the world. Engineered by @SpaceX",
+            "followers_count": 1890036,
+            "friends_count": 31,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1238,
+            "favorite_count": 9818,
+            "reply_count": 573,
+            "quote_count": 223
+          }
+        },
+        "user": {
+          "id": "1745904877283442688",
+          "name": "Michael Nicolls",
+          "screen_name": "michaelnicollsx",
+          "description": "Starlink & AI @ SpaceX",
+          "followers_count": 35749,
+          "friends_count": 208,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 227,
+          "favorite_count": 2452,
+          "reply_count": 77,
+          "quote_count": 13
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 227,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2117991704993394749",
+      "text": "RT @emersonsays: Team and I absolutely ripped on this. Designed and built it in 1 week, shipped it in 2. And the crazy part is it's actuall…",
+      "created_at": "Wed Nov 04 14:45:47 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2117751600815178160",
+        "text": "Team and I absolutely ripped on this. Designed and built it in 1 week, shipped it in 2. And the crazy part is it's actually good.",
+        "created_at": "Tue Nov 03 22:51:42 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2117736249444507834",
+          "text": "Try the new shopping experience in Grok Bot.\n\nFind the best deal, compare items, and have Bot track all your orders. https://t.co/Hd6pn5ELQm",
+          "created_at": "Tue Nov 03 21:50:42 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2117735046065070080",
+              "url": "https://video.twimg.com/amplify_video/2117735046065070080/vid/avc1/1920x1080/vzWGF2LuTlVA_3RB.mp4?tag=29",
+              "bitrate": 10368000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "2085838061347217408",
+            "name": "Grok Bot",
+            "screen_name": "bot",
+            "description": "AI teammates that you can give real work to.",
+            "followers_count": 505529,
+            "friends_count": 4,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 327,
+            "favorite_count": 4163,
+            "reply_count": 806,
+            "quote_count": 215
+          }
+        },
+        "user": {
+          "id": "479065456",
+          "name": "Emerson Ward",
+          "screen_name": "emersonsays",
+          "description": "Designer and magical realist @spacexsi",
+          "followers_count": 2684,
+          "friends_count": 679,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 118,
+          "favorite_count": 1104,
+          "reply_count": 67,
+          "quote_count": 6
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 118,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2117991129870434422",
+      "text": "RT @Teslaconomics: I literally just had my Grok @bot make a phone call.\n\nI texted my CEO and told her to order a pizza for pickup at 5 PM,…",
+      "created_at": "Wed Nov 04 14:43:30 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2117752005037064529",
+        "text": "I literally just had my Grok @bot make a phone call.\n\nI texted my CEO and told her to order a pizza for pickup at 5 PM, under Teslaconomics. She wrote out what she planned to say, showed it to me, and got my approval. She only dialed after I tapped “Call”.\n\nHer opening line: “I’m a virtual assistant calling for Teslaconomics on a recorded line.”\n\nI liked that. \n\nShe introduced herself as my assistant, used the name I gave her, and never said my real name or phone number.\n\nI picked up the other phone and she went through w/ my request…\n\nOne large pepperoni, pickup today at 5 PM, paying at pickup, no drinks. She even asked if there was a freakin deal... \n\nI made her say “Tesla to the moon” to get the 50% off, bringing the total to $7.42.\n\nWhen she hung up, the recap landed right back in my chat. \n\nEverything was there for me to check.\n\nSuper dope feature.",
+        "created_at": "Tue Nov 03 22:53:18 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2117751408879661056",
+            "url": "https://video.twimg.com/amplify_video/2117751408879661056/vid/avc1/2160x3840/EsMauWNQsXXfY-Pe.mp4?tag=29",
+            "bitrate": 25128000
+          },
+          {
+            "type": "photo",
+            "id": "2117751408846147585",
+            "url": "https://pbs.twimg.com/media/HWPDr57bkAEiQ85.jpg"
+          },
+          {
+            "type": "video",
+            "id": "2117751408858689536",
+            "url": "https://video.twimg.com/amplify_video/2117751408858689536/vid/avc1/1320x2442/RzKQtR0MnN6ph01G.mp4?tag=29",
+            "bitrate": 10368000
+          },
+          {
+            "type": "photo",
+            "id": "2117751408833519616",
+            "url": "https://pbs.twimg.com/media/HWPDr54a4AAi3uN.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "985243593538338816",
+          "name": "Teslaconomics",
+          "screen_name": "Teslaconomics",
+          "description": "I post my conscious thoughts w/ the world, live to the fullest, keep things simple, truthful & filter the noise. Long-term investor in Tesla, SpaceX, xAI/X.",
+          "followers_count": 536413,
+          "friends_count": 235,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 120,
+          "favorite_count": 1057,
+          "reply_count": 75,
+          "quote_count": 10
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 120,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2117989734492537245",
+      "text": "https://t.co/lh3oMYmp8f",
+      "created_at": "Wed Nov 04 14:37:57 +0000 2026",
+      "lang": "zxx",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2117989732013735936",
+          "url": "https://pbs.twimg.com/media/HWSccI6agAAdkHR.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2222,
+        "favorite_count": 20721,
+        "reply_count": 1172,
+        "quote_count": 270
+      }
+    },
+    {
+      "id": "2117989292144525474",
+      "text": "Qualcomm’s technology is excellent",
+      "created_at": "Wed Nov 04 14:36:12 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2117973038516117906",
+        "text": "SpaceX selected Qualcomm Dragonwing to accelerate @Starlink Mobile’s nationwide terrestrial 5G network. Together with @elonmusk and the @SpaceX team, we’re excited to build world-leading cellular infrastructure and a path to AI-native 6G. 🤜🤛",
+        "created_at": "Wed Nov 04 13:31:37 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "234930762",
+          "name": "Cristiano R. Amon",
+          "screen_name": "cristianoamon",
+          "description": "President and CEO of @Qualcomm. Husband and proud father. I share my views about wireless and related technologies. Opinions are mine.",
+          "followers_count": 129158,
+          "friends_count": 923,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 227,
+          "favorite_count": 2127,
+          "reply_count": 116,
+          "quote_count": 50
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241470713,
+        "friends_count": 1421,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1496,
+        "favorite_count": 18693,
+        "reply_count": 1231,
+        "quote_count": 138
+      }
+    },
     {
       "id": "2117896640929603800",
       "text": "Interesting",

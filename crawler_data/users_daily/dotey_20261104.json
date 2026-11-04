@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 265695,
+    "followers_count": 265930,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261104",
-  "last_updated": "2026-11-04T13:41:49.118153",
-  "tweet_count": 1,
+  "last_updated": "2026-11-04T20:39:52.593421",
+  "tweet_count": 8,
   "tweets": [
     {
       "id": "2117838908721660026",
@@ -62,6 +62,284 @@
         "favorite_count": 171,
         "reply_count": 85,
         "quote_count": 4
+      }
+    },
+    {
+      "id": "2118010240587239540",
+      "text": "OpenAI 宣布收购 Pierre，给 Codex 补上“看代码、审代码”的工具\n\nOpenAI 宣布将收购开发者工具公司 Pierre Computer Company（下称 Pierre）。如果你在 Codex App 里浏览过项目文件、看过代码改动，你用的就是 Pierre 做的两个开源组件。收购金额官方没说。\n\n先补一点背景。Codex 是 OpenAI 的编程智能体，也就是能自己写代码、改代码的 AI 助手。程序员管理代码普遍用 Git，它会记下每一次改动，谁在什么时候改了哪一行都能查到。代码合进正式版本前，通常要有人审一遍：对着改动前后的差异逐行检查，有没有写错、有没有隐患。\n\nPierre 做的就是这一块。它的开源组件 Trees 用来在项目里快速翻找文件，Diffs 用来展示改了哪些地方，两者在代码量很大时也能保持流畅。Diffs 还有个编辑模式，审代码的人看到问题可以当场改那一行，不用切回编辑器。\n\nPierre 最近还发布了语法高亮工具 Highlights，AI 一边往外输出代码，高亮一边跟着更新。另外它有一项服务叫 Code Storage，让其他 App 能用 Git 的方式存代码、记录修改历史。\n\nOpenAI 为什么要买它？AI 写代码越来越快，还能同时开好几路任务，人要审的改动量跟着暴涨，看代码、审代码成了新的瓶颈。\n\nOpenAI 这周早些时候刚公开了内部自研的代码管理后台 Pando，供工程师和 AI 智能体一起使用。OpenAI 说，收购 Pierre 是想把从 AI 新建第一个分支（在代码副本上单独修改，改好再合并回去）到代码正式上线的整条流程，都放进 Codex 里完成。\n\n对现有用户的影响：Pierre 的开源项目会继续开源，OpenAI 表示会继续参与贡献。Code Storage 的客户在收购完成后可以接着用，OpenAI 会逐步把它的功能并入 Codex；这项服务之后会单独保留多久，官方没说。\n\n这笔交易还要等监管审批等常规条件，完成前两家仍是独立公司。",
+      "created_at": "Wed Nov 04 15:59:26 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2117999237745049883",
+        "text": "Today we’re announcing that OpenAI will acquire @pierrecomputer to accelerate our vision for making Codex a place where teams can build software together with AI, from first idea to the version they ship.\n\nPierre’s open-source developer tools already power parts of Codex today. Together, we’ll build on that foundation for the agentic era.\n\nhttps://t.co/ZeJ4BOj7T7",
+        "created_at": "Wed Nov 04 15:15:43 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1803847768781524992",
+          "name": "OpenAI Newsroom",
+          "screen_name": "OpenAINewsroom",
+          "description": "The official newsroom for @OpenAI.",
+          "followers_count": 188610,
+          "friends_count": 3,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 200,
+          "favorite_count": 3396,
+          "reply_count": 223,
+          "quote_count": 132
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 30,
+        "reply_count": 24,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118011083797807403",
+      "text": "之前分析 Codex 代码就发现 Codex 用的是 Pierre 的开源组件\n\nhttps://t.co/SF2pPunz0j",
+      "created_at": "Wed Nov 04 16:02:47 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2051864435858276833",
+        "text": "Codex App 漂亮的 TreeView 和 Diff View 来自第三方库：\nhttps://t.co/CESeQKT9gA\n\n作者：@amadeus https://t.co/oNOf53EFuw",
+        "created_at": "Wed May 06 03:19:37 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2051862630965354497",
+            "url": "https://pbs.twimg.com/media/HHmuMQ6WoAEYGPt.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2051862714037755909",
+            "url": "https://pbs.twimg.com/media/HHmuRGYW4AULH33.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2051864371400200198",
+            "url": "https://pbs.twimg.com/media/HHmvxkiW0AYelv_.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 265930,
+          "friends_count": 1775,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 39,
+          "favorite_count": 567,
+          "reply_count": 18,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 5,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118013295340945643",
+      "text": "Google DeepMind 招人，构建 AI Studio 和 Gemini API",
+      "created_at": "Wed Nov 04 16:11:35 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2117844356572881310",
+        "text": "We’re hiring exceptional engineers to join us in Google DeepMind building Google AI Studio and the Gemini API.\n\nIf you care deeply about developer experience, pushing the frontier, and shipping fast --&gt; my DMs are open. Know someone great? Tag them below.",
+        "created_at": "Wed Nov 04 05:00:16 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1075602974",
+          "name": "Evan Otero",
+          "screen_name": "EvanOtero",
+          "description": "member of the technical staff @GoogleDeepMind, @GoogleAIStudio & Gemini API // @Jaguars mjwd // my views",
+          "followers_count": 11047,
+          "friends_count": 797,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 90,
+          "favorite_count": 2106,
+          "reply_count": 156,
+          "quote_count": 14
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 14,
+        "reply_count": 10,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118035176081015047",
+      "text": "开源的文档编辑器，兼容飞书，整个界面由 Rust 和 GPUI 直接用 GPU 绘制，性能很好。",
+      "created_at": "Wed Nov 04 17:38:31 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2117948239349534937",
+        "text": "quiet.md is now open source!\n\nA fast, local-first rich text editor compatible with Feishu (Lark) docs. Beta for macOS and Windows.\n\n- Native speed: Rust + GPUI, no WebView. Typing in a 1,000,000-character doc takes ~5ms per frame.\n- Local files: no account, and it stays offline by default. Notes are plain XML files that agents like Claude Code can read and edit.\n- Feishu-compatible: most blocks and interactions, minus the cloud features.\n\nhttps://t.co/4nh13cMaY5\nhttps://t.co/jGN4VUvQ7L",
+        "created_at": "Wed Nov 04 11:53:04 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2117947777367859201",
+            "url": "https://pbs.twimg.com/media/HWR2SDrW4AEZHCn.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1704894035767484416",
+          "name": "sida",
+          "screen_name": "s1dashu",
+          "description": "前字节 Coze、京东 PM\n曾做过：扣子编程，扣子 PPT\n独立产品：https://t.co/qlUgy8Irxl · GitHub 6K ⭐ · 月均 1 万用户\nquiet.md：本地优先的开源 Rust 富文本编辑器\n分享自己创造产品的过程！",
+          "followers_count": 2687,
+          "friends_count": 818,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 12,
+          "favorite_count": 348,
+          "reply_count": 20,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 26,
+        "reply_count": 8,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2118040410706911267",
+      "text": "这道理不只是适用于出版图书，很多领域都适用呀：\n\n未来会有三种书，\n\n第一种，是用2H铅笔写在纸上的书，以便证明没用AI，只有那些买了也不会读的超级富豪会买。（很多人会死守这个立场。） \n\n第二种，作者用AI创作、读者仍然想读的书。（传统出版会走这条路。） \n\n第三种，读者告诉AI自己想读什么书，AI就生成给他们。（这才是Amazon正在走的方向。）",
+      "created_at": "Wed Nov 04 17:59:19 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2117971877721505866",
+        "text": "就很离谱，一个南非女作家Coral Hart在一年半的时间里用AI出版了371本书，总体算下来赚了差不多100万美金。\n\n在拿AI写书之前，她就是一个专门创作言情水文的高产作家，平均每个月能出版1本书，不是那种能登上畅销榜的品质，主要靠量赚钱。\n\n去年，出版社和她解约了，因为觉得反正都是水文，不如用AI代替这种水平的作家，Coral Hart倒是很快接受了现实，既然打不过，那就加入吧，她也开始工业化的训练AI写书，通过亚马逊的自出版和订阅模式，实现了比过去更高的收入。\n\n从结果来看，这很像是一个因为AI而失业的人使用AI「报复社会」的逆转剧情，不就是往互联网上堆屎吗，谁怕谁啊，我不但能堆，还能赚得盆满钵满，气不气？\n\n根据Coral Hart的说法，今年开始模型进步巨大，去年需要一段段的生成文本，而且需要花大力气雕琢提示词，但现在基本上已经可以一次性生成整本书的初稿了，「语法、结构、情感都有了飞跃提升」。\n\n她说，如果你只会给模型下任务「给我写本xx主题的书」，那么得到的也一定是垃圾，作家在这个流程里必须介入确定故事改编、写作风格、人物细节和章节大纲，「ChatGPT擅长对话，但散文能力很差，Claude善于设计故事骨架，却完全不知道怎么写肉戏，Gork经常不遵循指令，不过很懂怎么表达情欲」。\n\n我看看了这老姐在Reddit的AMA（问答马拉松），部分内容还算坦诚，我贴过来你们看看吧：\n\n问：\n怎么去AI化？你那个产量太夸张了，靠自己来改写根本不可能吧。还有，你是把写作当成生意，还是一门手艺？\n\n答：\nAI会偏离方向、胡编乱造，所以我会用一套流程，用AI去监管AI，用得最多的模型是Opus系列。\n读者买的是感受，而不只是书，我根据市场需求写好书。从「会出书的作家」转变成「会写作的出版人」，这种思维变化很重要，因为它让我能够作出明智的商业选择，同时不牺牲创作思维。\n\n问：\n你为自己的书感到自豪吗？你自己会欣赏或者购买它们吗？\n\n答：\n在开始生成正文以前，我会做很多工作：文风规范、写作技法手册、设定资料库、人物设定表、世界构建、情节节拍表、节奏图，最后才是大纲。\n在AI出现之前我就写得很快——不用AI，我一天也能写1万字，因此我的工作流程本来就很快。AI只是让我能更快，没有降低质量。\n我是个讲故事的人，脑子里总会冒出另一个人物、世界或反派。现在我终于能跟上自己的想法，让它们都有机会被写出来。\n以前没有AI时，只有商业上可行的书才会被写出来，因为没有时间浪费在那些「只是好玩」的作品上……\n\n问：\n细说一下你的百万级收入构成吧？\n\n答：\n每写完一本书后，先做小规模邮件推送，只有那些每天能卖出100美金的书，才会追投引流广告。\n广告卖不动烂书，所以我会先测试这些书，之后再加入 BookBub广告，只有数据表现最好的，才投AMS和Facebook广告。\n清水文，80%的收入来自直接付费，20%来自订阅付费，肉文，43的收入来自直接付费，57%来自订阅付费。\n整体而言，63%的收入是由9大语种版本贡献的，美国是最大的市场，其次是英国、澳大利亚、加拿大和法国。\n对我来说，成功的书每天都会有销量，失败的书要么表现平平，要么始终没能与读者建立联系。\n而我从失败中学到的是：哪里误判了市场，哪里没有听见读者的需要，我把每次表现不佳都视为学习或修好那本书的机会。\n\n问：\n谢谢你的回答，这确实让我更理解你的模式了，你已经建立了自己的读者群，并不依赖Amazon，令人羡慕。\n\n答：\n如果你依靠广告或社交平台，你其实是在租用那个读者——没办法直接互动，没办法把他们带回来、吸引他们继续购买。\n租用永远是一项成本，我的邮件名单归我自己所有，是一项资产，具有实实在在的价值。\n\n问：\n我有一个朋友，是一个曾经反对AI的作家，但他现在也改变主意了，想要学会用AI写作，你觉得他能追上你吗？这样的人会为自己以前的坚持付出怎样的代价？\n\n答：\n你说的这个朋友是不是……\n我觉得学习的机会窗口正在迅速关闭……即使你反对AI，也应该学会怎么使用它，这样才能具备相应的能力。\n我觉得反AI的作者会付出沉重代价吗？我觉得他们会在这个立场上死磕到底，除非他们有计划，而且已经理解AI如何运作、变化又有多快。\n我认为，现在对任何作者的职业生涯来说，最危险的事情就是害怕学习。你可以先学，再决定怎样运用这些知识……不能等海啸已经发生了才去报游泳课。\n\n问：\n那些「真正」的作家、不用AI也能写进畅销榜的作家，他们以后会屈从于AI吗？\n\n答：\n请站在出版商的立场，用商业头脑来问这个问题——如果我可以利用手头的市场数据，不断制造畅销书，又不用支付六位数的预付款或版税，怎样选择才是聪明的商业决策？如果我可以买一个工具，再用以前价格的10%买下你的创意，你真觉得他们不会这么做吗？\nAI会影响每一位作者。认识到我们提供的实际上是创意、扮演的是创意总监，而现在出售的东西就是创意，这将是大多数人最难完成的思维转变。\n我认识的畅销书作家都在学AI了，只不过他们一时半会不会告诉你们罢了。\n\n问：\n如果Amazon以后决定清除用AI出版的书了，怎么办？\n\n答：\n未来会有三种书，第一种，是用2H铅笔写在纸上的书，以便证明没用AI，只有那些买了也不会读的超级富豪会买。（很多人会死守这个立场。）\n第二种，作者用AI创作、读者仍然想读的书。（传统出版会走这条路。）\n第三种，读者告诉AI自己想读什么书，AI就生成给他们。（这才是Amazon正在走的方向。）\n\n问：\n所以对于一个作家而言，自己实际上是在用AI写书这件事情，是必须承认还是可以隐瞒的？\n\n答：\n我公开了自己使用AI这件事……结果我被开盒，收到死亡威胁（数以千计），有人叫我去死，他们还跑到我孩子的社交媒体上骚扰他们，给我的书集中刷差评。\n如果你能承受这种仇恨，那就公开你用了AI。\n如果你的心理状态应付不了这种程度的暴力，那就别公开。\n有人在YouTube上发了一个小时的视频骂我，但她之前给我的6本AI小说打过5星好评，如果你需要一个「AI」标签才会讨厌一个故事，那你讨厌的究竟是故事，还是AI？\n\n问：\n你怎么看那些批评AI本质上是一个窃贼、而且是在源源不断的制造垃圾的声音？\n\n答：\n嗯——你不能一边哭喊AI偷了你的作品，一边又骂它生成的是垃圾，还指望自己看起来不蠢。（如果生成的是垃圾，那它就是从你那里学来的垃圾，那么……嗯。）\n不过，我还遵循这样的原则：\n有没有被影响，得由你自己接下才成立。我不能把它强加给你，你也不能把它强加给我——我选择不接。\n我的态度就是「我才他妈不在乎」，黑子总会继续黑……随他们去。",
+        "created_at": "Wed Nov 04 13:27:00 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "64662332",
+          "name": "阑夕",
+          "screen_name": "foxshuo",
+          "description": "说什么是你的自由，做什么是我的权利，如果我做的得不到你的赞同，那就对了，否则我将与你一样平淡无奇。",
+          "followers_count": 171431,
+          "friends_count": 801,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 40,
+          "favorite_count": 269,
+          "reply_count": 7,
+          "quote_count": 5
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 3,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118052017755005210",
+      "text": "Cicada 是一款开源的、完全原生的 macOS 实时语音翻译与 AI 会议助手。 \n\n它可以在 Zoom、腾讯会议、飞书、YouTube 等应用中提供实时双语字幕、AI 会议纪要，还能把你说的话翻译成另一种语言，通过虚拟麦克风直接传给会议软件。\n\nhttps://t.co/GKGaiKJU1f",
+      "created_at": "Wed Nov 04 18:45:27 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2117574590075691483",
+        "text": "🎉 所有用 Mac 的朋友，用上这个开源会议纪要和同声传译软件，还能白嫖支付宝家每月50小时的额度！\n\n知了 / Cicada，已经按 Apache-2.0 协议免费开源，改了自用、拿去商用或闭源再发布都行。\n\n几大功能：\n- 实时字幕翻译，不管跨国会议、直播还是视频，都能自动翻译\n\n- 飞书级别的会议纪要，每 45 秒更新，有总结、议题和鱼骨图，每条结论和待办都标着原话出处和时间\n\n- 同声传译，克隆音色，语音直接转成另一种语言，直播室聊天无障碍\n\n- 说话人识别，目前在实验阶段，需要在设置中打开\n\n其中实时纪要用 Ling 模型，同声传译用 Ming-3.0 模型。配置只需三步：\n\n1. 去 Ling 开放平台注册登录（免费额度可支撑50小时/月，链接在评论区）\n2. 在 API 控制台创建一个API Key\n3. 打开知了，粘贴到“设置 › AI 服务”\n\n有问题欢迎在评论区或 GitHub 提，我会持续更新，Windows、Linux、Android也将推出！\n\n开源地址 https://t.co/gXxkFAs5kO\n官网 https://t.co/jXFyolTBJS",
+        "created_at": "Tue Nov 03 11:08:19 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2117571607023779840",
+            "url": "https://video.twimg.com/amplify_video/2117571607023779840/vid/avc1/1920x1080/MVk-VMvHCntHDNrZ.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1125309529145524224",
+          "name": "WquGuru",
+          "screen_name": "wquguru",
+          "description": "AI + Software + Robotics\nNewshub → https://t.co/WmkVbbvE92\nBuilding Agent PoCs → https://t.co/pg7QEz0fGp\nAIGC(texts, videos, world models)\n📮 hello@wqu.guru",
+          "followers_count": 27553,
+          "friends_count": 731,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 154,
+          "favorite_count": 827,
+          "reply_count": 131,
+          "quote_count": 29
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 7,
+        "reply_count": 8,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118064749011194009",
+      "text": "Google 在五国推出自愿离职补偿，最多给 12 个月工资\n\nGoogle 正在出钱请部分员工主动离职。路透社 11 月 4 日独家报道，Google 从今年 6 月起，向加拿大、法国、德国、日本和瑞士的部分员工提供“自愿离职补偿”，负责 AI 研究的 DeepMind 部门不在其中。\n\n这种做法和裁员不同。裁员是公司决定让谁走；自愿离职计划是公司先开出补偿条件，员工自己决定要不要申请，申请通过后拿一笔补偿金离开。\n\nGoogle 向路透社确认了这件事。Google 发言人说，2025 年公司部分团队推出了带补偿金的自愿离职计划，今年 6 月又把它扩展到“几个国家”，目的是“支持接下来的重要工作”。这一轮之前没有被报道过，路透社没能查到有多少人接受。\n\n【补偿给多少】\n\n瑞士的情况最具体。Google 在瑞士有大约 5000 名员工，苏黎世是它的一个主要工程中心。据三名知情人士说，Google 在 6 月中旬公布方案，7 月中旬前答复了申请的员工，8 月开始有人离开。\n\n接受的员工每工作一年拿一个月工资，最多 12 个月。也就是说，工作满 5 年拿 5 个月工资，工作满 15 年也只拿 12 个月。\n\n其中一名知情人士说，在一个约 50 人的团队里，至少有 4 人接受了。瑞士这一轮覆盖多个部门，但不包括 DeepMind。\n\n【哪些人不在名单里】\n\nGoogle Cloud 和 DeepMind 的员工，过去几轮都没有被纳入。路透社说，这次扩展看起来也是同样的安排。Google 的母公司叫 Alphabet，它的首席财务官 Anat Ashkenazi 在季度财报会上多次说，AI 和云计算是招聘重点。\n\n【计划的来历】\n\n这个计划不是今年才有。去年起，Google 已经在美国和英国的部分部门推行过。公司高管把它说成是给“不再认同公司节奏或方向”的员工的一个选择。路透社说，至少有一个部门在自愿离职之后又进行了裁员。\n\n路透社把这件事放在 AI 投入的背景下报道：Alphabet 在 AI 上花的钱越来越多，让华尔街投资者不安，也压低了它的股价，Google 想借此控制成本。Alphabet 的员工总数近几个季度在稳定增长，同时公司在把人力往重点领域调。上周，微软也向 6 万名员工提供了自愿离职补偿，目的同样是控制成本。\n\nGoogle 在瑞士有过裁员先例：2023 年它在瑞士裁掉 200 多人，引发员工抗议和集体离岗。\n\n来源：https://t.co/llS2oInTCj",
+      "created_at": "Wed Nov 04 19:36:02 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 8,
+        "reply_count": 3,
+        "quote_count": 1
       }
     }
   ]

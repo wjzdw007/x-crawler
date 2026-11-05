@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 265930,
+    "followers_count": 265999,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261104",
-  "last_updated": "2026-11-04T20:39:52.593421",
-  "tweet_count": 8,
+  "last_updated": "2026-11-05T01:58:41.081051",
+  "tweet_count": 12,
   "tweets": [
     {
       "id": "2117838908721660026",
@@ -340,6 +340,252 @@
         "favorite_count": 8,
         "reply_count": 3,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2118096583229161704",
+      "text": "RT @huacnlee: 上个月我还在抱怨 Rust 磁盘占用，每天都要清理。\n\n今天这已经不再是一个问题，我的电脑打满了 worktree，自动化 AI 开发。但我根本没遇到磁盘问题了，今天是第 5 天。\n\n由于不再删除 target，就不会全新编译，电脑也不卡了。\n\n放心…",
+      "created_at": "Wed Nov 04 21:42:32 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2117892529949667444",
+        "text": "上个月我还在抱怨 Rust 磁盘占用，每天都要清理。\n\n今天这已经不再是一个问题，我的电脑打满了 worktree，自动化 AI 开发。但我根本没遇到磁盘问题了，今天是第 5 天。\n\n由于不再删除 target，就不会全新编译，电脑也不卡了。\n\n放心搞 Rust，直接安装我这个 huacnlee/cargo。\n\n截图是我的 Omarchy 和 Mac，基本上每个项目能有效控制在 20G 左右。\n\nWe can fix everything!\n\nhttps://t.co/1lIWxIezYp",
+        "created_at": "Wed Nov 04 08:11:42 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2117892519048728576",
+            "url": "https://pbs.twimg.com/media/HWREBmZbUAA45zy.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2117892260188848128",
+            "url": "https://pbs.twimg.com/media/HWRDyiEbAAASbYz.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2117892345475878912",
+            "url": "https://pbs.twimg.com/media/HWRD3fyb0AASdw9.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2108035260508520452",
+          "text": "Rust 的编译速度和构建产物占用，已成为 AI 时代的严重瓶颈。\n\n多个 agents 并行、多 worktree，反复 build 和 check，再强的 CPU 也经常被打满，一个个几十 G 起步的 target 一点一点吃掉磁盘空间（并且今年 SSD 还那么贵）。\n\nAI 写代码越来越快，构建成本越来越显眼。\n\n如果有一门能有 Go 一样的编译速度，又有 Rust 那样无 GC、内存安全，以及深入底层做极致性能优化的能力，那将是最适合 AI 时代的编程语言。",
+          "created_at": "Thu Oct 08 03:22:26 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "14347537",
+            "name": "Jason Lee",
+            "screen_name": "huacnlee",
+            "description": "",
+            "followers_count": 12820,
+            "friends_count": 226,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 9,
+            "favorite_count": 167,
+            "reply_count": 64,
+            "quote_count": 11
+          }
+        },
+        "user": {
+          "id": "14347537",
+          "name": "Jason Lee",
+          "screen_name": "huacnlee",
+          "description": "",
+          "followers_count": 12820,
+          "friends_count": 226,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 20,
+          "favorite_count": 245,
+          "reply_count": 20,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 20,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118121397285200082",
+      "text": "RT @oran_ge: 人为了逃避真正的问题，愿意做任何事情。\n一个开发者说，Claude 和 Codex 快把他搞破产了。\n\n他给 Claude 一个指令，看着它把东西造出来，检查一下，再想下一步改哪儿。永远有下一件事可做，每一次坐下来都觉得自己很有产出。而且全程不用拿给任…",
+      "created_at": "Wed Nov 04 23:21:08 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2118117429201220057",
+        "text": "人为了逃避真正的问题，愿意做任何事情。\n一个开发者说，Claude 和 Codex 快把他搞破产了。\n\n他给 Claude 一个指令，看着它把东西造出来，检查一下，再想下一步改哪儿。永远有下一件事可做，每一次坐下来都觉得自己很有产出。而且全程不用拿给任何人看，很舒服。\n\n可把 app 拿到别人面前就不同了。可能被忽略，可能被问一句这有什么用，也可能被告知已经在用别的了。于是“再做得完美一点”就成了现成的借口，还差一个功能，设计还能再好，等弄好再找人。Claude 随时陪着，他想做多久都行。\n\nAI 订阅一直续费，几个月过去，钱花了不少，还是不知道有没有人要。他说自己甚至趁着 agent 在跑的时候刷手机，也没去查竞品、找用户。\n\n结果是产品更精致了，问题还在原地。\n\n现在他逼自己多发冷邮件。承认派活儿给 Claude 还是比把东西拿给人看轻松，但冷邮件真的带来了用户，这让他有理由继续做那件躲了很久的事。",
+        "created_at": "Wed Nov 04 23:05:22 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2118072820920091073",
+          "text": "This is brutal. https://t.co/0PVCZCcc5Y",
+          "created_at": "Wed Nov 04 20:08:07 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2118072817233346560",
+              "url": "https://pbs.twimg.com/media/HWToAVeawAA0jwv.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "206918128",
+            "name": "Randall Kanna Franson",
+            "screen_name": "RandallKanna",
+            "description": "🔍 AI search platform - https://t.co/R65ale0vWO. \n🖥️ https://t.co/hlWZH0TDeh\n📕 https://t.co/Ud7m7gtLIe\n\nO’Reilly author. Engineer",
+            "followers_count": 52976,
+            "friends_count": 685,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 18,
+            "favorite_count": 817,
+            "reply_count": 100,
+            "quote_count": 16
+          }
+        },
+        "user": {
+          "id": "6782882",
+          "name": "Orange AI",
+          "screen_name": "oran_ge",
+          "description": "Cola 创始人 & CEO",
+          "followers_count": 188598,
+          "friends_count": 629,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 8,
+          "favorite_count": 71,
+          "reply_count": 62,
+          "quote_count": 8
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118121987386298757",
+      "text": "RT @goshenggo: 上个月《新闻大写》又破纪录了，单月 560 多万播放，观看时长差不多 100 万小时。挺多人私信问我长视频稿子怎么写。资料肯定要下功夫去找，这个没捷径。有个很重要的真正拉开差距的是叙事结构，今天我和大家分享一个很重要的写作技巧  Beat Shee…",
+      "created_at": "Wed Nov 04 23:23:29 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2118000422858453353",
+        "text": "上个月《新闻大写》又破纪录了，单月 560 多万播放，观看时长差不多 100 万小时。挺多人私信问我长视频稿子怎么写。资料肯定要下功夫去找，这个没捷径。有个很重要的真正拉开差距的是叙事结构，今天我和大家分享一个很重要的写作技巧  Beat Sheet，中文不知道叫啥...\n这个概念来自编剧书《救猫咪》，我大学编剧课学到的，我觉得做内容的人都该读一遍 反复研究。简单说也好理解，这就是一份带节奏的大纲，每一段除了写讲什么，还得想清楚两件事：这段给观众什么新信息，情绪往哪边带。我创作初期主要就是对着这个反复打磨。\n长视频最怕的是观众看到一半走神。我现在的习惯是先在表格里把每个节拍排好，节奏定死了再开始写词。很多我辅导过的创作者，哪怕是天赋型选手很多都直接写，写出来经常是一路平铺，自己回看都犯困，真的  你有天赋当然好，但是你没技巧其实很埋没你的天赋。\n特别 尤其 是现在用 Claude Code + HyperFrames 做视频的时代，这一步更重要了，甚至能决定你做出来的是电子 PPT 还是像样个电影。\nHyperFrames 其实就是拿网页在做视频。每个镜头是一个 scene，写好第几秒开始、持续多久，再用一条 GSAP 时间轴串起来渲染，你看，这不就是一张节拍表吗。\n所以你直接丢给 Claude 一篇逐字稿，它只能平均切，镜头和动效都很僵。但你给它一张标好情绪重音、信息密度的节拍表，每个 BEAT 直接对应一个 scene，哪里停、哪里快、哪里上强动效，他就知道了 对你创作尤其重要。\n节奏这东西得写稿前就设计好，指望后期剪出来真累死你还费token。v",
+        "created_at": "Wed Nov 04 15:20:26 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2117989788825612290",
+            "url": "https://pbs.twimg.com/media/HWScfcja8AIDdAG.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1901633000259092481",
+          "name": "Archer/张狗剩🎄",
+          "screen_name": "goshenggo",
+          "description": "油管UP主 🐶🫅",
+          "followers_count": 48602,
+          "friends_count": 206,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 69,
+          "favorite_count": 630,
+          "reply_count": 58,
+          "quote_count": 9
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 69,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2118127825186177270",
+      "text": "OpenAI 推出 Images 2.6：能导出 SVG 矢量图，还能做 GIF 动图，出图快一半\n\nOpenAI 11 月 4 日发布图像模型 Images 2.6，ChatGPT 和 Codex 所有档位的用户今天起都能用，电脑、手机和网页版都有。\n\n这次一个重要变化是能把生成的图导出成 SVG 矢量图，可以直接拿去做网站、App 和印刷品。另外还能生成 GIF 动图，出图速度比上一版快 50%，改图时能更准确地只改指定的地方。\n\n开发者可以通过 API 调用这个模型。API 是开发者把模型接进自己产品的接口，按用量付费。OpenAI 说，现在全球用户每周在 ChatGPT、Codex 和 API 上生成 40 亿张图，平均每天超过 5 亿张。\n\n【导出 SVG：图能直接拿去用了】\n\nAI 生成的图通常是“位图”，比如常见的 PNG、JPG。位图由一个个小色点拼成，放大后会变糊，边缘出现锯齿。想把 AI 画的图标、Logo 用到正式场合，通常要设计师照着重新画成矢量图。\n\nSVG 是“矢量图”，记录的不是色点，而是线条和形状本身，比如“从这里到那里画一条曲线，填上蓝色”。所以它放大多少倍都清晰，小到 App 图标、大到户外海报都能用同一个文件；在设计软件里还能单独改某根线条的颜色和粗细，不用整张重画。网站上的图标、Logo，大多就是 SVG。\n\nOpenAI 在公告里说，导出 SVG 让设计“可以直接用在网站、App 和印刷品上”。这一项写在给开发者的新功能里，公告没说 ChatGPT 里能不能直接导出 SVG。\n\n【GIF 动图】\n\nGIF 是一种会循环播放的短动图，社交媒体上的表情包大多是这种格式。用户可以用一句话描述，或上传一张照片、一张手绘草图，让模型做成动图。\n\nOpenAI 举的例子有：让品牌吉祥物动起来，把商品图做成循环小动画，拍视频前先用动图试一试角色动作。\n\n合作方 OpenArt 公开的示例提示词是这样做的：先让模型在一张图里按 3 列 2 行画出 6 帧连续画面，再按顺序播放成动图。\n\n这种把多帧画面拼在一张图里的做法叫“精灵图”，游戏动画常用。据 Decrypt 转述 The Verge 的报道，ChatGPT 的 GIF 功能是分批开放的，做好后可以调播放速度、逐帧查看和修改。\n\n【两个 API 版本】\n\nAPI 里有两个版本可选：\n\n1. Flare 偏速度。画质设为低时，最快约 6 秒出一张图。海报、商品图这类需要排版的图，效果也有改进。\n\n2. Sunburst 偏画质。画质设为中或高时细节更多，连续改好几轮，人物和商品的样子也更不容易走样。\n\n这些速度和画质的说法都来自 OpenAI，目前还没有第三方测试结果。\n\n【给开发者的其他新功能】\n\n除了导出 SVG，还有两项：\n\n1. 图片标注：ChatGPT 里已有的功能加进了 API。在图上圈出要改的位置，模型只改那一块。\n2. 复杂度参数：控制模型动笔前花多少功夫安排画面。画质参数管细节清不清楚，复杂度管画面里能安排多少东西。OpenAI 建议简单修改用低复杂度，元素多、要求多的画面用中或高。\n\n设计工具 Figma Weave、图片编辑应用 Picsart 等已经提前接入。\n\n【价格】\n\nChatGPT 和 Codex 的所有订阅档位都能用 Images 2.6，公告没提要额外付费。\n\nOpenAI 定价页显示，2.6 的 Flare 和 Sunburst 两款同价：生成图片每 100 万 token 30 美元，输入参考图每 100 万 token 8 美元，输入文字每 100 万 token 5 美元。这和上一代 2.5 的价格一样。\n\nFlare 速度更快，但按 token 算的单价和 Sunburst 相同。定价页的批量处理价目表（不急着要结果的任务，价格减半）里暂时没有 2.6。\n\n谷歌 10 月推出的同类模型 Nano Banana 2.1，生成图片也是每 100 万 token 30 美元，按谷歌定价页的换算，一张 1K 分辨率的图约 0.034 美元。\n\n原文链接：https://t.co/iBqbdnWx79\n来源链接：\nOpenAI API 定价页 https://t.co/wpz8hhXu09\n谷歌 Gemini API 定价页 https://t.co/BvraIw11le\nDecrypt 报道 https://t.co/tHINnG0bP7",
+      "created_at": "Wed Nov 04 23:46:41 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2118127644914913280",
+          "url": "https://video.twimg.com/amplify_video/2118127644914913280/vid/avc1/1920x1080/2duG4kc5Vp9Lj-Qq.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2118124753340756055",
+        "text": "Today, we’re bringing GPT-Image-2.6 to Codex and the API.\n\nImage-2.6 Flare and Sunburst, our two new API image models, generate images 50% faster than before.\n\nAt medium or high quality, Sunburst keeps details more consistent from one edit to the next. https://t.co/iNhtjqKueJ",
+        "created_at": "Wed Nov 04 23:34:28 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2118122188830023681",
+            "url": "https://video.twimg.com/amplify_video/2118122188830023681/vid/avc1/1920x1080/Mg2qoXYnxbPSJB95.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1633874951508721686",
+          "name": "OpenAI Developers",
+          "screen_name": "OpenAIDevs",
+          "description": "Official updates for developers building with Codex & the OpenAI Platform • Service status: https://t.co/kZwnwdYYEq",
+          "followers_count": 472039,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 161,
+          "favorite_count": 1688,
+          "reply_count": 106,
+          "quote_count": 128
+        }
+      },
+      "stats": {
+        "retweet_count": 20,
+        "favorite_count": 186,
+        "reply_count": 97,
+        "quote_count": 6
       }
     }
   ]

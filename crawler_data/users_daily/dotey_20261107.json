@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 266971,
+    "followers_count": 267011,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261107",
-  "last_updated": "2026-11-07T16:03:54.033375",
-  "tweet_count": 1,
+  "last_updated": "2026-11-07T21:23:01.033393",
+  "tweet_count": 3,
   "tweets": [
     {
       "id": "2119095256624808252",
@@ -54,6 +54,66 @@
         "retweet_count": 28,
         "favorite_count": 0,
         "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119108669392720336",
+      "text": "如果你打算用 GPUI 之前可以看看这篇",
+      "created_at": "Sat Nov 07 16:44:12 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2112552063640997984",
+        "text": "感谢分享，我说一下我在上一个版本 baocut 用 GPUI 踩的坑。\n\nGPUI 挺好的，性能好，跨平台，AI 友好，但也有坑：\n1. UI 复杂一点的话大概率你要 fork 一份改一下，有些功能原生支持不了，但也不是大问题\n\n2. Accessibility 支持不太好，要支持一些键盘操作会比较麻烦（也可能我用法不对）\n\n3. Rust 编译资源消耗很大\n每次编译，无论是 CPU 占用还是磁盘占用，都巨大，对于我这样用 Mac Mini M4 16G + 1T 硬盘的来说简直太痛苦了，不敢并行多开编译任务，磁盘空间永远不够用（后来我把编译结果默认放到移动硬盘缓解了一点）\n\n4. 编译时间很长，不支持热更新。\n这点很要命，这意味着你如果改一点 UI 代码，要重新编译，然后要等少则几分钟多则十几分钟，这时间无论对于 agent 还是对于人来说都是很大的时间成本，加上不能随便多任务，会拖慢你的开发速度\n\n5. agent 验证 UI 不算太友好\ncodex、claude code 都可以借助 computer use 去验证 GPUI 的结果，但一个是慢，另一个相对成本也不低。\n\n---\n\n后来我之所以换回 Electron，就是因为 Electron App 对于 Agent 相对友好，编译快、热更新，UI 改动很快看到效果，然后 Electron App 还能跑到 agent 内置的浏览器中，agent 验证起来很快，都不需要用 computer use 去打开 electron app。\n\n至于网页渲染性能不够好的问题，我把原来一些需要复杂渲染的部分，都用 rust 编译成了 wasm，这样在浏览器运行也可以保证高性能。\n\n以前 rust 做的转录、tts 模块也都以 worker 进程的形式保留下来了，electron 需要用到的时候可以直接起 rust 编译出来的进程（Codex 也是类似），和这些进程通信，后台的性能也比纯 TypeScript + Node 要好不少。\n\n有兴趣的话可以看代码库：https://t.co/aON4AditbU",
+        "created_at": "Tue Oct 20 14:30:35 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 267011,
+          "friends_count": 1782,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 9,
+          "favorite_count": 118,
+          "reply_count": 26,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 22,
+        "reply_count": 16,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119130688737718462",
+      "text": "Mac 上也能玩《燕云十六声》了，体验还不错，接上 XBox 手柄可以用手柄玩 https://t.co/28GJqaQWm7",
+      "created_at": "Sat Nov 07 18:11:42 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2119130471929909248",
+          "url": "https://pbs.twimg.com/media/HWip78QWkAAxGE6.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 7,
+        "reply_count": 8,
         "quote_count": 0
       }
     }

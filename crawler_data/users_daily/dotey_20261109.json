@@ -1,0 +1,330 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 267797,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261109",
+  "last_updated": "2026-11-09T09:00:28.423454",
+  "tweet_count": 6,
+  "tweets": [
+    {
+      "id": "2119604083665297770",
+      "text": "RT @guyingjie129: 当你觉得困难的时候，说明不是你应该做的。\n\n当你觉得写和审 Spec 很困难，说明你不应该做；你应该转向 Goal，让 Agent 从 Goal 中派生 Spec。\n\n当你觉得写 Goal 也很累，说明你不该自己写，让 Agent 设置目标，…",
+      "created_at": "Mon Nov 09 01:32:48 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2119320757498941812",
+        "text": "当你觉得困难的时候，说明不是你应该做的。\n\n当你觉得写和审 Spec 很困难，说明你不应该做；你应该转向 Goal，让 Agent 从 Goal 中派生 Spec。\n\n当你觉得写 Goal 也很累，说明你不该自己写，让 Agent 设置目标，你来审。\n\n当你觉得描述要生成的图片很累，你可能已经通过表达对结果的预期，让 Agent 去生成了（它依然会有详细生图 prompt 存在，但作为内部过程，而非人机界面）。\n\n因此，当你觉得记忆管理很困难，说明你也不应该自己做。\n\n你甚至不应该对记忆有特殊对待，应该跟其它上下文一样，围绕特定任务和目标，提供原始材料和检索工具。\n\n然后，最重要的是，不要期待 Agent 一次弄对、一次全对，而是靠循环反馈，在多次推进和纠偏中，将结果收敛于没有明显问题的可接受形态。\n\n总的来说，当 Human in the loop 感到困难和痛苦，人自身成为瓶颈，意味着需要 Lift 到更外层，不要阻碍这个环节的 Agent 交付产能，不要让自己成为卡点。\n\n最终我们常常 Human on the loop，偶尔 in the loop，不时被 Agent 的低级错误笑掉大牙，但总是可以纠偏。\n\nLoop Agent 则更加端到端交付，通过 24 小时无间断工作的 n 倍算力投入，将中间误差从显著到不显著，从核心区域到边缘区域转移。\n\n你的系统1比你的系统2，对 AI 有益。你的系统2比不上 LLM，所有技术细节/理论细节方面都比不上。\n\n但你的系统1工作省力、可以做快速直觉判断，它指引了 Agent 收敛的方向。\n\n你的系统2训练，是为了通过过度学习，将专业知识/审美压进系统1，从而使它具备特定方面的快速反应能力。\n\n你的痛苦来自于你用自己慢启动的系统2，去扛端到端交付的某个节点，你的生理限制就是瓶颈所在。\n\n你需要的是用你的系统2，为你的系统1去设计可观测、可验收材料作为任务目标。\n\n再将你自己从端到端交付环节中摘出来，让 Loop Agent 接管。然后，用你的系统1省力的反馈，调教 Loop 的迭代方向。\n\n这就是 HAI(Human-AI Interaction) 的演进方式。",
+        "created_at": "Sun Nov 08 06:46:58 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119320539005345792",
+            "url": "https://pbs.twimg.com/media/HWlWzTSaYAAf2Ph.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2119320614486048769",
+            "url": "https://pbs.twimg.com/media/HWlW3seagAEgBwG.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2119320657096056832",
+            "url": "https://pbs.twimg.com/media/HWlW6LNboAA6sxT.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2119027977233244363",
+          "text": "One of the hardest things about agent memory is deciding what to add and what NOT. If you add too much, you fill your memory with noise, while if you add too little, you forget important facts. Within the messy real world, the sweet spot is very hard to crack.",
+          "created_at": "Sat Nov 07 11:23:34 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1238019064116776960",
+            "name": "Paul Iusztin",
+            "screen_name": "pauliusztin_",
+            "description": "Senior AI Engineer • Founder @ Decoding AI • Author @ LLM Engineer's Handbook ~ I ship AI products and teach you about the process.",
+            "followers_count": 3446,
+            "friends_count": 298,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1,
+            "favorite_count": 22,
+            "reply_count": 13,
+            "quote_count": 2
+          }
+        },
+        "user": {
+          "id": "917636957861056513",
+          "name": "工业聚",
+          "screen_name": "guyingjie129",
+          "description": "AI/Agent Full-stack developer。Author of koka-ts, remesh-js, farrow-js, react-lite and react-imvc.",
+          "followers_count": 1679,
+          "friends_count": 1128,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 29,
+          "favorite_count": 132,
+          "reply_count": 12,
+          "quote_count": 4
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 29,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119614411593908536",
+      "text": "RT @vista8: 开发了一个工具，不知道如何继续打磨优化？\n\n想到大厂都有产品、设计走查验收环节。\n灵感一现，写了个AI走查提示词，发现效果很好：\n\n“你是产品经理、UX 研究员与顶级 UI 设计师的集合体，现在主动走查产品每一个页面与交互细节，无需等待指令，自行决定顺序…",
+      "created_at": "Mon Nov 09 02:13:50 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2119574943021371755",
+        "text": "开发了一个工具，不知道如何继续打磨优化？\n\n想到大厂都有产品、设计走查验收环节。\n灵感一现，写了个AI走查提示词，发现效果很好：\n\n“你是产品经理、UX 研究员与顶级 UI 设计师的集合体，现在主动走查产品每一个页面与交互细节，无需等待指令，自行决定顺序与优先级。\n\n从信息架构、用户流程、操作效率、反馈机制、视觉层级、组件一致性六个维度同步审视，发现问题立即判断严重程度，高优先级交子 Agent 修复，其余整理成可执行方案。\n\n以真实用户的认知负担与情绪体验为最终标准，目标是达到行业顶级，不是\"能用就行\"。\n\n---\nAI 会挨个功能截图，查看优化 UI 细节，比如 onboarding，功能操作 UX 等。",
+        "created_at": "Sun Nov 08 23:37:00 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119574269055377408",
+            "url": "https://pbs.twimg.com/media/HWo9kVYaoAAwVu2.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2119574412341174272",
+            "url": "https://pbs.twimg.com/media/HWo9srKaYAAn1Dt.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2119574458692423680",
+            "url": "https://pbs.twimg.com/media/HWo9vX1aUAAfXp7.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2119574515760218112",
+            "url": "https://pbs.twimg.com/media/HWo9ysbbwAASBx7.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "6690032",
+          "name": "向阳乔木",
+          "screen_name": "vista8",
+          "description": "喜欢摇滚乐、爱钓鱼的PM\n第二届GEO大会报名-11-21/22日-深圳南山\nhttps://t.co/N75cblhK9R",
+          "followers_count": 137612,
+          "friends_count": 1695,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 17,
+          "favorite_count": 198,
+          "reply_count": 92,
+          "quote_count": 14
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 17,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119615990262870187",
+      "text": "https://t.co/aq5g8ed3wI",
+      "created_at": "Mon Nov 09 02:20:07 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2119575236806910228",
+        "text": "President Trump responds to the report that Nvidia CEO Jensen Huang had an affair with an alleged Chinese spy, and he's not rushing to judgment.\n⠀\n\"I think he's an honorable guy,\" Trump tells reporters, saying he hasn't spoken to Huang about the matter and wants to hear his explanation.\n⠀\nThe president also praises Huang's work, saying he's done an \"amazing job for our country.\"",
+        "created_at": "Sun Nov 08 23:38:10 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2119575214497374208",
+            "url": "https://video.twimg.com/amplify_video/2119575214497374208/vid/avc1/1280x720/CGQoNSS5bwKE6Kuw.mp4?tag=16",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1367531",
+          "name": "Fox News",
+          "screen_name": "FoxNews",
+          "description": "Stay Ahead. Get Breaking News Here First. Download the App.",
+          "followers_count": 29447566,
+          "friends_count": 184,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 453,
+          "favorite_count": 3343,
+          "reply_count": 304,
+          "quote_count": 74
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119635780700197294",
+      "text": "中文 𝕏 之所以 “牛逼”，是因为我们不拍“马屁”",
+      "created_at": "Mon Nov 09 03:38:45 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2119629310969467053",
+        "text": "Chinese 𝕏 is 牛逼",
+        "created_at": "Mon Nov 09 03:13:03 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "44196397",
+          "name": "Elon Musk",
+          "screen_name": "elonmusk",
+          "description": "https://t.co/ZdBx5WABYx",
+          "followers_count": 241388934,
+          "friends_count": 1420,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7270,
+          "favorite_count": 76333,
+          "reply_count": 15077,
+          "quote_count": 6289
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 134,
+        "reply_count": 52,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2119653007080231393",
+      "text": "就 Gemini 产品做的那鸟样，我只能把这些当作反向指标看了。",
+      "created_at": "Mon Nov 09 04:47:12 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2119632702014132569",
+        "text": "PMs are back：Gemini 产品负责人谈 AI 时代，为什么产品判断更值钱\n\nLenny’s Podcast 对谈 @tulseedoshi ：AI 降低了实现成本，却没有降低选错方向的代价。当“能不能做出来”不再最难，做什么、什么才算好、哪些能力值得押注，就更重要。\n\nhttps://t.co/6UwNUnumLa\n\n# 不只设定指标，也要发现模型的新能力\n\nTulsee 负责 Google 前沿模型的产品工作。她指出，模型开发不像传统软件那样，按规格实现就能得到确定结果。训练需要目标与评测，但也会出现预期之外的能力。\n\n产品负责人既要检查指标，也要亲自使用模型，发现它在哪些任务中表现突出，再判断这些能力能否形成有价值的体验。只看排行榜，可能错过真正值得产品化的变化。\n\n# 判断力要靠使用和评测建立\n\n她招聘时重视持续使用模型、有自己的质量标准、能动手做评测，并愿意随能力变化调整路线的人。\n\n评测不必一开始就很大：先选 5—20 条真正关心的提示词，亲自判断结果，明确“好”的标准，再逐步扩展。这样得到的判断，比笼统地说某个模型更强更有用。\n\n模型升级后，系统提示、工具和技能也要重新测试。以前为弥补短板加上的规则，可能已经多余，甚至开始限制新能力。\n\n# 60／20／20：兼顾今天交付和未来能力\n\n她提出一种可调整的投入方式：约 60% 做当前能稳定实现的能力，20% 押注近期可能补齐的能力，另 20% 探索已经出现苗头、但尚未成熟的体验。\n\n重点不是严格照搬比例，是避免两个极端：只围绕今天的局限设计产品，或者把全部价值押在未来模型一定会进步上。",
+        "created_at": "Mon Nov 09 03:26:31 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119632683349553152",
+            "url": "https://pbs.twimg.com/media/HWpysflbsAAKekN.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1727548535816724480",
+          "name": "meng shao",
+          "screen_name": "shao__meng",
+          "description": "追踪 AI 前沿，精选解读一手技术资料\n分享 Agent 构建与 AI Coding 实践\n拆解架构、选型与企业落地案例\n前 CTO｜AI 顾问 · 企业培训\n公众号/小红书：AI 启蒙小伙伴\n合作私信 | https://t.co/H1BUv4tdyz",
+          "followers_count": 37143,
+          "friends_count": 1118,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 10,
+          "reply_count": 18,
+          "quote_count": 2
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 77,
+        "reply_count": 65,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2119675421486641652",
+      "text": "RT @ryolu_: when we can do anything,\ndo we still know what we want?\n\nthe full talk from @aiDotEngineer shanghai. every slide handmade in ke…",
+      "created_at": "Mon Nov 09 06:16:16 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119586846657454152",
+        "text": "when we can do anything,\ndo we still know what we want?\n\nthe full talk from @aiDotEngineer shanghai. every slide handmade in keynote, subs in 中文 and english https://t.co/EeyHu7l3Fc",
+        "created_at": "Mon Nov 09 00:24:18 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2119584955290595328",
+            "url": "https://video.twimg.com/amplify_video/2119584955290595328/vid/avc1/2560x1440/EwmqnwcpEXyYb2Oc.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "18233920",
+          "name": "Ryo Lu",
+          "screen_name": "ryolu_",
+          "description": "Designed @Cursor_ai, @NotionHQ, @Stripe, built startups. I make a world where anyone can make software. Aspiring k-pop idol.",
+          "followers_count": 100261,
+          "friends_count": 1848,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 87,
+          "favorite_count": 804,
+          "reply_count": 33,
+          "quote_count": 21
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 87,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

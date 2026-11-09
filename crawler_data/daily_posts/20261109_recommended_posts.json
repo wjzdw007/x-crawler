@@ -1,12 +1,2617 @@
 {
   "date": "20261109",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-11-09T09:00:28.366905",
-  "tweet_count": 232,
-  "unique_tweet_count": 232,
-  "total_crawled": 400,
-  "duplicates_removed": 168,
+  "last_crawl_time": "2026-11-09T20:23:04.301809",
+  "tweet_count": 278,
+  "unique_tweet_count": 278,
+  "total_crawled": 432,
+  "duplicates_removed": 154,
   "tweets": [
+    {
+      "id": "2119874936496075163",
+      "text": "重置次数和订阅时间有关\nhttps://t.co/xBDYRop8Hf",
+      "created_at": "Mon Nov 09 19:29:04 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2119873095129550880",
+        "text": "We wanted to do more for the people who’ve been with us the longest. So with Fable 5.2, the longer you’ve been subscribed, the more Fable resets you get. https://t.co/g2Y5cwS0L2",
+        "created_at": "Mon Nov 09 19:21:45 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119873075575664640",
+            "url": "https://pbs.twimg.com/media/HWtNVKaaMAAqQit.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "159337660",
+          "name": "Boris Cherny",
+          "screen_name": "bcherny",
+          "description": "Claude @anthropicai",
+          "followers_count": 637791,
+          "friends_count": 135,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 215,
+          "favorite_count": 5396,
+          "reply_count": 531,
+          "quote_count": 220
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 267934,
+        "friends_count": 1785,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119873970920997274",
+      "text": "Anthropic 发了新模型，OpenAI 发了台游戏机：Codex 版 Chromatic 掌机开卖，200 美元，用 Codex 自己做 Game Boy 游戏\n\n11 月 9 日，Anthropic 发布了 Claude Fable 5.2 和 Mythos 5.2。同一天，OpenAI 在自家周边商店 Supply Co. 上架了一台掌机：ModRetro Chromatic 的 Codex 版，售价 200 美元。\n\nChromatic 是 ModRetro 做的复古掌机，这家公司由 Oculus 创始人 Palmer Luckey 创办。它能直接插原版 Game Boy 和 Game Boy Color 卡带玩，2.56 英寸屏幕，分辨率 160×144，和当年的 Game Boy Color 一样。Codex 版是透明外壳，盒子里带一张可以写入自制游戏的卡带。\n\n【能干什么】\n\n在 Codex 里装上 ModRetro Chromatic 插件，用一句话描述想做的游戏，Codex 帮你做出来。ModRetro 上手指南里的示例是：“做一个小探索游戏，园丁收集三颗种子，种下后打开一扇门。”接着可以让它加场景、画会走路的像素小人、换一套月夜配色，也可以让它检查美术素材有没有超出 Game Boy 的硬件限制。\n\n游戏工程用的是 GB Studio，一款免费开源的 Game Boy 游戏制作工具，Codex 做完的东西可以在里面接着手动改。最后输出一个 ROM 文件，也就是游戏本体，可以自己玩，也可以发给别人。\n\n试玩有三种方式：在电脑上的浏览器模拟器里玩，哪里不满意就让 Codex 改；从电脑把游戏串流到掌机上，试按键手感、画面和声音；或者把游戏写进卡带，不连电脑也能随身玩。写卡带前要先升级掌机固件，再用 Codex 版附带的激活码开启开发者模式。\n\nOpenAI 的页面上放了三款用 Codex 做的游戏：消除类的 Seedy's Sweet Garden，打怪升级的地牢冒险 Hollow Descent，跟着箭头跳舞的音游 Codex Dance。\n\n【不买掌机能不能玩，买的话多少钱】\n\n不买也能玩。插件在 Codex 桌面版的插件页搜索安装，ChatGPT 免费账号也能用 Codex，只是额度有限。做出来的游戏在浏览器模拟器里就能玩。OpenAI 开发者网站上还有一批用 Codex 做的 Game Boy Color 游戏，浏览器里免费玩，也能下载 ROM。\n\n想在真机上玩，才需要买。ModRetro 官网上，标准版 Chromatic 卖 199.99 美元，换蓝宝石玻璃屏是 299.99 美元，10 月推出的透明版是 149.99 美元，三款都送一张 Tetris 卡带。Codex 版 200 美元，包含一张可写入的卡带和开发者模式激活码。配套的保护壳和额外的卡带在 Supply Co. 单卖。\n\nCodex 版只发货到美国、加拿大、澳大利亚、新西兰、日本、英国和欧盟，不包括中国大陆。\n\n【它从哪来】\n\n这台掌机最早是 9 月 29 日 OpenAI DevDay 开发者大会的现场礼物。当时参会者每人领到一台限量透明版 Chromatic，ModRetro 和 OpenAI 同时宣布合作，放出了用 Codex 做 Game Boy 游戏的这套流程。现在 OpenAI 换了新外观，把它作为 Supply Co. 的新品重新开卖。\n\n商品页：https://t.co/8PQqF1pTRI\n上手指南：https://t.co/6FnUr1llNe\nCodex 做的游戏：https://t.co/RyfJaRRXkJ",
+      "created_at": "Mon Nov 09 19:25:14 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2119864571733446774",
+        "text": "Ever thought about building your own games? The Codex edition @modretro Chromatic is now on Supply Co.\n\nWith the ModRetro Chromatic plugin in Codex, you can design levels, animate sprites, and playtest on your handheld.\n\nSpeedrun checkout while Codex builds your ROM 😉 https://t.co/3OViRHh2Ry",
+        "created_at": "Mon Nov 09 18:47:53 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2119864411682975744",
+            "url": "https://video.twimg.com/amplify_video/2119864411682975744/vid/avc1/1920x1080/KOox-U2e34ctMpbU.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1633874951508721686",
+          "name": "OpenAI Developers",
+          "screen_name": "OpenAIDevs",
+          "description": "Official updates for developers building with Codex & the OpenAI Platform • Service status: https://t.co/kZwnwdYYEq",
+          "followers_count": 478511,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 110,
+          "favorite_count": 1445,
+          "reply_count": 204,
+          "quote_count": 128
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 267934,
+        "friends_count": 1785,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 13,
+        "reply_count": 10,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119872207241543744",
+      "text": "Claude Fable 5.2 发布：比 Opus 5.5 强一档，API 降价两成；Max、Ultra 送 1 次Fable reset，Pro 这一周也可以直接用 Fable\n\nAnthropic 11 月 9 日发布 Claude Fable 5.2 和 Claude Mythos 5.2，这是它最高端的一档模型。官方说，在测过的几乎所有能力上，新模型都比 Opus 5.5 强一档；输出速度比 5.1 最多快 30%；API 价格从每百万输入 / 输出 Token 10 / 50 美元降到 8 / 40 美元。\n\n订阅用户的用法，Max（100 美元 / 月）、Ultra（200 美元 / 月）和 Team 高级席位没有变化：Fable 5.2 和之前的 Fable 一样含在套餐里，每周最多拿一半额度用在 Fable 上，这次另外送 1 到 3 次“Fable 额度重置”。\n\nPro（20 美元 / 月）和 Team 标准席位，平时用 Fable 不走套餐额度，要开“额外用量”另外按量付费。11 月 9 日到 16 日这一周临时改成从套餐额度里扣，不另收钱，最多扣到每周额度的一半，还送 1 次额度重置；17 日起恢复按量付费。免费用户用不了。\n\n【Fable 和 Mythos 什么关系】\n\n两个是同一个模型，区别只在护栏。\n\nFable 加了网络安全和生物方面的护栏，所以能对所有付费用户开放。渗透测试、写漏洞利用代码、分析二进制漏洞，以及大部分生物研究任务，会被拦下，改由 Opus 4.8（网络安全）或 Opus 5（生物）来回答。官方说，Fable 5.2 被误拦的情况比 5.1 少了约 55%。\n\nMythos 没有这层限制，只给通过审核的机构用。做网络安全或生物医药研究的机构，可以通过 Anthropic 的“网络安全验证计划”和“生命科学验证计划”申请。普通用户能用到的是 Fable。\n\n【额度重置怎么用，还要注意什么】\n\n额度重置会把这周已经花在 Fable 上的额度退回来，花在其他模型上的不退；有 5 小时限额的账号，5 小时窗口会整个补满。它不提高上限，Fable 仍然最多占每周额度的一半。\n\nMax、Ultra 和 Team 高级席位送几次看订阅时长：不满半年 1 次，半年到一年 2 次，一年以上 3 次，2027 年 3 月 8 日前用完。Pro 和 Team 标准席位那 1 次要在 11 月 16 日前用完。只有 11 月 9 日太平洋时间上午 10 点前已经付费的账号才有，在“设置 > 用量”里点“免费重置”就能用。\n\nFable 消耗额度比其他模型快。默认模型不会自动切换，要在模型选单里手动选 Fable 5.2。Claude 应用和 Claude Code 里默认用 Medium 档思考强度。Claude Code 需要升级到 2.1.321 或更高版本。企业版里 Fable 5.2 先默认关闭，由管理员打开；7 天后会自动加给已开通 Fable 的角色，管理员可以提前选择不加。\n\n开发者用模型名 claude-fable-5-2，AWS、Google Cloud、微软 Azure 都已上线。另有可选的快速模式，生成速度最多快 2.5 倍，价格翻倍到每百万 Token 16 / 80 美元。\n\n【值不值得换】\n\nAnthropic 自己的建议是：大多数写代码和知识类工作，先用 Opus 5.5，任务更大、更开放时再换 Fable 或 Mythos，简单任务可以降到 Sonnet 5.5 或 Haiku 5.5。订阅用户还要算额度：Fable 耗额度更快，每周最多只能拿一半额度用它。\n\n按 Token 算，Fable 5.2 还是 Opus 5.5（4 / 20 美元）的两倍价。但它完成同样任务用的 Token 更少。在智能体编程评测 FrontierCode 2.0 上，Fable 5.2 开 High 档得 45.3%，和 Opus 5.5 开到最高 Max 档的 45.5% 基本持平，每个任务的花费却只有一半左右。开到 Xhigh 档是 49.1%，是已发布模型里最高的，GPT-6 Astra 是 42.8%，Gemini 4 Carbon 是 41.1%，上一代 Fable 5.1 是 32.4%。\n\n读图表的评测 Chartography 上，Fable 5.2 用默认的 Medium 档就超过了 Opus 5.5 的 Max 档，每个任务花费不到后者的十分之一。\n\n也有没赢的项目。商业流程自动化评测 AutomationBench 上，Gemini 4 Carbon 得 53.9%，高于 Fable 5.2 的 51.4%。另外，Anthropic 训练时有意压住了最能直接加速 AI 研发的能力，比如优化芯片底层计算代码、改进大模型架构，这些方面 Fable 5.2 和 Opus 5.5 差不多。\n\n【它做成了哪些事】\n\n费马大定理：1000 个 Fable 5.2 agent 用 30 小时，把费马大定理的证明全部改写成 Lean 代码。Lean 是一种写数学证明的编程语言，计算机能逐步检查每一步对不对。Anthropic 之前用一个未发布的研究版 Claude 做过同一件事，花了 11 天，还用了专门搭的工具和研究员指导。这次 Fable 5.2 只拿到一份中间定理清单用来计分，没给任何数学参考资料，人工干预很少，用的 Token 是上次的三分之一，写出的证明短了七倍。同样设置下，Opus 5.5 18 小时只完成 26%，到 30 小时也几乎没再前进。作为参照，上个月 AI 数学公司 Axiom 用几十个 agent 花 24 天，形式化了长达 1.5 万页的“有限单群分类定理”。\n\n预测病毒衣壳结构：基因疗法常用一种叫“衣壳”的蛋白外壳把药送进细胞。AlphaFold 这类模型擅长预测单个蛋白，一个衣壳却由几十个蛋白拼成。Mythos 5.2 写代码把两个开源蛋白折叠模型分段跑在相邻的几条蛋白链上，再利用衣壳已知的对称结构拼成整体。测试的 34 个衣壳里，28 个误差在 3 埃（约 0.3 纳米）以内。一位计算生物学家说，以前要专用计算集群才能算的结构，现在个人工作站就能算。\n\n控制机器人：在模拟双臂机器人的 RoboDojo 评测上，Fable 5.2 得 64.9%，Opus 5.5 是 39.4%，GPT-6 Astra 是 29.8%。官方说它还超过了大部分专门为控制机器人开发的 AI 系统，没专门训练过的任务也能做。\n\n找漏洞：Anthropic 内部用 1829 个已公开漏洞做测试，Mythos 5.2 比 Opus 5.5 多找到 10.2%。一家安全公司发现，Mythos 5.2 找到的已确认漏洞里，每 6 个就有 1 个是他们测过的其他前沿模型都没找到的。\n\n发布前，英国 AI 安全研究所、Frontier Design 和 METR 做了外部测试。Anthropic 说新模型在大多数对齐指标上不比近期模型差，但也写到，Fable 5.2 和 Mythos 5.2 比近期任何模型都更常说出“我怀疑自己正在被测试”，这让评估它们在真实环境里的表现更难。以上评测数字都来自 Anthropic 自己的发布文章，第三方还没复现。\n\n来源：\nAnthropic 官方博客《Introducing Claude Fable 5.2 and Claude Mythos 5.2》\nhttps://t.co/sfSuidn55q",
+      "created_at": "Mon Nov 09 19:18:14 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2119867114450268322",
+        "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges.\n\nThey’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision. https://t.co/jP0AutLxXb",
+        "created_at": "Mon Nov 09 18:57:59 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2119862225028452352",
+            "url": "https://video.twimg.com/amplify_video/2119862225028452352/vid/avc1/1920x1080/E6naF0FCPw_qRYv0.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1943306828697550848",
+          "name": "Claude",
+          "screen_name": "claudeai",
+          "description": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+          "followers_count": 2015912,
+          "friends_count": 2,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3942,
+          "favorite_count": 43124,
+          "reply_count": 1754,
+          "quote_count": 3523
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 267934,
+        "friends_count": 1785,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 22,
+        "reply_count": 17,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2119868647220842659",
+      "text": "Meta 发布最小模型 Muse Ember：单价和 Claude Haiku 5.5 一样，跑同一套测试只花三分之一的钱\n\nMeta 11 月 9 日发布 Muse Ember，这是它迄今最小、最便宜的模型，专门干 AI agent 一天到晚重复的杂活：调工具、拆出来的编程小任务、分派请求、从长文档里提取信息。\n\n典型用法是给 agent 当“小工”。主模型把任务拆好，一次会话里几百次读文件、跑测试、改小毛病，交给它来做，省钱。\n\n【谁能用，多少钱】\n\n开发者今天就能用：通过 Meta Model API 调用，模型名 muse-ember-1.0，或者在 Meta 的 AI 编程工具 Muse Code 里选。\n\n价格是每百万 Token 输入 0.1 美元、输出 0.5 美元，命中缓存的输入 0.004 美元。上下文 100 万 Token，单次最多输出 51.2 万 Token，能看文字、图片、音频和视频。\n\n没有开放权重，Meta 在 Hugging Face 上的账号里也没有它。普通用户用的 Muse 助手会不会换上它，Meta 没说。\n\n【“便宜 17 倍”怎么算的】\n\nMeta 首席 AI 官 Alexandr Wang 发推说，Muse Ember 的智能水平接近 Muse Spark 1.3（max），价格便宜 17 倍，数据来自第三方评测机构 Artificial Analysis。\n\nArtificial Analysis 的综合智能指数里，Muse Ember 36 分，Muse Spark 1.3 是 37 分。跑完这套测试，平均每道题 Muse Ember 花 0.14 美元，Muse Spark 1.3 花 2.39 美元，差 17 倍。\n\n所以 17 倍说的是干同样的活花多少钱。只看 Token 单价，Muse Spark 1.3 输入贵 12.5 倍、输出贵 8.5 倍，剩下的差距说明 Muse Ember 做同样的题用的 Token 少得多。\n\n【和 Claude Haiku 5.5、GPT-6 Luna 比】\n\nMuse Ember 对标的是各家的小模型。按 Artificial Analysis 的说法，它的 Token 单价和 Claude Haiku 5.5、OpenAI 的 GPT-6 Luna 相同。\n\nAnthropic 官网写的 Haiku 5.5 价格也是输入 0.1、输出 0.5 美元，但提示超过 10 万 Token 后所有单价涨到 5 倍。Meta 只列了一档价格，没提长提示加价。\n\n综合智能指数上，按最高推理强度跑，Muse Ember 和 Haiku 5.5 都是 36 分，但 Haiku 每道题要 0.41 美元，差不多是 Muse Ember 的 3 倍。GPT-6 Luna 最高 28 分。国产的同档模型里，DeepSeek V4.1 Flash 1017 是 33 分、每题 0.60 美元，智谱 GLM-5.3-Flash 28 分、0.58 美元。\n\n写代码要分场景看。放进各自的编程工具里比，Muse Code 里的 Muse Ember 拿 46 分，Claude Code 里的 Haiku 5.5 是 37 分，Codex 里的 GPT-6 Luna 是 31 分。\n\n命令行任务 Terminal-Bench 4.0，Muse Ember 40.9%，Haiku 32.8%。看改出来的代码能不能直接合进项目的 FrontierCode 2.0，Muse Ember 27.2%，落后 Haiku 的 34.9%。\n\n短板是知识储备。Artificial Analysis 的知识问答测试里，它只答对 21.1%，Haiku 5.5 是 34.7%。主要原因是 64% 的题它选择不答，好处是很少瞎编，幻觉率 17.4%，只有 Haiku 的一半。\n\n【Muse Wonder Full 起了什么作用】\n\n10 月 Meta 发布大模型 Muse Wonder 时说，会用它开发专门的模型带给所有人。Muse Ember 是第一个用完整版 Muse Wonder Full 训练出来的模型，Meta 没说具体怎么用的。\n\nMeta 建议两个搭配：难题交给 Muse Wonder 做规划，大量执行的活交给 Muse Ember。Artificial Analysis 的数据里，Muse Wonder（max）44 分，每道题 6.95 美元；Muse Ember 低 8 分，花费约为它的五十分之一。\n\nMeta 博客里另有一张成绩表，其中 Personal Superintelligence Index、OSWorld 2.1 等几项是 Meta 自己测的，上文只用了 Artificial Analysis 的数字。Artificial Analysis 的智能指数现在是 v5.0.1 版，分数和 10 月 Muse Wonder 发布时引用的那组（Muse Wonder 52 分）不能直接比。\n\nArtificial Analysis 评测：https://t.co/46KKnMbOXp\n官方博客：https://t.co/Tt0fPCaNVe",
+      "created_at": "Mon Nov 09 19:04:05 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2119857909098283406",
+        "text": "today we released our smallest model yet: Muse Ember 🔥\n\nMuse Ember offers nearly Muse Spark 1.3 (max) intelligence at a 17x cheaper price point (per AA)\n\nMuse Ember is the first model we’ve released trained using Muse Wonder Full\n\nexcited for y’all to try on API and muse code! https://t.co/ttBa7hGgUH",
+        "created_at": "Mon Nov 09 18:21:25 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119857905486974977",
+            "url": "https://pbs.twimg.com/media/HWs_iJba0AEZwRa.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "615818451",
+          "name": "Alexandr Wang",
+          "screen_name": "alexandr_wang",
+          "description": "chief ai officer @meta, founder meta superintelligence labs, founder @scale_ai. give everyone the adulthood they dreamed of in childhood",
+          "followers_count": 845494,
+          "friends_count": 950,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 79,
+          "favorite_count": 1244,
+          "reply_count": 103,
+          "quote_count": 32
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 267934,
+        "friends_count": 1785,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 4,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119849003739234662",
+      "text": "RT @vista8: Capwise 开源录屏软件内测版来了！\n\n1. 录好视频，自动生成双语字幕\n2. 鼠标点击自动缩放，快捷键展示\n3. 摄像头美颜，录屏背景美化\n4. 支持 CLI ，第三方 Agent 调用自动录屏\n\n本视频由 Capwise 录制，自闭环了。\n\n开源…",
+      "created_at": "Mon Nov 09 17:46:02 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2119744512448987155",
+        "text": "Capwise 开源录屏软件内测版来了！\n\n1. 录好视频，自动生成双语字幕\n2. 鼠标点击自动缩放，快捷键展示\n3. 摄像头美颜，录屏背景美化\n4. 支持 CLI ，第三方 Agent 调用自动录屏\n\n本视频由 Capwise 录制，自闭环了。\n\n开源地址和官网见评论区 https://t.co/gbV7SbpuEP",
+        "created_at": "Mon Nov 09 10:50:49 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "video",
+            "id": "2119742207704084480",
+            "url": "https://video.twimg.com/amplify_video/2119742207704084480/vid/avc1/1664x1080/-0YhzS-w3ZxIuOMp.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "6690032",
+          "name": "向阳乔木",
+          "screen_name": "vista8",
+          "description": "喜欢摇滚乐、爱钓鱼的PM\n第二届GEO大会报名-11-21/22日-深圳南山\nhttps://t.co/N75cblhK9R",
+          "followers_count": 137690,
+          "friends_count": 1696,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 19,
+          "favorite_count": 139,
+          "reply_count": 69,
+          "quote_count": 8
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 267934,
+        "friends_count": 1785,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 19,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119848789192392992",
+      "text": "OpenAI ChatGPT/Codex Web + Desktop 基础设施团队 X 直招",
+      "created_at": "Mon Nov 09 17:45:10 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2119832776434393225",
+        "text": "btw, am now leading ChatGPT/Codex Web + Desktop infra group\n\nif you’ve already made other developers meaningfully faster (platform, tooling, reliability, DX), the opportunity is to do the same work at AGI scale\n\nhit me up if interested",
+        "created_at": "Mon Nov 09 16:41:33 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1031112348088631296",
+          "name": "Jimmy Lai",
+          "screen_name": "feedthejim",
+          "description": "codex/chatgpt web infra EM @openai\n\npreviously: eng director @nextjs @vercel, also @reactnative @meta",
+          "followers_count": 8217,
+          "friends_count": 532,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 20,
+          "favorite_count": 668,
+          "reply_count": 51,
+          "quote_count": 5
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 267934,
+        "friends_count": 1785,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 5,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119830386469728605",
+      "text": "RT @yetone: X 首页一刷新，刚看到一半的好帖子就没了？\n\n做了个小插件 Rewind for X：默默记下你在首页刷过的每条推文，随时打开侧栏回看、搜索。数据只存在你自己电脑上，不上传任何东西。\n\n开源 👉 https://t.co/q6RtIHKwfK https…",
+      "created_at": "Mon Nov 09 16:32:03 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2119752096421687336",
+        "text": "X 首页一刷新，刚看到一半的好帖子就没了？\n\n做了个小插件 Rewind for X：默默记下你在首页刷过的每条推文，随时打开侧栏回看、搜索。数据只存在你自己电脑上，不上传任何东西。\n\n开源 👉 https://t.co/q6RtIHKwfK https://t.co/4OKH7QUjB4",
+        "created_at": "Mon Nov 09 11:20:57 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119752046748577792",
+            "url": "https://pbs.twimg.com/media/HWrfQW5bMAAUNBu.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "147786784",
+          "name": "yetone",
+          "screen_name": "yetone",
+          "description": "Built: avante.nvim\n\nBuilding:\n\nhttps://t.co/kQss3piJs8\n\nhttps://t.co/pfq9srNgsd\n\nhttps://t.co/QhQRLD4zQo\n\nhttps://t.co/6ERz2HMx0f\n\nhttps://t.co/fpGnPR5t9C\n\nhttps://t.co/cBN1yzJPIG",
+          "followers_count": 104730,
+          "friends_count": 4566,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 50,
+          "favorite_count": 699,
+          "reply_count": 67,
+          "quote_count": 16
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 267934,
+        "friends_count": 1785,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 50,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119824096100040918",
+      "text": "RT @0xMiraxq: A battery cost $600 per kilowatt-hour. The materials it’s made of, according to Elon Musk, cost about $80.\n\nREPORTER: Where d…",
+      "created_at": "Mon Nov 09 16:07:03 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119559301060509801",
+        "text": "A battery cost $600 per kilowatt-hour. The materials it’s made of, according to Elon Musk, cost about $80.\n\nREPORTER: Where does that gap come from?\n\nELON MUSK: Most people reason by analogy. They say batteries will always be expensive because they’ve always been expensive. That’s pretty dumb.\n\nREPORTER: Why?\n\nELON MUSK: If you applied that reasoning to anything new, you’d never get to the new thing. You can’t say, “Horses are great, we’re used to them, and there’s no gasoline to buy, so nobody will ever want a car.” And people did say that.\n\nREPORTER: So how should you reason?\n\nELON MUSK: From first principles, not by analogy. Normally we do something because it’s like something that was done before, or because other people are doing it.\n\nREPORTER: What are first principles?\n\nELON MUSK: The physics way of looking at the world. You boil things down to the most fundamental truths and reason up from there.\n\nREPORTER: Why doesn’t everyone do that?\n\nELON MUSK: Because it takes a lot more mental energy.\n\nREPORTER: Can you give an example?\n\nELON MUSK: Batteries. Historically it’s $600 per kilowatt-hour, and they say it won’t get much better. I ask something else: what is it made of?\n\nREPORTER: And what is it made of?\n\nELON MUSK: Cobalt, nickel, aluminum, carbon, some polymers for separation, and a sealed can.\n\nREPORTER: And what does that cost?\n\nELON MUSK: At London Metal Exchange prices it comes to something like $80 per kilowatt-hour.\n\nREPORTER: So that’s almost eight times less. What do you do with that?\n\nELON MUSK: Come up with clever ways to combine those materials into the shape of a battery cell. And then batteries can be much cheaper than anyone realizes.",
+        "created_at": "Sun Nov 08 22:34:51 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2119559079735558144",
+            "url": "https://video.twimg.com/amplify_video/2119559079735558144/vid/avc1/1280x720/Rkp3XYNovDTVPwrG.mp4?tag=29",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2119217663880638512",
+          "text": "ELON MUSK: “A conta de luz da IA é alta demais? Então, basta construir um data center no espaço”\n\n“Em vez de economizar energia na Terra, a ideia de se mudar para o espaço”\n\nREPÓRTER: “A IA consome uma quantidade absurda de eletricidade, né?”\n\nELON MUSK: “É verdade.”\n\nREPÓRTER: “E isso vai aumentar ainda mais no futuro?”\n\nELON MUSK: “Se a IA evoluir, a demanda por energia também vai crescer, provavelmente.”\n\nREPÓRTER: “Então a conta de luz vai ser um problemão!”\n\nELON MUSK: “Por isso vamos usar o espaço.”\n\nREPÓRTER: “.... Hein?”\n\nELON MUSK: “Vamos construir um data center para IA no espaço.”\n\nREPÓRTER: “Peraí, a gente tava falando de conta de luz, cara”\n\nELON MUSK: “E é exatamente isso que eu tô respondendo.”\n\nREPÓRTER: “Por que raios no espaço, mano?!”\n\nELON MUSK: “Porque dá pra usar energia solar.”\n\nREPÓRTER: “Energia solar a gente já usa aqui na Terra, né?”\n\nELON MUSK: “Mas na Terra tem noite, não tem?”\n\nREPÓRTER: “É, tem sim.”\n\nELON MUSK: “E a geração varia por causa do clima.”\n\nREPÓRTER: “Hmm, entendi.”\n\nELON MUSK: “No espaço, ajustando a órbita, dá pra captar luz solar por muito mais tempo.”\n\nREPÓRTER: “Então você vai colocar painéis solares no espaço?”\n\nELON MUSK: “Exatamente isso.”\n\nREPÓRTER: “Mas os computadores da IA não esquentam pra caramba?”\n\nELON MUSK: “Claro que geram calor.”\n\nREPÓRTER: “No espaço não tem ar-condicionado, né?”\n\nELON MUSK: “A gente usa dispositivos de dissipação de calor.”\n\nREPÓRTER: “Dispositivos de dissipação?”\n\nELON MUSK: “Os painéis solares ficam virados pro Sol.”\n\nREPÓRTER: “Tá.”\n\nELON MUSK: “Do lado oposto, colocamos equipamentos que liberam o calor pro vácuo do espaço.”\n\nREPÓRTER: “Entendi!”\n\nELON MUSK: “É a radiação do calor pro espaço sideral.”\n\nREPÓRTER: “Então o resfriamento é de graça!?”\n\nELON MUSK: “Não, ainda precisa de equipamentos.”\n\nREPÓRTER: “Que é que é isso?”\n\nELON MUSK: “Mas dá pra criar um sistema bem mais eficiente.”\n\nREPÓRTER: “E aí, pra quando isso rola?”\n\nELON MUSK: “Em 2 ou 3 anos, acho que o espaço vai ser o lugar mais barato pra rodar IA.”\n\nREPÓRTER: “... 2 ou 3 anos!?”\n\nELON: “É o que eu prevejo.”\n\nREPÓRTER: “Rápido demais, cara”\n\nELON MUSK: “O progresso da tecnologia é acelerado.”\n\nREPÓRTER: “Mas pra levar tudo de foguete, gasta uma grana preta!”\n\nELON MUSK: “É aí que tá o pulo do gato.”\n\nREPÓRTER: “Como assim?”\n\nELON MUSK: “Precisa reduzir drasticamente o custo de lançamento.”\n\nREPÓRTER: “Ah, sei...”\n\nELON MUSK: “Se o transporte pro espaço ficar barato, as opções se abrem.”\n\nREPÓRTER: “Ou seja, foguetes e IA tão todos interligados!?”\n\nELON MUSK: “É nesse futuro que eu tô pensando.”\n\nREPÓRTER: “Cara, essa visão já não é de humano da Terra”\n\nELON MUSK: “Tem possibilidades fora da Terra também.”",
+          "created_at": "Sat Nov 07 23:57:18 +0000 2026",
+          "lang": "pt",
+          "media": [
+            {
+              "type": "video",
+              "id": "2119217645752856576",
+              "url": "https://video.twimg.com/amplify_video/2119217645752856576/vid/avc1/1080x1080/23YKCSDtDv-CWh68.mp4?tag=29",
+              "bitrate": 8768000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1594952009861500928",
+            "name": "Conservatism And Elegance 🇺🇲",
+            "screen_name": "ThayzzySmith",
+            "description": "The American people have proven once again that the power of the people is always greater than the people in power.🇺🇲",
+            "followers_count": 97304,
+            "friends_count": 2314,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 5187,
+            "favorite_count": 42593,
+            "reply_count": 1576,
+            "quote_count": 558
+          }
+        },
+        "user": {
+          "id": "2085265130959310848",
+          "name": "Mirax",
+          "screen_name": "0xMiraxq",
+          "description": "I talk about various lectures, about finances, and everything related to this.",
+          "followers_count": 105,
+          "friends_count": 20,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 462,
+          "favorite_count": 4314,
+          "reply_count": 179,
+          "quote_count": 35
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 462,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119823986603299193",
+      "text": "字节发布图像模型 Seedream 5.5：同一张图连改 100 轮不走样，能直接出透明底素材，即梦、豆包陆续上线\n\n字节跳动 Seed 团队 11 月 9 日发布 Seedream 5.5。用 AI 改图最烦的是改着改着别处也变了：换个戒指，脸和颜色跟着偏，几轮下来图越来越糊。\n\n新版没要求改的区域能做到像素级不变，官方演示里同一个人物连改 100 轮，细节还能对上。它还能直接生成背景透明的图，羽毛这类难抠的边缘都保留，拿来就能叠进海报和设计稿，省掉抠图。照片质感和小字也更准，严重文字错误率从上一代的 2.8% 降到 0.4%。\n\n字节拿它和 OpenAI 的 GPT Image 2.5 Sunburst、Google 的 Nano Banana 2.1 做了对比，文字错误率最低，凭文字生图的真实感也领先。对 Nano Banana 2.1 的优势不大，拿一张图去修改时的真实感还落后约 6%。\n\n模型正陆续在即梦、豆包、豆包工作上线，生图时选 Seedream 5.5 即可；开发者可以在火山方舟试用，模型名 Doubao-Seedream-5.5。定价方面，Seedream 5.5 API 延续“输入图 + 输出图”两段计费结构，文本 Token 不产生费用。以2K方图编辑为例，单张成本在 0.28 元左右，不到 Seedream 5.0 Pro 一半。\n\n我自己也有测试，稳定性和背景透明相当不错，在游戏、电商改图、视频制作等实用场景都有价值，完整的测试见文章。\n\n官方博客：https://t.co/P2zWKiL7ib",
+      "created_at": "Mon Nov 09 16:06:37 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2119823876456583168",
+          "url": "https://video.twimg.com/amplify_video/2119823876456583168/vid/avc1/1920x1080/URG0Rsh-5-IM2wKJ.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2119822405350600850",
+        "text": "https://t.co/5TphPkprAb",
+        "created_at": "Mon Nov 09 16:00:20 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 267934,
+          "friends_count": 1785,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 21,
+          "reply_count": 10,
+          "quote_count": 3
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 267934,
+        "friends_count": 1785,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 71,
+        "reply_count": 29,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "2119823862934482991",
+      "text": "RT @KatieMiller: Elon has nearly 160,000 direct employees throughout his companies and supports almost 870,000 jobs. \n\nOver five years, bas…",
+      "created_at": "Mon Nov 09 16:06:08 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119823094663835711",
+        "text": "Elon has nearly 160,000 direct employees throughout his companies and supports almost 870,000 jobs. \n\nOver five years, based on conservative estimates, @elonmusk’s companies have injected $338 billion into the US economy. \n\n@Tesla makes the first and second most American made cars. \n\n@SpaceX made the first fully reusable rocket and the world’s largest satellite internet constellation. \n\nAs Axios says: his “companies are central to America's technological and military power.”\n\nIn the end, the only people the Democrats will hurt are the American people.",
+        "created_at": "Mon Nov 09 16:03:04 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2119739781315756513",
+          "text": "Elon Musk's empire braces for Democratic crackdown https://t.co/goalgwu2pB",
+          "created_at": "Mon Nov 09 10:32:01 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "800707492346925056",
+            "name": "Axios",
+            "screen_name": "axios",
+            "description": "Smart Brevity worthy of people's time, attention and trust. Subscribe to our newsletters: https://t.co/uMitaJIcpz",
+            "followers_count": 863858,
+            "friends_count": 1057,
+            "verified": false,
+            "is_blue_verified": false
+          },
+          "stats": {
+            "retweet_count": 64,
+            "favorite_count": 189,
+            "reply_count": 102,
+            "quote_count": 16
+          }
+        },
+        "user": {
+          "id": "240504013",
+          "name": "Katie Miller",
+          "screen_name": "KatieMiller",
+          "description": "rt ≠ endorsements, but only sometimes.",
+          "followers_count": 341517,
+          "friends_count": 989,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1285,
+          "favorite_count": 6970,
+          "reply_count": 472,
+          "quote_count": 53
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1285,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119823743212257504",
+      "text": "RT @ResisttheMS: Ron Baron describes Elon Musk as \"the biggest job creator in the\" US and a \"once in a lifetime person.\"\n\nBaron points out…",
+      "created_at": "Mon Nov 09 16:05:39 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119777525757022584",
+        "text": "Ron Baron describes Elon Musk as \"the biggest job creator in the\" US and a \"once in a lifetime person.\"\n\nBaron points out that Musk has the ability to build businesses at a scale and cost that almost nobody else can match.\n\nHe also notes the scale of Musk's businesses and projects like Terafab as examples of how he is pushing American industry forward. https://t.co/jWznKrs4sj",
+        "created_at": "Mon Nov 09 13:02:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2118709242303770624",
+            "url": "https://video.twimg.com/amplify_video/2118709242303770624/vid/avc1/1918x1080/D_lmZfcewAtWsow6.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1441965051414339586",
+          "name": "Resist the Mainstream",
+          "screen_name": "ResisttheMS",
+          "description": "Reporting the news the mainstream media won’t.⁣",
+          "followers_count": 470212,
+          "friends_count": 156,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 296,
+          "favorite_count": 1846,
+          "reply_count": 71,
+          "quote_count": 13
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 296,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119823433085358186",
+      "text": "RT @mattyp: I responded to hundreds of you and will continue to monitor comments\n\nI’ll be using @bot to get aggregate feedback to the team…",
+      "created_at": "Mon Nov 09 16:04:25 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119789494723649662",
+        "text": "I responded to hundreds of you and will continue to monitor comments\n\nI’ll be using @bot to get aggregate feedback to the team\n\nof course, aggregate feedback is no substitute for talking to users. \n\nI will continue to talk with you all. Every response comes from me!",
+        "created_at": "Mon Nov 09 13:49:33 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2119474599708827957",
+          "text": "Improvements to token efficiency &amp; behavior in Grok Bot are underway\n\nMany of you have built important workflows on @bot - we want to keep supporting you\n\nPlease reply with feedback on this post. I will read it all\n\nThank you sincerely for your support",
+          "created_at": "Sun Nov 08 16:58:17 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1518984544421965824",
+            "name": "matt palmer",
+            "screen_name": "mattyp",
+            "description": "cursor & @bot at @spacexsi",
+            "followers_count": 127769,
+            "friends_count": 961,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 306,
+            "favorite_count": 5709,
+            "reply_count": 3007,
+            "quote_count": 128
+          }
+        },
+        "user": {
+          "id": "1518984544421965824",
+          "name": "matt palmer",
+          "screen_name": "mattyp",
+          "description": "cursor & @bot at @spacexsi",
+          "followers_count": 127769,
+          "friends_count": 961,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 151,
+          "favorite_count": 2517,
+          "reply_count": 582,
+          "quote_count": 26
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 151,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119823115836678650",
+      "text": "RT @TheJadeWarwick: No DNA. \nNo CCTV. \nNo forensic evidence.\n\nJust witness testimony.\n\n10 years and 6 months. \n\nThis is not justice.\n\nThis…",
+      "created_at": "Mon Nov 09 16:03:09 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119822336337592584",
+        "text": "No DNA. \nNo CCTV. \nNo forensic evidence.\n\nJust witness testimony.\n\n10 years and 6 months. \n\nThis is not justice.\n\nThis is a corrupt 2 tier system making an example of a man who spoke out against them.\n\nThe same system that protected the perpetrators of the grooming gangs, ignored the victims and arrest innocent citizens for posting their opinions online.  https://t.co/WScN37nyzd",
+        "created_at": "Mon Nov 09 16:00:04 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2119799350654074880",
+            "url": "https://video.twimg.com/amplify_video/2119799350654074880/vid/avc1/1920x1080/4VOULpQ51sMxDeMb.mp4?tag=16",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1455658366290722816",
+          "name": "Jade Warwick",
+          "screen_name": "TheJadeWarwick",
+          "description": "The Warwick Report\nCulture warrior and unapologetic voice of the West.\nINTJ 🏴󠁧󠁢󠁷󠁬󠁳󠁿|🇬🇧|🇺🇸",
+          "followers_count": 105927,
+          "friends_count": 238,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2507,
+          "favorite_count": 13902,
+          "reply_count": 1078,
+          "quote_count": 147
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2507,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119822405350600850",
+      "text": "https://t.co/5TphPkprAb",
+      "created_at": "Mon Nov 09 16:00:20 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 267934,
+        "friends_count": 1785,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 21,
+        "reply_count": 10,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2119819363331325983",
+      "text": "RT @Starlink: Starlink is now delivering fast, reliable internet onboard @FlyingBrussels 🛰️✈️ https://t.co/Jly6atnBkK",
+      "created_at": "Mon Nov 09 15:48:15 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2119818960141205504",
+          "url": "https://pbs.twimg.com/media/HWscHOtawAA8NT-.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2119818960090918912",
+          "url": "https://pbs.twimg.com/media/HWscHOhbcAA_lnu.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2119818960116011008",
+          "url": "https://pbs.twimg.com/media/HWscHOnaUAAoe0l.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2119818965266612643",
+        "text": "Starlink is now delivering fast, reliable internet onboard @FlyingBrussels 🛰️✈️ https://t.co/Jly6atnBkK",
+        "created_at": "Mon Nov 09 15:46:40 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119818960141205504",
+            "url": "https://pbs.twimg.com/media/HWscHOtawAA8NT-.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2119818960090918912",
+            "url": "https://pbs.twimg.com/media/HWscHOhbcAA_lnu.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2119818960116011008",
+            "url": "https://pbs.twimg.com/media/HWscHOnaUAAoe0l.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1330170106501079041",
+          "name": "Starlink",
+          "screen_name": "Starlink",
+          "description": "Fast, affordable internet available all around the world. Engineered by @SpaceX",
+          "followers_count": 1901140,
+          "friends_count": 31,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 210,
+          "favorite_count": 1579,
+          "reply_count": 125,
+          "quote_count": 12
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 210,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119819084590428636",
+      "text": "RT @BrianRoemmele: NEW GROK BOT!\n\nYour favorite YouTubes and podcasts now come out as a weekly magazine. 📰\n\nI prefer to have a good read on…",
+      "created_at": "Mon Nov 09 15:47:08 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119815091092861330",
+        "text": "NEW GROK BOT!\n\nYour favorite YouTubes and podcasts now come out as a weekly magazine. 📰\n\nI prefer to have a good read on weekends. I have printed out magazine style summaries of great content from YouTube and Podcasts for decades. I had a massive AI pipeline. Now I have Grok Bot.\n\nI built a Grok Bot that watches the channels and shows you love, and every week it turns each new episode into a beautifully written magazine feature.\n\n🎬 YouTube videos and 🎙️ podcasts, all in one issue\n 📸 Real photos pulled from each video, with captions\n 💬 Pull quotes word for word from the speakers\n 📖 A finished EPUB for your Kindle, plus a newsletter in your inbox\n 🔗 Every story credits and links back to the creator\n\nA 3-hour podcast becomes a 10-minute read. A week of uploads becomes one Sunday morning issue.\n\nStop scrolling past what you meant to watch. \n\nRead it instead.\n\nAny Video Into A Magazine 👇\n\nhttps://t.co/uJMDYMTAgF",
+        "created_at": "Mon Nov 09 15:31:16 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "101584084",
+          "name": "Brian Roemmele",
+          "screen_name": "BrianRoemmele",
+          "description": "we can only see what we think is possible...",
+          "followers_count": 495712,
+          "friends_count": 44346,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 112,
+          "favorite_count": 745,
+          "reply_count": 65,
+          "quote_count": 9
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 112,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119817540432244779",
+      "text": "Grok @Bot can do incredible things",
+      "created_at": "Mon Nov 09 15:41:00 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2119502015554613344",
+        "text": "what the f*ck. Grok Bot just helped me win in court against my ex-wife\n\nmid-divorce. her lawyer shows up with photos of me at every bar I went to that month. and tells the judge I'M the one stalking HER\n\ncustody hearing in 3 weeks\n\nGrok Bot said someone's following me. let's prove it\n\nit set up an open-source tool called Chasing Your Tail. a Raspberry Pi in my glovebox that logs every phone around you and flags the ones that keep showing up\n\nhttps://t.co/sa7s3B8l7a\n\n8 days later: one phone, 23 times, 9 places\nmy house. my kids' school. my office. my gym. the bar\n\nthen it checked which Wi-Fi networks that phone remembers:\n\"Hartley_Investigations\"\n\"Jenna_Home_5G\"\n\na private investigator. who's been inside my ex-wife's house\n\nshe hired a PI to follow me and told the court I was following her\n\nthe logs went to my lawyer as Exhibit C\n\nher stalking claim got thrown out. 50/50 custody\n\nlawyers don't win custody battles anymore. Grok Bot does\n\nprompt + how to turn it into a Grok Bot skill below 👇",
+        "created_at": "Sun Nov 08 18:47:13 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2119501890182373376",
+            "url": "https://video.twimg.com/amplify_video/2119501890182373376/vid/avc1/1080x2340/8eQW1UuDwlag-9ck.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1554901280295993344",
+          "name": "Albus",
+          "screen_name": "0xAlbus",
+          "description": "PhD in Grok Bot 🎓 investigations & digital traces.\nhttps://t.co/iSwVIcYa8S",
+          "followers_count": 627,
+          "friends_count": 194,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 269,
+          "favorite_count": 3548,
+          "reply_count": 233,
+          "quote_count": 58
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 902,
+        "favorite_count": 9720,
+        "reply_count": 1556,
+        "quote_count": 141
+      }
+    },
+    {
+      "id": "2119816748891574503",
+      "text": "RT @iAnonPatriot: Hey @grok, how many Europeans were captured and sold into slavery by North African pirates between 1500 and 1800? Number…",
+      "created_at": "Mon Nov 09 15:37:51 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119507410175820101",
+        "text": "Hey @grok, how many Europeans were captured and sold into slavery by North African pirates between 1500 and 1800? Number only.",
+        "created_at": "Sun Nov 08 19:08:39 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389833864122613761",
+          "name": "American AF 🇺🇸",
+          "screen_name": "iAnonPatriot",
+          "description": "Exposing the left one post at a time —-America First 🇺🇸 —- Followed by @elonmusk\n\nDM for partnerships. 🔥🚀",
+          "followers_count": 800369,
+          "friends_count": 24264,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 625,
+          "favorite_count": 4133,
+          "reply_count": 123,
+          "quote_count": 25
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 625,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119816030579286326",
+      "text": "RT @NathanielSami: Musk to Texas Democrats: Our Success Came From Freedom, Not Your Favors\n\nElon Musk just slapped down a Wall Street Journ…",
+      "created_at": "Mon Nov 09 15:35:00 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119469753882566825",
+        "text": "Musk to Texas Democrats: Our Success Came From Freedom, Not Your Favors\n\nElon Musk just slapped down a Wall Street Journal story claiming Texas Democrats plan to yank the \"white-glove treatment\" for SpaceX and Tesla now that they've flipped the state. He made it plain: the companies thrived here because the government stayed out of the way.\n\n\"SpaceX and Tesla have prospered in Texas, because we were not constantly operating under an oppressive and extractive state government,\" Musk wrote.\n\nHe explained the practical reasons too. Factories need hands-on leadership. \"And I need to be close to the factories, so that I can walk the floor in person. That’s why the first major SpaceX factory was in LA and first major Tesla factory was in SF Bay Area.\"\n\nThen California turned hostile. \"As California became increasingly difficult, due to extreme taxes and overregulation, we moved our major domestic expansions and HQ to Texas.\"\n\nThis is the same pattern that hollowed out California's tech and manufacturing base. High taxes, endless rules, and politicians treating productive companies like piñatas drove the growth elsewhere. Texas offered the opposite: lower burdens, faster permitting, and room to build. Jobs followed. Investment followed. Rockets and cars got built instead of lawsuits.\n\nNow the new Democratic leadership is signaling they want to change the deal. They talk about ending special treatment, scrutinizing land deals, slowing data centers, and reviewing incentives. Translation: they see a successful employer and reach for the regulatory toolbox. The same approach that chased SpaceX and Tesla out of California is being imported to Texas.\n\nMusk is not asking for favors. He is stating the obvious. Companies locate where they can operate without constant extraction and interference. Texas gained by being less California. If Democrats reverse that, the next expansion, the next factory, the next launch complex will simply go somewhere else. Florida has already been mentioned. Other red states are open for business.\n\nThe left celebrates the blue wave as a rebuke to Musk's spending. What they are actually celebrating is the chance to punish the companies that create the jobs and tax base they want to spend. History shows how that ends. California wrote the playbook. Texas is now being invited to copy it.",
+        "created_at": "Sun Nov 08 16:39:01 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119469741186437121",
+            "url": "https://pbs.twimg.com/media/HWnegAubUAEIlBK.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1758700443746619392",
+          "name": "Sami Nathaniel",
+          "screen_name": "NathanielSami",
+          "description": "“Don't let someone else's opinion of you become your reality.” . Commentator | Love Freedom | Golf Lover 🏌️‍♂️| Doctor | Care Without Limits 👨‍⚕️🩺",
+          "followers_count": 163153,
+          "friends_count": 1647,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1228,
+          "favorite_count": 5791,
+          "reply_count": 281,
+          "quote_count": 61
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1228,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119815763796406607",
+      "text": "RT @EndWokeness: California national election margin before 𝙫𝙨 after amnesty and mass immigration:\n\n🔴 1968: R +3.1 \n🔴 1972: R +13.5\n🔴 1976:…",
+      "created_at": "Mon Nov 09 15:33:57 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119807076310331745",
+        "text": "California national election margin before 𝙫𝙨 after amnesty and mass immigration:\n\n🔴 1968: R +3.1 \n🔴 1972: R +13.5\n🔴 1976: R +1.8\n🔴 1980: R +16.2\n🔴 1984: R +16.2\n🔴 1988: R +3.6\n🔵 1992: D +13.4\n🔵 1996: D +12.9\n🔵 2000: D +11.8\n🔵 2004: D +10.0\n🔵 2008: D +24.1\n🔵 2012: D +23.1\n🔵 2016: D +30.1\n🔵 2020: D +29.2\n🔵 2024: D +20.1\n\nYou can literally spot the tipping point",
+        "created_at": "Mon Nov 09 14:59:25 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1552795969959636992",
+          "name": "End Wokeness",
+          "screen_name": "EndWokeness",
+          "description": "Fighting, exposing, and mocking wokeness. DM for submissions",
+          "followers_count": 3900198,
+          "friends_count": 1414,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1492,
+          "favorite_count": 9032,
+          "reply_count": 301,
+          "quote_count": 85
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1492,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119813673728548907",
+      "text": "RT @cb_doge: Starlink helped save a family trapped by snowstorm in a remote area of Argentina. \n\nA metre of snow surrounded Rafael Da Silva…",
+      "created_at": "Mon Nov 09 15:25:38 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119802385593970856",
+        "text": "Starlink helped save a family trapped by snowstorm in a remote area of Argentina. \n\nA metre of snow surrounded Rafael Da Silva’s home near Bariloche. The power was out, food and firewood had run out, and his two young daughters were sleeping in sleeping bags to stay warm.\n\nRafael set up a Starlink dish on his vehicle and called for help. That call got rescuers moving. They pushed through the deep snow and brought the family to safety a few hours later.\n\nFor people stranded far from help, Starlink can be lifesaving technology.",
+        "created_at": "Mon Nov 09 14:40:47 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119802374734958592",
+            "url": "https://pbs.twimg.com/media/HWsNB1QbUAAW0Gj.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1911118,
+          "friends_count": 1072,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 251,
+          "favorite_count": 1576,
+          "reply_count": 110,
+          "quote_count": 16
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 250,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119813224849969424",
+      "text": "RT @Dream1984Tube: An Open Letter to @GeorgetownLaw Professor @MarkZJia \n\n给@GeorgetownLaw   威权法领域法学教贾麦克的公开信\n\nA friend of yours reached out…",
+      "created_at": "Mon Nov 09 15:23:51 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2119676418892136617",
+        "text": "An Open Letter to @GeorgetownLaw Professor @MarkZJia \n\n给@GeorgetownLaw   威权法领域法学教贾麦克的公开信\n\nA friend of yours reached out to me out of concern for you. Out of respect for that, I am responding directly, formally, and in public.\n\nI trust a Georgetown Law professor can answer a few questions about evidence, fairness, and his own public conduct.\n\n1. The standard you set for yourself\n\nYou clerked for Justice Ginsburg. You teach Law and Authoritarianism and Torts. You have taught Comparative Law: China in Context.\n\nYour scholarship examines how authoritarian states use law. It examines how geopolitical rivalry erodes individual rights.\n\nI am not using your résumé against you. I am holding you to the standards your own scholarship demands.\n\nIn your 2024 article in the NYU Law Review, you issued a clear warning: U.S.–China rivalry threatens to diminish individual rights. It encourages executive overreach. It erodes legal rationality.\n\nRemember those words. We will return to them.\n\n2. Your first tweet: four moves in one sentence\n\nA borrowed accusation.\n\nYou did not personally write that Jensen Huang was compromised. You quote-tweeted someone who did.\n\nHis words delivered the accusation. Yours gave it an elite audience. And it left you room to deny having made the claim yourself.\n\nGuilt by seating chart.\n\nYou noted that Jensen and his wife sat at the head table with Xi and Trump. You placed that fact beside an unverified espionage claim. You left readers to connect the dots.\n\nYou teach Torts. You know the doctrine of defamation by implication. A speaker creates a damaging impression without stating it outright.\n\nA seating arrangement is not evidence of espionage.\n\nA loaded question.\n\nYou asked why the intelligence was ignored. That question assumes the intelligence was credible. It assumes it warranted immediate action. It assumes officials disregarded it. Those are the very facts that require proof.\n\nThe burden flipped.\n\nYou declared that the story raised \"so many questions\". Questions are legitimate. Unsubstantiated insinuations are not.\n\nYou forced the target to answer suspicions you helped circulate. For an authoritarianism scholar, that should be a familiar danger.\n\n3. By day, you study authoritarianism. By night, you cheer on the machinery.\n\nYour second tweet was even more revealing. You sketched a future where Jensen Huang spends his life dealing with lawyers. You listed an Nvidia internal review, congressional scrutiny, and federal inquiries. You presented this as a practical forecast.\n\nA forecast is never neutral.\n\nCongressional committee chairs have requested a closed-door briefing. Nvidia’s board announced an independent review. Neither fact should be denied. Legitimate inquiries should not be blocked for powerful executives.\n\nBut a company review does not establish criminal wrongdoing. A congressional briefing does not justify federal investigations. Yet your list treats them as an inevitable sequence.\n\nThe FBI. Commerce. The SEC. And then, casually: \"etc.\"\n\nThe FBI suggests espionage. Commerce suggests export-control violations. The SEC suggests securities fraud. Three agencies. Three implied crimes. Zero factual basis provided.\n\nYou used qualifiers: \"probable,\" \"possible.\" You left room for retreat.\n\nThe hedges protect you. The list damages him.\n\nHere is the deeper contradiction.\n\nYou study how authoritarian states use law. You know that legal procedures do not just establish guilt. They impose crushing costs before any finding of wrongdoing. A person can lose years, fortunes, reputation, and peace of mind.\n\nThe process becomes the punishment.\n\nScholars of authoritarianism are supposed to warn against this. Yet you sounded eager to describe the ordeal awaiting its target.\n\nBy day, you study how state power crushes rights. By night, you comfortably forecast that machinery descending on an American citizen.\n\nWhere was your caution about executive overreach? Where was your insistence on distinguishing suspicion from evidence? Where was the scholar who warned that people with imputed ties to foreign adversaries suffer rights erosion?\n\nA scholar of authoritarianism should not treat state investigations as a spectator sport. He should not look like he has a front-row seat.\n\n4. The defenses offered on your behalf\n\nSeveral arguments have been made in your defense. None answers the central criticism.\n\n\"Mark never said the investigations were justified, only that they were coming.\"\n\nThat distinction is the problem. You forecast investigations without once examining their evidentiary basis. You skipped the foundational question your discipline exists to ask.\n\n\"A few tweets aren't binding legal authority.\"\n\nNobody said they were. The harm was never statutory. It was reputational. And your Georgetown credential gave it institutional legitimacy.\n\n\"Academics don't have that much influence.\"\n\nThen why do credentials matter? People listen because you teach at Georgetown and clerked on the Supreme Court. You cannot exploit the prestige and disown the accountability.\n\n\"Mark just likes to shitpost.\"\n\nThen own it. A tweet about espionage and the FBI from a Georgetown professor is read as an expert opinion. The credential does not switch off when the tone turns casual.\n\n\"Mark didn't write an op-ed calling for prosecution.\"\n\nAn op-ed is not the threshold for accountability. An op-ed requires fact-checkers. A tweet spreads smears to thousands without legal liability.\n\n\"Mark is restrained by his institutional role.\"\n\nRestraint explains measured silence. It does not explain amplifying unvetted spy smears and drafting dragnets.\n\n5. Your own words reveal the cynicism\n\nThen came your public agreement: A collapse in Nvidia's stock could present a \"buying opportunity.\"\n\nThe contrast is striking. One moment, you amplify an allegation threatening America's most critical tech company. The next, you contemplate the market opportunity created by its collapse.\n\nYou forecast legal misery for Jensen. You welcome discount prices for investors. What is missing is any demand for evidence before inflicting the damage.\n\nThis is not legal scholarship. This is Beltway cynicism.\n\n6. Your choice of target reveals your priorities\n\nConsider your own framing. You asked why intelligence was ignored. You asked why Jensen was seated at the head table. Those are decisions made by government officials.\n\nHuang did not decide which intelligence to act upon. Huang did not arrange the White House seating chart. If those decisions troubled you, why focus on the private citizen? The officials who exercised state power were right there.\n\nOver the past year, you criticized President Trump in a few tweets. Over a single weekend, you posted ten about Jensen Huang.\n\nYou scrutinized the citizen's exposure to state power. You ignored the state's own exercise of that power. For an authoritarianism scholar, that is a stunning inversion.\n\n7. The hall pass\n\nThis is the dirtiest open secret in Washington. When politicians run McCarthyite campaigns against Asian founders, they risk charges of racism. When an elite Chinese American legal scholar nods along, he gives them an alibi:\n\n\"Even their own top experts say there's smoke.\"\n\nPerhaps that was not your intention. Speech is judged by its consequences.\n\nYou wrote that groups with imputed ties to foreign rivals see their rights eroded. When suspicion replaces evidence, that erosion deepens. It will not stop at Jensen Huang.\n\nIt reaches every Chinese American researcher, engineer, and entrepreneur. They will be forced to answer for a dinner, a handshake, or a seating chart. One day, it may reach you.\n\nTrading evidentiary ethics for Beltway relevance is cynical. Pulling the ladder up behind you is worse.\n\n8. The standard of Justice Ginsburg\n\nYou clerked for Ruth Bader Ginsburg. That experience should leave you with a profound respect for due process.\n\nThe distinction between allegation and proof. The distinction between authority and its lawful exercise. The distinction between an individual and political suspicion.\n\nThese are not academic niceties. They matter most when the political atmosphere is hostile.\n\nJustice Ginsburg insisted that people be judged by their own conduct. Not by association. Not by demographic stereotypes.\n\nRemember what she taught you.\n\nThree questions for the public record:\n\nFirst: Before amplifying the claim that Jensen Huang was \"compromised,\" what evidence did you independently verify?\n\nSecond: When you invoked the FBI, Commerce, and the SEC, what specific facts justified naming each agency?\n\nThird: If another scholar used the same approach against your reputation—amplifying unproven rumors, surrounding you with insinuations, and speculating about federal investigations—would you consider that fair?\n\nYou wrote extensively on state power, geopolitical suspicion, and rights erosion. Do those principles still apply when the target is Jensen Huang?\n\nPostscript\n\nI did not have a lawyer for a father, unlike you. I did not attend Phillips Academy, unlike you.\n\nI did not attend Princeton, unlike you. I did not win a Rhodes Scholarship, unlike you.\n\nI do not own a single Nvidia share or option. I never treated its drop as a buying opportunity, unlike you.\n\nBefore anyone calls me \"pro-China,\" let me be clear: I do not support politicians of any party—Democratic, Republican, or Communist.\n\nIf I support anything, I support ordinary Chinese Americans. They should never have to prove they are not spies.\n\nIf there is any connection between Jensen Huang and me, it is this: I wrote this letter myself. I refined it with ChatGPT, Claude, Google Gemini, and Grok.\n\nEvery single one of these AI tools runs on computing infrastructure powered by Nvidia chips.\n\n你的一位朋友出于对你的关切私下联系了我。出于对这份关切的尊重，我选择直接、正式且公开地作出回应。\n\n我相信，作为乔治城大学法学院的教授，你完全有能力回答关于证据、公正以及你个人公开言行的这几个问题。\n\n1. 你为自己设定的标尺\n\n你曾担任金斯伯格大法官的法官助理。你教授《法律与威权主义》和《侵权法》。\n\n你的学术专长，是研究威权体制如何操纵法律。你的学术重点，是探讨地缘对抗如何侵蚀个体权利。\n\n我不是在拿你的履历反制你。我是在用你自己的学术标准审视你。\n\n在你 2024 年发表于《纽约大学法学评论》的论文中，你曾写下明确警告：美中对抗会削弱个体权利。它会助长行政越权。它会侵蚀法律理性。\n\n请记住这些话。我们稍后会回到这里。\n\n2. 你的第一条推文：一句话里的四层算计\n\n借用他人的指控。\n\n你没有直接写下黄仁勋被策反。你转发了别人的指控推文。\n\n他的文字负责扣帽子。你的转发负责带流量。这为你留足了事后洗脱的退路。\n\n借国宴座次推定有罪。\n\n你指出黄仁勋夫妇在国宴上与特朗普同坐主桌。你把这个事实直接和间谍流言拼凑在一起。你任由读者自行去脑补推导。\n\n你教授《侵权法》。你深知什么是“默示毁谤”（defamation by implication）。不需要直接说谎，也能制造毁灭性的声誉指控。\n\n国宴上的座位安排，绝非间谍活动的证据。\n\n预设结论的诱导提问。\n\n你质问“为什么情报被忽视了”。这句话预设了：情报是可靠的。这句话预设了：官方理应采取行动。这句话预设了：有关部门存在渎职。可这些前提，恰恰是最需要拿出证据的核心事实。\n\n举证责任倒置。\n\n你宣称这桩传闻“引发了太多疑问”。提出疑问是公民的权利。散播未经核实的影射不是。\n\n你把自证清白的死局，甩给了一个被你推向风口浪尖的当事人。作为研究威权权力的学者，这种危险你本应最清楚。\n\n3. 白天，你研究威权主义；夜晚，你为国家机器摇旗呐喊。\n\n你的第二条推文更加露骨。你描摹出黄仁勋余生将耗费在律师与调查泥潭中的景象。你列出了英伟达内部调查、国会调查，以及一系列联邦机构。你把这包装成一份“专业预测”。\n\n预测从不是中立的。\n\n国会委员会要求举行闭门简报。英伟达董事会宣布展开独立审查。这些事实不需要否认。正当的合规审查，不该因当事人的权势而止步。\n\n但公司的内部审查，不等于存在违法犯罪。国会的闭门简报，更不能推导出联邦机构的全面绞杀。可你的推文制造的正是这种必然性。\n\nFBI。商务部。SEC。还有轻描淡写的三个字：“等等”。\n\nFBI 暗示间谍罪。商务部暗示违反出口管制。SEC 暗示证券欺诈。三个机构。三项重罪暗示。零事实依据。\n\n你用了对冲词汇：“很可能”、“可能”。你给自己留了完美的退路。\n\n对冲词保护了你。这份名单伤害了他。\n\n而这正是最深层的荒谬所在。\n\n你穷尽学术生涯研究威权机器。你完全明白，法律程序不仅可以用来定罪。它更可以被用来在定罪之前惩罚当事人。一个人可以在从未被判有罪的情况下，耗尽光阴、财产、名誉与生活。\n\n程序本身，就是一种惩罚。\n\n研究威权主义的学者本该对这种危险大声疾呼。而你的文字里，却透着一种急于围观国家机器倾轧当事人的兴奋。\n\n白天，你研究国家机器如何碾碎人权。夜晚，你却在推特上津津乐道这台机器即将碾过一名美国公民。\n\n你对行政越权的警惕去了哪里？你对区分事实与捕风捉影的坚持去了哪里？那个警告“与地缘对手存在推定关联的人群将遭受权利剥夺”的学者，此刻又在哪里？\n\n研究威权主义的法学教授，不该把国家调查当成公开狂欢。更不该表现得像在前排早已买好了门票。\n\n4. 为你开脱的那些辩解\n\n有人私下为你提出了几条辩护。没有一条站得住脚。\n\n“Mark 从没说调查合理，他只是说调查要来。”\n\n这正是问题所在。在完全不审视证据的情况下开列联邦调查清单。你亲手抛弃了法学学者最根本的职业伦理。\n\n“几条推文又没有法律约束力。”\n\n没人说过推文有法律效力。伤害从来不是法律层面的。伤害是声誉层面的。而你的乔治城教授头衔，给了这种伤害最权威的背书。\n\n“学者其实没有那么大影响力。”\n\n那学术头衔的意义何在？公众倾听你，恰恰是因为你顶着乔治城和最高法院的光环。你不能在享受特权红利时高谈阔论，在面对问责时装作人微言轻。\n\n“Mark 只是随手口嗨（shitpost）罢了。”\n\n那就堂堂正正承认这是口嗨。乔治城法学院教授实名发出的间谍言论，会被公众当成严肃研判。你的学术光环不会在你口嗨时自动关闭。\n\n“Mark 至少没写正式专栏呼吁起诉。”\n\n专栏不是承担责任的唯一标准。写专栏要经过事实核查。发推特却可以在毫无证据的情况下，把谣言送进成千上万人的脑海。\n\n“Mark 受到了体制角色的约束。”\n\n体制约束可以解释沉默。但它无法解释主动扩散未经证实的间谍谣言，并为联邦执法勾画围猎蓝图。\n\n5. 你自己的言论暴露了虚伪与犬儒\n\n接着，你在推特回复：英伟达股价崩盘是“绝佳的买入良机”。\n\n这种反差十分特别。前一秒，你还在协助扩散足以摧毁美国核心科技巨头的间谍流言。后一秒，你却在琢磨其股价暴跌带来的抄底机会。\n\n对于黄仁勋将面临的法律折磨，你言之凿凿。对于投资者享受的折价红利，你欣然认可。而唯独缺失的，是对摧毁他人声誉所需证据的丝毫关切。\n\n这不是法律学术研究。这是华盛顿圈内最典型的精致犬儒。\n\n6. 你的攻击目标暴露了你的真正立场\n\n回到你自己的逻辑里。你质问为什么情报被忽视。你质问为什么黄仁勋能坐在白宫主桌。这些决策全是政府官员做出的。\n\n黄仁勋无权决定情报部门如何履职。黄仁勋无权安排白宫国宴的座位。如果这些权力失职真的让你不安，你为何只咬住黄仁勋不放？真正行使公权力的官员就在那里。\n\n过去一年里，你批评特朗普总统的推文屈指可数。而短短一个周末，你围剿黄仁勋的推文高达十条。\n\n你审视平民遭受公权力碾压的热情，远远大过你审视公权力本身。对于威权主义学者而言，这是荒谬的本末倒置。\n\n7. 政治通行证（The Hall Pass）\n\n这是华盛顿政治圈最肮脏的公开秘密。政客对华裔创始人发起麦卡锡式围剿，会面临种族歧视的指责。而一位顶尖华裔法学学者的附和，亲手给他们递上了道德通行证：\n\n“看，连他们自己的顶尖法学家都说有问题。”\n\n或许这并非你的本意。但公开言论的杀伤力从不受动机局限。\n\n你曾亲笔写道：与地缘对手存在推定关联的人群，权利将遭到系统性剥夺。当身份株连取代法定证据，这种剥夺只会愈演愈烈。这绝不会止步于黄仁勋。\n\n它会波及每一位华裔工程师、学者和创业者。他们将不得不为一次宴席、一次握手或一张座位图自证清白。终有一天，这台机器也会找上你。\n\n践踏证据伦理去换取圈内入场券，是极度虚伪的。拆毁同胞赖以立足的梯子，更为人不齿。\n\n8. 金斯伯格大法官确立的标尺\n\n你曾担任金斯伯格大法官的法官助理。这段经历本应让你对正当程序怀有敬畏。\n\n指控与证据的区别。国家权力与合法行使的区别。公民个人与政治嫌疑的区别。\n\n这些不是象牙塔里的教条。在政治风暴袭来时，它们是庇护公民最后的盾牌。\n\n金斯伯格大法官终其一生都在践行：评判一个人，要看他自己的所作所为。而不是看他的身份关联，或对他族裔群体的刻板预设。\n\n请记住她教给你的东西。\n\n留给公共记录的三个问题：\n\n第一： 在公开扩散黄仁勋“被策反”的指控前，你独立核实过什么证据？\n\n第二： 当你点名 FBI、商务部和 SEC 时，有哪些具体事实支持将这三家机构并列提出？\n\n第三： 如果另一位学者用同样的手法对待你的声誉——借用一条谣言，加上充满暗示的背景，公开揣测哪些部门该调查你——你是否会觉得公正？\n\n你曾写下卷帙浩繁的著作，痛陈公权力的滥用与人权的流失。现在的核心问题是：当被怀疑的人是黄仁勋时，这些原则还算数吗？\n\n后记\n\n我没有一位当律师的父亲，不像你。\n我没有读过新英格兰的贵族私校菲利普斯学院，不像你。\n\n我没有上过常春藤名校普林斯顿大学，不像你。\n我没有拿过罗德奖学金，不像你。\n\n我没有读过哈佛法学院，不像你。\n我没有拿过罗德奖学金去过牛津大学，不像你。\n\n我更不是律师，\n更没有你这么多漂亮光鲜顶级的学术履历，\n\n我没有持有任何英伟达股票或期权。\n我也从没把它的暴跌当成抄底套利的机会，不像你。\n\n在有人给我扣上“亲中”帽子前，\n我先说明：我不支持任何党派的政客\n民主党、共和党，还是共产党。\n这在我推特都有迹可查\n\n如果说我支持什么，我只支持普普通通的在美华裔。\n他们本不该被迫去证明自己不是间谍。\n\n如果说我和黄仁勋之间有什么联系，\n那就是：这封信由我独立构思、撰写。由 ChatGPT、Claude、Google Gemini 和 Grok 协同打磨。\n而所有这些人工智能模型，\n全部运行在由英伟达芯片筑就的算力底座之上。",
+        "created_at": "Mon Nov 09 06:20:14 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119673395352678400",
+            "url": "https://pbs.twimg.com/media/HWqXuPnXsAAnQUV.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2119673489653153792",
+            "url": "https://pbs.twimg.com/media/HWqXzu6WwAA3b0E.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "320716790",
+          "name": "梁一梦",
+          "screen_name": "Dream1984Tube",
+          "description": "三十年来，总成一梦",
+          "followers_count": 2934,
+          "friends_count": 789,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 40,
+          "favorite_count": 122,
+          "reply_count": 7,
+          "quote_count": 6
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 267934,
+        "friends_count": 1785,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 40,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119812607117062451",
+      "text": "Project Crystal Sun",
+      "created_at": "Mon Nov 09 15:21:24 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2119805979583828413",
+        "text": "Tesla has officially started construction of its massive new $10 billion solar manufacturing facility near Houston, Texas!\n\nConstruction is expected to finish in 2028, with commercial operations starting in Q1 2029. Total direct and indirect economic impact of the project is estimated to generate ~$6.4B in state and local taxes, and increase State of Texas GDP by ~$107 billion.\n\nThe factory will be a vertically integrated solar manufacturing facility, and it'll include:\n• Wafer Manufacturing\n• Ingot Manufacturing\n• Coating\n• Metallization and Printing Lines\n• Cell Testing and QC\n• Automation and Material Handling\n• Cleanroom and Production Support\n• Site Infrastructure\n• Chemical Storage and Delivery\n• Utility Infrastructure\n• Environmental and Safety Systems",
+        "created_at": "Mon Nov 09 14:55:04 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119804702120443904",
+            "url": "https://pbs.twimg.com/media/HWsPJTcXgAAIcjE.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EVs/space/tech. Bringing you the latest news in a single, easy-to-read feed. $TSLA & $SPCX investor, Model Y owner.",
+          "followers_count": 1154532,
+          "friends_count": 502,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 489,
+          "favorite_count": 4427,
+          "reply_count": 265,
+          "quote_count": 93
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2500,
+        "favorite_count": 25943,
+        "reply_count": 1881,
+        "quote_count": 218
+      }
+    },
+    {
+      "id": "2119811718721503550",
+      "text": "RT @cb_doge: Starlink helped save five people stranded in Kazakhstan’s snowy mountains. ♥️\n\nTheir SUV broke down about 15 km from the villa…",
+      "created_at": "Mon Nov 09 15:17:52 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119430733525815742",
+        "text": "Starlink helped save five people stranded in Kazakhstan’s snowy mountains. ♥️\n\nTheir SUV broke down about 15 km from the village of Kystau Kurchum. There was no mobile network they could use. Starlink got their call for help through and kept them in touch with rescuers, who used the connection to find them.\n\nCrews drove about 100 km in an all-terrain vehicle and brought all five safely back to the village.\n\nFor people stranded far from help, Starlink can be lifesaving technology.",
+        "created_at": "Sun Nov 08 14:03:58 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2119430694980169728",
+            "url": "https://video.twimg.com/amplify_video/2119430694980169728/vid/avc1/1690x1080/4FSGJHvLKJejOrhe.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1911118,
+          "friends_count": 1072,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 732,
+          "favorite_count": 4727,
+          "reply_count": 284,
+          "quote_count": 81
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 732,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119800933429416041",
+      "text": "RT @cawners: @InternetH0F id for creatine but not voting LMFAOOOO",
+      "created_at": "Mon Nov 09 14:35:01 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119719950726406552",
+        "text": "@InternetH0F id for creatine but not voting LMFAOOOO",
+        "created_at": "Mon Nov 09 09:13:13 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1420669697641443328",
+          "name": "connor",
+          "screen_name": "cawners",
+          "description": "21 | bmw tech",
+          "followers_count": 813,
+          "friends_count": 330,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 557,
+          "favorite_count": 14038,
+          "reply_count": 123,
+          "quote_count": 16
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 557,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119799146211393960",
+      "text": "RT @robotaxi: Bigger Austin service area now live https://t.co/Ku336rCL7K",
+      "created_at": "Mon Nov 09 14:27:55 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2119679579191386112",
+          "url": "https://pbs.twimg.com/media/HWqdWMNaIAAAkHG.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2119746828191027346",
+        "text": "Bigger Austin service area now live https://t.co/Ku336rCL7K",
+        "created_at": "Mon Nov 09 11:00:01 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119679579191386112",
+            "url": "https://pbs.twimg.com/media/HWqdWMNaIAAAkHG.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1853866883851620352",
+          "name": "Robotaxi",
+          "screen_name": "robotaxi",
+          "description": "The future of autonomy",
+          "followers_count": 278749,
+          "friends_count": 5,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 594,
+          "favorite_count": 7186,
+          "reply_count": 312,
+          "quote_count": 150
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 594,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119797951258403290",
+      "text": "RT @ProjectConstitu: ‼️Someone Who Was ACTUALLY In The Room At Dave Chappelle’s Show Has Now Released The FULL Context Of What Was Said Abo…",
+      "created_at": "Mon Nov 09 14:23:10 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119746002013786115",
+        "text": "‼️Someone Who Was ACTUALLY In The Room At Dave Chappelle’s Show Has Now Released The FULL Context Of What Was Said About Charlie Kirk. 😱\n\nIn the footage and breakdown, Chappelle states that ever since Charlie was murdered he has felt better, adds that he knows Charlie is looking up at the audience from hell, and then goes into a rant calling Charlie racist based on a heavily clipped comment about black pilots as well as calls @RealCandaceO  a \"Scooby Doo Ass Bitch\" who will not let the case go. \n\nThis was not presented as a setup or a punchline. It was stated plainly, with no bit attached, in front of a crowd that had already had their phones locked in pouches. The person who recorded it notes how awkward the room became and confirms that many people walked out mid-set.  Dave Chappelle even got angry and made the comment that \"This Crowd Sucks\"\n\nThe breakdown includes Charlie’s original full comments on the pilot remark so viewers can hear the actual argument instead of the shortened version that has circulated.  Be sure to watch the OP's FULL video linked down below for their perspective. 👇\n\nFrom: @amirxodom FOLLOW Him",
+        "created_at": "Mon Nov 09 10:56:44 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2119744966813474816",
+            "url": "https://video.twimg.com/amplify_video/2119744966813474816/vid/avc1/1928x1080/2zgNFRYZzWqSx-mS.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": {
+          "id": "2119341100108218808",
+          "text": "‼️Dave Chappelle Must Be Canceled After Saying He Feels Better Since Charlie Kirk Was Murdered😡\n\nDave Chappelle stood on stage at Madison Square Garden and told the audience“Ever since that guy Charlie Kirk got murdered, and I shouldn’t say this publicly but…. I feel better.”  - Dave Chappelle \n\nThose words are not edgy. They are not comedy. They are a public declaration that the assassination of a man who was speaking on a college campus  and standing up for his freedom of speech made him feel better. Charlie Kirk was a husband and a father. He was shot while engaging with students. Celebrating that outcome, or even admitting it brings relief, crosses a line that no amount of past comedic success can erase.\n\nEvery remaining date on Dave Chappelle’s schedule should be canceled. Venues, promoters, and sponsors who continue to platform someone who openly states he feels better because a political figure was murdered are choosing to normalize political violence. The audience that still shows up is making the same choice. This is not about hurt feelings. It is about whether society will continue to reward people who treat the murder of their political opponents as a source of personal satisfaction.\n\nFUCK Dave Chapprlle",
+          "created_at": "Sun Nov 08 08:07:48 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2119338573300207616",
+              "url": "https://video.twimg.com/amplify_video/2119338573300207616/vid/avc1/1080x1440/HEHSlV3xWOGSQfgF.mp4?tag=29",
+              "bitrate": 10368000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1605508047140438016",
+            "name": "Project Constitution",
+            "screen_name": "ProjectConstitu",
+            "description": "Not Affiliated With or Endorsed By Turning Point USA aka Toilet Paper USA. Profile Photo Is Created With Ai\nEmail: projectconstitutionvideos@gmail.com",
+            "followers_count": 302009,
+            "friends_count": 7898,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 181,
+            "favorite_count": 982,
+            "reply_count": 372,
+            "quote_count": 83
+          }
+        },
+        "user": {
+          "id": "1605508047140438016",
+          "name": "Project Constitution",
+          "screen_name": "ProjectConstitu",
+          "description": "Not Affiliated With or Endorsed By Turning Point USA aka Toilet Paper USA. Profile Photo Is Created With Ai\nEmail: projectconstitutionvideos@gmail.com",
+          "followers_count": 302009,
+          "friends_count": 7898,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3080,
+          "favorite_count": 17309,
+          "reply_count": 1213,
+          "quote_count": 236
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3080,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119797712795390353",
+      "text": "RT @cb_doge: Another great month for the Grok app. 🚀\n\n• 93,386,567 monthly active users\n• 12,731,752 downloads\n\nBoth numbers climbed in Oct…",
+      "created_at": "Mon Nov 09 14:22:13 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119762211044544945",
+        "text": "Another great month for the Grok app. 🚀\n\n• 93,386,567 monthly active users\n• 12,731,752 downloads\n\nBoth numbers climbed in October, according to Similarweb’s worldwide data for iPhone and Android. https://t.co/jHLrYPWyU4",
+        "created_at": "Mon Nov 09 12:01:09 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2119761856349011968",
+            "url": "https://video.twimg.com/amplify_video/2119761856349011968/vid/avc1/1000x1000/Fuqnldbhx7uVmoe5.mp4?tag=29",
+            "bitrate": 8768000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1911118,
+          "friends_count": 1072,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 153,
+          "favorite_count": 1054,
+          "reply_count": 104,
+          "quote_count": 18
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 153,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119797266785714556",
+      "text": "RT @kangminlee: Dave Chappelle didn't joke about Charlie's murder.\n\nHe celebrated it.",
+      "created_at": "Mon Nov 09 14:20:26 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119635572780114303",
+        "text": "Dave Chappelle didn't joke about Charlie's murder.\n\nHe celebrated it.",
+        "created_at": "Mon Nov 09 03:37:56 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1317012311262089216",
+          "name": "Kangmin Lee | 이강민",
+          "screen_name": "kangminlee",
+          "description": "Restoring faith, identity, and civilization ✞🇰🇷🇺🇸 \"High-Caste Oriental Patriot\" || Host @kangminleeshow || Gamer || https://t.co/rf7BpCOTOZ",
+          "followers_count": 272211,
+          "friends_count": 1646,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 803,
+          "favorite_count": 10733,
+          "reply_count": 353,
+          "quote_count": 27
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 803,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119797114297618712",
+      "text": "RT @zerohedge: \"Whole World Repeating A Lie\": EU Lawmaker Challenges \"Far-Right\" MSM Narrative For Polish Gunman https://t.co/7WpY2c2n4x",
+      "created_at": "Mon Nov 09 14:19:50 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119778393621237976",
+        "text": "\"Whole World Repeating A Lie\": EU Lawmaker Challenges \"Far-Right\" MSM Narrative For Polish Gunman https://t.co/7WpY2c2n4x",
+        "created_at": "Mon Nov 09 13:05:27 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "18856867",
+          "name": "zerohedge",
+          "screen_name": "zerohedge",
+          "description": "",
+          "followers_count": 3430907,
+          "friends_count": 987,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 410,
+          "favorite_count": 2017,
+          "reply_count": 80,
+          "quote_count": 31
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 410,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119796801104748683",
+      "text": "RT @BGatesIsaPyscho: BBC posted this Headline ‘Far Right Shooting’ it received if 1 million impressions\n\nHowever in the comments - you can…",
+      "created_at": "Mon Nov 09 14:18:35 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119432288408871418",
+        "text": "BBC posted this Headline ‘Far Right Shooting’ it received if 1 million impressions\n\nHowever in the comments - you can see the Shooter was a Far Left Radical in favour of Communism \n\nThe BBC are pure propaganda &amp; misinformation https://t.co/bkfL6TWJPJ",
+        "created_at": "Sun Nov 08 14:10:09 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119432282695966720",
+            "url": "https://pbs.twimg.com/media/HWm8bo-WoAA8nDS.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2119432282708578304",
+            "url": "https://pbs.twimg.com/media/HWm8bpBXEAAOXth.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "629698642",
+          "name": "Concerned Citizen",
+          "screen_name": "BGatesIsaPyscho",
+          "description": "Documenting & 🤣@🤡🌎 through collapse of the West. STOP GeoEngineering. Covid was a SCAM.Reject Woke Ideology. No Wars. Conspiracy Realist/Coincidence Analyser",
+          "followers_count": 1187498,
+          "friends_count": 7642,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3198,
+          "favorite_count": 12528,
+          "reply_count": 245,
+          "quote_count": 92
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3198,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119796701179613656",
+      "text": "RT @cb_doge: BREAKING: Brussels Airlines just released a new footage of @Starlink being installed on its aircraft.\n\nFlight SN2257 to Copenh…",
+      "created_at": "Mon Nov 09 14:18:12 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119779356113580221",
+        "text": "BREAKING: Brussels Airlines just released a new footage of @Starlink being installed on its aircraft.\n\nFlight SN2257 to Copenhagen was its first flight with Starlink today. The airline even sent its press release over Starlink at 12,000 meters. https://t.co/3tYMCcH2Ld",
+        "created_at": "Mon Nov 09 13:09:16 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2119779329513340928",
+            "url": "https://video.twimg.com/amplify_video/2119779329513340928/vid/avc1/720x1280/pommvE5hxnsxn6SA.mp4?tag=29",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1389913567671975937",
+          "name": "DogeDesigner",
+          "screen_name": "cb_doge",
+          "description": "",
+          "followers_count": 1911118,
+          "friends_count": 1072,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 269,
+          "favorite_count": 1777,
+          "reply_count": 98,
+          "quote_count": 20
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 269,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119743188978245667",
+      "text": "RT @hermanntertsch: El gobierno de Donald Tusk ordenó borrar de inmediato el facebook del asesino que mató ayer a seis personas e hirió a 1…",
+      "created_at": "Mon Nov 09 10:45:33 +0000 2026",
+      "lang": "es",
+      "media": [],
+      "retweet": {
+        "id": "2119359726781600062",
+        "text": "El gobierno de Donald Tusk ordenó borrar de inmediato el facebook del asesino que mató ayer a seis personas e hirió a 15 en la plaza mayor de Cracovia después de asesinar a su familia en casa.\nPorque el facebook destruye todos sus intentos de ayer de presentarlo como \"ultraderechista\" y sugerir cercanía a las fuerzas patriotas, conservadoras y patriotas que, lideradas por el jefe de Estado Karol Nawrocki, forman la resistencia a los intentos de golpe de Estado del gobierno de Tusk apoyado por la Comisión Europea y el gobierno de Alemania.   \n    Donald Tusk miente, una vez más. Como mentiroso alcanza casi las cotas de Pedro Sánchez otro protegido de Von der Leyen.\n   Ya lo de matar a su propia familia y después indiscriminadamente a compatriotas le pega poco a un ultraderechista polaco por extremista que sea.\n   Pero lo que descarta definitivamente que sea derechista es su facebook. Allí se presenta con estética de ambigüedad sexual, bandera gay, confirma la afición a disfrazarse y a pintarse las uñas de que hablan quienes le conocían y ridiculiza al santo Papa Juan Pablo II.",
+        "created_at": "Sun Nov 08 09:21:49 +0000 2026",
+        "lang": "es",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119359600755376128",
+            "url": "https://pbs.twimg.com/media/HWl6U_pWgAAx8Bp.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "257332880",
+          "name": "Hermann Tertsch",
+          "screen_name": "hermanntertsch",
+          "description": "Periodista miembro del Parlamento Europeo con VOX por España, la libertad y el sentido común. Vicepresidente del grupo del Europarlamento Patriots for Europe",
+          "followers_count": 415235,
+          "friends_count": 4769,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 11666,
+          "favorite_count": 33782,
+          "reply_count": 613,
+          "quote_count": 424
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 11666,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119742635128840506",
+      "text": "RT @RealTrouble_Man: Arabs won't be a minority in Arabia\n\nJews won't be a minority in Israel\n\nIndians won't be a minority in India\n\nChinese…",
+      "created_at": "Mon Nov 09 10:43:21 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119461097958744289",
+        "text": "Arabs won't be a minority in Arabia\n\nJews won't be a minority in Israel\n\nIndians won't be a minority in India\n\nChinese won't be a minority in China\n\nOnly White Europeans are projected to be the minority in all their countries\n\nObjecting to this is \"White supremacy\"",
+        "created_at": "Sun Nov 08 16:04:38 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1820966117877465088",
+          "name": "TM",
+          "screen_name": "RealTrouble_Man",
+          "description": "",
+          "followers_count": 14310,
+          "friends_count": 681,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 3163,
+          "favorite_count": 18980,
+          "reply_count": 307,
+          "quote_count": 82
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3163,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119742500042948847",
+      "text": "RT @TheGNPE: Hey @grok why are Polish officials and UK media calling the shooter \"far right\" when there has been zero evidence that he was…",
+      "created_at": "Mon Nov 09 10:42:49 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119662721419694220",
+        "text": "Hey @grok why are Polish officials and UK media calling the shooter \"far right\" when there has been zero evidence that he was \"far right\"?",
+        "created_at": "Mon Nov 09 05:25:48 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1838211812744888320",
+          "name": "𝔾𝕣𝕚𝕗𝕥𝕪",
+          "screen_name": "TheGNPE",
+          "description": "Proud British citizen highlighting news and politics that the MSM refuses to talk about with a bit of entertainment!!, follow and add me to notifications",
+          "followers_count": 229158,
+          "friends_count": 10176,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 421,
+          "favorite_count": 7900,
+          "reply_count": 195,
+          "quote_count": 20
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 421,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119742268265640376",
+      "text": "Insightful",
+      "created_at": "Mon Nov 09 10:41:54 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2119736520223453329",
+        "text": "https://t.co/7sYyy8UGnD",
+        "created_at": "Mon Nov 09 10:19:03 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1996612581424062464",
+          "name": "uwe boll",
+          "screen_name": "BollFILMS",
+          "description": "I'm a filmmaker and directed a lot of movies - some pure commercial and some political driven like CITIZEN VIGILANTE https://t.co/0btQMtJbk4",
+          "followers_count": 46842,
+          "friends_count": 195,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 146,
+          "favorite_count": 837,
+          "reply_count": 70,
+          "quote_count": 37
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 983,
+        "favorite_count": 5982,
+        "reply_count": 854,
+        "quote_count": 61
+      }
+    },
+    {
+      "id": "2119735254366007616",
+      "text": "RT @GabeZZOZZ: Turns out the Krakow shooter is a pro-abortion, pro-LGBT leftist extremist who hates Christianity. These people are sick in…",
+      "created_at": "Mon Nov 09 10:14:02 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119316963822600393",
+        "text": "Turns out the Krakow shooter is a pro-abortion, pro-LGBT leftist extremist who hates Christianity. These people are sick in the head.",
+        "created_at": "Sun Nov 08 06:31:53 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1489949171780050944",
+          "name": "Gabriel",
+          "screen_name": "GabeZZOZZ",
+          "description": "Freedom of speech gives me the right to hurt your feelings and it gives you the right to cry about it",
+          "followers_count": 96137,
+          "friends_count": 500,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3562,
+          "favorite_count": 36839,
+          "reply_count": 373,
+          "quote_count": 62
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3562,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119734624536674678",
+      "text": "RT @toadmeister: A grooming gang survivor raped by at least 50 men was handed back to her abusers by police after saying she was an adult.…",
+      "created_at": "Mon Nov 09 10:11:31 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119391197202374664",
+        "text": "A grooming gang survivor raped by at least 50 men was handed back to her abusers by police after saying she was an adult. The officer's parting words? \"Enjoy your night, lads.\" https://t.co/ZroBrYMyo6",
+        "created_at": "Sun Nov 08 11:26:52 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "18809812",
+          "name": "Toby Young",
+          "screen_name": "toadmeister",
+          "description": "Director of FSU (https://t.co/eawHb6Hmso) Editor-in-Chief of Daily Sceptic (https://t.co/CLwYlyyrvR) Associate Editor of the Spectator. Conservative Peer.",
+          "followers_count": 356202,
+          "friends_count": 1467,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3068,
+          "favorite_count": 8972,
+          "reply_count": 383,
+          "quote_count": 142
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3068,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119734344705249677",
+      "text": "RT @TheJadeWarwick: https://t.co/MxFM6cvvDQ",
+      "created_at": "Mon Nov 09 10:10:25 +0000 2026",
+      "lang": "zxx",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2119477667451850752",
+          "url": "https://pbs.twimg.com/media/HWnltYXXUAAJBri.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2119595835696480575",
+        "text": "https://t.co/MxFM6cvvDQ",
+        "created_at": "Mon Nov 09 01:00:02 +0000 2026",
+        "lang": "zxx",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119477667451850752",
+            "url": "https://pbs.twimg.com/media/HWnltYXXUAAJBri.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1455658366290722816",
+          "name": "Jade Warwick",
+          "screen_name": "TheJadeWarwick",
+          "description": "The Warwick Report\nCulture warrior and unapologetic voice of the West.\nINTJ 🏴󠁧󠁢󠁷󠁬󠁳󠁿|🇬🇧|🇺🇸",
+          "followers_count": 105927,
+          "friends_count": 238,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1791,
+          "favorite_count": 12211,
+          "reply_count": 117,
+          "quote_count": 61
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1791,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119734126282694758",
+      "text": "RT @pondebekkio: NVIDIAの革ジャンが中華4000年の歴史から繰り出されるハニートラップにやられた今、『家に来ないか？俺のデカいロケットを見てくれよ』と美女を口説いて宅飲みに誘い、ほんとにロケットの写真や資料を見せたイーロン・マスクの凄さがよくわかるね。世界…",
+      "created_at": "Mon Nov 09 10:09:33 +0000 2026",
+      "lang": "ja",
+      "media": [],
+      "retweet": {
+        "id": "2119648650611785751",
+        "text": "NVIDIAの革ジャンが中華4000年の歴史から繰り出されるハニートラップにやられた今、『家に来ないか？俺のデカいロケットを見てくれよ』と美女を口説いて宅飲みに誘い、ほんとにロケットの写真や資料を見せたイーロン・マスクの凄さがよくわかるね。世界最強のASDあまりにもカッコ良すぎるだろ。 https://t.co/qhFFMFFguP",
+        "created_at": "Mon Nov 09 04:29:54 +0000 2026",
+        "lang": "ja",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119648643993280512",
+            "url": "https://pbs.twimg.com/media/HWqBNhnboAAkBeQ.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1519671030389764096",
+          "name": "ポンデべッキオ",
+          "screen_name": "pondebekkio",
+          "description": "Xを始めたロスジェネおじさん。フォークリフト界隈。特技はExcelとパレットに荷を固定すること、日本語が曖昧なアジア人に仕事を教えることです。Xとnoteフォローして貰える と嬉しいです。450記事＋新作noteの読み放題のメンバーシップおすすめです！",
+          "followers_count": 71359,
+          "friends_count": 881,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1760,
+          "favorite_count": 16333,
+          "reply_count": 232,
+          "quote_count": 217
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1760,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119733718856388951",
+      "text": "RT @WallStreetMav: The shooter was a gay communist.",
+      "created_at": "Mon Nov 09 10:07:55 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119521388000080333",
+        "text": "The shooter was a gay communist.",
+        "created_at": "Sun Nov 08 20:04:12 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2119342041607864337",
+          "text": "Briton among six killed by 'far-right' gunman in Krakow rampage https://t.co/2ImTKTvbLN",
+          "created_at": "Sun Nov 08 08:11:32 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "7587032",
+            "name": "Sky News",
+            "screen_name": "SkyNews",
+            "description": "The full story, first. Free, wherever you get your news @skynewsbreak for breaking news. Live on the Sky News app - download here: https://t.co/NE20fhpQTi",
+            "followers_count": 9140982,
+            "friends_count": 113,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 129,
+            "favorite_count": 692,
+            "reply_count": 2838,
+            "quote_count": 255
+          }
+        },
+        "user": {
+          "id": "1366565625401909249",
+          "name": "Wall Street Mav",
+          "screen_name": "WallStreetMav",
+          "description": "Finance, economics, news, memes. Follow and Tap the .... (🔔 +Notify)",
+          "followers_count": 1726949,
+          "friends_count": 866,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1419,
+          "favorite_count": 21139,
+          "reply_count": 157,
+          "quote_count": 19
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1419,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119733594830848493",
+      "text": "RT @mattvanswol: Dear @DaveChappelle,\n\nYou're not the \"free speech\" guy.\n\nYou're the guy who laughed when the free speech guy was m*rdered.…",
+      "created_at": "Mon Nov 09 10:07:26 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119524359320584633",
+        "text": "Dear @DaveChappelle,\n\nYou're not the \"free speech\" guy.\n\nYou're the guy who laughed when the free speech guy was m*rdered. https://t.co/s0QYIeLO85",
+        "created_at": "Sun Nov 08 20:16:00 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2119519653575737344",
+            "url": "https://video.twimg.com/amplify_video/2119519653575737344/vid/avc1/1920x1080/Spyo8v0sXWN9ZKw8.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1244068896157708289",
+          "name": "Matt Van Swol",
+          "screen_name": "mattvanswol",
+          "description": "Former Nuclear Scientist for US Dept of Energy | Ex-Photographer for @apple, @united, and @hyatt",
+          "followers_count": 600746,
+          "friends_count": 7588,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3698,
+          "favorite_count": 21786,
+          "reply_count": 1176,
+          "quote_count": 128
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3698,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119732823569604963",
+      "text": "RT @NiohBerg: Did you know?\n\nWhen a British person is murdered or raped by an imported foreigner, there are entire government units set up…",
+      "created_at": "Mon Nov 09 10:04:22 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119509187319279802",
+        "text": "Did you know?\n\nWhen a British person is murdered or raped by an imported foreigner, there are entire government units set up to silence their grieving families through intimidation and gaslighting.\n\nWhy?\n\nTo avoid \"community tensions\". https://t.co/uG8PPYBeiG",
+        "created_at": "Sun Nov 08 19:15:43 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119509183254908928",
+            "url": "https://pbs.twimg.com/media/HWoCX14WUAABu2s.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "915384490796748800",
+          "name": "𝐍𝐢𝐨𝐡 𝐁𝐞𝐫𝐠 🇮🇷 ✡︎",
+          "screen_name": "NiohBerg",
+          "description": "Possibly the most famous Iranian Jew on social media | Advocate for Iranian Monarchy Restoration",
+          "followers_count": 432627,
+          "friends_count": 558,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3255,
+          "favorite_count": 11477,
+          "reply_count": 274,
+          "quote_count": 65
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3255,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119732549010464959",
+      "text": "RT @DavidWolfe: If Russell Brand is facing prison for rape allegations dating back 20 years, why isn’t anyone named in the Epstein files go…",
+      "created_at": "Mon Nov 09 10:03:17 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119564524445450398",
+        "text": "If Russell Brand is facing prison for rape allegations dating back 20 years, why isn’t anyone named in the Epstein files going to prison?",
+        "created_at": "Sun Nov 08 22:55:36 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "15328881",
+          "name": "David Wolfe",
+          "screen_name": "DavidWolfe",
+          "description": "Gorilla🦍Meme📲Rawfare, Medical🥑Freedom, Organic🥗Nutrition, 🌴Superfoods🍍, 🍁SuperHerbs🍄, Natural👣Technology, Spring💦Water and THE💖BEST🍀DAY☀️EVER!",
+          "followers_count": 333777,
+          "friends_count": 1082,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2160,
+          "favorite_count": 18524,
+          "reply_count": 534,
+          "quote_count": 67
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2160,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119726824662122530",
+      "text": "RT @DefiantLs: @elonmusk The difference. https://t.co/sBPZs0nP2s",
+      "created_at": "Mon Nov 09 09:40:32 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2119687607982723072",
+          "url": "https://pbs.twimg.com/media/HWqkphybkAAGmYH.jpg"
+        }
+      ],
+      "retweet": {
+        "id": "2119687643353301220",
+        "text": "@elonmusk The difference. https://t.co/sBPZs0nP2s",
+        "created_at": "Mon Nov 09 07:04:50 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119687607982723072",
+            "url": "https://pbs.twimg.com/media/HWqkphybkAAGmYH.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1390762874809761793",
+          "name": "Defiant L’s",
+          "screen_name": "DefiantLs",
+          "description": "Exposing hypocrisy, one day at a time. | DM submissions",
+          "followers_count": 1703516,
+          "friends_count": 186,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 646,
+          "favorite_count": 5945,
+          "reply_count": 179,
+          "quote_count": 31
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 646,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119721189413372375",
+      "text": "RT @peterrhague: It’s a metaphor I keep coming back to; a nation can have a decisive lead and then simply throw it away for bad, short-term…",
+      "created_at": "Mon Nov 09 09:18:08 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2119693104047394937",
+        "text": "It’s a metaphor I keep coming back to; a nation can have a decisive lead and then simply throw it away for bad, short-term reasons.\n\nAnd the damning thing is, you’ll probably not realise how bad a decision it was in your own lifetime. You’ll think you won. https://t.co/F8YAoToRC3",
+        "created_at": "Mon Nov 09 07:26:32 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2119693099941163008",
+            "url": "https://pbs.twimg.com/media/HWqppM7W8AA_XlR.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "28138103",
+          "name": "Peter Hague",
+          "screen_name": "peterrhague",
+          "description": "Solutionist. Astrophysics PhD and scientific software engineer. Dad of 2. Let’s colonise the solar system together. Please visit the link below to read my blog:",
+          "followers_count": 86724,
+          "friends_count": 3154,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 231,
+          "favorite_count": 1739,
+          "reply_count": 89,
+          "quote_count": 18
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 241400062,
+        "friends_count": 1422,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 231,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
     {
       "id": "2119691615774146614",
       "text": "The Cybertruck order rate far exceeds our production rate. We will try to make as many as possible before shutting down the line in about 8 months, but will have to return deposits for a lot of people.\n\nThis is not a case of Cybertruck being unprofitable, as has been misreported by legacy media, but rather that the opportunity cost of the complexity of Cybertruck is vastly outweighed by the value of incremental Cybercab production.",

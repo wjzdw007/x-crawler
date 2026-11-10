@@ -1,0 +1,268 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 268072,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261110",
+  "last_updated": "2026-11-10T12:07:09.664918",
+  "tweet_count": 6,
+  "tweets": [
+    {
+      "id": "2120009670333235212",
+      "text": "RT @ring_hyacinth: 写写幕后吧，希望对你有用，先说一下概览。\n\n▶ 视频模型：Seedance 2.5 \n▶ 图像模型：🍌Nano banana Pro \n▶ 音乐：Opus 5.5 + SUNO \n▶ 创意制作：@simonxxoo 和我 \n▶ 周期：策划+…",
+      "created_at": "Tue Nov 10 04:24:27 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2120007755440525704",
+        "text": "写写幕后吧，希望对你有用，先说一下概览。\n\n▶ 视频模型：Seedance 2.5 \n▶ 图像模型：🍌Nano banana Pro \n▶ 音乐：Opus 5.5 + SUNO \n▶ 创意制作：@simonxxoo 和我 \n▶ 周期：策划+制作共花费三周\n\n☁\n\n一些杂七杂八的心得：\n\n1. 正如之前所说，Seedance 2.5 出了480P 的样片模式后已经没有任何对手了，抽卡的成本大大下降，定稿后再生成正片，而且细节几乎完全保留，这次的毛发和粒子表现相当出彩，画面过锐的情况越来越少。这次终稿我们甚至已经没用 topaz 了，感觉离退订也不远了。\n\n值得注意的点：样片只会保留7天（但这样也能倒逼甲方赶紧确认），最近生成正片的 4k 在打折，居然比 1080P 便宜。\n\n☁\n\n2. 后知后觉 Segment Audio 在 BGM 分离上原来这么好用。因为 Seedance 2.5 有个很烦人的点：无论你怎么强调，它还是会经常生成BGM。\n\nSegment Audio 能很好地解决这个问题。上传你的视频，然后输入你想分离的比如“background music”，就能完美分离，比剪映自带的好用太多了。\n\n▶ 在线工具：https://t.co/3ldlkbtJj2 \n▶ 开源地址：https://t.co/NdvFIST6af\n\n部署太麻烦了，你可以把整个流程整理成 skill 或者 wrokflow，每次让codex跑就行。\n\n☁\n\n3. Opus 5.5 在整体的音乐和声音设计帮了大忙，我们先用 Opus 5.5 写了一个主题旋律，然后用 Suno 将这个主题旋律扩展成了不同场的背景音乐，从而让整个片子的音乐可以做到统一。  \n\n另外还让 Opus 5.5 写了一些音效，甚至写的音效都能和前后旋律在一个 key 上，会非常统一和舒适。\n\n以上，有空再补充啦。",
+        "created_at": "Tue Nov 10 04:16:51 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2118599269850779812",
+          "text": "感谢森马的再次邀请，我们用 Opus 5.5 + Seedance 2.5 为当季主打「大兴安岭鹅绒服」制作了一条 TVC 短片。 \n\n藏宝图上说，大兴安岭的鹅绒，轻到能停在睫毛上，暖到能把鸡蛋孵成小鸡，还像 QQ 糖一样有弹性。 \n\n森马 × SHAMA《来自大兴安岭的礼物》，请查收。\n\ncreated by @simonxxoo and me https://t.co/znXDQFhNSv",
+          "created_at": "Fri Nov 06 07:00:02 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "video",
+              "id": "2118557801345871872",
+              "url": "https://video.twimg.com/amplify_video/2118557801345871872/vid/avc1/1920x1080/QdZrGldeeQ3fmKVF.mp4?tag=29",
+              "bitrate": 10368000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1515128158835691526",
+            "name": "Ring Hyacinth",
+            "screen_name": "ring_hyacinth",
+            "description": "Artist working with @simonxxoo and #AI\n📮ringhyacinth@gmail.com | DM open.",
+            "followers_count": 21455,
+            "friends_count": 636,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 44,
+            "favorite_count": 499,
+            "reply_count": 79,
+            "quote_count": 28
+          }
+        },
+        "user": {
+          "id": "1515128158835691526",
+          "name": "Ring Hyacinth",
+          "screen_name": "ring_hyacinth",
+          "description": "Artist working with @simonxxoo and #AI\n📮ringhyacinth@gmail.com | DM open.",
+          "followers_count": 21455,
+          "friends_count": 636,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 41,
+          "favorite_count": 274,
+          "reply_count": 50,
+          "quote_count": 4
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 41,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2120039846118821976",
+      "text": "在 X 上有一点好就是总能看到大神们论道，比如这一段关于“苦涩的教训”的讨论。\n\n今天很多大语言模型信徒们经常拿着《苦涩的教训》当圣经，认为“只要无脑堆算力、堆数据就够了，不需要什么新算法”。而作者 Sutton 本人的这条推文，以及 Prashant Rai 的精辟回复，正是对这种解读的一种纠偏。\n\n《苦涩的教训》讲的是 AI 历史上那些依赖人类专家知识的精巧设计，最终都败给了利用海量算力的通用学习方法。\n\n但这经常被解读为“唯算力论”，认为只要加大数据量、加大模型参数和算力就能实现 AGI。\n\n作者 Sutton 这次发推：\n> “光靠暴力计算（Brute force computation）不足以实现真正的智能。我们需要巧妙的新方法（Clever new methods）。在我看来，AI 这门科学还远未终结。”\n\nPrashant Rai（芬兰的自动化博士，做非公路场景的自动驾驶）的转发，也可以看作是一种解读：\n>  “《苦涩的教训》常常被误解为是在反对‘算法上的精巧创新’，但它真正反对的，其实是把人类自己的小聪明‘硬编码（Hardcoding）’进系统里。”\n\n这句话极其精准地切中了问题的要害，区分了两种截然不同的“聪明”：\n\n一种是错误的聪明，也就是把人类的知识硬编码进去。\n\n比如说人类觉得自己懂国际象棋，于是把棋谱口诀写进代码；人类觉得自己懂语法，于是搞出复杂的句法树规则教 AI 说话；自动驾驶里人类写满几万条 if-else 规则。\n\n这才是《苦涩的教训》批判的对象。这种做法上限极低，一旦算力上来，端到端的神经网络直接把这些人工规则碾得粉碎。\n\n另一种是正确的聪明，是在算法与架构层面的精巧创新。\n\n比如说设计出能够随着算力增长而不断变强（Scale with compute）的通用学习机制。像反向传播算法（Backpropagation）、卷积神经网络（CNN）、Transformer 架构、蒙特卡洛树搜索（MCTS）、时序差分学习（TD Learning）都是属于这种。\n\n这些正是 Sutton 所呼吁的“巧妙的新方法”。没有 Transformer 这个极其精巧的算法/架构创新，给你十万张 H100 显卡，你也训不出 ChatGPT。",
+      "created_at": "Tue Nov 10 06:24:22 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2120036191948951552",
+          "url": "https://pbs.twimg.com/media/HWvhryQW0AA641-.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2119783945210613804",
+        "text": "The Bitter Lesson is often mistaken for an argument against algorithmic ingenuity, when it’s really an argument against hardcoding our own ingenuity into the system.",
+        "created_at": "Mon Nov 09 13:27:30 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "308276452",
+          "name": "Prashant Rai",
+          "screen_name": "imprashantrai1",
+          "description": "Making Physical AI less brittle | Off-Highway Autonomy | DSc (Automation Tech.)",
+          "followers_count": 1871,
+          "friends_count": 1115,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 44,
+          "favorite_count": 336,
+          "reply_count": 2,
+          "quote_count": 6
+        }
+      },
+      "stats": {
+        "retweet_count": 22,
+        "favorite_count": 129,
+        "reply_count": 79,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2120044871108956199",
+      "text": "Gemini 都要发新模型了，GPT-6.2 还没影 😂",
+      "created_at": "Tue Nov 10 06:44:20 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2120024720510984234",
+        "text": "Gemini",
+        "created_at": "Tue Nov 10 05:24:16 +0000 2026",
+        "lang": "in",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "284333988",
+          "name": "Logan Kilpatrick",
+          "screen_name": "OfficialLoganK",
+          "description": "Member of technical staff, working on Gemini, @GoogleAIStudio, the Gemini API, & Kaggle. My views!",
+          "followers_count": 386922,
+          "friends_count": 3423,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 236,
+          "favorite_count": 4754,
+          "reply_count": 706,
+          "quote_count": 355
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 76,
+        "reply_count": 66,
+        "quote_count": 5
+      }
+    },
+    {
+      "id": "2120056163186118978",
+      "text": "https://t.co/5pb1w49YqN",
+      "created_at": "Tue Nov 10 07:29:12 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2120055955471892874",
+        "text": "其实看过原文的都知道什么意思，只不过后来被有些人故意误解，变成了算法创新已经不再需要，只要更多数据，更多算力就ok。显然他们是为了炒作股价。但是原文说的意思是，不要把人类经验硬编码到模型里，因为历史上，每次之前硬编码的人类经验都会变成下一代模型的阻碍。这种硬编码是人类的自负。算法创新是很重要的，更重要的是算法必须要能够随着算力scale。真正能够随着算力scale的只有搜索和学习。",
+        "created_at": "Tue Nov 10 07:28:23 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "283511225",
+          "name": "Suwako — e/acc",
+          "screen_name": "suwakopro",
+          "description": "🚀 e/acc 技术乐观主义者 | 💻 静态强类型类型爱好者 | 🎲 发言随机生成 | 📊 实证分析大于规范分析 | 🌐 水平思考 | @suwako@mas.to | https://t.co/AeMdArn8vl",
+          "followers_count": 3385,
+          "friends_count": 862,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 3,
+          "reply_count": 0,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2120061330375712929",
+      "text": "https://t.co/nOVp1CTCnU",
+      "created_at": "Tue Nov 10 07:49:44 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2120060458518606253",
+        "text": "1. “纠偏”其实是把原文重读了一遍。 《苦涩的教训》本来就写了，该做的是搜索和学习这类能随算力扩展的通用方法。把这当成“极其精准的洞见”，说明很多人只看过标题\n\n2. “错误的聪明”和“正确的聪明”分得太干净了。 CNN 就是把平移不变性、局部性这些人类先验写死在架构里，后来数据够多，ViT 把这些先验拿掉反而更强，这本身就是一次苦涩的教训。AlphaGo 到 AlphaZero 再到 MuZero，也是一路在删人类知识。所以两者之间是光谱，不是楚河汉界\n\n3. “能随算力变强”是个事后标准。 每个研究者都觉得自己的巧思属于正确的那种，专家系统当年也这么想。如果教训只剩“好的创新是好的，坏的创新是坏的”，那就不苦涩了，也没用了\n\n4. 拿 Sutton 给 Transformer 站台的问题是， Sutton 本人并不买 LLM 的账。 他在 Dwarkesh 的访谈里说得很直白：LLM 靠模仿人类数据，没有目标，也不从经验中学习，他认为这条路本身就没吃透苦涩的教训。他说的“巧妙的新方法”，指的是持续学习、从交互中学习这些 LLM 还没有的东西。把他的话解读成“Transformer 这类创新很重要”，等于把一个激进的批评磨成了大家都爱听的鸡汤",
+        "created_at": "Tue Nov 10 07:46:16 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1139393240",
+          "name": "NoaX",
+          "screen_name": "noahatwhere",
+          "description": "北美PhD 在读，ex-Harvard Researcher\nVideo diffusion, World Model, 3DGS\nSolo Developer, UI/UX designer \n在新西兰海边，对面就是南极，像是来到电影的结尾。",
+          "followers_count": 2177,
+          "friends_count": 303,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 3,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2120064894376558646",
+      "text": "现在虽然不用考 LeetCode 了，但要考 AI Coding 了，并不见得容易些，还更玄学。\n\n以下内容来自 Reddit 的帖子\n\n-------\n\n致所有觉得 AI 面试很好的人：那就祝你好运吧 :) 彭博社面试经历 [伦敦/法兰克福]\n\n刚刚面完彭博社的第二轮 AI 代码库 (codebase) 面试。\n\n考察的是 Python 的 Django 框架，而我对此一无所知。而且整个代码库非常庞大。\n\n他们在前 30 分钟都在进行行为面试 (behavioral interview) ，所以留给你写代码的时间基本上就只剩 30 分钟了。\n\n关于 AI 工具的使用边界非常模糊。你根本不知道面试官到底允许你用多大程度的 AI，他们也不会明确说出自己的期望。我使用了 planning mode 和 ask mode，一个功能接一个功能地推进，虽然通过了几个测试用例，但最后还是被拒了。\n\n用 AI 辅助时需要阅读大量的生成内容，如果还要同时兼顾和面试官沟通交流，这几乎是不可能完成的任务。\n\n以前刷 LeetCode  的时候，至少题目是明确的，你只需要想办法解题就行，哪怕卡住了也可以头脑风暴各种思路。但在这种愚蠢的 AI 面试里，光是为了搞懂那个庞大的代码库、弄清楚问题到底出在哪里，就已经耗掉了一半的时间。\n\n致那些之前还在庆祝“LeetCode 时代终结”的人：祝你们好运吧。现在的面试只会难得多。\n\n哦对了，千万别动“靠一句提示词让 AI 一次性秒杀整道题 (one-shotting)”的念头，否则你照样会被拒（我朋友就遇到了这种情况）。\n\n不管怎么说，AI 面试简直就是天大的扯淡，你永远不可能找到一套稳定、通用的方法去应对这种面试。\n\nhttps://t.co/JLFQX3vpua",
+      "created_at": "Tue Nov 10 08:03:54 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2120063845733445632",
+          "url": "https://pbs.twimg.com/media/HWv61coXMAAa1Nj.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 16,
+        "favorite_count": 218,
+        "reply_count": 84,
+        "quote_count": 5
+      }
+    }
+  ]
+}

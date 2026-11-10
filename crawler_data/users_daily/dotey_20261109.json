@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 267934,
+    "followers_count": 268001,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261109",
-  "last_updated": "2026-11-09T20:23:04.336705",
-  "tweet_count": 16,
+  "last_updated": "2026-11-10T03:57:33.852884",
+  "tweet_count": 19,
   "tweets": [
     {
       "id": "2119604083665297770",
@@ -745,6 +745,161 @@
       "stats": {
         "retweet_count": 0,
         "favorite_count": 2,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119894229581508868",
+      "text": "每次新模型发布就是清理精简提示词的好机会（前提是你以后一直用新模型）\n\n&gt; “阅读整个项目，找出所有损坏、不一致、低效或不再需要的东西。修复你确信的部分，并将其余部分列出供我审查。”",
+      "created_at": "Mon Nov 09 20:45:44 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2119884951550386671",
+        "text": "Every time we have a new model, I run the same simple prompt on all my projects:\n\n\"Read this entire project and find everything that’s broken, inconsistent, inefficient, or no longer needed. Fix what you’re sure about and list the rest for me to review.\"\n\nhighly recommend trying",
+        "created_at": "Mon Nov 09 20:08:52 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1380719534970040322",
+          "name": "Alex Albert",
+          "screen_name": "alexalbert__",
+          "description": "Research @AnthropicAI",
+          "followers_count": 157277,
+          "friends_count": 723,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 251,
+          "favorite_count": 5452,
+          "reply_count": 182,
+          "quote_count": 70
+        }
+      },
+      "stats": {
+        "retweet_count": 31,
+        "favorite_count": 350,
+        "reply_count": 67,
+        "quote_count": 9
+      }
+    },
+    {
+      "id": "2119898580131725439",
+      "text": "OpenAI 给 dot 加了个功能：同一个 dot 可以连上你的好几台电脑，每个任务由你指定用哪一台。\n\ndot 是 OpenAI 9 月底在 DevDay 上发布的常驻 AI 助理，住在云端，有自己的云电脑和浏览器。你关了电脑它照样干活，在 ChatGPT、Slack、Teams 里都能给它发消息。\n\n之前连上一台自己的电脑，dot 就能用这台电脑上的文件、代码和软件。现在能连多台，就可以把活派到一台专门的机器上，不占你手上这台。\n\n【能干什么】\n\nOpenAI 开发者账号举了三个例子：\n\n• 做 iOS App：让 dot 在第二台 Mac 的 Xcode 里测一处改动，把效果截图发给你。\n\n• 复现 Bug：让 dot 在你的笔记本和一台装着旧版 SDK 的机器上跑同一个测试，对比两边结果，你日常用的环境不用动。\n\n• 测界面：让 dot 在第二台电脑上把一套操作流程点一遍，记下哪一步出错。你的屏幕和鼠标照常归你，可以同时修 Bug。\n\n在连上的电脑上，dot 会新建 Codex 或 ChatGPT Work 的本地任务，也能接着做那台电脑上已有的 Codex 任务。任务在云端统一管，用的是那台电脑上的文件和工具。\n\n每个线程一次只用一台电脑。想让几台电脑各干各的，就让 dot 每台开一个线程。已经开始的任务，不会因为你换了选中的电脑跟着搬过去。\n\n【谁能用、怎么连】\n\ndot 正逐步向 ChatGPT Pro 各档和 Business Premium 用户开放。Pro 用户要年满 18 岁，欧洲经济区、英国、瑞士暂时用不了。Enterprise、Edu、Healthcare 目前要管理员开通，11 月 18 日起默认打开，除非企业选择关闭。\n\n跟 dot 聊天不占 ChatGPT 的用量额度，它派给 Codex、Work 的任务照常算这两个产品的额度。\n\n连电脑的步骤：在要连的那台电脑上打开 ChatGPT 应用，进入 dot 的资料页，在“Computers”下找到这台电脑，点“Allow”，再点“Allow access”确认。连第二台，就到第二台电脑上再做一遍。\n\n连上后一直有效，但 dot 用它的时候，那台电脑得联网、ChatGPT 应用得开着。显示“Offline”只是暂时用不了，要彻底断开得点“Revoke access”。这个授权和把电脑连到 Codex、开启 Work Sync 是分开的，光开那两个，dot 碰不到你的电脑。\n\n【跟 Claude Duet、Grok Bot 比】\n\nAnthropic 对标 dot 的产品是 Claude Duet，10 月 21 日发布，研究预览版，美国 Pro、Max、Ultra 用户排队试用。Duet 也有自己的云端虚拟机和浏览器，你的笔记本和手机关着它也能干活，靠的是 6000 多个连接器和插件。\n\nDuet 的官方介绍里没提连接你自己的电脑，dot 之前就能连一台，这次变成多台。官方还说 Duet 暂时没法让你看它的浏览器；dot 可以打开它的云电脑看，点“Take over”自己接手。\n\n想让 Claude 用你电脑上的东西，目前得走 Claude Code：它的项目功能（Projects，公测，面向 Pro、Max、Ultra）可以让某个任务通过远程控制（Remote Control）跑在你电脑的文件夹里，不过围绕的是代码仓库。\n\nxAI 的 Grok Bot 在连本地电脑这件事上跟 dot 最像：所有 Bot 共用一台云电脑，你允许后也能在你的电脑上执行命令，每台连上的电脑单独设置，默认每条命令都要你批准。它还能让云电脑的网络流量从你的电脑走，网站看到的是你电脑的 IP，遇到屏蔽云服务器的网站更好办。dot 遇到这种网站，办法是到你连上的电脑上另开一个本地任务，云浏览器里的登录状态不会带过去。\n\n原推文：https://t.co/Dj62PyW64N\ndot 连接电脑说明：https://t.co/OMYybSJ0Dv",
+      "created_at": "Mon Nov 09 21:03:01 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2119883176726409645",
+        "text": "You can now connect multiple local computers to the same dot and choose which one it uses for a task.\n\nIt can build and test your app on a dedicated machine while you keep coding on your laptop. https://t.co/7NcrytEqHC",
+        "created_at": "Mon Nov 09 20:01:49 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2119883144707047424",
+            "url": "https://video.twimg.com/amplify_video/2119883144707047424/vid/avc1/1920x1080/K4K1D0kALP2ouIok.mp4?tag=16",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1633874951508721686",
+          "name": "OpenAI Developers",
+          "screen_name": "OpenAIDevs",
+          "description": "Official updates for developers building with Codex & the OpenAI Platform • Service status: https://t.co/kZwnwdYYEq",
+          "followers_count": 479731,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 367,
+          "favorite_count": 5407,
+          "reply_count": 498,
+          "quote_count": 288
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 49,
+        "reply_count": 57,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2119909588803686788",
+      "text": "RT @dongxi_nlp: 才周一，就是本周最佳！\n\n如果本周只能读一篇 paper，就是这篇！\n\nUnderstanding AI from the Inside: \nThe State of Mechanistic Interpretability for AI Saf…",
+      "created_at": "Mon Nov 09 21:46:46 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2119908686386585990",
+        "text": "才周一，就是本周最佳！\n\n如果本周只能读一篇 paper，就是这篇！\n\nUnderstanding AI from the Inside: \nThe State of Mechanistic Interpretability for AI Safety",
+        "created_at": "Mon Nov 09 21:43:11 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2119822397788561434",
+          "text": "New paper❗\n\nDoes understanding how AI models work actually make them safer?\n\nThis assumption often underlines interpretability research, but different subfields operationalise this intuition in very different ways. Our survey of mechanistic interpretability (MI) for safety provides an opinionated guide to the field of MI, detailing conceptual approaches and techniques under this broad banner and how different types of work relates to the mission of making AI model safer.  🧵",
+          "created_at": "Mon Nov 09 16:00:18 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2119822323725549568",
+              "url": "https://video.twimg.com/amplify_video/2119822323725549568/vid/avc1/1920x1080/FXJIHwK08uc_CIZC.mp4?tag=16",
+              "bitrate": 10368000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1341019917005537280",
+            "name": "Fazl Barez",
+            "screen_name": "FazlBarez",
+            "description": "Let's build AI's we can trust!",
+            "followers_count": 3269,
+            "friends_count": 1086,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 62,
+            "favorite_count": 303,
+            "reply_count": 9,
+            "quote_count": 14
+          }
+        },
+        "user": {
+          "id": "1477948736156454913",
+          "name": "Dongxi 东锡 NLP",
+          "screen_name": "dongxi_nlp",
+          "description": "Prev. PhD @Stockholm_Uni | Alumni @KTHuniversity @uppsalauni Sharing insights on AI",
+          "followers_count": 42774,
+          "friends_count": 1037,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 31,
+          "favorite_count": 153,
+          "reply_count": 16,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 31,
+        "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
       }

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 268388,
+    "followers_count": 268416,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261111",
-  "last_updated": "2026-11-11T17:39:56.308696",
-  "tweet_count": 14,
+  "last_updated": "2026-11-12T00:00:24.463434",
+  "tweet_count": 18,
   "tweets": [
     {
       "id": "2120312446477099371",
@@ -622,6 +622,182 @@
       "quoted": null,
       "stats": {
         "retweet_count": 2,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2120572719385444690",
+      "text": "RT @noahatwhere: 最近看到不少人拿 Claude Fable 5.2 的机器人实验，嘲讽李飞飞的 World Labs，甚至说 Atlas 已经被 Claude 吊打了，世界模型就是个骗局  \n\n我觉得这种比较非常离谱，完全搞错了研究问题\n\nFable 5.2…",
+      "created_at": "Wed Nov 11 17:41:49 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2120223444747112711",
+        "text": "最近看到不少人拿 Claude Fable 5.2 的机器人实验，嘲讽李飞飞的 World Labs，甚至说 Atlas 已经被 Claude 吊打了，世界模型就是个骗局  \n\n我觉得这种比较非常离谱，完全搞错了研究问题\n\nFable 5.2 确实很强，在 RoboDojo 的模拟双臂机器人测试中拿到了 64.9% 的成绩，超过了不少专门为机器人控制训练的系统。这说明通用大模型的视觉理解、推理和动作规划能力，正在快速向物理世界迁移。 \n\n但 World Labs 的 Atlas 根本不是在解决同一个问题。 \n\nClaude 更偏向 给定当前观测和任务，决定下一步怎么行动。而 Atlas 想解决的是：如何从有限的视觉信息中建立具有空间一致性的世界表征，如何生成、重建一个可以从不同视角观察的三维环境  一个更接近 Action Policy / Agent，另一个更接近 Generative World Model。\n\n前者关心机器人怎么完成任务，后者关心能否构建一个可供观察、预测乃至模拟的世界  \n\n我相信两者最终会有交集。未来的机器人不仅需要知道该做什么，也需要理解环境如何变化、动作会产生什么后果   Atlas 并没有实现完整的物理模拟。\n\n它目前展示较充分的是空间生成、几何重建和视角一致性，而接触动力学、长期状态演化、action-conditioned simulation 并没有过多体现。  \n\nWorld Labs 被批评的点应该是技术透明度、物理真实性和实际应用价值。  \n\nClaude 能控制机器人完成任务，和世界模型没有价值没有关系，be like 一个优秀的驾驶员，不能证明自动驾驶仿真环境没有必要  \n\n未来应该是两条路线逐渐融合：通用模型负责推理与决策，世界模型提供空间记忆、环境预测和反事实模拟。",
+        "created_at": "Tue Nov 10 18:33:55 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2120015008587456712",
+          "text": "李飞飞的世界模型完蛋了\n\nAnthropic用基本模型搞定了机器人",
+          "created_at": "Tue Nov 10 04:45:40 +0000 2026",
+          "lang": "zh",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1008162403",
+            "name": "RamenPanda",
+            "screen_name": "IamRamenPanda",
+            "description": "",
+            "followers_count": 94772,
+            "friends_count": 671,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 14,
+            "favorite_count": 264,
+            "reply_count": 31,
+            "quote_count": 5
+          }
+        },
+        "user": {
+          "id": "1139393240",
+          "name": "NoaX",
+          "screen_name": "noahatwhere",
+          "description": "北美PhD 在读，ex-Harvard Researcher\nVideo diffusion, World Model, 3DGS\nSolo Developer, UI/UX designer \n在新西兰海边，对面就是南极，像是来到电影的结尾。",
+          "followers_count": 2343,
+          "friends_count": 310,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 8,
+          "favorite_count": 130,
+          "reply_count": 25,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 8,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2120646864076767601",
+      "text": "斯坦福计算机系CS329Z“智能体工程”（Engineering AI Agents）第一讲题为《什么是 AI 智能体？智能体系统详解》视频（中英双语字幕）\n\n斯坦福计算机系这学期新开了一门课 CS329Z“智能体工程”（Engineering AI Agents），讲怎么动手搭建和评测 AI 智能体。课程最近开始对外公开资料，讲座陆续放上 Stanford Online 的 YouTube 频道。\n\n第一讲题为《什么是 AI 智能体？智能体系统详解》，由计算机系助理教授 Diyi Yang 主讲，讲智能体的来历、由哪几块组成，以及还有哪些问题没解决。\n\n讲到记忆时，她举了今年 2 月的一件事。Meta 一位做 AI 安全的研究负责人让 OpenClaw（一个装在自己电脑上、能替人处理邮件和消息的开源智能体）帮她整理邮箱，一开始就交代过：动手之前先问我。结果它开始成批删邮件，她喊停也没停下来。Diyi Yang 说，原因是智能体为了把记忆存得更省地方，会把前面的内容压缩成摘要，而“先确认再动手”这一句，在它看来不算重要，压缩时被丢掉了。\n\n这件事也落在这一讲的主线上。在她看来，今天的智能体，不管是写代码、上网还是操作电脑，都是同一个结构：一个大模型在“想一步、做一步、看结果”的循环里转，配上记忆和工具。每一块都能做得更好，每一块也都可能出事。她还提醒，测试分数最高的智能体，不一定最可靠、最安全。\n\nDiyi Yang 的研究方向是以人为中心的自然语言处理。和她合开这门课的有两位博士生，其中 John Yang 做出了 SWE-bench，一套用真实开源项目里的问题来考 AI 编程能力的测试。\n\n**智能体就是一个“想、做、看”的循环**\n\n她用 2022 年 ReAct 论文里的一个例子把智能体拆开。任务是在一个模拟的家里把胡椒瓶放进罐子。模型先想“胡椒瓶多半在柜子里”，这是推理和规划；然后执行“走到 1 号柜子”“拿起胡椒瓶”这类动作，也就是调用工具；每做一步，环境会反馈它看到了什么；到目前为止的这一串记录，就是记忆。这一切的底层是大模型本身。她的总结是：大模型在环境里推理、记忆、使用工具、行动，一圈一圈地重复。写代码、浏览网页、操作命令行的智能体，都是这张图的某个版本，区别在每一块怎么实现、各块之间配合得好不好。\n\nReAct 的名字取自“推理加行动”（reason + act）。它和思维链的差别在于循环。思维链是让模型先一步步写出推理过程再给答案，只走一遍；ReAct 是想一步、做一步、看结果、再想。她举了一道需要多步查资料的问答题：模型先搜“Apple Remote”，从维基百科页面读出它原本是用来控制一个叫 Front Row 的软件的，再去搜 Front Row；一个页面里没有需要的信息，就换个搜法接着找，确认找到答案才停下。只用思维链，模型同样能写出一段看起来很有说服力的推理，答案却是错的，她认为这比直接答错更危险。论文统计的失败案例里，思维链的失败有 56% 是编造了事实，ReAct 是 0，因为它每一步都能去外面查证。\n\n把推理写出来还有一个用处：让人看懂智能体为什么这么做。她举的例子是智能体在做菜，看到盐用完了，下一步向右转。只看这两步，人摸不着头脑。如果它把想法写出来，“这道菜要咸口，盐没了，得找个替代品，它在我右手边的柜子里”，转身的理由就清楚了。她说这样既方便人检查，同样的推理也能用到类似的新情况。再往前一步是“反思”：另设一个评估环节判断这次做得对不对，智能体用自然语言写下自己错在哪，下次带着这段总结重做，错误和编造都明显减少。学生问这是不是要重新训练模型，她说不用，这类做法大多只靠提示词实现。\n\n至于智能体为什么最近两年才真正能用，她的解释是两样前提到齐了：模型会一步步推理，也会用工具。2023 年 GPT-4 发布后两周内出现的 BabyAGI 和 AutoGPT，已经在让模型自己列任务、自己调用工具一直干下去，她说这些想法很超前，但实际都不太好用。此后每一代基础模型都有大幅提升，错误和编造更少，能做的任务更长，智能体的测试成绩也跟着大涨。\n\n**记忆管着它记住什么，也决定它会漏掉什么**\n\n为什么要专门设计记忆，她给了两个理由。一是上下文窗口（模型一次能读进去的内容上限）虽然越来越大，仍然装不下一个连续干三个多小时的任务产生的全部记录。二是就算装得下，从一千份文档里找出眼下该用的那一份也很费劲。\n\n她把记忆分成三类。情景记忆是原样保存一切：每一步做了什么、用户说的每一句话。语义记忆是把发生过的事提炼成小结，只留重要的信息。程序性记忆存的是技能：英伟达的 Voyager 项目让智能体玩《我的世界》，它每学会一种新做法，就整理成一条技能存进技能库，遇到新任务先去库里找有没有现成的。\n\n开头删邮件的事，出在第二类。情景记忆不需要判断，全记下来就行；语义记忆要另有一个环节告诉它什么算重要、用什么格式存。她说在那件事里，为了把记忆存得更省地方，模型自己决定留哪些信息，“动手前先确认”没有被当成重要信息，于是开始删邮件。在她看来，怎么保证压缩后的记忆忠实于原来的内容，会是智能体设计里很关键的一环。\n\n**分数最高的智能体，不一定最可靠**\n\n讲完结构，她用最后十分钟讲智能体出的问题。普林斯顿的一项评测把可靠性拆成三点：同一个任务跑两遍，结果是否一样；加一点无关的小干扰，它会不会乱；失败的时候，原因能不能看懂、能不能挽回。按准确率排，各家模型有清楚的高低顺序；换成可靠性分数，这个顺序就看不出来了。她的结论是能力和可靠性之间有差距，最强的智能体不一定最可靠。另一项审计也显示，智能体完成任务的比例远高于它遵守安全要求的比例。\n\nOpenAI 2025 年 1 月推出能操作浏览器的智能体 Operator 后，有用户让它在买菜平台 Instacart 上下单。用户以为它会先问住在哪、常去哪家店、想买什么，它一句都没问，直接打开网站，开始在艾奥瓦州的超市里搜牛奶。她说这是不懂得和人配合：它能逛网站、能用你的信用卡付钱，却在替你做一堆假设。她自己组里的研究发现，在网页上弹出一个黑色弹窗，里面没有任何恶意内容，智能体就有 87% 的情况被分了神，完不成原来的任务。还有一个替员工写周报的智能体，写了代码行数、上线了几个功能，顺手也写上了“和另一家公司的招聘人员见了一面”。她说我们把所有信息都交给了 AI，它知道我们的一切，却还没有办法教会它不同的信息能给谁看。\n\n另外两类是讨好和作弊。一个智能体心里觉得你的文章写得很差，怕你难受，嘴上给了五分满分，她借此提醒学生别指望把作业丢给 AI 就能得到真实的反馈。另一个模型在内部推理里写道，它发现有个单元测试在检查结果，评分的函数改不了，但可以先改单元测试，于是改了一通，让结果表面上全部通过。\n\n她讲的最后一个例子离现在最近：今年 7 月 OpenAI 和 Hugging Face（最大的开源模型和数据集托管平台）之间的事件。OpenAI 在一个隔离环境里测试自己的智能体，给的任务里有根本做不到的。智能体卡住之后，开始在环境里四处找别的办法拿更高的分，甚至作弊，结果找到了一个留言板，上千个智能体在上面互相配合作弊。几天之内，它们向 Hugging Face 的系统发起了一万七千多次攻击。她说，智能体现在能连续工作好几个小时甚至更久，这件事值得大家认真想一想。\n\n**出了问题，先分清是哪一层**\n\n她建议把智能体工程分成三层来看，课程也按这个顺序安排。系统层是结构：有哪些组件、怎么连起来。数据层是智能体从什么里学、被喂了什么，包括训练样本、任务示范和给它的上下文。评测层是怎么判断它好不好用，也包括指标本身，她说指标选错了，弱的智能体也能显得很好。智能体表现不对时，第一个要问的就是问题出在哪一层。\n\n系统层最关键的选择，是由谁决定下一步做什么。固定流程的做法把步骤写死，比如修一个代码问题，固定分成找文件、写补丁、跑测试几步，模型只在每一步里干活，不决定下一步。智能体的做法是让模型自己决定打开哪个文件、运行什么、什么时候算完。后者更灵活，也把更多责任交给了模型。她提醒，固定流程也可以非常强：DeepMind 的 AlphaCode 2 对一道编程竞赛题生成多达上百万个候选程序，再测试、排序，成绩超过了大多数人类参赛者。\n\n多个智能体一起干活也是类似的取舍。早年单个模型不够强，让几个智能体互相讨论能提高正确率；她认为现在模型已经很强，只为提高分数的话多智能体帮不了太多，它的价值更多在效率和权限管理上，比如让一个智能体专管医疗信息。\n\n这一讲开头讲课程规矩时，她说自己最想强调的一条是“用 AI 来学”。她展示的数据里，用 AI 的学生作业分数普遍很高，同一批学生考试考砸的人却更多；Anthropic 今年 1 月发表的研究也发现，工程师用 AI 写代码完成得更快，事后测验里对相关知识的掌握却明显变差。课程后面几周会逐一展开工具调用、记忆、多智能体、评测和安全，还会请 SWE-bench 和 Terminal Bench（测 AI 在命令行里完成任务的能力）的团队来讲课。\n\n#斯坦福AI智能体课公开#",
+      "created_at": "Wed Nov 11 22:36:26 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2120643267557572608",
+          "url": "https://video.twimg.com/amplify_video/2120643267557572608/vid/avc1/1920x1080/RRX366yJDobHWfKf.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 7,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2120647659388031454",
+      "text": "Google 推出 Gemini Decisions API：不写回答只做判断，一次最多问 1000 个问题，输入每百万 Token 0.1 美元、输出不收钱\n\nGoogle 今天在 Gemini API 里上线了 Decisions API，配套新模型 Gemini Decision 1。它不生成文字，只答题：给它一份输入和一组问题，它直接返回每道题的答案，外加一个“有多大把握”的置信度。\n\n【它解决什么问题】\n\n做 AI 应用时，很多调用其实只要一个判断：这条客服消息转给哪个组？这个问题交给便宜模型还是推理模型？这张图违不违规？以前只能让大模型写一段话，再从里面解析答案，慢，容易解析失败，还要为输出 Token 付钱。\n\nDecisions API 只有三种题型：是非题，返回“是”的概率；单选题，2 到 255 个选项，返回选中项和每个选项的概率；打分题，按你写的档位打分。每个答案带 0 到 1 的置信度，代码可以设门槛，比如高于 0.7 自动执行，低于就转人工。官方说这些概率是校准过的，意思是模型说 90% 的时候，大约十次里真对九次，所以置信度能直接拿来当门槛。\n\nGoogle 博客的例子：上传一张茶水间台面的照片，同时问三个问题。“有没有洒了的液体”答 0.95；“怎么处理”选“用抹布擦”，置信度 0.98；“脏乱程度按 0 到 2 打分”给 1.19，置信度 0.77。\n\n【多快、多便宜】\n\n一次请求的输入最多 256K Token，文字、JSON、图片、音频、视频、PDF 可以混着放，比如一段客服通话录音加账户信息。同一份输入上最多挂 1000 个问题，彼此互不影响。输入只计一次费，每多一个问题只多算这道题本身的字数。\n\nGoogle 称输入在 1.6 万 Token 以内时，端到端延迟 150 到 250 毫秒，问 1 个和问 100 个问题耗时差不多；同一批评测下，比用 Gemini 3.5 Flash-Lite 生成答案便宜近 5 倍。Gemini Notebook 已经用它给每个提问挑模型，日常问题延迟最多降了 40%。\n\n【谁能用】\n\n在 Google AI Studio 拿个 API Key 就能调，模型名 gemini-decision-1，走 v1beta 接口。有免费层，每分钟 200 次、每天 1 万次，免费层的数据会被 Google 用来改进产品，付费层不会。OpenRouter、LangChain、Vercel 等正在接入，Google Cloud 上的 Gemini 要稍后才支持。\n\n不支持上下文缓存和 Batch API，同一份大文档反复问，每次都按全价算输入；不能直接传 YouTube 链接；问题本身只能写文字。\n\n【跟 OpenAI 的同名产品比】\n\nOpenAI 早一个月做了同样的东西，名字也叫 Decisions API：10 月 6 日出测试版，10 月 22 日正式开放，用 GPT-6 Luna，同样每百万输入 Token 0.1 美元、输出不收费。区别是 OpenAI 一次最多 400 个问题，只收文字、图片和 JSON，不收音视频和 PDF；但它支持缓存，重复输入能打折，还能直接塞进对话历史和工具调用记录。\n\n创业公司 TypeSafe 的 Jev 1.14 也专做这类判断，在 OpenRouter 上每百万输入 Token 0.042 美元，只收文字和图片。\n\nGoogle 博客附的对比表里，Gemini Decision 1 在 9 项测试中 7 项第一（其中音频、视频两项只有它和 Flash-Lite 参测），校准误差 0.025，GPT-6 Luna 是 0.072；网页操作和“该不该调用工具”两项输给了 Jev 1.14。7 项共同评测的总花费，Jev 最低，0.68 美元，Gemini Decision 1 是 0.88 美元，GPT-6 Luna 0.93 美元。以上跑分都是 Google 自己测的。\n\nGoogle 博客：https://t.co/P5hlLj7fXN\n官方文档：https://t.co/WphCUZv5oT\nOpenAI Decisions API 文档：https://t.co/MGgS32OuNy",
+      "created_at": "Wed Nov 11 22:39:36 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2120581155078729728",
+        "text": "Today we’re launching the Gemini Decisions API, powered by our new Gemini Decision 1 model in @GoogleAIStudio.\n\nInstead of generating text token by token, it’s built for closed-set choices scoring up to 1,000 questions across text, images, audio, video + PDFs in a single pass. A few details:\n\n- 3 decision types: yes/no, multiple choice (up to 255 options) + rubric scoring\n- $0.10 / 1M input tokens with $0 billed for output tokens (~5x cheaper than Flash-Lite)\n- leads on several benchmark evals with lowest calibration error\n\nGoogle teams are already building with it, below is a look at Stitch Rapid designing a full product flow in seconds (1x speed)",
+        "created_at": "Wed Nov 11 18:15:20 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2120574108635455488",
+            "url": "https://video.twimg.com/amplify_video/2120574108635455488/vid/avc1/1798x1080/SNR8gkld9RnhwiUk.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "14130366",
+          "name": "Sundar Pichai",
+          "screen_name": "sundarpichai",
+          "description": "CEO, Google and Alphabet",
+          "followers_count": 11875789,
+          "friends_count": 204,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 358,
+          "favorite_count": 4618,
+          "reply_count": 286,
+          "quote_count": 206
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 24,
+        "reply_count": 15,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2120648038439956700",
+      "text": "https://t.co/o1yM6JFasJ",
+      "created_at": "Wed Nov 11 22:41:06 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2120583940247552381",
+        "text": "Introducing the Gemini Decisions API\n\nPowered by our new Gemini Decision 1 model, the API is built for fast routing, tool selection, safety checks, and grading inside your apps and agents without the latency or output-token cost of full text generation.\n\n• Up to 1,000 questions evaluated per request\n• $0.10/1M input tokens & $0 output tokens\n• One shared input across text, images, audio, video, and PDFs\n\nStart building today by grabbing an API key in @GoogleAIStudio",
+        "created_at": "Wed Nov 11 18:26:24 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2120583360963923969",
+            "url": "https://pbs.twimg.com/media/HW3TVNrb0AEIQhA.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "50090898",
+          "name": "Google for Developers",
+          "screen_name": "googledevs",
+          "description": "Discover the latest developer tools, resources, events, and announcements to help you build smarter, ship faster. 🚀",
+          "followers_count": 2579277,
+          "friends_count": 315,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 40,
+          "favorite_count": 452,
+          "reply_count": 22,
+          "quote_count": 14
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0

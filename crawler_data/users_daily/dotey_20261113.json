@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 268742,
+    "followers_count": 268779,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261113",
-  "last_updated": "2026-11-13T13:50:14.528900",
-  "tweet_count": 3,
+  "last_updated": "2026-11-13T20:45:14.351031",
+  "tweet_count": 10,
   "tweets": [
     {
       "id": "2121078844627292249",
@@ -139,6 +139,333 @@
         "favorite_count": 123,
         "reply_count": 99,
         "quote_count": 6
+      }
+    },
+    {
+      "id": "2121264740575989803",
+      "text": "RT @dotey: 2008 年人民日报对老黄的采访：《打败对手不是目标——黄仁勋》\n\n坦率地说，很多公司一开始就把我们当成对手。\n\n而直到它们倒下，我可能都不知道还有这么一位对手，不是因为它们太小或者存在的时间太短，而是因为我们不是把对手当成自己的目标。… https://…",
+      "created_at": "Fri Nov 13 15:31:40 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "1765901365442687425",
+        "text": "2008 年人民日报对老黄的采访：《打败对手不是目标——黄仁勋》\n\n坦率地说，很多公司一开始就把我们当成对手。\n\n而直到它们倒下，我可能都不知道还有这么一位对手，不是因为它们太小或者存在的时间太短，而是因为我们不是把对手当成自己的目标。\n\n一个健康的市场，对手总会不停地涌现，甚至会多到让你看都看不过来，而一个健康的公司，不能总把目光放在对手身上。老盯着对手，就会失去自我。\n\n我在创业之前就告诉自己，对手既不会给你提供研发的方向，更不会告诉你客户的新需求，而这两者才恰恰是一家企业生存的根本。尽管如此，创业之初我仍然犯过错误，这个错误并非是模仿对手，而是刻意地执行差异化战略，研发与对手完全不同的产品。事实上，这种错误跟一味模仿对手一样，都是不可饶恕的，都将受到惩罚。因为你把精力放在对手身上，而不是放在客户身上。\n\n有了这个教训，我更加坚信，公司应该把研究客户的需求，解决客户的问题放在第一位，而不是去关注对手。如果你的精力只是放在如何从对手那里把客户抢过来，你还会错失更大的机会：开拓新客户。\n\n几乎所有人都认为 NVIDIA 是一家芯片公司，我虽然不反对他们这么说，但并不赞成。表面上，我们确实是生产芯片的，但在我的眼里，我们从来都不是一家芯片公司，而是一家帮助客户解决复杂视觉计算问题的公司。\n\n如果 NVIDIA 把自己限定为生产芯片的公司，我们就会自动地认为电影和我们没有关系，游戏和我们也没有关系，医院和我们也没有关系。事实上，这些都已经成为我们重要的业务，因为它们背后有一个同样的问题，即复杂的视觉计算问题，这些问题没有一个属于对手，全部属于客户。我想，对目标的这种认定，或许就是 NVIDIA 与对手最大的不同。",
+        "created_at": "Fri Mar 08 00:44:29 +0000 2024",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "1765900975343063040",
+            "url": "https://pbs.twimg.com/media/GIG9lLfW0AAixgO.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 268779,
+          "friends_count": 1792,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 183,
+          "favorite_count": 846,
+          "reply_count": 24,
+          "quote_count": 29
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 183,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2121278375201271974",
+      "text": "段子太过真实以至于看起来像真的 😂\n\n---\n\n我是微软 365的首席站点可靠性工程师（Principal SRE）。我来给大家同步一下目前的背景情况。\n\n大约在协调世界时（UTC）21:40，一名工程师向 Azure Front Door（注：微软云的全球内容分发与负载均衡服务）部署了一项常规配置变更，结果一不小心把我们的身份验证流量，全重定向到了一个 2017 年后就再也没更新过的 SharePoint 网站上。\n\n我们第一时间启动了回滚，但回滚流水线需要通过 Microsoft Authenticator 进行多因素身份验证（MFA）审批。偏偏这个验证器目前正卡在等待“条件访问（Conditional Access）”策略评估的环节，而执行这项评估的，恰恰就是我们正在试图恢复的那套基础设施。\n\n我们本来备有一个紧急破窗管理员账号（break-glass admin account，注：在常规身份验证系统彻底瘫痪时用于最高权限急救的备用账号），但不幸的是，它的密码存在了 OneNote 笔记本里，而这个笔记本正好托管在受本次故障影响的 tenant 上。我们的值班工程师试图通过 PowerShell 脚本绕过这个问题，却发现所需的功能模块上周二刚被弃用，而它的替代模块需要购买 P2 许可证（P2 license）才能使用。\n\n随后，我们向微软尊享支持服务（Microsoft Premier Support）提交了一个最高级别（Sev A）的故障工单。客服很快回复了，让我们在本地运行一下 sfc /scannow（注：Windows 系统中最基础的本地系统文件扫描命令，面对云端大规模架构瘫痪毫无用处，此处是网友对微软客服“万金油式敷衍回复”的经典吐槽）并把运行结果截图发给他们。\n\n此次恢复耗时之所以这么长，主要是因为我们的变更顾问委员会（CAB）规定，必须召开一场 Teams 线上会议才能正式授权回滚操作。眼下，会议组织者本人正被卡在会议室的“等候大厅（lobby）”里进不去，而唯一有权限放他进会议室的那位同事，今年六月份就已经被裁掉了。\n\n目前的临时缓解方案，是把受影响的用户全部升级迁移到价格更贵的 Microsoft 365 E5 套餐，从“创收”的角度来看，这应该就能完美解决这次的问题了。我们已经查明了本次事故的根本原因：全是客户自己配置不当导致的。\n\n我们将在 30 分钟后发布下一轮进展通报，前提是到时候有人能把 Outlook 邮箱给修好。",
+      "created_at": "Fri Nov 13 16:25:50 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2121263908443078905",
+        "text": "Reddit的，应该算公开信息🤪 https://t.co/VSPO2RPGbV",
+        "created_at": "Fri Nov 13 15:28:21 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2121263904194273280",
+            "url": "https://pbs.twimg.com/media/HXA-SCxboAA-2Yb.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "218791339",
+          "name": "geniusvczh",
+          "screen_name": "geniusvczh",
+          "description": "",
+          "followers_count": 25422,
+          "friends_count": 261,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 339,
+          "favorite_count": 6702,
+          "reply_count": 140,
+          "quote_count": 73
+        }
+      },
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 129,
+        "reply_count": 27,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2121290779427520520",
+      "text": "这个 Claude Meeting 的使用反馈很有意思，在一场客户会议中，Claude 全程都在“划水”，因为它把所有不属于我所在组织的人都当成了需要防备的“外部访客”。\n\n但在用户的业务场景里，这些所谓的“外部人员”正是重要的客户，也恰恰是召开这场会议的全部意义所在。\n\n如果 AI 把客户当成需要严加防范的风险，那就意味着在用户最需要 AI 的时候，它却在那里袖手旁观。",
+      "created_at": "Fri Nov 13 17:15:08 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2121227699897471387",
+        "text": "Open letter to Dario about Claude Meetings. Please don't be Satya. https://t.co/0uaBwprBq3",
+        "created_at": "Fri Nov 13 13:04:28 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2121227492975378432",
+            "url": "https://pbs.twimg.com/media/HXAdKoaXAAALRtX.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "5976",
+          "name": "Joakim Jardenberg 🔕",
+          "screen_name": "jocke",
+          "description": "The AI and internet guy. Global speaker. Facilitator. Senior advisor. Business angel. Head of Internet Emeritus. Gör #ensakidag på svenska. He/him/his",
+          "followers_count": 25117,
+          "friends_count": 3130,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 6,
+          "favorite_count": 493,
+          "reply_count": 35,
+          "quote_count": 3
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 28,
+        "reply_count": 25,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2121321443019432002",
+      "text": "Depue 称中国模型用了禁运芯片：报告自己承认的限制，推文里都没了\n\n前 OpenAI 研究员 Will Depue 11 月 12 日发推，称找到“确凿的取证证据”：DeepSeek、月之暗面、MiniMax、蚂蚁“用被禁止出口中国的 Blackwell 芯片打造了最新模型”，涉及“超过 5 亿美元”的禁运芯片，“出口禁令显然在严重失效”。\n\n问题在于，这些结论大多不在他自己的报告里。报告承认的几条关键限制，到了推文里全不见了。X 用户 Daebak 앤디（@MyDaebakCafe）当天发长帖逐条拆解，他说：“指望没人读过标题，华盛顿的舆论就是这么制造出来的。”\n\n【指纹只管“第 0 步”】\n\nDepue 找到的，是模型训练开始前那一刻留下的痕迹：训练前要先往模型里填一批随机数，不同芯片填出来的排列不一样，部分排列训练后还留着。\n\n@MyDaebakCafe 也承认这个方法本身没问题，能看出生成初始权重的那台机器是 Blackwell。但他指出，报告原文写的是，这些痕迹只说明权重“怎么创建”，“支持、但不能证明” Blackwell 参与了训练。在他看来，初始化几秒钟就能做完，完全可以在租来的一台机器上生成，再搬到老一代芯片的集群上训练。\n\nDepue 后来回应说，Kimi K3 的初始权重由几十个进程同时生成，更像是整个训练集群在启动，单独生成再搬运说不通。这是他的推断，报告里仍然写着“不能证明”。\n\n【“5 亿美元”不是指纹算出来的】\n\n@MyDaebakCafe 的第二个要点是，几千张卡、5 亿美元这些数字，跟指纹没有关系，Depue 在推文里自己用的词就是“估算”，依据是发布时间和模型参数。\n\n报告写得更清楚：估算依赖芯片效率、训练数据量、训练时长几项“权重无法证实”的假设，作者“对这些估算没有把握”，而且报告发布当天就改了一轮数字。推文里“很可能数十亿美元”，报告没有给出任何算法。\n\n【芯片在哪、合不合法，一概不知】\n\n报告执行摘要最后一句承认，证据“不能说明芯片在哪、怎么拿到的、是否违反出口管制”。@MyDaebakCafe 提醒，Depue 自己的验证也是在租来的云端 GB200 上做的；他说，不在美国实体清单上的公司，在新加坡、日本、中东的云上租 Blackwell，按美国商务部现行规则完全合法，留下的指纹一模一样。\n\nDepue 在推文里也承认芯片可能是境外租的，称之为“国会还没堵上的漏洞”。走私涉嫌违法，境外租用至多是规则漏洞，性质完全不同。Depue 分不清是哪一种，却直接得出“禁令严重失效”。\n\n【其他网友的质疑】\n\n网友 @dodecagonism 指出，报告收了 11 月发布的 Kimi K3.1-Pro，却没把 DeepSeek 9 月发布的最新模型 V4.1-Flash 列进结果，“看起来是故意把方法不适用的模型都排除掉”。报告“局限”一节写了 V4.1-Flash 没找到任何指纹，推文只说四家的“最新模型”用了 Blackwell，对此一字没提。Depue 回应说，这说明方法不会对谁都报 Blackwell，DeepSeek 可能换了生成初始权重的方式；随后又发帖说“可能破解了，看起来像是英伟达”，目前还没公布结果。\n\n网友 @dfranke 认为，报告所有惊人的结论都建立在“用哪种芯片初始化，就用哪种芯片训练”这个假设上，而报告自己就发现，有些模型的初始权重是在普通 CPU 上生成的，说明这个假设并不总成立。Depue 回应说，那是训练程序先在本机 CPU 上生成、再拷到本机显卡，跟跨集群搬运是两回事。\n\n@MyDaebakCafe 在后续帖子里还提出，中国大厂用的是自己改过的训练框架，如果某段自定义代码把布局写死，用老芯片也能留下同样的痕迹。这一条 Depue 没有直接回应。\n\n【谁来背书，为什么是这天】\n\n推文说结果“经过 OpenAI 和 Anthropic 资深研究员独立验证”，报告里没有一个名字。当晚 Depue 又说，私下验证的人大多不愿具名。\n\n@MyDaebakCafe 质问：为什么偏偏在 11 月 12 日、黄仁勋辞去英伟达 CEO 的当天发布？他的解读是，美国闭源模型公司眼看付费 API 的生意被免费的中国开源模型蚕食，这份报告正好递给华盛顿鹰派一个理由，去管控全球云算力、打压开源 AI。\n\n动机属于他的推测，但有几件事是公开的：OpenAI 和 Anthropic 都指控过中国实验室“蒸馏”自家模型，Anthropic CEO Dario Amodei 专门发文支持收紧对华芯片出口；Depue 说发布前和官员通过信；发布约 40 分钟后，他又发帖为自己的新机构 Unemployment Labs 募资 500 万美元。匿名验证者来自利益相关方，发布者也有自己的诉求，这样的结论需要独立复现，目前还没有具名的第三方公布结果。\n\n中国驻美使馆 2 月回应美国官员的同类指控时说，反对“泛化国家安全概念、滥用出口管制、把经贸科技问题政治化”。截至 11 月 13 日，四家公司和英伟达还没有回应这份报告。\n\nDepue 原推：https://t.co/84tVCbTDJX\nDepue 报告：https://t.co/d41kDvtzMh\n@MyDaebakCafe 原帖：https://t.co/qWsK5DrPwZ",
+      "created_at": "Fri Nov 13 19:16:58 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2120992457630326841",
+        "text": "I have a major result to share.\n\nI’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China.\n\nThis sounds insane, but I discovered that almost every AI model carries a hidden signature of the GPU that trained it. When a model is first set up, the starting values of its weights are laid out in a pattern that depends on the exact GPU. Each combination of GPU and seed number produces a unique pattern—a sort of fingerprint of the hardware used to create the model. Traces of that pattern survive training into the published model.\n\nAgain, this evidence isn’t based on any insider information or leaking. It’s based on a forensic analysis of the model weights released by the companies themselves.\n\nI searched more than six trillion combinations of chip layout and seed number and matched them to open-weights models. In doing so, I found conclusive evidence that six Chinese AI models—including DeepSeek-V4-Pro, Kimi K3, and MiniMax-M3—were initialized on NVIDIA Blackwell systems. Four of the models match Grace Blackwell, the GB200 and GB300 parts in NVIDIA’s flagship liquid-cooled rack-scale systems.\n\nI then verified these results on real hardware. Running unmodified PyTorch with the seeds I’d recovered, a Blackwell B300 reproduced DeepSeek-V4-Flash’s untouched starting weights bit for bit, and a rented GB200 reproduced Kimi K3’s to a correlation of 0.999995. A Hopper H100 reproduced none of DeepSeek-V4-Flash’s, and changing the seed by one broke the match. (DeepSeek’s seed is 953049583 by the way.) The method also was verified to match 24 known open-weights models to the hardware that developers said they used.\n\nIt is exceedingly unlikely that these results are a coincidence. Across six trillion combinations, the best accidental match should reach only about 8 sigma (i.e., eight standard deviations above what random chance would produce). The real matches range from 49 to 1,385 sigma, and even the weakest single test hits 20.\n\nThese were data-center-scale training runs. With some analysis of release schedules and model details, I estimate that the largest, Kimi K3 and DeepSeek-V4-Pro, used 2,000 to 3,000 Blackwell GPUs each. Clusters of this size cost on the order of $150 to $200 million each to buy, and across these labs alone would add up to more than half a billion dollars of export-controlled GPUs, not counting experimental compute or otherwise. It’s quite likely that we see multi-billion dollar expenditure on export-controlled GPUs.\n\nI am highly confident in this result, and it has been independently verified by senior researchers at OpenAI and Anthropic. You can read the full report at https://t.co/YOtzND0Jqk.\n\nThere is much more I’ve identified about these models through other forms of checkpoint forensics like this, and will have more to share soon.",
+        "created_at": "Thu Nov 12 21:29:42 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2120991467766181888",
+            "url": "https://pbs.twimg.com/media/HW9GgJ_WcAA9m3I.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "998575387067142144",
+          "name": "will depue",
+          "screen_name": "willdepue",
+          "description": "dei ex machina\nprev @ openai (sora 1 & 2, posttraining o3/4o, pretraining moonshots)",
+          "followers_count": 99922,
+          "friends_count": 2729,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 6010,
+          "favorite_count": 38780,
+          "reply_count": 1702,
+          "quote_count": 2056
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 26,
+        "reply_count": 10,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2121321507007893853",
+      "text": "@MyDaebakCafe 原帖\nhttps://t.co/Mdd8klHcZM",
+      "created_at": "Fri Nov 13 19:17:14 +0000 2026",
+      "lang": "ja",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2121031084653637728",
+        "text": "I am actually disgusted by the timing of this drop. And this will get a bit more technical. \n\nLet’s do a real technical teardown of this \"1,385-sigma Blackwell weight fingerprint\" report that OpenAI and Anthropic are breathlessly promoting today, because banking on nobody reading past the headline is how DC narratives get manufactured.  \n\n​First, look at the actual CUDA maths: when PyTorch initialises model weights (torch.nn.init) with a fixed PRNG seed, curand/Philox parallelises random number generation across the GPU’s Streaming Multiprocessors (SMs).\n\nBecause Hopper has 132 SMs and Blackwell has 148 or 152 SMs, the exact same seed lays out initial weights in a different spatial pattern depending on the GPU’s SM count. In huge MoE models, certain low-gradient null-spaces or unrouted slices preserve faint directional traces of those step-0 weights even after training.  \n\n​So yes, brute-forcing the seed and SM grid can show that a model’s step_0 weight initialisation script ran on a 148/152-SM Blackwell GPU. Now read what the summary explicitly admits in the fine print:  \n\n1. Initialisation is not full training: The report literally states that these signatures show how the weights were created, and \"support (but do not prove) the inference that Blackwell also participated in model training\". Initialising a model checkpoint takes seconds on a single rented dev node before loading the safetensors onto a standard Hopper cluster. The \"2,000 to 3,000 Blackwell GPUs\" and \"$500 million\" cluster numbers do not come from the weight fingerprint and Depue admits in his own thread that he simply \"estimated\" cluster sizes from release schedules and model details. \n \n​2. Zero geolocation and zero proof of smuggling: The final sentence of the executive summary explicitly admits that the findings \"do not establish the physical location of the chips, how they were acquired, or whether export control regulations were violated\". Depue himself rented a cloud GB200 instance just to run his verification test. Commercial labs that are not on the Entity List renting bare-metal Blackwell nodes in offshore clouds (Singapore, Japan, or the Middle East) is completely legal under BIS rules and leaves the exact same SM fingerprint.\n\nNow ask yourself why a former OpenAI researcher dropped this on November 12, the exact day Jensen Huang was pushed out, with OpenAI and Anthropic immediately stepping in to \"independently verify\" it. \nUS closed-source labs are watching their paid API moats get eaten alive by free Chinese open-weights models.\n\nConflating a step-0 PRNG initialisation seed with a \"$500M smuggled Blackwell cluster\" hands DC hawks the exact pretext OpenAI and Anthropic want to regulate global cloud compute and kneecap open-source AI.",
+        "created_at": "Fri Nov 13 00:03:12 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1116095612129357824",
+          "name": "Daebak 앤디",
+          "screen_name": "MyDaebakCafe",
+          "description": "Father of two, full time linux nerd, loving South Korea, China & Japan!! I don't like extremists and ultra nationalists!",
+          "followers_count": 1818,
+          "friends_count": 541,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 78,
+          "favorite_count": 532,
+          "reply_count": 24,
+          "quote_count": 9
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2121321941755945341",
+      "text": "@MyDaebakCafe https://t.co/IzklrauYSf",
+      "created_at": "Fri Nov 13 19:18:57 +0000 2026",
+      "lang": "qme",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2121108389208179026",
+        "text": "\"I have a major result to share.\" https://t.co/dS8JB4VzXW",
+        "created_at": "Fri Nov 13 05:10:22 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2121108132881436672",
+            "url": "https://pbs.twimg.com/media/HW-wm9aXEAAifSx.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1066843690096893953",
+          "name": "vincent",
+          "screen_name": "icanc4",
+          "description": "he/him | I fixed cameras @meckaai | micro managing @uwrealitylabs | i study software at @uwaterloo",
+          "followers_count": 2556,
+          "friends_count": 461,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 36,
+          "favorite_count": 1084,
+          "reply_count": 11,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2121337147613389074",
+      "text": "RT @suwakopro: 实际上没有cuda当年alex net就训不出来，也就不会在imagenet上拿到第一名，那么深度神经网络这条路线也就不会获得资本投资。如果没有老黄送钱推销算力卡，scaling law这个路线也不会出来。所有东西都要晚很多年。",
+      "created_at": "Fri Nov 13 20:19:23 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2121316516612427931",
+        "text": "实际上没有cuda当年alex net就训不出来，也就不会在imagenet上拿到第一名，那么深度神经网络这条路线也就不会获得资本投资。如果没有老黄送钱推销算力卡，scaling law这个路线也不会出来。所有东西都要晚很多年。",
+        "created_at": "Fri Nov 13 18:57:24 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2121271570505072733",
+          "text": "Back in 2012, AlexNet was trained on two NVIDIA gaming GPUs. Jensen understodd what that meant before almost anyone else, and bet the company on it.\n\nA couple weeks ago he spent a good chunk of a meeting with us nerding out on our little $400 open-source microrobot. Why it runs hot, which chip would get more FLOPs, how many watts it would draw 🤓\n\nHis latest big bet has been open models, his very first post on X 👇\n\nIf open models had only one champion, this week would have been the end. They have millions of builders, including plenty inside NVIDIA who’ve been messaging us the same thing: keep building in the open.\n\nWe will.",
+          "created_at": "Fri Nov 13 15:58:48 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "246939962",
+            "name": "Thomas Wolf",
+            "screen_name": "Thom_Wolf",
+            "description": "co-founder @HuggingFace - moonshots\n\nget your Microducks and Reachy Mini's at https://t.co/ovuIUzu5Ov",
+            "followers_count": 138141,
+            "friends_count": 8097,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 71,
+            "favorite_count": 636,
+            "reply_count": 25,
+            "quote_count": 4
+          }
+        },
+        "user": {
+          "id": "283511225",
+          "name": "Suwako — e/acc",
+          "screen_name": "suwakopro",
+          "description": "🚀 e/acc 技术乐观主义者 | 💻 静态强类型类型爱好者 | 🎲 发言随机生成 | 📊 实证分析大于规范分析 | 🌐 水平思考 | @suwako@mas.to | https://t.co/AeMdArn8vl",
+          "followers_count": 3421,
+          "friends_count": 865,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4,
+          "favorite_count": 18,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
       }
     }
   ]

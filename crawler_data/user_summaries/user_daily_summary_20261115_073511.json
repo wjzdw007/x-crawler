@@ -1,0 +1,14 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-11-15T07:35:11.557860",
+  "tweet_count": 9,
+  "summary": "**dotey 今日分享分析（2026年11月14日）**\n\n**新工具/技术**\n- **Claude Code 桌面版 mods**：支持自定义主题皮肤，可改配色、加动态背景，直接告诉 Claude 想要的样子即可生成，官方附 theme-examples 插件。\n- **Always-on Agent 五要素**：Anthropic《Building always-on agents》拆解常在线助理——收件箱唤醒、定时器主动触发、记忆文件夹、权限控制、发件箱决定何时开口。\n- **ARTEX**：开源 LLM 驱动的 Agent 渗透平台，被 FBI 发 FLASH 警示用于自动化网络入侵。\n- **《潮汐战线》**：开发者用模型自制的《高级战争》精神续作，发布在 DeepSeek Harness Game Store 并 GitHub 开源。\n\n**核心观点/方法论**\n- 常在线 Agent 大部分时间应“睡觉”，事件驱动才唤醒，不调用模型就不花钱；记忆要省，敏感操作留给人拍板，上线初期先让它安静。\n- 主会话与多 Session 都不够好：人只盯主会话，由协调器判断消息归属并派活，但必须能点开子任务看细节、补上下文、直接干预——像老板可越过总监直接指挥。\n- 只盯主会话会丢两样东西：做了哪些任务、任务产出了什么成果；需把“任务”和“成果”从对话流中结构化沉淀，否则像在微信群里翻文件。\n- Claude Code 先建 Project 再开 Session 对非编码任务是反人性的；Bot 形态更自然——默认一个 Bot 主会话，按任务开不同 Bot。\n- 转发 @guyingjie129 的 H 型人才论：搜索时代淘汰百科全书式人才，大模型时代淘汰能言善辩者；稀缺的是在数学、物理、心理学、计算机等元学科与编译器、框架、架构等元技术上有深度的人。\n\n**实践经验/案例**\n- ARTEX 的攻击效率：微软称有团队用它通过被盗 ConnectWise 凭证攻击全球数百家组织，每分钟超 2900 次登录尝试，最快不到 3 小时拿到 M365 最高权限；原始项目已闭源，但 fork 仍在。\n- 本地化 GLM/DeepSeek + 开源渗透框架 + 人，可把数周渗透压缩到数小时；FBI 警示意味着 Agent 攻防不对称加剧，防守方更难。\n- 太空侧：SpaceX 星舰 Flight 15 首次由发射塔捕获飞船，dotey 简短评价“星舰牛逼”。",
+  "metadata": {
+    "original_tweets": 6,
+    "retweets": 3,
+    "media_tweets": 2,
+    "data_hash": "4601f8d8",
+    "data_date": "20261114",
+    "user": "dotey"
+  }
+}

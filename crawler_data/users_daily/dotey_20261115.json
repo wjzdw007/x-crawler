@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 268839,
+    "followers_count": 268898,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261115",
-  "last_updated": "2026-11-15T01:30:57.208764",
-  "tweet_count": 1,
+  "last_updated": "2026-11-15T08:46:30.644242",
+  "tweet_count": 3,
   "tweets": [
     {
       "id": "2121768160663908359",
@@ -100,6 +100,97 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2121835140850602200",
+      "text": "Lauren Tan 在 AI Engineer 大会上的演讲《All Code Is Slop (Except Mine)》要点。她在 SpaceXAI 负责 Grok Bot 桌面版。\n\n1. 每纠正 AI 一次，就把这次纠正写成 lint 这类自动检查规则，少往 agents.md 这类说明文档里加话。违反 lint 规则的代码会直接报错、提交不上去，文档里的话 AI 不一定照做。\n\n2. 代码库是 AI 最主要的学习材料。里面的坏写法、临时补丁，会被下一个 AI 当成惯例照抄，像杂草一样越长越多，所以代码库要保持干净。\n\n3. 容易用错的东西，直接禁掉。React 里有个功能人都常用错，AI 更用不好，他们在产品代码里禁用了它，这类问题从此不再出现。\n\n4. 禁掉 99% 的代码注释。AI 爱在注释里给自己走的捷径找理由，后来的 AI 就照着学。她在 Cursor 时，这种“有理由的补丁”扩散开来，把应用拖得很卡。\n\n5. 让 AI 自己检查自己的活。AI 把程序跑起来像用户一样点一遍，交上录屏和截图，人审代码就变成看这些材料。她的 Token 大部分花在这一步。\n\n6. 以前用不起的检查方法，现在用得起了。用数学方法证明程序没问题这类严格验证，过去太费人力，AI 把成本降了下来。\n\n7. 结果：团队上个月合并了 1.1 万个 PR，被撤回的约 0.5%，应用比刚发布时还快。\n\n8. 先打好地基，再谈全自动。AI 写代码这一步本身出烂代码的话，全自动化只会出更多烂代码，还更费钱。",
+      "created_at": "Sun Nov 15 05:18:14 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2121834386165260288",
+          "url": "https://pbs.twimg.com/media/HXJFIduW4AALFDa.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2121834413725978624",
+          "url": "https://pbs.twimg.com/media/HXJFKEZWEAAoewn.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2121834435414749184",
+          "url": "https://pbs.twimg.com/media/HXJFLVMWcAAnsl4.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2121834466712690688",
+          "url": "https://pbs.twimg.com/media/HXJFNJyXIAAPXzR.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2121834485121462272",
+          "url": "https://pbs.twimg.com/media/HXJFOOXWsAA-Mlf.jpg"
+        },
+        {
+          "type": "photo",
+          "id": "2121834498711011328",
+          "url": "https://pbs.twimg.com/media/HXJFPA_WwAArLNZ.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2121673563489140863",
+        "text": "my AIE talk is up! come hear how the grok @bot team ships so quickly without compromise on quality\n\nhttps://t.co/Fel7tlxqSL",
+        "created_at": "Sat Nov 14 18:36:10 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2832427459",
+          "name": "lauren",
+          "screen_name": "poteto",
+          "description": "grok @bot at @SpaceXSI. react compiler core team, prev cursor, meta, netflix",
+          "followers_count": 288882,
+          "friends_count": 911,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 390,
+          "favorite_count": 5046,
+          "reply_count": 235,
+          "quote_count": 99
+        }
+      },
+      "stats": {
+        "retweet_count": 34,
+        "favorite_count": 341,
+        "reply_count": 97,
+        "quote_count": 11
+      }
+    },
+    {
+      "id": "2121837146357006829",
+      "text": "转译：为什么面试聊得挺好，你却还是没拿到 Offer？（面试官视角）\n\n我在论坛上看到过很多关于这个话题的帖子，所以想从面试官的角度，分享几个常见的原因：为什么明明候选人自己觉得面试发挥得特别好，最后我们却依然没能录用他。\n\n1. 在核心岗位要求的问题上，你的回答不够扎实。 我遇到过不少这样的候选人：面对那些属于“加分项 (nice to have)”的技能问题时，他们对答如流、表现惊艳；但一问到核心的硬性技能 (core mandatory skill)，回答就显得有些单薄，最终也因此被淘汰。这里的难点在于，候选人往往并不清楚公司最看重的到底是什么技能，尤其是招聘启事 (job posting) 上可能也写得模棱两可。如果一份招聘启事列了一大堆要求，我觉得非常值得在面试一开始就主动问清楚。比如你可以这样说：“我的过往经历比较广泛，但今天这场面试，我希望能把重点放在贵公司最看重的部分。在你们列出的岗位要求中，有哪些是优先级特别高、需要我在接下来的交流中重点展示的吗？”\n\n2. 早有其他内定或更偏爱的人选，这与你个人无关。 举个例子，我曾多次参与面试评审团 (hiring panels)，期间遇到过让我惊艳的优秀候选人，双方聊得非常投机，我也强烈推荐录用他……但评审团里另一位更有话语权的面试官，心里已经有了别的意向人选（通常是他们以前合作过、知根知底且配合默契的熟人）。又或者，这个岗位本身就有一位实力很强的内部候选人 (internal candidate) （注：指公司内部申请转岗或晋升的员工，通常因熟悉公司业务和文化而具备天然优势），除非他在面试中表现得一塌糊涂才会痛失机会——但只要发挥得中规中矩，这个岗位就稳稳是他的了。\n\n3. 你确实非常优秀，但不太适合这个特定岗位。 好几次我和候选人聊得极其愉快，心里甚至忍不住感叹：“天呐，真希望我们有个别的岗位能留住这个人！”因为他们显然是不可多得的人才，只是和当前招人的这个岗位不那么契合。这通常出于一些你无法控制的客观原因：比如对这个岗位来说，你的资历显得太浅或太深；又或者你的技能树和兴趣点偏向另一个专业领域，而我们在当前岗位上很难让你充分发挥。举个例子，我曾经面试过一位极其优秀的候选人，经验非常丰富，我们所有人也都被他的过往作品深深吸引。但聊下来可以明显看出，他平时更多是在做统筹与管理，而不是亲力亲为地做一线落地执行 (hands-on implementation)，而我们这个岗位恰恰急需一个能直接上手干活的实干家。\n\n4. 存在一些未明说的“隐性门槛”或偏好，而你恰好没满足。 我觉得这种情况比大家想象的要普遍得多。比如，我有一次参与面试时，内部其实心知肚明这个岗位没有任何晋升空间。其中一位候选人明显非常有野心、渴望往上走，于是我们淘汰了他，因为我们更想找一个愿意在天花板明显的岗位上安稳待得更久的人。还有一次，我们知道这个岗位平时需要频繁对接一位性格强势、很难搞的业务相关方 (stakeholder) （注：指在项目中与你存在工作交集、利益关联的同事、跨部门负责人或客户），所以我们淘汰了一位看起来过于顺从、脾气太好的候选人，因为我们清楚这里需要一个极其自信、能够守住底线并顶住压力的人。这类要求大多数公司是绝对不会写在招聘启事上的，属于典型的“隐性要求”。此外，有些招聘启事单纯就是写得很烂，根本没有准确传达出招聘经理 (hiring manager) 真正想要什么样的人。所以，如果你觉得自己明明符合纸面上的所有要求却还是落选了……请记住，背后很可能存在一些你不知道的隐性条件。\n\n5. 你已经很棒了，但刚好有人比你更匹配。 有些岗位的竞争真的非常激烈，会涌现出一大批背景强硬、条件完全达标的候选人，我自己在做决定时也常常纠结万分。在这种情况下，最终的胜负往往取决于一些极其微小且主观的细节——比如另一位候选人刚好比你多满足了几个我们的加分技能。\n\n6. 其实面试并没有你以为的那么顺利。 我在面试评审团里遇到过一些明显不会“察言观色 (read the room)”的候选人，我完全能想象到，他们回去后可能会觉得自己发挥得棒极了，但其实根本不是那么回事——我们当时只是在保持礼貌而已。我还见过评审团里的同事对某位候选人表现得极其热情（比如不断追问、非常宽容地引导思路、肯定或顺着对方的话往下聊），哪怕在座的所有面试官心里都清楚这位候选人根本没戏。我个人通常会尽量避免这样做，免得给候选人造成虚假的希望；但有些面试官确实会因为同情那些表现不佳的候选人，而觉得有必要对他们格外友善。如果你担心自己属于这种情况，我建议找身边认识的人做几次模拟面试 (mock interviews)，听听他们对你面试表现的真实反馈。\n\n总而言之，拿不到 Offer 往往没那么简单，并非只有“你肯定哪里做错了”或者“整个面试流程都是走过场”这两种极端。很多时候你完全没有做错任何事（一切都不在你的掌控范围内），纯粹只是因为背后还有其他客观因素在起作用罢了。\n\nhttps://t.co/rnrUxCQdXV",
+      "created_at": "Sun Nov 15 05:26:12 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2121836987820740608",
+          "url": "https://pbs.twimg.com/media/HXJHf5pXEAAgZNK.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 17,
+        "favorite_count": 199,
+        "reply_count": 32,
+        "quote_count": 2
       }
     }
   ]

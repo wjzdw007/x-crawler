@@ -1,0 +1,54 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 269050,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261116",
+  "last_updated": "2026-11-16T04:26:58.743557",
+  "tweet_count": 1,
+  "tweets": [
+    {
+      "id": "2122162706606121396",
+      "text": "主会话 + Thread 的模式，优化好的话 Token 消耗其实还好。\n\n首先主会话反而不需要特别强的模型，Sonnet 5.5 这个级别都够用了，因为它的主要职责是甄别和路由，或者说调度。\n\n就跟公司前台一样，你不需要招一个专家，只要知道什么任务该找谁。\n\n主会话里面很多任务都可以让 Thread 去完成，反倒是 Thread 应该用相对强一些的模型。当然更科学的办法是主会话在调度的时候根据任务难度去选择合适的模型。\n\n比如我在用 Claude Project 的时候，主会话是 Sonnet 5.5，子任务是 Opus 5.5。\n\n另外就是 Prompt Caching 的利用。\n\n像主会话这种，特点是偶尔来个消息，很难利用好缓存，所以缓存如果过期了，不应该跟把所有历史会话和工具调用都发过去，而是只把最新的几条消息记录发过去，再配合 Session 的检索工具，可以很容易的收集齐上下文。\n\n而对于 Thread，则是像传统的 Session 会话，会集中时间有很多对话，通常 Cache 利用率很高，但是也可能会出现缓存过期后又来新的消息，所以最佳策略是在缓存快过期的时候，比如 50 分钟（如果缓存一个小时的话）的时候，压缩一下上下文。",
+      "created_at": "Mon Nov 16 02:59:51 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2122158981644685613",
+        "text": "问题是，Grok bot这个如果走单主会话的交互太耗额度了。https://t.co/94yxyjGU2d",
+        "created_at": "Mon Nov 16 02:45:03 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2052242091623718917",
+          "name": "Gary Zhang",
+          "screen_name": "GaryZhang124",
+          "description": "在学 AI、用 AI。这里只放认知、实践，和一点点心得。",
+          "followers_count": 11,
+          "friends_count": 50,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 1,
+          "reply_count": 1,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 4,
+        "favorite_count": 30,
+        "reply_count": 52,
+        "quote_count": 1
+      }
+    }
+  ]
+}

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 269364,
+    "followers_count": 269386,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261117",
-  "last_updated": "2026-11-17T17:19:29.414068",
-  "tweet_count": 1,
+  "last_updated": "2026-11-18T00:25:15.150193",
+  "tweet_count": 5,
   "tweets": [
     {
       "id": "2122731751625884152",
@@ -48,6 +48,166 @@
         "favorite_count": 50,
         "reply_count": 5,
         "quote_count": 1
+      }
+    },
+    {
+      "id": "2122755808689549335",
+      "text": "OpenAI 发布 GPT-6.2 Astra 和 Sol：Plus 及以上订阅直接能用，Astra API 降价 20%\n\nOpenAI 11 月 17 日发布 GPT-6.2 的两款模型。Astra 是它最强的旗舰，接替 GPT-6 Astra，主要拿来和 Anthropic 的 Claude Fable 5.2 比；Sol 是日常干活的主力，接替 GPT-6.1 Sol。中间档的 GPT-6.1 Terra 和最便宜的 GPT-6 Luna 这次没更新。\n\nOpenAI 这次主打同样的活用更少的 Token：订阅额度更耐用，API 每个任务花得更少。\n\n【我能不能用，要不要另付钱】\n\n不用另付钱。OpenAI 博客说，Plus、Pro、企业版和教育版用户从今天起就能在 ChatGPT Work 和 Codex 里选这两个模型，帮助文档的名单里还多了 Business。普通聊天界面里没有，要进 Work 用；企业版和教育版要管理员先打开。\n\n额度比上一代略宽。按 OpenAI 文档的估算，Plus 用户每 5 小时大约能给 Astra 发 6 到 50 条消息（GPT-6 Astra 是 5 到 45 条），Sol 是 17 到 180 条（GPT-6.1 Sol 是 15 到 160 条）。Pro 目前没有 5 小时限制。\n\n放到三家一起看：Claude Fable 5.2 在 Claude 的 Pro 套餐里要按量另付费，Max、Ultra 这些更贵的套餐才含在额度里；Gemini 4 Carbon 在 Gemini App 里只给每月 99.99 美元起的 Ultra 用户。每月 20 美元的 Plus 就能用 OpenAI 的旗舰，是三家里门槛最低的。\n\n嫌慢可以开 Ultrafast 模式。官方文档说它的生成速度最高是标准模式的 4.5 倍，但要消耗 6 倍额度。每月 500 美元的 Pro 两个模型都能开，200 美元的 Pro 目前只能在 Sol 上开。\n\n【API 多少钱】\n\nAstra 每百万 Token 输入 8 美元、输出 40 美元，比 GPT-6 Astra 的 10 美元和 50 美元便宜 20%；缓存命中的输入从 1 美元降到 0.4 美元。Sol 维持 GPT-6.1 Sol 的 2 美元和 10 美元。\n\n单价上，Astra 和 Fable 5.2 一样，是 Claude Opus 5.5（4 美元和 20 美元）的两倍；Sol 和 Gemini 4 Carbon 现在的引入价持平，Carbon 12 月 1 日起涨到 4 美元和 20 美元。\n\n【比上一代和对手强在哪】\n\n最有代表性的是 Agents' Last Exam，测多步骤的职业工作。OpenAI 说 Astra 比 GPT-6 Astra 高 5.2 分，花费不到三分之一；比 Fable 5.2 高 5.5 分，花费只有 5%。两者单价相同，这个差距主要来自 Astra 完成任务用的 Token 少得多。\n\nOpenAI 还说 Astra 是“对科学家来说全世界最好的模型”：在终端里做科研任务的测试 Terminal-Bench-Science 上，它比 GPT-6 Astra 高 9 个百分点，花费不到三分之一。\n\n法律测试 Harvey LAB-AA 上，Astra 的通过率是 Fable 5.2 的两倍多，花费约六分之一。Artificial Analysis 组织的 3D 网页盲测里，Astra 以 1318 分排第一，Fable 5.2 是 1271 分，Sol 是 1259 分。\n\n做幻灯片是这次的重点：给 Astra 一份模板文件，甚至只给一张截图，它能照着原来的排版、配色、字号做新页面。\n\nSol 的卖点是性价比。在 Cognition 的写代码测试 FrontierCode 2.0 里，Sol 只比 Astra 低 0.5 分，花费约五分之一。在日常任务测试 LifeVal 上（比如搬家后筛幼儿园、按预算和通勤找房子），Sol 的分数超过 GPT-6 Astra，花费约七分之一。\n\n【安全上的变化】\n\nOpenAI 说这两款的网络安全能力达到它风险评估框架里最高的 Critical 档，所以上了更严的防护，代价是一部分正当的漏洞研究和安全测试也会被拒。经过审核的安全人员目前只能在 Daybreak 计划里用 GPT-6 系列的放宽版本，OpenAI 说会把 6.2 也加进去。\n\n用 Codex 的人要留意一个问题：在两项测试里，这两款模型比 GPT-6 Astra 更容易不提它被什么卡住了，比如要改的文件不见了、搜索工具用不了。OpenAI 说已经在 Codex 里加了指令，大幅减少这种情况，还在继续查原因。\n\n文中跑分都出自 OpenAI 的发布博客。其中 Fable 5.2 的 Agents' Last Exam 成绩去掉了 9 道用了备用模型的题；Terminal-Bench-Science 上，OpenAI 引用的是第三方测试框架里的 Fable 成绩，Anthropic 自己在 Claude Code 里测的是 74.6%。截至发稿，Artificial Analysis 官网榜单还没列出 GPT-6.2。\n\n原文：https://t.co/81ZFwwB0Uo",
+      "created_at": "Tue Nov 17 18:16:38 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2122755647766753280",
+          "url": "https://video.twimg.com/amplify_video/2122755647766753280/vid/avc1/1920x1080/GGP6_VTBTyDVafsO.mp4?tag=29",
+          "bitrate": 10368000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2122750124543926515",
+        "text": "Some of you have been asking very politely. Some of you have just been asking.\n\nGPT-6.2 Astra and Sol are now available.\n\nSuper efficient and built to perform where it counts—the real world.\n\nhttps://t.co/qr2iP0GpfX https://t.co/jLCyVIws2Y",
+        "created_at": "Tue Nov 17 17:54:03 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2122746240823943168",
+            "url": "https://video.twimg.com/amplify_video/2122746240823943168/vid/avc1/1920x1080/u9FA7vr_eObv2kjx.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "description": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+          "followers_count": 5548575,
+          "friends_count": 4,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3056,
+          "favorite_count": 29183,
+          "reply_count": 1750,
+          "quote_count": 2846
+        }
+      },
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 136,
+        "reply_count": 41,
+        "quote_count": 5
+      }
+    },
+    {
+      "id": "2122757816977183054",
+      "text": "https://t.co/Li9znM1p69",
+      "created_at": "Tue Nov 17 18:24:37 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2122751009156210841",
+        "text": "And here we go…GPT-6.2 Astra and GPT-6.2 Sol are yours to make more games with.\n\nOh, and they’re also super efficient and really good at making slides, building websites, and tackling the work you were doing before you started making games.\n\nRolling out today to ChatGPT Work and Codex for Plus, Pro, Enterprise, and Edu users.\n\nhttps://t.co/tjQBDQWB2n",
+        "created_at": "Tue Nov 17 17:57:34 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2122750693526450177",
+            "url": "https://video.twimg.com/amplify_video/2122750693526450177/vid/avc1/1920x1080/YVQFuGsGCs9_-7se.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1714438092655149056",
+          "name": "ChatGPT",
+          "screen_name": "ChatGPT",
+          "description": "ChatGPT is for the people.",
+          "followers_count": 796521,
+          "friends_count": 261,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 936,
+          "favorite_count": 10230,
+          "reply_count": 415,
+          "quote_count": 363
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 2,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2122757940759105826",
+      "text": "https://t.co/yRl9T4fLc1",
+      "created_at": "Tue Nov 17 18:25:06 +0000 2026",
+      "lang": "zxx",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2122753176113688601",
+        "text": "GPT-6.2-Sol is really fast at computer use.\n\nI tested five models at the Wikipedia game -- giving them the same 50 starting pages and asked them to get to Jacob Misiorowski’s page.\n\nAll five found him every time. Here’s how long it took:\n\n- GPT-6.2-Sol: 39.0s (fastest)\n- GPT-6.1-Terra: 45.9s\n- GPT-6.2-Astra: 54.1s\n- GPT-6.1-Sol: 56.2s\n- GPT-6-Astra: 56.9s\n\n(video is 1 representative run of 50)",
+        "created_at": "Tue Nov 17 18:06:10 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2122753158950555648",
+            "url": "https://video.twimg.com/amplify_video/2122753158950555648/vid/avc1/1500x826/TwJB2OXS6yqxy_6a.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1674506538336022528",
+          "name": "Nick",
+          "screen_name": "nickbaumann_",
+          "description": "everything @openAI | prev @cline | product of @UWMadison 🦡",
+          "followers_count": 21637,
+          "friends_count": 458,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7,
+          "favorite_count": 136,
+          "reply_count": 20,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2122767085990535495",
+      "text": "看到好多条说 GPT-6.2 不好的推文，不知道是真的很糟糕还是 Anthropic 花钱了😂",
+      "created_at": "Tue Nov 17 19:01:27 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 291,
+        "reply_count": 104,
+        "quote_count": 3
       }
     }
   ]

@@ -1,0 +1,60 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 269593,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261119",
+  "last_updated": "2026-11-19T01:42:39.395119",
+  "tweet_count": 1,
+  "tweets": [
+    {
+      "id": "2123214459703267673",
+      "text": "谷歌发布 Gemini 4 Neon：独立评测排第三，价格不到 GPT、Claude 旗舰的四成，Pro 和 Ultra 订阅用户今天起能用\n\n谷歌 11 月 18 日发布大模型 Gemini 4 Neon。在独立评测机构 Artificial Analysis 的综合智能指数上，Neon 得 61 分，总排名第三，只排在 OpenAI 的 GPT-6.2 Astra 和 Anthropic 的 Claude Fable 5.2 之后，而它的价格不到这两个旗舰模型的四成。订阅了 Google AI Pro 或 Ultra 的用户，今天起可以在 Gemini App 里直接选用，算在订阅里，不另收费。\n\n开发者通过 API 使用 Neon。API 是开发者把模型接进自己产品的接口，按用量收费，计量单位是 token，一个汉字大致算一到两个 token。Neon 的价格是每 100 万个输入 token 3 美元、每 100 万个输出 token 15 美元；重复使用的输入内容走缓存，只收 0.15 美元，是原价的 5%。Neon 能读文字、图片、视频和语音，但只输出文字。\n\n【和 Argon、Carbon、Hydrogen 是什么关系】\n\nGemini 4 七周内出了四个型号。最早的是 Argon，9 月 30 日发布，谷歌当时称它为“前沿模型”。之后是更强的 Carbon（11 月 10 日对所有人开放）、更小更快的 Hydrogen（11 月 12 日），以及这次的 Neon。\n\n谷歌这次给的家族对比图只列了三个：Carbon 最强，用来做最难、耗时最长的项目；Hydrogen 最快最便宜，处理日常任务，免费用户也能用；Neon 在中间。图里没有 Argon，谷歌也没说 Argon 会不会下线，开发者现在仍能通过 API 调用它。谷歌 11 月 10 日介绍 Carbon 时还说，Argon“仍是大多数软件开发和知识工作的理想选择”，这和 Neon 现在的定位基本重合。\n\n拿 Artificial Analysis 的数据比：综合智能指数上 Argon 得 50 分，比 Hydrogen（54 分）还低，Neon 比它高 11 分；输出速度 Argon 每秒约 66 个 token，Neon 约 110 个。价格上，Argon 和 Carbon 一样，11 月 30 日前优惠价 2 美元/10 美元，之后恢复 4 美元/20 美元，到那时 Neon 比它们便宜 25%；Hydrogen 是 1.5 美元/7.5 美元。\n\nNeon 和 Carbon 的智能指数分数几乎一样（61 对 60），但更便宜、更快。Artificial Analysis 用同一套题测所有模型，算出做一道题平均花多少钱、花多长时间。Neon 开最高档（xhigh）每道题 6.44 美元、约 21 分钟；Carbon 按 4 美元/20 美元的正常价算是 7.76 美元、约 36 分钟。Neon 其实多用了约 15% 的输出 token，省钱全靠单价低，省时间是因为它输出更快（每秒约 110 个 token，Carbon 约 57 个）。如果 Neon 用默认的 high 档，得分和 Carbon 持平，每道题花的钱不到 Carbon 的一半。\n\n【跟 GPT、Claude 比】\n\nNeon 不在最贵的旗舰档。GPT-6.2 Astra（11 月 17 日发布）和 Claude Fable 5.2（11 月 9 日发布）都是输入 8 美元、输出 40 美元，Neon 的价格是它们的 37.5%。往下一档，Claude Opus 5.5 是 4 美元/20 美元，比 Neon 贵三分之一；GPT-6.2 Sol 是 2 美元/10 美元，比 Neon 便宜三分之一。\n\n谷歌在发布文章里拿来对比的是下一档的 Opus 5.5 和 GPT-6.2 Sol。谷歌的表格里，Neon 在多数测试中领先，比如在让 AI 自动处理办公流程的 AutomationBench 上得 56.3%，另两家在 41% 到 43% 之间。也有落后的项目：编程测试 Terminal-Bench 4.1 和 FrontierCode 2.0 上，Opus 5.5 略高（65.8% 对 65.2%，47.3% 对 46.2%）；读专业图表的 Chartography 上，GPT-6.2 Sol 略高（75.1% 对 73.5%）。\n\n写代码这一项，Artificial Analysis 直接和旗舰比了。它的编程智能体指数测的是模型配上自家编程工具后的表现：Neon 配谷歌的 Antigravity 命令行工具得 59 分，Claude Fable 5.2 和 Opus 5.5 配 Claude Code 都是 58 分。每个任务的平均花费，Neon 是 6.86 美元，Opus 5.5 是 12.61 美元，Fable 5.2 是 15.47 美元。\n\n规格上，Neon 一次最多能读入 100 万 token，相当于几千页文档，GPT-6.2 和 Claude 的现有型号也是 100 万左右。单次输出上限 Neon 默认是 6.5 万 token，GPT-6.2 Sol、GPT-6.2 Astra 和 Claude 现有型号都是 12.8 万，Neon 是它们的一半；Neon 可以打开谷歌的“长输出”功能分段接着写，输入加输出合计最多约 105 万 token。\n\n【能用来干什么】\n\n谷歌主推三类用途：\n\n1. 写代码。Neon 适合“智能体”式的工作，也就是 AI 自己连续做多步操作，比如读代码、改代码、跑测试，再按结果继续改。在谷歌的 AI 编程工具 Antigravity 里，Neon 还能当总指挥，把活拆开分给多个 Hydrogen 同时做。谷歌说它会少读重复的文件，工作时间很长时也能正常压缩前面的内容继续干。\n\n2. 处理办公资料。表格、PDF、图表、音频、视频可以一起交给它，整理成报告。Artificial Analysis 评估办公类任务成果的 AA-Briefcase 测试里，Neon 在“呈现质量”一项排第一（1771 分），超过之前排第一的 Claude Sonnet 5.5（1726 分）。\n\n3. 日常事务。Gemini App 的“任务”功能现在可以用 Neon 来跑，谷歌举的例子是分析账单找出水电费为什么突然涨了、核对多张收据去申请退款。\n\nNeon 有 low、medium、high、xhigh 四个思考档位，档位越高，模型回答前想得越久，结果更好，用的 token 也更多，默认是 high。最高的 xhigh 档是谷歌在上周发布 Hydrogen 时才加进 Gemini 的，Carbon 没有这一档。\n\n谷歌还做了网络安全专用版 Neon for cyber，用来找代码漏洞和写补丁，接下来几天通过谷歌的 Fairwind 计划先开放给经过审核的安全防御人员。\n\n【怎么用】\n\n1. 普通用户：Google AI Pro、Ultra 订阅用户在 Gemini App 的模型菜单里选 Neon。免费用户用不了，免费用户能用的是 Hydrogen。\n\n2. 开发者：Google AI Studio 里的 Gemini API 付费层，以及 Android Studio。Pro、Ultra 订阅用户还能在 Antigravity 里用。\n\n3. 企业：Gemini for business，可以走 API，也可以在模型菜单里选。\n\n谷歌表格里的测试成绩，包括 Opus 5.5 和 GPT-6.2 Sol 的分数，都由谷歌公布；排名、每道题花费和速度数据来自 Artificial Analysis 发布当天的测评。对手的价格和输出上限来自 OpenAI、Anthropic 的官方模型页。\n\n原文链接：https://t.co/q2qeH9jIRX\n来源链接：\n谷歌博客《Introducing Gemini 4 Neon》（2026-11-18）https://t.co/q2qeH9jIRX",
+      "created_at": "Thu Nov 19 00:39:09 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2123167780988125621",
+        "text": "Gemini 4 Neon: frontier-level intelligence with fast end-to-end task completion across complex software engineering, knowledge work, and science workflows.\n\nBegins rolling out today in the Gemini API in @GoogleAIStudio, Gemini for business, for paid Google AI Pro and Ultra subscribers in Google @Antigravity, and for Google AI Pro and Ultra subscribers in the @GeminiApp.",
+        "created_at": "Wed Nov 18 21:33:40 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2123162936235753472",
+            "url": "https://pbs.twimg.com/media/HXb9cQabgAAOkkn.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "14130366",
+          "name": "Sundar Pichai",
+          "screen_name": "sundarpichai",
+          "description": "CEO, Google and Alphabet",
+          "followers_count": 11882996,
+          "friends_count": 205,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 632,
+          "favorite_count": 8083,
+          "reply_count": 434,
+          "quote_count": 350
+        }
+      },
+      "stats": {
+        "retweet_count": 6,
+        "favorite_count": 76,
+        "reply_count": 44,
+        "quote_count": 6
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+# 马斯克推文速览（2026年11月18日）
+
+## 核心动态
+- **Starship 首次由“筷子”机械臂接住返回的飞船**：SpaceX 发布塔架机械臂捕获飞船的画面，马斯克转发并回应“我们在公共安全上花了很多心思”。ARK 的 Brett Winton 称，实际进度远超其激进预期，可复用构型使 SpaceX 2031 年估值翻倍以上。
+- **Tesla Powercore 固态变压器**：马斯克转发介绍称，该设备把变压器、断路器和逆变器合为一体，让直流与交流之间只需一次转换、损耗约减半，目标场景是电池、光伏和算力负载。这标志着 Tesla 电力电子从储能进一步延伸到电网侧。
+- **Grok Bot 进入企业财务流程**：他连发多条推文推广 Grok Bot 审核企业开支、比价和致电供应商，并引用 SpaceXSI 用 5 个 Bot 处理开票、回款与客服的案例，开票时间从约 24 小时缩短到几分钟。他建议用户“把 Grok Bot 当成一个很聪明的员工来用”。
+- **Starlink 应急与手机直连扩张**：他转发巴西马托格罗索州洪灾中部署 Starlink 的消息，并配文“Starlink saves lives”；同时转发 Starlink Mobile 与蒙古 Mobicom 合作上线，无地面信号区域可自动连接卫星。
+
+## 值得关注
+- 他引用自己 2025 年 2 月关于“Verizon 空管通信系统数月内可能灾难性失效、Starlink 免费应急”的旧帖，配文“这是我 18 个月前写的”，并转发 Casey Handmer 批评 FAA 空管时隙限制拖累航空业的帖子，让空管现代化议题重新受到关注。
+- 他与 Grimes 公开互动：回复“Take the White Pill”并称“Such a jolly song!”，还转发两人因 Roko's Basilisk 思想实验相识的旧事并回“True”。
+- 他评论 AI 网红现象：“Super intelligence will hack your limbic system”（超级智能会劫持你的边缘系统），对 AI 内容操控情绪保持警惕。
+- Boring Company 掘进机以《等待戈多》《一路风暴》《J. Alfred Prufrock 的情歌》命名，其中 Prufrock 已抵达纳什维尔 Music City Loop 项目。
+- 他谈到修昔底德陷阱：“最有趣的结果最可能发生”；另发“这是最聪明的时代，也是最愚蠢的时代”式感慨，并转发四年前恢复特朗普账号的投票回顾。

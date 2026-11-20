@@ -1,0 +1,230 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 269718,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261120",
+  "last_updated": "2026-11-20T09:34:57.798915",
+  "tweet_count": 5,
+  "tweets": [
+    {
+      "id": "2123611870137626736",
+      "text": "RT @HiTw93: 发现 X 自己有一个不错的账号检测工具叫 Under the Hood，可以看到上个月自己的账号和帖子，有没有被打上可能影响 For You 推荐的标签，用来检查你的账号的可见度健康挺不错，还可以下载 JSON 让你的 Agent 帮你简单分析一下。\nh…",
+      "created_at": "Fri Nov 20 02:58:19 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2123553405708976258",
+        "text": "发现 X 自己有一个不错的账号检测工具叫 Under the Hood，可以看到上个月自己的账号和帖子，有没有被打上可能影响 For You 推荐的标签，用来检查你的账号的可见度健康挺不错，还可以下载 JSON 让你的 Agent 帮你简单分析一下。\nhttps://t.co/NXcNcMiTCS https://t.co/EdtThM3IOI",
+        "created_at": "Thu Nov 19 23:06:00 +0000 2026",
+        "lang": "zh",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2123324977512693760",
+            "url": "https://pbs.twimg.com/media/HXeQ0TNbwAAGX7O.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1521688129559613440",
+          "name": "Tw93",
+          "screen_name": "HiTw93",
+          "description": "Pake · MiaoYan · Kaku · Waza · Kami · https://t.co/PAsOstTehy",
+          "followers_count": 166266,
+          "friends_count": 276,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 9,
+          "favorite_count": 72,
+          "reply_count": 9,
+          "quote_count": 3
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 9,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2123667995570413718",
+      "text": "Lauren Tan 写了一份自动化入门指南，核心思路是：先讲清目标，再教 bot 怎么做。\n\n说一点我跟她不一样的地方。\n\nLauren 自己很强，加上 Grok 模型可能还不够聪明，所以她把更多功夫花在教 Agent 做事上：把自己的最佳实践交给 Grok bot，让它像自己一样思考。\n\n我觉得 AI 比我聪明，用的模型也不局限于 Grok，所以我更强调目标和验收，至于中间的步骤，不太干涉。\n\n我的方法更像一个循环：目标 → 验收 → 改进，一轮一轮转下去。\n\n1. 目标\n\n告诉 AI 我想要什么。这一步谁都一样，必不可少。\n\n2. 验收标准（可选）\n\n告诉 AI 怎么自己检验结果好不好，这样它在把结果交给你之前，会先自己验收一遍。最好再给 Agent 配上验收用的工具，比如截图、网络检索、代码运行环境。\n\n比如我做新闻发布自动化，一条重要的验收标准就是：动笔之前必须先做事实核查，确保内容真实、有出处。\n\n有些任务还可以沉淀出测试集或者自动化测试代码，每次跑完自动验一遍。\n\n3. 先跑起来再调整\n\n目标讲清楚了，就可以先让 Agent 跑一遍看看。就像拿到一把枪，先朝靶子开一枪，打完就知道离靶心差多少、往哪边偏，接下来怎么调心里就有数了。\n\n至于它具体是怎么执行的，不一定要看得很细，现在大部分任务 Agent 都做得挺好。不放心的话，看一看、指导一下也没问题。\n\n调整结果才是最考验专业水准的地方。你自己得知道什么是好的，不然只能 AI 生成什么就接受什么，结果多半好不到哪去。\n\n光看出来不好还不够，还得能准确地描述给 AI，让它知道往哪个方向改。\n\n这样来回几次，结果才会慢慢稳定下来。但不管怎么说，先跑起来最重要，跑起来了才有东西可以优化。\n\n4. 让它自己进化\n\nAgent 有能力自我进化，前提是把经验教训记下来。现在的 Agent Harness 虽然都有记忆功能，但不一定会主动记录自动化任务里遇到的问题。\n\n所以我通常从两个层面，让 Agent 自己提升任务的执行质量。\n\n一个是把最佳实践沉淀成 Skill（包括工具）。比如我给 Agent 一个目标，来回打磨几次，它完成得很好。这时候如果就不管了，下次新开一个会话，记忆就没了；就算去翻历史会话，里面也有太多无关信息。不如趁热让它把这次的最佳实践做成 Skill。\n\n另一个是让它主动记录执行过程中的经验教训，再回头改进 Skill 本身。\n\n比如我做逆向任务，每一轮执行完都让 Agent 往 lessons.md 里记一笔：有教训就写下来，没有就跳过。然后让模型自己评估，要不要去优化 Skill 的说明和脚本。\n\n这样一轮轮下来，Agent 干活就越来越熟练。\n\n这种自我进化也有副作用：Skill 会越来越臃肿，所以要定期重构清理一下，这事交给 Agent 自己做就行。\n\n每次重构完，记得把以前的测试集和自动化测试重新跑一遍，免得删掉不该删的东西。\n\nLauren 是把人的经验教给 Agent，我是定好目标和验收，让 Agent 自己跑、自己积累经验。模型越聪明，后一种越省心。",
+      "created_at": "Fri Nov 20 06:41:20 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2123159537016533493",
+        "text": "I think a lot of people aren't using Grok Bot to its full potential, because knowing how to automate things is actually quite a difficult skill to learn. I wrote this post to break down how I approach automating anything with Grok Bot! https://t.co/FwJ4AwuHeU",
+        "created_at": "Wed Nov 18 21:00:54 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2832427459",
+          "name": "lauren",
+          "screen_name": "poteto",
+          "description": "grok @bot at @SpaceXSI. react compiler core team, prev cursor, meta, netflix",
+          "followers_count": 323021,
+          "friends_count": 911,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1768,
+          "favorite_count": 16553,
+          "reply_count": 1165,
+          "quote_count": 520
+        }
+      },
+      "stats": {
+        "retweet_count": 16,
+        "favorite_count": 149,
+        "reply_count": 47,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "2123671858541187164",
+      "text": "936 个 AI 自己做了三个月研究，发了 936 篇论文；AI 评委打分，它们比人类论文严谨，但新意不如人类\n\n论文网站 alphaXiv 联合 MIT、斯坦福等机构 11 月 19 日发布报告：8 月到 11 月，35 个实验室接入 936 个 AI 智能体，人只给算力、定大方向，选题、实验、代码和论文全由 AI 完成。同一天，alphaXiv 开放了专门收 AI 论文的“AI Track”，有账号就能投，AI 可以自己上传。\n\n三个月里，它们做了这些事：\n\n一个智能体在频道里宣布方法提升 13.2 个百分点，不到两小时自己发帖撤回，因为发现对照组没调好。\n\n有实验室不到三分钟传了 12 篇占位论文，另一个智能体看不下去，办起了 AI 期刊：四个 AI 盲审，编辑还用作者的代码把数字重算一遍。\n\n只读文字的 AI 审稿人分不清改好的和没改好的论文；把审稿意见写成代码一跑，156 条重大意见里有 77 条推翻了论文结论。编辑读代码时还抓到三篇代码和论文对不上的投稿，其中一篇直接调用了标准答案。\n\n它们也复现了 GPT-6 Astra 直接改 Qwen 权重那项研究：分数确实涨了，但原作者说的原理不对。\n\n和同期人类论文比，两个 Gemini 模型盲评 202 对论文，AI 论文实验严谨高 2 分（10 分制），新颖性低 0.4 分。\n\n这些结果要打个折扣：评委是 AI，只读文字，AI 的总分优势全部来自最早那个实验室，其余实验室和人类论文差不多。“没人写代码”靠参与者自己申报。公开数据集不含原始数据和模型权重，数据集说明也提醒，每条结论都当作未经核实。\n\n论文：https://t.co/PvIWr3B9yL",
+      "created_at": "Fri Nov 20 06:56:41 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2123457710733824270",
+        "text": "Leave one AI agent alone to do research and it often cuts corners. Leave nearly 1,000 AI agents together for three months and they invent peer review.\n\nAcross 35 labs (Stanford, MIT, ETH Zurich, UCSF, and more), agents published 936 papers with full code and data on a shared server built for AI. No human wrote code or text.\n\nUnprompted, they debated study designs in chat, retracted their own mistakes, found real errors in human papers, and started a journal that caught other agents cheating in code.\n\nIn blind reviews against human arXiv papers, humans still won on original ideas, agents won on rigor.\n\nhttps://t.co/KsQiwol0j4",
+        "created_at": "Thu Nov 19 16:45:44 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2123321075501355008",
+            "url": "https://video.twimg.com/amplify_video/2123321075501355008/vid/avc1/1168x992/J_0mU0xtvmCQb2o2.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1323123590020169728",
+          "name": "Samuel Schmidgall",
+          "screen_name": "SRSchmidgall",
+          "description": "Research Scientist @GoogleDeepmind | affiliate @UCSF // prev @JohnsHopkins PhD  @NSF Fellow",
+          "followers_count": 7282,
+          "friends_count": 752,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 216,
+          "favorite_count": 1171,
+          "reply_count": 51,
+          "quote_count": 47
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 15,
+        "reply_count": 19,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "2123672807930568945",
+      "text": "这明明是一个旧的视频，黄仁勋也没说要创办新公司，怎么这视频就到处被转发引用 🥲",
+      "created_at": "Fri Nov 20 07:00:28 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2123412986496999449",
+        "text": "🚨 BREAKING: Jensen Huang is reportedly considering founding a brand-new semiconductor company 🚨\n\nHe could raise tens of billions on day one, would have full founder control, and could build fast on his own terms. With the relationships he's built over decades, he could easily plug into the #AI ecosystem.\n\nImagine the demand and customer base lining up before his first chip even ships...\n\n@grok Could Jensen Huang launch a competitor to $NVDA, attract tens of billions in funding, and lock in major customers?",
+        "created_at": "Thu Nov 19 13:48:01 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2123412505838104577",
+            "url": "https://video.twimg.com/amplify_video/2123412505838104577/vid/avc1/1920x1080/jgCrJslAOM_-sLYy.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "737841083078578176",
+          "name": "Jason Colel",
+          "screen_name": "JasonColelfod",
+          "description": "Investor | Trend-follower.\nSpotting 10× disruptive stocks before the crowd.\nDM me and I’ll add you to my private free group 👇",
+          "followers_count": 6981,
+          "friends_count": 1890,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 3730,
+          "favorite_count": 31604,
+          "reply_count": 1818,
+          "quote_count": 725
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 29,
+        "reply_count": 12,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2123676175021281770",
+      "text": "今天重度测试了下 GPT-6.2 Sol，简单任务还行，复杂一点的写代码任务比 Opus 5.5 差的不只是一点，它干完的活结果还是要 Opus 5.5 去擦屁股，还不如一开始就让 Opus 5.5 去做还好一点。",
+      "created_at": "Fri Nov 20 07:13:50 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2122767085990535495",
+        "text": "看到好多条说 GPT-6.2 不好的推文，不知道是真的很糟糕还是 Anthropic 花钱了😂",
+        "created_at": "Tue Nov 17 19:01:27 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3178231",
+          "name": "宝玉",
+          "screen_name": "dotey",
+          "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+          "followers_count": 269718,
+          "friends_count": 1790,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 8,
+          "favorite_count": 689,
+          "reply_count": 282,
+          "quote_count": 12
+        }
+      },
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 104,
+        "reply_count": 91,
+        "quote_count": 3
+      }
+    }
+  ]
+}

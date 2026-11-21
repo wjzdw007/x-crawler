@@ -1,0 +1,65 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 270790,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261121",
+  "last_updated": "2026-11-21T01:03:29.451907",
+  "tweet_count": 1,
+  "tweets": [
+    {
+      "id": "2123936278056165393",
+      "text": "Sean Goedecke 在个人博客发文说，在大型软件项目里，程序员只理解自己负责的那一部分代码是正常的，而且这已经是能做到的最好状态。\n\n确实如此，我基于原文稍微解读和引申一下。\n\n很多人说 AI 写不好程序，因为 AI 不能完整理解代码库，但实际上在大的软件项目中，程序员只理解自己负责的一小部分代码是常态。\n\n想象一下，新人去接手一个历史复杂项目，那么他们短时间只可能理解一部分代码，但这并不妨碍他们去维护项目。\n\n那么以前怎么保证不理解完整代码不会改出问题呢？还得要靠自动化测试来兜底。\n\n一个好的项目，需要配合好充分的自动化测试覆盖，这样就算新手去修改代码，也不至于把正常运行的系统搞崩溃，毕竟改出问题了自动化测试是无法通过的。\n\n并且为了防止新人乱改，还会有 Code Review 配合，这本身也是很好的知识传承手段。\n\n现在让 Agent 干活也是如此，让 Agent 在一个会话上下文中理解整个项目是不现实的，它永远只能部分理解项目，但这并不妨碍 Agent 去修改运行程序。\n\n要保证 Agent 干活的质量，同样也要通过验证手段兜底，自动化测试是必须的，但也无法过度依赖，因为有些测试可能本身就是有问题的；\n\nCode Review 现在也很难保证了，毕竟代码量太大了，人根本看不过来，只能是让 AI Review 大部分代码，人只 Review 最重要的部分。\n\n另外一个有效手段就是让 Agent 自己提供证据，比如我最近最常用的手段就是让 Agent 截图，在开发新功能的时候让它提供新功能截图，修改 bug 的时候提供改之前和改之后的截图对比。\n\n让 Agent 截图，最近还挖掘出来一个用法：就是让 Agent 自己去模拟 API 响应数据，动态生成各种不同场景的截图，都不需要服务端配合，虽然我还没搞明白它是怎么去模拟的。",
+      "created_at": "Sat Nov 21 00:27:24 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2123896364643860985",
+        "text": "In many software engineering environments, there’s nothing wrong with being in a state of partial understanding. In fact, in large systems a partial understanding is the best you can do. https://t.co/oPZhkEerQS",
+        "created_at": "Fri Nov 20 21:48:48 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2123896357974863872",
+            "url": "https://pbs.twimg.com/media/HXmYfBTWcAA_Sd2.png"
+          },
+          {
+            "type": "photo",
+            "id": "2123896361787473920",
+            "url": "https://pbs.twimg.com/media/HXmYfPgWQAA1eYC.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "870082520586399744",
+          "name": "Sean Goedecke",
+          "screen_name": "sjgoedecke",
+          "description": "",
+          "followers_count": 4561,
+          "friends_count": 133,
+          "verified": false,
+          "is_blue_verified": false
+        },
+        "stats": {
+          "retweet_count": 8,
+          "favorite_count": 203,
+          "reply_count": 7,
+          "quote_count": 4
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 19,
+        "reply_count": 20,
+        "quote_count": 0
+      }
+    }
+  ]
+}

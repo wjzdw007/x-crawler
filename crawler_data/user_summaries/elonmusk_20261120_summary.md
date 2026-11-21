@@ -1,0 +1,17 @@
+# 马斯克 2026年11月20日推文速览
+数据时间：2026年11月20日
+
+## 核心动态
+- **Grok Bot 代理化**：马斯克转发用户让 Grok @bot 进会议、基于对话提问/总结/研究，并亲自发“Made with Grok @Bot”；另有代叫屋顶维修、专属邮箱等案例，显示其从聊天工具转向可执行代理。
+- **Tesla AI 与自动驾驶**：称 Tesla AI 在 AI4 小算力电脑上已能打到《Diablo》Torment II；同时转发意大利批准 Tesla Assisted Driving 临时认证，被支持者称为首个批准 Tesla 自动驾驶的主要欧洲国家。
+- **Boring Company 纳什维尔机场协议**：与纳什维尔机场管理局签40年 Music City Loop 协议，Boring 全资建设运营维护，车站距航站楼入口22英尺、市中心到机场不到10分钟，预计50年给机场带来约3.43亿美元收入。
+- **Neuralink Blindsight 待批**：马斯克称 Blindsight 产品“只等监管批准”，该植入物面向全盲者连接视觉皮层；他对 Ashlee Vance 的 Neuralink 万字长文回应“没读，但大概80%准确”。
+
+## 值得关注
+- Starlink 多条进展：巴西 Anatel 正式新增 Ku/Ka/Q/V 频段授权；日本新潟偏远水闸用 Starlink Mini + LoRa 远程控制；巴拉圭再获400套设备连接学校；Cocoa Beach 洪灾中 SpaceX 提供食物、水和移动 Starlink。
+- Morgan Stanley 测算：Starship 满载发射50颗 Starlink V3，单次可带来约4亿美元年化收入，收入回本期约13周、EBIT 回本期约19周。
+- SpaceX 说明 Starship 第15飞 Super Heavy 返场捕获时安全中止并落海，否认社交媒体“大范围碎片/损害”说法，称独立毒性测试无化学、生物风险。
+- 上海行：马斯克到 Giga Shanghai 感谢亚洲团队，Tesla Asia 送出工厂边角料制作的礼物；旧跳舞视频被他调侃“This is not AI 😂”。
+- X 定位继续强化：“𝕏 is the global town square”“This is where the smart people are”，并认同“认真谈科技必须在 X”。
+- 开发者侧：@poteto 发布 pstack v0.15.46，加入 Gemini 4 Neon 评审并缩短技能；@anabology 推广 Claudia Grok Bot。
+- 轻松一条：“Singularity dot Com”——面向数字超级智能的约会网站；以及“愚蠢除非配上固执，否则不算数”的自嘲。

@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 271072,
+    "followers_count": 271106,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261121",
-  "last_updated": "2026-11-21T22:43:50.585452",
-  "tweet_count": 7,
+  "last_updated": "2026-11-22T04:45:29.440789",
+  "tweet_count": 9,
   "tweets": [
     {
       "id": "2123936278056165393",
@@ -306,6 +306,97 @@
         "favorite_count": 12,
         "reply_count": 8,
         "quote_count": 2
+      }
+    },
+    {
+      "id": "2124276341088342155",
+      "text": "很多人吐槽 Antigravity 不好用，但只是吐槽不一定会被看见，不如去给 @shengzheyao 留言，这样有机会被看到并解决问题。\n\n比如我现在遇到最烦的问题是，如果跨 workspace 打开文件，每一个文件的读取都要我授权，而不是一次性的授权，极其繁琐。",
+      "created_at": "Sat Nov 21 22:58:41 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2124241548615504371",
+        "text": "Read through every single one of the 500+ replies. Huge thank you to everyone who wrote in, especially those who dug up local logs and repros.\n\nA lot of clear, fair feedback came through:\n\n- Prompt cache efficiency, latency, and stream stability.\n- Auto mode reliability and permission friction (Win10, Linux, out-of-workspace)\n- Better progress visibility during long runs.\n- Unified sessions across CLI, Desktop, remote, and mobile.\n- Windows, skills, and TUI papercuts.\n\nI've shared the full breakdown with the team, and we're committed to turning this into real fixes so Antigravity CLI is a tool you genuinely enjoy daily-driving.\n\nKeep the feedback coming. My DMs are open, and feel free to @ me anytime you hit friction.",
+        "created_at": "Sat Nov 21 20:40:26 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1781882258091393024",
+          "name": "Shengzhe",
+          "screen_name": "shengzheyao",
+          "description": "Antigravity@Google DeepMind | Creator of Antigravity CLI",
+          "followers_count": 6415,
+          "friends_count": 42,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 16,
+          "favorite_count": 687,
+          "reply_count": 128,
+          "quote_count": 9
+        }
+      },
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 136,
+        "reply_count": 64,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "2124282462343967111",
+      "text": "2026 年 11 月 20 日，Anthropic 的数学家 Levent Alpöge 宣布，他和 Claude 一起证明了黎曼猜想，交出来的是 1700 万行 Lean 代码。\n\n这期用 5 分钟讲清楚：\n黎曼猜想说的是什么，和质数有什么关系；\n为什么 160 多年没人证出来；\nAI 在里面做了什么；\n机器检查全部通过，算不算真的证明了；\n银行加密会不会因此失效。\n\n同一天，斯坦福也放出一份纯人工证明草稿，几小时后就有人借助 AI 报告了问题。\n\n两边对照下来：机器说没错，人还没读懂；人写的，正在大改。\n\n（本视频由 Motion Artifact + Opus 5.5 + Gemini 3.8 TTS 制作，https://t.co/FqRzqoi4aq）",
+      "created_at": "Sat Nov 21 23:23:00 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2124281217524596736",
+          "url": "https://video.twimg.com/amplify_video/2124281217524596736/vid/avc1/1280x720/6pzeogmsjhXkIovP.mp4?tag=29",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": {
+        "id": "2124159121645801562",
+        "text": "The Lean FRO and Mathlib Initiative have released a joint statement on the Lean verification of the Riemann Hypothesis.\n\nOn November 20, Levent Alpöge released a proof of the Riemann Hypothesis as a Lean library of 17 million lines of code. Over the past day, the Lean and Mathlib communities worked together to verify it. The statement certifies the proof as correct and describes how it meets all necessary verification criteria.\n\nCongratulations to Levent on this achievement, and thank you to everyone in the community who contributed to the verification.\n\nFull statement: https://t.co/edxEbkodw7",
+        "created_at": "Sat Nov 21 15:12:54 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2124158333884190720",
+            "url": "https://pbs.twimg.com/media/HXqGwBnaUAA8Pvd.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "984707304191856640",
+          "name": "Lean",
+          "screen_name": "leanprover",
+          "description": "Lean is a dependently-typed programming language and theorem prover.",
+          "followers_count": 22899,
+          "friends_count": 52,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 4688,
+          "favorite_count": 25241,
+          "reply_count": 442,
+          "quote_count": 1825
+        }
+      },
+      "stats": {
+        "retweet_count": 18,
+        "favorite_count": 141,
+        "reply_count": 61,
+        "quote_count": 7
       }
     }
   ]

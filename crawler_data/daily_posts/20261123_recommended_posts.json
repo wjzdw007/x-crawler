@@ -1,12 +1,230 @@
 {
   "date": "20261123",
   "timeline_type": "recommended",
-  "last_crawl_time": "2026-11-23T02:10:10.482031",
-  "tweet_count": 200,
-  "unique_tweet_count": 200,
-  "total_crawled": 200,
-  "duplicates_removed": 0,
+  "last_crawl_time": "2026-11-23T13:59:00.350789",
+  "tweet_count": 211,
+  "unique_tweet_count": 211,
+  "total_crawled": 400,
+  "duplicates_removed": 189,
   "tweets": [
+    {
+      "id": "2124775538648633370",
+      "text": "不经重新训练，开源模型 Qwen3.5 27B 自己查错、写代码修改自身权重，把数学题准确率从 57.2% 提到了 63.8%，但还不是“AI 无限自我进化”。\n\n这是 UIUC、CMU、普林斯顿、斯坦福、耶鲁等校 11 位研究者（Jiajun Fan 等）11 月 18 日发在 arXiv 的论文。\n\n平时大模型发布后，内部那 270 亿个权重数字就定死了：想变强，要么砸算力重新训练，要么提问时多塞提示词、多给思考时间临时凑合，对话一结束就打回原形。\n\n这次研究者禁掉所有训练工具，只用单块 GPU 跑几小时，让模型直接写 Python 改自己的权重，据作者所知，模型“自己改自己”还是头一回。\n\n它是怎么把自己改好的？\n\n27B 先复盘练习记录，发现毛病不是不会算（写完的题 96% 都对），而是爱钻牛角尖、话没说完就超限。比如一道数数题，原模型把“I will write the response”硬生生复读了 549 遍直到卡死。\n\n找准病根后，它只做了一个很巧的改动：把内部 48 层控制“旧信息消退快慢”的参数统一调高 0.5，减少长推理原地打转。结果在 490 道没见过的新数学题上，未答完率从 33.6% 降到 26.1%，准确率提升 6.6 个百分点，上面那道卡死的题也顺利算出正确答案 110。改完后能力直接刻进权重，平时用不需额外提示词，也不增加计算量。\n\n它甚至修好了“受损副本”。研究者把副本第 30 层一个矩阵的 8 行换成 200 倍幅度的随机噪声，副本直接瘫痪，数学题 0 分。只被告知“有数值坏了”、不给看完好原版的前提下，模型逐层排查，揪出最大值高达中位数 1397 倍的异常矩阵（正常不超 162 倍），把超出中位数 15 倍的极端值统统压平。\n\n修完后数学恢复到 33.0%（原版 58.5%）；虽然全程只靠文字题修，6 项看图测试却从 7.3% 恢复到 70.2%，超过原版（84.3%）的八成。\n\n不过小模型完全干不了这活：同系列的 2B 说自己“只是文本模型改不了权重”，动都没动；4B、9B 只会往权重里乱加噪声碰运气，9B 直接把自己从 47.5% 改成了 0 分。\n\n最后需要注意的还不是“AI 无限自我进化”：\n\n1. 还不是“递归自我进化”：8 轮实验每次都是从原版模型重新开始改，还没做到“改完的版本继续改自己”（作者列为下一步）。网上说的“连续 8 轮只升不降”，其实是模型自己撤回了 5 次失败改动、只提交了 3 次成功改动。\n\n2. 测试范围有限：目前只在 Qwen3.5 家族和数学题上验证过，且论文刚发在 arXiv，还没经过同行评审。\n\n论文：https://t.co/xqvTrMjPS0\n项目页：https://t.co/5l9B1qxVsq",
+      "created_at": "Mon Nov 23 08:02:19 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2123183386801889776",
+        "text": "A language model can rewrite its own weights, by its own reasoning, and get better.\n\nNo gradients. No training. No larger model doing it for it. This has not been done before.\n\nNo pre-training. No post-training. No test-time scaling. No harness engineering. No prompt engineering.\n\n🌐 Project page: https://t.co/kXf53EBdHW\n\n📄 Paper: https://t.co/N1k7YgGE9m\n\nEvery language model you have used was trained once and then frozen. Making it better has meant one of two things: train it again, with the infrastructure and the GPUs only a few labs have, or pile prompts, harnesses and extra computation on top, gone the moment the task ends.\n\nOur new paper, Language Models Can Rewrite Their Own Weights, opens a third way. We call it self-rewriting: the model is its own optimizer.\n\nWe handed an open model its own weights, its graded answers and the ability to run itself. It diagnosed its own failure and rewrote the weights behind it.\n\nWhat happened next:\n\n→ It surpassed itself. Its own edit made it 6.6 points more accurate on problems it had never seen.\n\n→ It kept getting better. It tests its edits on practice problems and submits only what works. Eight sessions in a row, its accuracy only went up.\n\n→ It repaired itself. We damaged a copy until it solved almost nothing. With no retraining, and without ever reading the original weights, the model brought it back to over 80% of the original accuracy on image tasks it had never seen. Like a broken robot that fixes itself without being rebuilt.\n\n→ It emerges with scale. The smaller models could not do it: they made no edit, or broke themselves. Only the largest improved and repaired itself.\n\nWhy this changes things:\n\n→ The gain is written into the weights. Every answer costs what it cost before.\n\n→ It runs only forward passes, as serving does. No training pipeline to build. No cluster to rent.\n\nAffordable. Scalable. Recursive.\n\nThe wall between training and inference is a limit of our tools, not a property of intelligence.\n\nWe believe self-rewriting is a necessary step toward recursive self-improvement: a model that, like a human, does not separate training from inference could keep upgrading itself for life, with no larger model, no harness or prompt engineering, and no pre- or post-training.\n\nIn 1947 Alan Turing said that letting a machine alter its own instructions \"of course does not get us very far.\" Seventy-nine years later, it gets us further.\n\nWelcome to the Era of Self-Rewriting.",
+        "created_at": "Wed Nov 18 22:35:40 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2123180701268725760",
+            "url": "https://video.twimg.com/amplify_video/2123180701268725760/vid/avc1/1920x1080/0BI09vPz56gcjMNd.mp4?tag=29",
+            "bitrate": 10368000
+          },
+          {
+            "type": "photo",
+            "id": "2123180778364219392",
+            "url": "https://pbs.twimg.com/media/HXcNqzhWMAAC9cz.png"
+          },
+          {
+            "type": "photo",
+            "id": "2123180797049872384",
+            "url": "https://pbs.twimg.com/media/HXcNr5IWoAA6Zvh.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2123180814217228288",
+            "url": "https://pbs.twimg.com/media/HXcNs5FXsAAL4vo.png"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1914893551898443776",
+          "name": "Jiajun Fan",
+          "screen_name": "FanJiajun67938",
+          "description": "PhD @ UIUC  | Research Scientist Intern @Amazon AGI foundations  | Master @THU",
+          "followers_count": 122,
+          "friends_count": 3,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 10,
+          "favorite_count": 56,
+          "reply_count": 5,
+          "quote_count": 18
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 271379,
+        "friends_count": 1791,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 73,
+        "reply_count": 69,
+        "quote_count": 4
+      }
+    },
+    {
+      "id": "2124756676607627434",
+      "text": "Meta 首席 AI 官 Alexandr Wang 发表长文《Superintelligence is Arriving》（超级智能正在到来）。他的结论是：\nAI 现在缺的不是智力，而是各行业的专门知识和实验条件；他同时反对把社会交给 AI，认为整个行业需要换一条路走。\n\nAI 协助证明黎曼猜想这件事是个转折点，在大多数学过数学的人眼里，证明黎曼猜想是人类最高的智力成就；很多物理学家也会同意，跟它比起来，研制原子弹只算一道家庭作业题。\n\n【文章的四个主要论点】\n\n1. AIME 是第一个信号。\n\nAIME（美国数学邀请赛）是美国高中生参加的数学竞赛。2024 年 12 月，OpenAI 的 o3 模型在 AIME 上几乎拿了满分。AIME 最难的题比顶尖工程师和企业管理者日常要解决的问题难得多。\n\n模型现在已经够聪明，缺的是各行业的专门知识、背景信息和实际操作经验。过去两年补上这些之后，写代码这件事已经几乎被解决，模型的网络攻防能力变得很强，还能自己连续完成多步任务，成了通用助手。\n\n2. 黎曼猜想比几乎所有领域的难题都难。\n\n如果说 AIME 只是青少年的课外活动，黎曼猜想则可能是人类提出过的最难的智力问题。\n\n模型要在各个领域远超人类，剩下的障碍已经不是智力，而是各领域的专门知识、配套的工程搭建和实验。AI 很可能成为几乎所有领域进步的最大贡献者。\n\n3. AI 研究本身也会被自动化。\n\nAI 研究比证明黎曼猜想容易得多，模型会聪明到能完成全部 AI 研究，也就是自己改进自己，而且在这件事上远超人类。\n\n生物、武器、经济等领域的研究也会被大幅加速，速度可能快到人类看不懂、也监督不过来。\n\n4. 不能接受把社会交给 AI。\n\n人类很难控制一个完全不受约束、不断自我升级的 AI，也很难控制一个在每个领域都比人类聪明能干 1000 倍的超级智能。\n\nAI 行业里一种普遍的想法：认为超级智能一定会来，唯一要解决的问题只是怎么安全地造出来。社会不应该接受这种移交，要造的技术应该让所有人拥有更多自主权和能力。\n\n他相信这能做到，但可能需要整个行业采取和眼下默认路线明显不同的做法。文章没有具体说明这些做法是什么。",
+      "created_at": "Mon Nov 23 06:47:22 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2124636606959345776",
+        "text": "https://t.co/KwJ13J6zsC",
+        "created_at": "Sun Nov 22 22:50:15 +0000 2026",
+        "lang": "zxx",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "615818451",
+          "name": "Alexandr Wang",
+          "screen_name": "alexandr_wang",
+          "description": "chief ai officer @meta, founder meta superintelligence labs, founder @scale_ai. give everyone the adulthood they dreamed of in childhood",
+          "followers_count": 901608,
+          "friends_count": 929,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 7018,
+          "favorite_count": 41035,
+          "reply_count": 2067,
+          "quote_count": 3120
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 271379,
+        "friends_count": 1791,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 18,
+        "favorite_count": 136,
+        "reply_count": 59,
+        "quote_count": 6
+      }
+    },
+    {
+      "id": "2124730377260724320",
+      "text": "RT @deedydas: The rate of change of technology is so quick these days that being on X very quickly compounds to a huge amount of alpha. \n\nT…",
+      "created_at": "Mon Nov 23 05:02:52 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2124655797879894316",
+        "text": "The rate of change of technology is so quick these days that being on X very quickly compounds to a huge amount of alpha. \n\nTalking to people who aren’t feels like stepping in a time machine into the distant past.\n\nX is truly the town square for discussing technological progress.",
+        "created_at": "Mon Nov 23 00:06:31 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "361044311",
+          "name": "Deedy",
+          "screen_name": "deedydas",
+          "description": "Partner at @MenloVentures. Investor: Anthropic, OpenRouter, Modal, Wispr, Pangram, Greptile, Inception, Goodfire.\n\nprior: Glean, Google Search. Cornell CS.",
+          "followers_count": 263758,
+          "friends_count": 6445,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 515,
+          "favorite_count": 6385,
+          "reply_count": 336,
+          "quote_count": 81
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 240095441,
+        "friends_count": 1429,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 515,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2124726140023537849",
+      "text": "智谱 GLM-5.4 上线编程订阅：能直接看图，每周可用量比 GLM-5.3 多一半\n\n智谱的新模型 GLM-5.4 已经向所有 GLM Coding Plan 订阅用户开放。\n\n它新增了看图能力，官方说编程能力全面提升；对有每周额度的用户，用 GLM-5.4 能用的量比上一代 GLM-5.3 多 50%。\n\n消息来自 Zixuan Li 在 X 上发的帖子，Zixuan Li 的 X 简介写着 https://t.co/8BByxWuwsb 负责人（Lead）。",
+      "created_at": "Mon Nov 23 04:46:01 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2124719275864670681",
+        "text": "GLM-5.4 is now available to all GLM Coding Plan users.\n\nNew vision capabilities and stronger all-round coding performance.\n\nFor users with weekly quotas, GLM-5.4 now comes with 50% more quota compared to GLM-5.3.",
+        "created_at": "Mon Nov 23 04:18:45 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1896810733423493120",
+          "name": "Zixuan Li",
+          "screen_name": "ZixuanLi_",
+          "description": "Lead https://t.co/KepyJGAtVs @Zai_org.",
+          "followers_count": 43842,
+          "friends_count": 278,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 704,
+          "favorite_count": 8420,
+          "reply_count": 573,
+          "quote_count": 697
+        }
+      },
+      "user": {
+        "id": "3178231",
+        "name": "宝玉",
+        "screen_name": "dotey",
+        "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+        "followers_count": 271379,
+        "friends_count": 1791,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 5,
+        "favorite_count": 94,
+        "reply_count": 89,
+        "quote_count": 7
+      }
+    },
     {
       "id": "2124681897263444343",
       "text": "感觉下一步就是要证明 P 是不是等于 NP 了，预先科普一下。\n\n你手机里的网银密码，其实全靠一道至今没被证明的数学难题撑着。这期用数独、排成绩单和黑板集合图，一次讲明白什么是 P、什么是 NP，以及为什么全世界都在操心 P = NP。\n\n片中还会正面回答四个高频问题：\n为什么破了一道难题全网都会跟着倒？\n证明了 P = NP 密码明天就会立刻崩吗？\nNP 到底是不是“非多项式”？\n你的银行卡今天到底安不安全？\n\n如果真有人带着既快又实用的算法证明了 P = NP，世界会在一夜之间被重写。",
@@ -5362,6 +5580,118 @@
       }
     },
     {
+      "id": "2124238249686159590",
+      "text": "It’s like GTA",
+      "created_at": "Sat Nov 21 20:27:19 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2124226258196103492",
+        "text": "Here are the new FSD visualizations in FSD V15. It continuously streams a view from an arbitrary virtual camera situated above your vehicle.\n\nUpcoming navigation turns display directly in the driving visualization. Turn signals are quieter and fade out after a few clicks. https://t.co/kovf40oxFj",
+        "created_at": "Sat Nov 21 19:39:40 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "photo",
+            "id": "2124225491070488576",
+            "url": "https://pbs.twimg.com/media/HXrD1FoWEAAsvNN.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2124225531944050689",
+            "url": "https://pbs.twimg.com/media/HXrD3d5XIAEtEu6.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2124225596217585664",
+            "url": "https://pbs.twimg.com/media/HXrD7NVXcAA5waa.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2124225656028377088",
+            "url": "https://pbs.twimg.com/media/HXrD-sJXsAAysqX.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2124225690274816000",
+            "url": "https://pbs.twimg.com/media/HXrEAruW4AAgaAN.jpg"
+          },
+          {
+            "type": "photo",
+            "id": "2124225761561178112",
+            "url": "https://pbs.twimg.com/media/HXrEE1SWcAAeHDx.jpg"
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "243013409",
+          "name": "Sawyer Merritt",
+          "screen_name": "SawyerMerritt",
+          "description": "EVs/space/tech. Bringing you the latest news in a single, easy-to-read feed. $TSLA & $SPCX investor, Model Y owner.",
+          "followers_count": 1160347,
+          "friends_count": 507,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 755,
+          "favorite_count": 9537,
+          "reply_count": 621,
+          "quote_count": 304
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 240095440,
+        "friends_count": 1429,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2919,
+        "favorite_count": 37620,
+        "reply_count": 2107,
+        "quote_count": 296
+      }
+    },
+    {
+      "id": "2124238164512714925",
+      "text": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a video game. \n\nYou can tap any point on the reality revisualizer to make your car go there.  https://t.co/A5ZB2yFkd7",
+      "created_at": "Sat Nov 21 20:26:59 +0000 2026",
+      "lang": "en",
+      "media": [
+        {
+          "type": "video",
+          "id": "2124221674111512576",
+          "url": "https://video.twimg.com/amplify_video/2124221674111512576/vid/avc1/3840x2160/paG-_6HblizxnFgC.mp4?tag=29",
+          "bitrate": 25128000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 240095440,
+        "friends_count": 1429,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 4064,
+        "favorite_count": 43544,
+        "reply_count": 2213,
+        "quote_count": 817
+      }
+    },
+    {
       "id": "2124237500709531726",
       "text": "The hardest I’ve ever worked in my life was helping codesign the vision encoder to squeeze out the last few percents of MFU from AI4. \n\nHuge shoutout to the team and @aelluswamy for getting V15 out!",
       "created_at": "Sat Nov 21 20:24:21 +0000 2026",
@@ -5415,6 +5745,55 @@
         "favorite_count": 4274,
         "reply_count": 136,
         "quote_count": 16
+      }
+    },
+    {
+      "id": "2124219646459220296",
+      "text": "Shortest explanation is just: 🤯",
+      "created_at": "Sat Nov 21 19:13:24 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2124213680422387741",
+        "text": "Simple explanation of the usefulness of the Riemann proof (so far) is that it removes the conditional nature of other math theorems dependent upon it. \n\nAnd, of course, is yet another mind-blowing thing achieved by super intelligence …\n\nhttps://t.co/F1sAyxwaSF",
+        "created_at": "Sat Nov 21 18:49:42 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "44196397",
+          "name": "Elon Musk",
+          "screen_name": "elonmusk",
+          "description": "https://t.co/ZdBx5WABYx",
+          "followers_count": 240095440,
+          "friends_count": 1429,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1563,
+          "favorite_count": 16881,
+          "reply_count": 1508,
+          "quote_count": 247
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 240095440,
+        "friends_count": 1429,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 938,
+        "favorite_count": 11875,
+        "reply_count": 839,
+        "quote_count": 72
       }
     },
     {
@@ -10564,6 +10943,233 @@
         "favorite_count": 0,
         "reply_count": 0,
         "quote_count": 0
+      }
+    },
+    {
+      "id": "2123332718218125495",
+      "text": "RT @larsencc: What I fixed in the last 24h from your replies:\n\n&gt; take over your bot's computer and stay in control until you hand it back\n&gt;…",
+      "created_at": "Thu Nov 19 08:29:04 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2123189115147759725",
+        "text": "What I fixed in the last 24h from your replies:\n\n> take over your bot's computer and stay in control until you hand it back\n> photos from your phone actually reach your bot\n> VPN desktop uploads stop failing\n> a safety check hiccup now asks you to approve instead of dead-ending\n> dictation keeps the word you fixed\n> saving a big file stops asking permission\n> one iPhone shows up once, and old phones can be removed\n\nAll merged and rolling out. \n\nA lot more from the comments is being worked on right now, and I'll keep posting what gets fixed.\n\nKeep tagging me, quoting, or replying with anything @bot related and I will make sure the right people see it.\n\nAlso thanks for all the new follows! Welcome 🙏",
+        "created_at": "Wed Nov 18 22:58:26 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2122836100792152411",
+          "text": "I work on @bot\n\nTag me with whatever annoys you, breaks on you, or you wish it could do. I read all of it and bring the good stuff to our team.\n\nFollow if you want to see what we ship next.",
+          "created_at": "Tue Nov 17 23:35:41 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "1899375311680372736",
+            "name": "Larsen Cundric",
+            "screen_name": "larsencc",
+            "description": "@bot at @spacexsi (tag me and ill fix it)",
+            "followers_count": 28790,
+            "friends_count": 787,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 295,
+            "favorite_count": 6463,
+            "reply_count": 3062,
+            "quote_count": 37
+          }
+        },
+        "user": {
+          "id": "1899375311680372736",
+          "name": "Larsen Cundric",
+          "screen_name": "larsencc",
+          "description": "@bot at @spacexsi (tag me and ill fix it)",
+          "followers_count": 28790,
+          "friends_count": 787,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 161,
+          "favorite_count": 2525,
+          "reply_count": 321,
+          "quote_count": 15
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 240095449,
+        "friends_count": 1429,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 161,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2123320935285657859",
+      "text": "RT @EricLDaugh: 🚨 WOW! Elon Musk just went off about the smears against him involving Starlink and Russia-Ukraine, saying he just WANTS PEA…",
+      "created_at": "Thu Nov 19 07:42:15 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2123196259318034475",
+        "text": "🚨 WOW! Elon Musk just went off about the smears against him involving Starlink and Russia-Ukraine, saying he just WANTS PEACE\n\n\"Thousands of kids are sent in to die every day with no change in the borders, forever. And I think anyone who supports that is a horrible human being or has not thought through the problem!\" 💯\n\n\"Nobody voluntarily goes to die in a drone strike. Those sons are never going to see those parents again.\" 💔\n\n\"There's TOO MUCH 'Ukraine good, Russia bad.'\"\n\n\"There is no private individual who has helped Ukraine more than I have. I made sure that Starlink was in Ukraine, pre-positioned, ahead of the Russian invasion. And when Russia invaded, they disabled all communications, all cell towers, all fiber cables, and every satellite communication system, there was one system they could not disable and that was Starlink. And if they had not had Starlink, their entire line would have collapsed.\"\n\n\"It is NOT meant to be used for offensive drone strikes that k*ll people...for that, you use Starshield, controlled by the US government.\"\n\nLast week Zelensky accused SpaceX of LYING about speed limits on Starshield that he says cut off Ukraine's drones above 100 mph\n\nUkraine gets Starshield through a U.S. GOVERNMENT AGREEMENT, not from @ElonMusk\n\nShow some gratitude, Zelensky, and help stop this war!",
+        "created_at": "Wed Nov 18 23:26:49 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2123195450970787840",
+            "url": "https://video.twimg.com/amplify_video/2123195450970787840/vid/avc1/1920x1080/ZVjcoCHZTjEOq1--.mp4?tag=29",
+            "bitrate": 10368000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "763094579491008512",
+          "name": "Eric Daugherty",
+          "screen_name": "EricLDaugh",
+          "description": "Chief Content Officer @RightLineNews @FLVoiceNews | Marylander-turned-Floridian | “Men must vote” - Charlie Kirk",
+          "followers_count": 1247992,
+          "friends_count": 2738,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2428,
+          "favorite_count": 11145,
+          "reply_count": 620,
+          "quote_count": 136
+        }
+      },
+      "quoted": null,
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 240095449,
+        "friends_count": 1429,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 2428,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2123320336544649485",
+      "text": "Remember to cast your Tesla votes!",
+      "created_at": "Thu Nov 19 07:39:52 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2123126893331300680",
+        "text": "Cast your vote now! (pls 😊)",
+        "created_at": "Wed Nov 18 18:51:11 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1226953217864433666",
+          "name": "Travis Axelrod",
+          "screen_name": "travisraxelrod",
+          "description": "IR @Tesla",
+          "followers_count": 13442,
+          "friends_count": 740,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 81,
+          "favorite_count": 790,
+          "reply_count": 62,
+          "quote_count": 15
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 240095449,
+        "friends_count": 1429,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 1104,
+        "favorite_count": 9508,
+        "reply_count": 1167,
+        "quote_count": 95
+      }
+    },
+    {
+      "id": "2123319956381339961",
+      "text": "Moving all text conversations to be encrypted to ensure user privacy",
+      "created_at": "Thu Nov 19 07:38:21 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2123134844540448943",
+        "text": "To continue optimizing the X experience, support for legacy groups on XChat will be ending this Friday.\n\nAll unencrypted conversations will become encrypted, and group members not on XChat by Friday will need to sign up for XChat to be reincluded in those conversations.",
+        "created_at": "Wed Nov 18 19:22:47 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1928879631526141952",
+          "name": "XChat",
+          "screen_name": "chat",
+          "description": "Chat freely. Fully encrypted messaging powered by X.",
+          "followers_count": 110670,
+          "friends_count": 1,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 421,
+          "favorite_count": 4044,
+          "reply_count": 164,
+          "quote_count": 84
+        }
+      },
+      "user": {
+        "id": "44196397",
+        "name": "Elon Musk",
+        "screen_name": "elonmusk",
+        "description": "https://t.co/ZdBx5WABYx",
+        "followers_count": 240095449,
+        "friends_count": 1429,
+        "verified": false,
+        "is_blue_verified": true
+      },
+      "stats": {
+        "retweet_count": 3315,
+        "favorite_count": 35493,
+        "reply_count": 1444,
+        "quote_count": 190
       }
     },
     {

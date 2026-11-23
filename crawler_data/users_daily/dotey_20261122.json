@@ -8,8 +8,8 @@
     "is_blue_verified": true
   },
   "date": "20261122",
-  "last_updated": "2026-11-22T20:35:46.266640",
-  "tweet_count": 6,
+  "last_updated": "2026-11-23T02:10:10.511831",
+  "tweet_count": 11,
   "tweets": [
     {
       "id": "2124295583238443309",
@@ -294,6 +294,226 @@
         "retweet_count": 1,
         "favorite_count": 3,
         "reply_count": 6,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2124603209394078089",
+      "text": "Agent 说“验证完了”，怎么才能真的信它？\n\n很多朋友都被 Agent 坑过：它信誓旦旦说做好了、验证完了，你信以为真，上线后发现压根没做好。被老板骂完回头找它，它认错态度很好，下次还是一样。\n\n问题出在我们让它验证的方式上：Agent 不知道什么叫“做好了”，你也没有低成本的办法确认它真的做好了。分享五条我在用 Agent 做验证时的经验。\n\n一、不要依赖对抗式验证\n\n对抗式验证就是让另一个甚至多个 Agent 来检查结果，执行的 Agent 根据反馈改进，再检查、再改进，直到完成为止。\n\n听起来很好，实际上经常无法收敛。尤其是不太聪明的模型，大部分时候是越改越糟，还浪费了很多 Token。\n\n原因是缺少统一的验收标准。负责检查的 Agent 并不一定知道完整的上下文，也不知道准确的验收标准，于是自作主张提一堆意见，执行的 Agent 再照单全收，结果就越改越偏。\n\n二、给出清晰的验收标准，再给一个能验收的环境\n\n举个例子，你把设计稿交给 Agent，说：“帮我把这几个设计稿做成页面”，通常它会给你一个差不多的结果，有时候出入还很大。\n\n换一个说法：“帮我把这几个设计稿做成页面，完成后请对网页截图，对比设计稿，要求像素一个都不要差”。这时候 Agent 做完不会轻易交差，它会截图，写工具对比截图和设计稿的像素差异，返工重做，直到像素真的一个都不差。\n\n大部分时候我们并不需要一个像素都不差，有些偏差可以接受。重点是让它知道验收标准是什么，并且手里有办法自己去验。\n\n三、越早验证，返工成本越低\n\n尽早验证在传统软件工程里是常识，是大量血泪教训换来的。只是现在 Vibe Coding 让生成代码的成本大幅降低，非专业人士越来越多，大家渐渐忘了写代码之前还有三道关：\n\n可行性分析：这个项目真的值得做吗？做出来会有人用吗？投入产出比合算吗？\n\n原型开发：先做基本的交互，用模拟数据低成本做出一个可运行的原型，快速验证方向对不对，不对马上调整。现在 Agent 做原型已经很强了，比如 Claude Design（或者本地版的 https://t.co/QVpnqsxzMD），做出来的东西和最终结果看起来没什么差别，成本低得多，速度也快。\n\n系统设计：技术选型、模块划分、数据结构、数据库设计、API Schema 这些。设计没做好，系统也能跑，但将来维护成本要高不少。Agent 能力虽然强，选的技术方案并不总是最好的。动手实现之前，先让它写一份技术方案文档，你大概看看：一方面帮你理解项目是怎么实现的，另一方面能及时纠正潜在问题，避免做完再返工。\n\n四、让 Agent 提供证据，降低你的验收成本\n\n人在 Loop 里是必不可少的，完全交给 AI，大概率只能收获 AI Slop。但人的验收能力是瓶颈，要确认的东西太多会很累。我最近用 Antigravity，跨 Workspace 每读一个文件都要我手工确认一遍，简直快崩溃了。\n\n所以要把人确认的成本降到最低：能快速判断结果对不对，快速指出哪里有问题。\n\n最简单的方式，是让 Agent 提供截图、录屏、可视化的 HTML 报告。Agent 在截图过程中自己也能发现一些问题，但截图最大的价值，是让人一眼就能看出问题。\n\n想象一下，你是老板，员工来汇报工作，一页密密麻麻的 Word 文档和三页漂亮的 PPT，哪个更容易看？\n\n我现在最常用的几个做法：\n\n- 开发新功能，让它提供新功能的截图\n- 修 bug，让它提供修改前和修改后的截图对比\n- 让它自己模拟 API 响应数据，动态生成各种不同场景的截图，完全不需要服务端配合（虽然我还没搞明白它是怎么模拟的）\n\n五、代码审查聚焦于真正的问题\n\nAgent 生成代码的速度太快，瓶颈已经转移到了代码审查和验证上。代码审查不太可能完全靠人来做了，但人参与仍然有意义，只是方式要调整：\n\n- PR 尽可能小。这样 Agent 审起来准确率更高，人也看得过来。\n- 让 Agent 审，但不全信它的结论。审查结果要分级，人只盯 P0、P1 级别的问题，尤其是安全和性能问题，人工甄别一下，必要时让 Agent 解读、在本地验证。\n- 细枝末节放过去。代码规范、最佳实践这类问题，不用太在意。\n\n最后\n\n这五条说的是同一件事：Agent 说的“做好了”不能直接当结论用，得让它变成你能检查的东西。\n\n- 动手之前，告诉它什么叫做好了\n- 动手之前，先用原型和方案文档把方向验一遍\n- 做完之后，让它拿截图和对比来证明\n- 你自己的精力，只花在最要紧的问题上",
+      "created_at": "Sun Nov 22 20:37:32 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2124603202892967936",
+          "url": "https://pbs.twimg.com/media/HXwbWz0XsAAQYvF.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 23,
+        "favorite_count": 223,
+        "reply_count": 82,
+        "quote_count": 6
+      }
+    },
+    {
+      "id": "2124606755569090997",
+      "text": "注意这个账号，是假的，链接也不要点，不是官方的 https://t.co/MWyE9Irkat",
+      "created_at": "Sun Nov 22 20:51:38 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "photo",
+          "id": "2124606674887389184",
+          "url": "https://pbs.twimg.com/media/HXweg6AWMAAyNVd.jpg"
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 3,
+        "favorite_count": 38,
+        "reply_count": 13,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2124637421627117847",
+      "text": "RT @yangyi: 可被verified评估检验的任务往往都更好Loop\n这些技巧分享非常实用👍🏻\n\n对于第一个技巧，我做一些补充：\n\n确实像第一个技巧提到的，当Agent不了解上下文时，会导致检查和修改无法收敛，消耗大量token…",
+      "created_at": "Sun Nov 22 22:53:29 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2124636990826029214",
+        "text": "可被verified评估检验的任务往往都更好Loop\n这些技巧分享非常实用👍🏻\n\n对于第一个技巧，我做一些补充：\n\n确实像第一个技巧提到的，当Agent不了解上下文时，会导致检查和修改无法收敛，消耗大量token\n\n但换一个角度看，我认为这部分是可以优化的，毕竟我们构建可验证的任务时，在任务开始前其实就已经拥有验证的规则和边界要求了\n\n就像是以前做测试用例，需求在进入开发的时候就要完成测试用例评审一样\n\n简单的任务确实单靠自检就足够了，但对于结果出现异常时造成影响损失较大的任务，我仍然建议做交叉检查\n\n大家在跑任务的过程中会有体感，绝大部分情况下，Agents自己做检验，是容易监守自盗的\n\n这也不难理解，就像我们自己做题，自己检查，往往检查不到自己的错误一样，因为我们已经形成了固有的思维链路，检查往往会重新陷入那个错误路线（当然，也存在部分检查优化了结果）\n\n关键任务节点坚持自检+他检，做交叉验证\n代价虽然是要消耗更多的token，但收益也显而易见，会获得更强的准确性和稳定性",
+        "created_at": "Sun Nov 22 22:51:47 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2124603209394078089",
+          "text": "Agent 说“验证完了”，怎么才能真的信它？\n\n很多朋友都被 Agent 坑过：它信誓旦旦说做好了、验证完了，你信以为真，上线后发现压根没做好。被老板骂完回头找它，它认错态度很好，下次还是一样。\n\n问题出在我们让它验证的方式上：Agent 不知道什么叫“做好了”，你也没有低成本的办法确认它真的做好了。分享五条我在用 Agent 做验证时的经验。\n\n一、不要依赖对抗式验证\n\n对抗式验证就是让另一个甚至多个 Agent 来检查结果，执行的 Agent 根据反馈改进，再检查、再改进，直到完成为止。\n\n听起来很好，实际上经常无法收敛。尤其是不太聪明的模型，大部分时候是越改越糟，还浪费了很多 Token。\n\n原因是缺少统一的验收标准。负责检查的 Agent 并不一定知道完整的上下文，也不知道准确的验收标准，于是自作主张提一堆意见，执行的 Agent 再照单全收，结果就越改越偏。\n\n二、给出清晰的验收标准，再给一个能验收的环境\n\n举个例子，你把设计稿交给 Agent，说：“帮我把这几个设计稿做成页面”，通常它会给你一个差不多的结果，有时候出入还很大。\n\n换一个说法：“帮我把这几个设计稿做成页面，完成后请对网页截图，对比设计稿，要求像素一个都不要差”。这时候 Agent 做完不会轻易交差，它会截图，写工具对比截图和设计稿的像素差异，返工重做，直到像素真的一个都不差。\n\n大部分时候我们并不需要一个像素都不差，有些偏差可以接受。重点是让它知道验收标准是什么，并且手里有办法自己去验。\n\n三、越早验证，返工成本越低\n\n尽早验证在传统软件工程里是常识，是大量血泪教训换来的。只是现在 Vibe Coding 让生成代码的成本大幅降低，非专业人士越来越多，大家渐渐忘了写代码之前还有三道关：\n\n可行性分析：这个项目真的值得做吗？做出来会有人用吗？投入产出比合算吗？\n\n原型开发：先做基本的交互，用模拟数据低成本做出一个可运行的原型，快速验证方向对不对，不对马上调整。现在 Agent 做原型已经很强了，比如 Claude Design（或者本地版的 https://t.co/QVpnqsxzMD），做出来的东西和最终结果看起来没什么差别，成本低得多，速度也快。\n\n系统设计：技术选型、模块划分、数据结构、数据库设计、API Schema 这些。设计没做好，系统也能跑，但将来维护成本要高不少。Agent 能力虽然强，选的技术方案并不总是最好的。动手实现之前，先让它写一份技术方案文档，你大概看看：一方面帮你理解项目是怎么实现的，另一方面能及时纠正潜在问题，避免做完再返工。\n\n四、让 Agent 提供证据，降低你的验收成本\n\n人在 Loop 里是必不可少的，完全交给 AI，大概率只能收获 AI Slop。但人的验收能力是瓶颈，要确认的东西太多会很累。我最近用 Antigravity，跨 Workspace 每读一个文件都要我手工确认一遍，简直快崩溃了。\n\n所以要把人确认的成本降到最低：能快速判断结果对不对，快速指出哪里有问题。\n\n最简单的方式，是让 Agent 提供截图、录屏、可视化的 HTML 报告。Agent 在截图过程中自己也能发现一些问题，但截图最大的价值，是让人一眼就能看出问题。\n\n想象一下，你是老板，员工来汇报工作，一页密密麻麻的 Word 文档和三页漂亮的 PPT，哪个更容易看？\n\n我现在最常用的几个做法：\n\n- 开发新功能，让它提供新功能的截图\n- 修 bug，让它提供修改前和修改后的截图对比\n- 让它自己模拟 API 响应数据，动态生成各种不同场景的截图，完全不需要服务端配合（虽然我还没搞明白它是怎么模拟的）\n\n五、代码审查聚焦于真正的问题\n\nAgent 生成代码的速度太快，瓶颈已经转移到了代码审查和验证上。代码审查不太可能完全靠人来做了，但人参与仍然有意义，只是方式要调整：\n\n- PR 尽可能小。这样 Agent 审起来准确率更高，人也看得过来。\n- 让 Agent 审，但不全信它的结论。审查结果要分级，人只盯 P0、P1 级别的问题，尤其是安全和性能问题，人工甄别一下，必要时让 Agent 解读、在本地验证。\n- 细枝末节放过去。代码规范、最佳实践这类问题，不用太在意。\n\n最后\n\n这五条说的是同一件事：Agent 说的“做好了”不能直接当结论用，得让它变成你能检查的东西。\n\n- 动手之前，告诉它什么叫做好了\n- 动手之前，先用原型和方案文档把方向验一遍\n- 做完之后，让它拿截图和对比来证明\n- 你自己的精力，只花在最要紧的问题上",
+          "created_at": "Sun Nov 22 20:37:32 +0000 2026",
+          "lang": "zh",
+          "media": [
+            {
+              "type": "photo",
+              "id": "2124603202892967936",
+              "url": "https://pbs.twimg.com/media/HXwbWz0XsAAQYvF.jpg"
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "3178231",
+            "name": "宝玉",
+            "screen_name": "dotey",
+            "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+            "followers_count": 271276,
+            "friends_count": 1790,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 23,
+            "favorite_count": 223,
+            "reply_count": 82,
+            "quote_count": 6
+          }
+        },
+        "user": {
+          "id": "3122661542",
+          "name": "Yangyi",
+          "screen_name": "yangyi",
+          "description": "用NewMax(https://t.co/sYOJBYIaoF)构建Reverb Marketing\n关注Yangyi，订阅Yangyi的实战手记，收获最真实的AI营销实践分享👇🏻\nhttps://t.co/Pkue4jV8hK",
+          "followers_count": 126710,
+          "friends_count": 629,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 15,
+          "reply_count": 2,
+          "quote_count": 1
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2124638072981643530",
+      "text": "谢谢 yangyi 补充，不是说让 Agent 帮忙验证没有价值，重点是不要过于依赖，并且要提供清晰的、统一的验证标准\nhttps://t.co/7pEkCZWAbb",
+      "created_at": "Sun Nov 22 22:56:05 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2124636990826029214",
+        "text": "可被verified评估检验的任务往往都更好Loop\n这些技巧分享非常实用👍🏻\n\n对于第一个技巧，我做一些补充：\n\n确实像第一个技巧提到的，当Agent不了解上下文时，会导致检查和修改无法收敛，消耗大量token\n\n但换一个角度看，我认为这部分是可以优化的，毕竟我们构建可验证的任务时，在任务开始前其实就已经拥有验证的规则和边界要求了\n\n就像是以前做测试用例，需求在进入开发的时候就要完成测试用例评审一样\n\n简单的任务确实单靠自检就足够了，但对于结果出现异常时造成影响损失较大的任务，我仍然建议做交叉检查\n\n大家在跑任务的过程中会有体感，绝大部分情况下，Agents自己做检验，是容易监守自盗的\n\n这也不难理解，就像我们自己做题，自己检查，往往检查不到自己的错误一样，因为我们已经形成了固有的思维链路，检查往往会重新陷入那个错误路线（当然，也存在部分检查优化了结果）\n\n关键任务节点坚持自检+他检，做交叉验证\n代价虽然是要消耗更多的token，但收益也显而易见，会获得更强的准确性和稳定性",
+        "created_at": "Sun Nov 22 22:51:47 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "3122661542",
+          "name": "Yangyi",
+          "screen_name": "yangyi",
+          "description": "用NewMax(https://t.co/sYOJBYIaoF)构建Reverb Marketing\n关注Yangyi，订阅Yangyi的实战手记，收获最真实的AI营销实践分享👇🏻\nhttps://t.co/Pkue4jV8hK",
+          "followers_count": 126710,
+          "friends_count": 629,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 15,
+          "reply_count": 2,
+          "quote_count": 1
+        }
+      },
+      "stats": {
+        "retweet_count": 0,
+        "favorite_count": 9,
+        "reply_count": 11,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2124652441245536726",
+      "text": "RT @kingluffywang: 布伦南： 总统说过黄仁勋应该官复原职，而你曾表示董事会需要从外部物色人选。\n\n贝森特： 嗯，黄仁勋现在确实算是在“外部”了。\n\n布伦南： 你的意思是，你认为让他回去掌管公司是个好主意吗？\n\n贝森特： 我认为我们得看看最终责任在谁。你知道的，…",
+      "created_at": "Sun Nov 22 23:53:10 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": {
+        "id": "2124648451518738686",
+        "text": "布伦南： 总统说过黄仁勋应该官复原职，而你曾表示董事会需要从外部物色人选。\n\n贝森特： 嗯，黄仁勋现在确实算是在“外部”了。\n\n布伦南： 你的意思是，你认为让他回去掌管公司是个好主意吗？\n\n贝森特： 我认为我们得看看最终责任在谁。你知道的，公司底层究竟是哪些恶意行为者造成了这次的违规问题。",
+        "created_at": "Sun Nov 22 23:37:19 +0000 2026",
+        "lang": "zh",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2124529933649383716",
+          "text": "Brennan: The president said Jensen Huang should get his job back. You said the board of directors needs to go to the outside.\n\nBessent: Well, Jensen is on the outside now.\n\nBrennan: Are you saying that you think it would be a good idea for him to go back and run the company?\n\nBessent: I think we have to see where the buck stops. You know, what were these malicious actors down at the bottom of the company who were responsible for the noncompliance.",
+          "created_at": "Sun Nov 22 15:46:22 +0000 2026",
+          "lang": "en",
+          "media": [
+            {
+              "type": "video",
+              "id": "2124529275881811968",
+              "url": "https://video.twimg.com/amplify_video/2124529275881811968/vid/avc1/1280x720/nfuDim3cgjR7FHfR.mp4?tag=16",
+              "bitrate": 2176000
+            }
+          ],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "16635277",
+            "name": "Acyn",
+            "screen_name": "Acyn",
+            "description": "Senior Digital Editor for https://t.co/ok280opPL9  Clips made with @SnapStream  Internet Hooligan…",
+            "followers_count": 800375,
+            "friends_count": 5484,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 270,
+            "favorite_count": 1471,
+            "reply_count": 246,
+            "quote_count": 160
+          }
+        },
+        "user": {
+          "id": "1377660360862351514",
+          "name": "北美王路飞",
+          "screen_name": "kingluffywang",
+          "description": "油管Up主，分享人工智障知识，视频揭露股票圈的割韭菜惯犯雷公 LEI（aka 老雷，雷公资本，LEI & Lonecapital）抖音：Kingluffywang Make Americas Great Again",
+          "followers_count": 42677,
+          "friends_count": 1613,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2,
+          "favorite_count": 15,
+          "reply_count": 4,
+          "quote_count": 0
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2,
+        "favorite_count": 0,
+        "reply_count": 0,
         "quote_count": 0
       }
     }

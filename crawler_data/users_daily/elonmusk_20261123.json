@@ -1,0 +1,426 @@
+{
+  "user": {
+    "screen_name": "elonmusk",
+    "name": "Elon Musk",
+    "description": "https://t.co/ZdBx5WABYx",
+    "followers_count": 240115550,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261123",
+  "last_updated": "2026-11-23T02:10:10.518620",
+  "tweet_count": 9,
+  "tweets": [
+    {
+      "id": "2124657565950984345",
+      "text": "RT @WesternLensman: Jessica Tarlov says when she finally decided to listen to the full audio of Trump's \"Fine People\" comments -- she found…",
+      "created_at": "Mon Nov 23 00:13:32 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2124620232287277091",
+        "text": "Jessica Tarlov says when she finally decided to listen to the full audio of Trump's \"Fine People\" comments -- she found out he wasn't talking about Nazis.\n\n\"That was illuminating for me.\"\n\nWow. How big of her to admit it was a lie all these years later...after actually listening to it.\n\nDemocrats still regurgitate this hoax to this day.",
+        "created_at": "Sun Nov 22 21:45:11 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2124618198158827520",
+            "url": "https://video.twimg.com/amplify_video/2124618198158827520/vid/avc1/1280x720/tnnpE9hoKKj-5liZ.mp4?tag=29",
+            "bitrate": 2176000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1674861136498286605",
+          "name": "Western Lensman",
+          "screen_name": "WesternLensman",
+          "description": "🇺🇸 Video Producer | Politics | Media | American 🇺🇸",
+          "followers_count": 385745,
+          "friends_count": 867,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 2805,
+          "favorite_count": 14944,
+          "reply_count": 1377,
+          "quote_count": 267
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 2803,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2124673261904548151",
+      "text": "RT @yilun_chen_: It’s almost unbelievable to have a CEO that works on so many things but still has this level of understanding of technical…",
+      "created_at": "Mon Nov 23 01:15:54 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2124558617231925447",
+        "text": "It’s almost unbelievable to have a CEO that works on so many things but still has this level of understanding of technical details at Tesla. Every time I’m fortunate enough to present to Elon, I’m blown away by how dedicated he is to learn about the technical progress and how much he cares about the low-level details while respecting each engineer’s work. Elon is so unique and It’s such an honor to work for him.",
+        "created_at": "Sun Nov 22 17:40:21 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2124458557525397780",
+          "text": "In case anyone is curious:\n\nWe’ve had a ~pixel-perfect world model since last year, which is critical for synthetic data generation. \n\nThe (much) smaller version of that in the car is a conditional mean-flow model, based on the recent sequence of Tesla Universal Vision Encoder features, which are the same ones that are plugged into the 3B encoder model that produces the driving actions. \n\nWe fork off from these UVE features, then run a separate ~1B diffusion model. This takes in the previous reality-view generation with added noise and then denoises it to the current visualization. \n\nIt then produces a small video chunk (8 images at 36 fps, at the resolution of the UI screen). This work is done by 1/2 of a TRIP engine every UVE frame at 18 hz and is spread over 4 cycles. \n\nCurrently, the latency is a bit high due to compute constraints, but we have ways to interleave newer UVE features along the diffusion transformer layers to cut roughly 35% of the latency.",
+          "created_at": "Sun Nov 22 11:02:45 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "44196397",
+            "name": "Elon Musk",
+            "screen_name": "elonmusk",
+            "description": "https://t.co/ZdBx5WABYx",
+            "followers_count": 240115550,
+            "friends_count": 1429,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 1473,
+            "favorite_count": 19665,
+            "reply_count": 815,
+            "quote_count": 482
+          }
+        },
+        "user": {
+          "id": "3300935755",
+          "name": "Yilun Chen",
+          "screen_name": "yilun_chen_",
+          "description": "Build 🤖 @Tesla_Optimus | Sharing notes on @EmbodiedAIRead | Prev @Apple, @CMU_Robotics | Opinions are my own",
+          "followers_count": 7399,
+          "friends_count": 653,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 232,
+          "favorite_count": 3104,
+          "reply_count": 87,
+          "quote_count": 18
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 232,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2124673356989346144",
+      "text": "RT @danny_graziosi: I've been using @bot to help my fiancée and me plan our wedding, and it honestly feels like we have a hired full-time w…",
+      "created_at": "Mon Nov 23 01:16:17 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2124570651755204813",
+        "text": "I've been using @bot to help my fiancée and me plan our wedding, and it honestly feels like we have a hired full-time wedding planner.\n\nOver the last month, it helped us figure out our hotel room block.\n\nIt found 15 hotels within 35 minutes of our venue, handled all the email correspondence, and got proposals with the details we needed to decide.\n\nThen it created a comparison sheet with the criteria we cared about and recommended a shortlist.\n\nOnce we picked one, it helped us review the contract, negotiated with the hotel, and even signed it (w/ my permission, of course).\n\nThe day after we signed,  @bot proactively researched a shortlist of shuttle services and welcome-party venues, with emails already drafted for my review.\n\nI can't imagine planning a wedding without it. It's truly an amazing time to be alive.",
+        "created_at": "Sun Nov 22 18:28:10 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1592524494496796675",
+          "name": "Danny Graziosi",
+          "screen_name": "danny_graziosi",
+          "description": "@bot Field Engineer @SpaceXSI",
+          "followers_count": 672,
+          "friends_count": 333,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 57,
+          "favorite_count": 535,
+          "reply_count": 43,
+          "quote_count": 8
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 57,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2124673411242758419",
+      "text": "RT @TeslaSI: XV",
+      "created_at": "Mon Nov 23 01:16:30 +0000 2026",
+      "lang": "qst",
+      "media": [],
+      "retweet": {
+        "id": "2124005518746480996",
+        "text": "XV",
+        "created_at": "Sat Nov 21 05:02:32 +0000 2026",
+        "lang": "qst",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1659653864138612761",
+          "name": "Tesla Super Intelligence",
+          "screen_name": "TeslaSI",
+          "description": "",
+          "followers_count": 538594,
+          "friends_count": 19,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1409,
+          "favorite_count": 18756,
+          "reply_count": 1050,
+          "quote_count": 629
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 1409,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2124673809936461957",
+      "text": "RT @StockMKTNewz: I think we moved past this a little too quickly … SpaceX literally caught a rocket in mid air last week https://t.co/vldL…",
+      "created_at": "Mon Nov 23 01:18:05 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2124498163050713287",
+        "text": "I think we moved past this a little too quickly … SpaceX literally caught a rocket in mid air last week https://t.co/vldLXKOWiq",
+        "created_at": "Sun Nov 22 13:40:07 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2121715612896333824",
+            "url": "https://video.twimg.com/amplify_video/2121715612896333824/vid/avc1/2160x3840/SVVu4MkGffE9bccR.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1250830691824283648",
+          "name": "Evan",
+          "screen_name": "StockMKTNewz",
+          "description": "Free Stock Market News that is FAST, ACCURATE, CONSISTENT, and RELIABLE | Not Just Stock News | The link to work with me is the link in my bio ⬇️",
+          "followers_count": 1173819,
+          "friends_count": 496,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 444,
+          "favorite_count": 4911,
+          "reply_count": 229,
+          "quote_count": 29
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 444,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2124674295246811586",
+      "text": "😂",
+      "created_at": "Mon Nov 23 01:20:01 +0000 2026",
+      "lang": "art",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": null,
+        "text": "",
+        "created_at": null,
+        "lang": null,
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": null,
+        "stats": {
+          "retweet_count": 0,
+          "favorite_count": 0,
+          "reply_count": 0,
+          "quote_count": 0
+        }
+      },
+      "stats": {
+        "retweet_count": 214,
+        "favorite_count": 2623,
+        "reply_count": 419,
+        "quote_count": 30
+      }
+    },
+    {
+      "id": "2124677762686578933",
+      "text": "RT @LisaBritton: Iceland is considered “the most gender-equal country in the world” but it doesn’t seem “equal” to me… Currently, they have…",
+      "created_at": "Mon Nov 23 01:33:47 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2124178525221466306",
+        "text": "Iceland is considered “the most gender-equal country in the world” but it doesn’t seem “equal” to me… Currently, they have a female President, Prime Minister, the head of every political party is a woman and the majority of cabinet is women. 68.8% of students who graduated college last year were women. This list goes on about how “gender equality” actually seems to mean female dominance today.\n\nYesterday I spoke with the former First Lady of Iceland. She did seem concerned about the college student stat, but she insisted there was still so much to do to fight for gender equality for women there.\n\nI think it might be time to look at the disadvantages of both sexes when it comes to addressing “gender equality.” No?",
+        "created_at": "Sat Nov 21 16:30:00 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "2602121875",
+          "name": "Lisa Britton",
+          "screen_name": "LisaBritton",
+          "description": "Writer • Evie Magazine • Institute for Family Studies • Advocate for fathers and the mental health, education and well-being of our boys. Views my own.",
+          "followers_count": 75846,
+          "friends_count": 1124,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 688,
+          "favorite_count": 7806,
+          "reply_count": 360,
+          "quote_count": 64
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 688,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2124677795666428315",
+      "text": "RT @GadSaad: I warned Iceland in June 2025 but they chose to ignore me…",
+      "created_at": "Mon Nov 23 01:33:55 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2124596352256819377",
+        "text": "I warned Iceland in June 2025 but they chose to ignore me…",
+        "created_at": "Sun Nov 22 20:10:18 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": {
+          "id": "2124178525221466306",
+          "text": "Iceland is considered “the most gender-equal country in the world” but it doesn’t seem “equal” to me… Currently, they have a female President, Prime Minister, the head of every political party is a woman and the majority of cabinet is women. 68.8% of students who graduated college last year were women. This list goes on about how “gender equality” actually seems to mean female dominance today.\n\nYesterday I spoke with the former First Lady of Iceland. She did seem concerned about the college student stat, but she insisted there was still so much to do to fight for gender equality for women there.\n\nI think it might be time to look at the disadvantages of both sexes when it comes to addressing “gender equality.” No?",
+          "created_at": "Sat Nov 21 16:30:00 +0000 2026",
+          "lang": "en",
+          "media": [],
+          "retweet": null,
+          "quoted": null,
+          "user": {
+            "id": "2602121875",
+            "name": "Lisa Britton",
+            "screen_name": "LisaBritton",
+            "description": "Writer • Evie Magazine • Institute for Family Studies • Advocate for fathers and the mental health, education and well-being of our boys. Views my own.",
+            "followers_count": 75846,
+            "friends_count": 1124,
+            "verified": false,
+            "is_blue_verified": true
+          },
+          "stats": {
+            "retweet_count": 688,
+            "favorite_count": 7806,
+            "reply_count": 360,
+            "quote_count": 64
+          }
+        },
+        "user": {
+          "id": "116579971",
+          "name": "Gad Saad",
+          "screen_name": "GadSaad",
+          "description": "Professor, Evolutionary Behavioral Scientist, Author. Opinions are mine alone. Retweets do not necessarily imply an endorsement.",
+          "followers_count": 1399680,
+          "friends_count": 486,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 144,
+          "favorite_count": 2152,
+          "reply_count": 74,
+          "quote_count": 2
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 144,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "2124681722705100862",
+      "text": "RT @mattyp: What's new in Grok Bot 1.0 🚀\n\n00:45 Team Bot improvements\n01:47 Bots join your meetings\n03:26 Bots take initiative\n04:10 Bots l…",
+      "created_at": "Mon Nov 23 01:49:32 +0000 2026",
+      "lang": "en",
+      "media": [],
+      "retweet": {
+        "id": "2122343944889483583",
+        "text": "What's new in Grok Bot 1.0 🚀\n\n00:45 Team Bot improvements\n01:47 Bots join your meetings\n03:26 Bots take initiative\n04:10 Bots learn and improve\n05:19 Bots are smarter and faster\n\nLots of easter eggs in this one for y'all! https://t.co/bQCLjzgJ5A",
+        "created_at": "Mon Nov 16 15:00:02 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2121988507195572224",
+            "url": "https://video.twimg.com/amplify_video/2121988507195572224/vid/avc1/3840x2160/qYIMxN8O4ae9Fp7_.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1518984544421965824",
+          "name": "matt palmer",
+          "screen_name": "mattyp",
+          "description": "cursor & @bot at @spacexsi",
+          "followers_count": 134991,
+          "friends_count": 966,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 348,
+          "favorite_count": 4201,
+          "reply_count": 433,
+          "quote_count": 100
+        }
+      },
+      "quoted": null,
+      "stats": {
+        "retweet_count": 347,
+        "favorite_count": 0,
+        "reply_count": 0,
+        "quote_count": 0
+      }
+    }
+  ]
+}

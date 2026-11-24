@@ -3,13 +3,13 @@
     "screen_name": "dotey",
     "name": "宝玉",
     "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
-    "followers_count": 271512,
+    "followers_count": 271574,
     "verified": false,
     "is_blue_verified": true
   },
   "date": "20261124",
-  "last_updated": "2026-11-24T11:58:01.737876",
-  "tweet_count": 2,
+  "last_updated": "2026-11-24T21:54:04.380828",
+  "tweet_count": 3,
   "tweets": [
     {
       "id": "2125081053098373590",
@@ -70,6 +70,52 @@
         "favorite_count": 567,
         "reply_count": 132,
         "quote_count": 23
+      }
+    },
+    {
+      "id": "2125317908326744410",
+      "text": "LlamaIndex 公开两款文档解析模型：40 亿参数的 OCRia-1 用 GPU 跑复杂表格和图表，810 万参数的 nano 用 CPU 跑日常文档，营收或融资超 200 万美元的公司商用要买授权\n\nLlamaIndex 先后发了两款把 PDF 和扫描件转成 Markdown 的模型。10 月 22 日发的 OCRia-1 有 40 亿参数，要用 GPU，专门对付复杂表格、图表和公式，当天就用到了 LlamaParse 云服务里。11 月 23 日发的 OCRia-nano-1 只有 810 万参数，在普通 CPU 上跑，负责大量日常文档。\n\n两款的权重 11 月 23 日都放上了 Hugging Face。个人、研究和小公司可以免费用，年营收或累计融资超过 200 万美元的公司拿来做业务，要找 LlamaIndex 另买授权。\n\n【OCRia-1：表格、图表、格式】\n\nOCRia-1 基于阿里的 Qwen3.5-4B，用约 10 万页文档做了监督微调和强化学习。在 LlamaIndex 自家的 ParseBench 上（第一版，文字、格式、表格、图表四项平均），它得 87.4 分，比第二名 LightOnOCR-3-4B 的 75.3 高 12.1 分。\n\n差距最大的是图表。它会把柱状图、折线图读成一张数据表，每个数字放在对应的系列和标签下，这一项 85.1 分，第二名 66.1。上标、下标、删除线、勾选框这些格式也会保留，公式写成 LaTeX，手写公式也能认，格式这一项 83.4 分，第二名 67.9。\n\n换到三个外部机构做的基准，它在表格上还是第一，但领先不多：olmOCR-bench 表格 92.9 对 92.1，PulseBench-Tab 84.1 对 82.4，fr-bench-pdf2md 的长表格 83.2 对 80.6。博客的对比只列了 35B 以下的模型，模型页补上了 350 亿参数的 Infinity-Parser2-Pro，olmOCR-bench 总分 83.5 对 83.2，基本打平。在新版 ParseBench-2 的完整排行榜上，它在开放权重模型里第一，算上商业 API 和前沿大模型排第七。\n\n速度要看在哪跑。LlamaParse 用的是量化加推测解码的优化版，一张 B200 显卡上单个请求每秒解码约 4700 个 Token，64 个请求并发每秒处理 10.2 页。Hugging Face 上放的是没优化的原始权重，约 10GB，用标准 vLLM 跑大约慢 9 倍。\n\n【OCRia-nano-1：CPU 上的日常款】\n\nnano 由七个小模型组成：找文字行、判断文字类型（拉丁字母、中日韩、阿拉伯和希伯来文，以及约 17 种其他文字）、四个识别器分别认字，再由一个 427 万参数的表格和版面模型还原结构。电子版 PDF 自带文字的部分直接读，只有扫描件和图片里的字才动用识别。\n\n在 ParseBench-2 上，nano 总分 59.2，表格 59.5。同一台 16 核机器上，Datalab 家的两款同类 CPU 工具 Indra 是 55.1、Marker 是 52.5，LiteParse 原来默认的 Tesseract 配置是 48.7。单核平均每页 426 毫秒，16 核并行每秒 27.8 页，是 Tesseract 配置的 2 倍。\n\n同一基准上 OCRia-1 在 LlamaParse 里是 87.0 分，nano 大约是它的三分之二。nano 没有图表模型，图表原样留成图片，这一项只有 3.1 分；扫描件里的公式也认不出来。官方也没单独公布 nano 的中文成绩。\n\n【怎么用】\n\nOCRia-1 最省事的用法是 LlamaParse，按页扣积分，每月送 1 万积分。LlamaIndex 说换上 OCRia-1 后价格不变，但没说它对应哪一档。想自己部署，要有 NVIDIA 显卡，用 vLLM 或 Transformers 加载。\n\nnano 跑在 LlamaIndex 的开源本地解析工具 LiteParse 里：\n\npip install liteparse\nlit models pull ocria-nano\nlit parse doc.pdf --format markdown\n\n模型加运行库一共下载 60 到 75MB，拉下来以后 LiteParse 默认就改用它。也支持 Node.js 和浏览器。\n\n【能不能商用】\n\n两款权重的许可证条款一样，都是 LlamaIndex 在 Open RAIL-M 基础上改的：个人使用、研究、评测免费；上一年营收和累计融资都不超过 200 万美元的组织，可以免费商用。超过任一门槛，或者拿它做跟 LlamaParse 竞争的文档解析服务（不论公司大小），都要买授权。许可证还禁止用它们的输出训练类似的模型。LiteParse 本身是 Apache 2.0，不受这些限制。\n\n以上跑分都是 LlamaIndex 自己测的，ParseBench 也是 LlamaIndex 做的基准；三个外部基准的题库是别家做的，分数也是 LlamaIndex 自己跑、自己整理的，还没有第三方复现。nano 的博客开头说它比 Tesseract 快“2 到 5 倍以上”，技术报告里对 Tesseract 的数字是吞吐 2 倍、单页平均约 1.8 倍。\n\nOCRia-1 博客：https://t.co/xkdXvcx3cN\nOCRia-1 模型与许可证：https://t.co/yJgVx8n9aa\nOCRia-nano-1 博客：https://t.co/Nw6qqIxHfR\nOCRia-nano-1 模型与许可证：https://t.co/2oFKyc2kQh",
+      "created_at": "Tue Nov 24 19:57:30 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2125266115874144473",
+        "text": "Today we are open-sourcing the weights to OCRia-1, our flagship 4B VLM for document OCR 🔥\n\nThis is our SECOND open-weight release in two days (we just launched OCRia-nano-1 yesterday!!).\n\nOCRia-1 is on the pareto curve of accuracy and cost relative to other 4B models on multiple benchmarks: ParseBench, olmOCR-bench (tables), PulseBench-Tab, and fr-bench-pdf2md. It is an extremely general purpose model that can parse even the most complex document types, including complex tables/charts/formatting/layout.\n\nWe’re releasing the weights to help advance open research around OCR, on both @huggingface  🤗 and @ollama  🦙\n\nIf you want to use it in prod, come talk to us. If you want to use the latest SOTA of the OCRia model family, tuned for production, check out LlamaParse!\n\nRelease on @huggingface : https://t.co/h8SMhfRLDo\n\nRelease on @ollama: https://t.co/p4B9GtHFfU\n\nLlamaParse: https://t.co/pAJJyXjzVD",
+        "created_at": "Tue Nov 24 16:31:42 +0000 2026",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "id": "2125265678185979905",
+            "url": "https://video.twimg.com/amplify_video/2125265678185979905/vid/avc1/3840x2160/Pkob4P37ELwSJ4sv.mp4?tag=29",
+            "bitrate": 25128000
+          }
+        ],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "369777416",
+          "name": "Jerry Liu",
+          "screen_name": "jerryjliu0",
+          "description": "Parsing the world's hardest PDFs @llama_index. cofounder/CEO\n\nLlamaParse: https://t.co/XYZmx5TFz8\nEnterprise: https://t.co/Ht5jwxSrQB",
+          "followers_count": 89495,
+          "friends_count": 1644,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 71,
+          "favorite_count": 552,
+          "reply_count": 56,
+          "quote_count": 16
+        }
+      },
+      "stats": {
+        "retweet_count": 1,
+        "favorite_count": 15,
+        "reply_count": 9,
+        "quote_count": 1
       }
     }
   ]

@@ -1,0 +1,76 @@
+{
+  "user": {
+    "screen_name": "dotey",
+    "name": "宝玉",
+    "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+    "followers_count": 271512,
+    "verified": false,
+    "is_blue_verified": true
+  },
+  "date": "20261124",
+  "last_updated": "2026-11-24T11:58:01.737876",
+  "tweet_count": 2,
+  "tweets": [
+    {
+      "id": "2125081053098373590",
+      "text": "Alpöge 回应黎曼猜想证明争议：“25万页文档”是开玩笑话，Lean 代码写的很烂但证明成立\n\n用 Claude 证明黎曼猜想的 Anthropic 数学家 Levent Alpöge，在 X 上发了一篇《我做过的蠢事》，正面回应这几天的争议。\n\n先说结论：证明本身没有问题。1700 万行代码的正确性已获官方核查通过，他认错的是“表述开玩笑”和“代码太乱”，并点出了这次证明真正值得思考的数学意义。\n\n1. 辟谣与认错：他澄清了三件事\n\n• “25万页文档”是个玩笑：他不想给黎曼猜想配一份 AI 糊出来的注水说明，又觉得自己写不出可读版本，索性拿 Lean 往夸张了凑字数自娱自乐，甚至在定理开头写“因为实数是全序的，所以不等于 1/2 时要么大于 1/2 要么小于 1/2”，本以为这么荒诞的废话一眼就能看出是反讽，结果被媒体和学界全盘当真。\n\n他为此道歉，感叹终于明白陶哲轩为什么劝人“别在论文里开玩笑”。（他还顺带自嘲：之前做四维杨-米尔斯存在性攒了 6 万页 AI 草稿，结果审核委员会一句“要看 Lean”，让他觉得啃草稿纯属浪费时间。）\n\n• 代码确实“满是垃圾”，但能编译：他承认 1700 万行 Lean 代码里有很多自己“瞎冲（yolo）”试出来的弯路和冗余，最终绝大部分可能都用不上，只是清理起来莫名困难，所有对代码质量的批评他全盘接受。\n\n• 承认拖延前科：同行 Scott Armstrong 看穿了他，他学生时代就有定理拖了快十年才整理成文，这次他承诺会更负责地把证明精简出来。\n\n2. 核心事实：代码再丑，证明依然成立\n\n在形式化验证里，“不好读”和“对不对”是两件事：\n\n1). Lean 官方（Lean FRO）与 Mathlib 已联合认证：定理陈述没有偷换概念，几十人独立编译结果完全一致，证明成立。\n\n2) MIT 数学家 Andrew Sutherland 独立跑完核查：证明只用到了 Lean 的三条标准公理，没有作弊。\n\n3. 最有启发的一点：为什么证出来了还不满意？\n\nAlpöge 说，他在声明里漏掉了自己真正想强调的重点：\n\n这种又长又杂的暴力论证本身只是“原材料”，真正的目的是帮数学家反推出“正确的定义”。\n\n几十年前，Weil 和 Deligne 干净利落地证明了有限域曲线上的“简化版黎曼猜想”，靠的是一套成熟的几何工具；但在普通整数（数域）上，数学界至今找不到对应的核心结构（即他说的缺一个“H¹ 对象”）。\n\n他的原话：“黎曼猜想本该很简单。任何真正的困难都说明，我们现在的数学框架还很蠢。”\n\n4. 留给数学界的新局面\n\n这次事件把数学推到了一个前所未有的分水岭：机器已经确认“它是对的”，但人类还不知道“它为什么对”。\n\n陶哲轩初步浏览后指出，这份证明似乎动用了现代朗兰兹纲领和算术几何的全部武器；也有数学家认为：Lean 代码回答不了数学最关心的“为什么”。\n\n按照克雷研究所百万美元奖金的规则，证明仍需在期刊正式发表满两年并获学界共识。\n\n相关链接：\nAlpöge 原推：https://t.co/cmopT4aZrV\nLean 官方联合声明：https://t.co/sCtgTYX7BU\nMIT 核查页：https://t.co/qE4UnLf7Gw\nQuanta 报道：https://t.co/W9YhXnuiho",
+      "created_at": "Tue Nov 24 04:16:19 +0000 2026",
+      "lang": "zh",
+      "media": [],
+      "retweet": null,
+      "quoted": {
+        "id": "2124987173439209561",
+        "text": "Stupid things I did:\n1. 250,000+ pages was a joke guys!, I find big number extremely hilarious. I tried to make it clear by the level of pedantry of the reals total ordered statement in the main theorem, but people ran with it unfortunately and I didn’t feel like talking on social media in the days after the announcement, though I did have a good time with the memes. Sorry!!! (Similarly with our YM4 existence I found it extremely funny that we were slowly working through 60,000 pages of slop, though the committee asking for Lean made me feel dumb about wasting our time with that. But 60,000 funny.) Tao advises to not joke in papers, see also the Big Lebowski reference I shoehorned, I now understand why… I didn’t feel comfortable having any slop writeup attached to this problem, and I figured I can’t produce anything readable anyway, so I went off the Lean to lengthmaxx.\n2. The Lean is full of garbage obviously, but compiles, but all criticism of such garbage is totally reasonable and accepted, I should have cleaned it up but it was randomly difficult to for various strange reasons. Mea culpa…\n3. @scottnarmstrong clocked me, indeed even as a student there were theorems that took me the better part of a decade to write up, but with this one I should hopefully be more responsible. (I really was yoloing a lot in there, I bet most is unnecessary in the end, admittedly the lazy thing to do would be to wait because it’ll simplify massively…)\n4. I forgot to emphasize what I think is the point. Arguments like these, cool, but they are the raw inputs when interpolating definitions. We don’t have the / an “H^1 object” over number fields, and probably for a layperson the fact that we fight hard for these arguments for the purpose of definitions is not clear a priori (that’s at least my philosophy). Just like I knew I must fight for an utterly simple Weil / Deligne, I feel Riemann should be easy, and any real difficulty is an indication our setup is just dumb at the moment.",
+        "created_at": "Mon Nov 23 22:03:17 +0000 2026",
+        "lang": "en",
+        "media": [],
+        "retweet": null,
+        "quoted": null,
+        "user": {
+          "id": "1824947668763992064",
+          "name": "levent",
+          "screen_name": "__alpoge__",
+          "description": "idiot. cuda og, harvard val, morgan prize, society of fellows, 1 hilbert problem so far, creating friendly, SAFE, delightful, supergenius ..things @anthropicai",
+          "followers_count": 107772,
+          "friends_count": 243,
+          "verified": false,
+          "is_blue_verified": true
+        },
+        "stats": {
+          "retweet_count": 1693,
+          "favorite_count": 19753,
+          "reply_count": 1310,
+          "quote_count": 1448
+        }
+      },
+      "stats": {
+        "retweet_count": 11,
+        "favorite_count": 88,
+        "reply_count": 58,
+        "quote_count": 3
+      }
+    },
+    {
+      "id": "2125082020208337023",
+      "text": "在葬礼上播放用 AI 生成的逝者“驾鹤西去”视频 https://t.co/yae63V2OEO",
+      "created_at": "Tue Nov 24 04:20:10 +0000 2026",
+      "lang": "zh",
+      "media": [
+        {
+          "type": "video",
+          "id": "2125081850443919360",
+          "url": "https://video.twimg.com/amplify_video/2125081850443919360/vid/avc1/540x960/ZiT2EJZRsUHldNa5.mp4?tag=29",
+          "bitrate": 2176000
+        }
+      ],
+      "retweet": null,
+      "quoted": null,
+      "stats": {
+        "retweet_count": 32,
+        "favorite_count": 567,
+        "reply_count": 132,
+        "quote_count": 23
+      }
+    }
+  ]
+}

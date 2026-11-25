@@ -1,0 +1,14 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-11-25T09:34:43.860282",
+  "tweet_count": 5,
+  "summary": "**2026年11月24日 dotey 推文分析**\n\n**新工具/技术**\n- LlamaIndex OCRia-1：40 亿参数、基于 Qwen3.5-4B 微调的文档解析模型，用 GPU 运行，专门处理复杂表格、图表、公式与格式，输出 Markdown 或 LaTeX，权重已上 Hugging Face 和 Ollama。\n- LlamaIndex OCRia-nano-1：仅 810 万参数，普通 CPU 即可处理日常文档，单核约 426ms/页、16 核并行 27.8 页/秒，已集成进开源 LiteParse，并成为默认解析器。\n- Claude “Install as app”：Artifact 可一键装成 Mac/Windows 桌面应用，有独立图标和窗口；dotey 判断其本质类似 Chrome Web App 套壳，仍需联网，并依赖账号对 Artifact 网页的访问权限。\n\n**核心观点/方法论**\n- Alpöge 回应黎曼猜想争议：形式化验证中“代码丑”与“证明对”是两回事；1700 万行 Lean 代码虽被作者承认“满是垃圾”，但经官方与 MIT 独立核查，证明成立。\n- 更值得思考的层次：机器已确认“它对”，人类还不知道“它为什么对”；又长又杂的暴力论证只是“原材料”，真正目的是反推数学中缺失的“H¹ 对象”这类正确结构——“黎曼猜想本该简单，真正的困难说明现在的数学框架还很蠢”。\n- 形式化验证的信任链价值：Lean FRO 与 Mathlib 联合认证定理陈述未偷换概念、几十人独立编译一致，MIT 的 Andrew Sutherland 确认只用了三条标准公理、没有作弊，这是传统同行评议之外的可机器复核路径。\n- 行业动态：前 Claude Code 团队成员 Thariq 加入 OpenAI，此前 Cat Wu 已先行，头部实验室之间的人才流动正在加速。\n\n**实践经验/案例**\n- LlamaIndex 开源策略：用大小模型分层覆盖 GPU 重活与 CPU 日常活；许可证设 200 万美元营收或融资门槛，超线商用或做竞品解析服务需买授权，并禁止用输出训练同类模型。\n- AI 生成内容正进入葬礼等严肃仪式场景（如“驾鹤西去”视频），技术可用性与文化伦理边界值得关注。\n- 开源模型跑分多为厂商自测，ParseBench 本身也是 LlamaIndex 自家基准；外部基准虽用第三方题库，但分数由厂商自跑、尚无第三方复现，选型时需留余量。",
+  "metadata": {
+    "original_tweets": 5,
+    "retweets": 0,
+    "media_tweets": 3,
+    "data_hash": "d79f55bb",
+    "data_date": "20261124",
+    "user": "dotey"
+  }
+}

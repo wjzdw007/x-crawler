@@ -1,0 +1,14 @@
+{
+  "summary_type": "user_daily",
+  "generation_time": "2026-11-26T09:11:45.520667",
+  "tweet_count": 10,
+  "summary": "**dotey 2026年11月25日推文分析**\n\n**新工具/技术**\n- Electron + Rust 本地进程服务：dotey 认为这是兼顾性能与开发效率的优选，尤其适合跨平台 Agent 应用，并以 Conductor 的重写案例佐证。\n- Claude MCP 三项新能力：Skills over MCP（与 MCP 同步发布，解决版本错配）、Tasks（长任务转异步后台执行）、Elicitation（敏感操作前强制确认，如删 GitHub Repo 需手输仓库名）。\n- Open Artifact：开源插件，让 coding agent 产出可在本地打开、编辑、批注的幻灯片/文档/表格，全程本地运行、免账号上传。\n\n**核心观点/方法论**\n- Agent 时代的技术选型标准在变：编译速度、热更新、能否被 agent 内置浏览器直接验证，比单纯的渲染性能更重要。\n- 用 Rust 补 Electron 短板：复杂渲染编译为 wasm，转录/TTS 等重活做成 Rust worker 进程，兼顾前端体验与后台性能。\n- 对“AI 攻克数学难题”祛魅：看到 OpenAI 证明矩阵乘法指数 ω=9/4 已“没啥波澜”，说明其对 AI 科研能力的预期已被抬高。\n- 但补充时保持严谨：区分 10 月的上限结果与本次下限证明、点明“只数代数运算次数”的计数规则边界、指出无同行评审及 Lean 覆盖范围的差异。\n- AI 赋能传统行业仍是蓝海，瓶颈在跨领域复合人才而非技术本身（转发认同此判断）。\n- 对 AI 治理立场鲜明：转发 Dario 长文，呈现“治理必须交给民主程序、交出决策权是坏主意”的争论。\n\n**实践经验/案例**\n- GPUI 踩坑复盘：UI 复杂需 fork、Accessibility 弱、Rust 编译吃资源且无热更新、agent 验证 UI 慢——最终换回 Electron。\n- Conductor 迁移数据：工作区打开快 71%、启动渲染快 4.6 倍、内存省 35%，代价是安装包从约 200MB 涨到 500MB。\n- 行业动态：前 Claude Code 负责人 Thariq 官宣加入 OpenAI，人才与想法流动被其视为硅谷的核心优势之一。",
+  "metadata": {
+    "original_tweets": 8,
+    "retweets": 2,
+    "media_tweets": 3,
+    "data_hash": "dc8a050d",
+    "data_date": "20261125",
+    "user": "dotey"
+  }
+}
